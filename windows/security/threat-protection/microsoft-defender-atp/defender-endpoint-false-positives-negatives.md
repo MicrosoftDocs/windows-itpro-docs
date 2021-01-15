@@ -195,11 +195,16 @@ Your security team can classify an alert as a false positive in the Microsoft De
 4. In the **Manage alert** section, select **True alert** or **False alert**. Use **False alert** to classify a false positive.
 
 > [!TIP]
-> For more information about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts).
+> - For more information about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts).
+> - If your organization is using a security information and event management (SIEM) server, make sure to define a suppression rule there, too. 
 
 ## Submit a file for analysis
 
-*https://www.microsoft.com/wdsi/filesubmission/*
+You can submit files, such as false positives or false negatives, to Microsoft for analysis. Microsoft security researchers analyze all submissions. 
+
+1. Review the guidelines here: [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide).
+
+2. Visit the Microsoft Security Intelligence submission site at [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission), and submit your file(s).
 
 ## Confirm your software uses EV code signing
 
