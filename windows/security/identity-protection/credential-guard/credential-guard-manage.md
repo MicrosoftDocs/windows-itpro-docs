@@ -262,6 +262,7 @@ To disable Windows Defender Credential Guard, you can use the following set of p
     >bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
     >bcdedit /set vsmlaunchtype off
     >```
+
 For more info on virtualization-based security and HVCI, see [Enable virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity
 ).
 
@@ -287,6 +288,5 @@ From the host, you can disable Windows Defender Credential Guard for a virtual m
 ```powershell
 Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 ```
-
 
 
