@@ -51,6 +51,9 @@ Microsoft Defender for Endpoint offers a wide variety of options, including the 
 
 Check your cloud-delivered protection level for Microsoft Defender Antivirus. By default, this is set to **Not configured**, which corresponds to a normal level of protection for most organizations. If your cloud-delivered protection is set to **High**, **High +**, or **Zero tolerance**, you might experience a higher number of false positives.
 
+> [!TIP]
+> To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
+
 We recommend using Microsoft Endpoint Manager to edit your cloud-delivered protection settings.
 
 #### Use Microsoft Endpoint Manager to review and edit cloud-delivered protection settings
@@ -70,11 +73,12 @@ We recommend using Microsoft Endpoint Manager to edit your cloud-delivered prote
 5. On the **Configuration settings** tab, expand **Cloud protection**, and specify the following settings:
    - Set **Turn on cloud-delivered protection** to **Yes**.
    - Set **Cloud-delivered protection level** to **Not configured**. (This level provides a strong level of protection by default while reducing the chances of getting false positives.)
-6. On the **Scope tags** tab,  
+6. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy you are creating. (See [Scope tags](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags).)
+8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).)
+9. On the **Review + create** tab, review the settings, and then choose **Create**.  
 
 
-> [!TIP]
-> To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
+
 
 ### Remediation for potentially unwanted applications (PUA)
 
