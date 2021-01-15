@@ -77,9 +77,6 @@ We recommend using Microsoft Endpoint Manager to edit your cloud-delivered prote
 8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).)
 9. On the **Review + create** tab, review the settings, and then choose **Create**.  
 
-
-
-
 ### Remediation for potentially unwanted applications (PUA)
 
 Potentially unwanted applications (PUA) are a category of software that can cause devices to run slowly, display unexpected ads, or install other software that might be unexpected or unwanted. Examples of PUA include advertising software, bundling software, and evasion software that behaves differently with security products. Although PUA is not considered malware, some kinds of software are PUA based on their behavior and reputation.
@@ -174,6 +171,8 @@ Your security team can create indicators for files, IP addresses, URLs, domains,
 As alerts are triggered, if you see something that was detected as malicious or suspicious that should not be, you can suppress alerts for that entity and classify alerts as false positives. Managing your alerts and classifying false positives helps to train your threat protection solution. Taking these steps also helps reduce noise in your security operations dashboard so that your security team can focus on higher priority work items.
 
 ### Suppress an alert
+
+You can suppress an alert in the Microsoft Defender Security Center.
 
 
 
