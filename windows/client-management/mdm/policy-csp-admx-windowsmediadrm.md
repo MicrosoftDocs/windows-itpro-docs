@@ -74,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents Windows Media Digital Rights Management (DRM) from accessing the Internet (or intranet).
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents Windows Media Digital Rights Management (DRM) from accessing the Internet (or intranet).
 
 When enabled, Windows Media DRM is prevented from accessing the Internet (or intranet) for license acquisition and security upgrades.
 

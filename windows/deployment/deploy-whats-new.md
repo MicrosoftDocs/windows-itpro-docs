@@ -63,7 +63,7 @@ Windows PowerShell cmdlets for Delivery Optimization have been improved:
 Additional improvements in [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) include:
 - Enterprise network [throttling is enhanced](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-download-throttling-options-for-delivery-optimization-build-18917) to optimize foreground vs. background throttling.
 - Automatic cloud-based congestion detection is available for PCs with cloud service support.
-- Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Microsoft 365 Apps for enterprise updates, and Intune content, with Microsoft Endpoint Configuration Manager content coming soon! 
+- Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Microsoft 365 Apps for enterprise updates, and Intune content, with Microsoft Endpoint Manager content coming soon! 
 
 The following Delivery Optimization policies are removed in the Windows 10, version 2004 release:
 
