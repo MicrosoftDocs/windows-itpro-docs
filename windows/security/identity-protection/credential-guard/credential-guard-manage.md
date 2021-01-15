@@ -263,8 +263,10 @@ To disable Windows Defender Credential Guard, you can use the following set of p
     >bcdedit /set vsmlaunchtype off
     >```
 
-For more info on virtualization-based security and HVCI, see [Enable virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity
-).
+For more info on virtualization-based security and HVCI, see [Enable virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity).
+
+> [!Note]
+> Credential Guard and Device Guard are not supported when using Azure Gen 1 VMs. These options are available with Gen 2 VMs only.
 
 <span id="turn-off-with-hardware-readiness-tool"/>
 
