@@ -38,7 +38,7 @@ In endpoint protection, a false positive is an entity, such as a file or process
 - [Submitting files for further analysis](#submit-a-file-for-analysis); and
 - [Verifying that the applications your organization is using are properly signed](#confirm-your-software-uses-ev-code-signing).
 
-If you’re using Microsoft Defender for Endpoint, and you're seeing false positives/negatives in your Microsoft Defender Security Center, use this article as a guide to take action. 
+If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), and you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/use), use this article as a guide to take action. This article also includes information about [what to do if you still need help](#still-need-help) after taking the recommended steps to address false positives/negatives in your environment.
 
 ## Review your threat protection settings
 
@@ -169,3 +169,5 @@ Your security team can classify an alert as a false positive in the Microsoft De
 ## Confirm your software uses EV code signing
 
 *Some info is available here: https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate*
+
+## Still need help?
