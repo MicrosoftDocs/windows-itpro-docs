@@ -31,7 +31,11 @@ ms.custom: FPFN
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
 
-In the area of endpoint protection, a false positive is an entity, such as a file or process, that was detected and identified as malicious, when, in fact, the entity does not pose a threat. A false negative is an entity that was not detected as a threat even though it is, in fact, malicious. If you’re using Microsoft Defender for Endpoint, and you're seeing false positives or negatives in your Microsoft Defender Security Center, use this article as a guide to take action. 
+In the area of endpoint protection, a false positive is an entity, such as a file or process, that was detected and identified as malicious, when, in fact, the entity does not pose a threat. A false negative is an entity that was not detected as a threat even though it is, in fact, malicious. The process of addressing false positives/negatives can include:
+- Reviewing your threat protection settings and making adjustments where needed
+- 
+
+If you’re using Microsoft Defender for Endpoint, and you're seeing false positives or negatives in your Microsoft Defender Security Center, use this article as a guide to take action. 
 
 ## Review your threat protection settings
 
