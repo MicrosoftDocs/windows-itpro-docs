@@ -1,6 +1,6 @@
 ---
 title: Web protection
-description: Learn about web protection in Microsoft Defender ATP and how it can protect your organization
+description: Learn about the web protection in Microsoft Defender ATP and how it can protect your organization
 keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, malicious websites 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
