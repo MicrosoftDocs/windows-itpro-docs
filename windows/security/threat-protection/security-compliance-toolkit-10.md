@@ -47,6 +47,9 @@ The Security Compliance Toolkit consists of:
 
 - Microsoft Edge security baseline
     - Version 85
+    
+- Windows Update security baseline
+    - Windows 10 20H2 and below (October 2020 Update)
 
 - Tools
     - Policy Analyzer tool

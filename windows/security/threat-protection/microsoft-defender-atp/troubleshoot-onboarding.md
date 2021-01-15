@@ -448,6 +448,7 @@ The steps below provide guidance for the following scenario:
 
     ![Image of Microsoft Endpoint Configuration Manager configuration30](images/mecm-30.png)
 
+
 ## Related topics
 
 - [Troubleshoot Microsoft Defender for Endpoint](troubleshoot-mdatp.md)
