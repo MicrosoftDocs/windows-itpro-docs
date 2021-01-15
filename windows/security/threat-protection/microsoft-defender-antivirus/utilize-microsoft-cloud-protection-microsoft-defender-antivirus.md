@@ -21,7 +21,7 @@ ms.custom: nextgen
 
 **Applies to:**
 
-- Microsoft Defender Antivirus
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Microsoft next-generation technologies in Microsoft Defender Antivirus provide near-instant, automated protection against new and emerging threats. To dynamically identify new threats, these technologies work with large sets of interconnected data in the Microsoft Intelligent Security Graph and powerful artificial intelligence (AI) systems driven by advanced machine learning models.  
 
@@ -68,7 +68,7 @@ The following table describes the differences in cloud-delivered protection betw
 |Windows 10, version 1607 (Group Policy)  |Microsoft Advanced Protection Service      |Advanced         |No         |
 |Windows 10, version 1703 or greater (Group Policy)	     |Cloud-based Protection      |Advanced         |Configurable         |
 |System Center 2012 Configuration Manager  |      N/A         |Dependent on Windows version         |Not configurable |
-|Microsoft Endpoint Configuration Manager (Current Branch)	     |Cloud protection service         |Dependent on Windows version          |Configurable         |
+|Microsoft Endpoint Manager (Current Branch)	     |Cloud protection service         |Dependent on Windows version          |Configurable         |
 |Microsoft Intune     |Microsoft Advanced Protection Service         |Dependent on Windows version         |Configurable         |
 
 You can also [configure Microsoft Defender Antivirus to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates).
@@ -82,6 +82,6 @@ You can also [configure Microsoft Defender Antivirus to automatically receive ne
 
 - [Configure and validate network connections for Microsoft Defender Antivirus](configure-network-connections-microsoft-defender-antivirus.md). There are certain Microsoft URLs that your network and endpoints must be able to connect to for cloud-delivered protection to work effectively. This article lists the URLs that should be allowed via firewall or network filtering rules, and instructions for confirming your network is properly enrolled in cloud-delivered protection.
 
-- [Configure the block at first sight feature](configure-block-at-first-sight-microsoft-defender-antivirus.md). The "block at first sight" feature can block new malware within seconds, without having to wait hours for traditional Security intelligence. You can enable and configure it with Microsoft Endpoint Configuration Manager and Group Policy.
+- [Configure the block at first sight feature](configure-block-at-first-sight-microsoft-defender-antivirus.md). The "block at first sight" feature can block new malware within seconds, without having to wait hours for traditional Security intelligence. You can enable and configure it with Microsoft Endpoint Manager and Group Policy.
 
-- [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md). Microsoft Defender Antivirus can block suspicious files from running while it queries our cloud-delivered protection service. You can configure the amount of time the file will be prevented from running with Microsoft Endpoint Configuration Manager and Group Policy.
+- [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md). Microsoft Defender Antivirus can block suspicious files from running while it queries our cloud-delivered protection service. You can configure the amount of time the file will be prevented from running with Microsoft Endpoint Manager and Group Policy.

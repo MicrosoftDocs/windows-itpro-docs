@@ -68,7 +68,7 @@ Additional information on Internet Explorer 11, including a Readiness Toolkit, t
 
 ## Availability of Internet Explorer 11
 
-Automatic Updates will start to distribute Internet Explorer 11 shortly after the final release of the product and will distribute it through the Microsoft Endpoint Configuration Manager and WSUS.
+Automatic Updates will start to distribute Internet Explorer 11 shortly after the final release of the product and will distribute it through the Microsoft Endpoint Manager and WSUS.
 
 ## Prevent automatic installation of Internet Explorer 11 with WSUS
 
