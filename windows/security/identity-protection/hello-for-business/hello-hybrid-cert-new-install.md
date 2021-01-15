@@ -126,12 +126,13 @@ Alternatively, you can configure Windows Server 2016 Active Directory Federation
 ### Section Review
 
 > [!div class="checklist"]
-> * Review the overview and uses of Azure AD Multi-Factor Authentication.
+
+> * Review the overview and uses of Azure AD Multi-Factor Authentication Authentication.
 > * Review your Azure Active Directory subscription for Azure AD Multi-Factor Authentication.
 > * Create an Azure AD Multi-Factor Authentication Provider, if necessary.
 > * Configure Azure AD Multi-Factor Authentication features and settings.
-> * Understand the different User States and their effect on Azure AD Multi-Factor Authentication Authentication.
-> * Consider using Azure AD Multi-Factor Authentication Authentication or a third-party multifactor authentication provider with Windows Server 2016 Active Directory Federation Services, if necessary.
+> * Understand the different User States and their effect on Azure AD Multi-Factor Authentication.
+> * Consider using Azure AD Multi-Factor Authentication or a third-party multifactor authentication provider with Windows Server 2016 Active Directory Federation Services, if necessary.
 
 > [!div class="nextstepaction"]
 > [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)

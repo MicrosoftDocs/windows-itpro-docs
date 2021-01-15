@@ -42,7 +42,7 @@ A full scan can be useful on endpoints that have reported a malware threat. The 
 > [!NOTE]
 > By default, quick scans run on mounted removable devices, such as USB drives.
 
-## Use Microsoft Endpoint Configuration Manager to run a scan
+## Use Microsoft Endpoint Manager to run a scan
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 2. Choose **Endpoint security** > **Antivirus**.
