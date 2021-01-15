@@ -56,12 +56,12 @@ We recommend using Microsoft Endpoint Manager to edit your cloud-delivered prote
 #### Use Microsoft Endpoint Manager to review and edit cloud-delivered protection settings
 
 1.	Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
-2.	Choose Endpoint security > Antivirus and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to the next procedure).
+2.	Choose **Endpoint security** > **Antivirus** and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-antivirus-policy)).
 3.	Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
 4.	Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting this to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
 5.	Choose **Review + save**, and then **Save**.
 
-
+#### Use Microsoft Endpoint Manager to set cloud-delivered protection settings for a new antivirus policy
 
 > [!TIP]
 > To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
