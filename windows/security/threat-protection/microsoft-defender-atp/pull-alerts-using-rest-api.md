@@ -1,6 +1,6 @@
 ---
-title: Pull Microsoft Defender ATP detections using REST API
-description: Learn how call an Microsoft Defender ATP endpoint to pull detections in JSON format using the SIEM REST API.
+title: Pull Microsoft Defender for Endpoint detections using REST API
+description: Learn how call an Microsoft Defender for Endpoint API endpoint to pull detections in JSON format using the SIEM REST API.
 keywords: detections, pull detections, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -28,6 +28,8 @@ ms.topic: article
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 >[!Note]
 >- [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
