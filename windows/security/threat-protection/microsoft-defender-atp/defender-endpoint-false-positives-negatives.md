@@ -63,6 +63,8 @@ We recommend using Microsoft Endpoint Manager to edit your cloud-delivered prote
 
 #### Use Microsoft Endpoint Manager to set cloud-delivered protection settings for a new antivirus policy
 
+
+
 > [!TIP]
 > To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
 
