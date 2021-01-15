@@ -64,7 +64,7 @@ Many existing Win32 and Win64 applications already run reliably on Windows 10 wi
 
 Updated versions of Microsoft deployment tools, including MDT, Configuration Manager, and the Windows Assessment and Deployment Kit (Windows ADK) have been released to support Windows 10.
 - [MDT](https://www.microsoft.com/mdt) is Microsoft’s recommended collection of tools, processes, and guidance for automating desktop and server deployment.
-- Configuration Manager simplifies the deployment and management of Windows 10. If you are not currently using Configuration Manager, you can download a free 180-day trial of [Microsoft Endpoint Configuration Manager and Endpoint Protection (current branch)](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) from the TechNet Evaluation Center.
+- Configuration Manager simplifies the deployment and management of Windows 10. If you are not currently using Configuration Manager, you can download a free 180-day trial of [Microsoft Endpoint Manager and Endpoint Protection (current branch)](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) from the TechNet Evaluation Center.
 - The [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK) has tools that allow you to customize Windows images for large-scale deployment, and test system quality and performance. You can download the latest version of the Windows ADK for Windows 10 from the Hardware Dev Center.
 
 ### Can I upgrade computers from Windows 7 or Windows 8.1 without deploying a new image?

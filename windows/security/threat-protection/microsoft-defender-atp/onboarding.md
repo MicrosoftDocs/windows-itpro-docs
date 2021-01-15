@@ -29,6 +29,8 @@ ms.topic: article
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+Learn about the various phases of deploying Microsoft Defender for Endpoint and how to configure the capabilities within the solution. 
+
 Deploying Defender for Endpoint is a three-phase process:
 
 | [![deployment phase - prepare](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1: Prepare](prepare-deployment.md) | [![deployment phase - setup](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2: Setup](production-deployment.md) | ![deployment phase - onboard](images/phase-diagrams/onboard.png)<br>Phase 3: Onboard |

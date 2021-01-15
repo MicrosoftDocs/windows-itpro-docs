@@ -1,5 +1,5 @@
 ---
-title: Onboarding using Microsoft Endpoint Configuration Manager 
+title: Onboarding using Microsoft Endpoint Manager 
 description: Learn how to onboard to Microsoft Defender ATP using Microsoft Endpoint Configuration Manager
 keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ ms.collection:
 ms.topic: article
 ---
 
-# Onboarding using Microsoft Endpoint Configuration Manager 
+# Onboarding using Microsoft Endpoint Manager 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,7 +29,21 @@ ms.topic: article
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This article is part of the Deployment guide and acts as an example onboarding method that guides users in:
+
+
+This article is part of the Deployment guide and acts as an example onboarding method. 
+
+In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the co-management architecture. 
+
+![Image of cloud-native architecture](images/co-management-architecture.png)
+*Diagram of environment architectures*
+
+
+While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
+
+
+
+This topic guides users in:
 - Step 1: Onboarding Windows devices to the service 
 - Step 2: Configuring Defender for Endpoint capabilities
 
@@ -40,9 +54,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 >[!NOTE]
 >Only Windows devices are covered in this example deployment. 
 
-While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. 
 
-For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
 
 ## Step 1: Onboard Windows devices using Microsoft Endpoint Configuration Manager
@@ -54,7 +66,7 @@ created for testing.
 
 Onboarding using tools such as Group policy or manual method does not install any agent on the system. 
 
-Within the Microsoft Endpoint Configuration Manager console
+Within the Microsoft Endpoint Manager console
 the onboarding process will be configured as part of the compliance settings
 within the console.
 
@@ -64,7 +76,7 @@ continues to receive this policy from the management point.
 
 Follow the steps below to onboard endpoints using Microsoft Endpoint Configuration Manager.
 
-1. In Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.            
+1. In Microsoft Endpoint Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.            
 
     ![Image of Microsoft Endpoint Configuration Manager wizard1](images/configmgr-device-collections.png)
 
@@ -104,7 +116,7 @@ After completing this task, you now have a device collection with all the Window
 
 
 ## Step 2: Configure Microsoft Defender for Endpoint capabilities 
-This section guides you in configuring the following capabilities using Microsoft Endpoint Configuration Manager on Windows devices:
+This section guides you in configuring the following capabilities using Microsoft Endpoint Manager on Windows devices:
 
 - [**Endpoint detection and response**](#endpoint-detection-and-response)
 - [**Next-generation protection**](#next-generation-protection)
@@ -133,7 +145,6 @@ Manager and deploy that policy to Windows 10 devices.
 5. In  Microsoft Endpoint Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
 
 6. Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.
-
     ![Image of Microsoft Endpoint Configuration Manager wizard12](images/configmgr-create-policy.png)
 
 7. Enter the name and description, verify **Onboarding** is selected, then select **Next**.
@@ -159,7 +170,7 @@ Manager and deploy that policy to Windows 10 devices.
 
 15. Click **Close** when the Wizard completes.
 
-16.  In the Microsoft Endpoint Configuration Manager console, right-click the Defender for Endpoint policy you just created and select **Deploy**.
+16.  In the Microsoft Endpoint Manager console, right-click the Defender for Endpoint policy you just created and select **Deploy**.
 
      ![Image of configuration settings4](images/configmgr-deploy.png)
 
@@ -222,7 +233,7 @@ Once completed, you should see onboarded endpoints in the portal within an hour.
 ### Next generation protection 
 Microsoft Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.
 
-1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.
+1. In the Microsoft Endpoint Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.
 
     ![Image of antimalware policy](images/9736e0358e86bc778ce1bd4c516adb8b.png)
 
@@ -273,9 +284,9 @@ All these features provide an audit mode and a block mode. In audit mode there i
 
 To set ASR rules in Audit mode:
 
-1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+1. In the Microsoft Endpoint Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
-   ![Image of Microsoft Endpoint Configuration Manager console](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+   ![Image of Microsoft Endpoint Manager console](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
 
 2.  Select **Attack Surface Reduction**.
@@ -289,12 +300,14 @@ To set ASR rules in Audit mode:
 
     ![Image of Microsoft Endpoint Configuration Manager console2](images/0a6536f2c4024c08709cac8fcf800060.png)
 
+
     
 5. Once the policy is created click **Close**.
 
     ![Image of Microsoft Endpoint Configuration Manager console3](images/95d23a07c2c8bc79176788f28cef7557.png)
 
-    
+    ![Image of Microsoft Endpoint Manager console](images/95d23a07c2c8bc79176788f28cef7557.png)
+   
 
 6.  Right-click on the newly created policy and choose **Deploy**.
     
@@ -303,6 +316,7 @@ To set ASR rules in Audit mode:
 7. Target the policy to the newly created Windows 10 collection and click **OK**.
 
     ![Image of Microsoft Endpoint Configuration Manager console5](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+
 
 After completing this task, you now have successfully configured ASR rules in audit mode.  
   
@@ -331,7 +345,7 @@ detections](https://docs.microsoft.com/windows/security/threat-protection/micros
 
 
 #### Set Network Protection rules in Audit mode:
-1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and  Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+1. In the Microsoft Endpoint Manager console, navigate to **Assets and  Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
     ![A screenshot System Center Configuration Manager1](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
@@ -357,12 +371,13 @@ detections](https://docs.microsoft.com/windows/security/threat-protection/micros
 
     ![A screenshot Microsoft Endpoint Configuration Manager2](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
+
 After completing this task, you now have successfully configured Network
 Protection in audit mode.
 
 #### To set Controlled Folder Access rules in Audit mode:
 
-1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+1. In the Microsoft Endpoint Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
     ![A screenshot of Microsoft Endpoint Configuration Manager3](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 

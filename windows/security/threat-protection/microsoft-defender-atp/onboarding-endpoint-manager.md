@@ -1,6 +1,6 @@
 ---
-title: Onboarding using Microsoft Endpoint Manager 
-description: Learn how to onboard to Microsoft Defender ATP using Microsoft Endpoint  Manager
+title: Onboarding using Microsoft Intune
+description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Intune
 keywords: onboarding, configuration, deploy, deployment, endpoint manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -19,7 +19,7 @@ ms.collection:
 ms.topic: article
 ---
 
-# Onboarding using Microsoft Endpoint Manager 
+# Onboarding using Microsoft Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,7 +29,20 @@ ms.topic: article
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This article is part of the Deployment guide and acts as an example onboarding method that guides users in:
+This article is part of the Deployment guide and acts as an example onboarding method. 
+
+In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the cloud-native architecture. 
+
+![Image of cloud-native architecture](images/cloud-native-architecture.png)
+*Diagram of environment architectures*
+
+While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
+
+
+[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) is a solution platform that unifies several services. It includes [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) for cloud-based device management.
+
+
+This topic guides users in:
 - Step 1: Onboarding devices to the service by creating a group in Microsoft Endpoint Manager (MEM) to assign configurations on
 - Step 2: Configuring Defender for Endpoint capabilities using Microsoft Endpoint Manager
 
@@ -43,9 +56,9 @@ This onboarding guidance will walk you through the following basic steps that yo
 
     -   In Microsoft Endpoint Manager, we'll guide you in creating a separate policy for each capability.
 
-While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. 
 
-For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
+
+
 
 ## Resources
 
