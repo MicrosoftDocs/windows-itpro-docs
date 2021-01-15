@@ -159,7 +159,7 @@ For more information about Windows Autopilot, see [Overview of Windows Autopilot
 
 For existing computers running Windows 7, Windows 8, or Windows 8.1, the recommended path for organizations deploying Windows 10 leverages the Windows installation program (Setup.exe) to perform an in-place upgrade, which automatically preserves all data, settings, applications, and drivers from the existing operating system version. This requires the least IT effort, because there is no need for any complex deployment infrastructure.
 
-Although consumer PCs will be upgraded using Windows Update, organizations want more control over the process. This is accomplished by leveraging tools like Microsoft Endpoint Configuration Manager or the Microsoft Deployment Toolkit to completely automate the upgrade process through simple task sequences.
+Although consumer PCs will be upgraded using Windows Update, organizations want more control over the process. This is accomplished by leveraging tools like Microsoft Endpoint Manager or the Microsoft Deployment Toolkit to completely automate the upgrade process through simple task sequences.
 
 The in-place upgrade process is designed to be extremely reliable, with the ability to automatically roll back to the previous operating system if any issues are encountered during the deployment process, without any IT staff involvement. Rolling back manually can also be done by leveraging the automatically-created recovery information (stored in the Windows.old folder), in case any issues are encountered after the upgrade is finished. The upgrade process is also typically faster than traditional deployments, because applications do not need to be reinstalled as part of the process.
 

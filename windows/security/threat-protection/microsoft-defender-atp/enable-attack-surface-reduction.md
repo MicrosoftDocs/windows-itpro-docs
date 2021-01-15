@@ -45,7 +45,7 @@ You can enable attack surface reduction rules by using any of these methods:
 - [Group Policy](#group-policy)
 - [PowerShell](#powershell)
 
-Enterprise-level management such as Intune or Microsoft Endpoint Configuration Manager is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
+Enterprise-level management such as Intune or Microsoft Endpoint Manager is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
 
 ## Exclude files and folders from ASR rules
 
