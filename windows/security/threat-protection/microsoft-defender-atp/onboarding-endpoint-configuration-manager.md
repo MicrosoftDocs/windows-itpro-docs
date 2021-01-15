@@ -286,12 +286,7 @@ To set ASR rules in Audit mode:
 
 1. In the Microsoft Endpoint Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
-<<<<<<< HEAD
    ![Image of Microsoft Endpoint Configuration Manager console0](images/728c10ef26042bbdbcd270b6343f1a8a.png)
-=======
-   ![Image of Microsoft Endpoint Manager console](images/728c10ef26042bbdbcd270b6343f1a8a.png)
->>>>>>> 23a3021e03bd6b1ecdffdc738c3e4c4c37399ecb
-
 
 2.  Select **Attack Surface Reduction**.
    
@@ -310,7 +305,7 @@ To set ASR rules in Audit mode:
 
     ![Image of Microsoft Endpoint Configuration Manager console3](images/95d23a07c2c8bc79176788f28cef7557.png)
 
-    ![Image of Microsoft Endpoint Manager console](images/95d23a07c2c8bc79176788f28cef7557.png)
+    ![Image of Microsoft Endpoint Manager console1](images/95d23a07c2c8bc79176788f28cef7557.png)
    
 
 6.  Right-click on the newly created policy and choose **Deploy**.
