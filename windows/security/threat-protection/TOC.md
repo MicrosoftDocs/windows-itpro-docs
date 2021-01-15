@@ -508,6 +508,8 @@
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
 
+### [Address false positives/negatives in Microsoft Defender for Endpoint](microsoft-defender-atp/defender-endpoint-false-positives-negatives.md)
+
 ### [Use audit mode](microsoft-defender-atp/audit-windows-defender.md)
 
 ## Reference
