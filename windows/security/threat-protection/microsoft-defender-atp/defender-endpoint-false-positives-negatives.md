@@ -216,3 +216,9 @@ Want to learn more? See the following resources:
 - [Get a code signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate)
 
 ## Still need help?
+
+If you still need help after working through all the steps in this article, your best bet is to contact technical support.
+
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
+3. In the Support Assistant window, describe your issue, and then send your message. From there, you can open a service request.  
