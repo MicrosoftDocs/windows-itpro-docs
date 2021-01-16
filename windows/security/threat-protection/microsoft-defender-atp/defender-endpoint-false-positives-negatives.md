@@ -204,7 +204,7 @@ You can submit files, such as false positives or false negatives, to Microsoft f
 
 1. Review the guidelines here: [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide).
 
-2. Visit the Microsoft Security Intelligence submission site at [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission), and submit your file(s).
+2. Visit the Microsoft Security Intelligence submission ([https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission)), and submit your file(s).
 
 ## Confirm your software uses EV code signing
 
