@@ -159,6 +159,28 @@ ICS is enabled by default in Windows, and ICS must be enabled in order for Appli
 
 5. Reboot the device.
 
+### Why doesn't the container not fully load when Device Control Policies are enabled?
+The whitelisting of these items are required to be allowed in the GPO to ensure AppGuard works properly. 
+
+Policy: Allow installation of devices that match any of these device IDs 
+•	SCSI\DiskMsft____Virtual_Disk____ 
+•	{8e7bd593-6e6c-4c52-86a6-77175494dd8e}\msvhdhba 
+•	VMS_VSF 
+•	root\Vpcivsp 
+•	root\VMBus 
+•	vms_mp 
+•	VMS_VSP 
+•	ROOT\VKRNLINTVSP 
+•	ROOT\VID 
+•	root\storvsp 
+•	vms_vsmp 
+•	VMS_PP 
+
+Policy: Allow installation of devices using drivers that match these device setup classes 
+•	{71a27cdd-812a-11d0-bec7-08002be2092f}
+
+
+
 ## See also
 
 [Configure Microsoft Defender Application Guard policy settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)
