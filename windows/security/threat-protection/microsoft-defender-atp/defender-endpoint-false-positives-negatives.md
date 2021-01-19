@@ -150,7 +150,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 ### Indicators for Microsoft Defender for Endpoint
 
-[Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) enable your security operations team to define the detection, prevention, and exclusion of entities. For example, your security operations team can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain IP addresses or URLs.
+[Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) enable your security operations team to define the detection, prevention, and exclusion of entities. For example, your security operations team can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain files, IP addresses, or URLs.
 
 To specify entities as exclusions for Microsoft Defender for Endpoint, your security team can create "allow" indicators. Such "allow" indicators apply to the following capabilities in Microsoft Defender for Endpoint:
 
