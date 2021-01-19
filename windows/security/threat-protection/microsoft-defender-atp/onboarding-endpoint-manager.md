@@ -1,7 +1,7 @@
 ---
-title: Onboarding using Microsoft Intune
-description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Intune
-keywords: onboarding, configuration, deploy, deployment, endpoint manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction
+title: Onboarding using Microsoft Endpoint Manager
+description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Endpoint Manager
+keywords: onboarding, configuration, deploy, deployment, endpoint manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -19,7 +19,7 @@ ms.collection:
 ms.topic: article
 ---
 
-# Onboarding using Microsoft Intune
+# Onboarding using Microsoft Endpoint Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
