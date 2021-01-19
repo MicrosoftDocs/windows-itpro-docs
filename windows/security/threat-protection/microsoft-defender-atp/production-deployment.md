@@ -248,6 +248,5 @@ You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https:
 > As a cloud-based solution, the IP address range can change. It's recommended you move to DNS resolving setting.
 
 ## Next step
-|||
-|:-------|:-----|
-|![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so that the Microsoft Defender for Endpoint service can get sensor data from them.
+
+![**Phase 3: Onboard**](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md): Onboard devices to the service so that the Microsoft Defender for Endpoint service can get sensor data from them. 
