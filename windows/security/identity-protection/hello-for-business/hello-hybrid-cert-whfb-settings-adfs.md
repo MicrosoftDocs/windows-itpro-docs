@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/20/2018
+ms.date: 01/14/2021
 ms.reviewer: 
 ---
 # Configure Windows Hello for Business: Active Directory Federation Services
@@ -76,9 +76,8 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 > (Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
 > ```
 > 6. Execute the command `Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'`.
-> 7. Restart the ADFS service.
-> 8. On the client: Restart the client. User should be prompted to provision WHFB.
-> 9. If the provisioning window does not pop up then need to collect NGC trace logs and further troubleshoot.
+> 7. Restart the AD FS service.
+> 8. On the client: Restart the client. User should be prompted to provision Windows Hello for Business.
 
 ### Section Review
 

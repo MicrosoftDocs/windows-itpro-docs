@@ -66,5 +66,7 @@
 ## [Windows Hello for Business Frequently Asked Questions (FAQ)](hello-faq.yml)
 ### [Windows Hello for Business Videos](hello-videos.md)
 
-## [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-## [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+## Windows Hello for Business Troubleshooting
+### [Known Deployment Issues](hello-deployment-issues.md)
+### [Errors during PIN creation](hello-errors-during-pin-creation.md)
+### [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
