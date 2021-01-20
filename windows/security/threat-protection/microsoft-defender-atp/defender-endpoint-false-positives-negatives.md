@@ -166,7 +166,15 @@ Your security team can create indicators for files, IP addresses, URLs, domains,
 - [Create an indicator for an application certificate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates)
 
 > [!TIP]
-> When you create indicators, you can define them one by one or import multiple items at once. Keep in mind there's a limit of 15,000 indicators you can have in a single tenant. And, you might need to gather certain details first, such as file hash information. Make sure to review the information, including prerequisites, 
+> When you create indicators, you can define them one by one or import multiple items at once. Keep in mind there's a limit of 15,000 indicators you can have in a single tenant. And, you might need to gather certain details first, such as file hash information. Make sure to review the prerequisites before you [create indicators](manage-indicators.md). 
+
+| Indicator type | Prerequisites | Notes  |
+|----|----|---|
+|Files <p>Helps prevent suspected malware (or potentially malicious files) from being downloaded from the web. Files can include portable executable (PE) files, such as `.exe` and `.dll` files. <p> [Create an indicator for a file, such as an executable](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-file). | Your organization is using Microsoft Defender Antivirus with cloud-based protection enabled. <p>Your antimalware client version is must be 4.18.1901.x or later. <p>Your devices are must be running one of the following versions of Windows:<br/>- Windows 10, version 1703 or later<br/>- Windows Server 2016<br/>- Windows Server 2019 | Make sure the [Block or allow feature is turned on](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features). | The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action <p>Trusted signed files are treated differently. Defender for Endpoint is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications. <p>Typically, file blocks are enforced within a couple of minutes, but can take upwards of 30 minutes. |
+
+
+
+
 
 ## Classify a false positive or false negative
 
