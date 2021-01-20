@@ -163,21 +163,21 @@ ICS is enabled by default in Windows, and ICS must be enabled in order for Appli
 The whitelisting of these items are required to be allowed in the GPO to ensure AppGuard works properly. 
 
 Policy: Allow installation of devices that match any of these device IDs 
-•	SCSI\DiskMsft____Virtual_Disk____ 
-•	{8e7bd593-6e6c-4c52-86a6-77175494dd8e}\msvhdhba 
-•	VMS_VSF 
-•	root\Vpcivsp 
-•	root\VMBus 
-•	vms_mp 
-•	VMS_VSP 
-•	ROOT\VKRNLINTVSP 
-•	ROOT\VID 
-•	root\storvsp 
-•	vms_vsmp 
-•	VMS_PP 
+- SCSI\DiskMsft____Virtual_Disk____ 
+- {8e7bd593-6e6c-4c52-86a6-77175494dd8e}\msvhdhba 
+- VMS_VSF 
+- root\Vpcivsp 
+- root\VMBus 
+- vms_mp 
+- VMS_VSP 
+- ROOT\VKRNLINTVSP 
+- ROOT\VID 
+- root\storvsp 
+- vms_vsmp 
+- VMS_PP 
 
 Policy: Allow installation of devices using drivers that match these device setup classes 
-•	{71a27cdd-812a-11d0-bec7-08002be2092f}
+- {71a27cdd-812a-11d0-bec7-08002be2092f}
 
 
 
