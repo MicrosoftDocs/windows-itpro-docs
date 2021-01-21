@@ -9,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: mjcaparas
+author: dansimp
 ms.localizationpriority: medium
 msauthor: v-anbic
 ms.date: 08/27/2018
