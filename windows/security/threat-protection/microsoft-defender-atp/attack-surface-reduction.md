@@ -14,7 +14,7 @@ ms.author: deniseb
 ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
-ms.date: 01/08/2021
+ms.date: 01/20/2021
 ---
 
 # Use attack surface reduction rules to prevent malware infection
@@ -24,7 +24,7 @@ ms.date: 01/08/2021
 
 **Applies to:**
 
-* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 ## Why attack surface reduction rules are important
 
