@@ -201,7 +201,7 @@ Type of threat for which the behavior is configured.
 Action to take when coming across a threat of the type specified in the preceding section. Can be:
 
 - **Audit**: The device is not protected against this type of threat, but an entry about the threat is logged.
-- **Block**: The device is protected against this type of threat and you are notified in the user interface and the security console.
+- **Block**: The device is protected against this type of threat and you are notified in the security console.
 - **Off**: The device is not protected against this type of threat and nothing is logged.
 
 |||

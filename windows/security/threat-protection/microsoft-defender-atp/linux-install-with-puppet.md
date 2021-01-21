@@ -158,7 +158,7 @@ $version = undef
             }
 
             file { '/etc/opt/microsoft/mdatp/mdatp_onboard.json':
-                source  => 'puppet:///modules/mdatp/mdatp_onboard.json',
+                source  => 'puppet:///modules/install_mdatp/mdatp_onboard.json',
                 owner   => root,
                 group   => root,
                 mode    => '0600',
