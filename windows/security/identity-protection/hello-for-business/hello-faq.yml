@@ -57,6 +57,8 @@ sections:
 
           If a user has signed into their Azure AD registered device with Windows Hello, their Windows Hello for Business key will be used to authenticate the user's work identity when they try to use Azure AD resources. The Windows Hello for Business key meets Azure AD multi-factor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. 
 
+          It is possible to Azure AD register a domain joined device. If the domain joined device has a convenience PIN, login with the convenience PIN will no longer work. This configuration is not supported by Windows Hello for Business. 
+
           For more information please read [Azure AD registered devices](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register).
 
       - question: I have Windows Server 2016 domain controller(s), so why is the Key Admins group missing?
