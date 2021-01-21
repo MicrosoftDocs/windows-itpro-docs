@@ -35,7 +35,8 @@ ms.topic: article
 Method|Return Type |Description
 :---|:---|:---
 [List Indicators](get-ti-indicators-collection.md) | [Indicator](ti-indicator.md) Collection | List [Indicator](ti-indicator.md) entities.
-[Submit Indicator](post-ti-indicator.md) | [Indicator](ti-indicator.md) | Submits [Indicator](ti-indicator.md) entity.
+[Submit Indicator](post-ti-indicator.md) | [Indicator](ti-indicator.md) | Submit or update [Indicator](ti-indicator.md) entity.
+[Import Indicators](import-ti-indicators.md) | [Indicator](ti-indicator.md) Collection | Submit or update [Indicators](ti-indicator.md) entities.
 [Delete Indicator](delete-ti-indicator-by-id.md) | No Content | Deletes [Indicator](ti-indicator.md) entity.
 
 
