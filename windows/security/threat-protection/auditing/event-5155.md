@@ -2,7 +2,7 @@
 title: 5155(F) The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections. (Windows 10)
 description: Describes security event 5155(F) The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5155(F): The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections.

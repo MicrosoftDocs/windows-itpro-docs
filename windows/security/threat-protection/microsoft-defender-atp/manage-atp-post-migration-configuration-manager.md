@@ -4,7 +4,7 @@ description: Learn how to manage Microsoft Defender for Endpoint with Configurat
 keywords: post-migration, manage, operations, maintenance, utilization, Configuration Manager, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.technology: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,8 +15,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
+  - M365-security-compliance
+  - m365solution-scenario
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou

@@ -4,7 +4,7 @@ description: Set up your automated investigation and remediation capabilities in
 keywords: configure, setup, automated, investigation, detection, alerts, remediation, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.technology: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,7 +14,7 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2020
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs

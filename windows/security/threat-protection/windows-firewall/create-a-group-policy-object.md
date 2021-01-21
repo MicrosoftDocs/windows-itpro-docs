@@ -4,7 +4,7 @@ description: Learn how to use the Active Directory Users and Computers MMC snap-
 ms.assetid: 72a50dd7-5033-4d97-a5eb-0aff8a35cced
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Create a Group Policy Object

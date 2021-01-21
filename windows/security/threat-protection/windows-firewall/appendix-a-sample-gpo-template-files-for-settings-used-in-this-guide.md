@@ -4,7 +4,7 @@ description: Use sample template files import an XML file containing customized 
 ms.assetid: 75930afd-ab1b-4e53-915b-a28787814b38
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Appendix A: Sample GPO Template Files for Settings Used in this Guide

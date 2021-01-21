@@ -4,7 +4,7 @@ description: Learn how to add a device to an encryption zone by adding the devic
 ms.assetid: eeb973dd-83a5-4381-9af9-65c43c98c29b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Encryption Zone GPOs

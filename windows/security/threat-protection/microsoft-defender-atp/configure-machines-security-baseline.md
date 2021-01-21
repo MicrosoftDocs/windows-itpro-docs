@@ -4,7 +4,7 @@ description: The Microsoft Defender ATP security baseline sets Microsoft Defende
 keywords: Intune management, MDATP, WDATP, Microsoft Defender, advanced threat protection ASR, security baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Increase compliance to the Microsoft Defender for Endpoint security baseline

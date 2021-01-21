@@ -4,7 +4,7 @@ description: Learn about reasons to add devices to an exemption list in Windows 
 ms.assetid: a05e65b4-b48d-44b1-a7f1-3a8ea9c19ed8
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Exemption List
