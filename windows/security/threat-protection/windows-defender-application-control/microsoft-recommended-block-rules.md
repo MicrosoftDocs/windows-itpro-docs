@@ -1,9 +1,9 @@
 ---
 title: Microsoft recommended block rules (Windows 10)
-description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.  
-keywords:  security, malware
+description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 04/09/2019
+ms.technology: mde
 ---
 
 # Microsoft recommended block rules

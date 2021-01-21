@@ -5,7 +5,7 @@ ms.assetid: a3354c8e-4208-4be6-bc19-56a572c361b4
 ms.reviewer: 
 manager: dansimp
 keywords: font blocking, untrusted font blocking, block fonts, untrusted fonts
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.sitesec: library
@@ -13,6 +13,7 @@ author: dansimp
 ms.author: dansimp
 ms.date: 08/14/2017
 ms.localizationpriority: medium
+ms.technology: mde
 ---
 
 # Block untrusted fonts in an enterprise

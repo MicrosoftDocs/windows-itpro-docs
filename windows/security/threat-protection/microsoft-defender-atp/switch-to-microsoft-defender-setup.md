@@ -4,7 +4,7 @@ description: This is phase 2, Setup, for switching to Microsoft Defender for End
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.technology: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,8 +15,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-migratetomdatp
+  - M365-security-compliance
+  - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
 ms.date: 09/22/2020

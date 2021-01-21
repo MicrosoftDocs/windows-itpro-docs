@@ -1,22 +1,23 @@
 ---
-title: Get relevant info about an entity with go hunt 
-description: Learn how to use the "go hunt" tool to quickly query for relevant information about an entity or event using advanced hunting.
+title: Get relevant info about an entity with go hunt
+description: Learn how to use the go hunt tool to quickly query for relevant information about an entity or event using advanced hunting.
 keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: v-maave
 author: martyav
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Quickly hunt for entity or event information with go hunt

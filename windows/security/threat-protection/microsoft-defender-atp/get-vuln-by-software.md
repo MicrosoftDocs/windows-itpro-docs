@@ -1,9 +1,9 @@
 ---
 title: List vulnerabilities by software
-description: Retrieve a list of vulnerabilities in the installed software. 
+description: Retrieve a list of vulnerabilities in the installed software.
 keywords: apis, graph api, supported apis, get, vulnerabilities list, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # List vulnerabilities by software

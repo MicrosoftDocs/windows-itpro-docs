@@ -4,7 +4,7 @@ description: Best practices, location, values, and security considerations for t
 ms.assetid: e553f700-aae5-425c-8650-f251c90ba5dd
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 01/04/2019
+ms.technology: mde
 ---
 # SMBv1 Microsoft network client: Digitally sign communications (if server agrees)
 
