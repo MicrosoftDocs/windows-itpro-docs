@@ -80,24 +80,50 @@ We've redefined the alert categories to align to the [enterprise attack tactics]
 
 The table below lists the current categories and how they generally map to previous categories. 
 
-| New category | Previous categories | Detected threat activity or component |
-|----------------------|----------------------|-------------|
-| Collection           | - | Locating and collecting data for exfiltration |
-| Command and control  | CommandAndControl | Connecting to attacker-controlled network infrastructure to relay data or receive commands |
-| Credential access    | CredentialTheft | Obtaining valid credentials to extend control over devices and other resources in the network |
-| Defense evasion      | - | Avoiding security controls by, for example, turning off security apps, deleting implants, and running rootkits |
-| Discovery            | Reconnaissance, WebFingerprinting | Gathering information about important devices and resources, such as administrator computers, domain controllers, and file servers |
-| Execution            | Delivery, MalwareDownload | Launching attacker tools and malicious code, including RATs and backdoors |
-| Exfiltration         | Exfiltration | Extracting data from the network to an external, attacker-controlled location |
-| Exploit              | Exploit | Exploit code and possible exploitation activity |
-| Initial access       | SocialEngineering, WebExploit, DocumentExploit | Gaining initial entry to the target network, usually involving password-guessing, exploits, or phishing emails |
-| Lateral movement     | LateralMovement, NetworkPropagation | Moving between devices in the target network to reach critical resources or gain network persistence |
-| Malware              | Malware, Backdoor, Trojan, TrojanDownloader, CredentialStealing, Weaponization, RemoteAccessTool | Backdoors, trojans, and other types of malicious code |
-| Persistence          | Installation, Persistence | Creating autostart extensibility points (ASEPs) to remain active and survive system restarts |
-| Privilege escalation | PrivilegeEscalation | Obtaining higher permission levels for code by running it in the context of a privileged process or account |
-| Ransomware           | Ransomware | Malware that encrypts files and extorts payment to restore access |
-| Suspicious activity  | General, None, NotApplicable, EnterprisePolicy, SuspiciousNetworkTraffic | Atypical activity that could be malware activity or part of an attack |
-| Unwanted software    | UnwantedSoftware | Low-reputation apps and apps that impact productivity and the user experience; detected as potentially unwanted applications (PUAs) |
+| New category               | Previous category                                                                                | API category name        | Detected threat activity or component                                                                                               |
+|----------------------------|--------------------------------------------------------------------------------------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+|                            |                                                                                                  | AccessGovernance         |                                                                                                                                     |
+| Backdoor                   | None                                                                                             |                          |                                                                                                                                     |
+| Collection                 | None                                                                                             | Collection               | Locating and collecting data for exfiltration                                                                                       |
+| Command and control        | CommandAndControl                                                                                | CommandAndControl        | Connecting to attacker-controlled network infrastructure to relay data or receive commands                                          |
+| Credential access          | CredentialTheft                                                                                  | CredentialAccess         | Obtaining valid credentials to extend control over devices and other resources in the network                                       |
+| Credential stealing        | CredentialTheft                                                                                  | CredentialStealing       | Obtaining valid credentials to extend control over devices and other resources in the network                                       |
+| Credential theft           | None                                                                                             | CredentialTheft          |                                                                                                                                     |
+|                            |                                                                                                  | DataGovernance           |                                                                                                                                     |
+|                            |                                                                                                  | DataLossPrevention       |                                                                                                                                     |
+| Defense evasion            | None                                                                                             | DefenseEvasion           |                                                                                                                                     |
+| Delivery                   | None                                                                                             |                          |                                                                                                                                     |
+| Discovery                  | Reconnaissance, WebFingerprinting                                                                | Discovery                | Gathering information about important devices and resources, such as administrator computers, domain controllers, and file servers  |
+| Document exploit           | None                                                                                             | DocumentExploit          |                                                                                                                                     |
+| Enterprise policy          | None                                                                                             | EnterprisePolicy         |                                                                                                                                     |
+| Execution                  | Delivery, MalwareDownload                                                                        | Execution                | Launching attacker tools and malicious code, including RATs and backdoors                                                           |
+| Exfiltration               | Exfiltration                                                                                     | Exfiltration             | Extracting data from the network to an external, attacker-controlled location                                                       |
+| Exploit                    | Exploit                                                                                          | Exploit                  | Exploit code and possible exploitation activity                                                                                     |
+| General                    | None                                                                                             | General                  |                                                                                                                                     |
+| Impact                     | None                                                                                             |                          |                                                                                                                                     |
+| Initial access             | SocialEngineering, WebExploit, DocumentExploit                                                   | InitialAccess            | Gaining initial entry to the target network, usually involving password-guessing, exploits, or phishing emails                      |
+| Installation               | None                                                                                             | Installation             |                                                                                                                                     |
+| Lateral movement           | LateralMovement, NetworkPropagation                                                              | LateralMovement          | Moving between devices in the target network to reach critical resources or gain network persistence                                |
+|                            |                                                                                                  | MailFlow                 |                                                                                                                                     |
+| Malware                    | Malware, Backdoor, Trojan, TrojanDownloader, CredentialStealing, Weaponization, RemoteAccessTool | Malware                  | Backdoors, trojans, and other types of malicious code                                                                               |
+| Malware download           | None                                                                                             | MalwareDownload          |                                                                                                                                     |
+| Network propagation        | None                                                                                             | NetworkPropagation       |                                                                                                                                     |
+| Persistence                | Installation, Persistence                                                                        | Persistence              | Creating autostart extensibility points (ASEPs) to remain active and survive system restarts                                        |
+| Privilege escalation       | PrivilegeEscalation                                                                              | PrivilegeEscalation      | Obtaining higher permission levels for code by running it in the context of a privileged process or account                         |
+| Ransomware                 | Ransomware                                                                                       | Ransomware               | Malware that encrypts files and extorts payment to restore access                                                                   |
+| Reconnaissance             | None                                                                                             | Reconnaissance           |                                                                                                                                     |
+| Remote access tool         | None                                                                                             | RemoteAccessTool         |                                                                                                                                     |
+| Social engineering         | None                                                                                             | SocialEngineering        |                                                                                                                                     |
+| Suspicious activity        | General, None, NotApplicable, EnterprisePolicy, SuspiciousNetworkTraffic                         | SuspiciousActivity       | Atypical activity that could be malware activity or part of an attack                                                               |
+| Suspicious network traffic | None                                                                                             | SuspiciousNetworkTraffic |                                                                                                                                     |
+|                            |                                                                                                  | ThreatManagement         |                                                                                                                                     |
+| Trojan                     | None                                                                                             | Trojan                   |                                                                                                                                     |
+| Trojan downloader          | None                                                                                             | TrojanDownloader         |                                                                                                                                     |
+| Unwanted software          | UnwantedSoftware                                                                                 | UnwantedSoftware         | Low-reputation apps and apps that impact productivity and the user experience; detected as potentially unwanted applications (PUAs) |
+| Weaponization              | None                                                                                             | Weaponization            |                                                                                                                                     |
+| Web exploit                | None                                                                                             | WebExploit               |                                                                                                                                     |
+| Web fingerprinting         | None                                                                                             | WebFingerprinting        |                                                                                                                                     |
+
 
 
 ### Status
@@ -122,6 +148,22 @@ Select the source that triggered the alert detection. Microsoft Threat Experts p
 
 >[!NOTE]
 >The Antivirus filter will only appear if devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
+
+| Detection source                  | API value                  |
+|-----------------------------------|----------------------------|
+| 3rd party sensors                 | ThirdPartySensors          |
+| Antivirus                         | WindowsDefenderAv          |
+| Automated investigation           | AutomatedInvestigation     |
+| Custom detection                  | CustomDetection            |
+| Custom TI                         | CustomerTI                 |
+| EDR                               | WindowsDefenderAtp         |
+| Microsoft 365 Defender            | MTP                        |
+| Microsoft Defender for Office 365 | OfficeATP                  |
+| Microsoft Threat Experts          | ThreatExperts              |
+| SmartScreen                       | WindowsDefenderSmartScreen |
+
+
+
 
 
 ### OS platform
