@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/19/2021
+ms.date: 01/21/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
