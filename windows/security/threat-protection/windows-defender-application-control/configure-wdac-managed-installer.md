@@ -1,9 +1,9 @@
 ---
 title: Configure a WDAC managed installer (Windows 10)
 description: Explains how to configure a custom Manged Installer.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 08/14/2020
+ms.technology: mde
 ---
 
 # Configuring a managed installer with AppLocker and Windows Defender Application Control

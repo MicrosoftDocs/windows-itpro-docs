@@ -3,7 +3,7 @@ title: Get package SAS URI API
 description: Use this API to get a URI that allows downloading an investigation package.
 keywords: apis, graph api, supported apis, get package, sas, uri
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Get package SAS URI API

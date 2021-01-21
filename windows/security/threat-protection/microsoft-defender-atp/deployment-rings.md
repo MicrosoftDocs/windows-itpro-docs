@@ -3,7 +3,7 @@ title: Deploy Microsoft Defender ATP in rings
 description: Learn how to deploy Microsoft Defender ATP in rings
 keywords: deploy, rings, evaluate, pilot, insider fast, insider slow, setup, onboard, phase, deployment, deploying, adoption, configuring
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-overview  
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-overview
 ms.topic: article
+ms.technology: mde
 ---
 
 # Deploy Microsoft Defender ATP in rings

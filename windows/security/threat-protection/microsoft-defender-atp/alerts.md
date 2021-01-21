@@ -3,7 +3,7 @@ title: Get alerts API
 description: Learn about the methods and properties of the Alert resource type in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Alert resource type

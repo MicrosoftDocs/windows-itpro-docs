@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: 80bad5c4-d9eb-4e3a-a5dc-dcb742b83fca
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Modify firmware environment values

@@ -3,7 +3,7 @@ title: Apply Microsoft Defender Antivirus updates after certain events
 description: Manage how Microsoft Defender Antivirus applies security intelligence updates after startup or receiving cloud-delivered detection reports.
 keywords: updates, protection, force updates, events, startup, check for latest, notifications
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
+ms.technology: mde
 ---
 
 # Manage event-based forced updates

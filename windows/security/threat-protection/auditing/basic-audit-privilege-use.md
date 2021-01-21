@@ -4,7 +4,7 @@ description: Determines whether to audit each instance of a user exercising a us
 ms.assetid: C5C6DAAF-8B58-4DFB-B1CE-F0675AE0E9F8
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Audit privilege use

@@ -3,7 +3,7 @@ title: Onboard to the Microsoft Defender ATP service
 description: Learn how to onboard endpoints to Microsoft Defender ATP service
 keywords: 
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario  
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
 ms.topic: article
+ms.technology: mde
 ---
 
 # Onboard to the Microsoft Defender for Endpoint service

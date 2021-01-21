@@ -4,7 +4,7 @@ description: Get an overview of what to expect from Microsoft Defender Antivirus
 keywords: windows defender, next-generation, atp, advanced threat protection, compatibility, passive mode
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr, shwjha
 manager: dansimp
 ms.date: 01/11/2021
+ms.technology: mde
 ---
 
 # Microsoft Defender Antivirus compatibility

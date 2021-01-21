@@ -4,7 +4,7 @@ description: Advanced security audit policy settings may appear to overlap with 
 ms.assetid: 6FE8AC10-F48E-4BBF-979B-43A5DFDC5DFC
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Advanced security audit policies

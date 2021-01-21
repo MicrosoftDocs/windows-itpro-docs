@@ -4,7 +4,7 @@ description: Learn how call an Microsoft Defender for Endpoint API endpoint to p
 keywords: detections, pull detections, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Pull Microsoft Defender for Endpoint detections using SIEM REST API

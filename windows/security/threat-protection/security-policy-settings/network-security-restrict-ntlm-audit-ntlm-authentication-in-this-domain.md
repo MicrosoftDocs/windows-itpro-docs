@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: 33183ef9-53b5-4258-8605-73dc46335e6e
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network security: Restrict NTLM: Audit NTLM authentication in this domain

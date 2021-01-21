@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Application Guard (Windows 10)
 description: Learn about Microsoft Defender Application Guard and how it helps to combat malicious content and malware out on the Internet.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,6 +12,7 @@ ms.date: 12/17/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Microsoft Defender Application Guard overview
