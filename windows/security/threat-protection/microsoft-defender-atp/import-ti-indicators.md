@@ -114,9 +114,9 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 }
 ```
 
-**Request**
+**Response**
 
-Here is an example of the request.
+Here is an example of the response.
 
 ```json
 {
