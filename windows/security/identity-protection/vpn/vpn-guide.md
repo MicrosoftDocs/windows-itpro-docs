@@ -1,10 +1,10 @@
 ---
 title: Windows 10 VPN technical guide (Windows 10)
-description: Learn about decisions to make for Windows 10 clients in your enterprise VPN solution and how to configure your deployment. 
+description: Learn about decisions to make for Windows 10 clients in your enterprise VPN solution and how to configure your deployment.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dulcemontemayor
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 11/13/2020
 ms.reviewer: 
