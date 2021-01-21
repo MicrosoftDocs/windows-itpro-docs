@@ -48,8 +48,8 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 | Windows Server, version 1803 or newer, or Windows Server 2019 | Microsoft Defender Antivirus | No  | Active mode |
 | Windows Server 2016 | Microsoft Defender Antivirus | Yes | Active mode |
 | Windows Server 2016 | Microsoft Defender Antivirus | No | Active mode |
-| Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | Yes | Must be disabled (manually) |
-| Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | No | Must be disabled (manually) |
+| Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | Yes | Must be disabled (manually)<sup>[[2](#fn2)]<sup> |
+| Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | No | Must be disabled (manually)<sup>[[2](#fn2)]<sup> |
 
 (<a id="fn1">1</a>)  On Windows Server, version 1803 or newer, or Windows Server 2019, Microsoft Defender Antivirus does not enter passive mode automatically when you install a non-Microsoft antivirus product. In those cases, [set Microsoft Defender Antivirus to passive mode](microsoft-defender-antivirus-on-windows-server-2016.md#need-to-set-microsoft-defender-antivirus-to-passive-mode) to prevent problems caused by having multiple antivirus products installed on a server.
 
@@ -62,7 +62,9 @@ If you are using Windows Server, version 1803 or newer, or Windows Server 2019, 
 > [!NOTE]
 > The `ForceDefenderPassiveMode` registry key is not supported on Windows Server 2016.
 
-See [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md) for key differences and management options for Windows Server installations.
+(<a id="fn2">2</a>) On Windows Server 2016, Microsoft Defender Antivirus does not enter passive mode automatically when you install a non-Microsoft antivirus product. In addition, Microsoft Defender Antivirus is not supported in passive mode. In those cases, [disable/uninstall Microsoft Defender Antivirus manually](microsoft-defender-antivirus-on-windows-server-2016.md#are-you-using-windows-server-2016) to prevent problems caused by having multiple antivirus products installed on a server.
+
+See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server-2016.md) for key differences and management options for Windows Server installations.
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus is only available on devices running Windows 10, Windows Server 2016, Windows Server, version 1803 or later, and Windows Server 2019.
