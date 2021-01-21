@@ -95,7 +95,7 @@ Endpoint type | GCC | GCC High
 :---|:---|:---
 Login | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
 Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
-SIEM | Rolling out | `https://wdatp-alertexporter-us.securitycenter.windows.us`
+SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https://wdatp-alertexporter-us.securitycenter.windows.us`
 
 <br>
 
