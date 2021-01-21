@@ -41,9 +41,7 @@ Here is a list of the types of data being collected:
 
 ### Web page or Network information 
 
-- Connection information only when a malicious connection or web page is detected. 
-
-- Protocol type (such as HTTP, HTTPS, etc.) only when a malicious connection or web page is detected. 
+- Domain name of the website only when a malicious connection or web page is detected. 
 
 ### Device and account information 
 
