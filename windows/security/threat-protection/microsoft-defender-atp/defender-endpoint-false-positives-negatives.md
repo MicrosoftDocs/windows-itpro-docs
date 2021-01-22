@@ -43,7 +43,7 @@ If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/w
 
 ## Part 1: Review and classify alerts
 
-If your security operations team see an alert that was triggered because something was detected as malicious or suspicious that should not have been, you can suppress the alert for that entity. You can also suppress alerts that are not necessarily false positives, but are unimportant. And, you can classify alerts as false positives as needed. 
+If your security operations team see an alert that was triggered because something was detected as malicious or suspicious that should not have been, you can suppress the alert for that entity. You can also suppress alerts that are not necessarily false positives, but are unimportant. We recommend that you classify alerts as well. 
 
 Managing your alerts and classifying false positives helps to train your threat protection solution and can reduce the number of false positives or false negatives over time. Taking these steps also helps reduce noise in your security operations dashboard so that your security team can focus on higher priority work items.
 
@@ -54,7 +54,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2.	In the navigation pane, choose **Alerts queue**.
 3.	Select an alert to more details about the alert. (See [Review alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts).)
-4.	Take one of the following steps:   
+4.	Take one of the following steps: <br/>   
    - If the alert is accurate, assign and investigate the alert further.
    - If the alert is a false positive, proceed to classify the alert as a false positive, and then suppress the alert. Also, create an indicator for Microsoft Defender for Endpoint. 
    - If the alert is accurate but benign (unimportant), classify the alert as a true positive, and then suppress the alert.
@@ -295,3 +295,8 @@ If you still need help after working through all the steps in this article, your
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
 3. In the Support Assistant window, describe your issue, and then send your message. From there, you can open a service request.  
+
+## See also
+
+[Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)
+ 
