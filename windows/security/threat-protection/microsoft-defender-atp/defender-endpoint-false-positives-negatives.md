@@ -4,8 +4,8 @@ description: Learn how to handle false positives or false negatives in Microsoft
 keywords: alert, exclusion, defender atp, false positive, false negative
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
