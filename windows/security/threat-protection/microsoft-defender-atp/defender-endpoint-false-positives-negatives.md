@@ -227,7 +227,7 @@ To check for updates regarding your submission, sign in at the [Microsoft Securi
 Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine-tune settings for various features and capabilities. If you’re getting numerous false positives, make sure to review your organization’s threat protection settings. You might need to make some adjustments to the following settings in particular:
 
 - [Cloud-delivered protection](#cloud-delivered-protection)
-- [Remediation for potentially unwanted apps](#remediation-for-potentially-unwanted-applications-pua) (PUA)
+- [Remediation for potentially unwanted applications](#remediation-for-potentially-unwanted-applications)
 
 ### Cloud-delivered protection
 
