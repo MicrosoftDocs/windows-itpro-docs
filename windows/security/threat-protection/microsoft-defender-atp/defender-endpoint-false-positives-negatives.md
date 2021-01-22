@@ -19,7 +19,7 @@ ms.collection:
 - m365-security-compliance 
 - m365initiative-defender-endpoint 
 ms.topic: conceptual
-ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree
+ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
 ---
 
@@ -34,10 +34,10 @@ ms.custom: FPFN
 In endpoint protection, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. The process of addressing false positives/negatives includes:
 
 1.	[Reviewing and classifying alerts](#review-and-classify-alerts)
-2.	Reviewing remediation actions that were taken
-3.	Reviewing and defining exclusions
-4.	Submitting an entity for analysis
-5.	Reviewing your threat protection settings
+2.	[Reviewing remediation actions that were taken](#review-remediation-actions)
+3.	[Reviewing and defining exclusions](#review-or-define-exclusions-for-microsoft-defender-for-endpoint)
+4.	[Submitting an entity for analysis](#submit-a-file-for-analysis)
+5.	[Reviewing your threat protection settings](#review-your-threat-protection-settings)
 
 If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), and you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), use this article as a guide to take action. This article also includes information about [what to do if you still need help](#still-need-help) after taking the recommended steps to address false positives/negatives in your environment.
 
