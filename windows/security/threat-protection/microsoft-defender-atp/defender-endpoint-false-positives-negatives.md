@@ -76,7 +76,7 @@ Your security team can classify an alert as a false positive or a true positive 
 
 ### Suppress an alert
 
-If you have alerts that are either false positives or are for unimportant events, you can suppress those alerts in the Microsoft Defender Security Center.
+If you have alerts that are either false positives or that are true positives but are for unimportant events, you can suppress those alerts in the Microsoft Defender Security Center. Suppressing alerts helps reduce noise in your security operations dashboard. 
 
 1.	Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2.	In the navigation pane, select **Alerts queue**.
