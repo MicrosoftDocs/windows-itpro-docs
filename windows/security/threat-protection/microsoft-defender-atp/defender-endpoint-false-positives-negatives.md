@@ -33,20 +33,19 @@ ms.custom: FPFN
 
 In endpoint protection, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. The process of addressing false positives/negatives includes:
 
-1.	[Reviewing and classifying alerts](#review-and-classify-alerts)
-2.	[Reviewing remediation actions that were taken](#review-remediation-actions)
-3.	[Reviewing and defining exclusions](#review-or-define-exclusions-for-microsoft-defender-for-endpoint)
-4.	[Submitting an entity for analysis](#submit-a-file-for-analysis)
-5.	[Reviewing your threat protection settings](#review-your-threat-protection-settings)
+1.	[Reviewing and classifying alerts](#part-1-review-and-classify-alerts) 
+2.	[Reviewing remediation actions that were taken](#part-2-review-remediation-actions)
+3.	[Reviewing and defining exclusions](#part-3-review-or-define-exclusions-for-microsoft-defender-for-endpoint)
+4.	[Submitting an entity for analysis](#part-4-submit-a-file-for-analysis)
+5.	[Reviewing your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
 
 If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), and you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), use this article as a guide to take action. This article also includes information about [what to do if you still need help](#still-need-help) after taking the recommended steps to address false positives/negatives in your environment.
 
-## Review and classify alerts
+## Part 1: Review and classify alerts
 
 If your security operations team see an alert that was triggered because something was detected as malicious or suspicious that should not have been, you can suppress the alert for that entity. You can also suppress alerts that are not necessarily false positives, but are unimportant. And, you can classify alerts as false positives as needed. 
 
 Managing your alerts and classifying false positives helps to train your threat protection solution and can reduce the number of false positives or false negatives over time. Taking these steps also helps reduce noise in your security operations dashboard so that your security team can focus on higher priority work items.
-
 
 ### Determine whether an alert is accurate
 
@@ -85,7 +84,7 @@ If you have alerts that are either false positives or are for unimportant events
 > [!TIP]
 > Need help with suppression rules? See [Suppress an alert and create a new suppression rule](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts#suppress-an-alert-and-create-a-new-suppression-rule).
 
-## Review remediation actions
+## Part 2: Review remediation actions
 
 [Remediation actions](manage-auto-investigation.md#remediation-actions), such as sending a file to quarantine or stopping a process, can be taken on entities that are detected as threats. Several types of remediation actions can occur automatically through automated investigation and Microsoft Defender Antivirus. Examples of such actions include:   
 - Quarantine a file
@@ -124,7 +123,7 @@ If you find that a remediation action was taken automatically on an entity that 
 2.	On the **History** tab, select the actions that you want to undo.
 3.	In the pane on the right side of the screen, select **Undo**.
 
-## Review or define exclusions for Microsoft Defender for Endpoint
+## Part 3: Review or define exclusions for Microsoft Defender for Endpoint
 
 An exclusion is an entity that you specify as an exception to remediation actions. The excluded entity might still get detected, but no remediation actions are taken on that entity. That is, the detected file or process won’t be stopped, sent to quarantine, removed, or otherwise changed by Microsoft Defender for Endpoint. 
 
@@ -184,7 +183,7 @@ Your security team can create indicators for files, IP addresses, URLs, domains,
 > [!TIP]
 > When you create indicators, you can define them one by one or import multiple items at once. Keep in mind there's a limit of 15,000 indicators you can have in a single tenant. And, you might need to gather certain details first, such as file hash information. Make sure to review the prerequisites before you [create indicators](manage-indicators.md). 
 
-## Submit a file for analysis
+## Part 4: Submit a file for analysis
 
 You can submit entities, such as files and fileless detections, to Microsoft for analysis. Microsoft security researchers analyze all submissions. After you sign in at the submission site, you can track your submissions.
 
@@ -220,7 +219,7 @@ To check for updates regarding your submission, sign in at the [Microsoft Securi
 > [!TIP]
 > To learn more, see [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide#how-does-microsoft-prioritize-submissions).
 
-## Review your threat protection settings
+## Part 5: Review and adjust your threat protection settings
 
 Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine-tune settings for various features and capabilities. If you’re getting numerous false positives, make sure to review your organization’s threat protection settings. You might need to make some adjustments to the following settings in particular:
 
