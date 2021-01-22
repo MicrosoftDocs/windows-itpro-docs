@@ -59,13 +59,22 @@ https://support.microsoft.com/topic/a34a400a-51d5-f2a1-c8c0-7a6c9c49cb78).
 
 ### Identifying On-premises Resource Access Issues with Third-Party CAs
 
-This issue can be identified using network traces or Kerberos logging from the client. In the network trace, the client will fail to place a TGS_REQ request when a user attempts to access a resource. On the client, this can be observed in Kerberos event logs:
+This issue can be identified using network traces or Kerberos logging from the client. In the network trace, the client will fail to place a TGS_REQ request when a user attempts to access a resource. On the client, this can be observed in the Kerberos operation event log under **Application and Services/Microsoft/Windows/Security-Kerberos/Operational**. These logs are default disabled. The failure event for this case will include the following information:
+
+    Log Name:      Microsoft-Windows-Kerberos/Operational
+    Source:        Microsoft-Windows-Security-Kerberos
+    Event ID:      107
+    GUID:          {98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1} 
+    Task Category: None
+    Level:         Error
+    Keywords:      
+    User:          SYSTEM
+    Description:
 
     The Kerberos client received a KDC certificate that does not have a matched domain name.
+    
     Expected Domain Name: ad.contoso.com
     Error Code: 0xC000006D
-
-See [How to enable Kerberos event logging](https://docs.microsoft.com/troubleshoot/windows-server/identity/enable-kerberos-event-logging#enable-kerberos-event-logging-on-a-specific-computer) for information on enabling Kerberos logs on a client device.
 
 ### Resolving On-premises Resource Access Issue with Third-Party CAs
 
