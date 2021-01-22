@@ -30,14 +30,15 @@ WindowsLicensing
 ----UpgradeEditionWithLicense
 ----LicenseKeyType
 ----CheckApplicability
-----Subscriptions
---------SubscriptionId
-------------Status
-------------Name
-----SMode
---------SwitchingPolicy
---------SwitchFromSMode
---------Status
+----ChangeProductKey (Added in Windows 10, version 1703)
+----Subscriptions (Added in Windows 10, version 1607)
+--------SubscriptionId (Added in Windows 10, version 1607)
+------------Status (Added in Windows 10, version 1607)
+------------Name (Added in Windows 10, version 1607)
+----SMode (Added in Windows 10, version 1809)
+--------SwitchingPolicy (Added in Windows 10, version 1809)
+--------SwitchFromSMode (Added in Windows 10, version 1809)
+--------Status (Added in Windows 10, version 1809)
 ```
 <a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**  
 This is the root node for the WindowsLicensing configuration service provider.
