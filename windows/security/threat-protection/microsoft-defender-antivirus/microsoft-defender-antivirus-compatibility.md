@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Antivirus compatibility with other security products
-description: Get an overview of what to expect from Microsoft Defender Antivirus with other security products and the operating systems you are using.
-keywords: windows defender, next-generation, atp, advanced threat protection, compatibility, passive mode
+description: What to expect from Microsoft Defender Antivirus with other security products and the operating systems you are using.
+keywords: windows defender, next-generation, antivirus, compatibility, passive mode
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -40,7 +40,7 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 | Windows version   | Antimalware protection  | Microsoft Defender for Endpoint enrollment | Microsoft Defender Antivirus state     |
 |------|------|-------|-------|
 | Windows 10  | A third-party product that is not offered or developed by Microsoft | Yes  | Passive mode  |
-| Windows 10  | A third-party product that is not offered or developed by Microsoft | No   | Automatic disabled mode     |
+| Windows 10  | A third-party product that is not offered or developed by Microsoft | No   | Automatically disabled mode     |
 | Windows 10  | Microsoft Defender Antivirus | Yes  | Active mode | 
 | Windows 10  | Microsoft Defender Antivirus | No   | Active mode |
 | Windows Server, version 1803 or newer, or Windows Server 2019 | A third-party product that is not offered or developed by Microsoft | Yes  | Active mode<sup>[[1](#fn1)]</sup> |
