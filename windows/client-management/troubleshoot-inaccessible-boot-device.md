@@ -41,7 +41,7 @@ Any one of the following factors might cause the stop error:
 
 ## Troubleshoot this error
 
-Start the computer in [Windows Recovery Mode (WinRE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre). To do this, follow these steps.
+Start the computer in [Windows Recovery Mode (WinRE)](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre). To do this, follow these steps.
 
 1. Start the system by using [the installation media for the installed version of Windows](https://support.microsoft.com/help/15088).
 

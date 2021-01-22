@@ -29,7 +29,7 @@ This workflow involves knowledge and use of [TextAnalysisTool](https://github.co
 This article applies to any scenario in which Wi-Fi connections fail to establish. The troubleshooter is developed with Windows 10 clients in focus, but also may be useful with traces as far back as Windows 7.
 
 > [!NOTE]
-> This troubleshooter uses examples that demonstrate a general strategy for navigating and interpreting wireless component [Event Tracing for Windows](https://docs.microsoft.com/windows/desktop/etw/event-tracing-portal) (ETW). It is not meant to be representative of every wireless problem scenario.
+> This troubleshooter uses examples that demonstrate a general strategy for navigating and interpreting wireless component [Event Tracing for Windows](/windows/desktop/etw/event-tracing-portal) (ETW). It is not meant to be representative of every wireless problem scenario.
 
 Wireless ETW is incredibly verbose and calls out a lot of innocuous errors (rather flagged behaviors that have little or nothing to do with the problem scenario). Simply searching for or filtering on "err", "error", and "fail" will seldom lead you to the root cause of a problematic Wi-Fi scenario. Instead it will flood the screen with meaningless logs that will obfuscate the context of the actual problem.
 
@@ -237,8 +237,8 @@ This is followed by **PHY_STATE_CHANGE** and **PORT_DOWN** events due to a disas
 
 ### Resources
 
-[802.11 Wireless Tools and Settings](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc755892(v%3dws.10))<br>
-[Understanding 802.1X authentication for wireless networks](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc759077%28v%3dws.10%29)<br>
+[802.11 Wireless Tools and Settings](/previous-versions/windows/it-pro/windows-server-2003/cc755892(v%3dws.10))<br>
+[Understanding 802.1X authentication for wireless networks](/previous-versions/windows/it-pro/windows-server-2003/cc759077%28v%3dws.10%29)<br>
 
 ## Example ETW capture
 

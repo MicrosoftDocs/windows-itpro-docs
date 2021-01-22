@@ -15,7 +15,7 @@ ms.date: 04/02/2017
 # VPN CSP
 
 
-The VPN configuration service provider allows the MDM server to configure the VPN profile of the device. Windows 10 supports both IKEv2 VPN and SSL VPN profiles. For information about IKEv2, see [Configure IKEv2-based Remote Access](https://technet.microsoft.com/library/ff687731%28v=ws.10%29.aspx).
+The VPN configuration service provider allows the MDM server to configure the VPN profile of the device. Windows 10 supports both IKEv2 VPN and SSL VPN profiles. For information about IKEv2, see [Configure IKEv2-based Remote Access](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687731(v=ws.10)).
 
 > **Note**   The VPN CSP is deprecated in Windows 10 and it only supported in Windows 10 Mobile for backward compatibility. Use [VPNv2 CSP](vpnv2-csp.md) instead.
 
@@ -137,7 +137,7 @@ Not Implemented. Optional.
 Value type is int. Supported operations are Get, Add, Replace, and Delete.
 
 <a href="" id="authentication-eap"></a>**Authentication/EAP**
-Required when IKEv2 is selected. Defines the EAP blob to be used for IKEv2 authentication. You can use EAP-MSCHAPv2 or EAP-TLS. EAP blob is HTML encoded XML as defined in EAP Host Config schemas. You can find the schemas in [Microsoft EAP MsChapV2 Schema](https://go.microsoft.com/fwlink/p/?LinkId=523885) and [Microsoft EAP TLS Schema](https://go.microsoft.com/fwlink/p/?LinkId=523884).
+Required when IKEv2 is selected. Defines the EAP blob to be used for IKEv2 authentication. You can use EAP-MSCHAPv2 or EAP-TLS. EAP blob is HTML encoded XML as defined in EAP Host Config schemas. You can find the schemas in [Microsoft EAP MsChapV2 Schema](/openspecs/windows_protocols/ms-gpwl/03bc6492-39a9-48b6-99a3-543469f66541) and [Microsoft EAP TLS Schema](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb).
 
 Supported operations are Get, Add, and Replace.
 
@@ -295,8 +295,3 @@ An example is corp.contoso.com.
  
 
  
-
-
-
-
-

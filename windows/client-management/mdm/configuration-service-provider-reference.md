@@ -16,7 +16,7 @@ ms.date: 09/18/2020
 
 A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the phone image as a .provxml file that is installed during boot.
 
-For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224). For CSP DDF files, see [CSP DDF files download](#csp-ddf-files-download).
+For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal). For CSP DDF files, see [CSP DDF files download](#csp-ddf-files-download).
 
 
 Additional lists:
@@ -2817,4 +2817,4 @@ The following list shows the CSPs supported in HoloLens devices:
 - 7 - Added in Windows 10, version 1909.
 - 8 - Added in Windows 10, version 2004.
 - 9 - Added in Windows 10 Team 2020 Update
-- 10 - Added in [Windows Holographic, version 20H2](https://docs.microsoft.com/hololens/hololens-release-notes#windows-holographic-version-20h2)
+- 10 - Added in [Windows Holographic, version 20H2](/hololens/hololens-release-notes#windows-holographic-version-20h2)

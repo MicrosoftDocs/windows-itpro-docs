@@ -28,7 +28,7 @@ This six-minute video demonstrates how users can bring in a new retail device an
 > [!VIDEO https://www.youtube.com/embed/g1rIcBhhxpA]
 
  >[!NOTE]
- >The video demonstrates the configuration process using the classic Azure portal, which is retired. Customers should use the new Azure portal. [Learn how use the new Azure portal to perform tasks that you used to do in the classic Azure portal.](https://docs.microsoft.com/information-protection/deploy-use/migrate-portal)
+ >The video demonstrates the configuration process using the classic Azure portal, which is retired. Customers should use the new Azure portal. [Learn how use the new Azure portal to perform tasks that you used to do in the classic Azure portal.](/information-protection/deploy-use/migrate-portal)
 
 This topic offers guidance on strategies for deploying and managing Windows 10, including deploying Windows 10 in a mixed environment. The topic covers [management options](#reviewing-the-management-options-with-windows-10) plus the four stages of the device lifecycle:
 
@@ -53,42 +53,42 @@ As indicated in the diagram, Microsoft continues to provide support for deep man
 With Windows 10, you can continue to use traditional OS deployment, but you can also “manage out of the box.” To transform new devices into fully-configured, fully-managed devices, you can:
 
 
--   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services such as [Microsoft Autopilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot) or [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/).
+-   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services such as [Microsoft Autopilot](/windows/deployment/windows-10-auto-pilot) or [Microsoft Intune](/mem/intune/fundamentals/).
 
--   Create self-contained provisioning packages built with the [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/deploy/provisioning-packages).
+-   Create self-contained provisioning packages built with the [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-packages).
 
--   Use traditional imaging techniques such as deploying custom images using [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction).
+-   Use traditional imaging techniques such as deploying custom images using [Microsoft Endpoint Configuration Manager](/configmgr/core/understand/introduction).
 
-You have multiple options for [upgrading to Windows 10](https://technet.microsoft.com/itpro/windows/deploy/windows-10-deployment-scenarios). For existing devices running Windows 7 or Windows 8.1, you can use the robust in-place upgrade process for a fast, reliable move to Windows 10 while automatically preserving all the existing apps, data, and settings. This can mean significantly lower deployment costs, as well as improved productivity as end users can be immediately productive – everything is right where they left it. Of course, you can also use a traditional wipe-and-load approach if you prefer, using the same tools that you use today with Windows 7.
+You have multiple options for [upgrading to Windows 10](/windows/deployment/windows-10-deployment-scenarios). For existing devices running Windows 7 or Windows 8.1, you can use the robust in-place upgrade process for a fast, reliable move to Windows 10 while automatically preserving all the existing apps, data, and settings. This can mean significantly lower deployment costs, as well as improved productivity as end users can be immediately productive – everything is right where they left it. Of course, you can also use a traditional wipe-and-load approach if you prefer, using the same tools that you use today with Windows 7.
 
 ## Identity and Authentication
 
-You can use Windows 10 and services like [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) in new ways for cloud-based identity, authentication, and management. You can offer your users the ability to **“bring your own device” (BYOD)** or to **“choose your own device” (CYOD)** from a selection you make available. At the same time, you might be managing PCs and tablets that must be domain-joined because of specific applications or resources that are used on them.
+You can use Windows 10 and services like [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) in new ways for cloud-based identity, authentication, and management. You can offer your users the ability to **“bring your own device” (BYOD)** or to **“choose your own device” (CYOD)** from a selection you make available. At the same time, you might be managing PCs and tablets that must be domain-joined because of specific applications or resources that are used on them.
 
 You can envision user and device management as falling into these two categories:
 
 -   **Corporate (CYOD) or personal (BYOD) devices used by mobile users for SaaS apps such as Office 365.** With Windows 10, your employees can self-provision their devices:
 
-    -   For corporate devices, they can set up corporate access with [Azure AD Join](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-overview/). When you offer them Azure AD Join with automatic Intune MDM enrollment, they can bring devices into a corporate-managed state in [*one step*](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/windows-10-azure-ad-and-microsoft-intune-automatic-mdm/ba-p/244067), all from the cloud.<br>Azure AD Join is also a great solution for temporary staff, partners, or other part-time employees. These accounts can be kept separate from the on-premises AD domain but still access needed corporate resources.
+    -   For corporate devices, they can set up corporate access with [Azure AD Join](/azure/active-directory/devices/overview). When you offer them Azure AD Join with automatic Intune MDM enrollment, they can bring devices into a corporate-managed state in [*one step*](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/windows-10-azure-ad-and-microsoft-intune-automatic-mdm/ba-p/244067), all from the cloud.<br>Azure AD Join is also a great solution for temporary staff, partners, or other part-time employees. These accounts can be kept separate from the on-premises AD domain but still access needed corporate resources.
 
-    -   Likewise, for personal devices, employees can use a new, simplified [BYOD experience](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-windows10-devices/) to add their work account to Windows, then access work resources on the device.
+    -   Likewise, for personal devices, employees can use a new, simplified [BYOD experience](/azure/active-directory/devices/overview) to add their work account to Windows, then access work resources on the device.
 
 -   **Domain joined PCs and tablets used for traditional applications and access to important resources.** These may be traditional applications and resources that require authentication or accessing highly sensitive or classified resources on-premises.
-    With Windows 10, if you have an on-premises [Active Directory](https://technet.microsoft.com/windows-server-docs/identity/whats-new-active-directory-domain-services) domain that’s [integrated with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-devices-group-policy/), when employee devices are joined, they automatically register with Azure AD. This provides:
+    With Windows 10, if you have an on-premises [Active Directory](/windows-server/identity/whats-new-active-directory-domain-services) domain that’s [integrated with Azure AD](/azure/active-directory/devices/hybrid-azuread-join-plan), when employee devices are joined, they automatically register with Azure AD. This provides:
 
     -   Single sign-on to cloud and on-premises resources from everywhere
 
-    -   [Enterprise roaming of settings](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/)
+    -   [Enterprise roaming of settings](/azure/active-directory/devices/enterprise-state-roaming-overview)
 
-    -   [Conditional access](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access/) to corporate resources based on the health or configuration of the device
+    -   [Conditional access](/azure/active-directory/conditional-access/overview) to corporate resources based on the health or configuration of the device
 
-    -   [Windows Hello for Business](https://technet.microsoft.com/itpro/windows/keep-secure/manage-identity-verification-using-microsoft-passport)
+    -   [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification)
 
     -   Windows Hello
 
-    Domain joined PCs and tablets can continue to be managed with the [Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction) client or Group Policy.
+    Domain joined PCs and tablets can continue to be managed with the [Configuration Manager](/configmgr/core/understand/introduction) client or Group Policy.
 
-For more information about how Windows 10 and Azure AD optimize access to work resources across a mix of devices and scenarios, see [Using Windows 10 devices in your workplace](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-windows10-devices/).
+For more information about how Windows 10 and Azure AD optimize access to work resources across a mix of devices and scenarios, see [Using Windows 10 devices in your workplace](/azure/active-directory/devices/overview).
 
 As you review the roles in your organization, you can use the following generalized decision tree to begin to identify users or devices that require domain join. Consider switching the remaining users to Azure AD.
 
@@ -109,7 +109,7 @@ Your configuration requirements are defined by multiple factors, including the l
 
 ## Updating and Servicing
 
-With Windows as a Service, your IT department no longer needs to perform complex imaging (wipe-and-load) processes with each new Windows release. Whether on current branch (CB) or current branch for business (CBB), devices receive the latest feature and quality updates through simple – often automatic – patching processes. For more information, see [Windows 10 deployment scenarios](https://technet.microsoft.com/itpro/windows/deploy/windows-10-deployment-scenarios).
+With Windows as a Service, your IT department no longer needs to perform complex imaging (wipe-and-load) processes with each new Windows release. Whether on current branch (CB) or current branch for business (CBB), devices receive the latest feature and quality updates through simple – often automatic – patching processes. For more information, see [Windows 10 deployment scenarios](/windows/deployment/windows-10-deployment-scenarios).
 
 MDM with Intune provide tools for applying Windows updates to client computers in your organization. Configuration Manager allows rich management and tracking capabilities of these updates, including maintenance windows and automatic deployment rules.
 
@@ -123,18 +123,18 @@ There are a variety of steps you can take to begin the process of modernizing de
 
 **Review the decision trees in this article.** With the different options in Windows 10, plus Configuration Manager and Enterprise Mobility + Security, you have the flexibility to handle imaging, authentication, settings, and management tools for any scenario.
 
-**Take incremental steps.** Moving towards modern device management doesn’t have to be an overnight transformation. New operating systems and devices can be brought in while older ones remain. With this “managed diversity,” users can benefit from productivity enhancements on new Windows 10 devices, while you continue to maintain older devices according to your standards for security and manageability. Starting with Windows 10, version 1803, the new policy [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict#controlpolicyconflict-mdmwinsovergp) was added to allow MDM policies to take precedence over GP when both GP and its equivalent MDM policies are set on the device. You can start implementing MDM policies while keeping your GP environment. Here is the list of MDM policies with equivalent GP - [Policies supported by GP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-gp)
+**Take incremental steps.** Moving towards modern device management doesn’t have to be an overnight transformation. New operating systems and devices can be brought in while older ones remain. With this “managed diversity,” users can benefit from productivity enhancements on new Windows 10 devices, while you continue to maintain older devices according to your standards for security and manageability. Starting with Windows 10, version 1803, the new policy [MDMWinsOverGP](./mdm/policy-csp-controlpolicyconflict.md#controlpolicyconflict-mdmwinsovergp) was added to allow MDM policies to take precedence over GP when both GP and its equivalent MDM policies are set on the device. You can start implementing MDM policies while keeping your GP environment. Here is the list of MDM policies with equivalent GP - [Policies supported by GP](./mdm/policy-configuration-service-provider.md#policies-supported-by-gp)
 
 
 **Optimize your existing investments**. On the road from traditional on-premises management to modern cloud-based management, take advantage of the flexible, hybrid architecture of Configuration Manager and Intune. Starting with Configuration Manager 1710, co-management enables you to concurrently manage Windows 10 devices by using both Configuration Manager and Intune. See these topics for details:
 
--   [Co-management for Windows 10 devices](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
--   [Prepare Windows 10 devices for co-management](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-prepare)
--   [Switch Configuration Manager workloads to Intune](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-switch-workloads)
--   [Co-management dashboard in Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-dashboard)
+-   [Co-management for Windows 10 devices](/configmgr/core/clients/manage/co-management-overview)
+-   [Prepare Windows 10 devices for co-management](/configmgr/core/clients/manage/co-management-prepare)
+-   [Switch Configuration Manager workloads to Intune](/configmgr/core/clients/manage/co-management-switch-workloads)
+-   [Co-management dashboard in Configuration Manager](/configmgr/core/clients/manage/co-management-dashboard)
 
 ## Related topics
 
--   [What is Intune?](https://docs.microsoft.com//mem/intune/fundamentals/what-is-intune)
--   [Windows 10 Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)
--   [Windows 10 Configuration service Providers](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
+-   [What is Intune?](//mem/intune/fundamentals/what-is-intune)
+-   [Windows 10 Policy CSP](./mdm/policy-configuration-service-provider.md)
+-   [Windows 10 Configuration service Providers](./mdm/configuration-service-provider-reference.md)

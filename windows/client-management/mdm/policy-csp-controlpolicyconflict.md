@@ -102,7 +102,7 @@ The [Policy DDF](policy-ddf-file.md) contains the following tags to identify the
 -  \<MSFT:GPDBMappedName\>  
 
 For the list MDM-GP mapping list, see [Policies in Policy CSP supported by Group Policy
-](policy-csps-supported-by-group-policy.md).
+](./policies-in-policy-csp-supported-by-group-policy.md).
 
 The MDM Diagnostic report shows the applied configurations states of a device including policies, certificates, configuration sources, and resource information. The report includes a list of blocked GP settings because MDM equivalent is configured, if any. To get the diagnostic report, go to **Settings** > **Accounts** > **Access work or school** > and then click the desired work or school account. Scroll to the bottom of the page to **Advanced Diagnostic Report** and then click **Create Report**.
 

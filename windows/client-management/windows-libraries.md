@@ -35,7 +35,7 @@ Administrators can configure and control Windows libraries in the following ways
 - Specify a set of libraries available to Default User, and then deploy those libraries to users that derive from Default User.
 - Specify locations to include in a library.
 - Remove a default location from a library.
-- Remove advanced libraries features, when the environment does not support the local caching of files, by using the [Turn off Windows Libraries features that rely on indexed file data](https://technet.microsoft.com/library/faaefdad-6e12-419a-b714-6a7bb60f6773#WS_TurnOffWindowsLibraries) Group Policy. This makes all libraries basic (see [Indexing Requirements and Basic Libraries](https://technet.microsoft.com/library/dd744693.aspx#WS_IndexingReqs_BasicLibraries)), removes libraries from the scope of the Start menu search, and removes other features to avoid confusing users and consuming resources.
+- Remove advanced libraries features, when the environment does not support the local caching of files, by using the [Turn off Windows Libraries features that rely on indexed file data](/previous-versions/windows/it-pro/windows-7/dd744697(v=ws.10)#WS_TurnOffWindowsLibraries) Group Policy. This makes all libraries basic (see [Indexing Requirements and Basic Libraries](/previous-versions/windows/it-pro/windows-7/dd744693(v=ws.10)#WS_IndexingReqs_BasicLibraries)), removes libraries from the scope of the Start menu search, and removes other features to avoid confusing users and consuming resources.
 
 ## More about Libraries
 
@@ -57,7 +57,7 @@ Libraries are built upon the legacy known folders (such as My Documents, My Pict
 
 ### Hiding Default Libraries
 
-Users or administrators can hide or delete the default libraries, though the libraries node in the Navigation pane cannot be hidden or deleted. Hiding a default library is preferable to deleting it, as applications like Windows Media Player rely on the default libraries and will re-create them if they do not exist on the computer. See [How to Hide Default Libraries](https://technet.microsoft.com/library/d44c78e0-08ef-4e91-935a-a6f43716e37d#BKMK_HideDefaultLibraries) for instructions.
+Users or administrators can hide or delete the default libraries, though the libraries node in the Navigation pane cannot be hidden or deleted. Hiding a default library is preferable to deleting it, as applications like Windows Media Player rely on the default libraries and will re-create them if they do not exist on the computer. See [How to Hide Default Libraries](/previous-versions/windows/it-pro/windows-7/ee461108(v=ws.10)#BKMK_HideDefaultLibraries) for instructions.
 
 ### Default Save Locations for Libraries
 
@@ -75,13 +75,13 @@ Certain library features depend on the contents of the libraries being indexed. 
 
 To avoid this limited functionality, all locations within the library must be indexable, either locally or remotely. When users add local folders to libraries, Windows adds the location to the indexing scope and indexes the contents. Remote locations that are not indexed remotely can be added to the local index using Offline File synchronization. This gives the user the benefits of local storage even though the location is remote. Making a folder “Always available offline” creates a local copy of the folder’s files, adds those files to the index, and keeps the local and remote copies in sync. Users can manually sync locations which are not indexed remotely and are not using folder redirection to gain the benefits of being indexed locally.
 
-For instructions on enabling indexing, see [How to Enable Indexing of Library Locations](https://technet.microsoft.com/library/d44c78e0-08ef-4e91-935a-a6f43716e37d#BKMK_EnableIndexLocations).
+For instructions on enabling indexing, see [How to Enable Indexing of Library Locations](/previous-versions/windows/it-pro/windows-7/ee461108(v=ws.10)#BKMK_EnableIndexLocations).
 
-If your environment does not support caching files locally, you should enable the [Turn off Windows Libraries features that rely on indexed file](https://technet.microsoft.com/library/faaefdad-6e12-419a-b714-6a7bb60f6773#WS_TurnOffWindowsLibraries) data Group Policy. This makes all libraries basic. For further information, see [Group Policy for Windows Search, Browse, and Organize](https://technet.microsoft.com/library/dd744697.aspx).
+If your environment does not support caching files locally, you should enable the [Turn off Windows Libraries features that rely on indexed file](/previous-versions/windows/it-pro/windows-7/dd744697(v=ws.10)#WS_TurnOffWindowsLibraries) data Group Policy. This makes all libraries basic. For further information, see [Group Policy for Windows Search, Browse, and Organize](/previous-versions/windows/it-pro/windows-7/dd744697(v=ws.10)).
 
 ### Folder Redirection
 
-While library files themselves cannot be redirected, you can redirect known folders included in libraries by using [Folder Redirection](https://technet.microsoft.com/library/hh848267.aspx). For example, you can redirect the “My Documents” folder, which is included in the default Documents library. When redirecting known folders, you should make sure that the destination is either indexed or always available offline in order to maintain full library functionality. In both cases, the files for the destination folder are indexed and supported in libraries. These settings are configured on the server side.
+While library files themselves cannot be redirected, you can redirect known folders included in libraries by using [Folder Redirection](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh848267(v=ws.11)). For example, you can redirect the “My Documents” folder, which is included in the default Documents library. When redirecting known folders, you should make sure that the destination is either indexed or always available offline in order to maintain full library functionality. In both cases, the files for the destination folder are indexed and supported in libraries. These settings are configured on the server side.
 
 ### Supported storage locations
 
@@ -111,20 +111,20 @@ The following library attributes can be modified within Windows Explorer, the Li
 
 The library icon can be modified by the administrator or user by directly editing the Library Description schema file.
 
-See the [Library Description Schema](https://go.microsoft.com/fwlink/?LinkId=159581) topic on MSDN for information on creating Library Description files.
+See the [Library Description Schema](/windows/win32/shell/library-schema-entry) topic on MSDN for information on creating Library Description files.
 
 ## See also
 
 ### Concepts
 
-- [Windows Search Features](https://technet.microsoft.com/library/dd744686.aspx)
-- [Windows Indexing Features](https://technet.microsoft.com/library/dd744700.aspx)
-- [Federated Search Features](https://technet.microsoft.com/library/dd744682.aspx)
-- [Administrative How-to Guides](https://technet.microsoft.com/library/ee461108.aspx)
-- [Group Policy for Windows Search, Browse, and Organize](https://technet.microsoft.com/library/dd744697.aspx)
-- [Additional Resources for Windows Search, Browse, and Organization](https://technet.microsoft.com/library/dd744695.aspx)
+- [Windows Search Features](/previous-versions/windows/it-pro/windows-7/dd744686(v=ws.10))
+- [Windows Indexing Features](/previous-versions/windows/it-pro/windows-7/dd744700(v=ws.10))
+- [Federated Search Features](/previous-versions/windows/it-pro/windows-7/dd744682(v=ws.10))
+- [Administrative How-to Guides](/previous-versions/windows/it-pro/windows-7/ee461108(v=ws.10))
+- [Group Policy for Windows Search, Browse, and Organize](/previous-versions/windows/it-pro/windows-7/dd744697(v=ws.10))
+- [Additional Resources for Windows Search, Browse, and Organization](/previous-versions/windows/it-pro/windows-7/dd744695(v=ws.10))
 
 ### Other resources
 
-- [Folder Redirection, Offline Files, and Roaming User Profiles](https://technet.microsoft.com/library/hh848267.aspx)
-- [Library Description Schema](https://msdn.microsoft.com/library/dd798389.aspx)
+- [Folder Redirection, Offline Files, and Roaming User Profiles](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh848267(v=ws.11))
+- [Library Description Schema](/windows/win32/shell/library-schema-entry)

@@ -202,4 +202,4 @@ To view system failure and recovery settings for your local computer, type **wmi
 
 ## References
 
-[Varieties of Kernel-Mode Dump Files](https://docs.microsoft.com/windows-hardware/drivers/debugger/varieties-of-kernel-mode-dump-files)
+[Varieties of Kernel-Mode Dump Files](/windows-hardware/drivers/debugger/varieties-of-kernel-mode-dump-files)

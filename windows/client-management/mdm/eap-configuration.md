@@ -288,16 +288,10 @@ Alternatively, you can use the following procedure to create an EAP configuratio
 1.  Continue following the procedure in the EAP configuration article from step 9 to get an EAP TLS profile with appropriate filtering.
 
 > [!NOTE]
-> You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) article.
+> You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh945104(v=ws.11)) article.
 
  
 
  
 
  
-
-
-
-
-
-
