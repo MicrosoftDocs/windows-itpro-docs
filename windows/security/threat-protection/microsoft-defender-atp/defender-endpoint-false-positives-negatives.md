@@ -122,6 +122,72 @@ If you find that a remediation action was taken automatically on an entity that 
 2.	On the **History** tab, select the actions that you want to undo.
 3.	In the pane on the right side of the screen, select **Undo**.
 
+## Review or define exclusions for Microsoft Defender for Endpoint
+
+An exclusion is an entity that you specify as an exception to remediation actions. The excluded entity might still get detected, but no remediation actions are taken on that entity. That is, the detected file or process won’t be stopped, sent to quarantine, removed, or otherwise changed by Microsoft Defender for Endpoint. 
+
+To define exclusions across Microsoft Defender for Endpoint, perform the following tasks:
+- [Define exclusions for Microsoft Defender Antivirus](#exclusions-for-microsoft-defender-antivirus)
+- [Create “allow” indicators for Microsoft Defender for Endpoint](#indicators-for-microsoft-defender-for-endpoint)
+
+Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response), [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger alerts and other detections. To exclude files broadly, use [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators), such as "allow" indicators for Microsoft Defender for Endpoint.
+
+The procedures in this section describe how to define exclusions and indicators.
+
+### Exclusions for Microsoft Defender Antivirus
+
+In general, you should not need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using Microsoft Endpoint Manager to define or edit your antivirus exclusions; however, you can use other methods, such as Group Policy as well.
+
+> [!TIP]
+> Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
+
+#### Use Microsoft Endpoint Manager to manage antivirus exclusions (for existing policies)
+
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+2. Choose **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
+3. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
+4. Expand **Microsoft Defender Antivirus Exclusions** and then specify your exclusions.
+5. Choose **Review + save**, and then choose **Save**.
+
+#### Use Microsoft Endpoint Manager to create a new antivirus policy with exclusions
+
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+2. Choose **Endpoint security** > **Antivirus** > **+ Create Policy**. 
+3. Select a platform (such as **Windows 10 and later**, **macOS**, or **Windows 10 and Windows Server**).
+4. For **Profile**, select **Microsoft Defender Antivirus exclusions**, and then choose **Create**.
+5. Specify a name and description for the profile, and then choose **Next**.
+6. On the **Configuration settings** tab, specify your antivirus exclusions, and then choose **Next**.
+7. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy you are creating. (See [Scope tags](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags).)
+8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).)
+9. On the **Review + create** tab, review the settings, and then choose **Create**.
+
+### Indicators for Microsoft Defender for Endpoint
+
+[Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) enable your security operations team to define the detection, prevention, and exclusion of entities. For example, your security operations team can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain files, IP addresses, or URLs.
+
+To specify entities as exclusions for Microsoft Defender for Endpoint, your security team can create "allow" indicators for those entities. Such "allow" indicators in Microsoft Defender for Endpoint apply to:
+
+- [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
+- [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
+- [Automated investigation & remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+
+Your security team can create indicators for files, IP addresses, URLs, domains, and certificates. Use the following resources to create or manage indicators in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)): 
+
+- [Learn more about indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
+- [Create an indicator for a file, such as an executable](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-file)
+- [Create an indicator for an IP address, URL, or domain](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-ip-domain)
+- [Create an indicator for an application certificate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates)
+
+> [!TIP]
+> When you create indicators, you can define them one by one or import multiple items at once. Keep in mind there's a limit of 15,000 indicators you can have in a single tenant. And, you might need to gather certain details first, such as file hash information. Make sure to review the prerequisites before you [create indicators](manage-indicators.md). 
+
+| Indicator type | Prerequisites | Notes  |
+|----|----|---|
+|Files <p>Helps prevent suspected malware (or potentially malicious files) from being downloaded from the web. Files can include portable executable (PE) files, such as `.exe` and `.dll` files. <p> [Create an indicator for a file, such as an executable](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-file). | Microsoft Defender Antivirus with cloud-based protection enabled. <p>Antimalware client version  must be 4.18.1901.x or later. <p>Devices are running one of the following versions of Windows:<br/>- Windows 10, version 1703 or later<br/>- Windows Server 2016<br/>- Windows Server 2019 <p> The [Block or allow feature is turned on](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features). | The allow or block function cannot be done on a file if the file's classification exists on the device's cache prior to the allow or block action <p>Trusted, signed files are treated differently. Defender for Endpoint is optimized to handle malicious files. Trying to block trusted, signed files, can have performance implications. <p>Typically, file blocks are enforced within a couple of minutes, but can take upwards of 30 minutes. |
+| IP addresses and URLs <p>Full URL path blocks can be applied on the domain level and all unencrypted URLs <p>IP is supported for all three protocols <p>[Create an indicator for an IP address, URL, or domain](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-ip-domain) | Network protection in Defender for Endpoint must be enabled in block mode. ([Enable network protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection).)<p>Your antimalware client version must be 4.18.1906.x or later. <p>Your devices must be running Windows 10, version 1709 or later <p>Custom network indicators must be turned on in the Microsoft Defender Security Center (See [Advanced features](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features).) | Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios leverage Network Protection for inspection and enforcement.<p>There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked. <p>Only single IP addresses are supported (no CIDR blocks or IP ranges) <p>Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge) <p>Encrypted URLS (FQDN only) can be blocked outside of first party browsers (Internet Explorer, Edge) |
+| Certificates <p>`.CER` or `.PEM` file extensions are supported. <p>[Create an indicator for an application certificate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates) |Microsoft Defender Antivirus with cloud-based protection is enabled ([Manage cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).)<p>Your antimalware client version must be 4.18.1901.x or later. <p>Your devices must be running one of the following versions of Windows:<br/>- Windows 10, version 1703 or later<br/>- Windows Server 2016<br/>- Windows Server 2019 <p>Your virus and threat protection definitions must be up to date. | A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft. <p>Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine Trusted Root Certification Authorities). <p>The children or parent of the allow/block certificate IOCs are not included in the allow/block IoC functionality, only leaf certificates are supported.<p>Microsoft signed certificates cannot be blocked. <p>It can take up to 3 hours to create and remove a certificate IoC. |
+
+
 
 ## Review your threat protection settings
 
@@ -192,70 +258,6 @@ We recommend using Microsoft Endpoint Manager to edit or set PUA protection sett
 8. On the **Applicability Rules** tab, specify the OS editions or versions to include or exclude from the policy. For example, you can set the policy to be applied to all devices certain editions of Windows 10. Then choose **Next**.
 9. On the **Review + create** tab, review your settings, and, and then choose **Create**.
 
-## Review or define exclusions for Microsoft Defender for Endpoint
-
-An exclusion is an entity that you specify as an exception to remediation actions. The excluded entity might still get detected, but no remediation actions are taken on that entity. That is, the detected file or process won’t be stopped, sent to quarantine, removed, or otherwise changed by Microsoft Defender for Endpoint. 
-
-To define exclusions across Microsoft Defender for Endpoint, perform the following tasks:
-- [Define exclusions for Microsoft Defender Antivirus](#exclusions-for-microsoft-defender-antivirus)
-- [Create “allow” indicators for Microsoft Defender for Endpoint](#indicators-for-microsoft-defender-for-endpoint)
-
-Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response), [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger alerts and other detections. To exclude files broadly, use [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators), such as "allow" indicators for Microsoft Defender for Endpoint.
-
-The procedures in this section describe how to define exclusions and indicators.
-
-### Exclusions for Microsoft Defender Antivirus
-
-In general, you should not need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using Microsoft Endpoint Manager to define or edit your antivirus exclusions; however, you can use other methods, such as Group Policy as well.
-
-> [!TIP]
-> Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
-
-#### Use Microsoft Endpoint Manager to manage antivirus exclusions (for existing policies)
-
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
-2. Choose **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
-3. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
-4. Expand **Microsoft Defender Antivirus Exclusions** and then specify your exclusions.
-5. Choose **Review + save**, and then choose **Save**.
-
-#### Use Microsoft Endpoint Manager to create a new antivirus policy with exclusions
-
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
-2. Choose **Endpoint security** > **Antivirus** > **+ Create Policy**. 
-3. Select a platform (such as **Windows 10 and later**, **macOS**, or **Windows 10 and Windows Server**).
-4. For **Profile**, select **Microsoft Defender Antivirus exclusions**, and then choose **Create**.
-5. Specify a name and description for the profile, and then choose **Next**.
-6. On the **Configuration settings** tab, specify your antivirus exclusions, and then choose **Next**.
-7. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy you are creating. (See [Scope tags](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags).)
-8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).)
-9. On the **Review + create** tab, review the settings, and then choose **Create**.
-
-### Indicators for Microsoft Defender for Endpoint
-
-[Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) enable your security operations team to define the detection, prevention, and exclusion of entities. For example, your security operations team can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain files, IP addresses, or URLs.
-
-To specify entities as exclusions for Microsoft Defender for Endpoint, your security team can create "allow" indicators for those entities. Such "allow" indicators in Microsoft Defender for Endpoint apply to:
-
-- [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
-- [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
-- [Automated investigation & remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-
-Your security team can create indicators for files, IP addresses, URLs, domains, and certificates. Use the following resources to create or manage indicators in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)): 
-
-- [Learn more about indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
-- [Create an indicator for a file, such as an executable](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-file)
-- [Create an indicator for an IP address, URL, or domain](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-ip-domain)
-- [Create an indicator for an application certificate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates)
-
-> [!TIP]
-> When you create indicators, you can define them one by one or import multiple items at once. Keep in mind there's a limit of 15,000 indicators you can have in a single tenant. And, you might need to gather certain details first, such as file hash information. Make sure to review the prerequisites before you [create indicators](manage-indicators.md). 
-
-| Indicator type | Prerequisites | Notes  |
-|----|----|---|
-|Files <p>Helps prevent suspected malware (or potentially malicious files) from being downloaded from the web. Files can include portable executable (PE) files, such as `.exe` and `.dll` files. <p> [Create an indicator for a file, such as an executable](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-file). | Microsoft Defender Antivirus with cloud-based protection enabled. <p>Antimalware client version  must be 4.18.1901.x or later. <p>Devices are running one of the following versions of Windows:<br/>- Windows 10, version 1703 or later<br/>- Windows Server 2016<br/>- Windows Server 2019 <p> The [Block or allow feature is turned on](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features). | The allow or block function cannot be done on a file if the file's classification exists on the device's cache prior to the allow or block action <p>Trusted, signed files are treated differently. Defender for Endpoint is optimized to handle malicious files. Trying to block trusted, signed files, can have performance implications. <p>Typically, file blocks are enforced within a couple of minutes, but can take upwards of 30 minutes. |
-| IP addresses and URLs <p>Full URL path blocks can be applied on the domain level and all unencrypted URLs <p>IP is supported for all three protocols <p>[Create an indicator for an IP address, URL, or domain](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-ip-domain) | Network protection in Defender for Endpoint must be enabled in block mode. ([Enable network protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection).)<p>Your antimalware client version must be 4.18.1906.x or later. <p>Your devices must be running Windows 10, version 1709 or later <p>Custom network indicators must be turned on in the Microsoft Defender Security Center (See [Advanced features](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features).) | Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios leverage Network Protection for inspection and enforcement.<p>There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked. <p>Only single IP addresses are supported (no CIDR blocks or IP ranges) <p>Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge) <p>Encrypted URLS (FQDN only) can be blocked outside of first party browsers (Internet Explorer, Edge) |
-| Certificates <p>`.CER` or `.PEM` file extensions are supported. <p>[Create an indicator for an application certificate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates) |Microsoft Defender Antivirus with cloud-based protection is enabled ([Manage cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).)<p>Your antimalware client version must be 4.18.1901.x or later. <p>Your devices must be running one of the following versions of Windows:<br/>- Windows 10, version 1703 or later<br/>- Windows Server 2016<br/>- Windows Server 2019 <p>Your virus and threat protection definitions must be up to date. | A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft. <p>Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine Trusted Root Certification Authorities). <p>The children or parent of the allow/block certificate IOCs are not included in the allow/block IoC functionality, only leaf certificates are supported.<p>Microsoft signed certificates cannot be blocked. <p>It can take up to 3 hours to create and remove a certificate IoC. |
 
 ## Classify a false positive or false negative
 
