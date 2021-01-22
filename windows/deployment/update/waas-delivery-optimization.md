@@ -66,7 +66,7 @@ For information about setting up Delivery Optimization, including tips for the b
     - Xbox game pass games
     - MSIX apps (HTTP downloads only)
     - Edge browser installs and updates
-    - Dynamic updates
+    - [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) 
 
 ## Requirements
 
@@ -93,7 +93,7 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | MSIX apps (HTTP downloads only) | 2004 |
 | Configuration Manager Express updates | 1709 + Configuration Manager version 1711 |
 | Edge browser installs and updates | 1809 |
-| Dynamic updates | 1903 |
+| [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) | 1903 |
 
 > [!NOTE]
 > Starting with Configuration Manager version 1910, you can use Delivery Optimization for the distribution of all Windows update content for clients running Windows 10 version 1709 or newer, not just express installation files. For more, see [Delivery Optimization starting in version 1910](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#bkmk_DO-1910).
