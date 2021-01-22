@@ -5,7 +5,7 @@ keywords: automated, investigation, detection, source, threat types, id, tags, d
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
-ms.technology: windows
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
