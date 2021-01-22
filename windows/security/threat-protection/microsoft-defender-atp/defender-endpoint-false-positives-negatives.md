@@ -37,7 +37,7 @@ In endpoint protection, a false positive is an entity, such as a file or a proce
 2.	[Reviewing remediation actions that were taken](#part-2-review-remediation-actions)
 3.	[Reviewing and defining exclusions](#part-3-review-or-define-exclusions-for-microsoft-defender-for-endpoint)
 4.	[Submitting an entity for analysis](#part-4-submit-a-file-for-analysis)
-5.	[Reviewing your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
+5.	[Reviewing and adjusting your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
 
 If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), and you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), use this article as a guide to take action. This article also includes information about [what to do if you still need help](#still-need-help) after taking the recommended steps to address false positives/negatives in your environment.
 
