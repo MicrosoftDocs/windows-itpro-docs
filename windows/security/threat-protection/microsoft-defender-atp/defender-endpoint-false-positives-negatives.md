@@ -302,4 +302,5 @@ If you still need help after working through all the steps in this article, your
 ## See also
 
 [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)
- 
+
+[Overview of Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) 
