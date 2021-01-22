@@ -3,7 +3,7 @@ title: Get user-related machines API
 description: Learn how to use the Get user-related machines API to retrieve a collection of devices related to a user ID in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, user, user related alerts
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Get user-related machines API

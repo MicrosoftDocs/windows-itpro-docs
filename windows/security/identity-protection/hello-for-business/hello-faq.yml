@@ -51,11 +51,15 @@ sections:
           
           The statement "PIN is stronger than Password" is not directed at the strength of the entropy used by the PIN. It's about the difference between providing entropy versus continuing the use of a symmetric key (the password). The TPM has anti-hammering features that thwart brute-force PIN attacks (an attacker's continuous attempt to try all combination of PINs). Some organizations may worry about shoulder surfing. For those organizations, rather than increase the complexity of the PIN, implement the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
           
-      - question: How does Windows Hello for Business work with Azure AD workplace registered devices?
+      - question: How does Windows Hello for Business work with Azure AD registered devices?
         answer: |
-          On Azure AD workplace registered devices, a user will be asked to provision a Windows Hello for Business key if the feature is enabled by mobile device management policy. If the user has an existing Windows Hello container for use with their local or Microsoft connected account, the Windows Hello for Business key will be enrolled in their existing container and will be protected using their exiting gestures.
+          On Azure AD registered devices, a user will be asked to provision a Windows Hello for Business key if the feature is enabled by mobile device management policy. If the user has an existing Windows Hello container for use with their local or Microsoft connected account, the Windows Hello for Business key will be enrolled in their existing container and will be protected using their exiting gestures.
 
-          If a user has signed into their Azure AD workplace registered device with Windows Hello, their Windows Hello for Business key will be used to authenticate the user's work identity when they try to use Azure AD resources. The Windows Hello for Business key meets Azure AD multi-factor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. 
+          If a user has signed into their Azure AD registered device with Windows Hello, their Windows Hello for Business key will be used to authenticate the user's work identity when they try to use Azure AD resources. The Windows Hello for Business key meets Azure AD multi-factor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. 
+
+          It is possible to Azure AD register a domain joined device. If the domain joined device has a convenience PIN, login with the convenience PIN will no longer work. This configuration is not supported by Windows Hello for Business. 
+
+          For more information please read [Azure AD registered devices](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register).
 
       - question: I have Windows Server 2016 domain controller(s), so why is the Key Admins group missing?
         answer: |

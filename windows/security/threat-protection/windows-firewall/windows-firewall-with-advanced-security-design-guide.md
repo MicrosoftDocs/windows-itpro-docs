@@ -4,7 +4,7 @@ description: Learn about common goals for using Windows Defender Firewall with A
 ms.assetid: 5c631389-f232-4b95-9e48-ec02b8677d51
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/05/2017
+ms.technology: mde
 ---
 
 # Windows Defender Firewall with Advanced Security design guide

@@ -1,10 +1,10 @@
 ---
 title: Mapping your implementation goals to a Windows Firewall with Advanced Security design (Windows 10)
-description:  Mapping your implementation goals to a Windows Firewall with Advanced Security design
+description: Mapping your implementation goals to a Windows Firewall with Advanced Security design
 ms.assetid: 7e68c59e-ba40-49c4-8e47-5de5d6b5eb22
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 #  Mapping your implementation goals to a Windows Firewall with Advanced Security design

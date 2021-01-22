@@ -4,7 +4,7 @@ description: Access helpful resources such as links to blogs and other resources
 keywords: Microsoft Defender Security Center, product brief, brief, capabilities, licensing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: conceptual 
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Helpful Microsoft Defender for Endpoint resources

@@ -1,9 +1,9 @@
 ---
 title: Authorize apps deployed with a WDAC managed installer (Windows 10)
-description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager. 
-keywords:  security, malware
+description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager.
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 08/14/2020
+ms.technology: mde
 ---
 
 # Authorize apps deployed with a WDAC managed installer
