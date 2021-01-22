@@ -4,7 +4,7 @@ description: Checklist Configuring Rules for Servers in a Standalone Isolated Se
 ms.assetid: ccc09d06-ef75-43b0-9c77-db06f2940955
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Checklist: Configuring Rules for Servers in a Standalone Isolated Server Zone

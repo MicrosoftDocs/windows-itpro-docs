@@ -4,7 +4,7 @@ description: Best practices, location, values, policy management and security co
 ms.assetid: bbe1a98c-420a-41e7-9d3c-3a2fe0f1843e
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network security: LAN Manager authentication level

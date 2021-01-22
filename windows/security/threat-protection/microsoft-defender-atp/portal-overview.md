@@ -4,7 +4,7 @@ description: Microsoft Defender Security Center can monitor your enterprise netw
 keywords: Microsoft Defender Security Center, portal, cybersecurity threat intelligence, dashboard, alerts queue, devices list, settings, device management, advanced attacks
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: conceptual 
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Microsoft Defender Security Center portal overview

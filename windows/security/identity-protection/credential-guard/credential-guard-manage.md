@@ -7,15 +7,15 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: v-tea
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.reviewer: 
 ms.custom: 
-- CI 120967
-- CSSTroubleshooting
+  - CI 120967
+  - CSSTroubleshooting
 ---
 
 # Manage Windows Defender Credential Guard

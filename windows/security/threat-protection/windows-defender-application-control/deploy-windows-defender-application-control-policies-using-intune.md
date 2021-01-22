@@ -1,9 +1,9 @@
 ---
 title: Deploy Windows Defender Application Control (WDAC) policies by using Microsoft Intune (Windows 10)
 description: You can use Microsoft Intune to configure Windows Defender Application Control (WDAC). Learn how with this step-by-step guide.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 04/29/2020
+ms.technology: mde
 ---
 
 # Deploy Windows Defender Application Control policies by using Microsoft Intune

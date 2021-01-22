@@ -3,7 +3,7 @@ title: Collect investigation package API
 description: Use this API to create calls related to the collecting an investigation package from a device.
 keywords: apis, graph api, supported apis, collect investigation package
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
-
+ms.technology: mde
 ---
 
 # Collect investigation package API

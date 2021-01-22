@@ -4,8 +4,8 @@ description: This is phase 1, Prepare, for migrating from McAfee to Microsoft De
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365solution-mcafeemigrate
-- m365solution-scenario
+  - M365-security-compliance
+  - m365solution-mcafeemigrate
+  - m365solution-scenario
 ms.topic: article
 ms.custom: migrationguides
 ms.date: 09/22/2020

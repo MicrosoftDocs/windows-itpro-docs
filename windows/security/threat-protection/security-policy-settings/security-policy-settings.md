@@ -4,7 +4,7 @@ description: This reference topic describes the common scenarios, architecture, 
 ms.assetid: e7ac5204-7f6c-4708-a9f6-6af712ca43b9
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Security policy settings

@@ -4,7 +4,7 @@ description: Turn on Windows Defender Firewall with Advanced Security and Config
 ms.assetid: 3c3fe832-ea81-4227-98d7-857a3129db74
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior

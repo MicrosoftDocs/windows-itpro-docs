@@ -4,7 +4,7 @@ description: Learn how to document your AppLocker rules and associate rule condi
 ms.assetid: 91a198ce-104a-45ff-b49b-487fb40cd2dd
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Document your AppLocker rules

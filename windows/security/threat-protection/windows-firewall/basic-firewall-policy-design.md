@@ -4,7 +4,7 @@ description: Protect the devices in your organization from unwanted network traf
 ms.assetid: 6f7af99e-6850-4522-b7f5-db98e6941418
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Basic Firewall Policy Design
