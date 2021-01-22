@@ -201,7 +201,7 @@ If you have a file that was either wrongly detected as malicious or was missed, 
 
 If something was detected as malware based on behavior, and you don’t have a file, you can submit your Mpsupport.cab file for analysis. You can get the .cab file by using the Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) tool.
 
-1.	Go to ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, and then run ** MpCmdRun.exe** as an administrator.
+1.	Go to ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, and then run `MpCmdRun.exe` as an administrator.
 2.	Type `mpcmdrun.exe -GetFiles`, and then press **Enter**.
    A .cab file is generated that contains various diagnostic logs. The location of the file is specified in the output of the command prompt. By default, the location is `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
 3.	Review the guidelines here: [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide).
