@@ -5,7 +5,7 @@ ms.assetid: dc469599-37fd-448b-b23e-5b8e4f17e561
 ms.reviewer: 
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/02/2018
+ms.technology: mde
 ---
 
 # Configure the Application Identity service

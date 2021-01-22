@@ -1,10 +1,10 @@
 ---
 title: Example WDAC base policies (Windows 10)
 description: When creating a WDAC policy for an organization, start from one of the many available example base policies.
-keywords:  security, malware
+keywords: security, malware
 ms.topic: article
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,6 +16,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 11/15/2019
+ms.technology: mde
 ---
 
 # Windows Defender Application Control example base policies

@@ -6,7 +6,7 @@ description: Use tamper protection to prevent malicious apps from changing impor
 keywords: malware, defender, antivirus, tamper protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -15,6 +15,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 01/07/2021
+ms.technology: mde
 ---
 
 # Protect security settings with tamper protection

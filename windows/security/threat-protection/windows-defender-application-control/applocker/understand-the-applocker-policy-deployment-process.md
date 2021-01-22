@@ -4,7 +4,7 @@ description: This planning and deployment topic for the IT professional describe
 ms.assetid: 4cfd95c1-fbd3-41fa-8efc-d23c1ea6fb16
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Understand the AppLocker policy deployment process

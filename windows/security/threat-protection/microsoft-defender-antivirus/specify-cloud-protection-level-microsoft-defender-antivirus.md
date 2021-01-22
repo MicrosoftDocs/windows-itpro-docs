@@ -4,7 +4,7 @@ description: Set your level of cloud-delivered protection for Microsoft Defender
 keywords: Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,6 +14,7 @@ ms.date: 10/26/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
+ms.technology: mde
 ---
 
 # Specify the cloud-delivered protection level

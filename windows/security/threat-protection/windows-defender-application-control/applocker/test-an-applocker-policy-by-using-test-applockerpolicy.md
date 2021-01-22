@@ -4,7 +4,7 @@ description: This topic for IT professionals describes the steps to test an AppL
 ms.assetid: 048bfa38-6825-4a9a-ab20-776cf79f402a
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Test an AppLocker policy by using Test-AppLockerPolicy

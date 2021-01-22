@@ -1,7 +1,7 @@
 ---
 title: Common Criteria Certifications
 description: This topic details how Microsoft supports the Common Criteria certification program.
-ms.prod: w10
+ms.prod: m365-security
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -11,6 +11,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 3/20/2019
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Common Criteria Certifications

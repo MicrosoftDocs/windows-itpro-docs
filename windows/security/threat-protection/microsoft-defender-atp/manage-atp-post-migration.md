@@ -4,8 +4,8 @@ description: Now that you've made the switch to Microsoft Defender for Endpoint,
 keywords: post-migration, manage, operations, maintenance, utilization, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,8 +15,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
+  - M365-security-compliance
+  - m365solution-scenario
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.reviewer: chventou

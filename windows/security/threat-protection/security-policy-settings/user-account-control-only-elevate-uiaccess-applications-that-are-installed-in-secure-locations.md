@@ -4,7 +4,7 @@ description: Learn about best practices and more for the policy setting, User Ac
 ms.assetid: 4333409e-a5be-4f2f-8808-618f53abd22c
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # User Account Control: Only elevate UIAccess applications that are installed in secure locations

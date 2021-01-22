@@ -3,7 +3,7 @@ title: Phishing trends and techniques
 ms.reviewer: 
 description: Learn about how to spot phishing techniques
 keywords: security, malware, phishing, information, scam, social engineering, bait, lure, protection, trends, targeted attack, spear phishing, whaling
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,9 +11,10 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
+ms.technology: mde
 ---
 
 # Phishing trends and techniques
