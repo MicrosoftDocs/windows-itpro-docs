@@ -89,7 +89,7 @@ The table in this section summarizes the functionality and features that are ava
 |  [Threat remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-remediation-microsoft-defender-antivirus) | Yes | Sometimes <sup>[[4](#fn4)]<sup> | Yes | No |
 | [Security intelligence updates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus) | Yes | Yes | Yes | No |
 
-(<a id="fn3">2</a>) When Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is enabled and in passive mode.
+(<a id="fn3">3</a>) When Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is enabled and in passive mode.
 
 (<a id="fn4">4</a>) When Microsoft Defender Antivirus is in passive mode, threat remediation features are active only during scheduled or on-demand scans.
 
