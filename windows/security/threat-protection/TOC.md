@@ -552,6 +552,7 @@
 ####### [Get security recommendations](microsoft-defender-atp/get-security-recommendations.md)
 ####### [Add or Remove machine tags](microsoft-defender-atp/add-or-remove-machine-tags.md)
 ####### [Find machines by IP](microsoft-defender-atp/find-machines-by-ip.md)
+####### [Find machines by tag](microsoft-defender-atp/find-machines-by-tag.md)
 ####### [Get missing KBs](microsoft-defender-atp/get-missing-kbs-machine.md)
 ####### [Set device value](microsoft-defender-atp/set-device-value.md)
 
@@ -578,6 +579,7 @@
 ###### [Indicators]()
 ####### [Indicators methods and properties](microsoft-defender-atp/ti-indicator.md)
 ####### [Submit Indicator](microsoft-defender-atp/post-ti-indicator.md)
+####### [Import Indicators](microsoft-defender-atp/import-ti-indicators.md)
 ####### [List Indicators](microsoft-defender-atp/get-ti-indicators-collection.md)
 ####### [Delete Indicator](microsoft-defender-atp/delete-ti-indicator-by-id.md)
 
