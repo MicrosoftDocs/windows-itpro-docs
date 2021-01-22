@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr, shwjha
 manager: dansimp
-ms.date: 01/11/2021
+ms.date: 01/22/2021
 ms.technology: mde
 ---
 
@@ -34,7 +34,7 @@ Microsoft Defender Antivirus is automatically enabled and installed on endpoints
 
 ## Antivirus and Microsoft Defender for Endpoint
 
-The following table summarizes what happens with Microsoft Defender Antivirus when third-party antivirus products are used together or without Microsoft Defender for Endpoint.
+The following table summarizes what happens with Microsoft Defender Antivirus when third-party antivirus products are used together or without Microsoft Defender for Endpoint. 
 
 
 | Windows version   | Antimalware protection  | Microsoft Defender for Endpoint enrollment | Microsoft Defender Antivirus state     |
@@ -76,20 +76,22 @@ See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antiviru
 
 ## Functionality and features available in each state
 
-The table in this section summarizes the functionality and features that are available in each state. 
+The table in this section summarizes the functionality and features that are available in each state. The table is designed to be informational only. It is intended to describe the features & capabilities that are actively working or not, according to whether Microsoft Defender Antivirus is in active mode, in passive mode, or is disabled/uninstalled. 
 
 > [!IMPORTANT]
-> The following table is informational, and it is designed to describe the features & capabilities that are turned on or off according to whether Microsoft Defender Antivirus is in Active mode, in Passive mode, or disabled/uninstalled. Do not turn off capabilities, such as real-time protection, if you are using Microsoft Defender Antivirus in passive mode or are using EDR in block mode. 
+> Do not turn off capabilities, such as real-time protection, cloud-delivered protection, or limited periodic scanning, if you are using Microsoft Defender Antivirus in passive mode or you are using EDR in block mode. 
 
 |State |[Real-time protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) and [cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) | [Limited periodic scanning availability](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/limited-periodic-scanning-microsoft-defender-antivirus) | [File scanning and detection information](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/customize-run-review-remediate-scans-microsoft-defender-antivirus) | [Threat remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-remediation-microsoft-defender-antivirus) | [Security intelligence updates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus) |
 |--|--|--|--|--|--|
 |Active mode <br/><br/>  |Yes |No |Yes |Yes |Yes |
-|Passive mode  |No |No |Yes |Only during [scheduled or on-demand scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus) |Yes |
+|Passive mode  |No |No* |Yes |Only during [scheduled or on-demand scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus) |Yes |
 |[EDR in block mode enabled](../microsoft-defender-atp/edr-in-block-mode.md)  |No |No |Yes |Yes |Yes |
 |Automatic disabled mode  |No |Yes |No |No |No |
 
-- In Active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files are scanned and threats remediated, and detection information are reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the machine itself).
-- In Passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are not remediated by Microsoft Defender Antivirus. Files are scanned and reports are provided for threat detections that are shared with the Microsoft Defender for Endpoint service. Therefore, you might encounter alerts in the Security Center console with Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in Passive mode.
+\* When Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is turned on and is in passive mode.
+
+- In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files are scanned and threats remediated, and detection information are reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the machine itself).
+- In passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are not remediated by Microsoft Defender Antivirus. Files are scanned and reports are provided for threat detections that are shared with the Microsoft Defender for Endpoint service. Therefore, you might encounter alerts in the Security Center console with Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in Passive mode.
 - When [EDR in block mode](../microsoft-defender-atp/edr-in-block-mode.md) is turned on and Microsoft Defender Antivirus is not the primary antivirus solution, it can still detect and remediate malicious items.
 - When disabled, Microsoft Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated. Disabling/uninstalling Microsoft Defender Antivirus is not recommended in general; if possible, keep Microsoft Defender Antivirus in passive mode if you are using a non-Microsoft antimalware/antivirus solution.
 
