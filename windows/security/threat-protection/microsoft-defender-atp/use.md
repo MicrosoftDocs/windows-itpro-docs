@@ -4,7 +4,7 @@ description: Learn about the features on Microsoft Defender Security Center, inc
 keywords: dashboard, alerts queue, manage alerts, investigation, investigate alerts, investigate devices, submit files, deep analysis, high, medium, low, severity, ioc, ioa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Overview of Microsoft Defender Security Center

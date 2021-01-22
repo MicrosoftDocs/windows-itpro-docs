@@ -4,7 +4,7 @@ description: Learn how to use the Get CVE-KB map API to retrieve a map of CVE's 
 keywords: apis, graph api, supported apis, get, cve, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: mde
 ---
 
 # Get CVE-KB map API

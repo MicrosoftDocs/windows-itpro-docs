@@ -4,7 +4,7 @@ description: Domain admins can set up advanced security audit options in Windows
 ms.assetid: 0d2c28ea-bdaf-47fd-bca2-a07dce5fed37
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Using advanced security auditing options to monitor dynamic access control objects

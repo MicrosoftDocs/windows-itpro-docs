@@ -1,10 +1,10 @@
 ---
-title: Verify data storage location and update data retention settings 
+title: Verify data storage location and update data retention settings
 description: Verify data storage location and update data retention settings for Microsoft Defender Advanced Threat Protection
 keywords: data, storage, settings, retention, update
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 # Verify data storage location and update data retention settings for Microsoft Defender for Endpoint
 

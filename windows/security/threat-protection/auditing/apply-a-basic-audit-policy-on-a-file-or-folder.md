@@ -4,7 +4,7 @@ description: Apply audit policies to individual files and folders on your comput
 ms.assetid: 565E7249-5CD0-4B2E-B2C0-B3A0793A51E2
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 07/25/2018
+ms.technology: mde
 ---
 
 # Apply a basic audit policy on a file or folder

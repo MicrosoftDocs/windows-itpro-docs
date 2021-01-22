@@ -8,14 +8,15 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 ms.reviewer: shwetaj
-audience: ITPro 
-ms.topic: article 
-ms.prod: w10 
+audience: ITPro
+ms.topic: article
+ms.prod: m365-security
 ms.localizationpriority: medium
 ms.custom: 
-- next-gen
-- edr
+  - next-gen
+  - edr
 ms.collection: 
+ms.technology: mde
 ---
 
 # Feedback-loop blocking

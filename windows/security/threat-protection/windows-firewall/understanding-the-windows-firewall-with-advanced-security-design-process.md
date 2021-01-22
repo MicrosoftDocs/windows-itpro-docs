@@ -1,7 +1,7 @@
 ---
 title: Understand WFAS Deployment (Windows 10)
 description: Resources for helping you understand the Windows Defender Firewall with Advanced Security (WFAS) Design Process
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.topic: conceptual
 ms.date: 08/17/2017
 ms.reviewer: 
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # Understanding the Windows Defender Firewall with Advanced Security Design Process

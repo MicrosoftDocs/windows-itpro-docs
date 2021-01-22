@@ -4,7 +4,7 @@ description: Retrieve a collection of device security states using Microsoft Def
 keywords: apis, graph api, supported apis, get, device, security, state
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: article 
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
 ---
 
 # Get Machines security states collection API

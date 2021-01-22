@@ -3,7 +3,7 @@ title: Machine resource type
 description: Learn about the methods and properties of the Machine resource type in Microsoft Defender Advanced Threat Protection.
 keywords: apis, supported apis, get, machines
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Machine resource type
