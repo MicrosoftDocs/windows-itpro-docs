@@ -54,7 +54,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2.	In the navigation pane, choose **Alerts queue**.
 3.	Select an alert to more details about the alert. (See [Review alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts).)
-4.	Take one of the following steps:   <br/>   
+4.	Depending on the alert status, take the steps described in the following table:   <br/>   
 
     | Alert status | What to do |
     |:---|:---|
