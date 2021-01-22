@@ -33,7 +33,7 @@ ms.custom: FPFN
 
 In endpoint protection, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. The process of addressing false positives/negatives includes:
 
-1.	Reviewing and classifying alerts
+1.	[Reviewing and classifying alerts](#review-and-classify-alerts)
 2.	Reviewing remediation actions that were taken
 3.	Reviewing and defining exclusions
 4.	Submitting an entity for analysis
@@ -47,10 +47,12 @@ If your security operations team see an alert that was triggered because somethi
 
 Managing your alerts and classifying false positives helps to train your threat protection solution and can reduce the number of false positives or false negatives over time. Taking these steps also helps reduce noise in your security operations dashboard so that your security team can focus on higher priority work items.
 
+
 ### Determine whether an alert is accurate
 
 Before you classify or suppress an alert, determine whether the alert is accurate, a false positive, or benign.
-1. Go to the Microsoft Defender Security Center (https://securitycenter.windows.com) and sign in.
+
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2.	In the navigation pane, choose **Alerts queue**.
 3.	Select an alert to more details about the alert. (See [Review alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts).)
 4.	Take one of the following steps:   
@@ -60,7 +62,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 ### Classify an alert as a false positive
 
-Your security team can classify an alert as a false positive in the Microsoft Defender Security Center, in the Alerts queue.
+Your security team can classify an alert as a false positive in the Microsoft Defender Security Center, in the **Alerts queue**.
 
 1.	Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2.	Select **Alerts queue**, and then select an alert that is a false positive.
@@ -110,13 +112,13 @@ If you find that a remediation action was taken automatically on an entity that 
 - Disable a driver
 - Remove a scheduled task
 
-### To undo an action   
+### Undo an action
 
 1.	Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 2. On the **History** tab, select an action that you want to undo.
 3.	In the flyout pane, select **Undo**. (If the action cannot be undone with this method, you will not see an **Undo** button.)
 
-### To undo multiple actions at one time
+### Undo multiple actions at one time
 
 1.	Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 2.	On the **History** tab, select the actions that you want to undo.
@@ -163,7 +165,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 ### Indicators for Microsoft Defender for Endpoint
 
-[Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) enable your security operations team to define the detection, prevention, and exclusion of entities. For example, your security operations team can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain files, IP addresses, or URLs.
+[Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) (specifically, indicators of compromise, or IoCs) enable your security operations team to define the detection, prevention, and exclusion of entities. For example, your security operations team can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain files, IP addresses, or URLs.
 
 To specify entities as exclusions for Microsoft Defender for Endpoint, your security team can create "allow" indicators for those entities. Such "allow" indicators in Microsoft Defender for Endpoint apply to:
 
@@ -171,23 +173,52 @@ To specify entities as exclusions for Microsoft Defender for Endpoint, your secu
 - [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
 - [Automated investigation & remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-Your security team can create indicators for files, IP addresses, URLs, domains, and certificates. Use the following resources to create or manage indicators in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)): 
+Your security team can create indicators for files, IP addresses, URLs, domains, and certificates, as described in the following table:
 
-- [Learn more about indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
-- [Create an indicator for a file, such as an executable](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-file)
-- [Create an indicator for an IP address, URL, or domain](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-ip-domain)
-- [Create an indicator for an application certificate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates)
+| Indicator type | Prerequisites | Notes  |
+|----|----|---|
+|Files <p>Helps prevent suspected malware (or potentially malicious files) from being downloaded from the web. Files can include portable executable (PE) files, such as `.exe` and `.dll` files. <p> [Create an indicator for a file, such as an executable](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-file). | Microsoft Defender Antivirus with cloud-based protection enabled. <p>Antimalware client version: 4.18.1901.x or later. <p>Devices are running one of the following versions of Windows:<br/>- Windows 10, version 1703 or later<br/>- Windows Server 2016<br/>- Windows Server 2019 <p> [Block or allow feature is turned on](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features). | The allow or block function cannot be done on a file if the file's classification exists on the device's cache prior to the allow or block action <p>Trusted, signed files are treated differently. Defender for Endpoint is optimized to handle malicious files. Trying to block trusted, signed files, can have performance implications. <p>Typically, file blocks are enforced within a couple of minutes, but can take upwards of 30 minutes. |
+| IP addresses and URLs <p>Full URL path blocks can be applied on the domain level and all unencrypted URLs <p>IP is supported for all three protocols <p>[Create an indicator for an IP address, URL, or domain](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-ip-domain) | Network protection in Defender for Endpoint is enabled in block mode. ([Enable network protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection).)<p>Antimalware client version: 4.18.1906.x or later. <p>Devices are running Windows 10, version 1709 or later <p>Custom network indicators are turned on in the Microsoft Defender Security Center (See [Advanced features](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features).) | Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios leverage Network Protection for inspection and enforcement.<p>There might be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked. <p>Only single IP addresses are supported (no CIDR blocks or IP ranges) <p>Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge) <p>Encrypted URLS (FQDN only) can be blocked outside of first party browsers (Internet Explorer, Edge) |
+| Certificates <p>`.CER` or `.PEM` file extensions are supported. <p>[Create an indicator for an application certificate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates) |Microsoft Defender Antivirus with cloud-based protection is enabled ([Manage cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).)<p>Antimalware client version: 4.18.1901.x or later. <p>Devices are running one of the following versions of Windows:<br/>- Windows 10, version 1703 or later<br/>- Windows Server 2016<br/>- Windows Server 2019 <p>Virus and threat protection definitions are up to date. | A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft. <p>Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine Trusted Root Certification Authorities). <p>The children or parent of the allow/block certificate IOCs are not included in the allow/block IoC functionality, only leaf certificates are supported.<p>Microsoft signed certificates cannot be blocked. <p>It can take up to 3 hours to create and remove a certificate IoC. |
 
 > [!TIP]
 > When you create indicators, you can define them one by one or import multiple items at once. Keep in mind there's a limit of 15,000 indicators you can have in a single tenant. And, you might need to gather certain details first, such as file hash information. Make sure to review the prerequisites before you [create indicators](manage-indicators.md). 
 
-| Indicator type | Prerequisites | Notes  |
-|----|----|---|
-|Files <p>Helps prevent suspected malware (or potentially malicious files) from being downloaded from the web. Files can include portable executable (PE) files, such as `.exe` and `.dll` files. <p> [Create an indicator for a file, such as an executable](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-file). | Microsoft Defender Antivirus with cloud-based protection enabled. <p>Antimalware client version  must be 4.18.1901.x or later. <p>Devices are running one of the following versions of Windows:<br/>- Windows 10, version 1703 or later<br/>- Windows Server 2016<br/>- Windows Server 2019 <p> The [Block or allow feature is turned on](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features). | The allow or block function cannot be done on a file if the file's classification exists on the device's cache prior to the allow or block action <p>Trusted, signed files are treated differently. Defender for Endpoint is optimized to handle malicious files. Trying to block trusted, signed files, can have performance implications. <p>Typically, file blocks are enforced within a couple of minutes, but can take upwards of 30 minutes. |
-| IP addresses and URLs <p>Full URL path blocks can be applied on the domain level and all unencrypted URLs <p>IP is supported for all three protocols <p>[Create an indicator for an IP address, URL, or domain](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-ip-domain) | Network protection in Defender for Endpoint must be enabled in block mode. ([Enable network protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection).)<p>Your antimalware client version must be 4.18.1906.x or later. <p>Your devices must be running Windows 10, version 1709 or later <p>Custom network indicators must be turned on in the Microsoft Defender Security Center (See [Advanced features](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features).) | Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios leverage Network Protection for inspection and enforcement.<p>There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked. <p>Only single IP addresses are supported (no CIDR blocks or IP ranges) <p>Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge) <p>Encrypted URLS (FQDN only) can be blocked outside of first party browsers (Internet Explorer, Edge) |
-| Certificates <p>`.CER` or `.PEM` file extensions are supported. <p>[Create an indicator for an application certificate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates) |Microsoft Defender Antivirus with cloud-based protection is enabled ([Manage cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).)<p>Your antimalware client version must be 4.18.1901.x or later. <p>Your devices must be running one of the following versions of Windows:<br/>- Windows 10, version 1703 or later<br/>- Windows Server 2016<br/>- Windows Server 2019 <p>Your virus and threat protection definitions must be up to date. | A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft. <p>Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine Trusted Root Certification Authorities). <p>The children or parent of the allow/block certificate IOCs are not included in the allow/block IoC functionality, only leaf certificates are supported.<p>Microsoft signed certificates cannot be blocked. <p>It can take up to 3 hours to create and remove a certificate IoC. |
+## Submit a file for analysis
 
+You can submit entities, such as files and fileless detections, to Microsoft for analysis. Microsoft security researchers analyze all submissions. After you sign in at the submission site, you can track your submissions.
 
+### Submit a file for analysis
+
+If you have a file that was either wrongly detected as malicious or was missed, follow these steps to submit the file for analysis.
+
+1. Review the guidelines here: [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide).
+2. Visit the Microsoft Security Intelligence submission site ([https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission)), and submit your file(s).
+
+### Submit a fileless detection for analysis
+
+If something was detected as malware based on behavior, and you don’t have a file, you can submit your Mpsupport.cab file for analysis. You can get the .cab file by using the Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) tool.
+
+1.	Go to ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, and then run ** MpCmdRun.exe** as an administrator.
+2.	Type `mpcmdrun.exe -GetFiles`, and then press **Enter**.
+   A .cab file is generated that contains various diagnostic logs. The location of the file is specified in the output of the command prompt. By default, the location is `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
+3.	Review the guidelines here: [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide).
+4.	Visit the Microsoft Security Intelligence submission site ([https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission)), and submit your .cab files.
+
+### What happens after a file is submitted?
+
+Your submission is immediately scanned by our systems to give you the latest determination even before an analyst starts handling your case. It’s possible that a file might have already been submitted and processed by an analyst. In those cases, a determination is made quickly.
+
+For submissions that were not already processed, they are prioritized for analysis as follows:
+
+- Prevalent files with the potential to impact large numbers of computers are given a higher priority.
+- Authenticated customers, especially enterprise customers with valid [Software Assurance IDs (SAIDs)](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx), are given a higher priority.
+- Submissions flagged as high priority by SAID holders are given immediate attention.
+
+To check for updates regarding your submission, sign in at the [Microsoft Security Intelligence submission site](https://www.microsoft.com/wdsi/filesubmission). 
+
+> [!TIP]
+> To learn more, see [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide#how-does-microsoft-prioritize-submissions).
 
 ## Review your threat protection settings
 
@@ -257,54 +288,6 @@ We recommend using Microsoft Endpoint Manager to edit or set PUA protection sett
 7. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).)
 8. On the **Applicability Rules** tab, specify the OS editions or versions to include or exclude from the policy. For example, you can set the policy to be applied to all devices certain editions of Windows 10. Then choose **Next**.
 9. On the **Review + create** tab, review your settings, and, and then choose **Create**.
-
-
-## Classify a false positive or false negative
-
-As alerts are triggered, if you see something that was detected as malicious or suspicious that should not be, you can suppress alerts for that entity and classify alerts as false positives. Managing your alerts and classifying false positives helps to train your threat protection solution. Taking these steps also helps reduce noise in your security operations dashboard so that your security team can focus on higher priority work items.
-
-### Suppress an alert
-
-You can suppress an alert in the Microsoft Defender Security Center.
-
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
-2. In the navigation pane, select **Alerts queue**. 
-3. Select an alert that you want to suppress to open its **Details** pane.
-4. In the **Details** pane, choose the ellipsis (`...`), and then choose **Create a suppression rule**.
-5. Specify all the settings for your suppression rule, and then choose **Save**. 
-
-> [!TIP]
-> Need help with suppression rules? See [Suppress an alert and create a new suppression rule](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts#suppress-an-alert-and-create-a-new-suppression-rule).
-
-### Classify an alert as a false positive
-
-Your security team can classify an alert as a false positive in the Microsoft Defender Security Center, in the Alerts queue. 
-
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
-2. Select **Alerts queue**, and then select an alert that is a false positive.
-3. For the selected alert, select **Actions** > **Manage alert**. A flyout pane opens.
-4. In the **Manage alert** section, select **True alert** or **False alert**. Use **False alert** to classify a false positive.
-
-> [!TIP]
-> - For more information about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts).
-> - If your organization is using a security information and event management (SIEM) server, make sure to define a suppression rule there, too. 
-
-## Submit a file for analysis
-
-You can submit files, such as false positives or false negatives, to Microsoft for analysis. Microsoft security researchers analyze all submissions. After you sign in at the submission site, you can track your submissions.
-
-1. Review the guidelines here: [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide).
-
-2. Visit the Microsoft Security Intelligence submission ([https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission)), and submit your file(s).
-
-## Confirm your software uses EV code signing
-
-As explained in the blog, [Partnering with the industry to minimize false positives](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives), digital signatures help to ensure the software integrity. The reputation of digital certificates also plays a role in whether software is considered suspicious or not a threat. By using a reputable certificate, developers can reduce the chances of their software being detected as malware. Extended validation (EV) code signing is a more advanced version of digital certificates and requires a more rigorous vetting and authentication process.
-
-Want to learn more? See the following resources:
-
-- [Microsoft Security Blog: Partnering with the industry to minimize false positives](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/)
-- [Get a code signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate)
 
 ## Still need help?
 
