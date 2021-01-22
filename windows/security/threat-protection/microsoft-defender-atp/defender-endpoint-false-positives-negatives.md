@@ -31,7 +31,7 @@ ms.custom: FPFN
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
 
-In endpoint protection, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. The process of addressing false positives/negatives includes:
+In endpoint protection, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), and you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), your security operations can take steps to address false positives or false negatives. These steps include:
 
 1.	[Reviewing and classifying alerts](#part-1-review-and-classify-alerts) 
 2.	[Reviewing remediation actions that were taken](#part-2-review-remediation-actions)
@@ -39,7 +39,7 @@ In endpoint protection, a false positive is an entity, such as a file or a proce
 4.	[Submitting an entity for analysis](#part-4-submit-a-file-for-analysis)
 5.	[Reviewing and adjusting your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
 
-If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), and you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), use this article as a guide to take action. This article also includes information about [what to do if you still need help](#still-need-help) after taking the recommended steps to address false positives/negatives in your environment.
+This article also includes information about [what to do if you still need help](#still-need-help) after taking the recommended steps to address false positives/negatives in your environment.
 
 ## Part 1: Review and classify alerts
 
@@ -55,18 +55,21 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 2.	In the navigation pane, choose **Alerts queue**.
 3.	Select an alert to more details about the alert. (See [Review alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts).)
 4.	Take one of the following steps:   <br/>   
-    - If the alert is accurate, assign and investigate the alert further.
-    - If the alert is a false positive, proceed to classify the alert as a false positive, and then suppress the alert. Also, create an indicator for Microsoft Defender for Endpoint. 
-    - If the alert is accurate but benign (unimportant), classify the alert as a true positive, and then suppress the alert.
 
-### Classify an alert as a false positive
+    | Alert status | What to do |
+    |:---|:---|
+    | The alert is accurate | Assign the alert, and then [investigate it](investigate-alerts.md) further. |
+    | The alert is a false positive | Proceed to [classify the alert](#classify-an-alert) as a false positive, and then [suppress the alert](#suppress-an-alert). <p> Also, create an indicator for Microsoft Defender for Endpoint. |
+    | The alert is accurate but benign (unimportant) | [Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert). |
 
-Your security team can classify an alert as a false positive in the Microsoft Defender Security Center, in the **Alerts queue**.
+### Classify an alert
+
+Your security team can classify an alert as a false positive or a true positive in the Microsoft Defender Security Center, in the **Alerts queue**.
 
 1.	Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2.	Select **Alerts queue**, and then select an alert that is a false positive.
 3.	For the selected alert, select **Actions** > **Manage alert**. A flyout pane opens.
-4.	In the **Manage alert** section, select **True alert** or **False alert**. Use **False alert** to classify a false positive.
+4.	In the **Manage alert** section, select either **True alert** or **False alert**. (Use **False alert** to classify a false positive.)
 
 > [!TIP]
 > For more information about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts). And, if your organization is using a security information and event management (SIEM) server, make sure to define a suppression rule there, too. 
