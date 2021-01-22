@@ -88,7 +88,7 @@ The table in this section summarizes the functionality and features that are ava
 |[EDR in block mode enabled](../microsoft-defender-atp/edr-in-block-mode.md)  |No |No |Yes |Yes |Yes |
 |Automatic disabled mode  |No |Yes |No |No |No |
 
-\* When Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is turned on and is in passive mode.
+\* When Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is enabled and in passive mode.
 
 - In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files are scanned and threats remediated, and detection information are reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the machine itself).
 - In passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are not remediated by Microsoft Defender Antivirus. Files are scanned and reports are provided for threat detections that are shared with the Microsoft Defender for Endpoint service. Therefore, you might encounter alerts in the Security Center console with Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in Passive mode.
@@ -106,13 +106,13 @@ The table in this section summarizes the functionality and features that are ava
    If you uninstall the non-Microsoft antivirus product, and use Microsoft Defender Antivirus to provide protection to your devices, Microsoft Defender Antivirus will return to its normal active mode automatically.
 
 > [!WARNING]
-> Do not disable, stop, or modify any of the associated services that are used by Microsoft Defender Antivirus, Microsoft Defender for Endpoint, or the Windows Security app. This includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and processes. Manually modifying these services can cause severe instability on your devices and can make your network vulnerable. Disabling, stopping, or modifying those services can also cause problems when using non-Microsoft antivirus solutions and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
+> Do not disable, stop, or modify any of the associated services that are used by Microsoft Defender Antivirus, Microsoft Defender for Endpoint, or the Windows Security app. This recommendation includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and processes. Manually modifying these services can cause severe instability on your devices and can make your network vulnerable. Disabling, stopping, or modifying those services can also cause problems when using non-Microsoft antivirus solutions and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
 
 ## See also
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md)
+- [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server-2016.md)
 - [EDR in block mode](../microsoft-defender-atp/edr-in-block-mode.md)
 - [Configure Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 - [Learn about Microsoft 365 Endpoint data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about)
