@@ -31,14 +31,97 @@ ms.custom: FPFN
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
 
-In endpoint protection solutions, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. The process of addressing false positives/negatives can include:
-- [Reviewing your threat protection settings and making adjustments where needed](#review-your-threat-protection-settings);
-- [Defining exclusions, such as for antivirus and other endpoint protection features](#review-or-define-exclusions-for-microsoft-defender-for-endpoint);
-- [Classifying false positives in your endpoint protection solution](#classify-a-false-positive-or-false-negative);
-- [Submitting files for further analysis](#submit-a-file-for-analysis); and
-- [Verifying that the applications your organization is using are properly signed](#confirm-your-software-uses-ev-code-signing).
+In endpoint protection, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. The process of addressing false positives/negatives includes:
+
+1.	Reviewing and classifying alerts
+2.	Reviewing remediation actions that were taken
+3.	Reviewing and defining exclusions
+4.	Submitting an entity for analysis
+5.	Reviewing your threat protection settings
 
 If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), and you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), use this article as a guide to take action. This article also includes information about [what to do if you still need help](#still-need-help) after taking the recommended steps to address false positives/negatives in your environment.
+
+## Review and classify alerts
+
+If your security operations team see an alert that was triggered because something was detected as malicious or suspicious that should not have been, you can suppress the alert for that entity. You can also suppress alerts that are not necessarily false positives, but are unimportant. And, you can classify alerts as false positives as needed. 
+
+Managing your alerts and classifying false positives helps to train your threat protection solution and can reduce the number of false positives or false negatives over time. Taking these steps also helps reduce noise in your security operations dashboard so that your security team can focus on higher priority work items.
+
+### Determine whether an alert is accurate
+
+Before you classify or suppress an alert, determine whether the alert is accurate, a false positive, or benign.
+1. Go to the Microsoft Defender Security Center (https://securitycenter.windows.com) and sign in.
+2.	In the navigation pane, choose **Alerts queue**.
+3.	Select an alert to more details about the alert. (See [Review alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts).)
+4.	Take one of the following steps:   
+   - If the alert is accurate, assign and investigate the alert further.
+   - If the alert is a false positive, proceed to classify the alert as a false positive, and then suppress the alert. Also, create an indicator for Microsoft Defender for Endpoint. 
+   - If the alert is accurate but benign (unimportant), classify the alert as a true positive, and then suppress the alert.
+
+### Classify an alert as a false positive
+
+Your security team can classify an alert as a false positive in the Microsoft Defender Security Center, in the Alerts queue.
+
+1.	Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+2.	Select **Alerts queue**, and then select an alert that is a false positive.
+3.	For the selected alert, select **Actions** > **Manage alert**. A flyout pane opens.
+4.	In the **Manage alert** section, select **True alert** or **False alert**. Use **False alert** to classify a false positive.
+
+> [!TIP]
+> For more information about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts). And, if your organization is using a security information and event management (SIEM) server, make sure to define a suppression rule there, too. 
+
+### Suppress an alert
+
+If you have alerts that are either false positives or are for unimportant events, you can suppress those alerts in the Microsoft Defender Security Center.
+
+1.	Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+2.	In the navigation pane, select **Alerts queue**.
+3.	Select an alert that you want to suppress to open its **Details** pane.
+4.	In the **Details** pane, choose the ellipsis (**...**), and then choose **Create a suppression rule**.
+5.	Specify all the settings for your suppression rule, and then choose **Save**.
+
+> [!TIP]
+> Need help with suppression rules? See [Suppress an alert and create a new suppression rule](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts#suppress-an-alert-and-create-a-new-suppression-rule).
+
+## Review remediation actions
+
+[Remediation actions](manage-auto-investigation.md#remediation-actions), such as sending a file to quarantine or stopping a process, can be taken on entities that are detected as threats. Several types of remediation actions can occur automatically through automated investigation and Microsoft Defender Antivirus. Examples of such actions include:   
+- Quarantine a file
+- Remove a registry key
+- Kill a process
+- Stop a service
+- Disable a driver
+- Remove a scheduled task
+
+Other actions, such as starting an antivirus scan or collecting an investigation package, can occur through [Live Response](live-response.md). Those actions cannot be undone.
+
+### Review completed actions
+
+1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in. 
+2. Select the **History** tab. 
+3. Select an item to view more details about the remediation action that was taken.
+
+If you find that a remediation action was taken automatically on an entity that is not actually a threat, you can undo the action. Remediation actions that you can undo include the following:
+- Isolate device
+- Restrict code execution
+- Quarantine a file
+- Remove a registry key
+- Stop a service
+- Disable a driver
+- Remove a scheduled task
+
+### To undo an action   
+
+1.	Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+2. On the **History** tab, select an action that you want to undo.
+3.	In the flyout pane, select **Undo**. (If the action cannot be undone with this method, you will not see an **Undo** button.)
+
+### To undo multiple actions at one time
+
+1.	Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+2.	On the **History** tab, select the actions that you want to undo.
+3.	In the pane on the right side of the screen, select **Undo**.
+
 
 ## Review your threat protection settings
 
