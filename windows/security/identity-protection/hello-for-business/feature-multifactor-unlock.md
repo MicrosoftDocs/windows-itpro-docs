@@ -1,5 +1,5 @@
 ---
-title: Multifactor Unlock
+title: Multi-factor Unlock
 description: Learn how Windows 10 offers multifactor device unlock by extending Windows Hello with trusted signals. 
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, multi, factor, multifactor, multi-factor
 ms.prod: w10
@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 03/20/2018
 ms.reviewer: 
 ---
-# Multifactor Unlock
+# Multi-factor Unlock
 
 **Applies to:**
 -   Windows 10

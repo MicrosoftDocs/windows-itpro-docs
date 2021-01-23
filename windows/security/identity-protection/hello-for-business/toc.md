@@ -1,6 +1,6 @@
 ﻿# [Windows Hello for Business](hello-identity-verification.md)
 
-## [Password-less Strategy](passwordless-strategy.md)
+## [Passwordless Strategy](passwordless-strategy.md)
 
 ## [Windows Hello for Business Overview](hello-overview.md)
 ## [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
@@ -10,7 +10,7 @@
 ### [Conditional Access](hello-feature-conditional-access.md)
 ### [Dual Enrollment](hello-feature-dual-enrollment.md)
 ### [Dynamic Lock](hello-feature-dynamic-lock.md)
-### [Multifactor Unlock](feature-multifactor-unlock.md)
+### [Multi-factor Unlock](feature-multifactor-unlock.md)
 ### [PIN Reset](hello-feature-pin-reset.md)
 ### [Remote Desktop](hello-feature-remote-desktop.md)
 
