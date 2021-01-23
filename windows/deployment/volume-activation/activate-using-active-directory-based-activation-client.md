@@ -29,6 +29,9 @@ ms.topic: article
 >- Windows Server 2012
 >- Windows Server 2016
 >- Windows Server 2019
+>- Office 2013*
+>- Office 2016*
+>- Office 2019*
 
 **Looking for retail activation?**
 
@@ -97,6 +100,13 @@ When a reactivation event occurs, the client queries AD DS for the activation o
 1. Activate your KMS host key by phone or online (Figure 15).
 
     ![Entering your KMS host key](../images/volumeactivationforwindows81-14.jpg)
+    
+    > [!NOTE]
+    > For activating a KMS Host Key (CSVLK) for Microsoft Office 
+    for you need to install the version specific Office Volume license pack on the server where you have installed the Volume Activation Server Role.
+    - [Office 2013 VL pack](https://www.microsoft.com/en-us/download/details.aspx?id=35584)
+    - [Office 2016 VL pack](https://www.microsoft.com/en-us/download/details.aspx?id=49164)
+    - [Office 2019 VL pack](https://www.microsoft.com/en-us/download/details.aspx?id=57342)
 
     **Figure 15**. Choosing how to activate your product
 
@@ -115,6 +125,7 @@ To verify your Active Directory-based activation configuration, complete the fol
 
     > [!NOTE]
     > If you are using both KMS and Active Directory-based activation, it may be difficult to see whether a client has been activated by KMS or by Active Directory-based activation. Consider disabling KMS during the test, or make sure that you are using a client computer that has not already been activated by KMS. The **slmgr.vbs /dlv** command also indicates whether KMS has been used.
+> If you would like to see or mass change this, please consider to use [VAMT](https://docs.microsoft.com/en-us/windows/deployment/volume-activation/volume-activation-management-tool).
 
 ## See also
 
