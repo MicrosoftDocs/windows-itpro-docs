@@ -36,7 +36,7 @@ ms.technology: mde
 2. The results will include a maximum of 100,000 rows.
 3. The number of executions is limited per tenant:
    - API calls: Up to 45 calls per minute.
-   - Execution time: 10 minutes of running time every hour and 4 hours of running time a day.
+   - Execution time: 10 minutes of running time every hour and 3 hours of running time a day.
 4. The maximal execution time of a single request is 10 minutes.
 5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached. 
 
