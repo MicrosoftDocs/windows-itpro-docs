@@ -31,7 +31,11 @@ ms.technology: mde
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## API description
 Retrieves a collection of security recommendations related to a given device ID.
+
+## Limitations
+1. Rate limitations for this API are 50 calls per minute and 1500 calls per hour.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)

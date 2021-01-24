@@ -62,6 +62,11 @@ Name | Type | Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
+## Request URI parameters
+
+Name | Type | Description
+:---|:---|:---
+lookBackHours | Int32 | Defines the hours we search back to get the statistics. Defaults to 30 days. **Optional**.
 
 ## Request body
 Empty
@@ -77,7 +82,7 @@ If successful and file exists - 200 OK with statistical data in the body. If fil
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.microsoft.com/api/files/0991a395da64e1c5fbe8732ed11e6be064081d9f/stats
+GET https://api.securitycenter.microsoft.com/api/files/0991a395da64e1c5fbe8732ed11e6be064081d9f/stats?lookBackHours=48
 ```
 
 **Response**

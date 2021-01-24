@@ -62,6 +62,11 @@ Header | Value
 :---|:---
 Authorization | Bearer {token}. **Required**.
 
+## Request URI parameters
+
+Name | Type | Description
+:---|:---|:---
+lookBackHours | Int32 | Defines the hours we search back to get the statistics. Defaults to 30 days. **Optional**.
 
 ## Request body
 Empty
@@ -77,7 +82,7 @@ If successful and domain exists - 200 OK, with statistics object in the response
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats
+GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookBackHours=48
 ```
 
 **Response**

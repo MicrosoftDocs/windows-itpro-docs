@@ -30,7 +30,11 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Retrieves missing KBs (security updates) by device ID
+## API description
+Retrieves missing KBs (security updates) by device ID.
+
+## Limitations
+1. Rate limitations for this API are 50 calls per minute and 1500 calls per hour.
 
 ## HTTP request
 

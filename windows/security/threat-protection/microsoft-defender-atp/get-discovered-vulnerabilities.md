@@ -30,7 +30,11 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
+## API description
 Retrieves a collection of discovered vulnerabilities related to a given device ID.
+
+## Limitations
+1. Rate limitations for this API are 50 calls per minute and 1500 calls per hour.
 
 ## Permissions
 

@@ -63,6 +63,11 @@ Name | Type | Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
+## Request URI parameters
+
+Name | Type | Description
+:---|:---|:---
+lookBackHours | Int32 | Defines the hours we search back to get the statistics. Defaults to 30 days. **Optional**.
 
 ## Request body
 Empty
@@ -78,7 +83,7 @@ If successful and ip exists - 200 OK with statistical data in the body. IP do no
 Here is an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats
+GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats?lookBackHours=48
 ```
 
 **Response**
