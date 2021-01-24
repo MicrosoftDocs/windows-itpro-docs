@@ -77,7 +77,7 @@ If successful and alert and files exist - 200 OK. If alert not found - 404 Not F
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/files
 ```
 

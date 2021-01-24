@@ -88,7 +88,7 @@ If successful, this method returns 200 OK, and a list of [alert](alerts.md) obje
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
@@ -152,7 +152,7 @@ Here is an example of the response.
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 

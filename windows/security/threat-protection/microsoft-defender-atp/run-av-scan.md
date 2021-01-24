@@ -98,7 +98,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 ```json
 {
   "Comment": "Check machine for viruses due to alert 3212",
-  “ScanType”: “Full”
+  "ScanType": "Full"
 }
 ```
 

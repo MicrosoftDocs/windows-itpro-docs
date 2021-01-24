@@ -62,7 +62,7 @@ If successful, this method returns 200 OK, with the specified device missing kb 
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93dfa2550136057bff96/getmissingkbs 
 ```
 

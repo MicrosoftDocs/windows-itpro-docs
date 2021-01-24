@@ -81,7 +81,7 @@ If successful and domain exists - 200 OK, with statistics object in the response
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookBackHours=48
 ```
 

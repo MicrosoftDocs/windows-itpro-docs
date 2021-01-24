@@ -76,7 +76,7 @@ If successful and file exists - 200 OK with the [file](files.md) entity in the b
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
 ```
 

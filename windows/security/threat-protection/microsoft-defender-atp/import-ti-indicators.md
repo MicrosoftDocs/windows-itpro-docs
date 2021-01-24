@@ -79,9 +79,10 @@ Indicators | List<[Indicator](ti-indicator.md)> | List of [Indicators](ti-indica
 
 Here is an example of the request.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/indicators/import
 ```
+
 ```json
 {
 	"Indicators":

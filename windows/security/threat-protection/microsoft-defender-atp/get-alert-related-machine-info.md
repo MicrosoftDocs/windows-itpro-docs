@@ -79,7 +79,7 @@ If successful and alert and device exist - 200 OK. If alert not found or device 
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/machine
 ```
 

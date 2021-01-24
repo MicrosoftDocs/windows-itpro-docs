@@ -89,9 +89,10 @@ rbacGroupNames | String | Comma-separated list of RBAC group names the indicator
 
 Here is an example of the request.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/indicators
 ```
+
 ```json
 {
     "indicatorValue": "220e7d15b011d7fac48f2bd61114db1022197f7f",

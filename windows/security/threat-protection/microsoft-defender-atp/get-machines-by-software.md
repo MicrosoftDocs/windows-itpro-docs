@@ -67,7 +67,7 @@ If successful, this method returns 200 OK and a list of devices with the softwar
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machineReferences
 ```
 
@@ -76,7 +76,6 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machi
 Here is an example of the response.
 
 ```json
-
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#MachineReferences",
     "value": [

@@ -66,7 +66,7 @@ If successful, this method returns 200 OK with the installed software informatio
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/software
 ```
 

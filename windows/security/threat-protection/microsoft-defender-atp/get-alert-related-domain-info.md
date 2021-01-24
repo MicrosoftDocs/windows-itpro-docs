@@ -77,7 +77,7 @@ If successful and alert and domain exist - 200 OK. If alert not found - 404 Not 
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/domains
 ```
 

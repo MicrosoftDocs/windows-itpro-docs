@@ -78,7 +78,7 @@ If successful and alert and a user exists - 200 OK with user in the body. If ale
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/user
 ```
 

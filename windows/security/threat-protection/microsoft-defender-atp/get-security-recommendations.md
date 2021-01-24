@@ -70,7 +70,7 @@ If successful, this method returns 200 OK with the security recommendations in t
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/recommendations
 ```
 
@@ -79,7 +79,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 Here is an example of the response.
 
 
-```
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations",
     "value": [

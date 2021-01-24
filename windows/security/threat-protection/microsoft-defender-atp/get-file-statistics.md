@@ -81,7 +81,7 @@ If successful and file exists - 200 OK with statistical data in the body. If fil
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/files/0991a395da64e1c5fbe8732ed11e6be064081d9f/stats?lookBackHours=48
 ```
 
