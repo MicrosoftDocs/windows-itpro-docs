@@ -90,9 +90,7 @@ GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookB
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
 	"@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
 	"host": "example.com",

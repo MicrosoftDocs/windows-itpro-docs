@@ -91,10 +91,11 @@ If successful, this method returns 200 OK, and the [alert](alerts.md) entity in 
 
 Here is an example of the request.
 
-```
+```http
 PATCH https://api.securitycenter.microsoft.com/api/alerts/121688558380765161_2136280442
-Content-Type: application/json
+```
 
+```json
 {
     "status": "Resolved",
 	"assignedTo": "secop2@contoso.com",

@@ -92,9 +92,7 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 Here is an example of the response.
 
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines",
     "value": [

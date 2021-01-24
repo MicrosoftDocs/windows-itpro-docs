@@ -90,9 +90,7 @@ GET https://api.securitycenter.microsoft.com/api/files/0991a395da64e1c5fbe8732ed
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgFileStats",
     "sha1": "0991a395da64e1c5fbe8732ed11e6be064081d9f",

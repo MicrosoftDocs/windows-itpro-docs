@@ -87,9 +87,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c29
 Here is an example of the response.
 
 
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Users",
     "value": [

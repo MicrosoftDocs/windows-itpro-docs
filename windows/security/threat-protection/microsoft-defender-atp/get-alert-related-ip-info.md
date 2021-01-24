@@ -87,9 +87,7 @@ GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_213628044
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/$metadata#Ips",    
 	"value": [

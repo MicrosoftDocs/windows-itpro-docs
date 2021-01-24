@@ -83,7 +83,9 @@ Here is an example of the request.
 
 ```
 POST https://api.securitycenter.microsoft.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/collectInvestigationPackage
-Content-type: application/json
+```
+
+```json
 {
   "Comment": "Collect forensics due to alert 1234"
 }

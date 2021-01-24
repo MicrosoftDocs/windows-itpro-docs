@@ -86,9 +86,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_21362
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Files",
     "value": [

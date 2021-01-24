@@ -91,9 +91,7 @@ GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats?lookBac
 Here is an example of the response.
 
 
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgIPStats",
     "ipAddress": "10.209.67.177",
