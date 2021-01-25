@@ -1,6 +1,6 @@
 ---
 title: Get software by Id
-description: Retrieves a list of exposure scores by device group.
+description: Retrieves a list of sofware by ID.
 keywords: apis, graph api, supported apis, get, software, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
