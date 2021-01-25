@@ -231,6 +231,7 @@ Microsoft Defender for Endpoint offers a wide variety of options, including the 
 
 - [Cloud-delivered protection](#cloud-delivered-protection)
 - [Remediation for potentially unwanted applications](#remediation-for-potentially-unwanted-applications)
+- [Automated investigation and remediation](#automated-investigation-and-remediation)
 
 ### Cloud-delivered protection
 
