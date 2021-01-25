@@ -37,7 +37,7 @@ Submits or Updates batch of [Indicator](ti-indicator.md) entities.
 ## Limitations
 1. Rate limitations for this API are 30 calls per minute.
 2. There is a limit of 15,000 active [Indicators](ti-indicator.md) per tenant. 
-
+3. Maximum batch size for one API call is 500.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
@@ -79,9 +79,10 @@ Indicators | List<[Indicator](ti-indicator.md)> | List of [Indicators](ti-indica
 
 Here is an example of the request.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/indicators/import
 ```
+
 ```json
 {
 	"Indicators":

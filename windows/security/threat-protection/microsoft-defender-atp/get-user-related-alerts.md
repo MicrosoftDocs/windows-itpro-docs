@@ -81,6 +81,6 @@ If successful and user exists - 200 OK. If the user does not exist - 404 Not Fou
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/users/user1/alerts
 ```
