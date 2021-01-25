@@ -328,11 +328,13 @@ AIR capabilities in Defender for Endpoint are configured to one of several [leve
 - *Semi-automation* means some remediation actions are taken automatically, but other remediation actions await approval before being taken. 
 - *No automated response* (not recommended) means automated investigations do not run on your organization's devices, and no remediation actions are taken or pending as a result of automated investigation. 
 
-To review your AIR configuration and learn more about automation levels, see [Configure AIR capabilities in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation) and the [Levels of automation table](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels#levels-of-automation).
+To review your AIR configuration and learn more about automation levels, see:
+- [Configure AIR capabilities in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation)
+- [Levels of automation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels#levels-of-automation)
 
 ## Still need help?
 
-If you still need help after working through all the steps in this article, your best bet is to contact technical support.
+If you have worked through all the steps in this article and still need help, your best bet is to contact technical support.
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
