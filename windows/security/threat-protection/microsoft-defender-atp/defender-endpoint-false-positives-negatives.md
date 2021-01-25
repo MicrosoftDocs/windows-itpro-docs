@@ -296,7 +296,39 @@ We recommend using Microsoft Endpoint Manager to edit or set PUA protection sett
 
 ### Automated investigation and remediation
 
+[Automated investigation and remediation](automated-investigations.md) (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. As alerts are triggered, and an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. 
 
+Depending on the [level of automation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels) set for your organization, as well as other security settings, remediation actions can occur automatically or only upon approval by your security operations team. Examples of remediation actions include sending a file to quarantine, stopping a service, removing a scheduled task, and more. (See [Remediation actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#remediation-actions).) 
+
+All remediation actions, whether pending or completed, can be viewed in the Action Center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)). If necessary, your security operations team can undo a remediation action. And, you can set or change your level of automation.
+
+### Review actions that were taken
+
+1. Go to the Action Center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+2. Select the **History** tab. 
+3. Select an item to view more details about that remediation action. 
+
+### Undo remediation actions
+
+If you’ve determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. You can undo actions, such as isolating a device, restricting code execution, quarantining a file, removing a registry key, stopping a service, and more. 
+
+1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+2. Select the **History** tab.
+3. Select the actions that you want to undo.
+4. In the pane on the right side of the screen, select **Undo**.
+
+> [!TIP]
+> To learn more about remediation actions, see [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#remediation-actions).
+
+### Review and if needed, edit your automation level
+
+AIR capabilities in Defender for Endpoint are configured to one of several [levels of automation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels). 
+
+- *Full automation* (recommended) means remediation actions are taken automatically on artifacts determined to be malicious.
+- *Semi-automation* means some remediation actions are taken automatically, but other remediation actions await approval before being taken. 
+- *No automated response* (not recommended) means automated investigations do not run on your organization's devices, and no remediation actions are taken or pending as a result of automated investigation. 
+
+To review your AIR configuration and learn more about automation levels, see [Configure AIR capabilities in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation) and the [Levels of automation table](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels#levels-of-automation).
 
 ## Still need help?
 
