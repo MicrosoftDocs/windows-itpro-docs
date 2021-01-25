@@ -102,7 +102,7 @@
       - name: Configure Windows Hello for Business policy settings
         href: hello-cert-trust-policy-settings.md
     - name: Managing Windows Hello for Business in your organization
-       href: hello-manage-in-organization.md
+      href: hello-manage-in-organization.md
   - name: Windows Hello for Business Features
     items:
     - name: Conditional Access 

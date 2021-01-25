@@ -36,7 +36,7 @@ landingContent:
             url: hello-biometrics-in-enterprise.md
           - text: How Windows Hello for Business works
             url: hello-how-it-works.md
-        -linkListType: learn
+      - linkListType: learn
         links: 
           - text: Technical Deep Dive - Device Registration
             url: hello-how-it-works-device-registration.md 
