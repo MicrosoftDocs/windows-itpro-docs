@@ -205,7 +205,7 @@ If you have a file that was either wrongly detected as malicious or was missed, 
 
 ### Submit a fileless detection for analysis
 
-If something was detected as malware based on behavior, and you don’t have a file, you can submit your `Mpsupport.cab` file for analysis. You can get the .cab file by using the Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) tool.
+If something was detected as malware based on behavior, and you don’t have a file, you can submit your `Mpsupport.cab` file for analysis. You can get the *.cab* file by using the Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) tool on Windows 10.
 
 1.	Go to ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, and then run `MpCmdRun.exe` as an administrator.
 2.	Type `mpcmdrun.exe -GetFiles`, and then press **Enter**.
