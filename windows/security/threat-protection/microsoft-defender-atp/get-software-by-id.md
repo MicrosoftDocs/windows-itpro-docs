@@ -1,6 +1,6 @@
 ---
 title: Get software by Id
-description: Retrieves a list of exposure scores by device group.
+description: Retrieves a list of sofware by ID.
 keywords: apis, graph api, supported apis, get, software, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -67,7 +67,7 @@ If successful, this method returns 200 OK with the specified software data in th
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
 ```
 
@@ -76,7 +76,6 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
 Here is an example of the response.
 
 ```json
-
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Software/$entity",
     "id": "microsoft-_-edge",

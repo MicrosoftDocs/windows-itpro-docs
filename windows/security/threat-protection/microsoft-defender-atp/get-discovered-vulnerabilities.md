@@ -30,7 +30,11 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
+## API description
 Retrieves a collection of discovered vulnerabilities related to a given device ID.
+
+## Limitations
+1. Rate limitations for this API are 50 calls per minute and 1500 calls per hour.
 
 ## Permissions
 
@@ -67,7 +71,7 @@ If successful, this method returns 200 OK with the discovered vulnerability info
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/vulnerabilities
 ```
 
@@ -75,7 +79,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 
 Here is an example of the response.
 
-```
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(Analytics.Contracts.PublicAPI.PublicVulnerabilityDto)",
     "value": [
