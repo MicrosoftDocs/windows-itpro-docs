@@ -3,16 +3,17 @@ title: Troubleshooting Windows Firewall settings after a Windows upgrade
 description: Firewall settings lost on upgrade
 ms.reviewer: 
 ms.author: v-bshilpa
-ms.prod: w10
+ms.prod: m365-security
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: Benny-54
 manager: dansimp
 ms.collection: 
-- m365-security-compliance
-- m365-initiative-windows-security
+  - m365-security-compliance
+  - m365-initiative-windows-security
 ms.topic: troubleshooting
+ms.technology: mde
 ---
 
 # Troubleshooting Windows Firewall settings after a Windows upgrade

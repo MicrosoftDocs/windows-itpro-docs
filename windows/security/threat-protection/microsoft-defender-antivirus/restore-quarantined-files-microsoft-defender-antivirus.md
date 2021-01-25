@@ -3,7 +3,7 @@ title: Restore quarantined files in Microsoft Defender AV
 description: You can restore files and folders that were quarantined by Microsoft Defender AV.
 keywords: 
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.date: 05/20/2020
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Restore quarantined files in Microsoft Defender AV

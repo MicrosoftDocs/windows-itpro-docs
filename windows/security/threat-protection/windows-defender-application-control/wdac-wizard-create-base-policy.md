@@ -3,7 +3,7 @@ title: Windows Defender Application Control Wizard Base Policy Creation
 description: Creating new base application control policies with the Microsoft Windows Defender Application (WDAC) Wizard.
 keywords: allow listing, block listing, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,6 +16,7 @@ ms.author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ms.date: 10/14/2020
+ms.technology: mde
 ---
 
 # Creating a new Base Policy with the Wizard

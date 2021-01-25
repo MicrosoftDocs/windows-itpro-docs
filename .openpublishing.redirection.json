@@ -1535,6 +1535,11 @@
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-machinegroups-collection",
       "redirect_document_id": true
     },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machinegroups-collection.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list",
+      "redirect_document_id": false
+    },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/get-machinesecuritystates-collection",
@@ -15104,6 +15109,11 @@
       "source_path": "windows/security/threat-protection/windows-defender-atp/find-machine-info-by-ip-windows-defender-advanced-threat-protection-new.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/find-machine-info-by-ip",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/find-machine-info-by-ip.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/find-machines-by-ip",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-filemachineaction-object-windows-defender-advanced-threat-protection.md",

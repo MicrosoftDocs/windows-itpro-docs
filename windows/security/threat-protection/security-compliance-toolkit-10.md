@@ -2,7 +2,7 @@
 title: Microsoft Security Compliance Toolkit 1.0
 description: This article describes how to use the Security Compliance Toolkit in your organization
 keywords: virtualization, security, malware
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
@@ -13,6 +13,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/21/2019
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Microsoft Security Compliance Toolkit 1.0
@@ -47,6 +48,9 @@ The Security Compliance Toolkit consists of:
 
 - Microsoft Edge security baseline
     - Version 85
+    
+- Windows Update security baseline
+    - Windows 10 20H2 and below (October 2020 Update)
 
 - Tools
     - Policy Analyzer tool

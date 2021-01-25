@@ -3,7 +3,7 @@ title: Machine resource type
 description: Learn about the methods and properties of the Machine resource type in Microsoft Defender Advanced Threat Protection.
 keywords: apis, supported apis, get, machines
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Machine resource type
@@ -44,6 +45,7 @@ Method|Return Type |Description
 [Get security recommendations](get-security-recommendations.md) | [recommendation](recommendation.md) collection | Retrieves a collection of security recommendations related to a given machine ID.
 [Add or Remove machine tags](add-or-remove-machine-tags.md) | [machine](machine.md) | Add or Remove tag to a specific machine.
 [Find machines by IP](find-machines-by-ip.md) | [machine](machine.md) collection | Find machines seen with IP.
+[Find machines by tag](find-machines-by-tag.md) | [machine](machine.md) collection | Find machines by [Tag](machine-tags.md).
 [Get missing KBs](get-missing-kbs-machine.md) | KB collection | Get a list of missing KBs associated with the machine ID
 [Set device value](set-device-value.md)| [machine](machine.md) collection | Set the [value of a device](tvm-assign-device-value.md).
 
@@ -54,7 +56,7 @@ Property |   Type   |   Description
 id | String | [machine](machine.md) identity.
 computerDnsName | String | [machine](machine.md) fully qualified name.
 firstSeen | DateTimeOffset | First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.
-lastSeen | DateTimeOffset | Last date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.
+lastSeen | DateTimeOffset |Time and date of the last received full device report. A device typically sends a full report every 24 hours.
 osPlatform | String | Operating system platform.
 version | String | Operating system Version.
 osBuild | Nullable long | Operating system build number.

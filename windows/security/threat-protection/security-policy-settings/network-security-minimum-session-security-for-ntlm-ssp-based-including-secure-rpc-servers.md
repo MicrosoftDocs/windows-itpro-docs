@@ -4,7 +4,7 @@ description: Best practices and security considerations for the policy setting, 
 ms.assetid: c6a60c1b-bc8d-4d02-9481-f847a411b4fc
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network security: Minimum session security for NTLM SSP based (including secure RPC) servers

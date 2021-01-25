@@ -3,7 +3,7 @@ title: Block potentially unwanted applications with Microsoft Defender Antivirus
 description: Enable the potentially unwanted application (PUA) antivirus feature to block unwanted software such as adware.
 keywords: pua, enable, unwanted software, unwanted apps, adware, browser toolbar, detect, block, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,9 +11,10 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 audience: ITPro
-ms.date: 11/30/2020
+ms.date: 01/08/2021
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Detect and block potentially unwanted applications
@@ -99,9 +100,9 @@ See [Configure device restriction settings in Microsoft Intune](https://docs.mic
 
 #### Use Configuration Manager to configure PUA protection
 
-PUA protection is enabled by default in the Microsoft Endpoint Configuration Manager (Current Branch).
+PUA protection is enabled by default in the Microsoft Endpoint Manager (Current Branch).
 
-See [How to create and deploy antimalware policies: Scheduled scans settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring Microsoft Endpoint Configuration Manager (Current Branch).
+See [How to create and deploy antimalware policies: Scheduled scans settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring Microsoft Endpoint Manager (Current Branch).
 
 For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508770.aspx#BKMK_PUA).
 
@@ -110,19 +111,23 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 
 #### Use Group Policy to configure PUA protection
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure, and select **Edit**.
+1. Download and install [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
 
-2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
+2. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-3. Expand the tree to **Windows Components** > **Microsoft Defender Antivirus**.
+3. Select the Group Policy Object you want to configure, and then choose **Edit**.
 
-4. Double-click **Configure detection for potentially unwanted applications**.
+4. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
-5. Select **Enabled** to enable PUA protection.
+5. Expand the tree to **Windows Components** > **Microsoft Defender Antivirus**.
 
-6. In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting will work in your environment. Select **OK**.
+6. Double-click **Configure detection for potentially unwanted applications**.
 
-7. Deploy your Group Policy object as you usually do.
+7. Select **Enabled** to enable PUA protection.
+
+8. In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting will work in your environment. Select **OK**.
+
+9. Deploy your Group Policy object as you usually do.
 
 #### Use PowerShell cmdlets to configure PUA protection
 
@@ -153,7 +158,7 @@ See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](u
 
 ### View PUA events
 
-PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Configuration Manager or in Intune.
+PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune.
 
 You can turn on email notifications to receive mail about PUA detections.
 

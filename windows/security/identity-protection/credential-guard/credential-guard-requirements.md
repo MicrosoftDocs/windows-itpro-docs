@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -20,7 +20,7 @@ ms.reviewer:
 
 ## Applies to
 
-- Windows 10
+- Windows 10 Enterprise
 - Windows Server 2016
 
 For Windows Defender Credential Guard to provide protection, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements, which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally, Windows Defender Credential Guard blocks specific authentication capabilities, so applications that require such capabilities will break. We will refer to these requirements as [Application requirements](#application-requirements). Beyond these requirements, computers can meet additional hardware and firmware qualifications, and receive additional protections. Those computers will be more hardened against certain threats. For detailed information on baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017, refer to the tables in [Security Considerations](#security-considerations).
@@ -135,7 +135,7 @@ The following table lists qualifications for Windows 10, version 1703, which are
 
 |Protections for Improved Security|Description|Security Benefits
 |---|---|---|
-|Firmware: **VBS enablement of No-Execute (NX) protection for UEFI runtime services**|**Requirements**: </br> - VBS will enable NX protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable. UEFI runtime service must meet these requirements: </br> - Implement UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. All UEFI runtime service memory (code and data) must be described by this table. </br> - PE sections must be page-aligned in memory (not required for in non-volatile storage). </br> - The Memory Attributes Table needs to correctly mark code and data as RO/NX for configuration by the OS: </br> - All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both. </br> - No entries may be left with neither of the above attributes, indicating memory that is both executable and writable. Memory must be either readable and executable or writeable and non-executable. </br> (**SEE IMPORTANT INFORMATION AFTER THIS TABLE**)|Vulnerabilities in UEFI runtime, if any, will be blocked from compromising VBS (such as in functions like UpdateCapsule and SetVariable) </br> - Reduces the attack surface to VBS from system firmware.|
+|Firmware: **VBS enablement of No-Execute (NX) protection for UEFI runtime services**|**Requirements**: </br> - VBS will enable NX protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable. UEFI runtime service must meet these requirements: </br> - Implement UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. All UEFI runtime service memory (code and data) must be described by this table. </br> - PE sections must be page-aligned in memory (not required for in non-volatile storage). </br> - The Memory Attributes Table needs to correctly mark code and data as RO/NX for configuration by the OS: </br> - All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both. </br> - No entries may be left with neither of the above attributes, indicating memory that is both executable and writable. Memory must be either readable and executable or writable and non-executable. </br> (**SEE IMPORTANT INFORMATION AFTER THIS TABLE**)|Vulnerabilities in UEFI runtime, if any, will be blocked from compromising VBS (such as in functions like UpdateCapsule and SetVariable) </br> - Reduces the attack surface to VBS from system firmware.|
 |Firmware: **Firmware support for SMM protection**|**Requirements**: </br> - The [Windows SMM Security Mitigations Table (WSMT) specification](https://download.microsoft.com/download/1/8/A/18A21244-EB67-4538-BAA2-1A54E0E490B6/WSMT.docx) contains details of an ACPI table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features.|- Protects against potential vulnerabilities in UEFI runtime services, if any, will be blocked from compromising VBS (such as in functions like UpdateCapsule and SetVariable) </br> - Reduces the attack surface to VBS from system firmware. </br> - Blocks additional security attacks against SMM.|
 
 > [!IMPORTANT]
@@ -148,7 +148,7 @@ The following table lists qualifications for Windows 10, version 1703, which are
 >
 >   Please also note the following:
 >
->   - Do not use sections that are both writeable and executable
+>   - Do not use sections that are both writable and executable
 >
 >   - Do not attempt to directly modify executable system memory
 >

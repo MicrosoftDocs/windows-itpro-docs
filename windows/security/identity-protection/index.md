@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: danihalfin
+author: dansimp
 ms.author: daniha
 manager: dansimp
 ms.collection: M365-identity-device-management

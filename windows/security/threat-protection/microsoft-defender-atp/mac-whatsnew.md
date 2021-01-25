@@ -4,7 +4,7 @@ description: Learn about the major changes for previous versions of Microsoft De
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # What's new in Microsoft Defender for Endpoint for Mac
@@ -28,6 +29,10 @@ ms.topic: conceptual
 
 > [!IMPORTANT]
 > Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
+
+## 101.19.21
+
+- Bug fixes
 
 ## 101.15.26
 
