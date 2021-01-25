@@ -101,6 +101,9 @@ If you have alerts that are either false positives or that are true positives bu
 
 Other actions, such as starting an antivirus scan or collecting an investigation package, can occur through [Live Response](live-response.md). Those actions cannot be undone.
 
+> [!TIP]
+> See [Review remediation actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation).
+
 ### Review completed actions
 
 1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in. 
@@ -301,8 +304,8 @@ We recommend using Microsoft Endpoint Manager to edit or set PUA protection sett
 
 Depending on the [level of automation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels) set for your organization, as well as other security settings, remediation actions can occur automatically or only upon approval by your security operations team. 
 
-- [Learn more about automation levels](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels)
-- [Configure AIR capabilities in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation)
+- [Learn more about automation levels](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels); and then 
+- [Configure AIR capabilities in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation).
 
 
 ## Still need help?
