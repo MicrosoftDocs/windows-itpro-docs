@@ -92,3 +92,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 {
   "Comment": "Test investigation"
 }
+```
