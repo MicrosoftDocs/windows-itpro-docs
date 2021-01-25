@@ -79,7 +79,7 @@ If successful and alert and device exist - 200 OK. If alert not found or device 
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/machine
 ```
 
@@ -88,9 +88,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_21362
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines/$entity",
     "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",

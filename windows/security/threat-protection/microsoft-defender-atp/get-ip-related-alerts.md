@@ -79,6 +79,6 @@ If successful and IP exists - 200 OK with list of [alert](alerts.md) entities in
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/alerts
 ```

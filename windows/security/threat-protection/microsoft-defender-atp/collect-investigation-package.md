@@ -81,9 +81,11 @@ If successful, this method returns 201 - Created response code and [Machine Acti
 
 Here is an example of the request.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/collectInvestigationPackage
-Content-type: application/json
+```
+
+```json
 {
   "Comment": "Collect forensics due to alert 1234"
 }
