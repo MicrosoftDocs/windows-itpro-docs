@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/22/2021
+ms.date: 01/25/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -38,12 +38,14 @@ In endpoint protection, a false positive is an entity, such as a file or a proce
 3.	[Reviewing and defining exclusions](#part-3-review-or-define-exclusions-for-microsoft-defender-for-endpoint)
 4.	[Submitting an entity for analysis](#part-4-submit-a-file-for-analysis)
 5.	[Reviewing and adjusting your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
+6. [Getting help if you still have issues with false positives/negatives](#still-need-help)
 
-This article also includes information about [what to do if you still need help](#still-need-help) after taking the recommended steps to address false positives/negatives in your environment.
+> [!IMPORTANT]
+> This article is intended for security operators and administrators.
 
 ## Part 1: Review and classify alerts
 
-If your security operations team see an alert that was triggered because something was detected as malicious or suspicious that should not have been, you can suppress the alert for that entity. You can also suppress alerts that are not necessarily false positives, but are unimportant. We recommend that you classify alerts as well. 
+If you see an alert that was triggered because something was detected as malicious or suspicious that should not have been, you can suppress the alert for that entity. You can also suppress alerts that are not necessarily false positives, but are unimportant. We recommend that you classify alerts as well. 
 
 Managing your alerts and classifying true/false positives helps to train your threat protection solution and can reduce the number of false positives or false negatives over time. Taking these steps also helps reduce noise in your security operations dashboard so that your security team can focus on higher priority work items.
 
