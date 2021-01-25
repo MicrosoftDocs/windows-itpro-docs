@@ -89,7 +89,7 @@ landingContent:
           - text: Conditional Access 
             url: hello-feature-conditional-access.md
           - text: PIN Reset
-            url: hello-feature-pin-reset.m
+            url: hello-feature-pin-reset.md
           - text: Dual Enrollment
             url: hello-feature-dual-enrollment.md
           - text: Dynamic Lock
@@ -102,7 +102,7 @@ landingContent:
   # Card
   - title: Windows Hello for Business Troubleshooting
     linkLists:
-      - linkListType: concept
+      - linkListType: how-to-guide
         links:
           - text: Known Deployment Issues
             url: hello-deployment-issues.md
