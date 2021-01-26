@@ -31,16 +31,17 @@ ms.custom: FPFN
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
 
-In endpoint protection, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution. 
+In endpoint protection solutions, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution, including [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 
-If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), and you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), your security operations can take steps to address false positives or false negatives. These steps include:
+Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), your security operations can take steps to address false positives or false negatives:
 
-1.	[Reviewing and classifying alerts](#part-1-review-and-classify-alerts) 
-2.	[Reviewing remediation actions that were taken](#part-2-review-remediation-actions)
-3.	[Reviewing and defining exclusions](#part-3-review-or-define-exclusions)
-4.	[Submitting an entity for analysis](#part-4-submit-a-file-for-analysis)
-5.	[Reviewing and adjusting your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
-6. [Getting help if you still have issues with false positives/negatives](#still-need-help)
+1.	[Review and classify alerts](#part-1-review-and-classify-alerts) 
+2.	[Review remediation actions that were taken](#part-2-review-remediation-actions)
+3.	[Review and define exclusions](#part-3-review-or-define-exclusions)
+4.	[Submit an entity for analysis](#part-4-submit-a-file-for-analysis)
+5.	[Review and adjust your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
+
+And, you can [get help if you still have issues with false positives/negatives](#still-need-help) after performing the tasks described in this article.
 
 > [!NOTE]
 > This article is intended as guidance for security operators and security administrators who are using [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md).
@@ -63,7 +64,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
     | Alert status | What to do |
     |:---|:---|
     | The alert is accurate | Assign the alert, and then [investigate it](investigate-alerts.md) further. |
-    | The alert is a false positive | 1. Proceed to [classify the alert](#classify-an-alert) as a false positive, and then [suppress the alert](#suppress-an-alert). <p> 2. [Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint. <p> 3. [Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis). |
+    | The alert is a false positive | 1. [Classify the alert](#classify-an-alert) as a false positive. <br/>2. [Suppress the alert](#suppress-an-alert). <br/> 3. [Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint. <br/> 4. [Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis). |
     | The alert is accurate, but benign (unimportant) | [Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert). |
 
 ### Classify an alert
@@ -85,7 +86,7 @@ If you have alerts that are either false positives or that are true positives bu
 1.	Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2.	In the navigation pane, select **Alerts queue**.
 3.	Select an alert that you want to suppress to open its **Details** pane.
-4.	In the **Details** pane, choose the ellipsis (**...**), and then choose **Create a suppression rule**.
+4.	In the **Details** pane, choose the ellipsis (**...**), and then **Create a suppression rule**.
 5.	Specify all the settings for your suppression rule, and then choose **Save**.
 
 > [!TIP]
@@ -268,7 +269,7 @@ Microsoft Defender for Endpoint offers a wide variety of options, including the 
 
 ### Cloud-delivered protection
 
-Check your cloud-delivered protection level for Microsoft Defender Antivirus. By default, this is set to **Not configured**, which corresponds to a normal level of protection for most organizations. If your cloud-delivered protection is set to **High**, **High +**, or **Zero tolerance**, you might experience a higher number of false positives.
+Check your cloud-delivered protection level for Microsoft Defender Antivirus. By default, cloud-delivered protection is set to **Not configured**, which corresponds to a normal level of protection for most organizations. If your cloud-delivered protection is set to **High**, **High +**, or **Zero tolerance**, you might experience a higher number of false positives.
 
 > [!TIP]
 > To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
@@ -280,7 +281,7 @@ We recommend using Microsoft Endpoint Manager to edit or set your cloud-delivere
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 2. Choose **Endpoint security** > **Antivirus** and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 3. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
-4. Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting this to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
+4. Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting cloud-delivered protection to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
 5. Choose **Review + save**, and then **Save**.
 
 #### Use Microsoft Endpoint Manager to set cloud-delivered protection settings (for a new policy)
@@ -300,7 +301,7 @@ We recommend using Microsoft Endpoint Manager to edit or set your cloud-delivere
 
 Potentially unwanted applications (PUA) are a category of software that can cause devices to run slowly, display unexpected ads, or install other software that might be unexpected or unwanted. Examples of PUA include advertising software, bundling software, and evasion software that behaves differently with security products. Although PUA is not considered malware, some kinds of software are PUA based on their behavior and reputation.
  
-Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If this is happening, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus. 
+Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If necessary, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus. 
 
 We recommend using Microsoft Endpoint Manager to edit or set PUA protection settings. 
 
