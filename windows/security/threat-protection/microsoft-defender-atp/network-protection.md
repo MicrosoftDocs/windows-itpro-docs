@@ -45,7 +45,7 @@ You can also use [audit mode](audit-windows-defender.md) to evaluate how Network
 
 ## Requirements
 
-Network protection requires Windows 10 Pro, Enterprise E3, E5, and Microsoft Defender AV real-time protection.
+Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender AV real-time protection.
 
 Windows 10 version | Microsoft Defender Antivirus
 -|-
