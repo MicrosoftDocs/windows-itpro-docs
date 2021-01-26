@@ -125,7 +125,7 @@ To verify your Active Directory-based activation configuration, complete the fol
 
     > [!NOTE]
     > If you are using both KMS and Active Directory-based activation, it may be difficult to see whether a client has been activated by KMS or by Active Directory-based activation. Consider disabling KMS during the test, or make sure that you are using a client computer that has not already been activated by KMS. The **slmgr.vbs /dlv** command also indicates whether KMS has been used.
-> If you would like to see or mass change this, please consider to use [VAMT](https://docs.microsoft.com/en-us/windows/deployment/volume-activation/volume-activation-management-tool).
+> To manage individual activations or apply multiple (mass) activations, please consider using [VAMT](https://docs.microsoft.com/en-us/windows/deployment/volume-activation/volume-activation-management-tool).
 
 ## See also
 
