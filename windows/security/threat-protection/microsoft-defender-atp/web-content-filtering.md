@@ -54,7 +54,7 @@ Before trying out this feature, make sure you have the following requirements:
 - Access to Microsoft Defender Security Center portal
 - Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update.
 
-If Windows Defender SmartScreen isn't turned on, Network Protection will take over the blocking. It requires [enabling Network Protection](enable-network-protection.md) on the device.  Chrome, Firefox, Brave and Opera are currently 3rd party browsers in which the feature is enabled. 
+If Windows Defender SmartScreen isn't turned on, Network Protection will take over the blocking. It requires [enabling Network Protection](enable-network-protection.md) on the device. Chrome, Firefox, Brave, and Opera are currently 3rd party browsers in which this feature is enabled.
 
 ## Data handling
 
