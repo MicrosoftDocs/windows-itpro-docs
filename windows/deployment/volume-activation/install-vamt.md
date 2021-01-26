@@ -50,7 +50,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 ### Install VAMT using the ADK
 
 1. Download the latest version of [Windows 10 ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install).
-It is recommended to uninstall ADK and install the latest version, if you use a previous version. Existing data of VAMT is maintained in the respective VAMT database. 
+   If an older version is already installed, it is recommended to uninstall the older ADK and install the latest version. Existing VAMT data is maintained in the VAMT database.
 2. Enter an install location or use the default path, and then select **Next**.
 3. Select a privacy setting, and then select **Next**.
 4. Accept the license terms.
