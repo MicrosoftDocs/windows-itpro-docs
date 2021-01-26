@@ -300,7 +300,7 @@ We recommend using Microsoft Endpoint Manager to edit or set your cloud-delivere
 
 Potentially unwanted applications (PUA) are a category of software that can cause devices to run slowly, display unexpected ads, or install other software that might be unexpected or unwanted. Examples of PUA include advertising software, bundling software, and evasion software that behaves differently with security products. Although PUA is not considered malware, some kinds of software are PUA based on their behavior and reputation.
  
-Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If this is happening, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus. 
+Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If necessary, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus. 
 
 We recommend using Microsoft Endpoint Manager to edit or set PUA protection settings. 
 
