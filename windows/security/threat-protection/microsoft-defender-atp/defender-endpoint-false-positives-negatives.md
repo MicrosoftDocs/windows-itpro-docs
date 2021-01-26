@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/25/2021
+ms.date: 01/26/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -35,7 +35,7 @@ In endpoint protection, a false positive is an entity, such as a file or a proce
 
 1.	[Reviewing and classifying alerts](#part-1-review-and-classify-alerts) 
 2.	[Reviewing remediation actions that were taken](#part-2-review-remediation-actions)
-3.	[Reviewing and defining exclusions](#part-3-review-or-define-exclusions-for-microsoft-defender-for-endpoint)
+3.	[Reviewing and defining exclusions](#part-3-review-or-define-exclusions)
 4.	[Submitting an entity for analysis](#part-4-submit-a-file-for-analysis)
 5.	[Reviewing and adjusting your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
 6. [Getting help if you still have issues with false positives/negatives](#still-need-help)
@@ -131,7 +131,7 @@ If you find that a remediation action was taken automatically on an entity that 
 2.	On the **History** tab, select the actions that you want to undo.
 3.	In the pane on the right side of the screen, select **Undo**.
 
-## Part 3: Review or define exclusions for Microsoft Defender for Endpoint
+## Part 3: Review or define exclusions
 
 An exclusion is an entity that you specify as an exception to remediation actions. The excluded entity might still get detected, but no remediation actions are taken on that entity. That is, the detected file or process won’t be stopped, sent to quarantine, removed, or otherwise changed by Microsoft Defender for Endpoint. 
 
@@ -306,6 +306,9 @@ Depending on the [level of automation](https://docs.microsoft.com/windows/securi
 
 - [Learn more about automation levels](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels); and then 
 - [Configure AIR capabilities in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation).
+
+> [!TIP]
+> We recommend using *Full automation* for automated investigation and remediation. Don't turn these capabilities off because of a false positive. Instead, use ["allow" indicators to define exceptions](#indicators-for-microsoft-defender-for-endpoint), and keep automated investigation and remediation set to take appropriate actions automatically. Following [this guidance](automation-levels.md#levels-of-automation) helps reduce the number of alerts your security operations team must handle. 
 
 
 ## Still need help?
