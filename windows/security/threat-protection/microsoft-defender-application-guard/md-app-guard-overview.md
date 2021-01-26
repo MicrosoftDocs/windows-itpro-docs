@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 12/17/2020
+ms.date: 01/27/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
