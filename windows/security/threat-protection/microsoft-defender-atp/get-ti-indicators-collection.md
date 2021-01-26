@@ -78,7 +78,7 @@ If successful, this method returns 200, Ok response code with a collection of [I
 
 Here is an example of a request that gets all Indicators
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/indicators
 ```
 
@@ -86,9 +86,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 Here is an example of the response.
 
-```
-HTTP/1.1 200 Ok
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Indicators",
     "value": [
@@ -141,7 +139,7 @@ Content-type: application/json
 
 Here is an example of a request that gets all Indicators with 'AlertAndBlock' action 
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'AlertAndBlock'
 ```
 
@@ -149,9 +147,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'A
 
 Here is an example of the response.
 
-```
-HTTP/1.1 200 Ok
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Indicators",
     "value": [

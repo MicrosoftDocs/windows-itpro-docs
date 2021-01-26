@@ -62,7 +62,7 @@ version | String | Operating system Version.
 osBuild | Nullable long | Operating system build number.
 lastIpAddress | String | Last IP on local NIC on the [machine](machine.md).
 lastExternalIpAddress | String | Last IP through which the [machine](machine.md) accessed the internet.
-healthStatus | Enum | [machine](machine.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData" and "NoSensorDataImpairedCommunication"
+healthStatus | Enum | [machine](machine.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" and "Unknown". 
 rbacGroupName | String | Machine group Name.
 rbacGroupId | Int | Machine group unique ID.
 riskScore | Nullable Enum | Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.

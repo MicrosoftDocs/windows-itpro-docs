@@ -80,6 +80,6 @@ If the timestamp is not in the past 30 days - 400 Bad Request.
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='10.248.240.38',timestamp=2019-09-22T08:44:05Z)
 ```
