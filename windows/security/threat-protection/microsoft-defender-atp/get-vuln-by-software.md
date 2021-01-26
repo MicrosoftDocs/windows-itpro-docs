@@ -67,7 +67,7 @@ If successful, this method returns 200 OK with a a list of vulnerabilities expos
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities 
 ```
 
@@ -76,7 +76,6 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulne
 Here is an example of the response.
 
 ```json
-
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(Analytics.Contracts.PublicAPI.PublicVulnerabilityDto)",
     "value": [

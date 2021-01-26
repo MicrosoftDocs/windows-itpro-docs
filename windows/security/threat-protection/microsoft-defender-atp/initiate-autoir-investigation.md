@@ -84,9 +84,12 @@ If successful, this method returns 201 - Created response code and [Investigatio
 
 Here is an example of the request.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation
-Content-type: application/json
+```
+
+```json
 {
-  "Comment": "Test investigation",
+  "Comment": "Test investigation"
 }
+```

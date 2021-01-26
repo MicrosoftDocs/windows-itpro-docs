@@ -31,7 +31,11 @@ ms.technology: mde
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## API description
 Retrieves a collection of security recommendations related to a given device ID.
+
+## Limitations
+1. Rate limitations for this API are 50 calls per minute and 1500 calls per hour.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
@@ -66,7 +70,7 @@ If successful, this method returns 200 OK with the security recommendations in t
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/recommendations
 ```
 
@@ -75,7 +79,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 Here is an example of the response.
 
 
-```
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations",
     "value": [

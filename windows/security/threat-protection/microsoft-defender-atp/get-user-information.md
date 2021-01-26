@@ -64,9 +64,8 @@ If successful and user exists - 200 OK with [user](user.md) entity in the body. 
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/users/user1
-Content-type: application/json
 ```
 
 **Response**
@@ -74,9 +73,7 @@ Content-type: application/json
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Users/$entity",
     "id": "user1",
