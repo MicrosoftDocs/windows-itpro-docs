@@ -79,11 +79,11 @@ You can review the Windows event log to see events that are created when network
 
 3. This will create a custom view that filters to only show the following events related to network protection:
 
-   Event ID | Description
-   -|-
-   5007 | Event when settings are changed
-   1125 | Event when network protection fires in audit mode
-   1126 | Event when network protection fires in block mode
+   | Event ID | Description |
+   |:---|:---|
+   | 5007 | Event when settings are changed |
+   | 1125 | Event when network protection fires in audit mode |
+   | 1126 | Event when network protection fires in block mode |
 
 ## Related articles
 
