@@ -63,7 +63,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
     | Alert status | What to do |
     |:---|:---|
     | The alert is accurate | Assign the alert, and then [investigate it](investigate-alerts.md) further. |
-    | The alert is a false positive | 1. Proceed to [classify the alert](#classify-an-alert) as a false positive, and then [suppress the alert](#suppress-an-alert). <p> 2. [Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint. <p> 3. [Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis). |
+    | The alert is a false positive | 1. [Classify the alert](#classify-an-alert) as a false positive. <br/>2. [Suppress the alert](#suppress-an-alert). <br/> 3. [Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint. <br/> 4. [Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis). |
     | The alert is accurate, but benign (unimportant) | [Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert). |
 
 ### Classify an alert
