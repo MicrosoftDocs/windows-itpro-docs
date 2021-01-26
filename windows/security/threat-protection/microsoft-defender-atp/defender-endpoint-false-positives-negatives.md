@@ -85,7 +85,7 @@ If you have alerts that are either false positives or that are true positives bu
 1.	Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2.	In the navigation pane, select **Alerts queue**.
 3.	Select an alert that you want to suppress to open its **Details** pane.
-4.	In the **Details** pane, choose the ellipsis (**...**), and then choose **Create a suppression rule**.
+4.	In the **Details** pane, choose the ellipsis (**...**), and then **Create a suppression rule**.
 5.	Specify all the settings for your suppression rule, and then choose **Save**.
 
 > [!TIP]
