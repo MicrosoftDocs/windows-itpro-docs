@@ -33,7 +33,12 @@ ms.custom: FPFN
 
 In endpoint protection, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution. 
 
+![Definition of false positive and negatives in Windows Defender for Endpoints](images/false-positives-overview.png)
+
 If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), and you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), your security operations can take steps to address false positives or false negatives. These steps include:
+
+![Steps to address false positives and negatives](images/false-positives-step-diagram.png)
+
 
 1.	[Reviewing and classifying alerts](#part-1-review-and-classify-alerts) 
 2.	[Reviewing remediation actions that were taken](#part-2-review-remediation-actions)
@@ -184,9 +189,12 @@ To specify entities as exclusions for Microsoft Defender for Endpoint, you can c
 - [Automated investigation & remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 You can create indicators for:
+
 - [Files](#indicators-for-files)
 - [IP addresses, URLs, and domains](#indicators-for-ip-addresses-urls-or-domains)
 - [Application certificates](#indicators-for-application-certificates)
+
+![Indicator types diagram](images/false-positives-indicators.png)
 
 #### Indicators for files
 
