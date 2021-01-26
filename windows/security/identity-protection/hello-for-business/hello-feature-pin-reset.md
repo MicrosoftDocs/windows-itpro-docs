@@ -109,7 +109,7 @@ On-premises deployments provide users with the ability to reset forgotten PINs e
  3. Follow the instructions provided by the provisioning process
  4. When finished, unlock your desktop using your newly created PIN.
 
-you may find PIN reset only works from settings post login and This lock screen PIN reset will not work if you have any matching limitation of SSPR password reset from lock screen. refer the below doc
+you may find PIN reset only works from settings post login and "lock screen" PIN reset function will not work if you have any matching limitation of SSPR password reset from lock screen. refer the below doc
 https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-sspr-windows#general-limitations
 
 > [!NOTE]
