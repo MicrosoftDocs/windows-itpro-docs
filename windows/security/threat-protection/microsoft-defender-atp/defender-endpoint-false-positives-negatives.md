@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/25/2021
+ms.date: 01/26/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -35,7 +35,7 @@ In endpoint protection, a false positive is an entity, such as a file or a proce
 
 1.	[Reviewing and classifying alerts](#part-1-review-and-classify-alerts) 
 2.	[Reviewing remediation actions that were taken](#part-2-review-remediation-actions)
-3.	[Reviewing and defining exclusions](#part-3-review-or-define-exclusions-for-microsoft-defender-for-endpoint)
+3.	[Reviewing and defining exclusions](#part-3-review-or-define-exclusions)
 4.	[Submitting an entity for analysis](#part-4-submit-a-file-for-analysis)
 5.	[Reviewing and adjusting your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
 6. [Getting help if you still have issues with false positives/negatives](#still-need-help)
@@ -131,7 +131,7 @@ If you find that a remediation action was taken automatically on an entity that 
 2.	On the **History** tab, select the actions that you want to undo.
 3.	In the pane on the right side of the screen, select **Undo**.
 
-## Part 3: Review or define exclusions for Microsoft Defender for Endpoint
+## Part 3: Review or define exclusions
 
 An exclusion is an entity that you specify as an exception to remediation actions. The excluded entity might still get detected, but no remediation actions are taken on that entity. That is, the detected file or process won’t be stopped, sent to quarantine, removed, or otherwise changed by Microsoft Defender for Endpoint. 
 
