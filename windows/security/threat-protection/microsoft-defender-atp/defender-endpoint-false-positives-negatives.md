@@ -208,9 +208,7 @@ Custom network indicators are turned on in the Microsoft Defender Security Cente
 
 #### Indicators for application certificates 
 
-When you [create an "allow" indicator for an application certificate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates)**, it helps prevent applications, such as internally developed applications, that you organization uses from being blocked.
-
-`.CER` or `.PEM` file extensions are supported. A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft. Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine Trusted Root Certification Authorities).  
+When you [create an "allow" indicator for an application certificate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates)**, it helps prevent applications, such as internally developed applications, that your organization uses from being blocked. `.CER` or `.PEM` file extensions are supported.   
 
 Before you create indicators for application certificates, make sure the following requirements are met:
 - Microsoft Defender Antivirus is configured with cloud-based protection enabled (See [Manage cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).)
