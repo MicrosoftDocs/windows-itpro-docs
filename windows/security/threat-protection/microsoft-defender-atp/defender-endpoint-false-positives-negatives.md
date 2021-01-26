@@ -307,6 +307,9 @@ Depending on the [level of automation](https://docs.microsoft.com/windows/securi
 - [Learn more about automation levels](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels); and then 
 - [Configure AIR capabilities in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation).
 
+> [!TIP]
+> We recommend using *Full automation* for automated investigation and remediation. Don't turn these capabilities off because of a false positive. Instead, use ["allow" indicators to define exceptions](#indicators-for-microsoft-defender-for-endpoint), and keep automated investigation and remediation set to take appropriate actions automatically. Following [this guidance](automation-levels.md#levels-of-automation) helps reduce the number of alerts your security operations team must handle. 
+
 
 ## Still need help?
 
