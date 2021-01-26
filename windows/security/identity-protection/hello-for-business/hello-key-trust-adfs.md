@@ -298,7 +298,13 @@ Sign-in the domain controller or administrative workstation with domain administ
 3. In the navigation pane, select the node that has the name of your internal Active Directory domain name.
 4. In the navigation pane, right-click the domain name node and click **New Host (A or AAAA)**.
 5. In the **name** box, type the name of the federation service. In the **IP address** box, type the IP address of your federation server. Click **Add Host**. 
+6. Right-click the domain_name node, and then click New Alias (CNAME).
+7. In the New Resource Record dialog box, type enterpriseregistration in the Alias name box.
+8. In the fully qualified domain name (FQDN) of the target host box, type federation_service_farm_name.domain_name.com, and then click OK.
 6. Close the DNS Management console 
+
+Note: if your forest has multiple UPN suffix. please make sure, you have enterpriseregistration.upnsuffix.com present for each suffix 
+
 
 ## Configure the Intranet Zone to include the federation service
 
