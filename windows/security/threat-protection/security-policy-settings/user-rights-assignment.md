@@ -70,6 +70,7 @@ The following table links to each security policy setting and provides the const
 | [Manage auditing and security log](manage-auditing-and-security-log.md)| SeSecurityPrivilege| 
 | [Modify an object label](modify-an-object-label.md) | SeRelabelPrivilege| 
 | [Modify firmware environment values](modify-firmware-environment-values.md)| SeSystemEnvironmentPrivilege| 
+| [Obtain an impersonation token for another user in the same session](impersonate-a-client-after-authentication.md) | SeDelegateSessionUserImpersonatePrivilege|
 | [Perform volume maintenance tasks](perform-volume-maintenance-tasks.md) | SeManageVolumePrivilege| 
 | [Profile single process](profile-single-process.md) | SeProfileSingleProcessPrivilege| 
 | [Profile system performance](profile-system-performance.md) | SeSystemProfilePrivilege| 
@@ -79,6 +80,7 @@ The following table links to each security policy setting and provides the const
 | [Shut down the system](shut-down-the-system.md) | SeShutdownPrivilege| 
 | [Synchronize directory service data](synchronize-directory-service-data.md)| SeSyncAgentPrivilege| 
 | [Take ownership of files or other objects](take-ownership-of-files-or-other-objects.md) | SeTakeOwnershipPrivilege| 
+
  
 ## Related topics
 

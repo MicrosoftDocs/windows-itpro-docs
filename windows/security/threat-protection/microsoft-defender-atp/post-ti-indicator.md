@@ -33,7 +33,7 @@ ms.technology: mde
 
 ## API description
 Submits or Updates new [Indicator](ti-indicator.md) entity.
-<br>CIDR notation for IPs is supported.
+<br>CIDR notation for IPs is not supported.
 
 ## Limitations
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
@@ -89,9 +89,11 @@ rbacGroupNames | String | Comma-separated list of RBAC group names the indicator
 
 Here is an example of the request.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/indicators
-Content-type: application/json
+```
+
+```json
 {
     "indicatorValue": "220e7d15b011d7fac48f2bd61114db1022197f7f",
     "indicatorType": "FileSha1",

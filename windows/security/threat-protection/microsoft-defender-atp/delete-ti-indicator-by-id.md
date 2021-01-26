@@ -73,6 +73,6 @@ If Indicator with the specified id was not found - 404 Not Found.
 
 Here is an example of the request.
 
-```
+```http
 DELETE https://api.securitycenter.microsoft.com/api/indicators/995
 ```

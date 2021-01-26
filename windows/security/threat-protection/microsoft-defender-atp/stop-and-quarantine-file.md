@@ -84,9 +84,11 @@ If successful, this method returns 201 - Created response code and [Machine Acti
 
 Here is an example of the request.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/StopAndQuarantineFile 
-Content-type: application/json
+```
+
+```json
 {
   "Comment": "Stop and quarantine file on machine due to alert 441688558380765161_2136280442",
   "Sha1": "87662bc3d60e4200ceaf7aae249d1c343f4b83c9"

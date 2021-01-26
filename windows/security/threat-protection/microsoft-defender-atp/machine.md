@@ -45,6 +45,7 @@ Method|Return Type |Description
 [Get security recommendations](get-security-recommendations.md) | [recommendation](recommendation.md) collection | Retrieves a collection of security recommendations related to a given machine ID.
 [Add or Remove machine tags](add-or-remove-machine-tags.md) | [machine](machine.md) | Add or Remove tag to a specific machine.
 [Find machines by IP](find-machines-by-ip.md) | [machine](machine.md) collection | Find machines seen with IP.
+[Find machines by tag](find-machines-by-tag.md) | [machine](machine.md) collection | Find machines by [Tag](machine-tags.md).
 [Get missing KBs](get-missing-kbs-machine.md) | KB collection | Get a list of missing KBs associated with the machine ID
 [Set device value](set-device-value.md)| [machine](machine.md) collection | Set the [value of a device](tvm-assign-device-value.md).
 
@@ -61,7 +62,7 @@ version | String | Operating system Version.
 osBuild | Nullable long | Operating system build number.
 lastIpAddress | String | Last IP on local NIC on the [machine](machine.md).
 lastExternalIpAddress | String | Last IP through which the [machine](machine.md) accessed the internet.
-healthStatus | Enum | [machine](machine.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData" and "NoSensorDataImpairedCommunication"
+healthStatus | Enum | [machine](machine.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" and "Unknown". 
 rbacGroupName | String | Machine group Name.
 rbacGroupId | Int | Machine group unique ID.
 riskScore | Nullable Enum | Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.

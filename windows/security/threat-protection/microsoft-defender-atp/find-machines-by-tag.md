@@ -1,9 +1,9 @@
 ---
-title: Get user-related machines API
-description: Learn how to use the Get user-related machines API to retrieve a collection of devices related to a user ID in Microsoft Defender Advanced Threat Protection.
-keywords: apis, graph api, supported apis, get, user, user related alerts
+title: Find devices by tag API
+description: Find all devices that contain specifc tag 
+keywords: apis, supported apis, get, device, find, find device, by tag, tag
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +12,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
-# Get user-related machines API
+# Find devices by tag API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,8 +31,8 @@ ms.technology: mde
 
 
 ## API description
-Retrieves a collection of devices related to a given user ID.
-
+Find [Machines](machine.md) by [Tag](machine-tags.md).
+<br>```startswith``` query is supported. 
 
 ## Limitations
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
@@ -51,16 +50,14 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data'. For more information, see [Create and manage roles](user-roles.md) )
->- Response will include only devices that the user can access, based on device group settings. For more information, see [Create and manage device groups](machine-groups.md).
+> - Response will include only devices that the user have access to based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> - Response will include only devices that the user have access to based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
-GET /api/users/{id}/machines
+GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 ```
-
-**The ID is not the full UPN, but only the user name. (for example, to retrieve machines for user1@contoso.com use /api/users/user1/machines)**
-
 
 ## Request headers
 
@@ -68,13 +65,18 @@ Name | Type | Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
+## Request URI parameters
+
+Name | Type | Description
+:---|:---|:---
+tag | String | The tag name. **Required**.
+useStartsWithFilter | Boolean | When set to true, the search will find all devices with tag name that starts with the given tag in the query. Defaults to false. **Optional**.
 
 ## Request body
 Empty
 
 ## Response
-If successful and user exists - 200 OK with list of [machine](machine.md) entities in the body. If user does not exist - 404 Not Found.
-
+If successful - 200 OK with list of the machines in the response body.
 
 ## Example
 
@@ -83,5 +85,5 @@ If successful and user exists - 200 OK with list of [machine](machine.md) entiti
 Here is an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/users/user1/machines
+GET https://api.securitycenter.microsoft.com/api/machines/findbytag?tag=testTag&useStartsWithFilter=true
 ```

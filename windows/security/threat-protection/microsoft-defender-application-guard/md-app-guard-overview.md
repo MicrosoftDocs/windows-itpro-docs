@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 12/17/2020
+ms.date: 01/27/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -53,3 +53,4 @@ Application Guard has been created to target several types of devices:
 | [Microsoft Defender Application Guard Extension for web browsers](md-app-guard-browser-extension.md) | Describes the Application Guard extension for Chrome and Firefox, including known issues, and a troubleshooting guide |
 | [Microsoft Defender Application Guard for Microsoft Office](https://docs.microsoft.com/microsoft-365/security/office-365-security/install-app-guard) | Describes Application Guard for Microsoft Office, including minimum hardware requirements, configuration, and a troubleshooting guide |
 |[Frequently asked questions - Microsoft Defender Application Guard](faq-md-app-guard.md)|Provides answers to frequently asked questions about Application Guard features, integration with the Windows operating system, and general configuration.|
+|[Use a network boundary to add trusted sites on Windows devices in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/network-boundary-windows)|Network boundary, a feature that helps you protect your environment from sites that aren't trusted by your organization.|
