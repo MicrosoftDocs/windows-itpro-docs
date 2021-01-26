@@ -109,6 +109,9 @@ On-premises deployments provide users with the ability to reset forgotten PINs e
  3. Follow the instructions provided by the provisioning process
  4. When finished, unlock your desktop using your newly created PIN.
 
+you may find PIN reset only works from settings post login and This lock screen PIN reset will not work if you have any matching limitation of SSPR password reset from lock screen. refer the below doc
+https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-sspr-windows#general-limitations
+
 >[!NOTE]
 > Visit the [Windows Hello for Business Videos](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-videos.md) page and watch the [Windows Hello for Business forgotten PIN user experience](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-forgotten-pin-user-experience) video.
 
