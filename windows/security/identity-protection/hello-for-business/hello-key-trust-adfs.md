@@ -303,8 +303,8 @@ Sign-in the domain controller or administrative workstation with domain administ
 8. In the fully qualified domain name (FQDN) of the target host box, type federation_service_farm_name.domain_name.com, and then click OK.
 6. Close the DNS Management console 
 
-Note: if your forest has multiple UPN suffix. please make sure, you have enterpriseregistration.upnsuffix.com present for each suffix 
-
+> [!NOTE]
+> If your forest has multiple UPN suffixes, please make sure that `enterpriseregistration.upnsuffix.com` is present for each suffix.
 
 ## Configure the Intranet Zone to include the federation service
 
@@ -348,5 +348,4 @@ Before you continue with the deployment, validate your deployment progress by re
 3. Prepare and Deploy Windows Server 2016 Active Directory Federation Services (*You are here*)
 4. [Validate and Deploy Multifactor Authentication Services (MFA)](hello-key-trust-validate-deploy-mfa.md)
 5. [Configure Windows Hello for Business Policy settings](hello-key-trust-policy-settings.md)
-
 
