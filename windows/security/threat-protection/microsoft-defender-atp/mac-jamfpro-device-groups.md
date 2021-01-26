@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Set up Microsoft c for macOS device groups in Jamf Pro
+# Set up Microsoft Defender for Endpoint for macOS device groups in Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

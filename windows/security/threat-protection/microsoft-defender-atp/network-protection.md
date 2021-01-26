@@ -45,13 +45,13 @@ You can also use [audit mode](audit-windows-defender.md) to evaluate how Network
 
 ## Requirements
 
-Network protection requires Windows 10 Pro, Enterprise E3, E5, and Microsoft Defender AV real-time protection.
+Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender Antivirus real-time protection.
 
-Windows 10 version | Microsoft Defender Antivirus
--|-
-Windows 10 version 1709 or later | [Microsoft Defender AV real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled
+| Windows 10 version | Microsoft Defender Antivirus |
+|:---|:---|
+| Windows 10 version 1709 or later | [Microsoft Defender AV real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled |
 
-After you have enabled the services, you may need to configure your network or firewall to allow the connections between the services and your endpoints.  
+After you have enabled the services, you might need to configure your network or firewall to allow the connections between the services and your endpoints.  
 
 - .smartscreen.microsoft.com
 - .smartscreen-prod.microsoft.com
@@ -79,11 +79,11 @@ You can review the Windows event log to see events that are created when network
 
 3. This will create a custom view that filters to only show the following events related to network protection:
 
-   Event ID | Description
-   -|-
-   5007 | Event when settings are changed
-   1125 | Event when network protection fires in audit mode
-   1126 | Event when network protection fires in block mode
+   | Event ID | Description |
+   |:---|:---|
+   | 5007 | Event when settings are changed |
+   | 1125 | Event when network protection fires in audit mode |
+   | 1126 | Event when network protection fires in block mode |
 
 ## Related articles
 
