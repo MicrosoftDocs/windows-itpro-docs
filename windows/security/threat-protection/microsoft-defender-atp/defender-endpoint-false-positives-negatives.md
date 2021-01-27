@@ -33,6 +33,8 @@ ms.custom: FPFN
 
 In endpoint protection solutions, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution, including [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 
+![Definition of false positive and negatives in Windows Defender for Endpoints](images/false-positives-overview.png)
+
 Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), your security operations can take steps to address them by using the following process:
 
 1.	[Review and classify alerts](#part-1-review-and-classify-alerts) 
@@ -42,6 +44,8 @@ Fortunately, steps can be taken to address and reduce these kinds of issues. If 
 5.	[Review and adjust your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
 
 And, you can [get help if you still have issues with false positives/negatives](#still-need-help) after performing the tasks described in this article.
+
+![Steps to address false positives and negatives](images/false-positives-step-diagram.png)
 
 > [!NOTE]
 > This article is intended as guidance for security operators and security administrators who are using [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md).
@@ -189,9 +193,12 @@ To specify entities as exclusions for Microsoft Defender for Endpoint, you can c
 - [Automated investigation & remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 You can create indicators for:
+
 - [Files](#indicators-for-files)
 - [IP addresses, URLs, and domains](#indicators-for-ip-addresses-urls-or-domains)
 - [Application certificates](#indicators-for-application-certificates)
+
+![Indicator types diagram](images/false-positives-indicators.png)
 
 #### Indicators for files
 
