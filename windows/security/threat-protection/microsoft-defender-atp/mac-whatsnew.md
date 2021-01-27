@@ -33,7 +33,7 @@ ms.technology: mde
 ## 101.19.48
 
 > [!NOTE]
-> The old command-line tool syntax has been deprecated with this release.
+> The old command-line tool syntax has been deprecated with this release. For information on the new syntax, see [Resources](mac-resources.md#configuring-from-the-command-line).
 
 - Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`. This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint for Mac
 - Performance improvements & bug fixes
