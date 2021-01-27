@@ -104,34 +104,39 @@ If you have alerts that are either false positives or that are true positives bu
 
 Other actions, such as starting an antivirus scan or collecting an investigation package, can occur through [Live Response](live-response.md). Those actions cannot be undone.
 
-After you have reviewed your alerts, your next step is to [review remediation actions](manage-auto-investigation.md). If any actions were taken as a result of false positives, you can undo most kinds of remediation actions. After that, proceed to [review or define exclusions](#part-3-review-or-define-exclusions).
+After you have reviewed your alerts, your next step is to [review remediation actions](manage-auto-investigation.md). If any actions were taken as a result of false positives, you can undo most kinds of remediation actions. Specifically, you can:
+- [undo one action at a time](#undo-an-action);
+- [undo multiple actions at one time](#undo-multiple-actions-at-one-time); and 
+- [remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices). 
+
+When you're done reviewing and undoing actions that were taken as a result of false positives, proceed to [review or define exclusions](#part-3-review-or-define-exclusions).
 
 ### Review completed actions
 
 1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in. 
-2. Select the **History** tab. 
+2. Select the **History** tab to view a list of actions that were taken. <br/>![Action center](images/autoir-action-center-1.png) 
 3. Select an item to view more details about the remediation action that was taken.
-
-If you find that a remediation action was taken automatically on an entity that is not actually a threat, you can undo the action. You can undo the following remediation actions:
-- Isolate device
-- Restrict code execution
-- Quarantine a file
-- Remove a registry key
-- Stop a service
-- Disable a driver
-- Remove a scheduled task
 
 ### Undo an action
 
+If you find that a remediation action was taken automatically on an entity that is not actually a threat, you can undo the action. You can undo most remediation actions. 
+
 1.	Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 2. On the **History** tab, select an action that you want to undo.
-3.	In the flyout pane, select **Undo**. (If the action cannot be undone with this method, you will not see an **Undo** button.)
+3.	In the flyout pane, select **Undo**. If the action cannot be undone with this method, you will not see an **Undo** button. (To learn more, see [Undo completed actions](manage-auto-investigation.md#undo-completed-actions).)
 
 ### Undo multiple actions at one time
 
 1.	Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 2.	On the **History** tab, select the actions that you want to undo.
 3.	In the pane on the right side of the screen, select **Undo**.
+
+### Remove a file from quarantine across multiple devices 
+
+1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+2. On the **History** tab, select a file that has the Action type **Quarantine file**.
+3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**. <br/>![Quarantine file](images/autoir-quarantine-file-1.png)
+
 
 ## Part 3: Review or define exclusions
 
@@ -142,7 +147,7 @@ To define exclusions across Microsoft Defender for Endpoint, perform the followi
 - [Create “allow” indicators for Microsoft Defender for Endpoint](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
-> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response), [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger alerts and other detections. To exclude files broadly, use [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators), such as "allow" indicators for Microsoft Defender for Endpoint.
+> Microsoft Defender Antivirus exclusions apply only to antivirus protection, not across other Microsoft Defender for Endpoint capabilities. To exclude files broadly, use exclusions for Microsoft Defender Antivirus and [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) for Microsoft Defender for Endpoint.
 
 The procedures in this section describe how to define exclusions and indicators.
 
