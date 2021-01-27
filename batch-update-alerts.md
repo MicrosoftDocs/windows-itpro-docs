@@ -1,6 +1,6 @@
 ---
 title: Batch Update alert entities API
-description: Learn how to update Microsoft Defender ATP alerts in a batch by using this API. You can update the status, determination, classification, and assignedTo properties.
+description: Learn how to update Microsoft Defender for Endpoint alerts in a batch by using this API. You can update the status, determination, classification, and assignedTo properties.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
