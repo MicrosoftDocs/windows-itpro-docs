@@ -35,7 +35,7 @@ In endpoint protection solutions, a false positive is an entity, such as a file 
 
 ![Definition of false positive and negatives in Windows Defender for Endpoints](images/false-positives-overview.png)
 
-Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), your security operations can take steps to address false positives or false negatives:
+Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), your security operations can take steps to address them by using the following process:
 
 1.	[Review and classify alerts](#part-1-review-and-classify-alerts) 
 2.	[Review remediation actions that were taken](#part-2-review-remediation-actions)
@@ -63,7 +63,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2.	In the navigation pane, choose **Alerts queue**.
 3.	Select an alert to more details about the alert. (See [Review alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts).)
-4.	Depending on the alert status, take the steps described in the following table:   <br/>   
+4.	Depending on the alert status, take the steps described in the following table: 
 
     | Alert status | What to do |
     |:---|:---|
@@ -73,7 +73,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 ### Classify an alert
 
-Your security team can classify an alert as a false positive or a true positive in the Microsoft Defender Security Center, in the **Alerts queue**.
+You can classify an alert as a false positive or a true positive in the Microsoft Defender Security Center, in the **Alerts queue**. Classifying alerts helps train Microsoft Defender for Endpoint so that, over time, you'll see more true alerts and fewer false alerts.
 
 1.	Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2.	Select **Alerts queue**, and then select an alert that is a false positive.
@@ -85,7 +85,7 @@ Your security team can classify an alert as a false positive or a true positive 
 
 ### Suppress an alert
 
-If you have alerts that are either false positives or that are true positives but are for unimportant events, you can suppress those alerts in the Microsoft Defender Security Center. Suppressing alerts helps reduce noise in your security operations dashboard. 
+If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in the Microsoft Defender Security Center. Suppressing alerts helps reduce noise in your security operations dashboard. 
 
 1.	Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2.	In the navigation pane, select **Alerts queue**.
@@ -108,35 +108,39 @@ If you have alerts that are either false positives or that are true positives bu
 
 Other actions, such as starting an antivirus scan or collecting an investigation package, can occur through [Live Response](live-response.md). Those actions cannot be undone.
 
-> [!TIP]
-> See [Review remediation actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation).
+After you have reviewed your alerts, your next step is to [review remediation actions](manage-auto-investigation.md). If any actions were taken as a result of false positives, you can undo most kinds of remediation actions. Specifically, you can:
+- [undo one action at a time](#undo-an-action);
+- [undo multiple actions at one time](#undo-multiple-actions-at-one-time); and 
+- [remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices). 
+
+When you're done reviewing and undoing actions that were taken as a result of false positives, proceed to [review or define exclusions](#part-3-review-or-define-exclusions).
 
 ### Review completed actions
 
 1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in. 
-2. Select the **History** tab. 
+2. Select the **History** tab to view a list of actions that were taken. <br/>![Action center](images/autoir-action-center-1.png) 
 3. Select an item to view more details about the remediation action that was taken.
-
-If you find that a remediation action was taken automatically on an entity that is not actually a threat, you can undo the action. You can undo the following remediation actions:
-- Isolate device
-- Restrict code execution
-- Quarantine a file
-- Remove a registry key
-- Stop a service
-- Disable a driver
-- Remove a scheduled task
 
 ### Undo an action
 
+If you find that a remediation action was taken automatically on an entity that is not actually a threat, you can undo the action. You can undo most remediation actions. 
+
 1.	Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 2. On the **History** tab, select an action that you want to undo.
-3.	In the flyout pane, select **Undo**. (If the action cannot be undone with this method, you will not see an **Undo** button.)
+3.	In the flyout pane, select **Undo**. If the action cannot be undone with this method, you will not see an **Undo** button. (To learn more, see [Undo completed actions](manage-auto-investigation.md#undo-completed-actions).)
 
 ### Undo multiple actions at one time
 
 1.	Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 2.	On the **History** tab, select the actions that you want to undo.
 3.	In the pane on the right side of the screen, select **Undo**.
+
+### Remove a file from quarantine across multiple devices 
+
+1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+2. On the **History** tab, select a file that has the Action type **Quarantine file**.
+3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**. <br/>![Quarantine file](images/autoir-quarantine-file-1.png)
+
 
 ## Part 3: Review or define exclusions
 
@@ -147,7 +151,7 @@ To define exclusions across Microsoft Defender for Endpoint, perform the followi
 - [Create “allow” indicators for Microsoft Defender for Endpoint](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
-> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response), [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger alerts and other detections. To exclude files broadly, use [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators), such as "allow" indicators for Microsoft Defender for Endpoint.
+> Microsoft Defender Antivirus exclusions apply only to antivirus protection, not across other Microsoft Defender for Endpoint capabilities. To exclude files broadly, use exclusions for Microsoft Defender Antivirus and [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) for Microsoft Defender for Endpoint.
 
 The procedures in this section describe how to define exclusions and indicators.
 
@@ -182,7 +186,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 [Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) (specifically, indicators of compromise, or IoCs) enable your security operations team to define the detection, prevention, and exclusion of entities. For example, you can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain files, IP addresses, or URLs.
 
-To specify entities as exclusions for Microsoft Defender for Endpoint, you can create "allow" indicators for those entities. Such "allow" indicators in Microsoft Defender for Endpoint apply to:
+To specify entities as exclusions for Microsoft Defender for Endpoint, you can create "allow" indicators for those entities. Such "allow" indicators in Microsoft Defender for Endpoint apply to the following capabilities:
 
 - [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 - [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
