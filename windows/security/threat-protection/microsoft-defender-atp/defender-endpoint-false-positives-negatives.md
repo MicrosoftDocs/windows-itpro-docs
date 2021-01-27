@@ -187,11 +187,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 [Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) (specifically, indicators of compromise, or IoCs) enable your security operations team to define the detection, prevention, and exclusion of entities. For example, you can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain files, IP addresses, or URLs.
 
-To specify entities as exclusions for Microsoft Defender for Endpoint, create "allow" indicators for those entities. Such "allow" indicators in Microsoft Defender for Endpoint apply to the following capabilities:
-
-- [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
-- [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
-- [Automated investigation & remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+To specify entities as exclusions for Microsoft Defender for Endpoint, create "allow" indicators for those entities. Such "allow" indicators in Microsoft Defender for Endpoint apply to [next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response), and [automated investigation & remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations).
 
 "Allow" indicators can be created for:
 
@@ -237,7 +233,7 @@ Before you create indicators for application certificates, make sure the followi
 
 ## Part 4: Submit a file for analysis
 
-You can submit entities, such as files and fileless detections, to Microsoft for analysis. Microsoft security researchers analyze all submissions, and . When you sign in at the submission site, you can track your submissions.
+You can submit entities, such as files and fileless detections, to Microsoft for analysis. Microsoft security researchers analyze all submissions, and their results help inform Microsoft Defender for Endpoint threat protection capabilities. When you sign in at the submission site, you can track your submissions.
 
 ### Submit a file for analysis
 
@@ -273,7 +269,7 @@ To check for updates regarding your submission, sign in at the [Microsoft Securi
 
 ## Part 5: Review and adjust your threat protection settings
 
-Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine-tune settings for various features and capabilities. If you’re getting numerous false positives, make sure to review your organization’s threat protection settings. You might need to make some adjustments to the following settings in particular:
+Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine-tune settings for various features and capabilities. If you’re getting numerous false positives, make sure to review your organization’s threat protection settings. You might need to make some adjustments to:
 
 - [Cloud-delivered protection](#cloud-delivered-protection)
 - [Remediation for potentially unwanted applications](#remediation-for-potentially-unwanted-applications)
@@ -287,6 +283,8 @@ Check your cloud-delivered protection level for Microsoft Defender Antivirus. By
 > To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
 
 We recommend using Microsoft Endpoint Manager to edit or set your cloud-delivered protection settings.
+
+We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) to edit or set your cloud-delivered protection settings; however, you can use other methods, such as [Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
 
 #### Use Microsoft Endpoint Manager to review and edit cloud-delivered protection settings (for existing policies)
 
@@ -312,13 +310,13 @@ We recommend using Microsoft Endpoint Manager to edit or set your cloud-delivere
 ### Remediation for potentially unwanted applications
 
 Potentially unwanted applications (PUA) are a category of software that can cause devices to run slowly, display unexpected ads, or install other software that might be unexpected or unwanted. Examples of PUA include advertising software, bundling software, and evasion software that behaves differently with security products. Although PUA is not considered malware, some kinds of software are PUA based on their behavior and reputation.
- 
-Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If necessary, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus. 
-
-We recommend using Microsoft Endpoint Manager to edit or set PUA protection settings. 
 
 > [!TIP]
 > To learn more about PUA, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+ 
+Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If necessary, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus.
+
+We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) to edit or set PUA protection settings; however, you can use other methods, such as [Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
 
 #### Use Microsoft Endpoint Manager to edit PUA protection (for existing configuration profiles)
 
@@ -345,18 +343,18 @@ We recommend using Microsoft Endpoint Manager to edit or set PUA protection sett
 
 [Automated investigation and remediation](automated-investigations.md) (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. As alerts are triggered, and an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. 
 
-Depending on the [level of automation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels) set for your organization and other security settings, remediation actions are taken on artifacts deemed Malicious or Suspicious. Remediation actions can occur automatically, or only upon approval by your security operations team. 
+Depending on the [level of automation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels) set for your organization and other security settings, remediation actions are taken on artifacts that are considered to be *Malicious* or *Suspicious*. In some cases, remediation actions occur automatically; in other cases, remediation actions are taken manually or only upon approval by your security operations team. 
 
 - [Learn more about automation levels](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automation-levels); and then 
 - [Configure AIR capabilities in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation).
 
-> [!TIP]
+> [!IMPORTANT]
 > We recommend using *Full automation* for automated investigation and remediation. Don't turn these capabilities off because of a false positive. Instead, use ["allow" indicators to define exceptions](#indicators-for-microsoft-defender-for-endpoint), and keep automated investigation and remediation set to take appropriate actions automatically. Following [this guidance](automation-levels.md#levels-of-automation) helps reduce the number of alerts your security operations team must handle. 
 
 
 ## Still need help?
 
-If you have worked through all the steps in this article and still need help, your best bet is to contact technical support.
+If you have worked through all the steps in this article and still need help, contact technical support.
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
