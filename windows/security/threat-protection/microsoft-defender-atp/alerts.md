@@ -3,7 +3,7 @@ title: Get alerts API
 description: Learn about the methods and properties of the Alert resource type in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Alert resource type
@@ -36,7 +37,7 @@ Method |Return Type |Description
 :---|:---|:---
 [Get alert](get-alert-info-by-id.md) | [Alert](alerts.md) | Get a single [alert](alerts.md) object.
 [List alerts](get-alerts.md) | [Alert](alerts.md) collection | List [alert](alerts.md) collection.
-[Update alert](get-alerts.md) | [Alert](update-alert.md) | Update specific [alert](alerts.md).
+[Update alert](update-alert.md) | [Alert](alerts.md) | Update specific [alert](alerts.md).
 [Create alert](create-alert-by-reference.md)|[Alert](alerts.md)|Create an alert based on event data obtained from [Advanced Hunting](run-advanced-query-api.md).
 [List related domains](get-alert-related-domain-info.md)|Domain collection| List URLs associated with the alert.
 [List related files](get-alert-related-files-info.md) | [File](files.md) collection |  List the [file](files.md) entities that are associated with the [alert](alerts.md).

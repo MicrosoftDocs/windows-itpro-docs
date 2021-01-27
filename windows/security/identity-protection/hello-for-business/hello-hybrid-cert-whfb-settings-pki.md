@@ -13,31 +13,31 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/19/2018
+ms.date: 01/14/2021
 ms.reviewer: 
 ---
 
 # Configure Hybrid Windows Hello for Business: Public Key Infrastructure
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Hybrid Deployment
--   Certificate Trust
 
+- Windows 10, version 1703 or later
+- Hybrid Deployment
+- Certificate Trust
 
 Windows Hello for Business deployments rely on certificates.  Hybrid deployments uses publicly issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows them and the client computer.
 
-All deployments use enterprise issued certificates for domain controllers as a root of trust.  Hybrid certificate trust deployments issue users sign-in certificate that enables them to authenticate using Windows Hello for Business credentials to non-Windows Server 2016 domain controllers.  Additionally, hybrid certificate trust deployments issue certificate to registration authorities to provide defense-in-depth security for issuing user authentication certificates. 
+All deployments use enterprise issued certificates for domain controllers as a root of trust.  Hybrid certificate trust deployments issue users sign-in certificate that enables them to authenticate using Windows Hello for Business credentials to non-Windows Server 2016 domain controllers.  Additionally, hybrid certificate trust deployments issue certificate to registration authorities to provide defense-in-depth security for issuing user authentication certificates.
 
 ## Certificate Templates
 
-This section has you configure certificate templates on your Windows Server 2012 or later issuing certificate authority. 
+This section has you configure certificate templates on your Windows Server 2012 or later issuing certificate authority.
 
 ### Domain Controller certificate template
 
 Clients need to trust domain controllers and the best way to do this is to ensure each domain controller has a Kerberos Authentication certificate.  Installing a certificate on the domain controller enables the Key Distribution Center (KDC) to prove its identity to other members of the domain.  This provides clients a root of trust external to the domain - namely the enterprise certificate authority.
 
-Domain controllers automatically request a domain controller certificate (if published) when they discover an enterprise certificate authority is added to Active Directory.  However, certificates based on the *Domain Controller* and *Domain Controller Authentication* certificate templates do not include the **KDC Authentication** object identifier (OID), which was later added to the Kerberos RFC.  Therefore, domain controllers need to request a certificate based on the Kerberos Authentication certificate template.
+Domain controllers automatically request a domain controller certificate (if published) when they discover an enterprise certificate authority is added to Active Directory.  However, certificates based on the *Domain Controller* and *Domain Controller Authentication* certificate templates do not include the **KDC Authentication** object identifier (OID), which was later added to the Kerberos RFC. Inclusion of the **KDC Authentication** OID in domain controller certificate is not required for key trust authentication from Hybrid Azure AD joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Azure AD joined devices. The steps below to *Create a Domain Controller Authentication (Kerberos) Certificate Template* and *Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template* to include the **KDC Authentication** OID in the domain controller certificate may be skipped if you only have Hybrid Azure AD Joined devices in your environment, but we recommend completing these steps if you are considering adding Azure AD joined devices to your environment in the future.
 
 By default, the Active Directory Certificate Authority provides and publishes the Kerberos Authentication certificate template.  However, the cryptography configuration included in the provided template is based on older and less performant cryptography APIs.  To ensure domain controllers request the proper certificate with the best available cryptography, use the **Kerberos Authentication** certificate template as a baseline to create an updated domain controller certificate template.
 
@@ -53,14 +53,14 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
 
-5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.   
+5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.
 
    > [!NOTE]
    > If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
-   
+
 6. On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
 
-7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
+7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**.
 
 8. Close the console.
 
@@ -70,7 +70,7 @@ Many domain controllers may have an existing domain controller certificate.  The
 
 The Kerberos Authentication certificate template is the most current certificate template designated for domain controllers and should be the one you deploy to all your domain controllers (2008 or later).
 
-The auto-enrollment feature in Windows enables you to effortlessly replace these domain controller certificates.  You can use the following configuration to replace older domain controller certificates with a new certificate using the Kerberos Authentication certificate template. 
+The auto-enrollment feature in Windows enables you to effortlessly replace these domain controller certificates.  You can use the following configuration to replace older domain controller certificates with a new certificate using the Kerberos Authentication certificate template.
 
 Sign-in a certificate authority or management workstations with _Enterprise Admin_ equivalent credentials.
 
@@ -86,7 +86,7 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 
 6. From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **OK**.
 
-7. From the **Add Superseded Template dialog**, select the **Kerberos Authentication** certificate template and click **OK**. 
+7. From the **Add Superseded Template dialog**, select the **Kerberos Authentication** certificate template and click **OK**.
 
 8. Add any other enterprise certificate templates that were previously configured for domain controllers to the **Superseded Templates** tab.
 
@@ -104,7 +104,7 @@ Active Directory Federation Server used for Windows Hello for Business certifica
 Approximately 60 days prior to enrollment agent certificate's expiration, the AD FS service attempts to renew the certificate until it is successful.  If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate.  You can view the AD FS event logs to determine the status of the enrollment agent certificate.
 
 > [!IMPORTANT]
-> Follow the procedures below based on the AD FS service account used in your  environment. 
+> Follow the procedures below based on the AD FS service account used in your  environment.
 
 #### Creating an Enrollment Agent certificate for Group Managed Service Accounts
 
@@ -127,7 +127,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.
 
-8. On the **Security** tab, click **Add**. 
+8. On the **Security** tab, click **Add**.
 
 9. Click **Object Types**.  Select the **Service Accounts** check box and click **OK**.
 
@@ -157,7 +157,7 @@ Sign-in a certificate authority or management workstations with *Domain Admin* e
 
 8. On the **Security** tab, click **Add**. Type **adfssvc** in the **Enter the object names to select text box** and click **OK**.
 
-9. Click the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission. Excluding the **adfssvc** user, clear the **Allow** check boxes for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**. 
+9. Click the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission. Excluding the **adfssvc** user, clear the **Allow** check boxes for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**.
 
 10. Close the console.
 
@@ -179,7 +179,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin eq
 
    > [!NOTE]
    > If you use different template names, you'll need to remember and substitute these names in different portions of the deployment.
-   
+
 6. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.
 
 7. On the **Extensions** tab, verify the **Application Policies** extension includes **Smart Card Logon**.
@@ -187,7 +187,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin eq
 8. On the **Issuance Requirements** tab, select the **This number of authorized signatures** check box.  Type **1** in the text box.   
 
    Select **Application policy** from the **Policy type required in signature**. Select **Certificate Request Agent** from in the **Application policy** list. Select the **Valid existing certificate** option.
-   
+
 9. On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected. Select **Fully distinguished name** from the **Subject name format** list if **Fully distinguished name** is not already selected. Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**.
 
 10. On the **Request Handling** tab, select the **Renew with same key** check box.
@@ -255,7 +255,6 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 
 6. Close the console.
 
-
 #### Unpublish Superseded Certificate Templates
 
 The certificate authority only issues certificates based on published certificate templates.  For defense in depth security, it is a good practice to unpublish certificate templates that the certificate authority is not configured to issue.  This includes the pre-published certificate template from the role installation and any superseded certificate templates.
@@ -274,8 +273,8 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 
 5. Repeat step 4 for the **Domain Controller Authentication** and **Kerberos Authentication** certificate templates.
 
-
 ### Section Review
+
 > [!div class="checklist"]
 > * Domain Controller certificate template
 > * Configure superseded domain controller certificate templates
@@ -284,7 +283,6 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 > * Mark the certificate template as Windows Hello for Business sign-in template
 > * Publish Certificate templates to certificate authorities
 > * Unpublish superseded certificate templates
-> 
 > 
 > [!div class="step-by-step"]
 > [< Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
@@ -295,6 +293,7 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 <hr>
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
+
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)

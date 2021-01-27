@@ -3,7 +3,7 @@ title: Block potentially unwanted applications with Microsoft Defender Antivirus
 description: Enable the potentially unwanted application (PUA) antivirus feature to block unwanted software such as adware.
 keywords: pua, enable, unwanted software, unwanted apps, adware, browser toolbar, detect, block, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,6 +14,7 @@ audience: ITPro
 ms.date: 01/08/2021
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Detect and block potentially unwanted applications
@@ -99,9 +100,9 @@ See [Configure device restriction settings in Microsoft Intune](https://docs.mic
 
 #### Use Configuration Manager to configure PUA protection
 
-PUA protection is enabled by default in the Microsoft Endpoint Configuration Manager (Current Branch).
+PUA protection is enabled by default in the Microsoft Endpoint Manager (Current Branch).
 
-See [How to create and deploy antimalware policies: Scheduled scans settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring Microsoft Endpoint Configuration Manager (Current Branch).
+See [How to create and deploy antimalware policies: Scheduled scans settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring Microsoft Endpoint Manager (Current Branch).
 
 For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508770.aspx#BKMK_PUA).
 
@@ -157,7 +158,7 @@ See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](u
 
 ### View PUA events
 
-PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Configuration Manager or in Intune.
+PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune.
 
 You can turn on email notifications to receive mail about PUA detections.
 

@@ -362,7 +362,7 @@ The UE-V service synchronizes user settings for devices that are not always conn
 
 Enable this configuration using one of these methods:
 
-- After you enable the UE-V service, use the Settings Management feature in Microsoft Endpoint Configuration Manager or the UE-V ADMX templates (installed with Windows 10, version 1607) to push the SyncMethod = None configuration.
+- After you enable the UE-V service, use the Settings Management feature in Microsoft Endpoint Manager or the UE-V ADMX templates (installed with Windows 10, version 1607) to push the SyncMethod = None configuration.
 
 - Use Windows PowerShell or Windows Management Instrumentation (WMI) to set the SyncMethod = None configuration.
 

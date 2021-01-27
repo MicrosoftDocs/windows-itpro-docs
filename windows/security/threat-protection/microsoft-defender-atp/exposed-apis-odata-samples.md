@@ -4,7 +4,7 @@ ms.reviewer:
 description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, odata, query
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # OData queries with Microsoft Defender for Endpoint
@@ -366,6 +367,45 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa4
 
 ```json
 4
+```
+
+### Example 8
+
+Get all the devices with 'computerDnsName' starting with 'mymachine':
+
+```http
+HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')
+```
+
+**Response:**
+
+```json
+json{
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines",
+    "value": [
+        {
+            "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+	    "computerDnsName": "mymachine1.contoso.com",
+	    "firstSeen": "2018-08-02T14:55:03.7791856Z",
+	    "lastSeen": "2018-08-02T14:55:03.7791856Z",
+	    "osPlatform": "Windows10",
+	    "version": "1709",
+	    "osProcessor": "x64",
+	    "lastIpAddress": "172.17.230.209",
+	    "lastExternalIpAddress": "167.220.196.71",
+	    "osBuild": 18209,
+	    "healthStatus": "ImpairedCommunication",
+	    "rbacGroupId": 140,
+	    "rbacGroupName": "The-A-Team",
+	    "riskScore": "Low",
+	    "exposureLevel": "Medium",
+	    "isAadJoined": true,
+	    "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+	    "machineTags": [ "test tag 1", "ExampleTag" ]
+        },
+        ...
+    ]
+}
 ```
 
 ## See also

@@ -1,11 +1,11 @@
 ---
-title:  Create indicators for IPs and URLs/domains 
+title: Create indicators for IPs and URLs/domains
 ms.reviewer: 
 description: Create indicators for IPs and URLs/domains that define the detection, prevention, and exclusion of entities.
 keywords: ip, url, domain, manage, allowed, blocked, whitelist, blacklist, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Create indicators for IPs and URLs/domains 
@@ -51,14 +52,14 @@ It's important to understand the following prerequisites prior to creating indic
 > Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs.
 > For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios leverage Network Protection for inspection and enforcement: <br>
 > NOTE:
->- IP is supported for all three protocols
->- Only single IP addresses are supported (no CIDR blocks or IP ranges)
->- Encrypted URLs (full path) can only be blocked on first party browsers
->- Encrypted URLS (FQDN only) can be blocked outside of first party browsers
->- Full URL path blocks can be applied on the domain level and all unencrypted URLs
+> - IP is supported for all three protocols
+> - Only single IP addresses are supported (no CIDR blocks or IP ranges)
+> - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge)
+> - Encrypted URLS (FQDN only) can be blocked outside of first party browsers (Internet Explorer, Edge)
+> - Full URL path blocks can be applied on the domain level and all unencrypted URLs
  
->[!NOTE]
->There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked. 
+> [!NOTE]
+> There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked. 
 
 ### Create an indicator for IPs, URLs, or domains from the settings page
 

@@ -15111,6 +15111,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/find-machine-info-by-ip.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/find-machines-by-ip",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-filemachineaction-object-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/use-apis",
       "redirect_document_id": false
@@ -16508,11 +16513,6 @@
     {
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot.md",
       "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "windows/security/threat-protection/mbsa-removal-and-guidance.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection",
       "redirect_document_id": true
     },
     {

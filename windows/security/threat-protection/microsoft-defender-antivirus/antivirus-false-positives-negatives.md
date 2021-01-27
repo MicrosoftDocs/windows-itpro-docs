@@ -1,9 +1,9 @@
 ---
-title: What to do with false positives/negatives in Microsoft Defender Antivirus 
+title: What to do with false positives/negatives in Microsoft Defender Antivirus
 description: Did Microsoft Defender Antivirus miss or wrongly detect something? Find out what you can do.
 keywords: Microsoft Defender Antivirus, false positives, false negatives, exclusions
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -11,11 +11,12 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/08/2020
+ms.date: 01/26/2021
 ms.reviewer: shwetaj
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.technology: mde
 ---
 
 # What to do with false positives/negatives in Microsoft Defender Antivirus
@@ -33,6 +34,9 @@ What if something gets detected wrongly as malware, or something is missed? We c
 - [Submit a file to Microsoft for analysis](#submit-a-file-to-microsoft-for-analysis)
 - [Create an "Allow" indicator to prevent a false positive from recurring](#create-an-allow-indicator-to-prevent-a-false-positive-from-recurring)
 - [Define an exclusion on an individual Windows device to prevent an item from being scanned](#define-an-exclusion-on-an-individual-windows-device-to-prevent-an-item-from-being-scanned)
+
+> [!TIP]
+> This article focuses on false positives in Microsoft Defender Antivirus. If you want guidance for Microsoft Defender for Endpoint, which includes next-generation protection, endpoint detection and response, automated investigation and remediation, and more, see [Address false positives/negatives in Microsoft Defender for Endpoint](../microsoft-defender-atp/defender-endpoint-false-positives-negatives.md).
 
 ## Submit a file to Microsoft for analysis
 
@@ -75,3 +79,5 @@ To learn more, see:
 [What is Microsoft Defender for Endpoint?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 
 [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+
+[Address false positives/negatives in Microsoft Defender for Endpoint](../microsoft-defender-atp/defender-endpoint-false-positives-negatives.md)

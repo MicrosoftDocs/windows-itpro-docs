@@ -4,7 +4,7 @@ description: Make the switch to Microsoft Defender for Endpoint. Read this artic
 keywords: migration, windows defender advanced endpoint protection, for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-migratetomdatp
-- m365solution-overview 
+  - M365-security-compliance
+  - m365solution-migratetomdatp
+  - m365solution-overview
 ms.topic: conceptual
 ms.custom: migrationguides
 ms.date: 09/24/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+ms.technology: mde
 ---
 
 # Make the switch from a non-Microsoft endpoint solution to Microsoft Defender for Endpoint

@@ -1,9 +1,9 @@
 ---
 title: Schedule Microsoft Defender Antivirus protection updates
-description: Schedule the day, time, and interval for when protection updates should be downloaded 
+description: Schedule the day, time, and interval for when protection updates should be downloaded
 keywords: updates, security baselines, schedule updates
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,6 +14,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
+ms.technology: mde
 ---
 
 # Manage the schedule for when protection updates should be downloaded and applied
@@ -37,7 +38,7 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 ## Use Configuration Manager to schedule protection updates
 
-1.  On your Microsoft Endpoint Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
+1.  On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
 2.  Go to the **Security intelligence updates** section.
 

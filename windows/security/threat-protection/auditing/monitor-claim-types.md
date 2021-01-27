@@ -4,7 +4,7 @@ description: Learn how to monitor changes to claim types that are associated wit
 ms.assetid: 426084da-4eef-44af-aeec-e7ab4d4e2439
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Monitor claim types
