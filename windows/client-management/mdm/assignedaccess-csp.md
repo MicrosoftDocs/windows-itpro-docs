@@ -75,7 +75,7 @@ The supported operations are Add, Delete, Get and Replace. When there's no confi
 <a href="" id="assignedaccess-configuration"></a>**./Device/Vendor/MSFT/AssignedAccess/Configuration**
 Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps). Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd).
 
-Updated in Windows 10, version 1909. Added Microsoft Edge kiosk mode. This allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Configure a Windows 10 kiosk that runs Microsoft Edge](https://docs.microsoft.com/DeployEdge/microsoft-edge-configure-kiosk-mode). Windows 10, version 1909 also allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen.
+Updated in Windows 10, version 1909. Added Microsoft Edge kiosk mode support. This allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Configure a Windows 10 kiosk that runs Microsoft Edge](https://docs.microsoft.com/DeployEdge/microsoft-edge-configure-kiosk-mode). Windows 10, version 1909 also allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen. The breakout sequence is defined with the format modifiers + keys. An example breakout sequence would look something like "shift+alt+a", where "shift" and "alt" are the modifiers and "a" is the key.
 
 > [!Note]
 > In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
@@ -247,7 +247,7 @@ KioskModeApp Replace
 
 ## AssignedAccessConfiguration XSD
 
-Below schema is for AssignedAccess Configuration up to Windows 10 1909 release.
+The schema below is for AssignedAccess Configuration up to Windows 10 20H2 release.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -520,7 +520,7 @@ Schema for Windows 10 prerelease
 </xs:schema>
 ```
 
-Schema for features introduced in Windows 10, version 1909.
+The schema below is for features introduced in Windows 10, version 1909 which has added support for Microsoft Edge kiosk mode and breakout key sequence customization.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
@@ -612,7 +612,7 @@ Example XML configuration for a multi-app kiosk:
 </AssignedAccessConfiguration>
 ```
 
-Example XML configuration for a Microsoft Edge kiosk. This Edge kiosk s configure to launch www.bing.com on startup.
+Example XML configuration for a Microsoft Edge kiosk. This Microsoft Edge kiosk is configured to launch www.bing.com on startup in a public browsing mode.
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
@@ -635,8 +635,8 @@ Example XML configuration for a Microsoft Edge kiosk. This Edge kiosk s configur
 ```
 
 Example XML configuration for setting a breakout sequence to be Ctrl+A on a Microsoft Edge kiosk.
->[!Note]
-**BreakoutSequence** can be applied to any kiosk type, not just an Edge kiosk.
+> [!NOTE]
+> **BreakoutSequence** can be applied to any kiosk type, not just an Edge kiosk.
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
