@@ -301,7 +301,7 @@ Sign-in the domain controller or administrative workstation with domain administ
 6. Right-click the `domain_name` node and select **New Alias (CNAME)**.
 7. In the **New Resource Record** dialog box, type "enterpriseregistration" in the **Alias** name box.
 8. In the **fully qualified domain name (FQDN)** of the target host box, type `federation_service_farm_name.domain_name.com`, and click OK.
-6. Close the DNS Management console 
+9. Close the DNS Management console.
 
 > [!NOTE]
 > If your forest has multiple UPN suffixes, please make sure that `enterpriseregistration.upnsuffix.com` is present for each suffix.
