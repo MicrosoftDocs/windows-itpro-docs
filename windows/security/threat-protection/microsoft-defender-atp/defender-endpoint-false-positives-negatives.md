@@ -117,8 +117,10 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Review completed actions
 
+![Action center](images/autoir-action-center-1.png)
+
 1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in. 
-2. Select the **History** tab to view a list of actions that were taken. <br/>![Action center](images/autoir-action-center-1.png) 
+2. Select the **History** tab to view a list of actions that were taken.  
 3. Select an item to view more details about the remediation action that was taken.
 
 ### Undo an action
@@ -137,10 +139,11 @@ If you find that a remediation action was taken automatically on an entity that 
 
 ### Remove a file from quarantine across multiple devices 
 
+![Quarantine file](images/autoir-quarantine-file-1.png)
+
 1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
-3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**. <br/>![Quarantine file](images/autoir-quarantine-file-1.png)
-
+3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**. 
 
 ## Part 3: Review or define exclusions
 
@@ -351,7 +354,6 @@ Depending on the [level of automation](https://docs.microsoft.com/windows/securi
 
 > [!TIP]
 > We recommend using *Full automation* for automated investigation and remediation. Don't turn these capabilities off because of a false positive. Instead, use ["allow" indicators to define exceptions](#indicators-for-microsoft-defender-for-endpoint), and keep automated investigation and remediation set to take appropriate actions automatically. Following [this guidance](automation-levels.md#levels-of-automation) helps reduce the number of alerts your security operations team must handle. 
-
 
 ## Still need help?
 
