@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
+- m365initiative-defender-endpoint
 ms.topic: article
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.date: 09/24/2020
+ms.date: 01/27/2021
 ms.technology: mde
 ---
 
