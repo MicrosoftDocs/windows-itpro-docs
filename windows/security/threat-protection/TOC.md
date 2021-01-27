@@ -176,7 +176,6 @@
 ###### [Use PowerShell cmdlets to manage next-generation protection](microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ###### [Use Windows Management Instrumentation (WMI) to manage next-generation protection](microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus.md)
 ###### [Use the mpcmdrun.exe command line tool to manage next-generation protection](microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
-###### [Handle false positives/negatives in Microsoft Defender Antivirus](microsoft-defender-antivirus/antivirus-false-positives-negatives.md)
    
 ##### [Deploy, manage updates, and report on antivirus]()
 ###### [Preparing to deploy](microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md)
