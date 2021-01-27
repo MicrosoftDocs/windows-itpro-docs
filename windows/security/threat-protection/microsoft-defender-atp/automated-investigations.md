@@ -58,9 +58,11 @@ During and after an automated investigation, you can view details about the inve
 
 |Tab |Description |
 |:--|:--|
-|**Alerts**| The alert(s) that started the investigation.|
-|**Devices** |The device(s) where the threat was seen.|
-|**Evidence** |The entities that were found to be malicious during an investigation.|
+|**Alerts**| The alert(s) that started the investigation. |
+|**Devices** |The device(s) that are impacted by the threat. |
+|**Mailboxes** |The mailbox(s) that are impacted by the threat |
+|**Users** |	The user account(s) that are impacted by the threat |
+|**Evidence** |The evidences raised by alerts/investigations, with verdicts (*Malicious*, *Suspicious*, or *No threats found*, along with remediation status. |
 |**Entities** |Details about each analyzed entity, including a determination for each entity type (*Malicious*, *Suspicious*, or *No threats found*). |
 |**Log** |The chronological, detailed view of all the investigation actions taken on the alert.|
 |**Pending actions** |If there are any actions awaiting approval as a result of the investigation, the **Pending actions** tab is displayed. On the **Pending actions** tab, you can approve or reject each action. |
