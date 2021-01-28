@@ -71,6 +71,6 @@ aadDeviceId | Nullable representation Guid | AAD Device ID (when [machine](machi
 machineTags | String collection | Set of [machine](machine.md) tags.
 exposureLevel | Nullable Enum | Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.
 deviceValue | Nullable Enum | The [value of the device](tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.
-ipAddresses | IpAddress collection | Set of ***IpAddress*** object. See [Get machines API](get-machines.md).
+ipAddresses | IpAddress collection | Set of ***IpAddress*** objects. See [Get machines API](get-machines.md).
 
 

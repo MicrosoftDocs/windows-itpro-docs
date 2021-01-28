@@ -41,7 +41,7 @@ ms.technology: mde
 ### 03.01.2021
 <hr>
 
-- Update Alert evidence with 
+- Update Alert evidence: added ***detectionStatus***, ***parentProcessFilePath*** and ***parentProcessFileName***.
 
 <br>
 <br>
