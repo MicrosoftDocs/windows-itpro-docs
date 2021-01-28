@@ -27,7 +27,6 @@ ms.technology: mde
 - Updated rate limitations for [Hunting API](run-advanced-query-api.md) to 45 requests per minute. 
 
 <br>
-<br>
 
 ### 21.01.2021
 <hr>
@@ -35,7 +34,6 @@ ms.technology: mde
 - Added new API: [Find devices by tag](machine-tags.md). 
 - Added new API: [Import Indicators](import-ti-indicators.md). 
 
-<br>
 <br>
 
 ### 03.01.2021
@@ -45,14 +43,12 @@ ms.technology: mde
 - Updated [Alert entity](alerts.md): added ***detectorId*** property.
 
 <br>
-<br>
 
 ### 15.12.2020
 <hr>
 
 - Updated [Device](machine.md) entity: added ***IpInterfaces*** list. See [List devices](get-machines.md).
 
-<br>
 <br>
 
 ### 04.11.2020
@@ -62,9 +58,11 @@ ms.technology: mde
 - Updated [Device](machine.md) entity: added ***deviceValue*** property.
 
 <br>
-<br>
 
 ### 01.09.2020
 <hr>
 
 - Added option to expand the Alert entity with its related Evidence. See [List Alerts](get-alerts.md)
+
+<br>
+<br>
