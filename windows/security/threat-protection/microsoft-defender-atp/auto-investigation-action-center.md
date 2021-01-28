@@ -27,53 +27,41 @@ ms.technology: mde
 
 During and after an automated investigation, remediation actions for threat detections are identified. Depending on the particular threat and how [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) is configured for your organization, some remediation actions are taken automatically, and others require approval. 
 
-If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center** ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)). 
+If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center**. 
 
-## The Action center
+## (NEW!) A unified Action center
+
+We are pleased to announce a new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))!
 
 :::image type="content" source="images/mde-action-center-unified.png" alt-text="Action center in Microsoft 365 security center":::
 
+|The previous Action center  |The new, unified Action center  |
+|---------|---------|
+|Listed pending and completed actions for devices ([Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) only)  |Lists pending and completed actions for devices and email in one location <br/>([Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) plus [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)) |
+|[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |
 
-The Action center consists of two main tabs: **Pending actions** and **History**.
+Easily accessed within the the improved Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), the unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience. 
 
+You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
+- [Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)
+- [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
+
+> [!TIP]
+> To learn more, see [Requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
+
+## Using the Action center
+
+When you visit the Action center, you see two tabs: **Pending actions** and **History**. The following table summarizes what you'll see on each tab:
 
 |Tab  |Description  |
 |---------|---------|
-|**Pending**     | Displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject. The **Pending** tab appears only if there are pending actions to be approved (or rejected).   |
-|**History**     | Serves as an audit log for all of the following actions: <br/>- Remediation actions that were taken as a result of an automated investigation <br>- Remediation actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone) <br/>- Commands that were run and remediation actions that were applied in Live Response sessions (some actions can be undone) <br/>- Remediation actions that were applied by Microsoft Defender Antivirus (some actions can be undone)        |
+|**Pending**     | Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as **Quarantine file**). <br/>**TIP**: Make sure to review and approve (or reject) pending actions as soon as possible so that your automated investigations can complete in a timely manner. |
+|**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br>- Remediation actions that were approved by your security operations team  <br/>- Commands that were run and remediation actions that were applied during Live Response sessions  <br/>- Remediation actions that were taken by threat protection features in Microsoft Defender Antivirus  <p>Provides the ability to undo certain actions.       |
 
 Use the **Customize columns** menu to select columns that you'd like to show or hide. 
 
 You can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
-
-## (NEW!) A unified Action center
-
-**We are pleased to announce a new, unified Action center** ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))! 
-
-- The former Action center was located at [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center). 
-- The new, unified Action center is located at [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
-
-Easily accessed within the the improved Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), the improved Action center unifies automated investigations across [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) and [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). It defines a common language for all remediation actions, and provides a unified investigation experience. You can use the improved Action center, regardless of whether you are using Defender for Endpoint, Defender for Office 365, or Microsoft 365 Defender. 
-
-In addition, the improved Microsoft 365 security center includes details for all automated investigations, including the alerts that were triggered, any impacted assets, pieces of evidence with their verdicts and remediation status, entities, and investigation logs. The improved Action center gives you the ability to approve pending actions in one central location. 
-
-## Automated investigation status
-
-An automated investigation can have one of the following status values:
-
-|Status  |Description  |
-|---------|---------|
-| Running    | The investigation process has started and is underway. Malicious artifacts that are found are remediated.    |
-| Partially investigated      | Entities directly related to the alert have been investigated. However, a problem stopped the investigation of collateral entities.  |
-| No threats found | The investigation has finished and no threats were identified. <br/>If you suspect something was missed (such as a false negative), you can use [advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). |
-| Pending action  | The investigation has found a threat, and an action to remediate that threat is awaiting approval. The Pending Action state is triggered when any threat with a corresponding action is found. However, the list of pending actions can increase as an investigation runs.   |
-| Remediated   | The investigation finished and all actions were approved (fully remediated). |
-| Partially remediated  | The investigation resulted in remediation actions, and some were approved and completed. Other actions are still pending. |
-| Terminated by system  | The investigation stopped. An investigation can stop for several reasons:<br/>- The investigation's pending actions expired. Pending actions can time out after awaiting approval for an extended period of time. <br/>- There are too many actions in the list.<p>Visit the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to view and approve any pending actions.     |
-| Failed  | At least one investigation analyzer ran into a problem where it could not complete properly. <br/><br/>If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded.      |
-| Queued    | An investigation is being held in a queue. When other investigations complete, queued investigations begin.  |
-| Waiting for device | Investigation paused. The investigation will resume as soon as the device is available. |
-| Terminated by user    | A user stopped the investigation before it could complete.  |
 
 ## Next steps
 
