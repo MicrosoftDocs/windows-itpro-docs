@@ -44,7 +44,13 @@ This article provides an overview of AIR and includes links to next steps and ad
 
 ## How the automated investigation starts
 
-When an alert is triggered, a security playbook goes into effect. Depending on the security playbook, an automated investigation can start. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and the automated investigation process begins. Microsoft Defender for Endpoint checks to see if the malicious file is present on any other devices in the organization. Details from the investigation, including verdicts (*Malicious*, *Suspicious*, and *No threats found*) are available during and after the automated investigation. To learn more about what happens after a verdict is reached, see [Automated investigation results and remediation actions](manage-auto-investigation.md#automated-investigation-results-and-remediation-actions). 
+### An automated investigation can start when an alert is triggered
+
+In general, an automated investigation starts when an [alert](review-alerts.md) is triggered, and an [incident](view-incidents-queue.md) is created. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and incident is created. An automated investigation process begins on the device. As other alerts are generated because of the same file on other devices, they are added to the associated incident and to the automated investigation. 
+
+### An automated investigation can be initiated manually
+
+An automated investigation can be started manually by your security operations team. For example, suppose a security operator is reviewing a list of devices and notices that a device has a high risk level. The security operator can select the device in the list to open its flyout, and then select **Initiate Automated Investigation**.
 
 ## How an automated investigation expands its scope
 
@@ -64,7 +70,7 @@ All remediation actions, whether pending or completed, can be viewed in the [Act
 
 ## Requirements for AIR
 
-Your organization must have Defender for Endpoint. See [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)
+Your organization must have Defender for Endpoint (see [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)).
 
 Currently, AIR only supports the following OS versions:
 - Windows Server 2019
