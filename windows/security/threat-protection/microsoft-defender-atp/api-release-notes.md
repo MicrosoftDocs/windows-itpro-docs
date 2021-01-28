@@ -41,7 +41,8 @@ ms.technology: mde
 ### 03.01.2021
 <hr>
 
-- Update Alert evidence: added ***detectionStatus***, ***parentProcessFilePath*** and ***parentProcessFileName***.
+- Updated Alert evidence: added ***detectionStatus***, ***parentProcessFilePath*** and ***parentProcessFileName*** properties.
+- Updated [Alert entity](alerts.md): added ***detectorId*** property.
 
 <br>
 <br>
@@ -49,15 +50,16 @@ ms.technology: mde
 ### 15.12.2020
 <hr>
 
-- Updated [Device](machine.md) entity with IP Interfaces. See [List devices](get-machines.md).
+- Updated [Device](machine.md) entity: added ***IpInterfaces*** list. See [List devices](get-machines.md).
 
 <br>
 <br>
 
-### 04.12.2020
+### 04.11.2020
 <hr>
 
 - Added new API: [Set device value](set-device-value.md).
+- Updated [Device](machine.md) entity: added ***deviceValue*** property.
 
 <br>
 <br>
