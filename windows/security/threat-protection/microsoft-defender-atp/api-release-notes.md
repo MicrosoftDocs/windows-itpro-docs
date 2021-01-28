@@ -62,7 +62,7 @@ ms.technology: mde
 ### 01.09.2020
 <hr>
 
-- Added option to expand the Alert entity with its related Evidence. See [List Alerts](get-alerts.md)
+- Added option to expand the Alert entity with its related Evidence. See [List Alerts](get-alerts.md).
 
 <br>
 <br>
