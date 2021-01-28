@@ -2,7 +2,7 @@
 title: Create indicators for IPs and URLs/domains
 ms.reviewer: 
 description: Create indicators for IPs and URLs/domains that define the detection, prevention, and exclusion of entities.
-keywords: ip, url, domain, manage, allowed, blocked, whitelist, blacklist, block, clean, malicious, file hash, ip address, urls, domain
+keywords: ip, url, domain, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
