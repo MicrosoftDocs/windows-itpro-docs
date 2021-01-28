@@ -73,12 +73,28 @@ Content-Type | string | application/json. **Required**.
 
 ## Request body
 
-```json
-{
-  "DeviceValue": "{device value}"
-}
-```
+In the request body, supply a JSON object with the following parameters:
+
+Parameter |    Type    | Description
+:---|:---|:---
+DeviceValue |    Enum |    Device value. Allowed values are: 'Normal', 'Low' and 'High'. **Required**.
 
 ## Response
 
 If successful, this method returns 200 - Ok response code and the updated Machine in the response body.
+
+## Example
+
+**Request**
+
+Here is an example of a request that adds machine tag.
+
+```http
+POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/setDeviceValue
+```
+
+```json
+{
+  "DeviceValue" : "High"
+}
+```
