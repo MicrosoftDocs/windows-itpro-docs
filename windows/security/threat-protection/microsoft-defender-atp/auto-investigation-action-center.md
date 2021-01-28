@@ -25,7 +25,6 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 During and after an automated investigation, certain remediation actions can be identified. Depending on the threat and how [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) is configured for your organization, some remediation actions are taken automatically. 
 
 If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center** ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)). You can also use the **Investigations** page ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) to view details about an investigation.
@@ -48,6 +47,12 @@ The action center consists of two main tabs: **Pending actions** and **History**
 Use the **Customize columns** menu to select columns that you'd like to show or hide. 
 
 You can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
+
+### (NEW!) The Action center now unifies automated investigations across services
+
+In the Microsoft 365 security center, the improved Action center unifies automated investigations across Microsoft Defender for Endpoint and Microsoft Defender for Office 365. The improved Action center defines the common language and provides a unified investigation experience, regardless of whether you are using Defender for Endpoint, Defender for Office 365, or Microsoft 365 Defender. 
+
+The improved Microsoft 365 security center includes details for all automated investigations, including the alerts that were triggered, any impacted assets, pieces of evidence with their verdicts and remediation status, entities, investigation logs, and the ability to approve pending actions in one central location. 
 
 ## The Investigations page
 
