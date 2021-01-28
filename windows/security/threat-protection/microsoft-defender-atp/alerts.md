@@ -79,7 +79,7 @@ Evidence | List of Alert evidence | Evidence related to the alert. See example b
 
 ### Response example for getting single alert:
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_1364969609
 ```
 
