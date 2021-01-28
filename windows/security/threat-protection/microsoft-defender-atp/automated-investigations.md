@@ -88,7 +88,7 @@ All remediation actions, whether pending or completed, can be viewed in the [Act
 
 ## Next steps
 
-- [Get an overview of the automated investigations dashboard](manage-auto-investigation.md)
+- [Review and approve remediation actions following an automated investigation](manage-auto-investigation.md)
 - [Learn more about automation levels](automation-levels.md)
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 
