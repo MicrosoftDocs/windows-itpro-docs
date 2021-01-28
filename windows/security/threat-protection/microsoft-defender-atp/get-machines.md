@@ -33,9 +33,12 @@ ms.technology: mde
 
 ## API description
 Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender for Endpoint cloud.
-<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
-<br>The OData's `$filter` query is supported on: `computerDnsName`, `lastSeen`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.
-<br>See examples at [OData queries with Defender for Endpoint](exposed-apis-odata-samples.md)
+
+Supports [OData V4 queries](https://www.odata.org/documentation/).
+
+The OData's `$filter` query is supported on: `computerDnsName`, `lastSeen`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.
+
+See examples at [OData queries with Defender for Endpoint](exposed-apis-odata-samples.md).
 
 
 ## Limitations
@@ -55,8 +58,8 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- Response will include only devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information).
+>- Response will include only devices, that the user have access to, based on device group settings. For more info, see [Create and manage device groups](machine-groups.md).
 
 ## HTTP request
 
