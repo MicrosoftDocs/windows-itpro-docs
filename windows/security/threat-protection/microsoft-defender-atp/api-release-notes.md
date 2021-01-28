@@ -18,6 +18,8 @@ ms.technology: mde
 ---
 
 # Release Notes
+<br>
+<hr>
 
 ### 25.01.2021
 <br>
