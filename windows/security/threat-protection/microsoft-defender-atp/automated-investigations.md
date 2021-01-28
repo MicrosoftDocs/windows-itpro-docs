@@ -74,6 +74,7 @@ Currently, AIR only supports the following OS versions:
 
 ## Next steps
 
+- [Visit the Action center to view remediation actions](auto-investigation-action-center.md)
 - [Review and approve remediation actions following an automated investigation](manage-auto-investigation.md)
 - [Learn more about automation levels](automation-levels.md)
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
