@@ -80,14 +80,12 @@ Currently, AIR only supports the following OS versions:
 
 ## Next steps
 
-- [Visit the Action center to view remediation actions](auto-investigation-action-center.md)
-- [Review and approve remediation actions following an automated investigation](manage-auto-investigation.md)
 - [Learn more about automation levels](automation-levels.md)
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [Configure automated investigation and remediation capabilities in Microsoft Defender for Endpoint](configure-automated-investigations-remediation.md)
 
 ## See also
 
 - [PUA protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 - [Automated investigation and response in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
 - [Automated investigation and response in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
