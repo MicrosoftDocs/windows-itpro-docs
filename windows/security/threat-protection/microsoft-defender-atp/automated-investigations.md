@@ -1,7 +1,7 @@
 ---
 title: Use automated investigations to investigate and remediate threats
 description: Understand the automated investigation flow in Microsoft Defender for Endpoint.
-keywords: automated, investigation, detection, source, threat types, id, tags, devices, duration, filter export, defender atp
+keywords: automated, investigation, detection, defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -11,13 +11,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 12/07/2020
+ms.date: 01/28/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
+- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
@@ -25,18 +25,19 @@ ms.custom: AIR
 
 # Overview of automated investigations
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
 
+If your organization is using Microsoft Defender for Endpoint, your security operations team receives an alert whenever a malicious or suspicious artifact is detected. Given the seemingly never-ending flow of threats that come in, security teams often face challenges in addressing the high volume of alerts. Fortunately, Defender for Endpoint includes automated investigation and remediation (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. 
 
-Your security operations team receives an alert whenever a malicious or suspicious artifact is detected by Microsoft Defender for Endpoint. Security operations teams face challenges in addressing the multitude of alerts that arise from the seemingly never-ending flow of threats. Microsoft Defender for Endpoint includes automated investigation and remediation (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. Want to see how it works? Watch the following video:
+Want to see how it works? Watch the following video: <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
-The technology in automated investigation uses various inspection algorithms and is based on processes that are used by security analysts. AIR capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR capabilities significantly reduce alert volume, allowing security operations to focus on more sophisticated threats and other high-value initiatives. The [Action center](auto-investigation-action-center.md) keeps track of all the investigations that were initiated automatically, along with details, such as investigation status, detection source, and any pending or completed actions.
+The technology in automated investigation uses various inspection algorithms and is based on processes that are used by security analysts. AIR capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR capabilities significantly reduce alert volume, allowing security operations to focus on more sophisticated threats and other high-value initiatives. All remediation actions, whether pending or completed, are tracked in the [Action center](auto-investigation-action-center.md). In the Action center, pending actions are approved (or rejected), and completed actions can be undone if needed.
+
+This article provides an overview of AIR and includes links to next steps and additional resources.
 
 > [!TIP]
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink).
