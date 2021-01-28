@@ -36,7 +36,21 @@ ms.technology: mde
 
 <br>
 <br>
+### 15.12.2020
+<hr>
+
+- Updated [Device](machine.md) entity with IP Interfaces. See [List devices](get-machines.md).
+
+<br>
+<br>
+### 04.12.2020
+<hr>
+
+- Added new API: [Set device value](set-device-value.md).
+
+<br>
+<br>
 ### 01.09.2020
 <hr>
 
-- Added option to expand the Alert object with its related Evidence. See [List Alerts](get-alerts.md)
+- Added option to expand the Alert entity with its related Evidence. See [List Alerts](get-alerts.md)
