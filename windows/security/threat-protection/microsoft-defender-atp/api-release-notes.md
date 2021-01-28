@@ -24,7 +24,7 @@ ms.technology: mde
 ### 25.01.2021
 <hr>
 
-- Updated rate limitations for [Hunting API](run-advanced-query-api.md) to 45 requests per minute. 
+- Updated rate limitations for [Advanced Hunting API](run-advanced-query-api.md) from 15 to 45 requests per minute. 
 
 <br>
 

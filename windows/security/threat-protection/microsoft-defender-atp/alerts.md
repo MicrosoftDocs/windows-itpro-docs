@@ -70,7 +70,6 @@ category| String | Category of the alert.
 detectionSource | String | Detection source.
 threatFamilyName | String | Threat family.
 threatName | String | Threat name.
-threatName | String | Threat name.
 machineId | String | ID of a [machine](machine.md) entity that is associated with the alert.
 computerDnsName | String | [machine](machine.md) fully qualified name.
 aadTenantId | String | The Azure Active Directory ID.
