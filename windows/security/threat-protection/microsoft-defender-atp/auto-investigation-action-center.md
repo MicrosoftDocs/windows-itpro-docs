@@ -1,5 +1,5 @@
 ---
-title: View details and results of automated investigations
+title: Visit the Action center to view remediation actions
 description: Use the action center to view details and results following an automated investigation
 keywords: action, center, autoir, automated, investigation, response, remediation
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.date: 01/28/2021
 ms.technology: mde
 ---
 
-# View details and results of automated investigations
+# Visit the Action center to view remediation actions
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -59,9 +59,16 @@ When you visit the Action center, you see two tabs: **Pending actions** and **Hi
 |**Pending**     | Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as **Quarantine file**). <br/>**TIP**: Make sure to review and approve (or reject) pending actions as soon as possible so that your automated investigations can complete in a timely manner. |
 |**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br>- Remediation actions that were approved by your security operations team  <br/>- Commands that were run and remediation actions that were applied during Live Response sessions  <br/>- Remediation actions that were taken by threat protection features in Microsoft Defender Antivirus  <p>Provides the ability to undo certain actions.       |
 
-Use the **Customize columns** menu to select columns that you'd like to show or hide. 
+You can customize, sort, filter, and export data in the Action center.
 
-You can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
+:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="Columns and filters in the Action center":::
+
+- Select a column eading to sort items in ascending or descending order.
+- Use the time period filter to view data for the past day, week, 30 days, or 6 months.
+- Choose the columns that you want to view.
+- Specify how many items to include on each page of data.
+- Use filters to view just the items you want to see.
+- Select **Export** to export results to a .csv file. 
 
 ## Next steps
 
