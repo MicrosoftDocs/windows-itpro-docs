@@ -21,7 +21,7 @@ ms.reviewer:
 
 - Windows 10
 
-Windows Hello for Business is a modern, two-factor credential that is the more secure alternative to passwords.  Whether you are cloud or on-premises, Windows Hello for Business has a deployment option for you.  For cloud deployments, you can use Windows Hello for Business with Azure Active Directory joined, Hybrid Azure Active Directory joined, or Azure Active Directory registered devices.  Windows Hello for Business also works for domain joined devices.
+Windows Hello for Business is a modern, two-factor credential that is the more secure alternative to passwords. Whether you are cloud or on-premises, Windows Hello for Business has a deployment option for you. For cloud deployments, you can use Windows Hello for Business with Azure Active Directory joined, Hybrid Azure Active Directory joined, or Azure Active Directory registered devices. Windows Hello for Business also works for domain joined devices.
 
 Watch this quick video where Pieter Wigleven gives a simple explanation of how Windows Hello for Business works and some of its supporting features.
 > [!VIDEO https://www.youtube.com/embed/G-GJuDWbBE8]
@@ -48,7 +48,7 @@ For more information read [how provisioning works](hello-how-it-works-provisioni
 
 ### Authentication
 
-Authentication using Windows Hello for Business is the goal, and the first step in getting to a passwordless environment. With the device registered, and provisioning complete. Users can sign-in to Windows 10 using biometrics or a PIN. PIN is the most common gesture and is available on most computers and devices. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential. The PIN nor the private portion of the credential are never sent to the identity provider, and the PIN is not stored on the device. It is user provided entropy when performing operations that use the private portion of the credential.
+With the device registered and provisioning complete, users can sign-in to Windows 10 using biometrics or a PIN. PIN is the most common gesture and is available on all computers unless restricted by policy requiring a TPM. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential. Neither the PIN nor the private portion of the credential are ever sent to the identity provider, and the PIN is not stored on the device. It is user provided entropy when performing operations that use the private portion of the credential.
 
 Watch Matthew Palko and Ravi Vennapusa explain how Windows Hello for Business authentication works.
 

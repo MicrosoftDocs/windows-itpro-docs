@@ -45,7 +45,7 @@ There are six major categories you need to consider for a Windows Hello for Busi
 - Client
 - Management
 - Active Directory
--Public Key Infrastructure
+- Public Key Infrastructure
 - Cloud
 
 ### Baseline Prerequisites
