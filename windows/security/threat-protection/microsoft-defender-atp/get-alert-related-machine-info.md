@@ -56,7 +56,8 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >- The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+
+```http
 GET /api/alerts/{id}/machine
 ```
 
