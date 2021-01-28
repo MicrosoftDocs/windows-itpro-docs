@@ -54,7 +54,7 @@ The former Action center for Microsoft Defender for Endpoint is located at [http
 
 The new, improved Action center is located at [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
 
-As part of the improved Microsoft 365 security center, the improved Action center unifies automated investigations across Microsoft Defender for Endpoint and Microsoft Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience. You can use the improved Action center, regardless of whether you are using Defender for Endpoint, Defender for Office 365, or Microsoft 365 Defender. 
+As part of the improved Microsoft 365 security center, the improved Action center unifies automated investigations across [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) and [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). It defines a common language for all remediation actions, and provides a unified investigation experience. You can use the improved Action center, regardless of whether you are using Defender for Endpoint, Defender for Office 365, or Microsoft 365 Defender. 
 
 In addition, the improved Microsoft 365 security center includes details for all automated investigations, including the alerts that were triggered, any impacted assets, pieces of evidence with their verdicts and remediation status, entities, and investigation logs. The improved Action center gives you the ability to approve pending actions in one central location. 
 

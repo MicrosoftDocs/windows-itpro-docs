@@ -118,6 +118,5 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 ## Next steps
 
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)
-
 - [View details and results of automated investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center)
 
