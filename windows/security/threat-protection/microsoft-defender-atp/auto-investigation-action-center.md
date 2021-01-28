@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.date: 01/27/2021
+ms.date: 01/28/2021
 ms.technology: mde
 ---
 
@@ -25,30 +25,29 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-During and after an automated investigation, certain remediation actions can be identified. Depending on the threat and how [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) is configured for your organization, some remediation actions are taken automatically. 
+During and after an automated investigation, remediation actions for threat detections are identified. Depending on the particular threat and how [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) is configured for your organization, some remediation actions are taken automatically, and others require approval. 
 
-If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center** ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)). Read this article to learn more.
-
->[!NOTE]
->If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view the device or device group will be able to view the entire investigation. 
+If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center** ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)). 
 
 ## The Action center
 
-The Action center consists of two main tabs: **Pending actions** and **History**.
-- **Pending actions**  Displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject. The **Pending** tab appears only if there are pending actions to be approved (or rejected). 
-- **History**  Acts as an audit log for all of the following items: <br/>
-   - Remediation actions that were taken as a result of an automated investigation
-   - Remediation actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone) 
-   - Commands that were run and remediation actions that were applied in Live Response sessions (some actions can be undone)
-   - Remediation actions that were applied by Microsoft Defender Antivirus (some actions can be undone) 
-
 :::image type="content" source="images/mde-action-center-unified.png" alt-text="Action center in Microsoft 365 security center":::
+
+
+The Action center consists of two main tabs: **Pending actions** and **History**.
+
+
+|Tab  |Description  |
+|---------|---------|
+|**Pending**     | Displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject. The **Pending** tab appears only if there are pending actions to be approved (or rejected).   |
+|**History**     | Serves as an audit log for all of the following actions: <br/>- Remediation actions that were taken as a result of an automated investigation <br>- Remediation actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone) <br/>- Commands that were run and remediation actions that were applied in Live Response sessions (some actions can be undone) <br/>- Remediation actions that were applied by Microsoft Defender Antivirus (some actions can be undone)        |
 
 Use the **Customize columns** menu to select columns that you'd like to show or hide. 
 
 You can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
 
 ## (NEW!) A unified Action center
+
 
 The former Action center for Microsoft Defender for Endpoint is located at [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center). 
 
