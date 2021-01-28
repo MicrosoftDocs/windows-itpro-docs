@@ -57,4 +57,4 @@ To configure automated investigation and remediation,
 
 ## See also
 
-[Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
