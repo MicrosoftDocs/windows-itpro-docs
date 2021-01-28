@@ -17,7 +17,7 @@ ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 01/27/2021
 ms.technology: mde
 ---
 
@@ -78,24 +78,21 @@ In Microsoft Defender for Endpoint, all verdicts are [tracked and viewable in th
 
 ## Review pending actions
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. You'll see the [Security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard).
-
-2. On the Security operations dashboard, in the navigation pane on the left, choose **Automated investigations** > **Action center**.
-
-3. Review any items on the **Pending** tab. 
-
-4. Select an investigation from any of the categories to open a panel where you can approve or reject remediation actions. 
-
-   Other details such as file or service details, investigation details, and alert details are displayed. From the panel, you can select the **Open investigation page** link to see the investigation details. You can also select multiple investigations to approve or reject actions on multiple investigations. 
+1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in..
+2. In the navigation pane, choose **Action center**. 
+3. Review the items on the **Pending** tab. 
+4. Select an action to open its flyout pane.
+5. In the flyout pane, review the information, and then take one of the following steps:
+   - Select **Open investigation page** to view more details about the investigation.
+   - Select **Approve** to initiate a pending action.
+   - Select **Reject** to prevent a pending action from being taken.
+   - Select **Go hunt** to go into [Advanced hunting](advanced-hunting-overview.md). 
 
 ## Review completed actions
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. You'll see the [Security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard).
-
-2. On the Security operations dashboard, in the navigation pane on the left, choose **Automated investigations** > **Action center**.
-
-3. Select the **History** tab. (If need be, expand the time period to display more data.)
-
+1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in..
+2. In the navigation pane, choose **Action center**. 
+3. Review the items on the **History** tab. 
 4. Select an item to view more details about that remediation action.
  
 ## Undo completed actions
@@ -108,24 +105,15 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 
 ### To undo multiple actions at one time
 
-1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
-
-2. On the **History** tab, select the actions that you want to undo.
-
-3. In the pane on the right side of the screen, select **Undo**.
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+2. On the **History** tab, select an action that you want to undo. Its flyout pane opens.
+3. In the flyout pane, select **Undo**.
 
 ### To remove a file from quarantine across multiple devices 
 
-
-1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
-
-2. On the **History** tab, select a file that has the Action type **Quarantine file**.
-
-   ![Action center](images/autoir-action-center-1.png)
-
-3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
-
-   ![Quarantine file](images/autoir-quarantine-file-1.png)
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+2. On the **History** tab, select an item that has the Action type **Quarantine file**.
+3. In the flyout pane, select **Apply to X more instances of this file**, and then select **Undo**.
 
 ## Next steps
 
