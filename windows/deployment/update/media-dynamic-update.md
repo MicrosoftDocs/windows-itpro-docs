@@ -64,7 +64,8 @@ Properly updating the installation media involves a large number of actions oper
 
 This table shows the correct sequence for applying the various tasks to the files. For example, the full sequence starts with adding the servicing stack update to WinRE (1) and concludes with adding the Dynamic Update for Setup to the new media (26).
 
-**Note**: Starting in February 2021, the latest cumulative update (LCU) and servicing stack update (SSU) will be combined and distributed in the Microsoft Update Catalog as a new, combined cumulative update. For steps 1, 9 and 18 below that require the SSU for updating the installation media, the combined cumulative update should be used.
+> [!NOTE]
+> Starting in February 2021, the latest cumulative update (LCU) and servicing stack update (SSU) will be combined and distributed in the Microsoft Update Catalog as a new, combined cumulative update. For steps 1, 9 and 18 below that require the SSU for updating the installation media, the combined cumulative update should be used.
 
 |Task  |WinRE (winre.wim)  |WinPE (boot.wim)  |Operating system (install.wim)  | New media |
 |---------|---------|---------|---------|------|
