@@ -378,7 +378,7 @@
 ###### [Deep analysis](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
 
 #### [Visit the Action center to see remediation actions](microsoft-defender-atp/auto-investigation-action-center.md)
-#### [View and approve pending actions](microsoft-defender-atp/manage-auto-investigation.md)
+##### [View and approve pending actions](microsoft-defender-atp/manage-auto-investigation.md)
 
 #### [Investigate entities using Live response]()
 ##### [Investigate entities on devices](microsoft-defender-atp/live-response.md)
