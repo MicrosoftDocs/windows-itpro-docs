@@ -19,25 +19,20 @@ ms.technology: mde
 
 # Release Notes
 
-## 25.01.2021
+### 25.01.2021
+<br>
+<hr>
 
 - Updated rate limitations for [Hunting API](run-advanced-query-api.md) to 45 requests per minute. 
 
-<hr> 
-## 21.01.2021
-
+### 21.01.2021
+<br>
+<hr>
 - Added new API: [Find devices by tag](machine-tags.md). 
 - Added new API: [Import Indicators](import-ti-indicators.md). 
 
-<hr> 
-## 01.09.2020
 
+### 01.09.2020
+<br>
+<hr>
 - Added option to expand the Alert object with its related Evidence. See [List Alerts](get-alerts.md)
-
-<hr> 
-## 2.1.58
-
-- fix: test4
-- fix: test5
-- add: test6
-<hr> 
