@@ -526,6 +526,7 @@
 
 ##### [Microsoft Defender for Endpoint APIs Schema]()
 ###### [Supported Microsoft Defender for Endpoint APIs](microsoft-defender-atp/exposed-apis-list.md)
+###### [Release Notes](microsoft-defender-atp/api-release-notes.md)
 ###### [Common REST API error codes](microsoft-defender-atp/common-errors.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
