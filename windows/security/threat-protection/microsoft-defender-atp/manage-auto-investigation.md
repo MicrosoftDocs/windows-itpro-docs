@@ -94,9 +94,9 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 2. On the **History** tab, select an item that has the Action type **Quarantine file**.
 3. In the flyout pane, select **Apply to X more instances of this file**, and then select **Undo**.
 
-## Automated investigation results and remediation actions
+## Automation levels, automated investigation results, and resulting actions
 
-The following table summarizes remediation actions, how automation level settings affect whether actions are taken automatically or upon approval, and what to do. 
+The following table summarizes automation levels, possible results of automated investigations, and what to do in each case. 
 
 |Device group setting | Automated investigation results | What to do |
 |:---|:---|:---|
