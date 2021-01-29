@@ -18,7 +18,7 @@ audience: ITPro
 ms.collection: 
 - m365-security-compliance
 - m365initiative-defender-endpoint
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 ---
