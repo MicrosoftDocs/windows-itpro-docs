@@ -20,9 +20,9 @@ ms.custom: bitlocker
 
 # BitLocker Group Policy settings
 
-**Applies to**
+**Applies to:**
 
-- Windows 10
+- Windows 10, Windows Server 2019, Windows Server 2016, Windows 8.1, and Windows Server 2012 R2
 
 This topic for IT professionals describes the function, location, and effect of each Group Policy setting that is used to manage BitLocker Drive Encryption.
 
@@ -36,6 +36,9 @@ Most of the BitLocker Group Policy settings are applied when BitLocker is initia
 
 If multiple changes are necessary to bring the drive into compliance, you must suspend BitLocker protection, make the necessary changes, and then resume protection. This situation could occur, for example, if a removable drive was initially configured to be unlocked with a password and then Group
 Policy settings are changed to disallow passwords and require smart cards. In this situation, you need to suspend BitLocker protection by using the [Manage-bde](/windows-server/administration/windows-commands/manage-bde) command-line tool, delete the password unlock method, and add the smart card method. After this is complete, BitLocker is compliant with the Group Policy setting and BitLocker protection on the drive can be resumed.
+
+> [!NOTE]
+> For more details about Active Directory configuration related to BitLocker enablement, please see [Set up MDT for BitLocker](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker).
 
 ## <a href="" id="bkmk-gptop"></a>BitLocker Group Policy settings
 

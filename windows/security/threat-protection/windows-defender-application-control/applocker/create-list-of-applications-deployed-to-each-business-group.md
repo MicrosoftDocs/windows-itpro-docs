@@ -4,7 +4,7 @@ description: This topic describes the process of gathering app usage requirement
 ms.assetid: d713aa07-d732-4bdc-8656-ba616d779321
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Create a list of apps deployed to each business group

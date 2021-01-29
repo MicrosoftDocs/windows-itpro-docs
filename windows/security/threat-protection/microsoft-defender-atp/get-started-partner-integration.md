@@ -5,7 +5,7 @@ description: Learn the steps and requirements to integrate your solution with Mi
 keywords: partner, integration, solution validation, certification, requirements, member, misa, application portal
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: conceptual 
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Become a Microsoft Defender for Endpoint partner
@@ -52,16 +53,12 @@ To have your company listed as a partner in the in-product partner page, you wil
 6. Include the User-Agent field in each API call made to Microsoft Defender for Endpoint public set of APIs or Graph Security APIs. This will be used for statistical purposes, troubleshooting, and partner recognition. In addition, this step is a requirement for membership in Microsoft Intelligent Security Association (MISA).
 
     Follow these steps:
-    1.	Identify a name adhering to the following nomenclature that includes your company name and the Microsoft Defender for Endpoint-integrated product with the version of the product that includes this integration. 
-      - ISV Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{Version}`
-      - Security partner Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{TenantID}` 
-
-
-   	- Set the User-Agent field in each HTTP request header to the name based on the Following nomenclature.
-
-    - `MsdePartner-{CompanyName}-{ProductName}/{Version}`
     
-    - For example, User-Agent: `MdatpPartner-Contoso-ContosoCognito/1.0.0`
+   	- Set the User-Agent field in each HTTP request header to the below format.
+
+    - `MdePartner-{CompanyName}-{ProductName}/{Version}`
+    
+    - For example, User-Agent: `MdePartner-Contoso-ContosoCognito/1.0.0`
     
     - For more information, see [RFC 2616 section-14.43](https://tools.ietf.org/html/rfc2616#section-14.43).
 

@@ -4,7 +4,7 @@ description: Resources for Microsoft Defender ATP for Mac, including how to unin
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Resources for Microsoft Defender for Endpoint for Mac
@@ -90,7 +91,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 
 |Group        |Scenario                                   |Command                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
-|Configuration|Turn on/off real-time protection           |`mdatp config real-time-protection [enabled/disabled]`                            |
+|Configuration|Turn on/off real-time protection           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
 |Configuration|Turn on/off cloud protection               |`mdatp config cloud --value [enabled/disabled]`                                   |
 |Configuration|Turn on/off product diagnostics            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
 |Configuration|Turn on/off automatic sample submission    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |

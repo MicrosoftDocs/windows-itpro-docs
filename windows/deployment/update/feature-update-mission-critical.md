@@ -1,6 +1,6 @@
 ---
 title: Best practices and recommendations for deploying Windows 10 Feature updates to mission-critical devices
-description: Learn how to use the Microsoft Endpoint Configuration Manager (current branch) software updates feature to deploy Windows 10 semi-annual feature updates.
+description: Learn how to use the Microsoft Endpoint Manager (current branch) software updates feature to deploy Windows 10 semi-annual feature updates.
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
@@ -19,7 +19,7 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**: Windows 10
 
-Managing an environment with devices that provide mission critical services 24 hours a day, 7 days a week, can present challenges in keeping these devices current with Windows 10 feature updates. The processes that you use to keep regular devices current with Windows 10 feature updates, often aren't the most effective to service mission critical devices. This whitepaper will focus on the recommended approach of using the Microsoft Endpoint Configuration Manager (current branch) software updates feature to deploy Windows 10 semi-annual feature updates. 
+Managing an environment with devices that provide mission critical services 24 hours a day, 7 days a week, can present challenges in keeping these devices current with Windows 10 feature updates. The processes that you use to keep regular devices current with Windows 10 feature updates, often aren't the most effective to service mission critical devices. This whitepaper will focus on the recommended approach of using the Microsoft Endpoint Manager (current branch) software updates feature to deploy Windows 10 semi-annual feature updates. 
 
 For simplicity, we will outline the steps to deploy a feature update manually. If you prefer an automated approach, see [Manage Windows as a service using Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/manage-windows-as-a-service). 
 

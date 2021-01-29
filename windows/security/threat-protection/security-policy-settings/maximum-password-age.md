@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: 2d6e70e7-c8b0-44fb-8113-870c6120871d
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Maximum password age
@@ -38,6 +39,9 @@ The **Maximum password age** policy setting determines the period of time (in da
 ### Best practices
 
 Set **Maximum password age** to a value between 30 and 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to compromise a user's password and have access to your network resources.
+
+> [!NOTE]
+> The security baseline recommended by Microsoft doesn't contain the password-expiration policy, as it is less effective than modern mitigations. However, companies that didn't implement Azure AD Password Protection, multifactor authentication, or other modern mitigations of password-guessing attacks, should leave this policy in effect.
 
 ### Location
 

@@ -2,16 +2,17 @@
 title: System Guard Secure Launch and SMM protection (Windows 10)
 description: Explains how to configure System Guard Secure Launch and System Management Mode (SMM protection) to improve the startup security of Windows 10 devices.
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
-ms.date: 03/01/2019
+ms.date: 12/28/2020
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # System Guard Secure Launch and SMM protection
@@ -91,3 +92,6 @@ To verify that Secure Launch is running, use System Information (MSInfo32). Clic
 |Modern/Connected Standby|Platforms must support Modern/Connected Standby.|
 |Platform firmware|Platform firmware must carry all code required to perform a launch.|
 |Platform firmware update|System firmware is recommended to be updated via UpdateCapsule in Windows Update. |
+
+> [!NOTE]
+> For more details around AMD processors, see [Microsoft Security Blog: Force firmware code to be measured and attested by Secure Launch on Windows 10](https://www.microsoft.com/security/blog/2020/09/01/force-firmware-code-to-be-measured-and-attested-by-secure-launch-on-windows-10/).

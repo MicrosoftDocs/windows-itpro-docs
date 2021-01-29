@@ -1,10 +1,10 @@
 ---
-title: Minimum requirements for Microsoft Defender ATP
+title: Minimum requirements for Microsoft Defender for Endpoint
 description: Understand the licensing requirements and requirements for onboarding devices to the service
 keywords: minimum requirements, licensing, comparison table
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Minimum requirements for Microsoft Defender for Endpoint
@@ -34,27 +35,34 @@ There are some minimum requirements for onboarding devices to the service. Learn
 > - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## Licensing requirements
-Microsoft Defender for Endpoint requires one of the following Microsoft Volume Licensing offers:
+Microsoft Defender for Endpoint requires one of the following Microsoft volume licensing offers:
 
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
-- Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
+- Microsoft 365 E5 Security
+- Microsoft 365 A5 Security
+- Microsoft Defender for Endpoint
 
 > [!NOTE]
-> Eligible Licensed Users may use Microsoft Defender for Endpoint on up to five concurrent devices.
-> Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP). 
+> Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.
+> Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP).
 
-Microsoft Defender for Endpoint, on Windows Server, requires one of the following licensing options:
+Microsoft Defender for Endpoint for servers requires one of the following licensing options:
 
 - [Azure Security Center with Azure Defender enabled](https://docs.microsoft.com/azure/security-center/security-center-pricing)
-- Defender for Endpoint for Servers (one per covered server)
+- Microsoft Defender for Endpoint for Server (one per covered server)
 
 > [!NOTE]
-> Customers with a combined minimum of 50 licenses for one or more of the following may acquire Server SLs for Microsoft Defender Defender for Endpoint for Servers (one per covered Server OSE): Microsoft Defender for Endpoint, Windows E5/A5, Microsoft 365 E5/A5 and Microsoft 365 E5 Security User SLs. This license applies to Defender for Endpoint for Linux.
+> Customers may acquire server licenses (one per covered server Operating System Environment (OSE)) for Microsoft Defender for Endpoint for Servers if they have a combined minimum of 50 licenses for one or more of the following user licenses:
+>
+> * Microsoft Defender for Endpoint
+> * Windows E5/A5
+> * Microsoft 365 E5/A5
+> * Microsoft 365 E5/A5 Security
 
-For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn the detailed terms and conditions for the product.
+For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn more about the terms and conditions.
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
@@ -89,6 +97,7 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
   - Windows Server 2016
   - Windows Server, version 1803 or later
   - Windows Server 2019
+- Windows Virtual Desktop
 
 Devices on your network must be running one of these editions.
 
@@ -104,7 +113,7 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 
 ### Other supported operating systems
 - Android
-- Linux 
+- Linux
 - macOS
 
 > [!NOTE]
@@ -186,7 +195,7 @@ The Defender for Endpoint agent depends on the ability of Microsoft Defender Ant
 
 Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
 
-When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes on passive mode. 
+When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes on passive mode.
 
 If your organization has turned off Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded must be excluded from this group policy.
 
@@ -201,7 +210,7 @@ For more information, see [Microsoft Defender Antivirus compatibility](../micros
 ## Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
 If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Defender for Endpoint agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Configuration Manager (current branch), you'll need to ensure that the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Manager (current branch), you'll need to ensure that the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 
 ## Related topics

@@ -4,8 +4,8 @@ description: This is Phase 2, Setup, of migrating from Symantec to Microsoft Def
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,8 +15,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-symantecmigrate 
+  - M365-security-compliance
+  - m365solution-symantecmigrate
 ms.topic: article
 ms.date: 11/30/2020
 ms.custom: migrationguides
@@ -28,7 +28,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-|[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |![Phase 2: Set up](images/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
+|[![Phase 1: Prepare](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |![Phase 2: Set up](images/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
 |--|--|--|
 ||*You are here!* | |
 
@@ -64,15 +64,16 @@ Now that you're moving from Symantec to Microsoft Defender for Endpoint, you'll 
 
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
-2. Run the following PowerShell cmdlets: <br/>
-   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/>
-   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
+2. Run the following PowerShell cmdlets:
 
-> [!NOTE]
-> When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
-> Example:<br/>
-> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
-> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/>
+   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`
+
+   > [!NOTE]
+   > When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
+   > Example:<br/>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
@@ -174,10 +175,12 @@ To add exclusions to Microsoft Defender for Endpoint, you create [indicators](ht
 3.  On the **File hashes** tab, choose **Add indicator**.
 
 3. On the **Indicator** tab, specify the following settings:
+
    - File hash (Need help? See [Find a file hash using CMPivot](#find-a-file-hash-using-cmpivot) in this article.)
    - Under **Expires on (UTC)**, choose **Never**.
 
 4. On the **Action** tab, specify the following settings:
+
    - **Response Action**: **Allow**
    - Title and description
 
@@ -203,12 +206,14 @@ To use CMPivot to get your file hash, follow these steps:
 
 6. In the query box, type the following query:<br/>
 
-```kusto
-File(c:\\windows\\notepad.exe)
-| project Hash
-```
-> [!NOTE]
-> In the query above, replace *notepad.exe* with the your third-party security product process name. 
+   ```kusto
+   File(c:\\windows\\notepad.exe)
+   | project Hash
+   ```
+   
+   > [!NOTE]
+   > In the query above, replace *notepad.exe* with the your third-party security product process name. 
+   
 
 ## Set up your device groups, device collections, and organizational units
 

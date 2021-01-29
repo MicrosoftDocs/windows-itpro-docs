@@ -1,10 +1,10 @@
 ---
-title: Pull Microsoft Defender ATP detections using REST API
-description: Learn how call an Microsoft Defender ATP endpoint to pull detections in JSON format using the SIEM REST API.
+title: Pull Microsoft Defender for Endpoint detections using REST API
+description: Learn how call an Microsoft Defender for Endpoint API endpoint to pull detections in JSON format using the SIEM REST API.
 keywords: detections, pull detections, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Pull Microsoft Defender for Endpoint detections using SIEM REST API
@@ -22,12 +23,11 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 >[!Note]
 >- [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
@@ -203,7 +203,7 @@ Here is an example return value:
 The following code examples demonstrate how to obtain an access token for calling the Microsoft Defender for Endpoint SIEM API.
 
 ```csharp
-AuthenticationContext context = new AuthenticationContext(string.Format("https://login.windows.net/{0}", tenantId));
+AuthenticationContext context = new AuthenticationContext(string.Format("https://login.microsoftonline.com/{0}", tenantId));
 ClientCredential clientCredentials = new ClientCredential(clientId, clientSecret);
 AuthenticationResult authenticationResult = context.AcquireTokenAsync(detectionsResource, clientCredentials).GetAwaiter().GetResult();
 ```
@@ -218,7 +218,7 @@ $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application secret here
 
 $resourceAppIdUri = 'https://graph.windows.net'
-$oAuthUri = "https://login.windows.net/$tenantId/oauth2/token"
+$oAuthUri = "https://login.microsoftonline.com/$tenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"
     client_id = "$appId"
@@ -237,7 +237,7 @@ tenantId='' ### Paste your tenant ID here
 appId='' ### Paste your Application ID here
 appSecret='' ### Paste your Application secret here
 resourceAppIdUri='https://graph.windows.net'
-oAuthUri="https://login.windows.net/$tenantId/oauth2/token"
+oAuthUri="https://login.microsoftonline.com/$tenantId/oauth2/token"
 scriptDir=$(pwd)
 
 apiResponse=$(curl -s X POST "$oAuthUri" -d "resource=$resourceAppIdUri&client_id=$appId&client_secret=$appSecret&\

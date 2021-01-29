@@ -75,7 +75,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. By default, Add features to Windows 10 is available for all administrators. 
+Available in the latest Windows 10 Insider Preview Build. By default, Add features to Windows 10 is available for all administrators. 
 
 If you enable this policy setting, the wizard will not run.
 

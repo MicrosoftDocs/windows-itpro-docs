@@ -2,7 +2,7 @@
 title: Deployment guidelines for Windows Defender Device Guard (Windows 10)
 description: Plan your deployment of Windows Defender Device Guard. Learn about hardware requirements, deployment approaches, code signing and code integrity policies.
 keywords: virtualization, security, malware
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: dansimp
@@ -13,6 +13,7 @@ ms.topic: conceptual
 ms.date: 10/20/2017
 ms.reviewer: 
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # Baseline protections and additional qualifications for virtualization-based protection of code integrity

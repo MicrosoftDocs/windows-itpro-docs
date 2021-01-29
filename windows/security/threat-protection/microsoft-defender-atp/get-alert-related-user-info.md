@@ -1,9 +1,9 @@
 ---
-title: Get alert related user information 
+title: Get alert related user information
 description: Learn how to use the Get alert related user information API to retrieve the user related to a specific alert in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alert, information, related, user
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Get alert related user information API
@@ -24,6 +25,10 @@ ms.topic: article
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -73,11 +78,8 @@ If successful and alert and a user exists - 200 OK with user in the body. If ale
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-
-```
-GET https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280442/user
+```http
+GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/user
 ```
 
 **Response**
@@ -85,11 +87,9 @@ GET https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Users/$entity",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Users/$entity",
     "id": "contoso\\user1",
     "accountName": "user1",
     "accountDomain": "contoso",

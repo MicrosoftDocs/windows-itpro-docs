@@ -4,7 +4,7 @@ description: Review and approve (or reject) remediation actions following an aut
 keywords: autoir, automated, investigation, detection, dashboard, source, threat types, id, tags, devices, duration, filter export
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.date: 12/07/2020
+ms.date: 12/15/2020
+ms.technology: mde
 ---
 
 # Review and approve remediation actions following an automated investigation
@@ -97,6 +98,35 @@ In Microsoft Defender for Endpoint, all verdicts are [tracked and viewable in th
 
 4. Select an item to view more details about that remediation action.
  
+## Undo completed actions
+
+If you’ve determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. In the Action center, on the **History** tab, you can undo any of the following actions:  
+
+| Action source | Supported Actions |
+|:---|:---|
+| - Automated investigation <br/>- Microsoft Defender Antivirus <br/>- Manual response actions | - Isolate device <br/>- Restrict code execution <br/>- Quarantine a file <br/>- Remove a registry key <br/>- Stop a service <br/>- Disable a driver <br/>- Remove a scheduled task |
+
+### To undo multiple actions at one time
+
+1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+
+2. On the **History** tab, select the actions that you want to undo.
+
+3. In the pane on the right side of the screen, select **Undo**.
+
+### To remove a file from quarantine across multiple devices 
+
+
+1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+
+2. On the **History** tab, select a file that has the Action type **Quarantine file**.
+
+   ![Action center](images/autoir-action-center-1.png)
+
+3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
+
+   ![Quarantine file](images/autoir-quarantine-file-1.png)
+
 ## Next steps
 
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)

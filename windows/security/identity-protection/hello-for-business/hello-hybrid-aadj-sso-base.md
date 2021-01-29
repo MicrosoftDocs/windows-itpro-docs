@@ -13,12 +13,13 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/19/2018
+ms.date: 01/14/2021
 ms.reviewer: 
 ---
 # Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business
 
 **Applies to**
+
 - Windows 10
 - Azure Active Directory joined
 - Hybrid Deployment
@@ -63,6 +64,7 @@ If your CRL distribution point does not list an HTTP distribution point, then yo
 > If your CA has published both the Base and the Delta CRL, please make sure you have included publishing the Delta CRL in the HTTP path. Include web server to fetch the Delta CRL by allowing double escaping in the (IIS) web server.
 
 ### Windows Server 2016 Domain Controllers
+
 If you are interested in configuring your environment to use the Windows Hello for Business key rather than a certificate, then your environment must have an adequate number of Windows Server 2016 domain controllers.  Only Windows Server 2016 domain controllers are capable of authenticating user with a Windows Hello for Business key.  What do we mean by adequate?  We are glad you asked.  Read [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
 If you are interested in configuring your environment to use the Windows Hello for Business certificate rather than key, then you are the right place.  The same certificate configuration on the domain controllers is needed, whether you are using Windows Server 2016 domain controllers or domain controllers running earlier versions of Windows Server.  You can simply ignore the Windows Server 2016 domain controller requirement.  
@@ -73,20 +75,20 @@ Certificate authorities write CRL distribution points in certificates as they ar
 
 #### Why does Windows need to validate the domain controller certificate?
 
-Windows Hello for Business enforces the strict KDC validation security feature, which imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
+Windows Hello for Business enforces the strict KDC validation security feature when authenticating from an Azure AD joined device to a domain. This enforcement imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business on an Azure AD joined device, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
 
 - The domain controller has the private key for the certificate provided.
 - The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorities**.
 - Use the **Kerberos Authentication certificate template** instead of any other older template.
-- The domain controller's certificate has the **KDC Authentication** enhanced key usage.
+- The domain controller's certificate has the **KDC Authentication** enhanced key usage (EKU).
 - The domain controller's certificate's subject alternate name has a DNS Name that matches the name of the domain.
 - The domain controller's certificate's signature hash algorithm is **sha256**.
 - The domain controller's certificate's public key is **RSA (2048 Bits)**.
 
+Authenticating from a Hybrid Azure AD joined device to a domain using Windows Hello for Business does not enforce that the domain controller certificate includes the **KDC Authentication** EKU. If you are adding Azure AD joined devices to an existing domain environment, make sure to verify that your domain controller certificate has been updated to include the **KDC Authentication** EKU. If you need to update your domain controller certificate to include the **KDC Authentication** EKU, follow the instructions in [Configure Hybrid Windows Hello for Business: Public Key Infrastructure](hello-hybrid-key-whfb-settings-pki.md)
 
 > [!Tip]
 > If you are using Windows Server 2008, **Kerberos Authentication** is not the default template, so make sure to use the correct template when issuing or re-issuing the certificate.
- 
 
 ## Configuring a CRL Distribution Point for an issuing certificate authority
 
