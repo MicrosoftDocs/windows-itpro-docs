@@ -39,10 +39,6 @@ The new, unified Action center  ||The previous Action center  |
 |Is located at:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Is located at:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
 | In the Microsoft 365 security center, choose **Action center**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigating to the Action Center in the Microsoft 365 security center"::: | In the Microsoft Defender Security Center, choose **Automated investigations** > **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigating to the Action center from the Microsoft Defender Security Center":::  |
 
-The Action center is easily accessed within the improved Microsoft 365 security center.
-1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
-2. In the navigation pane, select **Action center**. 
-
 The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience. 
 
 You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
@@ -54,6 +50,10 @@ You can use the unified Action center if you have appropriate permissions and on
 > To learn more, see [Requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
 
 ## Using the Action center
+
+The Action center is easily accessed within the improved Microsoft 365 security center.
+1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+2. In the navigation pane, select **Action center**. 
 
 When you visit the Action center, you see two tabs: **Pending actions** and **History**. The following table summarizes what you'll see on each tab:
 
