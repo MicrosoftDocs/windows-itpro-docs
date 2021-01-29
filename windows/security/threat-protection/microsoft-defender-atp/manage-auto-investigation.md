@@ -17,7 +17,7 @@ ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.date: 01/27/2021
+ms.date: 01/28/2021
 ms.technology: mde
 ---
 
@@ -117,6 +117,6 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 
 ## Next steps
 
-- [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)
-- [View details and results of automated investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center)
-
+- [Learn about live response capabilities](live-response.md)
+- [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md)
+- [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
