@@ -18,7 +18,7 @@
 #### [User Account Control security policy settings](user-account-control\user-account-control-security-policy-settings.md)
 #### [User Account Control Group Policy and registry key settings](user-account-control\user-account-control-group-policy-and-registry-key-settings.md)
 
-## [Windows Hello for Business](hello-for-business/hello-identity-verification.md)
+## [Windows Hello for Business](hello-for-business/index.yml)
 
 ## [Protect derived domain credentials with Credential Guard](credential-guard/credential-guard.md)
 ### [How Credential Guard works](credential-guard/credential-guard-how-it-works.md)
