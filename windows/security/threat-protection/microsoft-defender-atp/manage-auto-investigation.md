@@ -17,7 +17,7 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 01/29/2021
 ms.technology: mde
 ---
 
@@ -84,7 +84,7 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 ### To undo multiple actions at one time
 
 1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
-2. On the **History** tab, select an action that you want to undo. Its flyout pane opens.
+2. On the **History** tab, select the actions that you want to undo. Make sure to select items that have the same Action type. A flyout pane opens.
 3. In the flyout pane, select **Undo**.
 
 ### To remove a file from quarantine across multiple devices 
