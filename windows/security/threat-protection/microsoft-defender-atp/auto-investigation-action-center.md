@@ -51,7 +51,7 @@ You can use the unified Action center if you have appropriate permissions and on
 
 ## Using the Action center
 
-The Action center is easily accessed within the improved Microsoft 365 security center.
+To get to the unified Action center in the improved Microsoft 365 security center:
 1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 2. In the navigation pane, select **Action center**. 
 
