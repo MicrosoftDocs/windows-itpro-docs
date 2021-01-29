@@ -160,7 +160,7 @@ The Windows Hello for Business deployment depends on an enterprise public key in
 
 ### Cloud
 
-Some deployment combinations require an Azure account, and some require Azure Active Directory for user identities.  These cloud requirements may only need an Azure account while other features need an Azure Active Directory Premium subscription. The planning process identifies and differentiates the components that are needed from the those that are optional.
+Some deployment combinations require an Azure account, and some require Azure Active Directory for user identities.  These cloud requirements may only need an Azure account while other features need an Azure Active Directory Premium subscription. The planning process identifies and differentiates the components that are needed from those that are optional.
 
 ## Planning a Deployment
 
