@@ -84,10 +84,10 @@ The response will include an access token and expiry information.
 ```json
 {
   "token_type": "Bearer",
-  "expires_in": "3599",
-  "ext_expires_in": "0",
-  "expires_on": "1488720683",
-  "not_before": "1488720683",
+  "expires_in": 3599,
+  "ext_expires_in": 0,
+  "expires_on": 1488720683,
+  "not_before": 1488720683,
   "resource": "https://graph.windows.net",
   "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
 }
