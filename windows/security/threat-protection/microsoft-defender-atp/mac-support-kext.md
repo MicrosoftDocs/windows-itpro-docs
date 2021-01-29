@@ -44,7 +44,7 @@ mdatp health
 ```
 ```Output
 ...
-real_time_protection_enabled                : true
+real_time_protection_enabled                : false
 real_time_protection_available              : true
 ...
 ```
