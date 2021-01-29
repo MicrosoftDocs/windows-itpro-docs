@@ -60,7 +60,7 @@ When you visit the Action center, you see two tabs: **Pending actions** and **Hi
 |Tab  |Description  |
 |---------|---------|
 |**Pending**     | Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as **Quarantine file**). <br/>**TIP**: Make sure to [review and approve (or reject) pending actions](manage-auto-investigation.md) as soon as possible so that your automated investigations can complete in a timely manner. |
-|**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br>- Remediation actions that were approved by your security operations team  <br/>- Commands that were run and remediation actions that were applied during Live Response sessions  <br/>- Remediation actions that were taken by threat protection features in Microsoft Defender Antivirus  <p>Provides a way to undo certain actions.       |
+|**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br>- Remediation actions that were approved by your security operations team  <br/>- Commands that were run and remediation actions that were applied during Live Response sessions  <br/>- Remediation actions that were taken by threat protection features in Microsoft Defender Antivirus  <p>Provides a way to undo certain actions (see [Undo completed actions](manage-auto-investigation.md#undo-completed-actions)).       |
 
 You can customize, sort, filter, and export data in the Action center.
 
