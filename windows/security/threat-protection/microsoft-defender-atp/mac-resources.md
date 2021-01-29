@@ -149,7 +149,7 @@ To enable autocompletion in zsh:
 
 ## Client Microsoft Defender for Endpoint quarantine directory
 
-`/Library/Application Support/Microsoft/Defender/quarantine/` contains the files quarantined by `mdatp`. The files are named after the threat trackingId. The current trackingIds is shown with `mdatp --threat --list --pretty`.
+`/Library/Application Support/Microsoft/Defender/quarantine/` contains the files quarantined by `mdatp`. The files are named after the threat trackingId. The current trackingIds is shown with `mdatp threat list`.
 
 ## Microsoft Defender for Endpoint portal information
 
