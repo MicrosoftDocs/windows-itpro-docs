@@ -1,7 +1,7 @@
 ---
-title: Review and approve remediation actions following automated investigations
+title: Review remediation actions following automated investigations
 description: Review and approve (or reject) remediation actions following an automated investigation.
-keywords: autoir, automated, investigation, detection, dashboard, source, threat types, id, tags, devices, duration, filter export
+keywords: autoir, automated, investigation, detection, remediation, action, pending, approved
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -14,14 +14,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
+- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.date: 01/28/2021
 ms.technology: mde
 ---
 
-# Review and approve remediation actions following an automated investigation
+# Review remediation actions following an automated investigation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -53,7 +53,6 @@ Whether taken automatically or upon approval, an automated investigation can res
 - Stop a service 
 - Disable a driver 
 - Remove a scheduled task
-
 
 ## Review pending actions
 
