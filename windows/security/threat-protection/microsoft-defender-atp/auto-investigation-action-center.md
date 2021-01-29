@@ -1,5 +1,5 @@
 ---
-title: Visit the Action center to view remediation actions
+title: Visit the Action center to see remediation actions
 description: Use the action center to view details and results following an automated investigation
 keywords: action, center, autoir, automated, investigation, response, remediation
 search.product: eADQiWindows 10XVcnh
@@ -21,9 +21,7 @@ ms.date: 01/28/2021
 ms.technology: mde
 ---
 
-# Visit the Action center to view remediation actions
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# Visit the Action center to see remediation actions
 
 During and after an automated investigation, remediation actions for threat detections are identified. Depending on the particular threat and how [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) is configured for your organization, some remediation actions are taken automatically, and others require approval. If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center**. 
 
