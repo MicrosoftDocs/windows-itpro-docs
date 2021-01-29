@@ -44,13 +44,14 @@ This article provides an overview of AIR and includes links to next steps and ad
 
 ## How the automated investigation starts
 
-### An automated investigation can start when an alert is triggered
+An automated investigation can start when an alert is triggered or when a security operator initiates the investigation.
 
-In general, an automated investigation starts when an [alert](review-alerts.md) is triggered, and an [incident](view-incidents-queue.md) is created. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and incident is created. An automated investigation process begins on the device. As other alerts are generated because of the same file on other devices, they are added to the associated incident and to the automated investigation. 
 
-### An automated investigation can be initiated manually
-
-An automated investigation can be started manually by your security operations team. For example, suppose a security operator is reviewing a list of devices and notices that a device has a high risk level. The security operator can select the device in the list to open its flyout, and then select **Initiate Automated Investigation**.
+|Situation  |What happens  |
+|---------|---------|
+|An alert is triggered     | In general, an automated investigation starts when an [alert](review-alerts.md) is triggered, and an [incident](view-incidents-queue.md) is created. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and incident is created. An automated investigation process begins on the device. As other alerts are generated because of the same file on other devices, they are added to the associated incident and to the automated investigation.         |
+|An investigation is started manually     | An automated investigation can be started manually by your security operations team. For example, suppose a security operator is reviewing a list of devices and notices that a device has a high risk level. The security operator can select the device in the list to open its flyout, and then select **Initiate Automated Investigation**.
+        |
 
 ## How an automated investigation expands its scope
 
