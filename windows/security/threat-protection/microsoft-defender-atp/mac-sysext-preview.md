@@ -45,7 +45,7 @@ These steps assume you already have Defender for Endpoint running on your device
 - Your device must be in the **Insider Fast update channel**. You can check the update channel by using the following command:
 
   ```bash
-  mdatp --health releaseRing
+  mdatp health --field release_ring
   ```
 
   If your device isn't already in the Insider Fast update channel, execute the following command from the Terminal. The channel update takes effect the next time the product starts (when the next product update is installed, or when the device is rebooted).
