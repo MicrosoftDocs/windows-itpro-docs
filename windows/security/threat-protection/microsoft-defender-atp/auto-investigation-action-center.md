@@ -40,7 +40,11 @@ We are pleased to announce a new, unified Action center ([https://security.micro
 |Listed pending and completed actions for devices <br/> ([Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) only)  |Lists pending and completed actions for devices and email in one location <br/>([Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) plus [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)) |
 |[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |
 
-Easily accessed within the improved Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), the unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience. 
+The Action center is easily accessed within the improved Microsoft 365 security center.
+1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+2. In the navigation pane, select **Action center**. 
+
+The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience. 
 
 You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
 - [Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)
