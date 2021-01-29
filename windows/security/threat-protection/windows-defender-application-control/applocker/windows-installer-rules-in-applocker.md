@@ -4,7 +4,7 @@ description: This topic describes the file formats and available default rules f
 ms.assetid: 3fecde5b-88b3-4040-81fa-a2d36d052ec9
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Windows Installer rules in AppLocker

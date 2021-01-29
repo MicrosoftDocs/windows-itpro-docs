@@ -1,10 +1,10 @@
 ---
 title: Create a WDAC policy for fully-managed devices (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
-keywords:  security, malware
+keywords: security, malware
 ms.topic: conceptual
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,6 +16,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 11/20/2019
+ms.technology: mde
 ---
 
 # Create a WDAC policy for fully-managed devices

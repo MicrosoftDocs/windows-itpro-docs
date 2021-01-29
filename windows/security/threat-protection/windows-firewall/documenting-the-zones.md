@@ -4,7 +4,7 @@ description: Learn how to document the zone placement of devices in your design 
 ms.assetid: ebd7a650-4d36-42d4-aac0-428617f5a32d
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Documenting the Zones

@@ -3,7 +3,7 @@ title: Evaluate controlled folder access
 description: See how controlled folder access can help protect files from being changed by malicious apps.
 keywords: Exploit protection, windows 10, windows defender, ransomware, protect, evaluate, test, demo, try
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,6 +12,7 @@ author: levinec
 ms.author: ellevin
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Evaluate controlled folder access

@@ -1,9 +1,9 @@
 ---
 title: Windows Defender Application Control and .NET Hardening (Windows 10)
 description: Dynamic Code Security is an application control feature that can verify code loaded by .NET at runtime.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 08/20/2018
+ms.technology: mde
 ---
 
 # Windows Defender Application Control and .NET hardening 

@@ -4,7 +4,7 @@ description: This topic for IT professionals describes how to optimize AppLocker
 ms.assetid: a20efa20-bc98-40fe-bd81-28ec4905e0f6
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Optimize AppLocker performance

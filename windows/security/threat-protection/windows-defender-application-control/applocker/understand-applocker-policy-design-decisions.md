@@ -4,7 +4,7 @@ description: Review some common considerations while you are planning to use App
 ms.assetid: 3475def8-949a-4b51-b480-dc88b5c1e6e6
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/13/2017
+ms.technology: mde
 ---
 
 # Understand AppLocker policy design decisions

@@ -4,7 +4,7 @@ description: This security policy reference topic for the IT professional descri
 ms.assetid: d21308eb-7c60-4e48-8747-62b8109844f9
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Accounts: Rename administrator account

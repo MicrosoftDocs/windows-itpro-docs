@@ -4,7 +4,7 @@ description: Configure Windows Defender Firewall with Advanced Security to suppr
 ms.assetid: b7665d1d-f4d2-4b5a-befc-8b6bd940f69b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Configure Windows Defender Firewall with Advanced Security to Suppress Notifications When a Program Is Blocked

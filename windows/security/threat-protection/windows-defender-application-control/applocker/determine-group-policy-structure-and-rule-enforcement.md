@@ -4,7 +4,7 @@ description: This overview topic describes the process to follow when you are pl
 ms.assetid: f435fcbe-c7ac-4ef0-9702-729aab64163f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Determine the Group Policy structure and rule enforcement

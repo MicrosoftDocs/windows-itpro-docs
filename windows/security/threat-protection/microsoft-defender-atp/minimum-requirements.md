@@ -1,10 +1,10 @@
 ---
-title: Minimum requirements for Microsoft Defender ATP
+title: Minimum requirements for Microsoft Defender for Endpoint
 description: Understand the licensing requirements and requirements for onboarding devices to the service
 keywords: minimum requirements, licensing, comparison table
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Minimum requirements for Microsoft Defender for Endpoint
@@ -42,15 +43,16 @@ Microsoft Defender for Endpoint requires one of the following Microsoft volume l
 - Microsoft 365 A5 (M365 A5)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 Security
+- Microsoft Defender for Endpoint
 
 > [!NOTE]
 > Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.
 > Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP).
 
-Microsoft Defender for Endpoint, on Windows Server, requires one of the following licensing options:
+Microsoft Defender for Endpoint for servers requires one of the following licensing options:
 
 - [Azure Security Center with Azure Defender enabled](https://docs.microsoft.com/azure/security-center/security-center-pricing)
-- Defender for Endpoint for Servers (one per covered server)
+- Microsoft Defender for Endpoint for Server (one per covered server)
 
 > [!NOTE]
 > Customers may acquire server licenses (one per covered server Operating System Environment (OSE)) for Microsoft Defender for Endpoint for Servers if they have a combined minimum of 50 licenses for one or more of the following user licenses:

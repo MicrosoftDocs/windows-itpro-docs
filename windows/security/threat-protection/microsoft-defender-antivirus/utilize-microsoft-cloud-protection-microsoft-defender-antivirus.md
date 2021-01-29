@@ -3,7 +3,7 @@ title: Use next-generation technologies in Microsoft Defender Antivirus through 
 description: next-generation technologies in cloud-delivered protection provide an advanced level of fast, robust antivirus detection.
 keywords: Microsoft Defender Antivirus, next-generation technologies, next-generation av, machine learning, antimalware, security, defender, cloud, cloud-delivered protection
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,6 +12,7 @@ ms.author: deniseb
 ms.reviewer: shwjha
 manager: dansimp
 ms.custom: nextgen
+ms.technology: mde
 ---
 
 # Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection
@@ -45,11 +46,11 @@ src="https://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc
 
 Read the following blog posts for detailed protection stories involving cloud-protection and Microsoft AI: 
 
-- [Why Microsoft Defender Antivirus is the most deployed in the enterprise](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/22/why-microsoft-defender-antivirus-is-the-most-deployed-in-the-enterprise/) 
-- [Behavior monitoring combined with machine learning spoils a massive Dofoil coin mining campaign](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/)
-- [How artificial intelligence stopped an Emotet outbreak](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak/)
-- [Detonating a bad rabbit: Microsoft Defender Antivirus and layered machine learning defenses](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-microsoft-defender-antivirus-and-layered-machine-learning-defenses/)
-- [Microsoft Defender Antivirus cloud protection service: Advanced real-time defense against never-before-seen malware](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/18/microsoft-defender-antivirus-cloud-protection-service-advanced-real-time-defense-against-never-before-seen-malware/) 
+- [Why Microsoft Defender Antivirus is the most deployed in the enterprise](https://www.microsoft.com/security/blog/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise) 
+- [Behavior monitoring combined with machine learning spoils a massive Dofoil coin mining campaign](https://www.microsoft.com/security/blog/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)
+- [How artificial intelligence stopped an Emotet outbreak](https://www.microsoft.com/security/blog/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)
+- [Detonating a bad rabbit: Microsoft Defender Antivirus and layered machine learning defenses](https://www.microsoft.com/security/blog/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses)
+- [Microsoft Defender Antivirus cloud protection service: Advanced real-time defense against never-before-seen malware](https://www.microsoft.com/security/blog/2017/07/18/windows-defender-antivirus-cloud-protection-service-advanced-real-time-defense-against-never-before-seen-malware) 
  
 ## Get cloud-delivered protection 
 
