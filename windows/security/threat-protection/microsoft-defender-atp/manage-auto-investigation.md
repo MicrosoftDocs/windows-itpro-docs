@@ -96,7 +96,7 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 
 ## Automation levels, automated investigation results, and resulting actions
 
-The following table summarizes automation levels, possible results of automated investigations, and what to do in each case. 
+Automation levels affect whether certain remediation actions are taken automatically or only upon approval. Sometimes your security operations team has additional steps to take, depending on the results of an automated investigation. The following table summarizes automation levels, results of automated investigations, and what to do in each case. 
 
 |Device group setting | Automated investigation results | What to do |
 |:---|:---|:---|
@@ -117,3 +117,7 @@ In Microsoft Defender for Endpoint, all verdicts are tracked in the [Action cent
 - [Learn about live response capabilities](live-response.md)
 - [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md)
 - [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+
+## See also
+
+- [Overview of automated investigations](automated-investigations.md)
