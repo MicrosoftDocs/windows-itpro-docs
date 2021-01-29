@@ -56,7 +56,7 @@ Whether taken automatically or upon approval, an automated investigation can res
 
 ## Review pending actions
 
-1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in..
+1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 2. In the navigation pane, choose **Action center**. 
 3. Review the items on the **Pending** tab. 
 4. Select an action to open its flyout pane.
@@ -95,7 +95,7 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 
 ## Automation levels, automated investigation results, and resulting actions
 
-Automation levels affect whether certain remediation actions are taken automatically or only upon approval. Sometimes your security operations team has additional steps to take, depending on the results of an automated investigation. The following table summarizes automation levels, results of automated investigations, and what to do in each case. 
+Automation levels affect whether certain remediation actions are taken automatically or only upon approval. Sometimes your security operations team has more steps to take, depending on the results of an automated investigation. The following table summarizes automation levels, results of automated investigations, and what to do in each case. 
 
 |Device group setting | Automated investigation results | What to do |
 |:---|:---|:---|
