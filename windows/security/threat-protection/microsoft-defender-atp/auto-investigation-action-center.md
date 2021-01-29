@@ -33,7 +33,7 @@ We are pleased to announce a new, unified Action center ([https://security.micro
 
 The following table compares the new, unified Action center to the previous Action center.
 
-The new, unified Action center  ||The previous Action center  |
+|The new, unified Action center  |The previous Action center  |
 |---------|---------|
 |Lists pending and completed actions for devices and email in one location <br/>([Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) plus [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp))|Lists pending and completed actions for devices <br/> ([Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) only)   |
 |Is located at:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Is located at:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
