@@ -68,7 +68,7 @@ Whether taken automatically or upon approval, an automated investigation can res
 
 ## Review completed actions
 
-1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in..
+1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 2. In the navigation pane, choose **Action center**. 
 3. Review the items on the **History** tab. 
 4. Select an item to view more details about that remediation action.
