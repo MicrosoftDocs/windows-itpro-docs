@@ -22,7 +22,6 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 01/29/2021
-
 ---
 
 # Details and results of an automated investigation
@@ -40,7 +39,7 @@ You can open the investigation details view by using one of the following method
 
 ### Select an item in the Action center
 
-The improved [Action center](mtp-action-center.md) ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) brings together [remediation actions](mtp-remediation-actions.md) across your devices, email & collaboration content, and identities. Listed actions include remediation actions that were taken automatically or manually. In the Action center, you can view actions that are awaiting approval and actions that were already approved or completed. You can also navigate to more details, such as an investigation page.
+The improved [Action center](auto-investigation-action-center.md) brings together [remediation actions](manage-auto-investigation.md#remediation-actions) across your devices, email & collaboration content, and identities. Listed actions include remediation actions that were taken automatically or manually. In the Action center, you can view actions that are awaiting approval and actions that were already approved or completed. You can also navigate to more details, such as an investigation page.
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 2. In the navigation pane, choose **Action center**. 
