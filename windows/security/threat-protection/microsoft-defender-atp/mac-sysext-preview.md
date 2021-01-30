@@ -66,8 +66,9 @@ Follow the deployment steps that correspond to your environment and your preferr
 
 1. After all deployment prerequisites are met, restart your device to launch the system extension approval and activation process.
 
-You'll see a series of system prompts to approve the Defender for Endpoint system extensions. You must approve **all** prompts from the series, because macOS requires an explicit approval for each extension that Defender for Endpoint for Mac installs on the device.
-For each approval, select **Open Security Preferences** and then select **Allow** to allow the system extension to run.
+   You'll see a series of system prompts to approve the Defender for Endpoint system extensions. You must approve **all** prompts from the series, because macOS requires an explicit approval for each extension that Defender for Endpoint for Mac installs on the device.
+   
+   For each approval, select **Open Security Preferences** and then select **Allow** to allow the system extension to run.
 
    > [!IMPORTANT]
    > You must close and reopen the **System Preferences** > **Security & Privacy** window between subsequent approvals. Otherwise, macOS will not display the next approval.
