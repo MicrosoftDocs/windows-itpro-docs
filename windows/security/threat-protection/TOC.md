@@ -379,6 +379,7 @@
 
 #### [Visit the Action center to see remediation actions](microsoft-defender-atp/auto-investigation-action-center.md)
 ##### [View and approve pending actions](microsoft-defender-atp/manage-auto-investigation.md)
+##### [Details and results of an automated investigation](microsoft-defender-atp/autoir-investigation-results.md)
 
 #### [Investigate entities using Live response]()
 ##### [Investigate entities on devices](microsoft-defender-atp/live-response.md)
