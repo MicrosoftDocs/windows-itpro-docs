@@ -132,7 +132,7 @@ The output from this command should be similar to the following:
 
 Once Microsoft Defender for Endpoint is installed, connectivity can be validated by running the following command in Terminal:
 ```bash
-mdatp --connectivity-test
+mdatp connectivity test
 ```
 
 ## How to update Microsoft Defender for Endpoint for Mac
