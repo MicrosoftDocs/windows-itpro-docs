@@ -42,4 +42,4 @@ The following terms can be used to describe the status that might be assigned to
 
 ## Also see
 
-[Windows 10 release information](https://docs.microsoft.com/windows/release-information/)
+[Windows 10 release information](https://docs.microsoft.com/windows/release-health/release-information)

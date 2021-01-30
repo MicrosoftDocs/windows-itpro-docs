@@ -28,7 +28,7 @@ Windows 10 provides IT professionals with advanced protection against modern sec
 
 ## Learn more
 
-- [Windows 10 release information](https://docs.microsoft.com/windows/release-information/)
+- [Windows 10 release information](https://docs.microsoft.com/windows/release-health/release-information/)
 - [Windows 10 release health dashboard](https://docs.microsoft.com/windows/release-information/status-windows-10-2004)
 - [Windows 10 update history](https://support.microsoft.com/help/4555932/windows-10-update-history)
 - [What’s new for business in Windows 10 Insider Preview Builds](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new)
