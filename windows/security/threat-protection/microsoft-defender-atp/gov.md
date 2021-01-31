@@ -32,10 +32,8 @@ This offering is currently available to Microsoft 365 GCC and GCC High customers
 > [!NOTE]
 > If you are a "GCC on Commercial" customer, please refer to the public documentation pages.
 
-<br>
-
 ## Portal URLs
-The following are the specific Microsoft Defender for Endpoint portal URLs:
+The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
 
 Customer type | Portal URL
 :---|:---
