@@ -34,7 +34,7 @@ ms.technology: mde
 ## API description
 Updates properties of a batch of existing [Alerts](alerts.md).
 <br>Submission of **comment** is available with or without updating properties.
-<br>Updatable properties are: ```status```, ```determination```, ```classification``` and ```assignedTo```.
+<br>Updatable properties are: `status`, `determination`, `classification` and `assignedTo`.
 
 
 ## Limitations
