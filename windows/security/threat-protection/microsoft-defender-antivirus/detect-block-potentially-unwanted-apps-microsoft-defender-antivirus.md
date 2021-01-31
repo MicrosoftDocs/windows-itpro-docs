@@ -134,14 +134,18 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 ##### To enable PUA protection
 
 ```PowerShell
+
 Set-MpPreference -PUAProtection Enabled
+
 ```
 Setting the value for this cmdlet to `Enabled` turns the feature on if it has been disabled.
 
 ##### To set PUA protection to audit mode
 
 ```PowerShell
+
 Set-MpPreference -PUAProtection AuditMode
+
 ```
 Setting `AuditMode` detects PUAs without blocking them.
 
@@ -150,7 +154,9 @@ Setting `AuditMode` detects PUAs without blocking them.
 We recommend keeping PUA protection turned on. However, you can turn it off by using the following cmdlet:
 
 ```PowerShell
+
 Set-MpPreference -PUAProtection Disabled
+
 ```
 Setting the value for this cmdlet to `Disabled` turns the feature off if it has been enabled.
 
@@ -160,7 +166,8 @@ See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](u
 
 PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune.
 
-You can also use the ``Get-MpThreat`` cmdlet to view threats that Defender handled.
+You can also use the `Get-MpThreat` cmdlet to view threats that Defender handled.
+
 ```console
 
 CategoryID       : 27
