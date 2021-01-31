@@ -28,6 +28,33 @@ ms.technology: mde
 > [!NOTE]
 > Defender for Endpoint for iOS would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 
+## Conditional Access with Defender for Endpoint for iOS  
+Microsoft Defender for Endpoint for iOS along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies
+based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability via Intune.
+
+For more information about how to set up Conditional Access with Defender for Endpoint for iOS, see [Defender for Endpoint and Intune] https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
+
+## Web Protection and VPN
+
+By default, Defender for Endpoint for iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Defender for Endpoint for iOS uses a VPN in order to provide this protection. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
+
+While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable VPN from the app on the device by following the steps below:
+
+1. On your iOS device, open the **Settings** app, click or tap **General** and then **VPN**.
+1. Click or tap the "i" button for Microsoft Defender ATP.
+1. Toggle off **Connect On Demand** to disable VPN.
+
+    > [!div class="mx-imgBorder"]
+    > ![VPN config connect on demand](images/ios-vpn-config.png)
+
+> [!NOTE]
+> Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
+
+## Co-existence of multiple VPN profiles
+
+Apple iOS does not support multiple device-wide VPNs to be active simultaneously. While multiple VPN profiles can exist on the device, only one VPN can be active at a time.
+
+
 ## Configure compliance policy against jailbroken devices
 
 To protect corporate data from being accessed on jailbroken iOS devices, we recommend that you set up the following compliance policy on Intune.
@@ -62,26 +89,6 @@ Defender for Endpoint for iOS enables admins to configure custom indicators on i
 
 > [!NOTE]
 > Defender for Endpoint for iOS supports creating custom indicators only for IP addresses and URLs/domains.
-
-## Web Protection and VPN
-
-By default, Defender for Endpoint for iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Defender for Endpoint for iOS uses a VPN in order to provide this protection. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
-
-While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable VPN from the app on the device by following the steps below:
-
-1. On your iOS device, open the **Settings** app, click or tap **General** and then **VPN**.
-1. Click or tap the "i" button for Microsoft Defender ATP.
-1. Toggle off **Connect On Demand** to disable VPN.
-
-    > [!div class="mx-imgBorder"]
-    > ![VPN config connect on demand](images/ios-vpn-config.png)
-
-> [!NOTE]
-> Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
-
-### Co-existence of multiple VPN profiles
-
-Apple iOS does not support multiple device-wide VPNs to be active simultaneously. While multiple VPN profiles can exist on the device, only one VPN can be active at a time.
 
 ## Report unsafe site
 
