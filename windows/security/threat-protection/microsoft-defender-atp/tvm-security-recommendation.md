@@ -4,7 +4,7 @@ description: Get actionable security recommendations prioritized by threat, like
 keywords: threat and vulnerability management, mdatp tvm security recommendation, cybersecurity recommendation, actionable security recommendation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 # Security recommendations - threat and vulnerability management
 

@@ -6,12 +6,13 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 02/28/2019
+ms.technology: mde
 ---
 
 # Audit Security Group Management

@@ -5,13 +5,14 @@ ms.assetid: c3ac9960-6efc-47c1-bd69-d9d4bf84f7a6
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 07/30/2018
+ms.technology: mde
 ---
 
 # Configure the Workstation Authentication Certificate Template

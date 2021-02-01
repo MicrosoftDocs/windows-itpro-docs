@@ -3,7 +3,7 @@ title: Investigation resource type
 description: Microsoft Defender ATP Investigation entity.
 keywords: apis, graph api, supported apis, get, alerts, investigations
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: article
+ms.technology: mde
 ---
 
 # Investigation resource type
@@ -39,7 +40,7 @@ Represent an Automated Investigation entity in Defender for Endpoint.
 Method|Return Type |Description
 :---|:---|:---
 [List Investigations](get-investigation-collection.md) | Investigation collection | Get collection of Investigation
-[Get single Investigation](get-investigation-collection.md) | Investigation entity | Gets single Investigation entity.
+[Get single Investigation](get-investigation-object.md) | Investigation entity | Gets single Investigation entity.
 [Start Investigation](initiate-autoir-investigation.md) | Investigation entity | Starts Investigation on a device.
 
 

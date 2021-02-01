@@ -4,7 +4,7 @@ description: You can configure Microsoft Defender AV to scan email storage files
 keywords: advanced scans, scanning, email, archive, zip, rar, archive, reparse scanning
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-
+ms.technology: mde
 ---
 
 # Configure Microsoft Defender Antivirus scanning options

@@ -4,7 +4,7 @@ description: Learn how to implement a network access group for users and devices
 ms.assetid: 56ea1717-1731-4a5d-b277-5a73eb86feb0
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Planning Network Access Groups

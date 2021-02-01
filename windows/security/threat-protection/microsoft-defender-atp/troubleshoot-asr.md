@@ -4,7 +4,7 @@ description: Resources and sample code to troubleshoot issues with attack surfac
 keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, microsoft defender atp, microsoft defender advanced threat protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -15,6 +15,7 @@ ms.date: 03/27/2019
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Troubleshoot attack surface reduction rules
