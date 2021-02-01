@@ -32,7 +32,7 @@ ms.technology: mde
 Microsoft Defender for Endpoint for iOS along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies
 based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability via Intune.
 
-For more information about how to set up Conditional Access with Defender for Endpoint for iOS, see [Defender for Endpoint and Intune] https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
+For more information about how to set up Conditional Access with Defender for Endpoint for iOS, see [Defender for Endpoint and Intune] (https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
 
 ## Web Protection and VPN
 
@@ -64,28 +64,28 @@ To protect corporate data from being accessed on jailbroken iOS devices, we reco
 
 Follow the steps below to create a compliance policy against jailbroken devices.
 
-1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** -> **Compliance policies** -> click on **Create Policy**. Select "iOS/iPadOS" as platform and click **Create**.
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** -> **Compliance policies** -> **Create Policy**. Select "iOS/iPadOS" as platform and click **Create**.
 
     > [!div class="mx-imgBorder"]
     > ![Create Policy](images/ios-jb-policy.png)
 
-1. Specify a name of the policy, example "Compliance Policy for Jailbreak".
-1. In the compliance settings page, click to expand **Device Health** section and click **Block** for **Jailbroken devices** field.
+2. Specify a name of the policy, for example "Compliance Policy for Jailbreak".
+3. In the compliance settings page, click to expand **Device Health** section and click **Block** for **Jailbroken devices** field.
 
     > [!div class="mx-imgBorder"]
     > ![Policy Settings](images/ios-jb-settings.png)
 
-1. In the *Action for noncompliance* section, select the actions as per your requirements and click **Next**.
+4. In the *Action for noncompliance* section, select the actions as per your requirements and select **Next**.
 
     > [!div class="mx-imgBorder"]
     > ![Policy Actions](images/ios-jb-actions.png)
 
-1. In the *Assignments* section, select the user groups that you want to include for this policy and then click **Next**.
-1. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
+5. In the *Assignments* section, select the user groups that you want to include for this policy and then select **Next**.
+6. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
 
 ## Configure custom indicators
 
-Defender for Endpoint for iOS enables admins to configure custom indicators on iOS devices as well. Refer to [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) on how to configure custom indicators.
+Defender for Endpoint for iOS enables admins to configure custom indicators on iOS devices as well. For more information on how to configure custom indicators, see [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 > [!NOTE]
 > Defender for Endpoint for iOS supports creating custom indicators only for IP addresses and URLs/domains.
