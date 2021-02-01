@@ -114,8 +114,8 @@ For more information on Azure AD tokens, see the [Azure AD tutorial](https://doc
 
 ### Use PowerShell
 
-```
-# That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
+```powershell
+# That code gets the App Context Token and save it to the variable $token for later use in the script
 # Paste below your Tenant ID, App ID and App Secret (App key).
 
 $tenantId = '' ### Paste your tenant ID here
@@ -132,8 +132,6 @@ $authBody = [Ordered] @{
 }
 $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
 $token = $authResponse.access_token
-Out-File -FilePath "./Latest-token.txt" -InputObject $token
-return $token
 ```
 
 ### Use C#:
