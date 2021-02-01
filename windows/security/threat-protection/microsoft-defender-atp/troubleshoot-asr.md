@@ -109,7 +109,7 @@ When you report a problem with attack surface reduction rules, you're asked to c
    mpcmdrun -getfiles
    ```
 
-3. By default, they are saved to `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`. Attach the file to the submission form.
+3. By default, they're saved to `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`. Attach the file to the submission form.
 
 ## Related articles
 
