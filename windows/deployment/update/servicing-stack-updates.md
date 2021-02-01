@@ -44,7 +44,6 @@ Both Windows 10 and Windows Server use the cumulative update mechanism, in which
 
 Servicing stack updates must ship separately from the cumulative updates because they modify the component that installs Windows updates. The servicing stack is released separately because the servicing stack itself requires an update. For example, the cumulative update [KB4284880](https://support.microsoft.com/help/4284880/windows-10-update-kb4284880) requires the [May 17, 2018 servicing stack update](https://support.microsoft.com/help/4132216), which includes updates to Windows Update.
 
-
 ## Is there any special guidance?
 
 Microsoft recommends you install the latest servicing stack updates for your operating system before installing the latest cumulative update.
@@ -58,3 +57,7 @@ Typically, the improvements are reliability and performance improvements that do
 * Servicing stack update releases are specific to the operating system version (build number), much like quality updates.
 * Search to install latest available [Servicing stack update for Windows 10](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001).
 * Once a servicing stack update is installed, it cannot be removed or uninstalled from the machine.
+
+
+## Simplifying on-premises deployment of servicing stack updates
+With the Windows Update experience, servicing stack updates and cumulative updates are deployed together to the device. The update stack automatically orchestrates the installation, so both are applied correctly. Starting in February 2021, the cumulative update will include the latest servicing stack updates, to provide a single cumulative update payload to both Windows Server Update Services (WSUS) and Microsoft Catalog. If you use an endpoint management tool backed by WSUS, such as the Configuration Manager, you will only have to select and deploy the monthly cumulative update. The latest servicing stack updates will automatically be applied correctly. Release notes and file information for cumulative updates, including those related to the servicing stack, will be in a single KB article. The combined monthly cumulative update will be available on Windows 10, version 2004 and higher starting with the 2021 2C release, KB4601382.
