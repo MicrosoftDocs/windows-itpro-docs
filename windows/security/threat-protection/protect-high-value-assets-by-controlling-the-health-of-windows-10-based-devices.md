@@ -6,13 +6,14 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 keywords: security, BYOD, malware, device health attestation, mobile
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, devices
 author: dulcemontemayor
 ms.date: 10/13/2017
 ms.localizationpriority: medium
+ms.technology: mde
 ---
 
 # Control the health of Windows 10-based devices

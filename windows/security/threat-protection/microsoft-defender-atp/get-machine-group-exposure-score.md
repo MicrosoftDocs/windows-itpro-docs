@@ -3,7 +3,7 @@ title: List exposure score by device group
 description: Retrieves a list of exposure scores by device group.
 keywords: apis, graph api, supported apis, get, exposure score, device group, device group exposure score
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ ms.author: ellevin
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # List exposure score by device group
@@ -69,7 +70,7 @@ If successful, this method returns 200 OK, with a list of exposure score per dev
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
 ```
 

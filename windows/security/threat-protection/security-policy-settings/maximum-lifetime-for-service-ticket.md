@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: 484bf05a-3858-47fc-bc02-6599ca860247
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Maximum lifetime for service ticket

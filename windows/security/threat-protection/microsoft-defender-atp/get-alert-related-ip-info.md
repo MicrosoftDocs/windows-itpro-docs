@@ -1,9 +1,9 @@
 ---
-title: Get alert related IPs information 
+title: Get alert related IPs information
 description: Retrieve all IPs related to a specific alert using Microsoft Defender Advanced Threat Protection (Microsoft Defender for Endpoint).
 keywords: apis, graph api, supported apis, get alert information, alert information, related ip
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Get alert related IPs information API
@@ -77,7 +78,7 @@ If successful and alert and an IP exist - 200 OK. If alert not found - 404 Not F
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/ips
 ```
 
@@ -86,9 +87,7 @@ GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_213628044
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/$metadata#Ips",    
 	"value": [

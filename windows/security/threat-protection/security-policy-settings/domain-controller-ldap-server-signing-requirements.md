@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: fe122179-7571-465b-98d0-b8ce0f224390
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Domain controller: LDAP server signing requirements
