@@ -100,7 +100,7 @@ When you report a problem with attack surface reduction rules, you are asked to 
 1. Open an elevated command prompt and change to the Windows Defender directory:
 
    ```console
-   cd c:\program files\windows defender
+   cd "c:\program files\windows defender"
    ```
 
 2. Run this command to generate the diagnostic logs:
