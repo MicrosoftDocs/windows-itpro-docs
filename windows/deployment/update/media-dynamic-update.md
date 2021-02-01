@@ -64,9 +64,6 @@ Properly updating the installation media involves a large number of actions oper
 
 This table shows the correct sequence for applying the various tasks to the files. For example, the full sequence starts with adding the servicing stack update to WinRE (1) and concludes with adding the Dynamic Update for Setup to the new media (26).
 
-> [!NOTE]
-> Starting in February 2021, the latest cumulative update and servicing stack update will be combined and distributed in the Microsoft Update Catalog as a new combined cumulative update. For Steps 1, 9, and 18 below that require the servicing stack update for updating the installation media, you should use the combined cumulative update. For more information on the combined cumulative update, see [Servicing stack updates](https://docs.microsoft.com/windows/deployment/update/servicing-stack-updates).
-
 |Task  |WinRE (winre.wim)  |WinPE (boot.wim)  |Operating system (install.wim)  | New media |
 |---------|---------|---------|---------|------|
 |Add servicing stack Dynamic Update     |  1       | 9        | 18        |
@@ -83,6 +80,9 @@ This table shows the correct sequence for applying the various tasks to the file
 |Add Optional Components     |         |         |  23       |
 |Add .NET and .NET cumulative updates     |         |        | 24        |
 |Export image     | 8        |  17       | 25        |
+
+> [!NOTE]
+> Starting in February 2021, the latest cumulative update and servicing stack update will be combined and distributed in the Microsoft Update Catalog as a new combined cumulative update. For Steps 1, 9, and 18 that require the servicing stack update for updating the installation media, you should use the combined cumulative update. For more information on the combined cumulative update, see [Servicing stack updates](https://docs.microsoft.com/windows/deployment/update/servicing-stack-updates).
 
 ### Multiple Windows editions
 
