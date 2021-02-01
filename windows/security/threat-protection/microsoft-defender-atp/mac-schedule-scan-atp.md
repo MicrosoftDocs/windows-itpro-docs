@@ -62,8 +62,6 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
             <key>Weekday</key>
             <integer>5</integer>
         </dict>
-        <key>StartInterval</key>
-        <integer>604800</integer>
         <key>WorkingDirectory</key>
         <string>/usr/local/bin/</string>
     </dict>
@@ -85,7 +83,7 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
 
 5. Your scheduled scan will run at the date, time, and frequency you defined in your p-list. In the example, the scan runs at 2:00 AM every Friday. 
 
-    Note that the `StartInterval` value is in seconds, indicating that scans should run every 604,800 seconds (one week), while the `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday.
+    The `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday.
 
  > [!IMPORTANT]
  > Agents executed with *launchd* will not run at the scheduled time while the device is asleep. They will instead run once the device resumes from sleep mode.
