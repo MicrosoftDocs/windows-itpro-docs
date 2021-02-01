@@ -32,7 +32,7 @@ ms.technology: mde
 Microsoft Defender for Endpoint for iOS along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies
 based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability via Intune.
 
-For more information about how to set up Conditional Access with Defender for Endpoint for iOS, see [Defender for Endpoint and Intune] (https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
+For more information about how to set up Conditional Access with Defender for Endpoint for iOS, see [Defender for Endpoint and Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
 
 ## Web Protection and VPN
 
