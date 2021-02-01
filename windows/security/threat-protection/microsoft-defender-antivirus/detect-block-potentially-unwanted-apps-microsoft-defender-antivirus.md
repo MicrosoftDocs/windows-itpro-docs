@@ -11,7 +11,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 audience: ITPro
-ms.date: 01/08/2021
+ms.date: 02/01/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -164,9 +164,7 @@ See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](u
 
 ### View PUA events
 
-PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune.
-
-You can also use the `Get-MpThreat` cmdlet to view threats that Defender handled.
+PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune. You can also use the `Get-MpThreat` cmdlet to view threats that Microsoft Defender Antivirus handled. Here's an example:
 
 ```console
 
@@ -194,7 +192,7 @@ Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA
 
 For more information, see [Recommended antivirus exclusions for Configuration Manager site servers, site systems, and clients](https://docs.microsoft.com/troubleshoot/mem/configmgr/recommended-antivirus-exclusions#exclusions).
 
-## Related articles
+## See also
 
 - [Next-generation protection](microsoft-defender-antivirus-in-windows-10.md)
 - [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)
