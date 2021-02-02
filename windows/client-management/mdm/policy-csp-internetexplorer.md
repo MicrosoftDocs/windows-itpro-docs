@@ -19077,7 +19077,7 @@ If you disable, or not configure this setting, then it opens all sites based on 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Send all sites not included in the Enterprise Mode Site List to Microsoft Edge*
--   GP name: *RestrictInternetExplorer*
+-   GP name: *SendSitesNotInEnterpriseSiteListToEdge*
 -   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*
 
