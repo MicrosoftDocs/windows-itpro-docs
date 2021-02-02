@@ -168,7 +168,7 @@ manager: dansimp
     <a href="#internetexplorer-disablehomepagechange">InternetExplorer/DisableHomePageChange</a>
   </dd>
   <dd>
-    <a href="#internetexplorer-allowsavetargetasinIEmode">InternetExplorer/AllowSaveTargetAsInIEMode</a>
+    <a href="#internetexplorer-disableinternetexplorerapp">InternetExplorer/DisableInternetExplorerApp</a>
   </dd>
   <dd>
     <a href="#internetexplorer-disableignoringcertificateerrors">InternetExplorer/DisableIgnoringCertificateErrors</a>
@@ -2428,7 +2428,7 @@ For more information, see [https://go.microsoft.com/fwlink/?linkid=2102115](http
 ADMX Info:  
 -   GP English name: *Allow "Save Target As" in Internet Explorer mode*
 -   GP name: *AllowSaveTargetAsInIEMode*
--   GP path: *OS\Core\WSD\CFE-Browser\IE-Apps*
+-   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
@@ -3158,8 +3158,8 @@ If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure which channel of Microsoft Edge to use for opening redirected sites*
--   GP name: *ConfigureEdgeRedirectChannel*
--   GP path: *OS\Core\WSD\CFE-Browser\IE-Apps*
+-   GP name: *NeedEdgeBrowser*
+-   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
@@ -4680,6 +4680,7 @@ ADMX Info:
 
 > [!div class = "checklist"]
 > * User
+> * Device
 
 <hr/>
 
@@ -4710,7 +4711,7 @@ If you disable, or do not configure this policy, all sites are opened using the 
 ADMX Info:  
 -   GP English name: *Disable Internet Explorer 11 as a standalone browser*
 -   GP name: *DisableInternetExplorerApp*
--   GP path: *OS\Core\WSD\CFE-Browser\IE-Apps*
+-   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
@@ -9563,8 +9564,8 @@ For more information on how to use this policy together with other related polic
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Keep all Intranet Sites in Internet Explorer*
--   GP name: *KeepIntranetSitesInInternetExplorer*
--   GP path: *OS\Core\WSD\CFE-Browser\IE-Apps*
+-   GP name: *MDM policy is Browser/SendIntranetTraffictoInternetExplorer*
+-   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
@@ -19076,8 +19077,8 @@ If you disable, or not configure this setting, then it opens all sites based on 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Send all sites not included in the Enterprise Mode Site List to Microsoft Edge*
--   GP name: *SendSitesNotInEnterpriseSiteListToEdge*
--   GP path: *OS\Core\WSD\CFE-Browser\IE-Apps*
+-   GP name: *RestrictInternetExplorer*
+-   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
