@@ -31,6 +31,14 @@ ms.date: 01/29/2021
 
 With Microsoft Defender for Endpoint, when an [automated investigation](automated-investigations.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the necessary permissions, you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
+## (NEW!) Unified investigation page
+
+The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)  and [Microsoft Defender for Office 365](../office-365-security/office-365-atp.md). 
+
+> [!TIP]
+> To learn more about what's changing, see [(NEW!) Unified investigation page](/microsoft-365/security/mtp/mtp-autoir-results#new-unified-investigation-page).
+
+
 ## Open the investigation details view
 
 You can open the investigation details view by using one of the following methods:
