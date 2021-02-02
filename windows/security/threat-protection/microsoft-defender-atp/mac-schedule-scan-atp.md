@@ -4,7 +4,7 @@ description: Learn how to schedule an automatic scanning time for Microsoft Defe
 keywords: microsoft, defender, atp, mac, scans, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Schedule scans with Microsoft Defender for Endpoint for Mac
@@ -46,7 +47,7 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
         <array>
             <string>sh</string>
             <string>-c</string>
-            <string>/usr/local/bin/mdatp --scan --quick</string>
+            <string>/usr/local/bin/mdatp scan quick</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
@@ -72,7 +73,7 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
 2. Save the file as *com.microsoft.wdav.schedquickscan.plist*.
 
     > [!TIP]
-    > To run a full scan instead of a quick scan, change line 12, `<string>/usr/local/bin/mdatp --scan --quick</string>`, to use the `--full` option instead of `--quick` (i.e. `<string>/usr/local/bin/mdatp --scan --full</string>`) and save the file as *com.microsoft.wdav.sched**full**scan.plist* instead of *com.microsoft.wdav.sched**quick**scan.plist*.
+    > To run a full scan instead of a quick scan, change line 12, `<string>/usr/local/bin/mdatp scan quick</string>`, to use the `full` option instead of `quick` (i.e. `<string>/usr/local/bin/mdatp scan full</string>`) and save the file as *com.microsoft.wdav.sched**full**scan.plist* instead of *com.microsoft.wdav.sched**quick**scan.plist*.
 
 3. Open **Terminal**.
 4. Enter the following commands to load your file:

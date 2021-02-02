@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus Virtual Desktop Infrastructure deployment gu
 description: Learn how to deploy Microsoft Defender Antivirus in a virtual desktop environment for the best balance between protection and performance.
 keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, virtual desktop, rds, remote desktop
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,6 +13,7 @@ ms.custom: nextgen
 ms.date: 12/28/2020
 ms.reviewer: jesquive
 manager: dansimp
+ms.technology: mde
 ---
 
 # Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment

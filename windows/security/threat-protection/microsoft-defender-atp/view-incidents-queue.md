@@ -5,7 +5,7 @@ description: See the list of incidents and learn how to apply filters to limit t
 keywords: view, organize, incidents, aggregate, investigations, queue, ttp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,9 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # View and organize the Microsoft Defender for Endpoint Incidents queue

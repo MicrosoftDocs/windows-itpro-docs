@@ -3,7 +3,7 @@ title: Hide notifications from the Windows Security app
 description: Prevent Windows Security app notifications from appearing on user endpoints
 keywords: defender, security center, app, notifications, av, alerts
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,6 +13,7 @@ ms.author: dansimp
 ms.date: 07/23/2020
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Hide Windows Security app notifications

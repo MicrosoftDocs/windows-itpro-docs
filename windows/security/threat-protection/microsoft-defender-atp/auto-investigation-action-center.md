@@ -3,7 +3,7 @@ title: View details and results of automated investigations
 description: Use the action center to view details and results following an automated investigation
 keywords: action, center, autoir, automated, investigation, response, remediation
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,11 +13,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: article
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 09/24/2020
+ms.technology: mde
 ---
 
 # View details and results of automated investigations
@@ -169,3 +170,6 @@ When you click on the pending actions link, you'll be taken to the Action center
 
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
  
+## See also
+
+- [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
