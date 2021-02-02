@@ -34,6 +34,9 @@ Cybersecurity weaknesses identified in your organization are mapped to actionabl
 
 Each security recommendation includes actionable remediation steps. To help with task management, the recommendation can also be sent using Microsoft Intune and Microsoft Endpoint Configuration Manager. When the threat landscape changes, the recommendation also changes as it continuously collects information from your environment.
 
+>[!TIP]
+>To get emails about new vulnerability events, see [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
+
 ## How it works
 
 Each device in the organization is scored based on three important factors to help customers to focus on the right things at the right time.
@@ -105,7 +108,7 @@ From the flyout, you can choose any of the following options:
 
 ### Investigate changes in device exposure or impact
 
-If there is a large jump in the number of exposed devices, or a sharp increase in the impact on your organization exposure score and configuration score, then that security recommendation is worth investigating.
+If there is a large jump in the number of exposed devices, or a sharp increase in the impact on your organization exposure score and Microsoft Secure Score for Devices, then that security recommendation is worth investigating.
 
 1. Select the recommendation and **Open software page**
 2. Select the **Event timeline** tab to view all the impactful events related to that software, such as new vulnerabilities or new public exploits. [Learn more about event timeline](threat-and-vuln-mgt-event-timeline.md)
