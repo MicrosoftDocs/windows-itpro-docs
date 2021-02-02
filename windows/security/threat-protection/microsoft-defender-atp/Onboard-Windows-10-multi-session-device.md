@@ -1,21 +1,22 @@
 ---
-title: "Onboard Windows 10 multi-session devices in Windows Virtual Desktop"
-description: "Read more in this article about Onboarding Windows 10 multi-session devices in Windows Virtual Desktop"
+title: Onboard Windows 10 multi-session devices in Windows Virtual Desktop
+description: Read more in this article about Onboarding Windows 10 multi-session devices in Windows Virtual Desktop
 keywords: Windows Virtual Desktop, WVD, microsoft defender, endpoint, onboard
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro 
-ms.topic: article 
+audience: ITPro
+ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
 ms.date: 09/10/2020
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Onboard Windows 10 multi-session devices in Windows Virtual Desktop 
@@ -23,8 +24,6 @@ manager: dansimp
 
 Applies to: 
 - Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
-> [!IMPORTANT]
-> Welcome to Microsoft Defender for Endpoint, the new name for Microsoft Defender for Endpoint. Read more about this and other updates here. We'll be updating names in products and in the docs in the near future.
 
 > [!WARNING]
 > Microsoft Defender for Endpoint support for Windows Virtual Desktop multi-session scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However, single session scenarios on Windows Virtual Desktop are fully supported.

@@ -4,7 +4,7 @@ description: Best practices, security considerations and more for the security p
 ms.assetid: 340d6769-8f33-4067-8470-1458978d1522
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # System objects: Require case insensitivity for non-Windows subsystems

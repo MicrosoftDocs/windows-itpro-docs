@@ -4,7 +4,7 @@ description: Learn how to monitor user and device claims that are associated wit
 ms.assetid: 71796ea9-5fe4-4183-8475-805c3c1f319f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Monitor user and device claims during sign-in

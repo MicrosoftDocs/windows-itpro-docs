@@ -3,7 +3,7 @@ title: Monitor and report on Microsoft Defender Antivirus protection
 description: Use Configuration Manager or security information and event management (SIEM) tools to consume reports, and monitor Microsoft Defender AV with PowerShell and WMI.
 keywords: siem, monitor, report, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.date: 12/07/2020
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Report on Microsoft Defender Antivirus

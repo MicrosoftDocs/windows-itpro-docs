@@ -6,13 +6,14 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 keywords: data protection, encryption, malware resistance, smartphone, device, Microsoft Store
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: dulcemontemayor
 ms.date: 10/13/2017
+ms.technology: mde
 ---
 # Windows 10 Mobile security guide
 

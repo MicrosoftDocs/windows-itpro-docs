@@ -4,7 +4,7 @@ description: This topic for IT professionals describes the steps to specify whic
 ms.assetid: d15c9d84-c14b-488d-9f48-bf31ff7ff0c5
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Add exceptions for an AppLocker rule

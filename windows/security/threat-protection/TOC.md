@@ -114,6 +114,7 @@
 ##### [Enable exploit protection](microsoft-defender-atp/enable-exploit-protection.md)
 ##### [Customize exploit protection](microsoft-defender-atp/customize-exploit-protection.md)
 ##### [Import, export, and deploy exploit protection configurations](microsoft-defender-atp/import-export-exploit-protection-emet-xml.md)
+##### [Troubleshoot exploit protection mitigations](microsoft-defender-atp/troubleshoot-exploit-protection-mitigations.md)
 ##### [Exploit protection reference](microsoft-defender-atp/exploit-protection-reference.md )
 
 #### [Network protection]()
@@ -175,7 +176,6 @@
 ###### [Use PowerShell cmdlets to manage next-generation protection](microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ###### [Use Windows Management Instrumentation (WMI) to manage next-generation protection](microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus.md)
 ###### [Use the mpcmdrun.exe command line tool to manage next-generation protection](microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
-###### [Handle false positives/negatives in Microsoft Defender Antivirus](microsoft-defender-antivirus/antivirus-false-positives-negatives.md)
    
 ##### [Deploy, manage updates, and report on antivirus]()
 ###### [Preparing to deploy](microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md)
@@ -508,6 +508,8 @@
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
 
+### [Address false positives/negatives in Microsoft Defender for Endpoint](microsoft-defender-atp/defender-endpoint-false-positives-negatives.md)
+
 ### [Use audit mode](microsoft-defender-atp/audit-windows-defender.md)
 
 ## Reference
@@ -524,6 +526,7 @@
 
 ##### [Microsoft Defender for Endpoint APIs Schema]()
 ###### [Supported Microsoft Defender for Endpoint APIs](microsoft-defender-atp/exposed-apis-list.md)
+###### [Release Notes](microsoft-defender-atp/api-release-notes.md)
 ###### [Common REST API error codes](microsoft-defender-atp/common-errors.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
@@ -550,6 +553,7 @@
 ####### [Get security recommendations](microsoft-defender-atp/get-security-recommendations.md)
 ####### [Add or Remove machine tags](microsoft-defender-atp/add-or-remove-machine-tags.md)
 ####### [Find machines by IP](microsoft-defender-atp/find-machines-by-ip.md)
+####### [Find machines by tag](microsoft-defender-atp/find-machines-by-tag.md)
 ####### [Get missing KBs](microsoft-defender-atp/get-missing-kbs-machine.md)
 ####### [Set device value](microsoft-defender-atp/set-device-value.md)
 
@@ -576,6 +580,7 @@
 ###### [Indicators]()
 ####### [Indicators methods and properties](microsoft-defender-atp/ti-indicator.md)
 ####### [Submit Indicator](microsoft-defender-atp/post-ti-indicator.md)
+####### [Import Indicators](microsoft-defender-atp/import-ti-indicators.md)
 ####### [List Indicators](microsoft-defender-atp/get-ti-indicators-collection.md)
 ####### [Delete Indicator](microsoft-defender-atp/delete-ti-indicator-by-id.md)
 

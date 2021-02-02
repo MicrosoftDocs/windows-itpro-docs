@@ -3,7 +3,7 @@ title: Virus and threat protection in the Windows Security app
 description: Use the Virus & threat protection section to see and configure Microsoft Defender Antivirus, Controlled folder access, and 3rd-party AV products.
 keywords: wdav, smartscreen, antivirus, wdsc, exploit, protection, hide
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,6 +13,7 @@ ms.author: dansimp
 ms.date: 04/30/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: Managing Connection Groups (Windows 10)
 description: Connection groups can allow administrators to manage packages independently and avoid having to add the same application multiple times to a client computer.
-author: lomayor
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
