@@ -51,7 +51,7 @@ ms.localizationpriority: medium
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-allowinstallationofmatchingdeviceids"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceIDs**  
+## DeviceInstallation/AllowInstallationOfMatchingDeviceIDs
 
 <!--SupportedSKUs-->
 <table>
@@ -165,7 +165,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-allowinstallationofmatchingdeviceinstanceids"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs**  
+## DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs
 
 <!--SupportedSKUs-->
 <table>
@@ -272,7 +272,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-allowinstallationofmatchingdevicesetupclasses"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses**  
+## DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses
 
 <!--SupportedSKUs-->
 <table>
@@ -395,7 +395,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-preventdevicemetadatafromnetwork"></a>**DeviceInstallation/PreventDeviceMetadataFromNetwork**  
+## DeviceInstallation/PreventDeviceMetadataFromNetwork
 
 <!--SupportedSKUs-->
 <table>
@@ -474,7 +474,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings"></a>**DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings**  
+## DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings
 
 <!--SupportedSKUs-->
 <table>
@@ -586,7 +586,7 @@ You can also block installation by using a custom profile in Intune.
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofmatchingdeviceids"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceIDs**  
+## DeviceInstallation/PreventInstallationOfMatchingDeviceIDs
 
 <!--SupportedSKUs-->
 <table>
@@ -703,7 +703,7 @@ For example, this custom profile blocks installation and usage of USB devices wi
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofmatchingdeviceinstanceids"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs**  
+## DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs
 
 <!--SupportedSKUs-->
 <table>
@@ -830,7 +830,7 @@ with
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofmatchingdevicesetupclasses"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses**  
+## DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses
 
 <!--SupportedSKUs-->
 <table>
