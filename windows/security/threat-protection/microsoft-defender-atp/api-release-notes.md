@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint API release notes
-description: Release notes for anything that is new in the Microsoft Defender for Endpoint API.
+description: Release notes for updates made to the Microsoft Defender for Endpoint set of APIs.
 keywords: microsoft defender for endpoint api release notes, mde, apis, mdatp api, updates, notes, release
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
