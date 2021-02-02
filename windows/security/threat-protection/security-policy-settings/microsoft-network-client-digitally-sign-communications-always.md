@@ -5,13 +5,14 @@ ms.assetid: 4b7b0298-b130-40f8-960d-60418ba85f76
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 06/28/2018
+ms.technology: mde
 ---
 
 # Microsoft network client: Digitally sign communications (always)

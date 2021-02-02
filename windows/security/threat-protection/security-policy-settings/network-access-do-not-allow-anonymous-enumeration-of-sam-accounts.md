@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 6ee25b33-ad43-4097-b031-7be680f64c7c
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network access: Do not allow anonymous enumeration of SAM accounts

@@ -1,10 +1,10 @@
 ---
-title: Enroll Microsoft Defender ATP for macOS devices into Jamf Pro 
-description: Enroll Microsoft Defender ATP for macOS devices into Jamf Pro 
+title: Enroll Microsoft Defender ATP for macOS devices into Jamf Pro
+description: Enroll Microsoft Defender ATP for macOS devices into Jamf Pro
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Enroll Microsoft Defender for Endpoint for macOS devices into Jamf Pro 

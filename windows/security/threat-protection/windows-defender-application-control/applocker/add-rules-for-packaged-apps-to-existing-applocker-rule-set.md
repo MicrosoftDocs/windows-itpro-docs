@@ -4,7 +4,7 @@ description: This topic for IT professionals describes how to update your existi
 ms.assetid: 758c2a9f-c2a3-418c-83bc-fd335a94097f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Add rules for packaged apps to existing AppLocker rule-set

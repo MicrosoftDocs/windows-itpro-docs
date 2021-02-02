@@ -1,7 +1,7 @@
 ---
 title: Configure the Group Policy settings for Microsoft Defender Application Guard (Windows 10)
 description: Learn about the available Group Policy settings for Microsoft Defender Application Guard.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,6 +12,7 @@ ms.date: 10/17/2017
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Configure Microsoft Defender Application Guard policy settings

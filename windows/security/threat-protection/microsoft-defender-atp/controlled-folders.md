@@ -3,7 +3,7 @@ title: Prevent ransomware and threats from encrypting and changing files
 description: Files in default folders can be protected from being changed by malicious apps. Prevent ransomware from encrypting your files.
 keywords: controlled folder access, windows 10, windows defender, ransomware, protect, files, folders
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.date: 12/17/2020
 ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Protect important folders with controlled folder access
