@@ -37,15 +37,15 @@ If you did not approve the kernel extension during the deployment/installation o
 
    ![RTP disabled screenshot](../microsoft-defender-antivirus/images/MDATP-32-Main-App-Fix.png)
 
-You can also run ```mdatp --health```. It reports if real-time protection is enabled but not available. This indicates that the kernel extension is not approved to run on your device.
+You can also run ```mdatp health```. It reports if real-time protection is enabled but not available. This indicates that the kernel extension is not approved to run on your device.
 
 ```bash
-mdatp --health
+mdatp health
 ```
 ```Output
 ...
-realTimeProtectionAvailable             : false
-realTimeProtectionEnabled               : true
+real_time_protection_enabled                : false
+real_time_protection_available              : true
 ...
 ```
 
@@ -90,15 +90,15 @@ In this case, you need to perform the following steps to trigger the approval fl
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
 
-    The banner should disappear from the Defender application, and ```mdatp --health``` should now report that real-time protection is both enabled and available:
+    The banner should disappear from the Defender application, and ```mdatp health``` should now report that real-time protection is both enabled and available:
 
     ```bash
-    mdatp --health
+    mdatp health
     ```
 
     ```Output
     ...
-    realTimeProtectionAvailable             : true
-    realTimeProtectionEnabled               : true
+    real_time_protection_enabled                : true
+    real_time_protection_available              : true
     ...
     ```
