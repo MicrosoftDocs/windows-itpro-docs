@@ -23,11 +23,8 @@ ms.technology: mde
 **Applies to:**
 
 - Windows 10
-- Windows Server 2016
 
-You can use Microsoft Endpoint Manager (MEM) Intune to configure Windows Defender Application Control (WDAC). Intune includes native support for WDAC, which allows you to configure Windows 10 client computers to only run Windows components and Microsoft Store apps, or to also allow reputable apps as defined by the Intelligent Security Graph (ISG). Using the built-in policies can be a helpful starting point, but many customers may find the available circle-of-trust options to be too limited.
-
-In order to deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. Beginning in 1903, Custom OMA-URI policy deployment leverages the [ApplicationControl CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp), which has support for multiple policies and rebootless policies. Custom OMA-URI can also be used on pre-1903 systems to deploy custom policies via the [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).
+You can use Microsoft Endpoint Manager (MEM) Intune to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC, which allows you to configure Windows 10 client computers to only run Windows components and Microsoft Store apps, or to also allow reputable apps as defined by the Intelligent Security Graph (ISG). Using the built-in policies can be a helpful starting point, but many customers may find the available circle-of-trust options to be too limited. In order to deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI.
 
 ## Using Intune's Built-In Policies
 
@@ -50,9 +47,15 @@ Setting "Trust apps with good reputation" to enabled is equivalent to adding [Op
 
 ## Using a Custom OMA-URI Profile
 
+> [!NOTE]
+> Policies deployed through Intune Custom OMA-URI are subject to a 350,000 byte limit. Customers whose devices are running 1903+ builds of Windows are encouraged to use [multiple policies](deploy-multiple-windows-defender-application-control-policies.md) which are more streamlined and less than 350K bytes in size.
+
 ### For 1903+ systems
 
-The steps to use Intune's Custom OMA-URI functionality to leverage the [ApplicationControl CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) and deploy a custom WDAC policy to 1903+ systems are:
+Beginning in 1903, Custom OMA-URI policy deployment leverages the [ApplicationControl CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp), which has support for multiple policies and rebootless policies.
+
+#### Deploying policies
+The steps to use Intune's Custom OMA-URI functionality are:
 
 1. Know a generated policy's GUID, which can be found in the policy xml as `<PolicyID>`
 2. Convert the policy XML to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
@@ -65,11 +68,13 @@ The steps to use Intune's Custom OMA-URI functionality to leverage the [Applicat
 
     ![Configure custom WDAC](images/wdac-intune-custom-oma-uri.png)
 
-> [!NOTE]
-> Upon deletion, policies deployed through Intune via the ApplicationControl CSP are removed from the system but stay in effect until the next reboot. In order to functionally do a rebootless delete, replace the existing policy with an Allow All policy (found at C:\Windows\schemas\CodeIntegrity\ExamplePolicies\AllowAll.xml) and then delete the updated policy. This will immediately prevent anything from being blocked and fully deactive the policy on the next reboot.
+#### Removing policies
+
+Upon deletion, policies deployed through Intune via the ApplicationControl CSP are removed from the system but stay in effect until the next reboot. In order to functionally do a rebootless delete, first replace the existing policy with an Allow All policy (found at C:\Windows\schemas\CodeIntegrity\ExamplePolicies\AllowAll.xml) and then delete the updated policy. This will immediately prevent anything from being blocked and fully deactive the policy on the next reboot.
 
 ### For pre-1903 systems
 
+#### Deploying policies
 The steps to use Intune's Custom OMA-URI functionality to leverage the [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) and deploy a custom WDAC policy to pre-1903 systems are:
 
 1. Convert the policy XML to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
@@ -79,9 +84,11 @@ The steps to use Intune's Custom OMA-URI functionality to leverage the [AppLocke
     - **OMA-URI**: ./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/_Grouping_/CodeIntegrity/Policy)
     - **Data type**: Base64
     - **Certificate file**: upload your binary format policy file
-
-> [!NOTE]
-> Policies deployed through Intune via the AppLocker CSP cannot be deleted through the Intune console. In order to disable WDAC policy enforcement, either deploy an audit-mode policy and/or use a script to delete the existing policy.
-
+    
 > [!NOTE]
 > Deploying policies via the AppLocker CSP will force a reboot during OOBE.
+
+#### Removing policies
+
+Policies deployed through Intune via the AppLocker CSP cannot be deleted through the Intune console. In order to disable WDAC policy enforcement, either deploy an audit-mode policy and/or use a script to delete the existing policy.
+
