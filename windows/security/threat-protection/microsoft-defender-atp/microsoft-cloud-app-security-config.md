@@ -1,11 +1,11 @@
 ---
-title: Configure Microsoft Cloud App Security integration 
+title: Configure Microsoft Cloud App Security integration
 ms.reviewer: 
 description: Learn how to turn on the settings to enable the Microsoft Defender ATP integration with Microsoft Cloud App Security.
 keywords: cloud, app, security, settings, integration, discovery, report
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Configure Microsoft Cloud App Security in Microsoft Defender for Endpoint
@@ -44,7 +45,7 @@ Once activated, Microsoft Defender for Endpoint will immediately start forwardin
 
 ## View the data collected
 
-To view and access Microsoft Defender for Endpoint data in Microsoft Cloud Apps Security, see [Investigate devices in Cloud App Security](https://docs.microsoft.com/cloud-app-security/wdatp-integration#investigate-machines-in-cloud-app-security).
+To view and access Microsoft Defender for Endpoint data in Microsoft Cloud Apps Security, see [Investigate devices in Cloud App Security](https://docs.microsoft.com/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security).
 
 
 For more information about cloud discovery, see [Working with discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).

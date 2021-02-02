@@ -3,7 +3,7 @@ title: Start Investigation API
 description: Use this API to start investigation on a device.
 keywords: apis, graph api, supported apis, investigation
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Start Investigation API
@@ -83,9 +84,12 @@ If successful, this method returns 201 - Created response code and [Investigatio
 
 Here is an example of the request.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation
-Content-type: application/json
+```
+
+```json
 {
-  "Comment": "Test investigation",
+  "Comment": "Test investigation"
 }
+```

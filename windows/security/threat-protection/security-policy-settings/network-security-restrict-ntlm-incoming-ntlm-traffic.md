@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: c0eff7d3-ed59-4004-908a-2205295fefb8
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network security: Restrict NTLM: Incoming NTLM traffic

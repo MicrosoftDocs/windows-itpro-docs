@@ -4,7 +4,7 @@ description: Learn about the features on Microsoft Defender Security Center, inc
 keywords: dashboard, alerts queue, manage alerts, investigation, investigate alerts, investigate devices, submit files, deep analysis, high, medium, low, severity, ioc, ioa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Overview of Microsoft Defender Security Center
@@ -35,6 +36,11 @@ Use the **Security operations** dashboard to gain insight on the various alerts 
 Use the **Threat & Vulnerability Management** dashboard to expand your visibility on the overall security posture of your organization. You'll see devices that require attention and recommendations that can help you reduce the attack surface in your organization.
 
 Use the **Threat analytics** dashboard to continually assess and control risk exposure to Spectre and Meltdown.
+
+## Microsoft Defender for Endpoint interactive guide
+In this interactive guide, you'll learn how to investigate threats to your organization with Microsoft Defender for Endpoint. You'll see how Microsoft Defender for Endpoint can help you identify suspicious activities, investigate risks to your organization, and remediate threats.
+
+> [!VIDEO https://aka.ms/MSDE-IG]
 
 ### In this section
 

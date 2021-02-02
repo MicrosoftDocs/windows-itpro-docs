@@ -4,7 +4,7 @@ description: This topic for IT professionals describes the steps to enable the D
 ms.assetid: 88ef9561-6eb2-491a-803a-b8cdbfebae27
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Enable the DLL rule collection

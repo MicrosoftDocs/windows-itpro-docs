@@ -1,10 +1,10 @@
 ---
 title: Understand Windows Defender Application Control policy design decisions  (Windows 10)
-description: Understand Windows Defender Application Control policy design decisions. 
-keywords:  security, malware
+description: Understand Windows Defender Application Control policy design decisions.
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 manager: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 ms.date: 02/08/2018
+ms.technology: mde
 ---
 
 # Understand Windows Defender Application Control policy design decisions 

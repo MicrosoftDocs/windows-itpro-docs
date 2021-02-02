@@ -2,7 +2,7 @@
 title: Get support
 description: Frequently asked question about how to get support for Windows baselines, the Security Compliance Toolkit (SCT), and related topics in your organization.
 keywords: virtualization, security, malware
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
@@ -13,6 +13,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/25/2018
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Get Support
@@ -40,7 +41,7 @@ The toolkit supports formats created by the Windows GPO backup feature (.pol, .i
 
 Not yet. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools are coming online to convert GPOs and DSC and to validate system configuration. We are currently developing a tool to provide customers with these features.
 
-**Does SCT support the creation of Microsoft Endpoint Configuration Manager DCM packs?**
+**Does SCT support the creation of Microsoft Endpoint Manager DCM packs?**
 
 No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=40855). A tool that supports conversion of GPO backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
 

@@ -4,7 +4,7 @@ description: Learn how to design a basic policy for Windows Defender Firewall wi
 ms.assetid: 4c90df5a-3cbc-4b85-924b-537c2422d735
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Planning Settings for a Basic Firewall Policy

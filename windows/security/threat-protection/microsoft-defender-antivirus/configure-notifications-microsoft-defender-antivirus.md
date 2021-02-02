@@ -3,7 +3,7 @@ title: Configure Microsoft Defender Antivirus notifications
 description: Learn how to configure and customize both standard and additional Microsoft Defender Antivirus notifications on endpoints.
 keywords: notifications, defender, antivirus, endpoint, management, admin
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Configure the notifications that appear on endpoints
@@ -76,7 +77,7 @@ You can use Group Policy to:
 Hiding notifications can be useful in situations where you can't hide the entire Microsoft Defender Antivirus interface. See [Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md) for more information. 
 
 > [!NOTE]
-> Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [Microsoft Endpoint Configuration Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection). 
+> Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [Microsoft Endpoint Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection). 
 
 See [Customize the Windows Security app for your organization](../windows-defender-security-center/windows-defender-security-center.md) for instructions to add custom contact information to the notifications that users see on their machines.
 

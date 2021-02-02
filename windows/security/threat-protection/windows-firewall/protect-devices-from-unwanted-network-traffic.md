@@ -4,7 +4,7 @@ description: Learn how running a host-based firewall on every device in your org
 ms.assetid: 307d2b38-e8c4-4358-ae16-f2143af965dc
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Protect devices from unwanted network traffic 

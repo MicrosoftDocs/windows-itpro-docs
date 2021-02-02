@@ -4,7 +4,7 @@ description: This topic explains the AppLocker path rule condition, the advantag
 ms.assetid: 3fa54ded-4466-4f72-bea4-2612031cad43
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Understanding the path rule condition in AppLocker

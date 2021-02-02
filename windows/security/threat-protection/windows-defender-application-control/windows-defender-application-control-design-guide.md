@@ -3,7 +3,7 @@ title: Windows Defender Application Control design guide (Windows 10)
 description: Microsoft Windows Defender Application Control allows organizations to control what apps and drivers will run on their managed Windows 10 devices.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,6 +16,7 @@ ms.author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ms.date: 02/20/2018
+ms.technology: mde
 ---
 
 # Windows Defender Application Control design guide
@@ -45,5 +46,6 @@ Once these business factors are in place, you are ready to begin planning your W
 | [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md) | This topic lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies. |
 | [Understand WDAC policy rules and file rules](select-types-of-rules-to-create.md) | This topic lists resources you can use when selecting your application control policy rules by using WDAC. |
 | [Policy creation for common WDAC usage scenarios](types-of-devices.md) | This set of topics outlines common use case scenarios and helps you begin to develop a plan for deploying WDAC in your organization. |
+| [Policy creation using the WDAC Wizard tool](wdac-wizard.md) | This set of topics describes how to use the WDAC Wizard desktop app to easily create, edit and merge WDAC policies. |
 
 After planning is complete, the next step is to deploy WDAC. The [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md) covers the creation and testing of policies, deploying the enforcement setting, and managing and maintaining the policies.
