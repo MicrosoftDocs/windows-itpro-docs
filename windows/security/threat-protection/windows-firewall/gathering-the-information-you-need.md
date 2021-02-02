@@ -4,7 +4,7 @@ description: Collect and analyze information about your network, directory servi
 ms.assetid: 545fef02-5725-4b1e-b67a-a32d94c27d15
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Gathering the Information You Need

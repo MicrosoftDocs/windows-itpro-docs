@@ -4,7 +4,7 @@ description: Learn about the inventory of software in your devices and their vul
 keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, software, inventory, vulnerabilities, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # DeviceTvmSoftwareInventoryVulnerabilities

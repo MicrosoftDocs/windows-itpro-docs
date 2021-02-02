@@ -2749,6 +2749,86 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Power policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-acconnectivityinstandby-2" id="admx-power-acconnectivityinstandby-2">ADMX_Power/ACConnectivityInStandby_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-accriticalsleeptransitionsdisable-2" id="admx-power-accriticalsleeptransitionsdisable-2">ADMX_Power/ACCriticalSleepTransitionsDisable_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-acstartmenubuttonaction-2" id="admx-power-acstartmenubuttonaction-2">ADMX_Power/ACStartMenuButtonAction_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-allowsystempowerrequestac" id="admx-power-allowsystempowerrequestac">ADMX_Power/AllowSystemPowerRequestAC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-allowsystempowerrequestdc" id="admx-power-allowsystempowerrequestdc">ADMX_Power/AllowSystemPowerRequestDC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-allowsystemsleepwithremotefilesopenac" id="admx-power-allowsystemsleepwithremotefilesopenac">ADMX_Power/AllowSystemSleepWithRemoteFilesOpenAC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-allowsystemsleepwithremotefilesopendc" id="admx-power-allowsystemsleepwithremotefilesopendc">ADMX_Power/AllowSystemSleepWithRemoteFilesOpenDC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-customactiveschemeoverride-2" id="admx-power-customactiveschemeoverride-2">ADMX_Power/CustomActiveSchemeOverride_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcbatterydischargeaction0-2" id="admx-power-dcbatterydischargeaction0-2">ADMX_Power/DCBatteryDischargeAction0_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcbatterydischargeaction1-2" id="admx-power-dcbatterydischargeaction1-2">ADMX_Power/DCBatteryDischargeAction1_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcbatterydischargelevel0-2" id="admx-power-dcbatterydischargelevel0-2">ADMX_Power/DCBatteryDischargeLevel0_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcbatterydischargelevel1uinotification-2" id="admx-power-dcbatterydischargelevel1uinotification-2">ADMX_Power/DCBatteryDischargeLevel1UINotification_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcbatterydischargelevel1-2" id="admx-power-dcbatterydischargelevel1-2">ADMX_Power/DCBatteryDischargeLevel1_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcconnectivityinstandby-2" id="admx-power-dcconnectivityinstandby-2">ADMX_Power/DCConnectivityInStandby_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dccriticalsleeptransitionsdisable-2" id="admx-power-dccriticalsleeptransitionsdisable-2">ADMX_Power/DCCriticalSleepTransitionsDisable_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcstartmenubuttonaction-2" id="admx-power-dcstartmenubuttonaction-2">ADMX_Power/DCStartMenuButtonAction_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-diskacpowerdowntimeout-2" id="admx-power-diskacpowerdowntimeout-2">ADMX_Power/DiskACPowerDownTimeOut_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-diskdcpowerdowntimeout-2" id="admx-power-diskdcpowerdowntimeout-2">ADMX_Power/DiskDCPowerDownTimeOut_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dont-poweroff-aftershutdown" id="admx-power-dont-poweroff-aftershutdown">ADMX_Power/Dont_PowerOff_AfterShutdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-enabledesktopslideshowac" id="admx-power-enabledesktopslideshowac">ADMX_Power/EnableDesktopSlideShowAC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-enabledesktopslideshowdc" id="admx-power-enabledesktopslideshowdc">ADMX_Power/EnableDesktopSlideShowDC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-inboxactiveschemeoverride-2" id="admx-power-inboxactiveschemeoverride-2">ADMX_Power/InboxActiveSchemeOverride_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-pw-promptpasswordonresume" id="admx-power-pw-promptpasswordonresume">ADMX_Power/PW_PromptPasswordOnResume</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-powerthrottlingturnoff" id="admx-power-powerthrottlingturnoff">ADMX_Power/PowerThrottlingTurnOff</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-reservebatterynotificationlevel" id="admx-power-reservebatterynotificationlevel">ADMX_Power/ReserveBatteryNotificationLevel</a>
+  </dd>
+</dl>
+
 ### ADMX_PowerShellExecutionPolicy policies  
 
 <dl>

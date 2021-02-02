@@ -4,7 +4,7 @@ description: This topic describes the file formats and available default rules f
 ms.assetid: a083fd08-c07e-4534-b0e7-1e15d932ce8f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # DLL rules in AppLocker

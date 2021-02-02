@@ -4,7 +4,7 @@ description: This topic for the IT professional lists the settings used by AppLo
 ms.assetid: 9cb4aa19-77c0-4415-9968-bd07dab86839
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # AppLocker settings

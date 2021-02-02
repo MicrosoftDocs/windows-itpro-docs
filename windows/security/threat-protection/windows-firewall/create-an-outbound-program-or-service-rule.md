@@ -4,7 +4,7 @@ description: Use the Windows Defender Firewall with Advanced Security node in th
 ms.assetid: f71db4fb-0228-4df2-a95d-b9c056aa9311
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Create an Outbound Program or Service Rule

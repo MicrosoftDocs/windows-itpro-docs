@@ -3,7 +3,7 @@ title: Enable block at first sight to detect malware in seconds
 description: Turn on the block at first sight feature to detect and block malware within seconds.
 keywords: scan, BAFS, malware, first seen, first sight, cloud, defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -13,6 +13,7 @@ ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
 ms.date: 10/22/2020
+ms.technology: mde
 ---
 
 # Turn on block at first sight
@@ -22,7 +23,7 @@ ms.date: 10/22/2020
 
 **Applies to:**
 
-- Microsoft Defender Antivirus
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Block at first sight provides a way to detect and block new malware within seconds. This protection is enabled by default when certain prerequisite settings are enabled. These settings include cloud-delivered protection, a specified sample submission timeout (such as 50 seconds), and a file-blocking level of high. In most enterprise organizations, these settings are enabled by default with Microsoft Defender Antivirus deployments. 
 

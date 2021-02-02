@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.reviewer: 
@@ -31,6 +31,7 @@ Conditional Access Platform components used for Device Compliance include the fo
 - [Windows Health Attestation Service](https://technet.microsoft.com/itpro/windows/keep-secure/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices#device-health-attestation) (optional)
 
 - Azure AD Certificate Authority - It is a requirement that the client certificate used for the cloud-based device compliance solution be issued by an Azure Active Directory-based Certificate Authority (CA). An Azure AD CA is essentially a mini-CA cloud tenant in Azure. The Azure AD CA cannot be configured as part of an on-premises Enterprise CA. 
+See also [Always On VPN deployment for Windows Server and Windows 10](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/always-on-vpn-deploy).
 
 - Azure AD-issued short-lived certificates - When a VPN connection attempt is made, the Azure AD Token Broker on the local device communicates with Azure Active Directory, which then checks for health based on compliance rules. If compliant, Azure AD sends back a short-lived certificate that is used to authenticate the VPN. Note that certificate authentication methods such as EAP-TLS can be used. When that certificate expires, the client will again check with Azure AD for health validation before a new certificate is issued.
 

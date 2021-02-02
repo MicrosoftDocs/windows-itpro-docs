@@ -39,7 +39,7 @@ You can use an on-premises catalog, like WSUS, to deploy 3rd Party patches and u
 
 |Policy| Description |
 |-|-|
-|Specify Intranet Microsoft Update Service Location| Used for WSUS/Microsoft Endpoint Configuration Manager customers who want to install custom packages that are not offered through Windows Update.|
+|Specify Intranet Microsoft Update Service Location| Used for WSUS/Microsoft Endpoint Manager customers who want to install custom packages that are not offered through Windows Update.|
 
 ### Suggested configuration 
 

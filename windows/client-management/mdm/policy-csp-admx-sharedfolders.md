@@ -76,7 +76,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether the user can publish DFS roots in Active Directory Domain Services (AD DS).
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether the user can publish DFS roots in Active Directory Domain Services (AD DS).
 
 If you enable or do not configure this policy setting, users can use the "Publish in Active Directory" option to publish DFS roots as shared folders in AD DS .
 
@@ -149,7 +149,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether the user can publish shared folders in Active Directory Domain Services (AD DS).
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether the user can publish shared folders in Active Directory Domain Services (AD DS).
 
 If you enable or do not configure this policy setting, users can use the "Publish in Active Directory" option in the Shared Folders snap-in to publish shared folders in AD DS.
 

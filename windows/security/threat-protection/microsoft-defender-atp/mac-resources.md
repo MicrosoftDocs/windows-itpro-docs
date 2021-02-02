@@ -4,7 +4,7 @@ description: Resources for Microsoft Defender ATP for Mac, including how to unin
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,11 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Resources for Microsoft Defender for Endpoint for Mac
@@ -148,7 +149,7 @@ To enable autocompletion in zsh:
 
 ## Client Microsoft Defender for Endpoint quarantine directory
 
-`/Library/Application Support/Microsoft/Defender/quarantine/` contains the files quarantined by `mdatp`. The files are named after the threat trackingId. The current trackingIds is shown with `mdatp --threat --list --pretty`.
+`/Library/Application Support/Microsoft/Defender/quarantine/` contains the files quarantined by `mdatp`. The files are named after the threat trackingId. The current trackingIds is shown with `mdatp threat list`.
 
 ## Microsoft Defender for Endpoint portal information
 
