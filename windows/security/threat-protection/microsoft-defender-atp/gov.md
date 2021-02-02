@@ -1,10 +1,10 @@
 ---
-title: Microsoft Defender for Endpoint for US Government customers 
+title: Microsoft Defender for Endpoint for US Government customers
 description: Learn about the requirements and the available Microsoft Defender for Endpoint capabilities for US Government customers
 keywords: government, gcc, high, requirements, capabilities, defender, defender atp, mdatp, endpoint, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Microsoft Defender for Endpoint for US Government customers
@@ -30,8 +31,16 @@ This offering is currently available to Microsoft 365 GCC and GCC High customers
 
 > [!NOTE]
 > If you are a "GCC on Commercial" customer, please refer to the public documentation pages.
-<br>
 
+## Portal URLs
+The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
+
+Customer type | Portal URL
+:---|:---
+GCC | https://gcc.securitycenter.microsoft.us
+GCC High | https://securitycenter.microsoft.us
+
+<br>
 
 ## Endpoint versions
 
@@ -49,20 +58,23 @@ Windows 10, version 1803 (with [KB4598245](https://support.microsoft.com/help/45
 Windows 10, version 1709 | ![No](../images/svg/check-no.svg)<br>Note: Won't be supported | ![Yes](../images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: [Deprecated](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade
 Windows 10, version 1703 and earlier | ![No](../images/svg/check-no.svg)<br>Note: Won't be supported | ![No](../images/svg/check-no.svg)<br>Note: Won't be supported
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows Server 2016 | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows Server 2012 R2 | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows Server 2008 R2 SP1 | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows 8.1 Enterprise | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows 8 Pro | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows 7 SP1 Enterprise | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows 7 SP1 Pro | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
+Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows 8.1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows 8 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows 7 SP1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows 7 SP1 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Linux | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 macOS | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Android | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 iOS | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 
 > [!NOTE]
-> A patch must be deployed before device onboarding in order to configure Defender for Endpoint to the correct environment.
+> Where a patch is specified, it must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
+
+> [!NOTE]
+> Trying to onboard Windows Server 2016/2012 R2/2008 R2 SP1 or Windows 8.1 Enterprise/8 Pro/7 SP1 Enterprise/7 SP1 Pro using [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? You'll need to choose "Azure US Government" under "Azure Cloud".
 
 ### OS versions when using Azure Defender for Servers
 The following OS versions are supported when using [Azure Defender for Servers](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
@@ -87,17 +99,16 @@ Defender for Endpoint GCC High specific | `winatp-gw-usgt.microsoft.com`<br>`win
 
 <br>
 
-
 ## API
 Instead of the public URIs listed in our [API documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro), you'll need to use the following URIs:
 
-Environment | Login endpoint | Defender for Endpoint API endpoint
+Endpoint type | GCC | GCC High
 :---|:---|:---
-GCC | `https://login.microsoftonline.com` | `https://api-gcc.securitycenter.microsoft.us`
-GCC High | `https://login.microsoftonline.us` | `https://api-gov.securitycenter.microsoft.us`
+Login | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
+Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
+SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https://wdatp-alertexporter-us.securitycenter.windows.us`
 
 <br>
-
 
 ## Feature parity with commercial
 Defender for Endpoint doesn't have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available that we'd like to highlight.
@@ -124,6 +135,6 @@ Integrations: Microsoft Defender for Identity | ![No](../images/svg/check-no.svg
 Integrations: Microsoft Defender for Office 365 | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Integrations: Microsoft Endpoint DLP | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Integrations: Microsoft Intune | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
-Integrations: Microsoft Power Automate & Azure Logic Apps | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
+Integrations: Microsoft Power Automate & Azure Logic Apps | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Integrations: Skype for Business / Teams | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Microsoft Threat Experts | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog

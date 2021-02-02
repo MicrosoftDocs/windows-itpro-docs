@@ -4,7 +4,7 @@ description: This topic for IT professionals describes how to enforce applicatio
 ms.assetid: e1528b7b-77f2-4419-8e27-c9cc3721d96d
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Enforce AppLocker rules

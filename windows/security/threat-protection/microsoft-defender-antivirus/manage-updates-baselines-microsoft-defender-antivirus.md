@@ -3,7 +3,7 @@ title: Manage Microsoft Defender Antivirus updates and apply baselines
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.date: 01/07/2021
+ms.technology: mde
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines

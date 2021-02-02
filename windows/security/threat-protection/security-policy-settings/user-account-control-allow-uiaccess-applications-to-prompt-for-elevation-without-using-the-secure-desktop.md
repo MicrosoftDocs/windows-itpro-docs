@@ -4,7 +4,7 @@ description: Best practices and more for the policy setting, User Account Contro
 ms.assetid: fce20472-3c93-449d-b520-13c4c74a9892
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop

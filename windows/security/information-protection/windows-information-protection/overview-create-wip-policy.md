@@ -1,6 +1,6 @@
 ---
 title: Create a Windows Information Protection (WIP) policy using Microsoft Intune (Windows 10)
-description: Microsoft Intune and Microsoft Endpoint Configuration Manager helps you create and deploy your enterprise data protection (WIP) policy.
+description: Microsoft Intune and Microsoft Endpoint Manager helps you create and deploy your enterprise data protection (WIP) policy.
 ms.assetid: d2059e74-94bd-4e54-ab59-1a7b9b52bdc6
 ms.reviewer: 
 ms.prod: w10
@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro

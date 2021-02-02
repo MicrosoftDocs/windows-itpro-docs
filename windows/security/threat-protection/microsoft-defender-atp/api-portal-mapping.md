@@ -4,7 +4,7 @@ description: Understand how the Detections API fields map to the values in Micro
 keywords: detections, detections fields, fields, api, fields, pull Detections, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Microsoft Defender for Endpoint detections API fields

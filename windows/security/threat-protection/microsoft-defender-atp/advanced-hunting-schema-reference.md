@@ -4,7 +4,7 @@ description: Learn about the tables in the advanced hunting schema to understand
 keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
+ms.technology: mde
 ---
 
 # Understand the advanced hunting schema

@@ -4,7 +4,7 @@ description: Make the most of the query results returned by advanced hunting in 
 keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Work with advanced hunting query results

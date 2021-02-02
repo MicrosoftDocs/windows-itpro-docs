@@ -1,9 +1,9 @@
 ---
-title: Onboarding using Microsoft Endpoint Configuration Manager 
-description: Learn how to onboard to Microsoft Defender ATP using Microsoft Endpoint Configuration Manager
-keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction
+title: Onboarding using Microsoft Endpoint Configuration Manager
+description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Endpoint Configuration Manager
+keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario 
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
 ms.topic: article
+ms.technology: mde
 ---
 
-# Onboarding using Microsoft Endpoint Configuration Manager 
+# Onboarding using Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

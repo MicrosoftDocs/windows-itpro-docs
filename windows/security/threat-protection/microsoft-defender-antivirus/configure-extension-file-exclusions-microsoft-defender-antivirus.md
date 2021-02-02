@@ -3,7 +3,7 @@ title: Configure and validate exclusions based on extension, name, or location
 description: Exclude files from Microsoft Defender Antivirus scans based on their file extension, file name, or location.
 keywords: exclusions, files, extension, file type, folder name, file name, scans
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,6 +12,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Configure and validate exclusions based on file extension and folder location
@@ -74,7 +75,7 @@ See the following articles:
 
 ### Use Configuration Manager to configure file name, folder, or file extension exclusions
 
-See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring Microsoft Endpoint Manager (current branch).
 
 ### Use Group Policy to configure folder or file extension exclusions
 

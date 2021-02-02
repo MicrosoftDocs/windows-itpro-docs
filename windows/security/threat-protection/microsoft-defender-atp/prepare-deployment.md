@@ -4,7 +4,7 @@ description: Prepare stakeholder approval, timelines, environment considerations
 keywords: deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario 
-ms.topic: article 
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
+ms.topic: article
+ms.technology: mde
 ---
 
 # Prepare Microsoft Defender for Endpoint deployment

@@ -24,7 +24,7 @@ Though we encourage you to deploy every available release and maintain a fast ca
 You can use a calendar approach for either a faster twice-per-year cadence or an annual cadence. Depending on company size, installing Windows 10 feature updates less often than once annually risks devices going out of service and becoming vulnerable to security threats, because they will stop receiving the monthly security updates.
 
 ### Annual
-Here's a calendar showing an example schedule that applies one Windows 10 feature update per calendar year, aligned with Microsoft Endpoint Configuration Manager and Microsoft 365 Apps release cycles:
+Here's a calendar showing an example schedule that applies one Windows 10 feature update per calendar year, aligned with Microsoft Endpoint Manager and Microsoft 365 Apps release cycles:
 
 [ ![Calendar showing an annual update cadence](images/annual-calendar.png) ](images/annual-calendar.png#lightbox)
 

@@ -4,7 +4,7 @@ description: Learn how to allow RPC network traffic by using the Group Policy Ma
 ms.assetid: 0b001c2c-12c1-4a30-bb99-0c034d7e6150
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Create Inbound Rules to Support RPC
