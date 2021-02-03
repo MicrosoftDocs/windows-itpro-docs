@@ -77,7 +77,7 @@ Before you roll out attack surface reduction rules in your organization, select 
 The reasons for selecting a smaller set of devices as the sample object on which the ASR rules are to be applied are:
 
 - **Better prospects for seeing the impact of attack surface reduction rules** - This approach enables you to see how attack surface reduction rules work in your environment. When lesser number of devices are used, the impact becomes more apparent because the ASR rules can sometimes impact a particular device to a larger extent.
-- **Ease in determining ASR rule exclusion** - Testing ASR rules on a smaller device set gives you scope to implement flexibility in exclusions. The flexibility refers to the devising combinations of applicable/not applicable devices for ASR rules applicability. These combinations vary depending on the results of the ASR rules testing on the smaller device set.
+- **Ease in determining exclusions for attack surface reduction rules** - Testing ASR rules on a smaller device set gives you scope to implement flexibility in exclusions. The flexibility refers to the devising combinations of applicable/not applicable devices for ASR rules applicability. These combinations vary depending on the results of the ASR rules testing on the smaller device set.
 
 > [!IMPORTANT]
 > You can implement the process of applying ASR rules to a smaller device set by utilizing dynamic membership rules.
