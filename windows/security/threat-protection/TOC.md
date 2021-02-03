@@ -478,6 +478,7 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 ##### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
+##### [Configure vulnerability notifications](microsoft-defender-atp/configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
 
 #### [Permissions]()
@@ -526,6 +527,7 @@
 
 ##### [Microsoft Defender for Endpoint APIs Schema]()
 ###### [Supported Microsoft Defender for Endpoint APIs](microsoft-defender-atp/exposed-apis-list.md)
+###### [Release Notes](microsoft-defender-atp/api-release-notes.md)
 ###### [Common REST API error codes](microsoft-defender-atp/common-errors.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
