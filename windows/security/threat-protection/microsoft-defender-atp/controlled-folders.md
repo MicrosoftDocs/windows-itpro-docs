@@ -35,6 +35,9 @@ Controlled folder access helps protect your valuable data from malicious apps an
 
 Controlled folder access works best with [Microsoft Defender for Endpoint](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
 
+> [!NOTE]
+> Controlled folder access blocks do not generate alerts in the [Alert queue](../microsoft-defender-atp/alerts-queue.md). However, they do provide valuable information that will appear in the [Device Timeline](../microsoft-defender-atp/investigate-machines.md), [Advanced Hunting](../microsoft-defender-atp/advanced-hunting-overview.md) or can be used when building [Custom Detections](../microsoft-defender-atp/custom-detection-rules.md).
+
 ## How does controlled folder access work?
 
 Controlled folder access works by only allowing trusted apps to access protected folders. Protected folders are specified when controlled folder access is configured. Typically, commonly used folders, such as those used for documents, pictures, downloads, and so on, are included in the list of controlled folders. 
