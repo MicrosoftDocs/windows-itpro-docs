@@ -11,7 +11,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 audience: ITPro
-ms.date: 02/01/2021
+ms.date: 02/03/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -112,21 +112,13 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 #### Use Group Policy to configure PUA protection
 
 1. Download and install [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
-
 2. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
-
 3. Select the Group Policy Object you want to configure, and then choose **Edit**.
-
 4. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
-
 5. Expand the tree to **Windows Components** > **Microsoft Defender Antivirus**.
-
 6. Double-click **Configure detection for potentially unwanted applications**.
-
 7. Select **Enabled** to enable PUA protection.
-
 8. In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting works in your environment. Select **OK**.
-
 9. Deploy your Group Policy object as you usually do.
 
 #### Use PowerShell cmdlets to configure PUA protection
