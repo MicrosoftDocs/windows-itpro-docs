@@ -23,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data to files found by the query.
 
