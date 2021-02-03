@@ -24,6 +24,9 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
+>[!IMPORTANT]
+>Some information relates to a prereleased product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 In Microsoft Defender for Endpoint, **Techniques** are a grouping of events that when taken together indicate activity associated with certain [MITRE ATT&CK](https://attack.mitre.org/) techniques or sub-techniques. 
 
 This feature simplifies the investigation experience by helping analysts understand at a glance whether suspicious activities happened on or affected a device and whether those activities indicate a need for closer investigation.
@@ -46,7 +49,8 @@ To view only either events or techniques, select Filters from the device timelin
 
 [FILTER screenshot]
 
-IMPORTANT: Event group filters do not affect Techniques, so when Techniques data type is selected, all techniques are shown.
+>[!IMPORTANT]
+>Event group filters do not affect Techniques, so when Techniques data type is selected, all techniques are shown.
 
 To view File events only without Techniques, select Events data type and File events event group.
 
