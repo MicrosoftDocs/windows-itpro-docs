@@ -80,12 +80,12 @@ All our updates contain
 <details>
 <summary> January-2021 (Platform: 4.18.2101.X | Engine: 1.1.17800.5)</summary>
  
-&ensp;Security intelligence update version: **1.331.20.0**  
-&ensp;Released: **February 1, 2021**  
-&ensp;Platform: **4.18.2101.X**  
-&ensp;Engine: **1.1.17800.5**  
-&ensp;Support phase: **Security and Critical Updates**
-    
+&ensp;Security intelligence update version: **1.331.20.0**     
+&ensp;Released: **February 1, 2021**     
+&ensp;Platform: **4.18.2101.X**     
+&ensp;Engine: **1.1.17800.5**     
+&ensp;Support phase: **Security and Critical Updates**   
+
 ### What's new
 
 - Additional failed tampering attempt event generation when Tamper Protection is enabled
