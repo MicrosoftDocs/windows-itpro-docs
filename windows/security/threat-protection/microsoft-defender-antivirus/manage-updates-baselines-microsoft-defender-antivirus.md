@@ -77,6 +77,27 @@ All our updates contain
 - integration improvements (Cloud, Microsoft 365 Defender).
 <br/><br/>
 
+<details>
+<summary> January-2021 (Platform: 4.18.2101.X | Engine: 1.1.17800.5)</summary>
+ 
+&ensp;Security intelligence update version: **1.331.20.0**  
+&ensp;Released: **February 1, 2021**  
+&ensp;Platform: **4.18.2101.X**  
+&ensp;Engine: **1.1.17800.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+
+- Additional failed tampering attempt event generation when Tamper Protection is enabled
+- Shellcode exploit detection improvements
+- Increased visibility for credential stealing attempts
+- Apply CPU throttling policy to manually initiated scans
+
+### Known Issues
+
+No known issues  
+<br/>
+</details>
 
 <details>
 <summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</summary>
@@ -115,7 +136,13 @@ No known issues
 
 No known issues  
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
+<br/><br/>
+<details>
 <summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
 &ensp;Security intelligence update version: **1.325.10.0**  
@@ -141,12 +168,6 @@ No known issues
 No known issues  
 <br/>
 </details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
-<br/><br/>
-
 <details>
 <summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
 
