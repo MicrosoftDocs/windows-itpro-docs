@@ -4,7 +4,7 @@ description: Learn about planning isolation groups for the zones in Microsoft Fi
 ms.assetid: be4b662d-c1ce-441e-b462-b140469a5695
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Planning Isolation Groups for the Zones

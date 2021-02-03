@@ -4,7 +4,7 @@ description: This topic for the IT professional describes the tasks that should 
 ms.assetid: ebbb1907-92dc-499e-8cee-8e637483c9ae
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Deploy the AppLocker policy into production

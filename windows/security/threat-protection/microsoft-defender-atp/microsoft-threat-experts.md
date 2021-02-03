@@ -1,11 +1,11 @@
 ---
-title: Microsoft Threat Experts 
+title: Microsoft Threat Experts
 ms.reviewer: 
 description: Microsoft Threat Experts provides an additional layer of expertise to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts
 search.product: Windows 10
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +15,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Microsoft Threat Experts

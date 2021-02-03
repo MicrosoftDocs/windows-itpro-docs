@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 71a3bd48-1014-49e0-a936-bfe9433af23e
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/01/2017
+ms.technology: mde
 ---
 
 # Accounts: Administrator account status

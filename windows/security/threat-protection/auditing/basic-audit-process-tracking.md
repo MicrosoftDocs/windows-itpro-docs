@@ -4,7 +4,7 @@ description: Determines whether to audit detailed tracking information for event
 ms.assetid: 91AC5C1E-F4DA-4B16-BEE2-C92D66E4CEEA
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Audit process tracking
