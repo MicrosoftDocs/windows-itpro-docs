@@ -33,7 +33,7 @@ With Microsoft Defender for Endpoint, when an [automated investigation](automate
 
 ## (NEW!) Unified investigation page
 
-The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)  and [Microsoft Defender for Office 365](../office-365-security/office-365-atp.md). 
+The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)  and [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp). 
 
 > [!TIP]
 > To learn more about what's changing, see [(NEW!) Unified investigation page](/microsoft-365/security/mtp/mtp-autoir-results).
