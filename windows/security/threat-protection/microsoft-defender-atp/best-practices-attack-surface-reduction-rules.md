@@ -76,7 +76,7 @@ Before you roll out attack surface reduction rules in your organization, select 
 
 The reasons for selecting a smaller set of devices as the sample object on which the ASR rules are to be applied are:
 
-- **Better prospects for display of ASR rules impact** - This approach enables you to see how attack surface reduction rules work in your environment. When lesser number of devices are used, the impact becomes more apparent because the ASR rules can sometimes impact a particular device to a larger extent.
+- **Better prospects for seeing the impact of attack surface reduction rules** - This approach enables you to see how attack surface reduction rules work in your environment. When lesser number of devices are used, the impact becomes more apparent because the ASR rules can sometimes impact a particular device to a larger extent.
 - **Ease in determining ASR rule exclusion** - Testing ASR rules on a smaller device set gives you scope to implement flexibility in exclusions. The flexibility refers to the devising combinations of applicable/not applicable devices for ASR rules applicability. These combinations vary depending on the results of the ASR rules testing on the smaller device set.
 
 > [!IMPORTANT]
@@ -139,29 +139,19 @@ Reports relating to ASR rule events can be generated for the preceding-6-months 
 
 ## Avoid policy conflicts
 
-If a conflicting policy has emerged as a result of a policy being applied from Mobile Device Management (MDM, using Intune) and Group Policy, the setting applied from MDM takes precedence. See [Attack surface reduction rules](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
+If a conflicting policy has emerged as a result of a policy being applied from Mobile Device Management (MDM, using Intune) and Group Policy, the setting applied from MDM takes precedence. For more information, see [Attack surface reduction rules](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
 
-Attack surface reduction (ASR) rules for MEM-managed devices now support a new behavior for merger of settings from different policies, to create a superset of policies for each device. Only the settings that are not in conflict are merged, while those that are in conflict are not added to the superset of rules. Previously, if two policies included conflicts for a single setting, both policies were flagged as being in conflict, and no settings from either of the profiles would be deployed. ASR rule merge behavior is as follows: 
+You can now create a superset of policies for attack surface reduction rules that apply to [MEM-managed devices](/mem/intune/enrollment/device-management-capabilities). When you do this, only the settings that are not in conflict are merged, while those that are in conflict are not added to the superset of rules. Previously, if two policies included conflicts for a single setting, both policies were flagged as being in conflict, and no settings from either of the profiles would be deployed. Attack surface reduction rule merge behavior works like this:
 
-Attack surface reduction (ASR) rules for MEM (Microsoft Endpoint Manager)-managed devices support a new behavior in terms of merger of the settings of policies. This behavior is described below:
+| Situation | What happens |
+|:---|:---|
+| Two or more policies have multiple settings configured | The settings that do not conflict are merged into the superset of the policies they are mapped to. |
+| Two or more policies have a conflict with a single setting | Only the single setting with a conflict is held back from being merged into the superset of the policies. <p>The bundle of settings as a whole is not held back from being merged into the superset because of a single conflict-affected setting. <p>The policy as a whole is not flagged as **being in conflict**. |
 
-- If two or more policies have multiple settings configured in each of them, the settings without a conflict are merged into the superset of the policies they are mapped to.
-- If two or more policies encounter a conflict over a single setting from the various settings they are configured with,  only that single setting with a conflict is held back from being merged into the superset of the policies. 
-- The bundle of settings as a whole are not held back from being merged into the superset because of the single conflict-affected setting.
-- The policy as a whole is not flagged as **being in conflict** because of one of its settings being conflict affected.
-  
-
-- ASR rules from the following profiles are evaluated for each device the rules apply to:  
-    - Devices > Configuration policy > Endpoint protection profile > Microsoft Defender Exploit Guard > [Attack Surface Reduction](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction).
-    - Endpoint security > Attack surface reduction policy > Attack surface reduction rules.
-    - Endpoint security > Security baselines > Microsoft Defender ATP Baseline > Profiles >  Profile Name > Properties > Configuration settings > Attack Surface Reduction Rules
-
-- Settings that do not have conflicts are added to a superset of policy for the device.
-
-- When two or more policies have conflicting settings, the conflicting settings are not added to the combined policy, while settings that don’t conflict are added to the superset policy that applies to a device.
-
-- Only the configurations for conflicting settings are held back.
-
+The policy superset can include settings from the following profiles:  
+- Devices > Configuration policy > Endpoint protection profile > Microsoft Defender Exploit Guard > Attack Surface Reduction.
+- Endpoint security > Attack surface reduction policy > Attack surface reduction rules.
+- Endpoint security > Security baselines > Microsoft Defender ATP Baseline > Profiles >  Profile Name > Properties > Configuration settings > Attack Surface Reduction Rules
 
 ## See the demystifying blogs
 
