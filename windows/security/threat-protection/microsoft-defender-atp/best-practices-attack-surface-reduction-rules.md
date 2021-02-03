@@ -27,17 +27,17 @@ ms.collection:
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-<!--ASR guidance for deploying rules (links to Antonio’s blog, recommendations for deploying rules to small set of devices first, code signing, link to ASR Power BI template, and link to M365 security center reports) and 8.	Policy conflict (details about what happens with conflicting policies, what happens when settings from different policies are merged)
--->
+Attack surface reduction rules help reduce vulnerabilities by targeting certain software behaviors. These behaviors include:
 
-The instructions to deploy attack surface reduction (ASR) rules in the most optimal way are available in [Demystifying attack surface reduction rules - Part 2](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-2/ba-p/1326565).
+- Launching executable files and scripts that attempt to download or run files;
+- Running obfuscated or otherwise suspicious scripts; and 
+- Performing behaviors that apps don't usually initiate during normal day-to-day work.
 
-It is highly recommended to test the ASR rules on a sample-like smaller set of devices. For information on the reasons for this recommendation and on how to deploy the ASR rules on a smaller set of devices, see **Use a phased approach** section, below, in this article.
+This article includes tips, best practices, and important considerations regarding attack surface reduction rules.
 
- > [!NOTE]
-> Whether you're about to enable or have already deployed ASR rules for your organization, see the information in this article. By using the tips and best practices in this article, you can employ attack surface reduction rules successfully and avoid potential issues.
 
-**Results of applying ASR rules**
+
+## Results of applying ASR rules
 
 - The process of applying ASR rules on devices provides scope to query for reports. These queries can be implemented in the form of templates.
 
@@ -49,7 +49,7 @@ It is highly recommended to test the ASR rules on a sample-like smaller set of d
 <!-- Denise, could we discuss as to why only the **Microsoft 365 security center** source is being cited here; Just for better understanding, I am putting forward this query
 -->
 
-**Applicable to rules' states**
+## Applicable to rule states
 
 This section describes the best practices with regard to the states which any ASR rule can be set to, irrespective of the method used to configure or deploy the ASR rule.
 
@@ -59,7 +59,7 @@ Prior to describing the best pratices for the ASR rules' states, it is important
 - **Block**: This is the state in which the ASR rule is enabled. YThe code for this state is 1.
 - **Audit**: This is the state in which the ASR rule is evaluated about its impactive behavior toward the organization or environment in which it is deployed.
 
-**Recommendation**
+## Recommendation
 
 The recommended practice for a deployed ASR rule is to start it in **audit** mode. The reasons for recommendation of this best pratice are:
 
@@ -77,7 +77,7 @@ Before you roll out attack surface reduction rules in your organization, select 
 The reasons for selecting a smaller set of devices as the sample object on which the ASR rules are to be applied are:
 
 - **Better prospects for display of ASR rules impact** - This approach enables you to see how attack surface reduction rules work in your environment. When lesser number of devices are used, the impact becomes more apparent because the ASR rules can sometimes impact a particular device to a larger extent.
-- **Ease in determining ASR rule exclusion** - Testing ASR rules on a smaller device set gives you scope to implement flexibility in exclusions. The flexibility refers to the devising combinations of **applicable-not applicable**  devices for ASR rules applicability. These combinations vary depending on the results of the ASR rules testing on the smaller device set.
+- **Ease in determining ASR rule exclusion** - Testing ASR rules on a smaller device set gives you scope to implement flexibility in exclusions. The flexibility refers to the devising combinations of applicable/not applicable devices for ASR rules applicability. These combinations vary depending on the results of the ASR rules testing on the smaller device set.
 
 > [!IMPORTANT]
 > You can implement the process of applying ASR rules to a smaller device set by utilizing dynamic membership rules.
