@@ -78,20 +78,21 @@ All our updates contain
 <br/><br/>
 
 <details>
-<summary> January-2021 (Platform: 4.18.2101.x | Engine: 1.1.17800.5)</summary>
+<summary> January-2021 (Platform: 4.18.2101.8 | Engine: 1.1.17800.5)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
-&ensp;Released: **February 1, 2021**  
-&ensp;Platform: **4.18.2101.x**  
+&ensp;Released: **February 2, 2021**  
+&ensp;Platform: **4.18.2101.8**  
 &ensp;Engine: **1.1.17800.5**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
 
-- Additional failed tampering attempt event generation when Tamper Protection is enabled
+- Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
 - Shellcode exploit detection improvements
 - Increased visibility for credential stealing attempts
-- Apply CPU throttling policy to enable manually initiated scans
+- Improvements in antitampering features in Microsoft Defender Antivirus services
+- Improved support for ARM x64 emulation
 
 ### Known Issues
 No known issues  
@@ -107,7 +108,7 @@ No known issues
     
 ### What's new
 
-- Improved SmartScreen status support logging
+- Improved [SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) status support logging
 - Apply CPU throttling policy to manually initiated scans
 
 ### Known Issues
@@ -337,6 +338,7 @@ Engine: **1.1.16700.2**
 - Fix 4.18.1911.3 hang
    
 ### Known Issues
+
 [**Fixed**] devices utilizing [modern standby mode](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.  
 <br/>
 > [!IMPORTANT]
