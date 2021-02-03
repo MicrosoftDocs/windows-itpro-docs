@@ -1,5 +1,5 @@
 ---
-title: Prevent ransomware and threats from encrypting and changing files
+title: Protect important folders from ransomware from encrypting your files with controlled folder access
 description: Files in default folders can be protected from being changed by malicious apps. Prevent ransomware from encrypting your files.
 keywords: controlled folder access, windows 10, windows defender, ransomware, protect, files, folders
 search.product: eADQiWindows 10XVcnh
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 12/17/2020
+ms.date: 02/03/2021
 ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
@@ -35,8 +35,8 @@ Controlled folder access helps protect your valuable data from malicious apps an
 
 Controlled folder access works best with [Microsoft Defender for Endpoint](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
 
-> [!NOTE]
-> Controlled folder access blocks do not generate alerts in the [Alert queue](../microsoft-defender-atp/alerts-queue.md). However, they do provide valuable information that will appear in the [Device Timeline](../microsoft-defender-atp/investigate-machines.md), [Advanced Hunting](../microsoft-defender-atp/advanced-hunting-overview.md) or can be used when building [Custom Detections](../microsoft-defender-atp/custom-detection-rules.md).
+> [!TIP]
+> Controlled folder access blocks don't generate alerts in the [Alerts queue](../microsoft-defender-atp/alerts-queue.md). However, you can view information about controlled folder access blocks in the [device timeline view](../microsoft-defender-atp/investigate-machines.md), while using [advanced hunting](../microsoft-defender-atp/advanced-hunting-overview.md), or with [custom detection rules](../microsoft-defender-atp/custom-detection-rules.md).
 
 ## How does controlled folder access work?
 
@@ -46,7 +46,7 @@ Controlled folder access works with a list of trusted apps. If an app is include
 
 Apps are added to the list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization and that have never displayed any behavior deemed malicious are considered trustworthy. Those apps are added to the list automatically.
 
-Apps can also be added manually to the trusted list  by using Configuration Manager or Intune. Additional actions, such as [adding a file indicator](../microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for an app, can be performed from the Security Center Console.
+Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions, such as [adding a file indicator](../microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for an app, can be performed from the Security Center Console.
 
 ## Why controlled folder access is important
 
@@ -120,17 +120,11 @@ The following table shows events related to controlled folder access:
 You can use the Windows Security app to view the list of folders that are protected by controlled folder access. 
 
 1. On your Windows 10 device, open the Windows Security app.
-
 2. Select **Virus & threat protection**.
-
 3. Under **Ransomware protection**, select **Manage ransomware protection**.
-
 4. If controlled folder access is turned off, you'll need to turn it on. Select **protected folders**.
-
 5. Do one of the following steps:
-
    - To add a folder, select **+ Add a protected folder**.
-   
    - To remove a folder, select it, and then select **Remove**. 
 
 > [!NOTE]
