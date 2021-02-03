@@ -42,7 +42,7 @@ Controlled folder access works best with [Microsoft Defender for Endpoint](../mi
 
 Controlled folder access works by only allowing trusted apps to access protected folders. Protected folders are specified when controlled folder access is configured. Typically, commonly used folders, such as those used for documents, pictures, downloads, and so on, are included in the list of controlled folders. 
 
-Controlled folder access works with a list of trusted apps. If an app is included in the list of trusted software, it works as expected. If not, the app is prevented from making any changes to files that are inside protected folders. 
+Controlled folder access works with a list of trusted apps. Apps that are included in the list of trusted software work as expected. Apps that are not included in the list are prevented from making any changes to files inside protected folders. 
 
 Apps are added to the list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization and that have never displayed any behavior deemed malicious are considered trustworthy. Those apps are added to the list automatically.
 
@@ -52,7 +52,7 @@ Apps can also be added manually to the trusted list by using Configuration Manag
 
 Controlled folder access is especially useful in helping to protect your documents and information from [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). In a ransomware attack, your files can get encrypted and held hostage. With controlled folder access in place, a notification appears on the computer where an app attempted to make changes to a file in a protected folder. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
 
-The [protected folders](#review-controlled-folder-access-events-in-windows-event-viewer) include common system folders (including boot sectors), and you can [add additional folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
+The [protected folders](#review-controlled-folder-access-events-in-windows-event-viewer) include common system folders (including boot sectors), and you can [add more folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
 
 You can use [audit mode](audit-windows-defender.md) to evaluate how controlled folder access would impact your organization if it were enabled. You can also visit the Windows Defender Test ground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
@@ -69,6 +69,7 @@ Windows system folders are protected by default, along with several other folder
 - `c:\Users\<username>\Pictures`
 - `c:\Users\Public\Pictures`
 - `c:\Users\Public\Videos`
+- `c:\Users\<username>\Videos`
 - `c:\Users\<username>\Music`
 - `c:\Users\Public\Music`
 - `c:\Users\<username>\Favorites`
@@ -98,13 +99,9 @@ DeviceEvents
 You can review the Windows event log to see events that are created when controlled folder access blocks (or audits) an app:
 
 1. Download the [Evaluation Package](https://aka.ms/mp7z2w) and extract the file *cfa-events.xml* to an easily accessible location on the device.
-
 2. Type **Event viewer** in the Start menu to open the Windows Event Viewer.
-
 3. On the left panel, under **Actions**, select **Import custom view...**.
-
 4. Navigate to where you extracted *cfa-events.xml* and select it. Alternatively, [copy the XML directly](event-views.md).
-
 5. Select **OK**.
 
 The following table shows events related to controlled folder access:
@@ -134,4 +131,4 @@ You can use the Windows Security app to view the list of folders that are protec
 
 - [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
 - [Customize controlled folder access](customize-controlled-folders.md)
-- [Protect additional folders](customize-controlled-folders.md#protect-additional-folders)
+- [Protect more folders](customize-controlled-folders.md#protect-additional-folders)
