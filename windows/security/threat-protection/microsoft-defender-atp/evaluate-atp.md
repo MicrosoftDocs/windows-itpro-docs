@@ -24,7 +24,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-[Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
+[Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 
 You can evaluate Microsoft Defender for Endpoint in your organization by [starting your free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
