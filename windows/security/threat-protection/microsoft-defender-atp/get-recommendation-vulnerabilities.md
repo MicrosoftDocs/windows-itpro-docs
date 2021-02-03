@@ -67,7 +67,7 @@ If successful, this method returns 200 OK, with the list of vulnerabilities asso
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome/vulnerabilities
 ```
 

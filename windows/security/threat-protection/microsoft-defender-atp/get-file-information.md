@@ -76,7 +76,7 @@ If successful and file exists - 200 OK with the [file](files.md) entity in the b
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
 ```
 
@@ -85,9 +85,7 @@ GET https://api.securitycenter.microsoft.com/api/files/4388963aaa83afe2042a46a3c
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
 	"@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Files/$entity",
 	"sha1": "4388963aaa83afe2042a46a3c017ad50bdcdafb3",

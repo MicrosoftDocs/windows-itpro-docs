@@ -170,3 +170,6 @@ When you click on the pending actions link, you'll be taken to the Action center
 
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
  
+## See also
+
+- [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)

@@ -40,7 +40,7 @@ Represent an Automated Investigation entity in Defender for Endpoint.
 Method|Return Type |Description
 :---|:---|:---
 [List Investigations](get-investigation-collection.md) | Investigation collection | Get collection of Investigation
-[Get single Investigation](get-investigation-collection.md) | Investigation entity | Gets single Investigation entity.
+[Get single Investigation](get-investigation-object.md) | Investigation entity | Gets single Investigation entity.
 [Start Investigation](initiate-autoir-investigation.md) | Investigation entity | Starts Investigation on a device.
 
 
