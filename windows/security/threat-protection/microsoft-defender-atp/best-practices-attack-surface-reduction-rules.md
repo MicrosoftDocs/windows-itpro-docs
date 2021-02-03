@@ -61,7 +61,7 @@ Prior to describing the best pratices for the ASR rules' states, it is important
 
 ## Recommendation
 
-The recommended practice for a deployed ASR rule is to start it in **audit** mode. The reasons for recommendation of this best pratice are:
+The recommended practice for a deployed ASR rule is to start it in **audit** mode. The reasons for recommendation of this best practice are:
 
 1. **Access to logs and reviews**: When an ASR rule is set to **audit** mode, you can get access to the logs and reviews pertaining to it. These logs and reviews are data that helps you to analyze the impact of the ASR rule.
 2. **Rule-related decision**: The analysis findings guided by the logs and reviews help you take a decision whether to deploy or exclude the ASR rule or not. For information on ASR rule exclusion see
@@ -77,14 +77,7 @@ Before you roll out attack surface reduction rules in your organization, select 
 The reasons for selecting a smaller set of devices as the sample object on which the ASR rules are to be applied are:
 
 - **Better prospects for seeing the impact of attack surface reduction rules** - This approach enables you to see how attack surface reduction rules work in your environment. When lesser number of devices are used, the impact becomes more apparent because the ASR rules can sometimes impact a particular device to a larger extent.
-- **Ease in determining exclusions for attack surface reduction rules** - Testing ASR rules on a smaller device set gives you scope to implement flexibility in exclusions. The flexibility refers to the devising combinations of applicable/not applicable devices for ASR rules applicability. These combinations vary depending on the results of the ASR rules testing on the smaller device set.
-
-> [!IMPORTANT]
-> You can implement the process of applying ASR rules to a smaller device set by utilizing dynamic membership rules.
-
-**How to configure dynamic membership rules**
-
-<!--Denise, we might need Jody's help in acquiring inputs for this procedural section  of setting up dynamic membership rules.-->
+- **Ease in determining exclusions for attack surface reduction rules** - Testing attack surface reduction rules on a smaller set of devices gives you flexibility in identifying and defining exclusions. You can determine whether any devices are not applicable for attack surface reduction rules. 
 
 ## Use code signing for applications
 
