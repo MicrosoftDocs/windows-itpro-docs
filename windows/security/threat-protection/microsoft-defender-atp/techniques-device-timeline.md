@@ -1,7 +1,7 @@
 ---
 title: Techniques in the device timeline
 description: Understanding MITRE ATT&CK techniques grouping in the device timeline in Microsoft Defender for Endpoint
-keywords: device timeline, endpoint, MITRE, MITRE ATT&CK, techniques, tactices
+keywords: device timeline, endpoint, MITRE, MITRE ATT&CK, techniques, tactics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ This feature simplifies the investigation experience by helping analysts underst
 
 For public preview customers, Techniques are available by default and are shown together with events when a device's timeline is viewed. 
 
-[TIMELINE screenshot]
+![Techniques in device timeline screenshot](images/device-timeline-with-techniques.png)
 
 Techniques are highlighted in bold text and appear with a blue icon on the left. The corresponding MITRE ATT&CK ID and technique name also appears as tags under Additional information. 
 
@@ -47,7 +47,7 @@ Search and Export options are also available for Techniques.
 
 To view only either events or techniques, select Filters from the device timeline and choose your preferred Data type to view.
 
-[FILTER screenshot]
+![Filters screenshot](images/device-timeline-filters.png)
 
 >[!IMPORTANT]
 >Event group filters do not affect Techniques, so when Techniques data type is selected, all techniques are shown.
