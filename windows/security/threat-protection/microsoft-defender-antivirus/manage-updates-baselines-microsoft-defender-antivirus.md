@@ -78,28 +78,25 @@ All our updates contain
 <br/><br/>
 
 <details>
-<summary> January-2021 (Platform: 4.18.2101.X | Engine: 1.1.17800.5)</summary>
- 
-&ensp;Security intelligence update version: **1.331.20.0**     
-&ensp;Released: **February 1, 2021**     
-&ensp;Platform: **4.18.2101.X**     
-&ensp;Engine: **1.1.17800.5**     
-&ensp;Support phase: **Security and Critical Updates**   
+<summary> January-2021 (Platform: 4.18.2101.x | Engine: 1.1.17800.5)</summary>
 
+&ensp;Security intelligence update version: **1.327.1854.0**  
+&ensp;Released: **February 1, 2021**  
+&ensp;Platform: **4.18.2101.x**  
+&ensp;Engine: **1.1.17800.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
 ### What's new
 
 - Additional failed tampering attempt event generation when Tamper Protection is enabled
 - Shellcode exploit detection improvements
 - Increased visibility for credential stealing attempts
-- Apply CPU throttling policy to manually initiated scans
+- Apply CPU throttling policy to enable manually initiated scans
 
 ### Known Issues
-
 No known issues  
 <br/>
-</details>
-
-<details>
+</details><details>
 <summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
