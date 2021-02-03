@@ -47,7 +47,13 @@ Selecting an alert's name in Defender for Endpoint will land you on its alert pa
 
 ![An alert page when you first land on it](images/alert-landing-view.png)
 
-Note the detection status for your alert. Blocked, or prevented means actions were already taken by Defender for Endpoint.
+Note the detection status for your alert. 
+- Prevented – The attempted suspicious action was avoided. For example, a file either wasn’t written to disk or executed.
+- Blocked – Suspicious behavior was executed and then blocked. For example, a process was executed but because it subsequently exhibited suspicious behaviors, the process was terminated.
+- Detected – An attack was detected and is possibly still active.
+
+Blocked or prevented means actions were already taken by Defender for Endpoint.
+
 Start by reviewing the *automated investigation details* in your alert's details pane, to see which actions were already taken, as well as reading the alert's description for recommended actions.
 
 ![A snippet of the details pane with the alert description and automatic investigation sections highlighted](images/alert-air-and-alert-description.png)
