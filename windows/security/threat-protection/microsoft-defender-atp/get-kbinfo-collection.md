@@ -61,18 +61,15 @@ If successful - 200 OK.
 
 Here is an example of the request.
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/KbInfo
-Content-type: application/json
 ```
 
 **Response**
 
 Here is an example of the response.
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#KbInfo",
     "@odata.count": 271,

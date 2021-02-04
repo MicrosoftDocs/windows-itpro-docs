@@ -96,9 +96,10 @@ If successful, this method returns 200 OK, and a new [alert](alerts.md) object i
 
 Here is an example of the request.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 ```
+
 ```json
 {
 	"machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",

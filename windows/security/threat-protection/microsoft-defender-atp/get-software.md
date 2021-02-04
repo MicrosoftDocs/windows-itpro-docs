@@ -66,7 +66,7 @@ If successful, this method returns 200 OK with the software inventory in the bod
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/Software
 ```
 

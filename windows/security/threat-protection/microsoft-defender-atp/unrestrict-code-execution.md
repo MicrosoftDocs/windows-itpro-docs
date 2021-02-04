@@ -82,9 +82,11 @@ If successful, this method returns 201 - Created response code and [Machine Acti
 
 Here is an example of the request.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/unrestrictCodeExecution 
-Content-type: application/json
+```
+
+```json
 {
   "Comment": "Unrestrict code execution since machine was cleaned and validated"
 }
