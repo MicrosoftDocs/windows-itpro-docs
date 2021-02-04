@@ -58,15 +58,20 @@ Beginning in 1903, Custom OMA-URI policy deployment leverages the [ApplicationCo
 The steps to use Intune's Custom OMA-URI functionality are:
 
 1. Know a generated policy's GUID, which can be found in the policy xml as `<PolicyID>`
+
 2. Convert the policy XML to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
+
 3. Open the Microsoft Intune portal and click **Device configuration** > **Profiles** > **Create profile**.
+
 4. Type a name for the new profile, select **Windows 10 and later** as the **Platform** and **Custom** as the **Profile type**.
+
 5. Add a row, then give your policy a name and use the following settings:
     - **OMA-URI**: ./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy
     - **Data type**: Base64
     - **Certificate file**: upload your binary format policy file. You do not need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf.
 
-    ![Configure custom WDAC](images/wdac-intune-custom-oma-uri.png)
+    > [!div class="mx-imgBorder"]
+    > ![Configure custom WDAC](images/wdac-intune-custom-oma-uri.png)
 
 #### Removing policies
 
@@ -78,15 +83,18 @@ Upon deletion, policies deployed through Intune via the ApplicationControl CSP a
 The steps to use Intune's Custom OMA-URI functionality to leverage the [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) and deploy a custom WDAC policy to pre-1903 systems are:
 
 1. Convert the policy XML to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
+
 2. Open the Microsoft Intune portal and click **Device configuration** > **Profiles** > **Create profile**.
+
 3. Type a name for the new profile, select **Windows 10 and later** as the **Platform** and **Custom** as the **Profile type**.
+
 4. Add a row, then give your policy a name and use the following settings:
     - **OMA-URI**: ./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/_Grouping_/CodeIntegrity/Policy)
     - **Data type**: Base64
     - **Certificate file**: upload your binary format policy file
     
-> [!NOTE]
-> Deploying policies via the AppLocker CSP will force a reboot during OOBE.
+   > [!NOTE]
+   > Deploying policies via the AppLocker CSP will force a reboot during OOBE.
 
 #### Removing policies
 
