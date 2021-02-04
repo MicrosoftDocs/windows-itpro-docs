@@ -90,7 +90,6 @@ All our updates contain
 ### What's new
 
 - Improved SmartScreen status support logging
-- Apply CPU throttling policy to manually initiated scans
 
 ### Known Issues
 No known issues  
