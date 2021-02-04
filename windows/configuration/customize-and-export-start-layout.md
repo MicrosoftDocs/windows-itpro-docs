@@ -182,6 +182,16 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 
 4.  Save the file and apply using any of the deployment methods.
 
+**Considerations for Office 2019
+
+You may experience an issue with Office 2019 tiles being removed from Start when you upgrade Office 2019 if you manage the Office 2019 app tiles in a custom group on Start that only contains the Office 2019 app tiles. The Office 2019 group on Start will get removed when you upgrade is performed and the Office 2019 tiles will be placed in the next available group on Start. 
+
+To avoid this problem, place another app tile in the Office 2019 group that will not be removed when Office 2019 is upgraded. For example: Notepad.exe or calc.exe in the group.
+
+This issue occurs because Office 2019 removes and reinstalls the apps when they are upgraded. Start will delete empty groups from the layout when it detects all apps for that group have been removed. Adding another app that will not be removed suring the upgrade will preserve the custom group and the new Office 2019 tiles will get added back to the correct group during the upgrade.
+
+
+
 ## Related topics
 
 
