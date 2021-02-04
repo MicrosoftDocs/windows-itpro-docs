@@ -49,7 +49,7 @@ It's important to understand the following prerequisites prior to creating indic
 - For support of indicators on iOS, please see [Configure custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ios-configure-features#configure-custom-indicators).
 
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs.
 > For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios leverage Network Protection for inspection and enforcement: <br>
 > NOTE:
