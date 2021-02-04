@@ -68,7 +68,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum install yum-utils
     ```
 
-- Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/`. For instance, RHEL 7.9 is closer to 7.4 than to 8.
 
     In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
@@ -105,7 +105,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### SLES and variants
 
-- Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
+- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/config/`.
 
     In the following commands, replace *[distro]* and *[version]* with the information you've identified:
 
@@ -139,7 +139,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install libplist-utils
     ```
 
-- Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config`.
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config`.
 
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
