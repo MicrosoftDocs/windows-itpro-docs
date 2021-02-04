@@ -88,7 +88,6 @@ All our updates contain
     
 ### What's new
 
-- Apply CPU throttling policy to manually initiated scans
 - Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
 - Shellcode exploit detection improvements
 - Increased visibility for credential stealing attempts
