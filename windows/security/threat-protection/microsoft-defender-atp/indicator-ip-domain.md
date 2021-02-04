@@ -46,7 +46,7 @@ It's important to understand the following prerequisites prior to creating indic
 - The Antimalware client version must be 4.18.1906.x or later. 
 - Supported on machines on Windows 10, version 1709 or later. 
 - Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
-- For support of indicators on iOS, please see [Configure custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ios-configure-features#configure-custom-indicators).
+- For support of indicators on iOS, see [Configure custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ios-configure-features#configure-custom-indicators).
 
 
 > [!IMPORTANT]
