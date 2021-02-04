@@ -32,10 +32,18 @@ ms.technology: mde
 
 This article describes how to deploy Microsoft Defender for Endpoint for Linux manually. A successful deployment requires the completion of all of the following tasks:
 
-- [Configure the Linux software repository](#configure-the-linux-software-repository)
-- [Application installation](#application-installation)
-- [Download the onboarding package](#download-the-onboarding-package)
-- [Client configuration](#client-configuration)
+- [Deploy Microsoft Defender for Endpoint for Linux manually](#deploy-microsoft-defender-for-endpoint-for-linux-manually)
+  - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
+  - [Configure the Linux software repository](#configure-the-linux-software-repository)
+    - [RHEL and variants (CentOS and Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
+    - [SLES and variants](#sles-and-variants)
+    - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
+  - [Application installation](#application-installation)
+  - [Download the onboarding package](#download-the-onboarding-package)
+  - [Client configuration](#client-configuration)
+  - [Log installation issues](#log-installation-issues)
+  - [Operating system upgrades](#operating-system-upgrades)
+  - [Uninstallation](#uninstallation)
 
 ## Prerequisites and system requirements
 
@@ -71,7 +79,13 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
+    For example, if you are running CentOS 7 and wish to deploy MDE for Linux from the *prod* channel:
+
+    ```bash
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
+    ```
+
+    Or if you wish to explore new features on selected devices, you might want to deploy MDE for Linux to *insiders-fast* channel:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -99,10 +113,10 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
+    For example, if you are running SLES 12 and wish to deploy MDE for Linux from the *prod* channel:
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/sles/12/insiders-fast.repo
+    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
     ```
 
 - Install the Microsoft GPG public key:
@@ -133,10 +147,10 @@ In order to preview new features and provide early feedback, it is recommended t
     curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
-    For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
+    For example, if you are running Ubuntu 18.04 and wish to deploy MDE for Linux from the *prod* channel:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/insiders-fast.list
+    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
     ```
 
 - Install the repository configuration:
@@ -144,10 +158,10 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
-    For example, if you chose *insiders-fast* channel:
+    For example, if you chose *prod* channel:
     
     ```bash
-    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-fast.list
+    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
     ```   
 
 - Install the `gpg` package if not already installed:
