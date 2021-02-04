@@ -1327,19 +1327,19 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
 </tr>
 </table>
 
@@ -9540,16 +9540,16 @@ ADMX Info:
 This policy setting prevents intranet sites from being opened in any browser except Internet Explorer.
 
 > [!NOTE]
-> If the ‘Send all sites not included in the Enterprise Mode Site List to Microsoft Edge’ (‘RestrictIE’) policy is not enabled, then this policy has no effect.
+> If the [InternetExplorer/SendSitesNotInEnterpriseSiteListToEdg](#internetexplorer-policies)e policy is not enabled, then this policy has no effect.
 
 If you enable this policy, all intranet sites are opened in Internet Explorer 11. The only exceptions are sites listed in your Enterprise Mode Site List.
 If you disable or do not configure this policy, all intranet sites are automatically opened in Microsoft Edge.
 
-We strongly recommend keeping this policy in sync with the ‘Send all intranet sites to Internet Explorer’ (‘SendIntranetToInternetExplorer’) policy. Additionally, it is best to enable this policy only if your intranet sites have known compatibility problems with Microsoft Edge.
+We strongly recommend keeping this policy in sync with the [Browser/SendIntranetTraffictoInternetExplorer](#internetexplorer-policies) policy. Additionally, it is best to enable this policy only if your intranet sites have known compatibility problems with Microsoft Edge.
 
 Related policies:
-- Send all intranet sites to Internet Explorer (‘SendIntranetToInternetExplorer’)
-- Send all sites not included in the Enterprise Mode Site List to Microsoft Edge (‘RestrictIE’)
+- [Browser/SendIntranetTraffictoInternetExplorer](#internetexplorer-policies)
+- [InternetExplorer/SendSitesNotInEnterpriseSiteListToEdge](#internetexplorer-policies)
 
 For more information on how to use this policy together with other related policies to create the optimal configuration for your organization, see [https://go.microsoft.com/fwlink/?linkid=2094210.](https://go.microsoft.com/fwlink/?linkid=2094210)
 
@@ -9564,7 +9564,7 @@ For more information on how to use this policy together with other related polic
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Keep all Intranet Sites in Internet Explorer*
--   GP name: *MDM policy is Browser/SendIntranetTraffictoInternetExplorer*
+-   GP name: *KeepIntranetSitesInInternetExplorer*
 -   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*
 
@@ -19057,14 +19057,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting lets you decide whether to open all sites not included in the Enterprise Mode Site List in Microsoft Edge. If you use this setting, you must also turn on the Administrative Templates\Windows Components\Internet Explorer\Use the Enterprise Mode IE website list policy setting and you must include at least one site in the Enterprise Mode Site List.
+This setting lets you decide whether to open all sites not included in the Enterprise Mode Site List in Microsoft Edge. If you use this setting, you must also turn on the [InternetExplorer/AllowEnterpriseModeSiteList ](#internetexplorer-policies) policy setting and you must include at least one site in the Enterprise Mode Site List.
 
 If you enable this setting, it automatically opens all sites not included in the Enterprise Mode Site List in Microsoft Edge.
 
 If you disable, or not configure this setting, then it opens all sites based on the currently active browser. 
 
 > [!NOTE]
-> If you have also enabled the Administrative Templates\Windows Components\Microsoft Edge\Send all intranet sites to Internet Explorer 11 policy setting, then all intranet sites will continue to open in Internet Explorer 11.
+> If you have also enabled the [InternetExplorer/SendIntranetTraffictoInternetExplorer](#internetexplorer-policies) policy setting, then all intranet sites will continue to open in Internet Explorer 11.
 
 <!--/Description-->
 > [!TIP]
@@ -19081,6 +19081,8 @@ ADMX Info:
 -   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*
 
+> [!NOTE]
+> This MDM policy is still outstanding.
 <!--/ADMXBacked-->
 <!--/Policy-->
 ```xml
