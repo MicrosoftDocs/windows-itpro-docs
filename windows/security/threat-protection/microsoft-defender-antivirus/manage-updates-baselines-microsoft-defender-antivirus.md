@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 02/03/2021
+ms.date: 02/04/2021
 ms.technology: mde
 ---
 
@@ -88,6 +88,7 @@ All our updates contain
     
 ### What's new
 
+- Apply CPU throttling policy to manually initiated scans
 - Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
 - Shellcode exploit detection improvements
 - Increased visibility for credential stealing attempts
@@ -109,7 +110,6 @@ No known issues
 ### What's new
 
 - Improved [SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) status support logging
-- Apply CPU throttling policy to manually initiated scans
 
 ### Known Issues
 No known issues  
