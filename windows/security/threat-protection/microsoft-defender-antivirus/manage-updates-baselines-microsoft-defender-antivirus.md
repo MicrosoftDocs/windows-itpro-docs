@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 01/07/2021
+ms.date: 02/04/2021
 ms.technology: mde
 ---
 
@@ -90,7 +90,6 @@ All our updates contain
 ### What's new
 
 - Improved SmartScreen status support logging
-- Apply CPU throttling policy to manually initiated scans
 
 ### Known Issues
 No known issues  
