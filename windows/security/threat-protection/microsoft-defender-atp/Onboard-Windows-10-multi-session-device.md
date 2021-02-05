@@ -30,7 +30,7 @@ Microsoft Defender for Endpoint supports monitoring both VDI as well as Windows 
 Familiarize yourself with the [considerations for non-persistent VDI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Although [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) does not provide non-persistence options, it does provide ways to use a Windows image that can be used to provision new hosts and redeploy machines. This increases volatility in the environment, and thus impacts what entries are created and maintained in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), potentially reducing visibility for your security analysts.
 
 > [!NOTE]
-> Depending on your choice of onboarding method, devices can appear in MMicrosoft Defender Security Center as either: 
+> Depending on your choice of onboarding method, devices can appear in Microsoft Defender Security Center as either: 
 > - Single entry for each virtual desktop 
 > - Multiple entries for each virtual desktop 
 
