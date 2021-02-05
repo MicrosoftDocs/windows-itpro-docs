@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 01/07/2021
+ms.date: 02/04/2021
 ms.technology: mde
 ---
 
@@ -90,7 +90,6 @@ All our updates contain
 ### What's new
 
 - Improved SmartScreen status support logging
-- Apply CPU throttling policy to manually initiated scans
 
 ### Known Issues
 No known issues  
@@ -387,6 +386,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2102.03</summary>
+
+&ensp;Package version: **1.1.2102.03**    
+&ensp;Platform version: **4.18.2011.6**   
+&ensp;Engine version: **1.17800.5**  
+&ensp;Signature version: **1.331.174.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2101.02</summary>
 
 &ensp;Package version: **1.1.2101.02**    
