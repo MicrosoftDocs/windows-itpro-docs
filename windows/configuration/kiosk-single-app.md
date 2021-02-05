@@ -267,7 +267,10 @@ If you press **Ctrl + Alt + Del** and do not sign in to another account, after a
 
 To change the default time for assigned access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
 
- 
+> [!NOTE]
+> **IdleTimeOut** does not apply to the new Microsoft Edge kiosk mode.
+
+ The Breakout Sequence of **Ctrl + Alt + Del** is the default, but this can be configured to be a different sequence of keys. The breakout sequence uses the format **modifiers + keys**. An example breakout sequence would look something like **Shift + Alt + a**, where **Shift** and **Alt** are the modifiers and **A** is the key value. [See how this is configured using in xml](https://docs.microsoft.com/en-us/windows/configuration/kiosk-xml#microsoft-edge-kiosk-xml-sample).
 
 
 
