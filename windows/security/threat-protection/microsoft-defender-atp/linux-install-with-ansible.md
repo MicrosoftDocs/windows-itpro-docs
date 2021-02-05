@@ -261,7 +261,7 @@ Run a detection test to verify that the device is properly onboarded and reporti
 
 - Open a Terminal window. Copy and execute the following command:
 
-    ``` bash
+    ```bash
     curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
     ```
 
