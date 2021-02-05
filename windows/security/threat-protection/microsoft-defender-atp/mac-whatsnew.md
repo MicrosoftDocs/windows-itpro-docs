@@ -30,6 +30,14 @@ ms.technology: mde
 > [!IMPORTANT]
 > Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
 
+## 101.19.48
+
+> [!NOTE]
+> The old command-line tool syntax has been deprecated with this release. For information on the new syntax, see [Resources](mac-resources.md#configuring-from-the-command-line).
+
+- Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`. This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint for Mac
+- Performance improvements & bug fixes
+
 ## 101.19.21
 
 - Bug fixes
@@ -165,7 +173,7 @@ ms.technology: mde
 - Fixed an issue where Microsoft Defender for Endpoint for Mac was sometimes interfering with Time Machine
 - Added a new switch to the command-line utility for testing the connectivity with the backend service
   ```bash
-  mdatp --connectivity-test
+  mdatp connectivity test
   ```
 - Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view)
 - Performance improvements & bug fixes

@@ -116,7 +116,7 @@ To complete this process, you must have admin privileges on the device.
     The client device is not associated with orgId. Note that the *orgId* attribute is blank.
 
     ```bash
-    mdatp --health orgId
+    mdatp health --field org_id
     ```
 
 2. Run the Python script to install the configuration file:
@@ -128,7 +128,7 @@ To complete this process, you must have admin privileges on the device.
 3. Verify that the device is now associated with your organization and reports a valid *orgId*:
 
     ```bash
-    mdatp --health orgId
+    mdatp health --field org_id
     ```
 
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.

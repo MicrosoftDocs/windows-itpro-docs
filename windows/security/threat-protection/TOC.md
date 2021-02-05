@@ -176,7 +176,6 @@
 ###### [Use PowerShell cmdlets to manage next-generation protection](microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ###### [Use Windows Management Instrumentation (WMI) to manage next-generation protection](microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus.md)
 ###### [Use the mpcmdrun.exe command line tool to manage next-generation protection](microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
-###### [Handle false positives/negatives in Microsoft Defender Antivirus](microsoft-defender-antivirus/antivirus-false-positives-negatives.md)
    
 ##### [Deploy, manage updates, and report on antivirus]()
 ###### [Preparing to deploy](microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md)
@@ -479,6 +478,7 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 ##### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
+##### [Configure vulnerability notifications](microsoft-defender-atp/configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
 
 #### [Permissions]()
@@ -527,6 +527,7 @@
 
 ##### [Microsoft Defender for Endpoint APIs Schema]()
 ###### [Supported Microsoft Defender for Endpoint APIs](microsoft-defender-atp/exposed-apis-list.md)
+###### [Release Notes](microsoft-defender-atp/api-release-notes.md)
 ###### [Common REST API error codes](microsoft-defender-atp/common-errors.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
