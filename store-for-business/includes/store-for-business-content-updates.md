@@ -2,6 +2,14 @@
 
 
 
+## Week of January 25, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/29/2021 | [Distribute offline apps (Windows 10)](/microsoft-store/distribute-offline-apps) | modified |
+
+
 ## Week of January 11, 2021
 
 
