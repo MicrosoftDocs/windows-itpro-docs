@@ -4,7 +4,7 @@ description: Use the design information in this article to plan for the deployme
 ms.assetid: 891a30c9-dbf5-4a88-a279-00662b9da48e
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Planning to Deploy Windows Defender Firewall with Advanced Security

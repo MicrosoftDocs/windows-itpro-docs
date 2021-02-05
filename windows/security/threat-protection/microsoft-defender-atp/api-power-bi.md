@@ -4,7 +4,7 @@ ms.reviewer:
 description: Create a Power Business Intelligence (BI) report on top of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
 keywords: apis, supported apis, Power BI, reports
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Create custom reports using Power BI
@@ -24,7 +25,11 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 In this section you will learn create a Power BI report on top of Defender for Endpoint APIs.
 
@@ -46,9 +51,9 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 ```
 	let 
-		AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti'",
+		AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
 
-		HuntingUrl = "https://api.securitycenter.windows.com/api/advancedqueries",
+		HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
 
 		Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
 
@@ -114,7 +119,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 		Query = "MachineActions",
 
-		Source = OData.Feed("https://api.securitycenter.windows.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
+		Source = OData.Feed("https://api.securitycenter.microsoft.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
 	in
 		Source
 

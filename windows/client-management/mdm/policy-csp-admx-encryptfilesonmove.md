@@ -74,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents File Explorer from encrypting files that are moved to an encrypted folder.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents File Explorer from encrypting files that are moved to an encrypted folder.
 
 If you enable this policy setting, File Explorer will not automatically encrypt files that are moved to an encrypted folder.
 

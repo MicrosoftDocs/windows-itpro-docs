@@ -79,7 +79,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to configure how File Explorer displays thumbnail images or icons on the local computer.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure how File Explorer displays thumbnail images or icons on the local computer.
 
 File Explorer displays thumbnail images by default. 
 
@@ -150,7 +150,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to configure how File Explorer displays thumbnail images or icons on network folders.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure how File Explorer displays thumbnail images or icons on network folders.
 
 File Explorer displays thumbnail images on network folders by default.
 
@@ -221,7 +221,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Turns off the caching of thumbnails in hidden thumbs.db files.
+Available in the latest Windows 10 Insider Preview Build. Turns off the caching of thumbnails in hidden thumbs.db files.
 
 This policy setting allows you to configure File Explorer to cache thumbnails of items residing in network folders in hidden thumbs.db files.
 

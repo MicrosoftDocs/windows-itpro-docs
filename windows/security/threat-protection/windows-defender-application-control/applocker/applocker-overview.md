@@ -4,7 +4,7 @@ description: This topic provides a description of AppLocker and can help you dec
 ms.assetid: 94b57864-2112-43b6-96fb-2863c985dc9a
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/16/2017
+ms.technology: mde
 ---
 
 # AppLocker

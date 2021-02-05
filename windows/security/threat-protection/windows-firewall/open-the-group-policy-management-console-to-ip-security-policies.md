@@ -4,7 +4,7 @@ description: Learn how to open the Group Policy Management Console to IP Securit
 ms.assetid: 235f73e4-37b7-40f4-a35e-3e7238bbef43
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Open the Group Policy Management Console to IP Security Policies

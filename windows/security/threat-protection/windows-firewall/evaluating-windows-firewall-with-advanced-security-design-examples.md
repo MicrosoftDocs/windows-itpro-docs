@@ -4,7 +4,7 @@ description: Evaluating Windows Defender Firewall with Advanced Security Design 
 ms.assetid: a591389b-18fa-4a39-ba07-b6fb61961cbd
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Evaluating Windows Defender Firewall with Advanced Security Design Examples

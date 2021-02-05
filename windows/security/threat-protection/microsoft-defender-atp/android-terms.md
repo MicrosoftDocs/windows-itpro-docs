@@ -1,11 +1,11 @@
 ---
 title: Microsoft Defender ATP for Android Application license terms
-ms.reviewer:
+ms.reviewer: 
 description: Describes the Microsoft Defender ATP for Android license terms
-keywords: microsoft, defender, atp, android,license, terms, application, use, installation, service, feedback, scope, 
+keywords: microsoft, defender, atp, android,license, terms, application, use, installation, service, feedback, scope,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
+ms.technology: mde
 ---
 
 # Microsoft Defender for Endpoint for Android application license terms

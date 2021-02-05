@@ -3,7 +3,7 @@ title: Evaluate controlled folder access
 description: See how controlled folder access can help protect files from being changed by malicious apps.
 keywords: Exploit protection, windows 10, windows defender, ransomware, protect, evaluate, test, demo, try
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,6 +12,7 @@ author: levinec
 ms.author: ellevin
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Evaluate controlled folder access
@@ -44,7 +45,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > If you want to fully audit how controlled folder access will work in your organization, you'll need to use a management tool to deploy this setting to devices in your network(s).
-You can also use Group Policy, Intune, mobile device management (MDM), or Microsoft Endpoint Configuration Manager to configure and deploy the setting, as described in the main [controlled folder access topic](controlled-folders.md).
+You can also use Group Policy, Intune, mobile device management (MDM), or Microsoft Endpoint Manager to configure and deploy the setting, as described in the main [controlled folder access topic](controlled-folders.md).
 
 ## Review controlled folder access events in Windows Event Viewer
 

@@ -4,8 +4,8 @@ description: Make the switch from McAfee to Microsoft Defender for Endpoint. Rea
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-mcafeemigrate
-- m365solution-overview 
+  - M365-security-compliance
+  - m365solution-mcafeemigrate
+  - m365solution-overview
 ms.topic: conceptual
 ms.custom: migrationguides
 ms.date: 09/22/2020

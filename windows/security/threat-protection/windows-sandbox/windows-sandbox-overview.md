@@ -1,7 +1,7 @@
 ---
-title: Windows Sandbox 
+title: Windows Sandbox
 description: 
-ms.prod: w10
+ms.prod: m365-security
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -11,6 +11,7 @@ ms.topic: article
 ms.localizationpriority: 
 ms.date: 
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Windows Sandbox 
@@ -55,7 +56,7 @@ The following video provides an overview of Windows Sandbox.
 1.   Locate and select **Windows Sandbox** on the Start menu to run it for the first time.
 
 ## Usage 
-1. Copy an executable file (and any other files needed to run the application) from the host into the Windows Sandbox window.
+1. Copy an executable file (and any other files needed to run the application) from the host and paste them into the **Windows Sandbox** window.
 2. Run the executable file or installer inside the sandbox.
 3. When you're finished experimenting, close the sandbox. A dialog box will state that all sandbox content will be discarded and permanently deleted. Select **ok**.
 4. Confirm that your host machine doesn't exhibit any of the modifications that you made in Windows Sandbox.
