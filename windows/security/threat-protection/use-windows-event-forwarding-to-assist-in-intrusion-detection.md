@@ -147,7 +147,7 @@ Yes. If you desire a High-Availability environment, simply configure multiple WE
 
 ### <a href="" id="what-are-the-wec-server-s-limitations-"></a>What are the WEC server’s limitations?
 
-There are three factors that limit the scalability of WEC servers. The general rule for a stable WEC server on commodity hardware is “10k x 10k” – meaning, no more than 10,000 concurrently active WEF Clients per WEC server and no more than 10,000 events/second average event volume.
+There are three factors that limit the scalability of WEC servers. The general rule for a stable WEC server on commodity hardware is planning for a total of 3000 events per second for all configured subscriptions on average
 
 -   **Disk I/O**. The WEC server does not process or validate the received event, but rather buffers the received event and then logs it to a local event log file (EVTX file). The speed of logging to the EVTX file is limited by the disk write speed. Isolating the EVTX file to its own array or using high speed disks can increase the number of events per second that a single WEC server can receive.
 -   **Network Connections**. While a WEF source does not maintain a permanent, persistent connection to the WEC server, it does not immediately disconnect after sending its events. This means that the number of WEF sources that can simultaneously connect to the WEC server is limited to the open TCP ports available on the WEC server.
