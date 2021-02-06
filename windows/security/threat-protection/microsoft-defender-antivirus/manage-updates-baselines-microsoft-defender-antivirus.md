@@ -77,8 +77,27 @@ All our updates contain
 - integration improvements (Cloud, Microsoft 365 Defender).
 <br/><br/>
 
-
 <details>
+<summary> January-2021 (Platform: 4.18.2101.8 | Engine: 1.1.17800.5)</summary>
+
+&ensp;Security intelligence update version: **1.327.1854.0**  
+&ensp;Released: **February 2, 2021**  
+&ensp;Platform: **4.18.2101.8**  
+&ensp;Engine: **1.1.17800.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+
+- Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
+- Shellcode exploit detection improvements
+- Increased visibility for credential stealing attempts
+- Improvements in antitampering features in Microsoft Defender Antivirus services
+- Improved support for ARM x64 emulation
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
 <summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
@@ -89,7 +108,7 @@ All our updates contain
     
 ### What's new
 
-- Improved SmartScreen status support logging
+- Improved [SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) status support logging
 
 ### Known Issues
 No known issues  
@@ -114,7 +133,13 @@ No known issues
 
 No known issues  
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
+<br/><br/>
+<details>
 <summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
 &ensp;Security intelligence update version: **1.325.10.0**  
@@ -140,12 +165,6 @@ No known issues
 No known issues  
 <br/>
 </details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
-<br/><br/>
-
 <details>
 <summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
 
@@ -318,6 +337,7 @@ Engine: **1.1.16700.2**
 - Fix 4.18.1911.3 hang
    
 ### Known Issues
+
 [**Fixed**] devices utilizing [modern standby mode](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.  
 <br/>
 > [!IMPORTANT]
