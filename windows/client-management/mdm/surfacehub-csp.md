@@ -144,7 +144,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
  
- <a href="" id="deviceaccount-exchangemodernauthenabled"></a>**DeviceAccount/ExchangeModernAuthEnabled**  
+<a href="" id="deviceaccount-exchangemodernauthenabled"></a>**DeviceAccount/ExchangeModernAuthEnabled**
 <p style="margin-left: 20px">Added in <a href="https://support.microsoft.com/en-us/topic/february-2-2021-kb4598291-os-builds-19041-789-and-19042-789-preview-6a766199-a4f1-616e-1f5c-58bdc3ca5e3b" data-raw-source="[KB4598291](https://support.microsoft.com/en-us/topic/february-2-2021-kb4598291-os-builds-19041-789-and-19042-789-preview-6a766199-a4f1-616e-1f5c-58bdc3ca5e3b)">KB4598291</a> for Windows 10, version 20H2. Specifies whether Device Account calendar sync will attempt to use token-based Modern Authentication to connect to the Exchange Server. Default value is True.
 
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
@@ -533,7 +533,6 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
  
 
  
-
 
 
 
