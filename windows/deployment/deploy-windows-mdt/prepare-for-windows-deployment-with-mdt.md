@@ -53,7 +53,7 @@ Several client computers are referenced in this guide with hostnames of PC0001 t
 
 ### Storage requirements
 
-MDT01 and HV01 should have the ability to store up to 200 GB of files on a data drive (D:). If you use a computer with a single system partition (C:) you will need to adjust come procedures in this guide to specify the C: drive instead of the D: drive.
+MDT01 and HV01 should have the ability to store up to 200 GB of files on a data drive (D:). If you use a computer with a single system partition (C:) you will need to adjust some procedures in this guide to specify the C: drive instead of the D: drive.
 
 ### Hyper-V requirements
 
