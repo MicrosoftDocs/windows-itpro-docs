@@ -104,7 +104,7 @@ For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterpris
 
 ### Windows Autopilot
 
-[Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) streamlines and automates the process of setting up and configuring new devices, with minimal interaction required from the end user. You can also use Windows Autopilot to reset, repurpose and recover devices.
+[Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) streamlines and automates the process of setting up and configuring new devices, with minimal interaction required from the end user. You can also use Windows Autopilot to reset, repurpose, and recover devices.
 
 With the release of Windows 10, version 2004 you can configure [Windows Autopilot user-driven](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) Hybrid Azure Active Directory join with VPN support. This support is also backported to Windows 10, version 1909 and 1903.
 
