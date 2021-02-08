@@ -27,7 +27,7 @@ ms.technology: mde
 
 **Applies to:**
 
-* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Help reduce your attack surfaces, by minimizing the places where your organization is vulnerable to cyberthreats and attacks. Use the following resources to configure protection for the devices and applications in your organization.
 

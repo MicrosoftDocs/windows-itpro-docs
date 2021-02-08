@@ -45,7 +45,8 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "What's new in Windows"
+      "titleSuffix": "What's new in Windows",
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],

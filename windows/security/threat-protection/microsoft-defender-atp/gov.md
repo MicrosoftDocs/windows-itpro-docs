@@ -23,7 +23,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Microsoft Defender for Endpoint for US Government customers, built in the US Azure Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
 
@@ -74,7 +74,7 @@ iOS | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images
 > Where a patch is specified, it must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
 
 > [!NOTE]
-> Trying to onboard Windows Server 2016/2012 R2/2008 R2 SP1 or Windows 8.1 Enterprise/8 Pro/7 SP1 Enterprise/7 SP1 Pro using [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? You'll need to choose "Azure US Government" under "Azure Cloud".
+> Trying to onboard Windows devices older than Windows 10 or Windows Server 2019 using [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? You'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
 
 ### OS versions when using Azure Defender for Servers
 The following OS versions are supported when using [Azure Defender for Servers](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
@@ -123,12 +123,12 @@ Email notifications | ![No](../images/svg/check-no.svg) Rolling out | ![No](../i
 Evaluation lab | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Management and APIs: Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Management and APIs: Integration with third-party products | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
-Management and APIs: Streaming API | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
+Management and APIs: Streaming API | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Management and APIs: Threat protection report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Threat & vulnerability management | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Threat analytics | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Web content filtering | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
-Integrations: Azure Sentinel | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
+Integrations: Azure Sentinel | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Integrations: Microsoft Cloud App Security | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Integrations: Microsoft Compliance Center | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Integrations: Microsoft Defender for Identity | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
