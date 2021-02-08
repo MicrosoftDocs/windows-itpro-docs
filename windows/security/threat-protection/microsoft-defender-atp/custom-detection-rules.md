@@ -114,6 +114,7 @@ These actions are applied to devices in the `DeviceId` column of the query resul
 - **Collect investigation package**—collects device information in a ZIP file. [Learn more about the investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - **Run antivirus scan**—performs a full Microsoft Defender Antivirus scan on the device
 - **Initiate investigation**—starts an [automated investigation](automated-investigations.md) on the device
+- **Restrict app execution**—sets restrictions on the device to allow only files that are signed with a Microsoft-issued certificate to run. [Learn more about restricting app execution](respond-machine-alerts.md#restrict-app-execution)
 
 ### Actions on files
 
@@ -121,6 +122,10 @@ These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` 
 
 - **Allow/Block**—automatically adds the file to your [custom indicator list](manage-indicators.md) so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected device groups. This scope is independent of the scope of the rule.
 - **Quarantine file**—deletes the file from its current location and places a copy in quarantine
+
+### Actions on users
+
+- **Mark user as compromised**—sets the user's risk level to "high" in Azure Active Directory, triggering the corresponding [identity protection policies](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection#risk-levels).
 
 ## 5. Set the rule scope.
 
