@@ -46,8 +46,9 @@
                             "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Privacy"
-    },
+      "titleSuffix": "Windows Privacy",
+      "searchScope": ["Windows 10"]
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "privacy",
