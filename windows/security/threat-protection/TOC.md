@@ -478,6 +478,7 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 ##### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
+##### [Configure vulnerability notifications](microsoft-defender-atp/configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
 
 #### [Permissions]()
