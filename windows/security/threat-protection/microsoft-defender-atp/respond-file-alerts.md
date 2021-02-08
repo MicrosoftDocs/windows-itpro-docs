@@ -146,13 +146,13 @@ By default, you will not be able to download files that are in quarantine.
 
 ### Download quarantined files
 
-When this setting is on, quarantined files will be backed up to a secure and compliant location so they can be downloaded directly from quarantine. The **Download file** button will always be available for you to use from the file's detailed profile page in the Microsoft Defender Security Center. **This feature is turned 'On' by default**.
+When this setting is on, quarantined files will be backed up to a secure and compliant location so they can be downloaded directly from quarantine. The **Download file** button will always be available for you to use from the file's detailed profile page in the Microsoft Defender Security Center. **This feature is turned 'Off' by default**.
 
 Newly quarantined files from any supported endpoint in your organization will be copied to the same secure Azure storage location as your existing sample submission files. A quarantined file will only be collected once per organization.
 
 Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [automatic sample submission configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-intune-to-enable-cloud-delivered-protection).
 
-Go to **Settings** > **Advanced features** > **Download quarantined files** to adjust the setting. [Learn more about advanced features](advanced-features.md)
+Go to **Settings** > **Advanced features** > **Download quarantined files** to turn on this feature. [Learn more about advanced features](advanced-features.md)
 
 >[!IMPORTANT]
 >Requirements:
