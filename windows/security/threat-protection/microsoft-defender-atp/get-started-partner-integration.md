@@ -25,7 +25,7 @@ ms.technology: mde
 
 
 **Applies to:** 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 To become a Defender for Endpoint solution partner, you'll need to follow and complete the following steps.
 
