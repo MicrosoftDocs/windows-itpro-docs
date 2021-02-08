@@ -54,6 +54,7 @@
         "tiburd",
         "garycentric"
       ],
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],

@@ -57,6 +57,8 @@
         "garycentric"
       ],
     },
+      "searchScope": ["Windows 10"]
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "privacy",
