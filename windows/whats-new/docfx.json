@@ -46,6 +46,15 @@
         }
       },
       "titleSuffix": "What's new in Windows",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
       "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
