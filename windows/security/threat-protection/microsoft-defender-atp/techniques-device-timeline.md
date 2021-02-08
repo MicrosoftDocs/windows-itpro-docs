@@ -67,7 +67,7 @@ To use [advanced hunting](advanced-hunting-overview.md) to find events related t
 ![Hunt for related events](images/techniques-hunt-for-related-events.png)
 
 >[!NOTE]
->Selecting the **Hunt for related events** button from a Technique side pane displays all the events related to the identified technique but does not include the Technique itself in the query results.
+>Querying using the **Hunt for related events** button from a Technique side pane displays all the events related to the identified technique but does not include the Technique itself in the query results.
 
 
 ## Customize your device timeline
