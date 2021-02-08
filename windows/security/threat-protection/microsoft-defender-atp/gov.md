@@ -23,7 +23,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Microsoft Defender for Endpoint for US Government customers, built in the US Azure Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
 
@@ -123,12 +123,12 @@ Email notifications | ![No](../images/svg/check-no.svg) Rolling out | ![No](../i
 Evaluation lab | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Management and APIs: Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Management and APIs: Integration with third-party products | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
-Management and APIs: Streaming API | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
+Management and APIs: Streaming API | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Management and APIs: Threat protection report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Threat & vulnerability management | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Threat analytics | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Web content filtering | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
-Integrations: Azure Sentinel | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
+Integrations: Azure Sentinel | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Integrations: Microsoft Cloud App Security | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Integrations: Microsoft Compliance Center | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Integrations: Microsoft Defender for Identity | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog

@@ -25,7 +25,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
@@ -46,9 +46,10 @@ It's important to understand the following prerequisites prior to creating indic
 - The Antimalware client version must be 4.18.1906.x or later. 
 - Supported on machines on Windows 10, version 1709 or later. 
 - Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
+- For support of indicators on iOS, see [Configure custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ios-configure-features#configure-custom-indicators).
 
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs.
 > For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios leverage Network Protection for inspection and enforcement: <br>
 > NOTE:
