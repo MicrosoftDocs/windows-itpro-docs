@@ -27,7 +27,29 @@ Microsoft Defender for Endpoint for US Government customers, built in the US Azu
 This offering is available to GCC, GCC High, and DoD customers and is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some differences in the availability of capabilities for this offering.
 
 > [!NOTE]
-> If you are a "GCC on Commercial" customer, please refer to the public documentation pages.
+> If you are a GCC customer using Defender for Endpoint in Commercial, please refer to the public documentation pages.
+
+## Licensing requirements
+Microsoft Defender for Endpoint for US Government customers requires one of the following Microsoft volume licensing offers:
+
+### Desktop licensing
+GCC | GCC High | DoD
+:---|:---|:---
+Windows 10 Enterprise E5 GCC | Windows 10 Enterprise E5 for GCC High | Windows 10 Enterprise E5 for DOD
+| | Microsoft 365 E5 for GCC High | 
+| | Microsoft 365 G5 Security for GCC High | 
+Microsoft Defender for Endpoint - GCC | Microsoft Defender for Endpoint for GCC High | Microsoft Defender for Endpoint for DOD
+
+### Server licensing
+GCC | GCC High | DoD
+:---|:---|:---
+Microsoft Defender for Endpoint Server GCC | Microsoft Defender for Endpoint Server for GCC High | Microsoft Defender for Endpoint Server for DOD
+Azure Defender for Servers | Azure Defender for Servers - Government | Azure Defender for Servers - Government
+
+> [!NOTE]
+> DoD licensing will only be available at DoD general availability.
+
+<br>
 
 ## Portal URLs
 The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
