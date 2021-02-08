@@ -62,7 +62,7 @@ You can do the same even for command lines.
 
 ## Investigate related events
 
-To use [advanced hunting](advanced-hunting-overview.md) to find events related to the selected technique, you can select **Hunt for related events**. This leads to the advanced hunting section.
+To use [advanced hunting](advanced-hunting-overview.md) to find events related to the selected technique, you can select **Hunt for related events**. This leads to the advanced hunting page with a query to find the events related to the technique.
 
 ![Hunt for related events](images/techniques-hunt-for-related-events.png)
 
@@ -87,12 +87,7 @@ To view only either events or techniques, select Filters from the device timelin
 
 ![Filters screenshot](images/device-timeline-filters.png)
 
->[!IMPORTANT]
->Event group filters do not affect Techniques, so when Techniques data type is selected, all techniques are shown.
 
-To view File events only without Techniques, select Events data type and File events event group.
-
-Selecting Techniques automatically shows all techniques. 
 
 ## See also
 - [View and organize the Devices list](machines-view-overview.md)
