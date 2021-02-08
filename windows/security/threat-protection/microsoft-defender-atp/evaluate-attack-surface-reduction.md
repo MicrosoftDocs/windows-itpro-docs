@@ -22,7 +22,7 @@ ms.technology: mde
 
 **Applies to:**
 
-* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Attack surface reduction rules help prevent actions typically used by malware to compromise devices or networks. Set attack surface reduction rules for devices running any of the following editions and versions of Windows:
 

@@ -25,7 +25,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Configure and manage all the Defender for Endpoint capabilities to get the best security protection for your organization. 
 
