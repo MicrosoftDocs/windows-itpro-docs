@@ -46,7 +46,8 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Client Management"
+      "titleSuffix": "Windows Client Management",
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],

@@ -44,7 +44,8 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Application Management"
+      "titleSuffix": "Windows Application Management",
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],
