@@ -40,10 +40,18 @@ Learn how to evaluate attack surface reduction rules by enabling audit mode to t
 
 Enable attack surface reduction rules in audit mode to view a record of apps that would have been blocked if the feature was fully enabled. Test how the feature will work in your organization to ensure it doesn't affect your line-of-business apps. You can also get an idea of how often the rules will fire during normal use.
 
-To enable all attack surface reduction rules in audit mode, use the following PowerShell cmdlet:
+To enable an attack surface reduction rule in audit mode, use the following PowerShell cmdlet:
 
 ```PowerShell
-Set-MpPreference -AttackSurfaceReductionRules_Actions AuditMode
+Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
+```
+
+Where `<rule ID>` is a [GUID value of the attack surface reduction rule](attack-surface-reduction.md#attack-surface-reduction-rules).
+
+To enable all the added attack surface reduction rules in audit mode, use the following PowerShell cmdlet:
+
+```PowerShell
+(Get-MpPreference).AttackSurfaceReductionRules_Ids | Foreach {Add-MpPreference -AttackSurfaceReductionRules_Ids $_ -AttackSurfaceReductionRules_Actions AuditMode}
 ```
 
 > [!TIP]
