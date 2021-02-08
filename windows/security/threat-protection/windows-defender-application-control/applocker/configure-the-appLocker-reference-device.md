@@ -4,7 +4,7 @@ description: This topic for the IT professional describes the steps to create an
 ms.assetid: 034bd367-146d-4956-873c-e1e09e6fefee
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Configure the AppLocker reference device

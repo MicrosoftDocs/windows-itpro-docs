@@ -4,7 +4,7 @@ description: Determines whether to audit when a user restarts or shuts down the 
 ms.assetid: BF27588C-2AA7-4365-A4BF-3BB377916447
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Audit system events

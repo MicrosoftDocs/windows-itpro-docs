@@ -1,7 +1,7 @@
 ---
 title: Protect your organization’s data with device control
 description: Monitor your organization's data security through device control reports.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,6 +11,7 @@ author: alluthewriter
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
+ms.technology: mde
 ---
 # Protect your organization’s data with device control
 

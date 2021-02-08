@@ -4,7 +4,7 @@ description: Learn about best practices and more for the security policy setting
 ms.assetid: 3686788d-4cc7-4222-9163-cbc7c3362d73
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network access: Do not allow anonymous enumeration of SAM accounts and shares

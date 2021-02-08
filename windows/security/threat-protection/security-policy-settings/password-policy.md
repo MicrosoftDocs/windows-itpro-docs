@@ -4,7 +4,7 @@ description: An overview of password policies for Windows and links to informati
 ms.assetid: aec1220d-a875-4575-9050-f02f9c54a3b6
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Password Policy

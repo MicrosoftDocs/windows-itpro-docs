@@ -1,7 +1,7 @@
 ---
 title: Network access - Restrict clients allowed to make remote calls to SAM
 description: Security policy setting that controls which users can enumerate users and groups in the local Security Accounts Manager (SAM) database.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -11,6 +11,7 @@ ms.date: 09/17/2018
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM
