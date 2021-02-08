@@ -49,7 +49,8 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Deployment" 
+      "titleSuffix": "Windows Deployment",
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],
