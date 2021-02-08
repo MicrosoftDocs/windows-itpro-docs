@@ -377,8 +377,9 @@
 ###### [Download or collect file](microsoft-defender-atp/respond-file-alerts.md#download-or-collect-file)
 ###### [Deep analysis](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
 
-#### [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
-##### [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
+#### [Visit the Action center to see remediation actions](microsoft-defender-atp/auto-investigation-action-center.md)
+##### [View and approve pending actions](microsoft-defender-atp/manage-auto-investigation.md)
+##### [Details and results of an automated investigation](microsoft-defender-atp/autoir-investigation-results.md)
 
 #### [Investigate entities using Live response]()
 ##### [Investigate entities on devices](microsoft-defender-atp/live-response.md)
@@ -478,6 +479,7 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 ##### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
+##### [Configure vulnerability notifications](microsoft-defender-atp/configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
 
 #### [Permissions]()
@@ -526,6 +528,7 @@
 
 ##### [Microsoft Defender for Endpoint APIs Schema]()
 ###### [Supported Microsoft Defender for Endpoint APIs](microsoft-defender-atp/exposed-apis-list.md)
+###### [Release Notes](microsoft-defender-atp/api-release-notes.md)
 ###### [Common REST API error codes](microsoft-defender-atp/common-errors.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 

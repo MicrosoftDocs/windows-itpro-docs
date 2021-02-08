@@ -25,7 +25,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [Advanced hunting](advanced-hunting-overview.md) relies on data coming from across your organization. To get the most comprehensive data possible, ensure that you have the correct settings in the corresponding data sources.
 

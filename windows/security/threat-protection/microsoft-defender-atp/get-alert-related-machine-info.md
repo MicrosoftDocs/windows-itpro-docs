@@ -22,7 +22,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -56,7 +56,8 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >- The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+
+```http
 GET /api/alerts/{id}/machine
 ```
 
@@ -90,24 +91,37 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines/$entity",
-    "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "computerDnsName": "mymachine1.contoso.com",
-    "firstSeen": "2018-08-02T14:55:03.7791856Z",
-	"lastSeen": "2018-08-02T14:55:03.7791856Z",
-    "osPlatform": "Windows10",
-    "version": "1709",
+	"id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+	"computerDnsName": "mymachine1.contoso.com",
+	"firstSeen": "2018-08-02T14:55:03.7791856Z",
+	"lastSeen": "2021-01-25T07:27:36.052313Z",
+	"osPlatform": "Windows10",
 	"osProcessor": "x64",
-    "lastIpAddress": "172.17.230.209",
-    "lastExternalIpAddress": "167.220.196.71",
-    "osBuild": 18209,
-    "healthStatus": "Active",
-    "rbacGroupId": 140,
+	"version": "1901",
+	"lastIpAddress": "10.166.113.46",
+	"lastExternalIpAddress": "167.220.203.175",
+	"osBuild": 19042,
+	"healthStatus": "Active",
+	"deviceValue": "Normal",
 	"rbacGroupName": "The-A-Team",
-    "riskScore": "Low",
-	"exposureLevel": "Medium",
-	"isAadJoined": true,
-    "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-	"machineTags": [ "test tag 1", "test tag 2" ]
+	"riskScore": "Low",
+	"exposureLevel": "Low",
+	"aadDeviceId": "fd2e4d29-7072-4195-aaa5-1af139b78028",
+	"machineTags": [
+		"Tag1",
+		"Tag2"
+	],
+	"ipAddresses": [
+		{
+			"ipAddress": "10.166.113.47",
+			"macAddress": "8CEC4B897E73",
+			"operationalStatus": "Up"
+		},
+		{
+			"ipAddress": "2a01:110:68:4:59e4:3916:3b3e:4f96",
+			"macAddress": "8CEC4B897E73",
+			"operationalStatus": "Up"
+		}
+	]
 }
 ```

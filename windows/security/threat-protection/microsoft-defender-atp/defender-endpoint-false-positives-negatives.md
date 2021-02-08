@@ -61,24 +61,24 @@ Managing your alerts and classifying true/false positives helps to train your th
 Before you classify or suppress an alert, determine whether the alert is accurate, a false positive, or benign.
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
-2.	In the navigation pane, choose **Alerts queue**.
-3.	Select an alert to more details about the alert. (See [Review alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts).)
-4.	Depending on the alert status, take the steps described in the following table: 
+2. In the navigation pane, choose **Alerts queue**.
+3. Select an alert to more details about the alert. (See [Review alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/review-alerts).)
+4. Depending on the alert status, take the steps described in the following table: 
 
-    | Alert status | What to do |
-    |:---|:---|
-    | The alert is accurate | Assign the alert, and then [investigate it](investigate-alerts.md) further. |
-    | The alert is a false positive | 1. [Classify the alert](#classify-an-alert) as a false positive. <br/>2. [Suppress the alert](#suppress-an-alert). <br/> 3. [Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint. <br/> 4. [Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis). |
-    | The alert is accurate, but benign (unimportant) | [Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert). |
+| Alert status | What to do |
+|:---|:---|
+| The alert is accurate | Assign the alert, and then [investigate it](investigate-alerts.md) further. |
+| The alert is a false positive | 1. [Classify the alert](#classify-an-alert) as a false positive. <br/>2. [Suppress the alert](#suppress-an-alert). <br/> 3. [Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint. <br/> 4. [Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis). |
+| The alert is accurate, but benign (unimportant) | [Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert). |
 
 ### Classify an alert
 
 Alerts can be classified as false positives or true positives in the Microsoft Defender Security Center. Classifying alerts helps train Microsoft Defender for Endpoint so that, over time, you'll see more true alerts and fewer false alerts.
 
-1.	Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
-2.	Select **Alerts queue**, and then select an alert that is a false positive.
-3.	For the selected alert, select **Actions** > **Manage alert**. A flyout pane opens.
-4.	In the **Manage alert** section, select either **True alert** or **False alert**. (Use **False alert** to classify a false positive.)
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+2. Select **Alerts queue**, and then select an alert.
+3. For the selected alert, select **Actions** > **Manage alert**. A flyout pane opens.
+4. In the **Manage alert** section, select either **True alert** or **False alert**. (Use **False alert** to classify a false positive.)
 
 > [!TIP]
 > For more information about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts). And, if your organization is using a security information and event management (SIEM) server, make sure to define a suppression rule there, too. 
@@ -87,11 +87,11 @@ Alerts can be classified as false positives or true positives in the Microsoft D
 
 If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in the Microsoft Defender Security Center. Suppressing alerts helps reduce noise in your security operations dashboard. 
 
-1.	Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
-2.	In the navigation pane, select **Alerts queue**.
-3.	Select an alert that you want to suppress to open its **Details** pane.
-4.	In the **Details** pane, choose the ellipsis (**...**), and then **Create a suppression rule**.
-5.	Specify all the settings for your suppression rule, and then choose **Save**.
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+2. In the navigation pane, select **Alerts queue**.
+3. Select an alert that you want to suppress to open its **Details** pane.
+4. In the **Details** pane, choose the ellipsis (**...**), and then **Create a suppression rule**.
+5. Specify all the settings for your suppression rule, and then choose **Save**.
 
 > [!TIP]
 > Need help with suppression rules? See [Suppress an alert and create a new suppression rule](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts#suppress-an-alert-and-create-a-new-suppression-rule).
@@ -123,15 +123,15 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Undo an action
 
-1.	Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 2. On the **History** tab, select an action that you want to undo.
-3.	In the flyout pane, select **Undo**. If the action cannot be undone with this method, you will not see an **Undo** button. (To learn more, see [Undo completed actions](manage-auto-investigation.md#undo-completed-actions).)
+3. In the flyout pane, select **Undo**. If the action cannot be undone with this method, you will not see an **Undo** button. (To learn more, see [Undo completed actions](manage-auto-investigation.md#undo-completed-actions).)
 
 ### Undo multiple actions at one time
 
-1.	Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
-2.	On the **History** tab, select the actions that you want to undo.
-3.	In the pane on the right side of the screen, select **Undo**.
+1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+2. On the **History** tab, select the actions that you want to undo.
+3. In the pane on the right side of the screen, select **Undo**.
 
 ### Remove a file from quarantine across multiple devices 
 

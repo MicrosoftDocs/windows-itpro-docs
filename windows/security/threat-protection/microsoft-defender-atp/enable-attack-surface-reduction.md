@@ -99,7 +99,7 @@ Example:
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions`
 
-`Value: c:\path|e:\path|c:\Whitelisted.exe`
+`Value: c:\path|e:\path|c:\Exclusions.exe`
 
 > [!NOTE]
 > Be sure to enter OMA-URI values without spaces.

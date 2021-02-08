@@ -47,7 +47,7 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
         <array>
             <string>sh</string>
             <string>-c</string>
-            <string>/usr/local/bin/mdatp --scan --quick</string>
+            <string>/usr/local/bin/mdatp scan quick</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
@@ -62,8 +62,6 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
             <key>Weekday</key>
             <integer>5</integer>
         </dict>
-        <key>StartInterval</key>
-        <integer>604800</integer>
         <key>WorkingDirectory</key>
         <string>/usr/local/bin/</string>
     </dict>
@@ -73,7 +71,7 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
 2. Save the file as *com.microsoft.wdav.schedquickscan.plist*.
 
     > [!TIP]
-    > To run a full scan instead of a quick scan, change line 12, `<string>/usr/local/bin/mdatp --scan --quick</string>`, to use the `--full` option instead of `--quick` (i.e. `<string>/usr/local/bin/mdatp --scan --full</string>`) and save the file as *com.microsoft.wdav.sched**full**scan.plist* instead of *com.microsoft.wdav.sched**quick**scan.plist*.
+    > To run a full scan instead of a quick scan, change line 12, `<string>/usr/local/bin/mdatp scan quick</string>`, to use the `full` option instead of `quick` (i.e. `<string>/usr/local/bin/mdatp scan full</string>`) and save the file as *com.microsoft.wdav.sched**full**scan.plist* instead of *com.microsoft.wdav.sched**quick**scan.plist*.
 
 3. Open **Terminal**.
 4. Enter the following commands to load your file:
@@ -85,7 +83,7 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
 
 5. Your scheduled scan will run at the date, time, and frequency you defined in your p-list. In the example, the scan runs at 2:00 AM every Friday. 
 
-    Note that the `StartInterval` value is in seconds, indicating that scans should run every 604,800 seconds (one week), while the `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday.
+    The `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday.
 
  > [!IMPORTANT]
  > Agents executed with *launchd* will not run at the scheduled time while the device is asleep. They will instead run once the device resumes from sleep mode.
