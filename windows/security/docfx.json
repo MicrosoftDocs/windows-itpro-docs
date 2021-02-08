@@ -47,7 +47,8 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Microsoft 365 Security"
+      "titleSuffix": "Microsoft 365 Security",
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {
       "titleSuffix":{

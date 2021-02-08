@@ -44,7 +44,8 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Configure Windows"
+      "titleSuffix": "Configure Windows",
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],
