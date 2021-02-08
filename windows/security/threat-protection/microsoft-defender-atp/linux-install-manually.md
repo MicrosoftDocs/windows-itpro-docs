@@ -41,6 +41,7 @@ This article describes how to deploy Microsoft Defender for Endpoint for Linux m
   - [Application installation](#application-installation)
   - [Download the onboarding package](#download-the-onboarding-package)
   - [Client configuration](#client-configuration)
+  - [Installer script](#installer-script)
   - [Log installation issues](#log-installation-issues)
   - [Operating system upgrades](#operating-system-upgrades)
   - [Uninstallation](#uninstallation)
@@ -342,6 +343,31 @@ Download the onboarding package from Microsoft Defender Security Center:
         ```bash
         mdatp threat list
         ```
+
+## Installer script
+
+Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public github repository](https://github.com/microsoft/mdatp-xplat/).
+The script identifies the distribution and version, and sets up the device to pull the latest package and install it.
+You can also onboard with a provided script.
+
+```bash
+❯ ./mde_installer.sh --help
+usage: basename ./mde_installer.sh [OPTIONS]
+Options:
+-c|--channel      specify the channel from which you want to install. Default: insiders-fast
+-i|--install      install the product
+-r|--remove       remove the product
+-u|--upgrade      upgrade the existing product
+-o|--onboard      onboard/offboard the product with <onboarding_script>
+-p|--passive-mode set EPP to passive mode
+-t|--tag          set a tag by declaring <name> and <value>. ex: -t GROUP Coders
+-m|--min_req      enforce minimum requirements
+-w|--clean        remove repo from package manager for a specific channel
+-v|--version      print out script version
+-h|--help         display help
+```
+
+read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
 ## Log installation issues
 
