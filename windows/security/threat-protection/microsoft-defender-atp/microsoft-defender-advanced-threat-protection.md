@@ -26,9 +26,6 @@ ms.technology: mde
 > For more info about Windows 10 Enterprise Edition features and functionality, see [Windows 10 Enterprise edition](https://www.microsoft.com/WindowsForBusiness/buy).
 
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
-<p></p>
-
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
 Defender for Endpoint uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
@@ -67,10 +64,6 @@ Defender for Endpoint uses the following combination of technology built into Wi
 </tr>
 </table>
 <br>
-
-<p></p>
-
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0] 
 
 > [!TIP]
 > - Learn about the latest enhancements in Defender for Endpoint: [What's new in Microsoft Defender for Endpoint](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
