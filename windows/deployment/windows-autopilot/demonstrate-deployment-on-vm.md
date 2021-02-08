@@ -573,7 +573,7 @@ Soon after reaching the desktop, the device should show up in Intune as an **ena
 Once you select a language and a keyboard layout, your company branded sign-in screen should appear. Provide your Azure Active Directory credentials and you're all done.
 
 > [!TIP]
-> If you recieve a message that "Something went wrong" and it "Looks like we can't connect to the URL for your organization's MDM terms of use" then verify you have correctly [assigned licenses](https://docs.microsoft.com/mem/intune/fundamentals/licenses-assign) to the current user.
+> If you recieve a message that "Something went wrong" and it "Looks like we can't connect to the URL for your organization's MDM terms of use", verify that you have correctly [assigned licenses](https://docs.microsoft.com/mem/intune/fundamentals/licenses-assign) to the current user.
 
 Windows Autopilot will now take over to automatically join your device into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoint you've created to go through this process again with different settings.
 
