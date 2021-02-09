@@ -27,8 +27,6 @@ ms.technology: mde
 **Applies to:**
 - Virtual desktop infrastructure (VDI) devices
 
->[!WARNING]
-> Microsoft Defender for Endpoint support for Windows Virtual Desktop multi-user scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However single session scenarios on Windows Virtual Desktop are fully supported.
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
