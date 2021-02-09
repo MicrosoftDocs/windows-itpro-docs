@@ -346,7 +346,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Installer script
 
-Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public github repository](https://github.com/microsoft/mdatp-xplat/).
+Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
 The script identifies the distribution and version, and sets up the device to pull the latest package and install it.
 You can also onboard with a provided script.
 
@@ -367,7 +367,7 @@ Options:
 -h|--help         display help
 ```
 
-read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
+Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
 ## Log installation issues
 
