@@ -38,6 +38,7 @@ Method |Return Type |Description
 [Get alert](get-alert-info-by-id.md) | [Alert](alerts.md) | Get a single [alert](alerts.md) object.
 [List alerts](get-alerts.md) | [Alert](alerts.md) collection | List [alert](alerts.md) collection.
 [Update alert](update-alert.md) | [Alert](alerts.md) | Update specific [alert](alerts.md).
+[Batch update alerts](batch-update-alerts.md) | | Update a batch of [alerts](alerts.md).
 [Create alert](create-alert-by-reference.md)|[Alert](alerts.md)|Create an alert based on event data obtained from [Advanced Hunting](run-advanced-query-api.md).
 [List related domains](get-alert-related-domain-info.md)|Domain collection| List URLs associated with the alert.
 [List related files](get-alert-related-files-info.md) | [File](files.md) collection |  List the [file](files.md) entities that are associated with the [alert](alerts.md).
