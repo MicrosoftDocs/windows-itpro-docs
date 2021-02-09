@@ -15587,7 +15587,7 @@
     },
     {
       "source_path": "windows/hub/release-information.md",
-      "redirect_url": "https://docs.microsoft.com/windows/release-information",
+      "redirect_url": "https://docs.microsoft.com/windows/release-health/release-information",
       "redirect_document_id": true
     },
     {
@@ -15797,12 +15797,12 @@
     },
     {
       "source_path": "windows/release-information/status-windows-10-1703.yml",
-      "redirect_url": "https://docs.microsoft.com/windows/release-information/windows-message-center",
+      "redirect_url": "https://docs.microsoft.com/windows/release-health/windows-message-center",
       "redirect_document_id": true
     },
     {
       "source_path": "windows/release-information/resolved-issues-windows-10-1703.yml",
-      "redirect_url": "https://docs.microsoft.com/windows/release-information/windows-message-center",
+      "redirect_url": "https://docs.microsoft.com/windows/release-health/windows-message-center",
       "redirect_document_id": false
     },
     {
