@@ -25,23 +25,22 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-Selecting any device from the [Devices list](machines-view-overview.md) brings you to the individual device's page. On the device page, you can select the **Timeline** tab to view all the events related to the device. 
+You can gather more insight about a device by selecting any device from the [Devices list](machines-view-overview.md). This brings you to the individual device's page. On the device page, you can select the **Timeline** tab to view all the events related to it.
 
 ## Understand techniques in the timeline
 
 >[!IMPORTANT]
 >Some information relates to a prereleased product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-In Microsoft Defender for Endpoint, **Techniques** are a grouping of events that when taken together indicate activity associated with certain [MITRE ATT&CK](https://attack.mitre.org/) techniques or sub-techniques. 
+In Microsoft Defender for Endpoint, **Techniques** are additional insights provided in the event timeline that indicate activity associated with certain [MITRE ATT&CK](https://attack.mitre.org/) techniques or sub-techniques. 
 
 This feature simplifies the investigation experience by helping analysts understand at a glance whether suspicious activities happened on or affected a device and whether those activities indicate a need for closer investigation.
 
-
-For public preview customers, Techniques are available by default and are shown together with events when a device's timeline is viewed. 
+For the public preview, Techniques are available by default and are shown together with events when a device's timeline is viewed. 
 
 ![Techniques in device timeline screenshot](images/device-timeline-with-techniques.png)
 
-Techniques are highlighted in bold text and appear with a blue icon on the left. The corresponding MITRE ATT&CK ID and technique name also appears as tags under Additional information. 
+Techniques are highlighted in bold text and appear with a blue icon on the left. The corresponding MITRE ATT&CK ID and technique name also appear as tags under Additional information. 
 
 Search and Export options are also available for Techniques.
 
@@ -55,14 +54,14 @@ You can also select event entities to copy them using the blue icon on the right
 
 ![Copy entity details](images/techniques-side-pane-clickable.png)
 
-You can do the same even for command lines.
+You can do the same for command lines.
 
 ![Copy command line](images/techniques-side-pane-command.png)
 
 
 ## Investigate related events
 
-To use [advanced hunting](advanced-hunting-overview.md) to find events related to the selected technique, you can select **Hunt for related events**. This leads to the advanced hunting page with a query to find the events related to the technique.
+To use [advanced hunting](advanced-hunting-overview.md) to find events related to the selected Technique, you can select **Hunt for related events**. This leads to the advanced hunting page with a query to find events related to the Technique.
 
 ![Hunt for related events](images/techniques-hunt-for-related-events.png)
 
@@ -72,7 +71,7 @@ To use [advanced hunting](advanced-hunting-overview.md) to find events related t
 
 ## Customize your device timeline
 
-On the upper right-hand side of the device timeline, you can choose a date range to limit the number of events and techniques in the timeline. You can also customize which columns to expose an filter for flagged events, by data type, or by event group.
+On the upper right-hand side of the device timeline, you can choose a date range to limit the number of events and techniques in the timeline. You can also customize which columns to expose, and filter for flagged events by data type or by event group.
 
 ### Choose columns to expose
 You can choose which columns to expose in the timeline by selecting the **Choose columns** button.
