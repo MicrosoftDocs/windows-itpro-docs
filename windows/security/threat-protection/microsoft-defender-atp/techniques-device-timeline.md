@@ -32,7 +32,7 @@ You can gather more insight about a device by selecting any device from the [Dev
 >[!IMPORTANT]
 >Some information relates to a prereleased product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-In Microsoft Defender for Endpoint, **Techniques** are additional insights provided in the event timeline that indicate activity associated with certain [MITRE ATT&CK](https://attack.mitre.org/) techniques or sub-techniques. 
+In Microsoft Defender for Endpoint, **Techniques** are an additional data type in the event timeline that provides more insight on activities associated with certain [MITRE ATT&CK](https://attack.mitre.org/) techniques or sub-techniques. 
 
 This feature simplifies the investigation experience by helping analysts understand at a glance whether suspicious activities happened on or affected a device and whether those activities indicate a need for closer investigation.
 
