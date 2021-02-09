@@ -13,88 +13,66 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/05/2020 #Required; mm/dd/yyyy format.
+  ms.date: 02/09/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+- []()
+- []()
+- [](whats-new-windows-10-version-1909.md)
+- [](whats-new-windows-10-version-1903.md)
+- [](whats-new-windows-10-version-1809.md)
+- [](whats-new-windows-10-version-1803.md)
+
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Plan
+  - title: What's new in Windows 10
     linkLists:
       - linkListType: overview
         links:
-          - text: Create a deployment plan
-            url: update/create-deployment-plan.md
-          - text: Define readiness criteria
-            url: update/plan-define-readiness.md
-          - text: Evaluate infrastructure and tools
-            url: update/eval-infra-tools.md
-          - text: Define your servicing strategy
-            url:  update/plan-define-strategy.md
+          - text: What's new in Windows 10, version 20H2
+            url: whats-new-windows-10-version-20H2.md
+          - text: What's new in Windows 10, version 2004
+            url: whats-new-windows-10-version-2004.md
+          - text: What's new in Windows 10, version 1909
+            url: whats-new-windows-10-version-1909.md
+          - text: What's new in Windows 10, version 1903
+            url:  whats-new-windows-10-version-1903.md
+          - text: What's new in Windows 10, version 1809
+            url:  whats-new-windows-10-version-1809.md
+          - text: What's new in Windows 10, version 1803
+            url:  whats-new-windows-10-version-1803.md
 
   # Card (optional)
-  - title: Prepare
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Prepare to deploy Windows 10 updates
-            url: update/prepare-deploy-windows.md
-          - text: Prepare updates using Windows Update for Business
-            url: update/waas-manage-updates-wufb.md
-          - text: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
-            url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
-
-  # Card (optional)
-  - title: Deploy
-    linkLists:
-      - linkListType: deploy
-        links:
-          - text: Deploy Windows 10 with Autopilot
-            url: https://docs.microsoft.com/mem/autopilot
-          - text: Assign devices to servicing channels
-            url: update/waas-servicing-channels-windows-10-updates.md
-          - text: Deploy Windows updates with Configuration Manager
-            url: update/deploy-updates-configmgr.md
- 
-  # Card
-  - title: Overview
+  - title: Lean more
     linkLists:
       - linkListType: overview
         links:
-          - text: What's new in Windows deployment
-            url: windows-10-deployment-scenarios.md
-          - text: Windows 10 deployment scenarios
-            url: windows-10-deployment-scenarios.md
-          - text: Basics of Windows updates, channels, and tools
-            url:  update/get-started-updates-channels-tools.md
-          - text: Overview of Windows Autopilot
-            url:  https://docs.microsoft.com/mem/autopilot/windows-autopilot
-
-  # Card
-  - title: Support remote work
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Deploy Windows 10 for a remote world
-            url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/deploying-a-new-version-of-windows-10-in-a-remote-world/ba-p/1419846
-          - text: Empower remote workers with Microsoft 365
-            url: https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely
-          - text: Top 12 tasks for security teams to support working from home
-            url: https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work
-          - text: Support your remote workforce
-            url: https://docs.microsoft.com/microsoftteams/faq-support-remote-workforce
+          - text: Windows 10 release information
+            url: https://docs.microsoft.com/windows/release-information/
+          - text: Windows 10 release health dashboard
+            url: https://docs.microsoft.com/windows/release-information/status-windows-10-2004
+          - text: Windows 10 update history
+            url: https://support.microsoft.com/help/4555932/windows-10-update-history
+          - text: What’s new for business in Windows 10 Insider Preview Builds
+            url: https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new
+          - text: Windows 10 features we’re no longer developing
+            url: https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features
+          - text: Features and functionality removed in Windows 10
+            url: https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features
+          - text: Compare Windows 10 Editions
+            url: https://go.microsoft.com/fwlink/p/?LinkId=690485
 
   # Card (optional)
-  - title: Microsoft Learn
+  - title: See also
     linkLists:
-      - linkListType: learn
+      - linkListType: overview
         links:
-          - text: Plan to deploy updates for Windows 10 and Microsoft 365 Apps
-            url: https://docs.microsoft.com/learn/modules/windows-plan
-          - text: Prepare to deploy updates for Windows 10 and Microsoft 365 Apps
-            url: https://docs.microsoft.com/learn/modules/windows-prepare/
-          - text: Deploy updates for Windows 10 and Microsoft 365 Apps
-            url: https://docs.microsoft.com/learn/modules/windows-deploy
+          - text: Windows 10 Enterprise LTSC
+            url: ltsc/index.md
+          - text: Edit an existing topic using the Edit link
+            url: contribute-to-a-topic.md
