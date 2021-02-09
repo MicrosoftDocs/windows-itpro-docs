@@ -34,7 +34,7 @@ ms.technology: mde
 
 - Performance improvements & bug fixes
 
-## 101.19.48
+## 101.19.48 (20.120121.11948.0)
 
 > [!NOTE]
 > The old command-line tool syntax has been deprecated with this release. For information on the new syntax, see [Resources](mac-resources.md#configuring-from-the-command-line).
@@ -42,17 +42,17 @@ ms.technology: mde
 - Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`. This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint for Mac
 - Performance improvements & bug fixes
 
-## 101.19.21
+## 101.19.21 (20.120101.11921.0)
 
 - Bug fixes
 
-## 101.15.26
+## 101.15.26 (20.120102.11526.0)
 
 - Improved the reliability of the agent when running on macOS 11 Big Sur
 - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
 - Performance improvements & bug fixes
 
-## 101.13.75
+## 101.13.75 (20.120101.11375.0)
 
 - Removed conditions when Microsoft Defender for Endpoint was triggering a macOS 11 (Big Sur) bug that manifests into a kernel panic
 - Fixed a memory leak in the Endpoint Security system extension when running on mac 11 (Big Sur)
