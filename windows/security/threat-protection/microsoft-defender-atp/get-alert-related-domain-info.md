@@ -22,7 +22,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -77,7 +77,7 @@ If successful and alert and domain exist - 200 OK. If alert not found - 404 Not 
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/domains
 ```
 
@@ -85,9 +85,7 @@ GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_213628044
 
 Here is an example of the response.
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/$metadata#Domains",
     "value": [

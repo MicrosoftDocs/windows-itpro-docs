@@ -21,7 +21,7 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -37,7 +37,7 @@ Submits or Updates batch of [Indicator](ti-indicator.md) entities.
 ## Limitations
 1. Rate limitations for this API are 30 calls per minute.
 2. There is a limit of 15,000 active [Indicators](ti-indicator.md) per tenant. 
-
+3. Maximum batch size for one API call is 500.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
@@ -79,9 +79,10 @@ Indicators | List<[Indicator](ti-indicator.md)> | List of [Indicators](ti-indica
 
 Here is an example of the request.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/indicators/import
 ```
+
 ```json
 {
 	"Indicators":

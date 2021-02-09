@@ -19,13 +19,15 @@ ms.reviewer:
 # Planning a Windows Hello for Business Deployment
 
 **Applies to**
--   Windows 10
+
+- Windows 10
 
 Congratulations! You are taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
 
 This guide explains the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of the infrastructure. Armed with your planning worksheet, you'll use that information to select the correct deployment guide for your needs.
 
-If you have an Azure tenant, you can use our online, interactive Passwordless Wizard which walks through the same choices instead of using our manual guide below. The Passwordless Wizard is available in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/modernonboarding/passwordlesssetup).
+> [!Note]
+>If you have an Azure tenant, you can use our online, interactive Passwordless Wizard which walks through the same choices instead of using our manual guide below. The Passwordless Wizard is available in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/modernonboarding/passwordlesssetup).
 
 ## Using this guide
 
@@ -38,12 +40,13 @@ This guide removes the appearance of complexity by helping you make decisions on
 Read this document and record your decisions on the worksheet. When finished, your worksheet has all the necessary information for your Windows Hello for Business deployment.
 
 There are six major categories you need to consider for a Windows Hello for Business deployment.  Those categories are:
-*   Deployment Options
-*   Client
-*   Management
-*   Active Directory
-*   Public Key Infrastructure
-*   Cloud
+
+- Deployment Options
+- Client
+- Management
+- Active Directory
+- Public Key Infrastructure
+- Cloud
 
 ### Baseline Prerequisites
 
@@ -58,13 +61,16 @@ The goal of Windows Hello for Business is to enable deployments for all organiza
 There are three deployment models from which you can choose: cloud only, hybrid, and on-premises.
 
 ##### Cloud only
+
 The cloud only deployment model is for organizations who only have cloud identities and do not access on-premises resources.  These organizations typically join their devices to the cloud and exclusively use resources in the cloud such as SharePoint, OneDrive, and others.  Also, because these users do not use on-premises resources, they do not need certificates for things like VPN because everything they need is hosted in Azure.
 
 ##### Hybrid
+
 The hybrid deployment model is for organizations that: 
-* Are federated with Azure Active Directory
-* Have identities synchronized to Azure Active Directory using Azure Active Directory Connect
-* Use applications hosted in Azure Active Directory, and want a single sign-in user experience for both on-premises and Azure Active Directory resources
+
+- Are federated with Azure Active Directory
+- Have identities synchronized to Azure Active Directory using Azure Active Directory Connect
+- Use applications hosted in Azure Active Directory, and want a single sign-in user experience for both on-premises and Azure Active Directory resources
 
 > [!Important]
 > Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models.</br>
@@ -154,7 +160,7 @@ The Windows Hello for Business deployment depends on an enterprise public key in
 
 ### Cloud
 
-Some deployment combinations require an Azure account, and some require Azure Active Directory for user identities.  These cloud requirements may only need an Azure account while other features need an Azure Active Directory Premium subscription. The planning process identifies and differentiates the components that are needed from the those that are optional.
+Some deployment combinations require an Azure account, and some require Azure Active Directory for user identities.  These cloud requirements may only need an Azure account while other features need an Azure Active Directory Premium subscription. The planning process identifies and differentiates the components that are needed from those that are optional.
 
 ## Planning a Deployment
 
@@ -332,7 +338,7 @@ Windows Hello for Business does not require an Azure AD premium subscription.  H
 
 If box **1a** on your planning worksheet reads **on-premises**, write **No** in box **6c** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **hybrid** and box **1b** reads **key trust**, write **No** in box **6c** on your planning worksheet.  You can deploy Windows Hello for Business using the free Azure Active Directory account (additional costs needed for multi-factor authentication).
+If box **1a** on your planning worksheet reads **hybrid** and box **1b** reads **key trust**, write **No** in box **6c** on your planning worksheet. You can deploy Windows Hello for Business using the Azure Active Directory free tier. All Azure Active Directory free accounts can use Azure AD Multi-Factor Authentication through the use of security defaults. Some Azure AD Multi-Factor Authentication features require a license. For more details, see [Features and licenses for Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-licensing).
 
 If box **5b** on your planning worksheet reads **AD FS RA**, write **Yes** in box **6c** on your planning worksheet.  Enrolling a certificate using the AD FS registration authority requires devices to authenticate to the AD FS server, which requires device write-back, an Azure AD Premium feature.
 

@@ -22,7 +22,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -77,7 +77,7 @@ If successful, this method returns 200, Ok response code with a [Machine Action]
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/2e9da30d-27f6-4208-81f2-9cd3d67893ba
 ```
 
@@ -86,9 +86,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/2e9da30d-27f6-42
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 Ok
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#MachineActions/$entity",
     "id": "5382f7ea-7557-4ab7-9782-d50480024a4e",
