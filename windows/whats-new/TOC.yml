@@ -12,14 +12,13 @@
   href: whats-new-windows-10-version-1809.md
 - name: What's new in Windows 10, version 1803
   href: whats-new-windows-10-version-1803.md
-  items: 
-    - name: Previous versions
-      items:
-        - name: What's new in Windows 10, version 1709
-          href: whats-new-windows-10-version-1709.md
-        - name: What's new in Windows 10, version 1703
-          href: whats-new-windows-10-version-1703.md
-        - name: What's new in Windows 10, version 1607
-          href: whats-new-windows-10-version-1607.md
-        - name: What's new in Windows 10, versions 1507 and 1511
-          href: whats-new-windows-10-version-1507-and-1511.md 
+- name: Previous versions
+  items:
+    - name: What's new in Windows 10, version 1709
+      href: whats-new-windows-10-version-1709.md
+    - name: What's new in Windows 10, version 1703
+      href: whats-new-windows-10-version-1703.md
+    - name: What's new in Windows 10, version 1607
+      href: whats-new-windows-10-version-1607.md
+    - name: What's new in Windows 10, versions 1507 and 1511
+      href: whats-new-windows-10-version-1507-and-1511.md 
