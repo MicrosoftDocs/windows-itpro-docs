@@ -30,6 +30,10 @@ ms.technology: mde
 > [!IMPORTANT]
 > Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
 
+## 101.19.88 (20.121011.11988.0)
+
+- Performance improvements & bug fixes
+
 ## 101.19.48
 
 > [!NOTE]
