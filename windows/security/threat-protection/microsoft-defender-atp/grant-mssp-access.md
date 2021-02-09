@@ -25,7 +25,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint in the Microsoft 365 Security Center](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/microsoft-365-security-center-mde?view=o365-worldwide) [! Replace URL with fwlink]
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
@@ -34,26 +34,26 @@ ms.technology: mde
 
 To implement a multi-tenant delegated access solution, take the following steps:
 
-1. Enable [role-based access control](rbac.md) in Defender for Endpoint and connect with Active Directory (AD) groups.
+1. Enable [role-based access control](rbac.md) in Defender for Endpoint in Microsoft 365 Security Center and connect with Active Directory (AD) groups.
 
 2. Configure [Governance Access Packages](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
 
 3. Manage access requests and audits in [Microsoft Myaccess](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve).
 
-## Enable role-based access controls in Microsoft Defender for Endpoint
+## Enable role-based access controls in Microsoft Defender for Endpoint in Microsoft 365 Security Center
 
 1. **Create access groups for MSSP resources in Customer AAD: Groups**
 
-    These groups will be linked to the Roles you create in Defender for Endpoint. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
+    These groups will be linked to the Roles you create in Microsoft 365 Defender for Endpoint in Microsoft 365 Security Center. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
 
     - Tier 1 Analyst 
     - Tier 2 Analyst 
     - MSSP Analyst Approvers  
 
 
-2. Create Defender for Endpoint roles for appropriate access levels in Customer Defender for Endpoint.
+2. Create Defender for Endpoint roles for appropriate access levels in Customer Microsoft 365 security center Endpoint roles & groups.
 
-    To enable RBAC in the customer Microsoft Defender Security Center, access **Settings > Permissions > Roles** and "Turn on roles", from a user account with Global Administrator or Security Administrator rights.
+    To enable RBAC in the customer Microsoft 365 Security Center, access **Permissions & roles > Endpoints roles & groups > Roles** and "Turn on roles", from a user account with Global Administrator or Security Administrator rights.
 
     ![Image of MSSP access](images/mssp-access.png)
 
@@ -127,7 +127,9 @@ To implement a multi-tenant delegated access solution, take the following steps:
     Example:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Approve or deny requests in the **Approvals** section of the UI.
 
-    At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft Defender Security Center: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft 365 Security Center: `https://security.microsoft.com/?tid=<CustomerTenantId>` with the permissions and roles they were assigned.
+    
+**Important:** Delegated access to Microsoft Defender for Endpoint in Microsoft 365 Security Center currently allows access to a single tenant per browser window. 
 
 ## Related topics
 - [Access the MSSP customer portal](access-mssp-portal.md)
