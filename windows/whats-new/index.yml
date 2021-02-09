@@ -45,9 +45,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Windows 10 release information
-            url: https://docs.microsoft.com/windows/release-information/
+            url: https://docs.microsoft.com/en-us/windows/release-health/release-information
           - text: Windows 10 release health dashboard
-            url: https://docs.microsoft.com/windows/release-information/status-windows-10-2004
+            url: https://docs.microsoft.com/windows/release-information/
           - text: Windows 10 update history
             url: https://support.microsoft.com/help/4555932/windows-10-update-history
           - text: What’s new for business in Windows 10 Insider Preview Builds
