@@ -49,7 +49,7 @@ landingContent:
           - text: Windows 10 release health dashboard
             url: https://docs.microsoft.com/windows/release-information/
           - text: Windows 10 update history
-            url: https://support.microsoft.com/help/4555932/windows-10-update-history
+            url: https://support.microsoft.com/topic/windows-10-update-history-7dd3071a-3906-fa2c-c342-f7f86728a6e3
           - text: Windows 10 features we’re no longer developing
             url: https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features
           - text: Features and functionality removed in Windows 10
