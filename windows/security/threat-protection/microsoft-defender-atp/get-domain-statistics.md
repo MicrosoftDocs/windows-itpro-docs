@@ -22,7 +22,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -62,6 +62,11 @@ Header | Value
 :---|:---
 Authorization | Bearer {token}. **Required**.
 
+## Request URI parameters
+
+Name | Type | Description
+:---|:---|:---
+lookBackHours | Int32 | Defines the hours we search back to get the statistics. Defaults to 30 days. **Optional**.
 
 ## Request body
 Empty
@@ -76,8 +81,8 @@ If successful and domain exists - 200 OK, with statistics object in the response
 
 Here is an example of the request.
 
-```
-GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats
+```http
+GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookBackHours=48
 ```
 
 **Response**
@@ -85,9 +90,7 @@ GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
 	"@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
 	"host": "example.com",

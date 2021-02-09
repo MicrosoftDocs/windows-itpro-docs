@@ -444,7 +444,7 @@ To stop Windows from automatically blocking these connections, you can add the `
 For example: 
 
 ```console
-URL <,proxy>|URL <,proxy>/*AppCompat*/
+URL <,proxy>|URL <,proxy>|/*AppCompat*/
 ```
 
 When you use this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access), using the **Domain joined or marked as compliant** option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.

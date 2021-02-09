@@ -21,7 +21,7 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -32,7 +32,7 @@ ms.topic: article
 
 ## API description
 Find [Machines](machine.md) by [Tag](machine-tags.md).
-
+<br>```startswith``` query is supported. 
 
 ## Limitations
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
@@ -56,7 +56,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 ## HTTP request
 ```
-GET /api/machines/findbytag(tag='{tag}')
+GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 ```
 
 ## Request headers
@@ -64,6 +64,13 @@ GET /api/machines/findbytag(tag='{tag}')
 Name | Type | Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
+
+## Request URI parameters
+
+Name | Type | Description
+:---|:---|:---
+tag | String | The tag name. **Required**.
+useStartsWithFilter | Boolean | When set to true, the search will find all devices with tag name that starts with the given tag in the query. Defaults to false. **Optional**.
 
 ## Request body
 Empty
@@ -77,6 +84,6 @@ If successful - 200 OK with list of the machines in the response body.
 
 Here is an example of the request.
 
-```
-GET https://api.securitycenter.microsoft.com/api/machines/findbytag(tag='testTag')
+```http
+GET https://api.securitycenter.microsoft.com/api/machines/findbytag?tag=testTag&useStartsWithFilter=true
 ```
