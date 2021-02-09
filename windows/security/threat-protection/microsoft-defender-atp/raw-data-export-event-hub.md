@@ -39,7 +39,7 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://ww
 
 1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) with a ***Global Administrator*** or ***Security Administrator*** user.
 
-2. Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.
+2. Go to the [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.
 
 3. Click on **Add data export settings**.
 
