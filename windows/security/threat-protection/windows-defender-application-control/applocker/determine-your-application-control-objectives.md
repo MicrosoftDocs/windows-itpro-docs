@@ -4,7 +4,7 @@ description: Determine which applications to control and how to control them by 
 ms.assetid: 0e84003e-6095-46fb-8c4e-2065869bb53b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Determine your application control objectives

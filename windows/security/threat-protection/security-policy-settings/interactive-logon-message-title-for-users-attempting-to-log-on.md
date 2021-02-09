@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: f2596470-4cc0-4ef1-849c-bef9dc3533c6
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Interactive logon: Message title for users attempting to log on

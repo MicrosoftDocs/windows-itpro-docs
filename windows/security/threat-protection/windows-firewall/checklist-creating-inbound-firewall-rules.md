@@ -4,7 +4,7 @@ description: Use these tasks for creating inbound firewall rules in your GPOs fo
 ms.assetid: 0520e14e-5c82-48da-8fbf-87cef36ce02f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Checklist: Creating Inbound Firewall Rules

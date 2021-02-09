@@ -4,8 +4,8 @@ description: This is Phase 3, Onboarding, of migrating from Symantec to Microsof
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,8 +15,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365solution-symantecmigrate
+  - M365-security-compliance
+  - m365solution-symantecmigrate
 ms.topic: article
 ms.date: 09/24/2020
 ms.custom: migrationguides

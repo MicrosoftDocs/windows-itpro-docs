@@ -5,13 +5,14 @@ ms.assetid: 733263E5-7FD1-45D2-914A-184B9E3E6A3F
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: dulcemontemayor
 ms.date: 02/28/2019
 ms.localizationpriority: medium
+ms.technology: mde
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection

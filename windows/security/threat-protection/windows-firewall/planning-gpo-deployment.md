@@ -4,7 +4,7 @@ description: Learn how to use security group filtering and WMI filtering to prov
 ms.assetid: b38adfb1-1371-4227-a887-e6d118809de1
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Planning GPO Deployment
