@@ -203,10 +203,6 @@ Forwards endpoint security alerts and their triage status to Microsoft Complianc
 
 After configuring the [Security policy violation indicators](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) in the insider risk management settings, Defender for Endpoint alerts will be shared with insider risk management for applicable users.
 
-## Download quarantined files
-
-You can turn on a setting to backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. Once this setting is enabled, the **Download file** button will always be available. [Learn more about requirements](respond-file-alerts.md#download-quarantined-files)
-
 ## Related topics
 
 - [Update data retention settings](data-retention-settings.md)

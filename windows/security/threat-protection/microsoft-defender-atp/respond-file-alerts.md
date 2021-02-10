@@ -1,5 +1,5 @@
 ---
-title: Take response actions on a file in Microsoft Defender ATP
+title: Take response actions on a file in Microsoft Defender for Endpoint
 description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
 keywords: respond, stop and quarantine, block file, deep analysis
 search.product: eADQiWindows 10XVcnh
@@ -144,29 +144,11 @@ By default, you will not be able to download files that are in quarantine.
 
 ![Image of download file action](images/atp-download-file-action.png)
 
-### Download quarantined files
-
-When this setting is on, quarantined files will be backed up to a secure and compliant location so they can be downloaded directly from quarantine. The **Download file** button will always be available for you to use from the file's detailed profile page in the Microsoft Defender Security Center. **This feature is turned 'Off' by default**.
-
-Newly quarantined files from any supported endpoint in your organization will be copied to the same secure Azure storage location as your existing sample submission files. A quarantined file will only be collected once per organization.
-
-Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [automatic sample submission configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-intune-to-enable-cloud-delivered-protection).
-
-Go to **Settings** > **Advanced features** > **Download quarantined files** to turn on this feature. [Learn more about advanced features](advanced-features.md)
-
->[!IMPORTANT]
->Requirements:
->- Your organization uses Microsoft Defender Antivirus 
->- Cloud–based protection is enabled. See [Manage cloud–based protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md)
->- Microsoft Defender for Endpoint is in active mode
->- Engine version is 1.1.17300.4 or later
->- Devices have Windows 10 version 1703 or later, or Windows server 2016 and 2019
-
 ### Collect files
 
-If a file is not already stored by Microsoft Defender ATP, you can't download it. Instead, you'll see a **Collect file** button in the same location. If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled.
+If a file is not already stored by Microsoft Defender for Endpoint, you can't download it. Instead, you'll see a **Collect file** button in the same location. If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled.
 > [!Important]
-> A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired. 
+> A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired.
 
 ## Add indicator to block or allow a file
 
