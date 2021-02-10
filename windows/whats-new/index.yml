@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Windows 10 deployment resources and documentation # < 60 chars
-summary: Learn about deploying and keeping Windows 10 up to date.  # < 160 chars
+title: What's new in Windows 10 # < 60 chars
+summary: Find out about new features and capabilities in the latest release of Windows 10.  # < 160 chars
 
 metadata:
-  title: Windows 10 deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about deploying Windows 10 and keeping it up to date in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  title: What's new in Windows 10 # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Find out about new features and capabilities in the latest release of Windows 10. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
