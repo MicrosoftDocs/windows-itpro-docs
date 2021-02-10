@@ -34,7 +34,7 @@ You can gather more insight about a device by selecting any device from the [Dev
 
 In Microsoft Defender for Endpoint, **Techniques** are an additional data type in the event timeline that provides more insight on activities associated with certain [MITRE ATT&CK](https://attack.mitre.org/) techniques or sub-techniques. 
 
-This feature simplifies the investigation experience by helping analysts understand at a glance whether suspicious activities happened on or affected a device and whether those activities indicate a need for closer investigation.
+This feature simplifies the investigation experience by helping analysts understand at a glance whether certain activities happened on or affected a device and whether those activities indicate a need for closer investigation.
 
 For the public preview, Techniques are available by default and are shown together with events when a device's timeline is viewed. 
 
