@@ -225,13 +225,11 @@ The following table lists the file type exclusions, folder exclusions, and proce
 
 - `%systemroot%\Sysvol\Domain\Policies*\Machine\Applications*.aas`
 
-- `%systemroot%\Sysvol\Domain\*.inf`
+- `%systemroot%\Sysvol\Domain\Policies*\Machine\Microsoft\Windows NT\SecEdit*.inf`
 
-- `%systemroot%\Sysvol\Domain\*.Scripts.ini`
+- `%systemroot%\Sysvol\Domain\Policies*\Machine\Microsoft\Windows NT\Audit*.csv`
 
-- `%systemroot%\Sysvol\Domain\*.ins`
-
-- `%systemroot%\Sysvol\Domain\Oscfilter.ini`
+- `%systemroot%\Sysvol\Domain\Policies*\Machine\Scripts\Scripts.ini`
 
 ### Active Directory exclusions
 
@@ -358,6 +356,28 @@ This section lists the folder exclusions and the process exclusions that are del
 - `%SystemRoot%\SysWOW64\inetsrv\w3wp.exe`
 
 - `%SystemDrive%\PHP5433\php-cgi.exe`
+
+#### Turning off scanning of files in the Sysvol\Sysvol folder or the SYSVOL_DFSR\Sysvol folder
+
+The current location of the Sysvol\Sysvol or SYSVOL_DFSR\Sysvol folder and all the subfolders is the file system reparse target of the replica set root. The Sysvol\Sysvol and SYSVOL_DFSR\Sysvol folders use the following locations by default:
+%systemroot%\Sysvol\Domain
+%systemroot%\Sysvol_DFSR\Domain
+
+The path to the currently active SYSVOL is referenced by the NETLOGON share and can be determined by the  SysVol value name in the following subkey:
+HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters
+
+Exclude the following files from this folder and all its subfolders:
+- `*.adm`
+- `*.admx`
+- `*.adml`
+- `Registry.pol`
+- `Registry.tmp`
+- `*.aas`
+- `*.inf`
+- `Scripts.ini`
+- `*.ins`
+- `Oscfilter.ini`
+
 
 ### Windows Server Update Services exclusions
 
