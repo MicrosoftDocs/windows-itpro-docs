@@ -80,6 +80,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
       ```bash
       mdatp config real-time-protection --value enabled
       ```
+
   > [!NOTE]
   > Using **--output json** (note the double dash) ensures that the output format is ready for parsing.
 
@@ -91,12 +92,12 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
   Next, type the following commands:
 
-    ```bash
+     ```bash
     chmod +x high_cpu_parser.py
-    ```
-    ```bash
+     ```
+     ```bash
     cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
-    ```
+     ```
   The output of the above is a list of the top contributors to performance issues. The first column is the process identifier (PID), the second column is te process name, and the last column is the number of scanned files, sorted by impact.
 
   For example, the output of the command will be something like the below:
@@ -113,7 +114,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     549  telemetryd_v1   325
     4764 None 228
     125  CrashPlanService 164
-
+    ```
   To improve the performance of Defender for Endpoint for Mac, locate the one with the highest number under the Total files scanned row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
 
   > [!NOTE]
