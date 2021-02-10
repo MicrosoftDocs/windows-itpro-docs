@@ -359,12 +359,11 @@ This section lists the folder exclusions and the process exclusions that are del
 
 #### Turning off scanning of files in the Sysvol\Sysvol folder or the SYSVOL_DFSR\Sysvol folder
 
-The current location of the Sysvol\Sysvol or SYSVOL_DFSR\Sysvol folder and all the subfolders is the file system reparse target of the replica set root. The Sysvol\Sysvol and SYSVOL_DFSR\Sysvol folders use the following locations by default:
-%systemroot%\Sysvol\Domain
-%systemroot%\Sysvol_DFSR\Domain
+The current location of the `Sysvol\Sysvol` or `SYSVOL_DFSR\Sysvol` folder and all the subfolders is the file system reparse target of the replica set root. The `Sysvol\Sysvol` and `SYSVOL_DFSR\Sysvol` folders use the following locations by default:
+- `%systemroot%\Sysvol\Domain`
+- `%systemroot%\Sysvol_DFSR\Domain`
 
-The path to the currently active SYSVOL is referenced by the NETLOGON share and can be determined by the  SysVol value name in the following subkey:
-HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters
+The path to the currently active `SYSVOL` is referenced by the NETLOGON share and can be determined by the SysVol value name in the following subkey: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
 
 Exclude the following files from this folder and all its subfolders:
 - `*.adm`
@@ -378,7 +377,6 @@ Exclude the following files from this folder and all its subfolders:
 - `*.ins`
 - `Oscfilter.ini`
 
-
 ### Windows Server Update Services exclusions
 
 This section lists the folder exclusions that are delivered automatically when you install the Windows Server Update Services (WSUS) role. The WSUS folder is specified in the registry key `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
@@ -391,7 +389,7 @@ This section lists the folder exclusions that are delivered automatically when y
 
 - `%systemroot%\SoftwareDistribution\Download`
 
-## Related articles
+## See also
 
 - [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
