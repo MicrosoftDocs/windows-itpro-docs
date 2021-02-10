@@ -74,9 +74,8 @@ The minimum required Enterprise certificate authority that can be used with Wind
 * The certificate Enhanced Key Usage section must contain Client Authentication (1.3.6.1.5.5.7.3.2), Server Authentication (1.3.6.1.5.5.7.3.1), and KDC Authentication (1.3.6.1.5.2.3.5).
 * The certificate Subject Alternative Name section must contain the Domain Name System (DNS) name.  
 * The certificate template must have an extension that has the value "DomainController", encoded as a [BMPstring](https://docs.microsoft.com/windows/win32/seccertenroll/about-bmpstring). If you are using Windows Server Enterprise Certificate Authority, this extension is already included in the domain controller certificate template.
-* The domain controller certificate must be installed in the local computer's certificate store.
+* The domain controller certificate must be installed in the local computer's certificate store. See [Configure Hybrid Windows Hello for Business: Public Key Infrastructure](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-pki) for details.
 
- 
 
 > [!IMPORTANT]
 > For Azure AD joined device to authenticate to and use on-premises resources, ensure you:

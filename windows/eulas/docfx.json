@@ -37,7 +37,16 @@
     "globalMetadata": {
       "breadcrumb_path": "/windows/eulas/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
     },
     "fileMetadata": {},
     "template": [],

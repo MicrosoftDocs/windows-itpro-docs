@@ -377,8 +377,9 @@
 ###### [Download or collect file](microsoft-defender-atp/respond-file-alerts.md#download-or-collect-file)
 ###### [Deep analysis](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
 
-#### [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
-##### [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
+#### [Visit the Action center to see remediation actions](microsoft-defender-atp/auto-investigation-action-center.md)
+##### [View and approve pending actions](microsoft-defender-atp/manage-auto-investigation.md)
+##### [Details and results of an automated investigation](microsoft-defender-atp/autoir-investigation-results.md)
 
 #### [Investigate entities using Live response]()
 ##### [Investigate entities on devices](microsoft-defender-atp/live-response.md)
@@ -535,7 +536,8 @@
 ####### [Alert methods and properties](microsoft-defender-atp/alerts.md)
 ####### [List alerts](microsoft-defender-atp/get-alerts.md)
 ####### [Create alert](microsoft-defender-atp/create-alert-by-reference.md)
-####### [Update Alert](microsoft-defender-atp/update-alert.md)
+####### [Update alert](microsoft-defender-atp/update-alert.md)
+####### [Batch update alert](microsoft-defender-atp/batch-update-alerts.md)
 ####### [Get alert information by ID](microsoft-defender-atp/get-alert-info-by-id.md)
 ####### [Get alert related domains information](microsoft-defender-atp/get-alert-related-domain-info.md)
 ####### [Get alert related file information](microsoft-defender-atp/get-alert-related-files-info.md)
