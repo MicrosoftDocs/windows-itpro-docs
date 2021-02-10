@@ -57,11 +57,8 @@ You can disable the automatic exclusion lists with Group Policy, PowerShell cmdl
 ### Use Group Policy to disable the auto-exclusions list on Windows Server 2016 and Windows Server 2019
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Right-click the Group Policy Object you want to configure, and then click **Edit**.
-
 2. In the **Group Policy Management Editor** go to **Computer configuration**, and then click **Administrative templates**.
-
 3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Exclusions**.
-
 4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then click **OK**. 
 
 ### Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016 and 2019
@@ -72,9 +69,10 @@ Use the following cmdlets:
 Set-MpPreference -DisableAutoExclusions $true
 ```
 
-[Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md).
+To learn more, see the following resources:
 
-[Use PowerShell with Microsoft Defender Antivirus](https://docs.microsoft.com/powershell/module/defender/).
+- [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md).
+- [Use PowerShell with Microsoft Defender Antivirus](https://docs.microsoft.com/powershell/module/defender/).
 
 ### Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016 and Windows Server 2019
 
@@ -101,51 +99,36 @@ This section lists the default exclusions for all Windows Server 2016 and 2019 r
 #### Windows "temp.edb" files
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
-
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
 
 #### Windows Update files or Automatic Update files
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
-
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`
-
 - `%windir%\SoftwareDistribution\Datastore\*\edb\*.log`
-
 - `%windir%\SoftwareDistribution\Datastore\*\Edb\*.jrs`
-
 - `%windir%\SoftwareDistribution\Datastore\*\Res\*.log`
 
 #### Windows Security files
 
 - `%windir%\Security\database\*.chk`
-
 - `%windir%\Security\database\*.edb`
-
 - `%windir%\Security\database\*.jrs`
-
 - `%windir%\Security\database\*.log`
-
 - `%windir%\Security\database\*.sdb`
 
 #### Group Policy files
 
 - `%allusersprofile%\NTUser.pol`
-
 - `%SystemRoot%\System32\GroupPolicy\Machine\registry.pol`
-
 - `%SystemRoot%\System32\GroupPolicy\User\registry.pol`
 
 #### WINS files
 
 - `%systemroot%\System32\Wins\*\*.chk`
-
 - `%systemroot%\System32\Wins\*\*.log`
-
 - `%systemroot%\System32\Wins\*\*.mdb`
-
 - `%systemroot%\System32\LogFiles\`
-
 - `%systemroot%\SysWow64\LogFiles\`
 
 #### File Replication Service (FRS) exclusions
@@ -153,9 +136,7 @@ This section lists the default exclusions for all Windows Server 2016 and 2019 r
 - Files in the File Replication Service (FRS) working folder. The FRS working folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`
 
   - `%windir%\Ntfrs\jet\sys\*\edb.chk`
-
   - `%windir%\Ntfrs\jet\*\Ntfrs.jdb`
-
   - `%windir%\Ntfrs\jet\log\*\*.log`
 
 - FRS Database log files. The FRS Database log file folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ntfrs\Parameters\DB Log File Directory`
@@ -176,33 +157,21 @@ This section lists the default exclusions for all Windows Server 2016 and 2019 r
   > For custom locations, see [Opt out of automatic exclusions](#opt-out-of-automatic-exclusions).
 
   - `%systemdrive%\System Volume Information\DFSR\$db_normal$`
-
   - `%systemdrive%\System Volume Information\DFSR\FileIDTable_*`
-
   - `%systemdrive%\System Volume Information\DFSR\SimilarityTable_*`
-
   - `%systemdrive%\System Volume Information\DFSR\*.XML`
-
   - `%systemdrive%\System Volume Information\DFSR\$db_dirty$`
-
   - `%systemdrive%\System Volume Information\DFSR\$db_clean$`
-
   - `%systemdrive%\System Volume Information\DFSR\$db_lostl$`
-
   - `%systemdrive%\System Volume Information\DFSR\Dfsr.db`
-
   - `%systemdrive%\System Volume Information\DFSR\*.frx`
-
   - `%systemdrive%\System Volume Information\DFSR\*.log`
-
   - `%systemdrive%\System Volume Information\DFSR\Fsr*.jrs`
-
   - `%systemdrive%\System Volume Information\DFSR\Tmp.edb`
 
 #### Process exclusions
 
 - `%systemroot%\System32\dfsr.exe`
-
 - `%systemroot%\System32\dfsrs.exe`
 
 #### Hyper-V exclusions
@@ -216,19 +185,12 @@ The following table lists the file type exclusions, folder exclusions, and proce
 #### SYSVOL files
 
 - `%systemroot%\Sysvol\Domain\Policies*\ADM*.adm`
-
 - `%systemroot%\Sysvol\Domain\Policies\PolicyDefinition*.admx`
-
 - `%systemroot%\Sysvol\Domain\Policies\PolicyDefinition*.adml`
-
 - `%systemroot%\Sysvol\Domain\Policies\Registry.pol`
-
 - `%systemroot%\Sysvol\Domain\Policies*\Machine\Applications*.aas`
-
 - `%systemroot%\Sysvol\Domain\Policies*\Machine\Microsoft\Windows NT\SecEdit*.inf`
-
 - `%systemroot%\Sysvol\Domain\Policies*\Machine\Microsoft\Windows NT\Audit*.csv`
-
 - `%systemroot%\Sysvol\Domain\Policies*\Machine\Scripts\Scripts.ini`
 
 ### Active Directory exclusions
@@ -240,7 +202,6 @@ This section lists the exclusions that are delivered automatically when you inst
 The database files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Database File`
 
 - `%windir%\Ntds\ntds.dit`
-
 - `%windir%\Ntds\ntds.pat`
 
 #### The AD DS transaction log files
@@ -248,13 +209,9 @@ The database files are specified in the registry key `HKEY_LOCAL_MACHINE\System\
 The transaction log files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path`
 
 - `%windir%\Ntds\EDB*.log`
-
 - `%windir%\Ntds\Res*.log`
-
 - `%windir%\Ntds\Edb*.jrs`
-
 - `%windir%\Ntds\Ntds*.pat`
-
 - `%windir%\Ntds\TEMP.edb`
 
 #### The NTDS working folder
@@ -262,13 +219,11 @@ The transaction log files are specified in the registry key `HKEY_LOCAL_MACHINE\
 This folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory`
 
 - `%windir%\Ntds\Temp.edb`
-
 - `%windir%\Ntds\Edb.chk`
 
 #### Process exclusions for AD DS and AD DS-related support files
 
 - `%systemroot%\System32\ntfrs.exe`
-
 - `%systemroot%\System32\lsass.exe`
 
 ### DHCP Server exclusions
@@ -276,13 +231,9 @@ This folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentC
 This section lists the exclusions that are delivered automatically when you install the DHCP Server role. The DHCP Server file locations are specified by the *DatabasePath*, *DhcpLogFilePath*, and *BackupDatabasePath* parameters in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
 
 - `%systemroot%\System32\DHCP\*\*.mdb`
-
 - `%systemroot%\System32\DHCP\*\*.pat`
-
 - `%systemroot%\System32\DHCP\*\*.log`
-
 - `%systemroot%\System32\DHCP\*\*.chk`
-
 - `%systemroot%\System32\DHCP\*\*.edb`
 
 ### DNS Server exclusions
@@ -292,11 +243,8 @@ This section lists the file and folder exclusions and the process exclusions tha
 #### File and folder exclusions for the DNS Server role
 
 - `%systemroot%\System32\Dns\*\*.log`
-
 - `%systemroot%\System32\Dns\*\*.dns`
-
 - `%systemroot%\System32\Dns\*\*.scc`
-
 - `%systemroot%\System32\Dns\*\BOOT`
 
 #### Process exclusions for the DNS Server role
@@ -308,9 +256,7 @@ This section lists the file and folder exclusions and the process exclusions tha
 This section lists the file and folder exclusions that are delivered automatically when you install the File and Storage Services role. The exclusions listed below do not include exclusions for the Clustering role.
 
 - `%SystemDrive%\ClusterStorage`
-
 - `%clusterserviceaccount%\Local Settings\Temp`
-
 - `%SystemDrive%\mscs`
 
 ### Print Server exclusions
@@ -320,7 +266,6 @@ This section lists the file type exclusions, folder exclusions, and the process 
 #### File type exclusions
 
 - `*.shd`
-
 - `*.spl`
 
 #### Folder exclusions
@@ -340,32 +285,28 @@ This section lists the folder exclusions and the process exclusions that are del
 #### Folder exclusions
 
 - `%SystemRoot%\IIS Temporary Compressed Files`
-
 - `%SystemDrive%\inetpub\temp\IIS Temporary Compressed Files`
-
 - `%SystemDrive%\inetpub\temp\ASP Compiled Templates`
-
 - `%systemDrive%\inetpub\logs`
-
 - `%systemDrive%\inetpub\wwwroot`
 
 #### Process exclusions
 
 - `%SystemRoot%\system32\inetsrv\w3wp.exe`
-
 - `%SystemRoot%\SysWOW64\inetsrv\w3wp.exe`
-
 - `%SystemDrive%\PHP5433\php-cgi.exe`
 
 #### Turning off scanning of files in the Sysvol\Sysvol folder or the SYSVOL_DFSR\Sysvol folder
 
 The current location of the `Sysvol\Sysvol` or `SYSVOL_DFSR\Sysvol` folder and all the subfolders is the file system reparse target of the replica set root. The `Sysvol\Sysvol` and `SYSVOL_DFSR\Sysvol` folders use the following locations by default:
+
 - `%systemroot%\Sysvol\Domain`
 - `%systemroot%\Sysvol_DFSR\Domain`
 
 The path to the currently active `SYSVOL` is referenced by the NETLOGON share and can be determined by the SysVol value name in the following subkey: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
 
 Exclude the following files from this folder and all its subfolders:
+
 - `*.adm`
 - `*.admx`
 - `*.adml`
@@ -382,11 +323,8 @@ Exclude the following files from this folder and all its subfolders:
 This section lists the folder exclusions that are delivered automatically when you install the Windows Server Update Services (WSUS) role. The WSUS folder is specified in the registry key `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
 
 - `%systemroot%\WSUS\WSUSContent`
-
 - `%systemroot%\WSUS\UpdateServicesDBFiles`
-
 - `%systemroot%\SoftwareDistribution\Datastore`
-
 - `%systemroot%\SoftwareDistribution\Download`
 
 ## See also
