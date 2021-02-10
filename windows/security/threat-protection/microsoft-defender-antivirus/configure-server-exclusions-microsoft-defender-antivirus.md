@@ -193,6 +193,11 @@ The following table lists the file type exclusions, folder exclusions, and proce
 - `%systemroot%\Sysvol\Domain\Policies*\Machine\Microsoft\Windows NT\Audit*.csv`
 - `%systemroot%\Sysvol\Domain\Policies*\Machine\Scripts\Scripts.ini`
 
+Older systems might also have these exclusions"
+
+- `%systemroot%\Sysvol\Domain*.ins`
+- `%systemroot%\Sysvol\Domain\Oscfilter.ini`
+
 ### Active Directory exclusions
 
 This section lists the exclusions that are delivered automatically when you install Active Directory Domain Services.
