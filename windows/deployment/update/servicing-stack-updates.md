@@ -29,8 +29,6 @@ Servicing stack updates provide fixes to the servicing stack, the component that
   
 Servicing stack updates improve the reliability of the update process to mitigate potential issues while installing the latest quality updates and feature updates. If you don't install the latest servicing stack update, there's a risk that your device can't be updated with the latest Microsoft security fixes.
 
-For information about some changes to servicing stack updates, see [Simplifing Deployment of Servicing Stack Updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-on-premises-deployment-of-servicing-stack-updates/ba-p/1646039) on the Windows IT Pro blog.
-
 ## When are they released?
 
 Servicing stack update are released depending on new issues or vulnerabilities. In rare occasions a servicing stack update may need to be released on demand to address an issue impacting systems installing the monthly security update. Starting in November 2018 new servicing stack updates will be classified as "Security" with a severity rating of "Critical."
