@@ -82,7 +82,7 @@ First, create the WMI filter and configure it to look for a specified version (o
     select * from Win32_OperatingSystem where Version like "10.%" and ProductType="1"
     ```
 
-    Specific versions of Windows 10 can be targeted by including the *major build version* of interest in the query. The following query returns **true** for all devices running Windows 10 20H2 (which has a *major build version* of `19042`), and returns **false** for any server operating system or any other client operating system. Additional information about Windows 10 build versions can be found at [Windows 10 relase information](https://docs.microsoft.com/en-us/windows/release-health/release-information).
+    Specific versions of Windows 10 can be targeted by including the *major build version* in the query. The following query returns **true** for all devices running Windows 10 20H2 (which has a *major build version* of `19042`), and returns **false** for any server operating system or any other client operating system. Additional information about Windows 10 build versions can be found at [Windows 10 relase information](https://docs.microsoft.com/windows/release-health/release-information).
 
     ```syntax
     select * from Win32_OperatingSystem where Version like "10.0.19042" and ProductType="1"
