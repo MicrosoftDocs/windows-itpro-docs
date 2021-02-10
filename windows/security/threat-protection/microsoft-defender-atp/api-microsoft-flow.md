@@ -34,7 +34,7 @@ Microsoft Defender API has an official Flow Connector with many capabilities.
 ![Image of edit credentials](images/api-flow-0.png)
 
 > [!NOTE]
-> More details about premium connectors licensing prerequisites [here](https://docs.microsoft.com/en-us/power-automate/triggers-introduction#licensing-for-premium-connectors)
+> For more details about premium connectors licensing prerequisites, see [Licensing for premium connectors](https://docs.microsoft.com/power-automate/triggers-introduction#licensing-for-premium-connectors).
 
 ## Usage example
 
