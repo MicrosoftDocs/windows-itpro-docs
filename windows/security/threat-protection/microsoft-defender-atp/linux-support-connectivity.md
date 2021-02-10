@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux
-ms.reviewer:
+ms.reviewer: 
 description: Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux
 keywords: microsoft, defender, atp, linux, cloud, connectivity, communication
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,15 +15,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint for Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 
@@ -37,7 +37,28 @@ To test if Defender for Endpoint for Linux can communicate to the cloud with the
 mdatp connectivity test
 ```
 
+expected output:
+
+```output
+Testing connection with https://cdn.x.cp.wd.microsoft.com/ping ... [OK]
+Testing connection with https://eu-cdn.x.cp.wd.microsoft.com/ping ... [OK]
+Testing connection with https://wu-cdn.x.cp.wd.microsoft.com/ping ... [OK]
+Testing connection with https://x.cp.wd.microsoft.com/api/report ... [OK]
+Testing connection with https://winatp-gw-cus.microsoft.com/test ... [OK]
+Testing connection with https://winatp-gw-eus.microsoft.com/test ... [OK]
+Testing connection with https://winatp-gw-weu.microsoft.com/test ... [OK]
+Testing connection with https://winatp-gw-neu.microsoft.com/test ... [OK]
+Testing connection with https://winatp-gw-ukw.microsoft.com/test ... [OK]
+Testing connection with https://winatp-gw-uks.microsoft.com/test ... [OK]
+Testing connection with https://eu-v20.events.data.microsoft.com/ping ... [OK]
+Testing connection with https://us-v20.events.data.microsoft.com/ping ... [OK]
+Testing connection with https://uk-v20.events.data.microsoft.com/ping ... [OK]
+Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
+```
+
 If the connectivity test fails, check if the device has Internet access and if [any of the endpoints required by the product](microsoft-defender-atp-linux.md#network-connections) are blocked by a proxy or firewall.
+
+Failures with curl error 35 or 60, indicate certificate pinning rejection. Please check if the connection is under SSL or HTTPS inspection. If so, add Microsoft Defender for Endpoint to the allow list.
 
 ## Troubleshooting steps for environments without proxy or with transparent proxy
 

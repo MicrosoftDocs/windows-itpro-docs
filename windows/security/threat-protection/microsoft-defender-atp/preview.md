@@ -4,7 +4,7 @@ description: Learn how to access Microsoft Defender Advanced Threat Protection p
 keywords: preview, preview experience, Microsoft Defender Advanced Threat Protection, features, updates
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Microsoft Defender for Endpoint preview features
@@ -27,7 +28,7 @@ ms.topic: conceptual
 >The preview versions are provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 The Defender for Endpoint service is constantly being updated to include new feature enhancements and capabilities.
 

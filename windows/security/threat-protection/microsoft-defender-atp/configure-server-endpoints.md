@@ -4,7 +4,7 @@ description: Onboard Windows servers so that they can send sensor data to the Mi
 keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Windows ATP servers, onboard Microsoft Defender Advanced Threat Protection servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Onboard Windows servers to the Microsoft Defender for Endpoint service
@@ -30,7 +31,7 @@ ms.topic: article
 - Windows Server (SAC) version 1803 and later
 - Windows Server 2019 and later
 - Windows Server 2019 core edition
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
@@ -41,6 +42,7 @@ For a practical guidance on what needs to be in place for licensing and infrastr
 
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines](https://docs.microsoft.com/windows/device-security/windows-security-baselines).
 
+<br>
 
 ## Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows Server 2016
 
@@ -48,20 +50,20 @@ You can onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows 
 
 - **Option 1**: [Onboard by installing and configuring Microsoft Monitoring Agent (MMA)](#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)
 - **Option 2**: [Onboard through Azure Security Center](#option-2-onboard-windows-servers-through-azure-security-center)
-- **Option 3**: [Onboard through Microsoft Endpoint Configuration Manager version 2002 and later](#option-3-onboard-windows-servers-through-microsoft-endpoint-configuration-manager-version-2002-and-later)
+- **Option 3**: [Onboard through Microsoft Endpoint Manager version 2002 and later](#option-3-onboard-windows-servers-through-microsoft-endpoint-manager-version-2002-and-later)
 
 
 After completing the onboarding steps using any of the provided options, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
 
 > [!NOTE]
-> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Defender Security Center (Option 1), or an Azure Security Center Standard license is required, per node, in order to onboard a Windows server through Azure Security Center (Option 2), see [Supported features available in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-services).
+> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1), or through Microsoft Endpoint Manager (Option 3). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Security Center (Option 2), see [Supported features available in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-services).
 
 
 ### Option 1: Onboard by installing and configuring Microsoft Monitoring Agent (MMA)
 You'll need to install and configure MMA for Windows servers to report sensor data to Defender for Endpoint. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
 
-If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), attach the Microsoft Monitoring Agent (MMA) to report to your Defender for Endpoint workspace through Multihoming support.
+If you're already using System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), attach the Microsoft Monitoring Agent (MMA) to report to your Defender for Endpoint workspace through Multihoming support.
 
 In general, you'll need to take the following steps:
 1. Fulfill the onboarding requirements outlined in **Before you begin** section.
@@ -97,10 +99,13 @@ Perform the following steps to fulfill the onboarding requirements:
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
 
 2. Using the Workspace ID and Workspace key obtained in the previous procedure, choose any of the following installation methods to install the agent on the Windows server:
-    - [Manually install the agent using setup](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-setup) <br>
+    - [Manually install the agent using setup](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard). <br>
     On the **Agent Setup Options** page, choose **Connect the agent to Azure Log Analytics (OMS)**.
-    - [Install the agent using the command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#add-a-workspace-using-a-script).
+    - [Install the agent using the command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
+    - [Configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
 
+> [!NOTE]
+> If you are a [US Government customer](gov.md), under "Azure Cloud" you'll need to choose "Azure US Government" if using the setup wizard, or if using a command line or a script - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
 
 
 <span id="server-proxy"/>
@@ -133,11 +138,13 @@ After completing the onboarding steps, you'll need to [Configure and update Syst
 > - Once configured, the appropriate cloud management pack is deployed on the machine and the sensor process (MsSenseS.exe) will be deployed and started. 
 > - This is also required if the server is configured to use an OMS Gateway server as proxy.
 
-### Option 3: Onboard Windows servers through Microsoft Endpoint Configuration Manager version 2002 and later
-You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsoft Endpoint Configuration Manager version 2002 and later. For more information, see [Microsoft Defender for Endpoint
- in Microsoft Endpoint Configuration Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
+### Option 3: Onboard Windows servers through Microsoft Endpoint Manager version 2002 and later
+You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsoft Endpoint Manager version 2002 and later. For more information, see [Microsoft Defender for Endpoint
+ in Microsoft Endpoint Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
 
 After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
+
+<br>
 
 ## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
 You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windows Server 2019 Core edition by using the following deployment methods:
@@ -149,7 +156,7 @@ You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windo
 - [VDI onboarding scripts for non-persistent devices](configure-endpoints-vdi.md)
 
 > [!NOTE]
-> - The Onboarding package for Windows Server 2019 through Microsoft Endpoint Configuration Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
+> - The Onboarding package for Windows Server 2019 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 > - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.
 
 Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
@@ -178,12 +185,14 @@ Support for Windows Server provides deeper insight into server activities, cover
 
    ```sc.exe query Windefend```
 
-    If the result is 'The specified service does not exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
+    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
     
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus).
 
+<br>
+
 ## Integration with Azure Security Center
-Defender for Endpoint can integrate with Azure Security Center to provide a comprehensive Windows server protection solution. With this integration, Azure Security Center can leverage the power of Defender for Endpoint to provide improved threat detection for Windows Servers.
+Defender for Endpoint can integrate with Azure Security Center to provide a comprehensive Windows server protection solution. With this integration, Azure Security Center can use the power of Defender for Endpoint to provide improved threat detection for Windows Servers.
 
 The following capabilities are included in this integration:
 - Automated onboarding - Defender for Endpoint sensor is automatically enabled on Windows Servers that are onboarded to Azure Security Center. For more information on Azure Security Center onboarding, see [Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
@@ -201,6 +210,7 @@ Data collected by Defender for Endpoint is stored in the geo-location of the ten
 > - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant. <br>
 Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
+<br>
 
 ## Configure and update System Center Endpoint Protection clients
 
@@ -211,7 +221,7 @@ The following steps are required to enable this integration:
 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting.
 
-
+<br>
 
 ## Offboard Windows servers
 You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
@@ -263,6 +273,9 @@ To offboard the Windows server, you can use either of the following methods:
     $AgentCfg.ReloadConfiguration()
 
     ```
+
+<br>
+
 ## Related topics
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Onboard non-Windows devices](configure-endpoints-non-windows.md)

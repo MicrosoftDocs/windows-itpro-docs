@@ -3,7 +3,7 @@ title: Indicator resource type
 description: Specify the entity details and define the expiration of the indicator using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: apis, supported apis, get, TiIndicator, Indicator, recent
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Indicator resource type
@@ -21,7 +22,7 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -35,7 +36,8 @@ ms.topic: article
 Method|Return Type |Description
 :---|:---|:---
 [List Indicators](get-ti-indicators-collection.md) | [Indicator](ti-indicator.md) Collection | List [Indicator](ti-indicator.md) entities.
-[Submit Indicator](post-ti-indicator.md) | [Indicator](ti-indicator.md) | Submits [Indicator](ti-indicator.md) entity.
+[Submit Indicator](post-ti-indicator.md) | [Indicator](ti-indicator.md) | Submit or update [Indicator](ti-indicator.md) entity.
+[Import Indicators](import-ti-indicators.md) | [Indicator](ti-indicator.md) Collection | Submit or update [Indicators](ti-indicator.md) entities.
 [Delete Indicator](delete-ti-indicator-by-id.md) | No Content | Deletes [Indicator](ti-indicator.md) entity.
 
 

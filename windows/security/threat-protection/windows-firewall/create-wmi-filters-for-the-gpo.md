@@ -4,7 +4,7 @@ description: Learn how to use WMI filters on a GPO to make sure that each GPO fo
 ms.assetid: b1a6d93d-a3c8-4e61-a388-4a3323f0e74e
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/25/2017
+ms.technology: mde
 ---
 
 # Create WMI Filters for the GPO

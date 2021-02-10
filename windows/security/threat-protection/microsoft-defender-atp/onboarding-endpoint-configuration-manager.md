@@ -1,9 +1,9 @@
 ---
-title: Onboarding using Microsoft Endpoint Configuration Manager 
-description: Learn how to onboard to Microsoft Defender ATP using Microsoft Endpoint Configuration Manager
-keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction
+title: Onboarding using Microsoft Endpoint Configuration Manager
+description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Endpoint Configuration Manager
+keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,20 +13,35 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario 
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
 ms.topic: article
+ms.technology: mde
 ---
 
-# Onboarding using Microsoft Endpoint Configuration Manager 
+# Onboarding using Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-This article is part of the Deployment guide and acts as an example onboarding method that guides users in:
+
+
+This article is part of the Deployment guide and acts as an example onboarding method. 
+
+In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the co-management architecture. 
+
+![Image of cloud-native architecture](images/co-management-architecture.png)
+*Diagram of environment architectures*
+
+
+While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
+
+
+
+This topic guides users in:
 - Step 1: Onboarding Windows devices to the service 
 - Step 2: Configuring Defender for Endpoint capabilities
 
@@ -37,9 +52,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 >[!NOTE]
 >Only Windows devices are covered in this example deployment. 
 
-While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. 
 
-For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
 
 ## Step 1: Onboard Windows devices using Microsoft Endpoint Configuration Manager

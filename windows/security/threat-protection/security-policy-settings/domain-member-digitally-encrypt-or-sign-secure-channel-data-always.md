@@ -4,7 +4,7 @@ description: Best practices, location, values, and security considerations for t
 ms.assetid: 4480c7cb-adca-4f29-b4b8-06eb68d272bf
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Domain member: Digitally encrypt or sign secure channel data (always)

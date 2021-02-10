@@ -4,7 +4,7 @@ description: Turn on advanced features such as block file in Microsoft Defender 
 keywords: advanced features, settings, block file, automated investigation, auto-resolve, skype, azure atp, office 365, azure information protection, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -24,7 +25,7 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
@@ -41,6 +42,12 @@ Turn on this feature to take advantage of the automated investigation and remedi
 Turn on this feature so that users with the appropriate permissions can start a live response session on devices.
 
 For more information about role assignments, see [Create and manage roles](user-roles.md).
+
+## Live response for servers
+Turn on this feature so that users with the appropriate permissions can start a live response session on servers.
+
+For more information about role assignments, see [Create and manage roles](user-roles.md).
+
 
 ## Live response unsigned script execution
 

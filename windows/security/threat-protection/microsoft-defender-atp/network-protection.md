@@ -3,7 +3,7 @@ title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 keywords: Network protection, exploits, malicious website, ip, domain, domains
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -11,11 +11,10 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.date: 04/30/2019
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
-
+ms.technology: mde
 ---
 
 # Protect your network
@@ -25,7 +24,7 @@ ms.custom: asr
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet.
 
@@ -33,7 +32,7 @@ Network protection expands the scope of [Microsoft Defender SmartScreen](../micr
 
 Network protection is supported beginning with Windows 10, version 1709. 
 
-For more details about how to enable network protection, see [Enable network protection](enable-network-protection.md). Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
+For more information about how to enable network protection, see [Enable network protection](enable-network-protection.md). Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 
 > [!TIP]
 > You can visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
@@ -46,13 +45,13 @@ You can also use [audit mode](audit-windows-defender.md) to evaluate how Network
 
 ## Requirements
 
-Network protection requires Windows 10 Pro, Enterprise E3, E5 and Microsoft Defender AV real-time protection.
+Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender Antivirus real-time protection.
 
-Windows 10 version | Microsoft Defender Antivirus
--|-
-Windows 10 version 1709 or later | [Microsoft Defender AV real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled
+| Windows 10 version | Microsoft Defender Antivirus |
+|:---|:---|
+| Windows 10 version 1709 or later | [Microsoft Defender AV real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled |
 
-After you have enabled the services, you may need to configure your network or firewall to allow the connections between the services and your endpoints.  
+After you have enabled the services, you might need to configure your network or firewall to allow the connections between the services and your endpoints.  
 
 - .smartscreen.microsoft.com
 - .smartscreen-prod.microsoft.com
@@ -76,18 +75,18 @@ You can review the Windows event log to see events that are created when network
 
 1. [Copy the XML directly](event-views.md).
 
-2. Click **OK**.
+2. Select **OK**.
 
 3. This will create a custom view that filters to only show the following events related to network protection:
 
-   Event ID | Description
-   -|-
-   5007 | Event when settings are changed
-   1125 | Event when network protection fires in audit mode
-   1126 | Event when network protection fires in block mode
+   | Event ID | Description |
+   |:---|:---|
+   | 5007 | Event when settings are changed |
+   | 1125 | Event when network protection fires in audit mode |
+   | 1126 | Event when network protection fires in block mode |
 
 ## Related articles
 
-- [Evaluate network protection](evaluate-network-protection.md) | Undertake a quick scenario that demonstrate how the feature works, and what events would typically be created.
+- [Evaluate network protection](evaluate-network-protection.md) | Undertake a quick scenario that demonstrates how the feature works, and what events would typically be created.
 
 - [Enable network protection](enable-network-protection.md) | Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.

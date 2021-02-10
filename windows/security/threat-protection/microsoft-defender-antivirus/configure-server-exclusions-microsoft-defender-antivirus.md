@@ -5,7 +5,7 @@ manager: dansimp
 description: Windows Servers 2016 and 2019 include automatic exclusions, based on server role. You can also add custom exclusions.
 keywords: exclusions, server, auto-exclusions, automatic, custom, scans, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,11 +13,16 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
+ms.technology: mde
 ---
 
 # Configure Microsoft Defender Antivirus exclusions on Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 Microsoft Defender Antivirus on Windows Server 2016 and 2019 automatically enrolls you in certain exclusions, as defined by your specified server role. See the [list of automatic exclusions](#list-of-automatic-exclusions) (in this article). These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions).
@@ -200,43 +205,11 @@ This section lists the default exclusions for all Windows Server 2016 and 2019 r
 
 #### Hyper-V exclusions
 
-This section lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role
+The following table lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role.
 
-- File type exclusions:
-
-  - `*.vhd`
-
-  - `*.vhdx`
-
-  - `*.avhd`
-
-  - `*.avhdx`
-
-  - `*.vsv`
-
-  - `*.iso`
-
-  - `*.rct`
-
-  - `*.vmcx`
-
-  - `*.vmrs`
-
-- Folder exclusions:
-
-  - `%ProgramData%\Microsoft\Windows\Hyper-V`
-
-  - `%ProgramFiles%\Hyper-V`
-
-  - `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots`
-
-  - `%Public%\Documents\Hyper-V\Virtual Hard Disks`
-
-- Process exclusions:
-
-  - `%systemroot%\System32\Vmms.exe`
-
-  - `%systemroot%\System32\Vmwp.exe`
+|File type exclusions |Folder exclusions  | Process exclusions |
+|:--|:--|:--|
+| `*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs` | `%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks` | `%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe` |
 
 #### SYSVOL files
 

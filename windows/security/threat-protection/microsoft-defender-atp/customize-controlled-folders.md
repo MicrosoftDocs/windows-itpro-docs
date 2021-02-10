@@ -1,9 +1,9 @@
 ---
 title: Customize controlled folder access
-description: Add additional folders that should be protected by controlled folder access, or allow apps that are incorrectly blocking changes to important files.
+description: Add other folders that should be protected by controlled folder access, or allow apps that are incorrectly blocking changes to important files.
 keywords: Controlled folder access, windows 10, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,7 +12,8 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 12/16/2020
+ms.date: 01/06/2021
+ms.technology: mde
 ---
 
 # Customize controlled folder access
@@ -22,7 +23,7 @@ ms.date: 12/16/2020
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is supported on Windows Server 2019 and Windows 10 clients.
 
@@ -38,7 +39,7 @@ This article describes how to customize controlled folder access capabilities, a
 
 ## Protect additional folders
 
-Controlled folder access applies to a number of system folders and default locations, including folders such as **Documents**, **Pictures**, and **Movies**. You can add additional folders to be protected, but you cannot remove the default folders in the default list.
+Controlled folder access applies to many system folders and default locations, including folders such as **Documents**, **Pictures**, and **Movies**. You can add additional folders to be protected, but you cannot remove the default folders in the default list.
 
 Adding other folders to controlled folder access can be helpful for cases when you don't store files in the default Windows libraries, or you've changed the default location of your libraries.
 
@@ -72,7 +73,7 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
 
 ### Use PowerShell to protect additional folders
 
-1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
+1. Type **PowerShell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
 
 2. Enter the following cmdlet:
 
@@ -125,7 +126,7 @@ An allowed application or service only has write access to a controlled folder a
 
 ### Use PowerShell to allow specific apps
 
-1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
+1. Type **PowerShell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
 2. Enter the following cmdlet:
 
     ```PowerShell

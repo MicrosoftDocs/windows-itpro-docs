@@ -6,7 +6,7 @@ description: Use tamper protection to prevent malicious apps from changing impor
 keywords: malware, defender, antivirus, tamper protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,7 +14,8 @@ audience: ITPro
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/19/2020
+ms.date: 01/07/2021
+ms.technology: mde
 ---
 
 # Protect security settings with tamper protection
@@ -24,8 +25,12 @@ ms.date: 11/19/2020
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+Tamper protection is available on devices running the following versions of Windows:   
+ 
 - Windows 10
-- Windows Server 2019 (if using tenant attach with [Configuration Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006))
+- Windows Server 2016 and 2019 (if using tenant attach with [Configuration Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006))
 
 ## Overview
 
@@ -74,7 +79,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to turn tamper protection on or off. You must have appropriate admin permissions on your machine to do change security settings, such as tamper protection.
 
-1. Click **Start**, and start typing *Defender*. In the search results, select **Windows Security**.
+1. Click **Start**, and start typing *Security*. In the search results, select **Windows Security**.
 
 2. Select **Virus & threat protection** > **Virus & threat protection settings**.
 
@@ -90,10 +95,10 @@ If you are part of your organization's security team, and your subscription incl
 
 You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task.
 
-1. Make sure your organization meets all of the following requirements to manage tamper protection using Intune:
+1. Make sure your organization meets all of the following requirements to use Intune to manage tamper protection:
 
     - Your organization uses [Intune to manage devices](https://docs.microsoft.com/intune/fundamentals/what-is-device-management). ([Intune licenses](https://docs.microsoft.com/intune/fundamentals/licenses) are required; Intune is included in Microsoft 365 E5.)
-    - Your Windows machines must be running Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later. (For more information about releases, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).)
+    - Your Windows machines must be running Windows 10 OS [1709](https://docs.microsoft.com/windows/release-health/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-health/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019) or later. (For more information about releases, see [Windows 10 release information](https://docs.microsoft.com/windows/release-health/release-information).)
     - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above).
     - Your machines must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version 1.1.15500.X (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
 
@@ -101,15 +106,15 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
 3. Select **Devices** > **Configuration Profiles**.
 
-4. Create a profile as follows:
+4. Create a profile that includes the following settings:
 
-    - Platform: **Windows 10 and later**
+    - **Platform: Windows 10 and later**
 
-    - Profile type: **Endpoint protection**
+    - **Profile type: Endpoint protection**
 
-    - Category: **Microsoft Defender Security Center**
+    - **Category: Microsoft Defender Security Center**
 
-    - Tamper Protection: **Enabled**
+    - **Tamper Protection: Enabled**
 
     ![Turn tamper protection on with Intune](images/turnontamperprotect-MEM.png)
 
@@ -117,7 +122,7 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
 ### Are you using Windows OS 1709, 1803, or 1809?
 
-If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), or [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. In this case, you can use PowerShell to determine whether tamper protection is enabled.
+If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release-health/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-health/status-windows-10-1803), or [1809](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. In this case, you can use PowerShell to determine whether tamper protection is enabled.
 
 #### Use PowerShell to determine whether tamper protection is turned on
 
@@ -132,7 +137,7 @@ If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release
 > [!IMPORTANT]
 > The procedure can be used to extend tamper protection to devices running Windows 10 and Windows Server 2019. Make sure to review the prerequisites and other information in the resources mentioned in this procedure.
 
-If you're using [version 2006 of Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10 and Windows Server 2019 by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver your endpoint security configuration policies to your on-premises collections & devices.
+If you're using [version 2006 of Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10, Windows Server 2016, and Windows Server 2019 by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver your endpoint security configuration policies to your on-premises collections & devices.
 
 1. Set up tenant attach. See [Microsoft Endpoint Manager tenant attach: Device sync and device actions](https://docs.microsoft.com/mem/configmgr/tenant-attach/device-sync-actions).
 
@@ -181,7 +186,7 @@ To learn more about Threat & Vulnerability Management, see [Threat & Vulnerabili
 
 ### To which Windows OS versions is configuring tamper protection is applicable?
 
-Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), or later together with [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
+Windows 10 OS [1709](https://docs.microsoft.com/windows/release-health/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-health/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019), or later together with [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
 If you are using Configuration Manager, version 2006, with tenant attach, tamper protection can be extended to Windows Server 2019. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](https://docs.microsoft.com/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
@@ -209,7 +214,7 @@ Your regular group policy doesn’t apply to tamper protection, and changes to M
 
 ### For Microsoft Defender for Endpoint, is configuring tamper protection in Intune targeted to the entire organization only?
 
-Configuring tamper protection in Intune or Microsoft Endpoint Manager can be targeted to your entire organization as well as to specific devices and user groups.
+Configuring tamper protection in Intune or Microsoft Endpoint Manager can be targeted to your entire organization and to specific devices and user groups.
 
 ### Can I configure Tamper Protection in Microsoft Endpoint Configuration Manager?
 

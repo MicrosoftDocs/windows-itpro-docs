@@ -4,7 +4,7 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Windows ATP endpoints, configure Microsoft Defender Advanced Threat Protection endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
+ms.technology: mde
 ---
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) devices
@@ -26,8 +27,6 @@ ms.date: 04/16/2020
 **Applies to:**
 - Virtual desktop infrastructure (VDI) devices
 
->[!WARNING]
-> Microsoft Defender for Endpoint support for Windows Virtual Desktop multi-user scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However single session scenarios on Windows Virtual Desktop are fully supported.
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 

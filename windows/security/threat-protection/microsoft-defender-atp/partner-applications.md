@@ -1,11 +1,11 @@
 ---
-title: Partner applications in Microsoft Defender ATP   
+title: Partner applications in Microsoft Defender ATP
 ms.reviewer: 
 description: View supported partner applications to enhance the detection, investigation, and threat intelligence capabilities of the platform
 keywords: partners, applications, third-party, connections, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, better mobile
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Partner applications in Microsoft Defender for Endpoint 
@@ -24,7 +25,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 Defender for Endpoint supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.

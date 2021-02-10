@@ -113,6 +113,7 @@ The following methodology was used to derive these network endpoints:
 |||HTTP|*.windowsupdate.com|
 ||The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store. If you turn off traffic for these endpoints, the device will not be able to connect to Windows Update and Microsoft Update to help keep the device secure. Also, the device will not be able to acquire and update apps from the Store. These are dependent on also enabling "Device authentication" and "Microsoft Account" endpoints.|HTTPS|*.delivery.mp.microsoft.com|
 |||TLSv1.2|*.update.microsoft.com|
+||The following endpoint is used for compatibility database updates for Windows.|HTTP|adl.windows.com|
 ||The following endpoint is used for content regulation. If you turn off traffic for this endpoint, the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly.|TLSv1.2|tsfe.trafficshaping.dsp.mp.microsoft.com|
 |Xbox Live|The following endpoint is used for Xbox Live.||[Learn how to turn off traffic to all of the following endpoint(s).]( manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 |||TLSv1.2|dlassets-ssl.xboxlive.com|
