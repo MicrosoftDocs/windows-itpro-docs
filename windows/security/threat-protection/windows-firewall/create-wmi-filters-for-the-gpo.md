@@ -30,8 +30,6 @@ To make sure that each GPO associated with a group can only be applied to device
   - [To create a WMI filter that queries for a specified version of Windows](#to-create-a-wmi-filter-that-queries-for-a-specified-version-of-windows)
   - [To link a WMI filter to a GPO](#to-link-a-wmi-filter-to-a-gpo)
 
--   [To link a WMI filter to a GPO](#to-link-a-wmi-filter-to-a-gpo)
-
 **Administrative credentials**
 
 To complete these procedures, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs.
