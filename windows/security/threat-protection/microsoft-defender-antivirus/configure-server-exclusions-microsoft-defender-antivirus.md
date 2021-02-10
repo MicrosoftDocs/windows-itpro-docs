@@ -95,6 +95,9 @@ The following sections contain the exclusions that are delivered with automatic 
 
 This section lists the default exclusions for all Windows Server 2016 and 2019 roles.
 
+> [!NOTE]
+> The default locations could be different than what's listed in this article.
+
 #### Windows "temp.edb" files
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
@@ -212,15 +215,15 @@ The following table lists the file type exclusions, folder exclusions, and proce
 
 #### SYSVOL files
 
-- `%systemroot%\Sysvol\Domain\*.adm`
+- `%systemroot%\Sysvol\Domain\Policies*\ADM*.adm`
 
-- `%systemroot%\Sysvol\Domain\*.admx`
+- `%systemroot%\Sysvol\Domain\Policies\PolicyDefinition*.admx`
 
-- `%systemroot%\Sysvol\Domain\*.adml`
+- `%systemroot%\Sysvol\Domain\Policies\PolicyDefinition*.adml`
 
-- `%systemroot%\Sysvol\Domain\Registry.pol`
+- `%systemroot%\Sysvol\Domain\Policies\Registry.pol`
 
-- `%systemroot%\Sysvol\Domain\*.aas`
+- `%systemroot%\Sysvol\Domain\Policies*\Machine\Applications*.aas`
 
 - `%systemroot%\Sysvol\Domain\*.inf`
 
