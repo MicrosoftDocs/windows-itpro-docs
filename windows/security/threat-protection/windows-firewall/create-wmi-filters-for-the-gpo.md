@@ -26,7 +26,9 @@ ms.technology: mde
 
 To make sure that each GPO associated with a group can only be applied to devices running the correct version of Windows, use the Group Policy Management MMC snap-in to create and assign WMI filters to the GPO. Although you can create a separate membership group for each GPO, you would then have to manage the memberships of the different groups. Instead, use only a single membership group, and let WMI filters automatically ensure the correct GPO is applied to each device.
 
--   [To create a WMI filter that queries for a specified version of Windows](#to-create-a-wmi-filter-that-queries-for-a-specified-version-of-windows)
+- [Create WMI Filters for the GPO](#create-wmi-filters-for-the-gpo)
+  - [To create a WMI filter that queries for a specified version of Windows](#to-create-a-wmi-filter-that-queries-for-a-specified-version-of-windows)
+  - [To link a WMI filter to a GPO](#to-link-a-wmi-filter-to-a-gpo)
 
 -   [To link a WMI filter to a GPO](#to-link-a-wmi-filter-to-a-gpo)
 
@@ -78,6 +80,12 @@ First, create the WMI filter and configure it to look for a specified version (o
 
     ``` syntax
     select * from Win32_OperatingSystem where Version like "10.%" and ProductType="1"
+    ```
+
+    Specific versions of Windows 10 can be targeted by including the *major build version* in the query. The following query returns **true** for all devices running Windows 10 20H2 (which has a *major build version* of `19042`), and returns **false** for any server operating system or any other client operating system. Additional information about Windows 10 build versions can be found at [Windows 10 relase information](https://docs.microsoft.com/windows/release-health/release-information).
+
+    ```syntax
+    select * from Win32_OperatingSystem where Version like "10.0.19042" and ProductType="1"
     ```
 
     The following query returns **true** for any device running Windows Server 2016, except domain controllers:
