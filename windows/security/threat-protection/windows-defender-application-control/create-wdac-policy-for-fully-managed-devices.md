@@ -42,7 +42,7 @@ Alice previously created a policy for the organization's lightly-managed devices
 Alice identifies the following key factors to arrive at the "circle-of-trust" for Lamna's fully-managed devices:
 
 - All clients are running Windows 10 version 1903 or above;
-- All clients are managed by Microsoft Endpoint Manager (MEM) either with Configuration Manager (MEMCM) standalone or [Co-Managed](https://docs.microsoft.com/mem/configmgr/comanage/overview) with Intune;
+- All clients are managed by Microsoft Endpoint Manager (MEM) either with Configuration Manager (MEMCM) standalone or [co-managed](https://docs.microsoft.com/mem/configmgr/comanage/overview) with Intune;
 
 > [!NOTE]
 > Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager (SCCM) 
