@@ -184,19 +184,16 @@ The following table lists the file type exclusions, folder exclusions, and proce
 
 #### SYSVOL files
 
-- `%systemroot%\Sysvol\Domain\Policies*\ADM*.adm`
-- `%systemroot%\Sysvol\Domain\Policies\PolicyDefinition*.admx`
-- `%systemroot%\Sysvol\Domain\Policies\PolicyDefinition*.adml`
-- `%systemroot%\Sysvol\Domain\Policies\Registry.pol`
-- `%systemroot%\Sysvol\Domain\Policies*\Machine\Applications*.aas`
-- `%systemroot%\Sysvol\Domain\Policies*\Machine\Microsoft\Windows NT\SecEdit*.inf`
-- `%systemroot%\Sysvol\Domain\Policies*\Machine\Microsoft\Windows NT\Audit*.csv`
-- `%systemroot%\Sysvol\Domain\Policies*\Machine\Scripts\Scripts.ini`
-
-Older systems might also have these exclusions"
-
-- `%systemroot%\Sysvol\Domain*.ins`
+- `%systemroot%\Sysvol\Domain\*.adm`
+- `%systemroot%\Sysvol\Domain\*.admx`
+- `%systemroot%\Sysvol\Domain\*.adml`
+- `%systemroot%\Sysvol\Domain\Registry.pol`
+- `%systemroot%\Sysvol\Domain\*.aas`
+- `%systemroot%\Sysvol\Domain\*.inf`
+- `%systemroot%\Sysvol\Domain\*Scripts.ini`
+- `%systemroot%\Sysvol\Domain\*.ins`
 - `%systemroot%\Sysvol\Domain\Oscfilter.ini`
+
 
 ### Active Directory exclusions
 
