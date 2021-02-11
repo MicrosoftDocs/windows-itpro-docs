@@ -32,7 +32,7 @@ Deployment instructions are provided for the following scenarios:
 - VMs must be running Windows 10 Pro, version 1703 (also known as the Creator's Update) or later.
 - VMs must be Active Directory-joined or Azure Active Directory (AAD)-joined.
 - VMs must be generation 1.
-- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
+- VMs must be hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
 
 ## Activation
 
@@ -72,7 +72,7 @@ For examples of activation issues, see [Troubleshoot the user experience](https:
 6. Follow the instructions to use sysprep at [Steps to generalize a VHD](https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd) and then start the VM again.
 7. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps to use Windows Configuration Designer and inject an activation key. Otherwise, skip to step 20.
 8. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
-9. Open Windows Configuration Designer and click **Provison desktop services**.
+9. Open Windows Configuration Designer and click **Provision desktop services**.
 10. Under **Name**, type **Desktop AD Enrollment Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name.
         - Note: You can use a different project name, but this name is also used with dism.exe in a subsequent step.
 11. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
@@ -114,7 +114,7 @@ For Azure AD-joined VMs, follow the same instructions (above) as for [Active Dir
 3. On the Remote tab, choose **Allow remote connections to this computer** and then click **Select Users**.
 4. Click **Add**, type **Authenticated users**, and then click **OK** three times.
 5. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
-6. Open Windows Configuration Designer and click **Provison desktop services**.
+6. Open Windows Configuration Designer and click **Provision desktop services**.
 7. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps. Otherwise, skip to step 8.
     1. Under **Name**, type **Desktop Bulk Enrollment Token Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name.
     2. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
