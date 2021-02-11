@@ -116,7 +116,7 @@ You can use these variables within sections in the .xml files with `context=User
 <td align="left"><p>Refers to the Appdata folder inside %<strong>DEFAULTUSERPROFILE</strong>%.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>C<strong>CSIDL_DEFAULT_LOCAL_APPDATA</strong></p></td>
+<td align="left"><p><strong>CSIDL_DEFAULT_LOCAL_APPDATA</strong></p></td>
 <td align="left"><p>Refers to the local Appdata folder inside %<strong>DEFAULTUSERPROFILE</strong>%.</p></td>
 </tr>
 <tr class="even">
@@ -464,7 +464,6 @@ You can use these variables in the .xml files within sections with `context=User
  
 
  
-
 
 
 
