@@ -607,13 +607,13 @@ On **HV01**:
     2.  Installs the added application.
     3.  Updates the operating system via your local Windows Server Update Services (WSUS) server.
 
-![pc0005 image](../images/pc0005-vm.png)
+![pc0005 image1](../images/pc0005-vm.png)
 
 ### Application installation
 
 Following OS installation, Microsoft Office 365 Pro Plus - x64 is installed automatically.
 
- ![pc0005 image](../images/pc0005-vm-office.png)
+ ![pc0005 image2](../images/pc0005-vm-office.png)
 
 ### Use the MDT monitoring feature
 
