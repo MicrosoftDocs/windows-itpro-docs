@@ -319,7 +319,7 @@ You can use these variables in the .xml files within sections with `context=User
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CSIDL_CONTACTS</strong></p></td>
-<td align="left"><p>This refers to the Contacts folder in <strong>CSIDL_PROFILE</strong>.</p></td>
+<td align="left"><p>This refers to the Contacts folder in <strong>%CSIDL_PROFILE%</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>CSIDL_CONTROLS</strong></p></td>
@@ -464,7 +464,6 @@ You can use these variables in the .xml files within sections with `context=User
  
 
  
-
 
 
 
