@@ -109,7 +109,8 @@ When a reactivation event occurs, the client queries AD DS for the activation o
 
     - [Office 2016 VL pack](https://www.microsoft.com/download/details.aspx?id=49164)
 
-    - [Office 2019 VL pack](https://www.microsoft.com/en-us/download/details.aspx?id=57342)
+    - [Office 2019 VL pack](https://www.microsoft.com/download/details.aspx?id=57342)
+
 
     **Figure 15**. Choosing how to activate your product
 
