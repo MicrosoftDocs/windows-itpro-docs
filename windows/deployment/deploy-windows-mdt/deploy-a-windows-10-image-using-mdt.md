@@ -147,7 +147,7 @@ On **MDT01**:
 9. On the **Destination** page, in the **Specify the name of the directory that should be created** text box, type **Install - Adobe Reader** and click **Next**.
 10. On the **Command Details** page, in the **Command Line** text box, type **msiexec /i AcroRead.msi /q**, click **Next** twice, and then click **Finish**.
 
-![acroread](../images/acroread.png)
+![acroread image](../images/acroread.png)
 
 The Adobe Reader application added to the Deployment Workbench.
 
@@ -267,7 +267,7 @@ On **MDT01**:
 
 For the ThinkStation P500 model, you use the Lenovo ThinkVantage Update Retriever software to download the drivers. With Update Retriever, you need to specify the correct Lenovo Machine Type for the actual hardware (the first four characters of the model name). As an example, the Lenovo ThinkStation P500 model has the 30A6003TUS model name, meaning the Machine Type is 30A6.
 
-![ThinkStation](../images/thinkstation.png)
+![ThinkStation image](../images/thinkstation.png)
 
 To get the updates, download the drivers from the Lenovo ThinkVantage Update Retriever using its export function. You can also download the drivers by searching PC Support on the [Lenovo website](https://go.microsoft.com/fwlink/p/?LinkId=619543).
 
@@ -536,7 +536,7 @@ On **MDT01**:
 1. Download MDOP 2015 and copy the DaRT 10 installer file to the D:\\Setup\\DaRT 10 folder on MDT01 (DaRT\\DaRT 10\\Installers\\\<lang\>\\x64\\MSDaRT100.msi).
 2. Install DaRT 10 (MSDaRT10.msi) using the default settings.
 
-  ![DaRT](../images/dart.png)
+  ![DaRT image](../images/dart.png)
 
 2. Copy the two tools CAB files from **C:\\Program Files\\Microsoft DaRT\\v10** (**Toolsx86.cab** and **Toolsx64.cab**) to the production deployment share at **D:\\MDTProduction\\Tools\\x86** and **D:\\MDTProduction\\Tools\\x64**, respectively.
 3. In the Deployment Workbench, right-click the **MDT Production** deployment share and select **Properties**.
@@ -607,13 +607,13 @@ On **HV01**:
     2.  Installs the added application.
     3.  Updates the operating system via your local Windows Server Update Services (WSUS) server.
 
-![pc0005](../images/pc0005-vm.png)
+![pc0005 image](../images/pc0005-vm.png)
 
 ### Application installation
 
 Following OS installation, Microsoft Office 365 Pro Plus - x64 is installed automatically.
 
- ![pc0005](../images/pc0005-vm-office.png)
+ ![pc0005 image](../images/pc0005-vm-office.png)
 
 ### Use the MDT monitoring feature
 
