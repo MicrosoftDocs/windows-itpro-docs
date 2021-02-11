@@ -52,13 +52,22 @@ Note the detection status for your alert.
 - Blocked – Suspicious behavior was executed and then blocked. For example, a process was executed but because it subsequently exhibited suspicious behaviors, the process was terminated.
 - Detected – An attack was detected and is possibly still active.
 
+
+
+![Detection status detected in Windows](images/detection-status-detected.png)
+
 Blocked or prevented means actions were already taken by Defender for Endpoint.
 
-Start by reviewing the *automated investigation details* in your alert's details pane, to see which actions were already taken, as well as reading the alert's description for recommended actions.
+You can then also review the *automated investigation details* in your alert's details pane, to see which actions were already taken, as well as reading the alert's description for recommended actions.
 
 ![A snippet of the details pane with the alert description and automatic investigation sections highlighted](images/alert-air-and-alert-description.png)
 
 Other information available in the details pane when the alert opens includes MITRE techniques, source, and additional contextual details.
+
+For alerts from Mac and Linux devices, remediation actions can be seen within the alert story as well as in the details pane.
+
+![Detection status detected in Mac](images/detection-status-prevented-mac.png)
+
 
 ## Review affected assets
 
