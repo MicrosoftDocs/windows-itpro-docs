@@ -18,15 +18,12 @@ ms.collection:
   - M365-security-compliance
   - m365solution-symantecmigrate
 ms.topic: article
-ms.date: 11/30/2020
+ms.date: 02/11/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
 
 # Migrate from Symantec - Phase 2: Set up Microsoft Defender for Endpoint
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 |[![Phase 1: Prepare](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |![Phase 2: Set up](images/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
 |--|--|--|
