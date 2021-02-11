@@ -25,11 +25,11 @@ ms.reviewer: depicker, yongrhee, chriggs
 ---
 
 # Migrate from Symantec to Microsoft Defender for Endpoint
+If you are planning to switch from Symantec Endpoint Protection (Symantec) to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender for Endpoint), you're in the right place. Use this article as a guide.
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+:::image type="content" source="images/symantec-mde-migration.png" alt-text="Overview of migrating from Symantec to Defender for Endpoint":::
 
-
-If you are planning to switch from Symantec Endpoint Protection (Symantec) to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection), you're in the right place. Use this article as a guide to plan your migration.  
+When you make the switch from Symantec to Defender for Endpoint, you begin with your Symantec solution in active mode, configure Defender for Endpoint in passive mode, onboard to Defender for Endpoint, and then set Defender for Endpoint to active mode and remove Symantec.
 
 ## The migration process
 

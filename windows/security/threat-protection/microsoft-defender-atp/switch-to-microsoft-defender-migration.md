@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-overview
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 09/24/2020
+ms.date: 02/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
 ---
