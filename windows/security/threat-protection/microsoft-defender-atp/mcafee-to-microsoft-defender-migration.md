@@ -31,7 +31,7 @@ If you are planning to switch from McAfee Endpoint Security (McAfee) to [Microso
 
 :::image type="content" source="images/mcafee-mde-migration.png" alt-text="Overview of migrating from McAfee to Defender for Endpoint":::
 
-During migration, you begin with McAfee in active mode, configure Defender for Endpoint in passive mode, onboard to Defender for Endpoint, set Microsoft Defender Antivirus to active mode, and remove McAfee.
+When you make the switch from McAfee to Defender for Endpoint, you begin with your McAfee solution in active mode, configure Defender for Endpoint in passive mode, onboard to Defender for Endpoint, and then set Defender for Endpoint to active mode and remove McAfee.
 
 ## The migration process
 
