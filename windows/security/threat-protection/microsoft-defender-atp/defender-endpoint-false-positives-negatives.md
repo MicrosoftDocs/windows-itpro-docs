@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/27/2021
+ms.date: 02/11/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -279,8 +279,6 @@ Check your cloud-delivered protection level for Microsoft Defender Antivirus. By
 
 > [!TIP]
 > To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
-
-We recommend using Microsoft Endpoint Manager to edit or set your cloud-delivered protection settings.
 
 We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) to edit or set your cloud-delivered protection settings; however, you can use other methods, such as [Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
 
