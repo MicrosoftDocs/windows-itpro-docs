@@ -32,9 +32,9 @@ The following resources provide additional information about using Windows Updat
 
 ## How do I reset Windows Update components?
 
-[Reset Windows Update Client settings script](https://gallery.technet.microsoft.com/scriptcenter/Reset-WindowsUpdateps1-e0c5eb78) will completely reset the Windows Update client settings. It has been tested on Windows 7, 8, 10, and Windows Server 2012 R2. It will configure the services and registry keys related to Windows Update for default settings. It will also clean up files related to Windows Update, in addition to BITS related data.
+[Reset Windows Update Client settings script](https://web.archive.org/web/20201113200705/https://gallery.technet.microsoft.com/scriptcenter/Reset-Windows-Update-Agent-d824badc/file/224689/1/ResetWUEng.zip) will completely reset the Windows Update client settings. It has been tested on Windows 7, 8, 10, and Windows Server 2012 R2. It will configure the services and registry keys related to Windows Update for default settings. It will also clean up files related to Windows Update, in addition to BITS related data.
 
-[Reset Windows Update Agent script](https://gallery.technet.microsoft.com/scriptcenter/Reset-Windows-Update-Agent-d824badc) allows you to reset the Windows Update Agent, resolving issues with Windows Update.
+[Reset Windows Update Agent Powershell script](https://web.archive.org/web/20200318172012/https://gallery.technet.microsoft.com/scriptcenter/Reset-WindowsUpdateps1-e0c5eb78/file/182059/1/Reset-WindowsUpdate.ps1) allows you to reset the Windows Update Agent, resolving issues with Windows Update.
 
 ## Reset Windows Update components manually
 
