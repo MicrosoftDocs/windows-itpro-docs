@@ -1,16 +1,5 @@
 # [Threat protection](index.md)
 
-## [Overview]()
-### [What is Microsoft Defender for Endpoint?](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
-### [Minimum requirements](microsoft-defender-atp/minimum-requirements.md)
-### [What's new in Microsoft Defender for Endpoint](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
-### [Preview features](microsoft-defender-atp/preview.md)
-### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
-### [Overview of Microsoft Defender Security Center](microsoft-defender-atp/use.md)
-### [Portal overview](microsoft-defender-atp/portal-overview.md)
-### [Microsoft Defender for Endpoint for US Government customers](microsoft-defender-atp/gov.md)
-### [Microsoft Defender for Endpoint for non-Windows platforms](microsoft-defender-atp/non-windows.md)
-
 ## [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
 
 ## [Plan deployment](microsoft-defender-atp/deployment-strategy.md)
