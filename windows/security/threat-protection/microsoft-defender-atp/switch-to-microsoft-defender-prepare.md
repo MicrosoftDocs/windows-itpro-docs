@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 09/22/2020
+ms.date: 02/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -65,11 +65,8 @@ Need help updating your organization's devices? See the following resources:
 Now that you've updated your organization's devices, the next step is to get Microsoft Defender for Endpoint, assign licenses, and make sure the service is provisioned.
 
 1. Buy or try Microsoft Defender for Endpoint today. [Start a free trial or request a quote](https://aka.ms/mdatp). 
-
 2. Verify that your licenses are properly provisioned. [Check your license state](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#check-license-state).
-
 3. As a global administrator or security administrator, set up your dedicated cloud instance of Microsoft Defender for Endpoint. See [Microsoft Defender for Endpoint setup: Tenant configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#tenant-configuration).
-
 4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Microsoft Defender for Endpoint setup: Network configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#network-configuration).
  
 At this point, you are ready to grant access to your security administrators and security operators who will use the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
@@ -84,14 +81,11 @@ The Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka
 Permissions to the Microsoft Defender Security Center can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
 1. Plan the roles and permissions for your security administrators and security operators. See [Role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment#role-based-access-control).
-
 2. Set up and configure RBAC. We recommend using [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) to configure RBAC, especially if your organization is using a combination of Windows 10, macOS, iOS, and Android devices. See [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
-
     If your organization requires a method other than Intune, choose one of the following options:
     - [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
     - [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm)
     - [Windows Admin Center](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview)
-
 3. Grant access to the Microsoft Defender Security Center. (Need help? See [Manage portal access using RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)).
 
 ## Configure device proxy and internet connectivity settings
