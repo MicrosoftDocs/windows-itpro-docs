@@ -40,11 +40,8 @@ ms.reviewer: depicker, yongrhee, chriggs
 ## Onboard devices to Microsoft Defender for Endpoint
 
 1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.
-
 2. Choose **Settings** > **Device management** > **Onboarding**. 
-
 3. In the **Select operating system to start onboarding process** list, select an operating system. 
-
 4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods) (in this article).
 
 ### Onboarding methods
@@ -63,7 +60,6 @@ Deployment methods vary, depending on which operating system is selected. Refer 
 
 To verify that your onboarded devices are properly connected to Microsoft Defender for Endpoint, you can run a detection test.
 
-
 |Operating system  |Guidance  |
 |---------|---------|
 |- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server, version 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |See [Run a detection test](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test). <br/><br/>Visit the Microsoft Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.         |
@@ -75,12 +71,11 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 Now that you have onboarded your organization's devices to Microsoft Defender for Endpoint, your next step is to uninstall Symantec.
 
 1. [Disable Tamper Protection](https://knowledge.broadcom.com/external/article?legacyId=tech192023) in Symantec.
-
-2. Delete the uninstall password for Symantec:
+2. Delete the uninstall password for Symantec:<br/>
    1. On your Windows devices, open Registry Editor as an administrator.
    2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Symantec\Symantec Endpoint Protection\SMC`.
-   3. Look for an entry named **SmcInstData**. Right-click the item, and then choose **Delete**. 
-
+   3. Look for an entry named **SmcInstData**. 
+   4. Right-click the item, and then choose **Delete**. 
 3. Remove Symantec from your devices. If you need help with this, see Broadcom's documentation. Here are a few Broadcom resources: 
    - [Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
    - Windows devices: [Manually uninstall Endpoint Protection 14 clients on Windows](https://knowledge.broadcom.com/external/article?articleId=170040)
@@ -99,7 +94,5 @@ To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([http
 ## Next steps
 
 **Congratulations**! You have completed your [migration from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! 
-
 - [Visit your security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard) in the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
-
 - [Manage Microsoft Defender for Endpoint, post migration](manage-atp-post-migration.md).

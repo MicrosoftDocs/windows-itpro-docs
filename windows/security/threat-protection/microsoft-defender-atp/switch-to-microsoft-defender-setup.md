@@ -200,6 +200,7 @@ To use CMPivot to get your file hash, follow these steps:
 4. Select the **Query** tab.
 5. In the **Device Collection** list, and choose **All Systems (default)**.
 6. In the query box, type the following query:<br/>
+
    ```kusto
    File(c:\\windows\\notepad.exe)
    | project Hash
@@ -219,9 +220,7 @@ To use CMPivot to get your file hash, follow these steps:
 ## Configure antimalware policies and real-time protection
 
 Using Configuration Manager and your device collection(s), configure your antimalware policies.
-
 - See [Create and deploy antimalware policies for Endpoint Protection in Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies).
-
 - While you create and configure your antimalware policies, make sure to review the [real-time protection settings](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) and [enable block at first sight](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus).
 
 > [!TIP]
