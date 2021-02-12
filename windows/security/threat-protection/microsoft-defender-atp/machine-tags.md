@@ -57,7 +57,8 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 Tags are added to the device view and will also be reflected on the **Devices list** view. You can then use the **Tags** filter to see the relevant list of devices.
 
 >[!NOTE]
-> Filtering might not work on tag names that contain parenthesis.
+> Filtering might not work on tag names that contain parenthesis.<br>
+> Filtering will only find portal set tags.
 
 You can also delete tags from this view.
 
