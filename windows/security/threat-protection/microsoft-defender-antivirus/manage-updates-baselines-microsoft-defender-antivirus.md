@@ -93,6 +93,7 @@ All our updates contain
 - Increased visibility for credential stealing attempts
 - Improvements in antitampering features in Microsoft Defender Antivirus services
 - Improved support for ARM x64 emulation
+- Fix: EDR Block notification remains in threat history after real-time protection performed initial detection
 
 ### Known Issues
 No known issues  
