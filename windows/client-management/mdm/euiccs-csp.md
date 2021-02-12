@@ -38,6 +38,36 @@ Required. Indicates whether this eUICC is physically present and active. Updated
 
 Supported operation is Get. Value type is boolean.
 
+<a href="" id="euicc-isactive"></a>**_eUICC_/PPR1Allowed**  
+Required. Indicates whether the download of a profile with PPR1 is allowed. If the eUICC already has a profile (regardless of its origin and policy rules associated with it), then the download of a profile with PPR1 is not allowed.
+
+Supported operation is Get. Value type is boolean.
+
+<a href="" id="euicc-isactive"></a>**_eUICC_/PPR1AlreadySet**  
+Required. Indicates whether the eUICC has already a profile with PPR1.
+
+Supported operation is Get. Value type is boolean.
+
+<a href="" id="euicc-profiles"></a>**_eUICC_/DownloadServers**  
+Interior node. Represents default SM-DP+ discovery requests.
+
+Supported operation is Get.
+
+<a href="" id="euicc-profiles-iccid"></a>**_eUICC_/DownloadServers/_ServerName_**  
+Interior node. Optional. Node representing the discovery operation for a server name. The node name is the fully qualified domain name of the SM-DP+ server that will be used for profile discovery. Creation of this subtree triggers a discovery request.
+
+Supported operations are Add, Get, and Delete.
+
+<a href="" id="euicc-profiles-iccid-state"></a>**_eUICC_/DownloadServers/_ServerName_/DiscoveryState**  
+Required. Current state of the discovery operation for the parent ServerName (Requested = 1, Executing = 2, Completed = 3, Failed = 4). Queried by the CSP and only updated by the LPA.
+
+Supported operation is Get. Value type is integer. Default value is 1.
+
+<a href="" id="euicc-profiles-iccid-isenabled"></a>**_eUICC_/DownloadServers/_ServerName_/AutoEnable**  
+Required. Indicates whether the discovered profile must be enabled automatically after install. This must be set by the MDM when the ServerName subtree is created
+
+Supported operations are Add, Get, and Replace. Value type is bool.
+
 <a href="" id="euicc-profiles"></a>**_eUICC_/Profiles**  
 Interior node. Required. Represents all enterprise-owned profiles.
 
