@@ -4,7 +4,7 @@ description: Learn about planning Group Policy Objects for your isolation zones 
 ms.assetid: 11949ca3-a11c-4a16-b297-0862432eb5b4
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Planning the GPOs

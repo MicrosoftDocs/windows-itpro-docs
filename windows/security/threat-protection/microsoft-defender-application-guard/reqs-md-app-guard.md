@@ -1,7 +1,7 @@
 ---
 title: System requirements for Microsoft Defender Application Guard (Windows 10)
 description: Learn about the system requirements for installing and running Microsoft Defender Application Guard.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,6 +12,7 @@ ms.date: 02/11/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # System requirements for Microsoft Defender Application Guard

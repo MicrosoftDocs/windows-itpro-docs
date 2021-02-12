@@ -3,7 +3,7 @@ title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect devices with malware.
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,8 @@ ms.author: deniseb
 ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
-ms.date: 12/10/2020
+ms.technology: mde
+
 ---
 
 # Use attack surface reduction rules to prevent malware infection
@@ -24,7 +25,7 @@ ms.date: 12/10/2020
 
 **Applies to:**
 
-* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 ## Why attack surface reduction rules are important
 
@@ -42,15 +43,15 @@ For more information about configuring attack surface reduction rules, see [Enab
 
 ## Assess rule impact before deployment  
 
-You can assess how an attack surface reduction rule might impact your network by opening the security recommendation for that rule in [threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/#tvm). 
+You can assess how an attack surface reduction rule might affect your network by opening the security recommendation for that rule in [threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/#tvm). 
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Security reco for attack surface reduction rule":::
 
-In the recommendation details pane, check the user impact to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adverse impact to user productivity.
+In the recommendation details pane, check for user impact to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adversely affecting productivity.
 
 ## Audit mode for evaluation
 
-Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
+Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would affect your organization if they were enabled. Run all rules in audit mode first so you can understand how they affect your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they might perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without reducing productivity.
 
 ## Warn mode for users
 
@@ -63,8 +64,10 @@ Warn mode helps your organization have attack surface reduction rules in place w
 Warn mode is supported on devices running the following versions of Windows:
 - [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) or later
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) or later
+ 
+Microsoft Defender Antivirus must be running with real-time protection in [Active mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
 
-In addition, make sure [Microsoft Defender Antivirus and antimalware updates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) are installed   
+In addition, make sure [Microsoft Defender Antivirus and antimalware updates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) are installed.
 - Minimum platform release requirement: `4.18.2008.9`  
 - Minimum engine release requirement: `1.1.17400.5`
 
@@ -92,19 +95,19 @@ Notifications and any alerts that are generated can be viewed in the Microsoft D
 
 You can use advanced hunting to view attack surface reduction events. To streamline the volume of incoming data, only unique processes for each hour are viewable with advanced hunting. The time of an attack surface reduction event is the first time that event is seen within the hour.
 
-For example, suppose that an attack surface reduction event occurs on ten devices during the 2:00 PM hour. Suppose that the first event occurred at 2:15, and the last at 2:45. With advanced hunting, you'll see one instance of that event (even though it actually occurred on ten devices), and its timestamp will be 2:15 PM. 
+For example, suppose that an attack surface reduction event occurs on 10 devices during the 2:00 PM hour. Suppose that the first event occurred at 2:15, and the last at 2:45. With advanced hunting, you'll see one instance of that event (even though it actually occurred on 10 devices), and its timestamp will be 2:15 PM. 
 
 For more information about advanced hunting, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
 ## Attack surface reduction features across Windows versions
 
-You can set attack surface reduction rules for devices running any of the following editions and versions of Windows:
+You can set attack surface reduction rules for devices that are running any of the following editions and versions of Windows:
 - Windows 10 Pro, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows 10 Enterprise, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows Server, [version 1803 (Semi-Annual Channel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-To use the entire feature-set of attack surface reduction rules, you need a [Windows 10 Enterprise license](https://www.microsoft.com/licensing/product-licensing/windows10). With a [Windows E5 license](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses), you get advanced management capabilities including monitoring, analytics, and workflows available in [Defender for Endpoint](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center). These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
+Although attack surface reduction rules don't require a [Windows E5 license](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses), if you have Windows E5, you get advanced management capabilities. These capabilities available only in Windows E5 include monitoring, analytics, and workflows available in [Defender for Endpoint](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center). These advanced capabilities aren't available with a Windows Professional or Windows E3 license; however, if you do have those licenses, you can use Event Viewer and Microsoft Defender Antivirus logs to review your attack surface reduction rule events.
 
 ## Review attack surface reduction events in the Microsoft Defender Security Center
 
@@ -124,19 +127,15 @@ DeviceEvents
 You can review the Windows event log to view events generated by attack surface reduction rules:
 
 1. Download the [Evaluation Package](https://aka.ms/mp7z2w) and extract the file *cfa-events.xml* to an easily accessible location on the device.
-
 2. Enter the words, *Event Viewer*, into the Start menu to open the Windows Event Viewer.
-
 3. Under **Actions**, select **Import custom view...**.
-
 4. Select the file *cfa-events.xml* from where it was extracted. Alternatively, [copy the XML directly](event-views.md).
-
 5. Select **OK**.
 
 You can create a custom view that filters events to only show the following events, all of which are related to controlled folder access:
 
 |Event ID | Description |
-|---|---|
+|:---|:---|
 |5007 | Event when settings are changed |
 |1121 | Event when rule fires in Block-mode |
 |1122 | Event when rule fires in Audit-mode |
@@ -147,7 +146,7 @@ The "engine version" listed for attack surface reduction events in the event log
 
 The following table and subsections describe each of the 15 attack surface reduction rules. The attack surface reduction rules are listed in alphabetical order, by rule name. 
 
-If you are configuring attack surface reduction rules by using Group Policy or PowerShell, you'll need the GUIDs. On the other hand, if you use Microsoft Endpoint Configuration Manager or Microsoft Intune, you do not need the GUIDs.
+If you are configuring attack surface reduction rules by using Group Policy or PowerShell, you'll need the GUIDs. On the other hand, if you use Microsoft Endpoint Manager or Microsoft Intune, you do not need the GUIDs.
 
 
 | Rule name | GUID | File & folder exclusions | Minimum OS supported |
@@ -170,9 +169,9 @@ If you are configuring attack surface reduction rules by using Group Policy or P
 
 ### Block Adobe Reader from creating child processes
 
-This rule prevents attacks by blocking Adobe Reader from creating additional processes.
+This rule prevents attacks by blocking Adobe Reader from creating processes.
 
-Through social engineering or exploits, malware can download and launch additional payloads and break out of Adobe Reader. By blocking child processes from being generated by Adobe Reader, malware attempting to use it as a vector are prevented from spreading.
+Through social engineering or exploits, malware can download and launch payloads, and break out of Adobe Reader. By blocking child processes from being generated by Adobe Reader, malware attempting to use it as a vector are prevented from spreading.
 
 This rule was introduced in: 
 - [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
@@ -189,7 +188,7 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 This rule blocks Office apps from creating child processes. Office apps include Word, Excel, PowerPoint, OneNote, and Access.
 
-Creating malicious child processes is a common malware strategy. Malware that abuse Office as a vector often run VBA macros and exploit code to download and attempt to run additional payloads. However, some legitimate line-of-business applications might also generate child processes for benign purposes, such as spawning a command prompt or using PowerShell to configure registry settings.
+Creating malicious child processes is a common malware strategy. Malware that abuse Office as a vector often run VBA macros and exploit code to download and attempt to run more payloads. However, some legitimate line-of-business applications might also generate child processes for benign purposes, such as spawning a command prompt or using PowerShell to configure registry settings.
 
 This rule was introduced in: 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
@@ -235,13 +234,19 @@ This rule was introduced in:
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Microsoft Endpoint Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Microsoft Endpoint Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Configuration Manager name: `Block executable content from email client and webmail`
+Microsoft Endpoint Manager name: `Block executable content from email client and webmail`
 
 GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
+
+> [!NOTE]
+> The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
+> - Intune (Configuration Profiles): Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions).
+> - Endpoint Manager: Block executable content download from email and webmail clients.
+> - Group Policy: Block executable content from email client and webmail.
 
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
 
@@ -348,7 +353,7 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 This rule prevents Outlook from creating child processes, while still allowing legitimate Outlook functions.
 
-This rule protects against social engineering attacks and prevents exploit code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
+This rule protects against social engineering attacks and prevents exploiting code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
 
 > [!NOTE]
 > This rule applies to Outlook and Outlook.com only.
@@ -421,7 +426,7 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 This rule prevents VBA macros from calling Win32 APIs.
 
-Office VBA provides the ability to make Win32 API calls. Malware can abuse this capability, such as [calling Win32 APIs to launch malicious shellcode](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) without writing anything directly to disk. Most organizations don't rely on the ability to call Win32 APIs in their day-to-day functioning, even if they use macros in other ways.
+Office VBA enables Win32 API calls. Malware can abuse this capability, such as [calling Win32 APIs to launch malicious shellcode](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) without writing anything directly to disk. Most organizations don't rely on the ability to call Win32 APIs in their day-to-day functioning, even if they use macros in other ways.
 
 This rule was introduced in:
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
@@ -457,9 +462,6 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 ## See also
 
 - [Attack surface reduction FAQ](attack-surface-reduction-faq.md)
-
 - [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
-
 - [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-
-- [Compatibility of Microsoft Defender with other antivirus/antimalware](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
+- [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware solutions](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)

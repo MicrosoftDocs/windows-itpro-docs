@@ -4,7 +4,7 @@ description: Learn how to setup the deployment for Microsoft Defender ATP
 keywords: deploy, setup, licensing validation, tenant configuration, network configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario 
-ms.topic: article 
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
+ms.topic: article
+ms.technology: mde
 ---
 
 # Set up Microsoft Defender for Endpoint deployment
@@ -26,7 +27,7 @@ ms.topic: article
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 Deploying Defender for Endpoint is a three-phase process:

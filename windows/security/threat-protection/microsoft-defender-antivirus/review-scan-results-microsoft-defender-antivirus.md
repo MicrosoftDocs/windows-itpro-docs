@@ -1,9 +1,9 @@
 ---
-title: Review the results of Microsoft Defender AV scans 
+title: Review the results of Microsoft Defender AV scans
 description: Review the results of scans using Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Windows Security app
 keywords: scan results, remediation, full scan, quick scan
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.date: 09/28/2020
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Review Microsoft Defender Antivirus scan results

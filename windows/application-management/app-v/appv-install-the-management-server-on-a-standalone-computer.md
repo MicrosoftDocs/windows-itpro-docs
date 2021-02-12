@@ -1,7 +1,7 @@
 ---
 title: How to install the Management Server on a Standalone Computer and Connect it to the Database (Windows 10)
 description: How to install the Management Server on a Standalone Computer and Connect it to the Database
-author: lomayor
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -6,7 +6,7 @@ description: Cortana includes powerful configuration options specifically to opt
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: kwekua
+author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ---

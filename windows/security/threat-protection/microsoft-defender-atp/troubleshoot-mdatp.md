@@ -1,10 +1,10 @@
 ---
-title:  Troubleshoot Microsoft Defender Advanced Threat Protection service issues
+title: Troubleshoot Microsoft Defender Advanced Threat Protection service issues
 description: Find solutions and work arounds to known issues such as server errors when trying to access the service.
 keywords: troubleshoot Microsoft Defender Advanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, allow, event viewer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: troubleshooting
+ms.technology: mde
 ---
 
 # Troubleshoot service issues

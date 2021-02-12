@@ -59,7 +59,7 @@ The features described below are no longer being actively developed, and might b
 |Trusted Platform Module (TPM) Owner Password Management |This functionality within TPM.msc will be migrated to a new user interface.| 1709 |
 |Trusted Platform Module (TPM): TPM.msc and TPM Remote Management  | To be replaced by a new user interface in a future release. | 1709 |
 |Trusted Platform Module (TPM) Remote Management |This functionality within TPM.msc will be migrated to a new user interface. | 1709 |
-|Windows Hello for Business deployment that uses Microsoft Endpoint Configuration Manager   |Windows Server 2016 Active Directory Federation Services – Registration Authority (ADFS RA) deployment is simpler and provides a better user experience and a more deterministic certificate enrollment experience. | 1709 |
+|Windows Hello for Business deployment that uses Microsoft Endpoint Manager   |Windows Server 2016 Active Directory Federation Services – Registration Authority (ADFS RA) deployment is simpler and provides a better user experience and a more deterministic certificate enrollment experience. | 1709 |
 |Windows PowerShell 2.0  | Applications and components should be migrated to PowerShell 5.0+. | 1709 |
 |Apndatabase.xml | Apndatabase.xml is being replaced by the COSA database. Therefore, some constructs will no longer function. This includes Hardware ID, incoming SMS messaging rules in mobile apps, a list of privileged apps in mobile apps, autoconnect order, APN parser, and CDMAProvider ID. | 1703 |
 |Tile Data Layer | The [Tile Data Layer](https://docs.microsoft.com/windows/configuration/start-layout-troubleshoot#symptom-start-menu-issues-with-tile-data-layer-corruption) database stopped development in Windows 10, version 1703. | 1703 |

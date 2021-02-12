@@ -1,7 +1,7 @@
 ---
 title: Planning for Deploying App-V with Office (Windows 10)
 description: Use the information in this article to plan how to deploy Office within Microsoft Application Virtualization (App-V).
-author: lomayor
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
