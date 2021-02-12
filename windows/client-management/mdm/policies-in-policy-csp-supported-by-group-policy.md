@@ -731,7 +731,6 @@ ms.date: 07/18/2019
 - [RemoteShell/SpecifyMaxRemoteShells](./policy-csp-remoteshell.md#remoteshell-specifymaxremoteshells)
 - [RemoteShell/SpecifyShellTimeout](./policy-csp-remoteshell.md#remoteshell-specifyshelltimeout)
 - [Search/AllowCloudSearch](./policy-csp-search.md#search-allowcloudsearch)
-- [Search/AllowCortanaInAAD](./policy-csp-search.md#search-allowcortanainaad)
 - [Search/AllowFindMyFiles](./policy-csp-search.md#search-allowfindmyfiles)
 - [Search/AllowIndexingEncryptedStoresOrItems](./policy-csp-search.md#search-allowindexingencryptedstoresoritems)
 - [Search/AllowSearchToUseLocation](./policy-csp-search.md#search-allowsearchtouselocation)
