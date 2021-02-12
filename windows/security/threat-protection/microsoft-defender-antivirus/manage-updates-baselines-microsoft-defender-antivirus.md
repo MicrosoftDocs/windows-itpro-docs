@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 02/04/2021
+ms.date: 02/12/2021
 ms.technology: mde
 ---
 
@@ -93,6 +93,7 @@ All our updates contain
 - Increased visibility for credential stealing attempts
 - Improvements in antitampering features in Microsoft Defender Antivirus services
 - Improved support for ARM x64 emulation
+- Fix: EDR Block notification remains in threat history after real-time protection performed initial detection
 
 ### Known Issues
 No known issues  
