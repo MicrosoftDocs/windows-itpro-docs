@@ -84,6 +84,8 @@ First, you create a default user profile with the customizations that you want, 
 
 1. Right-click Start, go to **Control Panel** (view by large or small icons) > **System** > **Advanced system settings**, and click **Settings** in the **User Profiles** section.
 
+Starting in Windows 10 version (2004) Open the Settings app and click on Advanced system settings
+
 1. In **User Profiles**, click **Default Profile**, and then click **Copy To**.
 
    ![Example of UI](images/copy-to.png)
@@ -92,12 +94,13 @@ First, you create a default user profile with the customizations that you want, 
 
    ![Example of UI](images/copy-to-change.png)
 
-1. In **Select User or Group**, in the **Enter the object name to select** field, type `everyone`, click **Check Names**, and then click **OK**.
+1. In **Select User or Group**, in the **Enter the object name to select** field, type `everyone` or the group of users that the profile will be assigned to, click **Check Names**, and then click **OK**.
 
 1. In **Copy To**, in the **Copy profile to** field, enter the path and folder name where you want to store the mandatory profile. The folder name must use the correct [extension](#profile-extension-for-each-windows-version) for the operating system version. For example, the folder name must end with ".v6" to identify it as a user profile folder for Windows 10, version 1607.
 
    - If the device is joined to the domain and you are signed in with an account that has permissions to write to a shared folder on the network, you can enter the shared folder path.
    - If the device is not joined to the domain, you can save the profile locally and then copy it to the shared folder location.
+   - Optionally you can check the box “Mandatory profile”. This step is not required but will set permissions that are more restrictive and it is recommend to do so
 
    ![Example of UI](images/copy-to-path.png)
 
