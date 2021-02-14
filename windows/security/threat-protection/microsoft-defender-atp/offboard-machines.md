@@ -38,9 +38,9 @@ Follow the corresponding instructions depending on your preferred deployment met
 >[!NOTE]
 > The status of a device will be switched to [Inactive](fix-unhealthy-sensors.md#inactive-devices) 7 days after offboarding. <br> 
 > Offboarded devices' data (such as Timeline, Alerts, Vulnerabilities, etc.) will remain in the portal until the configured [retention period](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) expires. <br>
-> The device's profile (without data) will remain in the [Device List](machines-view-overview.md) for no longer than 180 days.
-> In addition, Devices that are not active in the last 30 days are not factored in on the data that reflects your organization's [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md) exposure score and Microsoft Secure Score for Devices. <br>
-> To view only active devices, you can filter by [health state](machines-view-overview.md#health-state) or by [device tags](machine-tags.md) and [groups](machine-groups.md) etc. 
+> The device's profile (without data) will remain in the [Devices List](machines-view-overview.md) for no longer than 180 days.
+> In addition, devices that are not active in the last 30 days are not factored in on the data that reflects your organization's threat and vulnerability management [exposure score](tvm-exposure-score.md) and Microsoft Secure Score for Devices. <br>
+> To view only active devices, you can filter by [health state](machines-view-overview.md#health-state), [device tags](machine-tags.md) or [machine groups](machine-groups.md). 
 
 ## Offboard Windows 10 devices
 - [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script)
