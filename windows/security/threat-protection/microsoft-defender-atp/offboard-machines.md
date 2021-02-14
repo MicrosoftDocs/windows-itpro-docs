@@ -35,6 +35,13 @@ ms.technology: mde
 
 Follow the corresponding instructions depending on your preferred deployment method.
 
+>[!NOTE]
+> The status of a device will be switched to ['Inactive'](fix-unhealthy-sensors.md#inactive-devices) 7 days after offboarding. <br> 
+> Offboarded devices' data (such as Timeline, Alerts, Vulnerabilities, etc.) will remain in the portal until the configured [retention period](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) expires. <br>
+> The device's profile (without data) will remain in the ['Device List'](machines-view-overview.md) for no longer than 180 days.
+> In addition, [Devices that are not active in the last 30 days are not factored in on the data that reflects your organization's threat and vulnerability management exposure score and Microsoft Secure Score for Devices.](tvm-dashboard-insights.md) <br>
+> To view only active devices, you can filter by [health state](machines-view-overview.md#health-state) or by [device tags](machine-tags.md) and [groups](machine-groups.md) etc. 
+
 ## Offboard Windows 10 devices
 - [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [Offboard devices using Group Policy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
@@ -46,9 +53,3 @@ Follow the corresponding instructions depending on your preferred deployment met
 ## Offboard non-Windows devices
 - [Offboard non-Windows devices](configure-endpoints-non-windows.md#offboard-non-windows-devices)
 
->[!NOTE]
-> The status of a device will be switched to ['Inactive'](fix-unhealthy-sensors.md#inactive-devices) 7 days after offboarding. <br> 
-> Offboarded devices' data (such as Timeline, Alerts, Vulnerabilities, etc.) will remain in the portal until the configured [retention period](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) expires. <br>
-> The device's profile (without data) will remain in the ['Device List'](machines-view-overview.md) for no longer than 180 days.
-> In addition, [Devices that are not active in the last 30 days are not factored in on the data that reflects your organization's threat and vulnerability management exposure score and Microsoft Secure Score for Devices.](tvm-dashboard-insights.md) <br>
-> To view only active devices, you can filter by [health state](machines-view-overview.md#health-state) or by [device tags](machine-tags.md) and [groups](machine-groups.md) etc. 
