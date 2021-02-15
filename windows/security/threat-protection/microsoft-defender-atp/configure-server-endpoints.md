@@ -1,7 +1,7 @@
 ---
-title: Onboard Windows servers to the Microsoft Defender ATP service
-description: Onboard Windows servers so that they can send sensor data to the Microsoft Defender ATP sensor.
-keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Windows ATP servers, onboard Microsoft Defender Advanced Threat Protection servers
+title: Onboard Windows servers to the Microsoft Defender for Endpoint service
+description: Onboard Windows servers so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
+keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Windows ATP servers, onboard Microsoft Defender Advanced Threat Protection servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -161,7 +161,7 @@ You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windo
 
 Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
-1. Configure Defender for Endpoint onboarding settings on the Windows server. For more information, see [Onboard Windows 10 devices](configure-endpoints.md).
+1. Configure Defender for Endpoint onboarding settings on the Windows server using the same tools and methods for Windows 10 devices. For more information, see [Onboard Windows 10 devices](configure-endpoints.md).
 
 2. If you're running a third-party antimalware solution, you'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
 
