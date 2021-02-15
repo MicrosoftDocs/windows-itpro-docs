@@ -20,14 +20,11 @@ ms.collection:
   - m365solution-scenario
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 09/22/2020
+ms.date: 02/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
 # Migrate from McAfee - Phase 1: Prepare for your migration
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 |![Phase 1: Prepare](images/phase-diagrams/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](images/phase-diagrams/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](mcafee-to-microsoft-defender-setup.md) |[![Phase 3: Onboard](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](mcafee-to-microsoft-defender-onboard.md) |
 |--|--|--|
