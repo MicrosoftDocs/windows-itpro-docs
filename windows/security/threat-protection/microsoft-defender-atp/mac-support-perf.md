@@ -61,25 +61,25 @@ The following steps can be used to troubleshoot and mitigate these issues:
   > [!NOTE]
   > This feature is available in version 100.90.70 or newer.
   This feature is enabled by default on the **Dogfood** and **InsiderFast** channels. If you're using a different update channel, this feature can be enabled from the command line:
-    ``bash
+    ```bash
       mdatp config real-time-protection-statistics  --value enabled
-    ``
+    ```
   This feature requires real-time protection to be enabled. To check the status of real-time protection, run the following command:
-      ``bash
+      ```bash
       mdatp health --field real_time_protection_enabled
-      ``
+      ```
   Verify that the **real_time_protection_enabled** entry is true. Otherwise, run the following command to enable it:
-      ``bash
+      ```bash
       mdatp config real-time-protection --value enabled
-      ``
+      ```
 
-      ``output
+      ```output
       Configuration property updated
-      ``
+      ```
   To collect current statistics, run:
-      ``bash
+      ```bash
       mdatp config real-time-protection --value enabled
-      ``
+      ```
 
   > [!NOTE]
   > Using **--output json** (note the double dash) ensures that the output format is ready for parsing.
@@ -92,17 +92,17 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
   Next, type the following commands:
 
-     ``bash
+     ```bash
     chmod +x high_cpu_parser.py
-     ``
-     ``bash
+     ```
+     ```bash
     cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
-     ``
+     ```
   The output of the above is a list of the top contributors to performance issues. The first column is the process identifier (PID), the second column is te process name, and the last column is the number of scanned files, sorted by impact.
 
   For example, the output of the command will be something like the below:
 
-    ``output
+    ```output
     ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
     27432 None 76703
     73467 actool     1249
@@ -114,7 +114,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     549  telemetryd_v1   325
     4764 None 228
     125  CrashPlanService 164
-    ``
+    ```
 
   To improve the performance of Defender for Endpoint for Mac, locate the one with the highest number under the Total files scanned row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
 
