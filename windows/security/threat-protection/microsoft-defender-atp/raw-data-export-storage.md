@@ -37,7 +37,7 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://ww
 
 ## Enable raw data streaming:
 
-1. Log in to [Microsoft Defender for Endpoint portal](https://securitycenter.windows.com) with Global Admin user.
+1. Log in to [Microsoft Defender for Endpoint portal](https://securitycenter.windows.com) as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.
 
