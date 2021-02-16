@@ -153,7 +153,7 @@ Currently in preview, tamper protection can be turned on or off in the Microsoft
 - You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations.
 - Your Windows devices must be running one of the following versions of Windows:
    - Windows 10
-   - Windows Server 2019
+   - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
    - Windows Server, version [1803](https://docs.microsoft.com/windows/release-health/status-windows-10-1803) or later
    - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
    - For more information about releases, see [Windows 10 release information](https://docs.microsoft.com/windows/release-health/release-information).
