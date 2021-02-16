@@ -28,6 +28,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
+
 When you use [Network protection](network-protection.md) you may encounter issues, such as:
 
 - Network protection blocks a website that is safe (false positive)

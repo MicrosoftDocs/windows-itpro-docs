@@ -28,7 +28,6 @@ ms.technology: mde
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
 
-
 This page provides detailed steps to troubleshoot issues that might occur when setting up your Microsoft Defender for Endpoint service.
 
 If you receive an error message, Microsoft Defender Security Center will provide a detailed explanation on what the issue is and relevant links will be supplied.

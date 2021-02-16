@@ -1,7 +1,7 @@
 ---
-title: Onboard Windows servers to the Microsoft Defender ATP service
-description: Onboard Windows servers so that they can send sensor data to the Microsoft Defender ATP sensor.
-keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Windows ATP servers, onboard Microsoft Defender Advanced Threat Protection servers
+title: Onboard Windows servers to the Microsoft Defender for Endpoint service
+description: Onboard Windows servers so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
+keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Windows ATP servers, onboard Microsoft Defender Advanced Threat Protection servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -31,7 +31,7 @@ ms.technology: mde
 - Windows Server (SAC) version 1803 and later
 - Windows Server 2019 and later
 - Windows Server 2019 core edition
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
@@ -99,12 +99,13 @@ Perform the following steps to fulfill the onboarding requirements:
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
 
 2. Using the Workspace ID and Workspace key obtained in the previous procedure, choose any of the following installation methods to install the agent on the Windows server:
-    - [Manually install the agent using setup](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-setup) <br>
+    - [Manually install the agent using setup](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard). <br>
     On the **Agent Setup Options** page, choose **Connect the agent to Azure Log Analytics (OMS)**.
-    - [Install the agent using the command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#add-a-workspace-using-a-script).
+    - [Install the agent using the command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
+    - [Configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
 
 > [!NOTE]
-> If you are a [US Government customer](gov.md), under "Azure Cloud" you'll need to choose "Azure US Government".
+> If you are a [US Government customer](gov.md), under "Azure Cloud" you'll need to choose "Azure US Government" if using the setup wizard, or if using a command line or a script - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
 
 
 <span id="server-proxy"/>
@@ -117,7 +118,7 @@ If your servers need to use a proxy to communicate with Defender for Endpoint, u
 
 - [Configure Windows to use a proxy server for all connections](configure-proxy-internet.md)
 
-If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender ATP service URLs directly and without SSL interception. For more information, see [enable access to Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service. 
+If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender for Endpoint service URLs directly and without SSL interception. For more information, see [enable access to Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service. 
 
 Once completed, you should see onboarded Windows servers in the portal within an hour.
 
@@ -160,7 +161,7 @@ You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windo
 
 Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
-1. Configure Defender for Endpoint onboarding settings on the Windows server. For more information, see [Onboard Windows 10 devices](configure-endpoints.md).
+1. Configure Defender for Endpoint onboarding settings on the Windows server using the same tools and methods for Windows 10 devices. For more information, see [Onboard Windows 10 devices](configure-endpoints.md).
 
 2. If you're running a third-party antimalware solution, you'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
 

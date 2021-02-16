@@ -27,6 +27,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
+
 When contacting support, you may be asked to provide the output package of the Microsoft Defender for Endpoint Client Analyzer tool.
 
 This topic provides instructions on how to run the tool via Live Response.
