@@ -85,7 +85,7 @@ If successful, this method returns 201 - Created response code and [Investigatio
 
 Here is an example of the request.
 
-``https
+```https
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation
 ```
 
