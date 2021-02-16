@@ -78,13 +78,13 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 >
 > Once you’ve made this update, tamper protection continues to protect your registry settings, and logs attempts to modify them without returning errors.
 
-If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to turn tamper protection on or off. You must have appropriate admin permissions on your machine to do change security settings, such as tamper protection.
+If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to manage tamper protection. You must have appropriate admin permissions on your device to do change security settings, such as tamper protection.
 
 Here's what you see in the Windows Security app:
 
 ![Tamper protection turned on in Windows 10 Home](images/tamperprotectionturnedon.png)
 
-1. Click **Start**, and start typing *Security*. In the search results, select **Windows Security**.
+1. Select **Start**, and start typing *Security*. In the search results, select **Windows Security**.
 2. Select **Virus & threat protection** > **Virus & threat protection settings**.
 3. Set **Tamper Protection** to **On** or **Off**.
 
@@ -162,7 +162,7 @@ Currently in preview, tamper protection can be turned on or off in the Microsoft
    - Windows Server, version [1803](https://docs.microsoft.com/windows/release-health/status-windows-10-1803) or later
    - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
    - For more information about releases, see [Windows 10 release information](https://docs.microsoft.com/windows/release-health/release-information).
-- Your devices must be [onboarded to MIcrosoft Defender for Endpoint](../microsoft-defender-atp/onboarding.md).
+- Your devices must be [onboarded to Microsoft Defender for Endpoint](../microsoft-defender-atp/onboarding.md).
 - Your devices must be using anti-malware platform version 4.18.2010.7 (or above) and anti-malware engine version 1.1.17600.5 (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
 - [Cloud-delivered protection must be turned on](enable-cloud-protection-microsoft-defender-antivirus.md).
 
@@ -254,7 +254,7 @@ If a device is off-boarded from Microsoft Defender for Endpoint, tamper protecti
 
 Yes. The alert is shown in [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) under **Alerts**.
 
-In addition, your security operations team can use hunting queries, such as the following example:
+Your security operations team can also use hunting queries, such as the following example:
 
 `DeviceAlertEvents | where Title == "Tamper Protection bypass"`
 
