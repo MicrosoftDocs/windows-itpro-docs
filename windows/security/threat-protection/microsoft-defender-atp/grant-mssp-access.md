@@ -101,7 +101,8 @@ To implement a multi-tenant delegated access solution, take the following steps:
     - Can only be requested by users in the MSSP SOC Tenant
     - Access auto expires after 365 days
 
-    ![Image of new access package](images/new-access-package.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image of new access package](images/new-access-package.png)
 
     For more information, see [Create a new access package](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create).
 
@@ -110,8 +111,8 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     The My Access portal link is used by MSSP SOC analysts to request access via the access packages created. The link is durable, meaning the same link may be used over time for new analysts. The analyst request goes into a queue for approval by the **MSSP Analyst Approvers**.
 
-
-    ![Image of access properties](images/access-properties.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image of access properties](images/access-properties.png)
 
     The link is located on the overview page of each access package.
 
