@@ -17,7 +17,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security-compliance 
-- m365initiative-defender-endpoint 
+- m365initiative-defender-endpoint
+- m365solution-scenario
+- m365scenario-fpfn
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
