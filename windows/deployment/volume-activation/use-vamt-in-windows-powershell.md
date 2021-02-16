@@ -57,7 +57,7 @@ get-help get-VamtProduct -all
 ```
 
 **Warning**  
-The update-help cmdlet is not supported for VAMT PowerShell cmdlets. To view online help for VAMT cmdlets, you can use the -online option with the get-help cmdlet. For more information, see [Volume Activation Management Tool (VAMT) Cmdlets in Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=242278).
+The update-help cmdlet is not supported for VAMT PowerShell cmdlets. To view online help for VAMT cmdlets, you can use the -online option with the get-help cmdlet. For more information, see [Volume Activation Management Tool (VAMT) Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/vamt).
 
 **To view VAMT PowerShell Help sections**
 

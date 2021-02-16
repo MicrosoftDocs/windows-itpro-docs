@@ -5,7 +5,7 @@ description: Describes how to configure Microsoft Defender ATP for Linux in ente
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +15,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Set preferences for Microsoft Defender for Endpoint for Linux
@@ -202,7 +203,7 @@ Type of threat for which the behavior is configured.
 Action to take when coming across a threat of the type specified in the preceding section. Can be:
 
 - **Audit**: The device is not protected against this type of threat, but an entry about the threat is logged.
-- **Block**: The device is protected against this type of threat and you are notified in the user interface and the security console.
+- **Block**: The device is protected against this type of threat and you are notified in the security console.
 - **Off**: The device is not protected against this type of threat and nothing is logged.
 
 |||

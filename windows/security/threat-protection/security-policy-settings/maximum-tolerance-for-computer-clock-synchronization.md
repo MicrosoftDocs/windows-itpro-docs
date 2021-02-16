@@ -4,7 +4,7 @@ description: Best practices, location, values, policy management, and security c
 ms.assetid: ba2cf59e-d69d-469e-95e3-8e6a0ba643af
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Maximum tolerance for computer clock synchronization

@@ -105,7 +105,7 @@ Now all devices are paused from updating for 35 days. When the pause is removed,
 
 #### I want to stay on a specific version
 
-If you need a device to stay on a version beyond the point when deferrals on the next version would elapse or if you need to skip a version (for example, update fall release to fall release) use the [Update/TargetReleaseVersion](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-targetreleaseversion) (or Deploy Feature Updates Preview in Intune) instead of using feature update deferrals. When you use this policy, specify the version that you want your device(s) to move to or stay on (for example, "1909"). You can find version information at the [Windows 10 Release Information Page](https://docs.microsoft.com/windows/release-information/).
+If you need a device to stay on a version beyond the point when deferrals on the next version would elapse or if you need to skip a version (for example, update fall release to fall release) use the [Update/TargetReleaseVersion](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-targetreleaseversion) (or Deploy Feature Updates Preview in Intune) instead of using feature update deferrals. When you use this policy, specify the version that you want your device(s) to move to or stay on (for example, "1909"). You can find version information at the [Windows 10 Release Information Page](https://docs.microsoft.com/windows/release-health/release-information).
 
 ### Manage how users experience updates
 

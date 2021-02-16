@@ -9,12 +9,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # GPO\_DOMISO\_Encryption\_WS2008

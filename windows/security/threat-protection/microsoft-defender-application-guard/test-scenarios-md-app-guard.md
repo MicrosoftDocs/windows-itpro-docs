@@ -1,7 +1,7 @@
 ---
 title: Testing scenarios with Microsoft Defender Application Guard (Windows 10)
 description: Suggested testing scenarios for Microsoft Defender Application Guard, showing how it works in both Standalone and Enterprise-managed mode.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,6 +12,7 @@ ms.reviewer:
 manager: dansimp
 ms.date: 09/14/2020
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Application Guard testing scenarios
