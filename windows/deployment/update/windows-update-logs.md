@@ -31,7 +31,7 @@ The following table describes the log files created by Windows Update.
 To merge and convert Windows Update trace files (.etl files) into a single readable WindowsUpdate.log file, see [Get-WindowsUpdateLog](https://docs.microsoft.com/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps&preserve-view=tru). 
 
 >[!NOTE]
->When you run the **Get-WindowsUpdateLog** cmdlet, an copy of WindowsUpdate.log file is created as a static log file. It does not update as the old WindowsUpate.log unless you run **Get-WindowsUpdateLog** again. 
+>When you run the **Get-WindowsUpdateLog** cmdlet, an copy of WindowsUpdate.log file is created as a static log file. It does not update as the old WindowsUpdate.log unless you run **Get-WindowsUpdateLog** again. 
  
 ### Windows Update log components 
 The Windows Update engine has different component names. The following are some of the most common components that appear in the WindowsUpdate.log file: 

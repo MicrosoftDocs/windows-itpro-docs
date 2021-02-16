@@ -101,6 +101,14 @@ It's possible to override the blocked category in web content filtering to allow
 2. Enter the domain of the site
 3. Set the policy action to **Allow**.  
 
+### Reporting inaccuracies
+
+If you encounter a domain that has been incorrectly categorized, you can report inaccuracies directly to us from the Web Content Filtering reports page. This feature is available only in the new Microsoft 365 security center (security.microsoft.com).
+
+To report an inaccuracy, navigate to **Reports > Web protection > Web Content Filtering Details > Domains**. On the domains tab of our Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Report Inaccuracy**.
+
+A panel will open where you can select the priority and add additional details such as the suggested category for re-categorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
+
 ## Web content filtering cards and details
 
 Select **Reports > Web protection** to view cards with information about web content filtering and web threat protection. The following cards provide summary information about web content filtering.
