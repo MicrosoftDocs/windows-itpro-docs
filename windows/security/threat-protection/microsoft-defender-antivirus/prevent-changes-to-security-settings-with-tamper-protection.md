@@ -68,7 +68,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 | Review your security recommendations | [Review security recommendations](#review-your-security-recommendations) |
 | Review the list of frequently asked questions (FAQs) | [Browse the FAQs](#view-information-about-tampering-attempts) |
 
-## Turn tamper protection on (or off) for an individual machine
+## Manage tamper protection on an individual machine
 
 > [!NOTE]
 > Tamper protection blocks attempts to modify Microsoft Defender Antivirus settings through the registry.
@@ -87,11 +87,11 @@ Here's what you see in the Windows Security app:
 2. Select **Virus & threat protection** > **Virus & threat protection settings**.
 3. Set **Tamper Protection** to **On** or **Off**.
 
-## Turn tamper protection on (or off) for your organization using Intune
+## Manage tamper protection for your organization using Intune
 
 If you are part of your organization's security team, and your subscription includes [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune), you can turn tamper protection on (or off) for your organization in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com) portal.
 
-### Prerequisites for managing tamper protection in Intune
+### Requirements for managing tamper protection in Intune
 
 - You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations.
 - Your organization uses [Intune to manage devices](https://docs.microsoft.com/intune/fundamentals/what-is-device-management). ([Intune licenses](https://docs.microsoft.com/intune/fundamentals/licenses) are required; Intune is included in Microsoft 365 E5.)
@@ -144,11 +144,11 @@ See the following resources:
 - [Settings for the Windows Security experience profile in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/antivirus-security-experience-windows-settings)
 - [Tech Community Blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
-## Turn tamper protection on (or off) in the Microsoft Defender Security Center
+## Manage tamper protection in the Microsoft Defender Security Center
 
 Currently in preview, tamper protection can be turned on or off in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
 
-### Prerequisites for managing tamper protection in the Microsoft Defender Security Center
+### Requirements for managing tamper protection in the Microsoft Defender Security Center
 
 - You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations.
 - Your Windows devices must be running one of the following versions of Windows:
@@ -157,11 +157,11 @@ Currently in preview, tamper protection can be turned on or off in the Microsoft
    - Windows Server, version [1803](https://docs.microsoft.com/windows/release-health/status-windows-10-1803) or later
    - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
    - For more information about releases, see [Windows 10 release information](https://docs.microsoft.com/windows/release-health/release-information).
-- Your devices must be onboarded to MIcrosoft Defender for Endpoint.
-- Your devices must be using anti-malware platform version 4.18.2010.7 (or above) and anti-malware engine version 1.1.15500.X (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
-- Cloud Protection must be turned on.
+- Your devices must be [onboarded to MIcrosoft Defender for Endpoint](../microsoft-defender-atp/onboarding.md).
+- Your devices must be using anti-malware platform version 4.18.2010.7 (or above) and anti-malware engine version 1.1.17600.5 (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
+- [Cloud-delivered protection must be turned on](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-
+### Turn tamper protection on (or off) in the Microsoft Defender Security Center 
 
 ### Keep the following points in mind
 
