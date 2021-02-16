@@ -182,8 +182,7 @@ Administrators can disable the "Check for updates" option for users by enabling 
 
 ## Related topics
 
-- [Update Windows 10 in the enterprise](index.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Update Windows 10 in the enterprise](index.md) 
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)

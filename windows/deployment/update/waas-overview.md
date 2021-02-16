@@ -18,7 +18,6 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 IoT Mobile
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -197,8 +196,7 @@ With all these options, which an organization chooses depends on the resources, 
 ## Related topics
 
 - [Update Windows 10 in the enterprise](index.md)
-- [Quick guide to Windows as a service](waas-quick-start.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Quick guide to Windows as a service](waas-quick-start.md) 
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
