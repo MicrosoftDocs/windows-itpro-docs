@@ -151,7 +151,7 @@ Setting the value for this cmdlet to `Disabled` turns the feature off if it has 
 
 See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
-### View PUA events
+## View PUA events
 
 PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune. You can also use the `Get-MpThreat` cmdlet to view threats that Microsoft Defender Antivirus handled. Here's an example:
 
@@ -174,7 +174,7 @@ You can turn on email notifications to receive mail about PUA detections.
 
 See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Microsoft Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
-### Allow-listing apps
+## Excluding files
 
 Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed.
 
