@@ -1,7 +1,7 @@
 ---
-title: Windows Sandbox 
+title: Windows Sandbox
 description: 
-ms.prod: w10
+ms.prod: m365-security
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -11,6 +11,7 @@ ms.topic: article
 ms.localizationpriority: 
 ms.date: 
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Windows Sandbox 

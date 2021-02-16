@@ -14,7 +14,7 @@ metadata:
   ms.collection: M365-identity-device-management
   ms.topic: article
   localizationpriority: medium
-  ms.date: 01/12/2021
+  ms.date: 01/14/2021
   ms.reviewer: 
     
 title: Windows Hello for Business Frequently Asked Questions (FAQ)
@@ -51,6 +51,16 @@ sections:
           
           The statement "PIN is stronger than Password" is not directed at the strength of the entropy used by the PIN. It's about the difference between providing entropy versus continuing the use of a symmetric key (the password). The TPM has anti-hammering features that thwart brute-force PIN attacks (an attacker's continuous attempt to try all combination of PINs). Some organizations may worry about shoulder surfing. For those organizations, rather than increase the complexity of the PIN, implement the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
           
+      - question: How does Windows Hello for Business work with Azure AD registered devices?
+        answer: |
+          On Azure AD registered devices, a user will be asked to provision a Windows Hello for Business key if the feature is enabled by mobile device management policy. If the user has an existing Windows Hello container for use with their local or Microsoft connected account, the Windows Hello for Business key will be enrolled in their existing container and will be protected using their exiting gestures.
+
+          If a user has signed into their Azure AD registered device with Windows Hello, their Windows Hello for Business key will be used to authenticate the user's work identity when they try to use Azure AD resources. The Windows Hello for Business key meets Azure AD multi-factor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. 
+
+          It is possible to Azure AD register a domain joined device. If the domain joined device has a convenience PIN, login with the convenience PIN will no longer work. This configuration is not supported by Windows Hello for Business. 
+
+          For more information please read [Azure AD registered devices](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register).
+
       - question: I have Windows Server 2016 domain controller(s), so why is the Key Admins group missing?
         answer: |
           The **Key Admins** and **Enterprise Key Admins** groups are created when you install the first Windows Server 2016 domain controller into a domain. Domain controllers running previous versions of Windows Server cannot translate the security identifier (SID) to a name. To resolve this, transfer the PDC emulator domain role to a domain controller running Windows Server 2016.
@@ -126,7 +136,7 @@ sections:
         answer: |
           Review [Azure AD Connect sync: Attributes synchronized to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized) for a list of attributes that sync based on scenarios. The base scenarios that include Windows Hello for Business are the [Windows 10](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#windows-10) scenario and the [Device writeback](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#device-writeback) scenario. Your environment may include additional attributes.
           
-      - question: Is Windows Hello for Business multifactor authentication?
+      - question: Is Windows Hello for Business multi-factor authentication?
         answer: |
           Windows Hello for Business is two-factor authentication based on the observed authentication factors of: something you have, something you know, and something that's part of you. Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. By using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
           
