@@ -24,6 +24,8 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
+The following managed security service providers can be accessed through the portal. 
+
 Logo |Partner name   | Description 
 :---|:---|:---
 ![Image of BDO Digital logo](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | BDO Digital's Managed Defense leverages best practice tools, AI, and in-house security experts for 24/7/365 identity protection
