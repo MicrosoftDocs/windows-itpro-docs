@@ -60,15 +60,15 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 | To perform this task... | See this... |
 |:---|:---|
-| Turn tamper protection on for an individual device | [Use the Windows Security app](#turn-tamper-protection-on-or-off-for-an-individual-machine) |
-| Turn tamper protection on for your organization | [Use Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune) |
-| Turn tamper protection on for devices running Windows 10 and Windows Server 2019 with Configuration Manager | [Use tenant attach with Configuration Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006) |
-| Turn tamper protection on in the Microsoft Defender Security Center |[Use the Microsoft Defender Security Center](#turn-tamper-protection-on-or-off-in-the-microsoft-defender-security-center)  |
+| Turn tamper protection on for an individual device | [Use the Windows Security app](#manage-tamper-protection-on-an-individual-device) |
+| Turn tamper protection on for your organization | [Use Intune](#manage-tamper-protection-for-your-organization-using-intune) |
+| Turn tamper protection on for devices running Windows 10 and Windows Server 2019 with Configuration Manager | [Use tenant attach with Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006) |
+| Turn tamper protection on in the Microsoft Defender Security Center |[Use the Microsoft Defender Security Center](#manage-tamper-protection-for-your-organiztion-using-the-microsoft-defender-security-center)  |
 | View details about tampering attempts on devices | [View information about tampering attempts](#view-information-about-tampering-attempts) |
 | Review your security recommendations | [Review security recommendations](#review-your-security-recommendations) |
 | Review the list of frequently asked questions (FAQs) | [Browse the FAQs](#view-information-about-tampering-attempts) |
 
-## Manage tamper protection on an individual machine
+## Manage tamper protection on an individual device
 
 > [!NOTE]
 > Tamper protection blocks attempts to modify Microsoft Defender Antivirus settings through the registry.
@@ -122,7 +122,7 @@ If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release
 2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) PowerShell cmdlet.
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
 
-## Manage tamper protection with Configuration Manager, version 2006
+## Manage tamper protection for your organization with Configuration Manager, version 2006
 
 > [!IMPORTANT]
 > The procedure can be used to extend tamper protection to devices running Windows 10 and Windows Server 2019. Make sure to review the prerequisites and other information in the resources mentioned in this procedure.
@@ -144,7 +144,7 @@ See the following resources:
 - [Settings for the Windows Security experience profile in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/antivirus-security-experience-windows-settings)
 - [Tech Community Blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
-## Manage tamper protection in the Microsoft Defender Security Center
+## Manage tamper protection for your organization using the Microsoft Defender Security Center
 
 Currently in preview, tamper protection can be turned on or off in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
 
