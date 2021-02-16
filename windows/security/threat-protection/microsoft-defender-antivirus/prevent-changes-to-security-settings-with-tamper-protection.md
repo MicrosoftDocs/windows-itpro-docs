@@ -169,7 +169,7 @@ Currently in preview, tamper protection can be turned on or off in the Microsoft
 
 ### Turn tamper protection on (or off) in the Microsoft Defender Security Center 
 
-:::image type="content" source="images/mde-turn-tamperprotect-on.png" alt-text="Turn tamper protection on in the Microsoft Defender Security Center":::
+![Turn tamper protection on in the Microsoft Defender Security Center](images/mde-turn-tamperprotect-on.png)
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2. Choose **Settings**.
