@@ -1,9 +1,9 @@
 ---
-title: Microsoft Defender ATP device timeline event flags
-description: Use Microsoft Defender ATP device timeline event flags to 
-keywords: Defender ATP device timeline, event flags
+title: Microsoft Defender for Endpoint device timeline event flags
+description: Use Microsoft Defender for Endpoint device timeline event flags to
+keywords: Defender for Endpoint device timeline, event flags
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Microsoft Defender for Endpoint device timeline event flags

@@ -4,7 +4,7 @@ description: Learn how to collect logs using live response to troubleshoot Micro
 keywords: support, log, collect, troubleshoot, live response, liveanalyzer, analyzer, live, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: troubleshooting
+ms.technology: mde
 ---
 
 # Collect support logs in Microsoft Defender for Endpoint using live response 
@@ -22,6 +23,10 @@ ms.topic: troubleshooting
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+
 
 When contacting support, you may be asked to provide the output package of the Microsoft Defender for Endpoint Client Analyzer tool.
 
@@ -41,12 +46,12 @@ This topic provides instructions on how to run the tool via Live Response.
 
 4. Select **Choose file**.
 
-    ![Image of choose file button](images/choose-file.png)
+    ![Image of choose file button1](images/choose-file.png)
 
 5. Select the downloaded file named MDELiveAnalyzer.ps1 and then click on **Confirm**
 
 
-   ![Image of choose file button](images/analyzer-file.png)
+   ![Image of choose file button2](images/analyzer-file.png)
 
 
 6. While still in the LiveResponse session, use the commands below to run the analyzer and collect the result file:

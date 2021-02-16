@@ -3,7 +3,7 @@ title: Delete Indicator API.
 description: Learn how to use the Delete Indicator API to delete an Indicator entity by ID in Microsoft Defender Advanced Threat Protection.
 keywords: apis, public api, supported apis, delete, ti indicator, entity, id
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Delete Indicator API
@@ -75,6 +76,6 @@ If Indicator with the specified id was not found - 404 Not Found.
 
 Here is an example of the request.
 
-```
+```http
 DELETE https://api.securitycenter.microsoft.com/api/indicators/995
 ```

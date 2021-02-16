@@ -4,7 +4,7 @@ description: Learn about required GPOs for isolation zones and how many server i
 ms.assetid: c97b1f2f-51d8-4596-b38a-8a3f6f706be4
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Server Isolation GPOs

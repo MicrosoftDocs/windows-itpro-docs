@@ -4,7 +4,7 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Windows ATP endpoints, configure Microsoft Defender Advanced Threat Protection endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
+ms.technology: mde
 ---
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) devices
@@ -25,9 +26,8 @@ ms.date: 04/16/2020
 
 **Applies to:**
 - Virtual desktop infrastructure (VDI) devices
+- Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
 
->[!WARNING]
-> Microsoft Defender for Endpoint support for Windows Virtual Desktop multi-user scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However single session scenarios on Windows Virtual Desktop are fully supported.
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
@@ -58,6 +58,9 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 >[!WARNING]
 > For environments where there are low resource configurations, the VDI boot procedure might slow the Defender for Endpoint sensor onboarding. 
+
+
+### For Windows 10 or Windows Server 2019
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
@@ -108,6 +111,14 @@ The following steps will guide you through onboarding VDI devices and will highl
 6. Click **Devices list** on the Navigation pane.
 
 7. Use the search function by entering the device name and select **Device** as search type.
+
+
+## For downlevel SKUs
+1. Set registry value 'HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging|VDI’ to “NonPersistent'
+
+2. Follow the [server onboarding process](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016). 
+
+
 
 ## Updating non-persistent virtual desktop infrastructure (VDI) images
 As a best practice, we recommend using offline servicing tools to patch golden/master images.<br>

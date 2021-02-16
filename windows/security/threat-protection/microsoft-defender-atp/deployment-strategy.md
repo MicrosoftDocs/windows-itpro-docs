@@ -1,9 +1,9 @@
 ---
-title: Plan your Microsoft Defender ATP deployment 
-description: Select the best Microsoft Defender ATP deployment strategy for your environment
+title: Plan your Microsoft Defender for Endpoint deployment
+description: Select the best Microsoft Defender for Endpoint deployment strategy for your environment
 keywords: deploy, plan, deployment strategy, cloud native, management, on prem, evaluation, onboarding, local, group policy, gp, endpoint manager, mem
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Plan your Microsoft Defender for Endpoint deployment 
