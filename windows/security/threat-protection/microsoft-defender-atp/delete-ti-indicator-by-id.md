@@ -29,7 +29,7 @@ ms.technology: mde
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
