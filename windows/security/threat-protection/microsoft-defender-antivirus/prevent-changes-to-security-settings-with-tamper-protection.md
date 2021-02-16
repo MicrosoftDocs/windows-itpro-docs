@@ -55,7 +55,7 @@ Tamper protection essentially locks Microsoft Defender Antivirus and prevents yo
 - Changing settings through PowerShell cmdlets
 - Editing or removing security settings through group policies
 
-Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how third-party antivirus apps register with the Windows Security app. If your organization is using Windows 10 Enterprise E5, individual users can't change the tamper protection setting; tamper protection is managed by your security team.
+Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how third-party antivirus apps register with the Windows Security app. If your organization is using Windows 10 Enterprise E5, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team.
 
 ### What do you want to do?
 
