@@ -123,9 +123,7 @@ If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release
 #### Use PowerShell to determine whether tamper protection is turned on
 
 1. Open the Windows PowerShell app.
-
 2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) PowerShell cmdlet.
-
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
 
 ## Manage tamper protection with Configuration Manager, version 2006
@@ -135,24 +133,17 @@ If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release
 
 If you're using [version 2006 of Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10, Windows Server 2016, and Windows Server 2019 by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver your endpoint security configuration policies to your on-premises collections & devices.
 
+:::image type="content" source="images/win-security- exp-policy-endpt-security.png" alt-text="Windows security experience in Endpoint Manager":::
+
 1. Set up tenant attach. See [Microsoft Endpoint Manager tenant attach: Device sync and device actions](https://docs.microsoft.com/mem/configmgr/tenant-attach/device-sync-actions).
-
 2. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** > **Antivirus**, and choose **+ Create Policy**.<br/> 
-
    - In the **Platform** list, select **Windows 10 and Windows Server (ConfigMgr)**.  
-     
    - In the **Profile** list, select **Windows Security experience (preview)**. <br/>
-   
-   The following screenshot illustrates how to create your policy:
-
-   :::image type="content" source="images/win-security- exp-policy-endpt-security.png" alt-text="Windows security experience in Endpoint Manager":::
-
 3. Deploy the policy to your device collection.
 
 Need help? See the following resources:
 
 - [Settings for the Windows Security experience profile in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/antivirus-security-experience-windows-settings)
-
 - [Tech Community Blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
 
