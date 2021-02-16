@@ -146,7 +146,11 @@ See the following resources:
 
 ## Manage tamper protection for your organization using the Microsoft Defender Security Center
 
-Currently in preview, tamper protection can be turned on or off in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
+Currently in preview, tamper protection can be turned on or off in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). Here are a few points to keep in mind:
+
+- When you use the Microsoft Defender Security Center to manage tamper protection, you do not have to use Intune or the tenant attach method.
+- When you manage tamper protection in the Microsoft Defender Security Center, the setting is applied tenant wide, affecting all of your devices that are running Windows 10. To fine-tune tamper protection (such as having tamper protection on for some devices but off for others), use either [Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune) or the [tenant attach method](#manage-tamper-protection-with-configuration-manager-version-2006).
+- If you have a hybrid environment, tamper protection settings configured in Intune take precedence over settings configured in the Microsoft Defender Security Center. 
 
 ### Requirements for managing tamper protection in the Microsoft Defender Security Center
 
@@ -163,12 +167,9 @@ Currently in preview, tamper protection can be turned on or off in the Microsoft
 
 ### Turn tamper protection on (or off) in the Microsoft Defender Security Center 
 
-### Keep the following points in mind
-
-- When you use the Microsoft Defender Security Center to manage tamper protection, you do not have to use Intune or the tenant attach method.
-- When you manage tamper protection in the Microsoft Defender Security Center, the setting is applied tenant wide, affecting all of your devices that are running Windows 10. To fine-tune tamper protection (such as having tamper protection on for some devices but off for others), use either [Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune) or the [tenant attach method](#manage-tamper-protection-with-configuration-manager-version-2006).
-- If you have a hybrid environment, tamper protection settings configured in Intune take precedence over settings configured in the Microsoft Defender Security Center. 
-
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+2. Choose **Settings**.
+3. Go to **General** > **Advanced features**, and then turn tamper protection on.
 
 ## View information about tampering attempts
 
