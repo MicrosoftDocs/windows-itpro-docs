@@ -3,7 +3,7 @@ title: Managing and troubleshooting Windows Defender Application Control policie
 description: Gather information about how your deployed Windows Defender Application Control policies are behaving.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 03/16/2020
+ms.technology: mde
 ---
 
 # Windows Defender Application Control operational guide

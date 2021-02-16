@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 0ec6f7c1-4d82-4339-94c0-debb2d1ac109
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/29/2020
+ms.technology: mde
 ---
 
 # Domain member: Maximum machine account password age

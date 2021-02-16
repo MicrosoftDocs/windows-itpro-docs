@@ -1,11 +1,11 @@
 ---
-title:  Create indicators for files
+title: Create indicators for files
 ms.reviewer: 
 description: Create indicators for a file hash that define the detection, prevention, and exclusion of entities.
 keywords: file, hash, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Create indicators for files
@@ -26,6 +27,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
@@ -39,7 +41,7 @@ There are two ways you can create indicators for files:
 ### Before you begin
 It's important to understand the following prerequisites prior to creating indicators for files:
 
-- This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
+- This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md).
 - The Antimalware client version must be 4.18.1901.x or later.
 - Supported on machines on Windows 10, version 1703 or later, Windows server 2016 and 2019.
 - To start blocking files, you first need to [turn the **Block or allow** feature on](advanced-features.md) in Settings.

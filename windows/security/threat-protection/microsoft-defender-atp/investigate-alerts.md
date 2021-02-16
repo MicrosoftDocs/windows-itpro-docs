@@ -4,7 +4,7 @@ description: Use the investigation options to get details on alerts are affectin
 keywords: investigate, investigation, devices, device, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
+ms.technology: mde
 ---
 
 # Investigate alerts in Microsoft Defender for Endpoint

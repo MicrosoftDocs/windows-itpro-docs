@@ -5,13 +5,14 @@ ms.assetid: 91915cb2-1b3f-4fb7-afa0-d03df95e8161
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 11/13/2018
+ms.technology: mde
 ---
 
 # Minimum password age

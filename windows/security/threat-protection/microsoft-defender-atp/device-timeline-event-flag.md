@@ -1,9 +1,9 @@
 ---
 title: Microsoft Defender ATP device timeline event flags
-description: Use Microsoft Defender ATP device timeline event flags to 
+description: Use Microsoft Defender ATP device timeline event flags to
 keywords: Defender ATP device timeline, event flags
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,16 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Microsoft Defender for Endpoint device timeline event flags
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Event flags in the Defender for Endpoint device timeline help you filter and organize specific events when you're  investigate potential attacks.
 

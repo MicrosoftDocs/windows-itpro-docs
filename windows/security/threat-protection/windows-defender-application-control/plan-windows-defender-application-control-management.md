@@ -1,9 +1,9 @@
 ---
 title: Plan for WDAC policy management (Windows 10)
 description: Learn about the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control policies.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/21/2018
+ms.technology: mde
 ---
 
 # Plan for Windows Defender Application Control lifecycle policy management

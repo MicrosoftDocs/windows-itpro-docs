@@ -4,7 +4,7 @@ description: Learn about best practices, security considerations and more for th
 ms.assetid: 4b7b0298-b130-40f8-960d-60418ba85f76
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 01/04/2019
+ms.technology: mde
 ---
 
 # SMBv1 Microsoft network client: Digitally sign communications (always)

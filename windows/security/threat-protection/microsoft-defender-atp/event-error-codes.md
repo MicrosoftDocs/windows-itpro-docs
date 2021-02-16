@@ -4,7 +4,7 @@ description: Get descriptions and further troubleshooting steps (if required) fo
 keywords: troubleshoot, event viewer, log summary, failure code, failed, Microsoft Defender for Endpoint service, cannot start, broken, can't start
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
+ms.technology: mde
 ---
 
 
@@ -28,7 +29,7 @@ ms.date: 05/21/2018
 
 - Event Viewer
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual devices.
 
