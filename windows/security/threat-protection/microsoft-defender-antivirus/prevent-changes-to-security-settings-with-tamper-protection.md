@@ -59,7 +59,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 ### What do you want to do?
 
-| To perform this task... | See this... |
+| To perform this task... | See this section... |
 |:---|:---|
 | Turn tamper protection on for an individual device | [Use the Windows Security app](#manage-tamper-protection-on-an-individual-device) |
 | Turn tamper protection on for your organization | [Use Intune](#manage-tamper-protection-for-your-organization-using-intune) |
