@@ -65,7 +65,7 @@ We recommend that you use the Windows Insider Release Preview channel for valida
 
 ### Long-term Servicing Channel
 
-The **Long Term Servicing Channel** is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATMs. Devices on this channel receive new feature releases every two to three years. LTSB releases service a special LTSB edition of Windows 10 and are only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
+The **Long-Term Servicing Channel** is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATMs. Devices on this channel receive new feature releases every two to three years. LTSB releases service a special LTSB edition of Windows 10 and are only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
 The Semi-Annual Channel is the default servicing channel for all Windows 10 devices except those with the LTSB edition installed. The following table shows the servicing channels available to each Windows 10 edition. 
 
