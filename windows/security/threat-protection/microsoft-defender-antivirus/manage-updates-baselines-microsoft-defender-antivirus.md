@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 02/04/2021
+ms.date: 02/12/2021
 ms.technology: mde
 ---
 
@@ -78,11 +78,11 @@ All our updates contain
 <br/><br/>
 
 <details>
-<summary> January-2021 (Platform: 4.18.2101.8 | Engine: 1.1.17800.5)</summary>
+<summary> January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
 &ensp;Released: **February 2, 2021**  
-&ensp;Platform: **4.18.2101.8**  
+&ensp;Platform: **4.18.2101.9**  
 &ensp;Engine: **1.1.17800.5**  
 &ensp;Support phase: **Security and Critical Updates**
     
@@ -93,6 +93,7 @@ All our updates contain
 - Increased visibility for credential stealing attempts
 - Improvements in antitampering features in Microsoft Defender Antivirus services
 - Improved support for ARM x64 emulation
+- Fix: EDR Block notification remains in threat history after real-time protection performed initial detection
 
 ### Known Issues
 No known issues  
@@ -146,7 +147,7 @@ After a new package version is released, support for the previous two versions i
 &ensp;Released: **October 01, 2020**  
 &ensp;Platform: **4.18.2009.7**  
 &ensp;Engine: **1.1.17500.4**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -172,7 +173,8 @@ No known issues
 &ensp;Released: **August 27, 2020**  
 &ensp;Platform: **4.18.2008.9**  
 &ensp;Engine: **1.1.17400.5**  
-    
+&ensp;Support phase: **Technical upgrade support (only)**
+
 ### What's new
 
 - Add more telemetry events
