@@ -30,8 +30,9 @@ ms.technology: mde
 Tamper protection, currently in [preview](../../includes/prerelease.md), is available on devices that are running one of the following versions of Windows:
 
 - Windows 10
-- Windows Server 2016 and 2019 (if you are using either   [tenant attach with Configuration Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006) or  
-
+- Windows Server 2019
+- Windows Server, version 1803 or later
+- Windows Server 2016
 
 ## Overview
 
