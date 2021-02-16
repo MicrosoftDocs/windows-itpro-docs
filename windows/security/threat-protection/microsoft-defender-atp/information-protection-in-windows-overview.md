@@ -86,7 +86,7 @@ Data discovery based on Defender for Endpoint is also available in [Azure Log An
 
 For more information on Azure Information Protection analytics, see [Central reporting for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
-Open Azure Log Analytics in Azure Portal and open a query builder (standard or classic).
+Open Azure Log Analytics in Azure portal and open a query builder (standard or classic).
 
 To view Defender for Endpoint data, perform a query that contains:
 

@@ -59,7 +59,7 @@ GET /api/Software/{Id}/vulnerabilities
 Empty
 
 ## Response
-If successful, this method returns 200 OK with a a list of vulnerabilities exposed by the specified software. 
+If successful, this method returns 200 OK with a list of vulnerabilities exposed by the specified software. 
 
 
 ## Example

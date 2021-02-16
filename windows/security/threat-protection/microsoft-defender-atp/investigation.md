@@ -50,7 +50,7 @@ Property |	Type	|	Description
 id | String | Identity of the investigation entity. 
 startTime | DateTime Nullable | The date and time when the investigation was created. 
 endTime | DateTime Nullable | The date and time when the investigation was completed. 
-cancelledBy | String | The ID of the user/application that cancelled that investigation. 
+cancelledBy | String | The ID of the user/application that canceled that investigation. 
 investigationState | Enum | The current state of the investigation. Possible values are: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 statusDetails | String | Additional information about the state of the investigation.
 machineId | String | The ID of the device on which the investigation is executed.
