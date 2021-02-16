@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business Overview (Windows 10)
 ms.reviewer: An overview of Windows Hello for Business
-description: An overview of Windows Hello for Business 
+description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -94,8 +94,7 @@ For details, see [How Windows Hello for Business works](hello-how-it-works.md).
 
 Windows Hello for Business can use either keys (hardware or software) or certificates in hardware or software. Enterprises that have a public key infrastructure (PKI) for issuing and managing end user certificates can continue to use PKI in combination with Windows Hello. Enterprises that do not use PKI or want to reduce the effort associated with managing user certificates can rely on key-based credentials for Windows Hello but still use certificates on their domain controllers as a root of trust.
 
-Windows Hello for Business with a key does not support RDP. RDP does not support authentication with a key or a self signed certificate. RDP with Windows Hello for Business is supported with certificate based deployments.
-
+Windows Hello for Business with a key does not support supplied credentials for RDP. RDP does not support authentication with a key or a self signed certificate. RDP with Windows Hello for Business is supported with certificate based deployments as a supplied credential. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/remote-credential-guard).
 
 ## Learn more
 

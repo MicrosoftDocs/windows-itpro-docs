@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
+ms.custom: bitlocker
 ---
 
 # Using BitLocker with other programs FAQ
@@ -36,7 +37,7 @@ BitLocker has a storage driver stack that ensures memory dumps are encrypted whe
 
 ## Can BitLocker support smart cards for pre-boot authentication?
 
-BitLocker does not support smart cards for pre-boot authentication. There is no single industry standard for smart card support in the firmware, and most computers either do not implement firmware support for smart cards, or only support specific smart cards and readers. This lack of standardization makes supporting them very difficult.
+BitLocker does not support smart cards for pre-boot authentication. There is no single industry standard for smart card support in the firmware, and most computers either do not implement firmware support for smart cards, or only support specific smart cards and readers. This lack of standardization makes supporting them difficult.
 
 ## Can I use a non-Microsoft TPM driver?
 
@@ -68,7 +69,7 @@ The **Save to USB** option is not shown by default for removable drives. If the 
 
 ## Why am I unable to automatically unlock my drive?
 
-Automatic unlocking for fixed data drives requires that the operating system drive also be protected by BitLocker. If you are using a computer that does not have a BitLocker-protected operating system drive, the drive cannot be automatically unlocked. For removable data drives, you can add automatic unlocking by right-clicking the drive in Windows Explorer and clicking **Manage BitLocker**. You will still be able to use the password or smart card credentials you supplied when you turned on BitLocker to unlock the removable drive on other computers.
+Automatic unlocking for fixed data drives requires the operating system drive to also be protected by BitLocker. If you are using a computer that does not have a BitLocker-protected operating system drive, the drive cannot be automatically unlocked. For removable data drives, you can add automatic unlocking by right-clicking the drive in Windows Explorer and clicking **Manage BitLocker**. You will still be able to use the password or smart card credentials you supplied when you turned on BitLocker to unlock the removable drive on other computers.
 
 ## Can I use BitLocker in Safe Mode?
 
@@ -94,8 +95,8 @@ Yes. However, shadow copies made prior to enabling BitLocker will be automatical
 ## Does BitLocker support virtual hard disks (VHDs)?
 
 BitLocker should work like any specific physical machine within its hardware limitations as long as the environment (physical or virtual) meets Windows Operating System requirements to run.
-- With TPM - Yes it is supported
-- Without  TPM - Yes it is supported (with password protector)
+- With TPM: Yes, it is supported.
+- Without  TPM: Yes, it is supported (with password protector).
 
 BitLocker is also supported on data volume VHDs, such as those used by clusters, if you are running Windows 10, Windows 8.1, Windows 8, Windows Server 2016, Windows Server 2012 R2, or Windows Server 2012.
 

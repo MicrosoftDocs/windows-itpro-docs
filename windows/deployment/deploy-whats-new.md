@@ -3,7 +3,7 @@ title: What's new in Windows 10 deployment
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Changes and new features related to Windows 10 deployment
+description: Use this article to learn about new solutions and online content related to deploying Windows 10 in your organization.
 keywords: deployment, automate, tools, configure, news
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -13,12 +13,13 @@ ms.pagetype: deploy
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # What's new in Windows 10 deployment
 
-**Applies to**
--   Windows 10
+**Applies to:**
+- Windows 10
 
 ## In this topic
 
@@ -42,10 +43,10 @@ The [Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/
 
 ## Microsoft 365
 
-Microsoft 365 is a new offering from Microsoft that combines 
+Microsoft 365 is a new offering from Microsoft that combines
 - Windows 10
 - Office 365
-- Enterprise Mobility and Security (EMS). 
+- Enterprise Mobility and Security (EMS).
 
 See [Deploy Windows 10 with Microsoft 365](deploy-m365.md) for an overview, which now includes a link to download a nifty [M365 Enterprise poster](deploy-m365.md#m365-enterprise-poster).
 
@@ -60,16 +61,16 @@ Windows PowerShell cmdlets for Delivery Optimization have been improved:
 - **Enable-DeliveryOptimizationVerboseLogs** is a new cmdlet that enables a greater level of logging detail to assist in troubleshooting.
 
 Additional improvements in [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) include:
-- Enterprise network [throttling is enhanced](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-download-throttling-options-for-delivery-optimization-build-18917) to optimize foreground vs. background throttling.
+- Enterprise network [throttling is enhanced](https://docs.microsoft.com/windows-insider/archive/new-for-business#new-download-throttling-options-for-delivery-optimization-build-18917) to optimize foreground vs. background throttling.
 - Automatic cloud-based congestion detection is available for PCs with cloud service support.
-- Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Microsoft 365 Apps for enterprise updates, and Intune content, with Microsoft Endpoint Configuration Manager content coming soon! 
+- Improved peer efficiency for enterprises and educational institutions with complex networks is enabled with [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Microsoft 365 Apps for enterprise updates and Intune content, with Microsoft Endpoint Manager content coming soon!
 
 The following Delivery Optimization policies are removed in the Windows 10, version 2004 release:
 
 - Percentage of Maximum Download Bandwidth (DOPercentageMaxDownloadBandwidth)
   - Reason: Replaced with separate policies for foreground and background
 - Max Upload Bandwidth (DOMaxUploadBandwidth)
-  - Reason: impacts uploads to internet peers only, which isn't used in Enterprises. 
+  - Reason: impacts uploads to internet peers only, which isn't used in enterprises.
 - Absolute max throttle (DOMaxDownloadBandwidth)
   - Reason: separated to foreground and background
 
@@ -79,11 +80,11 @@ The following Delivery Optimization policies are removed in the Windows 10, vers
 - Intune console updates: target version is now available allowing you to specify which version of Windows 10 you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
 - Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we have created a new policy that enables admins to opt devices out of the built-in safeguard holds.
 
-- [**Automatic Restart Sign-on (ARSO)**](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically log on as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
-- [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will be a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
+- [**Automatic Restart Sign-on (ARSO)**](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically log on as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.
+- [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will be a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period.
 - **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
-- **Pause updates**: We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again. 
-- **Improved update notifications**: When there’s an update requiring you to restart your device, you’ll see a colored dot on the Power button in the Start menu and on the Windows icon in your taskbar.
+- **Pause updates**: We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again.
+- **Improved update notifications**: When there's an update requiring you to restart your device, you'll see a colored dot on the Power button in the Start menu and on the Windows icon in your taskbar.
 - **Intelligent active hours**: To further enhance active hours, users will now have the option to let Windows Update intelligently adjust active hours based on their device-specific usage patterns. You must enable the intelligent active hours feature for the system to predict device-specific usage patterns.
 - **Improved update orchestration to improve system responsiveness**: This feature will improve system performance by intelligently coordinating Windows updates and Microsoft Store updates, so they occur when users are away from their devices to minimize disruptions.
 
@@ -103,7 +104,7 @@ For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterpris
 
 ### Windows Autopilot
 
-[Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) streamlines and automates the process of setting up and configuring new devices, with minimal interaction required from the end user. You can also use Windows Autopilot to reset, repurpose and recover devices. 
+[Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) streamlines and automates the process of setting up and configuring new devices, with minimal interaction required from the end user. You can also use Windows Autopilot to reset, repurpose, and recover devices.
 
 With the release of Windows 10, version 2004 you can configure [Windows Autopilot user-driven](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) Hybrid Azure Active Directory join with VPN support. This support is also backported to Windows 10, version 1909 and 1903.
 
@@ -115,7 +116,7 @@ The following Windows Autopilot features are available in Windows 10, version 19
 - The Intune [enrollment status page](https://docs.microsoft.com/intune/windows-enrollment-status) (ESP) now tracks Intune Management Extensions​.
 - [Cortana voiceover](https://docs.microsoft.com/windows-hardware/customize/desktop/cortana-voice-support) and speech recognition during OOBE is disabled by default for all Windows 10 Pro Education, and Enterprise SKUs.
 - Windows Autopilot is self-updating during OOBE. Starting with the Windows 10, version 1903 Autopilot functional and critical updates will begin downloading automatically during OOBE.
-- Windows Autopilot will set the [diagnostics data](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) level to Full on Windows 10 version 1903 and later during OOBE. 
+- Windows Autopilot will set the [diagnostics data](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) level to Full on Windows 10 version 1903 and later during OOBE.
 
 ### Microsoft Endpoint Configuration Manager
 
@@ -137,11 +138,11 @@ During the upgrade process, Windows Setup will extract all its sources files to 
 
 ### Upgrade Readiness
 
-The Upgrade Readiness tool moved from public preview to general availability on March 2, 2017. 
+The Upgrade Readiness tool moved from public preview to general availability on March 2, 2017.
 
-Upgrade Readiness helps you ensure that applications and drivers are ready for a Windows 10 upgrade. The solution provides up-to-date application and driver inventory, information about known issues, troubleshooting guidance, and per-device readiness and tracking details. 
+Upgrade Readiness helps you ensure that applications and drivers are ready for a Windows 10 upgrade. The solution provides up-to-date application and driver inventory, information about known issues, troubleshooting guidance, and per-device readiness and tracking details.
 
-The development of Upgrade Readiness has been heavily influenced by input from the community the development of new features is ongoing. To begin using Upgrade Readiness, add it to an existing Operation Management Suite (OMS) workspace or sign up for a new OMS workspace with the Upgrade Readiness solution enabled.  
+The development of Upgrade Readiness has been heavily influenced by input from the community; the development of new features is ongoing. To begin using Upgrade Readiness, add it to an existing Operation Management Suite (OMS) workspace or sign up for a new OMS workspace with the Upgrade Readiness solution enabled.
 
 For more information about Upgrade Readiness, see the following topics:
 
@@ -163,7 +164,7 @@ Device Health is the newest Windows Analytics solution that complements the exis
 
 ### MBR2GPT
 
-MBR2GPT.EXE converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. Previously, it was necessary to image, then wipe and reload a disk to change from MBR format to GPT. 
+MBR2GPT.EXE converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. Previously, it was necessary to image, then wipe and reload a disk to change from MBR format to GPT.
 
 There are many benefits to converting the partition style of a disk to GPT, including the use of larger disk partitions, added data reliability, and faster boot and shutdown speeds. The GPT format also enables you to use the Unified Extensible Firmware Interface (UEFI) which replaces the Basic Input/Output System (BIOS) firmware interface.  Security features of Windows 10 that require UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
@@ -182,14 +183,14 @@ The Windows Assessment and Deployment Kit (Windows ADK) contains tools that can 
 Download the Windows ADK and Windows PE add-on for Windows 10, version 2004 [here](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
 
 For information about what's new in the ADK, see [What's new in the Windows ADK for Windows 10, version 2004](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-kits-and-tools#whats-new-in-the-windows-adk-for-windows-10-version-2004).
- 
+
 Also see [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
 
 ## Testing and validation guidance
 
 ### Windows 10 deployment proof of concept (PoC)
 
-The Windows 10 PoC guide enables you to test Windows 10 deployment in a virtual environment and become familiar with deployment tools such as MDT and Configuration Manager. The PoC guide provides step-by-step instructions for installing and using Hyper-V to create a virtual lab environment. The guide makes extensive use of Windows PowerShell to streamline each phase of the installation and setup. 
+The Windows 10 PoC guide enables you to test Windows 10 deployment in a virtual environment and become familiar with deployment tools such as MDT and Configuration Manager. The PoC guide provides step-by-step instructions for installing and using Hyper-V to create a virtual lab environment. The guide makes extensive use of Windows PowerShell to streamline each phase of the installation and setup.
 
 For more information, see the following guides:
 

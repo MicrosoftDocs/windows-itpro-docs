@@ -12,7 +12,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 10/13/2017
+ms.date: 
 ---
 
 # Prerequisites for Microsoft Store for Business and Education
@@ -21,6 +21,9 @@ ms.date: 10/13/2017
 
 -   Windows 10
 -   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Customers who are in the Office 365 GCC environment or are eligible to buy with government pricing cannot use Microsoft Store for Business.
 
 There are a few prerequisites for using Microsoft Store for Business or Microsoft Store for Education.
 
@@ -64,7 +67,7 @@ If your organization restricts computers on your network from connecting to the 
   starting with Windows 10, version 1607)
  
 Store for Business requires Microsoft Windows HTTP Services (WinHTTP) to install, or update apps.
-For more information about how to configure WinHTTP proxy settings to devices, see [Use Group Policy to apply WinHTTP proxy settings to Windows clients](https://support.microsoft.com/en-us/help/4494447/use-group-policy-to-apply-winhttp-proxy-settings-to-clients).
+For more information about how to configure WinHTTP proxy settings to devices, see [Use Group Policy to apply WinHTTP proxy settings to Windows clients](https://support.microsoft.com/help/4494447/use-group-policy-to-apply-winhttp-proxy-settings-to-clients).
  
 
 

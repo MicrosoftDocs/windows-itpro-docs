@@ -4,7 +4,7 @@ description: Use device tags to group devices to capture context and enable dyna
 keywords: tags, device tags, device groups, groups, remediation, level, rules, aad group, role, assign, rank
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,11 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Create and manage device tags
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 Add tags on devices to create a logical group affiliation. Device tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. Tags can be used as a filter in **Devices list** view, or to group devices. For more information on device grouping, see [Create and manage device groups](machine-groups.md).
 
@@ -53,7 +57,8 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 Tags are added to the device view and will also be reflected on the **Devices list** view. You can then use the **Tags** filter to see the relevant list of devices.
 
 >[!NOTE]
-> Filtering might not work on tag names that contain parenthesis.
+> Filtering might not work on tag names that contain parenthesis.<br>
+> Filtering will only find portal set tags.
 
 You can also delete tags from this view.
 

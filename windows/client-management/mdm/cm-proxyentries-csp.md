@@ -1,6 +1,6 @@
 ---
 title: CM\_ProxyEntries CSP
-description: Configure proxy connections on mobile devices using CM\_ProxyEntries CSP.
+description: Learn how the CM\_ProxyEntries configuration service provider is used to configure proxy connections on the mobile device.
 ms.assetid: f4c3dc71-c85a-4c68-9ce9-19f408ff7a0a
 ms.reviewer: 
 manager: dansimp

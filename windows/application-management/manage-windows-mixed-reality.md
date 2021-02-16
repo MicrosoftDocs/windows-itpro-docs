@@ -1,8 +1,8 @@
 ---
 title: Enable or block Windows Mixed Reality apps in the enterprise (Windows 10)
+description: Learn how to enable Windows Mixed Reality apps in WSUS or block the Windows Mixed Reality portal in enterprises.
 ms.reviewer: 
 manager: dansimp
-description: Learn how to enable or block Windows Mixed Reality apps.
 keyboards: ["mr", "mr portal", "mixed reality portal", "mixed reality"]
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -38,11 +38,10 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
       > [!NOTE]
       > You must download the FOD .cab file that matches your operating system version.
 
-   1. Use `Add-Package` to add Windows Mixed Reality FOD to the image.
+   1. Use `Dism` to add Windows Mixed Reality FOD to the image.
 
       ```powershell
-      Add-Package
-      Dism /Online /add-package /packagepath:(path)
+      Dism /Online /Add-Package /PackagePath:(path)
       ```
       
       > [!NOTE]

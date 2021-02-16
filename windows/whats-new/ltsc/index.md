@@ -22,9 +22,9 @@ ms.topic: article
 
 This topic provides links to articles with information about what's new in each release of Windows 10 Enterprise LTSC, and includes a short description of this servicing channel. 
 
-[What's New in Windows 10 Enterprise 2019 LTSC](whats-new-windows-10-2019.md)<br>
-[What's New in Windows 10 Enterprise 2016 LTSC](whats-new-windows-10-2016.md)<br>
-[What's New in Windows 10 Enterprise 2015 LTSC](whats-new-windows-10-2015.md)
+[What's New in Windows 10 Enterprise LTSC 2019](whats-new-windows-10-2019.md)<br>
+[What's New in Windows 10 Enterprise LTSC 2016](whats-new-windows-10-2016.md)<br>
+[What's New in Windows 10 Enterprise LTSC 2015](whats-new-windows-10-2015.md)
 
 ## The Long Term Servicing Channel (LTSC)
 
@@ -32,9 +32,9 @@ The following table summarizes equivalent feature update versions of Windows 10 
 
 | LTSC release | Equivalent SAC release | Availability date |
 | --- | --- | --- |
-| Windows 10 Enterprise 2015 LTSC  | Windows 10, Version 1507 | 7/29/2015 |
-| Windows 10 Enterprise 2016 LTSC  | Windows 10, Version 1607 | 8/2/2016 |
-| Windows 10 Enterprise 2019 LTSC  | Windows 10, Version 1809 | 11/13/2018 |
+| Windows 10 Enterprise LTSC 2015  | Windows 10, Version 1507 | 7/29/2015 |
+| Windows 10 Enterprise LTSC 2016  | Windows 10, Version 1607 | 8/2/2016 |
+| Windows 10 Enterprise LTSC 2019  | Windows 10, Version 1809 | 11/13/2018 |
 
 >[!NOTE]
 >The Long Term Servicing Channel was previously called the Long Term Servicing Branch (LTSB). All references to LTSB are changed in this article to LTSC for consistency, even though the name of previous versions might still be displayed as LTSB.
@@ -49,4 +49,4 @@ For detailed information about Windows 10 servicing, see [Overview of Windows as
 ## See Also
 
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
-[Windows 10 - Release information](https://docs.microsoft.com/windows/windows-10/release-information): Windows 10 current versions by servicing option.
+[Windows 10 - Release information](https://docs.microsoft.com/windows/release-health/release-information): Windows 10 current versions by servicing option.

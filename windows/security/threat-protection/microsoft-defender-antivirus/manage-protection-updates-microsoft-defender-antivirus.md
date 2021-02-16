@@ -1,25 +1,29 @@
 ---
-title: Manage how and where Microsoft Defender AV receives updates
+title: Manage how and where Microsoft Defender Antivirus receives updates
 description: Manage the fallback order for how Microsoft Defender Antivirus receives protection updates.
 keywords: updates, security baselines, protection, fallback order, ADL, MMPC, UNC, file path, share, wsus
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: 
+ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
+ms.technology: mde
 ---
 
 # Manage the sources for Microsoft Defender Antivirus protection updates
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=22146631)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -68,7 +72,7 @@ Each source has typical scenarios that depend on how your network is configured,
 |Windows Server Update Service | You are using Windows Server Update Service to manage updates for your network.|
 |Microsoft Update | You want your endpoints to connect directly to Microsoft Update. This can be useful for endpoints that irregularly connect to your enterprise network, or if you do not use Windows Server Update Service to manage your updates.|
 |File share | You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host to download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-microsoft-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.|
-|Microsoft Endpoint Configuration Manager | You are using Microsoft Endpoint Configuration Manager to update your endpoints.|
+|Microsoft Endpoint Manager | You are using Microsoft Endpoint Manager to update your endpoints.|
 |Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware (formerly referred to as MMPC) |[Make sure your devices are updated to support SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update, and starting Monday October 21, 2019 security intelligence updates will be SHA-2 signed exclusively. <br/>Download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-microsoft-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source. It will only be used if updates cannot be downloaded from Windows Server Update Service or Microsoft Update for [a specified number of days](https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 You can manage the order in which update sources are used with Group Policy, Microsoft Endpoint Configuration Manager, PowerShell cmdlets, and WMI.
@@ -108,7 +112,7 @@ The procedures in this article first describe how to set the order, and then how
 
 ## Use Configuration Manager to manage the update location
 
-See [Configure Security intelligence Updates for Endpoint Protection](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-definition-updates) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
+See [Configure Security intelligence Updates for Endpoint Protection](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-definition-updates) for details on configuring Microsoft Endpoint Manager (current branch).
 
 
 ## Use PowerShell cmdlets to manage the update location
@@ -167,7 +171,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
     MD C:\Temp\TempSigs\x86
     ```
 
-3. Download the Powershell script from [www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4).
+3. Download the PowerShell script from [www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4).
 
 4. Click **Manual Download**.
 

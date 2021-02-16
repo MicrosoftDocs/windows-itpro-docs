@@ -1,11 +1,11 @@
 ---
 title: Deploy Microsoft Defender ATP for Linux with Ansible
-ms.reviewer:
+ms.reviewer: 
 description: Describes how to deploy Microsoft Defender ATP for Linux using Ansible.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,17 +14,23 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# Deploy Microsoft Defender ATP for Linux with Ansible
+# Deploy Microsoft Defender for Endpoint for Linux with Ansible
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
 
-This article describes how to deploy Microsoft Defender ATP for Linux using Ansible. A successful deployment requires the completion of all of the following tasks:
+This article describes how to deploy Defender for Endpoint for Linux using Ansible. A successful deployment requires the completion of all of the following tasks:
 
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Create Ansible YAML files](#create-ansible-yaml-files)
@@ -33,7 +39,7 @@ This article describes how to deploy Microsoft Defender ATP for Linux using Ansi
 
 ## Prerequisites and system requirements
 
-Before you get started, see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Defender for Endpoint for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks. Ansible has many ways to complete the same task. These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Ansible documentation](https://docs.ansible.com/) for details.
 
@@ -115,9 +121,9 @@ Create a subtask or role files that contribute to an playbook or task.
       when: not mdatp_onboard.stat.exists
     ```
 
-- Add the Microsoft Defender ATP repository and key.
+- Add the Defender for Endpoint repository and key.
 
-    Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
+    Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
 
     The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
@@ -151,7 +157,7 @@ Create a subtask or role files that contribute to an playbook or task.
   - name: Add  Microsoft yum repository for MDATP
       yum_repository:
           name: packages-microsoft-com-prod-[channel]
-          description: Microsoft Defender ATP
+          description: Microsoft Defender for Endpoint
           file: microsoft-[channel]
           baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
           gpgcheck: yes
@@ -249,7 +255,7 @@ See [Log installation issues](linux-resources.md#log-installation-issues) for mo
 
 ## Operating system upgrades
 
-When upgrading your operating system to a new major version, you must first uninstall Microsoft Defender ATP for Linux, install the upgrade, and finally reconfigure Microsoft Defender ATP for Linux on your device.
+When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.
 
 ## References
 

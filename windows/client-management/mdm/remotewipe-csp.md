@@ -1,6 +1,6 @@
 ---
 title: RemoteWipe CSP
-description: RemoteWipe CSP
+description: Learn how the RemoteWipe configuration service provider (CSP) can be used by mobile operators DM server or enterprise management server to remotely wipe a device.
 ms.assetid: 6e89bd37-7680-4940-8a67-11ed062ffb70
 ms.reviewer: 
 manager: dansimp

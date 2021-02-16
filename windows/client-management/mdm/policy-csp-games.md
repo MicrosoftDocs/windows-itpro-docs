@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Games
-description: Policy CSP - Games
+description: Learn to use the Policy CSP - Games setting so that you can specify whether advanced gaming services can be used.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

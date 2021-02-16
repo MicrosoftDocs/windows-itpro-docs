@@ -1,6 +1,6 @@
 ---
 title: UsmtUtils Syntax (Windows 10)
-description: UsmtUtils Syntax
+description: Learn about the syntax for the utilities available in User State Migration Tool (USMT) 10.0 through the command-line interface.
 ms.assetid: cdab7f2d-dd68-4016-b9ed-41ffa743b65c
 ms.reviewer: 
 manager: laurawi

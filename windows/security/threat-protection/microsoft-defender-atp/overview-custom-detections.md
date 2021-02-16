@@ -5,7 +5,7 @@ description: Understand how you can use advanced hunting to create custom detect
 keywords: custom detections, alerts, detection rules, advanced hunting, hunt, query, response actions, interval, mdatp, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,17 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Custom detections overview
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured devices. You can do this with customizable detection rules that automatically trigger alerts and response actions.
 

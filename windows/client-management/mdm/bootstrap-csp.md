@@ -1,6 +1,6 @@
 ---
 title: BOOTSTRAP CSP
-description: Use the BOOTSTRAP configuration service provider sets the Trusted Provisioning Server (TPS) for the device.
+description: Use the BOOTSTRAP configuration service provider to set the Trusted Provisioning Server (TPS) for the device.
 ms.assetid: b8acbddc-347f-4543-a45b-ad2ffae3ffd0
 ms.reviewer: 
 manager: dansimp

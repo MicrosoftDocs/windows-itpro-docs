@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - TaskManager
-description: Policy CSP - TaskManager
+description: Learn how to use the Policy CSP - TaskManager setting to determine whether non-administrators can use Task Manager to end tasks.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

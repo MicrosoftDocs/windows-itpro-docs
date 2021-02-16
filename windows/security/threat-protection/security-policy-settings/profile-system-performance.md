@@ -4,7 +4,7 @@ description: Best practices, location, values, policy management, and security c
 ms.assetid: ffabc3c5-9206-4105-94ea-84f597a54b2e
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Profile system performance

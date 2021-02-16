@@ -1,9 +1,9 @@
 ---
-title: Get alert related machine information 
-description: Retrieve all devices related to a specific alert using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
+title: Get alert related machine information
+description: Retrieve all devices related to a specific alert using Microsoft Defender Advanced Threat Protection (Microsoft Defender for Endpoint).
 keywords: apis, graph api, supported apis, get alert information, alert information, related device
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,23 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Get alert related machine information API
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -33,7 +41,7 @@ Retrieves [Device](machine.md) related to a specific alert.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -48,7 +56,8 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >- The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+
+```http
 GET /api/alerts/{id}/machine
 ```
 
@@ -71,11 +80,8 @@ If successful and alert and device exist - 200 OK. If alert not found or device 
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-
-```
-GET https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280442/machine
+```http
+GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/machine
 ```
 
 **Response**
@@ -83,28 +89,39 @@ GET https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines/$entity",
-    "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "computerDnsName": "mymachine1.contoso.com",
-    "firstSeen": "2018-08-02T14:55:03.7791856Z",
-	"lastSeen": "2018-08-02T14:55:03.7791856Z",
-    "osPlatform": "Windows10",
-    "version": "1709",
+	"id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+	"computerDnsName": "mymachine1.contoso.com",
+	"firstSeen": "2018-08-02T14:55:03.7791856Z",
+	"lastSeen": "2021-01-25T07:27:36.052313Z",
+	"osPlatform": "Windows10",
 	"osProcessor": "x64",
-    "lastIpAddress": "172.17.230.209",
-    "lastExternalIpAddress": "167.220.196.71",
-    "osBuild": 18209,
-    "healthStatus": "Active",
-    "rbacGroupId": 140,
+	"version": "1901",
+	"lastIpAddress": "10.166.113.46",
+	"lastExternalIpAddress": "167.220.203.175",
+	"osBuild": 19042,
+	"healthStatus": "Active",
+	"deviceValue": "Normal",
 	"rbacGroupName": "The-A-Team",
-    "riskScore": "Low",
-	"exposureLevel": "Medium",
-	"isAadJoined": true,
-    "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-	"machineTags": [ "test tag 1", "test tag 2" ]
+	"riskScore": "Low",
+	"exposureLevel": "Low",
+	"aadDeviceId": "fd2e4d29-7072-4195-aaa5-1af139b78028",
+	"machineTags": [
+		"Tag1",
+		"Tag2"
+	],
+	"ipAddresses": [
+		{
+			"ipAddress": "10.166.113.47",
+			"macAddress": "8CEC4B897E73",
+			"operationalStatus": "Up"
+		},
+		{
+			"ipAddress": "2a01:110:68:4:59e4:3916:3b3e:4f96",
+			"macAddress": "8CEC4B897E73",
+			"operationalStatus": "Up"
+		}
+	]
 }
 ```

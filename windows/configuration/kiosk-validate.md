@@ -1,6 +1,6 @@
 ---
 title: Validate kiosk configuration (Windows 10)
-description: Learn what to expect on a multi-app kiosk in Windows 10 Pro, Enterprise, and Education.
+description: In this article, learn what to expect on a multi-app kiosk in Windows 10 Pro, Enterprise, and Education.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 ms.reviewer: 
 manager: dansimp

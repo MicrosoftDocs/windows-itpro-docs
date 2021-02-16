@@ -1,14 +1,15 @@
 # [Threat protection](index.md)
 
 ## [Overview]()
-### [What is Microsoft Defender Advanced Threat Protection?](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
+### [What is Microsoft Defender for Endpoint?](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
 ### [Minimum requirements](microsoft-defender-atp/minimum-requirements.md)
-### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
+### [What's new in Microsoft Defender for Endpoint](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](microsoft-defender-atp/preview.md)
 ### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](microsoft-defender-atp/use.md)
 ### [Portal overview](microsoft-defender-atp/portal-overview.md)
-### [Microsoft Defender ATP for US Government Community Cloud High customers](microsoft-defender-atp/commercial-gov.md)
+### [Microsoft Defender for Endpoint for US Government customers](microsoft-defender-atp/gov.md)
+### [Microsoft Defender for Endpoint for non-Windows platforms](microsoft-defender-atp/non-windows.md)
 
 ## [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
 
@@ -18,34 +19,60 @@
 ### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 ### [Phase 1: Prepare](microsoft-defender-atp/prepare-deployment.md)
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
-### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
+### [Phase 3: Onboard]()
+#### [Onboarding overview](microsoft-defender-atp/onboarding.md)
+#### [Deployment rings](microsoft-defender-atp/deployment-rings.md)
+#### [Onboarding using Microsoft Endpoint Configuration Manager](microsoft-defender-atp/onboarding-endpoint-configuration-manager.md)
+#### [Onboarding using Microsoft Endpoint Manager](microsoft-defender-atp/onboarding-endpoint-manager.md)
+#### [Onboard supported devices](microsoft-defender-atp/onboard-configure.md)
 
-## [Migration guides]()
-### [Migrate from Symantec to Microsoft Defender ATP]()
-#### [Get an overview of migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md)
-#### [Prepare for your migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-prepare.md)
-#### [Set up Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md)
-#### [Onboard to Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-onboard.md)
-### [Manage Microsoft Defender ATP post migration]()
-#### [Overview](microsoft-defender-atp/manage-atp-post-migration.md)
+## [Migration guides](microsoft-defender-atp/migration-guides.md)
+### [Switch from McAfee to Microsoft Defender for Endpoint]()
+#### [Overview of migration](microsoft-defender-atp/mcafee-to-microsoft-defender-migration.md)
+#### [Phase 1: Prepare](microsoft-defender-atp/mcafee-to-microsoft-defender-prepare.md) 
+#### [Phase 2: Setup](microsoft-defender-atp/mcafee-to-microsoft-defender-setup.md)
+#### [Phase 3: Onboard](microsoft-defender-atp/mcafee-to-microsoft-defender-onboard.md)
+### [Switch from Symantec to Microsoft Defender for Endpoint]()
+#### [Overview of migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md)
+#### [Phase 1: Prepare](microsoft-defender-atp/symantec-to-microsoft-defender-atp-prepare.md)
+#### [Phase 2: Setup](microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md)
+#### [Phase 3: Onboard](microsoft-defender-atp/symantec-to-microsoft-defender-atp-onboard.md)
+### [Switch from your non-Microsoft endpoint security solution to Microsoft Defender for Endpoint]()
+#### [Overview of migration](microsoft-defender-atp/switch-to-microsoft-defender-migration.md)
+#### [Phase 1: Prepare](microsoft-defender-atp/switch-to-microsoft-defender-prepare.md)
+#### [Phase 2: Setup](microsoft-defender-atp/switch-to-microsoft-defender-setup.md)
+#### [Phase 3: Onboard](microsoft-defender-atp/switch-to-microsoft-defender-onboard.md)
+### [Manage Microsoft Defender for Endpoint after migration]()
+#### [Overview of managing Microsoft Defender for Endpoint](microsoft-defender-atp/manage-atp-post-migration.md)
 #### [Intune (recommended)](microsoft-defender-atp/manage-atp-post-migration-intune.md)
 #### [Configuration Manager](microsoft-defender-atp/manage-atp-post-migration-configuration-manager.md)
 #### [Group Policy Objects](microsoft-defender-atp/manage-atp-post-migration-group-policy-objects.md)
 #### [PowerShell, WMI, and MPCmdRun.exe](microsoft-defender-atp/manage-atp-post-migration-other-tools.md)
 
 ## [Security administration]()
-### [Threat & Vulnerability Management]()
-#### [Overview of Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
-#### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
-#### [Dashboard insights](microsoft-defender-atp/tvm-dashboard-insights.md)
-#### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
-#### [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
-#### [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
-#### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
-#### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
-#### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
-#### [Event timeline](microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md)
-#### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
+### [Threat & vulnerability management]()
+#### [Overview](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
+#### [Get started]()
+##### [Permissions & prerequisites](microsoft-defender-atp/tvm-prerequisites.md)
+##### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
+##### [Assign device value](microsoft-defender-atp/tvm-assign-device-value.md)
+#### [Assess your security posture]()
+##### [Dashboard insights](microsoft-defender-atp/tvm-dashboard-insights.md)
+##### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
+##### [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
+#### [Improve your security posture & reduce risk]()
+##### [Address security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
+##### [Remediate vulnerabilities](microsoft-defender-atp/tvm-remediation.md)
+##### [Exceptions for security recommendations](microsoft-defender-atp/tvm-exception.md)
+##### [Plan for end-of-support software](microsoft-defender-atp/tvm-end-of-support-software.md)
+##### [Mitigate zero-day vulnerabilities](microsoft-defender-atp/tvm-zero-day-vulnerabilities.md)
+#### [Understand vulnerabilities on your devices]()
+##### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
+##### [Vulnerabilities in my organization](microsoft-defender-atp/tvm-weaknesses.md)
+##### [Event timeline](microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md)
+##### [Vulnerable devices report](microsoft-defender-atp/tvm-vulnerable-devices-report.md)
+##### [Hunt for exposed devices](microsoft-defender-atp/tvm-hunt-exposed-devices.md)
+
 
 ### [Attack surface reduction]()
 #### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
@@ -66,7 +93,8 @@
 ##### [Application isolation]()
 ###### [Application guard overview](microsoft-defender-application-guard/md-app-guard-overview.md)
 ###### [System requirements](microsoft-defender-application-guard/reqs-md-app-guard.md)
-###### [Install Windows Defender Application Guard](microsoft-defender-application-guard/install-md-app-guard.md)
+###### [Install Microsoft Defender Application Guard](microsoft-defender-application-guard/install-md-app-guard.md)
+###### [Install Microsoft Defender Application Guard Extension](microsoft-defender-application-guard/md-app-guard-browser-extension.md)
 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ###### [Audit Application control policies](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
@@ -76,21 +104,23 @@
 ##### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
  
 #### [Device control]()
-##### [Code integrity](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+##### [Code integrity](device-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)
-
+##### [Device control report](device-control/device-control-report.md)
 
 #### [Exploit protection]()
 ##### [Protect devices from exploits](microsoft-defender-atp/exploit-protection.md)
 ##### [Exploit protection evaluation](microsoft-defender-atp/evaluate-exploit-protection.md)
 ##### [Enable exploit protection](microsoft-defender-atp/enable-exploit-protection.md)
 ##### [Customize exploit protection](microsoft-defender-atp/customize-exploit-protection.md)
-
+##### [Import, export, and deploy exploit protection configurations](microsoft-defender-atp/import-export-exploit-protection-emet-xml.md)
+##### [Troubleshoot exploit protection mitigations](microsoft-defender-atp/troubleshoot-exploit-protection-mitigations.md)
+##### [Exploit protection reference](microsoft-defender-atp/exploit-protection-reference.md )
 
 #### [Network protection]()
 ##### [Protect your network](microsoft-defender-atp/network-protection.md)
 ##### [Evaluate network protection](microsoft-defender-atp/evaluate-network-protection.md)
-##### [Turning on network protection](microsoft-defender-atp/enable-network-protection.md)
+##### [Turn on network protection](microsoft-defender-atp/enable-network-protection.md)
  
 #### [Web protection]()
 ##### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
@@ -133,7 +163,7 @@
 ###### [Detect and block Potentially Unwanted Applications](microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 ###### [Enable and configure always-on protection and monitoring](microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md)
    
-##### [Antivirus on Windows Server 2016](microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016.md)
+##### [Antivirus on Windows Server](microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016.md)
    
 ##### [Antivirus compatibility]()
 ###### [Compatibility charts](microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
@@ -141,39 +171,35 @@
 
 ##### [Manage next-generation protection in your business]()
 ###### [Management overview](microsoft-defender-antivirus/configuration-management-reference-microsoft-defender-antivirus.md)
-###### [Use Microsoft Intune and Microsoft Endpoint Configuration Manager to manage next-generation protection](microsoft-defender-antivirus/use-intune-config-manager-microsoft-defender-antivirus.md)
+###### [Use Microsoft Intune and Microsoft Endpoint Manager to manage next-generation protection](microsoft-defender-antivirus/use-intune-config-manager-microsoft-defender-antivirus.md)
 ###### [Use Group Policy settings to manage next-generation protection](microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus.md)
 ###### [Use PowerShell cmdlets to manage next-generation protection](microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ###### [Use Windows Management Instrumentation (WMI) to manage next-generation protection](microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus.md)
 ###### [Use the mpcmdrun.exe command line tool to manage next-generation protection](microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
-###### [Handle false positives/negatives in Microsoft Defender Antivirus](microsoft-defender-antivirus/antivirus-false-positives-negatives.md)
    
 ##### [Deploy, manage updates, and report on antivirus]()
 ###### [Preparing to deploy](microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md)
 ###### [Deploy and enable antivirus](microsoft-defender-antivirus/deploy-microsoft-defender-antivirus.md)
-####### [Deployment guide for VDI environments](microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus.md)
+###### [Deployment guide for VDI environments](microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus.md)
    
 ###### [Report on antivirus protection]()
-####### [Review protection status and alerts](microsoft-defender-antivirus/report-monitor-microsoft-defender-antivirus.md)
-####### [Troubleshoot antivirus reporting in Update Compliance](microsoft-defender-antivirus/troubleshoot-reporting.md)
-   
-###### [Manage updates and apply baselines]()
-####### [Learn about the different kinds of updates](microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md)
-####### [Manage protection and security intelligence updates](microsoft-defender-antivirus/manage-protection-updates-microsoft-defender-antivirus.md)
-####### [Manage when protection updates should be downloaded and applied](microsoft-defender-antivirus/manage-protection-update-schedule-microsoft-defender-antivirus.md)
-####### [Manage updates for endpoints that are out of date](microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus.md)
-####### [Manage event-based forced updates](microsoft-defender-antivirus/manage-event-based-updates-microsoft-defender-antivirus.md)
-####### [Manage updates for mobile devices and VMs](microsoft-defender-antivirus/manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+###### [Review protection status and alerts](microsoft-defender-antivirus/report-monitor-microsoft-defender-antivirus.md)
+###### [Troubleshoot antivirus reporting in Update Compliance](microsoft-defender-antivirus/troubleshoot-reporting.md)
+###### [Learn about the recent updates](microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md)
+###### [Manage protection and security intelligence updates](microsoft-defender-antivirus/manage-protection-updates-microsoft-defender-antivirus.md)
+###### [Manage when protection updates should be downloaded and applied](microsoft-defender-antivirus/manage-protection-update-schedule-microsoft-defender-antivirus.md)
+###### [Manage updates for endpoints that are out of date](microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus.md)
+###### [Manage event-based forced updates](microsoft-defender-antivirus/manage-event-based-updates-microsoft-defender-antivirus.md)
+###### [Manage updates for mobile devices and VMs](microsoft-defender-antivirus/manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
    
 ##### [Customize, initiate, and review the results of scans and remediation]()
 ###### [Configuration overview](microsoft-defender-antivirus/customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
    
-###### [Configure and validate exclusions in antivirus scans]()
-####### [Exclusions overview](microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus.md)
-####### [Configure and validate exclusions based on file name, extension, and folder location](microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-####### [Configure and validate exclusions for files opened by processes](microsoft-defender-antivirus/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-####### [Configure antivirus exclusions Windows Server 2016](microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus.md)
-####### [Common mistakes when defining exclusions](microsoft-defender-antivirus/common-exclusion-mistakes-microsoft-defender-antivirus.md)
+###### [Configure and validate exclusions in antivirus scans](microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus.md)
+###### [Configure and validate exclusions based on file name, extension, and folder location](microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+###### [Configure and validate exclusions for files opened by processes](microsoft-defender-antivirus/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+###### [Configure antivirus exclusions Windows Server](microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus.md)
+###### [Common mistakes when defining exclusions](microsoft-defender-antivirus/common-exclusion-mistakes-microsoft-defender-antivirus.md)
 ###### [Configure scanning antivirus options](microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus.md)
 ###### [Configure remediation for scans](microsoft-defender-antivirus/configure-remediation-microsoft-defender-antivirus.md)
 ###### [Configure scheduled scans](microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus.md)
@@ -187,10 +213,10 @@
 ###### [Management overview](microsoft-defender-antivirus/customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
    
 ###### [Configure and validate exclusions in antivirus scans]()
-####### [Exclusions overview](microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus.md)
-####### [Configure and validate exclusions based on file name, extension, and folder location](microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-####### [Configure and validate exclusions for files opened by processes](microsoft-defender-antivirus/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-####### [Configure antivirus exclusions on Windows Server 2016](microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus.md)
+###### [Exclusions overview](microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus.md)
+###### [Configure and validate exclusions based on file name, extension, and folder location](microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+###### [Configure and validate exclusions for files opened by processes](microsoft-defender-antivirus/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+###### [Configure antivirus exclusions on Windows Server](microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus.md)
    
 ###### [Configure scanning options](microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus.md)
 
@@ -202,17 +228,23 @@
 ###### [Run and review the results of an offline scan](microsoft-defender-antivirus/microsoft-defender-offline.md)
 ###### [Restore quarantined files](microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus.md)
    
-#### [Better together: Microsoft Defender Antivirus and Microsoft Defender ATP](microsoft-defender-antivirus/why-use-microsoft-defender-antivirus.md)
+#### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](microsoft-defender-antivirus/why-use-microsoft-defender-antivirus.md)
 #### [Better together: Microsoft Defender Antivirus and Office 365](microsoft-defender-antivirus/office-365-microsoft-defender-antivirus.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Mac]()
-#### [Overview of Microsoft Defender ATP for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
+### [Microsoft Defender for Endpoint for Mac]()
+#### [Overview of Microsoft Defender for Endpoint for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
 #### [What's New](microsoft-defender-atp/mac-whatsnew.md)
 
 #### [Deploy]()
 ##### [Microsoft Intune-based deployment](microsoft-defender-atp/mac-install-with-intune.md)
-##### [JAMF-based deployment](microsoft-defender-atp/mac-install-with-jamf.md)
+##### [JAMF Pro-based deployment]()
+###### [Deploying Microsoft Defender for Endpoint for macOS using Jamf Pro](microsoft-defender-atp/mac-install-with-jamf.md)
+###### [Login to Jamf Pro](microsoft-defender-atp/mac-install-jamfpro-login.md)
+###### [Set up device groups](microsoft-defender-atp/mac-jamfpro-device-groups.md)
+###### [Set up policies](microsoft-defender-atp/mac-jamfpro-policies.md)
+###### [Enroll devices](microsoft-defender-atp/mac-jamfpro-enroll-devices.md)
+
 ##### [Deployment with a different Mobile Device Management (MDM) system](microsoft-defender-atp/mac-install-with-other-mdm.md)
 ##### [Manual deployment](microsoft-defender-atp/mac-install-manually.md)
 #### [Update](microsoft-defender-atp/mac-updates.md)
@@ -233,8 +265,21 @@
 #### [Resources](microsoft-defender-atp/mac-resources.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Linux]()
-#### [Overview of Microsoft Defender ATP for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
+
+
+### [Microsoft Defender for Endpoint for iOS]()
+#### [Overview of Microsoft Defender for Endpoint for iOS](microsoft-defender-atp/microsoft-defender-atp-ios.md)
+
+#### [Deploy]()
+##### [Deploy Microsoft Defender for Endpoint for iOS via Intune](microsoft-defender-atp/ios-install.md)
+
+#### [Configure]()
+##### [Configure iOS features](microsoft-defender-atp/ios-configure-features.md)
+#### [Privacy](microsoft-defender-atp/ios-privacy.md)
+
+
+### [Microsoft Defender for Endpoint for Linux]()
+#### [Overview of Microsoft Defender for Endpoint for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
 #### [What's New](microsoft-defender-atp/linux-whatsnew.md)
 #### [Deploy]()
 ##### [Manual deployment](microsoft-defender-atp/linux-install-manually.md)
@@ -249,26 +294,34 @@
 ##### [Static proxy configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/linux-pua.md)
+##### [Schedule scans with Microsoft Defender for Endpoint for Linux](microsoft-defender-atp/linux-schedule-scan-atp.md)
+##### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](microsoft-defender-atp/linux-update-MDE-Linux.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](microsoft-defender-atp/linux-support-install.md)
 ##### [Troubleshoot cloud connectivity issues](microsoft-defender-atp/linux-support-connectivity.md)
 ##### [Troubleshoot performance issues](microsoft-defender-atp/linux-support-perf.md)
+##### [Troubleshoot missing events issues](microsoft-defender-atp/linux-support-events.md)
 
 
 #### [Privacy](microsoft-defender-atp/linux-privacy.md)
 #### [Resources](microsoft-defender-atp/linux-resources.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Android]()
-#### [Overview of Microsoft Defender ATP for Android](microsoft-defender-atp/microsoft-defender-atp-android.md)
+### [Microsoft Defender for Endpoint for Android]()
+#### [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-atp/microsoft-defender-atp-android.md)
 
 #### [Deploy]()
-##### [Deploy Microsoft Defender ATP for Android with Microsoft Intune](microsoft-defender-atp/android-intune.md)
+##### [Deploy Microsoft Defender for Endpoint for Android with Microsoft Intune](microsoft-defender-atp/android-intune.md)
 
 #### [Configure]()
-##### [Configure Microsoft Defender ATP for Android features](microsoft-defender-atp/android-configure.md)
+##### [Configure Microsoft Defender for Endpoint for Android features](microsoft-defender-atp/android-configure.md)
 
+#### [Privacy]()
+##### [Microsoft Defender for Endpoint for Android - Privacy information](microsoft-defender-atp/android-privacy.md)
+
+#### [Troubleshoot]()
+##### [Troubleshoot issues](microsoft-defender-atp/android-support-signin.md)
 
 
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
@@ -298,6 +351,7 @@
  
 #### [Devices list]()
 ##### [View and organize the Devices list](microsoft-defender-atp/machines-view-overview.md)
+##### [Techniques in device timeline](microsoft-defender-atp/techniques-device-timeline.md)
 ##### [Device timeline event flags](microsoft-defender-atp/device-timeline-event-flag.md)
 ##### [Manage device group and tags](microsoft-defender-atp/machine-tags.md)
  
@@ -319,13 +373,14 @@
 ###### [Stop and quarantine files in your network](microsoft-defender-atp/respond-file-alerts.md#stop-and-quarantine-files-in-your-network)
 ###### [Restore file from quarantine](microsoft-defender-atp/respond-file-alerts.md#restore-file-from-quarantine)
 ###### [Add indicators to block or allow a file](microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
+###### [Download or collect file](microsoft-defender-atp/respond-file-alerts.md#download-or-collect-file)
 ###### [Consult a threat expert](microsoft-defender-atp/respond-file-alerts.md#consult-a-threat-expert)
 ###### [Check activity details in Action center](microsoft-defender-atp/respond-file-alerts.md#check-activity-details-in-action-center)
-###### [Download or collect file](microsoft-defender-atp/respond-file-alerts.md#download-or-collect-file)
 ###### [Deep analysis](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
 
-#### [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
-##### [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
+#### [Visit the Action center to see remediation actions](microsoft-defender-atp/auto-investigation-action-center.md)
+##### [View and approve pending actions](microsoft-defender-atp/manage-auto-investigation.md)
+##### [Details and results of an automated investigation](microsoft-defender-atp/autoir-investigation-results.md)
 
 #### [Investigate entities using Live response]()
 ##### [Investigate entities on devices](microsoft-defender-atp/live-response.md)
@@ -337,15 +392,8 @@
 
 #### [Reporting]()
 ##### [Power BI - How to use API - Samples](microsoft-defender-atp/api-power-bi.md)
-##### [Create and build Power BI reports using Microsoft Defender ATP data connectors (deprecated)](microsoft-defender-atp/powerbi-reports.md)
 ##### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 #### [Device health and compliance reports](microsoft-defender-atp/machine-reports.md)
-
-
-#### [Custom detections]()
-##### [Custom detections overview](microsoft-defender-atp/overview-custom-detections.md)
-##### [Create detection rules](microsoft-defender-atp/custom-detection-rules.md)
-##### [View & manage detection rules](microsoft-defender-atp/custom-detections-manage.md)
 
 ### [Behavioral blocking and containment]()
 #### [Behavioral blocking and containment](microsoft-defender-atp/behavioral-blocking-containment.md)
@@ -355,14 +403,20 @@
 
 ### [Automated investigation and response (AIR)]()
 #### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
+#### [Automation levels in AIR](microsoft-defender-atp/automation-levels.md)
 #### [Configure AIR capabilities](microsoft-defender-atp/configure-automated-investigations-remediation.md)
 
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/advanced-hunting-overview.md)
-#### [Learn the query language](microsoft-defender-atp/advanced-hunting-query-language.md)
+#### [Learn, train, & get examples]()
+##### [Learn the query language](microsoft-defender-atp/advanced-hunting-query-language.md)
+##### [Use shared queries](microsoft-defender-atp/advanced-hunting-shared-queries.md)
 #### [Work with query results](microsoft-defender-atp/advanced-hunting-query-results.md)
-#### [Use shared queries](microsoft-defender-atp/advanced-hunting-shared-queries.md)
-#### [Advanced hunting schema reference]()
+#### [Optimize & handle errors]()
+##### [Apply query best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
+##### [Handle errors](microsoft-defender-atp/advanced-hunting-errors.md)
+##### [Service limits](microsoft-defender-atp/advanced-hunting-limits.md)
+#### [Data schema]()
 ##### [Understand the schema](microsoft-defender-atp/advanced-hunting-schema-reference.md)
 ##### [DeviceAlertEvents](microsoft-defender-atp/advanced-hunting-devicealertevents-table.md)
 ##### [DeviceFileEvents](microsoft-defender-atp/advanced-hunting-devicefileevents-table.md)
@@ -379,25 +433,20 @@
 ##### [DeviceTvmSoftwareVulnerabilitiesKB](microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)
 ##### [DeviceTvmSecureConfigurationAssessment](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md)
 ##### [DeviceTvmSecureConfigurationAssessmentKB](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)
-#### [Apply query best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
+#### [Custom detections]()
+##### [Custom detections overview](microsoft-defender-atp/overview-custom-detections.md)
+##### [Create detection rules](microsoft-defender-atp/custom-detection-rules.md)
+##### [View & manage detection rules](microsoft-defender-atp/custom-detections-manage.md)
 
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
 
-### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
-
-
-
-
-
-
-
-
-
+### [Threat analytics overview](microsoft-defender-atp/threat-analytics.md)
+#### [Read the analyst report](microsoft-defender-atp/threat-analytics-analyst-reports.md)
 
 
 ## [How-to]()
 ### [Onboard devices to the service]()
-#### [Onboard devices to Microsoft Defender ATP](microsoft-defender-atp/onboard-configure.md)
+#### [Onboard devices to Microsoft Defender for Endpoint](microsoft-defender-atp/onboard-configure.md)
 #### [Onboard previous versions of Windows](microsoft-defender-atp/onboard-downlevel.md)
 #### [Onboard Windows 10 devices]()
 ##### [Onboarding tools and methods](microsoft-defender-atp/configure-endpoints.md)
@@ -406,8 +455,9 @@
 ##### [Onboard devices using Mobile Device Management tools](microsoft-defender-atp/configure-endpoints-mdm.md)
 ##### [Onboard devices using a local script](microsoft-defender-atp/configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](microsoft-defender-atp/configure-endpoints-vdi.md)
+##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](microsoft-defender-atp/Onboard-Windows-10-multi-session-device.md)
  
-#### [Onboard servers](microsoft-defender-atp/configure-server-endpoints.md)
+#### [Onboard Windows servers](microsoft-defender-atp/configure-server-endpoints.md)
 #### [Onboard non-Windows devices](microsoft-defender-atp/configure-endpoints-non-windows.md)
 #### [Onboard devices without Internet access](microsoft-defender-atp/onboard-offline-machines.md)
 #### [Run a detection test on a newly onboarded device](microsoft-defender-atp/run-detection-test.md)
@@ -430,8 +480,7 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 ##### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
-##### [Enable and create Power BI reports using Windows Defender Security center data](microsoft-defender-atp/powerbi-reports.md)
-##### [Enable Secure score security controls](microsoft-defender-atp/enable-secure-score.md)
+##### [Configure vulnerability notifications](microsoft-defender-atp/configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
 
 #### [Permissions]()
@@ -462,22 +511,25 @@
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
 
+### [Address false positives/negatives in Microsoft Defender for Endpoint](microsoft-defender-atp/defender-endpoint-false-positives-negatives.md)
+
 ### [Use audit mode](microsoft-defender-atp/audit-windows-defender.md)
 
 ## Reference
 ### [Management and APIs]()
 #### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
-#### [Microsoft Defender ATP API]()
+#### [Microsoft Defender for Endpoint API]()
 ##### [Get started]()
-###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
-###### [Access the Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
+###### [Microsoft Defender for Endpoint API license and terms](microsoft-defender-atp/api-terms-of-use.md)
+###### [Access the Microsoft Defender for Endpoint APIs](microsoft-defender-atp/apis-intro.md)
 ###### [Hello World](microsoft-defender-atp/api-hello-world.md)
 ###### [Get access with application context](microsoft-defender-atp/exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](microsoft-defender-atp/exposed-apis-create-app-nativeapp.md)
 ###### [Get partner application access](microsoft-defender-atp/exposed-apis-create-app-partners.md)
 
-##### [Microsoft Defender ATP APIs Schema]()
-###### [Supported Microsoft Defender ATP APIs](microsoft-defender-atp/exposed-apis-list.md)
+##### [Microsoft Defender for Endpoint APIs Schema]()
+###### [Supported Microsoft Defender for Endpoint APIs](microsoft-defender-atp/exposed-apis-list.md)
+###### [Release Notes](microsoft-defender-atp/api-release-notes.md)
 ###### [Common REST API error codes](microsoft-defender-atp/common-errors.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
@@ -485,7 +537,8 @@
 ####### [Alert methods and properties](microsoft-defender-atp/alerts.md)
 ####### [List alerts](microsoft-defender-atp/get-alerts.md)
 ####### [Create alert](microsoft-defender-atp/create-alert-by-reference.md)
-####### [Update Alert](microsoft-defender-atp/update-alert.md)
+####### [Update alert](microsoft-defender-atp/update-alert.md)
+####### [Batch update alert](microsoft-defender-atp/batch-update-alerts.md)
 ####### [Get alert information by ID](microsoft-defender-atp/get-alert-info-by-id.md)
 ####### [Get alert related domains information](microsoft-defender-atp/get-alert-related-domain-info.md)
 ####### [Get alert related file information](microsoft-defender-atp/get-alert-related-files-info.md)
@@ -504,7 +557,9 @@
 ####### [Get security recommendations](microsoft-defender-atp/get-security-recommendations.md)
 ####### [Add or Remove machine tags](microsoft-defender-atp/add-or-remove-machine-tags.md)
 ####### [Find machines by IP](microsoft-defender-atp/find-machines-by-ip.md)
+####### [Find machines by tag](microsoft-defender-atp/find-machines-by-tag.md)
 ####### [Get missing KBs](microsoft-defender-atp/get-missing-kbs-machine.md)
+####### [Set device value](microsoft-defender-atp/set-device-value.md)
 
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](microsoft-defender-atp/machineaction.md)
@@ -529,6 +584,7 @@
 ###### [Indicators]()
 ####### [Indicators methods and properties](microsoft-defender-atp/ti-indicator.md)
 ####### [Submit Indicator](microsoft-defender-atp/post-ti-indicator.md)
+####### [Import Indicators](microsoft-defender-atp/import-ti-indicators.md)
 ####### [List Indicators](microsoft-defender-atp/get-ti-indicators-collection.md)
 ####### [Delete Indicator](microsoft-defender-atp/delete-ti-indicator-by-id.md)
 
@@ -557,7 +613,7 @@
 ####### [Score methods and properties](microsoft-defender-atp/score.md)
 ####### [List exposure score by machine group](microsoft-defender-atp/get-machine-group-exposure-score.md)
 ####### [Get exposure score](microsoft-defender-atp/get-exposure-score.md)
-####### [Get machine secure score](microsoft-defender-atp/get-device-secure-score.md)
+####### [Get device secure score](microsoft-defender-atp/get-device-secure-score.md)
 
 ###### [Software]()
 ####### [Software methods and properties](microsoft-defender-atp/software.md)
@@ -600,7 +656,7 @@
 ##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
 ##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
 ##### [Configure Micro Focus ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
-##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
+##### [Microsoft Defender for Endpoint detection fields](microsoft-defender-atp/api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
 ##### [Fetch alerts from customer tenant](microsoft-defender-atp/fetch-alerts-mssp.md)
 ##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
@@ -619,6 +675,7 @@
 
 #### [Managed security service provider (MSSP) integration]()
 ##### [Configure managed security service provider integration](microsoft-defender-atp/configure-mssp-support.md)
+##### [Supported managed security service providers](microsoft-defender-atp/mssp-list.md)
 ##### [Grant MSSP access to the portal](microsoft-defender-atp/grant-mssp-access.md)
 ##### [Access the MSSP customer portal](microsoft-defender-atp/access-mssp-portal.md)
 ##### [Configure alert notifications](microsoft-defender-atp/configure-mssp-notifications.md)
@@ -627,11 +684,11 @@
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](microsoft-defender-atp/partner-integration.md)
 #### [Managed security service provider opportunity](microsoft-defender-atp/mssp-support.md)
-#### [Become a Microsoft Defender ATP partner](microsoft-defender-atp/get-started-partner-integration.md)
+#### [Become a Microsoft Defender for Endpoint partner](microsoft-defender-atp/get-started-partner-integration.md)
 
 
 ### [Integrations]()
-#### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
+#### [Microsoft Defender for Endpoint integrations](microsoft-defender-atp/threat-protection-integration.md)
 #### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
 #### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
 
@@ -639,13 +696,13 @@
 ### [Information protection in Windows overview]()
 #### [Windows integration](microsoft-defender-atp/information-protection-in-windows-overview.md)
 
-### [Access the Microsoft Defender ATP Community Center](microsoft-defender-atp/community.md)
+### [Access the Microsoft Defender for Endpoint Community Center](microsoft-defender-atp/community.md)
 
 ### [Helpful resources](microsoft-defender-atp/helpful-resources.md)
 
 
 
-### [Troubleshoot Microsoft Defender ATP]()
+### [Troubleshoot Microsoft Defender for Endpoint]()
 #### [Troubleshoot sensor state]()
 ##### [Check sensor state](microsoft-defender-atp/check-sensor-status.md)
 ##### [Fix unhealthy sensors](microsoft-defender-atp/fix-unhealthy-sensors.md)
@@ -653,18 +710,22 @@
 ##### [Misconfigured devices](microsoft-defender-atp/fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [Review sensor events and errors on machines with Event Viewer](microsoft-defender-atp/event-error-codes.md)
   
-#### [Troubleshoot Microsoft Defender ATP service issues]()
+#### [Troubleshoot Microsoft Defender for Endpoint service issues]()
 ##### [Troubleshoot service issues](microsoft-defender-atp/troubleshoot-mdatp.md)
 ##### [Check service health](microsoft-defender-atp/service-status.md)
+##### [Contact Microsoft Defender for Endpoint support](microsoft-defender-atp/contact-support.md)
+
 
 #### [Troubleshoot live response issues](microsoft-defender-atp/troubleshoot-live-response.md)
+
+#### [Collect support logs using LiveAnalyzer ](microsoft-defender-atp/troubleshoot-collect-support-log.md)
  
 #### [Troubleshoot attack surface reduction issues]()
 ##### [Network protection](microsoft-defender-atp/troubleshoot-np.md)
 ##### [Attack surface reduction rules](microsoft-defender-atp/troubleshoot-asr.md)
   
 #### [Troubleshoot next-generation protection](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus.md)
-
+#### [Troubleshoot migration issues](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
 
 
@@ -694,7 +755,7 @@
 #### [Virus information alliance](intelligence/virus-information-alliance-criteria.md)
 #### [Microsoft virus initiative](intelligence/virus-initiative-criteria.md)
 #### [Coordinated malware eradication](intelligence/coordinated-malware-eradication.md)
-### [Information for developers](intelligence/developer-info.md)
+### [Information for developers]()
 #### [Software developer FAQ](intelligence/developer-faq.md)
 #### [Software developer resources](intelligence/developer-resources.md)
 
@@ -1281,8 +1342,9 @@
 #### [Windows security baselines](windows-security-configuration-framework/windows-security-baselines.md)
 ##### [Security Compliance Toolkit](windows-security-configuration-framework/security-compliance-toolkit-10.md)
 ##### [Get support](windows-security-configuration-framework/get-support-for-security-baselines.md)
-### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 
 ## [Change history for Threat protection](change-history-for-threat-protection.md)
+
+

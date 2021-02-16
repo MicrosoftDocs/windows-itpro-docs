@@ -1,10 +1,10 @@
 ---
 title: Create a list of apps deployed to each business group (Windows 10)
-description: This topic describes the process of gathering app usage requirements from each business group in order to implement application control policies by using AppLocker.
+description: This topic describes the process of gathering app usage requirements from each business group to implement application control policies by using AppLocker.
 ms.assetid: d713aa07-d732-4bdc-8656-ba616d779321
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Create a list of apps deployed to each business group
@@ -27,7 +28,7 @@ This topic describes the process of gathering app usage requirements from each b
 
 ## Determining app usage
 
-For each business group, determine the following:
+For each business group, determine the following information:
 
 -   The complete list of apps used, including different versions of an app
 -   The full installation path of the app
@@ -37,12 +38,12 @@ For each business group, determine the following:
 
 ### How to perform the app usage assessment
 
-Although you might already have a method in place to understand app usage for each business group, you will need to use this information to help create your AppLocker rule collection. AppLocker includes the Automatically Generate 
+You might already have a method in place to understand app usage for each business group. You'll need to use this information to help create your AppLocker rule collection. AppLocker includes the Automatically Generate 
 Rules wizard and the **Audit only** enforcement configuration to assist you with planning and creating your rule collection.
 
 **Application inventory methods**
 
-Using the Automatically Generate Rules wizard quickly creates rules for the applications you specify. The wizard is designed specifically to build a rule collection. You can use the Local Security Policy snap-in to view and edit the rules. This method is very useful when creating rules from a reference computer, and when creating and evaluating AppLocker policies in a testing environment. However, it does require that the files be accessible on the reference computer or through a network drive. This might mean additional work in setting up the reference computer and determining a maintenance policy for that computer.
+Using the Automatically Generate Rules wizard quickly creates rules for the applications you specify. The wizard is designed specifically to build a rule collection. You can use the Local Security Policy snap-in to view and edit the rules. This method is useful when creating rules from a reference computer and when creating and evaluating AppLocker policies in a testing environment. However, it does require that the files be accessible on the reference computer or through a network drive. This might mean additional work in setting up the reference computer and determining a maintenance policy for that computer.
 
 Using the **Audit only** enforcement method permits you to view the logs because it collects information about every process on the computers receiving the Group Policy Object (GPO). Therefore, you can see what the enforcement will be on the computers in a business group. AppLocker includes Windows PowerShell cmdlets that you can use to analyze the events from the event log and cmdlets to create rules. However, when you use Group Policy to deploy to several computers, a means to collect events in a central location is very important for manageability. Because AppLocker logs information about files that users or other processes start on a computer, you could miss creating some rules initially. Therefore, you should continue your evaluation until you can verify that all required applications that are allowed to run are accessed successfully.
 
@@ -72,7 +73,7 @@ After you have created the list of apps, the next step is to identify the rule c
 -   Allow or deny
 -   GPO name
 
-To do this, see the following topics:
+For guidance, see the following topics:
 
 -   [Select the types of rules to create](select-types-of-rules-to-create.md)
 -   [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)

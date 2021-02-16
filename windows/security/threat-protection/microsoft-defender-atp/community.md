@@ -4,7 +4,7 @@ description: Access the Microsoft Defender ATP Community Center to share experie
 keywords: community, community center, tech community, conversation, announcements
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,20 +13,24 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
+ms.technology: mde
 ---
 
 
-# Access the Microsoft Defender ATP Community Center
+# Access the Microsoft Defender for Endpoint Community Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 
-The Microsoft Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
+The Defender for Endpoint Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
 
 There are several spaces you can explore to learn about specific information:
 - Announcements 
@@ -35,8 +39,8 @@ There are several spaces you can explore to learn about specific information:
 
 
 There are several ways you can access the Community Center:
-- In the Microsoft Defender Security Center navigation pane, select **Community center**.  A new browser tab opens and takes you to the Microsoft Defender ATP Tech Community page. 
-- Access the community through the [Microsoft Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced) page
+- In the Microsoft Defender Security Center navigation pane, select **Community center**.  A new browser tab opens and takes you to the Defender for Endpoint Tech Community page. 
+- Access the community through the [Microsoft Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced) page
 
 
 You can instantly view and read conversations that have been posted in the community. 

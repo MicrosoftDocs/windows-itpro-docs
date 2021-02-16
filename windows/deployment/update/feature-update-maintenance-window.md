@@ -1,6 +1,6 @@
 ---
 title: Best practices - deploy feature updates during maintenance windows
-description: Learn how to deploy feature updates during a maintenance window
+description: Learn how to configure maintenance windows and how to deploy feature updates during a maintenance window.
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
@@ -11,6 +11,7 @@ ms.reviewer:
 manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy feature updates during maintenance windows
@@ -33,7 +34,7 @@ Use the following information to deploy feature updates during a maintenance win
 
 ### Step 2: Review computer restart device settings
 
-If you’re not suppressing computer restarts and the feature update will be installed when no users are present, consider deploying a custom client settings policy to your feature update target collection to shorten the settings below or consider the total duration of these settings when defining your maintenance window duration. 
+If you're not suppressing computer restarts and the feature update will be installed when no users are present, consider deploying a custom client settings policy to your feature update target collection to shorten the settings below or consider the total duration of these settings when defining your maintenance window duration. 
 
 For example, by default, 90 minutes will be honored before the system is rebooted after the feature update install. If users will not be impacted by the user logoff or restart, there is no need to wait a full 90 minutes before rebooting the computer. If a delay and notification is needed, ensure that the maintenance window takes this into account along with the total time needed to install the feature update.
 
@@ -50,7 +51,7 @@ Use **Peer Cache** to help manage deployment of content to clients in remote loc
 
 ### Step 4: Override the default Windows setup priority (Windows 10, version 1709 and later)
 
-If you’re deploying **Feature update to Windows 10, version 1709** or later, by default, portions of setup are configured to run at a lower priority. This can result in a longer total install time for the feature update. When deploying within a maintenance window, we recommend that you override this default behavior to benefit from faster total install times. To override the default priority, create a file called SetupConfig.ini on each machine to be upgraded in the below location containing the single section noted. 
+If you're deploying **Feature update to Windows 10, version 1709** or later, by default, portions of setup are configured to run at a lower priority. This can result in a longer total install time for the feature update. When deploying within a maintenance window, we recommend that you override this default behavior to benefit from faster total install times. To override the default priority, create a file called SetupConfig.ini on each machine to be upgraded in the below location containing the single section noted. 
 
 %systemdrive%\Users\Default\AppData\Local\Microsoft\Windows\WSUS\SetupConfig.ini
 

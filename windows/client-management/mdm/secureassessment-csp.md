@@ -1,6 +1,6 @@
 ---
 title: SecureAssessment CSP
-description: SecureAssessment CSP
+description: Learn how the SecureAssessment configuration service provider (CSP) is used to provide configuration information for the secure assessment browser.
 ms.assetid: 6808BE4B-961E-4638-BF15-FD7841D1C00A
 ms.reviewer: 
 manager: dansimp

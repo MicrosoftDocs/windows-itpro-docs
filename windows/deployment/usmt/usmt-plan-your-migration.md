@@ -1,6 +1,6 @@
 ---
 title: Plan Your Migration (Windows 10)
-description: Plan Your Migration
+description: Learn how to your plan your migration carefully so your migration can proceed smoothly and so that you reduce the risk of migration failure.
 ms.assetid: c951f7df-850e-47ad-b31b-87f902955e3e
 ms.reviewer: 
 manager: laurawi

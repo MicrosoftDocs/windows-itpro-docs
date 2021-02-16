@@ -30,8 +30,11 @@ To download and install Windows 10, version 2004, use Windows Update (**Settings
 ### Windows Hello
 
 - Windows Hello is now supported as Fast Identity Online 2 (FIDO2) authenticator across all major browsers including Chrome and Firefox.
+
 - You can now enable passwordless sign-in for Microsoft accounts on your Windows 10 device by going to **Settings > Accounts > Sign-in options**, and selecting **On** under **Make your device passwordless**. Enabling passwordless sign in will switch all Microsoft accounts on your Windows 10 device to modern authentication with Windows Hello Face, Fingerprint, or PIN.
+
 - Windows Hello PIN sign-in support is [added to Safe mode](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#windows-hello-pin-in-safe-mode-build-18995).
+
 - Windows Hello for Business now has Hybrid Azure Active Directory support and phone number sign-in (MSA). FIDO2 security key support is expanded to Azure Active Directory hybrid environments, enabling enterprises with hybrid environments to take advantage of [passwordless authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894).
 
 ### Windows Defender System Guard
@@ -52,7 +55,7 @@ Note: [Application Guard for Office](https://support.office.com/article/applicat
 
 ### Windows Setup
 
-Windows Setup [answer files](https://docs.microsoft.com/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs) (unattend.xml) have [improved language ](https://oofhours.com/2020/06/01/new-in-windows-10-2004-better-language-handling/).
+Windows Setup [answer files](https://docs.microsoft.com/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs) (unattend.xml) have [improved language handling](https://oofhours.com/2020/06/01/new-in-windows-10-2004-better-language-handling/).
 
 Improvements in Windows Setup with this release also include:
 - Reduced offline time during feature updates
@@ -84,7 +87,7 @@ Also see [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-Download the Windows ADK and Windows PE add-on for Windows 10, version 2004 [here](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+Download the Windows ADK and Windows PE add-on for Windows 10, version 2004 here: [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
 
 For information about what's new in the ADK, see [What's new in the Windows ADK for Windows 10, version 2004](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-kits-and-tools#whats-new-in-the-windows-adk-for-windows-10-version-2004).
 
@@ -120,9 +123,22 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 ### Windows Update for Business
 
 [Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) enhancements in this release include:
+
 - Intune console updates: target version is now available allowing you to specify which version of Windows 10 you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
+
 - Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we have created a new policy that enables admins to opt devices out of the built-in safeguard holds.
+
 - Update less: Last year, we [changed update installation policies](https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency/#l2jH7KMkOkfcWdBs.97) for Windows 10 to only target devices running a feature update version that is nearing end of service. As a result, many devices are only updating once a year. To enable all devices to make the most of this policy change, and to prevent confusion, we have removed deferrals from the Windows Update settings **Advanced Options** page starting on Windows 10, version 2004. If you wish to continue leveraging deferrals, you can use local Group Policy (**Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Preview builds and Feature Updates are received** or **Select when Quality Updates are received**). For more information about this change, see [Simplified Windows Update settings for end users](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplified-windows-update-settings-for-end-users/ba-p/1497215).
+
+## Networking
+
+### Wi-Fi 6 and WPA3
+
+Windows now supports the latest Wi-Fi standards with [Wi-Fi 6 and WPA3](https://support.microsoft.com/help/4562575/windows-10-faster-more-secure-wifi). Wi-Fi 6 gives you better wireless coverage and performance with added security. WPA3 provides improved Wi-Fi security and secures open networks. 
+
+### TEAP
+
+In this release, Tunnel Extensible Authentication Protocol (TEAP) has been added as an authentication method to allow chaining together multiple credentials into a single EAP transaction. TEAP networks can be configured by [enterprise policy](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/94cf6896-c28e-4865-b12a-d83ee38cd3ea).   
 
 ## Virtualization
 
@@ -175,9 +191,13 @@ Several enhancements to the Windows 10 user interface are implemented in this re
 ### Cortana
 
 [Cortana](https://www.microsoft.com/cortana) has been updated and enhanced in Windows 10, version 2004:
+
 - Productivity: chat-based UI gives you the ability to [interact with Cortana using typed or spoken natural language queries](https://support.microsoft.com/help/4557165) to easily get information across Microsoft 365 and stay on track. Productivity focused capabilities such as finding people profiles, checking schedules, joining meetings, and adding to lists in Microsoft To Do are currently available to English speakers in the US.
+
   - In the coming months, with regular app updates through the Microsoft Store, we’ll enhance this experience to support wake word invocation and enable listening when you say “Cortana,” offer more productivity capabilities such as surfacing relevant emails and documents to help you prepare for meetings, and expand supported capabilities for international users.  
+  
 - Security: tightened access to Cortana so that you must be securely logged in with your work or school account or your Microsoft account before using Cortana. Because of this tightened access, some consumer skills including music, connected home, and third-party skills will no longer be available. Additionally, users [get cloud-based assistance services that meet Office 365’s enterprise-level privacy, security, and compliance promises](https://docs.microsoft.com/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide) as set out in the Online Services Terms.
+
 - Move the Cortana window: drag the Cortana window to a more convenient location on your desktop.
 
 For updated information, see the [Microsoft 365 blog](https://aka.ms/CortanaUpdatesMay2020).
@@ -192,7 +212,7 @@ You can now [rename your virtual desktops](https://docs.microsoft.com/windows-in
 
 ### Bluetooth pairing
 
-Pairing Bluetooth devices with your computer will occur through notifications, so you won't need to go to the Settings app to finish pairing. Other improvements include faster pairing and device name display. For more information, see [Improving your Bluetooth pairing experience](https://docs.microsoft.com/windows-insider/at-home/Whats-new-wip-at-home-20h1#improving-your-bluetooth-pairing-experience-build-18985).
+Pairing Bluetooth devices with your computer will occur through notifications, so you won't need to go to the Settings app to finish pairing. Other improvements include faster pairing and device name display. For more information, see [Improving your Bluetooth pairing experience](https://docs.microsoft.com/windows-insider/archive/new-in-20h1#improving-your-bluetooth-pairing-experience-build-18985).
 
 ### Reset this PC
 
@@ -236,13 +256,13 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 
 ## See Also
 
-[What’s new for IT pros in Windows 10, version 2004](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-2004/ba-p/1419764): Windows IT Pro blog.<br>
-[What’s new in the Windows 10 May 2020 Update](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/): Windows Insider blog.<br>
-[What's New in Windows Server](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
-[Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
-[What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
-[Start developing on Windows 10, version 2004 today](https://blogs.windows.com/windowsdeveloper/2020/05/12/start-developing-on-windows-10-version-2004-today/): New and updated features in Windows 10 that are of interest to developers.<br>
-[What's new for business in Windows 10 Insider Preview Builds](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new): A preview of new features for businesses.<br>
-[What's new in Windows 10, version 2004 - Windows Insiders](https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-20h1): This list also includes consumer focused new features.<br>
-[Features and functionality removed in Windows 10](https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
-[Windows 10 features we’re no longer developing](https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
+ - [What’s new for IT pros in Windows 10, version 2004](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-2004/ba-p/1419764): Windows IT Pro blog.<br>
+ - [What’s new in the Windows 10 May 2020 Update](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/): Windows Insider blog.<br>
+ - [What's New in Windows Server](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
+ - [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
+ - [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
+ - [Start developing on Windows 10, version 2004 today](https://blogs.windows.com/windowsdeveloper/2020/05/12/start-developing-on-windows-10-version-2004-today/): New and updated features in Windows 10 that are of interest to developers.<br>
+ - [What's new for business in Windows 10 Insider Preview Builds](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new): A preview of new features for businesses.<br>
+ - [What's new in Windows 10, version 2004 - Windows Insiders](https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-20h1): This list also includes consumer focused new features.<br>
+ - [Features and functionality removed in Windows 10](https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
+ - [Windows 10 features we’re no longer developing](https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>

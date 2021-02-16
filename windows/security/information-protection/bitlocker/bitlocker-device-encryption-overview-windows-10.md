@@ -14,6 +14,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.reviewer: 
+ms.custom: bitlocker
 ---
 
 # Overview of BitLocker Device Encryption in Windows 10

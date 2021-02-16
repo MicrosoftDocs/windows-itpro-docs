@@ -5,7 +5,7 @@ manager: laurawi
 description: You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices.
 ms.prod: w10
 ms.mktglfcycl: deploy
-
+ms.collection: m365initiative-coredeploy
 audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
@@ -48,7 +48,7 @@ With Windows Update for Business, you can set a device to be on either Windows I
 
 **Release branch policies**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 or later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\BranchReadinessLevel |
 | GPO for Windows 10, version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpgrade |
@@ -73,7 +73,7 @@ For example, a device on the Semi-Annual Channel with `DeferFeatureUpdatesPeriod
 </br></br>
 **Policy settings for deferring feature updates**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdates</br>\Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdatesPeriodInDays |
 | GPO for Windows 10, version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpgradePeriod |
@@ -97,7 +97,7 @@ In cases where the pause policy is first applied after the configured start date
 
 **Policy settings for pausing feature updates**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | **1607:** \Policies\Microsoft\Windows\WindowsUpdate\PauseFeatureUpdates</br>**1703 and later:** \Policies\Microsoft\Windows\WindowsUpdate\PauseFeatureUpdatesStartTime |
 | GPO for Windows 10, version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\Pause |
@@ -134,7 +134,7 @@ You can set your system to receive updates for other Microsoft products—known 
 
 **Policy settings for deferring quality updates**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Quality Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdates</br>\Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdatesPeriodInDays  |
 | GPO for Windows 10, version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpdatePeriod |
@@ -157,7 +157,7 @@ In cases where the pause policy is first applied after the configured start date
 
 **Policy settings for pausing quality updates**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Quality Updates are received** |**1607:** \Policies\Microsoft\Windows\WindowsUpdate\PauseQualityUpdates</br>**1703:** \Policies\Microsoft\Windows\WindowsUpdate\PauseQualityUpdatesStartTime  |
 | GPO for Windows 10, version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\Pause |
@@ -207,7 +207,7 @@ Starting with Windows 10, version 1607, you can selectively opt out of receiving
 
 **Policy settings to exclude drivers**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Do not include drivers with Windows Updates** | \Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate  |
 | MDM for Windows 10, version 1607 and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**ExcludeWUDriversInQualityUpdate** | \Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate |
@@ -220,7 +220,7 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | GPO Key |	Key type | Value |
 | --- | --- | --- |
-| BranchReadinessLevel	| REG_DWORD | 2: systems take Feature Updates for the Windows Insider build - Fast (added in Windows 10, version 1709)</br> 4: systems take Feature Updates for the Windows Insider build - Slow (added in Windows 10, version 1709)</br> 8: systems take Feature Updates for the Release Windows Insider build (added in Windows 10, version 1709)</br> 16: for Windows 10, version 1703: systems take Feature Updates for the Current Branch (CB); for Windows 10, version 1709, 1803 and 1809: systems take Feature Updates from Semi-annual Channel (Targeted) (SAC-T); for Windows 10, version 1903 or later: systems take Feature Updates from Semi-annual Channel </br>32: systems take Feature Updates from Semi-annual Channel </br>Note: Other value or absent: receive all applicable updates |
+| BranchReadinessLevel	| REG_DWORD | 2: systems take Feature Updates for the Windows Insider build - Fast (added in Windows 10, version 1709)</br> 4: systems take Feature Updates for the Windows Insider build - Slow (added in Windows 10, version 1709)</br> 8: systems take Feature Updates for the Release Windows Insider build (added in Windows 10, version 1709)</br> 16: for Windows 10, version 1703: systems take Feature Updates for the Current Branch (CB); for Windows 10, version 1709, 1803 and 1809: systems take Feature Updates from Semi-Annual Channel (Targeted) (SAC-T); for Windows 10, version 1903 or later: systems take Feature Updates from Semi-Annual Channel </br>32: systems take Feature Updates from Semi-Annual Channel </br>Note: Other value or absent: receive all applicable updates |
 | DeferQualityUpdates | REG_DWORD | 1: defer quality updates</br>Other value or absent: don’t defer quality updates | 
 | DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-35: defer quality updates by given days |
 | PauseQualityUpdatesStartTime | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
@@ -234,7 +234,7 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | MDM Key | Key type | Value |
 | --- | --- | --- |
-| BranchReadinessLevel | REG_DWORD |2: systems take Feature Updates for the Windows Insider build - Fast (added in Windows 10, version 1709)</br> 4: systems take Feature Updates for the Windows Insider build - Slow (added in Windows 10, version 1709)</br> 8: systems take Feature Updates for the Release Windows Insider build (added in Windows 10, version 1709)</br> 16: for Windows 10, version 1703: systems take Feature Updates for the Current Branch (CB); for Windows 10, version 1709, 1803 and 1809: systems take Feature Updates from Semi-annual Channel (Targeted) (SAC-T); for Windows 10, version 1903 or later: systems take Feature Updates from Semi-annual Channel </br>32: systems take Feature Updates from Semi-annual Channel </br>Note: Other value or absent: receive all applicable updates |
+| BranchReadinessLevel | REG_DWORD |2: systems take Feature Updates for the Windows Insider build - Fast (added in Windows 10, version 1709)</br> 4: systems take Feature Updates for the Windows Insider build - Slow (added in Windows 10, version 1709)</br> 8: systems take Feature Updates for the Release Windows Insider build (added in Windows 10, version 1709)</br> 16: for Windows 10, version 1703: systems take Feature Updates for the Current Branch (CB); for Windows 10, version 1709, 1803 and 1809: systems take Feature Updates from Semi-Annual Channel (Targeted) (SAC-T); for Windows 10, version 1903 or later: systems take Feature Updates from Semi-Annual Channel </br>32: systems take Feature Updates from Semi-Annual Channel </br>Note: Other value or absent: receive all applicable updates |
 | DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-35: defer quality updates by given days |
 | PauseQualityUpdatesStartTime | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
 | DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-365: defer feature updates by given days |

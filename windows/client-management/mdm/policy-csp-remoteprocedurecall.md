@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - RemoteProcedureCall
-description: Policy CSP - RemoteProcedureCall
+description: The Policy CSP - RemoteProcedureCall setting controls whether RPC clients authenticate when the call they are making contains authentication information.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

@@ -3,7 +3,7 @@ title: Get all vulnerabilities by machine and software
 description: Retrieves a list of all the vulnerabilities affecting the organization by Machine and Software
 keywords: apis, graph api, supported apis, get, vulnerability information, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,13 +12,24 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # List vulnerabilities by machine and software
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 Retrieves a list of all the vulnerabilities affecting the organization per [machine](machine.md) and [software](software.md).
 - If the vulnerability has a fixing KB, it will appear in the response.
@@ -29,7 +40,7 @@ Retrieves a list of all the vulnerabilities affecting the organization per [mach
 >This is great API for [Power BI integration](api-power-bi.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -61,8 +72,8 @@ If successful, this method returns 200 OK with the list of vulnerabilities in th
 
 Here is an example of the request.
 
-```
-GET https://api.securitycenter.windows.com/api/vulnerabilities/machinesVulnerabilities
+```http
+GET https://api.securitycenter.microsoft.com/api/vulnerabilities/machinesVulnerabilities
 ```
 
 **Response**
@@ -72,7 +83,7 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.PublicAssetVulnerabilityDto)",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.PublicAssetVulnerabilityDto)",
     "value": [
         {
             "id": "5afa3afc92a7c63d4b70129e0a6f33f63a427e21-_-CVE-2020-6494-_-microsoft-_-edge_chromium-based-_-81.0.416.77-_-",
@@ -100,7 +111,7 @@ Here is an example of the response.
 }
 ```
 
-## Related topics
+## See also
 
 - [Risk-based threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilities in your organization](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses)

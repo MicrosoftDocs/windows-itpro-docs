@@ -3,7 +3,7 @@ title: Investigation resource type
 description: Microsoft Defender ATP Investigation entity.
 keywords: apis, graph api, supported apis, get, alerts, investigations
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,24 +12,35 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: article
+ms.technology: mde
 ---
 
 # Investigation resource type
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Represent an Automated Investigation entity in Microsoft Defender ATP.
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+
+Represent an Automated Investigation entity in Defender for Endpoint.
 <br> See [Overview of automated investigations](automated-investigations.md) for more information.
 
 ## Methods
 Method|Return Type |Description
 :---|:---|:---
 [List Investigations](get-investigation-collection.md) | Investigation collection | Get collection of Investigation
-[Get single Investigation](get-investigation-collection.md) | Investigation entity | Gets single Investigation entity.
+[Get single Investigation](get-investigation-object.md) | Investigation entity | Gets single Investigation entity.
 [Start Investigation](initiate-autoir-investigation.md) | Investigation entity | Starts Investigation on a device.
 
 

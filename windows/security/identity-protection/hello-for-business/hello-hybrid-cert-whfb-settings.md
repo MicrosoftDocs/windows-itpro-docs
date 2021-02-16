@@ -1,6 +1,6 @@
 ---
 title: Configure Hybrid Windows Hello for Business Settings (Windows Hello for Business)
-description: Configuring Windows Hello for Business settings in hybrid certificate trust deployment.
+description: Learn how to configure Windows Hello for Business settings in hybrid certificate trust deployment.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
 ms.mktglfcycl: deploy

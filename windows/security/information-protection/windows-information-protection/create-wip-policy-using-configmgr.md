@@ -1,5 +1,5 @@
 ---
-title: Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager (Windows 10)
+title: Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Manager (Windows 10)
 description: Use Configuration Manager to make & deploy a Windows Information Protection (WIP) policy. Choose protected apps, WIP-protection level, and find enterprise data.
 ms.assetid: 85b99c20-1319-4aa3-8635-c1a87b244529
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -190,27 +190,27 @@ For this example, we're going to add Internet Explorer, a desktop app, to the **
             <td>All files signed by any publisher. (Not recommended.)</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong> selected</td>
+            <td><b>Publisher</b> selected</td>
             <td>All files signed by the named publisher.<p>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong> and <strong>Product Name</strong> selected</td>
+            <td><b>Publisher</b> and <b>Product Name</b> selected</td>
             <td>All files for the specified product, signed by the named publisher.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, and <strong>Binary name</strong> selected</td>
+            <td><b>Publisher</b>, <b>Product Name</b>, and <b>Binary name</b> selected</td>
             <td>Any version of the named file or package for the specified product, signed by the named publisher.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, and above</strong>, selected</td>
+            <td><b>Publisher</b>, <b>Product Name</b>, <b>Binary name</b>, and <b>File Version, and above</b>, selected</td>
             <td>Specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<p>This option is recommended for enlightened apps that weren't previously enlightened.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, And below</strong> selected</td>
+            <td><b>Publisher</b>, <b>Product Name</b>, <b>Binary name</b>, and <b>File Version, And below</b> selected</td>
             <td>Specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, Exactly</strong> selected</td>
+            <td><b>Publisher</b>, <b>Product Name</b>, <b>Binary name</b>, and <b>File Version, Exactly</b> selected</td>
             <td>Specified version of the named file or package for the specified product, signed by the named publisher.</td>
         </tr>
     </table>
@@ -403,8 +403,8 @@ There are no default locations included with WIP, you must add each of your netw
        </tr>
        <tr>
            <td>Enterprise Cloud Resources</td>
-           <td><strong>With proxy:</strong> contoso.sharepoint.com,contoso.internalproxy1.com|<br>contoso.visualstudio.com,contoso.internalproxy2.com<p><strong>Without proxy:</strong> contoso.sharepoint.com|contoso.visualstudio.com</td>
-           <td>Specify the cloud resources to be treated as corporate and protected by WIP.<p>For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.<p>If you have multiple resources, you must separate them using the &quot;|&quot; delimiter. If you don't use proxy servers, you must also include the &quot;,&quot; delimiter just before the &quot;|&quot;. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<p><strong>Important</strong><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can't tell whether it's attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.</td>
+           <td><b>With proxy:</b> contoso.sharepoint.com,contoso.internalproxy1.com|<br>contoso.visualstudio.com,contoso.internalproxy2.com<p><b>Without proxy:</b> contoso.sharepoint.com|contoso.visualstudio.com</td>
+           <td>Specify the cloud resources to be treated as corporate and protected by WIP.<p>For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.<p>If you have multiple resources, you must separate them using the &quot;|&quot; delimiter. If you don't use proxy servers, you must also include the &quot;,&quot; delimiter just before the &quot;|&quot;. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<p><b>Important</b><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can't tell whether it's attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.</td>
        </tr>
        <tr>
            <td>Enterprise Network Domain Names (Required)</td>
@@ -422,12 +422,12 @@ There are no default locations included with WIP, you must add each of your netw
            <td>Specify the internal proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you're connecting to are enterprise resources.<br><br>This list shouldn't include any servers listed in your Proxy servers list. Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the &quot;;&quot; delimiter.</td><br/>    </tr>
        <tr>
            <td>Enterprise IPv4 Range (Required)</td>
-           <td><strong>Starting IPv4 Address:</strong> 3.4.0.1<br><strong>Ending IPv4 Address:</strong> 3.4.255.254<br><strong>Custom URI:</strong> 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
+           <td><b>Starting IPv4 Address:</b> 3.4.0.1<br><b>Ending IPv4 Address:</b> 3.4.255.254<br><b>Custom URI:</b> 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
            <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the &quot;,&quot; delimiter.</td>
        </tr>
        <tr>
            <td>Enterprise IPv6 Range</td>
-           <td><strong>Starting IPv6 Address:</strong> 2a01:110::<br><strong>Ending IPv6 Address:</strong> 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br><strong>Custom URI:</strong> 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
+           <td><b>Starting IPv6 Address:</b> 2a01:110::<br><b>Ending IPv6 Address:</b> 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br><b>Custom URI:</b> 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
            <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the &quot;,&quot; delimiter.</td>
        </tr>
        <tr>

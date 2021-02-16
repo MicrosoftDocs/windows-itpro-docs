@@ -1,6 +1,6 @@
 ---
 title: EnterpriseAssignedAccess CSP
-description: Use the EnterpriseAssignedAccess CSP to configure custom layouts on a device. 
+description: Use the EnterpriseAssignedAccess configuration service provider (CSP) to configure custom layouts on a device. 
 ms.assetid: 5F88E567-77AA-4822-A0BC-3B31100639AA
 ms.reviewer: 
 manager: dansimp

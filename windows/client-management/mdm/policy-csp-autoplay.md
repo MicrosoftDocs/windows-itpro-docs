@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Autoplay
-description: Policy CSP - Autoplay
+description: Learn how the Policy CSP - Autoplay setting disallows AutoPlay for MTP devices like cameras or phones.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

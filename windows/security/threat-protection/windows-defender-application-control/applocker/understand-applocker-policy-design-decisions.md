@@ -4,7 +4,7 @@ description: Review some common considerations while you are planning to use App
 ms.assetid: 3475def8-949a-4b51-b480-dc88b5c1e6e6
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/13/2017
+ms.technology: mde
 ---
 
 # Understand AppLocker policy design decisions
@@ -119,7 +120,7 @@ If your organization supports multiple Windows operating systems, app control po
 </ul></td>
 <td align="left"><p>AppLocker rules are only applied to computers running the supported versions of Windows, but SRP rules can be applied to all versions of Windows beginning with Windows XP and Windows Server 2003. For specific operating system version requirements, see <a href="requirements-to-use-applocker.md" data-raw-source="[Requirements to use AppLocker](requirements-to-use-applocker.md)">Requirements to use AppLocker</a>.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>If you are using the Basic User security level as assigned in SRP, those privileges are not supported on computers running that support AppLocker.</p>
+<b>Note</b><br/><p>If you are using the Basic User security level as assigned in SRP, those privileges are not supported on computers running that support AppLocker.</p>
 </div>
 <div>
 

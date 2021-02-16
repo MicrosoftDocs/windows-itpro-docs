@@ -1,6 +1,6 @@
 ---
 title: Install VAMT (Windows 10)
-description: Install VAMT
+description: Learn how to install Volume Activation Management Tool (VAMT) as part of the Windows Assessment and Deployment Kit (ADK) for Windows 10.
 ms.assetid: 2eabd3e2-0a68-43a5-8189-2947e46482fc
 ms.reviewer: 
 manager: laurawi
@@ -49,8 +49,8 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 ### Install VAMT using the ADK
 
-1. Download and open the [Windows 10, version 1903 ADK](https://go.microsoft.com/fwlink/?linkid=2086042) package.
-Reminder: There won't be new ADK release for 1909.
+1. Download the latest version of [Windows 10 ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+   If an older version is already installed, it is recommended to uninstall the older ADK and install the latest version. Existing VAMT data is maintained in the VAMT database.
 2. Enter an install location or use the default path, and then select **Next**.
 3. Select a privacy setting, and then select **Next**.
 4. Accept the license terms.

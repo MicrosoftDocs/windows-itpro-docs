@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Start
-description: Use this policy CSP to control the visibility of the Documents shortcut on the Start menu.
+description: Use the Policy CSP - Start setting to control the visibility of the Documents shortcut on the Start menu.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

@@ -1,6 +1,6 @@
 ---
 title: Structure of OMA DM provisioning files
-description: Structure of OMA DM provisioning files
+description: Learn about the structure of OMA DM provisioning files, for example how each message is composed of a header, specified by the SyncHdr element, and a message body.
 ms.assetid: 7bd3ef57-c76c-459b-b63f-c5a333ddc2bc
 ms.reviewer: 
 manager: dansimp

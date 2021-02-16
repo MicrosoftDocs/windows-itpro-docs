@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -576,7 +576,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn Local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -645,7 +645,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn Local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -717,7 +717,7 @@ This security group includes the following changes since Windows Server 2008:
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn Local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -865,7 +865,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -987,7 +987,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-517</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-517</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1113,7 +1113,7 @@ This security group was introduced in Windows Vista Service Pack 1, and it h
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1241,7 +1241,7 @@ The Device Owners group applies to versions of the Windows Server operating syst
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn Local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1430,7 +1430,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Domain local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1493,7 +1493,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Domain Global</p></td>
+<td><p>Global</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1552,7 +1552,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-515</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-515</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1613,7 +1613,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-516</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-516</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1674,7 +1674,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-514</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-514</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1737,11 +1737,11 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-513</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-513</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Domain Global</p></td>
+<td><p>Global</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1950,7 +1950,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Domain Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1985,13 +1985,13 @@ This security group has not changed since Windows Server 2008.
 
  
 
-### <a href="" id="bkmk-gpcreatorsowners"></a>Group Policy Creators Owners
+### <a href="" id="bkmk-gpcreatorsowners"></a>Group Policy Creator Owners
 
 This group is authorized to create, edit, or delete Group Policy Objects in the domain. By default, the only member of the group is Administrator.
 
 For information about other features you can use with this security group, see [Group Policy Overview](https://technet.microsoft.com/library/hh831791.aspx).
 
-The Group Policy Creators Owners group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
+The Group Policy Creator Owners group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
 This security group has not changed since Windows Server 2008.
 
@@ -2009,7 +2009,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-520</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-520</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -2093,12 +2093,11 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Default members</p></td>
-<td><p>Guest</p></td>
+<td><p><a href="#bkmk-domainguests" data-raw-source="[Domain Guests](#bkmk-domainguests)">Domain Guests</a></p><p>Guest</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default member of</p></td>
-<td><p><a href="#bkmk-domainguests" data-raw-source="[Domain Guests](#bkmk-domainguests)">Domain Guests</a></p>
-<p>Guest</p></td>
+<td><p>None</p></td>
 </tr>
 <tr class="even">
 <td><p>Protected by ADMINSDHOLDER?</p></td>
@@ -2150,7 +2149,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2162,7 +2161,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tr>
 <tr class="odd">
 <td><p>Default member of</p></td>
-<td><p>No</p></td>
+<td><p>None</p></td>
 </tr>
 <tr class="even">
 <td><p>Protected by ADMINSDHOLDER?</p></td>
@@ -2189,7 +2188,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 
 IIS\_IUSRS is a built-in group that is used by Internet Information Services beginning with IIS 7.0. A built-in account and group are guaranteed by the operating system to always have a unique SID. IIS 7.0 replaces the IUSR\_MachineName account and the IIS\_WPG group with the IIS\_IUSRS group to ensure that the actual names that are used by the new account and group will never be localized. For example, regardless of the language of the Windows operating system that you install, the IIS account name will always be IUSR, and the group name will be IIS\_IUSRS.
 
-For more information, see [Understanding Built-In User and Group Accounts in IIS 7](http://www.iis.net/learn/get-started/planning-for-security/understanding-built-in-user-and-group-accounts-in-iis).
+For more information, see [Understanding Built-In User and Group Accounts in IIS 7](https://docs.microsoft.com/iis/get-started/planning-for-security/understanding-built-in-user-and-group-accounts-in-iis).
 
 This security group has not changed since Windows Server 2008.
 
@@ -2211,7 +2210,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn Local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2286,7 +2285,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2389,7 +2388,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2470,7 +2469,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2551,7 +2550,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2615,7 +2614,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2679,7 +2678,7 @@ This security group has not changed since Windows Server 2008. However, in Windo
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2758,7 +2757,7 @@ The following table specifies the properties of the Protected Users group.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Domain Global</p></td>
+<td><p>Global</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2819,7 +2818,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Domain local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2876,11 +2875,11 @@ This security group was introduced in Windows Server 2012, and it has not chang
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-32-&lt;domain&gt;-576</p></td>
+<td><p>S-1-5-32-576</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2939,7 +2938,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3000,7 +2999,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3033,6 +3032,78 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tbody>
 </table>
 
+ 
+
+### <a href="" id="bkmk-rodc"></a>Read-Only Domain Controllers
+
+This group is comprised of the Read-only domain controllers in the domain. A Read-only domain controller makes it possible for organizations to easily deploy a domain controller in scenarios where physical security cannot be guaranteed, such as branch office locations, or in scenarios where local storage of all domain passwords is considered a primary threat, such as in an extranet or in an application-facing role.
+
+Because administration of a Read-only domain controller can be delegated to a domain user or security group, an Read-only domain controller is well suited for a site that should not have a user who is a member of the Domain Admins group. A Read-only domain controller encompasses the following functionality:
+
+-   Read-only AD DS database
+
+-   Unidirectional replication
+
+-   Credential caching
+
+-   Administrator role separation
+
+-   Read-only Domain Name System (DNS)
+
+For information about deploying a Read-only domain controller, see [Understanding Planning and Deployment for Read-Only Domain Controllers](https://technet.microsoft.com/library/cc754719(v=ws.10).aspx).
+
+This security group was introduced in Windows Server 2008, and it has not changed in subsequent versions.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Well-Known SID/RID</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-521</p></td>
+</tr>
+<tr class="even">
+<td><p>Type</p></td>
+<td><p>Global</p></td>
+</tr>
+<tr class="odd">
+<td><p>Default container</p></td>
+<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
+</tr>
+<tr class="even">
+<td><p>Default members</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="odd">
+<td><p>Default member of</p></td>
+<td><p><a href="#bkmk-deniedrodcpwdrepl" data-raw-source="[Denied RODC Password Replication Group](#bkmk-deniedrodcpwdrepl)">Denied RODC Password Replication Group</a></p></td>
+</tr>
+<tr class="even">
+<td><p>Protected by ADMINSDHOLDER?</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Safe to move out of default container?</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
+<td><p></p></td>
+</tr>
+<tr class="odd">
+<td><p>Default User Rights</p></td>
+<td><p>See <a href="#bkmk-deniedrodcpwdrepl" data-raw-source="[Denied RODC Password Replication Group](#bkmk-deniedrodcpwdrepl)">Denied RODC Password Replication Group</a></p></td>
+</tr>
+</tbody>
+</table>
  
 
 ### <a href="" id="bkmk-remotedesktopusers"></a>Remote Desktop Users
@@ -3094,78 +3165,6 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
-
-### <a href="" id="bkmk-rodc"></a>Read-Only Domain Controllers
-
-This group is comprised of the Read-only domain controllers in the domain. A Read-only domain controller makes it possible for organizations to easily deploy a domain controller in scenarios where physical security cannot be guaranteed, such as branch office locations, or in scenarios where local storage of all domain passwords is considered a primary threat, such as in an extranet or in an application-facing role.
-
-Because administration of a Read-only domain controller can be delegated to a domain user or security group, an Read-only domain controller is well suited for a site that should not have a user who is a member of the Domain Admins group. A Read-only domain controller encompasses the following functionality:
-
--   Read-only AD DS database
-
--   Unidirectional replication
-
--   Credential caching
-
--   Administrator role separation
-
--   Read-only Domain Name System (DNS)
-
-For information about deploying a Read-only domain controller, see [Understanding Planning and Deployment for Read-Only Domain Controllers](https://technet.microsoft.com/library/cc754719(v=ws.10).aspx).
-
-This security group was introduced in Windows Server 2008, and it has not changed in subsequent versions.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-521</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p><a href="#bkmk-deniedrodcpwdrepl" data-raw-source="[Denied RODC Password Replication Group](#bkmk-deniedrodcpwdrepl)">Denied RODC Password Replication Group</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>Default User Rights</p></td>
-<td><p>See <a href="#bkmk-deniedrodcpwdrepl" data-raw-source="[Denied RODC Password Replication Group](#bkmk-deniedrodcpwdrepl)">Denied RODC Password Replication Group</a></p></td>
-</tr>
-</tbody>
-</table>
 
  
 
@@ -3197,7 +3196,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3264,7 +3263,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3327,7 +3326,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;root domain&gt;-518</p></td>
+<td><p>S-1-5-21-&lt;root domain&gt;-518</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -3368,9 +3367,9 @@ This security group has not changed since Windows Server 2008.
 
 ### <a href="" id="bkmk-serveroperators"></a>Server Operators
 
-Members in the Server Operators group can administer domain servers. This group exists only on domain controllers. By default, the group has no members. Members of the Server Operators group can sign in to a server interactively, create and delete network shared resources, start and stop services, back up and restore files, format the hard disk drive of the computer, and shut down the computer. This group cannot be renamed, deleted, or moved.
+Members in the Server Operators group can administer domain controllers. This group exists only on domain controllers. By default, the group has no members. Members of the Server Operators group can sign in to a server interactively, create and delete network shared resources, start and stop services, back up and restore files, format the hard disk drive of the computer, and shut down the computer. This group cannot be renamed, deleted, or moved.
 
-By default, this built-in group has no members, and it has access to server configuration options on domain controllers. Its membership is controlled by the service administrator groups, Administrators and Domain Admins, in the domain, and the Enterprise Admins group. Members in this group cannot change any administrative group memberships. This is considered a service administrator account because its members have physical access to domain controllers, they can perform maintenance tasks (such as backup and restore), and they have the ability to change binaries that are installed on the domain controllers. Note the default user rights in the following table.
+By default, this built-in group has no members, and it has access to server configuration options on domain controllers. Its membership is controlled by the service administrator groups Administrators and Domain Admins in the domain, and the Enterprise Admins group in the forest root domain. Members in this group cannot change any administrative group memberships. This is considered a service administrator account because its members have physical access to domain controllers, they can perform maintenance tasks (such as backup and restore), and they have the ability to change binaries that are installed on the domain controllers. Note the default user rights in the following table.
 
 The Server Operators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -3394,7 +3393,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3442,7 +3441,7 @@ The Storage Replica Administrators group applies to versions of the Windows Serv
 | Attribute | Value |
 |-----------|-------|
 | Well-Known SID/RID | S-1-5-32-582 |
-| Type | BuiltIn Local |
+| Type | Builtin Local |
 | Default container | CN=BuiltIn, DC=&lt;domain&gt;, DC= |
 | Default members | None |
 | Default member of | None |
@@ -3463,7 +3462,7 @@ The System Managed Accounts group applies to versions of the Windows Server oper
 | Attribute | Value |
 |-----------|-------|
 | Well-Known SID/RID | S-1-5-32-581 |
-| Type | BuiltIn Local |
+| Type | Builtin Local |
 | Default container | CN=BuiltIn, DC=&lt;domain&gt;, DC= |
 | Default members | Users |
 | Default member of | None |
@@ -3507,7 +3506,7 @@ This security group only applies to Windows Server 2003 and Windows Server 200
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3574,7 +3573,7 @@ This security group includes the following changes since Windows Server 2008:
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3588,7 +3587,7 @@ This security group includes the following changes since Windows Server 2008:
 </tr>
 <tr class="odd">
 <td><p>Default member of</p></td>
-<td><p>Domain Users (this membership is due to the fact that the Primary Group ID of all user accounts is Domain Users.)</p></td>
+<td><p>None</p></td>
 </tr>
 <tr class="even">
 <td><p>Protected by ADMINSDHOLDER?</p></td>
@@ -3641,7 +3640,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>

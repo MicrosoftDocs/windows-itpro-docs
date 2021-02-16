@@ -1,6 +1,6 @@
 ---
 title: EnterpriseModernAppManagement DDF
-description: EnterpriseModernAppManagement DDF
+description: Learn about the OMA DM device description framework (DDF) for the EnterpriseModernAppManagement configuration service provider (CSP).
 ms.assetid: 
 ms.reviewer: 
 manager: dansimp

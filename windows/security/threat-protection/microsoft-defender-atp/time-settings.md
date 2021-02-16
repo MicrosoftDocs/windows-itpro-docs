@@ -4,7 +4,7 @@ description: Use the info contained here to configure the Microsoft Defender Sec
 keywords: settings, Microsoft Defender, cybersecurity threat intelligence, advanced threat protection, time zone, utc, local time, license
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,55 +13,60 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Microsoft Defender Security Center time zone settings
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-settings-abovefoldlink)
 
-Use the **Time zone** menu ![Time zone settings icon](images/atp-time-zone.png) to configure the time zone and view license information.
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-settings-abovefoldlink)
+
+Use the **Time zone** menu ![Time zone settings icon1](images/atp-time-zone.png) to configure the time zone and view license information.
 
 ## Time zone settings
 The aspect of time is important in the assessment and analysis of perceived and actual cyberattacks.
 
 Cyberforensic investigations often rely on time stamps to piece together the sequence of events. It’s important that your system reflects the correct time zone settings.
 
-Microsoft Defender ATP can display either Coordinated Universal Time (UTC) or local time.
+Microsoft Defender for Endpoint can display either Coordinated Universal Time (UTC) or local time.
 
-Your current time zone setting is shown in the Microsoft Defender ATP menu. You can change the displayed time zone in the **Time zone** menu.
+Your current time zone setting is shown in the Microsoft Defender for Endpoint menu. You can change the displayed time zone in the **Time zone** menu.
 
-![Time zone settings icon](images/atp-time-zone-menu.png).
+![Time zone settings icon2](images/atp-time-zone-menu.png).
 
 ### UTC time zone
-Microsoft Defender ATP uses UTC time by default.
+Microsoft Defender for Endpoint uses UTC time by default.
 
-Setting the Microsoft Defender ATP time zone to UTC will display all system timestamps (alerts, events, and others) in UTC for all users. This can help security analysts working in different locations across the globe to use the same time stamps while investigating events.
+Setting the Microsoft Defender for Endpoint time zone to UTC will display all system timestamps (alerts, events, and others) in UTC for all users. This can help security analysts working in different locations across the globe to use the same time stamps while investigating events.
 
 ### Local time zone
-You can choose to have Microsoft Defender ATP use local time zone settings. All alerts and events will be displayed using your local time zone.
+You can choose to have Microsoft Defender for Endpoint use local time zone settings. All alerts and events will be displayed using your local time zone.
 
-The local time zone is taken from your device’s regional settings. If you change your regional settings, the Microsoft Defender ATP time zone will also change. Choosing this setting means that the timestamps displayed in Microsoft Defender ATP will be aligned to local time for all Microsoft Defender ATP users. Analysts located in different global locations will now see the Microsoft Defender ATP alerts according to their regional settings.
+The local time zone is taken from your device’s regional settings. If you change your regional settings, the Microsoft Defender for Endpoint time zone will also change. Choosing this setting means that the timestamps displayed in Microsoft Defender for Endpoint will be aligned to local time for all Microsoft Defender for Endpoint users. Analysts located in different global locations will now see the Microsoft Defender for Endpoint alerts according to their regional settings.
 
 Choosing to use local time can be useful if the analysts are located in a single location. In this case it might be easier to correlate events to local time, for example – when a local user clicked on a suspicious email link.
 
 ### Set the time zone
-The Microsoft Defender ATP time zone is set by default to UTC.
-Setting the time zone also changes the times for all Microsoft Defender ATP views.
+The Microsoft Defender for Endpoint time zone is set by default to UTC.
+Setting the time zone also changes the times for all Microsoft Defender for Endpoint views.
 To set the time zone:
 
-1. Click the **Time zone** menu ![Time zone settings icon](images/atp-time-zone.png).
+1. Click the **Time zone** menu ![Time zone settings icon3](images/atp-time-zone.png).
 2. Select the **Timezone UTC** indicator.
 3. Select **Timezone UTC** or your local time zone, for example -7:00.
 
 ### Regional settings
-To apply different date formats for Microsoft Defender ATP, use regional settings for Internet Explorer (IE) and Microsoft Edge (Edge). If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser. 
+To apply different date formats for Microsoft Defender for Endpoint, use regional settings for Internet Explorer (IE) and Microsoft Edge (Edge). If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser. 
 
 
 **Internet Explorer (IE) and Microsoft Edge**

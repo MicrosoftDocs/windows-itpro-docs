@@ -30,9 +30,11 @@ Turn on Microsoft Defender Application Guard in Enterprise Mode.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
-The following list shows the supported values:  
-- 0 - Stops Application Guard in Enterprise Mode. Trying to access non-enterprise domains on the host will not automatically get transferred into the insolated environment.
-- 1 - Enables Application Guard in Enterprise Mode. Trying to access non-enterprise websites on the host will automatically get transferred into the container. 
+The following list shows the supported values:
+- 0 - Disable Microsoft Defender Application Guard
+- 1 - Enable Microsoft Defender Application Guard for Microsoft Edge ONLY
+- 2 - Enable Microsoft Defender Application Guard for isolated Windows environments ONLY
+- 3 - Enable Microsoft Defender Application Guard for Microsoft Edge AND isolated Windows environments
 
 <a href="" id="clipboardfiletype"></a>**Settings/ClipboardFileType**  
 Determines the type of content that can be copied from the host to Application Guard environment and vice versa. 
@@ -123,7 +125,7 @@ The following list shows the supported values:
 - 1 - Non-enterprise content embedded on enterprise sites are stopped from opening in Internet Explorer or Microsoft Edge outside of Microsoft Defender Application Guard.
 
 > [!NOTE]
-> This policy setting is no longer supported in the new Microsoft Edge browser.
+> This policy setting is no longer supported in the new Microsoft Edge browser. The policy will be deprecated and removed in a future release. Webpages that contain mixed content, both enterprise and non-enterprise, may load incorrectly or fail completely if this feature is enabled.
 
 <!--ADMXMapped-->
 ADMX Info:  

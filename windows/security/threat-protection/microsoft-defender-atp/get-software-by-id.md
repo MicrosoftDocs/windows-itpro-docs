@@ -1,9 +1,9 @@
 ---
 title: Get software by Id
-description: Retrieves a list of exposure scores by device group.
+description: Retrieves a list of sofware by ID.
 keywords: apis, graph api, supported apis, get, software, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,22 +12,31 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Get software by Id
 
-**Applies to:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Retrieves software details by ID.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
 Permission type |   Permission  |   Permission display name
 :---|:---|:---
@@ -58,8 +67,8 @@ If successful, this method returns 200 OK with the specified software data in th
 
 Here is an example of the request.
 
-```
-GET https://api.securitycenter.windows.com/api/Software/microsoft-_-edge
+```http
+GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
 ```
 
 **Response**
@@ -67,9 +76,8 @@ GET https://api.securitycenter.windows.com/api/Software/microsoft-_-edge
 Here is an example of the response.
 
 ```json
-
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Software/$entity",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Software/$entity",
     "id": "microsoft-_-edge",
     "name": "edge",
     "vendor": "microsoft",

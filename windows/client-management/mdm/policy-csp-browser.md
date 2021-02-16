@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Browser
-description: Learn how to set the Policy CSP - Browser settings for Microsoft Edge, version 45 and earlier.
+description: Learn how to use the Policy CSP - Browser settings so you can configure Microsoft Edge browser, version 45 and earlier.
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

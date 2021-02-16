@@ -10,11 +10,11 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: linque1
-ms.author: obezeajo
+ms.author: robsize
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 7/7/2020
+ms.date: 12/1/2020
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
@@ -107,7 +107,7 @@ The following table lists management options for each setting, beginning with Wi
 | [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [27. Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [28. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| [28. Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [29. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 
@@ -217,7 +217,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [27. Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |
-| [28. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [28. Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [29. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 ## How to configure each setting
@@ -390,7 +390,7 @@ Windows Insider Preview builds only apply to Windows 10 and are not available fo
 
 
 > [!NOTE]
-> If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for Restricted Traffic) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Full**. Although the diagnostic data level may initially appear as **Basic**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Full**.
+> If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for Restricted Traffic) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Optional (Full)**. Although the diagnostic data level may initially appear as **Required (Basic)**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Optional (Full)**.
 
 To turn off Insider Preview builds for a released version of Windows 10:
 
@@ -415,7 +415,7 @@ To turn off Insider Preview builds for Windows 10:
 
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 > [!NOTE]
->When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](https://support.microsoft.com/en-us/help/815141/ie-enhanced-security-configuration-changes-browsing-experience). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:  
+>When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](https://support.microsoft.com/help/815141/ie-enhanced-security-configuration-changes-browsing-experience). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:  
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -1302,7 +1302,7 @@ To change how frequently **Windows should ask for my feedback**:
 
 To change the level of diagnostic and usage data sent when you **Send your device data to Microsoft**:
 
-- Click either the **Basic** or **Full** options.
+- Click either the **Required (Basic)** or **Optional (Full)** options.
 
   -or-
 
@@ -1458,15 +1458,15 @@ To turn this Off in the UI:
 
 -OR-
  
-- Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 2 (two)**
+- Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**
 
      -and-
 
-- Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 2 (two)**
+- Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**
 
      -and-
 
-- Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 2 (two)**
+- Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**
     
 ### <a href="" id="bkmk-voice-act"></a>18.23 Voice Activation
 
@@ -1560,7 +1560,7 @@ To turn off Messaging cloud sync:
 You can disable Teredo by using Group Policy or by using the netsh.exe command. For more info on Teredo, see [Internet Protocol Version 6, Teredo, and Related Technologies](https://technet.microsoft.com/library/cc722030.aspx).
 
 >[!NOTE]
->If you disable Teredo, some XBOX gaming features and Windows Update Delivery Optimization will not work.
+>If you disable Teredo, some XBOX gaming features and Delivery Optimization (with Group or Internet peering) will not work.
 
 - **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** &gt; **TCPIP Settings** &gt; **IPv6 Transition Technologies** &gt; **Set Teredo State** and set it to **Disabled State**.
 
@@ -1659,12 +1659,12 @@ You can turn off **Enhanced Notifications** as follows:
 
   -or-
 
-- Create a new REG_SZ registry setting named **DisableEnhancedNotifications** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Reporting** to a value of **1**.
+- Create a new REG_DWORD registry setting named **DisableEnhancedNotifications** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Reporting** and enter the decimal value **1**.
 
 
 ### <a href="" id="bkmk-defender-smartscreen"></a>24.1 Windows Defender SmartScreen
 
-To disable Windows Defender Smartscreen:
+To disable Windows Defender SmartScreen:
 
 In Group Policy, configure: 
 
@@ -1809,19 +1809,19 @@ You can turn off apps for websites, preventing customers who visit websites that
 
 - Create a new REG_DWORD registry setting named **EnableAppUriHandlers** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
 
-### <a href="" id="bkmk-updates"></a>28. Windows Update Delivery Optimization
+### <a href="" id="bkmk-updates"></a>28. Delivery Optimization
 
-Windows Update Delivery Optimization lets you get Windows updates and Microsoft Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
+Delivery Optimization is the downloader of Windows updates, Microsoft Store apps, Office and other content from Microsoft. Delivery Optimization can also download from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization Peer-to-Peer option turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
 
-By default, PCs running Windows 10 Enterprise and Windows 10 Education will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
+By default, PCs running Windows 10 will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
 
 Use the UI, Group Policy, or Registry Keys to set up Delivery Optimization.
 
-In Windows 10 version 1607 and above you can stop network traffic related to Windows Update Delivery Optimization by setting **Download Mode** to  **Bypass** (99), as described below.
+In Windows 10 version 1607 and above you can stop network traffic related to Delivery Optimization Cloud Service by setting **Download Mode** to  **Simple Mode** (99), as described below.
 
 ### <a href="" id="bkmk-wudo-ui"></a>28.1 Settings &gt; Update & security
 
-You can set up Delivery Optimization from the **Settings** UI.
+You can set up Delivery Optimization Peer-to-Peer from the **Settings** UI.
 
 - Go to **Settings** &gt; **Update & security** &gt; **Windows Update** &gt; **Advanced options** &gt; **Choose how updates are delivered**.
 
@@ -1837,9 +1837,12 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 | Max Cache Size            | Lets you specify the maximum cache size as a percentage of disk size. <br /> The default value is 20, which represents 20% of the disk.|
 | Max Upload Bandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
 
+
+For a comprehensive list of Delivery Optimization Policies, see [Delivery Optimization Reference](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference).
+
 ### <a href="" id="bkmk-wudo-mdm"></a>28.3 Delivery Optimization
 
-- **Enable** the **Download Mode** Group Policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization** and set the **Download Mode** to **"Bypass"** to prevent traffic.
+- **Enable** the **Download Mode** Group Policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization** and set the **Download Mode** to **"Simple Mode (99)"** to prevent traffic between peers as well as traffic back to the Delivery Optimization Cloud Service.
 
 -or-
 
@@ -1847,6 +1850,9 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 
 
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
+
+For IT Professionals, information about Delivery Optimization is available here: [Delivery Optimization for Windows 10 updates]
+(https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
 
 ### <a href="" id="bkmk-wu"></a>29. Windows Update
 

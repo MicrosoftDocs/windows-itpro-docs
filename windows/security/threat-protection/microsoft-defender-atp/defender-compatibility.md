@@ -1,10 +1,10 @@
 ---
 title: Microsoft Defender Antivirus compatibility with Microsoft Defender ATP
-description: Learn about how Windows Defender works with Microsoft Defender ATP and how it functions when a third-party antimalware client is used.  
+description: Learn about how Windows Defender works with Microsoft Defender ATP and how it functions when a third-party antimalware client is used.
 keywords: windows defender compatibility, defender, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,29 +13,33 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
+ms.technology: mde
 ---
 
 # Microsoft Defender Antivirus compatibility with Microsoft Defender ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
 
 - Windows Defender
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
 
-The Microsoft Defender Advanced Threat Protection agent depends on Microsoft Defender Antivirus for some capabilities such as file scanning.
+The Microsoft Defender for Endpoint agent depends on Microsoft Defender Antivirus for some capabilities such as file scanning.
 
 >[!IMPORTANT]
->Microsoft Defender ATP does not adhere to the Microsoft Defender Antivirus Exclusions settings. 
+>Defender for Endpoint does not adhere to the Microsoft Defender Antivirus Exclusions settings. 
 
-You must configure Security intelligence updates on the Microsoft Defender ATP devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
+You must configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
 
 If an onboarded device is protected by a third-party antimalware client, Microsoft Defender Antivirus on that endpoint will enter into passive mode.
 
@@ -43,4 +47,4 @@ Microsoft Defender Antivirus will continue to receive updates, and the *mspeng.e
 
 The Microsoft Defender Antivirus interface will be disabled, and users on the device will not be able to use Microsoft Defender Antivirus to perform on-demand scans or configure most options.
 
-For more information, see the [Microsoft Defender Antivirus and Microsoft Defender ATP compatibility topic](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+For more information, see the [Microsoft Defender Antivirus and Defender for Endpoint compatibility topic](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).

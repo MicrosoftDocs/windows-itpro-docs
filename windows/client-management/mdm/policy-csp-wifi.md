@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Wifi
-description: Policy CSP - Wifi
+description: Learn how the Policy CSP - Wifi setting allows or disallows the device to automatically connect to Wi-Fi hotspots.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

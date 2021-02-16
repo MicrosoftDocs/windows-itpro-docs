@@ -1,10 +1,10 @@
 ---
 title: Configure managed security service provider support
-description: Take the necessary steps to configure the MSSP integration with Microsoft Defender ATP 
+description: Take the necessary steps to configure the MSSP integration with the Microsoft Defender ATP
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,17 +13,21 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Configure managed security service provider integration
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
  
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -41,7 +45,7 @@ The integration will allow MSSPs to take the following actions:
 - Get email notifications, and 
 - Fetch alerts through security information and event management (SIEM) tools
 
-Before MSSPs can take these actions, the MSSP customer will need to grant access to their Microsoft Defender ATP tenant so that the MSSP can access the portal. 
+Before MSSPs can take these actions, the MSSP customer will need to grant access to their Defender for Endpoint tenant so that the MSSP can access the portal. 
  
 
 Typically, MSSP customers take the initial configuration steps to grant MSSPs access to their Windows Defender Security Central tenant. After access is granted, other configuration steps can be done by either the MSSP customer or the MSSP.
@@ -51,7 +55,7 @@ In general, the following configuration steps need to be taken:
 
 
 - **Grant the MSSP access to Microsoft Defender Security Center** <br>
-This action needs to be done by the MSSP customer. It grants the MSSP access to the MSSP customer's Microsoft Defender ATP tenant.
+This action needs to be done by the MSSP customer. It grants the MSSP access to the MSSP customer's Defender for Endpoint tenant.
  
 
 - **Configure alert notifications sent to MSSPs** <br>
@@ -63,6 +67,8 @@ This action is taken by the MSSP. It allows MSSPs to fetch alerts in SIEM tools.
 - **Fetch alerts from MSSP customer's tenant using APIs** <br>
 This action is taken by the MSSP. It allows MSSPs to fetch alerts using APIs.
 
+## Multi-tenant access for MSSPs
+For information on how to implement a multi-tenant delegated access, see [Multi-tenant access for Managed Security Service Providers](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/multi-tenant-access-for-managed-security-service-providers/ba-p/1533440).
 
 
 

@@ -4,7 +4,7 @@ description: Explore the methodology behind Certificate-based Isolation Policy D
 ms.assetid: 63e01a60-9daa-4701-9472-096c85e0f862
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +15,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
-# Certificate-based Isolation Policy Design
+# Certificate-based isolation policy design
 
 **Applies to**
 -   Windows 10
@@ -35,7 +36,7 @@ For Windows devices that are part of an Active Directory domain, you can use Gro
 
 For more info about this design:
 
--   This design coincides with the deployment goals to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md), and optionally [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
+-   This design coincides with the implementation goals to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md), and optionally [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
 
 -   To learn more about this design, see [Certificate-based Isolation Policy Design Example](certificate-based-isolation-policy-design-example.md).
 
@@ -45,4 +46,4 @@ For more info about this design:
 
 -   For a list of tasks that you can use to deploy your certificate-based policy design, see [Checklist: Implementing a Certificate-based Isolation Policy Design](checklist-implementing-a-certificate-based-isolation-policy-design.md).
 
-**Next:** [Evaluating Windows Defender Firewall with Advanced Security Design Examples](evaluating-windows-firewall-with-advanced-security-design-examples.md)
+

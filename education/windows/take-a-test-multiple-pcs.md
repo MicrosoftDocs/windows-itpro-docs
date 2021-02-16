@@ -145,8 +145,8 @@ To set up a test account through Windows Configuration Designer, follow these st
       - username@tenant.com
 
    4. Under **Runtime settings**, go to **TakeATest** and configure the following settings:
-      1. In **LaunchURI**, enter the assessment URL.
-      2. In **TesterAccount**, enter the test account you entered in step 3.
+      - In **LaunchURI**, enter the assessment URL.
+      - In **TesterAccount**, enter the test account you entered in step 3.
 
 3. Follow the steps to [build a package](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package#build-package). 
 
@@ -166,9 +166,9 @@ This sample PowerShell script configures the tester account and the assessment U
 - Use your tester account for **-UserName**
 
 >[!NOTE]
->The account that you specify for the tester account must already exist on the device.
+>The account that you specify for the tester account must already exist on the device. For steps to create the tester account, see [Set up a dedicated test account](https://docs.microsoft.com/education/windows/take-a-test-single-pc#set-up-a-dedicated-test-account).
 
-```
+```powershell
 $obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
 $obj.LaunchURI='https://www.foo.com';
 $obj.TesterAccount='TestAccount';
@@ -232,7 +232,7 @@ One of the ways you can present content in a locked down manner is by embedding 
 
 1. Embed a link or create a desktop shortcut with:
 
-   ```
+   ```http
    ms-edu-secureassessment:<URL>#enforceLockdown
    ```
 

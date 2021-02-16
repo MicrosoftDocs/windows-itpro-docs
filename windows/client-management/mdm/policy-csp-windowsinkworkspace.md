@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - WindowsInkWorkspace
-description: Policy CSP - WindowsInkWorkspace
+description: Learn to use the Policy CSP - WindowsInkWorkspace setting to specify whether to allow the user to access the ink workspace.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

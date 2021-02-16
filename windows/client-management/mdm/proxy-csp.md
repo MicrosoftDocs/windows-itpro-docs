@@ -1,6 +1,6 @@
 ---
 title: PROXY CSP
-description: PROXY CSP
+description: Learn how the PROXY configuration service provider (CSP) is used to configure proxy connections.
 ms.assetid: 9904d44c-4a1e-4ae7-a6c7-5dba06cb16ce
 ms.reviewer: 
 manager: dansimp

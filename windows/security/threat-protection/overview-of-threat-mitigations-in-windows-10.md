@@ -1,16 +1,17 @@
 ---
 title: Mitigate threats by using Windows 10 security features (Windows 10)
 description: An overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.date: 10/13/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # Mitigate threats by using Windows 10 security features
@@ -106,7 +107,7 @@ Microsoft Defender Antivirus in Windows 10 uses a multi-pronged approach to impr
 
 For more information, see [Windows Defender in Windows 10](microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md) and [Windows Defender Overview for Windows Server](https://docs.microsoft.com/windows-server/security/windows-defender/windows-defender-overview-windows-server).
 
-For information about Microsoft Defender Advanced Threat Protection, a service that helps enterprises to detect, investigate, and respond to advanced and targeted attacks on their networks, see [Microsoft Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (resources) and [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (documentation).
+For information about Microsoft Defender for Endpoint, a service that helps enterprises to detect, investigate, and respond to advanced and targeted attacks on their networks, see [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (resources) and [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (documentation).
 
 ### Data Execution Prevention
 
@@ -311,9 +312,9 @@ The following table lists EMET features in relation to Windows 10 features.
 <table>
 <thead>
 <tr class="header">
-<th><strong>Specific EMET features</strong></th>
-<th><strong>How these EMET features map<br />
-to Windows 10 features</strong></th>
+<th><b>Specific EMET features</b></th>
+<th><b>How these EMET features map<br />
+to Windows 10 features</b></th>
 </tr>
 </thead>
 <tbody>
@@ -445,14 +446,14 @@ Examples:
 
 #### EMET-related products
 
-Microsoft Consulting Services (MCS) and Microsoft Support/Premier Field Engineering (PFE) offer a range of options for EMET, support for EMET, and EMET-related reporting and auditing products such as the EMET Enterprise Reporting Service (ERS). For any enterprise customers who use such products today or who are interested in similar capabilities, we recommend evaluating [Microsoft Defender Advanced Threat Protection](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md) (ATP).
+Microsoft Consulting Services (MCS) and Microsoft Support/Premier Field Engineering (PFE) offer a range of options for EMET, support for EMET, and EMET-related reporting and auditing products such as the EMET Enterprise Reporting Service (ERS). For any enterprise customers who use such products today or who are interested in similar capabilities, we recommend evaluating [Microsoft Defender for Endpoint](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md).
 
 ## Related topics
 
 - [Security and Assurance in Windows Server 2016](https://docs.microsoft.com/windows-server/security/security-and-assurance)
-- [Microsoft Defender Advanced Threat Protection (ATP) - resources](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
-- [Microsoft Defender Advanced Threat Protection (ATP) - documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft Defender for Endpoint - resources](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
+- [Microsoft Microsoft Defender for Endpoint - documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Exchange Online Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-- [Office 365 Advanced Threat Protection](https://products.office.com/en-us/exchange/online-email-threat-protection)
+- [Microsoft Defender for Office 365](https://products.office.com/en-us/exchange/online-email-threat-protection)
 - [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/mmpc/default.aspx)
 

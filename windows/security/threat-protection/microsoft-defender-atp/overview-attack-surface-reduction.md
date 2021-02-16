@@ -5,7 +5,7 @@ description: Learn about the attack surface reduction capabilities of Microsoft 
 keywords: asr, attack surface reduction, microsoft defender atp, microsoft defender advanced threat protection, microsoft defender, antivirus, av, windows defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,16 +14,20 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Overview of attack surface reduction
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Help reduce your attack surfaces, by minimizing the places where your organization is vulnerable to cyberthreats and attacks. Use the following resources to configure protection for the devices and applications in your organization.
 

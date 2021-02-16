@@ -52,9 +52,12 @@ Drivers are automatically enabled because they are beneficial to device systems.
 #### I want to receive pre-release versions of the next feature update
 
 1. Ensure that you are enrolled in the Windows Insider Program for Business. This is a completely free program available to commercial customers to aid them in their validation of feature updates before they are released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates. 
-2. For any of test devices you want to install pre-release builds, use [Update/ManagePreviewBuilds](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-managepreviewbuilds). Set this to **Enable preview builds**.
-3. Use [Update/BranchReadinessLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel) and select one of the preview Builds. Windows Insider Program Slow is the recommended channel for commercial customers who are using pre-release builds for validation.
-4. Additionally, you can defer pre-release feature updates the same way as released updates, by setting a deferral period up to 14 days by using [Update/DeferFeatureUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays). If you are testing with Windows Insider Program Slow builds, we recommend that you receive the preview updates to your IT department on day 0, when the update is released, and then have a 7-10 day deferral before rolling out to your group of testers. This ensures that if a problem is discovered, you can pause the rollout of the preview update before it reaches your tests.
+
+1. For any of test devices you want to install pre-release builds, use [Update/ManagePreviewBuilds](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-managepreviewbuilds). Set this to **Enable preview builds**.
+
+1. Use [Update/BranchReadinessLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel) and select one of the preview Builds. Windows Insider Program Slow is the recommended channel for commercial customers who are using pre-release builds for validation.
+
+1. Additionally, you can defer pre-release feature updates the same way as released updates, by setting a deferral period up to 14 days by using [Update/DeferFeatureUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays). If you are testing with Windows Insider Program Slow builds, we recommend that you receive the preview updates to your IT department on day 0, when the update is released, and then have a 7-10 day deferral before rolling out to your group of testers. This ensures that if a problem is discovered, you can pause the rollout of the preview update before it reaches your tests.
 
 #### I want to manage which released feature update my devices receive
 
@@ -102,7 +105,7 @@ Now all devices are paused from updating for 35 days. When the pause is removed,
 
 #### I want to stay on a specific version
 
-If you need a device to stay on a version beyond the point when deferrals on the next version would elapse or if you need to skip a version (for example, update fall release to fall release) use the **Select the target Feature Update version** setting instead of  using the Update/TargetReleaseVersion (or DeployFeatureUpdates in Windows 10, version 1803 and later) setting for feature update deferrals. When you use this policy, specify the version that you want your device(s) to use. If you don't update this before the device reaches end of service, the device will automatically be updated once it is 60 days past end of service for its edition.
+If you need a device to stay on a version beyond the point when deferrals on the next version would elapse or if you need to skip a version (for example, update fall release to fall release) use the [Update/TargetReleaseVersion](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-targetreleaseversion) (or Deploy Feature Updates Preview in Intune) instead of using feature update deferrals. When you use this policy, specify the version that you want your device(s) to move to or stay on (for example, "1909"). You can find version information at the [Windows 10 Release Information Page](https://docs.microsoft.com/windows/release-health/release-information).
 
 ### Manage how users experience updates
 
@@ -138,7 +141,7 @@ We recommend that you use set specific deadlines for feature and quality updates
 - [Update/ConfigureDeadlineGracePeriod](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod) 
 - [Update/ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
 
-These policies also offer an option to opt out of automatic restarts until a deadline is reached by presenting an "engaged restart experience" until the deadline has actually expired. At that point the device will automatically schedule a restart regardles of active hours.
+These policies also offer an option to opt out of automatic restarts until a deadline is reached by presenting an "engaged restart experience" until the deadline has actually expired. At that point the device will automatically schedule a restart regardless of active hours.
 
 These notifications are what the user sees depending on the settings you choose:
 
@@ -172,8 +175,8 @@ There are additional settings that affect the notifications.
 
 We recommend that you use the default notifications as they aim to provide the best user experience while adjusting for the compliance policies that you have set. If you do have further needs that are not met by the default notification settings, you can use the [Update/UpdateNotificationLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) policy with these values:
 
-**0** (default) – Use the default Windows Update notifications
-**1** – Turn off all notifications, excluding restart warnings
+**0** (default) – Use the default Windows Update notifications<br/>
+**1** – Turn off all notifications, excluding restart warnings<br/>
 **2** – Turn off all notifications, including restart warnings
 
 > [!NOTE]

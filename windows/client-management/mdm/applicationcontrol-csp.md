@@ -8,7 +8,7 @@ ms.prod: w10
 ms.technology: windows
 author: ManikaDhiman
 ms.reviewer: jsuther1974
-ms.date: 05/21/2019
+ms.date: 09/10/2020
 ---
 
 # ApplicationControl CSP
@@ -266,7 +266,7 @@ The following is an example of Delete command:
 
 ## PowerShell and WMI Bridge Usage Guidance
 
-The ApplicationControl CSP can also be managed locally from PowerShell or via SCCM's task sequence scripting by leveraging the [WMI Bridge Provider](https://docs.microsoft.com/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
+The ApplicationControl CSP can also be managed locally from PowerShell or via Microsoft Endpoint Manager Configuration Manager's (MEMCM, formerly known as SCCM) task sequence scripting by leveraging the [WMI Bridge Provider](https://docs.microsoft.com/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
 
 ### Setup for using the WMI Bridge
 

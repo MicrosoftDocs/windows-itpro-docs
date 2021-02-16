@@ -1,13 +1,13 @@
 ---
 title: Policy CSP - Search
-description: Policy CSP - Search
+description: Learn how the Policy CSP - Search setting allows search and Cortana to search cloud sources like OneDrive and SharePoint.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 02/12/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -24,9 +24,6 @@ manager: dansimp
 <dl>
   <dd>
     <a href="#search-allowcloudsearch">Search/AllowCloudSearch</a>
-  </dd>
-  <dd>
-    <a href="#search-allowcortanainaad">Search/AllowCortanaInAAD</a>
   </dd>
   <dd>
     <a href="#search-allowfindmyfiles">Search/AllowFindMyFiles</a>
@@ -137,7 +134,6 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-allowcortanainaad"></a>**Search/AllowCortanaInAAD**  
 
 <!--SupportedSKUs-->
 <table>
@@ -175,30 +171,6 @@ The following list shows the supported values:
 
 > [!div class = "checklist"]
 > * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1803. This specifies whether the Cortana consent page can appear in the Azure Active Directory (AAD) device out-of-box-experience (OOBE) flow. If this policy is left in its default state, Cortana will not be shown in the AAD OOBE flow. If you opt-in to this policy, then the Cortana consent page will appear in the AAD OOBE flow..
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Allow Cortana Page in OOBE on an AAD account*
--   GP name: *AllowCortanaInAAD*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) - Not allowed. The Cortana consent page will not appear in AAD OOBE during setup.
--   1 - Allowed. The Cortana consent page will appear in Azure AAD OOBE during setup.
-
-<!--/SupportedValues-->
-<!--/Policy-->
 
 <hr/>
 

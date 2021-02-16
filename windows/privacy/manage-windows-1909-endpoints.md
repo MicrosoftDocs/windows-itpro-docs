@@ -73,7 +73,6 @@ The following methodology was used to derive these network endpoints:
 ||The following endpoints are used for location data. If you turn off traffic for this endpoint, apps cannot use location data.|TLS v1.2|inference.location.live.net|
 |Maps|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-offlinemaps)|
 ||The following endpoints are used to check for updates to maps that have been downloaded for offline use. If you turn off traffic for this endpoint, offline maps will not be updated.|HTTP|*maps.windows.com|
-|| The following endpoints are used to check for updates to maps that have been downloaded for offline use.|HTTP|fs.microsoft.com*|
 |Microsoft Account|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-microsoft-account)|
 ||The following endpoints are used for Microsoft accounts to sign in. If you turn off traffic for these endpoints, users cannot sign in with Microsoft accounts. |TLS v1.2|*login.live.com|
 |Microsoft Edge|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#13-microsoft-edge)|
@@ -96,6 +95,7 @@ The following methodology was used to derive these network endpoints:
 |||TLS v1.2|*g.live.com|
 |||HTTPS|oneclient.sfx.ms|
 |||HTTPS| logincdn.msauth.net|
+|||HTTP| windows.policies.live.net|
 |Settings|The following endpoint is used as a way for apps to dynamically update their configuration. Apps such as System Initiated User Feedback and the Xbox app use it. If you turn off traffic for this endpoint, an app that uses this endpoint may stop working.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 |||TLS v1.2|settings-win.data.microsoft.com|
 |Skype|The following endpoint is used to retrieve Skype configuration values. To turn off traffic for this endpoint, either uninstall the app or disable the Microsoft Store. If you disable the Microsoft store, other Microsoft Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore)|
@@ -117,6 +117,7 @@ The following methodology was used to derive these network endpoints:
 |||HTTP|*.windowsupdate.com|
 ||The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store. If you turn off traffic for these endpoints, the device will not be able to connect to Windows Update and Microsoft Update to help keep the device secure. Also, the device will not be able to acquire and update apps from the Store. These are dependent on also enabling "Device authentication" and "Microsoft Account" endpoints.|HTTP|*.delivery.mp.microsoft.com|
 |||HTTPS/TLS v1.2|*.update.microsoft.com|
+||The following endpoint is used for compatibility database updates for Windows.|HTTP|adl.windows.com|
 ||The following endpoint is used for content regulation. If you turn off traffic for this endpoint, the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly.|HTTPS/TLS v1.2|tsfe.trafficshaping.dsp.mp.microsoft.com|
 ## Other Windows 10 editions
 
@@ -136,4 +137,4 @@ To view endpoints for non-Enterprise Windows 10 editions, see:
 ## Related links
 
 - [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)
-- [Network infrastructure requirements for Microsoft Intune](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
+- [Network infrastructure requirements for Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)

@@ -1,10 +1,10 @@
 ---
 title: Advanced hunting schema reference
-description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on 
+description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on.
 keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,23 +13,40 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
+ms.technology: mde
 ---
 
 # Understand the advanced hunting schema
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 The [advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about devices and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
 
-## Schema tables
+## Get schema information in the security center
+While constructing queries, use the built-in schema reference to quickly get the following information about each table in the schema:
+
+- **Tables description**—type of data contained in the table and the source of that data.
+- **Columns**—all the columns in the table.
+- **Action types**—possible values in the `ActionType` column representing the event types supported by the table. This is provided only for tables that contain event information.
+- **Sample query**—example queries that feature how the table can be utilized.
+
+### Access the schema reference
+To quickly access the schema reference, select the **View reference** action next to the table name in the schema representation. You can also select **Schema reference** to search for a table.
+
+![Image showing how to access in-portal schema reference](images/ah-reference.png)
+
+## Learn the schema tables
 
 The following reference lists all the tables in the advanced hunting schema. Each table name links to a page describing the column names for that table.
 
@@ -53,8 +70,11 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Threat & Vulnerability Management assessment events, indicating the status of various security configurations on devices |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Knowledge base of various security configurations used by Threat & Vulnerability Management to assess devices; includes mappings to various standards and benchmarks |
 
+
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
-- [Work with query results](advanced-hunting-query-results.md)
 - [Learn the query language](advanced-hunting-query-language.md)
+- [Work with query results](advanced-hunting-query-results.md)
+- [Apply query best practices](advanced-hunting-best-practices.md)
+- [Custom detections overview](overview-custom-detections.md)
 - [Advanced hunting data schema changes](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/advanced-hunting-data-schema-changes/ba-p/1043914)

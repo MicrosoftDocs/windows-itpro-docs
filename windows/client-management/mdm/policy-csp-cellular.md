@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Cellular
-description: Policy CSP - Cellular
+description: Learn how to use the Policy CSP - Cellular setting so you can specify whether Windows apps can access cellular data.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

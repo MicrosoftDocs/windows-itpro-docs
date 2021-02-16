@@ -1,6 +1,6 @@
 ---
 title: BitLocker CSP
-description: BitLocker CSP
+description: Learn how the BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -299,6 +299,10 @@ If you disable or do not configure this setting, users can configure only basic 
 
 > [!NOTE]
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
+
+> [!NOTE] 
+> Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern 
+> Standby devices will not be able to configure a Startup PIN using this CSP. Users are required to manually configure the PIN.
 
 Sample value for this node to enable this policy is:
 
@@ -1126,12 +1130,12 @@ Supported values:
 |-----|------------|
 | 0 |The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
 | 1 |The encryption method of the OS volume doesn't match the BitLocker policy.|
-| 2 |The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
+| 2 |The OS volume is unprotected.|
 | 3 |The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.|
 | 4 |The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.|
 | 5 |The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.|
 | 6 |The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.|
-| 7 |The OS volume is unprotected.|
+| 7 |The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
 | 8 |Recovery key backup failed.|
 | 9 |A fixed drive is unprotected.|
 | 10 |The encryption method of the fixed drive doesn't match the BitLocker policy.|

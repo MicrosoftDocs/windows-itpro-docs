@@ -4,7 +4,7 @@ description: Use a local script to deploy the configuration package on devices s
 keywords: configure devices using a local script, device management, configure Windows ATP devices, configure Microsoft Defender Advanced Threat Protection devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,58 +13,71 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Onboard Windows 10 devices using a local script
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-You can also manually onboard individual devices to Microsoft Defender ATP. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
+You can also manually onboard individual devices to Defender for Endpoint. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
 
-> [!NOTE]
-> The script has been optimized to be used on a limited number of devices (1-10 devices). To deploy to scale, use other deployment options. For more information on using other deployment options, see [Onboard Window 10 devices](configure-endpoints.md).
+> [!IMPORTANT]
+> This script has been optimized for use on up to 10 devices.
+>
+> To deploy at scale, use [other deployment options](configure-endpoints.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md).
 
 ## Onboard devices 
+
+[![Image of the PDF showing the various deployment paths](images/onboard-script.png)](images/onboard-script.png#lightbox)
+
+
+Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint. 
+
+
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-    a.  In the navigation pane, select **Settings** > **Onboarding**.
+    1. In the navigation pane, select **Settings** > **Onboarding**.
 
-    b. Select Windows 10 as the operating system.
+    1. Select Windows 10 as the operating system.
 
-    c.  In the **Deployment method** field, select **Local Script**.
+    1. In the **Deployment method** field, select **Local Script**.
 
-    d. Click **Download package** and save the .zip file.
+    1. Click **Download package** and save the .zip file.
 
   
 2.  Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
 3.  Open an elevated command-line prompt on the device and run the script:
 
-    a.  Go to **Start** and type **cmd**.
+    1.  Go to **Start** and type **cmd**.
 
-    b.  Right-click **Command prompt** and select **Run as administrator**.
+    1.  Right-click **Command prompt** and select **Run as administrator**.
 
-    ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
+        ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
 5.  Press the **Enter** key or click **OK**.
 
-For information on how you can manually validate that the device is compliant and correctly reports sensor data see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md).
+For information on how you can manually validate that the device is compliant and correctly reports sensor data see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
 
 >[!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
+> After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint endpoint](run-detection-test.md).
 
 ## Configure sample collection settings
 For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
@@ -73,7 +86,7 @@ You can manually configure the sample sharing setting on the device by using *re
 
 The configuration is set through the following registry key entry:
 
-```
+```console
 Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
 Name: "AllowSampleCollection"
 Value: 0 or 1
@@ -95,23 +108,23 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-    a.  In the navigation pane, select **Settings** > **Offboarding**.
+    1. In the navigation pane, select **Settings** > **Offboarding**.
 
-    b. Select Windows 10 as the operating system.
+    1. Select Windows 10 as the operating system.
 
-    c.  In the **Deployment method** field, select **Local Script**.
+    1. In the **Deployment method** field, select **Local Script**.
 
-    d. Click **Download package** and save the .zip file.
+    1. Click **Download package** and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the devices. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3.  Open an elevated command-line prompt on the device and run the script:
 
-    a.  Go to **Start** and type **cmd**.
+    1.  Go to **Start** and type **cmd**.
 
-    b.  Right-click **Command prompt** and select **Run as administrator**.
+    1.  Right-click **Command prompt** and select **Run as administrator**.
 
-    ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
+        ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
@@ -139,5 +152,5 @@ Monitoring can also be done directly on the portal, or by using the different de
 - [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP device](run-detection-test.md)
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)
+- [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md)
+- [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)

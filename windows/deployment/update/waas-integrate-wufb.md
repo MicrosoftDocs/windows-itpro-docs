@@ -6,8 +6,7 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 07/27/2017
-ms.reviewer: 
+ms.collection: m365initiative-coredeploy
 manager: laurawi
 ms.topic: article
 ---
@@ -69,7 +68,7 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 
 - Device is configured to defer Quality Updates using Windows Update for Business and to be managed by WSUS
 - Device is configured to “receive updates for other Microsoft products” along with updates to Windows (**Update/AllowMUUpdateService** = enabled)
-- Admin has also placed Microsoft Update, third-paprty, and locally-published update content on the WSUS server
+- Admin has also placed Microsoft Update, non-Microsoft, and locally published update content on the WSUS server
 
 In this example, the deferral behavior for updates to Office and other non-Windows products is slightly different than if WSUS were not enabled. 
 - In a non-WSUS case, these updates would be deferred just as any update to Windows would be.  

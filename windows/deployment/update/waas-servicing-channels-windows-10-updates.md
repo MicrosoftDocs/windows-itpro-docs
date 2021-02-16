@@ -1,15 +1,16 @@
 ---
 title: Assign devices to servicing channels for Windows 10 updates (Windows 10)
-description: tbd
+description: Learn how to assign devices to servicing channels for Windows 10 updates locally, by using Group Policy, and by using MDM .
 ms.prod: w10
 ms.mktglfcycl: deploy
-
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom:
+- seo-marvel-apr2020
 ---
 
 # Assign devices to servicing channels for Windows 10 updates
@@ -52,10 +53,8 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 >[!IMPORTANT]
 >Due to [naming changes](waas-overview.md#naming-changes), older terms like CB and CBB might still be displayed in some of our products, such as in Group Policy. If you encounter these terms, "CB" refers to the Semi-Annual Channel (Targeted)--which is no longer used--while "CBB" refers to the Semi-Annual Channel.
 
-**To assign a single devices locally to the Semi-Annual Channel**
-
-1. Go to **Settings** > **Update & security** > **Windows Update** > **Advanced options**.
-2. Select **Defer feature updates**.
+>[!NOTE]
+>Devices will automatically recieve updates from the Semi-Annual Channel, unless they are configured to recieve preview updates through the Windows Insider Program.
 
 **To assign devices to the Semi-Annual Channel by using Group Policy**
 
@@ -99,7 +98,7 @@ For more information, see [Windows Insider Program for Business](waas-windows-in
 
 ## Block access to Windows Insider Program
 
-To prevent devices in your enterprise from being enrolled in the Insider Program for early releases of Windows 10:
+To prevent devices in your organization from being enrolled in the Insider Program for early releases of Windows 10:
 
 - Group Policy: Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\\**Toggle user control over Insider builds**
 - MDM: Policy CSP - [System/AllowBuildPreview](https://msdn.microsoft.com/library/windows/hardware/dn904962%28v=vs.85%29.aspx#System_AllowBuildPreview)
@@ -164,10 +163,11 @@ During the life of a device, it might be necessary or desirable to switch betwee
 ## Block user access to Windows Update settings
 
 In Windows 10, administrators can control user access to Windows Update.
-By enabling the Group Policy setting under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Remove access to use all Windows update features**, administrators can disable the "Check for updates" option for users. Any background update scans, downloads and installations will continue to work as configured.
+
+Administrators can disable the "Check for updates" option for users by enabling the Group Policy setting under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Remove access to use all Windows update features** . Any background update scans, downloads and installations will continue to work as configured. We don't recomment this setting if you have configured the device to "notify" to download or install as this policy will prevent the user from being able to do so.
 
 >[!NOTE]
-> In Windows 10, any Group Policy user configuration settings for Windows Update were deprecated and are no longer supported on this platform.
+> Starting with Windows 10, any Group Policy user configuration settings for Windows Update are no longer supported.
 
 ## Steps to manage updates for Windows 10
 

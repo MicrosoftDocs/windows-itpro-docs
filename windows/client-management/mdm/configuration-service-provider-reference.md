@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 06/03/2020
+ms.date: 09/18/2020
 ---
 
 # Configuration service provider reference
@@ -1108,7 +1108,8 @@ Additional lists:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" />
+<a href="https://docs.microsoft.com/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection">Only for mobile application management (MAM)</td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1556,13 +1557,13 @@ Additional lists:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2727,6 +2728,7 @@ The following list shows the CSPs supported in HoloLens devices:
 | [DiagnosticLog CSP](diagnosticlog-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [DMAcc CSP](dmacc-csp.md)      | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [DMClient CSP](dmclient-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>10</sup>  |
 | [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [NetworkProxy CSP](networkproxy-csp.md) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
 | [NetworkQoSPolicy CSP](networkqospolicy-csp.md)  | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)       | ![check mark](images/checkmark.png) <sup>8</sup>|
@@ -2736,6 +2738,7 @@ The following list shows the CSPs supported in HoloLens devices:
 | [RemoteFind CSP](remotefind-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
 | [RemoteWipe CSP](remotewipe-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
 | [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [TenantLockdown CSP](tenantlockdown-csp.md) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>10</sup>  |
 | [Update CSP](update-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [VPNv2 CSP](vpnv2-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
@@ -2744,10 +2747,11 @@ The following list shows the CSPs supported in HoloLens devices:
  
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
--   [Accounts CSP](accounts-csp.md)<sup>9</sup> **Note:** Support in Surface Hub is limited to **Domain\ComputerName**.
+-   [Accounts CSP](accounts-csp.md)<sup>9</sup> 
+    > [!NOTE]
+    > Support in Surface Hub is limited to **Domain\ComputerName**.
 -   [AccountManagement CSP](accountmanagement-csp.md)
 -   [APPLICATION CSP](application-csp.md)
--   [Bitlocker-CSP](bitlocker-csp.md)<sup>9</sup> 
 -   [CertificateStore CSP](certificatestore-csp.md)
 -   [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
 -   [Defender CSP](defender-csp.md)
@@ -2813,3 +2817,4 @@ The following list shows the CSPs supported in HoloLens devices:
 - 7 - Added in Windows 10, version 1909.
 - 8 - Added in Windows 10, version 2004.
 - 9 - Added in Windows 10 Team 2020 Update
+- 10 - Added in [Windows Holographic, version 20H2](https://docs.microsoft.com/hololens/hololens-release-notes#windows-holographic-version-20h2)

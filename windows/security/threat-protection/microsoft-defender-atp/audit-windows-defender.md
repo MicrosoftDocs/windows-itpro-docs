@@ -3,7 +3,7 @@ title: Test how Microsoft Defender ATP features work in audit mode
 description: Audit mode lets you use the event log to see how Microsoft Defender ATP would protect your devices if it was enabled.
 keywords: exploit guard, audit, auditing, mode, enabled, disabled, test, demo, evaluate, lab
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,17 @@ author: levinec
 ms.author: ellevin
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
-# Test how Microsoft Defender ATP features work in audit mode
+# Test how Microsoft Defender for Endpoint features work in audit mode
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 You can enable attack surface reduction rules, exploit protection, network protection, and controlled folder access in audit mode. Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
 
@@ -29,7 +33,7 @@ The features won't block or prevent apps, scripts, or files from being modified.
 
 To find the audited entries, go to **Applications and Services** > **Microsoft** > **Windows** > **Windows Defender** > **Operational**.
 
-You can use Microsoft Defender Advanced Threat Protection to get greater details for each event, especially for investigating attack surface reduction rules. Using the Microsoft Defender ATP console lets you [investigate issues as part of the alert timeline and investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
+You can use Defender for Endpoint to get greater details for each event, especially for investigating attack surface reduction rules. Using the Defender for Endpoint console lets you [investigate issues as part of the alert timeline and investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
 
 This article provides links that describe how to enable the audit functionality for each feature and how to view events in the Windows Event Viewer.
 

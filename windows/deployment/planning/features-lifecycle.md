@@ -1,6 +1,6 @@
 ---
 title: Windows 10 features lifecycle
-description: Learn about the lifecycle of Windows 10 features
+description: Learn about the lifecycle of Windows 10 features, as well as features that are no longer developed, removed features, and terminology assigned to a feature.
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
@@ -10,6 +10,7 @@ author: greg-lindsay
 manager: laurawi
 ms.author: greglin
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 # Windows 10 features lifecycle
 
@@ -21,7 +22,7 @@ Each release of Windows 10 contains many new and improved features. Occasionally
 
 The following topic lists features that are no longer being developed. These features might be removed in a future release.
 
-[Windows 10 features we’re no longer developing](windows-10-deprecated-features.md)
+[Windows 10 features we're no longer developing](windows-10-deprecated-features.md)
 
 ## Features removed
 
@@ -41,4 +42,4 @@ The following terms can be used to describe the status that might be assigned to
 
 ## Also see
 
-[Windows 10 release information](https://docs.microsoft.com/windows/release-information/)
+[Windows 10 release information](https://docs.microsoft.com/windows/release-health/release-information)

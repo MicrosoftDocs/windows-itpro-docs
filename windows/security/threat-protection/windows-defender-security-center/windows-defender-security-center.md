@@ -3,7 +3,7 @@ title: The Windows Security  app
 description: The Windows Security app brings together common Windows security features into one place
 keywords: wdav, smartscreen, antivirus, wdsc, firewall, device health, performance, Edge, browser, family, parental options, security, windows
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,6 +12,7 @@ ms.author: dansimp
 ms.date: 10/02/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # The Windows Security app
@@ -34,7 +35,7 @@ In Windows 10, version 1803, the app has two new areas, **Account protection** a
 ![Screenshot of the Windows Security app showing that the device is protected and five icons for each of the features](images/security-center-home.png)
 
 > [!NOTE]
-> The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal console that is used to review and manage [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
+> The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal console that is used to review and manage [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 
 You can't uninstall the Windows Security app, but you can do one of the following:
 

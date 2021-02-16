@@ -1,6 +1,6 @@
 ---
 title: Storage DDF file
-description: See how storage configuration service provider. DDF files are used only with OMA DM provisioning XML.
+description: Learn about the OMA DM device description framework (DDF) for the Storage configuration service provider (CSP).
 ms.assetid: 247062A3-4DFB-4B14-A3D1-68D02C27703C
 ms.reviewer: 
 manager: dansimp

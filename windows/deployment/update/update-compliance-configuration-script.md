@@ -19,7 +19,11 @@ ms.topic: article
 
 The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures device policies via Group Policy, ensures that required services are running, and more.
 
-You can [**download the script here**](https://www.microsoft.com/en-us/download/details.aspx?id=101086). Keep reading to learn how to configure the script and interpret error codes that are output in logs for troubleshooting.
+> [!NOTE]
+> The Update Compliance configuration script does not offer options to configure Delivery Optimization. You have to do that separately.
+
+
+You can download the script from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=101086). Keep reading to learn how to configure the script and interpret error codes that are output in logs for troubleshooting.
 
 ## How the script is organized
 

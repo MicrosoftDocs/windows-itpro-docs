@@ -1,6 +1,6 @@
 ---
 title: Defender CSP
-description: See how the Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
+description: Learn how the Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
 ms.reviewer: 
 manager: dansimp
@@ -389,6 +389,26 @@ Intune tamper protection setting UX supports three states:
 - Disabled: Turns off the tamper protection feature.
 
 When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.
+
+<a href="" id="configuration-disablelocaladminmerge"></a>**Configuration/DisableLocalAdminMerge**<br>
+This policy setting controls whether or not complex list settings configured by a local administrator are merged with managed settings. This setting applies to lists such as threats and exclusions.
+
+If you disable or do not configure this setting, unique items defined in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, management settings will override preference settings.
+
+If you enable this setting, only items defined by management will be used in the resulting effective policy. Managed settings will override preference settings configured by the local administrator.
+
+> [!NOTE]
+> Applying this setting will not remove exclusions from the device registry, it will only prevent them from being applied/used. This is reflected in **Get-MpPreference**.
+
+Supported OS versions:  Windows 10
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:  
+- 1 – Enable.
+- 0 (default) – Disable.
 
 <a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
 Enables or disables file hash computation feature.

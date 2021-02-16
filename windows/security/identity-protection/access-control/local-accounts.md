@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -297,9 +297,9 @@ The following table shows the Group Policy and registry settings that are used t
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><strong>No.</strong></p></td>
-<td><p><strong>Setting</strong></p></td>
-<td><p><strong>Detailed Description</strong></p></td>
+<td><p><b>No.</b></p></td>
+<td><p><b>Setting</b></p></td>
+<td><p><b>Detailed Description</b></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -334,7 +334,7 @@ The following table shows the Group Policy and registry settings that are used t
 <tr class="even">
 <td><p>3</p></td>
 <td><p>Registry key</p></td>
-<td><p><strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</strong></p></td>
+<td><p><b>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</b></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -444,9 +444,9 @@ The following table shows the Group Policy settings that are used to deny networ
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><strong>No.</strong></p></td>
-<td><p><strong>Setting</strong></p></td>
-<td><p><strong>Detailed Description</strong></p></td>
+<td><p><b>No.</b></p></td>
+<td><p><b>Setting</b></p></td>
+<td><p><b>Detailed Description</b></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>

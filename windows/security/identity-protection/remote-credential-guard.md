@@ -6,7 +6,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -53,12 +53,12 @@ Use the following table to compare different Remote Desktop connection security 
 <br />
 
 
-|                                                       **Feature**                                                        |                                                           **Remote Desktop**                                                           |                                      **Windows Defender Remote Credential Guard**                                      |                                                                                                                                             **Restricted Admin mode**                                                                                                                                             |
+| Feature | Remote Desktop | Windows Defender Remote Credential Guard | Restricted Admin mode |
 |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                                 **Protection benefits**                                                  |                                Credentials on the server are not protected from Pass-the-Hash attacks.                                 |  User credentials remain on the client. An attacker can act on behalf of the user *only* when the session is ongoing   |                                                                                  User logs on to the server as local administrator, so an attacker cannot act on behalf of the “domain user”. Any attack is local to the server                                                                                   |
 |                                                   **Version support**                                                    |                                        The remote computer can run any Windows operating system                                        | Both the client and the remote computer must be running **at least Windows 10, version 1607, or Windows Server 2016**. | The remote computer must be running **at least patched Windows 7 or patched Windows Server 2008 R2**. <br /><br />For more information about patches (software updates) related to Restricted Admin mode, see [Microsoft Security Advisory 2871997](https://technet.microsoft.com/library/security/2871997.aspx). |
 | **Helps prevent**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; |                             &nbsp;&nbsp;&nbsp;&nbsp; N/A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                              |                   <ul><li> Pass-the-Hash</li> <li>Use of a credential after disconnection </li></ul>                   |                                                                                                                <ul><li> Pass-the-Hash</li> <li>Use of domain identity during connection </li></ul>                                                                                                                |
-|                             **Credentials supported from the remote desktop client device**                              | <ul><li><strong>Signed on</strong> credentials <li> <strong>Supplied</strong> credentials<li> <strong>Saved</strong> credentials </ul> |                                  <ul><li> <strong>Signed on</strong> credentials only                                  |                                                                                        <ul><li><strong>Signed on</strong> credentials<li><strong>Supplied</strong> credentials<li><strong>Saved</strong> credentials</ul>                                                                                         |
+|                             **Credentials supported from the remote desktop client device**                              | <ul><li><b>Signed on</b> credentials <li> <b>Supplied</b> credentials<li> <b>Saved</b> credentials </ul> |                                  <ul><li> <b>Signed on</b> credentials only                                  |                                                                                        <ul><li><b>Signed on</b> credentials<li><b>Supplied</b> credentials<li><b>Saved</b> credentials</ul>                                                                                         |
 |                                                        **Access**                                                        |                           **Users allowed**, that is, members of Remote Desktop Users group of remote host.                            |                      **Users allowed**, that is, members of Remote Desktop Users of remote host.                       |                                                                                                              **Administrators only**, that is, only members of Administrators group of remote host.                                                                                                               |
 |                                                   **Network identity**                                                   |                               Remote Desktop session **connects to other resources as signed-in user**.                                |                       Remote Desktop session **connects to other resources as signed-in user**.                        |                                                                                                                 Remote Desktop session **connects to other resources as remote host’s identity**.                                                                                                                 |
 |                                                      **Multi-hop**                                                       |                        From the remote desktop, **you can connect through Remote Desktop to another computer**                         |                From the remote desktop, you **can connect through Remote Desktop to another computer**.                |                                                                                                                      Not allowed for user as the session is running as a local host account                                                                                                                       |
@@ -67,7 +67,7 @@ Use the following table to compare different Remote Desktop connection security 
 <br />
 
 For further technical information, see [Remote Desktop Protocol](https://msdn.microsoft.com/library/aa383015(v=vs.85).aspx)
-and [How Kerberos works](https://technet.microsoft.com/library/cc961963.aspx(d=robot))
+and [How Kerberos works](https://technet.microsoft.com/library/cc961963.aspx(d=robot)).
 
 <br />
 
@@ -92,9 +92,12 @@ To use Windows Defender Remote Credential Guard, the Remote Desktop client and r
 
 The Remote Desktop client device:
 
--  Must be running at least Windows 10, version 1703 to be able to supply credentials, which is sent to the remote device. This allows users to run as different users without having to send credentials to the remote machine. 
+-  Must be running at least Windows 10, version 1703 to be able to supply credentials, which is sent to the remote device. This allows users to run as different users without having to send credentials to the remote machine.
+
 -  Must be running at least Windows 10, version 1607 or Windows Server 2016 to use the user’s signed-in credentials. This requires the user’s account be able to sign in to both the client device and the remote host.
+
 -  Must be running the Remote Desktop Classic Windows application. The Remote Desktop Universal Windows Platform application doesn't support Windows Defender Remote Credential Guard.
+
 -  Must use Kerberos authentication to connect to the remote host. If the client cannot connect to a domain controller, then RDP attempts to fall back to NTLM. Windows Defender Remote Credential Guard does not allow NTLM fallback because this would expose credentials to risk.
 
 The Remote Desktop remote host:
@@ -108,9 +111,13 @@ There are no hardware requirements for Windows Defender Remote Credential Guard.
 
 > [!NOTE]
 > Remote Desktop client devices running earlier versions, at minimum Windows 10 version 1607, only support signed-in credentials, so the client device must also be joined to an Active Directory domain. Both Remote Desktop client and server must either be joined to the same domain, or the Remote Desktop server can be joined to a domain that has a trust relationship to the client device's domain.
+>
+> GPO [Remote host allows delegation of non-exportable credentials](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation) should be enabled for delegation of non-exportable credentials.
 
 - For Windows Defender Remote Credential Guard to be supported, the user must authenticate to the remote host using Kerberos authentication.
+
 - The remote host must be running at least Windows 10 version 1607, or Windows Server 2016.
+
 - The Remote Desktop classic Windows app is required. The Remote Desktop Universal Windows Platform app doesn't support Windows Defender Remote Credential Guard.
 
 ## Enable Windows Defender Remote Credential Guard
@@ -118,15 +125,20 @@ There are no hardware requirements for Windows Defender Remote Credential Guard.
 You must enable Restricted Admin or Windows Defender Remote Credential Guard on the remote host by using the Registry.
 
 1. Open Registry Editor on the remote host.
+
 2. Enable Restricted Admin and Windows Defender Remote Credential Guard:
+
     - Go to HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa.
+    
     - Add a new DWORD value named **DisableRestrictedAdmin**.
+    
     - To turn on Restricted Admin and Windows Defender Remote Credential Guard, set the value of this registry setting to 0 to turn on Windows Defender Remote Credential Guard.
+    
 3. Close Registry Editor.
 
 You can add this by running the following command from an elevated command prompt:
 
-```
+```console
 reg add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin /d 0 /t REG_DWORD
 ```
 
@@ -143,6 +155,7 @@ Beginning with Windows 10 version 1703, you can enable Windows Defender Remote C
     ![Windows Defender Remote Credential Guard Group Policy](images/remote-credential-guard-gp.png)
 
 3. Under **Use the following restricted mode**:
+
    - If you want to require either [Restricted Admin mode](https://social.technet.microsoft.com/wiki/contents/articles/32905.remote-desktop-services-enable-restricted-admin-mode.aspx) or Windows Defender Remote Credential Guard, choose **Restrict Credential Delegation**. In this configuration, Windows Defender Remote Credential Guard is preferred, but it will use Restricted Admin mode (if supported) when Windows Defender Remote Credential Guard cannot be used.
 
      > [!NOTE]
@@ -163,7 +176,7 @@ Beginning with Windows 10 version 1703, you can enable Windows Defender Remote C
 
 If you don't use Group Policy in your organization, or if not all your remote hosts support Remote Credential Guard, you can add the remoteGuard parameter when you start Remote Desktop Connection to turn on Windows Defender Remote Credential Guard for that connection.
 
-```
+```console
 mstsc.exe /remoteGuard
 ```
 

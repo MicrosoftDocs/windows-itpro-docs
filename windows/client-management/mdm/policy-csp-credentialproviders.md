@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - CredentialProviders
-description: Learn the policy CSP for credential provider  set up, sign in, PIN requests and so on. 
+description: Learn how to use the policy CSP for credential provider so you can control whether a domain user can sign in using a convenience PIN.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

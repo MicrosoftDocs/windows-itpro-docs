@@ -4,7 +4,7 @@ description: Investigate a user account for potential compromised credentials or
 keywords: investigate, account, user, user entity, alert, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,17 +13,23 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
+ms.technology: mde
 ---
-# Investigate a user account in Microsoft Defender ATP
+# Investigate a user account in Microsoft Defender for Endpoint
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
 
 ## Investigate user account entities
 
@@ -51,7 +57,7 @@ When you investigate a user account entity, you'll see:
 The **User details** pane on left provides information about the user, such as related open incidents, active alerts, SAM name, SID, Azure ATP alerts, number of devices the user is logged on to, when the user was first and last seen, role, and logon types. Depending on the integration features you've enabled, you'll see other details. For example, if you enable the Skype for business integration, you'll be able to contact the user from the portal. The **Azure ATP alerts** section contains a link that will take you to the Azure ATP page, if you have enabled the Azure ATP feature, and there are alerts related to the user. The Azure ATP page will provide more information about the alerts.
 
 >[!NOTE]
->You'll need to enable the integration on both Azure ATP and Microsoft Defender ATP to use this feature. In Microsoft Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
+>You'll need to enable the integration on both Azure ATP and Defender for Endpoint to use this feature. In Defender for Endpoint, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
 
 The Overview, Alerts, and Observed in organization are different tabs that display various attributes about the user account.
 
@@ -87,10 +93,10 @@ You can filter the results by the following time periods:
 
 ## Related topics
 
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
-- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
-- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
-- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
-- [Investigate devices in the Microsoft Defender ATP Devices list](investigate-machines.md)
-- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
-- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
+- [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
+- [Manage Microsoft Defender for Endpoint alerts](manage-alerts.md)
+- [Investigate Microsoft Defender for Endpoint alerts](investigate-alerts.md)
+- [Investigate a file associated with a Defender for Endpoint alert](investigate-files.md)
+- [Investigate devices in the Defender for Endpoint Devices list](investigate-machines.md)
+- [Investigate an IP address associated with a Defender for Endpoint alert](investigate-ip.md)
+- [Investigate a domain associated with a Defender for Endpoint alert](investigate-domain.md)

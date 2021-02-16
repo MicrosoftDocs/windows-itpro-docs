@@ -1,6 +1,6 @@
 ---
 title: Dual Enrollment
-description: Dual Enrollment
+description: Learn how to configure Windows Hello for Business dual enrollment. Also, learn how to configure Active Directory to support Domain Administrator enrollment.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, dual enrollment,
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -49,7 +49,7 @@ In this task you will
 
 ### Configure Active Directory to support Domain Administrator enrollment
 
-The designed Windows for Business configuration has you give the **Key Admins** (or **KeyCredential Admins** when using domain controllers prior to Windows Server 2016) group read and write permissions to the msDS-KeyCredentialsLink attribute.  You provided these permissions at root of the domain and use object inheritance to ensure the permissions apply to all users in the domain regardless of their location within the domain hierarchy.
+The designed Windows Hello for Business configuration gives the **Key Admins** (or **KeyCredential Admins** when using domain controllers prior to Windows Server 2016) group read and write permissions to the msDS-KeyCredentialsLink attribute.  You provided these permissions at root of the domain and use object inheritance to ensure the permissions apply to all users in the domain regardless of their location within the domain hierarchy.
 
 Active Directory Domain Services uses AdminSDHolder to secure privileged users and groups from unintentional modification by comparing and replacing the security on privileged users and groups to match those defined on the AdminSDHolder object on an hourly cycle. For Windows Hello for Business, your domain administrator account may receive the permissions but they will disappear from the user object unless you give the AdminSDHolder read and write permissions to the msDS-KeyCredential attribute.
 

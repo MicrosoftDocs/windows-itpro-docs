@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - DeliveryOptimization
-description: Policy CSP - DeliveryOptimization
+description: Learn how to use the Policy CSP - DeliveryOptimization setting to configure one or more Microsoft Connected Cache servers to be used by Delivery Optimization.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -371,7 +371,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy allows you to to configure one or more Delivery Optimization in Network Cache servers through a custom DHCP Option. One or more values can be added as either fully qualified domain names (FQDN) or IP addresses.  To add multiple values, separate each FQDN or IP address by commas.
+This policy allows you to configure one or more Delivery Optimization in Network Cache servers through a custom DHCP Option. One or more values can be added as either fully qualified domain names (FQDN) or IP addresses.  To add multiple values, separate each FQDN or IP address by commas.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -754,8 +754,7 @@ The following list shows the supported values:
 -   2 – HTTP blended with peering across a private group. Peering occurs on devices in the same Active Directory Site (if it exists) or the same domain by default. When this option is selected, peering will cross NATs. To create a custom group use Group ID in combination with Mode 2.
 -   3 – HTTP blended with Internet peering.
 -   99 - Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607.
--   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
-
+-   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607. Note that this value is deprecated and will be removed in a future release.
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -882,7 +881,7 @@ The options set in this policy only apply to Group (2) download mode. If Group (
 
 For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
 
-Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this, set the value of DOGroupIdSource to 5.
+Starting with Windows 10, version 1903, you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this, set the value of DOGroupIdSource to 5.
 
 <!--/Description-->
 <!--ADMXMapped-->

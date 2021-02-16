@@ -4,7 +4,7 @@ description: Use Microsoft Intune, Microsoft Endpoint Configuration Manager, Pow
 keywords: asr, attack surface reduction, windows defender, microsoft defender, antivirus, av
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,11 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Configure attack surface reduction
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 You can configure attack surface reduction with a number of tools, including:
 

@@ -1,6 +1,6 @@
 ---
 title: Deploy Windows 10 (Windows 10)
-description: Learn Windows 10 upgrade options for planning, testing, and managing your production deployment.
+description: Learn about Windows 10 upgrade options for planning, testing, and managing your production deployment.
 ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.reviewer: 
 manager: laurawi
@@ -13,6 +13,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: itpro
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy Windows 10
@@ -30,7 +31,7 @@ Windows 10 upgrade options are discussed and information is provided about plann
 |[Windows 10 deployment test lab](windows-10-poc.md) |This guide contains instructions to configure a proof of concept (PoC) environment requiring a minimum amount of resources. The guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, additional guides are provided to  deploy Windows 10 in the test lab using [Microsoft Deployment Toolkit](windows-10-poc-mdt.md) or [Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md). |
 |[Plan for Windows 10 deployment](planning/index.md) | This section describes Windows 10 deployment considerations and provides information to assist in Windows 10 deployment planning. |
 |[Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md) |This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT). |
-|[Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) |If you have Microsoft Endpoint Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT) or. |
+|[Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) |If you have Microsoft Endpoint Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT) or. |
 |[Windows 10 deployment tools](windows-10-deployment-tools-reference.md) |Learn about available tools to deploy Windows 10, such as the Windows ADK, DISM, USMT, WDS, MDT, Windows PE and more. |
 |[How to install fonts that are missing after upgrading to Windows 10](windows-10-missing-fonts.md)|Windows 10 introduced changes to the fonts that are included in the image by default. Learn how to install additional fonts from **Optional features** after you install Windows 10 or upgrade from a previous version.|
 

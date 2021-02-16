@@ -1,10 +1,10 @@
 ---
-title: Create an onboarding or offboarding notification rule 
+title: Create an onboarding or offboarding notification rule
 description: Get a notification when a local onboarding or offboarding script is used.
 keywords: onboarding, offboarding, local, script, notification, rule
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,24 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Create a notification rule when a local onboarding or offboarding script is used
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 Create a notification rule so that when a local onboarding or offboardiing script is used, you'll be notified. 
 
@@ -45,7 +55,7 @@ You'll need to have access to:
 
     ![Image of the notification flow](images/build-flow.png)
 
-4. Select the + button to add a new action. The new action will be an HTTP request to the Microsoft Defender ATP security center device(s) API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines - Get list of machines"). 
+4. Select the + button to add a new action. The new action will be an HTTP request to the Defender for Endpoint security center device(s) API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines - Get list of machines"). 
 
     ![Image of recurrence and add action](images/recurrence-add.png)
 
@@ -53,7 +63,7 @@ You'll need to have access to:
 5. Enter the following HTTP fields:
 
    - Method: "GET" as a value to get the list of devices.
-   - URI: Enter `https://api.securitycenter.windows.com/api/machines`.
+   - URI: Enter `https://api.securitycenter.microsoft.com/api/machines`.
    - Authentication: Select "Active Directory OAuth".
    - Tenant: Sign-in to https://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
    - Audience: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
@@ -161,7 +171,7 @@ You'll need to have access to:
 
 10.  Extract the values from the JSON call and check if the onboarded device(s) is / are already registered at the SharePoint list as an example:
 - If yes, no notification will be triggered
-- If no, will register the new onboarded device(s) in the SharePoint list and a notification will be sent to the Microsoft Defender ATP admin
+- If no, will register the new onboarded device(s) in the SharePoint list and a notification will be sent to the Defender for Endpoint admin
 
     ![Image of apply to each](images/flow-apply.png)
 

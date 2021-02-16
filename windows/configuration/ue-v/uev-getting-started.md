@@ -1,6 +1,6 @@
 ---
 title: Get Started with UE-V
-description: Get Started with UE-V
+description: Use the steps in this article to deploy User Experience Virtualization (UE-V) for the first time in a test environment.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

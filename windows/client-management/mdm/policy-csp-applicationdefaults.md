@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ApplicationDefaults
-description: Policy CSP - ApplicationDefaults
+description: Learn about various Policy configuration service provider (CSP) - ApplicationDefaults, including SyncML, for Windows 10.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

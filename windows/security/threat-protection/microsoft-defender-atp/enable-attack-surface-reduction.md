@@ -3,7 +3,7 @@ title: Enable attack surface reduction rules
 description: Enable attack surface reduction (ASR) rules to protect your devices from attacks that use macros, scripts, and common injection techniques.
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, enable, turn on
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,13 @@ author: levinec
 ms.author: ellevin
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Enable attack surface reduction rules
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 [Attack surface reduction rules](attack-surface-reduction.md) (ASR rules) help prevent actions that malware often abuses to compromise devices and networks. You can set ASR rules for devices running any of the following editions and versions of Windows:
 - Windows 10 Pro, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
@@ -29,7 +33,7 @@ Each ASR rule contains one of three settings:
 - Block: Enable the ASR rule
 - Audit: Evaluate how the ASR rule would impact your organization if enabled
 
-To use ASR rules, you must have either a Windows 10 Enterprise E3 or E5 license. We recommend E5 licenses so you can take advantage of the advanced monitoring and reporting capabilities that are available in [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP). Advanced monitoring and reporting capabilities aren't available with an E3 license, but you can develop your own monitoring and reporting tools to use in conjunction with ASR rules.
+It's highly recommended you use ASR rules with a Windows E5 license (or similar licensing SKU) to take advantage of the advanced monitoring and reporting capabilities available in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender for Endpoint). However, for other licenses like Windows Professional or E3 that don't have access to advanced monitoring and reporting capabilities, you can develop your own monitoring and reporting tools on top of the events that are generated at each endpoint when ASR rules are triggered (e.g., Event Forwarding).
 
 > [!TIP]
 > To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -42,13 +46,13 @@ You can enable attack surface reduction rules by using any of these methods:
 - [Group Policy](#group-policy)
 - [PowerShell](#powershell)
 
-Enterprise-level management such as Intune or Microsoft Endpoint Configuration Manager is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
+Enterprise-level management such as Intune or Microsoft Endpoint Manager is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
 
 ## Exclude files and folders from ASR rules
 
 You can exclude files and folders from being evaluated by most attack surface reduction rules. This means that even if an ASR rule determines the file or folder contains malicious behavior, it will not block the file from running. This could potentially allow unsafe files to run and infect your devices.
 
-You can also exclude ASR rules from triggering based on certificate and file hashes by allowing specified Microsoft Defender ATP file and certificate indicators. (See [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).)
+You can also exclude ASR rules from triggering based on certificate and file hashes by allowing specified Defender for Endpoint file and certificate indicators. (See [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).)
 
 > [!IMPORTANT]
 > Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files will be allowed to run, and no report or event will be recorded.
@@ -81,7 +85,7 @@ The following is a sample for reference, using [GUID values for ASR rules](attac
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules`
 
-`Value: {75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84}=2|{3B576869-A4EC-4529-8536-B80A7769E899}=1|{D4F940AB-401B-4EfC-AADC-AD5F3C50688A}=2|{D3E037E1-3EB8-44C8-A917-57927947596D}=1|{5BEB7EFE-FD9A-4556-801D-275E5FFC04CC}=0|{BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550}=1`
+`Value: 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84=2|3B576869-A4EC-4529-8536-B80A7769E899=1|D4F940AB-401B-4EfC-AADC-AD5F3C50688A=2|D3E037E1-3EB8-44C8-A917-57927947596D=1|5BEB7EFE-FD9A-4556-801D-275E5FFC04CC=0|BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550=1`
 
 The values to enable, disable, or enable in audit mode are:
 
@@ -95,7 +99,7 @@ Example:
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions`
 
-`Value: c:\path|e:\path|c:\Whitelisted.exe`
+`Value: c:\path|e:\path|c:\Exclusions.exe`
 
 > [!NOTE]
 > Be sure to enter OMA-URI values without spaces.
@@ -143,7 +147,7 @@ Example:
 ## PowerShell
 
 > [!WARNING]
-> If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
+> If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup. To allow users to define the value using PowerShell, use the "User Defined" option for the rule in the management platform.
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 
@@ -198,4 +202,3 @@ Example:
 - [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
 
 - [Attack surface reduction FAQ](attack-surface-reduction.md)
-

@@ -3,7 +3,7 @@ title: Troubleshoot problems with Network protection
 description: Resources and sample code to troubleshoot issues with Network protection in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, microsoft defender atp, microsoft defender advanced threat protection
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -11,23 +11,28 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 03/27/2019
+ms.date: 01/26/2021
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Troubleshoot network protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
-* IT administrators
 
 When you use [Network protection](network-protection.md) you may encounter issues, such as:
 
-* Network protection blocks a website that is safe (false positive)
-* Network protection fails to block a suspicious or known malicious website (false negative)
+- Network protection blocks a website that is safe (false positive)
+- Network protection fails to block a suspicious or known malicious website (false negative)
 
 There are four steps to troubleshooting these problems:
 
@@ -41,11 +46,11 @@ There are four steps to troubleshooting these problems:
 Network protection will only work on devices with the following conditions:
 
 >[!div class="checklist"]
-> * Endpoints are running Windows 10 Enterprise edition, version 1709 or higher (also known as the Fall Creators Update).
-> * Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Microsoft Defender AV to disable itself](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
-> * [Real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) is enabled.
-> * [Cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) is enabled.
-> * Audit mode is not enabled. Use [Group Policy](enable-network-protection.md#group-policy) to set the rule to **Disabled** (value: **0**).
+> - Endpoints are running Windows 10 Pro or Enterprise edition, version 1709 or higher.
+> - Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [See what happens when you are using a non-Microsoft antivirus solution](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+> - [Real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) is enabled.
+> - [Cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) is enabled.
+> - Audit mode is not enabled. Use [Group Policy](enable-network-protection.md#group-policy) to set the rule to **Disabled** (value: **0**).
 
 ## Use audit mode
 
@@ -57,9 +62,9 @@ You can enable network protection in audit mode and then visit a website that we
    Set-MpPreference -EnableNetworkProtection AuditMode
    ```
 
-1. Perform the connection activity that is causing an issue (for example, attempt to visit the site, or connect to the IP address you do or don't want to block).
+2. Perform the connection activity that is causing an issue (for example, attempt to visit the site, or connect to the IP address you do or don't want to block).
 
-1. [Review the network protection event logs](network-protection.md#review-network-protection-events-in-windows-event-viewer) to see if the feature would have blocked the connection if it had been set to **Enabled**.
+3. [Review the network protection event logs](network-protection.md#review-network-protection-events-in-windows-event-viewer) to see if the feature would have blocked the connection if it had been set to **Enabled**.
    
    If network protection is not blocking a connection that you are expecting it should block, enable the feature.
 
@@ -71,6 +76,8 @@ You can enable network protection in audit mode and then visit a website that we
 
 If you've tested the feature with the demo site and with audit mode, and network protection is working on pre-configured scenarios, but is not working as expected for a specific connection, use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/filesubmission) to report a false negative or false positive for network protection. With an E5 subscription, you can also [provide a link to any associated alert](../microsoft-defender-atp/alerts-queue.md).
 
+See [Address false positives/negatives in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives).
+
 ## Exclude website from network protection scope
 
 To allow the website that is being blocked (false positive), add its URL to the [list of trusted sites](https://blogs.msdn.microsoft.com/asiatech/2014/08/19/how-to-add-web-sites-to-trusted-sites-via-gpo-from-dc-installed-ie10-or-higher-ie-version/). Web resources from this list bypass the network protection check.
@@ -81,20 +88,21 @@ When you report a problem with network protection, you are asked to collect and 
 
 1. Open an elevated command prompt and change to the Windows Defender directory:
 
-   ```PowerShell
+   ```console
    cd c:\program files\windows defender
    ```
 
-1. Run this command to generate the diagnostic logs:
+2. Run this command to generate the diagnostic logs:
 
-   ```PowerShell
+   ```console
    mpcmdrun -getfiles
    ```
 
-1. By default, they are saved to C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab. Attach the file to the submission form.
+3. By default, they are saved to C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab. Attach the file to the submission form.
 
 ## Related topics
 
-* [Network protection](network-protection.md)
-* [Evaluate network protection](evaluate-network-protection.md)
-* [Enable network protection](enable-network-protection.md)
+- [Network protection](network-protection.md)
+- [Evaluate network protection](evaluate-network-protection.md)
+- [Enable network protection](enable-network-protection.md)
+- [Address false positives/negatives in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

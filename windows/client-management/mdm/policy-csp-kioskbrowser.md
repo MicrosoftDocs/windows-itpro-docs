@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - KioskBrowser
-description: Policy CSP - KioskBrowser
+description: Use the Policy CSP - KioskBrowser setting to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

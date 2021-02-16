@@ -4,7 +4,7 @@ description: This topic describes the changes that are must be made in order to 
 keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,22 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
+ms.technology: mde
 ---
 
 # New configuration profiles for macOS Catalina and newer versions of macOS
 
-In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-If you have deployed Microsoft Defender ATP for Mac in a managed environment (through JAMF, Intune, or another MDM solution), you must deploy new configuration profiles. Failure to do these steps will result in users getting approval prompts to run these new components.
+
+In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
+
+If you have deployed Microsoft Defender for Endpoint for Mac in a managed environment (through JAMF, Intune, or another MDM solution), you must deploy new configuration profiles. Failure to do these steps will result in users getting approval prompts to run these new components.
 
 ## JAMF
 
@@ -42,7 +48,7 @@ To approve the system extensions, create the following payload:
 
 ### Privacy Preferences Policy Control
 
-Add the following JAMF payload to grant Full Disk Access to the Microsoft Defender ATP Endpoint Security Extension. This policy is a pre-requisite for running the extension on your device.
+Add the following JAMF payload to grant Full Disk Access to the Microsoft Defender for Endpoint Endpoint Security Extension. This policy is a pre-requisite for running the extension on your device.
 
 1. Select **Options** > **Privacy Preferences Policy Control**.
 2. Use `com.microsoft.wdav.epsext` as the **Identifier** and `Bundle ID` as **Bundle type**.
@@ -53,13 +59,13 @@ Add the following JAMF payload to grant Full Disk Access to the Microsoft Defend
 
 ### Network Extension Policy
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender ATP for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
 
 >[!NOTE]
->JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender ATP for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
+>JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender for Endpoint for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
 >As such, the following steps provide a workaround that involve signing the configuration profile.
 
-1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig`
+1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig` using a text editor:
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -122,21 +128,38 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
     </plist>
     ```
 
-2. Verify that the above file was copied correctly. From the Terminal, run the following command and verify that it outputs `OK`:
+2. Verify that the above file was copied correctly by running the `plutil` utility in the Terminal:
 
     ```bash
-    $ plutil -lint com.microsoft.network-extension.mobileconfig
-    com.microsoft.network-extension.mobileconfig: OK
+    $ plutil -lint <PathToFile>/com.microsoft.network-extension.mobileconfig
     ```
 
-3. Follow the instructions on [this page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) to create a signing certificate using JAMF’s built-in certificate authority
-
-4. After the certificate is created and installed to your device, run the following command from the Terminal:
+    For example, if the file was stored in Documents:
 
     ```bash
-    $ security cms -S -N "<certificate name>" -i com.microsoft.network-extension.mobileconfig -o com.microsoft.network-extension.signed.mobileconfig
+    $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
     ```
+    
+    Verify that the command outputs `OK`.
+        
+    ```bash
+    <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
+    ```
+    
+3. Follow the instructions on [this page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) to create a signing certificate using JAMF’s built-in certificate authority.
 
+4. After the certificate is created and installed to your device, run the following command from the Terminal to sign the file:
+
+    ```bash
+    $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.microsoft.network-extension.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
+    ```
+    
+    For example, if the certificate name is **SigningCertificate** and the signed file is going to be stored in Documents:
+    
+    ```bash
+    $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
+    ```
+    
 5. From the JAMF portal, navigate to **Configuration Profiles** and click the **Upload** button. Select `com.microsoft.network-extension.signed.mobileconfig` when prompted for the file.
 
 ## Intune
@@ -279,3 +302,5 @@ To deploy this custom configuration profile:
 
     ![System extension in Intune screenshot](images/mac-system-extension-intune.png)
 
+5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
+6. Review and create this configuration profile.

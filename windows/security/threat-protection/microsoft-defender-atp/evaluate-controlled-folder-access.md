@@ -3,7 +3,7 @@ title: Evaluate controlled folder access
 description: See how controlled folder access can help protect files from being changed by malicious apps.
 keywords: Exploit protection, windows 10, windows defender, ransomware, protect, evaluate, test, demo, try
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,13 +12,17 @@ author: levinec
 ms.author: ellevin
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Evaluate controlled folder access
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [Controlled folder access](controlled-folders.md) is a feature that helps protect your documents and files from modification by suspicious or malicious apps. Controlled folder access is supported on Windows Server 2019 and Windows 10 clients.
 
@@ -27,7 +31,7 @@ It is especially useful in helping protect against [ransomware](https://www.micr
 This article helps you evaluate controlled folder access. It explains how to enable audit mode so you can test the feature directly in your organization.
 
 > [!TIP]
-> You can also visit the Microsoft Defender ATP demo scenario website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
+> You can also visit the Microsoft Defender for Endpoint demo scenario website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
 ## Use audit mode to measure impact
 
@@ -41,7 +45,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > If you want to fully audit how controlled folder access will work in your organization, you'll need to use a management tool to deploy this setting to devices in your network(s).
-You can also use Group Policy, Intune, mobile device management (MDM), or Microsoft Endpoint Configuration Manager to configure and deploy the setting, as described in the main [controlled folder access topic](controlled-folders.md).
+You can also use Group Policy, Intune, mobile device management (MDM), or Microsoft Endpoint Manager to configure and deploy the setting, as described in the main [controlled folder access topic](controlled-folders.md).
 
 ## Review controlled folder access events in Windows Event Viewer
 
@@ -65,5 +69,5 @@ See [Protect important folders with controlled folder access](controlled-folders
 ## See also
 
 * [Protect important folders with controlled folder access](controlled-folders.md)
-* [Evaluate Microsoft Defender ATP]../(microsoft-defender-atp/evaluate-atp.md)
+* [Evaluate Microsoft Defender for Endpoint](evaluate-atp.md)
 * [Use audit mode](audit-windows-defender.md)

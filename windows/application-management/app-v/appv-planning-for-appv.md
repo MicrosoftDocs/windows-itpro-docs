@@ -1,7 +1,7 @@
 ---
 title: Planning for App-V (Windows 10)
-description: Planning for App-V
-author: lomayor
+description: Use the information in this article to plan to deploy App-V without disrupting your existing network or user experience.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

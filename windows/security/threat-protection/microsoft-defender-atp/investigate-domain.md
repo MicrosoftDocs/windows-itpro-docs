@@ -4,7 +4,7 @@ description: Use the investigation options to see if devices and servers have be
 keywords: investigate domain, domain, malicious domain, microsoft defender atp, alert, URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,20 +13,26 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
+ms.technology: mde
 ---
-# Investigate a domain associated with a Microsoft Defender ATP alert
+# Investigate a domain associated with a Microsoft Defender for Endpoint alert
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink) 
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink) 
 
 Investigate a domain to see if devices and servers in your enterprise network have been communicating with a known malicious domain.
 
@@ -75,9 +81,9 @@ You can view events from different periods of time by entering the dates into th
 
 ## Related topics
 - [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
-- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
-- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
-- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
-- [Investigate devices in the Microsoft Defender ATP Devices list](investigate-machines.md)
-- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
-- [Investigate a user account in Microsoft Defender ATP](investigate-user.md)
+- [Manage Microsoft Defender for Endpoint alerts](manage-alerts.md)
+- [Investigate Microsoft Defender for Endpoint alerts](investigate-alerts.md)
+- [Investigate a file associated with a Microsoft Defender for Endpoint alert](investigate-files.md)
+- [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md)
+- [Investigate an IP address associated with a Microsoft Defender for Endpoint alert](investigate-ip.md)
+- [Investigate a user account in Microsoft Defender for Endpoint](investigate-user.md)

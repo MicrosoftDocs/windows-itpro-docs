@@ -1,6 +1,21 @@
 {:allowed-branchname-matches ["master"]
  :allowed-filename-matches ["windows/"]
  
+  :targets 
+   {
+     :counts {
+              ;;:spelling 10
+              ;;:grammar 3
+              ;;:total 15 ;; absolute flag count but i don't know the difference between this and issues
+              ;;:issues 15 ;; coming from the platform, will need to be tested.
+             }
+     :scores {
+              ;;:terminology 100
+              :qualityscore 80 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
+              ;;:spelling 40
+             }
+   }
+ 
  :guidance-profile "d2b6c2c8-00ee-47f1-8d10-b280cc3434c1" ;; Profile ID for "M365-specific"
  
  :acrolinx-check-settings
@@ -12,7 +27,7 @@
                         "TERMINOLOGY_VALID"
                         "VOICE_GUIDANCE"
                         ]
-  "termSetNames" ["M365"]
+  "termSetNames" ["M365" "Products" "Microsoft"] 
  }
  
  :template-header
@@ -20,7 +35,15 @@
  "
 ## Acrolinx Scorecards
  
-**A minimum Acrolinx score of 20 is required.**
+**The minimum Acrolinx topic score of 65 is required for all MARVEL content merged to the default branch.**
+
+If you need a scoring exception for content in this PR, add the *Sign off* and the *Acrolinx exception* labels to the PR. The PubOps Team will review the exception request and may take one or more of the following actions:
+
+- Work with you to resolve the issues requiring the exception.
+- Escalate the exception request to the Acrolinx Review Team for review.
+- Approve the exception and work with the GitHub Admin Team to merge the PR to the default branch.
+
+For more information about the exception criteria and exception process, see [Minimum Acrolinx topic scores for publishing](https://review.docs.microsoft.com/en-us/office-authoring-guide/acrolinx-min-score?branch=master).
  
 Click the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology:
 
@@ -36,6 +59,6 @@ Click the scorecard links for each article to review the Acrolinx feedback on gr
  "
 **More info about Acrolinx**
  
-We have set the minimum score to 20. This is effectively *not* setting a minimum score. If you need to bypass this score, please contact MARVEL PubOps.
+Use the Acrolinx extension, or sidebar, in Visual Studio Code to check spelling, grammar, style, tone, clarity, and key terminology when you're creating or updating content. For more information, see [Use the Visual Studio Code extension to run Acrolinx locally](https://review.docs.microsoft.com/en-us/office-authoring-guide/acrolinx-vscode?branch=master).
 "
 }

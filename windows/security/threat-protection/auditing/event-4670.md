@@ -2,7 +2,7 @@
 title: 4670(S) Permissions on an object were changed. (Windows 10)
 description: Describes security event 4670(S) Permissions on an object were changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4670(S): Permissions on an object were changed.
@@ -274,5 +275,5 @@ For file system and registry objects, the following recommendations apply.
 
 - If you have critical registry objects for which you need to monitor all modifications (especially permissions changes and owner changes), monitor for the specific **Object\\Object Name.**
 
-- If you have high-value computers for which you need to monitor all changes for all or specific objects (for example, file system or registry objects), monitor for all [4670](event-4670.md) events on these computers<strong>.</strong> For example, you could monitor the **ntds.dit** file on domain controllers.
+- If you have high-value computers for which you need to monitor all changes for all or specific objects (for example, file system or registry objects), monitor for all [4670](event-4670.md) events on these computers<b>.</b> For example, you could monitor the **ntds.dit** file on domain controllers.
 
