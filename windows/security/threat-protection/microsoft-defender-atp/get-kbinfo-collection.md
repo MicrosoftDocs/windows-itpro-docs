@@ -4,7 +4,7 @@ description: Retrieve a collection of knowledge bases (KB's) and KB details with
 keywords: apis, graph api, supported apis, get, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: mde
 ---
 
 # Get KB collection API
@@ -61,18 +62,15 @@ If successful - 200 OK.
 
 Here is an example of the request.
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/KbInfo
-Content-type: application/json
 ```
 
 **Response**
 
 Here is an example of the response.
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#KbInfo",
     "@odata.count": 271,

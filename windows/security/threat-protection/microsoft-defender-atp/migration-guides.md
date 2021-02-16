@@ -1,27 +1,33 @@
 ---
 title: Migration guides to make the switch to Microsoft Defender for Endpoint
 description: Learn how to make the switch from a non-Microsoft threat protection solution to Microsoft Defender for Endpoint
-search.appverid: MET150    
+search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.prod: w10
+ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
+  - M365-security-compliance
+  - m365solution-scenario
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
-f1.keywords: NOCSH 
+f1.keywords: NOCSH
 ms.date: 09/24/2020
+ms.technology: mde
 ---
 
 # Make the switch to Microsoft Defender for Endpoint and Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## Migration guides
 

@@ -4,7 +4,7 @@ ms.reviewer:
 description: This page provides answers to common questions we receive from software developers
 keywords: wdsi, software, developer, faq, dispute, false-positive, classify, installer, software, bundler, blocking
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Software developer FAQ

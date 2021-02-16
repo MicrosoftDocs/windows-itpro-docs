@@ -4,7 +4,7 @@ description: Make the switch to Microsoft Defender for Endpoint. Read this artic
 keywords: migration, windows defender advanced endpoint protection, for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,18 +14,23 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-migratetomdatp
-- m365solution-overview 
+  - M365-security-compliance
+  - m365solution-migratetomdatp
+  - m365solution-overview
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 09/24/2020
+ms.date: 02/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+ms.technology: mde
 ---
 
 # Make the switch from a non-Microsoft endpoint solution to Microsoft Defender for Endpoint
 
-If you are planning to switch from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection), and you're looking for help, you're in the right place. Use this article as a guide to plan your migration.  
+If you are planning to switch from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender for Endpoint), you're in the right place. Use this article as a guide.
+
+:::image type="content" source="images/nonms-mde-migration.png" alt-text="Overview of migrating to Defender for Endpoint":::
+
+When you make the switch to Defender for Endpoint, you begin with your non-Microsoft solution in active mode, configure Defender for Endpoint in passive mode, onboard to Defender for Endpoint, and then set Defender for Endpoint to active mode and remove the non-Microsoft solution.
 
 > [!TIP]
 > - If you're currently using McAfee Endpoint Security (McAfee), see [Migrate from McAfee to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md).
