@@ -26,6 +26,7 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+
 ## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT DEFENDER FOR ENDPOINT
 
 These license terms ("Terms") are an agreement between Microsoft Corporation (or
