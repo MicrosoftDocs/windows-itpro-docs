@@ -178,7 +178,7 @@ See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for d
 
 Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed.
 
-For more information, see [Recommended antivirus exclusions for Configuration Manager site servers, site systems, and clients](https://docs.microsoft.com/troubleshoot/mem/configmgr/recommended-antivirus-exclusions#exclusions).
+For more information, see [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 ## See also
 
