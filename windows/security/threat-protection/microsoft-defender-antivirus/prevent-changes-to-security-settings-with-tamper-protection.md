@@ -57,16 +57,15 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 ### What do you want to do?
 
-1. Turn tamper protection on <br/>
-    - [For an individual machine, use Windows Security](#turn-tamper-protection-on-or-off-for-an-individual-machine).
-    - [For your organization, use Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune).
-    - [Use tenant attach with Configuration Manager, version 2006, for devices running Windows 10 or Windows Server 2019](#manage-tamper-protection-with-configuration-manager-version-2006)
-
-2. [View information about tampering attempts](#view-information-about-tampering-attempts).
-
-3. [Review your security recommendations](#review-your-security-recommendations).
-
-4. [Browse the frequently asked questions](#view-information-about-tampering-attempts).
+| Task | Link |
+|:---|:---|
+| Turn tamper protection on for an individual device | [Use the Windows Security app](#turn-tamper-protection-on-or-off-for-an-individual-machine) |
+| Turn tamper protection on for your organization | [Use Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune) |
+| Turn tamper protection on for devices running Windows 10 and Windows Server 2019 with Configuration Manager | [Use tenant attach with Configuration Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006) |
+| Turn tamper protection on in the Microsoft Defender Security Center |  |
+| View details about tampering attempts on devices | [View information about tampering attempts](#view-information-about-tampering-attempts) |
+| Review your security recommendations | [Review security recommendations](#review-your-security-recommendations) |
+| Review the list of frequently asked questions (FAQs) | [Browse the FAQs](#view-information-about-tampering-attempts) |
 
 ## Turn tamper protection on (or off) for an individual machine
 
@@ -145,7 +144,6 @@ Need help? See the following resources:
 
 - [Settings for the Windows Security experience profile in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/antivirus-security-experience-windows-settings)
 - [Tech Community Blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
-
 
 ## View information about tampering attempts
 
