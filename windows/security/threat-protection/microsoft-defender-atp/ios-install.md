@@ -94,8 +94,8 @@ The Microsoft Defender for Endpoint for iOS app has specialized ability on super
 
 Intune allows you to configure the Defender for iOS app through an App Configuration policy.
 
-    > [!NOTE]
-    > This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for all managed iOS devices as a best practice.
+   > [!NOTE]
+   > This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for all managed iOS devices as a best practice.
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add**. Click on **Managed devices**.
 
