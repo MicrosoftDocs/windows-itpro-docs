@@ -61,10 +61,10 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 | To perform this task... | See this section... |
 |:---|:---|
-| Turn tamper protection on for an individual device | [Use the Windows Security app](#manage-tamper-protection-on-an-individual-device) |
-| Turn tamper protection on for your organization | [Use Intune](#manage-tamper-protection-for-your-organization-using-intune) |
-| Turn tamper protection on for devices running Windows 10 and Windows Server 2019 with Configuration Manager | [Use tenant attach with Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006) |
-| Turn tamper protection on in the Microsoft Defender Security Center |[Use the Microsoft Defender Security Center](#manage-tamper-protection-for-your-organiztion-using-the-microsoft-defender-security-center)  |
+| Turn tamper protection on (or off) for an individual device | [Manage tamper protection on an individual device](#manage-tamper-protection-on-an-individual-device) |
+| Turn tamper protection on (or off) for all or part of your organization with Intune <p>Fine-tune tamper protection settings in your organization | [Manage tamper protection for your organization using Intune](#manage-tamper-protection-for-your-organization-using-intune) |
+| Turn tamper protection on (or off) for your organization with Configuration Manager | [Manage tamper protection for your organization with Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006) |
+| Turn tamper protection on in the Microsoft Defender Security Center <p>Manage tamper protection across your tenant | [Manage tamper protection for your organization using the Microsoft Defender Security Center](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) |
 | View details about tampering attempts on devices | [View information about tampering attempts](#view-information-about-tampering-attempts) |
 | Review your security recommendations | [Review security recommendations](#review-your-security-recommendations) |
 | Review the list of frequently asked questions (FAQs) | [Browse the FAQs](#view-information-about-tampering-attempts) |
