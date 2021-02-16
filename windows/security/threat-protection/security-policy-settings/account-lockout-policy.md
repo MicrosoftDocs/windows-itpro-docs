@@ -4,7 +4,7 @@ description: Describes the Account Lockout Policy settings and links to informat
 ms.assetid: eb968c28-17c5-405f-b413-50728cb7b724
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/11/2018
+ms.technology: mde
 ---
 
 # Account Lockout Policy

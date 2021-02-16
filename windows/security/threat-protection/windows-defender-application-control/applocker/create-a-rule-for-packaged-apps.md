@@ -4,7 +4,7 @@ description: This article for IT professionals shows how to create an AppLocker 
 ms.assetid: e4ffd400-7860-47b3-9118-0e6853c3dfa0
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Create a rule for packaged apps

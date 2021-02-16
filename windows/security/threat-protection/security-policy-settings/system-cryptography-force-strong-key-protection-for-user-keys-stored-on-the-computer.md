@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the policy se
 ms.assetid: 8cbff267-881e-4bf6-920d-b583a5ff7de0
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # System cryptography: Force strong key protection for user keys stored on the computer

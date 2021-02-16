@@ -3,16 +3,17 @@ title: Filter origin audit log improvements
 description: Filter origin documentation audit log improvements
 ms.reviewer: 
 ms.author: v-bshilpa
-ms.prod: w10
+ms.prod: m365-security
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: normal
 author: Benny-54
 manager: dansimp
 ms.collection: 
-- m365-security-compliance
-- m365-initiative-windows-security
+  - m365-security-compliance
+  - m365-initiative-windows-security
 ms.topic: troubleshooting
+ms.technology: mde
 ---
 
 # Filter origin audit log improvements

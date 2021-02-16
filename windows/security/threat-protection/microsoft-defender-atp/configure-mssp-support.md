@@ -1,10 +1,10 @@
 ---
 title: Configure managed security service provider support
-description: Take the necessary steps to configure MSSP integration with Microsoft Defender ATP. 
+description: Take the necessary steps to configure the MSSP integration with the Microsoft Defender for Endpoint
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Configure managed security service provider integration
