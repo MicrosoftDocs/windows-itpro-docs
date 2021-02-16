@@ -4,7 +4,7 @@ description: This topic for the IT professional describes the security considera
 ms.assetid: 354a5abb-7b31-4bea-a442-aa9666117625
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Security considerations for AppLocker

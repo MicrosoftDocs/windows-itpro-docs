@@ -1,10 +1,10 @@
 ---
 title: Manage automation folder exclusions
-description: Add automation folder exclusions to control the files that are excluded from an automated investigation. 
+description: Add automation folder exclusions to control the files that are excluded from an automated investigation.
 keywords: manage, automation, exclusion, block, clean, malicious
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Manage automation folder exclusions 

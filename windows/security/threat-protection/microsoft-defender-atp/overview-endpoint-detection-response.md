@@ -5,7 +5,7 @@ description: Learn about the endpoint detection and response capabilities in Mic
 keywords: 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Overview of endpoint detection and response

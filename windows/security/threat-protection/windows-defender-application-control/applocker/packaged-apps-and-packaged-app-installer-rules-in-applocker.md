@@ -4,7 +4,7 @@ description: This topic explains the AppLocker rule collection for packaged app 
 ms.assetid: 8fd44d08-a0c2-4c5b-a91f-5cb9989f971d
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/13/2017
+ms.technology: mde
 ---
 
 # Packaged apps and packaged app installer rules in AppLocker
