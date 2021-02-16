@@ -4,7 +4,7 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 keywords: configure devices using group policy, device management, configure Windows ATP devices, onboard Microsoft Defender Advanced Threat Protection devices, group policy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
+ms.technology: mde
 ---
 
 # Onboard Windows 10 devices using Group Policy 
@@ -27,7 +28,7 @@ ms.date: 04/24/2018
 
 - Group Policy
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 

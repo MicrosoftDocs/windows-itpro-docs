@@ -1,11 +1,11 @@
 ---
 title: Microsoft Defender ATP for Mac
-ms.reviewer:
+ms.reviewer: 
 description: Learn how to install, configure, update, and use Microsoft Defender Advanced Threat Protection for Mac.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +15,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Microsoft Defender for Endpoint for Mac
@@ -136,7 +137,7 @@ The output from this command should be similar to the following:
 
 Once Microsoft Defender for Endpoint is installed, connectivity can be validated by running the following command in Terminal:
 ```bash
-mdatp --connectivity-test
+mdatp connectivity test
 ```
 
 ## How to update Microsoft Defender for Endpoint for Mac

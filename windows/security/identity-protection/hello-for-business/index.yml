@@ -1,0 +1,110 @@
+### YamlMime:Landing
+
+title: Windows Hello for Business documentation
+summary: Learn how to manage and deploy Windows Hello for Business.
+
+metadata:
+  title: Windows Hello for Business documentation
+  description: Learn how to manage and deploy Windows Hello for Business.
+  ms.prod: w10
+  ms.topic: landing-page
+  author: mapalko
+  manager: dansimp
+  ms.author: mapalko
+  ms.date: 01/22/2021
+  ms.collection: M365-identity-device-management
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: About Windows Hello For Business
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows Hello for Business Overview
+            url: hello-overview.md
+      - linkListType: concept
+        links:
+          - text: Passwordless Strategy
+            url: passwordless-strategy.md
+          - text: Why a PIN is better than a password
+            url: hello-why-pin-is-better-than-password.md
+          - text: Windows Hello biometrics in the enterprise
+            url: hello-biometrics-in-enterprise.md
+          - text: How Windows Hello for Business works
+            url: hello-how-it-works.md
+      - linkListType: learn
+        links: 
+          - text: Technical Deep Dive - Device Registration
+            url: hello-how-it-works-device-registration.md 
+          - text: Technical Deep Dive - Provisioning
+            url: hello-how-it-works-provisioning.md
+          - text: Technical Deep Dive - Authentication
+            url: hello-how-it-works-authentication.md
+          - text: Technology and Terminology
+            url: hello-how-it-works-technology.md
+          - text: Frequently Asked Questions (FAQ)
+            url: hello-faq.yml
+
+  # Card
+  - title: Configure and manage Windows Hello for Business
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Windows Hello for Business Deployment Overview
+            url: hello-deployment-guide.md
+          - text: Planning a Windows Hello for Business Deployment
+            url: hello-planning-guide.md
+          - text: Deployment Prerequisite Overview
+            url: hello-identity-verification.md
+      - linkListType: how-to-guide
+        links:
+          - text: Hybrid Azure AD Joined Key Trust Deployment
+            url: hello-hybrid-key-trust.md
+          - text: Hybrid Azure AD Joined Certificate Trust Deployment
+            url: hello-hybrid-cert-trust.md
+          - text: On-premises SSO for Azure AD Joined Devices
+            url: hello-hybrid-aadj-sso.md
+          - text: On-premises Key Trust Deployment
+            url: hello-deployment-key-trust.md
+          - text: On-premises Certificate Trust Deployment
+            url: hello-deployment-cert-trust.md
+      - linkListType: learn
+        links:
+          - text: Manage Windows Hello for Business in your organization
+            url: hello-manage-in-organization.md
+          - text: Windows Hello and password changes
+            url: hello-and-password-changes.md
+          - text: Prepare people to use Windows Hello
+            url: hello-prepare-people-to-use.md
+
+  # Card
+  - title: Windows Hello for Business Features
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Conditional Access 
+            url: hello-feature-conditional-access.md
+          - text: PIN Reset
+            url: hello-feature-pin-reset.md
+          - text: Dual Enrollment
+            url: hello-feature-dual-enrollment.md
+          - text: Dynamic Lock
+            url: hello-feature-dynamic-lock.md
+          - text: Multi-factor Unlock
+            url: feature-multifactor-unlock.md
+          - text: Remote Desktop
+            url: hello-feature-remote-desktop.md
+
+  # Card
+  - title: Windows Hello for Business Troubleshooting
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Known Deployment Issues
+            url: hello-deployment-issues.md
+          - text: Errors During PIN Creation
+            url: hello-errors-during-pin-creation.md

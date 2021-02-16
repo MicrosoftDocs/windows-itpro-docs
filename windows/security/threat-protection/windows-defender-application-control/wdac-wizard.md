@@ -3,7 +3,7 @@ title: Windows Defender Application Control Wizard
 description: Microsoft Defender Application Control Wizard (WDAC) Wizard allows users to create, edit, and merge application control policies in a simple to use Windows application.
 keywords: allowlisting, blocklisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,6 +16,7 @@ ms.author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ms.date: 10/14/2020
+ms.technology: mde
 ---
 
 # Windows Defender Application Control Wizard

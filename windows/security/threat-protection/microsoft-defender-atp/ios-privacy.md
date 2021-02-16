@@ -1,11 +1,11 @@
 ---
 title: Privacy information - Microsoft Defender for Endpoint for iOS
-ms.reviewer:
+ms.reviewer: 
 description: Describes privacy information for Microsoft Defender for Endpoint for iOS
 keywords: microsoft, defender, atp, ios, policy, overview
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +15,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Privacy information - Microsoft Defender for Endpoint for iOS
@@ -41,9 +42,7 @@ Here is a list of the types of data being collected:
 
 ### Web page or Network information 
 
-- Connection information only when a malicious connection or web page is detected. 
-
-- Protocol type (such as HTTP, HTTPS, etc.) only when a malicious connection or web page is detected. 
+- Domain name of the website only when a malicious connection or web page is detected. 
 
 ### Device and account information 
 
