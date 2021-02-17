@@ -67,7 +67,7 @@ The branch readiness level enables administrators to specify which channel of fe
 - Windows Insider Release Preview
 - Semi-Annual Channel
 
-Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel and Semi-Annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-Annual Channel. All deferral days are calculated against a release’s Semi-Annual Channel release date. For exact release dates, see [Windows Release Information](https://docs.microsoft.com/windows/release-information/). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. To use this policy to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
+Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel and Semi-Annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-Annual Channel. All deferral days are calculated against a release’s Semi-Annual Channel release date. For exact release dates, see [Windows Release Information](https://docs.microsoft.com/windows/release-health/release-information). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. To use this policy to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
 
 #### Defer an update
 
@@ -188,7 +188,7 @@ The branch readiness level enables administrators to specify which channel of fe
     - Windows Insider Release Preview 
     - Semi-Annual Channel for released updates
  
-Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel and Semi-Annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-Annual Channel. All deferral days will be calculated against a release's Semi-Annual Channel release date. To see release dates, visit [Windows Release Information](https://docs.microsoft.com/windows/release-information/). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. In order to use this to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
+Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel and Semi-Annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-Annual Channel. All deferral days will be calculated against a release's Semi-Annual Channel release date. To see release dates, visit [Windows Release Information](https://docs.microsoft.com/windows/release-health/release-information). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. In order to use this to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
 
 ### Recommendations
 

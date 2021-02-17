@@ -26,6 +26,7 @@ ms.technology: mde
 **Applies to:**
 - [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
+
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
 The **Alerts queue** shows a list of alerts that were flagged from devices in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view. The most recent alerts are showed at the top of the list helping you see the most recent alerts first.
@@ -79,24 +80,24 @@ We've redefined the alert categories to align to the [enterprise attack tactics]
 
 The table below lists the current categories and how they generally map to previous categories. 
 
-| New category | Previous categories | Detected threat activity or component |
-|----------------------|----------------------|-------------|
-| Collection           | - | Locating and collecting data for exfiltration |
-| Command and control  | CommandAndControl | Connecting to attacker-controlled network infrastructure to relay data or receive commands |
-| Credential access    | CredentialTheft | Obtaining valid credentials to extend control over devices and other resources in the network |
-| Defense evasion      | - | Avoiding security controls by, for example, turning off security apps, deleting implants, and running rootkits |
-| Discovery            | Reconnaissance, WebFingerprinting | Gathering information about important devices and resources, such as administrator computers, domain controllers, and file servers |
-| Execution            | Delivery, MalwareDownload | Launching attacker tools and malicious code, including RATs and backdoors |
-| Exfiltration         | Exfiltration | Extracting data from the network to an external, attacker-controlled location |
-| Exploit              | Exploit | Exploit code and possible exploitation activity |
-| Initial access       | SocialEngineering, WebExploit, DocumentExploit | Gaining initial entry to the target network, usually involving password-guessing, exploits, or phishing emails |
-| Lateral movement     | LateralMovement, NetworkPropagation | Moving between devices in the target network to reach critical resources or gain network persistence |
-| Malware              | Malware, Backdoor, Trojan, TrojanDownloader, CredentialStealing, Weaponization, RemoteAccessTool | Backdoors, trojans, and other types of malicious code |
-| Persistence          | Installation, Persistence | Creating autostart extensibility points (ASEPs) to remain active and survive system restarts |
-| Privilege escalation | PrivilegeEscalation | Obtaining higher permission levels for code by running it in the context of a privileged process or account |
-| Ransomware           | Ransomware | Malware that encrypts files and extorts payment to restore access |
-| Suspicious activity  | General, None, NotApplicable, EnterprisePolicy, SuspiciousNetworkTraffic | Atypical activity that could be malware activity or part of an attack |
-| Unwanted software    | UnwantedSoftware | Low-reputation apps and apps that impact productivity and the user experience; detected as potentially unwanted applications (PUAs) |
+| New   category       | API category name   | Detected threat activity or   component                                                                                                 |
+|----------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| Collection           | Collection          | Locating   and collecting data for exfiltration                                                                                         |
+| Command and control  | CommandAndControl   | Connecting   to attacker-controlled network infrastructure to relay data or receive   commands                                          |
+| Credential access    | CredentialAccess    | Obtaining   valid credentials to extend control over devices and other resources in the   network                                       |
+| Defense evasion      | DefenseEvasion      | Avoiding security controls by, for example, turning off   security apps, deleting implants, and running rootkits                        |
+| Discovery            | Discovery           | Gathering   information about important devices and resources, such as administrator   computers, domain controllers, and file servers  |
+| Execution            | Execution           | Launching   attacker tools and malicious code, including RATs and backdoors                                                             |
+| Exfiltration         | Exfiltration        | Extracting   data from the network to an external, attacker-controlled location                                                         |
+| Exploit              | Exploit             | Exploit   code and possible exploitation activity                                                                                       |
+| Initial access       | InitialAccess       | Gaining   initial entry to the target network, usually involving password-guessing,   exploits, or phishing emails                      |
+| Lateral movement     | LateralMovement     | Moving   between devices in the target network to reach critical resources or gain   network persistence                                |
+| Malware              | Malware             | Backdoors,   trojans, and other types of malicious code                                                                                 |
+| Persistence          | Persistence         | Creating   autostart extensibility points (ASEPs) to remain active and survive system   restarts                                        |
+| Privilege escalation | PrivilegeEscalation | Obtaining   higher permission levels for code by running it in the context of a   privileged process or account                         |
+| Ransomware           | Ransomware          | Malware   that encrypts files and extorts payment to restore access                                                                     |
+| Suspicious activity  | SuspiciousActivity  | Atypical   activity that could be malware activity or part of an attack                                                                 |
+| Unwanted software    | UnwantedSoftware    | Low-reputation   apps and apps that impact productivity and the user experience; detected as   potentially unwanted applications (PUAs) |
 
 
 ### Status
@@ -121,6 +122,22 @@ Select the source that triggered the alert detection. Microsoft Threat Experts p
 
 >[!NOTE]
 >The Antivirus filter will only appear if devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
+
+| Detection source                  | API value                  |
+|-----------------------------------|----------------------------|
+| 3rd party sensors                 | ThirdPartySensors          |
+| Antivirus                         | WindowsDefenderAv          |
+| Automated investigation           | AutomatedInvestigation     |
+| Custom detection                  | CustomDetection            |
+| Custom TI                         | CustomerTI                 |
+| EDR                               | WindowsDefenderAtp         |
+| Microsoft 365 Defender            | MTP                        |
+| Microsoft Defender for Office 365 | OfficeATP                  |
+| Microsoft Threat Experts          | ThreatExperts              |
+| SmartScreen                       | WindowsDefenderSmartScreen |
+
+
+
 
 
 ### OS platform

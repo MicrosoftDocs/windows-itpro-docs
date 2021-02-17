@@ -31,6 +31,7 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+
 Learn how to deploy Defender for Endpoint for Android on Intune
 Company Portal enrolled devices. For more information about Intune device enrollment, see  [Enroll your
 device](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal).
@@ -56,7 +57,6 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 
    ![Image of Microsoft Endpoint Manager Admin Center add android store application](images/mda-addandroidstoreapp.png)
 
-
 2. On the **Add app** page and in the *App Information* section enter: 
 
    - **Name** 
@@ -74,6 +74,7 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
     >The selected user group should consist of Intune enrolled users.
 
     > [!div class="mx-imgBorder"]
+
     > ![Image of the Microsoft Endpoint Manager Admin Center selected user groups](images/363bf30f7d69a94db578e8af0ddd044b.png)
 
 
@@ -127,7 +128,6 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager admin center managed google play](images/579ff59f31f599414cedf63051628b2e.png)
-
 
 2. On your managed Google Play page that loads subsequently, go to the search
 box and lookup **Microsoft Defender.** Your search should display the Microsoft
@@ -203,7 +203,7 @@ Defender ATP should be visible in the apps list.
        Then select **OK**.
 
        > [!div class="mx-imgBorder"]
-       > ![Image of android create app configuration policy](images/android-create-app-config.png)
+      > ![Image of android create app configuration policy](images/android-create-app-config.png)
 
     
     1. You should now see both the permissions listed and now you can autogrant both by choosing autogrant in the **Permission state** drop-down and then select **Next**.

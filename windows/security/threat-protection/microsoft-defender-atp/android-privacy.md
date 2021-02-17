@@ -26,6 +26,7 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+
 Defender for Endpoint for Android collects information from your configured
 Android devices and stores it in the same tenant where you have Defender for Endpoint.
 

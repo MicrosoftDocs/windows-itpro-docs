@@ -26,7 +26,6 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -95,7 +94,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - Click **Edit Credentials**
 
-    ![Image of edit credentials](images/power-bi-edit-credentials.png)
+    ![Image of edit credentials0](images/power-bi-edit-credentials.png)
 
 - Select **Organizational account** > **Sign in**
 
