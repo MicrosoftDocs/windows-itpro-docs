@@ -432,7 +432,7 @@ Valid values are:
 - 1 – Enable.
 - 0 (default) – Disable.
 
-<a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/AllowNetworkProtectionOnWinServer**<br>
+<a href="" id="configuration-allownetworkprotectiononwinserver"></a>**Configuration/AllowNetworkProtectionOnWinServer**<br>
 This settings controls whether Network Protection is allowed to be configured into block or audit mode on Windows Server. If false, the value of EnableNetworkProtection will be ignored.
 
 The data type is integer.
