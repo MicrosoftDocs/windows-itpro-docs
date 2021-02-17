@@ -27,7 +27,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-Tamper protection, currently in [preview](../../includes/prerelease.md), is available on devices that are running one of the following versions of Windows:
+Tamper protection is available for devices that are running one of the following versions of Windows:
 
 - Windows 10
 - Windows Server 2019
