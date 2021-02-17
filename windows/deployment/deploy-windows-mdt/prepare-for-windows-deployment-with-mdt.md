@@ -53,7 +53,7 @@ Several client computers are referenced in this guide with hostnames of PC0001 t
 
 ### Storage requirements
 
-MDT01 and HV01 should have the ability to store up to 200 GB of files on a data drive (D:). If you use a computer with a single system partition (C:) you will need to adjust come procedures in this guide to specify the C: drive instead of the D: drive.
+MDT01 and HV01 should have the ability to store up to 200 GB of files on a data drive (D:). If you use a computer with a single system partition (C:), you will need to adjust some procedures in this guide to specify the C: drive instead of the D: drive.
 
 ### Hyper-V requirements
 
@@ -256,7 +256,7 @@ When you have completed all the steps in this section to prepare for deployment,
 
 **Sample files**
 
-The following sample files are also available to help automate some MDT deployment tasks. This guide does not use these files, but they are made available here so that you can see how some tasks can be automated with Windows PowerShell.
+The following sample files are also available to help automate some MDT deployment tasks. This guide does not use these files, but they are made available here so you can see how some tasks can be automated with Windows PowerShell.
 - [Gather.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619361). This sample Windows PowerShell script performs the MDT Gather process in a simulated MDT environment. This allows you to test the MDT gather process and check to see if it is working correctly without performing a full Windows deployment.
 - [Set-OUPermissions.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
 - [MDTSample.zip](https://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.
