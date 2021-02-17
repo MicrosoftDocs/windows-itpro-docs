@@ -67,13 +67,13 @@ Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/publ
 
 1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-    a. In the navigation pane, select **Settings** > **Onboarding**.
+    1. In the navigation pane, select **Settings** > **Onboarding**.
     
-    b. Select Windows 10 as the operating system.
+    1. Select Windows 10 as the operating system.
 
-    c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    1. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    d. Select **Download package**, and save the .zip file.
+    1. Select **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -107,11 +107,12 @@ This rule should be a *remediating* compliance rule configuration item that sets
 
 The configuration is set through the following registry key entry:
 
-```
-Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+```console
+Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
+
 Where:<br>
 Key type is a D-WORD. <br>
 Possible values are:
@@ -175,13 +176,13 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-    a. In the navigation pane, select **Settings** >  **Offboarding**.
+    1. In the navigation pane, select **Settings** >  **Offboarding**.
 
-    b. Select Windows 10 as the operating system.
+    1. Select Windows 10 as the operating system.
 
-    c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    1. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    d. Select **Download package**, and save the .zip file.
+    1. Select **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -224,11 +225,13 @@ You can set a compliance rule for configuration item in System Center 2012 R2 Co
 This rule should be a *non-remediating* compliance rule configuration item that monitors the value of a registry key on targeted devices.
 
 Monitor the following registry key entry:
+
+```console
+Path: "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status"
+Name: "OnboardingState"
+Value: "1"
 ```
-Path: “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status”
-Name: “OnboardingState”
-Value: “1”
-```
+
 For more information, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## Related topics
