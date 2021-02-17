@@ -4,7 +4,7 @@ description: Use these references to learn about using certificates as an authen
 ms.assetid: 1e34b5ea-2e77-4598-a765-550418d33894
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Checklist: Implementing a Certificate-based Isolation Policy Design

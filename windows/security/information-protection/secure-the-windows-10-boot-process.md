@@ -7,7 +7,7 @@ ms.mktglfcycl: Explore
 ms.pagetype: security
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

@@ -11,7 +11,7 @@
              }
      :scores {
               ;;:terminology 100
-              :qualityscore 65 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
+              :qualityscore 80 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
               ;;:spelling 40
              }
    }
