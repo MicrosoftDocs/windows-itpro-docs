@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -41,7 +41,7 @@ This policy setting configured which TPM authorization values are stored in the 
 |--------------|---------------|---------|-----------------|-----------------|------------------|
 | OwnerAuthAdmin | StorageOwnerAuth | Create SRK | No      | Yes             | Yes              |
 | OwnerAuthEndorsement | EndorsementAuth | Create or use EK (1.2 only: Create AIK) | No  | Yes  | Yes   |
-| OwnerAuthFull | LockoutAuth  | Reset/change Dictionary Attack Protection | No | No | No   |
+| OwnerAuthFull | LockoutAuth  | Reset/change Dictionary Attack Protection | No | No | Yes   |
 
 There are three TPM owner authentication settings that are managed by the Windows operating system. You can choose a value of **Full**, **Delegate**, or **None**.
 

@@ -18,6 +18,9 @@ ms.date: 05/10/2018
 
 # IEAK 11 - Frequently Asked Questions
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 Get answers to commonly asked questions about the Internet Explorer Administration Kit 11 (IEAK 11), and find links to additional material you might find helpful.
 
 **What is IEAK 11?**

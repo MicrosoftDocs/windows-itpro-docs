@@ -1,6 +1,6 @@
 ---
 title: Add Microsoft Store for Business applications to a Windows 10 image
-description: This topic describes how to add Microsoft Store for Business applications to a Windows 10 image.
+description: This article describes the correct way to add Microsoft Store for Business applications to a Windows 10 image.
 keywords: upgrade, update, windows, windows 10, deploy, store, image, wim
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,6 +13,7 @@ ms.author: greglin
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Add Microsoft Store for Business applications to a Windows 10 image
@@ -30,8 +31,7 @@ This topic describes the correct way to add Microsoft Store for Business applica
 
 * [Windows Assessment and Deployment Kit (Windows ADK)](windows-adk-scenarios-for-it-pros.md) for the tools required to mount and edit Windows images.
 
-* Download an offline signed app package and license of the application you would like to add through [Microsoft Store for Business](/store-for-business/distribute-offline-apps#download-an-offline-licensed-app).
-deploy-windows-cm
+* Download an offline signed app package and license of the application you would like to add through [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app). 
 * A Windows Image. For instructions on image creation, see [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md).
 
 >[!NOTE]

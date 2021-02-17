@@ -1,10 +1,10 @@
 ---
 title: Procedures Used in This Guide (Windows 10)
-description: Procedures Used in This Guide
+description: Refer to this summary of procedures for Windows Defender Firewall with Advanced Security from checklists in this guide.
 ms.assetid: 45c0f549-e4d8-45a3-a600-63e2a449e178
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Procedures Used in This Guide

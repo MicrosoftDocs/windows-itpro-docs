@@ -1,13 +1,13 @@
 ---
 title: VPN connection types (Windows 10)
-description: tbd
+description: Learn about Windows VPN platform clients and the VPN connection-type features that can be configured.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: dulcemontemayor
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 11/13/2020
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -61,11 +61,11 @@ There are a number of Universal Windows Platform VPN applications, such as Pulse
 
 See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
 
-The following image shows connection options in a VPN Profile configuration policy using Microsoft Intune.
+The following image shows connection options in a VPN Profile configuration policy using Microsoft Intune:
 
 ![Available connection types](images/vpn-connection-intune.png)
      
-In Intune, you can also include custom XML for third-party plug-in profiles.
+In Intune, you can also include custom XML for third-party plug-in profiles:
 
 ![Custom XML](images/vpn-custom-xml-intune.png)
 

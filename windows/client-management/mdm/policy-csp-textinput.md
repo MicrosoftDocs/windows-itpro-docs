@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - TextInput
-description: Policy CSP - TextInput
+description: The Policy CSP - TextInput setting allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -14,10 +14,6 @@ manager: dansimp
 
 # Policy CSP - TextInput
 
-
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before they are commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -815,19 +811,19 @@ This setting supports a range of values between 0 and 1.
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 </table>
 
@@ -848,7 +844,7 @@ This setting supports a range of values between 0 and 1.
 > - The policy is only enforced in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
 
-Added in next major release of Windows 10. Allows IT admins to configure Microsoft Japanese IME version in the desktop.
+Added in Windows 10, version 2004. Allows IT admins to configure Microsoft Japanese IME version in the desktop.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -878,19 +874,19 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 </table>
 
@@ -911,7 +907,7 @@ The following list shows the supported values:
 > - This policy is enforced only in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
 
-Added in next major release of Windows 10. Allows IT admins to configure Microsoft Simplified Chinese IME version in the desktop.
+Added in Windows 10, version 2004. Allows IT admins to configure Microsoft Simplified Chinese IME version in the desktop.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -941,19 +937,19 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 </table>
 
@@ -974,7 +970,7 @@ The following list shows the supported values:
 > - This policy is enforced only in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
 
-Added in next major release of Windows 10. Allows IT admins to configure Microsoft Traditional Chinese IME version in the desktop.
+Added in Windows 10, version 2004. Allows IT admins to configure Microsoft Traditional Chinese IME version in the desktop.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -1712,12 +1708,14 @@ The following list shows the supported values:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

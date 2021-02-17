@@ -2,10 +2,10 @@
 title: Track and respond to emerging threats with Microsoft Defender ATP threat analytics
 ms.reviewer: 
 description: Learn about emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
-keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status 
+keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,55 +14,104 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: article
+ms.technology: mde
 ---
 
 # Track and respond to emerging threats with threat analytics 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-Cyberthreats are emerging more frequently and prevalently. It is critical for organizations to quickly assess their security posture, covering the impact of emerging threats and their organizational resilience.  
+With more sophisticated adversaries and new threats emerging frequently and prevalently, it's critical to be able to quickly:
 
-Threat analytics is a set of reports published by Microsoft security researchers as soon as emerging threats and outbreaks are identified. The reports help you assess the impact of threats to your environment and identify actions that can contain them.
+- Assess the impact of new threats
+- Review your resilience against or exposure to the threats
+- Identify the actions you can take to stop or contain the threats
 
-Watch this short video to quickly understand how threat analytics can help you track the latest threats and stop them.
+Threat analytics is a set of reports from expert Microsoft security researchers covering the most relevant threats, including:
+
+- Active threat actors and their campaigns
+- Popular and new attack techniques
+- Critical vulnerabilities
+- Common attack surfaces
+- Prevalent malware
+
+Each report provides a detailed analysis of a threat and extensive guidance on how to defend against that threat. It also incorporates data from your network, indicating whether the threat is active and if you have applicable protections in place.
+
+Watch this short video to learn more about how threat analytics can help you track the latest threats and stop them.
 <p></p>
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bw1f]
 
 ## View the threat analytics dashboard
 
-The threat analytics dashboard is a great jump off point for getting to the reports that are most relevant to your organization. It provides several overviews about the threats covered in the reports:
+The threat analytics dashboard is a great jump off point for getting to the reports that are most relevant to your organization. It summarizes the threats in the following sections:
 
-- **Latest threats** — lists the most recently published threat reports, along with the number of machines with resolved and unresolved alerts.
-- **High-impact threats** — lists the threats that have had the highest impact on the organization in terms of the number of machines that have had related alerts, along with the number of machines with resolved and unresolved alerts.
-- **Threat summary** — shows the number of threats among the threats reported in threat analytics with actual alerts.
+- **Latest threats**—lists the most recently published threat reports, along with the number of devices with active and resolved alerts.
+- **High-impact threats**—lists the threats that have had the highest impact to the organization. This section ranks threats by the number of devices that have active alerts.
+- **Threat summary**—shows the overall impact of tracked threats by showing the number of threats with active and resolved alerts.
+
+Select a threat from the dashboard to view the report for that threat.
 
 ![Image of a threat analytics dashboard](images/ta_dashboard.png)
 
-Select a threat on any of the overviews or on the table to view the report for that threat.
-
 ## View a threat analytics report
 
-Each threat report generally provides an overview of the threat and an analysis of the techniques and tools used by the threat. It also provides worldwide impact information, mitigation recommendations, and detection information. It includes several cards that show dynamic data about how your organization is impacted by the threat and how prepared it is to stop the threat. 
+Each threat analytics report provides information in three sections: **Overview**, **Analyst report**, and **Mitigations**.
 
-![Image of a threat analytics report](images/ta.png)
+### Overview: Quickly understand the threat, assess its impact, and review defenses
 
-### Organizational impact
-Each report includes cards designed to provide information about the organizational impact of a threat:
-- **Machines with alerts** — shows the current number of distinct machines in your organization that have been impacted by the threat. A machine is categorized as **Active** if there is at least 1 alert associated with that threat and **Resolved** if *all* alerts associated with the threat on the machine have been resolved.
-- **Machines with alerts over time** — shows the number of distinct machines with **Active** and **Resolved** alerts over time. The number of resolved alerts indicates how quickly your organization responds to alerts associated with a threat. Ideally, the chart should be showing alerts resolved within a few days.
+The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization and your exposure through misconfigured and unpatched devices.
 
-### Organizational resilience
-Each report also includes cards that provide an overview of how resilient your organization can be against a given threat:
-- **Mitigation status** — shows the number of machines that have and have not applied mitigations for the threat. Machines are considered mitigated if they have all the measurable mitigations in place.
-- **Vulnerability patching status** — shows the number of machines that have applied security updates or patches that address vulnerabilities exploited by the threat.
-- **Mitigation recommendations** — lists specific actionable recommendations to improve your visibility into the threat and increase your organizational resilience. This card lists only measurable mitigations along with the number of machines that don't have these mitigations in place.
+![Image of the overview section of a threat analytics report](images/ta-overview.png)
+_Overview section of a threat analytics report_
 
->[!IMPORTANT]
->- Charts only reflect mitigations that are measurable, meaning an evaluation can be made on whether a machine has applied the mitigations or not. Check the report overview for additional mitigations that are not reflected in the charts.
->- Even if all mitigations were measurable, they don't guarantee complete resilience. They reflect the best possible actions needed to improve resiliency.
+#### Assess the impact to your organization
+Each report includes charts designed to provide information about the organizational impact of a threat:
+- **Devices with alerts**—shows the current number of distinct devices that have been impacted by the threat. A device is categorized as **Active** if there is at least one alert associated with that threat and **Resolved** if *all* alerts associated with the threat on the device have been resolved.
+- **Devices with alerts over time**—shows the number of distinct devices with **Active** and **Resolved** alerts over time. The number of resolved alerts indicates how quickly your organization responds to alerts associated with a threat. Ideally, the chart should be showing alerts resolved within a few days.
 
->[!NOTE]
->Machines are counted as "unavailable" if they have been unable to transmit data to the service.
+#### Review security resilience and posture
+Each report includes charts that provide an overview of how resilient your organization is against a given threat:
+- **Security configuration status**—shows the number of devices that have applied the recommended security settings that can help mitigate the threat. Devices are considered **Secure** if they have applied _all_ the tracked settings.
+- **Vulnerability patching status**—shows the number of devices that have applied security updates or patches that address vulnerabilities exploited by the threat.
+
+### Analyst report: Get expert insight from Microsoft security researchers
+Go to the **Analyst report** section to read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
+
+[Learn more about the analyst report](threat-analytics-analyst-reports.md)
+
+### Mitigations: Review list of mitigations and the status of your devices
+In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
+
+- **Security updates**—deployment of security updates or patches for vulnerabilities
+- **Microsoft Defender Antivirus settings**
+  - Security intelligence version
+  - Cloud-delivered protection  
+  - Potentially unwanted application (PUA) protection
+  - Real-time protection
+ 
+Mitigation information in this section incorporates data from [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
+
+![Image of the mitigations section of a threat analytics report](images/ta-mitigations.png)
+_Mitigations section of a threat analytics report_
+
+## Additional report details and limitations
+When using the reports, keep the following in mind: 
+
+- Data is scoped based on your role-based access control (RBAC) scope. You will see the status of devices in [groups that you can access](machine-groups.md).
+- Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that are not shown in the charts.
+- Mitigations don't guarantee complete resilience. The provided mitigations reflect the best possible actions needed to improve resiliency.
+- Devices are counted as "unavailable" if they have not transmitted data to the service.
+- Antivirus-related statistics are based on Microsoft Defender Antivirus settings. Devices with third-party antivirus solutions can appear as "exposed".
+
+## Related topics
+- [Proactively find threats with advanced hunting](advanced-hunting-overview.md) 
+- [Understand the analyst report section](threat-analytics-analyst-reports.md)
+- [Assess and resolve security weaknesses and exposures](next-gen-threat-and-vuln-mgt.md)

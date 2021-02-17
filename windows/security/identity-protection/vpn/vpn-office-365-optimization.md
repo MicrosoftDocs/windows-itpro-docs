@@ -239,12 +239,12 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".ps1")
 
     # Extract the Profile XML from the ps1 file #
 
-    $regex = '(?sm).*^*.<VPNPROFILE>\r?\n(.*?)\r?\n</VPNProfile>.*'
+    $regex = '(?sm).*^*.<VPNProfile>\r?\n(.*?)\r?\n</VPNProfile>.*'
 
     # Create xml format variable to compare with the optimize list #
 
     $xmlbody=(Get-Content -Raw $VPNprofilefile) -replace $regex, '$1'
-    [xml]$VPNprofilexml="<VPNPROFILE>"+$xmlbody+"</VPNPROFILE>"
+    [xml]$VPNprofilexml="<VPNProfile>"+$xmlbody+"</VPNProfile>"
 
         # Loop through each address found in VPNPROFILE XML section #
         foreach ($Route in $VPNprofilexml.VPNProfile.Route)
@@ -349,7 +349,7 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
     $In_VPN_Only=$null         # Variable to hold IP Addresses that only appear in the VPN profile XML file #  
 
     # Extract the Profile XML from the XML file #
-    $regex = '(?sm).*^*.<VPNPROFILE>\r?\n(.*?)\r?\n</VPNProfile>.*'
+    $regex = '(?sm).*^*.<VPNProfile>\r?\n(.*?)\r?\n</VPNProfile>.*'
 
     # Create xml format variable to compare with optimize list #
     $xmlbody=(Get-Content -Raw $VPNprofilefile) -replace $regex, '$1'
@@ -367,7 +367,7 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
 
     # In VPN list only #
     $In_VPN_only =$ARRVPN | Where {$optimizeIpsv4 -NotContains $_}
-    [array]$Inpfile = get-content $VPNprofilefile
+    [System.Collections.ArrayList]$Inpfile = get-content $VPNprofilefile
 
         if ($In_Opt_Only.Count -gt 0 )
         {
@@ -377,10 +377,10 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
                 {
                     # Add the missing IP address(es) #
                     $IPInfo=$NewIP.Split("/")
-                    $inspoint = $Inpfile[0].IndexOf("</VPNProfile")
-                    $routes += "<Route>"+"<Address>"+$IPInfo[0].Trim()+"</Address>"+"<PrefixSize>"+$IPInfo[1].Trim()+"</PrefixSize>"+"<ExclusionRoute>true</ExclusionRoute>"+"</Route>"
+                    $routes += "<Route>`n"+"`t<Address>"+$IPInfo[0].Trim()+"</Address>`n"+"`t<PrefixSize>"+$IPInfo[1].Trim()+"</PrefixSize>`n"+"`t<ExclusionRoute>true</ExclusionRoute>`n"+"</Route>`n"
                 }
-            $Inpfile = $Inpfile[0].Insert($inspoint,$routes)
+            $inspoint = $Inpfile.IndexOf("</VPNProfile>")
+            $Inpfile.Insert($inspoint,$routes)
 
             # Update filename and write new XML file #
             $NewFileName=(Get-Item $VPNprofilefile).Basename + "-NEW.xml"

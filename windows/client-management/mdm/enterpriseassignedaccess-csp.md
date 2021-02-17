@@ -1,6 +1,6 @@
 ---
 title: EnterpriseAssignedAccess CSP
-description: EnterpriseAssignedAccess CSP
+description: Use the EnterpriseAssignedAccess configuration service provider (CSP) to configure custom layouts on a device. 
 ms.assetid: 5F88E567-77AA-4822-A0BC-3B31100639AA
 ms.reviewer: 
 manager: dansimp
@@ -306,7 +306,7 @@ Starting in Windows 10, version 1511, you can specify the following quick acti
 <p>Dependencies - none</p></li>
 </ul>
 
-Starting in Windows 10, version 1703, Quick action settings no longer require any dependencis from related group or page. Here is the list:
+Starting in Windows 10, version 1703, Quick action settings no longer require any dependencies from related group or page. Here is the list:
 - QuickActions_Launcher_AllSettings
 - QuickActions_Launcher_DeviceDiscovery
 - SystemSettings_BatterySaver_LandingPage_OverrideControl
@@ -1600,7 +1600,7 @@ The following table lists the product ID and AUMID for each app that is included
 <td>Microsoft.MSPodcast_8wekyb3d8bbwe!xc3215724yb279y4206y8c3ey61d1a9d63ed3x</td>
 </tr>
 <tr class="even">
-<td>Powerpoint</td>
+<td>PowerPoint</td>
 <td>B50483C4-8046-4E1B-81BA-590B24935798</td>
 <td>Microsoft.Office.PowerPoint_8wekyb3d8bbwe!microsoft.pptim</td>
 </tr>

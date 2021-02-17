@@ -1,11 +1,11 @@
 ---
 title: VPN name resolution (Windows 10)
-description: tbd
+description: Learn how the name resolution setting in the VPN profile configures how name resolution works when a VPN client connects to a VPN server.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: dulcemontemayor
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.reviewer: 
@@ -52,7 +52,7 @@ Primary DNS suffix is set using the **VPNv2/*ProfileName*/DnsSuffix** node.
 
 ## Persistent
 
-You can also configure *persistent* name resolution rules. Name resolution for specified items will only  performed over VPN.
+You can also configure *persistent* name resolution rules. Name resolution for specified items will only be performed over the VPN.
 
 Persistent name resolution is set using the **VPNv2/*ProfileName*/DomainNameInformationList//*dniRowId*/Persistent** node.
 

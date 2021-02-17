@@ -2,7 +2,7 @@
 title: Change history for Configure Windows 10 (Windows 10)
 ms.reviewer: 
 manager: dansimp
-description: View changes to documentation for configuring Windows 10.
+description: Learn about new and updated topics in the Configure Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 keywords: 
 ms.prod: w10
 ms.mktglfcycl: manage

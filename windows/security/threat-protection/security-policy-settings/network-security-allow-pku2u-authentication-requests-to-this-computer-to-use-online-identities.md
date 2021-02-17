@@ -4,7 +4,7 @@ description: Best practices for the Network Security Allow PKU2U authentication 
 ms.assetid: e04a854e-d94d-4306-9fb3-56e9bd7bb926
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network security: Allow PKU2U authentication requests to this computer to use online identities
@@ -40,7 +41,7 @@ This policy isn't configured by default on domain-joined devices. This would dis
 -   **Enabled**: This setting allows authentication to successfully complete between the two (or more) computers that have established a peer relationship through the use of online IDs. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer devices. When validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
 
     > [!NOTE]
-    > KU2U is disabled by default on Windows Server. Remote Desktop connections from a hybrid Azure AD-joined server to an Azure AD-joined Windows 10 device or a Hybrid Azure AD-joined domain member Windows 10 device fail. To resolve this, enable PKU2U on the server.
+    > KU2U is disabled by default on Windows Server. Remote Desktop connections from a hybrid Azure AD-joined server to an Azure AD-joined Windows 10 device or a Hybrid Azure AD-joined domain member Windows 10 device fail. To resolve this, enable PKU2U on the server and the client.
 
 -   **Disabled**: This setting prevents online IDs from being used to authenticate the user to another computer in a peer-to-peer relationship.
 
@@ -82,6 +83,8 @@ Set this policy to *Disabled* or don't configure this security policy for domain
 ### Potential impact
 
 If you don't set or you disable this policy, the PKU2U protocol won't be used to authenticate between peer devices, which forces users to follow domain-defined access control policies. If you enable this policy, you allow your users to authenticate by using local certificates between systems that aren't part of a domain that uses PKU2U. This configuration allows users to share resources between devices.
+
+Please be aware that some roles/features (such as Failover Clustering) do not utilize a domain account for its PKU2U authentication and will cease to function properly when disabling this policy.
 
 ## Related topics
 

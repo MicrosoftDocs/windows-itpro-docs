@@ -2,7 +2,7 @@
 title: Advanced troubleshooting for Windows-based computer freeze issues 
 ms.reviewer: 
 manager: dansimp
-description: Learn how to troubleshoot computer freeze issues. 
+description: Learn how to troubleshoot computer freeze issues on Windows-based computers and servers. Also, you can learn how to diagnose, identify, and fix these issues.
 ms.prod: w10 
 ms.mktglfcycl: 
 ms.sitesec: library 
@@ -251,7 +251,7 @@ If the physical computer is still running in a frozen state, follow these steps 
 
 Pool Monitor shows you the number of allocations and outstanding bytes of allocation by type of pool and the tag that is passed into calls of ExAllocatePoolWithTag.   
 
-Learn [how to use Pool Monitor](https://support.microsoft.com/help/177415) and how to [use the data to troubleshoot pool leaks](https://blogs.technet.com/b/markrussinovich/archive/2009/03/26/3211216.aspx). 
+Learn [how to use Memory Pool Monitor to troubleshoot kernel mode memory leaks](https://support.microsoft.com/office/how-to-use-memory-pool-monitor-poolmon-exe-to-troubleshoot-kernel-mode-memory-leaks-4f4a05c2-ef8a-fca4-3ae0-670b940af398). 
 
 ### Use memory dump to collect data for the virtual machine that's running in a frozen state 
 

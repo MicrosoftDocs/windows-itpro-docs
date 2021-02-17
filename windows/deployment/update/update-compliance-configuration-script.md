@@ -19,7 +19,11 @@ ms.topic: article
 
 The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures device policies via Group Policy, ensures that required services are running, and more.
 
-You can [**download the script here**](https://www.microsoft.com/en-us/download/details.aspx?id=101086). Keep reading to learn how to configure the script and interpret error codes that are output in logs for troubleshooting.
+> [!NOTE]
+> The Update Compliance configuration script does not offer options to configure Delivery Optimization. You have to do that separately.
+
+
+You can download the script from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=101086). Keep reading to learn how to configure the script and interpret error codes that are output in logs for troubleshooting.
 
 ## How the script is organized
 
@@ -34,6 +38,10 @@ The script is organized into two folders **Pilot** and **Deployment**. Both fold
 
 > [!IMPORTANT]
 > If you encounter an issue with Update Compliance, the first step should be to run the script in Pilot mode on a device you are encountering issues with, and save these Logs for reference with Support.
+
+> [!IMPORTANT]
+> The script must be run in the System context. To do this, use the PsExec tool included in the file. For more about PsExec, see [PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec).
+
 
 When using the script in the context of troubleshooting, use `Pilot`. Enter `RunConfig.bat`, and configure it as follows:
 

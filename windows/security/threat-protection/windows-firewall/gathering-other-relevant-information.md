@@ -1,10 +1,10 @@
 ---
 title: Gathering Other Relevant Information (Windows 10)
-description: Gathering Other Relevant Information
+description: Learn about additional information you may need to gather to deploy Windows Defender Firewall with Advanced Security policies in your organization.
 ms.assetid: 87ccca07-4346-496b-876d-cdde57d0ce17
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Gathering Other Relevant Information

@@ -1,10 +1,10 @@
 ---
-title: Investigate entities on machines using live response in Microsoft Defender ATP
-description: Access a machine using a secure remote shell connection to do investigative work and take immediate response actions on a machine in real time.
-keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file, 
+title: Investigate entities on devices using live response in Microsoft Defender ATP
+description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
+keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,64 +13,79 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Investigate entities on devices using live response
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-Live response is a capability that gives your security operations team instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats –- in real time. 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
+Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats—in real time. 
+
+Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
 With live response, analysts can do all of the following tasks:
-- Run basic and advanced commands to do investigative work on a device
-- Download files such as malware samples and outcomes of PowerShell scripts
-- Download files in the background (new!)
-- Upload a PowerShell script or executable to the library and run it on a device from a tenant level
-- Take or undo remediation actions
+- Run basic and advanced commands to do investigative work on a device.
+- Download files such as malware samples and outcomes of PowerShell scripts.
+- Download files in the background (new!).
+- Upload a PowerShell script or executable to the library and run it on a device from a tenant level.
+- Take or undo remediation actions.
 
 ## Before you begin
 
 Before you can initiate a session on a device, make sure you fulfill the following requirements:
 
-- **Verify that you're running a supported version of Windows 10** <br/>
-Devices must be running one of the following versions of Windows 10:
-   - [1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) or later  
-   - [1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
-   - [1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-   - [1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-   - [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- **Verify that you're running a supported version of Windows**. <br/>
+Devices must be running one of the following versions of Windows
 
-- **Make sure to install appropriate security updates**<br/>
-   - 1903: [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-   - 1809 (RS5): [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-   - 1803 (RS4): [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
-   - 1709 (RS3): [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+  - **Windows 10**
+    - [Version 1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) or later  
+    - [Version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) with [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
+    - [Version 1809 (RS 5)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) with [with KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [Version 1803 (RS 4)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [Version 1709 (RS 3)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+  
+  - **Windows Server 2019 - Only applicable for Public preview**
+    - Version 1903 or (with [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)) later 
+    - Version 1809 (with [KB4537818](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818))
 
-- **Enable live response from the settings page**<br>
+- **Enable live response from the advanced settings page**.<br>
 You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
 
     >[!NOTE]
     >Only users with manage security or global admin roles can edit these settings.
-    
-- **Ensure that the machine has an Automation Remediation level assigned to it**<br>
-You'll need to enable, at least, the minimum Remdiation Level for a given Machine Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
 
-- **Enable live response unsigned script execution** (optional) <br>
+- **Enable live response for servers from the advanced settings page** (recommended).<br>
+
+    >[!NOTE]
+    >Only users with manage security or global admin roles can edit these settings.
+    
+- **Ensure that the device has an Automation Remediation level assigned to it**.<br>
+You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
+
+    You'll receive the following error:
+
+    ![Image of error message](images/live-response-error.png)
+
+- **Enable live response unsigned script execution** (optional). <br>
 
     >[!WARNING]
     >Allowing the use of unsigned scripts may increase your exposure to threats.
  
   Running unsigned scripts is not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
     
-- **Ensure that you have the appropriate permissions**<br>
+- **Ensure that you have the appropriate permissions**.<br>
     Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
     > [!IMPORTANT]
@@ -92,11 +107,11 @@ The dashboard also gives you access to:
 - Command log
 
 
-## Initiate a live response session on a machine 
+## Initiate a live response session on a device 
 
-1. Log in to Microsoft Defender Security Center.
+1. Sign in to Microsoft Defender Security Center.
 
-2. Navigate to the devices list page and select a machine to investigate. The machines page opens.
+2. Navigate to the devices list page and select a device to investigate. The devices page opens.
 
 3. Launch the live response session by selecting **Initiate live response session**. A command console is displayed. Wait while the session connects to the device.
 
@@ -107,6 +122,10 @@ The dashboard also gives you access to:
 ## Live response commands
 
 Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. For more information on role assignments, see [Create and manage roles](user-roles.md). 
+
+
+>[!NOTE]
+>Live response is a cloud-based interactive shell, as such, specific command experience may vary in response time depending on network quality and system load between the end user and the target device.
 
 ### Basic commands
 
@@ -133,7 +152,7 @@ drivers |  Shows all drivers installed on the device. |
 |`trace` | Sets the terminal's logging mode to debug. |
 
 ### Advanced commands
-The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments see, [Create and manage roles](user-roles.md). 
+The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
 | Command | Description |
 |---|---|
@@ -152,28 +171,31 @@ The commands that you can use in the console follow similar principles as [Windo
 
 The advanced commands offer a more robust set of actions that allow you to take more powerful actions such as download and upload a file, run scripts on the device, and take remediation actions on an entity.
 
-### Get a file from the machine
+### Get a file from the device
 
 For scenarios when you'd like get a file from a device you're investigating, you can use the `getfile` command. This allows you to save the file from the device for further investigation.
 
 >[!NOTE]
->There is a file size limit of 750mb.
+>The following file size limits apply:
+>- `getfile` limit: 3 GB
+>- `fileinfo` limit: 10 GB
+>- `library` limit: 250 MB
 
 ### Download a file in the background
 
 To enable your security operations team to continue investigating an impacted device, files can now be downloaded in the background.
 
-- To download a file in the background, in the live response command console, type `download <file_path> &`
+- To download a file in the background, in the live response command console, type `download <file_path> &`.
 - If you are waiting for a file to be downloaded, you can move it to the background by using Ctrl + Z.
-- To bring a file download to the foreground, in the live response command console, type `fg <command_id>`  
+- To bring a file download to the foreground, in the live response command console, type `fg <command_id>`.
 
 Here are some examples:
 
 
 |Command  |What it does  |
 |---------|---------|
-|`"C:\windows\some_file.exe" &`     |Starts downloading a file named *some_file.exe* in the background.         |
-|`fg 1234`     |Returns a download with command ID *1234* to the foreground         |
+|`Download "C:\windows\some_file.exe" &`     |Starts downloading a file named *some_file.exe* in the background.         |
+|`fg 1234`     |Returns a download with command ID *1234* to the foreground.         |
 
 
 ### Put a file in the library
@@ -194,7 +216,7 @@ You can have a collection of PowerShell scripts that can run on devices that you
 
 4. Specify if you'd like to overwrite a file with the same name.
 
-5. If you'd like to be know what parameters are needed for the script, select the script parameters check box. In the text field, enter an example and a description.
+5. If you'd like to be,  know what parameters are needed for the script, select the script parameters check box. In the text field, enter an example and a description.
 
 6. Click **Confirm**. 
 
@@ -213,7 +235,7 @@ Some commands have prerequisite commands to run. If you don't run the prerequisi
 
 You can use the auto flag to automatically run prerequisite commands, for example:
 
-```
+```console
 getfile c:\Users\user\Desktop\work.txt -auto
 ```
 
@@ -262,7 +284,7 @@ Live response supports output piping to CLI and file. CLI is the default output 
 
 Example:
 
-```
+```console
 processes > output.txt
 ```
 
@@ -277,19 +299,15 @@ Each command is tracked with full details such as:
 
 ## Limitations
 
-- Live response sessions are limited to 10 live response sessions at a time
-- Large scale command execution is not supported
-- A user can only initiate one session at a time
-- A device can only be in one session at a time
-- There is a file size limit of 750mb when downloading files from a device
+- Live response sessions are limited to 10 live response sessions at a time.
+- Large-scale command execution is not supported.
+- Live response session inactive timeout value is 5 minutes. 
+- A user can only initiate one session at a time.
+- A device can only be in one session at a time.
+- The following file size limits apply:
+   - `getfile` limit: 3 GB
+   - `fileinfo` limit: 10 GB
+   - `library` limit: 250 MB
 
 ## Related article
 - [Live response command examples](live-response-command-examples.md)
-
-
-
-
-
-
-
-

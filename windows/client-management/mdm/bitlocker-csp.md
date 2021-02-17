@@ -1,20 +1,17 @@
 ---
 title: BitLocker CSP
-description: BitLocker CSP
+description: Learn how the BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 04/16/2020
 ms.reviewer: 
 manager: dansimp
 ---
 # BitLocker CSP
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it is also supported in Windows 10 Pro.
 
@@ -25,7 +22,7 @@ The BitLocker configuration service provider (CSP) is used by the enterprise to 
 A Get operation on any of the settings, except for RequireDeviceEncryption and RequireStorageCardEncryption, returns
 the setting configured by the admin.
 
-For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if TPM protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that the a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
+For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if Trusted Platform Module (TPM) protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that the a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
 
 The following diagram shows the BitLocker configuration service provider in tree format.
 
@@ -162,7 +159,7 @@ If you want to disable this policy, use the following SyncML:
 <!--Policy-->
 <a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType**
 <!--Description-->
-Allows you to set the default encryption method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system, and recovery partitions are skipped from encryption. This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)&quot;.
+Allows you to set the default encryption method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system, and recovery partitions are skipped from encryption. This setting is a direct mapping to the Bitlocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)".
 <!--/Description-->
 <!--SupportedValues-->
 <table>
@@ -215,7 +212,7 @@ EncryptionMethodWithXtsOsDropDown_Name = Select the encryption method for operat
 EncryptionMethodWithXtsFdvDropDown_Name = Select the encryption method for fixed data drives.
 EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for removable data drives.
 <!--SupportedValues-->
- The possible values for &#39;xx&#39; are:
+ The possible values for 'xx' are:
 
 - 3 = AES-CBC 128
 - 4 = AES-CBC 256
@@ -237,7 +234,7 @@ EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for remov
                              <Meta>
                                  <Format xmlns="syncml:metinf">chr</Format>
                              </Meta>
-                             <Data>&lt;disabled/&gt;</Data>
+                             <Data><disabled/></Data>
                            </Item>
                          </Replace>
 ```
@@ -247,7 +244,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="systemdrivesrequirestartupauthentication"></a>**SystemDrivesRequireStartupAuthentication**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy &quot;Require additional authentication at startup&quot;.
+This setting is a direct mapping to the Bitlocker Group Policy "Require additional authentication at startup".
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -284,12 +281,12 @@ ADMX Info:
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
-This setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a Trusted Platform Module (TPM). This setting is applied when you turn on BitLocker.
+This setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a TPM. This setting is applied when you turn on BitLocker.
 
 > [!NOTE]
 > Only one of the additional authentication options can be required at startup, otherwise an error occurs.
 
-If you want to use BitLocker on a computer without a TPM, set the &quot;ConfigureNonTPMStartupKeyUsage_Name&quot; data. In this mode either a password or a USB drive is required for start-up. When using a startup key, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable or if you have forgotten the password then you will need to use one of the BitLocker recovery options to access the drive.
+If you want to use BitLocker on a computer without a TPM, set the "ConfigureNonTPMStartupKeyUsage_Name" data. In this mode either a password or a USB drive is required for start-up. When using a startup key, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable or if you have forgotten the password then you will need to use one of the BitLocker recovery options to access the drive.
 
 On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 6-digit to 20-digit personal identification number (PIN), or both.
 
@@ -302,6 +299,10 @@ If you disable or do not configure this setting, users can configure only basic 
 
 > [!NOTE]
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
+
+> [!NOTE] 
+> Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern 
+> Standby devices will not be able to configure a Startup PIN using this CSP. Users are required to manually configure the PIN.
 
 Sample value for this node to enable this policy is:
 
@@ -317,13 +318,13 @@ Data id:
 <li>ConfigureTPMUsageDropDown_Name = (for computer with TPM) Configure TPM startup.</li>
 </ul>
 <!--SupportedValues-->
-The possible values for &#39;xx&#39; are:
+The possible values for 'xx' are:
 <ul>
 <li>true = Explicitly allow</li>
 <li>false = Policy not set</li>
 </ul>
 
-The possible values for &#39;yy&#39; are:
+The possible values for 'yy' are:
 <ul>
 <li>2 = Optional</li>
 <li>1 = Required</li>
@@ -333,25 +334,25 @@ The possible values for &#39;yy&#39; are:
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRequireStartupAuthentication</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data>&lt;disabled/&gt;</Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRequireStartupAuthentication</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
 <a href="" id="systemdrivesminimumpinlength"></a>**SystemDrivesMinimumPINLength**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy &quot;Configure minimum PIN length for startup&quot;.
+This setting is a direct mapping to the Bitlocker Group Policy "Configure minimum PIN length for startup".
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -408,18 +409,18 @@ Sample value for this node to enable this policy is:
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesMinimumPINLength</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data>&lt;disabled/&gt;</Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesMinimumPINLength</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
@@ -427,7 +428,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="systemdrivesrecoverymessage"></a>**SystemDrivesRecoveryMessage** 
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy &quot;Configure pre-boot recovery message and URL&quot;
+This setting is a direct mapping to the Bitlocker Group Policy "Configure pre-boot recovery message and URL"
 (PrebootRecoveryInfo_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
@@ -468,11 +469,11 @@ ADMX Info:
 This setting lets you configure the entire recovery message or replace the existing URL that are displayed on the pre-boot key recovery screen when the OS drive is locked.
 
 
-If you set the value to &quot;1&quot; (Use default recovery message and URL), the default BitLocker recovery message and URL will be displayed in the pre-boot key recovery screen. If you have previously configured a custom recovery message or URL and want to revert to the default message, you must keep the policy enabled and set the value &quot;1&quot; (Use default recovery message and URL).</o>
+If you set the value to "1" (Use default recovery message and URL), the default BitLocker recovery message and URL will be displayed in the pre-boot key recovery screen. If you have previously configured a custom recovery message or URL and want to revert to the default message, you must keep the policy enabled and set the value "1" (Use default recovery message and URL).</o>
 
-If you set the value to &quot;2&quot; (Use custom recovery message), the message you set in the &quot;RecoveryMessage_Input&quot; data field will be displayed in the pre-boot key recovery screen. If a recovery URL is available, include it in the message.
+If you set the value to "2" (Use custom recovery message), the message you set in the "RecoveryMessage_Input" data field will be displayed in the pre-boot key recovery screen. If a recovery URL is available, include it in the message.
 
-If you set the value to &quot;3&quot; (Use custom recovery URL), the URL you type in the &quot;RecoveryUrl_Input&quot; data field will replace the default URL in the default recovery message, which will be displayed in the pre-boot key recovery screen.
+If you set the value to "3" (Use custom recovery URL), the URL you type in the "RecoveryUrl_Input" data field will replace the default URL in the default recovery message, which will be displayed in the pre-boot key recovery screen.
 
 Sample value for this node to enable this policy is:
 
@@ -480,7 +481,7 @@ Sample value for this node to enable this policy is:
 <enabled/><data id="PrebootRecoveryInfoDropDown_Name" value="xx"/><data id="RecoveryMessage_Input" value="yy"/><data id="RecoveryUrl_Input" value="zz"/>
 ```
 <!--SupportedValues-->
-The possible values for &#39;xx&#39; are:
+The possible values for 'xx' are:
 
 -  0 = Empty
 -  1 = Use default recovery message and URL (in this case you don't need to specify a value for "RecoveryMessage_Input" or "RecoveryUrl_Input").
@@ -495,18 +496,18 @@ The possible values for &#39;xx&#39; are:
 Disabling the policy will let the system choose the default behaviors.  If you want to disable this policy use the following SyncML:
 
 ```xml
-                        <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryMessage</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data>&lt;disabled/&gt;</Data>
-                           </Item>
-                         </Replace>
+<Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryMessage</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 
 > [!NOTE]
@@ -517,7 +518,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="systemdrivesrecoveryoptions"></a>**SystemDrivesRecoveryOptions**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose how BitLocker-protected operating system drives can be recovered&quot; (OSRecoveryUsage_Name).
+This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLocker-protected operating system drives can be recovered" (OSRecoveryUsage_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -556,18 +557,18 @@ ADMX Info:
 
 This setting allows you to control how BitLocker-protected operating system drives are recovered in the absence of the required startup key information. This setting is applied when you turn on BitLocker.
 
-The &quot;OSAllowDRA_Name&quot; (Allow certificate-based data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected operating system drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.
+The "OSAllowDRA_Name" (Allow certificate-based data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected operating system drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.
 
-In &quot;OSRecoveryPasswordUsageDropDown_Name&quot; and &quot;OSRecoveryKeyUsageDropDown_Name&quot; (Configure user storage of BitLocker recovery information) set whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
+In "OSRecoveryPasswordUsageDropDown_Name" and "OSRecoveryKeyUsageDropDown_Name" (Configure user storage of BitLocker recovery information) set whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
 
-Set &quot;OSHideRecoveryPage_Name&quot; (Omit recovery options from the BitLocker setup wizard) to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
+Set "OSHideRecoveryPage_Name" (Omit recovery options from the BitLocker setup wizard) to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
 
-Set &quot;OSActiveDirectoryBackup_Name&quot; (Save BitLocker recovery information to Active Directory Domain Services), to choose which BitLocker recovery information to store in AD DS for operating system drives (OSActiveDirectoryBackupDropDown_Name). If you set &quot;1&quot; (Backup recovery password and key package), both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you set &quot;2&quot; (Backup recovery password only), only the recovery password is stored in AD DS.
+Set "OSActiveDirectoryBackup_Name" (Save BitLocker recovery information to Active Directory Domain Services), to choose which BitLocker recovery information to store in AD DS for operating system drives (OSActiveDirectoryBackupDropDown_Name). If you set "1" (Backup recovery password and key package), both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you set "2" (Backup recovery password only), only the recovery password is stored in AD DS.
 
-Set the &quot;OSRequireActiveDirectoryBackup_Name&quot; (Do not enable BitLocker until recovery information is stored in AD DS for operating system drives) data field if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
+Set the "OSRequireActiveDirectoryBackup_Name" (Do not enable BitLocker until recovery information is stored in AD DS for operating system drives) data field if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
 
-> [!Note]
-> If the &quot;OSRequireActiveDirectoryBackup_Name&quot; (Do not enable BitLocker until recovery information is stored in AD DS for operating system drives) data field is set, a recovery password is automatically generated.
+> [!NOTE]
+> If the "OSRequireActiveDirectoryBackup_Name" (Do not enable BitLocker until recovery information is stored in AD DS for operating system drives) data field is set, a recovery password is automatically generated.
 
 If you enable this setting, you can control the methods available to users to recover data from BitLocker-protected operating system drives.
 
@@ -579,34 +580,34 @@ Sample value for this node to enable this policy is:
 <enabled/><data id="OSAllowDRA_Name" value="xx"/><data id="OSRecoveryPasswordUsageDropDown_Name" value="yy"/><data id="OSRecoveryKeyUsageDropDown_Name" value="yy"/><data id="OSHideRecoveryPage_Name" value="xx"/><data id="OSActiveDirectoryBackup_Name" value="xx"/><data id="OSActiveDirectoryBackupDropDown_Name" value="zz"/><data id="OSRequireActiveDirectoryBackup_Name" value="xx"/>
 ```
 <!--SupportedValues-->
-The possible values for &#39;xx&#39; are:  
+The possible values for 'xx' are:  
 - true = Explicitly allow
 - false = Policy not set
 
-The possible values for &#39;yy&#39; are:  
+The possible values for 'yy' are:  
 - 2 = Allowed
 - 1 = Required
 - 0 = Disallowed
 
-The possible values for &#39;zz&#39; are:  
+The possible values for 'zz' are:  
 - 2 = Store recovery passwords only
 - 1 = Store recovery passwords and key packages
 <!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryOptions</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data>&lt;disabled/&gt;</Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryOptions</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
@@ -614,7 +615,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="fixeddrivesrecoveryoptions"></a>**FixedDrivesRecoveryOptions**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose how BitLocker-protected fixed drives can be recovered&quot; ().
+This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLocker-protected fixed drives can be recovered" ().
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -653,19 +654,20 @@ ADMX Info:
 
 This setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials. This setting is applied when you turn on BitLocker.
 
-The &quot;FDVAllowDRA_Name&quot; (Allow data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected fixed data drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.
+The "FDVAllowDRA_Name" (Allow data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected fixed data drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.
 
-In &quot;FDVRecoveryPasswordUsageDropDown_Name&quot; (Configure user storage of BitLocker recovery information) set whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
+In "FDVRecoveryPasswordUsageDropDown_Name" (Configure user storage of BitLocker recovery information) set whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
 
-Set &quot;FDVHideRecoveryPage_Name&quot; (Omit recovery options from the BitLocker setup wizard) to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
+Set "FDVHideRecoveryPage_Name" (Omit recovery options from the BitLocker setup wizard) to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
 
-Set &quot;FDVActiveDirectoryBackup_Name&quot; (Save BitLocker recovery information to Active Directory Domain Services) to enable saving the recovery key to AD.
+Set "FDVActiveDirectoryBackup_Name" (Save BitLocker recovery information to Active Directory Domain Services) to enable saving the recovery key to AD.
 
-Set the &quot;FDVRequireActiveDirectoryBackup_Name&quot; (Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives) data field if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
+Set the "FDVRequireActiveDirectoryBackup_Name" (Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives) data field if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
 
-Set the &quot;FDVActiveDirectoryBackupDropDown_Name&quot; (Configure storage of BitLocker recovery information to AD DS) to choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select &quot;1&quot; (Backup recovery password and key package), both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select &quot;2&quot; (Backup recovery password only) only the recovery password is stored in AD DS.
+Set the "FDVActiveDirectoryBackupDropDown_Name" (Configure storage of BitLocker recovery information to AD DS) to choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select "1" (Backup recovery password and key package), both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "2" (Backup recovery password only) only the recovery password is stored in AD DS.
 
-&gt; [!Note]<br/>&gt; If the &quot;FDVRequireActiveDirectoryBackup_Name&quot; (Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives) data field is set, a recovery password is automatically generated.
+> [!NOTE]
+> If the "FDVRequireActiveDirectoryBackup_Name" (Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives) data field is set, a recovery password is automatically generated.
 
 If you enable this setting, you can control the methods available to users to recover data from BitLocker-protected fixed data drives.
 
@@ -677,13 +679,13 @@ Sample value for this node to enable this policy is:
 <enabled/><data id="FDVAllowDRA_Name" value="xx"/><data id="FDVRecoveryPasswordUsageDropDown_Name" value="yy"/><data id="FDVRecoveryKeyUsageDropDown_Name" value="yy"/><data id="FDVHideRecoveryPage_Name" value="xx"/><data id="FDVActiveDirectoryBackup_Name" value="xx"/><data id="FDVActiveDirectoryBackupDropDown_Name" value="zz"/><data id="FDVRequireActiveDirectoryBackup_Name" value="xx"/>
 ```
 <!--SupportedValues-->
-The possible values for &#39;xx&#39; are:
+The possible values for 'xx' are:
 <ul>
 <li>true = Explicitly allow</li>
 <li>false = Policy not set</li>
 </ul>
 
-The possible values for &#39;yy&#39; are:
+The possible values for 'yy' are:
 <ul>
 <li>2 = Allowed</li>
 <li>1 = Required</li>
@@ -691,7 +693,7 @@ The possible values for &#39;yy&#39; are:
 
 </ul>
 
-The possible values for &#39;zz&#39; are:
+The possible values for 'zz' are:
 <ul>
 <li>2 = Store recovery passwords only</li>
 <li>1 = Store recovery passwords and key packages</li>
@@ -700,18 +702,18 @@ The possible values for &#39;zz&#39; are:
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRecoveryOptions</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data>&lt;disabled/&gt;</Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRecoveryOptions</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
@@ -719,7 +721,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="fixeddrivesrequireencryption"></a>**FixedDrivesRequireEncryption**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy &quot;Deny write access to fixed drives not protected by BitLocker&quot; (FDVDenyWriteAccess_Name).
+This setting is a direct mapping to the Bitlocker Group Policy "Deny write access to fixed drives not protected by BitLocker" (FDVDenyWriteAccess_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -769,18 +771,18 @@ Sample value for this node to enable this policy is:
 If you disable or do not configure this setting, all fixed data drives on the computer will be mounted with read and write access. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRequireEncryption</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data>&lt;disabled/&gt;</Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRequireEncryption</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
@@ -788,7 +790,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="removabledrivesrequireencryption"></a>**RemovableDrivesRequireEncryption**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy &quot;Deny write access to removable drives not protected by BitLocker&quot; (RDVDenyWriteAccess_Name).
+This setting is a direct mapping to the Bitlocker Group Policy "Deny write access to removable drives not protected by BitLocker" (RDVDenyWriteAccess_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -829,11 +831,12 @@ This setting configures whether BitLocker protection is required for a computer 
 
 If you enable this setting, all removable data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
 
-If the &quot;RDVCrossOrg&quot; (Deny write access to devices configured in another organization) option is set, only drives with identification fields matching the computer&#39;s identification fields will be given write access. When a removable data drive is accessed it will be checked for valid identification field and allowed identification fields. These fields are defined by the &quot;Provide the unique identifiers for your organization&quot; group policy setting.
+If the "RDVCrossOrg" (Deny write access to devices configured in another organization) option is set, only drives with identification fields matching the computer's identification fields will be given write access. When a removable data drive is accessed it will be checked for valid identification field and allowed identification fields. These fields are defined by the "Provide the unique identifiers for your organization" group policy setting.
 
 If you disable or do not configure this policy setting, all removable data drives on the computer will be mounted with read and write access.
 
-&gt; [!Note]<br/>&gt; This policy setting can be overridden by the group policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the &quot;Removable Disks: Deny write access&quot; group policy setting is enabled this policy setting will be ignored.
+> [!NOTE]
+> This policy setting can be overridden by the group policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" group policy setting is enabled this policy setting will be ignored.
 
 Sample value for this node to enable this policy is:
 
@@ -841,7 +844,7 @@ Sample value for this node to enable this policy is:
  <enabled/><data id="RDVCrossOrg" value="xx"/>
 ```
 <!--SupportedValues-->
-The possible values for &#39;xx&#39; are:
+The possible values for 'xx' are:
 <ul>
 <li>true = Explicitly allow</li>
 <li>false = Policy not set</li>
@@ -850,18 +853,18 @@ The possible values for &#39;xx&#39; are:
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
-                         <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/RemovableDrivesRequireEncryption</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data>&lt;disabled/&gt;</Data>
-                           </Item>
-                         </Replace>
+ <Replace>
+ <CmdID>$CmdID$</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/RemovableDrivesRequireEncryption</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">chr</Format>
+     </Meta>
+     <Data><disabled/></Data>
+   </Item>
+ </Replace>
 ```
 <!--/Policy-->
 <!--Policy-->
@@ -931,12 +934,35 @@ The following list shows the supported values:
 <!--Description-->
 Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user Azure AD account.
 <!--/Description-->
+
 > [!NOTE]
 > This policy is only supported in Azure AD accounts.
 
 "AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy  being set to "0", i.e, silent encryption is enforced.
 
 If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user is the current logged on user in the system.
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table> 
+<!--/SupportedSKUs-->
 <!--SupportedValues-->
 The expected values for this policy are:
 
@@ -1050,6 +1076,16 @@ Each server-side recovery key rotation is represented by a request ID. The serve
 
 Value type is string. Supported operation is Execute. Request ID is expected as a parameter.
 
+> [!TIP]
+> Key rotation feature will only work when:
+>
+> - For Operating system drives:
+>    - OSRequireActiveDirectoryBackup_Name is set to 1 ("Required")
+>    - OSActiveDirectoryBackup_Name is set to true
+> - For Fixed data drives:
+>    - FDVRequireActiveDirectoryBackup_Name is set to 1 = ("Required")
+>    - FDVActiveDirectoryBackup_Name is set to true
+
 <a href="" id="status"></a>**Status**  
 Interior node. Supported operation is Get.
 
@@ -1058,7 +1094,7 @@ Interior node. Supported operation is Get.
 <!--Policy-->
 <a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus** 
 <!--Description-->
-This node reports compliance state of device encryption on the system.
+This node reports compliance state of device encryption on the system. 
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -1084,12 +1120,33 @@ This node reports compliance state of device encryption on the system.
 <!--/SupportedSKUs-->
 
 <!--SupportedValues-->
+Value type is int. Supported operation is Get.
+
 Supported values:  
 - 0 - Indicates that the device is compliant.
-- Any other value represents a non-compliant device.
+- Any non-zero value - Indicates that the device is not compliant. This value represents a bitmask with each bit and the corresponding error code described in the following table:
+
+| Bit | Error Code |
+|-----|------------|
+| 0 |The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
+| 1 |The encryption method of the OS volume doesn't match the BitLocker policy.|
+| 2 |The OS volume is unprotected.|
+| 3 |The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.|
+| 4 |The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.|
+| 5 |The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.|
+| 6 |The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.|
+| 7 |The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
+| 8 |Recovery key backup failed.|
+| 9 |A fixed drive is unprotected.|
+| 10 |The encryption method of the fixed drive doesn't match the BitLocker policy.|
+| 11 |To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or, if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.|
+| 12 |Windows Recovery Environment (WinRE) isn't configured.|
+| 13 |A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removable drive. |
+| 14 |The TPM isn't ready for BitLocker.|
+| 15 |The network isn't available, which is required for recovery key backup. |
+| 16-31 |For future use.|
 
 <!--/SupportedValues-->
-Value type is int. Supported operation is Get.
 
 <!--/Policy-->
 
@@ -1211,10 +1268,10 @@ The following example is provided to show proper format and should not be taken 
             <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethodByDriveType</LocURI>
           </Target>
           <Data>
-            &lt;enabled/&gt;
-            &lt;data id=&quot;EncryptionMethodWithXtsOsDropDown_Name&quot; value=&quot;4&quot;/&gt;
-            &lt;data id=&quot;EncryptionMethodWithXtsFdvDropDown_Name&quot; value=&quot;7&quot;/&gt;
-            &lt;data id=&quot;EncryptionMethodWithXtsRdvDropDown_Name&quot; value=&quot;4&quot;/&gt;
+            <enabled/>
+            <data id="EncryptionMethodWithXtsOsDropDown_Name" value="4"/>
+            <data id="EncryptionMethodWithXtsFdvDropDown_Name" value="7"/>
+            <data id="EncryptionMethodWithXtsRdvDropDown_Name" value="4"/>
           </Data>
         </Item>
       </Replace>
@@ -1226,12 +1283,12 @@ The following example is provided to show proper format and should not be taken 
             <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRequireStartupAuthentication</LocURI>
           </Target>
           <Data>
-            &lt;enabled/&gt;
-            &lt;data id=&quot;ConfigureNonTPMStartupKeyUsage_Name&quot; value=&quot;true&quot;/&gt;
-            &lt;data id=&quot;ConfigureTPMStartupKeyUsageDropDown_Name&quot; value=&quot;2&quot;/&gt;
-            &lt;data id=&quot;ConfigurePINUsageDropDown_Name&quot; value=&quot;2&quot;/&gt;
-            &lt;data id=&quot;ConfigureTPMPINKeyUsageDropDown_Name&quot; value=&quot;2&quot;/&gt;
-            &lt;data id=&quot;ConfigureTPMUsageDropDown_Name&quot; value=&quot;2&quot;/&gt;
+            <enabled/>
+            <data id="ConfigureNonTPMStartupKeyUsage_Name" value="true"/>
+            <data id="ConfigureTPMStartupKeyUsageDropDown_Name" value="2"/>
+            <data id="ConfigurePINUsageDropDown_Name" value="2"/>
+            <data id="ConfigureTPMPINKeyUsageDropDown_Name" value="2"/>
+            <data id="ConfigureTPMUsageDropDown_Name" value="2"/>
           </Data>
         </Item>
       </Replace>
@@ -1243,8 +1300,8 @@ The following example is provided to show proper format and should not be taken 
             <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesMinimumPINLength</LocURI>
           </Target>
           <Data>
-            &lt;enabled/&gt;
-            &lt;data id=&quot;MinPINLength&quot; value=&quot;6&quot;/&gt;
+            <enabled/>
+            <data id="MinPINLength" value="6"/>
           </Data>
         </Item>
       </Replace>
@@ -1256,10 +1313,10 @@ The following example is provided to show proper format and should not be taken 
             <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryMessage</LocURI>
           </Target>
           <Data>
-            &lt;enabled/&gt;
-            &lt;data id=&quot;RecoveryMessage_Input&quot; value=&quot;blablablabla&quot;/&gt;
-            &lt;data id=&quot;PrebootRecoveryInfoDropDown_Name&quot; value=&quot;2&quot;/&gt;
-            &lt;data id=&quot;RecoveryUrl_Input&quot; value=&quot;blablabla&quot;/&gt;
+            <enabled/>
+            <data id="RecoveryMessage_Input" value="blablablabla"/>
+            <data id="PrebootRecoveryInfoDropDown_Name" value="2"/>
+            <data id="RecoveryUrl_Input" value="blablabla"/>
           </Data>
         </Item>
       </Replace>
@@ -1271,14 +1328,14 @@ The following example is provided to show proper format and should not be taken 
             <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryOptions</LocURI>
           </Target>
           <Data>
-            &lt;enabled/&gt;
-            &lt;data id=&quot;OSAllowDRA_Name&quot; value=&quot;true&quot;/&gt;
-            &lt;data id=&quot;OSRecoveryPasswordUsageDropDown_Name&quot; value=&quot;2&quot;/&gt;
-            &lt;data id=&quot;OSRecoveryKeyUsageDropDown_Name&quot; value=&quot;2&quot;/&gt;
-            &lt;data id=&quot;OSHideRecoveryPage_Name&quot; value=&quot;true&quot;/&gt;
-            &lt;data id=&quot;OSActiveDirectoryBackup_Name&quot; value=&quot;true&quot;/&gt;
-            &lt;data id=&quot;OSActiveDirectoryBackupDropDown_Name&quot; value=&quot;2&quot;/&gt;
-            &lt;data id=&quot;OSRequireActiveDirectoryBackup_Name&quot; value=&quot;true&quot;/&gt;
+            <enabled/>
+            <data id="OSAllowDRA_Name" value="true"/>
+            <data id="OSRecoveryPasswordUsageDropDown_Name" value="2"/>
+            <data id="OSRecoveryKeyUsageDropDown_Name" value="2"/>
+            <data id="OSHideRecoveryPage_Name" value="true"/>
+            <data id="OSActiveDirectoryBackup_Name" value="true"/>
+            <data id="OSActiveDirectoryBackupDropDown_Name" value="2"/>
+            <data id="OSRequireActiveDirectoryBackup_Name" value="true"/>
           </Data>
         </Item>
       </Replace>
@@ -1290,14 +1347,14 @@ The following example is provided to show proper format and should not be taken 
             <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRecoveryOptions</LocURI>
           </Target>
           <Data>
-            &lt;enabled/&gt;
-            &lt;data id=&quot;FDVAllowDRA_Name&quot; value=&quot;true&quot;/&gt;
-            &lt;data id=&quot;FDVRecoveryPasswordUsageDropDown_Name&quot; value=&quot;2&quot;/&gt;
-            &lt;data id=&quot;FDVRecoveryKeyUsageDropDown_Name&quot; value=&quot;2&quot;/&gt;
-            &lt;data id=&quot;FDVHideRecoveryPage_Name&quot; value=&quot;true&quot;/&gt;
-            &lt;data id=&quot;FDVActiveDirectoryBackup_Name&quot; value=&quot;true&quot;/&gt;
-            &lt;data id=&quot;FDVActiveDirectoryBackupDropDown_Name&quot; value=&quot;2&quot;/&gt;
-            &lt;data id=&quot;FDVRequireActiveDirectoryBackup_Name&quot; value=&quot;true&quot;/&gt;
+            <enabled/>
+            <data id="FDVAllowDRA_Name" value="true"/>
+            <data id="FDVRecoveryPasswordUsageDropDown_Name" value="2"/>
+            <data id="FDVRecoveryKeyUsageDropDown_Name" value="2"/>
+            <data id="FDVHideRecoveryPage_Name" value="true"/>
+            <data id="FDVActiveDirectoryBackup_Name" value="true"/>
+            <data id="FDVActiveDirectoryBackupDropDown_Name" value="2"/>
+            <data id="FDVRequireActiveDirectoryBackup_Name" value="true"/>
           </Data>
         </Item>
       </Replace>
@@ -1309,7 +1366,7 @@ The following example is provided to show proper format and should not be taken 
             <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRequireEncryption</LocURI>
           </Target>
           <Data>
-            &lt;enabled/&gt;
+            <enabled/>
           </Data>
         </Item>
       </Replace>
@@ -1321,8 +1378,8 @@ The following example is provided to show proper format and should not be taken 
             <LocURI>./Device/Vendor/MSFT/BitLocker/RemovableDrivesRequireEncryption</LocURI>
           </Target>
           <Data>
-            &lt;enabled/&gt;
-            &lt;data id=&quot;RDVCrossOrg&quot; value=&quot;true&quot;/&gt;
+            <enabled/>
+            <data id="RDVCrossOrg" value="true"/>
           </Data>
         </Item>
       </Replace>
@@ -1331,4 +1388,5 @@ The following example is provided to show proper format and should not be taken 
     </SyncBody>
 </SyncML>
 ```
+
 <!--/Policy-->

@@ -1,11 +1,11 @@
 ---
 title: Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune (Windows 10)
-description: Learn how to use the Azure portal for Microsoft Intune to create and deploy your Windows Information Protection (WIP) policy to protect data on your network. 
+description: Learn how to use the Azure portal for Microsoft Intune to create and deploy your Windows Information Protection (WIP) policy to protect data on your network.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -129,7 +129,8 @@ If you don't know the Store app publisher or product name, you can find them by 
 
 If you need to add Windows 10 mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
->**Note**<br>Your PC and phone must be on the same wireless network.
+> [!NOTE]
+> Your PC and phone must be on the same wireless network.
 
 1. On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
 
@@ -194,25 +195,27 @@ To add another Desktop app, click the ellipsis **…**. After you’ve entered t
  
 If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
-```ps1
+```powershell
 Get-AppLockerFileInformation -Path "<path_of_the_exe>"
 ```
 
 Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example:
 
-```ps1
+```powershell
 Get-AppLockerFileInformation -Path "C:\Program Files\Windows NT\Accessories\wordpad.exe"
 ```
 
 In this example, you'd get the following info:
 
-```
+```console
 Path                   Publisher
 ----                   ---------
 %PROGRAMFILES%\WINDOWS NT\ACCESSORIES\WORDPAD.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US
 ```
 
 Where `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the **Publisher** name and `WORDPAD.EXE` is the **File** name.
+
+Regarding to how to get the Product Name for the Apps you wish to Add, please reach out to our Windows Support Team to request the guidelines
 
 ### Import a list of apps 
 
@@ -277,22 +280,22 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
     This is the XML file that AppLocker creates for Microsoft Dynamics 365.
 
     ```xml
-        <?xml version="1.0"?>
-        <AppLockerPolicy Version="1">
-            <RuleCollection EnforcementMode="NotConfigured" Type="Appx">
-                <FilePublisherRule Action="Allow" UserOrGroupSid="S-1-1-0" Description="" Name="Microsoft.MicrosoftDynamicsCRMforWindows10, version 3.2.0.0 and above, from Microsoft Corporation" Id="3da34ed9-aec6-4239-88ba-0afdce252ab4">
-                    <Conditions>
-                        <FilePublisherCondition BinaryName="*" ProductName="Microsoft.MicrosoftDynamicsCRMforWindows10" PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
-                            <BinaryVersionRange HighSection="*" LowSection="3.2.0.0"/>
-                        </FilePublisherCondition>
-                    </Conditions>
-                </FilePublisherRule>
-            </RuleCollection>
-            <RuleCollection EnforcementMode="NotConfigured" Type="Dll"/>
-            <RuleCollection EnforcementMode="NotConfigured" Type="Exe"/>
-            <RuleCollection EnforcementMode="NotConfigured" Type="Msi"/>
-            <RuleCollection EnforcementMode="NotConfigured" Type="Script"/>
-        </AppLockerPolicy>
+    <?xml version="1.0"?>
+    <AppLockerPolicy Version="1">
+        <RuleCollection EnforcementMode="NotConfigured" Type="Appx">
+            <FilePublisherRule Action="Allow" UserOrGroupSid="S-1-1-0" Description="" Name="Microsoft.MicrosoftDynamicsCRMforWindows10, version 3.2.0.0 and above, from Microsoft Corporation" Id="3da34ed9-aec6-4239-88ba-0afdce252ab4">
+                <Conditions>
+                    <FilePublisherCondition BinaryName="*" ProductName="Microsoft.MicrosoftDynamicsCRMforWindows10" PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+                        <BinaryVersionRange HighSection="*" LowSection="3.2.0.0"/>
+                    </FilePublisherCondition>
+                </Conditions>
+            </FilePublisherRule>
+        </RuleCollection>
+        <RuleCollection EnforcementMode="NotConfigured" Type="Dll"/>
+        <RuleCollection EnforcementMode="NotConfigured" Type="Exe"/>
+        <RuleCollection EnforcementMode="NotConfigured" Type="Msi"/>
+        <RuleCollection EnforcementMode="NotConfigured" Type="Script"/>
+    </AppLockerPolicy>
     ```
 
 12. After you’ve created your XML file, you need to import it by using Microsoft Intune.
@@ -332,6 +335,7 @@ The executable rule helps to create an AppLocker rule to sign any unsigned apps.
     The policy is saved and you’ll see a message that says 1 rule was exported from the policy.
 
 12. After you’ve created your XML file, you need to import it by using Microsoft Intune.
+
 
 **To import a list of protected apps using Microsoft Intune**
 
@@ -426,7 +430,7 @@ Separate multiple resources with the "|" delimiter.
 If you don’t use proxy servers, you must also include the "," delimiter just before the "|". 
 For example: 
 
-```code
+```console
 URL <,proxy>|URL <,proxy>
 ```
 
@@ -439,32 +443,32 @@ In this case, Windows blocks the connection by default.
 To stop Windows from automatically blocking these connections, you can add the `/*AppCompat*/` string to the setting. 
 For example: 
 
-```code
-URL <,proxy>|URL <,proxy>/*AppCompat*/
+```console
+URL <,proxy>|URL <,proxy>|/*AppCompat*/
 ```
 
 When you use this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access), using the **Domain joined or marked as compliant** option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.
 
 Value format with proxy:
 
-```code
+```console
 contoso.sharepoint.com,contoso.internalproxy1.com|contoso.visualstudio.com,contoso.internalproxy2.com
 ```
 
 Value format without proxy:
 
-```code
-contoso.sharepoint.com|contoso.visualstudio.com
+```console
+contoso.sharepoint.com,|contoso.visualstudio.com,|contoso.onedrive.com,
 ```
 
 ### Protected domains
 
 Specify the domains used for identities in your environment. 
 All traffic to the fully-qualified domains appearing in this list will be protected.
-Separate multiple domains with the "," delimiter.
+Separate multiple domains with the "|" delimiter.
 
-```code
-exchange.contoso.com,contoso.com,region.contoso.com
+```console
+exchange.contoso.com|contoso.com|region.contoso.com
 ```
 
 ### Network domains
@@ -473,7 +477,7 @@ Specify the DNS suffixes used in your environment.
 All traffic to the fully-qualified domains appearing in this list will be protected.
 Separate multiple resources with the "," delimiter.
 
-```code
+```console
 corp.contoso.com,region.contoso.com
 ```
 
@@ -486,7 +490,7 @@ This list shouldn’t include any servers listed in your Internal proxy servers 
 Internal proxy servers must be used only for WIP-protected (enterprise) traffic.
 Separate multiple resources with the ";" delimiter.
 
-```code
+```console
 proxy.contoso.com:80;proxy2.contoso.com:443
 ```
 
@@ -498,7 +502,7 @@ This list shouldn’t include any servers listed in your Proxy servers list.
 Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.
 Separate multiple resources with the ";" delimiter.
 
-```code
+```console
 contoso.internalproxy1.com;contoso.internalproxy2.com
 ```
 
@@ -537,7 +541,7 @@ Specify your authentication redirection endpoints for your company.
 These locations are considered enterprise or personal, based on the context of the connection before the redirection.
 Separate multiple resources with the "," delimiter.
 
-```code
+```console
 sts.contoso.com,sts.contoso2.com
 ```
 
@@ -589,14 +593,14 @@ After you've decided where your protected apps can access enterprise data on you
         
 **Use Azure RMS for WIP.** Determines whether WIP uses [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management) to apply EFS encryption to files that are copied from Windows 10 to USB or other removable drives so they can be securely shared amongst employees. In other words, WIP uses Azure Rights Management "machinery" to apply EFS encryption to files when they are copied to removable drives. You must already have Azure Rights Management set up. The EFS file encryption key is protected by the RMS template’s license. Only users with permission to that template will be able to read it from the removable drive. WIP can also integrate with Azure RMS by using the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings in the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp). 
     
-- **On.** Protects files that are copied to a removable drive. You can enter a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. The RMS template is only applied to the files on removable media, and is only used for access control—it doesn’t actually apply Azure Information Protection to the files. Curly braces {} are required around the RMS Template ID, but they are removed after you save the policy. 
+- **On.** Protects files that are copied to a removable drive. You can enter a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. The RMS template is only applied to the files on removable media, and is only used for access control—it doesn’t actually apply Azure Information Protection to the files. 
         
   If you don’t specify an [RMS template](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates), it’s a regular EFS file using a default RMS template that all users can access.
         
 - **Off, or not configured.** Stops WIP from encrypting Azure Rights Management files that are copied to a removable drive.
 
->[!NOTE]
->Regardless of this setting, all files in OneDrive for Business will be encrypted, including moved Known Folders.
+  > [!NOTE]
+  > Regardless of this setting, all files in OneDrive for Business will be encrypted, including moved Known Folders.
 
 **Allow Windows Search Indexer to search encrypted files.** Determines whether to allow the Windows Search Indexer to index items that are encrypted, such as WIP protected files.
     
@@ -618,7 +622,7 @@ You can restrict which files are protected by WIP when they are downloaded from 
 
 - [What is Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Create and deploy Windows Information Protection (WIP) app protection policy with Intune and MAM](https://docs.microsoft.com/intune/deploy-use/create-windows-information-protection-policy-with-intune)
+- [Create a Windows Information Protection (WIP) protection policy using Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy)
 
 - [Intune MAM Without Enrollment](https://blogs.technet.microsoft.com/configmgrdogs/2016/02/04/intune-mam-without-enrollment/)
 

@@ -1,6 +1,6 @@
 ---
-title: MDM enrollment of Windows-based devices
-description: MDM enrollment of Windows-based devices
+title: MDM enrollment of Windows 10-based devices
+description: Learn about mobile device management (MDM) enrollment of Windows 10-based devices to simplify access to your organization’s resources.
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
@@ -12,38 +12,32 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 11/15/2017
+ms.date: 11/19/2020
 ---
 
-# MDM enrollment of Windows-based devices
+# MDM enrollment of Windows 10-based devices
 
+In today’s cloud-first world, enterprise IT departments increasingly want to let employees use their own devices, or even choose and purchase corporate-owned devices. Connecting your devices to work makes it easy for you to access your organization’s resources, such as apps, the corporate network, and email.
 
-This topic describes the user experience of enrolling Windows 10-based PCs and devices.
+> [!NOTE]
+> When you connect your device using mobile device management (MDM) enrollment, your organization may enforce certain policies on your device.
 
-In today’s cloud-first world, enterprise IT departments increasingly want to let employees bring their own devices, or even choose and purchase corporate-owned devices. Connecting your devices to work makes it easy for you to access your organization’s resources (such as apps, the corporate network, and email).
+## Connect corporate-owned Windows 10-based devices
 
-> **Note**  When you connect your device using mobile device management (MDM) enrollment, your organization may enforce certain policies on your device.
-
- 
-
-## Connecting corporate-owned Windows 10-based devices
-
-
-Corporate owned devices can be connected to work either by joining the device to an Active Directory domain or an Azure Active Directory (Azure AD) domain. Windows 10 does not require a personal Microsoft account on devices joined to Azure AD or an on-premises Active Directory domain.
+You can connect corporate-owned devices to work by either joining the device to an Active Directory domain, or to an Azure Active Directory (Azure AD) domain. Windows 10 does not require a personal Microsoft account on devices joined to Azure AD or an on-premises Active Directory domain.
 
 ![active directory azure ad signin](images/unifiedenrollment-rs1-1.png)
 
-### Connecting your device to an Active Directory domain (Join a domain)
+### Connect your device to an Active Directory domain (join a domain)
 
-Devices running Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Education can be connected to an Active Directory domain. These devices can be connected using the Settings app.
+Devices running Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Education can be connected to an Active Directory domain using the Settings app.
 
-> **Note**  Mobile devices cannot be connected to an Active Directory domain.
+> [!NOTE]
+> Mobile devices cannot be connected to an Active Directory domain.
 
- 
+### Out-of-box-experience 
 
-### Out-of-box-experience (OOBE)
-
-Because joining your device to an Active Directory domain during the OOBE is not supported, you’ll need to first create a local account and then connect the device using the Settings app.
+Joining your device to an Active Directory domain during the out-of-box-experience (OOBE) is not supported. To join a domain:
 
 1.  On the **Who Owns this PC?** page, select **My work or school owns it**.
 
@@ -53,11 +47,13 @@ Because joining your device to an Active Directory domain during the OOBE is not
 
     ![select domain or azure ad](images/unifiedenrollment-rs1-3.png)
 
-3.  You will next see a prompt to set up a local account on the device. Enter your local account details and then click **Next** to continue.
+3.  You'll see a prompt to set up a local account on the device. Enter your local account details, and then select **Next** to continue.
 
     ![create pc account](images/unifiedenrollment-rs1-4.png)
 
-### Using the Settings app
+### Use the Settings app
+
+To create a local account and connect the device:
 
 1.  Launch the Settings app.
 
@@ -71,42 +67,44 @@ Because joining your device to an Active Directory domain during the OOBE is not
 
     ![select access work or school](images/unifiedenrollment-rs1-7.png)
 
-4.  Click **Connect**.
+4.  Select **Connect**.
 
     ![connect to work or school](images/unifiedenrollment-rs1-8.png)
 
-5.  Under **Alternate actions**, click **Join this device to a local Active Directory domain**.
+5.  Under **Alternate actions**, select **Join this device to a local Active Directory domain**.
 
     ![join account to active directory domain](images/unifiedenrollment-rs1-9.png)
 
-6.  Type in your domain name, follow the instructions, and then click **Next** to continue. After you complete the flow and reboot your device, it should be connected to your Active Directory domain. You can now log into the device using your domain credentials.
+6.  Type in your domain name, follow the instructions, and then select **Next** to continue. After you complete the flow and restart your device, it should be connected to your Active Directory domain. You can now sign in to the device using your domain credentials.
 
     ![type in domain name](images/unifiedenrollment-rs1-10.png)
 
 ### Help with connecting to an Active Directory domain
 
-There are a few instances where your device cannot be connected to an Active Directory domain:
+There are a few instances where your device cannot be connected to an Active Directory domain.
 
-| Connection issue                                                | Explanation                                                                                                                                                                                                               |
+| Connection issue                                                | Description                                                                                                                                                                                                               |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Your device is already connected to an Active Directory domain. | Your device can be connected to only a single Active Directory domain at a time.                                                                                                                                          |
+| Your device is already connected to an Active Directory domain. | Your device can only be connected to a single Active Directory domain at a time.                                                                                                                                          |
 | Your device is connected to an Azure AD domain.                 | Your device can either be connected to an Azure AD domain or an Active Directory domain. You cannot connect to both simultaneously.                                                                                       |
 | You are logged in as a standard user.                           | Your device can only be connected to an Azure AD domain if you are logged in as an administrative user. You’ll need to switch to an administrator account to continue.                                                    |
 | Your device is running Windows 10 Home.                         | This feature is not available on Windows 10 Home, so you will be unable to connect to an Active Directory domain. You will need to upgrade to Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Education to continue. |
 
  
 
-### Connecting your device to an Azure AD domain (Join Azure AD)
+### Connect your device to an Azure AD domain (join Azure AD)
 
 All Windows devices can be connected to an Azure AD domain. These devices can be connected during OOBE. Additionally, desktop devices can be connected to an Azure AD domain using the Settings app.
 
-### Out-of-box-experience (OOBE)
+### Out-of-box-experience
 
-1.  Select **My work or school owns it**, then click **Next.**
+To join a domain:
+
+1.  Select **My work or school owns it**, then select **Next.**
 
     ![oobe local account creation](images/unifiedenrollment-rs1-11.png)
 
-2.  Click **Join Azure AD**, then click **Next.**
+2.  Select **Join Azure AD**, and then select **Next.**
 
     ![select domain or azure ad](images/unifiedenrollment-rs1-12.png)
 
@@ -118,7 +116,9 @@ All Windows devices can be connected to an Azure AD domain. These devices can be
 
     ![azure ad signin](images/unifiedenrollment-rs1-13.png)
 
-### Using the Settings app
+### Use the Settings app
+
+To create a local account and connect the device:
 
 1.  Launch the Settings app.
 
@@ -132,11 +132,11 @@ All Windows devices can be connected to an Azure AD domain. These devices can be
 
     ![select access work or school](images/unifiedenrollment-rs1-16.png)
 
-4.  Click **Connect**.
+4.  Select **Connect**.
 
     ![connect to work or school](images/unifiedenrollment-rs1-17.png)
 
-5.  Under **Alternate Actions**, click **Join this device to Azure Active Directory**.
+5.  Under **Alternate Actions**, selct **Join this device to Azure Active Directory**.
 
     ![join work or school account to azure ad](images/unifiedenrollment-rs1-18.png)
 
@@ -144,7 +144,7 @@ All Windows devices can be connected to an Azure AD domain. These devices can be
 
     ![azure ad sign in](images/unifiedenrollment-rs1-19.png)
 
-7.  If the tenant is a cloud only, password hash sync, or pass-through authentication tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly on this page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as AD FS, for authentication.
+7.  If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page changes to show the organization's custom branding, and you can enter your password directly on this page. If the tenant is part of a federated domain, you are redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
@@ -156,9 +156,9 @@ All Windows devices can be connected to an Azure AD domain. These devices can be
 
 ### Help with connecting to an Azure AD domain
 
-There are a few instances where your device cannot be connected to an Azure AD domain:
+There are a few instances where your device cannot be connected to an Azure AD domain.
 
-| Connection issue                                                | Explanation                                                                                                                                                                                                                |
+| Connection issue                                                | Description                                                                                                                                                                                                                |
 |-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Your device is connected to an Azure AD domain.                 | Your device can only be connected to a single Azure AD domain at a time.                                                                                                                                                   |
 | Your device is already connected to an Active Directory domain. | Your device can either be connected to an Azure AD domain or an Active Directory domain. You cannot connect to both simultaneously.                                                                                        |
@@ -169,18 +169,20 @@ There are a few instances where your device cannot be connected to an Azure AD d
 
  
 
-## Connecting personally-owned devices (Bring your own device)
+## Connect personally-owned devices 
 
 
-Personally owned devices, also known as bring your own device or BYOD, can be connected to a work or school account or to MDM. Windows 10 does not require a personal Microsoft account on devices to connect to work or school.
+Personally-owned devices, also known as bring your own device (BYOD), can be connected to a work or school account, or to MDM. Windows 10 does not require a personal Microsoft account on devices to connect to work or school.
 
-### Connecting to a work or school account
+### Connect to a work or school account
 
-All Windows 10-based devices can be connected to a work or school account. You can connect to a work or school account either through the Settings app or through any of the numerous Universal Windows Platform (UWP) apps such as the universal Office apps.
+All Windows 10-based devices can be connected to a work or school account. You can connect to a work or school account either through the Settings app or through any of the numerous Universal Windows Platform (UWP) apps, such as the universal Office apps.
 
-### Using the Settings app
+### Use the Settings app
 
-1.  Launch the Settings app and then click **Accounts**. Click **Start**, then the Settings icon, and then select **Accounts**
+To create a local account and connect the device:
+
+1.  Launch the Settings app, and then select **Accounts** >**Start** > **Settings** > **Accounts**.
 
     ![windows settings page](images/unifiedenrollment-rs1-21-b.png)
 
@@ -188,7 +190,7 @@ All Windows 10-based devices can be connected to a work or school account. You 
 
     ![select access work or school](images/unifiedenrollment-rs1-23-b.png)
 
-3.  Click **Connect**.
+3.  Select **Connect**.
 
     ![connect to work or school](images/unifiedenrollment-rs1-24-b.png)
 
@@ -196,7 +198,7 @@ All Windows 10-based devices can be connected to a work or school account. You 
 
     ![join work or school account to azure ad](images/unifiedenrollment-rs1-25-b.png)
 
-5.  If the tenant is a cloud only, password hash sync, or pass-through authentication tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly into the page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as AD FS, for authentication.
+5.  If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page changes to show the organization's custom branding, and can enter your password directly into the page. If the tenant is part of a federated domain, you are redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
@@ -210,11 +212,13 @@ All Windows 10-based devices can be connected to a work or school account. You 
 
     ![account successfully added](images/unifiedenrollment-rs1-27.png)
 
-### Connecting to MDM on a desktop (Enrolling in device management)
+### Connect to MDM on a desktop (enrolling in device management)
 
-All Windows 10-based devices can be connected to an MDM. You can connect to an MDM through the Settings app.
+All Windows 10-based devices can be connected to MDM. You can connect to an MDM through the Settings app.
 
-### Using the Settings app
+### Use the Settings app
+
+To create a local account and connect the device:
 
 1. Launch the Settings app.
 
@@ -228,7 +232,7 @@ All Windows 10-based devices can be connected to an MDM. You can connect to an 
 
    ![access work or school](images/unifiedenrollment-rs1-30.png)
 
-4. Click the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
+4. Select the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934). For older builds, see [Connect your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connect-your-windows-10-based-device-to-work-using-a-deep-link).
 
    ![connect to work or school](images/unifiedenrollment-rs1-31.png)
 
@@ -244,36 +248,9 @@ All Windows 10-based devices can be connected to an MDM. You can connect to an 
 
    After you complete the flow, your device will be connected to your organization’s MDM.
    
-
-### Connecting to MDM on a phone (Enrolling in device management)
-
-1.  Launch the **Settings** app and then click **Accounts**.
-
-    ![phone settings](images/unifiedenrollment-rs1-38.png)
-
-2.  Click **Access work or school**.
-
-    ![phone settings](images/unifiedenrollment-rs1-39.png)
-
-3.  Click the **Enroll only in device management** link. This is only available in the servicing build 14393.82 (KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
-
-    ![access work or school page](images/unifiedenrollment-rs1-40.png)
-
-4.  Enter your work email address.
-
-    ![enter your email address](images/unifiedenrollment-rs1-41.png)
-
-5.  If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you’ll be presented with a new window that will ask you for additional authentication information.
-
-    Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
-
-6.  After you complete the flow, your device will be connected to your organization’s MDM.
-
-    ![completed mdm enrollment](images/unifiedenrollment-rs1-42.png)
-
 ### Help with connecting personally-owned devices
 
-There are a few instances where your device may not be able to connect to work, as described in the following table.
+There are a few instances where your device may not be able to connect to work.
 
 | Error Message                                                                                                                                                                              | Description                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -284,20 +261,20 @@ There are a few instances where your device may not be able to connect to work, 
 | We couldn’t auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it. | You need to provide the server URL for your MDM or check the spelling of the username you entered.  |
 
  
-## Connecting your Windows 10-based device to work using a deep link
+## Connect your Windows 10-based device to work using a deep link
 
 
-Windows 10-based devices may be connected to work using a deep link. Users will be able to click or open a link in a particular format from anywhere in Windows 10 and be directed to the new enrollment experience.
+Windows 10-based devices may be connected to work using a deep link. Users will be able to select or open a link in a particular format from anywhere in Windows 10, and be directed to the new enrollment experience.
 
 In Windows 10, version 1607, deep linking will only be supported for connecting devices to MDM. It will not support adding a work or school account, joining a device to Azure AD, and joining a device to Active Directory.
 
-The deep link used for connecting your device to work will always use the following format:
+The deep link used for connecting your device to work will always use the following format.
 
 **ms-device-enrollment:?mode={mode\_name}**
 
 | Parameter | Description                                                  | Supported Value for Windows 10|
 |-----------|--------------------------------------------------------------|----------------------------------------------|
-| mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| MDM (Mobile Device Management), AWA (Adding Work Account), and AADJ (Azure Active Directory Joined).                                       |
+| mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| Mobile Device Management (MDM), Adding Work Account (AWA), and Azure Active Directory Joined (AADJ).                                       |
 |username  | Specifies the email address or UPN of the user who should be enrolled into MDM. Added in Windows 10, version 1703. | string |
 | servername | Specifies the MDM server URL that will be used to enroll the device. Added in Windows 10, version 1703. | string|
 | accesstoken | Custom parameter for MDM servers to use as they see fit. Typically, this can be used as a token to validate the enrollment request. Added in Windows 10, version 1703. | string |
@@ -305,47 +282,45 @@ The deep link used for connecting your device to work will always use the follow
 | tenantidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to identify which tenant the device or user belongs to. Added in Windows 10, version 1703. | GUID or string |
 | ownership | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to determine whether the device is BYOD or Corp Owned. Added in Windows 10, version 1703. | 1, 2, or 3 |
 
-> **Note**  "awa" and "aadj" values for mode are only supported on Windows 10, version 1709 and later. 
+> [!NOTE]
+> AWA and AADJ values for mode are only supported on Windows 10, version 1709 and later. 
 
 
-### Connecting to MDM using a deep link
+### Connect to MDM using a deep link
 
-> **Note** Deep links only work with Internet Explorer or Edge browsers.
-When connecting to MDM using a deep link, the URI you should use is
+> [!NOTE]
+> Deep links only work with Internet Explorer or Microsoft Edge browsers. When connecting to MDM using a deep link, the URI you should use is:
+> **ms-device-enrollment:?mode=mdm** 
+> **ms-device-enrollment:?mode=mdm&username=someone@example.com&servername=<https://example.server.com>**
 
-**ms-device-enrollment:?mode=mdm**
-**ms-device-enrollment:?mode=mdm&username=someone@example.com&servername=<https://example.server.com>**
+To connect your devices to MDM using deep links:
 
-The following procedure describes how users can connect their devices to MDM using deep links.
+1.  Starting with Windows 10, version 1607, create a link to launch the built-in enrollment app using the URI **ms-device-enrollment:?mode=mdm**, and user-friendly display text, such as **Click here to connect Windows to work**:
 
-1.  Starting with Windows 10, version 1607, you can create a link to launch the built-in enrollment app using the URI **ms-device-enrollment:?mode=mdm** and user-friendly display text, such as **Click here to connect Windows to work**:
+    (Be aware that this will launch the flow equivalent to the Enroll into the device management option in Windows 10, version 1511.)
 
-    > **Note**  This will launch the flow equivalent to the Enroll into device management option in Windows 10, version 1511.
-
-    - IT admins can add this link to a welcome email that users can click on to enroll into MDM.
+    - IT admins can add this link to a welcome email that users can select to enroll into MDM.
 
       ![using enrollment deeplink in email](images/deeplinkenrollment1.png)
 
     - IT admins can also add this link to an internal web page that users refer to enrollment instructions.
 
-2.  After clicking the link or running it, Windows 10 will launch the enrollment app in a special mode that only allows MDM enrollments (similar to the Enroll into device management option in Windows 10, version 1511).
+2.  After you select the link or run it, Windows 10 launches the enrollment app in a special mode that only allows MDM enrollments (similar to the Enroll into device management option in Windows 10, version 1511).
 
     Type in your work email address.
 
     ![set up work or school account](images/deeplinkenrollment3.png)
 
-3.  If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you’ll be presented with a new window that will ask you for additional authentication information.
+3.  If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you’ll be presented with a new window that will ask you for additional authentication information. Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
-    > **Note**  Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
-
-    After you complete the flow, your device will be connected to your organization’s MDM.
+    After you complete the flow, your device will be connected to your organization's MDM.
 
     ![corporate sign in](images/deeplinkenrollment4.png)
 
-## Managing connections
+## Manage connections
 
 
-Your work or school connections can be managed on the **Settings** &gt; **Accounts** &gt; **Access work or school** page. Your connections will show on this page and clicking on one will expand options for that connection.
+To manage your work or school connections, select **Settings** > **Accounts** > **Access work or school**. Your connections will show on this page and selecting one will expand options for that connection.
 
 ![managing work or school account](images/unifiedenrollment-rs1-34-b.png)
 
@@ -357,30 +332,31 @@ The **Info** button can be found on work or school connections involving MDM. Th
 -   Connecting your device to a work or school account that has auto-enroll into MDM configured.
 -   Connecting your device to MDM.
 
-Clicking the **Info** button will open a new page in the Settings app that provides details about your MDM connection. You’ll be able to view your organization’s support information (if configured) on this page. You’ll also be able to start a sync session which will force your device to communicate to the MDM server and fetch any updates to policies if needed.
+Selecting the **Info** button will open a new page in the Settings app that provides details about your MDM connection. You’ll be able to view your organization’s support information (if configured) on this page. You’ll also be able to start a sync session which forces your device to communicate to the MDM server and fetch any updates to policies if needed.
 
-Starting in Windows 10, version 1709, clicking the **Info** button will show a list of policies and line-of-business apps installed by your organization. Here is an example screenshot.
+Starting in Windows 10, version 1709, selecting the **Info** button will show a list of policies and line-of-business apps installed by your organization. Here is an example screenshot.
 
 ![work or school info](images/unifiedenrollment-rs1-35-b.png)
 
-> [NOTE]
+> [!NOTE]
 > Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
 
 ### Disconnect
 
-The **Disconnect** button can be found on all work connections. Generally, clicking the **Disconnect** button will remove the connection from the device. There are a few exceptions to this:
+The **Disconnect** button can be found on all work connections. Generally, selecting the **Disconnect** button will remove the connection from the device. There are a few exceptions to this:
 
 -   Devices that enforce the AllowManualMDMUnenrollment policy will not allow users to remove MDM enrollments. These connections must be removed by a server-initiated unenroll command.
 -   On mobile devices, you cannot disconnect from Azure AD. These connections can only be removed by wiping the device.
 
-> **Warning**  Disconnecting might result in the loss of data on the device.
+> [!WARNING]
+> Disconnecting might result in the loss of data on the device.
 
 ## Collecting diagnostic logs
 
 
-You can collect diagnostic logs around your work connections by going to **Settings** &gt; **Accounts** &gt; **Access work or school**, and clicking the **Export your management logs** link under **Related Settings**. After you click the link, click **Export** and follow the path displayed to retrieve your management log files.
+You can collect diagnostic logs around your work connections by going to **Settings** > **Accounts** > **Access work or school**, and then selecting the **Export your management logs** link under **Related Settings**. Next, select **Export**, and follow the path displayed to retrieve your management log files.
 
-Starting in Windows 10, version 1709, you can get the advanced diagnostic report by going to **Settings** &gt; **Accounts** &gt; **Access work or school**, and clicking the **Info** button. At the bottom of the Settings page you will see the button to create a report. Here is an example screenshot.
+Starting in Windows 10, version 1709, you can get the advanced diagnostic report by going to **Settings** > **Accounts** > **Access work or school**, and selecting the **Info** button. At the bottom of the Settings page, you will see the button to create a report, as shown here.
 
 ![collecting enrollment management log files](images/unifiedenrollment-rs1-37-c.png)
 

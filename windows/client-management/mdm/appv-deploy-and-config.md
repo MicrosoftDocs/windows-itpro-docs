@@ -1,6 +1,6 @@
 ---
 title: Deploy and configure App-V apps using MDM
-description: Deploy and configure App-V apps using MDM
+description: Configure, deploy, and manage Microsoft Application Virtualization (App-V) apps using Microsoft Endpoint Manager or App-V server.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -15,7 +15,7 @@ manager: dansimp
 
 ## Executive summary
 
-<p>Microsoft Application Virtualization (App-V) apps have typically been configured, deployed, and managed through on-premises group policies using Microsoft Endpoint Configuration Manager or App-V server. In Windows 10, version 1703, App-V apps can be configured, deployed, and managed using mobile device management (MDM), matching their on-premises counterparts.</p>
+<p>Microsoft Application Virtualization (App-V) apps have typically been configured, deployed, and managed through on-premises group policies using Microsoft Endpoint Manager or App-V server. In Windows 10, version 1703, App-V apps can be configured, deployed, and managed using mobile device management (MDM), matching their on-premises counterparts.</p>
 
 <p>MDM services can be used to publish App-V packages to clients running Windows 10, version 1703 (or later). All capabilities such as App-V enablement, configuration, and publishing can be completed using the EnterpriseAppVManagement CSP.</p>
 

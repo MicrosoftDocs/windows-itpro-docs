@@ -3,7 +3,7 @@ title: Tech Support Scams
 ms.reviewer: 
 description: Microsoft security software can protect you from tech support scams that claims to scan for malware or viruses and then shows you fake detections and warnings.
 keywords: security, malware, tech support, scam, protection, trick, spoof, fake, error messages, report, rogue security software, fake, antivirus, fake software, rogue, threats, fee, removal fee, upgrade, pay for removal, install full version, trial, lots of threats, scanner, scan, clean, computer, security, program, XP home security, fake microsoft, activate, activate scan, activate antivirus, warnings, pop-ups, security warnings, security pop-ups tech support scams, fake Microsoft error notification, fake virus alert, fake product expiration, fake Windows activation, scam web pages, scam phone numbers, telephone numbers, MMPC, WDSI, Microsoft Malware Protection Center, tech support scam numbers
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,9 +11,10 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
+ms.technology: mde
 ---
 # Tech support scams
 
@@ -45,13 +46,13 @@ It is also important to keep the following in mind:
 
 * Use [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) when browsing the internet. It blocks known support scam sites using Windows Defender SmartScreen (which is also used by Internet Explorer). Furthermore, Microsoft Edge can stop pop-up dialogue loops used by these sites.
 
-* Enable [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) in Windows 10. It detects and removes known support scam malware.
+* Enable [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) in Windows 10. It detects and removes known support scam malware.
 
 ## What to do if information has been given to a tech support person
 
 * Uninstall applications that scammers asked to be install. If access has been granted, consider resetting the device
 
-* Run a full scan with Windows Defender Antivirus to remove any malware. Apply all security updates as soon as they are available.
+* Run a full scan with Microsoft Defender Antivirus to remove any malware. Apply all security updates as soon as they are available.
 
 * Change passwords.
 
@@ -63,6 +64,6 @@ It is also important to keep the following in mind:
 
 Help Microsoft stop scammers, whether they claim to be from Microsoft or from another tech company, by reporting tech support scams:
 
-<strong>www.microsoft.com/reportascam</strong>
+<b>www.microsoft.com/reportascam</b>
 
 You can also report any **unsafe website** that you suspect is a phishing website or contains malicious content directly to Microsoft by filling out a [Report an unsafe site form](https://www.microsoft.com/wdsi/support/report-unsafe-site) or using built in web browser functionality.

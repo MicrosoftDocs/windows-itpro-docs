@@ -1,6 +1,6 @@
 ---
 title: Application Publishing and Client Interaction (Windows 10)
-description: Application publishing and client interaction.
+description: Learn technical information about common App-V Client operations and their integration with the local operating system.
 author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy

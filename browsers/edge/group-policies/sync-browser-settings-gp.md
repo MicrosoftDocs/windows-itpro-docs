@@ -6,17 +6,17 @@ manager: dansimp
 ms.author: dansimp
 author: dansimp
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.reviewer:
 ms.localizationpriority: medium
 ms.topic: reference
 ---
 
-# Sync browser settings  
+# Sync browser settings
 
 > [!NOTE]
 > You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
-By default, the “browser” group syncs automatically between the user’s devices, letting users make changes. The “browser” group uses the Sync your Settings option in Settings to sync information like history and favorites. You can configure Microsoft Edge to prevent the “browser” group from syncing and prevent users from turning on the _Sync your Settings_ toggle in Settings. If you want syncing turned off by default but not disabled, select the _Allow users to turn “browser” syncing_ option in the Do not sync browser policy. 
+By default, the “browser” group syncs automatically between the user’s devices, letting users make changes. The “browser” group uses the Sync your Settings option in Settings to sync information like history and favorites. You can configure Microsoft Edge to prevent the “browser” group from syncing and prevent users from turning on the _Sync your Settings_ toggle in Settings. If you want syncing turned off by default but not disabled, select the _Allow users to turn “browser” syncing_ option in the Do not sync browser policy.
 
 
 ## Relevant policies
@@ -38,7 +38,7 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 To verify the settings:
 1. In the upper-right corner of Microsoft Edge, click **More** \(**...**\).
 2. Click **Settings**.
-3. Under Account, see if the setting is toggled on or off.<p>![Verify configuration](../images/sync-settings.PNG)
+3. Under Account, see if the setting is toggled on or off.<p>![Verify configuration](../images/sync-settings.png)
 
 
 ## Do not sync browser settings

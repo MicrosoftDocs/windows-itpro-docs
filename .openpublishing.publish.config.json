@@ -66,22 +66,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "mdop",
-      "build_source_folder": "mdop",
-      "build_output_subfolder": "mdop",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "microsoft-edge",
       "build_source_folder": "browsers/edge",
       "build_output_subfolder": "microsoft-edge",
@@ -137,38 +121,6 @@
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "surface",
-      "build_source_folder": "devices/surface",
-      "build_output_subfolder": "surface",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "surface-hub",
-      "build_source_folder": "devices/surface-hub",
-      "build_output_subfolder": "surface-hub",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -438,7 +390,7 @@
     "elizapo@microsoft.com"
   ],
   "sync_notification_subscribers": [
-    "daniha@microsoft.com"
+    "dstrome@microsoft.com"
   ],
   "branches_to_filter": [
     ""
@@ -478,6 +430,9 @@
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
+  },
+  "docs_build_engine": {
+    "name": "docfx_v3"
   },
   "need_generate_pdf": false,
   "need_generate_intellisense": false

@@ -1,9 +1,9 @@
 ---
 title: Authorize reputable apps with the Intelligent Security Graph (ISG) (Windows 10)
 description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
-keywords: whitelisting, security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,15 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 03/10/2020
+ms.technology: mde
 ---
 
 # Authorize reputable apps with the Intelligent Security Graph (ISG) 
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016 and above
+- Windows 10
+- Windows Server 2016 and above
 
 Application execution control can be difficult to implement in enterprises that do not have processes to effectively control the deployment of applications centrally through an IT managed system. In such environments, users are empowered to acquire the applications they need for work, making accounting for all the applications that would need to be authorized for execution control a daunting task.  
 
@@ -90,7 +91,7 @@ This step is not required for WDAC policies deployed over MDM using the AppLocke
 
 ## Security considerations with the Intelligent Security Graph 
 
-Since the Microsoft Intelligent Security Graph is a heuristic-based mechanism, it does not provide the same security guarantees that explicit allow or deny rules do. It is best suited for deployment to systems where each user is configured as a standard user and there are other monitoring systems in place like Microsoft Defender Advanced Threat Protection to help provide optics into what users are doing. 
+Since the Microsoft Intelligent Security Graph is a heuristic-based mechanism, it does not provide the same security guarantees that explicit allow or deny rules do. It is best suited for deployment to systems where each user is configured as a standard user and there are other monitoring systems in place like Microsoft Defender for Endpoint to help provide optics into what users are doing. 
 
 Users with administrator privileges or malware running as an administrator user on the system may be able to circumvent the intent of WDAC when the Microsoft Intelligent Security Graph option is allowed by circumventing or corrupting the heuristics used to assign reputation to application executables. The Microsoft Intelligent Security Graph option uses the same heuristic tracking as managed installer and so for application installers that include an option to automatically run the application at the end of the installation process the heuristic may over-authorize.  
 

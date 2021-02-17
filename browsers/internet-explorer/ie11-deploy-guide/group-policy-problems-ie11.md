@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Group Policy problems with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 If you're having problems with Group Policy and Internet Explorer 11, or if you're looking for high-level information about the concepts and techniques used to troubleshoot Group Policy, as well as links to detailed reference topics, procedures, and troubleshooting scenario guides, see [Group Policy Analysis and Troubleshooting Overview](https://go.microsoft.com/fwlink/p/?LinkId=279872).
 
 ## Group Policy Object-related Log Files

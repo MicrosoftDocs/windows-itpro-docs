@@ -1,10 +1,10 @@
 ---
 title: Basic Firewall Policy Design (Windows 10)
-description: Basic Firewall Policy Design
+description: Protect the devices in your organization from unwanted network traffic that gets through the perimeter defenses by using basic firewall policy design.
 ms.assetid: 6f7af99e-6850-4522-b7f5-db98e6941418
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Basic Firewall Policy Design

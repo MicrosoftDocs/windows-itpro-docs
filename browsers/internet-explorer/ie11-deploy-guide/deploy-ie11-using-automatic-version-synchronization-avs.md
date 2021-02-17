@@ -15,6 +15,9 @@ ms.date: 07/27/2017
 ---
 
 # Deploy Internet Explorer 11 using Automatic Version Synchronization (AVS)
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You can deploy Internet Explorer 11 to your users' computers by using your custom browser packages and Automatic Version Synchronization (AVS).
 
 ## What is Automatic Version Synchronization?

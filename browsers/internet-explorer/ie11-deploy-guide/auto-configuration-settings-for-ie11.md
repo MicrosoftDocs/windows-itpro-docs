@@ -7,7 +7,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 90308d59-45b9-4639-ab1b-497e5ba19023
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Auto configuration settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
@@ -16,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Auto configuration settings for Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Automatic configuration lets you apply custom branding and graphics to your internal Internet Explorer installations, running on Windows 8.1 or Windows Server 2012 R2. For more information about adding custom branding and graphics to your IE package, see [Customize the toolbar button and Favorites List icons using IEAK 11](../ie11-ieak/guidelines-toolbar-and-favorites-list-ieak11.md).<p>**Important**<br>You'll only see and be able to use the **IE Customization Wizard 11 - Automatic Configuration** page if you're creating an internal IE installation package. For more information about the **IE Customization Wizard 11 - Automatic Configuration** page, see [Use the Automatic Configuration page in the IEAK 11 Wizard](../ie11-ieak/auto-config-ieak11-wizard.md).
 
 ## Adding the automatic configuration registry key

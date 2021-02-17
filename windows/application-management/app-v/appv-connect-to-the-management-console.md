@@ -1,7 +1,7 @@
 ---
 title: How to connect to the Management Console (Windows 10)
-description: How to Connect to the App-V Management Console.
-author: lomayor
+description: In this article, learn the procedure for connecting to the App-V Management Console through your web browser.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

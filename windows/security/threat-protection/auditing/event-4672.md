@@ -2,7 +2,7 @@
 title: 4672(S) Special privileges assigned to new logon. (Windows 10)
 description: Describes security event 4672(S) Special privileges assigned to new logon.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 12/20/2018
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4672(S): Special privileges assigned to new logon.
@@ -22,7 +23,7 @@ ms.author: dansimp
 
 <img src="images/event-4672.png" alt="Event 4672 illustration" width="449" height="503" hspace="10" align="left" />
 </br>
-<strong><em>Subcategory:</em></strong>&nbsp;<a href="audit-special-logon.md" data-raw-source="[Audit Special Logon](audit-special-logon.md)">Audit Special Logon</a>
+<b><em>Subcategory:</em></b>&nbsp;<a href="audit-special-logon.md" data-raw-source="[Audit Special Logon](audit-special-logon.md)">Audit Special Logon</a>
 
 ***Event Description:***
 

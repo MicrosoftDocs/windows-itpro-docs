@@ -1,10 +1,10 @@
 ---
 title: Create a WDAC policy for fully-managed devices (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
-keywords: whitelisting, security, malware
+keywords: security, malware
 ms.topic: conceptual
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,15 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 11/20/2019
+ms.technology: mde
 ---
 
 # Create a WDAC policy for fully-managed devices
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016 and above
+- Windows 10
+- Windows Server 2016 and above
 
 This section outlines the process to create a WDAC policy for **fully-managed devices** within an organization. The key difference between this scenario and [lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md) is that all software deployed to a fully-managed device is managed by IT and users of the device cannot install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Endpoint Manager (MEM). Additionally, users on fully-managed devices should ideally run as standard user and only authorized IT pros have administrative access.
 

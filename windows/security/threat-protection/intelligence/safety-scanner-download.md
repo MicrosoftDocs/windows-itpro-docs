@@ -3,7 +3,7 @@ title: Microsoft Safety Scanner Download
 ms.reviewer: 
 description: Get the Microsoft Safety Scanner tool to find and remove malware from Windows computers.
 keywords: security, malware
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,9 +11,10 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
+ms.technology: mde
 ---
 # Microsoft Safety Scanner
 
@@ -34,7 +35,7 @@ Microsoft Safety Scanner is a scan tool designed to find and remove malware from
 
 - Safety scanner is a portable executable and does not appear in the Windows Start menu or as an icon on the desktop. Note where you saved this download.
 
-- This tool does not replace your antimalware product. For real-time protection with automatic updates, use [Windows Defender Antivirus on Windows 10 and Windows 8](https://www.microsoft.com/windows/comprehensive-security) or [Microsoft Security Essentials on Windows 7](https://support.microsoft.com/help/14210/security-essentials-download). These antimalware products also provide powerful malware removal capabilities. If you are having difficulties removing malware with these products, you can refer to our help on [removing difficult threats](https://www.microsoft.com/wdsi/help/troubleshooting-infection).
+- This tool does not replace your antimalware product. For real-time protection with automatic updates, use [Microsoft Defender Antivirus on Windows 10 and Windows 8](https://www.microsoft.com/windows/comprehensive-security) or [Microsoft Security Essentials on Windows 7](https://support.microsoft.com/help/14210/security-essentials-download). These antimalware products also provide powerful malware removal capabilities. If you are having difficulties removing malware with these products, you can refer to our help on [removing difficult threats](https://www.microsoft.com/wdsi/help/troubleshooting-infection).
 
 ## System requirements
 
@@ -53,7 +54,7 @@ For more information about the Safety Scanner, see the support article on [how t
 ## Related resources
 
 - [Troubleshooting Safety Scanner](https://support.microsoft.com/help/2520970/how-to-troubleshoot-an-error-when-you-run-the-microsoft-safety-scanner)
-- [Windows Defender Antivirus](https://www.microsoft.com/windows/comprehensive-security)
+- [Microsoft Defender Antivirus](https://www.microsoft.com/windows/comprehensive-security)
 - [Microsoft Security Essentials](https://support.microsoft.com/help/14210/security-essentials-download)
 - [Removing difficult threats](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware)
 - [Submit file for malware analysis](https://www.microsoft.com/wdsi/filesubmission)

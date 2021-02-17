@@ -2,7 +2,7 @@
 title: 4907(S) Auditing settings on object were changed. (Windows 10)
 description: Describes security event 4907(S) Auditing settings on object were changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4907(S): Auditing settings on object were changed.
@@ -285,5 +286,5 @@ For 4907(S): Auditing settings on object were changed.
 
 - If you have critical file or registry objects and you need to monitor all modifications (especially changes in SACL), monitor for specific “**Object\\Object Name”**.
 
-- If you have high-value computers for which you need to monitor all changes for all or specific file or registry objects, monitor for all [4907](event-4907.md) events on these computers<strong>.</strong>
+- If you have high-value computers for which you need to monitor all changes for all or specific file or registry objects, monitor for all [4907](event-4907.md) events on these computers<b>.</b>
 

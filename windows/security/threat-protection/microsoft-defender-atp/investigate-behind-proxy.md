@@ -1,10 +1,10 @@
 ---
 title: Investigate connection events that occur behind forward proxies
-description: Investigate connection events that occur behind forward proxies
+description: Learn how to use advanced HTTP level monitoring through network protection in Microsoft Defender ATP, which surfaces a real target, instead of a proxy.
 keywords: proxy, network protection, forward proxy, network events, audit, block, domain names, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,26 +13,31 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: article
+ms.technology: mde
 ---
 
 # Investigate connection events that occur behind forward proxies
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
-
-Microsoft Defender ATP supports network connection monitoring from different levels of the network stack. A challenging case is when the network uses a forward proxy as a gateway to the Internet.
+Defender for Endpoint supports network connection monitoring from different levels of the network stack. A challenging case is when the network uses a forward proxy as a gateway to the Internet.
 
 The proxy acts as if it was the target endpoint.  In these cases, simple network connection monitors will audit the connections with the proxy which is correct but has lower investigation value. 
 
-Microsoft Defender ATP supports advanced HTTP level monitoring through network protection. When turned on, a new type of event is surfaced which exposes the real target domain names.
+Defender for Endpoint supports advanced HTTP level monitoring through network protection. When turned on, a new type of event is surfaced which exposes the real target domain names.
 
 ## Use network protection to monitor network connection behind a firewall
-Monitoring network connection behind a forward proxy is possible due to additional network events that originate from network protection. To see them on a machine timeline, turn network protection on (at the minimum in audit mode). 
+Monitoring network connection behind a forward proxy is possible due to additional network events that originate from network protection. To see them on a device timeline, turn network protection on (at the minimum in audit mode). 
 
 Network protection can be controlled using the following modes:
 
@@ -47,9 +52,9 @@ If you do not configure it, network blocking will be turned off by default.
 For more information, see [Enable network protection](enable-network-protection.md).
 
 ## Investigation impact
-When network protection is turned on, you'll see that on a machine's timeline the IP address will keep representing the proxy, while the real target address shows up.
+When network protection is turned on, you'll see that on a device's timeline the IP address will keep representing the proxy, while the real target address shows up.
 
-![Image of network events on machine's timeline](images/atp-proxy-investigation.png)
+![Image of network events on device's timeline](images/atp-proxy-investigation.png)
 
 Additional events triggered by the network protection layer are now available to surface the real domain names even behind a proxy.
 

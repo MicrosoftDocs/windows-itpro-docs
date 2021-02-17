@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10, version 1703
-description: New and updated IT pro content about new features in Windows 10, version 1703 (also known as the Creators Updated).
+description: New and updated features in Windows 10, version 1703 (also known as the Creators Updated).
 keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,11 +14,11 @@ ms.author: greglin
 ms.topic: article
 ---
 
-# What's new in Windows 10, version 1703 IT pro content
+# What's new in Windows 10, version 1703 for IT Pros
 
 Below is a list of some of what's new in Information Technology (IT) pro features in Windows 10, version 1703 (also known as the Creators Update).
 
-For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features). For info about previous versions of Windows 10, see [What's New in Windows 10](index.md). Also see this blog post: [What’s new for IT pros in the Windows 10 Creators Update](https://blogs.technet.microsoft.com/windowsitpro/2017/04/05/whats-new-for-it-pros-in-the-windows-10-creators-update/).
+For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features). For info about previous versions of Windows 10, see [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/). Also see this blog post: [What’s new for IT pros in the Windows 10 Creators Update](https://blogs.technet.microsoft.com/windowsitpro/2017/04/05/whats-new-for-it-pros-in-the-windows-10-creators-update/).
 
 >[!NOTE]
 >Windows 10, version 1703 contains all fixes included in previous cumulative updates to Windows 10, version 1607. For info about each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info). For a list of removed features, see [Features that are removed or deprecated in Windows 10 Creators Update](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update).
@@ -96,9 +96,9 @@ For details, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
 
 ## Security
 
-### Windows Defender Advanced Threat Protection
+### Microsoft Defender for Endpoint
 
-New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10, version 1703 include:
+New features in Microsoft Defender for Endpoint for Windows 10, version 1703 include:
 - **Detection**<br>
   Enhancements to the detection capabilities include:
   - [Use the threat intelligence API to create custom alerts](/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
@@ -107,12 +107,12 @@ New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10
   - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed
 
 - **Investigation**<br>
-  Enterprise customers can now take advantage of the entire Windows security stack with Windows Defender Antivirus detections and Device Guard blocks being surfaced in the Windows Defender ATP portal. Other capabilities have been added to help you gain a holistic view on investigations.
+  Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus detections and Device Guard blocks being surfaced in the Microsoft Defender for Endpoint portal. Other capabilities have been added to help you gain a holistic view on investigations.
 
    Other investigation enhancements include:
    - [Investigate a user account](/windows/threat-protection/windows-defender-atp/investigate-user-windows-defender-advanced-threat-protection) - Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.
    - [Alert process tree](/windows/threat-protection/windows-defender-atp/investigate-alerts-windows-defender-advanced-threat-protection#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
-   - [Pull alerts using REST API](/windows/threat-protection/windows-defender-atp/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection) - Use REST API to pull alerts from Windows Defender ATP.
+   - [Pull alerts using REST API](/windows/threat-protection/windows-defender-atp/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection) - Use REST API to pull alerts from Microsoft Defender for Endpoint.
 
 - **Response**<br>
   When detecting an attack, security response teams can now take immediate action to contain a breach:
@@ -121,36 +121,36 @@ New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10
 
 
 - **Other features**
-  - [Check sensor health state](/windows/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix known issues.
+  - [Check sensor health state](/windows/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection) - Check an endpoint's ability to provide sensor data and communicate with the Microsoft Defender for Endpoint service and fix known issues.
 
-You can read more about ransomware mitigations and detection capability in Windows Defender Advanced Threat Protection in the blog: [Averting ransomware epidemics in corporate networks with Windows Defender ATP](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/).
+You can read more about ransomware mitigations and detection capability in Microsoft Defender for Endpoint in the blog: [Averting ransomware epidemics in corporate networks with Microsoft Defender for Endpoint](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/).
 
-Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and the new capabilities in Windows 10, version 1703 see [Windows Defender ATP for Windows 10 Creators Update](https://technet.microsoft.com/windows/mt782787).
+Get a quick, but in-depth overview of Microsoft Defender for Endpoint for Windows 10 and the new capabilities in Windows 10, version 1703 see [Microsoft Defender for Endpoint for Windows 10 Creators Update](https://technet.microsoft.com/windows/mt782787).
 
-### Windows Defender Antivirus
-Windows Defender is now called Windows Defender Antivirus, and we've [increased the breadth of the documentation library for enterprise security admins](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
+### Microsoft Defender Antivirus
+Windows Defender is now called Microsoft Defender Antivirus, and we've [increased the breadth of the documentation library for enterprise security admins](/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
 
 The new library includes information on:
-- [Deploying and enabling AV protection](/windows/threat-protection/windows-defender-antivirus/deploy-windows-defender-antivirus)
-- [Managing updates](/windows/threat-protection/windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus)
-- [Reporting](/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus)
-- [Configuring features](/windows/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)
-- [Troubleshooting](/windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)
+- [Deploying and enabling AV protection](/windows/threat-protection/microsoft-defender-antivirus/deploy-microsoft-defender-antivirus)
+- [Managing updates](/windows/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)
+- [Reporting](/windows/threat-protection/microsoft-defender-antivirus/report-monitor-microsoft-defender-antivirus)
+- [Configuring features](/windows/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features)
+- [Troubleshooting](/windows/threat-protection/microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus)
 
 Some of the highlights of the new library include:
-- [Evaluation guide for Windows Defender AV](/windows/threat-protection/windows-defender-antivirus//evaluate-windows-defender-antivirus)
-- [Deployment guide for Windows Defender AV in a virtual desktop infrastructure environment](/windows/threat-protection/windows-defender-antivirus/deployment-vdi-windows-defender-antivirus)
+- [Evaluation guide for Microsoft Defender AV](/windows/threat-protection/microsoft-defender-antivirus//evaluate-microsoft-defender-antivirus)
+- [Deployment guide for Microsoft Defender AV in a virtual desktop infrastructure environment](/windows/threat-protection/microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus)
 
-New features for Windows Defender AV in Windows 10, version 1703 include:
+New features for Microsoft Defender AV in Windows 10, version 1703 include:
 
-- [Updates to how the Block at First Sight feature can be configured](/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus)
-- [The ability to specify the level of cloud-protection](/windows/threat-protection/windows-defender-antivirus/specify-cloud-protection-level-windows-defender-antivirus)
-- [Windows Defender Antivirus protection in the Windows Defender Security Center app](/windows/threat-protection/windows-defender-antivirus/windows-defender-security-center-antivirus)
+- [Updates to how the Block at First Sight feature can be configured](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [The ability to specify the level of cloud-protection](/windows/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
+- [Microsoft Defender Antivirus protection in the Windows Defender Security Center app](/windows/threat-protection/microsoft-defender-antivirus/windows-defender-security-center-antivirus)
 
 
-In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated behavior monitoring and always-on real-time protection](/windows/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
+In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated behavior monitoring and always-on real-time protection](/windows/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
-You can read more about ransomware mitigations and detection capability in Windows Defender AV in the [Ransomware Protection in Windows 10 Anniversary Update whitepaper (PDF)](http://wincom.blob.core.windows.net/documents/Ransomware_protection_in_Windows_10_Anniversary_Update.pdf) and at the [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/).
+You can read more about ransomware mitigations and detection capability in Microsoft Defender AV in the [ransomware information topic](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) and at the [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/).
 
 ### Device Guard and Credential Guard
 
@@ -186,7 +186,7 @@ You can also now collect your audit event logs by using the Reporting configurat
 The pause feature has been changed, and now requires a start date to set up. Users are now able to pause through **Settings > Update & security > Windows Update > Advanced options** in case a policy has not been configured. We have also increased the pause limit on quality updates to 35 days. You can find more information on pause in [Pause Feature Updates](/windows/deployment/update/waas-configure-wufb#pause-feature-updates) and [Pause Quality Updates](/windows/deployment/update/waas-configure-wufb#pause-quality-updates).
 
 
-Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](/windows/deployment/update/waas-configure-wufb#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-quality-updates) for details.
+Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferral periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](/windows/deployment/update/waas-configure-wufb#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-quality-updates) for details.
 
 
 ### Windows Insider for Business
@@ -252,13 +252,13 @@ For more info, see [Implement server-side support for mobile application managem
 In Windows 10, version 1703, we continue our work to improve the diagnostic experience for modern management. By introducing auto-logging for mobile devices, Windows will automatically collect logs when encountering an error in MDM, eliminating the need to have always-on logging for memory-constrained devices. Additionally, we are introducing [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) as an additional tool to help Support personnel quickly reduce issues to their root cause, while saving time and cost.
 
 ### Application Virtualization for Windows (App-V)
-Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10, version 1703 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically cleanup your unpublished packages after a device restart.
+Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10, version 1703 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically clean up your unpublished packages after a device restart.
 
 For more info, see the following topics:
 - [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-provision-a-vm)
 - [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-batch-sequencing)
 - [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-batch-updating)
-- [Automatically cleanup unpublished packages on the App-V client](/windows/application-management/app-v/appv-auto-clean-unpublished-packages)
+- [Automatically clean up unpublished packages on the App-V client](/windows/application-management/app-v/appv-auto-clean-unpublished-packages)
 
 ### Windows diagnostic data
 
@@ -294,7 +294,7 @@ Windows 10 Mobile, version 1703 also includes the following enhancements:
 - OTC update tool
 - Continuum display management
    - Individually turn off the monitor or phone screen when not in use
-   - Indiviudally adjust screen time-out settings
+   - individually adjust screen time-out settings
 - Continuum docking solutions
    - Set Ethernet port properties
    - Set proxy properties for the Ethernet port

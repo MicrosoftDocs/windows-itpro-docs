@@ -1,10 +1,10 @@
 ---
 title: Planning Domain Isolation Zones (Windows 10)
-description: Planning Domain Isolation Zones
+description: Learn how to use information you have gathered to make decisions about isolation zones for your environment in Windows Defender Firewall with Advanced Security.
 ms.assetid: 70bc7c52-91f0-4a0d-a64a-69d3ea1c6d05
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Planning Domain Isolation Zones

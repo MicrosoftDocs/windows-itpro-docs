@@ -2,7 +2,7 @@
 title: Set up Delivery Optimization
 ms.reviewer: 
 manager: laurawi
-description: Delivery Optimization is a new peer-to-peer distribution method in Windows 10
+description: In this article, learn how to set up Delivery Optimization, a new peer-to-peer distribution method in Windows 10.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.author: jaimeo
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set up Delivery Optimization for Windows 10 updates
@@ -24,7 +25,7 @@ ms.topic: article
 
 ## Recommended Delivery Optimization settings
 
-Delivery Optimization offers a great many settings to fine-tune its behavior (see [Delivery Optimization reference](waas-delivery-optimization-reference.md) for a comprehensive list), but for the most efficient performance, there are just a few key parameters that will have the greatest impact if particular situations exist in your deployment:
+Delivery Optimization offers a great many settings to fine-tune its behavior (see [Delivery Optimization reference](waas-delivery-optimization-reference.md) for a comprehensive list), but for the most efficient performance, there are just a few key parameters that will have the greatest impact if particular situations exist in your deployment. If you just need an overview of Delivery Optimization, see [Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md).
 
 - Does your topology include multiple breakouts to the internet (i.e., a "hybrid WAN") or are there only a few connections to the internet, so that all requests appear to come from a single external IP address (a "hub and spoke" topology)?
 - If you use boundary groups in your topology, how many devices are present in a given group?
@@ -34,6 +35,9 @@ Delivery Optimization offers a great many settings to fine-tune its behavior (se
 
 >[!NOTE]
 >These scenarios (and the recommended settings for each) are not mutually exclusive. It's possible that your deployment might involve more than one of these scenarios, in which case you can employ the related settings in any combination as needed. In all cases, however, "download mode" is the most important one to set.
+
+> [!NOTE]
+> Microsoft Intune includes a profile to make it easier to set Delivery Optimization policies. For details, see [Delivery Optimization settings for Intune](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings).
 
 Quick-reference table:
 
@@ -47,7 +51,7 @@ Quick-reference table:
 
 ### Hybrid WAN scenario
 
-For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group is the authenticated domain or Active Directory site. If your domain-based group is too wide, or your Active Directory sites aren’t aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the GroupIDSrc parameter.
+For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group is the authenticated domain or Active Directory site. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the GroupIDSrc parameter.
 
 
 
@@ -65,6 +69,9 @@ The default download mode setting is **1**; this means all devices breaking out 
 To do this in Group Policy go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DODownloadMode** to **2**.
+
+> [!NOTE]
+> For more about using Delivery Optimization with Configuration Manager boundary groups, see [Delivery Optmization](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization).
 
 
 ### Large number of mobile devices
@@ -89,7 +96,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 In a lab situation, you typically have a large number of devices that are plugged in and have a lot of free disk space. By increasing the content expiration interval, you can take advantage of these devices, using them as excellent upload sources in order to upload much more content over a longer period.
 
-To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Max Cache Age** to **6048000** (7 days) or more (up to 30 days).
+To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Max Cache Age** to **604800** (7 days) or more (up to 30 days).
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set DOMaxCacheAge to 7 or more (up to 30 days).
 
@@ -97,7 +104,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 
 ## Monitor Delivery Optimization
-[//]: # (How to tell if it’s working? What values are reasonable; which are not? If not, which way to adjust and how? -- check PercentPeerCaching for files > minimum >= 50%)
+[//]: # (How to tell if it's working? What values are reasonable; which are not? If not, which way to adjust and how? -- check PercentPeerCaching for files > minimum >= 50%)
 
 ### Windows PowerShell cmdlets
 
@@ -122,6 +129,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 | PredefinedCallerApplication | Indicates the last caller that initiated a request for the file. |
 | ExpireOn | The target expiration date and time for the file. |
 | Pinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptmizationStatus`). |
+
  
 `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 
@@ -139,7 +147,7 @@ Using the `-Verbose` option returns additional information:
 - Bytes from CDN (the number of bytes received over HTTP)
 - Average number of peer connections per download 
 
-Starting in Window 10, version 1903, `get-DeliveryOptimizationPerfSnap` has a new option `-CacheSummary` which provides a summary of the cache status.
+**Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
 
 Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth` returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
 
@@ -166,6 +174,33 @@ You can now "pin" files to keep them persistent in the cache. You can only do th
 
 #### Work with Delivery Optimization logs
 
+**Starting in Windows 10, version 2004:**
+
+- `Enable-DeliveryOptimizationVerboseLogs`
+- `Disable-DeliveryOptimizationVerboseLogs`
+
+- `Get-DeliveryOptimizationLogAnalysis [ETL Logfile path] [-ListConnections]`
+
+With no options, this cmdlet returns these data:
+
+- total number of files
+- number of foreground files
+- minimum file size for it to be cached
+- number of eligible files
+- number of files with peers
+- number of peering files [how different from the above?]
+- overall efficiency
+- efficiency in the peered files
+
+Using the `-ListConnections` option returns these details about peers:
+
+- destination IP address
+- peer type
+- status code
+- bytes sent
+- bytes received
+- file ID
+
 **Starting in Windows 10, version 1803:**
 
 `Get-DeliveryOptimizationLog [-Path <etl file path, supports wildcards>] [-Flush]`
@@ -184,7 +219,7 @@ Log entries are written to the PowerShell pipeline as objects. To dump logs to a
 
 Update Compliance provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
 
-![DO status](images/UC_workspace_DO_status.png)
+[ ![DO status](images/UC_workspace_DO_status.png) ](images/UC_workspace_DO_status.png#lightbox)
 
 For details, see [Delivery Optimization in Update Compliance](update-compliance-delivery-optimization.md).
 

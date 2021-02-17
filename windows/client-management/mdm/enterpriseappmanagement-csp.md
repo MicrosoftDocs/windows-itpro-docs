@@ -1,6 +1,6 @@
 ---
 title: EnterpriseAppManagement CSP
-description: EnterpriseAppManagement CSP
+description: Handle enterprise application management tasks using EnterpriseAppManagement configuration service provider (CSP).
 ms.assetid: 698b8bf4-652e-474b-97e4-381031357623
 ms.reviewer: 
 manager: dansimp

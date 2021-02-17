@@ -5,7 +5,7 @@ description: Describes how to configure Microsoft Defender ATP for static proxy 
 keywords: microsoft, defender, atp, linux, installation, proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,23 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# Configure Microsoft Defender ATP for Linux for static proxy discovery
+# Configure Microsoft Defender for Endpoint for Linux for static proxy discovery
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft Defender ATP can discover a proxy server using the ```HTTPS_PROXY``` environment variable. This setting must be configured **both** at installation time and after the product has been installed.
 
@@ -45,10 +53,10 @@ During installation, the ```HTTPS_PROXY``` environment variable must be passed t
     > [!CAUTION]
     > Note that above two methods could define the proxy to use for other applications on your system. Use this method with caution, or only if this is meant to be a generally global configuration.
   
-- The `HTTPS_PROXY` variable is prepended to the installation or uninstallation commands. For example, with the APT package manager, prepend the variable as follows when installing Microsoft Defender ATP: 
+- The `HTTPS_PROXY` variable is prepended to the installation or uninstallation commands. For example, with the APT package manager, prepend the variable as follows when installing Microsoft Defender for Endpoint: 
 
     ```bash  
-    $ HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
+    HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
     ```
 
     > [!NOTE]
@@ -56,11 +64,11 @@ During installation, the ```HTTPS_PROXY``` environment variable must be passed t
 
 The `HTTPS_PROXY` environment variable may similarly be defined during uninstallation.
 
-Note that installation and uninstallation will not necessarily fail if a proxy is required but not configured. However, telemetry will not be submitted, and the operation could take significantly longer due to network timeouts.
+Note that installation and uninstallation will not necessarily fail if a proxy is required but not configured. However, telemetry will not be submitted, and the operation could take much longer due to network timeouts.
 
 ## Post installation configuration
   
-After installation, the `HTTPS_PROXY` environment variable must be defined in the Microsoft Defender ATP service file. To do this, open `/lib/systemd/system/mdatp.service` in a text editor while running as the root user. You can then propagate the variable to the service in one of two ways:
+After installation, the `HTTPS_PROXY` environment variable must be defined in the Defender for Endpoint service file. To do this, open `/lib/systemd/system/mdatp.service` in a text editor while running as the root user. You can then propagate the variable to the service in one of two ways:
 
 - Uncomment the line `#Environment="HTTPS_PROXY=http://address:port"` and specify your static proxy address.
 
@@ -73,5 +81,5 @@ After installation, the `HTTPS_PROXY` environment variable must be defined in th
 After modifying the `mdatp.service` file, save and close it. Restart the service so the changes can be applied. In Ubuntu, this involves two commands:  
 
 ```bash
-$ systemctl daemon-reload; systemctl restart mdatp
+systemctl daemon-reload; systemctl restart mdatp
 ```

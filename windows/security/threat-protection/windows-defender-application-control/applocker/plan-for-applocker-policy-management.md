@@ -4,7 +4,7 @@ description: This topic for describes the decisions you need to make to establis
 ms.assetid: dccc196f-6ae0-4ae4-853a-a3312b18751b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Plan for AppLocker policy management
@@ -277,7 +278,7 @@ The following table is an example of what to consider and record.
 </tbody>
 </table>
  
-<strong>Policy maintenance policy</strong>
+<b>Policy maintenance policy</b>
 When applications are identified and policies are created for application control, then you can begin documenting how you intend to update those policies.
 The following table is an example of what to consider and record.
 <table>

@@ -1,9 +1,9 @@
 ---
 title: Common Microsoft Defender ATP API errors
 description: List of common Microsoft Defender ATP API errors with descriptions.
-keywords: apis, mdatp api, errors, troubleshooting 
+keywords: apis, mdatp api, errors, troubleshooting
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,21 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Common REST API error codes
 
-* The error codes listed in the following table may be returned by an operation on any of Microsoft Defender ATP APIs.
-* Note that in addition to the error code, every error response contains an error message which can help resolving the problem.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+
+* The table below shows the error codes that may be returned by an operation from the Microsoft Defender for Endpoint APIs.
+* In addition to the error code, every error response contains an error message that can help describe the problem.
 * Note that the message is a free text that can be changed.
-* At the bottom of the page you can find response examples.
+* At the bottom of the page, you can find response examples.
 
 Error code |HTTP status code |Message 
 :---|:---|:---
@@ -37,19 +42,20 @@ MaximumBatchSizeExceeded | BadRequest (400) | Maximum batch size exceeded. Recei
 MissingRequiredParameter | BadRequest (400) | Parameter {the missing parameter} is missing.
 OsPlatformNotSupported | BadRequest (400) | OS Platform {the client OS Platform} is not supported for this action.
 ClientVersionNotSupported | BadRequest (400) | {The requested action} is supported on client version {supported client version} and above.
-Unauthorized | Unauthorized (401) | Unauthorized (usually invalid or expired authorization header).
+Unauthorized | Unauthorized (401) | Unauthorized (invalid or expired authorization header).
 Forbidden | Forbidden (403) | Forbidden (valid token but insufficient permission for the action).
 DisabledFeature | Forbidden (403) | Tenant feature is not enabled.
 DisallowedOperation | Forbidden (403) | {the disallowed operation and the reason}.
 NotFound | Not Found (404) | General Not Found error message.
 ResourceNotFound | Not Found (404) | Resource {the requested resource} was not found.
-InternalServerError | Internal Server Error (500) | (No error message, try retry the operation or contact us if it does not resolved)
+InternalServerError | Internal Server Error (500) | (No error message, retry the operation)
+TooManyRequests | Too Many Requests (429) | Response will represent reaching quota limit either by number of requests or by CPU.
 
-## Body parameters are case sensitive
+## Body parameters are case-sensitive
 
-The submitted body parameters are currently case sensitive.
+The submitted body parameters are currently case-sensitive.
 <br>If you experience an **InvalidRequestBody** or **MissingRequiredParameter** errors, it might be caused from a wrong parameter capital or lower-case letter.
-<br>It is recommended to go to the requested Api documentation page and check that the submitted parameters match the relevant example.
+<br>Review the API documentation page and check that the submitted parameters match the relevant example.
 
 ## Correlation request ID
 

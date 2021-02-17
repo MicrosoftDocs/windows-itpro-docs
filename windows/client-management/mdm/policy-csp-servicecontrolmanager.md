@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ServiceControlManager
-description: Policy CSP - ServiceControlManager
+description: Learn how the Policy CSP - ServiceControlManager setting enables process mitigation options on svchost.exe processes.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -78,6 +78,9 @@ If you enable this policy setting, built-in system services hosted in svchost.ex
 
 This includes a policy requiring all binaries loaded in these processes to be signed by Microsoft, as well as a policy disallowing dynamically-generated code.  
 
+> [!IMPORTANT]
+> Enabling this policy could cause compatibility issues with third-party software that uses svchost.exe processes (for example, third-party antivirus software).
+
 If you disable or do not configure this policy setting, the stricter security settings will not be applied.
 
 <!--/Description-->
@@ -112,12 +115,13 @@ Supported values:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

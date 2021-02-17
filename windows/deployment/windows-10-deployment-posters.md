@@ -1,6 +1,6 @@
 ---
 title: Windows 10 deployment process posters
-description: View and download Windows 10 deployment process flows for Microsoft Endpoint Configuration Manager and Windows Autopilot.
+description: View and download Windows 10 deployment process flows for Microsoft Endpoint Manager and Windows Autopilot.
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
@@ -12,7 +12,6 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 

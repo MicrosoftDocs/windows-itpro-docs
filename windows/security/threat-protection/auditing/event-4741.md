@@ -1,8 +1,8 @@
 ---
 title: 4741(S) A computer account was created. (Windows 10)
-description: Describes security event 4741(S) A computer account was created.
+description: Describes security event 4741(S) A computer account was created. This event is generated every time a computer object is created.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4741(S): A computer account was created.
@@ -242,7 +243,7 @@ So this UAC flags value decodes to: LOCKOUT and SCRIPT
 
 - **DNS Host Name** \[Type = UnicodeString\]: name of computer account as registered in DNS. The value of **dNSHostName** attribute of new computer object. For manually created computer account objects this field has value “**-**“.
 
-- **Service Principal Names** \[Type = UnicodeString\]**:** The list of SPNs, registered for computer account. For new computer accounts it will typically contain HOST SPNs and RestrictedKrbHost SPNs. The value of **servicePrincipalName** attribute of new computer object. For manually created computer objects it is typically equals “**-**“. This is an example of **Service Principal Names** field for new domain joined workstation<strong>:</strong>
+- **Service Principal Names** \[Type = UnicodeString\]**:** The list of SPNs, registered for computer account. For new computer accounts it will typically contain HOST SPNs and RestrictedKrbHost SPNs. The value of **servicePrincipalName** attribute of new computer object. For manually created computer objects it is typically equals “**-**“. This is an example of **Service Principal Names** field for new domain joined workstation<b>:</b>
 
   HOST/Win81.contoso.local
 

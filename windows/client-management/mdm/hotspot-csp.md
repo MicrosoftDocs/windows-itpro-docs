@@ -1,6 +1,6 @@
 ---
 title: HotSpot CSP
-description: HotSpot CSP
+description: Learn how HotSpot configuration service provider (CSP) is used to configure and enable Internet sharing on a device.
 ms.assetid: ec49dec1-fa79-420a-a9a7-e86668b3eebf
 ms.reviewer: 
 manager: dansimp

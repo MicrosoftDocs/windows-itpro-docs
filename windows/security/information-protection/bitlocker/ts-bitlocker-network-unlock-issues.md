@@ -13,7 +13,9 @@ audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
 ms.date: 10/7/2019
+ms.custom: bitlocker
 ---
+
 # BitLocker Network Unlock: known issues
 
 By using the BitLocker Network Unlock feature, you can manage computers remotely without having to enter a BitLocker PIN when each computer starts up. To do this, You have to configure your environment to meet the following requirements:

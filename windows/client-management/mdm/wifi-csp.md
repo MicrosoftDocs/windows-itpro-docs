@@ -1,6 +1,6 @@
 ---
 title: WiFi CSP
-description: WiFi CSP
+description: The WiFi configuration service provider (CSP) provides the functionality to add or delete Wi-Fi networks on a Windows device. 
 ms.assetid: f927cb5f-9555-4029-838b-03fb68937f06
 ms.reviewer: 
 manager: dansimp
@@ -102,7 +102,7 @@ Added in Windows 10, version 1607. Optional. When set to true it enables Web Pr
 Value type is bool.
 
 <a href="" id="wificost"></a>**WiFiCost**
-Added in Windows 10, version 1809. Optional. This policy sets the cost of WLAN connection for the Wi-Fi profile. Default behaviour: Unrestricted.
+Added in Windows 10, version 1809. Optional. This policy sets the cost of WLAN connection for the Wi-Fi profile. Default behavior: Unrestricted.
 
 Supported values:
 

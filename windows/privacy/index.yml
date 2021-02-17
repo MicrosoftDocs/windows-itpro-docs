@@ -1,156 +1,182 @@
-### YamlMime:YamlDocument
-
-documentType: LandingData
+### YamlMime:Hub
 
 title: Windows Privacy
+summary: Get ready for General Data Protection Regulation (GDPR) by viewing and configuring Windows diagnostic data in your organization.
+brand: m365
 
 metadata:
-
-  document_id: 
-
   title: Windows Privacy
-
   description: Learn about how privacy is managed in Windows.
-
-  keywords: Windows 10, Windows Server, Windows Server 2016, privacy, GDPR, compliance, endpoints
-
+  services: windows
+  ms.product: windows
+  ms.topic: hub-page # Required
+  ms.collection: M365-security-compliance
+  author: danihalfin
+  ms.author: daniha
+  manager: dansimp
+  ms.date: 07/21/2020 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
 
-  author: danihalfin
-
-  ms.author: daniha
-
-  ms.date: 04/25/2018
-
-  ms.topic: conceptual
-
-  audience: ITPro
-
-  manager: dansimp
-
-  ms.collection: M365-security-compliance
-
-  ms.devlang: na
-
-sections:
-
-- items:
-
-  - type: markdown
-
-    text: Get ready for General Data Protection Regulation (GDPR) by viewing and configuring Windows diagnostic data in your organization. 
-
-- items:
-
-  - type: list
-
-    style: cards
-
-    className: cardsM
-
-    columns: 3
-
-    items:
-
-    - href: \windows\privacy\gdpr-it-guidance
-
-      html: <p>Learn about GDPR and how Microsoft helps you get started towards compliance</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_advanced.svg
-
-      title: Start with GDPR basics
-
-    - href: \windows\privacy\configure-windows-diagnostic-data-in-your-organization
-
-      html: <p>Make informed decisions about how you can configure diagnostic data in your organization</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_filter.svg
-
-      title: Configure Windows diagnostic data
-
-    - href: \windows\privacy\diagnostic-data-viewer-overview
-
-      html: <p>Review the Windows diagnostic data sent to Microsoft by device in your organization</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_investigate.svg
-
-      title: View Windows diagnostic data
-
-- title: Understand Windows diagnostic data in Windows 10 
-
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
+    # Card
+    - title: Windows privacy & compliance guide for IT and compliance professionals
+      itemType: overview
+      url: Windows-10-and-privacy-compliance.md
+    # Card
+    - title: Configure Windows diagnostic data
+      itemType: how-to-guide
+      url: configure-windows-diagnostic-data-in-your-organization.md
+    # Card
+    - title: View Windows diagnostic data
+      itemType: how-to-guide
+      url: diagnostic-data-viewer-overview.md
 
-  - type: paragraph
+# productDirectory section (optional)
+productDirectory:
+  title: Understand Windows diagnostic data in Windows 10
+  summary: For the latest Windows 10 version, learn more about what Windows diagnostic data is collected at various diagnostics levels.
+  items:
+    # Card
+    - title: Required diagnostic data
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/media/common/i_extend.svg
+      summary: Learn more about basic Windows diagnostic data events and fields collected.
+      url: required-windows-diagnostic-data-events-and-fields-2004.md
+    # Card
+    - title: Optional diagnostic data
+      imageSrc: https://docs.microsoft.com/media/common/i_get-started.svg
+      summary: Get examples of the types of optional diagnostic data collected from Windows
+      url: windows-diagnostic-data.md
+    # Card
+    - title: Changes to Windows diagnostic data collection
+      imageSrc: https://docs.microsoft.com/media/common/i_build.svg
+      summary: See what changes Windows is making to align to the new data collection taxonomy
+      url: changes-to-windows-diagnostic-data-collection.md  
 
-    text: 'For the latest Windows 10 version, learn more about what Windows diagnostic data is collected at various diagnostics levels.'
+# conceptualContent section (optional)
+# conceptualContent:
+# # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+#   title: sectiontitle # < 60 chars (optional)
+#   summary: sectionsummary # < 160 chars (optional)
+#   items:
+#     # Card
+#     - title: cardtitle1
+#       links:
+#         - url: file1.md OR https://docs.microsoft.com/file1
+#           itemType: itemType
+#           text: linktext1
+#         - url: file2.md OR https://docs.microsoft.com/file2
+#           itemType: itemType
+#           text: linktext2
+#         - url: file3.md OR https://docs.microsoft.com/file3
+#           itemType: itemType
+#           text: linktext3
+#       # footerLink (optional)
+#       footerLink:
+#         url: filefooter.md OR https://docs.microsoft.com/filefooter
+#         text: See more
+#     # Card
+#     - title: cardtitle2
+#       links:
+#         - url: file1.md OR https://docs.microsoft.com/file1
+#           itemType: itemType
+#           text: linktext1
+#         - url: file2.md OR https://docs.microsoft.com/file2
+#           itemType: itemType
+#           text: linktext2
+#         - url: file3.md OR https://docs.microsoft.com/file3
+#           itemType: itemType
+#           text: linktext3
+#       # footerLink (optional)
+#       footerLink:
+#         url: filefooter.md OR https://docs.microsoft.com/filefooter
+#         text: See more
+#     # Card
+#     - title: cardtitle3
+#       links:
+#         - url: file1.md OR https://docs.microsoft.com/file1
+#           itemType: itemType
+#           text: linktext1
+#         - url: file2.md OR https://docs.microsoft.com/file2
+#           itemType: itemType
+#           text: linktext2
+#         - url: file3.md OR https://docs.microsoft.com/file3
+#           itemType: itemType
+#           text: linktext3
+#       # footerLink (optional)
+#       footerLink:
+#         url: filefooter.md OR https://docs.microsoft.com/filefooter
+#         text: See more
 
-  - type: list
+# # tools section (optional)
+# tools:
+#   title: sectiontitle # < 60 chars (optional)
+#   summary: sectionsummary # < 160 chars (optional)
+#   items:
+#     # Card
+#     - title: cardtitle1
+#       # imageSrc should be square in ratio with no whitespace
+#       imageSrc: ./media/index/image1.svg OR https://docs.microsoft.com/media/logos/image1.svg
+#       url: file1.md
+#     # Card
+#     - title: cardtitle2
+#       imageSrc: ./media/index/image2.svg OR https://docs.microsoft.com/media/logos/image2.svg
+#       url: file2.md
+#     # Card
+#     - title: cardtitle3
+#       imageSrc: ./media/index/image3.svg OR https://docs.microsoft.com/media/logos/image3.svg
+#       url: file3.md
 
-    style: cards
+# additionalContent section (optional)
+# Card with summary style
+# additionalContent:
+#   # Supports up to 3 sections
+#   sections:
+#     - title: sectiontitle # < 60 chars (optional)
+#       summary: sectionsummary # < 160 chars (optional)
+#       items:
+#         # Card
+#         - title: cardtitle1
+#           summary: cardsummary1
+#           url: file1.md OR https://docs.microsoft.com/file1
+#         # Card
+#         - title: cardtitle2
+#           summary: cardsummary2
+#           url: file1.md OR https://docs.microsoft.com/file2
+#         # Card
+#         - title: cardtitle3
+#           summary: cardsummary3
+#           url: file1.md OR https://docs.microsoft.com/file3
+#   # footer (optional)
+#   footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"
 
-    className: cardsM
-
-    columns: 3
-
-    items:
-
-    - href: \windows\privacy\basic-level-windows-diagnostic-events-and-fields
-
-      html: <p>Learn more about basic Windows diagnostic data events and fields collected</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_extend.svg
-      
-      title: Basic level events and fields
-
-    - href: \windows\privacy\enhanced-diagnostic-data-windows-analytics-events-and-fields
-
-      html: <p>Learn more about Windows diagnostic data events and fields used by Windows Analytics</p>  
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_delivery.svg
-      
-      title: Enhanced level events and fields
-
-    - href: \windows\privacy\windows-diagnostic-data
-    
-      html: <p>Learn more about all Windows diagnostic data collected</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_get-started.svg
-      
-      title: Full level data categories
-
-- items:
-
-  - type: list
-
-    style: cards
-
-    className: cardsL
-
-    items:
-
-    - title: View and manage Windows 10 connection endpoints
-
-      html: <p><a class="barLink" href="/windows/privacy/manage-windows-endpoints">Manage Windows 10 connection endpoints</a></p>
-
-            <p><a class="barLink" href="/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services">Manage connections from Windows to Microsoft services</a></p>
-
-    - title: Additional resources
-
-      html: <p><a class="barLink" href="https://www.microsoft.com/en-us/trustcenter/cloudservices/windows10">Windows 10 on Trust Center</a></p>
-
-            <p><a class="barLink" href="https://docs.microsoft.com/microsoft-365/compliance/gdpr">GDPR on Microsoft 365 Compliance solutions</a></p>
-
-            <p><a class="barLink" href="https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted">Support for GDPR Accountability on Service Trust Portal</a></p>
-      
+# additionalContent section (optional)
+# Card with links style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - items:
+        # Card
+        - title: View and manage Windows 10 connection endpoints
+          links:
+            - text: Manage Windows 10 connection endpoints
+              url: manage-windows-endpoints.md
+            - text: Manage connection endpoints for non-Enterprise editions of Windows 10
+              url: windows-endpoints-2004-non-enterprise-editions.md 
+            - text: Manage connections from Windows to Microsoft services
+              url: manage-connections-from-windows-operating-system-components-to-microsoft-services.md
+        # Card
+        - title: Additional resources
+          links:
+            - text: Windows 10 on Trust Center
+              url: https://www.microsoft.com/en-us/trustcenter/cloudservices/windows10
+            - text: GDPR on Microsoft 365 Compliance solutions
+              url: https://docs.microsoft.com/microsoft-365/compliance/gdpr
+            - text: Support for GDPR Accountability on Service Trust Portal
+              url: https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted
+  # footer (optional)
+  # footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"

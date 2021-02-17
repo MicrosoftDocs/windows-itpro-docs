@@ -13,7 +13,6 @@ manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
 audience: itpro
-author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -105,7 +104,7 @@ Windows 10 Enterprise edition has a number of features that are unavailable in 
 </tr>
 <tr class="odd">
 <td align="left"><p>AppLocker management</p></td>
-<td align="left"><p>This feature helps IT pros determine which applications and files users can run on a device (also known as “whitelisting”). The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.</p>
+<td align="left"><p>This feature helps IT pros determine which applications and files users can run on a device. The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.</p>
 <p>For more information, see <a href="https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview" data-raw-source="[AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview)">AppLocker</a>.</p></td>
 </tr>
 <tr class="even">

@@ -1,10 +1,10 @@
 ---
 title: Advanced Hunting with Python API Guide
 ms.reviewer: 
-description: Learn the basics of querying the Microsoft Defender Advanced Threat Protection API, using Python.
+description: Learn how to query using the Microsoft Defender Advanced Threat Protection API, by using Python, with examples.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,25 +13,33 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Advanced Hunting using Python
 
-**Applies to:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 Run advanced queries using Python, see [Advanced Hunting API](run-advanced-query-api.md).
 
-In this section we share Python samples to retrieve a token and use it to run a query.
+In this section, we share Python samples to retrieve a token and use it to run a query.
 
 >**Prerequisite**: You first need to [create an app](apis-intro.md).
 
 ## Get token
 
-- Run the following:
+- Run the following commands:
 
 ```
 
@@ -43,9 +51,9 @@ tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID her
 appId = '11111111-1111-1111-1111-111111111111' # Paste your own app ID here
 appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret here
 
-url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
+url = "https://login.microsoftonline.com/%s/oauth2/token" % (tenantId)
 
-resourceAppIdUri = 'https://api.securitycenter.windows.com'
+resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
 
 body = {
     'resource' : resourceAppIdUri,
@@ -64,9 +72,9 @@ aadToken = jsonResponse["access_token"]
 ```
 
 where
-- tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
-- appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
-- appSecret: Secret of your AAD app
+- tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
+- appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Microsoft Defender for Endpoint)
+- appSecret: Secret of your Azure AD app
 
 ## Run query
 
@@ -75,7 +83,7 @@ where
 ```
 query = 'RegistryEvents | limit 10' # Paste your own query here
 
-url = "https://api.securitycenter.windows.com/api/advancedqueries/run"
+url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 headers = { 
 	'Content-Type' : 'application/json',
 	'Accept' : 'application/json',
@@ -93,7 +101,7 @@ results = jsonResponse["Results"]
 ```
 
 - schema contains the schema of the results of your query
-- results contains the results of your query
+- results contain the results of your query
 
 ### Complex queries
 
@@ -144,6 +152,6 @@ outputFile.close()
 
 
 ## Related topic
-- [Microsoft Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)

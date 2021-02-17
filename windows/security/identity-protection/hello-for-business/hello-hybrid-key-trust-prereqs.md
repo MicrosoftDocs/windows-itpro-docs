@@ -1,6 +1,6 @@
 ---
 title: Hybrid Key trust Windows Hello for Business Prerequisites (Windows Hello for Business)
-description: Prerequisites for hybrid Windows Hello for Business deployments using key trust.
+description: Learn about the prerequisites for hybrid Windows Hello for Business deployments using key trust and what the next steps are in the deployment process.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -40,7 +40,9 @@ Hybrid Windows Hello for Business needs two directories: on-premises Active Dire
 
 A hybrid Windows Hello for Business deployment needs an Azure Active Directory subscription.  The hybrid key trust deployment, does not need a premium Azure Active Directory subscription.
 
-You can deploy Windows Hello for Business in any environment with Windows Server 2008 R2 or later domain controllers.  However, the key trust deployment needs an ***adequate*** number of Windows Server 2016 or later domain controllers at each site where users authenticate using Windows Hello for Business.  Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
+You can deploy Windows Hello for Business in any environment with Windows Server 2008 R2 or later domain controllers.  
+If using the key trust deployment model, you MUST ensure that you have adequate (1 or more, depending on your authentication load) Windows Server 2016 or later Domain Controllers in each Active Directory site where users will be authenticating for Windows Hello for Business.  
+Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
 > [!NOTE]
 >There was an issue with key trust authentication on Windows Server 2019. If you are planning to use Windows Server 2019 domain controllers refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044) to fix this issue.
@@ -63,18 +65,17 @@ The Windows Hello for Business deployment depends on an enterprise public key in
 
 Key trust deployments do not need client issued certificates for on-premises authentication.  Active Directory user accounts are automatically configured for public key mapping by Azure AD Connect synchronizing the public key of the registered Windows Hello for Business credential to an attribute on the user's Active Directory object.
 
-The minimum required enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012, but you can also use a third-party enterprise certification authority. The detailed requirements for the Domain Controller certificate are shown below.
+The minimum required Enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012, but you can also use a third-party Enterprise certification authority. The requirements for the domain controller certificate are shown below. For more details, see [Requirements for domain controller certificates from a third-party CA](https://support.microsoft.com/help/291010/requirements-for-domain-controller-certificates-from-a-third-party-ca).
 
-* The certificate must have a Certificate Revocation List (CRL) distribution point extension that points to a valid CRL.
-* Optionally, the certificate Subject section should contain the directory path of the server object (the distinguished name).
+* The certificate must have a Certificate Revocation List (CRL) distribution point extension that points to a valid CRL, or an Authority Information Access (AIA) extension that points to an Online Certificate Status Protocol (OCSP) responder.
+* The certificate Subject section should contain the directory path of the server object (the distinguished name).
 * The certificate Key Usage section must contain Digital Signature and Key Encipherment.
 * Optionally, the certificate Basic Constraints section should contain: [Subject Type=End Entity, Path Length Constraint=None].
 * The certificate Enhanced Key Usage section must contain Client Authentication (1.3.6.1.5.5.7.3.2), Server Authentication (1.3.6.1.5.5.7.3.1), and KDC Authentication (1.3.6.1.5.2.3.5).
 * The certificate Subject Alternative Name section must contain the Domain Name System (DNS) name.  
-* The certificate template must have an extension that has the BMP data value "DomainController".
-* The domain controller certificate must be installed in the local computer's certificate store.
+* The certificate template must have an extension that has the value "DomainController", encoded as a [BMPstring](https://docs.microsoft.com/windows/win32/seccertenroll/about-bmpstring). If you are using Windows Server Enterprise Certificate Authority, this extension is already included in the domain controller certificate template.
+* The domain controller certificate must be installed in the local computer's certificate store. See [Configure Hybrid Windows Hello for Business: Public Key Infrastructure](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-pki) for details.
 
- 
 
 > [!IMPORTANT]
 > For Azure AD joined device to authenticate to and use on-premises resources, ensure you:

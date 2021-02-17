@@ -2,17 +2,17 @@
 title: Servicing differences between Windows 10 and older operating systems
 ms.reviewer: 
 manager: laurawi
-description: Learn the differences between servicing Windows 10 and servicing older operating systems.
+description: In this article, learn the differences between servicing Windows 10 and servicing older operating systems.
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
 author: jaimeo
 ms.topic: article
 ms.collection: M365-modern-desktop
+ms.custom: seo-marvel-apr2020
 ---
 # Understanding the differences between servicing Windows 10-era and legacy Windows operating systems 
 
@@ -32,7 +32,7 @@ Prior to Windows 10, all updates to operating system (OS) components were publis
 
 As a result, each environment within the global Windows ecosystem that had only a subset of security and non-security fixes installed had a different set of binaries and behaviors than those that consistently installed every available update as tested by Microsoft. 
 
-This resulted in a fragmented ecosystem  that created diverse challenges in predictively testing interoperability, resulting in high update failure rates - which were subsequently mitigated by customers removing individual updates that were causing issues. Each customer that selectively removed individual updates amplified this fragmentation by creating more diverse environment permutations across the ecosystem. As an IT Administrator once quipped, "If you’ve seen one Windows 7 PC, you have seen one Windows 7 PC," suggesting no consistency or predictability across more than 250M commercial devices at the time.
+This resulted in a fragmented ecosystem  that created diverse challenges in predictively testing interoperability, resulting in high update failure rates - which were subsequently mitigated by customers removing individual updates that were causing issues. Each customer that selectively removed individual updates amplified this fragmentation by creating more diverse environment permutations across the ecosystem. As an IT Administrator once quipped, "If you've seen one Windows 7 PC, you have seen one Windows 7 PC," suggesting no consistency or predictability across more than 250M commercial devices at the time.
 
 ## Windows 10 – Next generation
 Windows 10 provided an opportunity to end the era of infinite fragmentation. With Windows 10 and the Windows as a service model, updates came rolled together in the "latest cumulative update" (LCU) packages for both client and server. Every new update published includes all changes from previous updates, as well as new fixes. Since Windows client and server share the same code base, these LCUs allow the same update to be installed on the same client and server OS family, further reducing fragmentation.
@@ -65,12 +65,12 @@ While Windows 10 updates could have been controlled as cumulative from "Day 1," 
 
 Customers saw the LCU model used for Windows 10 as having packages that were too large and represented too much of a change for legacy operating systems, so a different model was implemented. Windows instead offered one cumulative package (Monthly Rollup) and one individual package (Security Only) for all legacy operating systems.
 
-The Monthly Rollup includes new non-security (if appropriate), security updates, Internet Explorer (IE) updates, and all updates from the previous month similar to the Windows 10 model. The Security-only package includes only new security updates for the month. This means that any security updates from any previous month are not included in current month’s Security-Only Package. If a Security-Only update is missed, it is missed. Those updates will not appear in a future Security-Only update. Additionally, a cumulative package is offered for IE, which can be tested and installed separately, reducing the total update package size. The IE cumulative update includes both security and non-security fixes following the same model as Windows 10.
+The Monthly Rollup includes new non-security (if appropriate), security updates, Internet Explorer (IE) updates, and all updates from the previous month similar to the Windows 10 model. The Security-only package includes only new security updates for the month. This means that any security updates from any previous month are not included in current month's Security-Only Package. If a Security-Only update is missed, it is missed. Those updates will not appear in a future Security-Only update. Additionally, a cumulative package is offered for IE, which can be tested and installed separately, reducing the total update package size. The IE cumulative update includes both security and non-security fixes following the same model as Windows 10.
 
 ![Legacy OS security-only update model](images/security-only-update.png)
 *Figure 2.0 - Legacy OS security-only update model*
 
-Moving to the cumulative model for legacy OS versions continues to improve predictability of update quality. The Windows legacy environments which have fully updated machines with Monthly Rollups are running the same baseline against which all legacy OS version updates are tested. These include all of the updates (security and non-security) prior to and after October 2016. Many customer environments do not have all updates prior to this change installed, which leaves some continued fragmentation in the ecosystem. Further, customers who are installing Security-Only Updates and potentially doing so inconsistently are also more fragmented than Microsoft’s test environments for legacy OS version. This remaining fragmentation results in issues like those seen when the September 2016 Servicing Stack Update (SSU) was needed for smooth installation of the August 2018 security update. These environments did not have the SSU applied previously.
+Moving to the cumulative model for legacy OS versions continues to improve predictability of update quality. The Windows legacy environments which have fully updated machines with Monthly Rollups are running the same baseline against which all legacy OS version updates are tested. These include all of the updates (security and non-security) prior to and after October 2016. Many customer environments do not have all updates prior to this change installed, which leaves some continued fragmentation in the ecosystem. Further, customers who are installing Security-Only Updates and potentially doing so inconsistently are also more fragmented than Microsoft's test environments for legacy OS version. This remaining fragmentation results in issues like those seen when the September 2016 Servicing Stack Update (SSU) was needed for smooth installation of the August 2018 security update. These environments did not have the SSU applied previously.
 
 ### Points to consider
 - Windows 7 and Windows 8 legacy operating system updates [moved from individual to cumulative in October 2016](https://techcommunity.microsoft.com/t5/Windows-Blog-Archive/More-on-Windows-7-and-Windows-8-1-servicing-changes/ba-p/166783). Devices with updates missing prior to that point are still missing those updates, as they were not included in the subsequent cumulative packages. 
@@ -84,10 +84,10 @@ Moving to the cumulative model for legacy OS versions continues to improve predi
 - For [Windows Server 2008 SP2](https://cloudblogs.microsoft.com/windowsserver/2018/06/12/windows-server-2008-sp2-servicing-changes/), cumulative updates began in October 2018, and follow the same model as Windows 7. Updates for IE9 are included in those packages, as the last supported version of Internet Explorer for that Legacy OS version. 
 
 ## Public preview releases
-Lastly, the cumulative update model directly impacts the public Preview releases offered in the 3rd and/or 4th weeks of the month. Update Tuesday, also referred to as the "B" week release occurs on the second Tuesday of the month. It is always a required security update across all operating systems. In addition to this monthly release, Windows also releases non-security update "previews" targeting the 3rd (C) and the 4th (D) weeks of the month. These preview releases include that month’s B-release plus a set of non-security updates for testing and validation as a cumulative package. We recommend IT Administrators uses the C/D previews to test the update in their environments. Any issues identified with the updates in the C/D releases are identified and then fixed or removed, prior to being rolled up in to the next month’s B release package together with new security updates. Security-only Packages are not part of the C/D preview program.
+Lastly, the cumulative update model directly impacts the public Preview releases offered in the 3rd and/or 4th weeks of the month. Update Tuesday, also referred to as the "B" week release occurs on the second Tuesday of the month. It is always a required security update across all operating systems. In addition to this monthly release, Windows also releases non-security update "previews" targeting the 3rd (C) and the 4th (D) weeks of the month. These preview releases include that month's B-release plus a set of non-security updates for testing and validation as a cumulative package. We recommend IT Administrators uses the C/D previews to test the update in their environments. Any issues identified with the updates in the C/D releases are identified and then fixed or removed, prior to being rolled up in to the next month's B release package together with new security updates. Security-only Packages are not part of the C/D preview program.
 
 > [!NOTE]
-> Only preview updates for the most recent release of Windows 10 are published to Windows Server Update Services (WSUS). For customers using the WSUS channel, and products such as Microsoft Endpoint Configuration Manager that rely on it, will not see preview updates for older versions of Windows 10.
+> Only preview updates for the most recent release of Windows 10 are published to Windows Server Update Services (WSUS). For customers using the WSUS channel, and products such as Microsoft Endpoint Manager that rely on it, will not see preview updates for older versions of Windows 10.
 
 > [!NOTE]
 > Preview updates for Windows 10 are not named differently than their LCU counterparts and do not contain the word 'Preview'. They can be identified by their release date (C or D week) and their classification as non-security updates.
@@ -103,9 +103,9 @@ All of these updates are cumulative and build on each other for Windows 10. This
 *Figure 3.0 - Preview releases within the Windows 10 LCU model*
 
 ## Previews vs. on-demand releases
-In 2018, we experienced incidents which required urgent remediation that didn’t map to the monthly update release cadence. These incidents were situations that required an immediate fix to an Update Tuesday release. While Windows engineering worked aggressively to respond within a week of the B-release, these "on-demand" releases created confusion with the C Preview releases.
+In 2018, we experienced incidents which required urgent remediation that didn't map to the monthly update release cadence. These incidents were situations that required an immediate fix to an Update Tuesday release. While Windows engineering worked aggressively to respond within a week of the B-release, these "on-demand" releases created confusion with the C Preview releases.
 
-As a general policy, if a Security-Only package has a regression, which is defined as an unintentional error in the code of an update, then the fix for that regression will be added to the next month’s Security-Only Update. The fix for that regression may also be offered as part an On-Demand release and will be rolled into the next Monthly Update. (Note: Exceptions do exist to this policy, based on timing.)
+As a general policy, if a Security-Only package has a regression, which is defined as an unintentional error in the code of an update, then the fix for that regression will be added to the next month's Security-Only Update. The fix for that regression may also be offered as part an On-Demand release and will be rolled into the next Monthly Update. (Note: Exceptions do exist to this policy, based on timing.)
 
 ### Point to consider
 - When Windows identifies an issue with a Update Tuesday release, engineering teams work to remediate or fix the issue as quickly as possible. The outcome is often a new update which may be released at any time, including during the 3rd or 4th week of the month. Such updates are independent of the regularly scheduled "C" and "D" update previews. These updates are created on-demand to remediate a customer impacting issue. In most cases they are qualified as a "non-security" update, and do not require a system reboot.

@@ -1,9 +1,9 @@
 ---
-title: Get missing KBs by machine ID
-description: Retrieves missing KBs by machine Id
-keywords: apis, graph api, supported apis, get, list, file, information, machine id, threat & vulnerability management api, mdatp tvm api
+title: Get missing KBs by device ID
+description: Retrieves missing security updates by device ID
+keywords: apis, graph api, supported apis, get, list, file, information, device id, threat & vulnerability management api, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,17 +12,29 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
-# Get missing KBs by machine ID
+# Get missing KBs by device ID
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Retrieves missing KBs by machine Id
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+## API description
+Retrieves missing KBs (security updates) by device ID.
+
+## Limitations
+1. Rate limitations for this API are 50 calls per minute and 1500 calls per hour.
 
 ## HTTP request
 
@@ -42,7 +54,7 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK, with the specified machine missing kb data in the body.
+If successful, this method returns 200 OK, with the specified device missing kb data in the body.
 
 ## Example
 
@@ -50,8 +62,8 @@ If successful, this method returns 200 OK, with the specified machine missing kb
 
 Here is an example of the request.
 
-```
-GET https://api.securitycenter.windows.com/api/machines/2339ad14a01bd0299afb93dfa2550136057bff96/getmissingkbs 
+```http
+GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93dfa2550136057bff96/getmissingkbs 
 ```
 
 ### Response

@@ -1,10 +1,10 @@
 ---
 title: Create Windows Firewall rules in Intune (Windows 10)
-description: Explains how to create Windows Firewall rules in Intune
+description: Learn how to use Intune to create rules in Windows Defender Firewall with Advanced Security. Start by creating a profile in Device Configuration in Intune.
 ms.assetid: 47057d90-b053-48a3-b881-4f2458d3e431
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Create Windows Firewall rules in Intune
@@ -74,8 +75,8 @@ Comma separated list of local addresses covered by the rule. Valid tokens includ
 - \* indicates any local address. If present, this must be the only token included. 
 - A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask default is  255.255.255.255. 
 - A valid IPv6 address. 
-- An IPv4 address range in the format of "start address - end address" with no spaces included. 
-- An IPv6 address range in the format of "start address - end address" with no spaces included. Default is Any address. 
+- An IPv4 address range in the format of "start address-end address" with no spaces included. 
+- An IPv6 address range in the format of "start address-end address" with no spaces included. Default is Any address. 
 
 [Learn more](https://aka.ms/intunefirewalllocaladdressrule)
 
@@ -93,8 +94,8 @@ List of comma separated tokens specifying the remote addresses covered by the ru
 - LocalSubnet indicates any local address on the local subnet. 
 - A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255. 
 - A valid IPv6 address. 
-- An IPv4 address range in the format of "start address - end address" with no spaces included. 
-- An IPv6 address range in the format of "start address - end address" with no spaces included. 
+- An IPv4 address range in the format of "start address-end address" with no spaces included. 
+- An IPv6 address range in the format of "start address-end address" with no spaces included. 
 
 Default is Any address. 
 

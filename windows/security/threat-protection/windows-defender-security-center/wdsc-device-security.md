@@ -3,8 +3,7 @@ title: Device security in the Windows Security app
 description: Use the Device security section to manage security built into your device, including virtualization-based security.
 keywords: device security, device guard, wdav, smartscreen, antivirus, wdsc, exploit, protection, hide
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +13,7 @@ ms.author: dansimp
 ms.date: 10/02/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Device security

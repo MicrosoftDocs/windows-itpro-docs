@@ -1,6 +1,6 @@
 ---
 title: Hybrid Windows Hello for Business Provisioning (Windows Hello for Business)
-description: Provisioning for hybrid certificate trust deployments of Windows Hello for Businesss.
+description: In this article, learn about provisioning for hybrid certificate trust deployments of Windows Hello for Businesss.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
 ms.mktglfcycl: deploy

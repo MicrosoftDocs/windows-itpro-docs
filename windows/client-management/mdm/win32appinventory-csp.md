@@ -1,6 +1,6 @@
 ---
 title: Win32AppInventory CSP
-description: Win32AppInventory CSP
+description: Learn how the Win32AppInventory configuration service provider (CSP) is used to provide an inventory of installed applications on a device.
 ms.assetid: C0DEDD51-4EAD-4F8E-AEE2-CBE9658BCA22
 ms.reviewer: 
 manager: dansimp

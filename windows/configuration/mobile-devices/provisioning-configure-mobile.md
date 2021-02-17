@@ -17,7 +17,7 @@ manager: dansimp
 
 # Use Windows Configuration Designer to configure Windows 10 Mobile devices 
 
-Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using provisioning packages, ayou can easily specify desired configuration, settings, and information required to enroll the devices into management, and then apply that configuration to target devices in a matter of minutes. 
+Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using provisioning packages, you can easily specify desired configuration, settings, and information required to enroll the devices into management, and then apply that configuration to target devices in a matter of minutes. 
 
 A provisioning package (.ppkg) is a container for a collection of configuration settings. Using Windows Configuration Designer, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 

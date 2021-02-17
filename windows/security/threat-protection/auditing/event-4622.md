@@ -2,7 +2,7 @@
 title: 4622(S) A security package has been loaded by the Local Security Authority. (Windows 10)
 description: Describes security event 4622(S) A security package has been loaded by the Local Security Authority.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4622(S): A security package has been loaded by the Local Security Authority.
@@ -100,5 +101,5 @@ These are some Security Package DLLs loaded by default in Windows 10:
 
 For 4622(S): A security package has been loaded by the Local Security Authority.
 
--   Typically this event has an informational purpose. If you defined the list of allowed Security Packages in the system, then you can check is “**Security Package Name”** field value in the whitelist or not.
+-   Typically this event has an informational purpose. If you defined the list of allowed Security Packages in the system, then you can check is “**Security Package Name”** field value in the allow list or not.
 

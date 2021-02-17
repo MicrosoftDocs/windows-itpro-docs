@@ -1,6 +1,6 @@
 ---
 title: Assigned Access configuration kiosk XML reference (Windows 10)
-description: XML and XSD for kiosk device configuration.
+description: Learn about the assigned access configuration (kiosk) for XML and XSD for kiosk device configuration in Windows 10.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 ms.reviewer: 
 manager: dansimp
@@ -255,7 +255,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 ```
 
 ## [Preview] Global Profile Sample XML
-Global Profile is currently supported in Windows 10 Insider Preview (20H1 builds). Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lock down mode, or used as mitigation when a profile cannot be determined for an user.
+Global Profile is currently supported in Windows 10 Insider Preview (20H1 builds). Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lockdown mode, or used as mitigation when a profile cannot be determined for a user.
 
 This sample demonstrates that only a global profile is used, no active user configured. Global profile will be applied when every non-admin account logs in 
 ```xml
@@ -309,7 +309,7 @@ This sample demonstrates that only a global profile is used, no active user conf
 </AssignedAccessConfiguration>
 ```
 
-Below sample shows dedicated profile and global profile mixed usage, aauser would use one profile, everyone else that's non-admin will use another profile.
+Below sample shows dedicated profile and global profile mixed usage, a user would use one profile, everyone else that's non-admin will use another profile.
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
@@ -396,7 +396,7 @@ Below sample shows dedicated profile and global profile mixed usage, aauser woul
 ## [Preview] Folder Access sample xml
 In Windows 10, version 1809, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granulatity and easier use, and is available in Windows 10 Insider Preview (19H2, 20H1 builds).
 
-IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Note that Downloads and Removable Drives can be allowed at the same time.
+IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -889,7 +889,7 @@ Schema for Windows 10 Insider Preview (19H2, 20H1 builds)
 </xs:schema>
 ```
 
-To authorize a compatible configuration XML that includes elements and attributes from Windows 10, version 1809 or newer, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the auto-launch feature which is added in Windows 10, version 1809, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10, version 1809, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
+To authorize a compatible configuration XML that includes elements and attributes from Windows 10, version 1809 or newer, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the autolaunch feature that was added in Windows 10, version 1809, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10, version 1809, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
 ```xml
 <AssignedAccessConfiguration
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"

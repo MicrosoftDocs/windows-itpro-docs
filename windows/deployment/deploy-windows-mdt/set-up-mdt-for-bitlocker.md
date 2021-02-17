@@ -4,7 +4,7 @@ ms.assetid: 386e6713-5c20-4d2a-a220-a38d94671a38
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: 
+description: Learn how to configure your environment for BitLocker, the disk volume encryption built into Windows 10 Enterprise and Windows 10 Pro, using MDT.
 keywords: disk, encryption, TPM, configure, secure, script
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,6 +14,7 @@ ms.pagetype: mdt
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-mar2020
 ---
 
 # Set up MDT for BitLocker
@@ -88,7 +89,6 @@ Following these steps, you enable the backup of BitLocker and TPM recovery infor
         3. Do not enable BitLocker until recovery information is stored in AD DS for operating system drives
     2. Enable the **Configure TPM platform validation profile for BIOS-based firmware configurations** policy.
     3. Enable the **Configure TPM platform validation profile for native UEFI firmware configurations** policy.
-        Computer Configuration / Policies / Administrative Templates / System / Trusted Platform Module Services
 
 > [!NOTE]
 > If you consistently get the error "Windows BitLocker Drive Encryption Information. The system boot information has changed since BitLocker was enabled. You must supply a BitLocker recovery password to start this system." after encrypting a computer with BitLocker, you might have to change the various "Configure TPM platform validation profile" Group Policies, as well. Whether or not you need to do this will depend on the hardware you are using.

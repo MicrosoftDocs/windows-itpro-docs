@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Package Type Selection page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Package Type Selection** page of the Internet Explorer Customization Wizard 11 lets you pick which type of media you’ll use to distribute your custom installation package. You can pick more than one type, if you need it.
 
 **Important**<br>You can't create a full installation package for deployment to Windows 10 computers. That option only works for computers running Windows 7 or Windows 8.1.

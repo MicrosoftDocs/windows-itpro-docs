@@ -57,12 +57,12 @@ To do this, follow the **Configure device settings** steps under [Setting up Azu
 
 Azure Active Directory is now configured for device registration. Next, you need to configure the on-premises Active Directory to support synchronizing hybrid Azure AD joined devices. Begin with upgrading the Active Directory Schema 
 
-### Upgrading Active Directory to the Windows Server 2016 Schema 
+### Upgrading Active Directory to the Windows Server 2016 or later Schema 
 
-To use Windows Hello for Business with Hybrid Azure AD joined devices, you must first upgrade your Active Directory schema to Windows Server 2016. 
+To use Windows Hello for Business with Hybrid Azure AD joined devices, you must first upgrade your Active Directory schema to Windows Server 2016 or later. 
 
 > [!IMPORTANT]
-> If you already have a Windows Server 2016 domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 Schema** (this section).
+> If you already have a Windows Server 2016 or later domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 or later Schema** (this section).
 
 #### Identify the schema role domain controller
 
@@ -78,7 +78,7 @@ The command should return the name of the domain controller where you need to ru
 
 Windows Hello for Business uses asymmetric keys as user credentials (rather than passwords).  During enrollment, the public key is registered in an attribute on the user object in Active Directory.  The schema update adds this new attribute to Active Directory.  
 
-Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
+Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 or later DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
 
 Sign-in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
 
@@ -506,7 +506,7 @@ The following script helps you with the creation of the issuance transform rules
 #### Configure Device Authentication in AD FS  
 Using an elevated PowerShell command window, configure AD FS policy by executing the following command  
 
-`PS C:>Set-AdfsGlobalAuthenticationPolicy -DeviceAuthenticationEnabled $true -DeviceAuthenticationMethod All` 
+`PS C:>Set-AdfsGlobalAuthenticationPolicy -DeviceAuthenticationEnabled $true -DeviceAuthenticationMethod SignedToken` 
 
 #### Check your configuration  
 For your reference, below is a comprehensive list of the AD DS devices, containers and permissions required for device write-back and authentication to work

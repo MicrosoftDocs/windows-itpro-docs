@@ -1,9 +1,7 @@
 ---
 title: Update Compliance - Need Attention! report
-ms.reviewer: 
 manager: laurawi
-description: an overview of the Update Compliance Need Attention! report
-ms.prod: w10
+description: Learn how the Need attention! section provides a breakdown of all Windows 10 device and update issues detected by Update Compliance.
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
@@ -12,6 +10,7 @@ author: jaimeo
 ms.author: jaimeo
 ms.collection: M365-analytics
 ms.topic: article
+ms.prod: w10
 ---
 
 # Needs attention!
@@ -35,7 +34,7 @@ The different issues are broken down by Device Issues and Update Issues:
 * **Cancelled**: This issue occurs when a user cancels the update process.
 * **Rollback**: This issue occurs when a fatal error occurs during a feature update, and the device is rolled back to the previous version.
 * **Uninstalled**: This issue occurs when a feature update is uninstalled from a device by a user or an administrator. Note that this might not be a problem if the uninstallation was intentional, but is highlighted as it might need attention.
-* **Progress stalled:** This issue occurs when an update is in progress, but has not completed over a period of 10 days.
+* **Progress stalled:** This issue occurs when an update is in progress, but has not completed over a period of 7 days.
 
 Selecting any of the issues will take you to a [Log Analytics](https://docs.microsoft.com/azure/log-analytics/query-language/get-started-analytics-portal) view with all devices that have the given issue.
 

@@ -1,6 +1,6 @@
-# [Windows 10](index.md)
+# [Windows 10](index.yml)
 ## [What's new](/windows/whats-new)
-## [Release information](/windows/release-information)
+## [Release information](/windows/release-health)
 ## [Deployment](/windows/deployment)
 ## [Configuration](/windows/configuration)
 ## [Client management](/windows/client-management)

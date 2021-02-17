@@ -11,16 +11,18 @@ ms.prod: edge
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 01/17/2020
+ms.date: 02/16/2021
 ---
 
 # Deploy Microsoft Edge Legacy kiosk mode
+> [!IMPORTANT]
+> Microsoft 365 apps and services will not support Internet Explorer 11 starting August 17, 2021 (Microsoft Teams will not support Internet Explorer 11 earlier, starting November 30, 2020). [Learn more](https://aka.ms/AA97tsw). Please note that Internet Explorer 11 will remain a supported browser. Internet Explorer 11 is a component of the Windows operating system and [follows the Lifecycle Policy](https://docs.microsoft.com/lifecycle/faq/internet-explorer-microsoft-edge) for the product on which it is installed. 
 
 > Applies to: Microsoft Edge Legacy (version 45 and earlier) on Windows 10, version 1809 or later
 > Professional, Enterprise, and Education
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge Legacy (version 45 and earlier.) To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/). For information about kiosk mode in the new version of Microsoft Edge, see [Microsoft Edge kiosk mode](https://docs.microsoft.com/DeployEdge/microsoft-edge-kiosk-mode).
+> You've reached the documentation for Microsoft Edge Legacy (version 45 and earlier.) To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/). For information about kiosk mode in the new version of Microsoft Edge, see [Microsoft Edge kiosk mode](https://docs.microsoft.com/DeployEdge/microsoft-edge-configure-kiosk-mode).
 
 In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge Legacy as a kiosk using assigned access. With assigned access, you create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  Assigned access restricts a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge Legacy in kiosk mode.
 

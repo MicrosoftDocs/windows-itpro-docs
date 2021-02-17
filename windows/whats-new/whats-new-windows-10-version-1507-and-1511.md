@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10, versions 1507 and 1511 (Windows 10)
-description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 (versions 1507 and 1511) and Windows 10 Mobile.
+description: What's new in Windows 10 for Windows 10 (versions 1507 and 1511) and Windows 10 Mobile.
 ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
 ms.reviewer: 
 ms.prod: w10
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.topic: article
 ---
 
-# What's new in Windows 10, versions 1507 and 1511
+# What's new in Windows 10, versions 1507 and 1511 for IT Pros
 
 Below is a list of some of the new and updated features included in  the initial release of Windows 10 (version 1507) and the Windows 10 update to version 1511.
 
@@ -326,7 +326,7 @@ By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth very efficient.
 
--   **Use with existing tools** such as Microsoft Endpoint Configuration Manager and the [Enterprise Mobility Suite](https://docs.microsoft.com/enterprise-mobility-security).
+-   **Use with existing tools** such as Microsoft Endpoint Manager and the [Enterprise Mobility Suite](https://docs.microsoft.com/enterprise-mobility-security).
 
 Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr).
 

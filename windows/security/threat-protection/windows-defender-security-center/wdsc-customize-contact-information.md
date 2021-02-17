@@ -3,8 +3,7 @@ title: Customize Windows Security contact information
 description: Provide information to your employees on how to contact your IT department when a security issue occurs
 keywords: wdsc, security center, defender, notification, customize, contact, it department, help desk, call, help site
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +13,7 @@ ms.author: dansimp
 ms.date: 04/30/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Customize the Windows Security app for your organization
@@ -30,19 +30,19 @@ manager: dansimp
 
 - Group Policy
 
-You can add information about your organization in a contact card to the Windows Security app. This can include a link to a support site, a phone number for a help desk, and an email address for email-based support.
+You can add information about your organization in a contact card to the Windows Security app. You can include a link to a support site, a phone number for a help desk, and an email address for email-based support.
 
 ![The security center custom fly-out](images/security-center-custom-flyout.png)
 
-This information will also be shown in some enterprise-specific notifications (including those for the [Block at first sight feature](/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus), and [potentially unwanted applications](/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
+This information will also be shown in some enterprise-specific notifications (including notifications for the [Block at first sight feature](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus), and [potentially unwanted applications](/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)).
 
 ![A security center notification](images/security-center-custom-notif.png)
 
-Users can click on the displayed information to initiate a support request:
+Users can select the displayed information to initiate a support request:
 
-- Clicking **Call** or the phone number will open Skype to start a call to the displayed number
-- Clicking **Email** or the email address will create a new email in the machine's default email app address to the displayed email
-- Clicking **Help portal** or the website URL will open the machine's default web browser and go to the displayed address
+- Select **Call** or the phone number to open Skype to start a call to the displayed number.
+- Select  **Email** or the email address to create a new email in the machine's default email app address to the displayed email.
+- Select **Help portal** or the website URL to open the machine's default web browser and go to the displayed address.
 
 ## Requirements
 
@@ -68,12 +68,12 @@ This can only be done in Group Policy.
 
 5. After you've enabled the contact card or the customized notifications (or both), you must configure the **Specify contact company name** to **Enabled**. Enter your company or organization's name in the field in the **Options** section. Click **OK**.
 
-6. To ensure the custom notifications or contact card appear, you must also configure at least one of the following settings by opening them, setting them to **Enabled** and adding the contact information in the field under **Options**:
+6. To ensure the custom notifications or contact card appear, you must also configure at least one of the following settings. Open the setting, select **Enabled**, and then add the contact information in the field under **Options**:
     1. **Specify contact email address or Email ID**
     2. **Specify contact phone number or Skype ID**
     3. **Specify contact website**
 
-7. Click **OK** after configuring each setting to save your changes.
+7. Select **OK** after you configure each setting to save your changes.
 
 >[!IMPORTANT]
 >You must specify the contact company name and at least one contact method - email, phone number, or website URL. If you do not specify the contact name and a contact method the customization will not apply, the contact card will not show, and notifications will not be customized.

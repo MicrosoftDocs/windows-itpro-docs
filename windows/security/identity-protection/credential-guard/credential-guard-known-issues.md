@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -58,7 +58,7 @@ When Windows Defender Credential Guard is enabled on Windows 10, the Java GSS AP
 
 The following issue affects Cisco AnyConnect Secure Mobility Client:
 
-- [Blue screen on Windows 10 computers running Windows Defender Device Guard and Windows Defender Credential Guard with Cisco Anyconnect 4.3.04027](https://quickview.cloudapps.cisco.com/quickview/bug/CSCvc66692) \*
+- [Blue screen on Windows 10 computers running Hypervisor-Protected Code Integrity and Windows Defender Credential Guard with Cisco Anyconnect 4.3.04027](https://quickview.cloudapps.cisco.com/quickview/bug/CSCvc66692) \*
 
 *Registration required to access this article. 
 
@@ -91,16 +91,16 @@ See the following article on Citrix support for Secure Boot:
 Windows Defender Credential Guard is not supported by either these products, products versions, computer systems, or Windows 10 versions:
 
 - For Windows Defender Credential Guard on Windows 10 with McAfee Encryption products, see:
-  [Support for Windows Defender Device Guard and Windows Defender Credential Guard on Windows 10 with McAfee encryption products](https://kc.mcafee.com/corporate/index?page=content&id=KB86009)
+  [Support for Hypervisor-Protected Code Integrity and Windows Defender Credential Guard on Windows 10 with McAfee encryption products](https://kc.mcafee.com/corporate/index?page=content&id=KB86009)
 
 - For Windows Defender Credential Guard on Windows 10 with Check Point Endpoint Security Client, see:
-  [Check Point Endpoint Security Client support for Microsoft Windows 10 Windows Defender Credential Guard and Windows Defender Device Guard features](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk113912)
+  [Check Point Endpoint Security Client support for Microsoft Windows 10 Windows Defender Credential Guard and Hypervisor-Protected Code Integrity features](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk113912)
 
 - For Windows Defender Credential Guard on Windows 10 with VMWare Workstation
   [Windows 10 host fails when running VMWare Workstation when Windows Defender Credential Guard is enabled](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2146361)
 
 - For Windows Defender Credential Guard on Windows 10 with specific versions of the Lenovo ThinkPad
-  [ThinkPad support for Windows Defender Device Guard and Windows Defender Credential Guard in Microsoft Windows 10 – ThinkPad](https://support.lenovo.com/in/en/solutions/ht503039)
+  [ThinkPad support for Hypervisor-Protected Code Integrity and Windows Defender Credential Guard in Microsoft Windows 10 – ThinkPad](https://support.lenovo.com/in/en/solutions/ht503039)
 
 - For Windows Defender Credential Guard on Windows 10 with Symantec Endpoint Protection
   [Windows 10 with Windows Defender Credential Guard and Symantec Endpoint Protection 12.1](https://www.symantec.com/connect/forums/windows-10-device-guard-credentials-guard-and-sep-121)

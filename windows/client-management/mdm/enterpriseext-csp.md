@@ -1,6 +1,6 @@
 ---
 title: EnterpriseExt CSP
-description: EnterpriseExt CSP
+description: Learn how the EnterpriseExt CSP allows OEMs to set their own unique ID for their devices, set display brightness values, and set the LED behavior.
 ms.assetid: ACA5CD79-BBD5-4DD1-86DA-0285B93982BD
 ms.reviewer: 
 manager: dansimp

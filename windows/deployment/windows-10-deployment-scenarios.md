@@ -5,6 +5,7 @@ ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
+ms.author: greglin
 author: greg-lindsay
 keywords: upgrade, in-place, configuration, deploy
 ms.prod: w10
@@ -12,7 +13,6 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 
@@ -25,6 +25,7 @@ To successfully deploy the Windows 10 operating system in your organization, it
 
 The following table summarizes various Windows 10 deployment scenarios. The scenarios are each assigned to one of three categories. 
 - Modern deployment methods are recommended unless you have a specific need to use a different procedure. These methods are supported with existing tools such as Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager. These methods are discussed in detail on the [Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home).
+  - Note: Once you have deployed Windows 10 in your organization, it is important to stay up to date by [creating a deployment plan](update/create-deployment-plan.md) for Windows 10 feature updates.
 - Dynamic deployment methods enable you to configure applications and settings for specific use cases. 
 - Traditional deployment methods use existing tools to deploy operating system images.<br>&nbsp;
 
@@ -158,7 +159,7 @@ For more information about Windows Autopilot, see [Overview of Windows Autopilot
 
 For existing computers running Windows 7, Windows 8, or Windows 8.1, the recommended path for organizations deploying Windows 10 leverages the Windows installation program (Setup.exe) to perform an in-place upgrade, which automatically preserves all data, settings, applications, and drivers from the existing operating system version. This requires the least IT effort, because there is no need for any complex deployment infrastructure.
 
-Although consumer PCs will be upgraded using Windows Update, organizations want more control over the process. This is accomplished by leveraging tools like Microsoft Endpoint Configuration Manager or the Microsoft Deployment Toolkit to completely automate the upgrade process through simple task sequences.
+Although consumer PCs will be upgraded using Windows Update, organizations want more control over the process. This is accomplished by leveraging tools like Microsoft Endpoint Manager or the Microsoft Deployment Toolkit to completely automate the upgrade process through simple task sequences.
 
 The in-place upgrade process is designed to be extremely reliable, with the ability to automatically roll back to the previous operating system if any issues are encountered during the deployment process, without any IT staff involvement. Rolling back manually can also be done by leveraging the automatically-created recovery information (stored in the Windows.old folder), in case any issues are encountered after the upgrade is finished. The upgrade process is also typically faster than traditional deployments, because applications do not need to be reinstalled as part of the process.
 

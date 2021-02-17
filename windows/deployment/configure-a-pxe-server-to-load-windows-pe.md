@@ -11,10 +11,9 @@ audience: itpro
 author: greg-lindsay
 ms.reviewer: 
 manager: laurawi
-audience: itpro
-author: greg-lindsay
 ms.author: greglin
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure a PXE server to load Windows PE
@@ -23,13 +22,11 @@ ms.topic: article
 
 -   Windows 10
 
-## Summary
-
 This walkthrough describes how to configure a PXE server to load Windows PE by booting a client computer from the network. Using the Windows PE tools and a Windows 10 image file, you can install Windows 10 from the network.
 
 ## Prerequisites
 
-- A deployment computer: A computer with the [Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526803) (Windows ADK) installed.
+- A deployment computer: A computer with the [Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526803) (Windows ADK) and the Windows PE add-on with ADK installed.
 - A DHCP server: A DHCP server or DHCP proxy configured to respond to PXE client requests is required.
 - A PXE server: A server running the TFTP service that can host Windows PE boot files that the client will download.
 - A file server: A server hosting a network file share.

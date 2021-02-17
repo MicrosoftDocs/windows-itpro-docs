@@ -1,6 +1,6 @@
 ---
 title: VPN CSP
-description: VPN CSP
+description: Learn how the VPN configuration service provider (CSP) allows the mobile device management (MDM) server to configure the VPN profile of the device.
 ms.assetid: 05ca946a-1c0b-4e11-8d7e-854e14740707
 ms.reviewer: 
 manager: dansimp

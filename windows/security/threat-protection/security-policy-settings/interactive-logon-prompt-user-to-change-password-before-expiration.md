@@ -1,10 +1,10 @@
 ---
-title:  Interactive log-on prompt user to change password before expiration (Windows 10)
+title: Interactive log-on prompt user to change password before expiration (Windows 10)
 description: Best practices and security considerations for an interactive log-on prompt for users to change passwords before expiration.
 ms.assetid: 8fe94781-40f7-4fbe-8cfd-5e116e6833e9
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Interactive log on: Prompt the user to change passwords before expiration
@@ -37,7 +38,7 @@ This policy setting determines when users are warned that their passwords are ab
 
 -  Configure user passwords to expire periodically. Users need warning that their password is going to expire, or they might  get locked out of the system.
 -  Set **Interactive logon: Prompt user to change password before expiration** to five days. When their password expiration date is five or fewer days away, users will see a dialog box each time that they log on to the domain.
--  Don't set the value to zero, which displays the password expiration warning every time the user logs on.
+-  When you set the policy to zero, there is no password expiration warning when the user logs on. During a long-running logon session, you would get the warning on the day the password expires or when it already has expired.
 
 ### Location
 

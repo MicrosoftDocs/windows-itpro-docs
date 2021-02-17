@@ -1,10 +1,10 @@
 ---
 title: Isolated Domain (Windows 10)
-description: Isolated Domain
+description: Learn about the isolated domain, which is the primary zone for trusted devices, which use connection security and firewall rules to control communication.
 ms.assetid: d6fa8d67-0078-49f6-9bcc-db1f24816c5e
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Isolated Domain

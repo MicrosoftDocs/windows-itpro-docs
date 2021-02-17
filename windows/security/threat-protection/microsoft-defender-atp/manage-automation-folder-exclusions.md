@@ -1,10 +1,10 @@
 ---
 title: Manage automation folder exclusions
-description: Add automation folder exclusions to control the files that are excluded from an automated investigation. 
-keywords: manage, automation, exclusion, whitelist, blacklist, block, clean, malicious
+description: Add automation folder exclusions to control the files that are excluded from an automated investigation.
+keywords: manage, automation, exclusion, block, clean, malicious
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,20 +13,21 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Manage automation folder exclusions 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
 Automation folder exclusions allow you to specify folders that the Automated investigation will skip. 
 
@@ -66,6 +67,9 @@ You can specify the file names that you want to be excluded in a specific direct
     
 
 4. Click **Save**.
+
+>[!NOTE]
+> Live Response commands to collect or examine excluded files will fail with error: "File is excluded". In addition, automated investigations will ignore the excluded items.
 
 ## Edit an automation folder exclusion 
 1. In the navigation pane, select **Settings** > **Automation folder exclusions**. 

@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - DeviceLock
-description: Policy CSP - DeviceLock
+description: Learn how to use the Policy CSP - DeviceLock setting to specify whether the user must input a PIN or password when the device resumes from an idle state.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -677,7 +677,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app.
+Specifies the maximum amount of time (in seconds) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app.
 
 * On Mobile, the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
 * On HoloLens, this timeout is controlled by the device's system sleep timeout, regardless of the value set by this policy.
@@ -1119,12 +1119,14 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

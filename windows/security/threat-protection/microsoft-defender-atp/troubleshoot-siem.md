@@ -4,7 +4,7 @@ description: Troubleshoot issues that might arise when using SIEM tools with Mic
 keywords: troubleshoot, siem, client secret, secret
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,17 +13,22 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: troubleshooting
+ms.technology: mde
 ---
 
 # Troubleshoot SIEM tool integration issues
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 You might need to troubleshoot issues while pulling detections in your SIEM tools.
 
@@ -72,11 +77,11 @@ If you encounter an error when trying to enable the SIEM connector application, 
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
 ## Related topics
-- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Configure ArcSight to pull Microsoft Defender ATP detections](configure-arcsight.md)
-- [Configure Splunk to pull Microsoft Defender ATP detections](configure-splunk.md)
-- [Microsoft Defender ATP Detection fields](api-portal-mapping.md)
-- [Pull Microsoft Defender ATP detections using REST API](pull-alerts-using-rest-api.md)
+- [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
+- [Configure ArcSight to pull Microsoft Defender for Endpoint detections](configure-arcsight.md)
+- [Configure Splunk to pull Microsoft Defender for Endpoint detections](configure-splunk.md)
+- [Microsoft Defender for Endpoint Detection fields](api-portal-mapping.md)
+- [Pull Microsoft Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md)

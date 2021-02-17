@@ -1,6 +1,6 @@
 ---
 title: Hard-Link Migration Store (Windows 10)
-description: Hard-Link Migration Store
+description: Use of a hard-link migration store for a computer-refresh scenario drastically improves migration performance and significantly reduces hard-disk utilization.
 ms.assetid: b0598418-4607-4952-bfa3-b6e4aaa2c574
 ms.reviewer: 
 manager: laurawi
@@ -19,7 +19,7 @@ ms.topic: article
 
 A *hard-link migration store* enables you to perform an in-place migration where all user state is maintained on the computer while the old operating system is removed and the new operating system is installed; this is why it is best suited for the computer-refresh scenario. Use of a hard-link migration store for a computer-refresh scenario drastically improves migration performance and significantly reduces hard-disk utilization, reduces deployment costs and enables entirely new migration scenarios.
 
-## In This Topic
+## In this topic
 
 
 [When to Use a Hard-Link Migration](#bkmk-when)
@@ -75,7 +75,7 @@ A hard link can only be created for a file on the same volume. If you copy a har
 
 For more information about hard links, please see [Hard Links and Junctions](https://go.microsoft.com/fwlink/p/?LinkId=132934)
 
-In most aspects, a hard-link migration store is identical to an uncompressed migration store. It is located where specified by the Scanstate command-line tool and you can view the contents of the store by using Windows® Explorer. Once created, it can be deleted or copied to another location without changing user state. Restoring a hard-link migration store is similar to restoring any other migration store; however, as with creating the store, the same hard-link functionality is used to keep files in-place.
+In most aspects, a hard-link migration store is identical to an uncompressed migration store. It is located where specified by the Scanstate command-line tool and you can view the contents of the store by using Windows&reg; Explorer. Once created, it can be deleted or copied to another location without changing user state. Restoring a hard-link migration store is similar to restoring any other migration store; however, as with creating the store, the same hard-link functionality is used to keep files in-place.
 
 As a best practice, we recommend that you delete the hard-link migration store after you confirm that the Loadstate tool has successfully migrated the files. Since Loadstate has created new paths to the files on your new installation of a Windows operating system, deleting the hard links in the migration store will only delete one path to the files and will not delete the actual files or the paths to them from your new operating system.
 

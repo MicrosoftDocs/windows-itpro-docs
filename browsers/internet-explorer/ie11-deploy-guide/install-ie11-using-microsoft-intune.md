@@ -15,6 +15,9 @@ ms.date: 07/27/2017
 
 
 # Install Internet Explorer 11 (IE11) using Microsoft Intune
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Internet Explorer 11 is available as an update in Microsoft Intune. Microsoft Intune uses Windows cloud services to help you manage updates, monitor and protect your computers, provide remote assistance, track hardware and software inventory, and set security policies. For more information, see the [Documentation Library for Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=301805).
 
 ## Adding and deploying the IE11 package

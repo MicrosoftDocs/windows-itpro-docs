@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Install problems with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Most Internet Explorer 11 installations are straightforward and work the way they should. But it's possible that you might have problems.
 
 If you do, you can:

@@ -1,6 +1,6 @@
 ---
 title: Use VAMT in Windows PowerShell (Windows 10)
-description: Use VAMT in Windows PowerShell
+description: Learn how to use Volume Activation Management Tool (VAMT) PowerShell cmdlets to perform the same functions as the Vamt.exe command-line tool.
 ms.assetid: 13e0ceec-d827-4681-a5c3-8704349e3ba9
 ms.reviewer: 
 manager: laurawi
@@ -57,7 +57,7 @@ get-help get-VamtProduct -all
 ```
 
 **Warning**  
-The update-help cmdlet is not supported for VAMT PowerShell cmdlets. To view online help for VAMT cmdlets, you can use the -online option with the get-help cmdlet. For more information, see [Volume Activation Management Tool (VAMT) Cmdlets in Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=242278).
+The update-help cmdlet is not supported for VAMT PowerShell cmdlets. To view online help for VAMT cmdlets, you can use the -online option with the get-help cmdlet. For more information, see [Volume Activation Management Tool (VAMT) Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/vamt).
 
 **To view VAMT PowerShell Help sections**
 

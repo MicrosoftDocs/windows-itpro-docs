@@ -74,6 +74,9 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 |F | While Windows loads the user's desktop, lsass passes the collected credentials to the Cloud Authentication security support provider, referred to as the Cloud AP provider.  The Cloud AP provider requests a nonce from Azure Active Directory.  Azure AD returns a nonce.|
 |G |  The Cloud AP provider signs the nonce using the user's private key and returns the signed nonce to the Azure Active Directory.  Azure Active Directory validates the signed nonce using the user's securely registered public key against the nonce signature.  After validating the signature, Azure AD then validates the returned signed nonce. After validating the nonce, Azure AD creates a PRT with session key that is encrypted to the device's transport key and returns it to the Cloud AP provider.<br>The Cloud AP provider receives the encrypted PRT with session key.  Using the device's private transport key, the Cloud AP provider decrypt the session key and protects the session key using the device's TPM.<br>The Cloud AP provider returns a successful authentication response to lsass. Lsass caches the PRT.|
 
+> [!IMPORTANT]
+> In the above deployment model, a newly provisioned user will not be able to sign in using Windows Hello for Business until (a) Azure AD Connect successfully synchronizes the public key to the on-premises Active Directory and (b) device has line of sight to the domain controller for the first time.
+
 ## Hybrid Azure AD join authentication using a Certificate
 ![Hybrid Azure AD join authentication using a Certificate](images/howitworks/auth-haadj-certtrust.png)
 
@@ -87,3 +90,5 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 |F | While Windows loads the user's desktop, lsass passes the collected credentials to the Cloud Authentication security support provider, referred to as the Cloud AP provider.  The Cloud AP provider requests a nonce from Azure Active Directory.  Azure AD returns a nonce.|
 |G |  The Cloud AP provider signs the nonce using the user's private key and returns the signed nonce to the Azure Active Directory.  Azure Active Directory validates the signed nonce using the user's securely registered public key against the nonce signature.  After validating the signature, Azure AD then validates the returned signed nonce. After validating the nonce, Azure AD creates a PRT with session key that is encrypted to the device's transport key and returns it to the Cloud AP provider.<br>The Cloud AP provider receives the encrypted PRT with session key.  Using the device's private transport key, the Cloud AP provider decrypt the session key and protects the session key using the device's TPM.<br>The Cloud AP provider returns a successful authentication response to lsass. Lsass caches the PRT.|
 
+> [!IMPORTANT]
+> In the above deployment model, a newly provisioned user will not be able to sign in using Windows Hello for Business unless the device has line of sight to the domain controller for the first time.

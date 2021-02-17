@@ -1,6 +1,6 @@
 ---
 title: Offline Migration Reference (Windows 10)
-description: Offline Migration Reference
+description: Offline migration enables the ScanState tool to run inside a different Windows OS than the Windows OS from which ScanState is gathering files and settings.
 ms.assetid: f347547c-d601-4c3e-8f2d-0138edeacfda
 ms.reviewer: 
 manager: laurawi
@@ -17,7 +17,7 @@ ms.topic: article
 # Offline Migration Reference
 
 
-Offline migration enables the ScanState tool to run inside a different Windows® operating system than the Windows operating system from which ScanState is gathering files and settings. There are two primary offline scenarios:
+Offline migration enables the ScanState tool to run inside a different Windows&reg; operating system than the Windows operating system from which ScanState is gathering files and settings. There are two primary offline scenarios:
 
 -   **Windows PE.** The ScanState tool can be run from within Windows PE, gathering files and settings from the offline Windows operating system on that machine.
 
@@ -31,7 +31,7 @@ When you use User State Migration Tool (USMT) 10.0 to gather and restore user s
 
 -   **New recovery scenario.** In scenarios where a machine no longer restarts properly, it might be possible to gather user state with the ScanState tool from within WinPE.
 
-## In This Topic
+## In This topic
 
 
 -   [What Will Migrate Offline?](#bkmk-whatwillmigrate)
@@ -61,7 +61,7 @@ The following user data and settings migrate offline, similar to an online migra
 
 -   EFS files
 
--   Internet Explorer® Favorites
+-   Internet Explorer&reg; Favorites
 
 For exceptions to what you can migrate offline, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
 
@@ -192,7 +192,7 @@ The following system environment variables are necessary in the scenarios outlin
 <tr class="even">
 <td align="left"><p>MIG_OFFLINE_PLATFORM_ARCH</p></td>
 <td align="left"><p>32 or 64</p></td>
-<td align="left"><p>While operating offline, this environment variable defines the architecture of the offline system, if the system does not match the WinPE and Scanstate.exe architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. This is required when auto-detection of the offline architecture doesn’t function properly, for example, when the source system is running a 64-bit version of Windows XP. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following:</p>
+<td align="left"><p>While operating offline, this environment variable defines the architecture of the offline system, if the system does not match the WinPE and Scanstate.exe architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. This is required when auto-detection of the offline architecture doesn't function properly, for example, when the source system is running a 64-bit version of Windows XP. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following:</p>
 <pre class="syntax" space="preserve"><code>Set MIG_OFFLINE_PLATFORM_ARCH=32</code></pre></td>
 </tr>
 </tbody>
@@ -219,7 +219,7 @@ Syntax: &lt; winDir &gt; &lt;/ winDir &gt;
 
 ### <a href="" id="-path-"></a>&lt;path&gt;
 
-This element is a required child of **&lt;winDir&gt;** and contains a file path pointing to a valid Windows directory. Relative paths are interpreted from the ScanState tool’s working directory.
+This element is a required child of **&lt;winDir&gt;** and contains a file path pointing to a valid Windows directory. Relative paths are interpreted from the ScanState tool's working directory.
 
 Syntax: &lt;path&gt; c:\\windows &lt;/path&gt;
 
@@ -235,7 +235,7 @@ Syntax: &lt;mappings&gt; &lt;/mappings&gt;
 
 ### <a href="" id="-failonmultiplewindir-"></a>&lt;failOnMultipleWinDir&gt;
 
-This element is an optional child of **&lt;offline&gt;**. The **&lt;failOnMultipleWinDir&gt;** element allows the user to specify that the migration should fail when USMT detects that there are multiple instances of Windows installed on the source machine. When the **&lt;failOnMultipleWinDir&gt;** element isn’t present, the default behavior is that the migration does not fail.
+This element is an optional child of **&lt;offline&gt;**. The **&lt;failOnMultipleWinDir&gt;** element allows the user to specify that the migration should fail when USMT detects that there are multiple instances of Windows installed on the source machine. When the **&lt;failOnMultipleWinDir&gt;** element isn't present, the default behavior is that the migration does not fail.
 
 Syntax: &lt;failOnMultipleWinDir&gt;1&lt;/failOnMultipleWinDir&gt; or Syntax: &lt;failOnMultipleWinDir&gt;0&lt;/failOnMultipleWinDir&gt;
 

@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -112,7 +112,7 @@ The following table defines which Windows features require TPM support.
  Windows Features | TPM Required | Supports TPM 1.2  | Supports TPM 2.0  | Details  |
 -|-|-|-|-
  Measured Boot | Yes | Yes | Yes | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot
- BitLocker | Yes | Yes | Yes | TPM 1.2 or 2.0 is required, but [Automatic Device Encryption requires Modern Standby](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) including TPM 2.0 support
+ BitLocker | No | Yes | Yes | TPM 1.2 or 2.0 are supported but TPM 2.0 is recommended. [Automatic Device Encryption requires Modern Standby](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) including TPM 2.0 support
  Device Encryption | Yes | N/A | Yes | Device Encryption requires Modern Standby/Connected Standby certification, which requires TPM 2.0.
  Windows Defender Application Control (Device Guard) | No | Yes | Yes
  Windows Defender System Guard | Yes | No | Yes
@@ -123,7 +123,7 @@ The following table defines which Windows features require TPM support.
  TPM Platform Crypto Provider Key Storage Provider| Yes | Yes | Yes
  Virtual Smart Card | Yes | Yes | Yes
  Certificate storage | No | Yes | Yes | TPM is only required when the certificate is stored in the TPM.
- Autopilot | Yes | No | Yes | TPM 2.0 and UEFI firmware is required for white glove and self-deploying scenarios.
+ Autopilot | No | N/A | Yes | If you intend to deploy a scenario which requires TPM (such as white glove and self-deploying mode), then TPM 2.0 and UEFI firmware are required.
  SecureBIO | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
  DRTM | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
 

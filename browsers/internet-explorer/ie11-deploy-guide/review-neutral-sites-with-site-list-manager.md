@@ -17,6 +17,9 @@ ms.date: 04/02/2020
 
 # Review neutral sites for Internet Explorer mode using the Enterprise Mode Site List Manager
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 - Windows 10

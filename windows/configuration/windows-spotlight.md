@@ -44,7 +44,7 @@ For managed devices running Windows 10 Enterprise and Windows 10 Education, en
 
 -   **Feature suggestions, fun facts, tips**
 
-    The lock screen background will occasionally suggest Windows 10 features that the user hasn't tried yet, such as **Snap assist**.
+    The lock screen background will occasionally make recommendations on how to enhance your productivity and enjoyment of Microsoft products including suggesting other relevant Microsoft products and services.
     
     ![fun facts](images/funfacts.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Conditional Access
-description: Learn more about conditional access in Azure Active Directory.
+description: Ensure that only approved users can access your devices, applications, and services from anywhere by enabling single sign-on with Azure Active Directory.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, conditional access
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -30,6 +30,9 @@ In a mobile-first, cloud-first world, Azure Active Directory enables single sign
 * Protect the corporate assets at any time
 
 To improve productivity, Azure Active Directory provides your users with a broad range of options to access your corporate assets. With application access management, Azure Active Directory enables you to ensure that only the right people can access your applications. What if you want to have more control over how the right people are accessing your resources under certain conditions? What if you even have conditions under which you want to block access to certain applications even for the right people? For example, it might be OK for you if the right people are accessing certain applications from a trusted network; however, you might not want them to access these applications from a network you don't trust. You can address these questions using conditional access.
+
+> [!NOTE]
+> For more details about the way Windows Hello for Business interacts with Azure AD Multi-Factor Authentication and Conditional Access, see [this article](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/why-are-my-users-not-prompted-for-mfa-as-expected/ba-p/1449032).
 
 Read [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) to learn more about Conditional Access.  Afterwards, read [Getting started with conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) to start deploying Conditional access.
 

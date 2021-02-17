@@ -1,9 +1,9 @@
 ---
-title: Get alert related files information 
-description: Retrieves all files related to a specific alert.
+title: Get alert related files information
+description: Retrieve all files related to a specific alert using Microsoft Defender Advanced Threat Protection (Microsoft Defender for Endpoint).
 keywords: apis, graph api, supported apis, get alert information, alert information, related files
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,25 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Get alert related files information API
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+ 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -28,12 +38,12 @@ Retrieves all files related to a specific alert.
 
 
 ## Limitations
-1. You can query on alerts last updated in the past 30 days.
+1. You can query on alerts last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type | Permission | Permission display name
 :---|:---|:---
@@ -43,7 +53,7 @@ Delegated (work or school account) | File.Read.All | 'Read file profiles'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine associated with the alert, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -69,10 +79,8 @@ If successful and alert and files exist - 200 OK. If alert not found - 404 Not F
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-```
-GET https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280442/files
+```http
+GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/files
 ```
 
 **Response**
@@ -80,11 +88,9 @@ GET https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Files",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Files",
     "value": [
         {
             "sha1": "f2a00fd2f2de1be0214b8529f1e9f67096c1aa70",
@@ -97,7 +103,7 @@ Content-type: application/json
             "fileType": null,
             "isPeFile": true,
             "filePublisher": "Microsoft Corporation",
-            "fileProductName": "Microsoft® Windows® Operating System",
+            "fileProductName": "Microsoftï¿½ Windowsï¿½ Operating System",
             "signer": "Microsoft Corporation",
             "issuer": "Microsoft Code Signing PCA",
             "signerHash": "9dc17888b5cfad98b3cb35c1994e96227f061675",

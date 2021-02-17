@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 08/31/2017
+ms.date: 
 ms.reviewer: 
 manager: dansimp
 ---
@@ -32,7 +32,7 @@ In Windows 10, version 1703 (Creators Update), it is straightforward to configur
 | **Microsoft consumer experiences** | **SetEduPolicies** | Disables suggested content from Windows such as app recommendations | This is already set | This is already set | The policy must be set |
 | **Cortana** | **AllowCortana** | Disables Cortana </br></br> * Cortana is enabled by default on all editions in Windows 10, version 1703 | If using Windows 10 Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. </br></br> See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. | If using Windows 10 Pro Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. </br></br> See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. | See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. |
 | **Safe search** | **SetEduPolicies** | Locks Bing safe search to Strict in Microsoft Edge | This is already set | This is already set | The policy must be set |
-| **Bing search advertising** | Ad free search with Bing | Disables ads when searching the internet with Bing in Microsoft Edge | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) |
+| **Bing search advertising** | Ad free search with Bing | Disables ads when searching the internet with Bing in Microsoft Edge. See [Ad-free search with Bing](#ad-free-search-with-bing | View configuration instructions as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | View configuration instructions as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | View configuration instructions as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) |
 | **Apps** | **SetEduPolicies** | Preinstalled apps like Microsoft Edge, Movies & TV, Groove, and Skype become education ready </br></br> * Any app can detect Windows is running in an education ready configuration through [IsEducationEnvironment](https://docs.microsoft.com/uwp/api/windows.system.profile.educationsettings) | This is already set | This is already set | The policy must be set |
 
 
@@ -150,33 +150,9 @@ For example:
         ![Set SetEduPolicies to True in Windows Configuration Designer](images/setedupolicies_wcd.png)
 
 ## Ad-free search with Bing
-Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. Additional information is available at https://www.bing.com/classroom/about-us.
-
-> [!NOTE]  
-> If you enable the guest account in shared PC mode, students using the guest account will not have an ad-free experience searching with Bing in Microsoft Edge unless the PC is connected to your school network and your school network has been configured as described in [IP registration for entire school network using Microsoft Edge](#ip-registration-for-entire-school-network-using-microsoft-edge).
+Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. 
 
 ### Configurations
-
-#### IP registration for entire school network using Microsoft Edge
-Ad-free searching with Bing in Microsoft Edge can be configured at the network level. To configure this, email bingintheclassroom@microsoft.com with the subject "New Windows 10, version 1703 (Creators Update) Registration: [School District Name]" and the include the following information in the body of the email.
-
-**District information**
-- **District or School Name:**
-- **Outbound IP Addresses (IP Range + CIDR):**
-- **Address:**
-- **City:**
-- **State Abbreviation:**
-- **Zip Code:**
-
-**Registrant information**
-- **First Name:**
-- **Last Name:**
-- **Job Title:**
-- **Email Address:**
-- **Opt-In for Email Announcements?:**
-- **Phone Number:**
-
-This will suppress ads when searching with Bing on Microsoft Edge when the PC is connected to the school network. 
 
 #### Azure AD and Office 365 Education tenant
 To suppress ads when searching with Bing on Microsoft Edge on any network, follow these steps:
@@ -185,6 +161,8 @@ To suppress ads when searching with Bing on Microsoft Edge on any network, follo
 2. Domain join the Windows 10 PCs to your Azure AD tenant (this is the same as your Office 365 tenant).
 3. Configure **SetEduPolicies** according to one of the methods described in the previous sections in this topic.
 4. Have students sign in with their Azure AD identity, which is the same as your Office 365 identity, to use the PC.
+> [!NOTE]
+> If you are verifying your Office 365 domain to prove education status (step 1 above), you may need to wait up to 7 days for the ad-free experience to take effect. Microsoft recommends not to roll out the browser to your students until that time.
 
 #### Office 365 sign-in to Bing
 To suppress ads only when the student signs into Bing with their Office 365 account in Microsoft Edge, follow these steps:
@@ -192,8 +170,6 @@ To suppress ads only when the student signs into Bing with their Office 365 acco
 1. Configure **SetEduPolicies** according to one of the methods described in the previous sections in this topic.
 2. Have students sign into Bing with their Office 365 account.
 
-### More information
-For more information on all the possible Bing configuration methods, see https://aka.ms/e4ahor. 
 
 ## Related topics
 [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)

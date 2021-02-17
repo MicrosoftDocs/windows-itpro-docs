@@ -1,11 +1,11 @@
 ---
 title: VPN auto-triggered profile options (Windows 10)
-description: tbd
+description: Learn about the types of auto-trigger rules for VPNs in Windows 10, which start a VPN when it is needed to access a resource.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: dulcemontemayor
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.reviewer: 
@@ -61,13 +61,15 @@ When the trigger occurs, VPN tries to connect. If an error occurs or any user in
 
 When a device has multiple profiles with Always On triggers, the user can specify the active profile in **Settings** > **Network & Internet** > **VPN** > *VPN profile* by selecting the **Let apps automatically use this VPN connection** checkbox. By default, the first MDM-configured profile is marked as **Active**. Devices with multiple users have the same restriction: only one profile and therefore only one user will be able to use the Always On triggers.
 
-Preserving user Always On preference
+## Preserving user Always On preference
 
-Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually unchecks the “Connect automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value AutoTriggerDisabledProfilesList.  
-Should a management tool remove/add the same profile name back and set AlwaysOn to true, Windows will not check the box if the profile name exists in the below registry value in order to preserve user preference.
-Key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Config
-Value: AutoTriggerDisabledProfilesList
-Type: REG_MULTI_SZ
+Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually unchecks the “Connect automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value **AutoTriggerDisabledProfilesList**.  
+
+Should a management tool remove or add the same profile name back and set **AlwaysOn** to **true**, Windows will not check the box if the profile name exists in the following registry value in order to preserve user preference.
+
+**Key:** HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Config<br/>
+**Value:** AutoTriggerDisabledProfilesList<br/>
+**Type:** REG_MULTI_SZ
 
 
 ## Trusted network detection
