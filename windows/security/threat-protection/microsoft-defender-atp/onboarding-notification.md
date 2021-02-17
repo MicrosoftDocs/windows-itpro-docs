@@ -35,7 +35,7 @@ ms.technology: mde
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Create a notification rule so that when a local onboarding or offboardiing script is used, you'll be notified. 
+Create a notification rule so that when a local onboarding or offboarding script is used, you'll be notified. 
 
 ## Before you begin
 You'll need to have access to:
@@ -72,7 +72,7 @@ You'll need to have access to:
    - Audience: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
    - Client ID: Sign-in to https://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and  get the Client ID value.
    - Credential Type: Select "Secret".
-   - Secret: Sign-in to https://portal.azure.com and navigate tnd navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
+   - Secret: Sign-in to https://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
 
     ![Image of the HTTP conditions](images/http-conditions.png)
 

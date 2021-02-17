@@ -16531,6 +16531,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows/deployment/update/waas-mobile-updates.md",
+      "redirect_url": "https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr",
       "redirect_document_id": false
