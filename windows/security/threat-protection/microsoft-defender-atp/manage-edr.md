@@ -2,7 +2,6 @@
 title: Manage endpoint detection and response capabilities
 description: Manage endpoint detection and response capabilities
 ms.reviewer: 
-description: Manage endpoint detection and response capabilities
 keywords: 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
