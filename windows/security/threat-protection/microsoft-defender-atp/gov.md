@@ -20,11 +20,12 @@ ms.technology: mde
 
 # Microsoft Defender for Endpoint for US Government customers
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender for Endpoint for US Government customers, built in the US Azure Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-This offering is available to GCC, GCC High, and DoD customers and is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some differences in the availability of capabilities for this offering.
 
 > [!NOTE]
 > If you are a GCC customer using Defender for Endpoint in Commercial, please refer to the public documentation pages.
