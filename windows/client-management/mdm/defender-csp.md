@@ -421,6 +421,35 @@ Valid values are:
 -	1 – Enable.	
 -	0 (default) – Disable.
 
+<a href="" id="configuration-meteredconnectionupdates"></a>**Configuration/MeteredConnectionUpdates**<br>
+Allow managed devices to update through metered connections. Data charges may apply.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:
+- 1 – Enable.
+- 0 (default) – Disable.
+
+<a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/AllowNetworkProtectionOnWinServer**<br>
+This settings controls whether Network Protection is allowed to be configured into block or audit mode on Windows Server. If false, the value of EnableNetworkProtection will be ignored.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:
+- 1 – Enable.
+- 0 (default) – Disable.
+
+<a href="" id="configuration-exclusionipaddress"></a>**Configuration/ExclusionIpAddress**<br>
+Allows an administrator to explicitly disable network packet inspection made by wdnisdrv on a particular set of IP addresses.
+
+The data type is string.
+
+Supported operations are Add, Delete, Get, Replace.
+
 <a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
 Enables or disables file hash computation feature.
 When this feature is enabled Windows defender will compute hashes for files it scans.
