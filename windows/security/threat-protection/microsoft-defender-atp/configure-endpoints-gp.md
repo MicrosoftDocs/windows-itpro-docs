@@ -124,6 +124,7 @@ Policy | Setting
 Enable\Disable Sample collection|	Enabled - "Enable sample collection on machines" checked
 
 <br/>
+
 **Policy location:**  \Windows Components\Windows Defender Antivirus
 
 Policy | Setting 
@@ -131,6 +132,7 @@ Policy | Setting
 Configure detection for potentially unwanted applications | Enabled, Block
 
 <br/>
+
 **Policy location:** \Windows Components\Windows Defender Antivirus\MAPS
 
 Policy | Setting 
@@ -139,6 +141,7 @@ Join Microsoft MAPS | Enabled, Advanced MAPS
 Send file samples when further analysis is required | Enabled, Send safe samples
 
 <br/>
+
 **Policy location:** \Windows Components\Windows Defender Antivirus\Real-time Protection
 
 Policy | Setting 
@@ -149,6 +152,7 @@ Scan all downloaded files and attachments|Enabled
 Monitor file and program activity on your computer|Enabled
 
 <br/>
+
 **Policy location:**  \Windows Components\Windows Defender Antivirus\Scan
 
 These settings configure periodic scans of the endpoint. We recommend performing a weekly quick scan, performance permitting.
@@ -158,7 +162,9 @@ Policy | Setting
 Check for the latest virus and spyware security intelligence before running a scheduled scan |Enabled
 
 
-<br/>**Policy location:** \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
+<br/>
+
+**Policy location:** \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
 
 Get the current list of attack surface reduction GUIDs from [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 
