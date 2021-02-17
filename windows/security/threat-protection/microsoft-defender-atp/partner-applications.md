@@ -24,9 +24,11 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
 
@@ -105,18 +107,21 @@ Logo |Partner name   | Description
 ![Image of Zimperium logo](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Extend your Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense
 
 
+
 ## Other integrations
+
 Logo |Partner name   | Description 
 :---|:---|:---
 ![Image of Cyren Web Filter logo](images/cyren-logo.png)| [Cyren Web Filter](https://go.microsoft.com/fwlink/?linkid=2108221)| Enhance your Defender for Endpoint with advanced Web Filtering
-![Image of Morphisec logo](images/morphisec-logo.png)| [Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)| Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into WD Security Center dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
+![Image of Morphisec logo](images/morphisec-logo.png)| [Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)| Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Security Center dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
 ![Image of THOR Cloud logo](images/nextron-thor-logo.png)| [THOR Cloud](https://go.microsoft.com/fwlink/?linkid=862988)| Provides on-demand live forensics scans using a signature base with focus on persistent threats
 
 
 
 
 ## SIEM integration
-Defender for Endpoint supports SIEM integration through various methods — specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.  For more information, see [Enable SIEM integration](enable-siem-integration.md).
+Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.  For more information, see [Enable SIEM integration](enable-siem-integration.md).
+
 
 ## Ticketing and IT service management 
 Ticketing solution integration helps to implement manual and automatic response processes. Defender for Endpoint can help to create tickets automatically when an alert is generated and resolve the alerts when tickets are closed using the alerts API. 
@@ -129,12 +134,15 @@ Defender for Endpoint offers unique automated investigation and remediation capa
   
 Integrating the automated investigation and response capability with other solutions such as IDS and firewalls help to address alerts and minimize the complexities surrounding network and device signal correlation, effectively streamlining the investigation and threat remediation actions on devices.  
 
-External alerts can be pushed into Defender for Endpoint and is presented side by side with other device-based alerts from Defender for Endpoint. This view provides a full context of the alert — with the real process and the full story of attack.  
+
+External alerts can be pushed to Defender for Endpoint. These alerts are shown side by side with additional device-based alerts from Defender for Endpoint. This view provides a full context of the alert and can reveal the full story of an attack.  
 
 ## Indicators matching
 You can use threat-intelligence from providers and aggregators to maintain and use indicators of compromise (IOCs).
 
-Defender for Endpoint allows you to integrate with such solutions and act on IoCs by correlating its rich telemetry and creating alerts when there's a match; applying prevention and automated response capabilities to block execution and take remediation actions when there's a match.
+
+Defender for Endpoint allows you to integrate with these solutions and act on IoCs by correlating rich telemetry to create alerts.  You can also useg prevention and automated response capabilities to block execution and take remediation actions when there's a match.
+
 
 Defender for Endpoint currently supports IOC matching and remediation for file and network indicators. Blocking is supported for file indicators.  
 
