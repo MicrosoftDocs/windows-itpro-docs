@@ -1,9 +1,9 @@
 ---
 title: Understanding Application Control event tags (Windows 10)
 description: Learn what different Windows Defender Application Control event tags signify.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 8/27/2020
+ms.technology: mde
 ---
 
 # Understanding Application Control event tags

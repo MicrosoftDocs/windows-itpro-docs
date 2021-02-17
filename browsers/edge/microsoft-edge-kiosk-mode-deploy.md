@@ -11,7 +11,7 @@ ms.prod: edge
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 01/17/2020
+ms.date: 02/16/2021
 ---
 
 # Deploy Microsoft Edge Legacy kiosk mode
@@ -22,7 +22,7 @@ ms.date: 01/17/2020
 > Professional, Enterprise, and Education
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge Legacy (version 45 and earlier.) To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/). For information about kiosk mode in the new version of Microsoft Edge, see [Microsoft Edge kiosk mode](https://docs.microsoft.com/DeployEdge/microsoft-edge-kiosk-mode).
+> You've reached the documentation for Microsoft Edge Legacy (version 45 and earlier.) To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/). For information about kiosk mode in the new version of Microsoft Edge, see [Microsoft Edge kiosk mode](https://docs.microsoft.com/DeployEdge/microsoft-edge-configure-kiosk-mode).
 
 In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge Legacy as a kiosk using assigned access. With assigned access, you create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  Assigned access restricts a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge Legacy in kiosk mode.
 
