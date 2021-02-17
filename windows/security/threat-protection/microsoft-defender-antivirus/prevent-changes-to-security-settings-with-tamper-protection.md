@@ -233,7 +233,9 @@ Configuring tamper protection in Intune or Microsoft Endpoint Manager can be tar
 
 ### Can I configure Tamper Protection in Microsoft Endpoint Configuration Manager?
 
-If you are using tenant attach, you can use Microsoft Endpoint Configuration Manager. See [Manage tamper protection with Configuration Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006) and [Tech Community blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin).
+If you are using tenant attach, you can use Microsoft Endpoint Configuration Manager. See the following resources:
+- [Manage tamper protection for your organization with Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
+- [Tech Community blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
 ### I have the Windows E3 enrollment. Can I use configuring tamper protection in Intune?
 
