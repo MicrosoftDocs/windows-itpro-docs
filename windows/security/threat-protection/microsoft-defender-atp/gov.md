@@ -142,7 +142,7 @@ Automated investigation and remediation: Live response | ![Yes](../images/svg/ch
 Automated investigation and remediation: Response to Office 365 alerts | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Email notifications | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) Rolling out
 Evaluation lab | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Management and APIs: Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) Rolling out
+Management and APIs: Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Management and APIs: Integration with third-party products | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Management and APIs: Streaming API | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Management and APIs: Threat protection report | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
