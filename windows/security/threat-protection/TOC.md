@@ -340,6 +340,7 @@
  
 #### [Devices list]()
 ##### [View and organize the Devices list](microsoft-defender-atp/machines-view-overview.md)
+##### [Techniques in device timeline](microsoft-defender-atp/techniques-device-timeline.md)
 ##### [Device timeline event flags](microsoft-defender-atp/device-timeline-event-flag.md)
 ##### [Manage device group and tags](microsoft-defender-atp/machine-tags.md)
  
