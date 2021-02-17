@@ -37,14 +37,24 @@
       "audience": "ITPro",
       "ms.topic": "article",
       "feedback_system": "None",
-      "hideEdit": true,
+      "hideEdit": false,
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-configuration",
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Configure Windows"
+      "titleSuffix": "Configure Windows",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],
