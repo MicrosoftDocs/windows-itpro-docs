@@ -21,8 +21,8 @@ ms.technology: mde
 #  Microsoft Defender for Endpoint for Android - Privacy information
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 Defender for Endpoint for Android collects information from your configured
