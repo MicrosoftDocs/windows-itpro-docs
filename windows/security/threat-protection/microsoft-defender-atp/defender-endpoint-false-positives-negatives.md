@@ -17,7 +17,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security-compliance 
-- m365initiative-defender-endpoint 
+- m365initiative-defender-endpoint
+- m365solution-scenario
+- m365scenario-fpfn
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
@@ -135,7 +137,8 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Remove a file from quarantine across multiple devices 
 
-![Quarantine file](images/autoir-quarantine-file-1.png)
+> [!div class="mx-imgBorder"]
+> ![Quarantine file](images/autoir-quarantine-file-1.png)
 
 1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
