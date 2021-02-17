@@ -31,7 +31,9 @@ ms.technology: mde
 - Windows Server (SAC) version 1803 and later
 - Windows Server 2019 and later
 - Windows Server 2019 core edition
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
@@ -157,7 +159,7 @@ You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windo
 
 > [!NOTE]
 > - The Onboarding package for Windows Server 2019 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
-> - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.
+> - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
 
 Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
