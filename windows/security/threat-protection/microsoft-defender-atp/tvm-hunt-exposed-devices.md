@@ -38,7 +38,7 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 ### Schema tables
 
-- DeviceTvmSoftwareInventory– A complete list of all software on your devices, whether or not they have any vulnerabilities.
+- DeviceTvmSoftwareInventory – A complete list of all software on your devices, whether or not they have any vulnerabilities.
     - You’ll have a single row for each software installed on every device.
     - EndOfSupportStatus and EndOfSupportDate will have the end-of-support state (if applicable) for specific software versions installed on devices.
 
