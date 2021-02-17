@@ -3076,7 +3076,6 @@ ADMX Info:
 
 <hr/>
 
---Policy-->
 <a href="" id="internetexplorer-configureedgeredirectchannel"></a>**InternetExplorer/ConfigureEdgeRedirectChannel**  
 
 <!--SupportedSKUs-->
@@ -19077,7 +19076,7 @@ If you disable, or not configure this setting, then it opens all sites based on 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Send all sites not included in the Enterprise Mode Site List to Microsoft Edge*
--   GP name: *SendSitesNotInEnterpriseSiteListToEdge*
+-   GP name: *RestrictInternetExplorer*
 -   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*
 
