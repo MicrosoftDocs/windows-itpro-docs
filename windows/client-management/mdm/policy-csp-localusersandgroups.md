@@ -177,14 +177,15 @@ The following example shows how you can update a local group (**Administrators**
 
 > [!NOTE]
 > 
-When AAD group SID’s are added to local groups, during AAD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
- 
-- Administrators
-- Users
-- Guests
-- Power Users
-- Remote Desktop Users
-- Remote Management Users
+> When AAD group SID’s are added to local groups, during AAD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
+> 
+> - Administrators
+> - Users
+> - Guests
+> - Power Users
+> - Remote Desktop Users
+> - Remote Management Users
+
 ## FAQs
 
 This section provides answers to some common questions you might have about the LocalUsersAndGroups policy CSP. 
