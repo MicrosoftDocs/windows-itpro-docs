@@ -24,7 +24,7 @@ This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with 
 >* Windows 10 Enterprise Subscription Activation (EA or MPSA) requires Windows 10 Pro, version 1703 or later.
 >* Windows 10 Enterprise E3 in CSP requires Windows 10 Pro, version 1607 or later.
 >* Automatic, non-KMS activation requires Windows 10, version 1803 or later, on a device with a firmware-embedded activation key.
->* Requires Windows 10 Enterprise per user licensing, does not work on per device licensing.
+>* Windows 10 Enterprise Subscription Activation requires Windows 10 Enterprise per user licensing; it does not work on per device based licensing.
 
 >[!IMPORTANT]
 >An issue has been identified where devices can lose activation status or be blocked from upgrading to Windows Enterprise if the device is not able to connect to Windows Update. A workaround is to ensure that devices do not have the REG_DWORD present HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations and set to 1.  If this REG_DWORD is present, it must be set to 0.
