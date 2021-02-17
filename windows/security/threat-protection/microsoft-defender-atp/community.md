@@ -1,6 +1,6 @@
 ---
 title: Access the Microsoft Defender for Endpoint Community Center
-description: Access the Microsoft Defender ATP Community Center to share experiences, engange, and learn about the product.
+description: Access the Microsoft Defender ATP Community Center to share experiences, engage, and learn about the product.
 keywords: community, community center, tech community, conversation, announcements
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
