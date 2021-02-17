@@ -105,7 +105,7 @@ From the flyout, you can choose any of the following options:
 - [**Exception options**](tvm-exception.md) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
 
 >[!NOTE]
->When a software change is made on a device, it yypically takes 2 hours for the data to be reflected in the Microsoft Defender Security Center. Configuration changes can take 12 hours. However, it may sometimes take longer.
+>When a software change is made on a device, it typically takes 2 hours for the data to be reflected in the security portal. Configuration changes can take 12 hours. However, it may sometimes take longer.
 
 ### Investigate changes in device exposure or impact
 
