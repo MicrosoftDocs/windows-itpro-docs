@@ -63,7 +63,7 @@ Tags are added to the device view and will also be reflected on the **Devices li
 
 >[!NOTE]
 > Filtering might not work on tag names that contain parenthesis.<br>
-> Filtering will only find portal set tags.
+> When you create a new tag, a list of existing tags are displayed. The list only shows tags created through the portal. Existing tags created from client devices will not be displayed.
 
 You can also delete tags from this view.
 
