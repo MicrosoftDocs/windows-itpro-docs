@@ -37,7 +37,7 @@
       "audience": "ITPro",
       "ms.topic": "article",
       "feedback_system": "None",
-      "hideEdit": true,
+      "hideEdit": false,
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-configuration",

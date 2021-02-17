@@ -118,7 +118,6 @@
 #### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](microsoft-defender-antivirus/why-use-microsoft-defender-antivirus.md)
 #### [Better together: Microsoft Defender Antivirus and Office 365](microsoft-defender-antivirus/office-365-microsoft-defender-antivirus.md)
 
-
 ## Reference
 
 ### [Troubleshoot Microsoft Defender for Endpoint]()
