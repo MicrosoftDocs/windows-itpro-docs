@@ -1,7 +1,7 @@
 ---
 title: How to control USB devices and other removable media using Intune (Windows 10)
 description: You can configure Intune settings to reduce threats from removable storage such as USB devices.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,6 +11,7 @@ author: dansimp
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
+ms.technology: mde
 ---
 
 # How to control USB devices and other removable media using Microsoft Defender for Endpoint

@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot issues on Microsoft Defender ATP for Android
-ms.reviewer:
+ms.reviewer: 
 description: Troubleshoot issues for Microsoft Defender ATP for Android
 keywords: microsoft, defender, atp, android, cloud, connectivity, communication
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +15,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Troubleshooting issues on Microsoft Defender for Endpoint for Android
@@ -26,12 +27,12 @@ ms.topic: conceptual
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
--   [Defender for Endpoint](microsoft-defender-atp-android.md)
+When onboarding a device, you might see sign in issues after the app is installed. 
 
-During onboarding, you might encounter sign in issues after the app is installed on your device. 
-
-This article provides solutions to address the sign on issues.  
+This article provides solutions to help address sign in issues.  
 
 ## Sign in failed - unexpected error
 **Sign in failed:** *Unexpected error, try later*
@@ -70,22 +71,22 @@ have a license for Microsoft 365 Enterprise subscription.
 
 Contact your administrator for help.
 
-## Phishing pages are not blocked on specific OEM devices
+## Phishing pages aren't blocked on some OEM devices
 
 **Applies to:** Specific OEMs only
 
 -   **Xiaomi**
 
-Phishing and harmful web connection threats detected by Defender for Endpoint
-for Android are not blocked on some Xiaomi devices. The following functionality does not work on these devices.
+Phishing and harmful web threats that are detected by Defender for Endpoint
+for Android are not blocked on some Xiaomi devices. The following functionality doesn't work on these devices.
 
 ![Image of site reported unsafe](images/0c04975c74746a5cdb085e1d9386e713.png)
 
 
 **Cause:**
 
-Xiaomi devices introduced a new permission that prevents Defender for Endpoint
-for Android app from displaying pop-up windows while running in the background.
+Xiaomi devices include a new permission model. This prevents Defender for Endpoint
+for Android from displaying pop-up windows while it runs in the background.
 
 Xiaomi devices permission: "Display pop-up windows while running in the
 background."

@@ -4,7 +4,7 @@ description: Turn on advanced features such as block file in Microsoft Defender 
 keywords: advanced features, settings, block file, automated investigation, auto-resolve, skype, azure atp, office 365, azure information protection, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -24,13 +25,19 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Defender for Endpoint with.
 
-Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations:
+## Enable advanced features
+
+1. In the navigation pane, select **Preferences setup** > **Advanced features**.
+2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
+3. Click **Save preferences**.
+
+Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations.
 
 ## Automated investigation
 
@@ -41,6 +48,12 @@ Turn on this feature to take advantage of the automated investigation and remedi
 Turn on this feature so that users with the appropriate permissions can start a live response session on devices.
 
 For more information about role assignments, see [Create and manage roles](user-roles.md).
+
+## Live response for servers
+Turn on this feature so that users with the appropriate permissions can start a live response session on servers.
+
+For more information about role assignments, see [Create and manage roles](user-roles.md).
+
 
 ## Live response unsigned script execution
 
@@ -114,22 +127,6 @@ The integration with Azure Advanced Threat Protection allows you to pivot direct
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature.
 
-## Microsoft Secure Score
-
-Forwards Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 security center. Turning on this feature gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the your Microsoft Secure Score data.
-
-### Enable the Defender for Endpoint integration from the Azure ATP portal
-
-To receive contextual device integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
-
-1. Log in to the [Azure portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
-
-2. Click **Create your instance**.
-
-3. Toggle the Integration setting to **On** and click **Save**.
-
-After completing the integration steps on both portals, you'll be able to see relevant alerts in the device details or user details page.
-
 ## Office 365 Threat Intelligence connection
 
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
@@ -159,6 +156,22 @@ Enabling this setting forwards Defender for Endpoint signals to Microsoft Cloud 
 
 Turning on this setting allows signals to be forwarded to Azure Information Protection. It gives data owners and administrators visibility into protected data on onboarded devices and device risk ratings.
 
+## Microsoft Secure Score
+
+Forwards Microsoft Defender ATP signals to Microsoft Secure Score in the Microsoft 365 security center. Turning on this feature gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the your Microsoft Secure Score data.
+
+### Enable the Microsoft Defender ATP integration from the Azure ATP portal
+
+To receive contextual device integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
+
+1. Log in to the [Azure portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
+
+2. Click **Create your instance**.
+
+3. Toggle the Integration setting to **On** and click **Save**.
+
+After completing the integration steps on both portals, you'll be able to see relevant alerts in the device details or user details page.
+
 ## Microsoft Intune connection
 
 Defender for Endpoint can be integrated with [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) to [enable device risk-based conditional access](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). When you [turn on this feature](configure-conditional-access.md), you'll be able to share Defender for Endpoint device information with Intune, enhancing policy enforcement.
@@ -178,7 +191,6 @@ When you enable Intune integration, Intune will automatically create a classic C
 >[!NOTE]
 > The classic CA policy created by Intune is distinct from modern [Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/), which are used for configuring endpoints.
 
-
 ## Preview features
 
 Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.
@@ -190,12 +202,6 @@ You'll have access to upcoming features, which you can provide feedback on to he
 Forwards endpoint security alerts and their triage status to Microsoft Compliance Center, allowing you to enhance insider risk management policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
 
 After configuring the [Security policy violation indicators](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) in the insider risk management settings, Defender for Endpoint alerts will be shared with insider risk management for applicable users.
-
-## Enable advanced features
-
-1. In the navigation pane, select **Preferences setup** > **Advanced features**.
-2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
-3. Click **Save preferences**.
 
 ## Related topics
 

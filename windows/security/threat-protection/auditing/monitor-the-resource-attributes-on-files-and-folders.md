@@ -4,7 +4,7 @@ description: Learn how to use advanced security auditing options to monitor atte
 ms.assetid: 4944097b-320f-44c7-88ed-bf55946a358b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Monitor the resource attributes on files and folders
