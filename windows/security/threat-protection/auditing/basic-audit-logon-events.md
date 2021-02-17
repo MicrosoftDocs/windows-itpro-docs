@@ -4,7 +4,7 @@ description: Determines whether to audit each instance of a user logging on to o
 ms.assetid: 78B5AFCB-0BBD-4C38-9FE9-6B4571B94A35
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Audit logon events

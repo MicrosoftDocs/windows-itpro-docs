@@ -4,7 +4,7 @@ description: Understand the licensing requirements and requirements for onboardi
 keywords: minimum requirements, licensing, comparison table
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,15 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Minimum requirements for Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
 
 There are some minimum requirements for onboarding devices to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
 
@@ -103,11 +107,11 @@ Devices on your network must be running one of these editions.
 The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.
 
 > [!NOTE]
-> Machines running mobile versions of Windows are not supported.
+> Machines running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) are not supported.
 >
-> Virtual Machines running Windows 10 Enterprise 2016 LTSB (which is based on Windows 10, version 1607) may encounter performance issues if run on non-Microsoft virtualization platforms.
+> Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
 >
-> For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 (which is based on Windows 10, version 1809) or later.
+> For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
 
 
 ### Other supported operating systems
@@ -198,13 +202,11 @@ When Microsoft Defender Antivirus is not the active antimalware in your organiza
 
 If your organization has turned off Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded must be excluded from this group policy.
 
-If you are onboarding servers and Microsoft Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Microsoft Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Onboard servers](configure-server-endpoints.md).
+If you are onboarding servers and Microsoft Defender Antivirus is not the active antimalware on your servers, Microsoft Defender Antivirus will either need to be configured to go on passive mode or uninstalled. The configuration is dependent on the server version. For more information, see [Microsoft Defender Antivirus compatibility](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
 > Your regular group policy doesn't apply to Tamper Protection, and changes to Microsoft Defender Antivirus settings will be ignored when Tamper Protection is on.
 
-
-For more information, see [Microsoft Defender Antivirus compatibility](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 ## Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
 If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Defender for Endpoint agent will successfully onboard.

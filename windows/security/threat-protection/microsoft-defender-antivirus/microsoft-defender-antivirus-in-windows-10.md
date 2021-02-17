@@ -3,7 +3,7 @@ title: Next-generation protection in Windows 10, Windows Server 2016, and Window
 description: Learn how to manage, configure, and use Microsoft Defender Antivirus, built-in antimalware and antivirus protection.
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.date: 12/16/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
+ms.technology: mde
 ---
 
 # Next-generation protection in Windows

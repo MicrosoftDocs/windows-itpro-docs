@@ -45,6 +45,48 @@ After the initial logon attempt, the user's Windows Hello for Business public ke
 
 To resolve this behavior, upgrade Windows Server 2016 and 2019 domain controllers to with the latest patches. For Windows Server 2016, this behavior is fixed in build 14393.4104 ([KB4593226](https://support.microsoft.com/help/4593226)) and later. For Windows Server 2019, this behavior is fixed in build 17763.1637 ([KB4592440](https://support.microsoft.com/help/4592440)).
 
+## Azure AD Joined Device Access to On-Premises Resources Using Key Trust and Third-Party Certificate Authority (CA)
+
+Applies to:
+
+- Azure AD joined key trust deployments
+- Third-party certificate authority (CA) issuing domain controller certificates
+
+Windows Hello for Business uses smart card based authentication for many operations. Smart card has special guidelines when using a third-party CA for certificate issuance, some of which apply to the domain controllers. Not all Windows Hello for Business deployment types require these configurations. Accessing on-premises resources from an Azure AD Joined device does require special configuration when using a third-party CA to issue domain controller certificates.
+
+For more information, read [Guidelines for enabling smart card logon with third-party certification authorities](
+https://docs.microsoft.com/troubleshoot/windows-server/windows-security/enabling-smart-card-logon-third-party-certification-authorities).
+
+### Identifying On-premises Resource Access Issues with Third-Party CAs
+
+This issue can be identified using network traces or Kerberos logging from the client. In the network trace, the client will fail to place a TGS_REQ request when a user attempts to access a resource. On the client, this can be observed in the Kerberos operation event log under **Application and Services/Microsoft/Windows/Security-Kerberos/Operational**. These logs are default disabled. The failure event for this case will include the following information:
+
+    Log Name:      Microsoft-Windows-Kerberos/Operational
+    Source:        Microsoft-Windows-Security-Kerberos
+    Event ID:      107
+    GUID:          {98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1} 
+    Task Category: None
+    Level:         Error
+    Keywords:      
+    User:          SYSTEM
+    Description:
+
+    The Kerberos client received a KDC certificate that does not have a matched domain name.
+    
+    Expected Domain Name: ad.contoso.com
+    Error Code: 0xC000006D
+
+### Resolving On-premises Resource Access Issue with Third-Party CAs
+
+To resolve this issue, domain controller certificates need to be updated so the certificate subject contains directory path of the server object (distinguished name).
+Example Subject: CN=DC1 OU=Domain Controller, DC=ad, DC=contoso, DC=com
+
+Alternatively, you can set the subject alternative name (SAN) of the domain controller certificate to contain the server object's fully qualified domain name and the NETBIOS name of the domain.
+Example Subject Alternative Name:
+dns=dc1.ad.contoso.com
+dns=ad.contoso.com
+dns=ad
+
 ## Key Trust Authentication Broken for Windows Server 2019
 
 Applies to:

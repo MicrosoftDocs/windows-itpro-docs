@@ -1,11 +1,11 @@
 ---
 title: Privacy information - Microsoft Defender for Endpoint for iOS
-ms.reviewer:
+ms.reviewer: 
 description: Describes privacy information for Microsoft Defender for Endpoint for iOS
 keywords: microsoft, defender, atp, ios, policy, overview
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,16 +15,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Privacy information - Microsoft Defender for Endpoint for iOS
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint](microsoft-defender-atp-ios.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
 > Defender for Endpoint for iOS uses a VPN to provide the Web Protection feature. This is not a regular VPN and is a local or self-looping VPN that does not take traffic outside the device. **Microsoft or your organization, does not see your browsing activity.**
@@ -41,9 +44,7 @@ Here is a list of the types of data being collected:
 
 ### Web page or Network information 
 
-- Connection information only when a malicious connection or web page is detected. 
-
-- Protocol type (such as HTTP, HTTPS, etc.) only when a malicious connection or web page is detected. 
+- Domain name of the website only when a malicious connection or web page is detected. 
 
 ### Device and account information 
 

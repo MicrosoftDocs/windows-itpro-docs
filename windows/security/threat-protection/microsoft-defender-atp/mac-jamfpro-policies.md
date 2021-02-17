@@ -4,7 +4,7 @@ description: Learn how to set up the Microsoft Defender ATP for macOS policies i
 keywords: policies, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Set up the Microsoft Defender for Endpoint for macOS policies in Jamf Pro
@@ -750,18 +751,14 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     ![Image of configuration settings](images/990742cd9a15ca9fdd37c9f695d1b9f4.png)
 
-4. Navigate to **Advanced Computer Searches**.
-    
-    ![A screenshot of a social media post Description automatically generated](images/95313facfdd5e1ea361981e0a2478fec.png)
-
-5. Select **Computer Management**. 
+4. Select your computer and click the gear icon at the top, then select **Computer Management**.
 
     ![Image of configuration settings](images/b6d671b2f18b89d96c1c8e2ea1991242.png)
 
-6. In **Packages**, select **+ New**. 
+5. In **Packages**, select **+ New**. 
     ![A picture containing bird Description automatically generated](images/57aa4d21e2ccc65466bf284701d4e961.png)
 
-7. In **New Package** Enter the following details:
+6. In **New Package** Enter the following details:
 
     **General tab**
     - Display Name: Leave it blank for now. Because it will be reset when you choose your pkg.
@@ -774,15 +771,17 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
     
     ![A screenshot of a computer screen Description automatically generated](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
-8. Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
+7. Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
+    **Manifest File** is not required. Microsoft Defender Advanced Threat Protection works without Manifest File.
+    
     **Options tab**<br> Keep default values.
 
     **Limitations tab**<br> Keep default values.
     
      ![Image of configuration settings](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
-9. Select **Save**. The package is uploaded to Jamf Pro. 
+8. Select **Save**. The package is uploaded to Jamf Pro. 
 
    ![Image of configuration settings](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -790,45 +789,45 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
    
    ![Image of configuration settings](images/1626d138e6309c6e87bfaab64f5ccf7b.png)
 
-10. Navigate to the **Policies** page.
+9. Navigate to the **Policies** page.
 
     ![Image of configuration settings](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
 
-11. Select **+ New** to create a new policy.
+10. Select **+ New** to create a new policy.
 
     ![Image of configuration settings](images/847b70e54ed04787e415f5180414b310.png)
 
 
-12. In **General** Enter the following details:
+11. In **General** Enter the following details:
 
     - Display name: MDATP Onboarding Contoso 200329 v100.86.92 or later
 
     ![Image of configuration settings](images/625ba6d19e8597f05e4907298a454d28.png)
 
-13. Select **Recurring Check-in**. 
+12. Select **Recurring Check-in**. 
     
     ![Image of configuration settings](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
   
-14. Select **Save**. 
+13. Select **Save**. 
  
-15. Select **Packages > Configure**.
+14. Select **Packages > Configure**.
  
     ![Image of configuration settings](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
-16. Select the **Add** button next to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
+15. Select the **Add** button next to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
     ![Image of configuration settings](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-17. Select **Save**.
+16. Select **Save**.
 
     ![Image of configuration settings](images/9d6e5386e652e00715ff348af72671c6.png)
 
-18. Select the **Scope** tab.  
+17. Select the **Scope** tab.  
 
     ![Image of configuration settings](images/8d80fe378a31143db9be0bacf7ddc5a3.png)
 
-19. Select the target computers.
+18. Select the target computers.
 
     ![Image of configuration settings](images/6eda18a64a660fa149575454e54e7156.png)
 
@@ -844,12 +843,11 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
     
     ![Image of configuration settings](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
 
-20. Select **Done**. 
+19. Select **Done**. 
 
     ![Image of configuration settings](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
     ![Image of configuration settings](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
-
 
 
 

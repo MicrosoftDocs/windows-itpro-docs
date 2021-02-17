@@ -3,7 +3,7 @@ title: Use next-generation technologies in Microsoft Defender Antivirus through 
 description: next-generation technologies in cloud-delivered protection provide an advanced level of fast, robust antivirus detection.
 keywords: Microsoft Defender Antivirus, next-generation technologies, next-generation av, machine learning, antimalware, security, defender, cloud, cloud-delivered protection
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,6 +12,7 @@ ms.author: deniseb
 ms.reviewer: shwjha
 manager: dansimp
 ms.custom: nextgen
+ms.technology: mde
 ---
 
 # Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection

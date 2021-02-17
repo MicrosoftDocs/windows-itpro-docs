@@ -4,7 +4,7 @@ description: Best practices, location, values, policy management, and security c
 ms.assetid: 64d5dde4-58e4-4217-b2c4-73bd554ec926
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network security: Force logoff when logon hours expire
