@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 09/24/2020
+ms.date: 02/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -40,11 +40,8 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ## Onboard devices to Microsoft Defender for Endpoint
 
 1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.
-
 2. Choose **Settings** > **Device management** > **Onboarding**. 
-
 3. In the **Select operating system to start onboarding process** list, select an operating system. 
-
 4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods) (in this article).
 
 ### Onboarding methods
@@ -62,7 +59,6 @@ Deployment methods vary, depending on which operating system is selected. Refer 
 ## Run a detection test
 
 To verify that your onboarded devices are properly connected to Microsoft Defender for Endpoint, you can run a detection test.
-
 
 |Operating system  |Guidance  |
 |---------|---------|

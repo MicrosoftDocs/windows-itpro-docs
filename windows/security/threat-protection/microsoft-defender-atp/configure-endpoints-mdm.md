@@ -22,11 +22,9 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-
-
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
 
@@ -69,20 +67,20 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-   a. In the navigation pane, select **Settings** > **Offboarding**.
+   1. In the navigation pane, select **Settings** > **Offboarding**.
 
-   b. Select Windows 10 as the operating system.
+   1. Select Windows 10 as the operating system.
 
-   c. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
+   1. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
     
-   d. Click **Download package**, and save the .zip file.
+   1. Click **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
 
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings.
 
-      OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding      
-      Date type: String      
+      OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding<br/>
+      Date type: String<br/>
       Value: [Copy and paste the value from the content of the WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding file]
 
 For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).

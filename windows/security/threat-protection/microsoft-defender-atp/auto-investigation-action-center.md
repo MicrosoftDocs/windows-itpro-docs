@@ -1,5 +1,5 @@
 ---
-title: View details and results of automated investigations
+title: Visit the Action center to see remediation actions
 description: Use the action center to view details and results following an automated investigation
 keywords: action, center, autoir, automated, investigation, response, remediation
 search.product: eADQiWindows 10XVcnh
@@ -13,161 +13,69 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
-ms.topic: article
+- m365-security-compliance
+- m365initiative-defender-endpoint
+ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.date: 09/24/2020
+ms.date: 01/28/2021
 ms.technology: mde
 ---
 
-# View details and results of automated investigations
+# Visit the Action center to see remediation actions
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+During and after an automated investigation, remediation actions for threat detections are identified. Depending on the particular threat and how [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) is configured for your organization, some remediation actions are taken automatically, and others require approval. If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center**. 
 
+## (NEW!) A unified Action center
 
-During and after an automated investigation, certain remediation actions can be identified. Depending on the threat and how [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) is configured for your organization, some remediation actions are taken automatically. 
+We are pleased to announce a new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))!
 
-If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center** ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)). You can also use the **Investigations** page ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) to view details about an investigation.
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="Action center in Microsoft 365 security center":::
 
->[!NOTE]
->If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view the device or device group will be able to view the entire investigation. 
+The following table compares the new, unified Action center to the previous Action center.
 
-## The Action center
-
-![Action center page](images/action-center.png)
-
-The action center consists of two main tabs: **Pending actions** and **History**.
-- **Pending actions**  Displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject. The Pending tab appears only if there are pending actions to be approved (or rejected). 
-- **History**  Acts as an audit log for all of the following items: <br/>
-   - Remediation actions that were taken as a result of an automated investigation
-   - Remediation actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone) 
-   - Commands that were run and remediation actions that were applied in Live Response sessions (some actions can be undone)
-   - Remediation actions that were applied by Microsoft Defender Antivirus (some actions can be undone) 
-
-Use the **Customize columns** menu to select columns that you'd like to show or hide. 
-
-You can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
-
-## The Investigations page
-
-![Image of Auto investigations page](images/atp-auto-investigations-list.png)
-
-On the **Investigations** page, you'll find a list of all automated investigations. Select an item in the list to view additional information about that automated investigation.
-
-By default, the automated investigations list displays investigations initiated in the last week. You can also choose to select other time ranges from the drop-down menu or specify a custom range. 
-
-Use the **Customize columns** menu to select columns that you'd like to show or hide. 
-
-From this view, you can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
-
-### Filters for the list of investigations
-
-On the **Investigations** page, you can view details and use filters to focus on specific information. The following table lists available filters:
-
-|Filter  |Description  |
+|The new, unified Action center  |The previous Action center  |
 |---------|---------|
-|**Status**     |(See [Automated investigation status](#automated-investigation-status))         |
-|**Triggering alert** | The alert that initiated the automated investigation |
-|**Detection source** |The source of the alert that initiated the automated investigation |
-|**Entities** | Entities can include device or devices, and device groups. You can filter the automated investigations list to zone in a specific device to see other investigations related to the device, or to see specific device groups that were created. |
-|**Threat** |The category of threat detected during the automated investigation |
-|**Tags** |Filter using manually added tags that capture the context of an automated investigation|
-|**Comments** |Select between filtering the list between automated investigations that have comments and those that don't|
+|Lists pending and completed actions for devices and email in one location <br/>([Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) plus [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp))|Lists pending and completed actions for devices <br/> ([Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) only)   |
+|Is located at:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Is located at:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
+| In the Microsoft 365 security center, choose **Action center**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigating to the Action Center in the Microsoft 365 security center"::: | In the Microsoft Defender Security Center, choose **Automated investigations** > **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigating to the Action center from the Microsoft Defender Security Center":::  |
 
-## Automated investigation status
+The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience. 
 
-An automated investigation can have one of the following status values:
+You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
+- [Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)
+- [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
 
-|Status  |Description  |
+> [!TIP]
+> To learn more, see [Requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
+
+## Using the Action center
+
+To get to the unified Action center in the improved Microsoft 365 security center:
+1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+2. In the navigation pane, select **Action center**. 
+
+When you visit the Action center, you see two tabs: **Pending actions** and **History**. The following table summarizes what you'll see on each tab:
+
+|Tab  |Description  |
 |---------|---------|
-| Running    | The investigation process has started and is underway. Malicious artifacts that are found are remediated.    |
-| Partially investigated      | Entities directly related to the alert have been investigated. However, a problem stopped the investigation of collateral entities. Check the investigation log ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) for specific details. |
-| No threats found | The investigation has finished and no threats were identified. <br/>If you suspect something was missed (such as a false negative), you can use [advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). |
-| Pending action  | The investigation has found a threat, and an action to remediate that threat is awaiting approval. The Pending Action state is triggered when any threat with a corresponding action is found. However, the list of pending actions can increase as an investigation runs. Check the investigation log ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) to see if other items are still pending completion.  |
-| Remediated   | The investigation finished and all actions were approved (fully remediated). |
-| Partially remediated  | The investigation resulted in remediation actions, and some were approved and completed. Other actions are still pending. |
-| Terminated by system  | The investigation stopped. An investigation can stop for several reasons:<br/>- The investigation's pending actions expired. Pending actions can time out after awaiting approval for an extended period of time. <br/>- There are too many actions in the list.<br/>Visit the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) to view and approve any pending actions.     |
-| Failed  | At least one investigation analyzer ran into a problem where it could not complete properly. <br/><br/>If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. Check the investigation log ([https://securitycenter.windows.com/investigations](https://securitycenter.windows.com/investigations)) for detailed results.      |
-| Queued    | An investigation is being held in a queue. When other investigations complete, queued investigations begin.  |
-| Waiting for device | Investigation paused. The investigation will resume as soon as the device is available. |
-| Terminated by user    | A user stopped the investigation before it could complete.  |
+|**Pending**     | Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as **Quarantine file**). <br/>**TIP**: Make sure to [review and approve (or reject) pending actions](manage-auto-investigation.md) as soon as possible so that your automated investigations can complete in a timely manner. |
+|**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br>- Remediation actions that were approved by your security operations team  <br/>- Commands that were run and remediation actions that were applied during Live Response sessions  <br/>- Remediation actions that were taken by threat protection features in Microsoft Defender Antivirus  <p>Provides a way to undo certain actions (see [Undo completed actions](manage-auto-investigation.md#undo-completed-actions)).       |
 
+You can customize, sort, filter, and export data in the Action center.
 
-## View details about an automated investigation
+:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="Columns and filters in the Action center":::
 
-![Image of investigation details window](images/atp-analyze-auto-ir.png)
-
-You can view the details of an automated investigation to see information such as the investigation graph, alerts associated with the investigation, the device that was investigated, and other information.
-
-In this view, you'll see the name of the investigation, when it started and ended. 
-
-### Investigation graph
-
-The investigation graph provides a graphical representation of an automated investigation. All investigation-related information is simplified and arranged in specific sections. Clicking on any of the icons brings you the relevant section where you can view more information.
-
-A progress ring shows two status indicators:
-- Orange ring - shows the pending portion of the investigation
-- Green ring - shows the running time portion of the investigation
-
-![Image of start, end, and pending time for an automated investigation](images/atp-auto-investigation-pending.png) 
-
-In the example image, the automated investigation started on 10:26:59 AM and ended on 10:56:26 AM. Therefore, the entire investigation was running for 29 minutes and 27 seconds. 
-
-The pending time of 16 minutes and 51 seconds reflects two possible pending states: pending for asset (for example, the device might have disconnected from the network) or pending for approval. 
-
-From this view, you can also view and add comments and tags about the investigation.
-
-### Alerts
-
-The **Alerts** tab for an automated investigation shows details such as a short description of the alert that initiated the automated investigation, severity, category, the device associated with the alert, user, time in queue, status, investigation state, and to whom the investigation is assigned. 
-
-Additional alerts seen on a device can be added to an automated investigation as long as the investigation is ongoing. 
-
-Selecting an alert using the check box brings up the alerts details pane where you have the option of opening the alert page, manage the alert by changing its status, see alert details, automated investigation details, related device, logged-on users, and comments and history. 
-
-Clicking on an alert title brings you the alert page.
-
-### Devices
-
-The **Devices** tab Shows details the device name, IP address, group, users, operating system, remediation level, investigation count, and when it was last investigated.
-
-Devices that show the same threat can be added to an ongoing investigation and will be displayed in this tab. If 10 or more devices are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
-
-Selecting a device using the checkbox brings up the device details pane where you can see more information such as device details and logged-on users.
-
-Clicking on a device name brings you the device page.
-
-### Evidence
-
-The **Evidence** tab shows details related to threats associated with this investigation. 
-
-### Entities
-
-The **Entities** tab shows details about entities such as files, process, services, drives, and IP addresses. The table details such as the number of entities that were analyzed. You'll gain insight into details such as how many are remediated, suspicious, or had no threats found.
-
-### Log
-
-The **Log** tab gives a chronological detailed view of all the investigation actions taken on the alert. You'll see the action type, action, status, device name, description of the action, comments entered by analysts who may have worked on the investigation, execution start time, duration, pending duration.
-
-As with other sections, you can customize columns, select the number of items to show per page, and filter the log.
-
-Available filters include action type, action, status, device name, and description.
-
-You can also click on an action to bring up the details pane where you'll see information such as the summary of the action and input data. 
-
-### Pending actions
-
-If there are pending actions on an automated investigation, you'll see a pop-up similar to the following image. 
-
-![Image of pending actions](images/pending-actions.png)
-
-When you click on the pending actions link, you'll be taken to the Action center. You can also navigate to the page from the navigation page by going to **automated investigation** > **Action center**.
+- Select a column heading to sort items in ascending or descending order.
+- Use the time period filter to view data for the past day, week, 30 days, or 6 months.
+- Choose the columns that you want to view.
+- Specify how many items to include on each page of data.
+- Use filters to view just the items you want to see.
+- Select **Export** to export results to a .csv file. 
 
 ## Next steps
 
 - [View and approve remediation actions](manage-auto-investigation.md)
-
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
  
 ## See also

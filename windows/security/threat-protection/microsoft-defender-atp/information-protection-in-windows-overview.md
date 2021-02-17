@@ -22,10 +22,13 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -83,7 +86,7 @@ Data discovery based on Defender for Endpoint is also available in [Azure Log An
 
 For more information on Azure Information Protection analytics, see [Central reporting for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
-Open Azure Log Analytics in Azure Portal and open a query builder (standard or classic).
+Open Azure Log Analytics in Azure portal and open a query builder (standard or classic).
 
 To view Defender for Endpoint data, perform a query that contains:
 
