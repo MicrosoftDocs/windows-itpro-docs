@@ -410,6 +410,17 @@ Valid values are:
 - 1 – Enable.
 - 0 (default) – Disable.
 
+<a href="" id="configuration-disablecputhrottleonidlescans"></a>**Configuration/DisableCpuThrottleOnIdleScans**<br>	
+Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and will not throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.	
+
+The data type is integer.	
+
+Supported operations are Add, Delete, Get, Replace.	
+
+Valid values are:	
+-	1 – Enable.	
+-	0 (default) – Disable.
+
 <a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
 Enables or disables file hash computation feature.
 When this feature is enabled Windows defender will compute hashes for files it scans.
