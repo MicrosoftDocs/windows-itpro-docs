@@ -4,7 +4,7 @@ description: Learn how to confirm that a Group Policy is being applied as expect
 ms.assetid: de0c8dfe-16b0-4d3b-8e8f-9282f6a65eee
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: securit
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Confirm That Certificates Are Deployed Correctly

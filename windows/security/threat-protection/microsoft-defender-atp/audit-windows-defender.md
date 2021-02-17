@@ -3,7 +3,7 @@ title: Test how Microsoft Defender ATP features work in audit mode
 description: Audit mode lets you use the event log to see how Microsoft Defender ATP would protect your devices if it was enabled.
 keywords: exploit guard, audit, auditing, mode, enabled, disabled, test, demo, evaluate, lab
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,6 +13,7 @@ author: levinec
 ms.author: ellevin
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Test how Microsoft Defender for Endpoint features work in audit mode
@@ -20,10 +21,8 @@ manager: dansimp
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 You can enable attack surface reduction rules, exploit protection, network protection, and controlled folder access in audit mode. Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
 

@@ -1,10 +1,10 @@
 ---
 title: Troubleshoot Microsoft Defender ATP live response issues
-description: Troubleshoot issues that might arise when using live response in Microsoft Defender ATP 
+description: Troubleshoot issues that might arise when using live response in Microsoft Defender ATP
 keywords: troubleshoot live response, live, response, locked, file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: troubleshooting
+ms.technology: mde
 ---
 
 # Troubleshoot Microsoft Defender for Endpoint live response issues
@@ -24,7 +25,7 @@ ms.topic: troubleshooting
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 This page provides detailed steps to troubleshoot live response issues.

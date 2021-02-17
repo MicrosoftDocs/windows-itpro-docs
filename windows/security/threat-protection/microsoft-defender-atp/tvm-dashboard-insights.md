@@ -1,10 +1,10 @@
 ---
 title: Dashboard insights - threat and vulnerability management
 description: The threat and vulnerability management dashboard can help SecOps and security admins address cybersecurity threats and build their organization's security resilience.
-keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, threat and vulnerability management, risk-based threat & vulnerability management, security configuration, Microsoft Secure Score for Devices, exposure score    
+keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, threat and vulnerability management, risk-based threat & vulnerability management, security configuration, Microsoft Secure Score for Devices, exposure score
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 # Dashboard insights - threat and vulnerability management
 
@@ -24,7 +25,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)

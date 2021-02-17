@@ -4,7 +4,7 @@ description: Turn on advanced features such as block file in Microsoft Defender 
 keywords: advanced features, settings, block file, automated investigation, auto-resolve, skype, azure atp, office 365, azure information protection, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -24,6 +25,7 @@ ms.topic: article
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 

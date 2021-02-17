@@ -4,7 +4,7 @@ description: Troubleshoot issues that might arise during the onboarding of devic
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
+ms.technology: mde
 ---
 
 # Troubleshoot Microsoft Defender for Endpoint onboarding issues
@@ -24,7 +25,7 @@ ms.topic: troubleshooting
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Windows Server 2012 R2
 - Windows Server 2016
 

@@ -4,7 +4,7 @@ description: Control updates for Microsoft Defender ATP for Mac in enterprise en
 keywords: microsoft, defender, atp, mac, updates, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Deploy updates for Microsoft Defender for Endpoint for Mac

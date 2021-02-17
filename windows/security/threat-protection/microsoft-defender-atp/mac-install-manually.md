@@ -4,7 +4,7 @@ description: Install Microsoft Defender ATP for macOS manually, from the command
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Manual deployment for Microsoft Defender for Endpoint for macOS
@@ -115,7 +116,7 @@ To complete this process, you must have admin privileges on the device.
     The client device is not associated with orgId. Note that the *orgId* attribute is blank.
 
     ```bash
-    mdatp --health orgId
+    mdatp health --field org_id
     ```
 
 2. Run the Python script to install the configuration file:
@@ -127,7 +128,7 @@ To complete this process, you must have admin privileges on the device.
 3. Verify that the device is now associated with your organization and reports a valid *orgId*:
 
     ```bash
-    mdatp --health orgId
+    mdatp health --field org_id
     ```
 
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.

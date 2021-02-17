@@ -1113,8 +1113,8 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
--   0  - Disable (Default)
--   1  - Enable
+-   0  - Disable
+-   1  - Enable (Default)
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1733,18 +1733,19 @@ OS upgrade:
 Update:
 - Maximum deferral: 1 month
 - Deferral increment: 1 week
-- Update type/notes:
-  If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
-      - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
-      - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
-      - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
-      - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
-      - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
-      - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
-      - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
-      - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
+- Update type/notes: If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic:
+  
+  - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
+  - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
+  - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
+  - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
+  - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
+  - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
+  - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
+  - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
 
 Other/cannot defer:
+
 - Maximum deferral: No deferral
 - Deferral increment: No deferral
 - Update type/notes:

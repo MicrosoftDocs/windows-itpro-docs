@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: 66262532-c610-470c-9792-35ff4389430f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Load and unload device drivers

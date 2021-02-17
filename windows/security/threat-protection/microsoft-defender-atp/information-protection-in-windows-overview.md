@@ -1,10 +1,10 @@
 ---
 title: Information protection in Windows overview
-ms.reviewer:
+ms.reviewer: 
 description: Learn about how information protection works in Windows to identify and protect sensitive information
 keywords: information, protection, dlp, data, loss, prevention, protect
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Information protection in Windows overview
@@ -24,7 +25,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

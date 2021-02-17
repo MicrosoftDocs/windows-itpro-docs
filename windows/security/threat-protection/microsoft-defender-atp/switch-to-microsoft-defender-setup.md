@@ -4,8 +4,8 @@ description: This is phase 2, Setup, for switching to Microsoft Defender for End
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,8 +15,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-migratetomdatp
+  - M365-security-compliance
+  - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
 ms.date: 09/22/2020
@@ -138,7 +138,7 @@ Microsoft Defender Antivirus can run alongside your existing endpoint protection
 |Method  |What to do  |
 |---------|---------|
 |Command Prompt     |1. On a Windows device, open Command Prompt as an administrator. <br/><br/>2. Type `sc query windefend`, and then press Enter.<br/><br/>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
-|PowerShell     |1. On a Windows device, open Windows PowerShell as an administrator.<br/><br/>2. Run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/Get-MpComputerStatus) cmdlet. <br/><br/>3. In the list of results, look for **AntivirusEnabled: True**.          |
+|PowerShell     |1. On a Windows device, open Windows PowerShell as an administrator.<br/><br/>2. Run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/Get-MpComputerStatus) cmdlet. <br/><br/>3. In the list of results, look for either **AMRunningMode: Passive Mode** or **AMRunningMode: SxS Passive Mode**.          |
 
 > [!NOTE]
 > You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.

@@ -4,7 +4,7 @@ description: Take response actions on file-related alerts by stopping and quaran
 keywords: respond, stop and quarantine, block file, deep analysis
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Take response actions on a file
@@ -24,7 +25,7 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

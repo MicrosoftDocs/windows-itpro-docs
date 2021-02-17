@@ -4,7 +4,7 @@ description: Learn how to use basic permissions to access the Microsoft Defender
 keywords: assign user roles, assign read and write access, assign read only access, user, user roles, roles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Use basic permissions to access the portal
@@ -24,7 +25,7 @@ ms.topic: article
 **Applies to:**
 
 - Azure Active Directory
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-basicaccess-abovefoldlink)
 
@@ -49,7 +50,7 @@ You can assign users with one of the following levels of permissions:
     > [!NOTE]
     > You need to run the PowerShell cmdlets in an elevated command-line.
 
-- Connect to your Azure Active Directory. For more information, see [Connect-MsolService](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0).
+- Connect to your Azure Active Directory. For more information, see [Connect-MsolService](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true).
 
 **Full access** <br>
 Users with full access can log in, view all system information and resolve alerts, submit files for deep analysis, and download the onboarding package.

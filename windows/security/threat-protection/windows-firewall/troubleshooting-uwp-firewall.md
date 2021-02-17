@@ -1,19 +1,19 @@
 ---
 title: Troubleshooting UWP App Connectivity Issues in Windows Firewall
 description: Troubleshooting UWP App Connectivity Issues in Windows Firewall
-
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
 ms.collection: 
-- m365-security-compliance
-- m365-initiative-windows-security
+  - m365-security-compliance
+  - m365-initiative-windows-security
 ms.topic: troubleshooting
+ms.technology: mde
 ---
 
 # Troubleshooting UWP App Connectivity Issues
