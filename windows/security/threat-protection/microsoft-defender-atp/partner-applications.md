@@ -141,7 +141,7 @@ External alerts can be pushed to Defender for Endpoint. These alerts are shown s
 You can use threat-intelligence from providers and aggregators to maintain and use indicators of compromise (IOCs).
 
 
-Defender for Endpoint allows you to integrate with these solutions and act on IoCs by correlating rich telemetry to create alerts.  You can also useg prevention and automated response capabilities to block execution and take remediation actions when there's a match.
+Defender for Endpoint allows you to integrate with these solutions and act on IoCs by correlating rich telemetry to create alerts.  You can also use prevention and automated response capabilities to block execution and take remediation actions when there's a match.
 
 
 Defender for Endpoint currently supports IOC matching and remediation for file and network indicators. Blocking is supported for file indicators.  
