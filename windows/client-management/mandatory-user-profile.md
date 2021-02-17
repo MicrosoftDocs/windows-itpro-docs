@@ -93,7 +93,7 @@ First, you create a default user profile with the customizations that you want, 
   
 5. The sysprep process reboots the PC and starts at the first-run experience screen. Complete the set up, and then sign in to the computer using an account that has local administrator privileges.
 
-6. Right-click Start, go to **Control Panel** (view by large or small icons) > **System** > **Advanced system settings**, and click **Settings** in the **User Profiles** section.
+6. Right-click **Start**, go to **Control Panel** (view by large or small icons) > **System** > **Advanced system settings**, and click **Settings** in the **User Profiles** section. Alternatively, starting in Windows 10, version 2004, open the **Settings** app and select **Advanced system settings**.
 
 Starting in Windows 10 version (2004) Open the Settings app and click on Advanced system settings
     
@@ -170,4 +170,3 @@ When a user is configured with a mandatory profile, Windows 10 starts as though 
 - [Lock down Windows 10 to specific apps](/windows/configuration/lock-down-windows-10-to-specific-apps)
 - [Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight)
 - [Configure devices without MDM](/windows/configuration/configure-devices-without-mdm)
-
