@@ -4,7 +4,7 @@ description: This topic for IT professionals describes concepts and procedures t
 ms.assetid: 2b7e0cec-df62-49d6-a2b7-6b8e30180943
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Use AppLocker and Software Restriction Policies in the same domain

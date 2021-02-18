@@ -48,7 +48,16 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows 10 for IT Pros"
+      "titleSuffix": "Windows 10 for IT Pros",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
     },
     "fileMetadata": {},
     "template": [],

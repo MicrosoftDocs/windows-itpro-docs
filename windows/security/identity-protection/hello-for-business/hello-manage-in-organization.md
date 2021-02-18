@@ -15,7 +15,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 4/16/2017
+ms.date: 1/20/2021
 ---
 
 # Manage Windows Hello for Business in your organization
@@ -369,9 +369,11 @@ For more information about using the PIN recovery service for PIN reset see [Win
 
 Windows Hello for Business is designed to be managed by Group Policy or MDM but not a combination of both. If policies are set from both sources it can result in a mixed result of what is actually enforced for a user or device.
 
-Policies for Windows Hello for Business are enforced using the following hierarchy: User Group Policy > Computer Group Policy > User MDM > Device MDM > Device Lock policy. All PIN complexity policies are grouped together and enforced from a single policy source.
+Policies for Windows Hello for Business are enforced using the following hierarchy: User Group Policy > Computer Group Policy > User MDM > Device MDM > Device Lock policy. 
 
-Use a hardware security device and RequireSecurityDevice enforcement are also grouped together with PIN complexity policy. Conflict resolution for other Windows Hello for Business policies is enforced on a per policy basis.  
+Feature enablement policy and certificate trust policy are grouped together and enforced from the same source (either GP or MDM), based on the rule above. The Use Passport for Work policy is used to determine the winning policy source.
+
+All PIN complexity policies, are grouped separately from feature enablement and are enforced from a single policy source. Use a hardware security device and RequireSecurityDevice enforcement are also grouped together with PIN complexity policy. Conflict resolution for other Windows Hello for Business policies are enforced on a per policy basis.  
 
 >[!NOTE]
 > Windows Hello for Business policy conflict resolution logic does not respect the ControlPolicyConflict/MDMWinsOverGP policy in the Policy CSP.
@@ -382,8 +384,6 @@ Use a hardware security device and RequireSecurityDevice enforcement are also gr
 >
 >- Use Windows Hello for Business - Enabled
 >- User certificate for on-premises authentication - Enabled
->- Require digits - Enabled
->- Minimum PIN length - 6
 >
 >The following are configured using device MDM Policy:
 >
@@ -398,8 +398,10 @@ Use a hardware security device and RequireSecurityDevice enforcement are also gr
 >
 >- Use Windows Hello for Business - Enabled
 >- Use certificate for on-premises authentication - Enabled
->- Require digits - Enabled
->- Minimum PIN length - 6d
+>- MinimumPINLength - 8
+>- Digits - 1
+>- LowercaseLetters - 1
+>- SpecialCharacters - 1
 
 ## How to use Windows Hello for Business with Azure Active Directory
 
