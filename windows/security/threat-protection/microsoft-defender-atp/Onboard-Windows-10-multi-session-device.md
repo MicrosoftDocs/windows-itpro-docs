@@ -88,15 +88,13 @@ This scenario uses a centrally located script and runs it using a domain-based g
 
 ### Scenario 3: Onboarding using management tools
 
-If you plan to manage your machines using a management tool, you can onboard devices with Microsoft Endpoint Configuration Manager.
-
-For more information, see: [Onboard Windows 10 devices using Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) 
-
-> [!WARNING]
-> If you plan to use [Attack Surface reduction Rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), please note that rule “[Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used as it is incompatible with management through Microsoft Endpoint Manager because this rule blocks WMI commands the Configuration Manager client uses to function correctly. 
-
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test). 
+
+If you plan to manage your machines using a management tool, you can onboard devices with Microsoft Endpoint Configuration Manager. For more information, see: [Onboard Windows 10 devices using Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) 
+
+> [!WARNING]
+> If you plan to use [Attack Surface reduction Rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), the rule “[Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used as it is incompatible with management through Microsoft Endpoint Manager because this rule blocks WMI commands the Configuration Manager client uses to function correctly. 
 
 ## Tagging your machines when building your image 
 
