@@ -39,7 +39,7 @@ Required. Indicates whether this eUICC is physically present and active. Updated
 Supported operation is Get. Value type is boolean.
 
 <a href="" id="euicc-isactive"></a>**_eUICC_/PPR1Allowed**  
-Required. Indicates whether the download of a profile with PPR1 is allowed. If the eUICC already has a profile (regardless of its origin and policy rules associated with it), then the download of a profile with PPR1 is not allowed.
+Required. Indicates whether the download of a profile with PPR1 is allowed. If the eUICC already has a profile (regardless of its origin and policy rules associated with it), the download of a profile with PPR1 is not allowed.
 
 Supported operation is Get. Value type is boolean.
 
