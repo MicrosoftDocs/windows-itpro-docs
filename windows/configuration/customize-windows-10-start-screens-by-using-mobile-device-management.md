@@ -51,6 +51,9 @@ Two features enable Start layout control:
 
 -   In Microsoft Intune, you select the Start layout XML file and add it to a device configuration profile. 
 
+    >[!NOTE]
+    >Please do not include XML Prologs like \<?xml version="1.0" encoding="utf-8"?\> in the Start layout XML file. The settings may not be reflected correctly.
+
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a policy for your customized Start layout
 
 

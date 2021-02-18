@@ -27,8 +27,10 @@ ms.technology: mde
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article describes how to deploy Microsoft Defender for Endpoint for Linux manually. A successful deployment requires the completion of all of the following tasks:
 
@@ -41,6 +43,7 @@ This article describes how to deploy Microsoft Defender for Endpoint for Linux m
   - [Application installation](#application-installation)
   - [Download the onboarding package](#download-the-onboarding-package)
   - [Client configuration](#client-configuration)
+  - [Installer script](#installer-script)
   - [Log installation issues](#log-installation-issues)
   - [Operating system upgrades](#operating-system-upgrades)
   - [Uninstallation](#uninstallation)
@@ -345,6 +348,31 @@ Download the onboarding package from Microsoft Defender Security Center:
         ```
 
     If the test file isn't detected and quarantined, it might be labeled as an allowed threat. See the [allowedThreats](linux-preferences.md#allowed-threats) option and the structure of the configuration profile at [Set preferences for Microsoft Defender for Endpoint for Linux](linux-preferences.md).
+
+## Installer script
+
+Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
+The script identifies the distribution and version, and sets up the device to pull the latest package and install it.
+You can also onboard with a provided script.
+
+```bash
+❯ ./mde_installer.sh --help
+usage: basename ./mde_installer.sh [OPTIONS]
+Options:
+-c|--channel      specify the channel from which you want to install. Default: insiders-fast
+-i|--install      install the product
+-r|--remove       remove the product
+-u|--upgrade      upgrade the existing product
+-o|--onboard      onboard/offboard the product with <onboarding_script>
+-p|--passive-mode set EPP to passive mode
+-t|--tag          set a tag by declaring <name> and <value>. ex: -t GROUP Coders
+-m|--min_req      enforce minimum requirements
+-w|--clean        remove repo from package manager for a specific channel
+-v|--version      print out script version
+-h|--help         display help
+```
+
+Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
 ## Log installation issues
 

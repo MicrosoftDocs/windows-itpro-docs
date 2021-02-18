@@ -102,11 +102,14 @@ Endpoint detection and response capabilities are put in place to detect, investi
 <a name="ai"></a>
 
 **[Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)**<br>
-In addition to quickly responding to advanced attacks, Microsoft Defender for Endpoint offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale.
+In addition to quickly responding to advanced attacks, Microsoft Defender for Endpoint offers automated investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale.
 
-- [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
-- [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
-- [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
+- [Get an overview of automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
+- [Learn about automation levels](microsoft-defender-atp/automation-levels.md)
+- [Configure automated investigation and remediation in Defender for Endpoint](microsoft-defender-atp/configure-automated-investigations-remediation.md)
+- [Visit the Action center to see remediation actions](microsoft-defender-atp/auto-investigation-action-center.md)
+- [Review remediation actions following an automated investigation](microsoft-defender-atp/manage-auto-investigation.md)
+- [View the details and results of an automated investigation](microsoft-defender-atp/autoir-investigation-results.md)
 
 <a name="mte"></a>
 
