@@ -112,7 +112,7 @@ Windows Hello for Business uses multifactor authentication during provisioning a
 
 Review the [What is Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication) topic to familiarize yourself its purpose and how it works.
 
-### Azure AD Multi-Factor Authentication Authentication (MFA) Cloud
+### Azure AD Multi-Factor Authentication (MFA) Cloud
 
 > [!IMPORTANT]
 > As long as your users have licenses that include Azure AD Multi-Factor Authentication, there's nothing that you need to do to turn on Azure MFA. You can start requiring two-step verification on an individual user basis. The licenses that enable Azure MFA are:

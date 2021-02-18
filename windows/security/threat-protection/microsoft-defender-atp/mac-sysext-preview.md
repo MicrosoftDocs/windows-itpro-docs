@@ -4,7 +4,7 @@ description: This article contains instructions for trying out the system extens
 keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,16 +14,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
+ms.technology: mde
 ---
 
 
 # Microsoft Defender for Endpoint for Mac - system extensions public preview)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 In alignment with macOS evolution, we are preparing a Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. This update will only apply to macOS Catalina (10.15.4) and later versions of macOS.
 
@@ -44,7 +49,7 @@ These steps assume you already have Defender for Endpoint running on your device
 - Your device must be in the **Insider Fast update channel**. You can check the update channel by using the following command:
 
   ```bash
-  mdatp --health releaseRing
+  mdatp health --field release_ring
   ```
 
   If your device isn't already in the Insider Fast update channel, execute the following command from the Terminal. The channel update takes effect the next time the product starts (when the next product update is installed, or when the device is rebooted).
@@ -65,8 +70,9 @@ Follow the deployment steps that correspond to your environment and your preferr
 
 1. After all deployment prerequisites are met, restart your device to launch the system extension approval and activation process.
 
-You'll see a series of system prompts to approve the Defender for Endpoint system extensions. You must approve **all** prompts from the series, because macOS requires an explicit approval for each extension that Defender for Endpoint for Mac installs on the device.
-For each approval, select **Open Security Preferences** and then select **Allow** to allow the system extension to run.
+   You'll see a series of system prompts to approve the Defender for Endpoint system extensions. You must approve **all** prompts from the series, because macOS requires an explicit approval for each extension that Defender for Endpoint for Mac installs on the device.
+   
+   For each approval, select **Open Security Preferences** and then select **Allow** to allow the system extension to run.
 
    > [!IMPORTANT]
    > You must close and reopen the **System Preferences** > **Security & Privacy** window between subsequent approvals. Otherwise, macOS will not display the next approval.

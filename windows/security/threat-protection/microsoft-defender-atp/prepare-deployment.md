@@ -4,7 +4,7 @@ description: Prepare stakeholder approval, timelines, environment considerations
 keywords: deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,22 +14,22 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario 
-ms.topic: article 
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
+ms.topic: article
+ms.technology: mde
 ---
 
 # Prepare Microsoft Defender for Endpoint deployment
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Deploying Defender for Endpoint is a three-phase process:
 

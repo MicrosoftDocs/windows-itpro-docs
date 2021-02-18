@@ -3,7 +3,7 @@ title: Microsoft Defender ATP for non-Windows platforms
 description: Learn about Microsoft Defender ATP capabilities  for non-Windows platforms
 keywords: non windows, mac, macos, linux, android
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365solution-evalutatemtp
+  - M365-security-compliance
+  - m365solution-evalutatemtp
 ms.topic: article
+ms.technology: mde
 ---
 
 # Microsoft Defender for Endpoint for non-Windows platforms
@@ -24,7 +25,10 @@ ms.topic: article
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft has been on a journey to extend its industry leading endpoint security
 capabilities beyond Windows and Windows Server to macOS, Linux, Android, and

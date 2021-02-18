@@ -2,7 +2,7 @@
 title: Security intelligence
 description: Learn about different types of malware, safety tips on how you can protect your organization, and resources for industry collaboration programs.
 keywords: security, malware
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -10,8 +10,9 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 # Security intelligence
 
