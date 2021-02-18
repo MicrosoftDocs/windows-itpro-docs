@@ -33,15 +33,8 @@ ms.technology: mde
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-
 Defender for Endpoint supports non-persistent VDI session onboarding. 
 
->[!Note]
->To onboard non-persistent VDI sessions, VDI devices must be Windows 10 or Windows Server 2019.
->
->While other Windows versions might work, only Windows 10 and Windows Server 2019 are supported.
 
 There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
@@ -114,7 +107,22 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 
 ## For downlevel SKUs
-1. Set registry value 'HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging|VDI’ to “NonPersistent'
+
+> [!NOTE]
+> The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
+
+1. Set registry value to:
+
+    ```reg
+   [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
+    "VDI"="NonPersistent"
+    ```
+
+    or using command line:
+
+    ```
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
+    ```
 
 2. Follow the [server onboarding process](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016). 
 
