@@ -44,7 +44,7 @@ Required. Indicates whether the download of a profile with PPR1 is allowed. If t
 Supported operation is Get. Value type is boolean.
 
 <a href="" id="euicc-isactive"></a>**_eUICC_/PPR1AlreadySet**  
-Required. Indicates whether the eUICC has already a profile with PPR1.
+Required. Indicates whether the eUICC already has a profile with PPR1.
 
 Supported operation is Get. Value type is boolean.
 
