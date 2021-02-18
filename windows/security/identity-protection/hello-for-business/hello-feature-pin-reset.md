@@ -35,7 +35,7 @@ ms.reviewer:
 The Microsoft PIN reset services enables you to help users recover who have forgotten their PIN.  Using Group Policy, Microsoft Intune or a compatible MDM, you can configure Windows 10 devices to securely use the Microsoft PIN reset service that enables users to reset their forgotten PIN through settings or above the lock screen without requiring re-enrollment.
 
 >[!IMPORTANT]
-> The Microsoft PIN Reset service only works with **Enterprise Edition** for Windows 10, version 1709 to 1809.  The feature works with **Enterprise Edition** and **Pro edition** with Windows 10, version 1903 and newer.
+> The Microsoft PIN reset service only works with **Enterprise Edition** for Windows 10, version 1709 to 1809.  The feature works with **Enterprise Edition** and **Pro Edition** with Windows 10, version 1903 and later.
 
 ### Onboarding the Microsoft PIN reset service to your Intune tenant
 
