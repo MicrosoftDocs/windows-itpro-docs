@@ -4,7 +4,7 @@ description: This topic explains the five different types of AppLocker rules use
 ms.assetid: 03c05466-4fb3-4880-8d3c-0f6f59fc5579
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Understanding AppLocker rule collections

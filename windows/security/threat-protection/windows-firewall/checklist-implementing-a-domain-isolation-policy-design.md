@@ -4,7 +4,7 @@ description: Use these references to learn about the domain isolation policy des
 ms.assetid: 76586eb3-c13c-4d71-812f-76bff200fc20
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Checklist: Implementing a Domain Isolation Policy Design

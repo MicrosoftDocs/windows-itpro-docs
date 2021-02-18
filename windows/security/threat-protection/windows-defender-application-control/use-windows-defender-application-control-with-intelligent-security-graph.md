@@ -3,7 +3,7 @@ title: Authorize reputable apps with the Intelligent Security Graph (ISG) (Windo
 description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 03/10/2020
+ms.technology: mde
 ---
 
 # Authorize reputable apps with the Intelligent Security Graph (ISG) 

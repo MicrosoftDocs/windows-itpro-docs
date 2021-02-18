@@ -4,7 +4,7 @@ description: Learn how to create an encryption zone to contain devices that host
 ms.assetid: 55a025ce-357f-4d1b-b2ae-6ee32c9abe13
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Encryption Zone

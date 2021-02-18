@@ -4,7 +4,7 @@ description: This topic for IT professional describes the set of rules that can 
 ms.assetid: bdb03d71-05b7-41fb-96e3-a289ce1866e1
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Understanding AppLocker default rules

@@ -8,27 +8,29 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 ms.reviewer: shwetaj
-audience: ITPro 
-ms.topic: article 
-ms.prod: w10 
+audience: ITPro
+ms.topic: article
+ms.prod: m365-security
 ms.localizationpriority: medium
 ms.custom: 
-- next-gen
-- edr
-ms.date: 01/07/2021
+  - next-gen
+  - edr
+ms.date: 01/26/2021
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
+ms.technology: mde
 ---
 
 # Endpoint detection and response (EDR) in block mode
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## What is EDR in block mode?
 
@@ -69,7 +71,7 @@ The following image shows an instance of unwanted software that was detected and
 |Requirement  |Details  |
 |---------|---------|
 |Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). See [Basic permissions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/basic-permissions). |
-|Operating system     |One of the following versions: <br/>- Windows 10 (all releases) <br/>- Windows Server 2016 or later         |
+|Operating system     |One of the following versions: <br/>- Windows 10 (all releases) <br/>- Windows Server, version 1803 or newer <br/>- Windows Server 2019         |
 |Windows E5 enrollment     |Windows E5 is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/><br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide&preserve-view=true#components) and [features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
 |Microsoft Defender Antivirus  |Microsoft Defender Antivirus must be installed and running in either active mode or passive mode. (You can use Microsoft Defender Antivirus alongside a non-Microsoft antivirus solution.) [Confirm Microsoft Defender Antivirus is in active or passive mode](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode). |
 |Cloud-delivered protection |Make sure Microsoft Defender Antivirus is configured such that [cloud-delivered protection is enabled](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus). |
