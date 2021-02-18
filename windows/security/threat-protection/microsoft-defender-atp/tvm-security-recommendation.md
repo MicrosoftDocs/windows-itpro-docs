@@ -27,6 +27,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
@@ -104,7 +105,7 @@ From the flyout, you can choose any of the following options:
 - [**Exception options**](tvm-exception.md) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
 
 >[!NOTE]
->When a change is made on a device, it typically takes two hours for the data to be reflected in the Microsoft Defender Security Center. However, it may sometimes take longer.
+>When a software change is made on a device, it typically takes 2 hours for the data to be reflected in the security portal. Configuration changes can take 12 hours. However, it may sometimes take longer.
 
 ### Investigate changes in device exposure or impact
 

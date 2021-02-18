@@ -27,6 +27,10 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+
 
 >[!NOTE]
 > Configuration score is now part of threat and vulnerability management as Microsoft Secure Score for Devices.
