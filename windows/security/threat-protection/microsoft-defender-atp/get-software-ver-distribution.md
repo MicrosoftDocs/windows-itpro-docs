@@ -1,9 +1,9 @@
 ---
-title: List software version distribution 
-description: Retrieves a list of your organization's software version distribution 
+title: List software version distribution
+description: Retrieves a list of your organization's software version distribution
 keywords: apis, graph api, supported apis, get, software version distribution, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # List software version distribution 
@@ -21,9 +22,14 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:**
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -61,8 +67,8 @@ If successful, this method returns 200 OK with a list of software distributions 
 
 Here is an example of the request.
 
-```
-GET https://api.securitycenter.windows.com/api/Software/microsoft-_-edge/distributions
+```http
+GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/distributions
 ```
 
 **Response**
@@ -70,9 +76,8 @@ GET https://api.securitycenter.windows.com/api/Software/microsoft-_-edge/distrib
 Here is an example of the response.
 
 ```json
-
 {
-    "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#Distributions",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Distributions",
     "value": [
         {
             "version": "11.0.17134.1039",

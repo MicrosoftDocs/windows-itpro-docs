@@ -4,8 +4,8 @@ description: Get an overview of automation levels and how they work in Microsoft
 keywords: automated, investigation, level, defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 ---
 
 # Automation levels in automated investigation and remediation capabilities
+
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Automated investigation and remediation (AIR) capabilities in Microsoft Defender for Endpoint can be configured to one of several levels of automation. Your automation level affects whether remediation actions following AIR investigations are taken automatically or only upon approval.  
 - *Full automation* (recommended) means remediation actions are taken automatically on artifacts determined to be malicious.

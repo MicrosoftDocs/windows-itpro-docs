@@ -3,7 +3,7 @@ title: Get all vulnerabilities
 description: Retrieves a list of all the vulnerabilities affecting the organization
 keywords: apis, graph api, supported apis, get, vulnerability information, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # List vulnerabilities
@@ -22,6 +23,13 @@ ms.topic: article
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -60,8 +68,8 @@ If successful, this method returns 200 OK with the list of vulnerabilities in th
 
 Here is an example of the request.
 
-```
-GET https://api.securitycenter.windows.com/api/Vulnerabilities
+```http
+GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 ```
 
 **Response**
@@ -71,7 +79,7 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#Vulnerabilities",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Vulnerabilities",
     "value": [
         {
             "id": "CVE-2019-0608",

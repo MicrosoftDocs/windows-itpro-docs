@@ -3,7 +3,7 @@ title: Get machine logon users API
 description: Learn how to use the Get machine logon users API to retrieve a collection of logged on users on a device in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, device, log on, users
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Get machine logon users API
@@ -21,9 +22,13 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -73,10 +78,8 @@ If successful and device exists - 200 OK with list of [user](user.md) entities i
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```http
-GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
+GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
 ```
 
 **Response**
@@ -84,11 +87,9 @@ GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932
 Here is an example of the response.
 
 
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Users",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Users",
     "value": [
         {
             "id": "contoso\\user1",
@@ -97,8 +98,6 @@ Content-type: application/json
             "accountSid": "S-1-5-21-72051607-1745760036-109187956-93922",
             "firstSeen": "2019-12-18T08:02:54Z",
             "lastSeen": "2020-01-06T08:01:48Z",
-            "mostPrevalentMachineId": "111153d0c675eaa415b8e5f383c6388bff446c62",
-            "leastPrevalentMachineId": "111153d0c675eaa415b8e5f383c6388bff446c62",
             "logonTypes": "Interactive",
             "logOnMachinesCount": 8,
             "isDomainAdmin": true,

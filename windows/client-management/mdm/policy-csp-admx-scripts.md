@@ -107,7 +107,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows user logon scripts to run when the logon cross-forest, DNS suffixes are not configured, and NetBIOS or WINS is disabled. This policy setting affects all user accounts interactively logging on to the computer.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows user logon scripts to run when the logon cross-forest, DNS suffixes are not configured, and NetBIOS or WINS is disabled. This policy setting affects all user accounts interactively logging on to the computer.
 
 If you enable this policy setting, user logon scripts run if NetBIOS or WINS is disabled during cross-forest logons without the DNS suffixes being configured.
 
@@ -176,7 +176,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines how long the system waits for scripts applied by Group Policy to run. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines how long the system waits for scripts applied by Group Policy to run. 
 
 This setting limits the total time allowed for all logon, logoff, startup, and shutdown scripts applied by Group Policy to finish running. If the scripts have not finished running when the specified time expires, the system stops script processing and records an error event.
 
@@ -251,7 +251,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during computer startup and shutdown. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during computer startup and shutdown. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts. 
  
 If you enable this policy setting, within each applicable Group Policy Object (GPO), Windows PowerShell scripts are run before non-Windows PowerShell scripts during computer startup and shutdown. 
 
@@ -343,7 +343,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting hides the instructions in logon scripts written for Windows NT 4.0 and earlier. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting hides the instructions in logon scripts written for Windows NT 4.0 and earlier. 
 
 Logon scripts are batch files of instructions that run when the user logs on. By default, Windows 2000 displays the instructions in logon scripts written for Windows NT 4.0 and earlier in a command window as they run, although it does not display logon scripts written for Windows 2000.
 
@@ -416,7 +416,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting displays the instructions in logoff scripts as they run.
+Available in the latest Windows 10 Insider Preview Build. This policy setting displays the instructions in logoff scripts as they run.
 
 Logoff scripts are batch files of instructions that run when the user logs off. By default, the system does not display the instructions in the logoff script.
 
@@ -487,7 +487,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting directs the system to wait for logon scripts to finish running before it starts the File Explorer interface program and creates the desktop.
+Available in the latest Windows 10 Insider Preview Build. This policy setting directs the system to wait for logon scripts to finish running before it starts the File Explorer interface program and creates the desktop.
 
 If you enable this policy setting, File Explorer does not start until the logon scripts have finished running. This policy setting ensures that logon script processing is complete before the user starts working, but it can delay the appearance of the desktop.
 
@@ -558,7 +558,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting directs the system to wait for logon scripts to finish running before it starts the File Explorer interface program and creates the desktop.
+Available in the latest Windows 10 Insider Preview Build. This policy setting directs the system to wait for logon scripts to finish running before it starts the File Explorer interface program and creates the desktop.
 
 If you enable this policy setting, File Explorer does not start until the logon scripts have finished running. This policy setting ensures that logon script processing is complete before the user starts working, but it can delay the appearance of the desktop.
 
@@ -629,7 +629,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting displays the instructions in logon scripts as they run.
+Available in the latest Windows 10 Insider Preview Build. This policy setting displays the instructions in logon scripts as they run.
 
 Logon scripts are batch files of instructions that run when the user logs on. By default, the system does not display the instructions in logon scripts.
 
@@ -700,7 +700,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting displays the instructions in shutdown scripts as they run.
+Available in the latest Windows 10 Insider Preview Build. This policy setting displays the instructions in shutdown scripts as they run.
 
 Shutdown scripts are batch files of instructions that run when the user restarts the system or shuts it down. By default, the system does not display the instructions in the shutdown script.
 
@@ -771,7 +771,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting lets the system run startup scripts simultaneously.
+Available in the latest Windows 10 Insider Preview Build. This policy setting lets the system run startup scripts simultaneously.
 
 Startup scripts are batch files that run before the user is invited to log on. By default, the system waits for each startup script to complete before it runs the next startup script.
 
@@ -845,7 +845,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting displays the instructions in startup scripts as they run.
+Available in the latest Windows 10 Insider Preview Build. This policy setting displays the instructions in startup scripts as they run.
 
 Startup scripts are batch files of instructions that run before the user is invited to log on. By default, the system does not display the instructions in the startup script.
 
@@ -920,7 +920,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during user logon and logoff. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during user logon and logoff. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts. 
  
 If you enable this policy setting, within each applicable Group Policy Object (GPO), PowerShell scripts are run before non-PowerShell scripts during user logon and logoff. 
 
@@ -972,14 +972,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

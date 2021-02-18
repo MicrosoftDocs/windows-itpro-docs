@@ -3,7 +3,7 @@ title: Get user information API
 description: Learn how to use the Get user information API to retrieve a User entity by key, or user name, in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, user, user information
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,22 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Get user information API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 Retrieve a User entity by key (user name).
@@ -58,11 +64,8 @@ If successful and user exists - 200 OK with [user](user.md) entity in the body. 
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-```
-GET https://api.securitycenter.windows.com/api/users/user1
-Content-type: application/json
+```http
+GET https://api.securitycenter.microsoft.com/api/users/user1
 ```
 
 **Response**
@@ -70,11 +73,9 @@ Content-type: application/json
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Users/$entity",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Users/$entity",
     "id": "user1",
     "firstSeen": "2018-08-02T00:00:00Z",
     "lastSeen": "2018-08-04T00:00:00Z",

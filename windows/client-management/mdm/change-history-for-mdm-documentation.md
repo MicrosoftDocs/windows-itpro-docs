@@ -21,6 +21,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 |New or updated article | Description|
 |--- | ---|
 | [Policy CSP](policy-configuration-service-provider.md) | Added the following new policy:<br>- [Multitasking/BrowserAltTabBlowout](policy-csp-multitasking.md#multitasking-browseralttabblowout) |
+| [SurfaceHub CSP](surfacehub-csp.md) | Added the following new node:<br>-Properties/SleepMode |
 
 ## October 2020
 

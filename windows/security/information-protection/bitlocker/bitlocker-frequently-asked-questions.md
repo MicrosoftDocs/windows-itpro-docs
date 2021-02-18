@@ -25,9 +25,9 @@ ms.custom: bitlocker
 
 This topic links to frequently asked questions about BitLocker. BitLocker is a data protection feature that encrypts drives on your computer to help prevent data theft or exposure. BitLocker-protected computers can also delete data more securely when they are decommissioned because it is much more difficult to recover deleted data from an encrypted drive than from a non-encrypted drive.
 
--   [Overview and requirements](bitlocker-overview-and-requirements-faq.md)
+-   [Overview and requirements](bitlocker-overview-and-requirements-faq.yml)
 -   [Upgrading](bitlocker-upgrading-faq.md)
--   [Deployment and administration](bitlocker-deployment-and-administration-faq.md)
+-   [Deployment and administration](bitlocker-deployment-and-administration-faq.yml)
 -   [Key management](bitlocker-key-management-faq.md)
 -   [BitLocker To Go](bitlocker-to-go-faq.md)
 -   [Active Directory Domain Services (AD DS)](bitlocker-and-adds-faq.md)

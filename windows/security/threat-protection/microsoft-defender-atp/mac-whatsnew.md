@@ -4,7 +4,7 @@ description: Learn about the major changes for previous versions of Microsoft De
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,34 +14,55 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # What's new in Microsoft Defender for Endpoint for Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!IMPORTANT]
-> In preparation for macOS 11 Big Sur, we are getting ready to release an update to Microsoft Defender for Endpoint for Mac that will leverage new system extensions instead of kernel extensions. Apple will stop supporting kernel extensions starting macOS 11 Big Sur version. Therefore an update to the Microsoft Defender for Endpoint for Mac agent is required on all eligible macOS devices prior to moving these devices to macOS 11.
-> 
-> The update is applicable to devices running macOS version 10.15.4 or later.
-> 
-> To ensure that the Microsoft Defender for Endpoint for Mac update is delivered and applied seamlessly from an end-user experience perspective, a new remote configuration must be deployed to all eligible macOS devices before Microsoft publishes the new agent version. If the configuration is not deployed prior to the Microsoft Defender for Endpoint for Mac agent update, end-users will be presented with a series of system dialogs asking to grant the agent all necessary permissions associated with the new system extensions.
-> 
-> Timing: 
-> - Organizations that previously opted into Microsoft Defender for Endpoint preview features in Microsoft Defender Security Center, must be ready for Microsoft Defender for Endpoint for Mac agent update **by August 10, 2020**.
-> - Organizations that do not participate in public previews for Microsoft Defender for Endpoint features, must be ready **by September 07, 2020**.
-> 
-> Action is needed by IT administrator. Review the steps below and assess the impact on your organization:
-> 
-> 1. Deploy the specified remote configuration to eligible macOS devices before Microsoft publishes the new agent version. <br/>
-> Even though Microsoft Defender for Endpoint for Mac new implementation based on system extensions is only applicable to devices running macOS version 10.15.4 or later, deploying configuration proactively across the entire macOS fleet will ensure that even down-level devices are prepared for the day when Apple releases macOS 11 Big Sur and will ensure that Microsoft Defender for Endpoint for Mac continues protecting all macOS devices regardless OS version they were running prior to the Big Sur upgrade.
-> 
-> 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
-> 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
+> On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
+
+> [!IMPORTANT]
+> Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
+
+## 101.19.88 (20.121011.11988.0)
+
+- Performance improvements & bug fixes
+
+## 101.19.48 (20.120121.11948.0)
+
+> [!NOTE]
+> The old command-line tool syntax has been deprecated with this release. For information on the new syntax, see [Resources](mac-resources.md#configuring-from-the-command-line).
+
+- Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`. This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint for Mac
+- Performance improvements & bug fixes
+
+## 101.19.21 (20.120101.11921.0)
+
+- Bug fixes
+
+## 101.15.26 (20.120102.11526.0)
+
+- Improved the reliability of the agent when running on macOS 11 Big Sur
+- Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
+- Performance improvements & bug fixes
+
+## 101.13.75 (20.120101.11375.0)
+
+- Removed conditions when Microsoft Defender for Endpoint was triggering a macOS 11 (Big Sur) bug that manifests into a kernel panic
+- Fixed a memory leak in the Endpoint Security system extension when running on mac 11 (Big Sur)
+- Bug fixes
 
 ## 101.10.72
 
@@ -56,9 +77,6 @@ ms.topic: conceptual
 ## 101.09.50
 
 - This product version has been validated on macOS Big Sur 11 beta 9
-
-  > [!IMPORTANT]
-  > Extensive testing of MDE (Microsoft Defender for Endpoint) with new macOS system extensions revealed an intermittent issue that impacts macOS devices with specific graphic cards models. In rare cases on impacted macOS devices calls into macOS system extensions were seen resulting in kernel panic. Microsoft is actively working with Apple engineering to clarify profile of impacted devices and to address this macOS issue.
 
 - The new syntax for the `mdatp` command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint for Mac](mac-resources.md#configuring-from-the-command-line)
 
@@ -165,7 +183,7 @@ ms.topic: conceptual
 - Fixed an issue where Microsoft Defender for Endpoint for Mac was sometimes interfering with Time Machine
 - Added a new switch to the command-line utility for testing the connectivity with the backend service
   ```bash
-  mdatp --connectivity-test
+  mdatp connectivity test
   ```
 - Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view)
 - Performance improvements & bug fixes

@@ -4,7 +4,7 @@ description: Enable SIEM integration to receive detections in your security info
 keywords: enable siem connector, siem, connector, security information and events
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,17 +13,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Enable SIEM integration in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
@@ -49,7 +49,7 @@ Enable security information and event management (SIEM) integration so you can p
 ## Enabling SIEM integration 
 1. In the navigation pane, select **Settings** > **SIEM**.
 
-    ![Image of SIEM integration from Settings menu](images/enable_siem.png)
+    ![Image of SIEM integration from Settings menu1](images/enable_siem.png)
 
     >[!TIP]
     >If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability. 
@@ -60,7 +60,7 @@ Enable security information and event management (SIEM) integration so you can p
     >The client secret is only displayed once. Make sure you keep a copy of it in a safe place.<br>
      
 
-    ![Image of SIEM integration from Settings menu](images/siem_details.png)
+    ![Image of SIEM integration from Settings menu2](images/siem_details.png)
 
 3. Choose the SIEM type you use in your organization.
 

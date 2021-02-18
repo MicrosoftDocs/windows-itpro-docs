@@ -96,7 +96,7 @@ This policy only applies to the Alt+Tab switcher. When the policy is not enabled
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure the inclusion of Edge tabs into Alt-Tab*
--   GP name: *MultiTaskingAltTabFilter*
+-   GP name: *BrowserAltTabBlowout*
 -   GP path: *Windows Components/Multitasking*
 -   GP ADMX file name: *Multitasking.admx*
 

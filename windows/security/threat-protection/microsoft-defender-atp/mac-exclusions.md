@@ -4,7 +4,7 @@ description: Provide and validate exclusions for Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, exclusions, scans, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint  
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Configure and validate exclusions for Microsoft Defender for Endpoint for Mac
@@ -25,8 +26,10 @@ ms.topic: conceptual
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article provides information on how to define exclusions that apply to on-demand scans, and real-time protection and monitoring.
 
@@ -57,6 +60,9 @@ Wildcard | Description | Example | Matches | Does not match
 ---|---|---|---|---
 \* |	Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder) | `/var/*/*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
 ? | Matches any single character | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
+
+>[!NOTE]
+>The product attempts to resolve firmlinks when evaluating exclusions. Firmlink resolution does not work when the exclusion contains wildcards or the target file (on the `Data` volume) does not exist.
 
 ## How to configure the list of exclusions
 

@@ -4,7 +4,7 @@ description: Resources for Microsoft Defender ATP for Mac, including how to unin
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,19 +14,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Resources for Microsoft Defender for Endpoint for Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## Collecting diagnostic information
 
@@ -46,13 +48,13 @@ If you can reproduce a problem, increase the logging level, run the system for s
 
 3. Run `sudo mdatp diagnostic create` to back up the Microsoft Defender for Endpoint logs. The files will be stored inside a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
 
-  > [!TIP]
-  > By default, diagnostic logs are saved to `/Library/Application Support/Microsoft/Defender/wdavdiag/`. To change the directory where diagnostic logs are saved, pass `--path [directory]` to the below command, replacing `[directory]` with the desired directory.
+   > [!TIP]
+   > By default, diagnostic logs are saved to `/Library/Application Support/Microsoft/Defender/wdavdiag/`. To change the directory where diagnostic logs are saved, pass `--path [directory]` to the below command, replacing `[directory]` with the desired directory.
 
    ```bash
    sudo mdatp diagnostic create
    ```
-   ```Output
+   ```console
    Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
 
@@ -61,7 +63,7 @@ If you can reproduce a problem, increase the logging level, run the system for s
    ```bash
    mdatp log level set --level info
    ```
-   ```Output
+   ```console
    Log level configured successfully
    ```
 
@@ -90,7 +92,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 
 |Group        |Scenario                                   |Command                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
-|Configuration|Turn on/off real-time protection           |`mdatp config real-time-protection [enabled/disabled]`                            |
+|Configuration|Turn on/off real-time protection           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
 |Configuration|Turn on/off cloud protection               |`mdatp config cloud --value [enabled/disabled]`                                   |
 |Configuration|Turn on/off product diagnostics            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
 |Configuration|Turn on/off automatic sample submission    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
@@ -102,28 +104,27 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Configuration|Turn on audit mode for PUA protection      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
 |Configuration|Turn on/off passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
 |Diagnostics  |Change the log level                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp diagnostic create --path [directory]`                                                         |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp diagnostic create --path [directory]`                                      |
 |Health       |Check the product's health                 |`mdatp health`                                                                    |
 |Health       |Check for a spefic product attribute       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
-|Protection   |Scan a path                                |`mdatp scan custom --path [path]`                                                 |
+|Protection   |Scan a path                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
 |Protection   |Do a quick scan                            |`mdatp scan quick`                                                                |
 |Protection   |Do a full scan                             |`mdatp scan full`                                                                 |
 |Protection   |Cancel an ongoing on-demand scan           |`mdatp scan cancel`                                                               |
 |Protection   |Request a security intelligence update     |`mdatp definitions update`                                                        |
-|EDR          |Turn on/off EDR preview for Mac            |`mdatp edr early-preview [enabled/disabled]`                                      |
 |EDR          |Add group tag to device. EDR tags are used for managing device groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |Remove group tag from device               |`mdatp edr tag remove --tag-name [name]`                                          |
-|EDR          |Add Group Id                               |`mdatp edr group-ids --group-id [group]`                                          |
+|EDR          |Add Group ID                               |`mdatp edr group-ids --group-id [group]`                                          |
 
 ### How to enable autocompletion
 
-To enable autocompletion in `Bash`, run the following command and restart the Terminal session:
+To enable autocompletion in bash, run the following command and restart the Terminal session:
 
 ```bash
 echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
 ```
 
-To enable autocompletion in `zsh`:
+To enable autocompletion in zsh:
 
 - Check whether autocompletion is enabled on your device:
 
@@ -131,7 +132,7 @@ To enable autocompletion in `zsh`:
    cat ~/.zshrc | grep autoload
    ```
 
-- If the above command does not produce any output, you can enable autocompletion using the following command:
+- If the preceding command does not produce any output, you can enable autocompletion using the following command:
 
    ```zsh
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
@@ -148,8 +149,8 @@ To enable autocompletion in `zsh`:
 
 ## Client Microsoft Defender for Endpoint quarantine directory
 
-`/Library/Application Support/Microsoft/Defender/quarantine/` contains the files quarantined by `mdatp`. The files are named after the threat trackingId. The current trackingIds is shown with `mdatp --threat --list --pretty`.
+`/Library/Application Support/Microsoft/Defender/quarantine/` contains the files quarantined by `mdatp`. The files are named after the threat trackingId. The current trackingIds is shown with `mdatp threat list`.
 
 ## Microsoft Defender for Endpoint portal information
 
-[This blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801) provides detailed guidance on what to expect in Microsoft Defender for Endpoint Security Center.
+[EDR capabilities for macOS have now arrived](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801), on the Microsoft Defender for Endpoint blog, provides detailed guidance on what to expect in Microsoft Defender for Endpoint Security Center.

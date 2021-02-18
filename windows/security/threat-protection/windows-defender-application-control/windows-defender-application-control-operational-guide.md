@@ -3,7 +3,7 @@ title: Managing and troubleshooting Windows Defender Application Control policie
 description: Gather information about how your deployed Windows Defender Application Control policies are behaving.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 03/16/2020
+ms.technology: mde
 ---
 
 # Windows Defender Application Control operational guide
@@ -24,7 +25,7 @@ ms.date: 03/16/2020
 - Windows 10
 - Windows Server 2016 and above
 
-After designing and deploying your Windows Defender Application Control (WDAC) policies, this guide covers understanding the effects your policies are having and troubleshooting when they are not behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender Advanced Threat Protection (MDATP) Advanced Hunting feature.
+After designing and deploying your Windows Defender Application Control (WDAC) policies, this guide covers understanding the effects your policies are having and troubleshooting when they are not behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender for Endpoint Advanced Hunting feature.
 
 ## WDAC Events Overview
 
@@ -42,4 +43,4 @@ WDAC events are generated under two locations:
 | - | - |
 | [Understanding Application Control event IDs](event-id-explanations.md) | This topic explains the meaning of different WDAC event IDs. |
 | [Understanding Application Control event tags](event-tag-explanations.md) | This topic explains the meaning of different WDAC event tags. |
-| [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) | This topic covers how to view WDAC events centrally from all systems that are connected to Microsoft Defender ATP. |
+| [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) | This topic covers how to view WDAC events centrally from all systems that are connected to Microsoft Defender for Endpoint. |

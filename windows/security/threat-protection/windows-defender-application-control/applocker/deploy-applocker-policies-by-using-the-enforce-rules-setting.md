@@ -4,7 +4,7 @@ description: This topic for IT professionals describes the steps to deploy AppLo
 ms.assetid: fd3a3d25-ff3b-4060-8390-6262a90749ba
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Deploy AppLocker policies by using the enforce rules setting

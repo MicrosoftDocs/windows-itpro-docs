@@ -4,7 +4,7 @@ description: Learn about best practices, security considerations and more for th
 ms.assetid: cdbc5159-9173-497e-b46b-7325f4256353
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network access: Let Everyone permissions apply to anonymous users

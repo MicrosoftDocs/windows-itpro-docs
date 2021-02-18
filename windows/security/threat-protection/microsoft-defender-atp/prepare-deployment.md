@@ -4,7 +4,7 @@ description: Prepare stakeholder approval, timelines, environment considerations
 keywords: deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,61 +14,34 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario 
-ms.topic: article 
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
+ms.topic: article
+ms.technology: mde
 ---
 
-# Prepare Microsoft Defender ATP deployment
+# Prepare Microsoft Defender for Endpoint deployment
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+Deploying Defender for Endpoint is a three-phase process:
 
+| ![deployment phase - prepare](images/phase-diagrams/prepare.png)<br>Phase 1: Prepare | [![deployment phase - setup](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2: Setup](production-deployment.md) | [![deployment phase - onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3: Onboard](onboarding.md) |
+| ----- | ----- | ----- |
+|*You are here!* | ||
 
-Deploying Microsoft Defender ATP is a three-phase process:
-
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
-        <img src="images/prepare.png" alt="Plan to deploy Microsoft Defender ATP" title="Plan" />
-      <br/>Phase 1: Prepare </a><br>
-    </td>
-     <td align="center"  >
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
-        <img src="images/setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup the Microsoft Defender ATP service" />
-      <br/>Phase 2: Set up </a><br>
-        </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
-        <img src="images/onboard.png" alt="Configure capabilities" title="Configure capabilities" />
-      <br/>Phase 3: Onboard</a><br>
-</td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-  </tr>
-</table>
 
 You are currently in the preparation phase.
 
 
-Preparation is key to any successful deployment. In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Microsoft Defender ATP.
+Preparation is key to any successful deployment. In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Defender for Endpoint.
 
 
 ## Stakeholders and approval
@@ -111,8 +84,7 @@ required in technologies or processes.
 
 ## Role-based access control
 
-Microsoft recommends using the concept of least privileges. Microsoft Defender
-ATP leverages built-in roles within Azure Active Directory. Microsoft recommends
+Microsoft recommends using the concept of least privileges. Defender for Endpoint leverages built-in roles within Azure Active Directory. Microsoft recommends
 [review the different roles that are
 available](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 and choose the right one to solve your needs for each persona for this
@@ -132,7 +104,7 @@ Management](https://docs.microsoft.com/azure/active-directory/active-directory-p
 to manage your roles to provide additional auditing, control, and access review
 for users with directory permissions.
 
-Microsoft Defender ATP supports two ways to manage permissions:
+Defender for Endpoint supports two ways to manage permissions:
 
 -   **Basic permissions management**: Set permissions to either full access or
     read-only. In the case of basic permissions management users with Global
@@ -144,7 +116,7 @@ Microsoft Defender ATP supports two ways to manage permissions:
     groups access to device groups. For more information. see [Manage portal access using role-based access control](rbac.md).
 
 Microsoft recommends leveraging RBAC to ensure that only users that have a
-business justification can access Microsoft Defender ATP.
+business justification can access Defender for Endpoint.
 
 You can find details on permission guidelines
 [here](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group).
@@ -167,24 +139,24 @@ place. The bare minimum every organization should have been an antivirus solutio
 
 Historically, replacing any security solution used to be time intensive and difficult
 to achieve due to the tight hooks into the application layer and infrastructure
-dependencies. However, because Microsoft Defender ATP is built into the
+dependencies. However, because Defender for Endpoint is built into the
 operating system, replacing third-party solutions is now easy to achieve.
 
-Choose the component of Microsoft Defender ATP to be used and remove the ones
+Choose the component of Defender for Endpoint to be used and remove the ones
 that do not apply. The table below indicates the order Microsoft recommends for
 how the endpoint security suite should be enabled.
 
 | Component                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Adoption Order Rank |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Endpoint Detection & Response (EDR)     | Microsoft Defender ATP endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats. <br> [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
-|Threat & Vulnerability Management (TVM)|Threat & Vulnerability Management is a component of Microsoft Defender ATP, and provides both security administrators and security operations teams with unique value, including: <br> - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities <br> - Invaluable device vulnerability context during incident investigations <br> -  Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager <br> [Learn more](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).| 2 |
+| Endpoint Detection & Response (EDR)     | Defender for Endpoint endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats. <br> [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
+|Threat & Vulnerability Management (TVM)|Threat & Vulnerability Management is a component of Microsoft Defender for Endpoint, and provides both security administrators and security operations teams with unique value, including: <br> - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities <br> - Invaluable device vulnerability context during incident investigations <br> -  Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager <br> [Learn more](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).| 2 |
 | Next-generation protection (NGP)        | Microsoft Defender Antivirus is a built-in antimalware solution that provides next-generation protection for desktops, portable computers, and servers. Microsoft Defender Antivirus includes: <br> -Cloud-delivered protection for near-instant detection and blocking of new and emerging threats. Along with machine learning and the Intelligent Security Graph, cloud-delivered protection is part of the next-gen technologies that power Microsoft Defender Antivirus.   <br> -  Always-on scanning using advanced file and process behavior monitoring and other heuristics (also known as "real-time protection"). <br> - Dedicated protection updates based on machine-learning, human and automated big-data analysis, and in-depth threat resistance research. <br> [Learn more](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
-| Attack Surface Reduction (ASR)          | Attack surface reduction capabilities in Microsoft Defender ATP help protect the devices and applications in the organization from new and emerging threats. <br> [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)                                                                                                                                                                                                                                                                                                                                                                                       | 4                   |
-| Auto Investigation & Remediation (AIR)  | Microsoft Defender ATP uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. <br>[Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) | Not applicable      |
+| Attack Surface Reduction (ASR)          | Attack surface reduction capabilities in Microsoft Defender for Endpoint help protect the devices and applications in the organization from new and emerging threats. <br> [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)                                                                                                                                                                                                                                                                                                                                                                                       | 4                   |
+| Auto Investigation & Remediation (AIR)  | Microsoft Defender for Endpoint uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. <br>[Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) | Not applicable      |
 | Microsoft Threat Experts (MTE)          | Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don't get missed. <br>[Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | Not applicable      |
 
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Set up Microsoft Defender ATP deployment
+|![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Set up Microsoft Defender for Endpoint deployment
 

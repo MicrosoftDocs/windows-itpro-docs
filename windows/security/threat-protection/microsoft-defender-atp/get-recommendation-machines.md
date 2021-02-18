@@ -1,9 +1,9 @@
 ---
 title: List devices by recommendation
-description: Retrieves a list of devices associated with the security recommendation. 
-keywords: apis, graph api, supported apis, get, security recommendation for vulnerable devices, threat and vulnerability management, threat and vulnerability management api 
+description: Retrieves a list of devices associated with the security recommendation.
+keywords: apis, graph api, supported apis, get, security recommendation for vulnerable devices, threat and vulnerability management, threat and vulnerability management api
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,17 +12,23 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # List devices by recommendation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:**
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -61,8 +67,8 @@ If successful, this method returns 200 OK with the list of devices associated wi
 
 Here is an example of the request.
 
-```
-GET https://api.securitycenter.windows.com/api/recommendations/va-_-google-_-chrome/machineReferences
+```http
+GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome/machineReferences
 ```
 
 **Response**
@@ -71,7 +77,7 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineReferences",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#MachineReferences",
     "value": [
         {
             "id": "e058770379bc199a9c179ce52a23e16fd44fd2ee",

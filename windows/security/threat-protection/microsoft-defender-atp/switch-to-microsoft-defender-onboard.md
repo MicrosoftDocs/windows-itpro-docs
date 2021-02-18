@@ -4,8 +4,8 @@ description: This is phase 3, Onboard, for migrating from a non-Microsoft soluti
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,17 +15,25 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365solution-migratetomdatp
+  - M365-security-compliance
+  - m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 09/24/2020
+ms.date: 02/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
 # Switch to Microsoft Defender for Endpoint - Phase 3: Onboard
 
-|[![Phase 1: Prepare](images/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md) |[![Phase 2: Set up](images/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) |![Phase 3: Onboard](images/onboard.png)<br/>Phase 3: Onboard |
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+|[![Phase 1: Prepare](images/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare2](switch-to-microsoft-defender-prepare.md) |[![Phase 2: Set up](images/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up2](switch-to-microsoft-defender-setup.md) |![Phase 3: Onboard1](images/onboard.png)<br/>Phase 3: Onboard |
+|[![Phase 1: Prepare3](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare4](switch-to-microsoft-defender-prepare.md) |[![Phase 2: Set up2](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) |![Phase 3: Onboard2](images/phase-diagrams/onboard.png)<br/>Phase 3: Onboard |
+
 |--|--|--|
 || |*You are here!* |
 
@@ -40,11 +48,8 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ## Onboard devices to Microsoft Defender for Endpoint
 
 1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.
-
 2. Choose **Settings** > **Device management** > **Onboarding**. 
-
 3. In the **Select operating system to start onboarding process** list, select an operating system. 
-
 4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods) (in this article).
 
 ### Onboarding methods
@@ -62,7 +67,6 @@ Deployment methods vary, depending on which operating system is selected. Refer 
 ## Run a detection test
 
 To verify that your onboarded devices are properly connected to Microsoft Defender for Endpoint, you can run a detection test.
-
 
 |Operating system  |Guidance  |
 |---------|---------|

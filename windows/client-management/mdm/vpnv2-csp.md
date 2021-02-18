@@ -52,7 +52,7 @@ Supported operations include Get, Add, and Delete.
 Optional node. List of applications set to trigger the VPN. If any of these apps are launched and the VPN profile is currently the active profile, this VPN profile will be triggered to connect.
 
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>  
-A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you should not skip numbers.
+A sequential integer identifier that allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you should not skip numbers.
 
 Supported operations include Get, Add, Replace, and Delete.
 
@@ -132,7 +132,7 @@ Returns the namespace type. This value can be one of the following:
 Value type is chr. Supported operation is Get.
 
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-dnsservers"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/DnsServers**  
-List of comma separated DNS Server IP addresses to use for the namespace.
+List of comma-separated DNS Server IP addresses to use for the namespace.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -202,7 +202,7 @@ Numeric value from 0-255 representing the IP protocol to allow. For example, TCP
 Value type is int. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-localportranges"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/LocalPortRanges**  
-A list of comma separated values specifying local port ranges to allow. For example, `100-120, 200, 300-320`.
+A list of comma-separated values specifying local port ranges to allow. For example, `100-120, 200, 300-320`.
 
 > [!NOTE]
 > Ports are only valid when the protocol is set to TCP=6 or UDP=17.
@@ -210,7 +210,7 @@ A list of comma separated values specifying local port ranges to allow. For exam
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-remoteportranges"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/RemotePortRanges**  
-A list of comma separated values specifying remote port ranges to allow. For example, `100-120, 200, 300-320`.
+A list of comma-separated values specifying remote port ranges to allow. For example, `100-120, 200, 300-320`.
 
 > [!NOTE]
 > Ports are only valid when the protocol is set to TCP=6 or UDP=17.
@@ -218,12 +218,12 @@ A list of comma separated values specifying remote port ranges to allow. For exa
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-localaddressranges"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/LocalAddressRanges**  
-A list of comma separated values specifying local IP address ranges to allow.
+A list of comma-separated values specifying local IP address ranges to allow.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-remoteaddressranges"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/RemoteAddressRanges**  
-A list of comma separated values specifying remote IP address ranges to allow.
+A list of comma-separated values specifying remote IP address ranges to allow.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -241,9 +241,9 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 Added in Windows 10, version 2004. Specifies the traffic direction to apply this policy to. Default is Outbound. The value can be one of the following:
 
 - Outbound - The rule applies to all outbound traffic
-- nbound - The rule applies to all inbound traffic
+- Inbound - The rule applies to all inbound traffic
 
-If no inbound filter is provided, then by default all unsolicated inbound traffic will be blocked.
+If no inbound filter is provided, then by default all unsolicited inbound traffic will be blocked.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -281,25 +281,6 @@ Valid values:
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-lockdown"></a>**VPNv2/**<em>ProfileName</em>**/LockDown**  (./Device only profile)  
-Lockdown profile.
-
-Valid values:
-
-- False (default) - this is not a LockDown profile.
-- True - this is a LockDown profile.
-
-When the LockDown profile is turned on, it does the following things:
-
-- First, it automatically becomes an "always on" profile.
-- Second, it can never be disconnected.
-- Third, if the profile is not connected, then the user has no network.
-- Fourth, no other profiles may be connected or modified.
-
-A Lockdown profile must be deleted before you can add, remove, or connect other profiles.
-
-Value type is bool. Supported operations include Get, Add, Replace, and Delete.
-
 <a href="" id="vpnv2-profilename-devicetunnel"></a>**VPNv2/**<em>ProfileName</em>**/DeviceTunnel**  (./Device only profile)  
 Device tunnel profile.
 
@@ -327,7 +308,7 @@ Valid values:
 - True = Register the connection's addresses in DNS.
 
 <a href="" id="vpnv2-profilename-dnssuffix"></a>**VPNv2/**<em>ProfileName</em>**/DnsSuffix**  
-Optional. Specifies one or more comma separated DNS suffixes. The first in the list is also used as the primary connection specific DNS suffix for the VPN Interface. The entire list will also be added into the SuffixSearchList.
+Optional. Specifies one or more comma-separated DNS suffixes. The first in the list is also used as the primary connection specific DNS suffix for the VPN Interface. The entire list will also be added into the SuffixSearchList.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -345,7 +326,10 @@ Added in Windows 10, version 1607. The XML schema for provisioning all the fiel
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-proxy"></a>**VPNv2/**<em>ProfileName</em>**/Proxy**  
-A collection of configuration objects to enable a post-connect proxy support for VPN. The proxy defined for this profile is applied when this profile is active and connected.
+A collection of configuration objects to enable a post-connect proxy support for VPN Force Tunnel connections. The proxy defined for this profile is applied when this profile is active and connected.
+
+> [!NOTE]
+> VPN proxy settings are used only on Force Tunnel connections. On Split Tunnel connections, the general proxy settings are used.
 
 <a href="" id="vpnv2-profilename-proxy-manual"></a>**VPNv2/**<em>ProfileName</em>**/Proxy/Manual**  
 Optional node containing the manual server settings.
@@ -436,7 +420,7 @@ Required for native profiles. Public or routable IP address or DNS name for the 
 
 The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. 
 
-You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
+You can make a list of server by making a list of server names (with optional friendly names) separated by commas. For example, server1.example.com,server2.example.com.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -1324,7 +1308,6 @@ Servers
  
 
  
-
 
 
 

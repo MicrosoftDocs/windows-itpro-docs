@@ -1,11 +1,11 @@
 ---
 title: Deploy Microsoft Defender ATP for Linux with Ansible
-ms.reviewer:
+ms.reviewer: 
 description: Describes how to deploy Microsoft Defender ATP for Linux using Ansible.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +15,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Deploy Microsoft Defender for Endpoint for Linux with Ansible
@@ -26,8 +27,10 @@ ms.topic: conceptual
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article describes how to deploy Defender for Endpoint for Linux using Ansible. A successful deployment requires the completion of all of the following tasks:
 
@@ -140,28 +143,34 @@ Create a subtask or role files that contribute to an playbook or task.
 
   ```bash
   - name: Add Microsoft APT key
-      apt_key:
-          keyserver: https://packages.microsoft.com/
-          id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
-      when: ansible_os_family == "Debian"
+    apt_key:
+      keyserver: https://packages.microsoft.com/
+      id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
+    when: ansible_os_family == "Debian"
 
   - name: Add Microsoft apt repository for MDATP
-      apt_repository:
-          repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
-          update_cache: yes
-          state: present
-          filename: microsoft-[channel].list
-      when: ansible_os_family == "Debian"
+    apt_repository:
+      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
+      update_cache: yes
+      state: present
+      filename: microsoft-[channel].list
+    when: ansible_os_family == "Debian"
+
+  - name: Add Microsoft DNF/YUM key
+    rpm_key:
+      state: present
+      key: https://packages.microsoft.com/keys/microsoft.asc
+    when: ansible_os_family == "RedHat"
 
   - name: Add  Microsoft yum repository for MDATP
-      yum_repository:
-          name: packages-microsoft-com-prod-[channel]
-          description: Microsoft Defender for Endpoint
-          file: microsoft-[channel]
-          baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
-          gpgcheck: yes
-          enabled: Yes
-      when: ansible_os_family == "RedHat"
+    yum_repository:
+      name: packages-microsoft-com-prod-[channel]
+      description: Microsoft Defender for Endpoint
+      file: microsoft-[channel]
+      baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+      gpgcheck: yes
+      enabled: Yes
+  when: ansible_os_family == "RedHat"
   ```
 
 - Create the Ansible install and uninstall YAML files.
@@ -173,13 +182,13 @@ Create a subtask or role files that contribute to an playbook or task.
         ```
         ```Output
         - hosts: servers
-            tasks:
-                - include: ../roles/onboarding_setup.yml
-                - include: ../roles/add_apt_repo.yml
-                - apt:
-                    name: mdatp
-                    state: latest
-                    update_cache: yes
+          tasks:
+            - include: ../roles/onboarding_setup.yml
+            - include: ../roles/add_apt_repo.yml
+            - apt:
+                name: mdatp
+                state: latest
+                update_cache: yes
         ```
 
         ```bash
@@ -200,13 +209,13 @@ Create a subtask or role files that contribute to an playbook or task.
         ```
         ```Output
         - hosts: servers
-        tasks:
+          tasks:
             - include: ../roles/onboarding_setup.yml
             - include: ../roles/add_yum_repo.yml
             - yum:
-                name: mdatp
-                state: latest
-                enablerepo: packages-microsoft-com-prod-[channel]
+              name: mdatp
+              state: latest
+              enablerepo: packages-microsoft-com-prod-[channel]
         ```
 
         ```bash
@@ -216,7 +225,7 @@ Create a subtask or role files that contribute to an playbook or task.
         - hosts: servers
         tasks:
             - yum:
-                name: mdatp
+               name: mdatp
                 state: absent
         ```
 

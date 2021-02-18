@@ -3,7 +3,7 @@ title: List machineActions API
 description: Learn how to use the List MachineActions API to retrieve a collection of Machine Actions in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, machineaction collection
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # List MachineActions API
@@ -21,9 +22,13 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -54,7 +59,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 ## HTTP request
 ```
-GET https://api.securitycenter.windows.com/api/machineactions
+GET https://api.securitycenter.microsoft.com/api/machineactions
 ```
 
 ## Request headers
@@ -77,10 +82,8 @@ If successful, this method returns 200, Ok response code with a collection of [m
 
 Here is an example of the request on an organization that has three MachineActions.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-```
-GET https://api.securitycenter.windows.com/api/machineactions
+```http
+GET https://api.securitycenter.microsoft.com/api/machineactions
 ```
 
 **Response**
@@ -88,11 +91,9 @@ GET https://api.securitycenter.windows.com/api/machineactions
 Here is an example of the response.
 
 
-```
-HTTP/1.1 200 Ok
-Content-type: application/json
+```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#MachineActions",
     "value": [
         {
             "id": "69dc3630-1ccc-4342-acf3-35286eec741d",
@@ -147,20 +148,18 @@ Content-type: application/json
 Here is an example of a request that filters the MachineActions by machine ID and shows the latest two MachineActions.
 
 ```
-GET https://api.securitycenter.windows.com/api/machineactions?$filter=machineId eq 'f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f'&$top=2
+GET https://api.securitycenter.microsoft.com/api/machineactions?$filter=machineId eq 'f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f'&$top=2
 ```
 
 **Response**
 
 Here is an example of the response.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
 HTTP/1.1 200 Ok
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#MachineActions",
     "value": [
         {
             "id": "69dc3630-1ccc-4342-acf3-35286eec741d",

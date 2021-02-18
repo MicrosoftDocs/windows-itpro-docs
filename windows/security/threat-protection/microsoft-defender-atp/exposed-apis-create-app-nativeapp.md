@@ -1,10 +1,10 @@
 ---
-title: Use Microsoft Defender for Endpoint APIs  
+title: Use Microsoft Defender for Endpoint APIs
 ms.reviewer: 
 description: Learn how to design a native Windows app to get programmatic access to Microsoft Defender for Endpoint without a user.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Use Microsoft Defender for Endpoint APIs
@@ -22,9 +23,14 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 This page describes how to create an application to get programmatic access to Defender for Endpoint on behalf of a user.
 
@@ -50,18 +56,30 @@ This page explains how to create an AAD application, get an access token to Micr
 
 ## Create an app
 
-1. Log on to [Azure](https://portal.azure.com) with user that has **Global Administrator** role.
+1. Log on to [Azure](https://portal.azure.com) with a user account that has the **Global Administrator** role.
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
 
    ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
 
-3. In the registration from, enter the following information then select **Register**.
+3. When the **Register an application** page appears, enter your application's registration information:
 
-   ![Image of Create application window](images/nativeapp-create2.png)
+   - **Name** - Enter a meaningful application name that will be displayed to users of the app.
+   - **Supported account types** - Select which accounts you would like your application to support.
 
-   - **Name:** -Your application name-
-   - **Application type:** Public client
+       | Supported account types | Description |
+       |-------------------------|-------------|
+       | **Accounts in this organizational directory only** | Select this option if you're building a line-of-business (LOB) application. This option is not available if you're not registering the application in a directory.<br><br>This option maps to Azure AD only single-tenant.<br><br>This is the default option unless you're registering the app outside of a directory. In cases where the app is registered outside of a directory, the default is Azure AD multi-tenant and personal Microsoft accounts. |
+       | **Accounts in any organizational directory** | Select this option if you would like to target all business and educational customers.<br><br>This option maps to an Azure AD only multi-tenant.<br><br>If you registered the app as Azure AD only single-tenant, you can update it to be Azure AD multi-tenant and back to single-tenant through the **Authentication** blade. |
+       | **Accounts in any organizational directory and personal Microsoft accounts** | Select this option to target the widest set of customers.<br><br>This option maps to Azure AD multi-tenant and personal Microsoft accounts.<br><br>If you registered the app as Azure AD multi-tenant and personal Microsoft accounts, you cannot change this in the UI. Instead, you must use the application manifest editor to change the supported account types. |
+
+   - **Redirect URI (optional)** - Select the type of app you're building, **Web** or **Public client (mobile & desktop)**, and then enter the redirect URI (or reply URL) for your application.
+       - For web applications, provide the base URL of your app. For example, `http://localhost:31544` might be the URL for a web app running on your local machine. Users would use this URL to sign in to a web client application.
+       - For public client applications, provide the URI used by Azure AD to return token responses. Enter a value specific to your application, such as `myapp://auth`.
+
+     To see specific examples for web applications or native applications, check out our [quickstarts](/azure/active-directory/develop/#quickstarts).
+
+     When finished, select **Register**.
 
 4. Allow your Application to access Microsoft Defender for Endpoint and assign it 'Read alerts' permission:
 
@@ -115,9 +133,9 @@ For more information on AAD tokens, see [Azure AD tutorial](https://docs.microso
 
         public static class WindowsDefenderATPUtils
         {
-            private const string Authority = "https://login.windows.net";
+            private const string Authority = "https://login.microsoftonline.com";
 
-            private const string WdatpResourceId = "https://api.securitycenter.windows.com";
+            private const string WdatpResourceId = "https://api.securitycenter.microsoft.com";
 
             public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
             {
@@ -163,7 +181,7 @@ Verify to make sure you got a correct token:
     ```csharp
     var httpClient = new HttpClient();
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 

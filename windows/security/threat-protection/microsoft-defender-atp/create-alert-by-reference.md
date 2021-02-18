@@ -3,7 +3,7 @@ title: Create alert from event API
 description: Learn how to use the Create alert API to create a new Alert on top of Event in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,18 +12,24 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Create alert API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -56,7 +62,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 ## HTTP request
 
 ```
-POST https://api.securitycenter.windows.com/api/alerts/CreateAlertByReference
+POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 ```
 
 ## Request headers
@@ -91,11 +97,10 @@ If successful, this method returns 200 OK, and a new [alert](alerts.md) object i
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+```http
+POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
+```
 
-```
-POST https://api.securitycenter.windows.com/api/alerts/CreateAlertByReference
-```
 ```json
 {
 	"machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",

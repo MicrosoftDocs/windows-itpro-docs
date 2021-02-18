@@ -4,7 +4,7 @@ description: The software inventory page for Microsoft Defender ATP's threat and
 keywords: threat and vulnerability management, microsoft defender atp, microsoft defender atp software inventory, mdatp threat & vulnerability management, mdatp threat & vulnerability management software inventory, mdatp tvm software inventory, tvm software inventory
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,25 +14,27 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 # Software inventory - threat and vulnerability management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 The software inventory in threat and vulnerability management is a list of known software in your organization with official [Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe). Software products without an official CPE don’t have vulnerabilities published. It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
 
 ## How it works
 
-In the field of discovery, we're leveraging the same set of signals that is responsible for detection and vulnerability assessment in [Microsoft Defender ATP endpoint detection and response capabilities](overview-endpoint-detection-response.md).
+In the field of discovery, we're leveraging the same set of signals that is responsible for detection and vulnerability assessment in [Microsoft Defender for Endpoint detection and response capabilities](overview-endpoint-detection-response.md).
 
 Since it's real time, in a matter of minutes, you'll see vulnerability information as they get discovered. The engine automatically grabs information from multiple security feeds. In fact, you'll see if a particular software is connected to a live threat campaign. It also provides a link to a Threat Analytics report soon as it's available.
 
@@ -43,7 +45,7 @@ Access the Software inventory page by selecting **Software inventory** from the 
 View software on specific devices in the individual devices pages from the [devices list](machines-view-overview.md).
 
 >[!NOTE]
->If you search for software using the Microsoft Defender ATP global search, make sure to put an underscore instead of a space. For example, for the best search results you'd write "windows_10" instead of "Windows 10".
+>If you search for software using the Microsoft Defender for Endpoint global search, make sure to put an underscore instead of a space. For example, for the best search results you'd write "windows_10" instead of "Windows 10".
 
 ## Software inventory overview
 
@@ -57,7 +59,7 @@ Select the software that you want to investigate. A flyout panel will open with 
 
 ### Software that isn't supported
 
-Software that isn't currently supported by threat & vulnerability management is still present in the Software inventory page. Because it is not supported, only limited data will be available. Filter by unsupported software with the "Not available" option in the "Weakness" section.
+Software that isn't currently supported by threat & vulnerability management may be present in the Software inventory page. Because it is not supported, only limited data will be available. Filter by unsupported software with the "Not available" option in the "Weakness" section.
 
 ![Unsupported software filter.](images/tvm-unsupported-software-filter.png)
 
@@ -66,6 +68,7 @@ The following indicates that a software is not supported:
 - Weaknesses field shows "Not available"
 - Exposed devices field shows a dash
 - Informational text added in side panel and in software page
+- The software page won't have the security recommendations, discovered vulnerabilities, or event timeline sections
 
 Currently, products without a CPE are not shown in the software inventory page, only in the device level software inventory.
 
@@ -95,9 +98,13 @@ You can view software pages a few different ways:
 
  A full page will appear with all the details of a specific software and the following information:
 
-- Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and impact to your exposure score
-- Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs with the number of exposed devices
-- Tabs with lists of the corresponding security recommendations for the weaknesses and vulnerabilities identified, the named CVEs of discovered vulnerabilities, the names of the devices that the software is installed on, and the specific versions of the software with the number of devices that have each version installed and number of vulnerabilities.
+- Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and impact to your exposure score.
+- Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs with the number of exposed devices.
+- Tabs showing information such as:
+    - Corresponding security recommendations for the weaknesses and vulnerabilities identified.
+    - Named CVEs of discovered vulnerabilities.
+    - Devices that have the software installed (along with device name, domain, OS, and more).
+    - Software version list (including number of devices the version is installed on, the number of discovered vulnerabilities, and the names of the installed devices).
 
     ![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
 
@@ -115,4 +122,4 @@ Report a false positive when you see any vague, inaccurate, or incomplete inform
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Event timeline](threat-and-vuln-mgt-event-timeline.md)
-- [View and organize the Microsoft Defender ATP Devices list](machines-view-overview.md)
+- [View and organize the Microsoft Defender for Endpoint Devices list](machines-view-overview.md)

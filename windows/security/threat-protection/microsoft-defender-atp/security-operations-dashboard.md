@@ -4,7 +4,7 @@ description: Use the dashboard to identify devices at risk, keep track of the st
 keywords: dashboard, alerts, new, in progress, resolved, risk, devices at risk, infections, reporting, statistics, charts, graphs, health, active malware detections, threat category, categories, password stealer, ransomware, exploit, threat, low severity, active malware
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Microsoft Defender Security Center Security operations dashboard
@@ -23,9 +24,9 @@ ms.topic: conceptual
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
 The **Security operations dashboard** is where the endpoint detection and response capabilities are surfaced. It provides a high level overview of where detections were seen and highlights where response actions are needed. 
 
@@ -59,7 +60,7 @@ Each group is further sub-categorized into their corresponding alert severity le
 
 For more information see, [Alerts overview](alerts-queue.md).
 
-Each row includes an alert severity category and a short description of the alert. You can click an alert to see its detailed view. For more information see,  [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md) and [Alerts overview](alerts-queue.md).
+Each row includes an alert severity category and a short description of the alert. You can click an alert to see its detailed view. For more information see,  [Investigate Microsoft Defender for Endpoint alerts](investigate-alerts.md) and [Alerts overview](alerts-queue.md).
 
 
 ## Devices at risk
@@ -69,16 +70,16 @@ This tile shows you a list of devices with the highest number of active alerts. 
 
 Click the name of the device to see details about that device. For more information see, [Investigate devices in the Microsoft Defender Advanced Threat Protection Devices list](investigate-machines.md).
 
-You can also click **Devices list** at the top of the tile to go directly to the **Devices list**, sorted by the number of active alerts. For more information see, [Investigate devices in the Microsoft Defender Advanced Threat Protection Devices list](investigate-machines.md).
+You can also click **Devices list** at the top of the tile to go directly to the **Devices list**, sorted by the number of active alerts. For more information see, [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md).
 
 ## Devices with sensor issues
-The **Devices with sensor issues** tile provides information on the individual device’s ability to provide sensor data to the Microsoft Defender ATP service. It reports how many devices require attention and helps you identify problematic devices.
+The **Devices with sensor issues** tile provides information on the individual device’s ability to provide sensor data to the Microsoft Defender for Endpoint service. It reports how many devices require attention and helps you identify problematic devices.
 
 ![Devices with sensor issues tile](images/atp-tile-sensor-health.png)
 
 There are two status indicators that provide information on the number of devices that are not reporting properly to the service:
-- **Misconfigured** – These devices might partially be reporting sensor data to the Microsoft Defender ATP service and might have configuration errors that need to be corrected.
-- **Inactive** - Devices that have stopped reporting to the Microsoft Defender ATP service for more than seven days in the past month.
+- **Misconfigured** – These devices might partially be reporting sensor data to the Microsoft Defender for Endpoint service and might have configuration errors that need to be corrected.
+- **Inactive** - Devices that have stopped reporting to the Microsoft Defender for Endpoint service for more than seven days in the past month.
 
 When you click any of the groups, you’ll be directed to devices list, filtered according to your choice. For more information, see [Check sensor state](check-sensor-status.md) and [Investigate devices](investigate-machines.md).
 
@@ -87,7 +88,7 @@ The **Service health** tile informs you if the service is active or if there are
 
 ![The Service health tile shows an overall indicator of the service](images/status-tile.png)
 
-For more information on the service health, see [Check the Microsoft Defender ATP service health](service-status.md).
+For more information on the service health, see [Check the Microsoft Defender for Endpoint service health](service-status.md).
 
 
 ## Daily devices reporting
@@ -116,10 +117,10 @@ The tile shows you a list of user accounts with the most active alerts and the n
 
 Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user.md).
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
 ## Related topics
-- [Understand the Microsoft Defender Advanced Threat Protection portal](use.md)
+- [Understand the Microsoft Defender for Endpoint portal](use.md)
 - [Portal overview](portal-overview.md)
 - [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md)

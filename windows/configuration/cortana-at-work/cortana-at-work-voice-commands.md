@@ -32,7 +32,7 @@ To enable voice commands in Cortana
 
     - **Start Cortana removing focus from your app, using specific voice-enabled statements.** [Activate a background app in Cortana using voice commands](https://docs.microsoft.com/cortana/voice-commands/launch-a-background-app-with-voice-commands-in-cortana).
 
-2.	**Install the VCD file on employees' devices**. You can use Microsoft Endpoint Configuration Manager or Microsoft Intune to deploy and install the VCD file on your employees' devices, the same way you deploy and install any other package in your organization.
+2.	**Install the VCD file on employees' devices**. You can use Microsoft Endpoint Manager or Microsoft Intune to deploy and install the VCD file on your employees' devices, the same way you deploy and install any other package in your organization.
 
 ## Test scenario: Use voice commands in a Microsoft Store app
 While these aren't line-of-business apps, we've worked to make sure to implement a VCD file, allowing you to test how the functionality works with Cortana in your organization.

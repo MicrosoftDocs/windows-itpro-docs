@@ -1,22 +1,23 @@
 ---
 title: FAQ - Microsoft Defender Application Guard (Windows 10)
 description: Learn about the commonly asked questions and answers for Microsoft Defender Application Guard.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 11/03/2020
+ms.date: 01/21/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Frequently asked questions - Microsoft Defender Application Guard 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Answering frequently asked questions about Microsoft Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
 
@@ -146,7 +147,7 @@ There is a known issue such that if you change the Exploit Protection settings f
 
 ICS is enabled by default in Windows, and ICS must be enabled in order for Application Guard to function correctly. We do not recommend disabling ICS; however, you can disable ICS in part by using a Group Policy and editing registry keys.
 
-1. In the Group Policy setting called, *Prohibit use of Internet Connection Sharing on your DNS domain network*, set it to **Disabled**. 
+1. In the Group Policy setting, **Prohibit use of Internet Connection Sharing on your DNS domain network**, set it to **Disabled**. 
 
 2. Disable IpNat.sys from ICS load as follows: <br/> 
 `System\CurrentControlSet\Services\SharedAccess\Parameters\DisableIpNat = 1`
@@ -158,6 +159,28 @@ ICS is enabled by default in Windows, and ICS must be enabled in order for Appli
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4`
 
 5. Reboot the device.
+
+### Why doesn't the container fully load when device control policies are enabled?
+Allow-listed items must be configured as "allowed" in the Group Policy Object ensure AppGuard works properly. 
+
+Policy: Allow installation of devices that match any of these device IDs 
+- `SCSI\DiskMsft____Virtual_Disk____` 
+- `{8e7bd593-6e6c-4c52-86a6-77175494dd8e}\msvhdhba` 
+- `VMS_VSF` 
+- `root\Vpcivsp` 
+- `root\VMBus` 
+- `vms_mp` 
+- `VMS_VSP` 
+- `ROOT\VKRNLINTVSP`
+- `ROOT\VID` 
+- `root\storvsp` 
+- `vms_vsmp` 
+- `VMS_PP` 
+
+Policy: Allow installation of devices using drivers that match these device setup classes 
+- `{71a27cdd-812a-11d0-bec7-08002be2092f}`
+
+
 
 ## See also
 

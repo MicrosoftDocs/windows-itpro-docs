@@ -1,9 +1,9 @@
 ---
-title: Plan your Microsoft Defender ATP deployment 
-description: Select the best Microsoft Defender ATP deployment strategy for your environment
+title: Plan your Microsoft Defender for Endpoint deployment
+description: Select the best Microsoft Defender for Endpoint deployment strategy for your environment
 keywords: deploy, plan, deployment strategy, cloud native, management, on prem, evaluation, onboarding, local, group policy, gp, endpoint manager, mem
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Plan your Microsoft Defender for Endpoint deployment 
@@ -22,18 +23,18 @@ ms.topic: article
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
-Depending on the requirements of your environment, we've put together material to help guide you through the various options you can adopt to deploy Defender for Endpoint. 
 
-These are the general steps you need to take to deploy Defender for Endpoint:
+Plan your Microsoft Defender for Endpoint deployment so that you can maximize the security capabilities within the suite and better protect your enterprise from cyber threats.
 
-![Image of deployment flow](images/onboarding-flow-diagram.png)
 
-- Identify architecture
-- Select deployment method
-- Configure capabilities
+This solution provides guidance on how to identify your environment architecture, select the type of deployment tool that best fits your needs, and guidance on how to configure capabilities.
+
+
+![Image of deployment flow](images/deployment-guide-plan.png)
 
 
 ## Step 1: Identify architecture
@@ -43,7 +44,7 @@ Depending on your environment, some tools are better suited for certain architec
 
 Use the following material to select the appropriate Defender for Endpoint architecture that best suites your organization.
 
-|**Item**|**Description**|
+| Item | Description |
 |:-----|:-----|
 |[![Thumb image for Defender for Endpoint deployment strategy](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) | The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li>
 
