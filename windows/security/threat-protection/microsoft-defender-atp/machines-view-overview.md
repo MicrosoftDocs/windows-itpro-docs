@@ -4,7 +4,7 @@ description: Learn about the available features that you can use from the Device
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # View and organize the Microsoft Defender for Endpoint Devices list
@@ -23,12 +24,13 @@ ms.topic: article
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-The **Devices list** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices with alerts seen in the last 30 days.  
+The **Devices list** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.  
 
 At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 

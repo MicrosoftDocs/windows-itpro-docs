@@ -4,7 +4,7 @@ description: Learn how to configure rules to add encryption algorithms and delet
 ms.assetid: 07b7760f-3225-4b4b-b418-51787b0972a0
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Configure the Rules to Require Encryption

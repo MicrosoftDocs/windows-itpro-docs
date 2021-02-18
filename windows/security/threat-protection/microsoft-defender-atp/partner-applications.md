@@ -1,11 +1,11 @@
 ---
-title: Partner applications in Microsoft Defender ATP   
+title: Partner applications in Microsoft Defender ATP
 ms.reviewer: 
 description: View supported partner applications to enhance the detection, investigation, and threat intelligence capabilities of the platform
 keywords: partners, applications, third-party, connections, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, better mobile
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Partner applications in Microsoft Defender for Endpoint 
@@ -23,9 +24,11 @@ ms.topic: conceptual
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
 
@@ -54,7 +57,7 @@ Logo |Partner name   | Description
 ![Image of Elastic security logo](images/elastic-security-logo.png) | [Elastic Security](https://go.microsoft.com/fwlink/?linkid=2139303) | Elastic Security is a free and open solution for preventing, detecting, and responding to threats
 ![Image of IBM QRadar logo](images/ibm-qradar-logo.png) | [IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903) | Configure IBM QRadar to collect detections from Defender for Endpoint 
 ![Image of Micro Focus ArcSight logo](images/arcsight-logo.png) | [Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548) | Use Micro Focus ArcSight to pull Defender for Endpoint detections
-![Image of RSA NetWitness logo](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | Stream Defender for Endpoint Alerts to RSA NetWitness leveraging Microsoft Graph Security API
+![Image of RSA NetWitness logo](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | Stream Defender for Endpoint Alerts to RSA NetWitness using Microsoft Graph Security API
 ![Image of SafeBreach logo](images/safebreach-logo.png) | [SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)| Gain visibility into Defender for Endpoint security events that are automatically correlated with SafeBreach simulations
 ![Image of Skybox Vulnerability Control logo](images/skybox-logo.png) | [Skybox Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox Vulnerability Control cuts through the noise of vulnerability management, correlating business, network, and threat context to uncover your riskiest vulnerabilities
 ![Image of Splunk logo](images/splunk-logo.png) | [Splunk](https://go.microsoft.com/fwlink/?linkid=2129805) | The Defender for Endpoint Add-on allows Splunk users to ingest all of the alerts and supporting information to their Splunk
@@ -97,45 +100,51 @@ Logo |Partner name   | Description
 Logo |Partner name   | Description 
 :---|:---|:---
 ![Image of Bitdefender logo](images/bitdefender-logo.png)| [Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)| Bitdefender GravityZone is a layered next generation endpoint protection platform offering comprehensive protection against the full spectrum of sophisticated cyber threats
-![Image of Better Mobile logo](images/bettermobile-logo.png) | [Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)| AI based MTD solution to stop mobile threats & phishing. Private internet browsing to protect user privacy 
+![Image of Better Mobile logo](images/bettermobile-logo.png) | [Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)| AI-based MTD solution to stop mobile threats & phishing. Private internet browsing to protect user privacy 
 ![Image of Corrata logo](images/corrata-logo.png)| [Corrata](https://go.microsoft.com/fwlink/?linkid=2081148) | Mobile solution — Protect your mobile devices with granular visibility and control from Corrata 
 ![Image of Lookout logo](images/lookout-logo.png)| [Lookout](https://go.microsoft.com/fwlink/?linkid=866935)| Get Lookout Mobile Threat Protection telemetry for Android and iOS mobile devices
 ![Image of Symantec Endpoint Protection Mobile logo](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP Mobile helps businesses predict, detect, and prevent security threats and vulnerabilities on mobile devices 
 ![Image of Zimperium logo](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Extend your Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense
 
 
-## Additional integrations
+
+## Other integrations
+
 Logo |Partner name   | Description 
 :---|:---|:---
 ![Image of Cyren Web Filter logo](images/cyren-logo.png)| [Cyren Web Filter](https://go.microsoft.com/fwlink/?linkid=2108221)| Enhance your Defender for Endpoint with advanced Web Filtering
-![Image of Morphisec logo](images/morphisec-logo.png)| [Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)| Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into WD Security Center dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
+![Image of Morphisec logo](images/morphisec-logo.png)| [Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)| Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Security Center dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
 ![Image of THOR Cloud logo](images/nextron-thor-logo.png)| [THOR Cloud](https://go.microsoft.com/fwlink/?linkid=862988)| Provides on-demand live forensics scans using a signature base with focus on persistent threats
 
 
 
 
 ## SIEM integration
-Defender for Endpoint supports SIEM integration through a variety of methods — specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.  For more information, see [Enable SIEM integration](enable-siem-integration.md).
+Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.  For more information, see [Enable SIEM integration](enable-siem-integration.md).
+
 
 ## Ticketing and IT service management 
 Ticketing solution integration helps to implement manual and automatic response processes. Defender for Endpoint can help to create tickets automatically when an alert is generated and resolve the alerts when tickets are closed using the alerts API. 
 
 ## Security orchestration and automation response (SOAR) integration 
-Orchestration solutions can help build playbooks and integrate the rich data model and actions that Defender for Endpoint APIs expose to orchestrate responses, such as query for device data, trigger device isolation, block/allow, resolve alert and others. 
+Orchestration solutions can help build playbooks and integrate the rich data model and actions that Defender for Endpoint APIs exposes to orchestrate responses, such as query for device data, trigger device isolation, block/allow, resolve alert and others. 
 
 ## External alert correlation and Automated investigation and remediation  
 Defender for Endpoint offers unique automated investigation and remediation capabilities to drive incident response at scale.
   
 Integrating the automated investigation and response capability with other solutions such as IDS and firewalls help to address alerts and minimize the complexities surrounding network and device signal correlation, effectively streamlining the investigation and threat remediation actions on devices.  
 
-External alerts can be pushed into Defender for Endpoint and is presented side by side with additional device-based alerts from Defender for Endpoint. This view provides a full context of the alert — with the real process and the full story of attack.  
+
+External alerts can be pushed to Defender for Endpoint. These alerts are shown side by side with additional device-based alerts from Defender for Endpoint. This view provides a full context of the alert and can reveal the full story of an attack.  
 
 ## Indicators matching
 You can use threat-intelligence from providers and aggregators to maintain and use indicators of compromise (IOCs).
 
-Defender for Endpoint allows you to integrate with such solutions and act on IoCs by correlating its rich telemetry and creating alerts when there's a match; leveraging prevention and automated response capabilities to block execution and take remediation actions when there's a match.
+
+Defender for Endpoint allows you to integrate with these solutions and act on IoCs by correlating rich telemetry to create alerts.  You can also use prevention and automated response capabilities to block execution and take remediation actions when there's a match.
+
 
 Defender for Endpoint currently supports IOC matching and remediation for file and network indicators. Blocking is supported for file indicators.  
 
 ## Support for non-Windows platforms
-Defender for Endpoint provides a centralized security operations experience for Windows as well as non-Windows platforms, including mobile devices. You'll be able to see alerts from various supported operating systems (OS) in the portal and better protect your organization's network. 
+Defender for Endpoint provides a centralized security operations experience for Windows and non-Windows platforms, including mobile devices. You'll be able to see alerts from various supported operating systems (OS) in the portal and better protect your organization's network. 

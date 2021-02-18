@@ -3,7 +3,7 @@ title: View attack surface reduction events
 description: Import custom views to see attack surface reduction events.
 keywords: event view, exploit guard, audit, review, events
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,6 +12,7 @@ author: levinec
 ms.author: ellevin
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # View attack surface reduction events
@@ -21,7 +22,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Review attack surface reduction events in Event Viewer to monitor what rules or settings are working. You can also determine if any settings are too "noisy" or impacting your day to day workflow.
 

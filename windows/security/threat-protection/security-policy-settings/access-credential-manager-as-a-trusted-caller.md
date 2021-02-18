@@ -4,7 +4,7 @@ description: Describes best practices, security considerations, and more for the
 ms.assetid: a51820d2-ca5b-47dd-8e9b-d7008603db88
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Access Credential Manager as a trusted caller
