@@ -18,7 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-symantecmigrate
 ms.topic: article
-ms.date: 02/11/2021
+ms.date: 02/18/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
