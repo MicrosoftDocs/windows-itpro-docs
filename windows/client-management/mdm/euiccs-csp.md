@@ -64,7 +64,7 @@ Required. Current state of the discovery operation for the parent ServerName (Re
 Supported operation is Get. Value type is integer. Default value is 1.
 
 <a href="" id="euicc-profiles-iccid-isenabled"></a>**_eUICC_/DownloadServers/_ServerName_/AutoEnable**  
-Required. Indicates whether the discovered profile must be enabled automatically after install. This must be set by the MDM when the ServerName subtree is created
+Required. Indicates whether the discovered profile must be enabled automatically after install. This must be set by the MDM when the ServerName subtree is created.
 
 Supported operations are Add, Get, and Replace. Value type is bool.
 
