@@ -1,7 +1,7 @@
 ---
-title: Configure advanced features in Microsoft Defender ATP
-description: Turn on advanced features such as block file in Microsoft Defender Advanced Threat Protection.
-keywords: advanced features, settings, block file, automated investigation, auto-resolve, skype, azure atp, office 365, azure information protection, intune
+title: Configure advanced features in Microsoft Defender for Endpoint
+description: Turn on advanced features such as block file in Microsoft Defender for Endpoint.
+keywords: advanced features, settings, block file, automated investigation, auto-resolve, skype, microsoft defender for identity, office 365, azure information protection, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Defender for Endpoint with.
 
@@ -61,15 +61,15 @@ Enabling this feature allows you to run unsigned scripts in a live response sess
 
 ## Autoresolve remediated alerts
 
-For tenants created on or after Windows 10, version 1809 the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
+For tenants created on or after Windows 10, version 1809, the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
 
->[!TIP]
->For tenants created prior that version, you'll need to manually turn this feature on from the [Advanced features](https://securitycenter.windows.com/preferences2/integration) page.
+> [!TIP]
+> For tenants created prior to that version, you'll need to manually turn this feature on from the [Advanced features](https://securitycenter.windows.com/preferences2/integration) page.
 
->[!NOTE]
+> [!NOTE]
 >
->- The result of the auto-resolve action may influence the Device risk level calculation which is based on the active alerts found on a device.  
->- If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overwrite it.
+> - The result of the auto-resolve action may influence the Device risk level calculation which is based on the active alerts found on a device.
+> - If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overwrite it.
 
 ## Allow or block file
 
@@ -100,8 +100,8 @@ To use this feature, devices must be running Windows 10 version 1709 or later. T
 
 For more information, see [Manage indicators](manage-indicators.md).
 
->[!NOTE]
->Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Defender for Endpoint data.
+> [!NOTE]
+> Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Defender for Endpoint data.
 
 ## Show user details
 
@@ -117,15 +117,15 @@ For more information, see [Investigate a user account](investigate-user.md).
 
 Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
 
->[!NOTE]
+> [!NOTE]
 > When a device is being isolated from the network, there's a pop-up where you can choose to enable Outlook and Skype communications which allows communications to the user while they are disconnected from the network. This setting applies to Skype and Outlook communication when devices are in isolation mode.
 
 ## Azure Advanced Threat Protection integration
 
 The integration with Azure Advanced Threat Protection allows you to pivot directly into another Microsoft Identity security product. Azure Advanced Threat Protection augments an investigation with additional insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the device-based investigation capability by pivoting across the network from an identify point of view.
 
->[!NOTE]
->You'll need to have the appropriate license to enable this feature.
+> [!NOTE]
+> You'll need to have the appropriate license to enable this feature.
 
 ## Office 365 Threat Intelligence connection
 
@@ -133,24 +133,24 @@ This feature is only available if you have an active Office 365 E5 or the Threat
 
 When you turn this feature on, you'll be able to incorporate data from Office 365 Advanced Threat Protection into Microsoft Defender Security Center to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
->[!NOTE]
->You'll need to have the appropriate license to enable this feature. 
+> [!NOTE]
+> You'll need to have the appropriate license to enable this feature.
 
-To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
+To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard. For more information, see [Threat investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti).
 
 ## Microsoft Threat Experts
 
 Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability. Experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Defender for Endpoint portal's alerts dashboard and via email if you configure it.
 
->[!NOTE]
->The Microsoft Threat Experts capability in Defender for Endpoint is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
+> [!NOTE]
+> The Microsoft Threat Experts capability in Defender for Endpoint is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
 
 ## Microsoft Cloud App Security
 
 Enabling this setting forwards Defender for Endpoint signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data.
 
->[!NOTE]
->This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) or later Windows 10 versions.
+> [!NOTE]
+> This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)), or later Windows 10 versions.
 
 ## Azure Information Protection
 
@@ -158,13 +158,13 @@ Turning on this setting allows signals to be forwarded to Azure Information Prot
 
 ## Microsoft Secure Score
 
-Forwards Microsoft Defender ATP signals to Microsoft Secure Score in the Microsoft 365 security center. Turning on this feature gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the your Microsoft Secure Score data.
+Forwards Microsoft Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 security center. Turning on this feature gives Microsoft Secure Score visibility into the device's security posture. Forwarded data is stored and processed in the same location as your Microsoft Secure Score data.
 
-### Enable the Microsoft Defender ATP integration from the Azure ATP portal
+### Enable the Microsoft Defender for Endpoint integration from the Microsoft Defender for Identity portal
 
-To receive contextual device integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
+To receive contextual device integration in Microsoft Defender for Identity, you'll also need to enable the feature in the Microsoft Defender for Identity portal.
 
-1. Log in to the [Azure portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
+1. Log in to the [Microsoft Defender for Identity portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
 
 2. Click **Create your instance**.
 
@@ -176,8 +176,8 @@ After completing the integration steps on both portals, you'll be able to see re
 
 Defender for Endpoint can be integrated with [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) to [enable device risk-based conditional access](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). When you [turn on this feature](configure-conditional-access.md), you'll be able to share Defender for Endpoint device information with Intune, enhancing policy enforcement.
 
->[!IMPORTANT]
->You'll need to enable the integration on both Intune and Defender for Endpoint to use this feature. For more information on specific steps, see [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
+> [!IMPORTANT]
+> You'll need to enable the integration on both Intune and Defender for Endpoint to use this feature. For more information on specific steps, see [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
 
 This feature is only available if you have the following:
 
@@ -188,7 +188,7 @@ This feature is only available if you have the following:
 
 When you enable Intune integration, Intune will automatically create a classic Conditional Access (CA) policy. This classic CA policy is a prerequisite for setting up status reports to Intune. It should not be deleted.
 
->[!NOTE]
+> [!NOTE]
 > The classic CA policy created by Intune is distinct from modern [Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/), which are used for configuring endpoints.
 
 ## Preview features
@@ -207,4 +207,3 @@ After configuring the [Security policy violation indicators](https://docs.micros
 
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications](configure-email-notifications.md)
-
