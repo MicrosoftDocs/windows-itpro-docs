@@ -1,9 +1,9 @@
 ---
 title: List devices by recommendation
-description: Retrieves a list of devices associated with the security recommendation.
-keywords: apis, graph api, supported apis, get, security recommendation for vulnerable devices, threat and vulnerability management, threat and vulnerability management api
+description: Retrieves a list of devices associated with the security recommendation. 
+keywords: apis, graph api, supported apis, get, security recommendation for vulnerable devices, threat and vulnerability management, threat and vulnerability management api 
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,8 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
 # List devices by recommendation
@@ -66,7 +65,7 @@ If successful, this method returns 200 OK with the list of devices associated wi
 
 Here is an example of the request.
 
-```http
+```
 GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome/machineReferences
 ```
 

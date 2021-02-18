@@ -3,7 +3,7 @@ title: List software
 description: Retrieves a list of software inventory
 keywords: apis, graph api, supported apis, get, list, file, information, software inventory, threat & vulnerability management api, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,8 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
 # List software inventory API
@@ -64,7 +63,7 @@ If successful, this method returns 200 OK with the software inventory in the bod
 
 Here is an example of the request.
 
-```http
+```
 GET https://api.securitycenter.microsoft.com/api/Software
 ```
 

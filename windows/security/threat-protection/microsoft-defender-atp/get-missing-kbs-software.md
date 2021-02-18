@@ -3,7 +3,7 @@ title: Get missing KBs by software ID
 description: Retrieves missing security updates by software ID
 keywords: apis, graph api, supported apis, get, list, file, information, software id, threat & vulnerability management api, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,8 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
 # Get missing KBs by software ID
@@ -66,7 +65,7 @@ If successful, this method returns 200 OK, with the specified software missing k
 
 Here is an example of the request.
 
-```http
+```
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/getmissingkbs
 ```
 

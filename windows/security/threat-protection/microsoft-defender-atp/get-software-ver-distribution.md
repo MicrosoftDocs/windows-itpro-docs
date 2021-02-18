@@ -1,9 +1,9 @@
 ---
-title: List software version distribution
-description: Retrieves a list of your organization's software version distribution
+title: List software version distribution 
+description: Retrieves a list of your organization's software version distribution 
 keywords: apis, graph api, supported apis, get, software version distribution, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,8 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
 # List software version distribution 
@@ -65,7 +64,7 @@ If successful, this method returns 200 OK with a list of software distributions 
 
 Here is an example of the request.
 
-```http
+```
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/distributions
 ```
 
@@ -74,6 +73,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/distr
 Here is an example of the response.
 
 ```json
+
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Distributions",
     "value": [

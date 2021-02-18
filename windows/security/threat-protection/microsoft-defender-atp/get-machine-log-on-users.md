@@ -3,7 +3,7 @@ title: Get machine logon users API
 description: Learn how to use the Get machine logon users API to retrieve a collection of logged on users on a device in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, device, log on, users
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,8 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
 # Get machine logon users API
@@ -87,7 +86,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c29
 Here is an example of the response.
 
 
-```json
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Users",
     "value": [
