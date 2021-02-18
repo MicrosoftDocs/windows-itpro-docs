@@ -75,18 +75,16 @@ This scenario uses a centrally located script and runs it using a domain-based g
 
 #### Use Group Policy management console to run the script when the virtual machine starts
 1. Open the Group Policy Management Console (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
-1. In the Group Policy Management Editor, go to **Computer configuration** \> **Preferences** \> **Control panel settings**. 
-1. Right-click **Scheduled tasks**, click **New**, and then click **Immediate Task** (At least Windows 7). 
-1. In the Task window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM. Click **Check Names** and then click OK. NT AUTHORITY\SYSTEM appears as the user account the task will run as. 
-1. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box. 
-1. Go to the **Actions** tab and click **New**. Ensure that **Start a program** is selected in the Action field. 
-Enter the following: 
-
-> Action = "Start a program" <br>
-> Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-> Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
-
-Click **OK** and close any open GPMC windows.
+2. In the Group Policy Management Editor, go to **Computer configuration** > **Preferences** > **Control panel settings**. 
+3. Right-click **Scheduled tasks**, click **New**, and then select **Immediate Task** (At least Windows 7). 
+4. In the Task window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM. Click **Check Names** and then click OK. `NT AUTHORITY\SYSTEM` appears as the user account under which the task will run. 
+5. Select **Run whether user is logged on or not** and select the **Run with highest privileges** option. 
+6. Go to the **Actions** tab and select **New**. Confirm that **Start a program** is selected in the **Action** field.
+7. Specify the following: <br/> 
+   - Action = **Start a program**
+   - Program/Script = `C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe` 
+   - Add Arguments (optional) = `-ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"`
+8. Select **OK** and close any open GPMC windows.
 
 ### Scenario 3: Onboarding using management tools
 
