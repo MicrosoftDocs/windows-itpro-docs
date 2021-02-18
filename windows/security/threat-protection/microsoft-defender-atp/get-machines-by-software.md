@@ -3,7 +3,7 @@ title: List devices by software
 description: Retrieve a list of devices that has this software installed.
 keywords: apis, graph api, supported apis, get, list devices, devices list, list devices by software, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,13 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
 # List devices by software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
@@ -29,7 +27,6 @@ ms.technology: mde
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -67,7 +64,7 @@ If successful, this method returns 200 OK and a list of devices with the softwar
 
 Here is an example of the request.
 
-```http
+```
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machineReferences
 ```
 
@@ -76,6 +73,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machi
 Here is an example of the response.
 
 ```json
+
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#MachineReferences",
     "value": [

@@ -3,7 +3,7 @@ title: Get missing KBs by device ID
 description: Retrieves missing security updates by device ID
 keywords: apis, graph api, supported apis, get, list, file, information, device id, threat & vulnerability management api, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,13 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
 # Get missing KBs by device ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
@@ -30,11 +28,7 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## API description
-Retrieves missing KBs (security updates) by device ID.
-
-## Limitations
-1. Rate limitations for this API are 50 calls per minute and 1500 calls per hour.
+Retrieves missing KBs (security updates) by device ID
 
 ## HTTP request
 
@@ -62,7 +56,7 @@ If successful, this method returns 200 OK, with the specified device missing kb 
 
 Here is an example of the request.
 
-```http
+```
 GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93dfa2550136057bff96/getmissingkbs 
 ```
 
