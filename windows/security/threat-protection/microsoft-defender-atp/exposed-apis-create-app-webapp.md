@@ -116,7 +116,7 @@ For more information on Azure AD tokens, see the [Azure AD tutorial](https://doc
 
 ```powershell
 # This script acquires the App Context Token and stores it in the variable $token for later use in the script.
-# Paste your Tenant ID, App ID and App Secret (App key) into the indicated quotes below.
+# Paste your Tenant ID, App ID, and App Secret (App key) into the indicated quotes below.
 
 $tenantId = '' ### Paste your tenant ID here
 $appId = '' ### Paste your Application ID here
