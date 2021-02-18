@@ -45,7 +45,7 @@ Watch this video for a quick overview of Microsoft Threat Experts.
 > [!NOTE]
 > Discuss the eligibility requirements with your Microsoft Technical Service provider and account team before you apply to the managed threat hunting service.
 
-If you're a Microsoft Defender for Endpoint customer, you need to apply for Microsoft Threat Experts - Targeted Attack Notifications to get special insights and analysis that help ensure that the most critical threats are identified so you can respond to them quickly. Apply for Microsoft Threat Experts - Experts on Demand if you want to consult with our threat experts on relevant detections and adversaries.
+If you're a Microsoft Defender for Endpoint customer, you need to apply for Microsoft Threat Experts - Targeted Attack Notifications to get special insights and analysis that help identify the most critical threats so you can respond to them quickly. Apply for Microsoft Threat Experts - Experts on Demand if you want to consult with our threat experts on relevant detections and adversaries.
 
 To enrol to Microsoft Threat Experts - Targeted Attack Notifications benefits, go to **Settings** > **General** > **Advanced features** > **Microsoft Threat Experts - Targeted Attack Notifications** to apply. Once accepted, you will get the benefits of Targeted Attack Notifications.
 
