@@ -16,7 +16,15 @@ author: jaimeo
 
 # Windows Update - additional resources
 
-> Applies to: Windows 10
+**Applies to**:
+
+- Windows 10
+- Windows Server 2016
+- Windows Server 2019
+
+> [!NOTE]
+> Windows Server 2016 supports policies available in Windows 10, version 1607. Windows Server 2019 supports policies available in Windows 10, version 1809.
+
 
 The following resources provide additional information about using Windows Update.
 
