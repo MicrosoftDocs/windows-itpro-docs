@@ -82,7 +82,7 @@ The option to **Consult a threat expert** is available in several places in the 
 ![Screenshot of MTE-EOD file page action menu option](images/mte-eod-file.png)
 
 > [!NOTE]
-> Customers with Premier Support subscription mapped to their Microsoft Defender for Office 365 license can track the status of their Experts on Demand cases through Microsoft Services Hub. 
+> If your Premier Support subscription is mapped to your Microsoft Defender for Office 365 license, you can track the status of your Experts on Demand cases through Microsoft Services Hub. 
 
 Watch this video for a quick overview of the Microsoft Services Hub.
 
