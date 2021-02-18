@@ -82,7 +82,7 @@ First, you create a default user profile with the customizations that you want, 
 
 1. The sysprep process reboots the PC and starts at the first-run experience screen. Complete the set up, and then sign in to the computer using an account that has local administrator privileges.
 
-1. Right-click Start, go to **Control Panel** (view by large or small icons) > **System** > **Advanced system settings**, and click **Settings** in the **User Profiles** section.
+1. Right-click **Start**, go to **Control Panel** (view by large or small icons) > **System** > **Advanced system settings**, and click **Settings** in the **User Profiles** section. Alternatively, starting in Windows 10, version 2004, open the **Settings** app and select **Advanced system settings**.
 
 Starting in Windows 10 version (2004) Open the Settings app and click on Advanced system settings
 
