@@ -54,7 +54,7 @@ Interior node. Represents default SM-DP+ discovery requests.
 Supported operation is Get.
 
 <a href="" id="euicc-profiles-iccid"></a>**_eUICC_/DownloadServers/_ServerName_**  
-Interior node. Optional. Node representing the discovery operation for a server name. The node name is the fully qualified domain name of the SM-DP+ server that will be used for profile discovery. Creation of this subtree triggers a discovery request.
+Interior node. Optional. Node specifying the server name for a discovery operation. The node name is the fully qualified domain name of the SM-DP+ server that will be used for profile discovery. Creation of this subtree triggers a discovery request.
 
 Supported operations are Add, Get, and Delete.
 
