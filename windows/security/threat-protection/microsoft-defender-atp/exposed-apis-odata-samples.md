@@ -36,13 +36,13 @@ If you are not familiar with OData queries, see: [OData V4 queries](https://www.
 
 Not all properties are filterable.
 
-## Properties that supports $filter:
-
+## Properties that support $filter:
+```
 - [Alert](alerts.md): ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category```.
 - [Machine](machine.md): ```ComputerDnsName```, ```LastSeen```, ```HealthStatus```, ```OsPlatform```, ```RiskScore``` and ```RbacGroupId```.
 - [MachineAction](machineaction.md): ```Status```, ```MachineId```, ```Type```, ```Requestor``` and ```CreationDateTimeUtc```.
 - [Indicator](ti-indicator.md): ```indicatorValue```, ```indicatorType```, ```creationTimeDateTimeUtc```, ```createdBy```, ```severity ``` and ```action ```.
-
+```
 ### Example 1
 
 Get 10 latest Alerts with related Evidence:
