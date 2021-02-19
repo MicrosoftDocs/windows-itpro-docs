@@ -101,8 +101,8 @@ Starting in Windows 10 version (2004) Open the Settings app and click on Advance
 
    - If the device is joined to the domain and you are signed in with an account that has permissions to write to a shared folder on the network, you can enter the shared folder path.
 
-   
-   ![Example of UI](images/copy-to-path.png) 
+   ![Example of UI](images/copy-to-path.png)
+
    - If the device is not joined to the domain, you can save the profile locally and then copy it to the shared folder location.
    - Optionally, you can check the **Mandatory profile** checkbox. This step is not required but will set permissions that are more restrictive and we recommend doing so.
 
