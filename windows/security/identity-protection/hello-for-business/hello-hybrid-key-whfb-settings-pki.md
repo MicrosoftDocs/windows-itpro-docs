@@ -81,7 +81,7 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list.  However, the certificate template and the superseding of certificate templates is not active until you publish the certificate template to one or more certificate authorities.
 
 > [!NOTE]
-> The CA issuing the domain controller certificate must be included in the NTAuth store. By default, the Active Directory Certificate Authority's root certificate is added to the NTAuth store. If you are using a multi-tier CA hierarchy or a third-party CA, this may not be done by default. If the Domain Controller certificate does not directly chain to a CA certificate in the NTAuth store, user authentication will fail.
+> The certificate for the CA issuing the domain controller certificate must be included in the NTAuth store. By default, the Active Directory Certificate Authority's root certificate is added to the NTAuth store. If you are using a multi-tier CA hierarchy or a third-party CA, this may not be done by default. If the Domain Controller certificate does not directly chain to a CA certificate in the NTAuth store, user authentication will fail.
 
 The following PowerShell command can be used to check the NTAuth certificate:
 
