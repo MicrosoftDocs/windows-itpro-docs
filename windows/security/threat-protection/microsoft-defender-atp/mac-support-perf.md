@@ -100,9 +100,28 @@ Verify that the **real_time_protection_enabled** entry is true. Otherwise, run t
 
 1. On your Mac system, download the sample Python parser high_cpu_parser.py using the command:
 
-  The output of this command should be similar to the following:
+```bash
+wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/
+linux/diagnostic/high_cpu_parser.py
+```
 
-  Next, type the following commands:
+The output of this command should be similar to the following:
+
+```Output
+--2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.
+mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.
+101.xxx.xxx
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)| 151.
+101.xxx.xxx| :443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1020 [text/plain]
+Saving to: 'high_cpu_parser.py'
+100%[===========================================>] 1,020    --.-K/s   in 
+0s
+```
+
+Next, type the following commands:
 
   ```bash
     chmod +x high_cpu_parser.py
