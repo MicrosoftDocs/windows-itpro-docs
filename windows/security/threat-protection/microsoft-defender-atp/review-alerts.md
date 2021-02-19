@@ -44,7 +44,7 @@ Selecting an alert's name in Defender for Endpoint will land you on its alert pa
 3. The **alert story** displays all entities related to the alert, interconnected by a tree view. The alert in the title will be the one in focus when you first land on your selected alert's page. Entities in the alert story are expandable and clickable, to provide additional information and expedite response by allowing you to take actions right in the context of the alert page. Use the alert story to start your investigation. Learn how in [Investigate alerts in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-alerts).
 4. The **details pane** will show the details of the selected alert at first, with details and actions related to this alert. If you select any of the affected assets or entities in the alert story, the details pane will change to provide contextual information and actions for the selected object.
 
-![An alert page when you first land on it](images/alert-landing-view.png)
+![An alert page when you first land on it](images/alert-landing-view-upd.png)
 
 Note the detection status for your alert. 
 - Prevented – The attempted suspicious action was avoided. For example, a file either wasn’t written to disk or executed.
@@ -53,7 +53,7 @@ Note the detection status for your alert.
 
 
 
-![Detection status detected in Windows](images/detection-status-detected.png)
+![Detection status detected in Windows](images/detection-status-detected-upd.png)
 
 Blocked or prevented means actions were already taken by Defender for Endpoint.
 
@@ -65,7 +65,7 @@ Other information available in the details pane when the alert opens includes MI
 
 For alerts from Mac and Linux devices, remediation actions can be seen within the alert story as well as in the details pane.
 
-![Detection status detected in Mac](images/detection-status-prevented-mac.png)
+![Detection status detected in Mac](images/detection-status-prevented-mac-upd.png)
 
 
 ## Review affected assets
@@ -73,6 +73,9 @@ For alerts from Mac and Linux devices, remediation actions can be seen within th
 Selecting a device or a user card in the affected assets sections will switch to the details of the device or user in the details pane.
 
 - **For devices** the details pane will display information about the device itself, like Domain, Operating System, and IP. Active alerts and the logged on users on that device are also available. You can take immediate action by isolating the device, restricting app execution, or running an antivirus scan. Alternatively, you could collect an investigation package, initiate an automated investigation, or go to the device page to investigate from the device's point of view.
+
+   ![A snippet of the details pane when a device is selected](images/device-page-details.png)
+
 - **For users** the details pane will display detailed user information, such as the user's SAM name and SID, as well as logon types performed by this user and any alerts and incidents related to it. You can select *Open user page* to continue the investigation from that user's point of view.
 
    ![A snippet of the details pane when a device is selected](images/alert-device-details.png)
