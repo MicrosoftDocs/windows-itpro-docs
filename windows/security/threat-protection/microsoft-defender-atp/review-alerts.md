@@ -78,7 +78,7 @@ Selecting a device or a user card in the affected assets sections will switch to
 
 - **For users** the details pane will display detailed user information, such as the user's SAM name and SID, as well as logon types performed by this user and any alerts and incidents related to it. You can select *Open user page* to continue the investigation from that user's point of view.
 
-   ![A snippet of the details pane when a device is selected](images/alert-device-details.png)
+   ![A snippet of the details pane when a device is selected](images/user-page-details.png)
 
 
 ## Related topics
