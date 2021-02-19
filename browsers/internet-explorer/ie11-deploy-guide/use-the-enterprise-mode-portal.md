@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the topics in this section to learn about how to use the Enterprise Mode Site List Portal.
@@ -7,9 +7,17 @@ ms.prod: ie11
 title: Use the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
+ms.reviewer: dansimp
+audience: itpro
+manager: dansimp
+ms.author: dansimp
+author: dansimp
 ---
 
 # Use the Enterprise Mode Site List Portal
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

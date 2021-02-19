@@ -1,11 +1,15 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: virtualization
 description: Virtualization and compatibility with Internet Explorer 11
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: b0388c04-2584-4b6d-a7a8-4e0476773a80
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Virtualization and compatibility with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -13,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Virtualization and compatibility with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 If your company is considering upgrading to the latest version of Internet Explorer, but is hesitant because of a large number of web apps that need to be tested and moved, we recommend that you consider virtualization. Virtualization lets you set up a virtual environment where you can run earlier versions of IE.
 
 **Important**<br>

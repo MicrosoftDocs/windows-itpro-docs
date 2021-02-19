@@ -2,15 +2,17 @@
 title: Education scenarios Microsoft Store for Education
 description: Learn how IT admins and teachers can use Microsoft Store for Education to acquire and manage apps in schools.
 keywords: school, Microsoft Store for Education, Microsoft education store
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.localizationpriority: high
-searchScope:
+ms.localizationpriority: medium
+searchScope: 
   - Store
-author: trudyha
-ms.author: trudyha
-ms.date: 11/01/2017
+author: dansimp
+ms.author: dansimp
+ms.date: 03/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Working with Microsoft Store for Education
@@ -81,7 +83,7 @@ Applies to: IT admins
 Self-service sign up makes it easier for teachers and students in your organization to get started with **Minecraft: Education Edition**. If you have self-service sign up enabled in your tenant, teachers can assign **Minecraft: Education Edition** to students before they have a work or school account. Students receive an email that steps them through the process of signing up for a work or school account. For more information on self-service sign up, see [Using self-service sign up in your organization](https://support.office.com/article/Using-self-service-sign-up-in-your-organization-4f8712ff-9346-4c6c-bb63-a21ad7a62cbd?ui=en-US&rs=en-US&ad=US).
 
 ### Domain verification
-For education organizations, domain verification ensures you are on the academic verification list. As an admin, you might need to verify your domain using the Office 365 portal. For more information, see [Verify your Office 365 domain to prove ownership, nonprofit or education status](https://support.office.com/article/Verify-your-Office-365-domain-to-prove-ownership-nonprofit-or-education-status-or-to-activate-Yammer-87d1844e-aa47-4dc0-a61b-1b773fd4e590?ui=en-US&rs=en-US&ad=US).
+For education organizations, domain verification ensures you are on the academic verification list. As an admin, you might need to verify your domain using the Microsoft 365 admin center. For more information, see [Verify your Office 365 domain to prove ownership, nonprofit or education status](https://support.office.com/article/Verify-your-Office-365-domain-to-prove-ownership-nonprofit-or-education-status-or-to-activate-Yammer-87d1844e-aa47-4dc0-a61b-1b773fd4e590?ui=en-US&rs=en-US&ad=US).
 
 ## Acquire apps
 Applies to: IT admins and teachers
@@ -128,7 +130,7 @@ Teachers can:
  
 ## Distribute apps
 
-Manage and distribute apps to students and others in your organization. Different options are avaialble for admins and teachers. 
+Manage and distribute apps to students and others in your organization. Different options are available for admins and teachers. 
 
 Applies to: IT admins
 
@@ -172,4 +174,4 @@ You can manage your orders through Microsoft Store for Business. For info on ord
 It can take up to 24 hours after a purchase, before a receipt is available on your **Order history page**. 
 
 > [!NOTE]
-For **Minecraft: Education Edition**, you can request a refund through Microsoft Store for Business for two months from the purchase date. After two months, refunds require a support call. 
+> For **Minecraft: Education Edition**, you can request a refund through Microsoft Store for Business for two months from the purchase date. After two months, refunds require a support call. 

@@ -2,24 +2,25 @@
 title: Office DDF
 description: This topic shows the OMA DM device description framework (DDF) for the Office configuration service provider. DDF files are used only with OMA DM provisioning XML.
 ms.assetid:
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 12/05/2017
+author: manikadhiman
+ms.date: 08/15/2018
 ---
 
 # Office DDF
-
 
 This topic shows the OMA DM device description framework (DDF) for the **Office** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1709.
+The XML below is for Windows 10, version 1809.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -33,7 +34,7 @@ The XML below is for Windows 10, version 1709.
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Root of the Office CSP.</Description>
+          <Description>Root of the office CSP.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -44,7 +45,7 @@ The XML below is for Windows 10, version 1709.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.3/MDM/Office</MIME>
+            <MIME>com.microsoft/1.5/MDM/Office</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -53,7 +54,7 @@ The XML below is for Windows 10, version 1709.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Installation options for the Office CSP.</Description>
+            <Description>Installation options for the office CSP.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -98,7 +99,7 @@ The XML below is for Windows 10, version 1709.
                   <Exec />
                   <Get />
                 </AccessType>
-                <Description>The install action will install Office given the configuration in the data.  The string data is the xml configuration to use in order to install Office.</Description>
+                <Description>The install action will install office given the configuration in the data.  The string data is the xml configuration to use in order to install office.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -128,6 +129,27 @@ The XML below is for Windows 10, version 1709.
                 </Occurrence>
                 <Scope>
                   <Permanent />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>FinalStatus</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description>Final Office 365 installation status.</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
                 </Scope>
                 <DFType>
                   <MIME>text/plain</MIME>
@@ -175,7 +197,7 @@ The XML below is for Windows 10, version 1709.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.3/MDM/Office</MIME>
+            <MIME>com.microsoft/1.5/MDM/Office</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -261,6 +283,27 @@ The XML below is for Windows 10, version 1709.
                 </DFType>
               </DFProperties>
             </Node>
+            <Node>
+              <NodeName>FinalStatus</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description>Final Office 365 installation status.</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
           </Node>
           <Node>
             <NodeName>CurrentStatus</NodeName>
@@ -287,13 +330,3 @@ The XML below is for Windows 10, version 1709.
       </Node>
 </MgmtTree>
 ```
-
- 
-
- 
-
-
-
-
-
-

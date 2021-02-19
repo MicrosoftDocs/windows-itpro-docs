@@ -1,21 +1,23 @@
 ---
 title: EnterpriseAssignedAccess XSD
-description: EnterpriseAssignedAccess XSD
+description: This XSD can be used to validate that the lockdown XML in the \<Data\> block of the AssignedAccessXML node.
 ms.assetid: BB3B633E-E361-4B95-9D4A-CE6E08D67ADA
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
 # EnterpriseAssignedAccess XSD
 
 
-This XSD can be used to validate that the lockdown XML in the &lt;Data&gt; block of the AssignedAccessXML node.
+This XSD can be used to validate that the lockdown XML in the \<Data\> block of the AssignedAccessXML node.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-16LE" ?>
 <!-- 
      In-memory format is Little Endian and

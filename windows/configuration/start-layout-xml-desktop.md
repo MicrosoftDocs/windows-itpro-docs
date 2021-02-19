@@ -5,10 +5,13 @@ keywords: ["start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
-ms.date: 01/02/2018
-ms.localizationpriority: high
+author: dansimp
+ms.author: dansimp
+ms.topic: article
+ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
+ms.localizationpriority: medium
 ---
 
 # Start layout XML for desktop editions of Windows 10 (reference)
@@ -30,7 +33,7 @@ On Windows 10 for desktop editions, the customized Start works by:
     - No limit to the number of apps that can be pinned. There is a theoretical limit of 24 tiles per group (4 small tiles per medium square x 3 columns x 2 rows). 
     
 >[!NOTE]
->Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/en-US/library/jj649079.aspx).
+>To use the layout modification XML to configure Start with roaming user profiles, see [Deploying Roaming User Profiles](https://docs.microsoft.com/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#step-7-optionally-specify-a-start-layout-for-windows-10-pcs).
 
 
 
@@ -38,13 +41,34 @@ On Windows 10 for desktop editions, the customized Start works by:
 
 IT admins can provision the Start layout using a LayoutModification.xml file. This file supports several mechanisms to modify or replace the default Start layout and its tiles. The easiest method for creating a LayoutModification.xml file is by using the Export-StartLayout cmdlet; see [Customize and export Start layout](customize-and-export-start-layout.md) for instructions.
 
->[!NOTE]  
+### Required order
+
+The XML schema for `LayoutModification.xml` requires the following order for tags directly under the LayoutModificationTemplate node:
+
+1. LayoutOptions
+1. DefaultLayoutOverride
+1. RequiredStartGroupsCollection
+1. AppendDownloadOfficeTile –OR– AppendOfficeSuite (only one Office option can be used at a time)
+1. AppendOfficeSuiteChoice
+1. TopMFUApps
+1. CustomTaskbarLayoutCollection
+1. InkWorkspaceTopApps
+1. StartLayoutCollection
+
+Comments are not supported in the `LayoutModification.xml` file.
+
+
+### Supported elements and attributes
+
+>[!NOTE]
 >To make sure the Start layout XML parser processes your file correctly, follow these guidelines when working with your LayoutModification.xml file:
 >- Do not leave spaces or white lines in between each element.
 >- Do not add comments inside the StartLayout node or any of its children elements.
 >- Do not add multiple rows of comments.
 
 The following table lists the supported elements and attributes for the LayoutModification.xml file.
+> [!NOTE]
+> RequiredStartGroupsCollection and AppendGroup syntax only apply when the Import-StartLayout method is used for building and deploying Windows images.
 
 | Element | Attributes | Description |
 | --- | --- | --- |
@@ -54,12 +78,13 @@ The following table lists the supported elements and attributes for the LayoutMo
 | [RequiredStartGroups](#requiredstartgroups)</br></br>Parent:</br>RequiredStartGroupsCollection | Region | Use to contain the AppendGroup tags, which represent groups that can be appended to the default Start layout |
 | [AppendGroup](#appendgroup)</br></br>Parent:</br>RequiredStartGroups | Name | Use to specify the tiles that need to be appended to the default Start layout |
 | [start:Tile](#specify-start-tiles)</br></br>Parent:</br>AppendGroup | AppUserModelID</br>Size</br>Row</br>Column | Use to specify any of the following:</br>- A Universal Windows app</br>- A Windows 8 or Windows 8.1 app</br></br>Note that AppUserModelID is case-sensitive. |
+start:Folder<br><br>Parent:<br>start:Group | Name (in Windows 10, version 1809 and later only)<br>Size<br>Row<br>Column<br>LocalizedNameResourcetag | Use to specify a folder of icons; can include [Tile](#start-tile), [SecondaryTile](#start-secondarytile), and [DesktopApplicationTile](#start-desktopapplicationtile).  
 | start:DesktopApplicationTile</br></br>Parent:</br>AppendGroup | DesktopApplicationID</br>DesktopApplicationLinkPath</br>Size</br>Row</br>Column | Use to specify any of the following:</br>- A Windows desktop application with a known AppUserModelID</br>- An application in a known folder with a link in a legacy Start Menu folder</br>- A Windows desktop application link in a legacy Start Menu folder</br>- A Web link tile with an associated .url file that is in a legacy Start Menu folder |
 | start:SecondaryTile</br></br>Parent:</br>AppendGroup | AppUserModelID</br>TileID</br>Arguments</br>DisplayName</br>Square150x150LogoUri</br>ShowNameOnSquare150x150Logo</br>ShowNameOnWide310x150Logo</br>Wide310x150LogoUri</br>BackgroundColor</br>ForegroundText</br>IsSuggestedApp</br>Size</br>Row</br>Column | Use to pin a Web link through a Microsoft Edge secondary tile. Note that AppUserModelID is case-sensitive. |
 | TopMFUApps</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add up to 3 default apps to the frequently used apps section in the system area.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
 | Tile</br></br>Parent:</br>TopMFUApps | AppUserModelID | Use with the TopMFUApps tags to specify an app with a known AppUserModelID. </br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
 | DesktopApplicationTile</br></br>Parent:</br>TopMFUApps | LinkFilePath | Use with the TopMFUApps tags to specify an app without a known AppUserModelID.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
-| AppendOfficeSuite</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add the in-box installed Office suite to Start</br></br>Do not use this tag with AppendDownloadOfficeTile |
+| AppendOfficeSuite</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add the in-box installed Office suite to Start. For more information, see [Customize the Office suite of tiles](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).</br></br>Do not use this tag with AppendDownloadOfficeTile |
 | AppendDownloadOfficeTile</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add a specific **Download Office** tile to a specific location in Start</br></br>Do not use this tag with AppendOfficeSuite |
 
 ### LayoutOptions
@@ -136,6 +161,7 @@ The following table describes the attributes that you must use to specify the si
 
 For example, a tile with Size="2x2", Row="2", and Column="2" results in a tile located at (2,2) where (0,0) is the top-left corner of a group.
 
+<span id="start-tile" />
 #### start:Tile
 
 You can use the **start:Tile** tag to pin any of the following apps to Start:
@@ -158,6 +184,7 @@ The following example shows how to pin the Microsoft Edge Universal Windows app:
           Column="0"/>
  ```
 
+<span id="start-desktopapplicationtile" />
 #### start:DesktopApplicationTile
 
 You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop application to Start. There are two ways you can specify a Windows desktop application: 
@@ -218,6 +245,7 @@ The following example shows how to create a tile of the Web site's URL, which yo
 >[!NOTE]
 >In Windows 10, version 1703, **Export-StartLayout** will use **DesktopApplicationLinkPath** for the .url shortcut. You must change **DesktopApplicationLinkPath** to **DesktopApplicationID** and provide the URL.
 
+<span id="start-secondarytile" />
 #### start:SecondaryTile
 
 You can use the **start:SecondaryTile** tag to pin a Web link through a Microsoft Edge secondary tile. This method doesn't require any additional action compared to the method of using legacy .url shortcuts (through the start:DesktopApplicationTile tag).
@@ -304,9 +332,23 @@ The following example shows how to add the **AppendOfficeSuite** tag to your Lay
 </LayoutModificationTemplate>
 ```
 
+#### AppendOfficeSuiteChoice
+
+This tag is added in Windows 10, version 1803. You have two options in this tag:
+
+- `<AppendOfficeSuiteChoice Choice="DesktopBridgeSubscription"/>`
+- `<AppendOfficeSuiteChoice Choice="DesktopBridge"/>`
+
+Use `Choice=DesktopBridgeSubscription` on devices running Windows 10, version 1803, that have Office 365 preinstalled. This will set the heading of the Office suite of tiles to **Office 365**, to highlight the Office 365 apps that you've made available on the device.
+
+Use `Choice=DesktopBridge` on devices running versions of Windows 10 earlier than version 1803, and on devices shipping with [perpetual licenses for Office](https://blogs.technet.microsoft.com/ausoemteam/2017/11/30/choosing-the-right-office-version-for-your-customers/). This will set the heading of the Office suite of tiles to **Create**.
+
+For more information, see [Customize the Office suite of tiles](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).
+
+
 #### AppendDownloadOfficeTile
 
-You can use the **AppendDownloadOfficeTile** tag to append the Office trial installer to Start. This tag adds the Download Office tile to Start and the download tile will appear at the bottom right-hand side of the second group.
+You can use the **AppendDownloadOfficeTile** tag to append the Office trial installer to Start. This tag adds the **Download Office** tile to Start and the download tile will appear at the bottom right-hand side of the second group.
 
 >[!NOTE]
 >The OEM must have installed the Office trial installer for this tag to work.
@@ -504,9 +546,9 @@ Once you have created the LayoutModification.xml file and it is present in the d
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
 - [Start layout XML for mobile editions of Windows 10 (reference)](mobile-devices/start-layout-xml-mobile.md)
 
- 
+ 
 
- 
+ 
 
 
 

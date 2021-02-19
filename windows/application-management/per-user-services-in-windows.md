@@ -1,13 +1,15 @@
 ---
-title: Per-user services in Windows 10 and Windows Server 
-description: Learn about per-user services introduced in Windows 10.
+title: Per-user services in Windows 10 and Windows Server
+description: Learn about per-user services, how to change the template service Startup Type, and manage per-user services through Group Policy and security templates.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: elizapo
-author: lizap
+ms.author: dansimp
+author: msfttracyp
 ms.date: 09/14/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Per-user services in Windows 10 and Windows Server 
@@ -29,18 +31,25 @@ For more information about disabling system services for Windows Server, see [Gu
 
 ## Per-user services
 
-Windows 10 and Windows Server (with the Desktop Experience) have the following per-user services. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
+The following table lists per-user services and when they were added to Windows 10 and Windows Server with the Desktop Experience. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
 
 Before you disable any of these services, review the **Description** column in this table to understand the implications, including dependent apps that will no longer work correctly.
 
-| Key name               | Display name                            | Default start type | Dependencies | Description                                                                                                                                                                           |
-|------------------------|-----------------------------------------|--------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CDPUserSvc             | CDPUserSvc                              | Auto               |              | Used for Connected Devices Platform scenarios                                                                                                                                         |
-| OneSyncSvc             | Sync Host                               | Auto (delayed)     |              | Synchronizes mail, contacts, calendar, and other user data. Mail and other applications dependent on this service don't work correctly when this service is not running.              |
-| PimIndexMaintenanceSvc | Contact Data                            | Manual             | UnistoreSvc  | Indexes contact data for fast contact searching. If you stop or disable this service, search results might not display all contacts.                                                  |
-| UnistoreSvc            | User Data Storage                       | Manual             |              | Handles storage of structured user data, including contact info, calendars, and messages. If you stop or disable this service, apps that use this data might not work correctly.      |
-| UserDataSvc            | User Data Access                        | Manual             | UnistoreSvc  | Provides apps access to structured user data, including contact info, calendars, and messages. If you stop or disable this service, apps that use this data might not work correctly. |
-| WpnUserService         | Windows Push Notifications User Service | Manual             |              | Hosts Windows notification platform, which provides support for local and push notifications. Supported notifications are tile, toast, and raw.                                        |
+| Windows version | Key name               | Display name                            | Default start type | Dependencies | Description                                                                                                                                                                           |
+|-----------------|------------------------|-----------------------------------------|--------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1803            | BcastDVRUserService    | GameDVR and Broadcast User Service      | Manual             |              | Used for Game Recordings and Live Broadcasts                                                                                                                                          |
+| 1803            | BluetoothUserService   | Bluetooth User Support Service          | Manual             |              | Supports proper functionality of Bluetooth features relevant to each user session                                                                                                     |
+| 1803            | CaptureService         | CaptureService                          | Manual             |              | OneCore Capture Service                                                                                                                                                               |
+| 1607            | CDPUserSvc             | CDPUserSvc                              | Auto               | - Network Connection Broker</br>- Remote Procedure Call (RPC)</br>- TCP/IP Protocol Driver | Used for Connected Devices Platform scenarios                                                                 |
+| 1803            | DevicePickerUserSvc    | DevicePicker                            | Manual             |              | Device Picker                                                                                                                                                                         |
+| 1703            | DevicesFlowUserSvc     | DevicesFlow                             | Manual             |              | Device Discovery and Connecting                                                                                                                                                       |
+| 1703            | MessagingService       | MessagingService                        | Manual             |              | Service supporting text messaging and related functionality                                                                                                                           |
+| 1607            | OneSyncSvc             | Sync Host                               | Auto (delayed)     |              | Synchronizes mail, contacts, calendar, and other user data. Mail and other applications dependent on this service don't work correctly when this service is not running.              |
+| 1607            | PimIndexMaintenanceSvc | Contact Data                            | Manual             | UnistoreSvc  | Indexes contact data for fast contact searching. If you stop or disable this service, search results might not display all contacts.                                                  |
+| 1709            | PrintWorkflowUserSvc   | PrintWorkflow                           | Manual             |              | Print Workflow                                                                                                                                                                        |
+| 1607            | UnistoreSvc            | User Data Storage                       | Manual             |              | Handles storage of structured user data, including contact info, calendars, and messages. If you stop or disable this service, apps that use this data might not work correctly.      |
+| 1607            | UserDataSvc            | User Data Access                        | Manual             | UnistoreSvc  | Provides apps access to structured user data, including contact info, calendars, and messages. If you stop or disable this service, apps that use this data might not work correctly. |
+| 1607            | WpnUserService         | Windows Push Notifications User Service | Manual             |              | Hosts Windows notification platform, which provides support for local and push notifications. Supported notifications are tile, toast, and raw.                                       |
 
 ## Disable per-user services
 
@@ -67,8 +76,6 @@ In light of these restrictions, you can use the following methods to manage per-
 
 You can manage the CDPUserSvc and OneSyncSvc per-user services with a [security template](/windows/device-security/security-policy-settings/administer-security-policy-settings#bkmk-sectmpl). See [Administer security policy settings](/windows/device-security/security-policy-settings/administer-security-policy-settings) for more information.
 
-device-security/security-policy-settings/administer-security-policy-settings
-
 For example: 
 
 ```
@@ -85,7 +92,7 @@ Revision=1
 
 If a per-user service can't be disabled using a the security template, you can disable it by using Group Policy preferences.
 
-1. On a Windows Server domain controller or Windows 10 PC that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC, and then press **Enter** to open the **Group Policy Management Console**.
+1. On a Windows Server domain controller or Windows 10 PC that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC, and then press **Enter** to open the **Group Policy Management Console**.
 
 2. Create a new Group Policy Object (GPO) or use an existing GPO.  
 
@@ -113,8 +120,8 @@ If a per-user service can't be disabled using a the security template, you can d
 
 ### Managing Template Services with reg.exe
 
-If you cannot use GPP to manage the per-user services you can edit the registry with reg.exe. 
-To disable the Template Services change the Startup Type for each service to 4 (disabled). 
+If you cannot use Group Policy Preferences to manage the per-user services, you can edit the registry with reg.exe. 
+To disable the Template Services, change the Startup Type for each service to 4 (disabled). 
 For example:
 
 ```code
@@ -165,7 +172,7 @@ Set-Service <service name> -StartupType Disabled
 
 ## View per-user services in the Services console (services.msc)
 
-As mentioned you can't view the template services in the Services console, but you can see the user-specific per-user services - they are displayed using the <service name>_LUID format (where LUID is the locally unique identifier).
+As mentioned you can't view the template services in the Services console, but you can see the user-specific per-user services - they are displayed using the \<service name>_LUID format (where LUID is the locally unique identifier).
 
 For example, you might see the following per-user services listed in the Services console:
 
@@ -174,3 +181,9 @@ For example, you might see the following per-user services listed in the Service
 - Sync Host_443f50
 - User Data Access_443f50
 - User Data Storage_443f50
+
+## View per-user services from the command line
+
+You can query the service configuration from the command line. The **Type** value indicates whether the service is a user-service template or user-service instance.
+
+![Use sc.exe to view service type](media/cmd-type.png)

@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Additional Settings page in IEAK 11 Customization Wizard for additional settings that relate to your employee’s desktop, operating system, and security.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: c90054af-7b7f-4b00-b55b-5e5569f65f25
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use the Additional Settings page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Additional Settings page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Additional Settings** page of the Internet Explorer Administration Kit (IEAK 11) Customization Wizard lets you pick additional custom, corporate, and Internet settings that relate to your employee’s desktop, operating system, and security. If you don’t change a setting, it’ll be ignored.
 
 The additional settings appear in administration (.adm) files that are stored in your `<system_drive>:\Program Files\Windows IEAK 11\policies` folder. You can also create your own .adm files with options that can be configured using the wizard. Any edits you make to your own .adm file are stored as .ins files, which are used to build the .inf files for your custom install package.

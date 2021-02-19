@@ -1,12 +1,15 @@
 ---
 title: Troubleshooting App-V (Windows 10)
-description: Troubleshooting App-V
-author: MaggiePucciEvans
+description: Learn how to find information about troubleshooting Application Virtualization (App-V) and information about other App-V topics.
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 
@@ -17,7 +20,7 @@ ms.date: 04/19/2017
 
 For information that can help with troubleshooting App-V for Windows 10, see:
 
-- [Application Virtualization (App-V): List of Microsoft Support Knowledge Base Articles](http://social.technet.microsoft.com/wiki/contents/articles/14272.app-v-v5-x-list-of-microsoft-support-knowledge-base-articles.aspx)
+- [Application Virtualization (App-V): List of Microsoft Support Knowledge Base Articles](https://social.technet.microsoft.com/wiki/contents/articles/14272.app-v-v5-x-list-of-microsoft-support-knowledge-base-articles.aspx)
 
 - [Microsoft App-V Team Blog](https://blogs.technet.microsoft.com/appv/)
 
@@ -40,6 +43,6 @@ For information that can help with troubleshooting App-V for Windows 10, see:
 
 -   [Operations for App-V](appv-operations.md)
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

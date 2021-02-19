@@ -2,37 +2,41 @@
 title: Plan for volume activation (Windows 10)
 description: Product activation is the process of validating software with the manufacturer after it has been installed on a specific computer.
 ms.assetid: f84b005b-c362-4a70-a84e-4287c0d2e4ca
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.date: 09/27/2017
+ms.topic: article
 ---
 
 # Plan for volume activation
 
 **Applies to**
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012 R2
--   Windows Server 2012
--   Windows Server 2008 R2
+- Windows 10
+- Windows 8.1
+- Windows 8
+- Windows 7
+- Windows Server 2012 R2
+- Windows Server 2012
+- Windows Server 2008 R2
 
 **Looking for retail activation?**
 
--   [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
+- [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
 
 *Product activation* is the process of validating software with the manufacturer after it has been installed on a specific computer. Activation confirms that the product is genuine—not a fraudulent copy—and that the product key or serial number is valid and has not been compromised or revoked. Activation also establishes a link or relationship between the product key and the particular installation.
 
-During the activation process, information about the specific installation is examined. In the case of online activations, this information is sent to a server at Microsoft. This information may include the software version, the product key, the IP address of the computer, and information about the device. The activation methods that Microsoft uses are designed to help protect user privacy, and they cannot be used to track back to the computer or user. The gathered data confirms that the software is a legally licensed copy, and this data is used for statistical analysis. Microsoft does not use this information to identify or contact the user or the organization.
+During the activation process, information about the specific installation is examined. For online activations, this information is sent to a server at Microsoft. This information may include the software version, the product key, the IP address of the computer, and information about the device. The activation methods that Microsoft uses are designed to help protect user privacy, and they cannot be used to track back to the computer or user. The gathered data confirms that the software is a legally licensed copy, and this data is used for statistical analysis. Microsoft does not use this information to identify or contact the user or the organization.
 
-**Note**  
-The IP address is used only to verify the location of the request, because some editions of Windows (such as “Starter” editions) can only be activated within certain geographical target markets.
+>[!NOTE]
+>The IP address is used only to verify the location of the request, because some editions of Windows (such as “Starter” editions) can only be activated within certain geographical target markets.
 
 ## Distribution channels and activation
 
@@ -75,12 +79,12 @@ Telephone activation is primarily used in situations where a computer is isolate
 -   Active Directory-based activation
 
 **Note**  
-A specialized method, Token-based activation, is available for specific situations when approved customers rely on a public key infrastructure in a completely isolated, and usually high-security, environment. For more information, contact your Microsoft Account Team or your service representative.
+Token-based activation is available for specific situations when approved customers rely on a public key infrastructure in an isolated and high-security environment. For more information, contact your Microsoft Account Team or your service representative.
 Token-based Activation option is available for Windows 10 Enterprise LTSB editions (Version 1507 and 1607).
 
 ### Multiple activation key
 
-A Multiple Activation Key (MAK) is commonly used in small- or mid-sized organizations that have a volume licensing agreement, but they do not meet the requirements to operate a KMS or they prefer a simpler approach. A MAK also 
+A Multiple Activation Key (MAK) is commonly used in small- or mid-sized organizations that have a volume licensing agreement, but they do not meet the requirements to operate a KMS or they prefer a simpler approach. A MAK also
 allows permanent activation of computers that are isolated from the KMS or are part of an isolated network that does not have enough computers to use the KMS.
 
 To use a MAK, the computers to be activated must have a MAK installed. The MAK is used for one-time activation with the Microsoft online hosted activation services, by telephone, or by using VAMT proxy activation.
@@ -96,7 +100,7 @@ Volume editions of Windows 10 and Windows Server 2012 R2 (in addition to volu
 
 The KMS requires a minimum number of computers (physical computers or virtual machines) in a network environment. The organization must have at least five computers to activate Windows Server 2012 R2 and at least 25 computers to activate client computers that are running Windows 10. These minimums are referred to as *activation thresholds*.
 
-Planning to use the KMS includes selecting the best location for the KMS host and how many KMS hosts to have. One KMS host can handle a large number of activations, but organizations will often deploy two KMS hosts to ensure availability. Only rarely would more than two KMS hosts be used. The KMS can be hosted on a client computer or on a server, and it can be run on older versions of the operating system if proper configuration steps are taken. Setting up your KMS is discussed later in this guide.
+Planning to use the KMS includes selecting the best location for the KMS host and how many KMS hosts to have. One KMS host can handle a large number of activations, but organizations will often deploy two KMS hosts to ensure availability. Only rarely will more than two KMS hosts be used. The KMS can be hosted on a client computer or on a server, and it can be run on older versions of the operating system if proper configuration steps are taken. Setting up your KMS is discussed later in this guide.
 
 ### Active Directory-based activation
 
@@ -112,7 +116,7 @@ A modern business network has many nuances and interconnections. This section ex
 
 Your core network is that part of your network that enjoys stable, high-speed, reliable connectivity to infrastructure servers. In many cases, the core network is also connected to the Internet, although that is not a requirement to use the KMS or Active Directory-based activation after the KMS server or AD DS is configured and active. Your core network likely consists of many network segments. In many organizations, the core network makes up the vast majority of the business network.
 
-In the core network, a centralized KMS solution is usually recommended. You can also use Active Directory-based activation, but in many organizations, KMS will still be required to activate older client computers and computers that are not joined to the domain. Some administrators prefer to run both solutions to have the most flexibility, while others prefer to choose only a KMS-based solution for simplicity. Active Directory-based activation as the only solution is workable if all of the clients in your organization are running Windows 10, Windows 8.1, or Windows 8.
+In the core network, a centralized KMS solution is recommended. You can also use Active Directory-based activation, but in many organizations, KMS will still be required to activate older client computers and computers that are not joined to the domain. Some administrators prefer to run both solutions to have the most flexibility, while others prefer to choose only a KMS-based solution for simplicity. Active Directory-based activation as the only solution is workable if all of the clients in your organization are running Windows 10, Windows 8.1, or Windows 8.
 
 A typical core network that includes a KMS host is shown in Figure 1.
 
@@ -168,7 +172,7 @@ Now it’s time to assemble the pieces into a working solution. By evaluating yo
 |----------|------------------|
 |Number of domain-joined computers that support Active Directory-based activation (computers running Windows 10, Windows 8.1, Windows 8, Windows Server 2012 R2, or Windows Server 2012 R2) and will connect to a domain controller at least every 180 days. Computers can be mobile, semi-isolated, or located in a branch office or the core network. |Active Directory-based activation |
 |Number of computers in the core network that will connect (directly or through a VPN) at least every 180 days<p><strong>Note</strong><br>The core network must meet the KMS activation threshold. |KMS (central) |
-|Number of computers that do not connect to the network at least once every 180 days (or if no network meets the activation threshold) |MAM |
+|Number of computers that do not connect to the network at least once every 180 days (or if no network meets the activation threshold) | MAK |
 |Number of computers in semi-isolated networks that have connectivity to the KMS in the core network |KMS (central) |
 |Number of computers in isolated networks where the KMS activation threshold is met |KMS (local) |
 |Number of computers in isolated networks where the KMS activation threshold is not met |MAK |
@@ -185,7 +189,7 @@ When you know which keys you need, you must obtain them. Generally speaking, vol
 
 ### KMS host keys
 
-A KMS host needs a key that activates, or authenticates, the KMS host with Microsoft. This key is usually referred to as the *KMS host key*, but it is formally known as a *Microsoft Customer Support Volume License Key* (CSVLK). Most documentation and Internet references earlier than Windows 8.1 use the term KMS key, but CSVLK is becoming more common in current documentation and management tools.
+A KMS host needs a key that activates, or authenticates, the KMS host with Microsoft. This key is usually referred to as the *KMS host key*, but it is formally known as a *Microsoft Customer Specific Volume License Key* (CSVLK). Most documentation and Internet references earlier than Windows 8.1 use the term KMS key, but CSVLK is becoming more common in current documentation and management tools.
 
 A KMS host running Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 can activate both Windows Server and Windows client operating systems. A KMS host key is also needed to create the activation objects in AD DS, as described later in this guide. You will need a KMS host key for any KMS that you want to set up and if you are going to use Active Directory-based activation.
 
@@ -193,9 +197,9 @@ A KMS host running Windows Server 2012 R2, Windows Server 2012, or Windows Se
 
 When you create installation media or images for client computers that will be activated by KMS or Active Directory-based activation, install a generic volume license key (GVLK) for the edition of Windows you are creating. GVLKs are also referred to as KMS client setup keys.
 
-Installation media from Microsoft for Enterprise editions of the Windows operating system may already contain the GVLK. One GVLK is available for each type of installation. Note that the GLVK will not activate the software against Microsoft activation servers, only against a KMS or Active Directory-based activation object. In other words, the GVLK does not work unless a valid KMS host key can be found. GVLKs are the only product keys that do not need to be kept confidential.
+Installation media from Microsoft for Enterprise editions of the Windows operating system may already contain the GVLK. One GVLK is available for each type of installation. The GLVK will not activate the software against Microsoft activation servers, but rather against a KMS or Active Directory-based activation object. In other words, the GVLK does not work unless a valid KMS host key can be found. GVLKs are the only product keys that do not need to be kept confidential.
 
-Typically, you will not need to manually enter a GVLK unless a computer has been activated with a MAK or a retail key and it is being converted to a KMS activation or to Active Directory-based activation. If you need to locate the GVLK for a particular client edition, see [Appendix A: KMS Client Setup Keys](http://technet.microsoft.com/library/jj612867.aspx).
+Typically, you will not need to manually enter a GVLK unless a computer has been activated with a MAK or a retail key and it is being converted to a KMS activation or to Active Directory-based activation. If you need to locate the GVLK for a particular client edition, see [Appendix A: KMS Client Setup Keys](https://technet.microsoft.com/library/jj612867.aspx).
 
 ### Multiple activation keys
 
@@ -224,5 +228,5 @@ The flow of KMS activation is shown in Figure 3, and it follows this sequence:
 
 ## See also
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
- 
- 
+ 
+ 

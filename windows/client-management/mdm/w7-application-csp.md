@@ -1,12 +1,14 @@
 ---
 title: w7 APPLICATION CSP
-description: w7 APPLICATION CSP
+description: Learn that the APPLICATION configuration service provider (CSP) that has an APPID of w7 is used for bootstrapping a device with an OMA DM account.
 ms.assetid: 10f8aa16-5c89-455d-adcd-d7fb45d4e768
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -158,7 +160,7 @@ Stores specifies which certificate stores the DM client will search to find the 
 
 Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute (“CN=Tester,O=Microsoft”), use the following:
 
-``` syntax
+```xml
 <parm name="SSLCLIENTCERTSEARCHCRITERIA" 
    value="Subject=CN%3DTester,O%3DMicrosoft&amp;Stores=My%5CUser" />
 ```

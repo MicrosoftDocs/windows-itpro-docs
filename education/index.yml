@@ -1,0 +1,35 @@
+### YamlMime:Hub
+
+title: Microsoft 365 Education Documentation
+summary: Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
+
+metadata:
+  title: Microsoft 365 Education Documentation
+  description: Learn about product documentation and resources available for school IT administrators, teachers, students, and education app developers.
+  ms.service: help
+  ms.topic: hub-page
+  author: LaurenMoynihan
+  ms.author: v-lamoyn
+  ms.date: 10/24/2019
+
+productDirectory:
+  items:
+    # Card    
+    - title: IT Admins
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./images/EDUAdmins.svg
+      links:
+        - url: itadmins.yml
+          text: Get started with deploying and managing a full cloud IT solution for your school.
+    # Card
+    - title: Developers
+      imageSrc: ./images/EDUDevelopers.svg
+      links:
+        - url: developers.yml
+          text: Looking for information about developing solutions on Microsoft Education products? Start here. 
+    # Card    
+    - title: Partners
+      imageSrc: ./images/EDUPartners.svg
+      links:
+        - url: partners.yml
+          text: Looking for resources available to Microsoft Education partners? Start here.

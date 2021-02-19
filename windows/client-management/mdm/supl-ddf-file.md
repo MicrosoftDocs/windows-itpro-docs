@@ -2,24 +2,25 @@
 title: SUPL DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the SUPL configuration service provider.
 ms.assetid: 514B7854-80DC-4ED9-9805-F5276BF38034
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 12/05/2017
+author: manikadhiman
+ms.date: 06/03/2020
 ---
 
 # SUPL DDF file
 
-
-This topic shows the OMA DM device description framework (DDF) for the **SUPL** configuration service provider.
+This topic shows the OMA DM device description framework (DDF) for the **SUPL** configuration service provider (CSP).
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is the current version for this CSP.
+The XML below is the DDF for the current version for this CSP.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -43,7 +44,7 @@ The XML below is the current version for this CSP.
             <Permanent />
           </Scope>
           <DFType>
-            <DDFName></DDFName>
+            <MIME>com.microsoft/1.2/MDM/SUPL</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -155,7 +156,7 @@ The XML below is the current version for this CSP.
                     <Replace />
                   </AccessType>
                   <DefaultValue>1</DefaultValue>
-                  <Description>Optional. Determines the version of the SUPL protocol to use. For SUPL 1.0, set this value to 1. For SUPL 2.0, set this value to 2. The default is 1.</Description>
+                  <Description>Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0.0, set this value to 1. For SUPL 2.0.0, set this value to 2. The default is 1. Refer to FullVersion to define the minor version and the service indicator.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -171,7 +172,30 @@ The XML below is the current version for this CSP.
                 </DFProperties>
               </Node>
               <Node>
-                <NodeName>MCCMNPairs</NodeName>
+                <NodeName>FullVersion</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                    <Replace />
+                  </AccessType>
+                  <DefaultValue>1.0.0</DefaultValue>
+                  <Description>Optional. Determines the full version (X.Y.Z where X, Y, and Z are the major version, the minor version, and the service indicator, respectively) of the SUPL protocol to use. The default is 1.0.0. If FullVersion is defined, Version field is ignored.</Description>
+                  <DFFormat>
+                    <chr />
+                  </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Permanent />
+                  </Scope>
+                  <DFType>
+                    <MIME>text/plain</MIME>
+                  </DFType>
+                </DFProperties>
+              </Node>
+              <Node>
+                <NodeName>MCCMNCPairs</NodeName>
                 <DFProperties>
                   <AccessType>
                     <Get />
@@ -200,7 +224,7 @@ The XML below is the current version for this CSP.
                     <Replace />
                   </AccessType>
                   <DefaultValue>0</DefaultValue>
-                  <Description>Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The default is 0. The default method in Windows Phones provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator’s network or location services. For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.</Description>
+                  <Description>Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The default is 0. The default method in Windows Phones provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator's network or location services. For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -479,6 +503,201 @@ The XML below is the current version for this CSP.
                   </DFProperties>
                 </Node>
               </Node>
+              <Node>
+                <NodeName>RootCertificate4</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                  </AccessType>
+                  <Description>Specifies the root certificate for the H-SLP server.</Description>
+                  <DFFormat>
+                    <node />
+                  </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Permanent />
+                  </Scope>
+                  <DFType>
+                    <DDFName></DDFName>
+                  </DFType>
+                </DFProperties>
+                <Node>
+                  <NodeName>Name</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>Specifies the name of the H-SLP root certificate as a string, in the format name.cer.</Description>
+                    <DFFormat>
+                      <chr />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <MIME>text/plain</MIME>
+                    </DFType>
+                  </DFProperties>
+                </Node>
+                <Node>
+                  <NodeName>Data</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>The base 64 encoded blob of the H-SLP root certificate.</Description>
+                    <DFFormat>
+                      <b64 />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <DDFName></DDFName>
+                    </DFType>
+                  </DFProperties>
+                </Node>
+              </Node>
+              <Node>
+                <NodeName>RootCertificate5</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                  </AccessType>
+                  <Description>Specifies the root certificate for the H-SLP server.</Description>
+                  <DFFormat>
+                    <node />
+                  </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Permanent />
+                  </Scope>
+                  <DFType>
+                    <DDFName></DDFName>
+                  </DFType>
+                </DFProperties>
+                <Node>
+                  <NodeName>Name</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>Specifies the name of the H-SLP root certificate as a string, in the format name.cer.</Description>
+                    <DFFormat>
+                      <chr />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <MIME>text/plain</MIME>
+                    </DFType>
+                  </DFProperties>
+                </Node>
+                <Node>
+                  <NodeName>Data</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>The base 64 encoded blob of the H-SLP root certificate.</Description>
+                    <DFFormat>
+                      <b64 />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <DDFName></DDFName>
+                    </DFType>
+                  </DFProperties>
+                </Node>
+              </Node>
+              <Node>
+                <NodeName>RootCertificate6</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                  </AccessType>
+                  <Description>Specifies the root certificate for the H-SLP server.</Description>
+                  <DFFormat>
+                    <node />
+                  </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Permanent />
+                  </Scope>
+                  <DFType>
+                    <DDFName></DDFName>
+                  </DFType>
+                </DFProperties>
+                <Node>
+                  <NodeName>Name</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>Specifies the name of the H-SLP root certificate as a string, in the format name.cer.</Description>
+                    <DFFormat>
+                      <chr />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <MIME>text/plain</MIME>
+                    </DFType>
+                  </DFProperties>
+                </Node>
+                <Node>
+                  <NodeName>Data</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>The base 64 encoded blob of the H-SLP root certificate.</Description>
+                    <DFFormat>
+                      <b64 />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <DDFName></DDFName>
+                    </DFType>
+                  </DFProperties>
+                </Node>
+              </Node>
             </Node>
           </Node>
         </Node>
@@ -554,7 +773,7 @@ The XML below is the current version for this CSP.
                 <Replace />
               </AccessType>
               <DefaultValue>0</DefaultValue>
-              <Description>Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The default is 0. The default method in Windows Phones provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator’s network or location services. The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes. For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.</Description>
+              <Description>Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The default is 0. The default method in Windows Phones provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator's network or location services. The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes. For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -663,13 +882,3 @@ The XML below is the current version for this CSP.
       </Node>
 </MgmtTree>
 ```
-
- 
-
- 
-
-
-
-
-
-

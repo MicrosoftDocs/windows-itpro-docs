@@ -2,16 +2,38 @@
 title: Sign code integrity policy with Device Guard signing (Windows 10)
 description: Signing code integrity policies prevents policies from being tampered with after they're deployed. You can sign code integrity policies with the Device Guard signing portal.
 ms.assetid: 63B56B8B-2A40-44B5-B100-DC50C43D20A9
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store, security
 author: TrudyHa
-ms.localizationpriority: high
+ms.author: TrudyHa
+ms.topic: conceptual
+ms.localizationpriority: medium
 ms.date: 10/17/2017
 ---
 
 # Sign code integrity policy with Device Guard signing
+
+> [!IMPORTANT]
+> We are introducing a new version of the Device Guard Signing Service (DGSS) to be more automation friendly. The new version of the service (DGSS v2) is now available. As announced earlier, you will have until the end of December 2020 to transition to DGSS v2. At the end of December 2020, the existing web-based mechanisms for the current version of the DGSS service will be retired and will no longer be available for use. Please make plans to migrate to the new version of the service by the end of December 2020.
+>
+> Following are the major changes we are making to the service: 
+> - The method for consuming the service will change to a more automation-friendly method based on PowerShell cmdlets. These cmdlets are available as a NuGet download, https://www.nuget.org/packages/Microsoft.Acs.Dgss.Client/.
+> - In order to achieve desired isolation, you will be required to get a new CI policy from DGSS v2 (and optionally sign it). 
+> -	DGSS v2 will not have support for downloading leaf certificates used to sign your files (however, the root certificate will still be available to download).  Note that the certificate used to sign a file can be easily extracted from the signed file itself.  As a result, after DGSS v1 is retired at the end of December 2020, you will no longer be able to download the leaf certificates used to sign your files.
+>
+> The following functionality will be available via these PowerShell cmdlets:
+> - Get a CI policy
+> - Sign a CI policy
+> - Sign a catalog 
+> - Download root cert
+> - Download history of your signing operations 
+>
+> For any questions, please contact us at DGSSMigration@microsoft.com. 
+
 
 **Applies to**
 
@@ -30,7 +52,7 @@ Before you get started, be sure to review these best practices:
 
 **To sign a code integrity policy**
 
-1.  Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
+1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
 2.  Click **Manage**, click **Store settings**, and then click **Device Guard**.
 3.  Click **Upload** to upload your code integrity policy.
 4.  After the files are uploaded, click **Sign** to sign the code integrity policy.

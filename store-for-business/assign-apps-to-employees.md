@@ -2,12 +2,16 @@
 title: Assign apps to employees (Windows 10)
 description: Administrators can assign online-licensed apps to employees and students in their organization.
 ms.assetid: A0DF4EC2-BE33-41E1-8832-DBB0EBECA31A
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.localizationpriority: high
+ms.author: TrudyHa
+ms.topic: conceptual
+ms.localizationpriority: medium
 ms.date: 10/13/2017
 ---
 

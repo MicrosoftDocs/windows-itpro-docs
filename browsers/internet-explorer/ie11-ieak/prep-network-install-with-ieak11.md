@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Learn about what you need to do before you deploy your custom browser package using IEAK 11 over your network.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 2c66d22a-4a94-47cc-82ab-7274abe1dfd6
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Before you install your package over your network using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Before you install your package over your network using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Employees can install the custom browser package using a network server. However, you must either lower the intranet security level or make the server a trusted site.
 
 **To lower your intranet security**

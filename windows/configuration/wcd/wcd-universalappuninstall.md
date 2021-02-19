@@ -4,10 +4,12 @@ description: This section describes the UniversalAppUninstall settings that you 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
-ms.date: 09/14/2017
+ms.author: dansimp
+ms.topic: article
+ms.reviewer: 
+manager: dansimp
 ---
 
 # UniversalAppUninstall (reference)
@@ -21,7 +23,7 @@ Use UniversalAppUninstall settings to uninstall or remove Windows apps.
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
 | [RemoveProvisionedApp](#removeprovisionedapp) | X |  |  |  |   |
-| [Uninstall](#uninstall) | X | X | X | X | X  |
+| [Uninstall](#uninstall) | X | X | X |  | X  |
 
 ## RemoveProvisionedApp
 

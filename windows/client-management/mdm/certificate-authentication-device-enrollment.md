@@ -2,24 +2,24 @@
 title: Certificate authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using certificate authentication policy.
 ms.assetid: 57DB3C9E-E4C9-4275-AAB5-01315F9D3910
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: lomayor
 ms.date: 06/26/2017
 ---
 
 # Certificate authentication device enrollment
 
+This section provides an example of the mobile device enrollment protocol using certificate authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
-This section provides an example of the mobile device enrollment protocol using certificate authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
-
-> **Note**  To set up devices to use certificate authentication for enrollment, you should create a provisioning package. For more information about provisioning packages, see [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107).
-
+> [!Note]
+> To set up devices to use certificate authentication for enrollment, you should create a provisioning package. For more information about provisioning packages, see [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107).
 
 ## In this topic
-
 
 -   [Discovery service](#discovery-service)
 -   [Enrollment policy web service](#enrollment-policy-web-service)
@@ -187,7 +187,7 @@ The following snippet shows the policy web service response.
 ```
 HTTP/1.1 200 OK
 Date: Fri, 03 Aug 2012 20:00:00 GMT
-Server: <sever name here>
+Server: <server name here>
 Content-Type: application/soap+xml
 Content-Length: xxxx
 
@@ -505,10 +505,3 @@ The following example shows the encoded provisioning XML.
         protocol. This configuration service provider is being deprecated for Windows 10. -->
 </wap-provisioningdoc>
 ```
-
- 
-
-
-
-
-

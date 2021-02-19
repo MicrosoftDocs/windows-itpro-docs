@@ -30,14 +30,26 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.windows-configure"
-			}
-		}
-	},
+      "feedback_system": "None",
+      "hideEdit": true,
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.windows-configure"
+        }
+      },
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "windows-configure"
+    "dest": "windows-configure",
+    "markdownEngineName": "markdig"
   }
 }

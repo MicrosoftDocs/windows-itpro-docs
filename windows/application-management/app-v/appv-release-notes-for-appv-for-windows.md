@@ -1,12 +1,15 @@
 ---
 title: Release Notes for App-V for Windows 10, version 1607 (Windows 10)
 description: A list of known issues and workarounds for App-V running on Windows 10, version 1607.
-author: eross-msft
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Release Notes for App-V for Windows 10, version 1607
@@ -33,7 +36,7 @@ MSI packages that were generated using an App-V sequencer from previous versions
 
 4. From an elevated Windows PowerShell prompt, navigate to the following folder:
  
-    &lt;Windows Kits 10 installation folder&gt;**\Microsoft Application Virtualization\Sequencer\** 
+    &lt;Windows Kits 10 installation folder&gt;**\Microsoft Application Virtualization\Sequencer\\** 
 
     By default, this path will be:<br>**C:\Program Files (x86)\Windows Kits\10\Microsoft Application Virtualization\Sequencer** 
 
@@ -134,13 +137,15 @@ The InsertVersionInfo.sql script is not required for versions of the App-V manag
 
 The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340).
 
->[!IMPORTANT] 
->**Step 1** of the KB article listed above isn't required for versions of App-V later than App-V 5.0 SP3.
+> [!IMPORTANT]
+> **Step 1** of the KB article listed above isn't required for versions of App-V later than App-V 5.0 SP3.
 
 ## Microsoft Visual Studio 2012 not supported
 App-V doesn't support Visual Studio 2012.
 
 **Workaround**: Use a newer version of Microsoft Visual Studio.
+
+Currently, Visual Studio 2012 doesn't support app virtualization, whether using Microsoft App-V or third party solutions such as VMWare ThinApp. While it is possible you might find that Visual Studio works well enough for your purposes when running within one of these environments, we are unable to address any bugs or issues found when running in a virtualized environment at this time.
 
 ## Application filename restrictions for App-V Sequencer
 The App-V Sequencer cannot sequence applications with filenames matching "CO_&lt;x&gt;" where x is any numeral. Error 0x8007139F will be generated.
@@ -149,13 +154,13 @@ The App-V Sequencer cannot sequence applications with filenames matching "CO_&lt
 
 ## Related resources list
 For information that can help with troubleshooting App-V for Windows 10, see:
-- [Application Virtualization (App-V): List of Microsoft Support Knowledge Base Articles](http://social.technet.microsoft.com/wiki/contents/articles/14272.app-v-v5-x-list-of-microsoft-support-knowledge-base-articles.aspx)
+- [Application Virtualization (App-V): List of Microsoft Support Knowledge Base Articles](https://social.technet.microsoft.com/wiki/contents/articles/14272.app-v-v5-x-list-of-microsoft-support-knowledge-base-articles.aspx)
 - [The Official Microsoft App-V Team Blog](https://blogs.technet.microsoft.com/appv/)
 - [Technical Reference for App-V](https://technet.microsoft.com/itpro/windows/manage/appv-technical-reference)
 - [App-V TechNet Forum](https://social.technet.microsoft.com/forums/en-us/home?forum=mdopappv)
 
-## Have a suggestion for App-V?
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 <a href="https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md" class="button big">Help us to improve</a>
 

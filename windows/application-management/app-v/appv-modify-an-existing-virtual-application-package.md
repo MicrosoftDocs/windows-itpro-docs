@@ -1,12 +1,15 @@
 ---
 title: How to Modify an Existing Virtual Application Package (Windows 10)
-description: How to Modify an Existing Virtual Application Package
-author: MaggiePucciEvans
+description: Learn how to modify an existing virtual application package and add a new application to an existing virtual application package.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 
@@ -145,9 +148,9 @@ This topic explains how to:
 
 13. On the **Completion** page, click **Close**. The package is now available in the sequencer.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

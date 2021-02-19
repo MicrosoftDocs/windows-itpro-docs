@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Learn about how to use a proxy auto-configuration (.pac) file to specify an automatic proxy URL.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 6c94708d-71bd-44bd-a445-7e6763b374ae
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use proxy auto-configuration (.pac) files with IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use proxy auto-configuration (.pac) files with IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 These are various ways you can use a proxy auto-configuration (.pac) file to specify an automatic proxy URL. We've included some examples here to help guide you, but you'll need to change the proxy names, port numbers, and IP addresses to match your organization's info.
 
 Included examples:
@@ -127,7 +134,7 @@ In this example, the proxy server is selected by translating the host name into 
 ``` javascript
 function FindProxyForURL(url, host)
  {
- if (dnsResolve(host) == "999.99.99.999") { // = http://secproxy
+ if (dnsResolve(host) == "999.99.99.999") { // = https://secproxy
  return "PROXY secproxy:8080";
  }
  else {

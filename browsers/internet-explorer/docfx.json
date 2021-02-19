@@ -1,36 +1,58 @@
 {
   "build": {
-    "content":
-      [
-        {
-          "files": ["**/*.md","**/*.yml"],
-          "exclude": ["**/obj/**"]
-        }
-      ],
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/includes/**",
+          "**/obj/**"
+        ]
+      }
+    ],
     "resource": [
-        {
-          "files": ["**/images/**", "**/*.json"],
-          "exclude": ["**/obj/**"]
-        }
+      {
+        "files": [
+          "**/images/**"
+        ],
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
     ],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"breadcrumb_path": "/internet-explorer/breadcrumb/toc.json",
-        "ROBOTS": "INDEX, FOLLOW",
-		"ms.author": "lizross",
-		"author": "eross-msft",
-		"ms.technology": "internet-explorer",
-		"ms.topic": "article",
-		"ms.date": "04/05/2017",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "Win.internet-explorer"
-			}
-		}
+      "breadcrumb_path": "/internet-explorer/breadcrumb/toc.json",
+      "ROBOTS": "INDEX, FOLLOW",
+      "audience": "ITPro",
+      "ms.technology": "internet-explorer",
+      "ms.prod": "ie11",
+      "ms.topic": "article",
+      "manager": "laurawi",
+      "ms.date": "04/05/2017",
+      "feedback_system": "None",
+      "hideEdit": true,
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "Win.internet-explorer",
+          "folder_relative_path_in_docset": "./"
+        }
+      },
+      "titleSuffix": "Internet Explorer",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
     },
-    "externalReference": [
-    ],
+    "externalReference": [],
     "template": "op.html",
-    "dest": "edges/internet-explorer"
+    "dest": "edges/internet-explorer",
+    "markdownEngineName": "markdig"
   }
 }

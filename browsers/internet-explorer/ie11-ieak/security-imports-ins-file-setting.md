@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[Security Imports\] .INS file setting to decide whether to import security info to your custom package.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 19791c44-aaa7-4f37-9faa-85cbdf29f68e
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use the Security Imports .INS file to import security info (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Security Imports .INS file to import security info
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about how to import security information from your local device to your custom package.
 
 |Name |Value |Description |

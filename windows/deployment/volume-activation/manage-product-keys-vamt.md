@@ -1,13 +1,18 @@
 ---
 title: Manage Product Keys (Windows 10)
-description: Manage Product Keys
+description: In this article, learn how to add and remove a product key from the Volume Activation Management Tool (VAMT).
 ms.assetid: 4c6c4216-b4b7-437c-904e-4cb257f913cd
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Manage Product Keys
@@ -20,6 +25,6 @@ This section describes how to add and remove a product key from the Volume Activ
 |[Add and Remove a Product Key](add-remove-product-key-vamt.md) |Describes how to add a product key to the VAMT database. |
 |[Install a Product Key](install-product-key-vamt.md) |Describes how to install a product key for specific product. |
 |[Install a KMS Client Key](install-kms-client-key-vamt.md) |Describes how to install a GVLK (KMS client) key. |
- 
- 
- 
+ 
+ 
+ 

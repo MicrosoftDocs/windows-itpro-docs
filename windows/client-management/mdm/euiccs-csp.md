@@ -1,12 +1,14 @@
 ---
 title: eUICCs CSP
-description: eUICCs CSP
-ms.author: maricia
+description: Learn how the eUICCs CSP is used to support eUICC enterprise use cases and enables the IT admin to manage (assign, re-assign, remove) subscriptions to employees.
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 11/15/2017
+author: manikadhiman
+ms.date: 03/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # eUICCs CSP
@@ -36,6 +38,36 @@ Required. Indicates whether this eUICC is physically present and active. Updated
 
 Supported operation is Get. Value type is boolean.
 
+<a href="" id="euicc-isactive"></a>**_eUICC_/PPR1Allowed**  
+Required. Indicates whether the download of a profile with PPR1 is allowed. If the eUICC already has a profile (regardless of its origin and policy rules associated with it), the download of a profile with PPR1 is not allowed.
+
+Supported operation is Get. Value type is boolean.
+
+<a href="" id="euicc-isactive"></a>**_eUICC_/PPR1AlreadySet**  
+Required. Indicates whether the eUICC already has a profile with PPR1.
+
+Supported operation is Get. Value type is boolean.
+
+<a href="" id="euicc-profiles"></a>**_eUICC_/DownloadServers**  
+Interior node. Represents default SM-DP+ discovery requests.
+
+Supported operation is Get.
+
+<a href="" id="euicc-profiles-iccid"></a>**_eUICC_/DownloadServers/_ServerName_**  
+Interior node. Optional. Node specifying the server name for a discovery operation. The node name is the fully qualified domain name of the SM-DP+ server that will be used for profile discovery. Creation of this subtree triggers a discovery request.
+
+Supported operations are Add, Get, and Delete.
+
+<a href="" id="euicc-profiles-iccid-state"></a>**_eUICC_/DownloadServers/_ServerName_/DiscoveryState**  
+Required. Current state of the discovery operation for the parent ServerName (Requested = 1, Executing = 2, Completed = 3, Failed = 4). Queried by the CSP and only updated by the LPA.
+
+Supported operation is Get. Value type is integer. Default value is 1.
+
+<a href="" id="euicc-profiles-iccid-isenabled"></a>**_eUICC_/DownloadServers/_ServerName_/AutoEnable**  
+Required. Indicates whether the discovered profile must be enabled automatically after install. This must be set by the MDM when the ServerName subtree is created.
+
+Supported operations are Add, Get, and Replace. Value type is bool.
+
 <a href="" id="euicc-profiles"></a>**_eUICC_/Profiles**  
 Interior node. Required. Represents all enterprise-owned profiles.
 
@@ -60,6 +92,11 @@ Supported operations are Add and Get. Value type is string.
 Required. Current state of the profile (Installing = 1, Installed = 2, Deleting = 3, Error = 4). Queried by the CSP and only updated by the LPA.
 
 Supported operation is Get. Value type is integer. Default value is 1.
+
+<a href="" id="euicc-profiles-iccid-isenabled"></a>**_eUICC_/Profiles/_ICCID_/IsEnabled**  
+Added in Windows 10, version 1803. Indicates whether this profile is enabled. Can be set by the MDM when the ICCID subtree is created to enable the profile once it’s successfully downloaded and installed on the device. Can also be queried and updated by the CSP.
+
+Supported operations are Add, Get, and Replace. Value type is bool.
 
 <a href="" id="euicc-policies"></a>**_eUICC_/Policies**  
 Interior node. Required. Device policies associated with the eUICC as a whole (not per-profile).

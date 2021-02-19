@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[CabSigning\] .INS file setting to customize the digital signature info for your apps.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 098707e9-d712-4297-ac68-7d910ca8f43b
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use the CabSigning .INS file to customize the digital signature info for your apps (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the CabSigning .INS file to customize the digital signature info for your apps
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about how to customize the digital signature info for your apps.
 
 |Name       |Value                      |Description  |

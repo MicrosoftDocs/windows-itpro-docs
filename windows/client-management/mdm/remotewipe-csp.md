@@ -1,13 +1,15 @@
 ---
 title: RemoteWipe CSP
-description: RemoteWipe CSP
+description: Learn how the RemoteWipe configuration service provider (CSP) can be used by mobile operators DM server or enterprise management server to remotely wipe a device.
 ms.assetid: 6e89bd37-7680-4940-8a67-11ed062ffb70
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 11/13/2017
+author: manikadhiman
+ms.date: 08/13/2018
 ---
 
 # RemoteWipe CSP
@@ -45,16 +47,27 @@ Supported operation is Exec.
 <a href="" id="doWipePersistUserData"></a>**doWipePersistUserData**  
 Added in Windows 10, version 1709.  Exec on this node will perform a remote reset on the device and persist user accounts and data. The return status code shows whether the device accepted the Exec command.
 
-## The Remote Wipe Process
+<a href="" id="automaticredeployment"></a>**AutomaticRedeployment**  
+Added in Windows 10, version 1809. Node for the Autopilot Reset operation.
 
+<a href="" id="doautomaticredeployment"></a>**AutomaticRedeployment/doAutomaticRedeployment**  
+Added in Windows 10, version 1809. Exec on this node triggers Autopilot Reset operation. This works like PC Reset, similar to other existing nodes in this RemoteWipe CSP, except that it keeps the device enrolled in Azure AD and MDM, keeps Wi-Fi profiles, and a few other settings like region, language, keyboard.
 
-The remote wipe command is sent as an XML provisioning file to the device. Since the RemoteWipe Configuration Service Provider uses OMA DM and WAP, authentication between client and server and delivery of the XML provisioning file is handled by provisioning.
+<a href="" id="lasterror"></a>**AutomaticRedeployment/LastError**  
+Added in Windows 10, version 1809. Error value, if any, associated with Autopilot Reset operation (typically an HRESULT).
 
-In Windows 10 Mobile, the remote wipe command is implemented on the device by using the **ResetPhone** function. On the desktop, the remote wipe triggers the **Reset this PC** functionality with the **Remove everything** option.
+<a href="" id="status"></a>**AutomaticRedeployment/Status**  
+Added in Windows 10, version 1809. Status value indicating current state of an Autopilot Reset operation. 
 
-> **Note**  On the desktop, the remote wipe effectively performs a factory reset and the PC does not retain any information about the command once the wipe completes. Any response from the device about the actual status or result of the command may be inconsistent and unreliable because the MDM information has been removed.
+Supported values:  
 
- 
+-  0: Never run (not started). The default state. 
+-  1: Complete. 
+-  10: Reset has been scheduled. 
+-  20: Reset is scheduled and waiting for a reboot. 
+-  30: Failed during CSP Execute ("Exec" in SyncML). 
+-  40: Failed: power requirements not met. 
+-  50: Failed: reset internals failed during reset attempt.
 
 ## Related topics
 

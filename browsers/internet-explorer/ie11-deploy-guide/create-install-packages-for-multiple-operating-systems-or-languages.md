@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Create packages for multiple operating systems or languages
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 44051f9d-63a7-43bf-a427-d0a0a1c717da
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Create packages for multiple operating systems or languages (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,15 +16,18 @@ ms.date: 07/27/2017
 
 
 # Create packages for multiple operating systems or languages
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You'll create multiple versions of your custom browser package if:
 
--   You support more than 1 version of Windows®.
+- You support more than 1 version of Windows®.
 
--   You support more than 1 language.
+- You support more than 1 language.
 
--   You have custom installation packages with only minor differences. Like, having a different phone number.
+- You have custom installation packages with only minor differences. Like, having a different phone number.
 
- **To create a new package**
+  **To create a new package**
 
 1.  Create an installation package using the Internet Explorer Customization Wizard 11, as described in the [Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options](../ie11-ieak/ieak11-wizard-custom-options.md) topic.
 
@@ -30,11 +37,11 @@ You'll create multiple versions of your custom browser package if:
 **Important**<br>
 Except for the **Title bar** text, **Favorites**, **Links bar**, **Home page**, and **Search bar**, keep all of your wizard settings the same for all of your build computers.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

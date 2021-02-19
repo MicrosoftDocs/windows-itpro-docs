@@ -1,64 +1,69 @@
 ---
-title: How to Make a Connection Group Ignore the Package Version (Windows 10)
-description: How to Make a Connection Group Ignore the Package Version
-author: MaggiePucciEvans
+title: How to make a connection group ignore the package version (Windows 10)
+description: Learn how to make a connection group ignore the package version with the App-V Server Management Console.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 06/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
+# How to make a connection group ignore the package version
 
+> Applies to: Windows 10, version 1607
 
-# How to Make a Connection Group Ignore the Package Version
+You can use Application Virtualization (App-V) to configure a connection group to use any version of a package, simplifying package upgrades and reducing the number of connection groups you need to create.
 
-**Applies to**
--   Windows 10, version 1607
+You can also configure a connection group to accept any version of a package, so that you can upgrade the package without having to disable the connection group.
 
-Application Virtualization (App-V) lets you configure a connection group to use any version of a package, which simplifies package upgrades and reduces the number of connection groups you need to create.
+- If the connection group has access to multiple versions of a package, App-V will use the latest version.
 
-You can configure a connection group to accept any version of a package, which enables you to upgrade the package without having to disable the connection group:
+- If the connection group contains an optional package with an incorrect version, App-V ignores the package and won’t block the connection group’s virtual environment from being created.
 
-- If the connection group has access to multiple versions of a package, the latest version is used.
+- If the connection group contains a non-optional package that has an incorrect version, App-V won't be able to create the connection group’s virtual environment.
 
-- If the connection group contains an optional package that has an incorrect version, the package is ignored and won’t block the connection group’s virtual environment from being created.
+## Make a connection group ignore the package version with the App-V Server Management Console
 
-- If the connection group contains a non-optional package that has an incorrect version, the connection group’s virtual environment cannot be created.
-
-## To make a connection group ignore the package version by using the App-V Server Management Console
-
-1. In the Management Console, select **CONNECTION GROUPS**.
+1. In the Management Console, select **Connection Groups**.
 
 2. Select the correct connection group from the Connection Groups library.
 
-3. Click **EDIT** in the CONNECTED PACKAGES pane.
+3. Select **Edit** in the Connected Packages pane.
 
-4. Select **Use Any Version** check box next to the package name, and click **Apply**.
+4. Select the **Use Any Version** check box next to the package name, then select **Apply**.
 
-For more about adding or upgrading packages, see [How to Add or Upgrade Packages by Using the Management Console](appv-add-or-upgrade-packages-with-the-management-console.md).
+For more about adding or upgrading packages, see [How to add or upgrade packages by using the Management Console](appv-add-or-upgrade-packages-with-the-management-console.md).
 
-##  To make a connection group ignore the package version from the App-V client on a stand-alone computer
+## Make a connection group ignore the package version from the App-V client on a stand-alone computer
 
 1. Create the connection group XML document.
 
-2. For the package to be upgraded, set the **Package** tag attribute **VersionID** to an asterisk (<strong>*</strong>).
+2. Set the **Package** tag attribute **VersionID** to an asterisk (<strong>*</strong>) to upgrade the package.
 
-3. Use the following cmdlet to add the connection group, and include the path to the connection group XML document:
+3. Enter the following cmdlet (including the path to the connection group XML document) to add the connection group:
 
-    `Add-AppvClientConnectionGroup`
-    
+    ```PowerShell
+    Add-AppvClientConnectionGroup
+    ```
+
+    For more information about how to use the **Add-AppvClientConnectionGroup** cmdlet, see [**Add-AppvClientConnectionGroup**](https://docs.microsoft.com/powershell/module/appvclient/add-appvclientconnectiongroup?view=win10-ps).
+
 4. When you upgrade a package, use the following cmdlets to remove the old package, add the upgraded package, and publish the upgraded package:
 
-    - RemoveAppvClientPackage
-    - Add-AppvClientPackage
-    - Publish-AppvClientPackage
+    - [**Remove-AppvClientPackage**](https://docs.microsoft.com/powershell/module/appvclient/remove-appvclientpackage?view=win10-ps)
+    - [**Add-AppvClientPackage**](https://docs.microsoft.com/powershell/module/appvclient/add-appvclientpackage?view=win10-ps)
+    - [**Publish-AppvClientPackage**](https://docs.microsoft.com/powershell/module/appvclient/publish-appvclientpackage?view=win10-ps)
 
-For more information, see [How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md).
+For more information, see [How to manage App-V packages running on a stand-alone computer by using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md).
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+
 
 ## Related topics
 
-[Managing Connection Groups](appv-managing-connection-groups.md)
+- [Managing connection groups](appv-managing-connection-groups.md)

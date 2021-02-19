@@ -4,10 +4,13 @@ description: This section describes the AssignedAccess setting that you can conf
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
-ms.date: 09/14/2017
+ms.author: dansimp
+ms.topic: article
+ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # AssignedAccess (Windows Configuration Designer reference)
@@ -19,7 +22,7 @@ Use this setting to configure single use (kiosk) devices.
 | Setting | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
 | [AssignedAccessSettings](#assignedaccesssettings)  | X |  |  | X |  |
-| [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | X |  |  |  |  |
+| [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | X |  |  | X |  |
 
 
 ## AssignedAccessSettings
@@ -29,7 +32,7 @@ Enter the account and the application you want to use for Assigned access, using
 **Example**:
 
 ```
-"Account":"domain\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"
+{"Account":"domain\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}
 ```
 
 ## MultiAppAssignedAccessSettings
@@ -39,7 +42,7 @@ Enter the account and the application you want to use for Assigned access, using
 
 Use this setting to configure a kiosk device that runs more than one app.
 
-1. [Create an assigned access configuration XML file for multiple apps.](../lock-down-windows-10-to-specific-apps.md)
+1. Create an assigned access configuration XML file for multiple apps [(desktop](../lock-down-windows-10-to-specific-apps.md) or [HoloLens)](https://docs.microsoft.com/hololens/hololens-provisioning).
 2. In Windows Configuration Designer, select **MultiAppAssignedAccessSettings**.
 3. Browse to and select the assigned access configuration XML file.
 

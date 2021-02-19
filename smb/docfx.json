@@ -4,7 +4,7 @@
       {
         "files": [
           "**/*.md",
-		  "**/*.yml"
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -29,16 +29,31 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT",
-		"breadcrumb_path": "/windows/smb/breadcrumb/toc.json",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "TechNet.smb"
-			}
-		}
-	},
+      "breadcrumb_path": "/windows/smb/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "feedback_system": "None",
+      "hideEdit": true,
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "TechNet.smb",
+          "folder_relative_path_in_docset": "./"
+        }
+      },
+      "contributors_to_exclude": [ 
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "Kellylorenebaker",
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+      "titleSuffix": "Windows for Small to Midsize Business"
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "smb"
-  }
+    "dest": "smb",
+    "markdownEngineName": "markdig"
+    }
 }

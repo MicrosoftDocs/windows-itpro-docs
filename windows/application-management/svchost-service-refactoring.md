@@ -5,9 +5,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: kaushika-ainapure
-author: kaushika-msft
+ms.author: dansimp
+author: msfttracyp
 ms.date: 07/20/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Changes to Service Host grouping in Windows 10
@@ -38,8 +40,8 @@ Benefits of this design change include:
 >**Try This**
 >
 > To see the refactoring behavior, create a Windows 10 version 1703 VM and configure the memory settings as follows:
-> 1.	To see grouped processes, set the RAM to 3484 MB or less. Restart the VM and then open Task Manager.
-> 2.	To see separated processes, set the RAM to 3486 MB or greater. Restart the VM and then open Task Manager.
+> 1. To see grouped processes, set the RAM to 3484 MB or less. Restart the VM and then open Task Manager.
+> 2. To see separated processes, set the RAM to 3486 MB or greater. Restart the VM and then open Task Manager.
 
 
 Refactoring also makes it easier to view running processes in Task Manager. You can look at Task Manager and know exactly which service is using what resources, without having to expand many separate host groups.
@@ -68,7 +70,7 @@ For example, this is the registry key configuration for BFE:
 
 ## Memory footprint
 
-Be aware that separating services increases the total number of SvcHost instances, which increases memory utlization. (Service grouping provided a modest reduction to the overall resource footprint of the services involved.) 
+Be aware that separating services increases the total number of SvcHost instances, which increases memory utilization. (Service grouping provided a modest reduction to the overall resource footprint of the services involved.) 
 
 Consider the following:
 

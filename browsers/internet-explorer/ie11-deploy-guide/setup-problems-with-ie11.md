@@ -1,11 +1,15 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: support
 ms.pagetype: appcompat
 description: Reviewing log files to learn more about potential setup problems with Internet Explorer 11.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 2cd79988-17d1-4317-bee9-b3ae2dd110a0
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Setup problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -13,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Setup problems with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Installing Internet Explorer creates the following log files, which are stored in the Windows installation folder (typically, the C:\\Windows folder):
 
 -   `IE11_main.log`

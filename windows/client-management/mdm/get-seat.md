@@ -1,18 +1,20 @@
 ---
 title: Get seat
-description: The Get seat operation retrieves the information about an active seat for a specified user in the Micosoft Store for Business.
+description: The Get seat operation retrieves the information about an active seat for a specified user in the Microsoft Store for Business.
 ms.assetid: 715BAEB2-79FD-4945-A57F-482F9E7D07C6
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 09/18/2017
 ---
 
 # Get seat
 
-The **Get seat** operation retrieves the information about an active seat for a specified user in the Micosoft Store for Business.
+The **Get seat** operation retrieves the information about an active seat for a specified user in the Microsoft Store for Business.
 
 ## Request
 

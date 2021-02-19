@@ -20,7 +20,7 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-		  "**/*.gif"
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -31,20 +31,34 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
-		"ms.technology": "windows",
-		"ms.topic": "article",
-		"ms.author": "jdecker",
-		"ms.date": "04/05/2017",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.win-configuration"
-			}
-		}
-	},
+      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "ms.technology": "windows",
+      "audience": "ITPro",
+      "ms.topic": "article",
+      "feedback_system": "None",
+      "hideEdit": false,
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.win-configuration",
+          "folder_relative_path_in_docset": "./"
+        }
+      },
+      "titleSuffix": "Configure Windows",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+      "searchScope": ["Windows 10"]
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "win-configuration"
+    "dest": "win-configuration",
+    "markdownEngineName": "markdig"
   }
 }

@@ -1,12 +1,16 @@
 ---
 title: Synchronizing Microsoft Office with UE-V
-description: Synchronizing Office with UE-V
-author: MaggiePucciEvans
+description: Learn how User Experience Virtualization (UE-V) supports the synchronization of Microsoft Office application settings.
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 
 
@@ -84,7 +88,7 @@ Review the following tables for details about Office support in UE-V:
 <p>Microsoft PowerPoint 2016</p>
 <p>Microsoft Project 2016</p>
 <p>Microsoft Publisher 2016</p>
-<p>Microsoft SharePoint Designer 2013 (not udpated for 2016)</p>
+<p>Microsoft SharePoint Designer 2013 (not updated for 2016)</p>
 <p>Microsoft Visio 2016</p>
 <p>Microsoft Word 2016</p>
 <p>Microsoft Office Upload Manager</p></td>
@@ -127,7 +131,7 @@ You can deploy UE-V settings location template with the following methods:
 
 -   **Registering template with PowerShell**. If you use Windows PowerShell to manage computers, run the following Windows PowerShell command as Administrator to register this settings location template:
 
-    ``` syntax
+    ```powershell
     Register-UevTemplate -Path <Path_to_Template>
     ```
 
@@ -135,9 +139,9 @@ You can deploy UE-V settings location template with the following methods:
 
 -   **Registering template with Template Catalog Path**. If you use the Settings Template Catalog Path to manage templates on users’ computers, copy the Office template into the folder defined in the UE-V service. The next time the Template Auto Update (ApplySettingsCatalog.exe) scheduled task runs, the settings location template will be registered on the device. For more information, see [Deploy a settings template catalog](uev-deploy-uev-for-custom-applications.md).
 
--   **Registering template with Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to user devices. For more information, see the guidance provided in the documentation for the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=40913).
-
-## Have a suggestion for UE-V?
+-   **Registering template with Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to user devices. For more information, see the guidance provided in the documentation for the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2.0](https://www.microsoft.com/download/details.aspx?id=40913).
 
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+
+

@@ -1,17 +1,24 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Windows Internet Explorer 8 introduced document modes as a way to move from the proprietary coding of web features to a more standardized type of coding that could run on multiple browsers and devices.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 00cb1f39-2b20-4d37-9436-62dc03a6320b
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Deprecated document modes and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
 ---
 
 # Deprecated document modes and Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

@@ -1,12 +1,14 @@
 ---
 title: WindowsAdvancedThreatProtection CSP
-description: WindowsAdvancedThreatProtection CSP
+description: The Windows Defender Advanced Threat Protection (WDATP) CSP allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
 ms.assetid: 6C3054CA-9890-4C08-9DB6-FBEEB74699A8
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 11/01/2017
 ---
 
@@ -118,7 +120,7 @@ The following list describes the characteristics and parameters.
 ## Examples
 
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -231,9 +233,9 @@ The following list describes the characteristics and parameters.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,14 @@
 ---
 title: TPMPolicy CSP
-description: TPMPolicy CSP
-ms.author: maricia
+description: The TPMPolicy configuration service provider (CSP) provides a mechanism to enable zero exhaust configuration on a Windows device for TPM software components.
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 11/01/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # TPMPolicy CSP
@@ -35,20 +37,20 @@ The following diagram shows the TPMPolicy configuration service provider in tree
 
 Here is an example:
 
-``` syntax
-                <Replace>
-                    <CmdID>101</CmdID>
-                    <Item>
-                        <Target>
-                            <LocURI>
-                                ./Vendor/MSFT/TpmPolicy/IsActiveZeroExhaust
-                            </LocURI>
-                        </Target>
-                        <Meta>
-                            <Format>bool</Format>
-                                <Type>text/plain</Type>
-                        </Meta>
-                        <Data>true</Data>
-                    </Item>
-                </Replace>
+```xml
+<Replace>
+    <CmdID>101</CmdID>
+    <Item>
+        <Target>
+            <LocURI>
+                ./Vendor/MSFT/TpmPolicy/IsActiveZeroExhaust
+            </LocURI>
+        </Target>
+        <Meta>
+            <Format>bool</Format>
+            <Type>text/plain</Type>
+        </Meta>
+        <Data>true</Data>
+    </Item>
+</Replace>
 ```

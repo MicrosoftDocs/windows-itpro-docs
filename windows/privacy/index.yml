@@ -1,0 +1,182 @@
+### YamlMime:Hub
+
+title: Windows Privacy
+summary: Get ready for General Data Protection Regulation (GDPR) by viewing and configuring Windows diagnostic data in your organization.
+brand: m365
+
+metadata:
+  title: Windows Privacy
+  description: Learn about how privacy is managed in Windows.
+  services: windows
+  ms.product: windows
+  ms.topic: hub-page # Required
+  ms.collection: M365-security-compliance
+  author: danihalfin
+  ms.author: daniha
+  manager: dansimp
+  ms.date: 07/21/2020 #Required; mm/dd/yyyy format.
+  ms.localizationpriority: high
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Windows privacy & compliance guide for IT and compliance professionals
+      itemType: overview
+      url: Windows-10-and-privacy-compliance.md
+    # Card
+    - title: Configure Windows diagnostic data
+      itemType: how-to-guide
+      url: configure-windows-diagnostic-data-in-your-organization.md
+    # Card
+    - title: View Windows diagnostic data
+      itemType: how-to-guide
+      url: diagnostic-data-viewer-overview.md
+
+# productDirectory section (optional)
+productDirectory:
+  title: Understand Windows diagnostic data in Windows 10
+  summary: For the latest Windows 10 version, learn more about what Windows diagnostic data is collected at various diagnostics levels.
+  items:
+    # Card
+    - title: Required diagnostic data
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/media/common/i_extend.svg
+      summary: Learn more about basic Windows diagnostic data events and fields collected.
+      url: required-windows-diagnostic-data-events-and-fields-2004.md
+    # Card
+    - title: Optional diagnostic data
+      imageSrc: https://docs.microsoft.com/media/common/i_get-started.svg
+      summary: Get examples of the types of optional diagnostic data collected from Windows
+      url: windows-diagnostic-data.md
+    # Card
+    - title: Changes to Windows diagnostic data collection
+      imageSrc: https://docs.microsoft.com/media/common/i_build.svg
+      summary: See what changes Windows is making to align to the new data collection taxonomy
+      url: changes-to-windows-diagnostic-data-collection.md  
+
+# conceptualContent section (optional)
+# conceptualContent:
+# # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+#   title: sectiontitle # < 60 chars (optional)
+#   summary: sectionsummary # < 160 chars (optional)
+#   items:
+#     # Card
+#     - title: cardtitle1
+#       links:
+#         - url: file1.md OR https://docs.microsoft.com/file1
+#           itemType: itemType
+#           text: linktext1
+#         - url: file2.md OR https://docs.microsoft.com/file2
+#           itemType: itemType
+#           text: linktext2
+#         - url: file3.md OR https://docs.microsoft.com/file3
+#           itemType: itemType
+#           text: linktext3
+#       # footerLink (optional)
+#       footerLink:
+#         url: filefooter.md OR https://docs.microsoft.com/filefooter
+#         text: See more
+#     # Card
+#     - title: cardtitle2
+#       links:
+#         - url: file1.md OR https://docs.microsoft.com/file1
+#           itemType: itemType
+#           text: linktext1
+#         - url: file2.md OR https://docs.microsoft.com/file2
+#           itemType: itemType
+#           text: linktext2
+#         - url: file3.md OR https://docs.microsoft.com/file3
+#           itemType: itemType
+#           text: linktext3
+#       # footerLink (optional)
+#       footerLink:
+#         url: filefooter.md OR https://docs.microsoft.com/filefooter
+#         text: See more
+#     # Card
+#     - title: cardtitle3
+#       links:
+#         - url: file1.md OR https://docs.microsoft.com/file1
+#           itemType: itemType
+#           text: linktext1
+#         - url: file2.md OR https://docs.microsoft.com/file2
+#           itemType: itemType
+#           text: linktext2
+#         - url: file3.md OR https://docs.microsoft.com/file3
+#           itemType: itemType
+#           text: linktext3
+#       # footerLink (optional)
+#       footerLink:
+#         url: filefooter.md OR https://docs.microsoft.com/filefooter
+#         text: See more
+
+# # tools section (optional)
+# tools:
+#   title: sectiontitle # < 60 chars (optional)
+#   summary: sectionsummary # < 160 chars (optional)
+#   items:
+#     # Card
+#     - title: cardtitle1
+#       # imageSrc should be square in ratio with no whitespace
+#       imageSrc: ./media/index/image1.svg OR https://docs.microsoft.com/media/logos/image1.svg
+#       url: file1.md
+#     # Card
+#     - title: cardtitle2
+#       imageSrc: ./media/index/image2.svg OR https://docs.microsoft.com/media/logos/image2.svg
+#       url: file2.md
+#     # Card
+#     - title: cardtitle3
+#       imageSrc: ./media/index/image3.svg OR https://docs.microsoft.com/media/logos/image3.svg
+#       url: file3.md
+
+# additionalContent section (optional)
+# Card with summary style
+# additionalContent:
+#   # Supports up to 3 sections
+#   sections:
+#     - title: sectiontitle # < 60 chars (optional)
+#       summary: sectionsummary # < 160 chars (optional)
+#       items:
+#         # Card
+#         - title: cardtitle1
+#           summary: cardsummary1
+#           url: file1.md OR https://docs.microsoft.com/file1
+#         # Card
+#         - title: cardtitle2
+#           summary: cardsummary2
+#           url: file1.md OR https://docs.microsoft.com/file2
+#         # Card
+#         - title: cardtitle3
+#           summary: cardsummary3
+#           url: file1.md OR https://docs.microsoft.com/file3
+#   # footer (optional)
+#   footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"
+
+# additionalContent section (optional)
+# Card with links style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - items:
+        # Card
+        - title: View and manage Windows 10 connection endpoints
+          links:
+            - text: Manage Windows 10 connection endpoints
+              url: manage-windows-endpoints.md
+            - text: Manage connection endpoints for non-Enterprise editions of Windows 10
+              url: windows-endpoints-2004-non-enterprise-editions.md 
+            - text: Manage connections from Windows to Microsoft services
+              url: manage-connections-from-windows-operating-system-components-to-microsoft-services.md
+        # Card
+        - title: Additional resources
+          links:
+            - text: Windows 10 on Trust Center
+              url: https://www.microsoft.com/en-us/trustcenter/cloudservices/windows10
+            - text: GDPR on Microsoft 365 Compliance solutions
+              url: https://docs.microsoft.com/microsoft-365/compliance/gdpr
+            - text: Support for GDPR Accountability on Service Trust Portal
+              url: https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted
+  # footer (optional)
+  # footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"

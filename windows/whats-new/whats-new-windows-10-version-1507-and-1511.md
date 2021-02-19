@@ -1,55 +1,60 @@
 ---
 title: What's new in Windows 10, versions 1507 and 1511 (Windows 10)
-description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
+description: What's new in Windows 10 for Windows 10 (versions 1507 and 1511) and Windows 10 Mobile.
 ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: greg-lindsay
+manager: laurawi
+ms.author: greglin
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.topic: article
 ---
 
-# What's new in Windows 10, versions 1507 and 1511
+# What's new in Windows 10, versions 1507 and 1511 for IT Pros
 
 Below is a list of some of the new and updated features included in  the initial release of Windows 10 (version 1507) and the Windows 10 update to version 1511.
 
 >[!NOTE]
->For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
- 
+>For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info).
+ 
 
 ## Deployment
 
 ### Provisioning devices using Windows Imaging and Configuration Designer (ICD)
 
-With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image. Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows Provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management (through a wizard-driven user interface) and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
+With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image. Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows Provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management (through a wizard-driven user interface) and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers.
 
 [Learn more about provisioning in Windows 10.](/windows/configuration/provisioning-packages/provisioning-packages)
 
 
 ## Security
 
-### Applocker
+### AppLocker
 
-#### New Applocker features in Windows 10, version 1507
+#### New AppLocker features in Windows 10, version 1507
 
--   A new parameter was added to the [New-AppLockerPolicy](http://technet.microsoft.com/library/hh847211.aspx) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
--   A new [AppLocker](http://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
--   You can manage Windows 10 Mobile devices by using the new [AppLocker CSP](http://msdn.microsoft.com/library/windows/hardware/dn920019.aspx).
+-   A new parameter was added to the [New-AppLockerPolicy](https://technet.microsoft.com/library/hh847211.aspx) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
+-   A new [AppLocker](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
+-   You can manage Windows 10 Mobile devices by using the new [AppLocker CSP](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx).
 
 [Learn how to manage AppLocker within your organization](/windows/device-security/applocker/applocker-overview).
 
-### Bitlocker
+### BitLocker
 
-#### New Bitlocker features in Windows 10, version 1511
+#### New BitLocker features in Windows 10, version 1511
 
--   **XTS-AES encryption algorithm**. BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys.
-    It provides the following benefits:
-    -   The algorithm is FIPS-compliant.
-    -   Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization.
-        >**Note:**  Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
+- **XTS-AES encryption algorithm**. BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys.
+  It provides the following benefits:
+  - The algorithm is FIPS-compliant.
+  - Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization.
 
-#### New Bitlocker features in Windows 10, version 1507
+>[!NOTE]
+>Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
+
+#### New BitLocker features in Windows 10, version 1507
 
 <!-- The link in the first bullet below will need to be refreshed Jan/Feb 2017. -->
 
@@ -140,7 +145,7 @@ The logon event ID 4624 has been updated to include more verbose information to 
     A list of all of the groups in the user's token.
 6.  **RestrictedAdminMode** String: yes or no
     If the user logs into the PC in restricted admin mode with Remote Desktop, this field will be yes.
-    For more info on restricted admin mode, see [Restricted Admin mode for RDP](http://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
+    For more information about restricted admin mode, see [Restricted Admin mode for RDP](https://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
 
 ##### <a href="" id="bkmk-process"></a>New fields in the process creation event
 
@@ -207,13 +212,14 @@ The following sections describe the new and changed functionality in the TPM for
 
 ### <a href="" id="bkmk-dha"></a>Device health attestation
 
-Device health attestation enables enterprises to establish trust based on hardware and software components of a managed device. With device heath attestation, you can configure an MDM server to query a health attestation service that will allow or deny a managed device access to a secure resource.
+Device health attestation enables enterprises to establish trust based on hardware and software components of a managed device. With device health attestation, you can configure an MDM server to query a health attestation service that will allow or deny a managed device access to a secure resource.
 Some things that you can check on the device are:
 -   Is Data Execution Prevention supported and enabled?
 -   Is BitLocker Drive Encryption supported and enabled?
 -   Is SecureBoot supported and enabled?
 
-> **Note**  The device must be running Windows 10 and it must support at least TPM 2.0.
+>[!NOTE]
+>The device must be running Windows 10 and it must support at least TPM 2.0.
 
 [Learn how to deploy and manage TPM within your organization](/windows/device-security/tpm//trusted-platform-module-overview).
 
@@ -221,7 +227,7 @@ Some things that you can check on the device are:
 
 User Account Control (UAC) helps prevent malware from damaging a computer and helps organizations deploy a better-managed desktop environment.
 
-You should not turn off UAC because this is not a supported scenario for devices running Windows 10. If you do turn off UAC, all Univeral Windows Platform apps stop working. You must always set the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA** registry value to 1. If you need to provide auto elevation for programmatic access or installation, you could set the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin** registry value to 0, which is the same as setting the UAC slider Never Notify. This is not recommended for devices running Windows 10.
+You should not turn off UAC because this is not a supported scenario for devices running Windows 10. If you do turn off UAC, all Universal Windows Platform apps stop working. You must always set the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA** registry value to 1. If you need to provide auto elevation for programmatic access or installation, you could set the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin** registry value to 0, which is the same as setting the UAC slider Never Notify. This is not recommended for devices running Windows 10.
 
 For more info about how manage UAC, see [UAC Group Policy Settings and Registry Key Settings](/windows/access-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings).
 
@@ -229,7 +235,7 @@ In Windows 10, User Account Control has added some improvements.
 
 #### New User Account Control features in Windows 10, version 1507
 
--   **Integration with the Antimalware Scan Interface (AMSI)**. The [AMSI](http://msdn.microsoft.com/library/windows/desktop/dn889587.aspx) scans all UAC elevation requests for malware. If malware is detected, the admin privilege is blocked.
+-   **Integration with the Antimalware Scan Interface (AMSI)**. The [AMSI](https://msdn.microsoft.com/library/windows/desktop/dn889587.aspx) scans all UAC elevation requests for malware. If malware is detected, the admin privilege is blocked.
 
 [Learn how to manage User Account Control within your organization](/windows/access-protection/user-account-control/user-account-control-overview).
 
@@ -237,8 +243,8 @@ In Windows 10, User Account Control has added some improvements.
 
 Windows 10 provides a set of VPN features that both increase enterprise security and provide an improved user experience, including:
 
-- Always-on auto connection behavior 
-- App=triggered VPN 
+- Always-on auto connection behavior
+- App=triggered VPN
 - VPN traffic filters
 - Lock down VPN
 - Integration with Microsoft Passport for Work
@@ -252,7 +258,7 @@ Windows 10 provides mobile device management (MDM) capabilities for PCs, laptop
 
 ### MDM support
 
-MDM policies for Windows 10 align with the policies supported in Windows 8.1 and are expanded to address even more enterprise scenarios, such as managing multiple users who have Microsoft Azure Active Directory (Azure AD) accounts, full control over the Microsoft Store, VPN configuration, and more. 
+MDM policies for Windows 10 align with the policies supported in Windows 8.1 and are expanded to address even more enterprise scenarios, such as managing multiple users who have Microsoft Azure Active Directory (Azure AD) accounts, full control over the Microsoft Store, VPN configuration, and more.
 
 MDM support in Windows 10 is based on [Open Mobile Alliance (OMA)](https://go.microsoft.com/fwlink/p/?LinkId=533885) Device Management (DM) protocol 1.2.1 specification.
 
@@ -271,15 +277,14 @@ When a personal device is unenrolled, the user's data and apps are untouched, wh
 Enterprises have the following identity and management choices.
 
 | Area | Choices |
-|---|---|                                                                                                                                                                            
+|---|---|
 | Identity   | Active Directory; Azure AD         |
 | Grouping   | Domain join; Workgroup; Azure AD join    |
-| Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
+| Device management | Group Policy; Microsoft Endpoint Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
- > **Note**  
-With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
+**Note:** With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
 
- 
+ 
 ### Device lockdown
 
 
@@ -291,11 +296,11 @@ Do you need a computer that can only do one thing? For example:
 
 -   A device that a temporary worker uses to enter data.
 
-You can configure a persistent locked down state to [create a kiosk-type device](https://technet.microsoft.com/en-us/itpro/windows/manage/set-up-a-device-for-anyone-to-use). When the locked-down account is logged on, the device displays only the app that you select.
+You can configure a persistent locked down state to [create a kiosk-type device](https://technet.microsoft.com/itpro/windows/manage/set-up-a-device-for-anyone-to-use). When the locked-down account is logged on, the device displays only the app that you select.
 
-You can also [configure a lockdown state](https://technet.microsoft.com/en-us/itpro/windows/manage/lock-down-windows-10-to-specific-apps) that takes effect when a given user account logs on. The lockdown restricts the user to only the apps that you specify.
+You can also [configure a lockdown state](https://technet.microsoft.com/itpro/windows/manage/lock-down-windows-10-to-specific-apps) that takes effect when a given user account logs on. The lockdown restricts the user to only the apps that you specify.
 
-Lockdown settings can also be configured for device look and feel, such as a theme or a [custom layout on the Start screen](https://technet.microsoft.com/en-us/itpro/windows/manage/windows-10-start-layout-options-and-policies).
+Lockdown settings can also be configured for device look and feel, such as a theme or a [custom layout on the Start screen](https://technet.microsoft.com/itpro/windows/manage/windows-10-start-layout-options-and-policies).
 
 ### Customized Start layout
 
@@ -306,7 +311,7 @@ Administrators can also use mobile device management (MDM) or Group Policy to di
 ### Microsoft Store for Business
 **New in Windows 10, version 1511**
 
-With the Microsoft Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps. 
+With the Microsoft Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps.
 
 For more information, see [Microsoft Store for Business overview](/microsoft-store/windows-store-for-business-overview).
 
@@ -321,9 +326,9 @@ By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth very efficient.
 
--   **Use with existing tools** such as System Center Configuration Manager and the [Enterprise Mobility Suite](https://go.microsoft.com/fwlink/p/?LinkId=699281).
+-   **Use with existing tools** such as Microsoft Endpoint Manager and the [Enterprise Mobility Suite](https://docs.microsoft.com/enterprise-mobility-security).
 
-Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](http://technet.microsoft.com/library/hh852345.aspx) and [System Center Configuration Manager](http://technet.microsoft.com/library/gg682129.aspx).
+Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr).
 
 
 Learn more about [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).
@@ -351,9 +356,9 @@ We also recommend that you upgrade to IE11 if you're running any earlier version
 - [Windows 10 release information](https://technet.microsoft.com/windows/release-info)
 
 
- 
+ 
 
- 
+ 
 
 
 

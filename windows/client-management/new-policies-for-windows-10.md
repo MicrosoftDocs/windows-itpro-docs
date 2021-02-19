@@ -1,14 +1,18 @@
 ---
 title: New policies for Windows 10 (Windows 10)
-description: Windows 10 includes the following new policies for management.
+description: Learn how Windows 10 includes new policies for management, like Group Policy settings for the Windows system and components.
 ms.assetid: 1F24ABD8-A57A-45EA-BA54-2DA2238C573D
-keywords: ["MDM", "Group Policy"]
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+keywords: ["MDM", "Group Policy", "GP"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.localizationpriority: high
+author: dansimp
+ms.localizationpriority: medium
 ms.date: 10/24/2017
+ms.topic: reference
 ---
 
 # New policies for Windows 10
@@ -17,9 +21,265 @@ ms.date: 10/24/2017
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
-Windows 10 includes the following new policies for management. [Download the complete set of Administrative Template (.admx) files for Windows 10](https://www.microsoft.com/download/details.aspx?id=56121).
+As of September 2020 This page will no longer be updated. To find the Group Polices that ship in each version of Windows,  refer to the Group Policy Settings Reference Spreadsheet. You can always locate the most recent version of the Spreadsheet by searching the Internet for "Windows Version + Group Policy Settings Reference".
+
+For example, searching for "Windows 2004" + "Group Policy Settings Reference Spreadsheet" in a web browser will return to you the link to download the Group Policy Settings Reference Spreadsheet for Windows 2004.
+
+The latest [group policy reference for Windows 10 version 2004 is available here](https://www.microsoft.com/download/101451).
+
+## New Group Policy settings in Windows 10, version 1903
+
+The following Group Policy settings were added in Windows 10, version 1903:
+
+**System**
+
+- System\Service Control Manager Settings\Security Settings\Enable svchost.exe mitigation options
+- System\Storage Sense\Allow Storage Sense
+- System\Storage Sense\Allow Storage Sense Temporary Files cleanup
+- System\Storage Sense\Configure Storage Sense
+- System\Storage Sense\Configure Storage Sense Cloud content dehydration threshold
+- System\Storage Sense\Configure Storage Sense Recycle Bin cleanup threshold
+- System\Storage Sense\Configure Storage Sense Downloads cleanup threshold
+- System\Troubleshooting and Diagnostics\Microsoft Support Diagnostic Tool\Troubleshooting:Allow users to access recommended troubleshooting for known problems
+
+
+**Windows Components**
+
+- Windows Components\App Privacy\Let Windows apps activate with voice 
+- Windows Components\App Privacy\Let Windows apps activate with voice while the system is locked
+- Windows Components\Data Collection and Preview Builds\Allow commercial data pipeline
+- Windows Components\Data Collection and Preview Builds\Configure collection of browsing data for Desktop Analytics 
+- Windows Components\Data Collection and Preview Builds\Configure diagnostic data upload endpoint for Desktop Analytics
+- Windows Components\Delivery Optimization\Delay background download Cache Server fallback (in seconds)
+- Windows Components\Delivery Optimization\Delay Foreground download Cache Server fallback (in seconds)
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Use WDDM graphics display driver for Remote Desktop Connections
+- Windows Components\Windows Logon Options\Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot
+
+## New Group Policy settings in Windows 10, version 1809
+
+The following Group Policy settings were added in Windows 10, version 1809:
+
+**Start Menu and Taskbar**
+
+- Start Menu and Taskbar\Force Start to be either full screen size or menu size
+- Start Menu and Taskbar\Remove "Recently added" list from Start Menu
+- Start Menu and Taskbar\Remove All Programs list from the Start menu
+- Start Menu and Taskbar\Remove frequent programs list from the Start Menu
+
+**System**
+
+- System\Group Policy\Allow asynchronous user Group Policy processing when logging on through Remote Desktop Services
+- System\Group Policy\Configure Applications preference extension policy processing
+- System\Group Policy\Configure Data Sources preference extension policy processing
+- System\Group Policy\Configure Devices preference extension policy processing
+- System\Group Policy\Configure Drive Maps preference extension policy processing
+- System\Group Policy\Configure Environment preference extension policy processing
+- System\Group Policy\Configure Files preference extension policy processing
+- System\Group Policy\Configure Folder Options preference extension policy processing
+- System\Group Policy\Configure Folders preference extension policy processing
+- System\Group Policy\Configure Ini Files preference extension policy processing
+- System\Group Policy\Configure Internet Settings preference extension policy processing
+- System\Group Policy\Configure Local Users and Groups preference extension policy processing
+- System\Group Policy\Configure Network Options preference extension policy processing
+- System\Group Policy\Configure Network Shares preference extension policy processing
+- System\Group Policy\Configure Power Options preference extension policy processing
+- System\Group Policy\Configure Printers preference extension policy processing
+- System\Group Policy\Configure Regional Options preference extension policy processing
+- System\Group Policy\Configure Registry preference extension policy processing
+- System\Group Policy\Configure Scheduled Tasks preference extension policy processing
+- System\Group Policy\Configure Services preference extension policy processing
+- System\Group Policy\Configure Shortcuts preference extension policy processing
+- System\Group Policy\Configure Start Menu preference extension policy processing
+- System\Group Policy\Logging and tracing\Configure Applications preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Data Sources preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Devices preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Drive Maps preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Environment preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Files preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Folder Options preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Folders preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure INI Files preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Internet Settings preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Local Users and Groups preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Network Options preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Network Shares preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Power Options preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Printers preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Regional Options preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Registry preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Scheduled Tasks preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Services preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Shortcuts preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure Start Menu preference logging and tracing
+- System\Kernel DMA Protection\Enumeration policy for external devices incompatible with Kernel DMA Protection
+- System\OS Policies\Allow Clipboard History
+- System\OS Policies\Allow Clipboard synchronization across devices
+
+**Windows Components**
+
+- Windows Components\Data Collection and Preview Builds\Configure Microsoft 365 Update Readiness upload endpoint
+- Windows Components\Data Collection and Preview Builds\Disable deleting diagnostic data
+- Windows Components\Data Collection and Preview Builds\Disable diagnostic data viewer
+- Windows Components\Delivery Optimization\[Reserved for future use] Cache Server Hostname
+- Windows Components\Location and Sensors\Windows Location Provider\Turn off Windows Location Provider
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\DFS Management
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\File Server Resource Manager
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Share and Storage Management
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Storage Manager for SANs
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins\DFS Management Extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins\Disk Management Extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins\File Server Resource Manager Extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins\Share and Storage Management Extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins\Storage Manager for SANS Extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy Management Editor
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy Starter GPO Editor
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Application snap-ins
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Applications preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Control Panel Settings (Computers)
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Control Panel Settings (Users)
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Data Sources preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Devices preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Drive Maps preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Environment preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Files preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Folder Options preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Folders preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Ini Files preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Internet Settings preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Local Users and Groups preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Network Options preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Network Shares preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Power Options preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Preferences tab
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Printers preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Regional Options preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Registry preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Scheduled Tasks preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Services preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Shortcuts preference extension
+- Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Preference snap-in extensions\Permit use of Start Menu preference extension
+- Windows Components\OOBE\Don't launch privacy settings experience on user logon
+- Windows Components\OOBE\Don't launch privacy settings experience on user logon
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Application Compatibility\Do not use Remote Desktop Session Host server IP address when virtual IP address is not available
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Application Compatibility\Select the network adapter to be used for Remote Desktop IP Virtualization
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Application Compatibility\Turn off Windows Installer RDS Compatibility
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Application Compatibility\Turn on Remote Desktop IP Virtualization
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections\Allow remote start of unlisted programs
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections\Turn off Fair Share CPU Scheduling
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Allow time zone redirection
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Do not allow Clipboard redirection
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Printer Redirection\Redirect only the default client printer
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Printer Redirection\Redirect only the default client printer
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\RD Connection Broker\Use RD Connection Broker load balancing
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Allow desktop composition for remote desktop sessions
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Always show desktop on connection
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Do not allow font smoothing
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Remove remote desktop wallpaper
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\Set time limit for logoff of RemoteApp sessions
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\Set time limit for logoff of RemoteApp sessions
+- Windows Components\Microsoft Defender Antivirus\Configure detection for potentially unwanted applications
+- Windows Components\Microsoft Defender Antivirus\Scan\Configure low CPU priority for scheduled scans
+- Windows Components\Windows Defender Application Guard\Allow camera and microphone access in Windows Defender Application Guard
+- Windows Components\Windows Defender Application Guard\Allow users to trust files that open in Windows Defender Application Guard
+- Windows Components\Windows Defender Application Guard\Allow Windows Defender Application Guard to use Root Certificate Authorities from the user’s device
+- Windows Components\Windows Defender Application Guard\Configure additional sources for untrusted files in Windows Defender Application Guard
+- Windows Components\Windows Hello for Business\Use Windows Hello for Business certificates as smart card certificates
+- Windows Components\Windows Media Player\Do Not Show First Use Dialog Boxes
+- Windows Components\Windows Media Player\Prevent Automatic Updates
+- Windows Components\Windows Media Player\Prevent CD and DVD Media Information Retrieval
+- Windows Components\Windows Media Player\Prevent Desktop Shortcut Creation
+- Windows Components\Windows Media Player\Prevent Media Sharing
+- Windows Components\Windows Media Player\Prevent Music File Media Information Retrieval
+- Windows Components\Windows Media Player\Prevent Quick Launch Toolbar Shortcut Creation
+- Windows Components\Windows Media Player\Prevent Radio Station Preset Retrieval
+- Windows Components\Windows Media Player\Prevent Video Smoothing
+- Windows Components\Windows Media Player\Networking\Configure HTTP Proxy
+- Windows Components\Windows Media Player\Networking\Configure MMS Proxy
+- Windows Components\Windows Media Player\Networking\Configure Network Buffering
+- Windows Components\Windows Media Player\Networking\Configure RTSP Proxy
+- Windows Components\Windows Media Player\Networking\Hide Network Tab
+- Windows Components\Windows Media Player\Networking\Streaming Media Protocols
+- Windows Components\Windows Media Player\Playback\Allow Screen Saver
+- Windows Components\Windows Media Player\Playback\Prevent Codec Download
+- Windows Components\Windows Media Player\User Interface\Do Not Show Anchor
+- Windows Components\Windows Media Player\User Interface\Hide Privacy Tab
+- Windows Components\Windows Media Player\User Interface\Hide Security Tab
+- Windows Components\Windows Media Player\User Interface\Set and Lock Skin
+- Windows Components\Windows Security\Account protection\Hide the Account protection area
+- Windows Components\Windows Security\App and browser protection\Hide the App and browser protection area
+- Windows Components\Windows Security\App and browser protection\Prevent users from modifying settings
+- Windows Components\Windows Security\Device performance and health\Hide the Device performance and health area
+- Windows Components\Windows Security\Device security\Disable the Clear TPM button
+- Windows Components\Windows Security\Device security\Hide the Device security area
+- Windows Components\Windows Security\Device security\Hide the Secure boot area
+- Windows Components\Windows Security\Device security\Hide the Security processor (TPM) troubleshooter page
+- Windows Components\Windows Security\Device security\Hide the TPM Firmware Update recommendation
+- Windows Components\Windows Security\Enterprise Customization\Configure customized contact information
+- Windows Components\Windows Security\Enterprise Customization\Configure customized notifications
+- Windows Components\Windows Security\Enterprise Customization\Specify contact company name
+- Windows Components\Windows Security\Enterprise Customization\Specify contact email address or Email ID
+- Windows Components\Windows Security\Enterprise Customization\Specify contact phone number or Skype ID
+- Windows Components\Windows Security\Enterprise Customization\Specify contact website
+- Windows Components\Windows Security\Family options\Hide the Family options area
+- Windows Components\Windows Security\Firewall and network protection\Hide the Firewall and network protection area
+- Windows Components\Windows Security\Notifications\Hide all notifications
+- Windows Components\Windows Security\Notifications\Hide non-critical notifications
+- Windows Components\Windows Security\Systray\Hide Windows Security Systray
+- Windows Components\Windows Security\Virus and threat protection\Hide the Ransomware data recovery area
+- Windows Components\Windows Security\Virus and threat protection\Hide the Virus and threat protection area
+- Windows Components\Windows Update\Display options for update notifications
+- Windows Components\Windows Update\Remove access to "Pause updates" feature
+
+**Control Panel**
+
+- Control Panel\Settings Page Visibility
+- Control Panel\Regional and Language Options\Allow users to enable online speech recognition services
+
+**Network**
+
+- Network\Windows Connection Manager\Enable Windows to soft-disconnect a computer from a network
+
+
+## New Group Policy settings in Windows 10, version 1803
+
+The following Group Policy settings were added in Windows 10, version 1803:
+
+**System**
+
+- System\Credentials Delegation\Encryption Oracle Remediation
+- System\Group Policy\Phone-PC linking on this device
+- System\OS Policies\Allow upload of User Activities
+
+**Windows Components**
+
+- Windows Components\App Privacy\Let Windows apps access an eye tracker device
+- Windows Components\Cloud Content\Turn off Windows Spotlight on Settings
+- Windows Components\Data Collection and Preview Builds\Allow device name to be sent in Windows diagnostic data
+- Windows Components\Data Collection and Preview Builds\Configure telemetry opt-in setting user interface
+- Windows Components\Data Collection and Preview Builds\Configure telemetry opt-in change notifications
+- Windows Components\Delivery Optimization\Maximum Background Download Bandwidth (percentage)
+- Windows Components\Delivery Optimization\Maximum Foreground Download Bandwidth (percentage)
+- Windows Components\Delivery Optimization\Select the source of Group IDs
+- Windows Components\Delivery Optimization\Delay background download from http (in secs)
+- Windows Components\Delivery Optimization\Delay Foreground download from http (in secs)
+- Windows Components\Delivery Optimization\Select a method to restrict Peer Selection
+- Windows Components\Delivery Optimization\Set Business Hours to Limit Background Download Bandwidth
+- Windows Components\Delivery Optimization\Set Business Hours to Limit Foreground Download Bandwidth
+- Windows Components\IME\Turn on Live Sticker
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Do not allow video capture redirection
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Use hardware graphics adapters for all Remote Desktop Services sessions
+- Windows Components\Search\Allow Cortana Page in OOBE on an AAD account
+- Windows Components\Store\Disable all apps from Microsoft Store
+- Windows Components\Text Input\Allow Uninstallation of Language Features
+- Windows Components\Text Input\Improve inking and typing recognition
+- Windows Components\Windows Defender Application Guard\Allow hardware-accelerated rendering for Windows Defender Application Guard
+- Windows Components\Windows Defender Security Center\Account protection\Hide the Account protection area
+- Windows Components\Windows Defender Security Center\Device security\Hide the Device security area
+- Windows Components\Windows Defender Security Center\Device security\Hide the Security processor (TPM) troubleshooter page
+- Windows Components\Windows Defender Security Center\Device security\Hide the Secure boot area
+- Windows Components\Windows Defender Security Center\Virus and threat protection\Hide the Ransomware data recovery area
+
 
 ## New Group Policy settings in Windows 10, version 1709
 
@@ -61,12 +321,12 @@ The following Group Policy settings were added in Windows 10, version 1709:
 - Windows Components\Search\Allow Cloud Search
 - Windows Components\Windows Defender Application Guard\Allow data persistence for Windows Defender Application Guard
 - Windows Components\Windows Defender Application Guard\Allow auditing events in Windows Defender Application Guard
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Network Protection\Prevent users and apps from accessing dangerous websites
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure Controlled folder access
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Configure Attack Surface Reduction rules
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Exclude files and paths from Attack Surface Reduction Rules
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure allowed applications
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure protected folders
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Network Protection\Prevent users and apps from accessing dangerous websites
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure Controlled folder access
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Configure Attack Surface Reduction rules
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Exclude files and paths from Attack Surface Reduction Rules
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure allowed applications
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure protected folders
 - Windows Components\Windows Defender Exploit Guard\Exploit Protection\Use a common set of exploit protection settings
 - Windows Components\Windows Defender Security Center\Virus and threat protection\Hide the Virus and threat protection area
 - Windows Components\Windows Defender Security Center\Firewall and network protection\Hide the Firewall and network protection area
@@ -201,9 +461,9 @@ The following Group Policy settings were added in Windows 10, version 1703:
 - Windows Components\Smart Card\Turn on certificate propagation from smart card
 - Windows Components\Tablet PC\Pen UX Behaviors\Prevent flicks
 - Windows Components\BitLocker Drive Encryption\Choose drive encryption method and cipher strength (Windows 8, Windows Server 2012, Windows 8.1, Windows Server 2012 R2, Windows 10 [Version 1507])
-- Windows Components\Windows Defender Antivirus\Real-time Protection\Turn on behavior monitoring
-- Windows Components\Windows Defender Antivirus\Signature Updates\Define file shares for downloading definition updates
-- Windows Components\Windows Defender Antivirus\Signature Updates\Turn on scan after signature update
+- Windows Components\Microsoft Defender Antivirus\Real-time Protection\Turn on behavior monitoring
+- Windows Components\Microsoft Defender Antivirus\Signature Updates\Define file shares for downloading definition updates
+- Windows Components\Microsoft Defender Antivirus\Signature Updates\Turn on scan after signature update
 - Windows Components\File Explorer\Display confirmation dialog when deleting files
 - Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Restricted Sites Zone\Allow OpenSearch queries in File Explorer
 - Windows Components\Windows Update\Remove access to use all Windows Update features
@@ -253,6 +513,7 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 ## Related topics
 
+[Group Policy Settings Reference Spreadsheet Windows 1803](https://www.microsoft.com/download/details.aspx?id=56946)
 
 [Manage corporate devices](manage-corporate-devices.md)
 
@@ -262,8 +523,6 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 
  
-
-
 
 
 

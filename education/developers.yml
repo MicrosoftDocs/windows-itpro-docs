@@ -1,0 +1,33 @@
+### YamlMime:Hub
+
+title: Microsoft 365 Education Documentation for developers
+summary: Are you an app developer looking for information about developing solutions on Microsoft Education products? Start here.
+
+metadata:
+  title: Microsoft 365 Education Documentation for developers
+  description: Are you an app developer looking for information about developing solutions on Microsoft Education products? Start here.
+  ms.service: help
+  ms.topic: hub-page
+  author: LaurenMoynihan
+  ms.author: v-lamoyn
+  ms.date: 10/24/2019
+
+additionalContent:
+  sections:
+    - items:
+        # Card
+        - title: UWP apps for education
+          summary: Learn how to write universal apps for education.
+          url: https://docs.microsoft.com/windows/uwp/apps-for-education/
+        # Card
+        - title: Take a test API
+          summary: Learn how web applications can use the API to provide a locked down experience for taking tests.
+          url: https://docs.microsoft.com/windows/uwp/apps-for-education/take-a-test-api
+        # Card
+        - title: Office Education Dev center
+          summary: Integrate with Office 365 across devices and services to extend Microsoft enterprise-scale compliance and security to students, teachers, and staff in your education app
+          url: https://developer.microsoft.com/office/edu
+        # Card
+        - title: Data Streamer
+          summary: Bring new STEM experiences into the classroom with real-time data in Excel using Data Streamer. Data Streamer can send data to Excel from a sensor or application.
+          url: https://docs.microsoft.com/microsoft-365/education/data-streamer

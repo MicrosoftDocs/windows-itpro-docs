@@ -1,107 +1,63 @@
 ---
 title: Planning for the App-V Server Deployment (Windows 10)
-description: Planning for the App-V 5.1 Server Deployment
-author: MaggiePucciEvans
+description: Learn what you need to know so you can plan for the Microsoft Application Virtualization (App-V) 5.1 server deployment.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
+# Planning for the App-V server deployment
 
-
-# Planning for the App-V Server Deployment
-
-**Applies to**
--   Windows Server 2016
+>Applies to: Windows Server 2016
 
 The Microsoft Application Virtualization (App-V) server infrastructure consists of a set of specialized features that can be installed on one or more server computers, based on the requirements of the enterprise.
 
-## Planning for App-V Server Deployment
-
+## About the App-V server
 
 The App-V server consists of the following features:
 
--   Management Server – provides overall management functionality for the App-V infrastructure.
+* Management Server—provides overall management functionality for the App-V infrastructure.
+* Management Database—facilitates database predeployments for App-V management.
+* Publishing Server—provides hosting and streaming functionality for virtual applications.
+* Reporting Server—provides App-V reporting services.
+* Reporting Database—facilitates database predeployments for App-V reporting.
 
--   Management Database – facilitates database predeployments for App-V management.
+The following list describes recommended App-V server infrastructure installation methods:
 
--   Publishing Server – provides hosting and streaming functionality for virtual applications.
+* Install the App-V server. For more information, see [How to deploy the App-V Server](appv-deploy-the-appv-server.md).
+* Install the database, reporting, and management features on separate computers. For more information, see [How to install the Management and Reporting databases on separate computers from the Management and Reporting services](appv-install-the-management-and-reporting-databases-on-separate-computers.md).
+* Use Electronic Software Distribution (ESD). For more information, see [How to deploy App-V packages using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md).
+* Install all server features on a single computer.
 
--   Reporting Server – provides App-V reporting services.
+## App-V server interaction
 
--   Reporting Database – facilitates database predeployments for App-V reporting.
+This section describes how the various App-V server roles interact with each other.
 
-The following list displays the recommended methods for installing the App-V server infrastructure:
+The App-V Management Server contains the repository of packages and their assigned configurations. For Publishing Servers that are registered with the Management Server, the associated metadata is provided to the Publishing servers for use when publishing refresh requests are received from computers running the App-V Client. App-V publishing servers managed by a single management server can serve different clients with different website names and port bindings. Additionally, all Publishing Servers managed by the same Management Server are replicas of each other.
 
--   Install the App-V server. For more information, see [How to Deploy the App-V Server](appv-deploy-the-appv-server.md).
+>[!NOTE]
+>The Management Server does not perform load balancing. The associated metadata is passed to the publishing server for use when processing client requests.
 
--   Install the database, reporting, and management features on separate computers. For more information, see [How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services](appv-install-the-management-and-reporting-databases-on-separate-computers.md).
+## Server-related protocols and external features
 
--   Use Electronic Software Distribution (ESD). For more information, see [How to deploy App-V Packages Using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md).
+The following table lists server-related protocols used by the App-V servers, and also describes the reporting mechanism for each server type.
 
--   Install all server features on a single computer.
-
-## <a href="" id="---------app-v-5-1-server-interaction"></a> App-V Server Interaction
-
-
-This section contains information about how the various App-V server roles interact with each other.
-
-The App-V Management Server contains the repository of packages and their assigned configurations. For Publishing Servers that are registered with the Management Server, the associated metadata is provided to the Publishing servers for use when publishing refresh requests are received from computers running the App-V Client. App-V publishing servers managed by a single management server can be serving different clients and can have different website names and port bindings. Additionally, all Publishing Servers managed by the same Management Server are replicas of each other.
-
-**Note**  
-The Management Server does not perform any load balancing. The associated metadata is simply passed to the publishing server for use when processing client requests.
-
- 
-
-## Server-Related Protocols and External Features
+|Server type|Protocols|External features needed|Reporting|
+|---|---|---|---|
+|IIS server|HTTP<br>HTTPS|This server-protocol combination requires a mechanism to synchronize content between the Management Server and the Streaming Server. When using HTTP or HTTPS, use an IIS server and a firewall to protect the server from exposure to the Internet.|Internal|
+|File|SMB|This server-protocol combination requires support to synchronize the content between the Management Server and the Streaming Server. Use a client computer that's capable of file sharing or streaming.|Internal|
 
 
-The following displays information about server-related protocols used by the App-V servers. The table also includes the reporting mechanism for each server type.
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server Type</th>
-<th align="left">Protocols</th>
-<th align="left">External Features Needed</th>
-<th align="left">Reporting</th>
-<th align="left"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>IIS server</p></td>
-<td align="left"><p>HTTP</p>
-<p>HTTPS</p></td>
-<td align="left"><p>This server-protocol combination requires a mechanism to synchronize the content between the Management Server and the Streaming Server. When using HTTP or HTTPS, use an IIS server and a firewall to protect the server from exposure to the Internet.</p></td>
-<td align="left"><p>Internal</p></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>File</p></td>
-<td align="left"><p>SMB</p></td>
-<td align="left"><p>This server-protocol combination requires support to synchronize the content between the Management Server and the Streaming Server. Use a client computer with file sharing or streaming capability.</p></td>
-<td align="left"><p>Internal</p></td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
 
 
-## Have a suggestion for App-V?
-
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-[Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
-
-[Deploying the App-V Server](appv-deploying-the-appv-server.md)
+* [Planning to deploy App-V](appv-planning-to-deploy-appv.md)
+* [Deploying the App-V server](appv-deploying-the-appv-server.md)

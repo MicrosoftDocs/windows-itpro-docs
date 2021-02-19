@@ -1,35 +1,61 @@
 {
   "build": {
-    "content":
-      [
-        {
-          "files": ["**/*.md","**/*.yml"],
-          "exclude": ["**/obj/**"]
-        }
-      ],
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "**/shortdesc/**"
+        ]
+      }
+    ],
     "resource": [
-        {
-          "files": ["**/images/**", "**/*.json"],
-          "exclude": ["**/obj/**"]
-        }
+      {
+        "files": [
+            "**/images/**",
+            "**/*.png",
+            "**/*.jpg",
+            "**/*.gif"
+          ],
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
     ],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
-        "ROBOTS": "INDEX, FOLLOW",
-		"ms.technology": "microsoft-edge",
-		"ms.topic": "article",
-		"ms.author": "lizross",
-		"ms.date": "04/05/2017",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "Win.microsoft-edge"
-			}
-		}
+      "breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
+      "ROBOTS": "INDEX, FOLLOW",
+      "ms.technology": "microsoft-edge",
+      "audience": "ITPro",
+      "ms.topic": "article",
+      "manager": "laurawi",
+      "ms.prod": "edge",
+      "feedback_system": "None",
+      "hideEdit": true,
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "Win.microsoft-edge",
+          "folder_relative_path_in_docset": "./"
+        }
+      },
+      "titleSuffix": "Edge",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
     },
-    "externalReference": [
-    ],
+    "externalReference": [],
     "template": "op.html",
-    "dest": "browsers/edge"
+    "dest": "browsers/edge",
+    "markdownEngineName": "markdig"
   }
 }

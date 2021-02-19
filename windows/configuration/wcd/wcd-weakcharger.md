@@ -4,10 +4,12 @@ description: This section describes the WeakCharger settings that you can config
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
-ms.date: 09/06/2017
+ms.author: dansimp
+ms.topic: article
+ms.reviewer: 
+manager: dansimp
 ---
 
 # WeakCharger (reference)
@@ -20,8 +22,8 @@ Use WeakCharger settings to configure the charger notification UI.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [HideWeakChargerNotifyOptionUI](#hideweakchargernotifyoptionui) | X | X | X | X |   |
-| [NotifyOnWeakCharger](#notifyonweakcharger) | X | X | X | X |   |
+| [HideWeakChargerNotifyOptionUI](#hideweakchargernotifyoptionui) | X | X | X |  |   |
+| [NotifyOnWeakCharger](#notifyonweakcharger) | X | X | X |  |   |
 
 
 ## HideWeakChargerNotifyOptionUI

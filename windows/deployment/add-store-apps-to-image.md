@@ -1,15 +1,19 @@
 ---
 title: Add Microsoft Store for Business applications to a Windows 10 image
-description: This topic describes how to add Microsoft Store for Business applications to a Windows 10 image.
+description: This article describes the correct way to add Microsoft Store for Business applications to a Windows 10 image.
 keywords: upgrade, update, windows, windows 10, deploy, store, image, wim
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: DaniHalfin
-ms.author: daniha
-ms.date: 07/27/2017
+audience: itpro
+author: greg-lindsay
+ms.author: greglin
+ms.reviewer: 
+manager: laurawi
+ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Add Microsoft Store for Business applications to a Windows 10 image
@@ -27,9 +31,8 @@ This topic describes the correct way to add Microsoft Store for Business applica
 
 * [Windows Assessment and Deployment Kit (Windows ADK)](windows-adk-scenarios-for-it-pros.md) for the tools required to mount and edit Windows images.
 
-* Download an offline signed app package and license of the application you would like to add through [Microsoft Store for Business](/store-for-business/distribute-offline-apps#download-an-offline-licensed-app).
-
-* A Windows Image. For instructions on image creation, see [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) or [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+* Download an offline signed app package and license of the application you would like to add through [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app). 
+* A Windows Image. For instructions on image creation, see [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md).
 
 >[!NOTE]
 > If you'd like to add an internal LOB Microsoft Store application, please follow the instructions on **[Sideload LOB apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10)**.
@@ -56,7 +59,7 @@ On a test machine:
 1. **Install the Microsoft Store for Business application you previously added** to your image.
 2. **Pin these apps to the Start screen**, by typing the name of the app, right-clicking and selecting **Pin to Start**.
 3. Open Windows PowerShell with administrator privileges.
-4. Use `Export-StartLayout -path <path><file name>.xml` where *<path><file name>* is the path and name of the xml file your will later import into your Windows Image.
+4. Use `Export-StartLayout -path <path><file name>.xml` where *\<path>\<file name>* is the path and name of the xml file your will later import into your Windows Image.
 5. Copy the XML file you created to a location accessible by the machine you previously used to add Store applications to your image.
 
 Now, on the machine where your image file is accessible:
@@ -75,8 +78,8 @@ Now, on the machine where your image file is accessible:
 * [Customize and export Start layout](/windows/configuration/customize-and-export-start-layout)
 * [Export-StartLayout](https://technet.microsoft.com/itpro/powershell/windows/startlayout/export-startlayout)
 * [Import-StartLayout](https://technet.microsoft.com/itpro/powershell/windows/startlayout/import-startlayout)
-* [Sideload LOB apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10)
-* [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
+* [Sideload LOB apps in Windows 10](/windows/application-management/siddeploy-windows-cmws-10)
+* [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 * [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 * [Windows Assessment and Deployment Kit (Windows ADK)](windows-adk-scenarios-for-it-pros.md)
 

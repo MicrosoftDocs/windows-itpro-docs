@@ -1,13 +1,18 @@
 ---
 title: Perform Proxy Activation (Windows 10)
-description: Perform Proxy Activation
+description: Perform proxy activation by using the Volume Activation Management Tool (VAMT) to activate client computers that do not have Internet access.
 ms.assetid: 35a919ed-f1cc-4d10-9c88-9bd634549dc3
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Perform Proxy Activation
@@ -49,6 +54,6 @@ The product keys that are installed on the client products must have a sufficien
 
     **Note**  
     You can use proxy activation to select products that have different key types and activate the products at the same time.
- 
- 
- 
+ 
+ 
+ 

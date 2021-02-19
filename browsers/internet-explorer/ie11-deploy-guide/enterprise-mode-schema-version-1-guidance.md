@@ -1,11 +1,15 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 17c61547-82e3-48f2-908d-137a71938823
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Enterprise Mode schema v.1 guidance (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -13,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Enterprise Mode schema v.1 guidance
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 
@@ -27,10 +34,10 @@ If you don't want to use the Enterprise Mode Site List Manager, you also have th
 ## Enterprise Mode schema v.1 example
 The following is an example of the Enterprise Mode schema v.1. This schema can run on devices running Windows 7 and Windows 8.1.
 
-**Important**<br>
-Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<domain>contoso.com</domain>` automatically applies to both http://contoso.com and https://contoso.com.
+> [!IMPORTANT]
+> Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<domain>contoso.com</domain>` automatically applies to both http://contoso.com and https://contoso.com.
 
-``` xml
+```xml
 <rules version="1">
   <emie>
     <domain exclude="false">www.cpandl.com</domain>
@@ -72,7 +79,7 @@ This table includes the elements used by the Enterprise Mode schema.
 <td>Root node for the schema.
 <p><b>Example</b>
 <pre class="syntax">
-&lt;rules version="205"&gt;
+&lt;rules version=&quot;205&quot;&gt;
   &lt;emie&gt;
     &lt;domain&gt;contoso.com&lt;/domain&gt;
   &lt;/emie&gt;
@@ -84,19 +91,19 @@ This table includes the elements used by the Enterprise Mode schema.
 <td>The parent node for the Enterprise Mode section of the schema. All &lt;domain&gt; entries will have either IE8 Enterprise Mode or IE7 Enterprise Mode applied.
 <p><b>Example</b>
 <pre class="syntax">
-&lt;rules version="205"&gt;
+&lt;rules version=&quot;205&quot;&gt;
   &lt;emie&gt;
     &lt;domain&gt;contoso.com&lt;/domain&gt;
   &lt;/emie&gt;
 &lt;/rules&gt;</pre>
 <strong>-or-</strong>
-<p>For IPv6 ranges:<pre class="syntax">&lt;rules version="205"&gt;
+<p>For IPv6 ranges:<pre class="syntax">&lt;rules version=&quot;205&quot;&gt;
   &lt;emie&gt;
     &lt;domain&gt;[10.122.34.99]:8080&lt;/domain&gt;
   &lt;/emie&gt;
   &lt;/rules&gt;</pre>
 <strong>-or-</strong>
-<p>For IPv4 ranges:<pre class="syntax">&lt;rules version="205"&gt;
+<p>For IPv4 ranges:<pre class="syntax">&lt;rules version=&quot;205&quot;&gt;
   &lt;emie&gt;
     &lt;domain&gt;10.122.34.99:8080&lt;/domain&gt;
   &lt;/emie&gt;
@@ -105,12 +112,12 @@ This table includes the elements used by the Enterprise Mode schema.
 </tr>
 <tr>
 <td>&lt;docMode&gt;</td>
-<td>The parent node for the document mode section of the section. All &lt;domain&gt; entries will get IE5 - IE11 document modes applied. If there's a &lt;domain&gt; element in the &lt;docMode&gt; section that uses the same value as a &lt;domain&gt; element in the &lt;emie&gt; section, the &lt;emie&gt; element is applied.
+<td>The parent node for the document mode section of the section. All &lt;domain&gt; entries will get IE5 - IE11 document modes applied. If there&#39;s a &lt;domain&gt; element in the &lt;docMode&gt; section that uses the same value as a &lt;domain&gt; element in the &lt;emie&gt; section, the &lt;emie&gt; element is applied.
 <p><b>Example</b>
 <pre class="syntax">
-&lt;rules version="205"&gt;
+&lt;rules version=&quot;205&quot;&gt;
   &lt;docMode&gt;
-    &lt;domain docMode="7"&gt;contoso.com&lt;/domain&gt;
+    &lt;domain docMode=&quot;7&quot;&gt;contoso.com&lt;/domain&gt;
   &lt;/docMode&gt;
 &lt;/rules&gt;</pre></td>
 <td>Internet Explorer 11</td>
@@ -131,11 +138,11 @@ This table includes the elements used by the Enterprise Mode schema.
 <p><b>Example</b>
 <pre class="syntax">
 &lt;emie&gt;
-  &lt;domain exclude="false"&gt;fabrikam.com
-    &lt;path exclude="true"&gt;/products&lt;/path&gt;
+  &lt;domain exclude=&quot;true&quot;&gt;fabrikam.com
+    &lt;path exclude=&quot;false&quot;&gt;/products&lt;/path&gt;
   &lt;/domain&gt;
 &lt;/emie&gt;</pre><p>
-Where http://fabrikam.com doesn't use IE8 Enterprise Mode, but http://fabrikam.com/products does.</td>
+Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">https://fabrikam.com</a> doesn&#39;t use IE8 Enterprise Mode, but <a href="https://fabrikam.com/products" data-raw-source="https://fabrikam.com/products">https://fabrikam.com/products</a> does.</td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 </table>
@@ -153,33 +160,64 @@ This table includes the attributes used by the Enterprise Mode schema.
 </thead>
 <tbody>
 <tr>
-<td>&lt;version&gt;</td>
+<td>version</td>
 <td>Specifies the version of the Enterprise Mode Site List. This attribute is supported for the &lt;rules&gt; element.</td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 <tr>
-<td>&lt;exclude&gt;</td>
-<td>Specifies the domain or path that is excluded from getting the behavior applied. This attribute is supported on the &lt;domain&gt; and &lt;path&gt; elements.
-<p><b>Example</b>
+<td>exclude</td>
+<td>Specifies the domain or path excluded from applying Enterprise Mode. This attribute is only supported on the &lt;domain&gt; and &lt;path&gt; elements in the &lt;emie&gt; section. If this attribute is absent, it defaults to false.
+<br />
+<p><b>Example:</b></p>
 <pre class="syntax">
 &lt;emie&gt;
-  &lt;domain exclude="false"&gt;fabrikam.com
-    &lt;path exclude="true"&gt;/products&lt;/path&gt;
+  &lt;domain exclude=&quot;false&quot;&gt;fabrikam.com
+    &lt;path exclude=&quot;true&quot;&gt;/products&lt;/path&gt;
   &lt;/domain&gt;
 &lt;/emie&gt;</pre><p>
-Where http://fabrikam.com doesn't use IE8 Enterprise Mode, but http://fabrikam.com/products does.</td>
+Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">https://fabrikam.com</a> uses IE8 Enterprise Mode, but <a href="https://fabrikam.com/products" data-raw-source="https://fabrikam.com/products">https://fabrikam.com/products</a> does not.</p></td>
+<td>Internet Explorer 11</td>
+</tr>
+<tr>
+<td>docMode</td>
+<td>Specifies the document mode to apply. This attribute is only supported on &lt;domain&gt; or &lt;path&gt; elements in the &lt;docMode&gt; section.
+<br />
+<p><b>Example:</b></p>
+<pre class="syntax">
+&lt;docMode&gt;
+  &lt;domain&gt;fabrikam.com
+    &lt;path docMode=&quot;9&quot;&gt;/products&lt;/path&gt;
+  &lt;/domain&gt;
+&lt;/docMode&gt;</pre><p>
+Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">https://fabrikam.com</a> loads in IE11 document mode, but <a href="https://fabrikam.com/products" data-raw-source="https://fabrikam.com/products">https://fabrikam.com/products</a> uses IE9 document mode.</p></td>
+<td>Internet Explorer 11</td>
+</tr>
+<tr>
+<td>doNotTransition</td>
+<td>Specifies that the page should load in the current browser, otherwise it will open in IE11. This attribute is supported on all &lt;domain&gt; or &lt;path&gt; elements. If this attribute is absent, it defaults to false.
+<br />
+<p><b>Example:</b></p>
+<pre class="syntax">
+&lt;emie&gt;
+  &lt;domain doNotTransition=&quot;false&quot;&gt;fabrikam.com
+    &lt;path doNotTransition=&quot;true&quot;&gt;/products&lt;/path&gt;
+  &lt;/domain&gt;
+&lt;/emie&gt;</pre><p>
+Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">https://fabrikam.com</a> opens in the IE11 browser, but <a href="https://fabrikam.com/products" data-raw-source="https://fabrikam.com/products">https://fabrikam.com/products</a> loads in the current browser (eg. Microsoft Edge).</p></td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 <tr>
-<td>&lt;docMode&gt;</td>
-<td>Specifies the document mode to apply. This attribute is only supported on &lt;domain&gt; or &lt;path&gt; elements in the &lt;docMode&gt; section.
-<p><b>Example</b>
+<td>forceCompatView</td>
+<td>Specifies that the page should load in IE7 document mode (Compat View). This attribute is only supported on &lt;domain&gt; or &lt;path&gt; elements in the &lt;emie&gt; section. If the page is also configured to load in Enterprise Mode, it will load in IE7 Enterprise Mode. Otherwise (exclude=&quot;true&quot;), it will load in IE11's IE7 document mode. If this attribute is absent, it defaults to false.
+<br />
+<p><b>Example:</b></p>
 <pre class="syntax">
-&lt;docMode&gt;
-  &lt;domain exclude="false"&gt;fakrikam.com
-    &lt;path docMode="7"&gt;/products&lt;/path&gt;
+&lt;emie&gt;
+  &lt;domain exclude=&quot;true&quot;&gt;fabrikam.com
+    &lt;path forceCompatView=&quot;true&quot;&gt;/products&lt;/path&gt;
   &lt;/domain&gt;
-&lt;/docMode&gt;</pre></td>
+&lt;/emie&gt;</pre><p>
+Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">https://fabrikam.com</a> does not use Enterprise Mode, but <a href="https://fabrikam.com/products" data-raw-source="https://fabrikam.com/products">https://fabrikam.com/products</a> uses IE7 Enterprise Mode.</p></td>
 <td>Internet Explorer 11</td>
 </tr>
 </table>
@@ -214,7 +252,7 @@ You can use trailing slashes at the path-level, but not at the domain-level:
 
 **Example**
 
-``` xml
+```xml
 <domain exclude="true">contoso.com
   <path exclude="false">/about/</path>
 </domain>

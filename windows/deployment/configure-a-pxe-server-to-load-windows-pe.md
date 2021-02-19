@@ -4,11 +4,16 @@ description: This topic describes how to configure a PXE server to load Windows�
 keywords: upgrade, update, windows, windows 10, pxe, WinPE, image, wim
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: greg-lindsay
-ms.date: 07/27/2017
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
+ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure a PXE server to load Windows PE
@@ -17,13 +22,11 @@ ms.date: 07/27/2017
 
 -   Windows 10
 
-## Summary
-
 This walkthrough describes how to configure a PXE server to load Windows PE by booting a client computer from the network. Using the Windows PE tools and a Windows 10 image file, you can install Windows 10 from the network.
 
 ## Prerequisites
 
-- A deployment computer: A computer with the [Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526803) (Windows ADK) installed.
+- A deployment computer: A computer with the [Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526803) (Windows ADK) and the Windows PE add-on with ADK installed.
 - A DHCP server: A DHCP server or DHCP proxy configured to respond to PXE client requests is required.
 - A PXE server: A server running the TFTP service that can host Windows PE boot files that the client will download.
 - A file server: A server hosting a network file share.
@@ -68,27 +71,27 @@ All four of the roles specified above can be hosted on the same computer or each
     ```
     net use y: \\PXE-1\TFTPRoot
     y:
-    md boot
+    md Boot
     ```
 6. Copy the PXE boot files from the mounted directory to the \boot folder. For example:
 
     ```
-    copy c:\winpe_amd64\mount\windows\boot\pxe\*.* y:\boot
+    copy c:\winpe_amd64\mount\windows\boot\pxe\*.* y:\Boot
     ```
 7.  Copy the boot.sdi file to the PXE/TFTP server.
 
     ```
-    copy C:\winpe_amd64\media\boot\boot.sdi y:\boot
+    copy C:\winpe_amd64\media\boot\boot.sdi y:\Boot
     ```
 8.  Copy the bootable Windows PE image (boot.wim) to the \boot folder.
 
     ```
-    copy C:\winpe_amd64\media\sources\boot.wim y:\boot
+    copy C:\winpe_amd64\media\sources\boot.wim y:\Boot
     ```
 9. (Optional) Copy true type fonts to the \boot folder
 
     ```
-    copy C:\winpe_amd64\media\Boot\Fonts y:\boot\Fonts
+    copy C:\winpe_amd64\media\Boot\Fonts y:\Boot\Fonts
     ```
 
 ## Step 2: Configure boot settings and copy the BCD file
@@ -103,7 +106,7 @@ All four of the roles specified above can be hosted on the same computer or each
     ```
     bcdedit /store c:\BCD /create {ramdiskoptions} /d "Ramdisk options"
     bcdedit /store c:\BCD /set {ramdiskoptions} ramdisksdidevice boot
-    bcdedit /store c:\BCD /set {ramdiskoptions} ramdisksdipath \boot\boot.sdi
+    bcdedit /store c:\BCD /set {ramdiskoptions} ramdisksdipath \Boot\boot.sdi
     bcdedit /store c:\BCD /create /d "winpe boot image" /application osloader
     ```
     The last command will return a GUID, for example:
@@ -115,9 +118,9 @@ All four of the roles specified above can be hosted on the same computer or each
 3.  Create a new boot application entry for the Windows PE image:
 
     ```
-    bcdedit /store c:\BCD /set {GUID1} device ramdisk=[boot]\boot\boot.wim,{ramdiskoptions} 
+    bcdedit /store c:\BCD /set {GUID1} device ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions} 
     bcdedit /store c:\BCD /set {GUID1} path \windows\system32\winload.exe 
-    bcdedit /store c:\BCD /set {GUID1} osdevice ramdisk=[boot]\boot\boot.wim,{ramdiskoptions} 
+    bcdedit /store c:\BCD /set {GUID1} osdevice ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions} 
     bcdedit /store c:\BCD /set {GUID1} systemroot \windows
     bcdedit /store c:\BCD /set {GUID1} detecthal Yes
     bcdedit /store c:\BCD /set {GUID1} winpe Yes
@@ -132,7 +135,7 @@ All four of the roles specified above can be hosted on the same computer or each
 5.  Copy the BCD file to your TFTP server:
 
     ```
-    copy c:\BCD \\PXE-1\TFTPRoot\boot\BCD
+    copy c:\BCD \\PXE-1\TFTPRoot\Boot\BCD
     ```
 
 Your PXE/TFTP server is now configured. You can view the BCD settings that have been configured using the command bcdedit /store &lt;BCD file location&gt; /enum all. See the following example. Note: Your GUID will be different than the one shown below.
@@ -149,9 +152,9 @@ timeout                 30
 Windows Boot Loader
 -------------------
 identifier              {a4f89c62-2142-11e6-80b6-00155da04110}
-device                  ramdisk=[boot]\boot\boot.wim,{ramdiskoptions}
+device                  ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions}
 description             winpe boot image
-osdevice                ramdisk=[boot]\boot\boot.wim,{ramdiskoptions}
+osdevice                ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions}
 systemroot              \Windows
 detecthal               Yes
 winpe                   Yes
@@ -161,7 +164,7 @@ Setup Ramdisk Options
 identifier              {ramdiskoptions}
 description             ramdisk options
 ramdisksdidevice        boot
-ramdisksdipath          \boot\boot.sdi
+ramdisksdipath          \Boot\boot.sdi
 ```
 
 >[!TIP]
@@ -171,7 +174,7 @@ ramdisksdipath          \boot\boot.sdi
 
 The following summarizes the PXE client boot process.
 
->The following assumes that you have configured DHCP option 67 (Bootfile Name) to "boot\PXEboot.n12" which enables direct boot to PXE with no user interaction. For more information about DHCP options for network boot, see [Managing Network Boot Programs](https://technet.microsoft.com/en-us/library/cc732351.aspx).
+>The following assumes that you have configured DHCP option 67 (Bootfile Name) to "boot\PXEboot.n12" which enables direct boot to PXE with no user interaction. For more information about DHCP options for network boot, see [Managing Network Boot Programs](https://technet.microsoft.com/library/cc732351.aspx).
 
 1.  A client is directed by DHCP options 066 and 067 to download boot\\PXEboot.n12 from the TFTP server.
 2.  PXEboot.n12 immediately begins a network boot.
@@ -186,4 +189,4 @@ See Also
 
 #### Concepts
 
-[Windows PE Walkthroughs](https://technet.microsoft.com/en-us/library/cc748899.aspx)
+[Windows PE Walkthroughs](https://technet.microsoft.com/library/cc748899.aspx)

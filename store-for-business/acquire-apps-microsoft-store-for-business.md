@@ -6,8 +6,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.date: 11/01/2017
-ms.localizationpriority: high
+ms.author: TrudyHa
+ms.date: 10/23/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: conceptual
+ms.localizationpriority: medium
 ---
 
 # Acquire apps in Microsoft Store for Business and Education
@@ -34,31 +38,40 @@ There are a couple of things we need to know when you pay for apps. You can add 
 ## Allow users to shop
 
 **Allow users to shop** controls the shopping experience in Microsoft Store for Education. When this setting is on, **Purchasers** and **Basic Purchasers** can purchase products and services from Microsoft Store for Education. If your school chooses to closely control how purchases are made, admins can turn off **Allow users to shop**. When the setting is off:
-- The shopping experience is not availalbe 
+- The shopping experience is not available 
 - **Purchasers** and **Basic Purchasers** can't purchase products and services from Microsoft Store for Education
 - Admins can't assign shopping roles to users
 - Products and services previously purchased by **Basic Purchasers** can be managed by admins. 
 
 **To manage Allow users to shop setting**
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com) 
-2. Click **Manage**, and then click **Settings**. 
-3. On **Shop**, turn on or turn off **Allow users to shop**.
+2. Select **Manage**, and then select **Settings**. 
+3. On **Shop**, , under **Shopping behavior**, turn on or turn off **Allow users to shop**.
 
 ![manage settings to control Basic Purchaser role assignment](images/sfb-allow-shop-setting.png)
 
+## Allow app requests
+
+People in your org can request license for apps that they need, or that others need. When **Allow app requests** is turned on, app requests are sent to org admins. Admins for your tenant will receive an email with the request, and can decide about making the purchase. 
+
+**To manage Allow app requests**
+1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com) 
+2. Select **Manage**, and then select **Settings**. 
+3. On **Shop**, under **Shopping behavior** turn on or turn off **Allow app requests**.
+
 ## Acquire apps
 **To acquire an app**  
-1.	Sign in to http://businessstore.microsoft.com
-2.	Click **Shop**, or use Search to find an app. 
-3.	Click the app you want to purchase. 
-4.	On the product description page, choose your license type - either online or offline. 
-5.  Free apps will be added to **Products & services**. For apps with a price, you can set the quantity you want to buy. Type the quantity and click **Next**.
-6.	If you don’t have a payment method saved in **Billing - Payment methods**, we will prompt you for one.
-7.	Add your credit card or debit card info, and click **Next**. Your card info is saved as a payment option on **Billing - Payment methods**.
+1. Sign in to https://businessstore.microsoft.com
+2. Select **Shop for my group**, or use Search to find an app. 
+3. Select the app you want to purchase. 
+4. On the product description page, choose your license type - either online or offline. 
+5.  Free apps will be added to **Products & services**. For apps with a price, you can set the quantity you want to buy. Type the quantity and select **Next**.
+6. If you don’t have a payment method saved in **Billing & payments**, we will prompt you for one.
+7. Add your credit card or debit card info, and select **Next**. Your card info is saved as a payment option on **Billing & payments - Payment methods**.
 
-You’ll also need to have your business address saved on ****Billing - Account profile***. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#organization-tax-information). 
+You’ll also need to have your business address saved on **My organization - Profile**. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#organization-tax-information). 
 
-Microsoft Store adds the app to your inventory. From **Inventory** or **Apps & software**, you can:
+Microsoft Store adds the app to your inventory. From **Products & services**, you can:
 - Distribute the app: add to private store, or assign licenses
 - View app licenses: review current licenses, reclaim and reassign licenses
 - View app details: review the app details page and purchase more licenses
@@ -66,11 +79,3 @@ Microsoft Store adds the app to your inventory. From **Inventory** or **Apps & s
 For info on distributing apps, see [Distribute apps to your employees from the Microsoft Store for Business](distribute-apps-to-your-employees-microsoft-store-for-business.md).
 
 For info on offline-licensed apps, see [Distribute offline apps](distribute-offline-apps.md).
-
-## Request apps
-People in your org can request additional licenses for apps that are in your organization's private store. When **Allow app requests** is turned on, people in your org can respond to a notification about app license availability. Admins for your tenant will receive an email with the request, and can decide about making the purchase. 
-
-**To manage Allow app requests**
-1. Sign in to http://businessstore.microsoft.com
-2. Click **Manage**, click **Settings**, and then click **Distribute**. 
-3. Under **Private store** turn on, or turn off **Allow app requests**. 

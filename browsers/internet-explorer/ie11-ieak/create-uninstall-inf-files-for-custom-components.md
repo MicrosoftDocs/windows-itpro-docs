@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use Setup information (.inf) files to uninstall custom components from your custom browser packages.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 8257aa41-58de-4339-81dd-9f2ffcc10a08
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use Setup information (.inf) files to uninstall custom components (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use uninstallation .INF files to uninstall custom components
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The Internet Explorer Administration Kit 11 (IEAK 11) uses Setup information (.inf) files to provide installation instructions for your custom browser packages. You can also use this file to uninstall your custom components by removing the files, registry entries, and shortcuts, and adding your custom component to the list of programs that can be uninstalled from **Uninstall or change a program**.
 
 **To uninstall your custom components**

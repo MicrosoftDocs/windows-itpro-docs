@@ -1,14 +1,18 @@
 ---
-title: Customize Windows 10 Start and taskbar with mobile device management (MDM) (Windows 10)
+title: Alter Windows 10 Start and taskbar via mobile device management
 description: In Windows 10, you can use a mobile device management (MDM) policy to deploy a customized Start and tasbkar layout to users.
 ms.assetid: F487850D-8950-41FB-9B06-64240127C1E4
+ms.reviewer: 
+manager: dansimp
 keywords: ["start screen", "start menu"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
+ms.topic: article
+ms.author: dansimp
 ms.localizationpriority: medium
-ms.date: 11/15/2017
+ms.date: 02/08/2018
 ---
 
 # Customize Windows 10 Start and taskbar with mobile device management (MDM)
@@ -26,12 +30,12 @@ In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, you can us
 >[!NOTE]
 >Support for applying a customized taskbar using MDM is added in Windows 10, version 1703.
 
-**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions.
+**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions (also works for taskbar customization).
 
->[!WARNING] 
+>[!WARNING]
 >When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
 
- 
+ 
 
 ## <a href="" id="bkmk-howstartscreencontrolworks"></a>How Start layout control works
 
@@ -40,91 +44,45 @@ Two features enable Start layout control:
 
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
-    >[!NOTE]  
+    >[!NOTE]
     >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/import-startlayout) cmdlet.
 
-     
+     
 
--   In MDM, you set the path to the .xml file that defines the Start layout using an OMA-URI setting, which is based on the [Policy configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=623244).
+-   In Microsoft Intune, you select the Start layout XML file and add it to a device configuration profile. 
+
+    >[!NOTE]
+    >Please do not include XML Prologs like \<?xml version="1.0" encoding="utf-8"?\> in the Start layout XML file. The settings may not be reflected correctly.
 
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a policy for your customized Start layout
 
 
 This example uses Microsoft Intune to configure an MDM policy that applies a customized Start layout. See the documentation for your MDM solution for help in applying the policy.
 
-1.  In the Start layout file created when you ran **Export-StartLayout**, replace markup characters with escape characters, and save the file. (You can replace the characters manually or use an online tool.)
+1.  In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
 
-    Example of a layout file produced by Export-StartLayout:
+2.  Select **Device configuration**.
 
-    <span codelanguage="XML"></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">XML</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>&lt;LayoutModificationTemplate Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
-      &lt;DefaultLayoutOverride&gt;
-        &lt;StartLayoutCollection&gt;
-          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot; xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot;&gt;
-            &lt;start:Group Name=&quot;Life at a glance&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot;&gt;
-              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&quot; /&gt;
-              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI&quot; /&gt;
-              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-            &lt;/start:Group&gt;        
-          &lt;/defaultlayout:StartLayout&gt;
-        &lt;/StartLayoutCollection&gt;
-      &lt;/DefaultLayoutOverride&gt;
-    &lt;/LayoutModificationTemplate&gt;</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+3.  Select **Profiles**.
 
-    Example of the same layout file with escape characters replacing the markup characters:
+4.  Select **Create profile**.
 
-```
-    &amp;lt;wdcml:p xmlns:wdcml=&amp;quot;http://microsoft.com/wdcml&amp;quot;&amp;gt;Example of a layout file produced by Export-StartLayout:&amp;lt;/wdcml:p&amp;gt;&amp;lt;wdcml:snippet xmlns:wdcml=&amp;quot;http://microsoft.com/wdcml&amp;quot;&amp;gt;&amp;lt;![CDATA[&amp;lt;LayoutModificationTemplate Version=&amp;quot;1&amp;quot; xmlns=&amp;quot;http://schemas.microsoft.com/Start/2014/LayoutModification&amp;quot;&amp;gt;
-      &amp;lt;DefaultLayoutOverride&amp;gt;
-        &amp;lt;StartLayoutCollection&amp;gt;
-          &amp;lt;defaultlayout:StartLayout GroupCellWidth=&amp;quot;6&amp;quot; xmlns:defaultlayout=&amp;quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&amp;quot;&amp;gt;
-            &amp;lt;start:Group Name=&amp;quot;Life at a glance&amp;quot; xmlns:start=&amp;quot;http://schemas.microsoft.com/Start/2014/StartLayout&amp;quot;&amp;gt;
-              &amp;lt;start:Tile Size=&amp;quot;2x2&amp;quot; Column=&amp;quot;0&amp;quot; Row=&amp;quot;0&amp;quot; AppUserModelID=&amp;quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&amp;quot; /&amp;gt;
-              &amp;lt;start:Tile Size=&amp;quot;2x2&amp;quot; Column=&amp;quot;4&amp;quot; Row=&amp;quot;0&amp;quot; AppUserModelID=&amp;quot;Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI&amp;quot; /&amp;gt;
-              &amp;lt;start:Tile Size=&amp;quot;2x2&amp;quot; Column=&amp;quot;2&amp;quot; Row=&amp;quot;0&amp;quot; AppUserModelID=&amp;quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&amp;quot; /&amp;gt;
-            &amp;lt;/start:Group&amp;gt;        
-          &amp;lt;/defaultlayout:StartLayout&amp;gt;
-        &amp;lt;/StartLayoutCollection&amp;gt;
-      &amp;lt;/DefaultLayoutOverride&amp;gt;
-    &amp;lt;/LayoutModificationTemplate&amp;gt;]]&amp;gt;&amp;lt;/wdcml:snippet&amp;gt;
-```
+5.  Enter a friendly name for the profile.
 
-2.  In the Microsoft Intune administration console, click **Policy** &gt; **Add Policy**.
+6.  Select **Windows 10 and later** for the platform.
 
-3.  Under **Windows**, choose a **Custom Configuration (Windows 10 Desktop and Mobile and later)** policy.
+7. Select **Device restrictions for the profile type.
 
-4.  Enter a name (mandatory) and description (optional) for the policy.
+8. Select **Start**.
 
-5.  In the **OMA-URI Settings** section, click **Add.**
+9. In **Start menu layout**, browse to and select your Start layout XML File.
 
-6.  In **Add or Edit OMA-URI Setting**, enter the following information.
+10. Select **OK** twice, and then select **Create**.
 
-    | Item  | Information |
-    |----|----|
-    | **Setting name**             | Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.                      |
-    | **Setting description**      | Provide a description that gives an overview of the setting and other relevant information to help you locate it. |
-    | **Data type**                | **String**                                                                                                        |
-    | **OMA-URI (case sensitive)** | **./User/Vendor/MSFT/Policy/Config/Start/StartLayout**                                                            |
-    | **Value**                    | Paste the contents of the Start layout .xml file that you created.               |
+11. Assign the profile to a device group.
 
-     
-7.  Click **OK** to save the setting and return to the **Create Policy** page.
+For other MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=623244). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
 
-8.  Click **Save Policy**.
 
 ## Related topics
 
@@ -137,9 +95,9 @@ This example uses Microsoft Intune to configure an MDM policy that applies a cus
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 - [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
- 
+ 
 
- 
+ 
 
 
 

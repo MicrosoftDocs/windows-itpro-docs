@@ -2,12 +2,16 @@
 title: Apps in Microsoft Store for Business and Education (Windows 10)
 description: Microsoft Store for Business has thousands of apps from many different categories.
 ms.assetid: CC5641DA-3CEA-4950-AD81-1AF1AE876926
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.localizationpriority: high
+ms.author: TrudyHa
+ms.topic: conceptual
+ms.localizationpriority: medium
 ms.date: 10/17/2017
 ---
 
@@ -65,7 +69,7 @@ Distribution options for online-licensed apps include the ability to:
 - Distribute through a management tool.
 
 ### Offline licensing
-Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store. This model means organizations can deploy apps when users or devices do not have connectivity to Microsoft Store. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. For more information, see [offline license visibility](https://docs.microsoft.com/en-us/microsoft-store/update-microsoft-store-for-business-account-settings#offline-licensing). 
+Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store. This model means organizations can deploy apps when users or devices do not have connectivity to Microsoft Store. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. For more information, see [offline license visibility](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#offline-licensing). 
 
 You have the following distribution options for offline-licensed apps:
 

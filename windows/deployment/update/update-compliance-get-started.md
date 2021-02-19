@@ -1,100 +1,83 @@
 ---
-title: Get started with Update Compliance (Windows 10)
-description: Configure Update Compliance in OMS to see the status of updates and antimalware protection on devices in your network.
+title: Get started with Update Compliance
+ms.reviewer: 
+manager: laurawi
+description: Prerequisites, Azure onboarding, and configuring devices for Update Compliance 
 keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
-author: DaniHalfin
-ms.author: daniha
-ms.date: 10/13/2017
+audience: itpro
+author: jaimeo
+ms.author: jaimeo
+ms.localizationpriority: medium
+ms.collection: M365-analytics
+ms.topic: article
 ---
 
 # Get started with Update Compliance
 
-This topic explains the steps necessary to configure your environment for Windows Analytics: Update Compliance. 
+This topic introduces the high-level steps required to enroll to the Update Compliance solution and configure devices to send data to it. The following steps cover the enrollment and device configuration workflow.
 
-Steps are provided in sections that follow the recommended setup process:
-1. Ensure that [prerequisites](#update-compliance-prerequisites) are met.
-2. [Add Update Compliance](#add-update-compliance-to-microsoft-operations-management-suite) to Microsoft Operations Management Suite.
-3. [Deploy your Commercial ID](#deploy-your-commercial-id-to-your-windows-10-devices) to your organization’s devices.
+1. Ensure you can [meet the requirements](#update-compliance-prerequisites) to use Update Compliance.
+2. [Add Update Compliance](#add-update-compliance-to-your-azure-subscription) to your Azure subscription.
+3. [Configure devices](#enroll-devices-in-update-compliance) to send data to Update Compliance.
+
+After adding the solution to Azure and configuring devices, there will be a waiting period of up to 72 hours before you can begin to see devices in the solution. Before or as devices appear, you can learn how to [Use Update Compliance](update-compliance-using.md) to monitor Windows Updates and Delivery Optimization.
 
 ## Update Compliance prerequisites
 
-Update Compliance has the following requirements: 
-1. Update Compliance is currently only compatible with Windows 10 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
-2. The solution requires that Windows 10 diagnostic data is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the [basic level of diagnostic data](/configuration/configure-windows-diagnostic-data-in-your-organization#basic-level) enabled. To learn more about Windows diagnostic data, see [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization). 
-3. The diagnostic data of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for each of the diagnostic data services](/configuration/configure-windows-diagnostic-data-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on diagnostic data endpoints and summarizes the use of each endpoint:
+Before you begin the process to add Update Compliance to your Azure subscription, first ensure you can meet the prerequisites:
 
-    Service | Endpoint
-    --- | ---
-    Connected User Experiences and Telemetry component | v10.vortex-win.data.microsoft.com<BR>settings-win.data.microsoft.com
-    Windows Error Reporting | watson.telemetry.microsoft.com
-    Online Crash Analysis | oca.telemetry.microsoft.com
+1. **Compatible Operating Systems and Editions**: Update Compliance works only with Windows 10 Professional, Education, and Enterprise editions. Update Compliance supports both the typical Windows 10 Enterprise edition, as well as [Windows 10 Enterprise multi-session](https://docs.microsoft.com/azure/virtual-desktop/windows-10-multisession-faq). Update Compliance only provides data for the standard Desktop Windows 10 version and is not currently compatible with Windows Server, Surface Hub, IoT, etc.
+2. **Compatible Windows 10 Servicing Channels**: Update Compliance supports Windows 10 devices on the Semi-Annual Channel (SAC) and the Long-term Servicing Channel (LTSC). Update Compliance *counts* Windows Insider Preview (WIP) devices, but does not currently provide detailed deployment insights for them.
+3. **Diagnostic data requirements**: Update Compliance requires devices be configured to send diagnostic data at *Required* level (previously *Basic*). To learn more about what's included in different diagnostic levels, see [Diagnostics, feedback, and privacy in Windows 10](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy).
+4. **Data transmission requirements**: Devices must be able to contact specific endpoints required to authenticate and send diagnostic data. These are enumerated in detail at [Configuring Devices for Update Compliance manually](update-compliance-configuration-manual.md).
+5. **Showing Device Names in Update Compliance**: For Windows 10 1803+, device names will not appear in Update Compliance unless you individually opt-in devices via policy. The steps to accomplish this is outlined in [Configuring Devices for Update Compliance](update-compliance-configuration-manual.md).
 
+## Add Update Compliance to your Azure subscription
 
- 4. To use Windows Defender Antivirus Assessment, devices must be protected by Windows Defender AV (and not a 3rd party AV program), and must have enabled [cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus). See the [Troublehsoot Windows Defender Antivirus reporting](/windows/threat-protection/windows-defender-antivirus/troubleshoot-reporting.md) topic for help on ensuring the configuration is correct.
- 
-     For endpoints running Windows 10, version 1607 or earlier, [Windows diagnostic data must also be set to **Enhanced**](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level), to be compatible with Windows Defender Antivirus. 
-    
-    See the [Windows Defender Antivirus in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) content library for more information on enabling, configuring, and validating Windows Defender AV.
+Update Compliance is offered as an Azure Marketplace application which is linked to a new or existing [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/query-language/get-started-analytics-portal) workspace within your Azure subscription. To configure this, follow these steps:
 
+1. Go to the [Update Compliance page in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WaaSUpdateInsights?tab=Overview). You may need to login to your Azure subscription to access this.
+2. Select **Get it now**.
+3. Choose an existing or configure a new Log Analytics Workspace. While an Azure subscription is required, you will not be charged for ingestion of Update Compliance data.
+   - [Desktop Analytics](https://docs.microsoft.com/sccm/desktop-analytics/overview) customers are advised to use the same workspace for Update Compliance.
+   - [Azure Update Management](https://docs.microsoft.com/azure/automation/automation-update-management) customers are advised to use the same workspace for Update Compliance.
+4. After your workspace is configured and selected, select **Create**. You will receive a notification when the solution has been successfully created.
 
-## Add Update Compliance to Microsoft Operations Management Suite
+> [!NOTE]
+> It is not currently supported to programmatically enroll to Update Compliance via the [Azure CLI](https://docs.microsoft.com/cli/azure) or otherwise. You must manually add Update Compliance to your Azure subscription.
 
-Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/). 
+### Get your CommercialID
 
-If you are already using OMS, skip to step **6** to add Update Compliance to your workspace.
+A CommercialID is a globally-unique identifier assigned to a specific Log Analytics workspace. The CommercialID is copied to an MDM or Group Policy and is used to identify devices in your environment.
 
-If you are not yet using OMS, use the following steps to subscribe to OMS Update Compliance:
+To find your CommercialID within Azure:
 
-1.	Go to [Operations Management Suite](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.   
-  ![Operations Management Suite bar with sign-in button](images/uc-02a.png)  
-  
-2.	Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.   
-  ![OMS Sign-in dialog box for account name and password](images/uc-03a.png)  
-  
-3.	Create a new OMS workspace.   
-  ![OMS dialog with buttons to create a new OMS workspace or cancel](images/uc-04a.png)  
-   
-4.	Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Click **Create**.   
-  ![OMS Create New Workspace dialog](images/uc-05a.png)](images/uc-05.png)
-  
-5.	If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator. If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. If you do not yet have an Azure subscription, follow [this guide](https://blogs.technet.microsoft.com/upgradeanalytics/2016/11/08/linking-operations-management-suite-workspaces-to-microsoft-azure/) to create and link an Azure subscription to an OMS workspace.  
-  ![OMS dialog to link existing Azure subscription or create a new one](images/uc-06a.png)  
-  
-6.	To add the Update Compliance solution to your workspace, go to the Solutions Gallery.  While you have this dialog open, you should also consider adding the [Upgrade Readiness](../upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md) and [Device Health](device-health-monitor.md) solutions as well, if you haven't already. To do so, just select the check boxes for those solutions.   
-  ![OMS workspace with Solutions Gallery tile highlighted](images/uc-07a.png)   
-  
-7.	Select the **Update Compliance** tile in the gallery and then select **Add** on the solution’s details page. You might need to scroll to find **Update Compliance**. The solution is now visible in your workspace.   
-  ![Workspace showing Solutions Gallery](images/uc-08a.png)  
-  
-8.	Click the **Update Compliance** tile to configure the solution. The **Settings Dashboard** opens.   
-  ![OMS workspace with new Update Compliance tile on the right side highlighted](images/uc-09a.png)  
-  
-9.	Click **Subscribe** to subscribe to OMS Update Compliance. You will then need to distribute your Commercial ID across all your organization’s devices. More information on the Commercial ID is provided below.   
-  ![Series of blades showing Connected Sources, Windows Diagnostic Data, and Upgrade Analytics solution with Subscribe button](images/uc-10a.png)  
-  
-After you are subscribed to OMS Update Compliance and your devices have a Commercial ID, you will begin receiving data. It will typically take 24 hours for the first data to begin appearing. The following section explains how to deploy your Commercial ID to your Windows 10 devices.
+1. Navigate to the **Solutions** tab for your workspace, and then select the **WaaSUpdateInsights** solution.
+2. From there, select the Update Compliance Settings page on the navbar.
+3. Your CommercialID is available in the settings page.
 
->[!NOTE]
->You can unsubscribe from the Update Compliance solution if you no longer want to monitor your organization’s devices. User device data will continue to be shared with Microsoft while the opt-in keys are set on user devices and the proxy allows traffic.
+> [!IMPORTANT]
+> Regenerate your CommercialID only if your original ID can no longer be used or if you want to completely reset your workspace. Regenerating your CommercialID cannot be undone and will result in you losing data for all devices that have the current CommercialID until the new CommercialID is deployed to devices.
 
-## Deploy your Commercial ID to your Windows 10 devices
+## Enroll devices in Update Compliance
 
-In order for your devices to show up in Windows Analytics: Update Compliance, they must be configured with your organization’s Commercial ID. This is so that Microsoft knows that a given device is a member of your organization and to feed that device’s data back to you. There are two primary methods for widespread deployment of your Commercial ID: Group Policy and Mobile Device Management (MDM). 
+Once you've added Update Compliance to a workspace in your Azure subscription, you'll need to configure any devices you want to monitor. There are two ways to configure devices to use Update Compliance.
 
-- Using Group Policy<BR><BR>
-    Deploying your Commercial ID using Group Policy can be accomplished by configuring domain Group Policy Objects with the Group Policy Management Editor, or by configuring local Group Policy using the Local Group Policy Editor.
-    1. In the console tree, navigate to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**
-    2. Double-click **Configure the Commercial ID**
-    3. In the **Options** box, under **Commercial Id**, type the Commercial ID GUID, and then click **OK**.<P>
+> [!NOTE]
+> After configuring devices via one of the two methods below, it can take up to 72 hours before devices are visible in the solution. Until then, Update Compliance will indicate it is still assessing devices.
 
-- Using Microsoft Mobile Device Management (MDM)<BR><BR>
-    Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
+### Configure devices using the Update Compliance Configuration Script
 
+The recommended way to configure devices to send data to Update Compliance is using the [Update Compliance Configuration Script](update-compliance-configuration-script.md). The script configures required policies via Group Policy. The script comes with two versions:
 
-## Related topics
+- Pilot is more verbose and is intended to be use on an initial set of devices and for troubleshooting.
+- Deployment is intended to be deployed across the entire device population you want to monitor with Update Compliance.  
 
-[Use Update Compliance to monitor Windows Updates](update-compliance-using.md)
+To download the script and learn what you need to configure and how to troubleshoot errors, see [Configuring Devices using the Update Compliance Configuration Script](update-compliance-configuration-script.md).
+
+### Configure devices manually
+
+It is possible to manually configure devices to send data to Update Compliance, but the recommended method of configuration is to use the [Update Compliance Configuration Script](update-compliance-configuration-script.md). To learn more about configuring devices manually, see [Manually Configuring Devices for Update Compliance](update-compliance-configuration-manual.md).

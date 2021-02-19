@@ -2,25 +2,25 @@
 title: Federated authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using federated authentication policy.
 ms.assetid: 049ECA6E-1AF5-4CB2-8F1C-A5F22D722DAA
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 07/28/2017
 ---
 
 # Federated authentication device enrollment
 
-
 This section provides an example of the mobile device enrollment protocol using federated authentication policy. When the authentication policy is set to Federated, the web authentication broker is leveraged by the enrollment client to get a security token. The enrollment client calls the web authentication broker API within the response message to start the process. The server should build the web authentication broker pages to fit the device screen and should be consistent with the existing enrollment UI. The opaque security token that is returned from the broker as an end page is used by the enrollment client as the device security secret during the client certificate request call.
 
 The &lt;AuthenticationServiceURL&gt; element the discovery response message specifies web authentication broker page start URL.
 
-For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
+For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 ## In this topic
-
 
 [Discovery service](#discovery-service)  
 [Enrollment policy web service](#enrollment-policy-web-service)  
@@ -30,12 +30,10 @@ For the list of enrollment scenarios not supported in Windows 10, see [Enrollme
 
 ## Discovery service
 
-
 The discovery web service provides the configuration information necessary for a user to enroll a phone with a management service. The service is a restful web service over HTTPS (server authentication only).
 
-> **Note**  The administrator of the discovery service must create a host with the address enterpriseenrollment.*domain\_name*.com.
-
- 
+> [!NOTE]
+> The administrator of the discovery service must create a host with the address enterpriseenrollment.*domain\_name*.com.
 
 The automatic discovery flow of the device uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain “enterpriseenrollment” to the domain of the email address, and by appending the path “/EnrollmentServer/Discovery.svc”. For example, if the email address is “sample@contoso.com”, the resulting URI for first Get request would be: http:<span></span>//enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc
 
@@ -43,28 +41,28 @@ The first request is a standard HTTP GET request.
 
 The following example shows a request via HTTP GET to the discovery server given user@contoso.com as the email address.
 
-```
+```http
 Request Full Url: http://EnterpriseEnrollment.contoso.com/EnrollmentServer/Discovery.svc
 Content Type: unknown
 Header Byte Count: 153
 Body Byte Count: 0
 ```
 
-```
+```http
 GET /EnrollmentServer/Discovery.svc HTTP/1.1
 User-Agent: Windows Phone 8 Enrollment Client
 Host: EnterpriseEnrollment.contoso.com
 Pragma: no-cache
 ```
 
-```
+```http
 Request Full Url: http://EnterpriseEnrollment.contoso.com/EnrollmentServer/Discovery.svc
 Content Type: text/html
 Header Byte Count: 248
 Body Byte Count: 0
 ```
 
-```
+```http
 HTTP/1.1 200 OK
 Connection: Keep-Alive
 Pragma: no-cache
@@ -84,13 +82,13 @@ The following logic is applied:
 
 The following example shows a request via an HTTP POST command to the discovery web service given user@contoso.com as the email address
 
-```
+```http
 https://EnterpriseEnrollment.Contoso.com/EnrollmentServer/Discovery.svc
 ```
 
 The following example shows the discovery service request.
 
-``` syntax
+```xml
     <?xml version="1.0"?>
     <s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:s="http://www.w3.org/2003/05/soap-envelope">
@@ -129,24 +127,21 @@ The discovery response is in the XML format and includes the following fields:
 -   Authentication policy (AuthPolicy) – Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user will be authenticated when calling the management service URL. This field is mandatory.
 -   In Windows, Federated is added as another supported value. This allows the server to leverage the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
 
-> **Note**  The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
-
- 
+> [!Note]
+> The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
 When authentication policy is set to be Federated, Web Authentication Broker (WAB) will be leveraged by the enrollment client to get a security token. The WAB start page URL is provided by the discovery service in the response message. The enrollment client will call the WAB API within the response message to start the WAB process. WAB pages are server hosted web pages. The server should build those pages to fit the device screen nicely and be as consistent as possible to other builds in the MDM enrollment UI. The opaque security token that is returned from WAB as an endpage will be used by the enrollment client as the device security secret during the client certificate enrollment request call.
 
-> **Note**  Instead of relying on the user agent string that is passed during authentication to get information, such as the OS version, use the following guidance:
+> [!Note]
+> Instead of relying on the user agent string that is passed during authentication to get information, such as the OS version, use the following guidance:
 > -   Parse the OS version from the data sent up during the discovery request.
 > -   Append the OS version as a parameter in the AuthenticationServiceURL.
 > -   Parse out the OS version from the AuthenticiationServiceURL when the OS sends the response for authentication.
 
- 
-
 A new XML tag, AuthenticationServiceUrl, is introduced in the DiscoveryResponse XML to allow the server to specify the WAB page start URL. For Federated authentication, this XML tag must exist.
 
-> **Note**  The enrollment client is agnostic with regards to the protocol flows for authenticating and returning the security token. While the server might prompt for user credentials directly or enter into a federation protocol with another server and directory service, the enrollment client is agnostic to all of this. To remain agnostic, all protocol flows pertaining to authentication that involve the enrollment client are passive, that is, browser-implemented.
-
- 
+> [!Note]
+> The enrollment client is agnostic with regards to the protocol flows for authenticating and returning the security token. While the server might prompt for user credentials directly or enter into a federation protocol with another server and directory service, the enrollment client is agnostic to all of this. To remain agnostic, all protocol flows pertaining to authentication that involve the enrollment client are passive, that is, browser-implemented.
 
 The following are the explicit requirements for the server.
 
@@ -160,12 +155,15 @@ The enrollment client issues an HTTPS request as follows:
 AuthenticationServiceUrl?appru=<appid>&amp;login_hint=<User Principal Name>
 ```
 
--   &lt;appid&gt; is of the form ms-app://string
--   &lt;User Principal Name&gt; is the name of the enrolling user, for example, user@constoso.com as input by the user in an enrollment sign in page. The value of this attribute serves as a hint that can be used by the authentication server as part of the authentication.
+- &lt;appid&gt; is of the form ms-app://string
+- &lt;User Principal Name&gt; is the name of the enrolling user, for example, user@constoso.com as input by the user in an enrollment sign in page. The value of this attribute serves as a hint that can be used by the authentication server as part of the authentication.
 
 After authentication is complete, the auth server should return an HTML form document with a POST method action of appid identified in the query string parameter.
 
-```
+> [!NOTE]
+> To make an application compatible with strict Content Security Policy, it is usually necessary to make some changes to HTML templates and client-side code, add the policy header, and test that everything works properly once the policy is deployed.
+
+```html
 HTTP/1.1 200 OK 
 Content-Type: text/html; charset=UTF-8
 Vary: Accept-Encoding
@@ -196,7 +194,7 @@ The server has to send a POST to a redirect URL of the form ms-app://string (the
 
 The following example shows a response received from the discovery web service which requires authentication via WAB.
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
        xmlns:a="http://www.w3.org/2005/08/addressing">
       <s:Header>
@@ -232,7 +230,6 @@ The following example shows a response received from the discovery web service w
 
 ## Enrollment policy web service
 
-
 Policy service is optional. By default, if no policies are specified, the minimum key length is 2k and the hash algorithm is SHA-1.
 
 This web service implements the X.509 Certificate Enrollment Policy Protocol (MS-XCEP) specification that allows customizing certificate enrollment to match different security needs of enterprises at different times (cryptographic agility). The service processes the GetPolicies message from the client, authenticates the client, and returns matching enrollment policies in the GetPoliciesResponse message.
@@ -250,7 +247,7 @@ wsse:BinarySecurityToken/attributes/EncodingType: The &lt;wsse:BinarySecurityTok
 
 The following is an enrollment policy request example with a received security token as client credential.
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
        xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
@@ -297,13 +294,12 @@ After the user is authenticated, the web service retrieves the certificate templ
 
 MS-XCEP supports very flexible enrollment policies using various Complex Types and Attributes. For Windows device, we will first support the minimalKeyLength, the hashAlgorithmOIDReference policies, and the CryptoProviders. The hashAlgorithmOIDReference has related OID and OIDReferenceID and policySchema in the GetPolicesResponse. The policySchema refers to the certificate template version. Version 3 of MS-XCEP supports hashing algorithms.
 
-> **Note**  The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
-
- 
+> [!NOTE]
+> The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
 The following snippet shows the policy web service response.
 
-``` syntax
+```xml
       <s:Envelope
          xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
          xmlns:s="http://www.w3.org/2003/05/soap-envelope"
@@ -382,7 +378,6 @@ The following snippet shows the policy web service response.
 
 ## Enrollment web service
 
-
 This web service implements the MS-WSTEP protocol. It processes the RequestSecurityToken (RST) message from the client, authenticates the client, requests the certificate from the CA, and returns it in the RequestSecurityTokenResponse (RSTR) to the client. Besides the issued certificate, the response also contains configurations needed to provision the DM client.
 
 The RequestSecurityToken (RST) must have the user credential and a certificate request. The user credential in an RST SOAP envelope is the same as in GetPolicies, and can vary depending on whether the authentication policy is OnPremise or Federated. The BinarySecurityToken in an RST SOAP body contains a Base64-encoded PKCS\#10 certificate request, which is generated by the client based on the enrollment policy. The client could have requested an enrollment policy by using MS-XCEP before requesting a certificate using MS-WSTEP. If the PKCS\#10 certificate request is accepted by the certification authority (CA) (the key length, hashing algorithm, and so on match the certificate template), the client can enroll successfully.
@@ -391,13 +386,12 @@ Note that the RequestSecurityToken will use a custom TokenType (http:<span></spa
 
 The RST may also specify a number of AdditionalContext items, such as DeviceType and Version. Based on these values, for example, the web service can return device-specific and version-specific DM configuration.
 
-> **Note**  The policy service and the enrollment service must be on the same server; that is, they must have the same host name.
-
- 
+> [!Note]
+> The policy service and the enrollment service must be on the same server; that is, they must have the same host name.
 
 The following example shows the enrollment web service request for federated authentication.
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
        xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
@@ -482,9 +476,8 @@ The following example shows the enrollment web service request for federated aut
 
 After validating the request, the web service looks up the assigned certificate template for the client, update it if needed, sends the PKCS\#10 requests to the CA, processes the response from the CA, constructs an OMA Client Provisioning XML format, and returns it in the RequestSecurityTokenResponse (RSTR).
 
-> **Note**  The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
-
- 
+> [!Note]
+> The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
 Similar to the TokenType in the RST, the RSTR will use a custom ValueType in the BinarySecurityToken (http:<span></span>//schemas.microsoft.com/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc), because the token is more than an X.509 v3 certificate.
 
@@ -503,7 +496,7 @@ Here is a sample RSTR message and a sample of OMA client provisioning XML within
 
 The following example shows the enrollment web service response.
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
        xmlns:a="http://www.w3.org/2005/08/addressing" 
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
@@ -548,12 +541,12 @@ The following example shows the enrollment web service response.
 
 The following code shows sample provisioning XML (presented in the preceding package as a security token):
 
-```
+```xml
 <wap-provisioningdoc version="1.1">
    <characteristic type="CertificateStore">
       <characteristic type="Root">
          <characteristic type="System">
-            <characteristic type="031336C933CC7E228B88880D78824FB2909A0A2F">
+            <characteristic type="Encoded Root Cert Hash Inserted Here">
                <parm name="EncodedCertificate" value="B64 encoded cert insert here" />
             </characteristic>
          </characteristic>
@@ -562,7 +555,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
    <characteristic type="CertificateStore">
       <characteristic type="My" >      
          <characteristic type="User">
-            <characteristic type="F9A4F20FC50D990FDD0E3DB9AFCBF401818D5462">
+            <characteristic type="Encoded Root Cert Hash Inserted Here">
                <parm name="EncodedCertificate" value="B64EncodedCertInsertedHere" />
             </characteristic>
             <characteristic type="PrivateKeyContainer"/> 
@@ -635,11 +628,3 @@ The following code shows sample provisioning XML (presented in the preceding pac
 -   The **PrivateKeyContainer** characteristic is required and must be present in the Enrollment provisioning XML by the enrollment. Other important settings are the **PROVIDER-ID**, **NAME**, and **ADDR** parameter elements, which need to contain the unique ID and NAME of your DM provider and the address where the device can connect for configuration provisioning. The ID and NAME can be arbitrary values, but they must be unique.
 -   Also important is SSLCLIENTCERTSEARCHCRITERIA, which is used for selecting the certificate to be used for client authentication. The search is based on the subject attribute of the signed user certificate.
 -   CertificateStore/WSTEP enables certificate renewal. If the server does not support it, do not set it.
-
- 
-
-
-
-
-
-

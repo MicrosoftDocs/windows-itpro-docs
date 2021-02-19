@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to fix potential installation problems with Internet Explorer 11
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 3ae77745-86ac-40a9-a37d-eebbf37661a3
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Install problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Install problems with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Most Internet Explorer 11 installations are straightforward and work the way they should. But it's possible that you might have problems.
 
 If you do, you can:
@@ -48,7 +55,7 @@ If you get an error during the Windows Update process, see [Fix the problem with
 
 5.  Try to reinstall IE11 from either Windows Update (if you saw it in Step 3) or from the [Download Internet Explorer 11](https://go.microsoft.com/fwlink/p/?linkid=327753) website.
 
-If these steps didn't fix your problem, see [Troubleshooting a failed installation of Internet Explorer 11](https://go.microsoft.com/fwlink/p/?LinkId=304130).
+
 
  
 

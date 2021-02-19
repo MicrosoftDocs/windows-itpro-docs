@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Accelerators page in the IEAK 11 Customization Wizard to add accelerators to employee devices.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 208305ad-1bcd-42f3-aca3-0ad1dda7048b
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use the Accelerators page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Accelerators page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Accelerators** page of the Internet Explorer Administration Kit (IEAK 11) Customization Wizard lets you add accelerators to your employee computers. Accelerators are contextual menu options that can quickly get to a web service from any webpage. For example, an accelerator can look up a highlighted word in the dictionary or a selected location on a map.
 
 **Note**<br>

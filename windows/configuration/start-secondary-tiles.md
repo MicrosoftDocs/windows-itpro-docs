@@ -5,9 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
-author: jdeckerms
-ms.date: 08/07/2017
+ms.localizationpriority: medium
+author: dansimp
+ms.author: dansimp
+ms.topic: article
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Add image for secondary Microsoft Edge tiles 
@@ -60,8 +63,8 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
 
 ## Export Start layout and assets
 
-1. Follow the instructions in [Customize and export Start layout](customize-and-export-start-layout.md#bkmkcustomizestartscreen) to customize the Start screen on your test computer.
-2. Open Windows PowerShell and enter the following command:
+1. Follow the instructions in [Customize and export Start layout](customize-and-export-start-layout.md#customize-the-start-screen-on-your-test-computer) to customize the Start screen on your test computer.
+2. Open Windows PowerShell as an administrator and enter the following command:
     
     ```
     Export-StartLayout -path <path><file name>.xml
@@ -71,13 +74,10 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
     Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet does not append the file name extension, and the policy settings require the extension.
     
 3. If you’d like to change the image for a secondary tile to your own custom image, open the layout.xml file, and look for the images that the tile references.
-    - For example, your layout.xml contains `Square150x150LogoUri="ms-appdata:///local/PinnedTiles/21581260870/hires.png" Wide310x150LogoUri="ms-appx:///"` 
-    - Open `C:\Users\<username>\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState` and replace those images with your customized images
-    
-    >[!TIP]
-    >A quick method for getting appropriately sized images for each tile size is to upload your image at [BuildMyPinnedSite](http://www.buildmypinnedsite.com/) and then download the resized tile images.
+   - For example, your layout.xml contains `Square150x150LogoUri="ms-appdata:///local/PinnedTiles/21581260870/hires.png" Wide310x150LogoUri="ms-appx:///"` 
+   - Open `C:\Users\<username>\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\PinnedTiles\21581260870\` and replace those images with your customized images.     
         
- 4. In Windows PowerShell, enter the following command:
+4. In Windows PowerShell, enter the following command:
  
     ```
     Export-StartLayoutEdgeAssets assets.xml
@@ -85,114 +85,32 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
 
 ## Configure policy settings
 
-You can apply the customized Start layout with images for secondary tiles by using [mobile device management](customize-windows-10-start-screens-by-using-mobile-device-management.md) or [a provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md). However, because you are including the images for secondary tiles, you must configure an additional policy to import the Edge assets.
+You can apply the customized Start layout with images for secondary tiles by using [mobile device management](customize-windows-10-start-screens-by-using-mobile-device-management.md) or [a provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md). However, because you are including the images for secondary tiles, you must configure an additional setting to import the Edge assets.
 
 ### Using MDM
 
-Follow the instructions to [create a custom policy](customize-windows-10-start-screens-by-using-mobile-device-management.md#bkmk-domaingpodeployment). Replace the markup characters with escape characters in both the layout.xml and the assets.xml.
+In Microsoft Intune, you create a device restrictions policy to apply to device group. For other MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=623244). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
 
-In addition to the `./User/Vendor/MSFT/Policy/Config/Start/StartLayout` setting, you must also add the `ImportEdgeAssets` setting.
 
-| Item  | Information |
-|----|----|
-| **Setting name**             | Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.                      |
-| **Setting description**      | Provide a description that gives an overview of the setting and other relevant information to help you locate it. |
-| **Data type**                | **String**                                                                                                        |
-| **OMA-URI (case sensitive)** | **./User/Vendor/MSFT/Policy/Config/Start/ImportEdgeAssets**    
-| **Value**                    | Paste the contents of the assets.xml file that you created.                                 |
+1.  In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
+2.  Select **Device configuration**.
+3.  Select **Profiles**.
+4.  Select **Create profile**.
+5.  Enter a friendly name for the profile.
+6.  Select **Windows 10 and later** for the platform.
+7. Select **Device restrictions** for the profile type.
+8. Select **Start**.
+9. In **Start menu layout**, browse to and select your Start layout XML file.
+9. In **Pin websites to tiles in Start menu**, browse to and select your assets XML file.
+10. Select **OK** twice, and then select **Create**.
+11. [Assign the profile to a group](https://docs.microsoft.com/intune/device-profile-assign).
 
-**Example XML string value for the Start/ImportEdgeAssets policy**
-
-```
-<SecondaryTileAssets>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\30382655640\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>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</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\30382655640\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>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</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\29499280780\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIECAr9//MFC/73CPEJ/PYOJQWV4AAAJsSURBVHgB7dyHcqswEEDRpa2KkcT/f+1zwNHYgtebvHPPtEzPNWXp8r8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBhnOZFxSbnpxB1J+aMtzVoZaswjVMu2hIbBj+FRStbhW5bQ9TKVuF4y0ErW4VpHwSVvcKoldFCPaGQQgoppJBCCinUb1rNF+pqvlClCxTGEJZfLAz9F8bsk9wln3+hMEv3hVOSagg/W3iT3gsXJy+mnyvcpPfCkqSx/URhdNJ7YRzkZP3hwmUP3Lou9HKh/EhhXf5Zey6c5dMwSjX+WOH8EZiydl04yGGKqhqcPIQfKcxyl4p2XZjlUJr9hv+Bwk3uXNG+C8dm17IkOSzfK4xHYNS+CxfZDVpNcsgvhetXpsQWtfPC3ObocpqJ8sFHfVH2wJtq74W380V+Jzv3WiiuXE2J/gvHWlNtcmj/+5S1yvuUmPUNClPdcVbTubBdcdc6JfovvDjUzu1ElLsyyJ1bnqbEou9aGK4KNXp5rJjHX2NUW4V17Z0eU0LVXqGG1J5Bvvl2GNtCjU4OWd+tcPzuvvR5fKagre7n4XAxD4erQp1TnRKdFzY5i55Op/xloZYt6lsVrqcNschhNXJFeJFdiqeLGouRQnWy29qLGk6tFGY53HRXZ142U6iDHIYcwrzJwxDtFM5yJaudQvVy5tVSYXTSctFMYU1sA20VavTyzEc1U1iFUT4Ns9G73GX1491UeFKBQp4Y4qkvntyjkEIKKaSQQgp5O+/0qn3L5FuyRVu86czb6nxxgK9G8OUPvt4CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADezhemI2HJD0xgNwAAAABJRU5ErkJggg==</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\29499280780\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIECAr9//MFC/73CPEJ/PYOJQWV4AAAJsSURBVHgB7dyHcqswEEDRpa2KkcT/f+1zwNHYgtebvHPPtEzPNWXp8r8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBhnOZFxSbnpxB1J+aMtzVoZaswjVMu2hIbBj+FRStbhW5bQ9TKVuF4y0ErW4VpHwSVvcKoldFCPaGQQgoppJBCCinUb1rNF+pqvlClCxTGEJZfLAz9F8bsk9wln3+hMEv3hVOSagg/W3iT3gsXJy+mnyvcpPfCkqSx/URhdNJ7YRzkZP3hwmUP3Lou9HKh/EhhXf5Zey6c5dMwSjX+WOH8EZiydl04yGGKqhqcPIQfKcxyl4p2XZjlUJr9hv+Bwk3uXNG+C8dm17IkOSzfK4xHYNS+CxfZDVpNcsgvhetXpsQWtfPC3ObocpqJ8sFHfVH2wJtq74W380V+Jzv3WiiuXE2J/gvHWlNtcmj/+5S1yvuUmPUNClPdcVbTubBdcdc6JfovvDjUzu1ElLsyyJ1bnqbEou9aGK4KNXp5rJjHX2NUW4V17Z0eU0LVXqGG1J5Bvvl2GNtCjU4OWd+tcPzuvvR5fKagre7n4XAxD4erQp1TnRKdFzY5i55Op/xloZYt6lsVrqcNschhNXJFeJFdiqeLGouRQnWy29qLGk6tFGY53HRXZ142U6iDHIYcwrzJwxDtFM5yJaudQvVy5tVSYXTSctFMYU1sA20VavTyzEc1U1iFUT4Ns9G73GX1491UeFKBQp4Y4qkvntyjkEIKKaSQQgp5O+/0qn3L5FuyRVu86czb6nxxgK9G8OUPvt4CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADezhemI2HJD0xgNwAAAABJRU5ErkJggg==</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\2819959990\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAK7SURBVHgB7d2JcrJIFIDR1pZGGzC8/9OOaHsLMOs/+8w5tWZPvupcGlKBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/DMdjvnUlT7xuf58qUNZiPWJsc/TtQSxPvB2zG05ifWZfp5qCWJ9OsXDl7FM8R/EMsU/05vi39eb4l8QqwSxxPpnxCpf647pS2KFH9QSq0tfEiukINZ/7VAgllhiiSXWV8QSSyyxDHix/mhiiSWWWNdap5zzPIj1Yqg135yH3c882jrc3Nv0fWmm9FBLM6a7o1jxM6WhPJzTQ95dHb6IdZO3K+ktbVfSKT1cxYoaz5UzpGaMlg+Ohqs8c6Rrus1ftHqx7g7rGjk9neKtiyzWau2M+58wb34tq1h3eX04TKEvi7p5Z7Hqau1cUxjL4tLKidWku0u0abrVtmt28W+ztTq3+RWmeFub9mLF6unj2HfoU6ymFANNrPVcinObc456bYa9FbGaa8yoKS2mU7zDFCPLgG/icDinxXWI08E5xpdYmx8rt3E+PrftU/zAnVhhbofD4Tmrjs9fvnR3KEGsU4tUnysst7HepZYxiNWatEY1NvXlFCNLrDCmRdfHnird1RyT3tZhV6DGnqpt3C99nCUGsXJaPMd6bOrPh7jCHMSq+1PCKa1cyopYw/5iwzWFNrIM+HBIDzGgXt5RrHBMT8eXn7QvQaztRb8cI3/3GrFeJ3yNTf3uNWKF/Wu7l/cTK7ztB9RhP7JsHcI5Pcz7kR+vEStM8XfoJqfda8QKQ62nfNO9jPyhBLE+UmvNixIM+C+JJZZYYon1D+Nf6MQSSyyxDHixxBJLLLFGsdzGzg0S3XrTTV3FciPq4Bbn/2lunu+xDB744VEyHlKEx195sJpH9gEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL8BVPKUzB0VBYIAAAAASUVORK5CYII=</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\2819959990\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAK7SURBVHgB7d2JcrJIFIDR1pZGGzC8/9OOaHsLMOs/+8w5tWZPvupcGlKBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/DMdjvnUlT7xuf58qUNZiPWJsc/TtQSxPvB2zG05ifWZfp5qCWJ9OsXDl7FM8R/EMsU/05vi39eb4l8QqwSxxPpnxCpf647pS2KFH9QSq0tfEiukINZ/7VAgllhiiSXWV8QSSyyxDHix/mhiiSWWWNdap5zzPIj1Yqg135yH3c882jrc3Nv0fWmm9FBLM6a7o1jxM6WhPJzTQ95dHb6IdZO3K+ktbVfSKT1cxYoaz5UzpGaMlg+Ohqs8c6Rrus1ftHqx7g7rGjk9neKtiyzWau2M+58wb34tq1h3eX04TKEvi7p5Z7Hqau1cUxjL4tLKidWku0u0abrVtmt28W+ztTq3+RWmeFub9mLF6unj2HfoU6ymFANNrPVcinObc456bYa9FbGaa8yoKS2mU7zDFCPLgG/icDinxXWI08E5xpdYmx8rt3E+PrftU/zAnVhhbofD4Tmrjs9fvnR3KEGsU4tUnysst7HepZYxiNWatEY1NvXlFCNLrDCmRdfHnird1RyT3tZhV6DGnqpt3C99nCUGsXJaPMd6bOrPh7jCHMSq+1PCKa1cyopYw/5iwzWFNrIM+HBIDzGgXt5RrHBMT8eXn7QvQaztRb8cI3/3GrFeJ3yNTf3uNWKF/Wu7l/cTK7ztB9RhP7JsHcI5Pcz7kR+vEStM8XfoJqfda8QKQ62nfNO9jPyhBLE+UmvNixIM+C+JJZZYYon1D+Nf6MQSSyyxDHixxBJLLLFGsdzGzg0S3XrTTV3FciPq4Bbn/2lunu+xDB744VEyHlKEx195sJpH9gEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL8BVPKUzB0VBYIAAAAASUVORK5CYII=</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\39721989420\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJLSURBVHgB7d3Joqo6FEDBbUOCAYT//9nTN/cganz9fakaO1qDjRASAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+G/a7Q/HLgV35P5UhvQmuGrMh+mcfhFbmPeHMqS1YCUvU0nbgtUUvyFWTPGKWKZ4BVP8Aaa4WPeklX87llhipfu6fWwTa8sDtcTqoppYSSyxxBJLLLEuiCVWzv3U1cUSK17ty81YYnVTn/NXkmW4Gkusso9X30nm83YssYYlYhUrxnNjsUoph8Mh5zzGtcEdL85zXMaKeWgoVlzKZTPWGFuxYmk41vbgjm/rWFEajxXzUB9r33qs2NfHiq71WHGsjzU1H2tXH6tvPlYcq2Pl5mKdyovDLr4sVxOIVdKbviZBWms0Vprj091YYk13Y63khmN18Wm4l0CsFJ9KXYK+PpZYk1gvuroEQ8OxyoMDfp8ajrXEh7kuQWk41jA+dse3pHZjdXPNveH6uVeT94an/tZThzEujF1qMtbadPGrbo6V+a2VWHlzKWzrSb1Y43BrkfXXxXuxxvPN5fv5e3VRrO1F+bRBrGVIVbHEGpcupduxxNrnnPeH0zltEWv73vB/EUssscQS6waxxBJLLANerAeJJZZYYq105XTIc1UssSr46yCWWGLZUC6WWGKJJZZYYonVieWAREdvOtRVLAdR/ybm3hHnjxnz4XgW69HPMoj1d37wg/Gv+ZSM2R/Uz/6gfvYHv+8n+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGdtQJGPPIrELgAAAABJRU5ErkJggg==</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\39721989420\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJLSURBVHgB7d3Joqo6FEDBbUOCAYT//9nTN/cganz9fakaO1qDjRASAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+G/a7Q/HLgV35P5UhvQmuGrMh+mcfhFbmPeHMqS1YCUvU0nbgtUUvyFWTPGKWKZ4BVP8Aaa4WPeklX87llhipfu6fWwTa8sDtcTqoppYSSyxxBJLLLEuiCVWzv3U1cUSK17ty81YYnVTn/NXkmW4Gkusso9X30nm83YssYYlYhUrxnNjsUoph8Mh5zzGtcEdL85zXMaKeWgoVlzKZTPWGFuxYmk41vbgjm/rWFEajxXzUB9r33qs2NfHiq71WHGsjzU1H2tXH6tvPlYcq2Pl5mKdyovDLr4sVxOIVdKbviZBWms0Vprj091YYk13Y63khmN18Wm4l0CsFJ9KXYK+PpZYk1gvuroEQ8OxyoMDfp8ajrXEh7kuQWk41jA+dse3pHZjdXPNveH6uVeT94an/tZThzEujF1qMtbadPGrbo6V+a2VWHlzKWzrSb1Y43BrkfXXxXuxxvPN5fv5e3VRrO1F+bRBrGVIVbHEGpcupduxxNrnnPeH0zltEWv73vB/EUssscQS6waxxBJLLANerAeJJZZYYq105XTIc1UssSr46yCWWGLZUC6WWGKJJZZYYonVieWAREdvOtRVLAdR/ybm3hHnjxnz4XgW69HPMoj1d37wg/Gv+ZSM2R/Uz/6gfvYHv+8n+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGdtQJGPPIrELgAAAABJRU5ErkJggg==</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\25495229280\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJSSURBVHgB7d1HcuMwEEBRKBBglu9/WUc6tQBZmhze2832V08XGEwl/kwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALDbH45dTl+g9MM45WeJprkcljV/kGo47Q/jlKNEUO6WMdclwha/IBG2uFg3bPELbPEb2OJifSVHYon1m2Plr3X71CZWdEMtsbrUJlaU/mJiiSWWWA6l1SpiiSWWWGKJ9UOJJZZDqUPpNHaNWGJN+c1Y5vTkLJZYx/LcZj671dmfJRBrmtOzJdzpnKfzBBZ8n56V8O9DfidWvGe+bpNWHSyxNv2nHXWoDZZY9SU11wdLrE3/YcUvcbDEqo7WKT/ahcESK+rfVvwYzhFitUarz7mkJ7scOZTG0ZqnrjJYYgXrFmmIgyVWRUlP+hIHS6yKMW3CYFnwrdHaHHMgVnO0Sg7Eao/W8fpYYi1iXf/fcCfWDQt+Eevqo0O8ihYr2qUntfszDqXRVimfwmiJ1Rysvn3rT6w4WGue4k1lsaItUXl/XHFnwbdibYXGD8/FOrFeNAbrVHkuJlZjsJb8ZG2NVnrnifTu81G+F+vCuw5DfnH89DRfrMbz6M2ucltLrMZLM0t6MYoVY3UlLvRp/jRaDqXRuuZ3hzhaYl02jaMXcL3aHfmjAbHEEkssscQSSyyHUrHEEksssXzGzgcSfXpTrB9NLB+i9onz3ifObzOXw3EV69afZRDrZ/7gB/OP+SkZuz9dz+5PXL/709/LT/YBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPdXyNW8w51ZgAAAAASUVORK5CYII=</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\25495229280\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJSSURBVHgB7d1HcuMwEEBRKBBglu9/WUc6tQBZmhze2832V08XGEwl/kwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALDbH45dTl+g9MM45WeJprkcljV/kGo47Q/jlKNEUO6WMdclwha/IBG2uFg3bPELbPEb2OJifSVHYon1m2Plr3X71CZWdEMtsbrUJlaU/mJiiSWWWA6l1SpiiSWWWGKJ9UOJJZZDqUPpNHaNWGJN+c1Y5vTkLJZYx/LcZj671dmfJRBrmtOzJdzpnKfzBBZ8n56V8O9DfidWvGe+bpNWHSyxNv2nHXWoDZZY9SU11wdLrE3/YcUvcbDEqo7WKT/ahcESK+rfVvwYzhFitUarz7mkJ7scOZTG0ZqnrjJYYgXrFmmIgyVWRUlP+hIHS6yKMW3CYFnwrdHaHHMgVnO0Sg7Eao/W8fpYYi1iXf/fcCfWDQt+Eevqo0O8ihYr2qUntfszDqXRVimfwmiJ1Rysvn3rT6w4WGue4k1lsaItUXl/XHFnwbdibYXGD8/FOrFeNAbrVHkuJlZjsJb8ZG2NVnrnifTu81G+F+vCuw5DfnH89DRfrMbz6M2ucltLrMZLM0t6MYoVY3UlLvRp/jRaDqXRuuZ3hzhaYl02jaMXcL3aHfmjAbHEEkssscQSSyyHUrHEEksssXzGzgcSfXpTrB9NLB+i9onz3ifObzOXw3EV69afZRDrZ/7gB/OP+SkZuz9dz+5PXL/709/LT/YBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPdXyNW8w51ZgAAAAASUVORK5CYII=</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-</SecondaryTileAssets>
-```
+>[!NOTE]
+>The device restrictions in Microsoft Intune include [other Start settings](https://docs.microsoft.com/intune/device-restrictions-windows-10#start) that you can also configure in your profile.
 
 ### Using a provisioning package
 
-<span id="escape" />
-#### Prepare the Start layout and Edge assets XML files
+#### <a href="" id="escape"></a>Prepare the Start layout and Edge assets XML files
 
 The **export-StartLayout** and **export-StartLayoutEdgeAssets** cmdlets produce XML files. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout and Edge assets sections to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout and Edge assets sections to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters. 
 
@@ -203,7 +121,7 @@ The **export-StartLayout** and **export-StartLayoutEdgeAssets** cmdlets produce 
 
 3. During the procedure to create a provisioning package, you will copy the text with the escape characters and paste it in the customizations.xml file for your project. 
 
-#### <a href="" id="bkmk-domaingpodeployment"></a>Create a provisioning package that contains a customized Start layout
+#### Create a provisioning package that contains a customized Start layout
 
 
 Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](provisioning-packages/provisioning-install-icd.md)
@@ -211,7 +129,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 >[!IMPORTANT]
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-1.  Open Windows Configuration Designer (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+1. Open Windows Configuration Designer (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
 
 2. Choose **Advanced provisioning**.
 
@@ -232,56 +150,56 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 9. Enter **assets.xml**. This value creates a placeholder in the customizations.xml file that you will replace with the contents of the assets.xml file in a later step.
 
-7. Save your project and close Windows Configuration Designer.
+10. Save your project and close Windows Configuration Designer.
 
-7. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*) 
+11. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*) 
 
-7. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
+12. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
 
-    ![Customizations file with the placeholder text to replace highlighted](images/customization-start-edge.png)
+     ![Customizations file with the placeholder text to replace highlighted](images/customization-start-edge.png)
 
-7. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
+13. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
 
-8. Replace **assets.xml** with the text from the assets.xml file, [with markup characters replaced with escape characters](#escape).
+14. Replace **assets.xml** with the text from the assets.xml file, [with markup characters replaced with escape characters](#escape).
 
-8. Save and close the customizations.xml file.
+15. Save and close the customizations.xml file.
 
-8. Open Windows Configuration Designer and open your project.
+16. Open Windows Configuration Designer and open your project.
 
-8.  On the **File** menu, select **Save.**
+17. On the **File** menu, select **Save.**
 
-9.  On the **Export** menu, select **Provisioning package**.
+18. On the **Export** menu, select **Provisioning package**.
 
-10. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
+19. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
 
-11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
+20. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
 
     -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
 
     -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
 
-12. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
+21. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
 
     Optionally, you can click **Browse** to change the default output location.
 
-13. Click **Next**.
+22. Click **Next**.
 
-14. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
+23. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
 
     If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
 
-15. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
+24. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
 
     If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
 
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
 
-16. Copy the provisioning package to the target device.
+25. Copy the provisioning package to the target device.
 
-17. Double-click the ppkg file and allow it to install.
+26. Double-click the ppkg file and allow it to install.
 
- ## Related topics
+    ## Related topics
  
 - [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 - [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)

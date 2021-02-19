@@ -4,11 +4,13 @@ description: Provides guidance on ways to customize the OS privacy settings, as 
 keywords: Windows 10 deployment, recommendations, privacy settings, school
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.localizationpriority: high
-author: CelesteDG
-ms.author: celested
+ms.localizationpriority: medium
+author: dansimp
+ms.author: dansimp
 ms.date: 10/13/2017
-ms.prod: W10
+ms.reviewer: 
+manager: dansimp
+ms.prod: w10
 ---
 
 # Deployment recommendations for school IT administrators
@@ -19,7 +21,7 @@ ms.prod: W10
 
 Your privacy is important to us, so we want to provide you with ways to customize the OS privacy settings, as well as some of the apps, so that you can choose what information is shared with Microsoft. To learn more about Microsoft’s commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305). The following sections provide some best practices and specific privacy settings we’d like you to be aware of. Also see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md) for more information about ways to customize the OS diagnostic data, consumer experiences, Cortana, and search.
 
-We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store for Education, and use devices running Windows 10 S, will be able to configure the device at no additional charge to Windows 10 Pro Education. To learn more about the steps to configure this, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md).
+We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store for Education, and use devices running Windows 10 S, will be able to configure the device at no additional charge to Windows 10 Pro Education. To learn more about the steps to configure this, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md).
 
 ## Deployment best practices
 
@@ -27,7 +29,7 @@ Keep these best practices in mind when deploying any edition of Windows 10 in sc
 * A Microsoft account is only intended for consumer services. Enterprises and educational institutions should use enterprise versions where possible, such as Skype for Business, OneDrive for Business, and so on. For schools, consider using mobile device management (MDM) or Group Policy to block students from adding a Microsoft account as a secondary account.
 * If schools allow the use of personal accounts by their students to access personal services, schools should be aware that these accounts belong to individuals, not the school.
 * IT administrators, school officials, and teachers should also consider ratings when picking apps from the Microsoft Store.
-* If you have students or school personnel who rely on assistive technology apps that are not available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md) for more info.
+* If you have students or school personnel who rely on assistive technology apps that are not available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info.
 
 ## Windows 10 Contacts privacy settings
 
@@ -89,19 +91,19 @@ If the school allows the use of personal or Microsoft account in addition to org
 Skype uses the user’s contact details to deliver important information about the account and it also lets friends find each other on Skype.
 
 To manage and edit your profile in the Skype UWP app, follow these steps:
-1.	In the Skype UWP app, select the user profile icon ![Skype profile icon](images/skype_uwp_userprofile_icon.png)  to go to the user’s profile page.
-2.	In the account page, select **Manage account** for the Skype account that you want to change. This will take you to the online Skype portal.
-3.	In the online Skype portal, scroll down to the **Account details** section. In **Settings and preferences**, click **Edit profile**.
+1. In the Skype UWP app, select the user profile icon ![Skype profile icon](images/skype_uwp_userprofile_icon.png)  to go to the user’s profile page.
+2. In the account page, select **Manage account** for the Skype account that you want to change. This will take you to the online Skype portal.
+3. In the online Skype portal, scroll down to the **Account details** section. In **Settings and preferences**, click **Edit profile**.
 
-    The profile page includes these sections:
+   The profile page includes these sections:
 
-        * Personal information
-        * Contact details
-        * Profile settings
+       * Personal information
+       * Contact details
+       * Profile settings
 
 4. Review the information in each section and click **Edit profile** in either or both the **Personal information** and **Contact details** sections to change the information being shared. You can also remove the checks in the **Profile settings** section to change settings on discoverability, notifications, and staying in touch.
-5.	If you do not wish the name to be included, edit the fields and replace the fields with **XXX**.
-6.	To change the profile picture, go to the Skype app and click on the current profile picture or avatar. The **Manage Profile Picture** window pops up.
+5. If you do not wish the name to be included, edit the fields and replace the fields with **XXX**.
+6. To change the profile picture, go to the Skype app and click on the current profile picture or avatar. The **Manage Profile Picture** window pops up.
 
    ![Skype profile icon](images/skype_uwp_manageprofilepic.png)
 
@@ -121,10 +123,10 @@ If you want to delete either (or both) the Skype and the Xbox accounts, here’s
 To delete a Skype account, you can follow the instructions here: [How do I close my Skype account?](https://go.microsoft.com/fwlink/?LinkId=816515)
 
 If you need help deleting the account, you can contact Skype customer service by going to the [Skype support request page](https://go.microsoft.com/fwlink/?LinkId=816519). You may need to sign in and specify a Skype account. Once you’ve signed in, you can:
-1.	Select a help topic (**Account and Password**)
-2.	Select a related problem (**Deleting an account**)
-3.	Click **Next**.
-4.	Select a contact method to get answers to your questions.
+1. Select a help topic (**Account and Password**)
+2. Select a related problem (**Deleting an account**)
+3. Click **Next**.
+4. Select a contact method to get answers to your questions.
 
 
 #### Xbox

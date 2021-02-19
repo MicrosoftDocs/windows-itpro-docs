@@ -4,10 +4,13 @@ description: This section describes the DMClient setting that you can configure 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
-ms.date: 09/06/2017
+ms.author: dansimp
+ms.topic: article
+ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # DMClient (Windows Configuration Designer reference)
@@ -18,7 +21,7 @@ Use to specify enterprise-specific mobile device management configuration settin
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| UpdateManagementServiceAddress | X  | X | X | X | X |
+| UpdateManagementServiceAddress | X  | X | X |  | X |
 
 For the **UpdateManagementServiceAddress** setting, enter a list of servers. The first server in the semi-colon delimited list is the server that will be used to instantiate MDM sessions. 
 

@@ -1,19 +1,25 @@
 ---
 title: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications (Windows 10)
 description: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 03/08/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 
 # Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
 
 **Applies to**
--   Windows 10, version 1607
+-   Windows 7 SP1
+-   Windows 10
+-   Windows Server 2012 R2
+-   Windows Server 2016
 
 You can run a locally installed application in a virtual environment, alongside applications that have been virtualized by using Microsoft Application Virtualization (App-V). You might want to do this if you:
 
@@ -38,9 +44,10 @@ Each method accomplishes essentially the same task, but some methods may be bett
 
 To add a locally installed application to a package or to a connection group’s virtual environment, you add a subkey to the `RunVirtual` registry key in the Registry Editor, as described in the following sections.
 
-There is no Group Policy setting available to manage this registry key, so you have to use System Center Configuration Manager or another electronic software distribution (ESD) system, or manually edit the registry.
+There is no Group Policy setting available to manage this registry key, so you have to use Microsoft Endpoint Manager or another electronic software distribution (ESD) system, or manually edit the registry.
 
 Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages globally or to the user.
+
 
 ### Steps to create the subkey
 
@@ -79,7 +86,7 @@ Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages glo
     <li><p>If you want to include multiple packages in the virtual environment, you must include them in an enabled connection group.</p></li>
     <li><p>Create only one subkey for one of the packages in the connection group. If, for example, you have one package that is published globally, and another package that is published to the user, you create a subkey for either of these packages, but not both. Although you create a subkey for only one of the packages, all of the packages in the connection group, plus the local application, will be available in the virtual environment.</p></li>
     <li><p>The key under which you create the subkey must match the publishing method you used for the package.</p>
-    <p>For example, if you published the package to the user, you must create the subkey under <code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual</code>.</p></li>
+    <p>For example, if you published the package to the user, you must create the subkey under <code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual</code>. Do not add a key for the same application under both hives.</p></li>
     </ul></td>
     </tr>
     </tbody>
@@ -148,10 +155,10 @@ If you don’t know the exact name of your package, use the command line <strong
 
 This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
 
-## Have a suggestion for App-V?
 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -1,20 +1,27 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Reference about the command-line options for the IExpress Wizard.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: aa16d738-1067-403c-88b3-bada12cf9752
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: IExpress Wizard command-line options (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
 ---
 
+# IExpress Wizard command-line options
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 - Windows Server 2008 R2 with SP1
 
-# IExpress Wizard command-line options
 Use command-line options with the IExpress Wizard (IExpress.exe) to control your Internet Explorer custom browser package extraction process. 
 
 These command-line options work with IExpress:<br>

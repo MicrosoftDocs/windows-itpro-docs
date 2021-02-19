@@ -1,12 +1,17 @@
 ---
 title: USMT Resources (Windows 10)
-description: USMT Resources
+description: Learn about User State Migration Tool (USMT) online resources, including Microsoft Visual Studio and forums.
 ms.assetid: a0b266c7-4bcb-49f1-b63c-48c6ace86b43
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # USMT Resources

@@ -1,26 +1,31 @@
 ---
 title: Activate by Proxy an Active Directory Forest (Windows 10)
-description: Activate by Proxy an Active Directory Forest
+description: Learn how to use the Volume Activation Management Tool (VAMT) Active Directory-Based Activation (ADBA) function to activate by proxy an Active Directory (AD) forest.
 ms.assetid: 6475fc87-a6f7-4fa8-b0aa-de19f2dea7e5
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Activate by Proxy an Active Directory Forest
 
 You can use the Volume Activation Management Tool (VAMT) Active Directory-Based Activation (ADBA) function to activate by proxy an Active Directory (AD) forest for an isolated workgroup that does not have Internet access. ADBA enables certain volume products to inherit activation from the domain.
 
-**Important**  
-ADBA is only applicable to Generic Volume License Keys (GVLKs) and KMS Host key (CSVLK). To use ADBA, one or more KMS Host keys (CSVLK) must be installed on the AD forest, and client keys (GVLKs) must be installed on the client products.
+> [!IMPORTANT]
+> ADBA is only applicable to *Generic Volume License Keys (GVLKs)* and *KMS Host key (CSVLK)*. To use ADBA, one or more KMS Host keys (CSVLK) must be installed on the AD forest, and client keys (GVLKs) must be installed on the client products.
 
 In a typical proxy-activation scenario, the VAMT host computer distributes a product key to one or more client computers and collects the installation ID (IID) from each computer. The VAMT host computer sends the IIDs to Microsoft on behalf of the client computers and obtains the corresponding Confirmation IDs (CIDs). The VAMT host computer then installs the CIDs on the client computer to complete the activation. If you use this activation method, only the VAMT host computer needs to have Internet access.
 
-**Note**  
-For workgroups that are isolated from any larger network, you can still perform an AD forest activation. This requires installing a second instance of VAMT on a computer in the isolated group and using removable media to transfer activation data between that computer and another VAMT host computer that has Internet access. You can also activate by proxy a KMS Host key (CSVLK) in the core network if you do not want the host computer to connect to Microsoft over the Internet.
+> [!NOTE]
+> For workgroups that are isolated from any larger network, you can still perform an AD forest activation. This requires installing a second instance of VAMT on a computer in the isolated group and using removable media to transfer activation data between that computer and another VAMT host computer that has Internet access. You can also activate by proxy a KMS Host key (CSVLK) in the core network if you do not want the host computer to connect to Microsoft over the Internet.
 
 ## Requirements
 

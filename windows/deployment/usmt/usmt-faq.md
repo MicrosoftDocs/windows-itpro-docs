@@ -1,12 +1,17 @@
 ---
 title: Frequently Asked Questions (Windows 10)
-description: Frequently Asked Questions
+description: Learn about frequently asked questions and recommended solutions for migrations using User State Migration Tool (USMT) 10.0.
 ms.assetid: 813c13a7-6818-4e6e-9284-7ee49493241b
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Frequently Asked Questions

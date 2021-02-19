@@ -1,41 +1,46 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Info about the features included in Enterprise Mode with Internet Explorer 11.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Enterprise Mode and the Enterprise Mode Site List (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
-ms.date: 12/04/2017
+ms.date: 10/25/2018
 ---
 
 
 # Enterprise Mode and the Enterprise Mode Site List
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
--   Windows 10
--   Windows 8.1
--   Windows 7
--   Windows Server 2012 R2
--   Windows Server 2008 R2 with Service Pack 1 (SP1)
+- Windows 10
+- Windows 8.1
+- Windows 7
+- Windows Server 2012 R2
+- Windows Server 2008 R2 with Service Pack 1 (SP1)
 
 Internet Explorer and Microsoft Edge can work together to support your legacy web apps, while still defaulting to the higher bar for security and modern experiences enabled by Microsoft Edge. Working with multiple browsers can be difficult, particularly if you have a substantial number of internal sites. To help manage this dual-browser experience, we are introducing a new web tool specifically targeted towards larger organizations: the [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal).
 
 ## Available dual-browser experiences
-Based on the size of your legacy web app dependency, determined by the data collected with [Windows Upgrade Analytics](https://blogs.windows.com/windowsexperience/2016/09/26/new-windows-10-and-office-365-features-for-the-secure-productive-enterprise/), there are several options from which you can choose to configure your enterprise browsing environment:
+If you have specific websites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the websites automatically open using Internet Explorer 11. Additionally, if you know that your intranet sites aren't going to work correctly with Microsoft Edge, you can set all intranet sites to open using IE11 automatically. 
 
-- Use Microsoft Edge as your primary browser.
+Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
 
-- Use Microsoft Edge as your primary browser and use Enterprise Mode to open sites in Internet Explorer 11 (IE11) that use IE proprietary technologies.
+> [!TIP]
+> If you are running an earlier version of Internet Explorer, we recommend upgrading to IE11, so that any legacy apps continue to work correctly.
 
-- Use Microsoft Edge as your primary browser and open all intranet sites in IE11.
+For Windows 10 and Windows 10 Mobile, Microsoft Edge is the default browser experience. However, Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or included on your Enterprise Mode Site List. 
 
-- Use IE11 as your primary browser and use Enterprise Mode to open sites in Microsoft Edge that use modern web technologies.
-
-For more info about when to use which option, and which option is best for you, see the [Continuing to make it easier for Enterprise customers to upgrade to Internet Explorer 11 — and Windows 10](https://blogs.windows.com/msedgedev/2015/11/23/windows-10-1511-enterprise-improvements) blog.
 
 ## What is Enterprise Mode?
 Enterprise Mode, a compatibility mode that runs on Internet Explorer 11 on Windows 10, Windows 8.1, and Windows 7 devices, lets websites render using a modified browser configuration that’s designed to emulate either Windows Internet Explorer 7 or Windows Internet Explorer 8. Running in this mode helps to avoid many of the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.
@@ -52,36 +57,39 @@ Download the [Enterprise Mode Site List Manager (schema v.2)](https://go.microso
 
 - **Centralized control.** You can specify the websites or web apps to interpret using Enterprise Mode, through an XML file on a website or stored locally. Domains and paths within those domains can be treated differently, allowing granular control. Use Group Policy to let users turn Enterprise Mode on or off from the Tools menu and to decide whether the Enterprise browser profile appears on the Emulation tab of the F12 developer tools.
 
-    >[!Important]
-    >All centrally-made decisions override any locally-made choices. 
+    > [!Important]
+    > All centrally-made decisions override any locally-made choices. 
 
 - **Integrated browsing.** When Enterprise Mode is set up, users can browse the web normally, letting the browser change modes automatically to accommodate Enterprise Mode sites.
 
 - **Data gathering.** You can configure Enterprise Mode to collect local override data, posting back to a named server. This lets you "crowd source" compatibility testing from key users; gathering their findings to add to your central site list.
 
-## Enterprise Mode and the Enterprise Mode Site List XML file
+## Enterprise Mode and the Enterprise Mode Site List
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+ XML file
 The Enterprise Mode Site List is an XML document that specifies a list of sites, their compat mode, and their intended browser. Using [Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853), you can automatically start a webpage using a specific browser. In the case of IE11, the webpage can also be launched in a specific compat mode, so it always renders correctly. Your employees can easily view this site list by typing _about:compat_ in either Microsoft Edge or IE11.
 
 Starting with Windows 10, version 1511 (also known as the Anniversary Update), you can also [restrict IE11 to only the legacy web apps that need it](https://blogs.windows.com/msedgedev/2016/05/19/edge14-ie11-better-together/), automatically sending sites not included in the Enterprise Mode Site List to Microsoft Edge.
 
 ### Site list xml file
-This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypflug/9e9961de771d2fcbd86b#file-emie-v2-schema-xml). There are equivalent Enterprise Mode Site List policies for both [Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/deploy/emie-to-improve-compatibility) and [Internet Explorer 11](turn-on-enterprise-mode-and-use-a-site-list.md). The Microsoft Edge list is used to determine which sites should open in IE11; while the IE11 list is used to determine the compat mode for a site, and which sites should open in Microsoft Edge. We recommend using one list for both browsers, where each policy points to the same XML file location.
+This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypflug/9e9961de771d2fcbd86b#file-emie-v2-schema-xml). There are equivalent Enterprise Mode Site List policies for both [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility) and [Internet Explorer 11](turn-on-enterprise-mode-and-use-a-site-list.md). The Microsoft Edge list is used to determine which sites should open in IE11; while the IE11 list is used to determine the compat mode for a site, and which sites should open in Microsoft Edge. We recommend using one list for both browsers, where each policy points to the same XML file location.
 
 ```xml
 <site-list version="205">
-	<!--- File creation header --->
+	<!-- File creation header -->
 	<created-by>
 		<tool>EnterpriseSiteListManager</tool>
 		<version>10586</version>
 		<date-created>20150728.135021</date-created>
 	</created-by>
-  	<!--- Begin Site List ---> 
+  	<!-- Begin Site List --> 
 	<site url="www.cpandl.com">
 		<compat-mode>IE8Enterprise</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
 	<site url="www.woodgrovebank.com">
-		<compat-mode>default</compat-mode>
+		<compat-mode>Default</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
 	<site url="adatum.com">
@@ -90,8 +98,8 @@ This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypf
 	</site>
 	<site url="relecloud.com"/>  
 	<!-- default for self-closing XML tag is 
-		<compat-mode>default</compat-mode>
-		<open-in>none</open-in>
+		<compat-mode>Default</compat-mode>
+		<open-in>None</open-in>
 	-->
 	<site url="relecloud.com/products">  
 		<compat-mode>IE8Enterprise"</compat-mode>
@@ -119,11 +127,11 @@ There are 2 versions of this tool, both supported on Windows 7, Windows 8.1, and
 
 - [Enterprise Mode Site List Manager (schema v.1)](https://www.microsoft.com/download/details.aspx?id=42501). This is an older version of the schema that you must use if you want to create and update your Enterprise Mode Site List for devices running the v.1 version of the schema.
 
-	We strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).
+    We strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).
 
 - [Enterprise Mode Site List Manager (schema v.2)](https://www.microsoft.com/download/details.aspx?id=49974). The updated version of the schema, including new functionality. You can use this version of the schema to create and update your Enterprise Mode Site List for devices running the v.2 version of the schema.
 
-	If you open a v.1 version of your Enterprise Mode Site List using this version, it will update the schema to v.2, automatically. For more info, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
+    If you open a v.1 version of your Enterprise Mode Site List using this version, it will update the schema to v.2, automatically. For more info, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
 
 If your list is too large to add individual sites, or if you have more than one person managing the site list, we recommend using the Enterprise Site List Portal.
 
@@ -162,6 +170,6 @@ Because the tool is open-source, the source code is readily available for examin
 
 - [Web Application Compatibility Lab Kit](https://technet.microsoft.com/microsoft-edge/mt612809.aspx)
 
-- [Microsoft Services Support](https://www.microsoft.com/en-us/microsoftservices/support.aspx)
+- [Microsoft Services Support](https://www.microsoft.com/microsoftservices/support.aspx)
 
 - [Find a Microsoft partner on Pinpoint](https://partnercenter.microsoft.com/pcv/search)

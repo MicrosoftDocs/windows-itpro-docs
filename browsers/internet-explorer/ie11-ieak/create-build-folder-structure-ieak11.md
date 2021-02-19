@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: How to create your folder structure on the computer that you’ll use to build your custom browser package.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: e0d05a4c-099f-4f79-a069-4aa1c28a1080
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Create the build computer folder structure using IEAK 11  (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Create the build computer folder structure using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Create your build environment on the computer that you’ll use to build your custom browser package. Your license agreement determines your folder structure and which version of Internet Explorer Administration Kit 11 (IEAK 11) you’ll use: **Internal** or **External**.
 
 |Name             |Version               |Description                                              |

@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Automatic Configuration page in the IEAK 11 Customization Wizard to add URLs to auto-configure IE.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: de5b1dbf-6e4d-4f86-ae08-932f14e606b0
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use the Automatic Configuration page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Automatic Configuration page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Automatic Configuration** page of the Internet Explorer Administration Kit (IEAK 11) Customization Wizard lets you provide URLs to the files that’ll automatically configure Internet Explorer 11 for a group of employees or devices.
 
 **Note**<br>
@@ -42,7 +49,7 @@ You can use the Domain Name System (DNS) and the Dynamic Host Configuration Prot
     -   Type the location to your automatic proxy script file.
 
         **Note**<br>
-        If you specify URLs for both auto-config and auto-proxy, the auto-proxy URL will be incorporated into the .ins file. The correct form for the URL is `http://share/test.ins`.
+        If you specify URLs for both auto-config and auto-proxy, the auto-proxy URL will be incorporated into the .ins file. The correct form for the URL is `https://share/test.ins`.
 
 3.  Click **Next** to go to the [Proxy Settings](proxy-settings-ieak11-wizard.md) page or **Back** to go to the [Connection Settings](connection-settings-ieak11-wizard.md) page.
 

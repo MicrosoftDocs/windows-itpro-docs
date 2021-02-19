@@ -1,11 +1,15 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the topics in this section to learn about how to use the Enterprise Mode Site List Manager.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 12/04/2017
@@ -13,6 +17,9 @@ ms.date: 12/04/2017
 
 
 # Use the Enterprise Mode Site List Manager
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 
@@ -22,7 +29,7 @@ ms.date: 12/04/2017
 -   Windows Server 2012 R2
 -   Windows Server 2008 R2 with Service Pack 1 (SP1)
 
-Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, letting websites render using a modified browser configuration that’s designed to emulate either Windows Internet Explorer 8 or Windows Internet Explorer 7, avoiding the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.
+Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, letting websites render using a modified browser configuration that's designed to emulate either Windows Internet Explorer 8 or Windows Internet Explorer 7, avoiding the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.
 
 You can use IE11 and the Enterprise Mode Site List Manager to add individual website domains and domain paths and to specify whether the site renders using Enterprise Mode or the default mode.
 
@@ -45,12 +52,14 @@ The following topics give you more information about the things that you can do 
 |[Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.1)](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md) |How to add several websites to your site list at the same time, using a text or XML file and the WEnterprise Mode Site List Manager (schema v.1). |
 |[Edit the Enterprise Mode site list using the Enterprise Mode Site List Manager](edit-the-enterprise-mode-site-list-using-the-enterprise-mode-site-list-manager.md) |How to edit the compatibility mode for specific websites.<p>This topic applies to both versions of the Enterprise Mode Site List Manager. |
 |[Fix validation problems using the Enterprise Mode Site List Manager](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md) |How to fix common site list validation errors.<p>This topic applies to both versions of the Enterprise Mode Site List Manager. |
+|[Review neutral sites for Internet Explorer mode using the Enterprise Mode Site List Manager](review-neutral-sites-with-site-list-manager.md) |How to flag sites listed as neutral, to ensure that they are intentional and not a result of schema conversion. This topic applies to the Enterprise Mode Site List Manager version 11.0 or later. |
 |[Search your Enterprise Mode site list in the Enterprise Mode Site List Manager](search-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md) |How to look to see if a site is already in your global Enterprise Mode site list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager. |
 |[Save your site list to XML in the Enterprise Mode Site List Manager](save-your-site-list-to-xml-in-the-enterprise-mode-site-list-manager.md) |How to save a site list as XML, so you can deploy and use it with your managed systems.<p>This topic applies to both versions of the Enterprise Mode Site List Manager. |
 |[Export your Enterprise Mode site list from the Enterprise Mode Site List Manager](export-your-enterprise-mode-site-list-from-the-enterprise-mode-site-list-manager.md) |How to export your site list so you can transfer your data and contents to someone else.<p>This topic applies to both versions of the Enterprise Mode Site List Manager. |
 |[Import your Enterprise Mode site list to the Enterprise Mode Site List Manager](import-into-the-enterprise-mode-site-list-manager.md) |How to import your site list to replace a corrupted or out-of-date list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager. |
 |[Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager](delete-sites-from-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md) |How to delete a website from your site list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager. |
 |[Remove all sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager](remove-all-sites-from-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md) |How to delete all of the websites in a site list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager. |
+| [Review neutral sites for Internet Explorer mode using the Enterprise Mode Site List Manager](review-neutral-sites-with-site-list-manager.md)|How to flag sites listed as neutral, to ensure that they are intentional and not a result of schema conversion.<p> This topic applies to the latest version of the Enterprise Mode Site List Manager.
 
 ## Related topics
 

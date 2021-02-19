@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phdevicemgmt.disconnecting\_from\_the\_management\_infrastructure\_\_unenrollment\_'
 - 'p\_phDeviceMgmt.disconnecting\_from\_mdm\_unenrollment'
 ms.assetid: 33B2B248-631B-451F-B534-5DA095C4C8E8
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -42,7 +44,8 @@ In Windows, after the user confirms the account deletion command and before the 
 
 This action utilizes the OMA DM generic alert 1226 function to send a user an MDM unenrollment user alert to the MDM server after the device accepts the user unenrollment request, but before it deletes any enterprise data. The server should set the expectation that unenrollment may succeed or fail, and the server can check whether the device is unenrolled by either checking whether the device calls back at scheduled time or by sending a push notification to the device to see whether it responds back. If the server plans to send a push notification, it should allow for some delay to give the device the time to complete the unenrollment work.
 
-> **Note**  The user unenrollment is an OMA DM standard. For more information about the 1226 generic alert, refer to the OMA Device Management Protocol specification (OMA-TS-DM\_Protocol-V1\_2\_1-20080617-A), available from the [OMA website](http://go.microsoft.com/fwlink/p/?LinkId=267526).
+> [!NOTE]
+> The user unenrollment is an OMA DM standard. For more information about the 1226 generic alert, refer to the OMA Device Management Protocol specification (OMA-TS-DM\_Protocol-V1\_2\_1-20080617-A), available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/).
 
  
 The vendor uses the Type attribute to specify what type of generic alert it is. For device initiated MDM unenrollment, the alert type is **com.microsoft:mdm.unenrollment.userrequest**.
@@ -71,8 +74,8 @@ The following sample shows an OMA DM first package that contains a generic alert
         <Data>1226</Data> <!-- generic alert -->
         <Item>
           <Meta>
-             <Type xmlns=”syncml:metinfo”> com.microsoft:mdm.unenrollment.userrequest</Type>
-          <Format xmlns= “syncml:metinfo”>int</Format>
+             <Type xmlns="syncml:metinfo"> com.microsoft:mdm.unenrollment.userrequest</Type>
+          <Format xmlns= "syncml:metinfo">int</Format>
            </Meta>
         <Data>1</Data>
          </Item>
@@ -103,7 +106,7 @@ After the previous package is sent, the unenrollment process begins.
 
 When the server initiates disconnection, all undergoing sessions for the enrollment ID are aborted immediately to avoid deadlocks. The server will not get a response for the unenrollment, instead a generic alert notification is sent with messageid=1.
 
-``` syntax
+```xml
 <Alert>
       <CmdID>4</CmdID>
       <Data>1226</Data>
@@ -150,7 +153,6 @@ The server requests an enterprise management disconnection request by issuing an
 When the disconnection is completed, the user is notified that the device has been disconnected from enterprise management.
 
  
-
 
 
 

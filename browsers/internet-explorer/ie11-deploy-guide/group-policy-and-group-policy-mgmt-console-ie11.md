@@ -1,11 +1,15 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Overview about Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: ae3d227d-3da7-46b8-8a61-c71bfeae0c63
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -13,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 A Microsoft Management Console (MMC)-based tool that uses scriptable interfaces to manage Group Policy. The 32-bit and 64-bit versions are included with Windows Server R2 with Service Pack 1 (SP1) and Windows Server 2012 R2.
 
 ## Why use the GPMC?

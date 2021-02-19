@@ -1,12 +1,14 @@
 ---
 title: PXLOGICAL configuration service provider
-description: PXLOGICAL configuration service provider
+description: The PXLOGICAL configuration service provider is used to add, remove, or modify WAP logical and physical proxies by using WAP or the standard Windows techniques.
 ms.assetid: b5fc84d4-aa32-4edd-95f1-a6a9c0feb459
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 

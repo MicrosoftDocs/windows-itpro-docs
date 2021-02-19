@@ -1,12 +1,17 @@
 ---
 title: Log Files (Windows 10)
-description: Log Files
+description: Learn how to use User State Migration Tool (USMT) 10.0 logs to monitor your migration and to troubleshoot errors and failed migrations.
 ms.assetid: 28185ebd-630a-4bbd-94f4-8c48aad05649
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Log Files
@@ -44,22 +49,22 @@ The following table describes each command-line option related to logs, and it p
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>/l</strong><em>[Path\]FileName</em></p></td>
+<td align="left"><p><strong>/l</strong><em>[Path]FileName</em></p></td>
 <td align="left"><p>Scanstate.log or LoadState.log</p></td>
 <td align="left"><p>Specifies the path and file name of the ScanState.log or LoadState log.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>/progress</strong><em>[Path\]FileName</em></p></td>
+<td align="left"><p><strong>/progress</strong><em>[Path]FileName</em></p></td>
 <td align="left"><p>Specifies the path and file name of the Progress log.</p></td>
 <td align="left"><p>Provides information about the status of the migration, by percentage complete.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/v</strong><em>[VerbosityLevel]</em></p></td>
 <td align="left"><p>Not applicable</p></td>
-<td align="left"><p>See the &quot;Monitoring Options&quot; section in [ScanState Syntax](usmt-scanstate-syntax.md).</p></td>
+<td align="left"><p>See the &quot;Monitoring Options&quot; section in <a href="usmt-scanstate-syntax.md" data-raw-source="[ScanState Syntax](usmt-scanstate-syntax.md)">ScanState Syntax</a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>/listfiles</strong><em>[Path\]FileName</em></p></td>
+<td align="left"><p><strong>/listfiles</strong><em>[Path]FileName</em></p></td>
 <td align="left"><p>Specifies the path and file name of the Listfiles log.</p></td>
 <td align="left"><p>Provides a list of the files that were migrated.</p></td>
 </tr>
@@ -71,12 +76,12 @@ The following table describes each command-line option related to logs, and it p
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 You cannot store any of the log files in *StorePath*. If you do, the log will be overwritten when USMT is run.
 
- 
+ 
 
 ## <a href="" id="bkmk-scanloadstatelogs"></a>ScanState and LoadState Logs
 
@@ -217,7 +222,7 @@ The remaining fields are key/value pairs as indicated in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-listfileslog"></a>List Files Log
 
@@ -246,9 +251,9 @@ The following examples describe common scenarios in which you can use the diagno
 
 **Why is this file not migrating when I authored an "include" rule for it?**
 
-Let’s imagine that we have the following directory structure and that we want the “data” directory to be included in the migration along with the “New Text Document.txt” file in the “New Folder.” The directory of **C:\\data** contains:
+Let's imagine that we have the following directory structure and that we want the "data" directory to be included in the migration along with the "New Text Document.txt" file in the "New Folder." The directory of **C:\\data** contains:
 
-``` syntax
+```
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM    <DIR>          New Folder
@@ -259,7 +264,7 @@ Let’s imagine that we have the following directory structure and that we want 
 
 The directory of **C:\\data\\New Folder** contains:
 
-``` syntax
+```
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM                 0 New Text Document.txt
@@ -268,7 +273,7 @@ The directory of **C:\\data\\New Folder** contains:
 
 To migrate these files you author the following migration XML:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 
@@ -288,9 +293,9 @@ To migrate these files you author the following migration XML:
 </migration>
 ```
 
-However, upon testing the migration you notice that the “New Text Document.txt” file isn’t included in the migration. To troubleshoot this failure, the migration can be repeated with the environment variable MIG\_ENABLE\_DIAG set such that the diagnostic log is generated. Upon searching the diagnostic log for the component “DATA1”, the following XML section is discovered:
+However, upon testing the migration you notice that the "New Text Document.txt" file isn't included in the migration. To troubleshoot this failure, the migration can be repeated with the environment variable MIG\_ENABLE\_DIAG set such that the diagnostic log is generated. Upon searching the diagnostic log for the component "DATA1", the following XML section is discovered:
 
-``` syntax
+``` xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">
@@ -307,17 +312,17 @@ However, upon testing the migration you notice that the “New Text Document.txt
 </Perform>
 ```
 
-Analysis of this XML section reveals the migunit that was created when the migration rule was processed. The &lt;Perform&gt; section details the actual files that were scheduled for gathering and the result of the gathering operation. The “New Text Document.txt” file doesn’t appear in this section, which confirms that the migration rule was not correctly authored.
+Analysis of this XML section reveals the migunit that was created when the migration rule was processed. The &lt;Perform&gt; section details the actual files that were scheduled for gathering and the result of the gathering operation. The "New Text Document.txt" file doesn't appear in this section, which confirms that the migration rule was not correctly authored.
 
 An analysis of the XML elements reference topic reveals that the &lt;pattern&gt; tag needs to be modified as follows:
 
-``` syntax
+``` xml
 <pattern type="File">c:\data\* [*]</pattern>
 ```
 
 When the migration is preformed again with the modified tag, the diagnostic log reveals the following:
 
-``` syntax
+``` xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">
@@ -340,9 +345,9 @@ This diagnostic log confirms that the modified &lt;pattern&gt; value enables the
 
 **Why is this file migrating when I authored an exclude rule excluding it?**
 
-In this scenario, you have the following directory structure and you want all files in the “data” directory to migrate, except for text files. The **C:\\Data** folder contains:
+In this scenario, you have the following directory structure and you want all files in the "data" directory to migrate, except for text files. The **C:\\Data** folder contains:
 
-``` syntax
+```
 Directory of C:\Data
 
 01/21/2009  10:08 PM    <DIR>          .
@@ -355,7 +360,7 @@ Directory of C:\Data
 
 The **C:\\Data\\New Folder\\** contains:
 
-``` syntax
+```
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM                 0 New Text Document.txt
@@ -364,7 +369,7 @@ The **C:\\Data\\New Folder\\** contains:
 
 You author the following migration XML:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 
@@ -390,9 +395,9 @@ You author the following migration XML:
 </component>
 ```
 
-However, upon testing the migration you notice that all the text files are still included in the migration. In order to troubleshoot this issue, the migration can be performed with the environment variable MIG\_ENABLE\_DIAG set so that the diagnostic log is generated. Upon searching the diagnostic log for the component “DATA1”, the following XML section is discovered:
+However, upon testing the migration you notice that all the text files are still included in the migration. In order to troubleshoot this issue, the migration can be performed with the environment variable MIG\_ENABLE\_DIAG set so that the diagnostic log is generated. Upon searching the diagnostic log for the component "DATA1", the following XML section is discovered:
 
-``` syntax
+``` xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">
@@ -418,7 +423,7 @@ However, upon testing the migration you notice that all the text files are still
 
 Upon reviewing the diagnostic log, you confirm that the files are still migrating, and that it is a problem with the authored migration XML rule. You author an update to the migration XML script as follows:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 
@@ -449,7 +454,7 @@ Upon reviewing the diagnostic log, you confirm that the files are still migratin
 
 Your revised migration XML script excludes the files from migrating, as confirmed in the diagnostic log:
 
-``` syntax
+``` xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">
@@ -479,9 +484,9 @@ Your revised migration XML script excludes the files from migrating, as confirme
 
 [LoadState Syntax](usmt-loadstate-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

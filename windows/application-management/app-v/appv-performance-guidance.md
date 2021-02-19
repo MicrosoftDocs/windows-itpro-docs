@@ -1,19 +1,25 @@
 ---
 title: Performance Guidance for Application Virtualization (Windows 10)
-description: Performance Guidance for Application Virtualization
-author: MaggiePucciEvans
+description: Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 
 # Performance Guidance for Application Virtualization
 
 **Applies to**
--   Windows 10, version 1607
+-   Windows 7 SP1
+-   Windows 10 
+-   Server 2012 R2
+-   Server 2016
 
 Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
 
@@ -25,7 +31,7 @@ You should read and understand the following information before reading this doc
 
 -   [Application Publishing and Client Interaction](appv-application-publishing-and-client-interaction.md)
 
--   [App-V Sequencing Guide](https://www.microsoft.com/en-us/download/details.aspx?id=27760)
+-   [App-V Sequencing Guide](https://www.microsoft.com/download/details.aspx?id=27760)
 
 **Note**  
 Some terms used in this document may have different meanings depending on external source and context. For more information about terms used in this document followed by an asterisk <strong>*</strong> review the [Application Virtualization Performance Guidance Terminology](#bkmk-terms1) section of this document.
@@ -83,7 +89,7 @@ Deployment Environment
 </tbody>
 </table>
 
- 
+ 
 
 Expected Configuration
 
@@ -104,7 +110,7 @@ Expected Configuration
 </tbody>
 </table>
 
- 
+ 
 
 IT Administration
 
@@ -121,7 +127,7 @@ IT Administration
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-us"></a>Usage Scenarios
 
@@ -141,14 +147,14 @@ As you review the two scenarios, keep in mind that these approach the extremes. 
 <tbody>
 <tr class="odd">
 <td align="left"><p>To provide the most optimal user experience, this approach leverages the capabilities of a UPM solution and requires additional image preparation and can incur some additional image management overhead.</p>
-<p>The following describes many performance improvements in stateful non-persistent deployments. For more information, see [Sequencing Steps to Optimize Packages for Publishing Performance](#sequencing-steps-to-optimize-packages-for-publishing-performance) later in this topic.</p></td>
+<p>The following describes many performance improvements in stateful non-persistent deployments. For more information, see <a href="#sequencing-steps-to-optimize-packages-for-publishing-performance" data-raw-source="[Sequencing Steps to Optimize Packages for Publishing Performance](#sequencing-steps-to-optimize-packages-for-publishing-performance)">Sequencing Steps to Optimize Packages for Publishing Performance</a> later in this topic.</p></td>
 <td align="left"><p>The general expectations of the previous scenario still apply here. However, keep in mind that VM images are typically stored in very costly arrays; a slight alteration has been made to the approach. Do not pre-configure user-targeted virtual application packages in the base image.</p>
-<p>The impact of this alteration is detailed in the [User Experience Walk-through](#bkmk-uewt) section of this document.</p></td>
+<p>The impact of this alteration is detailed in the <a href="#bkmk-uewt" data-raw-source="[User Experience Walk-through](#bkmk-uewt)">User Experience Walk-through</a> section of this document.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-pe"></a>Preparing your Environment
 
@@ -171,9 +177,9 @@ The following table displays the required steps to prepare the base image and th
 <tr class="odd">
 <td align="left"><p></p>
 <ul>
-<li><p>Enable the App-V client as described in [Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md).</p></li>
+<li><p>Enable the App-V client as described in <a href="appv-enable-the-app-v-desktop-client.md" data-raw-source="[Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md)">Enable the App-V in-box client</a>.</p></li>
 <li><p>Enable UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
-<li><p>Configure for Shared Content Store (SCS) mode. For more information see [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
+<li><p>Configure for Shared Content Store (SCS) mode. For more information see <a href="appv-deploying-the-appv-sequencer-and-client.md" data-raw-source="[Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)">Deploying the App-V Sequencer and Configuring the Client</a>.</p></li>
 <li><p>Configure Preserve User Integrations on Login Registry DWORD.</p></li>
 <li><p>Pre-configure all user- and global-targeted packages for example, <strong>Add-AppvClientPackage</strong>.</p></li>
 <li><p>Pre-configure all user- and global-targeted connection groups for example, <strong>Add-AppvClientConnectionGroup</strong>.</p></li>
@@ -191,9 +197,9 @@ The following table displays the required steps to prepare the base image and th
 </ul></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Enable the App-V client as described in [Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md).</p></li>
+<li><p>Enable the App-V client as described in <a href="appv-enable-the-app-v-desktop-client.md" data-raw-source="[Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md)">Enable the App-V in-box client</a>.</p></li>
 <li><p>Enable UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
-<li><p>Configure for Shared Content Store (SCS) mode. For more information see [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
+<li><p>Configure for Shared Content Store (SCS) mode. For more information see <a href="appv-deploying-the-appv-sequencer-and-client.md" data-raw-source="[Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)">Deploying the App-V Sequencer and Configuring the Client</a>.</p></li>
 <li><p>Configure Preserve User Integrations on Login Registry DWORD.</p></li>
 <li><p>Pre-configure all global-targeted packages for example, <strong>Add-AppvClientPackage</strong>.</p></li>
 <li><p>Pre-configure all global-targeted connection groups for example, <strong>Add-AppvClientConnectionGroup</strong>.</p></li>
@@ -204,7 +210,7 @@ The following table displays the required steps to prepare the base image and th
 </tbody>
 </table>
 
- 
+ 
 
 **Configurations** - For critical App-V Client configurations and for a little more context and how-to, review the following information:
 
@@ -225,7 +231,7 @@ The following table displays the required steps to prepare the base image and th
 <tr class="odd">
 <td align="left"><p>Shared Content Store (SCS) Mode</p>
 <ul>
-<li><p>Configurable in Windows PowerShell with `Set-AppvClientConfiguration -SharedContentStoreMode 1`<br>or configurable with Group Policy, as described in [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
+<li><p>Configurable in Windows PowerShell with <code>Set-AppvClientConfiguration -SharedContentStoreMode 1</code><br>or configurable with Group Policy, as described in <a href="appv-deploying-the-appv-sequencer-and-client.md" data-raw-source="[Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)">Deploying the App-V Sequencer and Configuring the Client</a>.</p></li>
 </ul></td>
 <td align="left"><p>When running the shared content store only publishing data is maintained on hard disk; other virtual application assets are maintained in memory (RAM).</p>
 <p>This helps to conserve local storage and minimize disk I/O per second (IOPS).</p></td>
@@ -256,7 +262,7 @@ The following table displays the required steps to prepare the base image and th
 </tbody>
 </table>
 
- 
+ 
 
 ### Configure UE-V solution for App-V Approach
 
@@ -268,7 +274,7 @@ For more information, see:
 
 - [Get Started with UE-V](/windows/configuration/ue-v/uev-getting-started)
 
-In essence all that is required is to enable the UE-V service and download the following Microsoft authored App-V settings template from the [Microsoft User Experience Virtualization (UE-V) template gallery](http://gallery.technet.microsoft.com/Authored-UE-V-Settings-bb442a33). Register the template. For more information about UE-V templates, see [User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows).
+In essence all that is required is to enable the UE-V service and download the following Microsoft authored App-V settings template from the [Microsoft User Experience Virtualization (UE-V) template gallery](https://gallery.technet.microsoft.com/Authored-UE-V-Settings-bb442a33). Register the template. For more information about UE-V templates, see [User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows).
 
 **Note**  
 Without performing an additional configuration step, User Environment Virtualization (UE-V) will not be able to synchronize the Start menu shortcuts (.lnk files) on the target computer. The .lnk file type is excluded by default.
@@ -282,7 +288,7 @@ UE-V will only support removing the .lnk file type from the exclusion list in th
 **Important**  
 This topic describes how to change the Windows registry by using Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. You should make a backup copy of the registry files (System.dat and User.dat) before you change the registry. Microsoft cannot guarantee that the problems that might occur when you change the registry can be resolved. Change the registry at your own risk.
 
- 
+ 
 
 Using the Microsoft Registry Editor (regedit.exe), navigate to **HKEY\_LOCAL\_MACHINE** \\ **Software** \\ **Microsoft** \\ **UEV** \\ **Agent** \\ **Configuration** \\ **ExcludedFileTypes** and remove **.lnk** from the excluded file types.
 
@@ -305,7 +311,7 @@ To enable an optimized login experience, for example the App-V approach for the 
 
     App-V packages are not supported when using UPD with selected folders stored in the user profile disk. The Copy on Write driver does not handle UPD selected folders.
 
-     
+     
 
 -   Capturing changes to the locations, which constitute the user integrations, prior to session logoff.
 
@@ -398,7 +404,7 @@ This following is a step-by-step walk-through of the App-V and UPM operations an
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -423,7 +429,7 @@ This following is a step-by-step walk-through of the App-V and UPM operations an
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-plc"></a>Impact to Package Life Cycle
 
@@ -441,41 +447,41 @@ In a non-persistent environment, it is unlikely these pended operations will be 
 
 The following section contains lists with information about Microsoft documentation and downloads that may be useful when optimizing your environment for performance.
 
-<!-- Following bold text used to say **.NET NGEN Blog and Script (Highly Recommended)**  but the script doesn't seem to exist any more. The link to the script was [Script](http://aka.ms/DrainNGenQueue)  -->
+<!-- Following bold text used to say **.NET NGEN Blog and Script (Highly Recommended)**  but the script doesn't seem to exist any more. The link to the script was [Script](https://aka.ms/DrainNGenQueue)  -->
 
 **.NET NGEN Blog (Highly Recommended)**
 
--   [How to speed up NGEN optimization](http://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
+-   [How to speed up NGEN optimization](https://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
 
 **Windows Server and Server Roles**
 
 Server Performance Tuning Guidelines for
 
--   [Microsoft Windows Server 2012 R2](http://msdn.microsoft.com/library/windows/hardware/dn529133.aspx)
+-   [Microsoft Windows Server 2012 R2](https://msdn.microsoft.com/library/windows/hardware/dn529133.aspx)
 
--   [Microsoft Windows Server 2012](http://download.microsoft.com/download/0/0/B/00BE76AF-D340-4759-8ECD-C80BC53B6231/performance-tuning-guidelines-windows-server-2012.docx)
+-   [Microsoft Windows Server 2012](https://download.microsoft.com/download/0/0/B/00BE76AF-D340-4759-8ECD-C80BC53B6231/performance-tuning-guidelines-windows-server-2012.docx)
 
--   [Microsoft Windows Server 2008 R2](http://download.microsoft.com/download/6/B/2/6B2EBD3A-302E-4553-AC00-9885BBF31E21/Perf-tun-srv-R2.docx)
+-   [Microsoft Windows Server 2008 R2](https://download.microsoft.com/download/6/B/2/6B2EBD3A-302E-4553-AC00-9885BBF31E21/Perf-tun-srv-R2.docx)
 
 **Server Roles**
 
--   [Remote Desktop Virtualization Host](http://msdn.microsoft.com/library/windows/hardware/dn567643.aspx)
+-   [Remote Desktop Virtualization Host](https://msdn.microsoft.com/library/windows/hardware/dn567643.aspx)
 
--   [Remote Desktop Session Host](http://msdn.microsoft.com/library/windows/hardware/dn567648.aspx)
+-   [Remote Desktop Session Host](https://msdn.microsoft.com/library/windows/hardware/dn567648.aspx)
 
--   [IIS Relevance: App-V Management, Publishing, Reporting Web Services](http://msdn.microsoft.com/library/windows/hardware/dn567678.aspx)
+-   [IIS Relevance: App-V Management, Publishing, Reporting Web Services](https://msdn.microsoft.com/library/windows/hardware/dn567678.aspx)
 
--   [File Server (SMB) Relevance: If used for App-V Content Storage and Delivery in SCS Mode](http://technet.microsoft.com/library/jj134210.aspx)
+-   [File Server (SMB) Relevance: If used for App-V Content Storage and Delivery in SCS Mode](https://technet.microsoft.com/library/jj134210.aspx)
 
 **Windows Client (Guest OS) Performance Tuning Guidance**
 
--   [Microsoft Windows 7](http://download.microsoft.com/download/E/5/7/E5783D68-160B-4366-8387-114FC3E45EB4/Performance Tuning Guidelines for Windows 7 Desktop Virtualization v1.9.docx)
+-   [Microsoft Windows 7](https://download.microsoft.com/download/E/5/7/E5783D68-160B-4366-8387-114FC3E45EB4/Performance Tuning Guidelines for Windows 7 Desktop Virtualization v1.9.docx)
 
--   [Optimization Script: (Provided by Microsoft Support)](http://blogs.technet.com/b/jeff_stokes/archive/2012/10/15/the-microsoft-premier-field-engineer-pfe-view-on-virtual-desktop-vdi-density.aspx)
+-   [Optimization Script: (Provided by Microsoft Support)](https://blogs.technet.com/b/jeff_stokes/archive/2012/10/15/the-microsoft-premier-field-engineer-pfe-view-on-virtual-desktop-vdi-density.aspx)
 
--   [Microsoft Windows 8](http://download.microsoft.com/download/6/0/1/601D7797-A063-4FA7-A2E5-74519B57C2B4/Windows_8_VDI_Image_Client_Tuning_Guide.pdf)
+-   [Microsoft Windows 8](https://download.microsoft.com/download/6/0/1/601D7797-A063-4FA7-A2E5-74519B57C2B4/Windows_8_VDI_Image_Client_Tuning_Guide.pdf)
 
--   [Optimization Script: (Provided by Microsoft Support)](http://blogs.technet.com/b/jeff_stokes/archive/2013/04/09/hot-off-the-presses-get-it-now-the-windows-8-vdi-optimization-script-courtesy-of-pfe.aspx)
+-   [Optimization Script: (Provided by Microsoft Support)](https://blogs.technet.com/b/jeff_stokes/archive/2013/04/09/hot-off-the-presses-get-it-now-the-windows-8-vdi-optimization-script-courtesy-of-pfe.aspx)
 
 ## Sequencing Steps to Optimize Packages for Publishing Performance
 
@@ -510,7 +516,7 @@ Several App-V features facilitate new scenarios or enable new customer deploymen
 </tbody>
 </table>
 
- 
+ 
 
 ### Removing FB1
 
@@ -549,7 +555,7 @@ Removing FB1 does not require the original application installer. After completi
     **Note**  
     This cmdlet requires an executable (.exe) or batch file (.bat). You must provide an empty (does nothing) executable or batch file.
 
-     
+     
 
 <table>
 <colgroup>
@@ -576,7 +582,7 @@ Removing FB1 does not require the original application installer. After completi
 </tbody>
 </table>
 
- 
+ 
 
 ### Creating a new virtual application package on the sequencer
 
@@ -584,7 +590,7 @@ If, during sequencer monitoring, an SxS Assembly (such as a VC++ Runtime) is ins
 
 **Client Side**:
 
-When publishing a virtual application package, the App-V Client will detect if a required SxS dependency is already installed. If the dependency is unavailable on the computer and it is included in the package, a traditional Windows Insataller (.**msi**) installation of the SxS assembly will be initiated. As previously documented, simply install the dependency on the computer running the client to ensure that the Windows Installer (.msi) installation will not occur.
+When publishing a virtual application package, the App-V Client will detect if a required SxS dependency is already installed. If the dependency is unavailable on the computer and it is included in the package, a traditional Windows Installer (.**msi**) installation of the SxS assembly will be initiated. As previously documented, simply install the dependency on the computer running the client to ensure that the Windows Installer (.msi) installation will not occur.
 
 <table>
 <colgroup>
@@ -613,9 +619,9 @@ When publishing a virtual application package, the App-V Client will detect if a
 </tbody>
 </table>
 
- 
+ 
 
-### Disabling a Dynamic Configuration by using Windows Powershell
+### Disabling a Dynamic Configuration by using Windows PowerShell
 
 -   For already published packages, you can use `Set-AppVClientPackage –Name Myapp –Path c:\Packages\Apps\MyApp.appv` without
 
@@ -663,7 +669,7 @@ For documentation on How to Apply a Dynamic Configuration, see:
 </tbody>
 </table>
 
- 
+ 
 
 ### Determining what virtual fonts exist in the package
 
@@ -722,7 +728,7 @@ The following terms are used when describing concepts and actions related to App
 
     -   From the point that users initiate a log-in to when they are able to manipulate the desktop.
 
-    -   From the point where the desktop can be interacted with to the point a publishing refresh begins (in Windows PowerShell terms, sync) when using the App-V full server infrastructure. In standalone instances, it is when the **Add-AppVClientPackage** and **Publish-AppVClientPackage** Windows Powershell commands are initiated.
+    -   From the point where the desktop can be interacted with to the point a publishing refresh begins (in Windows PowerShell terms, sync) when using the App-V full server infrastructure. In standalone instances, it is when the **Add-AppVClientPackage** and **Publish-AppVClientPackage** Windows PowerShell commands are initiated.
 
     -   From start to completion of the publishing refresh. In standalone instances, this is the first to last virtual application published.
 
@@ -730,9 +736,9 @@ The following terms are used when describing concepts and actions related to App
 
 -   **User Profile Management** – The controlled and structured approach to managing user components associated with the environment. For example, user profiles, preference and policy management, application control and application deployment. You can use scripting or third-party solutions configure the environment as needed.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

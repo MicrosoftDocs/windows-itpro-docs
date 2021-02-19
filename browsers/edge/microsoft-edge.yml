@@ -1,0 +1,144 @@
+### YamlMime:Landing
+
+title: Microsoft Edge Legacy # < 60 chars
+summary: Find the tools and resources you need to help deploy and use Microsoft Edge in your organization. # < 160 chars
+
+metadata:
+  title: Microsoft Edge Legacy # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Find the tools and resources you need to help deploy and use Microsoft Edge in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  keywords: Microsoft Edge, issues, fixes, announcements, Windows Server, advisories
+  ms.prod: edge
+  ms.localizationpriority: medium
+  author: lizap
+  ms.author: elizapo
+  manager: dougkim
+  ms.topic: landing-page
+  ms.devlang: na
+  ms.date: 08/19/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: What's new
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Documentation for Microsoft Edge version 77 or later
+            url: https://docs.microsoft.com/DeployEdge/
+          - text: Microsoft Edge Legacy desktop app will reach end of support on March 9, 2021
+            url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666
+          - text: The latest in Microsoft Edge
+            url: https://blogs.windows.com/msedgedev/2018/04/30/edgehtml-17-april-2018-update/#C7jCBdbPSG6bCXHr.97
+          - text: Microsoft Edge for iOS and Android
+            url: https://blogs.windows.com/windowsexperience/2017/11/30/microsoft-edge-now-available-for-ios-and-android
+          - text: Application Guard
+            url: https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview
+      - linkListType: download
+        links:
+          - text: Evaluate the impact
+            url: /microsoft-edge/deploy/microsoft-edge-forrester
+
+  # Card (optional)
+  - title: Test your site on Microsoft Edge
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Test your site on Microsoft Edge for free on BrowserStack
+            url: https://developer.microsoft.com/microsoft-edge/tools/remote/
+          - text: Use sonarwhal to improve your website
+            url: https://sonarwhal.com/
+  
+  # Card (optional)
+  - title: Improve compatibility with Enterprise Mode
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Use Enterprise mode to improve compatibility
+            url: /microsoft-edge/deploy/emie-to-improve-compatibility
+          - text: Turn on Enterprise Mode and use a site list
+            url: https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list
+          - text: Enterprise Site List Portal
+            url: https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal
+  
+  # Card (optional)
+  - title: Web Application Compatibility Lab Kit
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: /microsoft-edge/deploy/emie-to-improve-compatibility
+
+  # Card (optional)
+  - title: Security
+    linkLists:
+      - linkListType: download
+        links:
+          - text: NSS Labs web browser security reports
+            url: https://www.microsoft.com/download/details.aspx?id=54773
+      - linkListType: overview
+        links:
+          - text: Microsoft Edge sandbox
+            url: https://blogs.windows.com/msedgedev/2017/03/23/strengthening-microsoft-edge-sandbox/
+          - text: Windows Defender SmartScreen
+            url: https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview
+  
+  # Card (optional)
+  - title: Deployment
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft Edge deployment guide
+            url: /microsoft-edge/deploy/
+          - text: Microsoft Edge FAQ
+            url: /microsoft-edge/deploy/microsoft-edge-faq
+          - text: System requirements and language support
+            url: /microsoft-edge/deploy/hardware-and-software-requirements
+          - text: Group Policy and MDM settings in Microsoft Edge
+            url: /microsoft-edge/deploy/available-policies
+          - text: Microsoft Edge training and demonstrations
+            url: /microsoft-edge/deploy/edge-technical-demos
+      - linkListType: download
+        links:
+          - text: Web Application Compatibility Lab Kit
+            url: https://www.microsoft.com/itpro/microsoft-edge/web-app-compat-toolkit
+
+  # Card (optional)
+  - title: End user readiness
+    linkLists:
+      - linkListType: video
+        links:
+          - text: Microsoft Edge tips and tricks (video, 20:26)
+            url: https://myignite.microsoft.com/sessions/56630?source=sessions
+      - linkListType: download
+        links:
+          - text: Quick Start - Microsoft Edge (PDF, .98 MB)
+            url: https://go.microsoft.com/fwlink/?linkid=825648
+          - text: Find it faster with Microsoft Edge (PDF, 605 KB)
+            url: https://go.microsoft.com/fwlink/?linkid=825661
+          - text: Use Microsoft Edge to collaborate (PDF, 468 KB)
+            url: https://go.microsoft.com/fwlink/?linkid=825653
+          - text: Group Policy and MDM settings in Microsoft Edge
+            url: /microsoft-edge/deploy/available-policies
+          - text: Microsoft Edge training and demonstrations
+            url: /microsoft-edge/deploy/edge-technical-demos
+      - linkListType: how-to-guide
+        links:
+          - text: Import bookmarks
+            url: https://microsoftedgetips.microsoft.com/2/39
+          - text: Password management
+            url: https://microsoftedgetips.microsoft.com/2/18
+      
+  # Card (optional)
+  - title: Stay informed
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Sign up for the Windows IT Pro Insider
+            url: https://aka.ms/windows-it-pro-insider
+          - text: Microsoft Edge Dev blog
+            url: https://blogs.windows.com/msedgedev
+          - text: Microsoft Edge Dev on Twitter
+            url: https://twitter.com/MSEdgeDev

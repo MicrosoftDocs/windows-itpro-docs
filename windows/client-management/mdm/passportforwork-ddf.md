@@ -1,13 +1,15 @@
 ---
 title: PassportForWork DDF
-description: This topic shows the OMA DM device description framework (DDF) for the PassportForWork configuration service provider. DDF files are used only with OMA DM provisioning XML.
+description: View the OMA DM device description framework (DDF) for the PassportForWork configuration service provider. DDF files are used only with OMA DM provisioning XML.
 ms.assetid: A2182898-1577-4675-BAE5-2A3A9C2AAC9B
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 12/05/2017
+author: manikadhiman
+ms.date: 07/29/2019
 ---
 
 # PassportForWork DDF
@@ -16,9 +18,9 @@ This topic shows the OMA DM device description framework (DDF) for the **Passpor
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is the current version for this CSP.
+The XML below is for Windows 10, version 1903.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -42,7 +44,7 @@ The XML below is the current version for this CSP.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.3/MDM/PassportForWork</MIME>
+            <MIME>com.microsoft/1.6/MDM/PassportForWork</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -565,58 +567,58 @@ If you disable or do not configure this policy setting, the TPM is still preferr
               </DFProperties>
             </Node>
             <Node>
-                <NodeName>ExcludeSecurityDevices</NodeName>
+              <NodeName>ExcludeSecurityDevices</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                </AccessType>
+                <Description>Root node for excluded security devices.</Description>
+                <DFFormat>
+                  <node />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFTitle>ExcludeSecurityDevices</DFTitle>
+                <DFType>
+                  <DDFName></DDFName>
+                </DFType>
+              </DFProperties>
+              <Node>
+                <NodeName>TPM12</NodeName>
                 <DFProperties>
-                    <AccessType>
-                        <Add />
-                        <Delete />
-                        <Get />
-                    </AccessType>
-                    <Description>Root node for excluded security devices.</Description>
-                    <DFFormat>
-                        <node />
-                    </DFFormat>
-                    <Occurrence>
-                        <One />
-                    </Occurrence>
-                    <Scope>
-                        <Dynamic />
-                    </Scope>
-                    <DFTitle>ExcludeSecurityDevices</DFTitle>
-                    <DFType>
-                        <DDFName></DDFName>
-                    </DFType>
-                </DFProperties>
-                <Node>
-                    <NodeName>TPM12</NodeName>
-                    <DFProperties>
-                        <AccessType>
-                            <Add />
-                            <Delete />
-                            <Get />
-                            <Replace />
-                        </AccessType>
-                        <DefaultValue>False</DefaultValue>
-                        <Description>Some Trusted Platform Modules (TPMs) are only compliant with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
+                  <AccessType>
+                    <Add />
+                    <Delete />
+                    <Get />
+                    <Replace />
+                  </AccessType>
+                  <DefaultValue>False</DefaultValue>
+                  <Description>Some Trusted Platform Modules (TPMs) are only compliant with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
 
 If you enable this policy setting, TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.
 
 If you disable or do not configure this policy setting, TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.</Description>
-                        <DFFormat>
-                            <bool />
-                        </DFFormat>
-                        <Occurrence>
-                            <ZeroOrOne />
-                        </Occurrence>
-                        <Scope>
-                            <Dynamic />
-                        </Scope>
-                        <DFType>
-                            <MIME>text/plain</MIME>
-                        </DFType>
-                    </DFProperties>
-                </Node>
-            </Node>    
+                  <DFFormat>
+                    <bool />
+                  </DFFormat>
+                  <Occurrence>
+                    <ZeroOrOne />
+                  </Occurrence>
+                  <Scope>
+                    <Dynamic />
+                  </Scope>
+                  <DFType>
+                    <MIME>text/plain</MIME>
+                  </DFType>
+                </DFProperties>
+              </Node>
+            </Node>
             <Node>
               <NodeName>EnablePinRecovery</NodeName>
               <DFProperties>
@@ -985,6 +987,35 @@ Default value is false. If you enable this setting, a desktop device will allow 
                 </DFProperties>
               </Node>
             </Node>
+            <Node>
+              <NodeName>UseHelloCertificatesAsSmartCardCertificates</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Add />
+                  <Delete />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>False</DefaultValue>
+                <Description>If you enable this policy setting, applications use Windows Hello for Business certificates as smart card certificates. Biometric factors are unavailable when a user is asked to authorize the use of the certificate's private key. This policy setting is designed to allow compatibility with applications that rely exclusively on smart card certificates.
+
+If you disable or do not configure this policy setting, applications do not use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate's private key.
+
+Windows requires a user to lock and unlock their session after changing this setting if the user is currently signed in.</Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
           </Node>
         </Node>
         <Node>
@@ -1083,9 +1114,9 @@ NOTE: Disabling this policy prevents the use of biometric gestures on the device
               <DefaultValue>False</DefaultValue>
               <Description>This setting determines whether enhanced anti-spoofing is required for Windows Hello face authentication.
 
-If you enable or don't configure this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. This disables Windows Hello face authentication on devices that do not support enhanced anti-spoofing.
+If you enable this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. This disables Windows Hello face authentication on devices that do not support enhanced anti-spoofing.
 
-If you disable this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
+If you disable or do not configure this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
 
 Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.</Description>
               <DFFormat>
@@ -1100,19 +1131,222 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
               <DFType>
                 <MIME>text/plain</MIME>
               </DFType>
+              <MSFT:SupportedValues AllowedValues="true,false">
+                <MSFT:SupportedValue value="true" description="Windows will require all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. This disables Windows Hello face authentication on devices that do not support enhanced anti-spoofing."/>
+                <MSFT:SupportedValue value="false" description="Enhanced anti-spoofing is not required for Windows Hello face authentication."/>
+              </MSFT:SupportedValues>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>DeviceUnlock</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Device Unlock</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>GroupA</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <Description>Contains a list of providers by GUID that are to be considered for the first step of authentication</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>GroupB</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <Description>Contains a list of providers by GUID that are to be considered for the second step of authentication</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>Plugins</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <Description>List of plugins that the passive provider monitors to detect user presence</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>DynamicLock</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Dynamic Lock</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>DynamicLock</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Add />
+                    <Delete />
+                    <Replace />
+                </AccessType>
+                <DefaultValue>False</DefaultValue>
+                <Description>Enables/Disables Dyanamic Lock</Description>
+                <DFFormat>
+                    <bool />
+                </DFFormat>
+                <Occurrence>
+                    <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                    <Dynamic />
+                </Scope>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>Plugins</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <Description>List of plugins that the passive provider monitors to detect user absence</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>SecurityKey</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Security Key</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>UseSecurityKeyForSignin</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Add />
+                    <Delete />
+                    <Replace />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <Description>Use security key for signin. 0 is disabled. 1 is enable. If you do not configure this policy setting, the default is disabled.</Description>
+                <DFFormat>
+                    <int />
+                </DFFormat>
+                <Occurrence>
+                    <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                    <Dynamic />
+                </Scope>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
             </DFProperties>
           </Node>
         </Node>
       </Node>
 </MgmtTree>
 ```
-
- 
-
- 
-
-
-
-
-
-

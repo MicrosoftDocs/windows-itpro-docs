@@ -1,12 +1,17 @@
 ---
 title: USMT Requirements (Windows 10)
-description: USMT Requirements
+description: While the User State Migration Tool (USMT) doesn't have many requirements, these tips and tricks can help smooth the migration process.
 ms.assetid: 2b0cf3a3-9032-433f-9622-1f9df59d6806
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 05/03/2017
+ms.topic: article
 ---
 
 # USMT Requirements
@@ -78,7 +83,7 @@ The following table lists the operating systems supported in USMT.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 You can migrate a 32-bit operating system to a 64-bit operating system. However, you cannot migrate a 64-bit operating system to a 32-bit operating system.
@@ -90,11 +95,11 @@ For more information about previous releases of the USMT tools, see [User State 
 
 ## Windows PE
 
--   **Must use latest version of Window PE.** For example, to migrate to Windows 10, you'll need Windows PE 5.1. For more info, see [What's New in Windows PE](http://msdn.microsoft.com/library/windows/hardware/dn938350.aspx).
+-   **Must use latest version of Window PE.** For example, to migrate to Windows 10, you'll need Windows PE 5.1. For more info, see [What's New in Windows PE](https://msdn.microsoft.com/library/windows/hardware/dn938350.aspx).
 
 ## Credentials
 
--  **Run as administrator** 
+-  **Run as administrator**
     When manually running the **ScanState** and **LoadState** tools on Windows 7, Windows 8 or Windows 10 you must run them from an elevated command prompt to ensure that all specified users are migrated. If you do not run USMT from an elevated prompt, only the user profile that is logged on will be included in the migration.
 
 To open an elevated command prompt:
@@ -147,9 +152,9 @@ This documentation assumes that IT professionals using USMT understand command-l
 [Estimate Migration Store Size](usmt-estimate-migration-store-size.md)<BR>
 [User State Migration Tool (USMT) Overview Topics](usmt-topics.md)<BR>
 
- 
+ 
 
- 
+ 
 
 
 

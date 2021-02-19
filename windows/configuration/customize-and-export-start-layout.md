@@ -2,13 +2,17 @@
 title: Customize and export Start layout (Windows 10)
 description: The easiest method for creating a customized Start layout is to set up the Start screen and export the layout.
 ms.assetid: CA8DF327-5DD4-452F-9FE5-F17C514B6236
+ms.reviewer: 
+manager: dansimp
 keywords: ["start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.localizationpriority: high
-ms.date: 10/16/2017
+author: dansimp
+ms.author: dansimp
+ms.topic: article
+ms.localizationpriority: medium
+ms.date: 09/18/2018
 ---
 
 # Customize and export Start layout
@@ -31,7 +35,7 @@ When [a partial Start layout](#configure-a-partial-start-layout) is applied, the
 >[!NOTE]
 >Partial Start layout is only supported on Windows 10, version 1511 and later.
 
- 
+ 
 
 You can deploy the resulting .xml file to devices using one of the following methods:
 
@@ -41,10 +45,7 @@ You can deploy the resulting .xml file to devices using one of the following met
 
 -   [Mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
-
-<span id="bkmkcustomizestartscreen" />
 ## Customize the Start screen on your test computer
-
 
 To prepare a Start layout for export, you simply customize the Start layout on a test computer.
 
@@ -54,7 +55,6 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
 2.  Create a new user account that you will use to customize the Start layout.
 
-<a href="" id="bmk-customize-start"></a>
 **To customize Start**
 
 1.  Sign in to your test computer with the user account that you created.
@@ -78,22 +78,26 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 >
 >In earlier versions of Windows 10, no tile would be pinned.
 
-<span id="bmk-exportstartscreenlayout" />
 ## Export the Start layout
 
-
-When you have the Start layout that you want your users to see, use the [Export-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet in Windows PowerShell to export the Start layout to an .xml file.
+When you have the Start layout that you want your users to see, use the [Export-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet in Windows PowerShell to export the Start layout to an .xml file. Start layout is located by default at C:\Users\username\AppData\Local\Microsoft\Windows\Shell\
 
 >[!IMPORTANT]
 >If you include secondary Microsoft Edge tiles (tiles that link to specific websites in Microsoft Edge), see [Add custom images to Microsoft Edge secondary tiles](start-secondary-tiles.md) for instructions.
 
 **To export the Start layout to an .xml file**
 
-1.  From Start, open **Windows PowerShell**.
+1.  While signed in with the same account that you used to customize Start, right-click Start, and select **Windows PowerShell**.
 
-2.  At the Windows PowerShell command prompt, enter the following command:
+2.  On a device running Windows 10, version 1607, 1703, or 1803, at the Windows PowerShell command prompt, enter the following command:
 
-    `export-startlayout –path <path><file name>.xml `
+    `Export-StartLayout –path <path><file name>.xml`
+    
+    On a device running Windows 10, version 1809 or higher, run the **Export-StartLayout** with the switch **-UseDesktopApplicationID**. For example:
+
+    ```PowerShell
+    Export-StartLayout -UseDesktopApplicationID -Path layout.xml
+    ```
 
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 
@@ -113,11 +117,11 @@ When you have the Start layout that you want your users to see, use the [Export-
     </thead>
     <tbody>
     <tr class="odd">
-    <td align="left"><pre><code>&lt;LayoutModificationTemplate Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
+    <td align="left"><pre><code>&lt;LayoutModificationTemplate Version=&quot;1&quot; xmlns=&quot;https://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
       &lt;DefaultLayoutOverride&gt;
         &lt;StartLayoutCollection&gt;
-          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot; xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot;&gt;
-            &lt;start:Group Name=&quot;Life at a glance&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot;&gt;
+          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot; xmlns:defaultlayout=&quot;https://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot;&gt;
+            &lt;start:Group Name=&quot;Life at a glance&quot; xmlns:start=&quot;https://schemas.microsoft.com/Start/2014/StartLayout&quot;&gt;
               &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&quot; /&gt;
               &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI&quot; /&gt;
               &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
@@ -130,8 +134,27 @@ When you have the Start layout that you want your users to see, use the [Export-
     </tbody>
     </table>
 
+3. (Optional) Edit the .xml file to add [a taskbar configuration](configure-windows-10-taskbar.md) or to [modify the exported layout](start-layout-xml-desktop.md). When you make changes to the exported layout, be aware that [the order of the elements in the .xml file is critical.](start-layout-xml-desktop.md#required-order)
+
 >[!IMPORTANT]
 >If the Start layout that you export contains tiles for desktop (Win32) apps or .url links, **Export-StartLayout** will use **DesktopApplicationLinkPath** in the resulting file. Use a text or XML editor to change **DesktopApplicationLinkPath** to **DesktopApplicationID**. See [Specify Start tiles](start-layout-xml-desktop.md#specify-start-tiles) for details on using the app ID in place of the link path. 
+
+
+>[!NOTE]
+>All clients that the start layout applies to must have the apps and other shortcuts present on the local system in the same location as the source for the Start layout.
+>
+>For scripts and application tile pins to work correctly, follow these rules:
+>
+>* Executable files and scripts should be listed in \Program Files or wherever the installer of the app places them.
+>
+>* Shortcuts that will pinned to Start should be placed in \ProgramData\Microsoft\Windows\Start Menu\Programs. 
+>
+>* If you place executable files or scripts in the \ProgramData\Microsoft\Windows\Start Menu\Programs folder, they will not pin to Start.
+>
+>* Start on Windows 10 does not support subfolders. We only support one folder. For example, \ProgramData\Microsoft\Windows\Start Menu\Programs\Folder. If you go any deeper than one folder, Start will compress the contents of all the subfolder to the top level.
+>
+>* Three additional shortcuts are pinned to the start menu after the export. These are shortcuts to %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs, %APPDATA%\Microsoft\Windows\Start Menu\Programs, and %APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\.
+
 
 ## Configure a partial Start layout
 
@@ -148,16 +171,21 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 
 **To configure a partial Start screen layout**
 
-1.  [Customize the Start layout](#bmk-customize-start).
+1.  [Customize the Start layout](#customize-the-start-screen-on-your-test-computer).
 
-2.  [Export the Start layout](#bmk-exportstartscreenlayout).
+2.  [Export the Start layout](#export-the-start-layout).
 3.  Open the layout .xml file. There is a `<DefaultLayoutOverride>` element. Add `LayoutCustomizationRestrictionType="OnlySpecifiedGroups"` to the **DefaultLayoutOverride** element as follows:
 
-    ``` syntax
+    ```xml
     <DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
     ```
 
 4.  Save the file and apply using any of the deployment methods.
+
+> [!NOTE] 
+> Office 2019 tiles might be removed from the Start menu when you upgrade Office 2019. This only occurs if Office 2019 app tiles are in a custom group in the Start menu and only contains the Office 2019 app tiles. To avoid this problem, place another app tile in the Office 2019 group prior to the upgrade. For example, add Notepad.exe or calc.exe to the group. This issue occurs because Office 2019 removes and reinstalls the apps when they are upgraded. Start removes empty groups when it detects that all apps for that group have been removed.
+
+
 
 ## Related topics
 
@@ -168,7 +196,7 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 - [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 - [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
 
 

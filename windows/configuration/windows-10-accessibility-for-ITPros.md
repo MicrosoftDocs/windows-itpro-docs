@@ -1,12 +1,17 @@
 ---
 title: Windows 10 accessibility information for IT Pros (Windows 10)
-description:  
-ms.prod: W10
+description:  Lists the various accessibility features available in Windows 10 with links to detailed guidance on how to set them
+keywords: accessibility, settings, vision, hearing, physical, cognition, assistive
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jaimeo
-ms.localizationpriority: high
+ms.author: dansimp
+author: dansimp
+ms.localizationpriority: medium
 ms.date: 01/12/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: reference
 ---
 
 # Accessibility information for IT Professionals 
@@ -14,9 +19,9 @@ Microsoft is dedicated to making its products and services accessible and usable
 This topic helps IT administrators learn about built-in accessibility features, and includes a few recommendations for how to support people in your organization who use these features.
 
 ## General recommendations
--	**Be aware of Ease of Access settings** – Understand how people in your organization might use these settings. Help people in your organization learn how they can customize Windows 10. 
--	**Do not block settings** – Avoid using Group Policy or MDM settings that override Ease of Access settings. 
--	**Encourage choice** – Allow people in your organization to customize their computers based on their needs. That might mean installing an add-on for their browser, or a non-Microsoft assistive technology.
+- **Be aware of Ease of Access settings** – Understand how people in your organization might use these settings. Help people in your organization learn how they can customize Windows 10. 
+- **Do not block settings** – Avoid using Group Policy or MDM settings that override Ease of Access settings. 
+- **Encourage choice** – Allow people in your organization to customize their computers based on their needs. That might mean installing an add-on for their browser, or a non-Microsoft assistive technology.
 
 ## Vision
 
@@ -24,7 +29,7 @@ This topic helps IT administrators learn about built-in accessibility features, 
 |---------------------------|------------|
 | [Use Narrator to use devices without a screen](https://support.microsoft.com/help/22798/windows-10-narrator-get-started) | Narrator describes Windows and apps and enables you to control devices by using a keyboard, controller, or with a range of gestures on touch-supported devices.|
 | [Create accessible apps](https://developer.microsoft.com/windows/accessible-apps) | You can develop accessible apps just like Mail, Groove, and Store that work well with Narrator and other leading screen readers.|
-| Use keyboard shortcuts for [Windows](https://support.microsoft.com/help/12445/windows-keyboard-shortcuts), [Narrator](https://support.microsoft.com/en-us/help/22806), and [Magnifier](https://support.microsoft.com/en-us/help/13810) | Get the most out of Windows with shortcuts for apps and desktops.|
+| Use keyboard shortcuts for [Windows](https://support.microsoft.com/help/12445/windows-keyboard-shortcuts), [Narrator](https://support.microsoft.com/help/22806), and [Magnifier](https://support.microsoft.com/help/13810) | Get the most out of Windows with shortcuts for apps and desktops.|
 | Get closer with [Magnifier](https://support.microsoft.com/help/11542/windows-use-magnifier) | Magnifier enlarges all or part of your screen and offers a variety of configuration settings.|
 | [Cursor and pointer adjustments](https://support.microsoft.com/help/27928/windows-10-make-windows-easier-to-see) | Changing the size or color of pointers or adding trails or touch feedback make it easier to follow the mouse.|
 | [Have Cortana assist](https://support.microsoft.com/help/17214/windows-10-what-is) | Cortana can handle a variety of tasks for you, including setting reminders, opening apps, finding facts, and sending emails and texts.|

@@ -2,13 +2,17 @@
 title: Join Windows 10 Mobile to Azure Active Directory (Windows 10)
 description: Devices running Windows 10 Mobile can join Azure Active Directory (Azure AD) when the device is configured during the out-of-box experience (OOBE).
 ms.assetid: 955DD9EC-3519-4752-827E-79CEB1EC8D6B
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
-author: jdeckerms
-ms.localizationpriority: high
+author: dansimp
+ms.localizationpriority: medium
 ms.date: 09/21/2017
+ms.topic: article
 ---
 
 # Join Windows 10 Mobile to Azure Active Directory
@@ -27,7 +31,7 @@ When a device running Windows 10 Mobile is joined to Azure AD, the device can e
 
 -   Single sign-on (SSO) in applications like Mail, Word, and OneDrive using resources backed by Azure AD.
 
--   SSO in Microsoft Edge browser to Azure AD-connected web applications like Office 365 Portal, Visual Studio, and more than [2500 non-Microsoft apps](https://go.microsoft.com/fwlink/p/?LinkID=746211).
+-   SSO in Microsoft Edge browser to Azure AD-connected web applications like Microsoft 365 admin center, Visual Studio, and more than [2500 non-Microsoft apps](https://go.microsoft.com/fwlink/p/?LinkID=746211).
 
 -   SSO to resources on-premises.
 
@@ -173,7 +177,7 @@ The OneDrive application also uses SSO, showing you all your documents and enabl
 
 ![onedrive](images/aadjonedrive.jpg)
 
-In addition to application SSO, Azure AD joined devices also get SSO for browser applications which trust Azure AD, such as web applications, Visual Studio, Office 365 portal, and OneDrive for Business.
+In addition to application SSO, Azure AD joined devices also get SSO for browser applications which trust Azure AD, such as web applications, Visual Studio, Microsoft 365 admin center, and OneDrive for Business.
 
 ![browser apps](images/aadjbrowser.jpg)
 

@@ -1,12 +1,17 @@
 ---
 title: User State Migration Tool (USMT) Overview (Windows 10)
-description: User State Migration Tool (USMT) Overview
+description: Learn about using User State Migration Tool (USMT) 10.0 to streamline and simplify user state migration during large deployments of Windows operating systems.
 ms.assetid: 3b649431-ad09-4b17-895a-3fec7ac0a81f
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 10/16/2017
+ms.topic: article
 ---
 
 # User State Migration Tool (USMT) Overview
@@ -36,7 +41,7 @@ USMT provides the following benefits to businesses that are deploying Windows op
 -   Increases employee satisfaction with the migration experience.
 
 ## Limitations
-USMT is intended for administrators who are performing large-scale automated deployments. If you are only migrating the user states of a few computers, you can use [PCmover Express](http://go.microsoft.com/fwlink/?linkid=620915). PCmover Express is a tool created by Microsoft's partner, Laplink.
+USMT is intended for administrators who are performing large-scale automated deployments. If you are only migrating the user states of a few computers, you can use [PCmover Express](https://go.microsoft.com/fwlink/?linkid=620915). PCmover Express is a tool created by Microsoft's partner, Laplink.
 
 There are some scenarios in which the use of USMT is not recommended. These include:
 
@@ -46,11 +51,3 @@ There are some scenarios in which the use of USMT is not recommended. These incl
 
 ## Related topics
 - [User State Migration Tool (USMT) Technical Reference](usmt-technical-reference.md)
-
-
- 
-
-
-
-
-

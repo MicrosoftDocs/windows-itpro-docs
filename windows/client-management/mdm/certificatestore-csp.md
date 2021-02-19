@@ -1,13 +1,15 @@
 ---
 title: CertificateStore CSP
-description: CertificateStore CSP
+description: Use the The CertificateStore configuration service provider (CSP) to add secure socket layers (SSL), intermediate, and self-signed certificates.
 ms.assetid: 0fe28629-3cc3-42a0-91b3-3624c8462fd3
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 06/26/2017
+author: lomayor
+ms.date: 02/28/2020
 ---
 
 # CertificateStore CSP
@@ -15,9 +17,11 @@ ms.date: 06/26/2017
 
 The CertificateStore configuration service provider is used to add secure socket layers (SSL), intermediate, and self-signed certificates.
 
-> **Note**   The CertificateStore configuration service provider does not support installing client certificates.
+> [!Note]
+> The CertificateStore configuration service provider does not support installing client certificates.
+> The Microsoft protocol version of Open Mobile Alliance (OMA) is case insensitive.
 
- 
+ 
 
 For the CertificateStore CSP, you cannot use the Replace command unless the node already exists.
 
@@ -32,7 +36,7 @@ Supported operation is Get.
 
 > **Note**  Root/System is case sensitive. Please use the RootCATrustedCertificates CSP moving forward for installing root certificates.
 
- 
+ 
 
 <a href="" id="ca-system"></a>**CA/System**  
 Defines the certificate store that contains cryptographic information, including intermediary certification authorities.
@@ -41,7 +45,7 @@ Supported operation is Get.
 
 > **Note**  CA/System is case sensitive. Please use the RootCATrustedCertificates CSP moving forward for installing CA certificates.
 
- 
+ 
 
 <a href="" id="my-user"></a>**My/User**  
 Defines the certificate store that contains public keys for client certificates. This is only used by enterprise servers to push down the public key of a client certificate. The client certificate is used by the device client to authenticate itself to the enterprise server for device management and downloading enterprise applications.
@@ -50,7 +54,7 @@ Supported operation is Get.
 
 > **Note**  My/User is case sensitive.
 
- 
+ 
 
 <a href="" id="my-system"></a>**My/System**  
 Defines the certificate store that contains public key for client certificate. This is only used by enterprise server to push down the public key of the client cert. The client cert is used by the device to authenticate itself to the enterprise server for device management and enterprise app downloading.
@@ -59,7 +63,7 @@ Supported operation is Get.
 
 > **Note**  My/System is case sensitive.
 
- 
+ 
 
 <a href="" id="certhash"></a>***CertHash***  
 Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.
@@ -103,9 +107,9 @@ Supported operation is Get.
 
 > **Note**  Please use the ClientCertificateInstall CSP to install SCEP certificates moving forward. All enhancements to SCEP will happen in that CSP.
 
- 
+ 
 
-<a href="" id="my-scep-uniqueid"></a>**My/SCEP/****_UniqueID_**  
+<a href="" id="my-scep-uniqueid"></a>**My/SCEP/**<strong>*UniqueID*</strong>  
 Required for SCEP certificate enrollment. A unique ID to differentiate certificate enrollment requests. Format is node.
 
 Supported operations are Get, Add, Replace, and Delete.
@@ -117,7 +121,7 @@ Supported operations are Add, Replace, and Delete.
 
 > **Note**   Though the children nodes under Install support Replace commands, after the Exec command is sent to the device, the device takes the values that are set when the Exec command is accepted. You should not expect the node value change that occurs after the Exec command is accepted to impact the current undergoing enrollment. You should check the Status node value and make sure that the device is not at an unknown stage before changing the children node values.
 
- 
+ 
 
 <a href="" id="my-scep-uniqueid-install-serverurl"></a>**My/SCEP/*UniqueID*/Install/ServerURL**  
 Required for SCEP certificate enrollment. Specifies the certificate enrollment server. The server could specify multiple server URLs separated by a semicolon. Value type is string.
@@ -142,7 +146,13 @@ Required for enrollment. Specifies the key usage bits (0x80, 0x20, 0xA0, etc.) f
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="my-scep-uniqueid-install-subjectname"></a>**My/SCEP/*UniqueID*/Install/SubjectName**  
-Required. Specifies the subject name. Value type is chr.
+Required. Specifies the subject name. 
+
+The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”  ).
+
+For more details, see [CertNameToStrA function](https://docs.microsoft.com/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
+
+Value type is chr.
 
 Supported operations are Get, Add, Delete, and Replace.
 
@@ -194,7 +204,7 @@ Required. Specifies the root CA thumbprint. It is a 20-byte value of the SHA1 ce
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="my-scep-uniqueid-install-subjectalternativenames"></a>**My/SCEP/*UniqueID*/Install/SubjectAlternativeNames**  
-Optional. Specifies the subject alternative name. Multiple alternative names can be specified. Each name is the combination of name format+actual name. Refer to the name type definition in MSDN. Each pair is separated by semicolon. For example, multiple subject alternative names are presented in the format *&lt;nameformat1&gt;*+*&lt;actual name1&gt;*;*&lt;name format 2&gt;*+*&lt;actual name2&gt;*. Value type is chr.
+Optional. Specifies the subject alternative name. Multiple alternative names can be specified. Each name is the combination of name format+actual name. Refer to the name type definition in MSDN. Each pair is separated by semicolon. For example, multiple subject alternative names are presented in the format *\<nameformat1>*+*\<actual name1>*;*\<name format 2>*+*\<actual name2>*. Value type is chr.
 
 Supported operations are Get, Add, Delete, and Replace.
 
@@ -211,7 +221,7 @@ Valid values are one of the following:
 
 > **Note**   The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) of the SCEP server as part of certificate enrollment request. How this valid period is used to create the certificate depends on the MDM server.
 
- 
+ 
 
 <a href="" id="my-scep-uniqueid-install-validperiodunits"></a>**My/SCEP/*UniqueID*/Install/ValidPeriodUnits**  
 Optional. Specifies desired number of units used in validity period and subject to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. The valid period specified by MDM overwrites the valid period specified in the certificate template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days. Value type is an integer.
@@ -220,7 +230,7 @@ Supported operations are Get, Add, Delete, and Replace.
 
 > **Note**   The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) of the SCEP server as part of certificate enrollment request. How this valid period is used to create the certificate depends on the MDM server.
 
- 
+ 
 
 <a href="" id="my-scep-uniqueid-install-enroll"></a>**My/SCEP/*UniqueID*/Install/Enroll**  
 Required. Triggers the device to start the certificate enrollment. The MDM server can later query the device to find out whether the new certificate is added. Value type is null, which means that this node does not contain a value.
@@ -277,7 +287,7 @@ Optional. Specifies the URL of certificate renewal server. If this node does not
 
 > **Note**  The renewal process follows the same steps as device enrollment, which means that it starts with Discovery service, followed by Enrollment policy service, and then Enrollment web service.
 
- 
+ 
 
 Supported operations are Add, Get, Delete, and Replace.
 
@@ -290,7 +300,7 @@ Supported operations are Add, Get, Delete, and Replace.
 
 > **Note**   When you set the renewal schedule over SyncML DM commands to ROBOSupport, RenewalPeriod, and RetryInterval, you must wrap them in Atomic commands.
 
- 
+ 
 
 <a href="" id="my-wstep-renew-retryinterval"></a>**My/WSTEP/Renew/RetryInterval**  
 Optional. Specifies the retry interval (in days) when the previous renewal failed. It applies to both manual certificate renewal and ROBO automatic certificate renewal. The retry schedule stops at the certificate expiration date.
@@ -299,13 +309,13 @@ For ROBO renewal failure, the client retries the renewal periodically until the 
 
 For manual retry failure, there are no built-in retries. The user can retry later. At the next scheduled certificate renewal retry period, the device prompts the credential dialog again.
 
-The default value is 7 and the valid values are 1 – 1000 AND =&lt; RenewalPeriod, otherwise it will result in errors. Value type is an integer.
+The default value is 7 and the valid values are 1 – 1000 AND =< RenewalPeriod, otherwise it will result in errors. Value type is an integer.
 
 Supported operations are Add, Get, Delete, and Replace.
 
 > **Note**   When you set the renewal schedule over SyncML DM commands to ROBOSupport, RenewalPeriod, and RetryInterval, you must wrap them in Atomic commands.
 
- 
+ 
 
 <a href="" id="my-wstep-renew-robosupport"></a>**My/WSTEP/Renew/ROBOSupport**  
 Optional. Notifies the client if the MDM enrollment server supports ROBO auto certificate renewal. Value type is bool.
@@ -316,7 +326,7 @@ Supported operations are Add, Get, Delete, and Replace.
 
 > **Note**   When you set the renewal schedule over SyncML DM commands to ROBOSupport, RenewalPeriod, and RetryInterval, you must wrap them in Atomic commands.
 
- 
+ 
 
 <a href="" id="my-wstep-renew-status"></a>**My/WSTEP/Renew/Status**  
 Required. Shows the latest action status for this certificate. Value type is an integer.
@@ -358,7 +368,7 @@ Supported operations are Add, Get, and Replace.
 
 Add a root certificate to the MDM server.
 
-``` syntax
+```xml
 <Add>
    <CmdID>1</CmdID>
    <Item>
@@ -377,7 +387,7 @@ Add a root certificate to the MDM server.
 
 Get all installed client certificates.
 
-``` syntax
+```xml
 <Get>
    <CmdID>1</CmdID>
    <Item>
@@ -392,7 +402,7 @@ Get all installed client certificates.
 
 Delete a root certificate.
 
-``` syntax
+```xml
 <Delete>
    <CmdID>1</CmdID>
    <Item>
@@ -407,7 +417,7 @@ Delete a root certificate.
 
 Configure the device to enroll a client certificate through SCEP.
 
-``` syntax
+```xml
 <Atomic>
 <CmdID>100</CmdID>
 <Add>
@@ -586,7 +596,7 @@ Configure the device to enroll a client certificate through SCEP.
 
 Configure the device to automatically renew an MDM client certificate with the specified renew period and retry interval.
 
-``` syntax
+```xml
 <Atomic>
    <CmdID>1</CmdID>
      <Replace>
@@ -627,10 +637,9 @@ Configure the device to automatically renew an MDM client certificate with the s
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
-
+ 
 
 
 

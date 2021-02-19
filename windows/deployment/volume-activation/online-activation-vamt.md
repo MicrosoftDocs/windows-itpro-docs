@@ -1,13 +1,18 @@
 ---
 title: Perform Online Activation (Windows 10)
-description: Perform Online Activation
+description: Learn how to use the Volume Activation Management Tool (VAMT) to enable client products to be activated online.
 ms.assetid: 8381792b-a454-4e66-9b4c-e6e4c9303823
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
+ms.topic: article
 ---
 
 # Perform Online Activation

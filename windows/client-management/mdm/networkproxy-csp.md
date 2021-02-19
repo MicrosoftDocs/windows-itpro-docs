@@ -1,19 +1,21 @@
 ---
 title: NetworkProxy CSP
-description: NetworkProxy CSP
-ms.author: maricia
+description: Learn how the NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections.
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 06/26/2017
+author: manikadhiman
+ms.date: 08/29/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # NetworkProxy CSP
 
 The NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections. This CSP was added in Windows 10, version 1703.
 
-> [!Note]  
+> [!NOTE]
 > In Windows 10 Mobile, the NetworkProxy CSP only works in ethernet connections. Use the WiFi CSP to configure per-network proxy for Wi-Fi connections in mobile devices.  
 
 How the settings work:  
@@ -31,38 +33,104 @@ The following diagram shows the NetworkProxy configuration service provider in t
 ![networkproxy csp](images/provisioning-csp-networkproxy.png)
 
 <a href="" id="networkproxy"></a>**./Vendor/MSFT/NetworkProxy**  
-<p style="margin-left: 20px">The root node for the NetworkProxy configuration service provider..</p>
+The root node for the NetworkProxy configuration service provider..
 
-<a href="" id="autodetect"></a>**AutoDetect**  
-<p style="margin-left: 20px">Automatically detect settings. If enabled, the system tries to find the path to a PAC script.</p>
-<p style="margin-left: 20px">Valid values:</p>
+<a href="" id="proxysettingsperuser"></a>**ProxySettingsPerUser**  
+Added in Windows 10, version 1803. When set to 0, it enables proxy configuration as global, machine wide.
+
+Supported operations are Add, Get, Replace, and Delete.
+
+> [!Note]
+> Per user proxy configuration setting is not supported using a configuration file, only modifying registry settings on a local machine.
+
+<a href="" id="autodetect"></a>**AutoDetect**
+Automatically detect settings. If enabled, the system tries to find the path to a PAC script.
+
+Valid values:
 <ul>
 <li>0 - Disabled</li>
 <li>1 (default) - Enabled</li>
 </ul>
-<p style="margin-left: 20px">The data type is int. Supported operations are Get and Replace.</p>
 
-<a href="" id="setupscripturl"></a>**SetupScriptUrl**  
-<p style="margin-left: 20px">Address to the PAC script you want to use.</p>
-<p style="margin-left: 20px">The data type is string. Supported operations are Get and Replace.</p>
+The data type is integer. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
+
+<a href="" id="setupscripturl"></a>**SetupScriptUrl**
+Address to the PAC script you want to use.
+
+The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
 <a href="" id="proxyserver"></a>**ProxyServer**  
-<p style="margin-left: 20px">Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.</p>
-<p style="margin-left: 20px">Supported operation is Get.</p>
+Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.
+
+Supported operation is Get.
 
 <a href="" id="proxyaddress"></a>**ProxyAddress**  
-<p style="margin-left: 20px">Address to the proxy server. Specify an address in the format &lt;server&gt;[“:”&lt;port&gt;]. </p>
-<p style="margin-left: 20px">The data type is string. Supported operations are Get and Replace.</p>
+Address to the proxy server. Specify an address in the format &lt;server&gt;[“:”&lt;port&gt;]. 
+
+The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
 <a href="" id="exceptions"></a>**Exceptions**  
-<p style="margin-left: 20px">Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node. Use semicolons (;) to separate entries. </p>
-<p style="margin-left: 20px">The data type is string. Supported operations are Get and Replace.</p>
+Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node. Use semicolons (;) to separate entries. 
+
+The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
 <a href="" id="useproxyforlocaladdresses"></a>**UseProxyForLocalAddresses**  
-<p style="margin-left: 20px">Specifies whether the proxy server should be used for local (intranet) addresses. </p>
-<p style="margin-left: 20px">Valid values:</p>
+Specifies whether the proxy server should be used for local (intranet) addresses. 
+Valid values:
 <ul>
-<li>0 (default) - Do not use proxy server for local addresses</li>
-<li>1 - Use proxy server for local addresses</li>
+<li>0 (default) - Use proxy server for local addresses</li>
+<li>1 - Do not use proxy server for local addresses</li>
 </ul>
-<p style="margin-left: 20px">The data type is int. Supported operations are Get and Replace.</p>
+
+The data type is integer. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
+
+## Configuration Example
+
+These generic code portions for the options **ProxySettingsPerUser**, **Autodetect**, and **SetupScriptURL** can be used for a specific operation, for example Replace.  Only enter the portion of code needed in the **Replace** section.
+```xml
+<Replace>
+    <CmdID>1</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/NetworkProxy/ProxySettingsPerUser</LocURI>
+        </Target>
+        <Meta>
+            <Format xmlns="syncml:metinf">int</Format>
+            <Type>text/plain</Type>
+        </Meta>
+        <Data>0</Data>
+    </Item>
+</Replace>
+```
+
+```xml
+<Replace>
+    <CmdID>2</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/NetworkProxy/AutoDetect</LocURI>
+        </Target>
+        <Meta>
+            <Format xmlns="syncml:metinf">int</Format>
+            <Type>text/plain</Type>
+        </Meta>
+        <Data>1</Data>
+    </Item>
+</Replace> 
+```
+
+```xml
+<Replace>
+    <CmdID>3</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/NetworkProxy/SetupScriptUrl</LocURI>
+        </Target>
+        <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+            <Type>text/plain</Type>
+        </Meta>
+        <Data>Insert the proxy PAC URL location here:</Data>
+    </Item>
+</Replace>
+```

@@ -2,15 +2,18 @@
 title: Use AppLocker to create a Windows 10 kiosk that runs multiple apps (Windows 10)
 description: Learn how to use AppLocker to configure a kiosk device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
+ms.reviewer: 
+manager: dansimp
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
-author: jdeckerms
-ms.localizationpriority: high
-ms.date: 08/14/2017
-ms.author: jdecker
+author: dansimp
+ms.localizationpriority: medium
+ms.date: 07/30/2018
+ms.author: dansimp
+ms.topic: article
 ---
 
 # Use AppLocker to create a Windows 10 kiosk that runs multiple apps
@@ -36,7 +39,7 @@ This topic describes how to lock down apps on a local device. You can also use A
 ## Install apps
 
 
-First, install the desired apps on the device for the target user account(s). This works for both Store and Win32. For Store apps, you must log on as that user for the app to install. For Win32 you can install an app for all users without logging on to the particular account.
+First, install the desired apps on the device for the target user account(s). This works for both Unified Windows Platform (UWP) apps and Windows desktop apps. For UWP apps, you must log on as that user for the app to install. For desktop apps, you can install an app for all users without logging on to the particular account.
 
 ## Use AppLocker to set rules for apps
 
@@ -111,7 +114,7 @@ In addition to specifying the apps that users can run, you should also restrict 
     **Note**  
     To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
 
-     
+     
 
 To learn more about locking down features, see [Customizations for Windows 10 Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=691442).
 

@@ -1,23 +1,26 @@
 ---
 title: XML Elements Library (Windows 10)
-description: XML Elements Library
+description: Learn about the XML elements and helper functions that you can employ to author migration .xml files to use with User State Migration Tool (USMT).
 ms.assetid: f5af0f6d-c3bf-4a4c-a0ca-9db7985f954f
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # XML Elements Library
 
 
-## Overview
-
 
 This topic describes the XML elements and helper functions that you can employ to author migration .xml files to use with User State Migration Tool (USMT). It is assumed that you understand the basics of XML. .
 
-## In This Topic
+## In this topic
 
 
 In addition to XML elements and helper functions, this topic describes how to specify encoded locations and locations patterns, functions that are for internal USMT use only, and the version tags that you can use with helper functions.
@@ -52,66 +55,66 @@ The following table describes the XML elements and helper functions you can use 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[&lt;addObjects&gt;](#addobjects)</p>
-<p>[&lt;attributes&gt;](#attribute)</p>
-<p>[&lt;bytes&gt;](#bytes)</p>
-<p>[&lt;commandLine&gt;](#commandline)</p>
-<p>[&lt;component&gt;](#component)</p>
-<p>[&lt;condition&gt;](#condition)</p>
-<p>[&lt;conditions&gt;](#conditions)</p>
-<p>[&lt;content&gt;](#content)</p>
-<p>[&lt;contentModify&gt;](#contentmodify)</p>
-<p>[&lt;description&gt;](#description)</p>
-<p>[&lt;destinationCleanup&gt;](#destinationcleanup)</p>
-<p>[&lt;detect&gt;](#detect)</p>
-<p>[&lt;detects&gt;](#detects)</p>
-<p>[&lt;detection&gt;](#detection)</p>
-<p>[&lt;displayName&gt;](#displayname)</p>
-<p>[&lt;environment&gt;](#bkmk-environment)</p>
-<p>[&lt;exclude&gt;](#exclude)</p>
-<p>[&lt;excludeAttributes&gt;](#excludeattributes)</p>
-<p>[&lt;extensions&gt;](#extensions)</p>
-<p>[&lt;extension&gt;](#extension)</p>
-<p>[&lt;externalProcess&gt;](#externalprocess)</p>
-<p>[&lt;icon&gt;](#icon)</p>
-<p>[&lt;include&gt;](#include)</p>
-<p>[&lt;includeAttribute&gt;](#includeattributes)</p></td>
-<td align="left"><p>[&lt;library&gt;](#library)</p>
-<p>[&lt;location&gt;](#location)</p>
-<p>[&lt;locationModify&gt;](#locationmodify)</p>
-<p>[&lt;_locDefinition&gt;](#locdefinition)</p>
-<p>[&lt;manufacturer&gt;](#manufacturer)</p>
-<p>[&lt;merge&gt;](#merge)</p>
-<p>[&lt;migration&gt;](#migration)</p>
-<p>[&lt;namedElements&gt;](#namedelements)</p>
-<p>[&lt;object&gt;](#object)</p>
-<p>[&lt;objectSet&gt;](#objectset)</p>
-<p>[&lt;path&gt;](#path)</p>
-<p>[&lt;paths&gt;](#paths)</p>
-<p>[&lt;pattern&gt;](#pattern)</p>
-<p>[&lt;processing&gt;](#processing)</p>
-<p>[&lt;plugin&gt;](#plugin)</p>
-<p>[&lt;role&gt;](#role)</p>
-<p>[&lt;rules&gt;](#rules)</p>
-<p>[&lt;script&gt;](#script)</p>
-<p>[&lt;text&gt;](#text)</p>
-<p>[&lt;unconditionalExclude&gt;](#unconditionalexclude)</p>
-<p>[&lt;variable&gt;](#variable)</p>
-<p>[&lt;version&gt;](#version)</p>
-<p>[&lt;windowsObjects&gt;](#windowsobjects)</p></td>
-<td align="left"><p>[&lt;condition&gt; functions](#conditionfunctions)</p>
-<p>[&lt;content&gt; functions](#contentfunctions)</p>
-<p>[&lt;contentModify&gt; functions](#contentmodifyfunctions)</p>
-<p>[&lt;include&gt; and &lt;exclude&gt; filter functions](#persistfilterfunctions)</p>
-<p>[&lt;locationModify&gt; functions](#locationmodifyfunctions)</p>
-<p>[&lt;merge&gt; functions](#mergefunctions)</p>
-<p>[&lt;script&gt; functions](#scriptfunctions)</p>
-<p>[Internal USMT functions](#internalusmtfunctions)</p></td>
+<td align="left"><p><a href="#addobjects" data-raw-source="[&amp;lt;addObjects&amp;gt;](#addobjects)">&lt;addObjects&gt;</a></p>
+<p><a href="#attribute" data-raw-source="[&amp;lt;attributes&amp;gt;](#attribute)">&lt;attributes&gt;</a></p>
+<p><a href="#bytes" data-raw-source="[&amp;lt;bytes&amp;gt;](#bytes)">&lt;bytes&gt;</a></p>
+<p><a href="#commandline" data-raw-source="[&amp;lt;commandLine&amp;gt;](#commandline)">&lt;commandLine&gt;</a></p>
+<p><a href="#component" data-raw-source="[&amp;lt;component&amp;gt;](#component)">&lt;component&gt;</a></p>
+<p><a href="#condition" data-raw-source="[&amp;lt;condition&amp;gt;](#condition)">&lt;condition&gt;</a></p>
+<p><a href="#conditions" data-raw-source="[&amp;lt;conditions&amp;gt;](#conditions)">&lt;conditions&gt;</a></p>
+<p><a href="#content" data-raw-source="[&amp;lt;content&amp;gt;](#content)">&lt;content&gt;</a></p>
+<p><a href="#contentmodify" data-raw-source="[&amp;lt;contentModify&amp;gt;](#contentmodify)">&lt;contentModify&gt;</a></p>
+<p><a href="#description" data-raw-source="[&amp;lt;description&amp;gt;](#description)">&lt;description&gt;</a></p>
+<p><a href="#destinationcleanup" data-raw-source="[&amp;lt;destinationCleanup&amp;gt;](#destinationcleanup)">&lt;destinationCleanup&gt;</a></p>
+<p><a href="#detect" data-raw-source="[&amp;lt;detect&amp;gt;](#detect)">&lt;detect&gt;</a></p>
+<p><a href="#detects" data-raw-source="[&amp;lt;detects&amp;gt;](#detects)">&lt;detects&gt;</a></p>
+<p><a href="#detection" data-raw-source="[&amp;lt;detection&amp;gt;](#detection)">&lt;detection&gt;</a></p>
+<p><a href="#displayname" data-raw-source="[&amp;lt;displayName&amp;gt;](#displayname)">&lt;displayName&gt;</a></p>
+<p><a href="#bkmk-environment" data-raw-source="[&amp;lt;environment&amp;gt;](#bkmk-environment)">&lt;environment&gt;</a></p>
+<p><a href="#exclude" data-raw-source="[&amp;lt;exclude&amp;gt;](#exclude)">&lt;exclude&gt;</a></p>
+<p><a href="#excludeattributes" data-raw-source="[&amp;lt;excludeAttributes&amp;gt;](#excludeattributes)">&lt;excludeAttributes&gt;</a></p>
+<p><a href="#extensions" data-raw-source="[&amp;lt;extensions&amp;gt;](#extensions)">&lt;extensions&gt;</a></p>
+<p><a href="#extension" data-raw-source="[&amp;lt;extension&amp;gt;](#extension)">&lt;extension&gt;</a></p>
+<p><a href="#externalprocess" data-raw-source="[&amp;lt;externalProcess&amp;gt;](#externalprocess)">&lt;externalProcess&gt;</a></p>
+<p><a href="#icon" data-raw-source="[&amp;lt;icon&amp;gt;](#icon)">&lt;icon&gt;</a></p>
+<p><a href="#include" data-raw-source="[&amp;lt;include&amp;gt;](#include)">&lt;include&gt;</a></p>
+<p><a href="#includeattributes" data-raw-source="[&amp;lt;includeAttribute&amp;gt;](#includeattributes)">&lt;includeAttribute&gt;</a></p></td>
+<td align="left"><p><a href="#library" data-raw-source="[&amp;lt;library&amp;gt;](#library)">&lt;library&gt;</a></p>
+<p><a href="#location" data-raw-source="[&amp;lt;location&amp;gt;](#location)">&lt;location&gt;</a></p>
+<p><a href="#locationmodify" data-raw-source="[&amp;lt;locationModify&amp;gt;](#locationmodify)">&lt;locationModify&gt;</a></p>
+<p><a href="#locdefinition" data-raw-source="[&amp;lt;_locDefinition&amp;gt;](#locdefinition)">&lt;_locDefinition&gt;</a></p>
+<p><a href="#manufacturer" data-raw-source="[&amp;lt;manufacturer&amp;gt;](#manufacturer)">&lt;manufacturer&gt;</a></p>
+<p><a href="#merge" data-raw-source="[&amp;lt;merge&amp;gt;](#merge)">&lt;merge&gt;</a></p>
+<p><a href="#migration" data-raw-source="[&amp;lt;migration&amp;gt;](#migration)">&lt;migration&gt;</a></p>
+<p><a href="#namedelements" data-raw-source="[&amp;lt;namedElements&amp;gt;](#namedelements)">&lt;namedElements&gt;</a></p>
+<p><a href="#object" data-raw-source="[&amp;lt;object&amp;gt;](#object)">&lt;object&gt;</a></p>
+<p><a href="#objectset" data-raw-source="[&amp;lt;objectSet&amp;gt;](#objectset)">&lt;objectSet&gt;</a></p>
+<p><a href="#path" data-raw-source="[&amp;lt;path&amp;gt;](#path)">&lt;path&gt;</a></p>
+<p><a href="#paths" data-raw-source="[&amp;lt;paths&amp;gt;](#paths)">&lt;paths&gt;</a></p>
+<p><a href="#pattern" data-raw-source="[&amp;lt;pattern&amp;gt;](#pattern)">&lt;pattern&gt;</a></p>
+<p><a href="#processing" data-raw-source="[&amp;lt;processing&amp;gt;](#processing)">&lt;processing&gt;</a></p>
+<p><a href="#plugin" data-raw-source="[&amp;lt;plugin&amp;gt;](#plugin)">&lt;plugin&gt;</a></p>
+<p><a href="#role" data-raw-source="[&amp;lt;role&amp;gt;](#role)">&lt;role&gt;</a></p>
+<p><a href="#rules" data-raw-source="[&amp;lt;rules&amp;gt;](#rules)">&lt;rules&gt;</a></p>
+<p><a href="#script" data-raw-source="[&amp;lt;script&amp;gt;](#script)">&lt;script&gt;</a></p>
+<p><a href="#text" data-raw-source="[&amp;lt;text&amp;gt;](#text)">&lt;text&gt;</a></p>
+<p><a href="#unconditionalexclude" data-raw-source="[&amp;lt;unconditionalExclude&amp;gt;](#unconditionalexclude)">&lt;unconditionalExclude&gt;</a></p>
+<p><a href="#variable" data-raw-source="[&amp;lt;variable&amp;gt;](#variable)">&lt;variable&gt;</a></p>
+<p><a href="#version" data-raw-source="[&amp;lt;version&amp;gt;](#version)">&lt;version&gt;</a></p>
+<p><a href="#windowsobjects" data-raw-source="[&amp;lt;windowsObjects&amp;gt;](#windowsobjects)">&lt;windowsObjects&gt;</a></p></td>
+<td align="left"><p><a href="#conditionfunctions" data-raw-source="[&amp;lt;condition&amp;gt; functions](#conditionfunctions)">&lt;condition&gt; functions</a></p>
+<p><a href="#contentfunctions" data-raw-source="[&amp;lt;content&amp;gt; functions](#contentfunctions)">&lt;content&gt; functions</a></p>
+<p><a href="#contentmodifyfunctions" data-raw-source="[&amp;lt;contentModify&amp;gt; functions](#contentmodifyfunctions)">&lt;contentModify&gt; functions</a></p>
+<p><a href="#persistfilterfunctions" data-raw-source="[&amp;lt;include&amp;gt; and &amp;lt;exclude&amp;gt; filter functions](#persistfilterfunctions)">&lt;include&gt; and &lt;exclude&gt; filter functions</a></p>
+<p><a href="#locationmodifyfunctions" data-raw-source="[&amp;lt;locationModify&amp;gt; functions](#locationmodifyfunctions)">&lt;locationModify&gt; functions</a></p>
+<p><a href="#mergefunctions" data-raw-source="[&amp;lt;merge&amp;gt; functions](#mergefunctions)">&lt;merge&gt; functions</a></p>
+<p><a href="#scriptfunctions" data-raw-source="[&amp;lt;script&amp;gt; functions](#scriptfunctions)">&lt;script&gt; functions</a></p>
+<p><a href="#internalusmtfunctions" data-raw-source="[Internal USMT functions](#internalusmtfunctions)">Internal USMT functions</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="addobjects"></a>&lt;addObjects&gt;
 
@@ -134,7 +137,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-``` syntax
+``` xml
 <addObjects>
    <object>
       <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [UpgradeVersion]</location>
@@ -204,11 +207,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigApp.xml file:
 
-``` syntax
+``` xml
 <object>
    <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [Lang]</location>
    <attributes>DWORD</attributes>
@@ -267,11 +270,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigApp.xml file:
 
-``` syntax
+``` xml
 <object>
    <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [Lang]</location>
    <attributes>DWORD</attributes>
@@ -316,12 +319,12 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="component"></a>&lt;component&gt;
 
 
-The &lt;component&gt; element is required in a custom .xml file. This element defines the most basic construct of a migration .xml file. For example, in the MigApp.xml file, "Microsoft® Office 2003" is a component that contains another component, "Microsoft Office Access® 2003". You can use the child elements to define the component.
+The &lt;component&gt; element is required in a custom .xml file. This element defines the most basic construct of a migration .xml file. For example, in the MigApp.xml file, "Microsoft&reg; Office 2003" is a component that contains another component, "Microsoft Office Access&reg; 2003". You can use the child elements to define the component.
 
 A component can be nested inside another component; that is, the &lt;component&gt; element can be a child of the &lt;role&gt; element within the &lt;component&gt; element in two cases: 1) when the parent &lt;component&gt; element is a container or 2) if the child &lt;component&gt; element has the same role as the parent &lt;component&gt; element.
 
@@ -360,8 +363,8 @@ hidden="Yes|No"&gt;
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>You can use the following to group settings, and define the type of the component.</p>
 <ul>
-<li><p><strong>System:</strong> Operating system settings. All Windows® components are defined by this type.</p>
-<p>When type=&quot;System&quot; and defaultSupported=&quot;FALSE&quot; the settings will not migrate unless there is an equivalent component in the .xml files that is specified on the LoadState command line. For example, the default MigSys.xml file contains components with type=&quot;System&quot; and defaultSupported=&quot;FALSE&quot;. If you specify this file on the ScanState command line, you must also specify the file on the LoadState command line for the settings to migrate. This is because the LoadState tool must detect an equivalent component. That is, the component must have the same migration urlid of the .xml file and an identical display name. Otherwise, the LoadState tool will not migrate those settings from the store. This is helpful when the source computer is running Windows XP, and you are migrating to both Windows Vista and Windows XP because you can use the same store for both destination computers.</p></li>
+<li><p><strong>System:</strong> Operating system settings. All Windows&reg; components are defined by this type.</p>
+<p>When type=&quot;System&quot; and defaultSupported=&quot;FALSE&quot; the settings will not migrate unless there is an equivalent component in the .xml files that is specified on the LoadState command line. For example, the default MigSys.xml file contains components with type=&quot;System&quot; and defaultSupported=&quot;FALSE&quot;. If you specify this file on the ScanState command line, you must also specify the file on the LoadState command line for the settings to migrate. This is because the LoadState tool must detect an equivalent component. That is, the component must have the same migration urlid of the .xml file and an identical display name. Otherwise, the LoadState tool will not migrate those settings from the store. This is helpful when the source computer is running Windows XP, and you are migrating to both Windows Vista and Windows XP because you can use the same store for both destination computers.</p></li>
 <li><p><strong>Application:</strong> Settings for an application.</p></li>
 <li><p><strong>Device:</strong> Settings for a device.</p></li>
 <li><p><strong>Documents:</strong> Specifies files.</p></li>
@@ -384,17 +387,17 @@ hidden="Yes|No"&gt;
 <td align="left"><p>No</p>
 <p>(default = TRUE)</p></td>
 <td align="left"><p>Can be any of TRUE, FALSE, YES or NO. If this parameter is FALSE (or NO), the component will not be migrated unless there is an equivalent component on the destination computer.</p>
-<p>When type=&quot;System&quot; and defaultSupported=&quot;FALSE&quot; the settings will not migrate unless there is an equivalent component in the .xml files that are specified on the LoadState command line. For example, the default MigSys.xml file contains components with type=&quot;System&quot; and defaultSupported=&quot;FALSE&quot;. If you specify this file on the ScanState command line, you must also specify the file on the LoadState command line for the settings to migrate. This is because the LoadState tool must detect an equivalent component. That is, the component must have the same migration urlid of the .xml file and an identical display name or the LoadState tool will not migrate those settings from the store. This is helpful when the source computer is running Windows XP, and you are migrating to both Windows Vista and Windows XP because you can use the same store for both destination computers.</p></td>
+<p>When type=&quot;System&quot; and defaultSupported=&quot;FALSE&quot; the settings will not migrate unless there is an equivalent component in the .xml files that are specified on the LoadState command line. For example, the default MigSys.xml file contains components with type=&quot;System&quot; and defaultSupported=&quot;FALSE&quot;. If you specify this file on the ScanState command line, you must also specify the file on the LoadState command line for the settings to migrate. This is because the LoadState tool must detect an equivalent component. That is, the component must have the same migration urlid of the .xml file and an identical display name or the LoadState tool will not migrate those settings from the store. This is helpful when the source computer is running Windows XP, and you are migrating to both Windows Vista and Windows XP because you can use the same store for both destination computers.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>hidden</p></td>
-<td align="left"><p> </p></td>
+<td align="left"><p> </p></td>
 <td align="left"><p>This parameter is for internal USMT use only.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 For an example, see any of the default migration .xml files.
 
@@ -445,13 +448,13 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 For example,
 
 In the code sample below, the &lt;condition&gt; elements, A and B, are joined together by the AND operator because they are in separate &lt;conditions&gt; sections. For example:
 
-``` syntax
+``` xml
 <detection>
    <conditions>
       <condition>A</condition>
@@ -464,7 +467,7 @@ In the code sample below, the &lt;condition&gt; elements, A and B, are joined to
 
 However, in the code sample below, the &lt;condition&gt; elements, A and B, are joined together by the OR operator because they are in the same &lt;conditions&gt; section.
 
-``` syntax
+``` xml
 <detection>
    <conditions>
       <condition>A</condition>
@@ -511,16 +514,18 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     <tr class="even">
     <td align="left"><p><em>OSVersion</em></p></td>
     <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The major version, minor version, build number and corrected service diskette version separated by periods. For example, <code>5.0.2600.Service Pack 1</code>. You can also specify partial specification of the version with a pattern. For example, <code>5.0.*</code>.</p></td>
+    <td align="left"><p>The major version, minor version, build number and corrected service diskette version separated by periods. For example, <code>5.0.2600.Service Pack 1</code>. You can also specify partial specification of the version with a pattern. For example, <code>5.0.*</code>.</p></td>
     </tr>
     </tbody>
     </table>
 
-     
 
-    For example:
 
-    &lt;condition&gt;MigXmlHelper.DoesOSMatch("NT","\*")&lt;/condition&gt;
+~~~
+For example:
+
+&lt;condition&gt;MigXmlHelper.DoesOSMatch("NT","\*")&lt;/condition&gt;
+~~~
 
 -   **IsNative64Bit**
 
@@ -549,22 +554,24 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     <tr class="odd">
     <td align="left"><p><em>OSType</em></p></td>
     <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Can be <strong>9x</strong> or <strong>NT</strong>. If <em>OSType</em> does not match the type of the current operating system, then it returns FALSE. For example, if the current operating system is Windows NT-based and <em>OSType</em> is “9x”, the result will be FALSE.</p></td>
+    <td align="left"><p>Can be <strong>9x</strong> or <strong>NT</strong>. If <em>OSType</em> does not match the type of the current operating system, then it returns FALSE. For example, if the current operating system is Windows NT-based and <em>OSType</em> is "9x", the result will be FALSE.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><em>OSVersion</em></p></td>
     <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The major version, minor version, build number, and corrected service diskette version separated by periods. For example, <code>5.0.2600.Service Pack 1</code>. You can also specify partial specification of the version but no pattern is allowed. For example, <code>5.0</code>.</p>
+    <td align="left"><p>The major version, minor version, build number, and corrected service diskette version separated by periods. For example, <code>5.0.2600.Service Pack 1</code>. You can also specify partial specification of the version but no pattern is allowed. For example, <code>5.0</code>.</p>
     <p>The IsOSLaterThan function returns TRUE if the current operating system is later than or equal to <em>OSVersion</em>.</p></td>
     </tr>
     </tbody>
     </table>
 
-     
 
-    For example:
 
-    &lt;condition negation="Yes"&gt;MigXmlHelper.IsOSLaterThan("NT","6.0")&lt;/condition&gt;
+~~~
+For example:
+
+&lt;condition negation="Yes"&gt;MigXmlHelper.IsOSLaterThan("NT","6.0")&lt;/condition&gt;
+~~~
 
 -   **IsOSEarlierThan**
 
@@ -589,412 +596,420 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     <tr class="odd">
     <td align="left"><p><em>OSType</em></p></td>
     <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Can be <strong>9x</strong> or <strong>NT</strong>. If <em>OSType</em> does not match the type of the current operating system, then it returns FALSE. For example, if the current operating system is Windows NT-based and <em>OSType</em> is “9x” the result will be FALSE.</p></td>
+    <td align="left"><p>Can be <strong>9x</strong> or <strong>NT</strong>. If <em>OSType</em> does not match the type of the current operating system, then it returns FALSE. For example, if the current operating system is Windows NT-based and <em>OSType</em> is "9x" the result will be FALSE.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><em>OSVersion</em></p></td>
     <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The major version, minor version, build number, and corrected service diskette version separated by periods. For example, <code>5.0.2600.Service Pack 1</code>. You can also specify partial specification of the version but no pattern is allowed. For example, <code>5.0</code>.</p>
+    <td align="left"><p>The major version, minor version, build number, and corrected service diskette version separated by periods. For example, <code>5.0.2600.Service Pack 1</code>. You can also specify partial specification of the version but no pattern is allowed. For example, <code>5.0</code>.</p>
     <p>The IsOSEarlierThan function returns TRUE if the current operating system is earlier than <em>OSVersion</em>.</p></td>
     </tr>
     </tbody>
     </table>
 
-     
+
 
 ### <a href="" id="objectcontentfunctions"></a>Object content functions
 
--   **DoesObjectExist**
+- **DoesObjectExist**
 
-    The DoesObjectExist function returns TRUE if any object exists that matches the location pattern. Otherwise, it returns FALSE. The location pattern is expanded before attempting the enumeration.
+  The DoesObjectExist function returns TRUE if any object exists that matches the location pattern. Otherwise, it returns FALSE. The location pattern is expanded before attempting the enumeration.
 
-    Syntax: DoesObjectExist("*ObjectType*","*EncodedLocationPattern*")
+  Syntax: DoesObjectExist("*ObjectType*","*EncodedLocationPattern*")
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>ObjectType</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Defines the object type. Can be File or Registry.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>EncodedLocationPattern</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [location pattern](#locations). Environment variables are allowed.</p></td>
-    </tr>
-    </tbody>
-    </table>
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>ObjectType</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>Defines the object type. Can be File or Registry.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>EncodedLocationPattern</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[location pattern](#locations)">location pattern</a>. Environment variables are allowed.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-     
 
-    For an example of this element, see the MigApp.xml file.
 
--   **DoesFileVersionMatch**
+~~~
+For an example of this element, see the MigApp.xml file.
+~~~
 
-    The pattern check is case insensitive.
+- **DoesFileVersionMatch**
 
-    Syntax: DoesFileVersionMatch("*EncodedFileLocation*","*VersionTag*","*VersionValue*")
+  The pattern check is case insensitive.
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>EncodedFileLocation</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [location pattern](#locations) for the file that will be checked. Environment variables are allowed.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>VersionTag</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [version tag](#allowed) value that will be checked.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><em>VersionValue</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>A string pattern. For example, &quot;Microsoft*&quot;.</p></td>
-    </tr>
-    </tbody>
-    </table>
+  Syntax: DoesFileVersionMatch("*EncodedFileLocation*","*VersionTag*","*VersionValue*")
 
-     
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>EncodedFileLocation</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[location pattern](#locations)">location pattern</a> for the file that will be checked. Environment variables are allowed.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>VersionTag</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#allowed" data-raw-source="[version tag](#allowed)">version tag</a> value that will be checked.</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p><em>VersionValue</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>A string pattern. For example, &quot;Microsoft*&quot;.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-    For example:
 
-    &lt;condition&gt;MigXmlHelper.DoesFileVersionMatch("%MSNMessengerInstPath%\\msnmsgr.exe","ProductVersion","6.\*")&lt;/condition&gt;
 
-    &lt;condition&gt;MigXmlHelper.DoesFileVersionMatch("%MSNMessengerInstPath%\\msnmsgr.exe","ProductVersion","7.\*")&lt;/condition&gt;
+~~~
+For example:
 
--   **IsFileVersionAbove**
+&lt;condition&gt;MigXmlHelper.DoesFileVersionMatch("%MSNMessengerInstPath%\\msnmsgr.exe","ProductVersion","6.\*")&lt;/condition&gt;
 
-    The IsFileVersionAbove function returns TRUE if the version of the file is higher than *VersionValue*.
+&lt;condition&gt;MigXmlHelper.DoesFileVersionMatch("%MSNMessengerInstPath%\\msnmsgr.exe","ProductVersion","7.\*")&lt;/condition&gt;
+~~~
 
-    Syntax: IsFileVersionAbove("*EncodedFileLocation*","*VersionTag*","*VersionValue*")
+- **IsFileVersionAbove**
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>EncodedFileLocation</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [location pattern](#locations) for the file that will be checked. Environment variables are allowed.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>VersionTag</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [version tag](#allowed) value that will be checked.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><em>VersionValue</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The value to compare to. You cannot specify a pattern.</p></td>
-    </tr>
-    </tbody>
-    </table>
+  The IsFileVersionAbove function returns TRUE if the version of the file is higher than *VersionValue*.
 
-     
+  Syntax: IsFileVersionAbove("*EncodedFileLocation*","*VersionTag*","*VersionValue*")
 
--   **IsFileVersionBelow**
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>EncodedFileLocation</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[location pattern](#locations)">location pattern</a> for the file that will be checked. Environment variables are allowed.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>VersionTag</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#allowed" data-raw-source="[version tag](#allowed)">version tag</a> value that will be checked.</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p><em>VersionValue</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The value to compare to. You cannot specify a pattern.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-    Syntax: IsFileVersionBelow("*EncodedFileLocation*","*VersionTag*","*VersionValue*")
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>EncodedFileLocation</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [location pattern](#locations) for the file that will be checked. Environment variables are allowed.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>VersionTag</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [version tag](#allowed) value that will be checked.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><em>VersionValue</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The value to compare to. You cannot specify a pattern.</p></td>
-    </tr>
-    </tbody>
-    </table>
 
-     
+- **IsFileVersionBelow**
 
--   **IsSystemContext**
+  Syntax: IsFileVersionBelow("*EncodedFileLocation*","*VersionTag*","*VersionValue*")
 
-    The IsSystemContext function returns TRUE if the current context is "System". Otherwise, it returns FALSE.
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>EncodedFileLocation</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[location pattern](#locations)">location pattern</a> for the file that will be checked. Environment variables are allowed.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>VersionTag</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#allowed" data-raw-source="[version tag](#allowed)">version tag</a> value that will be checked.</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p><em>VersionValue</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The value to compare to. You cannot specify a pattern.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-    Syntax: IsSystemContext()
 
--   **DoesStringContentEqual**
 
-    The DoesStringContentEqual function returns TRUE if the string representation of the given object is identical to `StringContent`.
+- **IsSystemContext**
 
-    Syntax: DoesStringContentEqual("*ObjectType*","*EncodedLocation*","*StringContent*")
+  The IsSystemContext function returns TRUE if the current context is "System". Otherwise, it returns FALSE.
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>ObjectType</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Defines the type of object. Can be File or Registry.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>EncodedLocationPattern</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [encoded location](#locations) for the object that will be examined. You can specify environment variables.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>StringContent</p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The string that will be checked against.</p></td>
-    </tr>
-    </tbody>
-    </table>
+  Syntax: IsSystemContext()
 
-     
+- **DoesStringContentEqual**
 
-    For example:
+  The DoesStringContentEqual function returns TRUE if the string representation of the given object is identical to `StringContent`.
 
-    ``` syntax
-    <condition negation="Yes">MigXmlHelper.DoesStringContentEqual("File","%USERNAME%","")</condition>
-    ```
+  Syntax: DoesStringContentEqual("*ObjectType*","*EncodedLocation*","*StringContent*")
 
--   **DoesStringContentContain**
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>ObjectType</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>Defines the type of object. Can be File or Registry.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>EncodedLocationPattern</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[encoded location](#locations)">encoded location</a> for the object that will be examined. You can specify environment variables.</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p>StringContent</p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The string that will be checked against.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-    The DoesStringContentContain function returns TRUE if there is at least one occurrence of *StrToFind* in the string representation of the object.
 
-    Syntax: DoesStringContentContain("*ObjectType*","*EncodedLocation*","*StrToFind*")
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>ObjectType</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Defines the type of object. Can be File or Registry.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>EncodedLocationPattern</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [encoded location](#locations) for the object that will be examined. You can specify environment variables.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><em>StrToFind</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>A string that will be searched inside the content of the given object.</p></td>
-    </tr>
-    </tbody>
-    </table>
+~~~
+For example:
 
-     
+``` xml
+<condition negation="Yes">MigXmlHelper.DoesStringContentEqual("File","%USERNAME%","")</condition>
+```
+~~~
 
--   **IsSameObject**
+- **DoesStringContentContain**
 
-    The IsSameObject function returns TRUE if the given encoded locations resolve to the same physical object. Otherwise, it returns FALSE.
+  The DoesStringContentContain function returns TRUE if there is at least one occurrence of *StrToFind* in the string representation of the object.
 
-    Syntax: IsSameObject("*ObjectType*","*EncodedLocation1*","*EncodedLocation2*")
+  Syntax: DoesStringContentContain("*ObjectType*","*EncodedLocation*","*StrToFind*")
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>ObjectType</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Defines the type of object. Can be File or Registry.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>EncodedLocation1</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [encoded location](#locations) for the first object. You can specify environment variables.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><em>EncodedLocation2</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [encoded location](#locations) for the second object. You can specify environment variables.</p></td>
-    </tr>
-    </tbody>
-    </table>
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>ObjectType</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>Defines the type of object. Can be File or Registry.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>EncodedLocationPattern</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[encoded location](#locations)">encoded location</a> for the object that will be examined. You can specify environment variables.</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p><em>StrToFind</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>A string that will be searched inside the content of the given object.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-     
 
-    For example:
 
-    ``` syntax
-    <objectSet>
-         <condition negation="Yes">MigXmlHelper.IsSameObject("File","%CSIDL_FAVORITES%","%CSIDL_COMMON_FAVORITES%")</condition>
-         <pattern type="File">%CSIDL_FAVORITES%\* [*]</pattern>
-    </objectSet>
-    ```
+- **IsSameObject**
 
--   **IsSameContent**
+  The IsSameObject function returns TRUE if the given encoded locations resolve to the same physical object. Otherwise, it returns FALSE.
 
-    The IsSameContent function returns TRUE if the given objects have the same content. Otherwise, it returns FALSE. The content will be compared byte by byte.
+  Syntax: IsSameObject("*ObjectType*","*EncodedLocation1*","*EncodedLocation2*")
 
-    Syntax: IsSameContent("*ObjectType1*","*EncodedLocation1*","*ObjectType2*","*EncodedLocation2*")
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>ObjectType</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>Defines the type of object. Can be File or Registry.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>EncodedLocation1</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[encoded location](#locations)">encoded location</a> for the first object. You can specify environment variables.</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p><em>EncodedLocation2</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[encoded location](#locations)">encoded location</a> for the second object. You can specify environment variables.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>ObjectType1</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Defines the type of the first object. Can be File or Registry.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>EncodedLocation1</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [encoded location](#locations) for the first object. You can specify environment variables.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><em>ObjectType2</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Defines the type of the second object. Can be File or Registry.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>EncodedLocation2</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [encoded location](#locations) for the second object. You can specify environment variables.</p></td>
-    </tr>
-    </tbody>
-    </table>
 
-     
 
--   **IsSameStringContent**
+~~~
+For example:
 
-    The IsSameStringContent function returns TRUE if the given objects have the same content. Otherwise, it returns FALSE. The content will be interpreted as a string.
+``` xml
+<objectSet>
+     <condition negation="Yes">MigXmlHelper.IsSameObject("File","%CSIDL_FAVORITES%","%CSIDL_COMMON_FAVORITES%")</condition>
+     <pattern type="File">%CSIDL_FAVORITES%\* [*]</pattern>
+</objectSet>
+```
+~~~
 
-    Syntax: IsSameStringContent("*ObjectType1*","*EncodedLocation1*","*ObjectType2*","*EncodedLocation2*")
+- **IsSameContent**
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>ObjectType1</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Defines the type of the first object. Can be File or Registry.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>EncodedLocation1</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [encoded location](#locations) for the first object. You can specify environment variables.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><em>ObjectType2</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Defines the type of the second object. Can be File or Registry.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>EncodedLocation2</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [encoded location](#locations) for the second object. You can specify environment variables.</p></td>
-    </tr>
-    </tbody>
-    </table>
+  The IsSameContent function returns TRUE if the given objects have the same content. Otherwise, it returns FALSE. The content will be compared byte by byte.
 
-     
+  Syntax: IsSameContent("*ObjectType1*","*EncodedLocation1*","*ObjectType2*","*EncodedLocation2*")
+
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>ObjectType1</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>Defines the type of the first object. Can be File or Registry.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>EncodedLocation1</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[encoded location](#locations)">encoded location</a> for the first object. You can specify environment variables.</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p><em>ObjectType2</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>Defines the type of the second object. Can be File or Registry.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>EncodedLocation2</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[encoded location](#locations)">encoded location</a> for the second object. You can specify environment variables.</p></td>
+  </tr>
+  </tbody>
+  </table>
+
+
+
+- **IsSameStringContent**
+
+  The IsSameStringContent function returns TRUE if the given objects have the same content. Otherwise, it returns FALSE. The content will be interpreted as a string.
+
+  Syntax: IsSameStringContent("*ObjectType1*","*EncodedLocation1*","*ObjectType2*","*EncodedLocation2*")
+
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>ObjectType1</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>Defines the type of the first object. Can be File or Registry.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>EncodedLocation1</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[encoded location](#locations)">encoded location</a> for the first object. You can specify environment variables.</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p><em>ObjectType2</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>Defines the type of the second object. Can be File or Registry.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>EncodedLocation2</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[encoded location](#locations)">encoded location</a> for the second object. You can specify environment variables.</p></td>
+  </tr>
+  </tbody>
+  </table>
+
+
 
 ## <a href="" id="conditions"></a>&lt;conditions&gt;
 
@@ -1035,11 +1050,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigApp.xml file:
 
-``` syntax
+``` xml
 <environment name="GlobalEnv">
    <conditions>
       <condition negation="Yes">MigXmlHelper.IsNative64Bit()</condition>
@@ -1092,7 +1107,7 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="contentfunctions"></a>&lt;content&gt; functions
 
@@ -1131,19 +1146,21 @@ The following functions generate patterns out of the content of an object. These
     </tbody>
     </table>
 
-     
 
-    For example:
 
-    ``` syntax
-    <content filter="MigXmlHelper.ExtractSingleFile(',','%system%')">
-    ```
+~~~
+For example:
 
-    and
+``` xml
+<content filter="MigXmlHelper.ExtractSingleFile(',','%system%')">
+```
 
-    ``` syntax
-    <content filter="MigXmlHelper.ExtractSingleFile(NULL,'%CSIDL_COMMON_FONTS%')">
-    ```
+and
+
+``` xml
+<content filter="MigXmlHelper.ExtractSingleFile(NULL,'%CSIDL_COMMON_FONTS%')">
+```
+~~~
 
 -   **ExtractMultipleFiles**
 
@@ -1180,7 +1197,7 @@ The following functions generate patterns out of the content of an object. These
     </tbody>
     </table>
 
-     
+
 
 -   **ExtractDirectory**
 
@@ -1220,19 +1237,21 @@ The following functions generate patterns out of the content of an object. These
     </tbody>
     </table>
 
-     
 
-    For example:
 
-    ``` syntax
-    <objectSet>
-         <content filter='MigXmlHelper.ExtractDirectory (NULL, "1")'>
-              <objectSet>
-                   <pattern type="Registry">%HklmWowSoftware%\Classes\Software\RealNetworks\Preferences\DT_Common []</pattern>
-              </objectSet>
-         </content>
-    </objectSet>
-    ```
+~~~
+For example:
+
+``` xml
+<objectSet>
+     <content filter='MigXmlHelper.ExtractDirectory (NULL, "1")'>
+          <objectSet>
+               <pattern type="Registry">%HklmWowSoftware%\Classes\Software\RealNetworks\Preferences\DT_Common []</pattern>
+          </objectSet>
+     </content>
+</objectSet>
+```
+~~~
 
 ## <a href="" id="contentmodify"></a>&lt;contentModify&gt;
 
@@ -1276,7 +1295,7 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="contentmodifyfunctions"></a>&lt;contentModify&gt; functions
 
@@ -1310,7 +1329,7 @@ The following functions change the content of objects as they are migrated. Thes
     </tbody>
     </table>
 
-     
+
 
 -   **ConvertToString**
 
@@ -1340,17 +1359,19 @@ The following functions change the content of objects as they are migrated. Thes
     </tbody>
     </table>
 
-     
 
-    For example:
 
-    ``` syntax
-    <contentModify script="MigXmlHelper.ConvertToString('1')">
-         <objectSet>
-              <pattern type="Registry">HKCU\Control Panel\Desktop [ScreenSaveUsePassword]</pattern>
-         </objectSet>
-    </contentModify>
-    ```
+~~~
+For example:
+
+``` xml
+<contentModify script="MigXmlHelper.ConvertToString('1')">
+     <objectSet>
+          <pattern type="Registry">HKCU\Control Panel\Desktop [ScreenSaveUsePassword]</pattern>
+     </objectSet>
+</contentModify>
+```
+~~~
 
 -   **ConvertToBinary**
 
@@ -1386,7 +1407,7 @@ The following functions change the content of objects as they are migrated. Thes
     </tbody>
     </table>
 
-     
+
 
 -   **SetValueByTable**
 
@@ -1427,7 +1448,7 @@ The following functions change the content of objects as they are migrated. Thes
     </tbody>
     </table>
 
-     
+
 
 -   **KeepExisting**
 
@@ -1473,11 +1494,11 @@ The following functions change the content of objects as they are migrated. Thes
     </tbody>
     </table>
 
-     
+
 
 -   **MergeMultiSzContent**
 
-    The MergeMultiSzContent function merges the MULTI-SZ content of the registry values that are enumerated by the parent &lt;ObjectSet&gt; element with the content of the equivalent registry values that already exist on the destination computer. `Instruction` and` String` either remove or add content to the resulting MULTI-SZ. Duplicate elements will be removed.
+    The MergeMultiSzContent function merges the MULTI-SZ content of the registry values that are enumerated by the parent &lt;ObjectSet&gt; element with the content of the equivalent registry values that already exist on the destination computer. `Instruction` and `String` either remove or add content to the resulting MULTI-SZ. Duplicate elements will be removed.
 
     Syntax: MergeMultiSzContent (*Instruction*,*String*,*Instruction*,*String*,…)
 
@@ -1512,7 +1533,7 @@ The following functions change the content of objects as they are migrated. Thes
     </tbody>
     </table>
 
-     
+
 
 -   **MergeDelimitedContent**
 
@@ -1557,7 +1578,7 @@ The following functions change the content of objects as they are migrated. Thes
     </tbody>
     </table>
 
-     
+
 
 ## <a href="" id="description"></a>&lt;description&gt;
 
@@ -1596,11 +1617,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 The following code sample shows how the &lt;description&gt; element defines the "My custom component" description.:
 
-``` syntax
+``` xml
 <description>My custom component<description>
 ```
 
@@ -1609,10 +1630,10 @@ The following code sample shows how the &lt;description&gt; element defines the 
 
 The &lt;destinationCleanup&gt; element deletes objects, such as files and registry keys, from the destination computer before applying the objects from the source computer. This element is evaluated only when the LoadState tool is run on the destination computer. That is, this element is ignored by the ScanState tool.
 
-**Important**  
+**Important**  
 Use this option with extreme caution because it will delete objects from the destination computer.
 
- 
+
 
 For each &lt;destinationCleanup&gt; element there can be multiple &lt;objectSet&gt; elements. A common use for this element is if there is a missing registry key on the source computer and you want to ensure that a component is migrated. In this case, you can delete all of the component's registry keys before migrating the source registry keys. This will ensure that if there is a missing key on the source computer, it will also be missing on the destination computer.
 
@@ -1651,11 +1672,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 For example:
 
-``` syntax
+``` xml
 <destinationCleanup>
    <objectSet>
       <pattern type="Registry">HKCU\Software\Lotus\123\99.0\DDE Preferences\* [*]</pattern>
@@ -1722,7 +1743,7 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 For examples, see the examples for [&lt;detection&gt;](#detection).
 
@@ -1781,11 +1802,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigApp.xml file.
 
-``` syntax
+``` xml
 <detects>
    <detect>
       <condition>MigXmlHelper.DoesFileVersionMatch("%Lotus123InstPath%\123w.exe","ProductVersion","9.*")</condition>
@@ -1852,11 +1873,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 For example:
 
-``` syntax
+``` xml
 <detection name="AdobePhotoshopCS">
    <conditions>
       <condition>MigXmlHelper.DoesObjectExist("Registry","HKCU\Software\Adobe\Photoshop\8.0")</condition>
@@ -1867,7 +1888,7 @@ For example:
 
 and
 
-``` syntax
+``` xml
 <role role="Settings">
    <detection>
       <conditions>
@@ -1919,11 +1940,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 For example:
 
-``` syntax
+``` xml
 <displayName>Command Prompt settings</displayName>
 ```
 
@@ -1981,7 +2002,7 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="envex"></a>
 
@@ -1990,7 +2011,7 @@ Syntax:
 
 In this scenario, you want to generate the location of objects at run time depending on the configuration of the destination computer. For example, you must do this if an application writes data in the directory where it is installed, and users can install the application anywhere on the computer. If the application writes a registry value hklm\\software\\companyname\\install \[path\] and then updates this value with the location where the application is installed, then the only way for you to migrate the required data correctly is to define an environment variable. For example:
 
-``` syntax
+``` xml
 <environment>
    <variable name="INSTALLPATH">
       <script>MigXmlHelper.GetStringContent("Registry","\software\companyname\install [path]")</script>
@@ -2000,7 +2021,7 @@ In this scenario, you want to generate the location of objects at run time depen
 
 Then you can use an include rule as follows. You can use any of the [&lt;script&gt; functions](#scriptfunctions) to perform similar tasks.
 
-``` syntax
+``` xml
 <include>
    <objectSet>
       <pattern type="File">%INSTALLPATH%\ [*.xyz]</pattern>
@@ -2010,7 +2031,7 @@ Then you can use an include rule as follows. You can use any of the [&lt;script&
 
 Second, you can also filter registry values that contain data that you need. The following example extracts the first string (before the separator ",") in the value of the registry Hklm\\software\\companyname\\application\\ \[Path\].
 
-``` syntax
+``` xml
 <environment>
    <variable name="APPPATH">
         <objectSet>
@@ -2028,7 +2049,7 @@ Second, you can also filter registry values that contain data that you need. The
 
 In this scenario, you want to migrate five files named File1.txt, File2.txt, and so on, from %SYSTEMDRIVE%\\data\\userdata\\dir1\\dir2\\. To do this you must have the following &lt;include&gt; rule in an .xml file:
 
-``` syntax
+``` xml
 <include>
    <objectSet>
       <pattern type="File">%SYSTEMDRIVE%\data\userdata\dir1\dir2 [File1.txt]</pattern>
@@ -2042,7 +2063,7 @@ In this scenario, you want to migrate five files named File1.txt, File2.txt, and
 
 Instead of typing the path five times, you can create a variable for the location as follows:
 
-``` syntax
+``` xml
 <environment>
    <variable name="DATAPATH">
       <text>%SYSTEMDRIVE%\data\userdata\dir1\dir2 </text>
@@ -2052,7 +2073,7 @@ Instead of typing the path five times, you can create a variable for the locatio
 
 Then, you can specify the variable in an &lt;include&gt; rule as follows:
 
-``` syntax
+``` xml
 <include>
    <objectSet>
       <pattern type="File">%DATAPATH% [File1.txt]</pattern>
@@ -2107,11 +2128,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 For example, from the MigUser.xml file:
 
-``` syntax
+``` xml
 <exclude>
    <objectSet>
       <pattern type="File">%CSIDL_MYMUSIC%\* [*]</pattern>
@@ -2164,11 +2185,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 Example:
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
 <!-- This component migrates My Video files -->
    <component type="System" context="System">
@@ -2271,11 +2292,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 For example, if you want to migrate all \*.doc files from the source computer, specifying the following code under the &lt;component&gt; element:
 
-``` syntax
+``` xml
 <extensions> 
         <extension>doc</extension> 
 <extensions> 
@@ -2283,7 +2304,7 @@ For example, if you want to migrate all \*.doc files from the source computer, s
 
 is the same as specifying the following code below the &lt;rules&gt; element:
 
-``` syntax
+``` xml
 <include> 
         <objectSet> 
                 <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script> 
@@ -2340,7 +2361,7 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 For an example of how to use the &lt;externalProcess&gt; element, see the example for [&lt;excludeAttributes&gt;](#excludeattributes).
 
@@ -2392,11 +2413,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigUser.xml file:
 
-``` syntax
+``` xml
 <component type="Documents" context="User">
    <displayName _locID="miguser.myvideo">My Video</displayName>
       <paths>
@@ -2469,7 +2490,7 @@ The following functions return a Boolean value. You can use them to migrate cert
     </tbody>
     </table>
 
-     
+
 
 -   **IgnoreIrrelevantLinks**
 
@@ -2479,7 +2500,7 @@ The following functions return a Boolean value. You can use them to migrate cert
 
     For example:
 
-    ``` syntax
+    ``` xml
     <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
          <objectSet>
               <pattern type="File">%CSIDL_COMMON_VIDEO%\* [*]</pattern>
@@ -2495,7 +2516,7 @@ The following functions return a Boolean value. You can use them to migrate cert
 
     In the following example, HKCU\\Control Panel\\International \[Locale\] will be included in the store, but it will not be migrated to the destination computer:
 
-    ``` syntax
+    ``` xml
     <include filter="MigXmlHelper.NeverRestore()">
        <objectSet>
           <pattern type="Registry">HKCU\Control Panel\International [Locale]</pattern>
@@ -2544,7 +2565,7 @@ Syntax:
 <li><p><strong>Owner.</strong> The owner of the object (SID).</p></li>
 <li><p><strong>Group.</strong> The primary group for the object (SID).</p></li>
 <li><p><strong>DACL</strong> (discretionary access control list). An access control list that is controlled by the owner of an object and that specifies the access particular users or groups can have to the object.</p></li>
-<li><p><strong>SACL</strong> (system access control list). An ACL that controls the generation of audit messages for attempts to access a securable object. The ability to get or set an object's SACL is controlled by a privilege typically held only by system administrators.</p></li>
+<li><p><strong>SACL</strong> (system access control list). An ACL that controls the generation of audit messages for attempts to access a securable object. The ability to get or set an object&#39;s SACL is controlled by a privilege typically held only by system administrators.</p></li>
 </ul></li>
 <li><p>TimeFields can be one of the following:</p>
 <ul>
@@ -2557,7 +2578,7 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 For an example of how to use the &lt;includeAttributes&gt; element, see the example for [&lt;excludeAttributes&gt;](#excludeattributes).
 
@@ -2608,11 +2629,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigApp.xml file:
 
-``` syntax
+``` xml
 <addObjects>
    <object>
       <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [UpgradeVersion]</location>
@@ -2669,11 +2690,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigApp.xml file:
 
-``` syntax
+``` xml
 <locationModify script="MigXmlHelper.RelativeMove('%CSIDL_APPDATA%\Microsoft\Office','%CSIDL_APPDATA%')">
    <objectSet>
       <pattern type="File">%CSIDL_APPDATA%\Microsoft\Office\ [Access10.pip]</pattern>
@@ -2685,45 +2706,47 @@ The following example is from the MigApp.xml file:
 
 The following functions change the location of objects as they are migrated when using the &lt;locationModify&gt; element. These functions are called for every object that the parent &lt;ObjectSet&gt; element is enumerating. The &lt;locationModify&gt; element will create the appropriate folder on the destination computer if it does not already exist.
 
--   **ExactMove**
+- **ExactMove**
 
-    The ExactMove function moves all of the objects that are matched by the parent &lt;ObjectSet&gt; element into the given *ObjectEncodedLocation*. You can use this function when you want to move a single file to a different location on the destination computer. If the destination location is a node, all of the matching source objects will be written to the node without any subdirectories. If the destination location is a leaf, the migration engine will migrate all of the matching source objects to the same location. If a collision occurs, the normal collision algorithms will apply.
+  The ExactMove function moves all of the objects that are matched by the parent &lt;ObjectSet&gt; element into the given *ObjectEncodedLocation*. You can use this function when you want to move a single file to a different location on the destination computer. If the destination location is a node, all of the matching source objects will be written to the node without any subdirectories. If the destination location is a leaf, the migration engine will migrate all of the matching source objects to the same location. If a collision occurs, the normal collision algorithms will apply.
 
-    Syntax: ExactMove(*ObjectEncodedLocation*)
+  Syntax: ExactMove(*ObjectEncodedLocation*)
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>ObjectEncodedLocation</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The destination [location](#locations) for all of the source objects.</p></td>
-    </tr>
-    </tbody>
-    </table>
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>ObjectEncodedLocation</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The destination <a href="#locations" data-raw-source="[location](#locations)">location</a> for all of the source objects.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-     
 
-    For example:
 
-    ``` syntax
-    <locationModify script="MigXmlHelper.ExactMove('HKCU\Keyboard Layout\Toggle [HotKey]')">
-         <objectSet>
-              <pattern type="Registry">HKCU\Keyboard Layout\Toggle []</pattern>
-         </objectSet>
-    </locationModify>
-    ```
+~~~
+For example:
+
+``` xml
+<locationModify script="MigXmlHelper.ExactMove('HKCU\Keyboard Layout\Toggle [HotKey]')">
+     <objectSet>
+          <pattern type="Registry">HKCU\Keyboard Layout\Toggle []</pattern>
+     </objectSet>
+</locationModify>
+```
+~~~
 
 -   **Move**
 
@@ -2753,7 +2776,7 @@ The following functions change the location of objects as they are migrated when
     </tbody>
     </table>
 
-     
+
 
 -   **RelativeMove**
 
@@ -2788,22 +2811,24 @@ The following functions change the location of objects as they are migrated when
     </tbody>
     </table>
 
-     
 
-    For example:
 
-    ``` syntax
-    <include>
-       <objectSet>
+~~~
+For example:
+
+``` xml
+<include>
+   <objectSet>
+      <pattern type="File">%CSIDL_COMMON_FAVORITES%\* [*]</pattern>
+   <objectSet>
+</include>
+<locationModify script="MigXmlHelper.RelativeMove('%CSIDL_COMMON_FAVORITES%','%CSIDL_COMMON_FAVORITES%')">
+     <objectSet>
           <pattern type="File">%CSIDL_COMMON_FAVORITES%\* [*]</pattern>
-       <objectSet>
-    </include>
-    <locationModify script="MigXmlHelper.RelativeMove('%CSIDL_COMMON_FAVORITES%','%CSIDL_COMMON_FAVORITES%')">
-         <objectSet>
-              <pattern type="File">%CSIDL_COMMON_FAVORITES%\* [*]</pattern>
-         </objectSet>
-    </locationModify>
-    ```
+     </objectSet>
+</locationModify>
+```
+~~~
 
 ## <a href="" id="locdefinition"></a>&lt;\_locDefinition&gt;
 
@@ -2847,7 +2872,7 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="merge"></a>&lt;merge&gt;
 
@@ -2893,11 +2918,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigUser.xml file:
 
-``` syntax
+``` xml
 <rules>
    <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
       <objectSet>
@@ -2922,7 +2947,7 @@ These functions control how collisions are resolved.
 
     For example:
 
-    ``` syntax
+    ``` xml
     <merge script="MigXmlHelper.DestinationPriority()">
          <objectSet>
               <pattern type="Registry">HKCU\Software\Microsoft\Office\9.0\PhotoDraw\ [MyPictures]</pattern>
@@ -2965,7 +2990,7 @@ These functions control how collisions are resolved.
     </tbody>
     </table>
 
-     
+
 
 -   **NewestVersion**
 
@@ -2995,7 +3020,7 @@ These functions control how collisions are resolved.
     </tbody>
     </table>
 
-     
+
 
 -   **HigherValue()**
 
@@ -3011,7 +3036,7 @@ These functions control how collisions are resolved.
 
     For example:
 
-    ``` syntax
+    ``` xml
     <merge script="MigXmlHelper.SourcePriority()">
      <objectSet>
        <pattern type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Publisher [UpgradeVersion]</pattern>
@@ -3036,7 +3061,7 @@ The &lt;migration&gt; element is the single root element of a migration .xml fil
 
 Syntax:
 
-&lt;migration urlid="*UrlID/*Name"&gt;
+&lt;migration urlid="<em>UrlID/</em>Name"&gt;
 
 &lt;/migration&gt;
 
@@ -3057,7 +3082,7 @@ Syntax:
 <tr class="odd">
 <td align="left"><p>urlid</p></td>
 <td align="left"><p>Yes</p></td>
-<td align="left"><p><em>UrlID</em> is a string identifier that uniquely identifies this .xml file. This parameter must be a no-colon-name as defined by the XML Namespaces specification. Each migration .xml file must have a unique urlid. If two migration .xml files have the same urlid, the second .xml file that is specified on the command line will not be processed. For more information about XML Namespaces, see [Use XML Namespaces](https://go.microsoft.com/fwlink/p/?LinkId=220938).</p></td>
+<td align="left"><p><em>UrlID</em> is a string identifier that uniquely identifies this .xml file. This parameter must be a no-colon-name as defined by the XML Namespaces specification. Each migration .xml file must have a unique urlid. If two migration .xml files have the same urlid, the second .xml file that is specified on the command line will not be processed. For more information about XML Namespaces, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=220938" data-raw-source="[Use XML Namespaces](https://go.microsoft.com/fwlink/p/?LinkId=220938)">Use XML Namespaces</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Name</p></td>
@@ -3067,11 +3092,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigApp.xml file:
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migapp">
 </migration>
 ```
@@ -3104,16 +3129,16 @@ This filter helper function can be used to filter the migration of files based o
 <tr class="odd">
 <td align="left"><p>valueToCompare</p></td>
 <td align="left"><p>The value we are comparing. For example:</p>
-<p>Date: “2008/05/15-2005/05/17”, “2008/05/15”</p>
-<p>Size: A numeral with B, KB, MB, or GB at the end. “5GB”, “1KB-1MB”</p></td>
+<p>Date: "2008/05/15-2005/05/17", "2008/05/15"</p>
+<p>Size: A numeral with B, KB, MB, or GB at the end. "5GB", "1KB-1MB"</p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
-``` syntax
-<component context="System"  type="Application">
+
+``` xml
+<component context="System"  type="Application">
 <displayName>File_size</displayName>
 <role role="Data">
 
@@ -3168,7 +3193,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-``` syntax
+``` xml
 <addObjects>
    <object>
       <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [UpgradeVersion]</location>
@@ -3204,7 +3229,7 @@ Syntax:
 
 The following example is from the MigUser.xml file:
 
-``` syntax
+``` xml
 <component type="Documents" context="User">
    <displayName _locID="miguser.mymusic">My Music</displayName>
       <paths>
@@ -3247,7 +3272,7 @@ This is an internal USMT element. Do not use this element.
 
 You can use this element to specify multiple objects. You can specify multiple &lt;pattern&gt; elements for each &lt;objectSet&gt; element and they will be combined. If you are specifying files, you may want to use GenerateDrivePatterns with &lt;script&gt; instead. GenerateDrivePatterns is basically the same as a &lt;pattern&gt; rule, without the drive letter specification. For example, the following two lines of code are similar:
 
-``` syntax
+``` xml
 <pattern type="File">C:\Folder\* [Sample.doc]</pattern>
 <script>MigXmlHelper.GenerateDrivePatterns("\Folder\* [Sample.doc]","Fixed"</script>
 ```
@@ -3287,37 +3312,36 @@ Syntax:
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>A valid registry or file path pattern, followed by at least one space, followed by brackets [] that contain the object to be migrated.</p>
 <ul>
-<li><p><em>Path</em> can contain the asterisk (*) wildcard character or can be an [Recognized Environment Variables](usmt-recognized-environment-variables.md). You cannot use the question mark as a wildcard character.You can use HKCU and HKLM to refer to HKEY_CURRENT_USER and HKEY_LOCAL_MACHINE respectively.</p></li>
-<li><p><em>Object</em> can contain the asterisk (*) wildcard character. However, you cannot use the question mark as a wildcard character. For example:</p>
-<p><strong>C:\Folder\ [*]</strong> enumerates all files in C:\<em>Path</em> but no subfolders of C:\Folder.</p>
-<p><strong>C:\Folder\* [*]</strong> enumerates all files and subfolders of C:\Folder.</p>
+<li><p><em>Path</em> can contain the asterisk (<em>) wildcard character or can be an <a href="usmt-recognized-environment-variables.md" data-raw-source="[Recognized Environment Variables](usmt-recognized-environment-variables.md)">Recognized Environment Variables</a>. You cannot use the question mark as a wildcard character.You can use HKCU and HKLM to refer to HKEY_CURRENT_USER and HKEY_LOCAL_MACHINE respectively.</p></li>
+<li><p><em>Object</em> can contain the asterisk (</em>) wildcard character. However, you cannot use the question mark as a wildcard character. For example:</p>
+<p><strong>C:\Folder\ [<em>]</strong> enumerates all files in C:&lt;em&gt;Path</em> but no subfolders of C:\Folder.</p>
+<p><strong>C:\Folder* [</em>]</strong> enumerates all files and subfolders of C:\Folder.</p>
 <p><strong>C:\Folder\ [*.mp3]</strong> enumerates all .mp3 files in C:\Folder.</p>
 <p><strong>C:\Folder\ [Sample.doc]</strong> enumerates only the Sample.doc file located in C:\Folder.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If you are migrating a file that has a square bracket character ([ or ]) in the file name, you must insert the carrot (^) character directly before the bracket for it to be valid. For example, if there is a file named &quot;file].txt&quot;, you must specify <code>&lt;pattern type=&quot;File&quot;&gt;c:\documents\mydocs [file^].txt]&lt;/pattern&gt; </code>instead of <code>&lt;pattern type=&quot;File&quot;&gt;c:\documents\mydocs [file].txt]&lt;/pattern&gt;</code>.</p>
+<strong>Note</strong><br/><p>If you are migrating a file that has a square bracket character ([ or ]) in the file name, you must insert the carrot (^) character directly before the bracket for it to be valid. For example, if there is a file named &quot;file].txt&quot;, you must specify <code>&lt;pattern type=&quot;File&quot;&gt;c:\documents\mydocs [file^].txt]&lt;/pattern&gt; </code>instead of <code>&lt;pattern type=&quot;File&quot;&gt;c:\documents\mydocs [file].txt]&lt;/pattern&gt;</code>.</p>
 </div>
 <div>
- 
+
 </div></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 For example:
 
 -   To migrate a single registry key:
 
-    ``` syntax
+    ``` xml
     <pattern type="Registry">HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache [Persistent]</pattern>
     ```
 
 -   To migrate the EngineeringDrafts folder and any subfolders from the C: drive:
 
-    ``` syntax
+    ``` xml
     <pattern type="File">C:\EngineeringDrafts\* [*]</pattern>
     ```
 
@@ -3327,13 +3351,13 @@ For example:
 
 -   To migrate the Sample.doc file from C:\\EngineeringDrafts:
 
-    ``` syntax
+    ``` xml
     <pattern type="File"> C:\EngineeringDrafts\ [Sample.doc]</pattern>
     ```
 
 -   To migrate the Sample.doc file from where ever it exists on the C: drive use pattern in the following way. If multiple files exist with the same name on the C: drive, then all of these files will be migrated.
 
-    ``` syntax
+    ``` xml
     <pattern type="File"> C:\* [Sample.doc] </pattern>
     ```
 
@@ -3386,7 +3410,7 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="plugin"></a>&lt;plugin&gt;
 
@@ -3438,28 +3462,28 @@ Syntax:
 </ul>
 <p>You can either:</p>
 <ol>
-<li><p>Specify up to three &lt;role&gt; elements within a &lt;component&gt; — one “Binaries” role element, one “Settings” role element and one “Data” role element. These parameters do not change the migration behavior — their only purpose is to help you categorize the settings that you are migrating. You can nest these &lt;role&gt; elements, but each nested element must be of the same role parameter.</p></li>
-<li><p>Specify one “Container” &lt;role&gt; element within a &lt;component&gt; element. In this case, you cannot specify any child &lt;rules&gt; elements, only other &lt;component&gt; elements. And each child &lt;component&gt; element must have the same type as that of parent &lt;component&gt; element. For example:</p></li>
+<li><p>Specify up to three &lt;role&gt; elements within a &lt;component&gt; — one "Binaries" role element, one "Settings" role element and one "Data" role element. These parameters do not change the migration behavior — their only purpose is to help you categorize the settings that you are migrating. You can nest these &lt;role&gt; elements, but each nested element must be of the same role parameter.</p></li>
+<li><p>Specify one "Container" &lt;role&gt; element within a &lt;component&gt; element. In this case, you cannot specify any child &lt;rules&gt; elements, only other &lt;component&gt; elements. And each child &lt;component&gt; element must have the same type as that of parent &lt;component&gt; element. For example:</p></li>
 </ol>
 <pre class="syntax" space="preserve"><code>&lt;component context=&quot;UserAndSystem&quot; type=&quot;Application&quot;&gt;
-  &lt;displayName _locID=&quot;migapp.msoffice2003&quot;&gt;Microsoft Office 2003&lt;/displayName&gt; 
+  &lt;displayName _locID=&quot;migapp.msoffice2003&quot;&gt;Microsoft Office 2003&lt;/displayName&gt; 
   &lt;environment name=&quot;GlobalEnv&quot; /&gt; 
   &lt;role role=&quot;Container&quot;&gt;
     &lt;detection name=&quot;AnyOffice2003Version&quot; /&gt; 
     &lt;detection name=&quot;FrontPage2003&quot; /&gt; 
     &lt;!-- 
- Office 2003 Common Settings 
-  --&gt; 
+ Office 2003 Common Settings 
+  --&gt; 
     &lt;component context=&quot;UserAndSystem&quot; type=&quot;Application&quot;&gt;</code></pre></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigUser.xml file. For more examples, see the MigApp.xml file:
 
-``` syntax
+``` xml
 <component type="System" context="User">
    <displayName _locID="miguser.startmenu">Start Menu</displayName>
    <paths>
@@ -3542,11 +3566,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigUser.xml file:
 
-``` syntax
+``` xml
 <component type="Documents" context="User">
    <displayName _locID="miguser.mymusic">My Music</displayName>
       <paths>
@@ -3593,7 +3617,7 @@ The return value that is required by &lt;script&gt; depends on the parent elemen
 
     Syntax: &lt;script&gt;MigXmlHelper.GetStringContent("*ObjectType*","*EncodedLocationPattern*", "*ExpandContent*")&lt;/script&gt;
 
-    Example:` <script>MigXMLHelper.GetStringContent("Registry","HKLM\Software\MyApp\Installer [EXEPATH]")</script>`
+    Example: `<script>MigXMLHelper.GetStringContent("Registry","HKLM\Software\MyApp\Installer [EXEPATH]")</script>`
 
 -   You can use [GenerateUserPatterns](#scriptfunctions) when &lt;script&gt; is within &lt;objectSet&gt;.
 
@@ -3638,24 +3662,23 @@ The return value that is required by &lt;script&gt; depends on the parent elemen
 <li><p>When used within &lt;objectSet&gt;, the return value must be a two-dimensional array of strings.</p></li>
 <li><p>When used within &lt;location&gt;, the return value must be a valid location that aligns with the type attribute of &lt;location&gt;. For example, if &lt;location type=&quot;File&quot;&gt;, the child script element, if specified, must be a valid file location.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If you are migrating a file that has a bracket character ([ or ]) in the file name, insert the carrot (^) character directly before the bracket for it to be valid. For example, if there is a file named &quot;file].txt&quot;, specify <code>&lt;pattern type=&quot;File&quot;&gt;c:\documents\mydocs [file^].txt]&lt;/pattern&gt; </code>instead of <code>&lt;pattern type=&quot;File&quot;&gt;c:\documents\mydocs [file].txt]&lt;/pattern&gt;</code>.</p>
+<strong>Note</strong><br/><p>If you are migrating a file that has a bracket character ([ or ]) in the file name, insert the carrot (^) character directly before the bracket for it to be valid. For example, if there is a file named &quot;file].txt&quot;, specify <code>&lt;pattern type=&quot;File&quot;&gt;c:\documents\mydocs [file^].txt]&lt;/pattern&gt; </code>instead of <code>&lt;pattern type=&quot;File&quot;&gt;c:\documents\mydocs [file].txt]&lt;/pattern&gt;</code>.</p>
 </div>
 <div>
- 
+
 </div></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 Examples:
 
 To migrate the Sample.doc file from any drive on the source computer, use &lt;script&gt; as follows. If multiple files exist with the same name, all such files will get migrated.
 
-``` syntax
+``` xml
 <script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script> 
 ```
 
@@ -3715,137 +3738,143 @@ These functions return either a string or a pattern.
     </tbody>
     </table>
 
-     
 
-    For example:
 
-    ``` syntax
-    <variable name="MSNMessengerInstPath">
-    <script>MigXmlHelper.GetStringContent("Registry","%HklmWowSoftware%\Microsoft\MSNMessenger [InstallationDirectory]")</script>
-    </variable>
-    ```
+~~~
+For example:
 
--   **GenerateDrivePatterns**
+``` xml
+<variable name="MSNMessengerInstPath">
+<script>MigXmlHelper.GetStringContent("Registry","%HklmWowSoftware%\Microsoft\MSNMessenger [InstallationDirectory]")</script>
+</variable>
+```
+~~~
 
-    The GenerateDrivePatterns function will iterate all of the available drives and select the ones that match the requested drive type. It will then concatenate the selected drives with the end part of *PatternSegment* to form a full encoded file pattern. For example, if *PatternSegment* is `Path [file.txt]` and DriveType is `Fixed`, then the function will generate `C:\Path [file.txt]`, and other patterns if there are fixed drives other than C:. You cannot specify environment variables with this function. You can use GenerateDrivePatterns with &lt;script&gt; elements that are within [&lt;objectSet&gt;](#objectset) that are within &lt;include&gt;/&lt;exclude&gt;.
+- **GenerateDrivePatterns**
 
-    Syntax: GenerateDrivePatterns("*PatternSegment*","*DriveType*")
+  The GenerateDrivePatterns function will iterate all of the available drives and select the ones that match the requested drive type. It will then concatenate the selected drives with the end part of *PatternSegment* to form a full encoded file pattern. For example, if *PatternSegment* is `Path [file.txt]` and DriveType is `Fixed`, then the function will generate `C:\Path [file.txt]`, and other patterns if there are fixed drives other than C:. You cannot specify environment variables with this function. You can use GenerateDrivePatterns with &lt;script&gt; elements that are within [&lt;objectSet&gt;](#objectset) that are within &lt;include&gt;/&lt;exclude&gt;.
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>PatternSegment</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The suffix of an encoded pattern. It will be concatenated with a drive specification, such as &quot;c:\&quot;, to form a complete [encoded file pattern](#locations). For example, &quot;* [*.doc]&quot;. <em>PatternSegment</em> cannot be an environment variable.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>DriveType</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The drive type for which the patterns are to be generated. You can specify one of:</p>
-    <ul>
-    <li><p>Fixed</p></li>
-    <li><p>CDROM</p></li>
-    <li><p>Removable</p></li>
-    <li><p>Remote</p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
+  Syntax: GenerateDrivePatterns("*PatternSegment*","*DriveType*")
 
-     
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>PatternSegment</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The suffix of an encoded pattern. It will be concatenated with a drive specification, such as &quot;c:&amp;quot;, to form a complete <a href="#locations" data-raw-source="[encoded file pattern](#locations)">encoded file pattern</a>. For example, &quot;* [*.doc]&quot;. <em>PatternSegment</em> cannot be an environment variable.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>DriveType</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The drive type for which the patterns are to be generated. You can specify one of:</p>
+  <ul>
+  <li><p>Fixed</p></li>
+  <li><p>CDROM</p></li>
+  <li><p>Removable</p></li>
+  <li><p>Remote</p></li>
+  </ul></td>
+  </tr>
+  </tbody>
+  </table>
 
-    See the last component in the MigUser.xml file for an example of this element.
 
--   **GenerateUserPatterns**
 
-    The function will iterate through all users that are being migrated, excluding the currently processed user if &lt;ProcessCurrentUser&gt; is FALSE, and will expand the specified pattern in the context of each user. For example, if users A, B and C have profiles in C:\\Documents and Settings), by calling `GenerateUserPattens('File','%userprofile% [*.doc]','TRUE')`, the helper function will generate the following three patterns:
+~~~
+See the last component in the MigUser.xml file for an example of this element.
+~~~
 
-    -   "C:\\Documents and Settings\\A\\\* \[\*.doc\]"
+- **GenerateUserPatterns**
 
-    -   "C:\\Documents and Settings\\B\\\* \[\*.doc\]"
+  The function will iterate through all users that are being migrated, excluding the currently processed user if &lt;ProcessCurrentUser&gt; is FALSE, and will expand the specified pattern in the context of each user. For example, if users A, B and C have profiles in C:\\Documents and Settings), by calling `GenerateUserPattens('File','%userprofile% [*.doc]','TRUE')`, the helper function will generate the following three patterns:
 
-    -   "C:\\Documents and Settings\\C\\\* \[\*.doc\]"
+  -   "C:\\Documents and Settings\\A\\\* \[\*.doc\]"
 
-    Syntax:GenerateUserPatterns("*ObjectType*","*EncodedLocationPattern*","*ProcessCurrentUser*")
+  -   "C:\\Documents and Settings\\B\\\* \[\*.doc\]"
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Setting</th>
-    <th align="left">Required?</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>ObjectType</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Defines the object type. Can be File or Registry.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>EncodedLocationPattern</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>The [location pattern](#locations). Environment variables are allowed.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><em>ProcessCurrentUser</em></p></td>
-    <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Can be TRUE or FALSE. Indicates if the patterns should be generated for the current user.</p></td>
-    </tr>
-    </tbody>
-    </table>
+  -   "C:\\Documents and Settings\\C\\\* \[\*.doc\]"
 
-     
+  Syntax:GenerateUserPatterns("*ObjectType*","*EncodedLocationPattern*","*ProcessCurrentUser*")
 
-    **Example:**
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Setting</th>
+  <th align="left">Required?</th>
+  <th align="left">Value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><em>ObjectType</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>Defines the object type. Can be File or Registry.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><em>EncodedLocationPattern</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>The <a href="#locations" data-raw-source="[location pattern](#locations)">location pattern</a>. Environment variables are allowed.</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p><em>ProcessCurrentUser</em></p></td>
+  <td align="left"><p>Yes</p></td>
+  <td align="left"><p>Can be TRUE or FALSE. Indicates if the patterns should be generated for the current user.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-    If GenerateUserPattens('File','%userprofile% \[\*.doc\]','FALSE') is called while USMT is processing user A, then this function will only generate patterns for users B and C. You can use this helper function to build complex rules. For example, to migrate all .doc files from the source computer — but if user X is not migrated, then do not migrate any of the .doc files from user X’s profile.
 
-    The following is example code for this scenario. The first &lt;rules&gt; element migrates all.doc files on the source computer with the exception of those inside C:\\Documents and Settings. The second &lt;rules&gt; elements will migrate all .doc files from C:\\Documents and Settings with the exception of the .doc files in the profiles of the other users. Because the second &lt;rules&gt; element will be processed in each migrated user context, the end result will be the desired behavior. The end result is the one we expected.
 
-    ``` syntax
-    <rules context="System">
-      <include>
-        <objectSet>
-          <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script>
-        </objectSet>
-      </include>
-      <exclude>
-        <objectSet>
-          <pattern type="File">%ProfilesFolder%\* [*.doc]</pattern>
-        </objectSet>
-      </exclude>
-    </rules>
-    <rules context="User">
-      <include>
-        <objectSet>
-          <pattern type="File">%ProfilesFolder%\* [*.doc]</pattern>
-        </objectSet>
-      </include>
-      <exclude>
-        <objectSet>
-          <script>MigXmlHelper.GenerateUserPatterns ("File","%userprofile%\* [*.doc]", "FALSE")</script>
-        </objectSet>
-      </exclude>
-    </rules>
-    ```
+~~~
+**Example:**
+
+If GenerateUserPattens('File','%userprofile% \[\*.doc\]','FALSE') is called while USMT is processing user A, then this function will only generate patterns for users B and C. You can use this helper function to build complex rules. For example, to migrate all .doc files from the source computer — but if user X is not migrated, then do not migrate any of the .doc files from user X's profile.
+
+The following is example code for this scenario. The first &lt;rules&gt; element migrates all.doc files on the source computer with the exception of those inside C:\\Documents and Settings. The second &lt;rules&gt; elements will migrate all .doc files from C:\\Documents and Settings with the exception of the .doc files in the profiles of the other users. Because the second &lt;rules&gt; element will be processed in each migrated user context, the end result will be the desired behavior. The end result is the one we expected.
+
+``` xml
+<rules context="System">
+  <include>
+    <objectSet>
+      <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script>
+    </objectSet>
+  </include>
+  <exclude>
+    <objectSet>
+      <pattern type="File">%ProfilesFolder%\* [*.doc]</pattern>
+    </objectSet>
+  </exclude>
+</rules>
+<rules context="User">
+  <include>
+    <objectSet>
+      <pattern type="File">%ProfilesFolder%\* [*.doc]</pattern>
+    </objectSet>
+  </include>
+  <exclude>
+    <objectSet>
+      <script>MigXmlHelper.GenerateUserPatterns ("File","%userprofile%\* [*.doc]", "FALSE")</script>
+    </objectSet>
+  </exclude>
+</rules>
+```
+~~~
 
 ### MigXmlHelper.GenerateDocPatterns
 
@@ -3883,27 +3912,27 @@ This helper function invokes the document finder to scan the system for all file
 </tbody>
 </table>
 
- 
 
-``` syntax
- <!-- This component migrates data in user context -->
-  <component type="Documents" context="User">
-    <displayName>MigDocUser</displayName>
-    <role role="Data">
-      <rules>
-        <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
-          <objectSet>
-            <script>MigXmlHelper.GenerateDocPatterns ("false")</script>
-          </objectSet>
-        </include>
-        <exclude>
-          <objectSet>
-           <script>MigXmlHelper.GenerateDocPatterns ("false", "false", "false")</script>
-          </objectSet>
-        </exclude>
-      </rules>
-    </role>
-  </component>
+
+``` xml
+ <!-- This component migrates data in user context -->
+  <component type="Documents" context="User">
+    <displayName>MigDocUser</displayName>
+    <role role="Data">
+      <rules>
+        <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
+          <objectSet>
+            <script>MigXmlHelper.GenerateDocPatterns ("false")</script>
+          </objectSet>
+        </include>
+        <exclude>
+          <objectSet>
+           <script>MigXmlHelper.GenerateDocPatterns ("false", "false", "false")</script>
+          </objectSet>
+        </exclude>
+      </rules>
+    </role>
+  </component>
 ```
 
 ### <a href="" id="simple"></a>Simple executing scripts
@@ -3912,7 +3941,7 @@ The following scripts have no return value. You can use the following errors wit
 
 -   **AskForLogoff()**. Prompts the user to log off at the end of the migration. For example:
 
-    ``` syntax
+    ``` xml
          <processing when="apply-success">
               <script>MigXmlHelper.AskForLogoff()</script>
          </processing>
@@ -3922,7 +3951,7 @@ The following scripts have no return value. You can use the following errors wit
 
 -   **KillExplorer()**. Stops Explorer.exe for the current user context. This allows access to certain keys and files that are kept open when Explorer.exe is running. For example:
 
-    ``` syntax
+    ``` xml
          <processing when="pre-apply">
               <script>MigXmlHelper.KillExplorer()</script>
          </processing>
@@ -3930,7 +3959,7 @@ The following scripts have no return value. You can use the following errors wit
 
 -   **RegisterFonts(FileEncodedLocation)**. Registers the given font or all of the fonts in the given directory. For example:
 
-    ``` syntax
+    ``` xml
     <processing when="apply-success">
     <script>MigXmlHelper.RegisterFonts("%CSIDL_COMMON_FONTS%")</script>
     </processing>
@@ -3940,7 +3969,7 @@ The following scripts have no return value. You can use the following errors wit
 
 -   **RestartExplorer().** Restarts Explorer.exe at the end of the migration. For example:
 
-    ``` syntax
+    ``` xml
          <processing when="post-apply">
               <script>MigXmlHelper.RestartExplorer()</script>
          </processing>
@@ -3986,11 +4015,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 For example:
 
-``` syntax
+``` xml
 <variable name="QuickTime5or6DataSys">
   <text>%CSIDL_COMMON_APPDATA%\QuickTime</text> 
 </variable>
@@ -4015,7 +4044,7 @@ Syntax:
 
 The following .xml file excludes all .mp3 files from migration. For additional examples of how to use this element, see the [Exclude Files and Settings](usmt-exclude-files-and-settings.md).
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
   <component context="System" type="Documents">
         <displayName>Test</displayName>
@@ -4072,21 +4101,21 @@ Syntax:
 <tr class="odd">
 <td align="left"><p>name</p></td>
 <td align="left"><p>Yes</p></td>
-<td align="left"><p><em>ID</em> is a string value that is the name used to reference the environment variable. We recommend that <em>ID</em> start with the component’s name to avoid namespace collisions. For example, if your component’s name is MyComponent, and you want a variable that is your component’s install path, you could specify <code>MyComponent.InstallPath</code>.</p></td>
+<td align="left"><p><em>ID</em> is a string value that is the name used to reference the environment variable. We recommend that <em>ID</em> start with the component's name to avoid namespace collisions. For example, if your component's name is MyComponent, and you want a variable that is your component's install path, you could specify <code>MyComponent.InstallPath</code>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>remap</p></td>
 <td align="left"><p>No, default = FALSE</p></td>
-<td align="left"><p>Specifies whether to evaluate this environment variable as a remapping environment variable. Objects that are located in a path that is underneath this environment variable’s value are automatically moved to where the environment variable points on the destination computer.</p></td>
+<td align="left"><p>Specifies whether to evaluate this environment variable as a remapping environment variable. Objects that are located in a path that is underneath this environment variable's value are automatically moved to where the environment variable points on the destination computer.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 The following example is from the MigApp.xml file:
 
-``` syntax
+``` xml
 <environment>
    <variable name="HklmWowSoftware">
       <text>HKLM\Software</text>
@@ -4134,11 +4163,11 @@ Syntax:
 </tbody>
 </table>
 
- 
+
 
 For example:
 
-``` syntax
+``` xml
 <version>4.*</version>
 ```
 
@@ -4196,36 +4225,36 @@ The following functions are for internal USMT use only. Do not use them in an .x
 
 You can use the following version tags with various helper functions:
 
--   “CompanyName”
+-   "CompanyName"
 
--   “FileDescription”
+-   "FileDescription"
 
--   “FileVersion”
+-   "FileVersion"
 
--   “InternalName”
+-   "InternalName"
 
--   “LegalCopyright”
+-   "LegalCopyright"
 
--   “OriginalFilename”
+-   "OriginalFilename"
 
--   “ProductName”
+-   "ProductName"
 
--   “ProductVersion”
+-   "ProductVersion"
 
 The following version tags contain values that can be compared:
 
--   “FileVersion”
+-   "FileVersion"
 
--   “ProductVersion”
+-   "ProductVersion"
 
 ## Related topics
 
 
 [USMT XML Reference](usmt-xml-reference.md)
 
- 
 
- 
+
+
 
 
 

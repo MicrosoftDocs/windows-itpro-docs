@@ -1,0 +1,80 @@
+### YamlMime:Landing
+
+title: Microsoft Edge Legacy group policies  # < 60 chars
+summary: Microsoft Edge Legacy works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences. # < 160 chars
+
+metadata:
+  title: Microsoft Edge Legacy # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Find the tools and resources you need to help deploy and use Microsoft Edge in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  keywords: Microsoft Edge Legacy, Windows 10, Windows 10 Mobile
+  ms.localizationpriority: medium
+  ms.prod: edge
+  author: shortpatti
+  ms.author: pashort
+  ms.topic: landing-page
+  ms.devlang: na
+  ms.date: 08/28/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: What's new
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Documentation for Microsoft Edge version 77 or later
+            url: https://docs.microsoft.com/DeployEdge/
+          - text: Microsoft Edge Legacy desktop app will reach end of support on March 9, 2021
+            url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666
+
+  # Card (optional)
+  - title: Group policies configure guidance part 1
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: All group policies
+            url: /microsoft-edge/deploy/available-policies
+          - text: Address bar
+            url: /microsoft-edge/deploy/group-policies/address-bar-settings-gp
+          - text: Adobe Flash
+            url: /microsoft-edge/deploy/group-policies/adobe-settings-gp
+          - text: Books Library
+            url: /microsoft-edge/deploy/group-policies/books-library-management-gp
+          - text: Browser experience
+            url: /microsoft-edge/deploy/group-policies/browser-settings-management-gp
+          - text: Developer tools
+            url: /microsoft-edge/deploy/group-policies/developer-settings-gp
+          - text: Extensions
+            url: /microsoft-edge/deploy/group-policies/extensions-management-gp
+          - text: Favorites
+            url: /microsoft-edge/deploy/group-policies/favorites-management-gp
+          - text: Home button
+            url: /microsoft-edge/deploy/group-policies/home-button-gp
+
+  # Card (optional)
+  - title: Group policies configure guidance part 2
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Interoperability and enterprise mode
+            url: /microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
+          - text: New Tab page
+            url: /microsoft-edge/deploy/group-policies/new-tab-page-settings-gp
+          - text: Kiosk mode deployment in Microsoft Edge
+            url: /microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy
+          - text: Prelaunch Microsoft Edge and preload tabs
+            url: /microsoft-edge/deploy/group-policies/prelaunch-preload-gp
+          - text: Search engine customization
+            url: /microsoft-edge/deploy/group-policies/search-engine-customization-gp
+          - text: Security and privacy
+            url: /microsoft-edge/deploy/group-policies/security-privacy-management-gp
+          - text: Start page
+            url: /microsoft-edge/deploy/group-policies/start-pages-gp
+          - text: Sync browser
+            url: /microsoft-edge/deploy/group-policies/sync-browser-settings-gp
+          - text: Telemetry and data collection
+            url: /microsoft-edge/deploy/group-policies/telemetry-management-gp
+          

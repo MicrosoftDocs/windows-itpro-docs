@@ -1,19 +1,20 @@
 ---
 title: SUPL CSP
-description: SUPL CSP
+description: Learn how the SUPL configuration service provider (CSP) is used to configure the location client.
 ms.assetid: afad0120-1126-4fc5-8e7a-64b9f2a5eae1
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 06/26/2017
+author: manikadhiman
+ms.date: 09/12/2019
 ---
 
 # SUPL CSP
 
-
-The SUPL configuration service provider is used to configure the location client, as shown in the following table.
+The SUPL configuration service provider is used to configure the location client, as shown in the following table:
 
 <table>
 <colgroup>
@@ -47,7 +48,7 @@ The SUPL configuration service provider is used to configure the location client
 <li><p>MCC/MNC value pairs which are used to specify which networks' UUIC the SUPL account matches.</p></li>
 </ul></td>
 <td><ul>
-<li><p>Address of the server—a mobile positioning center for non-trusted mode.</p></li>
+<li><p>Address of the server — a mobile positioning center for non-trusted mode.</p></li>
 <li><p>The positioning method used by the MPC for non-trusted mode.</p></li>
 </ul></td>
 </tr>
@@ -64,7 +65,7 @@ The following diagram shows the SUPL configuration service provider management o
 
  
 
-![supl csp (dm,cp)](images/provisioning-csp-supl-dmandcp.png)
+![SUPL csp (dm,cp)](images/provisioning-csp-supl-dmandcp.png)
 
 
 
@@ -82,7 +83,10 @@ If this value is not specified, the device infers the H-SLP address from the IMS
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="version"></a>**Version**  
-Optional. Determines the version of the SUPL protocol to use. For SUPL 1.0, set this value to `1`. For SUPL 2.0, set this value to `2`. The default is 1.
+Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0.0, set this value to 1. For SUPL 2.0.0, set this value to 2. The default is 1. Refer to FullVersion to define the minor version and the service indicator.
+
+<a href="" id="fullversion"></a>**FullVersion**  
+Added in Windows 10, version 2004. Optional. Determines the full version (X.Y.Z where X, Y, and Z are the major version, the minor version, and the service indicator, respectively) of the SUPL protocol to use. The default is 1.0.0. If FullVersion is defined, Version field is ignored.
 
 <a href="" id="mccmncpairs"></a>**MCCMNCPairs**  
 Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network do not match, the device uses the default location service and does not use SUPL.
@@ -220,17 +224,50 @@ Specifies the name of the H-SLP root certificate as a string, in the format *nam
 <a href="" id="rootcertificate-data"></a>**RootCertificate/Data**  
 The base 64 encoded blob of the H-SLP root certificate.
 
+<a href="" id="rootcertificate"></a>**RootCertificate2**  
+Specifies the root certificate for the H-SLP server.
+
 <a href="" id="rootcertificate2-name"></a>**RootCertificate2/Name**  
 Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
 <a href="" id="rootcertificate2-data"></a>**RootCertificate2/Data**  
 The base 64 encoded blob of the H-SLP root certificate.
 
+<a href="" id="rootcertificate"></a>**RootCertificate3**  
+Specifies the root certificate for the H-SLP server.
+
 <a href="" id="rootcertificate3-name"></a>**RootCertificate3/Name**  
 Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
 
 <a href="" id="rootcertificate3-data"></a>**RootCertificate3/Data**  
 The base 64 encoded blob of the H-SLP root certificate.
+
+<a href="" id="rootcertificate"></a>**RootCertificate4**  
+Added in Windows 10, version 1809. Specifies the root certificate for the H-SLP server.
+
+<a href="" id="rootcertificate-name"></a>**RootCertificate4/Name**  
+Added in Windows 10, version 1809. Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
+
+<a href="" id="rootcertificate-data"></a>**RootCertificate4/Data**  
+Added in Windows 10, version 1809. The base 64 encoded blob of the H-SLP root certificate.
+
+<a href="" id="rootcertificate"></a>**RootCertificate5**  
+Added in Windows 10, version 1809. Specifies the root certificate for the H-SLP server.
+
+<a href="" id="rootcertificate2-name"></a>**RootCertificate5/Name**  
+Added in Windows 10, version 1809. Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
+
+<a href="" id="rootcertificate2-data"></a>**RootCertificate5/Data**  
+Added in Windows 10, version 1809. The base 64 encoded blob of the H-SLP root certificate.
+
+<a href="" id="rootcertificate"></a>**RootCertificate6**  
+Added in Windows 10, version 1809. Specifies the root certificate for the H-SLP server.
+
+<a href="" id="rootcertificate3-name"></a>**RootCertificate6/Name**  
+Added in Windows 10, version 1809. Specifies the name of the H-SLP root certificate as a string, in the format *name*.cer.
+
+<a href="" id="rootcertificate3-data"></a>**RootCertificate6/Data**  
+Added in Windows 10, version 1809. The base 64 encoded blob of the H-SLP root certificate.
 
 <a href="" id="v2upl1"></a>**V2UPL1**  
 Required for V2 UPL for CDMA. Specifies the account settings for user plane location and IS-801 for CDMA. Only one account is supported at a given time.
@@ -258,7 +295,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 <tbody>
 <tr class="odd">
 <td><p>0</p></td>
-<td><p>None: The device uses the default positioning method. In this default mode, the GNSS obtains assistance (time injection, coarse position injection and ephemeris data) from the Microsoft Positioning Service.</p></td>
+<td><p>None: The device uses the default positioning method. In this default mode, the GNSS obtains assistance (time injection, coarse position injection, and ephemeris data) from the Microsoft Positioning Service.</p></td>
 </tr>
 <tr class="even">
 <td><p>1</p></td>
@@ -388,7 +425,7 @@ If a mobile operator requires the communication with the H-SLP to take place ove
 
 Adding new configuration information for a H-SLP server for SUPL. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <wap-provisioningdoc>
   <characteristic type="SUPL">
@@ -412,7 +449,7 @@ Adding new configuration information for a H-SLP server for SUPL. Values in ital
 
 Adding a SUPL and a V2 UPL account to the same device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <wap-provisioningdoc>
   <characteristic type="SUPL">
@@ -444,7 +481,7 @@ Adding a SUPL and a V2 UPL account to the same device. Values in italic must be 
 
 Adding a SUPL account to a device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
     <SyncBody>
         <Add>
@@ -545,18 +582,6 @@ The following table shows the Microsoft custom elements that this configuration 
 </table>
 
  
-
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

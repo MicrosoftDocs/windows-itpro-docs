@@ -1,42 +1,50 @@
 ---
-title: How to Apply the Deployment Configuration File by Using Windows PowerShell (Windows 10)
-description: How to Apply the Deployment Configuration File by Using Windows PowerShell
-author: MaggiePucciEvans
+title: Apply deployment config file via Windows PowerShell (Windows 10)
+description: How to apply the deployment configuration file by using Windows PowerShell for Windows 10.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 06/15/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
+# How to apply the deployment configuration file by using Windows PowerShell
+
+>Applies to: Windows 10, version 1607
+
+When you add or set a package to a computer running the App-V client before it's been published, a dynamic deployment configuration file is applied to it. The dynamic deployment configuration file configures the default settings for the package that all users share on the computer running the App-V client. This section will tell you how to use a deployment configuration file.
+
+## Apply the deployment configuration file with Windows PowerShell
+
+> [!NOTE]
+> The following example cmdlet uses the following two file paths for the package and configuration files:
+> 
+> * C:\\Packages\\Contoso\\MyApp.appv
+> * C:\\Packages\\Contoso\\DynamicConfigurations\\deploymentconfig.xml
+> 
+> If your package and configuration files use different file paths than the example, feel free to replace them as needed.
+
+To specify a new default set of configurations for all users who will run the package on a specific computer, in a Windows PowerShell console, enter the following cmdlet:
+
+```PowerShell
+Add-AppVClientPackage -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentConfiguration C:\Packages\Contoso\DynamicConfigurations\deploymentconfig.xml
+```
+
+>[!NOTE]
+>This command captures the resulting object into $pkg. If the package is already present on the computer, you can use the **Set-AppVclientPackage** cmdlet to apply the deployment configuration document:
+>
+>  ```PowerShell
+>  Set-AppVClientPackage -Name Myapp -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentConfiguration C:\Packages\Contoso\DynamicConfigurations\deploymentconfig.xml
+>  ```
 
 
-# How to Apply the Deployment Configuration File by Using Windows PowerShell
 
-**Applies to**
--   Windows 10, version 1607
 
-The dynamic deployment configuration file is applied when a package is added or set to a computer running the App-V client before the package has been published. The file configures the default settings for package for all users on the computer running the App-V client. This section describes the steps used to use a deployment configuration file. The procedure is based on the following example and assumes the following package and configuration files exist on a computer:
-
-**c:\\Packages\\Contoso\\MyApp.appv**
-
-**c:\\Packages\\Contoso\\DynamicConfigurations\\deploymentconfig.xml**
-
-**To Apply the Deployment Configuration File Using Windows PowerShell**
-
--   To specify a new default set of configurations for all users who will run the package on a specific computer, in a Windows PowerShell console, type the following:
-
-    `Add-AppVClientPackage -Path c:\Packages\Contoso\MyApp.appv -DynamicDeploymentConfiguration c:\Packages\Contoso\DynamicConfigurations\deploymentconfig.xml`
-
-    **Note**<br>
-    This command captures the resulting object into $pkg. If the package is already present on the computer, the **Set-AppVclientPackage** cmdlet can be used to apply the deployment configuration document:
-
-    `Set-AppVClientPackage -Name Myapp -Path c:\Packages\Contoso\MyApp.appv -DynamicDeploymentConfiguration c:\Packages\Contoso\DynamicConfigurations\deploymentconfig.xml`
-
-     
-## Have a suggestion for App-V?
-
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-[Operations for App-V](appv-operations.md)
+* [Operations for App-V](appv-operations.md)

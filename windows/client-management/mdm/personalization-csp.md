@@ -1,12 +1,14 @@
 ---
 title: Personalization CSP
-description: Personalization CSP
-ms.author: maricia
+description: Use the Personalization CSP to lock screen and desktop background images, prevent users from changing the image, and use the settings in a provisioning package.
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 06/26/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Personalization CSP
@@ -64,12 +66,12 @@ The following diagram shows the Personalization configuration service provider i
 <p style="margin-left: 20px">Supporter operation is Get.</p>
 
 > [!Note]
-> This setting is only used to query status. To set the image, use the LockScreenImageStatus setting.
+> This setting is only used to query status. To set the image, use the LockScreenImageUrl setting.
 
 
 ## Example SyncML
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

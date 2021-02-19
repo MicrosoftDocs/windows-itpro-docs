@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Customize Internet Explorer 11 installation packages
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 10a14a09-673b-4f8b-8d12-64036135e7fd
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Customize Internet Explorer 11 installation packages (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Customize Internet Explorer 11 installation packages
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You can customize Internet Explorer 11 to support various browser behaviors, multiple operating system versions and languages, and Setup information (.inf) files.
 
 |Topic                                                                   |Description                                         |

@@ -4,10 +4,13 @@ description: This section describes the Connections settings that you can config
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
-ms.date: 10/09/2017
+ms.author: dansimp
+ms.topic: article
+ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Connections (Windows Configuration Designer reference)
@@ -18,7 +21,7 @@ Use to configure settings related to various types of phone connections.
 
 | Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings  | X |  X  | X | X |  |
+| All settings  | X |  X  | X |  |  |
 
 
 For each setting group:

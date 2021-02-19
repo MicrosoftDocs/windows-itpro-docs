@@ -1,12 +1,17 @@
 ---
 title: Migrate EFS Files and Certificates (Windows 10)
-description: Migrate EFS Files and Certificates
+description: Learn how to migrate Encrypting File System (EFS) certificates. Also, learn where to find information about how to identify file types, files, and folders.
 ms.assetid: 7f19a753-ec45-4433-b297-cc30f16fdee1
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Migrate EFS Files and Certificates
@@ -22,7 +27,7 @@ Encrypting File System (EFS) certificates will be migrated automatically. Howeve
 **Note**  
 The **/efs** options are not used with the LoadState command.
 
- 
+ 
 
 Before using the ScanState tool for a migration that includes encrypted files and EFS certificates, you must ensure that all files in an encrypted folder are encrypted as well or remove the encryption attribute from folders that contain unencrypted files. If the encryption attribute has been removed from a file but not from the parent folder, the file will be encrypted during the migration using the credentials of the account used to run the LoadState tool.
 
@@ -41,9 +46,9 @@ Where *&lt;Path&gt;* is the full path of the topmost parent directory where the 
 
 [Identify File Types, Files, and Folders](usmt-identify-file-types-files-and-folders.md)
 
- 
+ 
 
- 
+ 
 
 
 

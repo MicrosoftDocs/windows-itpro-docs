@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[FavoritesEx\] .INS file setting to specify your Favorites icon file, whether Favorites is available offline, and your Favorites URLs.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 55de376a-d442-478e-8978-3b064407b631
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use the FavoritesEx .INS file for your Favorites icon and URLs (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the FavoritesEx .INS file for your Favorites icon and URLs
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about where you store your **Favorites** icon file, whether your **Favorites** are available offline, and the URLs for each **Favorites** site.
 
 |Name            |Value                  |Description                                                               |

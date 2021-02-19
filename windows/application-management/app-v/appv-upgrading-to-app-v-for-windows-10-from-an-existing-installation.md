@@ -1,12 +1,15 @@
 ---
 title: Upgrading to App-V for Windows 10 from an existing installation (Windows 10)
-description: Upgrading to App-V for Windows 10 from an existing installation
-author: MaggiePucciEvans
+description: Learn about upgrading to Application Virtualization (App-V) for Windows 10 from an existing installation.
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Upgrading to App-V for Windows 10 from an existing installation
@@ -72,7 +75,7 @@ Once you’ve enabled the in-box App-V client, you need to configure it to point
 
 Type the following cmdlet in a Windows PowerShell window: 
 
-`Add-AppvPublishingServer -Name AppVServer -URL http:// appvserver:2222` 
+`Add-AppvPublishingServer -Name AppVServer -URL https:// appvserver:2222` 
 
 **To modify client settings to point to an existing App-V publishing server with Group Policy** 
 
@@ -94,6 +97,6 @@ Type the following cmdlet in a Windows PowerShell window:
 
     `Unpublish-AppvClientPackage "ContosoApplication"`
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

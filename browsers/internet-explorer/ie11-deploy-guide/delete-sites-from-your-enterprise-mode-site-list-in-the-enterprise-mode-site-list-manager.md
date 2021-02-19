@@ -1,11 +1,15 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 description: Delete a single site from your global Enterprise Mode site list.
 ms.pagetype: appcompat
 ms.mktglfcycl: deploy
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 41413459-b57f-48da-aedb-4cbec1e2981a
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -13,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

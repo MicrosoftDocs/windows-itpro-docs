@@ -1,12 +1,17 @@
 ---
 title: Return Codes (Windows 10)
-description: Return Codes
+description: Learn about User State Migration Tool (USMT) 10.0 return codes and error messages. Also view a list of USMT return codes and their associated migration steps.
 ms.assetid: e71bbc6b-d5a6-4e48-ad01-af0012b35f22
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Return Codes
@@ -42,7 +47,7 @@ Non-fatal Errors
 
 Fatal Errors
 
-As a best practice, we recommend that you set verbosity level to 5, **/v***:5*, on the **ScanState**, **LoadState**, and **USMTUtils** command lines so that the most detailed reporting is available in the respective USMT logs. You can use a higher verbosity level if you want the log files output to go to a debugger.
+As a best practice, we recommend that you set verbosity level to 5, **/v**<em>:5</em>, on the **ScanState**, **LoadState**, and **USMTUtils** command lines so that the most detailed reporting is available in the respective USMT logs. You can use a higher verbosity level if you want the log files output to go to a debugger.
 
 ## <a href="" id="bkmk-errormessages"></a>USMT Error Messages
 
@@ -126,7 +131,7 @@ The following table lists each return code by numeric value, along with the asso
 <tr class="even">
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
-<td align="left"><p>/encrypt can't be used with /nocompress</p></td>
+<td align="left"><p>/encrypt can&#39;t be used with /nocompress</p></td>
 <td align="left"><p>Review ScanState log or LoadState log for details about command-line errors.</p></td>
 <td align="left"><p></p></td>
 </tr>
@@ -140,14 +145,14 @@ The following table lists each return code by numeric value, along with the asso
 <tr class="even">
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
-<td align="left"><p>/genconfig can't be used with most other options</p></td>
+<td align="left"><p>/genconfig can&#39;t be used with most other options</p></td>
 <td align="left"><p>Review ScanState log or LoadState log for details about command-line errors.</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
-<td align="left"><p>/genmigxml can't be used with most other options</p></td>
+<td align="left"><p>/genmigxml can&#39;t be used with most other options</p></td>
 <td align="left"><p>Review ScanState log or LoadState log for details about command-line errors.</p></td>
 <td align="left"><p></p></td>
 </tr>
@@ -434,7 +439,7 @@ The following table lists each return code by numeric value, along with the asso
 <tr class="even">
 <td align="left"><p>27</p></td>
 <td align="left"><p>USMT_INVALID_STORE_LOCATION</p></td>
-<td align="left"><p>A store path can't be used because an existing store exists; specify /o to overwrite</p></td>
+<td align="left"><p>A store path can&#39;t be used because an existing store exists; specify /o to overwrite</p></td>
 <td align="left"><p>Specify /o to overwrite an existing intermediate or migration store.</p></td>
 <td align="left"><p>Setup and Initialization</p></td>
 </tr>
@@ -595,7 +600,7 @@ The following table lists each return code by numeric value, along with the asso
 <tr class="odd">
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
-<td align="left"><p>A store path can't be used because it contains data that could not be overwritten</p></td>
+<td align="left"><p>A store path can&#39;t be used because it contains data that could not be overwritten</p></td>
 <td align="left"><p>A migration store could not be deleted. If you are using a hardlink migration store you might have a locked file in it. You should manually delete the store, or use <strong>USMTUtils /rd</strong> command to delete the store.</p></td>
 <td align="left"><p></p></td>
 </tr>
@@ -672,7 +677,7 @@ The following table lists each return code by numeric value, along with the asso
 <tr class="even">
 <td align="left"><p>41</p></td>
 <td align="left"><p>USMT_PREFLIGHT_FILE_CREATION_FAILED</p></td>
-<td align="left"><p>Can't overwrite existing file</p></td>
+<td align="left"><p>Can&#39;t overwrite existing file</p></td>
 <td align="left"><p>The Progress log could not be created. Verify that the location is valid and that you have write access.</p></td>
 <td align="left"><p>Setup and Initialization</p></td>
 </tr>
@@ -687,7 +692,7 @@ The following table lists each return code by numeric value, along with the asso
 <td align="left"><p>42</p></td>
 <td align="left"><p>USMT_ERROR_CORRUPTED_STORE</p></td>
 <td align="left"><p>The store contains one or more corrupted files</p></td>
-<td align="left"><p>Review UsmtUtils log for details about the corrupted files. For information on how to extract the files that are not corrupted, see [Extract Files from a Compressed USMT Migration Store](usmt-extract-files-from-a-compressed-migration-store.md).</p></td>
+<td align="left"><p>Review UsmtUtils log for details about the corrupted files. For information on how to extract the files that are not corrupted, see <a href="usmt-extract-files-from-a-compressed-migration-store.md" data-raw-source="[Extract Files from a Compressed USMT Migration Store](usmt-extract-files-from-a-compressed-migration-store.md)">Extract Files from a Compressed USMT Migration Store</a>.</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
@@ -763,7 +768,7 @@ The following table lists each return code by numeric value, along with the asso
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -772,9 +777,9 @@ The following table lists each return code by numeric value, along with the asso
 
 [Log Files](usmt-log-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

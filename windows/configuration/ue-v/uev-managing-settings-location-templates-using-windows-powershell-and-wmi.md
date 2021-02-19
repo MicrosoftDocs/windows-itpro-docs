@@ -1,12 +1,16 @@
 ---
 title: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
 description: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 
 
@@ -25,7 +29,7 @@ The WMI and Windows PowerShell features of UE-V include the ability to enable, d
 
 You must have administrator permissions to update, register, or unregister a settings location template. Administrator permissions are not required to enable, disable, or list templates.
 
-****To manage settings location templates by using Windows PowerShell****
+***<em>To manage settings location templates by using Windows PowerShell</em>***
 
 1.  Use an account with administrator rights to open a Windows PowerShell command prompt.
 
@@ -154,7 +158,7 @@ You must have administrator permissions to update, register, or unregister a set
     </tbody>
     </table>
 
-     
+     
 
 The UE-V Windows PowerShell features enable you to manage a group of settings templates that are deployed in your enterprise. Use the following procedure to manage a group of templates by using Windows PowerShell.
 
@@ -168,7 +172,7 @@ The UE-V Windows PowerShell features enable you to manage a group of settings te
 
 4.  Unregister all the previously registered versions of the templates by typing the following command.
 
-    ``` syntax
+    ```powershell
     Unregister-UevTemplate -All
     ```
 
@@ -176,7 +180,7 @@ The UE-V Windows PowerShell features enable you to manage a group of settings te
 
 5.  Register the updated templates by typing the following command.
 
-    ``` syntax
+    ```powershell
     Register-UevTemplate <path to template folder>\*.xml
     ```
 
@@ -188,7 +192,7 @@ By listing a Windows app in the Windows app list, you specify whether that app i
 
 To display the Package Family Name of installed Windows apps, at a Windows PowerShell command prompt, enter:
 
-``` syntax
+```powershell
 Get-AppxPackage | Sort-Object PackageFamilyName | Format-Table PackageFamilyName
 ```
 
@@ -330,9 +334,9 @@ User Experience Virtualization provides the following set of WMI commands. Admin
 **Note**  
 Where a list of Package Family Names is called by the WMI command, the list must be in quotes and separated by a pipe symbol, for example, `"<package family name | package family name>"`.
 
-## Have a suggestion for UE-V?
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+
 
 ## Related topics
 

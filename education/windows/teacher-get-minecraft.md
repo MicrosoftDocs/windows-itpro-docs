@@ -2,15 +2,18 @@
 title: For teachers get Minecraft Education Edition
 description: Learn how teachers can get and distribute Minecraft.
 keywords: school, Minecraft, Education Edition, educators, teachers, acquire, distribute
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.localizationpriority: high
-author: trudyha
-searchScope:
+ms.localizationpriority: medium
+author: dansimp
+searchScope: 
   - Store
-ms.author: trudyha
-ms.date: 10/13/2017
+ms.author: dansimp
+ms.date: 01/05/2018
+ms.reviewer: 
+manager: dansimp
+ms.topic: conceptual
 ---
 
 # For teachers - get Minecraft: Education Edition
@@ -19,41 +22,50 @@ ms.date: 10/13/2017
 
 -   Windows 10 
 
-Learn how teachers can get and distribute Minecraft: Education Edition.
+The following article describes how teachers can get and distribute Minecraft: Education Edition. 
+Minecraft: Education Edition is available for anyone to trial, and subscriptions can be purchased by qualified educational institutions directly in the Microsoft Store for Education, via volume licensing agreements and through partner resellers.
 
-## Add Minecraft to your Microsoft Store for Education 
+To get started, go to https://education.minecraft.net/ and select **GET STARTED**.
 
-1. Go to [http://education.minecraft.net/](http://education.minecraft.net/) and select **GET STARTED**.
+## Try Minecraft: Education Edition for Free 
 
-    <!-- ![Click Get the app](images/teacher-get-app.png) -->
+Minecraft: Education Edition is available for anyone to try for free! The free trial is fully-functional but limited by the number of logins (25 for teachers and 10 for students) before a paid license will be required to continue playing.
 
-2. Enter your email address.
+To learn more and get started, go to https://education.minecraft.net/ and select **GET STARTED**.
 
-    <!-- ![Enter school email address](images/enter-email.png) -->
-    
-3. Select **Get the app**. This will take you to Microsoft Store for Ecucation to download the app. You will also receive an email with instructions and a link to the Store.
+## Purchase Minecraft: Education Edition for Teachers and Students
 
-    <!-- ![You can get the app now](images/get-the-app.png) -->
+Minecraft: Education Edition is licensed via yearly subscriptions that are purchased through the Microsoft Store for Education, via volume licensing agreements and through partner resellers. 
 
-4. Sign in to Microsoft Store for Education with your email address.
+>[!Note]
+>M:EE is available on many platforms, but all license purchases can only be done through one of the three methods listed above.
 
-5. Read and accept the Microsoft Store for Business and Education Service Agreement, and then select **Next**.
+As a teacher, you may purchase subscription licenses for you and your students directly through the Microsoft Store for Education, or you may already have access to licenses at your school (through a volume license agreement) if you have an Office 365 account. 
 
-6. **Minecraft: Education Edition** opens in the Microsoft Store for Education. Select **Get the app**. This places **Minecraft: Education Edition** in your Microsoft Store inventory.
+>[!Note] 
+>If you already have Office 365, you may already have Minecraft: Education Edition licenses for your school! M:EE is included in many volume license agreements, however, only the administrators at your school will be able to assign and manage those licenses. If you have an Office 365 account, check with your school administration or IT administrator prior to purchasing M:EE directly.
 
-    ![Get Minecraft app in Store](images/minecraft-get-the-app.png)
-    
-If you need additional licenses for **Minecraft: Education Edition**, see [Purchase additional licenses](https://technet.microsoft.com/edu/windows/education-scenarios-store-for-business#purchase-additional-licenses).
+You can purchase individual Minecraft: Education Edition subscriptions for you and other teachers and students directly in the Microsoft Store for Education.
+
+To purchase individual Minecraft: Education Edition subscriptions (i.e. direct purchase):
+
+1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com/) with your Office 365 account.
+2. Click on [Minecraft: Education Edition](https://educationstore.microsoft.com/en-us/store/details/minecraft-education-edition/9nblggh4r2r6) (or use Search the Store to find it)
+3. Click **Buy**
+
+>[!Note]
+>Administrators can restrict the ability for teachers to purchase applications in the Microsoft Store for Education. If you do not have the ability to Buy, contact your school administration or IT administrator.
+
     
 ## Distribute Minecraft
 
-After Minecraft: Education Edition is added to your Microsoft Store for Education inventory, you have three options:
+After Minecraft: Education Edition licenses have been purchased, either directly, through a volume license agreement or through a partner reseller, those licenses will be added to your Microsoft Store for Education. From there you have three options:
 
 - You can install the app on your PC.
 - You can assign the app to others.  
 - You can download the app to distribute. 
 
-![App distribution options](images/mc-install-for-me-teacher.png)
+<!-- ![App distribution options](images/mc-install-for-me-teacher.png) -->
 
 ### Install for me
 You can install the app on your PC. This gives you a chance to work with the app before using it with your students.   
@@ -61,7 +73,7 @@ You can install the app on your PC. This gives you a chance to work with the app
 1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Install**.
 
-    ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
+    <!-- ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png) -->
 
 3. Click **Install**. 
 
@@ -72,7 +84,7 @@ Enter email addresses for your students, and each student will get an email with
 1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**.
 
-    ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
+    <!-- ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png) -->
 
 3. Click **Invite people**.
     
@@ -81,7 +93,7 @@ Enter email addresses for your students, and each student will get an email with
    ![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
    
    You can assign the app to students with work or school accounts. </br>
-   If you don't find the student, you can still assign the app to them if self-service sign up is supported for your domain. Students will receive an email with a link to Office 365 portal where they can create an account, and then install **Minecraft: Education Edition**. Questions about self-service sign up? Check with your admin. 
+   If you don't find the student, you can still assign the app to them if self-service sign up is supported for your domain. Students will receive an email with a link to Microsoft 365 admin center where they can create an account, and then install **Minecraft: Education Edition**. Questions about self-service sign up? Check with your admin. 
 
 
 **To finish Minecraft install (for students)**

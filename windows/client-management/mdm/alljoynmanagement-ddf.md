@@ -1,12 +1,14 @@
 ---
 title: AllJoynManagement DDF
-description: AllJoynManagement DDF
+description: Learn the OMA DM device description framework (DDF) for the AllJoynManagement configuration service provider.
 ms.assetid: 540C2E60-A041-4749-A027-BBAF0BB046E4
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: lomayor
 ms.date: 12/05/2017
 ---
 
@@ -17,7 +19,7 @@ This topic shows the OMA DM device description framework (DDF) for the **AllJoyn
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
     "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

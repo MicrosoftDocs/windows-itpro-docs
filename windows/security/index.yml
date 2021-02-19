@@ -1,0 +1,38 @@
+### YamlMime:Hub
+
+title: Windows 10 Enterprise Security # < 60 chars
+summary: Secure corporate data and manage risk. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: windows
+
+metadata:
+  title: Windows 10 Enterprise Security # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about enterprise-grade security features for Windows 10. # Required; article description that is displayed in search results. < 160 chars.
+  services: windows
+  ms.product: windows
+  ms.topic: hub-page # Required
+  ms.collection: M365-security-compliance # Optional; Remove if no collection is used.
+  author: danihalfin #Required; your GitHub user alias, with correct capitalization.
+  ms.author: daniha #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/08/2018 #Required; mm/dd/yyyy format.
+  ms.localizationpriority: high
+
+# productDirectory section (optional)
+productDirectory:
+  items:
+    # Card
+    - title: Identity and access management
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/media/common/i_identity-protection.svg
+      summary: Deploy secure enterprise-grade authentication and access control to protect accounts and data
+      url: ./identity-protection/index.md
+    # Card
+    - title: Threat protection
+      imageSrc: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      summary: Stop cyberthreats and quickly identify and respond to breaches
+      url: ./threat-protection/index.md
+    # Card
+    - title: Information protection
+      imageSrc: https://docs.microsoft.com/media/common/i_information-protection.svg
+      summary: Identify and secure critical data to prevent data loss
+      url: ./information-protection/index.md

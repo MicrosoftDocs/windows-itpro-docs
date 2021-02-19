@@ -30,14 +30,25 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.windows-manage"
-			}
-		}
-	},
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.windows-manage",
+          "folder_relative_path_in_docset": "./"
+        }
+      },
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "windows-manage"
+    "dest": "windows-manage",
+    "markdownEngineName": "markdig"
   }
 }

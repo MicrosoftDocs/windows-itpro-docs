@@ -1,14 +1,18 @@
 ---
 title: Upgrade Windows Phone 8.1 to Windows 10 Mobile in an MDM environment (Windows 10)
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: This article describes how to upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using MDM. 
 keywords: upgrade, update, windows, phone, windows 10, mdm, mobile
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
-ms.pagetype: mdt
-author: Jamiejdt
-ms.date: 07/27/2017
+ms.pagetype: mdm
+audience: itpro
+author: greg-lindsay
+ms.topic: article
 ---
 
 # Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management (MDM)
@@ -18,13 +22,19 @@ ms.date: 07/27/2017
 -   Windows 10 Mobile
 
 ## Summary
-This article describes how to upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using Mobile Device Management (MDM). To determine if the device is eligible for an upgrade, see the [How to determine whether an upgrade is available for a device](#howto-upgrade-available) topic in this article.
 
-The Windows Phone 8.1 to Windows 10 Mobile upgrade uses an "opt-in" or "seeker" model. An eligible device must opt-in to be offered the upgrade. For consumers, the Windows 10 Mobile Upgrade Advisor app is available from the Windows Store to perform the opt-in. For Enterprises, Microsoft is offering a centralized management solution through MDM that can push a management policy to each eligible device to perform the opt-in.
+This article describes how system administrators can upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM). 
 
-If you use a list of allowed applications (app whitelisting) with MDM, verify that system applications are whitelisted before you upgrade to Windows 10 Mobile. Also, be aware that there are [known issues](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056.aspx#whitelist) with app whitelisting that could adversely affect the device after you upgrade.
+>[!IMPORTANT]
+>If you are not a system administrator, see the [Windows 10 Mobile Upgrade & Updates](https://www.microsoft.com/windows/windows-10-mobile-upgrade) page for details about updating your Windows 8.1 Mobile device to Windows 10 Mobile using the [Upgrade Advisor](https://www.microsoft.com/store/p/upgrade-advisor/9nblggh0f5g4).
 
-Some enterprises might want to control the availability of the Windows 10 Mobile upgrade to their users. With the opt-in model, the enterprise can blacklist the Upgrade Advisor app to prevent their users from upgrading prematurely. For more information about how to blacklist the Upgrade Advisor app, see the [How to blacklist the Upgrade Advisor app](#howto-blacklist) section in this article. Enterprises that have blacklisted the Upgrade Advisor app can use the solution described in this article to select the upgrade timing on a per-device basis.
+## Upgrading with MDM
+
+The Windows Phone 8.1 to Windows 10 Mobile upgrade uses an "opt-in" or "seeker" model. To determine if the device is eligible for an upgrade with MDM, see the [How to determine whether an upgrade is available for a device](#howto-upgrade-available) topic in this article. An eligible device must opt-in to be offered the upgrade. For consumers, the Windows 10 Mobile Upgrade Advisor app is available from the Windows Store to perform the opt-in. For Enterprises, Microsoft is offering a centralized management solution through MDM that can push a management policy to each eligible device to perform the opt-in.
+
+If you use a list of allowed applications (app allow listing) with MDM, verify that system applications are allow-listed before you upgrade to Windows 10 Mobile. Also, be aware that there are [known issues](https://msdn.microsoft.com/library/windows/hardware/mt299056.aspx#whitelist) with app allow-lists that could adversely affect the device after you upgrade.
+
+Some enterprises might want to control the availability of the Windows 10 Mobile upgrade to their users. With the opt-in model, the enterprise can block the Upgrade Advisor app to prevent their users from upgrading prematurely. For more information about how to restrict the Upgrade Advisor app, see the [How to restrict the Upgrade Advisor app](#howto-restrict) section in this article. Enterprises that have restricted the Upgrade Advisor app can use the solution described in this article to select the upgrade timing on a per-device basis.
 
 ## More information
 
@@ -89,15 +99,15 @@ The Windows 10 Mobile Upgrade Advisor app is not designed or intended for Enterp
 
 We recommend that enterprises use a pilot device with the Windows 10 Mobile Upgrade Advisor app installed. The pilot device provides the device model and MO used by the enterprise. When you run the app on the pilot device, it will tell you that either an upgrade is available, that the device is eligible for upgrade, or that an upgrade is not available for this device.
 
-Note: The availability of Windows 10 Mobile as an update for existing Windows Phone 8.1 devices varies by device manufacturer, device model, country or region, mobile operator or service provider, hardware limitations, and other factors. To check for compatibility and other important installation information, see the [Windows 10 mobile](https://www.microsoft.com/en/mobile/windows10) page.
+Note: The availability of Windows 10 Mobile as an update for existing Windows Phone 8.1 devices varies by device manufacturer, device model, country or region, mobile operator or service provider, hardware limitations, and other factors. To check for compatibility and other important installation information, see the [Windows 10 Mobile FAQ](https://support.microsoft.com/help/10599/windows-10-mobile-how-to-get) page.
 
-### How to blacklist the Upgrade Advisor app <a id="howto-blacklist"></a>
+### How to restrict the Upgrade Advisor app <a id="howto-restrict"></a>
 
 Some enterprises may want to block their users from installing the Windows 10 Mobile Upgrade Advisor app. With Windows Phone 8.1, you can allow or deny individual apps by adding specific app publishers or the app globally unique identifier (GUID) from the Window Phone Store to an allow or deny XML list. The GUID for a particular application can be found in the URL for the app in the phone store. For example, the GUID to the Windows 10 Mobile Upgrade Adviser (fbe47e4f-7769-4103-910e-dca8c43e0b07) is displayed in the following URL:
 
 http://windowsphone.com/s?appid=fbe47e4f-7769-4103-910e-dca8c43e0b07
 
-For more information about how to do this, see [Try it out: restrict Windows Phone 8.1 apps](https://technet.microsoft.com/en-us/windows/dn771706.aspx).
+For more information about how to do this, see [Try it out: restrict Windows Phone 8.1 apps](https://technet.microsoft.com/windows/dn771706.aspx).
 
 ## Related topics
 

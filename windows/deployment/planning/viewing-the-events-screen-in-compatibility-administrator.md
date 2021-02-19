@@ -1,13 +1,17 @@
 ---
 title: Viewing the Events Screen in Compatibility Administrator (Windows 10)
-description: The Events screen enables you to record and to view your activities in the Compatibility Administrator tool, provided that the screen is open while you perform the activities.
+description: You can use the Events screen to record and view activities in the Compatibility Administrator tool.
 ms.assetid: f2b2ada4-1b7b-4558-989d-5b52b40454b3
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-author: TrudyHa
-ms.date: 04/19/2017
+audience: itpro
+author: greg-lindsay
+ms.topic: article
 ---
 
 # Viewing the Events Screen in Compatibility Administrator
@@ -24,14 +28,14 @@ ms.date: 04/19/2017
 
 The **Events** screen enables you to record and to view your activities in the Compatibility Administrator tool, provided that the screen is open while you perform the activities.
 
-**Important**  
-The **Events** screen only records your activities when the screen is open. If you perform an action before opening the **Events** screen, the action will not appear in the list.
+>[!IMPORTANT]
+>The **Events** screen only records your activities when the screen is open. If you perform an action before opening the **Events** screen, the action will not appear in the list.
 
- 
+ 
 
 **To open the Events screen**
 
--   On the **View** menu, click **Events**.
+- On the **View** menu, click **Events**.
 
 ## Handling Multiple Copies of Compatibility Fixes
 
@@ -41,15 +45,5 @@ Compatibility Administrator enables you to copy your compatibility fixes from on
 If you open the **Events** screen and then perform the copy operation, you can see a description of the action, along with the time stamp, which enables you to view your fix information without confusion.
 
 ## Related topics
-[Creating a Custom Compatibility Mode in Compatibility Administrator](creating-a-custom-compatibility-mode-in-compatibility-administrator.md)
-
+[Creating a Custom Compatibility Mode in Compatibility Administrator](creating-a-custom-compatibility-mode-in-compatibility-administrator.md)<br>
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
-
- 
-
- 
-
-
-
-
-

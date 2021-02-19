@@ -1,12 +1,14 @@
 ---
 title: DeviceLock CSP
-description: DeviceLock CSP
+description: Learn how the DeviceLock configuration service provider (CSP) is used by the enterprise management server to configure device lock related policies.
 ms.assetid: 9a547efb-738e-4677-95d3-5506d350d8ab
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -124,7 +126,7 @@ Required. This node has the same set of policy nodes as the **ProviderID** node.
 
 Set device lock policies:
 
-``` syntax
+```xml
 <Atomic>
    <CmdID>13</CmdID>
    <Add>

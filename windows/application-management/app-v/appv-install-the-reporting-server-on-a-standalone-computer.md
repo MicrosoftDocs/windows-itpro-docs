@@ -1,58 +1,49 @@
 ---
-title: How to install the Reporting Server on a Standalone Computer and Connect it to the Database (Windows 10)
+title: How to install the Reporting Server on a standalone computer and connect it to the database (Windows 10)
 description: How to install the App-V Reporting Server on a Standalone Computer and Connect it to the Database
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
+# How to install the reporting server on a standalone computer and connect it to the database
 
-
-# How to install the Reporting Server on a Standalone Computer and Connect it to the Database
-
-**Applies to**
--   Windows Server 2016
+>Applies to: Windows Server 2016
 
 Use the following procedure to install the reporting server on a standalone computer and connect it to the database.
 
-> **Important**&nbsp;&nbsp;Before performing the following procedure you should read and understand [About App-V Reporting](appv-reporting.md).
+>[!IMPORTANT]
+>Before performing the following procedure you should read and understand [About App-V reporting](appv-reporting.md).
 
-**To install the reporting server on a standalone computer and connect it to the database**
+## Install the reporting server on a standalone computer and connect it to the database
 
-1.  Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
+1. Copy the App-V server installation files to the computer you plan to install it on. To start the App-V server installation, run **appv\_server\_setup.exe** as an administrator, then select **Install**.
+2. On the **Getting started** page, review and accept the license terms, then select **Next**.
+3. On the **Use Microsoft Update to help keep your computer secure and up-to-date** page, to enable Microsoft Update, select **Use Microsoft Update when I check for updates (recommended)**. To disable Microsoft Update, select **I don’t want to use Microsoft Update**. Select **Next**.
+4. On the **Feature selection** page, select the **Reporting Server** checkbox, then select **Next**.
+5. On the **Installation location** page, accept the default location and select **Next**.
+6. On the **Configure existing reporting database** page, select **Use a remote SQL Server**, then enter the machine name of the computer running Microsoft SQL Server. For example, you can name your computer **SqlServerMachine**.
 
-2.  On the **Getting Started** page, review and accept the license terms, and click **Next**.
+   > [!NOTE]
+    >If the Microsoft SQL Server is deployed on the same server, select **Use local SQL Server**. For the SQL Server instance, select **Use the default instance**. If you're using a custom Microsoft SQL Server instance, select **Use a custom instance**, then enter the name of your custom instance. Specify the **SQL Server Database name** that this reporting server will use; for example, you can name the server **AppvReporting**.
+7. On the **Configure reporting server configuration** page.
 
-3.  On the **Use Microsoft Update to help keep your computer secure and up-to-date** page, to enable Microsoft updates, select **Use Microsoft Update when I check for updates (recommended).** To disable Microsoft updates, select **I don’t want to use Microsoft Update**. Click **Next**.
+    * Specify the website name  you want to use for the reporting service. Leave the default unchanged if you do not have a custom name.
+    * For the **Port binding**, specify a unique, five-digit port number for App-V to use, such as **55555**. Make sure that the specified port isn't being used by another website.
+8. Select **Install**.
 
-4.  On the **Feature Selection** page, select the **Reporting Server** checkbox and click **Next**.
+ 
 
-5.  On the **Installation Location** page, accept the default location and click **Next**.
 
-6.  On the **Configure Existing Reporting Database** page, select **Use a remote SQL Server**, and type the machine name of the computer running Microsoft SQL Server, for example **SqlServerMachine**.
-
-    **Note**  
-    If the Microsoft SQL Server is deployed on the same server, select **Use local SQL Server**. For the SQL Server Instance, select **Use the default instance**. If you are using a custom Microsoft SQL Server instance, you must select **Use a custom instance** and then type the name of the instance. Specify the **SQL Server Database name** that this reporting server will use, for example **AppvReporting**.
-
-7.  On the **Configure Reporting Server Configuration** page.
-
-    -   Specify the Website Name that you want to use for the Reporting Service. Leave the default unchanged if you do not have a custom name.
-
-    -   For the **Port binding**, specify a unique port number that will be used by App-V, for example **55555**. You should also ensure that the port specified is not being used by another website.
-
-8.  Click **Install**.
-
-## Have a suggestion for App-V? 
-
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
-[About App-V Reporting](appv-reporting.md)
-
-[Deploying App-V](appv-deploying-appv.md)
-
-[How to Enable Reporting on the App-V Client by Using Windows PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md)
+* [About App-V reporting](appv-reporting.md)
+* [Deploying App-V](appv-deploying-appv.md)
+* [How to enable reporting on the App-V client by using Windows PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md)

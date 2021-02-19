@@ -2,12 +2,14 @@
 title: VPNv2 DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the VPNv2 configuration service provider.
 ms.assetid: 4E2F36B7-D2EE-4F48-AD1A-6BDE7E72CC94
-ms.author: maricia
+ms.reviewer: pesmith
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 12/05/2017
+author: manikadhiman
+ms.date: 10/30/2020
 ---
 
 # VPNv2 DDF file
@@ -17,9 +19,9 @@ This topic shows the OMA DM device description framework (DDF) for the **VPNv2**
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1709.
+The XML below is for Windows 10, version 2004.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -30,7 +32,7 @@ The XML below is for Windows 10, version 1709.
     <VerDTD>1.2</VerDTD>
     <Node>
         <NodeName>VPNv2</NodeName>
-        <Path>./Device/Vendor/MSFT</Path>
+        <Path>./Vendor/MSFT</Path>
         <DFProperties>
             <AccessType>
                 <Get />
@@ -813,6 +815,33 @@ The XML below is for Windows 10, version 1709.
                                 ForceTunnel - All Traffic matching this rule must go over only the VPN Interface.
 
                                 Only Applicable for App and Claims type.
+                            </Description>
+                            <DFFormat>
+                                <chr />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>Direction</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Get />
+                                <Add />
+                                <Delete />
+                                <Replace />
+                            </AccessType>
+                            <Description>
+                                Outbound - The traffic filter allows traffic to reach destinations matching this rule. This is the default.
+                                Inbound - The traffic filter allows traffic coming from external locations matching this rule.
                             </Description>
                             <DFFormat>
                                 <chr />
@@ -1623,6 +1652,76 @@ The XML below is for Windows 10, version 1709.
                         </DFType>
                     </DFProperties>
                 </Node>
+                <Node>
+                    <NodeName>WebAuth</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                        </AccessType>
+                        <Description>Nodes under WebAuth can be used to enable WebToken based authentication for 3rd Party Plugin VPN Profiles.</Description>
+                        <DFFormat>
+                            <node />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <DFType>
+                            <DDFName></DDFName>
+                        </DFType>
+                    </DFProperties>
+                    <Node>
+                        <NodeName>Enabled</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <Description>Enables the WebToken based authentication flow.</Description>
+                            <DFFormat>
+                                <bool />
+                            </DFFormat>
+                            <Occurrence>
+                                <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>ClientId</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <Description>The client ID to specify when communicating with the Web Account provider in retrieving the token.</Description>
+                            <DFFormat>
+                                <chr />
+                            </DFFormat>
+                            <Occurrence>
+                                <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                </Node>
             </Node>
             <Node>
                 <NodeName>NativeProfile</NodeName>
@@ -2223,6 +2322,33 @@ The XML below is for Windows 10, version 1709.
                   </DFType>
                 </DFProperties>
               </Node>
+              <Node>
+                <NodeName>PlumbIKEv2TSAsRoutes</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Delete />
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <Description>
+                        True: Plumb traffic selectors as routes onto VPN interface
+                        False: Do not plumb traffic selectors as routes
+                    </Description>
+                    <DFFormat>
+                        <bool />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
             </Node>
         </Node>
     </Node>
@@ -3716,6 +3842,76 @@ The XML below is for Windows 10, version 1709.
                         </DFType>
                     </DFProperties>
                 </Node>
+                <Node>
+                    <NodeName>WebAuth</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                        </AccessType>
+                        <Description>Nodes under WebAuth can be used to enable WebToken based authentication for 3rd Party Plugin VPN Profiles.</Description>
+                        <DFFormat>
+                            <node />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <DFType>
+                            <DDFName></DDFName>
+                        </DFType>
+                    </DFProperties>
+                    <Node>
+                        <NodeName>Enabled</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <Description>Enables the WebToken based authentication flow.</Description>
+                            <DFFormat>
+                                <bool />
+                            </DFFormat>
+                            <Occurrence>
+                                <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>ClientId</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <Description>The client ID to specify when communicating with the Web Account provider in retrieving the token.</Description>
+                            <DFFormat>
+                                <chr />
+                            </DFFormat>
+                            <Occurrence>
+                                <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                </Node>
             </Node>
             <Node>
                 <NodeName>NativeProfile</NodeName>
@@ -4316,6 +4512,33 @@ The XML below is for Windows 10, version 1709.
                   </DFType>
                 </DFProperties>
               </Node>
+              <Node>
+                <NodeName>PlumbIKEv2TSAsRoutes</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Delete />
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <Description>
+                        True: Plumb traffic selectors as routes onto VPN interface
+                        False: Do not plumb traffic selectors as routes
+                    </Description>
+                    <DFFormat>
+                        <bool />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
             </Node>
         </Node>
     </Node>

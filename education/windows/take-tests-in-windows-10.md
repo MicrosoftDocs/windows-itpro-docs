@@ -6,10 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
-ms.localizationpriority: high
-author: CelesteDG
-ms.author: celested
+ms.localizationpriority: medium
+author: dansimp
+ms.author: dansimp
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Take tests in Windows 10
@@ -32,33 +34,37 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ![Set up and user flow for the Take a Test app](images/take_a_test_flow_dark.png)
 
-There are several ways to configure devices for assessments. You can:
-- **Configure an assessment URL and a dedicated testing account**
+There are several ways to configure devices for assessments, depending on your use case:
+
+- For higher stakes testing such as mid-term exams, you can set up a device with a dedicated testing account and URL. 
+- For lower stakes assessments such as a quick quiz in a class, you can quickly create and distribute the assessment URL through any method of your choosing.
+
+1. **Configure an assessment URL and a dedicated testing account**
 
     In this configuration, a user signs into in to the account and the **Take a Test** app automatically launches the pre-configured assessment URL in Microsoft Edge in a single-app, kiosk mode. A student will never have access to the desktop in this configuration. We recommend this configuration for high stakes testing.
 
     There are different methods to configure the assessment URL and a dedicated testing account depending on whether you're setting up Take a Test on a single PC or multiple PCs.
 
-    - **For a single PC**
+  - **For a single PC**
         
-        You can use the Windows 10 **Settings** application. For more info, see [Set up Take a Test on a single PC](take-a-test-single-pc.md).
+      You can use the Windows 10 **Settings** application. For more info, see [Set up Take a Test on a single PC](take-a-test-single-pc.md).
 
-    - **For multiple PCs**
+  - **For multiple PCs**
     
-        You can use any of these methods:
-            - Mobile device management (MDM) or Microsoft System Center Configuration Manager
-            - A provisioning package created in Windows Configuration Designer
-            - Group Policy to deploy a scheduled task that runs a Powershell script
+      You can use any of these methods:
+    - Mobile device management (MDM) or Microsoft Endpoint Configuration Manager
+    - A provisioning package created in Windows Configuration Designer
+    - Group Policy to deploy a scheduled task that runs a Powershell script
 
-        Beginning with Windows 10 Creators Update (version 1703), you can also configure Take a Test using these options:
-            - Set up School PCs app
-            - Intune for Education
+      Beginning with Windows 10 Creators Update (version 1703), you can also configure Take a Test using these options:
+    - Set up School PCs app
+    - Intune for Education
 
-        For more info about these methods, see [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md).
+      For more info about these methods, see [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md).
 
-- **Distribute the assessment URL through the web, email, OneNote, or any other method of your choosing. You can also create shortcuts to distribute the link**
+2. **Create and distribute the assessment URL through the web, email, OneNote, or any other method** 
 
-    This allows teachers and test administrators an easier way to deploy assessments. We recommend this method for lower stakes assessments.
+    This allows teachers and test administrators an easier way to deploy assessments quickly and simply. We recommend this method for lower stakes assessments. You can also create shortcuts to distribute the link.
 
     You can enable this using a schema activation.
 
@@ -68,5 +74,5 @@ To exit the Take a Test app at any time, press Ctrl+Alt+Delete.
 
 
 ## Get more info
-- Teachers can use Microsoft Forms to create tests. See [Create tests using Microsoft Forms](https://support.microsoft.com/en-us/help/4000711/windows-10-create-tests-using-microsoft-forms) to find out how.
+- Teachers can use Microsoft Forms to create tests. See [Create tests using Microsoft Forms](https://support.microsoft.com/help/4000711/windows-10-create-tests-using-microsoft-forms) to find out how.
 - To learn more about the policies and settings set by the Take a Test app, see [Take a Test app technical reference](take-a-test-app-technical.md).

@@ -1,12 +1,16 @@
 ---
 title: Manage Configurations for UE-V
-description: Manage Configurations for UE-V
-author: MaggiePucciEvans
+description: Learn to manage the configuration of the User Experience Virtualization (UE-V) service and also learn to manage storage locations for UE-V resources.
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 
 
@@ -23,11 +27,11 @@ You can use Group Policy Objects to modify the settings that define how UE-V syn
 
 [Configuring UE-V with Group Policy Objects](uev-configuring-uev-with-group-policy-objects.md)
 
-## Configuring UE-V with System Center Configuration Manager
+## Configuring UE-V with Microsoft Endpoint Configuration Manager
 
-You can use System Center Configuration Manager to manage the UE-V service by using the UE-V Configuration Pack.
+You can use Microsoft Endpoint Configuration Manager to manage the UE-V service by using the UE-V Configuration Pack.
 
-[Configuring UE-V with System Center Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager.md)
+[Configuring UE-V with Microsoft Endpoint Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager.md)
 
 ## Administering UE-V with PowerShell and WMI
 
@@ -57,9 +61,9 @@ Here are some examples of UE-V configuration settings:
 
 -   **Enable/Disable First Use Notification:** Specifies whether UE-V displays a dialog box the first time that the UE-V service runs on a user’s computer.
 
-## Have a suggestion for UE-V?
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+
 
 ## Related topics
 

@@ -4,9 +4,13 @@ description: A provisioning package (.ppkg) is a container for a collection of c
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
-ms.localizationpriority: high
+author: dansimp
+ms.author: dansimp
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # How provisioning works in Windows 10
@@ -41,7 +45,7 @@ When multiple provisioning packages are available for device provisioning, the c
 
 1. Microsoft 
 
-2. Silicon Vender 
+2. Silicon Vendor 
 
 3. OEM 
 
@@ -53,7 +57,7 @@ When multiple provisioning packages are available for device provisioning, the c
 
 The valid value range of package rank level is 0 to 99. 
 
-When setting conflicts are encountered, the final values provisioned on the device are determined by the owner type precedence and the rank level of the packages containing the settings. For example, the value of a setting in a package with owner **System Integrator** and rank level **3** takes precedence over the same setting in a package with owner **OEM** and rank level **4**. This is because the System Integrator owner type has the higher precedence over the OEM owner type. For packages with the same owner type, the package rank level determines the package from which the setting values get provisioned on the device. 
+When setting conflicts are encountered, the final values provisioned on the device are determined by the owner type precedence and the rank level of the packages containing the settings. For packages with the same owner type, the package rank level determines the package from which the setting values get provisioned on the device. 
 
 ## Windows provisioning XML
 

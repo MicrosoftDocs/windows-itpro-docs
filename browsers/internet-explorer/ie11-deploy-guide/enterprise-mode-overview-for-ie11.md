@@ -1,11 +1,15 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the topics in this section to learn how to set up and use Enterprise Mode, Enterprise Mode Site List Manager, and the Enterprise Mode Site List Portal for your company.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: d52ba8ba-b3c7-4314-ba14-0610e1d8456e
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Enterprise Mode for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -14,17 +18,21 @@ ms.date: 07/27/2017
 
 # Enterprise Mode for Internet Explorer 11
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
--   Windows 10
--   Windows 8.1
--   Windows 7
--   Windows Server 2012 R2
--   Windows Server 2008 R2 with Service Pack 1 (SP1)
+-   Windows 10
+-   Windows 8.1
+-   Windows 7
+-   Windows Server 2012 R2
+-   Windows Server 2008 R2 with Service Pack 1 (SP1)
 
 Use the topics in this section to learn how to set up and use Enterprise Mode and the Enterprise Mode Site List Manager in your company.
 
 ## In this section
+
 |Topic                                                          |Description                                                                        |
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------|
 |[Enterprise Mode and the Enterprise Mode Site List](what-is-enterprise-mode.md)|Includes descriptions of the features of Enterprise Mode.                          |
@@ -41,11 +49,11 @@ Use the topics in this section to learn how to set up and use Enterprise Mode an
 |[Remove sites from a local Enterprise Mode site list](remove-sites-from-a-local-enterprise-mode-site-list.md) |Guidance about how to remove websites from a device's local Enterprise Mode site list. |
 |[Remove sites from a local compatibility view list](remove-sites-from-a-local-compatibililty-view-list.md) |Guidance about how to remove websites from a device's local compatibility view list. |
 |[Turn off Enterprise Mode](turn-off-enterprise-mode.md)                     |Guidance about how to stop using your site list and how to turn off local control, using Group Policy or the registry. |
- 
 
- 
 
- 
+
+
+
 
 
 

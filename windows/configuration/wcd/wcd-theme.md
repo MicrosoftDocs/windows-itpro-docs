@@ -4,10 +4,12 @@ description: This section describes the Theme settings that you can configure in
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
-ms.date: 09/06/2017
+ms.author: dansimp
+ms.topic: article
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Theme (reference)

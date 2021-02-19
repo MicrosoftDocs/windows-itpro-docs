@@ -1,35 +1,61 @@
 {
   "build": {
-    "content":
-      [
-        {
-          "files": ["**/**.md", "**/**.yml"],
-          "exclude": ["**/obj/**"]
-        }
-      ],
+    "content": [
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
     "resource": [
-        {
-          "files": ["**/images/**", "**/*.json"],
-          "exclude": ["**/obj/**"]
-        }
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
     ],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-        "ROBOTS": "INDEX, FOLLOW",
-		"ms.author": "celested",
-		"audience": "windows-education",
-		"ms.topic": "article",
-		"breadcrumb_path": "/education/breadcrumb/toc.json",
+      "ROBOTS": "INDEX, FOLLOW",
+      "audience": "windows-education",
+      "ms.topic": "article",
+      "ms.technology": "windows",
+      "manager": "laurawi",
+      "audience": "ITPro",
+      "breadcrumb_path": "/education/breadcrumb/toc.json",
       "ms.date": "05/09/2017",
+      "feedback_system": "None",
+      "hideEdit": true,
       "_op_documentIdPathDepotMapping": {
         "./": {
-          "depot_name": "Win.education"
+          "depot_name": "Win.education",
+          "folder_relative_path_in_docset": "./"
         }
-       }
+      },
+      "contributors_to_exclude": [ 
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "Kellylorenebaker",
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
-    "externalReference": [
-    ],
+    "externalReference": [],
     "template": "op.html",
-    "dest": "education"
-  }
+    "dest": "education",
+    "markdownEngineName": "markdig"
+}
 }

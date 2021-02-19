@@ -1,12 +1,16 @@
 ---
 title: Troubleshooting UE-V
-description: Troubleshooting UE-V
-author: MaggiePucciEvans
+description: Use this technical reference to find resources for troubleshooting User Experience Virtualization (UE-V) for Windows 10.
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
 
 
@@ -18,9 +22,9 @@ ms.date: 04/19/2017
 
 For information that can help with troubleshooting UE-V for Windows 10, see:
 
-- [UE-V FAQ Wiki](http://social.technet.microsoft.com/wiki/contents/articles/35333.ue-v-important-changes-in-ue-v-functionality-after-the-windows-10-anniversary-update.aspx)
+- [UE-V FAQ Wiki](https://social.technet.microsoft.com/wiki/contents/articles/35333.ue-v-important-changes-in-ue-v-functionality-after-the-windows-10-anniversary-update.aspx)
 
-- [UE-V: List of Microsoft Support Knowledge Base Articles](http://social.technet.microsoft.com/wiki/contents/articles/14271.ue-v-list-of-microsoft-support-knowledge-base-articles.aspx)
+- [UE-V: List of Microsoft Support Knowledge Base Articles](https://social.technet.microsoft.com/wiki/contents/articles/14271.ue-v-list-of-microsoft-support-knowledge-base-articles.aspx)
 
 - [User Experience Virtualization Release Notes](uev-release-notes-1607.md)
 
@@ -38,6 +42,6 @@ For information that can help with troubleshooting UE-V for Windows 10, see:
 
 -   [Administering UE-V](uev-administering-uev.md)
 
-## Have a suggestion for UE-V?
 
-Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+

@@ -1,79 +1,36 @@
 ---
 title: App-V Deployment Checklist (Windows 10)
-description: App-V Deployment Checklist
-author: MaggiePucciEvans
+description: Use the App-V deployment checklist to understand the recommended steps and items to consider when deploying App-V features.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
-
-
 # App-V Deployment Checklist
 
-**Applies to**
--   Windows 10, version 1607
+>Applies to: Windows 10, version 1607
 
-This checklist can be used to help you during an App-V deployment.
+This checklist outlines the recommended steps and items to consider when deploying App-V features. Use it to organize your priorities while you deploy App-V. You can copy this checklist into a spreadsheet program and customize it for your use.
 
->**Note**<br>
-This checklist outlines the recommended steps and items to consider when deploying App-V features. We recommend that you copy this checklist into a spreadsheet program and customize it for your use.
+|Status|Task|References|Notes|
+|---|---|---|---|
+|![Checklist box](../app-v/images/checklistbox.gif)|Prepare the computing environment for App-V deployment during your planning phase.|[App-V planning checklist](appv-planning-checklist.md)||
+|![Checklist box](../app-v/images/checklistbox.gif)|Review App-V's supported configurations.|[App-V supported configurations](appv-supported-configurations.md)||
+|![Checklist box](../app-v/images/checklistbox.gif)|Run App-V Setup to deploy the required App-V features for your environment.|[How to install the sequencer](appv-install-the-sequencer.md)<br>[Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)<br>[How to deploy the App-V server](appv-deploy-the-appv-server.md)||
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"></th>
-<th align="left">Task</th>
-<th align="left">References</th>
-<th align="left">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Complete the planning phase to prepare the computing environment for App-V deployment.</p></td>
-<td align="left"><p>[App-V Planning Checklist](appv-planning-checklist.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Review the App-V supported configurations information.</p></td>
-<td align="left"><p>[App-V Supported Configurations](appv-supported-configurations.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Run App-V Setup to deploy the required App-V features for your environment.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Keep track of the names of the servers and associated URLs created during installation. This information will be used throughout the installation process.</p>
-</div>
-<div>
- 
-</div></td>
-<td align="left"><p></p>
-<ul>
-<li><p>[How to Install the Sequencer](appv-install-the-sequencer.md)</p></li>
-<li><p>[Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)</p></li>
-<li><p>[How to Deploy the App-V Server](appv-deploy-the-appv-server.md)</p></li>
-</ul></td>
-<td align="left"><p></p></td>
-</tr>
-</tbody>
-</table>
-
-## Have a suggestion for App-V?
+>[!NOTE]
+>Keep track of server names and associated URLs you create during installation. You'll need this information throughout the installation process.
 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+
 
 ## Related topics
 
-[Deploying App-V](appv-deploying-appv.md)
+* [Deploying App-V](appv-deploying-appv.md)

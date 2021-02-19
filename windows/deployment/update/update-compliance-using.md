@@ -1,79 +1,90 @@
 ---
 title: Using Update Compliance (Windows 10)
-description: Explains how to begin usihg Update Compliance.
+ms.reviewer: 
+manager: laurawi
+description: Learn how to use Update Compliance to monitor your device's Windows updates.
+keywords: oms, operations management suite, wdav, updates, upgrades, antivirus, antimalware, signature, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
-author: DaniHalfin
-ms.author: daniha
-ms.date: 10/13/2017
+audience: itpro
+author: jaimeo
+ms.author: jaimeo
+ms.localizationpriority: medium
+ms.collection: M365-analytics
+ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use Update Compliance
 
-In this section you'll learn how to use Update Compliance to monitor your device's Windows updates and Windows Defender Antivirus status. To configure your environment for use with Update Compliance, refer to [Get started with Update Compliance](update-compliance-get-started.md).
+In this section you'll learn how to use Update Compliance to monitor your device's Windows updates and Microsoft Defender Antivirus status. To configure your environment for use with Update Compliance, refer to [Get started with Update Compliance](update-compliance-get-started.md).
 
 
 Update Compliance: 
-- Uses diagnostic data gathered from user devices to form an all-up view of Windows 10 devices in your organization. 
-- Enables you to maintain a high-level perspective on the progress and status of updates across all devices.
-- Provides a workflow that can be used to quickly identify which devices require attention. 
-- Enables you to track deployment compliance targets for updates.
-- Summarizes Windows Defender Antivirus status for devices that use it.
+- Provides detailed deployment monitoring for Windows 10 Feature and Quality updates.
+- Reports when devices need attention due to issues related to update deployment.
+- Shows bandwidth usage and savings for devices that are configured to use [Delivery Optimization](waas-delivery-optimization.md).
+- Provides all of the above data in [Log Analytics](#using-log-analytics), which affords additional querying and export capabilities.
 
->[!NOTE]
->Information is refreshed daily so that update progress can be monitored. Changes will be displayed about 24 hours after their occurrence, so you always have a recent snapshot of your devices.
+## The Update Compliance tile
+After Update Compliance has successfully been [added to your Azure subscription](update-compliance-get-started.md#add-update-compliance-to-your-azure-subscription), you'll see this tile:
 
-In Update Compliance, data is separated into vertically-sliced sections. Each section is referred to as a blade. Within a blade, there may or may not be multiple tiles, which serve to represent the data in different ways. Blades are summarized by their title in the upper-left corner above it. Every number displayed in OMS is the direct result of one or more queries. Clicking on data in blades will often navigate you to the query view, with the query used to produce that data. Some of these queries have perspectives attached to them; when a perspective is present, an additional tab will load in the query view. These additional tabs provide blades containing more information relevant to the results of the query.
+![Update Compliance tile no data](images/UC_tile_assessing.png)
 
-## The Update Compliance Tile
+When the solution is added, data is not immediately available. Data will begin to be collected after data is sent up that belongs to the Commercial ID associated with the device. This process assumes that Windows diagnostic data is enabled and data sharing is enabled as described in [Enrolling devices in Update Compliance](update-compliance-get-started.md#enroll-devices-in-update-compliance). After Microsoft has collected and processed any device data associated with your Commercial ID, the tile will be replaced with the following summary:
 
-After Update Compliance has successfully been added from the solution gallery, you’ll see this tile:
-![Empty Update Compliance Tile](images/uc-emptyworkspacetile.png)
+![Update Compliance tile with data](images/UC_tile_filled.png)
 
-When the solution is added, data is not immediately available. Data will begin to be collected after data is sent up that is associated with the Commercial ID associated with the device. If you haven’t read about assigning your Commercial ID to your devices, refer to [this topic](update-compliance-get-started.md#deploy-your-commercial-id-to-your-windows-10-devices). After Microsoft has collected and processed any device data associated with your Commercial ID, the tile will be replaced with the following summary:
+The summary details the total number of devices that Microsoft has received data from with your Commercial ID. It also provides the number of devices that need attention if any. Finally, it details the last point at which your Update Compliance workspace was refreshed.
 
-![Filled Update Compliance Tile](images/uc-filledworkspacetile.png)
+## The Update Compliance workspace
 
-The summary details the total number of devices that Microsoft has received data from with your Commercial ID. It also provides the number of devices that need attention if any. Finally, it details the last point at which your Update Compliance workspace was updated. 
+![Update Compliance workspace view](images/UC_workspace_needs_attention.png)
 
-## The Update Compliance Workspace
+When you select this tile, you will be redirected to the Update Compliance workspace. The workspace is organized with the Overview blade providing a hub from which to navigate to different reports of your devices' data. 
 
-![Update Compliance workspace view](images/uc-filledworkspaceview.png)
+### Overview blade
 
-Upon clicking the tile, you will be redirected to the Update Compliance workspace. The workspace is organized with the Overview Blade providing a hub from which to navigate to different reports of your device’s data. 
+![The Overview blade](images/UC_workspace_overview_blade.png)
 
-### Overview Blade
-
-![The Overview Blade](images/uc-overviewblade.png)
-
-Update Compliance’s overview blade provides a summarization of all the data Update Compliance focuses on. It functions as a hub from which different sections can be navigated to. The total number of devices detected by Update Compliance are counted within the title of this blade. What follows is a distribution for all devices as to whether they are up to date on:
-* Quality updates: A device is up to date on quality updates whenever it has the latest applicable quality update installed. Quality updates are monthly cumulative updates that are specific to a version of Windows 10.
+Update Compliance's overview blade summarizes all the data Update Compliance provides. It functions as a hub from which you can navigate to different sections. The total number of devices detected by Update Compliance is reported in the title of this blade. What follows is a distribution for all devices as to whether they are up to date on the following items:
+* Security updates: A device is up to date on quality updates whenever it has the latest applicable quality update installed. Quality updates are monthly cumulative updates that are specific to a version of Windows 10.
 * Feature updates: A device is up to date on feature updates whenever it has the latest applicable feature update installed. Update Compliance considers [Servicing Channel](waas-overview.md#servicing-channels) when determining update applicability. 
-* AV Signature: A device is up to date on Antivirus Signature when the latest Windows Defender Signatures have been downloaded. This distribution only considers devices that are running Windows Defender Antivirus. 
+* AV Signature: A device is up to date on Antivirus Signature when the latest Windows Defender Signatures have been downloaded. This distribution only considers devices that are running Microsoft Defender Antivirus. 
 
-The blade also provides the time at which your Update Compliance workspace was refreshed. 
+The blade also provides the time at which your Update Compliance workspace was [refreshed](#update-compliance-data-latency). 
 
-Below the “Last Updated” time, a list of the different sections follows that can be clicked on to view more information, they are:
-* [Need Attention!](update-compliance-need-attention.md) - This section is the default section when arriving to your Update Compliance workspace. It counts the number of devices encountering issues and need attention; clicking into this provides blades that summarize the different issues that devices are encountering, and provides a List of Queries that Microsoft finds useful.
-* [Security Update Status](update-compliance-security-update-status.md) - This section lists the percentage of devices that are on the latest security update released for the version of Windows 10 it is running. Clicking into this section provides blades that summarize the overall status of Quality updates across all devices; including deployment. 
-* [Feature Update Status](update-compliance-feature-update-status.md) - This section lists the percentage of devices that are on the latest feature update that is applicable to a given device. Clicking into this section provides blades that summarize the overall feature update status across all devices, with an emphasis on deployment progress. 
-* [Windows Defender AV Status](update-compliance-wd-av-status.md) - This section lists the percentage of devices running Windows Defender Antivirus that are not sufficiently protected. Clicking into this section provides a summary of signature and threat status across all devices that are running Windows Defender Antivirus. This section is not applicable to devices not running Windows Defender Antivirus.  
+The following is a breakdown of the different sections available in Update Compliance:
+* [Need Attention!](update-compliance-need-attention.md) - This section is the default section when arriving to your Update Compliance workspace. It provides a summary of the different issues devices are facing relative to Windows 10 updates.
+* [Security Update Status](update-compliance-security-update-status.md) - This section lists the percentage of devices that are on the latest security update released for the version of Windows 10 it is running. Selecting this section provides blades that summarize the overall status of security updates across all devices and a summary of their deployment progress towards the latest two security updates. 
+* [Feature Update Status](update-compliance-feature-update-status.md) - This section lists the percentage of devices that are on the latest feature update that is applicable to a given device. Selecting this section provides blades that summarize the overall feature update status across all devices and a summary of deployment status for different versions of Windows 10 in your environment.
+* [Delivery Optimization Status](update-compliance-delivery-optimization.md) - This section summarizes bandwidth savings incurred by utilizing Delivery Optimization in your environment. It provides a breakdown of Delivery Optimization configuration across devices, and summarizes bandwidth savings and utilization across multiple content types.
 
-Use [Perspectives](update-compliance-perspectives.md) for data views that provide deeper insight into your data.
 
-## Utilizing Log Analytics
+## Update Compliance data latency
+Update Compliance uses Windows 10 diagnostic data as its data source. After you add Update Compliance and appropriately configure your devices, it could take 48-72 hours before they first appear.
 
-Update Compliance is built upon the Log Analytics platform that is integrated into Operations Management Suite. All data within the workspace is the direct result of a query. Understanding the tools and features at your disposal, all integrated within OMS, can deeply enhance your experience and complement Update Compliance. 
+The data powering Update Compliance is refreshed every 24 hours, and refreshes with the latest data from all devices part of your organization that have been seen in the past 28 days. The entire set of data is refreshed in each daily snapshot, which means that the same data can be re-ingested even if no new data actually arrived from the device since the last snapshot. Snapshot time can be determined by the TimeGenerated field for each record, while LastScan can be used to roughly determine the freshness of each record's data.  
+
+| Data Type | Data upload rate from device | Data Latency |
+|--|--|--|
+|WaaSUpdateStatus | Once per day |4 hours |
+|WaaSInsiderStatus| Once per day |4 hours |
+|WaaSDeploymentStatus|Every update event (Download, install, etc.)|24-36 hours |
+|WUDOAggregatedStatus|On update event, aggregated over time|24-36 hours |
+|WUDOStatus|Once per day|12 hours |
+
+This means you should generally expect to see new data device data every 24 hours, except for WaaSDeploymentStatus and WUDOAggregatedStatus, which may take 36-48 hours.
+
+## Using Log Analytics
+
+Update Compliance is built on the Log Analytics platform that is integrated into Operations Management Suite. All data in the workspace is the direct result of a query. Understanding the tools and features at your disposal, all integrated within Azure Portal, can deeply enhance your experience and complement Update Compliance. 
 
 See below for a few topics related to Log Analytics: 
-* Learn how to effectively execute custom Log Searches by referring to Microsoft Azure’s excellent documentation on [querying data in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-searches).
+* Learn how to effectively execute custom Log Searches by referring to Microsoft Azure's excellent documentation on [querying data in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-searches).
 * To develop your own custom data views in Operations Management Suite or [Power BI](https://powerbi.microsoft.com/); check out documentation on [analyzing data for use in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-dashboards). 
-* [Gain an overview of Log Analytics’ alerts](https://docs.microsoft.com/azure/log-analytics/log-analytics-alerts) and learn how to utilize it to always stay informed about the most critical issues you care about. 
-
->[!NOTE]
->You can use the Feedback Hub App on Windows 10 devices to [provide feedback about Update Compliance](feedback-hub://?referrer=itProDocs&tabid=2&contextid=797) and other Windows Analytics solutions. 
+* [Gain an overview of Log Analytics' alerts](https://docs.microsoft.com/azure/log-analytics/log-analytics-alerts) and learn how to use it to always stay informed about the most critical issues you care about. 
 
 ## Related topics
 

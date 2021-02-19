@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[Proxy\] .INS file setting to define whether to use a proxy server.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 30b03c2f-e3e5-48d2-9007-e3fd632f3c18
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use the Proxy .INS file to specify a proxy server (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Proxy .INS file to specify a proxy server
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about whether to use a proxy server. If yes, this also includes the host names for the proxy server.
 
 |Name |Value |Description |

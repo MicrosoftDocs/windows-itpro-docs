@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Reference about the command-line options and return codes for Internet Explorer Setup.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 40c23024-cb5d-4902-ad1b-6e8a189a699f
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Internet Explorer Setup command-line options and return codes (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Internet Explorer Setup command-line options and return codes
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You can use command-line options along with a tool like IExpress to package your custom version of Internet Explorer and to perform a batch installation across your organization.
 
 ## IE Setup command-line options

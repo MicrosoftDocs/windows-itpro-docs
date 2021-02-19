@@ -1,13 +1,18 @@
 ---
-title: Installing and Uninstalling Custom Compatibility Databases in Compatibility Administrator (Windows 10)
+title: Install/Uninstall Custom Databases (Windows 10)
 description: The Compatibility Administrator tool enables the creation and the use of custom-compatibility and standard-compatibility databases.
 ms.assetid: 659c9d62-5f32-433d-94aa-12141c01368f
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-author: TrudyHa
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
+ms.topic: article
 ---
 
 # Installing and Uninstalling Custom Compatibility Databases in Compatibility Administrator
@@ -26,12 +31,12 @@ The Compatibility Administrator tool enables the creation and the use of custom-
 
 By default, the Windows® operating system installs a System Application Fix database for use with the Compatibility Administrator. This database can be updated through Windows Update, and is stored in the %WINDIR% \\AppPatch directory. Your custom databases are automatically stored in the %WINDIR% \\AppPatch\\Custom directory and are installed by using the Sdbinst.exe tool provided with the Compatibility Administrator.
 
-**Important**  
-Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to work with custom databases for 32-bit applications and the 64-bit version to work with custom databases for 64-bit applications.
+> [!IMPORTANT]
+> Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to work with custom databases for 32-bit applications and the 64-bit version to work with custom databases for 64-bit applications.
 
 In addition, you must deploy your databases to your organization’s computers before the included fixes will have any effect on the application issue. For more information about deploying your database, see [Using the Sdbinst.exe Command-Line Tool](using-the-sdbinstexe-command-line-tool.md).
 
- 
+ 
 
 ## Installing a Custom Database
 

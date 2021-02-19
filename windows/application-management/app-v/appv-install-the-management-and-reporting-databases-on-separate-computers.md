@@ -1,100 +1,81 @@
 ---
-title: How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services (Windows 10)
-description: How to install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
-author: MaggiePucciEvans
+title: How to Install the Management and Reporting Databases on separate computers from the Management and Reporting Services (Windows 10)
+description: How to install the Management and Reporting Databases on separate computers from the Management and Reporting Services.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
+# How to Install the Management and Reporting Databases on separate computers from the Management and Reporting Services
 
-
-# How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
-
-**Applies to**
--   Windows Server 2016
+>Applies to: Windows Server 2016
 
 Use the following procedure to install the database server and management server on different computers. The computer you plan to install the database server on must be running a supported version of Microsoft SQL or the installation will fail.
 
->**Note**  
-After you complete the deployment, the **Microsoft SQL Server name**, **instance name** and **database name** will be required by the administrator installing the service to be able to connect to these databases.
+>[!NOTE]
+>After you complete the deployment, the administrator installing the service will need the Microsoft SQL Server name, instance name and the database name to connect to these databases.
 
-**To install the management database and the management server on separate computers**
+## Installing the management database and the management server on separate computers
 
-1.  Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
+1. Copy the App-V server installation files to the computer you want to install it on. To start the App-V server installation, run **appv\_server\_setup.exe** as an administrator, then select **Install**.
+2. On the **Getting started** page, review and accept the license terms, then select **Next**.
+3. On the **Use Microsoft Update to help keep your computer secure and up-to-date** page, to enable Microsoft updates, select **Use Microsoft Update when I check for updates (recommended).** To disable Microsoft updates, select **I don’t want to use Microsoft Update**, then select **Next**.
+4. On the **Feature selection** page, select the components you want to install by first selecting the **Management Server Database** checkbox, then selecting **Next**.
+5. On the **Installation location** page, accept the default location and select **Next**.
+6. On the initial **Create new management server database** page, accept the default selections if appropriate, then select **Next**.
+   * If you are using a custom SQL Server instance, select **Use a custom instance** and enter the name of the instance.
+   * If you are using a custom database name, select **Custom configuration** and enter the database name.
+7. On the next **Create new management server database** page, select **Use a remote computer**, then enter the remote machine account using the following format: ```Domain\MachineAccount```.
 
-2.  On the **Getting Started** page, review and accept the license terms, and click **Next**.
+   > [!NOTE]
+    >If you plan to deploy the management server on the same computer you must select **Use this local computer**. Specify the user name for the management server **Install Administrator** using the following format: ```Domain\AdministratorLoginName```. After that, select **Next**.
+8. To start the installation, select **Install**.
 
-3.  On the **Use Microsoft Update to help keep your computer secure and up-to-date** page, to enable Microsoft updates, select **Use Microsoft Update when I check for updates (recommended).** To disable Microsoft updates, select **I don’t want to use Microsoft Update**. Click **Next**.
+## Installing the reporting database and the reporting server on separate computers
 
-4.  On the **Feature Selection** page, select the components you want to install by selecting the **Management Server Database** checkbox and click **Next**.
+1. Copy the App-V server installation files to the computer you want to install it on. To start the App-V server installation, run **appv\_server\_setup.exe** as an administrator, then select **Install**.
+2. On the **Getting started** page, review and accept the license terms, then select **Next**.
+3. On the **Use Microsoft Update to help keep your computer secure and up-to-date** page, to enable Microsoft Update, select **Use Microsoft Update when I check for updates (recommended)**. To disable Microsoft Update, select **I don’t want to use Microsoft Update**. After that, select **Next**.
+4. On the **Feature selection** page, select the components you want to install by first selecting the **Reporting Server Database** checkbox, then selecting **Next**.
+5. On the **Installation Location** page, accept the default location and select **Next**.
+6. On the initial **Create new management server database** page, accept the default selections if appropriate, then select **Next**.
+   * If you're using a custom SQL Server instance, select **Use a custom instance** and enter the instance name.
+   * If you're using a custom database name, select **Custom configuration** and enter the database name.
+7. On the next **Create new management server database** page, select **Use a remote computer**, and enter the remote machine account using the following format: ```Domain\MachineAccount```.
 
-5.  On the **Installation Location** page, accept the default location and click **Next**.
+   > [!NOTE]
+    >If you plan to deploy the reporting server on the same computer you must select **Use this local computer**. Specify the user name for the reporting server **Install Administrator** using the following format: Domain\\AdministratorLoginName. After that, select **Next**.
+8. To start the installation, select **Install**.
 
-6.  On the initial **Create New Management Server Database page**, accept the default selections if appropriate, and click **Next**.
+## Installing the management and reporting databases using App-V database scripts
 
-    If you are using a custom SQL Server instance, then select **Use a custom instance** and type the name of the instance.
+1. Copy the App-V server installation files to the computer on which you want to install it on.
+2. To extract the App-V database scripts, open a command prompt and specify the location where the installation files are saved and run the following command:
 
-    If you are using a custom database name, then select **Custom configuration** and type the database name.
+   ```SQL
+    appv\_server\_setup.exe /LAYOUT /LAYOUTDIR=”InstallationExtractionLocation”
+   ```
+  
+3. After the extraction has been completed, to access the App-V database scripts and instructions readme file:
 
-7.  On the next **Create New Management Server Database** page, select **Use a remote computer**, and type the remote machine account using the following format: **Domain\\MachineAccount**.
+   * The App-V Management Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Management Database**.
+   * The App-V Reporting Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Reporting Database**.
+4. For each database, copy the scripts to a share and modify them following the instructions in the readme file.
 
-    >**Note**  
-    If you plan to deploy the management server on the same computer you must select **Use this local computer**. Specify the user name for the management server **Install Administrator** using the following format: Domain\\AdministratorLoginName. Click **Next**.
+  > [!NOTE]
+   >For more information about modifying the required SIDs contained in the scripts see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md).
+5. Run the scripts on the computer running Microsoft SQL Server.
 
-8.  To start the installation, click **Install**.
 
-**To install the reporting database and the reporting server on separate computers**
 
-1.  Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
 
-2.  On the **Getting Started** page, review and accept the license terms, and click **Next**.
-
-3.  On the **Use Microsoft Update to help keep your computer secure and up-to-date** page, to enable Microsoft updates, select **Use Microsoft Update when I check for updates (recommended).** To disable Microsoft updates, select **I don’t want to use Microsoft Update**. Click **Next**.
-
-4.  On the **Feature Selection** page, select the components you want to install by selecting the **Reporting Server Database** checkbox and click **Next**.
-
-5.  On the **Installation Location** page, accept the default location and click **Next**.
-
-6.  On the initial **Create New Reporting Server Database** page, accept the default selections if appropriate, and click **Next**.
-
-    If you are using a custom SQL Server instance, then select **Use a custom instance** and type the name of the instance.
-
-    If you are using a custom database name, then select **Custom configuration** and type the database name.
-
-7.  On the next **Create New Reporting Server Database** page, select **Use a remote computer**, and type the remote machine account using the following format: Domain\\MachineAccount.
-
-    **Note**  
-    If you plan to deploy the reporting server on the same computer you must select **Use this local computer**. Specify the user name for the reporting server **Install Administrator** using the following format: Domain\\AdministratorLoginName. Click **Next**.
-
-8.  To start the installation, click **Install**.
-
-**To install the management and reporting databases using App-V database scripts**
-
-1.  Copy the App-V server installation files to the computer on which you want to install it on.
-
-2.  To extract the App-V database scripts, open a command prompt and specify the location where the installation files are saved and run the following command:
-
-    **appv\_server\_setup.exe** **/LAYOUT** **/LAYOUTDIR=”InstallationExtractionLocation”**
-
-3.  After the extraction has been completed, to access the App-V database scripts and instructions readme file:
-
-    -   The App-V Management Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Management Database**.
-
-    -   The App-V Reporting Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Reporting Database**.
-
-4.  For each database, copy the scripts to a share and modify them following the instructions in the readme file.
-
-    **Note**  
-    For more information about modifying the required SIDs contained in the scripts see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md).     
-
-5.  Run the scripts on the computer running Microsoft SQL Server.
-
-## Have a suggestion for App-V? 
-
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-[Deploying App-V](appv-deploying-appv.md)
+* [Deploying App-V](appv-deploying-appv.md)

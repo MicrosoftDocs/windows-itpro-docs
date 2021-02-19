@@ -1,13 +1,15 @@
 ---
 title: DevDetail DDF file
-description: DevDetail DDF file
+description: Learn about the OMA DM device description framework (DDF) for the DevDetail configuration service provider.
 ms.assetid: 645fc2b5-2d2c-43b1-9058-26bedbe9f00d
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 12/05/2017
+author: manikadhiman
+ms.date: 06/03/2020
 ---
 
 # DevDetail DDF file
@@ -18,7 +20,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is the current version for this CSP.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC "-//OMA//DTD-DM-DDF 1.2//EN"
     "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -42,7 +44,7 @@ The XML below is the current version for this CSP.
         <Permanent />
       </Scope>
       <DFType>
-        <DDFName>urn:oma:mo:oma-dm-devdetail:1.1</DDFName>
+        <DDFName>urn:oma:mo:oma-dm-devdetail:1.2</DDFName>
       </DFType>
     </DFProperties>
     <Node>
@@ -484,6 +486,28 @@ The XML below is the current version for this CSP.
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DNSComputerName</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This node specifies the DNS name for a device. This setting can be managed remotely. A couple of macros can be embedded within the value for dynamic substitution: %RAND:&lt;# of digits&gt;% and %SERIAL%. Examples: (a) "Test%RAND:6%" will generate a name "Test" followed by 6 random digits (e.g., "Test123456").  (b) "Foo%SERIAL%", will generate a name "Foo" followed by the serial number derived from device's ID. If both macros are in the string, the RANDOM macro will take priority over the SERIAL macro (SERIAL will be ignored). The server must explicitly reboot the device for this value to take effect. This value has a maximum allowed length of 63 characters as per DNS standards.</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>TotalStorage</NodeName>
           <DFProperties>
             <AccessType>
@@ -513,6 +537,27 @@ The XML below is the current version for this CSP.
             <Description>Total available memory in MB on the device (may be less than total physical memory).</Description>
             <DFFormat>
               <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SMBIOSSerialNumber</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>SMBIOS Serial Number of the device.</Description>
+            <DFFormat>
+              <chr />
             </DFFormat>
             <Occurrence>
               <One />
@@ -676,19 +721,5 @@ The XML below is the current version for this CSP.
     </Node>
   </Node>
 </MgmtTree>
+
 ```
-
-## Related topics
-
-
-[DevDetail configuration service provider](devdetail-csp.md)
-
- 
-
- 
-
-
-
-
-
-

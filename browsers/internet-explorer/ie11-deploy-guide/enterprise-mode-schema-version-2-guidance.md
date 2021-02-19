@@ -1,11 +1,15 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 10.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 909ca359-5654-4df9-b9fb-921232fc05f5
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Enterprise Mode schema v.2 guidance (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 12/04/2017
@@ -13,6 +17,9 @@ ms.date: 12/04/2017
 
 
 # Enterprise Mode schema v.2 guidance
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 
@@ -22,8 +29,8 @@ ms.date: 12/04/2017
 
 Use the Enterprise Mode Site List Manager to create and update your site list for devices running Windows 7, Windows 8.1, and Windows 10, using the version 2.0 (v.2) of the Enterprise Mode schema. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
 
-**Important**<br>
-If you're running Windows 7 or Windows 8.1 and you've been using the version 1.0 (v.1) of the schema, you can continue to do so, but you won't get the benefits that come with the updated schema. For info about the v.1 schema, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
+> [!IMPORTANT]
+> If you're running Windows 7 or Windows 8.1 and you've been using the version 1.0 (v.1) of the schema, you can continue to do so, but you won't get the benefits that come with the updated schema. For info about the v.1 schema, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
 
 ## Enterprise Mode schema v.2 updates
 Because of the schema changes, you can't combine the old version (v.1) with the new version (v.2) of the schema. If you look at your XML file, you can tell which version you're using by:
@@ -37,24 +44,24 @@ You can continue to use the v.1 version of the schema on Windows 10, but you wo
 ### Enterprise Mode v.2 schema example
 The following is an example of the v.2 version of the Enterprise Mode schema.
 
-**Important**<br>
-Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both http://contoso.com and https://contoso.com.
- 
-``` xml
+> [!IMPORTANT]
+> Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both http://contoso.com and https://contoso.com.
+ 
+```xml
 <site-list version="205">
-	<!--- File creation header --->
+	<!-- File creation header -->
 	<created-by>
 		<tool>EnterpriseSitelistManager</tool>
 		<version>10240</version>
 		<date-created>20150728.135021</date-created>
 	</created-by>
-  	<!--- Begin Site List ---> 
+  	<!-- Begin Site List --> 
 	<site url="www.cpandl.com">
 		<compat-mode>IE8Enterprise</compat-mode>
 		<open-in>MSEdge</open-in>
 	</site>
 	<site url="www.woodgrovebank.com">
-		<compat-mode>default</compat-mode>
+		<compat-mode>Default</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
 	<site url="adatum.com">
@@ -62,14 +69,15 @@ Make sure that you don't specify a protocol when adding your URLs. Using a URL l
 		<open-in>IE11</open-in>
 	</site>
 	<site url="contoso.com">
-		<compat-mode>default</compat-mode>
+		<compat-mode>Default</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
 	<site url="relecloud.com"/>  
-		<compat-mode>default</compat-mode>
-		<open-in>none</open-in>
+		<compat-mode>Default</compat-mode>
+		<open-in>None</open-in>
 	<site url="relecloud.com/about">  
 		<compat-mode>IE8Enterprise"</compat-mode>
+		<open-in>None</open-in>
 	</site>
 	<site url="contoso.com/travel">
 		<compat-mode>IE7</compat-mode>
@@ -103,8 +111,8 @@ This table includes the elements used by the v.2 version of the Enterprise Mode 
 <td>A new root node with this text is using the updated v.2 version of the schema. It replaces &lt;rules&gt;.
 <p><b>Example</b>
 <pre class="syntax">
-&lt;site-list version="205"&gt;
-  &lt;site url="contoso.com"&gt;
+&lt;site-list version=&quot;205&quot;&gt;
+  &lt;site url=&quot;contoso.com&quot;&gt;
     &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
     &lt;open-in&gt;IE11&lt;/open-in&gt;
   &lt;/site&gt;
@@ -116,19 +124,19 @@ This table includes the elements used by the v.2 version of the Enterprise Mode 
 <td>A unique entry added for each site you want to put on the Enterprise Mode site list. The first &lt;site&gt; element will overrule any additional &lt;site&gt; elements that use the same value for the &lt;url&gt; element.
 <p><b>Example</b>
 <pre class="syntax">
-&lt;site url="contoso.com"&gt;
+&lt;site url=&quot;contoso.com&quot;&gt;
   &lt;compat-mode&gt;default&lt;/compat-mode&gt;
   &lt;open-in&gt;none&lt;/open-in&gt;
 &lt;/site&gt;</pre>
 <strong>-or-</strong>
-<p>For IPv4 ranges:<pre class="syntax">&lt;site url="10.122.34.99:8080"&gt;
+<p>For IPv4 ranges:<pre class="syntax">&lt;site url=&quot;10.122.34.99:8080&quot;&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
 &lt;site&gt;</pre><p>
 <strong>-or-</strong>
-<p>For IPv6 ranges:<pre class="syntax">&lt;site url="[10.122.34.99]:8080"&gt;
+<p>For IPv6 ranges:<pre class="syntax">&lt;site url=&quot;[10.122.34.99]:8080&quot;&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
 &lt;site&gt;</pre><p>
-You can also use the self-closing version, &lt;url="contoso.com" /&gt;, which also sets:
+You can also use the self-closing version, &lt;url=&quot;contoso.com&quot; /&gt;, which also sets:
 <ul>
   <li>&lt;compat-mode&gt;default&lt;/compat-mode&gt;</li>
   <li>&lt;open-in&gt;none&lt;/open-in&gt;</li>
@@ -140,21 +148,21 @@ You can also use the self-closing version, &lt;url="contoso.com" /&gt;, which al
 <td>A child element that controls what compatibility setting is used for specific sites or domains. This element is only supported in IE11.
 <p><b>Example</b>
 <pre class="syntax">
-&lt;site url="contoso.com"&gt;
+&lt;site url=&quot;contoso.com&quot;&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
 &lt;/site&gt;</pre>
 <strong>-or-</strong>
-<p>For IPv4 ranges:<pre class="syntax">&lt;site url="10.122.34.99:8080"&gt;
+<p>For IPv4 ranges:<pre class="syntax">&lt;site url=&quot;10.122.34.99:8080&quot;&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
 &lt;site&gt;</pre><p>
 <strong>-or-</strong>
-<p>For IPv6 ranges:<pre class="syntax">&lt;site url="[10.122.34.99]:8080"&gt;
+<p>For IPv6 ranges:<pre class="syntax">&lt;site url=&quot;[10.122.34.99]:8080&quot;&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
 &lt;site&gt;</pre><p>
 Where:
 <ul>
   <li><b>IE8Enterprise.</b> Loads the site in IE8 Enterprise Mode.<br>This element is required for sites included in the <b>EmIE</b> section of the v.1 schema and is needed to load in IE8 Enterprise Mode.</li><p>
-  <li><b>IE7Enterprise.</b> Loads the site in IE7 Enterprise Mode.<br>This element is required for sites included in the <b>EmIE</b> section of the v.1 schema and is needed to load in IE7 Enterprise Mode.<p><b>Important</b><br>This tag replaces the combination of the `"forceCompatView"="true"` attribute and the list of sites specified in the EmIE section of the v.1 version of the schema.</li><p>
+  <li><b>IE7Enterprise.</b> Loads the site in IE7 Enterprise Mode.<br>This element is required for sites included in the <b>EmIE</b> section of the v.1 schema and is needed to load in IE7 Enterprise Mode.<p><b>Important</b><br>This tag replaces the combination of the <code>&quot;forceCompatView&quot;=&quot;true&quot;</code> attribute and the list of sites specified in the EmIE section of the v.1 version of the schema.</li><p>
   <li><b>IE<i>[x]</i>.</b> Where <i>[x]</i> is the document mode number into which the site loads.</li><p>
   <li><b>Default or not specified.</b> Loads the site using the default compatibility mode for the page. In this situation, X-UA-compatible meta tags or HTTP headers are honored.</li>
 </ul></td>
@@ -165,7 +173,7 @@ Where:
 <td>A child element that controls what browser is used for sites. This element supports the <b>Open in IE11</b> or <b>Open in Microsoft Edge</b> experiences, for devices running Windows 10.
 <p><b>Example</b>
 <pre class="syntax">
-&lt;site url="contoso.com"&gt;
+&lt;site url=&quot;contoso.com&quot;&gt;
   &lt;open-in&gt;none&lt;/open-in&gt;
 &lt;/site&gt;</pre><p>
 Where:
@@ -191,6 +199,17 @@ The &lt;url&gt; attribute, as part of the &lt;site&gt; element in the v.2 versio
 </thead>
 <tbody>
 <tr>
+<td>allow-redirect</td>
+<td>A boolean attribute of the &lt;open-in&gt; element that controls the behavior for redirected sites. Setting this attribute to &quot;true&quot; indicates that the site will open in IE11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain. Omitting the attribute is equivalent to &quot;false&quot; (sites in redirect chain will not open in another browser).
+<p><b>Example</b>
+<pre class="syntax">
+&lt;site url=&quot;contoso.com/travel&quot;&gt;
+  &lt;open-in allow-redirect=&quot;true&quot;&gt;IE11&lt;/open-in&gt;
+&lt;/site&gt;</pre>
+In this example, if <a href="https://contoso.com/travel" data-raw-source="https://contoso.com/travel">https://contoso.com/travel</a> is encountered in a redirect chain in Microsoft Edge, it will be opened in Internet Explorer.</td>
+<td>Internet Explorer 11 and Microsoft Edge</td>
+</tr>
+<tr>
 <td>version</td>
 <td>Specifies the version of the Enterprise Mode Site List. This attribute is supported for the &lt;site-list&gt; element.</td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
@@ -199,14 +218,14 @@ The &lt;url&gt; attribute, as part of the &lt;site&gt; element in the v.2 versio
 <td>url</td>
 <td>Specifies the URL (and port number using standard port conventions) to which the child elements apply. The URL can be a domain, sub-domain, or any path URL.
 <br><b>Note</b><br>
-Make sure that you don't specify a protocol. Using &lt;site url="contoso.com"&gt; applies to both http://contoso.com and https://contoso.com.
+Make sure that you don&#39;t specify a protocol. Using &lt;site url=&quot;contoso.com&quot;&gt; applies to both <a href="http://contoso.com" data-raw-source="http://contoso.com">http://contoso.com</a> and <a href="https://contoso.com" data-raw-source="https://contoso.com">https://contoso.com</a>.
 <p><b>Example</b>
 <pre class="syntax">
-&lt;site url="contoso.com:8080"&gt;
+&lt;site url=&quot;contoso.com:8080&quot;&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
   &lt;open-in&gt;IE11&lt;/open-in&gt;
 &lt;/site&gt;</pre>
-In this example, going to http://contoso.com:8080 using Microsoft Edge, causes the site to open in IE11 and load in IE8 Enterprise Mode.</td>
+In this example, going to <a href="https://contoso.com:8080" data-raw-source="https://contoso.com:8080">https://contoso.com:8080</a> using Microsoft Edge, causes the site to open in IE11 and load in IE8 Enterprise Mode.</td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 </table>
@@ -217,26 +236,26 @@ These v.1 version schema attributes have been deprecated in the v.2 version of t
 <table>
 <thead>
 <tr class="header">
-<th>Deprecated attribute</th>
-<th>New attribute</th>
+<th>Deprecated element/attribute</th>
+<th>New element</th>
 <th>Replacement example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>&lt;forceCompatView&gt;</td>
+<td>forceCompatView</td>
 <td>&lt;compat-mode&gt;</td>
-<td>Replace &lt;forceCompatView="true"&gt; with &lt;compat-mode&gt;IE7Enterprise&lt;/compat-mode&gt;</td>
+<td>Replace forceCompatView=&quot;true&quot; with &lt;compat-mode&gt;IE7Enterprise&lt;/compat-mode&gt;</td>
 </tr>
 <tr>
-<td>&lt;docMode&gt;</td>
+<td>docMode</td>
 <td>&lt;compat-mode&gt;</td>
-<td>Replace &lt;docMode="IE5"&gt; with &lt;compat-mode&gt;IE5&lt;/compat-mode&gt;</td>
+<td>Replace docMode=&quot;IE5&quot; with &lt;compat-mode&gt;IE5&lt;/compat-mode&gt;</td>
 </tr>
 <tr>
-<td>&lt;doNotTransition&gt;</td>
+<td>doNotTransition</td>
 <td>&lt;open-in&gt;</td>
-<td>Replace &lt;doNotTransition="true"&gt; with &lt;open-in&gt;none&lt;/open-in&gt;</td>
+<td>Replace doNotTransition=&quot;true&quot; with &lt;open-in&gt;none&lt;/open-in&gt;</td>
 </tr>
 <tr>
 <td>&lt;domain&gt; and &lt;path&gt;</td>
@@ -244,44 +263,43 @@ These v.1 version schema attributes have been deprecated in the v.2 version of t
 <td>Replace:
 <pre class="syntax">
 &lt;emie&gt;
-  &lt;domain exclude="false"&gt;contoso.com&lt;/domain&gt;
+  &lt;domain&gt;contoso.com&lt;/domain&gt;
 &lt;/emie&gt;</pre>
 With:
 <pre class="syntax">
-&lt;site url="contoso.com"/&gt;
+&lt;site url=&quot;contoso.com&quot;/&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
+  &lt;open-in&gt;IE11&lt;/open-in&gt;
 &lt;/site&gt;</pre>
 <b>-AND-</b><p>
 Replace:
 <pre class="syntax">
 &lt;emie&gt;
-  &lt;domain exclude="true"&gt;contoso.com
-     &lt;path exclude="false" forceCompatView="true"&gt;/about&lt;/path&gt;
+  &lt;domain exclude=&quot;true&quot; doNotTransition=&quot;true&quot;&gt;
+    contoso.com
+    &lt;path forceCompatView=&quot;true&quot;&gt;/about&lt;/path&gt;
   &lt;/domain&gt;
 &lt;/emie&gt;</pre>
 With:
 <pre class="syntax">
-&lt;site url="contoso.com/about"&gt;
+&lt;site url=&quot;contoso.com/about&quot;&gt;
   &lt;compat-mode&gt;IE7Enterprise&lt;/compat-mode&gt;
+  &lt;open-in&gt;IE11&lt;/open-in&gt;
 &lt;/site&gt;</pre></td>
 </tr>
 </table>
 
 While the old, replaced attributes aren't supported in the v.2 version of the schema, they'll continue to work in the v.1 version of the schema. If, however, you're using the v.2 version of the schema and these attributes are still there, the v.2 version schema takes precedence. We don’t recommend combining the two schemas, and instead recommend that you move to the v.2 version of the schema to take advantage of the new features.
 
-**Important**<br>
-Saving your v.1 version of the file using the new Enterprise Mode Site List Manager (schema v.2) automatically updates the XML to the new v.2 version of the schema.
+> [!IMPORTANT]
+> Saving your v.1 version of the file using the new Enterprise Mode Site List Manager (schema v.2) automatically updates the XML to the new v.2 version of the schema.
 
 ### What not to include in your schema
 We recommend that you not add any of the following items to your schema because they can make your compatibility list behave in unexpected ways:
 
-- Don’t use protocols. For example, http://, https://, or custom protocols. They break parsing.
+- Don’t use protocols. For example, `http://`, `https://`, or custom protocols. They break parsing.
 - Don’t use wildcards.
 - Don’t use query strings, ampersands break parsing.
 
 ## Related topics
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
-
-
-
-

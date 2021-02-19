@@ -1,12 +1,16 @@
 ---
-title: Settings changed when you uninstall a provisioning package (Windows 10)
+title: Uninstall a provisioning package - reverted settings (Windows 10)
 description: This topic lists the settings that are reverted when you uninstall a provisioning package.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
-ms.localizationpriority: high
+author: dansimp
+ms.author: dansimp
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Settings changed when you uninstall a provisioning package

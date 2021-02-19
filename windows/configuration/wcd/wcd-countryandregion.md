@@ -4,10 +4,13 @@ description: This section describes the CountryAndRegion settings that you can c
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
-ms.date: 09/06/2017
+ms.author: dansimp
+ms.topic: article
+ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # CountryAndRegion (Windows Configuration Designer reference)
@@ -18,6 +21,6 @@ Use to configure a setting that partners must customize to ship Windows devices 
 
 | Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| CountryCodeForExtendedCapabilityPrompts | X  | X | X | X |  |
+| CountryCodeForExtendedCapabilityPrompts | X  | X | X |  |  |
 
 You can set the **CountryCodeForExtendedCapabilityPrompts** setting for **China** to enable additional capability prompts when apps use privacy-sensitive features (such as Contacts or Microphone). 

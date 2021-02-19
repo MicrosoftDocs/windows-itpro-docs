@@ -4,10 +4,12 @@ description: This section describes the UniversalAppInstall settings that you ca
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
-ms.date: 10/09/2017
+ms.author: dansimp
+ms.topic: article
+ms.reviewer: 
+manager: dansimp
 ---
 
 # UniversalAppInstall (reference)
@@ -24,9 +26,9 @@ Use UniversalAppInstall settings to install Windows apps from the Microsoft Stor
 | --- | :---: | :---: | :---: | :---: | :---: |
 | [DeviceContextApp](#devicecontextapp) | X |  | X |  |   |
 | [DeviceContextAppLicense](#devicecontextapplicense) | X |  | X |  |   |
-| [StoreInstall](#storeinstall) | X | X | X | X | X  |
-| [UserContextApp](#usercontextapp) | X | X | X | X | X  |
-| [UserContextAppLicense](#usercontextapplicense) | X | X | X | X | X  |
+| [StoreInstall](#storeinstall) | X | X | X |  | X  |
+| [UserContextApp](#usercontextapp) | X | X | X |  | X  |
+| [UserContextAppLicense](#usercontextapplicense) | X | X | X |  | X  |
 
 ## DeviceContextApp
 

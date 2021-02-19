@@ -1,12 +1,14 @@
 ---
 title: RemoteRing CSP
-description: RemoteRing CSP
+description: The RemoteRing CSP can be used to remotely trigger a device to produce an audible ringing sound regardless of the volume that's set on the device.
 ms.assetid: 70015243-c07f-46cb-a0f9-4b4ad13a5609
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -29,14 +31,14 @@ The supported operation is Exec.
 
 The following sample shows how to initiate a remote ring on the device.
 
-``` syntax
+```xml
 <Exec>
-  <CmdID>5</CmdID> 
-    <Item> 
-    <Target> 
-      <LocURI>./Vendor/MSFT/RemoteRing/Ring </LocURI> 
-    </Target> 
-    </Item> 
+  <CmdID>5</CmdID>
+    <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/RemoteRing/Ring </LocURI>
+    </Target>
+    </Item>
 </Exec>
 ```
 

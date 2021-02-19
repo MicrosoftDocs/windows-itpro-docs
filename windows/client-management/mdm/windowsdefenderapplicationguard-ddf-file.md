@@ -1,22 +1,28 @@
 ---
 title: WindowsDefenderApplicationGuard DDF file
-description: WindowsDefenderApplicationGuard DDF file
-ms.author: maricia
+description: learn about the OMA DM device description framework (DDF) for the WindowsDefenderApplicationGuard DDF file configuration service provider (CSP).
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 12/05/2017
+author: manikadhiman
+ms.date: 09/10/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # WindowsDefenderApplicationGuard DDF file
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **WindowsDefenderApplicationGuard** configuration service provider. 
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-``` syntax
+This XML is for Windows 10, version 1809.
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -25,7 +31,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
   <VerDTD>1.2</VerDTD>
       <Node>
         <NodeName>WindowsDefenderApplicationGuard</NodeName>
-        <Path>./Vendor/MSFT</Path>
+        <Path>./Device/Vendor/MSFT</Path>
         <DFProperties>
           <AccessType>
             <Get />
@@ -40,7 +46,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.1/MDM/WindowsDefenderApplicationGuard</MIME>
+            <MIME>com.microsoft/1.3/MDM/WindowsDefenderApplicationGuard</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -200,6 +206,193 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
               </DFType>
             </DFProperties>
           </Node>
+          <Node>
+            <NodeName>AllowVirtualGPU</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>SaveFilesToHost</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>FileTrustCriteria</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>FileTrustOriginRemovableMedia</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>FileTrustOriginNetworkShare</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>FileTrustOriginMarkOfTheWeb</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>CertificateThumbprints</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <CaseSense>
+                <CIS />
+              </CaseSense>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>AllowCameraMicrophoneRedirection</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
         </Node>
         <Node>
           <NodeName>Status</NodeName>
@@ -229,7 +422,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
               <Exec />
             </AccessType>
             <DFFormat>
-              <int />
+              <chr />
             </DFFormat>
             <Occurrence>
               <One />

@@ -1,12 +1,15 @@
 ---
 title: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell (Windows 10)
 description: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 
@@ -45,7 +48,7 @@ This topic explains the following procedures:
 
 2.  Enable the connection group by typing the following command:
 
-    Enable-AppvClientConnectionGroup –name “Financial Applications”
+    Enable-AppvClientConnectionGroup –name "Financial Applications"
 
     When any virtual applications that are in the member packages are run on the target computer, they will run inside the connection group’s virtual environment and will be available to all the virtual applications in the other packages in the connection group.
 
@@ -81,11 +84,11 @@ This topic explains the following procedures:
     <tbody>
     <tr class="odd">
     <td align="left"><p>Enable-AppVClientConnectionGroup</p></td>
-    <td align="left"><p>Enable-AppVClientConnectionGroup “ConnectionGroupA” -UserSID S-1-2-34-56789012-3456789012-345678901-2345</p></td>
+    <td align="left"><p>Enable-AppVClientConnectionGroup "ConnectionGroupA" -UserSID S-1-2-34-56789012-3456789012-345678901-2345</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p>Disable-AppVClientConnectionGroup</p></td>
-    <td align="left"><p>Disable-AppVClientConnectionGroup “ConnectionGroupA” -UserSID S-1-2-34-56789012-3456789012-345678901-2345</p></td>
+    <td align="left"><p>Disable-AppVClientConnectionGroup "ConnectionGroupA" -UserSID S-1-2-34-56789012-3456789012-345678901-2345</p></td>
     </tr>
     </tbody>
     </table>
@@ -126,9 +129,9 @@ This topic explains the following procedures:
     </tbody>
     </table>
 
-## Have a suggestion for App-V? 
+ 
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -4,15 +4,18 @@ description: This section describes the ProvisioningCommands settings that you c
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
+ms.topic: article
 ms.date: 09/06/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # ProvisioningCommands (Windows Configuration Designer reference)
 
-Use ProvisioningCommands settings to install Classic Windows apps using a provisioning package. 
+Use ProvisioningCommands settings to install Windows desktop applications using a provisioning package. 
 
 ## Applies to
 

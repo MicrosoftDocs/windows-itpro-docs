@@ -1,11 +1,15 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: How to use Group Policy to install ActiveX controls.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 59185370-558c-47e0-930c-8a5ed657e9e3
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: ActiveX installation using group policy (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -13,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Group Policy and ActiveX installation
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 ActiveX controls are installed and invoked using the HTML object tag with the CODEBASE attribute. This attribute, through a URL, makes Internet Explorer:
 

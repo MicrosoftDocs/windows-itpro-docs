@@ -1,12 +1,14 @@
 ---
 title: EnterpriseAppManagement CSP
-description: EnterpriseAppManagement CSP
+description: Handle enterprise application management tasks using EnterpriseAppManagement configuration service provider (CSP).
 ms.assetid: 698b8bf4-652e-474b-97e4-381031357623
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -17,117 +19,117 @@ The EnterpriseAppManagement enterprise configuration service provider is used to
 
 > **Note**   The EnterpriseAppManagement CSP is only supported in Windows 10 Mobile.
 
- 
+ 
 
 The following diagram shows the EnterpriseAppManagement configuration service provider in tree format.
 
 ![enterpriseappmanagement csp](images/provisioning-csp-enterpriseappmanagement.png)
 
-<a href="" id="enterpriseid"></a>***EnterpriseID***  
+<a href="" id="enterpriseid"></a>***EnterpriseID***
 Optional. A dynamic node that represents the EnterpriseID as a GUID. It is used to enroll or unenroll enterprise applications.
 
 Supported operations are Add, Delete, and Get.
 
-<a href="" id="enterpriseid-enrollmenttoken"></a>***EnterpriseID*/EnrollmentToken**  
+<a href="" id="enterpriseid-enrollmenttoken"></a>***EnterpriseID*/EnrollmentToken**
 Required. Used to install or update the binary representation of the application enrollment token (AET) and initiate "phone home" token validation. Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="enterpriseid-storeproductid"></a>***EnterpriseID*/StoreProductID**  
+<a href="" id="enterpriseid-storeproductid"></a>***EnterpriseID*/StoreProductID**
 Required. The node to host the ProductId node. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-storeproductid-productid"></a>**/StoreProductID/ProductId**  
+<a href="" id="-storeproductid-productid"></a>**/StoreProductID/ProductId**
 The character string that contains the ID of the first enterprise application (usually a Company Hub app), which is automatically installed on the device. Scope is dynamic.
 
 Supported operations are Get and Add.
 
-<a href="" id="enterpriseid-storeuri"></a>***EnterpriseID*/StoreUri**  
+<a href="" id="enterpriseid-storeuri"></a>***EnterpriseID*/StoreUri**
 Optional. The character string that contains the URI of the first enterprise application to be installed on the device. The enrollment client downloads and installs the application from this URI. Scope is dynamic.
 
 Supported operations are Get and Add.
 
-<a href="" id="enterpriseid-certificatesearchcriteria"></a>***EnterpriseID*/CertificateSearchCriteria**  
-Optional. The character string that contains the search criteria to search for the DM-enrolled client certificate. The certificate is used for client authentication during enterprise application download. The company's application content server should use the enterprise-enrolled client certificate to authenticate the device. The value must be a URL encoded representation of the X.500 distinguished name of the client certificates Subject property. The X.500 name must conform to the format required by the [CertStrToName](http://go.microsoft.com/fwlink/p/?LinkId=523869) function. This search parameter is case sensitive. Scope is dynamic.
+<a href="" id="enterpriseid-certificatesearchcriteria"></a>***EnterpriseID*/CertificateSearchCriteria**
+Optional. The character string that contains the search criteria to search for the DM-enrolled client certificate. The certificate is used for client authentication during enterprise application download. The company's application content server should use the enterprise-enrolled client certificate to authenticate the device. The value must be a URL encoded representation of the X.500 distinguished name of the client certificates Subject property. The X.500 name must conform to the format required by the [CertStrToName](https://go.microsoft.com/fwlink/p/?LinkId=523869) function. This search parameter is case sensitive. Scope is dynamic.
 
 Supported operations are Get and Add.
 
 > **Note**   Do NOT use Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00. The server must replace this value in the supplied client certificate. If your server returns a client certificate containing the same Subject value, this can cause unexpected behavior. The server should always override the subject value and not use the default device-provided Device ID Subject= Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00
 
- 
+ 
 
-<a href="" id="enterpriseid-status"></a>***EnterpriseID*/Status**  
+<a href="" id="enterpriseid-status"></a>***EnterpriseID*/Status**
 Required. The integer value that indicates the current status of the application enrollment. Valid values are 0 (ENABLED), 1 (INSTALL\_DISABLED), 2 (REVOKED), and 3 (INVALID). Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="enterpriseid-crlcheck"></a>***EnterpriseID*/CRLCheck**  
+<a href="" id="enterpriseid-crlcheck"></a>***EnterpriseID*/CRLCheck**
 Optional. Character value that specifies whether the device should do a CRL check when using a certificate to authenticate the server. Valid values are "1" (CRL check required), "0" (CRL check not required). Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="enterpriseid-enterpriseapps"></a>***EnterpriseID*/EnterpriseApps**  
+<a href="" id="enterpriseid-enterpriseapps"></a>***EnterpriseID*/EnterpriseApps**
 Required. The root node to for individual enterprise application related settings. Scope is dynamic (this node is automatically created when EnterpriseID is added to the configuration service provider).
 
 Supported operation is Get.
 
-<a href="" id="-enterpriseapps-inventory"></a>**/EnterpriseApps/Inventory**  
+<a href="" id="-enterpriseapps-inventory"></a>**/EnterpriseApps/Inventory**
 Required. The root node for individual enterprise application inventory settings. Scope is dynamic (this node is automatically created when EnterpriseID is added to the configuration service provider).
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid"></a>**/Inventory/****_ProductID_**  
+<a href="" id="-inventory-productid"></a>**/Inventory/**<strong>*ProductID*</strong>
 Optional. A node that contains s single enterprise application product ID in GUID format. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid-version"></a>**/Inventory/*ProductID*/Version**  
+<a href="" id="-inventory-productid-version"></a>**/Inventory/*ProductID*/Version**
 Required. The character string that contains the current version of the installed enterprise application. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid-title"></a>**/Inventory/*ProductID*/Title**  
+<a href="" id="-inventory-productid-title"></a>**/Inventory/*ProductID*/Title**
 Required. The character string that contains the name of the installed enterprise application. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid-publisher"></a>**/Inventory/*ProductID*/Publisher**  
+<a href="" id="-inventory-productid-publisher"></a>**/Inventory/*ProductID*/Publisher**
 Required. The character string that contains the name of the publisher of the installed enterprise application. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid-installdate"></a>**/Inventory/*ProductID*/InstallDate**  
+<a href="" id="-inventory-productid-installdate"></a>**/Inventory/*ProductID*/InstallDate**
 Required. The time (in the character format YYYY-MM-DD-HH:MM:SS) that the application was installed or updated. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-enterpriseapps-download"></a>**/EnterpriseApps/Download**  
+<a href="" id="-enterpriseapps-download"></a>**/EnterpriseApps/Download**
 Required. This node groups application download-related parameters. The enterprise server can only automatically update currently installed enterprise applications. The end user controls which enterprise applications to download and install. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-download-productid"></a>**/Download/****_ProductID_**  
+<a href="" id="-download-productid"></a>**/Download/**<strong>*ProductID*</strong>
 Optional. This node contains the GUID for the installed enterprise application. Each installed application has a unique ID. Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="-download-productid-version"></a>**/Download/*ProductID*/Version**  
+<a href="" id="-download-productid-version"></a>**/Download/*ProductID*/Version**
 Optional. The character string that contains version information (set by the caller) for the application currently being downloaded. Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="-download-productid-name"></a>**/Download/*ProductID*/Name**  
+<a href="" id="-download-productid-name"></a>**/Download/*ProductID*/Name**
 Required. The character string that contains the name of the installed application. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-download-productid-url"></a>**/Download/*ProductID*/URL**  
+<a href="" id="-download-productid-url"></a>**/Download/*ProductID*/URL**
 Optional. The character string that contains the URL for the updated version of the installed application. The device will download application updates from this link. Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="-download-productid-status"></a>**/Download/*ProductID*/Status**  
+<a href="" id="-download-productid-status"></a>**/Download/*ProductID*/Status**
 Required. The integer value that indicates the status of the current download process. The following table shows the possible values.
 
 <table>
@@ -166,24 +168,24 @@ Required. The integer value that indicates the status of the current download pr
 </tr>
 <tr class="even">
 <td><p>7:DOWNLOAD_FAILED</p></td>
-<td><p>Unable to connect to server, file doesn't exist, etc.</p></td>
+<td><p>Unable to connect to server, file doesn&#39;t exist, etc.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Scope is dynamic. Supported operations are Get, Add, and Replace.
 
-<a href="" id="-download-productid-lasterror"></a>**/Download/*ProductID*/LastError**  
+<a href="" id="-download-productid-lasterror"></a>**/Download/*ProductID*/LastError**
 Required. The integer value that indicates the HRESULT of the last error code. If there are no errors, the value is 0 (S\_OK). Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-download-productid-lasterrordesc"></a>**/Download/*ProductID*/LastErrorDesc**  
+<a href="" id="-download-productid-lasterrordesc"></a>**/Download/*ProductID*/LastErrorDesc**
 Required. The character string that contains the human readable description of the last error code.
 
-<a href="" id="-download-productid-downloadinstall"></a>**/Download/*ProductID*/DownloadInstall**  
+<a href="" id="-download-productid-downloadinstall"></a>**/Download/*ProductID*/DownloadInstall**
 Required. The node to allow the server to trigger the download and installation for an updated version of the user installed application. The format for this node is null. The server must query the device later to determine the status. For each product ID, the status field is retained for up to one week. Scope is dynamic.
 
 Supported operation is Exec.
@@ -207,7 +209,7 @@ The Microsoft Store application has a GUID of d5dc1ebb-a7f1-df11-9264-00237de2db
 
 Use the following SyncML format to query to see if the application is installed on a managed device:
 
-``` syntax
+```xml
 <Get>
       <CmdID>1</CmdID>
       <Item>
@@ -220,7 +222,7 @@ Use the following SyncML format to query to see if the application is installed 
 
 Response from the device (it contains list of subnodes if this app is installed in the device).
 
-``` syntax
+```xml
 <Results>
    <CmdID>3</CmdID>
    <MsgRef>1</MsgRef>
@@ -264,7 +266,7 @@ The value actually applied to the device can be queried via the nodes under the 
 
 Enroll enterprise ID “4000000001” for the first time:
 
-``` syntax
+```xml
 <Add>
    <CmdID>2</CmdID>
    <Item>
@@ -291,7 +293,7 @@ Enroll enterprise ID “4000000001” for the first time:
 
 Update the enrollment token (for example, to update an expired application enrollment token):
 
-``` syntax
+```xml
 <Replace>
    <CmdID>2</CmdID>
    <Item>
@@ -308,7 +310,7 @@ Update the enrollment token (for example, to update an expired application enrol
 
 Query all installed applications that belong to enterprise id “4000000001”:
 
-``` syntax
+```xml
 <Get>
    <CmdID>2</CmdID>
    <Item>
@@ -323,7 +325,7 @@ Query all installed applications that belong to enterprise id “4000000001”:
 
 Response from the device (that contains two installed applications):
 
-``` syntax
+```xml
 <Results>
    <CmdID>3</CmdID>
    <MsgRef>1</MsgRef>
@@ -342,7 +344,7 @@ Response from the device (that contains two installed applications):
    <Item>
       <Source>
          <LocURI>
-./Vendor/MSFT/EnterpriseAppManagement/4000000001/EnterpriseApps/Inventory/%7BB316008A-141D-4A79-810F-8B764C4CFDFB%7D 
+./Vendor/MSFT/EnterpriseAppManagement/4000000001/EnterpriseApps/Inventory/%7BB316008A-141D-4A79-810F-8B764C4CFDFB%7D
          </LocURI>
       </Source>
       <Meta>
@@ -436,13 +438,13 @@ Install or update the installed app with the product ID “{B316008A-141D-4A79-8
 To perform an XAP update, create the Name, URL, Version, and DownloadInstall nodes first, then perform an “execute” on the “DownloadInstall” node (all within an “Atomic” operation). If the application does not exist, the application will be silently installed without any user interaction. If the application cannot be installed, the user will be notified with an Alert dialog.
 
 > **Note**  
-1.  If a previous app-update node existed for this product ID (the node can persist for up to 1 week or 7 days after an installation has completed), then a 418 (already exist) error would be returned on the “Add”. To get around the 418 error, the server should issue a Replace command for the Name, URL, and Version nodes, and then execute on the “DownloadInstall” (within an “Atomic” operation).
+> 1.  If a previous app-update node existed for this product ID (the node can persist for up to 1 week or 7 days after an installation has completed), then a 418 (already exist) error would be returned on the “Add”. To get around the 418 error, the server should issue a Replace command for the Name, URL, and Version nodes, and then execute on the “DownloadInstall” (within an “Atomic” operation).
 
-2.  The application product ID curly braces need to be escaped where { is %7B and } is %7D.
+2. The application product ID curly braces need to be escaped where { is %7B and } is %7D.
 
- 
+ 
 
-``` syntax
+```xml
 <Atomic>
    <CmdID>2</CmdID>
    <!-- The Add command can be used if the download node does not have a matching product ID
@@ -512,7 +514,7 @@ To perform an XAP update, create the Name, URL, Version, and DownloadInstall nod
 
 Uninstall an installed enterprise application with product ID “{7BB316008A-141D-4A79-810F-8B764C4CFDFB }”:
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Delete>
@@ -533,9 +535,9 @@ Uninstall an installed enterprise application with product ID “{7BB316008A-141
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

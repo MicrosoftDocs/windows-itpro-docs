@@ -30,14 +30,26 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.keep-secure"
-			}
-		}
-	},
+      "feedback_system": "None",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.keep-secure",
+          "folder_relative_path_in_docset": "./"
+        }
+      },
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "keep-secure"
+    "dest": "keep-secure",
+    "markdownEngineName": "markdig"
   }
 }

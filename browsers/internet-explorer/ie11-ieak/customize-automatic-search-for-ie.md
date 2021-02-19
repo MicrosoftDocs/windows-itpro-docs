@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: manage
 description: Customize Automatic Search in Internet Explorer so that your employees can type a single word into the Address box to search for frequently used pages.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: 694e2f92-5e08-49dc-b83f-677d61fa918a
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Customize Automatic Search using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Customize Automatic Search for Internet Explorer using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Internet Explorer lets websites advertise any search provider that uses the open search standard described at the A9 website ( [OpenSearch 1.1 Draft 5](https://go.microsoft.com/fwlink/p/?LinkId=208582)). When IE detects new search providers, the **Search** box becomes active and adds the new providers to the drop-down list of providers.
 
 Using the **Administrative Templates** section of Group Policy, you can prevent the search box from appearing, you can add a list of acceptable search providers, or you can restrict your employee’s ability to add or remove search providers.
@@ -21,13 +28,13 @@ You can customize Automatic Search so that your employees can type a single word
 
 **To set up Automatic Search**
 
-1.  Create a script (.asp) file that conditionally looks for search terms, and post it to an intranet server here: http://ieautosearch/response.asp?MT=%1&srch=%2.<p>
-For info about the acceptable values for the *%1* and *%2* parameters, see the [Automatic Search parameters](#automatic-search-parameters). For an example of the script file, see the [Sample Automatic Search script](#sample-automatic-search-script).<p>
-**Important**<br>If you aren’t using IIS in your company, you’ll need to remap this URL to your script file’s location. 
+1. Create a script (.asp) file that conditionally looks for search terms, and post it to an intranet server here: https://ieautosearch/response.asp?MT=%1&srch=%2.<p>
+   For info about the acceptable values for the *%1* and *%2* parameters, see the [Automatic Search parameters](#automatic-search-parameters). For an example of the script file, see the [Sample Automatic Search script](#sample-automatic-search-script).<p>
+   **Important**<br>If you aren’t using IIS in your company, you’ll need to remap this URL to your script file’s location. 
 
-2.  On the **Additional Settings** page of the IEAK 11, click **Internet Settings**, and then click **Advanced Settings**.
+2. On the **Additional Settings** page of the IEAK 11, click **Internet Settings**, and then click **Advanced Settings**.
 
-3.  Go to the section labeled **Searching** and type *intranet* into the **Search Provider Keyword** box.
+3. Go to the section labeled **Searching** and type *intranet* into the **Search Provider Keyword** box.
 
 **To redirect to a different site than the one provided by the search results**
 
@@ -72,27 +79,27 @@ searchOption = Request.QueryString("srch")
 ' about filling out an expense report
 
 if (search = "NEW HIRE") then
-Response.Redirect("http://admin/hr/newhireforms.htm") 
+Response.Redirect("https://admin/hr/newhireforms.htm") 
 elseif (search = "LIBRARY CATALOG") then
-Response.Redirect("http://library/catalog")
+Response.Redirect("https://library/catalog")
 elseif (search = "EXPENSE REPORT") then
-Response.Redirect("http://expense")
+Response.Redirect("https://expense")
 elseif (search = "LUNCH MENU") then
-Response.Redirect("http://cafe/menu/")
+Response.Redirect("https://cafe/menu/")
 else
 
 ' If there is not a match, use the
 ' default IE autosearch server
-Response.Redirect("http://auto.search.msn.com/response.asp?MT="
+Response.Redirect("https://auto.search.msn.com/response.asp?MT="
 + search + "&srch=" + searchOption + 
 "&prov=&utf8")
 end if
 %>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

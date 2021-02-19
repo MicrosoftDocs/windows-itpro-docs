@@ -4,10 +4,13 @@ description: This section describes the Browser settings that you can configure 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
-ms.date: 09/06/2017
+ms.author: dansimp
+ms.topic: article
+ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Browser (Windows Configuration Designer reference)
@@ -18,9 +21,31 @@ Use to configure browser settings that should only be set by OEMs who are part o
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
+| [AllowPrelaunch](#allowprelaunch) |  |    | X |  |  |
+| [FavoriteBarItems](#favoritebaritems) | X |    |  |  |  |
 | [Favorites](#favorites) |  |  X  |  |  |  |
-| [PartnerSearchCode](#partnersearchcode)  | X | X | X | X |  |
+| [PartnerSearchCode](#partnersearchcode)  | X | X | X |  |  |
 | [SearchProviders](#searchproviders) |   |  X  |  |  |  |
+
+
+## AllowPrelaunch
+
+Use this setting to allow Microsoft Edge to pre-launch during Windows sign-in, when the system is idle, and each time that Microsoft Edge is closed. Pre-launch minimizes the amount of time required to start Microsoft Edge.
+
+Select between **Prevent Pre-launching** and **Allow Pre-launching**.
+
+## FavoriteBarItems
+
+Use to add items to the Favorites Bar in Microsoft Edge.
+
+1. Enter a name for the item, and select **Add**. (The name you enter here is only used to distinguish the group of settings, and is not shown on the device when the settings are applied.)
+2. In **Available customizations**, select the item that you added, and then configure the following settings for that item:
+
+Setting | Description
+--- | ---
+ItemFavIconFile | Enter the path to the icon file, local to the device where the browser will run. The icon file must be added to the device to the specified path.
+ItemName | Enter the name for the item, which will be displayed on the Favorites Bar.
+ItemUrl | Enter the target URL for the item.
 
 ## Favorites
 
@@ -32,7 +57,7 @@ To add a new item under the browser's **Favorites** list:
 
 2. In the **Available customizations** pane, select the friendly name that you just created, and in the text field, enter the URL for the item.
 
-For example, to include the corporate Web site to the list of browser favorites, a company called Contoso can specify **Contoso** as the value for the name and "http://www.contoso.com" for the URL. 
+For example, to include the corporate Web site to the list of browser favorites, a company called Contoso can specify **Contoso** as the value for the name and "<http://www.contoso.com>" for the URL. 
 
 
 ## PartnerSearchCode

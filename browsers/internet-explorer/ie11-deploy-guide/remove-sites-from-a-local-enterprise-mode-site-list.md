@@ -1,11 +1,15 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Instructions about how to remove sites from a local Enterprise Mode site list.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: c7d6dd0b-e264-42bb-8c9d-ac2f837018d2
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Remove sites from a local Enterprise Mode site list (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -13,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Remove sites from a local Enterprise Mode site list
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

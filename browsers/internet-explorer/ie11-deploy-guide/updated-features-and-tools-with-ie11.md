@@ -1,11 +1,15 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: High-level info about some of the new and updated features for Internet Explorer 11.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: f53c6f04-7c60-40e7-9fc5-312220f08156
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: List of updated features and tools - Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -13,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # List of updated features and tools - Internet Explorer 11 (IE11)
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

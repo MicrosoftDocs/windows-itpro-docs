@@ -1,18 +1,25 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use out-of-date ActiveX control blocking to help you know when IE prevents a webpage from loading outdated ActiveX controls and to update the outdated control, so that it’s safer to use.
-author: eross-msft
+author: dansimp
+ms.author: dansimp
 ms.prod: ie11
 ms.assetid: e61866bb-1ff1-4a8d-96f2-61d3534e8199
+ms.reviewer: 
+audience: itpro
+manager: dansimp
 title: Out-of-date ActiveX control blocking (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
-ms.date: 07/27/2017
+ms.date: 05/10/2018
 ---
 
 
 # Out-of-date ActiveX control blocking
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 
@@ -47,7 +54,8 @@ It also works with these operating system and IE combinations:
 |Windows Server 2008 SP2                 |Windows Internet Explorer 9 only |
 |Windows Vista SP2                       |Windows Internet Explorer 9 only |
      
-For more info about this new feature, see the [Internet Explorer begins blocking out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=507691) blog. To see the complete list of out-of-date Active controls blocked by this feature, see [Blocked out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=517023).
+For more info about this new feature, see the [Internet Explorer begins blocking out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=507691) blog. To see the complete list of out-of-date Active controls blocked by this feature, see [Blocked out-of-date ActiveX controls](blocked-out-of-date-activex-controls.md).
+
 
 ## What does the out-of-date ActiveX control blocking notification look like?
 When IE blocks an outdated ActiveX control, you’ll see a notification bar similar to this, depending on your version of IE:
@@ -100,8 +108,11 @@ reg add "HKCU\Software\Microsoft\Internet Explorer\VersionManager" /v DownloadVe
 ```
 Turning off this automatic download breaks the out-of-date ActiveX control blocking feature by not letting the version list update with newly outdated controls, potentially compromising the security of your computer. Use this configuration option at your own risk.
 
-## Out-of-date ActiveX control blocking on managed devices
-Out-of-date ActiveX control blocking includes 4 new Group Policy settings that you can use to manage your web browser configuration, based on your domain controller. You can download the administrative templates, including the new settings, from the [Administrative templates (.admx) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=746579) page or the [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=746580) page, depending on your operating system.
+## Out-of-date ActiveX control blocking
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+ on managed devices
+Out-of-date ActiveX control blocking includes four new Group Policy settings that you can use to manage your web browser configuration, based on your domain controller. You can download the administrative templates, including the new settings, from the [Administrative templates (.admx) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=746579) page or the [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=746580) page, depending on your operating system.
 
 ### Group Policy settings
 Here’s a list of the new Group Policy info, including the settings, location, requirements, and Help text strings. All of these settings can be set in either the Computer Configuration or User Configuration scope, but Computer Configuration takes precedence over User Configuration.
@@ -113,7 +124,7 @@ Out-of-date ActiveX control blocking is turned off in the Local Intranet Zone an
 |--------|--------------|-------------|----------|
 |Turn on ActiveX control logging in IE |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management` |Internet Explorer 8 through IE11 |This setting determines whether IE saves log information for ActiveX controls.<p>If you enable this setting, IE logs ActiveX control information (including the source URI that loaded the control and whether it was blocked) to a local file.<p>If you disable or don't configure this setting, IE won't log ActiveX control information.<p>Note that you can turn this setting on or off regardless of the **Turn off blocking of outdated ActiveX controls for IE** or **Turn off blocking of outdated ActiveX controls for IE on specific domains** settings. |
 |Remove the **Run this time** button for outdated ActiveX controls in IE |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management`|Internet Explorer 8 through IE11 |This setting allows you stop users from seeing the **Run this time** button and from running specific outdated ActiveX controls in IE.<p>If you enable this setting, users won't see the **Run this time** button on the warning message that appears when IE blocks an outdated ActiveX control.<p>If you disable or don't configure this setting, users will see the **Run this time** button on the warning message that appears when IE blocks an outdated ActiveX control. Clicking this button lets the user run the outdated ActiveX control once. |
-|Turn off blocking of outdated ActiveX controls for IE on specific domains |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management` |Internet Explorer 8 through IE11 |This setting allows you to manage a list of domains on which IE will stop blocking outdated ActiveX controls. Outdated ActiveX controls are never blocked in the Intranet Zone.<p>If you enable this setting, you can enter a custom list of domains for which outdated ActiveX controls won't be blocked in IE. Each domain entry must be formatted like one of the following:<ul><li>**"domainname.TLD".** For example, if you want to include `*.contoso.com/*`, use "contoso.com".</li><li>**"hostname".** For example, if you want to include `http://example`, use "example".</li><li>**"file:///path/filename.htm"**. For example, use `file:///C:/Users/contoso/Desktop/index.htm`.</li></ul><p>If you disable or don't configure this setting, the list is deleted and IE continues to block specific outdated ActiveX controls on all domains in the Internet Zone. |
+|Turn off blocking of outdated ActiveX controls for IE on specific domains |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management` |Internet Explorer 8 through IE11 |This setting allows you to manage a list of domains on which IE will stop blocking outdated ActiveX controls. Outdated ActiveX controls are never blocked in the Intranet Zone.<p>If you enable this setting, you can enter a custom list of domains for which outdated ActiveX controls won't be blocked in IE. Each domain entry must be formatted like one of the following:<ul><li>**"domainname.TLD".** For example, if you want to include `*.contoso.com/*`, use "contoso.com".</li><li>**"hostname".** For example, if you want to include `https://example`, use "example".</li><li>**"file:///path/filename.htm"**. For example, use `file:///C:/Users/contoso/Desktop/index.htm`.</li></ul><p>If you disable or don't configure this setting, the list is deleted and IE continues to block specific outdated ActiveX controls on all domains in the Internet Zone. |
 |Turn off blocking of outdated ActiveX controls for IE |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management` |Internet Explorer 8 through IE11 |This setting determines whether IE blocks specific outdated ActiveX controls. Outdated ActiveX controls are never blocked in the Intranet Zone.<p>If you enable this setting, IE stops blocking outdated ActiveX controls.<p>If you disable or don't configure this setting, IE continues to block specific outdated ActiveX controls. |
 |Remove the **Update** button in the out-of-date ActiveX control blocking notification for IE |This functionality is only available through the registry |Internet Explorer 8 through IE11 |This setting determines whether the out-of-date ActiveX control blocking notification shows the **Update** button. This button points users to update specific out-of-date ActiveX controls in IE. |
 
@@ -143,8 +154,8 @@ Here’s a detailed example and description of what’s included in the VersionA
 
 |Source URI |File path |Product version |File version |Allowed/Blocked |Reason |EPM-compatible |
 |-----------|----------|----------------|-------------|----------------|-------|---------------|
-|`http://contoso.com/test1.html` |C:\Windows\System32\Macromed\Flash\Flash.ocx |14.0.0.125 |14.0.0.125 |Allowed |Not in blocklist |EPM-compatible |
-|`http://contoso.com/test2.html` |C:\Program Files\Java\jre6\bin\jp2iexp.dll |6.0.410.2 |6.0.410.2 |Blocked |Out of date |Not EPM-compatible |
+|`https://contoso.com/test1.html` |C:\Windows\System32\Macromed\Flash\Flash.ocx |14.0.0.125 |14.0.0.125 |Allowed |Not in blocklist |EPM-compatible |
+|`https://contoso.com/test2.html` |C:\Program Files\Java\jre6\bin\jp2iexp.dll |6.0.410.2 |6.0.410.2 |Blocked |Out of date |Not EPM-compatible |
 
 **Where:**
 -   **Source URI.** The URL of the page that loaded the ActiveX control.
@@ -187,15 +198,15 @@ Before running the PowerShell script, you must copy both the .ps1 and .mof file 
 
  **To configure IE to use WMI logging**
 
-1.  Open your Group Policy editor and turn on the `Administrative Templates\Windows Components\Internet Explorer\Turn on ActiveX control logging in IE` setting.
+1. Open your Group Policy editor and turn on the `Administrative Templates\Windows Components\Internet Explorer\Turn on ActiveX control logging in IE` setting.
 
-2.  On the client device, start PowerShell in elevated mode (using admin privileges) and run `ConfigureWMILogging.ps1` by by-passing the PowerShell execution policy, using this command:
-```
-powershell –ExecutionPolicy Bypass .\ConfigureWMILogging.ps1
-``` 
-For more info, see [about_Execution_Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
+2. On the client device, start PowerShell in elevated mode (using admin privileges) and run `ConfigureWMILogging.ps1` by by-passing the PowerShell execution policy, using this command:
+   ```
+   powershell –ExecutionPolicy Bypass .\ConfigureWMILogging.ps1
+   ``` 
+   For more info, see [about_Execution_Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
 
-3.  **Optional:** Set up your domain firewall for WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).
+3. **Optional:** Set up your domain firewall for WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).
 
 The inventory info appears in the WMI class, `IEAXControlBlockingAuditInfo`, located in the WMI namespace, *root\\cimv2\\IETelemetry*. To collect the inventory info from your client computers, we recommend using System Center 2012 R2 Configuration Manager or any agent that can access the WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).
 

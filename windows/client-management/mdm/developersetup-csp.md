@@ -1,21 +1,23 @@
 ---
 title: DeveloperSetup CSP
-description: The DeveloperSetup configuration service provider (CSP) is used to configure developer mode on the device. This CSP was added in the next major update of Windows 10.
+description: The DeveloperSetup configuration service provider (CSP) is used to configure developer mode on the device. This CSP was added in the Windows 10, version 1703.
 ms.assetid: 
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 06/26/2017
+author: manikadhiman
+ms.date: 06/26/2018
 ---
 
 # DeveloperSetup CSP
 
-The DeveloperSetup configuration service provider (CSP) is used to configure Developer Mode on the device and connect to the Windows Device Portal. For more information about the Windows Device Portal, see [Windows Device Portal overview](https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal). This CSP was added in Windows 10, version 1703.
+The DeveloperSetup configuration service provider (CSP) is used to configure Developer Mode on the device and connect to the Windows Device Portal. For more information about the Windows Device Portal, see [Windows Device Portal overview](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal). This CSP was added in Windows 10, version 1703.
 
 > [!NOTE]
-The DeveloperSetup configuration service provider (CSP) is supported only in Windows 10 Holographic Enterprise edition and is for provisioning only.
+> The DeveloperSetup configuration service provider (CSP) is only supported in Windows 10 Holographic Enterprise edition and with runtime provisioning via provisioning packages. It is not supported in MDM.
 
 The following diagram shows the DeveloperSetup configuration service provider in tree format.
 
@@ -59,7 +61,7 @@ The user name must contain only ASCII characters and cannot contain a colon (:).
 
 <a href="" id="deviceportal-connection-httpport"></a>**DevicePortal/Connection/HttpPort**   
 <p style="margin-left: 20px">An integer value that is used to configure the HTTP port for incoming connections to the Windows Device Portal service. 
-If authentication is enabled, **HttpPort** will redirect the user to the (required) **HttpsPort**. 
+If authentication is enabled, <strong>HttpPort</strong> will redirect the user to the (required) <strong>HttpsPort</strong>. 
 
 <p style="margin-left: 20px">The only supported operation is Replace.
 

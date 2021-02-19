@@ -1,12 +1,15 @@
 ---
 title: BitLocker DDF file
-description: BitLocker DDF file
-ms.author: maricia
+description: Learn about the OMA DM device description framework (DDF) for the BitLocker configuration service provider.
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 12/05/2017
+author: lomayor
+ms.localizationpriority: medium
+ms.date: 09/30/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # BitLocker DDF file
@@ -17,7 +20,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is the current version for this CSP. 
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -41,7 +44,7 @@ The XML below is the current version for this CSP.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.0/MDM/BitLocker</MIME>
+            <MIME>com.microsoft/5.0/MDM/BitLocker</MIME>
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
@@ -63,7 +66,7 @@ The XML below is the current version for this CSP.
                          Disabling the policy will not turn off the encryption on the storage card. But will stop prompting the user to turn it on.
                          If you want to disable this policy use the following SyncML:
                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
+                         <CmdID>100</CmdID>
                            <Item>
                              <Target>
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/RequireStorageCardEncryption</LocURI>
@@ -87,6 +90,10 @@ The XML below is the current version for this CSP.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1">
+              <MSFT:SupportedValue value="0" description="Default when policy is not set."/>
+              <MSFT:SupportedValue value="1" description="Allows the admin to require storage card encryption."/>
+            </MSFT:SupportedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -106,7 +113,7 @@ The XML below is the current version for this CSP.
                          Disabling the policy will not turn off the encryption on the system drive. But will stop prompting the user to turn it on.
                          If you want to disable this policy use the following SyncML:
                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
+                         <CmdID>101</CmdID>
                            <Item>
                              <Target>
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption</LocURI>
@@ -130,6 +137,10 @@ The XML below is the current version for this CSP.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1">
+              <MSFT:SupportedValue value="0" description="Default when policy is not set."/>
+              <MSFT:SupportedValue value="1" description="Allows the admin to require encryption."/>
+            </MSFT:SupportedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -160,7 +171,7 @@ The XML below is the current version for this CSP.
 
                          If you want to disable this policy use the following SyncML:
                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
+                         <CmdID>102</CmdID>
                            <Item>
                              <Target>
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethodByDriveType</LocURI>
@@ -186,6 +197,9 @@ The XML below is the current version for this CSP.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>EncryptionMethodWithXts_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -200,7 +214,7 @@ The XML below is the current version for this CSP.
             <Description>This policy setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a Trusted Platform Module (TPM). This policy setting is applied when you turn on BitLocker.
                          Note: Only one of the additional authentication options can be required at startup, otherwise a policy error occurs.
                          If you want to use BitLocker on a computer without a TPM, set the "ConfigureNonTPMStartupKeyUsage_Name" data. In this mode either a password or a USB drive is required for start-up. When using a startup key, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable or if you have forgotten the password then you will need to use one of the BitLocker recovery options to access the drive.
-                         On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 6-digit to 20-digit personal identification number (PIN), or both.
+                         On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 4-digit to 20-digit personal identification number (PIN), or both.
                          If you enable this policy setting, users can configure advanced startup options in the BitLocker setup wizard.
                          If you disable or do not configure this policy setting, users can configure only basic options on computers with a TPM.
                          Note: If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
@@ -227,7 +241,7 @@ The XML below is the current version for this CSP.
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
+                         <CmdID>103</CmdID>
                            <Item>
                              <Target>
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRequireStartupAuthentication</LocURI>
@@ -253,6 +267,9 @@ The XML below is the current version for this CSP.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEOSCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureAdvancedStartup_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -264,9 +281,10 @@ The XML below is the current version for this CSP.
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This policy setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 6 digits and can have a maximum length of 20 digits.
+            <Description>This policy setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This policy setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 4 digits and can have a maximum length of 20 digits.
                          If you enable this policy setting, you can require a minimum number of digits to be used when setting the startup PIN.
                          If you disable or do not configure this policy setting, users can configure a startup PIN of any length between 6 and 20 digits.
+                         NOTE: If minimum PIN length is set below 6 digits, Windows will attempt to update the TPM 2.0 lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset.
                          The format is string.
                          Sample value for this node to enable this policy is:
                          &lt;enabled/&gt;&lt;data id=&quot;MinPINLength&quot; value=&quot;xx&quot;/&gt;
@@ -274,7 +292,7 @@ The XML below is the current version for this CSP.
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
+                         <CmdID>104</CmdID>
                            <Item>
                              <Target>
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesMinimumPINLength</LocURI>
@@ -300,6 +318,9 @@ The XML below is the current version for this CSP.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEOSCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>MinimumPINLength_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -331,7 +352,7 @@ The XML below is the current version for this CSP.
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
+                         <CmdID>105</CmdID>
                            <Item>
                              <Target>
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryMessage</LocURI>
@@ -357,6 +378,9 @@ The XML below is the current version for this CSP.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEOSCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>PrebootRecoveryInfo_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -397,7 +421,7 @@ The XML below is the current version for this CSP.
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
+                         <CmdID>106</CmdID>
                            <Item>
                              <Target>
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryOptions</LocURI>
@@ -423,6 +447,9 @@ The XML below is the current version for this CSP.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEOSCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>OSRecoveryUsage_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -463,7 +490,7 @@ The XML below is the current version for this CSP.
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
+                         <CmdID>107</CmdID>
                            <Item>
                              <Target>
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRecoveryOptions</LocURI>
@@ -489,6 +516,9 @@ The XML below is the current version for this CSP.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEFDVCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>FDVRecoveryUsage_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -510,7 +540,7 @@ The XML below is the current version for this CSP.
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
+                         <CmdID>108</CmdID>
                            <Item>
                              <Target>
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRequireEncryption</LocURI>
@@ -536,6 +566,9 @@ The XML below is the current version for this CSP.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEFDVCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>FDVDenyWriteAccess_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -563,7 +596,7 @@ The XML below is the current version for this CSP.
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
+                         <CmdID>109</CmdID>
                            <Item>
                              <Target>
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/RemovableDrivesRequireEncryption</LocURI>
@@ -589,7 +622,317 @@ The XML below is the current version for this CSP.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVERDVCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>RDVDenyWriteAccess_Name</MSFT:ADMXPolicyName>
           </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowWarningForOtherDiskEncryption</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Allows Admin to disable all UI (notification for encryption and warning prompt for other disk encryption)
+                         and turn on encryption on the user machines silently.
+                         Warning: When you enable BitLocker on a device with third party encryption, it may render the device unusable and will
+                         require reinstallation of Windows.
+                         Note: This policy takes effect only if "RequireDeviceEncryption" policy is set to 1.
+                         The format is integer.
+                         The expected values for this policy are: 
+
+                         1 = This is the default, when the policy is not set. Warning prompt and encryption notification is allowed.
+                         0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, 
+                             the value 0 only takes affect on Azure Active Directory joined devices. 
+                             Windows will attempt to silently enable BitLocker for value 0.
+
+                         If you want to disable this policy use the following SyncML:
+                         <Replace>
+                         <CmdID>110</CmdID>
+                           <Item>
+                             <Target>
+                                 <LocURI>./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryption</LocURI>
+                             </Target>
+                             <Meta>
+                                 <Format xmlns="syncml:metinf">int</Format>
+                             </Meta>
+                             <Data>0</Data>
+                           </Item>
+                         </Replace>
+            </Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1">
+              <MSFT:SupportedValue value="0" description="Disables the warning prompt. Starting in Windows 10, next major update, the value 0 only takes affect on Azure Active Directory joined devices. Windows will attempt to silently enable BitLocker for value 0."/>
+              <MSFT:SupportedValue value="1" description="Default when policy is not set."/>
+            </MSFT:SupportedValues>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowStandardUserEncryption</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user.
+                         "AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy  being set to "0", i.e, Silent encryption is enforced.
+                         If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user
+                         is the current logged on user in the system.
+
+                         The expected values for this policy are: 
+
+                         1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
+                         0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy
+                             will not try to enable encryption on any drive.
+
+                         If you want to disable this policy use the following SyncML:
+                         <Replace>
+                         <CmdID>111</CmdID>
+                           <Item>
+                             <Target>
+                                 <LocURI>./Device/Vendor/MSFT/BitLocker/AllowStandardUserEncryption</LocURI>
+                             </Target>
+                             <Meta>
+                                 <Format xmlns="syncml:metinf">int</Format>
+                             </Meta>
+                             <Data>0</Data>
+                           </Item>
+                         </Replace>
+            </Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1">
+              <MSFT:SupportedValue value="0" description="This is the default when the policy is not set. If current logged on user is a standard user, RequireDeviceEncryption policy
+                             will not try to enable encryption on any drive."/>
+              <MSFT:SupportedValue value="1" description="RequireDeviceEncryption policy will try to enable encryption on all fixed drives even if a current logged in user is standard user."/>
+            </MSFT:SupportedValues>
+          </DFProperties>
+        </Node>
+
+        <Node>
+          <NodeName>ConfigureRecoveryPasswordRotation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description> Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on AAD and Hybrid domain joined devices.
+                          When not configured, Rotation is turned on by default for AAD only and off on Hybrid. The Policy will be effective only when 
+                          Active Directory back up for recovery password is configured to required.
+                          For OS drive: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for operating system drives"
+                          For Fixed drives: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for fixed data drives"
+                       
+                          Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
+                                            1 - Numeric Recovery Passwords Rotation upon use ON for AAD joined devices. Default value
+                                            2 - Numeric Recovery Passwords Rotation upon use ON for both AAD and Hybrid devices
+                         
+                         If you want to disable this policy use the following SyncML:
+ 
+                         <Replace>
+                         <CmdID>112</CmdID>
+                           <Item>
+                             <Target>
+                                 <LocURI>./Device/Vendor/MSFT/BitLocker/ConfigureRecoveryPasswordRotation</LocURI>
+                             </Target>
+                             <Meta>
+                                 <Format xmlns="syncml:metinf">int</Format>
+                             </Meta>
+                             <Data>0</Data>
+                           </Item>
+                         </Replace>
+            </Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2">
+              <MSFT:SupportedValue value="0" description="Numeric Recovery Passwords Key rotation OFF"/>
+              <MSFT:SupportedValue value="1" description="Default Value. Numeric Recovery Passwords Key Rotation ON for AAD joined devices."/>
+              <MSFT:SupportedValue value="2" description="Numeric Recovery Passwords Key Rotation ON for both AAD and Hybrid devices"/>
+            </MSFT:SupportedValues>
+          </DFProperties>
+        </Node>
+
+        <Node>
+          <NodeName>RotateRecoveryPasswords</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Exec />
+            </AccessType>
+            <Description> Allows admin to push one-time rotation of all numeric recovery passwords for OS and Fixed Data drives on an Azure Active Directory or hybrid-joined device.
+                          This policy is Execute type and rotates all numeric passwords when issued from MDM tools.
+                          
+The policy only comes into effect when Active Directory backup for a recovery password is configured to "required."
+                              * For OS drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for operating system drives."
+                              *For fixed drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for fixed data drives."
+                       
+                          Client returns status DM_S_ACCEPTED_FOR_PROCESSING to indicate the rotation has started. Server can query status with the following status nodes: 
+                              
+* status\RotateRecoveryPasswordsStatus 
+                              * status\RotateRecoveryPasswordsRequestID
+                          
+
+                          
+Supported Values: String form of request ID. Example format of request ID is GUID. Server can choose the format as needed according to the management tools.\
+                         
+                         <Exec>
+                         <CmdID>113</CmdID>
+                           <Item>
+                             <Target>
+                                 <LocURI>./Device/Vendor/MSFT/BitLocker/RotateRecoveryPasswords</LocURI>
+                             </Target>
+                             <Meta>
+                                 <Format xmlns="syncml:metinf">chr</Format>
+                             </Meta>
+                             <Data>&lt;RequestID/&gt;</Data>
+                           </Item>
+                         </Exec>
+            </Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+        </DFProperties>
+        </Node>
+
+        <Node>
+          <NodeName>Status</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>DeviceEncryptionStatus</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>This node reports compliance state of device encryption on the system.
+                           Value '0' means the device is compliant. Any other value represents a non-compliant device.
+              </Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+
+          <Node>
+            <NodeName>RotateRecoveryPasswordsStatus</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description> This Node reports the status of RotateRecoveryPasswords request. 
+                              Status code can be one of the following:
+                              NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure 
+ 
+                </Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Permanent />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+
+          <Node>
+            <NodeName>RotateRecoveryPasswordsRequestID</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description> This Node reports the RequestID corresponding to RotateRecoveryPasswordsStatus. 
+                              This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus
+                              To ensure the status is correctly matched to the request ID.                        
+                  
+                </Description>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Permanent />
+                  </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+             </DFProperties>
+          </Node>
         </Node>
       </Node>
 </MgmtTree>

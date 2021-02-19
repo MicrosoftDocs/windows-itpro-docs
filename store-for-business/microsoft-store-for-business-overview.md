@@ -2,13 +2,17 @@
 title: Microsoft Store for Business and Microsoft Store for Education overview (Windows 10)
 description: With Microsoft Store for Business and Microsoft Store for Education, organizations and schools can make volume purchases of Windows apps.
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.pagetype: store, mobile
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa
-ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.author: TrudyHa
+ms.topic: conceptual
+ms.localizationpriority: medium
+ms.date: 
 ---
 
 # Microsoft Store for Business and Microsoft Store for Education overview
@@ -18,7 +22,10 @@ ms.date: 10/17/2017
 -   Windows 10
 -   Windows 10 Mobile
 
-Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options. 
+Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options.
+
+> [!IMPORTANT]
+> Customers who are in the Office 365 GCC environment or are eligible to buy with government pricing cannot use Microsoft Store for Business.
 
 ## Features
 Organizations or schools of any size can benefit from using Microsoft Store for Business or Microsoft Store for Education:
@@ -26,8 +33,8 @@ Organizations or schools of any size can benefit from using Microsoft Store for 
 - **Scales to fit the size of your business** - For smaller businesses, with Azure AD accounts or Office 365 accounts and Windows 10 devices, you can quickly have an end-to-end process for acquiring and distributing content using the Store for Business. For larger businesses, all the capabilities of the Store for Business are available to you, or you can integrate Microsoft Store for Business with management tools, for greater control over access to apps and app updates. You can use existing work or school accounts.
 - **Bulk app acquisition** - Acquire apps in volume from Microsoft Store for Business.
 - **Centralized management** – Microsoft Store provides centralized management for inventory, billing, permissions, and order history. You can use Microsoft Store to view, manage and distribute items purchased from:
-    - **Microsoft Store for Business** – Apps and subscriptions
-    - **Microsoft Store for Education** – Apps and subscriptions
+    - **Microsoft Store for Business** – Apps acquired from Microsoft Store for Business
+    - **Microsoft Store for Education** – Apps acquired from Microsoft Store for Education
     - **Office 365** – Subscriptions
     - **Volume licensing** - Apps purchased with volume licensing
 - **Private store** - Create a private store for your business that’s easily available from any Windows 10 device. Your private store is available from Microsoft Store on Windows 10, or with a browser on the Web. People in your organization can download apps from your organization's private store on Windows 10 devices. 
@@ -56,7 +63,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 - Employees need Azure AD account when they access Store for Business content from Windows devices.
 - If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account
 - For offline-licensed apps, Azure AD accounts are not required for employees.
-- Admins can add or remove user accounts in the Office 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
+- Admins can add or remove user accounts in the Microsoft 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
 
 For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
@@ -88,7 +95,7 @@ After your admin signs up for the Store for Business and Education, they can ass
 
 > [!NOTE]
 > Currently, the Basic purchaser role is only available for schools using Microsoft Store for Education. For more information, see [Microsoft Store for Education permissions](https://docs.microsoft.com/education/windows/education-scenarios-store-for-business?toc=/microsoft-store/education/toc.json#manage-domain-settings).
- 
+
 In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](manage-users-and-groups-microsoft-store-for-business.md).
 
 Also, if your organization plans to use a management tool, you’ll need to configure your management tool to sync with Store for Business and Education.
@@ -193,7 +200,7 @@ Store for Business and Education is currently available in these markets.
             <li>Colombia</li>
             <li>Comoros</li>
             <li>Costa Rica</li>
-            <li>C&ocirc;te D'ivoire</li>
+            <li>C&ocirc;te D&#39;ivoire</li>
             <li>Croatia</li>
             <li>Cur&ccedil;ao</li>
             <li>Cyprus</li>
@@ -282,7 +289,6 @@ Store for Business and Education is currently available in these markets.
             <li>Philippines</li>
             <li>Poland</li>
             <li>Portugal</li>
-            <li>Puerto Rico</li>
             <li>Qatar</li>
             <li>Republic of Cabo Verde</li>
             <li>Reunion</li>
@@ -329,8 +335,7 @@ Store for Business and Education is currently available in these markets.
             <li>Viet Nam</li>
             <li>Virgin Islands, U.S.</li>
             <li>Zambia</li>
-            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;</li>         
-        </ul>
+            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;</li><br/>        </ul>
     </td>
    </tr>
 </table>
@@ -358,6 +363,10 @@ Customers in these markets can use Microsoft Store for Business and Education to
 - Tajikistan
 - Ukraine 
 
+### Support to only manage products
+Customers in these markets can use Microsoft Store for Business and Education only to manage products that they've purchased from other channels. For example, they might have purchased products through Volume Licensing Service Center. However, they can't purchase apps directly from Microsoft Store for Business and Education. 
+- Puerto Rico
+
 This table summarize what customers can purchase, depending on which Microsoft Store they are using. 
 
 | Store | Free apps | Minecraft: Education Edition |
@@ -367,9 +376,9 @@ This table summarize what customers can purchase, depending on which Microsoft S
 
 > [!NOTE]
 > **Microsoft Store for Education customers with support for free apps and Minecraft: Education Edition**
-- Admins can acquire free apps from **Microsoft Store for Education**.
-- Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
-- Teachers, or people with the Basic Purachaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
+> - Admins can acquire free apps from **Microsoft Store for Education**.
+> - Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
+> - Teachers, or people with the Basic Purchaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
 
 ## Privacy notice
 
@@ -377,7 +386,7 @@ Store for Business and Education services get names and email addresses of peopl
 - Granting and managing permissions
 - Managing app licenses 
 - Distributing apps to people (names appear in a list that admins can select from)
- 
+
 Store for Business and Education does not save names, or email addresses.
 
 Your use of Store for Business and Education is also governed by the [Microsoft Store for Business and Education Services Agreement](https://businessstore.microsoft.com/servicesagreement). 

@@ -1,19 +1,27 @@
 ---
 title: Change history for Application management in Windows 10 (Windows 10)
-description: This topic lists changes to documentation for configuring Windows 10.
+description: View new release information and updated topics in the documentation for application management in Windows 10.
 keywords: 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jdeckerms
+author: dansimp
+ms.author: dansimp
+ms.topic: article
 ms.date: 10/24/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Change history for Application management in Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## RELEASE: Windows 10, version 1803
+
+The topics in this library have been updated for Windows 10, version 1803.
 
 ## October 2017
 

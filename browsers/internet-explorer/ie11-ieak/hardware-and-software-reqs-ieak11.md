@@ -1,10 +1,14 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: List of supported hardware and software requirements for Internet Explorer 11 and the Internet Explorer Administration Kit 11.
-author: eross-msft
+author: dansimp
 ms.prod: ie11
 ms.assetid: c50b86dc-7184-43d1-8daf-e750eb88dabb
+ms.reviewer: 
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Hardware and software requirements for Internet Explorer 11 and the IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -12,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Hardware and software requirements for Internet Explorer 11 and the IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Before you can use the Internet Explorer Administration Kit 11 and the Internet Explorer Customization Wizard 11, you must first install Internet Explorer 11. For more info about installing IE11, see the [Determine the licensing version and features to use in IEAK 11](licensing-version-and-features-ieak11.md) page.
 
 ## Hardware requirements

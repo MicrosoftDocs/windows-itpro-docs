@@ -5,8 +5,11 @@ obj/
 _site/
 Tools/NuGet/
 .optemp/
-
-
+*.db
+.DS_Store
+*.ini
+_themes*/
+common/
 .openpublishing.build.mdproj
 .openpublishing.buildcore.ps1
 packages.config

@@ -4,7 +4,7 @@
       {
         "files": [
           "**/*.md",
-		  "**/*.yml"
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -21,8 +21,9 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-		  "**/*.gif",
-		  "**/*.pdf"
+          "**/*.svg",
+          "**/*.gif",
+          "**/*.pdf"
         ],
         "exclude": [
           "**/obj/**",
@@ -33,20 +34,34 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
-		"ms.technology": "windows",
-		"ms.topic": "article",
-		"ms.author": "brianlic",
-		"ms.date": "04/05/2017",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.windows-hub"
-			}
-		}
-	},
+      "audience": "ITPro",
+      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "ms.technology": "windows",
+      "ms.topic": "article",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.windows-hub",
+          "folder_relative_path_in_docset": "./"
+        }
+      },
+      "titleSuffix": "Windows 10 for IT Pros",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "windows-hub"
+    "dest": "windows-hub",
+    "markdownEngineName": "markdig"
   }
 }

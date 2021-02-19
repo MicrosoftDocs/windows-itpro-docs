@@ -6,8 +6,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jdeckerms
+author: dansimp
+ms.author: dansimp
+ms.topic: article
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Use the Lockdown Designer app to create a Lockdown XML file

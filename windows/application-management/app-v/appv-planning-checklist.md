@@ -1,83 +1,38 @@
 ---
 title: App-V Planning Checklist (Windows 10)
-description: App-V Planning Checklist
-author: MaggiePucciEvans
+description: Learn about the recommended steps and items to consider when planning an Application Virtualization (App-V) deployment.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
-
-
 # App-V Planning Checklist
 
-**Applies to**
--   Windows 10, version 1607
+>Applies to: Windows 10, version 1607
 
 This checklist can be used to help you plan for preparing your organization for an App-V deployment.
 
-> [!NOTE]    
-> This checklist outlines the recommended steps and a high-level list of items to consider when planning for an App-V deployment. It is recommended that you copy this checklist and customize it for your use.
+>[!NOTE]
+>This checklist outlines the recommended steps and a high-level list of items to consider when planning an App-V deployment. It's a good idea to copy this checklist and customize it for your use.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"></th>
-<th align="left">Task</th>
-<th align="left">References</th>
-<th align="left">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Review the getting started information about App-V to gain a basic understanding of the product before beginning deployment planning.</p></td>
-<td align="left"><p>[Getting Started with App-V](appv-getting-started.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Plan for App-V deployment prerequisites and prepare your computing environment.</p></td>
-<td align="left"><p>[App-V Prerequisites](appv-prerequisites.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>If you plan to use the App-V management server, plan for the required roles.</p></td>
-<td align="left"><p>[Planning for the App-V Server Deployment](appv-planning-for-appv-server-deployment.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Plan for the App-V sequencer and client so you to create and run virtualized applications.</p></td>
-<td align="left"><p>[Planning for the App-V Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>If applicable, review the options and steps for migrating from a previous version of App-V.</p></td>
-<td align="left"><p>[Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Decide whether to configure App-V clients in Shared Content Store mode.</p></td>
-<td align="left"><p>[Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-</tbody>
-</table>
+|Status|Task|References|Notes|
+|---|---|---|---|
+|![Checklist box](../app-v/images/checklistbox.gif)|Review the getting started information about App-V to gain a basic understanding of the product before beginning deployment planning.|[Getting started with App-V](appv-getting-started.md)||
+|![Checklist box](../app-v/images/checklistbox.gif)|Plan for App-V deployment prerequisites and prepare your computing environment.|[App-V prerequisites](appv-prerequisites.md)||
+|![Checklist box](../app-v/images/checklistbox.gif)|If you plan to use the App-V management server, plan for the required roles.|[Planning for the App-V server deployment](appv-planning-for-appv-server-deployment.md)||
+|![Checklist box](../app-v/images/checklistbox.gif)|Plan for the App-V sequencer and client to create and run virtualized applications.|[Planning for the App-V Sequencer and client deployment](appv-planning-for-sequencer-and-client-deployment.md)||
+|![Checklist box](../app-v/images/checklistbox.gif)|If applicable, review the options and steps for migrating from a previous version of App-V.|[Migrating to App-V from a previous version](appv-migrating-to-appv-from-a-previous-version.md)||
+|![Checklist box](../app-v/images/checklistbox.gif)|Decide whether to configure App-V clients in Shared Content Store mode.|[Deploying the App-V Sequencer and configuring the client](appv-deploying-the-appv-sequencer-and-client.md)||
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+
 
 ## Related topics
 

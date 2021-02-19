@@ -1,13 +1,15 @@
 ---
 title: DeviceStatus CSP
-description: The DeviceStatus configuration service provider is used by the enterprise to keep track of device inventory and query the state of compliance of these devices with their enterprise policies.
+description: The DeviceStatus configuration service provider keeps track of device inventory and queries the compliance state of devices within the enterprise.
 ms.assetid: 039B2010-9290-4A6E-B77B-B2469B482360
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 11/01/2017
+author: manikadhiman
+ms.date: 04/30/2019
 ---
 
 # DeviceStatus CSP
@@ -34,11 +36,10 @@ Supported operation is Get.
 <a href="" id="devicestatus-cellularidentities"></a>**DeviceStatus/CellularIdentities**  
 Required. Node for queries on the SIM cards.
 
-> **Note**  Multiple SIMs are supported.
+>[!NOTE]
+>Multiple SIMs are supported.
 
- 
-
-<a href="" id="devicestatus-cellularidentities-imei"></a>**DeviceStatus/CellularIdentities/****_IMEI_**  
+<a href="" id="devicestatus-cellularidentities-imei"></a>**DeviceStatus/CellularIdentities/**<strong>*IMEI*</strong>  
 The unique International Mobile Station Equipment Identity (IMEI) number of the mobile device. An IMEI is present for each SIM card on the device.
 
 <a href="" id="devicestatus-cellularidentities-imei-imsi"></a>**DeviceStatus/CellularIdentities/*IMEI*/IMSI**  
@@ -74,7 +75,7 @@ Supported operation is Get.
 <a href="" id="devicestatus-networkidentifiers"></a>**DeviceStatus/NetworkIdentifiers**  
 Node for queries on network and device properties.
 
-<a href="" id="devicestatus-networkidentifiers-macaddress"></a>**DeviceStatus/NetworkIdentifiers/****_MacAddress_**  
+<a href="" id="devicestatus-networkidentifiers-macaddress"></a>**DeviceStatus/NetworkIdentifiers/**<strong>*MacAddress*</strong>  
 MAC address of the wireless network card. A MAC address is present for each network card on the device.
 
 <a href="" id="devicestatus-networkidentifiers-macaddress-ipaddressv4"></a>**DeviceStatus/NetworkIdentifiers/*MacAddress*/IPAddressV4**  
@@ -105,7 +106,7 @@ Supported operation is Get.
 Node for the compliance query.
 
 <a href="" id="devicestatus-compliance-encryptioncompliance"></a>**DeviceStatus/Compliance/EncryptionCompliance**  
-Boolean value that indicates compliance with the enterprise encryption policy. The value is one of the following:
+Boolean value that indicates compliance with the enterprise encryption policy for OS (system) drives. The value is one of the following:
 
 -   0 - not encrypted
 -   1 - encrypted
@@ -132,6 +133,15 @@ Added in Windows, version 1607. String that specifies the OS edition.
 
 Supported operation is Get.
 
+<a href="" id="devicestatus-os-mode"></a>**DeviceStatus/OS/Mode**  
+Added in Windows, version 1803. Read only node that specifies the device mode.
+
+Valid values:  
+-  0 - the device is in standard configuration
+-  1 - the device is in S mode configuration
+
+Supported operation is Get.
+
 <a href="" id="devicestatus-antivirus"></a>**DeviceStatus/Antivirus**  
 Added in Windows, version 1607. Node for the antivirus query.
 
@@ -147,6 +157,12 @@ Valid values:
 -   2 – Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
+
+If more than one antivirus provider is active, this node returns:
+-   1 – If every active antivirus provider has a valid signature status.
+-   0 – If any of the active antivirus providers has an invalid signature status.
+
+This node also returns 0 when no antivirus provider is active.
 
 <a href="" id="devicestatus-antivirus-status"></a>**DeviceStatus/Antivirus/Status**  
 Added in Windows, version 1607. Integer that specifies the status of the antivirus.
@@ -169,10 +185,29 @@ Supported operation is Get.
 <a href="" id="devicestatus-antispyware-signaturestatus"></a>**DeviceStatus/Antispyware/SignatureStatus**  
 Added in Windows, version 1607. Integer that specifies the status of the antispyware signature.
 
+Valid values:
+
+-  0 - The security software reports that it is not the most recent version.
+-  1 - The security software reports that it is the most recent version.
+-  2 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn’t exist.)
+
 Supported operation is Get.
+
+If more than one antispyware provider is active, this node returns:
+-   1 – If every active antispyware provider has a valid signature status.
+-   0 – If any of the active antispyware providers has an invalid signature status.
+
+This node also returns 0 when no antispyware provider is active.
 
 <a href="" id="devicestatus-antispyware-status"></a>**DeviceStatus/Antispyware/Status**  
 Added in Windows, version 1607. Integer that specifies the status of the antispyware.
+
+Valid values:
+
+-  0 - The status of the security provider category is good and does not need user attention.
+-  1 - The status of the security provider category is not monitored by Windows Security Center (WSC).
+-  2 - The status of the security provider category is poor and the computer may be at risk.
+-  3 - The security provider category is in snooze state. Snooze indicates that WSC is not actively protecting the computer.
 
 Supported operation is Get.
 
@@ -241,23 +276,23 @@ Supported operation is Get.
 <a href="" id="devicestatus-deviceguard-virtualizationbasedsecurityhwreq"></a>**DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq**  
 Added in Windows, version 1709. Virtualization-based security hardware requirement status. The value is a 256 value bitmask.
 
--	0x0: System meets hardware configuration requirements
--	0x1: SecureBoot required 
--	0x2: DMA Protection required
--	0x4: HyperV not supported for Guest VM
--	0x8: HyperV feature is not available
+- 0x0: System meets hardware configuration requirements
+- 0x1: SecureBoot required 
+- 0x2: DMA Protection required
+- 0x4: HyperV not supported for Guest VM
+- 0x8: HyperV feature is not available
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-deviceguard-virtualizationbasedsecuritystatus"></a>**DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus**  
 Added in Windows, version 1709. Virtualization-based security status.  Value is one of the following:
--	0 - Running
--	1 - Reboot required 
--	2 - 64 bit architecture required 
--	3 - not licensed 
--	4 - not configured 
--	5 - System doesn't meet hardware requirements 
--	42 – Other. Event logs in Microsoft-Windows-DeviceGuard have more details
+- 0 - Running
+- 1 - Reboot required 
+- 2 - 64 bit architecture required 
+- 3 - not licensed 
+- 4 - not configured 
+- 5 - System doesn't meet hardware requirements 
+- 42 – Other. Event logs in Microsoft-Windows-DeviceGuard have more details
 
 
 Supported operation is Get.
@@ -265,11 +300,11 @@ Supported operation is Get.
 <a href="" id="devicestatus-deviceguard-lsacfgcredguardstatus"></a>**DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus**  
 Added in Windows, version 1709. Local System Authority (LSA) credential guard status.
 
--	0 - Running
--	1 - Reboot required
--	2 - Not licensed for Credential Guard
--	3 - Not configured
--	4 - VBS not running 
+- 0 - Running
+- 1 - Reboot required
+- 2 - Not licensed for Credential Guard
+- 3 - Not configured
+- 4 - VBS not running 
 
 
 Supported operation is Get.

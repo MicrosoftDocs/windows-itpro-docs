@@ -1,49 +1,48 @@
 ---
 title: How to Add or Upgrade Packages by Using the Management Console (Windows 10)
-description: How to Add or Upgrade Packages by Using the Management Console
-author: MaggiePucciEvans
+description: Add or remove an administrator on the Microsoft Application Virtualization (App-V) server by using the Management Console.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 06/08/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+ms.topic: article
 ---
+# How to add or upgrade packages by using the Management Console
 
+>Applies to: Windows 10, version 1607
 
-# How to Add or Upgrade Packages by Using the Management Console
+You can use the following procedure to add or upgrade a package to the App-V Management Console. To upgrade a package that already exists in the Management Console, use the following steps and import the upgraded package using the same package **Name**.
 
-**Applies to**
--   Windows 10, version 1607
+## Add a package to the Management Console
 
-You can the following procedure to add or upgrade a package to the App-V Management Console. To upgrade a package that already exists in the Management Console, use the following steps and import the upgraded package using the same package **Name**.
-
-**To add a package to the Management Console**
-
-1.  Click the **Packages** tab in the navigation pane of the Management Console display.
+1. Select the **Packages** tab in the navigation pane of the Management Console display.
 
     The console displays the list of packages that have been added to the server along with status information about each package. When a package is selected, detailed information about the package is displayed in the **PACKAGES** pane.
 
-    Click the **Ungrouped** drop-down list box and specify how the packages are to be displayed in the console. You can also click the associated column header to sort the packages.
+    Select the **Ungrouped** drop-down list box and specify how the packages are to be displayed in the console. You can also click the associated column header to sort the packages.
 
-2.  To specify the package you want to add, click **Add or Upgrade Packages**.
+2. Select **Add or Upgrade Packages** to specify which package you want to add.
 
-3.  Type the full path to the package that you want to add. Use the UNC or HTTP path format, for example **\\\\servername\\sharename\\foldername\\packagename.appv** or **http://server.1234/file.appv**, and then click **Add**.
+3. Enter the full path to the package that you want to add. Use the UNC or HTTP path format, for example **\\\\servername\\sharename\\foldername\\packagename.appv** or **http<span></span>://server.1234/file.appv**, and then select **Add**.
 
-    **Important**  
-    You must select a package with the **.appv** file name extension.
+    >[!IMPORTANT]
+    >You must select a package with the **.appv** file name extension.
 
-     
+4. The page displays the status message **Adding &lt;Packagename&gt;**. Select **IMPORT STATUS** to check the status of a package that you have imported.
 
-4.  The page displays the status message **Adding &lt;Packagename&gt;**. Click **IMPORT STATUS** to check the status of a package that you have imported.
+    Select **OK** to add the package and close the **Add Package** page. If there was an error during the import, select **Detail** on the **Package Import** page for more information. The newly added package is now available in the **PACKAGES** pane.
 
-    Click **OK** to add the package and close the **Add Package** page. If there was an error during the import, click **Detail** on the **Package Import** page for more information. The newly added package is now available in the **PACKAGES** pane.
+5. Select **Close** to close the **Add or Upgrade Packages** page.
 
-5.  Click **Close** to close the **Add or Upgrade Packages** page.
 
-## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
 
 ## Related topics
 
-[Operations for App-V](appv-operations.md)
+* [Operations for App-V](appv-operations.md)
