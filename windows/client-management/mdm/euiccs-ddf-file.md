@@ -124,7 +124,7 @@ The XML below if for Windows 10, version 1803.
                     <AccessType>
                         <Get />
                     </AccessType>
-                    <Description>Indicates whether the download of a profile with PPR1 is allowed. If the eUICC has already a profile (regardless of its origin and policy rules associated with it), then the download of a profile with PPR1 is not allowed.</Description>
+                    <Description>Indicates whether the download of a profile with PPR1 is allowed. If the eUICC already has a profile (regardless of its origin and policy rules associated with it), the download of a profile with PPR1 is not allowed.</Description>
                     <DFFormat>
                         <bool />
                     </DFFormat>
@@ -145,7 +145,7 @@ The XML below if for Windows 10, version 1803.
                     <AccessType>
                         <Get />
                     </AccessType>
-                    <Description>Indicates whether the eUICC has already a profile with PPR1.</Description>
+                    <Description>Indicates whether the eUICC already has a profile with PPR1.</Description>
                     <DFFormat>
                         <bool />
                     </DFFormat>
@@ -189,7 +189,7 @@ The XML below if for Windows 10, version 1803.
                             <Get />
                             <Replace />
                         </AccessType>
-                        <Description>Node representing the discovery operation for a server name. The node name is the fully qualified domain name of the SM-DP+ server that will be used for profile discovery. Creation of this subtree triggers a discovery request.</Description>
+                        <Description>Node specifying the server name for a discovery operation. The node name is the fully qualified domain name of the SM-DP+ server that will be used for profile discovery. Creation of this subtree triggers a discovery request.</Description>
                         <DFFormat>
                             <node />
                         </DFFormat>
