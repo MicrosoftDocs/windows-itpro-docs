@@ -13,7 +13,7 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.date: 02/04/2021
+ms.date: 02/18/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -31,13 +31,11 @@ Applies to:
 > [!IMPORTANT]
 > Welcome to Microsoft Defender for Endpoint, the new name for Microsoft Defender for Endpoint. Read more about this and other updates here. We'll be updating names in products and in the docs in the near future.
 
-> [!WARNING]
-> Microsoft Defender for Endpoint support for Windows Virtual Desktop multi-session scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However, single session scenarios on Windows Virtual Desktop are fully supported.
-
 Microsoft Defender for Endpoint supports monitoring both VDI as well as Windows Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Windows Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
 
  ## Before you begin
-Familiarize yourself with the [considerations for non-persistent VDI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Although [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) does not provide non-persistence options, it does provide ways to use a Windows image that can be used to provision new hosts and redeploy machines. This increases volatility in the environment, and thus impacts what entries are created and maintained in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), potentially reducing visibility for your security analysts.
+
+See [considerations for non-persistent VDI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Although [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) does not provide non-persistence options, it does provide ways to use a Windows image that can be used to provision new hosts and redeploy machines. This increases volatility in the environment, and thus impacts what entries are created and maintained in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), potentially reducing visibility for your security analysts.
 
 > [!NOTE]
 > Depending on your choice of onboarding method, devices can appear in Microsoft Defender Security Center as either: 
@@ -77,30 +75,26 @@ This scenario uses a centrally located script and runs it using a domain-based g
 
 #### Use Group Policy management console to run the script when the virtual machine starts
 1. Open the Group Policy Management Console (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
-1. In the Group Policy Management Editor, go to **Computer configuration** \> **Preferences** \> **Control panel settings**. 
-1. Right-click **Scheduled tasks**, click **New**, and then click **Immediate Task** (At least Windows 7). 
-1. In the Task window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM. Click **Check Names** and then click OK. NT AUTHORITY\SYSTEM appears as the user account the task will run as. 
-1. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box. 
-1. Go to the **Actions** tab and click **New**. Ensure that **Start a program** is selected in the Action field. 
-Enter the following: 
-
-> Action = "Start a program" <br>
-> Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-> Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
-
-Click **OK** and close any open GPMC windows.
+2. In the Group Policy Management Editor, go to **Computer configuration** > **Preferences** > **Control panel settings**. 
+3. Right-click **Scheduled tasks**, click **New**, and then select **Immediate Task** (At least Windows 7). 
+4. In the Task window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM. Click **Check Names** and then click OK. `NT AUTHORITY\SYSTEM` appears as the user account under which the task will run. 
+5. Select **Run whether user is logged on or not** and select the **Run with highest privileges** option. 
+6. Go to the **Actions** tab and select **New**. Confirm that **Start a program** is selected in the **Action** field.
+7. Specify the following: <br/> 
+   - Action = **Start a program**
+   - Program/Script = `C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe` 
+   - Add Arguments (optional) = `-ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"`
+8. Select **OK** and close any open GPMC windows.
 
 ### Scenario 3: Onboarding using management tools
 
-If you plan to manage your machines using a management tool, you can onboard devices with Microsoft Endpoint Configuration Manager.
-
-For more information, see: [Onboard Windows 10 devices using Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) 
-
-> [!WARNING]
-> If you plan to use [Attack Surface reduction Rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), please note that rule “[Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used as it is incompatible with management through Microsoft Endpoint Manager because this rule blocks WMI commands the Configuration Manager client uses to function correctly. 
-
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test). 
+
+If you plan to manage your machines using a management tool, you can onboard devices with Microsoft Endpoint Configuration Manager. For more information, see: [Onboard Windows 10 devices using Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) 
+
+> [!WARNING]
+> If you plan to use [Attack Surface reduction Rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), the rule “[Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used as it is incompatible with management through Microsoft Endpoint Manager because this rule blocks WMI commands the Configuration Manager client uses to function correctly. 
 
 ## Tagging your machines when building your image 
 
