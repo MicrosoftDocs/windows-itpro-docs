@@ -77,7 +77,7 @@ ForEach($entry in $oulist){
 }
 ```
 
-Next, copy the following list of OU names and paths into a text file and save it as <b>C:\Setup\Scripts\oulist.txt</b>
+Next, copy the following list of OU names and paths into a text file and save it as **C:\Setup\Scripts\oulist.txt**
 
 ```text
 OUName,OUPath
