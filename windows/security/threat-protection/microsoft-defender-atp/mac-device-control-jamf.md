@@ -33,7 +33,7 @@ ms.technology: mde
 > [!IMPORTANT]
 > **Device control for macOS is currently in public preview**<br>
 > This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
-> For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
+> See [Microsoft Defender for Endpoint preview features](preview.md) for more information.
 
 This document contains examples of device control policies that you can customize in your own organization. These examples are applicable if you are using JAMF to manage your enterprise.
 
@@ -115,7 +115,7 @@ The following example shows how program execution from removable media can be di
 
 ## Restrict all devices from specific vendors
 
-The following example restricts all devices from specific vendors (in this case identified by `090c` and `8068`). Note that all other devices will be unrestricted, since the permission defined at the top level of the policy lists all possible permissions (read, write, and execute).
+The following example restricts all devices from specific vendors (in this case identified by `090c` and `8068`). All other devices will be unrestricted, since the permission defined at the top level of the policy lists all possible permissions (read, write, and execute).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -159,7 +159,7 @@ The following example restricts all devices from specific vendors (in this case 
 
 ## Restrict specific devices identified by vendor ID, product ID, and serial number
 
-The following example restricts two specific devices, identified by vendor ID `090c`, product ID `1000`, and serial numbers `04ZSSMHI2O7WBVOA` and `04ZSSMHI2O7WBVOB`. Note that at all other levels of the policy the permissions include all possible values (read, write, and execute), meaning that all other devices will be unrestricted.
+The following example restricts two specific devices, identified by vendor ID `090c`, product ID `1000`, and serial numbers `04ZSSMHI2O7WBVOA` and `04ZSSMHI2O7WBVOB`. At all other levels of the policy the permissions include all possible values (read, write, and execute), meaning that all other devices will be unrestricted.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 

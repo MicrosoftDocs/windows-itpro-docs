@@ -257,7 +257,6 @@
 ###### [Overview](microsoft-defender-atp/mac-device-control-overview.md)
 ###### [JAMF examples](mac-device-control-jamf.md)
 ###### [Intune examples](mac-device-control-intune.md)
-
 ##### [Schedule scans](microsoft-defender-atp/mac-schedule-scan-atp.md)
 
 #### [Troubleshoot]()

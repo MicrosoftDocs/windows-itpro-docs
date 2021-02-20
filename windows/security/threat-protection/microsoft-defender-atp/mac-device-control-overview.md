@@ -33,7 +33,7 @@ ms.technology: mde
 > [!IMPORTANT]
 > **Device control for macOS is currently in public preview**<br>
 > This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
-> For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
+> See [Microsoft Defender for Endpoint preview features](preview.md) for more information.
 
 ## Requirements
 
@@ -88,7 +88,7 @@ The device control policy can be used to:
 
 ### Customize URL target for notifications raised by device control
 
-When the device control policy that you have put in place is enforced on a device (*e.g.* access to a removable media device is restricted), a notification is displayed to the user.
+When the device control policy that you have put in place is enforced on a device (for example, access to a removable media device is restricted), a notification is displayed to the user.
 
 ![Device control notification](images/mac-device-control-notification.png)
 
@@ -132,13 +132,13 @@ This section of the policy is hierarchical, allowing for maximum flexibility and
 
 For information on how to find the device identifiers, see [Look up device identifiers](#look-up-device-identifiers).
 
-The policy is evaluated from the most specific entry to the most general one. In other words, the product tries to find the most specific match in the policy for each removable media device and apply the permissions at that level. If there is no match, then the next best match is applied, all the way to the permission specified at the top-level, which is the default when a device does not match any other entry.
+The policy is evaluated from the most specific entry to the most general one. In other words, the product tries to find the most specific match in the policy for each removable media device and apply the permissions at that level. If there is no match, then the next best match is applied, all the way to the permission specified at the top level, which is the default when a device does not match any other entry.
 
 #### Policy enforcement level
 
 Under the removable media section, there is an option to set the enforcement level, which can take one of the following values:
 
-- `audit` - Under this enforcement level, if access to a device is restricted, a notification is displayed to the user, however the device can still be used. This can be useful to evaluate the effectiveness of a policy.
+- `audit` - Under this enforcement level, if access to a device is restricted, a notification is displayed to the user, however the device can still be used. This enforcement level can be useful to evaluate the effectiveness of a policy.
 - `block` - Under this enforcement level, the operations that the user can perform on the device are limited to what is defined in the policy. Furthermore, a notification is raised to the user. 
 
 |||
@@ -155,7 +155,7 @@ At the top level of the removable media section, you can configure the default p
 This setting can be set to:
 
 - `none` - no operations can be performed against the device
-- A combination of the following:
+- A combination of the following values:
     - `read` - Read operations are permitted on the device
     - `write` - Write operations are permitted on the device
     - `execute` - Execute operations are permitted on the device
@@ -290,7 +290,7 @@ We have included more examples of device control policies in the following docum
 
 #### Look up device identifiers
 
-To find the vendor ID, product ID, and serial number of a USB device, do the following:
+To find the vendor ID, product ID, and serial number of a USB device:
 
 1. Log into a Mac device.
 1. Plug in the USB device for which you want to look up the identifiers.
@@ -310,11 +310,11 @@ To find the vendor ID, product ID, and serial number of a USB device, do the fol
 
     ![Details of a USB device](images/mac-device-control-lookup-4.png)
 
-1. The vendor ID, product ID, and serial number are displayed. Note that when adding the vendor ID and product ID to the removable media policy, you should only add the part after `0x`. For example, in the below image, vendor ID is `1000` and product ID is `090c`.
+1. The vendor ID, product ID, and serial number are displayed. When adding the vendor ID and product ID to the removable media policy, you should only add the part after `0x`. For example, in the below image, vendor ID is `1000` and product ID is `090c`.
 
 #### Discover USB devices in your organization
 
-You can view mount, unmount, and volume change events originating from USB devices in Microsoft Defender for Endpoint advanced hunting. This can be helpful to identify suspicious usage activity or perform internal investigations.
+You can view mount, unmount, and volume change events originating from USB devices in Microsoft Defender for Endpoint advanced hunting. These events can be helpful to identify suspicious usage activity or perform internal investigations.
 
 ```
 DeviceEvents 
