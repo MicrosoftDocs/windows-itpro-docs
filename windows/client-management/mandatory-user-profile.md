@@ -88,6 +88,7 @@ Starting in Windows 10 version (2004) Open the Settings app and click on Advance
 
 1. In **User Profiles**, click **Default Profile**, and then click **Copy To**.
 
+
    ![Example of UI](images/copy-to.png)
 
 1. In **Copy To**, under **Permitted to use**, click **Change**.
@@ -99,8 +100,12 @@ Starting in Windows 10 version (2004) Open the Settings app and click on Advance
 1. In **Copy To**, in the **Copy profile to** field, enter the path and folder name where you want to store the mandatory profile. The folder name must use the correct [extension](#profile-extension-for-each-windows-version) for the operating system version. For example, the folder name must end with ".v6" to identify it as a user profile folder for Windows 10, version 1607.
 
    - If the device is joined to the domain and you are signed in with an account that has permissions to write to a shared folder on the network, you can enter the shared folder path.
+
+   ![Example of UI](images/copy-to-path.png)
+
    - If the device is not joined to the domain, you can save the profile locally and then copy it to the shared folder location.
    - Optionally, you can check the **Mandatory profile** checkbox. This step is not required but will set permissions that are more restrictive and we recommend doing so.
+
 
    ![Example of UI](images/copy-to-path.png)
 
