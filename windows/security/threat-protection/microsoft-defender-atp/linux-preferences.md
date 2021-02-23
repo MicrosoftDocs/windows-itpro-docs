@@ -247,7 +247,7 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 
 #### Maximum on-demand scan threads
 
-Specify the maximum number CPU used during scheduled scans.
+Specify the maximum number of CPUs used during scheduled scans.
 |||
 |:---|:---|
 | **Key** | maximumOnDemandScanThreads |
