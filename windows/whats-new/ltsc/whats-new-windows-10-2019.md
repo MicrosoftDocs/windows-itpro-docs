@@ -220,7 +220,7 @@ The new [security baseline for Windows 10 version 1803](https://docs.microsoft.c
 
 #### SMBLoris vulnerability
 
-An issue, known as “SMBLoris�?, which could result in denial of service, has been addressed.
+An issue, known as “SMBLoris”, which could result in denial of service, has been addressed.
 
 #### Windows Security Center
 
