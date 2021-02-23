@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 02/18/2021
+ms.date: 02/22/2021
 ms.reviewer: 
 ---
 
@@ -164,12 +164,14 @@ Once the configuration profile has been created, targeted clients will receive t
 
 If you are using a Public Key Infrastructure that uses non-Microsoft services, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificate-authority-add-scep-overview).
 
-As an alternative to using SCEP or if none of the previously covered solutions will work in your environment, you may manually generate CSRs for submission to your PKI.
+As an alternative to using SCEP or if none of the previously covered solutions will work in your environment, you can manually generate Certificate Signing Requests (CSR) for submission to your PKI. To assist with this approach you can use the [Generate-CertificateRequest](https://www.powershellgallery.com/packages/Generate-CertificateRequest) powershell commandlet.
+
+The Generate-CertificateRequest commandlet will generate a .inf file for a pre-existing Windows Hello for Business key. The .inf can be used to generate a certificate request manually using certreq.exe. The commandlet will also generate a .req file which can be submitted to your PKI for a certificate.
 
 ## RDP Sign-in with Windows Hello for Business Certificate Authentication
 
 After adding the certificate using an approach from any of the previous sections, you should be able to RDP to any Windows device or server in the same Forest as the user’s on-premises Active Directory account, provided the PKI certificate chain for the issuing certificate authority is deployed to that target server.
 
-1. Open the Remote Desktop Client (%windir%\system32\mstsc.exe) on the Hybrid AAD-Joined client where the authentication certificate has been deployed.
-1. Attempt an RDP session to a target server.
-1. Use the certificate credential protected by your Windows Hello for Business gesture.
+1. Open the Remote Desktop Client (%windir%\system32\mstsc.exe) on the Hybrid AAD-Joined client where the authentication certificate has been deployed
+1. Attempt an RDP session to a target server
+1. Use the certificate credential protected by your Windows Hello for Business gesture
