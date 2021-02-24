@@ -94,7 +94,7 @@ The steps for creating the deployment share for production are the same as when 
 
 ### Configure permissions for the production deployment share
 
-To read files in the deployment share, you need to assign **NTFS** and **SMB** permissions to the **MDT Build Account (MDT\_BA)** for the **D:\\MDTProduction** folder
+To read files in the deployment share, you need to assign **NTFS** and **SMB** permissions to the **MDT Build Account (MDT\_BA)** for the **D:\\MDTProduction** folder.
 
 On **MDT01**:
 
