@@ -153,7 +153,7 @@ The Adobe Reader application added to the Deployment Workbench.
 
 ## Step 5: Prepare the drivers repository
 
-In order to deploy Windows 10 with **MDT** successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
+In order to deploy Windows 10 with **MDT** successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot images and operating system, using the following hardware models as examples:
 -   Lenovo ThinkPad T420
 -   Dell Latitude 7390
 -   HP EliteBook 8560w
