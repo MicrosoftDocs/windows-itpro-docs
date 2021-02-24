@@ -130,7 +130,7 @@ In these steps, we assume that you have completed the steps in the [Create a Win
 
 ## Step 4: Add an application
 
-When you configure your **MDT Build Lab deployment** share, you can also add a**pplications** to the new deployment share before creating your task sequence. This section walks you through the process of adding an application to the **MDT Production deployment** share using **Adobe Reader** as an example.
+When you configure your **MDT Build Lab deployment** share, you can also add **applications** to the new deployment share before creating your task sequence. This section walks you through the process of adding an application to the **MDT Production deployment** share using **Adobe Reader** as an example.
 
 ### Create the install: Adobe Reader DC
 
