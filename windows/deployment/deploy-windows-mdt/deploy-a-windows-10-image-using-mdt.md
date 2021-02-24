@@ -259,7 +259,7 @@ On **MDT01**:
     a. **Note**: Extracting the **.exe** file manually requires an extraction utility. You can also run the .exe and it will self-extract files to the **%userprofile%\AppData\Local\Temp\RarSFX0** directory. This directory is temporary and will be deleted when the **.exe** terminates. 
 3.  Using **File Explorer**, create the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
 4.  Copy the content of the **C:\\Tmp\\PROWinx64\\PRO1000\\Winx64\\NDIS64** folder to the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
-5.  In the **Deployment Workbench**, expand the **MDT Production** > **Out-of-Box Drivers** node, right-click the **WinPE x64** node, and select **Import Drivers**, and use the following Driver source directory to import drivers: **D:\\Drivers\\WinPE x64\\Intel PRO1000**.
+5.  In the **Deployment Workbench**, expand the **MDT Production** > **Out-of-Box Drivers** node, right-click the **WinPE x64** node, select **Import Drivers**, and use the following driver source directory to import drivers: **D:\\Drivers\\WinPE x64\\Intel PRO1000**.
 
 ### Download, extract, and import drivers
 
