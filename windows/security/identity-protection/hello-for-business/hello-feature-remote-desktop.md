@@ -1,6 +1,6 @@
 ---
-title: Deploying Certificates to Key Trust Users to Enable RDP
-description: Learn how to deploy certificates to a Key Trust user to enable remote desktop with supplied credentials
+title: Remote Desktop
+description: Learn how Windows Hello for Business supports using biometrics with remote desktop
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, remote desktop, RDP
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 02/18/2021
+ms.date: 09/16/2020
 ms.reviewer: 
 ---
 
