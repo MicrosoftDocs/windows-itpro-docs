@@ -209,7 +209,7 @@ When you import drivers to the **MDT driver repository**, **MDT** creates a sing
     -   Microsoft Corporation
         -   Surface Laptop
 
-The preceding folder names should match the actual make and model values that MDT reads from devices during deployment. You can find out the model values for your machines by using the following command in **Windows PowerShell Prompt:
+The preceding folder names should match the actual make and model values that MDT reads from devices during deployment. You can find out the model values for your machines by using the following command in an elevated **Windows PowerShell prompt**:
 
 ``` powershell
 Get-WmiObject -Class:Win32_ComputerSystem
