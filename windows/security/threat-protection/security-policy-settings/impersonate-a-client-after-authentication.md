@@ -106,6 +106,8 @@ On member servers, ensure that only the Administrators and Service groups (Local
 
 In most cases, this configuration has no impact. If you have installed optional components such as ASP.NET or IIS, you may need to assign the **Impersonate a client after authentication** user right to additional accounts that are required by those components, such as IUSR\_*&lt;ComputerName&gt;*, IIS\_WPG, ASP.NET, or IWAM\_*&lt;ComputerName&gt;*.
 
+In IIS 7.0 and later, a built-in account (IUSR) replaces the IUSR_MachineName account. Additionally, a group that is named IIS_IUSRS replaces the IIS_WPG group. Because the IUSR account is a built-in account, the IUSR account no longer requires a password. The IUSR account resembles a network or local service account. For more details, see [Default permissions and user rights for IIS 7.0 and later](https://docs.microsoft.com/troubleshoot/iis/default-permissions-user-rights).
+
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)

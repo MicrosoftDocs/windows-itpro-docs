@@ -32,7 +32,9 @@ ms.technology: mde
 - Windows Server, version 1803
 - Windows Server, 2019
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Run the following PowerShell script on a newly onboarded device to verify that it is properly reporting to the Defender for Endpoint service.
 
