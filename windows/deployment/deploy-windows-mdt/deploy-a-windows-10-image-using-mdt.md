@@ -123,7 +123,7 @@ In these steps, we assume that you have completed the steps in the [Create a Win
 7.  After adding the **Operating System**, double-click the added **Operating System** name in the **Operating Systems / Windows 10** node and change the name to **Windows 10 Enterprise x64 RTM Custom Image**.
 
 > [!NOTE]
->The reason for adding the setup files has changed since earlier versions of **MDT**. **MDT 2010** used the setup files to install Windows. **MDT** uses **DISM** Command to apply the image; however, you still need the **setup files** because some components in **roles and features** are stored outside the main image.
+> The reason for adding the setup files has changed since earlier versions of **MDT**. **MDT 2010** used the setup files to install Windows. **MDT** uses the **DISM** command to apply the image; however, you still need the **setup files** because some components in **roles and features** are stored outside the main image.
  
 
 ![Imported OS](../images/fig2-importedos.png)
