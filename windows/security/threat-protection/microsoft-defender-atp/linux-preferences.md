@@ -245,6 +245,16 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 | **Possible values** | 10000 (default). Allowed values are from 5000 items to 15000 items. |
 | **Comments** | Available in Defender for Endpoint version 101.04.76 or higher. |
 
+#### Maximum on-demand scan threads
+
+Specify the maximum number of CPUs used during scheduled scans.
+|||
+|:---|:---|
+| **Key** | maximumOnDemandScanThreads |
+| **Data type** | String |
+| **Possible values** | 1 to use only 1 CPU. 2 to use 2 CPUs. |
+| **Comments** | Setting this configuration will limit the CPU usage during scheduled scans. |
+
 ### Cloud-delivered protection preferences
 
 The *cloudService* entry in the configuration profile is used to configure the cloud-driven protection feature of the product.
