@@ -250,7 +250,7 @@ Creating the WinPE x64 selection profile.
 
 ### Extract and import drivers for the x64 boot image
 
-**Windows PE** supports all the hardware models that we have, but here you learn to add boot image drivers to accommodate any new hardware that might require additional drivers. In this example, you add the latest Intel network drivers to the x64 boot image.
+**Windows PE** supports all the hardware models that we have, but here you learn how to add boot image drivers to accommodate any new hardware that might require additional drivers. In this example, you add the latest Intel network drivers to the x64 boot image.
 
 On **MDT01**:
 
