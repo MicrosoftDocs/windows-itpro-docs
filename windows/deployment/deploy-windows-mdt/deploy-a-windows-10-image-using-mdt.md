@@ -23,7 +23,7 @@ ms.topic: article
 
 This topic will show you how to take your reference image for Windows 10 (that was just [created](create-a-windows-10-reference-image.md)), and deploy that image to your environment using the **Microsoft Deployment Toolkit (MDT)**. 
 
-We will prepare for this by creating an **MDT** deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. We will configure **Active Directory** permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
+We will prepare for this by creating an **MDT** deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of both processes. We will configure **Active Directory** permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
 
 For the purposes of this topic, we will use four computers: **DC01, MDT01, HV01 and PC0005**. 
 
