@@ -229,7 +229,7 @@ The Out-of-Box Drivers structure in the Deployment Workbench.
 ### Create the selection profiles for boot image drivers
 
 By default, MDT adds any storage and network drivers that you import to the boot images. However, you should add only the drivers that are necessary to the boot image. You can control which drivers are added by using selection profiles.
-The drivers that are used for the boot images (Windows PE) are Windows 10 drivers. If you can’t locate **Windows 10** drivers for your device, a **Windows 7 or Windows 8.1** driver will most likely work, but Windows 10 drivers should be your first choice.
+The drivers that are used for the boot images (Windows PE) are Windows 10 drivers. If you can’t locate **Windows 10** drivers for your device, a **Windows 7** or **Windows 8.1** driver will most likely work, but Windows 10 drivers should be your first choice.
 
 On **MDT01**:
 
