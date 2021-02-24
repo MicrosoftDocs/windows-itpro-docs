@@ -236,7 +236,7 @@ On **MDT01**:
 1.  In the **Deployment Workbench**, under the **MDT Production** node, expand the **Advanced Configuration** node, right-click the **Selection Profiles** node, and select **New Selection Profile**.
 2.  In the **New Selection Profile Wizard**, create a **selection profile** with the following settings:
     1.  Selection Profile name: **WinPE x86**
-    2.  Folders: Select the **WinPE x86 folder** in **Out-of-Box** Drivers.
+    2.  Folders: Select the **WinPE x86 folder** in **Out-of-Box Drivers**.
     3. Click **Next**, **Next** and **Finish**.
 3.  Right-click the **Selection Profiles** node again, and select **New Selection Profile**.
 4.  In the **New Selection Profile Wizard**, create a **selection profile** with the following settings:
