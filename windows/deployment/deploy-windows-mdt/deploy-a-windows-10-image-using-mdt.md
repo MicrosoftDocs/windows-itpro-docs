@@ -32,7 +32,7 @@ For the purposes of this topic, we will use four computers: **DC01, MDT01, HV01 
 - **HV01** is a Hyper-V server 
 - **PC0005** is a blank device to which we will deploy Windows 10
 
-**MDT01** and **PC0005** are members of the domain contoso.com for the fictitious Contoso Corporation.  **HV01** used to test deployment of **PC0005** in a virtual environment.
+**MDT01** and **PC0005** are members of the domain contoso.com for the fictitious Contoso Corporation.  **HV01** is used to test the deployment of **PC0005** in a virtual environment.
 
    ![devices](../images/mdt-07-fig01.png)
 
