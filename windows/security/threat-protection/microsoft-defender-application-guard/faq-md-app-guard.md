@@ -161,7 +161,7 @@ ICS is enabled by default in Windows, and ICS must be enabled in order for Appli
 5. Reboot the device.
 
 ### Why doesn't the container fully load when device control policies are enabled?
-Allow-listed items must be configured as "allowed" in the Group Policy Object to ensure AppGuard works properly. This is a prerequisite. If the device installations have already been blocked by device control policies, the OS must be reinstalled to resolve this issue.
+Allow-listed items must be configured as "allowed" in the Group Policy Object to ensure Application Guard works properly. This is a prerequisite. If the device installations have already been blocked by device control policies, the OS must be reinstalled to resolve this issue.
 
 Policy: Allow installation of devices that match any of these device IDs 
 - `SCSI\DiskMsft____Virtual_Disk____` 
