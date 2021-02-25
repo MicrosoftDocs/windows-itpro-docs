@@ -58,7 +58,7 @@ If you're already a Defender for Endpoint customer, you can apply through the Mi
 
 When accepted, you will receive a welcome email and you will see the **Apply** button change to a toggle that is “on”. In case you want to take yourself out of the Targeted Attack Notifications service, slide the toggle “off” and click **Save preferences** at the bottom of the page. 
 
-## View targeted attack notification from Microsoft Threat Experts 
+## Where you'll see the targeted attack notification from Microsoft Threat Experts 
 You can receive targeted attack notification from Microsoft Threat Experts through the following medium:  
 - The Defender for Endpoint portal's **Incidents** page 
 - The Defender for Endpoint portal's **Alerts** dashboard  
@@ -78,7 +78,7 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 
 2. From the dashboard, select the same alert topic that you got from the email, to view the details.  
 
-## Apply for Microsoft Threat Experts - Experts on Demand
+## Subscribe ro Microsoft Threat Experts - Experts on Demand
 If you're already a Defender for Endpoint customer, you can contact your Microsoft representative to subscribe to Microsoft Threat Experts - Experts on Demand. 
 
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization 
