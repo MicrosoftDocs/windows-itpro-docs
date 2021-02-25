@@ -1333,6 +1333,7 @@ ms.date: 10/08/2020
 - [ADMX_WinLogon/LogonHoursPolicyDescription](./policy-csp-admx-winlogon.md#admx-winlogon-logonhourspolicydescription)
 - [ADMX_WinLogon/ReportCachedLogonPolicyDescription](./policy-csp-admx-winlogon.md#admx-winlogon-reportcachedlogonpolicydescription)
 - [ADMX_WinLogon/SoftwareSASGeneration](./policy-csp-admx-winlogon.md#admx-winlogon-softwaresasgeneration)
+- [ADMX_Winsrv/AllowBlockingAppsAtShutdown](./policy-csp-admx-winsrv.md#admx-winsrv-allowblockingappsatshutdown)
 - [ADMX_wlansvc/SetCost](./policy-csp-admx-wlansvc.md#admx-wlansvc-setcost)
 - [ADMX_wlansvc/SetPINEnforced](./policy-csp-admx-wlansvc.md#admx-wlansvc-setpinenforced)
 - [ADMX_wlansvc/SetPINPreferred](./policy-csp-admx-wlansvc.md#admx-wlansvc-setpinpreferred)

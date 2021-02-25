@@ -8547,6 +8547,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### Winsrv policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-Winsrv.md#winsrv-allowblockingappsatshutdown" id="winsrv-allowblockingappsatshutdown">Winsrv/AllowBlockingAppsAtShutdown</a>
+  </dd>
+</dl>
+
 ## Policies in Policy CSP supported by Group Policy and ADMX-backed policies in Policy CSP
 - [Policies in Policy CSP supported by Group Policy](policy-csps-supported-by-group-policy.md)
 - [ADMX-backed policies in Policy CSP](policy-csps-admx-backed.md)
