@@ -56,7 +56,7 @@ If you're already a Defender for Endpoint customer, you can apply through the Mi
 
     ![Image of Microsoft Threat Experts application confirmation](images/mte-applicationconfirmation.png)
 
-6. From the navigation pane, go to **Settings** > **General** > **Advanced features** to turn the **Microsoft Threat Experts - Targeted Attack Notification** toggle on. Click **Save preferences**. 
+When accepted, you will receive a welcome email and you will see the **Apply** button change to a toggle that is “on”. In case you want to take yourself out of the Targeted Attack Notifications service, slide the toggle “off” and click **Save preferences** at the bottom of the page. 
 
 ## Receive targeted attack notification from Microsoft Threat Experts 
 You can receive targeted attack notification from Microsoft Threat Experts through the following medium:  
