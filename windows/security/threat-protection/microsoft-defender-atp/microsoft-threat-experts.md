@@ -45,11 +45,9 @@ Watch this video for a quick overview of Microsoft Threat Experts.
 > [!NOTE]
 > Discuss the eligibility requirements with your Microsoft Technical Service provider and account team before you apply to the managed threat hunting service.
 
-If you're a Microsoft Defender for Endpoint customer, you need to apply for Microsoft Threat Experts - Targeted Attack Notifications to get special insights and analysis that help identify the most critical threats so you can respond to them quickly. Apply for Microsoft Threat Experts - Experts on Demand if you want to consult with our threat experts on relevant detections and adversaries.
+If you're a Microsoft Defender for Endpoint customer, you need to apply for Microsoft Threat Experts - Targeted Attack Notifications to get special insights and analysis that help identify the most critical threats so you can respond to them quickly. Reach out to your account team or contact your Microsoft representative subscribe to Microsoft Threat Experts - Experts on Demand to consult with our threat experts on relevant detections and adversaries.
 
 To enrol to Microsoft Threat Experts - Targeted Attack Notifications benefits, go to **Settings** > **General** > **Advanced features** > **Microsoft Threat Experts - Targeted Attack Notifications** to apply. Once accepted, you will get the benefits of Targeted Attack Notifications.
-
-To subscribe to Microsoft Threat Experts - Experts on Demand, contact your Microsoft representative. 
 
 See [Configure Microsoft Threat Experts capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts#before-you-begin) for details. 
 
@@ -65,7 +63,6 @@ Customers can engage our security experts directly from within Microsoft Defende
 - Get additional clarification on alerts including root cause or scope of the incident 
 - Gain clarity into suspicious device behavior and next steps if faced with an advanced attacker  
 - Determine risk and protection regarding threat actors, campaigns, or emerging attacker techniques 
-- Seamlessly transition to Microsoft Incident Response (IR) or other third-party Incident Response services when necessary 
 
 The option to **Consult a threat expert** is available in several places in the portal so you can engage with experts in the context of your investigation:
 
@@ -82,7 +79,7 @@ The option to **Consult a threat expert** is available in several places in the 
 ![Screenshot of MTE-EOD file page action menu option](images/mte-eod-file.png)
 
 > [!NOTE]
-> If your Premier Support subscription is mapped to your Microsoft Defender for Office 365 license, you can track the status of your Experts on Demand cases through Microsoft Services Hub. 
+> If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Technical Account Manager. 
 
 Watch this video for a quick overview of the Microsoft Services Hub.
 
