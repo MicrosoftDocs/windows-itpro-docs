@@ -58,9 +58,12 @@ If you're already a Defender for Endpoint customer, you can apply through the Mi
 
 When accepted, you will receive a welcome email and you will see the **Apply** button change to a toggle that is “on”. In case you want to take yourself out of the Targeted Attack Notifications service, slide the toggle “off” and click **Save preferences** at the bottom of the page. 
 
-## Receive targeted attack notification from Microsoft Threat Experts 
+## View targeted attack notification from Microsoft Threat Experts 
 You can receive targeted attack notification from Microsoft Threat Experts through the following medium:  
+- The Defender for Endpoint portal's **Incidents** page 
 - The Defender for Endpoint portal's **Alerts** dashboard  
+- OData alerting [API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-alerts) and [REST API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- [DeviceAlertEvents](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) table in Advanced hunting
 - Your email, if you choose to configure it 
 
 To receive targeted attack notifications through email, create an email notification rule.
