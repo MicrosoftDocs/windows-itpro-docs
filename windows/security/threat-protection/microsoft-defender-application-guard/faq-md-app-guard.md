@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 01/21/2021
+ms.date: 02/25/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -36,7 +36,7 @@ We recommend 8-GB RAM for optimal performance but you can use the following regi
 
 In Windows 10 Enterprise edition 1803, users are able to download documents from the isolated Application Guard container to the host PC. This capability is managed by policy.
 
-In Windows 10 Enterprise edition 1709 or Windows 10 Professional edition 1803, it is not possible to download files from the isolated Application Guard container to the host PC. However, employees can use the **Print as PDF** or **Print as XPS** options and save those files to the host device. 
+In Windows 10 Enterprise edition 1709 or Windows 10 Professional edition 1803, it is not possible to download files from the isolated Application Guard container to the host device. However, employees can use the **Print as PDF** or **Print as XPS** options and save those files to the host device. 
 
 ### Can employees copy and paste between the host device and the Application Guard Edge session? 
 
@@ -46,9 +46,9 @@ Depending on your organization's settings, employees can copy and paste images (
 
 To help keep the Application Guard Edge session secure and isolated from the host device, we don't copy the Favorites stored in the Application Guard Edge session back to the host device. 
 
-### Why aren’t employees able to see their Extensions in the Application Guard Edge session?
+### Why aren’t employees able to see their extensions in the Application Guard Edge session?
 
-Currently, the Application Guard Edge session doesn't support Extensions. However, we're closely monitoring your feedback about this. 
+Currently, the Application Guard Edge session doesn't support extensions. However, we're closely monitoring your feedback about this. 
 
 ### How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)? 
 
@@ -80,7 +80,7 @@ This account is part of Application Guard beginning with Windows 10, version 170
 
 ### How do I trust a subdomain in my site list?                          
 
-To trust a subdomain, you must precede your domain with two dots, for example: `..contoso.com` ensures that `mail.contoso.com` or `news.contoso.com` are trusted. The first dot represents the strings for the subdomain name (mail or news), the second dot recognizes the start of the domain name (`contoso.com`). This prevents sites such as `fakesitecontoso.com` from being trusted.
+To trust a subdomain, you must precede your domain with two dots. For example: `..contoso.com` ensures that `mail.contoso.com` or `news.contoso.com` are trusted. The first dot represents the strings for the subdomain name (mail or news), the second dot recognizes the start of the domain name (`contoso.com`). This prevents sites such as `fakesitecontoso.com` from being trusted.
 
 ### Are there differences between using Application Guard on Windows Pro vs Windows Enterprise? 
 
@@ -161,7 +161,7 @@ ICS is enabled by default in Windows, and ICS must be enabled in order for Appli
 5. Reboot the device.
 
 ### Why doesn't the container fully load when device control policies are enabled?
-Allow-listed items must be configured as "allowed" in the Group Policy Object ensure AppGuard works properly. 
+Allow-listed items must be configured as "allowed" in the Group Policy Object to ensure Application Guard works properly. This is a prerequisite. If the device installations have already been blocked by device control policies, the OS must be reinstalled to resolve this issue.
 
 Policy: Allow installation of devices that match any of these device IDs 
 - `SCSI\DiskMsft____Virtual_Disk____` 
