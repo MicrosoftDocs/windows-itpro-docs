@@ -36,11 +36,6 @@ Microsoft Threat Experts is a managed threat hunting service that provides your 
   
 This managed threat hunting service provides expert-driven insights and data through these two capabilities: targeted attack notification and access to experts on demand.
 
-Watch this video for a quick overview of Microsoft Threat Experts.
-
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qZ0B]
-
-
 ## Before you begin 
 > [!NOTE]
 > Discuss the eligibility requirements with your Microsoft Technical Service provider and account team before you apply to the managed threat hunting service.
