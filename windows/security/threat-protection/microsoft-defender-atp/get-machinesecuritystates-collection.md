@@ -4,7 +4,7 @@ description: Retrieve a collection of device security states using Microsoft Def
 keywords: apis, graph api, supported apis, get, device, security, state
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,8 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: M365-security-compliance 
+ms.topic: article 
 ---
 
 # Get Machines security states collection API
@@ -60,8 +59,9 @@ If successful - 200 OK.
 
 Here is an example of the request.
 
-```http
+```
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
+Content-type: application/json
 ```
 
 **Response**
@@ -69,7 +69,9 @@ GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
 Here is an example of the response.
 Field *id* contains device id and equal to the field *id** in devices info. 
 
-```json
+```
+HTTP/1.1 200 OK
+Content-type: application/json
 {
     "@odata.context":"https://graph.microsoft.com/testwdatppreview/$metadata#MachineSecurityStates",
     "@odata.count":444,

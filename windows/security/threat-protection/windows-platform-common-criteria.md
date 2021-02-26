@@ -22,6 +22,14 @@ Microsoft is committed to optimizing the security of its products and services. 
 
 The product releases below are currently certified against the cited Protection Profile, as listed on the [Common Criteria Portal](https://www.commoncriteriaportal.org/products/).  The Security Target describes the product edition(s) in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation.  The Administrative Guide provides guidance on configuring the product to match the evaluated configuration.  The Certification Report or Validation Report documents the results of the evaluation by the validation team, with the Assurance Activity Report providing details on the evaluator's actions.
 
+### Microsoft Windows Server, Windows 10 version 1909 (November 2019 Update), Microsoft Windows Server 2019 (version 1809) Hyper-V
+Certified against the Protection Profile for Virtualization, including the Extended Package for Server Virtualization.
+
+- [Security Target](https://download.microsoft.com/download/5/f/6/5f6efbb4-88a0-4161-953d-de07450b7107/Windows%20+%20Windows%20Server%201909,%20Windows%20Server%202019%20Hyper-V%20Security%20Target.pdf)
+- [Administrative Guide](https://download.microsoft.com/download/7/5/0/750db292-f3d3-48c9-9557-aa64237a0e22/Virtualization%201909%20Administrative%20Guide.pdf)
+- [Validation Report](https://download.microsoft.com/download/4/7/6/476ca991-631d-4943-aa89-b0cd4f448d14/Windows%20+%20Windows%20Server%201909,%20Windows%20Server%202019%20Hyper-V%20Validation%20Report.pdf)
+- [Assurance Activities Report](https://download.microsoft.com/download/3/b/4/3b4818d8-62a1-4b8d-8cb4-9b3256564355/Windows%20+%20Windows%20Server%201909,%20Windows%20Server%202019%20Hyper-V%20Assurance%20Activity%20Report.pdf)
+
 ### Microsoft Windows 10 and Windows Server (November 2019 Update, version 1909)
 Certified against the Protection Profile for General Purpose Operating Systems, including the Extended Package for Wireless Local Area Network Clients and the Module for Virtual Private Network Clients.
 
