@@ -131,7 +131,7 @@ In the Microsoft Defender Firewall user interface go through the following steps
 1. Right click on inbound rules, create a new rule.
 2. Choose **custom rule**.
 3. Program path: `%SystemRoot%\System32\svchost.exe`.
-4. Protocol Type: UDP, Specific ports: 67, Remote port: any.
+4. Protocol Type: UDP, Specific ports: 68, Remote port: any.
 5. Any IP addresses.
 6. Allow the connection.
 7. All profiles.
