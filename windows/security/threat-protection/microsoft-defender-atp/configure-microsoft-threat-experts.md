@@ -78,7 +78,7 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 
 2. From the dashboard, select the same alert topic that you got from the email, to view the details.  
 
-## Subscribe ro Microsoft Threat Experts - Experts on Demand
+## Subscribe to Microsoft Threat Experts - Experts on Demand
 If you're already a Defender for Endpoint customer, you can contact your Microsoft representative to subscribe to Microsoft Threat Experts - Experts on Demand. 
 
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization 
