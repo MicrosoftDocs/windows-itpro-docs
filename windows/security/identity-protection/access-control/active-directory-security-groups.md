@@ -1853,7 +1853,7 @@ The Enterprise Key Admins group was introduced in Windows Server 2016.
 | Default container | CN=Users, DC=&lt;domain&gt;, DC= |
 | Default members | None |
 | Default member of | None |
-| Protected by ADMINSDHOLDER? | No |
+| Protected by ADMINSDHOLDER? | Yes |
 | Safe to move out of default container? | Yes |
 | Safe to delegate management of this group to non-Service admins? | No |
 | Default User Rights | None |
@@ -2331,7 +2331,7 @@ The Key Admins group applies to versions of the Windows Server operating system 
 | Default container | CN=Users, DC=&lt;domain&gt;, DC= |
 | Default members | None |
 | Default member of | None |
-| Protected by ADMINSDHOLDER? | No |
+| Protected by ADMINSDHOLDER? | Yes |
 | Safe to move out of default container? | Yes |
 | Safe to delegate management of this group to non-Service admins? | No |
 | Default User Rights | None |
