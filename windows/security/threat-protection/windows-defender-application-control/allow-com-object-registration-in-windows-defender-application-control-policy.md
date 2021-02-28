@@ -92,4 +92,55 @@ Example 3: Allows a specific COM object to register in PowerShell
   </Value>
 </Setting>
 ```
+### How to configure the settings for the CLSIDs
+For example, you get an error in the Event Viewer (Application and Service Logs > Microsoft > Windows > AppLocker > MSI and Script) like below:
+
+Log Name:      Microsoft-Windows-AppLocker/MSI and Script
+Source:        Microsoft-Windows-AppLocker
+Date:          11/11/2020 1:18:11 PM
+Event ID:      8036
+Task Category: None
+Level:         Error
+Keywords:      
+User:          S-1-5-21-3340858017-3068726007-3466559902-3647
+Computer:     contoso.com
+Description:
+{f8d253d9-89a4-4daa-87b6-1168369f0b21} was prevented from running due to Config CI policy.
+Event Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-AppLocker" Guid="{cbda4dbf-8d5d-4f69-9578-be14aa540d22}" />
+    <EventID>8036</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2020-11-11T19:18:11.4029179Z" />
+    <EventRecordID>819347</EventRecordID>
+    <Correlation ActivityID="{61e3e871-adb0-0047-c9cc-e761b0add601}" />
+    <Execution ProcessID="21060" ThreadID="23324" />
+    <Channel>Microsoft-Windows-AppLocker/MSI and Script</Channel>
+    <Computer>contoso.com</Computer>
+    <Security UserID="S-1-5-21-3340858017-3068726007-3466559902-3647" />
+  </System>
+  <EventData>
+    <Data Name="IsApproved">false</Data>
+    <Data Name="CLSID">{f8d253d9-89a4-4daa-87b6-1168369f0b21}</Data>
+  </EventData>
+</Event>
+
+To add this CLSID to the existing policy, follow the steps below,
+1. Open the Powershell ISE with administrative priviledge.
+2. Now from the admin powershell ISE, type this command and run it. Considering the name of the policy is WDAC_policy.xml .                                                                                                                                    
+PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\WDAC_policy.xml -Key 8856f961-340a-11d0-a96b-00c04fd705a2 -Provider WSH -Value True -ValueName EnterpriseDefinedClsId -ValueType Boolean
+
+Once the command is run, you will find that the following section is added to the policy xml.
+
+  <Settings>
+    <Setting Provider="WSH" Key="8856f961-340a-11d0-a96b-00c04fd705a2" ValueName="EnterpriseDefinedClsId">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
 
