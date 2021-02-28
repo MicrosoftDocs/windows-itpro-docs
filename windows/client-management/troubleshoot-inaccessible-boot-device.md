@@ -37,7 +37,7 @@ Any one of the following factors might cause the stop error:
 
 * Corrupted files in the **Boot**  partition (for example, corruption in the volume that's labeled **SYSTEM**  when you run the `diskpart`  > `list vol`  command)
 
-* If there is a blank GPT entry before the entry of the boot partition.
+* If there is a blank GPT entry before the entry of the **Boot** partition.
 
 ## Troubleshoot this error
 
