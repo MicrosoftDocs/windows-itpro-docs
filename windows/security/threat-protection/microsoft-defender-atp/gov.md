@@ -116,7 +116,7 @@ Spreadsheet of domains list | Description
 :-----|:-----
 ![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/> | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
 
-See [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md) for additional details.
+For more information, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 > [!NOTE]
 > The spreadsheet contains commercial URLs as well, make sure you check the "US Gov" tabs. <br> When filtering look for the records labeled as "US Gov" and your specific cloud under the geography column.
