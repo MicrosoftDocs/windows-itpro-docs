@@ -110,7 +110,7 @@ Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../ima
 
 ## Required connectivity settings
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed in the downloadable sheet to the allowed domains list.
-The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs your network must be able to connect to. Verify there are no firewall or network filtering rules that would deny access to these URLs, or create an *allow* rule specifically for them.
 
 Spreadsheet of domains list | Description
 :-----|:-----
