@@ -18,7 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-symantecmigrate
 ms.topic: article
-ms.date: 02/11/2021
+ms.date: 02/18/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
@@ -89,7 +89,7 @@ Now that you're moving from Symantec to Microsoft Defender for Endpoint, you'll 
 Because your organization is still using Symantec, you must set Microsoft Defender Antivirus to passive mode. That way, Symantec and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Microsoft Defender for Endpoint.
 
 1. Open Registry Editor, and then navigate to <br/>
-   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
+   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
    - Set the DWORD's value to **1**.
    - Under **Base**, select **Hexadecimal**.
