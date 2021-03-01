@@ -93,6 +93,10 @@ When saved, a new custom detection rule immediately runs and checks for matches 
 - **Every 3 hours**—runs every 3 hours, checking data from the past 6 hours
 - **Every hour**—runs hourly, checking data from the past 2 hours
 
+> [!IMPORTANT]
+>When changing a query that is already scheduled as a Custom Detection, it's next immediate execution will have a lookback window of 30 days, exactly as if a new query was being created. 
+>Changes to a large number of queries, and with time filters higher than the default lookback durantion for the selected frequency, might have an impact in the overall quota consumption of Advanced Hunting and resulting in exhausting the daily quota.
+
 > [!TIP]
 > Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.
 

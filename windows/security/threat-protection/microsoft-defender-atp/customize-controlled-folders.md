@@ -157,6 +157,9 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications]
 
 Microsoft Defender for Endpoint certificate and file indicators can allow signed executable files to access protected folders. For implementation details, see [Create indicators based on certificates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates).
 
+> [!Note]
+> This does no apply to scripting engines, including Powershell
+
 ## Customize the notification
 
 For more information about customizing the notification when a rule is triggered and blocks an app or file, see [Configure alert notifications in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications).
