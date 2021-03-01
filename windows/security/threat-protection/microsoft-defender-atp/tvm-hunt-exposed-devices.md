@@ -38,9 +38,12 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 ### Schema tables
 
-- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - Inventory of software installed on devices, including their version information and end-of-support status
+- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - A complete list of all software on your devices, whether or not they have any vulnerabilities.
+    - You'll have a single row for each software installed on every device.
+    - EndOfSupportStatus and EndOfSupportDate will have the end-of-support state (if applicable) for specific software versions installed on devices.
 
-- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - Software vulnerabilities found on devices and the list of available security updates that address each vulnerability
+- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - Discover vulnerabilities (CVEs) in existing software across all your devices. 
+    - RecommendedSecurityUpdate and RecommendedSecurityUpdateId will have missing security updates or KBs for installed software.
 
 - [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available
 
