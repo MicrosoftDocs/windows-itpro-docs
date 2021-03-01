@@ -106,6 +106,7 @@ Computer:     contoso.com
 Description:
 {f8d253d9-89a4-4daa-87b6-1168369f0b21} was prevented from running due to Config CI policy.
 Event Xml:
+```XML
 <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
   <System>
     <Provider Name="Microsoft-Windows-AppLocker" Guid="{cbda4dbf-8d5d-4f69-9578-be14aa540d22}" />
@@ -128,6 +129,8 @@ Event Xml:
     <Data Name="CLSID">{f8d253d9-89a4-4daa-87b6-1168369f0b21}</Data>
   </EventData>
 </Event>
+```
+
 
 To add this CLSID to the existing policy, use the following steps:
 
