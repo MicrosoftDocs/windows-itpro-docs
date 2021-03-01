@@ -203,6 +203,7 @@
 #### [ADMX_EventForwarding](policy-csp-admx-eventforwarding.md)
 #### [ADMX_EventLog](policy-csp-admx-eventlog.md)
 #### [ADMX_Explorer](policy-csp-admx-explorer.md)
+#### [ADMX_FileRecovery](policy-csp-admx-filerecovery.md)
 #### [ADMX_FileServerVSSProvider](policy-csp-admx-fileservervssprovider.md)
 #### [ADMX_FileSys](policy-csp-admx-filesys.md)
 #### [ADMX_FolderRedirection](policy-csp-admx-folderredirection.md)
