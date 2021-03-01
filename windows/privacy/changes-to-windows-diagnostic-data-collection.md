@@ -30,7 +30,7 @@ This topic is meant for IT administrators and explains the changes Windows is ma
 - [Behavioral changes](#behaviorial-changes)
 
 > [!NOTE]
-> You can test the behavioral changes now in Windows 10 Insider Preview build 19577 and later.
+> You can test the behavioral changes now in Windows 10 Insider Preview build 21313 and later.
 
 ## Summary of changes
 
