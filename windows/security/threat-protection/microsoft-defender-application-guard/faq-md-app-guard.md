@@ -136,8 +136,9 @@ In the Microsoft Defender Firewall user interface, take the following steps:
 5. Any IP addresses.
 6. Allow the connection.
 7. All profiles.
-8. The new rule should show up in the user interface. Right click on the **rule** > **properties**.
-9. In the **Programs and services** tab, Under the **Services** section click on **settings**. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
+8. The new rule should show up in the user interface. Right-click on the rule, and then select **Properties**.
+9. In the **Programs and services** tab, under **Services**, select **settings**. 
+10. Choose **Apply to this Service**, and then select **Internet Connection Sharing (ICS) Shared Access**.
 
 ## Why can I not launch Application Guard when Exploit Guard is enabled?
 
