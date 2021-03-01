@@ -63,7 +63,7 @@ You can receive targeted attack notification from Microsoft Threat Experts throu
 - The Defender for Endpoint portal's **Incidents** page 
 - The Defender for Endpoint portal's **Alerts** dashboard  
 - OData alerting [API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-alerts) and [REST API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
-- [DeviceAlertEvents](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) table in Advanced hunting
+- [DeviceAlertEvents](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) table in Advanced hunting
 - Your email, if you choose to configure it 
 
 To receive targeted attack notifications through email, create an email notification rule.
