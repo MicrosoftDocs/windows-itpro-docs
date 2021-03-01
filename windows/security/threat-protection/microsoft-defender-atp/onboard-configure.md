@@ -60,7 +60,7 @@ Topic | Description
 :---|:---
 [Onboard previous versions of Windows](onboard-downlevel.md)| Onboard Windows 7 and Windows 8.1 devices to Defender for Endpoint. 
 [Onboard Windows 10 devices](configure-endpoints.md) | You'll need to onboard devices for it to report to the Defender for Endpoint service. Learn about the tools and methods you can use to configure devices in your enterprise.
-[Onboard servers](configure-server-endpoints.md) |  Onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) version 1803 and later, Windows Server 2019 and later, and Windows Server 2019 core edition to Defender for Endpoint 
+[Onboard servers](configure-server-endpoints.md) |  Onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) version 1803 and later, Windows Server 2019 and later, and Windows Server 2019 core edition to Defender for Endpoint.
 [Onboard non-Windows devices](configure-endpoints-non-windows.md) | Defender for Endpoint provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products' sensor data. 
 [Run a detection test on a newly onboarded device](run-detection-test.md) | Run a script on a newly onboarded device to verify that it is properly reporting to the Defender for Endpoint service.
 [Configure proxy and Internet settings](configure-proxy-internet.md)| Enable communication with the Defender for Endpoint cloud service by configuring the proxy and Internet connectivity settings.
