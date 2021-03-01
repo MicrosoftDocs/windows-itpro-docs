@@ -109,14 +109,15 @@ Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../ima
 <br>
 
 ## Required connectivity settings
-You'll need to ensure that traffic from the following are allowed:
+If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed in the downloadable sheet to the allowed domains list.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-Service location | DNS record
-:---|:---
-Common URLs for all locations (Global location) | `crl.microsoft.com`<br>`ctldl.windowsupdate.com`<br>`notify.windows.com`<br>`settings-win.data.microsoft.com` <br><br> Note: `settings-win.data.microsoft.com` is only needed on Windows 10 devices running version 1803 or earlier.
-Common URLs for all US Gov customers | `us4-v20.events.data.microsoft.com` <br>`*.blob.core.usgovcloudapi.net` 
-Defender for Endpoint GCC specific | `winatp-gw-usmt.microsoft.com`<br>`winatp-gw-usmv.microsoft.com`
-Defender for Endpoint GCC High & DoD (PREVIEW) specific | `winatp-gw-usgt.microsoft.com`<br>`winatp-gw-usgv.microsoft.com`
+Spreadsheet of domains list | Description
+:-----|:-----
+![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/> | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
+
+> [!NOTE]
+> The spreadsheet contains commercial URLs as well, make sure you check the "US Gov" tabs. <br> When filtering look for the records labeled as "US Gov" and your specific cloud under the geography column.
 
 <br>
 
