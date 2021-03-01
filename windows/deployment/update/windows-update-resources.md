@@ -6,7 +6,6 @@ ms.mktglfcycl:
 audience: itpro
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 09/18/2018
 ms.reviewer:
 manager: laurawi
 ms.topic: article
