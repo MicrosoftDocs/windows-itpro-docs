@@ -100,12 +100,14 @@ Date:          11/11/2020 1:18:11 PM
 Event ID:      8036
 Task Category: None
 Level:         Error
-Keywords:      
+Keywords:
 User:          S-1-5-21-3340858017-3068726007-3466559902-3647
-Computer:     contoso.com
+Computer:      contoso.com
 Description:
 {f8d253d9-89a4-4daa-87b6-1168369f0b21} was prevented from running due to Config CI policy.
-Event Xml:
+
+Event XML:
+
 ```XML
 <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
   <System>
