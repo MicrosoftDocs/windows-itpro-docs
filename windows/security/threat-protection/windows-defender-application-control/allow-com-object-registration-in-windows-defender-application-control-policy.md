@@ -136,10 +136,11 @@ PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\WDAC_
 
 Once the command is run, you will find that the following section is added to the policy xml.
 
+```XML
   <Settings>
     <Setting Provider="WSH" Key="8856f961-340a-11d0-a96b-00c04fd705a2" ValueName="EnterpriseDefinedClsId">
       <Value>
         <Boolean>true</Boolean>
       </Value>
     </Setting>
-
+```
