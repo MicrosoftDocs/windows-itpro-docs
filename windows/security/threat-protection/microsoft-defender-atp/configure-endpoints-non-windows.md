@@ -1,5 +1,5 @@
 ---
-title: Onboard non-Windows devices to the Microsoft Defender ATP service
+title: Onboard non-Windows devices to the Microsoft Defender for Endpoint service
 description: Configure non-Windows devices so that they can send sensor data to the Microsoft Defender ATP service.
 keywords: onboard non-Windows devices, macos, linux, device management, configure Windows ATP devices, configure Microsoft Defender Advanced Threat Protection devices
 search.product: eADQiWindows 10XVcnh
@@ -24,11 +24,12 @@ ms.technology: mde
 
 
 **Applies to:**
-
-- macOS
-- Linux
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+**Platforms**
+- macOS
+- Linux
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
