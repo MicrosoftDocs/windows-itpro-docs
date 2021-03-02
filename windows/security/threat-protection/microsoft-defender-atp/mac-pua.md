@@ -24,10 +24,12 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
 
 The potentially unwanted application (PUA) protection feature in Microsoft Defender for Endpoint for Mac can detect and block PUA files on endpoints in your network.
 
@@ -59,7 +61,7 @@ You can configure how PUA files are handled from the command line or from the ma
 In Terminal, execute the following command to configure PUA protection:
 
 ```bash
-mdatp --threat --type-handling potentially_unwanted_application [off|audit|block]
+mdatp threat policy set --type potentially_unwanted_application --action [off|audit|block]
 ```
 
 ### Use the management console to configure PUA protection:

@@ -28,6 +28,10 @@ ms.technology: mde
 **Applies to:**
 
 - [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This topic provides some general steps that can be used to narrow down performance issues related to Microsoft Defender for Endpoint for Mac.
 
@@ -43,13 +47,13 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     - From the user interface. Open Microsoft Defender for Endpoint for Mac and navigate to **Manage settings**.
 
-    ![Manage real-time protection screenshot](../microsoft-defender-antivirus/images/mdatp-36-rtp.png)
+      ![Manage real-time protection screenshot](../microsoft-defender-antivirus/images/mdatp-36-rtp.png)
 
     - From the Terminal. For security purposes, this operation requires elevation.
 
-    ```bash
-    mdatp --config realTimeProtectionEnabled false
-    ```
+      ```bash
+      mdatp config real-time-protection --value disabled
+      ```
 
     If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender for Endpoint for Mac](mac-preferences.md).
 

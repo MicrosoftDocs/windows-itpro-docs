@@ -24,14 +24,17 @@ ms.technology: mde
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+
 
 When you use [attack surface reduction rules](attack-surface-reduction.md) you may run into issues, such as:
 
-- A rule blocks a file, process, or performs some other action that it should not (false positive)
+- A rule blocks a file, process, or performs some other action that it shouldn't (false positive)
 
-- A rule does not work as described, or does not block a file or process that it should (false negative)
+- A rule doesn't work as described, or doesn't block a file or process that it should (false negative)
 
 There are four steps to troubleshooting these problems:
 
@@ -53,7 +56,7 @@ Attack surface reduction rules will only work on devices with the following cond
 
 - [Real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) is enabled.
 
-- Audit mode is not enabled. Use Group Policy to set the rule to **Disabled** (value: **0**) as described in [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
+- Audit mode isn't enabled. Use Group Policy to set the rule to **Disabled** (value: **0**) as described in [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
 If these prerequisites have all been met, proceed to the next step to test the rule in audit mode.
 
@@ -61,7 +64,7 @@ If these prerequisites have all been met, proceed to the next step to test the r
 
 You can visit the Windows Defender Test ground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm attack surface reduction rules are generally working for pre-configured scenarios and processes on a device, or you can use audit mode, which enables rules for reporting only.
 
-Follow these instructions in [Use the demo tool to see how attack surface reduction rules work](evaluate-attack-surface-reduction.md) to test the specific rule you are encountering problems with.
+Follow these instructions in [Use the demo tool to see how attack surface reduction rules work](evaluate-attack-surface-reduction.md) to test the specific rule you're encountering problems with.
 
 1. Enable audit mode for the specific rule you want to test. Use Group Policy to set the rule to **Audit mode** (value: **2**) as described in [Enable attack surface reduction rules](enable-attack-surface-reduction.md). Audit mode allows the rule to report the file or process, but will still allow it to run.
 
@@ -69,19 +72,19 @@ Follow these instructions in [Use the demo tool to see how attack surface reduct
 
 3. [Review the attack surface reduction rule event logs](attack-surface-reduction.md) to see if the rule would have blocked the file or process if the rule had been set to **Enabled**.
 
-If a rule is not blocking a file or process that you are expecting it should block, first check if audit mode is enabled.
+If a rule isn't blocking a file or process that you're expecting it should block, first check if audit mode is enabled.
 
 Audit mode may have been enabled for testing another feature, or by an automated PowerShell script, and may not have been disabled after the tests were completed.
 
-If you've tested the rule with the demo tool and with audit mode, and attack surface reduction rules are working on pre-configured scenarios, but the rule is not working as expected, proceed to either of the following sections based on your situation:
+If you've tested the rule with the demo tool and with audit mode, and attack surface reduction rules are working on pre-configured scenarios, but the rule isn't working as expected, proceed to either of the following sections based on your situation:
 
-1. If the attack surface reduction rule is blocking something that it should not block (also known as a false positive), you can [first add an attack surface reduction rule exclusion](#add-exclusions-for-a-false-positive).
+1. If the attack surface reduction rule is blocking something that it shouldn't block (also known as a false positive), you can [first add an attack surface reduction rule exclusion](#add-exclusions-for-a-false-positive).
 
-2. If the attack surface reduction rule is not blocking something that it should block (also known as a false negative), you can proceed immediately to the last step, [collecting diagnostic data and submitting the issue to us](#collect-diagnostic-data-for-file-submissions).
+2. If the attack surface reduction rule isn't blocking something that it should block (also known as a false negative), you can proceed immediately to the last step, [collecting diagnostic data and submitting the issue to us](#collect-diagnostic-data-for-file-submissions).
 
 ## Add exclusions for a false positive
 
-If the attack surface reduction rule is blocking something that it should not block (also known as a false positive), you can add exclusions to prevent attack surface reduction rules from evaluating the excluded files or folders.
+If the attack surface reduction rule is blocking something that it shouldn't block (also known as a false positive), you can add exclusions to prevent attack surface reduction rules from evaluating the excluded files or folders.
 
 To add an exclusion, see [Customize Attack surface reduction](customize-attack-surface-reduction.md).
 
@@ -95,12 +98,12 @@ Use the [Windows Defender Security Intelligence web-based submission form](https
 
 ## Collect diagnostic data for file submissions
 
-When you report a problem with attack surface reduction rules, you are asked to collect and submit diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues.
+When you report a problem with attack surface reduction rules, you're asked to collect and submit diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues.
 
 1. Open an elevated command prompt and change to the Windows Defender directory:
 
    ```console
-   cd c:\program files\windows defender
+   cd "c:\program files\windows defender"
    ```
 
 2. Run this command to generate the diagnostic logs:
@@ -109,7 +112,7 @@ When you report a problem with attack surface reduction rules, you are asked to 
    mpcmdrun -getfiles
    ```
 
-3. By default, they are saved to `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`. Attach the file to the submission form.
+3. By default, they're saved to `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`. Attach the file to the submission form.
 
 ## Related articles
 

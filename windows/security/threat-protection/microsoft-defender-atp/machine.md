@@ -21,10 +21,11 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -58,17 +59,19 @@ computerDnsName | String | [machine](machine.md) fully qualified name.
 firstSeen | DateTimeOffset | First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.
 lastSeen | DateTimeOffset |Time and date of the last received full device report. A device typically sends a full report every 24 hours.
 osPlatform | String | Operating system platform.
+osProcessor | String | Operating system processor.
 version | String | Operating system Version.
 osBuild | Nullable long | Operating system build number.
 lastIpAddress | String | Last IP on local NIC on the [machine](machine.md).
 lastExternalIpAddress | String | Last IP through which the [machine](machine.md) accessed the internet.
 healthStatus | Enum | [machine](machine.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" and "Unknown". 
 rbacGroupName | String | Machine group Name.
-rbacGroupId | Int | Machine group unique ID.
 riskScore | Nullable Enum | Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.
 exposureScore | Nullable Enum | [Exposure score](tvm-exposure-score.md) as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.
 aadDeviceId | Nullable representation Guid | AAD Device ID (when [machine](machine.md) is AAD Joined).
 machineTags | String collection | Set of [machine](machine.md) tags.
 exposureLevel | Nullable Enum | Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.
 deviceValue | Nullable Enum | The [value of the device](tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.
+ipAddresses | IpAddress collection | Set of ***IpAddress*** objects. See [Get machines API](get-machines.md).
+
 

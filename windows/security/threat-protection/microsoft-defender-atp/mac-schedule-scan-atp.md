@@ -24,6 +24,11 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 While you can start a threat scan at any time with Microsoft Defender for Endpoint, your enterprise might benefit from scheduled or timed scans. For example, you can schedule a scan to run at the beginning of every workday or week. 
 
@@ -47,7 +52,7 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
         <array>
             <string>sh</string>
             <string>-c</string>
-            <string>/usr/local/bin/mdatp --scan --quick</string>
+            <string>/usr/local/bin/mdatp scan quick</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
@@ -62,8 +67,6 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
             <key>Weekday</key>
             <integer>5</integer>
         </dict>
-        <key>StartInterval</key>
-        <integer>604800</integer>
         <key>WorkingDirectory</key>
         <string>/usr/local/bin/</string>
     </dict>
@@ -73,7 +76,7 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
 2. Save the file as *com.microsoft.wdav.schedquickscan.plist*.
 
     > [!TIP]
-    > To run a full scan instead of a quick scan, change line 12, `<string>/usr/local/bin/mdatp --scan --quick</string>`, to use the `--full` option instead of `--quick` (i.e. `<string>/usr/local/bin/mdatp --scan --full</string>`) and save the file as *com.microsoft.wdav.sched**full**scan.plist* instead of *com.microsoft.wdav.sched**quick**scan.plist*.
+    > To run a full scan instead of a quick scan, change line 12, `<string>/usr/local/bin/mdatp scan quick</string>`, to use the `full` option instead of `quick` (i.e. `<string>/usr/local/bin/mdatp scan full</string>`) and save the file as *com.microsoft.wdav.sched**full**scan.plist* instead of *com.microsoft.wdav.sched**quick**scan.plist*.
 
 3. Open **Terminal**.
 4. Enter the following commands to load your file:
@@ -85,7 +88,7 @@ You can create a scanning schedule using the *launchd* daemon on a macOS device.
 
 5. Your scheduled scan will run at the date, time, and frequency you defined in your p-list. In the example, the scan runs at 2:00 AM every Friday. 
 
-    Note that the `StartInterval` value is in seconds, indicating that scans should run every 604,800 seconds (one week), while the `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday.
+    The `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday.
 
  > [!IMPORTANT]
  > Agents executed with *launchd* will not run at the scheduled time while the device is asleep. They will instead run once the device resumes from sleep mode.

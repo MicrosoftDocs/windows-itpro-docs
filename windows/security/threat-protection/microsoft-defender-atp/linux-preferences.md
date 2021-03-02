@@ -27,8 +27,10 @@ ms.technology: mde
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 >[!IMPORTANT]
 >This topic contains instructions for how to set preferences for Defender for Endpoint for Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, see [Resources](linux-resources.md#configure-from-the-command-line).
@@ -242,6 +244,16 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 | **Data type** | String |
 | **Possible values** | 10000 (default). Allowed values are from 5000 items to 15000 items. |
 | **Comments** | Available in Defender for Endpoint version 101.04.76 or higher. |
+
+#### Maximum on-demand scan threads
+
+Specify the maximum number of CPUs used during scheduled scans.
+|||
+|:---|:---|
+| **Key** | maximumOnDemandScanThreads |
+| **Data type** | String |
+| **Possible values** | 1 to use only 1 CPU. 2 to use 2 CPUs. |
+| **Comments** | Setting this configuration will limit the CPU usage during scheduled scans. |
 
 ### Cloud-delivered protection preferences
 
