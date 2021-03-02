@@ -16,10 +16,9 @@ ms.date: 09/27/2019
 
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
 
-> [!Note]
-> Windows Holographic only supports per-user configuration of the EnterpriseModernAppManagement CSP.
-
 The following image shows the EnterpriseModernAppManagement configuration service provider in tree format.
+
+test changes
 
 ![enterprisemodernappmanagement csp diagram](images/provisioning-csp-enterprisemodernappmanagement.png)
 
@@ -29,7 +28,7 @@ For user context, use **./User/Vendor/MSFT** path and for device context, use **
 > [!Note]
 > Windows Holographic and Windows 10 Mobile only support per-user configuration of the EnterpriseModernAppManagement CSP.
 
-<a href="" id="appmanagement"></a>**AppManagement**  
+<a href="" id="appmanagement"></a>**AppMgmt**  
 Required. Used for inventory and app management (post-install).
 
 <a href="" id="appmanagement-updatescan"></a>**AppManagement/UpdateScan**  
