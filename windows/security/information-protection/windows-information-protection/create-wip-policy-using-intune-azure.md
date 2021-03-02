@@ -426,9 +426,7 @@ Specify the cloud resources to be treated as corporate and protected by WIP.
 For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource.
 Be aware that all traffic routed through your Internal proxy servers is considered enterprise.
 
-Separate multiple resources with the "|" delimiter. 
-If you don’t use proxy servers, you must also include the "," delimiter just before the "|". 
-For example: 
+Separate multiple resources with the "|" delimiter. For example: 
 
 ```console
 URL <,proxy>|URL <,proxy>
@@ -458,7 +456,7 @@ contoso.sharepoint.com,contoso.internalproxy1.com|contoso.visualstudio.com,conto
 Value format without proxy:
 
 ```console
-contoso.sharepoint.com,|contoso.visualstudio.com,|contoso.onedrive.com,
+contoso.sharepoint.com|contoso.visualstudio.com|contoso.onedrive.com
 ```
 
 ### Protected domains
