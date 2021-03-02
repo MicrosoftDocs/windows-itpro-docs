@@ -68,7 +68,7 @@ Microsoft Defender for Endpoint utilized `audit` framework from linux to track n
     service auditd start
     ```
 
-**On SLES15** systems, SYSCALL auditing in `auditd` is disabled by default and can explain missing events.
+**On SLES 12 and 15** systems, SYSCALL auditing in `auditd` is disabled by default and can explain missing events.
 
 1. To validate that SYSCALL auditing is not disabeld, list the current audit rules:
 
