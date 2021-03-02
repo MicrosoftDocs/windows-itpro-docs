@@ -172,7 +172,7 @@ Microsoft uses specific categories and the category definitions to classify soft
 
 * **Advertising software:** Software that displays advertisements or promotions, or prompts you to complete surveys for other products or services in software other than itself. This includes software that inserts advertisements to webpages.
 
-* **Torrent software:** Software that is used to create or download torrents or other files specifically used with peer-to-peer file-sharing technologies.
+* **Torrent software (Enterprise only):** Software that is used to create or download torrents or other files specifically used with peer-to-peer file-sharing technologies.
 
 * **Cryptomining software:** Software that uses your device resources to mine cryptocurrencies.
 
