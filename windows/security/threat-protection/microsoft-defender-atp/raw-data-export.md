@@ -33,6 +33,9 @@ ms.technology: mde
 
 Defender for Endpoint supports streaming all the events available through [Advanced Hunting](advanced-hunting-overview.md) to an [Event Hubs](https://docs.microsoft.com/azure/event-hubs/) and/or [Azure storage account](https://docs.microsoft.com/azure/event-hubs/).
 
+> [!NOTE]
+> If you are using an Azure Active Directory group to manage Administrator access, you must also have The `Security Administrator` role in Azure Active Directory for this configuration
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
 
