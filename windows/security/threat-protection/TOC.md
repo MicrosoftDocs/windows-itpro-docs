@@ -234,7 +234,7 @@
 
 ### [Microsoft Defender for Endpoint for Mac]()
 #### [Overview of Microsoft Defender for Endpoint for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
-#### [What's New](microsoft-defender-atp/mac-whatsnew.md)
+#### [What's new in Microsoft Defender for Endpoint for Mac](microsoft-defender-atp/mac-whatsnew.md)
 
 #### [Deploy]()
 ##### [Microsoft Intune-based deployment](microsoft-defender-atp/mac-install-with-intune.md)
@@ -269,6 +269,7 @@
 
 ### [Microsoft Defender for Endpoint for iOS]()
 #### [Overview of Microsoft Defender for Endpoint for iOS](microsoft-defender-atp/microsoft-defender-atp-ios.md)
+#### [What's new in Microsoft Defender for Endpoint for iOS](microsoft-defender-atp/ios-whatsnew.md)
 
 #### [Deploy]()
 ##### [Deploy Microsoft Defender for Endpoint for iOS via Intune](microsoft-defender-atp/ios-install.md)
