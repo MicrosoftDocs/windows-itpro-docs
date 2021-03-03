@@ -20,8 +20,8 @@ ms.reviewer:
 # Configure Hybrid Windows Hello for Business: Directory Synchronization
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Hybrid deployment
+- Windows 10, version 1703 or later
+- Hybrid deployment
 -   Certificate Trust
 
 
