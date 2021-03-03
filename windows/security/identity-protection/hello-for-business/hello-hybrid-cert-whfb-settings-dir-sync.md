@@ -22,7 +22,7 @@ ms.reviewer:
 **Applies to**
 -   Windows 10, version 1703 or later
 -   Hybrid deployment
--   Key trust
+-   Certificate Trust
 
 
 ## Directory Synchronization
