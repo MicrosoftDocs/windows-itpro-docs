@@ -76,8 +76,14 @@ Now that you're moving from Symantec to Microsoft Defender for Endpoint, you'll 
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
 
+#### Are you using Windows Server 2016?
+
+If you're using Windows Server 2016 and are having trouble enabling Microsoft Defender Antivirus, use the following PowerShell cmdlet:
+
+`mpcmdrun -wdenable`
+
 > [!TIP]
-> Need help? See [Microsoft Defender Antivirus on Windows Server 2016 and 2019](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
+> Still need help? See [Microsoft Defender Antivirus on Windows Server 2016 and 2019](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
