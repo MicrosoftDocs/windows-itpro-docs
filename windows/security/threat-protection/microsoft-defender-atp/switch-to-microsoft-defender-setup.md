@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 02/18/2021
+ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -29,10 +29,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-|[![Phase 1: Prepare1](images/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare2](switch-to-microsoft-defender-prepare.md) |![Phase 2: Set up](images/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard1](images/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard2](switch-to-microsoft-defender-onboard.md) |
-|[![Phase 1: Prepare3](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare4](switch-to-microsoft-defender-prepare.md) |![Phase 2: Set up2](images/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard4](switch-to-microsoft-defender-onboard.md) |
+|[![Phase 1: Prepare](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md) |![Phase 2: Set up](images/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md) |
 |--|--|--|
 ||*You are here!* | |
 
@@ -92,8 +89,14 @@ The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/d
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
 
+#### Are you using Windows Server 2016?
+
+If you're using Windows Server 2016 and are having trouble enabling Microsoft Defender Antivirus, use the following PowerShell cmdlet:
+
+`mpcmdrun -wdenable`
+
 > [!TIP]
-> Need help? See [Microsoft Defender Antivirus on Windows Server](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
+> Still need help? See [Microsoft Defender Antivirus on Windows Server](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
