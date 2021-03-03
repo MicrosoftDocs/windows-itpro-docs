@@ -1,7 +1,7 @@
 ---
 title: Onboard non-persistent virtual desktop infrastructure (VDI) devices
 description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to Microsoft Defender ATP the service.
-keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Windows ATP endpoints, configure Microsoft Defender Advanced Threat Protection endpoints
+keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Windows ATP endpoints, configure Microsoft Defender for Endpoint endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

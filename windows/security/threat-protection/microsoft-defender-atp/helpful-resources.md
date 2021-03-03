@@ -1,6 +1,6 @@
 ---
-title: Helpful Microsoft Defender Advanced Threat Protection resources
-description: Access helpful resources such as links to blogs and other resources related to  Microsoft Defender Advanced Threat Protection
+title: Helpful Microsoft Defender for Endpoint resources
+description: Access helpful resources such as links to blogs and other resources related to  Microsoft Defender for Endpoint
 keywords: Microsoft Defender Security Center, product brief, brief, capabilities, licensing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender ATP APIs connection to Power BI
 ms.reviewer: 
-description: Create a Power Business Intelligence (BI) report on top of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
+description: Create a Power Business Intelligence (BI) report on top of Microsoft Defender for Endpoint APIs.
 keywords: apis, supported apis, Power BI, reports
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security

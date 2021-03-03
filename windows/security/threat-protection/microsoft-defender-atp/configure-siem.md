@@ -1,5 +1,5 @@
 ---
-title: Pull detections to your SIEM tools from Microsoft Defender Advanced Threat Protection
+title: Pull detections to your SIEM tools from Microsoft Defender for Endpoint
 description: Learn how to use REST API and configure supported security information and events management tools to receive and pull detections.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
 search.product: eADQiWindows 10XVcnh

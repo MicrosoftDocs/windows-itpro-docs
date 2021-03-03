@@ -1,6 +1,6 @@
 ---
 title: List machineActions API
-description: Learn how to use the List MachineActions API to retrieve a collection of Machine Actions in Microsoft Defender Advanced Threat Protection.
+description: Learn how to use the List MachineActions API to retrieve a collection of Machine Actions in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, machineaction collection
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
