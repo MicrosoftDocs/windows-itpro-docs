@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Security Center
-description: Microsoft Defender Security Center is the portal where you can access Microsoft Defender Advanced Threat Protection.
+description: Microsoft Defender Security Center is the portal where you can access Microsoft Defender for Endpoint.
 keywords: windows, defender, security, center, defender, advanced, threat, protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

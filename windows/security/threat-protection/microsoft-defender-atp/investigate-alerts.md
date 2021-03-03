@@ -1,5 +1,5 @@
 ---
-title: Investigate Microsoft Defender Advanced Threat Protection alerts
+title: Investigate Microsoft Defender for Endpoint alerts
 description: Use the investigation options to get details on alerts are affecting your network, what they mean, and how to resolve them.
 keywords: investigate, investigation, devices, device, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
 search.product: eADQiWindows 10XVcnh
