@@ -25,6 +25,12 @@ ms.technology: mde
 
 The following information lists the updates made to the Microsoft Defender for Endpoint APIs and the dates they were made.
 
+### 10.02.2021
+<hr>
+
+- Added new API: [Batch update alerts](batch-update-alerts.md). 
+
+<br>
 
 ### 25.01.2021
 <hr>
