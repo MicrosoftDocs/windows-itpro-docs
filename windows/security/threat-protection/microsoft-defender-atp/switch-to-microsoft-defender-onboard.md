@@ -87,6 +87,9 @@ To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([http
 - Potentially Unwanted Applications (PUA)
 - Network Protection (NP)
 
+> [!IMPORTANT]
+> If you are using Windows Server 2016, you might have to start Microsoft Defender Antivirus manually. You can do this by using the PowerShell cmdlet `mpcmdrun.exe -wdenable` on the device.
+
 ## Next steps
 
 **Congratulations**! You have completed your [migration to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
