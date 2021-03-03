@@ -221,7 +221,7 @@ Defender for Endpoint integrates with System Center Endpoint Protection. The int
 The following steps are required to enable this integration:
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie).
 
-- Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting.
+- [Configure the SCEP client Cloud Protection Service membership](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to the **Advanced** setting.
 
 <br>
 
