@@ -134,7 +134,6 @@ Event XML:
 </Event>
 ```
 
-
 To add this CLSID to the existing policy, use the following steps:
 
 1. Open PowerShell ISE with Administrative privileges.
