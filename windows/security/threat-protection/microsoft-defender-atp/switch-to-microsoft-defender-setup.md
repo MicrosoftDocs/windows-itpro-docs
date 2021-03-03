@@ -33,7 +33,6 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 |--|--|--|
 ||*You are here!* | |
 
-
 **Welcome to the Setup phase of [switching to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Enable Microsoft Defender Antivirus and confirm it's in passive mode](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode).
 2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
