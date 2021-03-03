@@ -21,11 +21,11 @@ ms.technology: mde
 # Microsoft Defender for Endpoint for US Government customers
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+Microsoft Defender for Endpoint for US Government customers, built in the US Azure Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
 
+This offering is available to GCC, GCC High, and DoD customers and is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some differences in the availability of capabilities for this offering.
 
 > [!NOTE]
 > If you are a GCC customer using Defender for Endpoint in Commercial, please refer to the public documentation pages.
@@ -102,21 +102,25 @@ The following OS versions are supported when using [Azure Defender for Servers](
 
 OS version | GCC | GCC High | DoD (PREVIEW)
 :---|:---|:---|:---
-Windows Server 2016 | ![No](../images/svg/check-no.svg) Rolling out | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows Server 2012 R2 | ![No](../images/svg/check-no.svg) Rolling out | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows Server 2008 R2 SP1 | ![No](../images/svg/check-no.svg) Rolling out | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 
 <br>
 
 ## Required connectivity settings
-You'll need to ensure that traffic from the following are allowed:
+If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed in the downloadable sheet to the allowed domains list.
 
-Service location | DNS record
-:---|:---
-Common URLs for all locations (Global location) | `crl.microsoft.com`<br>`ctldl.windowsupdate.com`<br>`notify.windows.com`<br>`settings-win.data.microsoft.com` <br><br> Note: `settings-win.data.microsoft.com` is only needed on Windows 10 devices running version 1803 or earlier.
-Common URLs for all US Gov customers | `us4-v20.events.data.microsoft.com` <br>`*.blob.core.usgovcloudapi.net` 
-Defender for Endpoint GCC specific | `winatp-gw-usmt.microsoft.com`<br>`winatp-gw-usmv.microsoft.com`
-Defender for Endpoint GCC High & DoD (PREVIEW) specific | `winatp-gw-usgt.microsoft.com`<br>`winatp-gw-usgv.microsoft.com`
+The following downloadable spreadsheet lists the services and their associated URLs your network must be able to connect to. Verify there are no firewall or network filtering rules that would deny access to these URLs, or create an *allow* rule specifically for them.
+
+Spreadsheet of domains list | Description
+:-----|:-----
+![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/> | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
+
+For more information, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
+
+> [!NOTE]
+> The spreadsheet contains commercial URLs as well, make sure you check the "US Gov" tabs. <br> When filtering look for the records labeled as "US Gov" and your specific cloud under the geography column.
 
 <br>
 
