@@ -20,7 +20,7 @@ ms.collection:
 - m365initiative-defender-endpoint
 - m365solution-scenario
 - m365scenario-fpfn
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
 ---
