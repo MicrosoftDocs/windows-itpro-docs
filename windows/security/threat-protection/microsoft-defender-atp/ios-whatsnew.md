@@ -32,5 +32,5 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 ## 1.1.15010101
 
-- With this version, we are announcing support for iPadOS / iPad devices.
+- With this version, we are announcing support for iPadOS/iPad devices.
 - Bug fixes.
