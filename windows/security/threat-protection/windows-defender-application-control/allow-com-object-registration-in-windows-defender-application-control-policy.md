@@ -93,7 +93,7 @@ Example 3: Allows a specific COM object to register in PowerShell
 ```
 ### How to configure settings for the CLSIDs
 
-Given the following example of an error in the Event Viewer (Application and Service Logs > Microsoft > Windows > AppLocker > MSI and Script):
+Given the following example of an error in the Event Viewer (**Application and Service Logs** > **Microsoft** > **Windows** > **AppLocker** > **MSI and Script**):
 
 Log Name:      Microsoft-Windows-AppLocker/MSI and Script
 Source:        Microsoft-Windows-AppLocker
