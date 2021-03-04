@@ -10,7 +10,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 03/10/2021
 ---
 
 # Microsoft Store for Business and Education
@@ -22,6 +22,11 @@ ms.date: 10/17/2017
 -   Windows 10 Mobile
 
 Welcome to the Microsoft Store for Business and Education! You can use Microsoft Store to find, acquire, distribute, and manage apps for your organization or school.
+
+> [!IMPORTANT]
+> Starting April 14, 2021, all apps that charge a base price above free will no longer be available to buy in the Microsoft Store for Business and Education. If you’ve already bought a paid app, you can still use it, but no new purchases will be possible from businessstore.microsoft.com or educationstore.microsoft.com. Also, you won’t be able to buy additional licenses for apps you already bought. You can still assign and reassign licenses for apps that you already own and use the private store. Apps with a base price of “free” will still be available. This change doesn’t impact apps in the Microsoft Store on Windows 10.
+>
+> Also starting April 14, 2021, you must sign in with your Azure Active Directory (Azure AD) account before you browse Microsoft Store for Business and Education.
 
 ## In this section
 

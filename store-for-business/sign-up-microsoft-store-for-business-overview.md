@@ -12,7 +12,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 10/03/2019
+ms.date: 03/10/2021
 ---
 
 # Sign up and get started
@@ -30,7 +30,6 @@ IT admins can sign up for Microsoft Store for Business and Education, and get st
 | ----- | ----------- |
 | [Microsoft Store for Business and Education overview](windows-store-for-business-overview.md) | Learn about Microsoft Store for Business. |
 | [Prerequisites for Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business) | There are a few prerequisites for using Microsoft Store for Business and Education.](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business) |
-| [Sign up for Microsoft Store for Business or Microsoft Store for Education](https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business) | Before you sign up for Store for Business and Education, at a minimum, you'll need an Azure Active Directory (AD) or Office 365 account for your organization, and you'll need to be the global administrator for your organization. If your organization is already using Azure AD, you can go ahead and sign up for Store for Business. If not, we'll help you create an Azure AD or Office 365 account and directory as part of the sign up process. |
 | [Roles and permissions in Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/roles-and-permissions-microsoft-store-for-business)| The first person to sign in to Microsoft Store for Business and Education must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in, they can give permissions to others employees. |
 | [Settings reference: Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/settings-reference-microsoft-store-for-business) | Microsoft Store for Business and Education has a group of settings that admins use to manage the store. |
 

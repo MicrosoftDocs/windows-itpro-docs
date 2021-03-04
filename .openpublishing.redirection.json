@@ -13853,9 +13853,14 @@
 },
 {
 "source_path": "store-for-business/sign-up-windows-store-for-business.md",
-"redirect_url": "https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business",
+"redirect_url": "https://docs.microsoft.com/microsoft-store/index",
 "redirect_document_id": false
 },
+{
+"source_path": "store-for-business/sign-up-microsoft-store-for-business.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-store/index",
+"redirect_document_id": false
+},  
 {
 "source_path": "windows/manage/troubleshoot-windows-store-for-business.md",
 "redirect_url": "https://docs.microsoft.com/microsoft-store/troubleshoot-windows-store-for-business",
