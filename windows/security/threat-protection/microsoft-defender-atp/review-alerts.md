@@ -1,21 +1,22 @@
 ---
-title: Review alerts in Microsoft Defender Advanced Threat Protection
+title: Review alerts in Microsoft Defender for Endpoint
 description: Review alert information, including a visualized alert story and details for each step of the chain.
 keywords: incident, incidents, machines, devices, users, alerts, alert, investigation, graph, evidence
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: daniha
-author: danihalfin
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.date: 5/1/2020
+ms.technology: mde
 ---
 
 # Review alerts in Microsoft Defender for Endpoint
@@ -24,8 +25,7 @@ ms.date: 5/1/2020
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 

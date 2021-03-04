@@ -4,7 +4,7 @@ description: Troubleshoot kernel extension-related issues in Microsoft Defender 
 keywords: microsoft, defender, atp, mac, kernel, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Troubleshoot kernel extension issues in Microsoft Defender for Endpoint for Mac
@@ -27,6 +28,10 @@ ms.topic: conceptual
 **Applies to:**
 
 - [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This article provides information on how to troubleshoot issues with the kernel extension that is installed as part of Microsoft Defender for Endpoint for Mac.
 
@@ -36,15 +41,15 @@ If you did not approve the kernel extension during the deployment/installation o
 
    ![RTP disabled screenshot](../microsoft-defender-antivirus/images/MDATP-32-Main-App-Fix.png)
 
-You can also run ```mdatp --health```. It reports if real-time protection is enabled but not available. This indicates that the kernel extension is not approved to run on your device.
+You can also run ```mdatp health```. It reports if real-time protection is enabled but not available. This indicates that the kernel extension is not approved to run on your device.
 
 ```bash
-mdatp --health
+mdatp health
 ```
 ```Output
 ...
-realTimeProtectionAvailable             : false
-realTimeProtectionEnabled               : true
+real_time_protection_enabled                : false
+real_time_protection_available              : true
 ...
 ```
 
@@ -89,15 +94,15 @@ In this case, you need to perform the following steps to trigger the approval fl
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
 
-    The banner should disappear from the Defender application, and ```mdatp --health``` should now report that real-time protection is both enabled and available:
+    The banner should disappear from the Defender application, and ```mdatp health``` should now report that real-time protection is both enabled and available:
 
     ```bash
-    mdatp --health
+    mdatp health
     ```
 
     ```Output
     ...
-    realTimeProtectionAvailable             : true
-    realTimeProtectionEnabled               : true
+    real_time_protection_enabled                : true
+    real_time_protection_available              : true
     ...
     ```

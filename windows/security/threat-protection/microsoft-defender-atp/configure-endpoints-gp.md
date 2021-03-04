@@ -1,10 +1,10 @@
 ---
 title: Onboard Windows 10 devices to Microsoft Defender ATP via Group Policy
 description: Use Group Policy to deploy the configuration package on Windows 10 devices so that they are onboarded to the service.
-keywords: configure devices using group policy, device management, configure Windows ATP devices, onboard Microsoft Defender Advanced Threat Protection devices, group policy
+keywords: configure devices using group policy, device management, configure Windows ATP devices, onboard Microsoft Defender for Endpoint devices, group policy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,31 +13,28 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
+ms.technology: mde
 ---
 
 # Onboard Windows 10 devices using Group Policy 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - Group Policy
-
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
-
-
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 
 > [!NOTE]
 > To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.
-
+> 
 > For Windows Server 2019, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.
 
 ## Onboard devices using Group Policy
@@ -51,13 +48,13 @@ Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/publ
 
 1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
  
-    a.  In the navigation pane, select **Settings** > **Onboarding**.
+    1. In the navigation pane, select **Settings** > **Onboarding**.
 
-    b. Select Windows 10 as the operating system.
+    1. Select Windows 10 as the operating system.
     
-    c. In the **Deployment method** field, select **Group policy**.
+    1. In the **Deployment method** field, select **Group policy**.
     
-    d. Click **Download package** and save the .zip file.
+    1. Click **Download package** and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -87,16 +84,16 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 1.  On your GP management device, copy the following files from the
     configuration package:
 
-    a.  Copy _AtpConfiguration.admx_ into _C:\\Windows\\PolicyDefinitions_
+    - Copy _AtpConfiguration.admx_ into _C:\\Windows\\PolicyDefinitions_
 
-    b.  Copy _AtpConfiguration.adml_ into _C:\\Windows\\PolicyDefinitions\\en-US_
+    - Copy _AtpConfiguration.adml_ into _C:\\Windows\\PolicyDefinitions\\en-US_
 
     If you are using a [Central Store for Group Policy Administrative Templates](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copy the following files from the
     configuration package:
     
-     a.  Copy _AtpConfiguration.admx_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions_
+    - Copy _AtpConfiguration.admx_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions_
 
-     b.  Copy _AtpConfiguration.adml_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions\\en-US_
+    - Copy _AtpConfiguration.adml_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions\\en-US_
 
 2.  Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), right-click the GPO you want to configure and click **Edit**.
 
@@ -126,6 +123,7 @@ Policy | Setting
 :---|:---
 Enable\Disable Sample collection|	Enabled - "Enable sample collection on machines" checked
 
+<br/>
 
 **Policy location:**  \Windows Components\Windows Defender Antivirus
 
@@ -133,12 +131,16 @@ Policy | Setting
 :---|:---
 Configure detection for potentially unwanted applications | Enabled, Block
 
+<br/>
+
 **Policy location:** \Windows Components\Windows Defender Antivirus\MAPS
 
 Policy | Setting 
 :---|:---
 Join Microsoft MAPS | Enabled, Advanced MAPS
 Send file samples when further analysis is required | Enabled, Send safe samples
+
+<br/>
 
 **Policy location:** \Windows Components\Windows Defender Antivirus\Real-time Protection
 
@@ -149,6 +151,7 @@ Turn on behavior monitoring|Enabled
 Scan all downloaded files and attachments|Enabled
 Monitor file and program activity on your computer|Enabled
 
+<br/>
 
 **Policy location:**  \Windows Components\Windows Defender Antivirus\Scan
 
@@ -159,19 +162,23 @@ Policy | Setting
 Check for the latest virus and spyware security intelligence before running a scheduled scan |Enabled
 
 
+<br/>
 
 **Policy location:** \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
 
 Get the current list of attack surface reduction GUIDs from [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 
 1. Open the **Configure Attack Surface Reduction** policy.
-2. Select **Enabled**.
-3. Select the **Show…** button.
-4. Add each GUID in the **Value Name** field with a Value of 2.
 
-This will set each up for audit only.
+1. Select **Enabled**.
 
-![Image of attack surface reduction configuration](images/asr-guid.png)
+1. Select the **Show** button.
+
+1. Add each GUID in the **Value Name** field with a Value of 2.
+
+   This will set each up for audit only.
+
+   ![Image of attack surface reduction configuration](images/asr-guid.png)
 
 
 
@@ -189,13 +196,13 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-    a. In the navigation pane, select **Settings** > **Offboarding**.
+    1. In the navigation pane, select **Settings** > **Offboarding**.
 
-    b. Select Windows 10 as the operating system.
+    1. Select Windows 10 as the operating system.
     
-    c. In the **Deployment method** field, select **Group policy**.
+    1. In the **Deployment method** field, select **Group policy**.
 
-    d. Click **Download package** and save the .zip file.
+    1. Click **Download package** and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -221,6 +228,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 With Group Policy there isn’t an option to monitor deployment of policies on the devices. Monitoring can be done directly on the portal, or by using the different deployment tools.
 
 ## Monitor devices using the portal
+
 1. Go to [Microsoft Defender Security Center](https://securitycenter.windows.com/).
 2. Click **Devices list**.
 3. Verify that devices are appearing.

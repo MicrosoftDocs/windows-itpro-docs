@@ -3,7 +3,7 @@ title: Policy creation for common WDAC usage scenarios (Windows 10)
 description: Develop a plan for deploying Windows Defender Application Control (WDAC) in your organization based on these common scenarios.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 03/01/2018
+ms.technology: mde
 ---
 
 # Windows Defender Application Control deployment in different scenarios: types of devices

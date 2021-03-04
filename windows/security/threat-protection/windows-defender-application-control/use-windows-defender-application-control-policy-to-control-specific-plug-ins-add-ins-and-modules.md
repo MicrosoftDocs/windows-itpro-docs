@@ -5,7 +5,7 @@ keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 manager: dansimp
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
 ms.date: 05/03/2018
+ms.technology: mde
 ---
 
 # Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules 

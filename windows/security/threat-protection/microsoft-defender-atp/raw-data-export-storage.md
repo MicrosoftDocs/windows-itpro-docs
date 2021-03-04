@@ -1,10 +1,10 @@
 ---
-title: Stream Microsoft Defender Advanced Threat Protection events to your Storage account
+title: Stream Microsoft Defender for Endpoint events to your Storage account
 description: Learn how to configure Microsoft Defender ATP to stream Advanced Hunting events to your Storage account.
 keywords: raw data export, streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Storage account
@@ -23,10 +24,9 @@ ms.topic: article
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
-Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
 ## Before you begin:
 
@@ -36,7 +36,7 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://ww
 
 ## Enable raw data streaming:
 
-1. Log in to [Microsoft Defender for Endpoint portal](https://securitycenter.windows.com) with Global Admin user.
+1. Log in to [Microsoft Defender for Endpoint portal](https://securitycenter.windows.com) as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.
 
@@ -48,7 +48,7 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://ww
 
 6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage account resource ID**:
 
-   ![Image of event hub resource ID](images/storage-account-resource-id.png)
+   ![Image of event hub resource ID1](images/storage-account-resource-id.png)
 
 7. Choose the events you want to stream and click **Save**.
 
@@ -56,7 +56,7 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://ww
 
 - A blob container will be created for each event type: 
 
-  ![Image of event hub resource ID](images/storage-account-event-schema.png)
+  ![Image of event hub resource ID2](images/storage-account-event-schema.png)
 
 - The schema of each row in a blob is the following JSON: 
 
@@ -93,7 +93,7 @@ In order to get the data types for our events properties do the following:
 
 - Here is an example for Device Info event: 
 
-  ![Image of event hub resource ID](images/machine-info-datatype-example.png)
+  ![Image of event hub resource ID3](images/machine-info-datatype-example.png)
 
 ## Related topics
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)

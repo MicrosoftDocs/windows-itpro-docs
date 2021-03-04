@@ -8,14 +8,15 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 ms.reviewer: shwetaj
-audience: ITPro 
-ms.topic: article 
-ms.prod: w10 
+audience: ITPro
+ms.topic: article
+ms.prod: m365-security
 ms.localizationpriority: medium
 ms.custom: 
-- next-gen
-- edr
+  - next-gen
+  - edr
 ms.collection: 
+ms.technology: mde
 ---
 
 # Feedback-loop blocking
@@ -24,8 +25,7 @@ ms.collection:
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 ## Overview
 

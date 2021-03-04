@@ -1,10 +1,10 @@
 ---
 title: Attack surface reduction frequently asked questions (FAQ)
 description: Find answers to frequently asked questions about Microsoft Defender ATP's attack surface reduction rules.
-keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP
+keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,16 +14,17 @@ ms.author: v-maave
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Attack surface reduction frequently asked questions (FAQ)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 ## Is attack surface reduction (ASR) part of Windows?
 
@@ -43,7 +44,7 @@ Yes. ASR is supported for Windows Enterprise E3 and above.
 
 All of the rules supported with E3 are also supported with E5.
 
-E5 also added greater integration with Defender for Endpoint. With E5, you can [use Defender for Endpoint to monitor and review analytics](https://docs.microsoft.com/microsoft-365/security/mtp/monitor-devices?view=o365-worldwide#monitor-and-manage-asr-rule-deployment-and-detections) on alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
+E5 also added greater integration with Defender for Endpoint. With E5, you can [use Defender for Endpoint to monitor and review analytics](https://docs.microsoft.com/microsoft-365/security/mtp/monitor-devices?view=o365-worldwide&preserve-view=true#monitor-and-manage-asr-rule-deployment-and-detections) on alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
 
 ## What are the currently supported ASR rules?
 

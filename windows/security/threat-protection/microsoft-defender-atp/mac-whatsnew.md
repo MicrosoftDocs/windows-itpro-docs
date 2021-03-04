@@ -1,10 +1,10 @@
 ---
-title: What's new in Microsoft Defender Advanced Threat Protection for Mac
-description: Learn about the major changes for previous versions of Microsoft Defender Advanced Threat Protection for Mac.
+title: What's new in Microsoft Defender for Endpoint for Mac
+description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint for Mac.
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # What's new in Microsoft Defender for Endpoint for Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!IMPORTANT]
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
@@ -29,13 +36,29 @@ ms.topic: conceptual
 > [!IMPORTANT]
 > Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
 
-## 101.15.26
+## 101.19.88 (20.121011.11988.0)
+
+- Performance improvements & bug fixes
+
+## 101.19.48 (20.120121.11948.0)
+
+> [!NOTE]
+> The old command-line tool syntax has been deprecated with this release. For information on the new syntax, see [Resources](mac-resources.md#configuring-from-the-command-line).
+
+- Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`. This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint for Mac
+- Performance improvements & bug fixes
+
+## 101.19.21 (20.120101.11921.0)
+
+- Bug fixes
+
+## 101.15.26 (20.120102.11526.0)
 
 - Improved the reliability of the agent when running on macOS 11 Big Sur
 - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
 - Performance improvements & bug fixes
 
-## 101.13.75
+## 101.13.75 (20.120101.11375.0)
 
 - Removed conditions when Microsoft Defender for Endpoint was triggering a macOS 11 (Big Sur) bug that manifests into a kernel panic
 - Fixed a memory leak in the Endpoint Security system extension when running on mac 11 (Big Sur)
@@ -160,7 +183,7 @@ ms.topic: conceptual
 - Fixed an issue where Microsoft Defender for Endpoint for Mac was sometimes interfering with Time Machine
 - Added a new switch to the command-line utility for testing the connectivity with the backend service
   ```bash
-  mdatp --connectivity-test
+  mdatp connectivity test
   ```
 - Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view)
 - Performance improvements & bug fixes

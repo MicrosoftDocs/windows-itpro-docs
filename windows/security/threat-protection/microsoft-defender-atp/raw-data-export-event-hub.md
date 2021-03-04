@@ -1,10 +1,10 @@
 ---
-title: Stream Microsoft Defender Advanced Threat Protection events to Azure Event Hubs 
+title: Stream Microsoft Defender for Endpoint events to Azure Event Hubs
 description: Learn how to configure Microsoft Defender ATP to stream Advanced Hunting events to your Event Hub.
 keywords: raw data export, streaming API, API, Azure Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Azure Event Hubs
@@ -24,9 +25,9 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
 ## Before you begin:
 
@@ -36,9 +37,9 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://ww
 
 ## Enable raw data streaming:
 
-1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) with a Global Admin user.
+1. Log in to the [Microsoft Defender Security Center](https://securitycenter.windows.com) as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.
+2. Go to the [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.
 
 3. Click on **Add data export settings**.
 
@@ -50,7 +51,7 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://ww
 
    In order to get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > properties tab > copy the text under **Resource ID**:
 
-   ![Image of event hub resource Id](images/event-hub-resource-id.png)
+   ![Image of event hub resource Id1](images/event-hub-resource-id.png)
 
 7. Choose the events you want to stream and click **Save**.
 
@@ -94,7 +95,7 @@ To get the data types for event properties do the following:
 
 - Here is an example for Device Info event: 
 
-  ![Image of event hub resource Id](images/machine-info-datatype-example.png)
+  ![Image of event hub resource Id2](images/machine-info-datatype-example.png)
 
 ## Related topics
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)

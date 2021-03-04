@@ -1,10 +1,10 @@
 ---
 title: Microsoft Defender ATP preview features
-description: Learn how to access Microsoft Defender Advanced Threat Protection preview features.
-keywords: preview, preview experience, Microsoft Defender Advanced Threat Protection, features, updates
+description: Learn how to access Microsoft Defender for Endpoint preview features.
+keywords: preview, preview experience, Microsoft Defender for Endpoint, features, updates
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Microsoft Defender for Endpoint preview features
@@ -28,6 +29,10 @@ ms.topic: conceptual
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
 
 The Defender for Endpoint service is constantly being updated to include new feature enhancements and capabilities.
 

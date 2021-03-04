@@ -1,10 +1,10 @@
 ---
 title: Get KB collection API
-description: Retrieve a collection of knowledge bases (KB's) and KB details with Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
+description: Retrieve a collection of knowledge bases (KB's) and KB details with Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,19 +13,21 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: mde
 ---
 
 # Get KB collection API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -60,18 +62,15 @@ If successful - 200 OK.
 
 Here is an example of the request.
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/KbInfo
-Content-type: application/json
 ```
 
 **Response**
 
 Here is an example of the response.
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#KbInfo",
     "@odata.count": 271,

@@ -1,9 +1,9 @@
 ---
-title: Deploy Microsoft Defender ATP in rings
-description: Learn how to deploy Microsoft Defender ATP in rings
+title: Deploy Microsoft Defender for Endpoint in rings
+description: Learn how to deploy Microsoft Defender for Endpoint in rings
 keywords: deploy, rings, evaluate, pilot, insider fast, insider slow, setup, onboard, phase, deployment, deploying, adoption, configuring
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,21 +13,24 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-overview  
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-overview
 ms.topic: article
+ms.technology: mde
 ---
 
-# Deploy Microsoft Defender ATP in rings
+# Deploy Microsoft Defender for Endpoint in rings
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Deploying Microsoft Defender ATP can be done using a ring-based deployment approach. 
+Deploying Microsoft Defender for Endpoint can be done using a ring-based deployment approach. 
 
 The deployment rings can be applied in the following scenarios:
 - [New deployments](#new-deployments)

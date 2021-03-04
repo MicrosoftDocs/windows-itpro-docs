@@ -1,10 +1,10 @@
 ---
 title: Live response command examples
-description: Learn to run basic or advanced live response commands for Microsoft Defender Advanced Threat Protection (ATP) and see examples on how it's used.
-keywords: example, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file 
+description: Learn to run basic or advanced live response commands for Microsoft Defender for Endpoint and see examples on how it's used.
+keywords: example, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Live response command examples
@@ -23,8 +24,10 @@ ms.topic: article
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Learn about common commands used in live response and see examples on how they are typically used.
 
@@ -107,7 +110,7 @@ getfile c:\Users\user\Desktop\work.txt -auto
 > * Empty files
 > * Virtual files, or files that are not fully present locally
 >
-> These file types **are** supported by [PowerShell](/powershell/scripting/overview?view=powershell-6/).
+> These file types **are** supported by [PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true).
 >
 > Use PowerShell as an alternative, if you have problems using this command from within Live Response.
 
@@ -158,7 +161,7 @@ registry HKEY_CURRENT_USER\Console
 
 ```
 # Show information about a specific registry value
-registry HKEY_CURRENT_USER\Console\ScreenBufferSize
+registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
 

@@ -4,7 +4,7 @@ description: Determines whether to audit the event of a user accessing an Active
 ms.assetid: 52F02EED-3CFE-4307-8D06-CF1E27693D09
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Audit directory service access

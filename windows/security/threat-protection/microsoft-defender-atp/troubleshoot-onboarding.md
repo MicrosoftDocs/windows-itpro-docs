@@ -4,7 +4,7 @@ description: Troubleshoot issues that might arise during the onboarding of devic
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
+ms.technology: mde
 ---
 
 # Troubleshoot Microsoft Defender for Endpoint onboarding issues
@@ -24,9 +25,12 @@ ms.topic: troubleshooting
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Windows Server 2012 R2
 - Windows Server 2016
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 You might need to troubleshoot the Microsoft Defender for Endpoint onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the devices.
@@ -329,121 +333,122 @@ The steps below provide guidance for the following scenario:
 
 1. Create an application in Microsoft Endpoint Configuration Manager.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-1.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration1](images/mecm-1.png)
 
 2. Select **Manually specify the application information**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-2.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration2](images/mecm-2.png)
 
 3. Specify information about the application, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-3.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration3](images/mecm-3.png)
 
 4. Specify information about the software center, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-4.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration4](images/mecm-4.png)
 
 5. In **Deployment types** select **Add**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-5.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration5](images/mecm-5.png)
 
 6. Select **Manually specify the deployment type information**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-6.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration6](images/mecm-6.png)
 
 7. Specify information about the deployment type, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-7.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration7](images/mecm-7.png)
 
 8. In **Content** > **Installation program** specify the command: `net start sense`.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-8.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration8](images/mecm-8.png)
 
 9. In **Detection method**, select **Configure rules to detect the presence of this deployment type**, then select **Add Clause**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-9.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration9](images/mecm-9.png)
 
 10. Specify the following detection rule details, then select **OK**:
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-10.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration10](images/mecm-10.png)
 
 11. In **Detection method** select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-11.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration11](images/mecm-11.png)
 
 12. In **User Experience**, specify the following information, then select **Next**:
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-12.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration12](images/mecm-12.png)
 
 13. In **Requirements**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-13.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration13](images/mecm-13.png)
 
 14. In **Dependencies**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-14.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration14](images/mecm-14.png)
 
 15. In **Summary**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-15.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration15](images/mecm-15.png)
 
 16. In **Completion**, select **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-16.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration16](images/mecm-16.png)
 
 17. In **Deployment types**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-17.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration17](images/mecm-17.png)
 
 18. In **Summary**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-18.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration18](images/mecm-18.png)
 
     The status is then displayed:
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-19.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration19](images/mecm-19.png)
 
 19. In **Completion**, select **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-20.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration20](images/mecm-20.png)
 
 20. You can now deploy the application by right-clicking the app and selecting **Deploy**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-21.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration21](images/mecm-21.png)
 
 21. In **General** select **Automatically distribute content for dependencies** and **Browse**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-22.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration22](images/mecm-22.png)
 
 22. In **Content** select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-23.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration23](images/mecm-23.png)
 
 23. In **Deployment settings**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-24.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration24](images/mecm-24.png)
 
 24. In **Scheduling** select **As soon as possible after the available time**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-25.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration25](images/mecm-25.png)
 
 25. In **User experience**, select **Commit changes at deadline or during a maintenance window (requires restarts)**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-26.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration26](images/mecm-26.png)
 
 26. In **Alerts** select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-27.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration27](images/mecm-27.png)
 
 27. In **Summary**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-28.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration28](images/mecm-28.png)
 
     The status is then displayed
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-29.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration29](images/mecm-29.png)
 
 28. In **Completion**, select **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-30.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration30](images/mecm-30.png)
+
 
 ## Related topics
 

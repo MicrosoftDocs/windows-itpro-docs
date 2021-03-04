@@ -1,10 +1,10 @@
 ---
 title: Run a detection test on a newly onboarded Microsoft Defender ATP device
 description: Run the detection script on a newly onboarded device to verify that it is properly onboarded to the Microsoft Defender ATP service.
-keywords: detection test, detection, powershell, script, verify, onboarding, microsoft defender advanced threat protection onboarding, clients, servers, test
+keywords: detection test, detection, powershell, script, verify, onboarding, microsoft defender for endpoint onboarding, clients, servers, test
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: article
+ms.technology: mde
 ---
 
 # Run a detection test on a newly onboarded Microsoft Defender for Endpoint device 
@@ -30,8 +31,10 @@ ms.topic: article
 - Windows Server 2016
 - Windows Server, version 1803
 - Windows Server, 2019
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Run the following PowerShell script on a newly onboarded device to verify that it is properly reporting to the Defender for Endpoint service.
 

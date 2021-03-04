@@ -1,10 +1,10 @@
 ---
 title: Onboard non-persistent virtual desktop infrastructure (VDI) devices
 description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to Microsoft Defender ATP the service.
-keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Windows ATP endpoints, configure Microsoft Defender Advanced Threat Protection endpoints
+keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Windows ATP endpoints, configure Microsoft Defender for Endpoint endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,35 +13,28 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
+ms.technology: mde
 ---
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Virtual desktop infrastructure (VDI) devices
-
->[!WARNING]
-> Microsoft Defender for Endpoint support for Windows Virtual Desktop multi-user scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However single session scenarios on Windows Virtual Desktop are fully supported.
+- Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-
 Defender for Endpoint supports non-persistent VDI session onboarding. 
 
->[!Note]
->To onboard non-persistent VDI sessions, VDI devices must be Windows 10 or Windows Server 2019.
->
->While other Windows versions might work, only Windows 10 and Windows Server 2019 are supported.
 
 There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
@@ -58,6 +51,9 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 >[!WARNING]
 > For environments where there are low resource configurations, the VDI boot procedure might slow the Defender for Endpoint sensor onboarding. 
+
+
+### For Windows 10 or Windows Server 2019
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
@@ -108,6 +104,29 @@ The following steps will guide you through onboarding VDI devices and will highl
 6. Click **Devices list** on the Navigation pane.
 
 7. Use the search function by entering the device name and select **Device** as search type.
+
+
+## For downlevel SKUs
+
+> [!NOTE]
+> The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
+
+1. Set registry value to:
+
+    ```reg
+   [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
+    "VDI"="NonPersistent"
+    ```
+
+    or using command line:
+
+    ```
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
+    ```
+
+2. Follow the [server onboarding process](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016). 
+
+
 
 ## Updating non-persistent virtual desktop infrastructure (VDI) images
 As a best practice, we recommend using offline servicing tools to patch golden/master images.<br>

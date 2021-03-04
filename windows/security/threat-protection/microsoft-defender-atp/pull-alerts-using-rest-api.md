@@ -1,10 +1,10 @@
 ---
-title: Pull Microsoft Defender ATP detections using REST API
-description: Learn how call an Microsoft Defender ATP endpoint to pull detections in JSON format using the SIEM REST API.
+title: Pull Microsoft Defender for Endpoint detections using REST API
+description: Learn how to call a Microsoft Defender for Endpoint API endpoint to pull detections in JSON format using the SIEM REST API.
 keywords: detections, pull detections, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Pull Microsoft Defender for Endpoint detections using SIEM REST API
@@ -22,9 +23,14 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 >[!Note]
 >- [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
@@ -64,7 +70,7 @@ Use the following method in the Microsoft Defender for Endpoint API to pull dete
 ## Get an access token
 Before creating calls to the endpoint, you'll need to get an access token.
 
-You'll use the access token to access the protected resource, which are detections in Microsoft Defender for Endpoint.
+You'll use the access token to access the protected resource, which is detections in Microsoft Defender for Endpoint.
 
 To get an access token, you'll need to do a POST request to the token issuing endpoint. Here is a sample request:
 
@@ -81,10 +87,10 @@ The response will include an access token and expiry information.
 ```json
 {
   "token_type": "Bearer",
-  "expires_in": "3599",
-  "ext_expires_in": "0",
-  "expires_on": "1488720683",
-  "not_before": "1488720683",
+  "expires_in": 3599,
+  "ext_expires_in": 0,
+  "expires_on": 1488720683,
+  "not_before": 1488720683,
   "resource": "https://graph.windows.net",
   "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
 }
@@ -112,7 +118,7 @@ Name | Value| Description
 :---|:---|:---
 sinceTimeUtc | DateTime | Defines the lower time bound alerts are retrieved from, based on field: <br> `LastProcessedTimeUtc` <br> The time range will be: from sinceTimeUtc time to current time. <br><br> **NOTE**: When not specified, all alerts generated in the last two hours are retrieved.
 untilTimeUtc | DateTime | Defines the upper time bound alerts are retrieved. <br> The time range will be: from `sinceTimeUtc` time to `untilTimeUtc` time. <br><br> **NOTE**: When not specified, the default value will be the current time.
-ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> Value should be set according to **ISO 8601** duration format <br> E.g. `ago=PT10M` will pull alerts received in the last 10 minutes.
+ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> Value should be set according to **ISO 8601** duration format <br> Example: `ago=PT10M` will pull alerts received in the last 10 minutes.
 limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<br><br> **NOTE**: When not specified, all alerts available in the time range will be retrieved.
 machinegroups | string | Specifies device groups to pull alerts from. <br><br> **NOTE**: When not specified, alerts from all device groups will be retrieved. <br><br> Example: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | string | Single device tag from the registry.

@@ -3,7 +3,7 @@ title: Memory integrity
 keywords: mitigations, vulnerabilities, vulnerability, mitigation, exploit, exploits, emet
 description: Learn about memory integrity, a feature of Windows that ensures code running in the Windows kernel is securely designed and trustworthy.
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,6 +12,7 @@ author: levinec
 ms.author: ellevin
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Memory integrity

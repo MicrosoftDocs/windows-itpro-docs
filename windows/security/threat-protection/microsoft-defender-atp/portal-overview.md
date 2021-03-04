@@ -1,10 +1,10 @@
 ---
-title: Microsoft Defender Advanced Threat Protection portal overview
+title: Microsoft Defender for Endpoint portal overview
 description: Microsoft Defender Security Center can monitor your enterprise network and assist in responding to potential advanced persistent threats (APT) or data breaches.
 keywords: Microsoft Defender Security Center, portal, cybersecurity threat intelligence, dashboard, alerts queue, devices list, settings, device management, advanced attacks
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: conceptual 
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Microsoft Defender Security Center portal overview
@@ -24,6 +25,8 @@ ms.topic: conceptual
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
@@ -80,7 +83,7 @@ Icon | Description
 ![Alert icon](images/alert-icon.png)| Alert – Indication of an activity correlated with advanced attacks.
 ![Detection icon](images/detection-icon.png)| Detection – Indication of a malware threat detection.
 ![Active threat icon](images/active-threat-icon.png)| Active threat – Threats actively executing at the time of detection.
-![Remediated icon](images/remediated-icon.png)| Remediated – Threat removed from the device.
+![Remediated icon1](images/remediated-icon.png)| Remediated – Threat removed from the device.
 ![Not remediated icon](images/not-remediated-icon.png)| Not remediated – Threat not removed from the device.
 ![Thunderbolt icon](images/atp-thunderbolt-icon.png)| Indicates events that triggered an alert in the **Alert process tree**.
 ![Device icon](images/atp-machine-icon.png)| Device icon
@@ -115,7 +118,7 @@ Icon | Description
 ![Terminated by system](images/terminated-by-system.png) | Automated investigation - terminated by system
 ![Pending icon](images/pending.png) | Automated investigation - pending
 ![Running icon](images/running.png) | Automated investigation - running
-![Remediated icon](images/remediated.png) | Automated investigation - remediated
+![Remediated icon2](images/remediated.png) | Automated investigation - remediated
 ![Partially investigated icon](images/partially_remediated.png) | Automated investigation - partially remediated
 ![Threat insights icon](images/tvm_bug_icon.png) | Threat & Vulnerability Management - threat insights
 ![Possible active alert icon](images/tvm_alert_icon.png) | Threat & Vulnerability Management - possible active alert

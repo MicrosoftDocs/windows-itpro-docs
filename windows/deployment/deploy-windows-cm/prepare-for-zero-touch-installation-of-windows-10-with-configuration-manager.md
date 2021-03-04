@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows 10
 
-This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Configuration Manager (ConfigMgr) [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT). 
+This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Manager (ConfigMgr) [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT). 
 
 ## Prerequisites
 
@@ -77,7 +77,7 @@ ForEach($entry in $oulist){
 }
 ```
 
-Next, copy the following list of OU names and paths into a text file and save it as <b>C:\Setup\Scripts\oulist.txt</b>
+Next, copy the following list of OU names and paths into a text file and save it as **C:\Setup\Scripts\oulist.txt**
 
 ```text
 OUName,OUPath
