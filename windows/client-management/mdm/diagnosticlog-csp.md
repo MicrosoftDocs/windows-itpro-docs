@@ -199,8 +199,111 @@ A Get to the above URI will return the results of the data gathering for the las
 
 Each data gathering node is annotated with the HRESULT of the action and the collection is also annotated with an overall HRESULT. In this example, note that the mdmdiagnosticstool.exe command failed.
 
-The zip file which is created also contains a results.xml file whose contents align to the Data section in the SyncML for ArchiveResults. Accordingly, an IT admin using the zip file for troubleshooting can determine the order and success of each directive without needing a permanent record of the SyncML value for DiagnosticArchive/ArchiveResults.
+### Making use of the uploaded data
+The zip archive which is created and uploaded by the CSP contains a folder structure like the following:
 
+```powershell
+PS C:\> dir C:\DiagArchiveExamples\DiagLogs-MYDEVICE-20201202T182748Z
+
+    Directory: C:\DiagArchiveExamples\DiagLogs-MYDEVICE-20201202T182748Z
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+la---            1/4/2021  2:45 PM                1
+la---            1/4/2021  2:45 PM                2
+la---           12/2/2020  6:27 PM           2701 results.xml
+```
+Each data gathering directive from the original `Collection` XML corresponds to a folder in the output. For example, if the first directive was <RegistryKey HRESULT="0">HKLM\Software\Policies</RegistryKey> then folder `1` will contain the corresponding `export.reg` file.
+
+The `results.xml` file is the authoritative map to the output. It includes a status code for each directive. The order of the directives in the file corresponds to the order of the output folders. Using `results.xml` the administrator can see what data was gathered, what failures may have occurred, and which folders contain which output. For example, the following `results.xml` content indicates that registry export of HKLM\Software\Policies was successful and the data can be found in folder `1`. It also indicates that `netsh.exe wlan show profiles` command failed.
+
+```xml
+<Collection HRESULT="0">
+    <ID>268b3056-8c15-47c6-a1bd-4bc257aef7b2</ID>
+    <RegistryKey HRESULT="0">HKLM\Software\Policies</RegistryKey>
+    <Command HRESULT="-2147024895">%windir%\system32\netsh.exe wlan show profiles</Command>
+</Collection>
+```
+
+Administrators can apply automation to 'results.xml' to create their own preferred views of the data. For example, the following PowerShell one-liner extracts from the XML an ordered list of the directives with status code and details.
+```powershell
+Select-XML -Path results.xml -XPath '//RegistryKey | //Command | //Events | //FoldersFiles' | Foreach-Object -Begin {$i=1} -Process { [pscustomobject]@{DirectiveNumber=$i; DirectiveHRESULT=$_.Node.HRESULT; DirectiveInput=$_.Node.('#text')} ; $i++}
+```
+This example produces output similar to the following:
+```
+DirectiveNumber DirectiveHRESULT DirectiveInput
+--------------- ---------------- --------------
+              1 0                HKLM\Software\Policies
+              2 0                HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall
+              3 0                HKLM\Software\Microsoft\IntuneManagementExtension
+              4 0                HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall
+              5 0                %windir%\system32\ipconfig.exe /all
+              6 0                %windir%\system32\netsh.exe advfirewall show allprofiles
+              7 0                %windir%\system32\netsh.exe advfirewall show global
+              8 -2147024895      %windir%\system32\netsh.exe wlan show profiles
+```
+
+The next example extracts the zip archive into a customized flattened file structure. Each file name includes the directive number, HRESULT, and so on. This example could be customized to make different choices about what information to include in the file names and what formatting choices to make for special characters.
+
+```powershell
+param( $DiagnosticArchiveZipPath = "C:\DiagArchiveExamples\DiagLogs-MYDEVICE-20201202T182748Z.zip" )
+
+#region Formatting Choices
+$flatFileNameTemplate = '({0:D2}) ({3}) (0x{2:X8})'
+$maxLengthForInputTextPassedToOutput = 80
+#endregion
+
+#region Create Output Folders and Expand Zip
+$diagnosticArchiveTempUnzippedPath = $DiagnosticArchiveZipPath + "_expanded"
+if(-not (Test-Path $diagnosticArchiveTempUnzippedPath)){mkdir $diagnosticArchiveTempUnzippedPath}
+$reformattedArchivePath = $DiagnosticArchiveZipPath + "_formatted"
+if(-not (Test-Path $reformattedArchivePath)){mkdir $reformattedArchivePath}
+Expand-Archive -Path $DiagnosticArchiveZipPath -DestinationPath $diagnosticArchiveTempUnzippedPath
+#endregion
+
+#region Discover and Move/rename Files
+$resultElements = ([xml](Get-Content -Path (Join-Path -Path $diagnosticArchiveTempUnzippedPath -ChildPath "results.xml"))).Collection.ChildNodes | Foreach-Object{ $_ }
+$n = 0
+foreach( $element in $resultElements )
+{
+    $directiveNumber = $n
+    $n++
+    if($element.Name -eq 'ID'){ continue }
+    $directiveType = $element.Name
+    $directiveStatus = [int]$element.Attributes.ItemOf('HRESULT').psbase.Value
+    $directiveUserInputRaw = $element.InnerText
+    $directiveUserInputFileNameCompatible = $directiveUserInputRaw -replace '[\\|/\[\]<>\:"\?\*%\.\s]','_'
+    $directiveUserInputTrimmed = $directiveUserInputFileNameCompatible.substring(0, [System.Math]::Min($maxLengthForInputTextPassedToOutput, $directiveUserInputFileNameCompatible.Length))
+    $directiveSummaryString = $flatFileNameTemplate -f $directiveNumber,$directiveType,$directiveStatus,$directiveUserInputTrimmed
+    $directiveOutputFolder = Join-Path -Path $diagnosticArchiveTempUnzippedPath -ChildPath $directiveNumber
+    $directiveOutputFiles = Get-ChildItem -Path $directiveOutputFolder -File
+    foreach( $file in $directiveOutputFiles)
+    {
+        $leafSummaryString = $directiveSummaryString,$file.Name -join ' '
+        Copy-Item $file.FullName -Destination (Join-Path -Path $reformattedArchivePath -ChildPath $leafSummaryString)
+    }
+}
+#endregion 
+Remove-Item -Path $diagnosticArchiveTempUnzippedPath -Force -Recurse
+```
+That example script produces a set of files similar to the following, which can be a useful view for an administrator interactively browsing the results without needing to navigate any sub-folders or refer to `results.xml` repeatedly:
+
+```powershell
+PS C:\> dir C:\DiagArchiveExamples\DiagLogs-MYDEVICE-20201202T182748Z.zip_formatted | format-table Length,Name
+
+  Length Name
+  ------ ----
+   46640 (01) (HKLM_Software_Policies) (0x00000000) export.reg
+  203792 (02) (HKLM_Software_Microsoft_Windows_CurrentVersion_Uninstall) (0x00000000) export.reg
+  214902 (03) (HKLM_Software_Microsoft_IntuneManagementExtension) (0x00000000) export.reg
+  212278 (04) (HKLM_SOFTWARE_WOW6432Node_Microsoft_Windows_CurrentVersion_Uninstall) (0x00000000) export.reg
+    2400 (05) (_windir__system32_ipconfig_exe__all) (0x00000000) output.log
+    2147 (06) (_windir__system32_netsh_exe_advfirewall_show_allprofiles) (0x00000000) output.log
+    1043 (07) (_windir__system32_netsh_exe_advfirewall_show_global) (0x00000000) output.log
+      59 (08) (_windir__system32_netsh_exe_wlan_show_profiles) (0x80070001) output.log
+    1591 (09) (_windir__system32_ping_exe_-n_50_localhost) (0x00000000) output.log
+    5192 (10) (_windir__system32_Dsregcmd_exe__status) (0x00000000) output.log
+```
 
 ## Policy area
 

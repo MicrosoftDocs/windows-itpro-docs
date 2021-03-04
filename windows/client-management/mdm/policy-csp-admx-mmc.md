@@ -86,7 +86,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits use of this snap-in.
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits use of this snap-in.
 
 If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
 
@@ -165,7 +165,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits use of this snap-in.
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits use of this snap-in.
 
 If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
 
@@ -244,7 +244,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits use of this snap-in.
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits use of this snap-in.
 
 If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
 
@@ -323,7 +323,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from entering author mode.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from entering author mode.
 
 This setting prevents users from opening the Microsoft Management Console (MMC) in author mode, explicitly opening console files in author mode, and opening any console files that open in author mode by default.
 
@@ -396,7 +396,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting lets you selectively permit or prohibit the use of Microsoft Management Console (MMC) snap-ins.
+Available in the latest Windows 10 Insider Preview Build. This policy setting lets you selectively permit or prohibit the use of Microsoft Management Console (MMC) snap-ins.
 
 - If you enable this setting, all snap-ins are prohibited, except those that you explicitly permit. Use this setting if you plan to prohibit use of most snap-ins.
 
@@ -432,14 +432,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

@@ -2,7 +2,7 @@
 title: 1105(S) Event log automatic backup. (Windows 10)
 description: This event generates every time Windows security log becomes full and new event log file was created.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 1105(S): Event log automatic backup

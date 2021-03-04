@@ -3,7 +3,7 @@ title: How Microsoft identifies malware and potentially unwanted applications
 ms.reviewer: 
 description: Learn how Microsoft reviews software for privacy violations and other negative behavior, to determine if it's malware or a potentially unwanted application.
 keywords: security, malware, virus research threats, research malware, device protection, computer infection, virus infection, descriptions, remediation, latest threats, MMdevice, Microsoft Malware Protection Center, PUA, potentially unwanted applications
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,9 +11,10 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
+ms.technology: mde
 ---
 
 # How Microsoft identifies malware and potentially unwanted applications
@@ -171,7 +172,7 @@ Microsoft uses specific categories and the category definitions to classify soft
 
 * **Advertising software:** Software that displays advertisements or promotions, or prompts you to complete surveys for other products or services in software other than itself. This includes software that inserts advertisements to webpages.
 
-* **Torrent software:** Software that is used to create or download torrents or other files specifically used with peer-to-peer file-sharing technologies.
+* **Torrent software (Enterprise only):** Software that is used to create or download torrents or other files specifically used with peer-to-peer file-sharing technologies.
 
 * **Cryptomining software:** Software that uses your device resources to mine cryptocurrencies.
 

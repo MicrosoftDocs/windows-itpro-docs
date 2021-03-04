@@ -1,9 +1,9 @@
 ---
-title: Microsoft Defender ATP evaluation lab
-description: Learn about Microsoft Defender ATP capabilities, run attack simulations, and see how it prevents, detects, and remediates threats.
+title: Microsoft Defender for Endpoint evaluation lab
+description: Learn about Microsoft Defender for Endpoint capabilities, run attack simulations, and see how it prevents, detects, and remediates threats.
 keywords: evaluate mdatp, evaluation, lab, simulation, windows 10, windows server 2019, evaluation lab
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,38 +13,42 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365solution-evalutatemtp
+  - M365-security-compliance
+  - m365solution-evalutatemtp
 ms.topic: article
+ms.technology: mde
 ---
 
-# Microsoft Defender ATP evaluation lab
+# Microsoft Defender for Endpoint evaluation lab
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
 Conducting a comprehensive security product evaluation can be a complex process requiring cumbersome environment and device configuration before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
-The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
+The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLUM]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLUM]
 
-With the simplified set-up experience, you can focus on running your own test scenarios and the pre-made simulations to see how Microsoft Defender ATP performs. 
+With the simplified set-up experience, you can focus on running your own test scenarios and the pre-made simulations to see how Defender for Endpoint performs. 
 
-You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Microsoft Defender ATP offers. 
+You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Defender for Endpoint offers. 
 
 You can add Windows 10 or Windows Server 2019 devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
 
-You can also install threat simulators. Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities without having to leave the portal.
+You can also install threat simulators. Defender for Endpoint has partnered with industry leading threat simulation platforms to help you test out the Defender for Endpoint capabilities without having to leave the portal.
 
  Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs - all conveniently available at no extra cost to you. You'll also have convenient access to wide array of simulations which you can access and run from the simulations catalog.
     
 
 ## Before you begin
-You'll need to fulfill the [licensing requirements](minimum-requirements.md#licensing-requirements) or have trial access to Microsoft Defender ATP to access the evaluation lab.
+You'll need to fulfill the [licensing requirements](minimum-requirements.md#licensing-requirements) or have trial access to Microsoft Defender for Endpoint to access the evaluation lab.
 
 You must have **Manage security settings** permissions to:
 - Create the lab
@@ -56,10 +60,7 @@ If you enabled role-based access control (RBAC) and created at least a one machi
 
 For more information, see [Create and manage roles](user-roles.md).
 
-
-
-
-Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
+Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
 
 
 ## Get started with the lab
@@ -77,7 +78,7 @@ Already have a lab? Make sure to enable the new threat simulators and have activ
 
 ## Setup the evaluation lab
 
-1. In the navigation pane, select **Evaluation and tutorials > Evaluation lab**, then select **Setup lab**.
+1. In the navigation pane, select **Evaluation and tutorials** > **Evaluation lab**, then select **Setup lab**.
 
     ![Image of the evaluation lab welcome page](images/evaluation-lab-setup.png)
 
@@ -103,30 +104,30 @@ After the lab setup process is complete, you can add devices and run simulations
 
 
 ## Add devices
-When you add a device to your environment, Microsoft Defender ATP sets up a well-configured device with connection details. You can add Windows 10 or Windows Server 2019 devices.
+When you add a device to your environment, Defender for Endpoint sets up a well-configured device with connection details. You can add Windows 10 or Windows Server 2019 devices.
 
 The device will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals. 
 
    >[!TIP]
-   > Need more devices in your lab? Submit a support ticket to have your request reviewed by the Microsoft Defender ATP team. 
+   > Need more devices in your lab? Submit a support ticket to have your request reviewed by the Defender for Endpoint team. 
 
 If you chose to add a threat simulator during the lab setup, all devices will have the threat simulator agent installed in the devices that you add.
 
 The device will automatically be onboarded to your tenant with the recommended Windows security components turned on and in audit mode - with no effort on your side. 
 
-  The following security components are pre-configured in the test devices:
+The following security components are pre-configured in the test devices:
 
-- [Attack Surface Reduction](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 - [Block at first sight](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [Controlled Folder Access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [Exploit Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
-- [Network Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
+- [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [Network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
 - [Potentially unwanted application detection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [Windows Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
+- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender Antivirus will be on (not in audit). If Microsoft Defender Antivirus blocks you from running your simulation, you may turn off real-time protection on the device through Windows Security. For more information, see [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+> Microsoft Defender Antivirus will be on (not in audit mode). If Microsoft Defender Antivirus blocks you from running your simulation, you can turn off real-time protection on the device through Windows Security. For more information, see [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
 Automated investigation settings will be dependent on tenant settings. It will be configured to be semi-automated by default. For more information, see [Overview of Automated investigations](automated-investigations.md).
 
@@ -172,7 +173,7 @@ You can simulate attack scenarios using:
 You can also use [Advanced hunting](advanced-hunting-query-language.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
 ### Do-it-yourself attack scenarios
-If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Microsoft Defender ATP capabilities and walk you through investigation experience.
+If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
 
 
 >[!NOTE]
@@ -202,11 +203,11 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 If you chose to install any of the supported threat simulators during the lab setup, you can run the built-in simulations on the evaluation lab devices. 
 
 
-Running threat simulations using third-party platforms is a good way to evaluate Microsoft Defender ATP capabilities within the confines of a lab environment.
+Running threat simulations using third-party platforms is a good way to evaluate Microsoft Defender for Endpoint capabilities within the confines of a lab environment.
 
 >[!NOTE]
 >Before you can run simulations, ensure the following requirements are met:
->- Devices must be added  to the evaluation lab
+>- Devices must be added to the evaluation lab
 >- Threat simulators must be installed in the evaluation lab
 
 1. From the portal select **Create simulation**.
@@ -229,16 +230,15 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
     ![Image of simulations tab](images/simulations-tab.png)
     
-After running your simulations, we encourage you to walk through the lab progress bar and explore Microsoft Defender ATP features. See if the attack simulations you ran triggered an automated investigation and remediation, check out the evidence collected and analyzed by the feature.
+After running your simulations, we encourage you to walk through the lab progress bar and explore **Microsoft Defender for Endpoint triggered an automated investigation and remediation**. Check out the evidence collected and analyzed by the feature.
 
 Hunt for attack evidence through advanced hunting by using the rich query language and raw telemetry and check out some world-wide threats documented in Threat analytics.
 
 
 ## Simulation gallery
-Microsoft Defender ATP has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from the within the portal. 
+Microsoft Defender for Endpoint has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from the within the portal. 
 
 View all the available simulations by going to  **Simulations and tutorials** > **Simulations catalog**  from the menu. 
-
 
 A list of supported third-party threat simulation agents are listed, and specific types of simulations along with detailed descriptions are provided on the catalog. 
 
@@ -250,10 +250,10 @@ You can conveniently run any available simulation right from the catalog.
 Each simulation comes with an in-depth description of the attack scenario and references such as the MITRE attack techniques used and sample Advanced hunting queries you run.
 
 **Examples:**
-![Image of simulation description details](images/simulation-details-aiq.png)
+![Image of simulation description details1](images/simulation-details-aiq.png)
 
 
-![Image of simulation description details](images/simulation-details-sb.png)
+![Image of simulation description details2](images/simulation-details-sb.png)
 
 
 ## Evaluation report

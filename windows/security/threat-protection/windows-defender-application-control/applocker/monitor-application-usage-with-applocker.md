@@ -4,7 +4,7 @@ description: This topic for IT professionals describes how to monitor app usage 
 ms.assetid: 0516da6e-ebe4-45b4-a97b-31daba96d1cf
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Monitor app usage with AppLocker

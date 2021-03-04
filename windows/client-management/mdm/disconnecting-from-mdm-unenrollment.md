@@ -44,7 +44,8 @@ In Windows, after the user confirms the account deletion command and before the 
 
 This action utilizes the OMA DM generic alert 1226 function to send a user an MDM unenrollment user alert to the MDM server after the device accepts the user unenrollment request, but before it deletes any enterprise data. The server should set the expectation that unenrollment may succeed or fail, and the server can check whether the device is unenrolled by either checking whether the device calls back at scheduled time or by sending a push notification to the device to see whether it responds back. If the server plans to send a push notification, it should allow for some delay to give the device the time to complete the unenrollment work.
 
-> **Note**  The user unenrollment is an OMA DM standard. For more information about the 1226 generic alert, refer to the OMA Device Management Protocol specification (OMA-TS-DM\_Protocol-V1\_2\_1-20080617-A), available from the [OMA website](https://go.microsoft.com/fwlink/p/?LinkId=267526).
+> [!NOTE]
+> The user unenrollment is an OMA DM standard. For more information about the 1226 generic alert, refer to the OMA Device Management Protocol specification (OMA-TS-DM\_Protocol-V1\_2\_1-20080617-A), available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/).
 
  
 The vendor uses the Type attribute to specify what type of generic alert it is. For device initiated MDM unenrollment, the alert type is **com.microsoft:mdm.unenrollment.userrequest**.
@@ -152,7 +153,6 @@ The server requests an enterprise management disconnection request by issuing an
 When the disconnection is completed, the user is notified that the device has been disconnected from enterprise management.
 
  
-
 
 
 

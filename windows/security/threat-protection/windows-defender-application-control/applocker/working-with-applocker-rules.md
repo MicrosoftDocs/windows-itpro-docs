@@ -5,14 +5,15 @@ ms.assetid: 3966b35b-f2da-4371-8b5f-aec031db6bc9
 ms.reviewer: 
 manager: dansimp
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: mjcaparas
+author: dansimp
 ms.localizationpriority: medium
 msauthor: v-anbic
 ms.date: 08/27/2018
+ms.technology: mde
 ---
 
 # Working with AppLocker rules
