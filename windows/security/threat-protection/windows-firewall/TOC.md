@@ -96,6 +96,7 @@
 
 
 ## [Best practices]()
+### [Configuring the firewall](best-practices-configuring.md)
 ### [Securing IPsec](securing-end-to-end-ipsec-connections-by-using-ikev2.md)
 ### [PowerShell](windows-firewall-with-advanced-security-administration-with-windows-powershell.md)
 ### [Isolating Microsoft Store Apps on Your Network](isolating-apps-on-your-network.md)
@@ -164,6 +165,10 @@
 
 ## [Troubleshooting]()
 ### [Troubleshooting UWP app connectivity issues in Windows Firewall](troubleshooting-uwp-firewall.md)
+### [Filter origin audit log improvements](filter-origin-documentation.md)
+### [Quarantine behavior](quarantine.md)
+### [Firewall settings lost on upgrade](firewall-settings-lost-on-upgrade.md)
+
 
 
 

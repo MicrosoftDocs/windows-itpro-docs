@@ -4,7 +4,7 @@ description: Configure Microsoft Defender ATP for Mac in enterprise organization
 keywords: microsoft, defender, atp, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,25 +13,28 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# Set preferences for Microsoft Defender ATP for Mac
+# Set preferences for Microsoft Defender for Endpoint for Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
->This article contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise organizations. To configure Microsoft Defender ATP for Mac using the command-line interface, see [Resources](mac-resources.md#configuring-from-the-command-line).
+>This article contains instructions for how to set preferences for Microsoft Defender for Endpoint for Mac in enterprise organizations. To configure Microsoft Defender for Endpoint for Mac using the command-line interface, see [Resources](mac-resources.md#configuring-from-the-command-line).
 
 ## Summary
 
-In enterprise organizations, Microsoft Defender ATP for Mac can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Changing the preferences that are set through the configuration profile requires escalated privileges and is not available for users without administrative permissions.
+In enterprise organizations, Microsoft Defender for Endpoint for Mac can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Changing the preferences that are set through the configuration profile requires escalated privileges and is not available for users without administrative permissions.
 
 This article describes the structure of the configuration profile, includes a recommended profile that you can use to get started, and provides instructions on how to deploy the profile.
 
@@ -42,11 +45,11 @@ The configuration profile is a *.plist* file that consists of entries identified
 >[!CAUTION]
 >The layout of the configuration profile depends on the management console that you are using. The following sections contain examples of configuration profiles for JAMF and Intune.
 
-The top level of the configuration profile includes product-wide preferences and entries for subareas of Microsoft Defender ATP, which are explained in more detail in the next sections.
+The top level of the configuration profile includes product-wide preferences and entries for subareas of Microsoft Defender for Endpoint, which are explained in more detail in the next sections.
 
 ### Antivirus engine preferences
 
-The *antivirusEngine* section of the configuration profile is used to manage the preferences of the antivirus component of Microsoft Defender ATP.
+The *antivirusEngine* section of the configuration profile is used to manage the preferences of the antivirus component of Microsoft Defender for Endpoint.
 
 |||
 |:---|:---|
@@ -81,7 +84,7 @@ Specify whether the antivirus engine runs in passive mode. Passive mode has the 
 | **Key** | passiveMode |
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
-| **Comments** | Available in Microsoft Defender ATP version 100.67.60 or higher. |
+| **Comments** | Available in Microsoft Defender for Endpoint version 100.67.60 or higher. |
 
 #### Exclusion merge policy
 
@@ -93,7 +96,7 @@ Specify the merge policy for exclusions. This can be a combination of administra
 | **Key** | exclusionsMergePolicy |
 | **Data type** | String |
 | **Possible values** | merge (default) <br/> admin_only |
-| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+| **Comments** | Available in Microsoft Defender for Endpoint version 100.83.73 or higher. |
 
 #### Scan exclusions
 
@@ -167,7 +170,7 @@ Specify a process for which all file activity is excluded from scanning. The pro
 
 #### Allowed threats
 
-Specify threats by name that are not blocked by Microsoft Defender ATP for Mac. These threats will be allowed to run.
+Specify threats by name that are not blocked by Defender for Endpoint for Mac. These threats will be allowed to run.
 
 |||
 |:---|:---|
@@ -185,11 +188,11 @@ Restricts the actions that the local user of a device can take when threats are 
 | **Key** | disallowedThreatActions |
 | **Data type** | Array of strings |
 | **Possible values** | allow (restricts users from allowing threats) <br/> restore (restricts users from restoring threats from the quarantine) |
-| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+| **Comments** | Available in Microsoft Defender for Endpoint version 100.83.73 or higher. |
 
 #### Threat type settings
 
-Specify how certain threat types are handled by Microsoft Defender ATP for Mac.
+Specify how certain threat types are handled by Microsoft Defender for Endpoint for Mac.
 
 |||
 |:---|:---|
@@ -234,7 +237,7 @@ Specify the merge policy for threat type settings. This can be a combination of 
 | **Key** | threatTypeSettingsMergePolicy |
 | **Data type** | String |
 | **Possible values** | merge (default) <br/> admin_only |
-| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+| **Comments** | Available in Microsoft Defender for Endpoint version 100.83.73 or higher. |
 
 #### Antivirus scan history retention (in days)
 
@@ -246,7 +249,7 @@ Specify the number of days that results are retained in the scan history on the 
 | **Key** | scanResultsRetentionDays |
 | **Data type** | String |
 | **Possible values** | 90 (default). Allowed values are from 1 day to 180 days. |
-| **Comments** | Available in Microsoft Defender ATP version 101.07.23 or higher. |
+| **Comments** | Available in Microsoft Defender for Endpoint version 101.07.23 or higher. |
 
 #### Maximum number of items in the antivirus scan history
 
@@ -258,11 +261,11 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 | **Key** | scanHistoryMaximumItems |
 | **Data type** | String |
 | **Possible values** | 10000 (default). Allowed values are from 5000 items to 15000 items. |
-| **Comments** | Available in Microsoft Defender ATP version 101.07.23 or higher. |
+| **Comments** | Available in Microsoft Defender for Endpoint version 101.07.23 or higher. |
 
 ### Cloud-delivered protection preferences
 
-Configure the cloud-driven protection features of Microsoft Defender ATP for Mac.
+Configure the cloud-driven protection features of Microsoft Defender for Endpoint for Mac.
 
 |||
 |:---|:---|
@@ -284,7 +287,7 @@ Specify whether to enable cloud-delivered protection the device or not. To impro
 
 #### Diagnostic collection level
 
-Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by Microsoft Defender ATP to Microsoft.
+Diagnostic data is used to keep Microsoft Defender for Endpoint secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by Microsoft Defender for Endpoint to Microsoft.
 
 |||
 |:---|:---|
@@ -316,7 +319,7 @@ Determines whether security intelligence updates are installed automatically:
 
 ### User interface preferences
 
-Manage the preferences for the user interface of Microsoft Defender ATP for Mac.
+Manage the preferences for the user interface of Microsoft Defender for Endpoint for Mac.
 
 |||
 |:---|:---|
@@ -336,9 +339,21 @@ Specify whether to show or hide the status menu icon in the top-right corner of 
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
 
+#### Show / hide option to send feedback
+
+Specify whether users can submit feedback to Microsoft by going to `Help` > `Send Feedback`.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | userInitiatedFeedback |
+| **Data type** | String |
+| **Possible values** | enabled (default) <br/> disabled |
+| **Comments** | Available in Microsoft Defender for Endpoint version 101.19.61 or higher. |
+
 ### Endpoint detection and response preferences
 
-Manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender ATP for Mac.
+Manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender for Endpoint for Mac.
 
 |||
 |:---|:---|
@@ -388,13 +403,13 @@ Specifies the value of tag
 
 ## Recommended configuration profile
 
-To get started, we recommend the following configuration for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
+To get started, we recommend the following configuration for your enterprise to take advantage of all protection features that Microsoft Defender for Endpoint provides.
 
 The following configuration profile (or, in case of JAMF, a property list that could be uploaded into the custom settings configuration profile) will:
 - Enable real-time protection (RTP)
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
-  - **Archive bombs** (file with a high compression rate) are audited to Microsoft Defender ATP logs
+  - **Archive bombs** (file with a high compression rate) are audited to Microsoft Defender for Endpoint logs
 - Enable automatic security intelligence updates
 - Enable cloud-delivered protection
 - Enable automatic sample submission
@@ -455,9 +470,9 @@ The following configuration profile (or, in case of JAMF, a property list that c
         <key>PayloadIdentifier</key>
         <string>com.microsoft.wdav</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender for Endpoint settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender for Endpoint configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -478,7 +493,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
                 <key>PayloadIdentifier</key>
                 <string>com.microsoft.wdav</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender for Endpoint configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>
@@ -522,7 +537,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
 
 ## Full configuration profile example
 
-The following templates contain entries for all settings described in this document and can be used for more advanced scenarios where you want more control over Microsoft Defender ATP for Mac.
+The following templates contain entries for all settings described in this document and can be used for more advanced scenarios where you want more control over Microsoft Defender for Endpoint for Mac.
 
 ### Property list for JAMF configuration profile
 
@@ -624,6 +639,8 @@ The following templates contain entries for all settings described in this docum
     <dict>
         <key>hideStatusMenuIcon</key>
         <false/>
+        <key>userInitiatedFeedback</key>
+		<string>enabled</string>
     </dict>
 </dict>
 </plist>
@@ -641,9 +658,9 @@ The following templates contain entries for all settings described in this docum
         <key>PayloadIdentifier</key>
         <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender for Endpoint settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender for Endpoint configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -664,7 +681,7 @@ The following templates contain entries for all settings described in this docum
                 <key>PayloadIdentifier</key>
                 <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender for Endpoint configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>
@@ -764,6 +781,8 @@ The following templates contain entries for all settings described in this docum
                 <dict>
                     <key>hideStatusMenuIcon</key>
                     <false/>
+                    <key>userInitiatedFeedback</key>
+		            <string>enabled</string>
                 </dict>
             </dict>
         </array>
@@ -791,7 +810,7 @@ Once you've built the configuration profile for your enterprise, you can deploy 
 From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with `com.microsoft.wdav` as the preference domain and upload the *.plist* produced earlier.
 
 >[!CAUTION]
->You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by Microsoft Defender ATP.
+>You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by Microsoft Defender for Endpoint.
 
 ### Intune deployment
 
@@ -810,7 +829,7 @@ From the JAMF console, open **Computers** > **Configuration Profiles**, navigate
 7. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
 >[!CAUTION]
->You must enter the correct custom configuration profile name; otherwise, these preferences will not be recognized by Microsoft Defender ATP.
+>You must enter the correct custom configuration profile name; otherwise, these preferences will not be recognized by Microsoft Defender for Endpoint.
 
 ## Resources
 

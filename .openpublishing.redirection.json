@@ -80,6 +80,16 @@
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-exploit-protection-mitigations",
       "redirect_document_id": true
     },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/ios-privacy-statement.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ios-privacy",
+      "redirect_document_id": true
+    },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-ios-privacy-information.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ios-privacy",
+      "redirect_document_id": false
+    },
     {
       "source_path": "windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure",
@@ -1525,6 +1535,11 @@
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-machinegroups-collection",
       "redirect_document_id": true
     },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machinegroups-collection.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list",
+      "redirect_document_id": false
+    },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/get-machinesecuritystates-collection",
@@ -2030,6 +2045,11 @@
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/supported-response-apis",
       "redirect_document_id": true
     },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/supported-response-apis.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list",
+      "redirect_document_id": false
+    },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/threat-indicator-concepts-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-indicator-concepts-windows-defender-advanced-threat-protection",
@@ -2372,8 +2392,13 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-windows-microsoft-antivirus",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md",	
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus",	
+      "redirect_document_id": true	
     },
     {
       "source_path": "windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md",
@@ -14566,8 +14591,18 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/mdm/policy-csps-supported-by-surface-hub.md",
+      "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policies-in-policy-csp-supported-by-surface-hub",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/mdm/policies-supported-by-iot-enterprise.md",
       "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-iot-enterprise",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/policy-csps-supported-by-iot-enterprise.md",
+      "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policies-in-policy-csp-supported-by-iot-enterprise",
       "redirect_document_id": false
     },
     {
@@ -14576,8 +14611,18 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/mdm/policy-csps-supported-by-iot-core.md",
+      "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policies-in-policy-csp-supported-by-iot-core",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/mdm/policies-supported-by-hololens2.md",
       "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-hololens2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/policy-csps-supported-by-hololens2.md",
+      "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2",
       "redirect_document_id": false
     },
     {
@@ -14586,8 +14631,18 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/mdm/policy-csps-supported-by-hololens-1st-gen-development-edition.md",
+      "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/mdm/policies-supported-by-hololens-1st-gen-commercial-suite.md",
       "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-hololens-1st-gen-commercial-suite",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/policy-csps-supported-by-hololens-1st-gen-commercial-suite.md",
+      "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite",
       "redirect_document_id": false
     },
     {
@@ -14596,8 +14651,23 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/mdm/policy-csps-admx-backed.md",
+      "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policies-in-policy-csp-admx-backed",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/mdm/policies-supported-by-group-policy.md",
       "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/policy-csps-supported-by-group-policy.md",
+      "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policies-in-policy-csp-supported-by-group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/policy-csps-that-can-be-set-using-eas.md",
+      "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/policies-in-policy-csp-that-can-be-set-using-eas",
       "redirect_document_id": false
     },
     {
@@ -15044,6 +15114,11 @@
       "source_path": "windows/security/threat-protection/windows-defender-atp/find-machine-info-by-ip-windows-defender-advanced-threat-protection-new.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/find-machine-info-by-ip",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/find-machine-info-by-ip.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/find-machines-by-ip",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-filemachineaction-object-windows-defender-advanced-threat-protection.md",
@@ -15512,7 +15587,7 @@
     },
     {
       "source_path": "windows/hub/release-information.md",
-      "redirect_url": "https://docs.microsoft.com/windows/release-information",
+      "redirect_url": "https://docs.microsoft.com/windows/release-health/release-information",
       "redirect_document_id": true
     },
     {
@@ -15604,6 +15679,11 @@
       "source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac",
       "redirect_document_id": true
+    },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/endpoint-detection-response-mac-preview.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac-whatsnew.md",
@@ -15717,12 +15797,12 @@
     },
     {
       "source_path": "windows/release-information/status-windows-10-1703.yml",
-      "redirect_url": "https://docs.microsoft.com/windows/release-information/windows-message-center",
+      "redirect_url": "https://docs.microsoft.com/windows/release-health/windows-message-center",
       "redirect_document_id": true
     },
     {
       "source_path": "windows/release-information/resolved-issues-windows-10-1703.yml",
-      "redirect_url": "https://docs.microsoft.com/windows/release-information/windows-message-center",
+      "redirect_url": "https://docs.microsoft.com/windows/release-health/windows-message-center",
       "redirect_document_id": false
     },
     {
@@ -16020,6 +16100,11 @@
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction",
       "redirect_document_id": true
     },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/commercial-gov.md.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/gov",
+      "redirect_document_id": true
+    },
     {
       "source_path": "windows/security/threat-protection/windows-defender-antivirus/office-365-windows-defender-antivirus.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus",
@@ -16153,11 +16238,6 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-antivirus/deployment-vdi-windows-defender-antivirus.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus",
       "redirect_document_id": true
     },
     {
@@ -16443,6 +16523,26 @@
     {
       "source_path": "windows/hub/windows-10.yml",
       "redirect_url": "https://docs.microsoft.com/windows/windows-10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-antivirus/antivirus-false-positives-negatives.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/waas-mobile-updates.md",
+      "redirect_url": "https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventory-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr",
       "redirect_document_id": false
     }
   ]

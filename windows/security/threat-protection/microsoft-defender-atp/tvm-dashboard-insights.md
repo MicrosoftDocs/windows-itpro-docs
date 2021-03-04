@@ -1,10 +1,10 @@
 ---
-title: Threat and vulnerability management dashboard insights
+title: Dashboard insights - threat and vulnerability management
 description: The threat and vulnerability management dashboard can help SecOps and security admins address cybersecurity threats and build their organization's security resilience.
-keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, threat and vulnerability management, risk-based threat & vulnerability management, security configuration, Microsoft Secure Score for Devices, exposure score    
+keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, threat and vulnerability management, risk-based threat & vulnerability management, security configuration, Microsoft Secure Score for Devices, exposure score
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,21 +13,26 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
-# Threat and vulnerability management dashboard insights
+# Dashboard insights - threat and vulnerability management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Threat and vulnerability management is a component of Microsoft Defender ATP, and provides both security administrators and security operations teams with unique value, including:
+Threat and vulnerability management is a component of Defender for Endpoint, and provides both security administrators and security operations teams with unique value, including:
+
 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
 - Invaluable device vulnerability context during incident investigations
@@ -47,23 +52,9 @@ Watch this video for a quick overview of what is in the threat and vulnerability
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r1nv]
 
-## Threat and vulnerability management in Microsoft Defender Security Center
-
- ![Microsoft Defender Advanced Threat Protection portal](images/tvm-dashboard-devices.png)
-
-You can navigate through the portal using the menu options available in all sections. Refer to the following tables for a description of each section.
-
-## Threat and vulnerability management navigation pane
-
-Area | Description
-:---|:---
-**Dashboard**   | Get a high-level view of the organization exposure score, Microsoft Secure Score for Devices, device exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed device data.
-[**Security recommendations**](tvm-security-recommendation.md) | See the list of security recommendations, their related components, whether software or software versions in your network have reached end-of-support, insights, number or exposed devices, impact, and request for remediation. When you select an item from the list, a flyout panel opens with vulnerability details, a link to open the software page, and remediation and exception options. You can also open a ticket in Intune if your devices are joined through Azure Active Directory and you've enabled your Intune connections in Microsoft Defender ATP.
-[**Remediation**](tvm-remediation.md) | See the remediation activity, related component, remediation type, status, due date, option to export the remediation and process data to CSV, and active exceptions.
-[**Software inventory**](tvm-software-inventory.md) | See the list of software, versions, weaknesses, whether there's an exploit found on the software, whether the software or software version has reached end-of-support, prevalence in the organization, how many were installed, how many exposed devices there are, and the numerical value of the impact. You can select each item in the list and opt to open the software page that shows the associated vulnerabilities, misconfigurations, affected device, version distribution details, and missing KBs (security updates).
-[**Weaknesses**](tvm-weaknesses.md) | See the list of common vulnerabilities and exposures, the severity, the common vulnerability scoring system (CVSS) V3 score, related software, age, when it was published, related threat alerts, and how many exposed devices there are. You can select each item in the list to see a flyout panel with the vulnerability description and other details.
-
 ## Threat and vulnerability management dashboard
+
+ ![Microsoft Defender for Endpoint portal](images/tvm-dashboard-devices.png)
 
 Area | Description
 :---|:---
@@ -76,19 +67,15 @@ Area | Description
 **Top remediation activities** | Track the remediation activities generated from the security recommendations. You can select each item on the list to see the details in the **Remediation** page or select **Show more** to view the rest of the remediation activities, and active exceptions.
 **Top exposed devices** | View exposed device names and their exposure level. Select a device name from the list to go to the device page where you can view the alerts, risks, incidents, security recommendations, installed software, and discovered vulnerabilities associated with the exposed devices. Select **Show more** to see the rest of the exposed devices list. From the devices list, you can manage tags, initiate automated investigations, initiate a live response session, collect an investigation package, run antivirus scan, restrict app execution, and isolate device.
 
-For more information on the icons used throughout the portal, see [Microsoft Defender ATP icons](portal-overview.md#microsoft-defender-atp-icons).
+For more information on the icons used throughout the portal, see [Microsoft Defender for Endpoint icons](portal-overview.md#microsoft-defender-for-endpoint-icons).
+
 
 ## Related topics
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
-- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
-- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
-- [Weaknesses](tvm-weaknesses.md)
 - [Event timeline](threat-and-vuln-mgt-event-timeline.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for threat and vulnerability management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+

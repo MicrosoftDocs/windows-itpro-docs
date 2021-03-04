@@ -147,7 +147,7 @@ On **MDT01**:
 9. On the **Destination** page, in the **Specify the name of the directory that should be created** text box, type **Install - Adobe Reader** and click **Next**.
 10. On the **Command Details** page, in the **Command Line** text box, type **msiexec /i AcroRead.msi /q**, click **Next** twice, and then click **Finish**.
 
-![acroread](../images/acroread.png)
+![acroread image](../images/acroread.png)
 
 The Adobe Reader application added to the Deployment Workbench.
 
@@ -267,7 +267,7 @@ On **MDT01**:
 
 For the ThinkStation P500 model, you use the Lenovo ThinkVantage Update Retriever software to download the drivers. With Update Retriever, you need to specify the correct Lenovo Machine Type for the actual hardware (the first four characters of the model name). As an example, the Lenovo ThinkStation P500 model has the 30A6003TUS model name, meaning the Machine Type is 30A6.
 
-![ThinkStation](../images/thinkstation.png)
+![ThinkStation image](../images/thinkstation.png)
 
 To get the updates, download the drivers from the Lenovo ThinkVantage Update Retriever using its export function. You can also download the drivers by searching PC Support on the [Lenovo website](https://go.microsoft.com/fwlink/p/?LinkId=619543).
 
@@ -360,6 +360,9 @@ The task sequence for production deployment.
 In this section, you will learn how to configure the MDT Build Lab deployment share with the rules required to create a simple and dynamic deployment process. This includes configuring commonly used rules and an explanation of how these rules work.
 
 ### Configure the rules
+
+> [!NOTE]
+> The following instructions assume the device is online. If you're offline you can remove SLShare variable.
 
 On **MDT01**:
 
@@ -533,7 +536,7 @@ On **MDT01**:
 1. Download MDOP 2015 and copy the DaRT 10 installer file to the D:\\Setup\\DaRT 10 folder on MDT01 (DaRT\\DaRT 10\\Installers\\\<lang\>\\x64\\MSDaRT100.msi).
 2. Install DaRT 10 (MSDaRT10.msi) using the default settings.
 
-  ![DaRT](../images/dart.png)
+  ![DaRT image](../images/dart.png)
 
 2. Copy the two tools CAB files from **C:\\Program Files\\Microsoft DaRT\\v10** (**Toolsx86.cab** and **Toolsx64.cab**) to the production deployment share at **D:\\MDTProduction\\Tools\\x86** and **D:\\MDTProduction\\Tools\\x64**, respectively.
 3. In the Deployment Workbench, right-click the **MDT Production** deployment share and select **Properties**.
@@ -604,13 +607,13 @@ On **HV01**:
     2.  Installs the added application.
     3.  Updates the operating system via your local Windows Server Update Services (WSUS) server.
 
-![pc0005](../images/pc0005-vm.png)
+![pc0005 image1](../images/pc0005-vm.png)
 
 ### Application installation
 
 Following OS installation, Microsoft Office 365 Pro Plus - x64 is installed automatically.
 
- ![pc0005](../images/pc0005-vm-office.png)
+ ![pc0005 image2](../images/pc0005-vm-office.png)
 
 ### Use the MDT monitoring feature
 
@@ -731,7 +734,7 @@ On **MDT01**:
 The ISO that you got when updating the offline media item can be burned to a DVD and used directly (it will be bootable), but it is often more efficient to use USB sticks instead since they are faster and can hold more data. (A dual-layer DVD is limited to 8.5 GB.)
 
 >[!TIP] 
->In this example, the .wim file is 5.5 GB in size. However, bootable USB sticks are formatted with the FAT32 file system which limits file size to 4.0 GB. This means you must split the .wim file, which can be done using DISM: <br>&nbsp;<br>Dism /Split-Image /ImageFile:D:\MDTOfflinemedia\Content\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.wim /SWMFile:E:\sources\install.swm /FileSize:3800. <br>&nbsp;<br>Windows Setup automatically installs from this file, provided you name it install.swm. The file names for the next files include numbers, for example: install2.swm, install3.swm. <br>&nbsp;<br>To enable split image in MDT, the Settings.xml file in your deployment share (ex: D:\MDTProduction\Control\Settings.xml) must have the **SkipWimSplit** value set to **False**. By default this value is set to True (\<SkipWimSplit\>True\</SkipWimSplit\>), so this must be changed and the offline media content updated.
+>In this example, the .wim file is 5.5 GB in size. However, bootable USB sticks are formatted with the FAT32 file system which limits file size to 4.0 GB. You can place the image on a different drive (ex: E:\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.swm) and then modify E:\Deploy\Control\OperatingSystems.xml to point to it. Alternatively to keep using the USB you must split the .wim file, which can be done using DISM: <br>&nbsp;<br>Dism /Split-Image /ImageFile:D:\MDTOfflinemedia\Content\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.wim /SWMFile:E:\sources\install.swm /FileSize:3800. <br>&nbsp;<br>Windows Setup automatically installs from this file, provided you name it install.swm. The file names for the next files include numbers, for example: install2.swm, install3.swm. <br>&nbsp;<br>To enable split image in MDT, the Settings.xml file in your deployment share (ex: D:\MDTProduction\Control\Settings.xml) must have the **SkipWimSplit** value set to **False**. By default this value is set to True (\<SkipWimSplit\>True\</SkipWimSplit\>), so this must be changed and the offline media content updated.
 
 Follow these steps to create a bootable USB stick from the offline media content:
 

@@ -1,10 +1,10 @@
 ---
 title: Information protection in Windows overview
-ms.reviewer:
+ms.reviewer: 
 description: Learn about how information protection works in Windows to identify and protect sensitive information
 keywords: information, protection, dlp, data, loss, prevention, protect
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,16 +15,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Information protection in Windows overview
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -34,7 +38,7 @@ Information protection is an integral part of Microsoft 365 Enterprise suite, pr
 >[!TIP]
 > Read our blog post about how [Microsoft Defender ATP integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
 
-Microsoft Defender ATP applies the following methods to discover, classify, and protect data:
+Defender for Endpoint applies the following methods to discover, classify, and protect data:
 
 - **Data discovery** - Identify sensitive data on Windows devices at risk
 - **Data classification** - Automatically classify data based on common Microsoft Information Protection (MIP) policies managed in Office 365 Security & Compliance Center. Auto-classification allows you to protect sensitive data even if the end user hasn’t manually classified it.
@@ -42,7 +46,7 @@ Microsoft Defender ATP applies the following methods to discover, classify, and 
 
 ## Data discovery and data classification
 
-Microsoft Defender ATP automatically discovers files with sensitivity labels and files that contain sensitive information types.
+Defender for Endpoint automatically discovers files with sensitivity labels and files that contain sensitive information types.
 
 Sensitivity labels classify and help protect sensitive content.
 
@@ -55,9 +59,9 @@ Default sensitive information types include information such as bank account num
 
 Custom types are ones that you define and is designed to protect a different type of sensitive information (for example, employee IDs or project numbers). For more information see, [Create a custom sensitive information type](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type).
 
-When a file is created or edited on a  Windows device, Microsoft Defender ATP scans the content to evaluate if it contains sensitive information.
+When a file is created or edited on a  Windows device, Defender for Endpoint scans the content to evaluate if it contains sensitive information.
 
-Turn on the Azure Information Protection integration so that when a file that contains sensitive information is discovered by Microsoft Defender ATP though labels or information types, it is automatically forwarded to Azure Information Protection from the device.
+Turn on the Azure Information Protection integration so that when a file that contains sensitive information is discovered by Defender for Endpoint though labels or information types, it is automatically forwarded to Azure Information Protection from the device.
 
 ![Image of settings page with Azure Information Protection](images/atp-settings-aip.png)
 
@@ -65,11 +69,11 @@ The reported signals can be viewed on the Azure Information Protection – Data 
 
 ## Azure Information Protection - Data discovery dashboard
 
-This dashboard presents a summarized discovery information of data discovered by both Microsoft Defender ATP and Azure Information Protection. Data from Microsoft Defender ATP is marked with Location Type - Endpoint.
+This dashboard presents a summarized discovery information of data discovered by both Defender for Endpoint and Azure Information Protection. Data from Defender for Endpoint is marked with Location Type - Endpoint.
 
 ![Image of Azure Information Protection - Data discovery](images/azure-data-discovery.png)
 
-Notice the Device Risk column on the right, this device risk is derived directly from Microsoft Defender ATP, indicating the risk level of the security device where the file was discovered, based on the active security threats detected by Microsoft Defender ATP.
+Notice the Device Risk column on the right, this device risk is derived directly from Defender for Endpoint, indicating the risk level of the security device where the file was discovered, based on the active security threats detected by Defender for Endpoint.
 
 Click on a device to view a list of files observed on this device, with their sensitivity labels and information types.
 
@@ -78,13 +82,13 @@ Click on a device to view a list of files observed on this device, with their se
 
 ## Log Analytics
 
-Data discovery based on Microsoft Defender ATP is also available in [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), where you can perform complex queries over the raw data.
+Data discovery based on Defender for Endpoint is also available in [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), where you can perform complex queries over the raw data.
 
 For more information on Azure Information Protection analytics, see [Central reporting for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
-Open Azure Log Analytics in Azure Portal and open a query builder (standard or classic).
+Open Azure Log Analytics in Azure portal and open a query builder (standard or classic).
 
-To view Microsoft Defender ATP data, perform a query that contains:
+To view Defender for Endpoint data, perform a query that contains:
 
 ```
 InformationProtectionLogs_CL

@@ -1,7 +1,7 @@
 ---
 title: Testing scenarios with Microsoft Defender Application Guard (Windows 10)
 description: Suggested testing scenarios for Microsoft Defender Application Guard, showing how it works in both Standalone and Enterprise-managed mode.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,13 +12,14 @@ ms.reviewer:
 manager: dansimp
 ms.date: 09/14/2020
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Application Guard testing scenarios
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
 

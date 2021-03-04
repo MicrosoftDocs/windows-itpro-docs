@@ -4,7 +4,7 @@ description: Troubleshoot issues that might arise during the onboarding of devic
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,20 +15,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
+ms.technology: mde
 ---
 
-# Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues
+# Troubleshoot Microsoft Defender for Endpoint onboarding issues
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Windows Server 2012 R2
 - Windows Server 2016
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-You might need to troubleshoot the Microsoft Defender ATP onboarding process if you encounter issues.
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+
+You might need to troubleshoot the Microsoft Defender for Endpoint onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the devices.
 
 ## Troubleshoot issues with onboarding tools
@@ -102,10 +106,10 @@ If none of the event logs and troubleshooting steps work, download the Local scr
 Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
 :---:|:---|:---|:---|:---
 0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding | **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [View agent onboarding errors in the device event log](#view-agent-onboarding-errors-in-the-device-event-log) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
- | | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Microsoft Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> If it doesn't exist, open an elevated command and add the key.
+ | | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Microsoft Defender for Endpoint Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> If it doesn't exist, open an elevated command and add the key.
  | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot onboarding issues on the device](#troubleshoot-onboarding-issues-on-the-device). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
- | | | | All | **Possible cause:** Attempt to deploy Microsoft Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently supported platforms:<br> Enterprise, Education, and Professional.<br> Server is not supported.
- 0x87D101A9 | -2016345687 |SyncML(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient. | All |  **Possible cause:** Attempt to deploy Microsoft Defender ATP on non-supported SKU/Platform, particularly Holographic SKU.<br><br> Currently supported platforms:<br>  Enterprise, Education, and Professional.
+ | | | | All | **Possible cause:** Attempt to deploy Microsoft Defender for Endpoint on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently supported platforms:<br> Enterprise, Education, and Professional.<br> Server is not supported.
+ 0x87D101A9 | -2016345687 |SyncML(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient. | All |  **Possible cause:** Attempt to deploy Microsoft Defender for Endpoint on non-supported SKU/Platform, particularly Holographic SKU.<br><br> Currently supported platforms:<br>  Enterprise, Education, and Professional.
 
 #### Known issues with non-compliance
 
@@ -127,11 +131,11 @@ Channel name: Admin
 
 ID | Severity | Event description | Troubleshooting steps
 :---|:---|:---|:---
-1819 | Error | Microsoft Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Download the [Cumulative Update for Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
+1819 | Error | Microsoft Defender for Endpoint CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Download the [Cumulative Update for Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
 ## Troubleshoot onboarding issues on the device
 
-If the deployment tools used does not indicate an error in the onboarding process, but devices are still not appearing in the devices list in an hour, go through the following verification topics to check if an error occurred with the Microsoft Defender ATP agent.
+If the deployment tools used does not indicate an error in the onboarding process, but devices are still not appearing in the devices list in an hour, go through the following verification topics to check if an error occurred with the Microsoft Defender for Endpoint agent.
 
 - [View agent onboarding errors in the device event log](#view-agent-onboarding-errors-in-the-device-event-log)
 - [Ensure the diagnostic data service is enabled](#ensure-the-diagnostics-service-is-enabled)
@@ -146,7 +150,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 2. In the **Event Viewer (Local)** pane, expand **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE**.
 
    > [!NOTE]
-   > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender ATP.
+   > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint.
 
 3. Select **Operational** to load the log.
 
@@ -160,17 +164,17 @@ If the deployment tools used does not indicate an error in the onboarding proces
 
 Event ID | Message | Resolution steps
 :---:|:---|:---
- `5` | Microsoft Defender Advanced Threat Protection service failed to connect to the server at _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection).
- `6` | Microsoft Defender Advanced Threat Protection service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-script.md).
- `7` | Microsoft Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection), then run the entire onboarding process again.
- `9` | Microsoft Defender Advanced Threat Protection service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script.md). <br><br>If the event happened during offboarding, contact support.
-`10` | Microsoft Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script.md). <br><br>If the problem persists, contact support.
-`15` | Microsoft Defender Advanced Threat Protection cannot start command channel with URL: _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection).
-`17` | Microsoft Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-script.md). If the problem persists, contact support.
-`25` | Microsoft Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
-`27` | Failed to enable Microsoft Defender Advanced Threat Protection mode in Windows Defender. Onboarding process failed. Failure code: variable | Contact support.
+ `5` | Microsoft Defender for Endpoint service failed to connect to the server at _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection).
+ `6` | Microsoft Defender for Endpoint service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-script.md).
+ `7` | Microsoft Defender for Endpoint service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection), then run the entire onboarding process again.
+ `9` | Microsoft Defender for Endpoint service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script.md). <br><br>If the event happened during offboarding, contact support.
+`10` | Microsoft Defender for Endpoint service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script.md). <br><br>If the problem persists, contact support.
+`15` | Microsoft Defender for Endpoint cannot start command channel with URL: _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection).
+`17` | Microsoft Defender for Endpoint service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-script.md). If the problem persists, contact support.
+`25` | Microsoft Defender for Endpoint service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
+`27` | Failed to enable Microsoft Defender for Endpoint mode in Windows Defender. Onboarding process failed. Failure code: variable | Contact support.
 `29` | Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3 | Ensure the device has Internet access, then run the entire offboarding process again.
-`30` | Failed to disable $(build.sense.productDisplayName) mode in Microsoft Defender Advanced Threat Protection. Failure code: %1 | Contact support.
+`30` | Failed to disable $(build.sense.productDisplayName) mode in Microsoft Defender for Endpoint. Failure code: %1 | Contact support.
 `32` | $(build.sense.productDisplayName) service failed to request to stop itself after offboarding process. Failure code: %1 | Verify that the service start type is manual and reboot the device.
 `55` | Failed to create the Secure ETW autologger. Failure code: %1 | Reboot the device.
 `63` | Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4 | Identify what is causing changes in start type of mentioned service. If the exit code is not 0, fix the start type manually to expected start type.
@@ -180,7 +184,7 @@ Event ID | Message | Resolution steps
 
 <br />
 
-There are additional components on the device that the Microsoft Defender ATP agent depends on to function properly. If there are no onboarding related errors in the Microsoft Defender ATP agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
+There are additional components on the device that the Microsoft Defender for Endpoint agent depends on to function properly. If there are no onboarding related errors in the Microsoft Defender for Endpoint agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
 
 <span id="ensure-the-diagnostics-service-is-enabled" />
 
@@ -242,11 +246,11 @@ First, you should check that the service is set to start automatically when Wind
 
 ### Ensure the device has an Internet connection
 
-The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender ATP service.
+The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender for Endpoint service.
 
 WinHTTP is independent of the Internet browsing proxy settings and other user context applications and must be able to detect the proxy servers that are available in your particular environment.
 
-To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls) topic.
+To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls) topic.
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet.md) topic.
 
@@ -257,11 +261,11 @@ If the verification fails and your environment is using a proxy to connect to th
 >
 > The update ensures that Microsoft Defender Antivirus cannot be turned off on client devices via system policy.
 
-**Problem**: The Microsoft Defender ATP service does not start after onboarding.
+**Problem**: The Microsoft Defender for Endpoint service does not start after onboarding.
 
 **Symptom**: Onboarding successfully completes, but you see error 577 or error 1058 when trying to start the service.
 
-**Solution**: If your devices are running a third-party antimalware client, the Microsoft Defender ATP agent needs the Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not turned off by a system policy.
+**Solution**: If your devices are running a third-party antimalware client, the Microsoft Defender for Endpoint agent needs the Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not turned off by a system policy.
 
 - Depending on the tool that you use to implement policies, you'll need to verify that the following Windows Defender policies are cleared:
 
@@ -297,9 +301,9 @@ If you encounter issues while onboarding a server, go through the following veri
 
 You might also need to check the following:
 
-- Check that there is a Microsoft Defender Advanced Threat Protection Service running in the **Processes** tab in **Task Manager**. For example:
+- Check that there is a Microsoft Defender for Endpoint Service running in the **Processes** tab in **Task Manager**. For example:
 
-    ![Image of process view with Microsoft Defender Advanced Threat Protection Service running](images/atp-task-manager.png)
+    ![Image of process view with Microsoft Defender for Endpoint Service running](images/atp-task-manager.png)
 
 - Check **Event Viewer** > **Applications and Services Logs** > **Operation Manager** to see if there are any errors.
 
@@ -325,128 +329,129 @@ The steps below provide guidance for the following scenario:
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
 > [!NOTE]
-> The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
+> The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender for Endpoint](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
 1. Create an application in Microsoft Endpoint Configuration Manager.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-1.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration1](images/mecm-1.png)
 
 2. Select **Manually specify the application information**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-2.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration2](images/mecm-2.png)
 
 3. Specify information about the application, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-3.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration3](images/mecm-3.png)
 
 4. Specify information about the software center, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-4.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration4](images/mecm-4.png)
 
 5. In **Deployment types** select **Add**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-5.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration5](images/mecm-5.png)
 
 6. Select **Manually specify the deployment type information**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-6.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration6](images/mecm-6.png)
 
 7. Specify information about the deployment type, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-7.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration7](images/mecm-7.png)
 
 8. In **Content** > **Installation program** specify the command: `net start sense`.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-8.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration8](images/mecm-8.png)
 
 9. In **Detection method**, select **Configure rules to detect the presence of this deployment type**, then select **Add Clause**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-9.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration9](images/mecm-9.png)
 
 10. Specify the following detection rule details, then select **OK**:
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-10.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration10](images/mecm-10.png)
 
 11. In **Detection method** select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-11.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration11](images/mecm-11.png)
 
 12. In **User Experience**, specify the following information, then select **Next**:
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-12.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration12](images/mecm-12.png)
 
 13. In **Requirements**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-13.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration13](images/mecm-13.png)
 
 14. In **Dependencies**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-14.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration14](images/mecm-14.png)
 
 15. In **Summary**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-15.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration15](images/mecm-15.png)
 
 16. In **Completion**, select **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-16.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration16](images/mecm-16.png)
 
 17. In **Deployment types**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-17.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration17](images/mecm-17.png)
 
 18. In **Summary**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-18.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration18](images/mecm-18.png)
 
     The status is then displayed:
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-19.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration19](images/mecm-19.png)
 
 19. In **Completion**, select **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-20.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration20](images/mecm-20.png)
 
 20. You can now deploy the application by right-clicking the app and selecting **Deploy**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-21.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration21](images/mecm-21.png)
 
 21. In **General** select **Automatically distribute content for dependencies** and **Browse**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-22.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration22](images/mecm-22.png)
 
 22. In **Content** select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-23.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration23](images/mecm-23.png)
 
 23. In **Deployment settings**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-24.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration24](images/mecm-24.png)
 
 24. In **Scheduling** select **As soon as possible after the available time**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-25.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration25](images/mecm-25.png)
 
 25. In **User experience**, select **Commit changes at deadline or during a maintenance window (requires restarts)**, then select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-26.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration26](images/mecm-26.png)
 
 26. In **Alerts** select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-27.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration27](images/mecm-27.png)
 
 27. In **Summary**, select **Next**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-28.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration28](images/mecm-28.png)
 
     The status is then displayed
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-29.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration29](images/mecm-29.png)
 
 28. In **Completion**, select **Close**.
 
-    ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-30.png)
+    ![Image of Microsoft Endpoint Configuration Manager configuration30](images/mecm-30.png)
+
 
 ## Related topics
 
-- [Troubleshoot Microsoft Defender ATP](troubleshoot-mdatp.md)
+- [Troubleshoot Microsoft Defender for Endpoint](troubleshoot-mdatp.md)
 - [Onboard devices](onboard-configure.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)

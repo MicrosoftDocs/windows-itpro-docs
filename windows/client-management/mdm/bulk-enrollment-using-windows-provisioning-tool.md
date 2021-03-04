@@ -35,7 +35,7 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 > [!NOTE]
 > -   Bulk-join is not supported in Azure Active Directory Join.
 > -   Bulk enrollment does not work in Intune standalone environment.
-> -   Bulk enrollment works in Microsoft Endpoint Configuration Manager where the ppkg is generated from the Configuration Manager console.
+> -   Bulk enrollment works in Microsoft Endpoint Manager where the ppkg is generated from the Configuration Manager console.
 > -   To change bulk enrollment settings, login to **AAD**, then **Devices**, and then click **Device Settings**. Change the number under **Maximum number of devices per user**.
 
 ## What you need

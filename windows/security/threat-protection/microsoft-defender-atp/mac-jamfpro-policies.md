@@ -4,7 +4,7 @@ description: Learn how to set up the Microsoft Defender ATP for macOS policies i
 keywords: policies, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,47 +13,50 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# Set up the Microsoft Defender ATP for macOS policies in Jamf Pro
+# Set up the Microsoft Defender for Endpoint for macOS policies in Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
 
 This page will guide you through the steps you need to take to set up macOS policies in Jamf Pro.
 
 You'll need to take the following steps:
 
-1. [Get the Microsoft Defender ATP onboarding package](#step-1-get-the-microsoft-defender-atp-onboarding-package)
+1. [Get the Microsoft Defender for Endpoint onboarding package](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
 
 2. [Create a configuration profile in Jamf Pro using the onboarding package](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 
-3. [Configure Microsoft  Defender ATP settings](#step-3-configure-microsoft-defender-atp-settings)
+3. [Configure Microsoft Defender for Endpoint settings](#step-3-configure-microsoft-defender-for-endpoint-settings)
 
-4. [Configure Microsoft Defender ATP notification settings](#step-4-configure-notifications-settings)
+4. [Configure Microsoft Defender for Endpoint notification settings](#step-4-configure-notifications-settings)
 
 5. [Configure Microsoft AutoUpdate (MAU)](#step-5-configure-microsoft-autoupdate-mau)
 
-6. [Grant full disk access to Microsoft Defender ATP](#step-6-grant-full-disk-access-to-microsoft-defender-atp)
+6. [Grant full disk access to Microsoft Defender for Endpoint](#step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint)
 
-7. [Approve Kernel extension for Microsoft Defender ATP](#step-7-approve-kernel-extension-for-microsoft-defender-atp)
+7. [Approve Kernel extension for Microsoft Defender for Endpoint](#step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint)
 
-8. [Approve System extensions for Microsoft Defender ATP](#step-8-approve-system-extensions-for-microsoft-defender-atp)
+8. [Approve System extensions for Microsoft Defender for Endpoint](#step-8-approve-system-extensions-for-microsoft-defender-for-endpoint)
 
 9. [Configure Network Extension](#step-9-configure-network-extension)
 
-10. [Schedule scans with Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [Schedule scans with Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-11. [Deploy Microsoft Defender ATP for macOS](#step-11-deploy-microsoft-defender-atp-for-macos)
+11. [Deploy Microsoft Defender for Endpoint for macOS](#step-11-deploy-microsoft-defender-for-endpoint-for-macos)
 
 
-## Step 1: Get the Microsoft Defender ATP onboarding package
+## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
 1. In [Microsoft Defender Security Center](https://securitycenter.microsoft.com ), navigate to **Settings > Onboarding**. 
 
@@ -129,9 +132,9 @@ You'll need to take the following steps:
 
     ![List of configuration profiles](images/jamfpro-configuration-policies.png)
 
-## Step 3: Configure Microsoft Defender ATP settings
+## Step 3: Configure Microsoft Defender for Endpoint settings
 
-1.  Use the following Microsoft Defender ATP configuration settings:
+1.  Use the following Microsoft Defender for Endpoint configuration settings:
 
     - enableRealTimeProtection
     - passiveMode
@@ -399,7 +402,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 ## Step 5: Configure Microsoft AutoUpdate (MAU)
 
-1. Use the following Microsoft Defender ATP configuration settings:
+1. Use the following Microsoft Defender for Endpoint configuration settings:
 
       ```XML
    <?xml version="1.0" encoding="UTF-8"?>
@@ -481,7 +484,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     
     ![Image of configuration setting](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
 
-## Step 6: Grant full disk access to Microsoft Defender ATP
+## Step 6: Grant full disk access to Microsoft Defender for Endpoint
 
 1. In the Jamf Pro dashboard, select **Configuration Profiles**.
 
@@ -571,7 +574,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     ![Image of configuration setting](images/6c8b406ee224335a8c65d06953dc756e.png)
 
 
-## Step 7: Approve Kernel extension for Microsoft Defender ATP
+## Step 7: Approve Kernel extension for Microsoft Defender for Endpoint
 
 1. In the **Configuration Profiles**, select **+ New**.
 
@@ -622,7 +625,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     ![Image of configuration settings](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
 
-## Step 8: Approve System extensions for Microsoft Defender ATP
+## Step 8: Approve System extensions for Microsoft Defender for Endpoint
 
 1. In the **Configuration Profiles**, select **+ New**.
 
@@ -677,10 +680,10 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 ## Step 9: Configure Network Extension
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender ATP for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
 
 >[!NOTE]
->JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender ATP for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
+>JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender for Endpoint for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
 >As such, the following steps provide a workaround that involve signing the configuration profile.
 
 1. Download `netfilter.mobileconfig` from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) to your device and save it as `com.microsoft.network-extension.mobileconfig`
@@ -731,10 +734,10 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 
     ![Image of configuration settings](images/netext-final.png)
 
-## Step 10: Schedule scans with Microsoft Defender ATP for Mac
-Follow the instructions on [Schedule scans with Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
+## Step 10: Schedule scans with Microsoft Defender for Endpoint for Mac
+Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
-## Step 11: Deploy Microsoft Defender ATP for macOS
+## Step 11: Deploy Microsoft Defender for Endpoint for macOS
 
 1. Navigate to where you saved `wdav.pkg`.
 
@@ -748,18 +751,14 @@ Follow the instructions on [Schedule scans with Microsoft Defender ATP for Mac](
 
     ![Image of configuration settings](images/990742cd9a15ca9fdd37c9f695d1b9f4.png)
 
-4. Navigate to **Advanced Computer Searches**.
-    
-    ![A screenshot of a social media post Description automatically generated](images/95313facfdd5e1ea361981e0a2478fec.png)
-
-5. Select **Computer Management**. 
+4. Select your computer and click the gear icon at the top, then select **Computer Management**.
 
     ![Image of configuration settings](images/b6d671b2f18b89d96c1c8e2ea1991242.png)
 
-6. In **Packages**, select **+ New**. 
+5. In **Packages**, select **+ New**. 
     ![A picture containing bird Description automatically generated](images/57aa4d21e2ccc65466bf284701d4e961.png)
 
-7. In **New Package** Enter the following details:
+6. In **New Package** Enter the following details:
 
     **General tab**
     - Display Name: Leave it blank for now. Because it will be reset when you choose your pkg.
@@ -772,17 +771,17 @@ Follow the instructions on [Schedule scans with Microsoft Defender ATP for Mac](
     
     ![A screenshot of a computer screen Description automatically generated](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
-8. Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
+7. Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
-    - Manifest File: Select **Upload Manifest File**. 
-
+    **Manifest File** is not required. Microsoft Defender Advanced Threat Protection works without Manifest File.
+    
     **Options tab**<br> Keep default values.
 
     **Limitations tab**<br> Keep default values.
     
      ![Image of configuration settings](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
-9. Select **Save**. The package is uploaded to Jamf Pro. 
+8. Select **Save**. The package is uploaded to Jamf Pro. 
 
    ![Image of configuration settings](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -790,45 +789,45 @@ Follow the instructions on [Schedule scans with Microsoft Defender ATP for Mac](
    
    ![Image of configuration settings](images/1626d138e6309c6e87bfaab64f5ccf7b.png)
 
-10. Navigate to the **Policies** page.
+9. Navigate to the **Policies** page.
 
     ![Image of configuration settings](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
 
-11. Select **+ New** to create a new policy.
+10. Select **+ New** to create a new policy.
 
     ![Image of configuration settings](images/847b70e54ed04787e415f5180414b310.png)
 
 
-12. In **General** Enter the following details:
+11. In **General** Enter the following details:
 
     - Display name: MDATP Onboarding Contoso 200329 v100.86.92 or later
 
     ![Image of configuration settings](images/625ba6d19e8597f05e4907298a454d28.png)
 
-13. Select **Recurring Check-in**. 
+12. Select **Recurring Check-in**. 
     
     ![Image of configuration settings](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
   
-14. Select **Save**. 
+13. Select **Save**. 
  
-15. Select **Packages > Configure**.
+14. Select **Packages > Configure**.
  
     ![Image of configuration settings](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
-16. Select the **Add** button next to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
+15. Select the **Add** button next to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
     ![Image of configuration settings](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-17. Select **Save**.
+16. Select **Save**.
 
     ![Image of configuration settings](images/9d6e5386e652e00715ff348af72671c6.png)
 
-18. Select the **Scope** tab.  
+17. Select the **Scope** tab.  
 
     ![Image of configuration settings](images/8d80fe378a31143db9be0bacf7ddc5a3.png)
 
-19. Select the target computers.
+18. Select the target computers.
 
     ![Image of configuration settings](images/6eda18a64a660fa149575454e54e7156.png)
 
@@ -844,12 +843,11 @@ Follow the instructions on [Schedule scans with Microsoft Defender ATP for Mac](
     
     ![Image of configuration settings](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
 
-20. Select **Done**. 
+19. Select **Done**. 
 
     ![Image of configuration settings](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
     ![Image of configuration settings](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
-
 
 
 
