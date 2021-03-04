@@ -1,11 +1,11 @@
 ---
 title: Deploy Microsoft Defender ATP for Linux manually
-ms.reviewer:
+ms.reviewer: 
 description: Describes how to deploy Microsoft Defender ATP for Linux manually from the command line.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,30 +14,47 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# Deploy Microsoft Defender ATP for Linux manually
+# Deploy Microsoft Defender for Endpoint for Linux manually
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-This article describes how to deploy Microsoft Defender ATP for Linux manually. A successful deployment requires the completion of all of the following tasks:
+This article describes how to deploy Microsoft Defender for Endpoint for Linux manually. A successful deployment requires the completion of all of the following tasks:
 
-- [Configure the Linux software repository](#configure-the-linux-software-repository)
-- [Application installation](#application-installation)
-- [Download the onboarding package](#download-the-onboarding-package)
-- [Client configuration](#client-configuration)
+- [Deploy Microsoft Defender for Endpoint for Linux manually](#deploy-microsoft-defender-for-endpoint-for-linux-manually)
+  - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
+  - [Configure the Linux software repository](#configure-the-linux-software-repository)
+    - [RHEL and variants (CentOS and Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
+    - [SLES and variants](#sles-and-variants)
+    - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
+  - [Application installation](#application-installation)
+  - [Download the onboarding package](#download-the-onboarding-package)
+  - [Client configuration](#client-configuration)
+  - [Installer script](#installer-script)
+  - [Log installation issues](#log-installation-issues)
+  - [Operating system upgrades](#operating-system-upgrades)
+  - [Uninstallation](#uninstallation)
 
 ## Prerequisites and system requirements
 
-Before you get started, see [Microsoft Defender ATP for Linux](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Configure the Linux software repository
 
-Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
+Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
@@ -48,7 +65,13 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### RHEL and variants (CentOS and Oracle Linux)
 
-- Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
+- Install `yum-utils` if it isn't installed yet:
+
+    ```bash
+    sudo yum install yum-utils
+    ```
+
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/`. For instance, RHEL 7.9 is closer to 7.4 than to 8.
 
     In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
@@ -59,7 +82,13 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
+    For example, if you are running CentOS 7 and wish to deploy MDE for Linux from the *prod* channel:
+
+    ```bash
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
+    ```
+
+    Or if you wish to explore new features on selected devices, you might want to deploy MDE for Linux to *insiders-fast* channel:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -71,12 +100,6 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
-- Install `yum-utils` if it isn't installed yet:
-
-    ```bash
-    sudo yum install yum-utils
-    ```
-
 - Download and make usable all the metadata for the currently enabled yum repositories:
 
     ```bash
@@ -85,7 +108,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### SLES and variants
 
-- Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
+- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/config/`.
 
     In the following commands, replace *[distro]* and *[version]* with the information you've identified:
 
@@ -93,10 +116,10 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
+    For example, if you are running SLES 12 and wish to deploy MDE for Linux from the *prod* channel:
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/sles/12/insiders-fast.repo
+    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
     ```
 
 - Install the Microsoft GPG public key:
@@ -119,7 +142,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install libplist-utils
     ```
 
-- Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config`.
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config`.
 
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
@@ -127,10 +150,10 @@ In order to preview new features and provide early feedback, it is recommended t
     curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
-    For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
+    For example, if you are running Ubuntu 18.04 and wish to deploy MDE for Linux from the *prod* channel:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/insiders-fast.list
+    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
     ```
 
 - Install the repository configuration:
@@ -138,6 +161,11 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
+    For example, if you chose *prod* channel:
+    
+    ```bash
+    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
+    ```   
 
 - Install the `gpg` package if not already installed:
 
@@ -296,7 +324,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Microsoft Defender ATP for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-static-proxy-configuration#post-installation-configuration).
+    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-static-proxy-configuration#post-installation-configuration).
 
 5. Run a detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
@@ -312,11 +340,36 @@ Download the onboarding package from Microsoft Defender Security Center:
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:
+    - The file should have been quarantined by Defender for Endpoint for Linux. Use the following command to list all the detected threats:
 
         ```bash
         mdatp threat list
         ```
+
+## Installer script
+
+Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
+The script identifies the distribution and version, and sets up the device to pull the latest package and install it.
+You can also onboard with a provided script.
+
+```bash
+❯ ./mde_installer.sh --help
+usage: basename ./mde_installer.sh [OPTIONS]
+Options:
+-c|--channel      specify the channel from which you want to install. Default: insiders-fast
+-i|--install      install the product
+-r|--remove       remove the product
+-u|--upgrade      upgrade the existing product
+-o|--onboard      onboard/offboard the product with <onboarding_script>
+-p|--passive-mode set EPP to passive mode
+-t|--tag          set a tag by declaring <name> and <value>. ex: -t GROUP Coders
+-m|--min_req      enforce minimum requirements
+-w|--clean        remove repo from package manager for a specific channel
+-v|--version      print out script version
+-h|--help         display help
+```
+
+Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
 ## Log installation issues
 
@@ -324,8 +377,8 @@ See [Log installation issues](linux-resources.md#log-installation-issues) for mo
 
 ## Operating system upgrades
 
-When upgrading your operating system to a new major version, you must first uninstall Microsoft Defender ATP for Linux, install the upgrade, and finally reconfigure Microsoft Defender ATP for Linux on your device.
+When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.
 
 ## Uninstallation
 
-See [Uninstall](linux-resources.md#uninstall) for details on how to remove Microsoft Defender ATP for Linux from client devices.
+See [Uninstall](linux-resources.md#uninstall) for details on how to remove Defender for Endpoint for Linux from client devices.

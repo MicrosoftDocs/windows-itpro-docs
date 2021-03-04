@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 audience: ITPro
-ms.author: daniha
+ms.author: siosulli
 author: DaniHalfin
 manager: dansimp
 ms.collection: M365-security-compliance
@@ -64,10 +64,10 @@ A final set of changes includes two new policies that can help you fine-tune dia
 
 - The **Limit dump collection** policy is a new policy that can be used to limit the types of [crash dumps](https://docs.microsoft.com/windows/win32/dxtecharts/crash-dump-analysis) that can be sent back to Microsoft. If this policy is enabled, Windows Error Reporting will send only kernel mini dumps and user mode triage dumps.
   - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Dump Collection**
-  - MDM policy: System/ LimitDiagnosticLogCollection
+  - MDM policy: System/LimitDumpCollection 
 - The **Limit diagnostic log collection** policy is another new policy that limits the number of diagnostic logs that are sent back to Microsoft. If this policy is enabled, diagnostic logs are not sent back to Microsoft.
   - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Diagnostic Log Collection**
-  - MDM policy: System/LimitDumpCollection
+  - MDM policy: System/LimitDiagnosticLogCollection
 
 >[!Important]
 >All of the changes mentioned in this section will not be released on versions of Windows, version 1809 and earlier as well as Windows Server 2019 and earlier.

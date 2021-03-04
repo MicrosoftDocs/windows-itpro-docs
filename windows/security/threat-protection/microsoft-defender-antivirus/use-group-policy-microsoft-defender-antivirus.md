@@ -1,25 +1,29 @@
 ---
 title: Configure Microsoft Defender Antivirus with Group Policy
-description: Learn how to use a Group Policy to configure and manage Microsoft Defender Antivirus on your endpoints in Microsoft Defender ATP.
+description: Learn how to use a Group Policy to configure and manage Microsoft Defender Antivirus on your endpoints in Microsoft Defender for Endpoint.
 keywords: group policy, GPO, configuration, settings
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
-ms.reviewer: 
+ms.date: 10/01/2018
+ms.reviewer: ksarens
 manager: dansimp
+ms.technology: mde
 ---
 
 # Use Group Policy settings to configure and manage Microsoft Defender Antivirus
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 You can use [Group Policy](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx) to configure and manage Microsoft Defender Antivirus on your endpoints.
 
@@ -93,7 +97,7 @@ Root | Allow antimalware service to start up with normal priority | [Configure r
 Root | Allow antimalware service to remain running always | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md)
 Root | Turn off routine remediation | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md)
 Root | Randomize scheduled task times | [Configure scheduled scans for Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Scan | Allow users to pause scan | [Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+Scan | Allow users to pause scan | [Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md) (Not supported on Windows 10)
 Scan | Check for the latest virus and spyware definitions before running a scheduled scan | [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 Scan | Define the number of days after which a catch-up scan is forced | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 Scan | Turn on catch up full scan | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)

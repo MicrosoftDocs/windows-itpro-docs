@@ -3,7 +3,7 @@ title: Run and customize on-demand scans in Microsoft Defender AV
 description: Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Security app
 keywords: scan, on-demand, dos, intune, instant scan
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -11,52 +11,65 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 11/13/2020
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Configure and run on-demand Microsoft Defender Antivirus scans
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 You can run an on-demand scan on individual endpoints. These scans will start immediately, and you can define parameters for the scan, such as the location or type.
 
-
 ## Quick scan versus full scan
 
-Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
+Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders.
 
-Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md)--which reviews files when they are opened and closed, and whenever a user navigates to a folder--a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
+> [!IMPORTANT]
+> Microsoft Defender Antivirus runs in the context of the [LocalSystem](https://docs.microsoft.com/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share.
 
-In most instances, this means a quick scan is adequate to find malware that wasn't picked up by real-time protection.
+Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md)--which reviews files when they're opened and closed, and whenever a user navigates to a folder--a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
 
-A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up, and can be ideal when running on-demand scans.
+In most instances, a quick scan is adequate to find malware that wasn't picked up by real-time protection.
 
->[!NOTE]
->By default, quick scans run on mounted removable devices, such as USB drives.
+A full scan can be useful on endpoints that have reported a malware threat. The scan can identify if there are any inactive components that require a more thorough clean-up. This is  ideal if your organization is running on-demand scans.
 
-## Use Configuration Manager to run a scan
+> [!NOTE]
+> By default, quick scans run on mounted removable devices, such as USB drives.
 
-See [Antimalware and firewall tasks: How to perform an on-demand scan](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers) for details on using Microsoft Endpoint Configuration Manager (current branch) to run a scan.
+## Use Microsoft Endpoint Manager to run a scan
+
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+2. Choose **Endpoint security** > **Antivirus**.
+3. In the list of tabs, select **Windows 10 unhealthy endpoints**.
+4. From the list of actions provided, select **Quick Scan** or **Full Scan**.
+
+[ ![IMAGE](images/mem-antivirus-scan-on-demand.png) ](images/mem-antivirus-scan-on-demand.png#lightbox)
+
+> [!TIP]
+> For more information about using Microsoft Endpoint Manager to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
 
 ## Use the mpcmdrun.exe command-line utility to run a scan
 
 Use the following `-scan` parameter:
 
-```DOS
+```console
 mpcmdrun.exe -scan -scantype 1
 ```
-See [Use the mpcmdrun.exe commandline tool to configure and manage Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md) for more information on how to use the tool and additional parameters, including starting a full scan or defining paths.
+
+For more information about how to use the tool and additional parameters, including starting a full scan, or defining paths, see [Use the mpcmdrun.exe commandline tool to configure and manage Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md).
 
 ## Use Microsoft Intune to run a scan
 
-1. In Intune, go to **Devices > All Devices** and select the device you want to scan.
-
-2. Select **...More** and then select **Quick Scan** or **Full Scan**.
-
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+2. From the sidebar, select **Devices > All Devices** and choose the device you want to scan.
+3. Select **...More**. From the options, select **Quick Scan** or **Full Scan**.
 
 ## Use the Windows Security app to run a scan
 
@@ -69,15 +82,14 @@ Use the following cmdlet:
 ```PowerShell
 Start-MpScan
 ```
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+
+For more information on how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
 
 ## Use Windows Management Instruction (WMI) to run a scan
 
-Use the [**Start** method of the **MSFT_MpScan**](https://msdn.microsoft.com/library/dn455324(v=vs.85).aspx#methods) class.
+Use the [**Start** method](https://docs.microsoft.com/previous-versions/windows/desktop/defender/start-msft-mpscan) of the **MSFT_MpScan** class.
 
-See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
-
+For more information about which parameters are allowed, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 ## Related articles
 

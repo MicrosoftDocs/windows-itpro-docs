@@ -131,4 +131,4 @@ This section contains advanced troubleshooting topics and links to help you reso
 
 ## Other Resources
 
-### [Troubleshooting Windows Server components](https://docs.microsoft.com/windows-server/troubleshoot/windows-server-support-solutions)
+- [Troubleshooting Windows Server components](https://docs.microsoft.com/windows-server/troubleshoot/windows-server-troubleshooting)

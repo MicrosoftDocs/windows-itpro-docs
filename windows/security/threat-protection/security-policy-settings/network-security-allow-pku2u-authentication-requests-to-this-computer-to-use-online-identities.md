@@ -4,7 +4,7 @@ description: Best practices for the Network Security Allow PKU2U authentication 
 ms.assetid: e04a854e-d94d-4306-9fb3-56e9bd7bb926
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network security: Allow PKU2U authentication requests to this computer to use online identities
@@ -82,6 +83,8 @@ Set this policy to *Disabled* or don't configure this security policy for domain
 ### Potential impact
 
 If you don't set or you disable this policy, the PKU2U protocol won't be used to authenticate between peer devices, which forces users to follow domain-defined access control policies. If you enable this policy, you allow your users to authenticate by using local certificates between systems that aren't part of a domain that uses PKU2U. This configuration allows users to share resources between devices.
+
+Please be aware that some roles/features (such as Failover Clustering) do not utilize a domain account for its PKU2U authentication and will cease to function properly when disabling this policy.
 
 ## Related topics
 

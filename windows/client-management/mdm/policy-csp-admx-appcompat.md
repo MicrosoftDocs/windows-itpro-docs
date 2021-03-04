@@ -79,19 +79,19 @@ manager: dansimp
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -108,7 +108,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether to prevent the MS-DOS subsystem (**ntvdm.exe**) from running on this computer. This setting affects the launching of 16-bit applications in the operating system.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether to prevent the MS-DOS subsystem (**ntvdm.exe**) from running on this computer. This setting affects the launching of 16-bit applications in the operating system.
 
 You can use this setting to turn off the MS-DOS subsystem, which will reduce resource usage and prevent users from running 16-bit applications. To run any 16-bit application or any application with 16-bit components, **ntvdm.exe** must be allowed to run. The MS-DOS subsystem starts when the first 16-bit application is launched. While the MS-DOS subsystem is running, any subsequent 16-bit applications launch faster, but overall resource usage on the system is increased.
 
@@ -156,19 +156,19 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -185,7 +185,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the visibility of the Program Compatibility property page shell extension. This shell extension is visible on the property context-menu of any program shortcut or executable file.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the visibility of the Program Compatibility property page shell extension. This shell extension is visible on the property context-menu of any program shortcut or executable file.
 
 The compatibility property page displays a list of options that can be selected and applied to the application to resolve the most common issues affecting legacy applications.
 
@@ -227,19 +227,19 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -256,7 +256,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. The policy setting controls the state of the Application Telemetry engine in the system.
+Available in the latest Windows 10 Insider Preview Build. The policy setting controls the state of the Application Telemetry engine in the system.
 
 Application Telemetry is a mechanism that tracks anonymous usage of specific Windows system components by applications.
 
@@ -302,19 +302,19 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -331,7 +331,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. The policy setting controls the state of the Switchback compatibility engine in the system.
+Available in the latest Windows 10 Insider Preview Build. The policy setting controls the state of the Switchback compatibility engine in the system.
 
 Switchback is a mechanism that provides generic compatibility mitigations to older applications by providing older behavior to old applications and new behavior to new applications.
 
@@ -378,19 +378,19 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -407,7 +407,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the state of the application compatibility engine in the system.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the state of the application compatibility engine in the system.
 
 The engine is part of the loader and looks through a compatibility database every time an application is started on the system. If a match for the application is found it provides either run-time solutions or compatibility fixes, or displays an Application Help message if the application has a know problem.
 
@@ -456,19 +456,19 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -485,7 +485,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
+Available in the latest Windows 10 Insider Preview Build. This policy setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 
 <!--/Description-->
 
@@ -523,19 +523,19 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -552,7 +552,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the state of the Program Compatibility Assistant (PCA). The PCA monitors applications run by the user. When a potential compatibility issue with an application is detected, the PCA will prompt the user with recommended solutions. To configure the diagnostic settings for the PCA, go to System->Troubleshooting and Diagnostics->Application Compatibility Diagnostics.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the state of the Program Compatibility Assistant (PCA). The PCA monitors applications run by the user. When a potential compatibility issue with an application is detected, the PCA will prompt the user with recommended solutions. To configure the diagnostic settings for the PCA, go to System->Troubleshooting and Diagnostics->Application Compatibility Diagnostics.
 
 If you enable this policy setting, the PCA will be turned off. The user will not be presented with solutions to known compatibility issues when running applications. Turning off the PCA can be useful for system administrators who require better performance and are already aware of application compatibility issues.
 
@@ -597,19 +597,19 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -626,7 +626,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the state of Steps Recorder.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the state of Steps Recorder.
 
 Steps Recorder keeps a record of steps taken by the user. The data generated by Steps Recorder can be used in feedback systems such as Windows Error Reporting to help developers understand and fix problems. The data includes user actions such as keyboard input and mouse input, user interface data, and screenshots.  Steps Recorder includes an option to turn on and off data collection.
 
@@ -670,19 +670,19 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -699,7 +699,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the state of the Inventory Collector. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the state of the Inventory Collector. 
 
 The Inventory Collector inventories applications, files, devices, and drivers on the system and sends the information to Microsoft. This information is used to help diagnose compatibility problems.
 
@@ -731,14 +731,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

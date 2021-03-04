@@ -72,23 +72,23 @@ manager: dansimp
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -106,7 +106,7 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 
-Available in Windows 10 Insider Preview Build 20185. The policy setting specifies the category of programs that appears when users open the "Add New Programs" page. If you enable this setting, only the programs in the category you specify are displayed when the "Add New Programs" page opens. You can use the Category box on the "Add New Programs" page to display programs in other categories. 
+Available in the latest Windows 10 Insider Preview Build. The policy setting specifies the category of programs that appears when users open the "Add New Programs" page. If you enable this setting, only the programs in the category you specify are displayed when the "Add New Programs" page opens. You can use the Category box on the "Add New Programs" page to display programs in other categories. 
 
 To use this setting, type the name of a category in the Category box for this setting. You must enter a category that is already defined in Add or Remove Programs. To define a category, use Software Installation.
 
@@ -155,23 +155,23 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -189,7 +189,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-Available in Windows 10 Insider Preview Build 20185. This policy setting removes the "Add a program from CD-ROM or floppy disk" section from the Add New Programs page. This prevents users from using Add or Remove Programs to install programs from removable media.
+Available in the latest Windows 10 Insider Preview Build. This policy setting removes the "Add a program from CD-ROM or floppy disk" section from the Add New Programs page. This prevents users from using Add or Remove Programs to install programs from removable media.
 
 If you disable this setting or do not configure it, the "Add a program from CD-ROM or floppy disk" option is available to all users. This setting does not prevent users from using other tools and methods to add or remove program components.
 
@@ -236,23 +236,23 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -270,7 +270,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-Available in Windows 10 Insider Preview Build 20185. This policy setting removes the "Add programs from Microsoft" section from the Add New Programs page. This setting prevents users from using Add or Remove Programs to connect to Windows Update.
+Available in the latest Windows 10 Insider Preview Build. This policy setting removes the "Add programs from Microsoft" section from the Add New Programs page. This setting prevents users from using Add or Remove Programs to connect to Windows Update.
 
 If you disable this setting or do not configure it, "Add programs from Microsoft" is available to all users. This setting does not prevent users from using other tools and methods to connect to Windows Update.
 
@@ -317,23 +317,23 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -351,7 +351,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from viewing or installing published programs. This setting removes the "Add programs from your network" section from the Add New Programs page. The "Add programs from your network" section lists published programs and provides an easy way to install them. Published programs are those programs that the system administrator has explicitly made available to the user with a tool such as Windows Installer. Typically, system administrators publish programs to notify users that the programs are available, to recommend their use, or to enable users to install them without having to search for installation files. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from viewing or installing published programs. This setting removes the "Add programs from your network" section from the Add New Programs page. The "Add programs from your network" section lists published programs and provides an easy way to install them. Published programs are those programs that the system administrator has explicitly made available to the user with a tool such as Windows Installer. Typically, system administrators publish programs to notify users that the programs are available, to recommend their use, or to enable users to install them without having to search for installation files. 
 
 If you enable this setting, users cannot tell which programs have been published by the system administrator, and they cannot use Add or Remove Programs to install published programs. However, they can still install programs by using other methods, and they can view and install assigned (partially installed) programs that are offered on the desktop or on the Start menu. 
 
@@ -399,23 +399,23 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -433,7 +433,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-Available in Windows 10 Insider Preview Build 20185. This policy setting removes the Add New Programs button from the Add or Remove Programs bar. As a result, users cannot view or change the attached page. The Add New Programs button lets users install programs published or assigned by a system administrator.
+Available in the latest Windows 10 Insider Preview Build. This policy setting removes the Add New Programs button from the Add or Remove Programs bar. As a result, users cannot view or change the attached page. The Add New Programs button lets users install programs published or assigned by a system administrator.
 
 If you disable this setting or do not configure it, the Add New Programs button is available to all users. This setting does not prevent users from using other tools and methods to install programs.
 
@@ -477,23 +477,23 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -511,7 +511,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from using Add or Remove Programs. This setting removes Add or Remove Programs from Control Panel and removes the Add or Remove Programs item from menus. Add or Remove Programs lets users install, uninstall, repair, add, and remove features and components of Windows 2000 Professional and a wide variety of Windows programs. Programs published or assigned to the user appear in Add or Remove Programs. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from using Add or Remove Programs. This setting removes Add or Remove Programs from Control Panel and removes the Add or Remove Programs item from menus. Add or Remove Programs lets users install, uninstall, repair, add, and remove features and components of Windows 2000 Professional and a wide variety of Windows programs. Programs published or assigned to the user appear in Add or Remove Programs. 
 
 If you disable this setting or do not configure it, Add or Remove Programs is available to all users. When enabled, this setting takes precedence over the other settings in this folder. This setting does not prevent users from using other tools and methods to install or uninstall programs.
 
@@ -555,23 +555,23 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -589,7 +589,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-Available in Windows 10 Insider Preview Build 20185. This policy setting removes the Set Program Access and Defaults button from the Add or Remove Programs bar. As a result, users cannot view or change the associated page. The Set Program Access and Defaults button lets administrators specify default programs for certain activities, such as Web browsing or sending e-mail, as well as which programs are accessible from the Start menu, desktop, and other locations. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting removes the Set Program Access and Defaults button from the Add or Remove Programs bar. As a result, users cannot view or change the associated page. The Set Program Access and Defaults button lets administrators specify default programs for certain activities, such as Web browsing or sending e-mail, as well as which programs are accessible from the Start menu, desktop, and other locations. 
 
 If you disable this setting or do not configure it, the Set Program Access and Defaults button is available to all users. This setting does not prevent users from using other tools and methods to change program access or defaults. This setting does not prevent the Set Program Access and Defaults icon from appearing on the Start menu. See the "Remove Set Program Access and Defaults from Start menu" setting.
 
@@ -634,23 +634,23 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -668,7 +668,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-Available in Windows 10 Insider Preview Build 20185. This policy setting removes the Change or Remove Programs button from the Add or Remove Programs bar. As a result, users cannot view or change the attached page. The Change or Remove Programs button lets users uninstall, repair, add, or remove features of installed programs.
+Available in the latest Windows 10 Insider Preview Build. This policy setting removes the Change or Remove Programs button from the Add or Remove Programs bar. As a result, users cannot view or change the attached page. The Change or Remove Programs button lets users uninstall, repair, add, or remove features of installed programs.
 
 If you disable this setting or do not configure it, the Change or Remove Programs page is available to all users. This setting does not prevent users from using other tools and methods to delete or uninstall programs.
 
@@ -712,23 +712,23 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -746,7 +746,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from using Add or Remove Programs to configure installed services. This setting removes the "Set up services" section of the Add/Remove Windows Components page. The "Set up services" section lists system services that have not been configured and offers users easy access to the configuration tools.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from using Add or Remove Programs to configure installed services. This setting removes the "Set up services" section of the Add/Remove Windows Components page. The "Set up services" section lists system services that have not been configured and offers users easy access to the configuration tools.
 
 If you disable this setting or do not configure it, "Set up services" appears only when there are unconfigured system services. If you enable this setting, "Set up services" never appears. This setting does not prevent users from using other methods to configure services.
 
@@ -793,23 +793,23 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -827,7 +827,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-Available in Windows 10 Insider Preview Build 20185. This policy setting removes links to the Support Info dialog box from programs on the Change or Remove Programs page. Programs listed on the Change or Remove Programs page can include a "Click here for support information" hyperlink. When clicked, the hyperlink opens a dialog box that displays troubleshooting information, including a link to the installation files and data that users need to obtain product support, such as the Product ID and version number of the program. The dialog box also includes a hyperlink to support information on the Internet, such as the Microsoft Product Support Services Web page.
+Available in the latest Windows 10 Insider Preview Build. This policy setting removes links to the Support Info dialog box from programs on the Change or Remove Programs page. Programs listed on the Change or Remove Programs page can include a "Click here for support information" hyperlink. When clicked, the hyperlink opens a dialog box that displays troubleshooting information, including a link to the installation files and data that users need to obtain product support, such as the Product ID and version number of the program. The dialog box also includes a hyperlink to support information on the Internet, such as the Microsoft Product Support Services Web page.
 
 If you disable this setting or do not configure it, the Support Info hyperlink appears.
 
@@ -874,23 +874,23 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -908,7 +908,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-Available in Windows 10 Insider Preview Build 20185. This policy setting removes the Add/Remove Windows Components button from the Add or Remove Programs bar. As a result, users cannot view or change the associated page. The Add/Remove Windows Components button lets users configure installed services and use the Windows Component Wizard to add, remove, and configure components of Windows from the installation files.
+Available in the latest Windows 10 Insider Preview Build. This policy setting removes the Add/Remove Windows Components button from the Add or Remove Programs bar. As a result, users cannot view or change the associated page. The Add/Remove Windows Components button lets users configure installed services and use the Windows Component Wizard to add, remove, and configure components of Windows from the installation files.
 
 If you disable this setting or do not configure it, the Add/Remove Windows Components button is available to all users. This setting does not prevent users from using other tools and methods to configure services or add or remove program components. However, this setting blocks user access to the Windows Component Wizard.
 
@@ -941,14 +941,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

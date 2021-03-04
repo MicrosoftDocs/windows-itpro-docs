@@ -27,7 +27,7 @@ Use for settings related to Maps.
 
 ## ChinaVariantWin10
 
-Use **ChinaVariantWin10** to specify that the Windows device is intended to ship in China. When set to **True**, maps approved by the State Bureau of Surveying and Mapping in China are used, which are obtained from a server located in China.
+Use **ChinaVariantWin10** to specify that the Windows device is intended to ship in China. When set to **True**, maps approved by the State Bureau of Surveying and Mapping in China are used. These maps are obtained from a server located in China.
 
 This customization may result in different maps, servers, or other configuration changes on the device.
 
@@ -38,7 +38,7 @@ Use to store map data on an SD card.
 
 Map data is used by the Maps application and the map control for third-party applications. This data can be store on an SD card, which provides the advantage of saving internal memory space for user data and allows the user to download more offline map data. Microsoft recommends enabling the **UseExternalStorage** setting on devices that have less than 8 GB of user storage and an SD card slot.
 
-You can use **UseExternalStorage** whether or not you include an SD card with preloaded map data on the phone. If set to **True**, the OS only allows the user to download offline maps when an SD card is present. If an SD card is not present, users can still view and cache maps, but they will not be able to download a region of offline maps until an SD card is inserted.
+You can use **UseExternalStorage** whether or not you include an SD card with preloaded map data on the phone. If set to **True**, the OS only allows the user to download offline maps when an SD card is present. If no SD card is present, users can view and cache maps, but they can't download a region of offline maps until an SD card is inserted.
 
 If set to **False**, map data will always be stored on the internal data partition of the device.
 
@@ -47,4 +47,4 @@ If set to **False**, map data will always be stored on the internal data partiti
 
 ## UseSmallerCache
 
-Do not use.
+Don't use this setting.

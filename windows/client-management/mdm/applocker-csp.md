@@ -35,7 +35,7 @@ Defines restrictions for applications.
 > Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
 
 > [!NOTE]
-> Deploying policies via the AppLocker CSP will force a reboot during OOBE.
+> The AppLocker CSP will schedule a reboot when a policy is applied or a deletion occurs using the AppLocker/ApplicationLaunchRestrictions/Grouping/CodeIntegrity/Policy URI.
 
 Additional information:
 
@@ -289,9 +289,9 @@ The following table show the mapping of information to the AppLocker publisher r
 Here is an example AppLocker publisher rule:
 
 ``` syntax
-FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Reader" BinaryName="*">
+<FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Reader" BinaryName="*">
   <BinaryVersionRange LowSection="*" HighSection="*" />
-  </FilePublisherCondition>
+</FilePublisherCondition>
 ```
 
 You can get the publisher name and product name of apps using a web API.
@@ -299,7 +299,7 @@ You can get the publisher name and product name of apps using a web API.
 **To find publisher and product name for Microsoft apps in Microsoft Store for Business**
 
 1.  Go to the Microsoft Store for Business website, and find your app. For example, Microsoft OneNote.
-2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https:<span><\span>//www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
+2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
 3.  In your browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values.
 
     <table>
@@ -313,14 +313,11 @@ You can get the publisher name and product name of apps using a web API.
     </thead>
     <tbody>
     <tr class="odd">
-    <td><p>https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata</p></td>
+    <td><p><code>https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata</code></p></td>
     </tr>
     </tbody>
     </table>
 
-
-
-~~~
 Here is the example for Microsoft OneNote:
 
 Request
@@ -339,7 +336,6 @@ Result
   "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 }
 ```
-~~~
 
 <table>
 <colgroup>
@@ -484,7 +480,7 @@ The following list shows the apps that may be included in the inbox.
 <td></td>
 </tr>
 <tr class="odd">
-<td>Colour profile</td>
+<td>Color profile</td>
 <td>b08997ca-60ab-4dce-b088-f92e9c7994f3</td>
 <td></td>
 </tr>

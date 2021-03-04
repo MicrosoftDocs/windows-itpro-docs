@@ -165,7 +165,10 @@ The following image illustrates how MDM applications will show up in the Azure a
 
 ### Add cloud-based MDM to the app gallery
 
-You should work with the Azure AD engineering team if your MDM application is cloud-based. The following table shows the required information to create an entry in the Azure AD app gallery.
+> [!NOTE]
+> You should work with the Azure AD engineering team if your MDM application is cloud-based and needs to be enabled as a multi-tenant MDM application 
+
+The following table shows the required information to create an entry in the Azure AD app gallery.
 
 <table>
 <colgroup>

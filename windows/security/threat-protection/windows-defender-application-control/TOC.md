@@ -1,6 +1,7 @@
 # [Application Control for Windows](windows-defender-application-control.md)
 ## [WDAC and AppLocker Overview](wdac-and-applocker-overview.md)
 ### [WDAC and AppLocker Feature Availability](feature-availability.md)
+### [Virtualization-based code integrity](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
 
 ## [WDAC design guide](windows-defender-application-control-design-guide.md)
@@ -13,12 +14,19 @@
 #### [Authorize reputable apps with Intelligent Security Graph (ISG)](use-windows-defender-application-control-with-intelligent-security-graph.md)
 #### [Use multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md)
 #### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
+#### [Microsoft recommended driver block rules](microsoft-recommended-driver-block-rules.md)
 ### Create your initial WDAC policy
 #### [Example WDAC base policies](example-wdac-base-policies.md)
 #### [Policy creation for common WDAC usage scenarios](types-of-devices.md)
 ##### [Create a WDAC policy for lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md)
 ##### [Create a WDAC policy for fully-managed devices](create-wdac-policy-for-fully-managed-devices.md)
 ##### [Create a WDAC policy for fixed-workload devices](create-initial-default-policy.md)
+##### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
+#### [Using the WDAC Wizard tool](wdac-wizard.md)
+##### [Create a base WDAC policy with the Wizard](wdac-wizard-create-base-policy.md)
+##### [Create a supplemental WDAC policy with the Wizard](wdac-wizard-create-supplemental-policy.md)
+##### [Editing a WDAC policy with the Wizard](wdac-wizard-editing-policy.md)
+##### [Merging multiple WDAC policies with the Wizard](wdac-wizard-merging-policies.md)
 
 
 ## [Windows Defender Application Control deployment guide](windows-defender-application-control-deployment-guide.md)

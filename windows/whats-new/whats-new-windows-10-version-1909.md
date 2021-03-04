@@ -32,7 +32,7 @@ If you are updating from an older version of Windows 10 (version 1809 or earlier
 
 ### Windows Server Update Services (WSUS)
 
-Pre-release Windows 10 feature updates are now available to IT administrators using WSUS. Microsoft Endpoint Configuration Manager version 1906 or later is required. For more information, see [Publishing pre-release Windows 10 feature updates to WSUS](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054).
+Pre-release Windows 10 feature updates are now available to IT administrators using WSUS. Microsoft Endpoint Manager version 1906 or later is required. For more information, see [Publishing pre-release Windows 10 feature updates to WSUS](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054).
 
 The Windows 10, version 1909 enablement package will be available on WSUS as [KB4517245](https://support.microsoft.com/kb/4517245), which can be deployed on existing deployments of Windows 10, version 1903. 
 
@@ -130,7 +130,6 @@ General battery life and power efficiency improvements for PCs with certain proc
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
 [What Windows 10, version 1909 Means for Developers](https://blogs.windows.com/windowsdeveloper/2019/10/16/what-windows-10-version-1909-means-for-developers/): New and updated features in Windows 10 that are of interest to developers.<br>
-[What's new in Windows 10, version 1909 - Windows Insiders](https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-1909): This list also includes consumer focused new features.<br>
 [Features and functionality removed in Windows 10](https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
 [Windows 10 features we’re no longer developing](https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
 [How to get the Windows 10 November 2019 Update](https://aka.ms/how-to-get-1909): John Cable blog.<br>

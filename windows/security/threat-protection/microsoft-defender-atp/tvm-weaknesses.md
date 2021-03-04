@@ -1,10 +1,10 @@
 ---
-title: Weaknesses found by threat and vulnerability management
-description: Lists the common vulnerabilities and exposures (CVE) ID of weaknesses found in the software running in your organization. Discovered by the Microsoft Defender ATP threat and vulnerability management capability. 
-keywords: mdatp threat & vulnerability management, threat and vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm 
+title: Vulnerabilities in my organization - threat and vulnerability management
+description: Lists the common vulnerabilities and exposures (CVE) ID of weaknesses found in the software running in your organization. Discovered by the Microsoft Defender ATP threat and vulnerability management capability.
+keywords: mdatp threat & vulnerability management, threat and vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,28 +13,32 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
-# Weaknesses found by threat and vulnerability management
+# Vulnerabilities in my organization - threat and vulnerability management
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+Threat and vulnerability management uses the same signals in Defender for Endpoint's endpoint protection to scan and detect vulnerabilities.
 
-Threat and vulnerability management uses the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
+The **Weaknesses** page lists the software vulnerabilities your devices are exposed to by listing the Common Vulnerabilities and Exposures (CVE) ID. You can also view the severity, Common Vulnerability Scoring System (CVSS) rating, prevalence in your organization, corresponding breach, threat insights, and more.
 
-The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization by listing the Common Vulnerabilities and Exposures (CVE) ID. You can also view the severity, Common Vulnerability Scoring System (CVSS) rating, prevalence in your organization, corresponding breach, threat insights, and more.
+>[!NOTE]
+>If there is no official CVE-ID assigned to a vulnerability, the vulnerability name is assigned by threat and vulnerability management.
 
->[!IMPORTANT]
->To boost your vulnerability assessment detection rates, you can download the following mandatory security updates and deploy them in your network:
->- 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
->- RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
->- RS4 customers | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
->- RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+>[!TIP]
+>To get emails about new vulnerability events, see [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
 
 ## Navigate to the Weaknesses page
 
@@ -64,7 +68,7 @@ Remediate the vulnerabilities in exposed devices to reduce the risk to your asse
 
 ### Breach and threat insights
 
-View related breach and threat insights in the **Threat** column when the icons are colored red.
+View any related breach and threat insights in the **Threat** column when the icons are colored red.
 
  >[!NOTE]
  > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight icon ![Simple drawing of a red bug.](images/tvm_bug_icon.png) and breach insight icon ![Simple drawing of an arrow hitting a target.](images/tvm_alert_icon.png).  
@@ -72,17 +76,26 @@ View related breach and threat insights in the **Threat** column when the icons 
 The breach insights icon is highlighted if there's a vulnerability found in your organization.
 ![Example of a breach insights text that could show up when hovering over icon. This one says "possible active alert is associated with this recommendation.](images/tvm-breach-insights.png)
 
-The threat insights icon is highlighted if there are associated exploits in the vulnerability found in your organization. Hovering over the icon shows whether the threat is a part of an exploit kit, or connected to specific advanced persistent campaigns or activity groups. When available, there is a link to a Threat Analytics report with zero-day exploitation news, disclosures, or related security advisories.  
+The threat insights icon is highlighted if there are associated exploits in the vulnerability found in your organization. Hovering over the icon shows whether the threat is a part of an exploit kit, or connected to specific advanced persistent campaigns or activity groups. When available, there's a link to a Threat Analytics report with zero-day exploitation news, disclosures, or related security advisories.  
 
 ![Threat insights text that that could show up when hovering over icon. This one has multiple bullet points and linked text.](images/tvm-threat-insights.png)
 
 ### Gain vulnerability insights
 
-If you select a CVE, a flyout panel will open with more information, including the vulnerability description, details, threat insights, and exposed devices.
+If you select a CVE, a flyout panel will open with more information such as the vulnerability description, details, threat insights, and exposed devices.
 
-The "OS Feature" category is shown in relevant scenarios.
+- The "OS Feature" category is shown in relevant scenarios
+- You can go to the related security recommendation for every CVE with exposed device
 
  ![Weakness flyout example.](images/tvm-weakness-flyout400.png)
+
+### Software that isn't supported
+
+CVEs for software that isn't currently supported by threat & vulnerability management is still present in the Weaknesses page. Because the software is not supported, only limited data will be available.
+
+Exposed device information will not be available for CVEs with unsupported software. Filter by unsupported software by selecting the "Not available" option in the "Exposed devices" section.
+
+ ![Exposed devices filter.](images/tvm-exposed-devices-filter.png)
 
 ## View Common Vulnerabilities and Exposures (CVE) entries in other places
 
@@ -105,12 +118,12 @@ View related weaknesses information in the device page.
 1. Go to the Microsoft Defender Security Center navigation menu bar, then select the device icon. The **Devices list** page opens.
 2. In the **Devices list** page, select the device name that you want to investigate.
 
-    ![Screenshot of device list with selected device to investigate](images/tvm_machinetoinvestigate.png)
+    ![Device list with selected device to investigate.](images/tvm_machinetoinvestigate.png)
 
 3. The device page will open with details and response options for the device you want to investigate.
 4. Select **Discovered vulnerabilities**.
 
-    ![Screenshot of the device page with details and response options](images/tvm-discovered-vulnerabilities.png)
+    ![Device page with details and response options.](images/tvm-discovered-vulnerabilities.png)
 
 5. Select the vulnerability that you want to investigate to open up a flyout panel with the CVE details, such as: vulnerability description, threat insights, and detection logic.
 
@@ -131,17 +144,10 @@ Report a false positive when you see any vague, inaccurate, or incomplete inform
 3. Select the inaccuracy category from the drop-down menu and fill in your email address and inaccuracy details.
 4. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
 
-## Related topics
+## Related articles
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
-- [Supported operating systems and platforms](tvm-supported-os.md)
-- [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
-- [Exposure score](tvm-exposure-score.md)
-- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
-- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
-- [Event timeline](threat-and-vuln-mgt-event-timeline.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Dashboard insights](tvm-dashboard-insights.md)
+- [View and organize the Microsoft Defender for Endpoint Devices list](machines-view-overview.md)
