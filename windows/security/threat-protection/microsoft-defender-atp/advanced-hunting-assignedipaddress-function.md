@@ -1,7 +1,7 @@
 ---
-title: AssignedIPAddresses() function in advanced hunting for Microsoft Defender Advanced Threat Protection
+title: AssignedIPAddresses() function in advanced hunting for Microsoft Defender for Endpoint
 description: Learn how to use the AssignedIPAddresses() function to get the latest IP addresses assigned to a device
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, Microsoft Defender ATP, Microsoft Defender Advanced Threat Protection, Windows Defender, Windows Defender ATP, Windows Defender Advanced Threat Protection, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, Microsoft Defender ATP, Microsoft Defender for Endpoint, Windows Defender, Windows Defender ATP, Windows Defender Advanced Threat Protection, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
