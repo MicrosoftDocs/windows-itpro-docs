@@ -29,7 +29,7 @@ If you are planning to switch from Symantec Endpoint Protection (Symantec) to [M
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 :::image type="content" source="images/symantec-mde-migration.png" alt-text="Overview of migrating from Symantec to Defender for Endpoint":::
 
