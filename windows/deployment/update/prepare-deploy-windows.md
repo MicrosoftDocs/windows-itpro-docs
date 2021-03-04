@@ -41,13 +41,13 @@ Your infrastructure probably includes many different components and tools. You�
 
 You should also look at your organization’s environment’s configuration and outline how you’ll implement any necessary changes previously identified in the plan phase to support the update. Consider what you’ll need to do for the various settings and policies that currently underpin the environment. For example:
 
-- Implement new draft security guidance. New versions of Windows can include new features that improve your environment’s security. Your security teams will want to make appropriate changes to security related configurations.
+- Implement new draft security guidance. New versions of Windows can include new features that improve your environment’s security. Your security teams will want to make appropriate changes to security-related configurations.
 
 - Update security baselines. Security teams understand the relevant security baselines and will have to work to make sure all baselines fit into whatever guidance they have to adhere to.
 
 However, your configuration will consist of many different settings and policies. It’s important to only apply changes where they are necessary, and where you gain a clear improvement. Otherwise, your environment might face issues that will slow down the update process. You want to ensure your environment isn’t affected adversely because of changes you make. For example:
 
-1.	Review new security settings. Your security team will review the new security settings, to understand how they can best be set to facilitate the update, and to also investigate the potential effects they might have on your environment.
+1.	Review new security settings. Your security team will review the new security settings to understand how they can best be set to facilitate the update, and to also investigate the potential effects they might have on your environment.
 
 2.	Review security baselines for changes. Security teams will also review all the necessary security baselines, to ensure the changes can be implemented, and ensure your environment remains compliant.
 
@@ -98,7 +98,24 @@ You can check these services manually by using Services.msc, or by using PowerSh
 
 ### Network configuration
 
-Ensure that devices can reach necessary Windows Update endpoints through the firewall. 
+Ensure that devices can reach necessary Windows Update endpoints through the firewall. For example, for Windows 10, version 2004, the following protocols must be able to reach these respective endpoints:
+
+
+|Protocol  |Endpoint URL  |
+|---------|---------|
+|TLS 1.2         |  `*.prod.do.dsp.mp.microsoft.com`      |
+|HTTP     | `emdl.ws.microsoft.com`        |
+|HTTP     | `*.dl.delivery.mp.microsoft.com`        |
+|HTTP     |  `*.windowsupdate.com`       |
+|HTTPS     |  `*.delivery.mp.microsoft.com`       |
+|TLS 1.2     | `*.update.microsoft.com`        |
+|TLS 1.2     |  `tsfe.trafficshaping.dsp.mp.microsoft.com`       |
+
+> [!NOTE]
+> Be sure not to use HTTPS for those endpoints that specify HTTP, and vice versa. The connection will fail.
+
+The specific endpoints can vary between Windows 10 versions. See, for example, [Windows 10 2004 Enterprise connection endpoints](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints). Similar articles for other Windows 10 versions are available in the table of contents nearby.
+
 
 ### Optimize download bandwidth
 Set up [Delivery Optimization](waas-delivery-optimization.md) for peer network sharing or Microsoft Connected Cache.

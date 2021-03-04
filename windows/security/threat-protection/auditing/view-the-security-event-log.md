@@ -4,7 +4,7 @@ description: The security log records each event as defined by the audit policie
 ms.assetid: 20DD2ACD-241A-45C5-A92F-4BE0D9F198B9
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # View the security event log

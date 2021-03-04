@@ -1,6 +1,6 @@
 ---
 title: Create a custom Windows PE boot image with Configuration Manager (Windows 10)
-description: In Microsoft Endpoint Configuration Manager, you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features.
+description: Learn how to create custom Windows Preinstallation Environment (Windows PE) boot images in Microsoft Endpoint Configuration Manager.
 ms.assetid: b9e96974-324d-4fa4-b0ce-33cfc49c4809
 ms.reviewer: 
 manager: laurawi
@@ -13,6 +13,7 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Create a custom Windows PE boot image with Configuration Manager
@@ -71,8 +72,8 @@ On **CM01**:
 8.  In the Distribute Content Wizard, add the CM01 distribution point, and complete the wizard.
 9.  Using Configuration Manager Trace, review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Do not continue until you can see that the boot image is distributed. Look for the line that reads **STATMSG: ID=2301**. You also can monitor Content Status in the Configuration Manager Console at **\Monitoring\Overview\Distribution Status\Content Status\Zero Touch WinPE x64**. See the following examples:
 
-    ![Content status for the Zero Touch WinPE x64 boot image](../images/fig16-contentstatus1.png "Content status for the Zero Touch WinPE x64 boot image")<br>
-    ![Content status for the Zero Touch WinPE x64 boot image](../images/fig16-contentstatus2.png "Content status for the Zero Touch WinPE x64 boot image")
+    ![Content status for the Zero Touch WinPE x64 boot image step 1](../images/fig16-contentstatus1.png)<br>
+    ![Content status for the Zero Touch WinPE x64 boot image step 2](../images/fig16-contentstatus2.png)
 
     Content status for the Zero Touch WinPE x64 boot image
 
@@ -81,8 +82,8 @@ On **CM01**:
 12. Using Configuration Manager Trace, review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for this text: **Expanding PS100009 to D:\\RemoteInstall\\SMSImages**.
 13. Review the **D:\\RemoteInstall\\SMSImages** folder. You should see three folders containing boot images. Two are from the default boot images, and the third folder (PS100009) is from your new boot image with DaRT. See the examples below:
 
-    ![PS100009-1](../images/ps100009-1.png)<br>
-    ![PS100009-2](../images/ps100009-2.png)
+    ![PS100009 step 1](../images/ps100009-1.png)<br>
+    ![PS100009 step 2](../images/ps100009-2.png)
 
 >Note: Depending on your infrastructure and the number of packages and boot images present, the Image ID might be a different number than PS100009.
 

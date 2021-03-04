@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -82,20 +82,24 @@ Beginning with Windows 10 version 1809, you can use Security Center to check if 
 ### Using System information
 
 1. Launch MSINFO32.exe in a command prompt, or in the Windows search bar.
+
 2. Check the value of **Kernel DMA Protection**.
+
    ![Kernel DMA protection in System Information](bitlocker/images/kernel-dma-protection.png)
+   
 3. If the current state of **Kernel DMA Protection** is OFF and **Hyper-V - Virtualization Enabled in Firmware** is NO:
+
    - Reboot into BIOS settings
    - Turn on Intel Virtualization Technology.
    - Turn on Intel Virtualization Technology for I/O (VT-d). In Windows 10 version 1803, only Intel VT-d is supported. Other platforms can use DMA attack mitigations described in [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md).
    - Reboot system into Windows 10.
 
->[!NOTE]
-> **Hyper-V - Virtualization Enabled in Firmware** is NOT shown when **A hypervisor has been detected. Features required for Hyper-V will not be displayed.** is shown because this means that **Hyper-V - Virtualization Enabled in Firmware** is YES.
+   >[!NOTE]
+   > **Hyper-V - Virtualization Enabled in Firmware** is not available when **A hypervisor has been detected. Features required for Hyper-V will not be displayed.** is displayed. This means that **Hyper-V - Virtualization Enabled in Firmware** is set to Yes and the **Hyper-V** Windows feature is enabled. Enabling Hyper-V virtualization in Firmware (IOMMU) is required to enable **Kernel DMA Protection**, even when the firmware has the flag of "ACPI Kernel DMA Protection Indicators" described in [Kernel DMA Protection (Memory Access Protection) for OEMs](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-kernel-dma-protection).
 
 4. If the state of **Kernel DMA Protection** remains Off, then the system does not support this feature. 
 
-For systems that do not support Kernel DMA Protection, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
+   For systems that do not support Kernel DMA Protection, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
 
 ## Frequently asked questions
 

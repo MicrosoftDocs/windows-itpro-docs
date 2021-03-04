@@ -1,9 +1,9 @@
 ---
 title: Merge Windows Defender Application Control policies (Windows 10)
 description: Because each computer running Windows 10 can have only one WDAC policy, you will occasionally need to merge two or more policies. Learn how with this guide.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2018
+ms.technology: mde
 ---
 
 # Merge Windows Defender Application Control policies

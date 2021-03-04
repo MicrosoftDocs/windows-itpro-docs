@@ -1,7 +1,8 @@
 ---
 title: Windows 10 Subscription Activation
-description: How to dynamically enable Windows 10 Enterprise or Education subscriptions
+description: In this article, you will learn how to dynamically enable Windows 10 Enterprise or Education subscriptions.
 keywords: upgrade, update, task sequence, deploy
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -39,7 +40,7 @@ Organizations that have an Enterprise agreement can also benefit from the new se
 
 Subscription Activation for Education works the same as the Enterprise version, but in order to use Subscription Activation for Education, you must have a device running Windows 10 Pro Education, version 1903 or later and an active subscription plan with a Windows 10 Enterprise license. For more information, see the [requirements](#windows-10-education-requirements) section.
 
-## In this article
+## Summary
 
 - [Inherited Activation](#inherited-activation): Description of a new feature available in Windows 10, version 1803 and later.
 - [The evolution of Windows 10 deployment](#the-evolution-of-deployment): A short history of Windows deployment.
@@ -60,7 +61,6 @@ To support Inherited Activation, both the host computer and the VM must be runni
 
 ## The evolution of deployment
 
-> [!NOTE] 
 > The original version of this section can be found at [Changing between Windows SKUs](https://blogs.technet.microsoft.com/mniehaus/2017/10/09/changing-between-windows-skus/).
 
 The following figure illustrates how deploying Windows 10 has evolved with each release. With this release, deployment is automatic.
@@ -83,6 +83,9 @@ The following figure illustrates how deploying Windows 10 has evolved with each 
 > [!NOTE]
 > The following requirements do not apply to general Windows 10 activation on Azure. Azure activation requires a connection to Azure KMS only, and supports workgroup, Hybrid, and Azure AD-joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/troubleshooting/troubleshoot-activation-problems#understanding-azure-kms-endpoints-for-windows-product-activation-of-azure-virtual-machines).
 
+> [!NOTE]
+> Currently, Subscription Activation is only available on commercial tenants and is not currently available on US GCC or GCC High tenants.
+
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following:
 
 - Windows 10 (Pro or Enterprise) version 1703 or later installed on the devices to be upgraded.
@@ -91,7 +94,7 @@ For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & 
 
 For Microsoft customers that do not have EA or MPSA, you can obtain Windows 10 Enterprise E3/E5 or A3/A5 through a cloud solution provider (CSP). Identity management and device requirements are the same when you use CSP to manage licenses, with the exception that Windows 10 Enterprise E3 is also available through CSP to devices running Windows 10, version 1607. For more information about obtaining Windows 10 Enterprise E3 through your CSP, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
 
-If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade benefits for Windows Cloud Subscriptions in CSP](https://blogs.windows.com/business/2017/01/19/new-windows-10-upgrade-benefits-windows-cloud-subscriptions-csp/)
+If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade benefits for Windows Cloud Subscriptions in CSP](https://www.microsoft.com/en-us/microsoft-365/blog/2017/01/19/new-windows-10-upgrade-benefits-windows-cloud-subscriptions-csp/)
 
 #### Multi-factor authentication
 
@@ -105,9 +108,9 @@ If the device is running Windows 10, version 1809 or later:
 1. Windows 10, version 1809 must be updated with [KB4497934](https://support.microsoft.com/help/4497934/windows-10-update-kb4497934). Later versions of Windows 10 automatically include this patch.
 2. When the user signs in on a Hybrid Azure AD joined device with MFA enabled, a notification will indicate that there is a problem. Click the notification and then click **Fix now** to step through the subscription activation process. See the example below:
 
-   ![Subscription Activation with MFA1](images/sa-mfa1.png)<br>
-   ![Subscription Activation with MFA2](images/sa-mfa2.png)<br>
-   ![Subscription Activation with MFA2](images/sa-mfa3.png)
+![Subscription Activation with MFA example 1](images/sa-mfa1.png)<br>
+![Subscription Activation with MFA example 2](images/sa-mfa2.png)<br>
+![Subscription Activation with MFA example 3](images/sa-mfa3.png)
 
 ### Windows 10 Education requirements
 
@@ -116,8 +119,8 @@ If the device is running Windows 10, version 1809 or later:
 3. The Education tenant must have an active subscription to Microsoft 365 with a Windows 10 Enterprise license or a Windows 10 Enterprise or Education subscription.
 4. Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
 
-> [!IMPORTANT]
-> If Windows 10 Pro is converted to Windows 10 Pro Education [by using benefits available in Store for Education](https://docs.microsoft.com/education/windows/change-to-pro-education#change-using-microsoft-store-for-education), then the feature will not work. You will need to re-image the device by using a Windows 10 Pro Education edition.
+> If Windows 10 Pro is converted to Windows 10 Pro Education [using benefits available in Store for Education](https://docs.microsoft.com/education/windows/change-to-pro-education#change-using-microsoft-store-for-education), then the feature will not work. You will need to re-image the device using a Windows 10 Pro Education edition.
+
 
 ## Benefits
 
@@ -154,10 +157,9 @@ Before Windows 10, version 1903:<br>
 After Windows 10, version 1903:<br>
 ![1903](images/after.png)
 
-> [!NOTE]
-> - A Windows 10 Pro Education device will only step up to Windows 10 Education edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
-> 
-> - A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
+Note:
+1. A Windows 10 Pro Education device will only step up to Windows 10 Education edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
+2. A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
 
 ### Scenarios
 
@@ -196,8 +198,7 @@ When you have the required Azure AD subscription, group-based licensing is the p
 
 If you are running Windows 10, version 1803 or later, Subscription Activation will automatically pull the firmware-embedded Windows 10 activation key and activate the underlying Pro License. The license will then step-up to Windows 10 Enterprise using Subscription Activation. This automatically migrates your devices from KMS or MAK activated Enterprise to Subscription activated Enterprise.
 
-> [!CAUTION]
-> Firmware-embedded Windows 10 activation happens automatically only when we go through the Out-of-Box Experience (OOBE).
+Caution: Firmware-embedded Windows 10 activation happens automatically only when we go through OOBE(Out Of Box Experience)
 
 If you are using Windows 10, version 1607, 1703, or 1709 and have already deployed Windows 10 Enterprise, but you want to move away from depending on KMS servers and MAK keys for Windows client machines, you can seamlessly transition as long as the computer has been activated with a firmware-embedded Windows 10 Pro product key.
 

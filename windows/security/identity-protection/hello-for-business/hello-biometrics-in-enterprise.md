@@ -15,7 +15,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 03/05/2020
+ms.date: 01/12/2021
 ---
 
 # Windows Hello biometrics in the enterprise
@@ -53,7 +53,7 @@ The biometric data used to support Windows Hello is stored on the local device o
 ## Has Microsoft set any device requirements for Windows Hello?
 We've been working with the device manufacturers to help ensure a high-level of performance and protection is met by each sensor and device, based on these requirements:
 
--   **False Accept Rate (FAR).** Represents the instance a biometric identification solution verifies an unauthorized person. This is normally represented as a ratio of number of instances in a given population size, for example 1 in 100 000. This can also be represented as a percentage of occurrence, for example, 0.001%. This measurement is heavily considered the most important with regards to the security of the biometric algorithm.
+-   **False Accept Rate (FAR).** Represents the instance a biometric identification solution verifies an unauthorized person. This is normally represented as a ratio of number of instances in a given population size, for example 1 in 100 000. This can also be represented as a percentage of occurrence, for example, 0.001%. This measurement is heavily considered the most important with regard to the security of the biometric algorithm.
 
 -   **False Reject Rate (FRR).** Represents the instances a biometric identification solution fails to verify an authorized person correctly. Usually represented as a percentage, the sum of the True Accept Rate and False Reject Rate is 1. Can be with or without anti-spoofing or liveness detection.
 
@@ -80,6 +80,10 @@ To allow facial recognition, you must have devices with integrated special infra
 -   False Reject Rate (FRR) without Anti-spoofing or liveness detection: &lt;5%
 
 -   Effective, real world FRR with Anti-spoofing or liveness detection: &lt;10%
+
+> [!NOTE]
+>Windows Hello face authentication does not currently support wearing a mask during enrollment or authentication. Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock you device. The product group is aware of this behavior and is investigating this topic further. Please remove a mask if you are wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn’t allow you to remove a mask temporarily, please consider unenrolling from face authentication and only using PIN or fingerprint.
+
 
 ## Related topics
 - [Windows Hello for Business](hello-identity-verification.md)

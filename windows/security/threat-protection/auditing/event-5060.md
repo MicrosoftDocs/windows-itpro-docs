@@ -1,8 +1,8 @@
 ---
 title: 5060(F) Verification operation failed. (Windows 10)
-description: Describes security event 5060(F) Verification operation failed. This event is generated in case of CNG verification operation failure.
+description: Describes security event 5060(F) Verification operation failed. This event is generated when the CNG verification operation fails.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5060(F): Verification operation failed.
@@ -20,9 +21,9 @@ ms.author: dansimp
 -   Windows Server 2016
 
 
-This event generates in case of CNG verification operation failure.
+This event generates when the Cryptographic Next Generation (CNG) verification operation fails.
 
-For more information about Cryptographic Next Generation (CNG) visit these pages:
+For more information about CNG, visit these pages:
 
 -   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
 
@@ -32,7 +33,7 @@ For more information about Cryptographic Next Generation (CNG) visit these pages
 
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 
-This event is mainly used for Cryptographic Next Generation (CNG) troubleshooting.
+This event is mainly used for CNG troubleshooting.
 
 There is no example of this event in this document.
 

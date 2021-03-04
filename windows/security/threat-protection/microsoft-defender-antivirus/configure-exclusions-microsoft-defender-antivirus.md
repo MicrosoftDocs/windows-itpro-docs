@@ -3,16 +3,16 @@ title: Set up exclusions for Microsoft Defender AV scans
 description: You can exclude files (including files modified by specified processes) and folders from being scanned by Microsoft Defender AV. Validate your exclusions with PowerShell.
 keywords: 
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/12/2020
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Configure and validate exclusions for Microsoft Defender Antivirus scans
@@ -22,7 +22,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 You can exclude certain files, folders, processes, and process-opened files from Microsoft Defender Antivirus scans. Such exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). Exclusions for process-opened files only apply to real-time protection.
 
@@ -41,8 +41,11 @@ Defining exclusions lowers the protection offered by Microsoft Defender Antiviru
 The following is a list of recommendations that you should keep in mind when defining exclusions:  
 
 - Exclusions are technically a protection gap—always consider additional mitigations when defining exclusions. Additional mitigations could be as simple as making sure the excluded location has the appropriate access-control lists (ACLs), audit policy, is processed by an up-to-date software, etc.
+
 - Review the exclusions periodically. Re-check and re-enforce the mitigations as part of the review process.
+
 - Ideally, avoid defining proactive exclusions. For instance, don't exclude something just because you think it might be a problem in the future. Use exclusions only for specific issues—mostly around performance, or sometimes around application compatibility that exclusions could mitigate.
+
 - Audit the exclusion list changes. The security admin should preserve enough context around why a certain exclusion was added. You should be able to provide answer with specific reasoning as to why a certain path was excluded.
 
 ## Related articles
