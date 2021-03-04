@@ -43,12 +43,3 @@ For testing purposes, you can create an uncompressed store using the **/hardlink
 [Plan Your Migration](usmt-plan-your-migration.md)
 
 [Log Files](usmt-log-files.md)
-
- 
-
- 
-
-
-
-
-

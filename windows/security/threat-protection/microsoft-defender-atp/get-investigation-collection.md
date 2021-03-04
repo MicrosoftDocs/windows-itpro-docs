@@ -3,7 +3,7 @@ title: List Investigations API
 description: Use this API to create calls related to get Investigations collection
 keywords: apis, graph api, supported apis, Investigations collection
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,25 +12,31 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # List Investigations API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
 Retrieves a collection of [Investigations](investigation.md).
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>The OData's ```$filter``` query is supported on: ```startTime```, ```state```, ```machineId``` and ```triggeringAlertId``` properties.
-<br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
 
 ## Limitations
@@ -39,7 +45,7 @@ Retrieves a collection of [Investigations](investigation.md).
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -54,7 +60,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
 ## HTTP request
 ```
-GET https://api.securitycenter.windows.com/api/investigations
+GET https://api.securitycenter.microsoft.com/api/investigations
 ```
 
 ## Request headers
@@ -71,30 +77,23 @@ Empty
 If successful, this method returns 200, Ok response code with a collection of [Investigations](investigation.md) entities.
 
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-
 ## Example
 
 **Request**
 
 Here is an example of a request to get all investigations: 
 
-
 ```
-GET https://api.securitycenter.windows.com/api/investigations
+GET https://api.securitycenter.microsoft.com/api/investigations
 ```
 
 **Response**
 
 Here is an example of the response:
 
-
-```
-HTTP/1.1 200 Ok
-Content-type: application/json
+```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Investigations",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Investigations",
     "value": [
         {
             "id": "63017",

@@ -144,6 +144,8 @@
               href: update/media-dynamic-update.md
             - name: Migrating and acquiring optional Windows content
               href: update/optional-content.md
+            - name: Safeguard holds
+              href: update/safeguard-holds.md
             - name: Manage the Windows 10 update experience
               items:              
                 - name: Manage device restarts after updates
@@ -237,6 +239,8 @@
               items:
                 - name: How to troubleshoot Windows Update
                   href: update/windows-update-troubleshooting.md
+                - name: Opt out of safeguard holds
+                  href: update/safeguard-opt-out.md
                 - name: Determine the source of Windows Updates
                   href: update/windows-update-sources.md
                 - name: Common Windows Update errors

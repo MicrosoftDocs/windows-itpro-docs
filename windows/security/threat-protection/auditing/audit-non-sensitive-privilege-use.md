@@ -1,27 +1,28 @@
 ---
-title: Audit Non Sensitive Privilege Use (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Non-Sensitive Privilege Use, which determines whether the operating system generates audit events when non-sensitive privileges (user rights) are used.
+title: Audit Non-Sensitive Privilege Use (Windows 10)
+description: This article for the IT professional describes the Advanced Security Audit policy setting, Audit Non-Sensitive Privilege Use, which determines whether the operating system generates audit events when non-sensitive privileges (user rights) are used.
 ms.assetid: 8fd74783-1059-443e-aa86-566d78606627
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
-# Audit Non Sensitive Privilege Use
+# Audit Non-Sensitive Privilege Use
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
 
-Audit Non Sensitive Privilege Use contains events that show usage of non-sensitive privileges. This is the list of non-sensitive privileges:
+Audit Non-Sensitive Privilege Use contains events that show usage of non-sensitive privileges. This is the list of non-sensitive privileges:
 
 -   Access Credential Manager as a trusted caller
 

@@ -1,5 +1,5 @@
 ---
-title: BitLocker cannot encrypt a drive known TPM issues 
+title: BitLocker cannot encrypt a drive known TPM issues
 description: Provides guidance for troubleshooting known issues that may prevent BitLocker Drive Encryption from encrypting a drive, and that you can attribute to the TPM
 ms.reviewer: kaushika
 ms.technology: windows
@@ -15,7 +15,6 @@ ms.topic: troubleshooting
 ms.date: 10/18/2019
 ms.custom: bitlocker
 ---
-
 
 # BitLocker cannot encrypt a drive: known TPM issues
 
@@ -38,8 +37,10 @@ To resolve this issue, follow these steps:
 
 1. Open an elevated PowerShell window and run the following script:
 
-   ```ps
-   $Tpm = Get-WmiObject -class Win32_Tpm -namespace "root\CIMv2\Security\MicrosoftTpm" $ConfirmationStatus = $Tpm.GetPhysicalPresenceConfirmationStatus(22).ConfirmationStatus if($ConfirmationStatus -ne 4) {$Tpm.SetPhysicalPresenceRequest(22)}
+   ```powershell
+   $Tpm = Get-WmiObject -class Win32_Tpm -namespace "root\CIMv2\Security\MicrosoftTpm"
+   $ConfirmationStatus = $Tpm.GetPhysicalPresenceConfirmationStatus(22).ConfirmationStatus
+   if($ConfirmationStatus -ne 4) {$Tpm.SetPhysicalPresenceRequest(22)}
    ```
 2. Restart the computer. If you are prompted at the restart screen, press F12 to agree.8
 3. Retry starting BitLocker drive encryption.
@@ -66,7 +67,7 @@ To resolve this issue, disable and re-enable the TPM. To do this, follow these s
 If you still cannot prepare the TPM, clear the existing TPM keys. To do this, follow the instructions in [Troubleshoot the TPM: Clear all the keys from the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm#clear-all-the-keys-from-the-tpm).
 
 > [!WARNING]
-> Clearing the TPM can cause data loss.  
+> Clearing the TPM can cause data loss.
 
 ## Access Denied: Failed to backup TPM Owner Authorization information to Active Directory Domain Services. Errorcode: 0x80070005
 
@@ -78,7 +79,7 @@ The TPM did not have sufficient permissions on the TPM devices container in Acti
 
 This issue appears to be limited to computers that run versions of Windows that are earlier than Windows 10.
 
-### Resolution  
+### Resolution
 
 To verify that you have correctly identified this issue, use one of the following methods:
 
@@ -87,7 +88,7 @@ To verify that you have correctly identified this issue, use one of the followin
 
 1. To review the TPM information for the affected computer, open an elevated Windows PowerShell window and run the following command:
 
-   ```ps
+   ```powershell
    Get-ADComputer -Filter {Name -like "ComputerName"} -Property * | Format-Table name,msTPM-TPMInformationForComputer
    ```
 
@@ -118,10 +119,10 @@ To resolve this issue, follow these steps:
 3. In the script, modify the value of **strPathToDomain** to your domain name.
 4. Open an elevated PowerShell window, and run the following command:
 
-   ```ps
+   ```powershell
    cscript <Path>Add-TPMSelfWriteACE.vbs
    ```
-   
+
    In this command \<*Path*> is the path to the script file.
 
 For more information, see the following articles:

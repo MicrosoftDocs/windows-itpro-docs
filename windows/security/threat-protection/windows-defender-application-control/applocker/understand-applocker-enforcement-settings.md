@@ -4,7 +4,7 @@ description: This topic describes the AppLocker enforcement settings for rule co
 ms.assetid: 48773007-a343-40bf-8961-b3ff0a450d7e
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Understand AppLocker enforcement settings

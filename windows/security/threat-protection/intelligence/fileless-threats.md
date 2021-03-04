@@ -1,9 +1,9 @@
 ---
 title: Fileless threats
 ms.reviewer: 
-description: Learn about the categories of fileless threats and malware that "live off the land"
+description: Learn about the categories of fileless threats and malware that live off the land
 keywords: fileless, fileless malware, living off the land, lolbins, amsi, behavior monitoring, memory scanning, boot sector protection, security, malware, Windows Defender ATP, antivirus, AV, Microsoft Defender ATP, next-generation protection
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,9 +11,10 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
+ms.technology: mde
 ---
 
 # Fileless threats
@@ -98,6 +99,6 @@ Besides being vulnerable at the firmware level, CPUs could be manufactured with 
 
 ## Defeating fileless malware
 
-At Microsoft, we actively monitor the security landscape to identify new threat trends and develop solutions to mitigate classes of threats. We instrument durable protections that are effective against a wide range of threats. Through AntiMalware Scan Interface (AMSI), behavior monitoring, memory scanning, and boot sector protection, Microsoft Defender Advanced Threat Protection [(Microsoft Defender ATP)](https://www.microsoft.com/windowsforbusiness?ocid=docs-fileless) can inspect fileless threats even with heavy obfuscation. Machine learning technologies in the cloud allow us to scale these protections against new and emerging threats.
+At Microsoft, we actively monitor the security landscape to identify new threat trends and develop solutions to mitigate classes of threats. We instrument durable protections that are effective against a wide range of threats. Through AntiMalware Scan Interface (AMSI), behavior monitoring, memory scanning, and boot sector protection, Microsoft Defender for Endpoint](https://www.microsoft.com/windowsforbusiness?ocid=docs-fileless) can inspect fileless threats even with heavy obfuscation. Machine learning technologies in the cloud allow us to scale these protections against new and emerging threats.
 
 To learn more, read: [Out of sight but not invisible: Defeating fileless malware with behavior monitoring, AMSI, and next-gen AV](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/27/out-of-sight-but-not-invisible-defeating-fileless-malware-with-behavior-monitoring-amsi-and-next-gen-av/)
