@@ -78,8 +78,8 @@ Yes, you can enable BitLocker on an operating system drive that does not have a 
 
 Contact the computer manufacturer to request a trusted computing group (TCG)-compliant BIOS or UEFI boot firmware that meets the following requirements:
 
--   It is compliant with the TCG standards for a client computer.
--   It has a secure update mechanism to help prevent a malicious BIOS or boot firmware from being installed on the computer.
+- It is compliant with the TCG standards for a client computer.
+- It has a secure update mechanism to help prevent a malicious BIOS or boot firmware from being installed on the computer.
 
 ## What credentials are required to use BitLocker?
 
