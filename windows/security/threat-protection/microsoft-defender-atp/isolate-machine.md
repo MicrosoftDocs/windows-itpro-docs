@@ -1,6 +1,6 @@
 ---
 title: Isolate machine API
-description: Learn how to use the Isolate machine API to isolate a device from accessing external network in Microsoft Defender Advanced Threat Protection.
+description: Learn how to use the Isolate machine API to isolate a device from accessing external network in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, isolate device
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
