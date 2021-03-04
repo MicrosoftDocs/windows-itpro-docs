@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 02/10/2020
+ms.date: 11/03/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -95,6 +95,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#update-disabledualscan">Update/DisableDualScan</a>
+  </dd>
+  <dd>
+    <a href="#update-disablewufbsafeguards">Update/DisableWUfBSafeguards</a>
   </dd>
   <dd>
     <a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
@@ -458,11 +461,6 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 
 Supported operations are Get and Replace.
 
-
-> [!IMPORTANT]
-> This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
- 
-
 If the policy is not configured, end-users get the default behavior (Auto install and restart).
 
 <!--/Description-->
@@ -484,6 +482,11 @@ The following list shows the supported values:
 -   3 – Auto install and restart at a specified time. The IT specifies the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart.
 -   4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only.
 -   5 – Turn off automatic updates.
+
+
+> [!IMPORTANT]
+> This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
+
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1110,8 +1113,8 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
--   true - Enable
--   false - Disable (Default)
+-   0  - Disable
+-   1  - Enable (Default)
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1730,18 +1733,19 @@ OS upgrade:
 Update:
 - Maximum deferral: 1 month
 - Deferral increment: 1 week
-- Update type/notes:
-  If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
-      - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
-      - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
-      - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
-      - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
-      - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
-      - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
-      - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
-      - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
+- Update type/notes: If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic:
+  
+  - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
+  - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
+  - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
+  - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
+  - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
+  - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
+  - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
+  - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
 
 Other/cannot defer:
+
 - Maximum deferral: No deferral
 - Deferral increment: No deferral
 - Update type/notes:
@@ -2007,6 +2011,85 @@ The following list shows the supported values:
 
 - 0 - allow scan against Windows Update
 - 1 - do not allow update deferral policies to cause scans against Windows Update
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-disablewufbsafeguards"></a>**Update/DisableWUfBSafeguards**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows Update for Business (WUfB) devices running Windows 10, version 1809 and above and installed with October 2020 security update. This policy setting specifies that a WUfB device should skip safeguards.
+
+Safeguard holds prevent a device with a known compatibility issue from being offered a new OS version. The offering will proceed once a fix is issued and is verified on a held device. The aim of safeguards is to protect the device and user from a failed or poor upgrade experience.
+
+The safeguard holds protection is provided by default to all the devices trying to update to a new Windows 10 Feature Update version via Windows Update.
+
+IT admins can, if necessary, opt devices out of safeguard protections using this policy setting or via the “Disable safeguards for Feature Updates” Group Policy. 
+
+> [!NOTE]
+> Opting out of the safeguards can put devices at risk from known performance issues. We recommend opting out only in an IT environment for validation purposes. Further, you can leverage the Windows Insider Program for Business Release Preview Channel in order to validate the upcoming Windows 10 Feature Update version without the safeguards being applied.
+>
+> The disable safeguards policy will revert to “Not Configured” on a device after moving to a new Windows 10 version, even if previously enabled. This ensures the admin is consciously disabling Microsoft’s default protection from known issues for each new feature update. 
+>
+> Disabling safeguards does not guarantee your device will be able to successfully update. The update may still fail on the device and will likely result in a bad experience post upgrade as you are bypassing the protection given by Microsoft pertaining to known issues.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Disable safeguards for Feature Updates*
+-   GP name: *DisableWUfBSafeguards*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) - Safeguards are enabled and devices may be blocked for upgrades until the safeguard is cleared.
+- 1 - Safeguards are not enabled and upgrades will be deployed without blocking on safeguards.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -4250,7 +4333,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10, version 1803 and later. Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).
+Available in Windows 10, version 1803 and later. Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](https://docs.microsoft.com/windows/release-health/release-information/).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -4525,4 +4608,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

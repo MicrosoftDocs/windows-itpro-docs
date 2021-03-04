@@ -1,5 +1,5 @@
 ---
-title: Enabling and Disabling Compatibility Fixes in Compatibility Administrator (Windows 10)
+title: Enabling and Disabling Compatibility Fixes in Compatibility Administrator
 description: You can disable and enable individual compatibility fixes in your customized databases for testing and troubleshooting purposes.
 ms.assetid: 6bd4a7c5-0ed9-4a35-948c-c438aa4d6cb6
 ms.reviewer: 
@@ -12,6 +12,7 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Enabling and Disabling Compatibility Fixes in Compatibility Administrator

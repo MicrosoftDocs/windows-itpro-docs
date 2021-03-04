@@ -1,9 +1,9 @@
 ---
-title: Get alert related domains information 
-description: Retrieve all domains related to a specific alert using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
+title: Get alert related domains information
+description: Retrieve all domains related to a specific alert using Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get alert information, alert information, related domain
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,18 +12,21 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Get alert related domain information API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+**Applies to:** 
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -36,7 +39,7 @@ Retrieves all domains related to a specific alert.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type | Permission | Permission display name
 :---|:---|:---
@@ -72,21 +75,17 @@ If successful and alert and domain exist - 200 OK. If alert not found - 404 Not 
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-```
-GET https://api.securitycenter.windows.com/alerts/636688558380765161_2136280442/domains
+```http
+GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/domains
 ```
 
 **Response**
 
 Here is an example of the response.
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/$metadata#Domains",
+    "@odata.context": "https://api.securitycenter.microsoft.com/$metadata#Domains",
     "value": [
         {
             "host": "www.example.com"

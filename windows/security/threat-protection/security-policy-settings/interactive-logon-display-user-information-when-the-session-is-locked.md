@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: 9146aa3d-9b2f-47ba-ac03-ff43efb10530
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Interactive logon: Display user information when the session is locked
@@ -46,12 +47,12 @@ This setting has these possible values:
     For a local logon, the user's full name is displayed.
     If the user signed in using a Microsoft account, the user's email address is displayed.
     For a domain logon, the domain\username is displayed.
-    This has the same effect as turning on the **Privacy** setting.
+    This setting has the same effect as turning on the **Privacy** setting.
 
 -   **User display name only**
 
     The full name of the user who locked the session is displayed.
-    This has the same effect as turning off the **Privacy** setting.
+    This setting has the same effect as turning off the **Privacy** setting.
 
 -   **Do not display user information**
 
@@ -69,7 +70,7 @@ This setting has these possible values:
 -   **Blank**
 
     Default setting.
-    This translates to “Not defined,” but it will display the user’s full name in the same manner as the option **User display name only**.
+    This setting translates to “Not defined,” but it will display the user's full name in the same manner as the option **User display name only**.
     When an option is set, you cannot reset this policy to blank, or not defined.
 
 ### Hotfix for Windows 10 version 1607
@@ -149,7 +150,7 @@ When a computer displays the Secure Desktop in an unsecured area, certain user i
 
 Enabling this policy setting allows the operating system to hide certain user information from being displayed on the Secure Desktop (after the device has been booted or when the session has been locked by using CTRL+ALT+DEL). However, user information is displayed if the **Switch user** feature is used so that the logon tiles are displayed for each logged on user.
 
-You might also want to enable the [Interactive logon: Do not display last signed-in](interactive-logon-do-not-display-last-user-name.md) policy, which will prevent the Windows operating system from displaying the logon name and logon tile of the last user to logon.
+You might also want to enable the [Interactive logon: Do not display last signed-in](interactive-logon-do-not-display-last-user-name.md) policy, which will prevent the Windows operating system from displaying the logon name and logon tile of the last user to log on.
 
 ## Related topics
 

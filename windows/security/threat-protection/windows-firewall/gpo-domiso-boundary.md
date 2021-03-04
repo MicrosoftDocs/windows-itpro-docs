@@ -4,7 +4,7 @@ description: This example GPO supports devices that are not part of the isolated
 ms.assetid: ead3a510-c329-4c2a-9ad2-46a3b4975cfd
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # GPO\_DOMISO\_Boundary

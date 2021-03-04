@@ -4,7 +4,7 @@ description: Learn to deploy firewall settings, IPsec settings, firewall rules, 
 ms.assetid: e99bd6a4-34a7-47b5-9791-ae819977a559
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Checklist: Creating Group Policy Objects

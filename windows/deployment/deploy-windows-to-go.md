@@ -14,6 +14,7 @@ ms.sitesec: library
 ms.pagetype: mobility
 audience: itpro
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy Windows To Go in your organization
@@ -113,7 +114,7 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
 
-   #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with ‘New-Partition…) Validate that this is the correct disk that you want to completely erase.
+   #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with 'New-Partition…) Validate that this is the correct disk that you want to completely erase.
    #
    # To skip the confirmation prompt, append –confirm:$False
     Clear-Disk –InputObject $Disk[0] -RemoveData
@@ -161,7 +162,7 @@ W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
 ```
 ~~~
 
-5. Apply SAN policy—OFFLINE\_INTERNAL - “4” to prevent the operating system from automatically bringing online any internally connected disk. This is done by creating and saving a **san\_policy.xml** file on the disk. The following example illustrates this step:
+5. Apply SAN policy—OFFLINE\_INTERNAL - "4" to prevent the operating system from automatically bringing online any internally connected disk. This is done by creating and saving a **san\_policy.xml** file on the disk. The following example illustrates this step:
 
     ``` 
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>
@@ -291,7 +292,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 
 -   A domain-joined computer running Windows 8 or later and is configured as a Windows To Go host computer
 
--   A Windows To Go drive that hasn’t been booted or joined to the domain using unattend settings.
+-   A Windows To Go drive that hasn't been booted or joined to the domain using unattend settings.
 
 -   A domain user account with rights to add computer accounts to the domain and is a member of the Administrator group on the Windows To Go host computer
 
@@ -319,7 +320,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
 
-   #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with ‘New-Partition…) Validate that this is the correct disk that you want to completely erase.
+   #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with 'New-Partition…) Validate that this is the correct disk that you want to completely erase.
    #
    # To skip the confirmation prompt, append –confirm:$False
     Clear-Disk –InputObject $Disk[0] -RemoveData
@@ -414,7 +415,7 @@ dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /ind
    >[!NOTE]
    >Depending on your DirectAccess configuration you might be asked to insert your smart card to log on to the domain.
 
-You should now be able to access your organization’s network resources and work from your Windows To Go workspace as you would normally work from your standard desktop computer on premises.
+You should now be able to access your organization's network resources and work from your Windows To Go workspace as you would normally work from your standard desktop computer on premises.
 
 ### Enable BitLocker protection for your Windows To Go drive
 
@@ -467,7 +468,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
 
-   #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with ‘New-Partition…) Validate that this is the correct disk that you want to completely erase.
+   #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with 'New-Partition…) Validate that this is the correct disk that you want to completely erase.
    #
    # To skip the confirmation prompt, append –confirm:$False
     Clear-Disk –InputObject $Disk[0] -RemoveData
@@ -576,17 +577,17 @@ The sample script creates an unattend file that streamlines the deployment proce
 
 * To run this sample script you must open a Windows PowerShell session as an administrator from a domain-joined computer using an account that has permission to create domain accounts.
 
-* Using offline domain join is required by this script, since the script does not create a local administrator user account. However, domain membership will automatically put “Domain admins” into the local administrators group. Review your domain policies. If you are using DirectAccess you will need to modify the djoin.exe command to include the `policynames` and potentially the `certtemplate` parameters.
+* Using offline domain join is required by this script, since the script does not create a local administrator user account. However, domain membership will automatically put "Domain admins" into the local administrators group. Review your domain policies. If you are using DirectAccess you will need to modify the djoin.exe command to include the `policynames` and potentially the `certtemplate` parameters.
 
 * The script needs to use drive letters, so you can only provision half as many drives as you have free drive letters.
 
 #### To run the advanced deployment sample script
 
-1. Copy entire the code sample titled “Windows To Go multiple drive provisioning sample script” into a PowerShell script (.ps1) file.
+1. Copy entire the code sample titled "Windows To Go multiple drive provisioning sample script" into a PowerShell script (.ps1) file.
 
 2. Make the modifications necessary for it to be appropriate to your deployment and save the file.
 
-3. Configure the PowerShell execution policy. By default PowerShell’s execution policy is set to Restricted; that means that scripts won’t run until you have explicitly given them permission to. To configure PowerShell’s execution policy to allow the script to run, use the following command from an elevated PowerShell prompt:
+3. Configure the PowerShell execution policy. By default PowerShell's execution policy is set to Restricted; that means that scripts won't run until you have explicitly given them permission to. To configure PowerShell's execution policy to allow the script to run, use the following command from an elevated PowerShell prompt:
 
     ``` 
     Set-ExecutionPolicy RemoteSigned
