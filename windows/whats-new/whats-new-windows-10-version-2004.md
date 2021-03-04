@@ -232,7 +232,7 @@ The following items are added to Task Manager in this release:
 
 ### 2-in-1 PCs
 
-[Introducing a new tablet experience for 2-in-1 convertible PCs! (Build 18970)](https://docs.microsoft.com/windows-insider/archive/new-in-20H1#introducing-a-new-tablet-experience-for-2-in-1-convertible-pcs-build-18970) A new tablet experience for two-in-one convertible PCs is available. The screen will be optimized for touch when you detach your two-in-one's keyboard, but you'll still keep the familiar look of your desktop without interruption.
+See [Introducing a new tablet experience for 2-in-1 convertible PCs! (Build 18970)](https://docs.microsoft.com/windows-insider/archive/new-in-20H1#introducing-a-new-tablet-experience-for-2-in-1-convertible-pcs-build-18970) for details on a new tablet experience for two-in-one convertible PCs that is now available. The screen will be optimized for touch when you detach your two-in-one's keyboard, but you'll still keep the familiar look of your desktop without interruption.
 
 ### Specialized displays
 
