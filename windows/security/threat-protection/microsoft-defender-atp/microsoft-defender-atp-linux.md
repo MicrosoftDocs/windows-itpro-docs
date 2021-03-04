@@ -51,7 +51,7 @@ There are several methods and deployment tools that you can use to install and c
 
 In general you need to take the following steps:
 
-- Ensure that you have a Microsoft Defender for Endpoint subscription, and that you have access to the [Microsoft Defender for Endpoint portal](microsoft-defender-security-center.md).
+- Ensure that you have a Microsoft Defender for Endpoint subscription, and that you have access to the [Microsoft Defender Security Center portal](microsoft-defender-security-center.md).
 - Deploy Microsoft Defender for Endpoint for Linux using one of the following deployment methods:
   - The command-line tool:
     - [Manual deployment](linux-install-manually.md)
