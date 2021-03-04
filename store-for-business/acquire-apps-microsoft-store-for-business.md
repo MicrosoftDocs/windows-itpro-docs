@@ -5,11 +5,11 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+author: cmcatee
+ms.author: cmcatee-MSFT
 ms.date: 03/10/2021
 ms.reviewer: 
-manager: dansimp
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
 ---

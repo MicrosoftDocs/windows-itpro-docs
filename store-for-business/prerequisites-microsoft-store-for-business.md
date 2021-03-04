@@ -3,13 +3,13 @@ title: Prerequisites for Microsoft Store for Business and Education (Windows 10)
 description: There are a few prerequisites for using Microsoft Store for Business or Microsoft Store for Education.
 ms.assetid: CEBC6870-FFDD-48AD-8650-8B0DC6B2651D
 ms.reviewer: 
-manager: dansimp
+manager: scotv
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+author: cmcatee
+ms.author: cmcatee-MSFT
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 03/10/2021
