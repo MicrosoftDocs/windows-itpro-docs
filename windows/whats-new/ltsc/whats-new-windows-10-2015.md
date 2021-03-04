@@ -1,10 +1,10 @@
 ---
-title: What's new in Windows 10 Enterprise 2015 LTSC
+title: What's new in Windows 10 Enterprise LTSC 2015
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: New and updated IT Pro content about new features in Windows 10 Enterprise 2015 LTSC (also known as Windows 10 Enterprise 2015 LTSB).
-keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2015 LTSC"]
+description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2015 (also known as Windows 10 Enterprise 2015 LTSB).
+keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2015"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,15 +14,15 @@ ms.localizationpriority: low
 ms.topic: article
 ---
 
-# What's new in Windows 10 Enterprise 2015 LTSC
+# What's new in Windows 10 Enterprise LTSC 2015
 
 **Applies to**
--   Windows 10 Enterprise 2015 LTSC
+-   Windows 10 Enterprise LTSC 2015
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise 2015 LTSC (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
 
 >[!NOTE]
->Features in Windows 10 Enterprise 2015 LTSC are equivalent to [Windows 10, version 1507](../whats-new-windows-10-version-1507-and-1511.md).
+>Features in Windows 10 Enterprise LTSC 2015 are equivalent to [Windows 10, version 1507](../whats-new-windows-10-version-1507-and-1511.md).
 
 ## Deployment
 
@@ -280,7 +280,7 @@ By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth very efficient.
 
--   **Use with existing tools** such as Microsoft Endpoint Configuration Manager and the [Enterprise Mobility Suite](https://docs.microsoft.com/enterprise-mobility-security).
+-   **Use with existing tools** such as Microsoft Endpoint Manager and the [Enterprise Mobility Suite](https://docs.microsoft.com/enterprise-mobility-security).
 
 Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr).
 

@@ -62,7 +62,7 @@ A computer with a TPM must also have a Trusted Computing Group (TCG)-compliant B
 The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support the USB mass storage device class, including reading small files on a USB flash drive in the pre-operating system environment.
 
 > [!IMPORTANT]
-> From Windows 7, you can encrypt an OS drive without a TPM and USB flash drive. For this procedure, see [Tip of the Day: Bitlocker without TPM or USB](https://blogs.technet.microsoft.com/tip_of_the_day/2014/01/22/tip-of-the-day-bitlocker-without-tpm-or-usb/).
+> From Windows 7, you can encrypt an OS drive without a TPM and USB flash drive. For this procedure, see [Tip of the Day: Bitlocker without TPM or USB](https://social.technet.microsoft.com/Forums/en-US/eac2cc67-8442-42db-abad-2ed173879751/bitlocker-without-tpm?forum=win10itprosetup).
 
 > [!NOTE]
 > TPM 2.0 is not supported in Legacy and Compatibility Support Module (CSM) modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as native UEFI only. The Legacy and CSM options must be disabled. For added security, enable the secure boot feature.
@@ -75,6 +75,9 @@ The hard disk must be partitioned with at least two drives:
 -   The system drive contains the files that are needed to load Windows after the firmware has prepared the system hardware. BitLocker is not enabled on this drive. For BitLocker to work, the system drive must not be encrypted, must differ from the operating system drive, and must be formatted with the FAT32 file system on computers that use UEFI-based firmware or with the NTFS file system on computers that use BIOS firmware. We recommend that system drive be approximately 350 MB in size. After BitLocker is turned on, it should have approximately 250 MB of free space.
 
 When installed on a new computer, Windows automatically creates the partitions that are required for BitLocker.
+
+A partition subject to encryption cannot be marked as an active partition (this applies to the operating system, fixed data, and removable data drives).
+
 
 When installing the BitLocker optional component on a server, you will also need to install the Enhanced Storage feature, which is used to support hardware encrypted drives.
 
@@ -97,5 +100,6 @@ When installing the BitLocker optional component on a server, you will also need
 | [Troubleshoot BitLocker](troubleshoot-bitlocker.md) | This guide describes the resources that can help you troubleshoot BitLocker issues, and provides solutions for several common BitLocker issues. |
 | [Protecting cluster shared volumes and storage area networks with BitLocker](protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)| This topic describes how to protect CSVs and SANs with BitLocker.| 
 | [Enabling Secure Boot and BitLocker Device Encryption on Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/docs/securebootandbitlocker) | This topic describes how to use BitLocker with Windows 10 IoT Core |
+
 
 

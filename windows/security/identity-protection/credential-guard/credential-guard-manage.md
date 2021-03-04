@@ -7,15 +7,15 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: v-tea
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.reviewer: 
 ms.custom: 
-- CI 120967
-- CSSTroubleshooting
+  - CI 120967
+  - CSSTroubleshooting
 ---
 
 # Manage Windows Defender Credential Guard
@@ -160,7 +160,7 @@ You can view System Information to check that Windows Defender Credential Guard 
 
 2.  Click **System Summary**.
 
-3.  Confirm that **Credential Guard** is shown next to **Virtualization-based security Services Configured**.
+3.  Confirm that **Credential Guard** is shown next to **Virtualization-based security Services Running**.
 
     Here's an example:
 

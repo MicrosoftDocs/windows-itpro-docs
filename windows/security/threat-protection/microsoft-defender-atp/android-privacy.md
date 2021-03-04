@@ -4,7 +4,7 @@ description: Privacy controls, how to configure policy settings that impact priv
 keywords: microsoft, defender, atp, android, privacy, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,27 +13,29 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-#  Microsoft Defender ATP for Android - Privacy information
+#  Microsoft Defender for Endpoint for Android - Privacy information
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Android](microsoft-defender-atp-android.md)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Microsoft Defender ATP for Android collects information from your configured
-Android devices and stores it in the same tenant where you have Microsoft
-Defender ATP.
+Defender for Endpoint for Android collects information from your configured
+Android devices and stores it in the same tenant where you have Defender for Endpoint.
 
-Information is collected to help keep Microsoft Defender ATP for Android secure,
+Information is collected to help keep Defender for Endpoint for Android secure,
 up-to-date, performing as expected and to support the service.
 
 ## Required Data 
 
-Required data consists of data that is necessary to make Microsoft Defender ATP
+Required data consists of data that is necessary to make Defender for Endpoint
 for Android work as expected. This data is essential to the operation of the
 service and can include data related to the end user, organization, device, and
 apps. Here's a list of the types of data being collected:
