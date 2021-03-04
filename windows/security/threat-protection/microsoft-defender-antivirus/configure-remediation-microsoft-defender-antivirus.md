@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 When Microsoft Defender Antivirus runs a scan, it will attempt to remediate or remove threats that it finds. You can configure how Microsoft Defender Antivirus should react to certain threats, whether it should create a restore point before remediating, and when it should remove remediated threats.
 

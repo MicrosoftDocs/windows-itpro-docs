@@ -1,5 +1,5 @@
 ---
-title: "Change history for [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)"
+title: "Change history for [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)"
 ms.reviewer: 
 ms.author: dansimp
 description: This topic lists new and updated topics in the Defender for Endpoint content set.
