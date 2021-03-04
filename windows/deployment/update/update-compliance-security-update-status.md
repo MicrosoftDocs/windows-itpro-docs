@@ -10,6 +10,7 @@ author: jaimeo
 ms.author: jaimeo
 ms.collection: M365-analytics
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Security Update Status

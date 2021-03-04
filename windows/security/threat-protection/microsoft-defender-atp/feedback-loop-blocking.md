@@ -1,21 +1,22 @@
 ---
 title: Feedback-loop blocking
-description: Feedback-loop blocking, also called rapid protection, is part of behavioral blocking and containment capabilities in Microsoft Defender ATP
-keywords: behavioral blocking, rapid protection, feedback blocking, Microsoft Defender ATP
+description: Feedback-loop blocking, also called rapid protection, is part of behavioral blocking and containment capabilities in Microsoft Defender for Endpoint
+keywords: behavioral blocking, rapid protection, feedback blocking, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 ms.reviewer: shwetaj
-audience: ITPro 
-ms.topic: article 
-ms.prod: w10 
+audience: ITPro
+ms.topic: article
+ms.prod: m365-security
 ms.localizationpriority: medium
 ms.custom: 
-- next-gen
-- edr
+  - next-gen
+  - edr
 ms.collection: 
+ms.technology: mde
 ---
 
 # Feedback-loop blocking
@@ -24,12 +25,11 @@ ms.collection:
 
 
 **Applies to:**
-
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 ## Overview
 
-Feedback-loop blocking, also referred to as rapid protection, is a component of [behavioral blocking and containment capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment) in [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/). With feedback-loop blocking, devices across your organization are better protected from attacks. 
+Feedback-loop blocking, also referred to as rapid protection, is a component of [behavioral blocking and containment capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment) in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/). With feedback-loop blocking, devices across your organization are better protected from attacks. 
 
 ## How feedback-loop blocking works
 
@@ -40,11 +40,11 @@ With rapid protection in place, an attack can be stopped on a device, other devi
 
 ## Configuring feedback-loop blocking
 
-If your organization is using Microsoft Defender ATP, feedback-loop blocking is enabled by default. However, rapid protection occurs through a combination of Microsoft Defender ATP capabilities, machine learning protection features, and signal-sharing across Microsoft security services. Make sure the following features and capabilities of Microsoft Defender ATP are enabled and configured:
+If your organization is using Defender for Endpoint, feedback-loop blocking is enabled by default. However, rapid protection occurs through a combination of Defender for Endpoint capabilities, machine learning protection features, and signal-sharing across Microsoft security services. Make sure the following features and capabilities of Defender for Endpoint are enabled and configured:
 
-- [Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)
+- [Microsoft Defender for Endpoint baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)
 
-- [Devices onboarded to Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
+- [Devices onboarded to Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
 
 - [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/edr-in-block-mode)
 
@@ -58,4 +58,4 @@ If your organization is using Microsoft Defender ATP, feedback-loop blocking is 
 
 - [(Blog) Behavioral blocking and containment: Transforming optics into protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
 
-- [Helpful Microsoft Defender ATP resources](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/helpful-resources)
+- [Helpful Microsoft Defender for Endpoint resources](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/helpful-resources)

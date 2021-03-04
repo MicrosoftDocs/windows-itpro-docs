@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 04e2c000-2eb2-4d4b-8179-1e2cb4793e18
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 # Interactive logon: Do not require CTRL+ALT+DEL
 
@@ -43,7 +44,7 @@ A malicious user might install malware that looks like the standard logon dialog
 
 ### Best practices
 
-- It is advisable to set **Disable CTRL+ALT+DEL requirement for logon** to **Not configured**.
+- We recommend that you set **Disable CTRL+ALT+DEL requirement for logon** to **Not configured**.
 
 ### Location
 

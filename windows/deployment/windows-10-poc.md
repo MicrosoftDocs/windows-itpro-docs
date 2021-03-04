@@ -1,11 +1,12 @@
 ---
 title: Configure a test lab to deploy Windows 10
+description: In this article, you will learn about concepts and procedures for deploying Windows 10 in a proof of concept lab environment.
+ms.custom: seo-marvel-apr2020
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
 ms.author: greglin
 author: greg-lindsay
-description: Concepts and procedures for deploying Windows 10 in a proof of concept lab environment.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -213,7 +214,7 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
 2. The Hyper-V feature is not installed by default. To install it, open an elevated Windows PowerShell window and type the following command:
 
-    <pre style="overflow-y: visible">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All</pre>
+    <pre style="overflow-y: visible">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All</pre>
 
     This command works on all operating systems that support Hyper-V, but on Windows Server operating systems you must type an additional command to add the Hyper-V Windows PowerShell module and the Hyper-V Manager console. This command will also install Hyper-V if it isn't already installed, so if desired you can just type the following command on Windows Server 2012 or 2016 instead of using the Enable-WindowsOptionalFeature command:
 
@@ -541,8 +542,8 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 1. To add available space for the partition, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     <pre style="overflow-y: visible">
-    Resize-VHD –Path c:\VHD\2012R2-poc-2.vhd –SizeBytes 100GB
-    $x = (Mount-VHD –Path c:\VHD\2012R2-poc-2.vhd -passthru | Get-Disk | Get-Partition | Get-Volume).DriveLetter
+    Resize-VHD -Path c:\VHD\2012R2-poc-2.vhd -SizeBytes 100GB
+    $x = (Mount-VHD -Path c:\VHD\2012R2-poc-2.vhd -passthru | Get-Disk | Get-Partition | Get-Volume).DriveLetter
     Resize-Partition -DriveLetter $x -Size (Get-PartitionSupportedSize -DriveLetter $x).SizeMax
     </pre>
 
@@ -550,7 +551,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     <pre style="overflow-y: visible">
     Get-Volume -DriveLetter $x
-    Dismount-VHD –Path c:\VHD\2012R2-poc-2.vhd</pre>
+    Dismount-VHD -Path c:\VHD\2012R2-poc-2.vhd</pre>
 
 ### Configure Hyper-V
 
@@ -711,7 +712,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     <pre style="overflow-y: visible">
     Rename-Computer DC1
-    New-NetIPAddress –InterfaceAlias Ethernet –IPAddress 192.168.0.1 –PrefixLength 24 -DefaultGateway 192.168.0.2
+    New-NetIPAddress -InterfaceAlias Ethernet -IPAddress 192.168.0.1 -PrefixLength 24 -DefaultGateway 192.168.0.2
     Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses 192.168.0.1,192.168.0.2
     </pre>
 
@@ -748,7 +749,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     netsh dhcp add securitygroups
     Restart-Service DHCPServer
     Add-DhcpServerInDC  dc1.contoso.com  192.168.0.1
-    Set-ItemProperty –Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ServerManager\Roles\12 –Name ConfigurationState –Value 2
+    Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ServerManager\Roles\12 -Name ConfigurationState -Value 2
     </pre>
 
 10. Next, add a DHCP scope and set option values:
@@ -784,7 +785,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     **Configure service and user accounts**
 
-    Windows 10 deployment with MDT and Microsoft Endpoint Configuration Manager requires specific accounts to perform some actions. Service accounts will be created to use for these tasks. A user account is also added in the contoso.com domain that can be used for testing purposes. In the test lab environment, passwords are set to never expire.
+    Windows 10 deployment with MDT and Microsoft Endpoint Manager requires specific accounts to perform some actions. Service accounts will be created to use for these tasks. A user account is also added in the contoso.com domain that can be used for testing purposes. In the test lab environment, passwords are set to never expire.
 
     >To keep this test lab relatively simple, we will not create a custom OU structure and set permissions. Required permissions are enabled by adding accounts to the Domain Admins group. To configure these settings in a production environment, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 
@@ -885,7 +886,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     <pre style="overflow-y: visible">
     Enable-VMIntegrationService -VMName PC1 -Name "Guest Service Interface"
-    Copy-VMFile "PC1" –SourcePath "C:\VHD\pc1.ps1"  –DestinationPath "C:\pc1.ps1" –CreateFullPath –FileSource Host
+    Copy-VMFile "PC1" -SourcePath "C:\VHD\pc1.ps1" -DestinationPath "C:\pc1.ps1" -CreateFullPath -FileSource Host
     </pre>
 
     >In order for this command to work properly, PC1 must be running the vmicguestinterface (Hyper-V Guest Service Interface) service. If this service is not enabled in this step, then the copy-VMFile command will fail. In this case, you can try updating integration services on the VM by mounting the Hyper-V Integration Services Setup (vmguest.iso), which is located in C:\Windows\System32 on Windows Server 2012 and 2012 R2 operating systems that are running the Hyper-V role service.
@@ -916,7 +917,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     <pre style="overflow-y: visible">
     Rename-Computer SRV1
-    New-NetIPAddress –InterfaceAlias Ethernet –IPAddress 192.168.0.2 –PrefixLength 24
+    New-NetIPAddress -InterfaceAlias Ethernet -IPAddress 192.168.0.2 -PrefixLength 24
     Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses 192.168.0.1,192.168.0.2
     Restart-Computer
     </pre>

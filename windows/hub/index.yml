@@ -33,7 +33,7 @@ landingContent:
           - text: What's new in Windows 10, version 1909
             url: /windows/whats-new/whats-new-windows-10-version-1909
           - text: Windows 10 release information
-            url:  https://docs.microsoft.com/windows/release-information/
+            url:  https://docs.microsoft.com/windows/release-health/release-information
 
   # Card (optional)
   - title: Configuration
@@ -42,7 +42,7 @@ landingContent:
         links:
           - text: Configure Windows 10
             url: /windows/configuration/index
-          - text: Accesasibility information for IT Pros
+          - text: Accessibility information for IT Pros
             url: /windows/configuration/windows-10-accessibility-for-itpros
           - text: Configure access to Microsoft Store
             url: /windows/configuration/stop-employees-from-using-microsoft-store

@@ -4,7 +4,7 @@ description: Learn how to make a copy of a GPO by using the Active Directory Use
 ms.assetid: 7f6a23e5-4b3f-40d6-bf6d-7895558b1406
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Copy a GPO to Create a New GPO
