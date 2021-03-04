@@ -1,9 +1,9 @@
 ---
 title: Query Application Control events with Advanced Hunting (Windows 10)
 description: Learn how to query Windows Defender Application Control events across your entire organization by using Advanced Hunting.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 12/06/2018
+ms.technology: mde
 ---
 
 # Querying Application Control events centrally using Advanced hunting  
@@ -22,12 +23,12 @@ ms.date: 12/06/2018
 A Windows Defender Application Control (WDAC) policy logs events locally in Windows Event Viewer in either enforced or audit mode. 
 While Event Viewer helps to see the impact on a single system, IT Pros want to gauge the impact across many systems. 
 
-In November 2018, we added functionality in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) that makes it easy to view WDAC events centrally from all systems that are connected to Microsoft Defender ATP. 
+In November 2018, we added functionality in Microsoft Defender for Endpoint that makes it easy to view WDAC events centrally from all systems that are connected to Defender for Endpoint. 
 
-Advanced hunting in Microsoft Defender ATP allows customers to query data using a rich set of capabilities. WDAC events can be queried with using an ActionType that starts with “AppControl”. 
+Advanced hunting in Microsoft Defender for Endpoint allows customers to query data using a rich set of capabilities. WDAC events can be queried with using an ActionType that starts with “AppControl”. 
 This capability is supported beginning with Windows version 1607.
 
-Here is a simple example query that shows all the WDAC events generated in the last seven days from machines being monitored by Microsoft Defender ATP:
+Here is a simple example query that shows all the WDAC events generated in the last seven days from machines being monitored by Microsoft Defender for Endpoint:
 
 ```
 DeviceEvents

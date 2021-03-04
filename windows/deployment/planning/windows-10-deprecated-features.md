@@ -28,7 +28,6 @@ The features described below are no longer being actively developed, and might b
 | ----------- | --------------------- | ---- |
 | Microsoft Edge | The legacy version of Microsoft Edge is no longer being developed.| 2004 |
 | Companion Device Framework | The [Companion Device Framework](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-companion-device-framework) is no longer under active development.| 2004 |
-| Microsoft Edge | The legacy version of Microsoft Edge is no longer being developed.| 2004 |
 | Dynamic Disks | The [Dynamic Disks](https://docs.microsoft.com/windows/win32/fileio/basic-and-dynamic-disks#dynamic-disks) feature is no longer being developed. This feature will be fully replaced by [Storage Spaces](https://docs.microsoft.com/windows-server/storage/storage-spaces/overview) in a future release.| 2004 |
 | Language Community tab in Feedback Hub | The Language Community tab will be removed from the Feedback Hub. The standard feedback process: [Feedback Hub - Feedback](feedback-hub://?newFeedback=true&feedbackType=2) is the recommended way to provide translation feedback. | 1909 |
 | My People / People in the Shell |  My People is no longer being developed. It may be removed in a future update. | 1909 |
@@ -60,7 +59,7 @@ The features described below are no longer being actively developed, and might b
 |Trusted Platform Module (TPM) Owner Password Management |This functionality within TPM.msc will be migrated to a new user interface.| 1709 |
 |Trusted Platform Module (TPM): TPM.msc and TPM Remote Management  | To be replaced by a new user interface in a future release. | 1709 |
 |Trusted Platform Module (TPM) Remote Management |This functionality within TPM.msc will be migrated to a new user interface. | 1709 |
-|Windows Hello for Business deployment that uses Microsoft Endpoint Configuration Manager   |Windows Server 2016 Active Directory Federation Services – Registration Authority (ADFS RA) deployment is simpler and provides a better user experience and a more deterministic certificate enrollment experience. | 1709 |
+|Windows Hello for Business deployment that uses Microsoft Endpoint Manager   |Windows Server 2016 Active Directory Federation Services – Registration Authority (ADFS RA) deployment is simpler and provides a better user experience and a more deterministic certificate enrollment experience. | 1709 |
 |Windows PowerShell 2.0  | Applications and components should be migrated to PowerShell 5.0+. | 1709 |
 |Apndatabase.xml | Apndatabase.xml is being replaced by the COSA database. Therefore, some constructs will no longer function. This includes Hardware ID, incoming SMS messaging rules in mobile apps, a list of privileged apps in mobile apps, autoconnect order, APN parser, and CDMAProvider ID. | 1703 |
 |Tile Data Layer | The [Tile Data Layer](https://docs.microsoft.com/windows/configuration/start-layout-troubleshoot#symptom-start-menu-issues-with-tile-data-layer-corruption) database stopped development in Windows 10, version 1703. | 1703 |

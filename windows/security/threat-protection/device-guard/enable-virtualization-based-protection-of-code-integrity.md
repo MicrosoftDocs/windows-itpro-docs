@@ -1,7 +1,7 @@
 ---
 title: Enable virtualization-based protection of code integrity
 description: This article explains the steps to opt in to using HVCI on Windows devices.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,13 +12,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/01/2019
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Enable virtualization-based protection of code integrity
 
-**Applies to:**
-
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 This topic covers different ways to enable Hypervisor-protected code integrity (HVCI) on Windows 10.
 Some applications, including device drivers, may be incompatible with HVCI.
@@ -198,7 +197,7 @@ Value | Description
 **5.** | If present, NX protections are available.
 **6.** | If present, SMM mitigations are available.
 **7.** | If present, Mode Based Execution Control is available.
-
+**8.** | If present, APIC virtualization is available.
 
 #### InstanceIdentifier
 
@@ -229,6 +228,7 @@ Value | Description
 **1.** | If present, Windows Defender Credential Guard is configured.
 **2.** | If present, HVCI is configured.
 **3.** | If present, System Guard Secure Launch is configured.
+**4.** | If present, SMM Firmware Measurement is configured.
 
 #### SecurityServicesRunning
 
@@ -240,6 +240,7 @@ Value | Description
 **1.** | If present, Windows Defender Credential Guard is running.
 **2.** | If present, HVCI is running.
 **3.** | If present, System Guard Secure Launch is running.
+**4.** | If present, SMM Firmware Measurement is running.
 
 #### Version
 

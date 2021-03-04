@@ -4,7 +4,7 @@ description: Windows Defender Firewall with Advanced Security enables you to iso
 ms.assetid: bc1f49a4-7d54-4857-8af9-b7c79f47273b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Restrict access to only trusted devices

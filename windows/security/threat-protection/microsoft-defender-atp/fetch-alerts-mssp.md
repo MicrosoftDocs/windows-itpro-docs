@@ -4,7 +4,7 @@ description: Learn how to fetch alerts from a customer tenant
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,21 +13,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Fetch alerts from MSSP customer tenant
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
-
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 >[!NOTE]
 >This action is taken by the MSSP.
@@ -39,7 +37,7 @@ There are two ways you can fetch alerts:
 
 ## Fetch alerts into your SIEM
 
-To fetch alerts into your SIEM system you'll need to take the following steps:
+To fetch alerts into your SIEM system, you'll need to take the following steps:
 
 Step 1: Create a third-party application
 
@@ -47,21 +45,15 @@ Step 2: Get access and refresh tokens from your customer's tenant
  
 Step 3: allow your application on Microsoft Defender Security Center
  
-
-
-
 ### Step 1: Create an application in Azure Active Directory (Azure AD)
  
-You'll need to create an application and grant it permissions to fetch alerts from your customer's Microsoft Defender ATP tenant.
- 
+You'll need to create an application and grant it permissions to fetch alerts from your customer's Microsoft Defender for Endpoint tenant.
 
 1. Sign in to the [Azure AD portal](https://aad.portal.azure.com/).
 
 2. Select **Azure Active Directory** > **App registrations**.
-
  
 3. Click **New registration**.
- 
 
 4. Specify the following values:
 
@@ -79,7 +71,6 @@ You'll need to create an application and grant it permissions to fetch alerts fr
 8. Select **Certificate & secrets** in the new application panel.
 
 9. Click **New client secret**.
-
 
     - Description: Enter a description for the key.
     - Expires: Select **In 1 year**
@@ -163,12 +154,10 @@ After providing your credentials, you'll need to grant consent to the applicatio
 7. You'll be asked to provide your credentials and consent. Ignore the page redirect.
 
 8. In the PowerShell window, you'll receive an access token and a refresh token. Save the refresh token to configure your SIEM connector. 
-
  
 ### Step 3: Allow your application on Microsoft Defender Security Center
 You'll need to allow the application you created in Microsoft Defender Security Center.
  
-
 You'll need to have **Manage portal system settings** permission to allow the application. Otherwise, you'll need to request your customer to allow the application for you.
 
 1. Go to `https://securitycenter.windows.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID.
@@ -182,10 +171,10 @@ You'll need to have **Manage portal system settings** permission to allow the ap
 5. Click **Authorize application**. 
 
  
-You can now download the relevant configuration file for your SIEM and connect to the Microsoft Defender ATP API. For more information see, [Pull alerts to your SIEM tools](configure-siem.md).
+You can now download the relevant configuration file for your SIEM and connect to the Defender for Endpoint API. For more information, see, [Pull alerts to your SIEM tools](configure-siem.md).
  
 
-- In the ArcSight configuration file / Splunk Authentication Properties file ? you will have to write your application key manually by settings the secret value.
+- In the ArcSight configuration file / Splunk Authentication Properties file, write your application key manually by setting the secret value.
 - Instead of acquiring a refresh token in the portal, use the script from the previous step to acquire a refresh token (or acquire it by other means).
 
 ## Fetch alerts from MSSP customer's tenant using APIs
@@ -193,7 +182,7 @@ You can now download the relevant configuration file for your SIEM and connect t
 For information on how to fetch alerts using REST API, see [Pull alerts using REST API](pull-alerts-using-rest-api.md).
 
 
-## Related topics
+## See also
 - [Grant MSSP access to the portal](grant-mssp-access.md)
 - [Access the MSSP customer portal](access-mssp-portal.md)
 - [Configure alert notifications](configure-mssp-notifications.md)

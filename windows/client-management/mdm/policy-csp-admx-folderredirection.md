@@ -91,7 +91,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to control whether all redirected shell folders, such as Contacts, Documents, Desktop, Favorites, Music, Pictures, Videos, Start Menu, and AppData\Roaming, are available offline by default.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control whether all redirected shell folders, such as Contacts, Documents, Desktop, Favorites, Music, Pictures, Videos, Start Menu, and AppData\Roaming, are available offline by default.
 
 If you enable this policy setting, users must manually select the files they wish to make available offline.  
 
@@ -166,7 +166,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to control whether individual redirected shell folders are available offline by default.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control whether individual redirected shell folders are available offline by default.
 
 For the folders affected by this setting, users must manually select the files they wish to make available offline.
 
@@ -240,7 +240,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls whether the contents of redirected folders is copied from the old location to the new location or simply renamed in the Offline Files cache when a folder is redirected to a new location.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls whether the contents of redirected folders is copied from the old location to the new location or simply renamed in the Offline Files cache when a folder is redirected to a new location.
 
 If you enable this policy setting, when the path to a redirected folder is changed from one network location to another and Folder Redirection is configured to move the content to the new location, instead of copying the content to the new location, the cached content is renamed in the local cache and not copied to the new location. To use this policy setting, you must move or restore the server content to the new network location using a method that preserves the state of the files, including their timestamps, before updating the Folder Redirection location.
 
@@ -309,7 +309,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows the administrator to define whether Folder Redirection should use localized names for the All Programs, Startup, My Music, My Pictures, and My Videos subfolders when redirecting the parent Start Menu and legacy My Documents folder respectively.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows the administrator to define whether Folder Redirection should use localized names for the All Programs, Startup, My Music, My Pictures, and My Videos subfolders when redirecting the parent Start Menu and legacy My Documents folder respectively.
 
 If you enable this policy setting, Windows Vista, Windows 7, Windows 8, and Windows Server 2012 will use localized folder names for these subfolders when redirecting the Start Menu or legacy My Documents folder.
 
@@ -381,7 +381,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows the administrator to define whether Folder Redirection should use localized names for the All Programs, Startup, My Music, My Pictures, and My Videos subfolders when redirecting the parent Start Menu and legacy My Documents folder respectively.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows the administrator to define whether Folder Redirection should use localized names for the All Programs, Startup, My Music, My Pictures, and My Videos subfolders when redirecting the parent Start Menu and legacy My Documents folder respectively.
 
 If you enable this policy setting, Windows Vista, Windows 7, Windows 8, and Windows Server 2012 will use localized folder names for these subfolders when redirecting the Start Menu or legacy My Documents folder.
 
@@ -452,7 +452,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls whether folders are redirected on a user's primary computers only. This policy setting is useful to improve logon performance and to increase security for user data on computers where the user might not want to download private data, such as on a meeting room computer or on a computer in a remote office.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls whether folders are redirected on a user's primary computers only. This policy setting is useful to improve logon performance and to increase security for user data on computers where the user might not want to download private data, such as on a meeting room computer or on a computer in a remote office.
 
 To designate a user's primary computers, an administrator must use management software or a script to add primary computer attributes to the user's account in Active Directory Domain Services (AD DS). This policy setting also requires the Windows Server 2012 version of the Active Directory schema to function.
 
@@ -525,7 +525,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls whether folders are redirected on a user's primary computers only. This policy setting is useful to improve logon performance and to increase security for user data on computers where the user might not want to download private data, such as on a meeting room computer or on a computer in a remote office.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls whether folders are redirected on a user's primary computers only. This policy setting is useful to improve logon performance and to increase security for user data on computers where the user might not want to download private data, such as on a meeting room computer or on a computer in a remote office.
 
 To designate a user's primary computers, an administrator must use management software or a script to add primary computer attributes to the user's account in Active Directory Domain Services (AD DS). This policy setting also requires the Windows Server 2012 version of the Active Directory schema to function.
 
@@ -557,14 +557,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 
