@@ -116,7 +116,7 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 - Percentage of Maximum Download Bandwidth (DOPercentageMaxDownloadBandwidth)
   - Reason: Replaced with separate policies for foreground and background.
 - Max Upload Bandwidth (DOMaxUploadBandwidth)
-  - Reason: impacts uploads to internet peers only, which isn't used in Enterprises.
+  - Reason: Impacts uploads to internet peers only, which isn't used in enterprises.
 - Absolute max throttle (DOMaxDownloadBandwidth)
   - Reason: separated to foreground and background
 
