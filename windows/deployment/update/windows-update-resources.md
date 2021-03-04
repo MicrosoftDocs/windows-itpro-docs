@@ -38,7 +38,7 @@ The following resources provide additional information about using Windows Updat
 
 ## Reset Windows Update components manually
 
-1. Open a Windows command prompt. To open a command prompt, click **Start > Run**. Copy and paste (or type) the following command and then press ENTER:
+1. Open a Windows command prompt as Administrator. To open a command prompt as Administrator, click **Start > Run**. Copy and paste (or type) the following command and then press Ctrl+Shift+Enter to run the command as an Administrator:
    ``` console
    cmd
    ```
