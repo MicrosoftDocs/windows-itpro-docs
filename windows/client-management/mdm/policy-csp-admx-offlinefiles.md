@@ -209,7 +209,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting makes subfolders available offline whenever their parent folder is made available offline.
+Available in the latest Windows 10 Insider Preview Build. This policy setting makes subfolders available offline whenever their parent folder is made available offline.
 
 This setting automatically extends the "make available offline" setting to all new and existing subfolders of a folder. Users do not have the option of excluding subfolders.
 
@@ -228,7 +228,7 @@ If you disable this setting or do not configure it, the system asks users whethe
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Subfolders always available offline*
--   GP name: *AlwaysPinSubFolders*
+-   GP name: *Pol_AlwaysPinSubFolders*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -280,7 +280,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting lists network files and folders that are always available for offline use. This ensures that the specified files and folders are available offline to users of the computer.
+Available in the latest Windows 10 Insider Preview Build. This policy setting lists network files and folders that are always available for offline use. This ensures that the specified files and folders are available offline to users of the computer.
 
 If you enable this policy setting, the files you enter are always available offline to users of the computer. To specify a file or folder, click Show. In the Show Contents dialog box in the Value Name column, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
 
@@ -302,7 +302,7 @@ If you do not configure this policy setting, no files or folders are made availa
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify administratively assigned Offline Files*
--   GP name: *AssignedOfflineFolders*
+-   GP name: *Pol_AssignedOfflineFiles_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -354,7 +354,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting lists network files and folders that are always available for offline use. This ensures that the specified files and folders are available offline to users of the computer.
+Available in the latest Windows 10 Insider Preview Build. This policy setting lists network files and folders that are always available for offline use. This ensures that the specified files and folders are available offline to users of the computer.
 
 If you enable this policy setting, the files you enter are always available offline to users of the computer. To specify a file or folder, click Show. In the Show Contents dialog box in the Value Name column, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
 
@@ -376,7 +376,7 @@ If you do not configure this policy setting, no files or folders are made availa
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify administratively assigned Offline Files*
--   GP name: *AssignedOfflineFolders*
+-   GP name: *Pol_AssignedOfflineFiles_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -428,7 +428,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls when background synchronization occurs while operating in slow-link mode, and applies to any user who logs onto the specified machine while this policy is in effect. To control slow-link mode, use the "Configure slow-link mode" policy setting.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls when background synchronization occurs while operating in slow-link mode, and applies to any user who logs onto the specified machine while this policy is in effect. To control slow-link mode, use the "Configure slow-link mode" policy setting.
 
 If you enable this policy setting, you can control when Windows synchronizes in the background while operating in slow-link mode. Use  the 'Sync Interval' and 'Sync Variance' values to override the default sync interval and variance settings. Use 'Blockout Start Time' and 'Blockout Duration' to set a period of time where background sync is disabled. Use the 'Maximum Allowed Time Without A Sync' value to ensure that all  network folders on the machine are synchronized with the server on a regular basis.
 
@@ -447,7 +447,7 @@ If you disable or do not configure this policy setting, Windows performs a backg
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure Background Sync*
--   GP name: *BackgroundSyncEnabled*
+-   GP name: *Pol_BackgroundSyncSettings*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -499,7 +499,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting limits the amount of disk space that can be used to store offline files. This includes the space used by automatically cached files and files that are specifically made available offline. Files can be automatically cached if the user accesses a file on an automatic caching network share.
+Available in the latest Windows 10 Insider Preview Build. This policy setting limits the amount of disk space that can be used to store offline files. This includes the space used by automatically cached files and files that are specifically made available offline. Files can be automatically cached if the user accesses a file on an automatic caching network share.
 
 This setting also disables the ability to adjust, through the Offline Files control panel applet, the disk space limits on the Offline Files cache. This prevents users from trying to change the option while a policy setting controls it.
 
@@ -528,7 +528,7 @@ This setting replaces the Default Cache Size setting used by pre-Windows Vista s
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Limit disk space used by Offline Files*
--   GP name: *CacheQuotaLimitUnpinned*
+-   GP name: *Pol_CacheSize*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -580,7 +580,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether network files remain available if the computer is suddenly disconnected from the server hosting the files.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether network files remain available if the computer is suddenly disconnected from the server hosting the files.
 
 This setting also disables the "When a network connection is lost" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
@@ -612,7 +612,7 @@ Also, see the "Non-default server disconnect actions" setting.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Action on server disconnect*
--   GP name: *GoOfflineAction*
+-   GP name: *Pol_CustomGoOfflineActions_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -664,7 +664,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether network files remain available if the computer is suddenly disconnected from the server hosting the files.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether network files remain available if the computer is suddenly disconnected from the server hosting the files.
 
 This setting also disables the "When a network connection is lost" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
@@ -696,7 +696,7 @@ Also, see the "Non-default server disconnect actions" setting.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Action on server disconnect*
--   GP name: *GoOfflineAction*
+-   GP name: *Pol_CustomGoOfflineActions_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -748,7 +748,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Limits the percentage of the computer's disk space that can be used to store automatically cached offline files.
+Available in the latest Windows 10 Insider Preview Build. Limits the percentage of the computer's disk space that can be used to store automatically cached offline files.
 
 This setting also disables the "Amount of disk space to use for temporary offline files" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
@@ -776,7 +776,7 @@ If you do not configure this setting, disk space for automatically cached files 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Default cache size*
--   GP name: *DefCacheSize*
+-   GP name: *Pol_DefCacheSize*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -828,7 +828,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185.This policy setting determines whether the Offline Files feature is enabled. Offline Files saves a copy of network files on the user's computer for use when the computer is not connected to the network.
+Available in the latest Windows 10 Insider Preview Build.This policy setting determines whether the Offline Files feature is enabled. Offline Files saves a copy of network files on the user's computer for use when the computer is not connected to the network.
 
 If you enable this policy setting, Offline Files is enabled and users cannot disable it.
 
@@ -850,7 +850,7 @@ If you do not configure this policy setting, Offline Files is enabled on Windows
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Allow or Disallow use of the Offline Files feature*
--   GP name: *Enabled*
+-   GP name: *Pol_Enabled*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -902,7 +902,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are encrypted.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether offline files are encrypted.
 
 Offline files are locally cached copies of files from a network share. Encrypting this cache reduces the likelihood that a user could access files from the Offline Files cache without proper permissions.
 
@@ -927,7 +927,7 @@ This setting is applied at user logon. If this setting is changed after user log
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Encrypt the Offline Files cache*
--   GP name: *EncryptCache*
+-   GP name: *Pol_EncryptOfflineFiles*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -979,7 +979,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines which events the Offline Files feature records in the event log.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines which events the Offline Files feature records in the event log.
 
 Offline Files records events in the Application log in Event Viewer when it detects errors. By default, Offline Files records an event only when the offline files storage cache is corrupted. However, you can use this setting to specify additional events you want Offline Files to record.
 
@@ -1007,7 +1007,7 @@ To use this setting, in the "Enter" box, select the number corresponding to the 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Event logging level*
--   GP name: *EventLoggingLevel*
+-   GP name: *Pol_EventLoggingLevel_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1059,7 +1059,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines which events the Offline Files feature records in the event log.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines which events the Offline Files feature records in the event log.
 
 Offline Files records events in the Application log in Event Viewer when it detects errors. By default, Offline Files records an event only when the offline files storage cache is corrupted. However, you can use this setting to specify additional events you want Offline Files to record.
 
@@ -1087,7 +1087,7 @@ To use this setting, in the "Enter" box, select the number corresponding to the 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Event logging level*
--   GP name: *EventLoggingLevel*
+-   GP name: *Pol_EventLoggingLevel_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1139,7 +1139,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting enables administrators to block certain file types from being created in the folders that have been made available offline.
+Available in the latest Windows 10 Insider Preview Build. This policy setting enables administrators to block certain file types from being created in the folders that have been made available offline.
 
 If you enable this policy setting, a user will be unable to create files with the specified file extensions in any of the folders that have been made available offline.
 
@@ -1156,7 +1156,7 @@ If you disable or do not configure this policy setting, a user can create a file
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Enable file screens*
--   GP name: *ExcludedFileTypes*
+-   GP name: *Pol_ExclusionListSettings*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1208,7 +1208,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Lists types of files that cannot be used offline.
+Available in the latest Windows 10 Insider Preview Build. Lists types of files that cannot be used offline.
 
 This setting lets you exclude certain types of files from automatic and manual caching for offline use. The system does not cache files of the type specified in this setting even when they reside on a network share configured for automatic caching. Also, if users try to make a file of this type available offline, the operation will fail and the following message will be displayed in the Synchronization Manager progress dialog box: "Files of this type cannot be made available offline."
 
@@ -1230,7 +1230,7 @@ To use this setting, type the file name extension in the "Extensions" box. To ty
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Files not cached*
--   GP name: *ExcludeExtensions*
+-   GP name: *Pol_ExtExclusionList*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1282,7 +1282,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether network files remain available if the computer is suddenly disconnected from the server hosting the files.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether network files remain available if the computer is suddenly disconnected from the server hosting the files.
 
 This setting also disables the "When a network connection is lost" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
@@ -1314,7 +1314,7 @@ Also, see the "Non-default server disconnect actions" setting.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Action on server disconnect*
--   GP name: *GoOfflineAction*
+-   GP name: *Pol_GoOfflineAction_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1366,7 +1366,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether network files remain available if the computer is suddenly disconnected from the server hosting the files.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether network files remain available if the computer is suddenly disconnected from the server hosting the files.
 
 This setting also disables the "When a network connection is lost" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
@@ -1398,7 +1398,7 @@ Also, see the "Non-default server disconnect actions" setting.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Action on server disconnect*
--   GP name: *GoOfflineAction*
+-   GP name: *Pol_GoOfflineAction_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1450,7 +1450,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting disables the Offline Files folder.
+Available in the latest Windows 10 Insider Preview Build. This policy setting disables the Offline Files folder.
 
 This setting disables the "View Files" button on the Offline Files tab. As a result, users cannot use the Offline Files folder to view or open copies of network files stored on their computer. Also, they cannot use the folder to view characteristics of offline files, such as their server status, type, or location.
 
@@ -1472,7 +1472,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prevent use of Offline Files folder*
--   GP name: *NoCacheViewer*
+-   GP name: *Pol_NoCacheViewer_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1524,7 +1524,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting disables the Offline Files folder.
+Available in the latest Windows 10 Insider Preview Build. This policy setting disables the Offline Files folder.
 
 This setting disables the "View Files" button on the Offline Files tab. As a result, users cannot use the Offline Files folder to view or open copies of network files stored on their computer. Also, they cannot use the folder to view characteristics of offline files, such as their server status, type, or location.
 
@@ -1546,7 +1546,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prevent use of Offline Files folder*
--   GP name: *NoCacheViewer*
+-   GP name: *Pol_NoCacheViewer_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1598,7 +1598,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from enabling, disabling, or changing the configuration of Offline Files.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from enabling, disabling, or changing the configuration of Offline Files.
 
 This setting removes the Offline Files tab from the Folder Options dialog box. It also removes the Settings item from the Offline Files context menu and disables the Settings button on the Offline Files Status dialog box. As a result, users cannot view or change the options on the Offline Files tab or Offline Files dialog box.
 
@@ -1620,7 +1620,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prohibit user configuration of Offline Files*
--   GP name: *NoConfigCache*
+-   GP name: *Pol_NoConfigCache_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1672,7 +1672,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from enabling, disabling, or changing the configuration of Offline Files.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from enabling, disabling, or changing the configuration of Offline Files.
 
 This setting removes the Offline Files tab from the Folder Options dialog box. It also removes the Settings item from the Offline Files context menu and disables the Settings button on the Offline Files Status dialog box. As a result, users cannot view or change the options on the Offline Files tab or Offline Files dialog box.
 
@@ -1694,7 +1694,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prohibit user configuration of Offline Files*
--   GP name: *NoConfigCache*
+-   GP name: *Pol_NoConfigCache_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1746,7 +1746,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from making network files and folders available offline.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from making network files and folders available offline.
 
 If you enable this policy setting, users cannot designate files to be saved on their computer for offline use. However, Windows will still cache local copies of files that reside on network shares designated for automatic caching.
 
@@ -1767,7 +1767,7 @@ If you disable or do not configure this policy setting, users can manually speci
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Remove "Make Available Offline" command*
--   GP name: *NoMakeAvailableOffline*
+-   GP name: *Pol_NoMakeAvailableOffline_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1819,7 +1819,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from making network files and folders available offline.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from making network files and folders available offline.
 
 If you enable this policy setting, users cannot designate files to be saved on their computer for offline use. However, Windows will still cache local copies of files that reside on network shares designated for automatic caching.
 
@@ -1840,7 +1840,7 @@ If you disable or do not configure this policy setting, users can manually speci
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Remove "Make Available Offline" command*
--   GP name: *NoMakeAvailableOffline*
+-   GP name: *Pol_NoMakeAvailableOffline_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1892,7 +1892,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to manage a list of files and folders for which you want to block the "Make Available Offline" command.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage a list of files and folders for which you want to block the "Make Available Offline" command.
 
 If you enable this policy setting, the "Make Available Offline" command is not available for the files and folders that you list. To specify these files and folders, click Show. In the Show Contents dialog box, in the Value Name column box, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
 
@@ -1917,7 +1917,7 @@ If you do not configure this policy setting, the "Make Available Offline" comman
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Remove "Make Available Offline" for these files and folders*
--   GP name: *NoMakeAvailableOfflineList*
+-   GP name: *Pol_NoPinFiles_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -1969,7 +1969,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to manage a list of files and folders for which you want to block the "Make Available Offline" command.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage a list of files and folders for which you want to block the "Make Available Offline" command.
 
 If you enable this policy setting, the "Make Available Offline" command is not available for the files and folders that you list. To specify these files and folders, click Show. In the Show Contents dialog box, in the Value Name column box, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
 
@@ -1994,7 +1994,7 @@ If you do not configure this policy setting, the "Make Available Offline" comman
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Remove "Make Available Offline" for these files and folders*
--   GP name: *NoMakeAvailableOfflineList*
+-   GP name: *Pol_NoPinFiles_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2046,7 +2046,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Hides or displays reminder balloons, and prevents users from changing the setting.
+Available in the latest Windows 10 Insider Preview Build. Hides or displays reminder balloons, and prevents users from changing the setting.
 
 Reminder balloons appear above the Offline Files icon in the notification area to notify users when they have lost the connection to a networked file and are working on a local copy of the file. Users can then decide how to proceed.
 
@@ -2074,7 +2074,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off reminder balloons*
--   GP name: *NoReminders*
+-   GP name: *Pol_NoReminders_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2126,7 +2126,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Hides or displays reminder balloons, and prevents users from changing the setting.
+Available in the latest Windows 10 Insider Preview Build. Hides or displays reminder balloons, and prevents users from changing the setting.
 
 Reminder balloons appear above the Offline Files icon in the notification area to notify users when they have lost the connection to a networked file and are working on a local copy of the file. Users can then decide how to proceed.
 
@@ -2154,7 +2154,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off reminder balloons*
--   GP name: *NoReminders*
+-   GP name: *Pol_NoReminders_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2206,7 +2206,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls whether files read from file shares over a slow network are transparently cached in the Offline Files cache for future reads. When a user tries to access a file that has been transparently cached, Windows reads from the cached copy after verifying its integrity. This improves end-user response times and decreases bandwidth consumption over WAN links.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls whether files read from file shares over a slow network are transparently cached in the Offline Files cache for future reads. When a user tries to access a file that has been transparently cached, Windows reads from the cached copy after verifying its integrity. This improves end-user response times and decreases bandwidth consumption over WAN links.
 
 The cached files are temporary and are not available to the user when offline. The cached files are not kept in sync with the version on the server, and the most current version from the server is always available for subsequent reads.
 
@@ -2227,7 +2227,7 @@ If you disable or do not configure this policy setting, remote files will be not
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Enable Transparent Caching*
--   GP name: *OnlineCachingLatencyThreshold*
+-   GP name: *Pol_OnlineCachingSettings*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2279,7 +2279,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting makes subfolders available offline whenever their parent folder is made available offline.
+Available in the latest Windows 10 Insider Preview Build. This policy setting makes subfolders available offline whenever their parent folder is made available offline.
 
 This setting automatically extends the "make available offline" setting to all new and existing subfolders of a folder. Users do not have the option of excluding subfolders.
 
@@ -2298,7 +2298,7 @@ If you disable this setting or do not configure it, the system asks users whethe
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Subfolders always available offline*
--   GP name: *AlwaysPinSubFolders*
+-   GP name: *Pol_AlwaysPinSubFolders*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2350,7 +2350,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting deletes local copies of the user's offline files when the user logs off.
+Available in the latest Windows 10 Insider Preview Build. This policy setting deletes local copies of the user's offline files when the user logs off.
 
 This setting specifies that automatically and manually cached offline files are retained only while the user is logged on to the computer. When the user logs off, the system deletes all local copies of offline files.
 
@@ -2370,7 +2370,7 @@ If you disable this setting or do not configure it, automatically and manually c
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *At logoff, delete local copy of user’s offline files*
--   GP name: *PurgeOnlyAutoCacheAtLogoff*
+-   GP name: *Pol_PurgeAtLogoff*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2422,7 +2422,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to turn on economical application of administratively assigned Offline Files.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to turn on economical application of administratively assigned Offline Files.
 
 If you enable or do not configure this policy setting, only new files and folders in administratively assigned folders are synchronized at logon. Files and folders that are already available offline are skipped and are synchronized later.
 
@@ -2439,7 +2439,7 @@ If you disable this policy setting, all administratively assigned folders are sy
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn on economical application of administratively assigned Offline Files*
--   GP name: *EconomicalAdminPinning*
+-   GP name: *Pol_QuickAdimPin*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2491,7 +2491,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines how often reminder balloon updates appear.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines how often reminder balloon updates appear.
 
 If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
 
@@ -2513,7 +2513,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Reminder balloon frequency*
--   GP name: *ReminderFreqMinutes*
+-   GP name: *Pol_ReminderFreq_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2565,7 +2565,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines how often reminder balloon updates appear.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines how often reminder balloon updates appear.
 
 If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
 
@@ -2587,7 +2587,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Reminder balloon frequency*
--   GP name: *ReminderFreqMinutes*
+-   GP name: *Pol_ReminderFreq_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2639,7 +2639,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines how long the first reminder balloon for a network status change is displayed.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines how long the first reminder balloon for a network status change is displayed.
 
 Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the first reminder.
 
@@ -2656,7 +2656,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Initial reminder balloon lifetime*
--   GP name: *InitialBalloonTimeoutSeconds*
+-   GP name: *Pol_ReminderInitTimeout_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2708,7 +2708,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines how long the first reminder balloon for a network status change is displayed.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines how long the first reminder balloon for a network status change is displayed.
 
 Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the first reminder.
 
@@ -2725,7 +2725,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Initial reminder balloon lifetime*
--   GP name: *InitialBalloonTimeoutSeconds*
+-   GP name: *Pol_ReminderInitTimeout_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2777,7 +2777,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines how long updated reminder balloons are displayed.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines how long updated reminder balloons are displayed.
 
 Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the update reminder.
 
@@ -2794,7 +2794,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Reminder balloon lifetime*
--   GP name: *ReminderBalloonTimeoutSeconds*
+-   GP name: *Pol_ReminderTimeout_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2846,7 +2846,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines how long updated reminder balloons are displayed.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines how long updated reminder balloons are displayed.
 
 Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the update reminder.
 
@@ -2863,7 +2863,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Reminder balloon lifetime*
--   GP name: *ReminderBalloonTimeoutSeconds*
+-   GP name: *Pol_ReminderTimeout_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2915,7 +2915,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the network latency and throughput thresholds that will cause a client computers to transition files and folders that are already available offline to the slow-link mode so that the user's access to this data is not degraded due to network slowness. When Offline Files is operating in the slow-link mode, all network file requests are satisfied from the Offline Files cache. This is similar to a user working offline.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the network latency and throughput thresholds that will cause a client computers to transition files and folders that are already available offline to the slow-link mode so that the user's access to this data is not degraded due to network slowness. When Offline Files is operating in the slow-link mode, all network file requests are satisfied from the Offline Files cache. This is similar to a user working offline.
 
 If you enable this policy setting, Offline Files uses the slow-link mode if the network throughput between the client and the server is below (slower than) the Throughput threshold parameter, or if the round-trip network latency is above (slower than) the Latency threshold parameter.
 
@@ -2942,7 +2942,7 @@ If you disable this policy setting, computers will not use the slow-link mode.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure slow-link mode*
--   GP name: *SlowLinkEnabled*
+-   GP name: *Pol_SlowLinkSettings*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -2994,7 +2994,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting configures the threshold value at which Offline Files considers a network connection to be "slow". Any network speed below this value is considered to be slow.
+Available in the latest Windows 10 Insider Preview Build. This policy setting configures the threshold value at which Offline Files considers a network connection to be "slow". Any network speed below this value is considered to be slow.
 
 When a connection is considered slow, Offline Files automatically adjust its behavior to avoid excessive synchronization traffic and will not automatically reconnect to a server when the presence of a server is detected.
 
@@ -3016,7 +3016,7 @@ If this setting is disabled or not configured, the default threshold value of 64
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure Slow link speed*
--   GP name: *SlowLinkSpeed*
+-   GP name: *Pol_SlowLinkSpeed*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -3068,7 +3068,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are fully synchronized when users log off.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether offline files are fully synchronized when users log off.
 
 This setting also disables the "Synchronize all offline files before logging off" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
@@ -3094,7 +3094,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Synchronize all offline files before logging off*
--   GP name: *SyncAtLogoff*
+-   GP name: *Pol_SyncAtLogoff_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -3146,7 +3146,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are fully synchronized when users log off.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether offline files are fully synchronized when users log off.
 
 This setting also disables the "Synchronize all offline files before logging off" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
@@ -3172,7 +3172,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Synchronize all offline files before logging off*
--   GP name: *SyncAtLogoff*
+-   GP name: *Pol_SyncAtLogoff_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -3224,7 +3224,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are fully synchronized when users log on.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether offline files are fully synchronized when users log on.
 
 This setting also disables the "Synchronize all offline files before logging on" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
@@ -3250,7 +3250,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Synchronize all offline files when logging on*
--   GP name: *SyncAtLogon*
+-   GP name: *Pol_SyncAtLogon_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -3304,7 +3304,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are fully synchronized when users log on.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether offline files are fully synchronized when users log on.
 
 This setting also disables the "Synchronize all offline files before logging on" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
 
@@ -3330,7 +3330,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Synchronize all offline files when logging on*
--   GP name: *SyncAtLogon*
+-   GP name: *Pol_SyncAtLogon_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -3382,7 +3382,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are synchronized before a computer is suspended.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether offline files are synchronized before a computer is suspended.
 
 If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
 
@@ -3402,7 +3402,7 @@ If you disable or do not configuring this setting, files are not synchronized wh
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Synchronize offline files before suspend*
--   GP name: *SyncAtSuspend*
+-   GP name: *Pol_SyncAtSuspend_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -3454,7 +3454,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are synchronized before a computer is suspended.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether offline files are synchronized before a computer is suspended.
 
 If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
 
@@ -3474,7 +3474,7 @@ If you disable or do not configuring this setting, files are not synchronized wh
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Synchronize offline files before suspend*
--   GP name: *SyncAtSuspend*
+-   GP name: *Pol_SyncAtSuspend_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -3526,7 +3526,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are synchronized in the background when it could result in extra charges on cell phone or broadband plans.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether offline files are synchronized in the background when it could result in extra charges on cell phone or broadband plans.
 
 If you enable this setting, synchronization can occur in the background when the user's network is roaming, near, or over the plan's data limit.  This may result in extra charges on cell phone or broadband plans.
 
@@ -3543,7 +3543,7 @@ If this setting is disabled or not configured, synchronization will not run in t
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Enable file synchronization on costed networks*
--   GP name: *SyncEnabledForCostedNetwork*
+-   GP name: *Pol_SyncOnCostedNetwork*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -3595,7 +3595,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting removes the "Work offline" command from Explorer, preventing users from manually changing whether Offline Files is in online mode or offline mode.
+Available in the latest Windows 10 Insider Preview Build. This policy setting removes the "Work offline" command from Explorer, preventing users from manually changing whether Offline Files is in online mode or offline mode.
 
 If you enable this policy setting, the "Work offline" command is not displayed in File Explorer.
 
@@ -3612,7 +3612,7 @@ If you disable or do not configure this policy setting, the "Work offline" comma
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Remove "Work offline" command*
--   GP name: *WorkOfflineDisabled*
+-   GP name: *Pol_WorkOfflineDisabled_1*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -3664,7 +3664,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting removes the "Work offline" command from Explorer, preventing users from manually changing whether Offline Files is in online mode or offline mode.
+Available in the latest Windows 10 Insider Preview Build. This policy setting removes the "Work offline" command from Explorer, preventing users from manually changing whether Offline Files is in online mode or offline mode.
 
 If you enable this policy setting, the "Work offline" command is not displayed in File Explorer.
 
@@ -3681,7 +3681,7 @@ If you disable or do not configure this policy setting, the "Work offline" comma
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Remove "Work offline" command*
--   GP name: *WorkOfflineDisabled*
+-   GP name: *Pol_WorkOfflineDisabled_2*
 -   GP path: *Network\Offline Files*
 -   GP ADMX file name: *OfflineFiles.admx*
 
@@ -3691,14 +3691,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

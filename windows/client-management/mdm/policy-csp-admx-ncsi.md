@@ -92,7 +92,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting  enables you to specify the expected address of the host name used for the DNS probe. Successful resolution of the host name to this address indicates corporate connectivity.
+Available in the latest Windows 10 Insider Preview Build. This policy setting  enables you to specify the expected address of the host name used for the DNS probe. Successful resolution of the host name to this address indicates corporate connectivity.
 
 <!--/Description-->
 > [!TIP]
@@ -105,7 +105,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting  enable
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify corporate DNS probe host address*
--   GP name: *DnsProbeContent*
+-   GP name: *NCSI_CorpDnsProbeContent*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
 
@@ -157,7 +157,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting enables you to specify the host name of a computer known to be on the corporate network. Successful resolution of this host name to the expected address indicates corporate connectivity.
+Available in the latest Windows 10 Insider Preview Build. This policy setting enables you to specify the host name of a computer known to be on the corporate network. Successful resolution of this host name to the expected address indicates corporate connectivity.
 
 <!--/Description-->
 > [!TIP]
@@ -170,7 +170,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting enables
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify corporate DNS probe host name*
--   GP name: *DnsProbeHost*
+-   GP name: *NCSI_CorpDnsProbeHost*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
 
@@ -222,7 +222,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting enables you to specify the list of IPv6 corporate site prefixes to monitor for corporate connectivity. Reachability of addresses with any of these prefixes indicates corporate connectivity.
+Available in the latest Windows 10 Insider Preview Build. This policy setting enables you to specify the list of IPv6 corporate site prefixes to monitor for corporate connectivity. Reachability of addresses with any of these prefixes indicates corporate connectivity.
 
 <!--/Description-->
 > [!TIP]
@@ -235,7 +235,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting enables
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify corporate site prefix list*
--   GP name: *SitePrefixes*
+-   GP name: *NCSI_CorpSitePrefixes*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
 
@@ -287,7 +287,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting enables you to specify the URL of the corporate website, against which an active probe is performed.
+Available in the latest Windows 10 Insider Preview Build. This policy setting enables you to specify the URL of the corporate website, against which an active probe is performed.
 
 <!--/Description-->
 > [!TIP]
@@ -300,7 +300,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting enables
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify corporate Website probe URL*
--   GP name: *WebProbeUrl*
+-   GP name: *NCSI_CorpWebProbeUrl*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
 
@@ -355,7 +355,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting enables you to specify the HTTPS URL of the corporate website that clients use to determine the current domain location (i.e. whether the computer is inside or outside the corporate network). Reachability of the URL destination indicates that the client location is inside corporate network; otherwise it is outside the network.
+Available in the latest Windows 10 Insider Preview Build. This policy setting enables you to specify the HTTPS URL of the corporate website that clients use to determine the current domain location (i.e. whether the computer is inside or outside the corporate network). Reachability of the URL destination indicates that the client location is inside corporate network; otherwise it is outside the network.
 
 <!--/Description-->
 > [!TIP]
@@ -368,7 +368,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting enables
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify domain location determination URL*
--   GP name: *DomainLocationDeterminationUrl*
+-   GP name: *NCSI_DomainLocationDeterminationUrl*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
 
@@ -420,7 +420,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it is currently probing on. If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
+Available in the latest Windows 10 Insider Preview Build. This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it is currently probing on. If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
 
 <!--/Description-->
 > [!TIP]
@@ -433,7 +433,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting enables
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify global DNS*
--   GP name: *UseGlobalDns*
+-   GP name: *NCSI_GlobalDns*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
 
@@ -485,7 +485,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This Policy setting enables you to specify passive polling behavior. NCSI polls various measurements throughout the network stack on a frequent interval to determine if network connectivity has been lost.  Use the options to control the passive polling behavior.
+Available in the latest Windows 10 Insider Preview Build. This Policy setting enables you to specify passive polling behavior. NCSI polls various measurements throughout the network stack on a frequent interval to determine if network connectivity has been lost.  Use the options to control the passive polling behavior.
 
 <!--/Description-->
 > [!TIP]
@@ -498,7 +498,7 @@ Available in Windows 10 Insider Preview Build 20185. This Policy setting enables
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify passive polling*
--   GP name: *DisablePassivePolling*
+-   GP name: *NCSI_PassivePolling*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
 
@@ -508,14 +508,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

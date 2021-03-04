@@ -18,10 +18,11 @@
         "audience": "ITPro",
         "breadcrumb_path": "/itpro/windows/breadcrumb/toc.json",
         "uhfHeaderId": "MSDocsHeader-M365-IT",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "Win.windows"
-      },
+    		"_op_documentIdPathDepotMapping": {
+    			"./": {
+    			  "depot_name": "Win.windows"
+          }
+        },
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 

@@ -45,6 +45,9 @@
           href: update/plan-define-strategy.md
         - name: Delivery Optimization for Windows 10 updates
           href: update/waas-delivery-optimization.md
+          items:
+            - name: Using a proxy with Delivery Optimization
+              href: update/delivery-optimization-proxy.md
         - name: Best practices for feature updates on mission-critical devices
           href: update/feature-update-mission-critical.md
         - name: Windows 10 deployment considerations
@@ -141,6 +144,8 @@
               href: update/media-dynamic-update.md
             - name: Migrating and acquiring optional Windows content
               href: update/optional-content.md
+            - name: Safeguard holds
+              href: update/safeguard-holds.md
             - name: Manage the Windows 10 update experience
               items:              
                 - name: Manage device restarts after updates
@@ -196,6 +201,7 @@
                   - name: Data handling and privacy in Update Compliance
                     href: update/update-compliance-privacy.md
                   - name: Update Compliance schema reference
+                    href: update/update-compliance-schema.md
                     items:
                       - name: WaaSUpdateStatus
                         href: update/update-compliance-schema-waasupdatestatus.md
@@ -233,6 +239,8 @@
               items:
                 - name: How to troubleshoot Windows Update
                   href: update/windows-update-troubleshooting.md
+                - name: Opt out of safeguard holds
+                  href: update/safeguard-opt-out.md
                 - name: Determine the source of Windows Updates
                   href: update/windows-update-sources.md
                 - name: Common Windows Update errors

@@ -383,7 +383,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -408,7 +408,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Administrative Templates (Computers)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ADMComputers_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -460,7 +460,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -485,7 +485,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Administrative Templates (Computers)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ADMComputers_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -538,7 +538,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -563,7 +563,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Administrative Templates (Users)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ADMUsers_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -616,7 +616,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -641,7 +641,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Administrative Templates (Users)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ADMUsers_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -694,7 +694,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -719,7 +719,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *ADSI Edit*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ADSI*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -772,7 +772,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -797,7 +797,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Active Directory Domains and Trusts*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ActiveDirDomTrusts*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -850,7 +850,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -875,7 +875,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Active Directory Sites and Services*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ActiveDirSitesServices*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -928,7 +928,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -953,7 +953,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Active Directory Users and Computers*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ActiveDirUsersComp*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1006,7 +1006,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1031,7 +1031,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *AppleTalk Routing*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_AppleTalkRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1084,7 +1084,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1109,7 +1109,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Authorization Manager*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_AuthMan*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1162,7 +1162,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1187,7 +1187,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Certification Authority*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_CertAuth*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1240,7 +1240,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1264,7 +1264,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Certification Authority Policy Settings*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_CertAuthPolSet*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1317,7 +1317,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1341,7 +1341,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Certificates*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_Certs*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1394,7 +1394,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1418,7 +1418,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Certificate Templates*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_CertsTemplate*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1471,7 +1471,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1495,7 +1495,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Component Services*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ComponentServices*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1548,7 +1548,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1572,7 +1572,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Computer Management*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ComputerManagement*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1625,7 +1625,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1649,7 +1649,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Connection Sharing (NAT)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ConnectionSharingNAT*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1702,7 +1702,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1726,7 +1726,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *DCOM Configuration Extension*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_DCOMCFG*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1779,7 +1779,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1803,7 +1803,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Distributed File System*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_DFS*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1856,7 +1856,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1880,7 +1880,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *DHCP Relay Management*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_DHCPRelayMgmt*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -1933,7 +1933,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1957,7 +1957,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Device Manager*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_DeviceManager_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2010,7 +2010,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2034,7 +2034,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Device Manager*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_DeviceManager_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2087,7 +2087,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2111,7 +2111,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Disk Defragmenter*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_DiskDefrag*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2164,7 +2164,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2188,7 +2188,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Disk Management*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_DiskMgmt*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2241,7 +2241,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2265,7 +2265,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Enterprise PKI*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_EnterprisePKI*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2318,7 +2318,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2342,7 +2342,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Event Viewer*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_EventViewer_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2395,7 +2395,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2419,7 +2419,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Event Viewer (Windows Vista)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_EventViewer_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2472,7 +2472,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2496,7 +2496,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Event Viewer*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_EventViewer_3*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2549,7 +2549,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2573,7 +2573,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Event Viewer (Windows Vista)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_EventViewer_4*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2627,7 +2627,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2651,7 +2651,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Event Viewer (Windows Vista)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_EventViewer_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2704,7 +2704,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2728,7 +2728,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *FAX Service*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_FAXService*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2781,7 +2781,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2805,7 +2805,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Failover Clusters Manager*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_FailoverClusters*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2858,7 +2858,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2882,7 +2882,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Folder Redirection*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_FolderRedirection_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -2935,7 +2935,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2959,7 +2959,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Folder Redirection*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_FolderRedirection_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3012,7 +3012,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3036,7 +3036,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *FrontPage Server Extensions*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_FrontPageExt*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3089,7 +3089,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3113,7 +3113,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Group Policy Management*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_GroupPolicyManagementSnapIn*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3166,7 +3166,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3190,7 +3190,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Group Policy Object Editor*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_GroupPolicySnapIn*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3243,7 +3243,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits use of the Group Policy tab in property sheets for the Active Directory Users and Computers and Active Directory Sites and Services snap-ins.
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits use of the Group Policy tab in property sheets for the Active Directory Users and Computers and Active Directory Sites and Services snap-ins.
 
 If you enable this setting, the Group Policy tab is displayed in the property sheet for a site, domain, or organizational unit displayed by the Active Directory Users and Computers and Active Directory Sites and Services snap-ins. If you disable the setting, the Group Policy tab is not displayed in those snap-ins.
 
@@ -3269,7 +3269,7 @@ When the Group Policy tab is inaccessible, it does not appear in the site, domai
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Group Policy tab for Active Directory Tools*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_GroupPolicyTab*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3322,7 +3322,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3346,7 +3346,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Health Registration Authority (HRA)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_HRA*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3399,7 +3399,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3423,7 +3423,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Internet Authentication Service (IAS)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IAS*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3476,7 +3476,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3500,7 +3500,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *IAS Logging*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IASLogging*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3553,7 +3553,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3577,7 +3577,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Internet Explorer Maintenance*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IEMaintenance_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3630,7 +3630,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3654,7 +3654,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Internet Explorer Maintenance*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IEMaintenance_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3707,7 +3707,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3731,7 +3731,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *IGMP Routing*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IGMPRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3784,7 +3784,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3808,7 +3808,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Internet Information Services*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IIS*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3861,7 +3861,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3885,7 +3885,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *IP Routing*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IPRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -3938,7 +3938,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3962,7 +3962,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *IP Security Policy Management*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IPSecManage_GP*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4015,7 +4015,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4039,7 +4039,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *IPX RIP Routing*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IPXRIPRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4092,7 +4092,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4116,7 +4116,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *IPX Routing*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IPXRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4169,7 +4169,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4193,7 +4193,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *IPX SAP Routing*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IPXSAPRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4246,7 +4246,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4270,7 +4270,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Indexing Service*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IndexingService*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4323,7 +4323,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4347,7 +4347,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *IP Security Policy Management*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IpSecManage*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4400,7 +4400,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4424,7 +4424,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *IP Security Monitor*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_IpSecMonitor*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4477,7 +4477,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4501,7 +4501,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Local Users and Groups*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_LocalUsersGroups*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4554,7 +4554,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4578,7 +4578,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Logical and Mapped Drives*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_LogicalMappedDrives*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4631,7 +4631,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4655,7 +4655,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Network Policy Server (NPS)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_NPSUI*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4708,7 +4708,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4732,7 +4732,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *NAP Client Configuration*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_NapSnap*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4785,7 +4785,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4809,7 +4809,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *NAP Client Configuration*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_NapSnap_GP*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4862,7 +4862,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4886,7 +4886,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *.Net Framework Configuration*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_Net_Framework*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -4939,7 +4939,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4963,7 +4963,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Online Responder*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_OCSP*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5016,7 +5016,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5040,7 +5040,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *OSPF Routing*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_OSPFRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5093,7 +5093,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5117,7 +5117,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Performance Logs and Alerts*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_PerfLogsAlerts*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5170,7 +5170,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5194,7 +5194,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Public Key Policies*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_PublicKey*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5247,7 +5247,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5271,7 +5271,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *QoS Admission Control*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_QoSAdmission*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5324,7 +5324,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5348,7 +5348,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *RAS Dialin - User Node*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_RAS_DialinUser*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5401,7 +5401,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5425,7 +5425,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *RIP Routing*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_RIPRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5478,7 +5478,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5502,7 +5502,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Remote Installation Services*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_RIS*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5555,7 +5555,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5579,7 +5579,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Routing and Remote Access*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_RRA*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5632,7 +5632,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5656,7 +5656,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Removable Storage Management*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_RSM*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5709,7 +5709,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5733,7 +5733,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Removable Storage*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_RemStore*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5786,7 +5786,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5810,7 +5810,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Remote Access*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_RemoteAccess*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5863,7 +5863,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5887,7 +5887,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Remote Desktops*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_RemoteDesktop*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -5940,7 +5940,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5964,7 +5964,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Resultant Set of Policy snap-in*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ResultantSetOfPolicySnapIn*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6017,7 +6017,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6041,7 +6041,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Routing*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_Routing*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6094,7 +6094,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6118,7 +6118,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Security Configuration and Analysis*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SCA*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6171,7 +6171,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6195,7 +6195,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *SMTP Protocol*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SMTPProtocol*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6248,7 +6248,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6272,7 +6272,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *SNMP*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SNMP*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6325,7 +6325,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6349,7 +6349,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Scripts (Startup/Shutdown)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ScriptsMachine_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6402,7 +6402,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6426,7 +6426,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Scripts (Startup/Shutdown)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ScriptsMachine_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6479,7 +6479,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6503,7 +6503,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Scripts (Logon/Logoff)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ScriptsUser_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6556,7 +6556,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6580,7 +6580,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Scripts (Logon/Logoff)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ScriptsUser_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6633,7 +6633,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6657,7 +6657,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Security Settings*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SecuritySettings_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6710,7 +6710,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6734,7 +6734,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Security Settings*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SecuritySettings_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6787,7 +6787,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6811,7 +6811,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Security Templates*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SecurityTemplates*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6864,7 +6864,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6888,7 +6888,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Send Console Message*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SendConsoleMessage*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -6941,7 +6941,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6965,7 +6965,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Server Manager*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ServerManager*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7018,7 +7018,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7042,7 +7042,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Service Dependencies*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ServiceDependencies*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7095,7 +7095,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7119,7 +7119,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Services*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_Services*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7172,7 +7172,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7196,7 +7196,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Shared Folders*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SharedFolders*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7249,7 +7249,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7273,7 +7273,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Shared Folders Ext*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SharedFolders_Ext*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7326,7 +7326,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7350,7 +7350,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Software Installation (Computers)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SoftwareInstalationComputers_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7403,7 +7403,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7427,7 +7427,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Software Installation (Computers)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SoftwareInstalationComputers_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7480,7 +7480,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7504,7 +7504,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Software Installation (Users)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SoftwareInstallationUsers_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7557,7 +7557,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7581,7 +7581,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Software Installation (Users)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SoftwareInstallationUsers_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7634,7 +7634,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7658,7 +7658,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *System Information*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SysInfo*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7711,7 +7711,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7735,7 +7735,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *System Properties*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_SysProp*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7788,7 +7788,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7812,7 +7812,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *TPM Management*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_TPMManagement*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7865,7 +7865,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7889,7 +7889,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Telephony*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_Telephony*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -7942,7 +7942,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7966,7 +7966,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Remote Desktop Services Configuration*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_TerminalServices*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -8019,7 +8019,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8043,7 +8043,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *WMI Control*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_WMI*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -8096,7 +8096,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8120,7 +8120,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Windows Firewall with Advanced Security*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_WindowsFirewall*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -8173,7 +8173,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8197,7 +8197,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Windows Firewall with Advanced Security*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_WindowsFirewall_GP*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -8250,7 +8250,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8274,7 +8274,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Wired Network (IEEE 802.3) Policies*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_WiredNetworkPolicy*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -8327,7 +8327,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8351,7 +8351,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Wireless Monitor*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_WirelessMon*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -8404,7 +8404,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8428,7 +8428,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Wireless Network (IEEE 802.11) Policies*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_WirelessNetworkPolicy*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
 
@@ -8437,14 +8437,14 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 <!--/Policies-->
 

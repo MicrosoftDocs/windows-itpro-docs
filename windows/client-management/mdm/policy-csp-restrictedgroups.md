@@ -14,6 +14,9 @@ manager: dansimp
 
 # Policy CSP - RestrictedGroups
 
+> [!IMPORTANT]
+> Starting from Windows 10, version 20H2, it is recommended to use the [LocalUsersandGroups](policy-csp-localusersandgroups.md) policy instead of the RestrictedGroups policy to configure members (users or AAD groups) to a Windows 10 local group. Applying both the policies to the same device is unsupported and may yield unpredictable results. 
+
 
 <hr/>
 
@@ -142,8 +145,8 @@ Here's an example:
 </groupmembership>
 ```
 where:
-- `<accessgroup desc>` contains the local group SID or group name to configure. If an SID is specified here, the policy uses the [LookupAccountName](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API to get the local group name. For best results, use names for `<accessgroup desc>`.
-- `<member name>` contains the members to add to the group in `<accessgroup desc>`. If a name is specified here, the policy will try to get the corresponding SID using the [LookupAccountSID](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. For best results, use SID for `<member name>`. The member SID can be a user account or a group in AD, Azure AD, or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](https://docs.microsoft.com/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
+- `<accessgroup desc>` contains the local group SID or group name to configure. If a SID is specified here, the policy uses the [LookupAccountName](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API to get the local group name. For best results, use names for `<accessgroup desc>`.
+- `<member name>` contains the members to add to the group in `<accessgroup desc>`. A member can be specified as a name or as a SID. For best results, use a SID for `<member name>`. The member SID can be a user account or a group in AD, Azure AD, or on the local machine. If a name is specified here, the policy will try to get the corresponding SID using the [LookupAccountSID](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. Name can be used for a user account or a group in AD or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](https://docs.microsoft.com/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
 - In this example, `Group1` and `Group2` are local groups on the device being configured, and `Group3` is a domain group.
 
 > [!NOTE]

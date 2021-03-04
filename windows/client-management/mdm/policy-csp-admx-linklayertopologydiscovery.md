@@ -77,7 +77,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting changes the operational behavior of the Mapper I/O network protocol driver.
+Available in the latest Windows 10 Insider Preview Build. This policy setting changes the operational behavior of the Mapper I/O network protocol driver.
 
 LLTDIO allows a computer to discover the topology of a network it's connected to. It also allows a computer to initiate Quality-of-Service requests such as bandwidth estimation and network health analysis.
 
@@ -96,7 +96,7 @@ If you disable or do not configure this policy setting, the default behavior of 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn on Mapper I/O (LLTDIO) driver*
--   GP name: *EnableLLTDIO*
+-   GP name: *LLTD_EnableLLTDIO*
 -   GP path: *Network/Link-Layer Topology Discovery*
 -   GP ADMX file name: *LinkLayerTopologyDiscovery.admx*
 
@@ -148,7 +148,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting changes the operational behavior of the Responder network protocol driver.
+Available in the latest Windows 10 Insider Preview Build. This policy setting changes the operational behavior of the Responder network protocol driver.
 
 The Responder allows a computer to participate in Link Layer Topology Discovery requests so that it can be discovered and located on the network. It also allows a computer to participate in Quality-of-Service activities such as bandwidth estimation and network health analysis.
 
@@ -167,7 +167,7 @@ If you disable or do not configure this policy setting, the default behavior for
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn on Responder (RSPNDR) driver*
--   GP name: *EnableRspndr*
+-   GP name: *LLTD_EnableRspndr*
 -   GP path: *Network/Link-Layer Topology Discovery*
 -   GP ADMX file name: *LinkLayerTopologyDiscovery.admx*
 
@@ -177,14 +177,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

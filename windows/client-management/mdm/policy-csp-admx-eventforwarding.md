@@ -78,7 +78,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls resource usage for the forwarder (source computer) by controlling the events/per second sent to the Event Collector.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls resource usage for the forwarder (source computer) by controlling the events/per second sent to the Event Collector.
 
 If you enable this policy setting, you can control the volume of events sent to the Event Collector by the source computer. This may be required in high volume environments.
 
@@ -97,7 +97,7 @@ This setting applies across all subscriptions for the forwarder (source computer
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure forwarder resource usage*
--   GP name: *MaxForwardingRate*
+-   GP name: *ForwarderResourceUsage*
 -   GP path: *Windows Components/Event Forwarding*
 -   GP ADMX file name: *EventForwarding.admx*
 
@@ -151,7 +151,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to configure the server address, refresh interval, and issuer certificate authority (CA) of a target Subscription Manager.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure the server address, refresh interval, and issuer certificate authority (CA) of a target Subscription Manager.
 
 If you enable this policy setting, you can configure the Source Computer to contact a specific FQDN (Fully Qualified Domain Name) or IP Address and request subscription specifics.
 
@@ -187,14 +187,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

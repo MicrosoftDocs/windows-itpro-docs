@@ -82,6 +82,9 @@ Microsoft recommends that BitLocker Device Encryption be enabled on any systems 
 
 Administrators can manage domain-joined devices that have BitLocker device encryption enabled through Microsoft BitLocker Administration and Monitoring (MBAM). In this case, BitLocker device encryption automatically makes additional BitLocker options available. No conversion or encryption is required, and MBAM can manage the full BitLocker policy set if any configuration changes are required.
 
+> [!NOTE]
+> BitLocker Device Encryption uses the XTS-AES 128-bit encryption method. In case you need to use a different encryption method and/or cipher strength, the device must be configured and decrypted (if already encrypted) first. After that, different BitLocker settings can be applied.
+
 ## Used Disk Space Only encryption
 
 BitLocker in earlier Windows versions could take a long time to encrypt a drive, because it encrypted every byte on the volume (including parts that did not have data). That is still the most secure way to encrypt a drive, especially if a drive has previously contained confidential data that has since been moved or deleted. In that case, traces of the confidential data could remain on portions of the drive marked as unused.

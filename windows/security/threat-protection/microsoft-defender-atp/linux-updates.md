@@ -5,7 +5,7 @@ description: Describes how to deploy updates for Microsoft Defender ATP for Linu
 keywords: microsoft, defender, atp, linux, updates, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,28 +14,33 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# Deploy updates for Microsoft Defender ATP for Linux
+# Deploy updates for Microsoft Defender for Endpoint for Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
 > [!WARNING]
-> Each version of Microsoft Defender ATP for Linux has an expiration date, after which it will no longer continue to protect your device. You must update the product prior to this date. To check the expiration date, run the following command:
+> Each version of Defender for Endpoint for Linux has an expiration date, after which it will no longer continue to protect your device. You must update the product prior to this date. To check the expiration date, run the following command:
 > ```bash
 > mdatp health --field product_expiration
 > ```
 
-To update Microsoft Defender ATP for Linux manually, execute one of the following commands:
+To update Defender for Endpoint for Linux manually, execute one of the following commands:
 
 ## RHEL and variants (CentOS and Oracle Linux)
 

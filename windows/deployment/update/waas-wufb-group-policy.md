@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
+ms.collection: m365initiative-coredeploy
 manager: laurawi
 ms.topic: article
 ---
@@ -59,7 +59,7 @@ Both Windows 10 feature and quality updates are automatically offered to devices
 
 To enable Microsoft Updates use the Group Policy Management Console go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates**  and select **Install updates for other Microsoft products**.
 
-Drivers are automatically enabled because they are beneficial to device systems. We recommend that you allow the driver policy to allow drivers to updated on devices (the default), but you can turn this setting off if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use the Group Policy Management Console to go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Do not include drivers with Windows Updates** and enable the policy.
+Drivers are automatically enabled because they are beneficial to device systems. We recommend that you allow the driver policy to allow drivers to update on devices (the default), but you can turn this setting off if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use the Group Policy Management Console to go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Do not include drivers with Windows Updates** and enable the policy.
 
  We also recommend that you allow Microsoft product updates as discussed previously.
 
@@ -138,7 +138,7 @@ When you set these policies, installation happens automatically at the specified
 
 We recommend that you use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadline for automatic updates and restarts** for feature and quality updates to ensure that devices stay secure on Windows 10, version 1709 and later. This works by enabling you to specify the number of days that can elapse after an update is offered to a device before it must be installed. Also you can set the number of days that can elapse after a pending restart before the user is forced to restart.
 
-This policies also offers an option to opt out of automatic restarts until a deadline is reached by presenting an "engaged restart experience" until the deadline has actually expired. At that point the device will automatically schedule a restart regardles of active hours.
+This policies also offers an option to opt out of automatic restarts until a deadline is reached by presenting an "engaged restart experience" until the deadline has actually expired. At that point the device will automatically schedule a restart regardless of active hours.
 
 These notifications are what the user sees depending on the settings you choose:
 
@@ -203,7 +203,6 @@ If you use Windows Server Update Server (WSUS), you can prevent users from scann
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

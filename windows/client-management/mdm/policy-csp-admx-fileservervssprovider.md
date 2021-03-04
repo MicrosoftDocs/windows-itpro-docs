@@ -74,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether the RPC protocol messages used by VSS for SMB2 File Shares feature is enabled.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether the RPC protocol messages used by VSS for SMB2 File Shares feature is enabled.
 
 VSS for SMB2 File Shares feature enables VSS aware backup applications to perform application consistent backup and restore of VSS aware applications storing data on SMB2 File Shares.
 
@@ -94,7 +94,7 @@ By default, the RPC protocol message between File Server VSS provider and File S
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Allow or Disallow use of encryption to protect the RPC protocol messages between File Share Shadow Copy Provider running on application server and File Share Shadow Copy Agent running on the file servers.*
--   GP name: *EncryptProtocol*
+-   GP name: *Pol_EncryptProtocol*
 -   GP path: *System/File Share Shadow Copy Provider*
 -   GP ADMX file name: *FileServerVSSProvider.admx*
 
@@ -104,14 +104,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

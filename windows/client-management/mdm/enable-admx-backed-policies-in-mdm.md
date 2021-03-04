@@ -33,7 +33,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 ## Enable a policy
 
 > [!NOTE]
-> See [Understanding ADMX-backed policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies).
+> See [Understanding ADMX-backed policies in Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies).
 
 1.  Find the policy from the list [ADMX-backed policies](policy-csps-admx-backed.md). You need the following information listed in the policy description.  
     - GP English name

@@ -1,6 +1,6 @@
 ---
 title: Manage additional Windows Update settings (Windows 10)
-description: Additional settings to control the behavior of Windows Update (WU) in Windows 10
+description: In this article, learn about additional settings to control the behavior of Windows Update in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: deploy
 audience: itpro
@@ -10,6 +10,7 @@ author: jaimeo
 ms.reviewer:
 manager: laurawi
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Manage additional Windows Update settings
@@ -61,7 +62,7 @@ This setting lets you specify a server on your network to function as an interna
 
 To use this setting in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update\Specify Intranet Microsoft update service location**. You must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update Agent to download updates from an alternate download server instead of the intranet update service.
 
-If the setting is set to **Enabled**, the Automatic Updates client connects to the specified intranet Microsoft update service (or alternate download server), instead of Windows Update, to search for and download updates. Enabling this setting means that end users in your organization don’t have to go through a firewall to get updates, and it gives you the opportunity to test updates after deploying them.
+If the setting is set to **Enabled**, the Automatic Updates client connects to the specified intranet Microsoft update service (or alternate download server), instead of Windows Update, to search for and download updates. Enabling this setting means that end users in your organization don't have to go through a firewall to get updates, and it gives you the opportunity to test updates after deploying them.
 If the setting is set to **Disabled** or **Not Configured**, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
 
 The alternate download server configures the Windows Update Agent to download files from an alternative download server instead of the intranet update service.
@@ -86,9 +87,9 @@ If the setting is set to **Enabled**, Windows will check for available updates a
 If the setting is set to **Disabled** or **Not Configured**, Windows will check for available updates at the default interval of 22 hours.
 
 >[!NOTE]
->The “Specify intranet Microsoft update service location” setting must be enabled for this policy to have effect.
+>The "Specify intranet Microsoft update service location" setting must be enabled for this policy to have effect.
 >
->If the “Configure Automatic Updates” policy is disabled, this policy has no effect.
+>If the "Configure Automatic Updates" policy is disabled, this policy has no effect.
 
 To configure this policy with MDM, use [DetectionFrequency](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-detectionfrequency).
 
@@ -116,7 +117,7 @@ If the setting is set to **Disabled** or **Not Configured**, no target group inf
 If the intranet Microsoft update service supports multiple target groups, this policy can specify multiple group names separated by semicolons. Otherwise, a single group must be specified.
 
 >[!NOTE]
->This policy applies only when the intranet Microsoft update service the device is directed to is configured to support client-side targeting. If the “Specify intranet Microsoft update service location” policy is disabled or not configured, this policy has no effect.
+>This policy applies only when the intranet Microsoft update service the device is directed to is configured to support client-side targeting. If the "Specify intranet Microsoft update service location" policy is disabled or not configured, this policy has no effect.
 
 ### Allow signed updates from an intranet Microsoft update service location
 
@@ -124,7 +125,7 @@ This policy setting allows you to manage whether Automatic Updates accepts updat
 
 To configure this setting in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows update\Allow signed updates from an intranet Microsoft update service location**.
 
-If you enable this policy setting, Automatic Updates accepts updates received through an intranet Microsoft update service location, as specified by [Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location), if they are signed by a certificate found in the “Trusted Publishers” certificate store of the local computer.
+If you enable this policy setting, Automatic Updates accepts updates received through an intranet Microsoft update service location, as specified by [Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location), if they are signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.
 If you disable or do not configure this policy setting, updates from an intranet Microsoft update service location must be signed by Microsoft.
 
 >[!NOTE]
@@ -251,7 +252,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
 
 - [Update Windows 10 in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)
-- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)

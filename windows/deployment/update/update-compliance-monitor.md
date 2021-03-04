@@ -13,6 +13,7 @@ ms.author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Monitor Windows Updates with Update Compliance

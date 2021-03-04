@@ -12,6 +12,7 @@ ms.reviewer:
 manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy feature updates for user-initiated installations (during a fixed service window)
@@ -29,7 +30,7 @@ Use **Peer Cache** to help manage deployment of content to clients in remote loc
 
 ### Step 2: Override the default Windows setup priority (Windows 10, version 1709 and later)
 
-If you’re deploying **Feature update to Windows 10, version 1709** or later, by default, portions of setup are configured to run at a lower priority. This can result in a longer total install time for the feature update. When deploying within a maintenance window, we recommend that you override this default behavior to benefit from faster total install times. To override the default priority, create a file called SetupConfig.ini on each machine to be upgraded in the below location containing the single section noted. 
+If you're deploying **Feature update to Windows 10, version 1709** or later, by default, portions of setup are configured to run at a lower priority. This can result in a longer total install time for the feature update. When deploying within a maintenance window, we recommend that you override this default behavior to benefit from faster total install times. To override the default priority, create a file called SetupConfig.ini on each machine to be upgraded in the below location containing the single section noted. 
 
 %systemdrive%\Users\Default\AppData\Local\Microsoft\Windows\WSUS\SetupConfig.ini
 

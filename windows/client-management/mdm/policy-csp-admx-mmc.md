@@ -86,7 +86,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits use of this snap-in.
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits use of this snap-in.
 
 If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
 
@@ -113,7 +113,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *ActiveX Control*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ActiveXControl*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMC.admx*
 
@@ -165,7 +165,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits use of this snap-in.
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits use of this snap-in.
 
 If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
 
@@ -192,7 +192,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Extended View (Web View)*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_ExtendView*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMC.admx*
 
@@ -244,7 +244,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits use of this snap-in.
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits use of this snap-in.
 
 If you enable this setting, the snap-in is permitted. If you disable the setting, the snap-in is prohibited.
 
@@ -271,7 +271,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Link to Web Address*
--   GP name: *Restrict_Run*
+-   GP name: *MMC_LinkToWeb*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMC.admx*
 
@@ -323,7 +323,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from entering author mode.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from entering author mode.
 
 This setting prevents users from opening the Microsoft Management Console (MMC) in author mode, explicitly opening console files in author mode, and opening any console files that open in author mode by default.
 
@@ -344,7 +344,7 @@ If you disable this setting or do not configure it, users can enter author mode 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Restrict the user from entering author mode*
--   GP name: *RestrictAuthorMode*
+-   GP name: *MMC_Restrict_Author*
 -   GP path: *Windows Components\Microsoft Management Console*
 -   GP ADMX file name: *MMC.admx*
 
@@ -396,7 +396,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting lets you selectively permit or prohibit the use of Microsoft Management Console (MMC) snap-ins.
+Available in the latest Windows 10 Insider Preview Build. This policy setting lets you selectively permit or prohibit the use of Microsoft Management Console (MMC) snap-ins.
 
 - If you enable this setting, all snap-ins are prohibited, except those that you explicitly permit. Use this setting if you plan to prohibit use of most snap-ins.
 
@@ -422,7 +422,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Restrict users to the explicitly permitted list of snap-ins*
--   GP name: *RestrictToPermittedSnapins*
+-   GP name: *MMC_Restrict_To_Permitted_Snapins*
 -   GP path: *Windows Components\Microsoft Management Console*
 -   GP ADMX file name: *MMC.admx*
 
@@ -432,14 +432,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

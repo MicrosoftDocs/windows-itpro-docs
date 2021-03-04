@@ -1,8 +1,7 @@
 ---
 title: Delivery Optimization for Windows 10 updates
-ms.reviewer: 
 manager: laurawi
-description: Delivery Optimization is a peer-to-peer distribution method in Windows 10
+description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,8 +9,11 @@ audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.collection: M365-modern-desktop
+ms.collection:
+- M365-modern-desktop
+- m365initiative-coredeploy
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Delivery Optimization for Windows 10 updates
@@ -23,7 +25,7 @@ ms.topic: article
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-Windows updates, upgrades, and applications can contain packages with very large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization in conjunction with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or Microsoft Endpoint Configuration Manager (when installation of Express Updates is enabled).  
+Windows updates, upgrades, and applications can contain packages with very large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization in conjunction with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or Microsoft Endpoint Manager (when installation of Express Updates is enabled).  
 
 Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimization cloud services is a requirement. This means that in order to use the peer-to-peer functionality of Delivery Optimization, devices must have access to the internet.
 
@@ -60,10 +62,11 @@ For information about setting up Delivery Optimization, including tips for the b
     - DOMaxUploadBandwidth
     
 - Support for new types of downloads:
-    - Office installations and updates
+    - Office installs and updates
     - Xbox game pass games
     - MSIX apps (HTTP downloads only)
-
+    - Edge browser installs and updates
+    - [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) 
 
 ## Requirements
 
@@ -74,7 +77,6 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Computers running Windows 10 | 1511 |
 | Computers running Server Core installations of Windows Server | 1709 |
 | IoT devices | 1803 |
-| HoloLens devices | 1803 |
 
 **Types of download packages supported by Delivery Optimization**
 
@@ -89,7 +91,9 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Win32 apps for Intune | 1709 |
 | Xbox game pass games | 2004 |
 | MSIX apps (HTTP downloads only) | 2004 |
-| Configuration Manager Express Updates | 1709 + Configuration Manager version 1711 |
+| Configuration Manager Express updates | 1709 + Configuration Manager version 1711 |
+| Edge browser installs and updates | 1809 |
+| [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) | 1903 |
 
 > [!NOTE]
 > Starting with Configuration Manager version 1910, you can use Delivery Optimization for the distribution of all Windows update content for clients running Windows 10 version 1709 or newer, not just express installation files. For more, see [Delivery Optimization starting in version 1910](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#bkmk_DO-1910).
@@ -112,7 +116,7 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 
 Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](https://docs.microsoft.com/intune/delivery-optimization-windows))
 
-**Starting with Windows 10, version 1903,** you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
+**Starting with Windows 10, version 1903,** you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
 ## Reference
 
@@ -120,7 +124,7 @@ For complete list of every possible Delivery Optimization setting, see [Delivery
 
 
 ## How Microsoft uses Delivery Optimization
-At Microsoft, to help ensure that ongoing deployments weren’t affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
+At Microsoft, to help ensure that ongoing deployments weren't affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
 
 For more details, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
 
@@ -137,7 +141,7 @@ If you set up Delivery Optimization to create peer groups that include devices a
 Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
 
 
-**What are the requirements if I use a proxy?**: You must allow Byte Range requests. See [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update) for details.
+**What are the requirements if I use a proxy?**: For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/delivery-optimization-proxy). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update).
 
 **What hostnames should I allow through my firewall to support Delivery Optimization?**: 
 
@@ -188,11 +192,12 @@ This section summarizes common problems and some solutions to try.
 
 ### If you don't see any bytes from peers
 
-If you don’t see any bytes coming from peers the cause might be one of the following issues:
+If you don't see any bytes coming from peers the cause might be one of the following issues:
 
 - Clients aren’t able to reach the Delivery Optimization cloud services.
 - The cloud service doesn’t see other peers on the network. 
 - Clients aren’t able to connect to peers that are offered back from the cloud service.
+- None of the computers on the network are getting updates from peers.
 
 
 ### Clients aren't able to reach the Delivery Optimization cloud services.
@@ -202,7 +207,6 @@ If you suspect this is the problem, try these steps:
 1. Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
 2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and observe the DownloadMode setting. For peering to work, DownloadMode should be 1, 2, or 3.
 3. If **DownloadMode** is 99 it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization hostnames are allowed access: most importantly **\*.do.dsp.mp.microsoft.com**.
-
 
 
 ### The cloud service doesn't see other peers on the network.
@@ -223,6 +227,15 @@ If you suspect this is the problem, try a Telnet test between two devices on the
 2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run **telnet 192.168.9.17 7680** (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
 
 
+### None of the computers on the network are getting updates from peers
+
+If you suspect this is the problem, check Delivery Optimization settings that could limit participation in peer caching. Check whether the following settings in assigned group policies, local group policies, are MDM policies are too restrictive:
+
+- Minimum RAM (inclusive) allowed to use peer caching
+- Minimum disk size allowed to use peer caching
+- Enable peer caching while the device connects using VPN.
+- Allow uploads when the device is on battery while under the set battery level
+
 
 
 
@@ -240,7 +253,6 @@ If you suspect this is the problem, try a Telnet test between two devices on the
 - [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
