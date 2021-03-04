@@ -2,7 +2,7 @@
 title: Deployment guidelines for Windows Defender Device Guard (Windows 10)
 description: Plan your deployment of Windows Defender Device Guard. Learn about hardware requirements, deployment approaches, code signing and code integrity policies.
 keywords: virtualization, security, malware
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: dansimp
@@ -13,13 +13,12 @@ ms.topic: conceptual
 ms.date: 10/20/2017
 ms.reviewer: 
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # Baseline protections and additional qualifications for virtualization-based protection of code integrity
 
-**Applies to**
-
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Computers must meet certain hardware, firmware, and software requirements in order to take advantage of all of the virtualization-based security (VBS) features in [Windows Defender Device Guard](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md). Computers lacking these requirements can still be protected by Windows Defender Application Control (WDAC) policies—the difference is that those computers will not be as hardened against certain threats.
 

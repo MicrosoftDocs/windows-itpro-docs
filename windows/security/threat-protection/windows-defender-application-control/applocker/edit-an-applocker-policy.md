@@ -4,7 +4,7 @@ description: This topic for IT professionals describes the steps required to mod
 ms.assetid: dbc72d1f-3fe0-46c2-aeeb-96621fce7637
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Edit an AppLocker policy

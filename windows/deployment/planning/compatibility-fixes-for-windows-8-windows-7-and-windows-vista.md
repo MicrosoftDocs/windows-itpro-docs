@@ -1,5 +1,5 @@
 ---
-title: Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista (Windows 10)
+title: Compatibility Fixes for Windows 10, Windows 8, Windows 7, & Windows Vista
 description: Find compatibility fixes for all Windows operating systems that have been released from Windows Vista through Windows 10.
 ms.assetid: cd51c824-557f-462a-83bb-54b0771b7dff
 ms.reviewer: 
@@ -13,6 +13,7 @@ audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista
@@ -75,7 +76,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 </tr>
 <tr class="even">
 <td align="left"><p>BIOSRead</p></td>
-<td align="left"><p>This problem is indicated when an application cannot access the <strong>Device\PhysicalMemory</strong> object beyond the kernel-mode drivers, on any of the Windows Server® 2003 operating systems.</p>
+<td align="left"><p>This problem is indicated when an application cannot access the <strong>Device\PhysicalMemory</strong> object beyond the kernel-mode drivers, on any of the Windows Server&reg; 2003 operating systems.</p>
 <p>The fix enables OEM executable (.exe) files to use the GetSystemFirmwareTable function instead of the NtOpenSection function when the BIOS is queried for the <strong>\Device\Physical</strong> memory information..</p></td>
 </tr>
 <tr class="odd">
@@ -92,7 +93,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <tr class="even">
 <td align="left"><p>ChangeFolderPathToXPStyle</p></td>
 <td align="left"><p>This fix is required when an application cannot return shell folder paths when it uses the <strong>SHGetFolder</strong> API.</p>
-<p>The fix intercepts the <strong>SHGetFolder</strong> path request to the common <strong>appdata</strong> file path and returns the Windows® XP-style file path instead of the Windows Vista-style file path.</p></td>
+<p>The fix intercepts the <strong>SHGetFolder</strong> path request to the common <strong>appdata</strong> file path and returns the Windows&reg; XP-style file path instead of the Windows Vista-style file path.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ClearLastErrorStatusonIntializeCriticalSection</p></td>
@@ -188,7 +189,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 </tr>
 <tr class="even">
 <td align="left"><p>DirectXVersionLie</p></td>
-<td align="left"><p>This problem occurs when an application fails because it does not find the correct version number for DirectX®.</p>
+<td align="left"><p>This problem occurs when an application fails because it does not find the correct version number for DirectX&reg;.</p>
 <p>The fix modifies the DXDIAGN GetProp function call to return the correct DirectX version.</p>
 <p>You can control this fix further by typing the following command at the command prompt:</p>
 <p>MAJORVERSION.MINORVERSION.LETTER</p>
@@ -456,7 +457,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <tr class="odd">
 <td align="left"><p>IgnoreMSOXMLMF</p></td>
 <td align="left"><p>The problem is indicated by an error message that states that the operating system cannot locate the MSVCR80D.DLL file.</p>
-<p>The fix ignores the registered MSOXMLMF.DLL object, which Microsoft® Office 2007 loads into the operating system any time that you load an XML file, and then it fails the CoGetClassObject for its CLSID. This compatibility fix will just ignore the registered MSOXMLMF and fail the CoGetClassObject for its CLSID.</p></td>
+<p>The fix ignores the registered MSOXMLMF.DLL object, which Microsoft&reg; Office 2007 loads into the operating system any time that you load an XML file, and then it fails the CoGetClassObject for its CLSID. This compatibility fix will just ignore the registered MSOXMLMF and fail the CoGetClassObject for its CLSID.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>IgnoreSetROP2</p></td>

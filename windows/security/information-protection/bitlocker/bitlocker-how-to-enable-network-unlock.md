@@ -1,6 +1,6 @@
 ---
-title: BitLocker How to enable Network Unlock (Windows 10)
-description: This topic for the IT professional describes how BitLocker Network Unlock works and how to configure it.
+title: BitLocker - How to enable Network Unlock (Windows 10)
+description: This article for the IT professional describes how BitLocker Network Unlock works and how to configure it.
 ms.assetid: be45bc28-47db-4931-bfec-3c348151d2e9
 ms.reviewer: 
 ms.prod: w10
@@ -30,17 +30,6 @@ Without Network Unlock, operating system volumes protected by TPM+PIN protectors
 
 Network unlock allows BitLocker-enabled systems that have a TPM+PIN and that meet the hardware requirements to boot into Windows without user intervention. Network unlock works in a similar fashion to the TPM+StartupKey at boot. Rather than needing to read the StartupKey from USB media, however, the Network Unlock feature needs the key to be composed from a key stored in the TPM and an encrypted network key that is sent to the server, decrypted and returned to the client in a secure session.
 
-This topic contains:
-
--   [Network Unlock core requirements](#bkmk-nunlockcorereqs)
--   [Network Unlock sequence](#bkmk-networkunlockseq)
--   [Configure Network Unlock](#bkmk-configuringnetworkunlock)
--   [Create the certificate template for Network Unlock](#bkmk-createcerttmpl)
--   [Turning off Network Unlock](#bkmk-turnoffnetworkunlock)
--   [Update Network Unlock certificates](#bkmk-updatecerts)
--   [Troubleshoot Network Unlock](#bkmk-troubleshoot)
--   [Configure Network Unlock on unsupported systems](#bkmk-unsupportedsystems)
-
 ## <a href="" id="bkmk-nunlockcorereqs"></a>Network unlock core requirements
 
 Network Unlock must meet mandatory hardware and software requirements before the feature can automatically unlock domain-joined systems. These requirements include:
@@ -57,7 +46,9 @@ Network Unlock must meet mandatory hardware and software requirements before the
 The network stack must be enabled to use the Network Unlock feature. Equipment manufacturers deliver their products in various states and with different BIOS menus; therefore, you need to confirm that the network stack has been enabled in the BIOS before starting the computer.
 
 > [!NOTE]
-> To properly support DHCP within UEFI, the UEFI-based system should be in native mode without a compatibility support module (CSM) enabled.
+> To properly support DHCP within UEFI, the UEFI-based system should be in native mode and shouldn't have a compatibility support module (CSM) enabled.
+
+On computers that run Windows 8 and later, the first network adapter on the computer, usually the onboard adapter, must be configured to support DHCP. This adapter must be used for Network Unlock. 
 
 For network unlock to work reliably on computers running Windows 8 and later versions, the first network adapter on the computer, usually the onboard adapter, must be configured to support DHCP and must be used for Network Unlock. This is especially worth noting when you have multiple adapters, and you wish to configure one without DHCP, such as for a lights-out management protocol. This configuration is necessary because network unlock stops enumerating adapters when it reaches one with a DHCP port failure for any reason. Thus, if the first enumerated adapter does not support DHCP, is not plugged into the network, or fails to report availability of the DHCP port for any reason, then Network Unlock fails.
  
@@ -75,19 +66,21 @@ On the server side, the WDS server role has an optional plugin component, like a
 
 The server side configuration to enable Network Unlock also requires provisioning a 2048-bit RSA public/private key pair in the form of an X.509 certificate, and distributing the public key certificate to the clients. This certificate must be managed and deployed through the Group Policy editor directly on a domain controller with at least a Domain Functional Level of Windows Server 2012. This certificate is the public key that encrypts the intermediate network key (which is one of the two secrets required to unlock the drive; the other secret is stored in the TPM).
 
-![bitlocker network unlock sequence](images/bitlockernetworkunlocksequence.png)
+Manage and deploy this certificate through the Group Policy editor directly on a domain controller that has a domain functional level of at least Windows Server 2012. This certificate is the public key that encrypts the intermediate network key. The intermediate network key is one of the two secrets that are required to unlock the drive; the other secret is stored in the TPM.
 
-**Phases in the Network Unlock process**
+![Diagram showing the BitLocker network unlock sequence.](images/bitlockernetworkunlocksequence.png)
 
-1.  The Windows boot manager detects that a Network Unlock protector exists in the BitLocker configuration.
-2.  The client computer uses its DHCP driver in the UEFI to obtain a valid IPv4 IP address.
+The Network Unlock process follows these phases:
+
+1.  The Windows boot manager detects a Network Unlock protector in the BitLocker configuration.
+2.  The client computer uses its DHCP driver in the UEFI to get a valid IPv4 IP address.
 3.  The client computer broadcasts a vendor-specific DHCP request that contains: 
     1.  A network key (a 256-bit intermediate key) that is encrypted by using the 2048-bit RSA Public Key of the network unlock certificate from the WDS server.
     2.  An AES-256 session key for the reply.
 4.  The Network Unlock provider on the WDS server recognizes the vendor-specific request.
-5.  The provider decrypts it with the WDS server’s BitLocker Network Unlock certificate RSA private key.
-6.  The WDS provider then returns the network key encrypted with the session key using its own vendor-specific DHCP reply to the client computer. This forms an intermediate key.
-7.  The returned intermediate key is then combined with another local 256-bit intermediate key that can only be decrypted by the TPM.
+5.  The provider decrypts the request by using the WDS server's BitLocker Network Unlock certificate RSA private key.
+6.  The WDS provider returns the network key encrypted with the session key by using its own vendor-specific DHCP reply to the client computer. This key is an intermediate key.
+7.  The returned intermediate key is combined with another local 256-bit intermediate key. This key can be decrypted only by the TPM.
 8.  This combined key is used to create an AES-256 key that unlocks the volume.
 9.  Windows continues the boot sequence.
 
@@ -95,11 +88,11 @@ The server side configuration to enable Network Unlock also requires provisionin
 
 The following steps allow an administrator to configure network unlock in a domain where the Domain Functional Level is at least Windows Server 2012.
 
-### <a href="" id="bkmk-installwdsrole"><a/>Install the WDS Server role
+### <a href="" id="bkmk-installwdsrole"></a>Install the WDS server role
 
 The BitLocker network unlock feature installs the WDS role if it is not already installed. If you want to install it separately before you install BitLocker network unlock, you can use Server Manager or Windows PowerShell. To install the role using Server Manager, select the **Windows Deployment Services** role in Server Manager.
 
-To install the role using Windows PowerShell, use the following command:
+To install the role by using Windows PowerShell, use the following command:
 
 ```powershell
 Install-WindowsFeature WDS-Deployment
@@ -107,7 +100,7 @@ Install-WindowsFeature WDS-Deployment
 
 You must configure the WDS server so that it can communicate with DHCP (and optionally AD DS) and the client computer. You can configure using the WDS management tool, wdsmgmt.msc, which starts the Windows Deployment Services Configuration wizard.
 
-### <a href="" id="bkmk-confirmwdsrunning"><a/>Confirm the WDS Service is running
+### <a href="" id="bkmk-confirmwdsrunning"></a>Confirm the WDS service is running
 
 To confirm that the WDS service is running, use the Services Management Console or Windows PowerShell. To confirm that the service is running in Services Management Console, open the console using **services.msc** and check the status of the Windows Deployment Services service.
 
@@ -116,11 +109,11 @@ To confirm that the service is running using Windows PowerShell, use the followi
 ```powershell
 Get-Service WDSServer
 ```
-### <a href="" id="bkmk-installnufeature"><a/>Install the Network Unlock feature
+### <a href="" id="bkmk-installnufeature"></a>Install the Network Unlock feature
 
 To install the network unlock feature, use Server Manager or Windows PowerShell. To install the feature using Server Manager, select the **BitLocker Network Unlock** feature in the Server Manager console.
 
-To install the feature using Windows PowerShell, use the following command:
+To install the feature by using Windows PowerShell, use the following command:
 
 ```powershell
 Install-WindowsFeature BitLocker-NetworkUnlock
@@ -151,27 +144,24 @@ A properly configured Active Directory Services Certification Authority can use 
 16. Select the **Security** tab. Confirm that the **Domain Admins** group has been granted **Enroll** permission.
 17. Click **OK** to complete configuration of the template.
 
-To add the network unlock template to the Certification Authority, open the Certification Authority snap-in (certsrv.msc). Right-click the **Certificate Templates** item and choose **New, Certificate Template to issue**. Select the previously created BitLocker network unlock certificate.
+To add the Network Unlock template to the certificate authority, open the certificate authority snap-in (`certsrv.msc`). Right-click **Certificate Templates**, and then choose **New, Certificate Template to issue**. Select the previously created BitLocker Network Unlock certificate.
 
-After adding the Network Unlock template to the Certification Authority, this certificate can be used to configure BitLocker network unlock.
+After you add the Network Unlock template to the certificate authority, you can use this certificate to configure BitLocker Network Unlock.
 
-### <a href="" id="bkmk-createcert"><a/>Create the Network Unlock certificate
+### <a href="" id="bkmk-createcert"></a>Create the Network Unlock certificate
 
-Network unlock can use imported certificates from an existing PKI infrastructure, or you can use a self-signed certificate.
+Network Unlock can use imported certificates from an existing public key infrastructure (PKI). Or it can use a self-signed certificate.
 
-To enroll a certificate from an existing certification authority (CA), do the following:
-
-1.  Open Certificate Manager on the WDS server using **certmgr.msc**.
-2.  Under the Certificates - Current User item, right-click **Personal**.
-3.  Select **All Tasks**; then select **Request New Certificate**
-4.  Click **Next** when the Certificate Enrollment wizard opens.
+To enroll a certificate from an existing certificate authority:
+1.  On the WDS server, open Certificate Manager by using `certmgr.msc`.
+2.  Under **Certificates - Current User**, right-click **Personal**.
+3.  Select **All Tasks** > **Request New Certificate**.
+4.  When the Certificate Enrollment wizard opens, select **Next**.
 5.  Select **Active Directory Enrollment Policy**.
-6.  Choose the certificate template created for Network Unlock on the Domain controller and select **Enroll**. When prompted for more information, add the following attribute to the certificate:
-
-    -   Select the **Subject Name** pane and provide a friendly name value. It is suggested that this friendly name include information for the domain or organizational unit for the certificate. For example "BitLocker Network Unlock Certificate for Contoso domain"
-
-7.  Create the certificate. Ensure that the certificate appears in the Personal folder.
-8.  Export the public key certificate for Network Unlock.
+6.  Choose the certificate template that was created for Network Unlock on the domain controller. Then select **Enroll**. 
+1. When you're prompted for more information, select **Subject Name** and provide a friendly name value. Your friendly name should include information for the domain or organizational unit for the certificate. Here's an example: *BitLocker Network Unlock Certificate for Contoso domain*.
+7.  Create the certificate. Ensure the certificate appears in the **Personal** folder.
+8.  Export the public key certificate for Network Unlock:
 
     1.  Create a .cer file by right-clicking the previously created certificate, selecting **All Tasks**, and then selecting **Export**.
     2.  Select **No, do not export the private key**.
@@ -182,17 +172,17 @@ To enroll a certificate from an existing certification authority (CA), do the fo
 
     1.  Create a .pfx file by right-clicking the previously created certificate, selecting **All Tasks**, and then selecting **Export**.
     2.  Select **Yes, export the private key**.
-    3.  Complete the wizard to create the .pfx file.
+    3.  Complete the steps to create the *.pfx* file.
 
-To create a self-signed certificate, you can either use the New-SelfSignedCertificate cmdlet in Windows PowerShell or use Certreq.
+To create a self-signed certificate, either use the `New-SelfSignedCertificate` cmdlet in Windows PowerShell or use `certreq`.
 
-Windows PowerShell example:
+Here's a Windows PowerShell example:
 
 ```powershell
 New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=BitLocker Network Unlock certificate" -Provider "Microsoft Software Key Storage Provider" -KeyUsage KeyEncipherment -KeyUsageProperty Decrypt,Sign -KeyLength 2048 -HashAlgorithm sha512 -TextExtension @("1.3.6.1.4.1.311.21.10={text}OID=1.3.6.1.4.1.311.67.1.1","2.5.29.37={text}1.3.6.1.4.1.311.67.1.1")
 ```
 
-Certreq example:
+Here's a `certreq` example:
 
 1.  Create a text file with an .inf extension, for example, notepad.exe BitLocker-NetworkUnlock.inf.
 2.  Add the following contents to the previously created file:
@@ -216,19 +206,18 @@ Certreq example:
     _continue_ = "1.3.6.1.4.1.311.67.1.1"
     ```
 
-3.  Open an elevated command prompt and use the certreq tool to create a new certificate using the following command, specifying the full path to the file created previously, along with the file name:
+3.  Open an elevated command prompt and use the `certreq` tool to create a new certificate. Use the following command, specifying the full path to the file that you created previously. Also specify the file name.
 
     ```cmd
     certreq -new BitLocker-NetworkUnlock.inf BitLocker-NetworkUnlock.cer
     ```
-
 4.  Verify that certificate was properly created by the previous command by confirming that the .cer file exists.
 5.  Launch Certificates - Local Machine by running **certlm.msc**.
 6.  Create a .pfx file by opening the **Certificates – Local Computer\\Personal\\Certificates** path in the navigation pane, right-clicking the previously imported certificate, selecting **All Tasks**, and then selecting **Export**. Follow through the wizard to create the .pfx file.
 
-### <a href="" id="bkmk-deploycert"><a/>Deploy the private key and certificate to the WDS server
+### <a href="" id="bkmk-deploycert"></a>Deploy the private key and certificate to the WDS server
 
-With the certificate and key created, deploy them to the infrastructure to properly unlock systems. To deploy the certificates, do the following:
+Now that you've created the certificate and key, deploy them to the infrastructure to properly unlock systems. To deploy the certificates:
 
 1.  On the WDS server, open a new MMC and add the certificates snap-in. Select the computer account and local computer when given the options.
 2.  Right-click the Certificates (Local Computer) - BitLocker Drive Encryption Network Unlock item -, select **All Tasks**, and then select **Import**.
@@ -241,8 +230,8 @@ With certificate and key deployed to the WDS server for Network Unlock, the fina
 
 The following steps describe how to enable the group policy setting that is a requirement for configuring network unlock.
 
-1.  Open Group Policy Management Console (gpmc.msc).
-2.  Enable the policy **Require additional authentication at startup** and select the **Require startup PIN with TPM** or **Allow startup PIN with TPM** option.
+1.  Open Group Policy Management Console (`gpmc.msc`).
+2.  Enable the policy **Require additional authentication at startup**, and then select **Require startup PIN with TPM** or **Allow startup PIN with TPM**.
 3.  Turn on BitLocker with TPM+PIN protectors on all domain-joined computers.
 
 The following steps describe how to deploy the required group policy setting:
@@ -250,23 +239,22 @@ The following steps describe how to deploy the required group policy setting:
 > [!NOTE]
 > The group policy settings **Allow network unlock at startup** and **Add Network Unlock Certificate** were introduced in Windows Server 2012.
  
-1.  Copy the .cer file created for Network Unlock to the domain controller.
-2.  On the domain controller, launch Group Policy Management Console (gpmc.msc).
+1.  Copy the *.cer* file that you created for Network Unlock to the domain controller.
+2.  On the domain controller, open Group Policy Management Console (`gpmc.msc`).
 3.  Create a new Group Policy Object or modify an existing object to enable the **Allow network unlock at startup** setting.
 4.  Deploy the public certificate to clients:
-
     1.  Within group policy management console, navigate to the following location: **Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Public Key Policies\\BitLocker Drive Encryption Network Unlock Certificate**.
     2.  Right-click the folder and select **Add Network Unlock Certificate**.
     3.  Follow the wizard steps and import the .cer file that was copied earlier.
 
-> [!NOTE]
-> Only one network unlock certificate can be available at a time. If a new certificate is required, delete the current certificate before deploying a new one. The Network Unlock certificate is located in the **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\SystemCertificates\\FVE\_NKP** key on the client computer.
+    > [!NOTE]
+    > Only one network unlock certificate can be available at a time. If you need a new certificate, delete the current certificate before you deploy a new one. The Network Unlock certificate is located in the *HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\SystemCertificates\\FVE\_NKP* key on the client computer.
 
-5. Reboot the clients after deploying the group policy.
+5. Reboot the clients after you deploy the Group Policy.
    > [!NOTE]
    > The **Network (Certificate Based)** protector will be added only after a reboot, with the policy enabled and a valid certificate present in the FVE_NKP store.
  
-### Subnet policy configuration files on WDS Server (Optional)
+### Subnet policy configuration files on the WDS server (optional)
 
 By default, all clients with the correct network unlock certificate and valid Network Unlock protectors that have wired access to a network unlock-enabled WDS server via DHCP are unlocked by the server. A subnet policy configuration file on the WDS server can be created to limit which are the subnet(s) the network unlock clients can use to unlock.
 
@@ -276,12 +264,11 @@ The subnet policy configuration file must use a “\[SUBNETS\]” section to ide
 
 ```ini
 [SUBNETS]
-SUBNET1=10.185.250.0/24 ; comment about this subrange could be here, after the semi-colon
+SUBNET1=10.185.250.0/24 ; a comment about this subrange could be here, after the semicolon
 SUBNET2=10.185.252.200/28 
 SUBNET3= 2001:4898:a:2::/64 ; an IPv6 subnet
 SUBNET4=2001:4898:a:3::/64; in production, the admin would likely give more useful names, like BUILDING9-EXCEPT-RECEP.
 ```
-
 Following the \[SUBNETS\] section, there can be sections for each Network Unlock certificate, identified by the certificate thumbprint formatted without any spaces, which define the subnets clients that can be unlocked from that certificate.
 
 > [!NOTE]
@@ -293,27 +280,28 @@ Subnet lists are created by putting the name of a subnet from the \[SUBNETS\] se
 ```ini
 [2158a767e1c14e88e27a4c0aee111d2de2eafe60]
 ;Comments could be added here to indicate when the cert was issued, which Group Policy should get it, and so on.
-;This list shows this cert is only allowed to unlock clients on SUBNET1 and SUBNET3 subnets. In this example, SUBNET2 is commented out.
+;This list shows this cert is allowed to unlock clients only on the SUBNET1 and SUBNET3 subnets. In this example, SUBNET2 is commented out.
 SUBNET1
 ;SUBNET2
 SUBNET3
 ```
 
-To disallow the use of a certificate altogether, its subnet list may contain the line “DISABLED".
+To disallow the use of a certificate altogether, add a `DISABLED` line to its subnet list.
 
-## <a href="" id="bkmk-turnoffnetworkunlock"><a/>Turning off Network Unlock
+## <a href="" id="bkmk-turnoffnetworkunlock"></a>Turn off Network Unlock
+
 
 To turn off the unlock server, the PXE provider can be unregistered from the WDS server or uninstalled altogether. However, to stop clients from creating network unlock protectors, the **Allow Network Unlock at startup** group policy setting should be disabled. When this policy setting is updated to **disabled** on client computers, any Network Unlock key protector on the computer is deleted. Alternatively, the BitLocker network unlock certificate policy can be deleted on the domain controller to accomplish the same task for an entire domain.
 
 > [!NOTE]
 > Removing the FVE_NKP certificate store that contains the network unlock certificate and key on the WDS server will also effectively disable the server’s ability to respond to unlock requests for that certificate. However, this is seen as an error condition and is not a supported or recommended method for turning off the network unlock server.
  
-## <a href="" id="bkmk-updatecerts"><a/>Update Network Unlock certificates
+## <a href="" id="bkmk-updatecerts"></a>Update Network Unlock certificates
 
 To update the certificates used by network unlock, administrators need to import or generate the new certificate for the server and then update the network unlock certificate group policy setting on the domain controller.
 
 > [!NOTE]
-> Servers that do not receive the Group Policy Object (GPO) will require a PIN when booting. In such cases, the reason why the server did not receive the GPO to update the certificate needs to be investigated.
+> Servers that don't receive the Group Policy Object (GPO) will require a PIN when they boot. In such cases, find out why the server didn't receive the GPO to update the certificate.
 
 ## <a href="" id="bkmk-troubleshoot"></a>Troubleshoot Network Unlock
 
@@ -331,39 +319,37 @@ Troubleshooting network unlock issues begins by verifying the environment. Many 
   manage-bde -protectors -get C:
   ```
   > [!NOTE]
-  > Use the output of manage-bde along with the WDS debug log to determine if the proper certificate thumbprint is being used for network unlock
+  > Use the output of `manage-bde` along with the WDS debug log to determine whether the proper certificate thumbprint is being used for Network Unlock.
  
-Files to gather when troubleshooting BitLocker network unlock include:
+Gather the following files to troubleshoot BitLocker Network Unlock.
 
-1.  The Windows event logs, specifically the BitLocker event logs and the Microsoft-Windows-Deployment-Services-Diagnostics-Debug log
+- The Windows event logs. Specifically, get the BitLocker event logs and the Microsoft-Windows-Deployment-Services-Diagnostics-Debug log.
 
-    Debug logging is turned off by default for the WDS server role; therefore, you will need to enable it first. You can use either of the following two methods to turn on WDS debug logging.
+    Debug logging is turned off by default for the WDS server role, so you need to enable it before you can retrieve it. Use either of the following two methods to turn on WDS debug logging.
 
-    1.  Start an elevated command prompt and run the following command:
+    - Start an elevated command prompt, and then run the following command:
 
         ```cmd
         wevtutil sl Microsoft-Windows-Deployment-Services-Diagnostics/Debug /e:true
         ```
-    2.  Open Event Viewer on the WDS server.
+    - Open Event Viewer on the WDS server:
 
-        In the left pane, click **Applications and Services Logs**, click **Microsoft**, click **Windows**, click **Deployment-Services-Diagnostics**, and then click **Debug**.
-
-        In the right pane, click **Enable Log**.
-
-2.  The DHCP subnet configuration file (if one exists).
-3.  The output of the BitLocker status on the volume. This can be gathered into a text file using **manage-bde -status** or **Get-BitLockerVolume** in Windows PowerShell.
-4.  Network Monitor capture on the server hosting the WDS role, filtered by client IP address.
+    1. In the left pane, select **Applications and Services Logs** > **Microsoft** > **Windows** > **Deployment-Services-Diagnostics** > **Debug**.
+    1. In the right pane, select **Enable Log**.
+- The DHCP subnet configuration file (if one exists).
+- The output of the BitLocker status on the volume. Gather this output into a text file by using `manage-bde -status`. Or in Windows PowerShell, use `Get-BitLockerVolume`.
+- The Network Monitor capture on the server that hosts the WDS role, filtered by client IP address.
 
 ## <a href="" id="bkmk-unsupportedsystems"></a>Configure Network Unlock Group Policy settings on earlier versions
 
-Network unlock and the accompanying group policy settings were introduced in Windows Server 2012 but can be deployed using operating systems running Windows Server 2008 R2 and Windows Server 2008.
+Network Unlock and the accompanying Group Policy settings were introduced in Windows Server 2012. But you can deploy them by  using operating systems that run Windows Server 2008 R2 and Windows Server 2008.
 
-**Requirements**
+Your system must meet these requirements:
 
--   The server hosting WDS must be running any of the server operating systems designated in the **Applies To** list at the beginning of this topic.
--   Client computers must be running any of the client operating systems designated in the **Applies To** list at the beginning of this topic.
+-   The server that hosts WDS must be running a server operating system that's designated in the "Applies to" list at the beginning of this article.
+-   Client computers must be running a client operating system that's designated in the "Applies to" list at the beginning of this article.
 
-The following steps can be used to configure Network Unlock on these older systems.
+Follow these steps to configure Network Unlock on these older systems.
 
 1.  [Install the WDS Server role](#bkmk-installwdsrole)
 2.  [Confirm the WDS Service is running](#bkmk-confirmwdsrunning)
@@ -372,17 +358,18 @@ The following steps can be used to configure Network Unlock on these older syste
 5.  [Deploy the private key and certificate to the WDS server](#bkmk-deploycert)
 6.  Configure registry settings for network unlock:
 
-    Apply the registry settings by running the following certutil script (assuming your network unlock certificate file is called **BitLocker-NetworkUnlock.cer**) on each computer running any of the client operating systems designated in the **Applies To** list at the beginning of this topic.
-```console
-        certutil -f -grouppolicy -addstore FVE_NKP BitLocker-NetworkUnlock.cer
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v OSManageNKP /t REG_DWORD /d 1 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseAdvancedStartup /t REG_DWORD /d 1 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UsePIN /t REG_DWORD /d 2 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMPIN /t REG_DWORD /d 2 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPM /t REG_DWORD /d 2 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMKey /t REG_DWORD /d 2 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMKeyPIN /t REG_DWORD /d 2 /f
-```
+    Apply the registry settings by running the following `certutil` script (assuming your Network Unlock certificate file is called *BitLocker-NetworkUnlock.cer*) on each computer that runs a client operating system that's designated in the "Applies to" list at the beginning of this article.
+
+    ```console
+            certutil -f -grouppolicy -addstore FVE_NKP BitLocker-NetworkUnlock.cer
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v OSManageNKP /t REG_DWORD /d 1 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseAdvancedStartup /t REG_DWORD /d 1 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UsePIN /t REG_DWORD /d 2 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMPIN /t REG_DWORD /d 2 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPM /t REG_DWORD /d 2 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMKey /t REG_DWORD /d 2 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMKeyPIN /t REG_DWORD /d 2 /f
+    ```
 
 7.  Set up a TPM protector on the clients.
 8.  Reboot the clients to add the Network (certificate based) protector.

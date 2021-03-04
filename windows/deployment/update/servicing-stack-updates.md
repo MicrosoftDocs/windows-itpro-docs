@@ -1,6 +1,6 @@
 ---
 title: Servicing stack updates (Windows 10)
-description: Servicing stack updates improve the code that installs the other updates.
+description: In this article, learn how servicing stack updates improve the code that installs the other updates.
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
@@ -12,6 +12,7 @@ ms.reviewer:
 manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Servicing stack updates
