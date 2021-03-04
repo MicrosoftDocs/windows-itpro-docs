@@ -118,7 +118,7 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 - Max Upload Bandwidth (DOMaxUploadBandwidth)
   - Reason: Impacts uploads to internet peers only, which isn't used in enterprises.
 - Absolute max throttle (DOMaxDownloadBandwidth)
-  - Reason: separated to foreground and background
+  - Reason: Separated to foreground and background.
 
 ### Windows Update for Business
 
