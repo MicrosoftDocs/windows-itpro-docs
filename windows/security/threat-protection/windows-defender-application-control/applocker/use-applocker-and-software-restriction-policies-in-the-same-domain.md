@@ -4,7 +4,7 @@ description: This topic for IT professionals describes concepts and procedures t
 ms.assetid: 2b7e0cec-df62-49d6-a2b7-6b8e30180943
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Use AppLocker and Software Restriction Policies in the same domain
@@ -69,7 +70,7 @@ The following table compares the features and functions of Software Restriction 
 </tr>
 <tr class="odd">
 <td align="left"><p>Enforcement mode</p></td>
-<td align="left"><p>SRP works in the “deny list mode” where administrators can create rules for files that they do not want to allow in this Enterprise whereas the rest of the file are allowed to run by default.</p>
+<td align="left"><p>SRP works in the “deny list mode” where administrators can create rules for files that they do not want to allow in this Enterprise whereas the rest of the file is allowed to run by default.</p>
 <p>SRP can also be configured in the “allow list mode” so that by default all files are blocked and administrators need to create allow rules for files that they want to allow.</p></td>
 <td align="left"><p>AppLocker by default works in the “allow list mode” where only those files are allowed to run for which there is a matching allow rule.</p></td>
 </tr>
@@ -146,12 +147,12 @@ The following table compares the features and functions of Software Restriction 
 <tr class="odd">
 <td align="left"><p>Support for rule exceptions</p></td>
 <td align="left"><p>SRP does not support rule exceptions.</p></td>
-<td align="left"><p>AppLocker rules can have exceptions which allow you to create rules such as “Allow everything from Windows except for regedit.exe”.</p></td>
+<td align="left"><p>AppLocker rules can have exceptions, which allow you to create rules such as “Allow everything from Windows except for regedit.exe”.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Support for audit mode</p></td>
 <td align="left"><p>SRP does not support audit mode. The only way to test SRP policies is to set up a test environment and run a few experiments.</p></td>
-<td align="left"><p>AppLocker supports audit mode which allows you to test the effect of their policy in the real production environment without impacting the user experience. Once you are satisfied with the results, you can start enforcing the policy.</p></td>
+<td align="left"><p>AppLocker supports audit mode, which allows you to test the effect of their policy in the real production environment without impacting the user experience. Once you are satisfied with the results, you can start enforcing the policy.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Support for exporting and importing policies</p></td>
@@ -160,8 +161,8 @@ The following table compares the features and functions of Software Restriction 
 </tr>
 <tr class="even">
 <td align="left"><p>Rule enforcement</p></td>
-<td align="left"><p>Internally, SRP rules enforcement happens in the user-mode which is less secure.</p></td>
-<td align="left"><p>Internally, AppLocker rules for .exe and .dll files are enforced in the kernel-mode which is more secure than enforcing them in the user-mode.</p></td>
+<td align="left"><p>Internally, SRP rules enforcement happens in the user-mode, which is less secure.</p></td>
+<td align="left"><p>Internally, AppLocker rules for .exe and .dll files are enforced in the kernel-mode, which is more secure than enforcing them in the user-mode.</p></td>
 </tr>
 </tbody>
 </table>

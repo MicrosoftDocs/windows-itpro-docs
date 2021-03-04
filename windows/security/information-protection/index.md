@@ -1,6 +1,6 @@
 ---
 title: Information protection (Windows 10)
-description: Learn more about how to protect sesnsitive data across your ogranization.
+description: Learn more about how to protect sensitive data across your organization.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

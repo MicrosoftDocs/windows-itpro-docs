@@ -20,10 +20,15 @@ ms.topic: article
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -31,7 +36,7 @@ Retrieves a collection of alerts related to a given domain address.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |   Permission  |   Permission display name
 :---|:---|:---
@@ -65,7 +70,7 @@ If successful, this method returns 200 OK, with a list of exposure score per dev
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.windows.com/api/exposureScore/ByMachineGroups
+GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
 ```
 
 ### Response
@@ -75,7 +80,7 @@ Here is an example of the response.
 ```json
 
 {
-    "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#ExposureScore",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#ExposureScore",
     "value": [
         {
             "time": "2019-12-03T09:51:28.214338Z",

@@ -1,6 +1,7 @@
 ---
 title: Enforce compliance deadlines with policies in Windows Update for Business (Windows 10)
-description: Learn how to enforce compliance deadlines using Windows Update for Business.
+description: This article contains information on how to enforce compliance deadlines using Windows Update for Business.
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo
@@ -151,17 +152,17 @@ Before the deadline the device will be in two states: auto-restart period and en
 
 Notification users get for quality update engaged deadline:
 
-![The notification users get for an impending engaged quality update deadline](images/wufb-quality-engaged-notification.png)
+![The notification users get for an impending engaged quality update deadline example](images/wufb-quality-engaged-notification.png)
 
 Notification users get for a quality update deadline:
 
-![The notification users get for an impending quality update deadline](images/wufb-quality-notification.png)
+![The notification users get for an impending quality update deadline example](images/wufb-quality-notification.png)
 
 Notification users get for a feature update engaged deadline:
 
-![The notification users get for an impending feature update engaged deadline](images/wufb-feature-update-engaged-notification.png)
+![The notification users get for an impending feature update engaged deadline example](images/wufb-feature-update-engaged-notification.png)
 
 Notification users get for a feature update deadline:
 
-![The notification users get for an impending feature update deadline](images/wufb-feature-update-deadline-notification.png)
+![The notification users get for an impending feature update deadline example](images/wufb-feature-update-deadline-notification.png)
 

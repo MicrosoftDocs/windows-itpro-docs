@@ -1,11 +1,11 @@
 ---
 title: Deploy Microsoft Defender ATP for Linux with Puppet
-ms.reviewer:
+ms.reviewer: 
 description: Describes how to deploy Microsoft Defender ATP for Linux using Puppet.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,21 +15,24 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# Deploy Microsoft Defender ATP for Linux with Puppet
+# Deploy Microsoft Defender for Endpoint for Linux with Puppet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-This article describes how to deploy Microsoft Defender ATP for Linux using Puppet. A successful deployment requires the completion of all of the following tasks:
+This article describes how to deploy Defender for Endpoint for Linux using Puppet. A successful deployment requires the completion of all of the following tasks:
 
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Create Puppet manifest](#create-a-puppet-manifest)
@@ -38,7 +41,7 @@ This article describes how to deploy Microsoft Defender ATP for Linux using Pupp
 
 ## Prerequisites and system requirements
 
- For a description of prerequisites and system requirements for the current software version, see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md).
+ For a description of prerequisites and system requirements for the current software version, see [the main Defender for Endpoint for Linux page](microsoft-defender-atp-linux.md).
 
 In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules, such as *apt* to help deploy the package. Your organization might use a different workflow. Refer to the [Puppet documentation](https://puppet.com/docs) for details.
 
@@ -72,7 +75,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create a Puppet manifest
 
-You need to create a Puppet manifest for deploying Microsoft Defender ATP for Linux to devices managed by a Puppet server. This example makes use of the *apt* and *yumrepo* modules available from puppetlabs, and assumes that the modules have been installed on your Puppet server.
+You need to create a Puppet manifest for deploying Defender for Endpoint for Linux to devices managed by a Puppet server. This example makes use of the *apt* and *yumrepo* modules available from puppetlabs, and assumes that the modules have been installed on your Puppet server.
 
 Create the folders *install_mdatp/files* and *install_mdatp/manifests* under the modules folder of your Puppet installation. This folder is typically located in */etc/puppetlabs/code/environments/production/modules* on your Puppet server. Copy the mdatp_onboard.json file created above to the *install_mdatp/files* folder. Create an *init.pp* file that contains the deployment instructions:
 
@@ -96,7 +99,7 @@ install_mdatp
 
 ### Contents of `install_mdatp/manifests/init.pp`
 
-Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
+Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
@@ -157,7 +160,7 @@ $version = undef
             }
 
             file { '/etc/opt/microsoft/mdatp/mdatp_onboard.json':
-                source  => 'puppet:///modules/mdatp/mdatp_onboard.json',
+                source  => 'puppet:///modules/install_mdatp/mdatp_onboard.json',
                 owner   => root,
                 group   => root,
                 mode    => '0600',
@@ -205,7 +208,7 @@ org_id                                  : "[your organization identifier]"
 
 - **licensed**: This confirms that the device is tied to your organization.
 
-- **orgId**: This is your Microsoft Defender ATP organization identifier.
+- **orgId**: This is your Defender for Endpoint organization identifier.
 
 ## Check onboarding status
 
@@ -231,7 +234,7 @@ If the product is not healthy, the exit code (which can be checked through `echo
 
 ## Operating system upgrades
 
-When upgrading your operating system to a new major version, you must first uninstall Microsoft Defender ATP for Linux, install the upgrade, and finally reconfigure Microsoft Defender ATP for Linux on your device.
+When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.
 
 ## Uninstallation
 
