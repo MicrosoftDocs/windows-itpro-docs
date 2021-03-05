@@ -399,15 +399,15 @@ Supported operations include Get, Add, Replace, and Delete.
 Used to indicate the namespace to which the policy applies. When a Name query is issued, the DNS client compares the name in the query to all of the namespaces under DomainNameInformationList to find a match. This parameter can be one of the following types:
 
 - FQDN - Fully qualified domain name
-- Suffix - A domain suffix that will be appended to the shortname query for DNS resolution. To specify a suffix, prepend a **.** to the DNS suffix.
+- Suffix - A domain suffix that will be appended to the shortname query for DNS resolution. To specify a suffix, prepend **.** to the DNS suffix.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-domainnametype"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/DomainNameType**  
 Returns the namespace type. This value can be one of the following:
 
-- FQDN - If the DomainName was not prepended with a **.** and applies only to the fully qualified domain name (FQDN) of a specified host.
-- Suffix - If the DomainName was prepended with a **.** and applies to the specified namespace, all records in that namespace, and all subdomains.
+- FQDN - If the DomainName was not prepended with a**.** and applies only to the fully qualified domain name (FQDN) of a specified host.
+- Suffix - If the DomainName was prepended with a**.** and applies to the specified namespace, all records in that namespace, and all subdomains.
 
 Value type is chr. Supported operation is Get.
 
