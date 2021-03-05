@@ -1,7 +1,7 @@
 ---
 title: Microsoft Cloud App Security integration overview
 ms.reviewer: 
-description: Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) integrates with Cloud App Security by forwarding all cloud app networking activities.
+description: Microsoft Defender for Endpoint integrates with Cloud App Security by forwarding all cloud app networking activities.
 keywords: cloud, app, networking, visibility, usage
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -27,8 +27,8 @@ ms.technology: mde
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)

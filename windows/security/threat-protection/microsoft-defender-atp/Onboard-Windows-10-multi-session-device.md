@@ -13,7 +13,7 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.date: 02/18/2021
+ms.date: 02/24/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -23,8 +23,6 @@ ms.technology: mde
 
 Applies to: 
 - Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -33,7 +31,7 @@ Applies to:
 
 Microsoft Defender for Endpoint supports monitoring both VDI as well as Windows Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Windows Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
 
- ## Before you begin
+## Before you begin
 
 See [considerations for non-persistent VDI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Although [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) does not provide non-persistence options, it does provide ways to use a Windows image that can be used to provision new hosts and redeploy machines. This increases volatility in the environment, and thus impacts what entries are created and maintained in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), potentially reducing visibility for your security analysts.
 

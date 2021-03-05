@@ -30,8 +30,8 @@ ms.technology: mde
 
 This article provides some general steps to mitigate missing events or alerts in the [security center](https://securitycenter.windows.com/) portal.
 
-Once Microsoft Defender for Endpoint has been installed properly on a device, a device page will be generated in the portal and _File_, _Process_, _Network_ and other events should appear in the timeline and advanced hunting pages.
-In case events are not appearing or some types of events are missing, that could indicate some problem.
+Once **Microsoft Defender for Endpoint** has been installed properly on a device, a _device page_ will be generated in the portal. You can review all recorded events in the timeline tab in the device page, or in advanced hunting page. This section troubleshoots the case of some or all expected events are missing.
+For instance, if all _CreatedFile_ events are missing.
 
 ## Missing network and login events
 
@@ -62,21 +62,21 @@ Microsoft Defender for Endpoint utilized `audit` framework from linux to track n
             └─16671 /opt/microsoft/mdatp/sbin/mdatp_audisp_plugin -d
     ```
 
-2. If auditd is stopped, please start it.
+2. If `auditd` is marked as stopped, start it.
 
     ```bash
     service auditd start
     ```
 
-**On SLES15** systems, SYSCALL auditing in `auditd` is disabled by default and can explain missing events.
+**On SLES** systems, SYSCALL auditing in `auditd` might be disabled by default and can be accounted for missing events.
 
-1. To validate that SYSCALL auditing is not disabeld, list the current audit rules:
+1. To validate that SYSCALL auditing is not disabled, list the current audit rules:
 
     ```bash
     sudo auditctl -l
     ```
 
-    if the following line is present, please remove it or edit it to enable Microsoft Defender for Endpoint to track specific SYSCALLs.
+    if the following line is present, remove it or edit it to enable Microsoft Defender for Endpoint to track specific SYSCALLs.
 
     ```output
     -a task, never
@@ -86,7 +86,7 @@ Microsoft Defender for Endpoint utilized `audit` framework from linux to track n
 
 ## Missing file events
 
-File events are collected with `fanotify` framework. In case some or all file events are missing please make sure fanotify is enabled on the device and that the file system is [supported](microsoft-defender-atp-linux.md#system-requirements).
+File events are collected with `fanotify` framework. In case some or all file events are missing, make sure `fanotify` is enabled on the device and that the file system is [supported](microsoft-defender-atp-linux.md#system-requirements).
 
 List the filesystems on the machine with:
 
