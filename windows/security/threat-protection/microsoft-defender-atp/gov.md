@@ -120,7 +120,7 @@ Spreadsheet of domains list | Description
 For more information, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 > [!NOTE]
-> The spreadsheet contains commercial URLs as well, make sure you check the "US Gov" tabs. <br> When filtering look for the records labeled as "US Gov" and your specific cloud under the geography column.
+> The spreadsheet contains commercial URLs as well, make sure you check the "US Gov" tabs. <br> When filtering, look for the records labeled as "US Gov" and your specific cloud under the geography column.
 
 <br>
 
@@ -155,7 +155,7 @@ Threat analytics | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/ch
 Web content filtering | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Integrations: Azure Sentinel | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Integrations: Microsoft Cloud App Security | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
-Integrations: Microsoft Compliance Center | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
+Integrations: Microsoft Compliance Manager | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Integrations: Microsoft Defender for Identity | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Integrations: Microsoft Defender for Office 365 | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Integrations: Microsoft Endpoint DLP | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
