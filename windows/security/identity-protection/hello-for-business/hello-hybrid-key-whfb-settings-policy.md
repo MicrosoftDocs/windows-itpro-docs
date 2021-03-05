@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/20/2018
+ms.date: 02/19/2021
 ms.reviewer: 
 ---
 # Configure Hybrid Windows Hello for Business: Group Policy
@@ -55,7 +55,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 7. Expand **Windows Settings**, **Security Settings**, and click **Public Key Policies**.
 8. In the details pane, right-click **Certificate Services Client � Auto-Enrollment** and select **Properties**.
 9. Select **Enabled** from the **Configuration Model** list.
-10. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
+10. Select the **Renew expired certificates, update pending certificates, and remove revoked certificates** check box.
 11. Select the **Update certificates that use certificate templates** check box.
 12. Click **OK**. Close the **Group Policy Management Editor**.
 

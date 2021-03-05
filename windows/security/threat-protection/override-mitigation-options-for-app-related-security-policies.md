@@ -4,12 +4,13 @@ ms.author: dansimp
 title: Override Process Mitigation Options (Windows 10)
 description: How to use Group Policy to override individual Process Mitigation Options settings and to help enforce specific app-related security policies.
 keywords: Process Mitigation Options, Mitigation Options, Group Policy Mitigation Options
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.sitesec: library
 author: dulcemontemayor
 ms.localizationpriority: medium
+ms.technology: mde
 ---
 
 

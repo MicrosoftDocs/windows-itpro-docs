@@ -1,7 +1,7 @@
 ---
 title: Windows Sandbox architecture
 description: 
-ms.prod: w10
+ms.prod: m365-security
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -11,6 +11,7 @@ ms.topic: article
 ms.localizationpriority: 
 ms.date: 
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Windows Sandbox architecture
@@ -29,7 +30,7 @@ Before Windows Sandbox is installed, the dynamic base image package is stored as
 
 ## Memory management
 
-Traditional VMs apportion statically sized allocations of host memory. When resource needs change, classic VMs have limited mechanisms for adjusting their resource needs. On the other hand, containers collaborate with the host to dynamically determine how host resources are allocated. This is similar to how processes normally compete for memory on the host. If the host is under memory pressure, it can reclaim memory from the container much like it would with a process.
+Traditional VMs apportion statically sized allocations of host memory. When resource needs change, classic VMs have limited mechanisms for adjusting their resource needs. On the other hand, containers collaborate with the host to dynamically determine how host resources are allocated. This method is similar to how processes normally compete for memory on the host. If the host is under memory pressure, it can reclaim memory from the container much like it would with a process.
 
 ![A chart compares memory sharing in Windows Sandbox versus a traditional VM.](images/2-dynamic-working.png)
 
@@ -51,7 +52,7 @@ Windows Sandbox employs a unique policy that allows the virtual processors of th
 
 Hardware accelerated rendering is key to a smooth and responsive user experience, especially for graphics-intensive use cases. Microsoft works with its graphics ecosystem partners to integrate modern graphics virtualization capabilities directly into DirectX and Windows Display Driver Model (WDDM), the driver model used by Windows.
 
-This allows programs running inside the sandbox to compete for GPU resources with applications that are running on the host.
+This feature allows programs running inside the sandbox to compete for GPU resources with applications that are running on the host.
 
 ![A chart illustrates graphics kernel use in Sandbox managed alongside apps on the host.](images/5-wddm-gpu-virtualization.png)
 

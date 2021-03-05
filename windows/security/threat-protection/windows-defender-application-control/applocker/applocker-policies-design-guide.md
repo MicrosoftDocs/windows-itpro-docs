@@ -4,7 +4,7 @@ description: This topic for the IT professional introduces the design and planni
 ms.assetid: 1c8e4a7b-3164-4eb4-9277-11b1d5a09c7b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # AppLocker design guide

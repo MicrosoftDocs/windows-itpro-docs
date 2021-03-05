@@ -4,7 +4,7 @@ description: Learn how to contact Microsoft Defender ATP support
 keywords: support, contact, premier support, solutions, problems, case
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,19 +13,23 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# Contact Microsoft Defender ATP support
+# Contact Microsoft Defender for Endpoint support
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-Microsoft Defender ATP has recently upgraded the support process to offer a more modern and advanced support experience. 
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+
+Defender for Endpoint has recently upgraded the support process to offer a more modern and advanced support experience. 
 
 The new widget allows customers to:
 - Find solutions to common problems
@@ -39,7 +43,7 @@ At a minimum, you must have a Service Support Administrator **OR** Helpdesk Admi
 
 For more information on which roles have permission see, [Security Administrator permissions](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions). Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
 
-For general information on admin roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+For general information on admin roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
 
 ## Access the widget
@@ -68,7 +72,7 @@ In case the suggested articles are not sufficient, you can open a service reques
 
 ## Open a service request
 
-Learn how to open support tickets by contacting Microsoft Defender ATP support. 
+Learn how to open support tickets by contacting Defender for Endpoint support. 
 
 
 

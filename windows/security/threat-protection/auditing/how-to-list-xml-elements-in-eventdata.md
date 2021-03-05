@@ -1,7 +1,7 @@
 ---
 title: How to get a list of XML data name elements in <EventData> (Windows 10)
-description: This reference topic for the IT professional explains how to use PowerShell to get a list of XML data name elements that can appear in <EventData>.
-ms.prod: w10
+description: This reference article for the IT professional explains how to use PowerShell to get a list of XML data name elements that can appear in <EventData>.
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,6 +11,7 @@ ms.date: 10/22/2018
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # How to get a list of XML data name elements in EventData
@@ -20,15 +21,15 @@ ms.author: dansimp
 
 The Security log uses a manifest where you can get all of the event schema.
 
-Run the following from an elevated PowerShell prompt:
+Run the following command from an elevated PowerShell prompt:
 
 ```powershell
 $secEvents = get-winevent -listprovider "microsoft-windows-security-auditing"
 ```
 
-The .events property is a collection of all of the events listed in the manifest on the local machine.
+The `.events` property is a collection of all of the events listed in the manifest on the local machine.
 
-For each event, there is a .Template property for the XML template used for the event properties (if there are any).
+For each event, there is a `.Template` property for the XML template used for the event properties (if there are any).
 
 For example:
 
@@ -90,7 +91,7 @@ PS C:\WINDOWS\system32> $SecEvents.events[100].Template
 
 You can use the &lt;Template&gt; and &lt;Description&gt; to map the data name elements that appear in XML view to the names that appear in the event description.
 
-The &lt;Description&gt; is just the format string (if you’re used to Console.Writeline or sprintf statements) and the &lt;Template&gt; is the source of the input parameters for the &lt;Description&gt;.
+The &lt;Description&gt; is just the format string (if you’re used to `Console.Writeline` or `sprintf` statements), and the &lt;Template&gt; is the source of the input parameters for the &lt;Description&gt;.
 
 Using Security event 4734 as an example:
 
@@ -124,9 +125,9 @@ Description : A security-enabled local group was deleted.
 
 ```
 
-For the **Subject: Security Id:** text element, it will use the fourth element in the Template, **SubjectUserSid**.
+For the **Subject: Security ID:** text element, it will use the fourth element in the Template, **SubjectUserSid**.
 
-For **Additional Information Privileges:**, it would use the eighth element **PrivilegeList**.
+For **Additional Information Privileges:**, it would use the eighth element, **PrivilegeList**.
 
-A caveat to this is an oft-overlooked property of events called Version (in the &lt;SYSTEM&gt; element) that indicates the revision of the event schema and description. Most events have 1 version (all events have Version =0 like the Security/4734 example) but a few events like Security/4624 or Security/4688 have at least 3 versions (versions 0, 1, 2) depending on the OS version where the event is generated. Only the latest version is used for generating events in the Security log. In any case, the Event Version where the Template is taken from should use the same Event Version for the Description.
+A caveat to this principle is an often overlooked property of events called Version (in the &lt;SYSTEM&gt; element) that indicates the revision of the event schema and description. Most events have one version (all events have Version =0 like the Security/4734 example) but a few events like Security/4624 or Security/4688 have at least three versions (versions 0, 1, 2) depending on the OS version where the event is generated. Only the latest version is used for generating events in the Security log. In any case, the Event Version where the Template is taken from should use the same Event Version for the Description.
 

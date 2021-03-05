@@ -383,7 +383,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -460,7 +460,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -538,7 +538,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -616,7 +616,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -694,7 +694,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -772,7 +772,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -850,7 +850,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -928,7 +928,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1006,7 +1006,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1084,7 +1084,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1162,7 +1162,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1240,7 +1240,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1317,7 +1317,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1394,7 +1394,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1471,7 +1471,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1548,7 +1548,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1625,7 +1625,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1702,7 +1702,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1779,7 +1779,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1856,7 +1856,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -1933,7 +1933,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2010,7 +2010,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2087,7 +2087,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2164,7 +2164,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2241,7 +2241,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2318,7 +2318,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2395,7 +2395,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2472,7 +2472,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2549,7 +2549,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2627,7 +2627,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2704,7 +2704,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2781,7 +2781,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2858,7 +2858,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -2935,7 +2935,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3012,7 +3012,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3089,7 +3089,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3166,7 +3166,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3243,7 +3243,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits use of the Group Policy tab in property sheets for the Active Directory Users and Computers and Active Directory Sites and Services snap-ins.
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits use of the Group Policy tab in property sheets for the Active Directory Users and Computers and Active Directory Sites and Services snap-ins.
 
 If you enable this setting, the Group Policy tab is displayed in the property sheet for a site, domain, or organizational unit displayed by the Active Directory Users and Computers and Active Directory Sites and Services snap-ins. If you disable the setting, the Group Policy tab is not displayed in those snap-ins.
 
@@ -3322,7 +3322,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3399,7 +3399,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3476,7 +3476,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3553,7 +3553,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3630,7 +3630,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3707,7 +3707,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3784,7 +3784,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3861,7 +3861,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -3938,7 +3938,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4015,7 +4015,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4092,7 +4092,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4169,7 +4169,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4246,7 +4246,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4323,7 +4323,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4400,7 +4400,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4477,7 +4477,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4554,7 +4554,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4631,7 +4631,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4708,7 +4708,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4785,7 +4785,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4862,7 +4862,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -4939,7 +4939,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5016,7 +5016,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5093,7 +5093,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5170,7 +5170,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5247,7 +5247,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5324,7 +5324,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5401,7 +5401,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5478,7 +5478,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5555,7 +5555,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5632,7 +5632,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5709,7 +5709,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5786,7 +5786,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5863,7 +5863,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -5940,7 +5940,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6017,7 +6017,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6094,7 +6094,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6171,7 +6171,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6248,7 +6248,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6325,7 +6325,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6402,7 +6402,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6479,7 +6479,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6556,7 +6556,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6633,7 +6633,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6710,7 +6710,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6787,7 +6787,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6864,7 +6864,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -6941,7 +6941,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7018,7 +7018,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7095,7 +7095,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7172,7 +7172,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7249,7 +7249,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7326,7 +7326,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7403,7 +7403,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7480,7 +7480,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7557,7 +7557,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7634,7 +7634,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7711,7 +7711,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7788,7 +7788,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7865,7 +7865,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -7942,7 +7942,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8019,7 +8019,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8096,7 +8096,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8173,7 +8173,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8250,7 +8250,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8327,7 +8327,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8404,7 +8404,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits or prohibits the use of this snap-in. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits or prohibits the use of this snap-in. 
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
 
@@ -8437,14 +8437,14 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 <!--/Policies-->
 

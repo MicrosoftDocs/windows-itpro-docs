@@ -3,7 +3,7 @@ title: Enable controlled folder access
 keywords: Controlled folder access, windows 10, windows defender, ransomware, protect, files, folders, enable, turn on, use
 description: Learn how to protect your important files by enabling Controlled folder access
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,18 @@ author: levinec
 ms.author: ellevin
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Enable controlled folder access
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [Controlled folder access](controlled-folders.md) helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is included with Windows 10 and Windows Server 2019.
 
@@ -134,4 +136,4 @@ Use `Disabled` to turn off the feature.
 
 * [Protect important folders with controlled folder access](controlled-folders.md)
 * [Customize controlled folder access](customize-controlled-folders.md)
-* [Evaluate Microsoft Defender ATP](../microsoft-defender-atp/evaluate-atp.md)
+* [Evaluate Microsoft Defender for Endpoint](../microsoft-defender-atp/evaluate-atp.md)
