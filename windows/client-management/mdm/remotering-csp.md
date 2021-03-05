@@ -15,9 +15,9 @@ ms.date: 06/26/2017
 # RemoteRing CSP
 
 
-The RemoteRing configuration service provider can be used to remotely trigger a device to produce an audible ringing sound regardless of the volume that is set on the device.
+You can use the RemoteRing configuration service provider to remotely trigger a device to produce an audible ringing sound, regardless of the volume that is set on the device.
 
-The following shows the RemoteRing configuration service provider in tree format.
+The following DDF format shows the RemoteRing configuration service provider in tree format.
 ```
 ./User/Vendor/MSFT
 RemoteRing
