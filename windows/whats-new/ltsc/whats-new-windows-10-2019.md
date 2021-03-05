@@ -220,7 +220,7 @@ The new [security baseline for Windows 10 version 1803](https://docs.microsoft.c
 
 #### SMBLoris vulnerability
 
-An issue, known as “SMBLoris�?, which could result in denial of service, has been addressed.
+An issue, known as "SMBLoris", which could result in denial of service, has been addressed.
 
 #### Windows Security Center
 
@@ -340,13 +340,13 @@ If you have shared devices deployed in your work place, **Fast sign-in** enables
 
 ### Web sign-in to Windows 10
 
-Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
+Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing "web sign-in," a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
 
 **To try out web sign-in:**
 1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
 2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
 3. On the lock screen, select web sign-in under sign-in options.
-4. Click the “Sign in” button to continue.
+4. Click the "Sign in" button to continue.
 
 ![Web sign-in](../images/websignin.png "web sign-in")
 
