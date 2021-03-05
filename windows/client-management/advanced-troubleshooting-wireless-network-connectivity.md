@@ -93,7 +93,7 @@ The following is a high-level view of the main wifi components in Windows.
 - Managing connectivity of wireless networks</td></tr>
 <tr><td><img src="images/msm.png" alt="Media Specific Module"></td><td>The <b>Media Specific Module</b> (MSM) handles security aspects of connection being established.</td></tr>
 <tr><td><img src="images/wifi-stack.png" alt="Native WiFi stack"></td><td>The <b>Native WiFi stack</b> consists of drivers and wireless APIs to interact with wireless miniports and the supporting user-mode Wlansvc.</td></tr>
-<tr><td><img src="images/miniport.png"></td><td>Third-party <b>wireless miniport</b> drivers interface with the upper wireless stack to provide notifications to and receive commands from Windows.</td></tr>
+<tr><td><img src="images/miniport.png" alt="Miniport"></td><td>Third-party <b>wireless miniport</b> drivers interface with the upper wireless stack to provide notifications to and receive commands from Windows.</td></tr>
 </table>
 
 
