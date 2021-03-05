@@ -86,24 +86,29 @@ You can configure Windows to be in shared PC mode in a couple different ways:
 - Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp). To setup a shared device policy for Windows 10 in Intune, complete the following steps:
 
   1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+  
   2. Select **Devices** > **Windows** > **Configuration profiles** > **Create profile**.
+  
   3. Enter the following properties:
 
-   - **Platform**: Select **Windows 10 and later**.
-   - **Profile**: Select **Templates** > **Shared multi-user device**.
+     - **Platform**: Select **Windows 10 and later**.
+     - **Profile**: Select **Templates** > **Shared multi-user device**.
 
   4. Select **Create**.
+  
   5. In **Basics**, enter the following properties:
 
-   - **Name**: Enter a descriptive name for the new profile.
-   - **Description**: Enter a description for the profile. This setting is optional, but recommended.
+     - **Name**: Enter a descriptive name for the new profile.
+     - **Description**: Enter a description for the profile. This setting is optional, but recommended.
 
   6. Select **Next**.
+  
   7. In **Configuration settings**, depending on the platform you chose, the settings you can configure are different. Choose your platform for detailed settings:
 
   8. On the **Configuration settings** page, set the ‘Shared PC Mode’ value to **Enabled**.
 
-     ![Shared PC settings in ICD](images/shared_pc_3.png) 
+     > [!div class="mx-imgBorder"]
+     > ![Shared PC mode in the Configuration settings page](images/shared_pc_3.png) 
 
   9. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 4**.
 
@@ -112,27 +117,27 @@ You can configure Windows to be in shared PC mode in a couple different ways:
      ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
 - WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx) to configure the [MDM_SharedPC class](https://msdn.microsoft.com/library/windows/desktop/mt779129.aspx). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](https://docs.microsoft.com/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
-
-```
-$sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
-$sharedPC.EnableSharedPCMode = $True
-$sharedPC.SetEduPolicies = $True
-$sharedPC.SetPowerPolicies = $True
-$sharedPC.MaintenanceStartTime = 0
-$sharedPC.SignInOnResume = $True
-$sharedPC.SleepTimeout = 0
-$sharedPC.EnableAccountManager = $True
-$sharedPC.AccountModel = 2
-$sharedPC.DeletionPolicy = 1
-$sharedPC.DiskLevelDeletion = 25
-$sharedPC.DiskLevelCaching = 50
-$sharedPC.RestrictLocalStorage = $False
-$sharedPC.KioskModeAUMID = ""
-$sharedPC.KioskModeUserTileDisplayText = ""
-$sharedPC.InactiveThreshold = 0
-Set-CimInstance -CimInstance $sharedPC
-Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName MDM_SharedPC
-```
+    
+  ```powershell
+  $sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
+  $sharedPC.EnableSharedPCMode = $True
+  $sharedPC.SetEduPolicies = $True
+  $sharedPC.SetPowerPolicies = $True
+  $sharedPC.MaintenanceStartTime = 0
+  $sharedPC.SignInOnResume = $True
+  $sharedPC.SleepTimeout = 0
+  $sharedPC.EnableAccountManager = $True
+  $sharedPC.AccountModel = 2
+  $sharedPC.DeletionPolicy = 1
+  $sharedPC.DiskLevelDeletion = 25
+  $sharedPC.DiskLevelCaching = 50
+  $sharedPC.RestrictLocalStorage = $False
+  $sharedPC.KioskModeAUMID = ""
+  $sharedPC.KioskModeUserTileDisplayText = ""
+  $sharedPC.InactiveThreshold = 0
+  Set-CimInstance -CimInstance $sharedPC
+  Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName MDM_SharedPC
+  ```
 
 ### Create a provisioning package for shared use
 
@@ -209,19 +214,24 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 ## Guidance for accounts on shared PCs
 
 * We recommend no local admin accounts on the PC to improve the reliability and security of the PC.
+
 * When a PC is set up in shared PC mode with the default deletion policy, accounts will be cached automatically until disk space is low. Then, accounts will be deleted to reclaim disk space. This account management happens automatically. Both Azure AD and Active Directory domain accounts are managed in this way. Any accounts created through **Guest** and **Kiosk** will be deleted automatically at sign out.
 * On a Windows PC joined to Azure Active Directory:
     * By default, the account that joined the PC to Azure AD will have an admin account on that PC. Global administrators for the Azure AD domain will also have admin accounts on the PC.
     * With Azure AD Premium, you can specify which accounts have admin accounts on a PC using the **Additional administrators on Azure AD Joined devices** setting on the Azure portal.
+
 * Local accounts that already exist on a PC won’t be deleted when turning on shared PC mode. New local accounts that are created using **Settings > Accounts > Other people > Add someone else to this PC** after shared PC mode is turned on won't be deleted. However, any new local accounts created by the **Guest** and **Kiosk** options on the sign-in screen (if enabled) will automatically be deleted at sign-out.
+
 * If admin accounts are necessary on the PC
     * Ensure the PC is joined to a domain that enables accounts to be signed on as admin, or
     * Create admin accounts before setting up shared PC mode, or 
     * Create exempt accounts before signing out when turning shared pc mode on.
+
 * The account management service supports accounts that are exempt from deletion.
-    * An account can be marked exempt from deletion by adding the account SID to the `HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\` registry key.
-    * To add the account SID to the registry key using PowerShell:<br/>
-        ```
+    * An account can be marked exempt from deletion by adding the account SID to the registry key: `HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\`.
+    * To add the account SID to the registry key using PowerShell:
+
+        ```powershell
         $adminName = "LocalAdmin"
         $adminPass = 'Pa$$word123'
         iex "net user /add $adminName $adminPass"
@@ -230,8 +240,6 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
         $sid = $sid.Value;
         New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
         ``` 
-
-
 
 
 ## Policies set by shared PC mode
