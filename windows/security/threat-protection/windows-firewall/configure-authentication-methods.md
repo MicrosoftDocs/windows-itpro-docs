@@ -4,7 +4,7 @@ description: Learn how to configure authentication methods for devices in an iso
 ms.assetid: 5fcdc523-617f-4233-9213-15fe19f4cd02
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Configure Authentication Methods

@@ -27,7 +27,7 @@ Windows Update for Business is a free service that is available for all premium 
 
 Windows Update for Business enables IT administrators to keep the Windows 10 devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service. You can use Group Policy or Mobile Device Management (MDM) solutions such as Microsoft Intune to configure the Windows Update for Business settings that control how and when Windows 10 devices are updated.
   
-Specifically, Windows Update for Business allows for control over update offerings and experiences to allow for reliability and performance testing on a subset of devices before deploying updates across the organization as well as a positive update experience for those in your organization.
+Specifically, Windows Update for Business lets you control update offerings and experiences to allow for reliability and performance testing on a subset of devices before deploying updates across the organization. It also provides a positive update experience for people in your organization.
 
 ## What can I do with Windows Update for Business?
 
@@ -47,10 +47,13 @@ Windows Update for Business enables an IT administrator to receive and manage a 
 Windows Update for Business provides management policies for several types of updates to Windows 10 devices:
 
 - **Feature updates:** Previously referred to as "upgrades," feature updates contain not only security and quality revisions, but also significant feature additions and changes. Feature updates are released semi-annually in the fall and in the spring.
-- **Quality updates:** These are traditional operating system updates, typically released on the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates. Windows Update for Business also treats non-Windows updates (such as those for Microsoft Office or Visual Studio) as quality updates. These non-Windows Updates are known as "Microsoft updates" and you can set devices to receive such updates (or not) along with their Windows updates.
-- **Driver updates:** These are non-Microsoft drivers that are applicable to your devices. Driver updates are on by default, but you can use Windows Update for Business policies to turn them off if you prefer. 
-- **Microsoft product updates**: These are updates for other Microsoft products, such as Office. Product updates are off by default. You can turn them on by using Windows Update for Business policies.
+- **Quality updates:** Quality updates are traditional operating system updates, typically released on the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates. 
+- **Driver updates:** Updates for non-Microsoft drivers that are relevant to your devices. Driver updates are on by default, but you can use Windows Update for Business policies to turn them off if you prefer. 
+- **Microsoft product updates:** Updates for other Microsoft products, such as Visual Studio or versions of Microsoft Office that are installed by using Windows Installer (MSI). These updates are treated the same way as quality updates. Microsoft product updates are off by default, but you can turn them on with Windows Update for Business policies.
 
+
+>[!NOTE]
+>Versions of Office that are installed by using Click-to-Run can't be updated by using Windows Update for Business.
 
 ## Offering
 You can control when updates are applied, for example by deferring when an update is installed on a device or by pausing updates for a certain period.
@@ -65,13 +68,13 @@ The branch readiness level enables administrators to specify which channel of fe
 - Windows Insider Fast
 - Windows Insider Slow
 - Windows Insider Release Preview
-- Semi-annual Channel
+- Semi-Annual Channel
 
-Prior to Windows 10, version 1903, there are two channels for released updates: Semi-annual Channel and Semi-annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-annual Channel. All deferral days are calculated against a release’s Semi-annual Channel release date. For exact release dates, see [Windows Release Information](https://docs.microsoft.com/windows/release-information/). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. To use this policy to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
+Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel and Semi-Annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-Annual Channel. All deferral days are calculated against a release’s Semi-Annual Channel release date. For exact release dates, see [Windows Release Information](https://docs.microsoft.com/windows/release-health/release-information). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. To use this policy to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
 
 #### Defer an update
 
-A Windows Update for Business administrator can defer the installation of both feature and quality updates from deploying to devices within a bounded range of time from when those updates are first made available on the Windows Update service. You can use this deferral to allow time to validate deployments as they are pushed to devices. Deferrals work by allowing you to specify the number of days after an update is released before it is offered to a device. That is, if you set a feature update deferral period of 365 days, the device will not install a feature update that has been released for less than 365 days. To defer feature updates use the **Select when Preview Builds and Feature Updates are Received** policy.
+A Windows Update for Business administrator can defer the installation of both feature and quality updates from deploying to devices within a bounded range of time from when those updates are first made available on the Windows Update service. You can use this deferral to allow time to validate deployments as they are pushed to devices. Deferrals work by allowing you to specify the number of days after an update is released before it is offered to a device. That is, if you set a feature update deferral period of 365 days, the device will not install a feature update that has been released for less than 365 days. To defer feature updates, use the **Select when Preview Builds and Feature Updates are Received** policy.
 
 
 |Category  |Maximum deferral period  |
@@ -88,10 +91,10 @@ A Windows Update for Business administrator can defer the installation of both f
 If you discover a problem while deploying a feature or quality update, the IT administrator can pause the update for 35 days from a specified start date to prevent other devices from installing it until the issue is mitigated.
 If you pause a feature update, quality updates are still offered to devices to ensure they stay secure. The pause period for both feature and quality updates is calculated from a start date that you set.
 
-To pause feature updates use the **Select when Preview Builds and Feature Updates are Received** policy and to pause quality updates use the **Select when Quality Updates are Received** policy. For more information, see [Pause feature updates](waas-configure-wufb.md#pause-feature-updates) and [Pause quality updates](waas-configure-wufb.md#pause-quality-updates).
+To pause feature updates, use the **Select when Preview Builds and Feature Updates are Received** policy and to pause quality updates use the **Select when Quality Updates are Received** policy. For more information, see [Pause feature updates](waas-configure-wufb.md#pause-feature-updates) and [Pause quality updates](waas-configure-wufb.md#pause-quality-updates).
 
-Built in benefits:
-When updating from Windows Update you get the added benefits of built in compatibility checks to prevent against a poor update experience for your device as well as a check to prevent repeated rollbacks.
+Built-in benefits:
+When updating from Windows Update, you get the added benefits of built-in compatibility checks to prevent against a poor update experience for your device as well as a check to prevent repeated rollbacks.
 
 ### Recommendations
 
@@ -104,13 +107,13 @@ For the best experience with Windows Update, follow these guidelines:
 
 ### Manage the end-user experience when receiving Windows Updates
 
-Windows Update for Business provides controls to help meet your organization’s security standards as well as provide a great end-user experience. We do this by enabling you to set automatic updates at times that work well for those in your organization and set deadlines for quality and feature updates. Because Windows Update includes built-in intelligence, it's usually better to use fewer controls to manage the end-user experience. 
+Windows Update for Business provides controls to help meet your organization’s security standards as well as provide a great end-user experience. We do this by enabling you to set automatic updates at times that work well for people in your organization and set deadlines for quality and feature updates. Because Windows Update includes built-in intelligence, it's better to use fewer controls to manage the user experience. 
 
 #### Recommended experience settings
 
 Features like the smart busy check (which ensure updates don't happen when a user is signed in) and active hours help provide the best experience for end users while keeping devices more secure and up to date. Follow these steps to take advantage of these features:
 
-1.	Automatically download, install and restart (default if no restart policies are set up or enabled)
+1.	Automatically download, install, and restart (default if no restart policies are set up or enabled)
 2.	Use the default notifications 
 3.	Set update deadlines
 
@@ -118,7 +121,7 @@ Features like the smart busy check (which ensure updates don't happen when a use
 
 A compliance deadline policy (released in June 2019) enables you to set separate deadlines and grace periods for feature and quality updates. 
 
-This policy enables you to specify the number of days from an update's publication date that it must be installed on the device. The policy also includes a configurable grace period that specifies the number of days from when the update is installed on the device until the device is forced to restart. This is extremely beneficial in a vacation scenario as it allows, for example, users who have been away to have a bit of time before being forced to restart their devices when they return from vacation.
+This policy enables you to specify the number of days from an update's publication date that it must be installed on the device. The policy also includes a configurable grace period that specifies the number of days from when the update is installed on the device until the device is forced to restart. This approach is useful in a vacation scenario as it allows, for example, users who have been away to have a bit of time before being forced to restart their devices when they return from vacation.
 
 #### Update Baseline
 The large number of different policies offered for Windows 10 can be overwhelming. Update Baseline provides a clear list of recommended Windows update policy settings for IT administrators who want the best user experience while also meeting their update compliance goals. The Update Baseline for Windows 10 includes policy settings recommendations covering deadline configuration, restart behavior, power policies, and more.
@@ -126,7 +129,7 @@ The large number of different policies offered for Windows 10 can be overwhelmin
 The Update Baseline toolkit makes it easy by providing a single command for IT Admins to apply the Update Baseline to devices. You can get the Update Baseline toolkit from the [Download Center](https://www.microsoft.com/download/details.aspx?id=101056).
 
 >[!NOTE]
->The Update Baseline toolkit is available only for Group Policy. Update Baseline does not affect your offering policies, whether you’re using deferrals or target version to manage which updates are offered to your devices when.
+>The Update Baseline toolkit is available only for Group Policy. Update Baseline does not affect your offering policies, whether you’re using deferrals or target version to manage which updates are offered to your devices and when.
 
 <!--
 
@@ -186,9 +189,9 @@ The branch readiness level enables administrators to specify which channel of fe
     - Windows Insider Fast 
     - Windows Insider Slow 
     - Windows Insider Release Preview 
-- Semi-annual Channel for released updates
+    - Semi-Annual Channel for released updates
  
-Prior to Windows 10, version 1903, there are two channels for released updates: Semi-annual Channel and Semi-annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-annual Channel. All deferral days will be calculated against a release's Semi-annual Channel release date. To see release dates, visit [Windows Release Information](https://docs.microsoft.com/windows/release-information/). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. In order to use this to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
+Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel and Semi-Annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-Annual Channel. All deferral days will be calculated against a release's Semi-Annual Channel release date. To see release dates, visit [Windows Release Information](https://docs.microsoft.com/windows/release-health/release-information). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. In order to use this to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
 
 ### Recommendations
 

@@ -4,7 +4,7 @@ description: "Describes the best practices, location, values, and security consi
 ms.assetid: f656a2bb-e8d6-447b-8902-53df3a7756c5
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/01/2019
+ms.technology: mde
 ---
 
 # Audit: Audit the use of Backup and Restore privilege

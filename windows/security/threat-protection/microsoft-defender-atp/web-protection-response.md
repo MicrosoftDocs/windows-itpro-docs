@@ -4,7 +4,7 @@ description: Respond to alerts related to malicious and unwanted websites. Under
 keywords: web protection, web threat protection, web browsing, alerts, response, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, notifications, end users, Windows notifications, blocking page,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,21 +13,25 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Respond to web threats
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web protection in Microsoft Defender ATP lets you efficiently investigate and respond to alerts related to malicious websites and websites in your custom indicator list.
+Web protection in Microsoft Defender for Endpoint lets you efficiently investigate and respond to alerts related to malicious websites and websites in your custom indicator list.
 
 ## View web threat alerts
-Microsoft Defender ATP generates the following [alerts](manage-alerts.md) for malicious or suspicious web activity:
+Microsoft Defender for Endpoint generates the following [alerts](manage-alerts.md) for malicious or suspicious web activity:
 - **Suspicious connection blocked by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is *stopped* by network protection in *block* mode
 - **Suspicious connection detected by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is detected by network protection in *audit only* mode
 
@@ -40,7 +44,7 @@ Each alert provides the following information:
 ![Image of an alert related to web threat protection](images/wtp-alert.png)
 
 >[!Note]
->To reduce the volume of alerts, Microsoft Defender ATP consolidates web threat detections for the same domain on the same device each day to a single alert. Only one alert is generated and counted into the [web protection report](web-protection-monitoring.md).
+>To reduce the volume of alerts, Microsoft Defender for Endpoint consolidates web threat detections for the same domain on the same device each day to a single alert. Only one alert is generated and counted into the [web protection report](web-protection-monitoring.md).
 
 ## Inspect website details
 You can dive deeper by selecting the URL or domain of the website in the alert. This opens a page about that particular URL or domain with various information, including:
@@ -59,7 +63,7 @@ You can also check the device that attempted to access a blocked URL. Selecting 
 
 ## Web browser and Windows notifications for end users
 
-With web protection in Microsoft Defender ATP, your end users will be prevented from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is performed by [network protection](network-protection.md), they will see a generic error from the web browser. They will also see a notification from Windows.
+With web protection in Microsoft Defender for Endpoint, your end users will be prevented from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is performed by [network protection](network-protection.md), they will see a generic error from the web browser. They will also see a notification from Windows.
 
 ![Image of Microsoft Edge showing a 403 error and the Windows notification](images/wtp-browser-blocking-page.png)
 *Web threat blocked on Microsoft Edge*

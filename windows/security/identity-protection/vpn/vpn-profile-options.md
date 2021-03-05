@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.date: 05/17/2018
@@ -34,7 +34,6 @@ The following table lists the VPN settings and whether the setting can be config
 | Routing: forced-tunnel | yes |
 | Authentication (EAP) | yes, if connection type is built-in |
 | Conditional access | yes |
-| Proxy settings | yes, by PAC/WPAD file or server and port |
 | Name resolution: NRPT | yes |
 | Name resolution: DNS suffix | no |
 | Name resolution: persistent | no |
@@ -45,6 +44,10 @@ The following table lists the VPN settings and whether the setting can be config
 | LockDown | no |
 | Windows Information Protection (WIP) | yes |
 | Traffic filters | yes |
+| Proxy settings | yes, by PAC/WPAD file or server and port |
+
+> [!NOTE] 
+> VPN proxy settings are only used on Force Tunnel Connections. On Split Tunnel Connections, the general proxy settings are used.
 
 The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This is particularly useful for deploying profiles with features that are not yet supported by MDMs. You can get additional examples in the [ProfileXML XSD](https://msdn.microsoft.com/library/windows/hardware/mt755930.aspx) topic.
 

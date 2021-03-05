@@ -2,7 +2,7 @@
 title: BitLocker recovery guide (Windows 10)
 description: This article for IT professionals describes how to recover BitLocker keys from AD DS.
 ms.assetid: d0f722e9-1773-40bf-8456-63ee7a95ea14
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -339,7 +339,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 **Result:** The hint for the Microsoft Account and the custom URL are displayed.
 
-![Example 1 of Customized BitLocker recovery screen](./images/rp-example1.PNG)
+![Example 1 of Customized BitLocker recovery screen](./images/rp-example1.png)
 
 
 #### Example 2 (single recovery key with single backup)
@@ -354,7 +354,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 **Result:** Only the custom URL is displayed.
 
-![Example 2 of customized BitLocker recovery screen](./images/rp-example2.PNG)
+![Example 2 of customized BitLocker recovery screen](./images/rp-example2.png)
 
 
 #### Example 3 (single recovery key with multiple backups)
@@ -369,7 +369,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 **Result:** Only the Microsoft Account hint is displayed.
 
-![Example 3 of customized BitLocker recovery screen](./images/rp-example3.PNG)
+![Example 3 of customized BitLocker recovery screen](./images/rp-example3.png)
 
 
 #### Example 4  (multiple recovery passwords)
@@ -399,7 +399,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 **Result:** Only the hint for a successfully backed up key is displayed, even if it isn't the most recent key.
 
-![Example 4 of customized BitLocker recovery screen](./images/rp-example4.PNG)
+![Example 4 of customized BitLocker recovery screen](./images/rp-example4.png)
 
 
 #### Example 5  (multiple recovery passwords)
@@ -429,7 +429,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 **Result:** The hint for the most recent key is displayed.
 
-![Example 5 of customized BitLocker recovery screen](./images/rp-example5.PNG)
+![Example 5 of customized BitLocker recovery screen](./images/rp-example5.png)
 
 
 ## <a href="" id="bkmk-usingaddrecovery"></a>Using additional recovery information
@@ -484,7 +484,7 @@ You can reset the recovery password in two ways:
 
     > [!WARNING]
     > You must include the braces in the ID string.
-     
+
 **To run the sample recovery password script:**
 
 1. Save the following sample script in a VBScript file. For example: ResetPassword.vbs.

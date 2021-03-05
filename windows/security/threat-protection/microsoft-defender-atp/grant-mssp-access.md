@@ -1,10 +1,10 @@
 ---
 title: Grant access to managed security service provider (MSSP)
-description: Take the necessary steps to configure the MSSP integration with Microsoft Defender ATP 
+description: Take the necessary steps to configure MSSP integration with the Microsoft Defender ATP
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,50 +13,51 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Grant managed security service provider (MSSP) access (preview)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 To implement a multi-tenant delegated access solution, take the following steps:
 
-1. Enable [role-based access control](rbac.md) in Microsoft Defender ATP and connect with Active Directory (AD) groups.
+1. Enable [role-based access control](rbac.md) in Defender for Endpoint and connect with Active Directory (AD) groups.
 
 2. Configure [Governance Access Packages](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
 
 3. Manage access requests and audits in [Microsoft Myaccess](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve).
 
-## Enable role-based access controls in Microsoft Defender ATP
+## Enable role-based access controls in Microsoft Defender for Endpoint
 
 1. **Create access groups for MSSP resources in Customer AAD: Groups**
 
-    These groups will be linked to the Roles you create in Microsoft Defender ATP. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
+    These groups will be linked to the Roles you create in Defender for Endpoint. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
 
     - Tier 1 Analyst 
     - Tier 2 Analyst 
     - MSSP Analyst Approvers  
 
 
-2. Create Microsoft Defender ATP roles for appropriate access levels in Customer Microsoft Defender ATP.
+2. Create Defender for Endpoint roles for appropriate access levels in Customer Defender for Endpoint.
 
     To enable RBAC in the customer Microsoft Defender Security Center, access **Settings > Permissions > Roles** and "Turn on roles", from a user account with Global Administrator or Security Administrator rights.
 
     ![Image of MSSP access](images/mssp-access.png)
 
-    Then, create RBAC roles to meet MSSP SOC Tier needs. Link these roles to the created user groups via “Assigned user groups”.
+    Then, create RBAC roles to meet MSSP SOC Tier needs. Link these roles to the created user groups via "Assigned user groups".
 
     Two possible roles:
 
@@ -100,7 +101,8 @@ To implement a multi-tenant delegated access solution, take the following steps:
     - Can only be requested by users in the MSSP SOC Tenant
     - Access auto expires after 365 days
 
-    ![Image of new access package](images/new-access-package.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image of new access package](images/new-access-package.png)
 
     For more information, see [Create a new access package](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create).
 
@@ -109,8 +111,8 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     The My Access portal link is used by MSSP SOC analysts to request access via the access packages created. The link is durable, meaning the same link may be used over time for new analysts. The analyst request goes into a queue for approval by the **MSSP Analyst Approvers**.
 
-
-    ![Image of access properties](images/access-properties.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image of access properties](images/access-properties.png)
 
     The link is located on the overview page of each access package.
 
@@ -120,13 +122,13 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     Access requests are managed in the customer My Access, by members of the MSSP Analyst Approvers group.
 
-    To do so, access the customer’s myaccess using: 
+    To do so, access the customer's myaccess using: 
     `https://myaccess.microsoft.com/@<Customer Domain >`. 
 
     Example:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Approve or deny requests in the **Approvals** section of the UI.
 
-    At this point, analyst access has been provisioned, and each analyst should be able to access the customer’s Microsoft Defender Security Center: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft Defender Security Center: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## Related topics
 - [Access the MSSP customer portal](access-mssp-portal.md)

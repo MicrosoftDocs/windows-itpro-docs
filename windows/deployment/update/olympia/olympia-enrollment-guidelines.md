@@ -22,7 +22,7 @@ Windows Insider Lab for Enterprise is intended for Windows Insiders who want to 
 
 As an Olympia user, you will have an opportunity to: 
 
--   Use various enterprise features like Windows Information Protection (WIP), Advanced Threat Protection (ATP), windows Defender Application Guard (WDAG), and Application Virtualization (APP-V).
+-   Use various enterprise features like Windows Information Protection (WIP), Microsoft Defender for Office 365, Windows Defender Application Guard (WDAG), and Application Virtualization (APP-V).
 -   Learn how Microsoft is preparing for GDPR, as well as enabling enterprise customers to prepare for their own readiness.
 -   Validate and test pre-release software in your environment.
 -   Provide feedback.
