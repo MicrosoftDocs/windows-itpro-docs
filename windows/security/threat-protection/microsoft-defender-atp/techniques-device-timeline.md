@@ -52,18 +52,18 @@ Select the specific *Attack technique* to open the related ATT&CK technique page
 
 You can copy an entity's details when you see a blue icon on the right. For instance, to copy a related file's SHA1, select the blue page icon.
 
-![Copy entity details](images/techniques-side-pane-clickable.png)
+![Copy entity details](images/techniques-sha1.png)
 
 You can do the same for command lines.
 
-![Copy command line](images/techniques-side-pane-command.png)
+![Copy command line](images/techniques-cmd.png)
 
 
 ## Investigate related events
 
 To use [advanced hunting](advanced-hunting-overview.md) to find events related to the selected Technique, select **Hunt for related events**. This leads to the advanced hunting page with a query to find events related to the Technique.
 
-![Hunt for related events](images/techniques-hunt-for-related-events.png)
+![Hunt for related events](images/techniques-hunting.png)
 
 >[!NOTE]
 >Querying using the **Hunt for related events** button from a Technique side pane displays all the events related to the identified technique but does not include the Technique itself in the query results.
