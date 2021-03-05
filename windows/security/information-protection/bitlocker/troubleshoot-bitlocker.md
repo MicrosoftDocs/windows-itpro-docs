@@ -18,7 +18,7 @@ ms.custom: bitlocker
 
 # Guidelines for troubleshooting BitLocker
 
-This article addresses common issues in BitLocker and provides guidelines to troubleshoot these issues. This article also provides pointers to start the troubleshooting process, including what data to collect and what settings to check in order to narrow down the location in which these issues occur.
+This article addresses common issues in BitLocker and provides guidelines to troubleshoot these issues. This article also provides information such as what data to collect and what settings to check. This information makes your troubleshooting process much easier.
 
 ## Review the event logs
 
@@ -36,19 +36,19 @@ Additionally, review the Windows logs\\System log for events that were produced 
 
 To filter and display or export logs, you can use the [wevtutil.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](https://docs.microsoft.com/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6&preserve-view=true) cmdlet.
 
-For example, to use wevtutil to export the contents of the operational log from the BitLocker-API folder to a text file that is named BitLockerAPIOpsLog.txt, open a Command Prompt window, and run a command that resembles the following:
+For example, to use wevtutil to export the contents of the operational log from the BitLocker-API folder to a text file that is named BitLockerAPIOpsLog.txt, open a Command Prompt window, and run the following command:
 
 ```cmd
 wevtutil qe "Microsoft-Windows-BitLocker/BitLocker Operational" /f:text > BitLockerAPIOpsLog.txt
 ```
 
-To use the **Get-WinEvent** cmdlet to export the same log to a comma-separated text file, open a Windows Powershell window and run a command that resembles the following:
+To use the **Get-WinEvent** cmdlet to export the same log to a comma-separated text file, open a Windows Powershell window and run the following command:
 
 ```ps
 Get-WinEvent -logname "Microsoft-Windows-BitLocker/BitLocker Operational"  | Export-Csv -Path Bitlocker-Operational.csv
 ```
 
-You can use Get-WinEvent in an elevated PowerShell window to display filtered information from the system or application log by using a syntax that resembles the following:
+You can use Get-WinEvent in an elevated PowerShell window to display filtered information from the system or application log by using the following syntax:
 
 - To display BitLocker-related information:
    ```ps
@@ -109,7 +109,7 @@ Open an elevated Windows PowerShell window, and run each of the following comman
 
 ## Check the BitLocker prerequisites
 
-Common settings that can cause issues for BitLocker include the following:
+Common settings that can cause issues for BitLocker include the following scenarios:
 
 - The TPM must be unlocked. You can check the output of the **get-tpm** command for the status of the TPM.
 - Windows RE must be enabled. You can check the output of the **reagentc** command for the status of WindowsRE.
