@@ -6,8 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: cmcatee
-ms.author: cmcatee-MSFT
+ms.author: cmcatee
+author: cmcatee-MSFT
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.date: 03/10/2021

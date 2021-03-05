@@ -8,8 +8,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: cmcatee
-ms.author: cmcatee-MSFT
+ms.author: cmcatee
+author: cmcatee-MSFT
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 03/10/2021
@@ -32,7 +32,3 @@ IT admins can sign up for Microsoft Store for Business and Education, and get st
 | [Prerequisites for Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business) | There are a few prerequisites for using Microsoft Store for Business and Education.](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business) |
 | [Roles and permissions in Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/roles-and-permissions-microsoft-store-for-business)| The first person to sign in to Microsoft Store for Business and Education must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in, they can give permissions to others employees. |
 | [Settings reference: Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/settings-reference-microsoft-store-for-business) | Microsoft Store for Business and Education has a group of settings that admins use to manage the store. |
-
-
-
-

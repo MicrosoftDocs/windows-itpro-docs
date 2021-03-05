@@ -5,8 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: cmcatee
-ms.author: cmcatee-MSFT
+ms.author: cmcatee
+author: cmcatee-MSFT
 ms.date: 03/10/2021
 ms.reviewer: 
 manager: scotv

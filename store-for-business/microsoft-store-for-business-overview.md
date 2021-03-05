@@ -8,8 +8,8 @@ ms.prod: w10
 ms.pagetype: store, mobile
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: cmcatee
-ms.author: cmcatee-MSFT
+ms.author: cmcatee
+author: cmcatee-MSFT
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 03/10/2021
