@@ -102,7 +102,7 @@ Phishing websites impersonate trustworthy websites for the purpose of obtaining 
 
 ## Battery Consumption issues on iOS when MDE is installed
 
-The battery usage by an app is computed by Apple based on a multitude of factors including CPU and Network usage. Microsoft Defender for Endpoint uses a local/loop-back VPN in the background to check web traffic for any malicious websites or connections. Network packets from any app goes through this check and iOS wrongly accounts this in computing the battery usage of Microsoft Defender for Endpoint. This gives a false impression to the user. The actual battery consumption of Microsoft Defender for Endpoint is lesser than what is shown on the Battery Settings page on the device. This is based on tests that we have done to understand battery consumption by our app.
+The battery usage by an app is computed by Apple based on a multitude of factors including CPU and Network usage. Microsoft Defender for Endpoint uses a local/loop-back VPN in the background to check web traffic for any malicious websites or connections. Network packets from any app go through this check and Apple wrongly accounts this in computing the battery usage of Microsoft Defender for Endpoint. This gives a false impression to the user. The actual battery consumption of Microsoft Defender for Endpoint is lesser than what is shown on the Battery Settings page on the device. This is based on tests that we have done to understand battery consumption by our app.
 
 Also the VPN used is a local VPN and unlike traditional VPNs, network traffic is not sent outside the device.
 
