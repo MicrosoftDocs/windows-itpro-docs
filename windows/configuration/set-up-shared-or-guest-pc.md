@@ -228,7 +228,7 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
     * Create exempt accounts before signing out when turning shared pc mode on.
 
 * The account management service supports accounts that are exempt from deletion.
-    * An account can be marked exempt from deletion by adding the account SID to the registry key:`HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\`.
+    * An account can be marked exempt from deletion by adding the account SID to the registry key: `HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\`.
     * To add the account SID to the registry key using PowerShell:
 
         ```powershell
