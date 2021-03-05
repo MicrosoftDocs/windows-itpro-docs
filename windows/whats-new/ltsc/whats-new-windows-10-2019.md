@@ -251,7 +251,7 @@ The new [security baseline for Windows 10 version 1803](https://docs.microsoft.c
 
 #### SMBLoris vulnerability
 
-An issue, known as "SMBLoris", which could result in denial of service, has been addressed.
+An issue, known as “SMBLoris�?, which could result in denial of service, has been addressed.
 
 #### Windows Security Center
 
@@ -263,7 +263,7 @@ The WSC service now requires antivirus products to run as a protected process to
 
 WSC now includes the Fluent Design System elements you know and love. You’ll also notice we’ve adjusted the spacing and padding around the app. It will now dynamically size the categories on the main page if more room is needed for extra info. We also updated the title bar so that it will use your accent color if you have enabled that option in **Color Settings**.
 
-![alt text](../images/defender.png "Windows Security Center")
+![Security at a glance](../images/defender.png "Windows Security Center")
 
 #### Group Policy Security Options
 
@@ -276,8 +276,7 @@ A new security policy setting
 
 We’ve continued to work on the **Current threats** area in  [Virus & threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
-> [!div class="mx-imgBorder"]
-> ![Virus & threat protection settings](../images/virus-and-threat-protection.png "Virus & threat protection settings")
+![S mode settings](../images/virus-and-threat-protection.png "Virus & threat protection settings")
 
 ## Deployment
 
@@ -380,7 +379,7 @@ If you have shared devices deployed in your work place, **Fast sign-in** enables
 
 ### Web sign-in to Windows 10
 
-Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing "web sign-in," a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
+Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
 
 **To try out web sign-in:**
 
@@ -389,10 +388,9 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
 2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
 
 3. On the lock screen, select web sign-in under sign-in options.
+4. Click the “Sign in” button to continue.
 
-4. Click the "Sign in" button to continue.
-
-![Web sign-in](../images/websignin.png "web sign-in")
+![Sign-in option](../images/websignin.png "web sign-in")
 
 ## Windows Analytics
 
@@ -644,7 +642,7 @@ If you have a device that has been updated to Windows 10 Enterprise LTSC 2019, t
 
 We added a dropdown that displays as you type to help complete the next part of the path. You can also press **Ctrl + Backspace** to delete the last word, and **Ctrl + Delete** to delete the next word.
 
-![Registry editor dropdown](../images/regeditor.png "Registry editor dropdown")
+![Reg editor](../images/regeditor.png "Registry editor dropdown")
 
 ## Remote Desktop with Biometrics
 
@@ -659,10 +657,8 @@ To get started, sign into your device using Windows Hello for Business. Bring up
 See the following example:
 
 ![Enter your credentials](../images/RDPwBioTime.png "Windows Hello")
-
-![Initiate a Remote Desktop connection](../images/RDPwBio2.png "Windows Hello personal")
-
-![Microsoft Hyper-V Server 2016](../images/hyper-v.png "Microsoft Hyper-V Server 2016")
+![Provide credentials](../images/RDPwBio2.png "Windows Hello personal")
+![Hyper-V](../images/hyper-v.png "Microsoft Hyper-V Server 2016")
 
 ## See Also
 
