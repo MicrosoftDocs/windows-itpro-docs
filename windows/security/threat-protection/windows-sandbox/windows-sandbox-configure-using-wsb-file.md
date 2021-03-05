@@ -1,7 +1,7 @@
 ---
 title: Windows Sandbox configuration
 description: 
-ms.prod: w10
+ms.prod: m365-security
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -11,17 +11,15 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Windows Sandbox configuration
 
-Windows Sandbox supports simple configuration files, which provide a minimal set of customization parameters for Sandbox. This feature can be used with Windows 10 build 18342 or later.
+Windows Sandbox supports simple configuration files, which provide a minimal set of customization parameters for Sandbox. This feature can be used with Windows 10 build 18342 or later. Windows Sandbox configuration files are formatted as XML and are associated with Sandbox via the `.wsb` file extension.
 
-Windows Sandbox configuration files are formatted as XML and are associated with Sandbox via the .wsb file extension. To use a configuration file, double-click it to open it in the sandbox. You can also invoke it via the command line as shown here:
+A configuration file enables the user to control the following aspects of Windows Sandbox:
 
-**C:\Temp> MyConfigFile.wsb** 
-
- A configuration file enables the user to control the following aspects of Windows Sandbox:
 - **vGPU (virtualized GPU)**: Enable or disable the virtualized GPU. If vGPU is disabled, the sandbox will use Windows Advanced Rasterization Platform (WARP).
 - **Networking**: Enable or disable network access within the sandbox.
 - **Mapped folders**: Share folders from the host with *read* or *write* permissions. Note that exposing host directories may allow malicious software to affect the system or steal data.
@@ -33,13 +31,39 @@ Windows Sandbox configuration files are formatted as XML and are associated with
 - **Clipboard redirection**: Shares the host clipboard with the sandbox so that text and files can be pasted back and forth.
 - **Memory in MB**: The amount of memory, in megabytes, to assign to the sandbox.
 
-**Keywords, values, and limits**
+## Creating a configuration file
 
-**vGPU**: Enables or disables GPU sharing.
+To create a simple configuration file:
+
+1. Open a plain text editor or source code editor (e.g. Notepad, Visual Studio Code, etc.)
+2. Insert the following lines:
+
+    ```XML
+    <Configuration>
+    </Configuration>
+    ```
+
+3. Add appropriate configuration text between the two lines. For details, see the correct syntax and the examples below.
+4. Save the file with the desired name, but make sure its filename extension is `.wsb`. In Notepad, you should enclose the filename and the extension inside double quotation marks, e.g. `"My config file.wsb"`.
+
+## Using a configuration file
+
+To use a configuration file, double-click it to start Windows Sandbox according to its settings. You can also invoke it via the command line as shown here:
+
+```batch
+C:\Temp> MyConfigFile.wsb 
+```
+
+## Keywords, values, and limits
+
+### vGPU
+
+Enables or disables GPU sharing.
 
 `<vGPU>value</vGPU>`
 
 Supported values:
+
 - *Enable*: Enables vGPU support in the sandbox.
 - *Disable*: Disables vGPU support in the sandbox. If this value is set, the sandbox will use software rendering, which may be slower than virtualized GPU.
 - *Default* This is the default value for vGPU support. Currently this means vGPU is disabled.
@@ -47,7 +71,9 @@ Supported values:
 > [!NOTE]
 > Enabling virtualized GPU can potentially increase the attack surface of the sandbox.
 
-**Networking**: Enables or disables networking in the sandbox. You can disable network access to decrease the attack surface exposed by the sandbox.
+### Networking
+
+Enables or disables networking in the sandbox. You can disable network access to decrease the attack surface exposed by the sandbox.
 
 `<Networking>value</Networking>`
 
@@ -58,7 +84,9 @@ Supported values:
 > [!NOTE]
 > Enabling networking can expose untrusted applications to the internal network.
 
-**Mapped folders**: An array of folders, each representing a location on the host machine that will be shared into the sandbox at the specified path. At this time, relative paths are not supported. If no path is specified, the folder will be mapped to the container user's desktop.
+### Mapped folders
+
+An array of folders, each representing a location on the host machine that will be shared into the sandbox at the specified path. At this time, relative paths are not supported. If no path is specified, the folder will be mapped to the container user's desktop.
 
 ```xml
 <MappedFolders>
@@ -83,7 +111,9 @@ Supported values:
 > [!NOTE] 
 > Files and folders mapped in from the host can be compromised by apps in the sandbox or potentially affect the host.
 
-**Logon command**: Specifies a single command that will be invoked automatically after the sandbox logs on. Apps in the sandbox are run under the container user account.
+### Logon command
+
+Specifies a single command that will be invoked automatically after the sandbox logs on. Apps in the sandbox are run under the container user account.
 
 ```xml
 <LogonCommand>
@@ -96,7 +126,9 @@ Supported values:
 > [!NOTE]
 > Although very simple commands will work (such as launching an executable or script), more complicated scenarios involving multiple steps should be placed into a script file. This script file may be mapped into the container via a shared folder, and then executed via the *LogonCommand* directive.
 
-**Audio input**: Enables or disables audio input to the sandbox.
+### Audio input
+
+Enables or disables audio input to the sandbox.
 
 `<AudioInput>value</AudioInput>`
 
@@ -108,7 +140,9 @@ Supported values:
 > [!NOTE]
 > There may be security implications of exposing host audio input to the container.
  
-**Video input**: Enables or disables video input to the sandbox.
+### Video input
+
+Enables or disables video input to the sandbox.
 
 `<VideoInput>value</VideoInput>`
 
@@ -120,7 +154,9 @@ Supported values:
 > [!NOTE]
 > There may be security implications of exposing host video input to the container.
 
-**Protected client**: Applies additional security settings to the sandbox Remote Desktop client, decreasing its attack surface.
+### Protected client
+
+Applies additional security settings to the sandbox Remote Desktop client, decreasing its attack surface.
 
 `<ProtectedClient>value</ProtectedClient>`
 
@@ -132,7 +168,9 @@ Supported values:
 > [!NOTE]
 > This setting may restrict the user's ability to copy/paste files in and out of the sandbox.
 
-**Printer redirection**: Enables or disables printer sharing from the host into the sandbox.
+### Printer redirection
+
+Enables or disables printer sharing from the host into the sandbox.
 
 `<PrinterRedirection>value</PrinterRedirection>`
 
@@ -141,7 +179,9 @@ Supported values:
 - *Disable*: Disables printer redirection in the sandbox. If this value is set, the sandbox can't view printers from the host.
 - *Default*: This is the default value for printer redirection support. Currently this means printer redirection is disabled.
 
-**Clipboard redirection**: Enables or disables sharing of the host clipboard with the sandbox.
+### Clipboard redirection
+
+Enables or disables sharing of the host clipboard with the sandbox.
 
 `<ClipboardRedirection>value</ClipboardRedirection>`
 
@@ -149,16 +189,18 @@ Supported values:
 - *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted. 
 - *Default*: This is the default value for clipboard redirection. Currently copy/paste between the host and sandbox are permitted under *Default*.
 
-**Memory in MB**: Specifies the amount of memory that the sandbox can use in megabytes (MB).
+### Memory in MB
+
+Specifies the amount of memory that the sandbox can use in megabytes (MB).
 
 `<MemoryInMB>value</MemoryInMB>`
 
 If the memory value specified is insufficient to boot a sandbox, it will be automatically increased to the required minimum amount.
 
-***Example 1***   
+## Example 1
 The following config file can be used to easily test downloaded files inside the sandbox. To achieve this, networking and vGPU are disabled, and the sandbox is allowed read-only access to the shared downloads folder. For convenience, the logon command opens the downloads folder inside the sandbox when it's started.
 
-*Downloads.wsb*
+### Downloads.wsb
 
 ```xml
 <Configuration>
@@ -177,7 +219,7 @@ The following config file can be used to easily test downloaded files inside the
 </Configuration>
 ```
 
-***Example 2***
+## Example 2
 
 The following config file installs Visual Studio Code in the sandbox, which requires a slightly more complicated LogonCommand setup.
 
@@ -185,9 +227,9 @@ Two folders are mapped into the sandbox; the first (SandboxScripts) contains VSC
 
 With the Visual Studio Code installer script already mapped into the sandbox, the LogonCommand can reference it.
 
-*VSCodeInstall.cmd*
+### VSCodeInstall.cmd
 
-```console
+```batch
 REM Download Visual Studio Code
 curl -L "https://update.code.visualstudio.com/latest/win32-x64-user/stable" --output C:\users\WDAGUtilityAccount\Desktop\vscode.exe
 
@@ -195,7 +237,7 @@ REM Install and run Visual Studio Code
 C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
 ```
 
-*VSCode.wsb*
+### VSCode.wsb
 
 ```xml
 <Configuration>

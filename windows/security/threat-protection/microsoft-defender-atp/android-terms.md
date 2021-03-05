@@ -1,11 +1,11 @@
 ---
 title: Microsoft Defender ATP for Android Application license terms
-ms.reviewer:
+ms.reviewer: 
 description: Describes the Microsoft Defender ATP for Android license terms
-keywords: microsoft, defender, atp, android,license, terms, application, use, installation, service, feedback, scope, 
+keywords: microsoft, defender, atp, android,license, terms, application, use, installation, service, feedback, scope,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +17,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
+ms.technology: mde
 ---
 
-# Microsoft Defender ATP for Android application license terms
+# Microsoft Defender for Endpoint for Android application license terms
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Android](microsoft-defender-atp-android.md)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT DEFENDER ATP
+
+## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT DEFENDER FOR ENDPOINT
 
 These license terms ("Terms") are an agreement between Microsoft Corporation (or
 based on where you live, one of its affiliates) and you. Please read them. They
@@ -54,10 +58,10 @@ DO NOT USE THE APPLICATION.**
     1.  **Installation and Use.** You may install and use any number of copies
         of this application on Android enabled device or devices that you own
         or control. You may use this application with your company's valid
-        subscription of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) or
-        an online service that includes MDATP functionalities.
+        subscription of Microsoft Defender for Endpoint or
+        an online service that includes Microsoft Defender for Endpoint functionalities.
 
-    2.  **Updates.** Updates or upgrades to MDATP may be required for full
+    2.  **Updates.** Updates or upgrades to Microsoft Defender for Endpoint may be required for full
         functionality. Some functionality may not be available in all countries.
 
     3.  **Third-Party Programs.** The application may include third-party
@@ -139,6 +143,7 @@ DO NOT USE THE APPLICATION.**
     export laws and regulations that apply to the application. These laws
     include restrictions on destinations, end users, and end use. For more
     information,
+
     see [www.microsoft.com/exporting](https://www.microsoft.com/exporting).
 
 7.  **SUPPORT SERVICES.** Because this application is "as is," we may not

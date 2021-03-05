@@ -125,7 +125,7 @@ The following list shows the supported values:
 - 1 - Non-enterprise content embedded on enterprise sites are stopped from opening in Internet Explorer or Microsoft Edge outside of Microsoft Defender Application Guard.
 
 > [!NOTE]
-> This policy setting is no longer supported in the new Microsoft Edge browser. The policy will be deprecated and removed in a future release. 
+> This policy setting is no longer supported in the new Microsoft Edge browser. The policy will be deprecated and removed in a future release. Webpages that contain mixed content, both enterprise and non-enterprise, may load incorrectly or fail completely if this feature is enabled.
 
 <!--ADMXMapped-->
 ADMX Info:  

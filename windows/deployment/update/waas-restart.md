@@ -1,6 +1,6 @@
 ---
 title: Manage device restarts after updates (Windows 10)
-description: Use Group Policy settings, mobile device management (MDM) or Registry to configure when devices will restart after a Windows 10 update is installed.
+description: Use Group Policy settings, mobile device management (MDM), or Registry to configure when devices will restart after a Windows 10 update is installed.
 ms.prod: w10
 ms.mktglfcycl: deploy
 author: jaimeo
@@ -23,7 +23,7 @@ ms.custom:
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-You can use Group Policy settings, mobile device management (MDM) or Registry (not recommended) to configure when devices will restart after a Windows 10 update is installed. You can schedule update installation and set policies for restart, configure active hours for when restarts will not occur, or you can do both.
+You can use Group Policy settings, mobile device management (MDM), or Registry (not recommended) to configure when devices will restart after a Windows 10 update is installed. You can schedule update installation and set policies for restart, configure active hours for when restarts will not occur, or you can do both.
 
 ## Schedule update installation
 
@@ -77,11 +77,12 @@ MDM uses the [Update/ActiveHoursStart and Update/ActiveHoursEnd](https://msdn.mi
 
 ### Configuring active hours through Registry
 
-This method is not recommended, and should only be used when neither Group Policy or MDM are available.
+This method is not recommended, and should only be used when you can't use Group Policy or MDM.
 Any settings configured through Registry may conflict with any existing configuration that uses any of the methods mentioned above.
 
-You should set a combination of the following registry values, in order to configure active hours.
-Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate** use **SetActiveHours** to enable or disable active hours and **ActiveHoursStart**,**ActiveHoursEnd** to specify the range of active hours.
+Configure active hours by setting a combination of the following registry values:
+
+Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate** use **SetActiveHours** to enable or disable active hours and **ActiveHoursStart** and **ActiveHoursEnd** to specify the range of active hours.
 
 For a detailed description of these registry keys, see [Registry keys used to manage restart](#registry-keys-used-to-manage-restart).
 
@@ -100,7 +101,7 @@ To configure active hours max range through MDM, use [**Update/ActiveHoursMaxRan
 
 ## Limit restart delays
 
-After an update is installed, Windows 10 attempts automatic restart outside of active hours. If the restart does not succeed after 7 days (by default), the user will see a notification that restart is required. You can use the **Specify deadline before auto-restart for update installation** policy to change the delay from 7 days to a number of days between 2 and 14.
+After an update is installed, Windows 10 attempts automatic restart outside of active hours. If the restart does not succeed after seven days (by default), the user will see a notification that restart is required. You can use the **Specify deadline before auto-restart for update installation** policy to change the delay from seven days to any number of days between two and 14.
 
 ## Control restart notifications
 
@@ -137,7 +138,7 @@ In MDM, the warning reminder is configured using [**Update/ScheduleRestartWarnin
 
 ### Engaged restart
 
-Engaged restart is the period of time when users are required to schedule a restart. Initially, Windows will auto-restart outside of working hours. Once the set period ends (7 days by default), Windows transitions to user scheduled restarts.
+Engaged restart is the period of time when users are required to schedule a restart. Initially, Windows will auto-restart outside of working hours. Once the set period ends (seven days by default), Windows transitions to user scheduled restarts.
 
 The following settings can be adjusted for engaged restart:
 * Period of time before auto-restart transitions to engaged restart.
@@ -183,23 +184,22 @@ The following tables list registry values that correspond to the Group Policy se
 
 | Registry key | Key type | Value |
 | --- | --- | --- |
-| AlwaysAutoRebootAtScheduledTime | REG_DWORD | 0: disable automatic reboot after update installation at scheduled time</br>1: enable automatic reboot after update installation at ascheduled time |
+| AlwaysAutoRebootAtScheduledTime | REG_DWORD | 0: disable automatic reboot after update installation at scheduled time</br>1: enable automatic reboot after update installation at a scheduled time |
 | AlwaysAutoRebootAtScheduledTimeMinutes | REG_DWORD | 15-180: set automatic reboot to occur after given minutes |
 | AUOptions | REG_DWORD | 2: notify for download and notify for installation of updates</br>3: automatically download and notify for installation of updates</br>4: Automatically download and schedule installation of updates</br>5: allow the local admin to configure these settings</br>**Note:** To configure restart behavior, set this value to **4** |
-| NoAutoRebootWithLoggedOnUsers | REG_DWORD | 0: disable do not reboot if users are logged on</br>1: do not reboot after an update installation if a user is logged on</br>**Note:** If disabled : Automatic Updates will notify the user that the computer will automatically restart in 5 minutes to complete the installation  |
+| NoAutoRebootWithLoggedOnUsers | REG_DWORD | 0: disable do not reboot if users are logged on</br>1: do not reboot after an update installation if a user is logged on</br>**Note:** If disabled: Automatic Updates will notify the user that the computer will automatically restart in 5 minutes to complete the installation  |
 | ScheduledInstallTime | REG_DWORD | 0-23: schedule update installation time to a specific hour</br>starts with 12 AM (0) and ends with 11 PM (23) |
 
-There are 3 different registry combinations for controlling restart behavior:
+There are three different registry combinations for controlling restart behavior:
 
 - To set active hours, **SetActiveHours** should be **1**, while **ActiveHoursStart** and **ActiveHoursEnd** should define the time range.
-- To schedule a specific installation and reboot time, **AUOptions** should be **4**, **ScheduledInstallTime** should specify the installation time, **AlwaysAutoRebootAtScheduledTime** set to **1** and **AlwaysAutoRebootAtScheduledTimeMinutes** should specify number of minutes to wait before rebooting.
+- To schedule a specific installation and reboot time, **AUOptions** should be **4**, **ScheduledInstallTime** should specify the installation time, and **AlwaysAutoRebootAtScheduledTime** set to **1** and **AlwaysAutoRebootAtScheduledTimeMinutes** should specify number of minutes to wait before rebooting.
 - To delay rebooting if a user is logged on, **AUOptions** should be **4**, while **NoAutoRebootWithLoggedOnUsers** is set to **1**.
 
-## Related topics
+## Related articles
 
 - [Update Windows 10 in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)
-- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)

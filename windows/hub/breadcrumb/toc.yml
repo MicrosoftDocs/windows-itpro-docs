@@ -27,7 +27,7 @@
               topicHref: /windows/client-management/mdm/index
         - name: Release information
           tocHref: /windows/release-information/
-          topicHref: /windows/release-information/index
+          topicHref: /windows/release-health/release-information
         - name: Privacy
           tocHref: /windows/privacy/
           topicHref: /windows/privacy/index

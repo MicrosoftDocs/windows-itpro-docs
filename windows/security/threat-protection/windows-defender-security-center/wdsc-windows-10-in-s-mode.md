@@ -3,7 +3,7 @@ title: Manage Windows Security in Windows 10 in S mode
 description: Learn how to manage Windows Security settings in Windows 10 in S mode. Windows 10 in S mode is streamlined for tighter security and superior performance.
 keywords: windows 10 in s mode, windows 10 s, windows 10 s mode, wdav, smartscreen, antivirus, wdsc, firewall, device health, performance, Edge, browser, family, parental options, security, windows
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,6 +13,7 @@ ms.author: dansimp
 ms.date: 04/30/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Manage Windows Security in Windows 10 in S mode

@@ -1,10 +1,10 @@
 ---
 title: Advanced Hunting with PowerShell API Guide
 ms.reviewer: 
-description: Use these code samples, querying several Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
+description: Use these code samples, querying several Microsoft Defender for Endpoint APIs.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,24 +13,31 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: article 
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 09/24/2018
+ms.technology: mde
 ---
 
-# Microsoft Defender ATP APIs using PowerShell
+# Microsoft Defender for Endpoint APIs using PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Full scenario using multiple APIs from Microsoft Defender ATP.
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+
+Full scenario using multiple APIs from Microsoft Defender for Endpoint.
 
 In this section, we share PowerShell samples to 
 - Retrieve a token 
-- Use token to retrieve the latest alerts in Microsoft Defender ATP
+- Use token to retrieve the latest alerts in Microsoft Defender for Endpoint
 - For each alert, if the alert has medium or high priority and is still in progress, check how many times the device has connected to suspicious URL.
 
 **Prerequisite**: You first need to [create an app](apis-intro.md).
@@ -49,9 +56,10 @@ For more information, see [PowerShell documentation](https://docs.microsoft.com/
 
 Run the below:
 
-- $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
-- $appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
+- $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
+- $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
 - $appSecret: Secret of your Azure AD app
+
 - $suspiciousUrl: The URL
 
 
@@ -62,7 +70,7 @@ $appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret 
 $suspiciousUrl = 'www.suspiciousUrl.com' # Paste your own URL here
 
 $resourceAppIdUri = 'https://securitycenter.onmicrosoft.com/windowsatpservice'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"
     client_id = "$appId"
@@ -74,7 +82,7 @@ $aadToken = $authResponse.access_token
 
 
 #Get latest alert
-$alertUrl = "https://api.securitycenter.windows.com/api/alerts?`$top=10"
+$alertUrl = "https://api.securitycenter.microsoft.com/api/alerts?`$top=10"
 $headers = @{ 
     'Content-Type' = 'application/json'
     Accept = 'application/json'
@@ -107,7 +115,7 @@ $query = "NetworkCommunicationEvents
 | where RemoteUrl  == `"$suspiciousUrl`"
 | summarize ConnectionsCount = count() by MachineId"
 
-$queryUrl = "https://api.securitycenter.windows.com/api/advancedqueries/run"
+$queryUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 
 $queryBody = ConvertTo-Json -InputObject @{ 'Query' = $query }
 $queryResponse = Invoke-WebRequest -Method Post -Uri $queryUrl -Headers $headers -Body $queryBody -ErrorAction Stop
@@ -116,7 +124,7 @@ $response
 ```
 
 
-## Related topic
-- [Microsoft Defender ATP APIs](apis-intro.md)
+## See also
+- [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)

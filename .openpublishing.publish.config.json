@@ -390,7 +390,7 @@
     "elizapo@microsoft.com"
   ],
   "sync_notification_subscribers": [
-    "daniha@microsoft.com"
+    "dstrome@microsoft.com"
   ],
   "branches_to_filter": [
     ""
@@ -431,9 +431,9 @@
       "template_folder": "_themes.pdf"
     }
   },
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
   "docs_build_engine": {
     "name": "docfx_v3"
-  }
+  },
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false
 }

@@ -4,7 +4,7 @@ description: Control updates for Microsoft Defender ATP for Mac in enterprise en
 keywords: microsoft, defender, atp, mac, updates, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,23 +14,28 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# Deploy updates for Microsoft Defender ATP for Mac
+# Deploy updates for Microsoft Defender for Endpoint for Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
-To update Microsoft Defender ATP for Mac, a program named Microsoft AutoUpdate (MAU) is used. By default, MAU automatically checks for updates daily, but you can change that to weekly, monthly, or manually.
+To update Microsoft Defender for Endpoint for Mac, a program named Microsoft AutoUpdate (MAU) is used. By default, MAU automatically checks for updates daily, but you can change that to weekly, monthly, or manually.
 
 ![MAU screenshot](../microsoft-defender-antivirus/images/MDATP-34-MAU.png)
 
@@ -40,7 +45,7 @@ If you decide to deploy updates by using your software distribution tools, you s
 
 MAU includes a command-line tool, called *msupdate*, that is designed for IT administrators so that they have more precise control over when updates are applied. Instructions for how to use this tool can be found in [Update Office for Mac by using msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
 
-In MAU, the application identifier for Microsoft Defender ATP for Mac is *WDAV00*. To download and install the latest updates for Microsoft Defender ATP for Mac, execute the following command from a Terminal window:
+In MAU, the application identifier for Microsoft Defender for Endpoint for Mac is *WDAV00*. To download and install the latest updates for Microsoft Defender for Endpoint for Mac, execute the following command from a Terminal window:
 
 ```
 ./msupdate --install --apps wdav00
@@ -67,7 +72,7 @@ The `Production` channel contains the most stable version of the product.
 | **Possible values** | InsiderFast <br/> External <br/> Production |
 
 >[!WARNING]
->This setting changes the channel for all applications that are updated through Microsoft AutoUpdate. To change the channel only for Microsoft Defender ATP for Mac, execute the following command after replacing `[channel-name]` with the desired channel:
+>This setting changes the channel for all applications that are updated through Microsoft AutoUpdate. To change the channel only for Microsoft Defender for Endpoint for Mac, execute the following command after replacing `[channel-name]` with the desired channel:
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```

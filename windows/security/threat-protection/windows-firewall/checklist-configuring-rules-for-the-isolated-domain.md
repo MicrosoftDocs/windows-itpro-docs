@@ -4,7 +4,7 @@ description: Use these tasks to configure connection security rules and IPsec se
 ms.assetid: bfd2d29e-4011-40ec-a52e-a67d4af9748e
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Checklist: Configuring Rules for the Isolated Domain

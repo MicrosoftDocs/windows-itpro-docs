@@ -7,7 +7,7 @@ ms.mktglfcycl: Explore
 ms.pagetype: security
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -84,7 +84,7 @@ These requirements help protect you from rootkits while allowing you to run any 
 -  **Configure UEFI to trust your custom bootloader.** All Certified For Windows 10 PCs allow you to trust a non-certified bootloader by adding a signature to the UEFI database, allowing you to run any operating system, including homemade operating systems.
 -  **Turn off Secure Boot.** All Certified For Windows 10 PCs allow you to turn off Secure Boot so that you can run any software. This does not help protect you from bootkits, however.
 
-To prevent malware from abusing these options, the user must manually configure the UEFI firmware to trust a non-certified bootloader or to turn off Secure Boot. Software cannot change the Secure Boot settings. For more information about Secure Boot, read the blog, [Protecting the pre-OS environment with UEFI](https://blogs.msdn.com/b/b8/archive/2011/09/22/protecting-the-pre-os-environment-with-uefi.aspx).
+To prevent malware from abusing these options, the user must manually configure the UEFI firmware to trust a non-certified bootloader or to turn off Secure Boot. Software cannot change the Secure Boot settings.
 
 Like most mobile devices, ARM-based Certified For Windows RT devices, such as the Microsoft Surface RT device, are designed to run only Windows 8.1. Therefore, Secure Boot cannot be turned off, and you cannot load a different operating system. Fortunately, there is a large market of ARM devices designed to run other operating systems.
 
