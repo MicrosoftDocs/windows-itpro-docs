@@ -91,6 +91,7 @@ For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & 
 - Windows 10 (Pro or Enterprise) version 1703 or later installed on the devices to be upgraded.
 - Azure Active Directory (Azure AD) available for identity management.
 - Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
+- Windows 10 per user licensing is not available for per device based licensing.
 
 For Microsoft customers that do not have EA or MPSA, you can obtain Windows 10 Enterprise E3/E5 or A3/A5 through a cloud solution provider (CSP). Identity management and device requirements are the same when you use CSP to manage licenses, with the exception that Windows 10 Enterprise E3 is also available through CSP to devices running Windows 10, version 1607. For more information about obtaining Windows 10 Enterprise E3 through your CSP, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
 
