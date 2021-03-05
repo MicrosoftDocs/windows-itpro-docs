@@ -257,6 +257,30 @@ Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
+## Testing
+
+Run a detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on a newly onboarded device:
+
+- Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
+
+    ```bash
+    mdatp health --field real_time_protection_enabled
+    ```
+
+- Open a Terminal window. Copy and execute the following command:
+
+    ```bash
+    curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+    ```
+
+- The file should have been quarantined by Defender for Endpoint for Linux. Use the following command to list all the detected threats:
+
+    ```bash
+    mdatp threat list
+    ```
+
+If the test file isn't detected and quarantined, it might be labeled as an allowed threat. See the [allowedThreats](linux-preferences.md#allowed-threats) option and the structure of the configuration profile at [Set preferences for Microsoft Defender for Endpoint for Linux](linux-preferences.md).
+
 ## Log installation issues
 
 See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
