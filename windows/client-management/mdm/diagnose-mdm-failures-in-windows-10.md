@@ -112,8 +112,8 @@ Example: Export the Debug logs
 </SyncML>
 ```
 
-## Collect logs from Windows 10 Mobile devices
-
+<!--## Collect logs from Windows 10 Mobile devices-->
+<!--
 Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medic](https://www.microsoft.com/p/field-medic/9wzdncrfjb82?activetab=pivot%3aoverviewtab) app to collect logs.
 
 **To collect logs manually**
@@ -182,11 +182,11 @@ The following table contains a list of common providers and their corresponding 
 | e5fc4a0f-7198-492f-9b0f-88fdcbfded48 | Microsoft-Windows Networking VPN                       |
 | e5c16d49-2464-4382-bb20-97a4b5465db9 | Microsoft-Windows-WiFiNetworkManager                   |
 
- 
+--> 
 
-## Collect logs remotely from Windows 10 Holographic or Windows 10 Mobile devices
+## Collect logs remotely from Windows 10 Holographic 
 
-For holographic or mobile devices already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
+For holographic already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
 
 You can use the DiagnosticLog CSP to enable the ETW provider. The provider ID is 3DA494E4-0FE2-415C-B895-FB5265C5C83B. The following examples show how to enable the ETW provider:
 
