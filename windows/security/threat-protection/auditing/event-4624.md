@@ -2,7 +2,7 @@
 title: 4624(S) An account was successfully logged on. (Windows 10)
 description: Describes security event 4624(S) An account was successfully logged on.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4624(S): An account was successfully logged on.
@@ -156,7 +157,7 @@ This event generates when a logon session is created (on destination machine). I
 |  `9`       | `NewCredentials`    | A caller cloned its current token and specified new credentials for outbound connections. The new logon session has the same local identity, but uses different credentials for other network connections.                                                                                                                 |
 | `10`       | `RemoteInteractive` | A user logged on to this computer remotely using Terminal Services or Remote Desktop.                                                                                                                                                                                                                                      |
 | `11`       | `CachedInteractive` | A user logged on to this computer with network credentials that were stored locally on the computer. The domain controller was not contacted to verify the credentials.                                                                                                                                                    |
-| `12`       | `CashedRemoteInteractive` | Same as RemoteInteractive. This is used for internal auditing.                                                                                                                                                                                                                                                        |
+| `12`       | `CachedRemoteInteractive` | Same as RemoteInteractive. This is used for internal auditing.                                                                                                                                                                                                                                                        |
 | `13`       | `CachedUnlock` | Workstation logon.                                                                                                                                                                                                                                                                                                             |
 
 -   **Restricted Admin Mode** \[Version 2\] \[Type = UnicodeString\]**:** Only populated for **RemoteInteractive** logon type sessions. This is a Yes/No flag indicating if the credentials provided were passed using Restricted Admin mode. Restricted Admin mode was added in Win8.1/2012R2 but this flag was added to the event in Win10.

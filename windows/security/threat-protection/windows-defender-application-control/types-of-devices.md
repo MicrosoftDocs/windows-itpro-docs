@@ -3,7 +3,7 @@ title: Policy creation for common WDAC usage scenarios (Windows 10)
 description: Develop a plan for deploying Windows Defender Application Control (WDAC) in your organization based on these common scenarios.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 03/01/2018
+ms.technology: mde
 ---
 
 # Windows Defender Application Control deployment in different scenarios: types of devices
@@ -41,7 +42,7 @@ In the next set of topics, we will explore each of the above scenarios using a f
 
 Lamna Healthcare Company (Lamna) is a large healthcare provider operating in the United States. Lamna employs thousands of people, from doctors and nurses to accountants, in-house lawyers, and IT technicians. Their device use cases are varied and include single-user workstations for their professional staff, shared kiosks used by doctors and nurses to access patient records, dedicated medical devices such as MRI scanners, and many others. Additionally, Lamna has a relaxed, bring-your-own-device policy for many of their professional staff.
 
-Lamna uses [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) (MEM) in hybrid mode with both Configuration Manager (MEMCM) and Intune. Although they use MEM to deploy many applications, Lamna has always had very relaxed application usage practices: individual teams and employees have been able to install and use any applications they deem necessary for their role on their own workstations. Lamna also recently started to use [Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (MDATP) for better endpoint detection and response.
+Lamna uses [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) (MEM) in hybrid mode with both Configuration Manager (MEMCM) and Intune. Although they use MEM to deploy many applications, Lamna has always had very relaxed application usage practices: individual teams and employees have been able to install and use any applications they deem necessary for their role on their own workstations. Lamna also recently started to use [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) for better endpoint detection and response.
 
 > [!NOTE]
 > Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager. 

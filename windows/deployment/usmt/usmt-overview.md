@@ -51,11 +51,3 @@ There are some scenarios in which the use of USMT is not recommended. These incl
 
 ## Related topics
 - [User State Migration Tool (USMT) Technical Reference](usmt-technical-reference.md)
-
-
- 
-
-
-
-
-

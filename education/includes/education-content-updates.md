@@ -2,10 +2,10 @@
 
 
 
-## Week of October 19, 2020
+## Week of January 11, 2021
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 10/22/2020 | [Microsoft 365 Education Documentation for developers](/education/developers) | modified |
-| 10/22/2020 | [Windows 10 editions for education customers](/education/windows/windows-editions-for-education-customers) | modified |
+| 1/14/2021 | [Chromebook migration guide (Windows 10)](/education/windows/chromebook-migration-guide) | modified |
+| 1/14/2021 | [Deploy Windows 10 in a school district (Windows 10)](/education/windows/deploy-windows-10-in-a-school-district) | modified |

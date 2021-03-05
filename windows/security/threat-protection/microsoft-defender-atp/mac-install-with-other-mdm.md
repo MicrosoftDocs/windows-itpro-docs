@@ -4,7 +4,7 @@ description: Install Microsoft Defender ATP for Mac on other management solution
 keywords: microsoft, defender, atp, mac, installation, deploy, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,32 +14,35 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender ATP for Mac
+# Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint for Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## Prerequisites and system requirements
 
-Before you get started, see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Microsoft Defender for Endpoint for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Approach
 
 > [!CAUTION]
-> Currently, Microsoft oficially supports only Intune and JAMF for the deployment and management of Microsoft Defender ATP for Mac. Microsoft makes no warranties, express or implied, with respect to the information provided below.
+> Currently, Microsoft oficially supports only Intune and JAMF for the deployment and management of Microsoft Defender for Endpoint for Mac. Microsoft makes no warranties, express or implied, with respect to the information provided below.
 
-If your organization uses a Mobile Device Management (MDM) solution that is not officially supported, this does not mean you are unable to deploy or run Microsoft Defender ATP for Mac.
+If your organization uses a Mobile Device Management (MDM) solution that is not officially supported, this does not mean you are unable to deploy or run Microsoft Defender for Endpoint for Mac.
 
-Microsoft Defender ATP for Mac does not depend on any vendor-specific features. It can be used with any MDM solution that supports the following features:
+Microsoft Defender for Endpoint for Mac does not depend on any vendor-specific features. It can be used with any MDM solution that supports the following features:
 
 - Deploy a macOS .pkg to managed devices.
 - Deploy macOS system configuration profiles to managed devices.
@@ -66,7 +69,7 @@ In order to deploy the package to your enterprise, use the instructions associat
 ### License settings
 
 Set up [a system configuration profile](mac-install-with-jamf.md). 
-Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender ATP for Mac is not part of macOS.
+Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender for Endpoint for Mac is not part of macOS.
 
 Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).
 Your system may support an arbitrary property list in XML format. You can upload the jamf/WindowsDefenderATPOnboarding.plist file as-is in that case.
@@ -90,19 +93,19 @@ Set up a system extension policy. Use team identifier **UBF8T346G9** and approve
 
 Grant Full Disk Access to the following components:
 
-- Microsoft Defender ATP
+- Microsoft Defender for Endpoint
     - Identifier: `com.microsoft.wdav`
     - Identifier Type: Bundle ID
     - Code Requirement: identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /\* exists \*/ and certificate leaf[field.1.2.840.113635.100.6.1.13] /\* exists \*/ and certificate leaf[subject.OU] = UBF8T346G9
 
-- Microsoft Defender ATP Endpoint Security Extension
+- Microsoft Defender for Endpoint Security Extension
     - Identifier: `com.microsoft.wdav.epsext`
     - Identifier Type: Bundle ID
     - Code Requirement: identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9
 
 ### Network extension policy
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender ATP for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
 
 - Filter type: Plugin
 - Plugin bundle identifier: `com.microsoft.wdav`
@@ -112,4 +115,4 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 
 ## Check installation status
 
-Run [mdatp](mac-install-with-jamf.md) on a client device to check the onboarding status.
+Run [Microsoft Defender for Endpoint](mac-install-with-jamf.md) on a client device to check the onboarding status.

@@ -3,7 +3,7 @@ title: Microsoft Defender Offline in Windows 10
 description: You can use Microsoft Defender Offline straight from the Windows Defender Antivirus app. You can also manage how it is deployed in your network.
 keywords: scan, defender, offline
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,6 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Run and review the results of a Microsoft Defender Offline scan
@@ -22,7 +23,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender Offline is an antimalware scanning tool that lets you boot and run a scan from a trusted environment. The scan runs from outside the normal Windows kernel so it can target malware that attempts to bypass the Windows shell, such as viruses and rootkits that infect or overwrite the master boot record (MBR).
 
@@ -58,7 +59,7 @@ See the [Manage Microsoft Defender Antivirus Security intelligence  updates](man
 
 In Windows 10, version 1607, you can manually force an offline scan. Alternatively, if Windows Defender determines that Microsoft Defender Offline needs to run, it will prompt the user on the endpoint. 
 
-The need to perform an offline scan will also be revealed in Microsoft Endpoint Configuration Manager if you're using it to manage your endpoints.
+The need to perform an offline scan will also be revealed in Microsoft Endpoint Manager if you're using it to manage your endpoints.
 
 The prompt can occur via a notification, similar to the following:
 
@@ -70,7 +71,7 @@ In Configuration Manager, you can identify the status of endpoints by navigating
 
 Microsoft Defender Offline scans are indicated under **Malware remediation status** as **Offline scan required**.
 
-![Microsoft Endpoint Configuration Manager indicating a Microsoft Defender Offline scan is required](images/defender/sccm-wdo.png)
+![Microsoft Endpoint Manager indicating a Microsoft Defender Offline scan is required](images/defender/sccm-wdo.png)
 
 ## Configure notifications
 <a name="manage-notifications"></a>

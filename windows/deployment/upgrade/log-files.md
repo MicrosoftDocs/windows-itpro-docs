@@ -1,10 +1,11 @@
 ---
-title: Log files - Windows IT Pro
+title: Log files and resolving upgrade errors
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Learn how to interpret the log files generated during the Windows 10 upgrade process. 
+description: Learn how to interpret and analyze the log files that are generated during the Windows 10 upgrade process. 
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
