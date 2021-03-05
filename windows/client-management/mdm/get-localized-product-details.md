@@ -1,6 +1,6 @@
 ---
 title: Get localized product details
-description: The Get localized product details operation retrieves the localization information of a product from the Micosoft Store for Business.
+description: The Get localized product details operation retrieves the localization information of a product from the Microsoft Store for Business.
 ms.assetid: EF6AFCA9-8699-46C9-A3BB-CD2750C07901
 ms.reviewer: 
 manager: dansimp
@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 09/18/2017
+ms.date: 12/07/2020
 ---
 
 # Get localized product details
 
-The **Get localized product details** operation retrieves the localization information of a product from the Micosoft Store for Business.
+The **Get localized product details** operation retrieves the localization information of a product from the Microsoft Store for Business.
 
 ## Request
 

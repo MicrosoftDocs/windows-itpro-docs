@@ -1,10 +1,10 @@
 ---
-title: Configure alert notifications in Microsoft Defender ATP
-description: You can use Microsoft Defender Advanced Threat Protection to configure email notification settings for security alerts, based on severity and other criteria.
+title: Configure alert notifications in Microsoft Defender for Endpoint
+description: You can use Microsoft Defender for Endpoint to configure email notification settings for security alerts, based on severity and other criteria.
 keywords: email notifications, configure alert notifications, microsoft defender atp notifications, microsoft defender atp alerts, windows 10 enterprise, windows 10 education
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,22 +13,22 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Configure alert notifications in Microsoft Defender ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
-
-You can configure Microsoft Defender ATP to send email notifications to specified recipients for new alerts. This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.
+You can configure Defender for Endpoint to send email notifications to specified recipients for new alerts. This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.
 
 > [!NOTE]
 > Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
@@ -57,7 +57,7 @@ You can create rules that determine the devices and alert severities to send ema
     - **Include device information** - Includes the device name in the email alert body.
     
         >[!NOTE]
-        > This information might be processed by recipient mail servers that ar not in the geographic location you have selected for your Microsoft Defender ATP data.
+        > This information might be processed by recipient mail servers that ar not in the geographic location you have selected for your Defender for Endpoint data.
 
     - **Devices** - Choose whether to notify recipients for alerts on all devices (Global administrator role only) or on selected device groups. For more information, see [Create and manage device groups](machine-groups.md).
     - **Alert severity** - Choose the alert severity level.
@@ -92,9 +92,9 @@ This section lists various issues that you may encounter when using email notifi
 
 **Solution:** Make sure that the notifications are not blocked by email filters:
 
-1. Check that the Microsoft Defender ATP email notifications are not sent to the Junk Email folder. Mark them as Not junk.
-2. Check that your email security product is not blocking the email notifications from Microsoft Defender ATP.
-3. Check your email application rules that might be catching and moving your Microsoft Defender ATP email notifications.
+1. Check that the Defender for Endpoint email notifications are not sent to the Junk Email folder. Mark them as Not junk.
+2. Check that your email security product is not blocking the email notifications from Defender for Endpoint.
+3. Check your email application rules that might be catching and moving your Defender for Endpoint email notifications.
 
 ## Related topics
 - [Update data retention settings](data-retention-settings.md)

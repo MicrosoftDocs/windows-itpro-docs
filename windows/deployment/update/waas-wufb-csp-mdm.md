@@ -105,7 +105,7 @@ Now all devices are paused from updating for 35 days. When the pause is removed,
 
 #### I want to stay on a specific version
 
-If you need a device to stay on a version beyond the point when deferrals on the next version would elapse or if you need to skip a version (for example, update fall release to fall release) use the [Update/TargetReleaseVersion](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-targetreleaseversion) (or Deploy Feature Updates Preview in Intune) instead of using feature update deferrals. When you use this policy, specify the version that you want your device(s) to move to or stay on (for example, "1909"). You can find version information at the [Windows 10 Release Information Page](https://docs.microsoft.com/windows/release-information/).
+If you need a device to stay on a version beyond the point when deferrals on the next version would elapse or if you need to skip a version (for example, update fall release to fall release) use the [Update/TargetReleaseVersion](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-targetreleaseversion) (or Deploy Feature Updates Preview in Intune) instead of using feature update deferrals. When you use this policy, specify the version that you want your device(s) to move to or stay on (for example, "1909"). You can find version information at the [Windows 10 Release Information Page](https://docs.microsoft.com/windows/release-health/release-information).
 
 ### Manage how users experience updates
 
@@ -205,8 +205,7 @@ If you use Windows Server Update Server (WSUS), you can prevent users from scann
 - [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Configure BranchCache for Windows 10 updates](waas-branchcache.md) 
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

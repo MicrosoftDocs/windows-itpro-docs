@@ -3,7 +3,7 @@ title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-pa
 description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
 keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,6 +13,7 @@ ms.custom: nextgen
 ms.date: 09/11/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
@@ -21,7 +22,8 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 
 You can find help here if you encounter issues while migrating from a third-party security solution to Microsoft Defender Antivirus.
 
@@ -49,7 +51,7 @@ This issue can manifest in the form of  several different event IDs, all of whic
 
 ### How to tell if Microsoft Defender Antivirus won't start because a third-party antivirus is installed
 
-On a Windows 10 device, if you are not using Microsoft Defender Advanced Threat Protection (ATP), and you have a third-party antivirus installed, then Microsoft Defender Antivirus will be automatically turned off. If you are using Microsoft Defender ATP with a third-party antivirus installed, Microsoft Defender Antivirus will start in passive mode, with reduced functionality.
+On a Windows 10 device, if you are not using Microsoft Defender for Endpoint, and you have a third-party antivirus installed, then Microsoft Defender Antivirus will be automatically turned off. If you are using Microsoft Defender for Endpoint with a third-party antivirus installed, Microsoft Defender Antivirus will start in passive mode, with reduced functionality.
 
 > [!TIP]
 > The scenario just described applies only to Windows 10. Other versions of Windows have [different responses](microsoft-defender-antivirus-compatibility.md) to Microsoft Defender Antivirus being run alongside third-party security software.
@@ -121,7 +123,7 @@ Microsoft Defender Antivirus will automatically turn on if no other antivirus is
 > [!WARNING]
 > Solutions suggesting that you edit the *Windows Defender* start values for *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc*, and *windefend* in  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services are unsupported, and may force you to re-image your system.
 
-Passive mode is available if you start using Microsoft Defender ATP and a third-party antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender to scan files and update itself, but it will not remediate threats. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) is not available under passive mode, unless [Endpoint data loss prevention (DLP)](../microsoft-defender-atp/information-protection-in-windows-overview.md) is deployed.
+Passive mode is available if you start using Microsoft Defender for Endpoint and a third-party antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender to scan files and update itself, but it will not remediate threats. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) is not available under passive mode, unless [Endpoint data loss prevention (DLP)](../microsoft-defender-atp/information-protection-in-windows-overview.md) is deployed.
 
 Another feature, known as [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), is available to end-users when Microsoft Defender Antivirus is set to automatically turn off. This feature allows Microsoft Defender Antivirus to scan files periodically alongside a third-party antivirus, using a limited number of detections.
 

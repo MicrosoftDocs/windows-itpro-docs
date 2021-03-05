@@ -9,7 +9,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -110,7 +110,7 @@ WIP is the mobile application management (MAM) mechanism on Windows 10. WIP give
 -   **Remove access to enterprise data from enterprise-protected devices.** WIP gives admins the ability to revoke enterprise data from one or many MDM-enrolled devices, while leaving personal data alone. This is a benefit when an employee leaves your company, or in the case of a stolen device. After determining that the data access needs to be removed, you can use Microsoft Intune to unenroll the device so when it connects to the network, the user's encryption key for the device is revoked and the enterprise data becomes unreadable.
 
     >[!NOTE]
-    >For management of Surface devices it is recommended that you use the Current Branch of Microsoft Endpoint Configuration Manager.<br>Microsoft Endpoint Configuration Manager also allows you to revoke enterprise data. However, it does it by performing a factory reset of the device.
+    >For management of Surface devices it is recommended that you use the Current Branch of Microsoft Endpoint Configuration Manager.<br>Microsoft Endpoint Manager also allows you to revoke enterprise data. However, it does it by performing a factory reset of the device.
 
 ## How WIP works
 WIP helps address your everyday challenges in the enterprise. Including:
