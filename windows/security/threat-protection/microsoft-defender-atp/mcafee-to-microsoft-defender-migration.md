@@ -32,7 +32,6 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 If you are planning to switch from McAfee Endpoint Security (McAfee) to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender for Endpoint), you're in the right place. Use this article as a guide.
 
-
 :::image type="content" source="images/mcafee-mde-migration.png" alt-text="Overview of migrating from McAfee to Defender for Endpoint":::
 
 When you make the switch from McAfee to Defender for Endpoint, you begin with your McAfee solution in active mode, configure Defender for Endpoint in passive mode, onboard to Defender for Endpoint, and then set Defender for Endpoint to active mode and remove McAfee.
