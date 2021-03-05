@@ -32,8 +32,8 @@ Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimi
 For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows 10 updates](waas-delivery-optimization-setup.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
 
 
->[!NOTE]
->WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
+> [!NOTE]
+> WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
 
 ## New in Windows 10, version 2004
 
@@ -67,6 +67,9 @@ For information about setting up Delivery Optimization, including tips for the b
     - MSIX apps (HTTP downloads only)
     - Edge browser installs and updates
     - [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) 
+
+> [!NOTE]
+> Volume-licensed versions of Office 2019, such as Office Professional Plus 2019, can take advantage of Delivery Optimization for background updates. Delivery Optimization isn't available for installation or for foreground updates. The same applies to volume-licensed versions of Project 2019 and Visio 2019.
 
 ## Requirements
 
