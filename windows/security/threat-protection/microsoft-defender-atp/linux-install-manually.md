@@ -161,6 +161,7 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
+
     For example, if you chose *prod* channel:
     
     ```bash
@@ -345,6 +346,8 @@ Download the onboarding package from Microsoft Defender Security Center:
         ```bash
         mdatp threat list
         ```
+
+    If the test file isn't detected and quarantined, it might be labeled as an allowed threat. See the [allowedThreats](linux-preferences.md#allowed-threats) option and the structure of the configuration profile at [Set preferences for Microsoft Defender for Endpoint for Linux](linux-preferences.md).
 
 ## Installer script
 
