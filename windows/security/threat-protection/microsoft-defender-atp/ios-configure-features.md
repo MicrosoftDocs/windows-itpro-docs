@@ -99,3 +99,10 @@ Defender for Endpoint for iOS enables admins to configure custom indicators on i
 ## Report unsafe site
 
 Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page if you want to report a website that could be a phishing site.
+
+## Battery Consumption issues on iOS when MDE is installed
+
+The battery usage by an app is computed by Apple based on a multitude of factors including CPU and Network usage. Microsoft Defender for Endpoint uses a local/loop-back VPN in the background to check web traffic for any malicious websites or connections. Network packets from any app goes through this check and iOS wrongly accounts this in computing the battery usage of Microsoft Defender for Endpoint. This gives a false impression to the user. The actual battery consumption of Microsoft Defender for Endpoint is lesser than what is shown on the Battery Settings page on the device. This is based on tests that we have done to understand battery consumption by our app.
+
+Also the VPN used is a local VPN and unlike traditional VPNs, network traffic is not sent outside the device.
+
