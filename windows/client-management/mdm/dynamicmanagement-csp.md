@@ -64,7 +64,7 @@ DynamicManagement
 <p style="margin-left: 20px">Supported operation is Get.</p>
 
 <a href="" id="contextid"></a>***ContextID***  
-<p style="margin-left: 20px">Node created by the server to define a context.  Maximum amount of characters allowed is 38.</p>
+<p style="margin-left: 20px">Node created by the server to define a context.  Maximum number of characters allowed is 38.</p>
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.</p>
 
 <a href="" id="signaldefinition"></a>**SignalDefinition**  
@@ -76,15 +76,15 @@ DynamicManagement
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="" id="settingspackresponse"></a>**SettingsPackResponse**  
-<p style="margin-left: 20px">Response from applying a Settings Pack that contains information on each individual action..</p>
+<p style="margin-left: 20px">Response from applying a Settings Pack that contains information on each individual action.</p>
 <p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
 
 <a href="" id="contextstatus"></a>**ContextStatus**  
-<p style="margin-left: 20px">Reports status of the context.  If there was a failure, SettingsPackResponse should be checked for what exactly failed..</p>
+<p style="margin-left: 20px">Reports status of the context.  If there was a failure, SettingsPackResponse should be checked for what exactly failed.</p>
 <p style="margin-left: 20px">Value type is integer. Supported operation is Get.</p>
 
 <a href="" id="altitude"></a>**Altitude**  
-<p style="margin-left: 20px">A value that determines how to handle conflict resolution of applying multiple contexts on the device. This is required and must be distinct of other priorities..</p>
+<p style="margin-left: 20px">A value that determines how to handle conflict resolution of applying multiple contexts on the device. This is required and must be distinct of other priorities.</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="" id="alertsenabled"></a>**AlertsEnabled**  
@@ -93,7 +93,7 @@ DynamicManagement
 
 ## Examples
 
-Disable Cortana based on Geo location and time, From 9am-5pm, when in the 100 meters radius of the specified latitude/longitude
+Disable Cortana based on Geo location and time, From 9am-5pm, when in the 100-meters radius of the specified latitude/longitude
 
 ```xml
     <Replace>
