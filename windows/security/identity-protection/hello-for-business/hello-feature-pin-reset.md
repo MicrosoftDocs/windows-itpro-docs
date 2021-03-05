@@ -60,7 +60,8 @@ Before you can remotely reset PINs, you must on-board the Microsoft PIN reset se
 
 5. In the [Azure portal](https://portal.azure.com), verify that the Microsoft PIN Reset Service and Microsoft PIN Reset Client are integrated from the **Enterprise applications** blade. Filter to application status "Enabled" and both Microsoft Pin Reset Service Production and Microsoft Pin Reset Client Production will show up in your tenant.
 
-   ![PIN reset service permissions page](images/pinreset/pin-reset-applications.png)
+   > [!div class="mx-imgBorder"]
+   > ![PIN reset service permissions page](images/pinreset/pin-reset-applications.png)
 
 ### Configure Windows devices to use PIN reset using Group Policy
 

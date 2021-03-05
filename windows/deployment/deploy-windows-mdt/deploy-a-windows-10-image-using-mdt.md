@@ -61,18 +61,19 @@ On **DC01**:
    ```
 
 The following is a list of the permissions being granted:
-    a.  Scope: This object and all descendant objects
-    b.  Create Computer objects
-    c.  Delete Computer objects
-    d.  Scope: Descendant Computer objects
-    e.  Read All Properties
-    f.  Write All Properties
-    g.  Read Permissions
-    h.  Modify Permissions
-    i.  Change Password
-    j.  Reset Password
-    k.  Validated write to DNS host name
-    l.  Validated write to service principal name
+
+- Scope: This object and all descendant objects
+- Create Computer objects
+- Delete Computer objects
+- Scope: Descendant Computer objects
+- Read All Properties
+- Write All Properties
+- Read Permissions
+- Modify Permissions
+- Change Password
+- Reset Password
+- Validated write to DNS host name
+- Validated write to service principal name
 
 ## Step 2: Set up the MDT production deployment share
 
@@ -85,11 +86,17 @@ On **MDT01**:
 The steps for creating the deployment share for production are the same as when you created the deployment share for creating the custom reference image:
 
 1. Ensure you are signed on as: contoso\administrator.
+
 2. In the **Deployment Workbench** console, right-click **Deployment Shares** and select **New Deployment Share**.
+
 3. On the **Path** page, in the **Deployment share path** text box, type **D:\\MDTProduction** and click **Next**.
+
 4. On the **Share** page, in the **Share name** text box, type **MDTProduction$** and click **Next**.
+
 5. On the **Descriptive Name** page, in the **Deployment share description** text box, type **MDT Production** and click **Next**.
+
 6. On the **Options** page, accept the default settings and click **Next** twice, and then click **Finish**.
+
 7. Using **File Explorer**, verify that you can access the **\\\\MDT01\\MDTProduction$** share.
 
 ### Configure permissions for the production deployment share
@@ -99,6 +106,7 @@ To read files in the deployment share, you need to assign **NTFS** and **SMB** p
 On **MDT01**:
 
 1.  Ensure you are signed in as **contoso\\administrator**.
+
 2.  Modify the **NTFS** permissions for the **D:\\MDTProduction** folder by running the following command in an elevated **Windows PowerShell prompt**:
 
     ``` powershell
@@ -115,11 +123,17 @@ The next step is to add a reference image into the deployment share with the set
 In these steps, we assume that you have completed the steps in the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic, so you have a Windows 10 reference image at **D:\\MDTBuildLab\\Captures\REFW10X64-001.wim** on **MDT01**.
 
 1.  Using the **Deployment Workbench**, expand the **Deployment Shares** node, and then expand **MDT Production**; select the **Operating Systems** node, and create a **folder** named **Windows 10**.
+
 2.  Right-click the **Windows 10** folder and select **Import Operating System**.
+
 3.  On the **OS Type** page, select **Custom image file** and click **Next**.
+
 4.  On the **Image** page, in the **Source file** text box, browse to **D:\\MDTBuildLab\\Captures\\REFW10X64-001.wim** and click **Next**.
+
 5.  On the **Setup** page, select the **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path** option; in the **Setup source directory** text box, browse to **D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM** and click **Next**.
+
 6.  On the **Destination** page, in the **Destination directory name** text box, type **W10EX64RTM**, click **Next** twice, and then click **Finish**.
+
 7.  After adding the **Operating System**, double-click the added **Operating System** name in the **Operating Systems / Windows 10** node and change the name to **Windows 10 Enterprise x64 RTM Custom Image**.
 
 > [!NOTE]
@@ -137,19 +151,28 @@ When you configure your **MDT Build Lab deployment** share, you can also add **a
 On **MDT01**:
 
 1. Download the Enterprise distribution version of [**Adobe Acrobat Reader DC**](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2100120140_en_US.exe) to **D:\\setup\\adobe** on MDT01.
+
 2. Extract the **.exe** file that you downloaded to a **.msi** (ex: .\AcroRdrDC2100120140_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
+
 3. In the **Deployment Workbench**, expand the **MDT Production** node and navigate to the **Applications** node.
+
 4. Right-click the **Applications** node, and create a new folder named **Adobe**.
+
 5. In the **Applications** node, right-click the **Adobe** folder and select **New Application**.
+
 6. On the **Application Type** page, select the **Application with source files** option and click **Next**.
+
 7. On the **Details** page, in the **Application Name** text box, type **Install - Adobe Reader** and click *Next**.
+
 8. On the **Source** page, in the **Source Directory** text box, browse to **D:\\setup\\adobe\\install** and click **Next**.
+
 9. On the **Destination** page, in the **Specify the name of the directory that should be created** text box, type **Install - Adobe Reader** and click **Next**.
+
 10. On the **Command Details** page, in the **Command Line** text box, type **msiexec /i AcroRead.msi /q**, click **Next** twice, and then click **Finish**.
 
-![acroread image](../images/acroread.png)
+    ![acroread image](../images/acroread.png)
 
-The Adobe Reader application added to the Deployment Workbench.
+    The Adobe Reader application added to the Deployment Workbench.
 
 ## Step 5: Prepare the drivers repository
 
@@ -174,10 +197,12 @@ On **MDT01**:
 > In the steps below, it is critical that the folder names used for various computer makes and models exactly match the results of **wmic computersystem get model,manufacturer** on the target system.
 
 1.  Using **File Explorer**, create the **D:\\drivers** folder.
+
 2.  In the **D:\\drivers** folder, create the following folder structure:
-    1.  **WinPE x86**
-    2.  **WinPE x64**
-    3.  **Windows 10 x64**
+    - **WinPE x86**
+    - **WinPE x64**
+    - **Windows 10 x64**
+
 3.  In the new **Windows 10 x64** folder, create the following folder structure:
     -   Dell Inc
         -   Latitude E7450
@@ -195,10 +220,12 @@ On **MDT01**:
 
 When you import drivers to the **MDT driver repository**, **MDT** creates a single instance folder structure based on driver class names. However, you can, and should, mimic the driver structure of your driver source repository in the Deployment Workbench. This is done by creating logical folders in the Deployment Workbench.
 1.  On **MDT01**, using Deployment Workbench, select the **Out-of-Box Drivers** node.
+
 2.  In the **Out-Of-Box Drivers** node, create the following folder structure:
-    1.  **WinPE x86**
-    2.  **WinPE x64**
-    3.  **Windows 10 x64**
+    - **WinPE x86**
+    - **WinPE x64**
+    - **Windows 10 x64**
+
 3.  In the **Windows 10 x64** folder, create the following folder structure:
     -   Dell Inc
         -   Latitude E7450
@@ -235,19 +262,22 @@ The drivers that are used for the boot images (Windows PE) are Windows 10 driver
 On **MDT01**:
 
 1.  In the **Deployment Workbench**, under the **MDT Production** node, expand the **Advanced Configuration** node, right-click the **Selection Profiles** node, and select **New Selection Profile**.
+
 2.  In the **New Selection Profile Wizard**, create a **selection profile** with the following settings:
-    1.  Selection Profile name: **WinPE x86**
-    2.  Folders: Select the **WinPE x86 folder** in **Out-of-Box Drivers**.
-    3. Click **Next**, **Next**, and **Finish**.
+    - Selection Profile name: **WinPE x86**
+    - Folders: Select the **WinPE x86 folder** in **Out-of-Box Drivers**.
+    - Click **Next**, **Next**, and **Finish**.
+
 3.  Right-click the **Selection Profiles** node again, and select **New Selection Profile**.
+
 4.  In the **New Selection Profile Wizard**, create a **selection profile** with the following settings:
-    1.  Selection Profile name: **WinPE x64**
-    2.  Folders: Select the **WinPE x64 folder** in **Out-of-Box Drivers**.
-    3.  Click **Next**, **Next**, and **Finish**.
+    - Selection Profile name: **WinPE x64**
+    - Folders: Select the **WinPE x64 folder** in **Out-of-Box Drivers**.
+    - Click **Next**, **Next**, and **Finish**.
 
-![figure 5](../images/fig5-selectprofile.png)
+    ![figure 5](../images/fig5-selectprofile.png)
 
-Creating the WinPE x64 selection profile.
+    Creating the WinPE x64 selection profile.
 
 ### Extract and import drivers for the x64 boot image
 
@@ -256,9 +286,13 @@ Creating the WinPE x64 selection profile.
 On **MDT01**:
 
 1. Download **PROWinx64.exe** from Intel.com (ex: [PROWinx64.exe](https://downloadcenter.intel.com/downloads/eula/25016/Intel-Network-Adapter-Driver-for-Windows-10?httpDown=https%3A%2F%2Fdownloadmirror.intel.com%2F25016%2Feng%2FPROWinx64.exe)).
+
 2.  Extract **PROWinx64.exe** to a temporary folder - in this example to the **C:\\Tmp\\ProWinx64** folder. Note that extracting the **.exe** file manually requires an extraction utility. You can also run the .exe and it will self-extract files to the **%userprofile%\AppData\Local\Temp\RarSFX0** directory. This directory is temporary and will be deleted when the **.exe** terminates.
+
 3.  Using **File Explorer**, create the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
+
 4.  Copy the content of the **C:\\Tmp\\PROWinx64\\PRO1000\\Winx64\\NDIS64** folder to the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
+
 5.  In the **Deployment Workbench**, expand the **MDT Production** > **Out-of-Box Drivers** node, right-click the **WinPE x64** node, select **Import Drivers**, and use the following driver source directory to import drivers: **D:\\Drivers\\WinPE x64\\Intel PRO1000**.
 
 ### Download, extract, and import drivers
@@ -277,9 +311,12 @@ In this example, we assume you have downloaded and extracted the drivers using T
 On **MDT01**:
 
 1. In the Deployment Workbench, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Lenovo** node.
-2.  Right-click the **30A6003TUS** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Lenovo\\ThinkStation P500 (30A6003TUS)**
 
-The folder you select and all sub-folders will be checked for drivers, expanding any .cab files that are present and searching for drivers.
+2.  Right-click the **30A6003TUS** folder and select **Import Drivers** and use the following Driver source directory to import drivers: 
+
+    **D:\\Drivers\\Windows 10 x64\\Lenovo\\ThinkStation P500 (30A6003TUS)**
+
+    The folder you select and all sub-folders will be checked for drivers, expanding any .cab files that are present and searching for drivers.
 
 ### For the Latitude E7450
 
@@ -290,7 +327,10 @@ In these steps, we assume you have downloaded and extracted the CAB file for the
 On **MDT01**:
 
 1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Dell Inc** node.
-2.  Right-click the **Latitude E7450** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Dell Inc\\Latitude E7450**
+
+2.  Right-click the **Latitude E7450** folder and select **Import Drivers** and use the following Driver source directory to import drivers: 
+
+    **D:\\Drivers\\Windows 10 x64\\Dell Inc\\Latitude E7450**
 
 ### For the HP EliteBook 8560w
 
@@ -301,7 +341,10 @@ In these steps, we assume you have downloaded and extracted the drivers for the 
 On **MDT01**:
 
 1.  In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Hewlett-Packard** node.
-2.  Right-click the **HP EliteBook 8560w** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w**
+
+2.  Right-click the **HP EliteBook 8560w** folder and select **Import Drivers** and use the following Driver source directory to import drivers: 
+
+    **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w**
 
 ### For the Microsoft Surface Laptop
 
@@ -310,7 +353,10 @@ For the Microsoft Surface Laptop model, you find the drivers on the Microsoft we
 On **MDT01**:
 
 1.  In the Deployment Workbench, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Microsoft** node.
-2.  Right-click the **Surface Laptop** folder and select **Import Drivers**; and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Laptop**
+
+2.  Right-click the **Surface Laptop** folder and select **Import Drivers**; and use the following Driver source directory to import drivers: 
+
+    **D:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Laptop**
 
 ## Step 6: Create the deployment task sequence
 
@@ -321,17 +367,18 @@ This section will show you how to create the task sequence used to deploy your p
 On **MDT01**:
 
 1. In the Deployment Workbench, under the **MDT Production** node, right-click **Task Sequences**, and create a folder named **Windows 10**.
+
 2. Right-click the new **Windows 10** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
-   1. Task sequence ID: W10-X64-001
-   2. Task sequence name: Windows 10 Enterprise x64 RTM Custom Image
-   3. Task sequence comments: Production Image
-   4. Template: Standard Client Task Sequence
-   5. Select OS: Windows 10 Enterprise x64 RTM Custom Image
-   6. Specify Product Key: Do not specify a product key at this time
-   7. Full Name: Contoso
-   8. Organization: Contoso
-   9. Internet Explorer home page: https://www.contoso.com
-   10. Admin Password: Do not specify an Administrator Password at this time
+   - Task sequence ID: W10-X64-001
+   - Task sequence name: Windows 10 Enterprise x64 RTM Custom Image
+   - Task sequence comments: Production Image
+   - Template: Standard Client Task Sequence
+   - Select OS: Windows 10 Enterprise x64 RTM Custom Image
+   - Specify Product Key: Do not specify a product key at this time
+   - Full Name: Contoso
+   - Organization: Contoso
+   - Internet Explorer home page: https://www.contoso.com
+   - Admin Password: Do not specify an Administrator Password at this time
 
 ### Edit the Windows 10 task sequence
 

@@ -254,7 +254,8 @@ A new security policy setting
 
 We’ve continued to work on the **Current threats** area in  [Virus & threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
-![Virus & threat protection settings](../images/virus-and-threat-protection.png "Virus & threat protection settings")
+> [!div class="mx-imgBorder"]
+> ![Virus & threat protection settings](../images/virus-and-threat-protection.png "Virus & threat protection settings")
 
 ## Deployment
 
@@ -286,12 +287,17 @@ For details, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
 
 The following new DISM commands have been added to manage feature updates:
 
-| Command | Description |
-|---------|-------------|
-| **DISM /Online /Initiate-OSUninstall** | Initiates a OS uninstall to take the computer back to the previous installation of windows. |
-| **DISM /Online /Remove-OSUninstall** | Removes the OS uninstall capability from the computer. |
-| **DISM /Online /Get-OSUninstallWindow** | Displays the number of days after upgrade during which uninstall can be performed. |
-| **DISM /Online /Set-OSUninstallWindow** | Sets the number of days after upgrade during which uninstall can be performed. |
+- **DISM /Online /Initiate-OSUninstall**
+  - Initiates a OS uninstall to take the computer back to the previous installation of windows.
+
+- **DISM /Online /Remove-OSUninstall**
+  - Removes the OS uninstall capability from the computer.
+
+- **DISM /Online /Get-OSUninstallWindow**
+  - Displays the number of days after upgrade during which uninstall can be performed.
+
+- **DISM /Online /Set-OSUninstallWindow**
+  - Sets the number of days after upgrade during which uninstall can be performed.
 
 For more information, see [DISM operating system uninstall command-line options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-uninstallos-command-line-options).
 
@@ -307,17 +313,20 @@ For more information, see [Run custom actions during feature update](https://doc
 
 It is also now possible to run a script if the user rolls back their version of Windows using the PostRollback option.
 
-    `/PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]`
+`/PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]`
 
 For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#21)
 
 New command-line switches are also available to control BitLocker:
 
-| Command | Description |
-|---------|-------------|
-| **Setup.exe /BitLocker AlwaysSuspend** | Always suspend bitlocker during upgrade. |
-| **Setup.exe /BitLocker TryKeepActive** | Enable upgrade without suspending bitlocker but if upgrade, does not work then suspend bitlocker and complete the upgrade. |
-| **Setup.exe /BitLocker ForceKeepActive** | Enable upgrade without suspending bitlocker, but if upgrade does not work, fail the upgrade. |
+- **Setup.exe /BitLocker AlwaysSuspend**
+  - Always suspend bitlocker during upgrade.
+
+- **Setup.exe /BitLocker TryKeepActive**
+  - Enable upgrade without suspending bitlocker but if upgrade, does not work then suspend bitlocker and complete the upgrade.
+
+- **Setup.exe /BitLocker ForceKeepActive**
+  - Enable upgrade without suspending bitlocker, but if upgrade does not work, fail the upgrade.
 
 For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)
 
@@ -627,7 +636,9 @@ To get started, sign into your device using Windows Hello for Business. Bring up
 See the following example:
 
 ![Enter your credentials](../images/RDPwBioTime.png "Windows Hello")
+
 ![Enter your credentials](../images/RDPwBio2.png "Windows Hello personal")
+
 ![Microsoft Hyper-V Server 2016](../images/hyper-v.png "Microsoft Hyper-V Server 2016")
 
 ## See Also
