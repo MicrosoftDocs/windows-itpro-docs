@@ -46,6 +46,7 @@ These steps will show you how to configure an Active Directory account with the 
 On **DC01**:
 
 1. Download the [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copy it to the **C:\\Setup\\Scripts** directory on **DC01**.  This script configures permissions to allow the **MDT_JD** account to manage computer accounts in the contoso > Computers organizational unit.
+
 2. Create the **MDT_JD** service account by running the following command from an elevated **Windows PowerShell prompt**:
 
    ```powershell
@@ -383,25 +384,30 @@ On **MDT01**:
 ### Edit the Windows 10 task sequence
 
 1. Continuing from the previous procedure, right-click the **Windows 10 Enterprise x64 RTM Custom Image** task sequence, and select **Properties**.
-2. On the **Task Sequence** tab, configure the **Windows 10 Enterprise x64 RTM Custom Image** task sequence with the following settings:
-   1.  Preinstall: After the **Enable BitLocker (Offline)** action, add a **Set Task Sequence Variable** action with the following settings:
-       1.  Name: Set DriverGroup001
-       2.  Task Sequence Variable: DriverGroup001
-       3.  Value: Windows 10 x64\\%Make%\\%Model%
-   2.  Configure the **Inject Drivers** action with the following settings:
-       1.  Choose a selection profile: Nothing
-       2.  Install all drivers from the selection profile
 
-           >[!NOTE]
-           >The configuration above indicates that MDT should only use drivers from the folder specified by the DriverGroup001 property, which is defined by the "Choose a selection profile: Nothing" setting, and that MDT should not use plug and play to determine which drivers to copy, which is defined by the "Install all drivers from the selection profile" setting.
+2. On the **Task Sequence** tab, configure the **Windows 10 Enterprise x64 RTM Custom Image** task sequence with the following settings:
+
+   1.  Preinstall: After the **Enable BitLocker (Offline)** action, add a **Set Task Sequence Variable** action with the following settings:
+       - Name: Set DriverGroup001
+       - Task Sequence Variable: DriverGroup001
+       - Value: Windows 10 x64\\%Make%\\%Model%
+
+   2.  Configure the **Inject Drivers** action with the following settings:
+       - Choose a selection profile: Nothing
+       - Install all drivers from the selection profile
+
+       > [!NOTE]
+       > The configuration above indicates that MDT should only use drivers from the folder specified by the DriverGroup001 property, which is defined by the "Choose a selection profile: Nothing" setting, and that MDT should not use plug and play to determine which drivers to copy, which is defined by the "Install all drivers from the selection profile" setting.
              
    3.  State Restore. Enable the **Windows Update (Pre-Application Installation)** action.
+
    4.  State Restore. Enable the **Windows Update (Post-Application Installation)** action.
+
 3. Click **OK**.
 
-![drivergroup](../images/fig6-taskseq.png)
+   ![drivergroup](../images/fig6-taskseq.png)
 
-The task sequence for production deployment.
+   The task sequence for production deployment.
 
 ## Step 7: Configure the MDT production deployment share
 
@@ -474,12 +480,12 @@ On **MDT01**:
 
    In the **Lite Touch Boot Image Settings** area:
 
-     1.  Image description: MDT Production x86
-     2.  ISO file name: MDT Production x86.iso
+   - Image description: MDT Production x86
+   - ISO file name: MDT Production x86.iso
         
-     > [!NOTE]
-     > 
-     >Because you are going to use Pre-Boot Execution Environment (PXE) later to deploy the machines, you do not need the ISO file; however, we recommend creating ISO files because they are useful when troubleshooting deployments and for quick tests.
+   > [!NOTE]
+   > 
+   > Because you are going to use Pre-Boot Execution Environment (PXE) later to deploy the machines, you do not need the ISO file; however, we recommend creating ISO files because they are useful when troubleshooting deployments and for quick tests.
          
 6. On the **Drivers and Patches** sub tab, select the **WinPE x86** selection profile and select the **Include all drivers from the selection profile** option.
 
@@ -488,8 +494,9 @@ On **MDT01**:
 8. On the **General** sub tab, configure the following settings:
 
    In the **Lite Touch Boot Image Settings** area:
-       1.  Image description: MDT Production x64
-       2.  ISO file name: MDT Production x64.iso
+
+   - Image description: MDT Production x64
+   - ISO file name: MDT Production x64.iso
 
 9. In the **Drivers and Patches** sub tab, select the **WinPE x64** selection profile and select the **Include all drivers from the selection profile** option.
 
@@ -497,13 +504,12 @@ On **MDT01**:
 
 11. Click **OK**.
 
->[!NOTE]
->It will take a while for the Deployment Workbench to create the monitoring database and web service.
+    >[!NOTE]
+    >It will take a while for the Deployment Workbench to create the monitoring database and web service.
  
+    ![figure 8](../images/mdt-07-fig08.png)
 
-![figure 8](../images/mdt-07-fig08.png)
-
-The Windows PE tab for the x64 boot image.
+    The Windows PE tab for the x64 boot image.
 
 ### The rules explained
 
@@ -514,6 +520,7 @@ You can optionally remove the **UserID** and **UserPassword** entries from Boots
 ### The Bootstrap.ini file
 
 This is the MDT Production Bootstrap.ini:
+
 ``` 
 [Settings]
 Priority=Default
@@ -529,6 +536,7 @@ SkipBDDWelcome=YES
 ### The CustomSettings.ini file
 
 This is the CustomSettings.ini file with the new join domain information:
+
 ``` 
 [Settings]
 Priority=Default
@@ -734,9 +742,9 @@ On **MDT01**:
 3.  Right-click the **MDT Production** deployment share folder and select **Update Deployment Share**.
 4.  After updating the deployment share, use the Windows Deployment Services console to, verify that the multicast namespace was created.
 
-![figure 13](../images/mdt-07-fig15.png)
+    ![figure 13](../images/mdt-07-fig15.png)
 
-The newly created multicast namespace.
+    The newly created multicast namespace.
 
 ## Use offline media to deploy Windows 10
 
@@ -822,7 +830,7 @@ On **MDT01**:
 The ISO that you got when updating the offline media item can be burned to a DVD and used directly (it will be bootable), but it is often more efficient to use USB sticks instead since they are faster and can hold more data. (A dual-layer DVD is limited to 8.5 GB.)
 
 >[!TIP] 
->In this example, the .wim file is 5.5 GB in size. However, bootable USB sticks are formatted with the FAT32 file system which limits file size to 4.0 GB. You can place the image on a different drive (ex: E:\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.swm) and then modify E:\Deploy\Control\OperatingSystems.xml to point to it. Alternatively to keep using the USB you must split the .wim file, which can be done using DISM: <br>&nbsp;<br>Dism /Split-Image /ImageFile:D:\MDTOfflinemedia\Content\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.wim /SWMFile:E:\sources\install.swm /FileSize:3800. <br>&nbsp;<br>Windows Setup automatically installs from this file, provided you name it install.swm. The file names for the next files include numbers, for example: install2.swm, install3.swm. <br>&nbsp;<br>To enable split image in MDT, the Settings.xml file in your deployment share (ex: D:\MDTProduction\Control\Settings.xml) must have the **SkipWimSplit** value set to **False**. By default this value is set to True (\<SkipWimSplit\>True\</SkipWimSplit\>), so this must be changed and the offline media content updated.
+>In this example, the .wim file is 5.5 GB in size. However, bootable USB sticks are formatted with the FAT32 file system which limits file size to 4.0 GB. You can place the image on a different drive (ex: E:\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.swm) and then modify E:\Deploy\Control\OperatingSystems.xml to point to it. Alternatively to keep using the USB you must split the .wim file, which can be done using DISM: <br>&nbsp;<br>Dism /Split-Image /ImageFile:D:\MDTOfflinemedia\Content\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.wim /SWMFile:E:\sources\install.swm /FileSize:3800. <br>&nbsp;<br>Windows Setup automatically installs from this file, provided you name it install.swm. The file names for the next files include numbers, for example: install2.swm, install3.swm. <br>&nbsp;<br>To enable split image in MDT, the Settings.xml file in your deployment share (ex: D:\MDTProduction\Control\Settings.xml) must have the **SkipWimSplit** value set to **False**. By default this value is set to True (`<SkipWimSplit>True</SkipWimSplit>`), so this must be changed and the offline media content updated.
 
 Follow these steps to create a bootable USB stick from the offline media content:
 

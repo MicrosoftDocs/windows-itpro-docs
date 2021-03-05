@@ -121,7 +121,7 @@ If the device is running Windows 10, version 1809 or later:
 
 - Windows 10 Pro Education, version 1903 or later installed on the devices to be upgraded.
 
-- A device with a Windows 10 Pro Education digital license. You can confirm this information in Settings > Update & Security > Activation.
+- A device with a Windows 10 Pro Education digital license. You can confirm this information in **Settings > Update & Security > Activation**.
 
 - The Education tenant must have an active subscription to Microsoft 365 with a Windows 10 Enterprise license or a Windows 10 Enterprise or Education subscription.
 
@@ -152,7 +152,7 @@ You can benefit by moving to Windows as an online service in the following ways:
 
 ## How it works
 
-The device is AAD joined from Settings > Accounts > Access work or school.
+The device is AAD joined from **Settings > Accounts > Access work or school**.
 
 The IT administrator assigns Windows 10 Enterprise to a user. See the following figure.
 

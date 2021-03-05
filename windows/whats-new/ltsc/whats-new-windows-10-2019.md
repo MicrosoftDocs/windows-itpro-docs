@@ -328,7 +328,7 @@ New command-line switches are also available to control BitLocker:
 - **Setup.exe /BitLocker ForceKeepActive**
   - Enable upgrade without suspending BitLocker, but if upgrade does not work, fail the upgrade.
 
-For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)
+For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33).
 
 ### Feature update improvements
 
@@ -426,7 +426,7 @@ If you wish to take advantage of [Kiosk capabilities in Edge](https://docs.micro
 
 Intune and Microsoft Endpoint Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
-For more information, see [What's New in MDM enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803)
+For more information, see [What's New in MDM enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803).
 
 ### OS uninstall period
 
@@ -505,7 +505,7 @@ Added policies include:
 - [Minimum disk size allowed to use Peer Caching](/windows/deployment/update/waas-delivery-optimization#minimum-disk-size-allowed-to-use-peer-caching)
 - [Minimum Peer Caching Content File Size](/windows/deployment/update/waas-delivery-optimization#minimum-peer-caching-content-file-size)
 
-To check out all the details, see [Configure Delivery Optimization for Windows 10 updates](/windows/deployment/update/waas-delivery-optimization)
+To check out all the details, see [Configure Delivery Optimization for Windows 10 updates](/windows/deployment/update/waas-delivery-optimization).
 
 ### Uninstalled in-box apps no longer automatically reinstall
 
@@ -615,7 +615,8 @@ If you have a device that has been updated to Windows 10 Enterprise LTSC 2019, t
 
 - Windows 10 PCs must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
 
-It is important to note that Miracast over Infrastructure is not a replacement for standard Miracast. Instead, the functionality is complementary, and provides an advantage to users who are part of the enterprise network. Users who are guests to a particular location and don’t have access to the enterprise network will continue to connect using the Wi-Fi Direct connection method.
+> [!IMPORTANT]
+> Miracast over Infrastructure is not a replacement for standard Miracast. Instead, the functionality is complementary, and provides an advantage to users who are part of the enterprise network. Users who are guests to a particular location and don’t have access to the enterprise network will continue to connect using the Wi-Fi Direct connection method.
 
 ## Registry editor improvements
 
