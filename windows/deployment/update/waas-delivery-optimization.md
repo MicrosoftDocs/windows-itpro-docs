@@ -69,7 +69,7 @@ For information about setting up Delivery Optimization, including tips for the b
     - [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) 
 
 > [!NOTE]
-> Volume licensed versions of Office 2019, such as Office Professional Plus 2019, can take advantage of Delivery Optimization, but only for background updates. Delivery Optimization isn't available for installation or for foreground updates. The same applies to volume licensed versions of Project 2019 and Visio 2019.
+> Volume-licensed versions of Office 2019, such as Office Professional Plus 2019, can take advantage of Delivery Optimization for background updates. Delivery Optimization isn't available for installation or for foreground updates. The same applies to volume-licensed versions of Project 2019 and Visio 2019.
 
 ## Requirements
 
