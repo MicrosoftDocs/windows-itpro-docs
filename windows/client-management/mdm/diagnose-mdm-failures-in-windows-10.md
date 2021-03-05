@@ -121,28 +121,28 @@ Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medi
 1.  Download and install the [Field Medic]( https://go.microsoft.com/fwlink/p/?LinkId=718232) app from the store.
 2.  Open the Field Medic app and then click on **Advanced**.
 
-    ![field medic screenshot](images/diagnose-mdm-failures2.png)
+    ![field medic screenshot 2](images/diagnose-mdm-failures2.png)
 
 3.  Click on **Choose with ETW provider to use**.
 
-    ![field medic screenshot](images/diagnose-mdm-failures3.png)
+    ![field medic screenshot 3](images/diagnose-mdm-failures3.png)
 
 4.  Check **Enterprise** and un-check the rest.
 
-    ![field medic screenshot](images/diagnose-mdm-failures4.png)
+    ![field medic screenshot 4](images/diagnose-mdm-failures4.png)
 
 5.  In the app, click on **Start Logging** and then perform the operation that you want to troubleshoot.
 
-    ![field medic screenshot](images/diagnose-mdm-failures2.png)
+    ![field medic screenshot 5](images/diagnose-mdm-failures2.png)
 
 6.  When the operation is done, click on **Stop Logging**.
 
-    ![field medic screenshot](images/diagnose-mdm-failures5.png)
+    ![field medic screenshot 6](images/diagnose-mdm-failures5.png)
 
 7.  Save the logs. They will be stored in the Field Medic log location on the device.
 8.  You can send the logs via email by attaching the files from **Documents > Field Medic > Reports > ...** folder.
 
-    ![device documents folder](images/diagnose-mdm-failures6.png)![device folder screenshot](images/diagnose-mdm-failures7.png)![device folder screenshot](images/diagnose-mdm-failures8.png)
+    ![device documents folder](images/diagnose-mdm-failures6.png)![device folder screenshot 7](images/diagnose-mdm-failures7.png)![device folder screenshot 8](images/diagnose-mdm-failures8.png)
 
 The following table contains a list of common providers and their corresponding GUIDs.
 
