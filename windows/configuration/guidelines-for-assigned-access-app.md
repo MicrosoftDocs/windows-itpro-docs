@@ -45,7 +45,7 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 ## Guidelines for web browsers
 
-In Windows 10, version 1909, assigned access adds support for the new Microsoft Edge kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode](https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-configure-kiosk-mode).
+In Windows 10, version 1909, assigned access adds support for the new Microsoft Edge kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode](https://docs.microsoft.com/DeployEdge/microsoft-edge-configure-kiosk-mode).
 
 In Windows 10, version 1809, Microsoft Edge Legacy includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
 
@@ -158,9 +158,9 @@ Avoid selecting Windows apps that may expose the information you don’t want to
 
 ## Customize your breakout sequence
 
-Assigned access allows for the specification of a new breakout sequence. A breakout sequence is a keyboard shortcut that stops the kiosk experience and brings the user back to the lock screen. By default the breakout sequence is configured to be ctrl+alt+delete, a common windows keyboard shortcut. It is recommended that this is set to a non-standard windows shortcut to prevent disruptions in the kiosk experience.
+Assigned access allows for the specification of a new breakout sequence. A breakout sequence is a keyboard shortcut that stops the kiosk experience and brings the user back to the lock screen. By default the breakout sequence is configured to be ctrl+alt+delete, a common Windows keyboard shortcut. It is recommended that this is set to a non-standard Windows shortcut to prevent disruptions in the kiosk experience.
 
-There is currently no UI for customizing the breakout sequence in Windows Settings, so it would need to be specified in a provision method where an XML format is used like MDM.
+There is currently no user interface for customizing the breakout sequence in Windows settings, so it would need to be specified in a provisioning method where an XML format such as MDM is used.
 
 ## App configuration
 
