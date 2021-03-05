@@ -89,7 +89,7 @@ You'll need to enable, at least, the minimum Remediation Level for a given Devic
     Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
     > [!IMPORTANT]
-    > The option to upload a file to the library is only available to those with the appropriate RBAC permissions. The button is greyed out for users with only delegated permissions.
+    > The option to upload a file to the library is only available to those with the appropriate RBAC permissions, specifically Manage security settings role. The button is greyed out for users with only delegated permissions.For more information, see [Permission options](user-roles.md#permission-options).
 
     Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users permissions are controlled by RBAC custom role. 
 
