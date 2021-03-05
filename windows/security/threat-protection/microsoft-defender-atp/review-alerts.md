@@ -44,18 +44,16 @@ Selecting an alert's name in Defender for Endpoint will land you on its alert pa
 3. The **alert story** displays all entities related to the alert, interconnected by a tree view. The alert in the title will be the one in focus when you first land on your selected alert's page. Entities in the alert story are expandable and clickable, to provide additional information and expedite response by allowing you to take actions right in the context of the alert page. Use the alert story to start your investigation. Learn how in [Investigate alerts in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-alerts).
 4. The **details pane** will show the details of the selected alert at first, with details and actions related to this alert. If you select any of the affected assets or entities in the alert story, the details pane will change to provide contextual information and actions for the selected object.
 
-![An alert page when you first land on it](images/alert-landing-view-upd.png)
-
 Note the detection status for your alert. 
 - Prevented – The attempted suspicious action was avoided. For example, a file either wasn’t written to disk or executed.
+![An alert page showing threat was prevented](images/detstat-prevented.png)
 - Blocked – Suspicious behavior was executed and then blocked. For example, a process was executed but because it subsequently exhibited suspicious behaviors, the process was terminated.
+![An alert page showing threat was blocked](images/detstat-blocked.png)
 - Detected – An attack was detected and is possibly still active.
+![An alert page showing threat was detected](images/detstat-detected.png)
 
 
 
-![Detection status detected in Windows](images/detection-status-detected-upd.png)
-
-Blocked or prevented means actions were already taken by Defender for Endpoint.
 
 You can then also review the *automated investigation details* in your alert's details pane, to see which actions were already taken, as well as reading the alert's description for recommended actions.
 
@@ -63,9 +61,7 @@ You can then also review the *automated investigation details* in your alert's d
 
 Other information available in the details pane when the alert opens includes MITRE techniques, source, and additional contextual details.
 
-For alerts from Mac and Linux devices, remediation actions can be seen within the alert story as well as in the details pane.
 
-![Detection status detected in Mac](images/detection-status-prevented-mac-upd.png)
 
 
 ## Review affected assets
