@@ -61,20 +61,20 @@ On **DC01**:
    .\Set-OUPermissions.ps1 -Account MDT_JD -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
    ```
 
-The following is a list of the permissions being granted:
+   The following is a list of the permissions being granted:
 
-- Scope: This object and all descendant objects
-- Create Computer objects
-- Delete Computer objects
-- Scope: Descendant Computer objects
-- Read All Properties
-- Write All Properties
-- Read Permissions
-- Modify Permissions
-- Change Password
-- Reset Password
-- Validated write to DNS host name
-- Validated write to service principal name
+   - Scope: This object and all descendant objects
+   - Create Computer objects
+   - Delete Computer objects
+   - Scope: Descendant Computer objects
+   - Read All Properties
+   - Write All Properties
+   - Read Permissions
+   - Modify Permissions
+   - Change Password
+   - Reset Password
+   - Validated write to DNS host name
+   - Validated write to service principal name
 
 ## Step 2: Set up the MDT production deployment share
 
@@ -288,7 +288,7 @@ On **MDT01**:
 
 1. Download **PROWinx64.exe** from Intel.com (ex: [PROWinx64.exe](https://downloadcenter.intel.com/downloads/eula/25016/Intel-Network-Adapter-Driver-for-Windows-10?httpDown=https%3A%2F%2Fdownloadmirror.intel.com%2F25016%2Feng%2FPROWinx64.exe)).
 
-2.  Extract **PROWinx64.exe** to a temporary folder - in this example to the **C:\\Tmp\\ProWinx64** folder. 
+2.  Extract **PROWinx64.exe** to a temporary folder—in this example to the **C:\\Tmp\\ProWinx64** folder. 
 
     > [!NOTE]
     > Extracting the **.exe** file manually requires an extraction utility. You can also run the .exe and it will self-extract files to the **%userprofile%\AppData\Local\Temp\RarSFX0** directory. This directory is temporary and will be deleted when the **.exe** terminates.
@@ -689,9 +689,9 @@ On **HV01**:
 
 4.  Setup now begins and does the following:
 
-    1.  Installs the Windows 10 Enterprise operating system.
-    2.  Installs the added application.
-    3.  Updates the operating system via your local Windows Server Update Services (WSUS) server.
+    - Installs the Windows 10 Enterprise operating system.
+    - Installs the added application.
+    - Updates the operating system via your local Windows Server Update Services (WSUS) server.
 
     ![pc0005 image1](../images/pc0005-vm.png)
 

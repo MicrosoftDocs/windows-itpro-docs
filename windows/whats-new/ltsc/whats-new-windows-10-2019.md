@@ -337,7 +337,7 @@ It is also now possible to run a script if the user rolls back their version of 
 
 `/PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]`
 
-For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#21)
+For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#21).
 
 New command-line switches are also available to control BitLocker:
 
