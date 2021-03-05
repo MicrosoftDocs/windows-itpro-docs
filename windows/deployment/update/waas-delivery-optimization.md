@@ -32,8 +32,8 @@ Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimi
 For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows 10 updates](waas-delivery-optimization-setup.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
 
 
-> [!NOTE]
-> WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
+>[!NOTE]
+>WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
 
 ## New in Windows 10, version 2004
 
@@ -67,9 +67,6 @@ For information about setting up Delivery Optimization, including tips for the b
     - MSIX apps (HTTP downloads only)
     - Edge browser installs and updates
     - [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) 
-
-> [!NOTE]
-> Volume-licensed versions of Office 2019, such as Office Professional Plus 2019, can take advantage of Delivery Optimization for background updates. Delivery Optimization isn't available for installation or for foreground updates. The same applies to volume-licensed versions of Project 2019 and Visio 2019.
 
 ## Requirements
 
@@ -137,7 +134,7 @@ For more details, check out the [Adopting Windows as a Service at Microsoft](htt
 
 **Does Delivery Optimization work with WSUS?**: Yes. Devices will obtain the update payloads from the WSUS server, but must also have an internet connection as they communicate with the Delivery Optimization cloud service for coordination.
 
-**Which ports does Delivery Optimization use?**: Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service will register and open this port on the device, but you might need to set this port to accept inbound and outbound traffic through your firewall yourself. If you don't allow inbound and outbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
+**Which ports does Delivery Optimization use?**: Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service will register and open this port on the device, but you might need to set this port to accept inbound traffic through your firewall yourself. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
 
 If you set up Delivery Optimization to create peer groups that include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets), it will use Teredo. For this to work, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
 
