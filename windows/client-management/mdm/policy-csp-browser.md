@@ -177,6 +177,10 @@ ms.localizationpriority: medium
   <dd>
     <a href="#browser-showmessagewhenopeningsitesininternetexplorer">Browser/ShowMessageWhenOpeningSitesInInternetExplorer</a>
   </dd>
+
+  <dd>
+    <a href="#browser-suppressedgedeprecationnotification">Browser/SuppressEdgeDeprecationNotification</a>
+  </dd>
   <dd>
     <a href="#browser-syncfavoritesbetweenieandmicrosoftedge">Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</a>
   </dd>
@@ -4069,6 +4073,74 @@ Most restricted value: 0
 
 <hr/>
 
+<!--Policy-->
+<a href="" id="browser-suppressedgedeprecationnotification"></a>**Browser/SuppressEdgeDeprecationNotification**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows Enterprise Admins to turn off the notification for company devices that the Edge Legacy browser is no longer supported after 3/9/2021 to avoid confusion for their enterprise users and reduce help desk calls. 
+By default, a notification will be presented to the user informing them of this upon application startup.
+With this policy, you can either allow (default) or suppress this notification.
+
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Suppress Edge Deprecation Notification*
+-   GP name: *SuppressEdgeDeprecationNotification*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supported values:
+
+-   0 (default) – Allowed. Notification will be shown at application startup.
+-   1 – Prevented/not allowed.
+
+<hr/>
 <!--Policy-->
 <a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a>**Browser/SyncFavoritesBetweenIEAndMicrosoftEdge**  
 

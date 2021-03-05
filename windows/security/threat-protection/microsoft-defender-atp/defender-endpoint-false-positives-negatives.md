@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 02/11/2021
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,7 +20,7 @@ ms.collection:
 - m365initiative-defender-endpoint
 - m365solution-scenario
 - m365scenario-fpfn
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
 ---
@@ -37,7 +37,7 @@ In endpoint protection solutions, a false positive is an entity, such as a file 
 
 ![Definition of false positive and negatives in Windows Defender for Endpoints](images/false-positives-overview.png)
 
-Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), your security operations can take steps to address them by using the following process:
+Microsoft Defender for Endpoint enables your security operations team to fine-tune your security settings and help address and reduce false positives. If you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), use the following process:
 
 1.	[Review and classify alerts](#part-1-review-and-classify-alerts) 
 2.	[Review remediation actions that were taken](#part-2-review-remediation-actions)

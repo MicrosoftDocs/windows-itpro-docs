@@ -35,7 +35,7 @@
  "
 ## Acrolinx Scorecards
  
-**The minimum Acrolinx topic score of 65 is required for all MARVEL content merged to the default branch.**
+**The minimum Acrolinx topic score of 80 is required for all MARVEL content merged to the default branch.**
 
 If you need a scoring exception for content in this PR, add the *Sign off* and the *Acrolinx exception* labels to the PR. The PubOps Team will review the exception request and may take one or more of the following actions:
 
