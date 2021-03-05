@@ -110,7 +110,7 @@ You can configure Windows to be in shared PC mode in a couple different ways:
      > [!div class="mx-imgBorder"]
      > ![Shared PC mode in the Configuration settings page](images/shared_pc_3.png) 
 
-  9. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 4**.
+  11. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 6**.
 
 - A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp), exposed in Windows Configuration Designer as **SharedPC**.
 

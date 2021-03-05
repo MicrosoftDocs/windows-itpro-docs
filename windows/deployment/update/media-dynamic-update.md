@@ -81,9 +81,6 @@ This table shows the correct sequence for applying the various tasks to the file
 |Add .NET and .NET cumulative updates     |         |        | 24        |
 |Export image     | 8        |  17       | 25        |
 
-> [!NOTE]
-> Starting in February 2021, the latest cumulative update and servicing stack update will be combined and distributed in the Microsoft Update Catalog as a new combined cumulative update. For Steps 1, 9, and 18 that require the servicing stack update for updating the installation media, you should use the combined cumulative update. For more information on the combined cumulative update, see [Servicing stack updates](https://docs.microsoft.com/windows/deployment/update/servicing-stack-updates).
-
 ### Multiple Windows editions
 
 The main operating system file (install.wim) contains multiple editions of Windows 10. It’s possible that only an update for a given edition is required to deploy it, based on the index. Or, it might be that all editions need an update. Further, ensure that languages are installed before Features on Demand, and the latest cumulative update is always applied last.
