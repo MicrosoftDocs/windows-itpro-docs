@@ -1,6 +1,6 @@
 ---
 title: DMSessionActions CSP
-description: Learn how the DMSessionActions configuration service provider (CSP) is used to manage the number of sessions the client skips if the device is in a low power state.
+description: Learn how the DMSessionActions configuration service provider (CSP) is used to manage the number of sessions the client skips if the device is in a low-power state.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -16,7 +16,7 @@ manager: dansimp
 
 The DMSessionActions configuration service provider (CSP) is used to manage:  
 
-- the number of sessions the client skips if the device is in a low power state
+- the number of sessions the client skips if the device is in a low-power state
 - which CSP nodes should send an alert back to the server if there were any changes.
 
 This CSP was added in Windows 10, version 1703.
@@ -66,7 +66,7 @@ DMSessionActions
 <p style="margin-left: 20px">Defines the root node for the DMSessionActions configuration service provider.</p>
 
 <a href="" id="providerid"></a>***ProviderID***  
-<p style="margin-left: 20px">Group settings per device management (DM) server. Each group of settings is distinguished by the Provider ID of the server. It must be the same DM server Provider ID value that was supplied through the w7 APPLICATION configuration service provider XML during the enrollment process. Only one enterprise management server is supported, which means that there should be only one ProviderID node under NodeCache. </p>
+<p style="margin-left: 20px">Group settings per device management (DM) server. Each group of settings is distinguished by the Provider ID of the server. It must be the same DM server Provider ID value that was supplied through the w7 APPLICATION configuration service provider XML during the enrollment process. Only one enterprise management server is supported, which means there should be only one ProviderID node under NodeCache. </p>
 
 <p style="margin-left: 20px">Scope is dynamic. Supported operations are Get, Add, and Delete.</p>
 
@@ -92,12 +92,12 @@ DMSessionActions
 <p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
 
 <a href="" id="powersettings"></a>**PowerSettings**  
-<p style="margin-left: 20px">Node for power related configrations</p>
+<p style="margin-left: 20px">Node for power-related configrations</p>
 
 <a href="" id="maxskippedsessionsinlowpowerstate"></a>**PowerSettings/MaxSkippedSessionsInLowPowerState**  
-<p style="margin-left: 20px">Maximum number of continuous skipped sync sessions when the device is in low power state.</p>
+<p style="margin-left: 20px">Maximum number of continuous skipped sync sessions when the device is in low-power state.</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="maxtimesessionsskippedinlowpowerstate"></a>**PowerSettings/MaxTimeSessionsSkippedInLowPowerState**  
-<p style="margin-left: 20px">Maximum time in minutes when the device can skip the check-in with the server if the device is in low power state. </p>
+<p style="margin-left: 20px">Maximum time in minutes when the device can skip the check-in with the server if the device is in low-power state. </p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
