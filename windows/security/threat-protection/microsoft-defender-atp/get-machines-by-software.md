@@ -20,10 +20,13 @@ ms.topic: article
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-**Applies to:**
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -62,7 +65,7 @@ If successful, this method returns 200 OK and a list of devices with the softwar
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.windows.com/api/Software/microsoft-_-edge/machineReferences
+GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machineReferences
 ```
 
 **Response**
@@ -72,7 +75,7 @@ Here is an example of the response.
 ```json
 
 {
-    "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#MachineReferences",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#MachineReferences",
     "value": [
         {
             "id": "7c7e1896fa39efb0a32a2cf421d837af1b9bf762",

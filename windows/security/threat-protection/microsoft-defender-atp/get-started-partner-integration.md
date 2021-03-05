@@ -22,9 +22,11 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-**Applies to:** 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 To become a Defender for Endpoint solution partner, you'll need to follow and complete the following steps.
 
@@ -52,16 +54,12 @@ To have your company listed as a partner in the in-product partner page, you wil
 6. Include the User-Agent field in each API call made to Microsoft Defender for Endpoint public set of APIs or Graph Security APIs. This will be used for statistical purposes, troubleshooting, and partner recognition. In addition, this step is a requirement for membership in Microsoft Intelligent Security Association (MISA).
 
     Follow these steps:
-    1.	Identify a name adhering to the following nomenclature that includes your company name and the Microsoft Defender for Endpoint-integrated product with the version of the product that includes this integration. 
-      - ISV Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{Version}`
-      - Security partner Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{TenantID}` 
-
-
-   	- Set the User-Agent field in each HTTP request header to the name based on the Following nomenclature.
-
-    - `MsdePartner-{CompanyName}-{ProductName}/{Version}`
     
-    - For example, User-Agent: `MdatpPartner-Contoso-ContosoCognito/1.0.0`
+   	- Set the User-Agent field in each HTTP request header to the below format.
+
+    - `MdePartner-{CompanyName}-{ProductName}/{Version}`
+    
+    - For example, User-Agent: `MdePartner-Contoso-ContosoCognito/1.0.0`
     
     - For more information, see [RFC 2616 section-14.43](https://tools.ietf.org/html/rfc2616#section-14.43).
 

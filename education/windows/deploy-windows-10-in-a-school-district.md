@@ -202,7 +202,7 @@ Before you select the deployment and management methods, you need to review the 
 |Scenario feature |Cloud-centric|On-premises and cloud|
 |---|---|---|
 |Identity management | Azure AD (stand-alone or integrated with on-premises AD DS)  |  AD DS integrated with Azure AD |
-|Windows 10 deployment   | MDT only  |  Microsoft Endpoint Configuration Manager with MDT |
+|Windows 10 deployment   | MDT only  |  Microsoft Endpoint Manager with MDT |
 |Configuration setting management  | Intune  |  Group Policy<br/><br/>Intune|
 |App and update management |  Intune |Microsoft Endpoint Configuration Manager<br/><br/>Intune|
 
@@ -216,14 +216,14 @@ These scenarios assume the need to support:
 Some constraints exist in these scenarios. As you select the deployment and management methods for your device, keep the following constraints in mind:
 
 * You can use Group Policy or Intune to manage configuration settings on a device but not both.
-* You can use Microsoft Endpoint Configuration Manager or Intune to manage apps and updates on a device but not both.
+* You can use Microsoft Endpoint Manager or Intune to manage apps and updates on a device but not both.
 * You cannot manage multiple users on a device with Intune if the device is AD DS domain joined.
 
 Use the cloud-centric scenario and on-premises and cloud scenario as a guide for your district. You may need to customize these scenarios, however, based on your district. As you go through the [Select the deployment methods](#select-the-deployment-methods), [Select the configuration setting management methods](#select-the-configuration-setting-management-methods), and the [Select the app and update management products](#select-the-app-and-update-management-products) sections, remember these scenarios and use them as the basis for your district.
 
 ### Select the deployment methods
 
-To deploy Windows 10 and your apps, you can use MDT by itself or Microsoft Endpoint Configuration Manager and MDT together. For a district, there are a few ways to deploy Windows 10 to devices. Table 2 lists the methods that this guide describes and recommends. Use this information to determine which combination of deployment methods is right for your institution.
+To deploy Windows 10 and your apps, you can use MDT by itself or Microsoft Endpoint Manager and MDT together. For a district, there are a few ways to deploy Windows 10 to devices. Table 2 lists the methods that this guide describes and recommends. Use this information to determine which combination of deployment methods is right for your institution.
 
 <table>
 <colgroup>
@@ -291,7 +291,7 @@ Select this method when you:</p>
 </ul>
 <p>The disadvantages of this method are that it:</p>
 <ul>
-<li>Carries an additional cost for Microsoft Endpoint Configuration Manager server licenses (if the institution does not have Configuration Manager already).</li>
+<li>Carries an additional cost for Microsoft Endpoint Manager server licenses (if the institution does not have Configuration Manager already).</li>
 <li>Can deploy Windows 10 only to domain-joined (institution-owned devices).</li>
 <li>Requires an AD DS infrastructure (if the institution does not have AD DS already).</li>
 </ul>
@@ -307,7 +307,7 @@ Record the deployment methods you selected in Table 3.
 |Selection | Deployment method|
 |--------- | -----------------|
 |   |MDT by itself |
-|   |Microsoft Endpoint Configuration Manager and MDT|
+|   |Microsoft Endpoint Manager and MDT|
 
 *Table 3. Deployment methods selected*
 
@@ -483,12 +483,12 @@ Select this method when you:</p>
 </tr>
 
 <tr>
-<td valign="top">Microsoft Endpoint Configuration Manager and Intune (hybrid)</td>
+<td valign="top">Microsoft Endpoint Manager and Intune (hybrid)</td>
 <td><p>Configuration Manager and Intune together extend Configuration Manager from an on-premises management system for domain-joined devices to a solution that can manage devices regardless of their location and connectivity options. This hybrid option provides the benefits of both Configuration Manager and Intune.<br/><br/>
 Configuration Manager and Intune in the hybrid configuration allow you to support application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using Configuration Manager, and you can manage Windows desktop and Microsoft Store applications for both institution-owned and personal devices.<br/><br/>
 Select this method when you:</p>
 <ul>
-<li>Selected Microsoft Endpoint Configuration Manager to deploy Windows 10.</li>
+<li>Selected Microsoft Endpoint Manager to deploy Windows 10.</li>
 <li>Want to manage institution-owned and personal devices (does not require that the device be domain joined).</li>
 <li>Want to manage domain-joined devices.</li>
 <li>Want to manage Azure AD domain-joined devices.</li>
@@ -525,9 +525,9 @@ Record the app and update management methods that you selected in Table 7.
 
 |Selection | Management method|
 |----------|------------------|
-|   |Microsoft Endpoint Configuration Manager by itself|
+|   |Microsoft Endpoint Manager by itself|
 |   |Intune by itself|
-|   |Microsoft Endpoint Configuration Manager and Intune (hybrid mode)|
+|   |Microsoft Endpoint Manager and Intune (hybrid mode)|
 
 *Table 7. App and update management methods selected*
 
@@ -570,11 +570,11 @@ For more information about how to create a deployment share, see [Step 3-1: Crea
 ### Install the Configuration Manager console
 
 > [!NOTE]
-> If you selected Microsoft Endpoint Configuration Manager to deploy Windows 10 or manage your devices (in the [Select the deployment methods](#select-the-deployment-methods) and [Select the configuration setting management methods](#select-the-configuration-setting-management-methods) sections, respectively), perform the steps in this section. Otherwise, skip this section and continue to the next.
+> If you selected Microsoft Endpoint Manager to deploy Windows 10 or manage your devices (in the [Select the deployment methods](#select-the-deployment-methods) and [Select the configuration setting management methods](#select-the-configuration-setting-management-methods) sections, respectively), perform the steps in this section. Otherwise, skip this section and continue to the next.
 
 You can use Configuration Manager to manage Windows 10 deployments, Windows desktop apps, Microsoft Store apps, and software updates. To manage Configuration Manager, you use the Configuration Manager console. You must install the Configuration Manager console on every device you use to manage Configuration Manager (specifically, the admin device). The Configuration Manager console is automatically installed when you install Configuration Manager primary site servers.
 
-For more information about how to install the Configuration Manager console, see [Install Microsoft Endpoint Configuration Manager consoles](https://technet.microsoft.com/library/mt590197.aspx#bkmk_InstallConsole).
+For more information about how to install the Configuration Manager console, see [Install Microsoft Endpoint Manager consoles](https://technet.microsoft.com/library/mt590197.aspx#bkmk_InstallConsole).
 
 ### Configure MDT integration with the Configuration Manager console
 
@@ -733,7 +733,7 @@ The following Azure AD Premium features are not in Azure AD Basic:
 
 * Allow designated users to manage group membership
 * Dynamic group membership based on user metadata
-* Azure AD Multi-Factor Authentication authentication (MFA; see [What is Azure AD Multi-Factor Authentication Authentication](https://azure.microsoft.com/documentation/articles/multi-factor-authentication/))
+* Azure AD Multi-Factor Authentication (MFA; see [What is Azure AD Multi-Factor Authentication](https://azure.microsoft.com/documentation/articles/multi-factor-authentication/))
 * Identify cloud apps that your users run
 * Self-service recovery of BitLocker
 * Add local administrator accounts to Windows 10 devices
@@ -1148,7 +1148,7 @@ At the end of this section, you should know the Windows 10 editions and processo
 
 ## Prepare for deployment
 
-Before you can deploy Windows 10 and your apps to devices, you need to prepare your MDT environment, Windows Deployment Services, and Microsoft Endpoint Configuration Manager (if you selected it to do operating system deployment in the [Select the deployment methods](#select-the-deployment-methods) section). In this section, you ensure that the deployment methods you selected in the [Select the deployment methods](#select-the-deployment-methods) section have the necessary Windows 10 editions and versions, Windows desktop apps, Microsoft Store apps, and device drivers.
+Before you can deploy Windows 10 and your apps to devices, you need to prepare your MDT environment, Windows Deployment Services, and Microsoft Endpoint Manager (if you selected it to do operating system deployment in the [Select the deployment methods](#select-the-deployment-methods) section). In this section, you ensure that the deployment methods you selected in the [Select the deployment methods](#select-the-deployment-methods) section have the necessary Windows 10 editions and versions, Windows desktop apps, Microsoft Store apps, and device drivers.
 
 ### Configure the MDT deployment share
 
@@ -1245,7 +1245,7 @@ For more information about how to update a deployment share, see <a href="https:
 ### Configure Microsoft Endpoint Configuration Manager
 
 > [!NOTE]
-> If you have already configured your Microsoft Endpoint Configuration Manager infrastructure to support the operating system deployment feature or if you selected to deploy Windows 10 by using MDT only, then skip this section and continue to the next section.
+> If you have already configured your Microsoft Endpoint Manager infrastructure to support the operating system deployment feature or if you selected to deploy Windows 10 by using MDT only, then skip this section and continue to the next section.
 
 Before you can use Configuration Manager to deploy Windows 10 and manage your apps and devices, you must configure Configuration Manager to support the operating system deployment feature. If you don’t have an existing Configuration Manager infrastructure, you will need to deploy a new infrastructure.
 
@@ -1255,7 +1255,7 @@ Deploying a new Configuration Manager infrastructure is beyond the scope of this
 * [Start using Configuration Manager](https://technet.microsoft.com/library/mt608544.aspx)
 
 
-#### To configure an existing Microsoft Endpoint Configuration Manager infrastructure for operating system deployment
+#### To configure an existing Microsoft Endpoint Manager infrastructure for operating system deployment
 
 1. Perform any necessary infrastructure remediation.
 
@@ -1264,12 +1264,12 @@ Deploying a new Configuration Manager infrastructure is beyond the scope of this
 
     You need to add the Windows PE boot images, Windows 10 operating system images, and other deployment content that you will use to deploy Windows 10 with ZTI. To add this content, use the Create MDT Task Sequence Wizard.
 
-    You can add this content by using Microsoft Endpoint Configuration Manager only (without MDT), but the Create MDT Task Sequence Wizard is the preferred method because the wizard prompts you for all the deployment content you need for a task sequence and provides a much more intuitive user experience. For more information, see [Create ZTI Task Sequences Using the Create MDT Task Sequence Wizard in Configuration Manager](https://technet.microsoft.com/library/dn759415.aspx#CreateZTITaskSequencesUsingtheCreateMDTTaskSequenceWizardinConfigurationManager).
+    You can add this content by using Microsoft Endpoint Manager only (without MDT), but the Create MDT Task Sequence Wizard is the preferred method because the wizard prompts you for all the deployment content you need for a task sequence and provides a much more intuitive user experience. For more information, see [Create ZTI Task Sequences Using the Create MDT Task Sequence Wizard in Configuration Manager](https://technet.microsoft.com/library/dn759415.aspx#CreateZTITaskSequencesUsingtheCreateMDTTaskSequenceWizardinConfigurationManager).
 3. Add device drivers.
 
     You must add device drivers for the different device types in your district. For example, if you have a mixture of Surface, HP Stream, Dell Inspiron, and Lenovo Yoga devices, then you must have the device drivers for each device.
 
-    Create a Microsoft Endpoint Configuration Manager driver package for each device type in your district. For more information, see [Manage drivers in Configuration Manager](https://technet.microsoft.com/library/mt627934.aspx).
+    Create a Microsoft Endpoint Manager driver package for each device type in your district. For more information, see [Manage drivers in Configuration Manager](https://technet.microsoft.com/library/mt627934.aspx).
 4. Add Windows apps.
 
     Install the Windows apps (Windows desktop and Microsoft Store apps) that you want to deploy after the task sequence deploys your customized image (a thick, reference image that include Windows 10 and your core Windows desktop apps). These apps are in addition to the apps included in your reference image. You can only deploy Microsoft Store apps after you deploy Windows 10 because you cannot capture Microsoft Store apps in a reference image. Microsoft Store apps target users, not devices.
@@ -1301,7 +1301,7 @@ You can use Windows Deployment Services in conjunction with MDT to automatically
 ### Configure Window Deployment Services for Microsoft Endpoint Configuration Manager
 
 > [!NOTE]
-> If you have already configured your Microsoft Endpoint Configuration Manager infrastructure to support PXE boot or selected to deploy Windows 10 by using MDT only, then skip this section and continue to the next.
+> If you have already configured your Microsoft Endpoint Manager infrastructure to support PXE boot or selected to deploy Windows 10 by using MDT only, then skip this section and continue to the next.
 
 You can use Windows Deployment Services in conjunction with Configuration Manager to automatically initiate boot images on target devices. These boot images are Windows PE images that you use to boot the target devices, and then initiate Windows 10, app, and device driver deployment.
 
@@ -1328,7 +1328,7 @@ You can use Windows Deployment Services in conjunction with Configuration Manage
 
 #### Summary
 
-Your MDT deployment share and Microsoft Endpoint Configuration Manager are now ready for deployment. Windows Deployment Services is ready to initiate the LTI or ZTI deployment process. You have set up and configured Windows Deployment Services for MDT and for Configuration Manager. You have also ensured that your boot images are available to Windows Deployment Services (for LTI) or the distribution points (for ZTI and Configuration Manager). Now, you’re ready to capture the reference images for the different devices you have in your district.
+Your MDT deployment share and Microsoft Endpoint Manager are now ready for deployment. Windows Deployment Services is ready to initiate the LTI or ZTI deployment process. You have set up and configured Windows Deployment Services for MDT and for Configuration Manager. You have also ensured that your boot images are available to Windows Deployment Services (for LTI) or the distribution points (for ZTI and Configuration Manager). Now, you’re ready to capture the reference images for the different devices you have in your district.
 
 ## Capture the reference image
 
@@ -1575,7 +1575,7 @@ For more information about Intune, see [Microsoft Intune Documentation](https://
 
 ### Deploy and manage apps by using Intune
 
-If you selected to deploy and manage apps by using Microsoft Endpoint Configuration Manager and Intune in a hybrid configuration, then skip this section and continue to the [Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager) section.
+If you selected to deploy and manage apps by using Microsoft Endpoint Manager and Intune in a hybrid configuration, then skip this section and continue to the [Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager) section.
 
 You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you to deploy apps to companion devices (such as Windows 10 Mobile, iOS, or Android devices). Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or that another solution manages.
 
@@ -1589,7 +1589,7 @@ For more information about how to configure Intune to manage your apps, see the 
 
 ### Deploy and manage apps by using Microsoft Endpoint Configuration Manager
 
-You can use  Microsoft Endpoint Configuration Manager to deploy Microsoft Store and Windows desktop apps. Configuration Manager allows you to create a Configuration Manager application that you can use to deploy apps to different devices (such as Windows 10 desktop, Windows 10 Mobile, iOS, or Android devices) by using *deployment types*. You can think of a Configuration Manager application as a box. You can think of deployment types as one or more sets of installation files and installation instructions within that box.
+You can use  Microsoft Endpoint Manager to deploy Microsoft Store and Windows desktop apps. Configuration Manager allows you to create a Configuration Manager application that you can use to deploy apps to different devices (such as Windows 10 desktop, Windows 10 Mobile, iOS, or Android devices) by using *deployment types*. You can think of a Configuration Manager application as a box. You can think of deployment types as one or more sets of installation files and installation instructions within that box.
 
 For example, you could create a Skype application that contains a deployment type for Windows 10 desktop, Windows 10 Mobile, iOS, and Android. You can deploy the one application to multiple device types.
 
@@ -1627,7 +1627,7 @@ For more information about how to configure Configuration Manager to manage Wind
 
 #### Summary
 
-In this section, you prepared your institution for device management. You identified the configuration settings that you want to use to manage your users and devices. You configured Group Policy or Intune to manage these configuration settings. You configured Intune or Microsoft Endpoint Configuration Manager to manage your apps. Finally, you configured Intune or Microsoft Endpoint Configuration Manager to manage software updates for Windows 10 and your apps.
+In this section, you prepared your institution for device management. You identified the configuration settings that you want to use to manage your users and devices. You configured Group Policy or Intune to manage these configuration settings. You configured Intune or Microsoft Endpoint Manager to manage your apps. Finally, you configured Intune or Microsoft Endpoint Manager to manage software updates for Windows 10 and your apps.
 
 ## Deploy Windows 10 to devices
 

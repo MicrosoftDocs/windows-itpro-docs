@@ -73,7 +73,6 @@ The following methodology was used to derive these network endpoints:
 ||The following endpoints are used for location data. If you turn off traffic for this endpoint, apps cannot use location data.|TLS v1.2|inference.location.live.net|
 |Maps|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-offlinemaps)|
 ||The following endpoints are used to check for updates to maps that have been downloaded for offline use. If you turn off traffic for this endpoint, offline maps will not be updated.|HTTP|*maps.windows.com|
-|| The following endpoints are used to check for updates to maps that have been downloaded for offline use.|HTTP|fs.microsoft.com*|
 |Microsoft Account|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-microsoft-account)|
 ||The following endpoints are used for Microsoft accounts to sign in. If you turn off traffic for these endpoints, users cannot sign in with Microsoft accounts. |TLS v1.2|*login.live.com|
 |Microsoft Edge|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#13-microsoft-edge)|

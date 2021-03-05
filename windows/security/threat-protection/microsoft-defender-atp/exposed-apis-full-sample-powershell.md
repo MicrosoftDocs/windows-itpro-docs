@@ -4,7 +4,7 @@ ms.reviewer:
 description: Use these code samples, querying several Microsoft Defender for Endpoint APIs.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,18 +13,25 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: article 
+ms.collection: M365-security-compliance
+ms.topic: article
 ms.date: 09/24/2018
+ms.technology: mde
 ---
 
 # Microsoft Defender for Endpoint APIs using PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Full scenario using multiple APIs from Microsoft Defender for Endpoint.
 
@@ -63,7 +70,7 @@ $appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret 
 $suspiciousUrl = 'www.suspiciousUrl.com' # Paste your own URL here
 
 $resourceAppIdUri = 'https://securitycenter.onmicrosoft.com/windowsatpservice'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"
     client_id = "$appId"
@@ -75,7 +82,7 @@ $aadToken = $authResponse.access_token
 
 
 #Get latest alert
-$alertUrl = "https://api.securitycenter.windows.com/api/alerts?`$top=10"
+$alertUrl = "https://api.securitycenter.microsoft.com/api/alerts?`$top=10"
 $headers = @{ 
     'Content-Type' = 'application/json'
     Accept = 'application/json'
@@ -108,7 +115,7 @@ $query = "NetworkCommunicationEvents
 | where RemoteUrl  == `"$suspiciousUrl`"
 | summarize ConnectionsCount = count() by MachineId"
 
-$queryUrl = "https://api.securitycenter.windows.com/api/advancedqueries/run"
+$queryUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 
 $queryBody = ConvertTo-Json -InputObject @{ 'Query' = $query }
 $queryResponse = Invoke-WebRequest -Method Post -Uri $queryUrl -Headers $headers -Body $queryBody -ErrorAction Stop

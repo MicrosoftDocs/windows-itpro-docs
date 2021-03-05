@@ -1,10 +1,10 @@
 ---
 title: Remediate vulnerabilities with threat and vulnerability management
-description: Remediate security weaknesses discovered through security recommendations, and create exceptions if needed, in threat and vulnerability management. 
+description: Remediate security weaknesses discovered through security recommendations, and create exceptions if needed, in threat and vulnerability management.
 keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,17 +14,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 # Remediate vulnerabilities with threat and vulnerability management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
@@ -46,7 +48,8 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender fo
 
 2. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
 
-3. Fill out the form, including what you are requesting remediation for, priority, due date, and optional notes. If you choose the "attention required" remediation option, selecting a due date will not be available since there is no specific action.
+3. Fill out the form, including what you are requesting remediation for, applicable device groups, priority, due date, and optional notes.
+    1. If you choose the "attention required" remediation option, selecting a due date will not be available since there is no specific action.
 
 4. Select **Submit request**. Submitting a remediation request creates a remediation activity item within threat and vulnerability management, which can be used for monitoring the remediation progress for this recommendation. This will not trigger a remediation or apply any changes to devices.
 

@@ -390,7 +390,7 @@ Windows Insider Preview builds only apply to Windows 10 and are not available fo
 
 
 > [!NOTE]
-> If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for Restricted Traffic) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Full**. Although the diagnostic data level may initially appear as **Basic**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Full**.
+> If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for Restricted Traffic) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Optional (Full)**. Although the diagnostic data level may initially appear as **Required (Basic)**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Optional (Full)**.
 
 To turn off Insider Preview builds for a released version of Windows 10:
 
@@ -1302,7 +1302,7 @@ To change how frequently **Windows should ask for my feedback**:
 
 To change the level of diagnostic and usage data sent when you **Send your device data to Microsoft**:
 
-- Click either the **Basic** or **Full** options.
+- Click either the **Required (Basic)** or **Optional (Full)** options.
 
   -or-
 

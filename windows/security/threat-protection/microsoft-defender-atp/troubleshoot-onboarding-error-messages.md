@@ -1,10 +1,10 @@
 ---
 title: Troubleshoot onboarding issues and error messages
-description: Troubleshoot onboarding issues and error message while completing setup of Microsoft Defender Advanced Threat Protection.
-keywords: troubleshoot, troubleshooting, Azure Active Directory, onboarding, error message, error messages, microsoft defender atp
+description: Troubleshoot onboarding issues and error message while completing setup of Microsoft Defender for Endpoint.
+keywords: troubleshoot, troubleshooting, Azure Active Directory, onboarding, error message, error messages, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,22 +13,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: troubleshooting
+ms.technology: mde
 ---
 
 # Troubleshoot subscription and portal access issues
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
-
 
 This page provides detailed steps to troubleshoot issues that might occur when setting up your Microsoft Defender for Endpoint service.
 
@@ -78,8 +76,8 @@ You'll need to allow the `securitycenter.windows.com` and all subdomains under i
 ## Portal communication issues
 If you encounter issues with accessing the portal, missing data, or restricted access to portions of the portal, you'll need to verify that the following URLs are allowed and open for communication.
 
-- `*.blob.core.windows.net 
-crl.microsoft.com`
+- `*.blob.core.windows.net`
+- `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
 - `https://*.securitycenter.windows.com` 
 - `https://automatediracs-eus-prd.securitycenter.windows.com`

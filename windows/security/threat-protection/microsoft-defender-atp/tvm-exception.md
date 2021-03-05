@@ -1,10 +1,10 @@
 ---
 title: Create and view exceptions for security recommendations - threat and vulnerability management
-description: Create and monitor exceptions for security recommendations in threat and vulnerability management. 
+description: Create and monitor exceptions for security recommendations in threat and vulnerability management.
 keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 # Create and view exceptions for security recommendations - threat and vulnerability management
 
@@ -24,8 +25,10 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
+
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
@@ -103,26 +106,21 @@ Navigate to the **Exceptions** tab in the **Remediation** page. You can filter b
 
  Select an exception to open a flyout with more details. Exceptions per devices group will have a list of every device group the exception covers, which you can export. You can also view the related recommendation or cancel the exception.
 
-
 ![Showing the "Exceptions" tab in the Remediation page.](images/tvm-exception-view.png)
-
 
 ## How to cancel an exception
 
-To cancel an exception, navigate to the **Exceptions** tab in the **Remediation** page. Select the exception. To cancel the exception for all device groups, select the **Cancel exception** button. You can also cancel the exception for a specific device group.
+To cancel an exception, navigate to the **Exceptions** tab in the **Remediation** page. Select the exception.
+
+To cancel the exception for all device groups or for a global exception, select the **Cancel exception for all device groups** button. You will only be able to cancel exceptions for device groups you have permissions for.
+
+![The cancel button.](images/tvm-exception-cancel.png)
 
 ### Cancel the exception for a specific device group
 
 Select the specific device group to cancel the exception for it. A flyout will appear for the device group, and you can select **Cancel exception**.
 
 ![Showing how to select a specific device group.](images/tvm-exception-device-group-hover.png)
-
-
-### Cancel a global exception
-
-If it is a global exception, select an exception from the list and then select **Cancel exception** from the flyout.
-
-![Showing how to cancel the exception for a global exception.](images/tvm-exception-cancel-global-400.png)
 
 ## View impact after exceptions are applied
 

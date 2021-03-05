@@ -4,7 +4,7 @@ description: Learn to allow traffic on specific ports by using the Group Policy 
 ms.assetid: a7b6c6ca-32fa-46a9-a5df-a4e43147da9f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Create an Inbound Port Rule

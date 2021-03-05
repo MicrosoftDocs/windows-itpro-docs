@@ -21,18 +21,18 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-This topic will show you how to take your reference image for Windows 10 (that was just [created](create-a-windows-10-reference-image.md)), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
+This topic will show you how to take your reference image for Windows 10 (that was just [created](create-a-windows-10-reference-image.md)), and deploy that image to your environment using the **Microsoft Deployment Toolkit (MDT)**. 
 
-We will prepare for this by creating an MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. We will configure Active Directory permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
+We will prepare for this by creating an **MDT** deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of both processes. We will configure **Active Directory** permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
 
-For the purposes of this topic, we will use four computers: DC01, MDT01, HV01 and PC0005. 
+For the purposes of this topic, we will use four computers: **DC01**, **MDT01**, **HV01**, and **PC0005**. 
 
-- DC01 is a domain controller 
-- MDT01 is a domain member server 
-- HV01 is a Hyper-V server 
-- PC0005 is a blank device to which we will deploy Windows 10
+- **DC01** is a domain controller 
+- **MDT01** is a domain member server 
+- **HV01** is a Hyper-V server 
+- **PC0005** is a blank device to which we will deploy Windows 10
 
-MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.  HV01 used to test deployment of PC0005 in a virtual environment.
+**MDT01** and **PC0005** are members of the domain contoso.com for the fictitious Contoso Corporation.  **HV01** is used to test the deployment of **PC0005** in a virtual environment.
 
    ![devices](../images/mdt-07-fig01.png)
 
@@ -45,14 +45,14 @@ These steps will show you how to configure an Active Directory account with the 
 
 On **DC01**:
 
-1. Download the [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copy it to the **C:\\Setup\\Scripts** directory on DC01.  This script configures permissions to allow the MDT_JD account to manage computer accounts in the contoso > Computers organizational unit.
-2. Create the MDT_JD service account by running the following command from an elevated Windows PowerShell prompt:
+1. Download the [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copy it to the **C:\\Setup\\Scripts** directory on **DC01**.  This script configures permissions to allow the **MDT_JD** account to manage computer accounts in the contoso > Computers organizational unit.
+2. Create the **MDT_JD** service account by running the following command from an elevated **Windows PowerShell prompt**:
 
    ```powershell
    New-ADUser -Name MDT_JD -UserPrincipalName MDT_JD -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT join domain account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true 
    ```
 
-3. Next, run the Set-OuPermissions script to apply permissions to the **MDT\_JD** service account, enabling it to manage computer accounts in the Contoso / Computers OU. Run the following commands from an elevated Windows PowerShell prompt:
+3. Next, run the **Set-OuPermissions script** to apply permissions to the **MDT\_JD** service account, enabling it to manage computer accounts in the Contoso / Computers OU. Run the following commands from an elevated **Windows PowerShell prompt**:
 
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
@@ -76,7 +76,7 @@ The following is a list of the permissions being granted:
 
 ## Step 2: Set up the MDT production deployment share
 
-Next, create a new MDT deployment share. You should not use the same deployment share that you used to create the reference image for a production deployment. Perform this procedure on the MDT01 server.
+Next, create a new **MDT** deployment share. You should not use the same deployment share that you used to create the reference image for a production deployment. Perform this procedure on the **MDT01** server.
 
 ### Create the MDT production deployment share
 
@@ -85,21 +85,21 @@ On **MDT01**:
 The steps for creating the deployment share for production are the same as when you created the deployment share for creating the custom reference image:
 
 1. Ensure you are signed on as: contoso\administrator.
-2. In the Deployment Workbench console, right-click **Deployment Shares** and select **New Deployment Share**.
+2. In the **Deployment Workbench** console, right-click **Deployment Shares** and select **New Deployment Share**.
 3. On the **Path** page, in the **Deployment share path** text box, type **D:\\MDTProduction** and click **Next**.
 4. On the **Share** page, in the **Share name** text box, type **MDTProduction$** and click **Next**.
 5. On the **Descriptive Name** page, in the **Deployment share description** text box, type **MDT Production** and click **Next**.
 6. On the **Options** page, accept the default settings and click **Next** twice, and then click **Finish**.
-7. Using File Explorer, verify that you can access the **\\\\MDT01\\MDTProduction$** share.
+7. Using **File Explorer**, verify that you can access the **\\\\MDT01\\MDTProduction$** share.
 
 ### Configure permissions for the production deployment share
 
-To read files in the deployment share, you need to assign NTFS and SMB permissions to the MDT Build Account (MDT\_BA) for the **D:\\MDTProduction** folder
+To read files in the deployment share, you need to assign **NTFS** and **SMB** permissions to the **MDT Build Account (MDT\_BA)** for the **D:\\MDTProduction** folder.
 
 On **MDT01**:
 
 1.  Ensure you are signed in as **contoso\\administrator**.
-2.  Modify the NTFS permissions for the **D:\\MDTProduction** folder by running the following command in an elevated Windows PowerShell prompt:
+2.  Modify the **NTFS** permissions for the **D:\\MDTProduction** folder by running the following command in an elevated **Windows PowerShell prompt**:
 
     ``` powershell
     icacls "D:\MDTProduction" /grant '"CONTOSO\MDT_BA":(OI)(CI)(M)'
@@ -112,33 +112,33 @@ The next step is to add a reference image into the deployment share with the set
 
 ### Add the Windows 10 Enterprise x64 RTM custom image
 
-In these steps, we assume that you have completed the steps in the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic, so you have a Windows 10 reference image at **D:\\MDTBuildLab\\Captures\REFW10X64-001.wim** on MDT01.
+In these steps, we assume that you have completed the steps in the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic, so you have a Windows 10 reference image at **D:\\MDTBuildLab\\Captures\REFW10X64-001.wim** on **MDT01**.
 
-1.  Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Production**; select the **Operating Systems** node, and create a folder named **Windows 10**.
+1.  Using the **Deployment Workbench**, expand the **Deployment Shares** node, and then expand **MDT Production**; select the **Operating Systems** node, and create a **folder** named **Windows 10**.
 2.  Right-click the **Windows 10** folder and select **Import Operating System**.
 3.  On the **OS Type** page, select **Custom image file** and click **Next**.
 4.  On the **Image** page, in the **Source file** text box, browse to **D:\\MDTBuildLab\\Captures\\REFW10X64-001.wim** and click **Next**.
 5.  On the **Setup** page, select the **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path** option; in the **Setup source directory** text box, browse to **D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM** and click **Next**.
 6.  On the **Destination** page, in the **Destination directory name** text box, type **W10EX64RTM**, click **Next** twice, and then click **Finish**.
-7.  After adding the operating system, double-click the added operating system name in the **Operating Systems / Windows 10** node and change the name to **Windows 10 Enterprise x64 RTM Custom Image**.
+7.  After adding the **Operating System**, double-click the added **Operating System** name in the **Operating Systems / Windows 10** node and change the name to **Windows 10 Enterprise x64 RTM Custom Image**.
 
->[!NOTE]
->The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
+> [!NOTE]
+> The reason for adding the setup files has changed since earlier versions of **MDT**. **MDT 2010** used the setup files to install Windows. **MDT** uses the **DISM** command to apply the image; however, you still need the **setup files** because some components in **roles and features** are stored outside the main image.
  
 
-![imported OS](../images/fig2-importedos.png)
+![Imported OS](../images/fig2-importedos.png)
 
 ## Step 4: Add an application
 
-When you configure your MDT Build Lab deployment share, you can also add applications to the new deployment share before creating your task sequence. This section walks you through the process of adding an application to the MDT Production deployment share using Adobe Reader as an example.
+When you configure your **MDT Build Lab deployment** share, you can also add **applications** to the new deployment share before creating your task sequence. This section walks you through the process of adding an application to the **MDT Production deployment** share using **Adobe Reader** as an example.
 
 ### Create the install: Adobe Reader DC
 
 On **MDT01**:
 
-1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC1902120058_en_US.exe) to **D:\\setup\\adobe** on MDT01.
-2. Extract the .exe file that you downloaded to an .msi (ex: .\AcroRdrDC1902120058_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
-3. In the Deployment Workbench, expand the **MDT Production** node and navigate to the **Applications** node.
+1. Download the Enterprise distribution version of [**Adobe Acrobat Reader DC**](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2100120140_en_US.exe) to **D:\\setup\\adobe** on MDT01.
+2. Extract the **.exe** file that you downloaded to a **.msi** (ex: .\AcroRdrDC2100120140_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
+3. In the **Deployment Workbench**, expand the **MDT Production** node and navigate to the **Applications** node.
 4. Right-click the **Applications** node, and create a new folder named **Adobe**.
 5. In the **Applications** node, right-click the **Adobe** folder and select **New Application**.
 6. On the **Application Type** page, select the **Application with source files** option and click **Next**.
@@ -147,13 +147,13 @@ On **MDT01**:
 9. On the **Destination** page, in the **Specify the name of the directory that should be created** text box, type **Install - Adobe Reader** and click **Next**.
 10. On the **Command Details** page, in the **Command Line** text box, type **msiexec /i AcroRead.msi /q**, click **Next** twice, and then click **Finish**.
 
-![acroread](../images/acroread.png)
+![acroread image](../images/acroread.png)
 
 The Adobe Reader application added to the Deployment Workbench.
 
 ## Step 5: Prepare the drivers repository
 
-In order to deploy Windows 10 with MDT successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
+In order to deploy Windows 10 with **MDT** successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot images and operating system, using the following hardware models as examples:
 -   Lenovo ThinkPad T420
 -   Dell Latitude 7390
 -   HP EliteBook 8560w
@@ -166,19 +166,19 @@ For boot images, you need to have storage and network drivers; for the operating
  
 ### Create the driver source structure in the file system
 
-The key to successful management of drivers for MDT, as well as for any other deployment solution, is to have a really good driver repository. From this repository, you import drivers into MDT for deployment, but you should always maintain the repository for future use.
+The key to successful management of drivers for **MDT**, as well as for any other deployment solution, is to have a really good driver repository. From this repository, you import drivers into MDT for deployment, but you should always maintain the repository for future use.
 
 On **MDT01**:
 
 > [!IMPORTANT]
 > In the steps below, it is critical that the folder names used for various computer makes and models exactly match the results of **wmic computersystem get model,manufacturer** on the target system.
 
-1.  Using File Explorer, create the **D:\\drivers** folder.
+1.  Using **File Explorer**, create the **D:\\drivers** folder.
 2.  In the **D:\\drivers** folder, create the following folder structure:
-    1.  WinPE x86
-    2.  WinPE x64
-    3.  Windows 10 x64
-3.  In the new Windows 10 x64 folder, create the following folder structure:
+    1.  **WinPE x86**
+    2.  **WinPE x64**
+    3.  **Windows 10 x64**
+3.  In the new **Windows 10 x64** folder, create the following folder structure:
     -   Dell Inc
         -   Latitude E7450
     -   Hewlett-Packard
@@ -193,12 +193,12 @@ On **MDT01**:
  
 ### Create the logical driver structure in MDT
 
-When you import drivers to the MDT driver repository, MDT creates a single instance folder structure based on driver class names. However, you can, and should, mimic the driver structure of your driver source repository in the Deployment Workbench. This is done by creating logical folders in the Deployment Workbench.
-1.  On MDT01, using Deployment Workbench, select the **Out-of-Box Drivers** node.
+When you import drivers to the **MDT driver repository**, **MDT** creates a single instance folder structure based on driver class names. However, you can, and should, mimic the driver structure of your driver source repository in the Deployment Workbench. This is done by creating logical folders in the Deployment Workbench.
+1.  On **MDT01**, using Deployment Workbench, select the **Out-of-Box Drivers** node.
 2.  In the **Out-Of-Box Drivers** node, create the following folder structure:
-    1.  WinPE x86
-    2.  WinPE x64
-    3.  Windows 10 x64
+    1.  **WinPE x86**
+    2.  **WinPE x64**
+    3.  **Windows 10 x64**
 3.  In the **Windows 10 x64** folder, create the following folder structure:
     -   Dell Inc
         -   Latitude E7450
@@ -209,7 +209,7 @@ When you import drivers to the MDT driver repository, MDT creates a single insta
     -   Microsoft Corporation
         -   Surface Laptop
 
-The preceding folder names should match the actual make and model values that MDT reads from devices during deployment. You can find out the model values for your machines by using the following command in Windows PowerShell:
+The preceding folder names should match the actual make and model values that MDT reads from devices during deployment. You can find out the model values for your machines by using the following command in an elevated **Windows PowerShell prompt**:
 
 ``` powershell
 Get-WmiObject -Class:Win32_ComputerSystem
@@ -220,7 +220,7 @@ Or, you can use this command in a normal command prompt:
 wmic csproduct get name
 ```
 
-If you want a more standardized naming convention, try the ModelAliasExit.vbs script from the Deployment Guys blog post entitled [Using and Extending Model Aliases for Hardware Specific Application Installation](https://go.microsoft.com/fwlink/p/?LinkId=619536).
+If you want a more standardized naming convention, try the **ModelAliasExit.vbs script** from the Deployment Guys blog post entitled [Using and Extending Model Aliases for Hardware Specific Application Installation](https://go.microsoft.com/fwlink/p/?LinkId=619536).
 
 ![drivers](../images/fig4-oob-drivers.png)
 
@@ -229,20 +229,20 @@ The Out-of-Box Drivers structure in the Deployment Workbench.
 ### Create the selection profiles for boot image drivers
 
 By default, MDT adds any storage and network drivers that you import to the boot images. However, you should add only the drivers that are necessary to the boot image. You can control which drivers are added by using selection profiles.
-The drivers that are used for the boot images (Windows PE) are Windows 10 drivers. If you can’t locate Windows 10 drivers for your device, a Windows 7 or Windows 8.1 driver will most likely work, but Windows 10 drivers should be your first choice.
+The drivers that are used for the boot images (Windows PE) are Windows 10 drivers. If you can’t locate **Windows 10** drivers for your device, a **Windows 7** or **Windows 8.1** driver will most likely work, but Windows 10 drivers should be your first choice.
 
 On **MDT01**:
 
-1.  In the Deployment Workbench, under the **MDT Production** node, expand the **Advanced Configuration** node, right-click the **Selection Profiles** node, and select **New Selection Profile**.
-2.  In the New Selection Profile Wizard, create a selection profile with the following settings:
-    1.  Selection Profile name: WinPE x86
-    2.  Folders: Select the WinPE x86 folder in Out-of-Box Drivers.
-    3. Click **Next**, **Next** and **Finish**.
+1.  In the **Deployment Workbench**, under the **MDT Production** node, expand the **Advanced Configuration** node, right-click the **Selection Profiles** node, and select **New Selection Profile**.
+2.  In the **New Selection Profile Wizard**, create a **selection profile** with the following settings:
+    1.  Selection Profile name: **WinPE x86**
+    2.  Folders: Select the **WinPE x86 folder** in **Out-of-Box Drivers**.
+    3. Click **Next**, **Next**, and **Finish**.
 3.  Right-click the **Selection Profiles** node again, and select **New Selection Profile**.
-4.  In the New Selection Profile Wizard, create a selection profile with the following settings:
-    1.  Selection Profile name: WinPE x64
-    2.  Folders: Select the WinPE x64 folder in Out-of-Box Drivers.
-    3.  Click **Next**, **Next** and **Finish**.
+4.  In the **New Selection Profile Wizard**, create a **selection profile** with the following settings:
+    1.  Selection Profile name: **WinPE x64**
+    2.  Folders: Select the **WinPE x64 folder** in **Out-of-Box Drivers**.
+    3.  Click **Next**, **Next**, and **Finish**.
 
 ![figure 5](../images/fig5-selectprofile.png)
 
@@ -250,24 +250,23 @@ Creating the WinPE x64 selection profile.
 
 ### Extract and import drivers for the x64 boot image
 
-Windows PE supports all the hardware models that we have, but here you learn to add boot image drivers to accommodate any new hardware that might require additional drivers. In this example, you add the latest Intel network drivers to the x64 boot image.
+**Windows PE** supports all the hardware models that we have, but here you learn how to add boot image drivers to accommodate any new hardware that might require additional drivers. In this example, you add the latest Intel network drivers to the x64 boot image.
 
 On **MDT01**:
 
 1. Download **PROWinx64.exe** from Intel.com (ex: [PROWinx64.exe](https://downloadcenter.intel.com/downloads/eula/25016/Intel-Network-Adapter-Driver-for-Windows-10?httpDown=https%3A%2F%2Fdownloadmirror.intel.com%2F25016%2Feng%2FPROWinx64.exe)).
-2.  Extract PROWinx64.exe to a temporary folder - in this example to the **C:\\Tmp\\ProWinx64** folder.
-    a. **Note**: Extracting the .exe file manually requires an extraction utility. You can also run the .exe and it will self-extract files to the **%userprofile%\AppData\Local\Temp\RarSFX0** directory. This directory is temporary and will be deleted when the .exe terminates. 
-3.  Using File Explorer, create the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
+2.  Extract **PROWinx64.exe** to a temporary folder - in this example to the **C:\\Tmp\\ProWinx64** folder. Note that extracting the **.exe** file manually requires an extraction utility. You can also run the .exe and it will self-extract files to the **%userprofile%\AppData\Local\Temp\RarSFX0** directory. This directory is temporary and will be deleted when the **.exe** terminates.
+3.  Using **File Explorer**, create the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
 4.  Copy the content of the **C:\\Tmp\\PROWinx64\\PRO1000\\Winx64\\NDIS64** folder to the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
-5.  In the Deployment Workbench, expand the **MDT Production** > **Out-of-Box Drivers** node, right-click the **WinPE x64** node, and select **Import Drivers**, and use the following Driver source directory to import drivers: **D:\\Drivers\\WinPE x64\\Intel PRO1000**.
+5.  In the **Deployment Workbench**, expand the **MDT Production** > **Out-of-Box Drivers** node, right-click the **WinPE x64** node, select **Import Drivers**, and use the following driver source directory to import drivers: **D:\\Drivers\\WinPE x64\\Intel PRO1000**.
 
 ### Download, extract, and import drivers
 
 ### For the Lenovo ThinkStation P500
 
-For the ThinkStation P500 model, you use the Lenovo ThinkVantage Update Retriever software to download the drivers. With Update Retriever, you need to specify the correct Lenovo Machine Type for the actual hardware (the first four characters of the model name). As an example, the Lenovo ThinkStation P500 model has the 30A6003TUS model name, meaning the Machine Type is 30A6.
+For the **ThinkStation P500** model, you use the Lenovo ThinkVantage Update Retriever software to download the drivers. With Update Retriever, you need to specify the correct Lenovo Machine Type for the actual hardware (the first four characters of the model name). As an example, the Lenovo ThinkStation P500 model has the 30A6003TUS model name, meaning the Machine Type is 30A6.
 
-![ThinkStation](../images/thinkstation.png)
+![ThinkStation image](../images/thinkstation.png)
 
 To get the updates, download the drivers from the Lenovo ThinkVantage Update Retriever using its export function. You can also download the drivers by searching PC Support on the [Lenovo website](https://go.microsoft.com/fwlink/p/?LinkId=619543).
 
@@ -360,6 +359,9 @@ The task sequence for production deployment.
 In this section, you will learn how to configure the MDT Build Lab deployment share with the rules required to create a simple and dynamic deployment process. This includes configuring commonly used rules and an explanation of how these rules work.
 
 ### Configure the rules
+
+> [!NOTE]
+> The following instructions assume the device is online. If you're offline you can remove SLShare variable.
 
 On **MDT01**:
 
@@ -533,7 +535,7 @@ On **MDT01**:
 1. Download MDOP 2015 and copy the DaRT 10 installer file to the D:\\Setup\\DaRT 10 folder on MDT01 (DaRT\\DaRT 10\\Installers\\\<lang\>\\x64\\MSDaRT100.msi).
 2. Install DaRT 10 (MSDaRT10.msi) using the default settings.
 
-  ![DaRT](../images/dart.png)
+  ![DaRT image](../images/dart.png)
 
 2. Copy the two tools CAB files from **C:\\Program Files\\Microsoft DaRT\\v10** (**Toolsx86.cab** and **Toolsx64.cab**) to the production deployment share at **D:\\MDTProduction\\Tools\\x86** and **D:\\MDTProduction\\Tools\\x64**, respectively.
 3. In the Deployment Workbench, right-click the **MDT Production** deployment share and select **Properties**.
@@ -604,13 +606,13 @@ On **HV01**:
     2.  Installs the added application.
     3.  Updates the operating system via your local Windows Server Update Services (WSUS) server.
 
-![pc0005](../images/pc0005-vm.png)
+![pc0005 image1](../images/pc0005-vm.png)
 
 ### Application installation
 
 Following OS installation, Microsoft Office 365 Pro Plus - x64 is installed automatically.
 
- ![pc0005](../images/pc0005-vm-office.png)
+ ![pc0005 image2](../images/pc0005-vm-office.png)
 
 ### Use the MDT monitoring feature
 
@@ -731,7 +733,7 @@ On **MDT01**:
 The ISO that you got when updating the offline media item can be burned to a DVD and used directly (it will be bootable), but it is often more efficient to use USB sticks instead since they are faster and can hold more data. (A dual-layer DVD is limited to 8.5 GB.)
 
 >[!TIP] 
->In this example, the .wim file is 5.5 GB in size. However, bootable USB sticks are formatted with the FAT32 file system which limits file size to 4.0 GB. This means you must split the .wim file, which can be done using DISM: <br>&nbsp;<br>Dism /Split-Image /ImageFile:D:\MDTOfflinemedia\Content\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.wim /SWMFile:E:\sources\install.swm /FileSize:3800. <br>&nbsp;<br>Windows Setup automatically installs from this file, provided you name it install.swm. The file names for the next files include numbers, for example: install2.swm, install3.swm. <br>&nbsp;<br>To enable split image in MDT, the Settings.xml file in your deployment share (ex: D:\MDTProduction\Control\Settings.xml) must have the **SkipWimSplit** value set to **False**. By default this value is set to True (\<SkipWimSplit\>True\</SkipWimSplit\>), so this must be changed and the offline media content updated.
+>In this example, the .wim file is 5.5 GB in size. However, bootable USB sticks are formatted with the FAT32 file system which limits file size to 4.0 GB. You can place the image on a different drive (ex: E:\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.swm) and then modify E:\Deploy\Control\OperatingSystems.xml to point to it. Alternatively to keep using the USB you must split the .wim file, which can be done using DISM: <br>&nbsp;<br>Dism /Split-Image /ImageFile:D:\MDTOfflinemedia\Content\Deploy\Operating Systems\W10EX64RTM\REFW10X64-001.wim /SWMFile:E:\sources\install.swm /FileSize:3800. <br>&nbsp;<br>Windows Setup automatically installs from this file, provided you name it install.swm. The file names for the next files include numbers, for example: install2.swm, install3.swm. <br>&nbsp;<br>To enable split image in MDT, the Settings.xml file in your deployment share (ex: D:\MDTProduction\Control\Settings.xml) must have the **SkipWimSplit** value set to **False**. By default this value is set to True (\<SkipWimSplit\>True\</SkipWimSplit\>), so this must be changed and the offline media content updated.
 
 Follow these steps to create a bootable USB stick from the offline media content:
 
