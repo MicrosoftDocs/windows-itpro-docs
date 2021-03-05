@@ -22,7 +22,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 You can gain more insight in an investigation by analyzing the events that happened on a specific device. First, select the device of interest from the [Devices list](machines-view-overview.md). On the device page, you can select the **Timeline** tab to view all the events that occurred on the device.
@@ -38,7 +38,7 @@ This feature simplifies the investigation experience by helping analysts underst
 
 For public preview, Techniques are available by default and shown together with events when a device's timeline is viewed. 
 
-![Techniques in device timeline screenshot](images/device-timeline-with-techniques.png)
+![Techniques in device timeline screenshot](images/device-timeline-2.png)
 
 Techniques are highlighted in bold text and appear with a blue icon on the left. The corresponding MITRE ATT&CK ID and technique name also appear as tags under Additional information. 
 
