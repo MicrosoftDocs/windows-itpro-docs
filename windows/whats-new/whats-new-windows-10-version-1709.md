@@ -85,9 +85,9 @@ The AssignedAccess CSP has been expanded to make it easy for administrators to c
 
 **Windows security baselines** have been updated for Windows 10. A [security baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) is a group of Microsoft-recommended configuration settings and explains their security impact. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](https://docs.microsoft.com/windows/device-security/security-compliance-toolkit-10).
 
-### Windows Defender ATP 
+### Microsoft Defender for Endpoint
 
-Windows Defender ATP has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Windows Defender Advanced Threat Protection Security analytics dashboard](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection).
+Microsoft Defender for Endpoint has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Microsoft Defender for Endpoint Security analytics dashboard](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection).
 
 ### Windows Defender Application Guard
 
@@ -119,7 +119,7 @@ The minimum PIN length is being changed from 6 to 4, with a default of 6. For mo
 Microsoft has released new [Windows security baselines](https://docs.microsoft.com/windows/device-security/windows-security-baselines) for Windows Server and Windows 10. A security baseline is a group of Microsoft-recommended configuration settings with an explanation of their security impact. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](https://docs.microsoft.com/windows/device-security/security-compliance-toolkit-10).
 
 ### SMBLoris vulnerability
-An issue, known as “SMBLoris�?, which could result in denial of service, has been addressed.
+An issue, known as "SMBLoris", which could result in denial of service, has been addressed.
 
 
 ## Windows Analytics
@@ -149,7 +149,7 @@ Several network stack enhancements are available in this release. Some of these 
 [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
 [What's new in Windows 10, version 1709](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>
-[Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Windows Defender ATP in Windows 10, version 1709.
+[Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Microsoft Defender for Endpoint in Windows 10, version 1709.
 [Threat protection on Windows 10](https://docs.microsoft.com/windows/security/threat-protection/):Detects advanced attacks and data breaches, automates security incidents and improves security posture.<br>
 
 

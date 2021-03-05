@@ -4,7 +4,7 @@ description: Learn to block outbound traffic on a port by using the Group Policy
 ms.assetid: 59062b91-756b-42ea-8f2a-832f05d77ddf
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Create an Outbound Port Rule

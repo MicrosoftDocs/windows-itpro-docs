@@ -4,7 +4,7 @@ description: Learn about GPOs for isolated domains in this example configuration
 ms.assetid: e254ce4a-18c6-4868-8179-4078d9de215f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Isolated Domain GPOs
