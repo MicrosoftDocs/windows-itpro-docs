@@ -78,7 +78,7 @@ You can customize which columns to expose. You can also filter for flagged event
 ### Choose columns to expose
 You can choose which columns to expose in the timeline by selecting the **Choose columns** button.
 
-![Customize columns](images/filter-customize-columns.png)
+![Customize columns](images/timeline-columns.png)
 
 From there you can select which information set to include.
 
