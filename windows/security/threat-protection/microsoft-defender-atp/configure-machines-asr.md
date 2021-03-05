@@ -1,10 +1,10 @@
 ---
 title: Optimize ASR rule deployment and detections
-description: Optimize your attack surface reduction (ASR) rules to identify and prevent typical malware exploits. 
+description: Optimize your attack surface reduction (ASR) rules to identify and prevent typical malware exploits.
 keywords: onboard, Intune management, MDATP, WDATP, Microsoft Defender, Windows Defender, advanced threat protection, attack surface reduction, ASR, security baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,20 +13,20 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Optimize ASR rule deployment and detections
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink).
+> Want to experience Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink).
 
 [Attack surface reduction (ASR) rules](./attack-surface-reduction.md) identify and prevent typical malware exploits. They control when and how potentially malicious code can run. For example, they can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, and block processes that run from USB drives.
 
@@ -52,5 +52,5 @@ For more information about ASR rule deployment in Microsoft 365 security center,
 **Related topics**
 
 * [Ensure your devices are configured properly](configure-machines.md)
-* [Get devices onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)
-* [Monitor compliance to the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md)
+* [Get devices onboarded to Microsoft Defender for Endpoint](configure-machines-onboarding.md)
+* [Monitor compliance to the Microsoft Defender for Endpoint security baseline](configure-machines-security-baseline.md)

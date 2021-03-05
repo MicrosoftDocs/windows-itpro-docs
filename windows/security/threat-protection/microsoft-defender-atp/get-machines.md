@@ -20,17 +20,19 @@ ms.topic: article
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## API description
-Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender ATP cloud.
+Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender for Endpoint cloud.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>The OData's `$filter` query is supported on: `computerDnsName`, `lastSeen`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.
-<br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+<br>See examples at [OData queries with Defender for Endpoint](exposed-apis-odata-samples.md)
 
 
 ## Limitations
@@ -56,7 +58,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 ## HTTP request
 
 ```http
-GET https://api.securitycenter.windows.com/api/machines
+GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
 ## Request headers
@@ -79,11 +81,8 @@ If successful and machines exists - 200 OK with list of [machine](machine.md) en
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-
 ```http
-GET https://api.securitycenter.windows.com/api/machines
+GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
 **Response**
@@ -94,7 +93,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines",
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
@@ -122,4 +121,4 @@ Content-type: application/json
 ```
 
 ## Related topics
-- [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+- [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)

@@ -16,7 +16,7 @@ ms.topic: article
 # Getting Started with the User State Migration Tool (USMT)
 This topic outlines the general process that you should follow to migrate files and settings.
 
-## In this Topic
+## In this topic
 -   [Step 1: Plan Your Migration](#step-1-plan-your-migration)
 
 -   [Step 2: Collect files and settings from the source computer](#step-2-collect-files-and-settings-from-the-source-computer)
@@ -48,7 +48,7 @@ This topic outlines the general process that you should follow to migrate files 
 ## Step 2: Collect files and settings from the source computer
 1.  Back up the source computer.
 
-2.  Close all applications. If some applications are running when you run the **ScanState** command, USMT might not migrate all of the specified data. For example, if Microsoft® Office Outlook® is open, USMT might not migrate PST files.
+2.  Close all applications. If some applications are running when you run the **ScanState** command, USMT might not migrate all of the specified data. For example, if Microsoft&reg; Office Outlook&reg; is open, USMT might not migrate PST files.
 
     **Note**  
     USMT will fail if it cannot migrate a file or setting unless you specify the **/C** option. When you specify the **/C** option, USMT will ignore the errors, and log an error every time that it encounters a file that is being used that USMT did not migrate. You can use the **&lt;ErrorControl&gt;** section in the Config.xml file to specify which errors should be ignored, and which should cause the migration to fail.
@@ -68,7 +68,7 @@ This topic outlines the general process that you should follow to migrate files 
 2.  Install all applications that were on the source computer. Although it is not always required, we recommend installing all applications on the destination computer before you restore the user state. This makes sure that migrated settings are preserved.
 
     **Note**  
-    The application version that is installed on the destination computer should be the same version as the one on the source computer. USMT does not support migrating the settings for an older version of an application to a newer version. The exception to this is Microsoft® Office, which USMT can migrate from an older version to a newer version.
+    The application version that is installed on the destination computer should be the same version as the one on the source computer. USMT does not support migrating the settings for an older version of an application to a newer version. The exception to this is Microsoft&reg; Office, which USMT can migrate from an older version to a newer version.
 
 3.  Close all applications. If some applications are running when you run the **LoadState** command, USMT might not migrate all of the specified data. For example, if Microsoft Office Outlook is open, USMT might not migrate PST files.
 

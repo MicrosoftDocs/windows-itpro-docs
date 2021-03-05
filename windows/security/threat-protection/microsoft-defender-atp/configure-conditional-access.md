@@ -4,7 +4,7 @@ description: Learn about steps that you need to do in Intune, Microsoft Defender
 keywords: conditional access, conditional, access, device risk, risk level, integration, intune integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
-# Configure Conditional Access in Microsoft Defender ATP
+# Configure Conditional Access in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
+
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 This section guides you through all the steps you need to take to properly implement Conditional Access.
 
@@ -54,7 +58,7 @@ It's important to note the required roles to access these portals and implement 
 
 Take the following steps to enable Conditional Access:
 - Step 1: Turn on the Microsoft Intune connection from Microsoft Defender Security Center
-- Step 2: Turn on the Microsoft Defender ATP integration in Intune
+- Step 2: Turn on the Defender for Endpoint integration in Intune
 - Step 3: Create the compliance policy in Intune
 - Step 4: Assign the policy 
 - Step 5: Create an Azure AD Conditional Access policy
@@ -66,7 +70,7 @@ Take the following steps to enable Conditional Access:
 3. Click **Save preferences**.
 
 
-### Step 2: Turn on the Microsoft Defender ATP integration in Intune
+### Step 2: Turn on the Defender for Endpoint integration in Intune
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **Device compliance** > **Microsoft Defender ATP**.
 3. Set **Connect Windows 10.0.15063+ devices to Microsoft Defender Advanced Threat Protection** to **On**.
@@ -107,4 +111,4 @@ Take the following steps to enable Conditional Access:
 
 For more information, see [Enable Microsoft Defender ATP with Conditional Access in Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

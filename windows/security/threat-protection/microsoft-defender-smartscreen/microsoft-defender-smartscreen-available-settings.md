@@ -2,7 +2,7 @@
 title: Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings (Windows 10)
 description: A list of all available settings for Microsoft Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
 keywords: SmartScreen Filter, Windows SmartScreen, Microsoft Defender SmartScreen
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -12,6 +12,7 @@ ms.date: 09/28/2020
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 # Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings
 **Applies to:**
@@ -34,28 +35,27 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 </tr>
 <tr>
 <td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure Windows Defender SmartScreen<p>
-<td><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure Windows Defender SmartScreen<p><b>Windows 10, Version 1607 and earlier:</b><br>Administrative Templates\Windows Components\File Explorer\Configure Windows SmartScreen</td>
-<td>At least Windows Server 2012, Windows 8 or Windows RT</td>
+<td><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure Windows Defender SmartScreen<p><b>Windows 10, Version 1607 and earlier:</b><br>Administrative Templates\Windows Components\File Explorer\Configure Windows SmartScreen<br><br>
+<b>At least Windows Server 2012, Windows 8 or Windows RT</b></td>
 <td>This policy setting turns on Microsoft Defender SmartScreen.<p>If you enable this setting, it turns on Microsoft Defender SmartScreen and your employees are unable to turn it off. Additionally, when enabling this feature, you must also pick whether Microsoft Defender SmartScreen should Warn your employees or Warn and prevent bypassing the message (effectively blocking the employee from the site).<p>If you disable this setting, it turns off Microsoft Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting, your employees can decide whether to use Microsoft Defender SmartScreen.</td>
 </tr>
 <tr>
 <td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
 <td><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
-<td><b>Windows 10, version 1703</td>
-<td>This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.</br></br>This setting does not protect against malicious content from USB devices, network shares or other non-internet sources.</p><p><b>Important:</b> Using a trustworthy browser helps ensure that these protections work as expected.</p></td>
+<td>This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.</br></br> This setting does not protect against malicious content from USB devices, network shares, or other non-internet sources.</p><p><b>Important:</b> Using a trustworthy browser helps ensure that these protections work as expected.</p></td>
 </tr>
 <tr>
-<td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen<p><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen<p><b>Windows 10, Version 1607 and earlier:</b><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows SmartScreen</td>
+<td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen (Microsoft Edge version 45 and earlier)<p>Administrative Templates\Microsoft Edge\SmartScreen settings\Configure Microsoft Defender SmartScreen (Microsoft Edge version 77 or later)<p><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen (Microsoft Edge version 45 and earlier)<p>Administrative Templates\Microsoft Edge\SmartScreen settings\Configure Microsoft Defender SmartScreen (Microsoft Edge version 77 or later)<p><b>Windows 10, Version 1607 and earlier:</b><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows SmartScreen</td>
 <td>Microsoft Edge on Windows 10 or later</td>
 <td>This policy setting turns on Microsoft Defender SmartScreen.<p>If you enable this setting, it turns on Microsoft Defender SmartScreen and your employees are unable to turn it off.<p>If you disable this setting, it turns off Microsoft Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting, your employees can decide whether to use Microsoft Defender SmartScreen.</td>
 </tr>
 <tr>
-<td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files<p><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files<p><b>Windows 10, Version 1511 and 1607:</b><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for files</td>
+<td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files (Microsoft Edge version 45 and earlier)<p>Administrative Templates\Microsoft Edge\SmartScreen settings\Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads (Microsoft Edge version 77 or later)<p><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files (Microsoft Edge version 45 and earlier)<p>Administrative Templates\Microsoft Edge\SmartScreen settings\Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads (Microsoft Edge version 77 or later)<p><b>Windows 10, Version 1511 and 1607:</b><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for files</td>
 <td>Microsoft Edge on Windows 10, version 1511 or later</td>
 <td>This policy setting stops employees from bypassing the Microsoft Defender SmartScreen warnings about potentially malicious files.<p>If you enable this setting, it stops employees from bypassing the warning, stopping the file download.<p>If you disable or don't configure this setting, your employees can bypass the warnings and continue to download potentially malicious files.</td>
 </tr>
 <tr>
-<td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites<p><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites<p><b>Windows 10, Version 1511 and 1607:</b><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for sites</td>
+<td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites (Microsoft Edge version 45 and earlier)<p>Administrative Templates\Microsoft Edge\SmartScreen settings\Prevent bypassing Microsoft Defender SmartScreen prompts for sites (Microsoft Edge version 77 or later)<p><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites (Microsoft Edge version 45 and earlier)<p>Administrative Templates\Microsoft Edge\SmartScreen settings\Prevent bypassing Microsoft Defender SmartScreen prompts for sites (Microsoft Edge version 77 or later)<p><b>Windows 10, Version 1511 and 1607:</b><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for sites</td>
 <td>Microsoft Edge on Windows 10, version 1511 or later</td>
 <td>This policy setting stops employees from bypassing the Microsoft Defender SmartScreen warnings about potentially malicious sites.<p>If you enable this setting, it stops employees from bypassing the warning, stopping them from going to the site.<p>If you disable or don't configure this setting, your employees can bypass the warnings and continue to visit a potentially malicious site.</td>
 </tr>
@@ -160,7 +160,7 @@ For Microsoft Defender SmartScreen Edge MDM policies, see [Policy CSP - Browser]
 </table>
 
 ## Recommended Group Policy and MDM settings for your organization
-By default, Microsoft Defender SmartScreen lets employees bypass warnings. Unfortunately, this can let employees continue to an unsafe site or to continue to download an unsafe file, even after being warned. Because of this possibility, we strongly recommend that you set up Microsoft Defender SmartScreen to block high-risk interactions instead of providing just a warning.
+By default, Microsoft Defender SmartScreen lets employees bypass warnings. Unfortunately, this feature can let employees continue to an unsafe site or to continue to download an unsafe file, even after being warned. Because of this possibility, we strongly recommend that you set up Microsoft Defender SmartScreen to block high-risk interactions instead of providing just a warning.
 
 To better help you protect your organization, we recommend turning on and using these specific Microsoft Defender SmartScreen Group Policy and MDM settings.
 <table>
@@ -169,15 +169,15 @@ To better help you protect your organization, we recommend turning on and using 
 <th align="left">Recommendation</th>
 </tr>
 <tr>
-<td>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows Defender SmartScreen</td>
+<td>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows Defender SmartScreen (Microsoft Edge version 45 and earlier)<p>Administrative Templates\Microsoft Edge\SmartScreen settings\Configure Microsoft Defender SmartScreen (Microsoft Edge version 77 or later)</td>
 <td><b>Enable.</b> Turns on Microsoft Defender SmartScreen.</td>
 </tr>
 <tr>
-<td>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites</td>
+<td>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites (Microsoft Edge version 45 and earlier)<p>Administrative Templates\Microsoft Edge\SmartScreen settings\Prevent bypassing Windows Defender SmartScreen prompts for sites (Microsoft Edge version 77 or later)</td>
 <td><b>Enable.</b> Stops employees from ignoring warning messages and continuing to a potentially malicious website.</td>
 </tr>
 <tr>
-<td>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files</td>
+<td>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files (Microsoft Edge version 45 and earlier)<p>Administrative Templates\Microsoft Edge\SmartScreen settings\Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads (Microsoft Edge version 77 or later) </td>
 <td><b>Enable.</b> Stops employees from ignoring warning messages and continuing to download potentially malicious files.</td>
 </tr>
 <tr>
@@ -219,4 +219,3 @@ To better help you protect your organization, we recommend turning on and using 
 - [Microsoft Defender SmartScreen overview](microsoft-defender-smartscreen-overview.md)
 
 - [Available Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](/microsoft-edge/deploy/available-policies)
-

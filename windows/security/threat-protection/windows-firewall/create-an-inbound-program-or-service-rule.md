@@ -4,7 +4,7 @@ description: Learn how to allow inbound traffic to a program or service by using
 ms.assetid: 00b7fa60-7c64-4ba5-ba95-c542052834cf
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Create an Inbound Program or Service Rule

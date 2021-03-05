@@ -48,6 +48,8 @@ ms.date: 10/14/2020
 <!--Policy-->
 <a href="" id="windowssandbox-allowaudioinput"></a>**WindowsSandbox/AllowAudioInput**
 
+Available in the latest Windows 10 insider preview build.
+
 <!--SupportedSKUs-->
 <table>
 <tr>
@@ -60,7 +62,7 @@ ms.date: 10/14/2020
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
@@ -68,11 +70,11 @@ ms.date: 10/14/2020
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -134,6 +136,8 @@ The following are the supported values:
 <!--Policy-->
 <a href="" id="windowssandbox-allowclipboardredirection"></a>**WindowsSandbox/AllowClipboardRedirection**  
 
+Available in the latest Windows 10 insider preview build.
+
 <!--SupportedSKUs-->
 <table>
 <tr>
@@ -146,7 +150,7 @@ The following are the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
@@ -154,11 +158,11 @@ The following are the supported values:
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -217,6 +221,8 @@ The following are the supported values:
 <!--Policy-->
 <a href="" id="windowssandbox-allownetworking"></a>**WindowsSandbox/AllowNetworking**  
 
+Available in the latest Windows 10 insider preview build.
+
 <!--SupportedSKUs-->
 <table>
 <tr>
@@ -229,7 +235,7 @@ The following are the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
@@ -237,11 +243,11 @@ The following are the supported values:
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -298,6 +304,8 @@ The following are the supported values:
 <!--Policy-->
 <a href="" id="windowssandbox-allowprinterredirection"></a>**WindowsSandbox/AllowPrinterRedirection**  
 
+Available in the latest Windows 10 insider preview build.
+
 <!--SupportedSKUs-->
 <table>
 <tr>
@@ -310,7 +318,7 @@ The following are the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
@@ -318,11 +326,11 @@ The following are the supported values:
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -380,6 +388,8 @@ The following are the supported values:
 <!--Policy-->
 <a href="" id="windowssandbox-allowvgpu"></a>**WindowsSandbox/AllowVGPU**  
 
+Available in the latest Windows 10 insider preview build.
+
 <!--SupportedSKUs-->
 <table>
 <tr>
@@ -392,7 +402,7 @@ The following are the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
@@ -400,11 +410,11 @@ The following are the supported values:
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -465,6 +475,8 @@ The following are the supported values:
 <!--Policy-->
 <a href="" id="windowssandbox-allowvideoinput"></a>**WindowsSandbox/AllowVideoInput**  
 
+Available in the latest Windows 10 insider preview build.
+
 <!--SupportedSKUs-->
 <table>
 <tr>
@@ -477,7 +489,7 @@ The following are the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
@@ -485,11 +497,11 @@ The following are the supported values:
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -545,17 +557,5 @@ The following are the supported values:
 <!--/Policy-->
 
 <hr/>
-
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-- 9 - Available in Windows 10, version 2010.
 
 <!--/Policies-->

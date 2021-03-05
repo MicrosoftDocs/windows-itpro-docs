@@ -1,7 +1,8 @@
 ---
 title: Introduction to the Windows Insider Program for Business
-description: Introduction to the Windows Insider Program for Business and why IT Pros should join 
+description: In this article, you'll learn about the Windows Insider Program for Business and why IT Pros should join.
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, WiP4Biz, enterprise, rings, flight
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro

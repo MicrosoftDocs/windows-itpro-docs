@@ -1,10 +1,10 @@
 ---
 title: Create a WDAC policy for fully-managed devices (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
-keywords:  security, malware
+keywords: security, malware
 ms.topic: conceptual
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,8 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 11/20/2019
+ms.date: 01/27/2021
+ms.technology: mde
 ---
 
 # Create a WDAC policy for fully-managed devices
@@ -41,7 +42,7 @@ Alice previously created a policy for the organization's lightly-managed devices
 Alice identifies the following key factors to arrive at the "circle-of-trust" for Lamna's fully-managed devices:
 
 - All clients are running Windows 10 version 1903 or above;
-- All clients are managed by Microsoft Endpoint Manager (MEM) either with Configuration Manager (MEMCM) standalone or hybrid mode with Intune;
+- All clients are managed by Microsoft Endpoint Manager (MEM) either with Configuration Manager (MEMCM) standalone or [co-managed](https://docs.microsoft.com/mem/configmgr/comanage/overview) with Intune;
 
 > [!NOTE]
 > Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager (SCCM) 

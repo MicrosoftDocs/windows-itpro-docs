@@ -4,8 +4,8 @@ description: Learn how to manage Microsoft Defender for Endpoint with Intune
 keywords: post-migration, manage, operations, maintenance, utilization, intune, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,8 +15,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-scenario
+  - M365-security-compliance
+  - m365solution-scenario
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
@@ -26,9 +26,11 @@ ms.reviewer: chventou
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem), which includes Microsoft Intune (Intune) to manage your organization's threat protection features for devices (also referred to as endpoints). [Learn more about Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview).
 
@@ -61,7 +63,7 @@ The following table lists various tasks you can perform to configure Microsoft D
 |**Use Conditional Access** to control the devices and apps that can connect to your email and company resources |[Configure Conditional Access in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-conditional-access) |
 |**Configure Microsoft Defender Antivirus settings** using the Policy configuration service provider ([Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)) |[Device restrictions: Microsoft Defender Antivirus](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)<br/><br/>[Policy CSP - Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)  | 
 |**If necessary, specify exclusions for Microsoft Defender Antivirus** <br/><br/>*Generally, you shouldn't need to apply exclusions. Microsoft Defender Antivirus includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios.* |[Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/help/822158/virus-scanning-recommendations-for-enterprise-computers)<br/><br/>[Device restrictions: Microsoft Defender Antivirus Exclusions for Windows 10 devices](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions) <br/><br/>[Configure Microsoft Defender Antivirus exclusions on Windows Server 2016 or 2019](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus)|
-|**Configure your attack surface reduction rules** to target software behaviors that are often abused by attackers<br/><br/>*Configure your attack surface reduction rules in [audit mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/audit-windows-defender) at first (for at least one week and up to two months). You can monitor status using Power BI ([get our template](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Attack%20Surface%20Reduction%20rules)), and then set those rules to active mode when you're ready.* |[Audit mode in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/audit-windows-defender)<br/><br/>[Endpoint protection: Attack Surface Reduction](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json#attack-surface-reduction)<br/><br/>[Learn more about attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)<br/><br/>[Tech Community blog post: Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) |
+|**Configure your attack surface reduction rules** to target software behaviors that are often abused by attackers<br/><br/>*Configure your attack surface reduction rules in [audit mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/audit-windows-defender) at first (for at least one week and up to two months). You can monitor status using Power BI ([get our template](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Attack%20Surface%20Reduction%20rules)), and then set those rules to active mode when you're ready.* |[Audit mode in Microsoft Defender for Endpoint ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/audit-windows-defender)<br/><br/>[Endpoint protection: Attack Surface Reduction](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json#attack-surface-reduction)<br/><br/>[Learn more about attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)<br/><br/>[Tech Community blog post: Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) |
 |**Configure your network filtering** to block outbound connections from any app to IP addresses or domains with low reputations  <br/><br/>*Network filtering is also referred to as [network protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection).*<br/><br/>*Make sure that Windows 10 devices have the latest [antimalware platform updates](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform) installed.*|[Endpoint protection: Network filtering](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#network-filtering)<br/><br/>[Review network protection events in Windows Event Viewer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-network-protection#review-network-protection-events-in-windows-event-viewer) |
 |**Configure controlled folder access** to protect against ransomware <br/><br/>*[Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) is also referred to as antiransomware protection.*  |[Endpoint protection: Controlled folder access](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/>[Enable controlled folder access in Intune](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders#intune)  |
 |**Configure exploit protection** to protect your organization's devices from malware that uses exploits to spread and infect other devices <br/><br/> *[Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) is also referred to as Exploit Guard.* |[Endpoint protection: Microsoft Defender Exploit Guard](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-exploit-guard) <br/><br/>[Enable exploit protection in Intune](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection#intune) |
