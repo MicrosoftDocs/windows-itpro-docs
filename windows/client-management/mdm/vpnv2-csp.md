@@ -513,7 +513,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 - SplitTunnel - For this traffic filter rule, only the traffic meant for the VPN interface (as determined by the networking stack) goes over the interface. Internet traffic can continue to go over the other interfaces.
 - ForceTunnel - For this traffic rule all IP traffic must go through the VPN Interface only.
 
-This is only applicable for App ID based Traffic Filter rules.
+This is only applicable for App ID-based Traffic Filter rules.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -528,7 +528,7 @@ If no inbound filter is provided, then by default all unsolicited inbound traffi
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-edpmodeid"></a>**VPNv2/**<em>ProfileName</em>**/EdpModeId**  
-Enterprise ID, which is required for connecting this VPN profile with an WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
+Enterprise ID, which is required for connecting this VPN profile with a WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 
 Additionally when connecting with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection), the admin does not have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced config is needed) because the WIP policies and App lists automatically takes effect.
 
@@ -573,7 +573,7 @@ When the DeviceTunnel profile is turned on, it does the following things:
 
 - First, it automatically becomes an "always on" profile.
 - Second, it does not require the presence or logging in of any user to the machine in order for it to connect.
-- Third, no other device tunnel profile maybe be present on the same machine.
+- Third, no other device tunnel profile maybe is present on the same machine.-
 
 A device tunnel profile must be deleted before another device tunnel profile can be added, removed, or connected.
 
@@ -596,7 +596,7 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 Reserved for future use.
 
 <a href="" id="vpnv2-profilename-trustednetworkdetection"></a>**VPNv2/**<em>ProfileName</em>**/TrustedNetworkDetection**  
-Optional. Comma separated string to identify the trusted network. VPN will not connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
+Optional. Comma-separated string to identify the trusted network. VPN will not connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -667,7 +667,7 @@ Added in Windows 10, version 1607. Hashes for the VPN Client to look for the co
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-devicecompliance-sso-eku"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Sso/Eku**  
-Added in Windows 10, version 1607. Comma Separated list of EKUs for the VPN Client to look for the correct certificate for Kerberos Authentication.
+Added in Windows 10, version 1607. Comma-Separated list of EKUs for the VPN Client to look for the correct certificate for Kerberos Authentication.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -862,7 +862,7 @@ Added in Windows 10, version 1607. The preshared key used for an L2TP connectio
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-nativeprofile-disableclassbaseddefaultroute"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/DisableClassBasedDefaultRoute**  
-Added in Windows 10, version 1607. Specifies the class based default routes. For example, if the interface IP begins with 10, it assumes a class a IP and pushes the route to 10.0.0.0/8
+Added in Windows 10, version 1607. Specifies the class-based default routes. For example, if the interface IP begins with 10, it assumes a class an IP and pushes the route to 10.0.0.0/8
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
