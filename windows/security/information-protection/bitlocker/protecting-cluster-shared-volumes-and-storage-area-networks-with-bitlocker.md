@@ -25,7 +25,7 @@ ms.custom: bitlocker
 
 This topic describes the procedure to protect cluster shared volumes (CSVs) and storage area networks (SANs) by using BitLocker.
 
-BitLocker protects both physical disk resources and cluster shared volumes version 2.0 (CSV2.0). BitLocker on clustered volumes provides an extra layer of protection that can be used by administrators wishing to protect sensitive, highly available data. By adding this extra layer of protection to the clustered volume, administrators are increasing the security to resources within an organization by allowing only certain user accounts access to unlock the BitLocker volume.
+BitLocker protects both physical disk resources and cluster shared volumes version 2.0 (CSV2.0). BitLocker on clustered volumes provides an extra layer of protection that can be used by administrators wishing to protect sensitive, highly available data. The administrators use this extra layer of protection to increase the security to resources within an organization by allowing only certain user accounts access to unlock the BitLocker volume.
 
 ## <a href="" id="configuring-bitlocker-on-cluster-shared-volumes-"></a>Configuring BitLocker on Cluster Shared Volumes
 
