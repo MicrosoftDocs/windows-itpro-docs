@@ -36,7 +36,7 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 
 ## Microsoft Intune
 
->Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This includes support for features such as [Windows Autopilot](#windows-autopilot). However, note that Windows Update for Business (WUfB) does not currently support any LTSC releases, therefore you should use WSUS or Configuration Manager for patching.
+Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This includes support for features such as [Windows Autopilot](#windows-autopilot). However, note that Windows Update for Business (WUfB) does not currently support any LTSC releases, therefore you should use WSUS or Configuration Manager for patching.
 
 ## Security
 
@@ -172,10 +172,16 @@ For example, you can choose the XTS-AES 256 encryption algorithm, and have it ap
 To achieve this:
 
 1. Configure the [encryption method settings](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption) in the Windows 10 Endpoint Protection profile to the desired encryption algorithm. 
+
 2. [Assign the policy](https://docs.microsoft.com/intune/device-profile-assign) to your Autopilot device group. 
-    - **IMPORTANT**: The encryption policy must be assigned to **devices** in the group, not users.
+
+   > [!IMPORTANT]
+   > The encryption policy must be assigned to **devices** in the group, not users.
+
 3. Enable the Autopilot [Enrollment Status Page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
-    - **IMPORTANT**: If the ESP is not enabled, the policy will not apply before encryption starts.
+
+   > [!IMPORTANT]
+   > If the ESP is not enabled, the policy will not apply before encryption starts.
 
 ### Identity protection
 
@@ -190,7 +196,7 @@ New features in [Windows Hello for Business](/windows/security/identity-protecti
 - For Windows Phone devices, an administrator is able to initiate a remote PIN reset through the Intune portal.
 - For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-features#pin-reset).
 
-[Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in the [Kiosk configuration](#kiosk-configuration) section. 
+[Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration). 
 - Windows Hello is now [password-less on S-mode](https://www.windowslatest.com/2018/02/12/microsoft-make-windows-10-password-less-platform/).
 - Support for S/MIME with Windows Hello for Business and APIs for non-Microsoft identity lifecycle management solutions.
 - Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign in, and will notify Dynamic lock users if Dynamic lock has stopped working because their phone or device Bluetooth is off.
@@ -204,7 +210,10 @@ For more information, see: [Windows Hello and FIDO2 Security Keys enable secure 
 
 Windows Defender Credential Guard is a security service in Windows 10 built to protect Active Directory (AD) domain credentials so that they can't be stolen or misused by malware on a user's machine. It is designed to protect against well-known threats such as Pass-the-Hash and credential harvesting.
 
-Windows Defender Credential Guard has always been an optional feature, but Windows 10 in S mode turns this functionality on by default when the machine has been Azure Active Directory joined. This provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode. Please note that Windows Defender Credential Guard is available only to S mode devices or Enterprise and Education Editions. 
+Windows Defender Credential Guard has always been an optional feature, but Windows 10 in S mode turns this functionality on by default when the machine has been Azure Active Directory joined. This provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode. 
+
+> [!NOTE]
+> Windows Defender Credential Guard is available only to S mode devices or Enterprise and Education Editions. 
 
 For more information, see [Credential Guard Security Considerations](/windows/access-protection/credential-guard/credential-guard-requirements#security-considerations).
 
@@ -277,14 +286,12 @@ For details, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
 
 The following new DISM commands have been added to manage feature updates:
 
-    DISM /Online /Initiate-OSUninstall 
-        – Initiates a OS uninstall to take the computer back to the previous installation of windows.
-    DISM /Online /Remove-OSUninstall 
-        – Removes the OS uninstall capability from the computer. 
-    DISM /Online /Get-OSUninstallWindow 
-        – Displays the number of days after upgrade during which uninstall can be performed.
-    DISM /Online /Set-OSUninstallWindow 
-        – Sets the number of days after upgrade during which uninstall can be performed.
+| Command | Description |
+|---------|-------------|
+| **DISM /Online /Initiate-OSUninstall** | Initiates a OS uninstall to take the computer back to the previous installation of windows. |
+| **DISM /Online /Remove-OSUninstall** | Removes the OS uninstall capability from the computer. |
+| **DISM /Online /Get-OSUninstallWindow** | Displays the number of days after upgrade during which uninstall can be performed. |
+| **DISM /Online /Set-OSUninstallWindow** | Sets the number of days after upgrade during which uninstall can be performed. |
 
 For more information, see [DISM operating system uninstall command-line options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-uninstallos-command-line-options).
 
@@ -300,18 +307,17 @@ For more information, see [Run custom actions during feature update](https://doc
 
 It is also now possible to run a script if the user rolls back their version of Windows using the PostRollback option.
 
-    /PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]
+    `/PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]`
 
 For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#21)
 
 New command-line switches are also available to control BitLocker:
 
-    Setup.exe /BitLocker AlwaysSuspend 
-        – Always suspend bitlocker during upgrade.
-    Setup.exe /BitLocker TryKeepActive 
-        – Enable upgrade without suspending bitlocker but if upgrade, does not work then suspend bitlocker and complete the upgrade.
-    Setup.exe /BitLocker ForceKeepActive 
-        – Enable upgrade without suspending bitlocker, but if upgrade does not work, fail the upgrade.
+| Command | Description |
+|---------|-------------|
+| **Setup.exe /BitLocker AlwaysSuspend** | Always suspend bitlocker during upgrade. |
+| **Setup.exe /BitLocker TryKeepActive** | Enable upgrade without suspending bitlocker but if upgrade, does not work then suspend bitlocker and complete the upgrade. |
+| **Setup.exe /BitLocker ForceKeepActive** | Enable upgrade without suspending bitlocker, but if upgrade does not work, fail the upgrade. |
 
 For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)
 
@@ -332,20 +338,27 @@ SetupDiag works by searching Windows Setup log files. When searching log files, 
 If you have shared devices deployed in your work place, **Fast sign-in** enables users to sign in to a [shared Windows 10 PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) in a flash!
 
 **To enable fast sign-in:**
+
 1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise LTSC 2019.
+
 2. Set the Policy CSP, and the **Authentication** and **EnableFastFirstSignIn** policies to enable fast sign-in.
+
 3. Sign-in to a shared PC with your account. You'll notice the difference!
 
-    ![fast sign-in](../images/fastsignin.png "fast sign-in")
+   ![fast sign-in](../images/fastsignin.png "fast sign-in")
 
 ### Web sign-in to Windows 10
 
 Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing "web sign-in," a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
 
 **To try out web sign-in:**
+
 1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
+
 2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
+
 3. On the lock screen, select web sign-in under sign-in options.
+
 4. Click the "Sign in" button to continue.
 
 ![Web sign-in](../images/websignin.png "web sign-in")
@@ -386,7 +399,7 @@ Maintaining devices is made easier with Device Health, a new, premium analytic t
 
 ### Accessibility
 
-"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](https://docs.microsoft.com/windows/configuration/windows-10-accessibility-for-itpros). Also see the accessibility section in the [What’s new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/) blog post.
+"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](https://docs.microsoft.com/windows/configuration/windows-10-accessibility-for-itpros). Also see the accessibility section in [What’s new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/), a blog post.
 
 ### Privacy
 
@@ -433,7 +446,9 @@ Previously, the customized taskbar could only be deployed using Group Policy or 
 [Additional MDM policy settings are available for Start and taskbar layout](/windows/configuration/windows-10-start-layout-options-and-policies). New MDM policy settings include:
 
 - Settings for the User tile: [**Start/HideUserTile**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideusertile), [**Start/HideSwitchAccount**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideswitchaccount), [**Start/HideSignOut**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidesignout), [**Start/HideLock**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidelock), and [**Start/HideChangeAccountSettings**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidechangeaccountsettings)
+
 - Settings for Power: [**Start/HidePowerButton**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidepowerbutton), [**Start/HideHibernate**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidehibernate), [**Start/HideRestart**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderestart), [**Start/HideShutDown**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideshutdown), and [**Start/HideSleep**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidesleep)
+
 - Additional new settings: [**Start/HideFrequentlyUsedApps**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidefrequentlyusedapps), [**Start/HideRecentlyAddedApps**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderecentlyaddedapps), **AllowPinnedFolder**, **ImportEdgeAssets**, [**Start/HideRecentJumplists**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderecentjumplists), [**Start/NoPinningToTaskbar**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-nopinningtotaskbar), [**Settings/PageVisibilityList**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#settings-pagevisibilitylist), and [**Start/HideAppsList**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideapplist).
 
 ## Windows Update
@@ -564,11 +579,11 @@ Several network stack enhancements are available in this release. Some of these 
 
 In this version of Windows 10, Microsoft has extended the ability to send a Miracast stream over a local network rather than over a direct wireless link. This functionality is based on the [Miracast over Infrastructure Connection Establishment Protocol (MS-MICE)](https://msdn.microsoft.com/library/mt796768.aspx).
 
-How it works:
+#### How it works
 
 Users attempt to connect to a Miracast receiver as they did previously. When the list of Miracast receivers is populated, Windows 10 will identify that the receiver is capable of supporting a connection over the infrastructure. When the user selects a Miracast receiver, Windows 10 will attempt to resolve the device's hostname via standard DNS, as well as via multicast DNS (mDNS). If the name is not resolvable via either DNS method, Windows 10 will fall back to establishing the Miracast session using the standard Wi-Fi direct connection.
 
-Miracast over Infrastructure offers a number of benefits:
+#### Miracast over Infrastructure offers a number of benefits
 
 - Windows automatically detects when sending the video stream over this path is applicable.
 - Windows will only choose this route if the connection is over Ethernet or a secure Wi-Fi network.
@@ -577,15 +592,18 @@ Miracast over Infrastructure offers a number of benefits:
 - It works well with older wireless hardware that is not optimized for Miracast over Wi-Fi Direct.
 - It leverages an existing connection which both reduces the time to connect and provides a very stable stream.
 
-Enabling Miracast over Infrastructure:
+#### Enabling Miracast over Infrastructure
 
 If you have a device that has been updated to Windows 10 Enterprise LTSC 2019, then you automatically have this new feature. To take advantage of it in your environment, you need to ensure the following is true within your deployment:
 
 - The device (PC, phone, or Surface Hub) needs to be running Windows 10, version 1703, Windows 10 Enterprise LTSC 2019, or a later OS.
+
 - A Windows PC or Surface Hub can act as a Miracast over Infrastructure *receiver*. A Windows PC or phone can act as a Miracast over Infrastructure *source*.
     - As a Miracast receiver, the PC or Surface Hub must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (e.g. using either WPA2-PSK or WPA2-Enterprise security). If the Hub is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
     - As a Miracast source, the  PC or phone must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
+
 - The DNS Hostname (device name) of the device needs to be resolvable via your DNS servers. You can achieve this by either allowing your device to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the device's hostname.
+
 - Windows 10 PCs must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
 
 It is important to note that Miracast over Infrastructure is not a replacement for standard Miracast. Instead, the functionality is complementary, and provides an advantage to users who are part of the enterprise network. Users who are guests to a particular location and don’t have access to the enterprise network will continue to connect using the Wi-Fi Direct connection method.
@@ -603,6 +621,7 @@ Azure Active Directory and Active Directory users using Windows Hello for Busine
 To get started, sign into your device using Windows Hello for Business. Bring up **Remote Desktop Connection** (mstsc.exe), type the name of the computer you want to connect to, and click **Connect**.
 
 - Windows remembers that you signed using Windows Hello for Business, and automatically selects Windows Hello for Business to authenticate you to your RDP session. You can also click **More choices** to choose alternate credentials.
+
 - Windows uses facial recognition to authenticate the RDP session to the Windows Server 2016 Hyper-V server. You can continue to use Windows Hello for Business in the remote session, but you must use your PIN.
 
 See the following example:
