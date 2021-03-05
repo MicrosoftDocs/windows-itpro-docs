@@ -320,13 +320,13 @@ For more information, see [Windows Setup Command-Line Options](https://docs.micr
 New command-line switches are also available to control BitLocker:
 
 - **Setup.exe /BitLocker AlwaysSuspend**
-  - Always suspend bitlocker during upgrade.
+  - Always suspend BitLocker during upgrade.
 
 - **Setup.exe /BitLocker TryKeepActive**
-  - Enable upgrade without suspending bitlocker but if upgrade, does not work then suspend bitlocker and complete the upgrade.
+  - Enable upgrade without suspending BitLocker, but if upgrade does not work, then suspend BitLocker and complete the upgrade.
 
 - **Setup.exe /BitLocker ForceKeepActive**
-  - Enable upgrade without suspending bitlocker, but if upgrade does not work, fail the upgrade.
+  - Enable upgrade without suspending BitLocker, but if upgrade does not work, fail the upgrade.
 
 For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)
 
