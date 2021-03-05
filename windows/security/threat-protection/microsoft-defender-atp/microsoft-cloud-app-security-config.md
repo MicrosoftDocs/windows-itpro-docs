@@ -52,7 +52,7 @@ To view and access Microsoft Defender for Endpoint data in Microsoft Cloud Apps 
 
 For more information about cloud discovery, see [Working with discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).
 
-If you are interested in trying Microsoft Cloud App Security, see [Microsoft Cloud App Security Trial](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1).
+If you're interested in trying Microsoft Cloud App Security, see [Microsoft Cloud App Security Trial](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1).
 
 ## Related topic
 - [Microsoft Cloud App Security integration](microsoft-cloud-app-security-integration.md)
