@@ -3,7 +3,7 @@ title: Run and customize on-demand scans in Microsoft Defender AV
 description: Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Security app
 keywords: scan, on-demand, dos, intune, instant scan
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.date: 11/13/2020
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Configure and run on-demand Microsoft Defender Antivirus scans
@@ -22,7 +23,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 You can run an on-demand scan on individual endpoints. These scans will start immediately, and you can define parameters for the scan, such as the location or type.
 
@@ -42,7 +43,7 @@ A full scan can be useful on endpoints that have reported a malware threat. The 
 > [!NOTE]
 > By default, quick scans run on mounted removable devices, such as USB drives.
 
-## Use Microsoft Endpoint Configuration Manager to run a scan
+## Use Microsoft Endpoint Manager to run a scan
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 2. Choose **Endpoint security** > **Antivirus**.

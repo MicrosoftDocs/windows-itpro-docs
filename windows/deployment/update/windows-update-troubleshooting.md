@@ -53,7 +53,7 @@ The update that is offered to a device depends on several factors. The following
 If the update you're offered isn't the most current available, it might be because your device is being managed by a WSUS server, and you're being offered the updates available on that server. It's also possible, if your device is part of a deployment group, that your admin is intentionally slowing the rollout of updates. Since the deployment is slow and measured to begin with, all devices will not receive the update on the same day.  
  
 ## My device is frozen at scan. Why? 
-The Settings UI communicates with the Update Orchestrator service which in turn communicates with to Windows Update service. If these services stop unexpectedly, then you might see this behavior. In such cases, follow these steps:  
+The Settings UI communicates with the Update Orchestrator service that in turn communicates with to Windows Update service. If these services stop unexpectedly, then you might see this behavior. In such cases, follow these steps:  
 
 1. Close the Settings app and reopen it.  
 
@@ -151,7 +151,7 @@ Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping
 ## Issues arising from configuration of conflicting policies 
 Windows Update provides a wide range configuration policy to control the behavior of the Windows Update service in a managed environment. While these policies let you configure the settings at a granular level, misconfiguration or setting conflicting policies may lead to unexpected behaviors. 
  
-See [How to configure automatic updates by using Group Policy or registry settings](https://support.microsoft.com/help/328010/how-to-configure-automatic-updates-by-using-group-policy-or-registry-s) for more information.
+For more information, see [How to configure automatic updates by using Group Policy or registry settings](https://support.microsoft.com/help/328010/how-to-configure-automatic-updates-by-using-group-policy-or-registry-s) for more information.
 
 ## Device cannot access update files
 
@@ -183,7 +183,7 @@ Windows 10 devices can receive updates from a variety of sources, including Wind
  
 Check the output for the Name and OffersWindowsUPdates parameters, which you can interpret according to this table. 
 
-|Output|Interpretation| 
+|Output|Meaning| 
 |-|-|
 |- Name: Microsoft Update <br>-OffersWindowsUpdates: True| - The update source is Microsoft Update, which means that updates for other Microsoft products besides the operating system could also be delivered.<br>- Indicates that the client is configured to receive updates for all Microsoft Products (Office, etc.) |
 |- <a name="BKMK_DCAT"></a>Name: DCat Flighting Prod <br>- OffersWindowsUpdates: True |- Starting with Windows 10 1709, feature updates are always delivered through the DCAT service.<br>- Indicates that the client is configured to receive feature updates from Windows Update. |
@@ -213,9 +213,9 @@ From Windows Update logs:
 2018-08-06 09:33:32:554  480 1118 Agent **  END  **  Agent: Finding updates [CallerId = OperationalInsight  Id = 49] 
 ```
 
-In the above log snippet, we see that the Criteria = "IsHidden = 0 AND DeploymentAction=*". "*" means there is nothing specified from the server. So, the scan happens but there is no direction to download or install to the agent. So it just scans the update and provides the results. 
+In the above log snippet, we see that the `Criteria = "IsHidden = 0 AND DeploymentAction=*"`. "*" means there is nothing specified from the server. So, the scan happens but there is no direction to download or install to the agent. So it just scans the update and provides the results. 
 
-Now if you look at the below logs, the Automatic update runs the scan and finds no update approved for it. So it reports there are no updates to install or download. This is due to an incorrect configuration. The WSUS side should approve the updates for Windows Update so that it fetches the updates and installs them at the specified time according to the policy. Since this scenario doesn't include Configuration Manager, there's no way to install unapproved updates. You're expecting the operational insight agent to do the scan and automatically trigger the download and installation but that won’t happen with this configuration.  
+As shown in the following logs, automatic update runs the scan and finds no update approved for it. So it reports there are no updates to install or download. This is due to an incorrect configuration. The WSUS side should approve the updates for Windows Update so that it fetches the updates and installs them at the specified time according to the policy. Since this scenario doesn't include Configuration Manager, there's no way to install unapproved updates. You're expecting the operational insight agent to do the scan and automatically trigger the download and installation but that won’t happen with this configuration.  
 
 ```console
 2018-08-06 10:58:45:992  480 5d8 Agent ** START **  Agent: Finding updates [CallerId = AutomaticUpdates  Id = 57] 
@@ -231,15 +231,15 @@ Now if you look at the below logs, the Automatic update runs the scan and finds 
 ```
 
 ## High bandwidth usage on Windows 10 by Windows Update 
-Users may see that Windows 10 is consuming all the bandwidth in the different offices under the system context. This behavior is by design. Components that may consume bandwidth expand beyond Windows Update components. 
+Users might see that Windows 10 is consuming all the bandwidth in the different offices under the system context. This behavior is by design. Components that might consume bandwidth expand beyond Windows Update components. 
 
-The following group policies can help mitigate this: 
+The following group policies can help mitigate this situation: 
  
 - Blocking access to Windows Update servers: [Policy Turn off access to all Windows Update features](https://gpsearch.azurewebsites.net/#4728) (Set to enabled)
 - Driver search: [Policy Specify search order for device driver source locations](https://gpsearch.azurewebsites.net/#183) (Set to "Do not search Windows Update")
 - Windows Store automatic update: [Policy Turn off Automatic Download and Install of updates](https://gpsearch.azurewebsites.net/#10876) (Set to enabled)
  
-Other components that reach out to the internet:
+Other components that connect to the internet:
 
 - Windows Spotlight: [Policy Configure Windows spotlight on lock screen](https://gpsearch.azurewebsites.net/#13362) (Set to disabled) 
 - Consumer experiences: [Policy Turn off Microsoft consumer experiences](https://gpsearch.azurewebsites.net/#13329) (Set to enabled) 

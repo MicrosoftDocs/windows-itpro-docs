@@ -3,7 +3,7 @@ title: Turn on cloud-delivered protection in Microsoft Defender Antivirus
 description: Turn on cloud-delivered protection to benefit from fast and advanced protection features.
 keywords: Microsoft Defender Antivirus, antimalware, security, cloud, block at first sight
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,6 +13,7 @@ ms.date: 11/13/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
+ms.technology: mde
 ---
 
 # Turn on cloud-delivered protection
@@ -21,7 +22,7 @@ ms.custom: nextgen
 
 **Applies to:**
 
-- Microsoft Defender Antivirus
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
 > The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud; rather, it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
@@ -56,7 +57,7 @@ For more information about the specific network-connectivity requirements to ens
 
 For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/intune/device-profiles)
 
-## Use Microsoft Endpoint Configuration  Manager to turn on cloud-delivered protection
+## Use Microsoft Endpoint Manager to turn on cloud-delivered protection
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 2. Choose **Endpoint security** > **Antivirus**.

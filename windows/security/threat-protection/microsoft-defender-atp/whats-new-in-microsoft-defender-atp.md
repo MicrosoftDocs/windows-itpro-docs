@@ -4,7 +4,7 @@ description: See what features are generally available (GA) in the latest releas
 keywords: what's new in microsoft defender atp, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
@@ -14,19 +14,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # What's new in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 The following features are generally available (GA) in the latest release of Microsoft Defender for Endpoint as well as security features in Windows 10 and Windows Server.
 
@@ -40,9 +42,22 @@ For more information preview features, see [Preview features](https://docs.micro
 > https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+as+well+as+security+features+in+Windows+10+and+Windows+Server.%22&locale=en-us
 > ```
 
+
+## January 2021
+
+- [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint now adds support for Windows Virtual Desktop.
+
+## December 2020
+- [Microsoft Defender for Endpoint for iOS](microsoft-defender-atp-ios.md) <br> Microsoft Defender for Endpoint now adds support for iOS. Learn how to install, configure, update, and use Microsoft Defender for Endpoint for iOS.
+
 ## September 2020
 - [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. Learn how to install, configure, update, and use Microsoft Defender for Endpoint for Android.
 - [Threat and vulnerability management macOS support](tvm-supported-os.md)<br> Threat and vulnerability management for macOS is now in public preview, and will continuously detect vulnerabilities on your macOS devices to help you prioritize remediation by focusing on risk. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
+
+
+## August 2020
+- [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. Learn how to install, configure, and use Microsoft Defender for Endpoint for Android.
+
 
 ## July 2020
 - [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates. 
@@ -83,7 +98,7 @@ For more information preview features, see [Preview features](https://docs.micro
 
 ## September 2019
 
-- [Tamper Protection settings using Intune](../microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management Portal (Intune).
+- [Tamper protection settings using Intune](../microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management Portal (Intune).
 
 - [Live response](live-response.md)<BR> Get instantaneous access to a device using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real-time.
 

@@ -74,7 +74,7 @@ The hard disk must be partitioned with at least two drives:
 -   The operating system drive (or boot drive) contains the operating system and its support files. It must be formatted with the NTFS file system.
 -   The system drive contains the files that are needed to load Windows after the firmware has prepared the system hardware. BitLocker is not enabled on this drive. For BitLocker to work, the system drive must not be encrypted, must differ from the operating system drive, and must be formatted with the FAT32 file system on computers that use UEFI-based firmware or with the NTFS file system on computers that use BIOS firmware. We recommend that system drive be approximately 350 MB in size. After BitLocker is turned on it should have approximately 250 MB of free space.
 
-A fixed data volume or removable data volume cannot be marked as an active partition.
+A partition subject to encryption cannot be marked as an active partition (this applies to the operating system, fixed data, and removable data drives).
 
 When installed on a new computer, Windows will automatically create the partitions that are required for BitLocker.
 
@@ -99,4 +99,3 @@ When installing the BitLocker optional component on a server you will also need 
 | [Troubleshoot BitLocker](troubleshoot-bitlocker.md) | This guide describes the resources that can help you troubleshoot BitLocker issues, and provides solutions for several common BitLocker issues. |
 | [Protecting cluster shared volumes and storage area networks with BitLocker](protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)| This topic for IT pros describes how to protect CSVs and SANs with BitLocker.| 
 | [Enabling Secure Boot and BitLocker Device Encryption on Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/docs/securebootandbitlocker) | This topic covers how to use BitLocker with Windows 10 IoT Core |
-

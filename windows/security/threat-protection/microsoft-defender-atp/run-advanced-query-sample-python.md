@@ -1,10 +1,10 @@
 ---
 title: Advanced Hunting with Python API Guide
 ms.reviewer: 
-description: Learn how to query using the Microsoft Defender Advanced Threat Protection API, by using Python, with examples.
+description: Learn how to query using the Microsoft Defender for Endpoint API, by using Python, with examples.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,18 +13,23 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Advanced Hunting using Python
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-**Applies to:**
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 Run advanced queries using Python, see [Advanced Hunting API](run-advanced-query-api.md).
 
@@ -46,9 +51,9 @@ tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID her
 appId = '11111111-1111-1111-1111-111111111111' # Paste your own app ID here
 appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret here
 
-url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
+url = "https://login.microsoftonline.com/%s/oauth2/token" % (tenantId)
 
-resourceAppIdUri = 'https://api.securitycenter.windows.com'
+resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
 
 body = {
     'resource' : resourceAppIdUri,
@@ -78,7 +83,7 @@ where
 ```
 query = 'RegistryEvents | limit 10' # Paste your own query here
 
-url = "https://api.securitycenter.windows.com/api/advancedqueries/run"
+url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 headers = { 
 	'Content-Type' : 'application/json',
 	'Accept' : 'application/json',

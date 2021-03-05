@@ -3,7 +3,7 @@ title: Configure and validate Microsoft Defender Antivirus network connections
 description: Configure and test your connection to the Microsoft Defender Antivirus cloud protection service.
 keywords: antivirus, Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,10 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 07/08/2020
+ms.date: 12/28/2020
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Configure and validate Microsoft Defender Antivirus network connections
@@ -23,7 +24,7 @@ manager: dansimp
 
 **Applies to:**
 
-- Microsoft Defender Antivirus
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 To ensure Microsoft Defender Antivirus cloud-delivered protection works properly, you need to configure your network to allow connections between your endpoints and certain Microsoft servers.
 
@@ -62,7 +63,7 @@ The table below lists the services and their associated URLs. Make sure that the
 | Malware submission storage|Upload location for files submitted to Microsoft via the Submission form or automatic sample submission	| `ussus1eastprod.blob.core.windows.net` <br/>    `ussus1westprod.blob.core.windows.net` <br/>    `usseu1northprod.blob.core.windows.net` <br/>    `usseu1westprod.blob.core.windows.net` <br/>    `ussuk1southprod.blob.core.windows.net` <br/>    `ussuk1westprod.blob.core.windows.net` <br/>    `ussas1eastprod.blob.core.windows.net` <br/>    `ussas1southeastprod.blob.core.windows.net` <br/>    `ussau1eastprod.blob.core.windows.net` <br/>    `ussau1southeastprod.blob.core.windows.net` |
 | Certificate Revocation List (CRL)|Used by Windows when creating the SSL connection to MAPS for updating the CRL	| `http://www.microsoft.com/pkiops/crl/` <br/> `http://www.microsoft.com/pkiops/certs` <br/>   `http://crl.microsoft.com/pki/crl/products` <br/> `http://www.microsoft.com/pki/certs` |
 | Symbol Store|Used by Microsoft Defender Antivirus to restore certain critical files during remediation flows	| `https://msdl.microsoft.com/download/symbols` |
-| Universal Telemetry Client| Used by Windows to send client diagnostic data; Microsoft Defender Antivirus uses this for product quality monitoring purposes	| This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:   `vortex-win.data.microsoft.com` <br/>   `settings-win.data.microsoft.com`|
+| Universal Telemetry Client| Used by Windows to send client diagnostic data; Microsoft Defender Antivirus uses telemetry for product quality monitoring purposes	| The update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:   `vortex-win.data.microsoft.com` <br/>   `settings-win.data.microsoft.com`|
 
 ## Validate connections between your network and the cloud
 
@@ -85,8 +86,7 @@ For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun
 
 You can download a sample file that Microsoft Defender Antivirus will detect and block if you are properly connected to the cloud.
 
-Download the file by visiting the following link:
-- https://aka.ms/ioavtest
+Download the file by visiting [https://aka.ms/ioavtest](https://aka.ms/ioavtest).
 
 >[!NOTE]
 >This file is not an actual piece of malware. It is a fake file that is designed to test if you are properly connected to the cloud.
@@ -105,16 +105,16 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
-2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Scan history** label:
+2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Scan history** label:
 
     ![Screenshot of the Scan history label in the Windows Security app](images/defender/wdav-history-wdsc.png)
 
-3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware.
+3. Under the **Quarantined threats** section, select **See full history** to see the detected fake malware.
 
    > [!NOTE]
    > Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
-   The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-microsoft-defender-antivirus.md).
+   The Windows event log will also show [Windows Defender client event ID 1116](troubleshoot-microsoft-defender-antivirus.md).
 
 ## Related articles
 

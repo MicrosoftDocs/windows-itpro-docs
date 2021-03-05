@@ -1,11 +1,11 @@
 ---
 title: Microsoft Defender ATP for Mac
-ms.reviewer:
-description: Learn how to install, configure, update, and use Microsoft Defender Advanced Threat Protection for Mac.
+ms.reviewer: 
+description: Learn how to install, configure, update, and use Microsoft Defender for Endpoint for Mac.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,15 +15,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Microsoft Defender for Endpoint for Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This topic describes how to install, configure, update, and use Defender for Endpoint for Mac.
 
@@ -66,12 +72,12 @@ There are several methods and deployment tools that you can use to install and c
 The three most recent major releases of macOS are supported.
 
 > [!IMPORTANT]
-> On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
+> On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 
 > [!IMPORTANT]
-> Extensive testing of MDE (Microsoft Defender for Endpoint) with new system extensions on macOS 11 (Big Sur) revealed an intermittent issue that impacts macOS devices with specific graphic cards models. In rare cases on impacted macOS devices calls into macOS system extensions were seen resulting in kernel panic. Microsoft is actively working with Apple engineering to clarify profile of impacted devices and to address this macOS issue. In the meantime, if you encounter such a kernel panic, please submit a feedback report to Apple through the Feedback Assistant app.
+> Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
 
-- 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
+- 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 1GB
 
 Beta versions of macOS are not supported.
@@ -98,7 +104,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 |**Spreadsheet of domains list**|**Description**|
 |:-----|:-----|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
+|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>Download the spreadsheet here: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
 
 Microsoft Defender for Endpoint can discover a proxy server by using the following discovery methods:
 - Proxy autoconfig (PAC)
@@ -131,7 +137,7 @@ The output from this command should be similar to the following:
 
 Once Microsoft Defender for Endpoint is installed, connectivity can be validated by running the following command in Terminal:
 ```bash
-mdatp --connectivity-test
+mdatp connectivity test
 ```
 
 ## How to update Microsoft Defender for Endpoint for Mac
@@ -144,10 +150,10 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## macOS kernel and system extensions
 
-In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. Visit [What's new in Microsoft Defender for Endpoint for Mac](mac-whatsnew.md) for relevant details.
+In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. For relevant details, see [What's new in Microsoft Defender for Endpoint for Mac](mac-whatsnew.md).
 
 ## Resources
 
-- For more information about logging, uninstalling, or other topics, see the [Resources](mac-resources.md) page.
+- For more information about logging, uninstalling, or other topics, see [Resources for Microsoft Defender for Endpoint for Mac](mac-resources.md).
 
-- [Privacy for Microsoft Defender for Endpoint for Mac](mac-privacy.md)
+- [Privacy for Microsoft Defender for Endpoint for Mac](mac-privacy.md).

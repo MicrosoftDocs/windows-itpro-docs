@@ -1,9 +1,9 @@
 ---
-title: Change history for [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+title: "Change history for [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)"
 ms.reviewer: 
 ms.author: dansimp
 description: This topic lists new and updated topics in the Defender for Endpoint content set.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,6 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.localizationpriority: medium
+ms.technology: mde
 ---
 
 # Change history for threat protection

@@ -4,7 +4,7 @@ description: This topic describes the changes that are must be made in order to 
 keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,16 +14,22 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
+ms.technology: mde
 ---
 
 # New configuration profiles for macOS Catalina and newer versions of macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
 
@@ -150,13 +156,13 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 4. After the certificate is created and installed to your device, run the following command from the Terminal to sign the file:
 
     ```bash
-    $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.apple.webcontent-filter.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
+    $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.microsoft.network-extension.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
     ```
     
     For example, if the certificate name is **SigningCertificate** and the signed file is going to be stored in Documents:
     
     ```bash
-    $ security cms -S -N "SigningCertificate" -i ~/Documents/com.apple.webcontent-filter.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
+    $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
     
 5. From the JAMF portal, navigate to **Configuration Profiles** and click the **Upload** button. Select `com.microsoft.network-extension.signed.mobileconfig` when prompted for the file.

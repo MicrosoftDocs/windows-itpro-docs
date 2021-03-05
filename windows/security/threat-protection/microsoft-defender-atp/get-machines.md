@@ -20,11 +20,13 @@ ms.topic: article
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## API description
 Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender for Endpoint cloud.
@@ -56,7 +58,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 ## HTTP request
 
 ```http
-GET https://api.securitycenter.windows.com/api/machines
+GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
 ## Request headers
@@ -79,11 +81,8 @@ If successful and machines exists - 200 OK with list of [machine](machine.md) en
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-
 ```http
-GET https://api.securitycenter.windows.com/api/machines
+GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
 **Response**
@@ -94,7 +93,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines",
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",

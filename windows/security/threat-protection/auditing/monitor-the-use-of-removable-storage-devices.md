@@ -4,7 +4,7 @@ description: Learn how advanced security auditing options can be used to monitor
 ms.assetid: b0a9e4a5-b7ff-41c6-96ff-0228d4ba5da8
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date:
+ms.date: 
+ms.technology: mde
 ---
 
 # Monitor the use of removable storage devices

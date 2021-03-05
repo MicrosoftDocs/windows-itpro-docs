@@ -88,7 +88,7 @@ For more information about what's new in MDM, see [What's new in mobile device e
 
 ### Microsoft Defender for Endpoint
 
-This release includes improved support for non-ASCII file paths has been added for Microsoft Defender for Endpoint Auto Incident Response (IR).
+This release includes improved support for non-ASCII file paths for Microsoft Defender Advanced Threat Protection (ATP) Auto Incident Response (IR).
 
 The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) parameter is deprecated in this release.
 
@@ -104,7 +104,7 @@ With specialized hardware and software components available on devices shipping 
 
 ### Windows Sandbox
 
-New polices for [Windows Sandbox](https://docs.microsoft.com/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) are available in this release. For more information, see [Policy CSP - WindowsSandbox](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowssandbox).
+New policies for [Windows Sandbox](https://docs.microsoft.com/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) are available in this release. For more information, see [Policy CSP - WindowsSandbox](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowssandbox).
 
 ### Windows Virtual Desktop (WVD)
 

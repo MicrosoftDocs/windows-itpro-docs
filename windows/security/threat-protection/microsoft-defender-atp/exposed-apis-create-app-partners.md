@@ -1,10 +1,10 @@
 ---
-title: Create an Application to access  Microsoft Defender for Endpoint without a user
+title: Create an Application to access Microsoft Defender for Endpoint without a user
 ms.reviewer: 
 description: Learn how to design a web app to get programmatic access to  Microsoft Defender for Endpoint without a user.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Partner access through Microsoft Defender for Endpoint APIs
@@ -22,9 +23,14 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 This page describes how to create an Azure Active Directory (Azure AD) application to get programmatic access to Microsoft Defender for Endpoint on behalf of your customers.
 
 
@@ -139,8 +145,8 @@ $tenantId = '' ### Paste your tenant ID here
 $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application key here
 
-$resourceAppIdUri = 'https://api.securitycenter.windows.com'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
+$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"
     client_id = "$appId"
@@ -172,8 +178,8 @@ return $token
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
 
-    const string authority = "https://login.windows.net";
-    const string wdatpResourceId = "https://api.securitycenter.windows.com";
+    const string authority = "https://login.microsoftonline.com";
+    const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
 
     AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
     ClientCredential clientCredential = new ClientCredential(appId, appSecret);
@@ -227,7 +233,7 @@ Sanity check to make sure you got a correct token:
     ```
     var httpClient = new HttpClient();
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 

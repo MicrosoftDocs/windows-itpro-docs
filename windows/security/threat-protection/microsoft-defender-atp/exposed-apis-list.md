@@ -1,10 +1,10 @@
 ---
-title: Supported Microsoft Defender for Endpoint APIs  
+title: Supported Microsoft Defender for Endpoint APIs
 ms.reviewer: 
-description: Learn about the specific supported Microsoft Defender for Endpoint entities where you can create API calls to. 
+description: Learn about the specific supported Microsoft Defender for Endpoint entities where you can create API calls to.
 keywords: apis, supported apis, actor, alerts, device, user, domain, ip, file, advanced queries, advanced hunting
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Supported Microsoft Defender for Endpoint APIs
@@ -22,7 +23,7 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -30,9 +31,9 @@ ms.topic: article
 
 ### Endpoint URI:
 
-> The service base URI is: https://api.securitycenter.windows.com
+> The service base URI is: https://api.securitycenter.microsoft.com
 > 
-> The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to https://api.securitycenter.windows.com/api/alerts
+> The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to https://api.securitycenter.microsoft.com/api/alerts
 
 ### Versioning:
 
@@ -40,9 +41,14 @@ ms.topic: article
 > 
 > The current version is **V1.0**.
 > 
-> To use a specific version, use this format: `https://api.securitycenter.windows.com/api/{Version}`. For example: `https://api.securitycenter.windows.com/api/v1.0/alerts`
+> To use a specific version, use this format: `https://api.securitycenter.microsoft.com/api/{Version}`. For example: `https://api.securitycenter.microsoft.com/api/v1.0/alerts`
 > 
-> If you don't specify any version (e.g. https://api.securitycenter.windows.com/api/alerts ) you will get to the latest version.
+> If you don't specify any version (e.g. https://api.securitycenter.microsoft.com/api/alerts ) you will get to the latest version.
+
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.

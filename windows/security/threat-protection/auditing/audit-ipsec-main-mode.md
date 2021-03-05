@@ -6,12 +6,13 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 10/02/2018
+ms.technology: mde
 ---
 
 # Audit IPsec Main Mode

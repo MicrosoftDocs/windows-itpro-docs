@@ -3,7 +3,7 @@ title: App & browser control in the Windows Security app
 description: Use the App & browser control section to see and configure Windows Defender SmartScreen and Exploit protection settings.
 keywords: wdav, smartscreen, antivirus, wdsc, exploit, protection, hide
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.author: dansimp
 ms.date: 04/30/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # App and browser control

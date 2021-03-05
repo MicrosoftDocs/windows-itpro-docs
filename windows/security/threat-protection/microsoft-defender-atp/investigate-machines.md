@@ -4,7 +4,7 @@ description: Investigate affected devices by reviewing alerts, network connectio
 keywords: devices, tags, groups, endpoint, alerts queue, alerts, device name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service health
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: article
+ms.technology: mde
 ---
 
 # Investigate devices in the Microsoft Defender for Endpoint Devices list
@@ -25,8 +26,8 @@ ms.topic: article
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
@@ -132,8 +133,6 @@ More details about certain events are provided in the **Additional information**
 - Suspicious script detected - a potentially malicious script was found running
 - The alert category - if the event led to the generation of an alert, the alert category  ("Lateral Movement", for example) is provided
 
-You can also use the [Artifact timeline](investigate-alerts.md#artifact-timeline) feature to see the correlation between alerts and events on a specific device.
-
 #### Event details
 Select an event to view relevant details about that event. A panel displays to show general event information. When applicable and data is available, a graph showing related entities and their relationships are also shown.
 
@@ -143,7 +142,7 @@ To further inspect the event and related events, you can quickly run an [advance
 
 ### Security recommendations
 
-**Security recommendations** are generated from Microsoft Defender ATP's [Threat & Vulnerability Management](tvm-dashboard-insights.md) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it. See [Security recommendation](tvm-security-recommendation.md) for details.
+**Security recommendations** are generated from Microsoft Defender for Endpoint's [Threat & Vulnerability Management](tvm-dashboard-insights.md) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it. See [Security recommendation](tvm-security-recommendation.md) for details.
 
 ![Image of security recommendations tab](images/security-recommendations-device.png)
 
