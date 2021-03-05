@@ -25,7 +25,7 @@ ms.custom: bitlocker
 
 This topic describes the procedure to protect cluster shared volumes (CSVs) and storage area networks (SANs) by using BitLocker.
 
-BitLocker protects both physical disk resources and cluster shared volumes version 2.0 (CSV2.0). BitLocker on clustered volumes allows for an additional layer of protection for administrators wishing to protect sensitive, highly available data. By adding additional protectors to the clustered volume, administrators are adding an additional barrier of security to resources within an organization by allowing only certain user accounts access to unlock the BitLocker volume.
+BitLocker protects both physical disk resources and cluster shared volumes version 2.0 (CSV2.0). BitLocker on clustered volumes provides an extra layer of protection that can be used by administrators wishing to protect sensitive, highly available data. By adding this extra layer of protection to the clustered volume, administrators are increasing the security to resources within an organization by allowing only certain user accounts access to unlock the BitLocker volume.
 
 ## <a href="" id="configuring-bitlocker-on-cluster-shared-volumes-"></a>Configuring BitLocker on Cluster Shared Volumes
 
@@ -41,7 +41,7 @@ Windows PowerShell or the manage-bde command-line interface is the preferred met
 
 >**Note:**  Mount points can be used to support remote mount points on SMB-based network shares. This type of share is not supported for BitLocker encryption.
  
-For thinly provisioned storage, such as a dynamic virtual hard disk (VHD), BitLocker runs in **Used Disk Space Only** encryption mode. You cannot use the **manage-bde -WipeFreeSpace** command to transition the volume to full-volume encryption on thinly provisioned storage volumes. This is blocked to avoid expanding thinly provisioned volumes to occupy the entire backing store while wiping the unoccupied (free) space..
+For thinly provisioned storage, such as a dynamic virtual hard disk (VHD), BitLocker runs in **Used Disk Space Only** encryption mode. You cannot use the **manage-bde -WipeFreeSpace** command to transition the volume to full-volume encryption on thinly provisioned storage volumes. The usage of **manage-bde -WipeFreeSpace** command is blocked to avoid expanding thinly provisioned volumes to occupy the entire backing store while wiping the unoccupied (free) space.
 
 ### Active Directory-based protector
 
@@ -79,7 +79,7 @@ BitLocker encryption is available for disks before or after addition to a cluste
 
 ### Turning on BitLocker for a clustered disk using Windows PowerShell
 
-When the cluster service owns a disk resource already, the disk resource needs to be set into maintenance mode before BitLocker can be enabled. To turn the Bitlocker on for a clustered disk using Windows PowerShell, do the following:
+When the cluster service owns a disk resource already, the disk resource needs to be set into maintenance mode before BitLocker can be enabled. To turn on the Bitlocker for a clustered disk using Windows PowerShell, perform the following steps:
 
 1.  Install the BitLocker drive encryption feature if it is not already installed.
 2.  Check the status of the cluster disk using Windows PowerShell.
@@ -113,7 +113,7 @@ When the cluster service owns a disk resource already, the disk resource needs t
 
 ### Adding BitLocker-encrypted volumes to a cluster using manage-bde
 
-You can also use **manage-bde** to enable BitLocker on clustered volumes. The steps needed to add a physical disk resource or CSV2.0 volume to an existing cluster include the following:
+You can also use **manage-bde** to enable BitLocker on clustered volumes. The steps needed to add a physical disk resource or CSV2.0 volume to an existing cluster are:
 
 1.  Verify that the BitLocker drive encryption feature is installed on the computer.
 2.  Ensure new storage is formatted as NTFS.
@@ -149,11 +149,11 @@ manage-bde -status "C:\ClusterStorage\volume1"
 ### Physical disk resources
 
 
-Unlike CSV2.0 volumes, physical disk resources can only be accessed by one cluster node at a time. This means that operations such as encrypting, decrypting, locking or unlocking volumes require a context to perform. For example, you cannot unlock or decrypt a physical disk resource if you are not administering the cluster node that owns the disk resource because the disk resource is not available.
+Unlike CSV2.0 volumes, physical disk resources can only be accessed by one cluster node at a time. This condition means that operations such as encrypting, decrypting, locking or unlocking volumes require a context to perform. For example, you cannot unlock or decrypt a physical disk resource if you are not administering the cluster node that owns the disk resource because the disk resource is not available.
 
 ### Restrictions on BitLocker actions with cluster volumes
 
-The following table contains information about both physical disk resources (i.e. traditional failover cluster volumes) and cluster shared volumes (CSV) and the actions that are allowed by BitLocker in each situation.
+The following table contains information about both physical disk resources (that is, traditional failover cluster volumes) and cluster shared volumes (CSV) and the actions that are allowed by BitLocker in each situation.
 
 <table>
 <colgroup>
