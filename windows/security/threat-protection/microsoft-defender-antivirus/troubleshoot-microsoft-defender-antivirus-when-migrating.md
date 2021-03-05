@@ -3,7 +3,7 @@ title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-pa
 description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
 keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,6 +13,7 @@ ms.custom: nextgen
 ms.date: 09/11/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
@@ -21,7 +22,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 You can find help here if you encounter issues while migrating from a third-party security solution to Microsoft Defender Antivirus.

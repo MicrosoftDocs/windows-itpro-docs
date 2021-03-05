@@ -220,7 +220,7 @@ The new [security baseline for Windows 10 version 1803](https://docs.microsoft.c
 
 #### SMBLoris vulnerability
 
-An issue, known as “SMBLoris�?, which could result in denial of service, has been addressed.
+An issue, known as "SMBLoris", which could result in denial of service, has been addressed.
 
 #### Windows Security Center
 
@@ -340,13 +340,13 @@ If you have shared devices deployed in your work place, **Fast sign-in** enables
 
 ### Web sign-in to Windows 10
 
-Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
+Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing "web sign-in," a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
 
 **To try out web sign-in:**
 1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
 2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
 3. On the lock screen, select web sign-in under sign-in options.
-4. Click the “Sign in” button to continue.
+4. Click the "Sign in" button to continue.
 
 ![Web sign-in](../images/websignin.png "web sign-in")
 
@@ -402,7 +402,7 @@ If you wish to take advantage of [Kiosk capabilities in Edge](https://docs.micro
 
 ### Co-management
 
-Intune and Microsoft Endpoint Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
+Intune and Microsoft Endpoint Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
 For more information, see [What's New in MDM enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803)
 

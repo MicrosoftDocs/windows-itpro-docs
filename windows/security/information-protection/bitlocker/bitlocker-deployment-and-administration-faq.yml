@@ -35,7 +35,7 @@ sections:
         answer: Yes.
 
       - question: Is there a noticeable performance impact when BitLocker is enabled on a computer?
-        answer: Generally it imposes a single-digit percentage performance overhead.
+        answer: Typically, there's a small performance overhead, often in single-digit percentages, which is relative to the throughput of the storage operations on which it needs to operate.
 
       - question: How long will initial encryption take when BitLocker is turned on?
         answer: |
@@ -94,4 +94,3 @@ sections:
 
       - question: What type of disk configurations are supported by BitLocker?
         answer: Any number of internal, fixed data drives can be protected with BitLocker. On some versions ATA and SATA-based, direct-attached storage devices are also supported.
-

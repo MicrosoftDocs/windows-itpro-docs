@@ -35,7 +35,7 @@ ms.reviewer:
 The Microsoft PIN reset services enables you to help users recover who have forgotten their PIN.  Using Group Policy, Microsoft Intune or a compatible MDM, you can configure Windows 10 devices to securely use the Microsoft PIN reset service that enables users to reset their forgotten PIN through settings or above the lock screen without requiring re-enrollment.
 
 >[!IMPORTANT]
-> The Microsoft PIN Reset service only works with **Enterprise Edition** for Windows 10, version 1709 to 1809.  The feature works with **Enterprise Edition** and **Pro** edition with Windows 10, version 1903 and newer.
+> The Microsoft PIN reset service only works with **Enterprise Edition** for Windows 10, version 1709 to 1809.  The feature works with **Enterprise Edition** and **Pro Edition** with Windows 10, version 1903 and later.
 
 ### Onboarding the Microsoft PIN reset service to your Intune tenant
 
@@ -49,8 +49,10 @@ Before you can remotely reset PINs, you must on-board the Microsoft PIN reset se
 3. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using the Global administrator account you use to manage your Azure Active Directory tenant.
 4. After you have logged in, choose **Accept** to give consent for the PIN reset client to access your account.
  ![PIN reset client application in Azure](images/pinreset/pin-reset-client-prompt.png)
+ 
 > [!NOTE]
 > After you have accepted the PIN reset service and client requests, you will land on a page that states "You do not have permission to view this directory or page." This behavior is expected. Be sure to confirm that the two PIN reset applications are listed for your tenant.
+
 5. In the [Azure portal](https://portal.azure.com), verify that the Microsoft PIN Reset Service and Microsoft PIN Reset Client are integrated from the **Enterprise applications** blade. Filter to application status "Enabled" and both Microsoft Pin Reset Service Production and Microsoft Pin Reset Client Production will show up in your tenant.
  ![PIN reset service permissions page](images/pinreset/pin-reset-applications.png)
 
@@ -109,7 +111,9 @@ On-premises deployments provide users with the ability to reset forgotten PINs e
  3. Follow the instructions provided by the provisioning process
  4. When finished, unlock your desktop using your newly created PIN.
 
->[!NOTE]
+You may find that PIN reset from settings only works post login, and that the "lock screen" PIN reset function will not work if you have any matching limitation of SSPR password reset from the lock screen. For more information, see [Enable Azure Active Directory self-service password reset at the Windows sign-in screen - **General limitations**](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-windows#general-limitations).
+
+> [!NOTE]
 > Visit the [Windows Hello for Business Videos](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-videos.md) page and watch the [Windows Hello for Business forgotten PIN user experience](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-forgotten-pin-user-experience) video.
 
 ## Related topics

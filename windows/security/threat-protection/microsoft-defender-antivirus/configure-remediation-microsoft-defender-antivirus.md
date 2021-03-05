@@ -3,7 +3,7 @@ title: Remediate and resolve infections detected by Microsoft Defender Antivirus
 description: Configure what Microsoft Defender Antivirus should do when it detects a threat, and how long quarantined files should be retained in the quarantine folder
 keywords: remediation, fix, remove, threats, quarantine, scan, restore
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.date: 01/06/2021
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Configure remediation for Microsoft Defender Antivirus scans
@@ -23,7 +24,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 When Microsoft Defender Antivirus runs a scan, it will attempt to remediate or remove threats that it finds. You can configure how Microsoft Defender Antivirus should react to certain threats, whether it should create a restore point before remediating, and when it should remove remediated threats.
 

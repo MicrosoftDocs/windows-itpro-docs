@@ -4,7 +4,7 @@ description: Set your level of cloud-delivered protection for Microsoft Defender
 keywords: Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,6 +14,7 @@ ms.date: 10/26/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
+ms.technology: mde
 ---
 
 # Specify the cloud-delivered protection level
@@ -23,13 +24,13 @@ ms.custom: nextgen
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 You can specify your level of cloud-delivered protection offered by Microsoft Defender Antivirus by using Microsoft Endpoint Manager (recommended) or Group Policy.
 
 > [!TIP]
 > Cloud protection is not simply protection for files that are stored in the cloud. The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and devices (also called endpoints). Cloud protection with Microsoft Defender Antivirus uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional security intelligence updates. 
-> Microsoft Intune and Microsoft Endpoint Configuration Manager are now part of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview). 
+> Microsoft Intune and Microsoft Endpoint Manager are now part of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview). 
 
 
 ## Use Microsoft Endpoint Manager to specify the level of cloud-delivered protection

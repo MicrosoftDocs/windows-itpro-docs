@@ -3,7 +3,7 @@ title: Configure Microsoft Defender Antivirus with WMI
 description: Learn how to configure and manage Microsoft Defender Antivirus by using WMI scripts to retrieve, modify, and update settings in Microsoft Defender for Endpoint.
 keywords: wmi, scripts, windows management instrumentation, configuration
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Use Windows Management Instrumentation (WMI) to configure and manage Microsoft Defender Antivirus
@@ -23,7 +24,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Windows Management Instrumentation (WMI) is a scripting interface that allows you to retrieve, modify, and update settings.
 

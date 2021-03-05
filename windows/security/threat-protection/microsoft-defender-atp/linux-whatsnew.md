@@ -1,10 +1,10 @@
 ---
-title: What's new in Microsoft Defender Advanced Threat Protection for Linux
+title: What's new in Microsoft Defender for Endpoint for Linux
 description: List of major changes for Microsoft Defender ATP for Linux.
 keywords: microsoft, defender, atp, linux, whatsnew, release
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,26 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # What's new in Microsoft Defender for Endpoint for Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+## 101.18.53
+
+- EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+- Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
+- Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
+- Performance improvements & bug fixes
+
+## 101.12.99
+
+- Performance improvements & bug fixes
 
 ## 101.04.76
 

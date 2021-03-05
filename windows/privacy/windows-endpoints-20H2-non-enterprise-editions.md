@@ -107,9 +107,10 @@ The following methodology was used to derive the network endpoints:
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
 |Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
-|||HTTPS/HTTP|*smartscreen-prod.microsoft.com|
+||||wdcpalt.microsoft.com|
+|||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
 |||TLSv1.2|definitionupdates.microsoft.com|
-||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*smartscreen.microsoft.com|
+||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|
 |||TLSv1.2/HTTP|checkappexec.microsoft.com|
 |Windows Spotlight|The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips.|TLSv1.2/HTTPS/HTTP|arc.msn.com*|
 |||TLSv1.2/HTTPS/HTTP|ris.api.iris.microsoft.com|
@@ -180,8 +181,9 @@ The following methodology was used to derive the network endpoints:
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
 |Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
-|||HTTPS/HTTP|*smartscreen-prod.microsoft.com|
-||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*smartscreen.microsoft.com|
+||||wdcpalt.microsoft.com|
+|||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
+||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|
 |||TLSv1.2/HTTP|checkappexec.microsoft.com|
 |Windows Spotlight|The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips.|TLSv1.2/HTTPS/HTTP|arc.msn.com*|
 |||TLSv1.2/HTTPS/HTTP|ris.api.iris.microsoft.com|
@@ -245,8 +247,9 @@ The following methodology was used to derive the network endpoints:
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
 |Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
-|||HTTPS/HTTP|*smartscreen-prod.microsoft.com|
-||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*smartscreen.microsoft.com|
+||||wdcpalt.microsoft.com|
+|||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
+||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|
 |||TLSv1.2/HTTP|checkappexec.microsoft.com|
 |Windows Spotlight|The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips.|TLSv1.2/HTTPS/HTTP|arc.msn.com*|
 |||TLSv1.2/HTTPS/HTTP|ris.api.iris.microsoft.com|
@@ -261,4 +264,3 @@ The following methodology was used to derive the network endpoints:
 |Xbox Live|The following endpoints are used for Xbox Live.|
 |||TLSv1.2/HTTPS/HTTP|dlassets-ssl.xboxlive.com|
 |||TLSv1.2/HTTPS|da.xboxservices.com|
-|

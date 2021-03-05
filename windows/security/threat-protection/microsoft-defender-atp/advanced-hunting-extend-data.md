@@ -1,10 +1,10 @@
 ---
-title: Extend advanced hunting coverage with the right settings 
-description: Check auditing settings on Windows devices and other settings to help ensure that you get the most comprehensive data in advanced hunting  
-keywords: advanced hunting, incident, pivot, entity, audit settings, user account management, security group management, threat hunting, cyber threat hunting, search, query, telemetry, mdatp, Microsoft Defender ATP, Microsoft Defender Advanced Threat Protection, Windows Defender, Windows Defender ATP, Windows Defender Advanced Threat Protection 
+title: Extend advanced hunting coverage with the right settings
+description: Check auditing settings on Windows devices and other settings to help ensure that you get the most comprehensive data in advanced hunting
+keywords: advanced hunting, incident, pivot, entity, audit settings, user account management, security group management, threat hunting, cyber threat hunting, search, query, telemetry, mdatp, Microsoft Defender ATP, Microsoft Defender for Endpoint, Windows Defender, Windows Defender ATP, Windows Defender Advanced Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/10/2020
+ms.technology: mde
 ---
 
 # Extend advanced hunting coverage with the right settings
@@ -23,8 +24,8 @@ ms.date: 10/10/2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 [Advanced hunting](advanced-hunting-overview.md) relies on data coming from across your organization. To get the most comprehensive data possible, ensure that you have the correct settings in the corresponding data sources.
 

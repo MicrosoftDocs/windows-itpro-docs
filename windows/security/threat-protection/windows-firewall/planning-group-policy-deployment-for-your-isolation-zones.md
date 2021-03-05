@@ -4,7 +4,7 @@ description: Learn how to plan a group policy deployment for your isolation zone
 ms.assetid: ea7c0acd-af28-4347-9d4a-4801b470557c
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Planning Group Policy Deployment for Your Isolation Zones

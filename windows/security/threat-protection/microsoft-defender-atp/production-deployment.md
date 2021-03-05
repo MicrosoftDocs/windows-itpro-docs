@@ -4,7 +4,7 @@ description: Learn how to setup the deployment for Microsoft Defender ATP
 keywords: deploy, setup, licensing validation, tenant configuration, network configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario 
-ms.topic: article 
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
+ms.topic: article
+ms.technology: mde
 ---
 
 # Set up Microsoft Defender for Endpoint deployment
@@ -26,8 +27,10 @@ ms.topic: article
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Deploying Defender for Endpoint is a three-phase process:
 
@@ -223,7 +226,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 |**Spreadsheet of domains list**|**Description**|
 |:-----|:-----|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
+|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 
 ###  Microsoft Defender for Endpoint service backend IP range
@@ -246,6 +249,5 @@ You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https:
 > As a cloud-based solution, the IP address range can change. It's recommended you move to DNS resolving setting.
 
 ## Next step
-|||
-|:-------|:-----|
-|![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so that the Microsoft Defender for Endpoint service can get sensor data from them.
+
+![**Phase 3: Onboard**](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md): Onboard devices to the service so that the Microsoft Defender for Endpoint service can get sensor data from them. 
