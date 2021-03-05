@@ -19,32 +19,28 @@ ms.collection:
   - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 02/18/2021
+ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
 # Switch to Microsoft Defender for Endpoint - Phase 2: Setup
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-|[![Phase 1: Prepare1](images/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare2](switch-to-microsoft-defender-prepare.md) |![Phase 2: Set up](images/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard1](images/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard2](switch-to-microsoft-defender-onboard.md) |
-|[![Phase 1: Prepare3](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare4](switch-to-microsoft-defender-prepare.md) |![Phase 2: Set up2](images/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard4](switch-to-microsoft-defender-onboard.md) |
+|[![Phase 1: Prepare](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md) |![Phase 2: Set up](images/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md) |
 |--|--|--|
 ||*You are here!* | |
 
-
 **Welcome to the Setup phase of [switching to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
-1. [Enable Microsoft Defender Antivirus and confirm it's in passive mode](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode).
-2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
-3. [Add Microsoft Defender for Endpoint to the exclusion list for your existing endpoint solution](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution).
-4. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Add your existing solution to the exclusion list for Microsoft Defender for Endpoint](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-for-endpoint).
-6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
-7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
+1. [Enable Microsoft Defender Antivirus and confirm it's in passive mode](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode)
+2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus)
+3. [Add Microsoft Defender for Endpoint to the exclusion list for your existing endpoint solution](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution)
+4. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus)
+5. [Add your existing solution to the exclusion list for Microsoft Defender for Endpoint](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-for-endpoint)
+6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units)
+7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection)
 
 ## Enable Microsoft Defender Antivirus and confirm it's in passive mode
 
@@ -52,10 +48,10 @@ On certain versions of Windows, such as Windows Server, Microsoft Defender Antiv
 
 This step of the migration process includes the following tasks:
 - [Setting DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server)
-- [Reinstalling Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server);
+- [Reinstalling Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server)
 - [Setting Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
-- [Enabling Microsoft Defender Antivirus on your Windows client devices](#enable-microsoft-defender-antivirus-on-your-windows-client-devices); and
-- [Confirming that Microsoft Defender Antivirus is set to passive mode](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode).  
+- [Enabling Microsoft Defender Antivirus on your Windows client devices](#enable-microsoft-defender-antivirus-on-your-windows-client-devices)
+- [Confirming that Microsoft Defender Antivirus is set to passive mode](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode)
 
 ### Set DisableAntiSpyware to false on Windows Server
 
@@ -92,8 +88,14 @@ The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/d
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
 
+#### Are you using Windows Server 2016?
+
+If you're using Windows Server 2016 and are having trouble enabling Microsoft Defender Antivirus, use the following PowerShell cmdlet on the device:
+
+`mpcmdrun -wdenable`
+
 > [!TIP]
-> Need help? See [Microsoft Defender Antivirus on Windows Server](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
+> Still need help? See [Microsoft Defender Antivirus on Windows Server](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
@@ -156,8 +158,8 @@ The specific exclusions to configure depend on which version of Windows your end
 
 |OS |Exclusions |
 |--|--|
-|- Windows 10, [version 1803](https://docs.microsoft.com/windows/release-health/status-windows-10-1803) or later (See [Windows 10 release information](https://docs.microsoft.com/windows/release-health/release-information))<br/>- Windows 10, version 1703 or [1709](https://docs.microsoft.com/windows/release-health/status-windows-10-1709) with [KB4493441](https://support.microsoft.com/help/4493441) installed <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server, version 1803](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>  |
-|- [Windows 8.1](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/>- [Windows 7](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows Server 2016](https://docs.microsoft.com/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/>- [Windows Server 2012 R2](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/>**NOTE**: Where Monitoring Host Temporary Files 6\45 can be different numbered subfolders.<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
+|Windows 10, [version 1803](https://docs.microsoft.com/windows/release-health/status-windows-10-1803) or later (See [Windows 10 release information](https://docs.microsoft.com/windows/release-health/release-information))<p>Windows 10, version 1703 or [1709](https://docs.microsoft.com/windows/release-health/status-windows-10-1709) with [KB4493441](https://support.microsoft.com/help/4493441) installed <p>[Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Server, version 1803](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`  |
+|[Windows 8.1](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows Server 2016](https://docs.microsoft.com/windows/release-health/status-windows-10-1607-and-windows-server-2016)<p>[Windows Server 2012 R2](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<p>**NOTE**: Where Monitoring Host Temporary Files 6\45 can be different numbered subfolders.<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## Add your existing solution to the exclusion list for Microsoft Defender Antivirus
 

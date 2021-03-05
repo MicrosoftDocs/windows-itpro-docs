@@ -23,10 +23,10 @@ To help diagnose enrollment or device management issues in Windows 10 devices m
    ![Access work or school page in Settings](images/diagnose-mdm-failures15.png)
 
 1. At the bottom of the **Settings** page, click **Create report**.  
-   ![Access work or school page in Settings](images/diagnose-mdm-failures16.png)
+   ![Access work or school page and then Create report](images/diagnose-mdm-failures16.png)
 1. A window opens that shows the path to the log files. Click **Export**.
 
-   ![Access work or school page in Settings](images/diagnose-mdm-failures17.png)
+   ![Access work or school log files](images/diagnose-mdm-failures17.png)
 
 1. In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
 
@@ -112,8 +112,8 @@ Example: Export the Debug logs
 </SyncML>
 ```
 
-## Collect logs from Windows 10 Mobile devices
-
+<!--## Collect logs from Windows 10 Mobile devices-->
+<!--
 Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medic](https://www.microsoft.com/p/field-medic/9wzdncrfjb82?activetab=pivot%3aoverviewtab) app to collect logs.
 
 **To collect logs manually**
@@ -182,11 +182,11 @@ The following table contains a list of common providers and their corresponding 
 | e5fc4a0f-7198-492f-9b0f-88fdcbfded48 | Microsoft-Windows Networking VPN                       |
 | e5c16d49-2464-4382-bb20-97a4b5465db9 | Microsoft-Windows-WiFiNetworkManager                   |
 
- 
+--> 
 
-## Collect logs remotely from Windows 10 Holographic or Windows 10 Mobile devices
+## Collect logs remotely from Windows 10 Holographic 
 
-For holographic or mobile devices already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
+For holographic already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
 
 You can use the DiagnosticLog CSP to enable the ETW provider. The provider ID is 3DA494E4-0FE2-415C-B895-FB5265C5C83B. The following examples show how to enable the ETW provider:
 
@@ -294,21 +294,21 @@ For best results, ensure that the PC or VM on which you are viewing logs matches
 3.  Navigate to the etl file that you got from the device and then open the file.
 4.  Click **Yes** when prompted to save it to the new log format.
 
-    ![prompt](images/diagnose-mdm-failures10.png)
+    ![event viewer prompt](images/diagnose-mdm-failures10.png)
 
     ![diagnose mdm failures](images/diagnose-mdm-failures11.png)
 
 5.  The new view contains traces from the channel. Click on **Filter Current Log** from the **Actions** menu.
 
-    ![event viewer](images/diagnose-mdm-failures12.png)
+    ![event viewer actions](images/diagnose-mdm-failures12.png)
 
 6.  Add a filter to Event sources by selecting **DeviceManagement-EnterpriseDiagnostics-Provider** and click **OK**.
 
-    ![event filter](images/diagnose-mdm-failures13.png)
+    ![event filter for Device Management](images/diagnose-mdm-failures13.png)
 
 7.  Now you are ready to start reviewing the logs.
 
-    ![event viewer](images/diagnose-mdm-failures14.png)
+    ![event viewer review logs](images/diagnose-mdm-failures14.png)
 
 ## Collect device state data
 
@@ -336,9 +336,3 @@ Here's an example of how to collect current MDM device state data using the [Dia
 ```
 
  
-
-
-
-
-
-
