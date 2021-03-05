@@ -29,9 +29,6 @@ ms.topic: article
 >- Windows Server 2012
 >- Windows Server 2016
 >- Windows Server 2019
->- Office 2013*
->- Office 2016*
->- Office 2019*
 
 **Looking for retail activation?**
 

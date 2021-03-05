@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 03/05/2021
+ms.date: 10/17/2017
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -18,7 +18,7 @@ ms.technology: mde
 # Configure Microsoft Defender Application Guard policy settings
 
 **Applies to:** 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Microsoft Defender Application Guard (Application Guard) works with Group Policy to help you manage your organization's computer settings. By using Group Policy, you can configure a setting once, and then copy it onto many computers. For example, you can set up multiple security settings in a GPO, which is linked to a domain, and then apply all those settings to every computer in the domain.
 
@@ -62,3 +62,6 @@ These settings, located at **Computer Configuration\Administrative Templates\Win
 |Allow hardware-accelerated rendering for Microsoft Defender Application Guard|Windows 10 Enterprise, 1803 or higher<br><br>Windows 10 Pro, 1803 or higher|Determines whether Microsoft Defender Application Guard renders graphics using hardware or software acceleration.|**Enabled.** Microsoft Defender Application Guard uses Hyper-V to access supported, high-security rendering graphics hardware (GPUs). These GPUs improve rendering performance and battery life while using Microsoft Defender Application Guard, particularly for video playback and other graphics-intensive use cases. If this setting is enabled without connecting any high-security rendering graphics hardware, Microsoft Defender Application Guard will automatically revert to software-based (CPU) rendering. **Important:** Be aware that enabling this setting with potentially compromised graphics devices or drivers might pose a risk to the host device.<br><br>**Disabled or not configured.** Microsoft Defender Application Guard uses software-based (CPU) rendering and won’t load any third-party graphics drivers or interact with any connected graphics hardware.|
 |Allow camera and microphone access in Microsoft Defender Application Guard|Windows 10 Enterprise, 1809 or higher<br><br>Windows 10 Pro, 1809 or higher|Determines whether to allow camera and microphone access inside Microsoft Defender Application Guard.|**Enabled.** Applications inside Microsoft Defender Application Guard are able to access the camera and microphone on the user's device. **Important:** Be aware that enabling this policy with a potentially compromised container could bypass camera and microphone permissions and access the camera and microphone without the user's knowledge.<br><br>**Disabled or not configured.** Applications inside Microsoft Defender Application Guard are unable to access the camera and microphone on the user's device.|
 |Allow Microsoft Defender Application Guard to use Root Certificate Authorities from a user's device|Windows 10 Enterprise, 1809 or higher<br><br>Windows 10 Pro, 1809 or higher|Determines whether Root Certificates are shared with Microsoft Defender Application Guard.|**Enabled.** Certificates matching the specified thumbprint are transferred into the container. Use a comma to separate multiple certificates.<br><br>**Disabled or not configured.** Certificates are not shared with Microsoft Defender Application Guard.|
+|Allow users to trust files that open in Microsoft Defender Application Guard|Windows 10 Enterprise, 1809 or higher|Determines whether users are able to manually trust untrusted files to open them on the host.|**Enabled.** Users are able to manually trust files or trust files after an antivirus check.<br><br>**Disabled or not configured.** Users are unable to manually trust files and files continue to open in Microsoft Defender Application Guard.|
+
+
