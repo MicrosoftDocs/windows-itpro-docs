@@ -26,8 +26,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 ## Conditional Access with Defender for Endpoint for Android  
 Microsoft Defender for Endpoint for Android along with Microsoft Intune and Azure Active

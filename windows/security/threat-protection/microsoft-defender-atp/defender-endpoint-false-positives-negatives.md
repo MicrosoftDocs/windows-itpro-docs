@@ -11,14 +11,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/27/2021
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security-compliance 
-- m365initiative-defender-endpoint 
-ms.topic: conceptual
+- m365initiative-defender-endpoint
+- m365solution-scenario
+- m365scenario-fpfn
+ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
 ---
@@ -35,7 +37,7 @@ In endpoint protection solutions, a false positive is an entity, such as a file 
 
 ![Definition of false positive and negatives in Windows Defender for Endpoints](images/false-positives-overview.png)
 
-Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), your security operations can take steps to address them by using the following process:
+Microsoft Defender for Endpoint enables your security operations team to fine-tune your security settings and help address and reduce false positives. If you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), use the following process:
 
 1.	[Review and classify alerts](#part-1-review-and-classify-alerts) 
 2.	[Review remediation actions that were taken](#part-2-review-remediation-actions)
@@ -135,7 +137,8 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Remove a file from quarantine across multiple devices 
 
-![Quarantine file](images/autoir-quarantine-file-1.png)
+> [!div class="mx-imgBorder"]
+> ![Quarantine file](images/autoir-quarantine-file-1.png)
 
 1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
@@ -279,8 +282,6 @@ Check your cloud-delivered protection level for Microsoft Defender Antivirus. By
 
 > [!TIP]
 > To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
-
-We recommend using Microsoft Endpoint Manager to edit or set your cloud-delivered protection settings.
 
 We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) to edit or set your cloud-delivered protection settings; however, you can use other methods, such as [Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
 

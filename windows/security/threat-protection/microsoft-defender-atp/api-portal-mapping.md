@@ -22,10 +22,9 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
@@ -86,9 +85,9 @@ Field numbers match the numbers in the images below.
 
 ![Image of alert details pane with numbers](images/atp-siem-mapping13.png)
 
-![Image of artifact timeline with numbers](images/atp-siem-mapping3.png)
+![Image of artifact timeline with numbers1](images/atp-siem-mapping3.png)
 
-![Image of artifact timeline with numbers](images/atp-siem-mapping4.png)
+![Image of artifact timeline with numbers2](images/atp-siem-mapping4.png)
 
 ![Image machine view](images/atp-mapping6.png)
 

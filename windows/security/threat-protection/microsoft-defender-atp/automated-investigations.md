@@ -1,7 +1,7 @@
 ---
 title: Use automated investigations to investigate and remediate threats
 description: Understand the automated investigation flow in Microsoft Defender for Endpoint.
-keywords: automated, investigation, detection, source, threat types, id, tags, devices, duration, filter export, defender atp
+keywords: automated, investigation, detection, defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -11,14 +11,14 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 12/07/2020
+ms.date: 02/02/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
-ms.topic: conceptual
+- m365-security-compliance
+- m365initiative-defender-endpoint
+ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 ---
@@ -27,46 +27,30 @@ ms.custom: AIR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to**
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
 
-
-Your security operations team receives an alert whenever a malicious or suspicious artifact is detected by Microsoft Defender for Endpoint. Security operations teams face challenges in addressing the multitude of alerts that arise from the seemingly never-ending flow of threats. Microsoft Defender for Endpoint includes automated investigation and remediation (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. Want to see how it works? Watch the following video:
+Want to see how it works? Watch the following video: <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
-The technology in automated investigation uses various inspection algorithms and is based on processes that are used by security analysts. AIR capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR capabilities significantly reduce alert volume, allowing security operations to focus on more sophisticated threats and other high-value initiatives. The [Action center](auto-investigation-action-center.md) keeps track of all the investigations that were initiated automatically, along with details, such as investigation status, detection source, and any pending or completed actions.
+The technology in automated investigation uses various inspection algorithms and is based on processes that are used by security analysts. AIR capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR capabilities significantly reduce alert volume, allowing security operations to focus on more sophisticated threats and other high-value initiatives. All remediation actions, whether pending or completed, are tracked in the [Action center](auto-investigation-action-center.md). In the Action center, pending actions are approved (or rejected), and completed actions can be undone if needed.
+
+This article provides an overview of AIR and includes links to next steps and additional resources.
 
 > [!TIP]
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink).
 
 ## How the automated investigation starts
 
-When an alert is triggered, a security playbook goes into effect. Depending on the security playbook, an automated investigation can start. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and the automated investigation process begins. Microsoft Defender for Endpoint checks to see if the malicious file is present on any other devices in the organization. Details from the investigation, including verdicts (*Malicious*, *Suspicious*, and *No threats found*) are available during and after the automated investigation. To learn more about what happens after a verdict is reached, see [Automated investigation results and remediation actions](manage-auto-investigation.md#automated-investigation-results-and-remediation-actions). 
+An automated investigation can start when an alert is triggered or when a security operator initiates the investigation.
 
->[!NOTE]
->Currently, AIR only supports the following OS versions:
->- Windows Server 2019
->- Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) or later
->- Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) or later
->- Windows 10, version [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later
-
-## Details of an automated investigation
-
-During and after an automated investigation, you can view details about the investigation. Select a triggering alert to view the investigation details. From there, you can go to the **Investigation graph**, **Alerts**, **Devices**, **Evidence**, **Entities**, and **Log** tabs.
-
-|Tab |Description |
-|:--|:--|
-|**Alerts**| The alert(s) that started the investigation.|
-|**Devices** |The device(s) where the threat was seen.|
-|**Evidence** |The entities that were found to be malicious during an investigation.|
-|**Entities** |Details about each analyzed entity, including a determination for each entity type (*Malicious*, *Suspicious*, or *No threats found*). |
-|**Log** |The chronological, detailed view of all the investigation actions taken on the alert.|
-|**Pending actions** |If there are any actions awaiting approval as a result of the investigation, the **Pending actions** tab is displayed. On the **Pending actions** tab, you can approve or reject each action. |
-
-> [!IMPORTANT]
-> Go to the **[Action center](auto-investigation-action-center.md)** to get an aggregated view all pending actions and manage remediation actions. The **Action center** also acts as an audit trail for all automated investigation actions. 
+|Situation  |What happens  |
+|---------|---------|
+|An alert is triggered     | In general, an automated investigation starts when an [alert](review-alerts.md) is triggered, and an [incident](view-incidents-queue.md) is created. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and incident is created. An automated investigation process begins on the device. As other alerts are generated because of the same file on other devices, they are added to the associated incident and to the automated investigation.         |
+|An investigation is started manually     | An automated investigation can be started manually by your security operations team. For example, suppose a security operator is reviewing a list of devices and notices that a device has a high risk level. The security operator can select the device in the list to open its flyout, and then select **Initiate Automated Investigation**. |
 
 ## How an automated investigation expands its scope
 
@@ -76,23 +60,39 @@ If an incriminated entity is seen in another device, the automated investigation
 
 ## How threats are remediated
 
-As alerts are triggered, and an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. 
+As alerts are triggered, and an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be 
+- *Malicious*;
+- *Suspicious*; or 
+- *No threats found*. 
 
-As verdicts are reached, automated investigations can result in one or more remediation actions. Examples of remediation actions include sending a file to quarantine, stopping a service, removing a scheduled task, and more. (See [Remediation actions](manage-auto-investigation.md#remediation-actions).)  
+As verdicts are reached, automated investigations can result in one or more remediation actions. Examples of remediation actions include sending a file to quarantine, stopping a service, removing a scheduled task, and more. To learn more, see [Remediation actions](manage-auto-investigation.md#remediation-actions).  
 
 Depending on the [level of automation](automation-levels.md) set for your organization, as well as other security settings, remediation actions can occur automatically or only upon approval by your security operations team. Additional security settings that can affect automatic remediation include [protection from potentially unwanted applications](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA). 
 
-All remediation actions, whether pending or completed, can be viewed in the [Action Center](auto-investigation-action-center.md) ([https://securitycenter.windows.com](https://securitycenter.windows.com)). If necessary, your security operations team can undo a remediation action. (See [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation).)
+All remediation actions, whether pending or completed, are tracked in the [Action center](auto-investigation-action-center.md). If necessary, your security operations team can undo a remediation action. To learn more, see [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation).
+
+> [!TIP]
+> Check out the new, unified investigation page in the Microsoft 365 security center. To learn more, see [(NEW!) Unified investigation page](/microsoft-365/security/mtp/mtp-autoir-results.md#new-unified-investigation-page).
+
+
+## Requirements for AIR
+
+Your organization must have Defender for Endpoint (see [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)).
+
+Currently, AIR only supports the following OS versions:
+- Windows Server 2019
+- Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) or later
+- Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) or later
+- Windows 10, version [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later
 
 ## Next steps
 
-- [Get an overview of the automated investigations dashboard](manage-auto-investigation.md)
 - [Learn more about automation levels](automation-levels.md)
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [Configure automated investigation and remediation capabilities in Microsoft Defender for Endpoint](configure-automated-investigations-remediation.md)
 
 ## See also
 
 - [PUA protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 - [Automated investigation and response in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
 - [Automated investigation and response in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

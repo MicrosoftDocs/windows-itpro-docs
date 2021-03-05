@@ -1,6 +1,6 @@
 ---
 title: Set device value API
-description: Learn how to specify the value of a device using a Microsoft Defender Advanced Threat Protection API.
+description: Learn how to specify the value of a device using a Microsoft Defender for Endpoint API.
 keywords: apis, graph api, supported apis, tags, machine tags
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -21,8 +21,11 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 

@@ -23,16 +23,19 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Create a notification rule so that when a local onboarding or offboardiing script is used, you'll be notified. 
+Create a notification rule so that when a local onboarding or offboarding script is used, you'll be notified. 
 
 ## Before you begin
 You'll need to have access to:
@@ -69,7 +72,7 @@ You'll need to have access to:
    - Audience: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
    - Client ID: Sign-in to https://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and  get the Client ID value.
    - Credential Type: Select "Secret".
-   - Secret: Sign-in to https://portal.azure.com and navigate tnd navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
+   - Secret: Sign-in to https://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
 
     ![Image of the HTTP conditions](images/http-conditions.png)
 
@@ -180,8 +183,8 @@ You'll need to have access to:
 11. Under **Condition**, add the following expression: "length(body('Get_items')?['value'])" and set the condition to equal to 0.
 
     ![Image of apply to each condition](images/apply-to-each-value.png)  
-    ![Image of condition](images/conditions-2.png) 
-    ![Image of condition](images/condition3.png)  
+    ![Image of condition1](images/conditions-2.png) 
+    ![Image of condition2](images/condition3.png)  
     ![Image of send email](images/send-email.png)
 
 ## Alert notification

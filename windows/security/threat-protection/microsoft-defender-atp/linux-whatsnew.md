@@ -1,5 +1,5 @@
 ---
-title: What's new in Microsoft Defender Advanced Threat Protection for Linux
+title: What's new in Microsoft Defender for Endpoint for Linux
 description: List of major changes for Microsoft Defender ATP for Linux.
 keywords: microsoft, defender, atp, linux, whatsnew, release
 search.product: eADQiWindows 10XVcnh

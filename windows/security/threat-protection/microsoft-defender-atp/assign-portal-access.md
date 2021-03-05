@@ -1,6 +1,6 @@
 ---
 title: Assign user access to Microsoft Defender Security Center
-description: Assign read and write or read only access to the Microsoft Defender Advanced Threat Protection portal.
+description: Assign read and write or read only access to the Microsoft Defender for Endpoint portal.
 keywords: assign user roles, assign read and write access, assign read only access, user, user roles, roles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -27,7 +27,9 @@ ms.technology: mde
 **Applies to:**
 - Azure Active Directory
 - Office 365
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
+
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 

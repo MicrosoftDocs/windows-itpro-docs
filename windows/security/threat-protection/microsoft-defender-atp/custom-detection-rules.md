@@ -25,8 +25,10 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Custom detection rules built from [advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured devices. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
@@ -91,6 +93,10 @@ When saved, a new custom detection rule immediately runs and checks for matches 
 - **Every 3 hours**—runs every 3 hours, checking data from the past 6 hours
 - **Every hour**—runs hourly, checking data from the past 2 hours
 
+> [!IMPORTANT]
+>When changing a query that is already scheduled as a Custom Detection, it's next immediate execution will have a lookback window of 30 days, exactly as if a new query was being created. 
+>Changes to a large number of queries, and with time filters higher than the default lookback durantion for the selected frequency, might have an impact in the overall quota consumption of Advanced Hunting and resulting in exhausting the daily quota.
+
 > [!TIP]
 > Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.
 
@@ -114,6 +120,7 @@ These actions are applied to devices in the `DeviceId` column of the query resul
 - **Collect investigation package**—collects device information in a ZIP file. [Learn more about the investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - **Run antivirus scan**—performs a full Microsoft Defender Antivirus scan on the device
 - **Initiate investigation**—starts an [automated investigation](automated-investigations.md) on the device
+- **Restrict app execution**—sets restrictions on the device to allow only files that are signed with a Microsoft-issued certificate to run. [Learn more about restricting app execution](respond-machine-alerts.md#restrict-app-execution)
 
 ### Actions on files
 
@@ -121,6 +128,10 @@ These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` 
 
 - **Allow/Block**—automatically adds the file to your [custom indicator list](manage-indicators.md) so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected device groups. This scope is independent of the scope of the rule.
 - **Quarantine file**—deletes the file from its current location and places a copy in quarantine
+
+### Actions on users
+
+- **Mark user as compromised**—sets the user's risk level to "high" in Azure Active Directory, triggering the corresponding [identity protection policies](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection#risk-levels).
 
 ## 5. Set the rule scope.
 

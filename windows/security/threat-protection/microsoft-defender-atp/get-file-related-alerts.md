@@ -1,6 +1,6 @@
 ---
-title: Get file related alerts API
-description: Learn how to use the Get file related alerts API to get a collection of alerts related to a given file hash in Microsoft Defender for Endpoint.
+title: Get file-related alerts API
+description: Learn how to use the Get file-related alerts API to get a collection of alerts related to a given file hash in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, file, hash
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,14 +17,15 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Get file related alerts API
+# Get file-related alerts API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -70,7 +71,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and file exists - 200 OK with list of [alert](alerts.md) entities in the body. If file do not exist - 404 Not Found.
+If successful and file exists - 200 OK with list of [alert](alerts.md) entities in the body. If file does not exist - 404 Not Found.
 
 
 ## Example

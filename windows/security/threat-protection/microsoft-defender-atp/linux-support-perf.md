@@ -25,8 +25,9 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article provides some general steps that can be used to narrow down performance issues related to Defender for Endpoint for Linux.
 
@@ -34,7 +35,7 @@ Real-time protection (RTP) is a feature of Defender for Endpoint for Linux that 
 
 Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Defender for Endpoint for Linux. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Defender for Endpoint for Linux.
 
-Before starting, **please make sure that other security products are not currenly running on the device**. Multilpe security products may conflict and impact the host performance.
+Before starting, **please make sure that other security products are not currently running on the device**. Multiple security products may conflict and impact the host performance.
 
 The following steps can be used to troubleshoot and mitigate these issues:
 

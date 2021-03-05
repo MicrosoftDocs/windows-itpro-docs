@@ -1,9 +1,9 @@
 ---
 title: Get user information API
-description: Learn how to use the Get user information API to retrieve a User entity by key, or user name, in Microsoft Defender Advanced Threat Protection.
+description: Learn how to use the Get user information API to retrieve a User entity by key, or user name, in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, user, user information
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
 # Get user information API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -29,7 +28,7 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 Retrieve a User entity by key (user name).
 
 ## Permissions
@@ -64,8 +63,9 @@ If successful and user exists - 200 OK with [user](user.md) entity in the body. 
 
 Here is an example of the request.
 
-```http
+```
 GET https://api.securitycenter.microsoft.com/api/users/user1
+Content-type: application/json
 ```
 
 **Response**
@@ -73,7 +73,9 @@ GET https://api.securitycenter.microsoft.com/api/users/user1
 Here is an example of the response.
 
 
-```json
+```
+HTTP/1.1 200 OK
+Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Users/$entity",
     "id": "user1",

@@ -24,10 +24,11 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## Collecting diagnostic information
 
@@ -111,7 +112,6 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Protection   |Do a full scan                             |`mdatp scan full`                                                                 |
 |Protection   |Cancel an ongoing on-demand scan           |`mdatp scan cancel`                                                               |
 |Protection   |Request a security intelligence update     |`mdatp definitions update`                                                        |
-|EDR          |Turn on/off EDR preview for Mac            |`mdatp edr early-preview [enabled/disabled]`                                      |
 |EDR          |Add group tag to device. EDR tags are used for managing device groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |Remove group tag from device               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |Add Group ID                               |`mdatp edr group-ids --group-id [group]`                                          |

@@ -26,8 +26,10 @@ ms.technology: mde
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## Prerequisites and system requirements
 
@@ -96,7 +98,7 @@ Grant Full Disk Access to the following components:
     - Identifier Type: Bundle ID
     - Code Requirement: identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /\* exists \*/ and certificate leaf[field.1.2.840.113635.100.6.1.13] /\* exists \*/ and certificate leaf[subject.OU] = UBF8T346G9
 
-- Microsoft Defender for Endpoint Endpoint Security Extension
+- Microsoft Defender for Endpoint Security Extension
     - Identifier: `com.microsoft.wdav.epsext`
     - Identifier Type: Bundle ID
     - Code Requirement: identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9

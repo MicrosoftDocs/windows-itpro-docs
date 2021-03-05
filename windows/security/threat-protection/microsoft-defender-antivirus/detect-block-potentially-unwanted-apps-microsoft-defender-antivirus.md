@@ -11,7 +11,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 audience: ITPro
-ms.date: 02/01/2021
+ms.date: 02/03/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge)
 
 > [!NOTE]
@@ -112,21 +112,13 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 #### Use Group Policy to configure PUA protection
 
 1. Download and install [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
-
 2. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
-
 3. Select the Group Policy Object you want to configure, and then choose **Edit**.
-
 4. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
-
 5. Expand the tree to **Windows Components** > **Microsoft Defender Antivirus**.
-
 6. Double-click **Configure detection for potentially unwanted applications**.
-
 7. Select **Enabled** to enable PUA protection.
-
 8. In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting works in your environment. Select **OK**.
-
 9. Deploy your Group Policy object as you usually do.
 
 #### Use PowerShell cmdlets to configure PUA protection
@@ -134,19 +126,17 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 ##### To enable PUA protection
 
 ```PowerShell
-
 Set-MpPreference -PUAProtection Enabled
-
 ```
+
 Setting the value for this cmdlet to `Enabled` turns the feature on if it has been disabled.
 
 ##### To set PUA protection to audit mode
 
 ```PowerShell
-
 Set-MpPreference -PUAProtection AuditMode
-
 ```
+
 Setting `AuditMode` detects PUAs without blocking them.
 
 ##### To disable PUA protection
@@ -154,20 +144,18 @@ Setting `AuditMode` detects PUAs without blocking them.
 We recommend keeping PUA protection turned on. However, you can turn it off by using the following cmdlet:
 
 ```PowerShell
-
 Set-MpPreference -PUAProtection Disabled
-
 ```
+
 Setting the value for this cmdlet to `Disabled` turns the feature off if it has been enabled.
 
 See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
-### View PUA events
+## View PUA events
 
 PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune. You can also use the `Get-MpThreat` cmdlet to view threats that Microsoft Defender Antivirus handled. Here's an example:
 
 ```console
-
 CategoryID       : 27
 DidThreatExecute : False
 IsActive         : False
@@ -186,11 +174,11 @@ You can turn on email notifications to receive mail about PUA detections.
 
 See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Microsoft Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
-### Allow-listing apps
+## Excluding files
 
-Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. 
+Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be added to an exclusion list.
 
-For more information, see [Recommended antivirus exclusions for Configuration Manager site servers, site systems, and clients](https://docs.microsoft.com/troubleshoot/mem/configmgr/recommended-antivirus-exclusions#exclusions).
+For more information, see [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 ## See also
 

@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr, shwjha
 manager: dansimp
-ms.date: 01/27/2021
+ms.date: 02/24/2021
 ms.technology: mde
 ---
 
@@ -23,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## Overview
 
@@ -43,8 +43,8 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 | Windows 10  | A third-party product that is not offered or developed by Microsoft | No   | Automatically disabled mode     |
 | Windows 10  | Microsoft Defender Antivirus | Yes  | Active mode | 
 | Windows 10  | Microsoft Defender Antivirus | No   | Active mode |
-| Windows Server, version 1803 or newer, or Windows Server 2019 | A third-party product that is not offered or developed by Microsoft | Yes  | Active mode <sup>[[1](#fn1)]</sup> |
-| Windows Server, version 1803 or newer, or Windows Server 2019 | A third-party product that is not offered or developed by Microsoft | No  | Must be set to passive mode (manually) <sup>[[1](#fn1)]<sup>  |
+| Windows Server, version 1803 or newer, or Windows Server 2019 | A third-party product that is not offered or developed by Microsoft | Yes  | Must be set to passive mode (manually) <sup>[[1](#fn1)]<sup>  | 
+| Windows Server, version 1803 or newer, or Windows Server 2019 | A third-party product that is not offered or developed by Microsoft | No  | Must be disabled (manually) <sup>[[2](#fn2)]<sup></sup>  |
 | Windows Server, version 1803 or newer, or Windows Server 2019 | Microsoft Defender Antivirus  | Yes |         Active mode  |
 | Windows Server, version 1803 or newer, or Windows Server 2019 | Microsoft Defender Antivirus | No  | Active mode |
 | Windows Server 2016 | Microsoft Defender Antivirus | Yes | Active mode |
@@ -56,12 +56,12 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 
 If you are using Windows Server, version 1803 or newer, or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- Name: `ForceDefenderPassiveMode`
+- Name: `ForcePassiveMode`
 - Type: `REG_DWORD`
 - Value: `1`
 
 > [!NOTE]
-> The `ForceDefenderPassiveMode` registry key is not supported on Windows Server 2016.
+> The `ForcePassiveMode` registry key is not supported on Windows Server 2016.
 
 (<a id="fn2">2</a>) On Windows Server 2016, Microsoft Defender Antivirus does not enter passive mode automatically when you install a non-Microsoft antivirus product. In addition, Microsoft Defender Antivirus is not supported in passive mode. In those cases, [disable/uninstall Microsoft Defender Antivirus manually](microsoft-defender-antivirus-on-windows-server-2016.md#are-you-using-windows-server-2016) to prevent problems caused by having multiple antivirus products installed on a server.
 
@@ -81,13 +81,13 @@ The table in this section summarizes the functionality and features that are ava
 > [!IMPORTANT]
 > Do not turn off capabilities, such as real-time protection, cloud-delivered protection, or limited periodic scanning, if you are using Microsoft Defender Antivirus in passive mode or you are using EDR in block mode. 
 
-|Protection |Active mode |Passive mode |EDR in block mode |Disabled or uninstalled |
-|:---|:---|:---|:---|:---|
-| [Real-time protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) and [cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) | Yes | No <sup>[[3](#fn3)]<sup> | No | No |
-| [Limited periodic scanning availability](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/limited-periodic-scanning-microsoft-defender-antivirus) | No | No | No | Yes |
-| [File scanning and detection information](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/customize-run-review-remediate-scans-microsoft-defender-antivirus) | Yes | Yes | Yes | No |
-|  [Threat remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-remediation-microsoft-defender-antivirus) | Yes | See note <sup>[[4](#fn4)]<sup> | Yes | No |
-| [Security intelligence updates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus) | Yes | Yes | Yes | No |
+|Protection |Active mode |Passive mode |Disabled or uninstalled |
+|:---|:---|:---|:---|
+| [Real-time protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) and [cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) | Yes | No <sup>[[3](#fn3)]<sup> | No |
+| [Limited periodic scanning availability](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/limited-periodic-scanning-microsoft-defender-antivirus) | No | No | Yes |
+| [File scanning and detection information](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/customize-run-review-remediate-scans-microsoft-defender-antivirus) | Yes | Yes | No |
+|  [Threat remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-remediation-microsoft-defender-antivirus) | Yes | See note <sup>[[4](#fn4)]<sup> | No |
+| [Security intelligence updates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus) | Yes | Yes | No |
 
 (<a id="fn3">3</a>) In general, when Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is enabled and in passive mode. 
 
@@ -110,7 +110,7 @@ The table in this section summarizes the functionality and features that are ava
 
 - When Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the protection offered by a non-Microsoft antivirus product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. Automatic re-enabling helps to ensure that antivirus protection is maintained on your devices. It also allows you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which uses the Microsoft Defender Antivirus engine to periodically check for threats in addition to your main antivirus app.
 
-- When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have an up-to-date, non-Microsoft antivirus product providing real-time protection from malware.
+- When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have an up-to-date, non-Microsoft antivirus product providing real-time protection from malware. For optimal security layered defense and detection efficacy, please ensure that you update the [Microsoft Defender Antivirus protection (Security intelligence update, Engine and Platform)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus) even if Microsoft Defender Antivirus is running in passive mode.
 
    If you uninstall the non-Microsoft antivirus product, and use Microsoft Defender Antivirus to provide protection to your devices, Microsoft Defender Antivirus will return to its normal active mode automatically.
 
