@@ -108,7 +108,7 @@ You can configure Windows to be in shared PC mode in a couple different ways:
   8. On the **Configuration settings** page, set the ‘Shared PC Mode’ value to **Enabled**.
 
      > [!div class="mx-imgBorder"]
-     > ![Shared PC settings in ICD](images/shared_pc_3.png) 
+     > ![Shared PC mode in the Configuration settings page](images/shared_pc_3.png) 
 
   9. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 4**.
 
