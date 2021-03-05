@@ -1,6 +1,6 @@
 ---
 title: DeviceManageability CSP
-description: The DeviceManageability configuration service provider (CSP) is used retrieve general information about MDM configuration capabilities on the device. 
+description: The DeviceManageability configuration service provider (CSP) is used to retrieve general information about MDM configuration capabilities on the device. 
 ms.assetid: FE563221-D5B5-4EFD-9B60-44FE4066B0D2
 ms.reviewer: 
 manager: dansimp
@@ -15,9 +15,9 @@ ms.date: 11/01/2017
 # DeviceManageability CSP
 
 
-The DeviceManageability configuration service provider (CSP) is used retrieve the general information about MDM configuration capabilities on the device. This CSP was added in Windows 10, version 1607.
+The DeviceManageability configuration service provider (CSP) is used to retrieve the general information about MDM configuration capabilities on the device. This CSP was added in Windows 10, version 1607.
 
-For performance reasons DeviceManageability CSP directly reads the CSP version from the registry. Specifically, the value csp\_version is used to determine each of the CSP versions. The csp\_version is a value under each of the CSP registration keys. To have consistency on the CSP version, the CSP GetProperty implementation for CFGMGR\_PROPERTY\_SEMANTICTYPE has to be updated to read from the registry as well, so that the both paths return the same information. 
+For performance reasons, DeviceManageability CSP directly reads the CSP version from the registry. Specifically, the value csp\_version is used to determine each of the CSP versions. The csp\_version is a value under each of the CSP registration keys. To have consistency on the CSP version, the CSP GetProperty implementation for CFGMGR\_PROPERTY\_SEMANTICTYPE has to be updated to read from the registry as well, so that the both paths return the same information. 
 
 The following shows the DeviceManageability configuration service provider in a tree format.
 ```
