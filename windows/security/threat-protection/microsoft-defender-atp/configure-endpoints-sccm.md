@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows 10 devices using Configuration Manager
 description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to the service.
-keywords: onboard devices using sccm, device management, configure Windows ATP devices, configure Microsoft Defender Advanced Threat Protection devices
+keywords: onboard devices using sccm, device management, configure Windows ATP devices, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,8 +25,8 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager current branch
 - System Center 2012 R2 Configuration Manager
 
