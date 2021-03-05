@@ -121,7 +121,7 @@ Table 1: Cross compatibility for Windows 10, Windows 8.1, Windows 8, and Window
 
 Manage-bde is a command-line utility that can be used for scripting BitLocker operations. Manage-bde offers additional options not displayed in the BitLocker control panel. For a complete list of the options, see [Manage-bde](/windows-server/administration/windows-commands/manage-bde).
 
-Manage-bde offers a multitude of wider options for configuring BitLocker. This means that using the command syntax may require care and possibly later customization by the user. For example, using just the `manage-bde -on` command on a data volume will fully encrypt the volume without any authenticating protectors. A volume encrypted in this manner still requires user interaction to turn on BitLocker protection, even though the command successfully completed because an authentication method needs to be added to the volume for it to be fully protected.
+Manage-bde offers a multitude of wider options for configuring BitLocker. This provision means that using the command syntax may require care and possibly later customization by the user. For example, using just the `manage-bde -on` command on a data volume will fully encrypt the volume without any authenticating protectors. A volume encrypted in this manner still requires user interaction to turn on BitLocker protection, even though the command successfully completed because an authentication method needs to be added to the volume for it to be fully protected.
 
 Command line users need to determine the appropriate syntax for a given situation. The following section covers general encryption for operating system volumes and data volumes.
 
@@ -148,25 +148,25 @@ manage-bde -on C:
 
 **Enabling BitLocker with a TPM only**
 
-It is possible to encrypt the operating system volume without any defined protectors using manage-bde. The command to do this is:
+It is possible to encrypt the operating system volume without any defined protectors using manage-bde. The command to do this action is:
 
 `manage-bde -on C:`
 
-This will encrypt the drive using the TPM as the protector. If a user is unsure of the protector for a volume, they can use the -protectors option in manage-bde to list this information with the command:
+This command will encrypt the drive using the TPM as the protector. If a user is unsure of the protector for a volume, they can use the -protectors option in manage-bde to list this information with the command:
 
 `manage-bde -protectors -get <volume>`
 
 **Provisioning BitLocker with two protectors**
 
-Another example is a user on non-TPM hardware who wishes to add a password and SID-based protector to the operating system volume. In this instance, the user adds the protectors first. This is done with the command:
+Another example is a user on non-TPM hardware who wishes to add a password and SID-based protector to the operating system volume. In this instance, the user first adds the protectors through the following command:
 
 `manage-bde -protectors -add C: -pw -sid <user or group>`
 
-This command will require the user to enter and then confirm the password protector before adding them to the volume. With the protectors enabled on the volume, the user just needs to turn BitLocker on.
+This command will require the user to enter and then confirm the password protector before adding them to the volume. With the protectors enabled on the volume, the user just needs to turn on BitLocker.
 
 ### Data volume
 
-Data volumes use the same syntax for encryption as operating system volumes but they do not require protectors for the operation to complete. Encrypting data volumes can be done using the base command: `manage-bde -on <drive letter>` or users can choose to add protectors to the volume. It is recommended that at least one primary protector and a recovery protector be added to a data volume.
+Data volumes use the same syntax for encryption as operating system volumes but they do not require protectors for the operation to complete. Encrypting data volumes can be done using the base command: `manage-bde -on <drive letter>` or users can choose to add protectors to the volume. We recommend adding at least one primary protector and a recovery protector to a data volume.
 
 **Enabling BitLocker with a password**
 
