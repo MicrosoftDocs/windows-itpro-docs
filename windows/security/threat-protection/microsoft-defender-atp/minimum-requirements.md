@@ -85,8 +85,8 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 ## Hardware and software requirements
 
 ### Supported Windows versions
-- Windows 7 SP1 Enterprise
-- Windows 7 SP1 Pro
+- Windows 7 SP1 Enterprise ([Requires ESU for support](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
+- Windows 7 SP1 Pro ([Requires ESU for support](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
 - Windows 10 Enterprise
@@ -107,11 +107,11 @@ Devices on your network must be running one of these editions.
 The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.
 
 > [!NOTE]
-> Machines running mobile versions of Windows are not supported.
+> Machines running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) are not supported.
 >
-> Virtual Machines running Windows 10 Enterprise 2016 LTSB (which is based on Windows 10, version 1607) may encounter performance issues if run on non-Microsoft virtualization platforms.
+> Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
 >
-> For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 (which is based on Windows 10, version 1809) or later.
+> For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
 
 
 ### Other supported operating systems

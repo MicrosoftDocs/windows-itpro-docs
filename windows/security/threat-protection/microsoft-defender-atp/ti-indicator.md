@@ -1,6 +1,6 @@
 ---
 title: Indicator resource type
-description: Specify the entity details and define the expiration of the indicator using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
+description: Specify the entity details and define the expiration of the indicator using Microsoft Defender for Endpoint.
 keywords: apis, supported apis, get, TiIndicator, Indicator, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security

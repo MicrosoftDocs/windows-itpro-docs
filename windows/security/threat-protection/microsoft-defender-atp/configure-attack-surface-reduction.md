@@ -28,7 +28,7 @@ ms.technology: mde
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-You can configure attack surface reduction with a number of tools, including:
+You can configure attack surface reduction with many tools, including:
 
 * Microsoft Intune
 * Microsoft Endpoint Configuration Manager

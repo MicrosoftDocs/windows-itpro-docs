@@ -38,12 +38,9 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 ### Schema tables
 
-- DeviceTvmSoftwareInventory – A complete list of all software on your devices, whether or not they have any vulnerabilities.
-    - You’ll have a single row for each software installed on every device.
-    - EndOfSupportStatus and EndOfSupportDate will have the end-of-support state (if applicable) for specific software versions installed on devices.
+- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - Inventory of software installed on devices, including their version information and end-of-support status
 
-- DeviceTvmSoftwareVulnerabilities – Discover vulnerabilities (CVEs) in existing software across all your devices.
-    - RecommendedSecurityUpdate and RecommendedSecurityUpdateId will have missing security updates / KBs for installed software.  
+- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - Software vulnerabilities found on devices and the list of available security updates that address each vulnerability
 
 - [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available
 
@@ -61,7 +58,7 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 ```kusto
 // Search for devices with High active alerts or Critical CVE public exploit
-DeviceTvmSoftwareInventoryVulnerabilities
+DeviceTvmSoftwareVulnerabilities
 | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
 | where IsExploitAvailable == 1 and CvssScore >= 7
 | summarize NumOfVulnerabilities=dcount(CveId),
@@ -71,7 +68,6 @@ DeviceName=any(DeviceName) by DeviceId
 DeviceName=any(DeviceName) by DeviceId, AlertId
 | project DeviceName, NumOfVulnerabilities, AlertId  
 | order by NumOfVulnerabilities desc
-
 ```
 
 ## Related topics
