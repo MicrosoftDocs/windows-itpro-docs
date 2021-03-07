@@ -19,7 +19,7 @@ ms.author: dansimp
 - **Cortana is regularly updated through the Microsoft Store.** Beginning with Windows 10, version 2004, Cortana is an appx preinstalled with Windows and is regularly updated through the Microsoft Store. To receive the latest updates to Cortana, you will need to [enable updates through the Microsoft Store](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store).
 
 ## Set up and configure the Bing Answers feature
-Bing Answers provides fast, authoritative results to search queries based on search terms. If you enable this policy setting for the Cortana Windows app or Microsoft Teams display, users can ask Cortana web-related questions such as “What’s the current weather?” or “What time is it in Tokyo?” 
+Bing Answers provides fast, authoritative results to search queries based on search terms. When the Bing Answers feature is enabled, users will be able to ask Cortana web-related questions in the Cortana in Windows app, such as &quot;What&#39;s the current weather?&quot; or &quot;Who is the president of the U.S.?,&quot; and get a response, based on public results from Bing.com.
 
 The above experience is powered by Microsoft Bing, and Cortana sends the user queries to Bing. The use of Microsoft Bing is governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Privacy Statement](https://privacy.microsoft.com/en-US/privacystatement).
 
@@ -46,4 +46,4 @@ When a user enters a search query (by speech or text), Cortana evaluates if the 
 Bing Answers is enabled by default for all users. However, admins can configure and change this for specific users and user groups in their organization.
 
 ## How the Bing Answer policy configuration is applied
-Before a query is sent to Bing for a search of public results from Bing.com, the Bing Answers service checks with the Office Cloud Policy Service to see if there are any policy configurations that pertain to the user for allowing Bing Answers to respond to questions users ask Cortana. If the user is a member of an AAD group that is assigned that policy configuration, then the appropriate policy settings are applied and a check is made again in 10 minutes. 
+Before a query is sent to Bing for a search of public results from Bing.com, the Bing Answers service checks with the Office Cloud Policy Service to see if there are any policy configurations that pertain to the user for allowing Bing Answers to respond to questions users ask Cortana. If the user is a member of an AAD group that is assigned that policy configuration, then the appropriate policy settings are applied and a check is made again in 10 minutes.

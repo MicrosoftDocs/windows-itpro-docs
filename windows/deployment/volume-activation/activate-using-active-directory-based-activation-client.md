@@ -29,9 +29,6 @@ ms.topic: article
 >- Windows Server 2012
 >- Windows Server 2016
 >- Windows Server 2019
->- Office 2013*
->- Office 2016*
->- Office 2019*
 
 **Looking for retail activation?**
 
@@ -49,10 +46,13 @@ The process proceeds as follows:
 1. Perform one of the following tasks:
    - Install the Volume Activation Services server role on a domain controller and add a KMS host key by using the Volume Activation Tools Wizard.
    - Extend the domain to the Windows Server 2012 R2 or higher schema level, and add a KMS host key by using the VAMT.
+
 1. Microsoft verifies the KMS host key, and an activation object is created.
+
 1. Client computers are activated by receiving the activation object from a domain controller during startup.
 
-    ![Active Directory-based activation flow](../images/volumeactivationforwindows81-10.jpg)
+    > [!div class="mx-imgBorder"]
+    > ![Active Directory-based activation flow](../images/volumeactivationforwindows81-10.jpg)
 
     **Figure 10**. The Active Directory-based activation flow
 
@@ -72,7 +72,9 @@ When a reactivation event occurs, the client queries AD DS for the activation o
 **To configure Active Directory-based activation on Windows Server 2012 R2 or higher, complete the following steps:**
 
 1. Use an account with Domain Administrator and Enterprise Administrator credentials to sign in to a domain controller.
+
 1. Launch Server Manager.
+
 1. Add the Volume Activation Services role, as shown in Figure 11.
 
     ![Adding the Volume Activation Services role](../images/volumeactivationforwindows81-11.jpg)
@@ -101,18 +103,17 @@ When a reactivation event occurs, the client queries AD DS for the activation o
 
     ![Entering your KMS host key](../images/volumeactivationforwindows81-14.jpg)
     
+    **Figure 15**. Choosing how to activate your product
+
     > [!NOTE]
     > To activate a KMS Host Key (CSVLK) for Microsoft Office, you need to install the version-specific Office Volume License Pack on the server where the Volume Activation Server Role is installed.
-
-
-    - [Office 2013 VL pack](https://www.microsoft.com/download/details.aspx?id=35584)
-
-    - [Office 2016 VL pack](https://www.microsoft.com/download/details.aspx?id=49164)
-
-    - [Office 2019 VL pack](https://www.microsoft.com/download/details.aspx?id=57342)
-
-
-    **Figure 15**. Choosing how to activate your product
+    > 
+    > 
+    > - [Office 2013 VL pack](https://www.microsoft.com/download/details.aspx?id=35584)
+    > 
+    > - [Office 2016 VL pack](https://www.microsoft.com/download/details.aspx?id=49164)
+    >
+    > - [Office 2019 VL pack](https://www.microsoft.com/download/details.aspx?id=57342)
 
 1. After activating the key, click **Commit**, and then click **Close**.
 
@@ -121,15 +122,21 @@ When a reactivation event occurs, the client queries AD DS for the activation o
 To verify your Active Directory-based activation configuration, complete the following steps:
 
 1. After you configure Active Directory-based activation, start a computer that is running an edition of Windows that is configured by volume licensing.
+
 1. If the computer has been previously configured with a MAK key, replace the MAK key with the GVLK by running the **slmgr.vbs /ipk** command and specifying the GLVK as the new product key.
+
 1. If the computer is not joined to your domain, join it to the domain.
+
 1. Sign in to the computer.
+
 1. Open Windows Explorer, right-click **Computer**, and then click **Properties**.
+
 1. Scroll down to the **Windows activation** section, and verify that this client has been activated.
 
     > [!NOTE]
     > If you are using both KMS and Active Directory-based activation, it may be difficult to see whether a client has been activated by KMS or by Active Directory-based activation. Consider disabling KMS during the test, or make sure that you are using a client computer that has not already been activated by KMS. The **slmgr.vbs /dlv** command also indicates whether KMS has been used.
-> To manage individual activations or apply multiple (mass) activations, please consider using the [VAMT](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool).
+    > 
+    > To manage individual activations or apply multiple (mass) activations, please consider using the [VAMT](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool).
 
 
 ## See also
