@@ -26,6 +26,20 @@ ms.technology: mde
 The following information lists the updates made to the Microsoft Defender for Endpoint APIs and the dates they were made.
 
 
+> [!TIP]
+> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: 
+>```
+>https://docs.microsoft.com/api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
+>```
+
+
+### 10.02.2021
+<hr>
+
+- Added new API: [Batch update alerts](batch-update-alerts.md). 
+
+<br>
+
 ### 25.01.2021
 <hr>
 
