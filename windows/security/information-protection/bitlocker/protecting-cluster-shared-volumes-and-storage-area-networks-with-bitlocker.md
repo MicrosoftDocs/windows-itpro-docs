@@ -35,7 +35,10 @@ Volumes within a cluster are managed with the help of BitLocker based on how the
 
 >**Important**  SANs used with BitLocker must have obtained Windows Hardware Certification. For more info, see [Windows Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx).
  
-Alternatively, the volume can be a cluster shared volume, a shared namespace, within the cluster. Windows Server 2012 expanded the CSV architecture, now known as CSV2.0, to enable support for BitLocker. When using BitLocker with volumes designated for a cluster, the volume must turn on BitLocker before its addition to the storage pool within cluster or put the resource into maintenance mode before BitLocker operations are completed.
+Alternatively, the volume can be a cluster shared volume, a shared namespace, within the cluster. Windows Server 2012 expanded the CSV architecture, now known as CSV2.0, to enable support for BitLocker. The volumes that are designated for a cluster must do the following:
+
+- It must turn on BitLocker - Only after this done, the volumes can be added into the storage pool
+- It must put the resource into maintenance mode before BitLocker operations are completed.
 
 Windows PowerShell or the manage-bde command-line interface is the preferred method to manage BitLocker on CSV2.0 volumes. This method is recommended over the BitLocker Control Panel item because CSV2.0 volumes are mount points. Mount points are an NTFS object that is used to provide an entry point to other volumes. Mount points do not require the use of a drive letter. Volumes that lack drive letters do not appear in the BitLocker Control Panel item. Additionally, the new Active Directory-based protector option required for cluster disk resource or CSV2.0 resources is not available in the Control Panel item.
 
