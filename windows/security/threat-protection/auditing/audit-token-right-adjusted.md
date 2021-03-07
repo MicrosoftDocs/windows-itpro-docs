@@ -5,7 +5,8 @@ manager: dansimp
 author: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
+ms.technology: mde
 ---
 
 # Audit Token Right Adjusted

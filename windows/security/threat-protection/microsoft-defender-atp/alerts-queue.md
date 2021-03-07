@@ -4,7 +4,7 @@ description: Learn about how the Microsoft Defender ATP alerts queues work, and 
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,21 +13,21 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
+ms.technology: mde
 ---
 
-# View and organize the Microsoft Defender Advanced Threat Protection Alerts queue
+# View and organize the Microsoft Defender for Endpoint Alerts queue
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
 The **Alerts queue** shows a list of alerts that were flagged from devices in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view. The most recent alerts are showed at the top of the list helping you see the most recent alerts first.
 
@@ -61,15 +61,15 @@ Informational </br>(Grey) | Alerts that might not be considered harmful to the n
 
 #### Understanding alert severity
 
-Microsoft Defender Antivirus (Microsoft Defender AV) and Microsoft Defender ATP alert severities are different because they represent different scopes.
+Microsoft Defender Antivirus (Microsoft Defender AV) and Defender for Endpoint alert severities are different because they represent different scopes.
 
 The Microsoft Defender AV threat severity represents the absolute severity of the detected threat (malware), and is assigned based on the potential risk to the individual device, if infected.
 
-The Microsoft Defender ATP alert severity represents the severity of the detected behavior, the actual risk to the device but more importantly the potential risk to the organization.
+The Defender for Endpoint alert severity represents the severity of the detected behavior, the actual risk to the device but more importantly the potential risk to the organization.
 
 So, for example:
 
-- The severity of a Microsoft Defender ATP alert about a Microsoft Defender AV detected threat that was completely prevented and did not infect the device is categorized as "Informational" because there was no actual damage.
+- The severity of a Defender for Endpoint alert about a Microsoft Defender AV detected threat that was completely prevented and did not infect the device is categorized as "Informational" because there was no actual damage.
 - An alert about a commercial malware was detected while executing, but blocked and remediated by Microsoft Defender AV, is categorized as  "Low" because it may have caused some damage to the individual device but poses no organizational threat.
 - An alert about malware detected while executing which can pose a threat not only to the individual device but to the organization, regardless if it was eventually blocked, may be ranked as "Medium" or "High".
 - Suspicious behavioral alerts, which weren't blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
@@ -80,24 +80,24 @@ We've redefined the alert categories to align to the [enterprise attack tactics]
 
 The table below lists the current categories and how they generally map to previous categories. 
 
-| New category | Previous categories | Detected threat activity or component |
-|----------------------|----------------------|-------------|
-| Collection           | - | Locating and collecting data for exfiltration |
-| Command and control  | CommandAndControl | Connecting to attacker-controlled network infrastructure to relay data or receive commands |
-| Credential access    | CredentialTheft | Obtaining valid credentials to extend control over devices and other resources in the network |
-| Defense evasion      | - | Avoiding security controls by, for example, turning off security apps, deleting implants, and running rootkits |
-| Discovery            | Reconnaissance, WebFingerprinting | Gathering information about important devices and resources, such as administrator computers, domain controllers, and file servers |
-| Execution            | Delivery, MalwareDownload | Launching attacker tools and malicious code, including RATs and backdoors |
-| Exfiltration         | Exfiltration | Extracting data from the network to an external, attacker-controlled location |
-| Exploit              | Exploit | Exploit code and possible exploitation activity |
-| Initial access       | SocialEngineering, WebExploit, DocumentExploit | Gaining initial entry to the target network, usually involving password-guessing, exploits, or phishing emails |
-| Lateral movement     | LateralMovement, NetworkPropagation | Moving between devices in the target network to reach critical resources or gain network persistence |
-| Malware              | Malware, Backdoor, Trojan, TrojanDownloader, CredentialStealing, Weaponization, RemoteAccessTool | Backdoors, trojans, and other types of malicious code |
-| Persistence          | Installation, Persistence | Creating autostart extensibility points (ASEPs) to remain active and survive system restarts |
-| Privilege escalation | PrivilegeEscalation | Obtaining higher permission levels for code by running it in the context of a privileged process or account |
-| Ransomware           | Ransomware | Malware that encrypts files and extorts payment to restore access |
-| Suspicious activity  | General, None, NotApplicable, EnterprisePolicy, SuspiciousNetworkTraffic | Atypical activity that could be malware activity or part of an attack |
-| Unwanted software    | UnwantedSoftware | Low-reputation apps and apps that impact productivity and the user experience; detected as potentially unwanted applications (PUAs) |
+| New   category       | API category name   | Detected threat activity or   component                                                                                                 |
+|----------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| Collection           | Collection          | Locating   and collecting data for exfiltration                                                                                         |
+| Command and control  | CommandAndControl   | Connecting   to attacker-controlled network infrastructure to relay data or receive   commands                                          |
+| Credential access    | CredentialAccess    | Obtaining   valid credentials to extend control over devices and other resources in the   network                                       |
+| Defense evasion      | DefenseEvasion      | Avoiding security controls by, for example, turning off   security apps, deleting implants, and running rootkits                        |
+| Discovery            | Discovery           | Gathering   information about important devices and resources, such as administrator   computers, domain controllers, and file servers  |
+| Execution            | Execution           | Launching   attacker tools and malicious code, including RATs and backdoors                                                             |
+| Exfiltration         | Exfiltration        | Extracting   data from the network to an external, attacker-controlled location                                                         |
+| Exploit              | Exploit             | Exploit   code and possible exploitation activity                                                                                       |
+| Initial access       | InitialAccess       | Gaining   initial entry to the target network, usually involving password-guessing,   exploits, or phishing emails                      |
+| Lateral movement     | LateralMovement     | Moving   between devices in the target network to reach critical resources or gain   network persistence                                |
+| Malware              | Malware             | Backdoors,   trojans, and other types of malicious code                                                                                 |
+| Persistence          | Persistence         | Creating   autostart extensibility points (ASEPs) to remain active and survive system   restarts                                        |
+| Privilege escalation | PrivilegeEscalation | Obtaining   higher permission levels for code by running it in the context of a   privileged process or account                         |
+| Ransomware           | Ransomware          | Malware   that encrypts files and extorts payment to restore access                                                                     |
+| Suspicious activity  | SuspiciousActivity  | Atypical   activity that could be malware activity or part of an attack                                                                 |
+| Unwanted software    | UnwantedSoftware    | Low-reputation   apps and apps that impact productivity and the user experience; detected as   potentially unwanted applications (PUAs) |
 
 
 ### Status
@@ -118,10 +118,26 @@ You can choose between showing alerts that are assigned to you or automation.
 
 ### Detection source
 
-Select the source that triggered the alert detection.  Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
+Select the source that triggered the alert detection. Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
 
 >[!NOTE]
 >The Antivirus filter will only appear if devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
+
+| Detection source                  | API value                  |
+|-----------------------------------|----------------------------|
+| 3rd party sensors                 | ThirdPartySensors          |
+| Antivirus                         | WindowsDefenderAv          |
+| Automated investigation           | AutomatedInvestigation     |
+| Custom detection                  | CustomDetection            |
+| Custom TI                         | CustomerTI                 |
+| EDR                               | WindowsDefenderAtp         |
+| Microsoft 365 Defender            | MTP                        |
+| Microsoft Defender for Office 365 | OfficeATP                  |
+| Microsoft Threat Experts          | ThreatExperts              |
+| SmartScreen                       | WindowsDefenderSmartScreen |
+
+
+
 
 
 ### OS platform
@@ -138,11 +154,11 @@ Use this filter to focus on alerts that are related to high profile threats. You
 
 ## Related topics
 
-- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
-- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
-- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
-- [Investigate devices in the Microsoft Defender ATP Devices list](investigate-machines.md)
-- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
-- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
-- [Investigate a user account in Microsoft Defender ATP](investigate-user.md)
+- [Manage Microsoft Defender for Endpoint alerts](manage-alerts.md)
+- [Investigate Microsoft Defender for Endpoint alerts](investigate-alerts.md)
+- [Investigate a file associated with a Microsoft Defender for Endpoint alert](investigate-files.md)
+- [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md)
+- [Investigate an IP address associated with a Microsoft Defender for Endpoint alert](investigate-ip.md)
+- [Investigate a domain associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
+- [Investigate a user account in Microsoft Defender for Endpoint](investigate-user.md)
 

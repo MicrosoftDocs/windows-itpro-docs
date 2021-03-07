@@ -20,15 +20,21 @@ ms.topic: article
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Retrieves a security recommendation related to a specific software.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -61,7 +67,7 @@ If successful, this method returns 200 OK with the software associated with the 
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.windows.com/api/recommendations/va-_-google-_-chrome/software 
+GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome/software 
 ```
 
 **Response**
@@ -70,7 +76,7 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Analytics.Contracts.PublicAPI.PublicProductDto",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Analytics.Contracts.PublicAPI.PublicProductDto",
     "id": "google-_-chrome",
     "name": "chrome",
     "vendor": "google",

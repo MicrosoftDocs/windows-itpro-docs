@@ -4,7 +4,7 @@ description: Learn the rules for Windows Defender Firewall with Advanced Securit
 ms.assetid: a4fff086-ae81-4c09-b828-18c6c9a937a7
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Enable Predefined Inbound Rules

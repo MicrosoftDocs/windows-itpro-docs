@@ -80,7 +80,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows users who are connected to the Internet to access and search troubleshooting content that is hosted on Microsoft content servers. Users can access online troubleshooting content from within the Troubleshooting Control Panel UI by clicking "Yes" when they are prompted by a message that states, "Do you want the most up-to-date troubleshooting content?"
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows users who are connected to the Internet to access and search troubleshooting content that is hosted on Microsoft content servers. Users can access online troubleshooting content from within the Troubleshooting Control Panel UI by clicking "Yes" when they are prompted by a message that states, "Do you want the most up-to-date troubleshooting content?"
 
 If you enable or do not configure this policy setting, users who are connected to the Internet can access and search troubleshooting content that is hosted on Microsoft content servers from within the Troubleshooting Control Panel user interface.
 
@@ -149,7 +149,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows users to access and run the troubleshooting tools that are available in the Troubleshooting Control Panel and to run the troubleshooting wizard to troubleshoot problems on their computers.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows users to access and run the troubleshooting tools that are available in the Troubleshooting Control Panel and to run the troubleshooting wizard to troubleshoot problems on their computers.
 
 If you enable or do not configure this policy setting, users can access and run the troubleshooting tools from the Troubleshooting Control Panel.
 
@@ -220,7 +220,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether scripted diagnostics will execute diagnostic packages that are signed by untrusted publishers.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether scripted diagnostics will execute diagnostic packages that are signed by untrusted publishers.
 
 If you enable this policy setting, the scripted diagnostics execution engine validates the signer of any diagnostic package and runs only those signed by trusted publishers.
 
@@ -247,14 +247,14 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 <!--/Policies-->
 

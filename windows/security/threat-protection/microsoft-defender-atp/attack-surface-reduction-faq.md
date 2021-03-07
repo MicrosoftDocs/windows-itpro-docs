@@ -1,10 +1,10 @@
 ---
 title: Attack surface reduction frequently asked questions (FAQ)
 description: Find answers to frequently asked questions about Microsoft Defender ATP's attack surface reduction rules.
-keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP
+keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,20 +14,21 @@ ms.author: v-maave
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Attack surface reduction frequently asked questions (FAQ)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 ## Is attack surface reduction (ASR) part of Windows?
 
-ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10 version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, the full ASR feature-set is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Microsoft Defender Antivirus exclusions.
+ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10, version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, the full ASR feature-set is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Microsoft Defender Antivirus exclusions.
 
 ## Do I need to have an enterprise license to run ASR rules?
 
@@ -43,7 +44,7 @@ Yes. ASR is supported for Windows Enterprise E3 and above.
 
 All of the rules supported with E3 are also supported with E5.
 
-E5 also added greater integration with Microsoft Defender ATP. With E5, you can [use Microsoft Defender ATP to monitor and review analytics](https://docs.microsoft.com/microsoft-365/security/mtp/monitor-devices?view=o365-worldwide#monitor-and-manage-asr-rule-deployment-and-detections) on alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
+E5 also added greater integration with Defender for Endpoint. With E5, you can [use Defender for Endpoint to monitor and review analytics](https://docs.microsoft.com/microsoft-365/security/mtp/monitor-devices?view=o365-worldwide&preserve-view=true#monitor-and-manage-asr-rule-deployment-and-detections) on alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
 
 ## What are the currently supported ASR rules?
 
@@ -75,13 +76,13 @@ Larger organizations should consider rolling out ASR rules in "rings," by auditi
 
 Keep the rule in audit mode for about 30 days to get a good baseline for how the rule will operate once it goes live throughout your organization. During the audit period, you can identify any line-of-business applications that might get blocked by the rule, and configure the rule to exclude them.
 
-## I'm making the switch from a third-party security solution to Microsoft Defender ATP. Is there an "easy" way to export rules from another security solution to ASR?
+## I'm making the switch from a third-party security solution to Defender for Endpoint. Is there an "easy" way to export rules from another security solution to ASR?
 
-In most cases, it's easier and better to start with the baseline recommendations suggested by [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) (Microsoft Defender ATP) than to attempt to import rules from another security solution. Then, use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs. 
+In most cases, it's easier and better to start with the baseline recommendations suggested by [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) than to attempt to import rules from another security solution. Then, use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs. 
 
-The default configuration for most ASR rules, combined with Microsoft Defender ATP's real-time protection, will protect against a large number of exploits and vulnerabilities.
+The default configuration for most ASR rules, combined with Defender for Endpoint's real-time protection, will protect against a large number of exploits and vulnerabilities.
 
-From within Microsoft Defender ATP, you can update your defenses with custom indicators, to allow and block certain software behaviors. ASR also allows for some customization of rules, in the form of file and folder exclusions. As a general rule, it is best to audit a rule for a period of time, and configure exclusions for any line-of-business applications that might get blocked.
+From within Defender for Endpoint, you can update your defenses with custom indicators, to allow and block certain software behaviors. ASR also allows for some customization of rules, in the form of file and folder exclusions. As a general rule, it is best to audit a rule for a period of time, and configure exclusions for any line-of-business applications that might get blocked.
 
 ## Does ASR support file or folder exclusions that include system variables and wildcards in the path?
 
@@ -95,9 +96,9 @@ It depends on the rule. Most ASR rules cover the behavior of Microsoft Office pr
 
 ASR uses Microsoft Defender Antivirus to block applications. It is not possible to configure ASR to use another security solution for blocking at this time.
 
-## I have an E5 license and enabled some ASR rules in conjunction with Microsoft Defender ATP. Is it possible for an ASR event to not show up at all in Microsoft Defender ATP's event timeline?
+## I have an E5 license and enabled some ASR rules in conjunction with Defender for Endpoint. Is it possible for an ASR event to not show up at all in Defender for Endpoint's event timeline?
 
-Whenever a notification is triggered locally by an ASR rule, a report on the event is also sent to the Microsoft Defender ATP portal. If you're having trouble finding the event, you can filter the events timeline using the search box. You can also view ASR events by visiting **Go to attack surface management**, from the **Configuration management** icon in the Security Center taskbar. The attack surface management page includes a tab for report detections, which includes a full list of ASR rule events reported to Microsoft Defender ATP.
+Whenever a notification is triggered locally by an ASR rule, a report on the event is also sent to the Defender for Endpoint portal. If you're having trouble finding the event, you can filter the events timeline using the search box. You can also view ASR events by visiting **Go to attack surface management**, from the **Configuration management** icon in the Security Center taskbar. The attack surface management page includes a tab for report detections, which includes a full list of ASR rule events reported to Defender for Endpoint.
 
 ## I applied a rule using GPO. Now when I try to check the indexing options for the rule in Microsoft Outlook, I get a message stating, 'Access denied'.
 
@@ -127,7 +128,7 @@ Because many legitimate processes throughout a typical day will be calling on ls
 
 Enabling this rule will not provide additional protection if you have [LSA protection](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) enabled as well. Both the rule and LSA protection work in much the same way, so having both running at the same time would be redundant. However, sometimes you may not be able to enable LSA protection. In those cases, you can enable this rule to provide equivalent protection against malware that target lsass.exe.
 
-## Related topics
+## See also
 
 * [Attack surface reduction overview](attack-surface-reduction.md)
 * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)

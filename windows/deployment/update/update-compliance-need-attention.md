@@ -1,7 +1,7 @@
 ---
 title: Update Compliance - Need Attention! report
 manager: laurawi
-description: Learn how the Needs attention! section provides a breakdown of all Windows 10 device and update issues detected by Update Compliance.
+description: Learn how the Need attention! section provides a breakdown of all Windows 10 device and update issues detected by Update Compliance.
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro

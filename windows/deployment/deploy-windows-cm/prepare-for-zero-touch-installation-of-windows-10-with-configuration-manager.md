@@ -1,5 +1,5 @@
 ---
-title: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager (Windows 10)
+title: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
 description: Learn how to prepare a Zero Touch Installation of Windows 10 with Configuration Manager, by integrating Configuration Manager with Microsoft Deployment Toolkit.
 ms.assetid: 06e3a221-31ef-47a5-b4da-3b927cb50d08
 ms.reviewer: 
@@ -13,6 +13,7 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
@@ -21,7 +22,7 @@ ms.topic: article
 
 -   Windows 10
 
-This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Configuration Manager (ConfigMgr) [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT). 
+This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Manager (ConfigMgr) [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT). 
 
 ## Prerequisites
 
@@ -76,7 +77,7 @@ ForEach($entry in $oulist){
 }
 ```
 
-Next, copy the following list of OU names and paths into a text file and save it as <b>C:\Setup\Scripts\oulist.txt</b>
+Next, copy the following list of OU names and paths into a text file and save it as **C:\Setup\Scripts\oulist.txt**
 
 ```text
 OUName,OUPath
@@ -128,7 +129,7 @@ In order for the Configuration Manager Join Domain Account (CM\_JD) to join mach
 
 On **DC01**:
 
-1. Sign in as contoso\administrtor and enter the following at an elevated Windows PowerShell prompt:
+1. Sign in as contoso\administrator and enter the following at an elevated Windows PowerShell prompt:
 
    ``` 
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
@@ -240,7 +241,7 @@ On **CM01**:
 2.  Right-click **PS1 - Primary Site 1**, point to **Configure Site Components**, and then select **Software Distribution**.
 3.  On the **Network Access Account** tab, select **Specify the account that accesses network locations** and add the *New Account* **CONTOSO\\CM\_NAA** as the Network Access account (password: pass@word1). Use the new **Verify** option to verify that the account can connect to the **\\\\DC01\\sysvol** network share.
 
-![figure 12](../images/mdt-06-fig12.png)
+![figure 11](../images/mdt-06-fig12.png)
 
 Test the connection for the Network Access account.
 
