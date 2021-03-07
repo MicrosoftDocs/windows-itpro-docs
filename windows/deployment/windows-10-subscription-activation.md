@@ -91,7 +91,7 @@ The following figure illustrates how deploying Windows 10 has evolved with each 
 > The following requirements do not apply to general Windows 10 activation on Azure. Azure activation requires a connection to Azure KMS only, and supports workgroup, Hybrid, and Azure AD-joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/troubleshooting/troubleshoot-activation-problems#understanding-azure-kms-endpoints-for-windows-product-activation-of-azure-virtual-machines).
 
 > [!NOTE]
-> Currently, Subscription Activation is only available on commercial tenants and is not currently available on US GCC,GCC High or, DoD tenants.
+> Currently, Subscription Activation is only available on commercial tenants and is currently not available on US GCC, GCC High, or DoD tenants.
 
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following:
 
