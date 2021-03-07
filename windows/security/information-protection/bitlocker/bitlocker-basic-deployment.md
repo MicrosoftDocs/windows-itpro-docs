@@ -55,9 +55,11 @@ Upon launch, the BitLocker Drive Encryption Wizard verifies the computer meets t
 |--- |--- |
 |Hardware configuration|The computer must meet the minimum requirements for the supported Windows versions.|
 |Operating system|BitLocker is an optional feature which can be installed by Server Manager on Windows Server 2012 and later.|
-|Hardware TPM|TPM version 1.2 or 2.0. <p> A TPM is not required for BitLocker; however, only a computer with a TPM can provide the additional security of pre-startup system integrity verification and multifactor authentication.|
+|Hardware TPM|TPM version 1.2 or 2.0. <p> A TPM is not required for BitLocker; however, only a computer with a TPM can provide security such as:
+- verification of the integrity of the system before it is booted
+- multifactor authentication.|
 |BIOS configuration|<li> A Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware.</li> <li> The boot order must be set to start first from the hard disk, and not the USB or CD drives.</li>  <li> The firmware must be able to read from a USB flash drive during startup.</li>|
-|File system|For computers that boot natively with UEFI firmware, at least one FAT32 partition for the system drive and one NTFS partition for the operating system drive. <br/> For computers with legacy BIOS firmware, at least two NTFS disk partitions, one for the system drive and one for the operating system drive. <br/> For either firmware, the system drive partition must be at least 350 megabytes (MB) and set as the active partition.|
+|File system| One FAT32 partition for the system drive and one NTFS partition for the operating system drive. This is applicable for computers that boot natively with UEFI firmware. <br/> For computers with legacy BIOS firmware, at least two NTFS disk partitions, one for the system drive and one for the operating system drive. <br/> For either firmware, the system drive partition must be at least 350 megabytes (MB) and set as the active partition.|
 |Hardware encrypted drive prerequisites (optional)|To use a hardware encrypted drive as the boot drive, the drive must be in the uninitialized state and in the security inactive state. In addition, the system must always boot with native UEFI version 2.3.1 or higher and the CSM (if any) disabled.|
 
 Upon passing the initial configuration, users are required to enter a password for the volume. If the volume does not pass the initial configuration for BitLocker, the user is presented with an error dialog describing the appropriate actions to be taken.
