@@ -22,7 +22,6 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
@@ -50,7 +49,7 @@ Enable security information and event management (SIEM) integration so you can p
 ## Enabling SIEM integration 
 1. In the navigation pane, select **Settings** > **SIEM**.
 
-    ![Image of SIEM integration from Settings menu](images/enable_siem.png)
+    ![Image of SIEM integration from Settings menu1](images/enable_siem.png)
 
     >[!TIP]
     >If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability. 
@@ -61,7 +60,7 @@ Enable security information and event management (SIEM) integration so you can p
     >The client secret is only displayed once. Make sure you keep a copy of it in a safe place.<br>
      
 
-    ![Image of SIEM integration from Settings menu](images/siem_details.png)
+    ![Image of SIEM integration from Settings menu2](images/siem_details.png)
 
 3. Choose the SIEM type you use in your organization.
 

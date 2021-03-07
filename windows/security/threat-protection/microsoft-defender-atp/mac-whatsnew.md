@@ -1,6 +1,6 @@
 ---
-title: What's new in Microsoft Defender Advanced Threat Protection for Mac
-description: Learn about the major changes for previous versions of Microsoft Defender Advanced Threat Protection for Mac.
+title: What's new in Microsoft Defender for Endpoint for Mac
+description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint for Mac.
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

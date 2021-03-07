@@ -16,7 +16,6 @@ ms.topic: article
 # Create mandatory user profiles
 
 **Applies to**
-
 - Windows 10
 
 A mandatory user profile is a roaming user profile that has been pre-configured by an administrator to specify settings for users. Settings commonly defined in a mandatory profile include (but are not limited to): icons that appear on the desktop, desktop backgrounds, user preferences in Control Panel, printer selections, and more. Configuration changes made during a user's session that are normally saved to a roaming user profile are not saved when a mandatory user profile is assigned.
@@ -76,38 +75,34 @@ First, you create a default user profile with the customizations that you want, 
    > [!TIP]
    > If you receive an error message that says "Sysprep was not able to validate your Windows installation", open %WINDIR%\\System32\\Sysprep\\Panther\\setupact.log and look for an entry like the following:
    >
-   > ![Microsoft Bing Translator package](images/sysprep-error.png)
+   > ![Microsoft Bing Translator package error](images/sysprep-error.png)
    >
    > Use the [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) and [Remove-AppxPackage -AllUsers](https://docs.microsoft.com/powershell/module/appx/remove-appxpackage?view=win10-ps) cmdlet in Windows PowerShell to uninstall the app that is listed in the log.
 
 1. The sysprep process reboots the PC and starts at the first-run experience screen. Complete the set up, and then sign in to the computer using an account that has local administrator privileges.
 
-1. Right-click **Start**, go to **Control Panel** (view by large or small icons) > **System** > **Advanced system settings**, and click **Settings** in the **User Profiles** section. Alternatively, starting in Windows 10, version 2004, open the **Settings** app and select **Advanced system settings**.
-
-Starting in Windows 10 version (2004) Open the Settings app and click on Advanced system settings
+1. Right-click Start, go to **Control Panel** (view by large or small icons) > **System** > **Advanced system settings**, and click **Settings** in the **User Profiles** section.
 
 1. In **User Profiles**, click **Default Profile**, and then click **Copy To**.
 
 
-   ![Example of UI](images/copy-to.png)
+   ![Example of User Profiles UI](images/copy-to.png)
 
 1. In **Copy To**, under **Permitted to use**, click **Change**.
 
-   ![Example of UI](images/copy-to-change.png)
+   ![Example of Copy To UI](images/copy-to-change.png)
 
-1. In **Select User or Group**, in the **Enter the object name to select** field, type `everyone` or the group of users that the profile will be assigned to, click **Check Names**, and then click **OK**.
+1. In **Select User or Group**, in the **Enter the object name to select** field, type `everyone`, click **Check Names**, and then click **OK**.
 
 1. In **Copy To**, in the **Copy profile to** field, enter the path and folder name where you want to store the mandatory profile. The folder name must use the correct [extension](#profile-extension-for-each-windows-version) for the operating system version. For example, the folder name must end with ".v6" to identify it as a user profile folder for Windows 10, version 1607.
 
    - If the device is joined to the domain and you are signed in with an account that has permissions to write to a shared folder on the network, you can enter the shared folder path.
 
-   ![Example of UI](images/copy-to-path.png)
+   ![Example of Copy profile to](images/copy-to-path.png)
 
    - If the device is not joined to the domain, you can save the profile locally and then copy it to the shared folder location.
-   - Optionally, you can check the **Mandatory profile** checkbox. This step is not required but will set permissions that are more restrictive and we recommend doing so.
 
-
-   ![Example of UI](images/copy-to-path.png)
+   ![Example of Copy To UI with UNC path](images/copy-to-path.png)
 
 1. Click **OK** to copy the default user profile.
 

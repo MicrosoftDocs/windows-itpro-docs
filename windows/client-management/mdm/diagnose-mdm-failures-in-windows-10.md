@@ -23,10 +23,10 @@ To help diagnose enrollment or device management issues in Windows 10 devices m
    ![Access work or school page in Settings](images/diagnose-mdm-failures15.png)
 
 1. At the bottom of the **Settings** page, click **Create report**.  
-   ![Access work or school page in Settings](images/diagnose-mdm-failures16.png)
+   ![Access work or school page and then Create report](images/diagnose-mdm-failures16.png)
 1. A window opens that shows the path to the log files. Click **Export**.
 
-   ![Access work or school page in Settings](images/diagnose-mdm-failures17.png)
+   ![Access work or school log files](images/diagnose-mdm-failures17.png)
 
 1. In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
 
@@ -121,28 +121,28 @@ Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medi
 1.  Download and install the [Field Medic]( https://go.microsoft.com/fwlink/p/?LinkId=718232) app from the store.
 2.  Open the Field Medic app and then click on **Advanced**.
 
-    ![field medic screenshot](images/diagnose-mdm-failures2.png)
+    ![field medic screenshot 2](images/diagnose-mdm-failures2.png)
 
 3.  Click on **Choose with ETW provider to use**.
 
-    ![field medic screenshot](images/diagnose-mdm-failures3.png)
+    ![field medic screenshot 3](images/diagnose-mdm-failures3.png)
 
 4.  Check **Enterprise** and un-check the rest.
 
-    ![field medic screenshot](images/diagnose-mdm-failures4.png)
+    ![field medic screenshot 4](images/diagnose-mdm-failures4.png)
 
 5.  In the app, click on **Start Logging** and then perform the operation that you want to troubleshoot.
 
-    ![field medic screenshot](images/diagnose-mdm-failures2.png)
+    ![field medic screenshot 5](images/diagnose-mdm-failures2.png)
 
 6.  When the operation is done, click on **Stop Logging**.
 
-    ![field medic screenshot](images/diagnose-mdm-failures5.png)
+    ![field medic screenshot 6](images/diagnose-mdm-failures5.png)
 
 7.  Save the logs. They will be stored in the Field Medic log location on the device.
 8.  You can send the logs via email by attaching the files from **Documents > Field Medic > Reports > ...** folder.
 
-    ![device documents folder](images/diagnose-mdm-failures6.png)![device folder screenshot](images/diagnose-mdm-failures7.png)![device folder screenshot](images/diagnose-mdm-failures8.png)
+    ![device documents folder](images/diagnose-mdm-failures6.png)![device folder screenshot 7](images/diagnose-mdm-failures7.png)![device folder screenshot 8](images/diagnose-mdm-failures8.png)
 
 The following table contains a list of common providers and their corresponding GUIDs.
 
@@ -294,21 +294,21 @@ For best results, ensure that the PC or VM on which you are viewing logs matches
 3.  Navigate to the etl file that you got from the device and then open the file.
 4.  Click **Yes** when prompted to save it to the new log format.
 
-    ![prompt](images/diagnose-mdm-failures10.png)
+    ![event viewer prompt](images/diagnose-mdm-failures10.png)
 
     ![diagnose mdm failures](images/diagnose-mdm-failures11.png)
 
 5.  The new view contains traces from the channel. Click on **Filter Current Log** from the **Actions** menu.
 
-    ![event viewer](images/diagnose-mdm-failures12.png)
+    ![event viewer actions](images/diagnose-mdm-failures12.png)
 
 6.  Add a filter to Event sources by selecting **DeviceManagement-EnterpriseDiagnostics-Provider** and click **OK**.
 
-    ![event filter](images/diagnose-mdm-failures13.png)
+    ![event filter for Device Management](images/diagnose-mdm-failures13.png)
 
 7.  Now you are ready to start reviewing the logs.
 
-    ![event viewer](images/diagnose-mdm-failures14.png)
+    ![event viewer review logs](images/diagnose-mdm-failures14.png)
 
 ## Collect device state data
 
@@ -336,9 +336,3 @@ Here's an example of how to collect current MDM device state data using the [Dia
 ```
 
  
-
-
-
-
-
-

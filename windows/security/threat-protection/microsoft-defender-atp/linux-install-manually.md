@@ -339,8 +339,6 @@ Download the onboarding package from Microsoft Defender Security Center:
         mdatp threat list
         ```
 
-    If the test file isn't detected and quarantined, it might be labeled as an allowed threat. See the [allowedThreats](linux-preferences.md#allowed-threats) option and the structure of the configuration profile at [Set preferences for Microsoft Defender for Endpoint for Linux](linux-preferences.md).
-
 ## Installer script
 
 Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
