@@ -512,7 +512,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     - Identifier: `com.microsoft.wdav`
     - Identifier Type: Bundle ID
-    - Code Requirement: identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /\* exists \*/ and certificate leaf[field.1.2.840.113635.100.6.1.13] /\* exists \*/ and certificate leaf[subject.OU] = UBF8T346G9
+    - Code Requirement: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 
 
     ![Image of configuration setting](images/22cb439de958101c0a12f3038f905b27.png)
