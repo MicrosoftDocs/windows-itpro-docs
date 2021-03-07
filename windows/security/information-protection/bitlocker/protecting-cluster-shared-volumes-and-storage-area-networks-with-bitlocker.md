@@ -35,16 +35,16 @@ Volumes within a cluster are managed with the help of BitLocker based on how the
 
 >**Important**  SANs used with BitLocker must have obtained Windows Hardware Certification. For more info, see [Windows Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx).
  
-Alternatively, the volume can be a cluster shared volume, a shared namespace, within the cluster. Windows Server 2012 expanded the CSV architecture, now known as CSV2.0, to enable support for BitLocker. The volumes that are designated for a cluster must do the following:
+Instead, the volume can be a cluster-shared volume. Windows Server 2012 expanded the CSV architecture, now known as CSV2.0, to enable support for BitLocker. The volumes that are designated for a cluster must do the following:
 
 - It must turn on BitLocker - Only after this done, the volumes can be added into the storage pool
 - It must put the resource into maintenance mode before BitLocker operations are completed.
 
-Windows PowerShell or the manage-bde command-line interface is the preferred method to manage BitLocker on CSV2.0 volumes. This method is recommended over the BitLocker Control Panel item because CSV2.0 volumes are mount points. Mount points are an NTFS object that is used to provide an entry point to other volumes. Mount points do not require the use of a drive letter. Volumes that lack drive letters do not appear in the BitLocker Control Panel item. Additionally, the new Active Directory-based protector option required for cluster disk resource or CSV2.0 resources is not available in the Control Panel item.
+Windows PowerShell or the manage-bde command-line interface is the preferred method to manage BitLocker on CSV2.0 volumes. This method is recommended over the BitLocker Control Panel item because CSV2.0 volumes are mount points. Mount points are an NTFS object that is used to provide an entry point to other volumes. Mount points don't require the use of a drive letter. Volumes that lack drive letters don''t appear in the BitLocker Control Panel item. Additionally, the new Active Directory-based protector option required for cluster disk resource or CSV2.0 resources isn't available in the Control Panel item.
 
 >**Note:**  Mount points can be used to support remote mount points on SMB-based network shares. This type of share is not supported for BitLocker encryption.
  
-For thinly provisioned storage, such as a dynamic virtual hard disk (VHD), BitLocker runs in **Used Disk Space Only** encryption mode. You cannot use the **manage-bde -WipeFreeSpace** command to transition the volume to full-volume encryption on thinly provisioned storage volumes. The usage of **manage-bde -WipeFreeSpace** command is blocked to avoid expanding thinly provisioned volumes to occupy the entire backing store while wiping the unoccupied (free) space.
+In the case of thinly provisioned storage, such as a dynamic virtual hard disk (VHD), BitLocker runs in **Used Disk Space Only** encryption mode. You can't use the **manage-bde -WipeFreeSpace** command to transition the volume to full-volume encryption on thinly provisioned storage volumes. The usage of **manage-bde -WipeFreeSpace** command is blocked to avoid expanding thinly provisioned volumes to occupy the entire backing store while wiping the unoccupied (free) space.
 
 ### Active Directory-based protector
 
@@ -64,7 +64,11 @@ You can also use an Active Directory Domain Services (AD DS) protector for prote
  
 ### Turning on BitLocker before adding disks to a cluster using Windows PowerShell
 
-BitLocker encryption is available for disks before or after addition to a cluster storage pool. The advantage of encrypting volumes prior to adding them to a cluster is that the disk resource does not require suspending the resource to complete the operation. To turn on BitLocker for a disk before adding it to a cluster:
+BitLocker encryption is available for disks before these disks are added to a cluster storage pool.
+> [!NOTE]
+> The advantage of The Bitlocker encryption can even be made available for disks after they are added to a cluster storage pool. 
+The advantage of encrypting volumes prior to adding them to a cluster is that the disk resource need not be suspended to complete the operation. 
+To turn on BitLocker for a disk before adding it to a cluster:
 
 1.  Install the BitLocker Drive Encryption feature if it is not already installed.
 2.  Ensure the disk is an NTFS-formatted one and has a drive letter assigned to it.
