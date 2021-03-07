@@ -48,14 +48,17 @@ For thinly provisioned storage, such as a dynamic virtual hard disk (VHD), BitLo
 
 ### Active Directory-based protector
 
-You can also use an Active Directory Domain Services (AD DS) protector for protecting clustered volumes held within your AD DS infrastructure. The **ADAccountOrGroup** protector is a domain security identifier (SID)-based protector that can be bound to a user account, machine account, or group. When an unlock request is made for a protected volume, the BitLocker service interrupts the request and uses the BitLocker protect/unprotect APIs to unlock or deny the request. BitLocker will unlock protected volumes without user intervention by attempting protectors in the following order:
+You can also use an Active Directory Domain Services (AD DS) protector for protecting clustered volumes held within your AD DS infrastructure. The **ADAccountOrGroup** protector is a domain security identifier (SID)-based protector that can be bound to a user account, machine account, or group. When an unlock request is made for a protected volume, the following events take place:
 
-1.  Clear key
-2.  Driver-based auto-unlock key
-3.  **ADAccountOrGroup** protector
-    a.  Service context protector
-    b.  User protector
-4.  Registry-based auto-unlock key
+- BitLocker service interrupts the request and uses the BitLocker protect/unprotect APIs to unlock or deny the request. 
+- BitLocker will unlock protected volumes without user intervention by attempting protectors in the following order:
+
+    1.  Clear key
+    2.  Driver-based auto-unlock key
+    3.  **ADAccountOrGroup** protector
+        a.  Service context protector
+        b.  User protector
+    4.  Registry-based auto-unlock key
 
 >**Note:**  A Windows Server 2012 or later version's domain controller is required for this feature to work properly.
  
@@ -125,7 +128,8 @@ You can also use **manage-bde** to enable BitLocker on clustered volumes. The st
     -   `Manage-bde -on -used <drive letter> -RP -sid domain\CNO$ -sync`
 
        1.  BitLocker will check to see if the disk is already part of a cluster. If it is, administrators will encounter a hard block. Otherwise, the encryption continues.
-       2.  Using the -sync parameter is optional. Using it ensures the command waits until the encryption for the volume is completed before releasing the volume for use in the cluster storage pool.
+       2.  Using the -sync parameter is optional. However, using -sync parameter has the following advantage:
+        - The -sync parameter ensures the command waits until the encryption for the volume is completed before releasing the volume for use in the cluster storage pool.
 
 4.  Open the Failover Cluster Manager snap-in or cluster PowerShell cmdlets to enable the disk to be clustered.
 
