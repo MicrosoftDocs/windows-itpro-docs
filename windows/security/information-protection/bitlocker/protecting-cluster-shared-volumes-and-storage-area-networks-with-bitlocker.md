@@ -129,7 +129,7 @@ You can also use **manage-bde** to enable BitLocker on clustered volumes. The st
 
        1.  BitLocker will check to see if the disk is already part of a cluster. If it is, administrators will encounter a hard block. Otherwise, the encryption continues.
        2.  Using the -sync parameter is optional. However, using -sync parameter has the following advantage:
-        - The -sync parameter ensures the command waits until the encryption for the volume is completed before releasing the volume for use in the cluster storage pool.
+        - The -sync parameter ensures the command waits until the encryption for the volume is completed. The volume is then released for use in the cluster storage pool.
 
 4.  Open the Failover Cluster Manager snap-in or cluster PowerShell cmdlets to enable the disk to be clustered.
 
@@ -143,10 +143,14 @@ You can also use **manage-bde** to enable BitLocker on clustered volumes. The st
     2.  If the volume is BitLocker enabled, the following check occurs:
 
 
-       -   If volume is **locked**, BitLocker impersonates the CNO and unlocks the volume using the CNO protector. If this operation fails, an event is logged that the volume could not be unlocked and the online operation has failed.
+       -   If volume is **locked**, BitLocker impersonates the CNO and unlocks the volume using the CNO protector. If these actions by Bitlocker fail, an event is logged. The logged event will state that the volume could not be unlocked and the online operation has failed.
 
 6.  Once the disk is online in the storage pool, it can be added to a CSV by right-clicking the disk resource and choosing "**Add to cluster shared volumes**".
-CSVs include both encrypted and unencrypted volumes. To check the status of a particular volume for BitLocker encryption, administrators must utilize the **manage-bde -status** command with a path to the volume inside the CSV namespace as seen in the example command line below.
+CSVs include both encrypted and unencrypted volumes. To check the status of a particular volume for BitLocker encryption: administrators must do the following task:
+
+- Utilize the **manage-bde -status** command with a path to the volume.
+
+ The path must be one that is inside the CSV namespace as seen in the example command line below.
 
 
 ```powershell
