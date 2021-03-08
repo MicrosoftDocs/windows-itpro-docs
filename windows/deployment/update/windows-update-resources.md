@@ -6,7 +6,6 @@ ms.mktglfcycl:
 audience: itpro
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 09/18/2018
 ms.reviewer:
 manager: laurawi
 ms.topic: article
@@ -16,7 +15,15 @@ author: jaimeo
 
 # Windows Update - additional resources
 
-> Applies to: Windows 10
+**Applies to**:
+
+- Windows 10
+- Windows Server 2016
+- Windows Server 2019
+
+> [!NOTE]
+> Windows Server 2016 supports policies available in Windows 10, version 1607. Windows Server 2019 supports policies available in Windows 10, version 1809.
+
 
 The following resources provide additional information about using Windows Update.
 
@@ -38,7 +45,7 @@ The following resources provide additional information about using Windows Updat
 
 ## Reset Windows Update components manually
 
-1. Open a Windows command prompt as Administrator, and then run this command:
+1. Open a Windows command prompt. To open a command prompt, click **Start > Run**. Copy and paste (or type) the following command and then press ENTER:
    ``` console
    cmd
    ```
