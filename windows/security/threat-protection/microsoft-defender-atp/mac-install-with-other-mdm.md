@@ -96,7 +96,7 @@ Grant Full Disk Access to the following components:
 - Microsoft Defender for Endpoint
     - Identifier: `com.microsoft.wdav`
     - Identifier Type: Bundle ID
-    - Code Requirement: identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9
+    - Code Requirement: identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists \*/ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists \*/ and certificate leaf[subject.OU] = UBF8T346G9
 
 - Microsoft Defender for Endpoint Security Extension
     - Identifier: `com.microsoft.wdav.epsext`
