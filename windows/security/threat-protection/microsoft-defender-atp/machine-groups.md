@@ -24,10 +24,11 @@ ms.technology: mde
 
 
 **Applies to:**
-
 - Azure Active Directory
 - Office 365
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
 
 In an enterprise scenario, security operation teams are typically assigned a set of devices. These devices are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
 
@@ -89,4 +90,4 @@ Devices that are not matched to any groups are added to Ungrouped devices (defau
 
 - [Manage portal access using role-based based access control](rbac.md)
 - [Create and manage device tags](machine-tags.md)
-- [Get list of tenant device groups using Graph API](get-machinegroups-collection.md)
+- [Get list of tenant device groups using Graph API](https://docs.microsoft.com/graph/api/device-list-memberof)

@@ -1,9 +1,9 @@
 ---
 title: List Indicators API
-description: Learn how to use the List Indicators API to retrieve a collection of all active Indicators in Microsoft Defender Advanced Threat Protection.
+description: Learn how to use the List Indicators API to retrieve a collection of all active Indicators in Microsoft Defender for Endpoint.
 keywords: apis, public api, supported apis, Indicators collection
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
 # List Indicators API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
@@ -78,7 +76,7 @@ If successful, this method returns 200, Ok response code with a collection of [I
 
 Here is an example of a request that gets all Indicators
 
-```http
+```
 GET https://api.securitycenter.microsoft.com/api/indicators
 ```
 
@@ -86,7 +84,9 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 Here is an example of the response.
 
-```json
+```
+HTTP/1.1 200 Ok
+Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Indicators",
     "value": [
@@ -139,7 +139,7 @@ Here is an example of the response.
 
 Here is an example of a request that gets all Indicators with 'AlertAndBlock' action 
 
-```http
+```
 GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'AlertAndBlock'
 ```
 
@@ -147,7 +147,9 @@ GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'A
 
 Here is an example of the response.
 
-```json
+```
+HTTP/1.1 200 Ok
+Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Indicators",
     "value": [

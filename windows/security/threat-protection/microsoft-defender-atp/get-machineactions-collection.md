@@ -1,9 +1,9 @@
 ---
 title: List machineActions API
-description: Learn how to use the List MachineActions API to retrieve a collection of Machine Actions in Microsoft Defender Advanced Threat Protection.
+description: Learn how to use the List MachineActions API to retrieve a collection of Machine Actions in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, machineaction collection
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,8 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
 # List MachineActions API
@@ -29,7 +28,6 @@ ms.technology: mde
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## API description
 Retrieves a collection of [Machine Actions](machineaction.md).
@@ -82,7 +80,7 @@ If successful, this method returns 200, Ok response code with a collection of [m
 
 Here is an example of the request on an organization that has three MachineActions.
 
-```http
+```
 GET https://api.securitycenter.microsoft.com/api/machineactions
 ```
 
@@ -91,7 +89,9 @@ GET https://api.securitycenter.microsoft.com/api/machineactions
 Here is an example of the response.
 
 
-```json
+```
+HTTP/1.1 200 Ok
+Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#MachineActions",
     "value": [

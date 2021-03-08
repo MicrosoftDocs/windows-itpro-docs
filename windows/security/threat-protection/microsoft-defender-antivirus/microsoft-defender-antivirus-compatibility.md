@@ -56,12 +56,12 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 
 If you are using Windows Server, version 1803 or newer, or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- Name: `ForceDefenderPassiveMode`
+- Name: `ForcePassiveMode`
 - Type: `REG_DWORD`
 - Value: `1`
 
 > [!NOTE]
-> The `ForceDefenderPassiveMode` registry key is not supported on Windows Server 2016.
+> The `ForcePassiveMode` registry key is not supported on Windows Server 2016.
 
 (<a id="fn2">2</a>) On Windows Server 2016, Microsoft Defender Antivirus does not enter passive mode automatically when you install a non-Microsoft antivirus product. In addition, Microsoft Defender Antivirus is not supported in passive mode. In those cases, [disable/uninstall Microsoft Defender Antivirus manually](microsoft-defender-antivirus-on-windows-server-2016.md#are-you-using-windows-server-2016) to prevent problems caused by having multiple antivirus products installed on a server.
 
@@ -110,7 +110,7 @@ The table in this section summarizes the functionality and features that are ava
 
 - When Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the protection offered by a non-Microsoft antivirus product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. Automatic re-enabling helps to ensure that antivirus protection is maintained on your devices. It also allows you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which uses the Microsoft Defender Antivirus engine to periodically check for threats in addition to your main antivirus app.
 
-- When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have an up-to-date, non-Microsoft antivirus product providing real-time protection from malware.
+- When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have an up-to-date, non-Microsoft antivirus product providing real-time protection from malware. For optimal security layered defense and detection efficacy, please ensure that you update the [Microsoft Defender Antivirus protection (Security intelligence update, Engine and Platform)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus) even if Microsoft Defender Antivirus is running in passive mode.
 
    If you uninstall the non-Microsoft antivirus product, and use Microsoft Defender Antivirus to provide protection to your devices, Microsoft Defender Antivirus will return to its normal active mode automatically.
 

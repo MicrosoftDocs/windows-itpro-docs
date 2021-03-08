@@ -1,9 +1,9 @@
 ---
 title: Get machine related alerts API
-description: Learn how to use the Get machine related alerts API to retrieve all alerts related to a specific device in Microsoft Defender Advanced Threat Protection.
+description: Learn how to use the Get machine related alerts API to retrieve all alerts related to a specific device in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, devices, related, alerts
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: M365-security-compliance 
 ms.topic: article
-ms.technology: mde
 ---
 
 # Get machine related alerts  API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
@@ -29,7 +27,6 @@ ms.technology: mde
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## API description
 Retrieves all [Alerts](alerts.md) related to a specific device.

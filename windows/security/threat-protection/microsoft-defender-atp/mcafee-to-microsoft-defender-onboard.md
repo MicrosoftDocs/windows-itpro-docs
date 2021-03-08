@@ -20,13 +20,16 @@ ms.collection:
   - m365solution-scenario
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 09/24/2020
+ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
 # Migrate from McAfee - Phase 3: Onboard to Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 
 |[![Phase 1: Prepare](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](mcafee-to-microsoft-defender-prepare.md) |[![Phase 2: Set up](images/phase-diagrams/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](mcafee-to-microsoft-defender-setup.md) |![Phase 3: Onboard](images/phase-diagrams/onboard.png)<br/>Phase 3: Onboard |
 |--|--|--|
@@ -86,6 +89,9 @@ To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([http
 - Cloud-delivered protection
 - Potentially Unwanted Applications (PUA)
 - Network Protection (NP)
+
+> [!IMPORTANT]
+> If you are using Windows Server 2016, you might have to start Microsoft Defender Antivirus manually. You can do this by using the PowerShell cmdlet `mpcmdrun.exe -wdenable` on the device.
 
 ## Next steps
 

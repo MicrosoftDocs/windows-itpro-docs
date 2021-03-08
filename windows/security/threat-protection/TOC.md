@@ -351,6 +351,7 @@
  
 #### [Devices list]()
 ##### [View and organize the Devices list](microsoft-defender-atp/machines-view-overview.md)
+##### [Techniques in device timeline](microsoft-defender-atp/techniques-device-timeline.md)
 ##### [Device timeline event flags](microsoft-defender-atp/device-timeline-event-flag.md)
 ##### [Manage device group and tags](microsoft-defender-atp/machine-tags.md)
  
@@ -428,7 +429,8 @@
 ##### [DeviceNetworkEvents](microsoft-defender-atp/advanced-hunting-devicenetworkevents-table.md)
 ##### [DeviceProcessEvents](microsoft-defender-atp/advanced-hunting-deviceprocessevents-table.md)
 ##### [DeviceRegistryEvents](microsoft-defender-atp/advanced-hunting-deviceregistryevents-table.md)
-##### [DeviceTvmSoftwareInventoryVulnerabilities](microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md)
+##### [DeviceTvmSoftwareInventory](microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventory-table.md)
+##### [DeviceTvmSoftwareVulnerabilities](microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)
 ##### [DeviceTvmSoftwareVulnerabilitiesKB](microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)
 ##### [DeviceTvmSecureConfigurationAssessment](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md)
 ##### [DeviceTvmSecureConfigurationAssessmentKB](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)

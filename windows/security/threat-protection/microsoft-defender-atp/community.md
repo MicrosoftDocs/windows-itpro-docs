@@ -1,6 +1,6 @@
 ---
-title: Access the Microsoft Defender ATP Community Center
-description: Access the Microsoft Defender ATP Community Center to share experiences, engange, and learn about the product.
+title: Access the Microsoft Defender for Endpoint Community Center
+description: Access the Microsoft Defender ATP Community Center to share experiences, engage, and learn about the product.
 keywords: community, community center, tech community, conversation, announcements
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,11 +24,11 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 The Defender for Endpoint Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
 
