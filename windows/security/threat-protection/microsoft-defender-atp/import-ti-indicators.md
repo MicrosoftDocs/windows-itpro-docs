@@ -1,6 +1,6 @@
 ---
 title: Import Indicators API
-description: Learn how to use the Import batch of Indicator API in Microsoft Defender Advanced Threat Protection.
+description: Learn how to use the Import batch of Indicator API in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, submit, ti, indicator, update
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

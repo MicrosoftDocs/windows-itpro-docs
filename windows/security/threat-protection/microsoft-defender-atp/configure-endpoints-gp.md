@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows 10 devices to Microsoft Defender ATP via Group Policy
 description: Use Group Policy to deploy the configuration package on Windows 10 devices so that they are onboarded to the service.
-keywords: configure devices using group policy, device management, configure Windows ATP devices, onboard Microsoft Defender Advanced Threat Protection devices, group policy
+keywords: configure devices using group policy, device management, configure Windows ATP devices, onboard Microsoft Defender for Endpoint devices, group policy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

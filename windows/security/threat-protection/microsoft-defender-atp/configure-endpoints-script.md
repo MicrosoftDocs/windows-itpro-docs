@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows 10 devices using a local script
 description: Use a local script to deploy the configuration package on devices so that they are onboarded to the service.
-keywords: configure devices using a local script, device management, configure Windows ATP devices, configure Microsoft Defender Advanced Threat Protection devices
+keywords: configure devices using a local script, device management, configure Windows ATP devices, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
