@@ -47,7 +47,7 @@ manager: dansimp
     <a href="#connectivity-allowvpnroamingovercellular">Connectivity/AllowVPNRoamingOverCellular</a>
   </dd>
   <dd>
-    <a href="#connectivity-diableprintingoverhttp">Connectivity/DiablePrintingOverHTTP</a>
+    <a href="#connectivity-diableprintingoverhttp">Connectivity/DisablePrintingOverHTTP</a>
   </dd>
   <dd>
     <a href="#connectivity-disabledownloadingofprintdriversoverhttp">Connectivity/DisableDownloadingOfPrintDriversOverHTTP</a>
@@ -595,7 +595,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-diableprintingoverhttp"></a>**Connectivity/DiablePrintingOverHTTP**  
+<a href="" id="connectivity-disableprintingoverhttp"></a>**Connectivity/DisablePrintingOverHTTP**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1028,6 +1028,7 @@ Footnotes:
 - 6 - Available in Windows 10, version 1903.
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
+- 9 - Available in Windows 10, version 2009.
 
 <!--/Policies-->
 
