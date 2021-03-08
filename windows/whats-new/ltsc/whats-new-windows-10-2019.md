@@ -658,7 +658,7 @@ See the following example:
 
 ![Enter your credentials](../images/RDPwBioTime.png "Windows Hello")
 ![Provide credentials](../images/RDPwBio2.png "Windows Hello personal")
-![Hyper-V](../images/hyper-v.png "Microsoft Hyper-V Server 2016")
+![Microsoft Hyper-V Server 2016](../images/hyper-v.png "Microsoft Hyper-V Server 2016")
 
 ## See Also
 
