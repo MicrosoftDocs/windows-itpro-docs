@@ -217,7 +217,7 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 
 4. Select **Configure** and add the required information.
 
-5. Use **macOS High Sierra 10.13** as the minimum OS.
+5. Use **macOS High Sierra 10.14** as the minimum OS.
 
 6. Set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
 
