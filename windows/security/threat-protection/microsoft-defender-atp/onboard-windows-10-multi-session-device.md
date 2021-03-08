@@ -23,8 +23,6 @@ ms.technology: mde
 
 Applies to: 
 - Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -33,7 +31,7 @@ Applies to:
 
 Microsoft Defender for Endpoint supports monitoring both VDI as well as Windows Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Windows Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
 
- ## Before you begin
+## Before you begin
 
 See [considerations for non-persistent VDI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Although [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) does not provide non-persistence options, it does provide ways to use a Windows image that can be used to provision new hosts and redeploy machines. This increases volatility in the environment, and thus impacts what entries are created and maintained in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), potentially reducing visibility for your security analysts.
 
@@ -47,7 +45,7 @@ Microsoft recommends onboarding Windows Virtual Desktop as a single entry per vi
 Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD image. This way, you can be sure that this onboarding script runs immediately at first boot. It is executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you are using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy. 
 
 > [!NOTE]
-> The placement and configuration of the VDI onboarding startup script on the WVD golden image configures it as a startup script that runs when the WVD starts. It is NOT recommended to onboard the actual WVD golden image. Another consideration is the method used to run the script. It should run as early in the startup/provisioning process as possible to reduce the time between the machine being available to receive sessions and the device onboarding to the service. Below scenarios 1 & 2 take this into account.
+> The placement and configuration of the VDI onboarding startup script on the WVD golden image configures it as a startup script that runs when the WVD starts. It is _not_ recommended to onboard the actual WVD golden image. Another consideration is the method used to run the script. It should run as early in the startup/provisioning process as possible to reduce the time between the machine being available to receive sessions and the device onboarding to the service. Below scenarios 1 & 2 take this into account.
 
 ## Scenarios
 There are several ways to onboard a WVD host machine:
@@ -66,24 +64,36 @@ Follow the instructions for a single entry for each device.
 This scenario uses a centrally located script and runs it using a domain-based group policy. You can also place the script in the golden image and run it in the same way.
 
 #### Download the WindowsDefenderATPOnboardingPackage.zip file from the Windows Defender Security Center
-1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)  
-    - In the Microsoft Defender Security Center navigation pane, select **Settings** > **Onboarding**. 
-    - Select Windows 10 as the operating system. 
-    - In the **Deployment method** field, select VDI onboarding scripts for non-persistent endpoints. 
-    - Click **Download package** and save the .zip file. 
+
+1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip).
+
+   1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Onboarding**. 
+   1. Select Windows 10 as the operating system. 
+   1. In the **Deployment method** field, select VDI onboarding scripts for non-persistent endpoints. 
+   1. Click **Download package** and save the .zip file. 
+
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called **OptionalParamsPolicy** and the files **WindowsDefenderATPOnboardingScript.cmd** and **Onboard-NonPersistentMachine.ps1**.
 
 #### Use Group Policy management console to run the script when the virtual machine starts
+
 1. Open the Group Policy Management Console (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+
 2. In the Group Policy Management Editor, go to **Computer configuration** > **Preferences** > **Control panel settings**. 
+
 3. Right-click **Scheduled tasks**, click **New**, and then select **Immediate Task** (At least Windows 7). 
+
 4. In the Task window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM. Click **Check Names** and then click OK. `NT AUTHORITY\SYSTEM` appears as the user account under which the task will run. 
+
 5. Select **Run whether user is logged on or not** and select the **Run with highest privileges** option. 
+
 6. Go to the **Actions** tab and select **New**. Confirm that **Start a program** is selected in the **Action** field.
+
 7. Specify the following: <br/> 
+
    - Action = **Start a program**
    - Program/Script = `C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe` 
    - Add Arguments (optional) = `-ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"`
+
 8. Select **OK** and close any open GPMC windows.
 
 ### Scenario 3: Onboarding using management tools

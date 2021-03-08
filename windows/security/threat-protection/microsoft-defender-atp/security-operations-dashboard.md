@@ -68,7 +68,7 @@ This tile shows you a list of devices with the highest number of active alerts. 
 
 ![The Devices at risk tile shows a list of devices with the highest number of alerts, and a breakdown of the severity of the alerts](images/devices-at-risk-tile.png)
 
-Click the name of the device to see details about that device. For more information see, [Investigate devices in the Microsoft Defender Advanced Threat Protection Devices list](investigate-machines.md).
+Click the name of the device to see details about that device. For more information see, [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md).
 
 You can also click **Devices list** at the top of the tile to go directly to the **Devices list**, sorted by the number of active alerts. For more information see, [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md).
 

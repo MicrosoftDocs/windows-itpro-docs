@@ -123,7 +123,7 @@ Microsoft Defender for Endpoint's new managed threat hunting service provides pr
 <a name="apis"></a>
 
 **[Centralized configuration and administration, APIs](management-apis.md)**<br>
-Integrate Microsoft Defender Advanced Threat Protection into your existing workflows.
+Integrate Microsoft Defender for Endpoint into your existing workflows.
 
 <a name="mtp"></a>
 

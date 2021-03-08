@@ -1,6 +1,6 @@
 ---
 title: Get alert related machine information
-description: Retrieve all devices related to a specific alert using Microsoft Defender Advanced Threat Protection (Microsoft Defender for Endpoint).
+description: Retrieve all devices related to a specific alert using Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get alert information, alert information, related device
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security

@@ -1,7 +1,7 @@
 ---
-title: Hello World for Microsoft Defender Advanced Threat Protection API
+title: Hello World for Microsoft Defender for Endpoint API
 ms.reviewer: 
-description: Create a practice 'Hello world'-style API call to the Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) API.
+description: Create a practice 'Hello world'-style API call to the Microsoft Defender for Endpoint (Microsoft Defender ATP) API.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security

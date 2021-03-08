@@ -1700,6 +1700,11 @@
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-edr",
       "redirect_document_id": true
     },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-edrmanage-edr.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response",
+      "redirect_document_id": false
+    },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/management-apis.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis",
@@ -16533,6 +16538,11 @@
     {
       "source_path": "windows/deployment/update/waas-mobile-updates.md",
       "redirect_url": "https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventory-table",
       "redirect_document_id": true
     },
     {

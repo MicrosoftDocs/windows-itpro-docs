@@ -60,7 +60,7 @@ iOS devices along with other platforms.
 
 **System Requirements**
 
-- iOS devices running iOS 11.0 and above.
+- iOS devices running iOS 11.0 and above. iPad devices are officially supported from version 1.1.15010101 onward.
 
 - Device is enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358).
 

@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot Microsoft Defender Advanced Threat Protection service issues
+title: Troubleshoot Microsoft Defender for Endpoint service issues
 description: Find solutions and work arounds to known issues such as server errors when trying to access the service.
-keywords: troubleshoot Microsoft Defender Advanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, allow, event viewer
+keywords: troubleshoot microsoft defender for endpoint, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, allow, event viewer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

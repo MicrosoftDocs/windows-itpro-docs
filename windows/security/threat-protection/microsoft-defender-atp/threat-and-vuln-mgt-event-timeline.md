@@ -1,7 +1,7 @@
 ---
 title: Event timeline in threat and vulnerability management
 description: Event timeline is a risk news feed that helps you interpret how risk is introduced into the organization, and which mitigations happened to reduce it.
-keywords: event timeline, mdatp event timeline, mdatp tvm event timeline, threat and vulnerability management, Microsoft Defender Advanced Threat Protection
+keywords: event timeline, mdatp event timeline, mdatp tvm event timeline, threat and vulnerability management, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

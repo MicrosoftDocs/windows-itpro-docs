@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot problems with attack surface reduction rules
-description: Resources and sample code to troubleshoot issues with attack surface reduction rules in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
-keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, microsoft defender atp, microsoft defender advanced threat protection
+description: Resources and sample code to troubleshoot issues with attack surface reduction rules in Microsoft Defender for Endpoint.
+keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, microsoft defender for endpoint, microsoft defender advanced threat protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
