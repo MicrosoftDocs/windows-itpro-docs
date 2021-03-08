@@ -24,6 +24,9 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+**Platform**
+- Android
+
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
@@ -44,9 +47,9 @@ apps. Here's a list of the types of data being collected:
 
 Information about Android application packages (APKs) on the device including
 
--  Install source
--  Storage location (file path) of the APK
--  Time of install, size of APK and permissions
+- Install source
+- Storage location (file path) of the APK
+- Time of install, size of APK and permissions
 
 ### Web page / Network information
 

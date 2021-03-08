@@ -29,6 +29,9 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+**Platform**
+- Android
+
 ## Conditional Access with Defender for Endpoint for Android  
 Microsoft Defender for Endpoint for Android along with Microsoft Intune and Azure Active
 Directory enables enforcing Device compliance and Conditional Access policies
