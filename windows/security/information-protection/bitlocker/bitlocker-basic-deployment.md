@@ -28,9 +28,9 @@ This topic for the IT professional explains how BitLocker features can be used t
 
 ## Using BitLocker to encrypt volumes
 
-BitLocker provides full volume encryption (FVE) for operating system volumes, as well as fixed and removable data drives. To support fully encrypted operating system drives, BitLocker uses an unencrypted system partition for the files required to boot, decrypt, and load the operating system. This volume is automatically created during a new installation of both client and server operating systems.
+BitLocker provides full volume encryption (FVE) for operating system volumes, and for fixed and removable data drives. To support fully encrypted operating system drives, BitLocker uses an unencrypted system partition for the files required to boot, decrypt, and load the operating system. This volume is automatically created during a new installation of both client and server operating systems.
 
-In the event that the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. BdeHdCfg.exe can create these volumes.
+If the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. BdeHdCfg.exe can create these volumes.
 
 > [!NOTE]
 > For more info about using this tool, see [Bdehdcfg](/windows-server/administration/windows-commands/bdehdcfg) in the Command-Line Reference.
@@ -54,8 +54,10 @@ Upon launch, the BitLocker Drive Encryption Wizard verifies the computer meets t
 |Requirement|Description|
 |--- |--- |
 |Hardware configuration|The computer must meet the minimum requirements for the supported Windows versions.|
-|Operating system|BitLocker is an optional feature which can be installed by Server Manager on Windows Server 2012 and later.|
-|Hardware TPM|TPM version 1.2 or 2.0. <p> A TPM is not required for BitLocker; however, only a computer with a TPM can provide the additional security of pre-startup system integrity verification and multifactor authentication.|
+|Operating system|BitLocker is an optional feature that can be installed by Server Manager on Windows Server 2012 and later.|
+|Hardware TPM|TPM version 1.2 or 2.0. <p> A TPM is not required for BitLocker; however, only a computer with a TPM can provide the following:
+- the extra security needed for verifying the integrity of a system before it is booted
+- multifactor authentication|
 |BIOS configuration|<li> A Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware.</li> <li> The boot order must be set to start first from the hard disk, and not the USB or CD drives.</li>  <li> The firmware must be able to read from a USB flash drive during startup.</li>|
 |File system|For computers that boot natively with UEFI firmware, at least one FAT32 partition for the system drive and one NTFS partition for the operating system drive. <br/> For computers with legacy BIOS firmware, at least two NTFS disk partitions, one for the system drive and one for the operating system drive. <br/> For either firmware, the system drive partition must be at least 350 megabytes (MB) and set as the active partition.|
 |Hardware encrypted drive prerequisites (optional)|To use a hardware encrypted drive as the boot drive, the drive must be in the uninitialized state and in the security inactive state. In addition, the system must always boot with native UEFI version 2.3.1 or higher and the CSM (if any) disabled.|
@@ -63,7 +65,7 @@ Upon launch, the BitLocker Drive Encryption Wizard verifies the computer meets t
 Upon passing the initial configuration, users are required to enter a password for the volume. If the volume does not pass the initial configuration for BitLocker, the user is presented with an error dialog describing the appropriate actions to be taken.
 Once a strong password has been created for the volume, a recovery key will be generated. The BitLocker Drive Encryption Wizard will prompt for a location to save this key. A BitLocker recovery key is a special key that you can create when you turn on BitLocker Drive Encryption for the first time on each drive that you encrypt. You can use the recovery key to gain access to your computer if the drive that Windows is installed on (the operating system drive) is encrypted using BitLocker Drive Encryption and BitLocker detects a condition that prevents it from unlocking the drive when the computer is starting up. A recovery key can also be used to gain access to your files and folders on a removable data drive (such as an external hard drive or USB flash drive) that is encrypted using BitLocker To Go, if for some reason you forget the password or your computer cannot access the drive.
 
-You should store the recovery key by printing it, saving it on removable media, or saving it as a file in a network folder or on your OneDrive, or on another drive of your computer that you are not encrypting. You cannot save the recovery key to the root directory of a non-removable drive and cannot be stored on the encrypted volume. You cannot save the recovery key for a removable data drive (such as a USB flash drive) on removable media. Ideally, you should store the recovery key separate from your computer. After you create a recovery key, you can use the BitLocker control panel to make additional copies.
+You should store the recovery key by printing it, saving it on removable media, or saving it as a file in a network folder or on your OneDrive, or on another drive of your computer that you are not encrypting. You cannot save the recovery key to the root directory of a non-removable drive and cannot be stored on the encrypted volume. You cannot save the recovery key for a removable data drive (such as a USB flash drive) on removable media. Ideally, you should store the recovery key separate from your computer. After you create a recovery key, you can use the BitLocker control panel to make more copies.
 
 When the recovery key has been properly stored, the BitLocker Drive Encryption Wizard will prompt the user to choose how to encrypt the drive. There are two options:
 
@@ -79,7 +81,7 @@ Selecting an encryption type and choosing **Next** will give the user the option
 
 After completing the system check (if selected), the BitLocker Drive Encryption Wizard will restart the computer to begin encryption. Upon reboot, users are required to enter the password chosen to boot into the operating system volume. Users can check encryption status by checking the system notification area or the BitLocker control panel.
 
-Until encryption is completed, the only available options for managing BitLocker involve manipulation of the password protecting the operating system volume, backing up the recovery key, and turning BitLocker off.
+Until encryption is completed, the only available options for managing BitLocker involve manipulation of the password protecting the operating system volume, backing up the recovery key, and turning off BitLocker.
 
 ### Data volume
 
