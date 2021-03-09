@@ -111,7 +111,7 @@ for more information, see [LookupAccountNameA function](/windows/win32/api/winba
 See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configuration/custom-settings-windows-10) for information on how to create custom profiles.
 
 > [!IMPORTANT]
-> - `<add member>` and `<remove member>` can use an Azure AD SID or the user's name. For adding or removing Azure AD groups using this policy, you must use the group's SID. Azure AD group SIDs can be obtained using [Graph](/graph/api/resources/group?view=graph-rest-1.0#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute. 
+> - `<add member>` and `<remove member>` can use an Azure AD SID or the user's name. For adding or removing Azure AD groups using this policy, you must use the group's SID. Azure AD group SIDs can be obtained using [Graph](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute. 
 > - When specifying a SID in the `<add member>` or `<remove member>`, member SIDs are added without attempting to resolve them. Therefore, be very careful when specifying a SID to ensure it is correct.
 > - `<remove member>` is not valid for the R (Restrict) action and will be ignored if present.
 > - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that if a group is present multiple times with different add/remove values, all of them will be processed in the order they are present.
