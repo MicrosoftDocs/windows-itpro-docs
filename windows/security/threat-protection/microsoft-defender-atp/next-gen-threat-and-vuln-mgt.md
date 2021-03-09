@@ -4,7 +4,7 @@ description: This new capability uses a game-changing risk-based approach to the
 keywords: threat & vulnerability management, threat and vulnerability management, MDATP TVM, MDATP-TVM, vulnerability management, vulnerability assessment, threat and vulnerability scanning, secure configuration assessment, microsoft defender atp, microsoft defender atp, endpoint vulnerabilities, next generation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: conceptual
+ms.collection: M365-security-compliance
+ms.topic: overview
+ms.technology: mde
 ---
 
 # Threat and vulnerability management
@@ -22,10 +23,11 @@ ms.topic: conceptual
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Effectively identifying, assessing, and remediating endpoint weaknesses is pivotal in running a healthy security program and reducing organizational risk. Threat and vulnerability management serves as an infrastructure for reducing organizational exposure, hardening endpoint surface area, and increasing organizational resilience.
 
@@ -43,11 +45,11 @@ Vulnerability management is the first solution in the industry to bridge the gap
 
 ### Real-time discovery
 
-To discover endpoint vulnerabilities and misconfiguration, threat and vulnerability management uses the same agentless built-in Microsoft Defender ATP sensors to reduce cumbersome network scans and IT overhead.
+To discover endpoint vulnerabilities and misconfiguration, threat and vulnerability management uses the same agentless built-in Defender for Endpoint sensors to reduce cumbersome network scans and IT overhead.
 
 It also provides:
 
-- **Real-time device inventory** - Devices onboarded to Microsoft Defender ATP automatically report and push vulnerability and security configuration data to the dashboard.
+- **Real-time device inventory** - Devices onboarded to Defender for Endpoint automatically report and push vulnerability and security configuration data to the dashboard.
 - **Visibility into software and vulnerabilities** - Optics into the organization's software inventory, and software changes like installations, uninstalls, and patches. Newly discovered vulnerabilities are reported with actionable mitigation recommendations for 1st and 3rd party applications.
 - **Application runtime context** - Visibility on application usage patterns for better prioritization and decision-making.
 - **Configuration posture** - Visibility into organizational security configuration or misconfigurations. Issues are reported in the dashboard with actionable security recommendations.
@@ -79,7 +81,7 @@ Watch this video for a comprehensive walk-through of threat and vulnerability ma
 Area | Description
 :---|:---
 **Dashboard**   | Get a high-level view of the organization exposure score, Microsoft Secure Score for Devices, device exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed device data.
-[**Security recommendations**](tvm-security-recommendation.md) | See the list of security recommendations and related threat information. When you select an item from the list, a flyout panel opens with vulnerability details, a link to open the software page, and remediation and exception options. You can also open a ticket in Intune if your devices are joined through Azure Active Directory and you've enabled your Intune connections in Microsoft Defender ATP.
+[**Security recommendations**](tvm-security-recommendation.md) | See the list of security recommendations and related threat information. When you select an item from the list, a flyout panel opens with vulnerability details, a link to open the software page, and remediation and exception options. You can also open a ticket in Intune if your devices are joined through Azure Active Directory and you've enabled your Intune connections in Defender for Endpoint.
 [**Remediation**](tvm-remediation.md) | See remediation activities you've created and recommendation exceptions.
 [**Software inventory**](tvm-software-inventory.md) | See the list of vulnerable software in your organization, along with weakness and threat information.
 [**Weaknesses**](tvm-weaknesses.md) | See the list of common vulnerabilities and exposures (CVEs) in your organization.
@@ -91,7 +93,7 @@ Run threat and vulnerability management-related API calls to automate vulnerabil
 
 See the following articles for related APIs:
 
-- [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
+- [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 - [Machine APIs](machine.md)
 - [Recommendation APIs](vulnerability.md)
 - [Score APIs](score.md)

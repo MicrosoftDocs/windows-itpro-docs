@@ -4,7 +4,7 @@ description: This topic for the IT professional describes how to use Software Re
 ms.assetid: c3366be7-e632-4add-bd10-9df088f74c6d
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Use Software Restriction Policies and AppLocker policies

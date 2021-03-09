@@ -2,10 +2,10 @@
 title: Manage indicators
 ms.reviewer: 
 description: Manage indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
-keywords: import, indicator, list, ioc, csv, manage, allowed, blocked, whitelist, blacklist, block, clean, malicious, file hash, ip address, urls, domain
+keywords: import, indicator, list, ioc, csv, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Manage indicators
@@ -24,10 +25,11 @@ ms.topic: article
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
 1. In the navigation pane, select **Settings** > **Indicators**.
@@ -65,8 +67,13 @@ expirationTime | DateTimeOffset | The expiration time of the indicator in the fo
 severity | Enum | The severity of the indicator. Possible values are: "Informational", "Low", "Medium" and "High". **Optional**
 recommendedActions | String | TI indicator alert recommended actions. **Optional**
 rbacGroupNames | String | Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
+category | String | Category of the alert. Examples include: Execution and credential access. **Optional**
+mitretechniques| String | MITRE techniques code/id (comma separated). For more information, see [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/). **Optional** It is recommended to add a value in category when a MITRE technique.
 
-## Related topics
+For more information, see [Microsoft Defender for Endpoint alert categories are now aligned with MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
+
+
+## See also
 - [Create indicators](manage-indicators.md)
 - [Create indicators for files](indicator-file.md)
 - [Create indicators for IPs and URLs/domains](indicator-ip-domain.md)

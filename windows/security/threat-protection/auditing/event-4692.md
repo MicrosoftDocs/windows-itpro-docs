@@ -2,7 +2,7 @@
 title: 4692(S, F) Backup of data protection master key was attempted. (Windows 10)
 description: Describes security event 4692(S, F) Backup of data protection master key was attempted.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4692(S, F): Backup of data protection master key was attempted.
@@ -30,7 +31,7 @@ This event generates every time that a backup is attempted for the [DPAPI](https
 
 When a computer is a member of a domain, DPAPI has a backup mechanism to allow unprotection of the data. When a Master Key is generated, DPAPI communicates with a domain controller. Domain controllers have a domain-wide public/private key pair, associated solely with DPAPI. The local DPAPI client gets the domain controller public key from a domain controller by using a mutually authenticated and privacy protected RPC call. The client encrypts the Master Key with the domain controller public key. It then stores this backup Master Key along with the Master Key protected by the user's password.
 
-Periodically, a domain-joined machine will try to send an RPC request to a domain controller to back up the user’s master key so that the user can recover secrets in case his or her password has to be reset. Although the user's keys are stored in the user profile, a domain controller must be contacted to encrypt the master key with a domain recovery key.
+Periodically, a domain-joined machine tries to send an RPC request to a domain controller to back up the user’s master key so that the user can recover secrets in case their password has to be reset. Although the user's keys are stored in the user profile, a domain controller must be contacted to encrypt the master key with a domain recovery key.
 
 This event also generates every time a new DPAPI Master Key is generated, for example.
 
@@ -91,7 +92,7 @@ Failure event generates when a Master Key backup operation fails for some reason
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that requested backup operation.
 
--   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following:
+-   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Here are some examples of formats:
 
     -   Domain NETBIOS name example: CONTOSO
 
@@ -107,17 +108,17 @@ Failure event generates when a Master Key backup operation fails for some reason
 
 **Key Information:**
 
--   **Key Identifier** \[Type = UnicodeString\]: unique identifier of a master key which backup was created. The Master Key is used, with some additional data, to generate an actual symmetric session key to encrypt\\decrypt the data using DPAPI. All of user's Master Keys are located in user profile -&gt; %APPDATA%\\Roaming\\Microsoft\\Windows\\Protect\\%SID% folder. The name of every Master Key file is it’s ID.
+-   **Key Identifier** \[Type = UnicodeString\]: unique identifier of a master key which backup was created. The Master Key is used, with some additional data, to generate an actual symmetric session key to encrypt\\decrypt the data using DPAPI. All of user's Master Keys are located in user profile -&gt; %APPDATA%\\Roaming\\Microsoft\\Windows\\Protect\\%SID% folder. The name of every Master Key file is its ID.
 
 -   **Recovery Server** \[Type = UnicodeString\]: the name (typically – DNS name) of the computer that you contacted to back up your Master Key. For domain joined machines, it’s typically a name of a domain controller. This parameter might not be captured in the event, and in that case will be empty.
 
--   **Recovery Key ID** \[Type = UnicodeString\]**:** unique identifier of a recovery key. The recovery key is generated when a user chooses to create a Password Reset Disk (PRD) from the user's Control Panel or when first Master Key is generated. First, DPAPI generates a RSA public/private key pair, which is the recovery key. In this field you will see unique Recovery key ID which was used for Master key backup operation.
+-   **Recovery Key ID** \[Type = UnicodeString\]**:** unique identifier of a recovery key. The recovery key is generated when a user chooses to create a Password Reset Disk (PRD) from the user's Control Panel or when first Master Key is generated. First, DPAPI generates an RSA public/private key pair, which is the recovery key. In this field, you will see unique Recovery key ID that was used for Master key backup operation.
 
-    For Failure events this field is typically empty.
+    For Failure events, this field is typically empty.
 
 **Status Information:**
 
--   **Status Code** \[Type = HexInt32\]**:** hexadecimal unique status code of performed operation. For Success events this field is typically “**0x0**”. To see the meaning of status code you need to convert it to decimal value and us “**net helpmsg STATUS\_CODE**” command to see the description for specific STATUS\_CODE. Here is an example of “net helpmsg” command output for status code 0x3A:
+-   **Status Code** \[Type = HexInt32\]**:** hexadecimal unique status code of performed operation. For Success events, this field is typically “**0x0**”. To see the meaning of status code you need to convert it to decimal value and us “**net helpmsg STATUS\_CODE**” command to see the description for specific STATUS\_CODE. Here is an example of “net helpmsg” command output for status code 0x3A:
 
 > \[Net helpmsg 58 illustration](..images/net-helpmsg-58.png)
 

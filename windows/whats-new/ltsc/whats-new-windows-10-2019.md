@@ -1,10 +1,10 @@
 ---
-title: What's new in Windows 10 Enterprise 2019 LTSC
+title: What's new in Windows 10 Enterprise LTSC 2019
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: New and updated IT Pro content about new features in Windows 10 Enterprise 2019 LTSC (also known as Windows 10 Enterprise 2019 LTSB).
-keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2019 LTSC"]
+description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2019 (also known as Windows 10 Enterprise 2019 LTSB).
+keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2019"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,15 +13,15 @@ ms.localizationpriority: low
 ms.topic: article
 ---
 
-# What's new in Windows 10 Enterprise 2019 LTSC
+# What's new in Windows 10 Enterprise LTSC 2019
 
 **Applies to**
--   Windows 10 Enterprise 2019 LTSC
+-   Windows 10 Enterprise LTSC 2019
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise 2019 LTSC, compared to Windows 10 Enterprise 2016 LTSC (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
 
 >[!NOTE]
->Features in Windows 10 Enterprise 2019 LTSC are equivalent to Windows 10, version 1809. 
+>Features in Windows 10 Enterprise LTSC 2019 are equivalent to Windows 10, version 1809. 
 
 Windows 10 Enterprise LTSC 2019 builds on Windows 10 Pro, version 1809 adding premium features designed to address the needs of large and mid-size organizations (including large academic institutions), such as:
 - Advanced protection against modern security threats 
@@ -36,7 +36,7 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 
 ## Microsoft Intune
 
->Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This includes support for features such as [Windows Autopilot](#windows-autopilot). However, note that Windows Update for Business (WUfB) does not currently support any LTSC releases, therefore you should use WSUS or Configuration Manager for patching.
+Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This includes support for features such as [Windows Autopilot](#windows-autopilot). However, note that Windows Update for Business (WUfB) does not currently support any LTSC releases, therefore you should use WSUS or Configuration Manager for patching.
 
 ## Security
 
@@ -44,11 +44,11 @@ This version of Window 10 includes security improvements for threat protection, 
 
 ### Threat protection
 
-#### Windows Defender ATP
+#### Microsoft Defender for Endpoint
 
-The Windows Defender Advanced Threat Protection ([Windows Defender ATP](/windows/security/threat-protection/index)) platform includes the security pillars shown in the following diagram. In this version of Windows, Windows Defender ATP includes powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. 
+The [Microsoft Defender for Endpoint](/windows/security/threat-protection/index) platform includes the security pillars shown in the following diagram. In this version of Windows, Defender for Endpoint includes powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. 
 
-![Windows Defender ATP](../images/wdatp.png)
+![Microsoft Defender for Endpoint](../images/wdatp.png)
 
 ##### Attack surface reduction 
 
@@ -72,9 +72,9 @@ But these protections can also be configured separately. And, unlike HVCI, code 
 
 ### Endpoint detection and response 
 
-Endpoint detection and response is improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Windows Defender ATP portal. 
+Endpoint detection and response is improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Microsoft Defender for Endpoint portal. 
 
-   Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between M365 services and interoperates with Windows Defender ATP.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus). 
+   Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus). 
     
    We've also [increased the breadth of the documentation library for enterprise security admins](/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10). The new library includes information on:
 - [Deploying and enabling AV protection](/windows/threat-protection/microsoft-defender-antivirus/deploy-microsoft-defender-antivirus)
@@ -85,7 +85,7 @@ Endpoint detection and response is improved. Enterprise customers can now take a
 
   Some of the highlights of the new library include [Evaluation guide for Microsoft Defender AV](/windows/threat-protection/microsoft-defender-antivirus//evaluate-microsoft-defender-antivirus) and [Deployment guide for Microsoft Defender AV in a virtual desktop infrastructure environment](/windows/threat-protection/microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus).
 
-  New features for Microsoft Defender AV in Windows 10 Enterprise 2019 LTSC include:
+  New features for Microsoft Defender AV in Windows 10 Enterprise LTSC 2019 include:
 - [Updates to how the Block at First Sight feature can be configured](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 - [The ability to specify the level of cloud-protection](/windows/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
 - [Microsoft Defender Antivirus protection in the Windows Defender Security Center app](/windows/threat-protection/microsoft-defender-antivirus/windows-defender-security-center-antivirus)
@@ -100,24 +100,37 @@ Endpoint detection and response is improved. Enterprise customers can now take a
   - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed.
 
   **Threat response** is improved when an attack is detected, enabling immediate action by security teams to contain a breach:
-- [Take response actions on a machine](/windows/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
+  - [Take response actions on a machine](/windows/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
   - [Take response actions on a file](/windows/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
 
 Additional capabilities have been added to help you gain a holistic view on **investigations** include:
-- [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics) - Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
-- [Query data using Advanced hunting in Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
+
+- [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics) - Threat Analytics is a set of interactive reports published by the Microsoft Defender for Endpoint research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
+
+- [Query data using Advanced hunting in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
+
 - [Use Automated investigations to investigate and remediate threats](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)
+
 - [Investigate a user account](/windows/threat-protection/windows-defender-atp/investigate-user-windows-defender-advanced-threat-protection) - Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.
+
 - [Alert process tree](/windows/threat-protection/windows-defender-atp/investigate-alerts-windows-defender-advanced-threat-protection#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
-- [Pull alerts using REST API](/windows/threat-protection/windows-defender-atp/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection) - Use REST API to pull alerts from Windows Defender ATP.
+
+- [Pull alerts using REST API](/windows/threat-protection/windows-defender-atp/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection) - Use REST API to pull alerts from Microsoft Defender for Endpoint.
 
 Other enhanced security features include:
-- [Check sensor health state](/windows/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix known issues.
-- [Managed security service provider (MSSP) support](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection) - Windows Defender ATP adds support for this scenario by providing MSSP integration. The integration will allow MSSPs to take the following actions: Get access to MSSP customer's Windows Defender Security Center portal, fetch email notifications, and fetch alerts through security information and event management (SIEM) tools.
-- [Integration with Azure Security Center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center) - Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
-- [Integration with Microsoft Cloud App Security](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-cloud-app-security-integration) - Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
-- [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#windows-server-version-1803-and-windows-server-2019) - Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
-- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection) - Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor.
+
+- [Check sensor health state](/windows/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection) - Check an endpoint's ability to provide sensor data and communicate with the Microsoft Defender for Endpoint service and fix known issues.
+
+- [Managed security service provider (MSSP) support](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection) - Microsoft Defender for Endpoint adds support for this scenario by providing MSSP integration. The integration will allow MSSPs to take the following actions: Get access to MSSP customer's Windows Defender Security Center portal, fetch email notifications, and fetch alerts through security information and event management (SIEM) tools.
+
+- [Integration with Azure Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center) - Microsoft Defender for Endpoint integrates with Azure Defender to provide a comprehensive server protection solution. With this integration Azure Defender can leverage the power of Defender for Endpoint to provide improved threat detection for Windows Servers.
+
+- [Integration with Microsoft Cloud App Security](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-cloud-app-security-integration) - Microsoft Cloud App Security leverages Microsoft Defender for Endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Defender for Endpoint monitored machines.
+
+- [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#windows-server-version-1803-and-windows-server-2019) - Microsoft Defender for Endpoint now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
+
+- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection) - Onboard supported versions of Windows machines so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
+
 - [Enable conditional access to better protect users, devices, and data](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)
 
 We've also added a new assessment for the Windows time service to the **Device performance & health** section. If we detect that your device’s time is not properly synced with our time servers and the time-syncing service is disabled, we’ll provide the option for you to turn it back on.
@@ -127,15 +140,15 @@ We’re continuing to work on how other security apps you’ve installed show up
 This also means you’ll see more links to other security apps within **Windows Security**. For example, if you open the **Firewall & network protection** section, you’ll see the firewall apps that are running on your device under each firewall type, which includes domain, private, and public networks).
 
 You can read more about ransomware mitigations and detection capability at:  
-- [Averting ransomware epidemics in corporate networks with Windows Defender ATP](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/)
+- [Averting ransomware epidemics in corporate networks with Microsoft Defender for Endpoint](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/)
 - [Ransomware security intelligence](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 - [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/)
 
-Also see [New capabilities of Windows Defender ATP further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97)
+Also see [New capabilities of Microsoft Defender for Endpoint further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97)
 
-Get a quick, but in-depth overview of Windows Defender ATP for Windows 10: [Windows Defender Advanced Threat Protection](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
+Get a quick, but in-depth overview of Microsoft Defender for Endpoint for Windows 10: [Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 
-For more information about features of Windows Defender ATP available in different editions of Windows 10, see the [Windows 10 commercial edition comparison](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf).
+For more information about features of Microsoft Defender for Endpoint available in different editions of Windows 10, see the [Windows 10 commercial edition comparison](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf).
 
 ### Information protection 
 
@@ -172,10 +185,16 @@ For example, you can choose the XTS-AES 256 encryption algorithm, and have it ap
 To achieve this:
 
 1. Configure the [encryption method settings](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption) in the Windows 10 Endpoint Protection profile to the desired encryption algorithm. 
+
 2. [Assign the policy](https://docs.microsoft.com/intune/device-profile-assign) to your Autopilot device group. 
-    - **IMPORTANT**: The encryption policy must be assigned to **devices** in the group, not users.
+
+   > [!IMPORTANT]
+   > The encryption policy must be assigned to **devices** in the group, not users.
+
 3. Enable the Autopilot [Enrollment Status Page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
-    - **IMPORTANT**: If the ESP is not enabled, the policy will not apply before encryption starts.
+
+   > [!IMPORTANT]
+   > If the ESP is not enabled, the policy will not apply before encryption starts.
 
 ### Identity protection
 
@@ -186,16 +205,25 @@ Improvements have been added are to Windows Hello for Business and Credential Gu
 New features in Windows Hello enable a better device lock experience, using multifactor unlock with new location and user proximity signals. Using Bluetooth signals, you can configure your Windows 10 device to automatically lock when you walk away from it, or to prevent others from accessing the device when  you are not present.
 
 New features in [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification.md) include: 
+
 - You can now reset a forgotten PIN without deleting company managed data or apps on devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
+
 - For Windows Phone devices, an administrator is able to initiate a remote PIN reset through the Intune portal.
+
 - For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-features#pin-reset).
 
-[Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in the [Kiosk configuration](#kiosk-configuration) section. 
+[Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration). 
+
 - Windows Hello is now [password-less on S-mode](https://www.windowslatest.com/2018/02/12/microsoft-make-windows-10-password-less-platform/).
+
 - Support for S/MIME with Windows Hello for Business and APIs for non-Microsoft identity lifecycle management solutions.
+
 - Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign in, and will notify Dynamic lock users if Dynamic lock has stopped working because their phone or device Bluetooth is off.
+
 - You can set up Windows Hello from lock screen for MSA accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
+
 - New [public API](https://docs.microsoft.com/uwp/api/windows.security.authentication.web.core.webauthenticationcoremanager.findallaccountsasync#Windows_Security_Authentication_Web_Core_WebAuthenticationCoreManager_FindAllAccountsAsync_Windows_Security_Credentials_WebAccountProvider_) for secondary account SSO for a particular identity provider.
+
 - It is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: phone Bluetooth is off).
  
 For more information, see: [Windows Hello and FIDO2 Security Keys enable secure and easy authentication for shared devices](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/#OdKBg3pwJQcEKCbJ.97)
@@ -204,7 +232,10 @@ For more information, see: [Windows Hello and FIDO2 Security Keys enable secure 
 
 Windows Defender Credential Guard is a security service in Windows 10 built to protect Active Directory (AD) domain credentials so that they can't be stolen or misused by malware on a user's machine. It is designed to protect against well-known threats such as Pass-the-Hash and credential harvesting.
 
-Windows Defender Credential Guard has always been an optional feature, but Windows 10 in S mode turns this functionality on by default when the machine has been Azure Active Directory joined. This provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode. Please note that Windows Defender Credential Guard is available only to S mode devices or Enterprise and Education Editions. 
+Windows Defender Credential Guard has always been an optional feature, but Windows 10 in S mode turns this functionality on by default when the machine has been Azure Active Directory joined. This provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode. 
+
+> [!NOTE]
+> Windows Defender Credential Guard is available only to S mode devices or Enterprise and Education Editions. 
 
 For more information, see [Credential Guard Security Considerations](/windows/access-protection/credential-guard/credential-guard-requirements#security-considerations).
 
@@ -232,26 +263,26 @@ The WSC service now requires antivirus products to run as a protected process to
 
 WSC now includes the Fluent Design System elements you know and love. You’ll also notice we’ve adjusted the spacing and padding around the app. It will now dynamically size the categories on the main page if more room is needed for extra info. We also updated the title bar so that it will use your accent color if you have enabled that option in **Color Settings**.
 
-![alt text](../images/defender.png "Windows Security Center")
+![Security at a glance](../images/defender.png "Windows Security Center")
 
 #### Group Policy Security Options
 
 The security setting [**Interactive logon: Display user information when the session is locked**](/windows/device-security/security-policy-settings/interactive-logon-display-user-information-when-the-session-is-locked) has been updated to work in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**.
 
 A new security policy setting
-[**Interactive logon: Don't display username at sign-in**](/windows/device-security/security-policy-settings/interactive-logon-dont-display-username-at-sign-in) has been introduced in Windows 10 Enterprise 2019 LTSC. This security policy setting determines whether the username is displayed during sign in. It works in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. The setting only affects the **Other user** tile.
+[**Interactive logon: Don't display username at sign-in**](/windows/device-security/security-policy-settings/interactive-logon-dont-display-username-at-sign-in) has been introduced in Windows 10 Enterprise LTSC 2019. This security policy setting determines whether the username is displayed during sign in. It works in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. The setting only affects the **Other user** tile.
 
 #### Windows 10 in S mode
 
 We’ve continued to work on the **Current threats** area in  [Virus & threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
-![Virus & threat protection settings](../images/virus-and-threat-protection.png "Virus & threat protection settings")
+![S mode settings](../images/virus-and-threat-protection.png "Virus & threat protection settings")
 
 ## Deployment
 
 ### Windows Autopilot
 
-[Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) is a deployment tool introduced with Windows 10, version 1709 and is also available for Windows 10 Enterprise 2019 LTSC (and later versions). Windows Autopilot provides a modern device lifecycle management service powered by the cloud to deliver a zero touch experience for deploying Windows 10. 
+[Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) is a deployment tool introduced with Windows 10, version 1709 and is also available for Windows 10 Enterprise LTSC 2019 (and later versions). Windows Autopilot provides a modern device lifecycle management service powered by the cloud to deliver a zero touch experience for deploying Windows 10. 
 
 Windows Autopilot is currently available with Surface, Dell, HP, and Lenovo. Other OEM partners such as Panasonic, and Acer will support Autopilot soon. Check the [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog) or this article for updated information.
 
@@ -265,7 +296,7 @@ IT Pros can use Autopilot Reset to quickly remove personal files, apps, and sett
 
 ### MBR2GPT.EXE
 
-MBR2GPT.EXE is a new command-line tool introduced with Windows 10, version 1703 and also available in Windows 10 Enterprise 2019 LTSC (and later versions). MBR2GPT converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
+MBR2GPT.EXE is a new command-line tool introduced with Windows 10, version 1703 and also available in Windows 10 Enterprise LTSC 2019 (and later versions). MBR2GPT converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
 
 The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability, supports additional partition types, and enables faster boot and shutdown speeds. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk.
 
@@ -277,14 +308,17 @@ For details, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
 
 The following new DISM commands have been added to manage feature updates:
 
-    DISM /Online /Initiate-OSUninstall 
-        – Initiates a OS uninstall to take the computer back to the previous installation of windows.
-    DISM /Online /Remove-OSUninstall 
-        – Removes the OS uninstall capability from the computer. 
-    DISM /Online /Get-OSUninstallWindow 
-        – Displays the number of days after upgrade during which uninstall can be performed.
-    DISM /Online /Set-OSUninstallWindow 
-        – Sets the number of days after upgrade during which uninstall can be performed.
+- **DISM /Online /Initiate-OSUninstall**
+  - Initiates an OS uninstall to take the computer back to the previous installation of windows.
+
+- **DISM /Online /Remove-OSUninstall**
+  - Removes the OS uninstall capability from the computer.
+
+- **DISM /Online /Get-OSUninstallWindow**
+  - Displays the number of days after upgrade during which uninstall can be performed.
+
+- **DISM /Online /Set-OSUninstallWindow**
+  - Sets the number of days after upgrade during which uninstall can be performed.
 
 For more information, see [DISM operating system uninstall command-line options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-uninstallos-command-line-options).
 
@@ -293,27 +327,29 @@ For more information, see [DISM operating system uninstall command-line options]
 You can now run your own custom actions or scripts in parallel with Windows Setup. Setup will also migrate your scripts to next feature release, so you only need to add them once.
 
 Prerequisites:  
-- Windows 10, version 1803 or Windows 10 Enterprise 2019 LTSC, or later.
+- Windows 10, version 1803 or Windows 10 Enterprise LTSC 2019, or later.
 - Windows 10 Enterprise or Pro
 
 For more information, see [Run custom actions during feature update](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions).
 
 It is also now possible to run a script if the user rolls back their version of Windows using the PostRollback option.
 
-    /PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]
+`/PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]`
 
-For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#21)
+For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#21).
 
 New command-line switches are also available to control BitLocker:
 
-    Setup.exe /BitLocker AlwaysSuspend 
-        – Always suspend bitlocker during upgrade.
-    Setup.exe /BitLocker TryKeepActive 
-        – Enable upgrade without suspending bitlocker but if upgrade, does not work then suspend bitlocker and complete the upgrade.
-    Setup.exe /BitLocker ForceKeepActive 
-        – Enable upgrade without suspending bitlocker, but if upgrade does not work, fail the upgrade.
+- **Setup.exe /BitLocker AlwaysSuspend**
+  - Always suspend BitLocker during upgrade.
 
-For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)
+- **Setup.exe /BitLocker TryKeepActive**
+  - Enable upgrade without suspending BitLocker, but if upgrade does not work, then suspend BitLocker and complete the upgrade.
+
+- **Setup.exe /BitLocker ForceKeepActive**
+  - Enable upgrade without suspending BitLocker, but if upgrade does not work, fail the upgrade.
+
+For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33).
 
 ### Feature update improvements
 
@@ -332,23 +368,29 @@ SetupDiag works by searching Windows Setup log files. When searching log files, 
 If you have shared devices deployed in your work place, **Fast sign-in** enables users to sign in to a [shared Windows 10 PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) in a flash!
 
 **To enable fast sign-in:**
-1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise 2019 LTSC.
+
+1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise LTSC 2019.
+
 2. Set the Policy CSP, and the **Authentication** and **EnableFastFirstSignIn** policies to enable fast sign-in.
+
 3. Sign-in to a shared PC with your account. You'll notice the difference!
 
-    ![fast sign-in](../images/fastsignin.png "fast sign-in")
+   ![fast sign-in](../images/fastsignin.png "fast sign-in")
 
 ### Web sign-in to Windows 10
 
 Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
 
 **To try out web sign-in:**
+
 1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
+
 2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
+
 3. On the lock screen, select web sign-in under sign-in options.
 4. Click the “Sign in” button to continue.
 
-![Web sign-in](../images/websignin.png "web sign-in")
+![Sign-in option](../images/websignin.png "web sign-in")
 
 ## Windows Analytics
 
@@ -386,7 +428,7 @@ Maintaining devices is made easier with Device Health, a new, premium analytic t
 
 ### Accessibility
 
-"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](https://docs.microsoft.com/windows/configuration/windows-10-accessibility-for-itpros). Also see the accessibility section in the [What’s new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/) blog post.
+"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](https://docs.microsoft.com/windows/configuration/windows-10-accessibility-for-itpros). Also see the accessibility section in [What’s new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/), a blog post.
 
 ### Privacy
 
@@ -402,9 +444,9 @@ If you wish to take advantage of [Kiosk capabilities in Edge](https://docs.micro
 
 ### Co-management
 
-Intune and Microsoft Endpoint Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
+Intune and Microsoft Endpoint Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
-For more information, see [What's New in MDM enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803)
+For more information, see [What's New in MDM enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803).
 
 ### OS uninstall period
 
@@ -428,12 +470,14 @@ The following new Group Policy and mobile device management (MDM) settings are a
 
 ### Start and taskbar layout
 
-Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10 Enterprise 2019 LTSC adds support for customized taskbars to [MDM](/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management).
+Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10 Enterprise LTSC 2019 adds support for customized taskbars to [MDM](/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management).
 
 [Additional MDM policy settings are available for Start and taskbar layout](/windows/configuration/windows-10-start-layout-options-and-policies). New MDM policy settings include:
 
 - Settings for the User tile: [**Start/HideUserTile**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideusertile), [**Start/HideSwitchAccount**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideswitchaccount), [**Start/HideSignOut**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidesignout), [**Start/HideLock**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidelock), and [**Start/HideChangeAccountSettings**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidechangeaccountsettings)
+
 - Settings for Power: [**Start/HidePowerButton**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidepowerbutton), [**Start/HideHibernate**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidehibernate), [**Start/HideRestart**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderestart), [**Start/HideShutDown**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideshutdown), and [**Start/HideSleep**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidesleep)
+
 - Additional new settings: [**Start/HideFrequentlyUsedApps**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidefrequentlyusedapps), [**Start/HideRecentlyAddedApps**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderecentlyaddedapps), **AllowPinnedFolder**, **ImportEdgeAssets**, [**Start/HideRecentJumplists**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderecentjumplists), [**Start/NoPinningToTaskbar**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-nopinningtotaskbar), [**Settings/PageVisibilityList**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#settings-pagevisibilitylist), and [**Start/HideAppsList**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideapplist).
 
 ## Windows Update
@@ -467,7 +511,7 @@ You can now register your Azure AD domains to the Windows Insider Program. For m
 
 ### Optimize update delivery
 
-With changes delivered in Windows 10 Enterprise 2019 LTSC, [Express updates](/windows/deployment/update/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Endpoint Configuration Manager, starting with version 1702 of Configuration Manager, as well as with other third-party updating and management products that [implement this new functionality](https://technet.microsoft.com/windows-server-docs/management/windows-server-update-services/deploy/express-update-delivery-isv-support). This is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
+With changes delivered in Windows 10 Enterprise LTSC 2019, [Express updates](/windows/deployment/update/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Endpoint Configuration Manager, starting with version 1702 of Configuration Manager, as well as with other third-party updating and management products that [implement this new functionality](https://technet.microsoft.com/windows-server-docs/management/windows-server-update-services/deploy/express-update-delivery-isv-support). This is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
 
 >[!NOTE]
 > The above changes can be made available to Windows 10, version 1607, by installing the April 2017 cumulative update.
@@ -481,19 +525,19 @@ Added policies include:
 - [Minimum disk size allowed to use Peer Caching](/windows/deployment/update/waas-delivery-optimization#minimum-disk-size-allowed-to-use-peer-caching)
 - [Minimum Peer Caching Content File Size](/windows/deployment/update/waas-delivery-optimization#minimum-peer-caching-content-file-size)
 
-To check out all the details, see [Configure Delivery Optimization for Windows 10 updates](/windows/deployment/update/waas-delivery-optimization)
+To check out all the details, see [Configure Delivery Optimization for Windows 10 updates](/windows/deployment/update/waas-delivery-optimization).
 
 ### Uninstalled in-box apps no longer automatically reinstall
 
-Starting with Windows 10 Enterprise 2019 LTSC, in-box apps that were uninstalled by the user won't automatically reinstall as part of the feature update installation process.
+Starting with Windows 10 Enterprise LTSC 2019, in-box apps that were uninstalled by the user won't automatically reinstall as part of the feature update installation process.
 
-Additionally, apps de-provisioned by admins on Windows 10 Enterprise 2019 LTSC machines will stay de-provisioned after future feature update installations. This will not apply to the update from Windows 10 Enterprise 2016 LTSC (or earlier) to Windows 10 Enterprise 2019 LTSC.
+Additionally, apps de-provisioned by admins on Windows 10 Enterprise LTSC 2019 machines will stay de-provisioned after future feature update installations. This will not apply to the update from Windows 10 Enterprise LTSC 2016 (or earlier) to Windows 10 Enterprise LTSC 2019.
 
 ## Management
 
 ### New MDM capabilities
 
-Windows 10 Enterprise 2019 LTSC adds many new [configuration service providers (CSPs)](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) that provide new capabilities for managing Windows 10 devices using MDM or provisioning packages. Among other things, these CSPs enable you to configure a few hundred of the most useful Group Policy settings via MDM - see [Policy CSP - ADMX-backed policies](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-admx-backed).
+Windows 10 Enterprise LTSC 2019 adds many new [configuration service providers (CSPs)](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) that provide new capabilities for managing Windows 10 devices using MDM or provisioning packages. Among other things, these CSPs enable you to configure a few hundred of the most useful Group Policy settings via MDM - see [Policy CSP - ADMX-backed policies](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-admx-backed).
 
 Some of the other new CSPs are:
 
@@ -519,17 +563,17 @@ Multiple new configuration items are also added. For more information, see [What
 
 ### Mobile application management support for Windows 10
 
-The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP), starting in Windows 10 Enterprise 2019 LTSC.
+The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP), starting in Windows 10 Enterprise LTSC 2019.
 
 For more info, see [Implement server-side support for mobile application management on Windows](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/implement-server-side-mobile-application-management).
 
 ### MDM diagnostics
 
-In Windows 10 Enterprise 2019 LTSC, we continue our work to improve the diagnostic experience for modern management. By introducing auto-logging for mobile devices, Windows will automatically collect logs when encountering an error in MDM, eliminating the need to have always-on logging for memory-constrained devices. Additionally, we are introducing [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) as an additional tool to help Support personnel quickly reduce issues to their root cause, while saving time and cost.
+In Windows 10 Enterprise LTSC 2019, we continue our work to improve the diagnostic experience for modern management. By introducing auto-logging for mobile devices, Windows will automatically collect logs when encountering an error in MDM, eliminating the need to have always-on logging for memory-constrained devices. Additionally, we are introducing [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) as an additional tool to help Support personnel quickly reduce issues to their root cause, while saving time and cost.
 
 ### Application Virtualization for Windows (App-V)
 
-Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10 Enterprise 2019 LTSC introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically cleanup your unpublished packages after a device restart.
+Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10 Enterprise LTSC 2019 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically cleanup your unpublished packages after a device restart.
 
 For more info, see the following topics:
 - [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-provision-a-vm)
@@ -546,7 +590,7 @@ Learn more about the diagnostic data that's collected at the Basic level and som
 
 ### Group Policy spreadsheet
 
-Learn about the new Group Policies that were added in Windows 10 Enterprise 2019 LTSC.
+Learn about the new Group Policies that were added in Windows 10 Enterprise LTSC 2019.
 
 - [Group Policy Settings Reference for Windows and Windows Server](https://www.microsoft.com/download/details.aspx?id=25250)
 
@@ -564,11 +608,11 @@ Several network stack enhancements are available in this release. Some of these 
 
 In this version of Windows 10, Microsoft has extended the ability to send a Miracast stream over a local network rather than over a direct wireless link. This functionality is based on the [Miracast over Infrastructure Connection Establishment Protocol (MS-MICE)](https://msdn.microsoft.com/library/mt796768.aspx).
 
-How it works:
+#### How it works
 
 Users attempt to connect to a Miracast receiver as they did previously. When the list of Miracast receivers is populated, Windows 10 will identify that the receiver is capable of supporting a connection over the infrastructure. When the user selects a Miracast receiver, Windows 10 will attempt to resolve the device's hostname via standard DNS, as well as via multicast DNS (mDNS). If the name is not resolvable via either DNS method, Windows 10 will fall back to establishing the Miracast session using the standard Wi-Fi direct connection.
 
-Miracast over Infrastructure offers a number of benefits:
+#### Miracast over Infrastructure offers a number of benefits
 
 - Windows automatically detects when sending the video stream over this path is applicable.
 - Windows will only choose this route if the connection is over Ethernet or a secure Wi-Fi network.
@@ -577,24 +621,28 @@ Miracast over Infrastructure offers a number of benefits:
 - It works well with older wireless hardware that is not optimized for Miracast over Wi-Fi Direct.
 - It leverages an existing connection which both reduces the time to connect and provides a very stable stream.
 
-Enabling Miracast over Infrastructure:
+#### Enabling Miracast over Infrastructure
 
-If you have a device that has been updated to Windows 10 Enterprise 2019 LTSC, then you automatically have this new feature. To take advantage of it in your environment, you need to ensure the following is true within your deployment:
+If you have a device that has been updated to Windows 10 Enterprise LTSC 2019, then you automatically have this new feature. To take advantage of it in your environment, you need to ensure the following is true within your deployment:
 
-- The device (PC, phone, or Surface Hub) needs to be running Windows 10, version 1703, Windows 10 Enterprise 2019 LTSC, or a later OS.
+- The device (PC, phone, or Surface Hub) needs to be running Windows 10, version 1703, Windows 10 Enterprise LTSC 2019, or a later OS.
+
 - A Windows PC or Surface Hub can act as a Miracast over Infrastructure *receiver*. A Windows PC or phone can act as a Miracast over Infrastructure *source*.
     - As a Miracast receiver, the PC or Surface Hub must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (e.g. using either WPA2-PSK or WPA2-Enterprise security). If the Hub is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
     - As a Miracast source, the  PC or phone must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
+
 - The DNS Hostname (device name) of the device needs to be resolvable via your DNS servers. You can achieve this by either allowing your device to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the device's hostname.
+
 - Windows 10 PCs must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
 
-It is important to note that Miracast over Infrastructure is not a replacement for standard Miracast. Instead, the functionality is complementary, and provides an advantage to users who are part of the enterprise network. Users who are guests to a particular location and don’t have access to the enterprise network will continue to connect using the Wi-Fi Direct connection method.
+> [!IMPORTANT]
+> Miracast over Infrastructure is not a replacement for standard Miracast. Instead, the functionality is complementary, and provides an advantage to users who are part of the enterprise network. Users who are guests to a particular location and don’t have access to the enterprise network will continue to connect using the Wi-Fi Direct connection method.
 
 ## Registry editor improvements
 
 We added a dropdown that displays as you type to help complete the next part of the path. You can also press **Ctrl + Backspace** to delete the last word, and **Ctrl + Delete** to delete the next word.
 
-![Registry editor dropdown](../images/regeditor.png "Registry editor dropdown")
+![Reg editor](../images/regeditor.png "Registry editor dropdown")
 
 ## Remote Desktop with Biometrics
 
@@ -603,12 +651,13 @@ Azure Active Directory and Active Directory users using Windows Hello for Busine
 To get started, sign into your device using Windows Hello for Business. Bring up **Remote Desktop Connection** (mstsc.exe), type the name of the computer you want to connect to, and click **Connect**.
 
 - Windows remembers that you signed using Windows Hello for Business, and automatically selects Windows Hello for Business to authenticate you to your RDP session. You can also click **More choices** to choose alternate credentials.
+
 - Windows uses facial recognition to authenticate the RDP session to the Windows Server 2016 Hyper-V server. You can continue to use Windows Hello for Business in the remote session, but you must use your PIN.
 
 See the following example:
 
 ![Enter your credentials](../images/RDPwBioTime.png "Windows Hello")
-![Enter your credentials](../images/RDPwBio2.png "Windows Hello personal")
+![Provide credentials](../images/RDPwBio2.png "Windows Hello personal")
 ![Microsoft Hyper-V Server 2016](../images/hyper-v.png "Microsoft Hyper-V Server 2016")
 
 ## See Also

@@ -4,7 +4,7 @@ description: By defining auditing settings for specific event categories, you ca
 ms.assetid: C9F52751-B40D-482E-BE9D-2C61098249D3
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Create a basic audit policy for an event category

@@ -4,7 +4,7 @@ description: Learn how to use Group Policy Management MMC to assign security gro
 ms.assetid: bcbe3299-8d87-4ec1-9e86-8e4a680fd7c8
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/02/2019
+ms.technology: mde
 ---
 
 # Assign Security Group Filters to the GPO

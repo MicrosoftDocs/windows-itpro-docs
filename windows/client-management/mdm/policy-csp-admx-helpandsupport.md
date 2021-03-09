@@ -83,7 +83,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether active content links in trusted assistance content are rendered. By default, the Help viewer renders trusted assistance content with active elements such as ShellExecute links and Guided Help links.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether active content links in trusted assistance content are rendered. By default, the Help viewer renders trusted assistance content with active elements such as ShellExecute links and Guided Help links.
 
 If you enable this policy setting, active content links are not rendered. The text is displayed, but there are no clickable links for these elements.
 
@@ -152,7 +152,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether users can provide ratings for Help content.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether users can provide ratings for Help content.
 
 If you enable this policy setting, ratings controls are not added to Help content.
 
@@ -222,7 +222,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether users can participate in the Help Experience Improvement program. The Help Experience Improvement program collects information about how customers use Windows Help so that Microsoft can improve it.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether users can participate in the Help Experience Improvement program. The Help Experience Improvement program collects information about how customers use Windows Help so that Microsoft can improve it.
 
 If you enable this policy setting, users cannot participate in the Help Experience Improvement program.
 
@@ -291,7 +291,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether users can search and view content from Windows Online in Help and Support. Windows Online provides the most up-to-date Help content for Windows.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether users can search and view content from Windows Online in Help and Support. Windows Online provides the most up-to-date Help content for Windows.
 
 If you enable this policy setting, users are prevented from accessing online assistance content from Windows Online.
 
@@ -318,14 +318,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

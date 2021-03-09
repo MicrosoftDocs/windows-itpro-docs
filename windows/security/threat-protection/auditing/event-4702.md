@@ -2,7 +2,7 @@
 title: 4702(S) A scheduled task was updated. (Windows 10)
 description: Describes security event 4702(S) A scheduled task was updated. This event is generated when a scheduled task is updated/changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4702(S): A scheduled task was updated.

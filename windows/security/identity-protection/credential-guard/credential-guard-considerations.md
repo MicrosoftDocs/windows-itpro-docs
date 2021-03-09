@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -42,9 +42,9 @@ As the depth and breadth of protections provided by Windows Defender Credential 
 ### Saved Windows Credentials Protected
 
 Starting with Windows 10, version 1511, domain credentials that are stored with Credential Manager are protected with Windows Defender Credential Guard. Credential Manager allows you to store three types of credentials: Windows credentials, certificate-based credentials, and generic credentials. Generic credentials such as user names and passwords that you use to log on to websites are not protected since the applications require your cleartext password. If the application does not need a copy of the password, they can save domain credentials as Windows credentials that are protected. Windows credentials are used to connect to other computers on a network. The following considerations apply to the Windows Defender Credential Guard protections for Credential Manager:
-    -   Windows credentials saved by Remote Desktop Client cannot be sent to a remote host. Attempts to use saved Windows credentials fail, displaying the error message "Logon attempt failed."
-    -   Applications that extract Windows credentials fail.
-    -   When credentials are backed up from a PC that has Windows Defender Credential Guard enabled, the Windows credentials cannot be restored. If you need to back up your credentials, you must do this before you enable Windows Defender Credential Guard. Otherwise, you cannot restore those credentials.
+* Windows credentials saved by Remote Desktop Client cannot be sent to a remote host. Attempts to use saved Windows credentials fail, displaying the error message "Logon attempt failed."
+* Applications that extract Windows credentials fail.
+* When credentials are backed up from a PC that has Windows Defender Credential Guard enabled, the Windows credentials cannot be restored. If you need to back up your credentials, you must do this before you enable Windows Defender Credential Guard. Otherwise, you cannot restore those credentials.
 
 ## Clearing TPM Considerations
 Virtualization-based Security (VBS) uses the TPM to protect its key. So when the TPM is cleared then the TPM protected key used to encrypt VBS secrets is lost.
