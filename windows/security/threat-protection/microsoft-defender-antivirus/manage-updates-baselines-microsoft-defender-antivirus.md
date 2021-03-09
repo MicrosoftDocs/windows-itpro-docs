@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 03/05/2021
+ms.date: 03/09/2021
 ms.technology: mde
 ---
 
@@ -390,7 +390,7 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 
 |Windows 10 release  |Platform version  |Engine version |Support phase |
 |:---|:---|:---|:---|
-|2004  (20H1) |4.18.2004.6 |1.1.17000.2 | Technical upgrade support (only) |
+|2004  (20H1/20H2) |4.18.1909.6 |1.1.17000.2 | Technical upgrade support (only) |
 |1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade support (only) |
 |1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade support (only) |
 |1809  (RS5) |4.18.1807.18075 |1.1.15000.2 | Technical upgrade support (only) |
