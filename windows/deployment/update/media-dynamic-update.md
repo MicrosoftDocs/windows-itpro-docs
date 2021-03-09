@@ -46,7 +46,7 @@ The various Dynamic Update packages might not all be present in the results from
 
 |To find this Dynamic Update packages, search for or check the results here  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
 |---------|---------|---------|---------|
-|Safe OS Dynamic Update      | 2019-08 Dynamic Update...        | Windows 10 Dynamic Update,Windows **Safe OS Dynamic Update**         | ComponentUpdate:        |
+|Safe OS Dynamic Update      | 2019-08 Dynamic Update...        | Windows 10 Dynamic Update, Windows **Safe OS Dynamic Update**         | ComponentUpdate:        |
 |Setup Dynamic Update     | 2019-08 Dynamic Update...         | Windows 10 Dynamic Update        | **SetupUpdate**        |
 |Latest cumulative update     | 2019-08 **Cumulative Update for Windows 10**    |  Windows 10       |  Install this update to resolve issues in Windows...       |
 |Servicing stack Dynamic Update     | 2019-09 **Servicing Stack Update for Windows 10**        |  Windows 10...       | Install this update to resolve issues in Windows...        |
