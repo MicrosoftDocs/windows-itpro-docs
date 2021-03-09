@@ -19,7 +19,7 @@ ms.custom: bitlocker
 
 # Breaking out of a Bitlocker recovery loop
 
-Sometimes, following a crash, you might be unable to successfully boot into your operating system, due to the recovery screen repeatedly prompting you to enter your recovery key. This scenario can be very frustrating.
+After a crash, you might be unable to successfully boot into your operating system when the recovery screen repeatedly prompts you to enter your recovery key. This scenario can be very frustrating.
 
 If you've entered the correct Bitlocker recovery key multiple times, and are still unable to continue past the initial recovery screen, follow these steps to come out of the loop.
 
