@@ -120,7 +120,9 @@ Spreadsheet of domains list | Description
 For more information, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 > [!NOTE]
-> The spreadsheet contains commercial URLs as well, make sure you check the "US Gov" tabs. <br> When filtering, look for the records labeled as "US Gov" and your specific cloud under the geography column.
+> The spreadsheet contains commercial URLs as well, make sure you check the "US Gov" tabs.
+>
+> When filtering, look for the records labeled as "US Gov" and your specific cloud under the geography column.
 
 <br>
 
