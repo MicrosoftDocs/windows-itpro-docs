@@ -155,9 +155,9 @@ To approve the system extensions:
 
 2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Extensions**. Select **Create**.
 
-3. In the `Basics` tab, give a name to this new profile.
+3. In the **Basics** tab, give a name to this new profile.
 
-4. In the `Configuration settings` tab, add the following entries in the `Allowed system extensions` section:
+4. In the **Configuration settings** tab, add the following entries in the **Allowed system extensions** section:
 
     Bundle identifier         | Team identifier
     --------------------------|----------------
@@ -165,9 +165,9 @@ To approve the system extensions:
     com.microsoft.wdav.netext | UBF8T346G9
 
     > [!div class="mx-imgBorder"]
-    > ![System configuration profiles screenshot](images/mac-system-extension-intune2.png)
+    > ![System extension settings in Configuration settings on the Basics tab](images/mac-system-extension-intune2.png)
 
-5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
+5. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 
 6. Review and create this configuration profile.
 
@@ -181,7 +181,7 @@ To approve the system extensions:
 
 4. Select **OK**.
 
-    ![System configuration profiles screenshot](../microsoft-defender-antivirus/images/MDATP-6-SystemConfigurationProfiles.png)
+    ![Import a configuration from a file for Custom Configuration Profile](../microsoft-defender-antivirus/images/MDATP-6-SystemConfigurationProfiles.png)
 
 5. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
@@ -205,7 +205,7 @@ To approve the system extensions:
 Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
 
 > [!div class="mx-imgBorder"]
-> ![System configuration profiles screenshot](../microsoft-defender-antivirus/images/MDATP-7-DeviceStatusBlade.png)
+> ![View of Device Status in Monitor](../microsoft-defender-antivirus/images/MDATP-7-DeviceStatusBlade.png)
 
 ## Publish application
 
@@ -227,12 +227,12 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
     > If the version uploaded by Intune is lower than the version on the device, then the lower version will be installed, effectively downgrading Microsoft Defender for Endpoint. This could result in a non-functioning application. See [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md) for additional information about how the product is updated. If you deployed Microsoft Defender for Endpoint with *Ignore app version* set to **No**, please change it to **Yes**. If Microsoft Defender for Endpoint still cannot be installed on a client device, then uninstall Microsoft Defender for Endpoint and push the updated policy.
      
     > [!div class="mx-imgBorder"]
-    > ![Device status blade screenshot](../microsoft-defender-antivirus/images/MDATP-8-IntuneAppInfo.png)
+    > ![Display of App information in App add](../microsoft-defender-antivirus/images/MDATP-8-IntuneAppInfo.png)
 
 7. Select **OK** and **Add**.
 
     > [!div class="mx-imgBorder"]
-    > ![Device status blade screenshot](../microsoft-defender-antivirus/images/MDATP-9-IntunePkgInfo.png)
+    > ![Device status shown in Notifications window](../microsoft-defender-antivirus/images/MDATP-9-IntunePkgInfo.png)
 
 8. It may take a few moments to upload the package. After it's done, select the package from the list and go to **Assignments** and **Add group**.
 
