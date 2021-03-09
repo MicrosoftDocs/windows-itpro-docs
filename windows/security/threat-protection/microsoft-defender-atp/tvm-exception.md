@@ -1,10 +1,10 @@
 ---
 title: Create and view exceptions for security recommendations - threat and vulnerability management
-description: Create and monitor exceptions for security recommendations in threat and vulnerability management. 
+description: Create and monitor exceptions for security recommendations in threat and vulnerability management.
 keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,79 +14,125 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 # Create and view exceptions for security recommendations - threat and vulnerability management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Sometimes, you may not be able to take the remediation steps suggested by a security recommendation. If that is the case, threat and vulnerability management gives you an avenue to create an exception.
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state changes to **Exception**, and no longer shows up in the security recommendations list.
+As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create exceptions for recommendations. If your organization has device groups, you will be able to scope the exception to specific device groups. Exceptions can either be created for selected device groups, or for all device groups past and present.  
+
+When an exception is created for a recommendation, the recommendation will not be active until the end of the exception duration. The recommendation state will change to **Full exception** or **Partial exception** (by device group).
+
+## Permissions
+
+Only users with “exceptions handling” permissions can manage exceptions (including creating or canceling). [Learn more about RBAC roles](user-roles.md).
+
+![View of exception handling permission.](images/tvm-exception-permissions.png)
 
 ## Create an exception
 
-1. Go to the threat and vulnerability management navigation menu in the Microsoft Defender Security Center, and select [**Security recommendations**](tvm-security-recommendation.md).
+Select a security recommendation you would like create an exception for, and then select **Exception options** and fill out the form.  
 
-2. Select a security recommendation you would like to create an exception for, and then **Exception options**.
-![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-option.png)
+![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-options.png)
 
-3. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
+### Exception by device group
 
-    The following list details the justifications behind the exception options:
+Apply the exception to all current device groups or choose specific device groups. Future device groups won't be included in the exception. Device groups that already have an exception will not be displayed in the list. If you only select certain device groups, the recommendation state will change from “active” to “partial exception.” The state will change to “full exception” if you select all the device groups.
 
-    - **Third party control** - A third party product or software already addresses this recommendation
-        - Choosing this justification type will lower your exposure score and increase you secure score because your risk is reduced
-    - **Alternate mitigation** - An internal tool already addresses this recommendation
-        - Choosing this justification type will lower your exposure score and increase you secure score because your risk is reduced
-    - **Risk accepted** - Poses low risk and/or implementing the recommendation is too expensive
-    - **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
+![Showing device group dropdown.](images/tvm-exception-device-group-500.png)
 
-4. Select **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
+#### Filtered views
 
-## View your exceptions
+If you have filtered by device group on any of the threat and vulnerability management pages, only your filtered device groups will appear as options.
 
-When you file for an exception from the security recommendations page, you create an exception  for that security recommendation. You can file exceptions to exclude certain recommendation from showing up in reports and affecting your [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md).
+This is the button to filter by device group on any of the threat and vulnerability management pages: 
 
-The exceptions you've filed will show up in the **Remediation** page, in the **Exceptions** tab. You can filter your view based on exception justification, type, and status.  
+![Showing selected device groups filter.](images/tvm-selected-device-groups.png)
 
-![Example of the exception page and filter options.](images/tvm-exception-filters.png)
+Exception view with filtered device groups:
 
-### Exception actions and statuses
+![Showing filtered device group dropdown.](images/tvm-exception-device-filter500.png)
 
-Once an exception exists, you can cancel it at any time by going to the exception in the **Remediation** page and selecting **Cancel exception**.
+#### Large number of device groups
 
-The following statuses will be a part of an exception:
+If your organization has more than 20 device groups, select **Edit** next to the filtered device group option.
 
-- **Canceled** - The exception has been canceled and is no longer in effect  
-- **Expired** - The exception that you've filed is no longer in effect
-- **In effect** - The exception that you've filed is in progress
+![Showing how to edit large numbers of groups.](images/tvm-exception-edit-groups.png)
 
-### Exception impact on scores
+A flyout will appear where you can search and choose device groups you want included. Select the check mark icon below Search to check/uncheck all.
 
-Creating an exception can potentially affect the Exposure Score (for both types of weaknesses) and Microsoft Secure Score for Devices of your organization in the following manner:
+![Showing large device group flyout.](images/tvm-exception-device-group-flyout-400.png)
 
-- **No impact** - Removes the recommendation from the lists (which can be reverse through filters), but will not affect the scores.
-- **Mitigation-like impact** - As if the recommendation was mitigated (and scores will be adjusted accordingly) when you select it as a compensating control.
-- **Hybrid** - Provides visibility on both No impact and Mitigation-like impact. It shows both the Exposure Score and Microsoft Secure Score for Devices results out of the exception option that you made.
+### Global exceptions
 
-The exception impact shows on both the Security recommendations page column and in the flyout pane.
+If you have global administrator permissions (called Microsoft Defender ATP administrator), you will be able to create and cancel a global exception. It affects **all** current and future device groups in your organization, and only a user with similar permission would be able to change it. The recommendation state will change from “active” to “full exception.”
 
-![Screenshot identifying the impact sections which list score impacts in the full page security recommendations table, and the flyout.](images/tvm-exception-impact.png)
+![Showing global exception option.](images/tvm-exception-global.png)
 
-### View exceptions in other places
+Some things to keep in mind:
 
-Select **Show exceptions** at the bottom of the **Top security recommendations** card in the dashboard. It will open a filtered view in the **Security recommendations** page of recommendations with an "Exception" status.
+- If a recommendation is under global exception, then newly created exceptions for device groups will be suspended until the global exception has expired or been cancelled. After that point, the new device group exceptions will go into effect until they expire.
+- If a recommendation already has exceptions for specific device groups and a global exception is created, then the device group exception will be suspended until it expires or the global exception is cancelled before it expires.
 
-![Screenshot of Show exceptions link in the Top security recommendations card in the dashboard.](images/tvm-exception-dashboard.png)
+### Justification
+
+Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
+
+The following list details the justifications behind the exception options:
+
+- **Third party control** - A third party product or software already addresses this recommendation
+        - Choosing this justification type will lower your exposure score and increase your secure score because your risk is reduced
+- **Alternate mitigation** - An internal tool already addresses this recommendation
+        - Choosing this justification type will lower your exposure score and increase your secure score because your risk is reduced
+- **Risk accepted** - Poses low risk and/or implementing the recommendation is too expensive
+- **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
+
+## View all exceptions
+
+Navigate to the **Exceptions** tab in the **Remediation** page. You can filter by justification, type, and status.
+
+ Select an exception to open a flyout with more details. Exceptions per devices group will have a list of every device group the exception covers, which you can export. You can also view the related recommendation or cancel the exception.
+
+![Showing the "Exceptions" tab in the Remediation page.](images/tvm-exception-view.png)
+
+## How to cancel an exception
+
+To cancel an exception, navigate to the **Exceptions** tab in the **Remediation** page. Select the exception.
+
+To cancel the exception for all device groups or for a global exception, select the **Cancel exception for all device groups** button. You will only be able to cancel exceptions for device groups you have permissions for.
+
+![The cancel button.](images/tvm-exception-cancel.png)
+
+### Cancel the exception for a specific device group
+
+Select the specific device group to cancel the exception for it. A flyout will appear for the device group, and you can select **Cancel exception**.
+
+![Showing how to select a specific device group.](images/tvm-exception-device-group-hover.png)
+
+## View impact after exceptions are applied
+
+In the Security Recommendations page, select **Customize columns** and check the boxes for **Exposed devices (after exceptions)** and **Impact (after exceptions)**.
+
+![Showing customize columns options.](images/tvm-after-exceptions.png)
+
+The exposed devices (after exceptions) column shows the remaining devices that are still exposed to vulnerabilities after exceptions are applied. Exception justifications that affect the exposure include ‘third party control’ and ‘alternate mitigation’. Other justifications do not reduce the exposure of a device, and they are still considered exposed.
+
+The impact (after exceptions) shows remaining impact to exposure score or secure score after exceptions are applied. Exception justifications that affect the scores include ‘third party control’ and ‘alternate mitigation.’ Other justifications do not reduce the exposure of a device, and so the exposure score and secure score do not change.
+
+![Showing the columns in the table.](images/tvm-after-exceptions-table.png)
 
 ## Related topics
 

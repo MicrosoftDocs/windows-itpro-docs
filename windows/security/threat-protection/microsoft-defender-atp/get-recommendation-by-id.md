@@ -20,15 +20,22 @@ ms.topic: article
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** 
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Retrieves a security recommendation by its ID.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -61,7 +68,7 @@ If successful, this method returns 200 OK with the security recommendations in t
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.windows.com/api/recommendations/va-_-google-_-chrome
+GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome
 ```
 
 **Response**
@@ -70,7 +77,7 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Recommendations/$entity",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations/$entity",
     "id": "va-_-google-_-chrome",
     "productName": "chrome",
     "recommendationName": "Update Chrome",

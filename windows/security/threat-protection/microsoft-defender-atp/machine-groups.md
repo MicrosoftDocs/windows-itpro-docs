@@ -4,7 +4,7 @@ description: Create device groups and set automated remediation levels on them b
 keywords: device groups, groups, remediation, level, rules, aad group, role, assign, rank
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Create and manage device groups
@@ -23,14 +24,15 @@ ms.topic: article
 
 
 **Applies to:**
-
 - Azure Active Directory
 - Office 365
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
 
 In an enterprise scenario, security operation teams are typically assigned a set of devices. These devices are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
 
-In Microsoft Defender ATP, you can create device groups and use them to:
+In Microsoft Defender for Endpoint, you can create device groups and use them to:
 - Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac.md) 
 - Configure different auto-remediation settings for different sets of devices
 - Assign specific remediation levels to apply during automated investigations
@@ -88,4 +90,4 @@ Devices that are not matched to any groups are added to Ungrouped devices (defau
 
 - [Manage portal access using role-based based access control](rbac.md)
 - [Create and manage device tags](machine-tags.md)
-- [Get list of tenant device groups using Graph API](get-machinegroups-collection.md)
+- [Get list of tenant device groups using Graph API](https://docs.microsoft.com/graph/api/device-list-memberof)

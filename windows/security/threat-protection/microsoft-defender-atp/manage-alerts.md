@@ -1,10 +1,10 @@
 ---
-title: Manage Microsoft Defender Advanced Threat Protection alerts
+title: Manage Microsoft Defender for Endpoint alerts
 description: Change the status of alerts, create suppression rules to hide alerts, submit comments, and review change history for individual alerts with the Manage Alert menu.
 keywords: manage alerts, manage, alerts, status, new, in progress, resolved, resolve alerts, suppress, supression, rules, context, history, comments, changes
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,21 +13,23 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
-# Manage Microsoft Defender Advanced Threat Protection alerts
+# Manage Microsoft Defender for Endpoint alerts
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-Microsoft Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue**.
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+
+Defender for Endpoint notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue**.
 
 You can manage alerts by selecting an alert in the **Alerts queue**, or the **Alerts** tab of the Device page for an individual device.
 
@@ -43,7 +45,7 @@ If an alert is not yet assigned, you can select **Assign to me** to assign the a
 
 
 ## Suppress alerts
-There might be scenarios where you need to suppress alerts from appearing in Microsoft Defender Security Center. Microsoft Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization.
+There might be scenarios where you need to suppress alerts from appearing in Microsoft Defender Security Center. Defender for Endpoint lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization.
 
 Suppression rules can be created from an existing alert. They can be disabled and reenabled if needed.
 
@@ -82,7 +84,7 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 3. Select the **Triggering IOC**.
     
 4. Specify the action and scope on the alert. <br>
-   You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue, alert page, and device timeline and will appear as resolved across Microsoft Defender ATP APIs. <br><br> Alerts that are marked as hidden will be suppressed from the entire system, both on the device's associated alerts and from the dashboard and will not be streamed across Microsoft Defender ATP APIs.
+   You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue, alert page, and device timeline and will appear as resolved across Defender for Endpoint APIs. <br><br> Alerts that are marked as hidden will be suppressed from the entire system, both on the device's associated alerts and from the dashboard and will not be streamed across Defender for Endpoint APIs.
 
 
 5. Enter a rule name and a comment.
@@ -120,10 +122,10 @@ Added comments instantly appear on the pane.
 
 ## Related topics
 - [Manage suppression rules](manage-suppression-rules.md)
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
-- [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
-- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
-- [Investigate devices in the Microsoft Defender ATP Devices list](investigate-machines.md)
-- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
-- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
-- [Investigate a user account in Microsoft Defender ATP](investigate-user.md)
+- [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
+- [Investigate Microsoft Defender for Endpoint alerts](investigate-alerts.md)
+- [Investigate a file associated with a Microsoft Defender for Endpoint alert](investigate-files.md)
+- [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md)
+- [Investigate an IP address associated with a Microsoft Defender for Endpoint alert](investigate-ip.md)
+- [Investigate a domain associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
+- [Investigate a user account in Microsoft Defender for Endpoint](investigate-user.md)

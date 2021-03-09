@@ -112,7 +112,7 @@ The following table provides some examples of settings that you can configure us
 |          Start menu customization          |                                           Start menu layout, application pinning                                            |
 |                   Other                    |                     Home and lock screen wallpaper, computer name, domain join, DNS settings, and so on                     |
 
-\* Using a provisioning package for auto-enrollment to Microsoft Endpoint Configuration Manager is not supported. Use the Configuration Manager console to enroll devices.
+\* Using a provisioning package for auto-enrollment to Microsoft Endpoint Manager is not supported. Use the Configuration Manager console to enroll devices.
 
 
 For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).

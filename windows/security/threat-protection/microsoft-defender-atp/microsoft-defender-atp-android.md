@@ -1,11 +1,11 @@
 ---
 title: Microsoft Defender ATP for Android
-ms.reviewer:
+ms.reviewer: 
 description: Describes how to install and use Microsoft Defender ATP for Android
 keywords: microsoft, defender, atp, android, installation, deploy, uninstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,29 +15,35 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# Microsoft Defender Advanced Threat Protection for Android
+# Microsoft Defender for Endpoint for Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-This topic describes how to install, configure, update, and use Microsoft Defender ATP for Android.
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+This topic describes how to install, configure, update, and use Defender for Endpoint for Android.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender ATP for Android is likely to cause performance problems and unpredictable system errors.
+> Running other third-party endpoint protection products alongside Defender for Endpoint for Android is likely to cause performance problems and unpredictable system errors.
 
 
-## How to install Microsoft Defender ATP for Android
+## How to install Microsoft Defender for Endpoint for Android
 
 ### Prerequisites
 
 -   **For end users**
 
-    -   Microsoft Defender ATP license assigned to the end user(s) of the app. See [Microsoft Defender ATP licensing requirements](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#licensing-requirements)
+    -   Microsoft Defender for Endpoint license assigned to the end user(s) of the app. See [Microsoft Defender for Endpoint licensing requirements](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#licensing-requirements)
 
     -   Intune Company Portal app can be downloaded from [Google
         Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
@@ -57,7 +63,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
     -   Access to the Microsoft Defender Security Center portal.
 
         > [!NOTE]
-        > Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender ATP for Android. Currently only enrolled devices are supported for enforcing Microsoft Defender ATP for Android related device compliance policies in Intune. 
+        > Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender for Endpoint for Android. Currently only enrolled devices are supported for enforcing Defender for Endpoint for Android related device compliance policies in Intune. 
 
     -   Access [Microsoft Endpoint Manager admin
         center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the
@@ -72,24 +78,24 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ### Installation instructions
 
-Microsoft Defender ATP for Android supports installation on both modes of
+Microsoft Defender for Endpoint for Android supports installation on both modes of
 enrolled devices - the legacy Device Administrator and Android Enterprise modes.
-**Currently, only Work Profile enrolled devices are supported in Android Enterprise. Support for other Android Enterprise modes will be announced when ready.**
+**Currently, Personally-owned devices with work profile and Corporate-owned fully managed user device enrolments are supported in Android Enterprise. Support for other Android Enterprise modes will be announced when ready.**
 
-Deployment of Microsoft Defender ATP for Android is via Microsoft Intune (MDM).
-For more information, see [Deploy Microsoft Defender ATP for Android with Microsoft Intune](android-intune.md).
+Deployment of Microsoft Defender for Endpoint for Android is via Microsoft Intune (MDM).
+For more information, see [Deploy Microsoft Defender for Endpoint for Android with Microsoft Intune](android-intune.md).
 
 
 > [!NOTE]
-> **Microsoft Defender ATP for Android is available on [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx) now.** <br> You can connect to Google Play from Intune to deploy Microsoft Defender ATP app, across Device Administrator and Android Enterprise entrollment modes. 
+> **Microsoft Defender for Endpoint for Android is available on [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx) now.** <br> You can connect to Google Play from Intune to deploy Microsoft Defender for Endpoint app, across Device Administrator and Android Enterprise entrollment modes. 
 
-## How to Configure Microsoft Defender ATP for Android
+## How to Configure Microsoft Defender for Endpoint for Android
 
-Guidance on how to configure Microsoft Defender ATP for Android features is available in [Configure Microsoft Defender ATP for Android features](android-configure.md).
+Guidance on how to configure Microsoft Defender for Endpoint for Android features is available in [Configure Microsoft Defender for Endpoint for Android features](android-configure.md).
 
 
 
 ## Related topics
-- [Deploy Microsoft Defender ATP for with Microsoft Intune](android-intune.md)
-- [Configure Microsoft Defender ATP for Android features](android-configure.md)
+- [Deploy Microsoft Defender for Endpoint for with Microsoft Intune](android-intune.md)
+- [Configure Microsoft Defender for Endpoint for Android features](android-configure.md)
 

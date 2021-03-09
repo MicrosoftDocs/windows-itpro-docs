@@ -29,7 +29,7 @@ When you set up Windows Hello in Windows 10, you may get an error during the **
 
 The following image shows an example of an error during **Create a PIN**.
 
-![](images/pinerror.png)
+![PIN error](images/pinerror.png)
 
 ## Error mitigations
 
@@ -68,7 +68,7 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed. <br><br> -or- <br><br> Token was not found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure Active Directory (Azure AD) and rejoin.
 | 0x801C03EE | Attestation failed.                                                | Sign out and then sign in again. |
 | 0x801C03EF | The AIK certificate is no longer valid.                            | Sign out and then sign in again. |
-| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR\_BAD\_DIRECTORY\_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue refer to [Duplicate Attributes Prevent Dirsync](https://docs.microsoft.com/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync).
+| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR\_BAD\_DIRECTORY\_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue, refer to [Duplicate Attributes Prevent Dirsync](https://docs.microsoft.com/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync). Also, if no sync conflict exists, please verify that the "Mail/Email address" in AAD and the Primary SMTP address are the same in the proxy address.
 | 0x801C044D | Authorization token does not contain device ID.                    | Unjoin the device from Azure AD and rejoin. |
 |            | Unable to obtain user token.                                       | Sign out and then sign in again. Check network and credentials. |
 | 0x801C044E | Failed to receive user credentials input.                          | Sign out and then sign in again. |

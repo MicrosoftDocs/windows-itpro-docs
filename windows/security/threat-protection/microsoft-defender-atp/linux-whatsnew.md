@@ -1,10 +1,10 @@
 ---
-title: What's new in Microsoft Defender Advanced Threat Protection for Linux
+title: What's new in Microsoft Defender for Endpoint for Linux
 description: List of major changes for Microsoft Defender ATP for Linux.
 keywords: microsoft, defender, atp, linux, whatsnew, release
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,39 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 
-# What's new in Microsoft Defender Advanced Threat Protection for Linux
+# What's new in Microsoft Defender for Endpoint for Linux
+
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+ 
+**Platforms**
+- Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+## 101.23.64 (30.121021.12364.0)
+
+- Performance improvement for the situation where an entire mount point is added to the antivirus exclusion list. Prior to this version, file activity originating from the mount point was still processed by the product. Starting with this version, file activity for excluded mount points is suppressed, leading to better product performance
+- Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`
+- Other performance improvements & bug fixes
+
+## 101.18.53
+
+- EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+- Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
+- Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
+- Performance improvements & bug fixes
+
+## 101.12.99
+
+- Performance improvements & bug fixes
 
 ## 101.04.76
 

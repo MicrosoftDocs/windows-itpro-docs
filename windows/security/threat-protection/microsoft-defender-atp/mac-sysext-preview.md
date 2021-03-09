@@ -1,10 +1,10 @@
 ---
-title: Microsoft Defender ATP for Mac - System Extensions (Public Preview)
+title: Microsoft Defender ATP for Mac - system extensions (Preview)
 description: This article contains instructions for trying out the system extensions functionality of Microsoft Defender ATP for Mac. This functionality is currently in public preview.
 keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,80 +14,85 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
+ms.technology: mde
 ---
 
-# Microsoft Defender ATP for Mac - System Extensions (Public Preview)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# Microsoft Defender for Endpoint for Mac - system extensions public preview)
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This functionality is currently in public preview. This article contains instructions for enabling this functionality on your device. You can choose to try out this feature locally on your own device or configure it remotely through a management tool.
+In alignment with macOS evolution, we are preparing a Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. This update will only apply to macOS Catalina (10.15.4) and later versions of macOS.
 
-These steps assume you already have Microsoft Defender ATP running on your device. For more information, see [this page](microsoft-defender-atp-mac.md).
+This functionality is currently in public preview. This article describes how to enable this functionality on your device. You can try out this feature locally on your own device or configure it remotely through a management tool.
+
+These steps assume you already have Defender for Endpoint running on your device. For more information, see [this page](microsoft-defender-atp-mac.md).
 
 ## Known issues
 
-- We’ve received reports of the network extension interfering with Apple SSO Kerberos extension.
+- We’ve received reports of the network extension interfering with the Apple SSO Kerberos extension.
 - The current version of the product still installs a kernel extension. The kernel extension is only used as a fallback mechanism and will be removed before this feature reaches public preview.
-- We are still working on a product version that deploys and functions properly on macOS 11 Big Sur.
+- We're still working on a product version that deploys and functions properly on macOS 11 Big Sur.
 
 ## Deployment prerequisites
 
-- Minimum operating system version: **10.15.4**
+- Minimum macOS operating system version: **10.15.4**
 - Minimum product version: **101.03.73**
-- Your device must be in the **Insider Fast update channel**. You can check the update channel using the following command:
+- Your device must be in the **Insider Fast update channel**. You can check the update channel by using the following command:
 
-```bash
-mdatp --health releaseRing
-```
+  ```bash
+  mdatp health --field release_ring
+  ```
 
-If your device is not already in the Insider Fast update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
+  If your device isn't already in the Insider Fast update channel, execute the following command from the Terminal. The channel update takes effect the next time the product starts (when the next product update is installed, or when the device is rebooted).
 
-```bash
-defaults write com.microsoft.autoupdate2 ChannelName -string InsiderFast
-```
+  ```bash
+  defaults write com.microsoft.autoupdate2 ChannelName -string InsiderFast
+  ```
 
-Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [this page](mac-updates.md#set-the-channel-name).
+  Alternatively, if you're in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [Deploy updates for Microsoft Defender ATP for Mac: Set the channel name](mac-updates.md#set-the-channel-name).
 
 ## Deployment steps
 
-Select the deployment steps corresponding to your environment and your preferred method of trying out this feature.
+Follow the deployment steps that correspond to your environment and your preferred method of trying out this feature.
 
 ### Manual deployment
 
-#### Approve the system extensions & enable the network extension
+#### Approve the system extensions and enable the network extension
 
-Once all deployment prerequisites are met, restart your device to start the system extension approval and activation process.
+1. After all deployment prerequisites are met, restart your device to launch the system extension approval and activation process.
 
-You will be presented series of system prompts to approve the Microsoft Defender ATP system extensions. You must approve ALL prompts from the series, because macOS requires an explicit approval for each extension that Microsoft Defender ATP for Mac installs on the device.
+   You'll see a series of system prompts to approve the Defender for Endpoint system extensions. You must approve **all** prompts from the series, because macOS requires an explicit approval for each extension that Defender for Endpoint for Mac installs on the device.
+   
+   For each approval, select **Open Security Preferences** and then select **Allow** to allow the system extension to run.
 
-For each approval, click **Open Security Preferences** and then click **Allow** to allow the system extension to run.
+   > [!IMPORTANT]
+   > You must close and reopen the **System Preferences** > **Security & Privacy** window between subsequent approvals. Otherwise, macOS will not display the next approval.
 
-> [!IMPORTANT]
-> Between subsequent approvals, you must close and re-open the **System Preferences** > **Security & Privacy** window, otherwise macOS will not display the next approval. 
+   > [!IMPORTANT]
+   > There is a one-minute timeout before the product falls back to the kernel extension. This ensures that the device is protected.
+   >
+   > If more than one minute elapses, restart the daemon by rebooting the device or by using `sudo killall -9 wdavdaemon` to trigger the approval flow again.
 
-> [!IMPORTANT]
-> There is a one minute timeout before the product falls back to the kernel extension (to ensure that the device is protected). 
->
-> If more than one minute has elapsed, restart the daemon (by rebooting the device or using `sudo killall -9 wdavdaemon`) in order to trigger the approval flow again.
+   ![System extension approval pop-up](images/mac-system-extension-approval.png)
 
-![System extension approval pop-up](images/mac-system-extension-approval.png)
+   ![System extension approval window](images/mac-system-extension-pref.png)
 
-![System extension approval window](images/mac-system-extension-pref.png)
+1. After the system extensions are approved, macOS prompts for an approval to allow network traffic to be filtered. Click **Allow**.
 
-Following the approval of the system extensions, macOS will prompt for an approval to allow network traffic to be filtered. Click **Allow**.
-
-![Network extension approval pop-up](images/mac-system-extension-filter.png)
+   ![Network extension approval pop-up](images/mac-system-extension-filter.png)
 
 #### Grant Full Disk Access to the Endpoint Security system extension
 
-Open **System Preferences** > **Security & Privacy** > **Privacy** tab and grant **Full Disk Access** to the **Microsoft Defender Endpoint Security Extension**.
+Open the **System Preferences** > **Security & Privacy** > **Privacy** tab and grant **Full Disk Access** to the **Microsoft Defender Endpoint Security Extension**.
 
 ![Full disk access for Endpoint Security system extension](images/mac-system-extension-fda.png)
 
@@ -107,46 +112,46 @@ Terminal output `endpoint_security_extension` indicates the product is using the
 
 ### Managed deployment
 
-Refer to [this page](mac-sysext-policies.md#jamf) for the new configuration profiles that must be deployed for this new feature.
+Refer to [New configuration profiles for macOS Catalina and newer versions of macOS: JAMF](mac-sysext-policies.md#jamf) for the new configuration profiles you must deploy for this new feature.
 
-In addition to those profiles, make sure the target devices are also configured to be in the Insider Fast update channel, as described in [this section](#deployment-prerequisites).
+In addition to those profiles, make sure to configure the target devices to be in the Insider Fast update channel, as described in [Deployment prerequisites](#deployment-prerequisites).
 
-On a device where all prerequisites are met and the new configuration profiles have been deployed, run:
+On a device where all prerequisites are met and the new configuration profiles have been deployed, run the following command:
 
 ```bash
 $ mdatp health --field real_time_protection_subsystem
 ```
 
-If this command prints `endpoint_security_extension`, then the product is using the system extensions functionality.
+If this command prints `endpoint_security_extension`, the product is using the system extensions functionality.
 
 ## Validate basic scenarios
 
-1. Test EICAR detection. From a Terminal window, run:
+1. Test European Institute for Computer Antivirus Research (EICAR) detection. From a Terminal window, run the following command:
 
-```bash
-curl -o eicar.txt https://secure.eicar.org/eicar.com.txt
-```
+   ```bash
+   curl -o eicar.txt https://secure.eicar.org/eicar.com.txt
+   ```
 
-  Verify that the EICAR file is quarantined. This verification can be done from the user interface (from the Protection History page) or command line using the following command:
+   Verify that the EICAR file is quarantined. You can verify the file's status on the Protection History page in the user interface, or from a command line by using the following command:
 
-```bash
-mdatp threat list
-```
+    ```bash
+    mdatp threat list
+    ```
 
-2. Test EDR DIY scenario. From a terminal window, run:
+2. Test the Endpoint Detection and Response (EDR) DIY scenario. From a terminal window, run the following command:
 
-```bash
-curl -o "MDATP MacOS DIY.zip" https://aka.ms/mdatpmacosdiy
-```
+   ```bash
+   curl -o "MDATP MacOS DIY.zip" https://aka.ms/mdatpmacosdiy
+   ```
 
-  Validate that two alerts have popped up in the portal in the machine page for EICAR and EDR DIY scenarios.
+   Validate that two alerts popped up in the portal on the machine page for EICAR and EDR DIY scenarios.
 
 ## Frequently asked questions
 
 - Q: Why am I still seeing `kernel_extension` when I run `mdatp health --field real_time_protection_subsystem`?
-    
-    A: Refer back to the [Deployment prerequisites](#deployment-prerequisites) section and double-check all of them are met. If all prerequisites are met, restart your device and check again.
 
-- Q: When is macOS 11 Big Sur going to be supported?
+    A: Refer back to the [Deployment prerequisites](#deployment-prerequisites) section and double-check that all prerequisites are met. If all prerequisites are met, restart your device and check again.
 
-    A: We are actively working on adding support for macOS 11. We will post more information to the [What's new](mac-whatsnew.md).
+- Q: When will macOS 11 Big Sur be supported?
+
+    A: We are actively working on adding support for macOS 11. We will post more information to the [What's new](mac-whatsnew.md) page.

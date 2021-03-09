@@ -4,7 +4,7 @@ description: Get actionable security recommendations prioritized by threat, like
 keywords: threat and vulnerability management, mdatp tvm security recommendation, cybersecurity recommendation, actionable security recommendation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
+ms.technology: mde
 ---
 # Security recommendations - threat and vulnerability management
 
@@ -24,16 +25,18 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Cybersecurity weaknesses identified in your organization are mapped to actionable security recommendations and prioritized by their impact. Prioritized recommendations help shorten the time to mitigate or remediate vulnerabilities and drive compliance.
 
 Each security recommendation includes actionable remediation steps. To help with task management, the recommendation can also be sent using Microsoft Intune and Microsoft Endpoint Configuration Manager. When the threat landscape changes, the recommendation also changes as it continuously collects information from your environment.
+
+>[!TIP]
+>To get emails about new vulnerability events, see [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
 
 ## How it works
 
@@ -75,6 +78,9 @@ View recommendations, the number of weaknesses found, related components, threat
 
 The color of the **Exposed devices** graph changes as the trend changes. If the number of exposed devices is on the rise, the color changes into red. If there's a decrease in the number of exposed devices, the color of the graph will change into green.
 
+>[!NOTE]
+>Threat and vulnerability management shows devices that were in use up to **30 days** ago. This is different from the rest of Microsoft Defender for Endpoint, where if a device has not been in use for more than 7 days it has in an ‘Inactive’ status.
+
 ![Example of the landing page for security recommendations.](images/tvmsecrec-updated.png)
 
 ### Icons
@@ -94,12 +100,12 @@ From the flyout, you can choose any of the following options:
 
 - **Open software page** - Open the software page to get more context on the software and how it's distributed. The information can include threat context, associated recommendations, weaknesses discovered, number of exposed devices, discovered vulnerabilities, names and detailed of devices with the software installed, and version distribution.
 
-- [**Remediation options**](tvm-remediation.md) - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
+- [**Remediation options**](tvm-remediation.md) - Submit a remediation request to open a ticket in Microsoft Intune for your IT administrator to pick up and address. Track the remediation activity in the Remediation page.
 
 - [**Exception options**](tvm-exception.md) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
 
 >[!NOTE]
->When a change is made on a device, it typically takes two hours for the data to be reflected in the Microsoft Defender Security Center. However, it may sometimes take longer.
+>When a software change is made on a device, it typically takes 2 hours for the data to be reflected in the security portal. However, it may sometimes take longer. Configuration changes can take anywhere from 4 to 24 hours.
 
 ### Investigate changes in device exposure or impact
 
@@ -107,7 +113,31 @@ If there is a large jump in the number of exposed devices, or a sharp increase i
 
 1. Select the recommendation and **Open software page**
 2. Select the **Event timeline** tab to view all the impactful events related to that software, such as new vulnerabilities or new public exploits. [Learn more about event timeline](threat-and-vuln-mgt-event-timeline.md)
-3. Decide how to address the increase or your organization's exposure, such as submitting a remediation request.
+3. Decide how to address the increase or your organization's exposure, such as submitting a remediation request
+
+## Request remediation
+
+The threat and vulnerability management remediation capability bridges the gap between Security and IT administrators through the remediation request workflow. Security admins like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** page to Intune. [Learn more about remediation options](tvm-remediation.md)
+
+### How to request remediation
+
+Select a security recommendation you would like to request remediation for, and then select **Remediation options**. Fill out the form and select **Submit request**. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request. [Learn more about how to request remediation](tvm-remediation.md#request-remediation)
+
+## File for exception
+
+As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create exceptions for recommendations. [Learn more about exceptions](tvm-exception.md)
+
+Only users with “exceptions handling” permissions can add exception. [Learn more about RBAC roles](user-roles.md).
+
+When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state will change to **Full exception** or **Partial exception** (by device group).
+
+### How to create an exception
+
+Select a security recommendation you would like create an exception for, and then select **Exception options**.  
+
+![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-options.png)
+
+Fill out the form and submit. To view all your exceptions (current and past), navigate to the [Remediation](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab. [Learn more about how to create an exception](tvm-exception.md#create-an-exception)
 
 ## Report inaccuracy
 

@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 94482ae3-9dda-42df-9782-2f66196e6afe
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.technology: mde
 ---
 
 # Password must meet complexity requirements
@@ -25,12 +26,12 @@ Describes the best practices, location, values, and security considerations for 
 
 ## Reference
 
-The **Passwords must meet complexity requirements** policy setting determines whether passwords must meet a series of guidelines that are considered important for a strong password. Enabling this policy setting requires passwords to meet the following requirements:
+The **Passwords must meet complexity requirements** policy setting determines whether passwords must meet a series of strong-password guidelines. When enabled, this setting requires passwords to meet the following requirements:
 
-1.  Passwords may not contain the user's samAccountName (Account Name) value or entire displayName (Full Name value). Both checks are not case sensitive.
+1.  Passwords may not contain the user's samAccountName (Account Name) value or entire displayName (Full Name value). Both checks are not case-sensitive.
 
-    The samAccountName is checked in its entirety only to determine whether it is part of the password. If the samAccountName is less than three characters long, this check is skipped.
-    The displayName is parsed for delimiters: commas, periods, dashes or hyphens, underscores, spaces, pound signs, and tabs. If any of these delimiters are found, the displayName is split and all parsed sections (tokens) are confirmed to not be included in the password. Tokens that are less than three characters are ignored, and substrings of the tokens are not checked. For example, the name "Erin M. Hagens" is split into three tokens: "Erin", "M", and "Hagens". Because the second token is only one character long, it is ignored. Therefore, this user could not have a password that included either "erin" or "hagens" as a substring anywhere in the password.
+    The samAccountName is checked in its entirety only to determine whether it is part of the password. If the samAccountName is fewer than three characters long, this check is skipped.
+    The displayName is parsed for delimiters: commas, periods, dashes or hyphens, underscores, spaces, pound signs, and tabs. If any of these delimiters are found, the displayName is split and all parsed sections (tokens) are confirmed not to be included in the password. Tokens that are shorter than three characters are ignored, and substrings of the tokens are not checked. For example, the name "Erin M. Hagens" is split into three tokens: "Erin", "M", and "Havens". Because the second token is only one character long, it is ignored. Therefore, this user could not have a password that included either "erin" or "havens" as a substring anywhere in the password.
 
 2.  The password contains characters from three of the following categories:
 
@@ -39,16 +40,16 @@ The **Passwords must meet complexity requirements** policy setting determines wh
     -   Base 10 digits (0 through 9)
     -   Non-alphanumeric characters (special characters): 
         (~!@#$%^&*_-+=`|\\(){}\[\]:;"'<>,.?/)
-        Currency symbols such as the Euro or British Pound are not counted as special characters for this policy setting.
-    -   Any Unicode character that is categorized as an alphabetic character but is not uppercase or lowercase. This includes Unicode characters from Asian languages.
+        Currency symbols such as the Euro or British Pound aren't counted as special characters for this policy setting.
+    -   Any Unicode character that's categorized as an alphabetic character but isn't uppercase or lowercase. This group includes Unicode characters from Asian languages.
 
 Complexity requirements are enforced when passwords are changed or created.
 
 The rules that are included in the Windows Server password complexity requirements are part of Passfilt.dll, and they cannot be directly modified.
 
-Enabling the default Passfilt.dll may cause some additional Help Desk calls for locked-out accounts because users might not be used to having passwords that contain characters other than those found in the alphabet. However, this policy setting is liberal enough that all users should be able to abide by the requirements with a minor learning curve.
+When enabled, the default Passfilt.dll may cause some additional Help Desk calls for locked-out accounts because users aren't used to passwords that contain characters that aren't in the alphabet. But this policy setting is liberal enough that all users should get used to it.
 
-Additional settings that can be included in a custom Passfilt.dll are the use of non–upper-row characters. Upper-row characters are those typed by pressing and holding the SHIFT key and then pressing any of the keys on the number row of the keyboard (from 1 through 9 and 0).
+Additional settings that can be included in a custom Passfilt.dll are the use of non–upper-row characters. To type upper-row characters, you hold the SHIFT key and press one of any of the keys on the number row of the keyboard (from 1 through 9 and 0).
 
 ### Possible values
 
@@ -61,9 +62,9 @@ Additional settings that can be included in a custom Passfilt.dll are the use of
 > [!TIP]
 > For the latest best practices, see [Password Guidance](https://www.microsoft.com/research/publication/password-guidance).
 
-Set **Passwords must meet complexity requirements** to Enabled. This policy setting, combined with a minimum password length of 8, ensures that there are at least 218,340,105,584,896 different possibilities for a single password. This makes a brute force attack difficult, but still not impossible.
+Set **Passwords must meet complexity requirements** to Enabled. This policy setting, combined with a minimum password length of 8, ensures that there are at least 218,340,105,584,896 different possibilities for a single password. This setting makes a brute force attack difficult, but still not impossible.
 
-The use of ALT key character combinations can greatly enhance the complexity of a password. However, requiring all users in an organization to adhere to such stringent password requirements can result in unhappy users and an extremely busy Help Desk. Consider implementing a requirement in your organization to use ALT characters in the range from 0128 through 0159 as part of all administrator passwords. (ALT characters outside of this range can represent standard alphanumeric characters that do not add additional complexity to the password.)
+The use of ALT key character combinations can greatly enhance the complexity of a password. However, requiring all users in an organization to adhere to such stringent password requirements can result in unhappy users and an over-worked Help Desk. Consider implementing a requirement in your organization to use ALT characters in the range from 0128 through 0159 as part of all administrator passwords. (ALT characters outside of that range can represent standard alphanumeric characters that do not add additional complexity to the password.)
 
 Passwords that contain only alphanumeric characters are easy to compromise by using publicly available tools. To prevent this, passwords should contain additional characters and meet complexity requirements.
 

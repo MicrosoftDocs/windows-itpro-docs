@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: 3d22eb9a-859a-4b6f-82f5-c270c427e17e
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Minimum password length
@@ -22,7 +23,7 @@ ms.date: 04/19/2017
 **Applies to**
 - Windows 10
 
-Describes the best practices, location, values, policy management, and security considerations for the **Minimum password length** security policy setting.
+This article describes the recommended practices, location, values, policy management, and security considerations for the **Minimum password length** security policy setting.
 
 ## Reference
 
@@ -35,9 +36,9 @@ The **Minimum password length** policy setting determines the least number of ch
 
 ### Best practices
 
-Set Minimum password length to at least a value of 8. If the number of characters is set to 0, no password is required. In most environments, an eight-character password is recommended because it is long enough to provide adequate security and still short enough for users to easily remember. A minimum password length greater than 14 is not supported at this time. This value will help provide adequate defense against a brute force attack. Adding complexity requirements will help reduce the possibility of a dictionary attack. For more info, see [Password must meet complexity requirements](password-must-meet-complexity-requirements.md).
+Set Minimum password length to at least a value of 8. If the number of characters is set to 0, no password is required. In most environments, an eight-character password is recommended because it's long enough to provide adequate security and still short enough for users to easily remember. A minimum password length greater than 14 isn't supported at this time. This value will help provide adequate defense against a brute force attack. Adding complexity requirements will help reduce the possibility of a dictionary attack. For more info, see [Password must meet complexity requirements](password-must-meet-complexity-requirements.md).
 
-Permitting short passwords reduces security because short passwords can be easily broken with tools that perform dictionary or brute force attacks against the passwords. Requiring very long passwords can result in mistyped passwords that might cause an account lockout and subsequently increase the volume of Help Desk calls.
+Permitting short passwords reduces security because short passwords can be easily broken with tools that do dictionary or brute force attacks against the passwords. Requiring very long passwords can result in mistyped passwords that might cause account lockouts and might increase the volume of Help Desk calls.
 
 In addition, requiring extremely long passwords can actually decrease the security of an organization because users might be more likely to write down their passwords to avoid forgetting them. However, if users are taught that they can use passphrases (sentences such as "I want to drink a $5 milkshake"), they should be much more likely to remember.
 
@@ -51,12 +52,12 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |
-| Default domain policy| 7 characters|
+| Default domain policy| Seven characters|
 | Default domain controller policy | Not defined|
-| Stand-alone server default settings | 0 characters|
-| Domain controller effective default settings | 7 characters|
-| Member server effective default settings | 7 characters|
-| Effective GPO default settings on client computers | 0 characters|
+| Stand-alone server default settings | Zero characters|
+| Domain controller effective default settings | Seven characters|
+| Member server effective default settings | Seven characters|
+| Effective GPO default settings on client computers | Zero characters|
 
 ## Policy management
 
@@ -64,7 +65,7 @@ This section describes features, tools, and guidance to help you manage this pol
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -78,14 +79,14 @@ Types of password attacks include dictionary attacks (which attempt to use commo
 
 Configure the **Minimum password length** policy setting to a value of 8 or more. If the number of characters is set to 0, no password will be required.
 
-In most environments, we recommend an eight-character password because it is long enough to provide adequate security, but not too difficult for users to easily remember. This configuration provides adequate defense against a brute force attack. Using the [Password must meet complexity requirements](password-must-meet-complexity-requirements.md) policy setting in addition to the **Minimum password length** setting helps reduce the possibility of a dictionary attack.
+In most environments, we recommend an eight-character password because it's long enough to provide adequate security, but not too difficult for users to easily remember. This configuration provides adequate defense against a brute force attack. Using the [Password must meet complexity requirements](password-must-meet-complexity-requirements.md) policy setting in addition to the **Minimum password length** setting helps reduce the possibility of a dictionary attack.
 
 > [!NOTE]
 > Some jurisdictions have established legal requirements for password length as part of establishing security regulations.
 
 ### Potential impact
 
-Requirements for extremely long passwords can actually decrease the security of an organization because users might leave the information in an unsecured location or lose it. If very long passwords are required, mistyped passwords could cause account lockouts and increase the volume of Help Desk calls. If your organization has issues with forgotten passwords due to password length requirements, consider teaching your users about passphrases, which are often easier to remember and, due to the larger number of character combinations, much harder to discover.
+Requirements for extremely long passwords can actually decrease the security of an organization because users might leave the information in an unsecured location or lose it. If very long passwords are required, mistyped passwords could cause account lockouts and increase the volume of Help Desk calls. If your organization has issues with forgotten passwords because of password length requirements, consider teaching your users about passphrases, which are often easier to remember and, because of the larger number of character combinations, much harder to discover.
 
 ## Related topics
 
