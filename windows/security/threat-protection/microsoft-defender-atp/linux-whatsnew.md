@@ -27,6 +27,7 @@ ms.technology: mde
 ## 101.23.64 (30.121021.12364.0)
 
 - Performance improvement for the situation where an entire mount point is added to the antivirus exclusion list. Prior to this version, file activity originating from the mount point was still processed by the product. Starting with this version, file activity for excluded mount points is suppressed, leading to better product performance
+- Added a new option to the command-line tool to view information about the last on-demand scan. The command for this is `mdatp health --details antivirus`
 - Other performance improvements & bug fixes
 
 ## 101.18.53
