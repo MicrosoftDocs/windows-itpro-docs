@@ -24,7 +24,7 @@ Volume-licensed media is available for each release of Windows 10 in the Volume 
 
 ## Dynamic Update
 
-Whenever installation of a feature update starts (whether from media or an environment connected to Windows Update), *Dynamic Update* is one of the first steps. Windows 10 Setup contacts a Microsoft endpoint to fetch Dynamic Update packages, and then applies those updates to your operating system installation media. The update packages includes the following kinds of updates:
+Whenever installation of a feature update starts (whether from media or an environment connected to Windows Update), *Dynamic Update* is one of the first steps. Windows 10 Setup contacts a Microsoft endpoint to fetch Dynamic Update packages, and then applies those updates to your operating system installation media. The update packages include the following kinds of updates:
 
 - Updates to Setup.exe binaries or other files that Setup uses for feature updates
 - Updates for the "safe operating system" (SafeOS) that is used for the Windows recovery environment
