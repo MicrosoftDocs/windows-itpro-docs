@@ -29,6 +29,9 @@ ms.topic: article
 >- Windows Server 2012
 >- Windows Server 2016
 >- Windows Server 2019
+>- Office 2013*
+>- Office 2016*
+>- Office 2019*
 
 **Looking for retail activation?**
 
@@ -47,9 +50,9 @@ The process proceeds as follows:
    - Install the Volume Activation Services server role on a domain controller and add a KMS host key by using the Volume Activation Tools Wizard.
    - Extend the domain to the Windows Server 2012 R2 or higher schema level, and add a KMS host key by using the VAMT.
 
-1. Microsoft verifies the KMS host key, and an activation object is created.
+2. Microsoft verifies the KMS host key, and an activation object is created.
 
-1. Client computers are activated by receiving the activation object from a domain controller during startup.
+3. Client computers are activated by receiving the activation object from a domain controller during startup.
 
     > [!div class="mx-imgBorder"]
     > ![Active Directory-based activation flow](../images/volumeactivationforwindows81-10.jpg)
@@ -73,33 +76,33 @@ When a reactivation event occurs, the client queries AD DS for the activation o
 
 1. Use an account with Domain Administrator and Enterprise Administrator credentials to sign in to a domain controller.
 
-1. Launch Server Manager.
+2. Launch Server Manager.
 
-1. Add the Volume Activation Services role, as shown in Figure 11.
+3. Add the Volume Activation Services role, as shown in Figure 11.
 
     ![Adding the Volume Activation Services role](../images/volumeactivationforwindows81-11.jpg)
 
     **Figure 11**. Adding the Volume Activation Services role
 
-1. Click the link to launch the Volume Activation Tools (Figure 12).
+4. Click the link to launch the Volume Activation Tools (Figure 12).
 
     ![Launching the Volume Activation Tools](../images/volumeactivationforwindows81-12.jpg)
 
     **Figure 12**. Launching the Volume Activation Tools
 
-1. Select the **Active Directory-Based Activation** option (Figure 13).
+5. Select the **Active Directory-Based Activation** option (Figure 13).
 
     ![Selecting Active Directory-Based Activation](../images/volumeactivationforwindows81-13.jpg)
 
     **Figure 13**. Selecting Active Directory-Based Activation
 
-1. Enter your KMS host key and (optionally) a display name (Figure 14).
+6. Enter your KMS host key and (optionally) a display name (Figure 14).
 
     ![Choosing how to activate your product](../images/volumeactivationforwindows81-15.jpg)
 
     **Figure 14**. Entering your KMS host key
 
-1. Activate your KMS host key by phone or online (Figure 15).
+7. Activate your KMS host key by phone or online (Figure 15).
 
     ![Entering your KMS host key](../images/volumeactivationforwindows81-14.jpg)
     
@@ -115,23 +118,18 @@ When a reactivation event occurs, the client queries AD DS for the activation o
     >
     > - [Office 2019 VL pack](https://www.microsoft.com/download/details.aspx?id=57342)
 
-1. After activating the key, click **Commit**, and then click **Close**.
+8. After activating the key, click **Commit**, and then click **Close**.
 
 ## Verifying the configuration of Active Directory-based activation
 
 To verify your Active Directory-based activation configuration, complete the following steps:
 
 1. After you configure Active Directory-based activation, start a computer that is running an edition of Windows that is configured by volume licensing.
-
-1. If the computer has been previously configured with a MAK key, replace the MAK key with the GVLK by running the **slmgr.vbs /ipk** command and specifying the GLVK as the new product key.
-
-1. If the computer is not joined to your domain, join it to the domain.
-
-1. Sign in to the computer.
-
-1. Open Windows Explorer, right-click **Computer**, and then click **Properties**.
-
-1. Scroll down to the **Windows activation** section, and verify that this client has been activated.
+2. If the computer has been previously configured with a MAK key, replace the MAK key with the GVLK by running the **slmgr.vbs /ipk** command and specifying the GLVK as the new product key.
+3. If the computer is not joined to your domain, join it to the domain.
+4. Sign in to the computer.
+5. Open Windows Explorer, right-click **Computer**, and then click **Properties**.
+6. Scroll down to the **Windows activation** section, and verify that this client has been activated.
 
     > [!NOTE]
     > If you are using both KMS and Active Directory-based activation, it may be difficult to see whether a client has been activated by KMS or by Active Directory-based activation. Consider disabling KMS during the test, or make sure that you are using a client computer that has not already been activated by KMS. The **slmgr.vbs /dlv** command also indicates whether KMS has been used.
