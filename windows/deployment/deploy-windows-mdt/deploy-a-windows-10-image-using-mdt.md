@@ -372,6 +372,7 @@ On **MDT01**:
        1.  Name: Set DriverGroup001
        2.  Task Sequence Variable: DriverGroup001
        3.  Value: Windows 10 x64\\%Manufacturer%\\%Model%
+
    2.  Configure the **Inject Drivers** action with the following settings:
        - Choose a selection profile: Nothing
        - Install all drivers from the selection profile
