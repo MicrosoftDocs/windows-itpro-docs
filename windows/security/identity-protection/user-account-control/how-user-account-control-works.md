@@ -8,7 +8,7 @@ ms.mktglfcycl: operate
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -109,9 +109,7 @@ To better understand each component, review the table below:
 <th>Description</th>
 </tr>
 <tr>
-<td>
-<p><b>User</b></p>
-</td>
+<th colspan="2">User</th>
 </tr>
 <tr>
 <td>
@@ -138,9 +136,7 @@ To better understand each component, review the table below:
 </td>
 </tr>
 <tr>
-<td>
-<p><b>System</b></p>
-</td>
+<th colspan="2">System</th>
 </tr>
 <tr>
 <td>
@@ -248,8 +244,7 @@ To better understand each component, review the table below:
 </td>
 </tr>
 <tr>
-<td>
-<p><b>Kernel</b></p>
+<th colspan="2">Kernel</th>
 </td>
 </tr>
 <tr>
@@ -276,9 +271,11 @@ The slider will never turn UAC completely off. If you set it to <b>Never notify<
 -   Cause all elevation request initiated by administrators to be auto-approved without showing a UAC prompt.
 -   Automatically deny all elevation requests for standard users.
 
-> **Important:**  In order to fully disable UAC you must disable the policy **User Account Control: Run all administrators in Admin Approval Mode**.
-> 
-> **Warning:**  Universal Windows apps will not work when UAC is disabled.
+> [!IMPORTANT]
+> In order to fully disable UAC you must disable the policy **User Account Control: Run all administrators in Admin Approval Mode**.
+
+> [!WARNING]
+> Some Universal Windows Platform apps may not work when UAC is disabled.
  
 ### Virtualization
 
@@ -291,7 +288,9 @@ Most app tasks operate properly by using virtualization features. Although virtu
 Virtualization is not an option in the following scenarios:
 
 -   Virtualization does not apply to apps that are elevated and run with a full administrative access token.
+
 -   Virtualization supports only 32-bit apps. Non-elevated 64-bit apps simply receive an access denied message when they attempt to acquire a handle (a unique identifier) to a Windows object. Native Windows 64-bit apps are required to be compatible with UAC and to write data into the correct locations.
+
 -   Virtualization is disabled if the app includes an app manifest with a requested execution level attribute.
 
 ### Request execution levels
@@ -319,6 +318,8 @@ Before a 32-bit process is created, the following attributes are checked to dete
 -   Key attributes in the resource script data are linked in the executable file.
 -   There are targeted sequences of bytes within the executable file.
 
-> **Note:**  The keywords and sequences of bytes were derived from common characteristics observed from various installer technologies.
-> 
-> **Note:**  The User Account Control: Detect application installations and prompt for elevation policy setting must be enabled for installer detection to detect installation programs. For more info, see [User Account Control security policy settings](user-account-control-security-policy-settings.md).
+> [!NOTE]
+> The keywords and sequences of bytes were derived from common characteristics observed from various installer technologies.
+
+> [!NOTE]
+> The User Account Control: Detect application installations and prompt for elevation policy setting must be enabled for installer detection to detect installation programs. For more info, see [User Account Control security policy settings](user-account-control-security-policy-settings.md).

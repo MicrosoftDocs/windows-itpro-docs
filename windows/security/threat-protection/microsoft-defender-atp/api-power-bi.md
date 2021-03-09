@@ -1,10 +1,10 @@
 ---
 title: Microsoft Defender ATP APIs connection to Power BI
 ms.reviewer: 
-description: Create a Power Business Intelligence (BI) report on top of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
+description: Create a Power Business Intelligence (BI) report on top of Microsoft Defender for Endpoint APIs.
 keywords: apis, supported apis, Power BI, reports
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,20 +13,25 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Create custom reports using Power BI
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-In this section you will learn create a Power BI report on top of Microsoft Defender ATP APIs.
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+In this section you will learn create a Power BI report on top of Defender for Endpoint APIs.
 
 The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.
 
@@ -46,9 +51,9 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 ```
 	let 
-		AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti'",
+		AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
 
-		HuntingUrl = "https://api.securitycenter.windows.com/api/advancedqueries",
+		HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
 
 		Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
 
@@ -87,17 +92,17 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - Click **Edit Credentials**
 
-    ![Image of edit credentials](images/power-bi-edit-credentials.png)
+    ![Image of edit credentials0](images/power-bi-edit-credentials.png)
 
 - Select **Organizational account** > **Sign in**
 
-    ![Image of set credentials](images/power-bi-set-credentials-organizational.png)
+    ![Image of set credentials1](images/power-bi-set-credentials-organizational.png)
 
 - Enter your credentials and wait to be signed in
 
 - Click **Connect**
 
-    ![Image of set credentials](images/power-bi-set-credentials-organizational-cont.png)
+    ![Image of set credentials2](images/power-bi-set-credentials-organizational-cont.png)
 
 - Now the results of your query will appear as table and you can start build visualizations on top of it!
 
@@ -114,7 +119,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 		Query = "MachineActions",
 
-		Source = OData.Feed("https://api.securitycenter.windows.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
+		Source = OData.Feed("https://api.securitycenter.microsoft.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
 	in
 		Source
 
@@ -133,6 +138,6 @@ View the Microsoft Defender ATP Power BI report samples. For more information, s
 
 
 ## Related topic
-- [Microsoft Defender ATP APIs](apis-intro.md)
+- [Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Using OData Queries](exposed-apis-odata-samples.md)

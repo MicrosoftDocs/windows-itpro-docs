@@ -53,7 +53,7 @@ SetupDiag is a command-line tool that can help diagnose why a Windows 10 update 
 
 ## Servicing
 
-- [**Delivery Optimization**](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization): Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Microsoft 365 Apps for enterprise updates, and Intune content, with Microsoft Endpoint Configuration Manager content coming soon! 
+- [**Delivery Optimization**](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization): Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with of [new policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Microsoft 365 Apps for enterprise updates, and Intune content, with Microsoft Endpoint Manager content coming soon! 
 - [**Automatic Restart Sign-on (ARSO)**](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically logon as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
 - [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
 - **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
@@ -66,7 +66,7 @@ SetupDiag is a command-line tool that can help diagnose why a Windows 10 update 
 
 ### Windows Information Protection
 
-With this release, Windows Defender ATP extends discovery and protection of sensitive information with [Auto Labeling](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels#how-wip-protects-automatically-classified-files). 
+With this release, Microsoft Defender for Endpoint extends discovery and protection of sensitive information with [Auto Labeling](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels#how-wip-protects-automatically-classified-files). 
 
 ### Security configuration framework
 
@@ -80,15 +80,15 @@ The draft release of the [security configuration baseline settings](https://blog
 
 [Intune Security Baselines](https://docs.microsoft.com/intune/security-baselines) (Preview): Now includes many settings supported by Intune that you can use to help secure and protect your users and devices. You can automatically set these settings to values recommended by security teams.
 
-### Microsoft Defender Advanced Threat Protection (ATP):
+### Microsoft Defender for Endpoint
 
 - [Attack surface area reduction](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction) – IT admins can configure devices with advanced web protection that enables them to define allow and deny lists for specific URL’s and IP addresses.
 - [Next generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) – Controls have been extended to protection from ransomware, credential misuse, and attacks that are transmitted through removable storage.
     - Integrity enforcement capabilities – Enable remote runtime attestation of Windows 10 platform.
-    - Tamper-proofing capabilities – Uses virtualization-based security to isolate critical ATP security capabilities away from the OS and attackers.
-- [Platform support](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114) – In addition to Windows 10, Windows Defender ATP’s functionality has been extended to support Windows 7 and Windows 8.1 clients, as well as macOS, Linux, and Windows Server with both its Endpoint Detection (EDR) and Endpoint Protection Platform (EPP) capabilities.
+    - Tamper-proofing capabilities – Uses virtualization-based security to isolate critical Microsoft Defender for Endpoint security capabilities away from the OS and attackers.
+- [Platform support](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114) – In addition to Windows 10, Microsoft Defender for Endpoint’s functionality has been extended to support Windows 7 and Windows 8.1 clients, as well as macOS, Linux, and Windows Server with both its Endpoint Detection (EDR) and Endpoint Protection Platform (EPP) capabilities.
 
-### Microsoft Defender ATP next-gen protection technologies:
+### Microsoft Defender for Endpoint next-gen protection technologies:
 
 - **Advanced machine learning**: Improved with advanced machine learning and AI models that enable it to protect against apex attackers using innovative vulnerability exploit techniques, tools and malware.
 - **Emergency outbreak protection**: Provides emergency outbreak protection which will automatically update devices with new intelligence when a new outbreak has been detected.

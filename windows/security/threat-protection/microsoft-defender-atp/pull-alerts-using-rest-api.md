@@ -1,10 +1,10 @@
 ---
-title: Pull Microsoft Defender ATP detections using REST API
-description: Learn how call an Microsoft Defender ATP endpoint to pull detections in JSON format using the SIEM REST API.
+title: Pull Microsoft Defender for Endpoint detections using REST API
+description: Learn how to call a Microsoft Defender for Endpoint API endpoint to pull detections in JSON format using the SIEM REST API.
 keywords: detections, pull detections, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,28 +13,31 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
-# Pull Microsoft Defender ATP detections using SIEM REST API
+# Pull Microsoft Defender for Endpoint detections using SIEM REST API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 >[!Note]
->- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections.
->- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
->-The Microsoft Defender ATP Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
+>- [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
+>- [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
+>-The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
-Microsoft Defender ATP supports the OAuth 2.0 protocol to pull detections from the API.
+Microsoft Defender for Endpoint supports the OAuth 2.0 protocol to pull detections from the API.
 
 In general, the OAuth 2.0 protocol supports four types of flows:
 - Authorization grant flow
@@ -44,19 +47,19 @@ In general, the OAuth 2.0 protocol supports four types of flows:
 
 For more information about the OAuth specifications, see the [OAuth Website](http://www.oauth.net).
 
-Microsoft Defender ATP supports the _Authorization grant flow_ and _Client credential flow_ to obtain access to pull detections, with Azure Active Directory (AAD) as the authorization server.
+Microsoft Defender for Endpoint supports the _Authorization grant flow_ and _Client credential flow_ to obtain access to pull detections, with Azure Active Directory (AAD) as the authorization server.
 
 The _Authorization grant flow_ uses user credentials to get an authorization code, which is then used to obtain an access token.
 
-The _Client credential flow_ uses client credentials to authenticate against the Microsoft Defender ATP endpoint URL. This flow is suitable for scenarios when an OAuth client creates requests to an API that doesn't require user credentials.
+The _Client credential flow_ uses client credentials to authenticate against the Microsoft Defender for Endpoint endpoint URL. This flow is suitable for scenarios when an OAuth client creates requests to an API that doesn't require user credentials.
 
-Use the following method in the Microsoft Defender ATP API to pull detections in JSON format.
+Use the following method in the Microsoft Defender for Endpoint API to pull detections in JSON format.
 
 >[!NOTE]
 >Microsoft Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering. 
 
 ## Before you begin
-- Before calling the Microsoft Defender ATP endpoint to pull detections, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md).
+- Before calling the Microsoft Defender for Endpoint endpoint to pull detections, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md).
 
 - Take note of the following values in your Azure application registration. You need these values to configure the OAuth flow in your service or daemon app:
   - Application ID (unique to your application)
@@ -67,7 +70,7 @@ Use the following method in the Microsoft Defender ATP API to pull detections in
 ## Get an access token
 Before creating calls to the endpoint, you'll need to get an access token.
 
-You'll use the access token to access the protected resource, which are detections in Microsoft Defender ATP.
+You'll use the access token to access the protected resource, which is detections in Microsoft Defender for Endpoint.
 
 To get an access token, you'll need to do a POST request to the token issuing endpoint. Here is a sample request:
 
@@ -84,18 +87,18 @@ The response will include an access token and expiry information.
 ```json
 {
   "token_type": "Bearer",
-  "expires_in": "3599",
-  "ext_expires_in": "0",
-  "expires_on": "1488720683",
-  "not_before": "1488720683",
+  "expires_in": 3599,
+  "ext_expires_in": 0,
+  "expires_on": 1488720683,
+  "not_before": 1488720683,
   "resource": "https://graph.windows.net",
   "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
 }
 ```
-You can now use the value in the *access_token* field in a request to the Microsoft Defender ATP API.
+You can now use the value in the *access_token* field in a request to the Defender for Endpoint API.
 
 ## Request
-With an access token, your app can make authenticated requests to the Microsoft Defender ATP API. Your app must append the access token to the Authorization header of each request.
+With an access token, your app can make authenticated requests to the Microsoft Defender for Endpoint API. Your app must append the access token to the Authorization header of each request.
 
 ### Request syntax
 Method | Request URI
@@ -115,7 +118,7 @@ Name | Value| Description
 :---|:---|:---
 sinceTimeUtc | DateTime | Defines the lower time bound alerts are retrieved from, based on field: <br> `LastProcessedTimeUtc` <br> The time range will be: from sinceTimeUtc time to current time. <br><br> **NOTE**: When not specified, all alerts generated in the last two hours are retrieved.
 untilTimeUtc | DateTime | Defines the upper time bound alerts are retrieved. <br> The time range will be: from `sinceTimeUtc` time to `untilTimeUtc` time. <br><br> **NOTE**: When not specified, the default value will be the current time.
-ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> Value should be set according to **ISO 8601** duration format <br> E.g. `ago=PT10M` will pull alerts received in the last 10 minutes.
+ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> Value should be set according to **ISO 8601** duration format <br> Example: `ago=PT10M` will pull alerts received in the last 10 minutes.
 limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<br><br> **NOTE**: When not specified, all alerts available in the time range will be retrieved.
 machinegroups | string | Specifies device groups to pull alerts from. <br><br> **NOTE**: When not specified, alerts from all device groups will be retrieved. <br><br> Example: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | string | Single device tag from the registry.
@@ -200,10 +203,10 @@ Here is an example return value:
 
 ## Code examples
 ### Get access token
-The following code examples demonstrate how to obtain an access token for calling the Microsoft Defender ATP SIEM API.
+The following code examples demonstrate how to obtain an access token for calling the Microsoft Defender for Endpoint SIEM API.
 
 ```csharp
-AuthenticationContext context = new AuthenticationContext(string.Format("https://login.windows.net/{0}", tenantId));
+AuthenticationContext context = new AuthenticationContext(string.Format("https://login.microsoftonline.com/{0}", tenantId));
 ClientCredential clientCredentials = new ClientCredential(clientId, clientSecret);
 AuthenticationResult authenticationResult = context.AcquireTokenAsync(detectionsResource, clientCredentials).GetAwaiter().GetResult();
 ```
@@ -218,7 +221,7 @@ $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application secret here
 
 $resourceAppIdUri = 'https://graph.windows.net'
-$oAuthUri = "https://login.windows.net/$tenantId/oauth2/token"
+$oAuthUri = "https://login.microsoftonline.com/$tenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"
     client_id = "$appId"
@@ -237,7 +240,7 @@ tenantId='' ### Paste your tenant ID here
 appId='' ### Paste your Application ID here
 appSecret='' ### Paste your Application secret here
 resourceAppIdUri='https://graph.windows.net'
-oAuthUri="https://login.windows.net/$tenantId/oauth2/token"
+oAuthUri="https://login.microsoftonline.com/$tenantId/oauth2/token"
 scriptDir=$(pwd)
 
 apiResponse=$(curl -s X POST "$oAuthUri" -d "resource=$resourceAppIdUri&client_id=$appId&client_secret=$appSecret&\
@@ -250,7 +253,7 @@ echo ${tokenArr[1]} | cut -d "\"" -f2 | cut -d "\"" -f1 >> $scriptDir/LatestSIEM
 ```
 
 ### Use token to connect to the detections endpoint
-The following code examples demonstrate how to use an access token for calling the Microsoft Defender ATP SIEM API to get alerts.
+The following code examples demonstrate how to use an access token for calling the Defender for Endpoint SIEM API to get alerts.
 
 ```csharp
 HttpClient httpClient = new HttpClient();
@@ -318,7 +321,7 @@ echo $apiResponse
 ```
 
 ## Error codes
-The Microsoft Defender ATP REST API returns the following error codes caused by an invalid request.
+The Microsoft Defender for Endpoint REST API returns the following error codes caused by an invalid request.
 
 HTTP error code | Description
 :---|:---
@@ -327,8 +330,8 @@ HTTP error code | Description
 500 | Error in the service.
 
 ## Related topics
-- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Configure ArcSight to pull Microsoft Defender ATP detections](configure-arcsight.md)
-- [Configure Splunk to pull Microsoft Defender ATP detections](configure-splunk.md)
-- [Microsoft Defender ATP Detection fields](api-portal-mapping.md)
+- [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
+- [Configure ArcSight to pull Microsoft Defender for Endpoint detections](configure-arcsight.md)
+- [Configure Splunk to pull Microsoft Defender for Endpoint detections](configure-splunk.md)
+- [Microsoft Defender for Endpoint Detection fields](api-portal-mapping.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)

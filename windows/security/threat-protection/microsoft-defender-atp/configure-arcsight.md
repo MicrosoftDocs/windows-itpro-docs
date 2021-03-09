@@ -1,10 +1,10 @@
 ---
-title: Configure Micro Focus ArcSight to pull Microsoft Defender ATP detections
+title: Configure Micro Focus ArcSight to pull Microsoft Defender for Endpoint detections
 description: Configure Micro Focus ArcSight to receive and pull detections from Microsoft Defender Security Center
 keywords: configure Micro Focus ArcSight, security information and events management tools, arcsight
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,29 +13,27 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
-# Configure Micro Focus ArcSight to pull Microsoft Defender ATP detections
+# Configure Micro Focus ArcSight to pull Defender for Endpoint detections
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
 
-
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
-
-You'll need to install and configure some files and tools to use Micro Focus ArcSight so that it can pull Microsoft Defender ATP detections.
+You'll need to install and configure some files and tools to use Micro Focus ArcSight so that it can pull Defender for Endpoint detections.
 
 >[!Note]
->- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections
->- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
+>- [Defender for Endpoint Alert](alerts.md) is composed from one or more detections
+>- [Defender for Endpoint Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
 
 ## Before you begin
 
@@ -43,7 +41,7 @@ Configuring the Micro Focus ArcSight Connector tool requires several configurati
 
 This section guides you in getting the necessary information to set and use the required configuration files correctly.
 
-- Make sure you have enabled the SIEM integration feature from the **Settings** menu. For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md).
+- Make sure you have enabled the SIEM integration feature from the **Settings** menu. For more information, see [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md).
 
 - Have the file you saved from enabling the SIEM integration feature ready. You'll need to get the following values:
   - OAuth 2.0 Token refresh URL
@@ -116,7 +114,7 @@ The following steps assume that you have completed all the required steps in [Be
     <td>Browse to the location of the <em>wdatp-connector.properties</em> file. The name must match the file provided in the .zip that you downloaded.</td>
     <tr>
     <td>Refresh Token</td>
-    <td>You can obtain a refresh token in two ways: by generating a refresh token from the <b>SIEM settings</b> page or using the restutil tool. <br><br> For more information on generating a refresh token from the <b>Preferences setup</b> , see <a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)">Enable SIEM integration in Microsoft Defender ATP</a>. </br> </br><b>Get your refresh token using the restutil tool:</b> </br> a. Open a command prompt. Navigate to C:\<em>folder_location</em>\current\bin where <em>folder_location</em> represents the location where you installed the tool. </br></br> b. Type: <code>arcsight restutil token -config</code> from the bin directory.For example: <b>arcsight restutil boxtoken -proxy proxy.location.hp.com:8080</b> A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d. A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the <b>Refresh Token</b> field.
+    <td>You can obtain a refresh token in two ways: by generating a refresh token from the <b>SIEM settings</b> page or using the restutil tool. <br><br> For more information on generating a refresh token from the <b>Preferences setup</b> , see <a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)">Enable SIEM integration in Defender for Endpoint</a>. </br> </br><b>Get your refresh token using the restutil tool:</b> </br> a. Open a command prompt. Navigate to C:\<em>folder_location</em>\current\bin where <em>folder_location</em> represents the location where you installed the tool. </br></br> b. Type: <code>arcsight restutil token -config</code> from the bin directory.For example: <b>arcsight restutil boxtoken -proxy proxy.location.hp.com:8080</b> A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d. A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the <b>Refresh Token</b> field.
     </td>
     </tr>
     </tr>
@@ -178,7 +176,7 @@ The following steps assume that you have completed all the required steps in [Be
 
 You can now run queries in the Micro Focus ArcSight console.
 
-Microsoft Defender ATP detections will appear as discrete events, with "Microsoft” as the vendor and “Windows Defender ATP” as the device name.
+Defender for Endpoint detections will appear as discrete events, with "Microsoft” as the vendor and “Windows Defender ATP” as the device name.
 
 
 ## Troubleshooting Micro Focus ArcSight connection
@@ -204,7 +202,7 @@ Microsoft Defender ATP detections will appear as discrete events, with "Microsof
 > Verify that the connector is running by stopping the process again. Then start the connector again, and no browser window should appear.
 
 ## Related topics
-- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Configure Splunk to pull Microsoft Defender ATP detections](configure-splunk.md)
-- [Pull Microsoft Defender ATP detections using REST API](pull-alerts-using-rest-api.md)
+- [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)
+- [Configure Splunk to pull Defender for Endpoint detections](configure-splunk.md)
+- [Pull Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)

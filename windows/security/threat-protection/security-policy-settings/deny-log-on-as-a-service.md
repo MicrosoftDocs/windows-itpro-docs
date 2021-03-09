@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: f1114964-df86-4278-9b11-e35c66949794
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Deny log on as a service
@@ -22,7 +23,7 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management, and security considerations for the **Deny log on as a service** security policy setting.
+This article describes the recommended practices, location, values, policy management, and security considerations for the **Deny log on as a service** security policy setting.
 
 ## Reference
 
@@ -63,7 +64,7 @@ The following table lists the actual and effective default policy values for the
 
 This section describes features and tools available to help you manage this policy.
 
-A restart of the computer is not required for this policy setting to be effective.
+A restart of the computer isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -89,11 +90,11 @@ This section describes how an attacker might exploit a feature or its configurat
 ### Vulnerability
 
 Accounts that can log on to a service application could be used to configure and start new unauthorized services, such as a keylogger or other malware. The benefit of the specified countermeasure is somewhat reduced by the fact that only users with administrative rights can install and configure 
-services, and an attacker who has already attained that level of access could configure the service to run by using the System account.
+services, and an attacker who already has that level of access could configure the service to run by using the System account.
 
 ### Countermeasure
 
-We recommend that you not assign the **Deny log on as a service** user right to any accounts. This is the default configuration. Organizations that are extremely concerned about security might assign this user right to groups and accounts when they are certain that they will never need to log on to a service application.
+We recommend that you don't assign the **Deny log on as a service** user right to any accounts. This configuration is the default. Organizations that have strong concerns about security might assign this user right to groups and accounts when they're certain that they'll never need to log on to a service application.
 
 ### Potential impact
 
