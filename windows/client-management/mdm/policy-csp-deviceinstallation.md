@@ -576,7 +576,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 
 You can also block installation by using a custom profile in Intune. 
 
-![Custom profile](images/custom-profile-prevent-other-devices.png)
+![Custom profile prevent devices](images/custom-profile-prevent-other-devices.png)
 <!--/Example-->
 <!--Validation-->
 
@@ -693,7 +693,7 @@ You can also block installation and usage of prohibited peripherals by using a c
 
 For example, this custom profile blocks installation and usage of USB devices with hardware IDs "USB\Composite" and "USB\Class_FF", and applies to USB devices with matching hardware IDs that are already installed.
 
-![Custom profile](images/custom-profile-prevent-device-ids.png)
+![Custom profile prevent device ids](images/custom-profile-prevent-device-ids.png)
 <!--/Example-->
 <!--Validation-->
 
