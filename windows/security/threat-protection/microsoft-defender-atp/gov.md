@@ -86,8 +86,8 @@ Windows 8.1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/
 Windows 8 Pro | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Linux | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
-macOS | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
+Linux | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) Rolling out
+macOS | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) Rolling out
 Android | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 iOS | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 
@@ -140,16 +140,16 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 ## Feature parity with commercial
 Defender for Endpoint doesn't have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available we want to highlight.
 
-These are the known gaps as of February 2021:
+These are the known gaps as of March 2021:
 
 Feature name | GCC | GCC High | DoD (PREVIEW)
 :---|:---|:---|:---
 Automated investigation and remediation: Live response | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Automated investigation and remediation: Response to Office 365 alerts | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
-Email notifications | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) Rolling out
+Email notifications | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Evaluation lab | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Management and APIs: Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Management and APIs: Integration with third-party products | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
+Management and APIs: Integration with third-party products | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) Rolling out
 Management and APIs: Streaming API | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Management and APIs: Threat protection report | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Threat & vulnerability management | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
