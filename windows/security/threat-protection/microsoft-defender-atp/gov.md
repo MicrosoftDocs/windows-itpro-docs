@@ -136,7 +136,7 @@ Defender for Endpoint for US Government customers is built in the Azure US Gover
 You can find the Azure IP ranges in [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063).
 
 > [!NOTE]
-> As a cloud-based solution, the IP address ranges can change. It's recommended you move to a DNS-based rules.
+> As a cloud-based solution, the IP address ranges can change. It's recommended you move to DNS-based rules.
 
 <br>
 
