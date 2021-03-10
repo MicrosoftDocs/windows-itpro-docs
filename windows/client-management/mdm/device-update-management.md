@@ -139,7 +139,7 @@ The enterprise IT can configure auto-update polices via OMA DM using the [Policy
 
 The following diagram shows the Update policies in a tree format.
 
-![update csp diagram](images/update-policies.png)
+![update policies](images/update-policies.png)
 
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**
 > [!NOTE]
@@ -685,7 +685,7 @@ Example
 
 The enterprise IT can configure the set of approved updates and get compliance status via OMA DM using the [Update CSP](update-csp.md). The following diagram shows the Update CSP in tree format..
 
-![update csp diagram](images/provisioning-csp-update.png)
+![provisioning csp update](images/provisioning-csp-update.png)
 
 <a href="" id="update"></a>**Update**
 The root node.
@@ -966,5 +966,5 @@ Set auto update to notify and defer.
 
 The following diagram and screenshots show the process flow of the device update process using Windows Server Update Services and Microsoft Update Catalog.
 
-![mdm device update management screenshot](images/deviceupdatescreenshot3.png)![mdm device update management screenshot](images/deviceupdatescreenshot4.png)![mdm device update management screenshot](images/deviceupdatescreenshot5.png)![mdm device update management screenshot](images/deviceupdatescreenshot6.png)![mdm device update management screenshot](images/deviceupdatescreenshot7.png)![mdm device update management screenshot](images/deviceupdatescreenshot8.png)![mdm device update management screenshot](images/deviceupdatescreenshot9.png)
+![mdm device update management screenshot3](images/deviceupdatescreenshot3.png)![mdm device update management screenshot4](images/deviceupdatescreenshot4.png)![mdm device update management screenshot5](images/deviceupdatescreenshot5.png)![mdm device update management screenshot6](images/deviceupdatescreenshot6.png)![mdm device update management screenshot7](images/deviceupdatescreenshot7.png)![mdm device update management screenshot8](images/deviceupdatescreenshot8.png)![mdm device update management screenshot9](images/deviceupdatescreenshot9.png)
 
