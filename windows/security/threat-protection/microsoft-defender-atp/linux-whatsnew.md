@@ -22,6 +22,13 @@ ms.technology: mde
 
 # What's new in Microsoft Defender for Endpoint for Linux
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+ 
+**Platforms**
+- Linux
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 ## 101.23.64 (30.121021.12364.0)

@@ -24,7 +24,7 @@ Volume-licensed media is available for each release of Windows 10 in the Volume 
 
 ## Dynamic Update
 
-Whenever installation of a feature update starts (whether from media or an environment connected to Windows Update), *Dynamic Update* is one of the first steps. Windows 10 Setup contacts a Microsoft endpoint to fetch Dynamic Update packages, and then applies those updates to your operating system installation media. The update packages includes the following kinds of updates:
+Whenever installation of a feature update starts (whether from media or an environment connected to Windows Update), *Dynamic Update* is one of the first steps. Windows 10 Setup contacts a Microsoft endpoint to fetch Dynamic Update packages, and then applies those updates to your operating system installation media. The update packages include the following kinds of updates:
 
 - Updates to Setup.exe binaries or other files that Setup uses for feature updates
 - Updates for the "safe operating system" (SafeOS) that is used for the Windows recovery environment
@@ -44,9 +44,9 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 
 The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows in **bold** the key items to search for or look for in the results. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
 
-|To find this Dynamic Update packages, search for or check the results here-->  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
+|To find this Dynamic Update packages, search for or check the results here  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
 |---------|---------|---------|---------|
-|Safe OS Dynamic Update      | 2019-08 Dynamic Update...        | Windows 10 Dynamic Update,Windows **Safe OS Dynamic Update**         | ComponentUpdate:        |
+|Safe OS Dynamic Update      | 2019-08 Dynamic Update...        | Windows 10 Dynamic Update, Windows **Safe OS Dynamic Update**         | ComponentUpdate:        |
 |Setup Dynamic Update     | 2019-08 Dynamic Update...         | Windows 10 Dynamic Update        | **SetupUpdate**        |
 |Latest cumulative update     | 2019-08 **Cumulative Update for Windows 10**    |  Windows 10       |  Install this update to resolve issues in Windows...       |
 |Servicing stack Dynamic Update     | 2019-09 **Servicing Stack Update for Windows 10**        |  Windows 10...       | Install this update to resolve issues in Windows...        |
