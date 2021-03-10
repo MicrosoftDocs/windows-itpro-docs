@@ -265,7 +265,7 @@ Most of the device lock restriction policies have been available through Exchang
 Settings related to Windows Hello would be important device lock settings to configure if you are deploying devices using the corporate deployment scenario.
 Microsoft made it a requirement for all users to create a numeric passcode as part of Azure AD Join. This policy default requires users to select a four-digit passcode, but this can be configured with an Azure AD-registered MDM system to whatever passcode complexity your organization desires. If you are using Azure AD with an automatic MDM enrollment mechanism, these policy settings are automatically applied during device enrollment.
 
-You may notice that some of the settings are very similar, specifically those related to passcode length, history, expiration, and complexity. If you set the policy in multiple places, both policies are applied, with the strongest policy retained. Read [PassportForWork CSP](./mdm/passportforwork-csp.md), [DeviceLock CSP](./mdm/devicelock-csp.md) (Windows Phone 8.1), and [Policy CSP](./mdm/policy-configuration-service-provider.md#DeviceLock_AllowIdleReturnWithoutPassword) for more detailed information.
+You may notice that some of the settings are very similar, specifically those related to passcode length, history, expiration, and complexity. If you set the policy in multiple places, both policies are applied, with the strongest policy retained. Read [PassportForWork CSP](./mdm/passportforwork-csp.md), [DeviceLock CSP](./mdm/devicelock-csp.md) (Windows Phone 8.1), and [Policy CSP](./mdm/policy-configuration-service-provider.md) for more detailed information.
 
 ### <a href="" id="prevent-of-settings"></a>Prevent changing of settings
 
@@ -559,7 +559,7 @@ In addition to controlling which apps are allowed, IT professionals can also imp
 -   **Restrict App to System Volume** Specifies whether app installation is allowed only to the system drive or can be installed on an SD card.
 -   **Start screen layout** An XML blob used to configure the Start screen (for more information, see [Start layout for Windows 10 Mobile](/windows/configuration/mobile-devices/start-layout-xml-mobile)).
 
-Find more details on application management options in the [Policy CSP](./mdm/policy-configuration-service-provider.md#ApplicationManagement_AllowAllTrustedApps).
+Find more details on application management options in the [Policy CSP](./mdm/policy-configuration-service-provider.md).
 
 ### <a href="" id="data-leak-prevention"></a>Data leak prevention
 
@@ -893,7 +893,7 @@ Pause Feature Updates for up to 35 days</td>
 
 *Applies to: Corporate devices with Enterprise edition*
 
-Set update client experience with [Allowautomaticupdate](./mdm/policy-configuration-service-provider.md#Update_AllowAutoUpdate) policy for your employees. This allows the IT Pro to influence the way the update client on the devices behaves when scanning, downloading, and installing updates.
+Set update client experience with [Allowautomaticupdate](./mdm/policy-configuration-service-provider.md) policy for your employees. This allows the IT Pro to influence the way the update client on the devices behaves when scanning, downloading, and installing updates.
 
 This can include:
 -   Notifying users prior to downloading updates.
@@ -903,7 +903,7 @@ This can include:
 -   Automatically downloading and restarting devices without user interaction.
 -   Turning off automatic updates. This option should be used only for systems under regulatory compliance. The device does not receive any updates.
 
-In addition, in version 1607, you can configure when the update is applied to the employee device to ensure updates installs or reboots don’t interrupt business or worker productivity. Update installs and reboots can be scheduled [outside of active hours](./mdm/policy-configuration-service-provider.md#Update_ActiveHoursEnd) (supported values are 0-23, where 0 is 12am, 1 is 1am, and so on) or on a specific [day of the week](./mdm/policy-configuration-service-provider.md#Update_ScheduledInstallDay) (supported values are 0-7,  where 0 is every day, 1  is Sunday, 2 is Monday, and so on).
+In addition, in version 1607, you can configure when the update is applied to the employee device to ensure updates installs or reboots don’t interrupt business or worker productivity. Update installs and reboots can be scheduled [outside of active hours](./mdm/policy-configuration-service-provider.md) (supported values are 0-23, where 0 is 12am, 1 is 1am, and so on) or on a specific [day of the week](./mdm/policy-configuration-service-provider.md) (supported values are 0-7,  where 0 is every day, 1  is Sunday, 2 is Monday, and so on).
 
 #### Managing the source of updates with MDM
 
