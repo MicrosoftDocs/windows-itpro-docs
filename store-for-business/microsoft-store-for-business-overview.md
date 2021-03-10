@@ -83,8 +83,6 @@ While not required, you can use a management tool to distribute and manage apps.
 
 The first step for getting your organization started with Store for Business and Education is signing up. Sign up using an existing account (the same one you use for Office 365, Dynamics 365, Intune, Azure, etc.) or we’ll quickly create an account for you. You must be a Global Administrator for your organization.
 
-For more information, see [Sign up for Store for Business and Education](sign-up-microsoft-store-for-business.md).
-
 ## Set up
 
 After your admin signs up for the Store for Business and Education, they can assign roles to other employees in your company or school. The admin needs Azure AD User Admin permissions to assign Microsoft Store for Business and Education roles. These are the roles and their permissions.
