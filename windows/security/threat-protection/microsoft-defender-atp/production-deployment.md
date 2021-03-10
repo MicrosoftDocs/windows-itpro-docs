@@ -242,7 +242,7 @@ Defender for Endpoint is built in Azure cloud, deployed in the following regions
 You can find the Azure IP ranges in [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519).
 
 > [!NOTE]
-> As a cloud-based solution, the IP address ranges can change. It's recommended you move to a DNS-based rules.
+> As a cloud-based solution, the IP address ranges can change. It's recommended you move to DNS-based rules.
 
 > [!NOTE]
 > If you are a US Government customer, please see the corresponding section in the [Defender for Endpoint for US Government](gov.md#service-backend-ip-ranges) page.
