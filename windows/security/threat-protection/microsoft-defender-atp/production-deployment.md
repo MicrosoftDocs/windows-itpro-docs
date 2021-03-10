@@ -1,6 +1,6 @@
 ---
-title: Set up Microsoft Defender ATP deployment
-description: Learn how to setup the deployment for Microsoft Defender ATP
+title: Set up Microsoft Defender for Endpoint deployment
+description: Learn how to set up the deployment for Microsoft Defender for Endpoint
 keywords: deploy, setup, licensing validation, tenant configuration, network configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -47,7 +47,7 @@ In this deployment scenario, you'll be guided through the steps on:
 
 
 >[!NOTE]
->For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Defender for Endpoint supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
+>For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Defender for Endpoint supports the use of other onboarding tools but won't cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
 
 ## Check license state
 
@@ -59,7 +59,7 @@ Checking for the license state and whether it got properly provisioned, can be d
 
 1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
-    On the screen, you will see all the provisioned licenses and their current **Status**.
+    On the screen, you'll see all the provisioned licenses and their current **Status**.
 
     ![Image of billing licenses](images/atp-billing-subscriptions.png)
 
@@ -93,7 +93,7 @@ When accessing Microsoft Defender Security Center for the first time, a wizard t
 
 4. Set up preferences.
 
-   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU, or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation. 
+   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU, or UK. You can't change the location after this set up and Microsoft won't transfer the data from the specified geolocation. 
 
     **Data retention** - The default is six months.
 
@@ -109,7 +109,7 @@ When accessing Microsoft Defender Security Center for the first time, a wizard t
 
 
 ## Network configuration
-If the organization does not require the endpoints to use a Proxy to access the
+If the organization doesn't require the endpoints to use a Proxy to access the
 Internet, skip this section.
 
 The Microsoft Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to
@@ -127,12 +127,12 @@ the following discovery methods:
 
 -   Web Proxy Autodiscovery Protocol (WPAD)
 
-If a Transparent proxy or WPAD has been implemented in the network topology,
+If a Transparent proxy or WPAD has been implemented in the network topology, 
 there is no need for special configuration settings. For more information on
 Microsoft Defender for Endpoint URL exclusions in the proxy, see the
 Appendix section in this document for the URLs allow list or on
 [Microsoft
-Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
+Docs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 > [!NOTE]
 > For a detailed list of URLs that need to be allowed, please see [this article](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
