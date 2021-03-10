@@ -146,7 +146,7 @@ You can use the tools such as Windows Software Development KIT (SDK) and Symbols
     a. If the computer is connected to the Internet, enter the [Microsoft public symbol server](/windows-hardware/drivers/debugger/microsoft-public-symbols) (https://msdl.microsoft.com/download/symbols) and click **OK**. This is the recommended method.<br>
     b. If the computer is not connected to the Internet, you must specify a local [symbol path](/windows-hardware/drivers/debugger/symbol-path).
 6. Click on **Open Crash Dump**, and then open the memory.dmp file that you copied. See the example below.
-    ![WinDbg](images/windbg.png)
+    ![WinDbg img](images/windbg.png)
 7. There should be a link that says **!analyze -v** under **Bugcheck Analysis**. Click that link. This will enter the command !analyze -v in the prompt at the bottom of the page.
 8. A detailed bugcheck analysis will appear. See the example below.
     ![Bugcheck analysis](images/bugcheck-analysis.png)
