@@ -23,7 +23,7 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint for US Government customers, built in the US Azure Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
+Microsoft Defender for Endpoint for US Government customers, built in the Azure US Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
 
 This offering is available to GCC, GCC High, and DoD customers and is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some differences in the availability of capabilities for this offering.
 
@@ -124,6 +124,20 @@ For more information, see [Configure device proxy and Internet connectivity sett
 >
 > When filtering, look for the records labeled as "US Gov" and your specific cloud under the geography column.
 
+### Service backend IP ranges
+
+If your network devices don't support DNS rules and you can't use the URLs listed in the spreadsheet above, use IP ranges instead.
+
+Defender for Endpoint for US Government customers is built in the Azure US Government environment, deployed in the following regions:
+
+- AzureCloud.usgovtexas
+- AzureCloud.usgovvirginia
+
+You can find the Azure IP ranges in [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063).
+
+> [!NOTE]
+> As a cloud-based solution, the IP address ranges can change. It's recommended you move to a DNS resolving setting.
+
 <br>
 
 ## API
@@ -138,7 +152,7 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 <br>
 
 ## Feature parity with commercial
-Defender for Endpoint doesn't have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available we want to highlight.
+Defender for Endpoint for US Government customers doesn't have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available we want to highlight.
 
 These are the known gaps as of March 2021:
 
