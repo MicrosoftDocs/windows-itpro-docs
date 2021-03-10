@@ -351,7 +351,7 @@ Engine: **1.1.16700.2**
 
 - Fixed BSOD on WS2016 with Exchange
 - Support platform updates when TMP is redirected to network path
-- Platform and engine versions are added to [WDSI](https://www.microsoft.com/wdsi/defenderupdates)
+- Platform and engine versions are added to [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - extend Emergency signature update to [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 - Fix 4.18.1911.3 hang
    
