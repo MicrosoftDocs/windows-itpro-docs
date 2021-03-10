@@ -5,16 +5,20 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
-ms.date: 10/23/2018
+ms.author: cmcatee
+author: cmcatee-MSFT
+ms.date: 03/10/2021
 ms.reviewer: 
-manager: dansimp
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
 ---
 
 # Acquire apps in Microsoft Store for Business and Education
+
+> [!IMPORTANT]
+> Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
+
 As an admin, you can acquire apps from the Microsoft Store for Business and Education for your employees. Some apps are free, and some have a price. For info on app types that are supported, see [Apps in the Microsoft Store for Business](apps-in-microsoft-store-for-business.md). The following sections explain some of the settings for shopping. 
 
 ## App licensing model

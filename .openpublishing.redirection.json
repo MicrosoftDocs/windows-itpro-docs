@@ -13853,9 +13853,14 @@
 },
 {
 "source_path": "store-for-business/sign-up-windows-store-for-business.md",
-"redirect_url": "https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business",
+"redirect_url": "https://docs.microsoft.com/microsoft-store/index",
 "redirect_document_id": false
 },
+{
+"source_path": "store-for-business/sign-up-microsoft-store-for-business.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-store/index",
+"redirect_document_id": false
+},  
 {
 "source_path": "windows/manage/troubleshoot-windows-store-for-business.md",
 "redirect_url": "https://docs.microsoft.com/microsoft-store/troubleshoot-windows-store-for-business",
@@ -14009,6 +14014,11 @@
 {
 "source_path": "store-for-business/update-windows-store-for-business-account-settings.md",
 "redirect_url": "https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings",
+"redirect_document_id": false
+},
+{
+"source_path": "store-for-business/work-with-partner-microsoft-store-business.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/manage-partners",
 "redirect_document_id": false
 },
 {
