@@ -126,7 +126,7 @@ For more information, see [Configure device proxy and Internet connectivity sett
 
 ### Service backend IP ranges
 
-If your network devices don't support DNS rules and you can't use the URLs listed in the spreadsheet above, use IP ranges instead.
+If your network devices don't support DNS-based rules, use IP ranges instead.
 
 Defender for Endpoint for US Government customers is built in the Azure US Government environment, deployed in the following regions:
 
