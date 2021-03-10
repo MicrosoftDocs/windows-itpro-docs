@@ -215,7 +215,7 @@ If you’re running Windows 7, it can be more work.  A wipe-and-load approach w
 The following policies apply to acquisition and renewal of licenses on devices:
 - Devices that have been upgraded will attempt to renew licenses about every 30 days, and must be connected to the Internet to successfully acquire or renew a license.
 - If a device is disconnected from the Internet until its current subscription expires, the operating system will revert to Windows 10 Pro or Windows 10 Pro Education. As soon as the device is connected to the Internet again, the license will automatically renew.
-- Up to five devices can be upgraded for each user license.
+- Up to five devices can be upgraded for each user license. If user license is used for the sixth device, the operating system on the computer to which user has not logged in the longest will revert to Windows 10 Pro or Windows 10 Pro Education.
 - If a device meets the requirements and a licensed user signs in on that device, it will be upgraded.
 
 Licenses can be reallocated from one user to another user, allowing you to optimize your licensing investment against changing needs.
