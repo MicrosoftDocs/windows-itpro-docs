@@ -41,16 +41,16 @@ See the blog post [Important changes to Microsoft Active Protection Services end
 
 ## Allow connections to the Microsoft Defender Antivirus cloud service
 
-The Microsoft Defender Antivirus cloud service provides fast, strong protection for your endpoints. Enabling the cloud-delivered protection service is optional, however it is highly recommended because it provides important protection against malware on your endpoints and across your network.
+The Microsoft Defender Antivirus cloud service provides fast, strong protection for your endpoints. Enabling the cloud-delivered protection service is optional, however it's highly recommended because it provides important protection against malware on your endpoints and across your network.
 
 >[!NOTE]
->The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
+>The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it's called a cloud service, it's not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
 
 See [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) for details on enabling the service with Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app. 
 
 After you've enabled the service, you may need to configure your network or firewall to allow connections between it and your endpoints.
 
-Because your protection is a cloud service, computers must have access to the internet and reach the Microsoft Defender for Office 365 machine learning services. Do not exclude the URL `*.blob.core.windows.net` from any kind of network inspection. 
+Because your protection is a cloud service, computers must have access to the internet and reach the Microsoft Defender for Office 365 machine learning services. Don't exclude the URL `*.blob.core.windows.net` from any kind of network inspection. 
 
 The table below lists the services and their associated URLs. Make sure that there are no firewall or network filtering rules denying access to these URLs, or you may need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). Below mention URLs are using port 443 for communication.
 
@@ -67,7 +67,7 @@ The table below lists the services and their associated URLs. Make sure that the
 
 ## Validate connections between your network and the cloud
 
-After allowing the URLs listed above, you can test if you are connected to the Microsoft Defender Antivirus cloud service and are correctly reporting and receiving information to ensure you are fully protected.
+After allowing the URLs listed above, you can test if you're connected to the Microsoft Defender Antivirus cloud service and are correctly reporting and receiving information to ensure you're fully protected.
 
 **Use the cmdline tool to validate cloud-delivered protection:**
 
@@ -84,24 +84,24 @@ For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun
 
 **Attempt to download a fake malware file from Microsoft:**
 
-You can download a sample file that Microsoft Defender Antivirus will detect and block if you are properly connected to the cloud.
+You can download a sample file that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud.
 
 Download the file by visiting [https://aka.ms/ioavtest](https://aka.ms/ioavtest).
 
 >[!NOTE]
->This file is not an actual piece of malware. It is a fake file that is designed to test if you are properly connected to the cloud.
+>This file is not an actual piece of malware. It's a fake file that is designed to test if you're properly connected to the cloud.
 
-If you are properly connected, you will see a warning Microsoft Defender Antivirus notification.
+If you're properly connected, you'll see a warning Microsoft Defender Antivirus notification.
 
-If you are using Microsoft Edge, you'll also see a notification message:
+If you're using Microsoft Edge, you'll also see a notification message:
 
 ![Microsoft Edge informing the user that malware was found](images/defender/wdav-bafs-edge.png)
 
-A similar message occurs if you are using Internet Explorer:
+A similar message occurs if you're using Internet Explorer:
 
 ![Microsoft Defender Antivirus notification informing the user that malware was found](images/defender/wdav-bafs-ie.png)
 
-You will also see a detection under **Quarantined threats** in the **Scan history** section in the Windows Security app:
+You'll also see a detection under **Quarantined threats** in the **Scan history** section in the Windows Security app:
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
