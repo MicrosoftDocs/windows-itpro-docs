@@ -78,18 +78,18 @@ All our updates contain
 <br/><br/>
 
 <details>
-<summary> February-2021 (Platform: x.xx.xxxx.x | Engine: x.x.xxxxx.x)</summary>
+<summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
 
-&ensp;Security intelligence update version: **x.xxx.xxxx.x**  
+&ensp;Security intelligence update version: **1.333.7.0**  
 &ensp;Released: **March 9, 2021**  
-&ensp;Platform: **x.xx.xxxx.x**  
-&ensp;Engine: **x.x.xxxxx.x**  
+&ensp;Platform: **4.19.2102.3**  
+&ensp;Engine: **1.1.17900.7**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
 
-- item
-- item
+- Improved service recovery through Tamper Protection
+- Extend Tamper Protection scope
 
 ### Known Issues
 No known issues  
