@@ -13992,12 +13992,12 @@
     },
     {
       "source_path": "windows/manage/sign-up-windows-store-for-business.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-store/sign-up-windows-store-for-business",
+      "redirect_url": "https://docs.microsoft.com/microsoft-store/index.md",
       "redirect_document_id": true
     },
     {
       "source_path": "store-for-business/sign-up-windows-store-for-business.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business",
+      "redirect_url": "https://docs.microsoft.com/microsoft-store/index.md",
       "redirect_document_id": false
     },
     {
