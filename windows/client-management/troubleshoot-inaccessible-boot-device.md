@@ -179,11 +179,11 @@ Dism /Image:<Specify the OS drive>: /Get-packages
 
 After you run this command, you'll see the **Install pending** and **Uninstall Pending** packages:
 
-![Dism output](images/pendingupdate.png)
+![Dism output pending update](images/pendingupdate.png)
 
 1. Run the `dism /Image:C:\ /Cleanup-Image /RevertPendingActions` command. Replace **C:** with the system partition for your computer.
 
-    ![Dism output](images/revertpending.png)
+    ![Dism output revert pending](images/revertpending.png)
 
 2. Navigate to ***OSdriveLetter*:\Windows\WinSxS**, and then check whether the **pending.xml** file exists. If it does, rename it to **pending.xml.old**.
 
