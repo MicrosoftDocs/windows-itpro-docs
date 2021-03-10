@@ -88,8 +88,8 @@ All our updates contain
     
 ### What's new
 
-- Improved service recovery through Tamper Protection
-- Extend Tamper Protection scope
+- Improved service recovery through [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+- Extend tamper protection scope
 
 ### Known Issues
 No known issues  
