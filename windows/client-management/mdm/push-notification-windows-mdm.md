@@ -52,34 +52,34 @@ To get a PFN and WNS credentials, you must create an Microsoft Store app.
 
 1.  Go to the Windows [Dashboard](https://dev.windows.com/en-US/dashboard) and sign in with your developer account.
 
-    ![mdm push notification](images/push-notification1.png)
+    ![mdm push notification1](images/push-notification1.png)
 2.  Create a new app.
 
-    ![mdm push notification](images/push-notification2.png)
+    ![mdm push notification2](images/push-notification2.png)
 3.  Reserve an app name.
 
-    ![mdm push notification](images/push-notification3.png)
+    ![mdm push notification3](images/push-notification3.png)
 4.  Click **Services**.
 
-    ![mdm push notification](images/push-notification4.png)
+    ![mdm push notification4](images/push-notification4.png)
 5.  Click **Push notifications**.
 
-    ![mdm push notification](images/push-notification5.png)
+    ![mdm push notification5](images/push-notification5.png)
 6.  Click **Live Services site**. A new window opens for the **Application Registration Portal** page.
 
-    ![mdm push notification](images/push-notification6.png)
+    ![mdm push notification6](images/push-notification6.png)
 7.  In the **Application Registration Portal** page, you will see the properties for the app that you created, such as:
     -   Application Id
     -   Application Secrets
     -   Microsoft Store Package SID, Application Identity, and Publisher.
 
-    ![mdm push notification](images/push-notification7.png)
+    ![mdm push notification7](images/push-notification7.png)
 8.  Click **Save**.
 9.  Close the **Application Registration Portal** window and go back to the Windows Dev Center Dashboard.
 10. Select your app from the list on the left.
 11. From the left nav, expand **App management** and then click **App identity**.
 
-    ![mdm push notification](images/push-notification10.png)
+    ![mdm push notification10](images/push-notification10.png)
 12. In the **App identity** page, you will see the **Package Family Name (PFN)** of your app.
 
  
