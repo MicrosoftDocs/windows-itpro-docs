@@ -143,7 +143,7 @@ The following are the available naming macros:
 
 Value type is string. Supported operations are Get and Replace.
 
-> [!Note]  
+> [!NOTE]  
 > We recommend using `%SERIAL%` or `%RAND:x%` with a high character limit to reduce the chance of name collision when generating a random name. This feature doesn't check if a particular name is already present in the environment.
 
 On desktop PCs, this setting specifies the DNS hostname of the computer (Computer Name) up to 63 characters. Use `%RAND:x%` to generate x number of random digits in the name, where x must be a number less than 63. For domain-joined computers, the unique name must use `%RAND:x%`. Use `%SERIAL%` to generate the name with the `computer's` serial number embedded. If the serial number exceeds the character limit, it will be truncated from the beginning of the sequence. The character restriction limit does not count the length of the macros, `%RAND:x%` and `%SERIAL%`. This setting is supported only in Windows 10, version 1803 and later. To change this setting in Windows 10, version 1709 and earlier releases, use the **ComputerName** setting under **Accounts** > **ComputerAccount**.
@@ -214,7 +214,6 @@ Supported operation is Get.
  
 
  
-
 
 
 
