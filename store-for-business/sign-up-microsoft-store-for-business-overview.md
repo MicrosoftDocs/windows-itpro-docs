@@ -24,6 +24,9 @@ ms.date: 03/10/2021
 
 IT admins can sign up for Microsoft Store for Business and Education, and get started working with apps.
 
+> [!IMPORTANT]
+> Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
+
 ## In this section
 
 | Topic | Description |
