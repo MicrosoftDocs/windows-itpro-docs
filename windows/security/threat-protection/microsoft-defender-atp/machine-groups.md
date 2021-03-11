@@ -90,4 +90,4 @@ Devices that are not matched to any groups are added to Ungrouped devices (defau
 
 - [Manage portal access using role-based based access control](rbac.md)
 - [Create and manage device tags](machine-tags.md)
-- [Get list of tenant device groups using Graph API](get-machinegroups-collection.md)
+- [Get list of tenant device groups using Graph API](https://docs.microsoft.com/graph/api/device-list-memberof)

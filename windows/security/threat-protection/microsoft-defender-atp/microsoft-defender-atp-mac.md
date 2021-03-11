@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender ATP for Mac
 ms.reviewer: 
-description: Learn how to install, configure, update, and use Microsoft Defender Advanced Threat Protection for Mac.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+description: Learn how to install, configure, update, and use Microsoft Defender for Endpoint for Mac.
+keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -26,7 +26,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -75,9 +75,9 @@ The three most recent major releases of macOS are supported.
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 
 > [!IMPORTANT]
-> Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
+> Support for macOS 10.13 (High Sierra) has been discontinued on February 15th, 2021.
 
-- 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
+- 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave)
 - Disk space: 1GB
 
 Beta versions of macOS are not supported.

@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows servers to the Microsoft Defender for Endpoint service
 description: Onboard Windows servers so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
-keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Windows ATP servers, onboard Microsoft Defender Advanced Threat Protection servers, onboard Microsoft Defender for Endpoint servers
+keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Windows ATP servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -24,7 +24,10 @@ ms.technology: mde
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+**Platforms**
 - Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
@@ -218,7 +221,7 @@ Defender for Endpoint integrates with System Center Endpoint Protection. The int
 The following steps are required to enable this integration:
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie).
 
-- Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting.
+- [Configure the SCEP client Cloud Protection Service membership](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to the **Advanced** setting.
 
 <br>
 
