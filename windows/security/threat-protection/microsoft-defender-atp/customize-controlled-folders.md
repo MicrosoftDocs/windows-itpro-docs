@@ -12,7 +12,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 01/06/2021
+ms.date: 03/10/2021
 ms.technology: mde
 ---
 
@@ -130,6 +130,7 @@ An allowed application or service only has write access to a controlled folder a
 ### Use PowerShell to allow specific apps
 
 1. Type **PowerShell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
+
 2. Enter the following cmdlet:
 
     ```PowerShell
@@ -158,7 +159,7 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications]
 Microsoft Defender for Endpoint certificate and file indicators can allow signed executable files to access protected folders. For implementation details, see [Create indicators based on certificates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates).
 
 > [!Note]
-> This does no apply to scripting engines, including Powershell
+> This does not apply to scripting engines, including PowerShell.
 
 ## Customize the notification
 
