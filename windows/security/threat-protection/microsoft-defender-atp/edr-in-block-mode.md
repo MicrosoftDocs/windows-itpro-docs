@@ -128,6 +128,9 @@ To learn more, see [Get-MpComputerStatus](https://docs.microsoft.com/powershell/
 
 3. In the list of results, in the **STATE** row, confirm that the service is running.
 
+### How much time does it take for EDR in block mode to be disabled?
+If you chose to disable EDR in block mode it can take up to 30 minutes for the system to disable this capability.
+
 ## See also
 
 - [Tech Community blog: Introducing EDR in block mode: Stopping attacks in their tracks](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
