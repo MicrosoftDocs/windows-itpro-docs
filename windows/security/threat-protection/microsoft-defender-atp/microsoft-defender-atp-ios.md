@@ -74,7 +74,7 @@ For more information, see [Deploy Microsoft Defender for Endpoint for iOS](ios-i
 
 ## Resources
 
-- Stay informed about upcoming releases by visiting our [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).
+- Stay informed about upcoming releases by visiting [What's new in Microsoft Defender for Endpoint for iOS](ios-whatsnew.md) or our [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).
 
 - Provide feedback through in-app feedback system or through [SecOps portal](https://securitycenter.microsoft.com)
 
