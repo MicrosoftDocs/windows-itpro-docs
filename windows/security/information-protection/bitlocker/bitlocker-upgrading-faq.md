@@ -41,7 +41,7 @@ Users need to suspend BitLocker for Non-Microsoft software updates, such as:
 -	Non-Microsoft application updates that modify the UEFI\BIOS configuration.
 -	Manual or third-party updates to secure boot databases (only if BitLocker uses Secure Boot for integrity validation).
 -	Updates to UEFI\BIOS firmware, installation of additional UEFI drivers, or UEFI applications without using the Windows update mechanism (only if you update and BitLocker does not use Secure Boot for integrity validation).
- -	You can check if BitLocker uses Secure Boot for integrity validation with manage-bde -protectors -get C: (and see if "Uses Secure Boot for integrity validation" is reported)
+ -	You can check if BitLocker uses Secure Boot for integrity validation with manage-bde -protectors -get C: (and see if "Uses Secure Boot for integrity validation" is reported).
 
 
 > [!NOTE]
