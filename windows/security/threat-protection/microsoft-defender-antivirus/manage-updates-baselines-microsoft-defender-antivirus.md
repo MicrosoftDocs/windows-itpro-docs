@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 03/09/2021
+ms.date: 03/10/2021
 ms.technology: mde
 ---
 
@@ -78,6 +78,23 @@ All our updates contain
 <br/><br/>
 
 <details>
+<summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
+
+&ensp;Security intelligence update version: **1.333.7.0**  
+&ensp;Released: **March 9, 2021**  
+&ensp;Platform: **4.19.2102.3**  
+&ensp;Engine: **1.1.17900.7**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+
+- Improved service recovery through [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+- Extend tamper protection scope
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
 <summary> January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
@@ -114,7 +131,13 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
+<br/><br/>
+<details>
 <summary> October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</summary>
 
 &ensp;Security intelligence update version: **1.327.7.0**  
@@ -134,13 +157,7 @@ No known issues
 
 No known issues  
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
-<br/><br/>
-<details>
+</details><details>
 <summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
 &ensp;Security intelligence update version: **1.325.10.0**  
@@ -334,7 +351,7 @@ Engine: **1.1.16700.2**
 
 - Fixed BSOD on WS2016 with Exchange
 - Support platform updates when TMP is redirected to network path
-- Platform and engine versions are added to [WDSI](https://www.microsoft.com/wdsi/defenderupdates)
+- Platform and engine versions are added to [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - extend Emergency signature update to [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 - Fix 4.18.1911.3 hang
    
