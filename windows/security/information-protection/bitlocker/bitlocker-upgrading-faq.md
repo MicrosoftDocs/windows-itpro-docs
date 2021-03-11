@@ -39,7 +39,7 @@ Users need to suspend BitLocker for Non-Microsoft software updates, such as:
 
 -	Some TPM firmware updates if these updates clear the TPM outside of the Windows API. Not every TPM firmware update will clear the TPM and this happens if a known vulnerability has been discovered in the TPM firmware. Users don’t have to suspend BitLocker if the TPM firmware update uses Windows API to clear the TPM because in this case, BitLocker will be automatically suspended. We recommend users testing their TPM firmware updates if they don’t want to suspend BitLocker protection.
 -	Non-Microsoft application updates that modify the UEFI\BIOS configuration.
--	Manual or 3rd party updates to secure boot databases (only If BitLocker uses Secure Boot for Integrity validation)
+-	Manual or third-party updates to secure boot databases (only if BitLocker uses Secure Boot for integrity validation).
 -	Updates to UEFI\BIOS firmware, installation of additional UEFI drivers or UEFI applications without using Windows Update mechanism (only If BitLocker does not use Secure Boot for Integrity validation and you update)
  -	You can check if BitLocker uses Secure Boot for integrity validation with manage-bde -protectors -get C: (and see if "Uses Secure Boot for integrity validation" is reported)
 
