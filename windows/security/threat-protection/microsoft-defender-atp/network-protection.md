@@ -43,6 +43,9 @@ When network protection blocks a connection, a notification is displayed from th
 
 You can also use [audit mode](audit-windows-defender.md) to evaluate how network protection would impact your organization if it were enabled.
 
+> [!NOTE]
+> If network protection is enabled and platform updates are managed, it could cause some systems to lose network connectivity if their systems aren't updated. As a result, some devices might lose network connectivity. In a managed environment, make sure that Configuration Manager auto deployment rule is updating the platform. Make sure this is fully deployed to all clients before turning on network protection.
+
 ## Requirements
 
 Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender Antivirus real-time protection.
