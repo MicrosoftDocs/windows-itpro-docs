@@ -5296,7 +5296,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-connectivity.md#connectivity-allowvpnroamingovercellular" id="connectivity-allowvpnroamingovercellular">Connectivity/AllowVPNRoamingOverCellular</a>
   </dd>
   <dd>
-    <a href="./policy-csp-connectivity.md#connectivity-diableprintingoverhttp" id="connectivity-diableprintingoverhttp">Connectivity/DiablePrintingOverHTTP</a>
+    <a href="./policy-csp-connectivity.md#connectivity-diableprintingoverhttp" id="connectivity-disableprintingoverhttp">Connectivity/DiablePrintingOverHTTP</a>
   </dd>
   <dd>
     <a href="./policy-csp-connectivity.md#connectivity-disabledownloadingofprintdriversoverhttp" id="connectivity-disabledownloadingofprintdriversoverhttp">Connectivity/DisableDownloadingOfPrintDriversOverHTTP</a>
