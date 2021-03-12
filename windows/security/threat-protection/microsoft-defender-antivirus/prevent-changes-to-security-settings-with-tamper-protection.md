@@ -73,7 +73,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 Tamper protection can be turned on or off for your tenant using the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). Here are a few points to keep in mind:
 
-- Currently, the option to manage tamper protection in the Microsoft Defender Security Center is on by default for new deployments. For existing deployments, tamper protection is available on an opt-in basis, with plans to make this the default method in the near future.
+- Currently, the option to manage tamper protection in the Microsoft Defender Security Center is on by default for new deployments. For existing deployments, tamper protection is available on an opt-in basis, with plans to make this the default method in the near future. (To opt in, in the Microsoft Defender Security Center, choose **Settings** > **Advanced features** > **Tamper protection**.) 
 
 - When you use the Microsoft Defender Security Center to manage tamper protection, you do not have to use Intune or the tenant attach method.
 
