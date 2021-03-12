@@ -58,7 +58,7 @@ In the out-of-the-box scenario, the web view is 100% full screen, which gives th
 
 For Azure AD enrollment to work for an Active Directory Federated Services (AD FS) backed Azure AD account, you must enable password authentication for the intranet on the ADFS service as described in solution \#2 in [this article](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
 
-Once a user has an Azure AD account added to Windows 10 and enrolled in MDM, the enrollment can be manages through **Settings** > **Accounts** > **Work access**. Device management of either Azure AD Join for corporate scenarios or BYOD scenarios are similar.
+Once a user has an Azure AD account added to Windows 10 and enrolled in MDM, the enrollment can be managed through **Settings** > **Accounts** > **Work access**. Device management of either Azure AD Join for corporate scenarios or BYOD scenarios is similar.
 
 > [!NOTE]
 > Users cannot remove the device enrollment through the **Work access** user interface because management is tied to the Azure AD or work account.
@@ -923,6 +923,5 @@ When a user is enrolled into MDM through Azure Active Directory Join and then di
  
 
  
-
 
 
