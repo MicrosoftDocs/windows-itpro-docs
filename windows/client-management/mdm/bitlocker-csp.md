@@ -24,11 +24,29 @@ the setting configured by the admin.
 
 For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if Trusted Platform Module (TPM) protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that the a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
 
-The following diagram shows the BitLocker configuration service provider in tree format.
-
-![BitLocker csp](images/provisioning-csp-bitlocker.png)
-
-
+The following shows the BitLocker configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+BitLocker
+----RequireStorageCardEncryption
+----RequireDeviceEncryption
+----EncryptionMethodByDriveType
+----SystemDrivesRequireStartupAuthentication
+----SystemDrivesMinimumPINLength
+----SystemDrivesRecoveryMessage
+----SystemDrivesRecoveryOptions
+----FixedDrivesRecoveryOptions
+----FixedDrivesRequireEncryption
+----RemovableDrivesRequireEncryption
+----AllowWarningForOtherDiskEncryption
+----AllowStandardUserEncryption
+----ConfigureRecoveryPasswordRotation
+----RotateRecoveryPasswords
+----Status
+--------DeviceEncryptionStatus
+--------RotateRecoveryPasswordsStatus
+--------RotateRecoveryPasswordsRequestID
+```
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
 Defines the root node for the BitLocker configuration service provider.
 <!--Policy-->
