@@ -54,7 +54,7 @@ In both scenarios, Azure AD is responsible for authenticating the user and the d
 
 In both scenarios, the enrollment flow provides an opportunity for the MDM service to render it's own UI, using a web view. MDM vendors should use this to render the Terms of Use (TOU), which can be different for company-owned and BYOD devices. MDM vendors can also use the web view to render additional UI elements, such as asking for a one-time PIN, if this is part of the business process of the organization.
 
-In the out-of-the-box scenario, the web view is 100% full screen, which gives the MDM vendor the ability to paint an edge-to-edge experience. With great power comes great responsibility! It is important that MDM vendors who chose to integrate with Azure AD to respect the Windows 10 design guidelines to the letter. This includes using a responsive web design and respecting the Windows accessibility guidelines, which includes the forward and back buttons that are properly wired to the navigation logic. Additional details are provided later in this topic.
+In the out-of-the-box scenario, the web view is 100% full screen, which gives the MDM vendor the ability to paint an edge-to-edge experience. With great power comes great responsibility! It is important that MDM vendors who chose to integrate with Azure AD respect the Windows 10 design guidelines to the letter. This includes using a responsive web design and respecting the Windows accessibility guidelines, which includes the forward and back buttons that are properly wired to the navigation logic. Additional details are provided later in this topic.
 
 For Azure AD enrollment to work for an Active Directory Federated Services (AD FS) backed Azure AD account, you must enable password authentication for the intranet on the ADFS service as described in solution \#2 in [this article](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
 
@@ -923,7 +923,6 @@ When a user is enrolled into MDM through Azure Active Directory Join and then di
  
 
  
-
 
 
 
