@@ -17,10 +17,54 @@ ms.date: 11/19/2019
 
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
-The following diagram shows the AppLocker configuration service provider in tree format.
-
-![applocker csp](images/provisioning-csp-applocker.png)
-
+The following shows the AppLocker configuration service provider in tree format.
+```
+./Vendor/MSFT
+AppLocker
+----ApplicationLaunchRestrictions
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+----------------NonInteractiveProcessEnforcement
+------------MSI
+----------------Policy
+----------------EnforcementMode
+------------Script
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+------------DLL
+----------------Policy
+----------------EnforcementMode
+----------------NonInteractiveProcessEnforcement
+------------CodeIntegrity
+----------------Policy
+----EnterpriseDataProtection
+--------Grouping
+------------EXE
+----------------Policy
+------------StoreApps
+----------------Policy
+----LaunchControl
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+----FamilySafety
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+```
 <a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/AppLocker**  
 Defines the root node for the AppLocker configuration service provider.
 

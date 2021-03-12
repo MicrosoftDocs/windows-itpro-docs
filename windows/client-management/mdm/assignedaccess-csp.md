@@ -29,10 +29,17 @@ For a step-by-step guide for setting up devices to run in kiosk mode, see [Set u
 > [!Note]
 > The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709 it is also supported in Windows 10 Pro and Windows 10 S. Starting in Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
 
-The following diagram shows the AssignedAccess configuration service provider in tree format
+The following shows the AssignedAccess configuration service provider in tree format
 
-![assignedaccess csp diagram](images/provisioning-csp-assignedaccess.png)
-
+```
+./Vendor/MSFT
+AssignedAccess
+----KioskModeApp
+----Configuration (Added in Windows 10, version 1709) 
+----Status (Added in Windows 10, version 1803)
+----ShellLauncher (Added in Windows 10, version 1803)
+----StatusConfiguration (Added in Windows 10, version 1803)
+```
 <a href="" id="--vendor-msft-assignedaccess"></a>**./Device/Vendor/MSFT/AssignedAccess**
 Root node for the CSP.
 
