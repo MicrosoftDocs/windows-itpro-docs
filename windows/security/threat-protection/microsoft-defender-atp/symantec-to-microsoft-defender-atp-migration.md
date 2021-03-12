@@ -28,7 +28,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 If you are planning to switch from Symantec Endpoint Protection (Symantec) to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender for Endpoint), you're in the right place. Use this article as a guide.
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 :::image type="content" source="images/symantec-mde-migration.png" alt-text="Overview of migrating from Symantec to Defender for Endpoint":::
