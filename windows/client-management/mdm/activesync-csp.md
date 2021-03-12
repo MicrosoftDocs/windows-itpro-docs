@@ -28,9 +28,39 @@ The ./Vendor/MSFT/ActiveSync path is deprecated, but will continue to work in th
 
  
 
-The following diagram shows the ActiveSync configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+The following shows the ActiveSync configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
 
-![activesync csp (cp)](images/provisioning-csp-activesync-cp.png)
+```
+./Vendor/MSFT
+ActiveSync
+----Accounts
+--------Account GUID
+------------EmailAddress
+------------Domain
+------------AccountIcon
+------------AccountType
+------------AccountName
+------------Password
+------------ServerName
+------------UserName
+------------Options
+----------------CalendarAgeFilter
+----------------Logging
+----------------MailBodyType
+----------------MailHTMLTruncation
+----------------MailPlainTextTruncation
+----------------Schedule
+----------------UseSSL
+----------------MailAgeFilter
+----------------ContentTypes
+--------------------Content Type GUID
+------------------------Enabled
+------------------------Name
+------------Policies
+----------------MailBodyType
+----------------MaxMailAgeFilter
+
+```
 
 <a href="" id="--user-vendor-msft-activesync"></a>**./User/Vendor/MSFT/ActiveSync**  
 The root node for the ActiveSync configuration service provider.

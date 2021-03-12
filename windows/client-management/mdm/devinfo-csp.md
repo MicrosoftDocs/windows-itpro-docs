@@ -23,10 +23,16 @@ The DevInfo configuration service provider handles the managed object which prov
 
 For the DevInfo CSP, you cannot use the Replace command unless the node already exists.
 
-The following diagram shows the DevInfo configuration service provider management object in tree format as used by OMA Device Management. The OMA Client provisioning protocol is not supported by this configuration service provider.
-
-![devinfo csp (dm)](images/provisioning-csp-devinfo-dm.png)
-
+The following shows the DevInfo configuration service provider management object in tree format as used by OMA Device Management. The OMA Client provisioning protocol is not supported by this configuration service provider.
+```
+.
+DevInfo
+----DevId
+----Man
+----Mod
+----DmV
+----Lang
+```
 <a href="" id="devid"></a>**DevId**  
 Required. Returns an application-specific global unique device identifier by default.
 

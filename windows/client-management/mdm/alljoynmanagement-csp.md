@@ -26,9 +26,37 @@ This CSP was added in Windows 10, version 1511.
 
 For the firewall settings, note that PublicProfile and PrivateProfile are mutually exclusive. The Private Profile must be set on the directly on the device itself, and the only supported operation is Get. For PublicProfile, both Add and Get are supported. This CSP is intended to be used in conjunction with the AllJoyn Device System Bridge, and an understanding of the bridge will help when determining when and how to use this CSP. For more information, see [Device System Bridge (DSB) Project](https://go.microsoft.com/fwlink/p/?LinkId=615876) and [AllJoyn Device System Bridge](https://go.microsoft.com/fwlink/p/?LinkId=615877).
 
-The following diagram shows the AllJoynManagement configuration service provider in tree format
+The following shows the AllJoynManagement configuration service provider in tree format
 
-![alljoynmanagement csp diagram](images/provisioning-csp-alljoynmanagement.png)
+```
+./Vendor/MSFT
+AllJoynManagement
+----Configurations
+--------ServiceID
+------------Port
+----------------PortNum
+--------------------ConfigurableObjects
+------------------------CfgObjectPath
+----Credentials
+--------ServiceID
+------------Key
+----Firewall
+--------PublicProfile
+--------PrivateProfile
+----Services
+--------ServiceID
+------------AppId
+------------DeviceId
+------------AppName
+------------Manufacturer
+------------ModelNumber
+------------Description
+------------SoftwareVersion
+------------AJSoftwareVersion
+------------HardwareVersion
+----Options
+--------QueryIdleTime
+```
 
 The following list describes the characteristics and parameters.
 
