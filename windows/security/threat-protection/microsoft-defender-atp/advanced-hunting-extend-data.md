@@ -25,7 +25,6 @@ ms.technology: mde
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 [Advanced hunting](advanced-hunting-overview.md) relies on data coming from across your organization. To get the most comprehensive data possible, ensure that you have the correct settings in the corresponding data sources.
 

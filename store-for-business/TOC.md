@@ -3,7 +3,6 @@
 ## [Sign up and get started](sign-up-microsoft-store-for-business-overview.md)
 ### [Microsoft Store for Business and Microsoft Store for Education overview](microsoft-store-for-business-overview.md)
 ### [Prerequisites for Microsoft Store for Business and Education](prerequisites-microsoft-store-for-business.md)
-### [Sign up for Microsoft Store for Business or Microsoft Store for Education](sign-up-microsoft-store-for-business.md)
 ### [Roles and permissions in the Microsoft Store for Business and Education](roles-and-permissions-microsoft-store-for-business.md)
 ### [Settings reference: Microsoft Store for Business and Education](settings-reference-microsoft-store-for-business.md)
 ## [Find and acquire apps](find-and-acquire-apps-overview.md)
