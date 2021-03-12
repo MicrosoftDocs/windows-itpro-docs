@@ -25,10 +25,87 @@ The CertificateStore configuration service provider is used to add secure socket
 
 For the CertificateStore CSP, you cannot use the Replace command unless the node already exists.
 
-The following diagram shows the CertificateStore configuration service provider management object in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
+The following shows the CertificateStore configuration service provider management object in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
 
-![provisioning\-csp\-certificatestore](images/provisioning-csp-certificatestore.png)
-
+```
+./Vendor/MSFT
+CertificateStore
+----ROOT
+--------*
+------------EncodedCertificate
+------------IssuedBy
+------------IssuedTo
+------------ValidFrom
+------------ValidTo
+------------TemplateName
+--------System
+------------*
+----------------EncodedCertificate
+----------------IssuedBy
+----------------IssuedTo
+----------------ValidFrom
+----------------ValidTo
+----------------TemplateName
+----MY
+--------User
+------------*
+----------------EncodedCertificate
+----------------IssuedBy
+----------------IssuedTo
+----------------ValidFrom
+----------------ValidTo
+----------------TemplateName
+--------SCEP
+------------*
+----------------Install
+--------------------ServerURL
+--------------------Challenge
+--------------------EKUMapping
+--------------------KeyUsage
+--------------------SubjectName
+--------------------KeyProtection
+--------------------RetryDelay
+--------------------RetryCount
+--------------------TemplateName
+--------------------KeyLength
+--------------------HashAlgrithm
+--------------------CAThumbPrint
+--------------------SubjectAlternativeNames
+--------------------ValidPeriod
+--------------------ValidPeriodUnit
+--------------------Enroll
+----------------CertThumbPrint
+----------------Status
+----------------ErrorCode
+--------WSTEP
+------------CertThumprint
+------------Renew
+----------------RenewPeriod
+----------------ServerURL
+----------------RetryInterval
+----------------ROBOSupport
+----------------Status
+----------------ErrorCode
+----------------LastRenewalAttemptTime (Added in Windows 10, version 1607)
+----------------RenewNow (Added in Windows 10, version 1607)
+----------------RetryAfterExpiryInterval (Added in Windows 10, version 1703)
+----CA
+--------*
+------------EncodedCertificate
+------------IssuedBy
+------------IssuedTo
+------------ValidFrom
+------------ValidTo
+------------TemplateName
+--------System
+------------*
+----------------EncodedCertificate
+----------------IssuedBy
+----------------IssuedTo
+----------------ValidFrom
+----------------ValidTo
+----------------TemplateName
+```
 <a href="" id="root-system"></a>**Root/System**  
 Defines the certificate store that contains root, or self-signed, certificates.
 
