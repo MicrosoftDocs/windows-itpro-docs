@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Advanced Threat Protection portal overview
+title: Microsoft Defender for Endpoint portal overview
 description: Microsoft Defender Security Center can monitor your enterprise network and assist in responding to potential advanced persistent threats (APT) or data breaches.
 keywords: Microsoft Defender Security Center, portal, cybersecurity threat intelligence, dashboard, alerts queue, devices list, settings, device management, advanced attacks
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

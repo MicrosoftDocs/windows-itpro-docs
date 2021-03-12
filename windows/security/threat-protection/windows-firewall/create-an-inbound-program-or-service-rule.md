@@ -65,7 +65,7 @@ To create an inbound firewall rule for a program or service
 
     To set a SID type on a service, run the following command:
 
-    **sc** **sidtype** *&lt;Type&gt; &lt;ServiceName&gt;*
+    **sc** **sidtype** *&lt;ServiceName&gt; &lt;Type&gt;*
 
     In the preceding command, the value of *&lt;Type&gt;* can be **UNRESTRICTED** or **RESTRICTED**. Although the command also permits the value of **NONE**, that setting means the service cannot be used in a firewall rule as described here. By default, most services in Windows are configured as **UNRESTRICTED**. If you change the SID type to **RESTRICTED**, the service might fail to start. We recommend that you change the SID type only on services that you want to use in firewall rules, and that you change the SID type to **UNRESTRICTED**.
 

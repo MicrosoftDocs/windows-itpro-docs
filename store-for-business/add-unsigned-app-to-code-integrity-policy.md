@@ -3,16 +3,16 @@ title: Add unsigned app to code integrity policy (Windows 10)
 description: When you want to add an unsigned app to a code integrity policy, you need to start with a code integrity policy created from a reference device.
 ms.assetid: 580E18B1-2FFD-4EE4-8CC5-6F375BE224EA
 ms.reviewer: 
-manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store, security
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 10/17/2017
+ms.date: 03/10/2021
 ---
 
 # Add unsigned app to code integrity policy
@@ -99,7 +99,7 @@ After you're done, the files are saved to your desktop. You still need to sign t
 
 ## <a href="" id="catalog-signing-device-guard-portal"></a>Catalog signing with Device Guard signing portal
 
-To sign catalog files with the Device Guard signing portal, you need to be signed up with the Microsoft Store for Business. For more information, see [Sign up for the Microsoft Store for Business](sign-up-microsoft-store-for-business.md).
+To sign catalog files with the Device Guard signing portal, you need to be signed up with the Microsoft Store for Business.
 
 Catalog signing is a vital step to adding your unsigned apps to your code integrity policy.
 
