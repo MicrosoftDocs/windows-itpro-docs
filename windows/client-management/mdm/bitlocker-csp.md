@@ -16,7 +16,8 @@ manager: dansimp
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it is also supported in Windows 10 Pro.
 
 > [!NOTE]
-> Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.  
+> Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.
+> 
 > You must send all the settings together in a single SyncML to be effective.
 
 A Get operation on any of the settings, except for RequireDeviceEncryption and RequireStorageCardEncryption, returns
@@ -243,18 +244,18 @@ EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for remov
   If you want to disable this policy use the following SyncML: 
 
 ```xml
-                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethodByDriveType</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data><disabled/></Data>
-                           </Item>
-                         </Replace>
+<Replace>
+  <CmdID>$CmdID$</CmdID>
+    <Item>
+      <Target>
+          <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethodByDriveType</LocURI>
+      </Target>
+      <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+      </Meta>
+      <Data><disabled/></Data>
+    </Item>
+</Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
