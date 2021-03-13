@@ -60,7 +60,7 @@ Starting in Windows 10, version 1607, you can use a provisioned app to configur
 
 Here's an example:
 
-``` syntax
+```json
 {"Account":"contoso\\kioskuser","AUMID":"Microsoft.Windows.Contoso_cw5n1h2txyewy!Microsoft.ContosoApp.ContosoApp"}
 ```
 
@@ -104,7 +104,8 @@ In Windows 10, version 1803, Assigned Access runtime status only supports monito
 | KioskModeAppNotFound | This occurs when the kiosk app is not deployed to the machine. |
 | KioskModeAppActivationFailure | This happens when the assigned access controller detects the process terminated unexpectedly after exceeding the max retry. |
 
-Note that status codes available in the Status payload correspond to a specific KioskModeAppRuntimeStatus.
+> [!NOTE]
+> Status codes available in the Status payload correspond to a specific KioskModeAppRuntimeStatus.
 
 |Status code  | KioskModeAppRuntimeStatus |
 |---------|---------|
@@ -123,7 +124,8 @@ In Windows 10, version 1809, Assigned Access runtime status supports monitoring 
 |ActivationFailed|The AssignedAccess account (kiosk or multi-app) failed to sign in.|
 |AppNoResponse|The kiosk app launched successfully but is now unresponsive.|
 
-Note that status codes available in the Status payload correspond to a specific AssignedAccessRuntimeStatus.
+> [!NOTE]
+> Status codes available in the Status payload correspond to a specific AssignedAccessRuntimeStatus.
 
 |Status code|AssignedAccessRuntimeStatus|
 |---|---|
@@ -580,7 +582,7 @@ Escape and CDATA are mechanisms when handling xml in xml. Consider it’s a tran
 
 This example shows escaped XML of the Data node.
 
-```
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncBody>
         <Add>
@@ -649,8 +651,10 @@ This example shows escaped XML of the Data node.
     </SyncBody>
 </SyncML>
 ```
+
 This example shows escaped XML of the Data node.
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncBody>
         <Replace>
@@ -721,7 +725,8 @@ This example shows escaped XML of the Data node.
 ```
 
 This example uses CData for the XML.
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncBody>
         <Add>
@@ -792,7 +797,8 @@ This example uses CData for the XML.
 ```
 
 Example of Get command that returns the configuration in the device.
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
        <Get>
@@ -809,7 +815,8 @@ Example of Get command that returns the configuration in the device.
 ```
 
 Example of the Delete command.
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
        <Delete>
@@ -1129,6 +1136,7 @@ Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. 
     </xs:element>
 </xs:schema>
 ```
+
 ### Shell Launcher V2 XSD
 
 ```xml
@@ -1158,7 +1166,8 @@ Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. 
 ## ShellLauncherConfiguration examples
 
 ShellLauncherConfiguration Add
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Add>
@@ -1227,7 +1236,8 @@ ShellLauncherConfiguration Add
 ```
 
 ShellLauncherConfiguration Add AutoLogon
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Add>
@@ -1275,7 +1285,8 @@ ShellLauncherConfiguration Add AutoLogon
 ```
 
 ShellLauncher V2 Add
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Add>
@@ -1330,7 +1341,8 @@ xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
 ```
 
 ShellLauncherConfiguration Get
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Get>

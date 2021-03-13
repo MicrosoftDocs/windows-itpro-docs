@@ -17,10 +17,9 @@ ms.date: 06/26/2017
 
 The CMPolicy configuration service provider defines rules that the Connection Manager uses to identify the correct connection for a connection request.
 
-> **Note**  
-This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> [!NOTE]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
- 
 
 Each policy entry identifies one or more applications in combination with a host pattern. The policy entry is assigned a list of connection details that Connection Manager uses to satisfy connection requests matching the application and host patterns. CMPolicy configuration service provider can have multiple policies
 

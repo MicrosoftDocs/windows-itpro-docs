@@ -17,8 +17,8 @@ ms.date: 06/26/2017
 
 The AllJoynManagement configuration service provider (CSP) allows an IT administrator to enumerate the AllJoyn devices that are connected to the AllJoyn bus. The devices must support the Microsoft AllJoyn configuration interface (com.microsoft.alljoynmanagement.config). You can also push configuration files to the same devices. To populate the various nodes when setting new configuration, we recommend that you do a query first, to get the actual values for all the nodes in all the attached devices. You can then use the information from the query to set the node values when pushing the new configuration.
 
-> **Note**  
-The AllJoynManagement configuration service provider (CSP) is only supported in Windows 10 IoT Core (IoT Core).
+> [!NOTE]
+> The AllJoynManagement configuration service provider (CSP) is only supported in Windows 10 IoT Core (IoT Core).
 
 This CSP was added in Windows 10, version 1511.
 

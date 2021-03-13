@@ -122,7 +122,7 @@ The following table provides the result of this policy based on different values
 |False|False|True|Not Reachable.|
 |False|False|False|*Not Reachable.|
 
-`*` denotes a valid intermediary state; however, if an MDM transaction results in this state configuration, the END_COMMAND_PROCESSING will result in a fail.
+\* denotes a valid intermediary state; however, if an MDM transaction results in this state configuration, the END_COMMAND_PROCESSING will result in a fail.
 
 <a href="" id="applicationcontrol-policies-policyguid-policyinfo-status"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/Status**  
 This node specifies whether the deployment of the policy indicated by the GUID was successful.
@@ -140,7 +140,7 @@ Value type is char.
 
 ## Microsoft Endpoint Manager (MEM) Intune Usage Guidance  
 
-For customers using Intune standalone or hybrid management with Configuration Manager (MEMCM) to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune)
+For customers using Intune standalone or hybrid management with Configuration Manager (MEMCM) to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune).
 
 ## Generic MDM Server Usage Guidance
 
@@ -152,7 +152,7 @@ In order to leverage the ApplicationControl CSP without using Intune, you must:
 
 Below is a sample certutil invocation:
 
-```cmd
+```console
 certutil  -encode WinSiPolicy.p7b WinSiPolicy.cer
 ```
 
@@ -308,7 +308,7 @@ The ApplicationControl CSP can also be managed locally from PowerShell or via Mi
 Run the following command. PolicyID is a GUID which can be found in the policy xml, and should be used here without braces.
 
 ```powershell
-    New-CimInstance -Namespace $namespace -ClassName $policyClassName -Property @{ParentID="./Vendor/MSFT/ApplicationControl/Policies";InstanceID="<PolicyID>";Policy=$policyBase64}
+New-CimInstance -Namespace $namespace -ClassName $policyClassName -Property @{ParentID="./Vendor/MSFT/ApplicationControl/Policies";InstanceID="<PolicyID>";Policy=$policyBase64}
 ```
 
 ### Querying all policies via WMI Bridge

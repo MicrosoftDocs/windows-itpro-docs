@@ -325,7 +325,8 @@ Valid values are:
 -   Months
 -   Years
 
-> **Note**  The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
+> [!NOTE]
+> The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
 
 Supported operations are Add, Get, Delete, and Replace.
 
