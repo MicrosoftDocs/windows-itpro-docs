@@ -18,7 +18,7 @@ The CustomDeviceUI configuration service provider allows OEMs to implement their
 The following shows the CustomDeviceUI configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
 
 > [!NOTE]
-> ]This configuration service provider only applies to Windows 10 IoT Core (IoT Core).
+> This configuration service provider only applies to Windows 10 IoT Core (IoT Core).
 
 ```
 ./Vendor/MSFT

@@ -19,7 +19,7 @@ The ActiveSync configuration service provider is used to set up and change setti
 
 Configuring Windows Live ActiveSync accounts through this configuration service provider is not supported.
 
-> [!NOTE] 
+> [!NOTE]
 > The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the ./User/Vendor/MSFT/ActiveSync path.
 
 On the desktop, only per user configuration (./User/Vendor/MSFT/ActiveSync) is supported. However, the ./Vendor/MSFT/ActiveSync path will work if the user is logged in. The CSP fails when no user is logged in.
@@ -65,7 +65,7 @@ ActiveSync
 <a href="" id="--user-vendor-msft-activesync"></a>**./User/Vendor/MSFT/ActiveSync**  
 The root node for the ActiveSync configuration service provider.
 
-> [!NOTE] 
+> [!NOTE]
 > The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the ./User/Vendor/MSFT/ActiveSync path.
 
 On the desktop, only per user configuration (./User/Vendor/MSFT/ActiveSync) is supported. However, the ./Vendor/MSFT/ActiveSync will work if the user is logged in. The CSP fails when no user is logged in.
