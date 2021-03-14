@@ -21,6 +21,8 @@ ms.technology: mde
 -   Windows 10
 -   Windows Server 2016
 
+> [!NOTE]
+> For more details about applicability on older operating system versions, check [this article](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn319068(v=ws.11)).
 
 Audit File System determines whether the operating system generates audit events when users attempt to access file system objects.
 
