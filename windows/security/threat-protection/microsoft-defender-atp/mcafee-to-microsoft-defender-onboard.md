@@ -27,7 +27,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 # Migrate from McAfee - Phase 3: Onboard to Microsoft Defender for Endpoint
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

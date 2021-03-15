@@ -240,27 +240,27 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
 
 4.  On the **Before You Begin** page, click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-1.png)
+    ![Screenshot of the Before You Begin tab](images/wip-applocker-secpol-wizard-1.png)
 
 5.  On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-2.png)
+    ![Screenshot of the Permissions tab with "Allow" and "Everyone" selected](images/wip-applocker-secpol-wizard-2.png)
 
 6. On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
 
-    ![Create Packaged app Rules wizard, showing the Publisher](images/wip-applocker-secpol-wizard-3.png)
+    ![Screenshot of the "Use an installed package app as a reference" radio button selected and the Select button highlighted](images/wip-applocker-secpol-wizard-3.png)
 
 7.  In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we’re using Microsoft Dynamics 365.
 
-    ![Create Packaged app Rules wizard, showing the Select applications page](images/wip-applocker-secpol-wizard-4.png)
+    ![Screenshot of the Select applications list](images/wip-applocker-secpol-wizard-4.png)
 
 8.  On the updated **Publisher** page, click **Create**.
 
-    ![Create Packaged app Rules wizard, showing the Microsoft Dynamics 365 on the Publisher page](images/wip-applocker-secpol-wizard-5.png)
+    ![Screenshot of the Publisher tab](images/wip-applocker-secpol-wizard-5.png)
 
 9.  Click **No** in the dialog box that appears, asking if you want to create the default rules. You must not create default rules for your WIP policy.
 
-    ![Create Packaged app Rules wizard, showing the Microsoft Dynamics 365 on the Publisher page](images/wip-applocker-default-rule-warning.png)
+    ![Screenshot of AppLocker warning](images/wip-applocker-default-rule-warning.png)
 
 9.  Review the Local Security Policy snap-in to make sure your rule is correct.
 
@@ -318,11 +318,11 @@ The executable rule helps to create an AppLocker rule to sign any unsigned apps.
 
 6. On the **Conditions** page, click **Path** and then click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Publisher](images/path-condition.png)
+    ![Screenshot with Path conditions selected in the Create Executable Rules wizard](images/path-condition.png)
 
 7. Click **Browse Folders...** and select the path for the unsigned apps. For this example, we’re using "C:\Program Files".
 
-    ![Create Packaged app Rules wizard, showing the Select applications page](images/select-path.png)
+    ![Screenshot of the Path field of the Create Executable Rules wizard](images/select-path.png)
 
 8. On the **Exceptions** page, add any exceptions and then click **Next**.
 
@@ -458,7 +458,7 @@ contoso.sharepoint.com,contoso.internalproxy1.com|contoso.visualstudio.com,conto
 Value format without proxy:
 
 ```console
-contoso.sharepoint.com,|contoso.visualstudio.com,|contoso.onedrive.com,
+contoso.sharepoint.com|contoso.visualstudio.com|contoso.onedrive.com,
 ```
 
 ### Protected domains
