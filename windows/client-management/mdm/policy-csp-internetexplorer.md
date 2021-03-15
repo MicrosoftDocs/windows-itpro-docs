@@ -5,9 +5,8 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -86,6 +85,9 @@ manager: dansimp
     <a href="#internetexplorer-allowonewordentry">InternetExplorer/AllowOneWordEntry</a>
   </dd>
   <dd>
+    <a href="#internetexplorer-allowsavetargetasinIEmode">InternetExplorer/AllowSaveTargetAsInIEMode</a>
+  </dd>
+  <dd>
     <a href="#internetexplorer-allowsitetozoneassignmentlist">InternetExplorer/AllowSiteToZoneAssignmentList</a>
   </dd>
   <dd>
@@ -111,6 +113,11 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#internetexplorer-consistentmimehandlinginternetexplorerprocesses">InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses</a>
+  </dd>
+
+<dd>
+    <a 
+    href="#internetexplorer-configureedgeredirectchannel">InternetExplorer/ConfigureEdgeRedirectChannel</a> 
   </dd>
   <dd>
     <a href="#internetexplorer-disableactivexversionlistautodownload">InternetExplorer/DisableActiveXVersionListAutoDownload</a>
@@ -159,6 +166,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#internetexplorer-disablehomepagechange">InternetExplorer/DisableHomePageChange</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-disableinternetexplorerapp">InternetExplorer/DisableInternetExplorerApp</a>
   </dd>
   <dd>
     <a href="#internetexplorer-disableignoringcertificateerrors">InternetExplorer/DisableIgnoringCertificateErrors</a>
@@ -354,6 +364,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#internetexplorer-intranetzonenavigatewindowsandframes">InternetExplorer/IntranetZoneNavigateWindowsAndFrames</a>
+  </dd>
+ <dd>
+    <a href="#internetexplorer-keepintranetsitesininternetexplorer">InternetExplorer/KeepIntranetSitesInInternetExplorer</a> 
   </dd>
   <dd>
     <a href="#internetexplorer-localmachinezoneallowaccesstodatasources">InternetExplorer/LocalMachineZoneAllowAccessToDataSources</a>
@@ -738,6 +751,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#internetexplorer-securityzonesuseonlymachinesettings">InternetExplorer/SecurityZonesUseOnlyMachineSettings</a>
+  </dd>
+ <dd>
+    <a href="#internetexplorer-sendsitesnotinenterprisesitelisttoedge">InternetExplorer/SendSitesNotInEnterpriseSiteListToEdge</a>
   </dd>
   <dd>
     <a href="#internetexplorer-specifyuseofactivexinstallerservice">InternetExplorer/SpecifyUseOfActiveXInstallerService</a>
@@ -2349,6 +2365,88 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="internetexplorer-allowsavetargetasinIEmode"></a>**InternetExplorer/AllowSaveTargetAsInIEMode**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows the administrator to enable "Save Target As" context menu in Internet Explorer mode.
+
+- If you enable this policy, "Save Target As" will show up in the Internet Explorer mode context menu and work the same as Internet Explorer.
+- If you disable or do not configure this policy setting, "Save Target As" will not show up in the Internet Explorer mode context menu.
+
+For more information, see [https://go.microsoft.com/fwlink/?linkid=2102115](https://go.microsoft.com/fwlink/?linkid=2102115)
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow "Save Target As" in Internet Explorer mode*
+-   GP name: *AllowSaveTargetAsInIEMode*
+-   GP path: *Windows Components/Internet Explorer*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+```xml
+ <policy name="AllowSaveTargetAsInIEMode" class="Both" displayName="$(string.AllowSaveTargetAsInIEMode)" explainText="$(string.IE_ExplainAllowSaveTargetAsInIEMode)" key="Software\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode" valueName="AllowSaveTargetAsInIEMode">
+      <parentCategory ref="InternetExplorer" />
+      <supportedOn ref="SUPPORTED_IE11" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+```
+
+<!--Policy-->
 <a href="" id="internetexplorer-allowsitetozoneassignmentlist"></a>**InternetExplorer/AllowSiteToZoneAssignmentList**  
 
 <!--SupportedSKUs-->
@@ -2978,6 +3076,298 @@ ADMX Info:
 
 <hr/>
 
+<a href="" id="internetexplorer-configureedgeredirectchannel"></a>**InternetExplorer/ConfigureEdgeRedirectChannel**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Enables you to configure up to three versions of Microsoft Edge to open a redirected site (in order of preference). Use this policy, if your environment is configured to redirect sites from Internet Explorer 11 to Microsoft Edge. If any of the chosen versions are not installed on the device, that preference will be bypassed.
+
+If both the Windows Update for the next version of Microsoft Edge* and Microsoft Edge Stable channel are installed, the following behaviors occur:
+
+- If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+ 1 = Microsoft Edge Stable
+ 2 = Microsoft Edge Beta version 77 or later
+ 3 = Microsoft Edge Dev version 77 or later
+ 4 = Microsoft Edge Canary version 77 or later
+
+- If you disable or do not configure this policy, Microsoft Edge Stable channel is used. This is the default behavior.
+
+If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge Stable channel are not installed, the following behaviors occur:
+
+- If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+ 0 = Microsoft Edge version 45 or earlier
+ 1 = Microsoft Edge Stable
+ 2 = Microsoft Edge Beta version 77 or later
+ 3 = Microsoft Edge Dev version 77 or later
+ 4 = Microsoft Edge Canary version 77 or later
+
+- If you disable or do not configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
+
+> [!NOTE]
+> For more information about the Windows update for the next version of Microsoft Edge including how to disable it, see [https://go.microsoft.com/fwlink/?linkid=2102115](https://go.microsoft.com/fwlink/?linkid=2102115). This update applies only to Windows 10 version 1709 and higher.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Configure which channel of Microsoft Edge to use for opening redirected sites*
+-   GP name: *NeedEdgeBrowser*
+-   GP path: *Windows Components/Internet Explorer*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+```xml
+ <policy name="NeedEdgeBrowser" class="Both" displayName="$(string.NeedEdgeBrowser)" explainText="$(string.IE_ExplainNeedEdgeBrowser)" key="Software\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode" presentation="$(presentation.NeedEdgeBrowser)">
+
+      <parentCategory ref="InternetExplorer" />
+
+      <supportedOn ref="SUPPORTED_IE11" />
+
+      <elements>
+
+        <enum id="NeedEdgeBrowser" valueName="NeedEdgeBrowser">
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_None)">
+
+            <value>
+
+              <delete />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumStable)">
+
+            <value>
+
+              <decimal value="1" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumBeta)">
+
+            <value>
+
+              <decimal value="2" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumDev)">
+
+            <value>
+
+              <decimal value="3" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumCanary)">
+
+            <value>
+
+              <decimal value="4" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_EdgeHTML)">
+
+            <value>
+
+              <decimal value="0" />
+
+            </value>
+
+          </item>
+
+        </enum>
+
+        <enum id="NeedEdgeBrowser2" valueName="NeedEdgeBrowser2">
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_None)">
+
+            <value>
+
+              <delete />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumStable)">
+
+            <value>
+
+              <decimal value="1" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumBeta)">
+
+            <value>
+
+              <decimal value="2" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumDev)">
+
+            <value>
+
+              <decimal value="3" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumCanary)">
+
+            <value>
+
+              <decimal value="4" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_EdgeHTML)">
+
+            <value>
+
+              <decimal value="0" />
+
+            </value>
+
+          </item>
+
+        </enum>
+
+        <enum id="NeedEdgeBrowser3" valueName="NeedEdgeBrowser3">
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_None)">
+
+            <value>
+
+              <delete />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumStable)">
+
+            <value>
+
+              <decimal value="1" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumBeta)">
+
+            <value>
+
+              <decimal value="2" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumDev)">
+
+            <value>
+
+              <decimal value="3" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_ChromiumCanary)">
+
+            <value>
+
+              <decimal value="4" />
+
+            </value>
+
+          </item>
+
+          <item displayName="$(string.NeedEdgeBrowserChoice_EdgeHTML)">
+
+            <value>
+
+              <decimal value="0" />
+
+            </value>
+
+          </item>
+
+        </enum>
+
+      </elements>
+
+    </policy>
+```
 <!--Policy-->
 <a href="" id="internetexplorer-consistentmimehandlinginternetexplorerprocesses"></a>**InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses**  
 
@@ -4250,8 +4640,102 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 
+<!--Policy-->
+<a href="" id="internetexplorer-disableinternetexplorerapp"></a>**InternetExplorer/DisableInternetExplorerApp**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
 <hr/>
 
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy lets you restrict launching of Internet Explorer as a standalone browser.
+
+If you enable this policy, it:
+- Prevents Internet Explorer 11 from launching as a standalone browser.
+- Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.
+- Redirects all attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.
+- Overrides any other policies that redirect to Internet Explorer 11.
+
+If you disable, or do not configure this policy, all sites are opened using the current active browser settings.
+
+> [!NOTE]
+> Microsoft Edge Stable Channel must be installed for this policy to take effect.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Disable Internet Explorer 11 as a standalone browser*
+-   GP name: *DisableInternetExplorerApp*
+-   GP path: *Windows Components/Internet Explorer*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+```xml
+ <policy name="DisableInternetExplorerApp" class="Both" displayName="$(string.DisableInternetExplorerApp)" explainText="$(string.IE_ExplainDisableInternetExplorerApp)" key="Software\Policies\Microsoft\Internet Explorer\Main" valueName="DisableInternetExplorerApp">
+
+      <parentCategory ref="InternetExplorer" />
+
+      <supportedOn ref="SUPPORTED_IE11" />
+
+      <enabledValue>
+
+        <decimal value="1" />
+
+      </enabledValue>
+
+      <disabledValue>
+
+        <decimal value="0" />
+
+      </disabledValue>
+
+    </policy>
+```
 <!--Policy-->
 <a href="" id="internetexplorer-disableignoringcertificateerrors"></a>**InternetExplorer/DisableIgnoringCertificateErrors**  
 
@@ -9007,6 +9491,105 @@ ADMX Info:
 
 <hr/>
 
+<!--Policy-->
+<a href="" id="internetexplorer-keepintranetsitesininternetexplorer"></a>**InternetExplorer/KeepIntranetSitesInInternetExplorer**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting prevents intranet sites from being opened in any browser except Internet Explorer.
+
+> [!NOTE]
+> If the [InternetExplorer/SendSitesNotInEnterpriseSiteListToEdg](#internetexplorer-policies)e policy is not enabled, then this policy has no effect.
+
+If you enable this policy, all intranet sites are opened in Internet Explorer 11. The only exceptions are sites listed in your Enterprise Mode Site List.
+If you disable or do not configure this policy, all intranet sites are automatically opened in Microsoft Edge.
+
+We strongly recommend keeping this policy in sync with the [Browser/SendIntranetTraffictoInternetExplorer](#internetexplorer-policies) policy. Additionally, it is best to enable this policy only if your intranet sites have known compatibility problems with Microsoft Edge.
+
+Related policies:
+- [Browser/SendIntranetTraffictoInternetExplorer](#internetexplorer-policies)
+- [InternetExplorer/SendSitesNotInEnterpriseSiteListToEdge](#internetexplorer-policies)
+
+For more information on how to use this policy together with other related policies to create the optimal configuration for your organization, see [https://go.microsoft.com/fwlink/?linkid=2094210.](https://go.microsoft.com/fwlink/?linkid=2094210)
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Keep all Intranet Sites in Internet Explorer*
+-   GP name: *KeepIntranetSitesInInternetExplorer*
+-   GP path: *Windows Components/Internet Explorer*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+```xml
+ <policy name="KeepIntranetSitesInInternetExplorer" class="Both" displayName="$(string.KeepIntranetSitesInInternetExplorer)" explainText="$(string.IE_ExplainKeepIntranetSitesInInternetExplorer)" key="Software\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode" valueName="KeepIntranetSitesInInternetExplorer">
+
+      <parentCategory ref="InternetExplorer" />
+
+      <supportedOn ref="SUPPORTED_IE11" />
+
+      <enabledValue>
+
+        <decimal value="1" />
+
+      </enabledValue>
+
+      <disabledValue>
+
+        <decimal value="0" />
+
+      </disabledValue>
+
+    </policy>
+```
 <!--Policy-->
 <a href="" id="internetexplorer-localmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LocalMachineZoneAllowAccessToDataSources**  
 
@@ -18428,6 +19011,100 @@ ADMX Info:
 
 <hr/>
 
+<!--Policy-->
+<a href="" id="internetexplorer-sendsitesnotinenterprisesitelisttoedge"></a>**InternetExplorer/SendSitesNotInEnterpriseSiteListToEdge**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This setting lets you decide whether to open all sites not included in the Enterprise Mode Site List in Microsoft Edge. If you use this setting, you must also turn on the [InternetExplorer/AllowEnterpriseModeSiteList ](#internetexplorer-policies) policy setting and you must include at least one site in the Enterprise Mode Site List.
+
+If you enable this setting, it automatically opens all sites not included in the Enterprise Mode Site List in Microsoft Edge.
+
+If you disable, or not configure this setting, then it opens all sites based on the currently active browser. 
+
+> [!NOTE]
+> If you have also enabled the [InternetExplorer/SendIntranetTraffictoInternetExplorer](#internetexplorer-policies) policy setting, then all intranet sites will continue to open in Internet Explorer 11.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Send all sites not included in the Enterprise Mode Site List to Microsoft Edge*
+-   GP name: *RestrictInternetExplorer*
+-   GP path: *Windows Components/Internet Explorer*
+-   GP ADMX file name: *inetres.admx*
+
+> [!NOTE]
+> This MDM policy is still outstanding.
+<!--/ADMXBacked-->
+<!--/Policy-->
+```xml
+  <policy name="RestrictInternetExplorer" class="Both" displayName="$(string.RestrictInternetExplorer)" explainText="$(string.IE_ExplainRestrictInternetExplorer)" key="Software\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode" valueName="RestrictIE">
+
+      <parentCategory ref="InternetExplorer" />
+
+      <supportedOn ref="SUPPORTED_IE11WIN10_1607" />
+
+      <enabledValue>
+
+        <decimal value="1" />
+
+      </enabledValue>
+
+      <disabledValue>
+
+        <decimal value="0" />
+
+      </disabledValue>
+
+    </policy>
+```
 <!--Policy-->
 <a href="" id="internetexplorer-specifyuseofactivexinstallerservice"></a>**InternetExplorer/SpecifyUseOfActiveXInstallerService**  
 
