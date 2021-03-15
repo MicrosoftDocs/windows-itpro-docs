@@ -105,7 +105,7 @@ If you plan to manage your machines using a management tool, you can onboard dev
 
 ## Tagging your machines when building your image 
 
-As part of your onboarding, you may want to consider setting a machine tag to be able to differentiate WVD machines more easily in the Microsoft Security Center. For more information, see 
+As part of your onboarding, you may want to consider setting a machine tag to can differentiate WVD machines more easily in the Microsoft Security Center. For more information, see 
 [Add device tags by setting a registry key value](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-tags#add-device-tags-by-setting-a-registry-key-value). 
 
 ## Other recommended configuration settings 
