@@ -26,8 +26,14 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+**Platform**
+- Android
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
 
 Learn how to deploy Defender for Endpoint for Android on Intune
 Company Portal enrolled devices. For more information about Intune device enrollment, see  [Enroll your
@@ -52,8 +58,7 @@ Learn how to deploy Defender for Endpoint for Android on Intune Company Portal -
 center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 **Android Apps** \> **Add \> Android store app** and choose **Select**.
 
-    ![Image of Microsoft Endpoint Manager Admin Center1](images/mda-addandroidstoreapp.png)
-
+   ![Image of Microsoft Endpoint Manager Admin Center add android store application](images/mda-addandroidstoreapp.png)
 
 2. On the **Add app** page and in the *App Information* section enter: 
 
@@ -64,7 +69,7 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 
    Other fields are optional. Select **Next**.
 
-   ![Image of Microsoft Endpoint Manager Admin Center2](images/mda-addappinfo.png)
+   ![Image of Microsoft Endpoint Manager Admin Center add app info](images/mda-addappinfo.png)
 
 3. In the *Assignments* section, go to the **Required** section and select **Add group.** You can then choose the user group(s) that you would like to target Defender for Endpoint for Android app. Choose **Select** and then **Next**.
 
@@ -72,14 +77,15 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
     >The selected user group should consist of Intune enrolled users.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center3](images/363bf30f7d69a94db578e8af0ddd044b.png)
+
+    > ![Image of the Microsoft Endpoint Manager Admin Center selected user groups](images/363bf30f7d69a94db578e8af0ddd044b.png)
 
 
 4. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
 
     In a few moments, the Defender for Endpoint app would be created successfully, and a notification would show up at the top-right corner of the page.
 
-    ![Image of Microsoft Endpoint Manager Admin Center4](images/86cbe56f88bb6e93e9c63303397fc24f.png)
+    ![Image of Microsoft Endpoint Manager Admin Center notification of defender endpoint app](images/86cbe56f88bb6e93e9c63303397fc24f.png)
 
 
 5. In the app information page that is displayed, in the **Monitor** section,
@@ -87,7 +93,7 @@ select **Device install status** to verify that the device installation has
 completed successfully.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center5](images/513cf5d59eaaef5d2b5bc122715b5844.png)
+    > ![Image of Microsoft Endpoint Manager Admin Center device install](images/513cf5d59eaaef5d2b5bc122715b5844.png)
 
 
 ### Complete onboarding and check status
@@ -124,14 +130,13 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 **Android Apps** \> **Add** and select **Managed Google Play app**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager admin center6](images/579ff59f31f599414cedf63051628b2e.png)
-
+    > ![Image of Microsoft Endpoint Manager admin center managed google play](images/579ff59f31f599414cedf63051628b2e.png)
 
 2. On your managed Google Play page that loads subsequently, go to the search
 box and lookup **Microsoft Defender.** Your search should display the Microsoft
 Defender for Endpoint app in your Managed Google Play. Click on the Microsoft Defender for Endpoint app from the Apps search result.
 
-    ![Image of Microsoft Endpoint Manager admin center7](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
+    ![Image of Microsoft Endpoint Manager admin center Apps search](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
 
 3. In the App description page that comes up next, you should be able to see app
 details on Defender for Endpoint. Review the information on the page and then
@@ -181,7 +186,7 @@ Defender ATP should be visible in the apps list.
 
     1. In the **Apps** page, go to **Policy > App configuration policies > Add > Managed devices**.
 
-       ![Image of Microsoft Endpoint Manager admin center8](images/android-mem.png)
+       ![Image of Microsoft Endpoint Manager admin center android managed devices](images/android-mem.png)
 
     1. In the **Create app configuration policy** page, enter the following details:
     
@@ -201,19 +206,19 @@ Defender ATP should be visible in the apps list.
        Then select **OK**.
 
        > [!div class="mx-imgBorder"]
-       > ![Image of create app configuration policy1](images/android-create-app-config.png)
+      > ![Image of android create app configuration policy](images/android-create-app-config.png)
 
     
     1. You should now see both the permissions listed and now you can autogrant both by choosing autogrant in the **Permission state** drop-down and then select **Next**.
 
        > [!div class="mx-imgBorder"]
-       > ![Image of create app configuration policy2](images/android-auto-grant.png)
+       > ![Image of android auto grant create app configuration policy](images/android-auto-grant.png)
 
 
     1. In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups to include** and selecting the applicable group and then selecting **Next**.  The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app. 
 
        > [!div class="mx-imgBorder"]
-       > ![Image of create app configuration policy3](images/android-select-group.png)
+       > ![Image of the create app configuration policy](images/android-select-group.png)
     
 
      1. In the **Review + Create** page that comes up next, review all the information and then select **Create**. <br>
@@ -221,7 +226,7 @@ Defender ATP should be visible in the apps list.
         The app configuration policy for Defender for Endpoint autogranting the storage permission is now assigned to the selected user group.
 
         > [!div class="mx-imgBorder"]
-        > ![Image of create app configuration policy4](images/android-review-create.png)
+        > ![Image of android review create app config policy](images/android-review-create.png)
 
 
 10. Select **Microsoft Defender ATP** app in the list \> **Properties** \>

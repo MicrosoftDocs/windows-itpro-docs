@@ -1,6 +1,6 @@
 ---
-title: Understand threat intelligence concepts in Microsoft Defender ATP
-description: Create custom threat alerts for your organization and learn the concepts around threat intelligence in Microsoft Defender Advanced Threat Protection.
+title: Understand threat intelligence concepts in Microsoft Defender for Endpoint
+description: Create custom threat alerts for your organization and learn the concepts around threat intelligence in Microsoft Defender for Endpoint
 keywords: threat intelligence, alert definitions, indicators of compromise, ioc
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -22,9 +22,9 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 
