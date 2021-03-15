@@ -266,6 +266,7 @@ ms.date: 10/08/2020
 - [ADMX_Explorer/DisableRoamedProfileInit](./policy-csp-admx-explorer.md#admx-explorer-disableroamedprofileinit)
 - [ADMX_Explorer/PreventItemCreationInUsersFilesFolder](./policy-csp-admx-explorer.md#admx-explorer-preventitemcreationinusersfilesfolder)
 - [ADMX_Explorer/TurnOffSPIAnimations](./policy-csp-admx-explorer.md#admx-explorer-turnoffspianimations)
+- [ADMX_FileRecovery/WdiScenarioExecutionPolicy](./policy-csp-admx-filerecovery.md#admx-filerecovery-wdiscenarioexecutionpolicy)
 - [ADMX_FileServerVSSProvider/Pol_EncryptProtocol](./policy-csp-admx-fileservervssprovider.md#admx-fileservervssprovider-pol-encryptprotocol)
 - [ADMX_FileSys/DisableCompression](./policy-csp-admx-filesys.md#admx-filesys-disablecompression)
 - [ADMX_FileSys/DisableDeleteNotification](./policy-csp-admx-filesys.md#admx-filesys-disabledeletenotification)
