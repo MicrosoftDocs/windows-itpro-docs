@@ -1,5 +1,5 @@
 ---
-title: LanguagePackManagement  CSP
+title: Language Pack Management  CSP
 description: Language Pack Management CSP allows a direct way to provision language packs remotely in Windows 10 and Windows 10 X.
 ms.reviewer: 
 manager: dansimp
@@ -11,7 +11,7 @@ author: nimishasatapathy
 ms.date: 03/12/2021
 ---
 
-# LanguagePackManagement CSP
+# Language Pack Management CSP
 
 
 Language Pack Management CSP allows a direct way to provision language packs remotely in Windows 10 and Windows 10 X. A separate CSP exists to allow provisioning of optional FODs (Handwriting recognition, Text-to-speech etc.) associated with a language. MDMs like Intune can use management commands remotely to devices to configure language related settings.

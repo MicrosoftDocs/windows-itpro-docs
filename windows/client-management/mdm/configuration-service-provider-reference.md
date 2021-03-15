@@ -1375,7 +1375,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[LanguagePackManagement CSP](languagepackmanagement-csp.md)
+[Language Pack Management CSP](language- pack-management-csp.md)
 
 <!--StartSKU-->
 <table>
