@@ -6,12 +6,12 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: high
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 audience: ITPro
-ms.date: 02/03/2021
+ms.date: 03/10/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge)
 
 > [!NOTE]
@@ -41,9 +41,7 @@ Here are some examples:
 > [!TIP]
 > For more examples and a discussion of the criteria we use to label applications for special attention from security features, see [How Microsoft identifies malware and potentially unwanted applications](../intelligence/criteria.md).
 
-Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up.
-
-PUA protection is supported on Windows 10, Windows Server 2019, and Windows Server 2016.
+Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up. PUA protection is supported on Windows 10, Windows Server 2019, and Windows Server 2016.
 
 ## Microsoft Edge
 
@@ -64,9 +62,7 @@ Although potentially unwanted application protection in Microsoft Edge (Chromium
 
 In Chromium-based Edge with PUA protection turned on, Microsoft Defender SmartScreen protects you from PUA-associated URLs.
 
-Admins can [configure](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Microsoft Defender SmartScreen work together to protect groups of users from PUA-associated URLs. There are several [group policy settings](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Microsoft
-Defender SmartScreen available, including [one for blocking PUA](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). In addition, admins can
-[configure Microsoft Defender SmartScreen](https://docs.microsoft.com/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Microsoft Defender SmartScreen on or off.
+Security admins can [configure](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Microsoft Defender SmartScreen work together to protect groups of users from PUA-associated URLs. There are several [group policy settings](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Microsoft Defender SmartScreen available, including [one for blocking PUA](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). In addition, admins can [configure Microsoft Defender SmartScreen](https://docs.microsoft.com/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Microsoft Defender SmartScreen on or off.
 
 Although Microsoft Defender for Endpoint has its own block list based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md) in the Microsoft Defender for Endpoint portal, Microsoft Defender SmartScreen respects the new settings.
 
@@ -77,9 +73,7 @@ The potentially unwanted application (PUA) protection feature in Microsoft Defen
 > [!NOTE]
 > This feature is available in Windows 10, Windows Server 2019, and Windows Server 2016.
 
-Microsoft Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
-
-When a PUA file is detected on an endpoint, Microsoft Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md)) in the same format as other threat detections. The notification is prefaced with `PUA:` to indicate its content.
+Microsoft Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine. When a PUA file is detected on an endpoint, Microsoft Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md)) in the same format as other threat detections. The notification is prefaced with `PUA:` to indicate its content.
 
 The notification appears in the usual [quarantine list within the Windows Security app](microsoft-defender-security-center-antivirus.md#detection-history).
 
@@ -112,13 +106,21 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 #### Use Group Policy to configure PUA protection
 
 1. Download and install [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
+
 2. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+
 3. Select the Group Policy Object you want to configure, and then choose **Edit**.
+
 4. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
+
 5. Expand the tree to **Windows Components** > **Microsoft Defender Antivirus**.
+
 6. Double-click **Configure detection for potentially unwanted applications**.
+
 7. Select **Enabled** to enable PUA protection.
+
 8. In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting works in your environment. Select **OK**.
+
 9. Deploy your Group Policy object as you usually do.
 
 #### Use PowerShell cmdlets to configure PUA protection

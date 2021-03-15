@@ -165,7 +165,6 @@
 #### [Policies in Policy CSP supported by HoloLens 2](policy-csps-supported-by-hololens2.md)
 #### [Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)
 #### [Policies in Policy CSP supported by HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
-#### [Policies in Policy CSP supported by Windows 10 IoT Enterprise](policy-csps-supported-by-iot-enterprise.md)
 #### [Policies in Policy CSP supported by Windows 10 IoT Core](policy-csps-supported-by-iot-core.md)
 #### [Policies in Policy CSP supported by Microsoft Surface Hub](policy-csps-supported-by-surface-hub.md)
 #### [Policy CSPs that can be set using Exchange Active Sync (EAS)](policy-csps-that-can-be-set-using-eas.md)

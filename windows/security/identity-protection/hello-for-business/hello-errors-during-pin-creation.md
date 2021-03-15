@@ -29,7 +29,7 @@ When you set up Windows Hello in Windows 10, you may get an error during the **
 
 The following image shows an example of an error during **Create a PIN**.
 
-![](images/pinerror.png)
+![PIN error](images/pinerror.png)
 
 ## Error mitigations
 
@@ -65,7 +65,7 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C03EA | Server failed to authorize user or device.                         | Check if the token is valid and user has permission to register Windows Hello for Business keys. |
 | 0x801C03EB | Server response http status is not valid                           | Sign out and then sign in again. |
 | 0x801C03EC | Unhandled exception from server.                                   | sign out and then sign in again. |
-| 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed. <br><br> -or- <br><br> Token was not found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure Active Directory (Azure AD) and rejoin.
+| 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed. <br><br> -or- <br><br> Token was not found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. <br><br> -or- <br><br> User does not have permissions to join to Azure AD. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure  AD and rejoin. <br> Allow user(s) to join to Azure AD under Azure AD Device settings.
 | 0x801C03EE | Attestation failed.                                                | Sign out and then sign in again. |
 | 0x801C03EF | The AIK certificate is no longer valid.                            | Sign out and then sign in again. |
 | 0x801C03F2 | Windows Hello key registration failed.                             | ERROR\_BAD\_DIRECTORY\_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue, refer to [Duplicate Attributes Prevent Dirsync](https://docs.microsoft.com/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync). Also, if no sync conflict exists, please verify that the "Mail/Email address" in AAD and the Primary SMTP address are the same in the proxy address.
