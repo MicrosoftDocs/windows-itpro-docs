@@ -17,11 +17,11 @@ ms.date: 06/26/2017
 
 The CM\_ProxyEntries configuration service provider is used to configure proxy connections on the mobile device.
 
-> **Note**  CM\_ProxyEntries CSP is only supported in Windows 10 Mobile.
-> 
-> 
-> 
-> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> [!NOTE]
+> CM\_ProxyEntries CSP is only supported in Windows 10 Mobile.
+
+> [!IMPORTANT]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 

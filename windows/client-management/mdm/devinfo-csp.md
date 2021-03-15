@@ -17,7 +17,8 @@ ms.date: 06/26/2017
 
 The DevInfo configuration service provider handles the managed object which provides device information to the OMA DM server. This device information is automatically sent to the OMA DM server at the beginning of each OMA DM session.
 
-> **Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
+> [!NOTE]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 
