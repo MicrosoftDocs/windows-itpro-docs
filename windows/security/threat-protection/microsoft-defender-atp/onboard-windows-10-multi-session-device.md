@@ -26,23 +26,23 @@ Applies to:
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Defender for Endpoint supports monitoring both VDI as well as Windows Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Windows Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
+Microsoft Defender for Endpoint supports monitoring both VDI and Windows Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Windows Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
 
 ## Before you begin
 
-See [considerations for non-persistent VDI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Although [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) does not provide non-persistence options, it does provide ways to use a Windows image that can be used to provision new hosts and redeploy machines. This increases volatility in the environment, and thus impacts what entries are created and maintained in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), potentially reducing visibility for your security analysts.
+See [considerations for non-persistent VDI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Although [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) doesn't provide non-persistence options, it does provide ways to use a Windows image that can be used to provision new hosts and redeploy machines. This increases volatility in the environment, and thus impacts what entries are created and maintained in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), potentially reducing visibility for your security analysts.
 
 > [!NOTE]
 > Depending on your choice of onboarding method, devices can appear in Microsoft Defender Security Center as either: 
 > - Single entry for each virtual desktop 
 > - Multiple entries for each virtual desktop 
 
-Microsoft recommends onboarding Windows Virtual Desktop as a single entry per virtual desktop. This ensures that the investigation experience in the Microsoft Defender Security Center is in the context of one device based on the machine name. Organizations that frequently delete and re-deploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the Microsoft Defender Security Center. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently. 
+Microsoft recommends onboarding Windows Virtual Desktop as a single entry per virtual desktop. This ensures that the investigation experience in the Microsoft Defender Security Center is in the context of one device based on the machine name. Organizations that frequently delete and redeploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the Microsoft Defender Security Center. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently. 
 
-Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD image. This way, you can be sure that this onboarding script runs immediately at first boot. It is executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you are using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy. 
+Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD image. This way, you can be sure that this onboarding script runs immediately at first boot. It's executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you're using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy. 
 
 > [!NOTE]
-> The placement and configuration of the VDI onboarding startup script on the WVD golden image configures it as a startup script that runs when the WVD starts. It is _not_ recommended to onboard the actual WVD golden image. Another consideration is the method used to run the script. It should run as early in the startup/provisioning process as possible to reduce the time between the machine being available to receive sessions and the device onboarding to the service. Below scenarios 1 & 2 take this into account.
+> The placement and configuration of the VDI onboarding startup script on the WVD golden image configures it as a startup script that runs when the WVD starts. It's _not_ recommended to onboard the actual WVD golden image. Another consideration is the method used to run the script. It should run as early in the startup/provisioning process as possible to reduce the time between the machine being available to receive sessions and the device onboarding to the service. Below scenarios 1 & 2 take this into account.
 
 ## Scenarios
 There are several ways to onboard a WVD host machine:
@@ -101,7 +101,7 @@ This scenario uses a centrally located script and runs it using a domain-based g
 If you plan to manage your machines using a management tool, you can onboard devices with Microsoft Endpoint Configuration Manager. For more information, see: [Onboard Windows 10 devices using Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) 
 
 > [!WARNING]
-> If you plan to use [Attack Surface reduction Rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), the rule “[Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used as it is incompatible with management through Microsoft Endpoint Manager because this rule blocks WMI commands the Configuration Manager client uses to function correctly. 
+> If you plan to use [Attack Surface reduction Rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), the rule “[Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used as it's incompatible with management through Microsoft Endpoint Manager because this rule blocks WMI commands the Configuration Manager client uses to function correctly. 
 
 ## Tagging your machines when building your image 
 
@@ -112,7 +112,7 @@ As part of your onboarding, you may want to consider setting a machine tag to be
 
 When building your image, you may want to configure initial protection settings as well. For more information, see [Other recommended configuration settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-gp#other-recommended-configuration-settings). 
 
-In addition, if you are using FSlogix user profiles, we recommend you exclude the following files from always-on protection: 
+Also, if you're using FSlogix user profiles, we recommend you exclude the following files from always-on protection: 
 
 ### Exclude Files
 
