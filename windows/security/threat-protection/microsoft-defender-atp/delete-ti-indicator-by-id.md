@@ -1,5 +1,5 @@
 ---
-title: Delete Indicator API.
+title: Delete Indicator API
 description: Learn how to use the Delete Indicator API to delete an Indicator entity by ID in Microsoft Defender for Endpoint.
 keywords: apis, public api, supported apis, delete, ti indicator, entity, id
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,6 @@ ms.technology: mde
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)  
 

@@ -64,13 +64,10 @@ To find your CommercialID within Azure:
 
 ## Enroll devices in Update Compliance
 
-Once you've added Update Compliance to a workspace in your Azure subscription, you'll need to configure any devices you want to monitor. There are two ways to configure devices to use Update Compliance.
+Once you've added Update Compliance to a workspace in your Azure subscription, you'll need to configure any devices you want to monitor. There are two ways to configure devices to use Update Compliance. After you configure devices, it can take up to 72 hours before devices are visible in the solution. Until then, Update Compliance will indicate it is still assessing devices.
 
 > [!NOTE]
-> If you use or plan to use [Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview), follow the steps in [Enroll devices in Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/enroll-devices) to also enroll devices to Update Compliance. You should be aware that the Commercial ID and Log Analytics workspace must be the same for both Desktop Analytics and Update Compliance.
-
-> [!NOTE]
-> After configuring devices via one of the two methods below, it can take up to 72 hours before devices are visible in the solution. Until then, Update Compliance will indicate it is still assessing devices.
+> If you use or plan to use [Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview), follow the steps in [Enroll devices in Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/enroll-devices) to also enroll devices in Update Compliance. You should be aware that the Commercial ID and Log Analytics workspace must be the same for both Desktop Analytics and Update Compliance.
 
 ### Configure devices using the Update Compliance Configuration Script
 

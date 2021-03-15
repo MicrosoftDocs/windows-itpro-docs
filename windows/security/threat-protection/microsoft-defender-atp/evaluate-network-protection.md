@@ -21,7 +21,7 @@ ms.technology: mde
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
+- - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [Network protection](network-protection.md) helps prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet.
 

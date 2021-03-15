@@ -26,7 +26,6 @@ ms.technology: mde
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -38,8 +37,8 @@ Topic | Description
 [View and organize the Alerts queue](alerts-queue.md) | Shows a list of alerts that were flagged in your network.
 [Manage alerts](manage-alerts.md) | Learn about how you can manage alerts such as change its status, assign it to a security operations member, and see the history of an alert.
 [Investigate alerts](investigate-alerts.md)| Investigate alerts that are affecting your network, understand what they mean, and how to resolve them.
-[Investigate files](investigate-files.md)| Investigate the details of a file associated with a specific alert, behaviour, or event. 
-[Investigate devices](investigate-machines.md)| Investigate the details of a device associated with a specific alert, behaviour, or event. 
+[Investigate files](investigate-files.md)| Investigate the details of a file associated with a specific alert, behavior, or event. 
+[Investigate devices](investigate-machines.md)| Investigate the details of a device associated with a specific alert, behavior, or event. 
 [Investigate an IP address](investigate-ip.md) | Examine possible communication between devices in your network and external internet protocol (IP) addresses.
 [Investigate a domain](investigate-domain.md) | Investigate a domain to see if devices and servers in your network have been communicating with a known malicious domain. 
 [Investigate a user account](investigate-user.md) | Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.  
