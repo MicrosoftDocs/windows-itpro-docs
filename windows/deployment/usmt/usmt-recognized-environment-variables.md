@@ -101,7 +101,7 @@ You can use these variables within sections in the .xml files with `context=User
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>CSIDL_COMMON_STARTUP</strong></p></td>
-<td align="left"><p>The file-system directory that contains the programs that appear in the <strong>Startup</strong> folder for all users. A typical path in Windows XP is C:\Documents and Settings\All Users\Start Menu\Programs\Startup. A typical path is C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup.</p></td>
+<td align="left"><p>The file-system directory that contains the programs that appear in the Startup folder for all users. A typical path in Windows XP is C:\Documents and Settings\All Users\Start Menu\Programs\Startup. A typical path is C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CSIDL_COMMON_TEMPLATES</strong></p></td>
@@ -116,7 +116,7 @@ You can use these variables within sections in the .xml files with `context=User
 <td align="left"><p>Refers to the Appdata folder inside %<strong>DEFAULTUSERPROFILE</strong>%.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>CSIDL_DEFAULT_LOCAL_APPDATA</strong></p></td>
+<td align="left"><p>C<strong>SIDL_DEFAULT_LOCAL_APPDATA</strong></p></td>
 <td align="left"><p>Refers to the local Appdata folder inside %<strong>DEFAULTUSERPROFILE</strong>%.</p></td>
 </tr>
 <tr class="even">
@@ -319,7 +319,7 @@ You can use these variables in the .xml files within sections with `context=User
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CSIDL_CONTACTS</strong></p></td>
-<td align="left"><p>This refers to the Contacts folder in <strong>%CSIDL_PROFILE%</strong>.</p></td>
+<td align="left"><p>This refers to the Contacts folder in %<strong>CSIDL_PROFILE</strong>%.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>CSIDL_CONTROLS</strong></p></td>
@@ -339,7 +339,7 @@ You can use these variables in the .xml files within sections with `context=User
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>CSIDL_DRIVES</strong></p></td>
-<td align="left"><p>The virtual folder representing My Computer that contains everything on the local computer: storage devices, printers, and <strong>Control Panel</strong>. The folder may also contain mapped network drives.</p></td>
+<td align="left"><p>The virtual folder representing My Computer that contains everything on the local computer: storage devices, printers, and Control Panel. The folder may also contain mapped network drives.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CSIDL_FAVORITES</strong></p></td>
@@ -379,7 +379,7 @@ You can use these variables in the .xml files within sections with `context=User
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>CSIDL_NETHOOD</strong></p></td>
-<td align="left"><p>A file-system directory that contains the link objects that may exist in the My Network Places virtual folder. It is not the same as <strong>CSIDL_NETWORK</strong>, which represents the network namespace root. A typical path is C:\Users\Username\AppData\Roaming\Microsoft\Windows\Network Shortcuts.</p></td>
+<td align="left"><p>A file-system directory that contains the link objects that may exist in the My Network Places virtual folder. It is not the same as CSIDL_NETWORK, which represents the network namespace root. A typical path is C:\Users\Username\AppData\Roaming\Microsoft\Windows\Network Shortcuts.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CSIDL_NETWORK</strong></p></td>
@@ -464,6 +464,8 @@ You can use these variables in the .xml files within sections with `context=User
  
 
  
+
+
 
 
 
