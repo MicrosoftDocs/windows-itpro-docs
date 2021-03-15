@@ -19,10 +19,37 @@ The Update configuration service provider enables IT administrators to manage an
 > [!Note]
 > The Update CSP functionality of 'AprrovedUpdates' is not recommended for managing desktop devices. To manage updates to desktop devices from Windows Update, see the [Policy CSP - Updates](policy-csp-update.md) documentation for the recommended policies. 
 
-The following diagram shows the Update configuration service provider in tree format.
+The following shows the Update configuration service provider in tree format.
 
-![update csp diagram](images/provisioning-csp-update.png)
-
+```./Vendor/MSFT
+Update
+----ApprovedUpdates
+--------Approved Update Guid
+------------ApprovedTime
+----FailedUpdates
+--------Failed Update Guid
+------------HResult
+------------Status
+------------RevisionNumber
+----InstalledUpdates
+--------Installed Update Guid
+------------RevisionNumber
+----InstallableUpdates
+--------Installable Update Guid
+------------Type
+------------RevisionNumber
+----PendingRebootUpdates
+--------Pending Reboot Update Guid
+------------InstalledTime
+------------RevisionNumber
+----LastSuccessfulScanTime
+----DeferUpgrade
+----Rollback
+--------QualityUpdate
+--------FeatureUpdate
+--------QualityUpdateStatus
+--------FeatureUpdateStatus
+```
 <a href="" id="update"></a>**Update**
 <p style="margin-left: 20px">The root node.
 
