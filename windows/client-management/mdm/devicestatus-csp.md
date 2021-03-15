@@ -17,10 +17,52 @@ ms.date: 04/30/2019
 
 The DeviceStatus configuration service provider is used by the enterprise to keep track of device inventory and query the state of compliance of these devices with their enterprise policies.
 
-The following image shows the DeviceStatus configuration service provider in tree format.
-
-![devicestatus csp](images/provisioning-csp-devicestatus.png)
-
+The following shows the DeviceStatus configuration service provider in tree format.
+```
+./Vendor/MSFT
+DeviceStatus
+----SecureBootState
+----CellularIdentities
+--------IMEI
+------------IMSI
+------------ICCID
+------------PhoneNumber
+------------CommercializationOperator
+------------RoamingStatus
+------------RoamingCompliance
+----NetworkIdentifiers
+--------MacAddress
+------------IPAddressV4
+------------IPAddressV6
+------------IsConnected
+------------Type
+----Compliance
+--------EncryptionCompliance
+----TPM
+--------SpecificationVersion
+----OS
+--------Edition
+--------Mode
+----Antivirus
+--------SignatureStatus
+--------Status
+----Antispyware
+--------SignatureStatus
+--------Status
+----Firewall
+--------Status
+----UAC
+--------Status
+----Battery
+--------Status
+--------EstimatedChargeRemaining
+--------EstimatedRuntime
+----DomainName
+----DeviceGuard
+--------VirtualizationBasedSecurityHwReq
+--------VirtualizationBasedSecurityStatus
+--------LsaCfgCredGuardStatus
+```
 <a href="" id="devicestatus"></a>**DeviceStatus**  
 The root node for the DeviceStatus configuration service provider.
 

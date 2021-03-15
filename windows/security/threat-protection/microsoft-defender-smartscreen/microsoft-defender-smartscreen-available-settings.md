@@ -26,7 +26,7 @@ See [Windows 10 (and later) settings to protect devices using Intune](https://do
 
 
 ## Group Policy settings
-SmartScreen uses registry-based Administrative Template policy settings. For more info about Group Policy, see the [Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514). This site provides links to the latest technical documentation, videos, and downloads for Group Policy.
+SmartScreen uses registry-based Administrative Template policy settings.
 <table>
 <tr>
 <th align="left">Setting</th>

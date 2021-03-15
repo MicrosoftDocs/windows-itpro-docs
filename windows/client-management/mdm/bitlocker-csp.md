@@ -16,7 +16,8 @@ manager: dansimp
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it is also supported in Windows 10 Pro.
 
 > [!NOTE]
-> Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.  
+> Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.
+> 
 > You must send all the settings together in a single SyncML to be effective.
 
 A Get operation on any of the settings, except for RequireDeviceEncryption and RequireStorageCardEncryption, returns
@@ -24,11 +25,29 @@ the setting configured by the admin.
 
 For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if Trusted Platform Module (TPM) protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that the a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
 
-The following diagram shows the BitLocker configuration service provider in tree format.
-
-![BitLocker csp](images/provisioning-csp-bitlocker.png)
-
-
+The following shows the BitLocker configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+BitLocker
+----RequireStorageCardEncryption
+----RequireDeviceEncryption
+----EncryptionMethodByDriveType
+----SystemDrivesRequireStartupAuthentication
+----SystemDrivesMinimumPINLength
+----SystemDrivesRecoveryMessage
+----SystemDrivesRecoveryOptions
+----FixedDrivesRecoveryOptions
+----FixedDrivesRequireEncryption
+----RemovableDrivesRequireEncryption
+----AllowWarningForOtherDiskEncryption
+----AllowStandardUserEncryption
+----ConfigureRecoveryPasswordRotation
+----RotateRecoveryPasswords
+----Status
+--------DeviceEncryptionStatus
+--------RotateRecoveryPasswordsStatus
+--------RotateRecoveryPasswordsRequestID
+```
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
 Defines the root node for the BitLocker configuration service provider.
 <!--Policy-->
@@ -225,18 +244,18 @@ EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for remov
   If you want to disable this policy use the following SyncML: 
 
 ```xml
-                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethodByDriveType</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data><disabled/></Data>
-                           </Item>
-                         </Replace>
+<Replace>
+  <CmdID>$CmdID$</CmdID>
+    <Item>
+      <Target>
+          <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethodByDriveType</LocURI>
+      </Target>
+      <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+      </Meta>
+      <Data><disabled/></Data>
+    </Item>
+</Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.

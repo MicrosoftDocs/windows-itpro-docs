@@ -22,23 +22,21 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 You can gain more insight in an investigation by analyzing the events that happened on a specific device. First, select the device of interest from the [Devices list](machines-view-overview.md). On the device page, you can select the **Timeline** tab to view all the events that occurred on the device.
 
 ## Understand techniques in the timeline
 
->[!IMPORTANT]
->Some information relates to a prereleased product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-In Microsoft Defender for Endpoint, **Techniques** are an additional data type in the event timeline. Techniques provide more insight on activities associated with [MITRE ATT&CK](https://attack.mitre.org/) techniques or sub-techniques. 
+**Techniques** are an additional data type in the event timeline. Techniques provide more insight on activities associated with [MITRE ATT&CK](https://attack.mitre.org/) techniques or sub-techniques. 
 
 This feature simplifies the investigation experience by helping analysts understand the activities that were observed on a device. Analysts can then decide to investigate further.
 
-For public preview, Techniques are available by default and shown together with events when a device's timeline is viewed. 
+Techniques are available by default and shown together with events when a device's timeline is viewed. 
 
-![Techniques in device timeline screenshot](images/device-timeline-with-techniques.png)
+![Techniques in device timeline screenshot](images/device-timeline-2.png)
 
 Techniques are highlighted in bold text and appear with a blue icon on the left. The corresponding MITRE ATT&CK ID and technique name also appear as tags under Additional information. 
 
