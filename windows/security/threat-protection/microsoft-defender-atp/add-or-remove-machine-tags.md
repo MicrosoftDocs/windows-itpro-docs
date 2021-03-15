@@ -20,8 +20,8 @@ ms.technology: mde
 # Add or Remove Machine Tags API
 
 **Applies to:**
+2154037
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -90,7 +90,7 @@ If successful, this method returns 200 - Ok response code and the updated Machin
 
 Here is an example of a request that adds machine tag.
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/tags
 ```
 

@@ -29,8 +29,6 @@ ms.custom: AIR
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2118804)
-
 
 Want to see how it works? Watch the following video: <br/><br/>
 
