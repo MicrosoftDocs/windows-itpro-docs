@@ -237,11 +237,11 @@ After the VM restarts, during OOBE, it's fine to select **Set up for personal us
 
    ![Windows setup example 7](images/winsetup7.png)
 
-Once the installation is complete, sign in and verify that you are at the Windows 10 desktop, then create your first Hyper-V checkpoint. Checkpoints are used to restore the VM to a previous state. You will create multiple checkpoints throughout this lab, which can be used later to go through the process again.
+Once the installation is complete, sign in and verify that you are at the Windows 10 desktop, then create your first Hyper-V checkpoint. Checkpoints are used to restore the VM to a previous state.
 
    ![Windows setup example 8](images/winsetup8.png)
 
-To create your first checkpoint, open an elevated Windows PowerShell prompt on the computer running Hyper-V (not on the VM) and run the following:
+To create a checkpoint, open an elevated Windows PowerShell prompt on the computer running Hyper-V (not on the VM) and run the following:
 
 ```powershell
 Checkpoint-VM -Name WindowsAutopilot -SnapshotName "Finished Windows install"
@@ -573,9 +573,9 @@ Soon after reaching the desktop, the device should show up in Intune as an **ena
 Once you select a language and a keyboard layout, your company branded sign-in screen should appear. Provide your Azure Active Directory credentials and you're all done.
 
 > [!TIP]
-> If you recieve a message that "Something went wrong" and it "Looks like we can't connect to the URL for your organization's MDM terms of use" then verify you have correctly [assigned licenses](https://docs.microsoft.com/mem/intune/fundamentals/licenses-assign) to the current user.
+> If you receive a message that "Something went wrong" and it "Looks like we can't connect to the URL for your organization's MDM terms of use", verify that you have correctly [assigned licenses](https://docs.microsoft.com/mem/intune/fundamentals/licenses-assign) to the current user.
 
-Windows Autopilot will now take over to automatically join your device into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoints you've created to go through this process again with different settings.
+Windows Autopilot will now take over to automatically join your device into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoint you've created to go through this process again with different settings.
 
 ## Remove devices from Autopilot
 

@@ -19,10 +19,21 @@ The DeveloperSetup configuration service provider (CSP) is used to configure Dev
 > [!NOTE]
 > The DeveloperSetup configuration service provider (CSP) is only supported in Windows 10 Holographic Enterprise edition and with runtime provisioning via provisioning packages. It is not supported in MDM.
 
-The following diagram shows the DeveloperSetup configuration service provider in tree format.
-
-![developersetup csp diagram](images/provisioning-csp-developersetup.png)
-
+The following shows the DeveloperSetup configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+DeveloperSetup
+----EnableDeveloperMode
+----DevicePortal
+--------Authentication
+------------Mode
+------------BasicAuth
+----------------Username
+----------------Password
+--------Connection
+------------HttpPort
+------------HttpsPort
+```
 <a href="" id="developersetup"></a>**DeveloperSetup**  
 <p style="margin-left: 20px">The root node for the DeveloperSetup configuration service provider.
 
