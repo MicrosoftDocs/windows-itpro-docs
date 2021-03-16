@@ -236,6 +236,9 @@ ADMX Info:
 - GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
 
+> [!NOTE]
+> To enforce this policy, device restart or user logon/logoff is required. 
+
 <a href="" id="allowcameramicrophoneredirection"></a>**Settings/AllowCameraMicrophoneRedirection**  
 Added in Windows 10, version 1809. This policy setting allows you to determine whether applications inside Microsoft Defender Application Guard can access the device’s camera and microphone when these settings are enabled on the user’s device.
 
