@@ -16,7 +16,6 @@ ms.date: 09/16/2019
 
 > [!div class="op_single_selector"]
 >
-> - [IoT Enterprise](policy-csps-supported-by-iot-enterprise.md)
 > - [IoT Core](policy-csps-supported-by-iot-core.md)
 >
 

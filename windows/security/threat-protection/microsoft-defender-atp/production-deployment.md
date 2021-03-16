@@ -1,6 +1,6 @@
 ---
-title: Set up Microsoft Defender ATP deployment
-description: Learn how to setup the deployment for Microsoft Defender ATP
+title: Set up Microsoft Defender for Endpoint deployment
+description: Learn how to set up the deployment for Microsoft Defender for Endpoint
 keywords: deploy, setup, licensing validation, tenant configuration, network configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -27,7 +27,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -47,7 +47,7 @@ In this deployment scenario, you'll be guided through the steps on:
 
 
 >[!NOTE]
->For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Defender for Endpoint supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
+>For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Defender for Endpoint supports the use of other onboarding tools but won't cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
 
 ## Check license state
 
@@ -59,7 +59,7 @@ Checking for the license state and whether it got properly provisioned, can be d
 
 1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
-    On the screen, you will see all the provisioned licenses and their current **Status**.
+    On the screen, you'll see all the provisioned licenses and their current **Status**.
 
     ![Image of billing licenses](images/atp-billing-subscriptions.png)
 
@@ -93,7 +93,7 @@ When accessing Microsoft Defender Security Center for the first time, a wizard t
 
 4. Set up preferences.
 
-   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU, or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation. 
+   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU, or UK. You can't change the location after this set up and Microsoft won't transfer the data from the specified geolocation. 
 
     **Data retention** - The default is six months.
 
@@ -109,7 +109,7 @@ When accessing Microsoft Defender Security Center for the first time, a wizard t
 
 
 ## Network configuration
-If the organization does not require the endpoints to use a Proxy to access the
+If the organization doesn't require the endpoints to use a Proxy to access the
 Internet, skip this section.
 
 The Microsoft Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to
@@ -127,15 +127,11 @@ the following discovery methods:
 
 -   Web Proxy Autodiscovery Protocol (WPAD)
 
-If a Transparent proxy or WPAD has been implemented in the network topology,
+If a Transparent proxy or WPAD has been implemented in the network topology, 
 there is no need for special configuration settings. For more information on
 Microsoft Defender for Endpoint URL exclusions in the proxy, see the
-Appendix section in this document for the URLs allow list or on
-[Microsoft
-Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
-
-> [!NOTE]
-> For a detailed list of URLs that need to be allowed, please see [this article](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
+[Proxy Service URLs](production-deployment.md#proxy-service-urls) section in this document for the URLs allow list or on
+[Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 **Manual static proxy configuration:**
 
@@ -226,27 +222,30 @@ The following downloadable spreadsheet lists the services and their associated U
 
 |**Spreadsheet of domains list**|**Description**|
 |:-----|:-----|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
+|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 
-###  Microsoft Defender for Endpoint service backend IP range
+###  Microsoft Defender for Endpoint service backend IP ranges
 
-If you network devices don't support the URLs listed in the prior section, you can use the following information.
+If your network devices don't support DNS-based rules, use IP ranges instead.
 
-Defender for Endpoint is built on Azure cloud, deployed in the following regions:
+Defender for Endpoint is built in Azure cloud, deployed in the following regions:
 
-- \+\<Region Name="uswestcentral">
-- \+\<Region Name="useast2">
-- \+\<Region Name="useast">
-- \+\<Region Name="europenorth">
-- \+\<Region Name="europewest">
-- \+\<Region Name="uksouth">
-- \+\<Region Name="ukwest">
+- AzureCloud.eastus
+- AzureCloud.eastus2
+- AzureCloud.westcentralus
+- AzureCloud.northeurope
+- AzureCloud.westeurope
+- AzureCloud.uksouth
+- AzureCloud.ukwest
 
-You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+You can find the Azure IP ranges in [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519).
 
 > [!NOTE]
-> As a cloud-based solution, the IP address range can change. It's recommended you move to DNS resolving setting.
+> As a cloud-based solution, the IP address ranges can change. It's recommended you move to DNS-based rules.
+
+> [!NOTE]
+> If you are a US Government customer, please see the corresponding section in the [Defender for Endpoint for US Government](gov.md#service-backend-ip-ranges) page.
 
 ## Next step
 

@@ -273,6 +273,7 @@
 
 ### [Microsoft Defender for Endpoint for iOS]()
 #### [Overview of Microsoft Defender for Endpoint for iOS](microsoft-defender-atp/microsoft-defender-atp-ios.md)
+#### [What's New](microsoft-defender-atp/ios-whatsnew.md)
 
 #### [Deploy]()
 ##### [Deploy Microsoft Defender for Endpoint for iOS via Intune](microsoft-defender-atp/ios-install.md)
@@ -433,7 +434,8 @@
 ##### [DeviceNetworkEvents](microsoft-defender-atp/advanced-hunting-devicenetworkevents-table.md)
 ##### [DeviceProcessEvents](microsoft-defender-atp/advanced-hunting-deviceprocessevents-table.md)
 ##### [DeviceRegistryEvents](microsoft-defender-atp/advanced-hunting-deviceregistryevents-table.md)
-##### [DeviceTvmSoftwareInventoryVulnerabilities](microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md)
+##### [DeviceTvmSoftwareInventory](microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventory-table.md)
+##### [DeviceTvmSoftwareVulnerabilities](microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)
 ##### [DeviceTvmSoftwareVulnerabilitiesKB](microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)
 ##### [DeviceTvmSecureConfigurationAssessment](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md)
 ##### [DeviceTvmSecureConfigurationAssessmentKB](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)

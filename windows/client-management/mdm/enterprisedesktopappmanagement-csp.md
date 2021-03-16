@@ -19,10 +19,24 @@ The EnterpriseDesktopAppManagement configuration service provider is used to han
 
 Application installations can take some time to complete, hence they are done asynchronously. When the Exec command is completed, the client can send a generic alert to the management server with a status, whether it's a failure or success. For a SyncML example, see [Alert example](#alert-example).
 
-The following diagram shows the EnterpriseDesktopAppManagement CSP in tree format.
-
-![enterprisedesktopappmanagement csp](images/provisioning-csp-enterprisedesktopappmanagement.png)
-
+The following shows the EnterpriseDesktopAppManagement CSP in tree format.
+```
+./Device/Vendor/MSFT
+EnterpriseDesktopAppManagement
+----MSI
+--------ProductID
+------------Version
+------------Name
+------------Publisher
+------------InstallPath
+------------InstallDate
+------------DownloadInstall
+------------Status
+------------LastError
+------------LastErrorDesc
+--------UpgradeCode
+------------Guid
+```
 <a href="" id="--vendor-msft-enterprisedesktopappmanagement"></a>**./Device/Vendor/MSFT/EnterpriseDesktopAppManagement**
 The root node for the EnterpriseDesktopAppManagement configuration service provider.
 

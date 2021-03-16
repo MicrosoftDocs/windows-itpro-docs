@@ -137,7 +137,7 @@ ms.date: 07/18/2019
 - [Cellular/ShowAppCellularAccessUI](./policy-csp-cellular.md#cellular-showappcellularaccessui)
 - [Connectivity/AllowCellularDataRoaming](./policy-csp-connectivity.md#connectivity-allowcellulardataroaming)
 - [Connectivity/AllowPhonePCLinking](./policy-csp-connectivity.md#connectivity-allowphonepclinking)
-- [Connectivity/DiablePrintingOverHTTP](./policy-csp-connectivity.md#connectivity-diableprintingoverhttp)
+- [Connectivity/DiablePrintingOverHTTP](./policy-csp-connectivity.md#connectivity-disableprintingoverhttp)
 - [Connectivity/DisableDownloadingOfPrintDriversOverHTTP](./policy-csp-connectivity.md#connectivity-disabledownloadingofprintdriversoverhttp)
 - [Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards](./policy-csp-connectivity.md#connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards)
 - [Connectivity/DisallowNetworkConnectivityActiveTests](./policy-csp-connectivity.md#connectivity-disallownetworkconnectivityactivetests)

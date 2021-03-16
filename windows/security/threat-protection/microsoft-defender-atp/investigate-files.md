@@ -1,5 +1,5 @@
 ---
-title: Investigate Microsoft Defender Advanced Threat Protection files
+title: Investigate Microsoft Defender for Endpoint files
 description: Use the investigation options to get details on files associated with alerts, behaviors, or events.
 keywords: investigate, investigation, file, malicious activity, attack motivation, deep analysis, deep analysis report
 search.product: eADQiWindows 10XVcnh
@@ -26,7 +26,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -65,7 +65,12 @@ For more information on these actions, see [Take response action on a file](resp
 
 The file details, incident, malware detection, and file prevalence cards display various attributes about the file.
 
-You'll see details such as the file’s MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file’s prevalence, both worldwide and within your organizations.
+You'll see details such as the file’s MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file’s prevalence.
+
+The file prevalence card shows where the file was seen in devices in the organization and worldwide. 
+
+> [!NOTE] 
+> Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the RBAC scope that a user has. Meaning, if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
 
 ![Image of file information](images/atp-file-information.png)
 

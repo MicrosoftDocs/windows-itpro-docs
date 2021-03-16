@@ -15,10 +15,27 @@ manager: dansimp
 
 The WindowsDefenderApplicationGuard configuration service provider (CSP) is used by the enterprise to configure the settings in Microsoft Defender Application Guard. This CSP was added in Windows 10, version 1709.
 
-The following diagram shows the WindowsDefenderApplicationGuard configuration service provider in tree format.
-
-![windowsdefenderapplicationguard csp](images/provisioning-csp-windowsdefenderapplicationguard.png)
-
+The following shows the WindowsDefenderApplicationGuard configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+WindowsDefenderApplicationGuard
+----Settings
+--------AllowWindowsDefenderApplicationGuard
+--------ClipboardFileType
+--------ClipboardSettings
+--------PrintingSettings
+--------BlockNonEnterpriseContent
+--------AllowPersistence
+--------AllowVirtualGPU
+--------SaveFilesToHost
+--------CertificateThumbprints
+--------AllowCameraMicrophoneRedirection
+----Status
+----PlatformStatus
+----InstallWindowsDefenderApplicationGuard
+----Audit
+--------AuditApplicationGuard
+```
 <a href="" id="windowsdefenderapplicationguard"></a>**./Device/Vendor/MSFT/WindowsDefenderApplicationGuard**  
 Root node. Supported operation is Get.
 
@@ -218,6 +235,9 @@ ADMX Info:
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
+
+> [!NOTE]
+> To enforce this policy, device restart or user logon/logoff is required. 
 
 <a href="" id="allowcameramicrophoneredirection"></a>**Settings/AllowCameraMicrophoneRedirection**  
 Added in Windows 10, version 1809. This policy setting allows you to determine whether applications inside Microsoft Defender Application Guard can access the device’s camera and microphone when these settings are enabled on the user’s device.
