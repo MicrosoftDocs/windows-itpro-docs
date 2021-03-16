@@ -47,9 +47,6 @@ GCC | GCC High | DoD
 Microsoft Defender for Endpoint Server GCC | Microsoft Defender for Endpoint Server for GCC High | Microsoft Defender for Endpoint Server for DOD
 Azure Defender for Servers | Azure Defender for Servers - Government | Azure Defender for Servers - Government
 
-> [!NOTE]
-> DoD licensing will only be available at DoD general availability.
-
 <br>
 
 ## Portal URLs
@@ -59,7 +56,7 @@ Customer type | Portal URL
 :---|:---
 GCC | https://gcc.securitycenter.microsoft.us
 GCC High | https://securitycenter.microsoft.us
-DoD (PREVIEW) | https://securitycenter.microsoft.us
+DoD | https://securitycenter.microsoft.us
 
 <br>
 
@@ -68,7 +65,7 @@ DoD (PREVIEW) | https://securitycenter.microsoft.us
 ### Standalone OS versions
 The following OS versions are supported:
 
-OS version | GCC | GCC High | DoD (PREVIEW)
+OS version | GCC | GCC High | DoD
 :---|:---|:---|:---
 Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4586853)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4586853)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
@@ -100,7 +97,7 @@ iOS | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images
 ### OS versions when using Azure Defender for Servers
 The following OS versions are supported when using [Azure Defender for Servers](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
 
-OS version | GCC | GCC High | DoD (PREVIEW)
+OS version | GCC | GCC High | DoD
 :---|:---|:---|:---
 Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
@@ -143,7 +140,7 @@ You can find the Azure IP ranges in [Azure IP Ranges and Service Tags – US Gov
 ## API
 Instead of the public URIs listed in our [API documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro), you'll need to use the following URIs:
 
-Endpoint type | GCC | GCC High & DoD (PREVIEW)
+Endpoint type | GCC | GCC High & DoD
 :---|:---|:---
 Login | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
 Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
@@ -156,7 +153,7 @@ Defender for Endpoint for US Government customers doesn't have complete parity w
 
 These are the known gaps as of March 2021:
 
-Feature name | GCC | GCC High | DoD (PREVIEW)
+Feature name | GCC | GCC High | DoD
 :---|:---|:---|:---
 Automated investigation and remediation: Live response | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Automated investigation and remediation: Response to Office 365 alerts | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
