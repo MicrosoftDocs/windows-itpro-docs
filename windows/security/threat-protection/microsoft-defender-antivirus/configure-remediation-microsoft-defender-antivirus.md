@@ -42,7 +42,7 @@ To configure these settings:
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components > Microsoft Defender Antivirus** and then the **Location** specified in the table below.
+3. Expand the tree to **Windows components >Windows Defender Antivirus** and then the **Location** specified in the table below.
 
 4. Select the policy **Setting** as specified in the table below, and set the option to your desired configuration. Select **OK**, and repeat for any other settings.
 
@@ -51,7 +51,7 @@ To configure these settings:
 |Scan | Create a system restore point | A system restore point will be created each day before cleaning or scanning is attempted | Disabled|
 |Scan | Turn on removal of items from scan history folder | Specify how many days items should be kept in the scan history | 30 days |
 |Root | Turn off routine remediation | You can specify whether Microsoft Defender Antivirus automatically remediates threats, or if it should ask the endpoint user what to do. | Disabled (threats are remediated automatically) |
-|Quarantine | Configure removal of items from Quarantine folder | Specify how many days items should be kept in quarantine before being removed | Never removed |
+|Quarantine | Configure removal of items from Quarantine folder | Specify how many days items should be kept in quarantine before being removed | 90 days |
 |Threats | Specify threat alert levels at which default action should not be taken when detected | Every threat that is detected by Microsoft Defender Antivirus is assigned a threat level (low, medium, high, or severe). You can use this setting to define how all threats for each of the threat levels should be remediated (quarantined, removed, or ignored) | Not applicable |
 |Threats | Specify threats upon which default action should not be taken when detected | Specify how specific threats (using their threat ID) should be remediated. You can specify whether the specific threat should be quarantined, removed, or ignored | Not applicable |
 
