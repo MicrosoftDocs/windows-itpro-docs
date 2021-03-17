@@ -31,6 +31,11 @@ ms.date: 03/08/2021
 Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet. Network protection expands the scope of [Microsoft Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
 Network protection is supported on Windows, beginning with Windows 10, version 1709. 
+Network Protection is not yet supported on other operating systems. However, please review Web protection - [Windows security | Microsoft Docs] (https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/web-protection-overview)  to find out which Web Protection functionality is supported using the Edge (Chromium) browser.
+
+Network Protection extends the protection in [Web protection] (https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/web-protection-overview) to an OS level – and would thus provide Web protection functionality in Edge to other supported browsers as well as non-browser applications.
+In addition, Network Protection provides visibility and blocking of Indicators of Compromise (IOCs) when used with [Endpoint detection and response](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) including the enforcement of your [custom indicator list.] (https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
+
 
 For more information about how to enable network protection, see [Enable network protection](enable-network-protection.md). Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 
