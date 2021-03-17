@@ -33,7 +33,7 @@ ms.technology: mde
 > [!IMPORTANT]
 > **Device control for macOS is currently in public preview**<br>
 > This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
-> See [Microsoft Defender for Endpoint preview features](preview.md) for more information.
+> For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
 
 ## Requirements
 
@@ -57,7 +57,7 @@ Device control can be enabled:
 >    defaults write com.microsoft.autoupdate2 ChannelName -string InsiderFast
 >    ```
 >
->    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [this page](mac-update.md). 
+>    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [this page](mac-updates.md). 
 > - Your device must be running with system extensions (this is the default on macOS 11 Big Sur). 
 > 
 >   You can check if your device is running on system extensions, run the following command and verify that it is printing `endpoint_security_extension` to the console: 
@@ -70,7 +70,7 @@ Device control can be enabled:
 
 To configure device control for macOS, you must create a policy that describes the restrictions you want to put in place within your organization.
 
-The device control policy is included in the configuration profile used to configure all other settings of the product. See [Configuration profile structure](mac-preferences.md#configuration-profile-structure) for more information.
+The device control policy is included in the configuration profile used to configure all other settings of the product. For more information, see [Configuration profile structure](mac-preferences.md#configuration-profile-structure).
 
 Within the configuration profile, the device control policy is defined in the following section:
 
