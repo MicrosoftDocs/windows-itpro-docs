@@ -37,7 +37,7 @@ ms.technology: mde
 
 ## Requirements
 
-Device control can be enabled:
+Device control for macOS has the following prerequisites:
 
 >[!div class="checklist"]
 > - Microsoft Defender for Endpoint entitlement (can be trial)
@@ -70,7 +70,7 @@ Device control can be enabled:
 
 To configure device control for macOS, you must create a policy that describes the restrictions you want to put in place within your organization.
 
-The device control policy is included in the configuration profile used to configure all other settings of the product. For more information, see [Configuration profile structure](mac-preferences.md#configuration-profile-structure).
+The device control policy is included in the configuration profile used to configure all other product settings. For more information, see [Configuration profile structure](mac-preferences.md#configuration-profile-structure).
 
 Within the configuration profile, the device control policy is defined in the following section:
 
@@ -106,7 +106,7 @@ When end users click this notification, a web page is opened in the default brow
 The removable media section of the device control policy is used to restrict access to removable media. 
 
 > [!NOTE]
-> Currently, only USB devices are supported.
+> The following types of removable media are currently supported and can be included in the policy: USB storage devices.
 
 |||
 |:---|:---|
@@ -132,7 +132,7 @@ This section of the policy is hierarchical, allowing for maximum flexibility and
 
 For information on how to find the device identifiers, see [Look up device identifiers](#look-up-device-identifiers).
 
-The policy is evaluated from the most specific entry to the most general one. In other words, the product tries to find the most specific match in the policy for each removable media device and apply the permissions at that level. If there is no match, then the next best match is applied, all the way to the permission specified at the top level, which is the default when a device does not match any other entry.
+The policy is evaluated from the most specific entry to the most general one. In other words, when a device is plugged in, the product tries to find the most specific match in the policy for each removable media device and apply the permissions at that level. If there is no match, then the next best match is applied, all the way to the permission specified at the top level, which is the default when a device does not match any other entry in the policy.
 
 #### Policy enforcement level
 
@@ -154,11 +154,17 @@ At the top level of the removable media section, you can configure the default p
 
 This setting can be set to:
 
-- `none` - no operations can be performed against the device
+- `none` - No operations can be performed on the device
 - A combination of the following values:
     - `read` - Read operations are permitted on the device
     - `write` - Write operations are permitted on the device
     - `execute` - Execute operations are permitted on the device
+
+> [!NOTE]
+> If `none` is present in the permission level, any other permissions (`read`, `write`, or `execute`) will be ignored.
+
+> [!NOTE]
+> The `execute` permission only refers to execution of Mach-O binaries. It does not include execution of scripts or other types of payloads.
 
 |||
 |:---|:---|
@@ -181,7 +187,7 @@ The `vendors` dictionary contains one or more entries, with each entry being ide
 | **Key** | vendors |
 | **Data type** | Dictionary (nested preference) |
 
-For each vendor, you can specify the desired permission level for devices with that vendor.
+For each vendor, you can specify the desired permission level for devices from that vendor.
 
 |||
 |:---|:---|
@@ -209,7 +215,7 @@ For each product, you can specify the desired permission level for that product.
 
 Furthermore, you can specify an optional set of serial numbers for which more granular permissions are defined.
 
-The `serialNumbers` dictionary contains one or more entries, with each entry being identified by the serial number. 
+The `serialNumbers` dictionary contains one or more entries, with each entry being identified by the serial number.
 
 |||
 |:---|:---|
@@ -228,7 +234,7 @@ For each serial number, you can specify the desired permission level.
 
 #### Example device control policy
 
-The following example shows how all of the above concepts can be combined into a policy. In the following example, note the hierarchical nature of the removable media policy.
+The following example shows how all of the above concepts can be combined into a device control policy. In the following example, note the hierarchical nature of the removable media policy.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -238,7 +244,7 @@ The following example shows how all of the above concepts can be combined into a
     <key>deviceControl</key> 
     <dict> 
         <key>navigationTarget</key> 
-        <string>[Custom URL for mount notifications]</string> 
+        <string>[custom URL for notifications]</string> 
         <key>removableMediaPolicy</key> 
         <dict> 
             <key>enforcementLevel</key> 
@@ -246,6 +252,7 @@ The following example shows how all of the above concepts can be combined into a
             <key>permission</key> 
             <array> 
                 <string>[permission]</string> <!-- none / read / write / execute --> 
+                <!-- other permissions -->
             </array> 
             <key>vendors</key> 
             <dict> 
@@ -254,6 +261,7 @@ The following example shows how all of the above concepts can be combined into a
                     <key>permission</key> 
                     <array> 
                         <string>[permission]</string> <!-- none / read / write / execute --> 
+                        <!-- other permissions -->
                     </array> 
                     <key>products</key> 
                     <dict> 
@@ -262,12 +270,14 @@ The following example shows how all of the above concepts can be combined into a
                             <key>permission</key> 
                             <array> 
                                 <string>[permission]</string> <!-- none / read / write / execute --> 
+                                <!-- other permissions -->
                             </array> 
                             <key>serialNumbers</key> 
                             <dict> 
                                 <key>[serial-number]</key> 
                                 <array> 
                                     <string>[permission]</string> <!-- none / read / write / execute --> 
+                                    <!-- other permissions -->
                                 </array> 
                                 <!-- other serial numbers --> 
                             </dict> 
@@ -310,7 +320,7 @@ To find the vendor ID, product ID, and serial number of a USB device:
 
     ![Details of a USB device](images/mac-device-control-lookup-4.png)
 
-1. The vendor ID, product ID, and serial number are displayed. When adding the vendor ID and product ID to the removable media policy, you should only add the part after `0x`. For example, in the below image, vendor ID is `1000` and product ID is `090c`.
+1. The vendor ID, product ID, and serial number are displayed. When adding the vendor ID and product ID to the removable media policy, you must only add the part after `0x`. For example, in the below image, vendor ID is `1000` and product ID is `090c`.
 
 #### Discover USB devices in your organization
 
@@ -338,7 +348,7 @@ mdatp device-control removable-media policy list
 
 This command will print to standard output the device control policy that the product is using. In case this prints `Policy is empty`, make sure that (a) the configuration profile has indeed been pushed to your device from the management console, and (b) it is a valid device control policy, as described in this document.
 
-On a device where the policy has been delivered successfully and where there are one or more devices mounted, you can run the following command to list all devices and the effective permissions applied to them.
+On a device where the policy has been delivered successfully and where there are one or more devices plugged in, you can run the following command to list all devices and the effective permissions applied to them.
 
 ```bash
 mdatp device-control removable-media devices list
@@ -355,7 +365,7 @@ Example of output:
 | |-o Mount point: "/Volumes/TESTUSB"
 ```
 
-In the above example, there is only one mounted device and it has `read` and `execute` permissions.
+In the above example, there is only one removable media device plugged in and it has `read` and `execute` permissions, according to the device control policy that was delivered to the device.
 
 ## Related topics
 

@@ -35,7 +35,7 @@ ms.technology: mde
 > This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
 > For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
 
-This document contains examples of device control policies that you can customize in your own organization. These examples are applicable if you are using Intune to manage your enterprise.
+This document contains examples of device control policies that you can customize for your own organization. These examples are applicable if you are using Intune to manage devices in your enterprise.
 
 ## Restrict access to all removable media
 
