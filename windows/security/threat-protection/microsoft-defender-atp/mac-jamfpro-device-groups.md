@@ -24,10 +24,11 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Set up the device groups similar to Group policy  organizational unite (OUs), Microsoft Endpoint Configuration Manager's device collection, and Intune's device groups.
 
@@ -35,15 +36,15 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
 
 2. Select **New**. 
 
-    ![Image of Jamf Pro](images/jamf-pro-static-group.png)
+    ![Image of Jamf Pro1](images/jamf-pro-static-group.png)
 
 3. Provide a display name and select **Save**.
 
-    ![Image of Jamf Pro](images/jamfpro-machine-group.png)
+    ![Image of Jamf Pro2](images/jamfpro-machine-group.png)
 
 4. Now you will see the **Contoso's Machine Group** under **Static Computer Groups**.
 
-    ![Image of Jamf Pro](images/contoso-machine-group.png)
+    ![Image of Jamf Pro3](images/contoso-machine-group.png)
 
 ## Next step
 - [Set up Microsoft Defender for Endpoint for macOS policies in Jamf Pro](mac-jamfpro-policies.md)

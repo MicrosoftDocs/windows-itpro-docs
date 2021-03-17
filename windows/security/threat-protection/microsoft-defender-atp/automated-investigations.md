@@ -25,11 +25,10 @@ ms.custom: AIR
 
 # Overview of automated investigations
 
-**Applies to**
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
-
-If your organization is using Microsoft Defender for Endpoint, your security operations team receives an alert whenever a malicious or suspicious artifact is detected. Given the seemingly never-ending flow of threats that come in, security teams often face challenges in addressing the high volume of alerts. Fortunately, Defender for Endpoint includes automated investigation and remediation (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Want to see how it works? Watch the following video: <br/><br/>
 

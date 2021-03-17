@@ -1,5 +1,5 @@
 ---
-title: Investigate Microsoft Defender Advanced Threat Protection domains
+title: Investigate Microsoft Defender for Endpoint domains
 description: Use the investigation options to see if devices and servers have been communicating with malicious domains.
 keywords: investigate domain, domain, malicious domain, microsoft defender atp, alert, URL
 search.product: eADQiWindows 10XVcnh
@@ -26,11 +26,8 @@ ms.technology: mde
 
 
 **Applies to:**
-
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-
-
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink) 
 
@@ -80,7 +77,7 @@ You can view events from different periods of time by entering the dates into th
 5. Clicking any of the device names will take you to that device's view, where you can continue investigate reported alerts, behaviors, and events.
 
 ## Related topics
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
+- [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender for Endpoint alerts](manage-alerts.md)
 - [Investigate Microsoft Defender for Endpoint alerts](investigate-alerts.md)
 - [Investigate a file associated with a Microsoft Defender for Endpoint alert](investigate-files.md)

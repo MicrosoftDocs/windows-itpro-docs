@@ -1,6 +1,6 @@
 ---
-title: What's new in Microsoft Defender Advanced Threat Protection for Mac
-description: Learn about the major changes for previous versions of Microsoft Defender Advanced Threat Protection for Mac.
+title: What's new in Microsoft Defender for Endpoint for Mac
+description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint for Mac.
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,11 +24,21 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
 > [!IMPORTANT]
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
 > [!IMPORTANT]
-> Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
+> Support for macOS 10.13 (High Sierra) has been discontinued on February 15th, 2021.
+
+## 101.22.79 (20.121012.12279.0)
+
+- Performance improvements & bug fixes
 
 ## 101.19.88 (20.121011.11988.0)
 

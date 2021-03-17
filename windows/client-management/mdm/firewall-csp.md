@@ -20,10 +20,88 @@ Firewall rules in the FirewallRules section must be wrapped in an Atomic block i
 
 For detailed information on some of the fields below see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](https://msdn.microsoft.com/library/mt620101.aspx).
 
-The following diagram shows the Firewall configuration service provider in tree format. 
-
-![firewall csp](images/provisioning-csp-firewall.png)
-
+The following shows the Firewall configuration service provider in tree format. 
+```
+./Vendor/MSFT
+Firewall
+----
+--------Global
+------------PolicyVersionSupported
+------------CurrentProfiles
+------------DisableStatefulFtp
+------------SaIdleTime
+------------PresharedKeyEncoding
+------------IPsecExempt
+------------CRLcheck
+------------PolicyVersion
+------------BinaryVersionSupported
+------------OpportunisticallyMatchAuthSetPerKM
+------------EnablePacketQueue
+--------DomainProfile
+------------EnableFirewall
+------------DisableStealthMode
+------------Shielded
+------------DisableUnicastResponsesToMulticastBroadcast
+------------DisableInboundNotifications
+------------AuthAppsAllowUserPrefMerge
+------------GlobalPortsAllowUserPrefMerge
+------------AllowLocalPolicyMerge
+------------AllowLocalIpsecPolicyMerge
+------------DefaultOutboundAction
+------------DefaultInboundAction
+------------DisableStealthModeIpsecSecuredPacketExemption
+--------PrivateProfile
+------------EnableFirewall
+------------DisableStealthMode
+------------Shielded
+------------DisableUnicastResponsesToMulticastBroadcast
+------------DisableInboundNotifications
+------------AuthAppsAllowUserPrefMerge
+------------GlobalPortsAllowUserPrefMerge
+------------AllowLocalPolicyMerge
+------------AllowLocalIpsecPolicyMerge
+------------DefaultOutboundAction
+------------DefaultInboundAction
+------------DisableStealthModeIpsecSecuredPacketExemption
+--------PublicProfile
+------------EnableFirewall
+------------DisableStealthMode
+------------Shielded
+------------DisableUnicastResponsesToMulticastBroadcast
+------------DisableInboundNotifications
+------------AuthAppsAllowUserPrefMerge
+------------GlobalPortsAllowUserPrefMerge
+------------AllowLocalPolicyMerge
+------------AllowLocalIpsecPolicyMerge
+------------DefaultOutboundAction
+------------DefaultInboundAction
+------------DisableStealthModeIpsecSecuredPacketExemption
+--------FirewallRules
+------------FirewallRuleName
+----------------App
+--------------------PackageFamilyName
+--------------------FilePath
+--------------------Fqbn
+--------------------ServiceName
+----------------Protocol
+----------------LocalPortRanges
+----------------RemotePortRanges
+----------------LocalAddressRanges
+----------------RemoteAddressRanges
+----------------Description
+----------------Enabled
+----------------Profiles
+----------------Action
+--------------------Type
+----------------Direction
+----------------InterfaceTypes
+----------------EdgeTraversal
+----------------LocalUserAuthorizationList
+----------------FriendlyName
+----------------IcmpTypesAndCodes
+----------------Status
+----------------Name
+```
 <a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/Firewall**
 <p style="margin-left: 20px">Root node for the Firewall configuration service provider.</p>
 

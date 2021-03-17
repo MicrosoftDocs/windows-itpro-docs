@@ -22,12 +22,6 @@ ms.technology: mde
 
 # Microsoft Defender for Endpoint for Android application license terms
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-**Applies to:**
-
-- [Microsoft Defender for Endpoint](microsoft-defender-atp-android.md)
-
 ## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT DEFENDER FOR ENDPOINT
 
 These license terms ("Terms") are an agreement between Microsoft Corporation (or

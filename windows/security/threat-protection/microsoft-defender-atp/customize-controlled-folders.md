@@ -12,7 +12,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 01/06/2021
+ms.date: 03/10/2021
 ms.technology: mde
 ---
 
@@ -22,8 +22,11 @@ ms.technology: mde
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+
 
 Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is supported on Windows Server 2019 and Windows 10 clients.
 
@@ -127,6 +130,7 @@ An allowed application or service only has write access to a controlled folder a
 ### Use PowerShell to allow specific apps
 
 1. Type **PowerShell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
+
 2. Enter the following cmdlet:
 
     ```PowerShell
@@ -153,6 +157,9 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications]
 ## Allow signed executable files to access protected folders
 
 Microsoft Defender for Endpoint certificate and file indicators can allow signed executable files to access protected folders. For implementation details, see [Create indicators based on certificates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates).
+
+> [!Note]
+> This does not apply to scripting engines, including PowerShell.
 
 ## Customize the notification
 

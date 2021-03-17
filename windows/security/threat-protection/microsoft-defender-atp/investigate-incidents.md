@@ -24,9 +24,9 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
@@ -42,7 +42,7 @@ When you investigate an incident, you'll see:
 ## Analyze incident details 
 Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, devices, investigations, evidence, graph). 
 
-![Image of incident details](images/atp-incident-details.png)
+![Image of incident details1](images/atp-incident-details.png)
 
 ### Alerts
 You can investigate the alerts and see how they were linked together in an incident. 
@@ -85,7 +85,7 @@ The **Graph** tells the story of the cybersecurity attack. For example, it shows
 
 You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances have there been worldwide, whether it’s been observed in your organization, if so, how many instances.
 
-![Image of incident details](images/atp-incident-graph-details.png)
+![Image of incident details2](images/atp-incident-graph-details.png)
 
 ## Related topics
 - [Incidents queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue)

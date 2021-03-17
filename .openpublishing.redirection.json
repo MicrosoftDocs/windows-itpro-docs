@@ -1700,6 +1700,11 @@
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-edr",
       "redirect_document_id": true
     },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-edrmanage-edr.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response",
+      "redirect_document_id": false
+    },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/management-apis.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis",
@@ -13987,12 +13992,12 @@
     },
     {
       "source_path": "windows/manage/sign-up-windows-store-for-business.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-store/sign-up-windows-store-for-business",
+      "redirect_url": "https://docs.microsoft.com/microsoft-store/index.md",
       "redirect_document_id": true
     },
     {
       "source_path": "store-for-business/sign-up-windows-store-for-business.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business",
+      "redirect_url": "https://docs.microsoft.com/microsoft-store/index.md",
       "redirect_document_id": false
     },
     {
@@ -16531,8 +16536,18 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr",
+      "source_path": "windows/deployment/update/waas-mobile-updates.md",
+      "redirect_url": "https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventory-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/client-management/mdm/policies-in-policy-csp-supported-by-iot-enterprise.md",
+      "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference",
       "redirect_document_id": false
     },
     {
