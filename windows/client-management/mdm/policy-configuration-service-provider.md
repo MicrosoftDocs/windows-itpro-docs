@@ -8558,7 +8558,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-Winsrv.md#winsrv-allowblockingappsatshutdown" id="winsrv-allowblockingappsatshutdown">Winsrv/AllowBlockingAppsAtShutdown</a>
+    <a href="./policy-csp-winsrv.md#winsrv-allowblockingappsatshutdown" id="winsrv-allowblockingappsatshutdown">Winsrv/AllowBlockingAppsAtShutdown</a>
   </dd>
 </dl>
 
