@@ -36,8 +36,8 @@ This table lists the global user accounts and the permissions they have in Micro
 
 |                                |  Global Administrator | Billing Administrator |
 | ------------------------------ | --------------------- | --------------------- |
-| Sign up for Microsoft Store for Business and Education |  X                    |
-| Modify company profile settings | X                    |                       |
+| Sign up for Microsoft Store for Business and Education |  X       | X             |
+| Modify company profile settings | X                    | X                     |
 | Purchase apps                  |  X                    | X                     |
 | Distribute apps                |  X                    | X                     |
 | Purchase subscription-based software  |  X             | X                     |
