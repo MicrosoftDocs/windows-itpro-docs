@@ -410,7 +410,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
    <plist version="1.0">
    <dict>
 	<key>ChannelName</key>
-	<string>Production</string>
+	<string>Current</string>
 	<key>HowToCheck</key>
 	<string>AutomaticDownload</string>
 	<key>EnableCheckForUpdatesButton</key>

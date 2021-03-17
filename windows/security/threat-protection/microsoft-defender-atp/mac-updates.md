@@ -57,19 +57,26 @@ This section describes the most common preferences that can be used to configure
 
 ### Set the channel name
 
-The channel determines the type and frequency of updates that are offered through MAU. Devices in `InsiderFast` (corresponding to the Insider Fast channel) can try out new features before devices in `External` (corresponding to the Insider Slow channel) and `Production`. 
+The channel determines the type and frequency of updates that are offered through MAU. Devices in `Beta` can try out new features before devices in `Preview` and `Current`. 
 
-The `Production` channel contains the most stable version of the product.
+The `Current` channel contains the most stable version of the product.
+
+>[!IMPORTANT]
+> Prior to Microsoft AutoUpdate version 4.29, channels had different names: 
+> 
+> - `Beta` was named `InsiderFast` (Insider Fast)
+> - `Preview` was named `External` (Insider Slow)
+> - `Current` was named `Production`
 
 >[!TIP]
->In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `InsiderFast` or `External`.
+>In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.
 
 |||
 |:---|:---|
 | **Domain** | com.microsoft.autoupdate2 |
 | **Key** | ChannelName |
 | **Data type** | String |
-| **Possible values** | InsiderFast <br/> External <br/> Production |
+| **Possible values** | Beta <br/> Preview <br/> Current |
 
 >[!WARNING]
 >This setting changes the channel for all applications that are updated through Microsoft AutoUpdate. To change the channel only for Microsoft Defender for Endpoint for Mac, execute the following command after replacing `[channel-name]` with the desired channel:
@@ -137,7 +144,7 @@ Set to false to send minimal heartbeat data, no application usage, and no enviro
 ## Example configuration profile
 
 The following configuration profile is used to:
-- Place the device in the Insider Fast channel
+- Place the device in the Beta channel
 - Automatically download and install updates
 - Enable the "Check for updates" button in the user interface
 - Allow users on the device to enroll into the Insider channels
@@ -150,7 +157,7 @@ The following configuration profile is used to:
 <plist version="1.0">
 <dict>
 	<key>ChannelName</key>
-	<string>InsiderFast</string>
+	<string>Beta</string>
 	<key>HowToCheck</key>
 	<string>AutomaticDownload</string>
 	<key>EnableCheckForUpdatesButton</key>
@@ -210,7 +217,7 @@ The following configuration profile is used to:
             <key>PayloadEnabled</key>
             <true/>
             <key>ChannelName</key>
-            <string>InsiderFast</string>
+            <string>Beta</string>
             <key>HowToCheck</key>
             <string>AutomaticDownload</string>
             <key>EnableCheckForUpdatesButton</key>

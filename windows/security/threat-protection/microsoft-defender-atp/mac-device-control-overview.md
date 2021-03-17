@@ -42,22 +42,7 @@ Device control can be enabled:
 >[!div class="checklist"]
 > - Microsoft Defender for Endpoint entitlement (can be trial)
 > - Minimum OS version: macOS 10.15.4 or higher
-> - Minimum product version: 101.22.78
-> - Your device must be in the InsiderFast Microsoft AutoUpdate update channel. 
-> 
->   You can check the update channel using the following command: 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    If your device is not in the InsiderFast update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted). 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string InsiderFast
->    ```
->
->    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [this page](mac-updates.md). 
+> - Minimum product version: 101.24.59
 > - Your device must be running with system extensions (this is the default on macOS 11 Big Sur). 
 > 
 >   You can check if your device is running on system extensions, run the following command and verify that it is printing `endpoint_security_extension` to the console: 
@@ -65,6 +50,21 @@ Device control can be enabled:
 >   ```bash
 >   mdatp health --field real_time_protection_subsystem 
 >   ```
+> - Your device must be in `Beta` (previously called `InsiderFast`) Microsoft AutoUpdate update channel. For more information, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md).
+> 
+>   You can check the update channel using the following command: 
+> 
+>    ```bash
+>    mdatp health --field release_ring 
+>    ```
+>
+>    If the above command does not print either `Beta` or `InsiderFast`, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted). 
+> 
+>    ```bash
+>    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
+>    ```
+>
+>    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md). 
 
 ## Device control policy
 
