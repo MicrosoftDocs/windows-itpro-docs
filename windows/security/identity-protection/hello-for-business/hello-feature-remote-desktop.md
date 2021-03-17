@@ -34,7 +34,7 @@ Microsoft continues to investigate supporting using keys trust for supplied cred
 
 **Requirements**
 
-- Cloud, Hybrid, and On-premises Windows Hello for Business deployments
+- Cloud only, Hybrid, and On-premises only Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 - Certificate trust deployments
 - Biometric enrollments
