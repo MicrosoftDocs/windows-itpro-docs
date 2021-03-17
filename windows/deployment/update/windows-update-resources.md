@@ -39,7 +39,7 @@ The following resources provide additional information about using Windows Updat
 
 ## How do I reset Windows Update components?
 
-- Try using the [Windows Update Troubleshooter](https://support.microsoft.com/windows/windows-update-troubleshooter-for-windows-10-19bc41ca-ad72-ae67-af3c-89ce169755dd).
+- Try using the [Windows Update Troubleshooter](https://support.microsoft.com/windows/windows-update-troubleshooter-for-windows-10-19bc41ca-ad72-ae67-af3c-89ce169755dd), which will analyze the situation and reset any components that need it.
 - Try the steps in [Troubleshoot problems updating Windows 10](https://support.microsoft.com/windows/troubleshoot-problems-updating-windows-10-188c2b0f-10a7-d72f-65b8-32d177eb136c).
 - Try the steps in [Fix Windows Update](https://support.microsoft.com/sbs/windows/fix-windows-update-errors-18b693b5-7818-5825-8a7e-2a4a37d6d787) errors.
 
