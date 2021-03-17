@@ -238,7 +238,7 @@ The following example shows how program execution from removable media can be di
 
 ## Restrict all devices from specific vendors
 
-The following example restricts all devices from specific vendors (in this case identified by `090c` and `8068`). All other devices will be unrestricted, since the permission defined at the top level of the policy lists all possible permissions (read, write, and execute).
+The following example restricts all devices from specific vendors (in this case identified by `fff0` and `4525`). All other devices will be unrestricted, since the permission defined at the top level of the policy lists all possible permissions (read, write, and execute).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
@@ -298,14 +298,14 @@ The following example restricts all devices from specific vendors (in this case 
                         </array> 
                         <key>vendors</key> 
                         <dict> 
-                            <key>090c</key> 
+                            <key>fff0</key> 
                             <dict> 
                                 <key>permission</key> 
                                 <array> 
                                     <string>none</string> 
                                 </array> 
                             </dict> 
-                            <key>8068</key> 
+                            <key>4525</key> 
                             <dict> 
                                 <key>permission</key> 
                                 <array>                         
@@ -323,7 +323,7 @@ The following example restricts all devices from specific vendors (in this case 
 
 ## Restrict specific devices identified by vendor ID, product ID, and serial number
 
-The following example restricts two specific devices, identified by vendor ID `090c`, product ID `1000`, and serial numbers `04ZSSMHI2O7WBVOA` and `04ZSSMHI2O7WBVOB`. At all other levels of the policy the permissions include all possible values (read, write, and execute), meaning that all other devices will be unrestricted.
+The following example restricts two specific devices, identified by vendor ID `fff0`, product ID `1000`, and serial numbers `04ZSSMHI2O7WBVOA` and `04ZSSMHI2O7WBVOB`. At all other levels of the policy the permissions include all possible values (read, write, and execute), meaning that all other devices will be unrestricted.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
@@ -383,7 +383,7 @@ The following example restricts two specific devices, identified by vendor ID `0
                         </array> 
                         <key>vendors</key> 
                         <dict> 
-                            <key>090c</key> 
+                            <key>fff0</key> 
                             <dict> 
                                 <key>permission</key> 
                                 <array> 

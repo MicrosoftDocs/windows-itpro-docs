@@ -349,7 +349,7 @@ Example of output:
 ```Output
 .Device(s)
 |-o Name: Untitled 1, Permission ["read", "execute"]
-| |-o Vendor: General "090c"
+| |-o Vendor: General "fff0"
 | |-o Product: USB Flash Disk "1000"
 | |-o Serial number: "04ZSSMHI2O7WBVOA"
 | |-o Mount point: "/Volumes/TESTUSB"
