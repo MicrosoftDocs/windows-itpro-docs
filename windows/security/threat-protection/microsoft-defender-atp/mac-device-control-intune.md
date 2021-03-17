@@ -33,7 +33,7 @@ ms.technology: mde
 > [!IMPORTANT]
 > **Device control for macOS is currently in public preview**<br>
 > This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
-> See [Microsoft Defender for Endpoint preview features](preview.md) for more information.
+> For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
 
 This document contains examples of device control policies that you can customize in your own organization. These examples are applicable if you are using Intune to manage your enterprise.
 
