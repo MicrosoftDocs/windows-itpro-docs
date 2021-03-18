@@ -1,6 +1,6 @@
 ---
-title: How to control USB devices and other removable media on macOS
-description: You can configure Microsoft Defender for Endpoint for Mac to reduce threats from removable storage such as USB devices.
+title: Device control for macOS
+description: Learn how to configure Microsoft Defender for Endpoint for Mac to reduce threats from removable storage such as USB devices.
 keywords: microsoft, defender, atp, mac, device, control, usb, removable, media
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -30,10 +30,7 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> [!IMPORTANT]
-> **Device control for macOS is currently in public preview**<br>
-> This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
-> For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Requirements
 
@@ -45,7 +42,7 @@ Device control for macOS has the following prerequisites:
 > - Minimum product version: 101.24.59
 > - Your device must be running with system extensions (this is the default on macOS 11 Big Sur). 
 > 
->   You can check if your device is running on system extensions, run the following command and verify that it is printing `endpoint_security_extension` to the console: 
+>   You can check if your device is running on system extensions by running the following command and verify that it is printing `endpoint_security_extension` to the console: 
 > 
 >   ```bash
 >   mdatp health --field real_time_protection_subsystem 
@@ -132,7 +129,7 @@ This section of the policy is hierarchical, allowing for maximum flexibility and
 
 For information on how to find the device identifiers, see [Look up device identifiers](#look-up-device-identifiers).
 
-The policy is evaluated from the most specific entry to the most general one. In other words, when a device is plugged in, the product tries to find the most specific match in the policy for each removable media device and apply the permissions at that level. If there is no match, then the next best match is applied, all the way to the permission specified at the top level, which is the default when a device does not match any other entry in the policy.
+The policy is evaluated from the most specific entry to the most general one. Meaning, when a device is plugged in, the product tries to find the most specific match in the policy for each removable media device and apply the permissions at that level. If there is no match, then the next best match is applied, all the way to the permission specified at the top level, which is the default when a device does not match any other entry in the policy.
 
 #### Policy enforcement level
 
