@@ -347,7 +347,7 @@ The following claims are expected in the access token passed by Windows to the T
 </tr>
 </tbody>
 </table>
- 
+
 > [!NOTE]
 > There is no device ID claim in the access token because the device may not yet be enrolled at this time.
 
