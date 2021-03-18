@@ -41,7 +41,10 @@ There are many options for VPN clients. In Windows 10, the built-in plug-in and 
 
     - [SSTP](https://technet.microsoft.com/library/ff687819.aspx)
 
-        SSTP is supported for Windows desktop editions only. SSTP cannot be configured using mobile device management (MDM), but it is one of the protocols attempted in the **Automatic** option. Note: when a VPN plug-in is used, the adapter will be listed as an SSTP adapter even though the VPN protocol used is the plug-in's protocol.
+        SSTP is supported for Windows desktop editions only. SSTP cannot be configured using mobile device management (MDM), but it is one of the protocols attempted in the **Automatic** option.
+
+        > [!NOTE]
+        > When a VPN plug-in is used, the adapter will be listed as an SSTP adapter, even though the VPN protocol used is the plug-in's protocol.
         
 - Automatic
 
@@ -81,7 +84,6 @@ In Intune, you can also include custom XML for third-party plug-in profiles:
 - [VPN security features](vpn-security-features.md)
 - [VPN profile options](vpn-profile-options.md)
     
-
 
 
 
