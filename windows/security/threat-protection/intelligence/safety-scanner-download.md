@@ -39,12 +39,12 @@ Microsoft Safety Scanner is a scan tool designed to find and remove malware from
 
 ## System requirements
 
-Safety Scanner helps remove malicious software from computers running Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, or Windows Server 2008. Please refer to the [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle).
+Safety Scanner helps remove malicious software from computers running Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2019, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, or Windows Server 2008. Please refer to the [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle).
 
 ## How to run a scan
 
 1. Download this tool and open it.
-2. Select the type of scan you want run and start the scan.
+2. Select the type of scan that you want to run and start the scan.
 3. Review the scan results displayed on screen. For detailed detection results, view the log at **%SYSTEMROOT%\debug\msert.log**.
 
 To remove this tool, delete the executable file (msert.exe by default).

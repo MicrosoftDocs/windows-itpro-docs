@@ -47,10 +47,10 @@ To use either of these supported SIEM tools, you'll need to:
 
 - [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)
 - Configure the supported SIEM tool:
-     - [Configure HP ArcSight to pull Defender for Endpoint detections](configure-arcsight.md)
+     - [Configure Micro Focus ArcSight to pull Defender for Endpoint detections](configure-arcsight.md)
      - Configure IBM QRadar to pull Defender for Endpoint detections For more information, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
 
-For more information on the list of fields exposed in the Detection API see, [Defender for Endpoint Detection fields](api-portal-mapping.md).
+For more information on the list of fields exposed in the Detection API, see [Defender for Endpoint Detection fields](api-portal-mapping.md).
 
 
 
