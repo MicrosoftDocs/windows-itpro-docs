@@ -56,7 +56,7 @@ In both scenarios, the enrollment flow provides an opportunity for the MDM servi
 
 In the out-of-the-box scenario, the web view is 100% full screen, which gives the MDM vendor the ability to paint an edge-to-edge experience. With great power comes great responsibility! It is important that MDM vendors who chose to integrate with Azure AD respect the Windows 10 design guidelines to the letter. This includes using a responsive web design and respecting the Windows accessibility guidelines, which includes the forward and back buttons that are properly wired to the navigation logic. Additional details are provided later in this topic.
 
-For Azure AD enrollment to work for an Active Directory Federated Services (AD FS) backed Azure AD account, you must enable password authentication for the intranet on the ADFS service as described in solution \#2 in [this article](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
+For Azure AD enrollment to work for an Active Directory Federated Services (AD FS) backed Azure AD account, you must enable password authentication for the intranet on the ADFS service as described in solution \#2 in [Configure Azure MFA as authentication provider with AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
 
 Once a user has an Azure AD account added to Windows 10 and enrolled in MDM, the enrollment can be managed through **Settings** > **Accounts** > **Work access**. Device management of either Azure AD Join for corporate scenarios or BYOD scenarios is similar.
 
