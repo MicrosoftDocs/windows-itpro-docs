@@ -356,7 +356,7 @@ To retrieve the list of group memberships for the user, you can use the [Azure A
 
 Here's an example URL.
 
-```console
+```http
 https://fabrikam.contosomdm.com/TermsOfUse?redirect_uri=ms-appx-web://ContosoMdm/ToUResponse&client-request-id=34be581c-6ebd-49d6-a4e1-150eff4b7213&api-version=1.0
 Authorization: Bearer eyJ0eXAiOi
 ```
