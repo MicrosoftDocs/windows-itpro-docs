@@ -41,6 +41,7 @@ Before this event can generate, certain ACEs might need to be set in the objectâ
 > For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
 <br clear="all">
+<br>
 
 ***Event XML:***
 
@@ -275,7 +276,8 @@ For token objects, this is typically an informational event, and at the same tim
 
 For file system and registry objects, the following recommendations apply.
 
-> **Important**: For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
+> [!IMPORTANT]
+> For this event, see also [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 - If you have a pre-defined "**Process Name**" for the process reported in this event, monitor all events with "**Process Name**" not equal to your defined value.
 
