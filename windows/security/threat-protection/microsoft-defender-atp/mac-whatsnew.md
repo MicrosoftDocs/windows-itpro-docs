@@ -36,6 +36,11 @@ ms.technology: mde
 > [!IMPORTANT]
 > Support for macOS 10.13 (High Sierra) has been discontinued on February 15th, 2021.
 
+## 101.23.64 (20.121021.12364.0)
+
+- Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`
+- Performance improvements & bug fixes
+
 ## 101.22.79 (20.121012.12279.0)
 
 - Performance improvements & bug fixes
