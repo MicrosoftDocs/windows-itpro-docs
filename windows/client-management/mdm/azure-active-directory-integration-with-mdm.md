@@ -113,21 +113,33 @@ The keys used by the MDM application to request access tokens from Azure AD are 
 Use the following steps to register a cloud-based MDM application with Azure AD. At this time, you need to work with the Azure AD engineering team to expose this application through the Azure AD app gallery.
 
 1.  Log in to the Azure Management Portal using an admin account in your home tenant.
+
 2.  In the left navigation, click on the **Active Directory**.
+
 3.  Click the directory tenant where you want to register the application.
 
     Ensure that you are logged into your home tenant.
+
 4.  Click the **Applications** tab.
+
 5.  In the drawer, click **Add**.
+
 6.  Click **Add an application my organization is developing**.
+
 7.  Enter a friendly name for the application, such as ContosoMDM, select **Web Application and or Web API**, then click **Next**.
+
 8.  Enter the login URL for your MDM service.
+
 9.  For the App ID, enter **https://&lt;your\_tenant\_name>/ContosoMDM**, then click OK.
+
 10. While still in the Azure portal, click the **Configure** tab of your application.
+
 11. Mark your application as **multi-tenant**.
+
 12. Find the client ID value and copy it.
 
     You will need this later when configuring your application. This client ID is used when obtaining access tokens and adding applications to the Azure AD app gallery.
+
 13. Generate a key for your application and copy it.
 
     You will need this to call the Azure AD Graph API to report device compliance. This is covered in the subsequent section.
