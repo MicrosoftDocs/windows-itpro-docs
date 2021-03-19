@@ -71,6 +71,7 @@ The `Current` channel contains the most stable version of the product.
 >[!TIP]
 >In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.
 
+|||
 | **Domain** | com.microsoft.autoupdate2 |
 | **Key** | ChannelName |
 | **Data type** | String |
@@ -86,6 +87,7 @@ The `Current` channel contains the most stable version of the product.
 
 Change how often MAU searches for updates.
 
+|||
 | **Domain** | com.microsoft.autoupdate2 |
 | **Key** | UpdateCheckFrequency |
 | **Data type** | Integer |
@@ -96,7 +98,7 @@ Change how often MAU searches for updates.
 
 Change how MAU searches for updates.
 
-
+|||
 | **Domain** | com.microsoft.autoupdate2 |
 | **Key** | HowToCheck |
 | **Data type** | String |
@@ -107,7 +109,7 @@ Change how MAU searches for updates.
 
 Change whether local users will be able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.
 
-
+|||
 | **Domain** | com.microsoft.autoupdate2 |
 | **Key** | EnableCheckForUpdatesButton |
 | **Data type** | Boolean |
@@ -117,7 +119,7 @@ Change whether local users will be able to click the "Check for Updates" option 
 
 Set to true to make the "Join the Office Insider Program..." checkbox unavailable / greyed out to users.
 
-
+|||
 | **Domain** | com.microsoft.autoupdate2 |
 | **Key** | DisableInsiderCheckbox |
 | **Data type** | Boolean |
@@ -127,7 +129,7 @@ Set to true to make the "Join the Office Insider Program..." checkbox unavailabl
 
 Set to false to send minimal heartbeat data, no application usage, and no environment details.
 
-
+|||
 | **Domain** | com.microsoft.autoupdate2 |
 | **Key** | SendAllTelemetryEnabled |
 | **Data type** | Boolean |
