@@ -8457,6 +8457,23 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_WindowsFileProtection policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpshowprogress" id="admx-windowsfileprotection-wfpshowprogress">ADMX_WindowsFileProtection/WFPShowProgress</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpquota" id="admx-windowsfileprotection-wfpquota">ADMX_WindowsFileProtection/WFPQuota</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpscan" id="admx-windowsfileprotection-wfpscan">ADMX_WindowsFileProtection/WFPScan</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpdllcachedir" id="admx-windowsfileprotection-wfpdllcachedir">ADMX_WindowsFileProtection/WFPDllCacheDir</a>
+  </dd>
+</dl>
+
 ### WindowsInkWorkspace policies
 
 <dl>
