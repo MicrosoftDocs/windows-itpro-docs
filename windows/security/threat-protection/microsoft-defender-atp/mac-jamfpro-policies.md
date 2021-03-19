@@ -310,7 +310,7 @@ You'll need to take the following steps:
 
     >[!NOTE]
     >If you happen to upload the Intune file, you'll get the following error:<br>
-    >![Image of configuration settings](images/8e69f867664668796a3b2904896f0436.png)
+    >![Image of configuration settings intune file upload](images/8e69f867664668796a3b2904896f0436.png)
 
 
 11. Select **Save**. 
@@ -395,7 +395,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     ![Image of configuration settings contoso machine grp save](images/09a275e321268e5e3ac0c0865d3e2db5.png)
 
     
-    ![Image of configuration settings](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
+    ![Image of configuration settings add save](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
 11. Select **Done**. You'll see the new **Configuration profile**.
     ![Image of configuration setting done img](images/633ad26b8bf24ec683c98b2feb884bdf.png)
@@ -741,11 +741,11 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 1. Navigate to where you saved `wdav.pkg`.
 
-    ![Image of file explorer1](images/8dde76b5463047423f8637c86b05c29d.png)
+    ![Image of file explorer wdav pkg](images/8dde76b5463047423f8637c86b05c29d.png)
 
 2. Rename it to `wdav_MDM_Contoso_200329.pkg`.
 
-    ![Image of file explorer1](images/fb2220fed3a530f4b3ef36f600da0c27.png)
+    ![Image of file explorer1 wdavmdmpkg](images/fb2220fed3a530f4b3ef36f600da0c27.png)
 
 3. Open the Jamf Pro dashboard.
 
