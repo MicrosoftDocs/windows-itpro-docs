@@ -12,7 +12,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ksarens
 manager: dansimp
-ms.date: 08/17/2020
+ms.date: 03/19/2021
 ms.technology: mde
 ---
 
@@ -25,12 +25,11 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-You can perform various **Microsoft Defender Antivirus** functions with the dedicated command-line tool **mpcmdrun.exe**. This utility is useful when you want to automate **Microsoft Defender Antivirus** use. You can find the utility in `**%ProgramFiles%\Windows Defender\MpCmdRun.exe**`. You must run it from a command prompt.
+You can perform various Microsoft Defender Antivirus functions with the dedicated command-line tool **mpcmdrun.exe**. This utility is useful when you want to automate Microsoft Defender Antivirus use. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. You must run it from a command prompt.
 
 > [!NOTE]
-> You might need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
->
-> If you're running an updated Microsoft Defender Platform version, please run `**MpCmdRun**` from the following location: `**C:\ProgramData\Microsoft\Windows Defender\Platform\<version>**`.
+> You might need to open an administrator-level version of the command prompt. When you search for **Command Prompt** on the Start menu, choose **Run as administrator**.
+> If you're running an updated Microsoft Defender Platform version, run `**MpCmdRun**` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
 
 The utility has the following commands:
 
@@ -76,7 +75,7 @@ MpCmdRun.exe -Scan -ScanType 2
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=800722F0D` | The firewall is blocking the connection or conducting SSL inspection. |
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=80072EE7 httpcode=451)` | The firewall is blocking the connection or conducting SSL inspection. |
 
-## Related topics
+## See also
 
 - [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
 - [Manage Microsoft Defender Antivirus in your business](configuration-management-reference-microsoft-defender-antivirus.md)
