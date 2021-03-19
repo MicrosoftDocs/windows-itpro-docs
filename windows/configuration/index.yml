@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: What's new in Windows 10
+  - title: Cart 1 title
     linkLists:
       - linkListType: overview
         links:
@@ -40,7 +40,7 @@ landingContent:
             url:  whats-new-windows-10-version-1803.md
 
   # Card (optional)
-  - title: Learn more
+  - title: Card 2 title
     linkLists:
       - linkListType: overview
         links:
@@ -58,7 +58,7 @@ landingContent:
             url: https://go.microsoft.com/fwlink/p/?LinkId=690485
 
   # Card (optional)
-  - title: See also
+  - title: Card 3 title
     linkLists:
       - linkListType: overview
         links:
