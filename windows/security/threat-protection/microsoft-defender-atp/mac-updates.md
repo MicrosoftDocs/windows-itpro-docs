@@ -89,7 +89,6 @@ The `Current` channel contains the most stable version of the product.
 Change how often MAU searches for updates.
 
 |||
-|:---|:---|
 | **Domain** | com.microsoft.autoupdate2 |
 | **Key** | UpdateCheckFrequency |
 | **Data type** | Integer |
