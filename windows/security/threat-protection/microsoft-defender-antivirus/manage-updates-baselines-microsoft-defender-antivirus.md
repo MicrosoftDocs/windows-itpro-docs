@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 03/10/2021
+ms.date: 03/19/2021
 ms.technology: mde
 ---
 
@@ -35,7 +35,7 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 > Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
 > Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 > 
-> To see the most current engine, platform, and signature date, visit the [Microsoft security encyclopedia](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
+> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 ## Security intelligence updates
 
@@ -48,7 +48,7 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft
 
 Cloud-delivered protection is always on and requires an active connection to the Internet to function. Security intelligence updates occur on a scheduled cadence (configurable via policy). For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md). 
 
-For a list of recent security intelligence updates, see [Antimalware updates change log - Microsoft Security Intelligence](https://www.microsoft.com/wdsi/definitions/antimalware-definition-release-notes).
+For a list of recent security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 Engine updates are included with security intelligence updates and are released on a monthly cadence.
 
