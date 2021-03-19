@@ -331,7 +331,7 @@ You'll need to take the following steps:
 
 15. Select **Add**, then select **Save**.
 
-    ![Image of configuration settings add save](images/cf30438b5512ac89af1d11cbf35219a6.png)
+    ![Image of configuration settings addsav](images/cf30438b5512ac89af1d11cbf35219a6.png)
 
     ![Image of configuration settings save add](images/6f093e42856753a3955cab7ee14f12d9.png)
 
@@ -728,7 +728,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 
 12. Select **Save**.
 
-    ![Image of configuration settings savimg](images/netext-scope.png)
+    ![Image of configuration settings savimg netextscop](images/netext-scope.png)
 
 13. Select **Done**.
 
@@ -821,7 +821,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 16. Select **Save**.
 
-    ![Image of configuration settings savimg](images/9d6e5386e652e00715ff348af72671c6.png)
+    ![Image of configuration settingssavimg](images/9d6e5386e652e00715ff348af72671c6.png)
 
 17. Select the **Scope** tab.  
 
