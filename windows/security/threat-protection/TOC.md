@@ -253,6 +253,10 @@
 ##### [Configure and validate exclusions](microsoft-defender-atp/mac-exclusions.md)
 ##### [Set preferences](microsoft-defender-atp/mac-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/mac-pua.md)
+##### [Device control]()
+###### [Device control overview](microsoft-defender-atp/mac-device-control-overview.md)
+###### [JAMF examples](microsoft-defender-atp/mac-device-control-jamf.md)
+###### [Intune examples](microsoft-defender-atp/mac-device-control-intune.md)
 ##### [Schedule scans](microsoft-defender-atp/mac-schedule-scan-atp.md)
 
 #### [Troubleshoot]()
