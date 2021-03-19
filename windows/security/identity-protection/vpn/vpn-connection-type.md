@@ -66,11 +66,13 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.m
 
 The following image shows connection options in a VPN Profile configuration policy using Microsoft Intune:
 
-![Available connection types](images/vpn-connection-intune.png)
+> [!div class="mx-imgBorder"]
+> ![Available connection types](images/vpn-connection-intune.png)
      
 In Intune, you can also include custom XML for third-party plug-in profiles:
 
-![Custom XML](images/vpn-custom-xml-intune.png)
+> [!div class="mx-imgBorder"]
+> ![Custom XML](images/vpn-custom-xml-intune.png)
 
 
 ## Related topics
