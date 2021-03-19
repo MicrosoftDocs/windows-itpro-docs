@@ -55,7 +55,7 @@ These steps assume you already have Defender for Endpoint running on your device
   If your device isn't already in the Insider Fast update channel, execute the following command from the Terminal. The channel update takes effect the next time the product starts (when the next product update is installed, or when the device is rebooted).
 
   ```bash
-  defaults write com.microsoft.autoupdate2 ChannelName -string InsiderFast
+  defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
   Alternatively, if you're in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [Deploy updates for Microsoft Defender ATP for Mac: Set the channel name](mac-updates.md#set-the-channel-name).
