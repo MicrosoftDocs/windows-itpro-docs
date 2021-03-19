@@ -75,7 +75,7 @@ You'll need to take the following steps:
 
 1. Locate the file `WindowsDefenderATPOnboarding.plist` from the previous section.
 
-   ![Image of file](images/plist-onboarding-file.png)
+   ![Image of WindowsDefenderATPOnboarding file](images/plist-onboarding-file.png)
 
  
 2. In the Jamf Pro dashboard, select **New**.
@@ -93,13 +93,13 @@ You'll need to take the following steps:
 
 4. In **Application & Custom Settings** select **Configure**.
 
-    ![Image of configuration profile](images/jamfpro-mac-profile.png)
+    ![Image of configurate app and custom settings](images/jamfpro-mac-profile.png)
 
 5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`. 
 
     ![Image of jamfpro plist upload file](images/jamfpro-plist-upload.png)
 
-    ![Image of upload file PLIST file](images/jamfpro-plist-file.png)
+    ![Image of upload file property List file](images/jamfpro-plist-file.png)
 
 7. Select **Open** and select the onboarding file.
 
