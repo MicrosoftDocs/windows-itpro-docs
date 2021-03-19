@@ -21,6 +21,7 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10, version 1511
 -   Windows 10, version 1507
+-   TPM v1.2
 
 This topic for the IT professional describes how to change the password or PIN for the owner of the Trusted Platform Module (TPM) that is installed on your system.
 
