@@ -36,7 +36,7 @@ ms.technology: mde
 
 Ensure that you have Defender for Endpoint deployed in your environment with devices enrolled, and not just on a laboratory set-up.
 
-If you're a Defender for Endpoint customer, you need to apply for Microsoft Threat Experts - Targeted Attack Notifications to get special insights and analysis to help identify the most critical threats, so you can respond to them quickly. Contact your account team or Microsoft representative to subscribe to Microsoft Threat Experts - Experts on Demand to consult with our threat experts on relevant detections and adversaries.
+If you're a Defender for Endpoint customer, you need to apply for **Microsoft Threat Experts - Targeted Attack Notifications** to get special insights and analysis to help identify the most critical threats, so you can respond to them quickly. Contact your account team or Microsoft representative to subscribe to **Microsoft Threat Experts - Experts on Demand** to consult with our threat experts on relevant detections and adversaries.
 
 ## Apply for Microsoft Threat Experts - Targeted Attack Notifications service 
 If you're already a Defender for Endpoint customer, you can apply through the Microsoft Defender Security Center. 
