@@ -32,7 +32,7 @@ ms.technology: mde
 
 ## Before you begin 
 > [!NOTE]
-> Discuss the eligibility requirements with your Microsoft Technical Service provider and account team before you apply to the managed threat hunting service.
+> Discuss the eligibility requirements with your Microsoft Technical Service provider and account team before you apply to Microsoft Threat Experts - Targeted Attack Notification managed threat hunting service.
 
 Ensure that you have Defender for Endpoint deployed in your environment with devices enrolled, and not just on a laboratory set-up.
 
@@ -78,7 +78,7 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 2. From the dashboard, select the same alert topic that you got from the email, to view the details.  
 
 ## Subscribe to Microsoft Threat Experts - Experts on Demand
-If you're already a Defender for Endpoint customer, you can contact your Microsoft representative to subscribe to Microsoft Threat Experts - Experts on Demand. 
+This is available as a subscription service. If you're already a Defender for Endpoint customer, you can contact your Microsoft representative to subscribe to Microsoft Threat Experts - Experts on Demand. 
 
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization 
 You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard. 
