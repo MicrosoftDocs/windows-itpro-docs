@@ -87,7 +87,7 @@
     },
 	{
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-ios-privacy-information.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ios-privacy",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-privacy",
       "redirect_document_id": false
     },
     {
@@ -1532,13 +1532,8 @@
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-machinegroups-collection.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-machinegroups-collection",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machinegroups-collection",
       "redirect_document_id": true
-    },
-	{
-      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machinegroups-collection.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list",
-      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md",
@@ -2050,7 +2045,7 @@
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/supported-response-apis",
       "redirect_document_id": true
     },
-	{
+	  {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/supported-response-apis.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list",
       "redirect_document_id": false
@@ -15121,11 +15116,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/security/threat-protection/microsoft-defender-atp/find-machine-info-by-ip.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/find-machines-by-ip",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-filemachineaction-object-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/use-apis",
       "redirect_document_id": false
@@ -16541,11 +16531,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventory-table",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "windows/client-management/mdm/policies-in-policy-csp-supported-by-iot-enterprise.md",
       "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference",
       "redirect_document_id": false
@@ -17091,11 +17076,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/security/threat-protection/microsoft-defender-atp/endpoint-detection-response-mac-preview.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/endpoint-detection-response-mac-preview",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/evaluate-atp.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-mde",
       "redirect_document_id": true
@@ -17358,11 +17338,6 @@
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machine-group-exposure-score.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machine-group-exposure-score",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machinegroups-collection.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machinegroups-collection",
       "redirect_document_id": true
     },
     {
@@ -17946,11 +17921,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-ios-privacy-information.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios-privacy-information",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux",
       "redirect_document_id": true
@@ -18228,11 +18198,6 @@
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/stop-and-quarantine-file.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/stop-and-quarantine-file",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "windows/security/threat-protection/microsoft-defender-atp/supported-response-apis.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/supported-response-apis",
       "redirect_document_id": true
     },
     {
