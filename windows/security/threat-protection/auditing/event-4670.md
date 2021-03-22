@@ -98,7 +98,7 @@ Before this event can generate, certain ACEs might need to be set in the object�
 
 - **Account Name** [Type = UnicodeString]**:** The name of the account that requested the "change object’s permissions" operation.
 
-- **Account Domain** [Type = UnicodeString] : subject’s domain or computer name. Formats vary, and include the following:
+- **Account Domain** [Type = UnicodeString]**:** Subject’s domain or computer name. Formats vary, and include the following:
 
     - Domain NETBIOS name example: CONTOSO
 
