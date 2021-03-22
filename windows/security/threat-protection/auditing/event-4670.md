@@ -116,7 +116,7 @@ Before this event can generate, certain ACEs might need to be set in the objectâ
 
 - **Object Server** [Type = UnicodeString]**:** Has "**Security**" value for this event.
 
-- **Object Type** [Type = UnicodeString]: The type of an object that was accessed during the operation.
+- **Object Type** [Type = UnicodeString]**:** The type of an object that was accessed during the operation.
 
     The following table contains the list of the most common **Object Types**:
 
