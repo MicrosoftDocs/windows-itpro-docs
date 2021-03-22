@@ -16554,6 +16554,1951 @@
       "source_path": "windows/security/threat-protection/device-guard/memory-integrity.md",
       "redirect_url": "https://support.microsoft.com/windows/core-isolation-e30ed737-17d8-42f3-a2a9-87521df09b78",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/access-mssp-portal.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/access-mssp-portal",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/add-or-remove-machine-tags.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/add-or-remove-machine-tags",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-features.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-assignedipaddress-function.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-assignedipaddress-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-best-practices.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-best-practices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-devicealertevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-deviceevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicefilecertificateinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-devicefilecertificateinfo-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicefileevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-devicefileevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceimageloadevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-deviceimageloadevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-deviceinfo-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicelogonevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-devicelogonevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicenetworkevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-devicenetworkevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicenetworkinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-devicenetworkinfo-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceprocessevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-deviceprocessevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceregistryevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-deviceregistryevents-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-devicetvmsecureconfigurationassessment-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-errors.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-errors",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-extend-data.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-extend-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-fileprofile-function.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-fileprofile-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-go-hunt.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-go-hunt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-limits.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-limits",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-query-language",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-results.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-query-results",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-schema-reference",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-shared-queries.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-shared-queries",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-take-action.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-take-action",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/alerts-queue.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts-queue",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/alerts-queue-endpoint-detection-response.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts-queue-endpoint-detection-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/android-configure.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/android-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/android-intune.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/android-intune",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/android-privacy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/android-privacy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/android-support-signin.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/android-support-signin",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/android-terms.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/android-terms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/api-explorer.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/api-explorer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/api-hello-world.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/api-hello-world",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/api-microsoft-flow.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/api-microsoft-flow",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/api-portal-mapping.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/api-portal-mapping",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/api-power-bi.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/api-power-bi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/apis-intro.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/api-terms-of-use.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/api-terms-of-use",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/assign-portal-access.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/assign-portal-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/attack-simulations.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-simulations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction-faq.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/audit-windows-defender.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/audit-windows-defender",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/automated-investigations.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/automation-levels.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automation-levels",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/basic-permissions.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/basic-permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-containment.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/check-sensor-status.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/check-sensor-status",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/client-behavioral-blocking.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/client-behavioral-blocking",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/collect-investigation-package.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/collect-investigation-package",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/common-errors.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/common-errors",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/community.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/community",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/conditional-access.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/conditional-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-arcsight.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-arcsight",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-attack-surface-reduction.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-attack-surface-reduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-conditional-access.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-conditional-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-email-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-endpoints.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-gp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-gp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-mdm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-non-windows.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-non-windows",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-script.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-script",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-machines.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-machines-asr.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-machines-onboarding.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-onboarding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-security-baseline",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-mssp-notifications.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-mssp-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-mssp-support.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-mssp-support",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-siem.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/connected-applications.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/connected-applications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/contact-support.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/contact-support",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/controlled-folders.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/create-alert-by-reference.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/create-alert-by-reference",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/custom-detection-rules",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/custom-detections-manage.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/custom-detections-manage",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/customize-controlled-folders.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-controlled-folders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/customize-exploit-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/data-retention-settings.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/data-retention-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/data-storage-privacy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/defender-compatibility.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/defender-compatibility",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/delete-ti-indicator-by-id.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/delete-ti-indicator-by-id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/deployment-phases",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/deployment-rings.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/deployment-rings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/deployment-strategy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/deployment-strategy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/device-timeline-event-flag.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/device-timeline-event-flag",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/edr-in-block-mode.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-exploit-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/enable-network-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/enable-siem-integration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-siem-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/endpoint-detection-response-mac-preview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/endpoint-detection-response-mac-preview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/evaluate-atp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-mde",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/evaluate-attack-surface-reduction.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-attack-surface-reduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/evaluate-controlled-folder-access.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-controlled-folder-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/evaluate-exploit-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-exploit-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/evaluate-network-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-network-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/evaluation-lab.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluation-lab",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/event-error-codes.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/event-error-codes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/event-views.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/event-views",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/exploit-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/exploit-protection-reference.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection-reference",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/exposed-apis-create-app-nativeapp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/exposed-apis-create-app-partners.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/exposed-apis-create-app-webapp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/exposed-apis-full-sample-powershell.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-full-sample-powershell",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/exposed-apis-odata-samples.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-odata-samples",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/feedback-loop-blocking.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/feedback-loop-blocking",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/fetch-alerts-mssp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/fetch-alerts-mssp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/files.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/find-machine-info-by-ip.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/find-machine-info-by-ip",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/find-machines-by-ip.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/find-machines-by-ip",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/fix-unhealthy-sensors.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-alert-info-by-id.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-alert-info-by-id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-alert-related-domain-info.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-alert-related-domain-info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-alert-related-files-info.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-alert-related-files-info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-alert-related-ip-info.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-alert-related-ip-info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-alert-related-machine-info.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-alert-related-machine-info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-alert-related-user-info.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-alert-related-user-info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-all-recommendations.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-all-recommendations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-all-vulnerabilities.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-all-vulnerabilities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-all-vulnerabilities-by-machines.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-all-vulnerabilities-by-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-cvekbmap-collection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-cvekbmap-collection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-device-secure-score.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-device-secure-score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-discovered-vulnerabilities.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-discovered-vulnerabilities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-domain-related-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-domain-related-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-domain-related-machines.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-domain-related-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-domain-statistics.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-domain-statistics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-exposure-score.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-exposure-score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-file-information.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-file-information",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-file-related-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-file-related-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-file-related-machines.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-file-related-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-file-statistics.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-file-statistics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-installed-software.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-installed-software",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-investigation-collection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-investigation-collection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-investigation-object.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-investigation-object",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-ip-related-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-ip-related-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-ip-statistics.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-ip-statistics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-kbinfo-collection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-kbinfo-collection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machineaction-object.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machineaction-object",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machineactions-collection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machineactions-collection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machine-by-id.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machine-by-id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machine-group-exposure-score.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machine-group-exposure-score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machinegroups-collection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machinegroups-collection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machine-log-on-users.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machine-log-on-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machine-related-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machine-related-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machines.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machines-by-software.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machines-by-software",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machines-by-vulnerability.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machines-by-vulnerability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-machinesecuritystates-collection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-machinesecuritystates-collection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-missing-kbs-machine.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-missing-kbs-machine",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-missing-kbs-software.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-missing-kbs-software",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-package-sas-uri.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-package-sas-uri",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-recommendation-by-id.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-recommendation-by-id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-recommendation-machines.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-recommendation-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-recommendation-software.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-recommendation-software",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-recommendation-vulnerabilities.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-recommendation-vulnerabilities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-security-recommendations.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-security-recommendations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-software.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-software",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-software-by-id.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-software-by-id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-software-ver-distribution.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-software-ver-distribution",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-started-partner-integration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-started-partner-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-ti-indicators-collection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-ti-indicators-collection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-user-information.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-user-information",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-user-related-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-user-related-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-user-related-machines.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-user-related-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-vuln-by-software.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-vuln-by-software",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/get-vulnerability-by-id.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/get-vulnerability-by-id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/gov.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/gov",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/grant-mssp-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/helpful-resources.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/helpful-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/indicator-certificates.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/indicator-file.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/indicator-ip-domain.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-ip-domain",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/indicator-manage.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-manage",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/information-protection-investigation.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/information-protection-investigation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/initiate-autoir-investigation.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/initiate-autoir-investigation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/investigate-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-behind-proxy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/investigate-domain.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-domain",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/investigate-files.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/investigate-incidents.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-incidents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/investigate-ip.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-ip",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/investigate-machines.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/investigate-user.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-user",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/investigation.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/ios-configure-features.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/ios-install.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-install",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/ios-privacy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-privacy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/ios-terms.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-terms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/isolate-machine.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/isolate-machine",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-exclusions.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-exclusions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-install-manually.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-install-manually",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-install-with-ansible.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-install-with-ansible",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-install-with-puppet.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-install-with-puppet",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-preferences.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-privacy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-privacy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-pua.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-pua",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-resources.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-static-proxy-configuration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-support-connectivity.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-support-connectivity",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-support-install.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-support-install",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-support-perf.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-support-perf",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-updates.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/linux-whatsnew.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-whatsnew",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/live-response.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/live-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/live-response-command-examples.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/live-response-command-examples",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-exclusions.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-exclusions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/machine.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/machineaction.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machineaction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/machine-groups.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/machine-reports.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/machines-view-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machines-view-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/machine-tags.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-install-jamfpro-login.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-install-jamfpro-login",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-install-manually.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-install-manually",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-install-with-intune.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-install-with-intune",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-install-with-jamf.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-install-with-jamf",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-install-with-other-mdm.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-install-with-other-mdm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-jamfpro-device-groups.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-jamfpro-device-groups",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-jamfpro-enroll-devices.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-jamfpro-enroll-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-jamfpro-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-jamfpro-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-preferences.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-preferences",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-privacy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-privacy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-pua.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-pua",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-resources.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-schedule-scan",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-support-install.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-support-install",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-support-kext.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-support-kext",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-support-license.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-support-license",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-support-perf.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-support-perf",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-sysext-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-sysext-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-sysext-preview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-sysext-preview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-updates.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-updates",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-whatsnew.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-whatsnew",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-atp-post-migration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-endpoint-post-migration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-atp-post-migration-configuration-manager.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-endpoint-post-migration-configuration-manager",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-atp-post-migration-group-policy-objects.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-endpoint-post-migration-group-policy-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-atp-post-migration-intune.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-endpoint-post-migration-intune",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-atp-post-migration-other-tools.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-endpoint-post-migration-other-tools",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-automation-file-uploads.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-automation-file-uploads",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-automation-folder-exclusions.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-automation-folder-exclusions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-edr.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-edr",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-incidents.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-incidents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-indicators.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/management-apis.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-suppression-rules.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-suppression-rules",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mcafee-to-microsoft-defender-migration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-migration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mcafee-to-microsoft-defender-onboard.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-onboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mcafee-to-microsoft-defender-prepare.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-prepare",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mcafee-to-microsoft-defender-setup.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-setup",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-cloud-app-security-config.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-cloud-app-security-config",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-cloud-app-security-integration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-cloud-app-security-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-android",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-ios.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-ios-privacy-information.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios-privacy-information",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-security-center.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-security-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/migration-guides.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/migration-guides",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/minimum-requirements.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mssp-list.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mssp-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mssp-support.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mssp-support",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/network-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/network-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/non-windows.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/non-windows",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/offboard-machine-api.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/offboard-machine-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/offboard-machines.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/offboard-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/onboard.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/onboard-configure.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/onboard-downlevel.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/onboarding.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboarding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/onboarding-endpoint-configuration-manager.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboarding-endpoint-configuration-manager",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/onboarding-endpoint-manager.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboarding-endpoint-manager",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/onboarding-notification.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboarding-notification",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/onboard-offline-machines.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-offline-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/Onboard-Windows-10-multi-session-device.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/Onboard-Windows-10-multi-session-device",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/overview-custom-detections.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-custom-detections",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/overview-hardware-based-isolation.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-hardware-based-isolation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/partner-applications.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/partner-applications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/partner-integration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/partner-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/portal-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/portal-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/post-ti-indicator.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/post-ti-indicator",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/preferences-setup.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/prepare-deployment.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/prepare-deployment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/preview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/preview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/preview-settings.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/preview-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/production-deployment.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/pull-alerts-using-rest-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/raw-data-export.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/raw-data-export",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/raw-data-export-event-hub.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/raw-data-export-event-hub",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/raw-data-export-storage.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/raw-data-export-storage",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/rbac.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/recommendation.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/recommendation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-file-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/restrict-code-execution.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/restrict-code-execution",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/review-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/review-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-advanced-query-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-sample-powershell.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-advanced-query-sample-powershell",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-sample-python.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-advanced-query-sample-python",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/run-av-scan.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-av-scan",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/run-detection-test.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/score.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/security-operations-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/service-status.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/service-status",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/set-device-value.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/set-device-value",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/software.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/software",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/stop-and-quarantine-file.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/stop-and-quarantine-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/supported-response-apis.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/supported-response-apis",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/switch-to-microsoft-defender-migration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-migration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/switch-to-microsoft-defender-onboard.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/switch-to-microsoft-defender-prepare.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/switch-to-microsoft-defender-setup.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-setup",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/symantec-to-microsoft-defender-atp-onboard.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-endpoint-onboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/symantec-to-microsoft-defender-atp-prepare.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-endpoint-prepare",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-endpoint-setup",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/threat-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-analytics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-and-vuln-mgt-event-timeline",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/threat-indicator-concepts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-indicator-concepts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/threat-protection-integration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/threat-protection-reports.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/ti-indicator.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicator",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/time-settings.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/time-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-asr",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-collect-support-log.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-exploit-protection-mitigations.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-exploit-protection-mitigations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-live-response.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-live-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-mdatp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-mde",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-np.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-np",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-onboarding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding-error-messages.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-onboarding-error-messages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-siem.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-siem",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-assign-device-value.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-assign-device-value",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-dashboard-insights",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-end-of-support-software.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-end-of-support-software",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-exception.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exception",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-exposure-score.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exposure-score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-hunt-exposed-devices.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-hunt-exposed-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-prerequisites.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-prerequisites",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-remediation.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-remediation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-software-inventory.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-supported-os",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-vulnerable-devices-report.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-vulnerable-devices-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/tvm-zero-day-vulnerabilities.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-zero-day-vulnerabilities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/unisolate-machine.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/unisolate-machine",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/unrestrict-code-execution.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/unrestrict-code-execution",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/update-alert.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/update-alert",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/use.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/user.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/user",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/user-roles.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/user-roles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/vulnerability.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/vulnerability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/web-content-filtering.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/web-content-filtering",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/web-protection-monitoring.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/web-protection-monitoring",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/web-protection-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/web-protection-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/web-protection-response.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/web-protection-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/web-threat-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/web-threat-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint",
+      "redirect_document_id": true
+    }    
 	    ]
 }
