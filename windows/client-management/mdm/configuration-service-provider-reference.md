@@ -1375,7 +1375,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Language Pack Management CSP](language- pack-management-csp.md)
+[LanguagePackManagement CSP](language- pack-management-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1389,13 +1389,13 @@ Additional lists:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="cross mark" /></td>
 	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/creckmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
