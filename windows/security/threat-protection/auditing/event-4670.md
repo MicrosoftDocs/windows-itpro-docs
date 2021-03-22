@@ -148,7 +148,7 @@ Before this event can generate, certain ACEs might need to be set in the objectâ
 
 **Permissions Change:**
 
-- **Original Security Descriptor** [Type = UnicodeString]**:** the old Security Descriptor Definition Language (SDDL) value for the object.
+- **Original Security Descriptor** [Type = UnicodeString]**:** The old Security Descriptor Definition Language (SDDL) value for the object.
 
 - **New Security Descriptor** [Type = UnicodeString]**:** the new Security Descriptor Definition Language (SDDL) value for the object.
 
