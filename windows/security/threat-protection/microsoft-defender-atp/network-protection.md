@@ -31,6 +31,11 @@ ms.date: 03/08/2021
 Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet. Network protection expands the scope of [Microsoft Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
 Network protection is supported on Windows, beginning with Windows 10, version 1709. 
+Network Protection is not yet supported on other operating systems. To learn which Web Protection functionality is supported using the Edge (Chromium) browser, see [Web protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/web-protection-overview)  to find out which Web Protection functionality is supported using the Edge (Chromium) browser.
+
+Network Protection extends the protection in [Web protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/web-protection-overview) to an OS level – and would thus provide Web protection functionality in Edge to other supported browsers as well as non-browser applications.
+In addition, Network Protection provides visibility and blocking of Indicators of Compromise (IOCs) when used with [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) including the enforcement of your [custom indicator list](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+
 
 For more information about how to enable network protection, see [Enable network protection](enable-network-protection.md). Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 
@@ -87,6 +92,23 @@ This procedure creates a custom view that filters to only show the following eve
 | 5007 | Event when settings are changed |
 | 1125 | Event when network protection fires in audit mode |
 | 1126 | Event when network protection fires in block mode |
+
+
+## Considerations for Windows virtual desktop running Windows 10 Enterprise Multi-Session
+Due to the multi-user nature of this operating system, please observe the following:
+ 
+1.	Network Protection is a machine-wide feature and cannot be targeted to specific user (sessions).
+2.	This applies to Web content filtering policies as well.
+3.	If differentiation between user groups is required, consider creating separate Windows Virtual Desktop host pools and assignments.
+4.	Test Network Protection in audit mode to test behavior before blocking. 
+5.	Due to the multi-user nature, you may consider resizing your deployment accordingly.
+ 
+Alternative option:
+For Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure, Network protection for Microsoft Edge can be enabled using the following method:
+ 
+1.	Use Turn on network protection - Windows security | Microsoft Docs and follow the instructions to apply your policy
+2.	Execute the following PowerShell command: Set-MpPreference -AllowNetworkProtectionOnWinServer 1
+
 
 ## Related articles
 
