@@ -130,7 +130,7 @@ Before this event can generate, certain ACEs might need to be set in the objectâ
 | Key                     | WaitablePort | Callback             | Semaphore    |
 | Job                     | Port         | FilterConnectionPort | ALPC Port    |
 
-- **Object Name** \[Type = UnicodeString\]: name and other identifying information for the object for which permissions were changed. For example, for a file, the path would be included. For Token objects, this field typically equals "-".
+- **Object Name** \[Type = UnicodeString\]**:** Name and other identifying information for the object for which permissions were changed. For example, for a file, the path would be included. For Token objects, this field typically equals "-".
 
 - **Handle ID** \[Type = Pointer\]: hexadecimal value of a handle to **Object Name**. This field can help you correlate this event with other events that might contain the same Handle ID, for example, "[4663](event-4663.md)(S): An attempt was made to access an object." This parameter might not be captured in the event, and in that case appears as "0x0".
 
