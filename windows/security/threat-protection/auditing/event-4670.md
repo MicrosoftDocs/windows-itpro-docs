@@ -96,7 +96,7 @@ Before this event can generate, certain ACEs might need to be set in the object�
 > [!NOTE]
 > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
-- **Account Name** [Type = UnicodeString] : the name of the account that requested the "change object’s permissions" operation.
+- **Account Name** [Type = UnicodeString]**:** The name of the account that requested the "change object’s permissions" operation.
 
 - **Account Domain** [Type = UnicodeString] : subject’s domain or computer name. Formats vary, and include the following:
 
