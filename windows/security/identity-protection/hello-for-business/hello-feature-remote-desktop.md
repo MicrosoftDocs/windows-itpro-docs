@@ -22,10 +22,8 @@ ms.reviewer:
 **Requirements**
 
 - Windows 10
-- Certificate trust deployments
-- Hybrid and On-premises Windows Hello for Business deployments
+- Cloud only, Hybrid, and On-premises only  Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
-- Certificate trust deployments
 
 Windows Hello for Business supports using a certificate deployed to a Windows Hello for Business container as a supplied credential to establish a remote desktop connection to a server or another device. This functionality is not supported for key trust deployments. This feature takes advantage of the redirected smart card capabilities of the remote desktop protocol. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/remote-credential-guard).
 
@@ -35,9 +33,8 @@ Microsoft continues to investigate supporting using keys trust for supplied cred
 
 **Requirements**
 
-- Hybrid and On-premises Windows Hello for Business deployments
+- Cloud only, Hybrid, and On-premises only Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
-- Certificate trust deployments
 - Biometric enrollments
 - Windows 10, version 1809
 
