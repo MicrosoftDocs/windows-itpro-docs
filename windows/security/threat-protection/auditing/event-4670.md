@@ -110,7 +110,7 @@ Before this event can generate, certain ACEs might need to be set in the objectâ
 
     - For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: "Win81".
 
-- **Logon ID** [Type = HexInt64]**:** hexadecimal value that can help you correlate this event with recent events that might contain the same Logon ID, for example, "[4624](event-4624.md): An account was successfully logged on."
+- **Logon ID** [Type = HexInt64]**:** Hexadecimal value that can help you correlate this event with recent events that might contain the same Logon ID, for example, "[4624](event-4624.md): An account was successfully logged on."
 
 **Object**:
 
