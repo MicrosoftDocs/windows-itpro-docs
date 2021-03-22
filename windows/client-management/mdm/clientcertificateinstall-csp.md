@@ -23,10 +23,48 @@ For PFX certificate installation and SCEP installation, the SyncML commands must
 
 You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLocation value, the CSP will fail.
 
-The following image shows the ClientCertificateInstall configuration service provider in tree format.
-
-![clientcertificateinstall csp](images/provisioning-csp-clientcertificateinstall.png)
-
+The following shows the ClientCertificateInstall configuration service provider in tree format.
+```
+./Vendor/MSFT
+ClientCertificateInstall
+----PFXCertInstall
+--------UniqueID
+------------KeyLocation
+------------ContainerName
+------------PFXCertBlob
+------------PFXCertPassword
+------------PFXCertPasswordEncryptionType
+------------PFXKeyExportable
+------------Thumbprint
+------------Status
+------------PFXCertPasswordEncryptionStore (Added in Windows 10, version 1511)
+----SCEP
+--------UniqueID
+------------Install
+----------------ServerURL
+----------------Challenge
+----------------EKUMapping
+----------------KeyUsage
+----------------SubjectName
+----------------KeyProtection
+----------------RetryDelay
+----------------RetryCount
+----------------TemplateName
+----------------KeyLength
+----------------HashAlgorithm
+----------------CAThumbprint
+----------------SubjectAlternativeNames
+----------------ValidPeriod
+----------------ValidPeriodUnits
+----------------ContainerName
+----------------CustomTextToShowInPrompt
+----------------Enroll
+----------------AADKeyIdentifierList (Added in Windows 10, version 1703)
+------------CertThumbprint
+------------Status
+------------ErrorCode
+------------RespondentServerUrl
+```
 <a href="" id="device-or-user"></a>**Device or User**  
 For device certificates, use <strong>./Device/Vendor/MSFT</strong> path and for user certificates use <strong>./User/Vendor/MSFT</strong> path.
 
@@ -287,7 +325,8 @@ Valid values are:
 -   Months
 -   Years
 
-> **Note**  The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
+> [!NOTE]
+> The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
 
 Supported operations are Add, Get, Delete, and Replace.
 

@@ -6,6 +6,7 @@ ms.manager: laurawi
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
+ms.author: jaimeo
 description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization. 
 ms.audience: itpro
 ms.reviewer: 
@@ -46,7 +47,7 @@ The latest news:
 ## IT pro champs corner
 Written by IT pros for IT pros, sharing real world examples and scenarios for Windows 10 deployment and servicing.
 
-<img src="images/champs-2.png" alt="" width="640" height="320">
+<img src="images/champs-2.png" alt="Champs" width="640" height="320">
 
 <a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Tactical-considerations-for-creating-Windows-deployment-rings/ba-p/746979">**NEW** Tactical considerations for creating Windows deployment rings</a>
 
@@ -67,7 +68,7 @@ Written by IT pros for IT pros, sharing real world examples and scenarios for Wi
 
 Learn more about Windows as a service and its value to your organization.
 
-<img src="images/discover-land.png">
+<img src="images/discover-land.png" alt="Discover">
 
 <a href="waas-overview.md">Overview of Windows as a service</a>
 
@@ -82,7 +83,7 @@ Learn more about Windows as a service and its value to your organization.
 
 Prepare to implement Windows as a service effectively using the right tools, products, and strategies.
 
-<img src="images/plan-land.png" alt="" />
+<img src="images/plan-land.png" alt="Plan" />
 
 <a href="https://www.microsoft.com/windowsforbusiness/simplified-updates">Simplified updates</a>
 
@@ -98,7 +99,7 @@ Prepare to implement Windows as a service effectively using the right tools, pro
 
 Secure your organization's deployment investment.
 
-<img src="images/deploy-land.png" alt="" />
+<img src="images/deploy-land.png" alt="Deploy" />
 
 <a href="index.md">Update Windows 10 in the enterprise</a>
 
@@ -112,6 +113,6 @@ Secure your organization's deployment investment.
 
 
 ## Microsoft Ignite 2018
-<img src="images/ignite-land.jpg" alt="" width="640" height="320"/>
+<img src="images/ignite-land.jpg" alt="Ignite" width="640" height="320"/>
 
 Looking to learn more? These informative session replays from Microsoft Ignite 2018 (complete with downloadable slide decks) can provide some great insights on Windows as a service. See [MyIgnite - Session catalog](https://myignite.techcommunity.microsoft.com/sessions).

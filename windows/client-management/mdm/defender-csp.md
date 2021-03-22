@@ -20,10 +20,49 @@ ms.date: 08/11/2020
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
-The following image shows the Windows Defender configuration service provider in tree format.
-
-![defender csp diagram](images/provisioning-csp-defender.png)
-
+The following shows the Windows Defender configuration service provider in tree format.
+```
+./Vendor/MSFT
+Defender
+----Detections
+--------ThreatId
+------------Name
+------------URL
+------------Severity
+------------Category
+------------CurrentStatus
+------------ExecutionStatus
+------------InitialDetectionTime
+------------LastThreatStatusChangeTime
+------------NumberOfDetections
+----Health
+--------ProductStatus (Added in Windows 10 version 1809)
+--------ComputerState
+--------DefenderEnabled
+--------RtpEnabled
+--------NisEnabled
+--------QuickScanOverdue
+--------FullScanOverdue
+--------SignatureOutOfDate
+--------RebootRequired
+--------FullScanRequired
+--------EngineVersion
+--------SignatureVersion
+--------DefenderVersion
+--------QuickScanTime
+--------FullScanTime
+--------QuickScanSigVersion
+--------FullScanSigVersion
+--------TamperProtectionEnabled (Added in Windows 10, version 1903)
+--------IsVirtualMachine (Added in Windows 10, version 1903)
+----Configuration (Added in Windows 10, version 1903)
+--------TamperProetection (Added in Windows 10, version 1903)
+--------EnableFileHashcomputation (Added in Windows 10, version 1903)
+--------SupportLogLocation (Added in the next major release of Windows 10)
+----Scan
+----UpdateSignature
+----OfflineScan (Added in Windows 10 version 1803)
+```
 <a href="" id="detections"></a>**Detections**  
 An interior node to group all threats detected by Windows Defender.
 

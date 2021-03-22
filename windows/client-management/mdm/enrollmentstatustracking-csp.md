@@ -18,10 +18,72 @@ ESP uses the EnrollmentStatusTracking CSP along with the DMClient CSP to track t
 The EnrollmentStatusTracking CSP was added in Windows 10, version 1903.
 
 
-The following diagram shows the EnrollmentStatusTracking CSP in tree format.
+The following shows the EnrollmentStatusTracking CSP in tree format.
+```
+./User/Vendor/MSFT
+EnrollmentStatusTracking
+----Setup
+--------Apps
+------------PolicyProviders
+----------------ProviderName
+--------------------TrackingPoliciesCreated
+------------Tracking
+----------------ProviderName
+--------------------AppName
+------------------------TrackingUri
+------------------------InstallationState
+------------------------RebootRequired
+--------HasProvisioningCompleted
 
-![tree diagram for enrollmentstatustracking csp](images/provisioning-csp-enrollmentstatustracking.png)
 
+./Device/Vendor/MSFT
+EnrollmentStatusTracking
+----DevicePreparation
+--------PolicyProviders
+------------ProviderName
+----------------InstallationState
+----------------LastError
+----------------Timeout
+----------------TrackedResourceTypes
+--------------------Apps
+----Setup
+--------Apps
+------------PolicyProviders
+----------------ProviderName
+--------------------TrackingPoliciesCreated
+------------Tracking
+----------------ProviderName
+--------------------AppName
+------------------------TrackingUri
+------------------------InstallationState
+------------------------RebootRequired
+--------HasProvisioningCompleted
+
+
+./User/Vendor/MSFT
+./Device/Vendor/MSFT
+EnrollmentStatusTracking
+----DevicePreparation
+--------PolicyProviders
+------------ProviderName
+----------------InstallationState
+----------------LastError
+----------------Timeout
+----------------TrackedResourceTypes
+--------------------Apps
+----Setup
+--------Apps
+------------PolicyProviders
+----------------ProviderName
+--------------------TrackingPoliciesCreated
+------------Tracking
+----------------ProviderName
+--------------------AppName
+------------------------TrackingUri
+------------------------InstallationState
+------------------------RebootRequired
+--------HasProvisioningCompleted
+```
 <a href="" id="vendor-msft"></a>**./Vendor/MSFT**  
 For device context, use **./Device/Vendor/MSFT** path and for user context, use **./User/Vendor/MSFT** path.
 
