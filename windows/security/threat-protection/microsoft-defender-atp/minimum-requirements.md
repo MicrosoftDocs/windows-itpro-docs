@@ -118,7 +118,7 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 - [macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)
 - [Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux)
 - [Android](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android)
-- [iOS](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-ios)
+- [iOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-ios)
 
 > [!NOTE]
 > The exact versions of macOS, Android, iOS, and Linux distributions that are compatible with Defender for Endpoint are in the above linked documentation.
