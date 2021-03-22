@@ -21,6 +21,8 @@ ms.technology: mde
 -   Windows 10
 -   Windows Server 2016
 
+> [!NOTE]
+> For more details about applicability on older operating system versions, read the article [Audit File System](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn319068(v=ws.11)).
 
 Audit File System determines whether the operating system generates audit events when users attempt to access file system objects.
 
@@ -61,4 +63,3 @@ Only one event, “[4658](event-4658.md): The handle to an object was closed,”
 -   [5051](event-5051.md)(-): A file was virtualized.
 
 -   [4670](event-4670.md)(S): Permissions on an object were changed.
-
