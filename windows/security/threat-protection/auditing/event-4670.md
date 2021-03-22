@@ -150,7 +150,7 @@ Before this event can generate, certain ACEs might need to be set in the objectâ
 
 - **Original Security Descriptor** [Type = UnicodeString]**:** The old Security Descriptor Definition Language (SDDL) value for the object.
 
-- **New Security Descriptor** [Type = UnicodeString]**:** the new Security Descriptor Definition Language (SDDL) value for the object.
+- **New Security Descriptor** [Type = UnicodeString]**:** The new Security Descriptor Definition Language (SDDL) value for the object.
 
 > [!NOTE]
 > The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
