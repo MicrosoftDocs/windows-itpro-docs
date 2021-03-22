@@ -16546,9 +16546,14 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr",
+      "source_path": "windows/client-management/mdm/policies-in-policy-csp-supported-by-iot-enterprise.md",
+      "redirect_url": "https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/device-guard/memory-integrity.md",
+      "redirect_url": "https://support.microsoft.com/windows/core-isolation-e30ed737-17d8-42f3-a2a9-87521df09b78",
+      "redirect_document_id": true
     }
-  ]
+	    ]
 }
