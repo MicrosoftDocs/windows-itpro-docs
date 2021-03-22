@@ -144,7 +144,7 @@ Before this event can generate, certain ACEs might need to be set in the objectâ
 
     You can also correlate this process ID with a process ID in other events, for example, "[4688](event-4688.md): A new process has been created" **Process Information\\New Process ID**.
 
-- **Process Name** \[Type = UnicodeString\]**:** full path and the name of the executable for the process.
+- **Process Name** \[Type = UnicodeString\]**:** Full path and the name of the executable for the process.
 
 **Permissions Change:**
 
