@@ -97,10 +97,10 @@ The following is a sample for reference, using [GUID values for ASR rules](attac
 
 The values to enable (Block), disable, warn, or enable in audit mode are:
 
-  •	 0 : Disable (Disable the ASR rule)
-  •	 1 : Block (Enable the ASR rule)
-  •	 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
-  •	 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block)
+- 0 : Disable (Disable the ASR rule)
+- 1 : Block (Enable the ASR rule)
+- 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
+- 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block)
 
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) configuration service provider (CSP) to add exclusions.
@@ -143,10 +143,10 @@ Example:
 
    Select **Show...** and enter the rule ID in the **Value name** column and your chosen state in the **Value** column as follows:
 
-  •	 0 : Disable (Disable the ASR rule)
-  •	 1 : Block (Enable the ASR rule)
-  •	 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
-  •	 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block)
+   - 0 : Disable (Disable the ASR rule)
+   - 1 : Block (Enable the ASR rule)
+   - 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
+   - 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block)
 
    ![Group policy setting showing a blank attack surface reduction rule ID and value of 1](../images/asr-rules-gp.png)
 
