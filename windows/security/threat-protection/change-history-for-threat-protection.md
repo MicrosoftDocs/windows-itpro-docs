@@ -17,11 +17,11 @@ ms.technology: mde
 ---
 
 # Change history for threat protection
-This topic lists new and updated topics in the [Defender for Endpoint](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md) documentation.
+This topic lists new and updated topics in the [Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) documentation.
 
 ## August 2018
 
 New or changed topic | Description
 ---------------------|------------
-[Microsoft Defender for Endpoint](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md) | Reorganized Windows 10 security topics to reflect the Defender for Endpoint platform.
+[Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) | Reorganized Windows 10 security topics to reflect the Defender for Endpoint platform.
 
