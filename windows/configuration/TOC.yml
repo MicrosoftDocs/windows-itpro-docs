@@ -1,59 +1,44 @@
 - name: Configure Windows 10
   href: index.yml
-- name: Accessibility information for IT Pros
-  href: windows-10-accessibility-for-ITPros.md
-- name: Configure access to Microsoft Store
-  href: stop-employees-from-using-microsoft-store.md
-- name: Configure Cortana in Windows 10
-  href: cortana-at-work/cortana-at-work-overview.md
-- name: Set up and test Cortana in Windows 10, version 2004 and later
-  href: cortana-at-work/set-up-and-test-cortana-in-windows-10.md
-- name: Testing scenarios using Cortana in your business or organization
+- name: Manage Windows 10 settings
   items:
-    - name: Testing scenarios using Cortana in your business or organization
-      href: cortana-at-work/cortana-at-work-testing-scenarios.md
-    - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
-      href: cortana-at-work/cortana-at-work-scenario-1.md
-    - name: Test scenario 2 - Perform a Bing search with Cortana
-      href: cortana-at-work/cortana-at-work-scenario-2.md
-    - name: Test scenario 3 - Set a reminder
-      href: cortana-at-work/cortana-at-work-scenario-3.md
-    - name: Test scenario 4 - Use Cortana to find free time on your calendar
-      href: cortana-at-work/cortana-at-work-scenario-4.md
-    - name: Test scenario 5 - Find out about a person
-      href: cortana-at-work/cortana-at-work-scenario-5.md
-    - name: Test scenario 6 - Change your language and perform a quick search with Cortana
-      href: cortana-at-work/cortana-at-work-scenario-6.md
-- name: Send feedback about Cortana back to Microsoftr
-  href: cortana-at-work/cortana-at-work-feedback.md
-- name: Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization
-  href: cortana-at-work/cortana-at-work-o365.md
+    - name: Manage Windows 10 Start and taskbar layout
+      items:
+        - name: Manage Windows 10 Start and taskbar layout
+          href: windows-10-start-layout-options-and-policies.md
+        - name: Configure Windows 10 taskbar
+          href: configure-windows-10-taskbar.md
+        - name: Customize and export Start layout
+          href: customize-and-export-start-layout.md
+        - name: Add image for secondary tiles
+          href: start-secondary-tiles.md
+        - name: Start layout XML for desktop editions of Windows 10 (reference)
+          href: start-layout-xml-desktop.md
+        - name: Customize Windows 10 Start and taskbar with Group Policy
+          href: customize-windows-10-start-screens-by-using-group-policy.md
+        - name: Customize Windows 10 Start and taskbar with provisioning packages
+          href: customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md
+        - name: Customize Windows 10 Start and taskbar with mobile device management (MDM)
+          href: customize-windows-10-start-screens-by-using-mobile-device-management.md
+        - name: Troubleshoot Start menu errors
+          href: start-layout-troubleshoot.md
+        - name: Changes to Start policies in Windows 10
+          href: changes-to-start-policies-in-windows-10.md
+    - name: Other settings
+      items:
+        - name: Accessibility information for IT Pros
+          href: windows-10-accessibility-for-ITPros.md
+        - name: Configure access to Microsoft Store
+          href: stop-employees-from-using-microsoft-store.md
+        - name: Configure Windows Spotlight on the lock screen
+          href: windows-spotlight.md
+        - name: Manage Windows 10 and Microsoft Store tips, "fun facts", and suggestions
+          href: manage-tips-and-suggestions.md
+        - name: Configure cellular settings for tablets and PCs
+          href: provisioning-apn.md
+        - name: Lockdown features from Windows Embedded 8.1 Industry
+          href: lockdown-features-windows-10.md
 
-- name: Testing scenarios using Cortana in your business or organization
-  items:
-    - name: Testing scenarios using Cortana in your business or organization
-      href: cortana-at-work/cortana-at-work-testing-scenarios.md
-    - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
-      href: cortana-at-work/test-scenario-1.md
-    - name: Test scenario 2 - Perform a quick search with Cortana at work
-      href: cortana-at-work/test-scenario-2.md
-    - name: Test scenario 3 - Set a reminder for a specific location using Cortana at work
-      href: cortana-at-work/test-scenario-3.md
-    - name: Test scenario 4 - Use Cortana at work to find your upcoming meetings
-      href: cortana-at-work/test-scenario-4.md
-    - name: Test scenario 5 - Use Cortana to send email to a co-worker
-      href: cortana-at-work/test-scenario-5.md
-    - name: Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email
-      href: cortana-at-work/test-scenario-6.md
-    - name: Test scenario 7 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device
-      href: cortana-at-work/cortana-at-work-scenario-7.md
-
-- name: Set up and test custom voice commands in Cortana for your organization
-  href: cortana-at-work/cortana-at-work-voice-commands.md
-- name: Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization
-  href: cortana-at-work/cortana-at-work-policy-settings.md
-- name: Set up a shared or guest PC with Windows 10
-  href: set-up-shared-or-guest-pc.md
 
 - name: Configure kiosks and digital signs on Windows desktop editions
   items:
@@ -90,33 +75,9 @@
         - name: Troubleshoot kiosk mode issues
           href: kiosk-troubleshoot.md
 
-- name: Configure Windows Spotlight on the lock screen
-  href: windows-spotlight.md
-- name: Manage Windows 10 and Microsoft Store tips, "fun facts", and suggestions
-  href: manage-tips-and-suggestions.md
 
-- name: Manage Windows 10 Start and taskbar layout
-  items:
-    - name: Manage Windows 10 Start and taskbar layout
-      href: windows-10-start-layout-options-and-policies.md
-    - name: Configure Windows 10 taskbar
-      href: configure-windows-10-taskbar.md
-    - name: Customize and export Start layout
-      href: customize-and-export-start-layout.md
-    - name: Add image for secondary tiles
-      href: start-secondary-tiles.md
-    - name: Start layout XML for desktop editions of Windows 10 (reference)
-      href: start-layout-xml-desktop.md
-    - name: Customize Windows 10 Start and taskbar with Group Policy
-      href: customize-windows-10-start-screens-by-using-group-policy.md
-    - name: Customize Windows 10 Start and taskbar with provisioning packages
-      href: customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md
-    - name: Customize Windows 10 Start and taskbar with mobile device management (MDM)
-      href: customize-windows-10-start-screens-by-using-mobile-device-management.md
-    - name: Troubleshoot Start menu errors
-      href: start-layout-troubleshoot.md
-    - name: Changes to Start policies in Windows 10
-      href: changes-to-start-policies-in-windows-10.md
+
+
 
 - name: Provisioning packages for Windows 10
   items:
@@ -146,6 +107,60 @@
       href: provisioning-packages/provisioning-powershell.md
     - name: Windows Configuration Designer command-line interface (reference)
       href: provisioning-packages/provisioning-command-line.md
+
+- name: Configure Cortana in Windows 10
+  items:
+    - name: Configure Cortana in Windows 10
+      href: cortana-at-work/cortana-at-work-overview.md
+    - name: Set up and test Cortana in Windows 10, version 2004 and later
+      href: cortana-at-work/set-up-and-test-cortana-in-windows-10.md
+    - name: Testing scenarios using Cortana in your business or organization
+      items:
+        - name: Testing scenarios using Cortana in your business or organization
+          href: cortana-at-work/cortana-at-work-testing-scenarios.md
+        - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
+          href: cortana-at-work/cortana-at-work-scenario-1.md
+        - name: Test scenario 2 - Perform a Bing search with Cortana
+          href: cortana-at-work/cortana-at-work-scenario-2.md
+        - name: Test scenario 3 - Set a reminder
+          href: cortana-at-work/cortana-at-work-scenario-3.md
+        - name: Test scenario 4 - Use Cortana to find free time on your calendar
+          href: cortana-at-work/cortana-at-work-scenario-4.md
+        - name: Test scenario 5 - Find out about a person
+          href: cortana-at-work/cortana-at-work-scenario-5.md
+        - name: Test scenario 6 - Change your language and perform a quick search with Cortana
+          href: cortana-at-work/cortana-at-work-scenario-6.md
+    - name: Send feedback about Cortana back to Microsoftr
+      href: cortana-at-work/cortana-at-work-feedback.md
+    - name: Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization
+      href: cortana-at-work/cortana-at-work-o365.md
+
+    - name: Testing scenarios using Cortana in your business or organization
+      items:
+        - name: Testing scenarios using Cortana in your business or organization
+          href: cortana-at-work/cortana-at-work-testing-scenarios.md
+        - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
+          href: cortana-at-work/test-scenario-1.md
+        - name: Test scenario 2 - Perform a quick search with Cortana at work
+          href: cortana-at-work/test-scenario-2.md
+        - name: Test scenario 3 - Set a reminder for a specific location using Cortana at work
+          href: cortana-at-work/test-scenario-3.md
+        - name: Test scenario 4 - Use Cortana at work to find your upcoming meetings
+          href: cortana-at-work/test-scenario-4.md
+        - name: Test scenario 5 - Use Cortana to send email to a co-worker
+          href: cortana-at-work/test-scenario-5.md
+        - name: Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email
+          href: cortana-at-work/test-scenario-6.md
+        - name: Test scenario 7 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device
+          href: cortana-at-work/cortana-at-work-scenario-7.md
+
+    - name: Set up and test custom voice commands in Cortana for your organization
+      href: cortana-at-work/cortana-at-work-voice-commands.md
+    - name: Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization
+      href: cortana-at-work/cortana-at-work-policy-settings.md
+    - name: Set up a shared or guest PC with Windows 10
+      href: set-up-shared-or-guest-pc.md
+
     - name: Windows Configuration Designer provisioning settings (reference)
       items:
         - name: Windows Configuration Designer provisioning settings (reference)
@@ -290,10 +305,7 @@
           href: wcd/wcd-wlan.md     
         - name: Workplace
           href: wcd/wcd-workplace.md  
-- name: Configure cellular settings for tablets and PCs
-  href: provisioning-apn.md
-- name: Lockdown features from Windows Embedded 8.1 Industry
-  href: lockdown-features-windows-10.md
+
 
 - name: User Experience Virtualization (UE-V) for Windows
   items:

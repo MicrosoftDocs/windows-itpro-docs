@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Configure Windows 10 # < 60 chars
-summary: Find out how to configure Windows 10.  # < 160 chars
+summary: Find out how to apply custom configurations to Windows 10 devices. Windows 10 provides a number of features and methods to help you configure or lock down specific parts of Windows 10.  # < 160 chars
 
 metadata:
   title: Configure Windows 10 # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Find out how to configure Windows 10. # Required; article description that is displayed in search results. < 160 chars.
+  description: Find out how to apply custom configurations to Windows 10 devices. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -30,14 +30,7 @@ landingContent:
             url: whats-new-windows-10-version-20H2.md
           - text: What's new in Windows 10, version 2004
             url: whats-new-windows-10-version-2004.md
-          - text: What's new in Windows 10, version 1909
-            url: whats-new-windows-10-version-1909.md
-          - text: What's new in Windows 10, version 1903
-            url:  whats-new-windows-10-version-1903.md
-          - text: What's new in Windows 10, version 1809
-            url:  whats-new-windows-10-version-1809.md
-          - text: What's new in Windows 10, version 1803
-            url:  whats-new-windows-10-version-1803.md
+
 
   # Card (optional)
   - title: Configure a Windows 10 kiosk
@@ -50,12 +43,7 @@ landingContent:
             url: https://docs.microsoft.com/windows/release-information/
           - text: Windows 10 update history
             url: https://support.microsoft.com/topic/windows-10-update-history-7dd3071a-3906-fa2c-c342-f7f86728a6e3
-          - text: Windows 10 features we’re no longer developing
-            url: https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features
-          - text: Features and functionality removed in Windows 10
-            url: https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features
-          - text: Compare Windows 10 Editions
-            url: https://go.microsoft.com/fwlink/p/?LinkId=690485
+
 
   # Card (optional)
   - title: Windows 10 provisioning packages
