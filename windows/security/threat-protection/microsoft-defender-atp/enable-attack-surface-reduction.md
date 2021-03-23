@@ -21,6 +21,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -151,8 +152,8 @@ Example:
 
 5. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Select **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
-> [!WARNING]
-> Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
+   > [!WARNING]
+   > Do not use quotation marks, because they are not supported for either the **Value name** column or the **Value** column.
 
 ## PowerShell
 
