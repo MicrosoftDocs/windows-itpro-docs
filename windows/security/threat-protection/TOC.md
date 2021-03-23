@@ -728,7 +728,3 @@
 ##### [Get support](windows-security-configuration-framework/get-support-for-security-baselines.md)
 
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
-
-## [Change history for Threat protection](change-history-for-threat-protection.md)
-
-

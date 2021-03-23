@@ -18464,6 +18464,11 @@
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint",
       "redirect_document_id": true
-    }    
+    },    
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/change-history-for-threat-protection.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection",
+      "redirect_document_id": true
+    } 
 	    ]
 }
