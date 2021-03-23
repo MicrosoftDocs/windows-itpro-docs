@@ -1,11 +1,12 @@
 ---
 title: "How to check Windows release health"
-ms.author: DocsPreview
-author: Nisha
+ms.author: v-nishmi
+author: DocsPreview
 manager: jren
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
+ms.prod: w10
 localization_priority: Normal
 f1.keywords:
 - CSH
@@ -25,7 +26,7 @@ search.appverid:
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: "View the health status of Microsoft 365 services before you call support to see if there is an active service interruption."
+description: "Check the release health status of Microsoft 365 services before you call support to see if there is an active service interruption."
 ---
 
 # How to check Windows release health
@@ -49,15 +50,15 @@ To be informed about the latest updates and releases, follow us on Twitter [@Win
 
    The **All versions** tab (the default view) shows all Windows products with access to their posted known issues.
 
-   ![View of current issues in service health](images/WRH-menu.png)
+   ![View of current issues in release health](images/WRH-menu.png)
 
    A known issue is an issue that has been identified in a Windows monthly update or feature update that impacts Windows devices. The **Active and recently resolved** column provides a link to the **Known issues** tab filtered to the version selected. Selecting the **Known issues** tab will show known issues that are active or resolved within the last 30 days. 
    
-   ![View of known issues in service health](images/WRH-known-issues-20H2.png)
+   ![View of known issues in release health](images/WRH-known-issues-20H2.png)
    
    The **History** tab shows the history of known issues that have been resolved for up to 6 months.
 
-   ![View of current issues in service health](images/WRH-history-20H2.png)
+   ![View of history issues in release health](images/WRH-history-20H2.png)
 
    The known issue summary provides the following information:
 
@@ -89,11 +90,11 @@ In the **Windows release health** experience, every known issue is assigned as s
 
 The Windows release health page lets you view the history of all status updates posted for a specific known issue. To view all past updates posted for a given issue, select **View history** on the issue detail page.
   
-![Show link to health history](images/WRH-view-message-history-padded.png)
+![Show link to view message history](images/WRH-view-message-history-padded.png)
   
 A list of all status updates posted in the selected timeframe will be displayed, as shown below. You can expand any row to view the specific information provided in that status update.  
 
-![View service health history](images/WRH-message-history-example-padded.png)
+![View message history](images/WRH-message-history-example-padded.png)
   
 ## Frequently asked questions
 
@@ -140,10 +141,10 @@ A list of all status updates posted in the selected timeframe will be displayed,
 ### Help and support
   
 -   **What should I do if I have an issue with Windows that is not reported in Windows release health?**   
-    Seek assistance through Premier support, the [Microsoft Support website](http://support.microsoft.com), or connect with your normal channels for Windows support.
+    Seek assistance through Premier support, the [Microsoft Support website](https://support.microsoft.com), or connect with your normal channels for Windows support.
 
 -   **When reaching out to Support, they asked me for an advisory ID. What is this and where can it?**   
     The advisory ID can be found in the upper left-hand corner of the known issue Details pane. To find it, select the Known issue you’re seeking help on, click the Details pane and you’ll find the ID under the issue title. It will be the letters WI followed by a number, similar to “WI123456”.
 
 -   **How can I learn more about expanding my use of Microsoft 365 admin center?**
-    To learn more, see the [Microsoft 365 admin center documentation](https://docs.microsoft.com/en-us/microsoft-365/admin/admin-overview/about-the-admin-center).
+    To learn more, see the [Microsoft 365 admin center documentation](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center).
