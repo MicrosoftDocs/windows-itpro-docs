@@ -39,9 +39,18 @@ The following resources provide additional information about using Windows Updat
 
 ## How do I reset Windows Update components?
 
-[Reset Windows Update Client settings script](https://gallery.technet.microsoft.com/scriptcenter/Reset-WindowsUpdateps1-e0c5eb78) will completely reset the Windows Update client settings. It has been tested on Windows 7, 8, 10, and Windows Server 2012 R2. It will configure the services and registry keys related to Windows Update for default settings. It will also clean up files related to Windows Update, in addition to BITS related data.
+- Try using the [Windows Update Troubleshooter](https://support.microsoft.com/windows/windows-update-troubleshooter-for-windows-10-19bc41ca-ad72-ae67-af3c-89ce169755dd), which will analyze the situation and reset any components that need it.
+- Try the steps in [Troubleshoot problems updating Windows 10](https://support.microsoft.com/windows/troubleshoot-problems-updating-windows-10-188c2b0f-10a7-d72f-65b8-32d177eb136c).
+- Try the steps in [Fix Windows Update](https://support.microsoft.com/sbs/windows/fix-windows-update-errors-18b693b5-7818-5825-8a7e-2a4a37d6d787) errors.
 
-[Reset Windows Update Agent script](https://gallery.technet.microsoft.com/scriptcenter/Reset-Windows-Update-Agent-d824badc) allows you to reset the Windows Update Agent, resolving issues with Windows Update.
+If all else fails, try resetting the Windows Update Agent by running these commands from an elevated command prompt:
+
+   ``` console
+   net stop wuauserv
+   rd /s /q %systemroot%\SoftwareDistribution
+   net start wuauserv
+   ```
+
 
 ## Reset Windows Update components manually
 

@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 2004
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909. 
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909.
 
 To download and install Windows 10, version 2004, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, see this [video](https://aka.ms/Windows-10-May-2020-Update).
 
@@ -33,7 +33,7 @@ To download and install Windows 10, version 2004, use Windows Update (**Settings
 
 - You can now enable passwordless sign-in for Microsoft accounts on your Windows 10 device by going to **Settings > Accounts > Sign-in options**, and selecting **On** under **Make your device passwordless**. Enabling passwordless sign in will switch all Microsoft accounts on your Windows 10 device to modern authentication with Windows Hello Face, Fingerprint, or PIN.
 
-- Windows Hello PIN sign-in support is [added to Safe mode](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#windows-hello-pin-in-safe-mode-build-18995).
+- Windows Hello PIN sign-in support is [added to Safe mode](https://docs.microsoft.com/windows-insider/archive/new-in-20H1#windows-hello-pin-in-safe-mode-build-18995).
 
 - Windows Hello for Business now has Hybrid Azure Active Directory support and phone number sign-in (MSA). FIDO2 security key support is expanded to Azure Active Directory hybrid environments, enabling enterprises with hybrid environments to take advantage of [passwordless authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894).
 
@@ -108,17 +108,17 @@ Windows PowerShell cmdlets have been improved:
 - **Enable-DeliveryOptimizationVerboseLogs** is a new cmdlet that enables a greater level of logging detail to assist in troubleshooting.
 
 Additional improvements:
-- Enterprise network [throttling is enhanced](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-download-throttling-options-for-delivery-optimization-build-18917) to optimize foreground vs. background throttling.
+- Enterprise network [throttling is enhanced](https://docs.microsoft.com/windows-insider/archive/new-in-20H1#new-download-throttling-options-for-delivery-optimization-build-18917) to optimize foreground vs. background throttling.
 - Automatic cloud-based congestion detection is available for PCs with cloud service support.
 
 The following [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) policies are removed in this release:
 
 - Percentage of Maximum Download Bandwidth (DOPercentageMaxDownloadBandwidth)
-  - Reason: Replaced with separate policies for foreground and background
+  - Reason: Replaced with separate policies for foreground and background.
 - Max Upload Bandwidth (DOMaxUploadBandwidth)
-  - Reason: impacts uploads to internet peers only, which isn't used in Enterprises. 
+  - Reason: Impacts uploads to internet peers only, which isn't used in enterprises.
 - Absolute max throttle (DOMaxDownloadBandwidth)
-  - Reason: separated to foreground and background
+  - Reason: Separated to foreground and background.
 
 ### Windows Update for Business
 
@@ -134,11 +134,11 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 
 ### Wi-Fi 6 and WPA3
 
-Windows now supports the latest Wi-Fi standards with [Wi-Fi 6 and WPA3](https://support.microsoft.com/help/4562575/windows-10-faster-more-secure-wifi). Wi-Fi 6 gives you better wireless coverage and performance with added security. WPA3 provides improved Wi-Fi security and secures open networks. 
+Windows now supports the latest Wi-Fi standards with [Wi-Fi 6 and WPA3](https://support.microsoft.com/help/4562575/windows-10-faster-more-secure-wifi). Wi-Fi 6 gives you better wireless coverage and performance with added security. WPA3 provides improved Wi-Fi security and secures open networks.
 
 ### TEAP
 
-In this release, Tunnel Extensible Authentication Protocol (TEAP) has been added as an authentication method to allow chaining together multiple credentials into a single EAP transaction. TEAP networks can be configured by [enterprise policy](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/94cf6896-c28e-4865-b12a-d83ee38cd3ea).   
+In this release, Tunnel Extensible Authentication Protocol (TEAP) has been added as an authentication method to allow chaining together multiple credentials into a single EAP transaction. TEAP networks can be configured by [enterprise policy](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/94cf6896-c28e-4865-b12a-d83ee38cd3ea).
 
 ## Virtualization
 
@@ -182,7 +182,7 @@ Also see information about the exciting new Edge browser [here](https://blogs.wi
 
 ## Application settings
 
-This release enables explicit [control over when Windows automatically restarts apps](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#control-over-restarting-apps-at-sign-in-build-18965) that were open when you restart your PC.
+This release enables explicit [Control over restarting apps at sign-in (Build 18965)](https://docs.microsoft.com/windows-insider/archive/new-in-20H1#control-over-restarting-apps-at-sign-in-build-18965) that were open when you restart your PC.
 
 ## Windows Shell
 
@@ -194,8 +194,8 @@ Several enhancements to the Windows 10 user interface are implemented in this re
 
 - Productivity: chat-based UI gives you the ability to [interact with Cortana using typed or spoken natural language queries](https://support.microsoft.com/help/4557165) to easily get information across Microsoft 365 and stay on track. Productivity focused capabilities such as finding people profiles, checking schedules, joining meetings, and adding to lists in Microsoft To Do are currently available to English speakers in the US.
 
-  - In the coming months, with regular app updates through the Microsoft Store, we’ll enhance this experience to support wake word invocation and enable listening when you say “Cortana,” offer more productivity capabilities such as surfacing relevant emails and documents to help you prepare for meetings, and expand supported capabilities for international users.  
-  
+  - In the coming months, with regular app updates through the Microsoft Store, we’ll enhance this experience to support wake word invocation and enable listening when you say “Cortana,” offer more productivity capabilities such as surfacing relevant emails and documents to help you prepare for meetings, and expand supported capabilities for international users.
+
 - Security: tightened access to Cortana so that you must be securely logged in with your work or school account or your Microsoft account before using Cortana. Because of this tightened access, some consumer skills including music, connected home, and third-party skills will no longer be available. Additionally, users [get cloud-based assistance services that meet Office 365’s enterprise-level privacy, security, and compliance promises](https://docs.microsoft.com/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide) as set out in the Online Services Terms.
 
 - Move the Cortana window: drag the Cortana window to a more convenient location on your desktop.
@@ -208,7 +208,7 @@ Windows Search is improved in several ways. For more information, see [Superchar
 
 ### Virtual Desktops
 
-You can now [rename your virtual desktops](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#renaming-your-virtual-desktops-build-18975), instead of getting stuck with the system-issued names like Desktop 1. 
+There is a new [Update on Virtual Desktop renaming (Build 18975)](https://docs.microsoft.com/windows-insider/archive/new-in-20H1#update-on-virtual-desktop-renaming-build-18975), where, instead of getting stuck with the system-issued names like Desktop 1, you can now rename your virtual desktops more freely.
 
 ### Bluetooth pairing
 
@@ -216,13 +216,13 @@ Pairing Bluetooth devices with your computer will occur through notifications, s
 
 ### Reset this PC
 
-The 'reset this PC' recovery function now includes a [cloud download](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-reset-this-pc-option-cloud-download-build-18970) option.
+The 'reset this PC' recovery function now includes a [cloud download](https://docs.microsoft.com/windows-insider/archive/new-in-20H1#reset-your-pc-from-the-cloud-build-18970) option.
 
 ### Task Manager
 
 The following items are added to Task Manager in this release:
 - GPU Temperature is available on the Performance tab for devices with a dedicated GPU card.
-- Disk type is now [listed for each disk on the Performance tab](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#disk-type-visible-in-task-manager-performance-tab-build-18898).
+- Disk type is now [listed for each disk on the Performance tab](https://docs.microsoft.com/windows-insider/archive/new-in-20H1#disk-type-now-visible-in-task-manager-performance-tab-build-18898).
 
 ## Graphics & display
 
@@ -232,7 +232,7 @@ The following items are added to Task Manager in this release:
 
 ### 2-in-1 PCs
 
-A [new tablet experience](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new#new-tablet-experience-for-2-in-1-convertible-pcs-build-18970) for two-in-one convertible PCs is available. The screen will be optimized for touch when you detach your two-in-one's keyboard, but you'll still keep the familiar look of your desktop without interruption. 
+See [Introducing a new tablet experience for 2-in-1 convertible PCs! (Build 18970)](https://docs.microsoft.com/windows-insider/archive/new-in-20H1#introducing-a-new-tablet-experience-for-2-in-1-convertible-pcs-build-18970) for details on a new tablet experience for two-in-one convertible PCs that is now available. The screen will be optimized for touch when you detach your two-in-one's keyboard, but you'll still keep the familiar look of your desktop without interruption.
 
 ### Specialized displays
 
@@ -245,24 +245,24 @@ Examples include:
 - Dedicated video monitoring
 - Monitor panel testing and validation
 - Independent Hardware Vendor (IHV) driver testing and validation
- 
+
 To prevent Windows from using a display, choose Settings > Display and click Advanced display settings. Select a display to view or change, and then set the Remove display from desktop setting to On.  The display will now be available for a specialized use.
 
 ## Desktop Analytics
 
-[Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) is a cloud-connected service, integrated with Configuration Manager that provides data-driven insights to the management of Windows endpoints in your organization. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license. 
+[Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) is a cloud-connected service, integrated with Configuration Manager that provides data-driven insights to the management of Windows endpoints in your organization. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license.
 
 For information about Desktop Analytics and this release of Windows 10, see [What's new in Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/whats-new).
 
 ## See Also
 
- - [What’s new for IT pros in Windows 10, version 2004](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-2004/ba-p/1419764): Windows IT Pro blog.<br>
- - [What’s new in the Windows 10 May 2020 Update](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/): Windows Insider blog.<br>
- - [What's New in Windows Server](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
- - [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
- - [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
- - [Start developing on Windows 10, version 2004 today](https://blogs.windows.com/windowsdeveloper/2020/05/12/start-developing-on-windows-10-version-2004-today/): New and updated features in Windows 10 that are of interest to developers.<br>
- - [What's new for business in Windows 10 Insider Preview Builds](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new): A preview of new features for businesses.<br>
- - [What's new in Windows 10, version 2004 - Windows Insiders](https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-20h1): This list also includes consumer focused new features.<br>
- - [Features and functionality removed in Windows 10](https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
- - [Windows 10 features we’re no longer developing](https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
+- [What’s new for IT pros in Windows 10, version 2004](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-2004/ba-p/1419764): Windows IT Pro blog.
+- [What’s new in the Windows 10 May 2020 Update](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/): Windows Insider blog.
+- [What's New in Windows Server](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.
+- [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.
+- [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.
+- [Start developing on Windows 10, version 2004 today](https://blogs.windows.com/windowsdeveloper/2020/05/12/start-developing-on-windows-10-version-2004-today/): New and updated features in Windows 10 that are of interest to developers.
+- [What's new for business in Windows 10 Insider Preview Builds](https://docs.microsoft.com/windows-insider/Active-Dev-Branch): A preview of new features for businesses.
+- [What's new in Windows 10, version 2004 - Windows Insiders](https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-20h1): This list also includes consumer focused new features.
+- [Features and functionality removed in Windows 10](https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features): Removed features.
+- [Windows 10 features we’re no longer developing](https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.
