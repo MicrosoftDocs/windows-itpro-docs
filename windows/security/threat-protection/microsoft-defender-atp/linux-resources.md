@@ -103,6 +103,7 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Group                 |Scenario                                                |Command                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Configuration         |Turn on/off real-time protection                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
+|Configuration         |Turn on/off behavior monitoring                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`         |
 |Configuration         |Turn on/off cloud protection                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |Configuration         |Turn on/off product diagnostics                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |Configuration         |Turn on/off automatic sample submission                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
