@@ -1,35 +1,10 @@
 # [Threat protection](index.md)
 
-## [Hardware-based isolation]()
+## [Next-generation protection with Microsoft Defender Antivirus]()
+### [Microsoft Defender Antivirus overview](microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md)
+### [Evaluate Microsoft Defender Antivirus](microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus.md)
 
-### [Hardware-based isolation evaluation](microsoft-defender-application-guard/test-scenarios-md-app-guard.md)
-
-### [Application isolation]()
-#### [Application guard overview](microsoft-defender-application-guard/md-app-guard-overview.md)
-#### [System requirements](microsoft-defender-application-guard/reqs-md-app-guard.md)
-#### [Install Microsoft Defender Application Guard](microsoft-defender-application-guard/install-md-app-guard.md)
-#### [Install Microsoft Defender Application Guard Extension](microsoft-defender-application-guard/md-app-guard-browser-extension.md)
-
-### [Application control](windows-defender-application-control/windows-defender-application-control.md)
-#### [Audit Application control policies](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
-
-### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
-
-### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
- 
-## [Device control]()
-### [Code integrity](device-guard/enable-virtualization-based-protection-of-code-integrity.md)
-### [Control USB devices](device-control/control-usb-devices-using-intune.md)
-### [Device control report](device-control/device-control-report.md)
-## [Network firewall]()
-### [Network firewall overview](windows-firewall/windows-firewall-with-advanced-security.md)
-### [Network firewall evaluation](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
-
-## [Next-generation protection]()
-### [Next-generation protection overview](microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md)
-### [Evaluate next-generation protection](microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus.md)
-
-### [Configure next-generation protection]()
+### [Configure Microsoft Defender Antivirus]()
 #### [Configure Microsoft Defender Antivirus features](microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features.md)
    
 #### [Use Microsoft cloud-delivered protection](microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
@@ -51,17 +26,17 @@
 ##### [Compatibility charts](microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
 ##### [Use limited periodic antivirus scanning](microsoft-defender-antivirus/limited-periodic-scanning-microsoft-defender-antivirus.md)
 
-#### [Manage next-generation protection in your business]()
+#### [Manage Microsoft Defender Antivirus in your business]()
 ##### [Management overview](microsoft-defender-antivirus/configuration-management-reference-microsoft-defender-antivirus.md)
-##### [Use Microsoft Intune and Microsoft Endpoint Manager to manage next-generation protection](microsoft-defender-antivirus/use-intune-config-manager-microsoft-defender-antivirus.md)
-##### [Use Group Policy settings to manage next-generation protection](microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus.md)
-##### [Use PowerShell cmdlets to manage next-generation protection](microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus.md)
-##### [Use Windows Management Instrumentation (WMI) to manage next-generation protection](microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus.md)
-##### [Use the mpcmdrun.exe command line tool to manage next-generation protection](microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
+##### [Use Microsoft Intune and Microsoft Endpoint Manager to manage Microsoft Defender Antivirus](microsoft-defender-antivirus/use-intune-config-manager-microsoft-defender-antivirus.md)
+##### [Use Group Policy settings to manage Microsoft Defender Antivirus](microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus.md)
+##### [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus.md)
+##### [Use Windows Management Instrumentation (WMI) to manage Microsoft Defender Antivirus](microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus.md)
+##### [Use the mpcmdrun.exe command line tool to manage Microsoft Defender Antivirus](microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
    
-#### [Deploy, manage updates, and report on antivirus]()
+#### [Deploy, manage updates, and report on Microsoft Defender Antivirus]()
 ##### [Preparing to deploy](microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md)
-##### [Deploy and enable antivirus](microsoft-defender-antivirus/deploy-microsoft-defender-antivirus.md)
+##### [Deploy and enable Microsoft Defender Antivirus](microsoft-defender-antivirus/deploy-microsoft-defender-antivirus.md)
 ##### [Deployment guide for VDI environments](microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus.md)
    
 ##### [Report on antivirus protection]()
@@ -109,16 +84,38 @@
 ##### [Review scan results](microsoft-defender-antivirus/review-scan-results-microsoft-defender-antivirus.md)
 ##### [Run and review the results of an offline scan](microsoft-defender-antivirus/microsoft-defender-offline.md)
 ##### [Restore quarantined files](microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus.md)
-   
-### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](microsoft-defender-antivirus/why-use-microsoft-defender-antivirus.md)
-### [Better together: Microsoft Defender Antivirus and Office 365](microsoft-defender-antivirus/office-365-microsoft-defender-antivirus.md)
-
-## Reference
 
 ### [Troubleshoot Microsoft Defender Antivirus]()
-  
 #### [Troubleshoot Microsoft Defender Antivirus issues](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus.md)
 #### [Troubleshoot Microsoft Defender Antivirus migration issues](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus-when-migrating.md)
+   
+## [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](microsoft-defender-antivirus/why-use-microsoft-defender-antivirus.md)
+## [Better together: Microsoft Defender Antivirus and Office 365](microsoft-defender-antivirus/office-365-microsoft-defender-antivirus.md)
+
+## [Hardware-based isolation]()
+
+### [Hardware-based isolation evaluation](microsoft-defender-application-guard/test-scenarios-md-app-guard.md)
+
+### [Application isolation]()
+#### [Application guard overview](microsoft-defender-application-guard/md-app-guard-overview.md)
+#### [System requirements](microsoft-defender-application-guard/reqs-md-app-guard.md)
+#### [Install Microsoft Defender Application Guard](microsoft-defender-application-guard/install-md-app-guard.md)
+#### [Install Microsoft Defender Application Guard Extension](microsoft-defender-application-guard/md-app-guard-browser-extension.md)
+
+### [Application control](windows-defender-application-control/windows-defender-application-control.md)
+#### [Audit Application control policies](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
+
+### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
+
+### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
+ 
+## [Device control]()
+### [Code integrity](device-guard/enable-virtualization-based-protection-of-code-integrity.md)
+### [Control USB devices](device-control/control-usb-devices-using-intune.md)
+### [Device control report](device-control/device-control-report.md)
+## [Network firewall]()
+### [Network firewall overview](windows-firewall/windows-firewall-with-advanced-security.md)
+### [Network firewall evaluation](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 
 ## [Security intelligence](intelligence/index.md)
 ### [Understand malware & other threats](intelligence/understanding-malware.md)
