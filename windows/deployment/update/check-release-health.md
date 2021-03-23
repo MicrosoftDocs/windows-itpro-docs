@@ -5,7 +5,6 @@ author: DocsPreview
 manager: jren
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
 ms.prod: w10
 localization_priority: Normal
 f1.keywords:
