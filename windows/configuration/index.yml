@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: What's new in Windows 10 # < 60 chars
-summary: Find out about new features and capabilities in the latest release of Windows 10.  # < 160 chars
+title: Configure Windows 10 # < 60 chars
+summary: Find out how to configure Windows 10.  # < 160 chars
 
 metadata:
-  title: What's new in Windows 10 # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Find out about new features and capabilities in the latest release of Windows 10. # Required; article description that is displayed in search results. < 160 chars.
+  title: Configure Windows 10 # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Find out how to configure Windows 10. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/09/2021 #Required; mm/dd/yyyy format.
+  ms.date: 03/23/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Cart 1 title
+  - title: Customize Windows 10 settings 
     linkLists:
       - linkListType: overview
         links:
@@ -40,7 +40,7 @@ landingContent:
             url:  whats-new-windows-10-version-1803.md
 
   # Card (optional)
-  - title: Card 2 title
+  - title: Configure a Windows 10 kiosk
     linkLists:
       - linkListType: overview
         links:
@@ -58,7 +58,37 @@ landingContent:
             url: https://go.microsoft.com/fwlink/p/?LinkId=690485
 
   # Card (optional)
-  - title: Card 3 title
+  - title: Windows 10 provisioning packages
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows 10 Enterprise LTSC
+            url: ltsc/index.md
+          - text: Edit an existing topic using the Edit link
+            url: contribute-to-a-topic.md
+
+  # Card (optional)
+  - title: Use Windows Configuration Designer (WCD)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows 10 Enterprise LTSC
+            url: ltsc/index.md
+          - text: Edit an existing topic using the Edit link
+            url: contribute-to-a-topic.md
+
+  # Card (optional)
+  - title: Configure Cortana in Windows 10
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows 10 Enterprise LTSC
+            url: ltsc/index.md
+          - text: Edit an existing topic using the Edit link
+            url: contribute-to-a-topic.md
+
+  # Card (optional)
+  - title: User Experience Virtualization (UE-V) for Windows 10
     linkLists:
       - linkListType: overview
         links:
