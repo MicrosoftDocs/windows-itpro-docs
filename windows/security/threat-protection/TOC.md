@@ -120,10 +120,10 @@
 
 ## Reference
 
-### [Troubleshoot Microsoft Defender for Endpoint]()
+### [Troubleshoot Microsoft Defender Antivirus]()
   
-#### [Troubleshoot next-generation protection](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus.md)
-#### [Troubleshoot migration issues](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus-when-migrating.md)
+#### [Troubleshoot Microsoft Defender Antivirus issues](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus.md)
+#### [Troubleshoot Microsoft Defender Antivirus migration issues](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
 
 ## [Security intelligence](intelligence/index.md)
