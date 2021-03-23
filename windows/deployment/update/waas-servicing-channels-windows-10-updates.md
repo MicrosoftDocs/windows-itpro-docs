@@ -1,15 +1,16 @@
 ---
 title: Assign devices to servicing channels for Windows 10 updates (Windows 10)
-description: Learn how to assign devices to servicing channels for Windows 10 updates locally, by using Group Policy, and by using MDM .
+description: Learn how to assign devices to servicing channels for Windows 10 updates locally, by using Group Policy, and by using MDM
 ms.prod: w10
 ms.mktglfcycl: deploy
-
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom:
+- seo-marvel-apr2020
 ---
 
 # Assign devices to servicing channels for Windows 10 updates
@@ -27,7 +28,7 @@ ms.topic: article
 >
 >Due to [naming changes](waas-overview.md#naming-changes), older terms like CB and CBB might still be displayed in some of our products, such as in Group Policy. If you encounter these terms, "CB" refers to the Semi-Annual Channel (Targeted)--which is no longer used--while "CBB" refers to the Semi-Annual Channel.
 
-The Semi-Annual Channel is the default servicing channel for all Windows 10 devices except those with the LTSB edition installed. The following table shows the servicing channels available to each Windows 10 edition. 
+The Semi-Annual Channel is the default servicing channel for all Windows 10 devices except devices with the LTSB edition installed. The following table shows the servicing channels available to each Windows 10 edition. 
 
 | Windows 10 edition | Semi-Annual Channel | Long-Term Servicing Channel | Insider Program |
 | --- | --- | --- | --- |
@@ -62,7 +63,7 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 
     Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** - enable policy and set branch readiness level to the Semi-Annual Channel
     
-**To assign devices to to the Semi-Annual Channel by using MDM**
+**To assign devices to the Semi-Annual Channel by using MDM**
 
 
 - In Windows 10, version 1607 and later releases:
@@ -78,10 +79,10 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 
 ## Enroll devices in the Windows Insider Program
 
-To get started with the Windows Insider Program for Business, you will need to follow a few simple steps:
+To get started with the Windows Insider Program for Business, you will need to follow a few steps:
 
 1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register your organizational Azure AD account](https://insider.windows.com/insidersigninaad/).
-2. **Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+2. **Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can [register their domain](https://insider.windows.com/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
 3. Make sure the **Allow Telemetry** setting is set to **2** or higher.
 4. Starting with Windows 10, version 1709, set policies to manage preview builds and their delivery:
 
@@ -89,7 +90,7 @@ The **Manage preview builds** setting gives administrators control over enabling
 * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/Windows Update for Business** - *Manage preview builds*
 * MDM: **Update/ManagePreviewBuilds**
 
-The **Branch Readiness Level** settings allows you to choose between preview flight rings, and allows you to defer or pause the delivery of updates.
+The **Branch Readiness Level** settings allow you to choose between preview flight rings, and allows you to defer or pause the delivery of updates.
 * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/ Windows Update for Business** - *Select when Preview Builds and Feature Updates are received*
 * MDM: **Update/BranchReadinessLevel**
 
@@ -163,7 +164,7 @@ During the life of a device, it might be necessary or desirable to switch betwee
 
 In Windows 10, administrators can control user access to Windows Update.
 
-Administrators can disable the "Check for updates" option for users by enabling the Group Policy setting under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Remove access to use all Windows update features** . Any background update scans, downloads and installations will continue to work as configured. We don't recomment this setting if you have configured the device to "notify" to download or install as this policy will prevent the user from being able to do so.
+Administrators can disable the "Check for updates" option for users by enabling the Group Policy setting under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Remove access to use all Windows update features**. Any background update scans, downloads, and installations will continue to work as configured. We don't recomment this setting if you have configured the device to "notify" to download or install as this policy will prevent the user from being able to do so.
 
 >[!NOTE]
 > Starting with Windows 10, any Group Policy user configuration settings for Windows Update are no longer supported.
@@ -181,8 +182,7 @@ Administrators can disable the "Check for updates" option for users by enabling 
 
 ## Related topics
 
-- [Update Windows 10 in the enterprise](index.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Update Windows 10 in the enterprise](index.md) 
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)

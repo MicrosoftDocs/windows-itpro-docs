@@ -20,10 +20,88 @@ Firewall rules in the FirewallRules section must be wrapped in an Atomic block i
 
 For detailed information on some of the fields below see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](https://msdn.microsoft.com/library/mt620101.aspx).
 
-The following diagram shows the Firewall configuration service provider in tree format. 
-
-![firewall csp](images/provisioning-csp-firewall.png)
-
+The following shows the Firewall configuration service provider in tree format. 
+```
+./Vendor/MSFT
+Firewall
+----
+--------Global
+------------PolicyVersionSupported
+------------CurrentProfiles
+------------DisableStatefulFtp
+------------SaIdleTime
+------------PresharedKeyEncoding
+------------IPsecExempt
+------------CRLcheck
+------------PolicyVersion
+------------BinaryVersionSupported
+------------OpportunisticallyMatchAuthSetPerKM
+------------EnablePacketQueue
+--------DomainProfile
+------------EnableFirewall
+------------DisableStealthMode
+------------Shielded
+------------DisableUnicastResponsesToMulticastBroadcast
+------------DisableInboundNotifications
+------------AuthAppsAllowUserPrefMerge
+------------GlobalPortsAllowUserPrefMerge
+------------AllowLocalPolicyMerge
+------------AllowLocalIpsecPolicyMerge
+------------DefaultOutboundAction
+------------DefaultInboundAction
+------------DisableStealthModeIpsecSecuredPacketExemption
+--------PrivateProfile
+------------EnableFirewall
+------------DisableStealthMode
+------------Shielded
+------------DisableUnicastResponsesToMulticastBroadcast
+------------DisableInboundNotifications
+------------AuthAppsAllowUserPrefMerge
+------------GlobalPortsAllowUserPrefMerge
+------------AllowLocalPolicyMerge
+------------AllowLocalIpsecPolicyMerge
+------------DefaultOutboundAction
+------------DefaultInboundAction
+------------DisableStealthModeIpsecSecuredPacketExemption
+--------PublicProfile
+------------EnableFirewall
+------------DisableStealthMode
+------------Shielded
+------------DisableUnicastResponsesToMulticastBroadcast
+------------DisableInboundNotifications
+------------AuthAppsAllowUserPrefMerge
+------------GlobalPortsAllowUserPrefMerge
+------------AllowLocalPolicyMerge
+------------AllowLocalIpsecPolicyMerge
+------------DefaultOutboundAction
+------------DefaultInboundAction
+------------DisableStealthModeIpsecSecuredPacketExemption
+--------FirewallRules
+------------FirewallRuleName
+----------------App
+--------------------PackageFamilyName
+--------------------FilePath
+--------------------Fqbn
+--------------------ServiceName
+----------------Protocol
+----------------LocalPortRanges
+----------------RemotePortRanges
+----------------LocalAddressRanges
+----------------RemoteAddressRanges
+----------------Description
+----------------Enabled
+----------------Profiles
+----------------Action
+--------------------Type
+----------------Direction
+----------------InterfaceTypes
+----------------EdgeTraversal
+----------------LocalUserAuthorizationList
+----------------FriendlyName
+----------------IcmpTypesAndCodes
+----------------Status
+----------------Name
+```
 <a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/Firewall**
 <p style="margin-left: 20px">Root node for the Firewall configuration service provider.</p>
 
@@ -248,10 +326,10 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="localaddressranges"></a>**FirewallRules/*FirewallRuleName*/LocalAddressRanges**
-<p style="margin-left: 20px">Comma separated list of local addresses covered by the rule. The default value is &quot;<em>&quot;. Valid tokens include:</p>
+<p style="margin-left: 20px">Comma separated list of local addresses covered by the rule. The default value is "*". Valid tokens include:</p>
 <ul>
-<li>&quot;</em>&quot; indicates any local address. If present, this must be the only token included.</li>
-<li>A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.</li>
+<li>"*" indicates any local address. If present, this must be the only token included.</li>
+<li>A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask defaults to 255.255.255.255.</li>
 <li>A valid IPv6 address.</li>
 <li>An IPv4 address range in the format of &quot;start address - end address&quot; with no spaces included.</li>
 <li>An IPv6 address range in the format of &quot;start address - end address&quot; with no spaces included.</li>
@@ -260,9 +338,9 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="remoteaddressranges"></a>**FirewallRules/*FirewallRuleName*/RemoteAddressRanges**
-<p style="margin-left: 20px">List of comma separated tokens specifying the remote addresses covered by the rule. The default value is &quot;<em>&quot;. Valid tokens include:</p>
+<p style="margin-left: 20px">List of comma separated tokens specifying the remote addresses covered by the rule. The default value is "*". Valid tokens include:</p>
 <ul>
-<li>&quot;</em>&quot; indicates any remote address. If present, this must be the only token included.</li>
+<li>"*" indicates any remote address. If present, this must be the only token included.</li>
 <li>&quot;Defaultgateway&quot;</li>
 <li>&quot;DHCP&quot;</li>
 <li>&quot;DNS&quot;</li>

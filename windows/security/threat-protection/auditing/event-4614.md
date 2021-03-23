@@ -2,7 +2,7 @@
 title: 4614(S) A notification package has been loaded by the Security Account Manager. (Windows 10)
 description: Describes security event 4614(S) A notification package has been loaded by the Security Account Manager.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4614(S): A notification package has been loaded by the Security Account Manager.

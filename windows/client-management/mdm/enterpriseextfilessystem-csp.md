@@ -23,10 +23,20 @@ The EnterpriseExtFileSystem configuration service provider (CSP) allows IT admin
 
 File contents are embedded directly into the syncML message, so there is a limit to the size of the file that can be retrieved from the device. The default limit is 0x100000 (1 MB). You can configure this limit by using the following registry key: **Software\\Microsoft\\Provisioning\\CSPs\\.\\Vendor\\MSFT\\EnterpriseExtFileSystem\\MaxFileReadSize**.
 
-The following diagram shows the EnterpriseExtFileSystem configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).
-
-![enterpriseextfilesystem csp](images/provisioning-csp-enterpriseextfilesystem.png)
-
+The following shows the EnterpriseExtFileSystem configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).
+```
+./Vendor/MSFT
+EnterpriseExtFileSystem
+----Persistent
+--------Files_abc1
+--------Directory_abc2
+----NonPersistent
+--------Files_abc3
+--------Directory_abc4
+----OemProfile
+--------Directory_abc5
+--------Files_abc6
+```
 The following list describes the characteristics and parameters.
 
 <a href="" id="--vendor-msft-enterpriseextfilesystem"></a>**./Vendor/MSFT/EnterpriseExtFileSystem**  

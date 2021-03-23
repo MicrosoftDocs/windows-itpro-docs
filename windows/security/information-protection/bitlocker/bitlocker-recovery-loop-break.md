@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: #medium
+ms.localizationpriority: medium
 ms.author: v-maave
-author: martyav
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

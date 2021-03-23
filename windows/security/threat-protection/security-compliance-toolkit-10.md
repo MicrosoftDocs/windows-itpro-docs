@@ -2,7 +2,7 @@
 title: Microsoft Security Compliance Toolkit 1.0
 description: This article describes how to use the Security Compliance Toolkit in your organization
 keywords: virtualization, security, malware
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
@@ -13,6 +13,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/21/2019
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Microsoft Security Compliance Toolkit 1.0
@@ -27,12 +28,11 @@ The SCT enables administrators to effectively manage their enterprise’s Group 
 The Security Compliance Toolkit consists of:
 
 - Windows 10 security baselines
+    - Windows 10 Version 20H2 (October 2020 Update)
     - Windows 10 Version 2004 (May 2020 Update)
     - Windows 10 Version 1909 (November 2019 Update)
-    - Windows 10 Version 1903 (May 2019 Update)
     - Windows 10 Version 1809 (October 2018 Update)
     - Windows 10 Version 1803 (April 2018 Update)
-    - Windows 10 Version 1709 (Fall Creators Update)
     - Windows 10 Version 1607 (Anniversary Update)
     - Windows 10 Version 1507
 
@@ -45,7 +45,10 @@ The Security Compliance Toolkit consists of:
     - Microsoft 365 Apps for enterprise (Sept 2019)
 
 - Microsoft Edge security baseline
-    - Version 85
+    - Version 88
+    
+- Windows Update security baseline
+    - Windows 10 20H2 and below (October 2020 Update)
 
 - Tools
     - Policy Analyzer tool

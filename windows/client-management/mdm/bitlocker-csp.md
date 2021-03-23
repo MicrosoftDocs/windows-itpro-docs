@@ -16,7 +16,8 @@ manager: dansimp
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it is also supported in Windows 10 Pro.
 
 > [!NOTE]
-> Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.  
+> Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.
+> 
 > You must send all the settings together in a single SyncML to be effective.
 
 A Get operation on any of the settings, except for RequireDeviceEncryption and RequireStorageCardEncryption, returns
@@ -24,11 +25,29 @@ the setting configured by the admin.
 
 For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if Trusted Platform Module (TPM) protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that the a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
 
-The following diagram shows the BitLocker configuration service provider in tree format.
-
-![BitLocker csp](images/provisioning-csp-bitlocker.png)
-
-
+The following shows the BitLocker configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+BitLocker
+----RequireStorageCardEncryption
+----RequireDeviceEncryption
+----EncryptionMethodByDriveType
+----SystemDrivesRequireStartupAuthentication
+----SystemDrivesMinimumPINLength
+----SystemDrivesRecoveryMessage
+----SystemDrivesRecoveryOptions
+----FixedDrivesRecoveryOptions
+----FixedDrivesRequireEncryption
+----RemovableDrivesRequireEncryption
+----AllowWarningForOtherDiskEncryption
+----AllowStandardUserEncryption
+----ConfigureRecoveryPasswordRotation
+----RotateRecoveryPasswords
+----Status
+--------DeviceEncryptionStatus
+--------RotateRecoveryPasswordsStatus
+--------RotateRecoveryPasswordsRequestID
+```
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
 Defines the root node for the BitLocker configuration service provider.
 <!--Policy-->
@@ -225,18 +244,18 @@ EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for remov
   If you want to disable this policy use the following SyncML: 
 
 ```xml
-                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethodByDriveType</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data><disabled/></Data>
-                           </Item>
-                         </Replace>
+<Replace>
+  <CmdID>$CmdID$</CmdID>
+    <Item>
+      <Target>
+          <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethodByDriveType</LocURI>
+      </Target>
+      <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+      </Meta>
+      <Data><disabled/></Data>
+    </Item>
+</Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
@@ -299,6 +318,10 @@ If you disable or do not configure this setting, users can configure only basic 
 
 > [!NOTE]
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
+
+> [!NOTE] 
+> Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern 
+> Standby devices will not be able to configure a Startup PIN using this CSP. Users are required to manually configure the PIN.
 
 Sample value for this node to enable this policy is:
 
@@ -1126,12 +1149,12 @@ Supported values:
 |-----|------------|
 | 0 |The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
 | 1 |The encryption method of the OS volume doesn't match the BitLocker policy.|
-| 2 |The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
+| 2 |The OS volume is unprotected.|
 | 3 |The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.|
 | 4 |The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.|
 | 5 |The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.|
 | 6 |The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.|
-| 7 |The OS volume is unprotected.|
+| 7 |The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
 | 8 |Recovery key backup failed.|
 | 9 |A fixed drive is unprotected.|
 | 10 |The encryption method of the fixed drive doesn't match the BitLocker policy.|

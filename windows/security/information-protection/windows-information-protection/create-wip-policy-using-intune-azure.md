@@ -1,11 +1,11 @@
 ---
 title: Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune (Windows 10)
-description: Learn how to use the Azure portal for Microsoft Intune to create and deploy your Windows Information Protection (WIP) policy to protect data on your network. 
+description: Learn how to use the Azure portal for Microsoft Intune to create and deploy your Windows Information Protection (WIP) policy to protect data on your network.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -240,27 +240,27 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
 
 4.  On the **Before You Begin** page, click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-1.png)
+    ![Screenshot of the Before You Begin tab](images/wip-applocker-secpol-wizard-1.png)
 
 5.  On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-2.png)
+    ![Screenshot of the Permissions tab with "Allow" and "Everyone" selected](images/wip-applocker-secpol-wizard-2.png)
 
 6. On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
 
-    ![Create Packaged app Rules wizard, showing the Publisher](images/wip-applocker-secpol-wizard-3.png)
+    ![Screenshot of the "Use an installed package app as a reference" radio button selected and the Select button highlighted](images/wip-applocker-secpol-wizard-3.png)
 
 7.  In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we’re using Microsoft Dynamics 365.
 
-    ![Create Packaged app Rules wizard, showing the Select applications page](images/wip-applocker-secpol-wizard-4.png)
+    ![Screenshot of the Select applications list](images/wip-applocker-secpol-wizard-4.png)
 
 8.  On the updated **Publisher** page, click **Create**.
 
-    ![Create Packaged app Rules wizard, showing the Microsoft Dynamics 365 on the Publisher page](images/wip-applocker-secpol-wizard-5.png)
+    ![Screenshot of the Publisher tab](images/wip-applocker-secpol-wizard-5.png)
 
 9.  Click **No** in the dialog box that appears, asking if you want to create the default rules. You must not create default rules for your WIP policy.
 
-    ![Create Packaged app Rules wizard, showing the Microsoft Dynamics 365 on the Publisher page](images/wip-applocker-default-rule-warning.png)
+    ![Screenshot of AppLocker warning](images/wip-applocker-default-rule-warning.png)
 
 9.  Review the Local Security Policy snap-in to make sure your rule is correct.
 
@@ -318,11 +318,11 @@ The executable rule helps to create an AppLocker rule to sign any unsigned apps.
 
 6. On the **Conditions** page, click **Path** and then click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Publisher](images/path-condition.png)
+    ![Screenshot with Path conditions selected in the Create Executable Rules wizard](images/path-condition.png)
 
 7. Click **Browse Folders...** and select the path for the unsigned apps. For this example, we’re using "C:\Program Files".
 
-    ![Create Packaged app Rules wizard, showing the Select applications page](images/select-path.png)
+    ![Screenshot of the Path field of the Create Executable Rules wizard](images/select-path.png)
 
 8. On the **Exceptions** page, add any exceptions and then click **Next**.
 
@@ -444,7 +444,7 @@ To stop Windows from automatically blocking these connections, you can add the `
 For example: 
 
 ```console
-URL <,proxy>|URL <,proxy>/*AppCompat*/
+URL <,proxy>|URL <,proxy>|/*AppCompat*/
 ```
 
 When you use this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access), using the **Domain joined or marked as compliant** option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.
@@ -458,7 +458,7 @@ contoso.sharepoint.com,contoso.internalproxy1.com|contoso.visualstudio.com,conto
 Value format without proxy:
 
 ```console
-contoso.sharepoint.com,|contoso.visualstudio.com,|contoso.onedrive.com,
+contoso.sharepoint.com|contoso.visualstudio.com|contoso.onedrive.com,
 ```
 
 ### Protected domains
@@ -593,7 +593,7 @@ After you've decided where your protected apps can access enterprise data on you
         
 **Use Azure RMS for WIP.** Determines whether WIP uses [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management) to apply EFS encryption to files that are copied from Windows 10 to USB or other removable drives so they can be securely shared amongst employees. In other words, WIP uses Azure Rights Management "machinery" to apply EFS encryption to files when they are copied to removable drives. You must already have Azure Rights Management set up. The EFS file encryption key is protected by the RMS template’s license. Only users with permission to that template will be able to read it from the removable drive. WIP can also integrate with Azure RMS by using the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings in the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp). 
     
-- **On.** Protects files that are copied to a removable drive. You can enter a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. The RMS template is only applied to the files on removable media, and is only used for access control—it doesn’t actually apply Azure Information Protection to the files. Curly braces {} are required around the RMS Template ID, but they are removed after you save the policy. 
+- **On.** Protects files that are copied to a removable drive. You can enter a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. The RMS template is only applied to the files on removable media, and is only used for access control—it doesn’t actually apply Azure Information Protection to the files. 
         
   If you don’t specify an [RMS template](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates), it’s a regular EFS file using a default RMS template that all users can access.
         

@@ -96,6 +96,7 @@ The following methodology was used to derive the network endpoints:
 |activity.windows.com|TLSV1.2|Used by Activity Feed Service which enables multiple cross-device data roaming scenarios on Windows
 |adl.windows.com|HTTP|Used for compatibility database updates for Windows
 |spclient.wg.spotify.com|TLSV1.2|Used for Spotify Live Tile
+|cs.dds.microsoft.com|TLSV1.2|Used by Device Directory Service to keep track of user-device associations and storing metadata about the devices.
 
 ## Windows 10 Pro
 
@@ -161,6 +162,7 @@ The following methodology was used to derive the network endpoints:
 |activity.windows.com|TLSV1.2|Used by Activity Feed Service which enables multiple cross-device data roaming scenarios on Windows
 |adl.windows.com|HTTP|Used for compatibility database updates for Windows
 |spclient.wg.spotify.com|TLSV1.2|Used for Spotify Live Tile
+|cs.dds.microsoft.com|TLSV1.2|Used by Device Directory Service to keep track of user-device associations and storing metadata about the devices.
 
 ## Windows 10 Education
 
