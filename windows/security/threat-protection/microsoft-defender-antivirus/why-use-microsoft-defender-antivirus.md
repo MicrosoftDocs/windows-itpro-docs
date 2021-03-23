@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint)
 
 Microsoft Defender Antivirus is the next-generation protection component of [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) (Microsoft Defender for Endpoint). 
 
@@ -32,7 +32,7 @@ Although you can use a non-Microsoft antivirus solution with Microsoft Defender 
 
 ## 11 reasons to use Microsoft Defender Antivirus together with Microsoft Defender for Endpoint
 
-| |Advantage  |Why it matters |
+|# |Advantage  |Why it matters |
 |--|--|--|
 |1|Antivirus signal sharing |Microsoft applications and services share signals across your enterprise organization, providing a stronger single platform. See [Insights from the MITRE ATT&CK-based evaluation of Microsoft Defender for Endpoint](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/). |
 |2|Threat analytics and your score for devices |Microsoft Defender Antivirus collects underlying system data used by [threat analytics](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-analytics) and [Microsoft Secure Score for Devices](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices). This provides your organization's security team with more meaningful information, such as recommendations and opportunities to improve your organization's security posture. |
