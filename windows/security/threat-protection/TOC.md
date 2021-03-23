@@ -78,7 +78,6 @@
 ##### [Configure scanning options](microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus.md)
 
 #### [Configure remediation for scans](microsoft-defender-antivirus/configure-remediation-microsoft-defender-antivirus.md)
-##### [Configure remediation for scans](microsoft-defender-antivirus/configure-remediation-microsoft-defender-antivirus.md)
 ##### [Configure scheduled scans](microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 ##### [Configure and run scans](microsoft-defender-antivirus/run-scan-microsoft-defender-antivirus.md)
 ##### [Review scan results](microsoft-defender-antivirus/review-scan-results-microsoft-defender-antivirus.md)
