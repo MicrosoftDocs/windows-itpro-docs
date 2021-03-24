@@ -1,6 +1,6 @@
 - name: Configure Windows 10
   href: index.yml
-- name: Customize Windows 10 appearance settings
+- name: Configure Windows 10 appearance
   items:
     - name: Manage Windows 10 Start and taskbar layout
       items:
@@ -77,11 +77,7 @@
         - name: Troubleshoot kiosk mode issues
           href: kiosk-troubleshoot.md
 
-
-
-
-
-- name: Provisioning packages for Windows 10
+- name: Use provisioning packages
   items:
     - name: Provisioning packages for Windows 10
       href: provisioning-packages/provisioning-packages.md
@@ -375,11 +371,12 @@
         - name: Security Considerations for UE-V
           href: ue-v/uev-security-considerations.md
 
+
 - name: Configure Windows 10 Mobile devices
-  items:
-    - name: Configure Windows 10 Mobile devices
-      href: mobile-devices/configure-mobile.md
-- name: Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise
+  href: mobile-devices/configure-mobile.md
+
+
+- name: Set up a kiosk on Windows 10 Mobile 
   href: mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md
 - name: Use Windows Configuration Designer to configure Windows 10 Mobile devices
   items:
