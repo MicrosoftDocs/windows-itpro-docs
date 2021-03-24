@@ -446,7 +446,7 @@ Examples:
 
 #### EMET-related products
 
-Microsoft Consulting Services (MCS) and Microsoft Support/Premier Field Engineering (PFE) offer a range of options for EMET, support for EMET, and EMET-related reporting and auditing products such as the EMET Enterprise Reporting Service (ERS). For any enterprise customers who use such products today or who are interested in similar capabilities, we recommend evaluating [Microsoft Defender for Endpoint](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md).
+Microsoft Consulting Services (MCS) and Microsoft Support/Premier Field Engineering (PFE) offer a range of options for EMET, support for EMET, and EMET-related reporting and auditing products such as the EMET Enterprise Reporting Service (ERS). For any enterprise customers who use such products today or who are interested in similar capabilities, we recommend evaluating [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
 ## Related topics
 
