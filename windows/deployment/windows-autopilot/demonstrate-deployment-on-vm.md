@@ -252,9 +252,9 @@ Click on the **WindowsAutopilot** VM in Hyper-V Manager and verify that you see 
 ## Capture the hardware ID
 
 > [!NOTE]
-> Normally, the Device ID is captured by the OEM as they run the OA3 Tool on each device in the factory.  The OEM then submits the 4K HH created by the OA3 Tool to Microsoft by submitting it with a Computer Build Report (CBR).  For purposes of this lab, you are acting as the OEM (capturing the 4K HH), but you're not going to use the OA3 Tool to capture the full 4K HH for various reasons (you'd have to install the OA3 tool, your device couldn't have a volume license version of Windows, it's a more complicated process than using a PS script, etc.).  Instead, you'll simulate running the OA3 tool by running a PowerShell script, which captures the device 4K HH just like the OA3 tool.
+> Normally, the Device ID is captured by the OEM as they run the OA3 Tool on each device in the factory.  The OEM then submits the 4K HH created by the OA3 Tool to Microsoft by submitting it with a Computer Build Report (CBR).  For purposes of this lab, you are acting as the OEM (capturing the 4K HH), but you're not going to use the OA3 Tool to capture the full 4K HH for various reasons (you'd have to install the OA3 tool, your device couldn't have a volume license version of Windows, it's a more complicated process than using a PowerShell script, etc.).  Instead, you'll simulate running the OA3 tool by running a PowerShell script, which captures the device 4K HH just like the OA3 tool.
 
-Follow these steps to run the PS script:
+Follow these steps to run the PowerShell script:
 
 1. **On the client VM**: Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you are using a VM or a physical device:
 
