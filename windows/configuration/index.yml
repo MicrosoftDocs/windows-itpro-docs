@@ -26,10 +26,12 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What's new in Windows 10, version 20H2
-            url: whats-new-windows-10-version-20H2.md
-          - text: What's new in Windows 10, version 2004
-            url: whats-new-windows-10-version-2004.md
+          - text: Manage Windows 10 Start and taskbar layout
+            url: windows-10-start-layout-options-and-policies.md
+          - text: Configure Windows Spotlight on the lock screen
+            url: windows-spotlight.md
+          - text: Customize Windows 10 Start and taskbar with Group Policy
+            url: customize-windows-10-start-screens-by-using-group-policy.md
 
 
   # Card (optional)
@@ -37,12 +39,12 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Windows 10 release information
-            url: https://docs.microsoft.com/en-us/windows/release-health/release-information
-          - text: Windows 10 release health dashboard
-            url: https://docs.microsoft.com/windows/release-information/
-          - text: Windows 10 update history
-            url: https://support.microsoft.com/topic/windows-10-update-history-7dd3071a-3906-fa2c-c342-f7f86728a6e3
+          - text: Guidelines for choosing an app for assigned access
+            url: guidelines-for-assigned-access-app.md
+          - text: Set up a single-app kiosk
+            url: kiosk-single-app.md
+          - text: Set up a multi-app kiosk
+            url: lock-down-windows-10-to-specific-apps.md
 
 
   # Card (optional)
