@@ -26,6 +26,7 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: "Check the release health status of Microsoft 365 services before you call support to see if there is an active service interruption."
+feedback_system: none
 ---
 
 # How to check Windows release health
