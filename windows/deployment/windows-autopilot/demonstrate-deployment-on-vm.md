@@ -481,7 +481,7 @@ Click **Next** to continue with the **Out-of-box experience (OOBE)** settings:
 |---|---|
 | Deployment mode | User-driven |
 | Join to Azure AD as | Azure AD joined |
-| Microsoft Sofware License Terms | Hide |
+| Microsoft Software License Terms | Hide |
 | Privacy Settings | Hide |
 | Hide change account options | Hide |
 | User account type | Standard |
