@@ -1,6 +1,6 @@
 - name: Configure Windows 10
   href: index.yml
-- name: Manage Windows 10 settings
+- name: Customize Windows 10 appearance settings
   items:
     - name: Manage Windows 10 Start and taskbar layout
       items:
@@ -24,23 +24,23 @@
           href: start-layout-troubleshoot.md
         - name: Changes to Start policies in Windows 10
           href: changes-to-start-policies-in-windows-10.md
-    - name: Other settings
+    - name: Configure accessibility settings
       items:
-        - name: Accessibility information for IT Pros
-          href: windows-10-accessibility-for-ITPros.md
-        - name: Configure access to Microsoft Store
-          href: stop-employees-from-using-microsoft-store.md
-        - name: Configure Windows Spotlight on the lock screen
-          href: windows-spotlight.md
-        - name: Manage Windows 10 and Microsoft Store tips, "fun facts", and suggestions
-          href: manage-tips-and-suggestions.md
-        - name: Configure cellular settings for tablets and PCs
-          href: provisioning-apn.md
-        - name: Lockdown features from Windows Embedded 8.1 Industry
-          href: lockdown-features-windows-10.md
+         - name: Accessibility information for IT Pros
+           href: windows-10-accessibility-for-ITPros.md
+         - name: Configure access to Microsoft Store
+           href: stop-employees-from-using-microsoft-store.md
+         - name: Configure Windows Spotlight on the lock screen
+           href: windows-spotlight.md
+         - name: Manage Windows 10 and Microsoft Store tips, "fun facts", and suggestions
+           href: manage-tips-and-suggestions.md
+         - name: Configure cellular settings for tablets and PCs
+           href: provisioning-apn.md
+         - name: Lockdown features from Windows Embedded 8.1 Industry
+           href: lockdown-features-windows-10.md
 
 
-- name: Configure kiosks and digital signs on Windows desktop editions
+- name: Configure kiosks and digital signs
   items:
     - name: Configure kiosks and digital signs on Windows desktop editions
       href: kiosk-methods.md
@@ -52,6 +52,8 @@
       href: kiosk-single-app.md
     - name: Set up a multi-app kiosk
       href: lock-down-windows-10-to-specific-apps.md
+    - name: Set up a shared or guest PC with Windows 10
+      href: set-up-shared-or-guest-pc.md
     - name: More kiosk methods and reference information
       items:
         - name: More kiosk methods and reference information
@@ -158,8 +160,7 @@
       href: cortana-at-work/cortana-at-work-voice-commands.md
     - name: Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization
       href: cortana-at-work/cortana-at-work-policy-settings.md
-    - name: Set up a shared or guest PC with Windows 10
-      href: set-up-shared-or-guest-pc.md
+
 
     - name: Windows Configuration Designer provisioning settings (reference)
       items:
@@ -311,9 +312,9 @@
   items:
     - name: User Experience Virtualization (UE-V) for Windows
       href: ue-v/uev-for-windows.md
-    - name: Get Started with UE-V
+    - name: Get started with UE-V
       items:
-        - name: Get Started with UE-V
+        - name: Get started with UE-V
           href: ue-v/uev-getting-started.md
         - name: What's New in UE-V for Windows 10, version 1607
           href: ue-v/uev-whats-new-in-uev-for-windows.md
@@ -329,9 +330,9 @@
           href: ue-v/uev-deploy-required-features.md
         - name: Deploy UE-V for use with Custom Applications
           href: ue-v/uev-deploy-uev-for-custom-applications.md
-    - name: Administering UE-V
+    - name: Administer UE-V
       items:
-        - name: Administering UE-V
+        - name: UE-V administion guide
           href: ue-v/uev-administering-uev.md
         - name: Manage Configurations for UE-V
           items:
@@ -373,9 +374,6 @@
           href: ue-v/uev-application-template-schema-reference.md
         - name: Security Considerations for UE-V
           href: ue-v/uev-security-considerations.md
-
-- name: Manage Wi-Fi Sense in your company
-  href: manage-wifi-sense-in-enterprise.md
 
 - name: Configure Windows 10 Mobile devices
   items:

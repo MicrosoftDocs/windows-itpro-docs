@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Customize Windows 10 settings 
+  - title: Manage Windows 10 settings 
     linkLists:
       - linkListType: overview
         links:
