@@ -2,7 +2,7 @@
   href: index.yml
 - name: Configure Windows 10 appearance
   items:
-    - name: Manage Windows 10 Start and taskbar layout
+    - name: Windows 10 Start and taskbar
       items:
         - name: Manage Windows 10 Start and taskbar layout
           href: windows-10-start-layout-options-and-policies.md
@@ -24,7 +24,7 @@
           href: start-layout-troubleshoot.md
         - name: Changes to Start policies in Windows 10
           href: changes-to-start-policies-in-windows-10.md
-    - name: Configure accessibility settings
+    - name: Accessibility settings
       items:
          - name: Accessibility information for IT Pros
            href: windows-10-accessibility-for-ITPros.md
@@ -54,7 +54,9 @@
       href: lock-down-windows-10-to-specific-apps.md
     - name: Set up a shared or guest PC with Windows 10
       href: set-up-shared-or-guest-pc.md
-    - name: More kiosk methods and reference information
+    - name: Set up a kiosk on Windows 10 Mobile 
+      href: mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md 
+    - name: Additional kiosk reference information
       items:
         - name: More kiosk methods and reference information
           href: kiosk-additional-reference.md
@@ -76,8 +78,9 @@
           href: kiosk-mdm-bridge.md
         - name: Troubleshoot kiosk mode issues
           href: kiosk-troubleshoot.md
+       
 
-- name: Use provisioning packages for Windows 10
+- name: Use provisioning packages
   items:
     - name: Provisioning packages for Windows 10
       href: provisioning-packages/provisioning-packages.md
@@ -106,7 +109,7 @@
     - name: Windows Configuration Designer command-line interface (reference)
       href: provisioning-packages/provisioning-command-line.md
 
-- name: Configure Cortana in Windows 10
+- name: Configure Cortana
   items:
     - name: Configure Cortana in Windows 10
       href: cortana-at-work/cortana-at-work-overview.md
@@ -303,15 +306,13 @@
         - name: Workplace
           href: wcd/wcd-workplace.md  
 
-
-
-
-
 - name: Reference
   items:
-    - name: User Experience Virtualization (UE-V) for Windows
+    - name: Configure Windows 10 Mobile devices
+      href: mobile-devices/configure-mobile.md
+    - name: User Experience Virtualization (UE-V)
       items:
-        - name: User Experience Virtualization (UE-V) for Windows
+        - name: User Experience Virtualization (UE-V) for Windows 10
           href: ue-v/uev-for-windows.md
         - name: Get started with UE-V
           items:
@@ -377,10 +378,10 @@
               href: ue-v/uev-security-considerations.md
 
 
-    - name: Configure Windows 10 Mobile devices
-      href: mobile-devices/configure-mobile.md
-    - name: Set up a kiosk on Windows 10 Mobile 
-      href: mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md
+
+
+
+
     - name: Use Windows Configuration Designer for Windows 10 Mobile devices
       items:
         - name: Use Windows Configuration Designer to configure Windows 10 Mobile devices
