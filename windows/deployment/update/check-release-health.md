@@ -79,12 +79,13 @@ In the **Windows release health** experience, every known issue is assigned as s
 
 | Status | Definition |
 |:-----|:-----|
-|**Reported** | An issue has been brought to the attention of Windows teams. At this stage, there is no confirmation that users are affected. |
-|**Confirmed** | A known issue has been confirmed but details are emerging regarding the issue’s scope of impact, root cause, and mitigation steps. |
-|**Mitigated** | A workaround is available and communicated to Windows customers. A known issue will stay in this state until a KB is released by Microsoft to resolve the known issue. |
-|**Mitigated: External** | A Microsoft partner has a workaround for a known issue created by a component released by them. A known issue will stay in this state until a fix is released by the partner to resolve the known issue. |
+|**Reported** | An issue has been brought to the attention of the Windows teams. At this stage, there is no confirmation that users are affected. |
+|**Investigating** | The issue is believed to affect users and efforts are underway to gather more information about the issue’s scope of impact, mitigation steps, and root cause. |
+|**Confirmed** | After close review, Microsoft teams have determined the issue is affecting Windows users, and progress is being made on mitigation steps and root cause. |
+|**Mitigated** | A workaround is available and communicated to Windows customers for a known issue. A known issue will stay in this state until a KB article is released by Microsoft to resolve the known issue. |
+|**Mitigated: External** | A workaround is available and communicated to Windows customers for a known issue that was caused by a software or driver from a third-party software or device manufacturer. A known issue will stay in this state until the issue is resolved by Microsoft or the third-party. |
 |**Resolved** | A solution has been released by Microsoft and has been documented in a KB article that will resolve the known issue once it’s deployed in the customer’s environment. |
-|**Resolved: External** | A solution has been released by a Microsoft partner that will resolve the known issue once it’s deployed in the customer’s environment. |
+|**Resolved: External** | A solution has been released by a Microsoft or a third-party that will resolve the known issue once it’s deployed in the customer’s environment. |
 
 ## Known issue history
 
@@ -113,7 +114,7 @@ A list of all status updates posted in the selected timeframe will be displayed,
     No. While the content is similar, you may see more issues and more technical details published to Windows release health on Microsoft 365 admin center to better support the IT admin. For example, you’ll find details to help you diagnose issues in your environment, steps to mitigate issues, and root cause analysis.
 
 -   **How often will content be updated?**   
-    In an effort to ensure Windows customers have important information as soon as possible, all major known issues will be shared with Windows customers on both Docs.microsoft.com and the Microsoft 365 admin center. We may also update the details available for Windows release health in the Microsoft 365 admin center when we have additional details on workarounds, root cause, or other information to help you be plan updates in your environment.
+    In an effort to ensure Windows customers have important information as soon as possible, all major known issues will be shared with Windows customers on both Docs.microsoft.com and the Microsoft 365 admin center. We may also update the details available for Windows release health in the Microsoft 365 admin center when we have additional details on workarounds, root cause, or other information to help you plan for updates and handle issues in your environment.
 
 -   **Can I share this content publicly or with other Windows customers?**   
     Windows release health is provided to you as a licensed Windows customer and is not to be shared publicly.
