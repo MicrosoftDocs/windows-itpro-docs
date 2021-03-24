@@ -77,7 +77,7 @@
         - name: Troubleshoot kiosk mode issues
           href: kiosk-troubleshoot.md
 
-- name: Use provisioning packages
+- name: Use provisioning packages for Windows 10
   items:
     - name: Provisioning packages for Windows 10
       href: provisioning-packages/provisioning-packages.md
@@ -304,95 +304,98 @@
           href: wcd/wcd-workplace.md  
 
 
-- name: User Experience Virtualization (UE-V) for Windows
+
+
+
+- name: Reference
   items:
     - name: User Experience Virtualization (UE-V) for Windows
-      href: ue-v/uev-for-windows.md
-    - name: Get started with UE-V
       items:
+        - name: User Experience Virtualization (UE-V) for Windows
+          href: ue-v/uev-for-windows.md
         - name: Get started with UE-V
-          href: ue-v/uev-getting-started.md
-        - name: What's New in UE-V for Windows 10, version 1607
-          href: ue-v/uev-whats-new-in-uev-for-windows.md
-        - name: User Experience Virtualization Release Notes
-          href: ue-v/uev-release-notes-1607.md
-        - name: Upgrade to UE-V for Windows 10
-          href: ue-v/uev-upgrade-uev-from-previous-releases.md
-    - name: Prepare a UE-V Deployment
-      items:
-        - name: Prepare a UE-V Deployment
-          href: ue-v/uev-prepare-for-deployment.md
-        - name: Deploy Required UE-V Features
-          href: ue-v/uev-deploy-required-features.md
-        - name: Deploy UE-V for use with Custom Applications
-          href: ue-v/uev-deploy-uev-for-custom-applications.md
-    - name: Administer UE-V
-      items:
-        - name: UE-V administion guide
-          href: ue-v/uev-administering-uev.md
-        - name: Manage Configurations for UE-V
           items:
+            - name: Get started with UE-V
+              href: ue-v/uev-getting-started.md
+            - name: What's New in UE-V for Windows 10, version 1607
+              href: ue-v/uev-whats-new-in-uev-for-windows.md
+            - name: User Experience Virtualization Release Notes
+              href: ue-v/uev-release-notes-1607.md
+            - name: Upgrade to UE-V for Windows 10
+              href: ue-v/uev-upgrade-uev-from-previous-releases.md
+        - name: Prepare a UE-V Deployment
+          items:
+            - name: Prepare a UE-V Deployment
+              href: ue-v/uev-prepare-for-deployment.md
+            - name: Deploy Required UE-V Features
+              href: ue-v/uev-deploy-required-features.md
+            - name: Deploy UE-V for use with Custom Applications
+              href: ue-v/uev-deploy-uev-for-custom-applications.md
+        - name: Administer UE-V
+          items:
+            - name: UE-V administion guide
+              href: ue-v/uev-administering-uev.md
             - name: Manage Configurations for UE-V
-              href: ue-v/uev-manage-configurations.md
-            - name: Configuring UE-V with Group Policy Objects
-              href: ue-v/uev-configuring-uev-with-group-policy-objects.md
-            - name: Configuring UE-V with Microsoft Endpoint Configuration Manager
-              href: ue-v/uev-configuring-uev-with-system-center-configuration-manager.md
-            - name: Administering UE-V with Windows PowerShell and WMI
-              href: ue-v/uev-administering-uev-with-windows-powershell-and-wmi.md
-            - name: Managing the UE-V Service and Packages with Windows PowerShell and WMI
-              href: ue-v/uev-managing-uev-agent-and-packages-with-windows-powershell-and-wmi.md
-            - name: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
-              href: ue-v/uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md
-            - name: Working with Custom UE-V Templates and the UE-V Template Generator
-              href: ue-v/uev-working-with-custom-templates-and-the-uev-generator.md
-            - name: Manage Administrative Backup and Restore in UE-V
-              href: ue-v/uev-manage-administrative-backup-and-restore.md
-            - name: Changing the Frequency of UE-V Scheduled Tasks
-              href: ue-v/uev-changing-the-frequency-of-scheduled-tasks.md
-            - name: Migrating UE-V Settings Packages
-              href: ue-v/uev-migrating-settings-packages.md
-            - name: Using UE-V with Application Virtualization Applications
-              href: ue-v/uev-using-uev-with-application-virtualization-applications.md
-    - name: Troubleshooting UE-V
-      href: ue-v/uev-troubleshooting.md
-    - name: Technical Reference for UE-V
-      items:
+              items:
+                - name: Manage Configurations for UE-V
+                  href: ue-v/uev-manage-configurations.md
+                - name: Configuring UE-V with Group Policy Objects
+                  href: ue-v/uev-configuring-uev-with-group-policy-objects.md
+                - name: Configuring UE-V with Microsoft Endpoint Configuration Manager
+                  href: ue-v/uev-configuring-uev-with-system-center-configuration-manager.md
+                - name: Administering UE-V with Windows PowerShell and WMI
+                  href: ue-v/uev-administering-uev-with-windows-powershell-and-wmi.md
+                - name: Managing the UE-V Service and Packages with Windows PowerShell and WMI
+                  href: ue-v/uev-managing-uev-agent-and-packages-with-windows-powershell-and-wmi.md
+                - name: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
+                  href: ue-v/uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md
+                - name: Working with Custom UE-V Templates and the UE-V Template Generator
+                  href: ue-v/uev-working-with-custom-templates-and-the-uev-generator.md
+                - name: Manage Administrative Backup and Restore in UE-V
+                  href: ue-v/uev-manage-administrative-backup-and-restore.md
+                - name: Changing the Frequency of UE-V Scheduled Tasks
+                  href: ue-v/uev-changing-the-frequency-of-scheduled-tasks.md
+                - name: Migrating UE-V Settings Packages
+                  href: ue-v/uev-migrating-settings-packages.md
+                - name: Using UE-V with Application Virtualization Applications
+                  href: ue-v/uev-using-uev-with-application-virtualization-applications.md
+        - name: Troubleshooting UE-V
+          href: ue-v/uev-troubleshooting.md
         - name: Technical Reference for UE-V
-          href: ue-v/uev-technical-reference.md
-        - name: Sync Methods for UE-V
-          href: ue-v/uev-sync-methods.md
-        - name: Sync Trigger Events for UE-V
-          href: ue-v/uev-sync-trigger-events.md
-        - name: Synchronizing Microsoft Office with UE-V
-          href: ue-v/uev-synchronizing-microsoft-office-with-uev.md
-        - name: Application Template Schema Reference for UE-V
-          href: ue-v/uev-application-template-schema-reference.md
-        - name: Security Considerations for UE-V
-          href: ue-v/uev-security-considerations.md
+          items:
+            - name: Technical Reference for UE-V
+              href: ue-v/uev-technical-reference.md
+            - name: Sync Methods for UE-V
+              href: ue-v/uev-sync-methods.md
+            - name: Sync Trigger Events for UE-V
+              href: ue-v/uev-sync-trigger-events.md
+            - name: Synchronizing Microsoft Office with UE-V
+              href: ue-v/uev-synchronizing-microsoft-office-with-uev.md
+            - name: Application Template Schema Reference for UE-V
+              href: ue-v/uev-application-template-schema-reference.md
+            - name: Security Considerations for UE-V
+              href: ue-v/uev-security-considerations.md
 
 
-- name: Configure Windows 10 Mobile devices
-  href: mobile-devices/configure-mobile.md
-
-
-- name: Set up a kiosk on Windows 10 Mobile 
-  href: mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md
-- name: Use Windows Configuration Designer to configure Windows 10 Mobile devices
-  items:
-    - name: Use Windows Configuration Designer to configure Windows 10 Mobile devices
-      href: mobile-devices/provisioning-configure-mobile.md
-    - name: NFC-based device provisioning
-      href: mobile-devices/provisioning-nfc.md
-    - name: Barcode provisioning and the package splitter tool
-      href: mobile-devices/provisioning-package-splitter.md
-    - name: Use the Lockdown Designer app to create a Lockdown XML file
-      href: mobile-devices/mobile-lockdown-designer.md
-    - name: Configure Windows 10 Mobile using Lockdown XML
-      href: mobile-devices/lockdown-xml.md
-    - name: Settings and quick actions that can be locked down in Windows 10 Mobile
-      href: mobile-devices/settings-that-can-be-locked-down.md
-    - name: Product IDs in Windows 10 Mobile
-      href: mobile-devices/product-ids-in-windows-10-mobile.md
-    - name: Start layout XML for mobile editions of Windows 10 (reference)
-      href: mobile-devices/start-layout-xml-mobile.md
+    - name: Configure Windows 10 Mobile devices
+      href: mobile-devices/configure-mobile.md
+    - name: Set up a kiosk on Windows 10 Mobile 
+      href: mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md
+    - name: Use Windows Configuration Designer for Windows 10 Mobile devices
+      items:
+        - name: Use Windows Configuration Designer to configure Windows 10 Mobile devices
+          href: mobile-devices/provisioning-configure-mobile.md
+        - name: NFC-based device provisioning
+          href: mobile-devices/provisioning-nfc.md
+        - name: Barcode provisioning and the package splitter tool
+          href: mobile-devices/provisioning-package-splitter.md
+        - name: Use the Lockdown Designer app to create a Lockdown XML file
+          href: mobile-devices/mobile-lockdown-designer.md
+        - name: Configure Windows 10 Mobile using Lockdown XML
+          href: mobile-devices/lockdown-xml.md
+        - name: Settings and quick actions that can be locked down in Windows 10 Mobile
+          href: mobile-devices/settings-that-can-be-locked-down.md
+        - name: Product IDs in Windows 10 Mobile
+          href: mobile-devices/product-ids-in-windows-10-mobile.md
+        - name: Start layout XML for mobile editions of Windows 10 (reference)
+          href: mobile-devices/start-layout-xml-mobile.md
