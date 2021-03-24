@@ -82,7 +82,7 @@ In the **Windows release health** experience, every known issue is assigned as s
 |**Reported** | An issue has been brought to the attention of Windows teams. At this stage, there is no confirmation that users are affected. |
 |**Confirmed** | A known issue has been confirmed but details are emerging regarding the issue’s scope of impact, root cause, and mitigation steps. |
 |**Mitigated** | A workaround is available and communicated to Windows customers. A known issue will stay in this state until a KB is released by Microsoft to resolve the known issue. |
-|**Mitigated: External** | A Microsoft partner has a workaround for a known issue created by component released by them. A known issue will stay in this state until a fix is released by the partner to resolve the known issue. |
+|**Mitigated: External** | A Microsoft partner has a workaround for a known issue created by a component released by them. A known issue will stay in this state until a fix is released by the partner to resolve the known issue. |
 |**Resolved** | A solution has been released by Microsoft and has been documented in a KB article that will resolve the known issue once it’s deployed in the customer’s environment. |
 |**Resolved: External** | A solution has been released by a Microsoft partner that will resolve the known issue once it’s deployed in the customer’s environment. |
 
@@ -113,7 +113,7 @@ A list of all status updates posted in the selected timeframe will be displayed,
     No. While the content is similar, you may see more issues and more technical details published to Windows release health on Microsoft 365 admin center to better support the IT admin. For example, you’ll find details to help you diagnose issues in your environment, steps to mitigate issues, and root cause analysis.
 
 -   **How often will content be updated?**   
-    In an effort to ensure Windows customers have important information as soon as possible, all major known issues will be shared with Windows customers on both Docs.microsoft.com and the Microsoft 365 admin center. We may also update the details available for Windows release health in the Microsoft 365 admin center when we have additional details on workarounds, root cause, or other information to help you be planful in your environment.
+    In an effort to ensure Windows customers have important information as soon as possible, all major known issues will be shared with Windows customers on both Docs.microsoft.com and the Microsoft 365 admin center. We may also update the details available for Windows release health in the Microsoft 365 admin center when we have additional details on workarounds, root cause, or other information to help you be plan updates in your environment.
 
 -   **Can I share this content publicly or with other Windows customers?**   
     Windows release health is provided to you as a licensed Windows customer and is not to be shared publicly.
