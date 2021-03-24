@@ -952,7 +952,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-exploit-guard/troubleshoot-asr.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-asr",
       "redirect_document_id": false
     },
     {
