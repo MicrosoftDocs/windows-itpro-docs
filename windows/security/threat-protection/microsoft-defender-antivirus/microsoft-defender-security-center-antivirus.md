@@ -163,7 +163,7 @@ To learn more, see the following resources:
 
 3. Select **Ransomware protection**.
 
-4. To change Controlled folder access settings, see [Protect important folders with Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard).
+4. To change Controlled folder access settings, see [Protect important folders with Controlled folder access](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders).
 
 5. To set up ransomware recovery options, select **Set up** under **Ransomware data recovery** and follow the instructions for linking or setting up your OneDrive account so you can easily recover from a ransomware attack.
 
