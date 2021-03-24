@@ -61,9 +61,7 @@
       ],
       "searchScope": ["Windows 10"]
     },
-    "fileMetadata": {
-	  "feedback_system": { "update/check-release-health.md": "None"}
-	  },
+    "fileMetadata": {},
     "template": [],
     "dest": "win-development",
     "markdownEngineName": "markdig"
