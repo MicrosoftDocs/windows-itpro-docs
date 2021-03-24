@@ -31,7 +31,7 @@ In this topic you'll learn how to set-up a Windows Autopilot deployment for a VM
 
 > [!NOTE]
 > Although there are [multiple platforms](add-devices.md#registering-devices) available to enable Autopilot, this lab primarily uses Intune.
-
+> 
 > Hyper-V and a VM are not required for this lab. You can also use a physical device. However, the instructions assume that you are using a VM. To use a physical device, skip the instructions to install Hyper-V and create a VM. All references to 'device' in the guide refer to the client device, either physical or virtual.
 
 The following video provides an overview of the process:
@@ -53,7 +53,7 @@ These are the things you'll need to complete this lab:
 
 A summary of the sections and procedures in the lab is provided below. Follow each section in the order it is presented, skipping the sections that do not apply to you. Optional procedures are provided in the appendix.
 
-> If you already have Hyper-V and a Windows 10 VM, you can skip directly to the [Capture the hardware ID](#capture-the-hardware-id) step. The VM must be running Windows 10, version 1903 or a later version.
+If you already have Hyper-V and a Windows 10 VM, you can skip directly to the [Capture the hardware ID](#capture-the-hardware-id) step. The VM must be running Windows 10, version 1903 or a later version.
 
 [Verify support for Hyper-V](#verify-support-for-hyper-v)
 <br>[Enable Hyper-V](#enable-hyper-v)
@@ -113,7 +113,7 @@ Install-WindowsFeature -Name Hyper-V -IncludeManagementTools
 
 When you are prompted to restart the computer, choose **Yes**. The computer might restart more than once.
 
-> Alternatively, you can install Hyper-V using the Control Panel in Windows under **Turn Windows features on or off** for a client operating system, or using Server Manager's **Add Roles and Features Wizard** on a server operating system, as shown below:
+Alternatively, you can install Hyper-V using the Control Panel in Windows under **Turn Windows features on or off** for a client operating system, or using Server Manager's **Add Roles and Features Wizard** on a server operating system, as shown below:
 
    ![Hyper-V feature](images/hyper-v-feature.png)
 
@@ -132,21 +132,27 @@ Now that Hyper-V is enabled, we need to create a VM running Windows 10. We can [
 To use Windows PowerShell, we just need to know two things:
 
 1. The location of the Windows 10 ISO file.
-   - In the example, we assume the location is **c:\iso\win10-eval.iso**.
+
+   In the example, we assume the location is **c:\iso\win10-eval.iso**.
+
 2. The name of the network interface that connects to the Internet.
-   - In the example, we use a Windows PowerShell command to determine this automatically.
+
+   In the example, we use a Windows PowerShell command to determine this automatically.
 
 After we have set the ISO file location and determined the name of the appropriate network interface, we can install Windows 10.
 
 ### Set ISO file location
 
-You can download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
-- When asked to select a platform, choose **64 bit**.
+You can download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise from [Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
+
+When asked to select a platform, choose **64 bit**.
 
 After you download this file, the name will be extremely long (ex: 19042.508.200927-1902.20h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso).
 
 1. So that it is easier to type and remember, rename the file to **win10-eval.iso**.
+
 2. Create a directory on your computer named **c:\iso** and move the **win10-eval.iso** file there, so the path to the file is **c:\iso\win10-eval.iso**.
+
 3. If you wish to use a different name and location for the file, you must modify the Windows PowerShell commands below to use your custom name and directory.
 
 ### Determine network adapter name
@@ -239,7 +245,8 @@ After the VM restarts, during OOBE, it's fine to select **Set up for personal us
 
 Once the installation is complete, sign in and verify that you are at the Windows 10 desktop, then create your first Hyper-V checkpoint. Checkpoints are used to restore the VM to a previous state.
 
-   ![Windows setup example 8](images/winsetup8.png)
+   > [!div class="mx-imgBorder"]
+   > ![Windows setup example 8](images/winsetup8.png)
 
 To create a checkpoint, open an elevated Windows PowerShell prompt on the computer running Hyper-V (not on the VM) and run the following:
 
@@ -267,62 +274,62 @@ Follow these steps to run the PowerShell script:
     Get-WindowsAutopilotInfo.ps1 -OutputFile AutopilotHWID.csv
     ```
 
-When you are prompted to install the NuGet package, choose **Yes**.
+1. When you are prompted to install the NuGet package, choose **Yes**.
 
-See the sample output below.  A 'dir' command is issued at the end to show the file that was created.
+   See the sample output below.  A **dir** command is issued at the end to show the file that was created.
 
-<pre>
-PS C:\> md c:\HWID
+    ```console
+    PS C:\> md c:\HWID
+    
+         Directory: C:\
+    
+    
+    Mode                 LastWriteTime         Length Name
+    ----                 -------------         ------ ----
+    d-----        11/13/2020   3:00 PM                HWID
+    
+    
+    PS C:\Windows\system32> Set-Location c:\HWID
+    PS C:\HWID> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
+    PS C:\HWID> Install-Script -Name Get-WindowsAutopilotInfo -Force
+    
+    NuGet provider is required to continue
+    PowerShellGet requires NuGet provider version '2.8.5.201' or newer to interact with NuGet-based repositories. The NuGet
+     provider must be available in 'C:\Program Files\PackageManagement\ProviderAssemblies' or
+    'C:\Users\user1\AppData\Local\PackageManagement\ProviderAssemblies'. You can also install the NuGet provider by running
+     'Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force'. Do you want PowerShellGet to install and
+    import the NuGet provider now?
+    [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
+    PS C:\HWID> $env:Path += ";C:\Program Files\WindowsPowerShell\Scripts"
+    PS C:\HWID> Get-WindowsAutopilotInfo.ps1 -OutputFile AutopilotHWID.csv
+    Gathered details for device with serial number: 1804-7078-6805-7405-0796-0675-17
+    PS C:\HWID> dir
+    
+    
+        Directory: C:\HWID
+    
+    
+    Mode                 LastWriteTime         Length Name
+    ----                 -------------         ------ ----
+    -a----        11/13/2020   3:01 PM           8184 AutopilotHWID.csv
+    
+    
+    PS C:\HWID>
+    ```
+    
+1. Verify that there is an **AutopilotHWID.csv** file in the **c:\HWID** directory that is about 8 KB in size.  This file contains the complete 4K HH.
 
-     Directory: C:\
+   > [!NOTE]
+   > Although the .csv extension might be associated with Microsoft Excel, you cannot view the file properly by double-clicking it. To correctly parse the comma delimiters and view the file in Excel, you must use the **Data** > **From Text/CSV** function in Excel to import the appropriate data columns. You don't need to view the file in Excel unless you are curious. The file format will be validated when it is imported into Autopilot. An example of the data in this file is shown below.
 
+   ![Serial number and hardware hash](images/hwid.png)
 
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        11/13/2020   3:00 PM                HWID
+   You will need to upload this data into Intune to register your device for Autopilot, so the next step is to transfer this file to the computer you will use to access the Azure portal.  If you are using a physical device instead of a VM, you can copy the file to a USB stick.  If you’re using a VM, you can right-click the AutopilotHWID.csv file and copy it, then right-click and paste the file to your desktop (outside the VM).
 
+   If you have trouble copying and pasting the file, just view the contents in Notepad on the VM and copy the text into Notepad outside the VM. Do not use another text editor to do this.
 
-PS C:\Windows\system32> Set-Location c:\HWID
-PS C:\HWID> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
-PS C:\HWID> Install-Script -Name Get-WindowsAutopilotInfo -Force
-
-NuGet provider is required to continue
-PowerShellGet requires NuGet provider version '2.8.5.201' or newer to interact with NuGet-based repositories. The NuGet
- provider must be available in 'C:\Program Files\PackageManagement\ProviderAssemblies' or
-'C:\Users\user1\AppData\Local\PackageManagement\ProviderAssemblies'. You can also install the NuGet provider by running
- 'Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force'. Do you want PowerShellGet to install and
-import the NuGet provider now?
-[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
-PS C:\HWID> $env:Path += ";C:\Program Files\WindowsPowerShell\Scripts"
-PS C:\HWID> Get-WindowsAutopilotInfo.ps1 -OutputFile AutopilotHWID.csv
-Gathered details for device with serial number: 1804-7078-6805-7405-0796-0675-17
-PS C:\HWID> dir
-
-
-    Directory: C:\HWID
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----        11/13/2020   3:01 PM           8184 AutopilotHWID.csv
-
-
-PS C:\HWID>
-</pre>
-
-Verify that there is an **AutopilotHWID.csv** file in the **c:\HWID** directory that is about 8 KB in size.  This file contains the complete 4K HH.
-
-> [!NOTE]
-> Although the .csv extension might be associated with Microsoft Excel, you cannot view the file properly by double-clicking it. To correctly parse the comma delimiters and view the file in Excel, you must use the **Data** > **From Text/CSV** function in Excel to import the appropriate data columns. You don't need to view the file in Excel unless you are curious. The file format will be validated when it is imported into Autopilot. An example of the data in this file is shown below.
-
-![Serial number and hardware hash](images/hwid.png)
-
-You will need to upload this data into Intune to register your device for Autopilot, so the next step is to transfer this file to the computer you will use to access the Azure portal.  If you are using a physical device instead of a VM, you can copy the file to a USB stick.  If you’re using a VM, you can right-click the AutopilotHWID.csv file and copy it, then right-click and paste the file to your desktop (outside the VM).
-
-If you have trouble copying and pasting the file, just view the contents in Notepad on the VM and copy the text into Notepad outside the VM. Do not use another text editor to do this.
-
-> [!NOTE]
-> When copying and pasting to or from VMs, avoid clicking other things with your mouse cursor between the copy and paste process as this can empty or overwrite the clipboard and require that you start over. Go directly from copy to paste.
+   > [!NOTE]
+   > When copying and pasting to or from VMs, avoid clicking other things with your mouse cursor between the copy and paste process as this can empty or overwrite the clipboard and require that you start over. Go directly from copy to paste.
 
 ## Reset the VM back to Out-Of-Box-Experience (OOBE)
 
