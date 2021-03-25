@@ -27,7 +27,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event is generated when a user reconnects to an existing Terminal Services session, or when a user switches to an existing desktop using [Fast User Switching](https://docs.microsoft.com/windows-hardware/drivers/display/fast-user-switching).
+This event is generated when a user reconnects to an existing Terminal Services session, or when a user switches to an existing desktop using [Fast User Switching](/windows-hardware/drivers/display/fast-user-switching).
 
 This event also generates when user reconnects to virtual host Hyper-V Enhanced Session, for example.
 
@@ -140,4 +140,3 @@ For 4778(S): A session was reconnected to a Window Station.
 -   If a specific computer or device (**Client Name** or **Client Address**) should never connect to this computer (**Computer**), monitor for any event with that **Client Name** or **Client Address**.
 
 -   Check that **Additional Information\\Client Address** is from internal IP addresses list.
-

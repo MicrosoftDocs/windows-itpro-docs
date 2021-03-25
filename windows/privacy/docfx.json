@@ -55,7 +55,7 @@
         "jborsecnik",
         "tiburd",
         "garycentric"
-      ],
+      ]
     },
       "searchScope": ["Windows 10"]
 	},
@@ -63,5 +63,4 @@
     "template": [],
     "dest": "privacy",
     "markdownEngineName": "markdig"
-  }
 }

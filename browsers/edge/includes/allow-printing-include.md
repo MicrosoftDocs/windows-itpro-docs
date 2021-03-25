@@ -32,7 +32,7 @@ ms.topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowPrinting](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowprinting)
+- **MDM name:** Browser/[AllowPrinting](/windows/client-management/mdm/policy-csp-browser#browser-allowprinting)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowPrinting 
 - **Data type:** Integer

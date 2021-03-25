@@ -37,4 +37,4 @@ When AuthenticationMode is set to **Basic Auth**, enter a user name and password
 
 ## Related topics
 
-- [Device Portal for HoloLens](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens)
+- [Device Portal for HoloLens](/windows/uwp/debug-test-perf/device-portal-hololens)

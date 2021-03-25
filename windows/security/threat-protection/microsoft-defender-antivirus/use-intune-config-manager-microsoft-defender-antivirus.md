@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 If you were using Microsoft Endpoint Manager or Microsoft Intune to manage the endpoints on your network, you can now use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus scans.
 
@@ -42,7 +42,7 @@ If you were using Microsoft Endpoint Manager or Microsoft Intune to manage the e
 
 7. Choose **Review + save**
 
-Need help? See [Manage endpoint security in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-security).
+Need help? See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
 
 
 ## Related articles

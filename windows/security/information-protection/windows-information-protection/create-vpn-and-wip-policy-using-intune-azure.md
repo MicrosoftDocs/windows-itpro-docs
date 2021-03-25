@@ -30,7 +30,7 @@ Follow these steps to associate your WIP policy with your organization's existin
 
 **To associate your policies**
 
-1. Create your VPN profile. For info about how to do this, see [How to configure VPN settings in Microsoft Intune](https://docs.microsoft.com/intune-azure/configure-devices/how-to-configure-vpn-settings) and [How to create custom VPN profiles in Microsoft Intune](https://docs.microsoft.com/intune-azure/configure-devices/create-custom-vpn-profiles#create-a-custom-configuration).
+1. Create your VPN profile. For info about how to do this, see [How to configure VPN settings in Microsoft Intune](/intune-azure/configure-devices/how-to-configure-vpn-settings) and [How to create custom VPN profiles in Microsoft Intune](/intune-azure/configure-devices/create-custom-vpn-profiles#create-a-custom-configuration).
 
 2. Open the Microsoft Intune mobile application management console, click **Device configuration**, and then click **Create Profile**.
 

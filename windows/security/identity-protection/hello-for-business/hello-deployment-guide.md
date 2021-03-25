@@ -60,7 +60,7 @@ The trust model determines how you want users to authenticate to the on-premises
 - The certificate trust model also supports enterprises which are not ready to deploy Windows Server 2016 Domain Controllers.
 
 > [!NOTE]
-> RDP does not support authentication with Windows Hello for Business key trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/remote-credential-guard).
+> RDP does not support authentication with Windows Hello for Business key trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
 
 Following are the various deployment guides and models included in this topic:
 

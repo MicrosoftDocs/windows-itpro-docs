@@ -52,7 +52,7 @@ Credential Guard can protect secrets in a Hyper-V virtual machine, just as it wo
 
 For information about other host platforms, see [Enabling Windows Server 2016 and Hyper-V virtualization based security features on other platforms](https://blogs.technet.microsoft.com/windowsserver/2016/09/29/enabling-windows-server-2016-and-hyper-v-virtualization-based-security-features-on-other-platforms/).
 
-For information about Windows Defender Remote Credential Guard hardware and software requirements, see [Windows Defender Remote Credential Guard requirements](https://docs.microsoft.com/windows/access-protection/remote-credential-guard#hardware-and-software-requirements).
+For information about Windows Defender Remote Credential Guard hardware and software requirements, see [Windows Defender Remote Credential Guard requirements](/windows/access-protection/remote-credential-guard#hardware-and-software-requirements).
 
 ## Application requirements
 
@@ -91,7 +91,7 @@ The following tables describe baseline protections, plus protections for improve
 > [!NOTE]
 > Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new shipping computers.
 >
-> If you are an OEM, see [PC OEM requirements for Windows Defender Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).
+> If you are an OEM, see [PC OEM requirements for Windows Defender Credential Guard](/windows-hardware/design/device-experiences/oem-security-considerations).
 
 ### Baseline protections
 
@@ -99,7 +99,7 @@ The following tables describe baseline protections, plus protections for improve
 |---|---|---|
 |Hardware: **64-bit CPU**        |A 64-bit computer is required for the Windows hypervisor to provide VBS.|
 |Hardware: **CPU virtualization extensions**, plus **extended page tables**|**Requirements**: </br> - These hardware features are required for VBS: One of the following virtualization extensions: - VT-x (Intel) or - AMD-V And: - Extended page tables, also called Second Level Address Translation (SLAT).|VBS provides isolation of secure kernel from normal operating system. </br></br> Vulnerabilities and Day 0s in normal operating system cannot be exploited because of this isolation.|
-|Hardware: **Trusted Platform Module (TPM)**|**Requirement**: </br> - TPM 1.2 or TPM 2.0, either discrete or firmware. [TPM recommendations](https://technet.microsoft.com/itpro/windows/keep-secure/tpm-recommendations)|A TPM provides protection for VBS encryption keys that are stored in the firmware. TPM helps protect against attacks involving a physically present user with BIOS access.|
+|Hardware: **Trusted Platform Module (TPM)**|**Requirement**: </br> - TPM 1.2 or TPM 2.0, either discrete or firmware. [TPM recommendations](../../information-protection/tpm/tpm-recommendations.md)|A TPM provides protection for VBS encryption keys that are stored in the firmware. TPM helps protect against attacks involving a physically present user with BIOS access.|
 |Firmware: **UEFI firmware version 2.3.1.c or higher with UEFI Secure Boot**|**Requirements**: </br> - See the following Windows Hardware Compatibility Program requirement: System.Fundamentals.Firmware.UEFISecureBoot|UEFI Secure Boot helps ensure that the device boots only authorized code, and can prevent boot kits and root kits from installing and persisting across reboots.|
 |Firmware: **Secure firmware update process**|**Requirements**: </br> - UEFI firmware must support secure firmware update found under the following Windows Hardware Compatibility Program requirement: System.Fundamentals.Firmware.UEFISecureBoot.|UEFI firmware just like software can have security vulnerabilities that, when found, need to be patched through firmware updates. Patching helps prevent root kits from getting installed.|
 |Software: Qualified **Windows operating system**|**Requirement**: </br> - Windows 10 or Windows Server 2016.|Support for VBS and for management features that simplify configuration of Windows Defender Credential Guard.|
@@ -114,7 +114,7 @@ The following tables describe baseline protections, plus protections for improve
 
 |Protections for Improved Security|Description|
 |---|---|
-|Hardware: **IOMMU** (input/output memory management unit)|**Requirement**: </br> - VT-D or AMD Vi IOMMU </br> </br> **Security benefits**: </br> - An IOMMU can enhance system resiliency against memory attacks. For more information, see [Advanced Configuration and Power Interface (ACPI) description tables](https://msdn.microsoft.com/windows/hardware/drivers/bringup/acpi-system-description-tables)|
+|Hardware: **IOMMU** (input/output memory management unit)|**Requirement**: </br> - VT-D or AMD Vi IOMMU </br> </br> **Security benefits**: </br> - An IOMMU can enhance system resiliency against memory attacks. For more information, see [Advanced Configuration and Power Interface (ACPI) description tables](/windows-hardware/drivers/bringup/acpi-system-description-tables)|
 |Firmware: **Securing Boot Configuration and Management**|**Requirements**: </br> - BIOS password or stronger authentication must be supported. </br> - In the BIOS configuration, BIOS authentication must be set. </br> - There must be support for protected BIOS option to configure list of permitted boot devices (for example, “Boot only from internal hard drive”) and boot device order, overriding BOOTORDER modification made by operating system. </br> - In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.|
 |Firmware: **Secure MOR, revision 2 implementation**|**Requirement**: </br> - Secure MOR, revision 2 implementation|
 
@@ -125,7 +125,7 @@ The following tables describe baseline protections, plus protections for improve
 
 |Protections for Improved Security|Description|Security Benefits|
 |---|---|---|
-|Firmware: **Hardware Rooted Trust Platform Secure Boot**|**Requirements**: </br> - Boot Integrity (Platform Secure Boot) must be supported. See the Windows Hardware Compatibility Program requirements under System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby</br> - The Hardware Security Test Interface (HSTI) must be implemented. See [Hardware Security Testability Specification](https://msdn.microsoft.com/library/windows/hardware/mt712332(v=vs.85).aspx).|Boot Integrity (Platform Secure Boot) from Power-On provides protections against physically present attackers, and defense-in-depth against malware. </br> - HSTI provides additional security assurance for correctly secured silicon and platform.|
+|Firmware: **Hardware Rooted Trust Platform Secure Boot**|**Requirements**: </br> - Boot Integrity (Platform Secure Boot) must be supported. See the Windows Hardware Compatibility Program requirements under System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby</br> - The Hardware Security Test Interface (HSTI) must be implemented. See [Hardware Security Testability Specification](/windows-hardware/test/hlk/testref/hardware-security-testability-specification).|Boot Integrity (Platform Secure Boot) from Power-On provides protections against physically present attackers, and defense-in-depth against malware. </br> - HSTI provides additional security assurance for correctly secured silicon and platform.|
 |Firmware: **Firmware Update through Windows Update**|**Requirements**: </br> - Firmware must support field updates through Windows Update and UEFI encapsulation update.|Helps ensure that firmware updates are fast, secure, and reliable.|
 |Firmware: **Securing Boot Configuration and Management**|**Requirements**: </br> - Required BIOS capabilities: Ability of OEM to add ISV, OEM, or Enterprise Certificate in Secure Boot DB at manufacturing time. </br> - Required configurations: Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.|- Enterprises can choose to allow proprietary EFI drivers/applications to run. </br> - Removing Microsoft UEFI CA from Secure Boot DB provides full control to enterprises over software that runs before the operating system boots.|
 

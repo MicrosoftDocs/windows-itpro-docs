@@ -60,7 +60,7 @@ With NetworkService (if unable to obtain a user token from a signed-in user):
 
 ## Setting a device-wide Internet Explorer proxy
 
-You can set a device-wide proxy that will apply to all users including an interactive user, LocalSystem, and NetworkService by using the [Network Proxy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp).
+You can set a device-wide proxy that will apply to all users including an interactive user, LocalSystem, and NetworkService by using the [Network Proxy CSP](/windows/client-management/mdm/networkproxy-csp).
 
 Or, if you use Group Policy, you can apply proxy settings to all users of the same device by enabling the **Computer Configuration\ Administrative Templates\ Windows Components\ Internet Explorer\ Make proxy settings per-machine (rather than per-user)** policy.
 
@@ -70,10 +70,10 @@ This policy is meant to ensure that proxy settings apply uniformly to the same c
 
 Starting with Windows 10, version 2004, you can use Connected Cache behind a proxy. In older versions, when you set Delivery Optimization to download from Connected Cache, it will bypass the proxy and try to connect directly to the Connected Cache server. This can cause failure to download.
 
-However, you can set the Connected Cache server to use an unauthenticated proxy. For more information, see [Microsoft Connected Cache in Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#prerequisites-and-limitations). 
+However, you can set the Connected Cache server to use an unauthenticated proxy. For more information, see [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#prerequisites-and-limitations). 
 
  ## Related articles
 
-- [How can I configure Proxy AutoConfigURL Setting using Group Policy Preference (GPP)?](https://docs.microsoft.com/archive/blogs/askie/how-can-i-configure-proxy-autoconfigurl-setting-using-group-policy-preference-gpp) 
-- [How to use GPP Registry to uncheck automatically detect settings? ](https://docs.microsoft.com/archive/blogs/askie/how-to-use-gpp-registry-to-uncheck-automatically-detect-settings)
-- [How to configure a proxy server URL and Port using GPP Registry?](https://docs.microsoft.com/archive/blogs/askie/how-to-configure-a-proxy-server-url-and-port-using-gpp-registry) 
+- [How can I configure Proxy AutoConfigURL Setting using Group Policy Preference (GPP)?](/archive/blogs/askie/how-can-i-configure-proxy-autoconfigurl-setting-using-group-policy-preference-gpp) 
+- [How to use GPP Registry to uncheck automatically detect settings? ](/archive/blogs/askie/how-to-use-gpp-registry-to-uncheck-automatically-detect-settings)
+- [How to configure a proxy server URL and Port using GPP Registry?](/archive/blogs/askie/how-to-configure-a-proxy-server-url-and-port-using-gpp-registry)

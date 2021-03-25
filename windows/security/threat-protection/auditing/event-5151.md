@@ -21,7 +21,7 @@ ms.technology: mde
 -   Windows Server 2016
 
 
-This event is logged if a more restrictive Windows Filtering Platform [MAC filter](https://msdn.microsoft.com/library/windows/hardware/hh440262(v=vs.85).aspx) has blocked a packet.
+This event is logged if a more restrictive Windows Filtering Platform [MAC filter](/windows-hardware/drivers/network/using-layer-2-filtering) has blocked a packet.
 
 There is no example of this event in this document.
 
@@ -64,4 +64,3 @@ There is no example of this event in this document.
 ## Security Monitoring Recommendations
 
 -   There is no recommendation for this event in this document.
-

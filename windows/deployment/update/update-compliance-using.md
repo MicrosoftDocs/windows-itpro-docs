@@ -82,9 +82,9 @@ This means you should generally expect to see new data device data every 24 hour
 Update Compliance is built on the Log Analytics platform that is integrated into Operations Management Suite. All data in the workspace is the direct result of a query. Understanding the tools and features at your disposal, all integrated within Azure Portal, can deeply enhance your experience and complement Update Compliance. 
 
 See below for a few topics related to Log Analytics: 
-* Learn how to effectively execute custom Log Searches by referring to Microsoft Azure's excellent documentation on [querying data in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-searches).
-* To develop your own custom data views in Operations Management Suite or [Power BI](https://powerbi.microsoft.com/); check out documentation on [analyzing data for use in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-dashboards). 
-* [Gain an overview of Log Analytics' alerts](https://docs.microsoft.com/azure/log-analytics/log-analytics-alerts) and learn how to use it to always stay informed about the most critical issues you care about. 
+* Learn how to effectively execute custom Log Searches by referring to Microsoft Azure's excellent documentation on [querying data in Log Analytics](/azure/log-analytics/log-analytics-log-searches).
+* To develop your own custom data views in Operations Management Suite or [Power BI](https://powerbi.microsoft.com/); check out documentation on [analyzing data for use in Log Analytics](/azure/log-analytics/log-analytics-dashboards). 
+* [Gain an overview of Log Analytics' alerts](/azure/log-analytics/log-analytics-alerts) and learn how to use it to always stay informed about the most critical issues you care about. 
 
 ## Related topics
 

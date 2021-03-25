@@ -27,7 +27,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview of Windows Autopilot
-            url:  https://docs.microsoft.com/mem/autopilot/windows-autopilot
+            url:  /mem/autopilot/windows-autopilot
 
               # Card
   - title: Tutorials

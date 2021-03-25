@@ -34,7 +34,7 @@ Before you get started, be sure to review these best practices:
 **Best practices**
 
 - Test your code integrity policies on a pilot group of devices before deploying them to production.
-- Use rule options 9 and 10 during testing. For more information, see the section Code integrity policy rules in the [Deploy Windows Defender Application Control policy rules and file rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create).
+- Use rule options 9 and 10 during testing. For more information, see the section Code integrity policy rules in the [Deploy Windows Defender Application Control policy rules and file rules](./select-types-of-rules-to-create.md).
 
 **To sign a code integrity policy**
 

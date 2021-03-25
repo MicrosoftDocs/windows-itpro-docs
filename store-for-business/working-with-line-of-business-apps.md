@@ -26,7 +26,7 @@ Your company or school can make line-of-business (LOB) applications available th
 
 Developers within your organization, or ISVs that you invite, can become LOB publishers and submit apps to Microsoft Store for your company or school. Once an LOB publisher submits an app for your company, the app is only available to your company. LOB publishers submit apps through the Windows Dev Center using the same process as all apps that are in Microsoft Store, and then can be managed or deployed using the same process as any other app that has been acquired through Microsoft Store.
 
-One advantage of making apps available through Microsoft Store for Business is that the app has been signed by Microsoft Store, and uses the standard Microsoft Store policies. For organizations that can’t submit their application through the Windows Dev Center (for example, those needing additional capabilities or due to compliance purposes), [Sideloading](https://go.microsoft.com/fwlink/p/?LinkId=623433) is also supported on Windows 10.
+One advantage of making apps available through Microsoft Store for Business is that the app has been signed by Microsoft Store, and uses the standard Microsoft Store policies. For organizations that can’t submit their application through the Windows Dev Center (for example, those needing additional capabilities or due to compliance purposes), [Sideloading](/windows/application-management/sideload-apps-in-windows-10) is also supported on Windows 10.
 
 ## <a href="" id="adding-lob-apps"></a>Adding LOB apps to your private store
 
@@ -61,7 +61,7 @@ Admins need to invite developer or ISVs to become an LOB publisher.
 
 The developer receives an email invite to become an LOB publisher for your company. Once they accept the invite, they can log in to the Windows Dev Center to create an app submission for your company. The info here assumes that devs or ISVs have an active developer account.
 
-After an app is published and available in the Store, ISVs publish an updated version by creating another submission in their dashboard. Creating a new submission allows the ISV to make the changes required to create a LOB app for your company. To learn more about updates to an app submission, see [App submissions](https://go.microsoft.com/fwlink/p/?LinkId=623463) and [Distributing LOB apps to enterprises](https://go.microsoft.com/fwlink/p/?LinkId=627543).
+After an app is published and available in the Store, ISVs publish an updated version by creating another submission in their dashboard. Creating a new submission allows the ISV to make the changes required to create a LOB app for your company. To learn more about updates to an app submission, see [App submissions](/windows/uwp/publish/app-submissions) and [Distributing LOB apps to enterprises](/windows/uwp/publish/distribute-lob-apps-to-enterprises).
 
 **To create a new submission for an app**
 
@@ -70,7 +70,7 @@ After an app is published and available in the Store, ISVs publish an updated ve
 
     -OR-
 
-    Submit your app following the guidelines in [App submissions](https://go.microsoft.com/fwlink/p/?LinkId=623463). Be sure to completed steps 3 and 4 when you set app pricing and availability options.
+    Submit your app following the guidelines in [App submissions](/windows/uwp/publish/app-submissions). Be sure to completed steps 3 and 4 when you set app pricing and availability options.
 
 3.  On the **Pricing and availability** page, under **Distribution and visibility**, click **Line-of-business (LOB) distribution**, and then choose the enterprise(s) who will get the LOB app. No one else will have access to the app.
 4.  Under **Organizational licensing**, click **Show options**.
@@ -83,10 +83,10 @@ After an app is published and available in the Store, ISVs publish an updated ve
 
 5.  Click **Save** to save your changes and start the app submission process.
 
-For more information, see [Organizational licensing options]( https://go.microsoft.com/fwlink/p/?LinkId=708615) and [Distributing LOB apps to enterprises](https://go.microsoft.com/fwlink/p/?LinkId=627543).<br>
+For more information, see [Organizational licensing options]( https://go.microsoft.com/fwlink/p/?LinkId=708615) and [Distributing LOB apps to enterprises](/windows/uwp/publish/distribute-lob-apps-to-enterprises).<br>
  
  >[!Note]
- > In order to get the LOB app, the organization must be located in a [supported market](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-overview#supported-markets), and you must not have excluded that market when submitting your app.
+ > In order to get the LOB app, the organization must be located in a [supported market](./microsoft-store-for-business-overview.md#supported-markets), and you must not have excluded that market when submitting your app.
 
 ## <a href="" id="add-lob-app-to-inventory"></a>Add app to inventory (admin)
 
