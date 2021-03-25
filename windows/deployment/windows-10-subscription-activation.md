@@ -23,7 +23,7 @@ Starting with Windows 10, version 1703 Windows 10 Pro supports the Subscription 
 
 With Windows 10, version 1903 the Subscription Activation feature also supports the ability to step-up from Windows 10 Pro Education to the Enterprise grade edition for educational institutions—**Windows 10 Education**.
 
-The Subscription Activation feature eliminates the need to manually deploy Windows 10 Enterprise or Education images on each target device, then later standing up on-prem key management services such as KMS or MAK based activation, entering GVLKs, and subsequently rebooting client devices.
+The Subscription Activation feature eliminates the need to manually deploy Windows 10 Enterprise or Education images on each target device, then later standing up on-prem key management services such as KMS or MAK based activation, entering Generic Volume License Keys (GVLKs), and subsequently rebooting client devices.
 
 ## Subscription Activation for Windows 10 Enterprise
 
@@ -91,7 +91,7 @@ The following figure illustrates how deploying Windows 10 has evolved with each 
 > The following requirements do not apply to general Windows 10 activation on Azure. Azure activation requires a connection to Azure KMS only, and supports workgroup, Hybrid, and Azure AD-joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/troubleshooting/troubleshoot-activation-problems#understanding-azure-kms-endpoints-for-windows-product-activation-of-azure-virtual-machines).
 
 > [!NOTE]
-> Currently, Subscription Activation is only available on commercial tenants and is not currently available on US GCC or GCC High tenants.
+> Currently, Subscription Activation is only available on commercial tenants and is currently not available on US GCC, GCC High, or DoD tenants.
 
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following:
 
@@ -215,7 +215,7 @@ If you’re running Windows 7, it can be more work.  A wipe-and-load approach w
 The following policies apply to acquisition and renewal of licenses on devices:
 - Devices that have been upgraded will attempt to renew licenses about every 30 days, and must be connected to the Internet to successfully acquire or renew a license.
 - If a device is disconnected from the Internet until its current subscription expires, the operating system will revert to Windows 10 Pro or Windows 10 Pro Education. As soon as the device is connected to the Internet again, the license will automatically renew.
-- Up to five devices can be upgraded for each user license.
+- Up to five devices can be upgraded for each user license. If the user license is used for a sixth device, the operating system on the computer to which a user has not logged in the longest will revert to Windows 10 Pro or Windows 10 Pro Education.
 - If a device meets the requirements and a licensed user signs in on that device, it will be upgraded.
 
 Licenses can be reallocated from one user to another user, allowing you to optimize your licensing investment against changing needs.
