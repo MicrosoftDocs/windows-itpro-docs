@@ -13,7 +13,7 @@ ms.date: 09/10/2020
 
 # ApplicationControl CSP
 
-Windows Defender Application Control (WDAC) policies can be managed from an MDM server or locally using PowerShell via the WMI Bridge through the ApplicationControl configuration service provider (CSP). The ApplicationControl CSP was added in Windows 10, version 1903. This CSP provides expanded diagnostic capabilities and support for [multiple policies](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike the [AppLocker CSP](applocker-csp.md), the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently does not schedule a reboot.
+Windows Defender Application Control (WDAC) policies can be managed from an MDM server or locally using PowerShell via the WMI Bridge through the ApplicationControl configuration service provider (CSP). The ApplicationControl CSP was added in Windows 10, version 1903. This CSP provides expanded diagnostic capabilities and support for [multiple policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike the [AppLocker CSP](applocker-csp.md), the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently does not schedule a reboot.
 Existing WDAC policies deployed using the AppLocker CSP's CodeIntegrity node can now be deployed using the ApplicationControl CSP URI. Although WDAC policy deployment via the AppLocker CSP will continue to be supported, all new feature work will be done in the ApplicationControl CSP only.
 
 The following shows the ApplicationControl CSP in tree format.
@@ -140,7 +140,7 @@ Value type is char.
 
 ## Microsoft Endpoint Manager (MEM) Intune Usage Guidance  
 
-For customers using Intune standalone or hybrid management with Configuration Manager (MEMCM) to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune).
+For customers using Intune standalone or hybrid management with Configuration Manager (MEMCM) to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune).
 
 ## Generic MDM Server Usage Guidance
 
@@ -289,7 +289,7 @@ The following is an example of Delete command:
 
 ## PowerShell and WMI Bridge Usage Guidance
 
-The ApplicationControl CSP can also be managed locally from PowerShell or via Microsoft Endpoint Manager Configuration Manager's (MEMCM, formerly known as SCCM) task sequence scripting by leveraging the [WMI Bridge Provider](https://docs.microsoft.com/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
+The ApplicationControl CSP can also be managed locally from PowerShell or via Microsoft Endpoint Manager Configuration Manager's (MEMCM, formerly known as SCCM) task sequence scripting by leveraging the [WMI Bridge Provider](./using-powershell-scripting-with-the-wmi-bridge-provider.md).
 
 ### Setup for using the WMI Bridge
 

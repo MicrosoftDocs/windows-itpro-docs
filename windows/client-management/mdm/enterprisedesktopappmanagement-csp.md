@@ -541,7 +541,7 @@ Properties can be specified in the package, passed through the command line, mod
 
 Here's a list of references:
 
--   [Using Windows Installer](https://technet.microsoft.com/library/cc782896.aspx)
+-   [Using Windows Installer](/previous-versions/windows/it-pro/windows-server-2003/cc782896(v=ws.10))
 -   [Authoring a single package for Per-User or Per-Machine Installation context in Windows 7](https://blogs.msdn.com/b/windows_installer_team/archive/2009/09/02/authoring-a-single-package-for-per-user-or-per-machine-installation-context-in-windows-7.aspx)
 -   SyncML Representation Protocol, Draft Version 1.3 - 27 Aug 2009 (OMA-TS-SyncML\_RepPro-V1\_3-20090827-D)
 
@@ -567,11 +567,4 @@ Here's a list of references:
 ```
 
  
-
- 
-
-
-
-
-
 

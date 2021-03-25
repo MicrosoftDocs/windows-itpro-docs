@@ -17,7 +17,7 @@ manager: dansimp
 
 
 > [!NOTE]
-> To manage encryption of PCs and devices, use [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
+> To manage encryption of PCs and devices, use [BitLocker CSP](./bitlocker-csp.md).
 
 <hr/>
 
@@ -107,4 +107,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-
