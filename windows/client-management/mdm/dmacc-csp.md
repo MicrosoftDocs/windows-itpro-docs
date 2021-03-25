@@ -23,10 +23,46 @@ The DMAcc configuration service provider allows an OMA Device Management (DM) ve
 
 For the DMAcc CSP, you cannot use the Replace command unless the node already exists.
 
-The following diagram shows the DMAcc configuration service provider management object in tree format as used by OMA Device Management version 1.2. The OMA Client Provisioning protocol is not supported by this configuration service provider.
+The following shows the DMAcc configuration service provider management object in tree format as used by OMA Device Management version 1.2. The OMA Client Provisioning protocol is not supported by this configuration service provider.
 
-![dmacc csp (dm)](images/provisioning-csp-dmacc-dm.png)
-
+```
+./SyncML
+DMAcc
+----*
+--------AppID
+--------ServerID
+--------Name
+--------PrefConRef
+--------AppAddr
+------------*
+----------------Addr
+----------------AddrType
+----------------Port
+--------------------*
+------------------------PortNbr
+--------AAuthPref
+--------AppAuth
+------------*
+----------------AAuthLevel
+----------------AAuthType
+----------------AAuthName
+----------------AAuthSecret
+----------------AAuthData
+--------Ext
+------------Microsoft
+----------------Role
+----------------ProtoVer
+----------------DefaultEncoding
+----------------UseHwDevID
+----------------ConnRetryFreq
+----------------InitialBackOffTime
+----------------MaxBackOffTime
+----------------BackCompatRetryDisabled
+----------------UseNonceResync
+----------------CRLCheck
+----------------DisableOnRoaming
+----------------SSLCLIENTCERTSEARCHCRITERIA
+```
 <a href="" id="dmacc"></a>**DMAcc**  
 Required. Defines the root node of all OMA DM server accounts that use the OMA DM version 1.2 protocol.
 

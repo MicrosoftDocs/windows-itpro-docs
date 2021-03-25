@@ -35,7 +35,9 @@ Any one of the following factors might cause the stop error:
 
 * In unusual cases, the failure of the TrustedInstaller service to commit newly installed updates is because of component-based store corruptions
 
-* Corrupted files in the **Boot**  partition (for example, corruption in the volume that's labeled **SYSTEM**  when you run the `diskpart`  > `list vol`  command)
+* Corrupted files in the **Boot** partition (for example, corruption in the volume that's labeled **SYSTEM** when you run the `diskpart` > `list vol` command)
+
+* If there is a blank GPT entry before the entry of the **Boot** partition
 
 ## Troubleshoot this error
 
@@ -98,15 +100,17 @@ To verify the BCD entries:
  
    If the computer is UEFI-based, here's example output:
     
-   ```cmd
+   ```console
    device                  partition=\Device\HarddiskVolume2
    path                    \EFI\Microsoft\Boot\bootmgfw.efi
    ```
 
    If the machine is BIOS-based, here's example output:
-   ```cmd
+
+   ```console
    Device                partition=C:
    ```
+
    >[!NOTE]
    >This output might not contain a path.
 
@@ -121,7 +125,9 @@ If any of the information is wrong or missing, we recommend that you create a ba
 
 After the backup completes, run the following command to make the changes:
 
-<pre>bcdedit /set *{identifier}* option value</pre>
+```console
+bcdedit /set *{identifier}* option value
+```
 
 For example, if the device under {default} is wrong or missing, run this command to set it: `bcdedit /set {default} device partition=C:`
 
@@ -133,20 +139,20 @@ If the files are missing, and you want to rebuild the boot files, follow these s
 
 1. Copy all the contents under the **SYSTEM** partition to another location. Alternatively, you can use the command prompt to navigate to the OS drive, create a new folder, and then copy all the files and folders from the **SYSTEM**  volume, like shown here:
 
-   ```cmd
+   ```console
    D:\> Mkdir  BootBackup
    R:\> Copy *.* D:\BootBackup 
    ```
 
 2. If you're using Windows 10, or if you're troubleshooting by using a Windows 10 ISO at the Windows Pre-Installation Environment command prompt, you can use the **bcdboot** command to re-create the boot files, like shown here:
 
-   ```cmd
+   ```console
    Bcdboot <**OSDrive* >:\windows /s <**SYSTEMdrive* >: /f ALL
    ```
 
    For example, if we assign the `<System Drive>` (WinRE drive) the letter R and the `<OSdrive>` is the letter D, the following is the command that we would use:
 
-   ```cmd
+   ```console
    Bcdboot D:\windows /s R: /f ALL
    ```
 
@@ -167,7 +173,7 @@ If you don't have a Windows 10 ISO, format the partition and copy **bootmgr** fr
 
 Run the following command to verify the Windows update installation and dates:
 
-```cmd
+```console
 Dism /Image:<Specify the OS drive>: /Get-packages
 ```
 
@@ -193,7 +199,8 @@ After you run this command, you'll see the **Install pending** and **Uninstall P
 
 7. Unload the hive. To do this, highlight **OfflineComponentHive**, and then select **File** > **Unload hive**.
 
-    ![Unload Hive](images/unloadhive.png)![Unload Hive](images/unloadhive1.png)
+   > [!div class="mx-imgBorder"]
+   > ![Unload Hive](images/unloadhive.png)![Unload Hive](images/unloadhive1.png)
 
 8. Select **HKEY_LOCAL_MACHINE**, go to **File** > **Load Hive**, navigate to ***OSdriveLetter*:\Windows\System32\config**, select the file that's named **SYSTEM** (with no extension), and then select **Open**. When you're prompted, enter the name **OfflineSystemHive** for the new hive.
 
@@ -213,27 +220,22 @@ After you run this command, you'll see the **Install pending** and **Uninstall P
 
 3. Make sure that the following registry keys exist under **Services**: 
 
-    * ACPI
+   * ACPI
+   * DISK
+   *	VOLMGR
+   *	PARTMGR
+   *	VOLSNAP
+   *	VOLUME
 
-    * DISK
-    
-    *	VOLMGR
-    
-    *	PARTMGR
-    
-    *	VOLSNAP
-    
-    *	VOLUME
+   If these keys exist, check each one to make sure that it has a value that's named **Start**, and that it's set to **0**. If it's not, set the value to **0**.
 
-If these keys exist, check each one to make sure that it has a value that's named **Start**, and that it's set to **0**. If it's not, set the value to **0**.
+   If any of these keys don't exist, you can try to replace the current registry hive by using the hive from **RegBack**. To do this, run the following commands:
 
-If any of these keys don't exist, you can try to replace the current registry hive by using the hive from **RegBack**. To do this, run the following commands:
-
-```cmd
-cd OSdrive:\Windows\System32\config
-ren SYSTEM SYSTEM.old
-copy OSdrive:\Windows\System32\config\RegBack\SYSTEM OSdrive:\Windows\System32\config\
-```
+   ```console
+   cd OSdrive:\Windows\System32\config
+   ren SYSTEM SYSTEM.old
+   copy OSdrive:\Windows\System32\config\RegBack\SYSTEM OSdrive:\Windows\System32\config\
+   ```
 
 #### Check upper and lower filter drivers
 
@@ -248,25 +250,23 @@ Check whether there are any non-Microsoft upper and lower filter drivers on the 
    
    You might find these filter drivers in some of the following registry entries. These entries are under **ControlSet**  and are designated as **Default**:
 
-\Control\Class\\{4D36E96A-E325-11CE-BFC1-08002BE10318} 
+   \Control\Class\\{4D36E96A-E325-11CE-BFC1-08002BE10318} 
+   \Control\Class\\{4D36E967-E325-11CE-BFC1-08002BE10318} 
+   \Control\Class\\{4D36E97B-E325-11CE-BFC1-08002BE10318} 
+   \Control\Class\\{71A27CDD-812A-11D0-BEC7-08002BE2092F}
 
-\Control\Class\\{4D36E967-E325-11CE-BFC1-08002BE10318} 
+   > [!div class="mx-imgBorder"]
+   > ![Registry](images/controlset.png) 
 
-\Control\Class\\{4D36E97B-E325-11CE-BFC1-08002BE10318} 
+   If an **UpperFilters**  or **LowerFilters**  entry is non-standard (for example, it's not a Windows default filter driver, such as PartMgr), remove the entry. To remove it, double-click it in the right pane, and then delete only that value.
 
-\Control\Class\\{71A27CDD-812A-11D0-BEC7-08002BE2092F}
+   >[!NOTE]
+   >There could be multiple entries.
 
-![Registry](images/controlset.png) 
+   These entries might affect us because there might be an entry in the **Services** branch that has a START type set to 0 or 1, which means that it's loaded at the Boot or Automatic part of the boot process. Also, either the file that's referred to is missing or corrupted, or it might be named differently than what's listed in the entry. 
 
-If an **UpperFilters**  or **LowerFilters**  entry is non-standard (for example, it's not a Windows default filter driver, such as PartMgr), remove the entry. To remove it, double-click it in the right pane, and then delete only that value.
-
->[!NOTE]
->There could be multiple entries.
-
-These entries might affect us because there might be an entry in the **Services** branch that has a START type set to 0 or 1, which means that it's loaded at the Boot or Automatic part of the boot process. Also, either the file that's referred to is missing or corrupted, or it might be named differently than what's listed in the entry. 
-
->[!NOTE]
->If there's a service that's set to **0** or **1** that corresponds to an **UpperFilters** or **LowerFilters** entry, setting the service to disabled in the **Services** registry (as discussed in steps 2 and 3 of the Check services section) without removing the **Filter Driver** entry causes the computer to crash and generate a 0x7b Stop error.
+   >[!NOTE]
+   >If there's a service that's set to **0** or **1** that corresponds to an **UpperFilters** or **LowerFilters** entry, setting the service to disabled in the **Services** registry (as discussed in steps 2 and 3 of the Check services section) without removing the **Filter Driver** entry causes the computer to crash and generate a 0x7b Stop error.
 
 ### Running SFC and Chkdsk
 

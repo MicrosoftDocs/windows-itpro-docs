@@ -298,7 +298,13 @@ Sign-in the domain controller or administrative workstation with domain administ
 3. In the navigation pane, select the node that has the name of your internal Active Directory domain name.
 4. In the navigation pane, right-click the domain name node and click **New Host (A or AAAA)**.
 5. In the **name** box, type the name of the federation service. In the **IP address** box, type the IP address of your federation server. Click **Add Host**. 
-6. Close the DNS Management console 
+6. Right-click the `domain_name` node and select **New Alias (CNAME)**.
+7. In the **New Resource Record** dialog box, type "enterpriseregistration" in the **Alias** name box.
+8. In the **fully qualified domain name (FQDN)** of the target host box, type `federation_service_farm_name.domain_name.com`, and click OK.
+9. Close the DNS Management console.
+
+> [!NOTE]
+> If your forest has multiple UPN suffixes, please make sure that `enterpriseregistration.upnsuffix.com` is present for each suffix.
 
 ## Configure the Intranet Zone to include the federation service
 
@@ -342,5 +348,3 @@ Before you continue with the deployment, validate your deployment progress by re
 3. Prepare and Deploy Windows Server 2016 Active Directory Federation Services (*You are here*)
 4. [Validate and Deploy Multifactor Authentication Services (MFA)](hello-key-trust-validate-deploy-mfa.md)
 5. [Configure Windows Hello for Business Policy settings](hello-key-trust-policy-settings.md)
-
-
