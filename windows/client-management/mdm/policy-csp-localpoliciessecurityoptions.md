@@ -165,7 +165,7 @@ manager: dansimp
 <hr/>
 
 > [!NOTE]
-> To find data formats (and other policy-related details), see [Policy DDF file](https://docs.microsoft.com/windows/client-management/mdm/policy-ddf-file). 
+> To find data formats (and other policy-related details), see [Policy DDF file](./policy-ddf-file.md). 
 
 <!--Policy-->
 <a href="" id="localpoliciessecurityoptions-accounts-blockmicrosoftaccounts"></a>**LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts**  

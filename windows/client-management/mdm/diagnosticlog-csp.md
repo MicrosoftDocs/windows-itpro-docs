@@ -814,7 +814,7 @@ The Event Tracing for Windows (ETW) log feature of the DiagnosticLog CSP is used
 - [Collector-based tracing](#collector-based-tracing)
 - [Channel-based tracing](#channel-based-tracing)
 
-The ETW log feature is designed for advanced usage, and assumes developers' familiarity with ETW. For more information, see [About Event Tracing](https://docs.microsoft.com/windows/win32/etw/about-event-tracing).
+The ETW log feature is designed for advanced usage, and assumes developers' familiarity with ETW. For more information, see [About Event Tracing](/windows/win32/etw/about-event-tracing).
 
 ### Collector-based tracing
 

@@ -84,7 +84,7 @@ If you enable this policy setting, SSL cipher suites are prioritized in the orde
 
 If you disable or do not configure this policy setting, default cipher suite order is used.
 
-For information about supported cipher suites, see [Cipher Suites in TLS/SSL (Schannel SSP)](https://go.microsoft.com/fwlink/?LinkId=517265).
+For information about supported cipher suites, see [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/win32/secauthn/cipher-suites-in-schannel).
 
 <!--/Description-->
 > [!TIP]
@@ -201,4 +201,3 @@ Footnotes:
 - 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
-
