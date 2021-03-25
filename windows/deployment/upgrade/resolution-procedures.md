@@ -345,3 +345,5 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 - [Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 - [Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/home?category=Windows10ITPro)
 - [Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+- [Win 7 to Win 10 upgrade error (0x800707E7 - 0x3000D)](https://answers.microsoft.com/en-us/windows/forum/all/win-7-to-win-10-upgrade-error-0x800707e7-0x3000d/1273bc1e-8a04-44d4-a6b2-808c9feeb020))
+- [Win 10 upgrade error: User profile suffix mismatch, 0x800707E7 - 0x3000D](https://answers.microsoft.com/en-us/windows/forum/windows_10-windows_install/win-10-upgrade-error-user-profile-suffix-mismatch/0f006733-2af5-4b42-a2d4-863fad05273d?page=3)
