@@ -31,6 +31,7 @@ Settings that were previously part of the Windows Defender client and main Windo
 
 > [!IMPORTANT]
 > Disabling the Windows Security Center service does not disable Microsoft Defender Antivirus or [Windows Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). These are disabled automatically when a third-party antivirus or firewall product is installed and kept up to date.
+>
 > If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Security app might display stale or inaccurate information about any antivirus or firewall products you have installed on the device.
 > It might also prevent Microsoft Defender Antivirus from enabling itself if you have an old or outdated third-party antivirus, or if you uninstall any third-party antivirus products you might have previously installed.
 > This will significantly lower the protection of your device and could lead to malware infection.
@@ -44,6 +45,7 @@ The Windows Security app is a client interface on Windows 10, version 1703 and l
 ![Screenshot of the Virus & threat protection settings label in the Windows Security app](https://user-images.githubusercontent.com/3296790/112323856-2ebe9a80-8cd8-11eb-8eee-b7a7b6743433.png)
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
    
 ## Comparison of settings and functions of the old app and the new app
@@ -54,7 +56,8 @@ The following diagrams compare the location of settings and functions between th
 
 ![Version of Windows Defender in Windows 10 before version 1703](images/defender/wdav-windows-defender-app-old.png)
 
-![Microsoft Defender Antivirus in Windows 10, version 1703 and later](images/defender/wdav-wdsc.png)
+> [!div class="mx-imgBorder"]
+> ![Microsoft Defender Antivirus in Windows 10, version 1703 and later](images/defender/wdav-wdsc.png)
 
 | Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | Description |
 |:---|:---|:---|:---|
@@ -76,8 +79,11 @@ This section describes how to perform some of the most common tasks when reviewi
 ### Run a scan with the Windows Security app
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
 3. Select **Scan now**.
+
 4. Select **Run a new advanced scan** to specify different types of scans, such as a full scan.
 
 <a id="definition-version"></a>
@@ -87,15 +93,21 @@ This section describes how to perform some of the most common tasks when reviewi
 ![Security intelligence version number information](https://user-images.githubusercontent.com/3296790/112323920-3f6f1080-8cd8-11eb-90e4-2e2404090e4f.png)
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
 3. Select **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check this against the latest version available for manual download, or review the change log for that version.
+
 4. Select **Check for updates** to download new protection updates (if there are any).
 
 ### Ensure Microsoft Defender Antivirus is enabled in the Windows Security app
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
 3. Select **Virus & threat protection settings**.
+
 4. Toggle the **Real-time protection** switch to **On**.
 
     > [!NOTE]
@@ -107,10 +119,15 @@ This section describes how to perform some of the most common tasks when reviewi
 ### Add exclusions for Microsoft Defender Antivirus in the Windows Security app
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
 3. Under the **Manage settings**, select **Virus & threat protection settings**.
+
 4. Under the **Exclusions** setting, select **Add or remove exclusions**. 
+
 5. Select the plus icon (**+**) to choose the type and set the options for each exclusion. 
+
 <a id="detection-history"></a>
 
 The following table summarizes exclusion types and what happens:
@@ -129,8 +146,11 @@ To learn more, see the following resources:
 ### Review threat detection history in the Windows Defender Security Center app
 
 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
 3. Select **Threat history**
+
 4. Select **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
 
 <a id="ransomware"></a>
@@ -138,9 +158,13 @@ To learn more, see the following resources:
 ### Set ransomware protection and recovery options
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
 3. Select **Ransomware protection**.
-4. To change Controlled folder access settings, see [Protect important folders with Controlled folder access](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders?view=o365-worldwide).
+
+4. To change Controlled folder access settings, see [Protect important folders with Controlled folder access](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders).
+
 5. To set up ransomware recovery options, select **Set up** under **Ransomware data recovery** and follow the instructions for linking or setting up your OneDrive account so you can easily recover from a ransomware attack.
 
 ## See also
