@@ -82,7 +82,7 @@ The certificate template is configured to supersede all the certificate template
 
 > [!NOTE]
 > A domain controller's certificate must chain to a certificate in the NTAuth store in Active Directory. By default, online "Enterprise" Active Directory Certificate Authority certificates are added to the NTAuth store at installation time. If you are using a third-party CA, this is not done by default. If the domain controller certificate does not chain to a trusted CA in the NTAuth store, user authentication will fail. 
-> You can view an AD forest's NTAuth store (NTAuthCertificates) using PKIVIEW.MSC from an ADCS CA. Open PKIView.msc, then click the Action menu -> Manage AD Containers. To see all certificates in the NTAuth store run **Certutil -viewstore -enterprise NTAuth**
+> You can view an AD forest's NTAuth store (NTAuthCertificates) using PKIVIEW.MSC from an ADCS CA. Open PKIView.msc, then click the Action menu -> Manage AD Containers. To see all certificates in the NTAuth store, run **Certutil -viewstore -enterprise NTAuth** from the command-line interface (Cmd.exe).
 
 ### Publish Certificate Templates to a Certificate Authority
 
