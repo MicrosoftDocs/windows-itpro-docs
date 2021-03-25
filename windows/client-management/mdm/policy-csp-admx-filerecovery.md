@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nimisha
+author: manikadhiman
 ms.date: 03/25/2021
 ms.reviewer: 
 manager: dansimp
