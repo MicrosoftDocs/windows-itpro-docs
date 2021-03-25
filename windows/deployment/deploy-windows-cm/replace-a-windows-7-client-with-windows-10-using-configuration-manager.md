@@ -32,7 +32,7 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
 
 For the purposes of this article, we will use one server computer (CM01) and two client computers (PC0004, PC0006).
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
-  - Important: CM01 must include the **[State migration point](https://docs.microsoft.com/configmgr/osd/get-started/manage-user-state#BKMK_StateMigrationPoint)** role for the replace task sequence used in this article to work. 
+  - Important: CM01 must include the **[State migration point](/configmgr/osd/get-started/manage-user-state#BKMK_StateMigrationPoint)** role for the replace task sequence used in this article to work. 
 - PC0004 is a domain member client computer running Windows 7 SP1, or a later version of Windows, with the Configuration Manager client installed, that will be replaced.
 - PC0006 is a domain member client computer running Windows 10, with the Configuration Manager client installed, that will replace PC0004.
 
@@ -210,6 +210,6 @@ Next, see [Perform an in-place upgrade to Windows 10 using Configuration Manager
 [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
 [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
 [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Create a task sequence with Configuration Manager and MDT](./create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
 [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
 [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>

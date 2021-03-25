@@ -36,7 +36,7 @@ Windows Update for Business in Windows 10 version 1511 allows you to delay quali
 To use Intune to manage quality and feature updates in your environment, you must first create computer groups that align with your constructed deployment rings. 
 
 >[!NOTE]
->Coming soon: [Intune Groups will be converted to Azure Active Directory-based Security Groups](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)
+>Coming soon: [Intune Groups will be converted to Azure Active Directory-based Security Groups](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)
 
 ## Configure Windows Update for Business in Windows 10, version 1511
 
@@ -67,7 +67,7 @@ In this example, you use two security groups to manage your updates: **Ring 4 Br
 7. In the **Value** box, type **1**, and then click **OK**.
 
     >[!NOTE]
-    >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) for the proper syntax.
+    >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) for the proper syntax.
 
     ![Settings for the RequireDeferUpgrade policy](images/waas-wufb-intune-step7a.png)
     
@@ -154,7 +154,7 @@ In this example, you use three security groups from Table 1 in [Build deployment
 7. In the **Value** box, type **0**, and then click **OK**.
 
     >[!NOTE]
-    >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) for the proper syntax.
+    >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) for the proper syntax.
 
     ![Settings for the BranchReadinessLevel policy](images/waas-wufb-intune-cb2a.png)
     
@@ -194,7 +194,7 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
 7. In the **Value** box, type **1**, and then click **OK**.
 
     >[!NOTE]
-    >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) for the proper syntax.
+    >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) for the proper syntax.
 
     
 8. Because the **Ring 4 Broad business users** deployment ring receives the CBB feature updates immediately, in the **OMA-URI Settings** section, click **Add** to add another OMA-URI setting. 
@@ -236,7 +236,7 @@ You have now configured the **Ring 4 Broad business users** deployment ring to r
 7. In the **Value** box, type **1**, and then click **OK**.
 
     >[!NOTE]
-    >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) for the proper syntax.
+    >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) for the proper syntax.
 
     
 8. In the **OMA-URI Settings** section, click **Add** to add another OMA-URI setting. 
@@ -281,13 +281,5 @@ You have now configured the **Ring 4 Broad business users** deployment ring to r
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
-- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service)
 - [Manage device restarts after updates](waas-restart.md)
-
-
-
-
-
-
-
-

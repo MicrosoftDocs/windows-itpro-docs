@@ -29,7 +29,7 @@ ms.technology: mde
 
 This event generates every time an Active Directory object is created.
 
-This event only generates if the parent object has a particular entry in its [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx): the “**Create**” action, auditing for specific classes or objects. An example is the “**Create Computer objects**” action auditing for the organizational unit.
+This event only generates if the parent object has a particular entry in its [SACL](/windows/win32/secauthz/access-control-lists): the “**Create**” action, auditing for specific classes or objects. An example is the “**Create Computer objects**” action auditing for the organizational unit.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -187,4 +187,3 @@ For 5137(S): A directory service object was created.
 -   If you need to monitor creation of Active Directory objects with specific classes, monitor for **Class** field with specific class name. For example, we recommend that you monitor all new group policy objects creations: **groupPolicyContainer** class.
 
 -   You must set correct auditing access lists (SACLs) for specific classes within Active Directory container to get [5137](event-5137.md). There is no reason to audit all creation events for all types of Active Directory objects; find the most important locations (organizational units, folders, etc.) and monitor for creation of specific classes only (user, computer, group, etc.).
-

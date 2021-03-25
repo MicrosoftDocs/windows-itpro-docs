@@ -27,4 +27,4 @@ Here you will find information about different types of malware, safety tips on 
 
 Keep up with the latest malware news and research. Check out our [Microsoft Security blogs](https://www.microsoft.com/security/blog/product/windows/) and follow us on [Twitter](https://twitter.com/wdsecurity) for the latest news, discoveries, and protections.
 
-Learn more about [Windows security](https://docs.microsoft.com/windows/security/index).
+Learn more about [Windows security](../../index.yml).

@@ -48,7 +48,7 @@ When you want to add an unsigned app to a code integrity policy, you need to sta
 - [Catalog signing with Device Guard signing portal](#catalog-signing-device-guard-portal)
 
 ## <a href="" id="create-ci-policy"></a>Create a code integrity policy based on a reference device
-To add an unsigned app to a code integrity policy, your code integrity policy must be created from golden image machine. For more information, see [Create a Device Guard code integrity policy based on a reference device](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+To add an unsigned app to a code integrity policy, your code integrity policy must be created from golden image machine. For more information, see [Create a Device Guard code integrity policy based on a reference device](/windows/device-security/device-guard/device-guard-deployment-guide).
 
 ## <a href="" id="create-catalog-files"></a>Create catalog files for your unsigned app
 Creating catalog files starts the process for adding an unsigned app to a code integrity policy.
@@ -62,7 +62,7 @@ Before you get started, be sure to review these best practices and requirements:
 
 **Best practices**
 
-- **Naming convention** -- Using a naming convention makes it easier to find deployed catalog files. We'll use \*-Contoso.cat as the naming convention in this topic. For more information, see the section Inventorying catalog files by using Microsoft Endpoint Manager in the [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+- **Naming convention** -- Using a naming convention makes it easier to find deployed catalog files. We'll use \*-Contoso.cat as the naming convention in this topic. For more information, see the section Inventorying catalog files by using Microsoft Endpoint Manager in the [Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
 - **Where to deploy code integrity policy** -- The [code integrity policy that you created](#create-ci-policy) should be deployed to the system on which you are running Package Inspector. This will ensure that the code integrity policy binaries are trusted.
 
 Copy the commands for each step into an elevated Windows PowerShell session. You'll use Package Inspector to find and trust all binaries in the app.
@@ -114,7 +114,7 @@ Catalog signing is a vital step to adding your unsigned apps to your code integr
    - default policy
    - root certificate for your organization
 
-     When you use the Device Guard signing portal to sign a catalog file, the signing certificate is added to the default policy. When you download the signed catalog file, you should also download the default policy and merge this code integrity policy with your existing code integrity policies to protect machines running the catalog file. You need to do this step to trust and run your catalog files. For more information, see the Merging code integrity policies in the [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+     When you use the Device Guard signing portal to sign a catalog file, the signing certificate is added to the default policy. When you download the signed catalog file, you should also download the default policy and merge this code integrity policy with your existing code integrity policies to protect machines running the catalog file. You need to do this step to trust and run your catalog files. For more information, see the Merging code integrity policies in the [Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
 
 6. Open the root certificate that you downloaded, and follow the steps in **Certificate Import wizard** to install the certificate in your machine's certificate store.
-7. Deploy signed catalogs to your managed devices. For more information, see Deploy catalog files with Group Policy, or Deploy catalog files with Microsoft Endpoint Manager in the [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+7. Deploy signed catalogs to your managed devices. For more information, see Deploy catalog files with Group Policy, or Deploy catalog files with Microsoft Endpoint Manager in the [Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).

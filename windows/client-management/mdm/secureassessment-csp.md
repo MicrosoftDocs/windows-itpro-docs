@@ -56,16 +56,9 @@ Supported operations are Get and Replace.
 
 ## Related topics
 
-[Set up Take a Test on multiple PCs](https://technet.microsoft.com/edu/windows/take-a-test-multiple-pcs)  
+[Set up Take a Test on multiple PCs](/education/windows/take-a-test-multiple-pcs)  
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
  
-
- 
-
-
-
-
-
 

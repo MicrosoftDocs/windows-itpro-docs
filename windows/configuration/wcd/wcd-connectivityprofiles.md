@@ -59,7 +59,7 @@ Specify an email account to be automatically set up on the device.
 
 ## Exchange
 
-Configure settings related to Exchange email server. These settings are related to the [ActiveSync configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/activesync-csp).
+Configure settings related to Exchange email server. These settings are related to the [ActiveSync configuration service provider (CSP)](/windows/client-management/mdm/activesync-csp).
 
 
 1. In **Available customizations**, select **Exchange**, enter a name for the account, and then click **Add**. A globally unique identifier (GUID) is generated for the account.
@@ -132,7 +132,7 @@ When **ProfileType** is set to **Native**, the following additional settings are
 Setting | Description 
 --- | ---
 AuthenticationUserMethod | When you set **NativeProtocolType** to **IKEv2**, choose between **EAP** and **MSChapv2**.
-EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
+EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](/windows/client-management/mdm/eap-configuration).
 NativeProtocolType | Choose between **PPTP**, **L2TP**, **IKEv2**, and **Automatic**.
 RoutingPolicyType | Choose between **SplitTunnel**, in which traffic can go over any interface as determined by the networking stack, and **ForceTunnel**, in which all IP traffic must go over the VPN interface.
 Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the exteranl IP of a gateway or a virtual IP for a server farm.
@@ -188,7 +188,7 @@ Configure settings for wireless connectivity.
 
 **To add a profile**
 
-1. Create [the wireless profile XML](https://msdn.microsoft.com/library/windows/desktop/aa369853.aspx).
+1. Create [the wireless profile XML](/windows/win32/nativewifi/wireless-profile-samples).
 2. In **WLAN > Profiles**, browse to and select the profile XML file.
 3. Click **Add**.
 

@@ -21,7 +21,7 @@ ms.technology: mde
 -   Windows Server 2016
 
 
-This event generates in [BCryptConfigureContextFunction](https://msdn.microsoft.com/library/windows/desktop/aa375380(v=vs.85).aspx)() function. This is a Cryptographic Next Generation (CNG) function.
+This event generates in [BCryptConfigureContextFunction](/windows/win32/api/bcrypt/nf-bcrypt-bcryptconfigurecontextfunction)() function. This is a Cryptographic Next Generation (CNG) function.
 
 This event generates when configuration information for the cryptographic function of an existing CNG context was changed.
 
@@ -80,4 +80,3 @@ There is no example of this event in this document.
 ## Security Monitoring Recommendations
 
 -   Typically this event is required for detailed monitoring of CNG-related cryptographic functions. If you need to monitor or troubleshoot actions related to specific cryptographic functions, review this event to see if it provides the information you need.
-

@@ -31,7 +31,7 @@ Existing desktop (Win32) application compatibility is also expected to be strong
 
 Existing Windows Store (WinRT) apps created for Windows 8 and Windows 8.1 should also continue to work, because compatibility can be validated against all the apps that have been submitted to the Windows Store.
 
-For web apps and sites, modern HTML5-based sites should also have a high degree of compatibility and excellent performance through the new Microsoft Edge browser, while older web apps and sites can continue to use Internet Explorer 11 and the Enterprise Mode features that were first introduced in Windows 7 and Windows 8.1 and are still present in Windows 10. For more information about Internet Explorer and Enterprise Mode, see the [Internet Explorer 11 Deployment Guide for IT Pros.](https://go.microsoft.com/fwlink/p/?LinkId=734031)
+For web apps and sites, modern HTML5-based sites should also have a high degree of compatibility and excellent performance through the new Microsoft Edge browser, while older web apps and sites can continue to use Internet Explorer 11 and the Enterprise Mode features that were first introduced in Windows 7 and Windows 8.1 and are still present in Windows 10. For more information about Internet Explorer and Enterprise Mode, see the [Internet Explorer 11 Deployment Guide for IT Pros.](/internet-explorer/ie11-deploy-guide/)
 
 ## Recommended application testing process
 
@@ -54,8 +54,3 @@ Historically, organizations have performed extensive, and often exhaustive, test
  
 
  
-
-
-
-
-

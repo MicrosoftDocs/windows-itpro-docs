@@ -110,7 +110,7 @@ This event generates only on domain controllers.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   [Built-in groups](https://technet.microsoft.com/library/dn169025(v=ws.10).aspx): Builtin
+    -   [Built-in groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dn169025(v=ws.10)): Builtin
 
 **Additional Information:**
 
@@ -125,6 +125,3 @@ For 4753(S): A security-disabled global group was deleted.
 -   If you have a list of critical distribution groups in the organization, and need to specifically monitor these groups for any change, especially group deletion, monitor events with the “**Group\\Group Name”** values that correspond to the critical distribution groups.
 
 -   If you need to monitor each time a distribution group is deleted, to see who deleted it and when, monitor this event. Typically, this event is used as an informational event, to be reviewed if needed.
-
-
-

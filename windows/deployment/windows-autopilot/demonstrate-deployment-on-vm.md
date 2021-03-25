@@ -30,8 +30,8 @@ To get started with Windows Autopilot, you should try it out with a virtual mach
 In this topic you'll learn how to set-up a Windows Autopilot deployment for a VM using Hyper-V.
 
 > [!NOTE]
-> Although there are [multiple platforms](add-devices.md#registering-devices) available to enable Autopilot, this lab primarily uses Intune.
-
+> Although there are [multiple platforms](/mem/autopilot/add-devices#registering-devices) available to enable Autopilot, this lab primarily uses Intune.
+> 
 > Hyper-V and a VM are not required for this lab. You can also use a physical device. However, the instructions assume that you are using a VM. To use a physical device, skip the instructions to install Hyper-V and create a VM. All references to 'device' in the guide refer to the client device, either physical or virtual.
 
 The following video provides an overview of the process:
@@ -45,15 +45,15 @@ The following video provides an overview of the process:
 
 These are the things you'll need to complete this lab:
 <table><tr><td>Windows 10 installation media</td><td>Windows 10 Professional or Enterprise (ISO file) for a supported version of Windows 10, semi-annual channel. If you do not already have an ISO to use, a link is provided to download an <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise" data-raw-source="[evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)">evaluation version of Windows 10 Enterprise</a>.</td></tr>
-<tr><td>Internet access</td><td>If you are behind a firewall, see the detailed <a href="windows-autopilot-requirements.md#networking-requirements" data-raw-source="[networking requirements](windows-autopilot-requirements.md#networking-requirements)">networking requirements</a>. Otherwise, just ensure that you have a connection to the Internet.</td></tr>
+<tr><td>Internet access</td><td>If you are behind a firewall, see the detailed <a href="/mem/autopilot/software-requirements#networking-requirements" data-raw-source="[networking requirements](/mem/autopilot/software-requirements#networking-requirements)">networking requirements</a>. Otherwise, just ensure that you have a connection to the Internet.</td></tr>
 <tr><td>Hyper-V or a physical device running Windows 10</td><td>The guide assumes that you will use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.</td></tr>
-<tr><td>A Premium Intune account</td><td>This guide will describe how to obtain a free 30-day trial premium account that can be used to complete the lab.</td></tr></table>
+<tr><td>An account with Azure AD Premium license</td><td>This guide will describe how to obtain a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.</td></tr></table>
 
 ## Procedures
 
 A summary of the sections and procedures in the lab is provided below. Follow each section in the order it is presented, skipping the sections that do not apply to you. Optional procedures are provided in the appendix.
 
-> If you already have Hyper-V and a Windows 10 VM, you can skip directly to the [Capture the hardware ID](#capture-the-hardware-id) step. The VM must be running Windows 10, version 1903 or a later version.
+If you already have Hyper-V and a Windows 10 VM, you can skip directly to the [Capture the hardware ID](#capture-the-hardware-id) step. The VM must be running Windows 10, version 1903 or a later version.
 
 [Verify support for Hyper-V](#verify-support-for-hyper-v)
 <br>[Enable Hyper-V](#enable-hyper-v)
@@ -113,7 +113,7 @@ Install-WindowsFeature -Name Hyper-V -IncludeManagementTools
 
 When you are prompted to restart the computer, choose **Yes**. The computer might restart more than once.
 
-> Alternatively, you can install Hyper-V using the Control Panel in Windows under **Turn Windows features on or off** for a client operating system, or using Server Manager's **Add Roles and Features Wizard** on a server operating system, as shown below:
+Alternatively, you can install Hyper-V using the Control Panel in Windows under **Turn Windows features on or off** for a client operating system, or using Server Manager's **Add Roles and Features Wizard** on a server operating system, as shown below:
 
    ![Hyper-V feature](images/hyper-v-feature.png)
 
@@ -123,30 +123,36 @@ When you are prompted to restart the computer, choose **Yes**. The computer migh
 
 After installation is complete, open Hyper-V Manager by typing **virtmgmt.msc** at an elevated command prompt, or by typing **Hyper-V** in the Start menu search box.
 
-To read more about Hyper-V, see [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/about/) and [Hyper-V on Windows Server](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-on-windows-server).
+To read more about Hyper-V, see [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/) and [Hyper-V on Windows Server](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server).
 
 ## Create a demo VM
 
-Now that Hyper-V is enabled, we need to create a VM running Windows 10. We can [create a VM](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine) and [virtual network](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/connect-to-network) using Hyper-V Manager, but it is simpler to use Windows PowerShell.
+Now that Hyper-V is enabled, we need to create a VM running Windows 10. We can [create a VM](/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine) and [virtual network](/virtualization/hyper-v-on-windows/quick-start/connect-to-network) using Hyper-V Manager, but it is simpler to use Windows PowerShell.
 
 To use Windows PowerShell, we just need to know two things:
 
 1. The location of the Windows 10 ISO file.
-   - In the example, we assume the location is **c:\iso\win10-eval.iso**.
+
+   In the example, we assume the location is **c:\iso\win10-eval.iso**.
+
 2. The name of the network interface that connects to the Internet.
-   - In the example, we use a Windows PowerShell command to determine this automatically.
+
+   In the example, we use a Windows PowerShell command to determine this automatically.
 
 After we have set the ISO file location and determined the name of the appropriate network interface, we can install Windows 10.
 
 ### Set ISO file location
 
-You can download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
-- When asked to select a platform, choose **64 bit**.
+You can download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise from [Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
+
+When asked to select a platform, choose **64 bit**.
 
 After you download this file, the name will be extremely long (ex: 19042.508.200927-1902.20h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso).
 
 1. So that it is easier to type and remember, rename the file to **win10-eval.iso**.
+
 2. Create a directory on your computer named **c:\iso** and move the **win10-eval.iso** file there, so the path to the file is **c:\iso\win10-eval.iso**.
+
 3. If you wish to use a different name and location for the file, you must modify the Windows PowerShell commands below to use your custom name and directory.
 
 ### Determine network adapter name
@@ -239,7 +245,8 @@ After the VM restarts, during OOBE, it's fine to select **Set up for personal us
 
 Once the installation is complete, sign in and verify that you are at the Windows 10 desktop, then create your first Hyper-V checkpoint. Checkpoints are used to restore the VM to a previous state.
 
-   ![Windows setup example 8](images/winsetup8.png)
+   > [!div class="mx-imgBorder"]
+   > ![Windows setup example 8](images/winsetup8.png)
 
 To create a checkpoint, open an elevated Windows PowerShell prompt on the computer running Hyper-V (not on the VM) and run the following:
 
@@ -252,9 +259,9 @@ Click on the **WindowsAutopilot** VM in Hyper-V Manager and verify that you see 
 ## Capture the hardware ID
 
 > [!NOTE]
-> Normally, the Device ID is captured by the OEM as they run the OA3 Tool on each device in the factory.  The OEM then submits the 4K HH created by the OA3 Tool to Microsoft by submitting it with a Computer Build Report (CBR).  For purposes of this lab, you are acting as the OEM (capturing the 4K HH), but you're not going to use the OA3 Tool to capture the full 4K HH for various reasons (you'd have to install the OA3 tool, your device couldn't have a volume license version of Windows, it's a more complicated process than using a PS script, etc.).  Instead, you'll simulate running the OA3 tool by running a PowerShell script, which captures the device 4K HH just like the OA3 tool.
+> Normally, the Device ID is captured by the OEM as they run the OA3 Tool on each device in the factory.  The OEM then submits the 4K HH created by the OA3 Tool to Microsoft by submitting it with a Computer Build Report (CBR).  For purposes of this lab, you are acting as the OEM (capturing the 4K HH), but you're not going to use the OA3 Tool to capture the full 4K HH for various reasons (you'd have to install the OA3 tool, your device couldn't have a volume license version of Windows, it's a more complicated process than using a PowerShell script, etc.).  Instead, you'll simulate running the OA3 tool by running a PowerShell script, which captures the device 4K HH just like the OA3 tool.
 
-Follow these steps to run the PS script:
+Follow these steps to run the PowerShell script:
 
 1. **On the client VM**: Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you are using a VM or a physical device:
 
@@ -267,62 +274,62 @@ Follow these steps to run the PS script:
     Get-WindowsAutopilotInfo.ps1 -OutputFile AutopilotHWID.csv
     ```
 
-When you are prompted to install the NuGet package, choose **Yes**.
+1. When you are prompted to install the NuGet package, choose **Yes**.
 
-See the sample output below.  A 'dir' command is issued at the end to show the file that was created.
+   See the sample output below.  A **dir** command is issued at the end to show the file that was created.
 
-<pre>
-PS C:\> md c:\HWID
+    ```console
+    PS C:\> md c:\HWID
+    
+         Directory: C:\
+    
+    
+    Mode                 LastWriteTime         Length Name
+    ----                 -------------         ------ ----
+    d-----        11/13/2020   3:00 PM                HWID
+    
+    
+    PS C:\Windows\system32> Set-Location c:\HWID
+    PS C:\HWID> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
+    PS C:\HWID> Install-Script -Name Get-WindowsAutopilotInfo -Force
+    
+    NuGet provider is required to continue
+    PowerShellGet requires NuGet provider version '2.8.5.201' or newer to interact with NuGet-based repositories. The NuGet
+     provider must be available in 'C:\Program Files\PackageManagement\ProviderAssemblies' or
+    'C:\Users\user1\AppData\Local\PackageManagement\ProviderAssemblies'. You can also install the NuGet provider by running
+     'Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force'. Do you want PowerShellGet to install and
+    import the NuGet provider now?
+    [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
+    PS C:\HWID> $env:Path += ";C:\Program Files\WindowsPowerShell\Scripts"
+    PS C:\HWID> Get-WindowsAutopilotInfo.ps1 -OutputFile AutopilotHWID.csv
+    Gathered details for device with serial number: 1804-7078-6805-7405-0796-0675-17
+    PS C:\HWID> dir
+    
+    
+        Directory: C:\HWID
+    
+    
+    Mode                 LastWriteTime         Length Name
+    ----                 -------------         ------ ----
+    -a----        11/13/2020   3:01 PM           8184 AutopilotHWID.csv
+    
+    
+    PS C:\HWID>
+    ```
+    
+1. Verify that there is an **AutopilotHWID.csv** file in the **c:\HWID** directory that is about 8 KB in size.  This file contains the complete 4K HH.
 
-     Directory: C:\
+   > [!NOTE]
+   > Although the .csv extension might be associated with Microsoft Excel, you cannot view the file properly by double-clicking it. To correctly parse the comma delimiters and view the file in Excel, you must use the **Data** > **From Text/CSV** function in Excel to import the appropriate data columns. You don't need to view the file in Excel unless you are curious. The file format will be validated when it is imported into Autopilot. An example of the data in this file is shown below.
 
+   ![Serial number and hardware hash](images/hwid.png)
 
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        11/13/2020   3:00 PM                HWID
+   You will need to upload this data into Intune to register your device for Autopilot, so the next step is to transfer this file to the computer you will use to access the Azure portal.  If you are using a physical device instead of a VM, you can copy the file to a USB stick.  If you’re using a VM, you can right-click the AutopilotHWID.csv file and copy it, then right-click and paste the file to your desktop (outside the VM).
 
+   If you have trouble copying and pasting the file, just view the contents in Notepad on the VM and copy the text into Notepad outside the VM. Do not use another text editor to do this.
 
-PS C:\Windows\system32> Set-Location c:\HWID
-PS C:\HWID> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
-PS C:\HWID> Install-Script -Name Get-WindowsAutopilotInfo -Force
-
-NuGet provider is required to continue
-PowerShellGet requires NuGet provider version '2.8.5.201' or newer to interact with NuGet-based repositories. The NuGet
- provider must be available in 'C:\Program Files\PackageManagement\ProviderAssemblies' or
-'C:\Users\user1\AppData\Local\PackageManagement\ProviderAssemblies'. You can also install the NuGet provider by running
- 'Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force'. Do you want PowerShellGet to install and
-import the NuGet provider now?
-[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
-PS C:\HWID> $env:Path += ";C:\Program Files\WindowsPowerShell\Scripts"
-PS C:\HWID> Get-WindowsAutopilotInfo.ps1 -OutputFile AutopilotHWID.csv
-Gathered details for device with serial number: 1804-7078-6805-7405-0796-0675-17
-PS C:\HWID> dir
-
-
-    Directory: C:\HWID
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----        11/13/2020   3:01 PM           8184 AutopilotHWID.csv
-
-
-PS C:\HWID>
-</pre>
-
-Verify that there is an **AutopilotHWID.csv** file in the **c:\HWID** directory that is about 8 KB in size.  This file contains the complete 4K HH.
-
-> [!NOTE]
-> Although the .csv extension might be associated with Microsoft Excel, you cannot view the file properly by double-clicking it. To correctly parse the comma delimiters and view the file in Excel, you must use the **Data** > **From Text/CSV** function in Excel to import the appropriate data columns. You don't need to view the file in Excel unless you are curious. The file format will be validated when it is imported into Autopilot. An example of the data in this file is shown below.
-
-![Serial number and hardware hash](images/hwid.png)
-
-You will need to upload this data into Intune to register your device for Autopilot, so the next step is to transfer this file to the computer you will use to access the Azure portal.  If you are using a physical device instead of a VM, you can copy the file to a USB stick.  If you’re using a VM, you can right-click the AutopilotHWID.csv file and copy it, then right-click and paste the file to your desktop (outside the VM).
-
-If you have trouble copying and pasting the file, just view the contents in Notepad on the VM and copy the text into Notepad outside the VM. Do not use another text editor to do this.
-
-> [!NOTE]
-> When copying and pasting to or from VMs, avoid clicking other things with your mouse cursor between the copy and paste process as this can empty or overwrite the clipboard and require that you start over. Go directly from copy to paste.
+   > [!NOTE]
+   > When copying and pasting to or from VMs, avoid clicking other things with your mouse cursor between the copy and paste process as this can empty or overwrite the clipboard and require that you start over. Go directly from copy to paste.
 
 ## Reset the VM back to Out-Of-Box-Experience (OOBE)
 
@@ -413,7 +420,7 @@ Optional: see the following video for an overview of the process.
 
 > [!video https://www.youtube.com/embed/IpLIZU_j7Z0]
 
-First, you need a MSfB account.  You can use the same one you created above for Intune, or follow [these instructions](https://docs.microsoft.com/microsoft-store/windows-store-for-business-overview) to create a new one.
+First, you need a MSfB account.  You can use the same one you created above for Intune, or follow [these instructions](/microsoft-store/windows-store-for-business-overview) to create a new one.
 
 Next, sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) using your test account by clicking **Sign in** on the upper-right-corner of the main page.
 
@@ -446,14 +453,17 @@ Pick one:
 The Autopilot deployment profile wizard will ask for a device group, so we must create one first.  To create a device group:
 
 1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Groups** > **New group**.
+
 2. In the **Group** blade:
     1. For **Group type**, choose **Security**.
     2. Type a **Group name** and **Group description** (ex: Autopilot Lab).
     3. Azure AD roles can be assigned to the group: **No**
     4. For **Membership type**, choose **Assigned**.
+
 3. Click **Members** and add the Autopilot VM to the group. See the following example:
 
-  ![add members](images/group1.png)
+   > [!div class="mx-imgBorder"]
+   > ![add members](images/group1.png)
 
 4. Click **Create**. 
 
@@ -461,11 +471,13 @@ The Autopilot deployment profile wizard will ask for a device group, so we must 
 
 To create a Windows Autopilot profile, scroll back to the left hand pane and click **Devices**, then under **Enroll devices | Windows enrollment** select **Deployment Profiles**.
 
-![Deployment profiles](images/dp.png)
+> [!div class="mx-imgBorder"]
+> ![Deployment profiles](images/dp.png)
 
 Click on **Create profile** and then select **Windows PC**.
 
-![Create deployment profile](images/create-profile.png)
+> [!div class="mx-imgBorder"]
+> ![Create deployment profile](images/create-profile.png)
 
 On the **Create profile** blade, use the following values:
 
@@ -481,7 +493,7 @@ Click **Next** to continue with the **Out-of-box experience (OOBE)** settings:
 |---|---|
 | Deployment mode | User-driven |
 | Join to Azure AD as | Azure AD joined |
-| Microsoft Sofware License Terms | Hide |
+| Microsoft Software License Terms | Hide |
 | Privacy Settings | Hide |
 | Hide change account options | Hide |
 | User account type | Standard |
@@ -504,6 +516,7 @@ Click **Next** to continue with the **Assignments** settings:
 
 Click on **OK** and then click on **Create**.
 
+> [!NOTE]
 > If you want to add an app to your profile via Intune, the OPTIONAL steps for doing so can be found in [Appendix B: Adding apps to your profile](#appendix-b-adding-apps-to-your-profile).
 
 ### Create a Windows Autopilot deployment profile using MSfB
@@ -524,15 +537,18 @@ To CREATE the profile:
 
 Select your device from the **Devices** list:
 
-![MSfB create step 1](images/msfb-create1.png)
+> [!div class="mx-imgBorder"]
+> ![MSfB create step 1](images/msfb-create1.png)
 
 On the Autopilot deployment dropdown menu, select **Create new profile**:
 
-![MSfB create step 2](images/msfb-create2.png)
+> [!div class="mx-imgBorder"]
+> ![MSfB create step 2](images/msfb-create2.png)
 
 Name the profile, choose your desired settings, and then click **Create**:
 
-![MSfB create step 3](images/msfb-create3.png)
+> [!div class="mx-imgBorder"]
+> ![MSfB create step 3](images/msfb-create3.png)
 
 The new profile is added to the Autopilot deployment list.
 
@@ -540,11 +556,13 @@ To ASSIGN the profile:
 
 To assign (or reassign) the profile to a device, select the checkboxes next to the device you registered for this lab, then select the profile you want to assign from the **Autopilot deployment** dropdown menu as shown:
 
-![MSfB assign step 1](images/msfb-assign1.png)
+> [!div class="mx-imgBorder"]
+> ![MSfB assign step 1](images/msfb-assign1.png)
 
 Confirm the profile was successfully assigned to the intended device by checking the contents of the **Profile** column:
 
-![MSfB assign step 2](images/msfb-assign2.png)
+> [!div class="mx-imgBorder"]
+> ![MSfB assign step 2](images/msfb-assign2.png)
 
 > [!IMPORTANT]
 > The new profile will only be applied if the device has not been started, and gone through OOBE. Settings from a different profile can't be applied when another profile has been applied. Windows would need to be reinstalled on the device for the second profile to be applied to the device.
@@ -553,7 +571,8 @@ Confirm the profile was successfully assigned to the intended device by checking
 
 If you shut down your VM after the last reset, it's time to start it back up again, so it can progress through the Autopilot OOBE experience but do not attempt to start your device again until the **PROFILE STATUS** for your device in Intune has changed from **Not assigned** to **Assigning** and finally **Assigned**:
 
-![Device status](images/device-status.png)
+> [!div class="mx-imgBorder"]
+> ![Device status](images/device-status.png)
 
 Also, make sure to wait at least 30 minutes from the time you've [configured company branding](#configure-company-branding), otherwise these changes might not show up.
 
@@ -568,35 +587,38 @@ Also, make sure to wait at least 30 minutes from the time you've [configured com
 
 Soon after reaching the desktop, the device should show up in Intune as an **enabled** Autopilot device.  Go into the Intune Azure portal, and select **Devices > All devices**, then **Refresh** the data to verify that your device has changed from disabled to enabled, and the name of the device is updated.
 
-![Device enabled](images/devices1.png)
+> [!div class="mx-imgBorder"]
+> ![Device enabled](images/devices1.png)
 
 Once you select a language and a keyboard layout, your company branded sign-in screen should appear. Provide your Azure Active Directory credentials and you're all done.
 
 > [!TIP]
-> If you receive a message that "Something went wrong" and it "Looks like we can't connect to the URL for your organization's MDM terms of use", verify that you have correctly [assigned licenses](https://docs.microsoft.com/mem/intune/fundamentals/licenses-assign) to the current user.
+> If you receive a message that "Something went wrong" and it "Looks like we can't connect to the URL for your organization's MDM terms of use", verify that you have correctly [assigned licenses](/mem/intune/fundamentals/licenses-assign) to the current user.
 
 Windows Autopilot will now take over to automatically join your device into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoint you've created to go through this process again with different settings.
 
 ## Remove devices from Autopilot
 
-To use the device (or VM) for other purposes after completion of this lab, you will need to remove (deregister) it from Autopilot via either Intune or MSfB, and then reset it.  Instructions for deregistering devices can be found at [Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal) and below.
+To use the device (or VM) for other purposes after completion of this lab, you will need to remove (deregister) it from Autopilot via either Intune or MSfB, and then reset it.  Instructions for deregistering devices can be found at [Enroll Windows devices in Intune by using Windows Autopilot](/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Remove devices by using wipe, retire, or manually unenrolling the device](/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal) and below.
 
 ### Delete (deregister) Autopilot device
 
 You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure Active Directory), log into the MEM admin center, then navigate to **Intune > Devices > All Devices**.  Select the device you want to delete, then click the Delete button along the top menu.
 
-![Delete device step 1](images/delete-device1.png)
+> [!div class="mx-imgBorder"]
+> ![Delete device step 1](images/delete-device1.png)
 
 This will remove the device from Intune management, and it will disappear from **Intune > Devices > All devices**. But this does not yet deregister the device from Autopilot, so the device should still appear under **Intune > Device Enrollment > Windows Enrollment > Windows Autopilot Deployment Program > Devices**.
 
 The **Intune > Devices > All Devices** list and the **Intune > Device Enrollment > Windows Enrollment > Windows Autopilot Deployment Program > Devices** list mean different things and are two completely separate datastores.  The former (All devices) is the list of devices currently enrolled into Intune.
 
 > [!NOTE]
-> A device will only appear in the All devices list once it has booted.  The latter (Windows Autopilot Deployment Program > Devices) is the list of devices currently registered from that Intune account into the Autopilot program - which may or may not be enrolled to Intune.
+> A device will only appear in the All devices list once it has booted.  The latter (**Windows Autopilot Deployment Program** > **Devices**) is the list of devices currently registered from that Intune account into the Autopilot program - which may or may not be enrolled to Intune.
 
 To remove the device from the Autopilot program, select the device and click **Delete**. You will get a popup dialog box to confirm deletion.
 
-![Delete device](images/delete-device2.png)
+> [!div class="mx-imgBorder"]
+> ![Delete device](images/delete-device2.png)
 
 At this point, your device has been unenrolled from Intune and also deregistered from Autopilot.  After several minutes, click the **Sync** button, followed by the **Refresh** button to confirm the device is no longer listed in the Autopilot program:
 
@@ -610,7 +632,7 @@ Starting with Windows 8, the host computer's microprocessor must support second 
 
 To verify your computer supports SLAT, open an administrator command prompt,  type **systeminfo**, press ENTER, scroll down, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. See the following example:
 
-<pre style="overflow-y: visible">
+```console
 C:>systeminfo
 
 ...
@@ -618,15 +640,16 @@ Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
                            Virtualization Enabled In Firmware: Yes
                            Second Level Address Translation: Yes
                            Data Execution Prevention Available: Yes
-</pre>
+```
 
 In this example, the computer supports SLAT and Hyper-V.
 
+> [!NOTE]
 > If one or more requirements are evaluated as **No** then the computer does not support installing Hyper-V.  However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the **Virtualization Enabled In Firmware** setting from **No** to **Yes**. The location of this setting will depend on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
 
-You can also identify Hyper-V support using [tools](https://blogs.msdn.microsoft.com/taylorb/2008/06/19/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v/) provided by the processor manufacturer, the [msinfo32](https://technet.microsoft.com/library/cc731397.aspx) tool, or you can download the [Coreinfo](https://technet.microsoft.com/sysinternals/cc835722) utility and run it, as shown in the following example:
+You can also identify Hyper-V support using [tools](/archive/blogs/taylorb/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v) provided by the processor manufacturer, the [msinfo32](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731397(v=ws.11)) tool, or you can download the [Coreinfo](/sysinternals/downloads/coreinfo) utility and run it, as shown in the following example:
 
-<pre style="overflow-y: visible">
+```console
 C:>coreinfo -v
 
 Coreinfo v3.31 - Dump information on system CPU and memory topology
@@ -639,7 +662,7 @@ Microcode signature: 0000001B
 HYPERVISOR      -       Hypervisor is present
 VMX             *       Supports Intel hardware-assisted virtualization
 EPT             *       Supports Intel extended page tables (SLAT)
-</pre>
+```
 
 > [!NOTE]
 > A 64-bit operating system is required to run Hyper-V.
@@ -662,7 +685,8 @@ Download the Notepad++ msi package [here](https://www.hass.de/content/notepad-ms
 
 Run the IntuneWinAppUtil tool, supplying answers to the three questions, for example:
 
-![Add app example](images/app01.png)
+> [!div class="mx-imgBorder"]
+> ![Add app example](images/app01.png)
 
 After the tool finishes running, you should have an .intunewin file in the Output folder, which you can now upload into Intune using the following steps.
 
@@ -680,7 +704,8 @@ Under **App Type**, select **Windows app (Win32)**:
 
 On the **App package file** blade, browse to the **npp.7.6.3.installer.x64.intunewin** file in your output folder, open it, then click **OK**:
 
-![Add app step 3](images/app04.png)
+> [!div class="mx-imgBorder"]
+> ![Add app step 3](images/app04.png)
 
 On the **App Information Configure** blade, provide a friendly name, description, and publisher, such as:
 
@@ -688,8 +713,10 @@ On the **App Information Configure** blade, provide a friendly name, description
 
 On the **Program Configuration** blade, supply the install and uninstall commands:
 
+```console
 Install:  msiexec /i "npp.7.6.3.installer.x64.msi" /q
 Uninstall:  msiexec /x "{F188A506-C3C6-4411-BE3A-DA5BF1EA6737}" /q
+```
 
 > [!NOTE]
 > Likely, you do not have to write the install and uninstall commands yourself because the [IntuneWinAppUtil.exe command-line tool](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool) automatically generated them when it converted the .msi file into a .intunewin file.
@@ -702,11 +729,13 @@ Click **OK** to save your input and activate the **Requirements** blade.
 
 On the **Requirements Configuration** blade, specify the **OS architecture** and the **Minimum OS version**:
 
-![Add app step 6](images/app07.png)
+> [!div class="mx-imgBorder"]
+> ![Add app step 6](images/app07.png)
 
 Next, configure the **Detection rules**.  For our purposes, we will select manual format:
 
-![Add app step 7](images/app08.png)
+> [!div class="mx-imgBorder"]
+> ![Add app step 7](images/app08.png)
 
 Click **Add** to define the rule properties.  For **Rule type**, select **MSI**, which will automatically import the right MSI product code into the rule:
 
@@ -716,7 +745,8 @@ Click **OK** twice to save, as you back out to the main **Add app** blade again 
 
 **Return codes**:  For our purposes, leave the return codes at their default values:
 
-![Add app step 9](images/app10.png)
+> [!div class="mx-imgBorder"]
+> ![Add app step 9](images/app10.png)
 
 Click **OK** to exit.
 
@@ -726,11 +756,13 @@ Click the **Add** button to finalize and save your app package.
 
 Once the indicator message says the addition has completed.
 
-![Add app step 10](images/app11.png)
+> [!div class="mx-imgBorder"]
+> ![Add app step 10](images/app11.png)
 
 You will be able to find your app in your app list:
 
-![Add app step 11](images/app12.png)
+> [!div class="mx-imgBorder"]
+> ![Add app step 11](images/app12.png)
 
 #### Assign the app to your Intune profile
 
@@ -739,19 +771,22 @@ You will be able to find your app in your app list:
 
 In the **Intune > Client Apps > Apps** pane, select the app package you already created to reveal its properties blade.  Then click **Assignments** from the menu:
 
-![Assign app step 1](images/app13.png)
+> [!div class="mx-imgBorder"]
+> ![Assign app step 1](images/app13.png)
 
 Select **Add Group** to open the **Add group** pane that is related to the app.
 
-For our purposes, select **Required** from the **Assignment type** dropdown menu:
+For our purposes, select **Required** from the **Assignment type** dropdown menu.
 
+> [!NOTE]
 > **Available for enrolled devices** means users install the app from the Company Portal app or Company Portal website.
 
 Select **Included Groups** and assign the groups you previously created that will use this app:
 
 ![Assign app step 2](images/app14.png)
 
-![Assign app step 3](images/app15.png)
+> [!div class="mx-imgBorder"]
+> ![Assign app step 3](images/app15.png)
 
 In the **Select groups** pane, click the **Select** button.
 
@@ -761,11 +796,12 @@ In the **Add group** pane, select **OK**.
 
 In the app **Assignments** pane, select **Save**.
 
-![Assign app step 4](images/app16.png)
+> [!div class="mx-imgBorder"]
+> ![Assign app step 4](images/app16.png)
 
 At this point, you have completed steps to add a Win32 app to Intune.
 
-For more information on adding apps to Intune, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management).
+For more information on adding apps to Intune, see [Intune Standalone - Win32 app management](/intune/apps-win32-app-management).
 
 ### Add Office 365
 
@@ -783,15 +819,17 @@ Under **App Type**, select **Office 365 Suite > Windows 10**:
 
 Under the **Configure App Suite** pane, select the Office apps you want to install.  For the purposes of this labe we have only selected Excel:
 
-![Create app step 3](images/app19.png)
+> [!div class="mx-imgBorder"]
+> ![Create app step 3](images/app19.png)
 
 Click **OK**.
 
 In the **App Suite Information** pane, enter a <i>unique</i> suite name, and a suitable description.
 
-> Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
+Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
 
-![Create app step 4](images/app20.png)
+> [!div class="mx-imgBorder"]
+> ![Create app step 4](images/app20.png)
 
 Click **OK**.
 
@@ -808,19 +846,21 @@ Click **OK** and then click **Add**.
 
 In the **Intune > Client Apps > Apps** pane, select the Office package you already created to reveal its properties blade.  Then click **Assignments** from the menu:
 
-![Create app step 6](images/app22.png)
+> [!div class="mx-imgBorder"]
+> ![Create app step 6](images/app22.png)
 
 Select **Add Group** to open the **Add group** pane that is related to the app.
 
-For our purposes, select **Required** from the **Assignment type** dropdown menu:
+For our purposes, select **Required** from the **Assignment type** dropdown menu.
 
-> **Available for enrolled devices** means users install the app from the Company Portal app or Company Portal website.
+**Available for enrolled devices** means users install the app from the Company Portal app or Company Portal website.
 
 Select **Included Groups** and assign the groups you previously created that will use this app:
 
 ![Create app step 7](images/app23.png)
 
-![Create app step 8](images/app24.png)
+> [!div class="mx-imgBorder"]
+> ![Create app step 8](images/app24.png)
 
 In the **Select groups** pane, click the **Select** button.
 
@@ -834,7 +874,7 @@ In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add Office to Intune.
 
-For more information on adding Office apps to Intune, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365).
+For more information on adding Office apps to Intune, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](/intune/apps-add-office365).
 
 If you installed both the win32 app (Notepad++) and Office (just Excel) per the instructions in this lab, your VM will show them in the apps list, although it could take several minutes to populate:
 

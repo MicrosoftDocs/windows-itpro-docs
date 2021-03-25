@@ -7,4 +7,4 @@
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 3/17/2021 | [Roles and permissions in Microsoft Store for Business and Education (Windows 10)](/microsoft-store/roles-and-permissions-microsoft-store-for-business) | modified |
+| 3/17/2021 | [Roles and permissions in Microsoft Store for Business and Education (Windows 10)](../roles-and-permissions-microsoft-store-for-business.md) | modified |

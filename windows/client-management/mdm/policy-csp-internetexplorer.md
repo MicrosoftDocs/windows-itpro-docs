@@ -2414,7 +2414,7 @@ This policy setting allows the administrator to enable "Save Target As" context 
 - If you enable this policy, "Save Target As" will show up in the Internet Explorer mode context menu and work the same as Internet Explorer.
 - If you disable or do not configure this policy setting, "Save Target As" will not show up in the Internet Explorer mode context menu.
 
-For more information, see [https://go.microsoft.com/fwlink/?linkid=2102115](https://go.microsoft.com/fwlink/?linkid=2102115)
+For more information, see [https://go.microsoft.com/fwlink/?linkid=2102115](/deployedge/edge-ie-mode-faq)
 
 <!--/Description-->
 > [!TIP]
@@ -3144,7 +3144,7 @@ If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge 
 - If you disable or do not configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
 
 > [!NOTE]
-> For more information about the Windows update for the next version of Microsoft Edge including how to disable it, see [https://go.microsoft.com/fwlink/?linkid=2102115](https://go.microsoft.com/fwlink/?linkid=2102115). This update applies only to Windows 10 version 1709 and higher.
+> For more information about the Windows update for the next version of Microsoft Edge including how to disable it, see [https://go.microsoft.com/fwlink/?linkid=2102115](/deployedge/edge-ie-mode-faq). This update applies only to Windows 10 version 1709 and higher.
 
 <!--/Description-->
 > [!TIP]
@@ -3490,7 +3490,7 @@ ADMX Info:
 This setting determines whether IE automatically downloads updated versions of Microsoft’s VersionList.XML. IE uses this file to determine whether an ActiveX control should be stopped from loading.
 
 > [!Caution]
-> If you enable this setting, IE stops downloading updated versions of VersionList.XML. Turning off this automatic download breaks the [out-of-date ActiveX control blocking feature](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking) by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
+> If you enable this setting, IE stops downloading updated versions of VersionList.XML. Turning off this automatic download breaks the [out-of-date ActiveX control blocking feature](/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking) by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
 
 If you disable or do not configure this setting, IE continues to download updated versions of VersionList.XML.
 
@@ -9550,7 +9550,7 @@ Related policies:
 - [Browser/SendIntranetTraffictoInternetExplorer](#internetexplorer-policies)
 - [InternetExplorer/SendSitesNotInEnterpriseSiteListToEdge](#internetexplorer-policies)
 
-For more information on how to use this policy together with other related policies to create the optimal configuration for your organization, see [https://go.microsoft.com/fwlink/?linkid=2094210.](https://go.microsoft.com/fwlink/?linkid=2094210)
+For more information on how to use this policy together with other related policies to create the optimal configuration for your organization, see [https://go.microsoft.com/fwlink/?linkid=2094210.](/DeployEdge/edge-ie-mode-policies#configure-internet-explorer-integration)
 
 <!--/Description-->
 > [!TIP]
@@ -20144,4 +20144,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

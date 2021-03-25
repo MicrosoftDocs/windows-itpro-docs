@@ -29,7 +29,7 @@ ms.technology: mde
 
 This event generates when an object was deleted. The object could be a file system, kernel, or registry object.
 
-This event generates only if “Delete" auditing is set in object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx).
+This event generates only if “Delete" auditing is set in object’s [SACL](/windows/win32/secauthz/access-control-lists).
 
 This event doesn’t contain the name of the deleted object (only the **Handle ID**). It is better to use “[4663](event-4663.md)(S): An attempt was made to access an object” with DELETE access to track object deletion.
 
@@ -136,4 +136,3 @@ For 4660(S): An object was deleted.
 -   This event doesn’t contains the name of deleted object (only **Handle ID**). It is better to use “[4663](event-4663.md)(S): An attempt was made to access an object.” events with DELETE access to track object deletion actions.
 
 -   For kernel objects, this event and other auditing events have little to no security relevance and are hard to parse or analyze. There is no recommendation for auditing them, unless you know exactly what you need to monitor at the Kernel objects level.
-
