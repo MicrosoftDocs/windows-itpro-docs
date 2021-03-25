@@ -163,222 +163,219 @@
 
 - name: Reference
   items:
-
-
-  - name: Windows Configuration Designer reference
-    items:
-      - name: Windows Configuration Designer provisioning settings (reference)
-        href: wcd/wcd.md
-      - name: Changes to settings in Windows Configuration Designer
-        href: wcd/wcd-changes.md
-      - name: AccountManagement
-        href: wcd/wcd-accountmanagement.md
-      - name: Accounts
-        href: wcd/wcd-accounts.md 
-      - name: ADMXIngestion
-        href: wcd/wcd-admxingestion.md 
-      - name: AssignedAccess
-        href: wcd/wcd-assignedaccess.md 
-      - name: AutomaticTime
-        href: wcd/wcd-automatictime.md 
-      - name: Browser
-        href: wcd/wcd-browser.md 
-      - name: CallAndMessagingEnhancement
-        href: wcd/wcd-callandmessagingenhancement.md 
-      - name: Calling
-        href: wcd/wcd-calling.md
-      - name: CellCore
-        href: wcd/wcd-cellcore.md
-      - name: Cellular
-        href: wcd/wcd-cellular.md     
-      - name: Certificates
-        href: wcd/wcd-certificates.md 
-      - name: CleanPC
-        href: wcd/wcd-cleanpc.md     
-      - name: Connections
-        href: wcd/wcd-connections.md 
-      - name: ConnectivityProfiles
-        href: wcd/wcd-connectivityprofiles.md 
-      - name: CountryAndRegion
-        href: wcd/wcd-countryandregion.md 
-      - name: DesktopBackgroundAndColors
-        href: wcd/wcd-desktopbackgroundandcolors.md     
-      - name: DeveloperSetup
-        href: wcd/wcd-developersetup.md     
-      - name: DeviceFormFactor
-        href: wcd/wcd-deviceformfactor.md  
-      - name: DeviceInfo
-        href: wcd/wcd-deviceinfo.md
-      - name: DeviceManagement
-        href: wcd/wcd-devicemanagement.md  
-      - name: DeviceUpdateCenter
-        href: wcd/wcd-deviceupdatecenter.md
-      - name: DMClient
-        href: wcd/wcd-dmclient.md 
-      - name: EditionUpgrade
-        href: wcd/wcd-editionupgrade.md 
-      - name: EmbeddedLockdownProfiles
-        href: wcd/wcd-embeddedlockdownprofiles.md     
-      - name: FirewallConfiguration
-        href: wcd/wcd-firewallconfiguration.md     
-      - name: FirstExperience
-        href: wcd/wcd-firstexperience.md     
-      - name: Folders
-        href: wcd/wcd-folders.md  
-      - name: HotSpot
-        href: wcd/wcd-hotspot.md
-      - name: InitialSetup
-        href: wcd/wcd-initialsetup.md     
-      - name: InternetExplorer
-        href: wcd/wcd-internetexplorer.md 
-      - name: KioskBrowser
-        href: wcd/wcd-kioskbrowser.md      
-      - name: Licensing
-        href: wcd/wcd-licensing.md 
-      - name: Location
-        href: wcd/wcd-location.md      
-      - name: Maps
-        href: wcd/wcd-maps.md  
-      - name: Messaging
-        href: wcd/wcd-messaging.md     
-      - name: ModemConfigurations
-        href: wcd/wcd-modemconfigurations.md     
-      - name: Multivariant
-        href: wcd/wcd-multivariant.md     
-      - name: NetworkProxy
-        href: wcd/wcd-networkproxy.md     
-      - name: NetworkQOSPolicy
-        href: wcd/wcd-networkqospolicy.md
-      - name: NFC
-        href: wcd/wcd-nfc.md     
-      - name: OOBE
-        href: wcd/wcd-oobe.md    
-      - name: OtherAssets
-        href: wcd/wcd-otherassets.md     
-      - name: Personalization
-        href: wcd/wcd-personalization.md     
-      - name: Policies
-        href: wcd/wcd-policies.md 
-      - name: Privacy
-        href: wcd/wcd-privacy.md  
-      - name: ProvisioningCommands
-        href: wcd/wcd-provisioningcommands.md    
-      - name: RcsPresence
-        href: wcd/wcd-rcspresence.md 
-      - name: SharedPC
-        href: wcd/wcd-sharedpc.md     
-      - name: Shell
-        href: wcd/wcd-shell.md     
-      - name: SMISettings
-        href: wcd/wcd-smisettings.md     
-      - name: Start
-        href: wcd/wcd-start.md    
-      - name: StartupApp
-        href: wcd/wcd-startupapp.md     
-      - name: StartupBackgroundTasks
-        href: wcd/wcd-startupbackgroundtasks.md 
-      - name: StorageD3InModernStandby
-        href: wcd/wcd-storaged3inmodernstandby.md
-      - name: SurfaceHubManagement
-        href: wcd/wcd-surfacehubmanagement.md    
-      - name: TabletMode
-        href: wcd/wcd-tabletmode.md  
-      - name: TakeATest
-        href: wcd/wcd-takeatest.md    
-      - name: TextInput
-        href: wcd/wcd-textinput.md  
-      - name: Theme
-        href: wcd/wcd-theme.md  
-      - name: Time
-        href: wcd/wcd-time.md    
-      - name: UnifiedWriteFilter
-        href: wcd/wcd-unifiedwritefilter.md     
-      - name: UniversalAppInstall
-        href: wcd/wcd-universalappinstall.md 
-      - name: UniversalAppUninstall
-        href: wcd/wcd-universalappuninstall.md 
-      - name: UsbErrorsOEMOverride
-        href: wcd/wcd-usberrorsoemoverride.md
-      - name: WeakCharger
-        href: wcd/wcd-weakcharger.md  
-      - name: WindowsHelloForBusiness
-        href: wcd/wcd-windowshelloforbusiness.md
-      - name: WindowsTeamSettings
-        href: wcd/wcd-windowsteamsettings.md     
-      - name: WLAN
-        href: wcd/wcd-wlan.md     
-      - name: Workplace
-        href: wcd/wcd-workplace.md  
-
-  
     - name: Configure Windows 10 Mobile devices
       href: mobile-devices/configure-mobile.md
-    - name: User Experience Virtualization (UE-V)
+    - name: Windows Configuration Designer reference
       items:
-        - name: User Experience Virtualization (UE-V) for Windows 10
-          href: ue-v/uev-for-windows.md
-        - name: Get started with UE-V
-          items:
-            - name: Get started with UE-V
-              href: ue-v/uev-getting-started.md
-            - name: What's New in UE-V for Windows 10, version 1607
-              href: ue-v/uev-whats-new-in-uev-for-windows.md
-            - name: User Experience Virtualization Release Notes
-              href: ue-v/uev-release-notes-1607.md
-            - name: Upgrade to UE-V for Windows 10
-              href: ue-v/uev-upgrade-uev-from-previous-releases.md
-        - name: Prepare a UE-V Deployment
-          items:
-            - name: Prepare a UE-V Deployment
-              href: ue-v/uev-prepare-for-deployment.md
-            - name: Deploy Required UE-V Features
-              href: ue-v/uev-deploy-required-features.md
-            - name: Deploy UE-V for use with Custom Applications
-              href: ue-v/uev-deploy-uev-for-custom-applications.md
-        - name: Administer UE-V
-          items:
-            - name: UE-V administion guide
-              href: ue-v/uev-administering-uev.md
-            - name: Manage Configurations for UE-V
-              items:
-                - name: Manage Configurations for UE-V
-                  href: ue-v/uev-manage-configurations.md
-                - name: Configuring UE-V with Group Policy Objects
-                  href: ue-v/uev-configuring-uev-with-group-policy-objects.md
-                - name: Configuring UE-V with Microsoft Endpoint Configuration Manager
-                  href: ue-v/uev-configuring-uev-with-system-center-configuration-manager.md
-                - name: Administering UE-V with Windows PowerShell and WMI
-                  href: ue-v/uev-administering-uev-with-windows-powershell-and-wmi.md
-                - name: Managing the UE-V Service and Packages with Windows PowerShell and WMI
-                  href: ue-v/uev-managing-uev-agent-and-packages-with-windows-powershell-and-wmi.md
-                - name: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
-                  href: ue-v/uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md
-                - name: Working with Custom UE-V Templates and the UE-V Template Generator
-                  href: ue-v/uev-working-with-custom-templates-and-the-uev-generator.md
-                - name: Manage Administrative Backup and Restore in UE-V
-                  href: ue-v/uev-manage-administrative-backup-and-restore.md
-                - name: Changing the Frequency of UE-V Scheduled Tasks
-                  href: ue-v/uev-changing-the-frequency-of-scheduled-tasks.md
-                - name: Migrating UE-V Settings Packages
-                  href: ue-v/uev-migrating-settings-packages.md
-                - name: Using UE-V with Application Virtualization Applications
-                  href: ue-v/uev-using-uev-with-application-virtualization-applications.md
-        - name: Troubleshooting UE-V
-          href: ue-v/uev-troubleshooting.md
-        - name: Technical Reference for UE-V
-          items:
-            - name: Technical Reference for UE-V
-              href: ue-v/uev-technical-reference.md
-            - name: Sync Methods for UE-V
-              href: ue-v/uev-sync-methods.md
-            - name: Sync Trigger Events for UE-V
-              href: ue-v/uev-sync-trigger-events.md
-            - name: Synchronizing Microsoft Office with UE-V
-              href: ue-v/uev-synchronizing-microsoft-office-with-uev.md
-            - name: Application Template Schema Reference for UE-V
-              href: ue-v/uev-application-template-schema-reference.md
-            - name: Security Considerations for UE-V
-              href: ue-v/uev-security-considerations.md
+        - name: Windows Configuration Designer provisioning settings (reference)
+          href: wcd/wcd.md
+        - name: Changes to settings in Windows Configuration Designer
+          href: wcd/wcd-changes.md
+        - name: AccountManagement
+          href: wcd/wcd-accountmanagement.md
+        - name: Accounts
+          href: wcd/wcd-accounts.md 
+        - name: ADMXIngestion
+          href: wcd/wcd-admxingestion.md 
+        - name: AssignedAccess
+          href: wcd/wcd-assignedaccess.md 
+        - name: AutomaticTime
+          href: wcd/wcd-automatictime.md 
+        - name: Browser
+          href: wcd/wcd-browser.md 
+        - name: CallAndMessagingEnhancement
+          href: wcd/wcd-callandmessagingenhancement.md 
+        - name: Calling
+          href: wcd/wcd-calling.md
+        - name: CellCore
+          href: wcd/wcd-cellcore.md
+        - name: Cellular
+          href: wcd/wcd-cellular.md     
+        - name: Certificates
+          href: wcd/wcd-certificates.md 
+        - name: CleanPC
+          href: wcd/wcd-cleanpc.md     
+        - name: Connections
+          href: wcd/wcd-connections.md 
+        - name: ConnectivityProfiles
+          href: wcd/wcd-connectivityprofiles.md 
+        - name: CountryAndRegion
+          href: wcd/wcd-countryandregion.md 
+        - name: DesktopBackgroundAndColors
+          href: wcd/wcd-desktopbackgroundandcolors.md     
+        - name: DeveloperSetup
+          href: wcd/wcd-developersetup.md     
+        - name: DeviceFormFactor
+          href: wcd/wcd-deviceformfactor.md  
+        - name: DeviceInfo
+          href: wcd/wcd-deviceinfo.md
+        - name: DeviceManagement
+          href: wcd/wcd-devicemanagement.md  
+        - name: DeviceUpdateCenter
+          href: wcd/wcd-deviceupdatecenter.md
+        - name: DMClient
+          href: wcd/wcd-dmclient.md 
+        - name: EditionUpgrade
+          href: wcd/wcd-editionupgrade.md 
+        - name: EmbeddedLockdownProfiles
+          href: wcd/wcd-embeddedlockdownprofiles.md     
+        - name: FirewallConfiguration
+          href: wcd/wcd-firewallconfiguration.md     
+        - name: FirstExperience
+          href: wcd/wcd-firstexperience.md     
+        - name: Folders
+          href: wcd/wcd-folders.md  
+        - name: HotSpot
+          href: wcd/wcd-hotspot.md
+        - name: InitialSetup
+          href: wcd/wcd-initialsetup.md     
+        - name: InternetExplorer
+          href: wcd/wcd-internetexplorer.md 
+        - name: KioskBrowser
+          href: wcd/wcd-kioskbrowser.md      
+        - name: Licensing
+          href: wcd/wcd-licensing.md 
+        - name: Location
+          href: wcd/wcd-location.md      
+        - name: Maps
+          href: wcd/wcd-maps.md  
+        - name: Messaging
+          href: wcd/wcd-messaging.md     
+        - name: ModemConfigurations
+          href: wcd/wcd-modemconfigurations.md     
+        - name: Multivariant
+          href: wcd/wcd-multivariant.md     
+        - name: NetworkProxy
+          href: wcd/wcd-networkproxy.md     
+        - name: NetworkQOSPolicy
+          href: wcd/wcd-networkqospolicy.md
+        - name: NFC
+          href: wcd/wcd-nfc.md     
+        - name: OOBE
+          href: wcd/wcd-oobe.md    
+        - name: OtherAssets
+          href: wcd/wcd-otherassets.md     
+        - name: Personalization
+          href: wcd/wcd-personalization.md     
+        - name: Policies
+          href: wcd/wcd-policies.md 
+        - name: Privacy
+          href: wcd/wcd-privacy.md  
+        - name: ProvisioningCommands
+          href: wcd/wcd-provisioningcommands.md    
+        - name: RcsPresence
+          href: wcd/wcd-rcspresence.md 
+        - name: SharedPC
+          href: wcd/wcd-sharedpc.md     
+        - name: Shell
+          href: wcd/wcd-shell.md     
+        - name: SMISettings
+          href: wcd/wcd-smisettings.md     
+        - name: Start
+          href: wcd/wcd-start.md    
+        - name: StartupApp
+          href: wcd/wcd-startupapp.md     
+        - name: StartupBackgroundTasks
+          href: wcd/wcd-startupbackgroundtasks.md 
+        - name: StorageD3InModernStandby
+          href: wcd/wcd-storaged3inmodernstandby.md
+        - name: SurfaceHubManagement
+          href: wcd/wcd-surfacehubmanagement.md    
+        - name: TabletMode
+          href: wcd/wcd-tabletmode.md  
+        - name: TakeATest
+          href: wcd/wcd-takeatest.md    
+        - name: TextInput
+          href: wcd/wcd-textinput.md  
+        - name: Theme
+          href: wcd/wcd-theme.md  
+        - name: Time
+          href: wcd/wcd-time.md    
+        - name: UnifiedWriteFilter
+          href: wcd/wcd-unifiedwritefilter.md     
+        - name: UniversalAppInstall
+          href: wcd/wcd-universalappinstall.md 
+        - name: UniversalAppUninstall
+          href: wcd/wcd-universalappuninstall.md 
+        - name: UsbErrorsOEMOverride
+          href: wcd/wcd-usberrorsoemoverride.md
+        - name: WeakCharger
+          href: wcd/wcd-weakcharger.md  
+        - name: WindowsHelloForBusiness
+          href: wcd/wcd-windowshelloforbusiness.md
+        - name: WindowsTeamSettings
+          href: wcd/wcd-windowsteamsettings.md     
+        - name: WLAN
+          href: wcd/wcd-wlan.md     
+        - name: Workplace
+          href: wcd/wcd-workplace.md  
+
+      - name: User Experience Virtualization (UE-V)
+        items:
+          - name: User Experience Virtualization (UE-V) for Windows 10
+            href: ue-v/uev-for-windows.md
+          - name: Get started with UE-V
+            items:
+              - name: Get started with UE-V
+                href: ue-v/uev-getting-started.md
+              - name: What's New in UE-V for Windows 10, version 1607
+                href: ue-v/uev-whats-new-in-uev-for-windows.md
+              - name: User Experience Virtualization Release Notes
+                href: ue-v/uev-release-notes-1607.md
+              - name: Upgrade to UE-V for Windows 10
+                href: ue-v/uev-upgrade-uev-from-previous-releases.md
+          - name: Prepare a UE-V Deployment
+            items:
+              - name: Prepare a UE-V Deployment
+                href: ue-v/uev-prepare-for-deployment.md
+              - name: Deploy Required UE-V Features
+                href: ue-v/uev-deploy-required-features.md
+              - name: Deploy UE-V for use with Custom Applications
+                href: ue-v/uev-deploy-uev-for-custom-applications.md
+          - name: Administer UE-V
+            items:
+              - name: UE-V administion guide
+                href: ue-v/uev-administering-uev.md
+              - name: Manage Configurations for UE-V
+                items:
+                  - name: Manage Configurations for UE-V
+                    href: ue-v/uev-manage-configurations.md
+                  - name: Configuring UE-V with Group Policy Objects
+                    href: ue-v/uev-configuring-uev-with-group-policy-objects.md
+                  - name: Configuring UE-V with Microsoft Endpoint Configuration Manager
+                    href: ue-v/uev-configuring-uev-with-system-center-configuration-manager.md
+                  - name: Administering UE-V with Windows PowerShell and WMI
+                    href: ue-v/uev-administering-uev-with-windows-powershell-and-wmi.md
+                  - name: Managing the UE-V Service and Packages with Windows PowerShell and WMI
+                    href: ue-v/uev-managing-uev-agent-and-packages-with-windows-powershell-and-wmi.md
+                  - name: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
+                    href: ue-v/uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md
+                  - name: Working with Custom UE-V Templates and the UE-V Template Generator
+                    href: ue-v/uev-working-with-custom-templates-and-the-uev-generator.md
+                  - name: Manage Administrative Backup and Restore in UE-V
+                    href: ue-v/uev-manage-administrative-backup-and-restore.md
+                  - name: Changing the Frequency of UE-V Scheduled Tasks
+                    href: ue-v/uev-changing-the-frequency-of-scheduled-tasks.md
+                  - name: Migrating UE-V Settings Packages
+                    href: ue-v/uev-migrating-settings-packages.md
+                  - name: Using UE-V with Application Virtualization Applications
+                    href: ue-v/uev-using-uev-with-application-virtualization-applications.md
+          - name: Troubleshooting UE-V
+            href: ue-v/uev-troubleshooting.md
+          - name: Technical Reference for UE-V
+            items:
+              - name: Technical Reference for UE-V
+                href: ue-v/uev-technical-reference.md
+              - name: Sync Methods for UE-V
+                href: ue-v/uev-sync-methods.md
+              - name: Sync Trigger Events for UE-V
+                href: ue-v/uev-sync-trigger-events.md
+              - name: Synchronizing Microsoft Office with UE-V
+                href: ue-v/uev-synchronizing-microsoft-office-with-uev.md
+              - name: Application Template Schema Reference for UE-V
+                href: ue-v/uev-application-template-schema-reference.md
+              - name: Security Considerations for UE-V
+                href: ue-v/uev-security-considerations.md
 
 
     - name: Use Windows Configuration Designer for Windows 10 Mobile devices
