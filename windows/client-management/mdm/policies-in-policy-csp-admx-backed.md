@@ -275,7 +275,7 @@ ms.date: 10/08/2020
 - [ADMX_FileSys/ShortNameCreationSettings](./policy-csp-admx-filesys.md#admx-filesys-shortnamecreationsettings)
 - [ADMX_FileSys/SymlinkEvaluation](./policy-csp-admx-filesys.md#admx-filesys-symlinkevaluation)
 - [ADMX_FileSys/TxfDeprecatedFunctionality](./policy-csp-admx-filesys.md#admx-filesys-txfdeprecatedfunctionality)
-- [ADMX_FileRecovery/WdiScenarioExecutionPolicy](./policy-csp-admx-filerecovery.md#admx-filerecovery-WdiScenarioExecutionPolicy)
+- [ADMX_FileRecovery/WdiScenarioExecutionPolicy](./policy-csp-admx-filerecovery.md#admx-filerecovery-wdiscenarioexecutionpolicy)
 - [ADMX_FolderRedirection/DisableFRAdminPin](./policy-csp-admx-folderredirection.md#admx-folderredirection-disablefradminpin)
 - [ADMX_FolderRedirection/DisableFRAdminPinByFolder](./policy-csp-admx-folderredirection.md#admx-folderredirection-disablefradminpinbyfolder)
 - [ADMX_FolderRedirection/FolderRedirectionEnableCacheRename](./policy-csp-admx-folderredirection.md#admx-folderredirection-folderredirectionenablecacherename)
