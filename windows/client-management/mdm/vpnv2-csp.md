@@ -33,10 +33,290 @@ The XSDs for all EAP methods are shipped in the box and can be found at the foll
 - `C:\\Windows\\schemas\\EAPHost`
 - `C:\\Windows\\schemas\\EAPMethods`
 
-The following diagram shows the VPNv2 configuration service provider in tree format.
+The following shows the VPNv2 configuration service provider in tree format.
 
-![vpnv2 csp diagram](images/provisioning-csp-vpnv2.png)
+```
+./Vendor/MSFT
+VPNv2
+----ProfileName
+--------AppTriggerList
+------------appTriggerRowId
+----------------App
+--------------------Id
+--------------------Type
+--------RouteList
+------------routeRowId
+----------------Address
+----------------PrefixSize
+----------------Metric
+----------------ExclusionRoute
+--------DomainNameInformationList
+------------dniRowId
+----------------DomainName
+----------------DomainNameType
+----------------DnsServers
+----------------WebProxyServers
+----------------AutoTrigger
+----------------Persistent
+--------TrafficFilterList
+------------trafficFilterId
+----------------App
+--------------------Id
+--------------------Type
+----------------Claims
+----------------Protocol
+----------------LocalPortRanges
+----------------RemotePortRanges
+----------------LocalAddressRanges
+----------------RemoteAddressRanges
+----------------RoutingPolicyType
+----------------Direction
+--------EdpModeId
+--------RememberCredentials
+--------AlwaysOn
+--------LockDown
+--------DeviceTunnel
+--------RegisterDNS
+--------DnsSuffix
+--------ByPassForLocal
+--------TrustedNetworkDetection
+--------ProfileXML
+--------Proxy
+------------Manual
+----------------Server
+------------AutoConfigUrl
+--------APNBinding
+------------ProviderId
+------------AccessPointName
+------------UserName
+------------Password
+------------IsCompressionEnabled
+------------AuthenticationType
+--------DeviceCompliance
+------------Enabled
+------------Sso
+----------------Enabled
+----------------IssuerHash
+----------------Eku
+--------PluginProfile
+------------ServerUrlList
+------------CustomConfiguration
+------------PluginPackageFamilyName
+------------CustomStoreUrl
+------------WebAuth
+----------------Enabled
+----------------ClientId
+--------NativeProfile
+------------Servers
+------------RoutingPolicyType
+------------NativeProtocolType
+------------Authentication
+----------------UserMethod
+----------------MachineMethod
+----------------Eap
+--------------------Configuration
+--------------------Type
+----------------Certificate
+--------------------Issuer
+--------------------Eku
+------------CryptographySuite
+----------------AuthenticationTransformConstants
+----------------CipherTransformConstants
+----------------EncryptionMethod
+----------------IntegrityCheckMethod
+----------------DHGroup
+----------------PfsGroup
+------------L2tpPsk
+------------DisableClassBasedDefaultRoute
+------------PlumbIKEv2TSAsRoutes
 
+
+./User/Vendor/MSFT
+VPNv2
+----ProfileName
+--------AppTriggerList
+------------appTriggerRowId
+----------------App
+--------------------Id
+--------------------Type
+--------RouteList
+------------routeRowId
+----------------Address
+----------------PrefixSize
+----------------Metric
+----------------ExclusionRoute
+--------DomainNameInformationList
+------------dniRowId
+----------------DomainName
+----------------DomainNameType
+----------------DnsServers
+----------------WebProxyServers
+----------------AutoTrigger
+----------------Persistent
+--------TrafficFilterList
+------------trafficFilterId
+----------------App
+--------------------Id
+--------------------Type
+----------------Claims
+----------------Protocol
+----------------LocalPortRanges
+----------------RemotePortRanges
+----------------LocalAddressRanges
+----------------RemoteAddressRanges
+----------------RoutingPolicyType
+--------EdpModeId
+--------RememberCredentials
+--------AlwaysOn
+--------DnsSuffix
+--------ByPassForLocal
+--------TrustedNetworkDetection
+--------ProfileXML
+--------Proxy
+------------Manual
+----------------Server
+------------AutoConfigUrl
+--------APNBinding
+------------ProviderId
+------------AccessPointName
+------------UserName
+------------Password
+------------IsCompressionEnabled
+------------AuthenticationType
+--------DeviceCompliance
+------------Enabled
+------------Sso
+----------------Enabled
+----------------IssuerHash
+----------------Eku
+--------PluginProfile
+------------ServerUrlList
+------------CustomConfiguration
+------------PluginPackageFamilyName
+------------CustomStoreUrl
+------------WebAuth
+----------------Enabled
+----------------ClientId
+--------NativeProfile
+------------Servers
+------------RoutingPolicyType
+------------NativeProtocolType
+------------Authentication
+----------------UserMethod
+----------------MachineMethod
+----------------Eap
+--------------------Configuration
+--------------------Type
+----------------Certificate
+--------------------Issuer
+--------------------Eku
+------------CryptographySuite
+----------------AuthenticationTransformConstants
+----------------CipherTransformConstants
+----------------EncryptionMethod
+----------------IntegrityCheckMethod
+----------------DHGroup
+----------------PfsGroup
+------------L2tpPsk
+------------DisableClassBasedDefaultRoute
+------------PlumbIKEv2TSAsRoutes
+
+
+./Vendor/MSFT
+./User/Vendor/MSFT
+VPNv2
+----ProfileName
+--------AppTriggerList
+------------appTriggerRowId
+----------------App
+--------------------Id
+--------------------Type
+--------RouteList
+------------routeRowId
+----------------Address
+----------------PrefixSize
+----------------Metric
+----------------ExclusionRoute
+--------DomainNameInformationList
+------------dniRowId
+----------------DomainName
+----------------DomainNameType
+----------------DnsServers
+----------------WebProxyServers
+----------------AutoTrigger
+----------------Persistent
+--------TrafficFilterList
+------------trafficFilterId
+----------------App
+--------------------Id
+--------------------Type
+----------------Claims
+----------------Protocol
+----------------LocalPortRanges
+----------------RemotePortRanges
+----------------LocalAddressRanges
+----------------RemoteAddressRanges
+----------------RoutingPolicyType
+----------------Direction
+--------EdpModeId
+--------RememberCredentials
+--------AlwaysOn
+--------LockDown
+--------DeviceTunnel
+--------RegisterDNS
+--------DnsSuffix
+--------ByPassForLocal
+--------TrustedNetworkDetection
+--------ProfileXML
+--------Proxy
+------------Manual
+----------------Server
+------------AutoConfigUrl
+--------APNBinding
+------------ProviderId
+------------AccessPointName
+------------UserName
+------------Password
+------------IsCompressionEnabled
+------------AuthenticationType
+--------DeviceCompliance
+------------Enabled
+------------Sso
+----------------Enabled
+----------------IssuerHash
+----------------Eku
+--------PluginProfile
+------------ServerUrlList
+------------CustomConfiguration
+------------PluginPackageFamilyName
+------------CustomStoreUrl
+------------WebAuth
+----------------Enabled
+----------------ClientId
+--------NativeProfile
+------------Servers
+------------RoutingPolicyType
+------------NativeProtocolType
+------------Authentication
+----------------UserMethod
+----------------MachineMethod
+----------------Eap
+--------------------Configuration
+--------------------Type
+----------------Certificate
+--------------------Issuer
+--------------------Eku
+------------CryptographySuite
+----------------AuthenticationTransformConstants
+----------------CipherTransformConstants
+----------------EncryptionMethod
+----------------IntegrityCheckMethod
+----------------DHGroup
+----------------PfsGroup
+------------L2tpPsk
+------------DisableClassBasedDefaultRoute
+------------PlumbIKEv2TSAsRoutes
+```
 <a href="" id="device-or-user-profile"></a>**Device or User profile**  
 For user profile, use **./User/Vendor/MSFT** path and for device profile, use **./Device/Vendor/MSFT** path.
 
@@ -119,15 +399,15 @@ Supported operations include Get, Add, Replace, and Delete.
 Used to indicate the namespace to which the policy applies. When a Name query is issued, the DNS client compares the name in the query to all of the namespaces under DomainNameInformationList to find a match. This parameter can be one of the following types:
 
 - FQDN - Fully qualified domain name
-- Suffix - A domain suffix that will be appended to the shortname query for DNS resolution. To specify a suffix, prepend a **.** to the DNS suffix.
+- Suffix - A domain suffix that will be appended to the shortname query for DNS resolution. To specify a suffix, prepend **.** to the DNS suffix.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-domainnametype"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/DomainNameType**  
 Returns the namespace type. This value can be one of the following:
 
-- FQDN - If the DomainName was not prepended with a **.** and applies only to the fully qualified domain name (FQDN) of a specified host.
-- Suffix - If the DomainName was prepended with a **.** and applies to the specified namespace, all records in that namespace, and all subdomains.
+- FQDN - If the DomainName was not prepended with a**.** and applies only to the fully qualified domain name (FQDN) of a specified host.
+- Suffix - If the DomainName was prepended with a**.** and applies to the specified namespace, all records in that namespace, and all subdomains.
 
 Value type is chr. Supported operation is Get.
 
@@ -233,7 +513,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 - SplitTunnel - For this traffic filter rule, only the traffic meant for the VPN interface (as determined by the networking stack) goes over the interface. Internet traffic can continue to go over the other interfaces.
 - ForceTunnel - For this traffic rule all IP traffic must go through the VPN Interface only.
 
-This is only applicable for App ID based Traffic Filter rules.
+This is only applicable for App ID-based Traffic Filter rules.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -248,7 +528,7 @@ If no inbound filter is provided, then by default all unsolicited inbound traffi
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-edpmodeid"></a>**VPNv2/**<em>ProfileName</em>**/EdpModeId**  
-Enterprise ID, which is required for connecting this VPN profile with an WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
+Enterprise ID, which is required for connecting this VPN profile with a WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 
 Additionally when connecting with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection), the admin does not have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced config is needed) because the WIP policies and App lists automatically takes effect.
 
@@ -293,7 +573,7 @@ When the DeviceTunnel profile is turned on, it does the following things:
 
 - First, it automatically becomes an "always on" profile.
 - Second, it does not require the presence or logging in of any user to the machine in order for it to connect.
-- Third, no other device tunnel profile maybe be present on the same machine.
+- Third, no other device tunnel profile maybe is present on the same machine.-
 
 A device tunnel profile must be deleted before another device tunnel profile can be added, removed, or connected.
 
@@ -316,7 +596,7 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 Reserved for future use.
 
 <a href="" id="vpnv2-profilename-trustednetworkdetection"></a>**VPNv2/**<em>ProfileName</em>**/TrustedNetworkDetection**  
-Optional. Comma separated string to identify the trusted network. VPN will not connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
+Optional. Comma-separated string to identify the trusted network. VPN will not connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -387,7 +667,7 @@ Added in Windows 10, version 1607. Hashes for the VPN Client to look for the co
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-devicecompliance-sso-eku"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Sso/Eku**  
-Added in Windows 10, version 1607. Comma Separated list of EKUs for the VPN Client to look for the correct certificate for Kerberos Authentication.
+Added in Windows 10, version 1607. Comma-Separated list of EKUs for the VPN Client to look for the correct certificate for Kerberos Authentication.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -582,7 +862,7 @@ Added in Windows 10, version 1607. The preshared key used for an L2TP connectio
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-nativeprofile-disableclassbaseddefaultroute"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/DisableClassBasedDefaultRoute**  
-Added in Windows 10, version 1607. Specifies the class based default routes. For example, if the interface IP begins with 10, it assumes a class a IP and pushes the route to 10.0.0.0/8
+Added in Windows 10, version 1607. Specifies the class-based default routes. For example, if the interface IP begins with 10, it assumes a class an IP and pushes the route to 10.0.0.0/8
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 

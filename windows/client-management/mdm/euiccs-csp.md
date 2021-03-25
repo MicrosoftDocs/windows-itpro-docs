@@ -16,10 +16,34 @@ manager: dansimp
 
 The eUICCs configuration service provider is used to support eUICC enterprise use cases and enables the IT admin to manage (assign, re-assign, remove) subscriptions to employees. This CSP was added in windows 10, version 1709.
 
-The following diagram shows the eUICCs configuration service provider in tree format.
-
-![euiccs csp](images/provisioning-csp-euiccs.png)
-
+The following shows the eUICCs configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+eUICCs
+----eUICC
+--------Identifier
+--------IsActive
+--------PPR1Allowed
+--------PPR1AlreadySet
+--------DownloadServers
+------------ServerName
+----------------DiscoveryState
+----------------AutoEnable
+--------Profiles
+------------ICCID
+----------------ServerName
+----------------MatchingID
+----------------State
+----------------IsEnabled
+----------------PPR1Set
+----------------PPR2Set
+----------------ErrorDetail
+--------Policies
+------------LocalUIEnabled
+--------Actions
+------------ResetToFactoryState
+------------Status
+```
 <a href="" id="--vendor-msft-euiccs"></a>**./Vendor/MSFT/eUICCs**  
 Root node. 
 

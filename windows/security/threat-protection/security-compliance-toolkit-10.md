@@ -31,7 +31,6 @@ The Security Compliance Toolkit consists of:
     - Windows 10 Version 20H2 (October 2020 Update)
     - Windows 10 Version 2004 (May 2020 Update)
     - Windows 10 Version 1909 (November 2019 Update)
-    - Windows 10 Version 1903 (May 2019 Update)
     - Windows 10 Version 1809 (October 2018 Update)
     - Windows 10 Version 1803 (April 2018 Update)
     - Windows 10 Version 1607 (Anniversary Update)
@@ -46,7 +45,7 @@ The Security Compliance Toolkit consists of:
     - Microsoft 365 Apps for enterprise (Sept 2019)
 
 - Microsoft Edge security baseline
-    - Version 85
+    - Version 88
     
 - Windows Update security baseline
     - Windows 10 20H2 and below (October 2020 Update)

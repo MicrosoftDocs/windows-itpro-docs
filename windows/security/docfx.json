@@ -47,7 +47,17 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Microsoft 365 Security"
+      "titleSuffix": "Microsoft 365 Security",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {
       "titleSuffix":{

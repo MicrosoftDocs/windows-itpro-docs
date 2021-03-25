@@ -21,10 +21,23 @@ The EnterpriseExt configuration service provider allows OEMs to set their own un
 
  
 
-The following diagram shows the EnterpriseExt configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
-
-![enterpriseext csp](images/provisioning-csp-enterpriseext.png)
-
+The following shows the EnterpriseExt configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
+```
+./Vendor/MSFT
+EnterpriseExt
+----DeviceCustomData
+--------CustomID
+--------CustomString
+----Brightness
+--------Default
+--------MaxAuto
+----LedAlertNotification
+--------State
+--------Intensity
+--------Period
+--------DutyCycle
+--------Cyclecount
+```
 The following list shows the characteristics and parameters.
 
 <a href="" id="--vendor-msft-enterpriseext"></a>**./Vendor/MSFT/EnterpriseExt**  
