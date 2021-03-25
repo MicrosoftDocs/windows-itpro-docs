@@ -17,10 +17,13 @@ ms.date: 06/26/2017
 
 The WindowsSecurityAuditing configuration service provider (CSP) is used to enable logging of security audit events. This CSP was added in Windows 10, version 1511 for Mobile and Mobile Enterprise. Make sure to consult the [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) to see if this CSP and others are supported on your Windows installation.
 
-The following diagram shows the WindowsSecurityAuditing configuration service provider in tree format.
-
-![windowssecurityauditing csp diagram](images/provisioning-csp-windowssecurityauditing.png)
-
+The following shows the WindowsSecurityAuditing configuration service provider in tree format.
+```
+./Vendor/MSFT
+WindowsSecurityAuditing
+----ConfigurationSettings
+--------EnableSecurityAuditing
+```
 <a href="" id="windowssecurityauditing"></a>**WindowsSecurityAuditing**  
 Root node.
 

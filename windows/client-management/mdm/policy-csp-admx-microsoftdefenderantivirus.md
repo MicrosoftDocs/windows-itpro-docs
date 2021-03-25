@@ -3223,8 +3223,10 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
-<!--Policy-->
+<!--Policy--> 
+
 <a href="" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_DisablegenericrePorts**  
+
 
 <!--SupportedSKUs-->
 <table>
@@ -3356,7 +3358,8 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
-<!--Policy-->
+<!--Policy--> 
+
 <a href="" id="admx-microsoftdefenderantivirus-reporting-recentlycleanedtimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_RecentlyCleanedTimeout**  
 
 <!--SupportedSKUs-->
@@ -4249,7 +4252,11 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-disablescanningmappednetworkdrivesforfullscan"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningMappedNetworkDrivesForFullScan**  
+
+<a href="" 
+id="admx-microsoftdefenderantivirus-scan-disablescanningmappednetworkdrivesforfullscan"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningMappedNetworkDrivesForFullScan** 
+
+ 
 
 <!--SupportedSKUs-->
 <table>
@@ -6135,7 +6142,9 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-signaturedisablenotification"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureDisableNotification**  
+<a href=""id="admx-microsoftdefenderantivirus-signatureupdate-signaturedisablenotification"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureDisableNotification** 
+
+
 
 <!--SupportedSKUs-->
 <table>
@@ -6839,14 +6848,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 

@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 02/04/2021
+ms.date: 03/19/2021
 ms.technology: mde
 ---
 
@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
@@ -35,7 +35,7 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 > Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
 > Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 > 
-> To see the most current engine, platform, and signature date, visit the [Microsoft security encyclopedia](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
+> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 ## Security intelligence updates
 
@@ -48,7 +48,7 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft
 
 Cloud-delivered protection is always on and requires an active connection to the Internet to function. Security intelligence updates occur on a scheduled cadence (configurable via policy). For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md). 
 
-For a list of recent security intelligence updates, see [Antimalware updates change log - Microsoft Security Intelligence](https://www.microsoft.com/wdsi/definitions/antimalware-definition-release-notes).
+For a list of recent security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 Engine updates are included with security intelligence updates and are released on a monthly cadence.
 
@@ -78,11 +78,28 @@ All our updates contain
 <br/><br/>
 
 <details>
-<summary> January-2021 (Platform: 4.18.2101.8 | Engine: 1.1.17800.5)</summary>
+<summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
+
+&ensp;Security intelligence update version: **1.333.7.0**  
+&ensp;Released: **March 9, 2021**  
+&ensp;Platform: **4.19.2102.3**  
+&ensp;Engine: **1.1.17900.7**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+
+- Improved service recovery through [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+- Extend tamper protection scope
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
+<summary> January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
 &ensp;Released: **February 2, 2021**  
-&ensp;Platform: **4.18.2101.8**  
+&ensp;Platform: **4.18.2101.9**  
 &ensp;Engine: **1.1.17800.5**  
 &ensp;Support phase: **Security and Critical Updates**
     
@@ -93,6 +110,7 @@ All our updates contain
 - Increased visibility for credential stealing attempts
 - Improvements in antitampering features in Microsoft Defender Antivirus services
 - Improved support for ARM x64 emulation
+- Fix: EDR Block notification remains in threat history after real-time protection performed initial detection
 
 ### Known Issues
 No known issues  
@@ -113,7 +131,13 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
+<br/><br/>
+<details>
 <summary> October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</summary>
 
 &ensp;Security intelligence update version: **1.327.7.0**  
@@ -133,20 +157,14 @@ No known issues
 
 No known issues  
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
-<br/><br/>
-<details>
+</details><details>
 <summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
 &ensp;Security intelligence update version: **1.325.10.0**  
 &ensp;Released: **October 01, 2020**  
 &ensp;Platform: **4.18.2009.7**  
 &ensp;Engine: **1.1.17500.4**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -172,7 +190,8 @@ No known issues
 &ensp;Released: **August 27, 2020**  
 &ensp;Platform: **4.18.2008.9**  
 &ensp;Engine: **1.1.17400.5**  
-    
+&ensp;Support phase: **Technical upgrade support (only)**
+
 ### What's new
 
 - Add more telemetry events
@@ -332,7 +351,7 @@ Engine: **1.1.16700.2**
 
 - Fixed BSOD on WS2016 with Exchange
 - Support platform updates when TMP is redirected to network path
-- Platform and engine versions are added to [WDSI](https://www.microsoft.com/wdsi/defenderupdates)
+- Platform and engine versions are added to [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - extend Emergency signature update to [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 - Fix 4.18.1911.3 hang
    
@@ -388,7 +407,7 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 
 |Windows 10 release  |Platform version  |Engine version |Support phase |
 |:---|:---|:---|:---|
-|2004  (20H1) |4.18.2004.6 |1.1.17000.2 | Technical upgrade support (only) |
+|2004  (20H1/20H2) |4.18.1909.6 |1.1.17000.2 | Technical upgrade support (only) |
 |1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade support (only) |
 |1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade support (only) |
 |1809  (RS5) |4.18.1807.18075 |1.1.15000.2 | Technical upgrade support (only) |
@@ -406,6 +425,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2103.01</summary>
+
+&ensp;Package version: **1.1.2103.01**    
+&ensp;Platform version: **4.18.2101.9**   
+&ensp;Engine version: **1.17800.5**  
+&ensp;Signature version: **1.331.2302.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2102.03</summary>
 
 &ensp;Package version: **1.1.2102.03**    

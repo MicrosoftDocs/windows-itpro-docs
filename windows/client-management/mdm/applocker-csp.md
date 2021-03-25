@@ -17,10 +17,54 @@ ms.date: 11/19/2019
 
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
-The following diagram shows the AppLocker configuration service provider in tree format.
-
-![applocker csp](images/provisioning-csp-applocker.png)
-
+The following shows the AppLocker configuration service provider in tree format.
+```
+./Vendor/MSFT
+AppLocker
+----ApplicationLaunchRestrictions
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+----------------NonInteractiveProcessEnforcement
+------------MSI
+----------------Policy
+----------------EnforcementMode
+------------Script
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+------------DLL
+----------------Policy
+----------------EnforcementMode
+----------------NonInteractiveProcessEnforcement
+------------CodeIntegrity
+----------------Policy
+----EnterpriseDataProtection
+--------Grouping
+------------EXE
+----------------Policy
+------------StoreApps
+----------------Policy
+----LaunchControl
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+----FamilySafety
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+```
 <a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/AppLocker**  
 Defines the root node for the AppLocker configuration service provider.
 
@@ -288,10 +332,10 @@ The following table show the mapping of information to the AppLocker publisher r
 
 Here is an example AppLocker publisher rule:
 
-``` syntax
-FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Reader" BinaryName="*">
+```xml
+<FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Reader" BinaryName="*">
   <BinaryVersionRange LowSection="*" HighSection="*" />
-  </FilePublisherCondition>
+</FilePublisherCondition>
 ```
 
 You can get the publisher name and product name of apps using a web API.
@@ -299,7 +343,9 @@ You can get the publisher name and product name of apps using a web API.
 **To find publisher and product name for Microsoft apps in Microsoft Store for Business**
 
 1.  Go to the Microsoft Store for Business website, and find your app. For example, Microsoft OneNote.
-2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https:<span><\span>//www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
+
+2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
+
 3.  In your browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values.
 
     <table>
@@ -313,25 +359,22 @@ You can get the publisher name and product name of apps using a web API.
     </thead>
     <tbody>
     <tr class="odd">
-    <td><p>https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata</p></td>
+    <td><p><code>https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata</code></p></td>
     </tr>
     </tbody>
     </table>
 
-
-
-~~~
 Here is the example for Microsoft OneNote:
 
 Request
 
-``` syntax
+```http
 https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata
 ```
 
 Result
 
-``` syntax
+```json
 {
   "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",
   "packageIdentityName": "Microsoft.Office.OneNote",
@@ -339,7 +382,6 @@ Result
   "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 }
 ```
-~~~
 
 <table>
 <colgroup>

@@ -17,10 +17,21 @@ ms.date: 06/26/2017
 
 The Win32AppInventory configuration service provider is used to provide an inventory of installed applications on a device.
 
-The following diagram shows the Win32AppInventory configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
-
-![win32appinventory csp diagram](images/provisioning-csp-win32appinventory.png)
-
+The following shows the Win32AppInventory configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+```
+./Vendor/MSFT
+Win32AppInventory
+----Win32InstalledProgram
+--------InstalledProgram
+------------Name
+------------Publisher
+------------Version
+------------Language
+------------RegKey
+------------Source
+------------MsiProductCode
+------------MsiPackageCode
+```
 <a href="" id="--vendor-msft-win32appinventory"></a>**./Vendor/MSFT/Win32AppInventory**  
 The root node for the Win32AppInventory configuration service provider.
 

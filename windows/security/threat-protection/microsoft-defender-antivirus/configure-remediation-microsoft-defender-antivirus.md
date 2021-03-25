@@ -1,5 +1,5 @@
 ---
-title: Remediate and resolve infections detected by Microsoft Defender Antivirus
+title: Configure remediation for Microsoft Defender Antivirus detections
 description: Configure what Microsoft Defender Antivirus should do when it detects a threat, and how long quarantined files should be retained in the quarantine folder
 keywords: remediation, fix, remove, threats, quarantine, scan, restore
 search.product: eADQiWindows 10XVcnh
@@ -11,47 +11,45 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/06/2021
+ms.date: 03/16/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
 ---
 
-# Configure remediation for Microsoft Defender Antivirus scans
+# Configure remediation for Microsoft Defender Antivirus detections
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-When Microsoft Defender Antivirus runs a scan, it will attempt to remediate or remove threats that it finds. You can configure how Microsoft Defender Antivirus should react to certain threats, whether it should create a restore point before remediating, and when it should remove remediated threats.
+When Microsoft Defender Antivirus runs a scan, it attempts to remediate or remove threats that are detected. You can configure how Microsoft Defender Antivirus should address certain threats, whether a restore point should be created before remediating, and when threats should be removed.
 
-This topic describes how to configure these settings with Group Policy, but you can also use [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) and [Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure). 
+This article describes how to configure these settings by using Group Policy, but you can also use [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) and [Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure). 
 
-You can also use the [`Set-MpPreference` PowerShell cmdlet](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference) or [`MSFT_MpPreference` WMI class](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx) to configure these settings.
+You can also use the [`Set-MpPreference` PowerShell cmdlet](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference) or [`MSFT_MpPreference` WMI class](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN) to configure these settings.
 
 ## Configure remediation options
-
-You can configure how remediation works with the Group Policy settings described in this section.
-
-To configure these settings:
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components > Microsoft Defender Antivirus** and then the **Location** specified in the table below.
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus**. 
 
-4. Select the policy **Setting** as specified in the table below, and set the option to your desired configuration. Select **OK**, and repeat for any other settings.
+4. Using the table below, select a location, and then edit the policy as needed. 
+
+5. Select **OK**.
 
 |Location | Setting | Description | Default setting (if not configured) |
 |:---|:---|:---|:---|
 |Scan | Create a system restore point | A system restore point will be created each day before cleaning or scanning is attempted | Disabled|
 |Scan | Turn on removal of items from scan history folder | Specify how many days items should be kept in the scan history | 30 days |
 |Root | Turn off routine remediation | You can specify whether Microsoft Defender Antivirus automatically remediates threats, or if it should ask the endpoint user what to do. | Disabled (threats are remediated automatically) |
-|Quarantine | Configure removal of items from Quarantine folder | Specify how many days items should be kept in quarantine before being removed | Never removed |
+|Quarantine | Configure removal of items from Quarantine folder | Specify how many days items should be kept in quarantine before being removed | 90 days |
 |Threats | Specify threat alert levels at which default action should not be taken when detected | Every threat that is detected by Microsoft Defender Antivirus is assigned a threat level (low, medium, high, or severe). You can use this setting to define how all threats for each of the threat levels should be remediated (quarantined, removed, or ignored) | Not applicable |
 |Threats | Specify threats upon which default action should not be taken when detected | Specify how specific threats (using their threat ID) should be remediated. You can specify whether the specific threat should be quarantined, removed, or ignored | Not applicable |
 
@@ -64,7 +62,7 @@ To configure these settings:
 
 Also see [Configure remediation-required scheduled full Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) for more remediation-related settings.
 
-## Related topics
+## See also
 
 - [Configure Microsoft Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [Configure scheduled Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
