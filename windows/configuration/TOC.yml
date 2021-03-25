@@ -1,6 +1,6 @@
 - name: Configure Windows 10
   href: index.yml
-- name: Configure Windows 10 appearance
+- name: Configure appearance settings
   items:
     - name: Windows 10 Start and taskbar
       items:
@@ -161,153 +161,156 @@
       href: cortana-at-work/cortana-at-work-policy-settings.md
 
 
-    - name: Windows Configuration Designer provisioning settings (reference)
-      items:
-        - name: Windows Configuration Designer provisioning settings (reference)
-          href: wcd/wcd.md
-        - name: Changes to settings in Windows Configuration Designer
-          href: wcd/wcd-changes.md
-        - name: AccountManagement
-          href: wcd/wcd-accountmanagement.md
-        - name: Accounts
-          href: wcd/wcd-accounts.md 
-        - name: ADMXIngestion
-          href: wcd/wcd-admxingestion.md 
-        - name: AssignedAccess
-          href: wcd/wcd-assignedaccess.md 
-        - name: AutomaticTime
-          href: wcd/wcd-automatictime.md 
-        - name: Browser
-          href: wcd/wcd-browser.md 
-        - name: CallAndMessagingEnhancement
-          href: wcd/wcd-callandmessagingenhancement.md 
-        - name: Calling
-          href: wcd/wcd-calling.md
-        - name: CellCore
-          href: wcd/wcd-cellcore.md
-        - name: Cellular
-          href: wcd/wcd-cellular.md     
-        - name: Certificates
-          href: wcd/wcd-certificates.md 
-        - name: CleanPC
-          href: wcd/wcd-cleanpc.md     
-        - name: Connections
-          href: wcd/wcd-connections.md 
-        - name: ConnectivityProfiles
-          href: wcd/wcd-connectivityprofiles.md 
-        - name: CountryAndRegion
-          href: wcd/wcd-countryandregion.md 
-        - name: DesktopBackgroundAndColors
-          href: wcd/wcd-desktopbackgroundandcolors.md     
-        - name: DeveloperSetup
-          href: wcd/wcd-developersetup.md     
-        - name: DeviceFormFactor
-          href: wcd/wcd-deviceformfactor.md  
-        - name: DeviceInfo
-          href: wcd/wcd-deviceinfo.md
-        - name: DeviceManagement
-          href: wcd/wcd-devicemanagement.md  
-        - name: DeviceUpdateCenter
-          href: wcd/wcd-deviceupdatecenter.md
-        - name: DMClient
-          href: wcd/wcd-dmclient.md 
-        - name: EditionUpgrade
-          href: wcd/wcd-editionupgrade.md 
-        - name: EmbeddedLockdownProfiles
-          href: wcd/wcd-embeddedlockdownprofiles.md     
-        - name: FirewallConfiguration
-          href: wcd/wcd-firewallconfiguration.md     
-        - name: FirstExperience
-          href: wcd/wcd-firstexperience.md     
-        - name: Folders
-          href: wcd/wcd-folders.md  
-        - name: HotSpot
-          href: wcd/wcd-hotspot.md
-        - name: InitialSetup
-          href: wcd/wcd-initialsetup.md     
-        - name: InternetExplorer
-          href: wcd/wcd-internetexplorer.md 
-        - name: KioskBrowser
-          href: wcd/wcd-kioskbrowser.md      
-        - name: Licensing
-          href: wcd/wcd-licensing.md 
-        - name: Location
-          href: wcd/wcd-location.md      
-        - name: Maps
-          href: wcd/wcd-maps.md  
-        - name: Messaging
-          href: wcd/wcd-messaging.md     
-        - name: ModemConfigurations
-          href: wcd/wcd-modemconfigurations.md     
-        - name: Multivariant
-          href: wcd/wcd-multivariant.md     
-        - name: NetworkProxy
-          href: wcd/wcd-networkproxy.md     
-        - name: NetworkQOSPolicy
-          href: wcd/wcd-networkqospolicy.md
-        - name: NFC
-          href: wcd/wcd-nfc.md     
-        - name: OOBE
-          href: wcd/wcd-oobe.md    
-        - name: OtherAssets
-          href: wcd/wcd-otherassets.md     
-        - name: Personalization
-          href: wcd/wcd-personalization.md     
-        - name: Policies
-          href: wcd/wcd-policies.md 
-        - name: Privacy
-          href: wcd/wcd-privacy.md  
-        - name: ProvisioningCommands
-          href: wcd/wcd-provisioningcommands.md    
-        - name: RcsPresence
-          href: wcd/wcd-rcspresence.md 
-        - name: SharedPC
-          href: wcd/wcd-sharedpc.md     
-        - name: Shell
-          href: wcd/wcd-shell.md     
-        - name: SMISettings
-          href: wcd/wcd-smisettings.md     
-        - name: Start
-          href: wcd/wcd-start.md    
-        - name: StartupApp
-          href: wcd/wcd-startupapp.md     
-        - name: StartupBackgroundTasks
-          href: wcd/wcd-startupbackgroundtasks.md 
-        - name: StorageD3InModernStandby
-          href: wcd/wcd-storaged3inmodernstandby.md
-        - name: SurfaceHubManagement
-          href: wcd/wcd-surfacehubmanagement.md    
-        - name: TabletMode
-          href: wcd/wcd-tabletmode.md  
-        - name: TakeATest
-          href: wcd/wcd-takeatest.md    
-        - name: TextInput
-          href: wcd/wcd-textinput.md  
-        - name: Theme
-          href: wcd/wcd-theme.md  
-        - name: Time
-          href: wcd/wcd-time.md    
-        - name: UnifiedWriteFilter
-          href: wcd/wcd-unifiedwritefilter.md     
-        - name: UniversalAppInstall
-          href: wcd/wcd-universalappinstall.md 
-        - name: UniversalAppUninstall
-          href: wcd/wcd-universalappuninstall.md 
-        - name: UsbErrorsOEMOverride
-          href: wcd/wcd-usberrorsoemoverride.md
-        - name: WeakCharger
-          href: wcd/wcd-weakcharger.md  
-        - name: WindowsHelloForBusiness
-          href: wcd/wcd-windowshelloforbusiness.md
-        - name: WindowsTeamSettings
-          href: wcd/wcd-windowsteamsettings.md     
-        - name: WLAN
-          href: wcd/wcd-wlan.md     
-        - name: Workplace
-          href: wcd/wcd-workplace.md  
-
 - name: Reference
   items:
+
+
+  - name: Windows Configuration Designer reference
+    items:
+      - name: Windows Configuration Designer provisioning settings (reference)
+        href: wcd/wcd.md
+      - name: Changes to settings in Windows Configuration Designer
+        href: wcd/wcd-changes.md
+      - name: AccountManagement
+        href: wcd/wcd-accountmanagement.md
+      - name: Accounts
+        href: wcd/wcd-accounts.md 
+      - name: ADMXIngestion
+        href: wcd/wcd-admxingestion.md 
+      - name: AssignedAccess
+        href: wcd/wcd-assignedaccess.md 
+      - name: AutomaticTime
+        href: wcd/wcd-automatictime.md 
+      - name: Browser
+        href: wcd/wcd-browser.md 
+      - name: CallAndMessagingEnhancement
+        href: wcd/wcd-callandmessagingenhancement.md 
+      - name: Calling
+        href: wcd/wcd-calling.md
+      - name: CellCore
+        href: wcd/wcd-cellcore.md
+      - name: Cellular
+        href: wcd/wcd-cellular.md     
+      - name: Certificates
+        href: wcd/wcd-certificates.md 
+      - name: CleanPC
+        href: wcd/wcd-cleanpc.md     
+      - name: Connections
+        href: wcd/wcd-connections.md 
+      - name: ConnectivityProfiles
+        href: wcd/wcd-connectivityprofiles.md 
+      - name: CountryAndRegion
+        href: wcd/wcd-countryandregion.md 
+      - name: DesktopBackgroundAndColors
+        href: wcd/wcd-desktopbackgroundandcolors.md     
+      - name: DeveloperSetup
+        href: wcd/wcd-developersetup.md     
+      - name: DeviceFormFactor
+        href: wcd/wcd-deviceformfactor.md  
+      - name: DeviceInfo
+        href: wcd/wcd-deviceinfo.md
+      - name: DeviceManagement
+        href: wcd/wcd-devicemanagement.md  
+      - name: DeviceUpdateCenter
+        href: wcd/wcd-deviceupdatecenter.md
+      - name: DMClient
+        href: wcd/wcd-dmclient.md 
+      - name: EditionUpgrade
+        href: wcd/wcd-editionupgrade.md 
+      - name: EmbeddedLockdownProfiles
+        href: wcd/wcd-embeddedlockdownprofiles.md     
+      - name: FirewallConfiguration
+        href: wcd/wcd-firewallconfiguration.md     
+      - name: FirstExperience
+        href: wcd/wcd-firstexperience.md     
+      - name: Folders
+        href: wcd/wcd-folders.md  
+      - name: HotSpot
+        href: wcd/wcd-hotspot.md
+      - name: InitialSetup
+        href: wcd/wcd-initialsetup.md     
+      - name: InternetExplorer
+        href: wcd/wcd-internetexplorer.md 
+      - name: KioskBrowser
+        href: wcd/wcd-kioskbrowser.md      
+      - name: Licensing
+        href: wcd/wcd-licensing.md 
+      - name: Location
+        href: wcd/wcd-location.md      
+      - name: Maps
+        href: wcd/wcd-maps.md  
+      - name: Messaging
+        href: wcd/wcd-messaging.md     
+      - name: ModemConfigurations
+        href: wcd/wcd-modemconfigurations.md     
+      - name: Multivariant
+        href: wcd/wcd-multivariant.md     
+      - name: NetworkProxy
+        href: wcd/wcd-networkproxy.md     
+      - name: NetworkQOSPolicy
+        href: wcd/wcd-networkqospolicy.md
+      - name: NFC
+        href: wcd/wcd-nfc.md     
+      - name: OOBE
+        href: wcd/wcd-oobe.md    
+      - name: OtherAssets
+        href: wcd/wcd-otherassets.md     
+      - name: Personalization
+        href: wcd/wcd-personalization.md     
+      - name: Policies
+        href: wcd/wcd-policies.md 
+      - name: Privacy
+        href: wcd/wcd-privacy.md  
+      - name: ProvisioningCommands
+        href: wcd/wcd-provisioningcommands.md    
+      - name: RcsPresence
+        href: wcd/wcd-rcspresence.md 
+      - name: SharedPC
+        href: wcd/wcd-sharedpc.md     
+      - name: Shell
+        href: wcd/wcd-shell.md     
+      - name: SMISettings
+        href: wcd/wcd-smisettings.md     
+      - name: Start
+        href: wcd/wcd-start.md    
+      - name: StartupApp
+        href: wcd/wcd-startupapp.md     
+      - name: StartupBackgroundTasks
+        href: wcd/wcd-startupbackgroundtasks.md 
+      - name: StorageD3InModernStandby
+        href: wcd/wcd-storaged3inmodernstandby.md
+      - name: SurfaceHubManagement
+        href: wcd/wcd-surfacehubmanagement.md    
+      - name: TabletMode
+        href: wcd/wcd-tabletmode.md  
+      - name: TakeATest
+        href: wcd/wcd-takeatest.md    
+      - name: TextInput
+        href: wcd/wcd-textinput.md  
+      - name: Theme
+        href: wcd/wcd-theme.md  
+      - name: Time
+        href: wcd/wcd-time.md    
+      - name: UnifiedWriteFilter
+        href: wcd/wcd-unifiedwritefilter.md     
+      - name: UniversalAppInstall
+        href: wcd/wcd-universalappinstall.md 
+      - name: UniversalAppUninstall
+        href: wcd/wcd-universalappuninstall.md 
+      - name: UsbErrorsOEMOverride
+        href: wcd/wcd-usberrorsoemoverride.md
+      - name: WeakCharger
+        href: wcd/wcd-weakcharger.md  
+      - name: WindowsHelloForBusiness
+        href: wcd/wcd-windowshelloforbusiness.md
+      - name: WindowsTeamSettings
+        href: wcd/wcd-windowsteamsettings.md     
+      - name: WLAN
+        href: wcd/wcd-wlan.md     
+      - name: Workplace
+        href: wcd/wcd-workplace.md  
+
+  
     - name: Configure Windows 10 Mobile devices
       href: mobile-devices/configure-mobile.md
     - name: User Experience Virtualization (UE-V)
@@ -376,10 +379,6 @@
               href: ue-v/uev-application-template-schema-reference.md
             - name: Security Considerations for UE-V
               href: ue-v/uev-security-considerations.md
-
-
-
-
 
 
     - name: Use Windows Configuration Designer for Windows 10 Mobile devices
