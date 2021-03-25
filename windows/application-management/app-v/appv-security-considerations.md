@@ -33,7 +33,7 @@ Effective as of June, 2014, the PackageStoreAccessControl (PSAC) feature introdu
 
 **Apply the most recent security updates to all computers**. To stay informed about the latest updates for operating systems, Microsoft SQL Server, and App-V, see the [Microsoft Security TechCenter](https://technet.microsoft.com/security/bb291012). (THIS LINK NEEDS TO BE UPDATED)
 
-**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all App-V and App-V administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](https://docs.microsoft.com/sql/relational-databases/security/password-policy) and [Strong Passwords](https://docs.microsoft.com/sql/relational-databases/security/strong-passwords). (THIS LINK NEEDS TO BE UPDATED)
+**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all App-V and App-V administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](/sql/relational-databases/security/password-policy) and [Strong Passwords](/sql/relational-databases/security/strong-passwords). (THIS LINK NEEDS TO BE UPDATED)
 
 ## Accounts and groups in App-V
 

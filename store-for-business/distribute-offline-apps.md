@@ -39,13 +39,13 @@ Offline-licensed apps offer an alternative to online apps, and provide additiona
 
 You can't distribute offline-licensed apps directly from Microsoft Store. Once you download the items for the offline-licensed app, you have options for distributing the apps:
 
-- **Deployment Image Servicing and Management**. DISM is a command-line tool that is used to mount and service Microsoft Windows images before deployment. You can also use DISM to install, uninstall, configure, and update Windows features, packages, drivers, and international settings in a .wim file or VHD using the DISM servicing commands. DISM commands are used on offline images. For more information, see [Deployment Image Servicing and Management](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
+- **Deployment Image Servicing and Management**. DISM is a command-line tool that is used to mount and service Microsoft Windows images before deployment. You can also use DISM to install, uninstall, configure, and update Windows features, packages, drivers, and international settings in a .wim file or VHD using the DISM servicing commands. DISM commands are used on offline images. For more information, see [Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
 
-- **Create provisioning package**. You can use Windows Imaging and Configuration Designer (ICD) to create a provisioning package for your offline app. Once you have the package, there are options to [apply the provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-apply-package). For more information, see [Provisioning Packages for Windows 10](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages).
+- **Create provisioning package**. You can use Windows Imaging and Configuration Designer (ICD) to create a provisioning package for your offline app. Once you have the package, there are options to [apply the provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package). For more information, see [Provisioning Packages for Windows 10](/windows/configuration/provisioning-packages/provisioning-packages).
 
 - **Mobile device management provider or management server.** You can use a mobile device management (MDM) provider or management server to distribute offline apps. For more information, see these topics:
-    - [Manage apps from Microsoft Store for Business with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-    - [Manage apps from Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business)<br>
+    - [Manage apps from Microsoft Store for Business with Microsoft Endpoint Configuration Manager](/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+    - [Manage apps from Microsoft Store for Business with Microsoft Intune](/mem/intune/apps/windows-store-for-business)<br>
 
 For third-party MDM providers or management servers, check your product documentation.
 

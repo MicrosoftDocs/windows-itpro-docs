@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 Microsoft Defender Antivirus lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
 
@@ -47,11 +47,11 @@ If Microsoft Defender Antivirus did not download protection updates for a specif
 
 3. Click **OK**.
 
-4.	[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+4.	[Deploy the updated policy as usual](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 ### Use Group Policy to enable and configure the catch-up update feature
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
@@ -71,18 +71,18 @@ Use the following cmdlets:
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Use Windows Management Instruction (WMI) to configure catch-up protection updates
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 
 ```WMI
 SignatureUpdateCatchupInterval
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ## Set the number of days before protection is reported as out-of-date
@@ -91,7 +91,7 @@ You can also specify the number of days after which Microsoft Defender Antivirus
 
 ### Use Group Policy to specify the number of days before protection is considered out-of-date
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
@@ -124,7 +124,7 @@ This feature can be enabled for both full and quick scans.
 
 1.  Ensure you have set up at least one scheduled scan.
 
-2.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+2.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
@@ -150,11 +150,11 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-See [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Use Windows Management Instruction (WMI) to configure catch-up scans
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 
 ```WMI
 DisableCatchupFullScan
@@ -162,7 +162,7 @@ DisableCatchupQuickScan
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ### Use Configuration Manager to configure catch-up scans
@@ -173,7 +173,7 @@ See the following for more information and allowed parameters:
 
 3. Click **OK**.
 
-4.	[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+4.	[Deploy the updated policy as usual](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 ## Related articles
 

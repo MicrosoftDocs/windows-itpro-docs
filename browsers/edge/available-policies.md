@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 > Applies to: Microsoft Edge on Windows 10 and Windows 10 Mobile
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
 
 You can customize your organization's browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many. For example, you can set up multiple security settings in a Group Policy Object (GPO) linked to a domain, and then apply those settings to every computer in the domain. 
 
@@ -218,8 +218,8 @@ Some policy settings have additional options you can configure. For example, if 
 
 
 ## Related topics
-- [Mobile Device Management (MDM) settings](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)
-- [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921)
-- [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922)
-- [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923)
-- [Group Policy and Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=617924).
+- [Mobile Device Management (MDM) settings](/windows/client-management/mdm/policy-configuration-service-provider)
+- [Group Policy and the Group Policy Management Console (GPMC)](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)
+- [Group Policy and the Local Group Policy Editor](/internet-explorer/ie11-deploy-guide/group-policy-and-local-group-policy-editor-ie11)
+- [Group Policy and the Advanced Group Policy Management (AGPM)](/internet-explorer/ie11-deploy-guide/group-policy-and-advanced-group-policy-mgmt-ie11)
+- [Group Policy and Windows PowerShell](/internet-explorer/ie11-deploy-guide/group-policy-windows-powershell-ie11).

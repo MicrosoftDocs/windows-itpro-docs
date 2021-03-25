@@ -17,7 +17,7 @@ ms.author: dansimp
 Discover what's new and updated in the Microsoft Edge for both Windows 10 and Windows 10 Mobile.
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
 
 #### [2018](#tab/2018/)
 ## October 2018
@@ -74,18 +74,18 @@ We have discontinued the **Configure Favorites** group policy, so use the [Provi
 
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Browser: Microsoft Edge and Internet Explorer 11](enterprise-guidance-using-microsoft-edge-and-ie11.md) |Added the infographic image and a download link.|
+|[Browser: Microsoft Edge and Internet Explorer 11](./emie-to-improve-compatibility.md) |Added the infographic image and a download link.|
 |[Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md) |Added a note about the 65 second wait before checking for a newer version of the site list .XML file. |
 |[Available policies for Microsoft Edge](available-policies.md) |Added notes to the Configure the Enterprise Mode Site List Group Policy and the EnterpriseModeSiteList MDM policy about the 65 second wait before checking for a newer version of the site list .XML file. |
 |Microsoft Edge - Deployment Guide for IT Pros |Added a link to the Microsoft Edge infographic, helping you to evaluate the potential impact of using Microsoft Edge in your organization. |
-|[Browser: Microsoft Edge and Internet Explorer 11](enterprise-guidance-using-microsoft-edge-and-ie11.md) |Added a link to the Microsoft Edge infographic, helping you to evaluate the potential impact of using Microsoft Edge in your organization. |
+|[Browser: Microsoft Edge and Internet Explorer 11](./emie-to-improve-compatibility.md) |Added a link to the Microsoft Edge infographic, helping you to evaluate the potential impact of using Microsoft Edge in your organization. |
 
 ## July 2016
 
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Microsoft Edge requirements and language support](hardware-and-software-requirements.md)| Updated to include a note about the Long Term Servicing Branch (LTSB). |
-|[Enterprise guidance about using Microsoft Edge and Internet Explorer 11](enterprise-guidance-using-microsoft-edge-and-ie11.md) | Content moved from What's New section. |
+|[Microsoft Edge requirements and language support](./about-microsoft-edge.md)| Updated to include a note about the Long Term Servicing Branch (LTSB). |
+|[Enterprise guidance about using Microsoft Edge and Internet Explorer 11](./emie-to-improve-compatibility.md) | Content moved from What's New section. |
 |[Available policies for Microsoft Edge](available-policies.md) |Updated |
 
 
@@ -93,7 +93,7 @@ We have discontinued the **Configure Favorites** group policy, so use the [Provi
 
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Security enhancements for Microsoft Edge](security-enhancements-microsoft-edge.md) |New |
+|[Security enhancements for Microsoft Edge](./group-policies/security-privacy-management-gp.md) |New |
 
 ## May 2016
 

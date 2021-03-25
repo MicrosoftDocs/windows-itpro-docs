@@ -44,9 +44,9 @@ Changes to audit policy that are audited include:
 
 -   Changing the value of CrashOnAuditFail.
 
--   Changing audit settings on an object (for example, modifying the system access control list ([SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx)) for a file or registry key).
+-   Changing audit settings on an object (for example, modifying the system access control list ([SACL](/windows/win32/secauthz/access-control-lists)) for a file or registry key).
 
-> **Note**&nbsp;&nbsp;[SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) change auditing is performed when a SACL for an object has changed and the Policy Change category is configured. Discretionary access control list (DACL) and owner change auditing are performed when Object Access auditing is configured and the object's SACL is set for auditing of the DACL or owner change.
+> **Note**&nbsp;&nbsp;[SACL](/windows/win32/secauthz/access-control-lists) change auditing is performed when a SACL for an object has changed and the Policy Change category is configured. Discretionary access control list (DACL) and owner change auditing are performed when Object Access auditing is configured and the object's SACL is set for auditing of the DACL or owner change.
 
 -   Changing anything in the Special Groups list.
 
@@ -83,4 +83,3 @@ All other events in this subcategory will be logged regardless of the "Audit Pol
 -   [4904](event-4904.md)(S): An attempt was made to register a security event source.
 
 -   [4905](event-4905.md)(S): An attempt was made to unregister a security event source.
-

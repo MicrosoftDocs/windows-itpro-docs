@@ -37,7 +37,7 @@ We strongly suggest that the only unenlightened apps you add to your allowed app
 >After revoking WIP, unenlightened apps will have to be uninstalled and re-installed since their settings files will remain encrypted.
 
 >[!Note]
->For more info about creating enlightened apps, see the [Windows Information Protection (WIP)](https://msdn.microsoft.com/windows/uwp/enterprise/wip-hub) topic in the Windows Dev Center.
+>For more info about creating enlightened apps, see the [Windows Information Protection (WIP)](/windows/uwp/enterprise/wip-hub) topic in the Windows Dev Center.
 
 ## Unenlightened app behavior
 This table includes info about how unenlightened apps might behave, based on your Windows Information Protection (WIP) networking policies, your app configuration, and potentially whether the app connects to network resources directly by using IP addresses or by using hostnames.

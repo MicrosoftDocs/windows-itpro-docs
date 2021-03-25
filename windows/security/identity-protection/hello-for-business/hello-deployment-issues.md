@@ -39,7 +39,7 @@ Before the user's Windows Hello for Business key is synced, sign-in's with Windo
 
 In environments impacted with this issue, after the first sign-in with Windows Hello for Business after provisioning is completed, the next sign-in attempt will fail. In environments where domain controllers are running a mix of builds, only some may be impacted by this issue and subsequent logon attempts may be sent different domain controllers. This may result in the sign-in failures appearing to be intermittent.
 
-After the initial logon attempt, the user's Windows Hello for Business public key is being deleted from the msDS-KeyCredentialLink attribute. This can be verified by querying a user's msDS-KeyCredentialLink attribute before and after sign-in. The msDS-KeyCredentialLink can be queried in AD using [Get-ADUser](https://docs.microsoft.com/powershell/module/addsadministration/get-aduser) and specifying *msds-keycredentiallink* for the *-Properties* parameter.
+After the initial logon attempt, the user's Windows Hello for Business public key is being deleted from the msDS-KeyCredentialLink attribute. This can be verified by querying a user's msDS-KeyCredentialLink attribute before and after sign-in. The msDS-KeyCredentialLink can be queried in AD using [Get-ADUser](/powershell/module/addsadministration/get-aduser) and specifying *msds-keycredentiallink* for the *-Properties* parameter.
 
 ### Resolving User Public Key Deletion Issue
 

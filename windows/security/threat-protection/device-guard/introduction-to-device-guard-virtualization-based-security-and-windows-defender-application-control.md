@@ -36,17 +36,15 @@ When we originally designed this configuration state, we did so with a specific 
 
 Configurable code integrity carries no specific hardware or software requirements other than running Windows 10, which means many IT professionals were wrongly denied the benefits of this powerful application control capability.
 
-Since the initial release of Windows 10, the world has witnessed numerous hacking and malware attacks where application control alone could have prevented the attack altogether. With this in mind, we are discussing and documenting configurable code integrity as an independent technology within our security stack and giving it a name of its own: [Windows Defender Application Control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control). 
+Since the initial release of Windows 10, the world has witnessed numerous hacking and malware attacks where application control alone could have prevented the attack altogether. With this in mind, we are discussing and documenting configurable code integrity as an independent technology within our security stack and giving it a name of its own: [Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md). 
 We hope this change will help us better communicate options for adopting application control within an organization.
 
 ## Related articles
 
-[Windows Defender Application Control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control)
+[Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md)
 
 [Dropping the Hammer Down on Malware Threats with Windows 10’s Windows Defender](https://channel9.msdn.com/Events/Ignite/2015/BRK2336)
 
 [Driver compatibility with Windows Defender in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10)
 
-[Code integrity](https://technet.microsoft.com/library/dd348642.aspx)
-
-
+[Code integrity](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd348642(v=ws.10))

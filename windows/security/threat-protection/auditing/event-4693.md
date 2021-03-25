@@ -27,7 +27,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time that recovery is attempted for a [DPAPI](https://msdn.microsoft.com/library/ms995355.aspx) Master Key.
+This event generates every time that recovery is attempted for a [DPAPI](/previous-versions/ms995355(v=msdn.10)) Master Key.
 
 While unprotecting data, if DPAPI cannot use the Master Key protected by the user's password, it sends the backup Master Key to a domain controller by using a mutually authenticated and privacy protected RPC call. The domain controller then decrypts the Master Key with its private key and sends it back to the client by using the same protected RPC call. This protected RPC call is used to ensure that no one listening on the network can get the Master Key.
 
@@ -130,4 +130,3 @@ For 4693(S, F): Recovery of data protection master key was attempted.
 -   For domain joined computers, **Recovery Reason** should typically be a domain controller DNS name.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
-

@@ -55,7 +55,7 @@ Enter the service provider name for the mobile operator.
 
 ### DataClassMappingTable
 
-Enter a customized string for the appropriate [data class](https://docs.microsoft.com/windows/desktop/api/mbnapi/ne-mbnapi-mbn_data_class).
+Enter a customized string for the appropriate [data class](/windows/desktop/api/mbnapi/ne-mbnapi-mbn_data_class).
 
 ### NetworkBlockList
 

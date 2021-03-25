@@ -16,7 +16,7 @@ ms.date: 09/16/2019
 
 > [!div class="op_single_selector"]
 >
-> - [IoT Core](policy-csps-supported-by-iot-core.md)
+> - [IoT Core]()
 >
 
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)

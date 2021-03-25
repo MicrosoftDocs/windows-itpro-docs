@@ -32,7 +32,7 @@ ms.topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowPopups](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowpopups)
+- **MDM name:** Browser/[AllowPopups](/windows/client-management/mdm/policy-csp-browser#browser-allowpopups)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups 
 - **Data type:** Integer

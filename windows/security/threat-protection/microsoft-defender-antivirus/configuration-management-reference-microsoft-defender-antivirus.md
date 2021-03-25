@@ -24,16 +24,16 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 You can manage and configure Microsoft Defender Antivirus with the following tools:
 
-- [Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-security-antivirus-policy) (now part of Microsoft Endpoint Manager)
-- [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure) (now part of Microsoft Endpoint Manager)
-- [Group Policy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)
-- [PowerShell cmdlets](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)
-- [Windows Management Instrumentation (WMI)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus)
-- The [Microsoft Malware Protection Command Line Utility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) (referred to as the *mpcmdrun.exe* utility
+- [Microsoft Intune](/mem/intune/protect/endpoint-security-antivirus-policy) (now part of Microsoft Endpoint Manager)
+- [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) (now part of Microsoft Endpoint Manager)
+- [Group Policy](./use-group-policy-microsoft-defender-antivirus.md)
+- [PowerShell cmdlets](./use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [Windows Management Instrumentation (WMI)](./use-wmi-microsoft-defender-antivirus.md)
+- The [Microsoft Malware Protection Command Line Utility](./command-line-arguments-microsoft-defender-antivirus.md) (referred to as the *mpcmdrun.exe* utility
 
 The following articles provide further information, links, and resources for using these tools to manage and configure Microsoft Defender Antivirus.
 

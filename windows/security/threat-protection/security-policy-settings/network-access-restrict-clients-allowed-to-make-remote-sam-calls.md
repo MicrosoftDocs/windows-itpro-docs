@@ -167,7 +167,7 @@ You can mitigate this vulnerability by enabling the **Network access: Restrict c
 If the policy is defined, admin tools, scripts and software that formerly enumerated users, groups and group membership may fail. To identify accounts that may be affected, test this setting in [audit only mode](#audit-only-mode).  
 
 ## Related Topics
-[Security Options](https://technet.microsoft.com/itpro/windows/keep-secure/security-options)
+[Security Options](./security-options.md)
 
 [SAMRi10 - Hardening SAM Remote Access in Windows 10/Server 2016](https://gallery.technet.microsoft.com/SAMRi10-Hardening-Remote-48d94b5b)
 
