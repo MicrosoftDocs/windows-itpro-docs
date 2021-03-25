@@ -87,6 +87,8 @@
           items:
             - name: Build deployment rings for Windows 10 updates
               href: update/waas-deployment-rings-windows-10-updates.md
+            - name: Check release health
+              href: update/check-release-health.md
             - name: Prepare updates using Windows Update for Business
               href: update/waas-manage-updates-wufb.md
             - name: Prepare updates using WSUS

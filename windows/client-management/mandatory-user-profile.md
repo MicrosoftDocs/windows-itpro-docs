@@ -39,7 +39,7 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Windows 10, versions 1507 and 1511 | N/A | v5 |
 | Windows 10, versions 1607, 1703, 1709, 1803, 1809, 1903 and 1909 |  Windows Server 2016 and Windows Server 2019 | v6 |
 
-For more information, see [Deploy Roaming User Profiles, Appendix B](https://docs.microsoft.com/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
+For more information, see [Deploy Roaming User Profiles, Appendix B](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
 
 ## Mandatory user profile
 
@@ -57,9 +57,9 @@ First, you create a default user profile with the customizations that you want, 
    > [!NOTE]
    > Unlike previous versions of Windows, you cannot apply a Start and taskbar layout using a mandatory profile. For alternative methods for customizing the Start menu and taskbar, see [Related topics](#related-topics).
 
-1. [Create an answer file (Unattend.xml)](https://docs.microsoft.com/windows-hardware/customize/desktop/wsim/create-or-open-an-answer-file) that sets the [CopyProfile](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-copyprofile) parameter to **True**. The CopyProfile parameter causes Sysprep to copy the currently signed-on user’s profile folder to the default user profile. You can use [Windows System Image Manager](https://docs.microsoft.com/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference), which is part of the Windows Assessment and Deployment Kit (ADK) to create the Unattend.xml file.
+1. [Create an answer file (Unattend.xml)](/windows-hardware/customize/desktop/wsim/create-or-open-an-answer-file) that sets the [CopyProfile](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-copyprofile) parameter to **True**. The CopyProfile parameter causes Sysprep to copy the currently signed-on user’s profile folder to the default user profile. You can use [Windows System Image Manager](/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference), which is part of the Windows Assessment and Deployment Kit (ADK) to create the Unattend.xml file.
 
-1. Uninstall any application you do not need or want from the PC. For examples on how to uninstall Windows 10 Application see [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps). For a list of uninstallable applications, see [Understand the different apps included in Windows 10](https://docs.microsoft.com/windows/application-management/apps-in-windows-10).
+1. Uninstall any application you do not need or want from the PC. For examples on how to uninstall Windows 10 Application see [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps&preserve-view=true). For a list of uninstallable applications, see [Understand the different apps included in Windows 10](/windows/application-management/apps-in-windows-10).
 
    > [!NOTE]
    > It is highly recommended to uninstall unwanted or unneeded apps as it will speed up user sign-in times.
@@ -77,7 +77,7 @@ First, you create a default user profile with the customizations that you want, 
    >
    > ![Microsoft Bing Translator package error](images/sysprep-error.png)
    >
-   > Use the [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) and [Remove-AppxPackage -AllUsers](https://docs.microsoft.com/powershell/module/appx/remove-appxpackage?view=win10-ps) cmdlet in Windows PowerShell to uninstall the app that is listed in the log.
+   > Use the [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps&preserve-view=true) and [Remove-AppxPackage -AllUsers](/powershell/module/appx/remove-appxpackage?view=win10-ps&preserve-view=true) cmdlet in Windows PowerShell to uninstall the app that is listed in the log.
 
 1. The sysprep process reboots the PC and starts at the first-run experience screen. Complete the set up, and then sign in to the computer using an account that has local administrator privileges.
 

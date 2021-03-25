@@ -1344,7 +1344,7 @@ The following list shows the supported values:
 [!INCLUDE [do-not-sync-browser-settings-shortdesc](../../../browsers/edge/shortdesc/do-not-sync-browser-settings-shortdesc.md)]
 
 Related policy:
-   [PreventUsersFromTurningOnBrowserSyncing](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing)
+   [PreventUsersFromTurningOnBrowserSyncing](#experience-preventusersfromturningonbrowsersyncing)
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1438,7 +1438,7 @@ _**Turn syncing off by default but don’t disable**_
 [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../../../browsers/edge/shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
 Related policy:
-   [DoNotSyncBrowserSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
+   [DoNotSyncBrowserSettings](#experience-donotsyncbrowsersetting)
 
 
 <!--/Description-->
@@ -1575,4 +1575,3 @@ Footnotes:
 - 9 - Available in Windows 10, version 20H2.
 
 <!--/Policies-->
-
