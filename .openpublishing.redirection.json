@@ -22,7 +22,7 @@
     },
     {
       "source_path": "devices/hololens/hololens-install-apps.md",
-      "redirect_url": "https://docs.microsoft.com/hololens/holographic-store-apps",
+      "redirect_url": "/hololens/holographic-store-apps",
       "redirect_document_id": false
     },
     {
