@@ -29,7 +29,7 @@ This security audit policy and the event that it records are generated when the 
 
 For information about monitoring potential central access policy changes for an entire file server, see [Monitor the central access policies that apply on a file server](monitor-the-central-access-policies-that-apply-on-a-file-server.md).
 
-Use the following procedures to configure settings to monitor central access policies that are associated with files. These procedures assume that you have configured and deployed Dynamic Access Control in your network. For more information about how to configure and deploy Dynamic Access Control, see [Dynamic Access Control: Scenario Overview](https://technet.microsoft.com/library/hh831717.aspx).
+Use the following procedures to configure settings to monitor central access policies that are associated with files. These procedures assume that you have configured and deployed Dynamic Access Control in your network. For more information about how to configure and deploy Dynamic Access Control, see [Dynamic Access Control: Scenario Overview](/windows-server/identity/solution-guides/dynamic-access-control--scenario-overview).
 
 > [!NOTE]
 > Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.

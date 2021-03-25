@@ -27,7 +27,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time a new [security event source](https://msdn.microsoft.com/library/windows/desktop/aa363661(v=vs.85).aspx) is registered.
+This event generates every time a new [security event source](/windows/win32/eventlog/event-sources) is registered.
 
 You can typically see this event during system startup, if specific roles (Internet Information Services, for example) are installed in the system.
 
@@ -135,4 +135,3 @@ For 4904(S): An attempt was made to register a security event source.
 -   If you have a pre-defined list of allowed security event sources for specific computers or computer types, then you can use this event and check whether “**Event Source\\Source Name**”is in your defined list.
 
 -   Typically this event has an informational purpose.
-

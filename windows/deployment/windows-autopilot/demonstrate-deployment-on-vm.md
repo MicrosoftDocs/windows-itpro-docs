@@ -30,7 +30,7 @@ To get started with Windows Autopilot, you should try it out with a virtual mach
 In this topic you'll learn how to set-up a Windows Autopilot deployment for a VM using Hyper-V.
 
 > [!NOTE]
-> Although there are [multiple platforms](add-devices.md#registering-devices) available to enable Autopilot, this lab primarily uses Intune.
+> Although there are [multiple platforms](/mem/autopilot/add-devices#registering-devices) available to enable Autopilot, this lab primarily uses Intune.
 > 
 > Hyper-V and a VM are not required for this lab. You can also use a physical device. However, the instructions assume that you are using a VM. To use a physical device, skip the instructions to install Hyper-V and create a VM. All references to 'device' in the guide refer to the client device, either physical or virtual.
 
@@ -45,7 +45,7 @@ The following video provides an overview of the process:
 
 These are the things you'll need to complete this lab:
 <table><tr><td>Windows 10 installation media</td><td>Windows 10 Professional or Enterprise (ISO file) for a supported version of Windows 10, semi-annual channel. If you do not already have an ISO to use, a link is provided to download an <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise" data-raw-source="[evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)">evaluation version of Windows 10 Enterprise</a>.</td></tr>
-<tr><td>Internet access</td><td>If you are behind a firewall, see the detailed <a href="windows-autopilot-requirements.md#networking-requirements" data-raw-source="[networking requirements](windows-autopilot-requirements.md#networking-requirements)">networking requirements</a>. Otherwise, just ensure that you have a connection to the Internet.</td></tr>
+<tr><td>Internet access</td><td>If you are behind a firewall, see the detailed <a href="/mem/autopilot/software-requirements#networking-requirements" data-raw-source="[networking requirements](/mem/autopilot/software-requirements#networking-requirements)">networking requirements</a>. Otherwise, just ensure that you have a connection to the Internet.</td></tr>
 <tr><td>Hyper-V or a physical device running Windows 10</td><td>The guide assumes that you will use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.</td></tr>
 <tr><td>An account with Azure AD Premium license</td><td>This guide will describe how to obtain a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.</td></tr></table>
 
@@ -123,11 +123,11 @@ Alternatively, you can install Hyper-V using the Control Panel in Windows under 
 
 After installation is complete, open Hyper-V Manager by typing **virtmgmt.msc** at an elevated command prompt, or by typing **Hyper-V** in the Start menu search box.
 
-To read more about Hyper-V, see [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/about/) and [Hyper-V on Windows Server](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-on-windows-server).
+To read more about Hyper-V, see [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/) and [Hyper-V on Windows Server](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server).
 
 ## Create a demo VM
 
-Now that Hyper-V is enabled, we need to create a VM running Windows 10. We can [create a VM](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine) and [virtual network](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/connect-to-network) using Hyper-V Manager, but it is simpler to use Windows PowerShell.
+Now that Hyper-V is enabled, we need to create a VM running Windows 10. We can [create a VM](/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine) and [virtual network](/virtualization/hyper-v-on-windows/quick-start/connect-to-network) using Hyper-V Manager, but it is simpler to use Windows PowerShell.
 
 To use Windows PowerShell, we just need to know two things:
 
@@ -420,7 +420,7 @@ Optional: see the following video for an overview of the process.
 
 > [!video https://www.youtube.com/embed/IpLIZU_j7Z0]
 
-First, you need a MSfB account.  You can use the same one you created above for Intune, or follow [these instructions](https://docs.microsoft.com/microsoft-store/windows-store-for-business-overview) to create a new one.
+First, you need a MSfB account.  You can use the same one you created above for Intune, or follow [these instructions](/microsoft-store/windows-store-for-business-overview) to create a new one.
 
 Next, sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) using your test account by clicking **Sign in** on the upper-right-corner of the main page.
 
@@ -593,13 +593,13 @@ Soon after reaching the desktop, the device should show up in Intune as an **ena
 Once you select a language and a keyboard layout, your company branded sign-in screen should appear. Provide your Azure Active Directory credentials and you're all done.
 
 > [!TIP]
-> If you receive a message that "Something went wrong" and it "Looks like we can't connect to the URL for your organization's MDM terms of use", verify that you have correctly [assigned licenses](https://docs.microsoft.com/mem/intune/fundamentals/licenses-assign) to the current user.
+> If you receive a message that "Something went wrong" and it "Looks like we can't connect to the URL for your organization's MDM terms of use", verify that you have correctly [assigned licenses](/mem/intune/fundamentals/licenses-assign) to the current user.
 
 Windows Autopilot will now take over to automatically join your device into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoint you've created to go through this process again with different settings.
 
 ## Remove devices from Autopilot
 
-To use the device (or VM) for other purposes after completion of this lab, you will need to remove (deregister) it from Autopilot via either Intune or MSfB, and then reset it.  Instructions for deregistering devices can be found at [Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal) and below.
+To use the device (or VM) for other purposes after completion of this lab, you will need to remove (deregister) it from Autopilot via either Intune or MSfB, and then reset it.  Instructions for deregistering devices can be found at [Enroll Windows devices in Intune by using Windows Autopilot](/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Remove devices by using wipe, retire, or manually unenrolling the device](/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal) and below.
 
 ### Delete (deregister) Autopilot device
 
@@ -647,7 +647,7 @@ In this example, the computer supports SLAT and Hyper-V.
 > [!NOTE]
 > If one or more requirements are evaluated as **No** then the computer does not support installing Hyper-V.  However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the **Virtualization Enabled In Firmware** setting from **No** to **Yes**. The location of this setting will depend on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
 
-You can also identify Hyper-V support using [tools](https://blogs.msdn.microsoft.com/taylorb/2008/06/19/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v/) provided by the processor manufacturer, the [msinfo32](https://technet.microsoft.com/library/cc731397.aspx) tool, or you can download the [Coreinfo](https://technet.microsoft.com/sysinternals/cc835722) utility and run it, as shown in the following example:
+You can also identify Hyper-V support using [tools](/archive/blogs/taylorb/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v) provided by the processor manufacturer, the [msinfo32](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731397(v=ws.11)) tool, or you can download the [Coreinfo](/sysinternals/downloads/coreinfo) utility and run it, as shown in the following example:
 
 ```console
 C:>coreinfo -v
@@ -801,7 +801,7 @@ In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add a Win32 app to Intune.
 
-For more information on adding apps to Intune, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management).
+For more information on adding apps to Intune, see [Intune Standalone - Win32 app management](/intune/apps-win32-app-management).
 
 ### Add Office 365
 
@@ -874,7 +874,7 @@ In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add Office to Intune.
 
-For more information on adding Office apps to Intune, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365).
+For more information on adding Office apps to Intune, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](/intune/apps-add-office365).
 
 If you installed both the win32 app (Notepad++) and Office (just Excel) per the instructions in this lab, your VM will show them in the apps list, although it could take several minutes to populate:
 

@@ -21,7 +21,7 @@ ms.technology: mde
 -   Windows Server 2016
 
 
-This event generates when [SID History](https://msdn.microsoft.com/library/ms679833(v=vs.85).aspx) was added to an account.
+This event generates when [SID History](/windows/win32/adschema/a-sidhistory) was added to an account.
 
 See more information about SID History here: <https://technet.microsoft.com/library/cc779590(v=ws.10).aspx>.
 
@@ -72,4 +72,3 @@ There is no example of this event in this document.
 ## Security Monitoring Recommendations
 
 -   There is no recommendation for this event in this document.
-

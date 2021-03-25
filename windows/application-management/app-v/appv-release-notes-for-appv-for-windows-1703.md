@@ -109,9 +109,9 @@ The following are known issues and workarounds for Application Virtualization (A
 For information that can help with troubleshooting App-V for Windows 10, see:
 - [Application Virtualization (App-V): List of Microsoft Support Knowledge Base Articles](https://social.technet.microsoft.com/wiki/contents/articles/14272.app-v-v5-x-list-of-microsoft-support-knowledge-base-articles.aspx)
 
-- [The Official Microsoft App-V Team Blog](https://blogs.technet.microsoft.com/appv/)
+- [The Official Microsoft App-V Team Blog](/archive/blogs/appv/)
 
-- [Technical Reference for App-V](https://technet.microsoft.com/itpro/windows/manage/appv-technical-reference)
+- [Technical Reference for App-V](./appv-technical-reference.md)
 
 - [App-V TechNet Forum](https://social.technet.microsoft.com/forums/en-us/home?forum=mdopappv)
 

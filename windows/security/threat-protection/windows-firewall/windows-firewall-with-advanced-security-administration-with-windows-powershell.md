@@ -31,7 +31,7 @@ In future versions of Windows, Microsoft might remove the netsh functionality fo
 
 Windows PowerShell and netsh command references are at the following locations.
 
--   [Netsh Commands for Windows Defender Firewall](https://technet.microsoft.com/library/cc771920)
+-   [Netsh Commands for Windows Defender Firewall](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771920(v=ws.10))
 
 ## Scope
 
@@ -349,7 +349,7 @@ New-NetIPsecRule -DisplayName “Require Inbound Authentication” -PolicyStore 
 
 ### Add custom authentication methods to an IPsec rule
 
-If you want to create a custom set of quick-mode proposals that includes both AH and ESP in an IPsec rule object, you create the associated objects separately and link their associations. For more information about authentication methods, see [Choosing the IPsec Protocol](https://technet.microsoft.com/library/cc757847(WS.10).aspx) .
+If you want to create a custom set of quick-mode proposals that includes both AH and ESP in an IPsec rule object, you create the associated objects separately and link their associations. For more information about authentication methods, see [Choosing the IPsec Protocol](/previous-versions/windows/it-pro/windows-server-2003/cc757847(v=ws.10)) .
 
 You can then use the newly created custom quick-mode policies when you create IPsec rules. The cryptography set object is linked to an IPsec rule object.
 
@@ -586,7 +586,7 @@ To deploy server isolation, we layer a firewall rule that restricts traffic to a
 
 The following firewall rule allows Telnet traffic from user accounts that are members of a custom group called “Authorized to Access Server.” This access can additionally be restricted based on the  device, user, or both by specifying the restriction parameters.
 
-A Security Descriptor Definition Language (SDDL) string is created by extending a user or group’s security identifier (SID). For more information about finding a group’s SID, see: [Finding the SID for a group account](https://technet.microsoft.com/library/cc753463(WS.10).aspx#bkmk_FINDSID).
+A Security Descriptor Definition Language (SDDL) string is created by extending a user or group’s security identifier (SID). For more information about finding a group’s SID, see: [Finding the SID for a group account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753463(v=ws.10)#bkmk_FINDSID).
 
 Restricting access to a group allows administrations to extend strong authentication support through Windows Defender Firewall and/or IPsec policies.
 
@@ -608,7 +608,7 @@ Windows PowerShell
 $secureMachineGroup = "D:(A;;CC;;;$SIDofSecureMachineGroup)"
 ```
 
-For more information about how to create security groups or how to determine the SDDL string, see [Working with SIDs](https://technet.microsoft.com/library/ff730940.aspx).
+For more information about how to create security groups or how to determine the SDDL string, see [Working with SIDs](/previous-versions/windows/it-pro/windows-powershell-1.0/ff730940(v=technet.10)).
 
 Telnet is an application that does not provide encryption. This application can send data, such as names and passwords, over the network. This data can be intercepted by malicious users. If an administrator would like to allow the use of Telnet, but protect the traffic, a firewall rule that requires IPsec encryption can be created. This is necessary so that the administrator can be certain that when this application is used, all of the traffic sent or received by this port is encrypted. If IPsec fails to authorize the connection, no traffic is allowed from this application.
 
@@ -641,7 +641,7 @@ Set-NetFirewallSetting -RemoteMachineTransportAuthorizationList $secureMachineGr
 
 ### Create firewall rules that allow IPsec-protected network traffic (authenticated bypass)
 
-Authenticated bypass allows traffic from a specified trusted  device or user to override firewall block rules. This is helpful when an administrator wants to use scanning servers to monitor and update  devices without the need to use port-level exceptions. For more information, see [How to enable authenticated firewall bypass](https://technet.microsoft.com/library/cc753463(WS.10).aspx).
+Authenticated bypass allows traffic from a specified trusted  device or user to override firewall block rules. This is helpful when an administrator wants to use scanning servers to monitor and update  devices without the need to use port-level exceptions. For more information, see [How to enable authenticated firewall bypass](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753463(v=ws.10)).
 
 In this example, we assume that a blocking firewall rule exists. This example permits any network traffic on any port from any IP address to override the block rule, if the traffic is authenticated as originating from a  device or user account that is a member of the specified  device or user security group.
 
@@ -663,43 +663,38 @@ New-NetFirewallRule –DisplayName “Inbound Secure Bypass Rule" –Direction I
 
 For more information about Windows PowerShell concepts, see the following topics.
 
--   [Windows PowerShell Getting Started Guide](https://go.microsoft.com/fwlink/p/?linkid=113440)
+-   [Windows PowerShell Getting Started Guide](/powershell/scripting/overview)
 
--   [Windows PowerShell User Guide](https://go.microsoft.com/fwlink/p/?linkid=113441)
+-   [Windows PowerShell User Guide](/powershell/scripting/overview)
 
 -   [Windows PowerShell About Help Topics](https://go.microsoft.com/fwlink/p/?linkid=113206)
 
--   [about\_Functions](https://go.microsoft.com/fwlink/p/?linkid=113231)
+-   [about\_Functions](/powershell/module/microsoft.powershell.core/about/about_functions)
 
--   [about\_Functions\_Advanced](https://go.microsoft.com/fwlink/p/?linkid=144511)
+-   [about\_Functions\_Advanced](/powershell/module/microsoft.powershell.core/about/about_functions_advanced)
 
--   [about\_Execution\_Policies](https://go.microsoft.com/fwlink/p/?linkid=135170)
+-   [about\_Execution\_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies)
 
--   [about\_Foreach](https://go.microsoft.com/fwlink/p/?linkid=113229)
+-   [about\_Foreach](/powershell/module/microsoft.powershell.core/about/about_foreach)
 
--   [about\_Objects](https://go.microsoft.com/fwlink/p/?linkid=113241)
+-   [about\_Objects](/powershell/module/microsoft.powershell.core/about/about_objects)
 
--   [about\_Properties](https://go.microsoft.com/fwlink/p/?linkid=113249)
+-   [about\_Properties](/powershell/module/microsoft.powershell.core/about/about_properties)
 
--   [about\_While](https://go.microsoft.com/fwlink/p/?linkid=113275)
+-   [about\_While](/powershell/module/microsoft.powershell.core/about/about_while)
 
--   [about\_Scripts](https://go.microsoft.com/fwlink/p/?linkid=144310)
+-   [about\_Scripts](/powershell/module/microsoft.powershell.core/about/about_scripts)
 
--   [about\_Signing](https://go.microsoft.com/fwlink/p/?linkid=113268)
+-   [about\_Signing](/powershell/module/microsoft.powershell.core/about/about_signing)
 
--   [about\_Throw](https://go.microsoft.com/fwlink/p/?linkid=145153)
+-   [about\_Throw](/powershell/module/microsoft.powershell.core/about/about_throw)
 
--   [about\_PSSessions](https://go.microsoft.com/fwlink/p/?linkid=135181)
+-   [about\_PSSessions](/powershell/module/microsoft.powershell.core/about/about_pssessions)
 
--   [about\_Modules](https://go.microsoft.com/fwlink/p/?linkid=144311)
+-   [about\_Modules](/powershell/module/microsoft.powershell.core/about/about_modules)
 
--   [about\_Command\_Precedence](https://go.microsoft.com/fwlink/p/?linkid=113214)
-
- 
+-   [about\_Command\_Precedence](/powershell/module/microsoft.powershell.core/about/about_command_precedence)
 
  
 
-
-
-
-
+ 

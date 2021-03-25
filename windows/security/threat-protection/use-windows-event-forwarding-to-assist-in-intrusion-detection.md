@@ -123,7 +123,7 @@ This table outlines the built-in delivery options:
 | Minimize bandwidth | This option ensures that the use of network bandwidth for event delivery is strictly controlled. It is an appropriate choice if you want to limit the frequency of network connections made to deliver events. It uses push delivery mode and sets a batch timeout of 6 hours. In addition, it uses a heartbeat interval of 6 hours. |
 | Minimize latency | This option ensures that events are delivered with minimal delay. It is an appropriate choice if you are collecting alerts or critical events. It uses push delivery mode and sets a batch timeout of 30 seconds. |
  
-For more info about delivery options, see [Configure Advanced Subscription Settings](https://technet.microsoft.com/library/cc749167.aspx).
+For more info about delivery options, see [Configure Advanced Subscription Settings](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749167(v=ws.11)).
 
 The primary difference is in the latency which events are sent from the client. If none of the built-in options meet your requirements you can set Custom event delivery options for a given subscription from an elevated command prompt:
 
@@ -655,9 +655,8 @@ Here are the minimum steps for WEF to operate:
 
 You can get more info with the following links:
 
--   [Event Selection](https://msdn.microsoft.com/library/aa385231.aspx)
--   [Event Queries and Event XML](https://msdn.microsoft.com/library/bb399427.aspx)
--   [Event Query Schema](https://msdn.microsoft.com/library/aa385760.aspx)
--   [Windows Event Collector](https://msdn.microsoft.com/library/windows/desktop/bb427443.aspx)
--   [4625(F): An account failed to log on](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4625)
-
+-   [Event Selection](/previous-versions//aa385231(v=vs.85))
+-   [Event Queries and Event XML](/previous-versions/bb399427(v=vs.90))
+-   [Event Query Schema](/windows/win32/wes/queryschema-schema)
+-   [Windows Event Collector](/windows/win32/wec/windows-event-collector)
+-   [4625(F): An account failed to log on](./auditing/event-4625.md)

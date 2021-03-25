@@ -34,7 +34,7 @@ Yes.
 
 ## Do I have to suspend BitLocker protection to download and install system updates and upgrades?
 
-No user action is required for BitLocker in order to apply updates from Microsoft, including [Windows quality updates and feature updates](https://technet.microsoft.com/itpro/windows/manage/waas-quick-start). 
+No user action is required for BitLocker in order to apply updates from Microsoft, including [Windows quality updates and feature updates](/windows/deployment/update/waas-quick-start). 
 Users need to suspend BitLocker for Non-Microsoft software updates, such as:   
 
 -	Some TPM firmware updates if these updates clear the TPM outside of the Windows API. Not every TPM firmware update will clear the TPM and this happens if a known vulnerability has been discovered in the TPM firmware. Users don’t have to suspend BitLocker if the TPM firmware update uses Windows API to clear the TPM because in this case, BitLocker will be automatically suspended. We recommend users testing their TPM firmware updates if they don’t want to suspend BitLocker protection.
@@ -46,4 +46,3 @@ Users need to suspend BitLocker for Non-Microsoft software updates, such as:
 
 > [!NOTE]
 > If you have suspended BitLocker, you can resume BitLocker protection after you have installed the upgrade or update. Upon resuming protection, BitLocker will reseal the encryption key to the new values of the measured components that changed as a part of the upgrade or update. If these types of upgrades or updates are applied without suspending BitLocker, your computer will enter recovery mode when restarting and will require a recovery key or password to access the computer.
- 

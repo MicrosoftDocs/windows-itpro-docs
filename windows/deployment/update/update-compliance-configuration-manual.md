@@ -31,7 +31,7 @@ The requirements are separated into different categories:
 > [!NOTE]
 > Windows 10 MDM and Group Policies are backed by registry keys. It is not recommended you set these registry keys directly for configuration as it can lead to unexpected behavior, so the exact registry key locations are not provided, though they are referenced for troubleshooting configuration issues with the [Update Compliance Configuration Script](update-compliance-configuration-script.md).
 
-Update Compliance has a number of policies that must be appropriately configured in order for devices to be processed by Microsoft and visible in Update Compliance. They are enumerated below, separated by whether the policies will be configured via [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) or Group Policy. For both tables:
+Update Compliance has a number of policies that must be appropriately configured in order for devices to be processed by Microsoft and visible in Update Compliance. They are enumerated below, separated by whether the policies will be configured via [Mobile Device Management](/windows/client-management/mdm/) (MDM) or Group Policy. For both tables:
 
 - **Policy** corresponds to the location and name of the policy.
 - **Value** Indicates what value the policy must be set to. Update Compliance requires *at least* Basic (or Required) diagnostic data, but can function off Enhanced or Full (or Optional).
@@ -43,13 +43,13 @@ Each MDM Policy links to its documentation in the CSP hierarchy, providing its e
 
 | Policy | Value | Function |
 |---------------------------|-|------------------------------------------------------------|
-|**Provider/*ProviderID*/**[**CommercialID**](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp#provider-providerid-commercialid) |[Your CommercialID](update-compliance-get-started.md#get-your-commercialid) |Identifies the device as belonging to your organization. |
-|**System/**[**AllowTelemetry**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) | 1- Basic |Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this value lower than what the policy defines. For more information, see the following policy. |
-|**System/**[**ConfigureTelemetryOptInSettingsUx**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinsettingsux) | 1 - Disable Telemetry opt-in Settings | (in Windows 10, version 1803 and later) Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy or the effective diagnostic data level on devices might not be sufficient. |
-|**System/**[**AllowDeviceNameInDiagnosticData**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowdevicenameindiagnosticdata) | 1 - Allowed | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or set to 0 (Disabled), Device Name will not be sent and will not be visible in Update Compliance, showing `#` instead. |
+|**Provider/*ProviderID*/**[**CommercialID**](/windows/client-management/mdm/dmclient-csp#provider-providerid-commercialid) |[Your CommercialID](update-compliance-get-started.md#get-your-commercialid) |Identifies the device as belonging to your organization. |
+|**System/**[**AllowTelemetry**](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) | 1- Basic |Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this value lower than what the policy defines. For more information, see the following policy. |
+|**System/**[**ConfigureTelemetryOptInSettingsUx**](/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinsettingsux) | 1 - Disable Telemetry opt-in Settings | (in Windows 10, version 1803 and later) Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy or the effective diagnostic data level on devices might not be sufficient. |
+|**System/**[**AllowDeviceNameInDiagnosticData**](/windows/client-management/mdm/policy-csp-system#system-allowdevicenameindiagnosticdata) | 1 - Allowed | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or set to 0 (Disabled), Device Name will not be sent and will not be visible in Update Compliance, showing `#` instead. |
 
 > [!NOTE]
-> If you use Microsoft Intune, set the **ProviderID** to *MS DM Server*. If you use another MDM product, check with its vendor. See also [DMClient CSP](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
+> If you use Microsoft Intune, set the **ProviderID** to *MS DM Server*. If you use another MDM product, check with its vendor. See also [DMClient CSP](/windows/client-management/mdm/dmclient-csp).
 
 ### Group Policies
 
@@ -89,4 +89,4 @@ A full Census sync adds a new registry value to Census's path. When this registr
 
 1. For every device you are manually configuring for Update Compliance, add or modify the registry key located at **HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Census** to include a new **DWORD value** named **FullSync** and set to **1**. 
 2. Run Devicecensus.exe with administrator privileges on every device. Devicecensus.exe is in the System32 folder. No additional run parameters are required. 
-3. After Devicecensus.exe has run, the **FullSync** registry value can be removed or set to **0**. 
+3. After Devicecensus.exe has run, the **FullSync** registry value can be removed or set to **0**.

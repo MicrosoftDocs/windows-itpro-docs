@@ -135,9 +135,9 @@ Three approaches are documented here:
 
 ## Deploying a certificate to Hybrid or Azure AD Joined Devices using Simple Certificate Enrollment Protocol (SCEP) via Intune
 
-Deploying a certificate to Azure AD Joined Devices may be achieved with the Simple Certificate Enrollment Protocol (SCEP) via Intune. For guidance deploying the required infrastructure, refer to [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-scep-configure).
+Deploying a certificate to Azure AD Joined Devices may be achieved with the Simple Certificate Enrollment Protocol (SCEP) via Intune. For guidance deploying the required infrastructure, refer to [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-scep-configure).
 
-Next you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Azure AD Joined Devices using a Trusted root certificate profile with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-trusted-root).
+Next you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Azure AD Joined Devices using a Trusted root certificate profile with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune](/mem/intune/protect/certificates-trusted-root).
 
 Once these requirements have been met, a new device configuration profile may be configured from Intune that provisions a certificate for the user of the device. Proceed as follows:
 
@@ -194,7 +194,7 @@ Once the configuration profile has been created, targeted clients will receive t
 
 ## Using non-Microsoft Enterprise Certificate Authorities
 
-If you are using a Public Key Infrastructure that uses non-Microsoft services, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificate-authority-add-scep-overview).
+If you are using a Public Key Infrastructure that uses non-Microsoft services, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune](/mem/intune/protect/certificate-authority-add-scep-overview).
 
 As an alternative to using SCEP or if none of the previously covered solutions will work in your environment, you can manually generate Certificate Signing Requests (CSR) for submission to your PKI. To assist with this approach, you can use the [Generate-CertificateRequest](https://www.powershellgallery.com/packages/Generate-CertificateRequest) PowerShell commandlet.
 

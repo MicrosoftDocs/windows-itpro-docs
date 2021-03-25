@@ -39,7 +39,7 @@ The GPMC lets you:
 
 -   Create scriptable interfaces to support all of the operations available within the GPMC. You can't use scripts to edit individual policy settings in a GPO.
 
-For more information about the GPMC, see [Group Policy Management Console](https://go.microsoft.com/fwlink/p/?LinkId=214515) on TechNet.
+For more information about the GPMC, see [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753298(v=ws.11)) on TechNet.
 
 ## Searching for Group Policy settings
 To search for Group Policy settings in the Group Policy Management Console (GPMC), use the [Group Policy Search tool](https://go.microsoft.com/fwlink/p/?LinkId=279857). To find the Group Policy settings, click **Windows Components**, and then click **Internet Explorer**.
@@ -47,6 +47,3 @@ To search for Group Policy settings in the Group Policy Management Console (GPMC
  
 
  
-
-
-

@@ -23,21 +23,21 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 ## Use Microsoft Intune to configure scanning options
 
-See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
+See [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
 
 ## Use Microsoft Endpoint Manager to configure scanning options
 
-See [How to create and deploy antimalware policies: Scan settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring Microsoft Endpoint Manager (current branch).
+See [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring Microsoft Endpoint Manager (current branch).
 
 ## Use Group Policy to configure scanning options
 
 To configure the Group Policy settings described in the following table:
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
@@ -48,7 +48,7 @@ To configure the Group Policy settings described in the following table:
 Description | Location and setting | Default setting (if not configured) | PowerShell `Set-MpPreference` parameter or WMI property for `MSFT_MpPreference` class
 ---|---|---|---
 Email scanning See [Email scanning limitations](#ref1)| Scan > Turn on e-mail scanning | Disabled | `-DisableEmailScanning`
-Scan [reparse points](https://msdn.microsoft.com/library/windows/desktop/aa365503.aspx) | Scan > Turn on reparse point scanning | Disabled | Not available
+Scan [reparse points](/windows/win32/fileio/reparse-points) | Scan > Turn on reparse point scanning | Disabled | Not available
 Scan mapped network drives | Scan > Run full scan on mapped network drives | Disabled | `-DisableScanningMappedNetworkDrivesForFullScan`
  Scan archive files (such as .zip or .rar files). The [extensions exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md) will take precedence over this setting. | Scan > Scan archive files | Enabled | `-DisableArchiveScanning`
 Scan files on the network | Scan > Scan network files | Disabled | `-DisableScanningNetworkFiles`
@@ -64,11 +64,11 @@ Specify the level of subfolders within an archive folder to scan | Scan > Specif
 
 ## Use PowerShell to configure scanning options
 
-See [Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ## Use WMI to configure scanning options
 
-For using WMI classes, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx).
+For using WMI classes, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 <a id="ref1"></a>
 

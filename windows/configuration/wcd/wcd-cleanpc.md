@@ -28,4 +28,4 @@ For each setting, the options are **Enable** and **Not configured**.
 
 ## Related topics
 
-- [CleanPC configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/cleanpc-csp)
+- [CleanPC configuration service provider (CSP)](/windows/client-management/mdm/cleanpc-csp)

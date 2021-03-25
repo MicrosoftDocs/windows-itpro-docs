@@ -34,7 +34,7 @@ These tasks must remain enabled, because UE-V cannot function without them.
 
 These scheduled tasks are not configurable with the UE-V tools. Administrators who want to change the scheduled task for these items can create a script that uses the Schtasks.exe command-line options.
 
-For more information about Schtasks.exe, see [Schtasks](https://technet.microsoft.com/library/cc725744(v=ws.11).aspx).
+For more information about Schtasks.exe, see [Schtasks](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc725744(v=ws.11)).
 
 ## UE-V Scheduled Tasks
 

@@ -22,7 +22,7 @@ ms.topic: article
 
 - Windows 10 Pro, Enterprise, and Education
 
-A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access.
+A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access.
 
 The following table lists changes to multi-app kiosk in recent updates.
 
@@ -43,7 +43,7 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 
 ## Configure a kiosk in Microsoft Intune
 
-To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](https://docs.microsoft.com/intune/kiosk-settings). For explanations of the specific settings, see [Windows 10 and later device settings to run as a kiosk in Intune](https://docs.microsoft.com/intune/kiosk-settings-windows).
+To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings). For explanations of the specific settings, see [Windows 10 and later device settings to run as a kiosk in Intune](/intune/kiosk-settings-windows).
 
 <span id="provision" />
 
@@ -114,7 +114,7 @@ You can start your file by pasting the following XML (or any other examples in t
 There are two types of profiles that you can specify in the XML:
 
 - **Lockdown profile**: Users assigned a lockdown profile will see the desktop in tablet mode with the specific apps on the Start screen.
-- **Kiosk profile**: New in Windows 10, version 1803, this profile replaces the KioskModeApp node of the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile will not see the desktop, but only the kiosk app running in full-screen mode.
+- **Kiosk profile**: New in Windows 10, version 1803, this profile replaces the KioskModeApp node of the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile will not see the desktop, but only the kiosk app running in full-screen mode.
 
 A lockdown profile section in the XML has the following entries:
 
@@ -148,7 +148,7 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 
 **AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Windows desktop applications. In Windows 10, version 1809, you can configure a single app in the **AllowedApps** list to run automatically when the assigned access user account signs in.
 
-- For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867), or [get the AUMID from the Start Layout XML](#startlayout).
+- For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](./find-the-application-user-model-id-of-an-installed-app.md), or [get the AUMID from the Start Layout XML](#startlayout).
 - For desktop apps, you need to specify the full path of the executable, which can contain one or more system environment variables in the form of %variableName% (i.e. %systemroot%, %windir%).
 - If an app has a dependency on another app, both must be included in the allowed apps list. For example, Internet Explorer 64-bit has a dependency on Internet Explorer 32-bit, so you must allow both "C:\Program Files\internet explorer\iexplore.exe" and “C:\Program Files (x86)\Internet Explorer\iexplore.exe”.
 - To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app. For an example, see [the AllowedApps sample XML](#apps-sample).
@@ -159,7 +159,7 @@ When the multi-app kiosk configuration is applied to a device, AppLocker rules w
 2. The package app deny list is generated at runtime when the assigned access user signs in. Based on the installed/provisioned package apps available for the user account, assigned access generates the deny list. This list will exclude the default allowed inbox package apps which are critical for the system to function, and then exclude the allowed packages that enterprises defined in the assigned access configuration. If there are multiple apps within the same package, all these apps will be excluded. This deny list will be used to prevent the user from accessing the apps which are currently available for the user but not in the allowed list.
 
     >[!NOTE]
-    >You cannot manage AppLocker rules that are generated by the multi-app kiosk configuration in [MMC snap-ins](https://technet.microsoft.com/library/hh994629.aspx#BKMK_Using_Snapins). Avoid creating AppLocker rules that conflict with AppLocker rules that are generated by the multi-app kiosk configuration.
+    >You cannot manage AppLocker rules that are generated by the multi-app kiosk configuration in [MMC snap-ins](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh994629(v=ws.11)#BKMK_Using_Snapins). Avoid creating AppLocker rules that conflict with AppLocker rules that are generated by the multi-app kiosk configuration.
     >
     >Multi-app kiosk mode doesn’t block the enterprise or the users from installing UWP apps. When a new UWP app is installed during the current assigned access user session, this app will not be in the deny list. When the user signs out and signs in again, the app will be included in the deny list. If this is an enterprise-deployed line-of-business app and you want to allow it to run, update the assigned access configuration to include it in the allowed app list.
 
@@ -344,7 +344,7 @@ In Windows 10, version 1809, you can configure the display name that will be sho
 </Configs>
 ```
 
-On domain-joined devices, local user accounts aren't shown on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the following Group Policy setting: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**. (The corresponding MDM policy setting is [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers in the Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers).)
+On domain-joined devices, local user accounts aren't shown on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the following Group Policy setting: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**. (The corresponding MDM policy setting is [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers in the Policy CSP](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers).)
 
 >[!IMPORTANT]
 >When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
@@ -538,7 +538,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 Provisioning packages can be applied to a device during the first-run experience (out-of-box experience or "OOBE") and after ("runtime").
 
 >[!TIP]
->In addition to the methods below, you can use the PowerShell comdlet [install-provisioningpackage](https://docs.microsoft.com/powershell/module/provisioning/Install-ProvisioningPackage?view=win10-ps) with `-LogsDirectoryPath` to get logs for the operation.
+>In addition to the methods below, you can use the PowerShell comdlet [install-provisioningpackage](/powershell/module/provisioning/Install-ProvisioningPackage?view=win10-ps) with `-LogsDirectoryPath` to get logs for the operation.
 
 #### During initial setup, from a USB drive
 
@@ -575,7 +575,7 @@ Provisioning packages can be applied to a device during the first-run experience
 <span id="alternate-methods" />
 ### Use MDM to deploy the multi-app configuration
 
-Multi-app kiosk mode is enabled by the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). Your MDM policy can contain the assigned access configuration XML.
+Multi-app kiosk mode is enabled by the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp). Your MDM policy can contain the assigned access configuration XML.
 
 If your device is enrolled with a MDM server which supports applying the assigned access configuration, you can use it to apply the setting remotely.
 
@@ -646,27 +646,27 @@ Prevent access to drives from My Computer    |  Enabled - Restrict all drivers
 
 ### MDM policy
 
-Some of the MDM policies based on the [Policy configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) affect all users on the system (i.e. system-wide).
+Some of the MDM policies based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider) affect all users on the system (i.e. system-wide).
 
 Setting |   Value   | System-wide
  --- | --- | ---
-[Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)       | 0 - Not allowed   |   Yes
-[Start/AllowPinnedFolderDocuments](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdocuments) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
-[Start/AllowPinnedFolderDownloads](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdownloads) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
-[Start/AllowPinnedFolderFileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderfileexplorer) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
-[Start/AllowPinnedFolderHomeGroup](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderhomegroup) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
-[Start/AllowPinnedFolderMusic](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldermusic) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
-[Start/AllowPinnedFolderNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldernetwork) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
-[Start/AllowPinnedFolderPersonalFolder](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpersonalfolder) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
-[Start/AllowPinnedFolderPictures](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpictures) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
-[Start/AllowPinnedFolderSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldersettings)    |   0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
-[Start/AllowPinnedFolderVideos](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldervideos) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Experience/AllowCortana](/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)       | 0 - Not allowed   |   Yes
+[Start/AllowPinnedFolderDocuments](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdocuments) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderDownloads](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdownloads) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderFileExplorer](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderfileexplorer) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderHomeGroup](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderhomegroup) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderMusic](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldermusic) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderNetwork](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldernetwork) |    0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderPersonalFolder](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpersonalfolder) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderPictures](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpictures) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderSettings](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldersettings)    |   0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
+[Start/AllowPinnedFolderVideos](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldervideos) |  0 - Shortcut is hidden and disables the setting in the Settings app |   Yes
 Start/DisableContextMenus | 1 - Context menus are hidden for Start apps | No
-[Start/HidePeopleBar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidepeoplebar)        | 1 - True (hide)   |   No
-[Start/HideChangeAccountSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)        | 1 - True (hide) | Yes
-[WindowsInkWorkspace/AllowWindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace)    |   0 - Access to ink workspace is disabled and the feature is turned off   |   Yes
-[Start/StartLayout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-startlayout)    | Configuration dependent   |   No
-[WindowsLogon/DontDisplayNetworkSelectionUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)   |   &lt;Enabled/&gt;    |   Yes
+[Start/HidePeopleBar](/windows/client-management/mdm/policy-csp-start#start-hidepeoplebar)        | 1 - True (hide)   |   No
+[Start/HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)        | 1 - True (hide) | Yes
+[WindowsInkWorkspace/AllowWindowsInkWorkspace](/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace)    |   0 - Access to ink workspace is disabled and the feature is turned off   |   Yes
+[Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout)    | Configuration dependent   |   No
+[WindowsLogon/DontDisplayNetworkSelectionUI](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)   |   &lt;Enabled/&gt;    |   Yes
 
 <span id="lnk-files" />
 

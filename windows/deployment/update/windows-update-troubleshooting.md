@@ -146,7 +146,7 @@ Or
 DownloadManager [0]12F4.1FE8::09/29/2017-13:45:08.530 [agent]DO job {C6E2F6DC-5B78-4608-B6F1-0678C23614BD} hit a transient error, updateId = 5537BD35-BB74-40B2-A8C3-B696D3C97CBA.201 <NULL>, error = 0x80D0000A 
 ``` 
  
-Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping the service associated with Windows Firewall with Advanced Security is not supported by Microsoft. For more information, see [I need to disable Windows Firewall](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766337(v=ws.10)).
+Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping the service associated with Windows Firewall with Advanced Security is not supported by Microsoft. For more information, see [I need to disable Windows Firewall](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766337(v=ws.10)).
  
 ## Issues arising from configuration of conflicting policies 
 Windows Update provides a wide range configuration policy to control the behavior of the Windows Update service in a managed environment. While these policies let you configure the settings at a granular level, misconfiguration or setting conflicting policies may lead to unexpected behaviors. 
@@ -171,7 +171,7 @@ Ensure that devices can reach necessary Windows Update endpoints through the fir
 > [!NOTE]
 > Be sure not to use HTTPS for those endpoints that specify HTTP, and vice versa. The connection will fail.
 
-The specific endpoints can vary between Windows 10 versions. See, for example, [Windows 10 2004 Enterprise connection endpoints](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints). Similar articles for other Windows 10 versions are available in the table of contents nearby.
+The specific endpoints can vary between Windows 10 versions. See, for example, [Windows 10 2004 Enterprise connection endpoints](/windows/privacy/manage-windows-2004-endpoints). Similar articles for other Windows 10 versions are available in the table of contents nearby.
 
  
 ## Updates aren't downloading from the intranet endpoint (WSUS or Configuration Manager) 
@@ -243,4 +243,4 @@ Other components that connect to the internet:
 
 - Windows Spotlight: [Policy Configure Windows spotlight on lock screen](https://gpsearch.azurewebsites.net/#13362) (Set to disabled) 
 - Consumer experiences: [Policy Turn off Microsoft consumer experiences](https://gpsearch.azurewebsites.net/#13329) (Set to enabled) 
-- Background traffic from Windows apps: [Policy Let Windows apps run in the background](https://gpsearch.azurewebsites.net/#13571) 
+- Background traffic from Windows apps: [Policy Let Windows apps run in the background](https://gpsearch.azurewebsites.net/#13571)

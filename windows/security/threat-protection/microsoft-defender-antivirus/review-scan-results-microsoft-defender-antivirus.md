@@ -24,14 +24,14 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 After a Microsoft Defender Antivirus scan completes, whether it is an [on-demand](run-scan-microsoft-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-microsoft-defender-antivirus.md), the results are recorded and you can view the results. 
 
 
 ## Use Configuration Manager to review scan results
 
-See [How to monitor Endpoint Protection status](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection).
+See [How to monitor Endpoint Protection status](/configmgr/protect/deploy-use/monitor-endpoint-protection).
 
 ## Use PowerShell cmdlets to review scan results
 
@@ -53,11 +53,11 @@ Get-MpThreat
 
 ![screenshot of PowerShell](images/defender/wdav-get-mpthreat.png)
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ## Use Windows Management Instruction (WMI) to review scan results
 
-Use the [**Get** method of the **MSFT_MpThreat** and **MSFT_MpThreatDetection**](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx) classes.
+Use the [**Get** method of the **MSFT_MpThreat** and **MSFT_MpThreatDetection**](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) classes.
 
 
 ## Related articles

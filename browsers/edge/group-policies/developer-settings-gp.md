@@ -19,7 +19,7 @@ ms.sitesec: library
 # Developer tools 
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
 
 Microsoft Edge, by default, allows users to use the F12 developer tools as well as access the about:flags page.  You can prevent users from using the F12 developer tools or from accessing the about:flags page.
 

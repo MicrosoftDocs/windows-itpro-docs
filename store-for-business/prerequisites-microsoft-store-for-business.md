@@ -44,7 +44,7 @@ Microsoft Azure Active Directory (AD) or Office 365 accounts for your employees:
 -   Employees need Azure AD accounts when they access Microsoft Store for Business or Education content from Windows-based devices.
 -   If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account.
 
-For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
+For more information on Azure AD, see [About Office 365 and Azure Active Directory](/previous-versions//dn509517(v=technet.10)), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
 ### Optional
 
@@ -71,9 +71,3 @@ If your organization restricts computers on your network from connecting to the 
  
 Store for Business requires Microsoft Windows HTTP Services (WinHTTP) to install, or update apps.
 For more information about how to configure WinHTTP proxy settings to devices, see [Use Group Policy to apply WinHTTP proxy settings to Windows clients](https://support.microsoft.com/help/4494447/use-group-policy-to-apply-winhttp-proxy-settings-to-clients).
- 
-
-
-
-
-

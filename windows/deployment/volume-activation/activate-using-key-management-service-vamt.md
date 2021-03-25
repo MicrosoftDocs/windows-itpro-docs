@@ -40,7 +40,7 @@ There are three possible scenarios for volume activation of Windows 10 or Windo
 - Host KMS on a computer running Windows Server 2012 R2
 - Host KMS on a computer running an earlier version of Windows
 
-Check out [Windows 10 Volume Activation Tips](https://blogs.technet.microsoft.com/askcore/2015/09/15/windows-10-volume-activation-tips/).
+Check out [Windows 10 Volume Activation Tips](/archive/blogs/askcore/windows-10-volume-activation-tips).
 
 ## Key Management Service in Windows 10
 
@@ -60,7 +60,7 @@ To activate, use the slmgr.vbs command. Open an elevated command prompt and run 
   3. Follow the voice prompts and write down the responded 48-digit confirmation ID for OS activation.
   4. Run `slmgr.vbs /atp \<confirmation ID\>`.
 
-For more information, see the information for Windows 7 in [Deploy KMS Activation](https://go.microsoft.com/fwlink/p/?LinkId=717032).
+For more information, see the information for Windows 7 in [Deploy KMS Activation](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn502531(v=ws.11)).
 
 ## Key Management Service in Windows Server 2012 R2
 
@@ -72,7 +72,7 @@ Installing a KMS host key on a computer running Windows Server allows you to act
 This scenario is commonly used in larger organizations that do not find the overhead of using a server a burden.
 
 > [!NOTE]
-> If you receive error 0xC004F015 when trying to activate Windows 10 Enterprise, see [KB 3086418](https://go.microsoft.com/fwlink/p/?LinkId=620687).
+> If you receive error 0xC004F015 when trying to activate Windows 10 Enterprise, see [KB 3086418](/troubleshoot/windows-server/deployment/error-0xc004f015-activate-windows-10).
 
 ### Configure KMS in Windows Server 2012 R2
 
@@ -135,7 +135,7 @@ To verify that KMS volume activation works, complete the following steps:
 
    The **/dlv** command displays the detailed licensing information. The response should return an error that states that the KMS activation count is too low. This confirms that KMS is functioning correctly, even though the client has not been activated.
 
-For more information about the use and syntax of slmgr.vbs, see [Slmgr.vbs Options](https://docs.microsoft.com/windows-server/get-started/activation-slmgr-vbs-options).
+For more information about the use and syntax of slmgr.vbs, see [Slmgr.vbs Options](/windows-server/get-started/activation-slmgr-vbs-options).
 
 ## Key Management Service in earlier versions of Windows
 

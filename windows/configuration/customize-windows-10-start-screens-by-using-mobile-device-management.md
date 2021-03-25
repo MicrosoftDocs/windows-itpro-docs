@@ -45,7 +45,7 @@ Two features enable Start layout control:
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
     >[!NOTE]
-    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/import-startlayout) cmdlet.
+    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
 
      
 
@@ -81,7 +81,7 @@ This example uses Microsoft Intune to configure an MDM policy that applies a cus
 
 11. Assign the profile to a device group.
 
-For other MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=623244). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
+For other MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
 
 
 ## Related topics
@@ -96,10 +96,4 @@ For other MDM solutions, you may need to use an OMA-URI setting for Start layout
 - [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
  
-
- 
-
-
-
-
 

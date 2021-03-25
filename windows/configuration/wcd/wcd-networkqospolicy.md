@@ -36,4 +36,4 @@ Use to create network Quality of Service (QoS) policies. A QoS policy performs a
 
 ## Related topics
 
-- [NetworkQoSPolicy configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp)
+- [NetworkQoSPolicy configuration service provider (CSP)](/windows/client-management/mdm/networkqospolicy-csp)

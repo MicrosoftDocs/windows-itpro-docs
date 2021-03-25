@@ -40,7 +40,7 @@ A. Users running either Windows 7 with Service Pack 1 (SP1) or the 64-bit versi
 A. The Blocker Toolkit is currently available from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=40722).
 
 **Q. What tools can I use to manage Windows Updates and Microsoft Updates in my company?**
-A. We encourage anyone who wants full control over their company’s deployment of Windows Updates and Microsoft Updates, to use [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus), a free tool for users of Windows Server. You can also use the more advanced configuration management tool, [System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).
+A. We encourage anyone who wants full control over their company’s deployment of Windows Updates and Microsoft Updates, to use [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus), a free tool for users of Windows Server. You can also use the more advanced configuration management tool, [System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682041(v=technet.10)).
 
 **Q. How long does the blocker mechanism work?**
 A. The Internet Explorer 11 Blocker Toolkit uses a registry key value to permanently turn off the automatic delivery of Internet Explorer 11. This behavior lasts as long as the registry key value isn’t removed or changed.
@@ -117,8 +117,8 @@ If these scenarios apply to your company, see [Internet Explorer 11 delivery thr
 
 - [Internet Explorer 11 Blocker Toolkit download](https://www.microsoft.com/download/details.aspx?id=40722)
 
-- [Internet Explorer 11 FAQ for IT pros](https://docs.microsoft.com/internet-explorer/ie11-faq/faq-for-it-pros-ie11)
+- [Internet Explorer 11 FAQ for IT pros](./faq-for-it-pros-ie11.md)
 
 - [Internet Explorer 11 delivery through automatic updates](../ie11-deploy-guide/ie11-delivery-through-automatic-updates.md)
 
-- [Internet Explorer 11 deployment guide](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/index)
+- [Internet Explorer 11 deployment guide](../ie11-deploy-guide/index.md)

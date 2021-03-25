@@ -14,7 +14,7 @@ ms.topic: article
 
 # OOBE (Windows Configuration Designer reference)
 
-Use to configure settings for the [Out Of Box Experience (OOBE)](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-oobe).
+Use to configure settings for the [Out Of Box Experience (OOBE)](/windows-hardware/customize/desktop/customize-oobe).
 
 ## Applies to
 

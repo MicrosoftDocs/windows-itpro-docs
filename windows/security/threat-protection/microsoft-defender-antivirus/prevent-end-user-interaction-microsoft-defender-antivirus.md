@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 You can use Group Policy to prevent users on endpoints from seeing the Microsoft Defender Antivirus interface. You can also prevent them from pausing scans.
 
@@ -49,7 +49,7 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 ## Use Group Policy to hide the Microsoft Defender AV interface from users
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
@@ -70,7 +70,7 @@ You can prevent users from pausing scans, which can be helpful to ensure schedul
 
 ### Use Group Policy to prevent users from pausing a scan
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 

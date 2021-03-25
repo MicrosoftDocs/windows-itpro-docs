@@ -27,7 +27,7 @@ as a password-less authentication mechanism for their applications on Windows 10
 
 #### What does this mean?
 This opens opportunities for developers or relying parties (RPs) to enable password-less authentication.
-They can now leverage [Windows Hello](https://aka.ms/whfb) or [FIDO2 Security Keys](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key)
+They can now leverage [Windows Hello](./index.yml) or [FIDO2 Security Keys](./microsoft-compatible-security-key.md)
 as a password-less multi-factor credential for authentication.  
 <br>
 Users of these sites can use any browser that supports WebAuthn Windows 10 APIs for password-less authentication
@@ -43,5 +43,3 @@ This also implies browsers or apps on Windows 10 will no longer have direct acce
 
 #### Where can developers learn more?
 The new Windows 10 APIs are documented on [GitHub](https://github.com/Microsoft/webauthn)
-
-
