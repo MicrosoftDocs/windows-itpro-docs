@@ -36,7 +36,7 @@ This issue occurs because VAMT 3.1 does not contain the correct Pkconfig files t
 
 ### Method 1
 
-Do not add the CSVLK to the VAMT 3.1 tool. Instead, use the **slmgr.vbs /ipk \<*CSVLK*>** command to install a CSVLK on a KMS host. In this command, \<*CSVLK*> represents the specific key that you want to install. For more information about how to use the Slmgr.vbs tool, see [Slmgr.vbs options for obtaining volume activation information](https://docs.microsoft.com/windows-server/get-started/activation-slmgr-vbs-options).
+Do not add the CSVLK to the VAMT 3.1 tool. Instead, use the **slmgr.vbs /ipk \<*CSVLK*>** command to install a CSVLK on a KMS host. In this command, \<*CSVLK*> represents the specific key that you want to install. For more information about how to use the Slmgr.vbs tool, see [Slmgr.vbs options for obtaining volume activation information](/windows-server/get-started/activation-slmgr-vbs-options).
 
 ### Method 2
 

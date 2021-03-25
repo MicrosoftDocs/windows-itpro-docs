@@ -24,7 +24,7 @@ ms.topic: article
 
 Digital signage can be a useful and exciting business tool. Use digital signs to showcase your products and services, to display testimonials, or to advertise promotions and campaigns. A digital sign can be a static display, such as a building directory or menu, or it can be dynamic, such as repeating videos or a social media feed. 
 
-For digital signage, simply select a digital sign player as your kiosk app. You can also use [Microsoft Edge in kiosk mode](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy) or the Kiosk Browser app (a new Microsoft app for Windows 10, version 1803) and configure it to show your online content.
+For digital signage, simply select a digital sign player as your kiosk app. You can also use [Microsoft Edge in kiosk mode](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy) or the Kiosk Browser app (a new Microsoft app for Windows 10, version 1803) and configure it to show your online content.
 
 >[!TIP]
 >Kiosk Browser can also be used in [single-app kiosks](kiosk-single-app.md) and [multi-app kiosk](lock-down-windows-10-to-specific-apps.md) as a web browser. For more information, see [Guidelines for web browsers](guidelines-for-assigned-access-app.md#guidelines-for-web-browsers). 
@@ -32,13 +32,13 @@ For digital signage, simply select a digital sign player as your kiosk app. You 
 Kiosk Browser must be downloaded for offline licensing using Microsoft Store for Business. You can deploy Kiosk Browser to devices running Windows 10, version 1803.
 
 >[!NOTE]
->If you haven't set up your Microsoft Store for Business yet, check out [the prerequisites](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business) and then [sign up](https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business).
+>If you haven't set up your Microsoft Store for Business yet, check out [the prerequisites](/microsoft-store/prerequisites-microsoft-store-for-business) and then [sign up](/microsoft-store/sign-up-microsoft-store-for-business).
 
 
 This procedure explains how to configure digital signage using Kiosk Browser on a device running Windows 10, version 1803, that has already been set up (completed the first-run experience). 
 
-1. [Get **Kiosk Browser** in Microsoft Store for Business with offline, unencoded license type.](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps) 
-2. [Download the **Kiosk Browser** package, license file, and all required frameworks.](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app)
+1. [Get **Kiosk Browser** in Microsoft Store for Business with offline, unencoded license type.](/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps) 
+2. [Download the **Kiosk Browser** package, license file, and all required frameworks.](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app)
 2. [Install Windows Configuration Designer.](~/provisioning-packages/provisioning-install-icd.md)
 3. Open Windows Configuration Designer and select **Provision kiosk devices**.
 4. Enter a friendly name for the project, and select **Finish**.
@@ -92,4 +92,3 @@ This procedure explains how to configure digital signage using Kiosk Browser on 
 
 
 
- 

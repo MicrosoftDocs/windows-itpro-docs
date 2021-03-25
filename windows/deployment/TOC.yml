@@ -244,7 +244,7 @@
                 - name: Opt out of safeguard holds
                   href: update/safeguard-opt-out.md
                 - name: Determine the source of Windows Updates
-                  href: update/windows-update-sources.md
+                  href: ./update/how-windows-update-works.md
                 - name: Common Windows Update errors
                   href: update/windows-update-errors.md
                 - name: Windows Update error code reference

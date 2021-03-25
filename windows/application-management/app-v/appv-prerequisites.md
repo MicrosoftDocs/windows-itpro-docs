@@ -99,7 +99,7 @@ The Management database is only required if you use the App-V Management server.
 |Custom database name (if applicable)|Unique database name.<br>Default: AppVManagement|
 |Management server location|Machine account on which the Management server is deployed.<br>Format to use: **Domain\MachineAccount**|
 |Management server installation administrator|Account used to install the Management server.<br>Format to use: **Domain\AdministratorLoginName**|
-|Microsoft SQL Server Service Agent|Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to restart services automatically](https://technet.microsoft.com/magazine/gg313742.aspx).|
+|Microsoft SQL Server Service Agent|Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to restart services automatically](/previous-versions/technet-magazine/gg313742(v=msdn.10)).|
 
 ### Publishing server prerequisite software
 

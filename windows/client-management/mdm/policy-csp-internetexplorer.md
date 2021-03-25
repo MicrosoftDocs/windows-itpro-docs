@@ -2414,7 +2414,7 @@ This policy setting allows the administrator to enable "Save Target As" context 
 - If you enable this policy, "Save Target As" will show up in the Internet Explorer mode context menu and work the same as Internet Explorer.
 - If you disable or do not configure this policy setting, "Save Target As" will not show up in the Internet Explorer mode context menu.
 
-For more information, see [https://go.microsoft.com/fwlink/?linkid=2102115](https://go.microsoft.com/fwlink/?linkid=2102115)
+For more information, see [https://go.microsoft.com/fwlink/?linkid=2102115](/deployedge/edge-ie-mode-faq)
 
 <!--/Description-->
 > [!TIP]
@@ -3144,7 +3144,7 @@ If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge 
 - If you disable or do not configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
 
 > [!NOTE]
-> For more information about the Windows update for the next version of Microsoft Edge including how to disable it, see [https://go.microsoft.com/fwlink/?linkid=2102115](https://go.microsoft.com/fwlink/?linkid=2102115). This update applies only to Windows 10 version 1709 and higher.
+> For more information about the Windows update for the next version of Microsoft Edge including how to disable it, see [https://go.microsoft.com/fwlink/?linkid=2102115](/deployedge/edge-ie-mode-faq). This update applies only to Windows 10 version 1709 and higher.
 
 <!--/Description-->
 > [!TIP]
@@ -9550,7 +9550,7 @@ Related policies:
 - [Browser/SendIntranetTraffictoInternetExplorer](#internetexplorer-policies)
 - [InternetExplorer/SendSitesNotInEnterpriseSiteListToEdge](#internetexplorer-policies)
 
-For more information on how to use this policy together with other related policies to create the optimal configuration for your organization, see [https://go.microsoft.com/fwlink/?linkid=2094210.](https://go.microsoft.com/fwlink/?linkid=2094210)
+For more information on how to use this policy together with other related policies to create the optimal configuration for your organization, see [https://go.microsoft.com/fwlink/?linkid=2094210.](/DeployEdge/edge-ie-mode-policies#configure-internet-explorer-integration)
 
 <!--/Description-->
 > [!TIP]

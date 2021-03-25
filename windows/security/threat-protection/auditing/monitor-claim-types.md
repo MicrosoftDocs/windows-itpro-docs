@@ -28,7 +28,7 @@ This topic for the IT professional describes how to monitor changes to claim typ
 Claim types are one of the basic building blocks of Dynamic Access Control. Claim types can include attributes such as the departments in an organization or the levels of security clearance that apply to classes of users. You can use security auditing to track whether claims are added, modified, enabled, disabled, or deleted.
 
 Use the following procedures to configure settings to monitor changes to claim types in AD DS. These procedures assume that you have configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you have not yet deployed Dynamic
-Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](https://technet.microsoft.com/library/hh846167.aspx).
+Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](/windows-server/identity/solution-guides/deploy-a-central-access-policy--demonstration-steps-).
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
  

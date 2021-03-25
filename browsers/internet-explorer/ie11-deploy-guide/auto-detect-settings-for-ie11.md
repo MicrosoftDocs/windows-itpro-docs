@@ -37,7 +37,7 @@ To use automatic detection, you have to set up your DHCP and DNS servers.<p>**No
 
 2. Choose the **Automatically detect configuration settings** box to automatically detect your browser settings. For more information about the **Automatic Configuration** page, see [Use the Automatic Configuration page in the IEAK 11 Wizard](../ie11-ieak/auto-config-ieak11-wizard.md).
 
-3. Open the [DHCP Administrative Tool](https://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](https://go.microsoft.com/fwlink/p/?LinkId=294649).
+3. Open the [DHCP Administrative Tool](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd145324(v=ws.10)), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](/previous-versions/tn-archive/bb794881(v=technet.10)).
 
    **To turn on automatic detection for DNS servers**
 
@@ -45,15 +45,11 @@ To use automatic detection, you have to set up your DHCP and DNS servers.<p>**No
 
 5. Choose the **Automatically detect configuration settings** box to automatically detect your browser settings.
 
-6. In your DNS database file, create a host record named, **WPAD**. This record has the IP address of the web server storing your automatic configuration (.js, .jvs, .pac, or .ins) file.<p>**-OR-**<p>Create a canonical name (CNAME) alias record named, **WPAD**. This record has the resolved name (not the IP address) of the server storing your automatic configuration (.pac) file.<p>**Note**<br>For more information about creating a **WPAD** entry, see [Creating a WPAD entry in DNS](https://go.microsoft.com/fwlink/p/?LinkId=294651). 
+6. In your DNS database file, create a host record named, **WPAD**. This record has the IP address of the web server storing your automatic configuration (.js, .jvs, .pac, or .ins) file.<p>**-OR-**<p>Create a canonical name (CNAME) alias record named, **WPAD**. This record has the resolved name (not the IP address) of the server storing your automatic configuration (.pac) file.<p>**Note**<br>For more information about creating a **WPAD** entry, see [Creating a WPAD entry in DNS](/previous-versions/tn-archive/cc995062(v=technet.10)). 
 
 7. After the database file propagates to the server, the DNS name, `wpad.<domain>.com` resolves to the server name that includes your automatic configuration file.<p>**Note**<br>Internet Explorer 11 creates a default URL template based on the host name, **wpad**. For example, `https://wpad.<domain>.com/wpad.dat`. Because of this, you need to set up a file or redirection point in your web server **WPAD** record, named **wpad.dat**. The **wpad.dat** record delivers the contents of your automatic configuration file.
 
      
 
  
-
- 
-
-
 

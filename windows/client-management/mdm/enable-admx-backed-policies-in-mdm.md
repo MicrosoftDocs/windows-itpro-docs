@@ -17,7 +17,7 @@ manager: dansimp
 
 This is a step-by-step guide to configuring ADMX-backed policies in MDM.
 
-Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX-backed policies)](/windows/client-management/mdm/policy-csps-admx-backed) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
+Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX-backed policies)](./policies-in-policy-csp-admx-backed.md) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
 
 Summary of steps to enable a policy:
 - Find the policy from the list ADMX-backed policies. 

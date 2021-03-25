@@ -31,7 +31,7 @@ ms.topic: include
 - **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
-- **MDM name:** Experience/[AllowSyncMySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)
+- **MDM name:** Experience/[AllowSyncMySettings](/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings
 - **Data type:** Integer

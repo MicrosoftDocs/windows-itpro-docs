@@ -94,14 +94,14 @@ The **Branch Readiness Level** settings allow you to choose between preview flig
 * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/ Windows Update for Business** - *Select when Preview Builds and Feature Updates are received*
 * MDM: **Update/BranchReadinessLevel**
 
-For more information, see [Windows Insider Program for Business](waas-windows-insider-for-business.md)
+For more information, see [Windows Insider Program for Business](/windows-insider/at-work-pro/wip-4-biz-get-started)
 
 ## Block access to Windows Insider Program
 
 To prevent devices in your organization from being enrolled in the Insider Program for early releases of Windows 10:
 
 - Group Policy: Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\\**Toggle user control over Insider builds**
-- MDM: Policy CSP - [System/AllowBuildPreview](https://msdn.microsoft.com/library/windows/hardware/dn904962%28v=vs.85%29.aspx#System_AllowBuildPreview)
+- MDM: Policy CSP - [System/AllowBuildPreview](/windows/client-management/mdm/policy-configuration-service-provider#System_AllowBuildPreview)
 
 >[!IMPORTANT]
 >Starting with Windows 10, version 1709, this policy is replaced by **Manage preview builds** policy.
@@ -178,7 +178,7 @@ Administrators can disable the "Check for updates" option for users by enabling 
 | ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | Assign devices to servicing channels for Windows 10 updates (this topic) |
 | ![to do](images/checklistbox.gif) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
-| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md) |
+| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
 
 ## Related topics
 
@@ -188,5 +188,5 @@ Administrators can disable the "Check for updates" option for users by enabling 
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
+- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
 - [Manage device restarts after updates](waas-restart.md)

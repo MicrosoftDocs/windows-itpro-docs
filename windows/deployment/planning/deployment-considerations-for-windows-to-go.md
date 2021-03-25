@@ -55,9 +55,9 @@ When a Windows To Go workspace is first used at the workplace, the Windows To Go
 When the Windows To Go workspace is going to be used first on an off-premises computer, such as one at the employee's home, then the IT professional preparing the Windows To Go drives should configure the drive to be able to connect to organizational resources and to maintain the security of the workspace. In this situation, the Windows To Go workspace needs to be configured for offline domain join and BitLocker needs to be enabled before the workspace has been initialized.
 
 > [!TIP]
-> Applying BitLocker Drive Encryption to the drives before provisioning is a much faster process than encrypting the drives after data has already been stored on them due to a new feature called used-disk space only encryption. For more information, see [What's New in BitLocker](https://go.microsoft.com/fwlink/p/?LinkId=619076).
+> Applying BitLocker Drive Encryption to the drives before provisioning is a much faster process than encrypting the drives after data has already been stored on them due to a new feature called used-disk space only encryption. For more information, see [What's New in BitLocker](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn306081(v=ws.11)).
 
-DirectAccess can be used to ensure that the user can login with their domain credentials without needing a local account. For instructions on setting up a DirectAccess solution, for a small pilot deployment see [Deploy a Single Remote Access Server using the Getting Started Wizard](https://go.microsoft.com/fwlink/p/?LinkId=619077) for a larger scale deployment, see [Deploy Remote Access in an Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=619078). If you do not want to use DirectAccess as an alternative users could log on using a local user account on the Windows To Go workspace and then use a virtual private network for remote access to your organizational network.
+DirectAccess can be used to ensure that the user can login with their domain credentials without needing a local account. For instructions on setting up a DirectAccess solution, for a small pilot deployment see [Deploy a Single Remote Access Server using the Getting Started Wizard](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831520(v=ws.11)) for a larger scale deployment, see [Deploy Remote Access in an Enterprise](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134200(v=ws.11)). If you do not want to use DirectAccess as an alternative users could log on using a local user account on the Windows To Go workspace and then use a virtual private network for remote access to your organizational network.
 
 ### <a href="" id="wtg-imagedep"></a>Image deployment and drive provisioning considerations
 
@@ -218,7 +218,7 @@ The following list of commonly used Wi-Fi network adapters that are not supporte
 </tbody>
 </table>
 
-IT administrators that want to target Windows To Go images for specific systems should test their images to ensure that the necessary system drivers are in the image, especially for critical functionality like Wi-Fi that is not supported by class drivers. Some consumer devices require OEM specific driver packages, which may not be available on Windows Update. For more information on how to add a driver to a Windows Image, please refer to the [Basic Windows Deployment Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=619079).
+IT administrators that want to target Windows To Go images for specific systems should test their images to ensure that the necessary system drivers are in the image, especially for critical functionality like Wi-Fi that is not supported by class drivers. Some consumer devices require OEM specific driver packages, which may not be available on Windows Update. For more information on how to add a driver to a Windows Image, please refer to the [Basic Windows Deployment Step-by-Step Guide](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825212(v=win.10)).
 
 ### <a href="" id="wtg-appinstall"></a>Application installation and domain join
 

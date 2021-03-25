@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 > Applies to: Windows 10
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
 
 If you have specific websites and apps that have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the websites open in Internet Explorer 11 automatically. Additionally, if you know that your intranet sites aren't going to work correctly with Microsoft Edge, you can set all intranet sites to automatically open using IE11 with the **Send all intranet sites to IE** group policy.
 
@@ -53,13 +53,13 @@ If you're having trouble deciding whether Microsoft Edge is right for your organ
 
 ## Related topics
 - [Blog: How Microsoft Edge and Internet Explorer 11 on Windows 10 work better together in the Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=624035)
-- [Enterprise Mode for Internet Explorer 11 (IE11)](https://go.microsoft.com/fwlink/p/?linkid=618377)
+- [Enterprise Mode for Internet Explorer 11 (IE11)](/internet-explorer/ie11-deploy-guide/enterprise-mode-overview-for-ie11)
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
-- [Use the Enterprise Mode Site List Manager](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/use-the-enterprise-mode-site-list-manager)
+- [Use the Enterprise Mode Site List Manager](/internet-explorer/ie11-deploy-guide/use-the-enterprise-mode-site-list-manager)
 - [Web Application Compatibility Lab Kit for Internet Explorer 11](https://technet.microsoft.com/browser/mt612809.aspx)
 - [Download Internet Explorer 11](https://go.microsoft.com/fwlink/p/?linkid=290956)
-- [Microsoft Edge - Deployment Guide for IT Pros](https://technet.microsoft.com/itpro/microsoft-edge/index)
-- [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760644)
-- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](https://go.microsoft.com/fwlink/p/?LinkId=760646)
-- [Internet Explorer 11 - FAQ for IT Pros](https://technet.microsoft.com/itpro/internet-explorer/ie11-faq/faq-for-it-pros-ie11)
+- [Microsoft Edge - Deployment Guide for IT Pros](./index.yml)
+- [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](/internet-explorer/ie11-deploy-guide/)
+- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](/internet-explorer/ie11-ieak/)
+- [Internet Explorer 11 - FAQ for IT Pros](/internet-explorer/ie11-faq/faq-for-it-pros-ie11)

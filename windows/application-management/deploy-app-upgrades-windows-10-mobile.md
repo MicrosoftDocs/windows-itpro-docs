@@ -58,4 +58,4 @@ You don't need to delete the deployment associated with the older version of the
 
 ![Monitoring view in Configuration Manager for the old version of the app](media/app-upgrade-old-version.png)
 
-If you haven't deployed an app through Configuration Manager before, check out [Deploy applications with Microsoft Endoint Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications). You can also see how to delete deployments (although you don't have to) and notify users about the upgraded app.
+If you haven't deployed an app through Configuration Manager before, check out [Deploy applications with Microsoft Endoint Configuration Manager](/configmgr/apps/deploy-use/deploy-applications). You can also see how to delete deployments (although you don't have to) and notify users about the upgraded app.

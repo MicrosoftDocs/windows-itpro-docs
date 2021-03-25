@@ -42,7 +42,7 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 > - To restrict a device effectively (first time or subsequently), it is recommended to apply the Restricted Traffic Limited Functionality Baseline settings package in offline mode. 
 > - During update or upgrade of Windows, egress traffic may occur.
 
-To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
+To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](./manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm.md)
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting **telmhelp**@**microsoft.com**.
 
@@ -227,7 +227,7 @@ Use the following sections for more information about how to configure each sett
 ### <a href="" id="automatic-root-certificates-update"></a>1. Automatic Root Certificates Update
 
 The Automatic Root Certificates Update component is designed to automatically check the list of trusted authorities on Windows Update to see if an update is available.
-For more information, see [Automatic Root Certificates Update Configuration](https://technet.microsoft.com/library/cc733922.aspx).
+For more information, see [Automatic Root Certificates Update Configuration](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733922(v=ws.10)).
 Although not recommended, you can turn off Automatic Root Certificates Update, which also prevents updates to the disallowed certificate list and the pin rules list.
 
 > [!CAUTION]
@@ -495,7 +495,7 @@ You can turn this off by:
 
 -  Changing the REG_DWORD registry setting **HKEY_CURRENT_USER\\Software\\Microsoft\\Internet Explorer\\VersionManager\\DownloadVersionList** to **0 (zero)**.
 
-For more info, see [Out-of-date ActiveX control blocking](https://technet.microsoft.com/library/dn761713.aspx).
+For more info, see [Out-of-date ActiveX control blocking](/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking).
 
 ### <a href="" id="bkmk-licmgr"></a>9. License Manager
 
@@ -544,7 +544,7 @@ To turn off the Windows Mail app:
 
 ### <a href="" id="bkmk-microsoft-account"></a>12. Microsoft Account
 
-Use the below setting to prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways. For example, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
+Use the below setting to prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways. For example, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 To disable the Microsoft Account Sign-In Assistant:
 
@@ -553,7 +553,7 @@ To disable the Microsoft Account Sign-In Assistant:
 
 ### <a href="" id="bkmk-edge"></a>13. Microsoft Edge
 
-Use Group Policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682) and [Configure Microsoft Edge policy settings on Windows](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge).
+Use Group Policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682) and [Configure Microsoft Edge policy settings on Windows](/DeployEdge/configure-microsoft-edge).
 
 ### <a href="" id="bkmk-edgegp"></a>13.1 Microsoft Edge Group Policies
 
@@ -590,7 +590,7 @@ Alternatively, you can configure the following Registry keys as described:
 | Choose whether employees can configure Compatibility View. | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BrowserEmulation<br/>REG_DWORD: MSCompatibilityMode <br />Value: **0**|
 
 
-For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/available-policies).
+For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](/microsoft-edge/deploy/available-policies).
 
 ### <a href="" id="bkmk-ncsi"></a>14. Network Connection Status Indicator
 
@@ -1557,7 +1557,7 @@ To turn off Messaging cloud sync:
 
 ### <a href="" id="bkmk-teredo"></a>22. Teredo
 
-You can disable Teredo by using Group Policy or by using the netsh.exe command. For more info on Teredo, see [Internet Protocol Version 6, Teredo, and Related Technologies](https://technet.microsoft.com/library/cc722030.aspx).
+You can disable Teredo by using Group Policy or by using the netsh.exe command. For more info on Teredo, see [Internet Protocol Version 6, Teredo, and Related Technologies](/previous-versions/windows/it-pro/windows-vista/cc722030(v=ws.10)).
 
 >[!NOTE]
 >If you disable Teredo, some XBOX gaming features and Delivery Optimization (with Group or Internet peering) will not work.
@@ -1838,7 +1838,7 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 | Max Upload Bandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
 
 
-For a comprehensive list of Delivery Optimization Policies, see [Delivery Optimization Reference](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference).
+For a comprehensive list of Delivery Optimization Policies, see [Delivery Optimization Reference](/windows/deployment/update/waas-delivery-optimization-reference).
 
 ### <a href="" id="bkmk-wudo-mdm"></a>28.3 Delivery Optimization
 
@@ -1918,4 +1918,4 @@ For China releases of Windows 10 there is one additional Regkey to be set to pre
 |www.microsoft.com/pkiops/*|
 
 
-To learn more, see [Device update management](https://msdn.microsoft.com/library/windows/hardware/dn957432.aspx) and [Configure Automatic Updates by using Group Policy](https://technet.microsoft.com/library/cc720539.aspx).
+To learn more, see [Device update management](/windows/client-management/mdm/device-update-management) and [Configure Automatic Updates by using Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720539(v=ws.10)).

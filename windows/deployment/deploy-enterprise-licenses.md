@@ -88,7 +88,7 @@ You might ask why you need to synchronize these identities. The answer is so tha
 
 For more information about integrating on-premises AD DS domains with Azure AD, see the following resources:
 
--   [Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)
+-   [Integrating your on-premises identities with Azure Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity)
 -   [Azure AD + Domain Join + Windows 10](https://blogs.technet.microsoft.com/enterprisemobility/2016/02/17/azure-ad-domain-join-windows-10/)
 
 >[!NOTE]
@@ -107,7 +107,7 @@ Upon acquisition of Windows 10 subscription has been completed (Windows 10 Busin
 
 The following methods are available to assign licenses:
 
-1. When you have the required Azure AD subscription, [group-based licensing](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal) is the preferred method to assign Enterprise E3 or E5 licenses to users.
+1. When you have the required Azure AD subscription, [group-based licensing](/azure/active-directory/active-directory-licensing-whatis-azure-portal) is the preferred method to assign Enterprise E3 or E5 licenses to users.
 
 2. You can sign in to portal.office.com and manually assign licenses:
 

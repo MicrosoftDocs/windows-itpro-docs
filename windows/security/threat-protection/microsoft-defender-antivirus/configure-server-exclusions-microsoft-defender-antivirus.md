@@ -23,7 +23,7 @@ ms.date: 02/10/2021
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 Microsoft Defender Antivirus on Windows Server 2016 and Windows Server 2019 automatically enrolls you in certain exclusions, as defined by your specified server role. See the [list of automatic exclusions](#list-of-automatic-exclusions) (in this article). These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions).
 
@@ -56,7 +56,7 @@ You can disable the automatic exclusion lists with Group Policy, PowerShell cmdl
 
 ### Use Group Policy to disable the auto-exclusions list on Windows Server 2016 and Windows Server 2019
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Right-click the Group Policy Object you want to configure, and then click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Right-click the Group Policy Object you want to configure, and then click **Edit**.
 2. In the **Group Policy Management Editor** go to **Computer configuration**, and then click **Administrative templates**.
 3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Exclusions**.
 4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then click **OK**. 
@@ -72,18 +72,18 @@ Set-MpPreference -DisableAutoExclusions $true
 To learn more, see the following resources:
 
 - [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md).
-- [Use PowerShell with Microsoft Defender Antivirus](https://docs.microsoft.com/powershell/module/defender/).
+- [Use PowerShell with Microsoft Defender Antivirus](/powershell/module/defender/).
 
 ### Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016 and Windows Server 2019
 
-Use the **Set** method of the [MSFT_MpPreference](https://docs.microsoft.com/previous-versions/windows/desktop/defender/msft-mppreference) class for the following properties:
+Use the **Set** method of the [MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) class for the following properties:
 
 ```WMI
 DisableAutoExclusions
 ```
 
 See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## List of automatic exclusions
 

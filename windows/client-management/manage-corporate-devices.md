@@ -46,7 +46,7 @@ You can use the same management tools to manage all device types running Windows
 
 [Azure AD, Microsoft Intune and Windows 10 - Using the cloud to modernize enterprise mobility](https://blogs.technet.microsoft.com/enterprisemobility/2015/06/12/azure-ad-microsoft-intune-and-windows-10-using-the-cloud-to-modernize-enterprise-mobility/)
 
-[Microsoft Intune End User Enrollment Guide](https://go.microsoft.com/fwlink/p/?LinkID=617169)
+[Microsoft Intune End User Enrollment Guide](/samples/browse/?redirectedfrom=TechNet-Gallery)
 
 [Azure AD Join on Windows 10 devices](https://go.microsoft.com/fwlink/p/?LinkId=616791)
 

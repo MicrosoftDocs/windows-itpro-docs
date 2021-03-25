@@ -71,4 +71,4 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 ## Related topics
 
 
-- [RootCATrustedCertficates configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/rootcacertificates-csp)
+- [RootCATrustedCertficates configuration service provider (CSP)](/windows/client-management/mdm/rootcacertificates-csp)
