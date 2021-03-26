@@ -44,9 +44,9 @@ Because vulnerabilities can exist when this value is configured and when it is n
 
 ### Best practices
 
-The threshold that you select is a balance between operational efficiency and security, and it depends on your organization's risk level. To allow for user error and to thwart brute force attacks, [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend a value of 10 could be an acceptable starting point for your organization.
+The threshold that you select is a balance between operational efficiency and security, and it depends on your organization's risk level. To allow for user error and to thwart brute force attacks, [Windows security baselines](../windows-security-baselines.md) recommend a value of 10 could be an acceptable starting point for your organization.
 
-As with other account lockout settings, this value is more of a guideline than a rule or best practice because there is no "one size fits all." For more information, see [Configuring Account Lockout](https://blogs.technet.microsoft.com/secguide/2014/08/13/configuring-account-lockout/).
+As with other account lockout settings, this value is more of a guideline than a rule or best practice because there is no "one size fits all." For more information, see [Configuring Account Lockout](/archive/blogs/secguide/configuring-account-lockout).
 
 Implementation of this policy setting is dependent on your operational environment; threat vectors, deployed operating systems, and deployed apps. For more information, see [Implementation considerations](#bkmk-impleconsiderations) in this article.
  
@@ -85,14 +85,14 @@ Implementation of this policy setting depends on your operational environment. C
 
 -   Not all apps that are used in your environment effectively manage how many times a user can attempt to sign in. For instance, if a connection drops repeatedly when a user is running the app, all subsequent failed sign-in attempts count toward the account lockout threshold.
 
-For more information about Windows security baseline recommendations for account lockout, see [Configuring Account Lockout](https://blogs.technet.microsoft.com/secguide/2014/08/13/configuring-account-lockout/). 
+For more information about Windows security baseline recommendations for account lockout, see [Configuring Account Lockout](/archive/blogs/secguide/configuring-account-lockout). 
 
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
 > [!NOTE]
-> A lockout threshold policy will apply to both local member computer users and domain users, in order to allow mitigation of issues as described under "Vulnerability". The built-in Administrator account, however, whilst a highly privileged account, has a different risk profile and is excluded from this policy. This ensures there is no scenario where an administrator cannot sign in to remediate an issue. As an administrator, there are additional mitigation strategies available, such as a strong password. See also [Appendix D: Securing Built-In Administrator Accounts in Active Directory](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/appendix-d--securing-built-in-administrator-accounts-in-active-directory).
+> A lockout threshold policy will apply to both local member computer users and domain users, in order to allow mitigation of issues as described under "Vulnerability". The built-in Administrator account, however, whilst a highly privileged account, has a different risk profile and is excluded from this policy. This ensures there is no scenario where an administrator cannot sign in to remediate an issue. As an administrator, there are additional mitigation strategies available, such as a strong password. See also [Appendix D: Securing Built-In Administrator Accounts in Active Directory](/windows-server/identity/ad-ds/plan/security-best-practices/appendix-d--securing-built-in-administrator-accounts-in-active-directory).
 
 ### Vulnerability
 
@@ -114,7 +114,7 @@ Because vulnerabilities can exist when this value is configured and when it is n
     
 -   Configure the **Account lockout threshold** policy setting to a sufficiently high value to provide users with the ability to accidentally mistype their password several times before the account is locked, but ensure that a brute force password attack still locks the account.
 
-    [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend configuring a threshold of 10 invalid sign-in attempts, which prevents accidental account lockouts and reduces the number of Help Desk calls, but does not prevent a DoS attack.
+    [Windows security baselines](../windows-security-baselines.md) recommend configuring a threshold of 10 invalid sign-in attempts, which prevents accidental account lockouts and reduces the number of Help Desk calls, but does not prevent a DoS attack.
     
     Using this type of policy must be accompanied by a process to unlock locked accounts. It must be possible to implement this policy whenever it is needed to help mitigate massive lockouts caused by an attack on your systems.
 
@@ -128,4 +128,3 @@ If you configure this policy setting to a number greater than 0, an attacker can
 
 ## Related topics
 [Account Lockout Policy](account-lockout-policy.md)
- 

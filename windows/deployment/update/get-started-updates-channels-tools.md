@@ -91,7 +91,7 @@ You can set up, control, and manage the server and update process with several t
 - [Configuration Manager](deploy-updates-configmgr.md)
 - Non-Microsoft tools
 
-For more information, see [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
+For more information, see [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
 
 ### Tools for cloud-based update delivery
 

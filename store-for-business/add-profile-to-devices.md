@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 **Applies to**
 -   Windows 10
 
-Windows Autopilot simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+Windows Autopilot simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 Watch this video to learn more about Windows Autopilot in Microsoft Store for Business. </br>
 
@@ -54,7 +54,7 @@ Autopilot profile settings are supported beginning with the version of Windows t
 | Deployment default features| Windows 10, version 1703 or later |
 | Skip privacy settings | Windows 10, version 1703 or later |
 | Disable local admin account creation on the device | Windows 10, version 1703 or later |
-| Skip End User License Agreement (EULA) | Windows 10, version 1709 or later. </br> [Learn about Windows Autopilot EULA dismissal](https://docs.microsoft.com/windows/deployment/Windows-Autopilot-EULA-note) |
+| Skip End User License Agreement (EULA) | Windows 10, version 1709 or later. </br> [Learn about Windows Autopilot EULA dismissal](/windows/deployment/Windows-Autopilot-EULA-note) |
 
 
 ## Windows Autopilot deployment profiles in Microsoft Store for Business and Education

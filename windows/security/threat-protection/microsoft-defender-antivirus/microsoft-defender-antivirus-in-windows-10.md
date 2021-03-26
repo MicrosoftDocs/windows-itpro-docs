@@ -23,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 ## Microsoft Defender Antivirus: Your next-generation protection
 
@@ -44,8 +44,8 @@ Visit the [Microsoft Defender for Endpoint demo website](https://demo.wd.microso
 
 Microsoft Defender Antivirus has the same hardware requirements as of Windows 10. For more information, see the following resources:
 
-- [Minimum hardware requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
-- [Hardware component guidelines](https://docs.microsoft.com/windows-hardware/design/component-guidelines/components)
+- [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
+- [Hardware component guidelines](/windows-hardware/design/component-guidelines/components)
 
 ## Configure next-generation protection services
 

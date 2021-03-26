@@ -143,7 +143,7 @@ EnterpriseAppVManagement
 <p style="margin-left: 20px">Used to perform App-V synchronization.</p>
 
 **AppVPublishing/Sync/PublishXML**  
-<p style="margin-left: 20px">Used to execute the App-V synchronization using the Publishing protocol. For more information about the protocol see <a href="https://msdn.microsoft.com/library/mt739986.aspx" data-raw-source="[[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol](https://msdn.microsoft.com/library/mt739986.aspx)">[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol</a>.</p>
+<p style="margin-left: 20px">Used to execute the App-V synchronization using the Publishing protocol. For more information about the protocol see <a href="/openspecs/windows_protocols/ms-vapr/a05e030d-4fb9-4c8d-984b-971253b62be8" data-raw-source="[[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol](/openspecs/windows_protocols/ms-vapr/a05e030d-4fb9-4c8d-984b-971253b62be8)">[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol</a>.</p>
 <p style="margin-left: 20px">Supported operations are Get, Delete, and Execute.</p>
 
 
@@ -156,4 +156,3 @@ EnterpriseAppVManagement
 **AppVDynamicPolicy/*ConfigurationId*/Policy**  
 <p style="margin-left: 20px">XML for App-V Policy Configuration documents for publishing packages.</p>
 <p style="margin-left: 20px">Value type is xml. Supported operations are Add, Get, Delete, and Replace.</p>
-

@@ -26,7 +26,7 @@ ms.technology: mde
 [Microsoft Defender Application Guard](md-app-guard-overview.md) provides Hyper-V isolation on Windows 10, to protect users from potentially harmful content on the web. The extension helps Application Guard protect users running other web browsers.
 
 > [!TIP]
-> Application Guard, by default, offers [native support](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard) to both Microsoft Edge and Internet Explorer. These browsers do not need the extension described here for Application Guard to protect them.
+> Application Guard, by default, offers [native support](/deployedge/microsoft-edge-security-windows-defender-application-guard) to both Microsoft Edge and Internet Explorer. These browsers do not need the extension described here for Application Guard to protect them.
 
 Microsoft Defender Application Guard Extension defends devices in your organization from advanced attacks, by redirecting untrusted websites to an isolated version of [Microsoft Edge](https://www.microsoft.com/edge). If an untrusted website turns out to be malicious, it remains within Application Guard's secure container, keeping the device protected.
 

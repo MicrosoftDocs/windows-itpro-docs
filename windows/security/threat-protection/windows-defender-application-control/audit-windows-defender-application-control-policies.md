@@ -85,7 +85,7 @@ Use the following procedure after you have been running a computer with a WDAC p
 
    `$CIAuditPolicy=$CIPolicyPath+"DeviceGuardAuditPolicy.xml"`
 
-3. Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
+3. Use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
    `New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3> CIPolicylog.txt`
 
@@ -101,4 +101,4 @@ Use the following procedure after you have been running a computer with a WDAC p
 You can now use this file to update the existing WDAC policy that you ran in audit mode by merging the two policies. For instructions on how to merge this audit policy with the existing WDAC policy, see the next section, [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md).
 
 > [!Note] 
-> You may have noticed that you did not generate a binary version of this policy as you did in [Create a Windows Defender Application Control policy from a reference computer](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy). This is because WDAC policies created from an audit log are not intended to run as stand-alone policies but rather to update existing WDAC policies.
+> You may have noticed that you did not generate a binary version of this policy as you did in [Create a Windows Defender Application Control policy from a reference computer](./create-initial-default-policy.md). This is because WDAC policies created from an audit log are not intended to run as stand-alone policies but rather to update existing WDAC policies.

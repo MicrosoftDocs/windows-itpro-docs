@@ -28,7 +28,7 @@ If you don't already have an EFS DRA certificate, you'll need to create and extr
 The recovery process included in this topic only works for desktop devices. WIP deletes the data on Windows 10 Mobile devices.   
 
 >[!IMPORTANT]
->If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx).<br><br>If your DRA certificate has expired, you won't be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
+>If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](/previous-versions/technet-magazine/cc162507(v=msdn.10)) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](/previous-versions/tn-archive/cc875821(v=technet.10)).<br><br>If your DRA certificate has expired, you won't be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
 
 ## Manually create an EFS DRA certificate
 
@@ -141,15 +141,15 @@ After signing in, the necessary WIP key info is automatically downloaded and emp
 3. Sign-in to Azure AD as the employee and verify that the files now open
 
 ## Related topics
-- [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx)
+- [Security Watch Deploying EFS: Part 1](/previous-versions/technet-magazine/cc162507(v=msdn.10))
 
-- [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx)
+- [Protecting Data by Using EFS to Encrypt Hard Drives](/previous-versions/tn-archive/cc875821(v=technet.10))
 
 - [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune-azure.md)
 
 - [Create a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](create-wip-policy-using-configmgr.md)
 
-- [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/library/cc875821.aspx#EJAA)
+- [Creating a Domain-Based Recovery Agent](/previous-versions/tn-archive/cc875821(v=technet.10)#EJAA)
 
 
 >[!Note]

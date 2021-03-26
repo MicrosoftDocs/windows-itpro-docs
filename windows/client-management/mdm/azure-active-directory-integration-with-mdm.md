@@ -37,7 +37,7 @@ Windows 10 introduces a new way to configure and deploy corporate owned Windows
 Azure AD Join also enables company owned devices to be automatically enrolled in, and managed by an MDM. Furthermore, Azure AD Join can be performed on a store-bought PC, in the out-of-box experience (OOBE), which helps organizations streamline their device deployment. An administrator can require that users belonging to one or more groups enroll their devices for management with an MDM. If a user is configured to require automatic enrollment during Azure AD Join, this enrollment becomes a mandatory step to configure Windows. If the MDM enrollment fails, then the device will not be joined to Azure AD.
 
 > [!IMPORTANT]
-> Every user enabled for automatic MDM enrollment with Azure AD Join must be assigned a valid [Azure Active Directory Premium](https://msdn.microsoft.com/library/azure/dn499825.aspx) license.
+> Every user enabled for automatic MDM enrollment with Azure AD Join must be assigned a valid [Azure Active Directory Premium](/previous-versions/azure/dn499825(v=azure.100)) license.
 
  
 ### BYOD scenario
@@ -56,7 +56,7 @@ In both scenarios, the enrollment flow provides an opportunity for the MDM servi
 
 In the out-of-the-box scenario, the web view is 100% full screen, which gives the MDM vendor the ability to paint an edge-to-edge experience. With great power comes great responsibility! It is important that MDM vendors who chose to integrate with Azure AD respect the Windows 10 design guidelines to the letter. This includes using a responsive web design and respecting the Windows accessibility guidelines, which includes the forward and back buttons that are properly wired to the navigation logic. Additional details are provided later in this topic.
 
-For Azure AD enrollment to work for an Active Directory Federated Services (AD FS) backed Azure AD account, you must enable password authentication for the intranet on the ADFS service as described in solution \#2 in [Configure Azure MFA as authentication provider with AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
+For Azure AD enrollment to work for an Active Directory Federated Services (AD FS) backed Azure AD account, you must enable password authentication for the intranet on the ADFS service as described in solution \#2 in [Configure Azure MFA as authentication provider with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
 
 Once a user has an Azure AD account added to Windows 10 and enrolled in MDM, the enrollment can be managed through **Settings** > **Accounts** > **Work access**. Device management of either Azure AD Join for corporate scenarios or BYOD scenarios is similar.
 
@@ -92,11 +92,11 @@ The following diagram illustrates the high-level flow involved in the actual enr
 
 ![azure ad enrollment flow](images/azure-ad-enrollment-flow.png)
 
-The MDM is expected to use this information about the device (Device ID) when reporting device compliance back to Azure AD using the [Azure AD Graph API](https://go.microsoft.com/fwlink/p/?LinkID=613654). A sample for reporting device compliance is provided later in this topic.
+The MDM is expected to use this information about the device (Device ID) when reporting device compliance back to Azure AD using the [Azure AD Graph API](/azure/active-directory/develop/active-directory-graph-api). A sample for reporting device compliance is provided later in this topic.
 
 ## Make the MDM a reliable party of Azure AD
 
-To participate in the integrated enrollment flow outlined in the previous section, the MDM must be able to consume access tokens issued by Azure AD. To report compliance to Azure AD, the MDM must be able to authenticate itself to Azure AD and obtain authorization in the form of an access token that allows it to invoke the [Azure AD Graph API](https://go.microsoft.com/fwlink/p/?LinkID=613654).
+To participate in the integrated enrollment flow outlined in the previous section, the MDM must be able to consume access tokens issued by Azure AD. To report compliance to Azure AD, the MDM must be able to authenticate itself to Azure AD and obtain authorization in the form of an access token that allows it to invoke the [Azure AD Graph API](/azure/active-directory/develop/active-directory-graph-api).
 
 ### Add a cloud-based MDM
 
@@ -154,7 +154,7 @@ To add an on-premises MDM application to the tenant, there is an entry under the
 
 Your on-premises MDM product must expose a configuration experience where administrators can provide the client ID, app ID, and the key configured in their directory for that MDM application. You can use this client ID and key to request tokens from Azure AD when reporting device compliance.
 
-For more information about registering applications with Azure AD, see [Basics of Registering an Application in Azure AD](https://go.microsoft.com/fwlink/p/?LinkId=613671).
+For more information about registering applications with Azure AD, see [Basics of Registering an Application in Azure AD](/previous-versions/azure/dn499820(v=azure.100)).
 
 ### Key management and security guidelines
 
@@ -364,7 +364,7 @@ The following claims are expected in the access token passed by Windows to the T
 > [!NOTE]
 > There is no device ID claim in the access token because the device may not yet be enrolled at this time.
 
-To retrieve the list of group memberships for the user, you can use the [Azure AD Graph API](https://go.microsoft.com/fwlink/p/?LinkID=613654).
+To retrieve the list of group memberships for the user, you can use the [Azure AD Graph API](/azure/active-directory/develop/active-directory-graph-api).
 
 Here's an example URL.
 
@@ -632,7 +632,7 @@ Additional claims may be present in the Azure AD token, such as:
 
 Access token issued by Azure AD are JSON web tokens (JWTs). A valid JWT token is presented by Windows at the MDM enrollment endpoint to initiate the enrollment process. There are a couple of options to evaluate the tokens:
 
--   Use the JWT Token Handler extension for WIF to validate the contents of the access token and extract claims required for use. For more information, see [JSON Web Token Handler](https://go.microsoft.com/fwlink/p/?LinkId=613820).
+-   Use the JWT Token Handler extension for WIF to validate the contents of the access token and extract claims required for use. For more information, see [JSON Web Token Handler](/previous-versions/dotnet/framework/security/json-web-token-handler).
 -   Refer to the Azure AD authentication code samples to get a sample for working with access tokens. For an example, see [NativeClient-DotNet](https://go.microsoft.com/fwlink/p/?LinkId=613667).
 
 ## Device Alert 1224 for Azure AD user token
@@ -934,7 +934,4 @@ When a user is enrolled into MDM through Azure Active Directory Join and then di
 </table>
 
  
-
- 
-
 
