@@ -72,7 +72,7 @@ The next sections cover pre-boot authentication and DMA policies that can provid
 ### Pre-boot authentication
 
 Pre-boot authentication with BitLocker is a policy setting that requires the use of either user input, such as a PIN, a startup key, or both to authenticate prior to making the contents of the system drive accessible. 
-The Group Policy setting is [Require additional authentication at startup](./bitlocker-group-policy-settings.md#a-href-idbkmk-unlockpol1arequire-additional-authentication-at-startup) and the corresponding setting in the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is SystemDrivesRequireStartupAuthentication. 
+The Group Policy setting is [Require additional authentication at startup](./bitlocker-group-policy-settings.md) and the corresponding setting in the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is SystemDrivesRequireStartupAuthentication. 
 
 BitLocker accesses and stores the encryption keys in memory only after pre-boot authentication is completed. 
 If Windows can’t access the encryption keys, the device can’t read or edit the files on the system drive. The only option for bypassing pre-boot authentication is entering the recovery key.
