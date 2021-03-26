@@ -236,7 +236,7 @@ The following table describes some features that have interoperability issues we
 <tr class="odd">
 <td><p>WEDL_AssignedAccess class</p></td>
 <td><p>Although you can use this class to configure and manage basic lockdown features for assigned access, we recommend that you use the Windows PowerShell cmdlets instead.</p>
-<p>If you need to use assigned access API, see <a href="./w/windows-hardware/customize/enterprise/wedl-assignedaccess" data-raw-source="[WEDL_AssignedAccess](./w/windows-hardware/customize/enterprise/wedl-assignedaccess)">WEDL_AssignedAccess</a>.</p></td>
+<p>If you need to use assigned access API, see <a href="https://docs.microsoft.com/windows-hardware/customize/enterprise/wedl-assignedaccess" data-raw-source="[WEDL_AssignedAccess](./w/windows-hardware/customize/enterprise/wedl-assignedaccess)">WEDL_AssignedAccess</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Welcome Screen</p></td>

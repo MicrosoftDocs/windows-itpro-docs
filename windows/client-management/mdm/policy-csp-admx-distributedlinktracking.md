@@ -1,27 +1,29 @@
 ---
-title: Policy CSP - ADMX_FileRecovery
-description: Policy CSP - ADMX_FileRecovery
+title: Policy CSP - ADMX_DistributedLinkTracking
+description: Policy CSP - ADMX_DistributedLinkTracking
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 03/24/2021
+ms.date: 03/22/2021
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - ADMX_FileRecovery
+# Policy CSP - ADMX_DistributedLinkTracking
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
 <!--Policies-->
+## ADMX_DistributedLinkTracking policies  
+
 <dl>
   <dd>
-    <a href="#admx-filerecovery-wdiscenarioexecutionpolicy">ADMX_FileRecovery/WdiScenarioExecutionPolicy</a>
+    <a href="#admx-distributedlinktracking-dlt_allowdomainmode">ADMX_DistributedLinkTracking/DLT_AllowDomainMode</a>
   </dd>
 </dl>
 
@@ -29,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-filerecovery-wdiscenarioexecutionpolicy"></a>**ADMX_FileRecovery/WdiScenarioExecutionPolicy**  
+<a href="" id="admx-distributedlinktracking-dlt_allowdomainmode"></a>**ADMX_DistributedLinkTracking/DLT_AllowDomainMode**  
 
 <!--SupportedSKUs-->
 <table>
@@ -66,10 +68,16 @@ manager: dansimp
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
+> * Machine
+
 <hr/>
 
 <!--/Scope-->
 <!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy specifies that Distributed Link Tracking clients in this domain may use the Distributed Link Tracking (DLT) server, which runs on domain controllers.  
+The DLT client enables programs to track linked  files that are moved within an NTFS volume, to another NTFS volume on the same computer, or to an NTFS volume on  another computer.   
+The DLT client can more reliably track links when allowed to use the DLT server.  
+This policy should not be set unless the DLT server is running on all domain controllers in the domain.
 
 > [!NOTE]
 > This policy setting applies to all sites in Trusted zones.
@@ -84,13 +92,26 @@ manager: dansimp
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP ADMX file name: *FileRecovery.admx*
+-   GP English name: *Allow Distributed Link Tracking clients to use domain resources*
+-   GP name: *DLT_AllowDomainMode*
+-   GP path: *Windows\System!DLT_AllowDomainMode*
+-   GP ADMX file name: *DistributedLinkTracking.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
 Footnotes:
+
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 
