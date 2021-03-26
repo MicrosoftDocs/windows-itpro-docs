@@ -67,7 +67,7 @@ ms.localizationpriority: medium
 | New or changed topic | Description |
 | --- | --- |
 | [What's New in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) | New |
-| [App requests](./acquire-apps-microsoft-store-for-business.md#request-apps) | New |
+| [Acquire apps](acquire-apps-microsoft-store-for-business.md#acquire-apps) | New |
 | [Settings reference: Microsoft Store for Business and Education](manage-settings-microsoft-store-for-business.md) </br> and </br> [Update Microsoft Store for Business and Microsoft Store for Education account settings](update-microsoft-store-for-business-account-settings.md) | Updates for UI changes in **Settings**. |
 
 ## July 2017
