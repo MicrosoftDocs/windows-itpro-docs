@@ -19,7 +19,7 @@ ms.topic: article
 # Configure MDT settings
 
 One of the most powerful features in Microsoft Deployment Toolkit (MDT) is its extension capabilities; there is virtually no limitation to what you can do in terms of customization. In this topic, you learn about configuring customizations for your environment.
-For the purposes of this topic, we will use four machines: DC01, MDT01, HV01, and PC0001. DC01 is a domain controller, MDT01 is a Windows Server 2012 R2 Standard server, and PC0001 is a Windows 10 Enterprise x64 client used for the MDT simulation environment. OR01 has Microsoft System Center 2012 R2 Orchestrator installed. MDT01, OR01, and PC0001 are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+For the purposes of this topic, we will use four machines: DC01, MDT01, HV01, and PC0001. DC01 is a domain controller, MDT01 is a Windows Server 2012 R2 Standard server, and PC0001 is a Windows 10 Enterprise x64 client used for the MDT simulation environment. OR01 has Microsoft System Center 2012 R2 Orchestrator installed. MDT01, OR01, and PC0001 are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](./prepare-for-windows-deployment-with-mdt.md).
 
 ![figure 1](../images/mdt-09-fig01.png)
 

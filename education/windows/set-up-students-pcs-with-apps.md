@@ -20,13 +20,13 @@ manager: dansimp
 -   Windows 10  
 
 
-To create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home, follow the steps in [Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps).
+To create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home, follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps).
 
 Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
 
 You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices. 
-- If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps). 
-- If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md). Set up School PCs now lets you add recommended apps from the Store so you can add these apps while you're creating your package through Set up School PCs. You can also follow the steps in [Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps) if you want to add apps to student PCs after initial setup with the Set up School PCs package.
+- If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps). 
+- If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md). Set up School PCs now lets you add recommended apps from the Store so you can add these apps while you're creating your package through Set up School PCs. You can also follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps) if you want to add apps to student PCs after initial setup with the Set up School PCs package.
 
 <!--
 ## Add apps to a provisioning package
@@ -74,7 +74,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 3. Go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandLine** and specify the command line that needs to be executed to install the app. This is a single command line (such as a script, executable, or msi) that triggers a silent install of your CommandFiles. Note that the install must execute silently (without displaying any UI). For MSI installers use, the msiexec /quiet option. 
 
 > [!NOTE] 
-> If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
+> If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](/windows/configuration/provisioning-packages/provisioning-script-to-install-app). 
 
 **Next steps**
 - (optional) [Add a universal app to your package](#add-a-universal-app-to-your-package)
@@ -83,7 +83,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 ## Add a universal app to your package
 
-Universal apps that you can distribute in the provisioning package can be line-of-business (LOB) apps developed by your organization, Microsoft Store for Business apps that you acquire with [offline licensing](https://technet.microsoft.com/itpro/windows/manage/acquire-apps-windows-store-for-business), or third-party apps. This procedure will assume you are distributing apps from the Microsoft Store for Business. For other apps, obtain the necessary information (such as the package family name) from the app developer. 
+Universal apps that you can distribute in the provisioning package can be line-of-business (LOB) apps developed by your organization, Microsoft Store for Business apps that you acquire with [offline licensing](/microsoft-store/acquire-apps-microsoft-store-for-business), or third-party apps. This procedure will assume you are distributing apps from the Microsoft Store for Business. For other apps, obtain the necessary information (such as the package family name) from the app developer. 
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **UniversalAppInstall**. 
 
@@ -101,7 +101,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
     ![generate license for offline app](images/uwp-license.png)
 
-[Learn more about distributing offline apps from the Microsoft Store for Business.](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps)
+[Learn more about distributing offline apps from the Microsoft Store for Business.](/microsoft-store/distribute-offline-apps)
 
 > [!NOTE]  
 > Removing a provisioning package will not remove any apps installed by device context in that provisioning package.
@@ -217,7 +217,7 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 ## Learn more
 
--  [Develop Universal Windows Education apps](https://msdn.microsoft.com/windows/uwp/apps-for-education/index)
+-  [Develop Universal Windows Education apps](/windows/uwp/apps-for-education/)
 
 -   [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=629651)
 
@@ -225,4 +225,3 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 -   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
  
-

@@ -84,7 +84,7 @@ To trust a subdomain, you must precede your domain with two dots, for example: `
 
 ### Are there differences between using Application Guard on Windows Pro vs Windows Enterprise? 
 
-When using Windows Pro or Windows Enterprise, you have access to using Application Guard in Standalone Mode. However, when using Enterprise you have access to Application Guard in Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard). 
+When using Windows Pro or Windows Enterprise, you have access to using Application Guard in Standalone Mode. However, when using Enterprise you have access to Application Guard in Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](./install-md-app-guard.md). 
 
 ### Is there a size limit to the domain lists that I need to configure?
 
@@ -116,8 +116,8 @@ Application Guard might not work correctly on NTFS compressed volumes. If this i
 
 This is a known issue. To mitigate this you need to create two firewall rules.
 For guidance on how to create a firewall rule by using group policy, see:
-- [Create an inbound icmp rule](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule)
-- [Open Group Policy management console for Microsoft Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security)
+- [Create an inbound icmp rule](../windows-firewall/create-an-inbound-icmp-rule.md)
+- [Open Group Policy management console for Microsoft Defender Firewall](../windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md)
 
 First rule (DHCP Server):
 1. Program path: `%SystemRoot%\System32\svchost.exe`
@@ -184,4 +184,4 @@ Policy: Allow installation of devices using drivers that match these device setu
 
 ## See also
 
-[Configure Microsoft Defender Application Guard policy settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)
+[Configure Microsoft Defender Application Guard policy settings](./configure-md-app-guard.md)

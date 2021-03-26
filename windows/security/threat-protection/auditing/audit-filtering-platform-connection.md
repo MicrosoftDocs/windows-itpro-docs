@@ -22,7 +22,7 @@ ms.technology: mde
 -   Windows Server 2016
 
 
-Audit Filtering Platform Connection determines whether the operating system generates audit events when connections are allowed or blocked by the [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510(v=vs.85).aspx).
+Audit Filtering Platform Connection determines whether the operating system generates audit events when connections are allowed or blocked by the [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page).
 
 Windows Filtering Platform (WFP) enables independent software vendors (ISVs) to filter and modify TCP/IP packets, monitor or authorize connections, filter Internet Protocol security (IPsec)-protected traffic, and filter remote procedure calls (RPCs).
 
@@ -55,4 +55,3 @@ This subcategory contains Windows Filtering Platform events about blocked and al
 -   [5158](event-5158.md)(S): The Windows Filtering Platform has permitted a bind to a local port.
 
 -   [5159](event-5159.md)(F): The Windows Filtering Platform has blocked a bind to a local port.
-

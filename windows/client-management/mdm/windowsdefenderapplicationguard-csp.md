@@ -196,14 +196,14 @@ ADMX Info:
 <!--/ADMXMapped-->
 
 <a href="" id="savefilestohost"></a>**Settings/SaveFilesToHost**  
-Added in Windows 10, version 1803. This policy setting allows you to determine whether users can elect to download files from Edge in the container and persist files them from container to the host operating system. 
+Added in Windows 10, version 1803. This policy setting allows you to determine whether users can elect to download files from Edge in the container and persist files them from container to the host operating system. This also enables users to elect files on the host operating system and upload it through Edge in the container. 
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete. 
 
 This policy setting is supported on Microsoft Edge on Windows 10 Enterprise or Windows 10 Education with Microsoft Defender Application Guard in Enterprise mode.
 
 The following list shows the supported values:  
-- 0 (default) - The user cannot download files from Edge in the container to the host file system. When the policy is not configured, it is the same as disabled (0).
+- 0 (default) - The user cannot download files from Edge in the container to the host file system, or upload files from host file system to Edge in the container. When the policy is not configured, it is the same as disabled (0).
 - 1 - Turns on the functionality to allow users to download files from Edge in the container to the host file system.  
 
 <!--ADMXMapped-->

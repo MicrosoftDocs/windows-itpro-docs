@@ -16,8 +16,8 @@ ms.date: 10/08/2020
 
 > [!div class="op_single_selector"]
 >
-> - [Policies in Policy CSP supported by Group Policy](policy-csps-supported-by-group-policy.md)
-> - [ADMX-backed policies in Policy CSP](policy-csps-admx-backed.md)
+> - [Policies in Policy CSP supported by Group Policy](./policies-in-policy-csp-supported-by-group-policy.md)
+> - [ADMX-backed policies in Policy CSP]()
 >
 
 - [ActiveXControls/ApprovedInstallationSites](./policy-csp-activexcontrols.md#activexcontrols-approvedinstallationsites)

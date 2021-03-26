@@ -32,8 +32,8 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 ### Requirements
 
-- [Windows Server with Desktop Experience](https://docs.microsoft.com/windows-server/get-started/getting-started-with-server-with-desktop-experience), with internet access (for the main VAMT console) and all updates applied
-- Latest version of the [Windows 10 ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+- [Windows Server with Desktop Experience](/windows-server/get-started/getting-started-with-server-with-desktop-experience), with internet access (for the main VAMT console) and all updates applied
+- Latest version of the [Windows 10 ADK](/windows-hardware/get-started/adk-install)
 - Any supported [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express) version, the latest is recommended
 - Alternatively, any supported **full** SQL instance
 
@@ -53,7 +53,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 ### Install VAMT using the ADK
 
-1. Download the latest version of [Windows 10 ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+1. Download the latest version of [Windows 10 ADK](/windows-hardware/get-started/adk-install).
 
    If an older version is already installed, it is recommended to uninstall the older ADK and install the latest version. Existing VAMT data is maintained in the VAMT database.
 
@@ -88,5 +88,4 @@ To uninstall VAMT using the **Programs and Features** Control Panel:
 2.  Select **Assessment and Deployment Kit** from the list of installed programs and click **Change**. Follow the instructions in the Windows ADK installer to remove VAMT.
 
 
- 
  

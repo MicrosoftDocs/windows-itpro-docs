@@ -320,7 +320,7 @@ The size constraints are the same as full Windows. To ensure that you have enoug
 ## <a href="" id="wtg-faq-roamact"></a>Do I need to activate Windows To Go every time I roam?
 
 
-No, Windows To Go requires volume activation; either using the [Key Management Service](https://go.microsoft.com/fwlink/p/?LinkId=619051) (KMS) server in your organization or using [Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=619053) based volume activation. The Windows To Go workspace will not need to be reactivated every time you roam. KMS activates Windows on a local network, eliminating the need for individual computers to connect to Microsoft. To remain activated, KMS client computers must renew their activation by connecting to the KMS host on periodic basis. This typically occurs as soon as the user has access to the corporate network (either through a direct connection on-premises or a through remote connection using DirectAccess or a virtual private network connection), once activated the machine will not need to be activated again until the activation validity interval has passed. In a KMS configuration the activation validity interval is 180 days.
+No, Windows To Go requires volume activation; either using the [Key Management Service](/previous-versions/tn-archive/ff793434(v=technet.10)) (KMS) server in your organization or using [Active Directory](/previous-versions/windows/hh852637(v=win.10)) based volume activation. The Windows To Go workspace will not need to be reactivated every time you roam. KMS activates Windows on a local network, eliminating the need for individual computers to connect to Microsoft. To remain activated, KMS client computers must renew their activation by connecting to the KMS host on periodic basis. This typically occurs as soon as the user has access to the corporate network (either through a direct connection on-premises or a through remote connection using DirectAccess or a virtual private network connection), once activated the machine will not need to be activated again until the activation validity interval has passed. In a KMS configuration the activation validity interval is 180 days.
 
 ## <a href="" id="wtg-faq-features"></a>Can I use all Windows features on Windows To Go?
 
@@ -354,7 +354,7 @@ Yes. You can use a combination of identifiers to determine if the currently runn
 
 Next, check if the **OperatingSystemSKU** property is equal to **4** (for Windows 10 Enterprise) or **121** (for Windows 10 Education). The combination of those two properties represents a Windows To Go workspace environment.
 
-For more information, see the MSDN article on the [Win32\_OperatingSystem class](https://go.microsoft.com/fwlink/p/?LinkId=619059).
+For more information, see the MSDN article on the [Win32\_OperatingSystem class](/windows/win32/cimwin32prov/win32-operatingsystem).
 
 ## <a href="" id="wtg-faq-lic"></a>How is Windows To Go licensed?
 
@@ -418,7 +418,7 @@ Reformatting the drive erases the data on the drive, but doesn't reconfigure the
 
      
 
-2.  Start the [diskpart](https://go.microsoft.com/fwlink/p/?LinkId=619070) command interpreter, by typing `diskpart` at the command prompt.
+2.  Start the [diskpart](/windows-server/administration/windows-commands/diskpart) command interpreter, by typing `diskpart` at the command prompt.
 
 3.  Use the `select disk` command to identify the drive. If you do not know the drive number, use the `list` command to display the list of disks available.
 
@@ -454,10 +454,4 @@ There is no support in Windows for upgrading a Windows To Go drive. Deployed Win
 -   [Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)
 
  
-
- 
-
-
-
-
 

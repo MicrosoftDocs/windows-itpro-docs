@@ -46,8 +46,8 @@ You can use Windows Configuration Designer to create a provisioning package (.pp
         - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
         - [Instructions for the mobile wizard](../mobile-devices/provisioning-configure-mobile.md)
         - [Instructions for the kiosk wizard](../kiosk-single-app.md#wizard)
-        - [Instructions for HoloLens wizard](https://technet.microsoft.com/itpro/hololens/hololens-provisioning)
-        - [Instructions for Surface Hub wizard](https://technet.microsoft.com/itpro/surface-hub/provisioning-packages-for-certificates-surface-hub)
+        - [Instructions for HoloLens wizard](/hololens/hololens-provisioning)
+        - [Instructions for Surface Hub wizard](/surface-hub/provisioning-packages-for-surface-hub)
         
       Wizards are also available for creating provisioning packages for Microsoft Surface Hub and Microsoft HoloLens devices. For a summary of the settings available in the desktop, mobile, and kiosk devices, see [What you can configure using Configuration Designer wizards](provisioning-packages.md#configuration-designer-wizards).
 
@@ -69,8 +69,8 @@ You can use Windows Configuration Designer to create a provisioning package (.pp
    |   All Windows desktop editions    |    Common settings and settings specific to desktop devices     |                All Windows 10 desktop editions (Home, Pro, Enterprise, Pro Education, Enterprise Education)                 |
    |    All Windows mobile editions    |     Common settings and settings specific to mobile devices     |                                                All Windows 10 Mobile devices                                                |
    |        Windows 10 IoT Core        |  Common settings and settings specific to Windows 10 IoT Core   |                                               All Windows 10 IoT Core devices                                               |
-   |      Windows 10 Holographic       | Common settings and settings specific to Windows 10 Holographic |                  [Microsoft HoloLens](https://technet.microsoft.com/itpro/hololens/hololens-provisioning)                   |
-   | Common to Windows 10 Team edition |    Common settings and settings specific to Windows 10 Team     | [Microsoft Surface Hub](https://technet.microsoft.com/itpro/surface-hub/provisioning-packages-for-certificates-surface-hub) |
+   |      Windows 10 Holographic       | Common settings and settings specific to Windows 10 Holographic |                  [Microsoft HoloLens](/hololens/hololens-provisioning)                   |
+   | Common to Windows 10 Team edition |    Common settings and settings specific to Windows 10 Team     | [Microsoft Surface Hub](/surface-hub/provisioning-packages-for-surface-hub) |
 
 
 5. On the **Import a provisioning package (optional)** page, you can select **Finish** to create your project, or browse to and select an existing provisioning package to import to your project, and then select **Finish**.
@@ -89,7 +89,7 @@ For an advanced provisioning project, Windows Configuration Designer opens the *
 
 ![What the ICD interface looks like](../images/icd-runtime.png)
 
-The settings in Windows Configuration Designer are based on Windows 10 configuration service providers (CSPs). To learn more about CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+The settings in Windows Configuration Designer are based on Windows 10 configuration service providers (CSPs). To learn more about CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](./how-it-pros-can-use-configuration-service-providers.md).
 
 The process for configuring settings is similar for all settings. The following table shows an example.
 
@@ -101,7 +101,7 @@ The process for configuring settings is similar for all settings. The following 
 <tr><td><img src="../images/five.png" alt="step five"/></br>When the setting is configured, it is displayed in the <strong>Selected customizations</strong> pane.</td><td><img src="../images/icd-step5.png" alt="Selected customizations pane"/></td></tr>
 </table>
 
-For details on each specific setting, see [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn965990.aspx). The reference topic for a setting is also displayed in Windows Configuration Designer when you select the setting, as shown in the following image.
+For details on each specific setting, see [Windows Provisioning settings reference](../wcd/wcd.md). The reference topic for a setting is also displayed in Windows Configuration Designer when you select the setting, as shown in the following image.
 
 ![Windows Configuration Designer opens the reference topic when you select a setting](../images/icd-setting-help.png) 
 
@@ -150,7 +150,7 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
 - Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
-- [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
+- [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 
 ## Related topics
 

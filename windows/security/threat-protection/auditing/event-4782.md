@@ -27,7 +27,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates on domain controllers during password migration of an account using [Active Directory Migration Toolkit](https://technet.microsoft.com/library/cc974332(v=ws.10).aspx).
+This event generates on domain controllers during password migration of an account using [Active Directory Migration Toolkit](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc974332(v=ws.10)).
 
 Typically **“Subject\\Security ID”** is the SYSTEM account.
 
@@ -115,4 +115,3 @@ Typically **“Subject\\Security ID”** is the SYSTEM account.
 For 4782(S): The password hash of an account was accessed.
 
 -   Monitor for all events of this type, because any actions with account’s password hashes should be planned. If this action was not planned, investigate the reason for the change.
-

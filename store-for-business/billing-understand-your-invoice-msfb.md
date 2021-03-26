@@ -81,7 +81,7 @@ You'll see the charges, tax, and the total amount due. Azure customers will also
 
 `Total = Charges - Azure Credit + Tax`
 
-The details show the cost broken down by product order name. For Azure customers, this might be organized by invoice section. For more information about how invoice sections are used with Azure products, see [Understand invoice sections](https://docs.microsoft.com/azure/billing/billing-mca-overview#understand-invoice-sections). 
+The details show the cost broken down by product order name. For Azure customers, this might be organized by invoice section. For more information about how invoice sections are used with Azure products, see [Understand invoice sections](/azure/billing/billing-mca-overview#understand-invoice-sections). 
 Within each product order, cost is broken down by service family.
 
 The total amount due for each service family is calculated by subtracting Azure credits from credits/charges and adding tax:
@@ -107,7 +107,7 @@ At the bottom of the invoice, there are instructions for paying your bill. You c
 If you have third-party services in your bill, the name and address of each publisher is listed at the bottom of your invoice.
 
 ## Next steps
-If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/billing/billing-understand-your-invoice-mca).
+If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](/azure/billing/billing-understand-your-invoice-mca).
 
 ## Need help? Contact us.
 
