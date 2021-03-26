@@ -72,7 +72,7 @@ The next sections cover pre-boot authentication and DMA policies that can provid
 ### Pre-boot authentication
 
 Pre-boot authentication with BitLocker is a policy setting that requires the use of either user input, such as a PIN, a startup key, or both to authenticate prior to making the contents of the system drive accessible. 
-The Group Policy setting is [Require additional authentication at startup](./bitlocker-group-policy-settings.md#a-href-idbkmk-unlockpol1arequire-additional-authentication-at-startup) and the corresponding setting in the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is SystemDrivesRequireStartupAuthentication. 
+The Group Policy setting is [Require additional authentication at startup](./bitlocker-group-policy-settings.md) and the corresponding setting in the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is SystemDrivesRequireStartupAuthentication. 
 
 BitLocker accesses and stores the encryption keys in memory only after pre-boot authentication is completed. 
 If Windows can’t access the encryption keys, the device can’t read or edit the files on the system drive. The only option for bypassing pre-boot authentication is entering the recovery key.
@@ -184,7 +184,7 @@ Mitigation:
 
 These settings are **Not configured** by default.
 
-For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost much more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. The Group Policy setting for [enhanced PIN](./bitlocker-group-policy-settings.md#a-href-idbkmk-unlockpol2aallow-enhanced-pins-for-startup) is:
+For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost much more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. The Group Policy setting for [enhanced PIN](./bitlocker-group-policy-settings.md) is:
 
 Computer Configuration|Administrative Templates|Windows Components|BitLocker Drive Encryption|Operating System Drives|Allow enhanced PINs for startup
 
