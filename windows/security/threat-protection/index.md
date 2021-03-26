@@ -114,7 +114,6 @@ In addition to quickly responding to advanced attacks, Microsoft Defender for En
 - [Configure automated investigation and remediation in Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation)
 - [Visit the Action center to see remediation actions](/microsoft-365/security/defender-endpoint/auto-investigation-action-center)
 - [Review remediation actions following an automated investigation](/microsoft-365/security/defender-endpoint/manage-auto-investigation)
-- [View the details and results of an automated investigation](microsoft-defender-atp/autoir-investigation-results.md)
 
 <a name="mte"></a>
 
