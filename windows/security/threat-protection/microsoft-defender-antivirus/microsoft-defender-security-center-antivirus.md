@@ -67,7 +67,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 ![Security intelligence version number information](images/defender/wdav-wdsc-defs.png)
 
-1. Open the Windows Security app by searching the start menu for **Security**, and then selecting **Windows Security**.
+1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
@@ -77,7 +77,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 ### Ensure Microsoft Defender Antivirus is enabled in the Windows Security app
 
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
@@ -89,11 +89,9 @@ This section describes how to perform some of the most common tasks when reviewi
     > If you switch **Real-time protection** off, it will automatically turn back on after a short delay. This is to ensure you are protected from malware and threats.
     > If you install another antivirus product, Microsoft Defender Antivirus automatically disables itself and is indicated as such in the Windows Security app. A setting will appear that will allow you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
-<a id="exclusions"></a>
-
 ### Add exclusions for Microsoft Defender Antivirus in the Windows Security app
 
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
@@ -102,8 +100,6 @@ This section describes how to perform some of the most common tasks when reviewi
 4. Under the **Exclusions** setting, select **Add or remove exclusions**. 
 
 5. Select the plus icon (**+**) to choose the type and set the options for each exclusion. 
-
-<a id="detection-history"></a>
 
 The following table summarizes exclusion types and what happens:
 
@@ -118,27 +114,23 @@ To learn more, see the following resources:
 - [Configure and validate exclusions based on file extension and folder location](./configure-extension-file-exclusions-microsoft-defender-antivirus.md) 
 - [Configure exclusions for files opened by processes](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-### Review threat detection history in the Windows Defender Security Center app
+## Review threat detection history in the Windows Defender Security Center app
 
-1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Select **Threat history**
+3. Select **Protection history**. Any recent items are listed.
 
-4. Select **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
+## Set ransomware protection and recovery options
 
-<a id="ransomware"></a>
-
-### Set ransomware protection and recovery options
-
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Select **Ransomware protection**.
+3. Under **Ransomware protection**, select **Manage ransomware protection**.
 
-4. To change Controlled folder access settings, see [Protect important folders with Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders).
+4. To change **Controlled folder access** settings, see [Protect important folders with Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders).
 
 5. To set up ransomware recovery options, select **Set up** under **Ransomware data recovery** and follow the instructions for linking or setting up your OneDrive account so you can easily recover from a ransomware attack.
 
