@@ -124,5 +124,5 @@ The table in this section summarizes the functionality and features that are ava
 - [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server-2016.md)
 - [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 - [Configure Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
-- [Address false positives/negatives in Microsoft Defender for Endpoint](../microsoft-defender-atp/defender-endpoint-false-positives-negatives.md)
+- [Address false positives/negatives in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives)
 - [Learn about Microsoft 365 Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about)
