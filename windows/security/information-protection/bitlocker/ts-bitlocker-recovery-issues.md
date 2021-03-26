@@ -32,7 +32,7 @@ Windows 10 prompts you for a BitLocker recovery password. However, you did not c
 The BitLocker and Active Directory Domain Services (AD DS) FAQ addresses situations that may produce this symptom, and provides information about how to resolve the issue:
 
 - [What if BitLocker is enabled on a computer before the computer has joined the domain?](./bitlocker-and-adds-faq.md#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain)
-- [What happens if the backup initially fails? Will BitLocker retry the backup?](./bitlocker-and-adds-faq.md#what-happens-if-the-backup-initially-fails-will-bitlocker-retry-the-backup)
+- [What happens if the backup initially fails? Will BitLocker retry the backup?](./bitlocker-and-adds-faq.md)
 
 ## The recovery password for a laptop was not backed up, and the laptop is locked
 
@@ -279,7 +279,7 @@ You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the
 
 ### Cause
 
-TPM 1.2 does not support Secure Launch. For more information, see [System Guard Secure Launch and SMM protection: Requirements Met by System Guard Enabled Machines](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md#requirements-met-by-system-guard-enabled-machines)
+TPM 1.2 does not support Secure Launch. For more information, see [System Guard Secure Launch and SMM protection: Requirements Met by System Guard Enabled Machines](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 
 For more information about this technology, see [Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10](../../threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
 
