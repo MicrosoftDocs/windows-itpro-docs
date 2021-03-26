@@ -184,7 +184,7 @@ Mitigation:
 
 These settings are **Not configured** by default.
 
-For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost much more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. The Group Policy setting for [enhanced PIN](./bitlocker-group-policy-settings.md#a-href-idbkmk-unlockpol2aallow-enhanced-pins-for-startup) is:
+For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost much more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. The Group Policy setting for [enhanced PIN](./bitlocker-group-policy-settings.md) is:
 
 Computer Configuration|Administrative Templates|Windows Components|BitLocker Drive Encryption|Operating System Drives|Allow enhanced PINs for startup
 
