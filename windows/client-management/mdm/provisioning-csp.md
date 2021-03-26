@@ -23,10 +23,23 @@ The Provisioning configuration service provider is used for bulk user enrollment
 
 For bulk enrollment step-by-step guide, see [Bulk enrollment](bulk-enrollment-using-windows-provisioning-tool.md).
 
-The following diagram shows the Provisioning configuration service provider in tree format.
-
-![provisioning csp diagram](images/provisioning-csp-provisioning.png)
-
+The following shows the Provisioning configuration service provider in tree format.
+```
+./Vendor/MSFT/ProvisioningCommands
+ProvisioningCommands
+----DeviceContext
+--------CommandSet
+------------Default
+----------------CommandLine
+----PrimaryContext
+--------CommandSet
+------------CommandName
+----------------CommandLine
+----------------ReturnCodeSuccess
+----------------ReturnCodeRestart
+----------------RestartRequired
+----------------ContinueInstall
+```
 <a href="" id="--vendor-msft"></a>**./Vendor/MSFT**  
 Root node for Provisioning CSP.
 
