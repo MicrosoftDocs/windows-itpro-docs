@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Antivirus in the Windows Security app
-description: With Microsoft Defender AV now included in the Windows Security app, you can review, compare, and perform common tasks.
+description: With Microsoft Defender Antivirus now included in the Windows Security app, you can review, compare, and perform common tasks.
 keywords: wdav, antivirus, firewall, security, windows
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -48,61 +48,34 @@ The Windows Security app is a client interface on Windows 10, version 1703 and l
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
    
-## Comparison of settings and functions of the old app and the new app
-
-All of the previous functions and settings from the Windows Defender app (in versions of Windows 10 before version 1703) are now found in the new Windows Security app. Settings that were previously located in Windows Settings under **Update & security** > **Windows Defender** are also now in the new app.
-
-The following diagrams compare the location of settings and functions between the old and new apps:
-
-![Version of Windows Defender in Windows 10 before version 1703](images/defender/wdav-windows-defender-app-old.png)
-
-> [!div class="mx-imgBorder"]
-> ![Microsoft Defender Antivirus in Windows 10, version 1703 and later](images/defender/wdav-wdsc.png)
-
-| Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | Description |
-|:---|:---|:---|:---|
-| 1 | **Update** tab | **Protection updates** | Update the protection (Security intelligence) |
-| 2 | **History** tab | **Scan history** | Review threats that were quarantined, removed, or allowed |
-| 3 | **Settings** (links to **Windows Settings**) | **Virus & threat protection settings** | Enable various features, including Real-time protection, Cloud-delivered protection, Advanced notifications, and Automatic ample submission |
-| 4 | **Scan options** | **Advanced scan** | Run a full scan, custom scan, or a Microsoft Defender Antivirus Offline scan |
-| 5 | Run a scan (based on the option chosen under **Scan options** | **Quick scan** | In Windows 10, version 1703 and later, you can run custom and full scans under the **Advanced scan** option |
-
-## Common tasks
-
-This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Microsoft Defender Antivirus in the Windows Security app.
+The following sections describe how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Microsoft Defender Antivirus in the Windows Security app.
 
 > [!NOTE]
 > If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) topic describes how local policy override settings can be configured.
 
-<a id="scan"></a>
+## Run a scan with the Windows Security app
 
-### Run a scan with the Windows Security app
-
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for **Security**, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Select **Scan now**.
+3. Select **Quick scan**. Or, to run a full scan, select **Scan options**, and then select an option, such as **Full scan**.
 
-4. Select **Run a new advanced scan** to specify different types of scans, such as a full scan.
-
-<a id="definition-version"></a>
-
-### Review the security intelligence update version and download the latest updates in the Windows Security app
+## Review the security intelligence update version and download the latest updates in the Windows Security app
 
 ![Security intelligence version number information](images/defender/wdav-wdsc-defs.png)
 
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Select **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check this against the latest version available for manual download, or review the change log for that version.
+3. Select **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check your current against the latest version available for manual download, or review the change log for that version. See [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 4. Select **Check for updates** to download new protection updates (if there are any).
 
-### Ensure Microsoft Defender Antivirus is enabled in the Windows Security app
+## Ensure Microsoft Defender Antivirus is enabled in the Windows Security app
 
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
@@ -114,11 +87,9 @@ This section describes how to perform some of the most common tasks when reviewi
     > If you switch **Real-time protection** off, it will automatically turn back on after a short delay. This is to ensure you are protected from malware and threats.
     > If you install another antivirus product, Microsoft Defender Antivirus automatically disables itself and is indicated as such in the Windows Security app. A setting will appear that will allow you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
-<a id="exclusions"></a>
+## Add exclusions for Microsoft Defender Antivirus in the Windows Security app
 
-### Add exclusions for Microsoft Defender Antivirus in the Windows Security app
-
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
@@ -127,8 +98,6 @@ This section describes how to perform some of the most common tasks when reviewi
 4. Under the **Exclusions** setting, select **Add or remove exclusions**. 
 
 5. Select the plus icon (**+**) to choose the type and set the options for each exclusion. 
-
-<a id="detection-history"></a>
 
 The following table summarizes exclusion types and what happens:
 
@@ -143,27 +112,23 @@ To learn more, see the following resources:
 - [Configure and validate exclusions based on file extension and folder location](./configure-extension-file-exclusions-microsoft-defender-antivirus.md) 
 - [Configure exclusions for files opened by processes](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-### Review threat detection history in the Windows Defender Security Center app
+## Review threat detection history in the Windows Defender Security Center app
 
-1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Select **Threat history**
+3. Select **Protection history**. Any recent items are listed.
 
-4. Select **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
+## Set ransomware protection and recovery options
 
-<a id="ransomware"></a>
-
-### Set ransomware protection and recovery options
-
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Select **Ransomware protection**.
+3. Under **Ransomware protection**, select **Manage ransomware protection**.
 
-4. To change Controlled folder access settings, see [Protect important folders with Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders).
+4. To change **Controlled folder access** settings, see [Protect important folders with Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders).
 
 5. To set up ransomware recovery options, select **Set up** under **Ransomware data recovery** and follow the instructions for linking or setting up your OneDrive account so you can easily recover from a ransomware attack.
 

@@ -75,7 +75,7 @@ The potentially unwanted application (PUA) protection feature in Microsoft Defen
 
 Microsoft Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine. When a PUA file is detected on an endpoint, Microsoft Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md)) in the same format as other threat detections. The notification is prefaced with `PUA:` to indicate its content.
 
-The notification appears in the usual [quarantine list within the Windows Security app](microsoft-defender-security-center-antivirus.md#detection-history).
+The notification appears in the usual [quarantine list within the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
 ### Configure PUA protection in Microsoft Defender Antivirus
 

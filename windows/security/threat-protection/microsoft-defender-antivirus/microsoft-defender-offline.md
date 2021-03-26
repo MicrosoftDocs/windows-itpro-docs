@@ -74,7 +74,6 @@ Microsoft Defender Offline scans are indicated under **Malware remediation statu
 ![Microsoft Endpoint Manager indicating a Microsoft Defender Offline scan is required](images/defender/sccm-wdo.png)
 
 ## Configure notifications
-<a name="manage-notifications"></a>
 
 Microsoft Defender Offline notifications are configured in the same policy setting as other Microsoft Defender AV notifications.
 
@@ -131,7 +130,7 @@ See the following for more information:
 
 ## Review scan results
 
-Microsoft Defender Offline scan results will be listed in the [Scan history section of the Windows Security app](microsoft-defender-security-center-antivirus.md#detection-history). 
+Microsoft Defender Offline scan results will be listed in the [Scan history section of the Windows Security app](microsoft-defender-security-center-antivirus.md). 
 
 
 ## Related articles
