@@ -23,7 +23,7 @@ ms.reviewer:
 - Windows 10 Professional, version 1709
 - Windows 10 Education, version 1709
 
-In addition to the endpoints listed for [Windows 10 Enterprise](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services), the following endpoints are available on other editions of Windows 10, version 1709.
+In addition to the endpoints listed for [Windows 10 Enterprise](./manage-connections-from-windows-operating-system-components-to-microsoft-services.md), the following endpoints are available on other editions of Windows 10, version 1709.
 
 We used the following methodology to derive these network endpoints:
 

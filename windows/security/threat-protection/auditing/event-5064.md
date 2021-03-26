@@ -21,7 +21,7 @@ ms.technology: mde
 -   Windows Server 2016
 
 
-This event generates in [BCryptCreateContext](https://msdn.microsoft.com/library/windows/desktop/aa375381(v=vs.85).aspx)() and [BCryptDeleteContext](https://msdn.microsoft.com/library/windows/desktop/aa375392(v=vs.85).aspx)() functions. These are Cryptographic Next Generation (CNG) functions.
+This event generates in [BCryptCreateContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptcreatecontext)() and [BCryptDeleteContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptdeletecontext)() functions. These are Cryptographic Next Generation (CNG) functions.
 
 This event generates when cryptographic context was created or deleted.
 
@@ -72,4 +72,3 @@ There is no example of this event in this document.
 ## Security Monitoring Recommendations
 
 -   Typically this event is required for detailed monitoring of CNG-related cryptographic functions. If you need to monitor or troubleshoot actions related to specific cryptographic functions, review this event to see if it provides the information you need.
-

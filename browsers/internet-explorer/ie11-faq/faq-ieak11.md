@@ -59,7 +59,7 @@ Yes. You can use IEAK 11 to build custom Internet Explorer 11 packages in any of
 **Q: Is there a version of the Internet Explorer Administration Kit (IEAK) supporting IE11?**<br>
 Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for download. IEAK 11 lets you create custom versions of IE11 for use in your organization. For more information, see the following resources:
 
-- [Internet Explorer Administration Kit Information and Downloads](https://go.microsoft.com/fwlink/p/?LinkId=214250) on the Internet Explorer TechCenter.
+- [Internet Explorer Administration Kit Information and Downloads](../ie11-ieak/ieak-information-and-downloads.md) on the Internet Explorer TechCenter.
 
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
 
@@ -118,7 +118,7 @@ IEAK 11 is available in 24 languages but can build customized Internet Explorer 
 
 ## Additional resources
 
-[Download IEAK 11](https://technet.microsoft.com/microsoft-edge/bb219517)
-[IEAK 11 overview](https://technet.microsoft.com/microsoft-edge/dn532244)
-[IEAK 11 product documentation](https://docs.microsoft.com/internet-explorer/ie11-ieak/index)
+[Download IEAK 11](../ie11-ieak/ieak-information-and-downloads.md)
+[IEAK 11 overview](../ie11-ieak/index.md)
+[IEAK 11 product documentation](../ie11-ieak/index.md)
 [IEAK 11 licensing guidelines](../ie11-ieak/licensing-version-and-features-ieak11.md)

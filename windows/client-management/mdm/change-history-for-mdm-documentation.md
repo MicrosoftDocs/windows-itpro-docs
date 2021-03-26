@@ -552,7 +552,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </ul>
 <p>Added a new section:</p>
 <ul>
-<li><a href="policy-csps-supported-by-group-policy.md" data-raw-source="[[Policies in Policy CSP supported by Group Policy](policy-csps-supported-by-group-policy.md)">[Policies in Policy CSP supported by Group Policy</a> - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
+<li><a href="/windows/client-management/mdm/policies-in-policy-csp-supported-by-group-policy" data-raw-source="[[Policies in Policy CSP supported by Group Policy](./policies-in-policy-csp-supported-by-group-policy.md)">[Policies in Policy CSP supported by Group Policy</a> - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
 </ul>
 </td></tr>
 <tr>
@@ -918,7 +918,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 <td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business. Windows Store name changed to Microsoft Store.</p>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">The <a href="https://msdn.microsoft.com/library/mt221945.aspx" data-raw-source="[\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/library/mt221945.aspx)">[MS-MDE2]: Mobile Device Enrollment Protocol Version 2</a></td>
+<td style="vertical-align:top">The <a href="/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692" data-raw-source="[\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692)">[MS-MDE2]: Mobile Device Enrollment Protocol Version 2</a></td>
 <td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
 <ul>
 <li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>

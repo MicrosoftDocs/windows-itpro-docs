@@ -111,7 +111,7 @@ This event generates every time a scheduled task is enabled.
 
 <img src="images/computer-management.png" alt="Task Scheduler Library illustration" width="840" height="176" />
 
--   **Task Content** \[Type = UnicodeString\]: the [XML](https://msdn.microsoft.com/library/aa286548.aspx) of the enabled task. Here “[XML Task Definition Format](https://msdn.microsoft.com/library/cc248308.aspx)” you can read more about the XML format for scheduled tasks.
+-   **Task Content** \[Type = UnicodeString\]: the [XML](/previous-versions/aa286548(v=msdn.10)) of the enabled task. Here “[XML Task Definition Format](/openspecs/windows_protocols/ms-tsch/0d6383e4-de92-43e7-b0bb-a60cfa36379f)” you can read more about the XML format for scheduled tasks.
 
 ## Security Monitoring Recommendations
 
@@ -120,4 +120,3 @@ For 4700(S): A scheduled task was enabled.
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If a highly critical scheduled task exists on some computers, and for some reason it should never be enabled, monitor for [4700](event-4700.md) events with the corresponding **Task Name**.
-

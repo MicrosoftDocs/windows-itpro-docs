@@ -19,7 +19,7 @@ ms.sitesec: library
 # Address bar 
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
 
 Microsoft Edge, by default, shows a list of search suggestions in the address bar. You can minimize network connections from Microsoft Edge to Microsoft services by hiding the functionality of the Address bar drop-down list.
 
@@ -34,4 +34,3 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 
 ## Configure search suggestions in Address bar
 [!INCLUDE [configure-search-suggestions-address-bar-include.md](../includes/configure-search-suggestions-address-bar-include.md)]
-

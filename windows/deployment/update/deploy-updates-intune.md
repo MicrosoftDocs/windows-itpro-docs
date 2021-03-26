@@ -17,4 +17,4 @@ ms.topic: article
 
 - Windows 10
 
-See the Microsoft Intune [documentation](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#windows-10-feature-updates) for details about using Intune to deploy and manage Windows 10 updates.
+See the Microsoft Intune [documentation](/mem/intune/protect/windows-update-for-business-configure#windows-10-feature-updates) for details about using Intune to deploy and manage Windows 10 updates.

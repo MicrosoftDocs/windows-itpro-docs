@@ -43,7 +43,7 @@ There are three methods you can use to maintain AppLocker policies:
 ## <a href="" id="bkmk-applkr-use-mdm"></a>Maintaining AppLocker policies by using Mobile Device Management (MDM)
 Using the AppLocker configuration service provider, you can select which apps are allowed or blocked from running. Using the CSP, you can configure app restrictions based on grouping (such as EXE, MSI, DLL, Store apps and more) and then chose how to enforce different policies for different apps.
 
-For more information, see the [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).
+For more information, see the [AppLocker CSP](/windows/client-management/mdm/applocker-csp).
 
 
 ## <a href="" id="bkmk-applkr-use-gp"></a>Maintaining AppLocker policies by using Group Policy

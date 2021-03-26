@@ -45,7 +45,7 @@ For custom graphics and branding, add the `FEATURE\AUTOCONFIG\BRANDING` registry
 
 ## Updating your automatic configuration settings
 After adding the `FEATURE\AUTOCONFIG\BRANDING` registry key, you can change your automatic configuration settings to pick up the updated branding.
-<p><strong>Important</strong><br>Your branding changes won&#39;t be added or updated if you&#39;ve previously chosen the <strong>Disable external branding of IE</strong> setting in the <code>User Configuration\Administrative Templates\Windows Components\Internet Explorer</code> Group Policy object. This setting is intended to prevent branding by a third-party, like an Internet service or content provider. For more information about Group Policy, including videos and the latest technical documentation, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=214514" data-raw-source="[Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514)">Group Policy TechCenter</a>.
+<p><strong>Important</strong><br>Your branding changes won&#39;t be added or updated if you&#39;ve previously chosen the <strong>Disable external branding of IE</strong> setting in the <code>User Configuration\Administrative Templates\Windows Components\Internet Explorer</code> Group Policy object. This setting is intended to prevent branding by a third-party, like an Internet service or content provider. For more information about Group Policy, including videos and the latest technical documentation, see the <a href="/windows/deployment/deploy-whats-new" data-raw-source="[Group Policy TechCenter](/windows/deployment/deploy-whats-new)">Group Policy TechCenter</a>.
 
  **To update your settings**
 
@@ -71,8 +71,4 @@ You have two options to restrict your users' ability to override the automatic c
 -   **Not Using Active Directory.** Choose the **Disable changing Automatic Configuration settings** setting in the `User Configuration\Administrative Templates\Windows Components\Internet Explorer` Group Policy object.
 
  
-
- 
-
-
 

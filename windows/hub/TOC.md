@@ -8,4 +8,4 @@
 ## [Security](/windows/security)
 ## [Privacy](/windows/privacy)
 ## [Troubleshooting](/windows/client-management/windows-10-support-solutions)
-## [Previous Windows versions](https://docs.microsoft.com/previous-versions/windows)
+## [Previous Windows versions](/previous-versions/windows)

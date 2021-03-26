@@ -134,7 +134,7 @@ To sign the existing catalog file, copy each of the following commands into an e
    >[!NOTE]
    >The *&lt;Path to signtool.exe&gt;* variable should be the full path to the Signtool.exe utility. *ContosoDGSigningCert* represents the subject name of the certificate that you will use to sign the catalog file. This certificate should be imported to your personal certificate store on the computer on which you are attempting to sign the catalog file.
    > 
-   >For additional information about Signtool.exe and all additional switches, visit the [Sign Tool page](https://docs.microsoft.com/dotnet/framework/tools/signtool-exe).
+   >For additional information about Signtool.exe and all additional switches, visit the [Sign Tool page](/dotnet/framework/tools/signtool-exe).
     
 4. Verify the catalog file digital signature. Right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with a **sha256** algorithm, as shown in Figure 1.
 
@@ -152,14 +152,14 @@ After the catalog file is signed, add the signing certificate to a WDAC policy, 
 
 1.  If you have not already verified the catalog file digital signature, right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with the algorithm you expect.
 
-2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) to create a WDAC policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
+2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to create a WDAC policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
 
     `New-CIPolicy -Level PcaCertificate -FilePath C:\PolicyFolder\CatalogSignatureOnly.xml –UserPEs`
 
     > [!NOTE]
     > Include the **-UserPEs** parameter to ensure that the policy includes user mode code integrity.
 
-3.  Use [Add-SignerRule](https://docs.microsoft.com/powershell/module/configci/add-signerrule) to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
+3.  Use [Add-SignerRule](/powershell/module/configci/add-signerrule) to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
 
     `Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User`
 
@@ -353,4 +353,3 @@ At the time of the next software inventory cycle, when the targeted clients rece
 - [Windows Defender Application Control Design Guide](windows-defender-application-control-design-guide.md)
 
 - [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md)
-

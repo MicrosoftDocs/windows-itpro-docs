@@ -44,7 +44,7 @@ This table includes the recommended URLs to add to your Enterprise Cloud Resourc
 
 You can add other work-only apps to the Cloud Resource list, or you can create a packaged app rule for the .exe file to protect every file the app creates or modifies. Depending on how the app is accessed, you might want to add both.
 
-For Office 365 endpoints, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). 
+For Office 365 endpoints, see [Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges). 
 Office 365 endpoints are updated monthly. 
 Allow the domains listed in section number 46 Allow Required and add also add the apps. 
 Note that apps from officeapps.live.com can also store personal data. 

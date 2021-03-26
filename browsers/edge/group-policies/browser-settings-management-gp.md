@@ -19,7 +19,7 @@ ms.sitesec: library
 # Browser experience 
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
 
 Not only do the other Microsoft Edge group policies enhance the browsing experience, but we also want to mention some of the other and common browsing experiences.  For example, printing web content is a common browsing experience. However, if you want to prevent users from printing web content, Microsoft Edge has a group policy that allows you to prevent printing. The same goes for Pop-up Blocker; Microsoft Edge has a group policy that lets you prevent pop-up windows or let users choose to use Pop-up Blocker. You can use any one of the following group policies to continue enhancing the browsing experience for your users.
 
@@ -51,6 +51,3 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 [!INCLUDE [do-not-sync-include](../includes/do-not-sync-include.md)]
 
 To learn about the policies to sync the browser settings, see [Sync browser settings](sync-browser-settings-gp.md).
-
-
-

@@ -14,7 +14,7 @@ ms.date: 08/09/2017
 
 # EnterpriseDataProtection CSP
 
-The EnterpriseDataProtection configuration service provider (CSP) is used to configure settings for Windows Information Protection (WIP), formerly known as Enterprise Data Protection. For more information about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+The EnterpriseDataProtection configuration service provider (CSP) is used to configure settings for Windows Information Protection (WIP), formerly known as Enterprise Data Protection. For more information about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
 > [!Note]
 > To make WIP functional, the AppLocker CSP and the network isolation-specific settings must also be configured. For more information, see [AppLocker CSP](applocker-csp.md) and NetworkIsolation policies in [Policy CSP](policy-configuration-service-provider.md).
@@ -26,8 +26,8 @@ While WIP has no hard dependency on VPN, for best results you should configure V
 
 To learn more about WIP, see the following articles:
 
--   [Create a Windows Information Protection (WIP) policy](https://technet.microsoft.com/itpro/windows/keep-secure/overview-create-wip-policy)
--   [General guidance and best practices for Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/guidance-and-best-practices-wip)
+-   [Create a Windows Information Protection (WIP) policy](/windows/security/information-protection/windows-information-protection/overview-create-wip-policy)
+-   [General guidance and best practices for Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip)
 
 The following shows the EnterpriseDataProtection CSP in tree format.
 ```
@@ -76,8 +76,8 @@ Changing the primary enterprise ID is not supported and may cause unexpected beh
 Here are the steps to create canonical domain names:
 
 1.  Transform the ASCII characters (A-Z only) to lowercase. For example, Microsoft.COM -> microsoft.com.
-2.  Call [IdnToAscii](https://msdn.microsoft.com/library/windows/desktop/dd318149.aspx) with IDN\_USE\_STD3\_ASCII\_RULES as the flags.
-3.  Call [IdnToUnicode](https://msdn.microsoft.com/library/windows/desktop/dd318151.aspx) with no flags set (dwFlags = 0).
+2.  Call [IdnToAscii](/windows/win32/api/winnls/nf-winnls-idntoascii) with IDN\_USE\_STD3\_ASCII\_RULES as the flags.
+3.  Call [IdnToUnicode](/windows/win32/api/winnls/nf-winnls-idntounicode) with no flags set (dwFlags = 0).
 
 Supported operations are Add, Get, Replace, and Delete. Value type is string.
 
@@ -352,10 +352,4 @@ Bits 2 and 4 are reserved for future use.
 Supported operation is Get. Value type is integer.
 
  
-
- 
-
-
-
-
 

@@ -42,7 +42,7 @@ This can only be done in Group Policy.
 >
 >You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
@@ -50,7 +50,7 @@ This can only be done in Group Policy.
 
 6.  Open the **Hide the Family options area** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy). 
 
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:

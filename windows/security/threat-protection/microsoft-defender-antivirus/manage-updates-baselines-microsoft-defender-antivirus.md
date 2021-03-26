@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
@@ -33,7 +33,7 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 
 > [!IMPORTANT]
 > Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
-> Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](./microsoft-defender-antivirus-compatibility.md).
 > 
 > To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
@@ -58,14 +58,14 @@ Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://supp
 
 You can manage the distribution of updates through one of the following methods: 
 
-- [Windows Server Update Service (WSUS)](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
-- [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction)
+- [Windows Server Update Service (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+- [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
 - The usual method you use to deploy Microsoft and Windows updates to endpoints in your network.
 
-For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
+For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
-> Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
+> Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
 
 ## Monthly platform and engine versions
 
@@ -199,7 +199,7 @@ No known issues
 - Improved behavior monitoring for memory scans
 - Improved macro streams scanning
 - Added `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet
-- [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored. Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.
+- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored. Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.
 
 
 ### Known Issues
@@ -237,7 +237,7 @@ No known issues
     
 ### What's new
 
-- Possibility to specify the [location of the support logs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)
+- Possibility to specify the [location of the support logs](./collect-diagnostic-data.md)
 - Skipping aggressive catchup scan in Passive mode.
 - Allow Defender to update on metered connections
 - Fixed performance tuning when caching is disabled 
@@ -306,7 +306,7 @@ No known issues
     
 ### What's new
 
-- CPU Throttling option added to [MpCmdRun](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)
+- CPU Throttling option added to [MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md)
 - Improve diagnostic capability
 - reduce Security intelligence timeout (5 min)
 - Extend AMSI engine internal log capability
@@ -352,12 +352,12 @@ Engine: **1.1.16700.2**
 - Fixed BSOD on WS2016 with Exchange
 - Support platform updates when TMP is redirected to network path
 - Platform and engine versions are added to [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
-- extend Emergency signature update to [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+- extend Emergency signature update to [passive mode](./microsoft-defender-antivirus-compatibility.md)
 - Fix 4.18.1911.3 hang
    
 ### Known Issues
 
-[**Fixed**] devices utilizing [modern standby mode](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.  
+[**Fixed**] devices utilizing [modern standby mode](/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.  
 <br/>
 > [!IMPORTANT]
 > This update is:

@@ -35,9 +35,9 @@ There are 3 types of name matches that can  set up for NRPT:
 
 - Any resolution should attempt to first resolve with the proxy server/DNS server with this entry
 
-NRPT is set using the **VPNv2/*ProfileName*/DomainNameInformationList** node of the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx). This node also configures Web proxy server or domain name servers. 
+NRPT is set using the **VPNv2/*ProfileName*/DomainNameInformationList** node of the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp). This node also configures Web proxy server or domain name servers. 
 
-[Learn more about NRPT](https://technet.microsoft.com/library/ee649207%28v=ws.10%29.aspx)
+[Learn more about NRPT](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649207(v=ws.10))
 
  
 ## DNS suffix
@@ -48,7 +48,7 @@ Primary DNS suffix is set using the **VPNv2/*ProfileName*/DnsSuffix** node.
 
 
 
-[Learn more about primaryDNS suffix](https://technet.microsoft.com/library/cc959611.aspx)
+[Learn more about primaryDNS suffix](/previous-versions/windows/it-pro/windows-2000-server/cc959611(v=technet.10))
 
 ## Persistent
 
@@ -60,7 +60,7 @@ Persistent name resolution is set using the **VPNv2/*ProfileName*/DomainNameInfo
 
 ## Configure name resolution
 
-See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp) for XML configuration. 
 
 The following image shows name resolution options in a VPN Profile configuration policy using Microsoft Intune.
 

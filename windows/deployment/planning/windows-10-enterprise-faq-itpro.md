@@ -52,11 +52,11 @@ For many devices, drivers will be automatically installed in Windows 10 and ther
 
 ### Where can I find out if an application or device is compatible with Windows 10?
 
-Many existing Win32 and Win64 applications already run reliably on Windows 10 without any changes. You can also expect strong compatibility and support for Web apps and devices. The [Ready for Windows](https://www.readyforwindows.com/) website lists software solutions that are supported and in use for Windows 10. You can find additional guidance to help with application compatibility at [Windows 10 application compatibility](https://technet.microsoft.com/windows/mt703793) on the Windows IT Center.
+Many existing Win32 and Win64 applications already run reliably on Windows 10 without any changes. You can also expect strong compatibility and support for Web apps and devices. The [Ready for Windows](https://www.readyforwindows.com/) website lists software solutions that are supported and in use for Windows 10. You can find additional guidance to help with application compatibility at [Windows 10 application compatibility](/windows/windows-10/) on the Windows IT Center.
 
 ### Is there an easy way to assess if my organization’s devices are ready to upgrade to Windows 10?
 
-[Windows Analytics Upgrade Readiness](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics) (formerly known as Upgrade Analytics) provides powerful insights and recommendations about the computers, applications, and drivers in your organization, at no extra cost and without additional infrastructure requirements. This new service guides you through your upgrade and feature update projects using a workflow based on Microsoft recommended practices. Up-to-date inventory data allows you to balance cost and risk in your upgrade projects. You can find additional product information at [Windows Analytics](https://www.microsoft.com/WindowsForBusiness/Windows-Analytics).
+[Windows Analytics Upgrade Readiness](/mem/configmgr/desktop-analytics/overview) (formerly known as Upgrade Analytics) provides powerful insights and recommendations about the computers, applications, and drivers in your organization, at no extra cost and without additional infrastructure requirements. This new service guides you through your upgrade and feature update projects using a workflow based on Microsoft recommended practices. Up-to-date inventory data allows you to balance cost and risk in your upgrade projects. You can find additional product information at [Windows Analytics](https://www.microsoft.com/WindowsForBusiness/Windows-Analytics).
 
 ## Administration and deployment
 
@@ -69,7 +69,7 @@ Updated versions of Microsoft deployment tools, including MDT, Configuration Man
 
 ### Can I upgrade computers from Windows 7 or Windows 8.1 without deploying a new image?
 
-Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device using MDT and/or Configuration Manager. For more information, see [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-system-center-configuraton-manager) or [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).
+Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device using MDT and/or Configuration Manager. For more information, see [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](../deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md) or [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md).
 
 ### Can I upgrade from Windows 7 Enterprise or Windows 8.1 Enterprise to Windows 10 Enterprise for free?
 
@@ -81,7 +81,7 @@ For devices that are licensed under a volume license agreement for Windows that 
 
 ### What is Windows as a service?
 
-The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers. These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time. For more information, see [Overview of Windows as a service](https://technet.microsoft.com/itpro/windows/manage/waas-overview).
+The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers. These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time. For more information, see [Overview of Windows as a service](../update/waas-overview.md).
 
 ### How is servicing different with Windows as a service?
 
@@ -89,7 +89,7 @@ Traditional Windows servicing has included several release types: major revision
 
 ### What are the servicing channels?
 
-To align with the new method of delivering feature updates and quality updates in Windows 10, Microsoft introduced the concept of servicing channels to allow customers to designate how aggressively their individual devices are updated. For example, an organization may have test devices that the IT department can update with new features as soon as possible, and then specialized devices that require a longer feature update cycle to ensure continuity. With that in mind, Microsoft offers two servicing channels for Windows 10: Semi-Annual Channel, and Long-Term Servicing Channel (LTSC). For details about the versions in each servicing channel, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx). For more information on each channel, see [servicing channels](/windows/deployment/update/waas-overview#servicing-channels).
+To align with the new method of delivering feature updates and quality updates in Windows 10, Microsoft introduced the concept of servicing channels to allow customers to designate how aggressively their individual devices are updated. For example, an organization may have test devices that the IT department can update with new features as soon as possible, and then specialized devices that require a longer feature update cycle to ensure continuity. With that in mind, Microsoft offers two servicing channels for Windows 10: Semi-Annual Channel, and Long-Term Servicing Channel (LTSC). For details about the versions in each servicing channel, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx). For more information on each channel, see [servicing channels](../update/waas-overview.md#servicing-channels).
 
 ### What tools can I use to manage Windows as a service updates?
 
@@ -99,13 +99,13 @@ There are many tools are available. You can choose from these:
 - Windows Server Update Services
 - Microsoft Endpoint Configuration Manager
 
-For more information on pros and cons for these tools, see [Servicing Tools](/windows/deployment/update/waas-overview#servicing-tools).
+For more information on pros and cons for these tools, see [Servicing Tools](../update/waas-overview.md#servicing-tools).
 
 ## User experience
 
 ### Where can I find information about new features and changes in Windows 10 Enterprise?
 
-For an overview of the new enterprise features in Windows 10 Enterprise, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index) and [What's new in Windows 10, version 1703](/windows/whats-new/whats-new-windows-10-version-1703) in the Docs library.
+For an overview of the new enterprise features in Windows 10 Enterprise, see [What's new in Windows 10](/windows/whats-new/) and [What's new in Windows 10, version 1703](/windows/whats-new/whats-new-windows-10-version-1703) in the Docs library.
 
 Another place to track the latest information about new features of interest to IT professionals is the [Windows for IT Pros blog](https://blogs.technet.microsoft.com/windowsitpro/). Here you’ll find announcements of new features, information on updates to the Windows servicing model, and details about the latest resources to help you more easily deploy and manage Windows 10.
 
@@ -113,7 +113,7 @@ To find out which version of Windows 10 is right for your organization, you can 
 
 ### How will people in my organization adjust to using Windows 10 Enterprise after upgrading from Windows 7 or Windows 8.1?
 
-Windows 10 combines the best aspects of the user experience from Windows 8.1 and Windows 7 to make using Windows simple and straightforward. Users of Windows 7 will find the Start menu in the same location as they always have. In the same place, users of Windows 8.1 will find the live tiles from their Start screen, accessible by the Start button in the same way as they were accessed in Windows 8.1. To help you make the transition a seamless one, download the [Windows 10 Adoption Planning Kit](https://info.microsoft.com/Windows10AdoptionPlanningKit) and see our [end user readiness](https://technet.microsoft.com/windows/dn621092) resources.
+Windows 10 combines the best aspects of the user experience from Windows 8.1 and Windows 7 to make using Windows simple and straightforward. Users of Windows 7 will find the Start menu in the same location as they always have. In the same place, users of Windows 8.1 will find the live tiles from their Start screen, accessible by the Start button in the same way as they were accessed in Windows 8.1. To help you make the transition a seamless one, download the [Windows 10 Adoption Planning Kit](https://info.microsoft.com/Windows10AdoptionPlanningKit) and see our [end user readiness](/windows/windows-10/) resources.
 
 ### How does Windows 10 help people work with applications and data across a variety of devices?
 

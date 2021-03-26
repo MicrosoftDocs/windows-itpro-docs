@@ -41,7 +41,7 @@ ms.topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureHomeButton](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurehomebutton)
+- **MDM name:** Browser/[ConfigureHomeButton](/windows/client-management/mdm/policy-csp-browser#browser-configurehomebutton)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureHomeButton
 - **Data type:** Integer

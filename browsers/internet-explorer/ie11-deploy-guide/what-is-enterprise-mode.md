@@ -73,7 +73,7 @@ The Enterprise Mode Site List is an XML document that specifies a list of sites,
 Starting with Windows 10, version 1511 (also known as the Anniversary Update), you can also [restrict IE11 to only the legacy web apps that need it](https://blogs.windows.com/msedgedev/2016/05/19/edge14-ie11-better-together/), automatically sending sites not included in the Enterprise Mode Site List to Microsoft Edge.
 
 ### Site list xml file
-This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypflug/9e9961de771d2fcbd86b#file-emie-v2-schema-xml). There are equivalent Enterprise Mode Site List policies for both [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility) and [Internet Explorer 11](turn-on-enterprise-mode-and-use-a-site-list.md). The Microsoft Edge list is used to determine which sites should open in IE11; while the IE11 list is used to determine the compat mode for a site, and which sites should open in Microsoft Edge. We recommend using one list for both browsers, where each policy points to the same XML file location.
+This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypflug/9e9961de771d2fcbd86b#file-emie-v2-schema-xml). There are equivalent Enterprise Mode Site List policies for both [Microsoft Edge](/microsoft-edge/deploy/emie-to-improve-compatibility) and [Internet Explorer 11](turn-on-enterprise-mode-and-use-a-site-list.md). The Microsoft Edge list is used to determine which sites should open in IE11; while the IE11 list is used to determine the compat mode for a site, and which sites should open in Microsoft Edge. We recommend using one list for both browsers, where each policy points to the same XML file location.
 
 ```xml
 <site-list version="205">

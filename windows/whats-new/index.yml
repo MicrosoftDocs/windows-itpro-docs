@@ -45,15 +45,15 @@ landingContent:
       - linkListType: overview
         links:
           - text: Windows 10 release information
-            url: https://docs.microsoft.com/en-us/windows/release-health/release-information
+            url: /windows/release-health/release-information
           - text: Windows 10 release health dashboard
-            url: https://docs.microsoft.com/windows/release-information/
+            url: /windows/release-information/
           - text: Windows 10 update history
             url: https://support.microsoft.com/topic/windows-10-update-history-7dd3071a-3906-fa2c-c342-f7f86728a6e3
           - text: Windows 10 features we’re no longer developing
-            url: https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features
+            url: /windows/deployment/planning/windows-10-deprecated-features
           - text: Features and functionality removed in Windows 10
-            url: https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features
+            url: /windows/deployment/planning/windows-10-removed-features
           - text: Compare Windows 10 Editions
             url: https://go.microsoft.com/fwlink/p/?LinkId=690485
 
