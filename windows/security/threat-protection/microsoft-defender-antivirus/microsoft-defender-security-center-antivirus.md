@@ -57,21 +57,17 @@ This section describes how to perform some of the most common tasks when reviewi
 
 ### Run a scan with the Windows Security app
 
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for **Security**, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Select **Scan now**.
-
-4. Select **Run a new advanced scan** to specify different types of scans, such as a full scan.
-
-<a id="definition-version"></a>
+3. Select **Quick scan**. Or, to run a full scan, select **Scan options**, and then select an option, such as **Full scan**.
 
 ### Review the security intelligence update version and download the latest updates in the Windows Security app
 
 ![Security intelligence version number information](images/defender/wdav-wdsc-defs.png)
 
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for **Security**, and then selecting **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
