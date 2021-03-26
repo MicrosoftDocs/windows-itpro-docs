@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Antivirus in the Windows Security app
-description: With Microsoft Defender AV now included in the Windows Security app, you can review, compare, and perform common tasks.
+description: With Microsoft Defender Antivirus now included in the Windows Security app, you can review, compare, and perform common tasks.
 keywords: wdav, antivirus, firewall, security, windows
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -48,33 +48,12 @@ The Windows Security app is a client interface on Windows 10, version 1703 and l
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
    
-## Comparison of settings and functions of the old app and the new app
-
-All of the previous functions and settings from the Windows Defender app (in versions of Windows 10 before version 1703) are now found in the new Windows Security app. Settings that were previously located in Windows Settings under **Update & security** > **Windows Defender** are also now in the new app.
-
-The following diagrams compare the location of settings and functions between the old and new apps:
-
-![Version of Windows Defender in Windows 10 before version 1703](images/defender/wdav-windows-defender-app-old.png)
-
-> [!div class="mx-imgBorder"]
-> ![Microsoft Defender Antivirus in Windows 10, version 1703 and later](images/defender/wdav-wdsc.png)
-
-| Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | Description |
-|:---|:---|:---|:---|
-| 1 | **Update** tab | **Protection updates** | Update the protection (Security intelligence) |
-| 2 | **History** tab | **Scan history** | Review threats that were quarantined, removed, or allowed |
-| 3 | **Settings** (links to **Windows Settings**) | **Virus & threat protection settings** | Enable various features, including Real-time protection, Cloud-delivered protection, Advanced notifications, and Automatic ample submission |
-| 4 | **Scan options** | **Advanced scan** | Run a full scan, custom scan, or a Microsoft Defender Antivirus Offline scan |
-| 5 | Run a scan (based on the option chosen under **Scan options** | **Quick scan** | In Windows 10, version 1703 and later, you can run custom and full scans under the **Advanced scan** option |
-
 ## Common tasks
 
 This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Microsoft Defender Antivirus in the Windows Security app.
 
 > [!NOTE]
 > If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) topic describes how local policy override settings can be configured.
-
-<a id="scan"></a>
 
 ### Run a scan with the Windows Security app
 
