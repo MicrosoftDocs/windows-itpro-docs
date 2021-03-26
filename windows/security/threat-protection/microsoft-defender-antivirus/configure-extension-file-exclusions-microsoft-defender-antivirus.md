@@ -270,7 +270,7 @@ You can retrieve the items in the exclusion list using one of the following meth
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - MpCmdRun
 - PowerShell
-- [Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions)
+- [Windows Security app](microsoft-defender-security-center-antivirus.md)
 
 >[!IMPORTANT]
 >Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
