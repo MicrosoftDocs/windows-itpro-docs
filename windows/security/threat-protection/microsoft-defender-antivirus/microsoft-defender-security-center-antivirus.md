@@ -48,14 +48,12 @@ The Windows Security app is a client interface on Windows 10, version 1703 and l
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
    
-## Common tasks
-
-This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Microsoft Defender Antivirus in the Windows Security app.
+The following sections describe how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Microsoft Defender Antivirus in the Windows Security app.
 
 > [!NOTE]
 > If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) topic describes how local policy override settings can be configured.
 
-### Run a scan with the Windows Security app
+## Run a scan with the Windows Security app
 
 1. Open the Windows Security app by searching the start menu for **Security**, and then selecting **Windows Security**.
 
@@ -63,7 +61,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 3. Select **Quick scan**. Or, to run a full scan, select **Scan options**, and then select an option, such as **Full scan**.
 
-### Review the security intelligence update version and download the latest updates in the Windows Security app
+## Review the security intelligence update version and download the latest updates in the Windows Security app
 
 ![Security intelligence version number information](images/defender/wdav-wdsc-defs.png)
 
@@ -71,11 +69,11 @@ This section describes how to perform some of the most common tasks when reviewi
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Select **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check this against the latest version available for manual download, or review the change log for that version.
+3. Select **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check your current against the latest version available for manual download, or review the change log for that version. See [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 4. Select **Check for updates** to download new protection updates (if there are any).
 
-### Ensure Microsoft Defender Antivirus is enabled in the Windows Security app
+## Ensure Microsoft Defender Antivirus is enabled in the Windows Security app
 
 1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
@@ -89,7 +87,7 @@ This section describes how to perform some of the most common tasks when reviewi
     > If you switch **Real-time protection** off, it will automatically turn back on after a short delay. This is to ensure you are protected from malware and threats.
     > If you install another antivirus product, Microsoft Defender Antivirus automatically disables itself and is indicated as such in the Windows Security app. A setting will appear that will allow you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
-### Add exclusions for Microsoft Defender Antivirus in the Windows Security app
+## Add exclusions for Microsoft Defender Antivirus in the Windows Security app
 
 1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
