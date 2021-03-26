@@ -20,9 +20,9 @@ ms.date: 11/29/2018
 # Trusted Platform Module Technology Overview
 
 **Applies to**
--   Windows 10
--   Windows Server 2016
--   Windows Server 2019
+- Windows 10
+- Windows Server 2016
+- Windows Server 2019
 
 This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication.
 
@@ -30,11 +30,11 @@ This topic for the IT professional describes the Trusted Platform Module (TPM) a
 
 Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. Some of the key advantages of using TPM technology are that you can:
 
--   Generate, store, and limit the use of cryptographic keys.
+- Generate, store, and limit the use of cryptographic keys.
 
--   Use TPM technology for platform device authentication by using the TPM’s unique RSA key, which is burned into itself.
+- Use TPM technology for platform device authentication by using the TPM’s unique RSA key, which is burned into itself.
 
--   Help ensure platform integrity by taking and storing security measurements.
+- Help ensure platform integrity by taking and storing security measurements.
 
 The most common TPM functions are used for system integrity measurements and for key creation and use. During the boot process of a system, the boot code that is loaded (including firmware and the operating system components) can be measured and recorded in the TPM. The integrity measurements can be used as evidence for how a system started and to make sure that a TPM-based key was used only when the correct software was used to boot the system.
 
@@ -92,7 +92,7 @@ Some things that you can check on the device are:
 - [TPM Base Services Portal](/windows/desktop/TBS/tpm-base-services-portal)
 - [TPM Base Services API](/windows/desktop/api/_tbs/)
 - [TPM Cmdlets in Windows PowerShell](/powershell/module/trustedplatformmodule)
-- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](../bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md#bkmk-tpmconfigurations)
+- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](../bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [Azure device provisioning: Identity attestation with TPM](https://azure.microsoft.com/blog/device-provisioning-identity-attestation-with-tpm/)
 - [Azure device provisioning: A manufacturing timeline for TPM devices](https://azure.microsoft.com/blog/device-provisioning-a-manufacturing-timeline-for-tpm-devices/)
 - [Windows 10: Enabling vTPM (Virtual TPM)](https://social.technet.microsoft.com/wiki/contents/articles/34431.windows-10-enabling-vtpm-virtual-tpm.aspx)
