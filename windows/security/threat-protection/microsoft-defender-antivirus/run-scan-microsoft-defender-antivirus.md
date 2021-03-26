@@ -73,7 +73,7 @@ For more information about how to use the tool and additional parameters, includ
 
 ## Use the Windows Security app to run a scan
 
-See [Run a scan in the Windows Security app](microsoft-defender-security-center-antivirus.md#scan) for instructions on running a scan on individual endpoints.
+See [Run a scan in the Windows Security app](microsoft-defender-security-center-antivirus.md) for instructions on running a scan on individual endpoints.
 
 ## Use PowerShell cmdlets to run a scan
 
