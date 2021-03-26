@@ -20,7 +20,7 @@ WaaSDeploymentStatus records track a specific update's installation progress on 
 
 |Field |Type |Example |Description |
 |-|-|-----|------------------------|
-|**Computer** |[string](/azure/kusto/query/scalar-data-types/string) |`JohnPC-Contoso` |User or Organization-provided device name. If this appears as '#', then Device Name may not be sent through telemetry. To enable Device Name to be sent with telemetry, see [Enabling Device Name in Telemetry](./update-compliance-get-started.md#allow-device-name-in-telemetry-with-group-policy). |
+|**Computer** |[string](/azure/kusto/query/scalar-data-types/string) |`JohnPC-Contoso` |User or Organization-provided device name. If this appears as '#', then Device Name may not be sent through telemetry. To enable Device Name to be sent with telemetry, see [Enroll devices in Update Compliance](update-compliance-get-started.md#enroll-devices-in-update-compliance). |
 |**ComputerID** |[string](/azure/kusto/query/scalar-data-types/string) |`g:6755412281299915` |Microsoft Global Device Identifier. This is an internal identifier used by Microsoft. A connection to the end-user Managed Service Account (MSA) service is required for this identifier to be populated; no device data will be present in Update Compliance without this identifier. |
 |**DeferralDays** |[int](/azure/kusto/query/scalar-data-types/int) |`0` |The deferral policy for this content type or `UpdateCategory` (Windows `Feature` or `Quality`). |
 |**DeploymentError** |[string](/azure/kusto/query/scalar-data-types/string) |`Disk Error` |A readable string describing the error, if any. If empty, there is either no string matching the error or there is no error. |
