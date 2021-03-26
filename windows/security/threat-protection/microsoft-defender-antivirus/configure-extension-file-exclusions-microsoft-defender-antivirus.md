@@ -60,7 +60,7 @@ To exclude files opened by a specific process, see [Configure and validate exclu
 The exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 > [!IMPORTANT]
-> Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions).
+> Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 > Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
 By default, local changes made to the lists (by users with administrator privileges, including changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists take precedence when there are conflicts.
@@ -164,7 +164,7 @@ For more information, see [Windows Defender WMIv2 APIs](/previous-versions/windo
 
 ### Use the Windows Security app to configure file name, folder, or file extension exclusions
 
-See [Add exclusions in the Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions) for instructions.
+See [Add exclusions in the Windows Security app](microsoft-defender-security-center-antivirus.md) for instructions.
 
 <a id="wildcards"></a>
 
@@ -267,13 +267,13 @@ The following table lists and describes the system account environment variables
 
 You can retrieve the items in the exclusion list using one of the following methods:
 - [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-- [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)
+- [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - MpCmdRun
 - PowerShell
-- [Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions)
+- [Windows Security app](microsoft-defender-security-center-antivirus.md)
 
 >[!IMPORTANT]
->Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions).
+>Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 >
 >Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
