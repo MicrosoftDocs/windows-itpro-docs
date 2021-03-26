@@ -25,7 +25,7 @@ These fields are briefly described in this article, to learn more about Delivery
 
 |Field |Type |Example |Description |
 |-|-|-|-|
-|**Computer** |[string](/azure/kusto/query/scalar-data-types/string) |`JohnPC-Contoso` |User or Organization-provided device name. If this appears as '#', then Device Name may not be sent through telemetry. To enable Device Name to be sent with telemetry, see [Enabling Device Name in Telemetry](./update-compliance-get-started.md#allow-device-name-in-telemetry-with-group-policy). |
+|**Computer** |[string](/azure/kusto/query/scalar-data-types/string) |`JohnPC-Contoso` |User or Organization-provided device name. If this appears as '#', then Device Name may not be sent through telemetry. To enable Device Name to be sent with telemetry, see [Enabling Device Name in Telemetry](./update-compliance-get-started.md). |
 |**ComputerID** |[string](/azure/kusto/query/scalar-data-types/string) |`g:6755412281299915` |Microsoft Global Device Identifier. This is an internal identifier used by Microsoft. A connection to the end-user Managed Service Account (MSA) service is required for this identifier to be populated; no device data will be present in Update Compliance without this identifier. |
 |**City** |[string](/azure/kusto/query/scalar-data-types/string) | |Approximate city device was in while downloading content, based on IP Address. |
 |**Country** |[string](/azure/kusto/query/scalar-data-types/string) | |Approximate country device was in while downloading content, based on IP Address. |
