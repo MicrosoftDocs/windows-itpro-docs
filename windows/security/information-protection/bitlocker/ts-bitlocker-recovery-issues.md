@@ -279,7 +279,7 @@ You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the
 
 ### Cause
 
-TPM 1.2 does not support Secure Launch. For more information, see [System Guard Secure Launch and SMM protection: Requirements Met by System Guard Enabled Machines](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md#requirements-met-by-system-guard-enabled-machines)
+TPM 1.2 does not support Secure Launch. For more information, see [System Guard Secure Launch and SMM protection: Requirements Met by System Guard Enabled Machines](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 
 For more information about this technology, see [Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10](../../threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
 
