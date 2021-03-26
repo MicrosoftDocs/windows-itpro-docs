@@ -21,7 +21,7 @@ WaaSInsiderStatus records contain device-centric data and acts as the device rec
 
 |Field |Type |Example |Description |
 |--|--|---|--|
-|**Computer** |[string](/azure/kusto/query/scalar-data-types/string) |`JohnPC-Contoso` |User or Organization-provided device name. If this appears as '#', then Device Name may not be sent through telemetry. To enable Device Name to be sent with telemetry, see [Enabling Device Name in Telemetry](./update-compliance-get-started.md#allow-device-name-in-telemetry-with-group-policy). |
+|**Computer** |[string](/azure/kusto/query/scalar-data-types/string) |`JohnPC-Contoso` |User or Organization-provided device name. If this appears as '#', then Device Name may not be sent through telemetry. To enable Device Name to be sent with telemetry, see [Enabling Device Name in Telemetry](./update-compliance-get-started.md). |
 |**ComputerID** |[string](/azure/kusto/query/scalar-data-types/string) |`g:6755412281299915` |Microsoft Global Device Identifier. This is an internal identifier used by Microsoft. A connection to the end-user Managed Service Account (MSA) service is required for this identifier to be populated; no device data will be present in Update Compliance without this identifier. |
 |**OSArchitecture** |[string](/azure/kusto/query/scalar-data-types/string) |`amd64` |The architecture of the Operating System. |
 |**OSName** |[string](/azure/kusto/query/scalar-data-types/string) |`Windows 10` |The name of the Operating System. This will always be Windows 10 for Update Compliance. |
