@@ -16,11 +16,58 @@ ms.date: 07/28/2017
 
 The SurfaceHub configuration service provider (CSP) is used to configure Microsoft Surface Hub settings. This CSP was added in Windows 10, version 1511.
 
-The following diagram shows the SurfaceHub CSP management objects in tree format.
-
-![surface hub diagram](images/provisioning-csp-surfacehub.png)
-
-<a href="" id="--vendor-msft-surfacehub"></a>**./Vendor/MSFT/SurfaceHub**
+The following shows the SurfaceHub CSP management objects in tree format.
+```
+./Vendor/MSFT
+SurfaceHub
+----DeviceAccount
+--------DomainName
+--------UserName
+--------UserPrincipalName
+--------Password
+--------ValidateAndCommit
+--------ExchangeServer
+--------SipAddress
+--------Email
+--------CalendarSyncEnabled
+--------ErrorContext
+--------PasswordRotationPeriod
+----MaintenanceHoursSimple
+--------Hours
+------------StartTime
+------------Duration
+----InBoxApps
+--------SkypeForBusiness
+------------DomainName
+--------Welcome
+------------AutoWakeScreen
+------------CurrentBackgroundPath
+------------MeetingInfoOption
+--------WirelessProjection
+------------PINRequired
+------------Enabled
+------------Channel
+--------Connect
+------------AutoLaunch
+----Properties
+--------FriendlyName
+--------DefaultVolume
+--------ScreenTimeout
+--------SessionTimeout
+--------SleepTimeout
+--------AllowSessionResume
+--------AllowAutoProxyAuth
+--------DisableSigninSuggestions
+--------DoNotShowMyMeetingsAndFiles
+----ProxyServers
+----Management
+--------GroupName
+--------GroupSid
+----MOMAgent
+--------WorkspaceID
+--------WorkspaceKey
+```
+<a href="" id="--vendor-msft-surfacehub"></a>**./Vendor/MSFT/SurfaceHub**  
 <p style="margin-left: 20px">The root node for the Surface Hub configuration service provider.
 
 <a href="" id="deviceaccount"></a>**DeviceAccount**
