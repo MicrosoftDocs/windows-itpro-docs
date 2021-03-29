@@ -1332,7 +1332,7 @@ To turn off tailored experiences with relevant tips and recommendations by using
 
   -or-
 
-- Create a REG_DWORD registry setting named **DisableTailoredExperiencesWithDiagnosticData** in **HKEY_CURRENT_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of **1**
+- Create a REG_DWORD registry setting named **DisableTailoredExperiencesWithDiagnosticData** in **HKEY_CURRENT_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a **value of 1 (one)**
 
 
 ### <a href="" id="bkmk-priv-background"></a>18.17 Background apps
