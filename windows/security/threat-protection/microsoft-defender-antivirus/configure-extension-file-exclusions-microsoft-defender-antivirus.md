@@ -31,7 +31,8 @@ ms.technology: mde
 
 You can exclude certain files from Microsoft Defender Antivirus scans by modifying exclusion lists. **Generally, you shouldn't need to apply exclusions**. Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
 
-**Note**: Exclusions apply to Potentially Unwanted Apps (PUA) detections as well.
+> [!NOTE]
+> Exclusions apply to Potentially Unwanted Apps (PUA) detections as well.
 
 > [!NOTE]
 > Automatic exclusions apply only to Windows Server 2016 and above. These exclusions are not visible in the Windows Security app and in PowerShell.
@@ -92,10 +93,10 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 
 4. Open the **Path Exclusions** setting for editing, and add your exclusions.
 
-    - Set the option to **Enabled**.
-    - Under the **Options** section, click **Show...**.
-    - Specify each folder on its own line under the **Value name** column.
-    - If you are specifying a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column.
+    1. Set the option to **Enabled**.
+    1. Under the **Options** section, click **Show**.
+    1. Specify each folder on its own line under the **Value name** column.
+    1. If you are specifying a file, ensure that you enter a fully qualified path to the file, including the drive letter, folder path, file name, and extension. Enter **0** in the **Value** column.
 
 5. Choose **OK**.
 
@@ -103,9 +104,9 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 
 6. Open the **Extension Exclusions** setting for editing and add your exclusions.
 
-    - Set the option to **Enabled**.
-    - Under the **Options** section, select **Show...**.
-    - Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column.
+    1. Set the option to **Enabled**.
+    1. Under the **Options** section, select **Show**.
+    1. Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column.
 
 7. Choose **OK**.
 
