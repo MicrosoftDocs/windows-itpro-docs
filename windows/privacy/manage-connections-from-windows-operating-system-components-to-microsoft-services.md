@@ -1901,7 +1901,7 @@ You can turn off automatic updates by doing the following. This is not recommend
 
 For China releases of Windows 10 there is one additional Regkey to be set to prevent traffic:
 
-- Add a REG_DWORD value named **HapDownloadEnabled** to **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\LexiconUpdate\\loc_0804** and set the value to 0.
+- Add a REG_DWORD value named **HapDownloadEnabled** to **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\LexiconUpdate\\loc_0804** and set the **value to 0 (zero)**.
 
 
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
