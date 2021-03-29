@@ -1514,7 +1514,7 @@ Enterprise customers can manage their Windows activation status with volume lice
 
 **For Windows Server 2016:**
 
-- Create a REG_DWORD registry setting named **NoAcquireGT** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
+- Create a REG_DWORD registry setting named **NoAcquireGT** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a **value of 1 (one)**.
 
 > [!NOTE]
 > Due to a known issue the **Turn off KMS Client Online AVS Validation** group policy does not work as intended on Windows Server 2016, the **NoAcquireGT** value needs to be set instead.
