@@ -1875,7 +1875,7 @@ You can turn off Windows Update by setting the following registry entries:
 
   -and-
 
-- Add a REG_DWORD value named **UseWUServer** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\WindowsUpdate\\AU** and set the value to 1.
+- Add a REG_DWORD value named **UseWUServer** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\WindowsUpdate\\AU** and set the **value to 1 (one)**.
 
 -OR-
 
