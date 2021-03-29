@@ -41,7 +41,7 @@ This article  describes how to configure exclusion lists for the files and folde
 
 | Exclusion | Examples | Exclusion list |
 |:---|:---|:---|
-|Any file with a specific extension | All files with the specified extension, anywhere on the machine.<br/>Valid syntax: `.test` and `test`  | Extension exclusions |
+|Any file with a specific extension | All files with the specified extension, anywhere on the machine. <p> Valid syntax: `.test` and `test`  | Extension exclusions |
 |Any file under a specific folder | All files under the `c:\test\sample` folder | File and folder exclusions |
 | A specific file in a specific folder | The file `c:\sample\sample.test` only | File and folder exclusions |
 | A specific process | The executable file `c:\test\process.exe` | File and folder exclusions |
@@ -100,8 +100,6 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 
 5. Choose **OK**.
 
-    ![The Group Policy setting for file and folder exclusions](images/defender/wdav-path-exclusions.png)
-
 6. Open the **Extension Exclusions** setting for editing and add your exclusions.
 
     1. Set the option to **Enabled**.
@@ -140,7 +138,7 @@ The following are allowed as the `<exclusion list>`:
 > [!IMPORTANT]
 > If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
 
-For example, the following code snippet would cause Microsoft Defender AV scans to exclude any file with the `.test` file extension:
+For example, the following code snippet would cause Microsoft Defender Antivirus scans to exclude any file with the `.test` file extension:
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
@@ -184,9 +182,9 @@ The following table describes how the wildcards can be used and provides some ex
 
 |Wildcard  |Examples  |
 |:---------|:---------|
-|`*` (asterisk) <br/><br/>In **file name and file extension inclusions**, the asterisk replaces any number of characters, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the asterisk replaces a single folder. Use multiple `*` with folder slashes `\` to indicate multiple nested folders. After matching the number of wild carded and named folders, all subfolders are also included.   | `C:\MyData\*.txt` would include `C:\MyData\notes.txt`<br/><br/>`C:\somepath\*\Data` would include any file in `C:\somepath\Archives\Data and its subfolders` and `C:\somepath\Authorized\Data and its subfolders` <br/><br/>`C:\Serv\*\*\Backup` would include any file in `C:\Serv\Primary\Denied\Backup and its subfolders` and `C:\Serv\Secondary\Allowed\Backup and its subfolders`     |
-|`?` (question mark)  <br/><br/>In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.   |`C:\MyData\my?` would include `C:\MyData\my1.zip` <br/><br/>`C:\somepath\?\Data` would include any file in `C:\somepath\P\Data` and its subfolders <br/><br/>`C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders          |
-|Environment variables <br/><br/>The defined variable is populated as a path when the exclusion is evaluated.          |`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
+|`*` (asterisk) <p> In **file name and file extension inclusions**, the asterisk replaces any number of characters, and only applies to files in the last folder defined in the argument. <p> In **folder exclusions**, the asterisk replaces a single folder. Use multiple `*` with folder slashes `\` to indicate multiple nested folders. After matching the number of wild carded and named folders, all subfolders are also included.   | `C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` includes any file in `C:\somepath\Archives\Data` and its subfolders, and `C:\somepath\Authorized\Data` and its subfolders <p> `C:\Serv\*\*\Backup` includes any file in `C:\Serv\Primary\Denied\Backup` and its subfolders and `C:\Serv\Secondary\Allowed\Backup` and its subfolders     |
+|`?` (question mark)  <p> In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <p> In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.   |`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` includes any file in `C:\somepath\P\Data` and its subfolders  <p> `C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders          |
+|Environment variables <p> The defined variable is populated as a path when the exclusion is evaluated.          |`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
         
 
 > [!IMPORTANT]
