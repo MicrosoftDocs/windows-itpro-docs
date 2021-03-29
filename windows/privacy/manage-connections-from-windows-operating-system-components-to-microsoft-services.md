@@ -1075,7 +1075,7 @@ To turn off **Let apps access my name, picture, and other account info**:
 
   -or-
 
-- Create a REG_DWORD registry setting named **LetAppsAccessAccountInfo** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG_DWORD registry setting named **LetAppsAccessAccountInfo** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
 
 
 To turn off **Choose the apps that can access your account info**:
