@@ -99,8 +99,6 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 
 5. Choose **OK**.
 
-    ![The Group Policy setting for file and folder exclusions](images/defender/wdav-path-exclusions.png)
-
 6. Open the **Extension Exclusions** setting for editing and add your exclusions.
 
     - Set the option to **Enabled**.
@@ -139,7 +137,7 @@ The following are allowed as the `<exclusion list>`:
 > [!IMPORTANT]
 > If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
 
-For example, the following code snippet would cause Microsoft Defender AV scans to exclude any file with the `.test` file extension:
+For example, the following code snippet would cause Microsoft Defender Antivirus scans to exclude any file with the `.test` file extension:
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
