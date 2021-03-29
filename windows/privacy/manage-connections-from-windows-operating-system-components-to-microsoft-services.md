@@ -1517,7 +1517,7 @@ Enterprise customers can manage their Windows activation status with volume lice
 - Create a REG_DWORD registry setting named **NoAcquireGT** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a **value of 1 (one)**.
 
 > [!NOTE]
-> Due to a known issue the **Turn off KMS Client Online AVS Validation** group policy does not work as intended on Windows Server 2016, the **NoAcquireGT** value needs to be set instead.
+> Due to a known issue the **Turn off KMS Client Online AVS Validation** group policy does not work as intended on Windows Server 2016; the **NoAcquireGT** value needs to be set instead.
 > The Windows activation status will be valid for a rolling period of 180 days with weekly activation status checks to the KMS.
 
 ### <a href="" id="bkmk-storage-health"></a>20. Storage health
