@@ -27,9 +27,9 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 
 ## Related topics
 - [Windows 10 servicing options for updates and upgrades](../update/index.md)
-- [Deploy Windows 10 with MDT](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
+- [Deploy Windows 10 with MDT](../deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
 - [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 - [Upgrade to Windows 10 with MDT](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
-- [Upgrade to Windows 10 with Configuration Manager](../upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
-- [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=733911)
+- [Upgrade to Windows 10 with Configuration Manager](../deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md)
+- [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd)
  

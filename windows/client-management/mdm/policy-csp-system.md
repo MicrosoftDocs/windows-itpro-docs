@@ -706,7 +706,7 @@ The following list shows the supported values:
 <!--Description-->
 Allows the device to send diagnostic and usage telemetry data, such as Watson. 
 
-For more information about diagnostic data, including what is and what is not collected by Windows, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
+For more information about diagnostic data, including what is and what is not collected by Windows, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
 The following list shows the supported values for Windows 8.1:  
 -   0 - Not allowed.
@@ -1612,7 +1612,7 @@ To enable this behavior, you must complete two steps:
 <li>Set Allow Telemetry to level 2 (Enhanced)</li>
 </ul>
  
-When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="https://go.microsoft.com/fwlink/?linkid=847594" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](https://go.microsoft.com/fwlink/?linkid=847594)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
+When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
  
 Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send full, basic or security level diagnostic data to Microsoft.
    

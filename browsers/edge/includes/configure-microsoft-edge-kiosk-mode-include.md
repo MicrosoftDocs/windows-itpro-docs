@@ -15,7 +15,7 @@ ms.topic: include
 
 [!INCLUDE [configure-kiosk-mode-shortdesc](../shortdesc/configure-kiosk-mode-shortdesc.md)]
 
-For this policy to work, you must configure Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
+For this policy to work, you must configure Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](/windows/configuration/kiosk-methods).
 
 ### Supported values
 
@@ -31,7 +31,7 @@ For this policy to work, you must configure Microsoft Edge in assigned access; o
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+- **MDM name:** Browser/[ConfigureKioskMode](/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskMode 
 - **Data type:** Integer

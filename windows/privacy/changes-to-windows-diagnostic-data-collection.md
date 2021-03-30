@@ -62,7 +62,7 @@ Additionally, you will see the following policy changes in an upcoming release o
 
 A final set of changes includes two new policies that can help you fine-tune diagnostic data collection within your organization. These policies let you limit the amount of optional diagnostic data that’s sent back to Microsoft.
 
-- The **Limit dump collection** policy is a new policy that can be used to limit the types of [crash dumps](https://docs.microsoft.com/windows/win32/dxtecharts/crash-dump-analysis) that can be sent back to Microsoft. If this policy is enabled, Windows Error Reporting will send only kernel mini dumps and user mode triage dumps.
+- The **Limit dump collection** policy is a new policy that can be used to limit the types of [crash dumps](/windows/win32/dxtecharts/crash-dump-analysis) that can be sent back to Microsoft. If this policy is enabled, Windows Error Reporting will send only kernel mini dumps and user mode triage dumps.
   - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Dump Collection**
   - MDM policy: System/LimitDumpCollection 
 - The **Limit diagnostic log collection** policy is another new policy that limits the number of diagnostic logs that are sent back to Microsoft. If this policy is enabled, diagnostic logs are not sent back to Microsoft.
@@ -87,5 +87,5 @@ With the Enhanced diagnostic data level being split out into new policies, we're
 Customers who use services that depend on Windows diagnostic data, such as Microsoft Managed Desktop or Desktop Analytics, may be impacted by the behavioral changes when they are released. These services will be updated to address these changes and guidance will be published on how to configure them properly.
 
 The following provides information on the current configurations:
-- [Microsoft Managed Desktop](https://aka.ms/mmd-diagnostic-data-level)
-- [Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
+- [Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/device-policies#windows-diagnostic-data)
+- [Desktop Analytics](/mem/configmgr/desktop-analytics/overview)

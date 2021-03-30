@@ -28,9 +28,9 @@ Windows Hello for Business works exclusively with the Active Directory Federatio
 
 The following guidance describes deploying a new instance of Active Directory Federation Services 2016 using the Windows Information Database as the configuration database, which is ideal for environments with no more than 30 federation servers and no more than 100 relying party trusts.
 
-If your environment exceeds either of these factors or needs to provide SAML artifact resolution, token replay detection, or needs Active Directory Federation Services to operate in a federated provider role, then your deployment needs to use a SQL for your configuration database. To deploy the Active Directory Federation Services using SQL as its configuration database, please review the [Deploying a Federation Server Farm](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) checklist.
+If your environment exceeds either of these factors or needs to provide SAML artifact resolution, token replay detection, or needs Active Directory Federation Services to operate in a federated provider role, then your deployment needs to use a SQL for your configuration database. To deploy the Active Directory Federation Services using SQL as its configuration database, please review the [Deploying a Federation Server Farm](/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) checklist.
 
-If your environment has an existing instance of Active Directory Federation Services, then you’ll need to upgrade all nodes in the farm to Windows Server 2016 along with the Windows Server 2016 update.  If your environment uses Windows Internal Database (WID) for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 using a WID database](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016) to upgrade your environment.  If your environment uses SQL for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 with SQL Server](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016-sql) to upgrade your environment.
+If your environment has an existing instance of Active Directory Federation Services, then you’ll need to upgrade all nodes in the farm to Windows Server 2016 along with the Windows Server 2016 update.  If your environment uses Windows Internal Database (WID) for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 using a WID database](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016) to upgrade your environment.  If your environment uses SQL for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 with SQL Server](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016-sql) to upgrade your environment.
 
 Ensure you apply the Windows Server 2016 Update to all nodes in the farm after you have successfully completed the upgrade. 
 
@@ -148,7 +148,7 @@ Windows Server 2012 or later domain controllers support Group Managed Service Ac
 GMSA uses the Microsoft Key Distribution Service that is located on Windows Server 2012 or later domain controllers.  Windows uses the Microsoft Key Distribution Service to protect secrets stored and used by the GMSA.  Before you can create a GMSA, you must first create a root key for the service.  You can skip this if your environment already uses GMSA.
 
 >[!NOTE]
-> If the [default object creation quota for security principles](https://docs.microsoft.com/openspecs/windows_protocols/ms-adts/d55ca655-109b-4175-902a-3e9d60833012) is set, you will need to change it for the Group Managed Service Account in order to be able to register new devices. 
+> If the [default object creation quota for security principles](/openspecs/windows_protocols/ms-adts/d55ca655-109b-4175-902a-3e9d60833012) is set, you will need to change it for the Group Managed Service Account in order to be able to register new devices. 
 
 #### Create KDS Root Key
 
@@ -403,7 +403,7 @@ Approximately 60 days prior to enrollment agent certificate’s expiration, the 
 ### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
 
 > [!NOTE]
-> Normally this script is not needed, as enabling Device Registration via the ADFS Management console already creates the objects. You can validate the SCP using the script below. For detailed information about the Device Registration Service, see [Configuring Device Registration](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn614658(v=ws.11)?redirectedfrom=MSDN).
+> Normally this script is not needed, as enabling Device Registration via the ADFS Management console already creates the objects. You can validate the SCP using the script below. For detailed information about the Device Registration Service, see [Configuring Device Registration](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn614658(v=ws.11)).
 
 Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
 

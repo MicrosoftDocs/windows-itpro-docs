@@ -27,7 +27,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time a [security event source](https://msdn.microsoft.com/library/windows/desktop/aa363661(v=vs.85).aspx) is unregistered.
+This event generates every time a [security event source](/windows/win32/eventlog/event-sources) is unregistered.
 
 You typically see this event if specific roles were removed, for example, Internet Information Services.
 
@@ -135,4 +135,3 @@ For 4905(S): An attempt was made to unregister a security event source.
 -   If you have a list of critical security event sources which should never have been unregistered, then you can use this event and check the “**Event Source\\Source Name**.”
 
 -   Typically this event has an informational purpose.
-

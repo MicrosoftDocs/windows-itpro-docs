@@ -37,7 +37,7 @@ Repair-bde is a special circumstance tool that is provided for disaster recovery
 
 ## <a href="" id="bkmk-managebde"></a>Manage-bde
 
-Manage-bde is a command-line tool that can be used for scripting BitLocker operations. Manage-bde offers additional options not displayed in the BitLocker control panel. For a complete list of the manage-bde options, see the [Manage-bde](https://technet.microsoft.com/library/ff829849.aspx) command-line reference.
+Manage-bde is a command-line tool that can be used for scripting BitLocker operations. Manage-bde offers additional options not displayed in the BitLocker control panel. For a complete list of the manage-bde options, see the [Manage-bde](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11)) command-line reference.
 
 Manage-bde includes fewer default settings and requires greater customization for configuring BitLocker. For example, using just the `manage-bde -on` command on a data volume will fully encrypt the volume without any authenticating protectors. A volume encrypted in this manner still requires user interaction to turn on BitLocker protection, even though the command successfully completed because an authentication method needs to be added to the volume for it to be fully protected. The following sections provide examples of common usage scenarios for manage-bde.
 
@@ -114,7 +114,7 @@ The following limitations exist for Repair-bde:
 -   The Repair-bde command-line tool cannot repair a drive that failed during the encryption or decryption process.
 -   The Repair-bde command-line tool assumes that if the drive has any encryption, then the drive has been fully encrypted.
 
-For more information about using repair-bde, see [Repair-bde](https://technet.microsoft.com/library/ff829851.aspx).
+For more information about using repair-bde, see [Repair-bde](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
 
 ## <a href="" id="bkmk-blcmdlets"></a>BitLocker cmdlets for Windows PowerShell
 

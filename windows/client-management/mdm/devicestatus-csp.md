@@ -292,14 +292,14 @@ Added in Windows, version 1607. Integer that specifies the status of the batter
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery-estimatedchargeremaining"></a>**DeviceStatus/Battery/EstimatedChargeRemaining**  
-Added in Windows, version 1607. Integer that specifies the estimated battery charge remaining. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](https://msdn.microsoft.com/library/windows/desktop/aa373232.aspx).
+Added in Windows, version 1607. Integer that specifies the estimated battery charge remaining. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](/windows/win32/api/winbase/ns-winbase-system_power_status).
 
 The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery-estimatedruntime"></a>**DeviceStatus/Battery/EstimatedRuntime**  
-Added in Windows, version 1607. Integer that specifies the estimated runtime of the battery. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](https://msdn.microsoft.com/library/windows/desktop/aa373232.aspx).
+Added in Windows, version 1607. Integer that specifies the estimated runtime of the battery. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](/windows/win32/api/winbase/ns-winbase-system_power_status).
 
 The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 
@@ -350,8 +350,3 @@ Added in Windows, version 1709. Local System Authority (LSA) credential guard s
 
 
 Supported operation is Get.
-
-
-
-
-

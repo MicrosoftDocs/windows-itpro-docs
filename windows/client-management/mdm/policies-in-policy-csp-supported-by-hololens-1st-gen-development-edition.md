@@ -16,9 +16,9 @@ ms.date: 07/18/2019
 
 > [!div class="op_single_selector"]
 >
-> - [HoloLens 2](policy-csps-supported-by-hololens2.md)
-> - [HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)
-> - [HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
+> - [HoloLens 2](./policies-in-policy-csp-supported-by-hololens2.md)
+> - [HoloLens (1st gen) Commercial Suite](./policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md)
+> - [HoloLens (1st gen) Development Edition]()
 >
 
 - [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts.md#accounts-allowmicrosoftaccountconnection)

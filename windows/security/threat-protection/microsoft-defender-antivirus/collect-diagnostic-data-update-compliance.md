@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV Assessment section in the Update Compliance add-in.
 
@@ -67,4 +67,3 @@ On at least two devices that are not reporting or showing up in Update Complianc
 ## See also
 
 - [Troubleshoot Windows Defender Microsoft Defender Antivirus reporting](troubleshoot-reporting.md)
-

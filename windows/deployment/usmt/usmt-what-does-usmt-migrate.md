@@ -59,7 +59,7 @@ This section describes the user data that USMT migrates by default, using the Mi
     My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites.
 
     >[!IMPORTANT]
-    >Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](https://docs.microsoft.com/windows/deployment/usmt/usmt-common-issues#usmt-does-not-migrate-the-start-layout).
+    >Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](./usmt-common-issues.md#usmt-does-not-migrate-the-start-layout).
 
 -   **Folders from the All Users and Public profiles.** When you specify the MigUser.xml file, USMT also migrates the following from the **All Users** profile in Windows® XP, or the **Public** profile in Windows Vista, Windows 7, or Windows 8:
 
@@ -413,7 +413,7 @@ You should also note the following:
 
 ### Start menu layout
 
-Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](https://docs.microsoft.com/windows/deployment/usmt/usmt-common-issues#usmt-does-not-migrate-the-start-layout).
+Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](./usmt-common-issues.md#usmt-does-not-migrate-the-start-layout).
 
 ## Related topics
 
@@ -421,10 +421,4 @@ Starting in Windows 10, version 1607 the USMT does not migrate the Start menu la
 [Plan your migration](usmt-plan-your-migration.md)
 
  
-
- 
-
-
-
-
 

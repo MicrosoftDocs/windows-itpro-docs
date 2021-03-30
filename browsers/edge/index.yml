@@ -30,19 +30,19 @@ landingContent:
           - text: Microsoft 365 apps say farewell to Internet Explorer 11 and Windows 10 sunsets Microsoft Edge Legacy
             url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666
           - text: Latest group policies and features added to Microsoft Edge
-            url: /microsoft-edge/deploy/change-history-for-microsoft-edge
+            url: ./change-history-for-microsoft-edge.md
       - linkListType: overview
         links:
           - text: System requirements and supported languages
-            url: /microsoft-edge/deploy/about-microsoft-edge
+            url: ./about-microsoft-edge.md
           - text: Compare Windows 10 editions
             url: https://www.microsoft.com/en-us/WindowsForBusiness/Compare
           - text: Security & protection
-            url: /microsoft-edge/deploy/group-policies/security-privacy-management-gp
+            url: ./group-policies/security-privacy-management-gp.md
           - text: Interoperability & enterprise guidance
-            url: /microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
+            url: ./group-policies/interoperability-enterprise-guidance-gp.md
           - text: Group policies & configuration options
-            url: /microsoft-edge/deploy/group-policies/
+            url: ./group-policies/index.yml
           
   # Card (optional)
   - title: Microsoft Edge resources
@@ -50,17 +50,17 @@ landingContent:
       - linkListType: overview
         links:
           - text: Minimum system requirements
-            url: /microsoft-edge/deploy/about-microsoft-edge#minimum-system-requirements
+            url: ./about-microsoft-edge.md#minimum-system-requirements
           - text: Supported languages
-            url: /microsoft-edge/deploy/about-microsoft-edge#supported-languages
+            url: ./about-microsoft-edge.md#supported-languages
           - text: Document change history
-            url: /microsoft-edge/deploy/change-history-for-microsoft-edge
+            url: ./change-history-for-microsoft-edge.md
           - text: Microsoft Edge Dev blog
             url: https://blogs.windows.com/msedgedev
           - text: Microsoft Edge Dev on Twitter
-            url: /microsoft-edge/deploy/about-microsoft-edge#supported-languages
+            url: ./about-microsoft-edge.md#supported-languages
           - text: Microsoft Edge changelog
-            url: /microsoft-edge/deploy/change-history-for-microsoft-edge
+            url: ./change-history-for-microsoft-edge.md
           - text: Measuring the impact of Microsoft Edge
             url: https://blogs.windows.com/msedgedev
   
@@ -70,7 +70,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Deploy Internet Explorer 11 (IE11) - IT Pros
-            url: https://go.microsoft.com/fwlink/p/?LinkId=760644
+            url: /internet-explorer/ie11-deploy-guide/
           - text: Internet Explorer Administration Kit 11 (IEAK 11)
             url: /internet-explorer/ie11-ieak
       - linkListType: download
@@ -84,10 +84,10 @@ landingContent:
       - linkListType: overview
         links:
           - text: Group Policy and the Group Policy Management Console (GPMC)
-            url: https://go.microsoft.com/fwlink/p/?LinkId=617921
+            url: /internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11
           - text: Group Policy and the Local Group Policy Editor
-            url: https://go.microsoft.com/fwlink/p/?LinkId=617922
+            url: /internet-explorer/ie11-deploy-guide/group-policy-and-local-group-policy-editor-ie11
           - text: Group Policy and the Advanced Group Policy Management (AGPM)
-            url: https://go.microsoft.com/fwlink/p/?LinkId=617923
+            url: /internet-explorer/ie11-deploy-guide/group-policy-and-advanced-group-policy-mgmt-ie11
           - text: Group Policy and Windows PowerShell
-            url: https://go.microsoft.com/fwlink/p/?LinkId=617924
+            url: /internet-explorer/ie11-deploy-guide/group-policy-windows-powershell-ie11

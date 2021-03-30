@@ -21,17 +21,17 @@ You can make suggestions and update existing, public content with just a GitHub 
 
 Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner of an article, you can suggest changes to it. You can specifically edit articles in the following libraries:
 
-- [Windows 10](https://docs.microsoft.com/windows/windows-10)
+- [Windows 10](/windows/windows-10)
 - [Windows Server](/windows-server/)
-- [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy)    
-- [Surface](https://docs.microsoft.com/surface)
-- [Surface Hub](https://docs.microsoft.com/surface-hub)
-- [HoloLens](https://docs.microsoft.com/hololens)
-- [Microsoft Store](https://docs.microsoft.com/microsoft-store)
-- [Windows 10 for Education](https://docs.microsoft.com/education/windows)
-- [Windows 10 for SMB](https://docs.microsoft.com/windows/smb)
-- [Internet Explorer 11](https://docs.microsoft.com/internet-explorer)
-- [Microsoft Desktop Optimization Pack](https://docs.microsoft.com/microsoft-desktop-optimization-pack)
+- [Microsoft Edge](/microsoft-edge/deploy)    
+- [Surface](/surface)
+- [Surface Hub](/surface-hub)
+- [HoloLens](/hololens)
+- [Microsoft Store](/microsoft-store)
+- [Windows 10 for Education](/education/windows)
+- [Windows 10 for SMB](/windows/smb)
+- [Internet Explorer 11](/internet-explorer)
+- [Microsoft Desktop Optimization Pack](/microsoft-desktop-optimization-pack)
 
 
 **To edit a topic**
@@ -81,4 +81,4 @@ Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner
 
     If you've previously contributed to topics in the Microsoft repositories, congratulations! You've already completed this step.
 
-Next, the pull request is sent to one of our writers to review your edits for technical and editorial accuracy. If we have any suggestions or questions, we'll add them to the pull request where we can discuss them with you. If we accept your edits, you'll see your changes the next time the article is published. 
+Next, the pull request is sent to one of our writers to review your edits for technical and editorial accuracy. If we have any suggestions or questions, we'll add them to the pull request where we can discuss them with you. If we accept your edits, you'll see your changes the next time the article is published.

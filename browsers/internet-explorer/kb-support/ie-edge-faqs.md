@@ -25,10 +25,10 @@ An HTTP cookie (the web cookie or browser cookie) is a small piece of data that 
 
 For more information about how Internet Explorer handles cookies, see the following articles:
 
-- [Beware Cookie Sharing in Cross-Zone Scenarios](https://blogs.msdn.microsoft.com/ieinternals/2011/03/10/beware-cookie-sharing-in-cross-zone-scenarios/)
-- [A Quick Look at P3P](https://blogs.msdn.microsoft.com/ieinternals/2013/09/17/a-quick-look-at-p3p/)
-- [Internet Explorer Cookie Internals FAQ](https://blogs.msdn.microsoft.com/ieinternals/2009/08/20/internet-explorer-cookie-internals-faq/)
-- [Privacy Beyond Blocking Cookies](https://blogs.msdn.microsoft.com/ie/2008/08/25/privacy-beyond-blocking-cookies-bringing-awareness-to-third-party-content/)
+- [Beware Cookie Sharing in Cross-Zone Scenarios](/archive/blogs/ieinternals/beware-cookie-sharing-in-cross-zone-scenarios)
+- [A Quick Look at P3P](/archive/blogs/ieinternals/a-quick-look-at-p3p)
+- [Internet Explorer Cookie Internals FAQ](/archive/blogs/ieinternals/internet-explorer-cookie-internals-faq)
+- [Privacy Beyond Blocking Cookies](/archive/blogs/ie/privacy-beyond-blocking-cookies-bringing-awareness-to-third-party-content)
 - [Description of Cookies](https://support.microsoft.com/help/260971/description-of-cookies)
 
 ### Where does Internet Explorer store cookies?
@@ -63,7 +63,7 @@ There's still a 5 Kilobytes (KB) limit on the size of the cookie header that is 
 
 The JavaScript limitation was updated to 10 KB from 4 KB.
 
-For more information, see [Internet Explorer Cookie Internals (FAQ)](https://blogs.msdn.microsoft.com/ieinternals/2009/08/20/internet-explorer-cookie-internals-faq/).
+For more information, see [Internet Explorer Cookie Internals (FAQ)](/archive/blogs/ieinternals/internet-explorer-cookie-internals-faq).
 
 #### Additional information about cookie limits
 
@@ -115,11 +115,11 @@ For more information, see the following blog article:
 
 ### How to add sites to the Enterprise Mode (EMIE) site list
 
-For more information about how to add sites to an EMIE list, see [Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2)](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool).
+For more information about how to add sites to an EMIE list, see [Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2)](../ie11-deploy-guide/add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md).
 
 ### What is Content Security Policy (CSP)?
 
-By using [Content Security Policy](https://docs.microsoft.com/microsoft-edge/dev-guide/security/content-security-policy), you create an allow list of sources of trusted content in the HTTP headers. You also pre-approve certain servers for content that is loaded into a webpage, and instruct the browser to execute or render only resources from those sources. You can use this technique to prevent malicious content from being injected into sites.
+By using [Content Security Policy](/microsoft-edge/dev-guide/security/content-security-policy), you create an allow list of sources of trusted content in the HTTP headers. You also pre-approve certain servers for content that is loaded into a webpage, and instruct the browser to execute or render only resources from those sources. You can use this technique to prevent malicious content from being injected into sites.
 
 Content Security Policy is supported in all versions of Microsoft Edge. It lets web developers lock down the resources that can be used by their web application. This helps prevent [cross-site scripting](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks that remain a common vulnerability on the web. However, the first version of Content Security Policy was difficult to implement on websites that used inline script elements that either pointed to script sources or contained script directly.
 
@@ -150,7 +150,7 @@ To play HTML5 videos in the Internet Zone, use the default settings or make sure
 
 This key is read by the **URLACTION\_ALLOW\_AUDIO\_VIDEO 0x00002701** URL action flag that determines whether media elements (audio and video) are allowed in pages in a URL security zone.
 
-For more information, see [Unable to play HTML5 Videos in IE](https://blogs.msdn.microsoft.com/askie/2014/12/31/unable-to-play-html5-videos-in-ie/).
+For more information, see [Unable to play HTML5 Videos in IE](/archive/blogs/askie/unable-to-play-html5-videos-in-ie).
 
 For Windows 10 N and Windows KN editions, you must also download the feature pack that is discussed in [Media feature pack for Windows 10 N and Windows 10 KN editions](https://support.microsoft.com/help/3010081/media-feature-pack-for-windows-10-n-and-windows-10-kn-editions).
 
@@ -162,11 +162,11 @@ This is a new feature to add sites to your enterprise mode site list XML. For mo
 
 ### What is Enterprise Mode Feature?
 
-For more information about this topic, see [Enterprise Mode and the Enterprise Mode Site List](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode).
+For more information about this topic, see [Enterprise Mode and the Enterprise Mode Site List](../ie11-deploy-guide/what-is-enterprise-mode.md).
 
 ### Where can I obtain a list of HTTP Status codes?
 
-For information about this list, see [HTTP Status Codes](https://docs.microsoft.com/windows/win32/winhttp/http-status-codes).
+For information about this list, see [HTTP Status Codes](/windows/win32/winhttp/http-status-codes).
 
 ### What is end of support for Internet Explorer 11?
 
@@ -207,14 +207,14 @@ This policy setting is available for both Computer Configuration and User Config
 - User Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page
 
 **References**  
-[How to configure Internet Explorer security zone sites using group polices](https://blogs.msdn.microsoft.com/askie/2012/06/05/how-to-configure-internet-explorer-security-zone-sites-using-group-polices/)
+[How to configure Internet Explorer security zone sites using group polices](/archive/blogs/askie/how-to-configure-internet-explorer-security-zone-sites-using-group-polices)
 
 ### What are the limits for MaxConnectionsPerServer, MaxConnectionsPer1_0Server for the current versions of Internet Explorer?
 
-For more information about these settings and limits, see [Connectivity Enhancements in Windows Internet Explorer 8](https://docs.microsoft.com/previous-versions/cc304129(v=vs.85)).
+For more information about these settings and limits, see [Connectivity Enhancements in Windows Internet Explorer 8](/previous-versions/cc304129(v=vs.85)).
 
 ### What is the MaxConnectionsPerProxy setting, and what are the maximum allowed values for this setting?
 
 The **MaxConnectionsPerProxy** setting controls the number of connections that a single-user client can maintain to a given host by using a proxy server.
 
-For more information, see [Understanding Connection Limits and New Proxy Connection Limits in WinInet and Internet Explorer](https://blogs.msdn.microsoft.com/jpsanders/2009/06/29/understanding-connection-limits-and-new-proxy-connection-limits-in-wininet-and-internet-explorer/).
+For more information, see [Understanding Connection Limits and New Proxy Connection Limits in WinInet and Internet Explorer](/archive/blogs/jpsanders/understanding-connection-limits-and-new-proxy-connection-limits-in-wininet-and-internet-explorer).

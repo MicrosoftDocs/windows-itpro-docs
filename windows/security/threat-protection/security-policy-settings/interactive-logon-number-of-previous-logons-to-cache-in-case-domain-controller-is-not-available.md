@@ -49,7 +49,7 @@ encrypting the information and keeping the cached credentials in the system's re
 
 ### Best practices
 
-The [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) do not recommend configuring this setting. 
+The [Windows security baselines](../windows-security-baselines.md) do not recommend configuring this setting. 
 
 ### Location
 

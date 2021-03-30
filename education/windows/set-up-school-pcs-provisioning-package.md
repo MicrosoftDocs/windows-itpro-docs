@@ -17,7 +17,7 @@ manager: dansimp
 # What's in my provisioning package?
 The Set up School PCs app builds a specialized provisioning package with school-optimized settings. 
 
-A key feature of the provisioning package is Shared PC mode. To view the technical framework of Shared PC mode, including the description of each setting, see the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/mt723294%28v=vs.85%29.aspx) article. 
+A key feature of the provisioning package is Shared PC mode. To view the technical framework of Shared PC mode, including the description of each setting, see the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp) article. 
 
 ## Shared PC Mode policies
 This table outlines the policies applied to devices in shared PC mode. If you [selected to optimize a device for use by a single student](set-up-school-pcs-shared-pc-mode.md#optimize-device-for-use-by-a-single-student), the table notes the differences. Specifically, you'll see differences in the following policies:
@@ -27,12 +27,12 @@ This table outlines the policies applied to devices in shared PC mode. If you [s
 
 In the table, *True* means that the setting is enabled, allowed, or applied. Use the **Description** column to help you understand the context for each setting.
 
-For a more detailed look at the policies, see the Windows article [Set up shared or guest PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#policies-set-by-shared-pc-mode).
+For a more detailed look at the policies, see the Windows article [Set up shared or guest PC](/windows/configuration/set-up-shared-or-guest-pc#policies-set-by-shared-pc-mode).
 
 |Policy name|Default value|Description|  
 |---------|---------|---------|  
 |Enable Shared PC mode|True| Configures the PCs so they are in shared PC mode.|  
-|Set education policies    | True      | School-optimized settings are applied to the PCs so that they are appropriate for an educational environment. To see all recommended and enabled policies, see [Windows 10 configuration recommendation for education customers](https://docs.microsoft.com/education/windows/configure-windows-for-education).       |  
+|Set education policies    | True      | School-optimized settings are applied to the PCs so that they are appropriate for an educational environment. To see all recommended and enabled policies, see [Windows 10 configuration recommendation for education customers](./configure-windows-for-education.md).       |  
 |Account Model| Only guest, Domain-joined only, or Domain-joined and guest  |Controls how users can sign in on the PC. Configurable from the Set up School PCs app. Choosing domain-joined will enable any user in the domain to sign in. Specifying the guest option will add the Guest option to the sign-in screen and enable anonymous guest access to the PC. |  
 |Deletion policy  |   Delete at disk space threshold and inactive threshold     | Delete at disk space threshold will start deleting accounts when available disk space falls below the threshold you set for disk level deletion. It will stop deleting accounts when the available disk space reaches the threshold you set for disk level caching. Accounts are deleted in order of oldest accessed to most recently accessed. Also deletes accounts if they have not signed in within the number of days specified by inactive threshold policy.        |  
 |Disk level caching  |   50%     | Sets 50% of total disk space to be used as the disk space threshold for account caching.       |  
@@ -51,7 +51,7 @@ For a more detailed look at the policies, see the Windows article [Set up shared
 ## MDM and local group policies 
 This section lists only the MDM and local group policies that are configured uniquely for the Set up School PCs app.     
 
-For a more detailed look of each policy listed, see [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) in the Windows IT Pro Center documentation.  
+For a more detailed look of each policy listed, see [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) in the Windows IT Pro Center documentation.  
 
 
 |                         Policy name                         |                                 Default value                                  |                                                                                     Description                                                                                     |
@@ -130,8 +130,3 @@ Learn more about setting up devices with the Set up School PCs app.
 * [Set up Windows 10 devices for education](set-up-windows-10.md) 
 
 When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
-
-
-
-
-

@@ -26,7 +26,7 @@ Find the latest and greatest news on Windows 10 deployment and servicing.
 **Discovering the Windows 10 Update history pages**
 > [!VIDEO https://www.youtube-nocookie.com/embed/mTnAb9XjMPY]
 
-Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. Bookmark the <a href="https://aka.ms/WindowsReleaseHealth">Windows release health dashboard</a> for near real-time information on known issues, workarounds, and resolutions--as well as the current status of the latest feature update rollout.
+Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. Bookmark the <a href="/windows/release-health/">Windows release health dashboard</a> for near real-time information on known issues, workarounds, and resolutions--as well as the current status of the latest feature update rollout.
 
 The latest news:
 <ul compact style="list-style: none"> 
@@ -57,12 +57,12 @@ Written by IT pros for IT pros, sharing real world examples and scenarios for Wi
 
 <a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Classifying-Windows-updates-in-common-deployment-tools/ba-p/331175">Classifying Windows updates in common deployment tools</a>
 
-<a href="https://docs.microsoft.com/windows-server/get-started/express-updates">Express updates for Windows Server 2016 re-enabled for November 2018 update
+<a href="/windows-server/get-started/express-updates">Express updates for Windows Server 2016 re-enabled for November 2018 update
 </a>
 
 <a href="https://support.microsoft.com/help/4472027/">2019 SHA-2 Code Signing Support requirement for Windows and WSUS</a>
 
-<a href="https://go.microsoft.com/fwlink/?linkid=2005509">Deploying Windows 10 Feature Updates to 24/7 Mission Critical Devices</a>
+<a href="/windows/deployment/update/feature-update-mission-critical">Deploying Windows 10 Feature Updates to 24/7 Mission Critical Devices</a>
 
 ## Discover
 
@@ -91,7 +91,7 @@ Prepare to implement Windows as a service effectively using the right tools, pro
 
 <a href="https://developer.microsoft.com/windows/ready-for-windows#/">Ready for Windows</a>
 
-<a href="../upgrade/manage-windows-upgrades-with-upgrade-readiness.md">Manage Windows upgrades with Upgrade Readiness</a>
+<a href="/mem/configmgr/desktop-analytics/overview">Manage Windows upgrades with Upgrade Readiness</a>
 
 <a href="https://www.microsoft.com/itshowcase/windows10deployment">Preparing your organization for a seamless Windows 10 deployment</a>
 

@@ -15,7 +15,7 @@ manager: dansimp
 
 # EditionUpgrade (Windows Configuration Designer reference)
 
-Use to upgrade the edition of Windows 10 on the device. [Learn about Windows 10 edition upgrades.](https://docs.microsoft.com/windows/deployment/upgrade/windows-10-edition-upgrades)
+Use to upgrade the edition of Windows 10 on the device. [Learn about Windows 10 edition upgrades.](/windows/deployment/upgrade/windows-10-edition-upgrades)
 
 ## Applies to
 
@@ -46,4 +46,4 @@ After the device restarts, the edition upgrade process completes. The user will 
 
 ## Related topics
 
-- [WindowsLicensing configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/windowslicensing-csp)
+- [WindowsLicensing configuration service provider (CSP)](/windows/client-management/mdm/windowslicensing-csp)

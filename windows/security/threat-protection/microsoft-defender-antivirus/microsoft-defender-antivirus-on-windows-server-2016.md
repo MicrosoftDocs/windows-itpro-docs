@@ -22,7 +22,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 Microsoft Defender Antivirus is available on the following editions/versions of Windows Server:
 - Windows Server 2019
@@ -52,7 +52,7 @@ By default, Microsoft Defender Antivirus is installed and functional on Windows 
 
 ### Turn on the GUI using the Add Roles and Features Wizard
 
-1. See [Install roles, role services, and features by using the add Roles and Features Wizard](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**.
+1. See [Install roles, role services, and features by using the add Roles and Features Wizard](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**.
 
 2. When you get to the **Features** step of the wizard, under **Windows Defender Features**, select the **GUI for Windows Defender** option.
 
@@ -76,7 +76,7 @@ You can use either the **Add Roles and Features Wizard** or PowerShell to instal
 
 ### Use the Add Roles and Features Wizard
 
-1. Refer to [this article](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**.
+1. Refer to [this article](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**.
 
 2. When you get to the **Features** step of the wizard, select the Microsoft Defender Antivirus option. Also select the **GUI for Windows Defender** option.
 
@@ -147,7 +147,7 @@ Sample submission allows Microsoft to collect samples of potentially malicious s
 
 ### Submit a file
 
-1. Review the [submission guide](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide).
+1. Review the [submission guide](../intelligence/submission-guide.md).
 
 2. Visit the [sample submission portal](https://www.microsoft.com/wdsi/filesubmission), and submit your file.
 
@@ -183,7 +183,7 @@ If you are using Windows Server, version 1803 or Windows Server 2019, you can se
 
 ### Disable Microsoft Defender Antivirus using the Remove Roles and Features wizard
 
-1. See [Install or Uninstall Roles, Role Services, or Features](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard), and use the **Remove Roles and Features Wizard**. 
+1. See [Install or Uninstall Roles, Role Services, or Features](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard), and use the **Remove Roles and Features Wizard**. 
 
 2. When you get to the **Features** step of the wizard, clear the **Windows Defender Features** option. 
 
@@ -216,5 +216,3 @@ Uninstall-WindowsFeature -Name Windows-Defender
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md)
-
-
