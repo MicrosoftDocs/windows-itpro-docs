@@ -49,7 +49,7 @@ This topic discusses general and security-related best practices when using User
 
 -   **Chkdsk.exe**
 
-    We recommend that you run Chkdsk.exe before running the ScanState and LoadState tools. Chkdsk.exe creates a status report for a hard disk drive and lists and corrects common errors. For more information about the Chkdsk.exe tool, see [Chkdsk](https://go.microsoft.com/fwlink/p/?LinkId=140244).
+    We recommend that you run Chkdsk.exe before running the ScanState and LoadState tools. Chkdsk.exe creates a status report for a hard disk drive and lists and corrects common errors. For more information about the Chkdsk.exe tool, see [Chkdsk](/previous-versions/windows/it-pro/windows-xp/bb490876(v=technet.10)).
 
 -   **Migrate in groups**
 
@@ -151,10 +151,4 @@ As the authorized administrator, it is your responsibility to protect the privac
 [Plan Your Migration](usmt-plan-your-migration.md)
 
  
-
- 
-
-
-
-
 

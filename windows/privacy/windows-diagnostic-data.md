@@ -26,7 +26,7 @@ Applies to:
 - Windows 10, version 1803
 - Windows 10, version 1709
 
-Microsoft uses Windows diagnostic data to keep Windows secure and up-to-date, troubleshoot problems, and make product improvements. For users who have turned on "Tailored experiences", it can also be used to offer you personalized tips, ads, and recommendations to enhance Microsoft products and services for your needs. This article describes all types of diagnostic data collected by Windows at the Full level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 20H2 required diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields).
+Microsoft uses Windows diagnostic data to keep Windows secure and up-to-date, troubleshoot problems, and make product improvements. For users who have turned on "Tailored experiences", it can also be used to offer you personalized tips, ads, and recommendations to enhance Microsoft products and services for your needs. This article describes all types of diagnostic data collected by Windows at the Full level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 20H2 required diagnostic events and fields](/windows/configuration/basic-level-windows-diagnostic-events-and-fields).
 
 In addition, this article provides references to equivalent definitions for the data types and examples from [ISO/IEC 19944:2017 Information technology - Cloud computing - Cloud services and devices: Data flow, data categories, and data use](https://www.iso.org/standard/66674.html). Each data type also has a Data Use statement, for diagnostics and for Tailored experiences on the device, using the terms as defined by the standard. These Data Use statements define the purposes for which Microsoft processes each type of Windows diagnostic data, using a uniform set of definitions referenced at the end of this document and based on the ISO standard. Reference to the ISO standard provides additional clarity about the information collected, and allows easy comparison with other services or guidance that also references the standard.
 
@@ -141,7 +141,7 @@ If a user has enabled Tailored experiences on the device, [Pseudonymized](#pseud
 - Peripheral name, device model, class, manufacturer, and description
 - Peripheral device state, install state, and checksum
 - Driver name, package name, version, and manufacturer
-- HWID - A hardware vendor-defined ID to match a device to a driver [INF file](https://docs.microsoft.com/windows-hardware/drivers/install/hardware-ids)
+- HWID - A hardware vendor-defined ID to match a device to a driver [INF file](/windows-hardware/drivers/install/hardware-ids)
 - Driver state, problem code, and checksum
 - Whether driver is kernel mode, signed, and image size
 
@@ -249,7 +249,7 @@ This type of data includes details about the health of the device, operating sys
 **For Diagnostics:**<br>
 [Pseudonymized](#pseudo) Product and Service Performance data from Windows 10 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and related Microsoft product and services. For example:
 
-- Data about the reliability of content that appears in the [Windows Spotlight](https://docs.microsoft.com/windows/configuration/windows-spotlight) (rotating lock screen images) is used for Windows Spotlight reliability investigations.
+- Data about the reliability of content that appears in the [Windows Spotlight](/windows/configuration/windows-spotlight) (rotating lock screen images) is used for Windows Spotlight reliability investigations.
 - Timing data about how quickly Cortana responds to voice commands is used to improve Cortana listening performance.
 - Timing data about how quickly the facial recognition feature starts up and finishes is used to improve facial recognition performance.
 - Data about when an Application Window fails to appear is used to investigate issues with Application Window reliability and performance.

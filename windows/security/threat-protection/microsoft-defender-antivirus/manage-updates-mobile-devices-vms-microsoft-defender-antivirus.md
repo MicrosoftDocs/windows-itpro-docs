@@ -23,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 Mobile devices and VMs may require more configuration to ensure performance is not impacted by updates.
 
@@ -51,7 +51,7 @@ You can opt in to Microsoft Update on the mobile device in one of the following 
 
 ### Use Group Policy to opt in to Microsoft Update
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
@@ -64,7 +64,7 @@ You can opt in to Microsoft Update on the mobile device in one of the following 
 
 ### Use a VBScript to opt in to Microsoft Update
 
-1. Use the instructions in the MSDN article [Opt-In to Microsoft Update](https://msdn.microsoft.com/library/windows/desktop/aa826676.aspx) to create the VBScript.
+1. Use the instructions in the MSDN article [Opt-In to Microsoft Update](/windows/win32/wua_sdk/opt-in-to-microsoft-update) to create the VBScript.
 
 2. Run the VBScript you created on each computer in your network.
 
@@ -82,7 +82,7 @@ You can configure Microsoft Defender Antivirus to only download protection updat
 
 ### Use Group Policy to prevent security intelligence updates on battery power
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), choose the Group Policy Object you want to configure, and open it for editing.
+1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), choose the Group Policy Object you want to configure, and open it for editing.
 
 2.  In the **Group Policy Management Editor** go to **Computer configuration**.
 

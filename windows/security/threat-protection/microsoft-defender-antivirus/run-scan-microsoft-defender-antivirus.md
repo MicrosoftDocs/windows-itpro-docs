@@ -23,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 You can run an on-demand scan on individual endpoints. These scans will start immediately, and you can define parameters for the scan, such as the location or type.
 
@@ -32,7 +32,7 @@ You can run an on-demand scan on individual endpoints. These scans will start im
 Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders.
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus runs in the context of the [LocalSystem](https://docs.microsoft.com/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share.
+> Microsoft Defender Antivirus runs in the context of the [LocalSystem](/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share.
 
 Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md)--which reviews files when they're opened and closed, and whenever a user navigates to a folder--a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
 
@@ -53,7 +53,7 @@ A full scan can be useful on endpoints that have reported a malware threat. The 
 [ ![IMAGE](images/mem-antivirus-scan-on-demand.png) ](images/mem-antivirus-scan-on-demand.png#lightbox)
 
 > [!TIP]
-> For more information about using Microsoft Endpoint Manager to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
+> For more information about using Microsoft Endpoint Manager to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
 
 ## Use the mpcmdrun.exe command-line utility to run a scan
 
@@ -73,7 +73,7 @@ For more information about how to use the tool and additional parameters, includ
 
 ## Use the Windows Security app to run a scan
 
-See [Run a scan in the Windows Security app](microsoft-defender-security-center-antivirus.md#scan) for instructions on running a scan on individual endpoints.
+See [Run a scan in the Windows Security app](microsoft-defender-security-center-antivirus.md) for instructions on running a scan on individual endpoints.
 
 ## Use PowerShell cmdlets to run a scan
 
@@ -83,13 +83,13 @@ Use the following cmdlet:
 Start-MpScan
 ```
 
-For more information on how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
+For more information on how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
 
 ## Use Windows Management Instruction (WMI) to run a scan
 
-Use the [**Start** method](https://docs.microsoft.com/previous-versions/windows/desktop/defender/start-msft-mpscan) of the **MSFT_MpScan** class.
+Use the [**Start** method](/previous-versions/windows/desktop/defender/start-msft-mpscan) of the **MSFT_MpScan** class.
 
-For more information about which parameters are allowed, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
+For more information about which parameters are allowed, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## Related articles
 

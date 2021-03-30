@@ -89,7 +89,7 @@ The default configuration for the **Bypass traverse checking** setting is to all
 
 ### Countermeasure
 
-Organizations that are extremely concerned about security may want to remove the Everyone group, and perhaps the Users group, from the list of groups that have the **Bypass traverse checking** user right. Taking explicit control over traversal assignments can be an effective way to limit access to sensitive information. Access–based enumeration can also be used. If you use access–based enumeration, users cannot see any folder or file to which they do not have access. For more info about this feature, see [Access-based Enumeration](https://go.microsoft.com/fwlink/p/?LinkId=100745).
+Organizations that are extremely concerned about security may want to remove the Everyone group, and perhaps the Users group, from the list of groups that have the **Bypass traverse checking** user right. Taking explicit control over traversal assignments can be an effective way to limit access to sensitive information. Access–based enumeration can also be used. If you use access–based enumeration, users cannot see any folder or file to which they do not have access. For more info about this feature, see [Access-based Enumeration](/previous-versions/windows/it-pro/windows-server-2003/cc784710(v=ws.10)).
 
 ### Potential impact
 
@@ -98,5 +98,4 @@ The Windows operating systems and many applications were designed with the expec
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)
- 
  

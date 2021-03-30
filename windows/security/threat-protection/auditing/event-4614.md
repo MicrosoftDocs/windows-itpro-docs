@@ -27,9 +27,9 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time a Notification Package has been loaded by the [Security Account Manager](https://technet.microsoft.com/library/cc756748(v=ws.10).aspx).
+This event generates every time a Notification Package has been loaded by the [Security Account Manager](/previous-versions/windows/it-pro/windows-server-2003/cc756748(v=ws.10)).
 
-In reality, starting with Windows Vista, a notification package should be interpreted as afs [Password Filter](https://msdn.microsoft.com/library/windows/desktop/ms721882(v=vs.85).aspx).
+In reality, starting with Windows Vista, a notification package should be interpreted as afs [Password Filter](/windows/win32/secmgmt/password-filters).
 
 Password Filters are DLLs that are loaded or called when passwords are set or changed.
 
@@ -80,4 +80,3 @@ Each time a system starts, it loads the notification package DLLs from **HKEY\_L
 For 4614(S): A notification package has been loaded by the Security Account Manager.
 
 -   Typically this event has an informational purpose. If you defined the list of allowed Notification Packages in the system, then you can check is “**Notification Package Name”** field value in the allow list or not.
-

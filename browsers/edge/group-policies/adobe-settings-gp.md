@@ -19,7 +19,7 @@ ms.sitesec: library
 # Adobe Flash 
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
 
 Adobe Flash Player still has a significant presence on the internet, such as digital ads. However, open standards, such as HTML5, provide many of the capabilities and functionalities becoming an alternative for content on the web. With Adobe no longer supporting Flash after 2020, Microsoft has started to phase out Flash from Microsoft Edge by adding the [Configure the Adobe Flash Click-to-Run setting](#configure-the-adobe-flash-click-to-run-setting) group policy giving you a way to control the list of websites that have permission to run Adobe Flash content.
 
@@ -36,4 +36,3 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 
 ## Configure the Adobe Flash Click-to-Run setting
 [!INCLUDE [configure-adobe-flash-click-to-run-include.md](../includes/configure-adobe-flash-click-to-run-include.md)]
-

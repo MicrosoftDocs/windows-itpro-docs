@@ -66,8 +66,8 @@ To enable a specific audit event, run the corresponding command in an administra
 
 |**Audit #**|**Enable command**|**Link**|
 |:-----|:-----|:-----|
-|**5157**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable`|[5157(F): The Windows Filtering Platform has blocked a connection.](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157)|
-|**5152**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable`|[5152(F): The Windows Filtering Platform blocked a packet.](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5152)|
+|**5157**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable`|[5157(F): The Windows Filtering Platform has blocked a connection.](../auditing/event-5157.md)|
+|**5152**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable`|[5152(F): The Windows Filtering Platform blocked a packet.](../auditing/event-5152.md)|
 
 ## Example flow of debugging packet drops with filter origin 
 
@@ -99,9 +99,9 @@ After identifying the rule that caused the drop, the network admin can now modif
 
 Network drop events from the AppContainer loopback block filter origin occur when localhost loopback is not enabled properly for the Universal Windows Platform (UWP) app.
 
-To enable localhost loopback in a local debugging environment, see [Communicating with localhost](https://docs.microsoft.com/windows/iot-core/develop-your-app/loopback).
+To enable localhost loopback in a local debugging environment, see [Communicating with localhost](/windows/iot-core/develop-your-app/loopback).
 
-To enable localhost loopback for a published app that requires loopback access to communicate with another UWP or packaged win32 app, see [uap4:LoopbackAccessRules](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap4-loopbackaccessrules).
+To enable localhost loopback for a published app that requires loopback access to communicate with another UWP or packaged win32 app, see [uap4:LoopbackAccessRules](/uwp/schemas/appxpackage/uapmanifestschema/element-uap4-loopbackaccessrules).
 
 **Boottime default**
 
@@ -158,15 +158,14 @@ Set-NetFirewallProfile -NotifyOnListen False
 
 Network drops from stealth filters are typically made to prevent port scanning.
 
-To disable stealth-mode, see [Disable stealth mode in Windows](https://docs.microsoft.com/troubleshoot/windows-server/networking/disable-stealth-mode).
+To disable stealth-mode, see [Disable stealth mode in Windows](/troubleshoot/windows-server/networking/disable-stealth-mode).
 
 **UWP default**
 
 Network drops from Universal Windows Platform (UWP) default inbound/outbound block filters are often caused by the UWP app not being configured correctly (that is, the UWP app is missing the correct capability tokens or loopback is not enabled) or the private range is configured incorrectly. 
 
-For more information on how to debug drops caused by UWP default block filters, see [Troubleshooting UWP App Connectivity Issues](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/troubleshooting-uwp-firewall).
+For more information on how to debug drops caused by UWP default block filters, see [Troubleshooting UWP App Connectivity Issues](./troubleshooting-uwp-firewall.md).
 
 **WSH default**
 
 Network drops from Windows Service Hardening (WSH) default filters indicate that there wasn’t an explicit Windows Service Hardening allow rule to allow network traffic for the protected service. The service owner will need to configure allow rules for the service if the block is not expected.
-

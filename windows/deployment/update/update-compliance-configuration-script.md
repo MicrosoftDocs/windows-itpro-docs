@@ -40,7 +40,7 @@ The script is organized into two folders **Pilot** and **Deployment**. Both fold
 > If you encounter an issue with Update Compliance, the first step should be to run the script in Pilot mode on a device you are encountering issues with, and save these Logs for reference with Support.
 
 > [!IMPORTANT]
-> The script must be run in the System context. To do this, use the PsExec tool included in the file. For more about PsExec, see [PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec).
+> The script must be run in the System context. To do this, use the PsExec tool included in the file. For more about PsExec, see [PsExec](/sysinternals/downloads/psexec).
 
 
 When using the script in the context of troubleshooting, use `Pilot`. Enter `RunConfig.bat`, and configure it as follows:

@@ -33,7 +33,7 @@ These steps are explained in more detail below.
 
 ## Upgrade user devices to Windows 10
 
-Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings. See the [Windows 10 and Windows 10 Mobile document set](https://technet.microsoft.com/itpro/windows/index) for information about upgrading user devices to Windows 10. 
+Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings. See the [Windows 10 and Windows 10 Mobile document set](/windows/windows-10/) for information about upgrading user devices to Windows 10. 
 
 ## Verify that App-V applications and settings were migrated correctly
 
