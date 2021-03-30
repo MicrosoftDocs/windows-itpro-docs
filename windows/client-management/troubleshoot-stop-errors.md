@@ -35,7 +35,8 @@ Our analysis of the root causes of crashes indicates the following:
 - 5 percent are caused by Microsoft code
 - 15 percent have unknown causes (because the memory is too corrupted to analyze)
 
-Note that the root cause of Stop errors is never a user-mode process. While a user-mode process (such as Notepad or Slack) may trigger a Stop error, it is merely exposing the underlying bug which is always in a driver, hardware, or the OS.
+>[!NOTE]
+>Note that the root cause of Stop errors is never a user-mode process. While a user-mode process (such as Notepad or Slack) may trigger a Stop error, it is merely exposing the underlying bug which is always in a driver, hardware, or the OS.
 
 ## General troubleshooting steps
 
