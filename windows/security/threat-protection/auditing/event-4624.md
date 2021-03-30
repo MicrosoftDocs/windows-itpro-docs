@@ -219,7 +219,7 @@ This event generates when a logon session is created (on destination machine). I
 
     This parameter might not be captured in the event, and in that case appears as "{00000000-0000-0000-0000-000000000000}".
 
-> **Note**&nbsp;&nbsp;**GUID** is an acronym for 'Globally Unique Identifier'. It is a 128-bit integer number used to identify resources, activities or instances.
+> **Note**&nbsp;&nbsp;**GUID** is an acronym for 'Globally Unique Identifier'. It is a 128-bit integer number used to identify resources, activities, or instances.
 
 **Process Information:**
 
