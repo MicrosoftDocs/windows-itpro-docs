@@ -4600,6 +4600,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Winsrv policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-winsrv.md#winsrv-allowblockingappsatshutdown" id="#admx-winsrv-allowblockingappsatshutdown">ADMX_Winsrv/AllowBlockingAppsAtShutdown</a>
+  </dd>
+</dl>
+
 ### ADMX_wlansvc policies  
 
 <dl>
@@ -8579,13 +8587,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### ADMX Winsrv policies
-
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-winsrv.md#winsrv-allowblockingappsatshutdown" id="#admx-winsrv-allowblockingappsatshutdown">ADMX_Winsrv/AllowBlockingAppsAtShutdown</a>
-  </dd>
-</dl>
 
 ## Policies in Policy CSP supported by Group Policy and ADMX-backed policies in Policy CSP
 - [Policies in Policy CSP supported by Group Policy](./policies-in-policy-csp-supported-by-group-policy.md)
