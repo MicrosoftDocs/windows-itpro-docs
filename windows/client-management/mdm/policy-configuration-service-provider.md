@@ -1722,7 +1722,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disableenhancednotifications" id="admx-microsoftdefenderantivirus-reporting-disableenhancednotifications">ADMX_MicrosoftDefenderAntivirus/Reporting_DisableEnhancedNotifications</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disablegenericreports" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_DisablegenericrePorts</a>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disablegenericreports" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_Disablegenericreports</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-noncriticaltimeout" id="admx-microsoftdefenderantivirus-reporting-noncriticaltimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_NonCriticalTimeout</a>
@@ -4597,6 +4597,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-winlogon.md#admx-winlogon-softwaresasgeneration" id="admx-winlogon-softwaresasgeneration">ADMX_WinLogon/SoftwareSASGeneration</a>
+  </dd>
+</dl>
+
+### ADMX_Winsrv policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-winsrv.md#admx-winsrv-allowblockingappsatshutdown" id="#admx-winsrv-allowblockingappsatshutdown">ADMX_Winsrv/AllowBlockingAppsAtShutdown</a>
   </dd>
 </dl>
 
@@ -8578,6 +8586,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing" id="wirelessdisplay-requirepinforpairing">WirelessDisplay/RequirePinForPairing</a>
   </dd>
 </dl>
+
 
 ## Policies in Policy CSP supported by Group Policy and ADMX-backed policies in Policy CSP
 - [Policies in Policy CSP supported by Group Policy](./policies-in-policy-csp-supported-by-group-policy.md)
