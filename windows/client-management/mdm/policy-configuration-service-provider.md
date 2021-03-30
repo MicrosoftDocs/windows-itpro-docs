@@ -8583,7 +8583,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-admx-winsrv.md#winsrv.-allowblockingappsatshutdown" id="#admx-winsrv.-allowblockingappsatshutdown">ADMX_Winsrv/AllowBlockingAppsAtShutdown</a>
+    <a href="./policy-csp-admx-winsrv.md#winsrv-allowblockingappsatshutdown" id="#admx-winsrv-allowblockingappsatshutdown">ADMX_Winsrv/AllowBlockingAppsAtShutdown</a>
   </dd>
 </dl>
 
