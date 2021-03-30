@@ -3222,6 +3222,8 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
+<a href="" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_Disablegenericreports** 
 <hr/>
 
 <!--SupportedSKUs-->
