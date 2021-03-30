@@ -23,7 +23,7 @@ manager: dansimp
 
 <dl>
   <dd>
-    <a href="#admx-winsrv.-allowblockingappsatshutdown">ADMX_Winsrv/AllowBlockingAppsAtShutdown</a>
+    <a href="#admx-winsrv-allowblockingappsatshutdown">ADMX_Winsrv/AllowBlockingAppsAtShutdown</a>
   </dd>
 </dl>
 
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-winsrv.-allowblockingappsatshutdown"></a>**ADMX_Winsrv/AllowBlockingAppsAtShutdown**  
+<a href="" id="admx-winsrv-allowblockingappsatshutdown"></a>**ADMX_Winsrv/AllowBlockingAppsAtShutdown**  
 
 <!--SupportedSKUs-->
 <table>
