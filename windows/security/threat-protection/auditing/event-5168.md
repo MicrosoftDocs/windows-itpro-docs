@@ -29,7 +29,7 @@ ms.technology: mde
 
 This event generates when SMB SPN check fails.
 
-It often happens because of NTLMv1 or LM protocols usage from client side when “[Microsoft Network Server: Server SPN target name validation level](https://technet.microsoft.com/library/jj852272.aspx)” group policy set to “Require from client” on server side. SPN only sent to server when NTLMv2 or Kerberos protocols are used, and after that SPN can be validated.
+It often happens because of NTLMv1 or LM protocols usage from client side when “[Microsoft Network Server: Server SPN target name validation level](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj852272(v=ws.11))” group policy set to “Require from client” on server side. SPN only sent to server when NTLMv2 or Kerberos protocols are used, and after that SPN can be validated.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -122,4 +122,3 @@ For 5168(F): SPN check for SMB/SMB2 failed.
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   We recommend monitoring for any [5168](event-5168.md) event, because it can be a sign of a configuration issue or a malicious authentication attempt.
-

@@ -106,7 +106,7 @@
 #### [Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](app-v/appv-running-locally-installed-applications-inside-a-virtual-environment.md)
 ## [Service Host process refactoring](svchost-service-refactoring.md)
 ## [Per-user services in Windows](per-user-services-in-windows.md)
-## [Disabling System Services in Windows Server](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server)
+## [Disabling System Services in Windows Server](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server)
 ## [Deploy app upgrades on Windows 10 Mobile](deploy-app-upgrades-windows-10-mobile.md)
 ## [Change history for Application management](change-history-for-application-management.md)
 ## [How to keep apps removed from Windows 10 from returning during an update](remove-provisioned-apps-during-update.md)

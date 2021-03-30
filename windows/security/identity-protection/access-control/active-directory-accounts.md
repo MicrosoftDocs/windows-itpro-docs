@@ -480,7 +480,7 @@ Each default local account in Active Directory has a number of account settings 
 <td><p>Use DES encryption types for this account</p></td>
 <td><p>Provides support for the Data Encryption Standard (DES). DES supports multiple levels of encryption, including Microsoft Point-to-Point Encryption (MPPE) Standard (40-bit and 56-bit), MPPE standard (56-bit), MPPE Strong (128-bit), Internet Protocol security (IPSec) DES (40-bit), IPSec 56-bit DES, and IPSec Triple DES (3DES).</p>
 <div class="alert">
-<b>Note</b><br/><p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see <a href="https://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx" data-raw-source="[Hunting down DES in order to securely deploy Kerberos](https://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx)">Hunting down DES in order to securely deploy Kerberos</a>.</p>
+<b>Note</b><br/><p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see <a href="/archive/blogs/askds/hunting-down-des-in-order-to-securely-deploy-kerberos" data-raw-source="[Hunting down DES in order to securely deploy Kerberos](/archive/blogs/askds/hunting-down-des-in-order-to-securely-deploy-kerberos)">Hunting down DES in order to securely deploy Kerberos</a>.</p>
 </div>
 <div>
 
@@ -502,11 +502,11 @@ After the default local accounts are installed, these accounts reside in the Use
 
 You can use Active Directory Users and Computers to assign rights and permissions on a given local domain controller, and that domain controller only, to limit the ability of local users and groups to perform certain actions. A right authorizes a user to perform certain actions on a computer, such as backing up files and folders or shutting down a computer. In contrast, an access permission is a rule that is associated with an object, usually a file, folder, or printer, that regulates which users can have access to the object and in what manner.
 
-For more information about creating and managing local user accounts in Active Directory, see [Manage Local Users](https://technet.microsoft.com/library/cc731899.aspx).
+For more information about creating and managing local user accounts in Active Directory, see [Manage Local Users](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731899(v=ws.11)).
 
 You can also use Active Directory Users and Computers on a domain controller to target remote computers that are not domain controllers on the network.
 
-You can obtain recommendations from Microsoft for domain controller configurations that you can distribute by using the Security Compliance Manager (SCM) tool. For more information, see [Microsoft Security Compliance Manager](https://technet.microsoft.com/library/cc677002.aspx).
+You can obtain recommendations from Microsoft for domain controller configurations that you can distribute by using the Security Compliance Manager (SCM) tool. For more information, see [Microsoft Security Compliance Manager](/previous-versions/tn-archive/cc677002(v=technet.10)).
 
 Some of the default local user accounts are protected by a background process that periodically checks and applies a specific security descriptor, which is a data structure that contains security information that is associated with a protected object. This security descriptor is present on the AdminSDHolder object.
 

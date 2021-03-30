@@ -27,7 +27,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time local [logon user right policy](https://technet.microsoft.com/library/cc728212(v=ws.10).aspx) is changed and logon right was removed from an account.
+This event generates every time local [logon user right policy](/previous-versions/windows/it-pro/windows-server-2003/cc728212(v=ws.10)) is changed and logon right was removed from an account.
 
 You will see unique event for every user if logon user rights were removed for multiple accounts.
 
@@ -102,7 +102,7 @@ You will see unique event for every user if logon user rights were removed for m
 
 **Access Removed:**
 
--   **Access Right** \[Type = UnicodeString\]: the name of removed logon right. This event generates only for [logon rights](https://technet.microsoft.com/library/cc728212(v=ws.10).aspx), which are as follows:
+-   **Access Right** \[Type = UnicodeString\]: the name of removed logon right. This event generates only for [logon rights](/previous-versions/windows/it-pro/windows-server-2003/cc728212(v=ws.10)), which are as follows:
 
 | Value                             | Group Policy Name                             |
 |-----------------------------------|-----------------------------------------------|
@@ -133,4 +133,3 @@ For 4718(S): System security access was removed from an account.
 | **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should perform only limited actions, or no actions at all.                                                                                                                                        | Monitor the target **Computer:** (or other target device) for actions performed by the **“Subject\\Security ID”** that you are concerned about. Also be sure to check “**Account Modified\\Account Name**” to see whether logon rights should be removed from that account.<br>For high-value servers or other computers, we recommend that you track this event and investigate whether the specific “**Access Right**” should be removed from “**Account Modified\\Account Name**” in each case.                                                                                                                                                                                                                     |
 | **Logon rights that should be restricted**: You might have a list of user logon rights that you want to monitor (for example, **SeServiceLogonRight**).<br>**“Deny” rights that should not be removed**: Your organization might use “Deny” rights that should not be removed, for example, SeDenyRemoteInteractiveLogonRight. | -   Monitor this event and compare the **“Access Right”** to your list of restricted rights.<br>Monitor this event to discover the removal of a right that should never have been granted, so that you can investigate further.<br>You can also monitor this event to discover the removal of “Deny” rights. When these rights are removed, it could be an approved action, done by mistake, or part of malicious activity. These rights include:<br>SeDenyNetworkLogonRight:<br>SeDenyBatchLogonRight<br>SeDenyServiceLogonRight<br>SeDenyInteractiveLogonRight<br>SeDenyRemoteInteractiveLogonRight                                                                              |
 | **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                                          | Monitor “**Subject\\Account Name”** for names that don’t comply with naming conventions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-

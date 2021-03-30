@@ -24,13 +24,13 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 You can specify your level of cloud-delivered protection offered by Microsoft Defender Antivirus by using Microsoft Endpoint Manager (recommended) or Group Policy.
 
 > [!TIP]
 > Cloud protection is not simply protection for files that are stored in the cloud. The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and devices (also called endpoints). Cloud protection with Microsoft Defender Antivirus uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional security intelligence updates. 
-> Microsoft Intune and Microsoft Endpoint Manager are now part of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview). 
+> Microsoft Intune and Microsoft Endpoint Manager are now part of [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). 
 
 
 ## Use Microsoft Endpoint Manager to specify the level of cloud-delivered protection
@@ -39,7 +39,7 @@ You can specify your level of cloud-delivered protection offered by Microsoft De
 
 2. Choose **Endpoint security** > **Antivirus**.
 
-3. Select an antivirus profile. (If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
+3. Select an antivirus profile. (If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
 
 4. Select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
 
@@ -53,13 +53,13 @@ You can specify your level of cloud-delivered protection offered by Microsoft De
 
 > [!TIP]
 > Need some help? See the following resources:
-> - [Configure Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
-> - [Add endpoint protection settings in Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
+> - [Configure Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+> - [Add endpoint protection settings in Intune](/mem/intune/protect/endpoint-protection-configure)
   
 
 ## Use Group Policy to specify the level of cloud-delivered protection
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx).
+1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
 2. Right-click the Group Policy Object you want to configure, and then click **Edit**.
 
@@ -79,15 +79,13 @@ You can specify your level of cloud-delivered protection offered by Microsoft De
 
 6. Click **OK**.
 
-7. Deploy your updated Group Policy Object. See [Group Policy Management Console](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx)
+7. Deploy your updated Group Policy Object. See [Group Policy Management Console](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](https://docs.microsoft.com/mem/intune/configuration/group-policy-analytics). 
+> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics). 
   
 ## Related articles
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
-- [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-
-
+- [How to create and deploy antimalware policies: Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

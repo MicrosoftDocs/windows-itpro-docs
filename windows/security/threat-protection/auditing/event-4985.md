@@ -27,7 +27,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This is an informational event from file system [Transaction Manager](https://msdn.microsoft.com/library/windows/desktop/aa366385(v=vs.85).aspx).
+This is an informational event from file system [Transaction Manager](/windows/win32/ktm/transaction-managers).
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -99,13 +99,13 @@ This is an informational event from file system [Transaction Manager](https://ms
 
 **Transaction Information:**
 
--   **RM Transaction ID** \[Type = GUID\]: unique GUID of the [transaction](https://msdn.microsoft.com/library/windows/desktop/aa366402(v=vs.85).aspx). This field can help you correlate this event with other events that might contain the same **Transaction ID**, such as “[4656](event-4656.md)(S, F): A handle to an object was requested.”
+-   **RM Transaction ID** \[Type = GUID\]: unique GUID of the [transaction](/windows/win32/ktm/what-is-a-transaction). This field can help you correlate this event with other events that might contain the same **Transaction ID**, such as “[4656](event-4656.md)(S, F): A handle to an object was requested.”
 
 > **Note**&nbsp;&nbsp;**GUID** is an acronym for 'Globally Unique Identifier'. It is a 128-bit integer number used to identify resources, activities or instances.
 
--   **New State** \[Type = UInt32\]**:** identifier of the new state of the [transaction](https://msdn.microsoft.com/library/windows/desktop/aa366402(v=vs.85).aspx).
+-   **New State** \[Type = UInt32\]**:** identifier of the new state of the [transaction](/windows/win32/ktm/what-is-a-transaction).
 
--   **Resource Manager** \[Type = GUID\]**:** unique GUID-Identifier of the [Resource Manager](https://msdn.microsoft.com/library/windows/desktop/aa366356(v=vs.85).aspx) which associated with this [transaction](https://msdn.microsoft.com/library/windows/desktop/aa366402(v=vs.85).aspx).
+-   **Resource Manager** \[Type = GUID\]**:** unique GUID-Identifier of the [Resource Manager](/windows/win32/ktm/resource-managers) which associated with this [transaction](/windows/win32/ktm/what-is-a-transaction).
 
 **Process Information:**
 
@@ -123,5 +123,4 @@ This is an informational event from file system [Transaction Manager](https://ms
 
 For 4985(S): The state of a transaction has changed.
 
--   This event typically has no security relevance and used for [Transaction Manager](https://msdn.microsoft.com/library/windows/desktop/aa366385(v=vs.85).aspx) troubleshooting.
-
+-   This event typically has no security relevance and used for [Transaction Manager](/windows/win32/ktm/transaction-managers) troubleshooting.

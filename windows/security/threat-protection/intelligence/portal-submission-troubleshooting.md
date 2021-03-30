@@ -45,7 +45,7 @@ Azure Active Directory admins will need to allow for users to request admin cons
 
 ![Enterprise applications user settings](images/msi-enterprise-app-user-setting.jpg)
 
-More information is available in [Configure Admin consent workflow](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow).
+More information is available in [Configure Admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
 
 Once this setting is verified, users can go through the enterprise customer sign-in at [Microsoft security intelligence](https://www.microsoft.com/wdsi/filesubmission), and submit a request for admin consent, including justification.
 

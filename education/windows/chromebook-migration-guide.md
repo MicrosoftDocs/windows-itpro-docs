@@ -265,7 +265,7 @@ Assign the setting-migration priority based on how critical the setting is to th
 
 Many of your users may be using Google Apps Gmail to manage their email, calendars, and contacts. You need to create the list of users you will migrate and the best time to perform the migration.
 
-Office 365 supports automated migration from Google Apps Gmail to Office 365. For more information, see [Migrate Google Apps mailboxes to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=690252).
+Office 365 supports automated migration from Google Apps Gmail to Office 365. For more information, see [Migrate Google Apps mailboxes to Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes).
 
 **Identify the list of user mailboxes to migrate**
 
@@ -273,7 +273,7 @@ In regards to creating the list of users you will migrate, it might seem that th
 
 Also, when you perform a migration it is a great time to verify that all user mailboxes are active. In many environments there are a significant number of mailboxes that were provisioned for users that are no longer a part of the institution (such as interns or student assistants). You can eliminate these users from your list of user mailboxes to migrate.
 
-Create your list of user mailboxes to migrate in Excel 2016 based on the format described in step 7 in [Create a list of Gmail mailboxes to migrate](https://go.microsoft.com/fwlink/p/?LinkId=690253). If you follow this format, you can use the Microsoft Excel spreadsheet to perform the actual migration later in the process.
+Create your list of user mailboxes to migrate in Excel 2016 based on the format described in step 7 in [Create a list of Gmail mailboxes to migrate](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes). If you follow this format, you can use the Microsoft Excel spreadsheet to perform the actual migration later in the process.
 
 **Identify companion devices that access Google Apps Gmail**
 
@@ -680,15 +680,15 @@ Table 7. Network infrastructure products and technologies and deployment resourc
 <tr class="odd">
 <td align="left">DHCP</td>
 <td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733920" data-raw-source="[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)">Core Network Guide</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734021" data-raw-source="[DHCP Deployment Guide](https://go.microsoft.com/fwlink/p/?LinkId=734021)">DHCP Deployment Guide</a></p></li>
+<li><p><a href="/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)" data-raw-source="[Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11))">Core Network Guide</a></p></li>
+<li><p><a href="/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd283051(v=ws.10)" data-raw-source="[DHCP Deployment Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd283051(v=ws.10))">DHCP Deployment Guide</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">DNS</td>
 <td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733920" data-raw-source="[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)">Core Network Guide</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734022" data-raw-source="[Deploying Domain Name System (DNS)](https://go.microsoft.com/fwlink/p/?LinkId=734022)">Deploying Domain Name System (DNS)</a></p></li>
+<li><p><a href="/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)" data-raw-source="[Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11))">Core Network Guide</a></p></li>
+<li><p><a href="/previous-versions/windows/it-pro/windows-server-2003/cc780661(v=ws.10)" data-raw-source="[Deploying Domain Name System (DNS)](/previous-versions/windows/it-pro/windows-server-2003/cc780661(v=ws.10))">Deploying Domain Name System (DNS)</a></p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -722,16 +722,16 @@ Table 8. AD DS, Azure AD and deployment resources
 <tr class="odd">
 <td align="left">AD DS</td>
 <td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733920" data-raw-source="[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)">Core Network Guide</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733909" data-raw-source="[Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=733909)">Active Directory Domain Services Overview</a></p></li>
+<li><p><a href="/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)" data-raw-source="[Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11))">Core Network Guide</a></p></li>
+<li><p><a href="/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11)" data-raw-source="[Active Directory Domain Services Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11))">Active Directory Domain Services Overview</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Azure AD</td>
 <td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690258" data-raw-source="[Azure Active Directory documentation](https://go.microsoft.com/fwlink/p/?LinkId=690258)">Azure Active Directory documentation</a></p></li>
+<li><p><a href="/azure/active-directory/" data-raw-source="[Azure Active Directory documentation](/azure/active-directory/)">Azure Active Directory documentation</a></p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690259" data-raw-source="[Manage and support Azure Active Directory Premium](https://go.microsoft.com/fwlink/p/?LinkId=690259)">Manage and support Azure Active Directory Premium</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690260" data-raw-source="[Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://go.microsoft.com/fwlink/p/?LinkId=690260)">Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines</a></p></li>
+<li><p><a href="/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100" data-raw-source="[Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)">Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines</a></p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -765,23 +765,23 @@ Table 9. Management systems and deployment resources
 <tr class="odd">
 <td align="left">Windows provisioning packages</td>
 <td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733918" data-raw-source="[Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkId=733918)">Build and apply a provisioning package</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733911" data-raw-source="[Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=733911)">Windows Imaging and Configuration Designer</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690261" data-raw-source="[Step-By-Step: Building Windows 10 Provisioning Packages](https://go.microsoft.com/fwlink/p/?LinkId=690261)">Step-By-Step: Building Windows 10 Provisioning Packages</a></p></li>
+<li><p><a href="/windows/configuration/provisioning-packages/provisioning-create-package" data-raw-source="[Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)">Build and apply a provisioning package</a></p></li>
+<li><p><a href="/windows/configuration/provisioning-packages/provisioning-install-icd" data-raw-source="[Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd)">Windows Imaging and Configuration Designer</a></p></li>
+<li><p><a href="/archive/blogs/canitpro/step-by-step-building-windows-10-provisioning-packages" data-raw-source="[Step-By-Step: Building Windows 10 Provisioning Packages](/archive/blogs/canitpro/step-by-step-building-windows-10-provisioning-packages)">Step-By-Step: Building Windows 10 Provisioning Packages</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Group Policy</td>
 <td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733915" data-raw-source="[Core Network Companion Guide: Group Policy Deployment](https://go.microsoft.com/fwlink/p/?LinkId=733915)">Core Network Companion Guide: Group Policy Deployment</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734024" data-raw-source="[Deploying Group Policy](https://go.microsoft.com/fwlink/p/?LinkId=734024)">Deploying Group Policy</a></p></li>
+<li><p><a href="/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj899807(v=ws.11)" data-raw-source="[Core Network Companion Guide: Group Policy Deployment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj899807(v=ws.11))">Core Network Companion Guide: Group Policy Deployment</a></p></li>
+<li><p><a href="/previous-versions/windows/it-pro/windows-server-2003/cc737330(v=ws.10)" data-raw-source="[Deploying Group Policy](/previous-versions/windows/it-pro/windows-server-2003/cc737330(v=ws.10))">Deploying Group Policy</a></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left">Configuration Manager</td>
 <td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733914" data-raw-source="[Site Administration for System Center 2012 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733914)">Site Administration for System Center 2012 Configuration Manager</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733919" data-raw-source="[Deploying Clients for System Center 2012 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733919)">Deploying Clients for System Center 2012 Configuration Manager</a></p></li>
+<li><p><a href="/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10)" data-raw-source="[Site Administration for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10))">Site Administration for System Center 2012 Configuration Manager</a></p></li>
+<li><p><a href="/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10)" data-raw-source="[Deploying Clients for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10))">Deploying Clients for System Center 2012 Configuration Manager</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -789,14 +789,14 @@ Table 9. Management systems and deployment resources
 <td align="left"><ul>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690262" data-raw-source="[Set up and manage devices with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=690262)">Set up and manage devices with Microsoft Intune</a></p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690263" data-raw-source="[Smoother Management Of Office 365 Deployments with Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=690263)">Smoother Management Of Office 365 Deployments with Windows Intune</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690264" data-raw-source="[System Center 2012 R2 Configuration Manager &amp;amp; Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=690264)">System Center 2012 R2 Configuration Manager &amp; Windows Intune</a></p></li>
+<li><p><a href="/learn/?l=fCzIjVKy_6404984382" data-raw-source="[System Center 2012 R2 Configuration Manager &amp;amp; Windows Intune](/learn/?l=fCzIjVKy_6404984382)">System Center 2012 R2 Configuration Manager &amp; Windows Intune</a></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left">MDT</td>
 <td align="left"><ul>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690324" data-raw-source="[MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=690324)">MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690265" data-raw-source="[Step-By-Step: Installing Windows 8.1 From A USB Key](https://go.microsoft.com/fwlink/p/?LinkId=690265)">Step-By-Step: Installing Windows 8.1 From A USB Key</a></p></li>
+<li><p><a href="/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key" data-raw-source="[Step-By-Step: Installing Windows 8.1 From A USB Key](/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key)">Step-By-Step: Installing Windows 8.1 From A USB Key</a></p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -830,23 +830,23 @@ Table 10. Management systems and app deployment resources
 <tr class="odd">
 <td align="left">Group Policy</td>
 <td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734025" data-raw-source="[Editing an AppLocker Policy](https://go.microsoft.com/fwlink/p/?LinkId=734025)">Editing an AppLocker Policy</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734026" data-raw-source="[Group Policy Software Deployment Background](https://go.microsoft.com/fwlink/p/?LinkId=734026)">Group Policy Software Deployment Background</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=734027" data-raw-source="[Assigning and Publishing Software](https://go.microsoft.com/fwlink/p/?LinkId=734027)">Assigning and Publishing Software</a></p></li>
+<li><p><a href="/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791894(v=ws.10)" data-raw-source="[Editing an AppLocker Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791894(v=ws.10))">Editing an AppLocker Policy</a></p></li>
+<li><p><a href="/previous-versions/windows/it-pro/windows-server-2003/cc739305(v=ws.10)" data-raw-source="[Group Policy Software Deployment Background](/previous-versions/windows/it-pro/windows-server-2003/cc739305(v=ws.10))">Group Policy Software Deployment Background</a></p></li>
+<li><p><a href="/previous-versions/windows/it-pro/windows-server-2003/cc783635(v=ws.10)" data-raw-source="[Assigning and Publishing Software](/previous-versions/windows/it-pro/windows-server-2003/cc783635(v=ws.10))">Assigning and Publishing Software</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Configuration Manager</td>
 <td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733917" data-raw-source="[How to Deploy Applications in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733917)">How to Deploy Applications in Configuration Manager</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733907" data-raw-source="[Application Management in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733907)">Application Management in Configuration Manager</a></p></li>
+<li><p><a href="/previous-versions/system-center/system-center-2012-R2/gg682082(v=technet.10)" data-raw-source="[How to Deploy Applications in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682082(v=technet.10))">How to Deploy Applications in Configuration Manager</a></p></li>
+<li><p><a href="/previous-versions/system-center/system-center-2012-R2/gg699373(v=technet.10)" data-raw-source="[Application Management in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699373(v=technet.10))">Application Management in Configuration Manager</a></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left">Intune</td>
 <td align="left"><ul>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733913" data-raw-source="[Deploy apps to mobile devices in Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733913)">Deploy apps to mobile devices in Microsoft Intune</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733910" data-raw-source="[Manage apps with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733910)">Manage apps with Microsoft Intune</a></p></li>
+<li><p><a href="/mem/intune/" data-raw-source="[Manage apps with Microsoft Intune](/mem/intune/)">Manage apps with Microsoft Intune</a></p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -878,7 +878,7 @@ If you do no want to migrate any user or device settings from the Chromebook dev
 
 In the [Plan for email migration](#plan-email-migrate) section, you identified the user mailboxes to migrate, identified the companion devices that access Google Apps Gmail, and identified the optimal timing for migration. You can perform this migration before or after you deploy the Windows devices.
 
-Office 365 supports automated migration from Google Apps Gmail to Office 365. For more information on how to automate the migration from Google Apps Gmail to Office 365, see [Migrate Google Apps mailboxes to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=690252).
+Office 365 supports automated migration from Google Apps Gmail to Office 365. For more information on how to automate the migration from Google Apps Gmail to Office 365, see [Migrate Google Apps mailboxes to Office 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes).
 
 Alternatively, if you want to migrate to Office 365 from:
 
@@ -886,9 +886,9 @@ Alternatively, if you want to migrate to Office 365 from:
 
     -   [Cutover Exchange Migration and Single Sign-On](https://go.microsoft.com/fwlink/p/?LinkId=690266)
 
-    -   [Step-By-Step: Migration of Exchange 2003 Server to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=690267)
+    -   [Step-By-Step: Migration of Exchange 2003 Server to Office 365](/archive/blogs/canitpro/step-by-step-migration-of-exchange-2003-server-to-office-365)
 
-    -   [Step-By-Step: Migrating from Exchange 2007 to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=690268)
+    -   [Step-By-Step: Migrating from Exchange 2007 to Office 365](/archive/blogs/canitpro/step-by-step-migrating-from-exchange-2007-to-office-365)
 
 -   **Another on-premises or cloud-based email service.** Follow the guidance from that vendor.
 
@@ -929,15 +929,15 @@ For example, if you selected to deploy Windows devices by each classroom, start 
 
 In some instances, you may receive the devices with Windows 10 already deployed, and want to use provisioning packages. In other cases, you may have a custom Windows 10 image that you want to deploy to the devices by using Configuration Manager and/or MDT. For information on how to deploy Windows 10 images to the devices, see the following resources:
 
--   [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=733911)
+-   [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd)
 
--   [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkId=733918)
+-   [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
 
 -   [MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=690324)
 
--   [Step-By-Step: Installing Windows 8.1 From A USB Key](https://go.microsoft.com/fwlink/p/?LinkId=690265)
+-   [Step-By-Step: Installing Windows 8.1 From A USB Key](/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key)
 
--   [Operating System Deployment in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733916)
+-   [Operating System Deployment in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682018(v=technet.10))
 
 In addition to the Windows 10 image deployment, you may need to perform the following tasks as a part of device deployment:
 
@@ -954,15 +954,9 @@ After you complete these steps, your management system should take over the day-
 ## Related topics
 
 
-[Try it out: Windows 10 deployment (for education)](https://go.microsoft.com/fwlink/p/?LinkId=623254)
+[Try it out: Windows 10 deployment (for education)](../index.yml)
 
-[Try it out: Windows 10 in the classroom](https://go.microsoft.com/fwlink/p/?LinkId=623255)
-
- 
+[Try it out: Windows 10 in the classroom](../index.yml)
 
  
-
-
-
-
 

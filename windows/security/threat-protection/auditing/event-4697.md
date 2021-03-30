@@ -107,7 +107,7 @@ This event generates when new service was installed in the system.
 
     Note that this is the path to the file when the service is created. If the path is changed afterwards, the change is not logged. This would have to be tracked via Process Create events.
 
--   **Service Type** \[Type = HexInt32\]: Indicates the [type](https://msdn.microsoft.com/library/tfdtdw0e(v=vs.110).aspx?cs-save-lang=1&cs-lang=csharp#code-snippet-1) of service that was registered with the Service Control Manager. It can be one of the following:
+-   **Service Type** \[Type = HexInt32\]: Indicates the [type](/dotnet/api/system.serviceprocess.servicetype?cs-lang=csharp&cs-save-lang=1#code-snippet-1) of service that was registered with the Service Control Manager. It can be one of the following:
 
 | Value | Service Type              | Description                                                                                                                                                                                   |
 |-------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -159,4 +159,3 @@ For 4697(S): A service was installed in the system.
 -   Report all “**Service Start Type**” equals “**4**”. It is not common to install a new service in the **Disabled** state.
 
 -   Report all “**Service Account**” not equals “**localSystem**”, “**localService**” or “**networkService**” to identify services which are running under a user account.
-

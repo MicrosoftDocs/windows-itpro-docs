@@ -678,7 +678,7 @@ function CheckDriverCompat
     if($verifier_state.ToString().Contains("No drivers are currently verified."))
     {
         LogAndConsole "Enabling Driver verifier"
-        verifier.exe /flags 0x02000000 /all /log.code_integrity
+        verifier.exe /flags 0x02000000 /all /bootmode oneboot /log.code_integrity
 
         LogAndConsole "Enabling Driver Verifier and Rebooting system"
         Log $verifier_state

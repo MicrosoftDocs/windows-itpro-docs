@@ -27,7 +27,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event is generated when a user disconnects from an existing Terminal Services session, or when a user switches away from an existing desktop using [Fast User Switching](https://docs.microsoft.com/windows-hardware/drivers/display/fast-user-switching).
+This event is generated when a user disconnects from an existing Terminal Services session, or when a user switches away from an existing desktop using [Fast User Switching](/windows-hardware/drivers/display/fast-user-switching).
 
 This event also generated when user disconnects from virtual host Hyper-V Enhanced Session, for example.
 
@@ -142,4 +142,3 @@ For 4779(S): A session was disconnected from a Window Station.
 -   If Remote Desktop Connections are not allowed for specific users (**Subject\\Account Name**) or disabled on some computers, then monitor for **Session Name** = RDP-Tcp\# (substring).
 
 -   To ensure that connections are made only from your internal IP address list, monitor the **Additional Information\\Client Address** in this event.
-

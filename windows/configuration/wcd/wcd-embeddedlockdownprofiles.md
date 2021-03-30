@@ -29,4 +29,4 @@ Use to apply an XML configuration to a mobile device that locks down the device,
 
 ## Related topics
 
-- [EnterpriseAssignedAccess configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseassignedaccess-csp)
+- [EnterpriseAssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/enterpriseassignedaccess-csp)

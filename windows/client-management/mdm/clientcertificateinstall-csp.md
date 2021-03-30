@@ -117,7 +117,7 @@ If a blob already exists, the Add operation will fail. If Replace is called on t
 
 If Add is called on this node for a new PFX, the certificate will be added. When a certificate does not exist, Replace operation on this node will fail.
 
-In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate CRYPT_DATA_BLOB, which can be found in <a href="https://go.microsoft.com/fwlink/p/?LinkId=523871" data-raw-source="[CRYPT\_INTEGER\_BLOB](https://go.microsoft.com/fwlink/p/?LinkId=523871)">CRYPT_INTEGER_BLOB</a>.
+In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate CRYPT_DATA_BLOB, which can be found in <a href="/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)" data-raw-source="[CRYPT\_INTEGER\_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85))">CRYPT_INTEGER_BLOB</a>.
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpassword"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPassword**  
 Password that protects the PFX blob. This is required if the PFX is password protected.
@@ -216,7 +216,7 @@ Required. Specifies the subject name.
 
 The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”  ).
 
-For more details, see [CertNameToStrA function](https://docs.microsoft.com/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
+For more details, see [CertNameToStrA function](/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
 
 Data type is string.
 

@@ -136,7 +136,7 @@ The apps and settings available in the pages of Lockdown Designer should now be 
 | --- | --- |
 | ![Applications](../images/ld-apps.png) | Each app from the test mobile device is listed. Select the apps that you want visible to users.</br></br>You can select an app to run automatically when a user signs in to the device. The **Select Auto-Run** menu is populated by the apps that you select to allow on the device. |
 | ![CSP Runner](../images/ld-csp.png) | CSPRunner enables you to include settings and policies that are not defined in other sections of the app. To make use of CSPRunner, you must create the SyncML block that contains the settings, and then import the SyncML in Lockdown Designer. [Learn how to use CSPRunner and author SyncML.](lockdown-xml.md#csprunner)  |
-| ![Settings](../images/ld-settings.png)  |  On this page, you select the settings that you want visible to users. See the [ms settings: URI scheme reference](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to see which Settings page maps to a URI.  |
+| ![Settings](../images/ld-settings.png)  |  On this page, you select the settings that you want visible to users. See the [ms settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to see which Settings page maps to a URI.  |
 | ![Quick actions](../images/ld-quick.png)  |  On this page, you select the settings that you want visible to users. |
 | ![Buttons](../images/ld-buttons.png)  |  Each hardware button on a mobile device has different actions that can be disabled. In addition, the behavior for **Search** button can be changed to open an app other than **Search**.</br></br>Some devices may have additional hardware buttons provided by the OEM. These are listed as Custom1, Custom2, and Custom3. If your device has custom hardware buttons, contact your equipment provider to identify how their custom buttons are defined. |
 | ![Other settings](../images/ld-other.png)  | This page contains several settings that you can configure:</br></br>- The context menu is displayed when a user presses and holds an application in the All Apps list. You can enable or disable the context menu.</br></br>- Tile manipulation allows users to pin, unpin, move, and resize tiles on the Start screen. You can enable or disable tile manipulation.</br></br>- The Action Center setting controls whether the user can open the Action Center on the device. When the Action Center is disabled, notifications on the lockscreen and toasts are also disabled. You can use optional attributes with the Action Center element to change that behavior for either notifications, toasts, or both.  |
@@ -170,6 +170,3 @@ You can create additional roles for the device and have unique configurations fo
 4. Configure the settings for the role as above, but make sure on each page that you select the correct role.
 
     ![Current role selection box](../images/ld-role.png)
-
-
-

@@ -29,17 +29,17 @@ Use to configure settings for Calling.
 
 ## Branding
 
-See [Branding for phone calls](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/branding-for-phone-calls).
+See [Branding for phone calls](/windows-hardware/customize/mobile/mcsf/branding-for-phone-calls).
 
 ## CallIDMatchOverrides
 
 Enter a GEOID, select **Add**, and then enter the number of digits for matching caller ID. 
 
-For a list of GEOID codes and default number of digits for each country/region, see [Overriding the OS default minimu number of digits for caller ID matching](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/caller-id-matching#a-href-idoverriding-os-default-min-number-digitsaoverriding-the-os-default-minimum-number-of-digits-for-caller-id-matching).
+For a list of GEOID codes and default number of digits for each country/region, see [Overriding the OS default minimu number of digits for caller ID matching](/windows-hardware/customize/mobile/mcsf/caller-id-matching#a-href-idoverriding-os-default-min-number-digitsaoverriding-the-os-default-minimum-number-of-digits-for-caller-id-matching).
 
 ## CauseCodeRegistrationTable
 
-See [Cause codes](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/cause-codes).
+See [Cause codes](/windows-hardware/customize/mobile/mcsf/cause-codes).
 
 
 ## CDMAHeuristics
@@ -53,7 +53,7 @@ Set **DisableCdmaHeuristics** to **True** to disable the built-in heuristics.
 
 ## PartnerAppSupport
 
-See [Dialer codes to launch diagnostic applications](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/dialer-codes-to-launch-diagnostic-applications).
+See [Dialer codes to launch diagnostic applications](/windows-hardware/customize/mobile/mcsf/dialer-codes-to-launch-diagnostic-applications).
 
 ## PerSimSettings
 
@@ -94,7 +94,7 @@ WiFiCallingOperatorName | Enter the operator name to be shown when the phone is 
 
 ### HDAudio
 
-To customize call progress branding when a call is made using a specific audio codec, select the audio codec from the dropdown menu and select **Add**. Select the codec in **Available Customizations** and then enter a text string (up to 10 characters) to be used for call progress branding for calls using that codec. For more information, see [Use HD audio codec for call branding](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/use-hd-audio-codec-for-call-branding).
+To customize call progress branding when a call is made using a specific audio codec, select the audio codec from the dropdown menu and select **Add**. Select the codec in **Available Customizations** and then enter a text string (up to 10 characters) to be used for call progress branding for calls using that codec. For more information, see [Use HD audio codec for call branding](/windows-hardware/customize/mobile/mcsf/use-hd-audio-codec-for-call-branding).
 
 ### IMSSubscriptionUpdate
 
@@ -102,7 +102,7 @@ These are Verizon/Sprint-only settings to allow the operator to send an OMA-DM u
 
 ### RoamingNumberOverrides
 
-See [Dial string overrides when roaming](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/dial-string-overrides-when-roaming).
+See [Dial string overrides when roaming](/windows-hardware/customize/mobile/mcsf/dial-string-overrides-when-roaming).
 
 ## PhoneSettings
 
@@ -151,11 +151,11 @@ AppId | Enter the app ID for your phone call/SMS filter application.
 
 ## SupplementaryServiceCodeOverrides
 
-See [Dialer codes for supplementary services](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/dialer-codes-for-supplementary-services).
+See [Dialer codes for supplementary services](/windows-hardware/customize/mobile/mcsf/dialer-codes-for-supplementary-services).
 
 ## VoicemailRegistrationTable
 
-Configure these settings to customize visual voicemail in the Windows 10 Mobile UI. For settings and values, see [Visual voicemail](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/visual-voicemail).
+Configure these settings to customize visual voicemail in the Windows 10 Mobile UI. For settings and values, see [Visual voicemail](/windows-hardware/customize/mobile/mcsf/visual-voicemail).
 
 
 ## List of USSD codes
@@ -216,4 +216,3 @@ Codes | Description | DWORD Value
 592 | MSP2 | 00000592
 593 | MSP3 | 00000593
 594 | MSP4 | 00000594
- 
