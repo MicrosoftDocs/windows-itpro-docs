@@ -463,7 +463,7 @@ ms.date: 10/08/2020
 - [ADMX_MicrosoftDefenderAntivirus/Reporting_AdditionalActionTimeout](./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-additionalactiontimeout)
 - [ADMX_MicrosoftDefenderAntivirus/Reporting_CriticalFailureTimeout](./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-criticalfailuretimeout)
 - [ADMX_MicrosoftDefenderAntivirus/Reporting_DisableEnhancedNotifications](./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disableenhancednotifications)
-- [ADMX_MicrosoftDefenderAntivirus/Reporting_DisablegenericrePorts](./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disablegenericreports)
+- [ADMX_MicrosoftDefenderAntivirus/Reporting_Disablegenericreports](./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disablegenericreports)
 - [ADMX_MicrosoftDefenderAntivirus/Reporting_NonCriticalTimeout](./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-noncriticaltimeout)
 - [ADMX_MicrosoftDefenderAntivirus/Reporting_RecentlyCleanedTimeout](./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-recentlycleanedtimeout)
 - [ADMX_MicrosoftDefenderAntivirus/Reporting_WppTracingComponents](./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-wpptracingcomponents)

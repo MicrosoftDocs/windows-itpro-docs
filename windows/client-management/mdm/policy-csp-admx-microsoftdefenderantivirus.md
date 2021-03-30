@@ -146,7 +146,7 @@ manager: dansimp
     <a href="#admx-microsoftdefenderantivirus-reporting-disableenhancednotifications">ADMX_MicrosoftDefenderAntivirus/Reporting_DisableEnhancedNotifications</a>
   </dd>
   <dd>
-    <a href="#admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_DisablegenericrePorts</a>
+    <a href="#admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_Disablegenericreports</a>
   </dd>
   <dd>
     <a href="#admx-microsoftdefenderantivirus-reporting-noncriticaltimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_NonCriticalTimeout</a>
@@ -3282,7 +3282,7 @@ If you disable this setting, Watson events will not be sent.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure Watson events*
--   GP name: *Reporting_DisablegenericrePorts*
+-   GP name: *Reporting_Disablegenericreports*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Reporting*
 -   GP ADMX file name: *WindowsDefender.admx*
 
