@@ -3355,6 +3355,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+<a href="" id="admx-microsoftdefenderantivirus-reporting-recentlycleanedtimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_RecentlyCleanedTimeout** 
 <hr/>
 
 <!--SupportedSKUs-->
@@ -4245,6 +4246,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablescanningmappednetworkdrivesforfullscan"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningMappedNetworkDrivesForFullScan**
 <hr/>
 <!--Policy-->
 
@@ -6130,6 +6132,8 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-signaturedisablenotification"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureDisableNotification**  
+
 <hr/>
 <!--Policy-->
 
