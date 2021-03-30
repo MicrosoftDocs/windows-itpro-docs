@@ -22,7 +22,7 @@ ms.reviewer:
 -   Windows 10
 -   Windows Server 2016
  
-Windows Defender Credential Guard has certain application requirements. Windows Defender Credential Guard blocks specific authentication capabilities. Therefore applications that require such capabilities will not function when it is enabled. For further information, see [Application requirements](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements). 
+Windows Defender Credential Guard has certain application requirements. Windows Defender Credential Guard blocks specific authentication capabilities. Therefore applications that require such capabilities will not function when it is enabled. For further information, see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements). 
 
 The following known issue has been fixed in the [Cumulative Security Update for November 2017](https://support.microsoft.com/help/4051033):
 
@@ -54,7 +54,7 @@ The following issue affects the Java GSS API. See the following Oracle bug datab
 
 - [JDK-8161921: Windows 10 Windows Defender Credential Guard does not allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
 
-When Windows Defender Credential Guard is enabled on Windows 10, the Java GSS API will not authenticate. This is expected behavior because Windows Defender Credential Guard blocks specific application authentication capabilities and will not provide the TGT session key to applications regardless of registry key settings. For further information see [Application requirements](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
+When Windows Defender Credential Guard is enabled on Windows 10, the Java GSS API will not authenticate. This is expected behavior because Windows Defender Credential Guard blocks specific application authentication capabilities and will not provide the TGT session key to applications regardless of registry key settings. For further information see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
 
 The following issue affects Cisco AnyConnect Secure Mobility Client:
 
@@ -77,7 +77,7 @@ The following issue affects Citrix applications:
 
 - [KB4032786 High CPU usage in the LSAISO process on Windows 10 or Windows Server 2016](https://support.microsoft.com/help/4032786)
     
-For further technical information on LSAISO.exe, see the MSDN article: [Isolated User Mode (IUM) Processes](https://msdn.microsoft.com/library/windows/desktop/mt809132(v=vs.85).aspx)
+For further technical information on LSAISO.exe, see the MSDN article: [Isolated User Mode (IUM) Processes](/windows/win32/procthread/isolated-user-mode--ium--processes)
     
 
   \** Registration is required to access this article.

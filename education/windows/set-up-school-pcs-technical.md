@@ -55,7 +55,7 @@ The following table describes the Set up School PCs app features and lists each 
 | Students sign in with their IDs to access all Office 365 web apps or installed Office apps.                                                                                                                                                            |             |          |            |                  |
 | **Take a Test app**                                                                                                                                                                                                                                                     |             |          |            | X                |
 | Administer quizzes and assessments through test providers such as Smarter Balanced.                                                                                                                                      |             |          |            |                  |
-| [Settings roaming](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/) **via Azure AD**                                                                                                             |             |          |            | X                |
+| [Settings roaming](/azure/active-directory/devices/enterprise-state-roaming-overview) **via Azure AD**                                                                                                             |             |          |            | X                |
 | Synchronize student and application data across devices for a personalized experience.                                                                                                                                                          |             |          |            |                  |
 
 > [!NOTE]
@@ -74,11 +74,3 @@ Learn more about setting up devices with the Set up School PCs app.
 * [Set up Windows 10 devices for education](set-up-windows-10.md) 
 
 When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
-
-
-
-
-
-
-
-

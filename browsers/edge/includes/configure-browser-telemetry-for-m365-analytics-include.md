@@ -47,7 +47,7 @@ ms.topic: include
 
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureTelemetryForMicrosoft365Analytics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics)
+- **MDM name:** Browser/[ConfigureTelemetryForMicrosoft365Analytics](/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureTelemetryForMicrosoft365Analytics
 - **Data type:** Integer

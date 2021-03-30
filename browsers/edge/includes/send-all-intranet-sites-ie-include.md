@@ -37,7 +37,7 @@ ms.topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[SendIntranetTraffictoInternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-sendintranettraffictointernetexplorer)
+- **MDM name:** Browser/[SendIntranetTraffictoInternetExplorer](/windows/client-management/mdm/policy-csp-browser#browser-sendintranettraffictointernetexplorer)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer
 - **Data type:** Integer
@@ -56,8 +56,8 @@ ms.topic: include
 ### Related topics
 - [Blog: How Microsoft Edge and Internet Explorer 11 on Windows 10 work better together in the Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=624035). Many customers depend on legacy features only available in older versions of Internet Explorer and are familiar with our Enterprise Mode tools for IE11. The Enterprise Mode has been extended to support to Microsoft Edge by opening any site specified on the Enterprise Mode Site List in IE11. IT Pros can use their existing IE11 Enterprise Mode Site List, or they can create a new one specifically for Microsoft Edge. By keeping Microsoft Edge as the default browser in Windows 10 and only opening legacy line of business sites in IE11 when necessary, you can help keep newer development projects on track, using the latest web standards on Microsoft Edge.
 
-- [Enterprise Mode for Internet Explorer 11 (IE11)](https://go.microsoft.com/fwlink/p/?linkid=618377).  Learn how to set up and use Enterprise Mode and the Enterprise Mode Site List Manager in your company.
+- [Enterprise Mode for Internet Explorer 11 (IE11)](/internet-explorer/ie11-deploy-guide/enterprise-mode-overview-for-ie11).  Learn how to set up and use Enterprise Mode and the Enterprise Mode Site List Manager in your company.
 
-- [Use the Enterprise Mode Site List Manager](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/use-the-enterprise-mode-site-list-manager). You can use IE11 and the Enterprise Mode Site List Manager to add individual website domains and domain paths and to specify whether the site renders using Enterprise Mode or the default mode.
+- [Use the Enterprise Mode Site List Manager](/internet-explorer/ie11-deploy-guide/use-the-enterprise-mode-site-list-manager). You can use IE11 and the Enterprise Mode Site List Manager to add individual website domains and domain paths and to specify whether the site renders using Enterprise Mode or the default mode.
 
 <hr>

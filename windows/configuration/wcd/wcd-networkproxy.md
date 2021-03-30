@@ -50,4 +50,4 @@ Address to the PAC script you want to use.
 
 ## Related topics
 
-- [NetworkProxy configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp)
+- [NetworkProxy configuration service provider (CSP)](/windows/client-management/mdm/networkproxy-csp)

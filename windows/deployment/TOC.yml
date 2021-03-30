@@ -87,6 +87,8 @@
           items:
             - name: Build deployment rings for Windows 10 updates
               href: update/waas-deployment-rings-windows-10-updates.md
+            - name: Check release health
+              href: update/check-release-health.md
             - name: Prepare updates using Windows Update for Business
               href: update/waas-manage-updates-wufb.md
             - name: Prepare updates using WSUS
@@ -242,7 +244,7 @@
                 - name: Opt out of safeguard holds
                   href: update/safeguard-opt-out.md
                 - name: Determine the source of Windows Updates
-                  href: update/windows-update-sources.md
+                  href: ./update/how-windows-update-works.md
                 - name: Common Windows Update errors
                   href: update/windows-update-errors.md
                 - name: Windows Update error code reference

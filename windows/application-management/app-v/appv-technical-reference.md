@@ -50,4 +50,4 @@ This section provides reference information related to managing App-V.
 
 [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
-[Windows PowerShell reference for App-V](https://technet.microsoft.com/library/dn903534.aspx)
+[Windows PowerShell reference for App-V](/previous-versions/)

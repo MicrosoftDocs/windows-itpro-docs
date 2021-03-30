@@ -88,7 +88,7 @@ You might ask why you need to synchronize these identities. The answer is so tha
 
 For more information about integrating on-premises AD DS domains with Azure AD, see the following resources:
 
--   [Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)
+-   [Integrating your on-premises identities with Azure Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity)
 -   [Azure AD + Domain Join + Windows 10](https://blogs.technet.microsoft.com/enterprisemobility/2016/02/17/azure-ad-domain-join-windows-10/)
 
 >[!NOTE]
@@ -107,7 +107,7 @@ Upon acquisition of Windows 10 subscription has been completed (Windows 10 Busin
 
 The following methods are available to assign licenses:
 
-1. When you have the required Azure AD subscription, [group-based licensing](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal) is the preferred method to assign Enterprise E3 or E5 licenses to users.
+1. When you have the required Azure AD subscription, [group-based licensing](/azure/active-directory/active-directory-licensing-whatis-azure-portal) is the preferred method to assign Enterprise E3 or E5 licenses to users.
 
 2. You can sign in to portal.office.com and manually assign licenses:
 
@@ -215,7 +215,7 @@ If there are any problems with the Windows 10 Enterprise E3 or E5 license or th
 
 ## Virtual Desktop Access (VDA)
 
-Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx).
+Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://aka.ms/qmth).
 
 Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Azure Active Directory-joined clients are supported. See [Enable VDA for Enterprise Subscription Activation](vda-subscription-activation.md).
 

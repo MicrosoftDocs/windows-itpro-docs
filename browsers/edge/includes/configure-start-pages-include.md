@@ -32,7 +32,7 @@ ms.topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[HomePages](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-homepages)
+- **MDM name:** Browser/[HomePages](/windows/client-management/mdm/policy-csp-browser#browser-homepages)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/HomePages
 - **Data type:** String

@@ -129,7 +129,7 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
 3. On some physical computers, you may generate a nonmakeable interruption (NMI) from the Web Interface feature (such as DRAC, iLo, and RSA). However, by default, this setting will stop the system without creating a memory dump.   
 
-   To allow the operating system to generate a memory dump file at an NMI interruption, set the value of the [NMICrashDump](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc783271(v=ws.10)) registry entry to `1` (REG_DWORD). Then, restart the computer to apply this change.   
+   To allow the operating system to generate a memory dump file at an NMI interruption, set the value of the [NMICrashDump](/previous-versions/windows/it-pro/windows-server-2003/cc783271(v=ws.10)) registry entry to `1` (REG_DWORD). Then, restart the computer to apply this change.   
 
    > [!NOTE]
    > This is applicable only for Windows 7, Windows Server 2008 R2, and earlier versions of Windows. For Windows 8 Windows Server 2012, and later versions of Windows, the NMICrashDump registry key is no longer required, and an NMI interruption will result in [a Stop error that follows a memory dump data collection](https://support.microsoft.com/help/2750146).   
@@ -206,7 +206,7 @@ If the physical computer is still running in a frozen state, follow these steps 
 
       * `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\CrashDumpEnabled`   
 
-         Make sure that the [CrashDumpEnabled](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc976050(v=technet.10)) registry entry is `1`.            
+         Make sure that the [CrashDumpEnabled](/previous-versions/windows/it-pro/windows-2000-server/cc976050(v=technet.10)) registry entry is `1`.            
 
       * `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\NMICrashDump`   
 
@@ -259,7 +259,7 @@ Use the one of the following methods for the application on which the virtual ma
 
 #### Microsoft Hyper-V 
 
-If the virtual machine is running Windows 8, Windows Server 2012, or a later version of Windows on Microsoft Hyper-V Server 2012, you can use the built-in NMI feature through a [Debug-VM](https://docs.microsoft.com/previous-versions/windows/powershell-scripting/dn464280(v=wps.630)) cmdlet to debug and get a memory dump.   
+If the virtual machine is running Windows 8, Windows Server 2012, or a later version of Windows on Microsoft Hyper-V Server 2012, you can use the built-in NMI feature through a [Debug-VM](/previous-versions/windows/powershell-scripting/dn464280(v=wps.630)) cmdlet to debug and get a memory dump.   
 
 To debug the virtual machines on Hyper-V, run the following cmdlet in Windows PowerShell: 
 

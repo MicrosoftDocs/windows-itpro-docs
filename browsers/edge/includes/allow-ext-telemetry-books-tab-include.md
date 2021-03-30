@@ -32,7 +32,7 @@ ms.topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** [Browser/EnableExtendedBooksTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry)
+- **MDM name:** [Browser/EnableExtendedBooksTelemetry](/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/EnableExtendedBooksTelemetry
 - **Data type:** Integer

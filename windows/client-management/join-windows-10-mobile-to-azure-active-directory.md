@@ -63,7 +63,7 @@ Even though Azure AD Join on Windows 10 Mobile provides the best overall experi
 
 -   You can add access to Azure AD-backed resources on the device without resetting the device.
 
-However, neither of these methods provides SSO in the Microsoft Store or SSO to resources on-premises, and does not provide the ability to roam settings based on the Azure AD account using enterprise roaming. [Learn about enterprise state roaming in Azure AD.](https://go.microsoft.com/fwlink/p/?LinkId=734996)
+However, neither of these methods provides SSO in the Microsoft Store or SSO to resources on-premises, and does not provide the ability to roam settings based on the Azure AD account using enterprise roaming. [Learn about enterprise state roaming in Azure AD.](/azure/active-directory/devices/enterprise-state-roaming-overview)
 
 Using **Settings** &gt; **Accounts** &gt; **Your email and accounts** &gt; **Add work or school account**, users can add their Azure AD account to the device. Alternatively, a work account can be added when the user signs in to an application like Mail, Word, etc. If you [enable auto-enrollment in your MDM settings](https://go.microsoft.com/fwlink/p/?LinkID=691615), the device will automatically be enrolled in MDM.
 
@@ -88,7 +88,7 @@ An added work account provides the same SSO experience in browser apps like Offi
 
 -   **Windows Hello**
 
-    Creating a Windows Hello (PIN) is required on Windows 10 Mobile by default and cannot be disabled. You can control Windows Hello policies using controls in MDM, such as Intune. Because the device is joined using organizational credentials, the device must have a PIN to unlock the device. Biometrics such as fingerprint or iris can be used for authentication. Creating a Windows Hello requires the user to perform an multi-factor authentication since the PIN is a strong authentication credential. [Learn more about Windows Hello for Azure AD.](https://go.microsoft.com/fwlink/p/?LinkId=735004)
+    Creating a Windows Hello (PIN) is required on Windows 10 Mobile by default and cannot be disabled. You can control Windows Hello policies using controls in MDM, such as Intune. Because the device is joined using organizational credentials, the device must have a PIN to unlock the device. Biometrics such as fingerprint or iris can be used for authentication. Creating a Windows Hello requires the user to perform an multi-factor authentication since the PIN is a strong authentication credential. [Learn more about Windows Hello for Azure AD.](/windows/security/identity-protection/hello-for-business/hello-identity-verification)
 
 -   **Conditional access**
 
@@ -203,8 +203,3 @@ To see the Notebooks that your Azure AD account has access to, tap **More Notebo
  
 
  
-
-
-
-
-
