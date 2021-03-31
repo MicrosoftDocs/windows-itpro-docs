@@ -80,13 +80,6 @@ The following table in this topic lists the Group Policy settings available in W
 | Remediation | Configure local setting override for the time of day to run a scheduled full scan to complete remediation | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Remediation | Specify the day of the week to run a scheduled full scan to complete remediation | [Configure scheduled Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Remediation | Specify the time of day to run a scheduled full scan to complete remediation | [Configure scheduled Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| Reporting | Configure Watson events | No longer relevant |
-| Reporting | Configure Windows software trace preprocessor components |  No longer relevant |
-| Reporting | Configure WPP tracing level | No longer relevant |
-| Reporting | Configure time out for detections in critically failed state | No longer relevant |
-| Reporting | Configure time out for detections in non-critical failed state |  No longer relevant |
-| Reporting | Configure time out for detections in recently remediated state | No longer relevant |
-| Reporting | Configure time out for detections requiring additional action | No longer relevant |
 | Reporting | Turn off enhanced notifications | [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
 | Root | Turn off Microsoft Defender Antivirus | Not used (This setting must be set to **Not configured** to ensure any installed third-party antivirus apps work correctly)
 | Root | Define addresses to bypass proxy server | No longer relevant |
