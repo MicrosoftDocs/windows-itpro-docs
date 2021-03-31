@@ -74,7 +74,7 @@ localhost
 
 Note: If you are in the middle of developing a UWA application and want to test its loopback, ensure to uninstall and re-install the UWA app if the network capabilties change for whatever reason. 
 
-Also, see [How to enable loopback and troubleshoot network isolation (Windows Runtime apps)](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh780593(v=win.10)#debug-network-isolation-issues).
+Also, see [How to enable loopback and troubleshoot network isolation (Windows Runtime apps)](https://docs.microsoft.com/previous-versions/windows/apps/hh780593(v=win.10)#debug-network-isolation-issues).
 
 ## Debugging Live Drops
 
