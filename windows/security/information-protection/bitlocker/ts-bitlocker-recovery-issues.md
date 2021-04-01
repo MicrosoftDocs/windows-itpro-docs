@@ -31,8 +31,8 @@ Windows 10 prompts you for a BitLocker recovery password. However, you did not c
 
 The BitLocker and Active Directory Domain Services (AD DS) FAQ addresses situations that may produce this symptom, and provides information about how to resolve the issue:
 
-- [What if BitLocker is enabled on a computer before the computer has joined the domain?](./bitlocker-and-adds-faq.md#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain)
-- [What happens if the backup initially fails? Will BitLocker retry the backup?](./bitlocker-and-adds-faq.md)
+- [What if BitLocker is enabled on a computer before the computer has joined the domain?](./bitlocker-and-adds-faq.yml#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain)
+- [What happens if the backup initially fails? Will BitLocker retry the backup?](./)
 
 ## The recovery password for a laptop was not backed up, and the laptop is locked
 

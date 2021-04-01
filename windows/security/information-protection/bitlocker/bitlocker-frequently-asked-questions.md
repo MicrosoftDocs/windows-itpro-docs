@@ -30,7 +30,7 @@ This topic links to frequently asked questions about BitLocker. BitLocker is a d
 -   [Deployment and administration](bitlocker-deployment-and-administration-faq.yml)
 -   [Key management](bitlocker-key-management-faq.md)
 -   [BitLocker To Go](bitlocker-to-go-faq.yml)
--   [Active Directory Domain Services (AD DS)](bitlocker-and-adds-faq.md)
+-   [Active Directory Domain Services (AD DS)](bitlocker-and-adds-faq.yml)
 -   [Security](bitlocker-security-faq.md)
 -   [BitLocker Network Unlock](bitlocker-network-unlock-faq.md)
 -   [Using BitLocker with other programs and general questions](bitlocker-using-with-other-programs-faq.md)
