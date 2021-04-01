@@ -8,7 +8,7 @@
 #### [Deployment and administration](bitlocker\bitlocker-deployment-and-administration-faq.yml)
 #### [Key management](bitlocker\bitlocker-key-management-faq.md)
 #### [BitLocker To Go](bitlocker\bitlocker-to-go-faq.yml)
-#### [Active Directory Domain Services](bitlocker\bitlocker-and-adds-faq.md)
+#### [Active Directory Domain Services](bitlocker\bitlocker-and-adds-faq.yml)
 #### [Security](bitlocker\bitlocker-security-faq.md)
 #### [BitLocker Network Unlock](bitlocker\bitlocker-network-unlock-faq.md)
 #### [General](bitlocker\bitlocker-using-with-other-programs-faq.md)

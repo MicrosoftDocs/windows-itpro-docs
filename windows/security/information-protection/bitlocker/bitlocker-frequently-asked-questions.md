@@ -45,4 +45,4 @@ This topic links to frequently asked questions about BitLocker. BitLocker is a d
 -   [BitLocker: How to deploy on Windows Server 2012](bitlocker-how-to-deploy-on-windows-server.md)
 -   [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md)
 -   [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker-use-bitlocker-recovery-password-viewer.md)
--   [BitLocker Cmdlets in Windows PowerShell](/powershell/module/bitlocker/index?view=win10-ps)
+-   [BitLocker Cmdlets in Windows PowerShell](/powershell/module/bitlocker/index?view=win10-ps&preserve-view=true)

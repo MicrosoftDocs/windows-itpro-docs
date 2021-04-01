@@ -31,8 +31,9 @@ Windows 10 prompts you for a BitLocker recovery password. However, you did not c
 
 The BitLocker and Active Directory Domain Services (AD DS) FAQ addresses situations that may produce this symptom, and provides information about how to resolve the issue:
 
-- [What if BitLocker is enabled on a computer before the computer has joined the domain?](./bitlocker-and-adds-faq.yml#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain)
-- [What happens if the backup initially fails? Will BitLocker retry the backup?](./)
+- [What if BitLocker is enabled on a computer before the computer has joined the domain?](./bitlocker-and-adds-faq.yml#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain-)
+
+- [What happens if the backup initially fails? Will BitLocker retry the backup?](./bitlocker-and-adds-faq.yml)
 
 ## The recovery password for a laptop was not backed up, and the laptop is locked
 
@@ -201,9 +202,9 @@ To reset the PCR settings on the TPM, follow these steps:
 You can avoid this scenario when you install updates to system firmware or TPM firmware by temporarily suspending BitLocker before you apply such updates.
 
 > [!IMPORTANT]
-> TPM and UEFI firmware updates may require multiple restarts while they install. To keep BitLocker suspended during this process, you must use [Suspend-BitLocker](https://docs.microsoft.com/powershell/module/bitlocker/suspend-bitlocker?view=winserver2012r2-ps) and set the **Reboot Count** parameter to either of the following values:
+> TPM and UEFI firmware updates may require multiple restarts while they install. To keep BitLocker suspended during this process, you must use [Suspend-BitLocker](https://docs.microsoft.com/powershell/module/bitlocker/suspend-bitlocker?view=winserver2012r2-ps&preserve-view=true) and set the **Reboot Count** parameter to either of the following values:
 > - **2** or greater: This value sets the number of times the device can restart before BitLocker Device Encryption resumes.
-> - **0**: This value suspends BitLocker Drive Encryption indefinitely, until you use [Resume-BitLocker](https://docs.microsoft.com/powershell/module/bitlocker/resume-bitlocker?view=winserver2012r2-ps) or another mechanism to resume protection.
+> - **0**: This value suspends BitLocker Drive Encryption indefinitely, until you use [Resume-BitLocker](https://docs.microsoft.com/powershell/module/bitlocker/resume-bitlocker?view=winserver2012r2-ps&preserve-view=true) or another mechanism to resume protection.
 
 To suspend BitLocker while you install TPM or UEFI firmware updates:
 
