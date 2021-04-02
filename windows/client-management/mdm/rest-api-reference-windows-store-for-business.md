@@ -1,6 +1,6 @@
 ---
 title: REST API reference for Microsoft Store for Business
-description: REST API reference for Microsoft Store for Business
+description: Learn how the REST API reference for Microsoft Store for Business includes available operations and data structures.
 MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_portal\_management\_rest\_api\_reference'
 - 'p\_phDeviceMgmt.rest\_api\_reference\_windows\_store\_for\_Business'

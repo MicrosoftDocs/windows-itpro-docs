@@ -1,10 +1,10 @@
 ---
 title: Domain member Digitally encrypt secure channel data (when possible) (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Domain member Digitally encrypt secure channel data (when possible) security policy setting.
+description: Best practices, security considerations, and more for the security policy setting, Domain member Digitally encrypt secure channel data (when possible).
 ms.assetid: 73e6023e-0af3-4531-8238-82f0f0e4965b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Domain member: Digitally encrypt secure channel data (when possible)

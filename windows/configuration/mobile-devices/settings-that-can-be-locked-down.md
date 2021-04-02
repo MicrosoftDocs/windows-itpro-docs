@@ -1,5 +1,5 @@
 ---
-title: Settings and quick actions that can be locked down in Windows 10 Mobile (Windows 10)
+title: Lock down settings and quick actions in Windows 10 Mobile
 description: This topic lists the settings and quick actions that can be locked down in Windows 10 Mobile.
 ms.assetid: 69E2F202-D32B-4FAC-A83D-C3051DF02185
 ms.reviewer: 
@@ -31,7 +31,7 @@ In earlier versions of Windows 10, you used the page name to define allowed sett
 
 For example, in place of **SettingsPageDisplay**, you would use **ms-settings:display**.
 
-See the [ms-settings: URI scheme reference](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to find the URI for each Settings page.
+See the [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to find the URI for each Settings page.
 
 ## Settings lockdown in Windows 10, version 1607 and earlier
 
@@ -497,8 +497,3 @@ You can specify the quick actions as follows:
  
 
  
-
-
-
-
-

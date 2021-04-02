@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Storage
-description: Policy CSP - Storage
+description: Learn to use the Policy CSP - Storage settings to automatically clean some of the user’s files to free up disk space.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -721,7 +721,7 @@ ADMX Info:
 Example for setting the device custom OMA-URI setting to enable this policy:  
 To deny write access to removable storage within Intune’s custom profile, set OMA-URI to ```.\[device|user]\vendor\msft\policy\[config|result]\Storage/RemovableDiskDenyWriteAccess```, Data type to Integer, and Value to 1.
 
-See [Use custom settings for Windows 10 devices in Intune](https://docs.microsoft.com/intune/custom-settings-windows-10) for information on how to create custom profiles.
+See [Use custom settings for Windows 10 devices in Intune](/intune/custom-settings-windows-10) for information on how to create custom profiles.
 <!--/Example-->
 <!--Validation-->
 
@@ -731,12 +731,13 @@ See [Use custom settings for Windows 10 devices in Intune](https://docs.microsof
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

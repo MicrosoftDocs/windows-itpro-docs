@@ -1,10 +1,10 @@
 ---
 title: Allow log on through Remote Desktop Services (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Allow log on through Remote Desktop Services security policy setting.
+description: Best practices, location, values, policy management, and security considerations for the security policy setting, Allow log on through Remote Desktop Services.
 ms.assetid: 6267c376-8199-4f2b-ae56-9c5424e76798
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Allow log on through Remote Desktop Services
@@ -52,7 +53,8 @@ The following table lists the actual and effective default policy values. Defaul
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy | Not Defined |
-| Default Domain Controller Policy | Administrators |
+| Default Domain Controller Policy | Not Defined |
+| Domain Controller Local Security Policy | Administrators |
 | Stand-Alone Server Default Settings | Administrators<br>Remote Desktop Users | 
 | Domain Controller Effective Default Settings | Administrators | 
 | Member Server Effective Default Settings | Administrators<br>Remote Desktop Users |

@@ -28,7 +28,7 @@ Here's the list of the available capabilities:
 -   Custom Line of Business app support –Enables management and distribution of enterprise applications through the Store for Business.
 -   Support for Windows desktop and mobile devices - The Store for Business supports both desktop and mobile devices.
 
-For additional information about Store for Business, see the TechNet topics in [Microsoft Store for Business](https://technet.microsoft.com/library/mt606951.aspx).
+For additional information about Store for Business, see the TechNet topics in [Microsoft Store for Business](/microsoft-store/).
 
 ## Management services
 
@@ -74,14 +74,14 @@ The Store for Business services rely on Azure Active Directory for authenticatio
 To learn more about Azure AD and how to register your application within Azure AD, here are some topics to get you started:
 
 -   Adding an application to Azure Active Directory - [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md)
--   Accessing other Web applications and configuring your application to access other APIs - [Integrating Applications with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=623021)
--   Authenticating to the Store for Business services via Azure AD - [Authentication Scenarios for Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=623023)
+-   Accessing other Web applications and configuring your application to access other APIs - [Integrating Applications with Azure Active Directory](/azure/active-directory/develop/quickstart-register-app)
+-   Authenticating to the Store for Business services via Azure AD - [Authentication Scenarios for Azure Active Directory](/azure/active-directory/develop/authentication-vs-authorization)
 
 For code samples, see [Microsoft Azure Active Directory Samples and Documentation](https://go.microsoft.com/fwlink/p/?LinkId=623024) in GitHub. Patterns are very similar to [Daemon-DotNet](https://go.microsoft.com/fwlink/p/?LinkId=623025) and [ConsoleApp-GraphAPI-DotNet](https://go.microsoft.com/fwlink/p/?LinkId=623026).
 
 ## Configure your Azure AD application
 
-See [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) for the steps to configure your Azure AD app. 
+See [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) for the steps to configure your Azure AD app. 
 
 ## Azure AD Authentication for MTS
 
@@ -121,10 +121,4 @@ The diagram below shows the call patterns for acquiring a new or updated applica
 -   [Reclaim seat from user](reclaim-seat-from-user.md)
 -   [Bulk assign and reclaim seats for users](bulk-assign-and-reclaim-seats-from-user.md)
 -   [Get seats assigned to a user](get-seats-assigned-to-a-user.md)
-
- 
-
-
-
-
 

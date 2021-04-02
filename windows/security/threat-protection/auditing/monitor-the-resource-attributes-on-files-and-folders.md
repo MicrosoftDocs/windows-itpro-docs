@@ -1,10 +1,10 @@
 ---
 title: Monitor the resource attributes on files and folders (Windows 10)
-description: This topic for the IT professional describes how to monitor attempts to change settings to the resource attributes on files when you are using advanced security auditing options to monitor dynamic access control objects.
+description: Learn how to use advanced security auditing options to monitor attempts to change settings on the resource attributes of files.
 ms.assetid: 4944097b-320f-44c7-88ed-bf55946a358b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Monitor the resource attributes on files and folders
@@ -30,7 +31,7 @@ If your organization has a carefully thought out authorization configuration for
 -   Changing the Retention attribute of files that have been marked for retention.
 -   Changing the Department attribute of files that are marked as belonging to a particular department.
 
-Use the following procedures to configure settings to monitor changes to resource attributes on files and folders. These procedures assume that have configured and deployed central access policies in your network. For more information about how to configure and deploy central access policies, see [Dynamic Access Control: Scenario Overview](https://technet.microsoft.com/library/hh831717.aspx) .
+Use the following procedures to configure settings to monitor changes to resource attributes on files and folders. These procedures assume that have configured and deployed central access policies in your network. For more information about how to configure and deploy central access policies, see [Dynamic Access Control: Scenario Overview](/windows-server/identity/solution-guides/dynamic-access-control--scenario-overview) .
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
  

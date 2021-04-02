@@ -1,6 +1,6 @@
 ---
 title: BitLocker Key Management FAQ (Windows 10)
-description: This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
+description: Browse frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
 ms.reviewer: 
 ms.prod: w10
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
+ms.custom: bitlocker
 ---
 
 # BitLocker Key Management FAQ
@@ -51,7 +52,7 @@ You can use the Manage-bde.exe command-line tool to replace your TPM-only authen
 
 ## When should an additional method of authentication be considered?
 
-New hardware that meets [Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/) requirements make a PIN less critical as a mitigation, and having a TPM-only protector is likely sufficient when combined with policies like device lockout. For example, Surface Pro and Surface Book do not have external DMA ports to attack. 
+New hardware that meets [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) requirements make a PIN less critical as a mitigation, and having a TPM-only protector is likely sufficient when combined with policies like device lockout. For example, Surface Pro and Surface Book do not have external DMA ports to attack. 
 For older hardware, where a PIN may be needed, it’s recommended to enable [enhanced PINs](bitlocker-group-policy-settings.md#bkmk-unlockpol2) that allow non-numeric characters such as letters and punctuation marks, and to set the PIN length based on your risk tolerance and the hardware anti-hammering capabilities available to the TPMs in your computers. 
 
 ## If I lose my recovery information, will the BitLocker-protected data be unrecoverable?
@@ -121,4 +122,3 @@ The following questions can assist you when asking a TPM manufacturer about the 
 Yes and No. You can configure the minimum personal identification number (PIN) length by using the **Configure minimum PIN length for startup** Group Policy setting and allow the use of alphanumeric PINs by enabling the **Allow enhanced PINs for startup** Group Policy setting. However, you cannot require PIN complexity by Group Policy.
 
 For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
-

@@ -51,7 +51,8 @@
         "jborsecnik",
         "tiburd",
         "garycentric"
-      ]
+      ],
+      "titleSuffix": "Surface Hub"
     },
     "externalReference": [],
     "template": "op.html",

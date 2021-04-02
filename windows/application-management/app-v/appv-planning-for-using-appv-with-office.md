@@ -1,7 +1,7 @@
 ---
 title: Planning for Deploying App-V with Office (Windows 10)
-description: Planning for Using App-V with Office
-author: lomayor
+description: Use the information in this article to plan how to deploy Office within Microsoft Application Virtualization (App-V).
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -30,7 +30,7 @@ You can use the App-V Sequencer to create plug-in packages for language packs, l
 For a list of supported Office products, see [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click).
 
 >[!NOTE]
->You must use the Office Deployment Tool instead of the App-V Sequencer to create App-V packages for Office 365 ProPlus. App-V does not support package creation for volume-licensed versions of Office Professional Plus or Office Standard. Support for the [Office 2013 version of Office 365 ended in February 2017](https://support.microsoft.com/kb/3199744).
+>You must use the Office Deployment Tool instead of the App-V Sequencer to create App-V packages for Microsoft 365 Apps for enterprise. App-V does not support package creation for volume-licensed versions of Office Professional Plus or Office Standard. Support for the [Office 2013 version of Office 365 ended in February 2017](https://support.microsoft.com/kb/3199744).
 
 ## Using App-V with coexisting versions of Office
 

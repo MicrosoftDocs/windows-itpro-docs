@@ -1,6 +1,6 @@
 ---
 title: Plan for Windows 10 deployment (Windows 10)
-description: Windows 10 provides new deployment capabilities, scenarios, and tools by building on technologies introduced in Windows 7, and Windows 8.1, while at the same time introducing new Windows as a service concepts to keep the operating system up to date.
+description: Find resources for your Windows 10 deployment. Windows 10 provides new deployment capabilities and tools, and introduces new ways to keep the OS up to date. 
 ms.assetid: 002F9B79-B50F-40C5-A7A5-0B4770E6EC15
 keywords: deploy, upgrade, update, configure
 ms.prod: w10
@@ -27,9 +27,9 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 
 ## Related topics
 - [Windows 10 servicing options for updates and upgrades](../update/index.md)
-- [Deploy Windows 10 with MDT 2013 Update 1](../deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
-- [Deploy Windows 10 with Configuration Manager and MDT 2013 Update 1](../deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
-- [Upgrade to Windows 10 with MDT 2013 Update 1](../upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
-- [Upgrade to Windows 10 with Configuration Manager](../upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
-- [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=733911)
+- [Deploy Windows 10 with MDT](../deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
+- [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
+- [Upgrade to Windows 10 with MDT](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
+- [Upgrade to Windows 10 with Configuration Manager](../deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md)
+- [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd)
  

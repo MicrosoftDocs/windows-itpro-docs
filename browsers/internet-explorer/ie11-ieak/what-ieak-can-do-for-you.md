@@ -9,13 +9,17 @@ ms.manager: elizapo
 ms.prod: ie11
 ms.assetid: 
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 title: What IEAK can do for you
 ms.sitesec: library
 ms.date: 05/10/2018
 ---
 
 # What IEAK can do for you
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 Internet Explorer Administration Kit (IEAK) helps corporations, Internet service providers (ISPs), Internet content providers (ICPs), and independent software vendors (ISVs) to deploy and manage web-based solutions. 
 
@@ -32,8 +36,8 @@ IEAK 10 and newer includes the ability to install using one of the following ins
 - Internal
 - External
 
->[!NOTE]
->IEAK 11 works in network environments, with or without Microsoft Active Directory service.
+> [!NOTE]
+> IEAK 11 works in network environments, with or without Microsoft Active Directory service.
 
 
 ### Corporations
@@ -61,8 +65,8 @@ ISVs install IEAK using External mode (for Internet Explorer 10 or newer) or Int
 - [IEAK 11 - Frequently Asked Questions](../ie11-faq/faq-ieak11.md)
 - [Download IEAK 11](ieak-information-and-downloads.md) 
 - [IEAK 11 overview](index.md)
-- [IEAK 11 administrators guide](https://docs.microsoft.com/internet-explorer/ie11-ieak/index)
+- [IEAK 11 administrators guide](./index.md)
 - [IEAK 11 licensing guidelines](licensing-version-and-features-ieak11.md)
 - [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.md)
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
-- [Microsoft Edge - Deployment Guide for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760643)
+- [Microsoft Edge - Deployment Guide for IT Pros](/microsoft-edge/deploy/)

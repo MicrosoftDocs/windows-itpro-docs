@@ -21,7 +21,8 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.gif"
+          "**/*.gif",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -33,7 +34,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
-      "ms.technology": "windows",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.topic": "article",
       "manager": "dansimp",
       "audience": "ITPro",
@@ -45,9 +46,24 @@
           "depot_name": "MSDN.security",
           "folder_relative_path_in_docset": "./"
         }
+      },
+      "titleSuffix": "Microsoft 365 Security",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+      "searchScope": ["Windows 10"]
+    },
+    "fileMetadata": {
+      "titleSuffix":{
+        "threat-protection/**/*.md": "Windows security"
       }
     },
-    "fileMetadata": {},
     "template": [],
     "dest": "security",
     "markdownEngineName": "markdig"

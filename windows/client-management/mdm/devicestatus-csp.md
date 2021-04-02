@@ -1,6 +1,6 @@
 ---
 title: DeviceStatus CSP
-description: The DeviceStatus configuration service provider is used by the enterprise to keep track of device inventory and query the state of compliance of these devices with their enterprise policies.
+description: The DeviceStatus configuration service provider keeps track of device inventory and queries the compliance state of devices within the enterprise.
 ms.assetid: 039B2010-9290-4A6E-B77B-B2469B482360
 ms.reviewer: 
 manager: dansimp
@@ -17,10 +17,52 @@ ms.date: 04/30/2019
 
 The DeviceStatus configuration service provider is used by the enterprise to keep track of device inventory and query the state of compliance of these devices with their enterprise policies.
 
-The following image shows the DeviceStatus configuration service provider in tree format.
-
-![devicestatus csp](images/provisioning-csp-devicestatus.png)
-
+The following shows the DeviceStatus configuration service provider in tree format.
+```
+./Vendor/MSFT
+DeviceStatus
+----SecureBootState
+----CellularIdentities
+--------IMEI
+------------IMSI
+------------ICCID
+------------PhoneNumber
+------------CommercializationOperator
+------------RoamingStatus
+------------RoamingCompliance
+----NetworkIdentifiers
+--------MacAddress
+------------IPAddressV4
+------------IPAddressV6
+------------IsConnected
+------------Type
+----Compliance
+--------EncryptionCompliance
+----TPM
+--------SpecificationVersion
+----OS
+--------Edition
+--------Mode
+----Antivirus
+--------SignatureStatus
+--------Status
+----Antispyware
+--------SignatureStatus
+--------Status
+----Firewall
+--------Status
+----UAC
+--------Status
+----Battery
+--------Status
+--------EstimatedChargeRemaining
+--------EstimatedRuntime
+----DomainName
+----DeviceGuard
+--------VirtualizationBasedSecurityHwReq
+--------VirtualizationBasedSecurityStatus
+--------LsaCfgCredGuardStatus
+```
 <a href="" id="devicestatus"></a>**DeviceStatus**  
 The root node for the DeviceStatus configuration service provider.
 
@@ -36,9 +78,8 @@ Supported operation is Get.
 <a href="" id="devicestatus-cellularidentities"></a>**DeviceStatus/CellularIdentities**  
 Required. Node for queries on the SIM cards.
 
-> **Note**  Multiple SIMs are supported.
-
- 
+>[!NOTE]
+>Multiple SIMs are supported.
 
 <a href="" id="devicestatus-cellularidentities-imei"></a>**DeviceStatus/CellularIdentities/**<strong>*IMEI*</strong>  
 The unique International Mobile Station Equipment Identity (IMEI) number of the mobile device. An IMEI is present for each SIM card on the device.
@@ -107,7 +148,7 @@ Supported operation is Get.
 Node for the compliance query.
 
 <a href="" id="devicestatus-compliance-encryptioncompliance"></a>**DeviceStatus/Compliance/EncryptionCompliance**  
-Boolean value that indicates compliance with the enterprise encryption policy. The value is one of the following:
+Boolean value that indicates compliance with the enterprise encryption policy for OS (system) drives. The value is one of the following:
 
 -   0 - not encrypted
 -   1 - encrypted
@@ -251,14 +292,14 @@ Added in Windows, version 1607. Integer that specifies the status of the batter
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery-estimatedchargeremaining"></a>**DeviceStatus/Battery/EstimatedChargeRemaining**  
-Added in Windows, version 1607. Integer that specifies the estimated battery charge remaining. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](https://msdn.microsoft.com/library/windows/desktop/aa373232.aspx).
+Added in Windows, version 1607. Integer that specifies the estimated battery charge remaining. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](/windows/win32/api/winbase/ns-winbase-system_power_status).
 
 The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery-estimatedruntime"></a>**DeviceStatus/Battery/EstimatedRuntime**  
-Added in Windows, version 1607. Integer that specifies the estimated runtime of the battery. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](https://msdn.microsoft.com/library/windows/desktop/aa373232.aspx).
+Added in Windows, version 1607. Integer that specifies the estimated runtime of the battery. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](/windows/win32/api/winbase/ns-winbase-system_power_status).
 
 The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 
@@ -309,8 +350,3 @@ Added in Windows, version 1709. Local System Authority (LSA) credential guard s
 
 
 Supported operation is Get.
-
-
-
-
-

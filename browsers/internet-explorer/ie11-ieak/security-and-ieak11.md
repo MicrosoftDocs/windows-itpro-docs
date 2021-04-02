@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Security features and IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Use Internet Explorer in conjunction with your new and existing security measures, to make sure the computers in your company aren’t compromised while on the Internet.
 
 ## Enhanced Protection Mode
@@ -35,21 +38,21 @@ Because of this, the custom .cab files created by the Internet Explorer Customiz
 ### Understanding digital certificates
 To sign your package and custom programs digitally, you must first obtain a digital certificate. You can obtain a certificate from a certification authority or a privately-controlled certificate server. For more info about obtaining certificates or setting up a certificate server, see the following:
 
--   Microsoft-trusted certification authorities ([Windows root certificate program requirements](https://go.microsoft.com/fwlink/p/?LinkId=759697)).
+-   Microsoft-trusted certification authorities ([Windows root certificate program requirements](/previous-versions//cc751157(v=technet.10))).
 
--   Certificates overview documentation ([Certificates](https://go.microsoft.com/fwlink/p/?LinkId=759698)).
+-   Certificates overview documentation ([Certificates](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732331(v=ws.11))).
 
--   Microsoft Active Directory Certificate Services ( [Active Directory Certificate Services](https://go.microsoft.com/fwlink/p/?LinkId=259521)).
+-   Microsoft Active Directory Certificate Services ( [Active Directory Certificate Services](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732625(v=ws.11))).
 
--   Enterprise public key infrastructure (PKI) snap-in documentation ([Enterprise PKI](https://go.microsoft.com/fwlink/p/?LinkId=259526)).
+-   Enterprise public key infrastructure (PKI) snap-in documentation ([Enterprise PKI](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771400(v=ws.11))).
 
 After you get a certificate, you should note the public and private keys, which are a matched set of keys that are created by the software publisher for encryption and decryption. They are generated on your device at the time the certificate is requested, and your private key is never sent to the certification authority or any other party.
 
 ### Understanding code signing
 Code signing varies, depening on how you plan to distribute your custom install package.
 
--   **If you plan to distribute custom packages over the Internet**, you must sign all custom components and the CMAK profile package (if used). Before you start the Internet Explorer Customization Wizard, make sure that both are signed. Typically, their respective manufacturers will have signed them. Otherwise, you can sign these using the Sign Tool (SignTool.exe) ( [SignTool.exe (Sign Tool)](https://go.microsoft.com/fwlink/p/?LinkId=71298)) or use the File Signing Tool (Signcode.exe) ([Signcode.exe (File Signing Tool)](https://go.microsoft.com/fwlink/p/?LinkId=71299)). You should read the documentation included with these tools for more info about all of the signing options.<p>
-In addition, after you run the Internet Explorer Customization Wizard, we highly recommend that you sign the IEAK package and the branding.cab file (if you are using it separately from the package). You can do this also using the tools mentioned above. For more information, download Code-Signing Best Practices ([Code-Signing Best Practices](https://go.microsoft.com/fwlink/p/?LinkId=71300)).
+-   **If you plan to distribute custom packages over the Internet**, you must sign all custom components and the CMAK profile package (if used). Before you start the Internet Explorer Customization Wizard, make sure that both are signed. Typically, their respective manufacturers will have signed them. Otherwise, you can sign these using the Sign Tool (SignTool.exe) ( [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe)) or use the File Signing Tool (Signcode.exe) ([Signcode.exe (File Signing Tool)](/previous-versions/9sh96ycy(v=vs.100))). You should read the documentation included with these tools for more info about all of the signing options.<p>
+In addition, after you run the Internet Explorer Customization Wizard, we highly recommend that you sign the IEAK package and the branding.cab file (if you are using it separately from the package). You can do this also using the tools mentioned above. For more information, download Code-Signing Best Practices ([Code-Signing Best Practices](/previous-versions/windows/hardware/design/dn653556(v=vs.85))).
 
 -   **If you plan to distribute your custom packages over an intranet**, sign the custom files or preconfigure the Local intranet zone with a Low security setting, because the default security setting does not allow users to download unsigned programs or code.
 
@@ -63,4 +66,3 @@ You must keep your private key, private. To do this, we recommend:
 -   **Tamper-proof storage.** Save your private keys on secure, tamper-proof hardware devices.
 
 -   **Security.** Protect your private keys using physical security measures, such as cameras and card readers.
-

@@ -2,7 +2,7 @@
 title: 5070(S, F) A cryptographic function property modification was attempted. (Windows 10)
 description: Describes security event 5070(S, F) A cryptographic function property modification was attempted.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5070(S, F): A cryptographic function property modification was attempted.
@@ -20,7 +21,7 @@ ms.author: dansimp
 -   Windows Server 2016
 
 
-This event generates in [BCryptSetContextFunctionProperty](https://msdn.microsoft.com/library/windows/desktop/Aa375501(v=VS.85).aspx)() function. This is a Cryptographic Next Generation (CNG) function.
+This event generates in [BCryptSetContextFunctionProperty](/windows/win32/api/bcrypt/nf-bcrypt-bcryptsetcontextfunctionproperty)() function. This is a Cryptographic Next Generation (CNG) function.
 
 This event generates when named property for a cryptographic function in an existing CNG context was updated.
 
@@ -28,9 +29,9 @@ For more information about Cryptographic Next Generation (CNG) visit these pages
 
 -   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
 
--   <http://www.microsoft.com/en-us/download/details.aspx?id=1251>
+-   <https://www.microsoft.com/download/details.aspx?id=1251>
 
--   <http://www.microsoft.com/en-us/download/details.aspx?id=30688>
+-   <https://www.microsoft.com/download/details.aspx?id=30688>
 
 This event is mainly used for Cryptographic Next Generation (CNG) troubleshooting.
 
@@ -81,4 +82,3 @@ Return Code:%12
 ## Security Monitoring Recommendations
 
 -   Typically this event is required for detailed monitoring of CNG-related cryptographic functions. If you need to monitor or troubleshoot actions related to specific cryptographic functions, review this event to see if it provides the information you need.
-

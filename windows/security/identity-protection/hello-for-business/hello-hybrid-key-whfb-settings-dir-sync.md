@@ -1,6 +1,6 @@
 ---
-title: Configuring Hybrid key trust Windows Hello for Business - Directory Synchronization
-description: Configuring Hybrid key trust Windows Hello for Business - Directory Synchronization
+title: Hybrid Windows Hello for Business - Directory Synchronization
+description: How to configure Hybrid key trust Windows Hello for Business - Directory Synchronization
 keywords: identity, PIN, biometric, Hello, passport, WHFB, dirsync, connect, Windows Hello, AD Connect, key trust, key-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -29,7 +29,7 @@ In hybrid deployments, users register the public portion of their Windows Hello 
 
 ### Group Memberships for the Azure AD Connect Service Account
 >[!IMPORTANT]
-> If you already have a Windows Server 2016 domain controller in your domain, you can skip **Configure Permissions for Key Synchronization**. For more detail see [Configure Hybrid Windows Hello for Business: Directory Synchronization](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-dir-sync).
+> If you already have a Windows Server 2016 domain controller in your domain, you can skip **Configure Permissions for Key Synchronization**. For more detail see [Configure Hybrid Windows Hello for Business: Directory Synchronization](./hello-hybrid-cert-whfb-settings-dir-sync.md).
 
 The KeyAdmins global group provides the Azure AD Connect service with the permissions needed to read and write the public key to Active Directory.  
 
@@ -39,7 +39,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 2. Click the **Users** container in the navigation pane.
 3. Right-click **Key Admins** in the details pane and click **Properties**.
 4. Click the **Members** tab and click **Add**
-5. In the **Enter the object names to select** text box, type the name of the Azure AD Connect service account.  Click **OK**.
+5. In the **Enter the object names to select** text box, type the name of the service account used as an AD DS Connector account and click **OK**.
 6. Click **OK** to return to **Active Directory Users and Computers**.
 
 ### Section Review
@@ -47,9 +47,9 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 > [!div class="checklist"]
 > * Configure group membership for Azure AD Connect
 
->[!div class="step-by-step"]
-[< Configure Active Directory](hello-hybrid-key-whfb-settings-ad.md)
-[Configure PKI >](hello-hybrid-key-whfb-settings-pki.md)  
+> [!div class="step-by-step"]
+> [< Configure Active Directory](hello-hybrid-key-whfb-settings-ad.md)
+> [Configure PKI >](hello-hybrid-key-whfb-settings-pki.md)  
 
 <hr>
 

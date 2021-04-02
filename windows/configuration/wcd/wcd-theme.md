@@ -34,4 +34,4 @@ Select between **Light** and **Dark** for theme.
 
 ## Related topics
 
-- [Themes and accent colors](https://msdn.microsoft.com/library/windows/hardware/dn772323(v=vs.85).aspx)
+- [Themes and accent colors](/previous-versions//dn772323(v=vs.85))

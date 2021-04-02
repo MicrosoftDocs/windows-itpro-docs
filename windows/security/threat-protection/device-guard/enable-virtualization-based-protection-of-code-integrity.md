@@ -1,7 +1,7 @@
 ---
-title: Enable virtualization-based protection of code integrity 
-description: This article explains the steps to opt in to using HVCI on Windows devices. 
-ms.prod: w10
+title: Enable virtualization-based protection of code integrity
+description: This article explains the steps to opt in to using HVCI on Windows devices.
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,29 +12,25 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/01/2019
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Enable virtualization-based protection of code integrity
 
-**Applies to**  
-
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 This topic covers different ways to enable Hypervisor-protected code integrity (HVCI) on Windows 10.
 Some applications, including device drivers, may be incompatible with HVCI.
 This can cause devices or software to malfunction and in rare cases may result in a blue screen. Such issues may occur after HVCI has been turned on or during the enablement process itself.
 If this happens, see [Troubleshooting](#troubleshooting) for remediation steps.
 
->[!NOTE]
->HVCI works with modern 7th gen CPUs or higher and its equivalent on AMD. CPU new feature is required *Mode based execution control (MBE) Virtualization*. AMD CPUs do not have MBE.
-
->[!TIP]
-> "The Secure Kernel relies on the Mode-Based Execution Control (MBEC) feature, if present in hardware, which enhances the SLAT with a user/kernel executable bit, or the hypervisor’s software emulation of this feature, called Restricted User Mode (RUM)." Mark Russinovich and Alex Ionescu. Windows Internals 7th Edition book
+> [!NOTE]
+> Because it makes use of *Mode Based Execution Control*, HVCI works better with Intel Kaby Lake or AMD Zen 2 CPUs and newer. Processors without MBEC will rely on an emulation of this feature, called *Restricted User Mode*, which has a bigger impact on performance.
 
 ## HVCI Features
 
-* HVCI protects modification of the Code Flow Guard (CFG) bitmap.
-* HVCI also ensure your other Truslets, like Credential Guard have a valid certificate.
+* HVCI protects modification of the Control Flow Guard (CFG) bitmap.
+* HVCI also ensures that your other trusted processes, like Credential Guard, have got a valid certificate.
 * Modern device drivers must also have an EV (Extended Validation) certificate and should support HVCI.
 
 ## How to turn on HVCI in Windows 10
@@ -43,7 +39,7 @@ To enable HVCI on Windows 10 devices with supporting hardware throughout an ente
 - [Windows Security app](#windows-security-app)
 - [Microsoft Intune (or another MDM provider)](#enable-hvci-using-intune)
 - [Group Policy](#enable-hvci-using-group-policy)
-- [System Center Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
+- [Microsoft Endpoint Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
 - [Registry](#use-registry-keys-to-enable-virtualization-based-protection-of-code-integrity)
 
 ### Windows Security app
@@ -52,12 +48,12 @@ HVCI is labeled **Memory integrity** in the Windows Security app and it can be a
 
 ### Enable HVCI using Intune
 
-Enabling in Intune requires using the Code Integrity node in the [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).
+Enabling in Intune requires using the Code Integrity node in the [AppLocker CSP](/windows/client-management/mdm/applocker-csp).
 
 ### Enable HVCI using Group Policy
 
 1. Use Group Policy Editor (gpedit.msc) to either edit an existing GPO or create a new one.
-2. Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard**.  
+2. Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard**.
 3. Double-click **Turn on Virtualization Based Security**.
 4. Click **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled with UEFI lock** to ensure HVCI cannot be disabled remotely or select **Enabled without UEFI lock**.
 
@@ -201,7 +197,7 @@ Value | Description
 **5.** | If present, NX protections are available.
 **6.** | If present, SMM mitigations are available.
 **7.** | If present, Mode Based Execution Control is available.
-
+**8.** | If present, APIC virtualization is available.
 
 #### InstanceIdentifier
 
@@ -232,6 +228,7 @@ Value | Description
 **1.** | If present, Windows Defender Credential Guard is configured.
 **2.** | If present, HVCI is configured.
 **3.** | If present, System Guard Secure Launch is configured.
+**4.** | If present, SMM Firmware Measurement is configured.
 
 #### SecurityServicesRunning
 
@@ -243,6 +240,7 @@ Value | Description
 **1.** | If present, Windows Defender Credential Guard is running.
 **2.** | If present, HVCI is running.
 **3.** | If present, System Guard Secure Launch is running.
+**4.** | If present, SMM Firmware Measurement is running.
 
 #### Version
 
@@ -272,7 +270,7 @@ A. If a device driver fails to load or crashes at runtime, you may be able to up
 
 B. If you experience software or device malfunction after using the above procedure to turn on HVCI, but you are able to log in to Windows, you can turn off HVCI by renaming or deleting the SIPolicy.p7b file from the file location in step 3 above and then restart your device.
 
-C. If you experience a critical error during boot or your system is unstable after using the above procedure to turn on HVCI, you can recover using the Windows Recovery Environment (Windows RE). To boot to Windows RE, see [Windows RE Technical Reference](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). After logging in to Windows RE, you can turn off HVCI by renaming or deleting the SIPolicy.p7b file from the file location in step 3 above and then restart your device.
+C. If you experience a critical error during boot or your system is unstable after using the above procedure to turn on HVCI, you can recover using the Windows Recovery Environment (Windows RE). To boot to Windows RE, see [Windows RE Technical Reference](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). After logging in to Windows RE, you can turn off HVCI by renaming or deleting the SIPolicy.p7b file from the file location in step 3 above and then restart your device.
 
 ## How to turn off HVCI
 
@@ -293,9 +291,9 @@ WDAC protects against malware running in the guest virtual machine. It does not 
 Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 ```
 
-### Requirements for running HVCI in Hyper-V virtual machines 
+### Requirements for running HVCI in Hyper-V virtual machines
 -   The Hyper-V host must run at least Windows Server 2016 or Windows 10 version 1607.
--   The Hyper-V virtual machine must be Generation 2, and running at least Windows Server 2016 or Windows 10. 
--   HVCI and [nested virtualization](https://docs.microsoft.com/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time
+-   The Hyper-V virtual machine must be Generation 2, and running at least Windows Server 2016 or Windows 10.
+-   HVCI and [nested virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time
 -   Virtual Fibre Channel adapters are not compatible with HVCI. Before attaching a virtual Fibre Channel Adapter to a virtual machine, you must first opt out of virtualization-based security using `Set-VMSecurity`.
 -   The AllowFullSCSICommandSet option for pass-through disks is not compatible with HVCI. Before configuring a pass-through disk with AllowFullSCSICommandSet, you must first opt out of virtualization-based security using `Set-VMSecurity`.

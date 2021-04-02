@@ -2,7 +2,7 @@
 title: Windows 10 - Apps
 ms.reviewer: 
 manager: dansimp
-description: What are Windows, UWP, and Win32 apps
+description: Use this article to understand the different types of apps that run on Windows 10, such as UWP and Win32 apps.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -31,64 +31,61 @@ The following tables list the system apps, installed Windows apps, and provision
 
 Some of the apps show up in multiple tables - that's because their status changed between versions. Make sure to check the version column for the version you are currently running.
 
-
 ## Provisioned Windows apps
 
-Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 and 1809.
+You can list all provisioned Windows apps with this PowerShell command:
 
-> [!TIP]
-> You can list all provisioned Windows apps with this PowerShell command:
-> ```
-> Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
-> ```
+```Powershell
+Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
+```
 
-<br>
+Here are the provisioned Windows apps in Windows 10 versions 1803, 1809, 1903, 1909, and 2004.
 
-| Package name                           | App name                                                                                                           | 1703 | 1709 | 1803 | 1809 | Uninstall through UI? |
-|----------------------------------------|--------------------------------------------------------------------------------------------------------------------|:----:|:----:|:----:|:----:|:---------------------:|
-| Microsoft.3DBuilder                    | [3D Builder](ms-windows-store://pdp/?PFN=Microsoft.3DBuilder_8wekyb3d8bbwe)                                        | x    |      |      |      | Yes                   |
-| Microsoft.BingWeather                  | [MSN Weather](ms-windows-store://pdp/?PFN=Microsoft.BingWeather_8wekyb3d8bbwe)                                     | x    | x    | x    | x    | Yes                   |
-| Microsoft.DesktopAppInstaller          | [App Installer](ms-windows-store://pdp/?PFN=Microsoft.DesktopAppInstaller_8wekyb3d8bbwe)                           | x    | x    | x    | x    | Via Settings App      |
-| Microsoft.GetHelp                      | [Get Help](ms-windows-store://pdp/?PFN=Microsoft.Gethelp_8wekyb3d8bbwe)                                            |      | x    | x    | x    | No                    |
-| Microsoft.Getstarted                   | [Microsoft Tips](ms-windows-store://pdp/?PFN=Microsoft.Getstarted_8wekyb3d8bbwe)                                   | x    | x    | x    | x    | No                    |
-| Microsoft.HEIFImageExtension           | [HEIF Image Extensions](ms-windows-store://pdp/?PFN=Microsoft.HEIFImageExtension_8wekyb3d8bbwe)                    |      |      |      | x    | No                    |
-| Microsoft.Messaging                    | [Microsoft Messaging](ms-windows-store://pdp/?PFN=Microsoft.Messaging_8wekyb3d8bbwe)                               | x    | x    | x    | x    | No                    |
-| Microsoft.Microsoft3DViewer            | [Mixed Reality Viewer](ms-windows-store://pdp/?PFN=Microsoft.Microsoft3DViewer_8wekyb3d8bbwe)                      | x    | x    | x    | x    | No                    |
-| Microsoft.MicrosoftOfficeHub           | [My Office](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe)                                | x    | x    | x    | x    | Yes                   |
-| Microsoft.MicrosoftSolitaireCollection | [Microsoft Solitaire Collection](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe) | x    | x    | x    | x    | Yes                   |
-| Microsoft.MicrosoftStickyNotes         | [Microsoft Sticky Notes](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe)                 | x    | x    | x    | x    | No                    |
-| Microsoft.MixedReality.Portal          | [Mixed Reality Portal](ms-windows-store://pdp/?PFN=Microsoft.MixedReality.Portal_8wekyb3d8bbwe)                    |      |      |      | x    | No                    |
-| Microsoft.MSPaint                      | [Paint 3D](ms-windows-store://pdp/?PFN=Microsoft.MSPaint_8wekyb3d8bbwe)                                            | x    | x    | x    | x    | No                    |
-| Microsoft.Office.OneNote               | [OneNote](ms-windows-store://pdp/?PFN=Microsoft.Office.OneNote_8wekyb3d8bbwe)                                      | x    | x    | x    | x    | Yes                   |
-| Microsoft.OneConnect                   | [Paid Wi-Fi & Cellular](ms-windows-store://pdp/?PFN=Microsoft.OneConnect_8wekyb3d8bbwe)                            | x    | x    | x    | x    | No                    |
-| Microsoft.People                       | [Microsoft People](ms-windows-store://pdp/?PFN=Microsoft.People_8wekyb3d8bbwe)                                     | x    | x    | x    | x    | No                    |
-| Microsoft.Print3D                      | [Print 3D](ms-windows-store://pdp/?PFN=Microsoft.Print3D_8wekyb3d8bbwe)                                            |      | x    | x    | x    | No                    |
-| Microsoft.ScreenSketch                 | [Snip & Sketch](ms-windows-store://pdp/?PFN=Microsoft.ScreenSketch_8wekyb3d8bbwe)                                  |      |      |      | x    | No                    |
-| Microsoft.SkypeApp                     | [Skype](ms-windows-store://pdp/?PFN=Microsoft.SkypeApp_kzf8qxf38zg5c)                                              | x    | x    | x    | x    | No                    |
-| Microsoft.StorePurchaseApp             | [Store Purchase App](ms-windows-store://pdp/?PFN=Microsoft.StorePurchaseApp_8wekyb3d8bbwe)                         | x    | x    | x    | x    | No                    |
-| Microsoft.VP9VideoExtensions           |                                                                                                                    |      |      |      | x    | No                    |
-| Microsoft.Wallet                       | [Microsoft Pay](ms-windows-store://pdp/?PFN=Microsoft.Wallet_8wekyb3d8bbwe)                                        | x    | x    | x    | x    | No                    |
-| Microsoft.WebMediaExtensions           | [Web Media Extensions](ms-windows-store://pdp/?PFN=Microsoft.WebMediaExtensions_8wekyb3d8bbwe)                     |      |      | x    | x    | No                    |
-| Microsoft.WebpImageExtension           | [Webp Image Extension](ms-windows-store://pdp/?PFN=Microsoft.WebpImageExtension_8wekyb3d8bbwe)                     |      |      |      | x    | No                    |
-| Microsoft.Windows.Photos               | [Microsoft Photos](ms-windows-store://pdp/?PFN=Microsoft.Windows.Photos_8wekyb3d8bbwe)                             | x    | x    | x    | x    | No                    |
-| Microsoft.WindowsAlarms                | [Windows Alarms & Clock](ms-windows-store://pdp/?PFN=Microsoft.WindowsAlarms_8wekyb3d8bbwe)                        | x    | x    | x    | x    | No                    |
-| Microsoft.WindowsCalculator            | [Windows Calculator](ms-windows-store://pdp/?PFN=Microsoft.WindowsCalculator_8wekyb3d8bbwe)                        | x    | x    | x    | x    | No                    |
-| Microsoft.WindowsCamera                | [Windows Camera](ms-windows-store://pdp/?PFN=Microsoft.WindowsCamera_8wekyb3d8bbwe)                                | x    | x    | x    | x    | No                    |
-| microsoft.windowscommunicationsapps    | [Mail and Calendar](ms-windows-store://pdp/?PFN=microsoft.windowscommunicationsapps_8wekyb3d8bbwe)                 | x    | x    | x    | x    | No                    |
-| Microsoft.WindowsFeedbackHub           | [Feedback Hub](ms-windows-store://pdp/?PFN=Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe)                             | x    | x    | x    | x    | No                    |
-| Microsoft.WindowsMaps                  | [Windows Maps](ms-windows-store://pdp/?PFN=Microsoft.WindowsMaps_8wekyb3d8bbwe)                                    | x    | x    | x    | x    | No                    |
-| Microsoft.WindowsSoundRecorder         | [Windows Voice Recorder](ms-windows-store://pdp/?PFN=Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe)                 | x    | x    | x    | x    | No                    |
-| Microsoft.WindowsStore                 | [Microsoft Store](ms-windows-store://pdp/?PFN=Microsoft.WindowsStore_8wekyb3d8bbwe)                                | x    | x    | x    | x    | No                    |
-| Microsoft.Xbox.TCUI                    | [Xbox TCUI](ms-windows-store://pdp/?PFN=Microsoft.Xbox.TCUI_8wekyb3d8bbwe)                                         |      | x    | x    | x    | No                    |
-| Microsoft.XboxApp                      | [Xbox](ms-windows-store://pdp/?PFN=Microsoft.XboxApp_8wekyb3d8bbwe)                                                | x    | x    | x    | x    | No                    |
-| Microsoft.XboxGameOverlay              | [Xbox Game Bar](ms-windows-store://pdp/?PFN=Microsoft.XboxGameOverlay_8wekyb3d8bbwe)                               | x    | x    | x    | x    | No                    |
-| Microsoft.XboxGamingOverlay            | [Xbox Gaming Overlay](ms-windows-store://pdp/?PFN=Microsoft.XboxGamingOverlay_8wekyb3d8bbwe)                       |      |      | x    | x    | No                    |
-| Microsoft.XboxIdentityProvider         | [Xbox Identity Provider](ms-windows-store://pdp/?PFN=Microsoft.XboxIdentityProvider_8wekyb3d8bbwe)                 | x    | x    | x    | x    | No                    |
-| Microsoft.XboxSpeechToTextOverlay      |                                                                                                                    | x    | x    | x    | x    | No                    |
-| Microsoft.YourPhone                    | [Your Phone](ms-windows-store://pdp/?PFN=Microsoft.YourPhone_8wekyb3d8bbwe)                                        |      |      |      | x    | No                    |
-| Microsoft.ZuneMusic                    | [Groove Music](ms-windows-store://pdp/?PFN=Microsoft.ZuneMusic_8wekyb3d8bbwe)                                      | x    | x    | x    | x    | No                    |
-| Microsoft.ZuneVideo                    | [Movies & TV](ms-windows-store://pdp/?PFN=Microsoft.ZuneVideo_8wekyb3d8bbwe)                                       | x    | x    | x    | x    | No                    |
-
+| Package name                                 | App name                                                                                                           | 1803 | 1809 | 1903 | 1909 | 2004 | Uninstall through UI? |
+|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|:----:|:----:|:----:|:----:|:----:|:---------------------:|
+| Microsoft.3DBuilder                          | [3D Builder](ms-windows-store://pdp/?PFN=Microsoft.3DBuilder_8wekyb3d8bbwe)                                        |      |      |      |      |      |          Yes          |
+| Microsoft.BingWeather                        | [MSN Weather](ms-windows-store://pdp/?PFN=Microsoft.BingWeather_8wekyb3d8bbwe)                                     |   x  |   x  |   x  |   x  |   x  |          Yes          |
+| Microsoft.DesktopAppInstaller                | [App Installer](ms-windows-store://pdp/?PFN=Microsoft.DesktopAppInstaller_8wekyb3d8bbwe)                           |   x  |   x  |   x  |   x  |   x  |    Via Settings App   |
+| Microsoft.GetHelp                            | [Get Help](ms-windows-store://pdp/?PFN=Microsoft.Gethelp_8wekyb3d8bbwe)                                            |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.Getstarted                         | [Microsoft Tips](ms-windows-store://pdp/?PFN=Microsoft.Getstarted_8wekyb3d8bbwe)                                   |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.HEIFImageExtension                 | [HEIF Image Extensions](ms-windows-store://pdp/?PFN=Microsoft.HEIFImageExtension_8wekyb3d8bbwe)                    |      |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.Messaging                          | [Microsoft Messaging](ms-windows-store://pdp/?PFN=Microsoft.Messaging_8wekyb3d8bbwe)                               |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.Microsoft3DViewer                  | [Mixed Reality Viewer](ms-windows-store://pdp/?PFN=Microsoft.Microsoft3DViewer_8wekyb3d8bbwe)                      |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.MicrosoftOfficeHub                 | [Office](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe)                                |   x  |   x  |   x  |   x  |   x  |          Yes          |
+| Microsoft.MicrosoftSolitaireCollection       | [Microsoft Solitaire Collection](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe) |   x  |   x  |   x  |   x  |   x  |          Yes          |
+| Microsoft.MicrosoftStickyNotes               | [Microsoft Sticky Notes](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe)                 |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.MixedReality.Portal                | [Mixed Reality Portal](ms-windows-store://pdp/?PFN=Microsoft.MixedReality.Portal_8wekyb3d8bbwe)                    |      |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.MSPaint                            | [Paint 3D](ms-windows-store://pdp/?PFN=Microsoft.MSPaint_8wekyb3d8bbwe)                                            |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.Office.OneNote                     | [OneNote for Windows 10](ms-windows-store://pdp/?PFN=Microsoft.Office.OneNote_8wekyb3d8bbwe)                                      |   x  |   x  |   x  |   x  |   x  |          Yes          |
+| Microsoft.OneConnect                         | [Mobile Plans](ms-windows-store://pdp/?PFN=Microsoft.OneConnect_8wekyb3d8bbwe)                            |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.Outlook.DesktopIntegrationServices |                                                                                                                    |      |      |      |   x  |   x  |                       |
+| Microsoft.People                             | [Microsoft People](ms-windows-store://pdp/?PFN=Microsoft.People_8wekyb3d8bbwe)                                     |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.Print3D                            | [Print 3D](ms-windows-store://pdp/?PFN=Microsoft.Print3D_8wekyb3d8bbwe)                                            |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.ScreenSketch                       | [Snip & Sketch](ms-windows-store://pdp/?PFN=Microsoft.ScreenSketch_8wekyb3d8bbwe)                                  |      |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.SkypeApp                           | [Skype](ms-windows-store://pdp/?PFN=Microsoft.SkypeApp_kzf8qxf38zg5c)                                              |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.StorePurchaseApp                   | [Store Purchase App](ms-windows-store://pdp/?PFN=Microsoft.StorePurchaseApp_8wekyb3d8bbwe)                         |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.VP9VideoExtensions                 |                                                                                                                    |      |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.Wallet                             | [Microsoft Pay](ms-windows-store://pdp/?PFN=Microsoft.Wallet_8wekyb3d8bbwe)                                        |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.WebMediaExtensions                 | [Web Media Extensions](ms-windows-store://pdp/?PFN=Microsoft.WebMediaExtensions_8wekyb3d8bbwe)                     |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.WebpImageExtension                 | [Webp Image Extension](ms-windows-store://pdp/?PFN=Microsoft.WebpImageExtension_8wekyb3d8bbwe)                     |      |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.Windows.Photos                     | [Microsoft Photos](ms-windows-store://pdp/?PFN=Microsoft.Windows.Photos_8wekyb3d8bbwe)                             |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.WindowsAlarms                      | [Windows Alarms & Clock](ms-windows-store://pdp/?PFN=Microsoft.WindowsAlarms_8wekyb3d8bbwe)                        |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.WindowsCalculator                  | [Windows Calculator](ms-windows-store://pdp/?PFN=Microsoft.WindowsCalculator_8wekyb3d8bbwe)                        |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.WindowsCamera                      | [Windows Camera](ms-windows-store://pdp/?PFN=Microsoft.WindowsCamera_8wekyb3d8bbwe)                                |   x  |   x  |   x  |   x  |   x  |           No          |
+| microsoft.windowscommunicationsapps          | [Mail and Calendar](ms-windows-store://pdp/?PFN=microsoft.windowscommunicationsapps_8wekyb3d8bbwe)                 |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.WindowsFeedbackHub                 | [Feedback Hub](ms-windows-store://pdp/?PFN=Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe)                             |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.WindowsMaps                        | [Windows Maps](ms-windows-store://pdp/?PFN=Microsoft.WindowsMaps_8wekyb3d8bbwe)                                    |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.WindowsSoundRecorder               | [Windows Voice Recorder](ms-windows-store://pdp/?PFN=Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe)                 |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.WindowsStore                       | [Microsoft Store](ms-windows-store://pdp/?PFN=Microsoft.WindowsStore_8wekyb3d8bbwe)                                |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.Xbox.TCUI                          | [Xbox Live in-game experience](ms-windows-store://pdp/?PFN=Microsoft.Xbox.TCUI_8wekyb3d8bbwe)                                         |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.XboxApp                            | [Xbox Console Companion](ms-windows-store://pdp/?PFN=Microsoft.XboxApp_8wekyb3d8bbwe)                                                |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.XboxGameOverlay                    | [Xbox Game Bar Plugin](ms-windows-store://pdp/?PFN=Microsoft.XboxGameOverlay_8wekyb3d8bbwe)                               |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.XboxGamingOverlay                  | [Xbox Game Bar](ms-windows-store://pdp/?PFN=Microsoft.XboxGamingOverlay_8wekyb3d8bbwe)                       |   x  |   x  |   x  |   x  |   x  |          No          |
+| Microsoft.XboxIdentityProvider               | [Xbox Identity Provider](ms-windows-store://pdp/?PFN=Microsoft.XboxIdentityProvider_8wekyb3d8bbwe)                 |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.XboxSpeechToTextOverlay            |                                                                                                                    |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.YourPhone                          | [Your Phone](ms-windows-store://pdp/?PFN=Microsoft.YourPhone_8wekyb3d8bbwe)                                        |      |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.ZuneMusic                          | [Groove Music](ms-windows-store://pdp/?PFN=Microsoft.ZuneMusic_8wekyb3d8bbwe)                                      |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.ZuneVideo                          | [Movies & TV](ms-windows-store://pdp/?PFN=Microsoft.ZuneVideo_8wekyb3d8bbwe)                                       |   x  |   x  |   x  |   x  |   x  |           No          |
 
 >[!NOTE]
 >The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
@@ -97,13 +94,11 @@ Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 an
 
 System apps are integral to the operating system. Here are the typical system apps in Windows 10 versions 1709, 1803, and 1809.
 
-> [!TIP]
-> You can list all system apps with this PowerShell command:
-> ```
-> Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | Sort Name | Format-Table Name, InstallLocation
-> ```
+You can list all system apps with this PowerShell command:
 
-<br>
+```Powershell
+Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | Sort Name | Format-Table Name, InstallLocation
+```
 
 | Name                             | Package Name                                | 1709 | 1803 | 1809 |Uninstall through UI? |
 |----------------------------------|---------------------------------------------|:-----:|:----:|:----:|-----------------------|
@@ -149,7 +144,7 @@ System apps are integral to the operating system. Here are the typical system ap
 
 
 > [!NOTE]
-> - The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
+> The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
 
 ## Installed Windows apps
 

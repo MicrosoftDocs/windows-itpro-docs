@@ -1,8 +1,8 @@
 ---
 title: 4657(S) A registry value was modified. (Windows 10)
-description: Describes security event 4657(S) A registry value was modified.
+description: Describes security event 4657(S) A registry value was modified. This event is generated when a registry key value is modified.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4657(S): A registry value was modified.
@@ -28,7 +29,7 @@ ms.author: dansimp
 
 This event generates when a registry key ***value*** was modified. It doesn’t generate when a registry key was modified.
 
-This event generates only if “Set Value" auditing is set in registry key’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx).
+This event generates only if “Set Value" auditing is set in registry key’s [SACL](/windows/win32/secauthz/access-control-lists).
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -181,4 +182,3 @@ For 4657(S): A registry value was modified.
 -   If **Object Name** is a sensitive or critical registry key for which you need to monitor any modification of its values, monitor all [4657](event-4657.md) events.
 
 -   If **Object Name** has specific values (**Object Value Name**) and you need to monitor modifications of these values, monitor for all [4657](event-4657.md) events.
-

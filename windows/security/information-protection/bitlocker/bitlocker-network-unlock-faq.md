@@ -1,6 +1,6 @@
 ---
-title: BitLocker frequently asked questions (FAQ) (Windows 10)
-description: This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
+title: BitLocker Network Unlock FAQ (Windows 10)
+description: Familiarize yourself with BitLocker Network Unlock. Learn how it can make desktop and server management easier within domain environments.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -14,6 +14,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.reviewer: 
+ms.custom: bitlocker
 ---
 
 # BitLocker Network Unlock FAQ

@@ -1,8 +1,8 @@
 ---
 title: 4699(S) A scheduled task was deleted. (Windows 10)
-description: Describes security event 4699(S) A scheduled task was deleted.
+description: Describes security event 4699(S) A scheduled task was deleted. This event is generated every time a scheduled task is deleted.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4699(S): A scheduled task was deleted.
@@ -62,6 +63,17 @@ This event generates every time a scheduled task was deleted.
  </Event>
 
 ```
+>[!NOTE]
+> Windows 10 Versions 1903 and above augments the event with these additional properties:
+> Event Version 1.
+>  ***Event XML:***
+>```
+>  <Data Name="ClientProcessStartKey">5066549580796854</Data> 
+>  <Data Name="ClientProcessId">3932</Data> 
+>  <Data Name="ParentProcessId">5304</Data> 
+>  <Data Name="RpcCallClientLocality">0</Data> 
+>  <Data Name="FQDN">DESKTOP-Name</Data> 
+
 
 ***Required Server Roles:*** None.
 
@@ -99,7 +111,7 @@ This event generates every time a scheduled task was deleted.
 
 <img src="images/computer-management.png" alt="Task Scheduler Library illustration" width="840" height="176" />
 
--   **Task Content** \[Type = UnicodeString\]: the [XML](https://msdn.microsoft.com/library/aa286548.aspx) of the deleted task. Here “[XML Task Definition Format](https://msdn.microsoft.com/library/cc248308.aspx)” you can read more about the XML format for scheduled tasks.
+-   **Task Content** \[Type = UnicodeString\]: the [XML](/previous-versions/aa286548(v=msdn.10)) of the deleted task. Here “[XML Task Definition Format](/openspecs/windows_protocols/ms-tsch/0d6383e4-de92-43e7-b0bb-a60cfa36379f)” you can read more about the XML format for scheduled tasks.
 
 ## Security Monitoring Recommendations
 
@@ -112,4 +124,3 @@ For 4699(S): A scheduled task was deleted.
 -   Monitor for deleted tasks located in the **Task Scheduler Library** root node, that is, where **Task Name** looks like ‘\\TASK\_NAME’. Scheduled tasks that are created manually or by malware are often located in the **Task Scheduler Library** root node. Deletion of such tasks can be a sign of malicious activity.
 
 -   If a highly critical scheduled task exists on some computers, and it should never be deleted, monitor for [4699](event-4699.md) events with the corresponding **Task Name**.
-

@@ -1,10 +1,10 @@
 ---
 title: Create a WDAC policy for fully-managed devices (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
-keywords: whitelisting, security, malware
+keywords: security, malware
 ms.topic: conceptual
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,15 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 11/20/2019
+ms.technology: mde
 ---
 
 # Create a WDAC policy for fully-managed devices
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016 and above
+- Windows 10
+- Windows Server 2016 and above
 
 This section outlines the process to create a WDAC policy for **fully-managed devices** within an organization. The key difference between this scenario and [lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md) is that all software deployed to a fully-managed device is managed by IT and users of the device cannot install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Endpoint Manager (MEM). Additionally, users on fully-managed devices should ideally run as standard user and only authorized IT pros have administrative access.
 
@@ -76,7 +77,7 @@ Alice follows these steps to complete this task:
 > [!NOTE]
 > If you do not use MEMCM or prefer to use a different [example WDAC base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the MEMCM policy path with your preferred example base policy.
 
-1. [Use MEMCM to create and deploy an audit policy](https://docs.microsoft.com/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 or above.
+1. [Use MEMCM to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 or above.
 
 2. On the client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
 
@@ -114,7 +115,7 @@ Alice follows these steps to complete this task:
 
 6. If appropriate, add additional signer or file rules to further customize the policy for your organization.
 
-7. Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
+7. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
 
     > [!NOTE]
     > In the sample commands below, replace the string "{InsertPolicyID}" with the actual PolicyID GUID (including braces **{ }**) found in your policy XML file.

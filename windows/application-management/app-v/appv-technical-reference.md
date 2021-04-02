@@ -1,6 +1,6 @@
 ---
 title: Technical Reference for App-V (Windows 10)
-description: Technical Reference for App-V
+description: Learn strategy and context for a number of performance optimization practices in this techincal reference for Application Virtualization (App-V).
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -50,4 +50,4 @@ This section provides reference information related to managing App-V.
 
 [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
-[Windows PowerShell reference for App-V](https://technet.microsoft.com/library/dn903534.aspx)
+[Windows PowerShell reference for App-V](/previous-versions/)

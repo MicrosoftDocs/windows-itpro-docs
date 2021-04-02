@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -169,7 +169,7 @@ When Active Directory is installed on the first domain controller in the domain,
 ## <a href="" id="sec-guest"></a>Guest account
 
 
-The Guest account is a default local account has limited access to the computer and is disabled by default. The Guest account cannot be deleted or disabled, and the account name cannot be changed. By default, the Guest account password is left blank. A blank password allows the Guest account to be accessed without requiring the user to enter a password.
+The Guest account is a default local account that has limited access to the computer and is disabled by default. By default, the Guest account password is left blank. A blank password allows the Guest account to be accessed without requiring the user to enter a password.
 
 The Guest account enables occasional or one-time users, who do not have an individual account on the computer, to sign in to the local server or domain with restricted rights and permissions. The Guest account can be enabled, and the password can be set up if needed, but only by a member of the Administrator group on the domain.
 
@@ -334,7 +334,7 @@ A strong password is assigned to the KRBTGT and trust accounts automatically. Li
 
 Resetting the password requires you either to be a member of the Domain Admins group, or to have been delegated with the appropriate authority. In addition, you must be a member of the local Administrators group, or you must have been delegated the appropriate authority.
 
-After you reset the KRBTGT password, ensure that event ID 6 in the (Kerberos) Key-Distribution-Center event source is written to the System event log.
+After you reset the KRBTGT password, ensure that event ID 9 in the (Kerberos) Key-Distribution-Center event source is written to the System event log.
 
 ### Security considerations
 
@@ -470,7 +470,7 @@ Each default local account in Active Directory has a number of account settings 
 </tr>
 <tr class="odd">
 <td><p>Account is trusted for delegation</p></td>
-<td><p>Lets a service running under this account perform operations on behalf of other user accounts on the network. A service running under a user account (also known as a service account) that is trusted for delegation can impersonate a client to gain access to resources, either on the computer where the service is running or on other computers. For example, in a forest that is set to the Windows Server 2003 functional level, this setting is found on the <strong>Delegation</strong> tab. It is available only for accounts that have been assigned service principal names (SPNs), which are set by using the <strong>setspn</strong> command from Windows Support Tools. This setting is security-sensitive and should be assigned cautiously.</p></td>
+<td><p>Lets a service running under this account perform operations on behalf of other user accounts on the network. A service running under a user account (also known as a service account) that is trusted for delegation can impersonate a client to gain access to resources, either on the computer where the service is running or on other computers. For example, in a forest that is set to the Windows Server 2003 functional level, this setting is found on the <b>Delegation</b> tab. It is available only for accounts that have been assigned service principal names (SPNs), which are set by using the <b>setspn</b> command from Windows Support Tools. This setting is security-sensitive and should be assigned cautiously.</p></td>
 </tr>
 <tr class="even">
 <td><p>Account is sensitive and cannot be delegated</p></td>
@@ -480,7 +480,7 @@ Each default local account in Active Directory has a number of account settings 
 <td><p>Use DES encryption types for this account</p></td>
 <td><p>Provides support for the Data Encryption Standard (DES). DES supports multiple levels of encryption, including Microsoft Point-to-Point Encryption (MPPE) Standard (40-bit and 56-bit), MPPE standard (56-bit), MPPE Strong (128-bit), Internet Protocol security (IPSec) DES (40-bit), IPSec 56-bit DES, and IPSec Triple DES (3DES).</p>
 <div class="alert">
-<strong>Note</strong><br/><p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see <a href="http://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx" data-raw-source="[Hunting down DES in order to securely deploy Kerberos](http://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx)">Hunting down DES in order to securely deploy Kerberos</a>.</p>
+<b>Note</b><br/><p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see <a href="/archive/blogs/askds/hunting-down-des-in-order-to-securely-deploy-kerberos" data-raw-source="[Hunting down DES in order to securely deploy Kerberos](/archive/blogs/askds/hunting-down-des-in-order-to-securely-deploy-kerberos)">Hunting down DES in order to securely deploy Kerberos</a>.</p>
 </div>
 <div>
 
@@ -502,11 +502,11 @@ After the default local accounts are installed, these accounts reside in the Use
 
 You can use Active Directory Users and Computers to assign rights and permissions on a given local domain controller, and that domain controller only, to limit the ability of local users and groups to perform certain actions. A right authorizes a user to perform certain actions on a computer, such as backing up files and folders or shutting down a computer. In contrast, an access permission is a rule that is associated with an object, usually a file, folder, or printer, that regulates which users can have access to the object and in what manner.
 
-For more information about creating and managing local user accounts in Active Directory, see [Manage Local Users](https://technet.microsoft.com/library/cc731899.aspx).
+For more information about creating and managing local user accounts in Active Directory, see [Manage Local Users](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731899(v=ws.11)).
 
 You can also use Active Directory Users and Computers on a domain controller to target remote computers that are not domain controllers on the network.
 
-You can obtain recommendations from Microsoft for domain controller configurations that you can distribute by using the Security Compliance Manager (SCM) tool. For more information, see [Microsoft Security Compliance Manager](https://technet.microsoft.com/library/cc677002.aspx).
+You can obtain recommendations from Microsoft for domain controller configurations that you can distribute by using the Security Compliance Manager (SCM) tool. For more information, see [Microsoft Security Compliance Manager](/previous-versions/tn-archive/cc677002(v=technet.10)).
 
 Some of the default local user accounts are protected by a background process that periodically checks and applies a specific security descriptor, which is a data structure that contains security information that is associated with a protected object. This security descriptor is present on the AdminSDHolder object.
 
@@ -656,8 +656,8 @@ In this procedure, the workstations are dedicated to domain administrators. By s
         </colgroup>
         <tbody>
         <tr class="odd">
-        <td><p><strong>Windows Update Setting</strong></p></td>
-        <td><p><strong>Configuration</strong></p></td>
+        <td><p><b>Windows Update Setting</b></p></td>
+        <td><p><b>Configuration</b></p></td>
         </tr>
         <tr class="even">
         <td><p>Allow Automatic Updates immediate installation</p></td>

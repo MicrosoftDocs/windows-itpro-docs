@@ -1,9 +1,9 @@
 ---
-title: Deploy Windows Defender Application Control (WDAC) policies by using Group Policy (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
-keywords: whitelisting, security, malware
+title: Deploy WDAC policies via Group Policy (Windows 10)
+description: Windows Defender Application Control (WDAC) policies can easily be deployed and managed with Group Policy. Learn how by following this step-by-step guide.
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/28/2018
+ms.technology: mde
 ---
 
 # Deploy Windows Defender Application Control policies by using Group Policy
@@ -24,7 +25,7 @@ ms.date: 02/28/2018
 -   Windows 10
 -   Windows Server 2016
 
-WDAC policies can easily be deployed and managed with Group Policy. A Windows Defender Device Guard administrative template will be available in Windows Server 2016 that allows you to simplify deployment of Windows Defender Device Guard hardware-based security features and Windows Defender Application Control policies. The following procedure walks you through how to deploy a WDAC policy called **DeviceGuardPolicy.bin** to a test OU called *DG Enabled PCs* by using a GPO called **Contoso GPO Test**.
+WDAC policies can easily be deployed and managed with Group Policy. Windows Defender allows you to simplify deployment Windows Defender hardware-based security features and Windows Defender Application Control policies. The following procedure walks you through how to deploy a WDAC policy called **DeviceGuardPolicy.bin** to a test OU called *DG Enabled PCs* by using a GPO called **Contoso GPO Test**.
 
 > [!NOTE]
 > This walkthrough requires that you have previously created a WDAC policy and have a computer running Windows 10 on which to test a Group Policy deployment. For more information about how to create a WDAC policy, see [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md), earlier in this topic.

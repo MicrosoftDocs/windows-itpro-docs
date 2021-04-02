@@ -10,7 +10,8 @@ ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -75,70 +76,52 @@ Windows 10 also introduces two additional scenarios that organizations should c
 </table>
 
  
-
 ## Migration from previous Windows versions
-
 
 For existing PCs running Windows 7 or Windows 8.1, in-place upgrade is the recommended method for Windows 10 deployment and should be used whenever possible. Although wipe-and-load (OS refresh) deployments are still fully supported (and necessary in some scenarios, as mentioned previously), in-place upgrade is simpler and faster, and enables a faster Windows 10 deployment overall.
 
-Note that the original Windows 8 release is only supported until January 2016. Organizations that do not think they can complete a full Windows 10 migration by that date should deploy Windows 8.1 now and consider Windows 10 after Windows 8 has been removed from the environment.
+The original Windows 8 release was only supported until January 2016. For devices running Windows 8.0, you can update to Windows 8.1 and then upgrade to Windows 10.
 
-For existing Windows PCs running Windows Vista, you can perform wipe-and-load (OS refresh) deployments when you use compatible hardware.
-
-Note that to take advantage of the limited-time free upgrade offer for PCs running Windows 7, Windows 8, or Windows 8.1, you must leverage an in-place upgrade, either from Windows Update or by using the upgrade media available from the [Windows 10 software download page](https://go.microsoft.com/fwlink/p/?LinkId=625073) to acquire a new Windows 10 license from the Windows Store. For more information, refer to the [Windows 10 FAQ](https://go.microsoft.com/fwlink/p/?LinkId=625074).
+For PCs running operating systems older than Windows 7, you can perform wipe-and-load (OS refresh) deployments when you use compatible hardware.
 
 For organizations with Software Assurance for Windows, both in-place upgrade or wipe-and-load can be leveraged (with in-place upgrade being the preferred method, as previously discussed).
 
-For organizations that do not take advantage of the free upgrade offer and are not enrolled in Software Assurance for Windows, Windows 10 upgrade licenses are available for purchase through existing Volume License (VL) agreements.
+For organizations that did not take advantage of the free upgrade offer and are not enrolled in Software Assurance for Windows, Windows 10 upgrade licenses are available for purchase through existing Volume License (VL) agreements.
 
-## Setup of new computers
-
+## Setting up new computers
 
 For new computers acquired with Windows 10 preinstalled, you can leverage dynamic provisioning scenarios to transform the device from its initial state into a fully-configured organization PC. There are two primary dynamic provisioning scenarios you can use:
 
--   **User-driven, from the cloud.** By joining a device into Azure Active Directory and leveraging the automatic mobile device management (MDM) provisioning capabilities at the same time, an end user can initiate the provisioning process themselves just by entering the Azure Active Directory account and password (called their “work or school account” within Windows 10). The MDM service can then transform the device into a fully-configured organization PC. For more information, see [Azure Active Directory integration with MDM](https://go.microsoft.com/fwlink/p/?LinkId=625075).
+-   **User-driven, from the cloud.** By joining a device into Azure Active Directory and leveraging the automatic mobile device management (MDM) provisioning capabilities at the same time, an end user can initiate the provisioning process themselves just by entering the Azure Active Directory account and password (called their “work or school account” within Windows 10). The MDM service can then transform the device into a fully-configured organization PC. For more information, see [Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
 
--   **IT admin-driven, using new tools.** Using the new Windows Imaging and Configuration Designer (ICD) tool, IT administrators can create provisioning packages that can be applied to a computer to transform it into a fully-configured organization PC. For more information, see [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=625076).
+-   **IT admin-driven, using new tools.** Using the new Windows Imaging and Configuration Designer (ICD) tool, IT administrators can create provisioning packages that can be applied to a computer to transform it into a fully-configured organization PC. For more information, see [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 
 In either of these scenarios, you can make a variety of configuration changes to the PC:
 
 -   Transform the edition (SKU) of Windows 10 that is in use.
-
 -   Apply configuration and settings to the device (for example, security settings, device restrictions, policies, Wi-Fi and VPN profiles, certificates, and so on).
-
 -   Install apps, language packs, and updates.
-
 -   Enroll the device in a management solution (applicable for IT admin-driven scenarios, configuring the device just enough to allow the management tool to take over configuration and ongoing management).
 
 ## Stay up to date
 
-
-For computers already running Windows 10 on the Semi-Annual Channel, new upgrades will periodically be deployed, approximately two to three times per year. You can deploy these upgrades by using a variety of methods:
+For computers already running Windows 10 on the Semi-Annual Channel, new upgrades will be deployed two times per year. You can deploy these upgrades by using a variety of methods:
 
 -   Windows Update or Windows Update for Business, for devices where you want to receive updates directly from the Internet.
+-   Windows Server Update Services (WSUS), for devices configured to pull updates from internal servers after they are approved (deploying like an update). 
+-   Configuration Manager task sequences.
+-   Configuration Manager software update capabilities (deploying like an update).
 
--   Windows Server Update Services (WSUS), for devices configured to pull updates from internal servers after they are approved (deploying like an update). Note that this will require updates to WSUS, which are only available for Windows Server 2012 and Windows Server 2012 R2, not previous versions.
+These upgrades (which are installed differently than monthly updates) leverage an in-place upgrade process. Unlike updates, which are relatively small, these upgrades will include a full operating system image (around 3 GB for 64-bit operating systems), which requires time (1-2 hours) and disk space (approximately 10 GB) to complete. Ensure that the deployment method you use can support the required network bandwidth and/or disk space requirements.
 
--   System Center Configuration Manager task sequences (with Configuration Manager 2012, 2012 R2, and later versions).
-
--   System Center Configuration Manager vNext software update capabilities (deploying like an update).
-
-Note that these upgrades (which are installed differently than monthly updates) will leverage an in-place upgrade process. Unlike updates, which are relatively small, these upgrades will include a full operating system image (around 3 GB for 64-bit operating systems), which requires time (1-2 hours) and disk space (approximately 10 GB) to complete. Ensure that the deployment method you use can support the required network bandwidth and/or disk space requirements.
-
-Over time, this upgrade process will be optimized to reduce the overall time and network bandwidth consumed.
+The upgrade process is also optimized to reduce the overall time and network bandwidth consumed.
 
 ## Related topics
 
 
-[Windows 10 compatibility](windows-10-compatibility.md)
-
+[Windows 10 compatibility](windows-10-compatibility.md)<br>
 [Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md)
 
  
 
  
-
-
-
-
-

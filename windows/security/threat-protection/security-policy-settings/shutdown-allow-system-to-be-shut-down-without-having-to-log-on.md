@@ -1,10 +1,10 @@
 ---
 title: Shutdown Allow system to be shut down without having to log on (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Shutdown Allow system to be shut down without having to log on security policy setting.
+description: Best practices, security considerations, and more for the security policy setting Shutdown Allow system to be shut down without having to log on.
 ms.assetid: f3964767-5377-4416-8eb3-e14d553a7315
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Shutdown: Allow system to be shut down without having to log on
@@ -22,30 +23,31 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management and security considerations for the **Shutdown: Allow system to be shut down without having to log on** security policy setting.
+Describes the best practices, location, values, policy management, and security considerations for the **Shutdown: Allow system to be shut down without having to log on** security policy setting.
 
 ## Reference
 
-This policy setting determines whether a device can be shut down without having to log on to Windows. If you enable this policy setting, the **Shut Down** option is available on the logon screen in Windows. If you disable this policy setting, the **Shut Down** option is removed from the logon screen. This configuration requires that users are able to log on to the device successfully and that they have the **Shut down the system** user right before they can perform a shutdown.
+This policy setting determines whether you can shut down a device without having to sign in to Windows. When you enable it, the **Shut Down** option is available on the sign-in screen in Windows. If you disable this setting, the **Shut Down** option is removed from the screen. To use the option, the user must sign in on the device successfully and have the **Shut down the system** user right.
 
-Users who can access the console locally can shut down the system. Attackers or misguided users can connect to the server by using Remote Desktop Services, and then shut it down or restart it without having to identify themselves. A malicious user might also cause a temporary denial-of-service 
-condition by walking up to the local console and restarting the server, or shutting down the server and thus rendering unavailable all its applications and services.
+Users who access the console locally can shut down the system. Attackers or misguided users can connect to the server by using Remote Desktop Services, and then shut it down or restart it without having to identify themselves. A malicious user might also cause a temporary denial-of-service 
+condition from a local console by restarting or shutting down the server.
+
 ### Possible values
 
 -   Enabled
 
-    The shut down command is available on the logon screen.
+    The shutdown command is available on the sign-in screen.
 
 -   Disabled
 
-    The shut down option is removed from the logon screen and users must have the **Shut down the system** user right before they can perform a shutdown.
+    The shut down option is removed from the sign-in screen. Users must have the **Shut down the system** user right to do a shutdown.
 
 -   Not defined
 
 ### Best practices
 
-1.  On servers, set this policy to **Disabled**. You must log on to servers to shut them down or restart them.
-2.  On client devices, set this policy to **Enabled** and define the list of those with the right to shut them down or restart them with the User Rights Assignment policy **Shut down the system**.
+1.  On servers, set this policy to **Disabled**. You must sign in to servers to shut down or restart them.
+2.  On client devices, set this policy to **Enabled**. Define the list of users who have the right to shut them down or restart them with the User Rights Assignment policy **Shut down the system**.
 
 ### Location
 
@@ -78,7 +80,10 @@ For info about the User Rights Assignment policy, **Shut down the system**, see 
 
 ## Security considerations
 
-This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
+This section describes:
+- How an attacker might exploit a feature or its configuration.
+- How to implement the countermeasure.
+- Possible negative consequences of countermeasure implementation.
 
 ### Vulnerability
 
@@ -92,8 +97,8 @@ Disable the **Shutdown: Allow system to be shut down without having to log on** 
 
 ### Potential impact
 
-You must log on to servers to shut them down or restart them.
+You must sign in on servers to shut them down or restart them.
 
-## Related topics
+## Related articles
 
 - [Security Options](security-options.md)

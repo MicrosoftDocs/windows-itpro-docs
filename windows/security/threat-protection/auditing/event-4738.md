@@ -1,8 +1,8 @@
 ---
 title: 4738(S) A user account was changed. (Windows 10)
-description: Describes security event 4738(S) A user account was changed.
+description: Describes security event 4738(S) A user account was changed. This event is generated when a user object is changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4738(S): A user account was changed.
@@ -32,7 +33,7 @@ This event generates on domain controllers, member servers, and workstations.
 
 For each change, a separate 4738 event will be generated.
 
-You might see this event without any changes inside, that is, where all **Changed Attributes** apear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, if the [discretionary access control list](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) (DACL) is changed, a 4738 event will generate, but all attributes will be “-“.
+You might see this event without any changes inside, that is, where all **Changed Attributes** appear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, if the [discretionary access control list](/windows/win32/secauthz/access-control-lists) (DACL) is changed, a 4738 event will generate, but all attributes will be “-“.
 
 Some changes do not invoke a 4738 event.
 
@@ -293,4 +294,3 @@ For 4738(S): A user account was changed.
 | **'Don't Require Preauth'** – Enabled                   | Should not be enabled for user accounts because it weakens security for the account’s Kerberos authentication.                                                                                                                                                                                                                                                                        |
 | **'Use DES Key Only'** – Disabled                       | Should be monitored for all accounts where the setting should be “**Enabled**.”                                                                                                                                                                                                                                                                                                       |
 | **'Don't Require Preauth'** – Disabled                  | Should be monitored for all accounts where the setting should be “**Enabled**.”                                                                                                                                                                                                                                                                                                       |
-

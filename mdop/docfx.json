@@ -34,7 +34,7 @@
       "ms.topic": "article",
       "ms.date": "04/05/2017",
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "feedback_github_repo": "https://github.com/MicrosoftDocs/mdop-docs",
       "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
       "_op_documentIdPathDepotMapping": {
         "./": {
@@ -51,7 +51,8 @@
         "jborsecnik",
         "tiburd",
         "garycentric"
-      ]
+      ],
+      "titleSuffix": "Microsoft Desktop Optimization Pack"
     },
     "externalReference": [],
     "template": "op.html",

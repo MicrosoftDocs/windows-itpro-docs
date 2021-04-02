@@ -1,10 +1,10 @@
 ---
-title: User Account Control Only elevate UIAccess applications that are installed in secure locations (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the User Account Control Only elevate UIAccess applications that are installed in secure locations security policy setting.
+title: Only elevate UIAccess app installed in secure location (Windows 10)
+description: Learn about best practices and more for the policy setting, User Account Control Only elevate UIAccess applications that are installed in secure locations.
 ms.assetid: 4333409e-a5be-4f2f-8808-618f53abd22c
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # User Account Control: Only elevate UIAccess applications that are installed in secure locations
@@ -22,11 +23,11 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Only elevate UIAccess applications that are installed in secure locations** security policy setting.
+Describes the best practices, location, values, policy management, and security considerations for the **User Account Control: Only elevate UIAccess applications that are installed in secure locations** security policy setting.
 
 ## Reference
 
-This policy setting enforces the requirement that apps that request running with a UIAccess integrity level (by means of a marking of UIAccess=true in their app manifest), must reside in a secure location on the file system. Relatively secure locations are limited to the following directories:
+This policy setting enforces the requirement that apps that request running with a UIAccess integrity level by marking *UIAccess=true* in their app manifest must reside in a secure location on the file system. Relatively secure locations are limited to the following directories:
 
 -   \\Program Files\\ including subdirectories
 -   \\Windows\\system32\\
@@ -36,11 +37,11 @@ This policy setting enforces the requirement that apps that request running with
  
 **Background**
 
-User Interface Privilege Isolation (UIPI) implements restrictions in the Windows subsystem that prevent lower-privilege applications from sending messages or installing hooks in higher-privilege processes. Higher-privilege applications are permitted to send messages to lower-privilege processes. UIPI does not interfere with or change the behavior of messages between applications at the same privilege (or integrity) level.
+User Interface Privilege Isolation (UIPI) implements restrictions in the Windows subsystem that prevent lower-privilege applications from sending messages or installing hooks in higher-privilege processes. Higher-privilege applications are permitted to send messages to lower-privilege processes. UIPI doesn't interfere with or change the behavior of messages between applications at the same privilege (or integrity) level.
 
-Microsoft UI Automation is the current model to support accessibility requirements in the Windows operating systems. Applications that are designed to support an accessible user experience control the behavior of other Windows applications on behalf of the user. When all applications on the automation client computer and server are running as a standard user (that is, at a medium integrity level), the UIPI restrictions do not interfere with the Microsoft UI automation model.
+Microsoft UI Automation is the current model to support accessibility requirements in the Windows operating systems. Applications that are designed to support an accessible user experience control the behavior of other Windows applications for the user. When all applications on the automation client computer and server are running as a standard user (that is, at a medium integrity level), the UIPI restrictions don't interfere with the Microsoft UI automation model.
 
-However, there might be times when an administrative user runs an application with elevated privilege based on UAC in Admin Approval Mode. Microsoft UI Automation cannot drive the UI graphics of elevated applications on the desktop without the ability to bypass the restrictions that UIPI implements. The ability to bypass UIPI restrictions across privilege levels is available for UI automation programs by using UIAccess.
+However, there might be times when an administrative user runs an application with elevated privilege based on UAC in Admin Approval Mode. Microsoft UI Automation can't drive the UI graphics of elevated applications on the desktop without the ability to bypass the restrictions that UIPI implements. The ability to bypass UIPI restrictions across privilege levels is available for UI automation programs by using UIAccess.
 
 If an application presents a UIAccess attribute when it requests privileges, the application is stating a requirement to bypass UIPI restrictions for sending messages across privilege levels. Devices implement the following policy checks before starting an application with UIAccess privilege.
 
@@ -87,7 +88,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they aresaved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -95,11 +96,14 @@ All auditing capabilities are integrated in Group Policy. You can configure, dep
 
 ## Security considerations
 
-This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
+This section describes:
+- How an attacker might exploit a feature or its configuration.
+- How to implement the countermeasure.
+- The possible negative consequences of countermeasure implementation.
 
 ### Vulnerability
 
-UIAccess integrity allows an application to bypass User Interface Privilege Isolation (UIPI) restrictions when an application is elevated in privilege from a standard user to an administrator. When this setting is enabled, an application that has the UIAccess flag set to true in its manifest can interchange information with applications that are running at a higher privilege level, such as logon prompts and privilege elevation prompts. This ability is required to support accessibility features such as screen readers that are transmitting user interfaces to alternative forms, but it is not required by most applications. A process that is started with UIAccess rights has the following abilities:
+UIAccess integrity allows an application to bypass User Interface Privilege Isolation (UIPI) restrictions when an application is elevated in privilege from a standard user to an administrator. When this setting is enabled, an application that has the UIAccess flag set to true in its manifest can interchange information with applications that are running at a higher privilege level, such as logon prompts and privilege elevation prompts. This ability is required to support accessibility features such as screen readers that transmit user interfaces to alternative forms. But it's not required by most applications. A process that's started with UIAccess rights has the following abilities:
 
 -   Set the foreground window.
 -   Drive any application window by using the SendInput function.
@@ -113,8 +117,8 @@ Enable the **User Account Control: Only elevate UIAccess applications that are i
 
 ### Potential impact
 
-If the application that requests UIAccess meets the UIAccess setting requirements, computers running at least the Windows Vista operating system start the application with the ability to bypass most of the UIPI restrictions. If the application does not meet the security restrictions, the application is started without UIAccess rights, and it can interact only with applications at the same or lower privilege level.
+If the application that requests UIAccess meets the UIAccess setting requirements, computers that run at least the Windows Vista operating system start the application with the ability to bypass most UIPI restrictions. If the application does not meet the security restrictions, the application is started without UIAccess rights, and it can interact only with applications at the same or lower privilege level.
 
-## Related topics
+## Related articles
 
 - [Security Options](/windows/device-security/security-policy-settings/security-options)

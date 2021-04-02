@@ -1,10 +1,10 @@
 ---
 title: Recovery console Allow automatic administrative logon (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Recovery console Allow automatic administrative logon security policy setting.
+description: Best practices, location, values, policy management, and security considerations for the policy setting, Recovery console Allow automatic administrative logon.
 ms.assetid: be2498fc-48f4-43f3-ad09-74664e45e596
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Recovery console: Allow automatic administrative logon
@@ -22,13 +23,13 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management and security considerations for the **Recovery console: Allow automatic administrative logon** security policy setting.
+Describes the best practices, location, values, policy management, and security considerations for the **Recovery console: Allow automatic administrative logon** security policy setting.
 
 ## Reference
 
 This policy setting determines whether the built-in Administrator account password must be provided before access to the device is granted. If you enable this setting, the built-in Administrator account is automatically logged on to the computer at the Recovery Console; no password is required.
 
-The Recovery Console can be very useful when troubleshooting and repairing systems that cannot be restarted. However, enabling this policy setting so a user can automatically log on to the console is dangerous. Anyone can walk up to the server, shut it down by disconnecting the power, reboot it, select **Recovery Console** from the **Restart** menu, and then assume full control of the server.
+The Recovery Console can be useful when troubleshooting and repairing systems that cannot be restarted. However, enabling this policy setting so a user can automatically log on to the console is dangerous. Anyone can walk up to the server, shut it down by disconnecting the power, reboot it, select **Recovery Console** from the **Restart** menu, and then assume full control of the server.
 
 ### Possible values
 

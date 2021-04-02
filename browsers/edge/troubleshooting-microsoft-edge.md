@@ -9,7 +9,6 @@ author: dansimp
 ms.author: dansimp
 ms.prod: edge
 ms.sitesec: library
-title: Deploy Microsoft Edge kiosk mode
 ms.localizationpriority: medium
 ms.date: 10/15/2018
 ---

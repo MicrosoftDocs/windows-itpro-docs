@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: fbec5973-d35e-4797-9626-d0d56061527f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 07/13/2017
+ms.date: 2/6/2020
+ms.technology: mde
 ---
 
 # Increase scheduling priority
@@ -75,18 +76,18 @@ A user who is assigned this user right could increase the scheduling priority of
 
 ### Countermeasure
 
-Verify that only Administrators and Window Manager/Window Manager Group have the **Increase scheduling priority** user right assigned to them.
+Verify that only Administrators and Window Manager\Window Manager Group have the **Increase scheduling priority** user right assigned to them.
 
 ### Potential impact
 
-None. Restricting the **Increase scheduling priority** user right to members of the Administrators group and Window Manager/Window Manager Group is the default configuration.
+None. Restricting the **Increase scheduling priority** user right to members of the Administrators group and Window Manager\Window Manager Group is the default configuration.
 
 > [!Warning]  
 > If you remove **Window Manager\Window Manager Group** from the **Increase scheduling priority** user right, certain applications and computers do not function correctly. In particular, the INK workspace does not function correctly on unified memory architecture (UMA) laptop and desktop computers that run Windows 10, version 1903 (or later) and that use the Intel GFX driver.  
-> 
+>  
 > On affected computers, the display blinks when users draw on INK workspaces such as those that are used by Microsoft Edge, Microsoft PowerPoint, or Microsoft OneNote. The blinking occurs because the inking-related processes repeatedly try to use the Real-Time priority, but are denied permission.
 
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)
-- [Increase scheduling priority for Windows Server 2012 and earlier](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn221960(v%3dws.11))
+- [Increase scheduling priority for Windows Server 2012 and earlier](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn221960(v%3dws.11))

@@ -1,13 +1,13 @@
 ---
 title: Windows Defender Credential Guard protection limits (Windows 10)
-description: Scenarios not protected by Windows Defender Credential Guard in Windows 10.
+description: Some ways to store credentials are not protected by Windows Defender Credential Guard in Windows 10. Learn more with this guide.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -21,9 +21,6 @@ ms.reviewer:
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
-
-Prefer video? See [Credentials protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
-in the Deep Dive into Windows Defender Credential Guard video series.
 
 Some ways to store credentials are not protected by Windows Defender Credential Guard, including:
 
@@ -46,4 +43,6 @@ do not qualify as credentials because they cannot be presented to another comput
 
 **Deep Dive into Windows Defender Credential Guard: Related videos**
 
-[Protecting privileged users with Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)
+[Microsoft Cybersecurity Stack: Advanced Identity and Endpoint Protection: Manage Credential Guard](https://www.linkedin.com/learning/microsoft-cybersecurity-stack-advanced-identity-and-endpoint-protection/manage-credential-guard?u=3322)
+> [!NOTE]
+> - Note: Requires [LinkedIn Learning subscription](https://www.linkedin.com/learning/subscription/products) to view the full video

@@ -1,10 +1,10 @@
 ---
 title: Access Credential Manager as a trusted caller (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Access Credential Manager as a trusted caller security policy setting.
+description: Describes best practices, security considerations, and more for the security policy setting, Access Credential Manager as a trusted caller.
 ms.assetid: a51820d2-ca5b-47dd-8e9b-d7008603db88
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Access Credential Manager as a trusted caller
@@ -22,11 +23,11 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management, and security considerations for the **Access Credential Manager as a trusted caller** security policy setting.
+This article describes the recommended practices, location, values, policy management, and security considerations for the **Access Credential Manager as a trusted caller** security policy setting.
 
 ## Reference
 
-The **Access Credential Manager as a trusted caller** policy setting is used by Credential Manager during backup and restore. No accounts should have this privilege because it is assigned only to the Winlogon service. Saved credentials of users may be compromised if this privilege is given to other entities.
+The **Access Credential Manager as a trusted caller** policy setting is used by Credential Manager during backup and restore. No accounts should have this privilege because it's assigned only to the Winlogon service. Saved credentials of users may be compromised if this privilege is given to other entities.
 
 Constant: SeTrustedCredManAccessPrivilege
 
@@ -37,13 +38,15 @@ Constant: SeTrustedCredManAccessPrivilege
 
 ### Best practices
 
--   Do not modify this policy setting from the default.
+-   Don't modify this policy setting from the default.
 
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\User Rights Assignment
 
 ### Default values
+
+The following table shows the default value for the server type or Group Policy Object (GPO).
 
 | Server type or GPO | Default value |
 | - | - |
@@ -58,7 +61,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Use
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the computer is not required for this policy setting to be effective.
+A restart of the computer isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -82,7 +85,7 @@ If an account is given this user right, the user of the account may create an ap
 
 ### Countermeasure
 
-Do not define the **Access Credential Manager as a trusted caller** policy setting for any accounts besides Credential Manager.
+Don't define the **Access Credential Manager as a trusted caller** policy setting for any accounts besides Credential Manager.
 
 ### Potential impact
 

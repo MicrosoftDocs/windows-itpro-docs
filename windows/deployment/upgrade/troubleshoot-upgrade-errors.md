@@ -3,7 +3,7 @@ title: Troubleshoot Windows 10 upgrade errors - Windows IT Pro
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
+description: Understanding the Windows 10 upgrade process can help you troubleshoot errors when something goes wrong. Find out more with this guide.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -26,7 +26,7 @@ ms.topic: article
 
 If a Windows 10 upgrade is not successful, it can be very helpful to understand *when* an error occurred in the upgrade process. 
 
-Briefly, the upgrade process consists of four phases: **Downlevel**, **SafeOS**, **First boot**, and **Second boot**. The computer will reboot once between each phase. Note: Progress is tracked in the registry during the upgrade process using the following key: **HKLM\System\Setup\mosetup\volatile\SetupProgress**. This key is volatile and only present during the upgrade process; it contains a binary value in the range 0-100.
+Briefly, the upgrade process consists of four phases that are controlled by [Windows Setup](/windows-hardware/manufacture/desktop/windows-setup-technical-reference): **Downlevel**, **SafeOS**, **First boot**, and **Second boot**. The computer will reboot once between each phase. Note: Progress is tracked in the registry during the upgrade process using the following key: **HKLM\System\Setup\mosetup\volatile\SetupProgress**. This key is volatile and only present during the upgrade process; it contains a binary value in the range 0-100.
 
 These phases are explained in greater detail [below](#the-windows-10-upgrade-process). First, let's summarize the actions performed during each phase because this affects the type of errors that can be encountered.
 
@@ -34,10 +34,10 @@ These phases are explained in greater detail [below](#the-windows-10-upgrade-pro
 
 2. **SafeOS phase**: Errors most commonly occur during this phase due to hardware issues, firmware issues, or non-microsoft disk encryption software.
 
-    Since the computer is booted into Windows PE during the SafeOS phase, a useful troubleshooting technique is to boot into [Windows PE](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro) using installation media. You can use the [media creation tool](https://www.microsoft.com/software-download/windows10) to create bootable media, or you can use tools such as the [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit), and then boot your device from this media to test for hardware and firmware compatibility issues.
+    Since the computer is booted into Windows PE during the SafeOS phase, a useful troubleshooting technique is to boot into [Windows PE](/windows-hardware/manufacture/desktop/winpe-intro) using installation media. You can use the [media creation tool](https://www.microsoft.com/software-download/windows10) to create bootable media, or you can use tools such as the [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit), and then boot your device from this media to test for hardware and firmware compatibility issues.
 
     >[!TIP]
-    >If you attempt to use the media creation tool with a USB drive and this fails with error 0x80004005 - 0xa001a, this is because the USB drive is using GPT partition style. The tool requires that you use MBR partition style. You can use the DISKPART command to convert the USB drive from GPT to MBR. For more information, see [Change a GUID Partition Table Disk into a Master Boot Record Disk](https://go.microsoft.com/fwlink/?LinkId=207050).
+    >If you attempt to use the media creation tool with a USB drive and this fails with error 0x80004005 - 0xa001a, this is because the USB drive is using GPT partition style. The tool requires that you use MBR partition style. You can use the DISKPART command to convert the USB drive from GPT to MBR. For more information, see [Change a GUID Partition Table Disk into a Master Boot Record Disk](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725797(v=ws.11)).
 
     **Do not proceed with the Windows 10 installation after booting from this media**. This method can only be used to perform a clean install which will not migrate any of your apps and settings, and you will be required re-enter your Windows 10 license information.
 
@@ -91,7 +91,7 @@ WIM = Windows image (Microsoft)
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.md)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-/ifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)

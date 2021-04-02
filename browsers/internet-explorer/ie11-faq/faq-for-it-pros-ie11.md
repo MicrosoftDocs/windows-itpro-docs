@@ -16,6 +16,9 @@ ms.date: 10/16/2017
 
 
 # Internet Explorer 11 - FAQ for IT Pros
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Answering frequently asked questions about Internet Explorer 11 (IE11) features, operating system support, integration with the Windows operating system, Group Policy, and general configuration.
 
 ## Frequently Asked Questions
@@ -63,10 +66,10 @@ Supported web standards include:
 
 -   And mutation observers like DOM4 and 5.3
 
-For more information about specific changes and additions, see the [IE11 guide for developers](https://go.microsoft.com/fwlink/p/?LinkId=313188).
+For more information about specific changes and additions, see the [IE11 guide for developers](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182636(v=vs.85)).
 
 **Q: What test tools exist to test for potential application compatibility issues?**<br>
-The Compat Inspector tool supports Windows Internet Explorer 9 through IE11. For more information, see [Compat Inspector User Guide](https://go.microsoft.com/fwlink/p/?LinkId=313189). In addition, you can use the new [F12 Developer Tools](https://go.microsoft.com/fwlink/p/?LinkId=313190) that are included with IE11, or the [modern.ie](https://go.microsoft.com/fwlink/p/?linkid=308902) website for Microsoft Edge.
+The Compat Inspector tool supports Windows Internet Explorer 9 through IE11. For more information, see [Compat Inspector User Guide](https://go.microsoft.com/fwlink/p/?LinkId=313189). In addition, you can use the new [F12 Developer Tools](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85)) that are included with IE11, or the [modern.ie](https://go.microsoft.com/fwlink/p/?linkid=308902) website for Microsoft Edge.
 
 **Q: Why am I having problems launching my legacy apps with Internet Explorer 11**?<br>
 It’s most likely because IE no longer starts apps that use managed browser hosting controls, like in the .NET Framework 1.1 and 2.0. You can get IE11 to use managed browser hosting controls again, by:
@@ -75,7 +78,7 @@ It’s most likely because IE no longer starts apps that use managed browser hos
 
 -   **For x64 systems or for 64-bit processes on x64 systems:** Go to the `HKLM\SOFTWARE\Wow6432Node\.NETFramework` registry key and change the **EnableIEHosting** value to **1**.
 
-For more information, see the [Web Applications](https://go.microsoft.com/fwlink/p/?LinkId=308903) section of the Application Compatibility in the .NET Framework 4.5 page.
+For more information, see the [Web Applications](/dotnet/framework/migration-guide/application-compatibility) section of the Application Compatibility in the .NET Framework 4.5 page.
 
 **Q: Is there a compatibility list for IE?**<br>
 Yes. You can review the XML-based [compatibility version list](https://go.microsoft.com/fwlink/p/?LinkId=403864).
@@ -199,6 +202,6 @@ The following table displays which pages are available in IEAK 11, based on the 
 
 
 ## Related topics
-- [Microsoft Edge - Deployment Guide for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760643)
+- [Microsoft Edge - Deployment Guide for IT Pros](/microsoft-edge/deploy/)
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)

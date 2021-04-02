@@ -1,6 +1,6 @@
 ---
 title: Use the Volume Activation Management Tool (Windows 10)
-description: The Volume Activation Management Tool (VAMT) provides several useful features, including the ability to perform VAMT proxy activation and to track and monitor several types of product keys.
+description: The Volume Activation Management Tool (VAMT) provides several useful features, including the ability to track and monitor several types of product keys.
 ms.assetid: b11f0aee-7b60-44d1-be40-c960fc6c4c47
 ms.reviewer: 
 manager: laurawi
@@ -10,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article
@@ -70,8 +71,8 @@ The VAMT stores information in a Microsoft SQL Server database for performance 
 -   **Managing activation data**. The VAMT stores activation data in a SQL Server database. The tool can export this data in XML format to other VAMT hosts or to an archive.
 
 For more information, see:
--   [Volume Activation Management Tool (VAMT) Overview](https://go.microsoft.com/fwlink/p/?LinkId=618266)
--   [VAMT Step-by-Step Scenarios](https://go.microsoft.com/fwlink/p/?LinkId=618267)
+-   [Volume Activation Management Tool (VAMT) Overview](./volume-activation-management-tool.md)
+-   [VAMT Step-by-Step Scenarios](./vamt-step-by-step.md)
 
 ## See also
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)

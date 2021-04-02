@@ -1,6 +1,6 @@
 ---
 title: WindowsLicensing DDF file
-description: WindowsLicensing DDF file
+description: Learn about the OMA DM device description framework (DDF) for the WindowsLicensing configuration service provider (CSP).
 ms.assetid: 2A24C922-A167-4CEE-8F74-08E7453800D2
 ms.reviewer: 
 manager: dansimp

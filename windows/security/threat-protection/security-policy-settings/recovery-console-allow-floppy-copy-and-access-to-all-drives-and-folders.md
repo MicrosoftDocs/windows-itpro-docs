@@ -1,10 +1,10 @@
 ---
 title: Recovery console Allow floppy copy and access to all drives and folders (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Recovery console Allow floppy copy and access to all drives and folders security policy setting.
+description: Best practices, security considerations, and more for the policy setting, Recovery console Allow floppy copy and access to all drives and folders.
 ms.assetid: a5b4ac0c-f33d-42b5-a866-72afa7cbd0bd
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Recovery console: Allow floppy copy and access to all drives and folders

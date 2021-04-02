@@ -1,6 +1,6 @@
 ---
 title: EnterpriseExtFileSystem DDF
-description: EnterpriseExtFileSystem DDF
+description: Learn about the OMA DM device description framework (DDF) for the EnterpriseExtFileSystem configuration service provider (CSP).
 ms.assetid: 2D292E4B-15EE-4AEB-8884-6FEE8B92D2D1
 ms.reviewer: 
 manager: dansimp

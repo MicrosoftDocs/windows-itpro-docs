@@ -18,6 +18,9 @@ ms.date: 12/04/2017
 
 # Enterprise Mode schema v.2 guidance
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -46,19 +49,19 @@ The following is an example of the v.2 version of the Enterprise Mode schema.
  
 ```xml
 <site-list version="205">
-	<!--- File creation header --->
+	<!-- File creation header -->
 	<created-by>
 		<tool>EnterpriseSitelistManager</tool>
 		<version>10240</version>
 		<date-created>20150728.135021</date-created>
 	</created-by>
-  	<!--- Begin Site List ---> 
+  	<!-- Begin Site List --> 
 	<site url="www.cpandl.com">
 		<compat-mode>IE8Enterprise</compat-mode>
 		<open-in>MSEdge</open-in>
 	</site>
 	<site url="www.woodgrovebank.com">
-		<compat-mode>default</compat-mode>
+		<compat-mode>Default</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
 	<site url="adatum.com">
@@ -66,14 +69,15 @@ The following is an example of the v.2 version of the Enterprise Mode schema.
 		<open-in>IE11</open-in>
 	</site>
 	<site url="contoso.com">
-		<compat-mode>default</compat-mode>
+		<compat-mode>Default</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
 	<site url="relecloud.com"/>  
-		<compat-mode>default</compat-mode>
-		<open-in>none</open-in>
+		<compat-mode>Default</compat-mode>
+		<open-in>None</open-in>
 	<site url="relecloud.com/about">  
 		<compat-mode>IE8Enterprise"</compat-mode>
+		<open-in>None</open-in>
 	</site>
 	<site url="contoso.com/travel">
 		<compat-mode>IE7</compat-mode>
@@ -232,26 +236,26 @@ These v.1 version schema attributes have been deprecated in the v.2 version of t
 <table>
 <thead>
 <tr class="header">
-<th>Deprecated attribute</th>
-<th>New attribute</th>
+<th>Deprecated element/attribute</th>
+<th>New element</th>
 <th>Replacement example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>&lt;forceCompatView&gt;</td>
+<td>forceCompatView</td>
 <td>&lt;compat-mode&gt;</td>
-<td>Replace &lt;forceCompatView=&quot;true&quot;&gt; with &lt;compat-mode&gt;IE7Enterprise&lt;/compat-mode&gt;</td>
+<td>Replace forceCompatView=&quot;true&quot; with &lt;compat-mode&gt;IE7Enterprise&lt;/compat-mode&gt;</td>
 </tr>
 <tr>
-<td>&lt;docMode&gt;</td>
+<td>docMode</td>
 <td>&lt;compat-mode&gt;</td>
-<td>Replace &lt;docMode=&quot;IE5&quot;&gt; with &lt;compat-mode&gt;IE5&lt;/compat-mode&gt;</td>
+<td>Replace docMode=&quot;IE5&quot; with &lt;compat-mode&gt;IE5&lt;/compat-mode&gt;</td>
 </tr>
 <tr>
-<td>&lt;doNotTransition&gt;</td>
+<td>doNotTransition</td>
 <td>&lt;open-in&gt;</td>
-<td>Replace &lt;doNotTransition=&quot;true&quot;&gt; with &lt;open-in&gt;none&lt;/open-in&gt;</td>
+<td>Replace doNotTransition=&quot;true&quot; with &lt;open-in&gt;none&lt;/open-in&gt;</td>
 </tr>
 <tr>
 <td>&lt;domain&gt; and &lt;path&gt;</td>
@@ -259,25 +263,28 @@ These v.1 version schema attributes have been deprecated in the v.2 version of t
 <td>Replace:
 <pre class="syntax">
 &lt;emie&gt;
-  &lt;domain exclude=&quot;false&quot;&gt;contoso.com&lt;/domain&gt;
+  &lt;domain&gt;contoso.com&lt;/domain&gt;
 &lt;/emie&gt;</pre>
 With:
 <pre class="syntax">
 &lt;site url=&quot;contoso.com&quot;/&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
+  &lt;open-in&gt;IE11&lt;/open-in&gt;
 &lt;/site&gt;</pre>
 <b>-AND-</b><p>
 Replace:
 <pre class="syntax">
 &lt;emie&gt;
-  &lt;domain exclude=&quot;true&quot;&gt;contoso.com
-     &lt;path exclude=&quot;false&quot; forceCompatView=&quot;true&quot;&gt;/about&lt;/path&gt;
+  &lt;domain exclude=&quot;true&quot; doNotTransition=&quot;true&quot;&gt;
+    contoso.com
+    &lt;path forceCompatView=&quot;true&quot;&gt;/about&lt;/path&gt;
   &lt;/domain&gt;
 &lt;/emie&gt;</pre>
 With:
 <pre class="syntax">
 &lt;site url=&quot;contoso.com/about&quot;&gt;
   &lt;compat-mode&gt;IE7Enterprise&lt;/compat-mode&gt;
+  &lt;open-in&gt;IE11&lt;/open-in&gt;
 &lt;/site&gt;</pre></td>
 </tr>
 </table>

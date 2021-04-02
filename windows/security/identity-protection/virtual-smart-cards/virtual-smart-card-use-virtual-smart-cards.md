@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -40,15 +40,15 @@ To create and delete TPM virtual smart cards for end users, the Tpmvscmgr comman
 
 Virtual smart cards can also be created and deleted by using APIs. For more information, see the following classes and interfaces:
 
--   [TpmVirtualSmartCardManager](https://msdn.microsoft.com/library/windows/desktop/hh707171(v=vs.85).aspx)
+-   [TpmVirtualSmartCardManager](/previous-versions/windows/desktop/legacy/hh707171(v=vs.85))
 
--   [RemoteTpmVirtualSmartCardManager](https://msdn.microsoft.com/library/windows/desktop/hh707166(v=vs.85).aspx)
+-   [RemoteTpmVirtualSmartCardManager](/previous-versions/windows/desktop/legacy/hh707166(v=vs.85))
 
--   [ITpmVirtualSmartCardManager](https://msdn.microsoft.com/library/windows/desktop/hh707160(v=vs.85).aspx)
+-   [ITpmVirtualSmartCardManager](/windows/win32/api/tpmvscmgr/nn-tpmvscmgr-itpmvirtualsmartcardmanager)
 
--   [ITPMVirtualSmartCardManagerStatusCallBack](https://msdn.microsoft.com/library/windows/desktop/hh707161(v=vs.85).aspx)
+-   [ITPMVirtualSmartCardManagerStatusCallBack](/windows/win32/api/tpmvscmgr/nn-tpmvscmgr-itpmvirtualsmartcardmanagerstatuscallback)
 
-You can use APIs that were introduced in the Windows.Device.SmartCards namespace in Windows Server 2012 R2 and Windows 8.1 to build Microsoft Store apps to manage the full lifecycle of virtual smart cards. For information about how to build an app to do this, see [Strong Authentication: Building Apps That Leverage Virtual Smart Cards in Enterprise, BYOD, and Consumer Environments | Build 2013 | Channel 9](http://channel9.msdn.com/events/build/2013/2-041).
+You can use APIs that were introduced in the Windows.Device.SmartCards namespace in Windows Server 2012 R2 and Windows 8.1 to build Microsoft Store apps to manage the full lifecycle of virtual smart cards. For information about how to build an app to do this, see [Strong Authentication: Building Apps That Leverage Virtual Smart Cards in Enterprise, BYOD, and Consumer Environments | Build 2013 | Channel 9](https://channel9.msdn.com/events/build/2013/2-041).
 
 The following table describes the features that can be developed in a Microsoft Store app:
 
@@ -66,9 +66,9 @@ The following table describes the features that can be developed in a Microsoft 
 
 For more information about these Windows APIs, see:
 
--   [Windows.Devices.SmartCards namespace (Windows)](https://msdn.microsoft.com/library/windows/apps/windows.devices.smartcards.aspx)
+-   [Windows.Devices.SmartCards namespace (Windows)](/uwp/api/Windows.Devices.SmartCards)
 
--   [Windows.Security.Cryptography.Certificates namespace (Windows)](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.certificates.aspx)
+-   [Windows.Security.Cryptography.Certificates namespace (Windows)](/uwp/api/Windows.Security.Cryptography.Certificates)
 
 ## Distinguishing TPM-based virtual smart cards from physical smart cards
 

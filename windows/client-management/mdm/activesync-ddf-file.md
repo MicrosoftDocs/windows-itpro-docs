@@ -1,6 +1,6 @@
 ---
 title: ActiveSync DDF file
-description: ActiveSync DDF file
+description: Learn about the OMA DM device description framework (DDF) for the ActiveSync configuration service provider.
 ms.assetid: c4cd4816-ad8f-45b2-9b81-8abb18254096
 ms.reviewer: 
 manager: dansimp

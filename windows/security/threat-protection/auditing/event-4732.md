@@ -2,7 +2,7 @@
 title: 4732(S) A member was added to a security-enabled local group. (Windows 10)
 description: Describes security event 4732(S) A member was added to a security-enabled local group.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4732(S): A member was added to a security-enabled local group.
@@ -136,7 +137,7 @@ You will typically see “[4735](event-4735.md): A security-enabled local group 
 
     -   For a local group, this field will contain the name of the computer to which this new group belongs, for example: “Win81”.
 
-    -   [Built-in groups](https://technet.microsoft.com/library/dn169025(v=ws.10).aspx): Builtin
+    -   [Built-in groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dn169025(v=ws.10)): Builtin
 
 **Additional Information:**
 
@@ -153,10 +154,9 @@ For 4732(S): A member was added to a security-enabled local group.
 | **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on.                                                                       | Monitor this event with the **“Subject\\Security ID”** and **“Member\\Security ID”** that correspond to the high-value account or accounts.                                                                                                   |
 | **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                                                                                      | When you monitor for anomalies or malicious actions, use the **“Subject\\Security ID”** (with other information) to monitor how or when a particular account is being used.                                                                   |
 | **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                                                                                           | Monitor this event with the **“Subject\\Security ID”** and **“Member\\Security ID”** that correspond to the accounts that should never be used.                                                                                               |
-| **Account whitelist**: You might have a specific whitelist of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                                                                                            | If this event corresponds to a “whitelist-only” action, review the **“Subject\\Security ID”** for accounts that are outside the whitelist.                                                                                                    |
+| **Account whitelist**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                                                                                            | If this event corresponds to a “whitelist-only” action, review the **“Subject\\Security ID”** for accounts that are outside the allow list.                                                                                                    |
 | **Accounts of different types**: You might want to ensure that certain actions are performed only by certain account types, for example, local or domain account, machine or user account, vendor or employee account, and so on.                                                                                                                                                       | If this event corresponds to an action you want to monitor for certain account types, review the **“Subject\\Security ID”** to see whether the account type is as expected.                                                                   |
 | **External accounts**: You might be monitoring accounts from another domain, or “external” accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                                                                                           | Monitor this event for the **“Subject\\Account Domain”** corresponding to accounts from another domain or “external” accounts.                                                                                                                |
 | **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should not typically perform any actions.                                                                                                                                                                                                            | Monitor the target **Computer:** (or other target device) for actions performed by the **“Subject\\Security ID”** that you are concerned about.                                                                                               |
 | **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                                                                                             | Monitor “**Subject\\Account Name”** for names that don’t comply with naming conventions.                                                                                                                                                      |
 | **Mismatch between type of account (user or computer) and the group it was added to**: You might want to monitor to ensure that a computer account was not added to a group intended for users, or a user account was not added to a group intended for computers.                                                                                                                      | Monitor the type of account added to the group to see if it matches what the group is intended for.                                                                                                                                           |
-

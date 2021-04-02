@@ -1,10 +1,10 @@
 ---
 title: Network security Allow Local System to use computer identity for NTLM (Windows 10)
-description: Describes the location, values, policy management, and security considerations for the Network security Allow Local System to use computer identity for NTLM security policy setting.
+description: Location, values, policy management, and security considerations for the policy setting, Network security Allow Local System to use computer identity for NTLM.
 ms.assetid: c46a658d-b7a4-4139-b7ea-b9268c240053
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network security: Allow Local System to use computer identity for NTLM
@@ -34,7 +35,7 @@ When a service connects with the device identity, signing and encryption are sup
 
 | Setting | Windows Server 2008 and Windows Vista | At least Windows Server 2008 R2 and Windows 7 |
 | - | - | - | 
-| Enabled | Services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.| Services running as Local System that use Negotiate will use the computer identity. This is the default behavior. |
+| Enabled | Services running as Local System that use Negotiate will use the computer identity. This value might cause some authentication requests between Windows operating systems to fail and log an error.| Services running as Local System that use Negotiate will use the computer identity. This is the default behavior. |
 | Disabled| Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. This is the default behavior.| Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously.|
 |Neither|Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. | Services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.| 
  
@@ -91,6 +92,6 @@ You can configure the **Network security: Allow Local System to use computer ide
 If you do not configure this policy setting on Windows Server 2008 and Windows Vista, services running as Local System that use the default credentials will use the NULL session and revert to NTLM authentication for Windows operating systems earlier than Windows Vista or Windows Server 2008.
 Beginning with Windows Server 2008 R2 and Windows 7, the system allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
 
-## Related topics
+## Related articles
 
 - [Security Options](security-options.md)

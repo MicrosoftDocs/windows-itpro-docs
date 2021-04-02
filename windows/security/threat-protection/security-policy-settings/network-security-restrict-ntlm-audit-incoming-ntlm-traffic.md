@@ -1,10 +1,10 @@
 ---
 title: Network security Restrict NTLM Audit incoming NTLM traffic (Windows 10)
-description: Describes the best practices, location, values, management aspects, and security considerations for the Network Security Restrict NTLM Audit incoming NTLM traffic security policy setting.
+description: Best practices, security considerations and more for the security policy setting, Network Security Restrict NTLM Audit incoming NTLM traffic.
 ms.assetid: 37e380c2-22e1-44cd-9993-e12815b845cf
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network security: Restrict NTLM: Audit incoming NTLM traffic

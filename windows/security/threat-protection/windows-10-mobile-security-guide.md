@@ -1,18 +1,19 @@
 ---
 title: Windows 10 Mobile security guide (Windows 10)
-description: This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.
+description: The most important security features in the Windows 10 Mobile — identity access & control, data protection, malware resistance, and app platform security.
 ms.assetid: D51EF508-699E-4A68-A7CD-91D821A97205
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 keywords: data protection, encryption, malware resistance, smartphone, device, Microsoft Store
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: dulcemontemayor
 ms.date: 10/13/2017
+ms.technology: mde
 ---
 # Windows 10 Mobile security guide
 
@@ -194,7 +195,7 @@ The table below outlines how Windows 10 Mobile mitigates specific malware threat
 </tr>
 <tr class="odd">
 <td align="left"><p>Users access a dangerous website without knowledge of the risk.</p></td>
-<td align="left"><p>The SmartScreen URL Reputation feature prevents users from going to a malicious website that may try to exploit the browser and take control of the device.</p></td>
+<td align="left"><p>The Windows Defender SmartScreen URL Reputation feature prevents users from going to a malicious website that may try to exploit the browser and take control of the device.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Malware exploits a vulnerability in a browser add-on.</p></td>
@@ -236,7 +237,7 @@ Windows 10 Mobile supports TPM implementations that comply with the 2.0 standard
 
 Many assume that original equipment manufacturers (OEMs) must implant a TPM in hardware on a motherboard as a discrete module, but TPM can also be effective when implemented in firmware. Windows 10 Mobile supports only firmware TPM that complies with the 2.0 standard. Windows does not differentiate between discrete and firmware-based solutions because both must meet the same implementation and security requirements. Therefore, any Windows 10 feature that can take advantage of TPM can be used with Windows 10 Mobile.
 
->Microsoft requires TPM 2.0 on devices running any version of Windows 10 Mobile. For more information, see [minimum hardware requirements](https://technet.microsoft.com/library/dn915086.aspx)
+>Microsoft requires TPM 2.0 on devices running any version of Windows 10 Mobile. For more information, see [minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 
 Several Windows 10 Mobile security features require TPM:
 - Virtual smart cards
@@ -366,4 +367,3 @@ Windows 10 Mobile provides security on personal and corporate-owned devices to p
 November 2015 		Updated for Windows 10 Mobile (version 1511)
 
 July 2016		Updated for Windows 10 Mobile Anniversary Update (version 1607)
-

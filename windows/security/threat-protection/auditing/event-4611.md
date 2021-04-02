@@ -2,7 +2,7 @@
 title: 4611(S) A trusted logon process has been registered with the Local Security Authority. (Windows 10)
 description: Describes security event 4611(S) A trusted logon process has been registered with the Local Security Authority.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4611(S): A trusted logon process has been registered with the Local Security Authority.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event indicates that a logon process has registered with the Local Security Authority ([LSA](https://msdn.microsoft.com/library/windows/desktop/aa378326(v=vs.85).aspx)). Also, logon requests will now be accepted from this source.
+This event indicates that a logon process has registered with the Local Security Authority ([LSA](/windows/win32/secauthn/lsa-authentication)). Also, logon requests will now be accepted from this source.
 
 At the technical level, the event does not come from the registration of a trusted logon process, but from a confirmation that the process is a trusted logon process. If it is a trusted logon process, the event generates.
 
@@ -108,7 +109,6 @@ For 4611(S): A trusted logon process has been registered with the Local Security
 
 -   Because this event is typically triggered by the SYSTEM account, we recommend that you report it whenever **“Subject\\Security ID”** is not SYSTEM.
 
--   Typically this event has an informational purpose. If you defined the list of allowed Logon Processes in the system, then you can check is “**Logon Process Name”** field value in the whitelist or not.
+-   Typically this event has an informational purpose. If you defined the list of allowed Logon Processes in the system, then you can check is “**Logon Process Name”** field value in the allow list or not.
 
--   
-
+-

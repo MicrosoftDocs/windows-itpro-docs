@@ -1,13 +1,13 @@
 ---
 title: Policy CSP - DeliveryOptimization
-description: Policy CSP - DeliveryOptimization
+description: Learn how to use the Policy CSP - DeliveryOptimization setting to configure one or more Microsoft Connected Cache servers to be used by Delivery Optimization.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 06/09/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -32,6 +32,9 @@ manager: dansimp
     <a href="#deliveryoptimization-docachehost">DeliveryOptimization/DOCacheHost</a>
   </dd>
   <dd>
+    <a href="#deliveryoptimization-docachehostsource">DeliveryOptimization/DOCacheHostSource</a>
+  </dd>
+  <dd>
     <a href="#deliveryoptimization-dodelaybackgrounddownloadfromhttp">DeliveryOptimization/DODelayBackgroundDownloadFromHttp</a>
   </dd>
   <dd>
@@ -53,6 +56,9 @@ manager: dansimp
     <a href="#deliveryoptimization-dogroupidsource">DeliveryOptimization/DOGroupIdSource</a>
   </dd>
   <dd>
+    <a href="#deliveryoptimization-domaxbackgrounddownloadbandwidth">DeliveryOptimization/DOMaxBackgroundDownloadBandwidth</a>
+  </dd>
+  <dd>
     <a href="#deliveryoptimization-domaxcacheage">DeliveryOptimization/DOMaxCacheAge</a>
   </dd>
   <dd>
@@ -60,6 +66,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#deliveryoptimization-domaxdownloadbandwidth">DeliveryOptimization/DOMaxDownloadBandwidth</a>
+  </dd>
+  <dd>
+    <a href="#deliveryoptimization-domaxforegrounddownloadbandwidth">DeliveryOptimization/DOMaxForegroundDownloadBandwidth</a>
   </dd>
   <dd>
     <a href="#deliveryoptimization-domaxuploadbandwidth">DeliveryOptimization/DOMaxUploadBandwidth</a>
@@ -289,12 +298,15 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-[Reserved for future use]
+
+This policy allows you to configure one or more Microsoft Connected Cache servers to be used by Delivery Optimization.
+
+One or more values can be added as either fully qualified domain names (FQDN) or IP addresses. To add multiple values, separate each FQDN or IP address by commas.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *[Reserved for future use] Cache Server Hostname*
+-   GP English name: *Cache Server Hostname*
 -   GP name: *CacheHost*
 -   GP element: *CacheHost*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -302,6 +314,86 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="deliveryoptimization-docachehostsource"></a>**DeliveryOptimization/DOCacheHostSource**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy allows you to configure one or more Delivery Optimization in Network Cache servers through a custom DHCP Option. One or more values can be added as either fully qualified domain names (FQDN) or IP addresses.  To add multiple values, separate each FQDN or IP address by commas.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Cache Server Hostname Source*
+-   GP name: *CacheHostSource*
+-   GP element: *CacheHostSource*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following are the supported values:  
+- 1 = DHCP Option ID.
+- 2 = DHCP Option ID Force.
+
+When DHCP Option ID (1) is set, the client will query DHCP Option ID 235 and use the returned FQDN or IP value as Cache Server Hostname value. This policy will be overridden when the [Cache Server Hostname](#deliveryoptimization-docachehost) policy has been set.
+
+When DHCP Option ID Force (2) is set, the client will query DHCP Option ID 235 and use the returned FQDN or IP value as Cache Server Hostname value, and will override the Cache Server Hostname policy if it has been set.
+
+> [!Note]
+> If the DHCP Option ID is formatted incorrectly, the client will fall back to the [Cache Server Hostname](#deliveryoptimization-docachehost) policy value if that value has been set.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -662,8 +754,7 @@ The following list shows the supported values:
 -   2 – HTTP blended with peering across a private group. Peering occurs on devices in the same Active Directory Site (if it exists) or the same domain by default. When this option is selected, peering will cross NATs. To create a custom group use Group ID in combination with Mode 2.
 -   3 – HTTP blended with Internet peering.
 -   99 - Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607.
--   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
-
+-   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607. Note that this value is deprecated and will be removed in a future release.
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -790,7 +881,7 @@ The options set in this policy only apply to Group (2) download mode. If Group (
 
 For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
 
-Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this, set the value of DOGroupIdSource to 5.
+Starting with Windows 10, version 1903, you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this, set the value of DOGroupIdSource to 5.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -812,6 +903,68 @@ The following list shows the supported values:
 -   5 - AAD
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="deliveryoptimization-domaxbackgrounddownloadbandwidth"></a>**DeliveryOptimization/DOMaxBackgroundDownloadBandwidth**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy specifies the maximum background download bandwidth in KiloBytes/second that the device can use across all concurrent download activities using Delivery Optimization.
+
+The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Maximum Background Download Bandwidth (in KB/s)*
+-   GP name: *MaxBackgroundDownloadBandwidth*
+-   GP element: *MaxBackgroundDownloadBandwidth*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -952,70 +1105,27 @@ ADMX Info:
 <a href="" id="deliveryoptimization-domaxdownloadbandwidth"></a>**DeliveryOptimization/DOMaxDownloadBandwidth**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
 
 <!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
 <hr/>
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
- 
-
-Added in Windows 10, version 1607. Specifies the maximum download bandwidth in KiloBytes/second that the device can use across all concurrent download activities using Delivery Optimization.
-
-The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
+This policy is deprecated. Use [DOMaxForegroundDownloadBandwidth](#deliveryoptimization-domaxforegrounddownloadbandwidth) and [DOMaxBackgroundDownloadBandwidth](#deliveryoptimization-domaxbackgrounddownloadbandwidth) policies instead.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Maximum Download Bandwidth (in KB/s)*
--   GP name: *MaxDownloadBandwidth*
--   GP element: *MaxDownloadBandwidth*
--   GP path: *Windows Components/Delivery Optimization*
--   GP ADMX file name: *DeliveryOptimization.admx*
-
 <!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-domaxuploadbandwidth"></a>**DeliveryOptimization/DOMaxUploadBandwidth**  
+<a href="" id="deliveryoptimization-domaxforegrounddownloadbandwidth"></a>**DeliveryOptimization/DOMaxForegroundDownloadBandwidth**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1029,19 +1139,19 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 </table>
 
@@ -1058,23 +1168,38 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+This policy specifies the maximum foreground download bandwidth in KiloBytes/second that the device can use across all concurrent download activities using Delivery Optimization.
 
- 
-Specifies the maximum upload bandwidth in KiloBytes/second that a device will use across all concurrent upload activity using Delivery Optimization.
-
-The default value is 0, which permits unlimited possible bandwidth (optimized for minimal usage of upload bandwidth).
+The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Max Upload Bandwidth (in KB/s)*
--   GP name: *MaxUploadBandwidth*
--   GP element: *MaxUploadBandwidth*
+-   GP English name: *Maximum Foreground Download Bandwidth (in KB/s)*
+-   GP name: *MaxForegroundDownloadBandwidth*
+-   GP element: *MaxForegroundDownloadBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*
 
+<!--/ADMXMapped-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="deliveryoptimization-domaxuploadbandwidth"></a>**DeliveryOptimization/DOMaxUploadBandwidth**  
+
+<!--SupportedSKUs-->
+<!--/SupportedSKUs-->
+<!--Scope-->
+
+<!--/Scope-->
+<!--Description-->
+
+This policy is deprecated because it only applies to uploads to Internet peers (only allowed when DownloadMode is set to 3) which is not used in commercial deployments. There is no alternate policy to use.
+
+<!--/Description-->
+<!--ADMXMapped-->
 <!--/ADMXMapped-->
 <!--/Policy-->
 
@@ -1901,12 +2026,14 @@ This policy allows an IT Admin to define the following:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

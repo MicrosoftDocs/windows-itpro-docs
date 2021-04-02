@@ -1,10 +1,10 @@
 ---
 title: User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode security policy setting.
+description: Best practices and more for the security policy setting, User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode.
 ms.assetid: 46a3c3a2-1d2e-4a6f-b5e6-29f9592f535d
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2017
+ms.technology: mde
 ---
 
 # User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode
@@ -65,7 +66,7 @@ This policy setting determines the behavior of the elevation prompt for accounts
 
 -   Selecting the option **Elevate without prompting** minimizes the protection that is provided by UAC. We do not recommend selecting this value unless administrator accounts are tightly controlled and the operating environment is highly secure.
 
--   It is recommended not to enable the built-in Administrator account on the client computer, but to use the standard user account and User Account Control (UAC) instead. If you want to enable the built-in Administrator account to carry out administrative tasks, for security reasons you should also enable Admin Approval Mode. For further information, see [UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account](https://docs.microsoft.com/windows/device-security/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)
+-   It is recommended not to enable the built-in Administrator account on the client computer, but to use the standard user account and User Account Control (UAC) instead. If you want to enable the built-in Administrator account to carry out administrative tasks, for security reasons you should also enable Admin Approval Mode. For further information, see [UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account](/windows/device-security/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)
 
 ### Location
 

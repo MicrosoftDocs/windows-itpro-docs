@@ -2,9 +2,9 @@
 title: Advanced security audit policy settings (Windows 10)
 description: This reference for IT professionals provides information about the advanced audit policy settings that are available in Windows and the audit events that they generate.
 ms.assetid: 93b28b92-796f-4036-a53b-8b9e80f9f171
-ms.reviewer: 
+ms.reviewer: This reference for IT professionals provides information about the advanced audit policy settings that are available in Windows and the audit events that they generate.
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Advanced security audit policy settings
@@ -42,7 +43,7 @@ Configuring policy settings in this category can help you document attempts to a
 -   [Audit Credential Validation](audit-credential-validation.md)
 -   [Audit Kerberos Authentication Service](audit-kerberos-authentication-service.md)
 -   [Audit Kerberos Service Ticket Operations](audit-kerberos-service-ticket-operations.md)
--   [Audit Other Logon/Logoff Events](audit-other-logonlogoff-events.md)
+-   [Audit Other Account Logon Events](audit-other-account-logon-events.md)
 
 ## Account Management
 
@@ -64,8 +65,7 @@ Detailed Tracking security policy settings and audit events can be used to monit
 - [Audit Process Creation](audit-process-creation.md)
 - [Audit Process Termination](audit-process-termination.md)
 - [Audit RPC Events](audit-rpc-events.md)
-- [Audit Credential Validation](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-credential-validation)
-- [Audit Token Right Adjusted](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-token-right-adjusted)
+- [Audit Token Right Adjusted](./audit-token-right-adjusted.md)
 
 ## DS Access
 
@@ -151,8 +151,8 @@ Auditors will be able to prove that every resource in the system is protected by
 
 Resource SACLs are also useful for diagnostic scenarios. For example, setting the Global Object Access Auditing policy to log all the activity for a specific user and enabling the policy to track "Access denied" events for the file system or registry can help administrators quickly identify which object in a system is denying a user access.
 
-> **Note:**  If a file or folder SACL and a Global Object Access Auditing policy setting (or a single registry setting SACL and a Global Object Access Auditing policy setting) are configured on a computer, the effective SACL is derived from combining the file or folder SACL and the Global Object 
-Access Auditing policy. This means that an audit event is generated if an activity matches the file or folder SACL or the Global Object Access Auditing policy.
+> [!NOTE]
+> If a file or folder SACL and a Global Object Access Auditing policy setting (or a single registry setting SACL and a Global Object Access Auditing policy setting) are configured on a computer, the effective SACL is derived from combining the file or folder SACL and the Global Object Access Auditing policy. This means that an audit event is generated if an activity matches the file or folder SACL or the Global Object Access Auditing policy.
  
 This category includes the following subcategories:
 -   [File System (Global Object Access Auditing)](file-system-global-object-access-auditing.md)

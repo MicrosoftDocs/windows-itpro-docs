@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting App-V (Windows 10)
-description: Troubleshooting App-V
+description: Learn how to find information about troubleshooting Application Virtualization (App-V) and information about other App-V topics.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -22,7 +22,7 @@ For information that can help with troubleshooting App-V for Windows 10, see:
 
 - [Application Virtualization (App-V): List of Microsoft Support Knowledge Base Articles](https://social.technet.microsoft.com/wiki/contents/articles/14272.app-v-v5-x-list-of-microsoft-support-knowledge-base-articles.aspx)
 
-- [Microsoft App-V Team Blog](https://blogs.technet.microsoft.com/appv/)
+- [Microsoft App-V Team Blog](/archive/blogs/appv/)
 
 - [Release Notes for App-V](appv-release-notes-for-appv-for-windows.md)
 

@@ -1,10 +1,10 @@
 ---
-title: Accounts Limit local account use of blank passwords to console logon only (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Accounts Limit local account use of blank passwords to console logon only security policy setting.
+title: Accounts Limit local account use of blank passwords (Windows 10)
+description: Learn best practices, security considerations, and more for the policy setting, Accounts Limit local account use of blank passwords to console logon only.
 ms.assetid: a1bfb58b-1ae8-4de9-832b-aa889a6e64bd
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Accounts: Limit local account use of blank passwords to console logon only

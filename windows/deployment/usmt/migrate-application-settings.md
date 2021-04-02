@@ -1,6 +1,6 @@
 ---
 title: Migrate Application Settings (Windows 10)
-description: Migrate Application Settings
+description: Learn how to author a custom migration .xml file that migrates the settings of an application that isn't migrated by default using MigApp.xml.
 ms.assetid: 28f70a83-0a3e-4a6b-968a-2b78ccd3cc07
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +8,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -68,7 +69,7 @@ Next, you should go through the user interface and make a list of all of the ava
 
 **How To Determine Where Each Setting is Stored**
 
-1.  Download a file and registry monitoring tool, such as the Regmon and Filemon tools, from the [Windows Sysinternals Web site](https://go.microsoft.com/fwlink/p/?linkid=36109).
+1.  Download a file and registry monitoring tool, such as the Regmon and Filemon tools, from the [Windows Sysinternals Web site](/sysinternals/).
 
 2.  Shut down as many applications as possible to limit the registry and file system activity on the computer.
 
@@ -163,10 +164,4 @@ To speed up the time it takes to collect and migrate the data, you can migrate o
 [Log Files](usmt-log-files.md)
 
  
-
- 
-
-
-
-
 

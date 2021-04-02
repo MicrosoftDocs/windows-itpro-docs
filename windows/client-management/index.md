@@ -1,6 +1,6 @@
 ---
 title: Client management (Windows 10)
-description: Windows 10 client management
+description: Learn about the administrative tools, tasks and best practices for managing Windows 10 and Windows 10 Mobile clients across your enterprise.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -23,6 +23,7 @@ Learn about the administrative tools, tasks and best practices for managing Wind
 |[Connect to remote Azure Active Directory-joined PCs](connect-to-remote-aadj-pc.md)| Instructions for connecting to a remote PC joined to Azure Active Directory (Azure AD)|
 |[Join Windows 10 Mobile to Azure AD](join-windows-10-mobile-to-azure-active-directory.md)| Describes the considerations and options for using Windows 10 Mobile with Azure AD in your organization.|
 |[New policies for Windows 10](new-policies-for-windows-10.md)| Listing of new group policy settings available in Windows 10|
+|[Windows 10 default media removal policy](change-default-removal-policy-external-storage-media.md) |In Windows 10, version 1809, the default removal policy for external storage media changed from "Better performance" to "Quick removal." |
 |[Group policies for enterprise and education editions](group-policies-for-enterprise-and-education-editions.md)| Listing of all group policy settings that apply specifically to Windows 10 Enterprise and Education editions|
 | [Manage the Settings app with Group Policy](manage-settings-app-with-group-policy.md) | Starting in Windows 10, version 1703, you can now manage the pages that are shown in the Settings app by using Group Policy. |
 |[Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)| Instructions for resetting a Windows 10 Mobile device using either *factory* or *'wipe and persist'* reset options|

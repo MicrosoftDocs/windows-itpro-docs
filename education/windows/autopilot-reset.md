@@ -30,7 +30,7 @@ To enable Autopilot Reset in Windows 10, version 1709 (Fall Creators Update), yo
 
 To use Autopilot Reset, [Windows Recovery Environment (WinRE) must be enabled on the device](#winre).
 
-**DisableAutomaticReDeploymentCredentials** is a policy that enables or disables the visibility of the credentials for Autopilot Reset. It is a policy node in the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, this policy is set to 1 (Disable). This ensures that Autopilot Reset isn't triggered by accident.
+**DisableAutomaticReDeploymentCredentials** is a policy that enables or disables the visibility of the credentials for Autopilot Reset. It is a policy node in the [Policy CSP](/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, this policy is set to 1 (Disable). This ensures that Autopilot Reset isn't triggered by accident.
 
 You can set the policy using one of these methods:
 
@@ -45,7 +45,7 @@ You can set the policy using one of these methods:
 
 - Windows Configuration Designer
     
-    You can [use Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package) to set the **Runtime settings > Policies > CredentialProviders > DisableAutomaticReDeploymentCredentials** setting and create a provisioning package.
+    You can [use Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-create-package) to set the **Runtime settings > Policies > CredentialProviders > DisableAutomaticReDeploymentCredentials** setting and create a provisioning package.
 
 - Set up School PCs app
 
@@ -64,7 +64,7 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
 **To trigger Autopilot Reset**
 
-1. From the Windows device lock screen, enter the keystroke: **CTRL + ![Windows key](images/windows_glyph.png) + R**. 
+1. From the Windows device lock screen, enter the keystroke: **CTRL + Windows key + R**. 
 
     ![Enter CTRL+Windows key+R on the Windows lockscreen](images/autopilot-reset-lockscreen.png)
 
@@ -95,9 +95,9 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
 ## Troubleshoot Autopilot Reset
 
-Autopilot Reset will fail when the [Windows Recovery Environment (WinRE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference) is not enabled on the device. You will see `Error code: ERROR_NOT_SUPPORTED (0x80070032)`.
+Autopilot Reset will fail when the [Windows Recovery Environment (WinRE)](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference) is not enabled on the device. You will see `Error code: ERROR_NOT_SUPPORTED (0x80070032)`.
 
-To make sure WinRE is enabled, use the [REAgentC.exe tool](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reagentc-command-line-options) to run the following command:
+To make sure WinRE is enabled, use the [REAgentC.exe tool](/windows-hardware/manufacture/desktop/reagentc-command-line-options) to run the following command:
 
 ```
 reagentc /enable
@@ -108,8 +108,3 @@ If Autopilot Reset fails after enabling WinRE, or if you are unable to enable Wi
 ## Related topics
 
 [Set up Windows devices for education](set-up-windows-10.md)
-
-
-
-
-

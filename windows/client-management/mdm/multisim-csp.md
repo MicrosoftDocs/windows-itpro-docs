@@ -1,6 +1,6 @@
 ---
 title: MultiSIM CSP
-description: MultiSIM CSP allows the enterprise to manage devices with dual SIM single active configuration.
+description: MultiSIM configuration service provider (CSP) allows the enterprise to manage devices with dual SIM single active configuration.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -17,10 +17,22 @@ manager: dansimp
 The MultiSIM configuration service provider (CSP) is used by the enterprise to manage devices with dual SIM single active configuration. An enterprise can set policies on whether that user can switch between SIM slots, specify which slot is the default, and whether the slot is embedded. This CSP was added in Windows 10, version 1803.
 
 
-The following diagram shows the MultiSIM configuration service provider in tree format.
-
-![MultiSIM CSP diagram](images/provisioning-csp-multisim.png) 
-
+The following shows the MultiSIM configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+MultiSIM
+----ModemID
+--------Identifier
+--------IsEmbedded
+--------Slots
+------------SlotID
+----------------Identifier
+----------------IsEmbedded
+----------------IsSelected
+----------------State
+--------Policies
+------------SlotSelectionEnabled
+```
 <a href="" id="multisim"></a>**./Device/Vendor/MSFT/MultiSIM**  
 Root node.
 

@@ -1,6 +1,6 @@
 ---
 title: NodeCache CSP
-description: NodeCache CSP
+description: Use the NodeCache configuration service provider (CSP) to synchronize, monitor, and manage the client cache.
 ms.assetid: b4dd2b0d-79ef-42ac-ab5b-ee07b3097876
 ms.reviewer: 
 manager: dansimp
@@ -27,10 +27,47 @@ application/x-nodemon-sha256
 
 NodeCache will hash the values and compare with a hash value that was sent down by the server. This supports checking a parent node and its children recursively.
 
-The following diagram shows the NodeCache configuration service provider in tree format.
+The following shows the NodeCache configuration service provider in tree format.
+```
+./User/Vendor/MSFT
+NodeCache
+----ProviderID
+--------CacheVersion
+--------ChangedNodes
+--------ChangedNodesData
+--------Nodes
+------------NodeID
+----------------NodeURI
+----------------ExpectedValue
+----------------AutoSetExpectedValue
 
-![nodecache csp](images/provisioning-csp-nodecache.png)
 
+./Device/Vendor/MSFT
+NodeCache
+----ProviderID
+--------CacheVersion
+--------ChangedNodes
+--------ChangedNodesData
+--------Nodes
+------------NodeID
+----------------NodeURI
+----------------ExpectedValue
+----------------AutoSetExpectedValue
+
+
+./User/Vendor/MSFT
+./Device/Vendor/MSFT
+NodeCache
+----ProviderID
+--------CacheVersion
+--------ChangedNodes
+--------ChangedNodesData
+--------Nodes
+------------NodeID
+----------------NodeURI
+----------------ExpectedValue
+----------------AutoSetExpectedValue
+```
 <a href="" id="--device-vendor-msft"></a>**./Device/Vendor/MSFT and ./User/Vendor/MSFT**  
 Required. The root node for the NodeCache object. Supported operation is Get. This configuration service provider is used for enterprise device management only. This is a predefined MIME type to identify this managed object in OMA DM syntax.
 

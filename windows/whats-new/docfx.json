@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -32,6 +33,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.technology": "windows",
       "ms.topic": "article",
       "audience": "ITPro",
@@ -43,7 +45,18 @@
           "depot_name": "MSDN.win-whats-new",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "What's new in Windows",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],

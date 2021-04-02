@@ -1,10 +1,11 @@
 ---
-title: Log files - Windows IT Pro
+title: Log files and resolving upgrade errors
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
+description: Learn how to interpret and analyze the log files that are generated during the Windows 10 upgrade process. 
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -27,14 +28,15 @@ ms.topic: article
 
 Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
 
-Note: Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files. 
+>[!NOTE]
+>Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files. 
 
 The following table describes some log files and how to use them for troubleshooting purposes:<br>
 
 <br>
 
 <table>
-<tr><td BGCOLOR="#a0e4fa"><B>Log file</td><td BGCOLOR="#a0e4fa"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><B>Description</td><td BGCOLOR="#a0e4fa"><B>When to use</td>
+<tr><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Log file</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Description</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>When to use</td>
 <tr><td rowspan="5">setupact.log</td><td>Down-Level:<br>$Windows.~BT\Sources\Panther</td><td>Contains information about setup actions during the downlevel phase. </td>
 <td>All down-level failures and starting point for rollback investigations.<br> This is the most important log for diagnosing setup issues.</td>
 <tr><td>OOBE:<br>$Windows.~BT\Sources\Panther\UnattendGC</td>
@@ -51,7 +53,7 @@ setupapi.dev.log<br>
 Event logs (*.evtx)</td>
 <td>$Windows.~BT\Sources\Rollback<td>Additional logs collected during rollback.</td>
 <td>
-Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<br>
+Setupmem.dmp: If OS bug checks during upgrade, setup will attempt to extract a mini-dump.<br>
 Setupapi: Device install issues - 0x30018<br>
 Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.</td>
 </table>
@@ -79,7 +81,7 @@ See the following example:
 
 ## Analyze log files
 
->The following instructions are meant for IT professionals. Also see the [Upgrade error codes](upgrade-error-codes.md) section in this guide to familiarize yourself with [result codes](upgrade-error-codes.md#result-codes) and [extend codes](upgrade-error-codes.md#extend-codes).
+The following instructions are meant for IT professionals. Also see the [Upgrade error codes](upgrade-error-codes.md) section in this guide to familiarize yourself with [result codes](upgrade-error-codes.md#result-codes) and [extend codes](upgrade-error-codes.md#extend-codes).
 
 <br>To analyze Windows Setup log files:
 
@@ -110,7 +112,7 @@ See the following example:
 
 For example, assume that the error code for an error is 0x8007042B - 0x2000D. Searching for "8007042B" reveals the following content from the setuperr.log file:
 
->Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds, and the certificate file name which is a long text string is shortened to just "CN."
+Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds, and the certificate file name which is a long text string is shortened to just "CN."
 
 <br><B>setuperr.log</B> content:
 
@@ -131,7 +133,7 @@ The first line indicates there was an error **0x00000570** with the file **C:\Pr
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
 </PRE>
 
-</B>The error 0x00000570 is a [Win32 error code](https://msdn.microsoft.com/library/cc231199.aspx) corresponding to: ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable.
+</B>The error 0x00000570 is a [Win32 error code](/openspecs/windows_protocols/ms-erref/18d8fbe8-a967-4f1c-ae50-99ca8e491d2d) corresponding to: ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable.
 
 Therefore, Windows Setup failed because it was not able to migrate the corrupt file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]**.  This file is a local system certificate and can be safely deleted. Searching the setupact.log file for additional details, the phrase "Shell application requested abort" is found in a location with the same timestamp as the lines in setuperr.log. This confirms our suspicion that this file is the cause of the upgrade failure:
 
@@ -252,7 +254,7 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.md)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)

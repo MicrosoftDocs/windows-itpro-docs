@@ -1,6 +1,6 @@
 ---
 title: Get Started with UE-V
-description: Get Started with UE-V
+description: Use the steps in this article to deploy User Experience Virtualization (UE-V) for the first time in a test environment.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -18,7 +18,7 @@ ms.author: dansimp
 -   Windows 10, version 1607
 
 >[!NOTE]
->This documentation is for the most recent version of UE-V. If you're looking for information about UE-V 2.x, which was included in the Microsoft Desktop Optimization Pack (MDOP), see [Get Started with UE-V 2.x](https://docs.microsoft.com/microsoft-desktop-optimization-pack/uev-v2/get-started-with-ue-v-2x-new-uevv2).
+>This documentation is for the most recent version of UE-V. If you're looking for information about UE-V 2.x, which was included in the Microsoft Desktop Optimization Pack (MDOP), see [Get Started with UE-V 2.x](/microsoft-desktop-optimization-pack/uev-v2/get-started-with-ue-v-2x-new-uevv2).
 
 Follow the steps in this topic to deploy User Experience Virtualization (UE-V) for the first time in a test environment. Evaluate UE-V to determine whether it’s the right solution to manage user settings across multiple devices within your enterprise.
 

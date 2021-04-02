@@ -8,7 +8,7 @@ ms.prod: ie11
 title: Verify your changes using the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -16,20 +16,23 @@ ms.author: dansimp
 
 # Verify your changes using the Enterprise Mode Site List Portal
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
--   Windows 10
--   Windows 8.1
--   Windows 7
--   Windows Server 2012 R2
--   Windows Server 2008 R2 with Service Pack 1 (SP1)
+- Windows 10
+- Windows 8.1
+- Windows 7
+- Windows Server 2012 R2
+- Windows Server 2008 R2 with Service Pack 1 (SP1)
 
->[!Important]
->This step requires that each Requester have access to a test machine with Administrator rights, letting him or her get to the pre-production environment to make sure that the requested change is correct. 
+> [!Important]
+> This step requires that each Requester have access to a test machine with Administrator rights, letting him or her get to the pre-production environment to make sure that the requested change is correct.
 
 The Requester successfully submits a change request to the Enterprise Mode Site List Portal and then gets an email, including:
 
-- **EMIE_RegKey**. A batch file that when run, sets the registry key to point to the local pre-production Enterprise Mode Site List. 
+- **EMIE_RegKey**. A batch file that when run, sets the registry key to point to the local pre-production Enterprise Mode Site List.
 
 - **Test steps**. The suggested steps about how to test the change request details to make sure they're accurate in the pre-production environment.
 

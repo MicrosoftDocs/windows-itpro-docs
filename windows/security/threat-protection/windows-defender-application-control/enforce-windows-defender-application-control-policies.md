@@ -1,9 +1,9 @@
 ---
 title: Enforce Windows Defender Application Control (WDAC) policies (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
-keywords: whitelisting, security, malware
+description: Learn how to test a Windows Defender Application Control (WDAC) policy in enforced mode by following these steps in an elevated Windows PowerShell session.
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2018
+ms.technology: mde
 ---
 
 # Enforce Windows Defender Application Control policies
@@ -44,7 +45,7 @@ Every WDAC policy is created with audit mode enabled. After you have successfull
 
 2. Ensure that rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) are set the way that you intend for this policy. We strongly recommend that you enable these rule options before you run any enforced policy for the first time. Enabling these options provides administrators with a pre-boot command prompt, and allows Windows to start even if the WDAC policy blocks a kernel-mode driver from running. When ready for enterprise deployment, you can remove these options.
 
-    To ensure that these options are enabled in a policy, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption) as shown in the following commands. You can run these commands even if you're not sure whether options 9 and 10 are already enabled—if so, the commands have no effect.
+    To ensure that these options are enabled in a policy, use [Set-RuleOption](/powershell/module/configci/set-ruleoption) as shown in the following commands. You can run these commands even if you're not sure whether options 9 and 10 are already enabled—if so, the commands have no effect.
     
     `Set-RuleOption -FilePath $InitialCIPolicy -Option 9`
     
@@ -61,7 +62,7 @@ Every WDAC policy is created with audit mode enabled. After you have successfull
    > [!NOTE]
    > To enforce a WDAC policy, you delete option 3, the **Audit Mode Enabled** option. There is no “enforced” option that can be placed in a WDAC policy.
 
-5. Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the new WDAC policy to binary format:
+5. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the new WDAC policy to binary format:
 
    `ConvertFrom-CIPolicy $EnforcedCIPolicy $CIPolicyBin`
 

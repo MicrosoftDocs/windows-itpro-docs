@@ -2,10 +2,6 @@
 
 ## [Understand malware & other threats](understanding-malware.md)
 
-### [Prevent malware infection](prevent-malware-infection.md)
-
-### [Malware names](malware-naming.md)
-
 ### [Coin miners](coinminer-malware.md)
 
 ### [Exploits and exploit kits](exploits-malware.md)
@@ -14,7 +10,9 @@
 
 ### [Macro malware](macro-malware.md)
 
-### [Phishing](phishing.md)
+### [Phishing attacks](phishing.md)
+
+#### [Phishing trends and techniques](phishing-trends.md)
 
 ### [Ransomware](ransomware-malware.md)
 
@@ -30,13 +28,17 @@
 
 ### [Worms](worms-malware.md)
 
+## [Prevent malware infection](prevent-malware-infection.md)
+
+## [Malware naming convention](malware-naming.md)
+
 ## [How Microsoft identifies malware and PUA](criteria.md)
 
 ## [Submit files for analysis](submission-guide.md)
 
-## [Safety Scanner download](safety-scanner-download.md)
+## [Troubleshoot malware submission](portal-submission-troubleshooting.md)
 
-## [Industry tests](top-scoring-industry-antivirus-tests.md)
+## [Safety Scanner download](safety-scanner-download.md)
 
 ## [Industry collaboration programs](cybersecurity-industry-partners.md)
 
@@ -46,7 +48,7 @@
 
 ### [Coordinated malware eradication](coordinated-malware-eradication.md)
 
-## [Information for developers](developer-info.md)
+## [Information for developers]()
 
 ### [Software developer FAQ](developer-faq.md)
 

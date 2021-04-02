@@ -1,10 +1,10 @@
 ---
 title: Network access Remotely accessible registry paths (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Network access Remotely accessible registry paths security policy setting.
+description: Best practices, location, values, policy management and security considerations for the policy setting, Network access Remotely accessible registry paths.
 ms.assetid: 977f86ea-864f-4f1b-9756-22220efce0bd
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network access: Remotely accessible registry paths

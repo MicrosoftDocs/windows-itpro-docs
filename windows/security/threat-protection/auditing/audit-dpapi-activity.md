@@ -1,17 +1,18 @@
 ---
 title: Audit DPAPI Activity (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit DPAPI Activity, which determines whether the operating system generates audit events when encryption or decryption calls are made into the data protection application interface (DPAPI).
+description: The policy setting, Audit DPAPI Activity, decides if encryption/decryption calls  to the data protection application interface (DPAPI) generate audit events.
 ms.assetid: be4d4c83-c857-4e3d-a84e-8bcc3f2c99cd
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Audit DPAPI Activity
@@ -21,7 +22,7 @@ ms.date: 04/19/2017
 -   Windows Server 2016
 
 
-Audit [DPAPI](https://msdn.microsoft.com/library/ms995355.aspx) Activity determines whether the operating system generates audit events when encryption or decryption calls are made into the data protection application interface ([DPAPI](https://msdn.microsoft.com/library/ms995355.aspx)).
+Audit [DPAPI](/previous-versions/ms995355(v=msdn.10)) Activity determines whether the operating system generates audit events when encryption or decryption calls are made into the data protection application interface ([DPAPI](/previous-versions/ms995355(v=msdn.10))).
 
 **Event volume**: Low.
 
@@ -40,4 +41,3 @@ Audit [DPAPI](https://msdn.microsoft.com/library/ms995355.aspx) Activity determi
 -   [4694](event-4694.md)(S, F): Protection of auditable protected data was attempted.
 
 -   [4695](event-4695.md)(S, F): Unprotection of auditable protected data was attempted.
-

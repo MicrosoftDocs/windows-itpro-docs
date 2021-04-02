@@ -1,6 +1,6 @@
 ---
 title: CMPolicyEnterprise CSP
-description: CMPolicyEnterprise CSP
+description: Learn how the CMPolicyEnterprise CSP is used to define rules that the Connection Manager uses to identify the correct connection for a connection request.
 ms.assetid: A0BE3458-ABED-4F80-B467-F842157B94BF
 ms.reviewer: 
 manager: dansimp
@@ -17,8 +17,8 @@ ms.date: 06/26/2017
 
 The CMPolicyEnterprise configuration service provider is used by the enterprise to define rules that the Connection Manager uses to identify the correct connection for a connection request.
 
-> **Note**  
-This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> [!NOTE]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 
@@ -28,10 +28,20 @@ Each policy entry identifies one or more applications in combination with a host
 
 **Default Policies**: Policies are applied in order of their scope with the most specific policies considered before the more general policies. The phone’s default behavior applies to all applications and all domains and is only used when no other, more specific policy is available. The default policy is to use any available Wi-Fi network first and then any available APN.
 
-The following diagram shows the CMPolicyEnterprise configuration service provider management object in tree format as used by both Open Mobile Alliance (OMA) Client Provisioning and OMA Device Management.
-
-![cmpolicy csp (dm,cp)](images/provisioning-csp-cmpolicyenterprise.png)
-
+The following shows the CMPolicyEnterprise configuration service provider management object in tree format as used by both Open Mobile Alliance (OMA) Client Provisioning and OMA Device Management.
+```
+./Vendor/MSFT
+CMPolicy
+----PolicyName
+--------SID
+--------ClientType
+--------Host
+--------OrderedConnections
+--------Connections
+------------ConnXXX
+----------------ConnectionID
+----------------Type
+```
 <a href="" id="policyname"></a>***policyName***  
 Defines the name of the policy.
 

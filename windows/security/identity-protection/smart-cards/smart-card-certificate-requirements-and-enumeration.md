@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -160,7 +160,7 @@ Following are the steps that are performed during a smart card sign-in:
 
 > **Note**&nbsp;&nbsp;A SID is created for each user or group at the time a user account or a group account is created within the local security accounts database or within AD DS. The SID never changes, even if the user or group account is renamed.
 
-For more information about the Kerberos protocol, see [Microsoft Kerberos](https://msdn.microsoft.com/library/windows/desktop/aa378747(v=vs.85).aspx).
+For more information about the Kerberos protocol, see [Microsoft Kerberos](/windows/win32/secauthn/microsoft-kerberos).
 
 By default, the KDC verifies that the client's certificate contains the smart card client authentication EKU szOID\_KP\_SMARTCARD\_LOGON. However, if enabled, the **Allow certificates with no extended key usage certificate attribute** Group Policy setting allows the KDC to not require the SC-LOGON EKU. SC-LOGON EKU is not required for account mappings that are based on the public key.
 
@@ -185,7 +185,7 @@ Certificate requirements are listed by versions of the Windows operating system.
 The smart card certificate has specific format requirements when it is used with Windows XP and earlier operating systems. You can enable any certificate to be visible for the smart card credential provider.
 
 
-|            **Component**             |                                                                **Requirements for Windows 8.1, Windows 8, Windows 7, and Windows Vista**                                                                 |                                                                                                **Requirements for Windows XP**                                                                                                 |
+|            **Component**             |                                                                **Requirements for Windows 8.1, Windows 8, Windows 7, Windows Vista, and Windows 10**                                                                 |                                                                                                **Requirements for Windows XP**                                                                                                 |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   CRL distribution point location    |                                                                                               Not required                                                                                               |             The location must be specified, online, and available, for example:<br>\[1\]CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL=<http://server1.contoso.com/CertEnroll/caname.crl>             |
 |              Key usage               |                                                                                            Digital signature                                                                                             |                                                                                                       Digital signature                                                                                                        |
@@ -238,7 +238,7 @@ The following figure illustrates the process of mapping user accounts for sign-i
 
 ![Certificate processing logic](images/sc-image407.png)
 
-NT\_AUTH policy is best described in the CERT\_CHAIN\_POLICY\_NT\_AUTH parameter section of the CertVerifyCertificateChainPolicy function. For more information, see [CertVerifyCertificateChainPolicy](https://msdn.microsoft.com/library/aa377163.aspx).
+NT\_AUTH policy is best described in the CERT\_CHAIN\_POLICY\_NT\_AUTH parameter section of the CertVerifyCertificateChainPolicy function. For more information, see [CertVerifyCertificateChainPolicy](/windows/win32/api/wincrypt/nf-wincrypt-certverifycertificatechainpolicy).
 
 ## Smart card sign-in for a single user with one certificate into multiple accounts
 
@@ -318,9 +318,8 @@ To deploy root certificates on a smart card for the currently joined domain, you
 
 **certutil -scroots update**
 
-For more information about this option for the command-line tool, see [-SCRoots](https://technet.microsoft.com/library/cc732443(v=ws.11).aspx#BKMK_SCRoots).
+For more information about this option for the command-line tool, see [-SCRoots](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)#BKMK_SCRoots).
 
 ## See also
 
 [How Smart Card Sign-in Works in Windows](smart-card-how-smart-card-sign-in-works-in-windows.md)
-

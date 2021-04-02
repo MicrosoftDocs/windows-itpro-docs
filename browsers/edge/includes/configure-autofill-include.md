@@ -3,7 +3,8 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
@@ -19,8 +20,8 @@ ms.topic: include
 |          Group Policy           |  MDM  | Registry |            Description            |                 Most restricted                  |
 |---------------------------------|:-----:|:--------:|-----------------------------------|:------------------------------------------------:|
 | Not configured<br>**(default)** | Blank |  Blank   | Users can choose to use Autofill. |                                                  |
-|            Disabled             |   0   |    no    |            Prevented.             | ![Most restricted value](../images/check-gn.png) |
-|             Enabled             |   1   |   yes    |             Allowed.              |                                                  |
+|            Disabled             |   0   |     0    |            Prevented.             | ![Most restricted value](../images/check-gn.png) |
+|             Enabled             |   1   |     1    |             Allowed.              |                                                  |
 
 ---
 
@@ -32,7 +33,7 @@ ms.topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowAutofill](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser\#browser-allowautofill)
+- **MDM name:** Browser/[AllowAutofill](/windows/client-management/mdm/policy-csp-browser\#browser-allowautofill)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowAutofill 
 - **Data type:** Integer

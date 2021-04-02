@@ -5,13 +5,14 @@ ms.assetid: 91915cb2-1b3f-4fb7-afa0-d03df95e8161
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 11/13/2018
+ms.technology: mde
 ---
 
 # Minimum password age
@@ -32,9 +33,9 @@ The **Minimum password age** policy setting determines the period of time (in da
 
 ### Best practices
 
-[Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend setting **Minimum password age** to 1 day. 
+[Windows security baselines](../windows-security-baselines.md) recommend setting **Minimum password age** to one day. 
 
-Setting the number of days to 0 allows immediate password changes, which is not recommended. 
+Setting the number of days to 0 allows immediate password changes. This setting is not recommended. 
 Combining immediate password changes with password history allows someone to change a password repeatedly until the password history requirement is met and re-establish the original password again. 
 For example, suppose a password is "Ra1ny day!" and the history requirement is 24. 
 If the minimum password age is 0, the password can be changed 24 times in a row until finally changed back to "Ra1ny day!". 
@@ -76,7 +77,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 Users may have favorite passwords that they like to use because they are easy to remember and they believe that their password choice is secure from compromise. Unfortunately, passwords can be compromised and if an attacker is targeting a specific individual user account, with knowledge of data about that user, reuse of old passwords can cause a security breach.
 
-To address password reuse, you must use a combination of security settings. Using this policy setting with the [Enforce password history](enforce-password-history.md) policy setting prevents the easy reuse of old passwords. For example, if you configure the Enforce password history policy setting to ensure that users cannot reuse any of their last 12 passwords, but you do not configure the **Minimum password age** policy setting to a number that is greater than 0, users could change their password 13 times in a few minutes and reuse their original password. You must configure this policy setting to a number that is greater than 0 for the Enforce password history policy setting to be effective.
+To address password reuse, you must use a combination of security settings. Using this policy setting with the [Enforce password history](enforce-password-history.md) policy setting prevents the easy reuse of old passwords. For example, if you configure the Enforce password history policy setting to ensure that users cannot reuse any of their last 12 passwords, but you do not configure the **Minimum password age** policy setting to a number that is greater than 0, users could change their password 13 times in a few minutes and reuse their original password. Configure this policy setting to a number that is greater than 0 for the Enforce password history policy setting to be effective.
 
 ### Countermeasure
 

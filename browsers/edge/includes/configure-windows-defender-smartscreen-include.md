@@ -2,8 +2,9 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
-audience: itpromanager: dansimp
+ms.reviewer:
+audience: itpro
+manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
@@ -24,9 +25,9 @@ ms.topic: include
 
 ---
 
-To verify Windows Defender SmartScreen is turned off (disabled): 
+To verify Windows Defender SmartScreen is turned off (disabled):
 1. Click or tap **More** (…) and select **Settings** > **View Advanced settings**.
-2.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is disabled.<p>![Verify that Windows Defender SmartScreen is turned off (disabled)](../images/allow-smart-screen-validation.PNG)
+2.  Verify the setting **Help protect me from malicious sites and download with Windows Defender SmartScreen** is disabled.<p>![Verify that Windows Defender SmartScreen is turned off (disabled)](../images/allow-smart-screen-validation.png)
 
 
 ### ADMX info and settings
@@ -37,9 +38,9 @@ To verify Windows Defender SmartScreen is turned off (disabled):
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
+- **MDM name:** Browser/[AllowSmartScreen](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
 - **Supported devices:** Desktop and Mobile
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen  
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen
 - **Data type:** Integer
 
 #### Registry settings

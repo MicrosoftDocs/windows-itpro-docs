@@ -20,7 +20,7 @@ ms.date: 06/19/2018
 
 **Applies to**
 
--   Windows 10
+-   Windows 10, Windows Server 2016 with Desktop Experience, Windows Server 2019 with Desktop Experience
 
 > **Looking for consumer information?** [See what's on the Start menu](https://support.microsoft.com/help/17195/windows-10-see-whats-on-the-menu)
 
@@ -31,9 +31,9 @@ Organizations might want to deploy a customized Start and taskbar configuration 
 >
 >Start and taskbar configuration can be applied to devices running Windows 10 Pro, version 1703.
 >
->For information on using the layout modification XML to configure Start with roaming user profiles, see [Deploy Roaming User Profiles](https://docs.microsoft.com/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#step-7-optionally-specify-a-start-layout-for-windows-10-pcs).
+>For information on using the layout modification XML to configure Start with roaming user profiles, see [Deploy Roaming User Profiles](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#step-7-optionally-specify-a-start-layout-for-windows-10-pcs).
 >
->Using CopyProfile for Start menu customization in Windows 10 isn't supported. For more information [Customize the Default User Profile by Using CopyProfile](https://docs.microsoft.com/windows-hardware/manufacture/desktop/customize-the-default-user-profile-by-using-copyprofile)
+>Using CopyProfile for Start menu customization in Windows 10 isn't supported. For more information [Customize the Default User Profile by Using CopyProfile](/windows-hardware/manufacture/desktop/customize-the-default-user-profile-by-using-copyprofile)
 
 
 
@@ -44,7 +44,7 @@ Organizations might want to deploy a customized Start and taskbar configuration 
 Some areas of Start can be managed using Group Policy. The layout of Start tiles can be managed using either Group Policy or Mobile Device Management (MDM) policy.
 
 >[!NOTE]
->The MDM policy settings in the table can also be configured [in a provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md) using **Policies** > **Start**. [See the reference for **Start** settings in Windows Configuration Designer.](https://docs.microsoft.com/windows/configuration/wcd/wcd-policies#start)
+>The MDM policy settings in the table can also be configured [in a provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md) using **Policies** > **Start**. [See the reference for **Start** settings in Windows Configuration Designer.](./wcd/wcd-policies.md#start)
 
 The following table lists the different parts of Start and any applicable policy settings or Settings options. Group Policy settings are in the **User Configuration**\\**Administrative Templates**\\**Start Menu and Taskbar** path except where a different path is listed in the table.
 
@@ -78,7 +78,7 @@ There are three categories of apps that might be pinned to a taskbar:
 * Apps pinned by the enterprise, such as in an unattended Windows setup
 
   >[!NOTE]
-  >We recommend using [the layoutmodification.xml method](configure-windows-10-taskbar.md) to configure taskbar options, rather than the earlier method of using [TaskbarLinks](https://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file.
+  >We recommend using [the layoutmodification.xml method](configure-windows-10-taskbar.md) to configure taskbar options, rather than the earlier method of using [TaskbarLinks](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks) in an unattended Windows setup file.
 
 The following example shows how apps will be pinned - Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
 
@@ -132,12 +132,5 @@ If your Start layout customization is not applied as expected, open **Event View
 - [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 - [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
-
-
-
-
-
-
-

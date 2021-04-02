@@ -1,10 +1,10 @@
 ---
 title: Network access Shares that can be accessed anonymously (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Network access Shares that can be accessed anonymously security policy setting.
+description: Learn about best practices, security considerations, and more for the security policy setting, Network access Shares that can be accessed anonymously.
 ms.assetid: f3e4b919-8279-4972-b415-5f815e2f0a1a
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network access: Shares that can be accessed anonymously

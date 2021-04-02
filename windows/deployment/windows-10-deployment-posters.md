@@ -1,6 +1,6 @@
 ---
 title: Windows 10 deployment process posters
-description: View and download Windows 10 deployment process flows for System Center Configuration Manager and Windows Autopilot.
+description: View and download Windows 10 deployment process flows for Microsoft Endpoint Manager and Windows Autopilot.
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
@@ -12,7 +12,6 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 
@@ -21,7 +20,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-The following posters step through various options for deploying Windows 10 with Windows Autopilot or System Center Configuration Manager.  
+The following posters step through various options for deploying Windows 10 with Windows Autopilot or Microsoft Endpoint Configuration Manager.  
 
 ## Deploy Windows 10 with Autopilot
 
@@ -29,7 +28,7 @@ The Windows Autopilot poster is two pages in portrait mode (11x17). Click the im
 
 [![Deploy Windows 10 with Autopilot](./media/windows10-autopilot-flowchart.png)](./media/Windows10AutopilotFlowchart.pdf)
 
-## Deploy Windows 10 with System Center Configuration Manager
+## Deploy Windows 10 with Microsoft Endpoint Configuration Manager
 
 The Configuration Manager poster is one page in landscape mode (17x11). Click the image to view a PDF in your browser. You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) format.
 
@@ -37,5 +36,5 @@ The Configuration Manager poster is one page in landscape mode (17x11). Click th
 
 ## See also
 
-[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)<br>
-[Scenarios to deploy enterprise operating systems with Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems)
+[Overview of Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot)<br>
+[Scenarios to deploy enterprise operating systems with Configuration Manager](/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems)

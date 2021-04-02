@@ -1,12 +1,12 @@
 ---
 title: Windows 10 VPN technical guide (Windows 10)
-description: Use this guide to configure VPN deployment for Windows 10.
+description: Learn about decisions to make for Windows 10 clients in your enterprise VPN solution and how to configure your deployment.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dulcemontemayor
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 11/13/2020
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -20,12 +20,12 @@ ms.author: dansimp
 - Windows 10
 - Windows 10 Mobile
 
-This guide will walk you through the decisions you will make for Windows 10 clients in your enterprise VPN solution and how to configure your deployment. This guide references the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) and provides mobile device management (MDM) configuration instructions using Microsoft Intune and the VPN Profile template for Windows 10.
+This guide will walk you through the decisions you will make for Windows 10 clients in your enterprise VPN solution and how to configure your deployment. This guide references the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp) and provides mobile device management (MDM) configuration instructions using Microsoft Intune and the VPN Profile template for Windows 10.
 
-![Intune VPN policy template](images/vpn-intune-policy.png)
+To create a Windows 10 VPN device configuration profile see: [Windows 10 and Windows Holographic device settings to add VPN connections using Intune](/mem/intune/configuration/vpn-settings-windows-10).
 
->[!NOTE]
->This guide does not explain server deployment.  
+> [!NOTE]
+> This guide does not explain server deployment.
 
 ## In this guide
 
@@ -43,7 +43,4 @@ This guide will walk you through the decisions you will make for Windows 10 clie
 
 ## Learn more
 
-- [VPN connections in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune)
-
-
-
+- [Create VPN profiles to connect to VPN servers in Intune](/mem/intune/configuration/vpn-settings-configure)

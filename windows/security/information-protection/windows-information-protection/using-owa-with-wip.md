@@ -1,5 +1,5 @@
 ---
-title: Using Outlook on the web with Windows Information Protection (WIP) (Windows 10)
+title: Using Outlook on the web with WIP (Windows 10)
 description: Options for using Outlook on the web with Windows Information Protection (WIP).
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and OWA configuration, OWA, Outlook Web access
 ms.prod: w10
@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro

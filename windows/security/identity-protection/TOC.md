@@ -1,5 +1,7 @@
 # [Identity and access management](index.md)
 
+## [Technical support policy for lost or forgotten passwords](password-support-policy.md)
+
 ## [Access Control Overview](access-control/access-control.md)
 ### [Dynamic Access Control Overview](access-control/dynamic-access-control.md)
 ### [Security identifiers](access-control/security-identifiers.md)
@@ -16,12 +18,13 @@
 #### [User Account Control security policy settings](user-account-control\user-account-control-security-policy-settings.md)
 #### [User Account Control Group Policy and registry key settings](user-account-control\user-account-control-group-policy-and-registry-key-settings.md)
 
-## [Windows Hello for Business](hello-for-business/hello-identity-verification.md)
+## [Windows Hello for Business](hello-for-business/index.yml)
 
 ## [Protect derived domain credentials with Credential Guard](credential-guard/credential-guard.md)
 ### [How Credential Guard works](credential-guard/credential-guard-how-it-works.md)
 ### [Credential Guard Requirements](credential-guard/credential-guard-requirements.md)
 ### [Manage Credential Guard](credential-guard/credential-guard-manage.md)
+### [Hardware readiness tool](credential-guard/dg-readiness-tool.md)
 ### [Credential Guard protection limits](credential-guard/credential-guard-protection-limits.md)
 ### [Considerations when using Credential Guard](credential-guard/credential-guard-considerations.md)
 ### [Credential Guard: Additional mitigations](credential-guard/additional-mitigations.md)
@@ -69,3 +72,4 @@
 ### [VPN profile options](vpn\vpn-profile-options.md)
 ### [How to configure Diffie Hellman protocol over IKEv2 VPN connections](vpn\how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections.md)
 ### [How to use single sign-on (SSO) over VPN and Wi-Fi connections](vpn\how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md)
+### [Optimizing Office 365 traffic with the Windows 10 VPN client](vpn\vpn-office-365-optimization.md)

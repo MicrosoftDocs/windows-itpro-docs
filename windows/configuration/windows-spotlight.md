@@ -31,7 +31,7 @@ For managed devices running Windows 10 Enterprise and Windows 10 Education, en
 >[!NOTE]
 >In Windows 10, version 1607, the lock screen background does not display if you disable the **Animate windows when minimizing and maximizing** setting in **This PC** > **Properties** > **Advanced system settings** > **Performance settings** > **Visual Effects**, or if you enable the Group Policy setting **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Desktop Windows Manager** > **Do not allow windows animations**.
 >
->In Windows 10, version 1703, you can use the [Personalization CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/personalization-csp) settings to set lock screen and desktop background images.
+>In Windows 10, version 1703, you can use the [Personalization CSP](/windows/client-management/mdm/personalization-csp) settings to set lock screen and desktop background images.
 
 ## What does Windows Spotlight include?
 
@@ -44,7 +44,7 @@ For managed devices running Windows 10 Enterprise and Windows 10 Education, en
 
 -   **Feature suggestions, fun facts, tips**
 
-    The lock screen background will occasionally suggest Windows 10 features that the user hasn't tried yet, such as **Snap assist**.
+    The lock screen background will occasionally make recommendations on how to enhance your productivity and enjoyment of Microsoft products including suggesting other relevant Microsoft products and services.
     
     ![fun facts](images/funfacts.png)
 
@@ -102,8 +102,3 @@ The recommendation for custom lock screen images that include text (such as a le
 
 
  
-
-
-
-
-

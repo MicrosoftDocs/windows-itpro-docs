@@ -1,10 +1,10 @@
 ---
 title: Interactive logon Require Domain Controller authentication to unlock workstation (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Interactive logon Require Domain Controller authentication to unlock workstation security policy setting.
+description: Best practices security considerations, and more for the policy setting, Interactive logon Require Domain Controller authentication to unlock workstation.
 ms.assetid: 97618ed3-e946-47db-a212-b5e7a4fc6ffc
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Interactive logon: Require Domain Controller authentication to unlock workstation

@@ -1,6 +1,6 @@
 ---
 title: DMClient CSP
-description: The DMClient configuration service provider is used to specify additional enterprise-specific mobile device management configuration settings for identifying the device in the enterprise domain, security mitigation for certificate renewal, and server-triggered enterprise unenrollment.
+description: Understand how the DMClient configuration service provider (CSP) is used to specify enterprise-specific mobile device management (MDM) configuration settings.
 ms.assetid: a5cf35d9-ced0-4087-a247-225f102f2544
 ms.reviewer: 
 manager: dansimp
@@ -15,17 +15,60 @@ ms.date: 11/01/2017
 # DMClient CSP
 
 
-The DMClient configuration service provider is used to specify additional enterprise-specific mobile device management configuration settings for identifying the device in the enterprise domain, security mitigation for certificate renewal, and server-triggered enterprise unenrollment.
+The DMClient configuration service provider (CSP) is used to specify additional enterprise-specific mobile device management (MDM) configuration settings for identifying the device in the enterprise domain, for security mitigation for certificate renewal, and for server-triggered enterprise unenrollment.
 
-The following diagram shows the DMClient configuration service provider in tree format.
-
-![dmclient csp](images/provisioning-csp-dmclient-th2.png)
+The following shows the DMClient CSP in tree format.
+```
+./Vendor/MSFT
+DMClient
+----Provider
+--------
+------------EntDeviceName
+------------ExchangeID
+------------EntDMID
+------------SignedEntDMID
+------------CertRenewTimeStamp
+------------PublisherDeviceID
+------------ManagementServiceAddress
+------------UPN
+------------HelpPhoneNumber
+------------HelpWebsite
+------------HelpEmailAddress
+------------RequireMessageSigning
+------------SyncApplicationVersion
+------------MaxSyncApplicationVersion
+------------Unenroll
+------------AADResourceID
+------------AADDeviceID
+------------EnrollmentType
+------------EnableOmaDmKeepAliveMessage
+------------HWDevID
+------------ManagementServerAddressList
+------------CommercialID
+------------Push
+----------------PFN
+----------------ChannelURI
+----------------Status
+------------Poll
+----------------IntervalForFirstSetOfRetries
+----------------NumberOfFirstRetries
+----------------IntervalForSecondSetOfRetries
+----------------NumberOfSecondRetries
+----------------IntervalForRemainingScheduledRetries
+----------------NumberOfRemainingScheduledRetries
+----------------PollOnLogin
+----------------AllUsersPollOnFirstLogin
+----Unenroll
+----UpdateManagementServiceAddress
+```
+<a href="" id="msft"></a>**./Vendor/MSFT**  
+All the nodes in this CSP are supported in the device context, except for the **ExchangeID** node, which is supported in the user context. For the device context, use the **./Device/Vendor/MSFT** path and for the user context, use the **./User/Vendor/MSFT** path.
 
 <a href="" id="dmclient"></a>**DMClient**  
 Root node for the CSP.
 
 <a href="" id="updatemanagementserviceaddress"></a>**UpdateManagementServiceAddress**  
-For provisioning packages only. Specifies the list of servers (semicolon delimited). The first server in the semi-colon delimited list is the server that will be used to instantiate MDM sessions. The list can be a permutation or a subset of the existing server list. You cannot add new servers to the list using this node.
+For provisioning packages only. Specifies the list of servers (semicolon delimited). The first server in the semicolon-delimited list is the server that will be used to instantiate MDM sessions. The list can be a permutation or a subset of the existing server list. You cannot add new servers to the list using this node.
 
 <a href="" id="hwdevid"></a>**HWDevID**  
 Added in Windows 10, version 1703. Returns the hardware device ID.
@@ -45,16 +88,17 @@ For Intune, use **MS DM Server** for Windows desktop or **SCConfigMgr** for Wind
 Supported operations are Get and Add.
 
 <a href="" id="provider-providerid-entdevicename"></a>**Provider/*ProviderID*/EntDeviceName**  
-Optional. Character string that contains the user-friendly device name used by the IT admin console. The value is set during the enrollment process by way of the DMClient configuration service provider. You can retrieve it later during an OMA DM session.
+Optional. Character string that contains the user-friendly device name used by the IT admin console. The value is set during the enrollment process by way of the DMClient CSP. You can retrieve it later during an OMA DM session.
 
 Supported operations are Get and Add.
 
 <a href="" id="provider-providerid-entdmid"></a>**Provider/*ProviderID*/EntDMID**  
-Optional. Character string that contains the unique enterprise device ID. The value is set by the management server during the enrollment process by way of the DMClient configuration service provider. You can retrieve it later during an OMA DM session.
+Optional. Character string that contains the unique enterprise device ID. The value is set by the management server during the enrollment process by way of the DMClient CSP. You can retrieve it later during an OMA DM session.
 
 Supported operations are Get and Add.
 
-> **Note**   Although hardware device IDs are guaranteed to be unique, there is a concern that this is not ultimately enforceable during a DM session. The device ID could be changed through the w7 APPLICATION configuration service provider’s **USEHWDEVID** parm by another management server. So during enterprise bootstrap and enrollment, a new device ID is specified by the enterprise server.
+> [!NOTE]
+> Although hardware device IDs are guaranteed to be unique, there is a concern that this is not ultimately enforceable during a DM session. The device ID could be changed through the w7 APPLICATION CSP’s **USEHWDEVID** parm by another management server. So during enterprise bootstrap and enrollment, a new device ID is specified by the enterprise server.
 This node is required and must be set by the server before the client certificate renewal is triggered.
 
  
@@ -62,7 +106,8 @@ This node is required and must be set by the server before the client certificat
 <a href="" id="provider-providerid-exchangeid"></a>**Provider/*ProviderID*/ExchangeID**  
 Optional. Character string that contains the unique Exchange device ID used by the Outlook account of the user the session is running against. This is useful for the enterprise management server to correlate and merge records for a device that is managed by exchange and natively managed by a dedicated management server.
 
-> **Note**  In some cases for the desktop, this node will return "not found" until the user sets up their email.
+> [!NOTE]
+> In some cases for the desktop, this node will return "not found" until the user sets up their email.
 
  
 
@@ -87,7 +132,7 @@ The following is a Get command example.
 Supported operation is Get.
 
 <a href="" id="provider-providerid-signedentdmid"></a>**Provider/*ProviderID*/SignedEntDMID**  
-Optional. Character string that contains the device ID. This node and the nodes **CertRenewTimeStamp** can be used by the mobile device management server to verify client identity in order to update the registration record after the device certificate is renewed. The device signs the **EntDMID** with the old client certificate during the certificate renewal process and saves the signature locally.
+Optional. Character string that contains the device ID. This node and the nodes **CertRenewTimeStamp** can be used by the MDM server to verify client identity in order to update the registration record after the device certificate is renewed. The device signs the **EntDMID** with the old client certificate during the certificate renewal process and saves the signature locally.
 
 Supported operation is Get.
 
@@ -99,11 +144,12 @@ Supported operation is Get.
 <a href="" id="provider-providerid-managementserviceaddress"></a>**Provider/*ProviderID*/ManagementServiceAddress**  
 Required. The character string that contains the device management server address. It can be updated during an OMA DM session by the management server to allow the server to load balance to another server in situations where too many devices are connected to the server.
 
-> **Note**  When the ManagementServerAddressList value is set, the device ignores the value in ManagementServiceAddress.
+> [!NOTE]
+> When the **ManagementServerAddressList** value is set, the device ignores the value.
 
  
 
-The DMClient configuration service provider will save the address to the same location as the w7 and DMS configuration service providers to ensure the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped via the [w7 APPLICATION configuration service provider](w7-application-csp.md).
+The DMClient CSP will save the address to the same location as the w7 and DMS CSPs to ensure the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped via the [w7 APPLICATION configuration service provider](w7-application-csp.md).
 
 Starting in Windows 10, version 1511, this node supports multiple server addresses in the format &lt;URL1&gt;&lt;URL2&gt;&lt;URL3&gt;. If there is only a single URL, then the &lt;&gt; are not required. This is supported for both desktop and mobile devices.
 
@@ -132,7 +178,7 @@ Optional. The character string that allows the user experience to include a cust
 Supported operations are Get, Replace, and Delete.
 
 <a href="" id="provider-providerid-requiremessagesigning"></a>**Provider/*ProviderID*/RequireMessageSigning**  
-Boolean type. Primarly used for SSL bridging mode where firewalls and proxies are deployed and where device client identity is required. When enabled, every SyncML message from the device will carry an additional HTTP header named MDM-Signature. This header contains BASE64-encoded Cryptographic Message Syntax using a Detached Signature of the complete SyncML message SHA-2 (inclusive of the SyncHdr and SyncBody). Signing is performed using the private key of the management session certificate that was enrolled as part of the enrollment process. The device public key and PKCS9 UTC signing time stamp are included as part of the authenticated attributes in the signature.
+Boolean type. Primarily used for SSL bridging mode where firewalls and proxies are deployed and where device client identity is required. When enabled, every SyncML message from the device will carry an additional HTTP header named MDM-Signature. This header contains BASE64-encoded Cryptographic Message Syntax using a Detached Signature of the complete SyncML message SHA-2 (inclusive of the SyncHdr and SyncBody). Signing is performed using the private key of the management session certificate that was enrolled as part of the enrollment process. The device public key and PKCS9 UTC signing time stamp are included as part of the authenticated attributes in the signature.
 
 Default value is false, where the device management client does not include authentication information in the management session HTTP header. Optionally set to true, where the client authentication information is provided in the management session HTTP header.
 
@@ -143,8 +189,8 @@ Supported operations are Get, Replace, and Delete.
 <a href="" id="provider-providerid-syncapplicationversion"></a>**Provider/*ProviderID*/SyncApplicationVersion**  
 Optional. Used by the management server to set the DM session version that the server and device should use. Default is 1.0. In Windows 10, the DM session protocol version of the client is 2.0. If the server is updated to support 2.0, then you should set this value to 2.0. In the next session, check to see if there is a client behavior change between 1.0 and 2.0.
 
-> **Note**  
-This node is only supported in Windows 10 and later.
+> [!NOTE]
+> This node is only supported in Windows 10 and later.
 
 Once you set the value to 2.0, it will not go back to 1.0.
 
@@ -160,9 +206,9 @@ When you query this node, a Windows 10 client will return 2.0 and a Windows 8.
 Supported operation is Get.
 
 <a href="" id="provider-providerid-aadresourceid"></a>**Provider/*ProviderID*/AADResourceID**  
-Optional. This is the ResourceID used when requesting the user token from the OMA DM session for Azure Active Directory enrollments (AAD Join or Add Accounts). The token is audience specific, which allows for different service principals (enrollment vs. device management). It can be an application ID or the endpoint that you are trying to access.
+Optional. This is the ResourceID used when requesting the user token from the OMA DM session for Azure Active Directory (Azure AD) enrollments (Azure AD Join or Add Accounts). The token is audience-specific, which allows for different service principals (enrollment vs. device management). It can be an application ID or the endpoint that you are trying to access.
 
-For more information about Azure Active Directory enrollment, see [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md).
+For more information about Azure AD enrollment, see [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md).
 
 <a href="" id="provider-providerid-enableomadmkeepalivemessage"></a>**Provider/*ProviderID*/EnableOmaDmKeepAliveMessage**  
 Added in Windows 10, version 1511. A boolean value that specifies whether the DM client should send out a request pending alert in case the device response to a DM request is too slow.
@@ -203,7 +249,7 @@ Here is an example of DM message sent by the device when it is in pending state:
 ```
 
 <a href="" id="provider-providerid-aaddeviceid"></a>**Provider/*ProviderID*/AADDeviceID**  
-Added in Windows 10, version 1607. Returns the device ID for the Azure Active Directory device registration.
+Added in Windows 10, version 1607. Returns the device ID for the Azure AD device registration.
 
 Supported operation is Get.
 
@@ -218,14 +264,15 @@ Added in Windows 10, version 1607. Returns the hardware device ID.
 Supported operation is Get.
 
 <a href="" id="provider-providerid-commercialid"></a>**Provider/*ProviderID*/CommercialID**  
-Added in Windows 10, version 1607. Configures the identifier used to uniquely associate this diagnostic data of this device as belonging to a given organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program. If you disable or do not configure this policy setting, then Microsoft will not be able to use this identifier to associate this machine and its diagnostic data with your organization..
+Added in Windows 10, version 1607. Configures the identifier used to uniquely associate this diagnostic data of this device as belonging to a given organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program. If you disable or do not configure this policy setting, then Microsoft will not be able to use this identifier to associate this machine and its diagnostic data with your organization.
 
 Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="provider-providerid-managementserveraddresslist"></a>**Provider/*ProviderID*/ManagementServerAddressList**  
-Added in Windows 10, version 1607. The list of management server URLs in the format &lt;URL1&gt;&lt;URL2&gt;&lt;URL3&gt;, etc... If there is only one, the angle brackets (&lt;&gt;) are not required.
+Added in Windows 10, version 1607. The list of management server URLs in the format &lt;URL1&gt;&lt;URL2&gt;&lt;URL3&gt;, and so on. If there is only one, the angle brackets (&lt;&gt;) are not required.
 
-> **Note**  The &lt; and &gt; should be escaped.
+> [!NOTE]
+> The &lt; and &gt; should be escaped.
 
  
 
@@ -255,12 +302,13 @@ Optional. Added in Windows 10, version 1703. Specify the Discovery server URL o
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-numberofdaysafterlostcontacttounenroll"></a>**Provider/*ProviderID*/NumberOfDaysAfterLostContactToUnenroll**  
-Optional. Number of days after last sucessful sync to unenroll.
+Optional. Number of days after last successful sync to unenroll.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is integer.
 
 <a href="" id="provider-providerid-aadsenddevicetoken"></a>**Provider/*ProviderID*/AADSendDeviceToken**  
-Device. Added in Windows 10 version 1803. For AZure AD backed enrollments, this will cause the client to send a Device Token if the User Token can not be obtained.
+
+Device. Added in Windows 10 version 1803. For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token cannot be obtained.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is bool.
 
@@ -377,7 +425,8 @@ If there is no infinite schedule set, then a 24-hour schedule is created and sch
 
 **Invalid poll schedule: disable all poll schedules**
 
-> **Note**   Disabling poll schedules results in UNDEFINED behavior and enrollment may fail if poll schedules are all set to zero.
+> [!NOTE]
+> Disabling poll schedules results in UNDEFINED behavior and enrollment may fail if poll schedules are all set to zero.
 
  
 
@@ -552,12 +601,12 @@ Optional. Boolean value that allows the IT admin to require the device to start 
 Supported operations are Add, Get, and Replace.
 
 <a href="" id="provider-providerid-push"></a>**Provider/*ProviderID*/Push**  
-Optional. Not configurable during WAP Provisioining XML. If removed, DM sessions triggered by Push will no longer be supported.
+Optional. Not configurable during WAP Provisioning XML. If removed, DM sessions triggered by Push will no longer be supported.
 
 Supported operations are Add and Delete.
 
 <a href="" id="provider-providerid-push-pfn"></a>**Provider/*ProviderID*/Push/PFN**  
-Required. A string provided by the Windows 10 ecosystem for a Mobile Device Management solution. Used to register a device for Push Notifications. The server must use the same PFN as the devices it is managing.
+Required. A string provided by the Windows 10 ecosystem for an MDM solution. Used to register a device for Push Notifications. The server must use the same PFN as the devices it is managing.
 
 Supported operations are Add, Get, and Replace.
 
@@ -665,7 +714,7 @@ Required. Added in Windows 10, version 1709. This node contains a list of LocURI
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-expectedmsiapppackages"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedMSIAppPackages**  
-Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to App Packages the management service provider expects to provision via EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000".  The LocURI will be followed by a semicolon and a number, representing the amount of apps included in the App Package.  We will not verify that number. For example, `./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2`  This represents App Package ProductID1 containing 4 apps, and ProductID2 containing 2 apps.
+Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to App Packages the management service provider expects to provision via EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000".  The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package.  We will not verify that number. For example, `./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2`  This represents App Package ProductID1 containing four apps, and ProductID2 containing two apps.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
@@ -677,7 +726,7 @@ Required. Added in Windows 10, version 1709. This node contains a list of LocURI
 ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName2/Name;2
 ```
 
-This represents App Package PackageFullName containing 4 apps, and PackageFullName2 containing 2 apps.
+This represents App Package PackageFullName containing four apps, and PackageFullName2 containing two apps.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 

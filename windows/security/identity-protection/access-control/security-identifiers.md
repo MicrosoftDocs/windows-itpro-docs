@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -52,7 +52,7 @@ SIDs always remain unique. Security authorities never issue the same SID twice, 
 
 A security identifier is a data structure in binary format that contains a variable number of values. The first values in the structure contain information about the SID structure. The remaining values are arranged in a hierarchy (similar to a telephone number), and they identify the SID-issuing authority (for example, “NT Authority”), the SID-issuing domain, and a particular security principal or group. The following image illustrates the structure of a SID.
 
-![](images/security-identifider-architecture.jpg)
+![Security identifier architecture](images/security-identifider-architecture.jpg)
 
 The individual values of a SID are described in the following table.
 
@@ -288,6 +288,16 @@ The following table describes changes in SID implementation in the Windows opera
 Capability Security Identifiers (SIDs) are used to uniquely and immutably identify capabilities. Capabilities represent an unforgeable token of authority that grants access to resources (Examples: documents, camera, locations etc...) to Universal Windows Applications. An App that “has” a capability is granted access to the resource the capability is associated with, and one that “does not have” a capability is denied access to the resource.
 
 All Capability SIDs that the operating system is aware of are stored in the Windows Registry in the path `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities'. Any Capability SID added to Windows by first or third-party applications will be added to this location.
+
+## Examples of registry keys taken from Windows 10, version 1909, 64-bit Enterprise edition
+You may see the following registry keys under AllCachedCapabilities:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_DevUnlock
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_DevUnlock_Internal
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Enterprise
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_General
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Restricted
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Windows
 
 All Capability SIDs are prefixed by S-1-15-3
 

@@ -1,7 +1,7 @@
 ---
 title: Getting Started with App-V (Windows 10)
-description: Getting Started with App-V for Windows 10
-author: lomayor
+description: Get started with Microsoft Application Virtualization (App-V) for Windows 10. App-V for Windows 10 delivers Win32 applications to users as virtual applications.
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +25,7 @@ If you’re already using App-V, performing an in-place upgrade to Windows 10 on
 >[!IMPORTANT]
 >You can upgrade your existing App-V installation to App-V for Windows from App-V versions 5.0 SP2 and higher only. If you are using an earlier version of App-V, you’ll need to upgrade your existing App-V installation to App-V 5.0 SP2 before upgrading to App-V for Windows.
 
-To learn more about previous versions of App-V, see [MDOP information experience](https://docs.microsoft.com/microsoft-desktop-optimization-pack/index).
+To learn more about previous versions of App-V, see [MDOP information experience](/microsoft-desktop-optimization-pack/index).
 
 ## Getting started with App-V for Windows 10 (new installations)
 

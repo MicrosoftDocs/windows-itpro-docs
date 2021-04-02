@@ -1,6 +1,6 @@
 ---
 title: Policy DDF file
-description: Policy DDF file
+description: Learn about the OMA DM device description framework (DDF) for the Policy configuration service provider.
 ms.assetid: D90791B5-A772-4AF8-B058-5D566865AF8D
 ms.reviewer: 
 manager: dansimp
@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 05/21/2019
+ms.date: 10/28/2020
 ---
 
 # Policy DDF file
@@ -20,6 +20,8 @@ This topic shows the OMA DM device description framework (DDF) for the **Policy*
 
 You can view various Policy DDF files by clicking the following links:
 
+- [View the Policy DDF file for Windows 10, version 20H2](https://download.microsoft.com/download/4/0/f/40f9ec45-3bea-442c-8afd-21edc1e057d8/PolicyDDF_all_20H2.xml)
+- [View the Policy DDF file for Windows 10, version 2004](https://download.microsoft.com/download/4/0/f/40f9ec45-3bea-442c-8afd-21edc1e057d8/PolicyDDF_all_2004.xml)
 - [View the Policy DDF file for Windows 10, version 1903](https://download.microsoft.com/download/0/C/D/0CD61812-8B9C-4846-AC4A-1545BFD201EE/PolicyDDF_all_1903.xml)
 - [View the Policy DDF file for Windows 10, version 1809](https://download.microsoft.com/download/7/3/5/735B8537-82F4-4CD1-B059-93984F9FAAC5/Policy_DDF_all_1809.xml)
 - [View the Policy DDF file for Windows 10, version 1803](https://download.microsoft.com/download/4/9/6/496534EE-8F0C-4F12-B084-A8502DA22430/PolicyDDF_all.xml)
@@ -31,7 +33,7 @@ You can view various Policy DDF files by clicking the following links:
 
 You can download DDF files for various CSPs from [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is the DDF for Windows 10, version 1903.
+The XML below is the DDF for Windows 10, version 20H2.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -57,7 +59,7 @@ The XML below is the DDF for Windows 10, version 1903.
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/9.0/MDM/Policy</MIME>
+        <MIME>com.microsoft/10.0/MDM/Policy</MIME>
       </DFType>
     </DFProperties>
     <Node>
@@ -1646,7 +1648,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </AccessType>
             <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
 
-When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe prevents a user from turning off the OneNote Web Clipper and extension.
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
 
 When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
 
@@ -1657,11 +1659,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -2119,6 +2121,30 @@ Related policy:
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
+        <Node>
+          <NodeName>AllowGraphingCalculator</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app. If you enable or don&apos;t configure this policy setting, users will be able to access graphing functionality.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
         <Node>
           <NodeName>DefaultPrinterName</NodeName>
           <DFProperties>
@@ -8689,6 +8715,52 @@ Related policy:
         </Node>
       </Node>
       <Node>
+        <NodeName>Multitasking</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>BrowserAltTabBlowout</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Configures the inclusion of Edge tabs into Alt-Tab.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>Notifications</NodeName>
         <DFProperties>
           <AccessType>
@@ -11023,7 +11095,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DefaultValue></DefaultValue>
             <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
 
-When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe prevents a user from turning off the OneNote Web Clipper and extension.
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
 
 When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
 
@@ -11034,11 +11106,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -11541,6 +11613,33 @@ Related policy:
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
+        <Node>
+          <NodeName>AllowGraphingCalculator</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app. If you enable or don&apos;t configure this policy setting, users will be able to access graphing functionality.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Programs.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>Programs~AT~WindowsComponents~Calculator</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowGraphingCalculator</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
         <Node>
           <NodeName>DefaultPrinterName</NodeName>
           <DFProperties>
@@ -18868,6 +18967,55 @@ Related policy:
         </Node>
       </Node>
       <Node>
+        <NodeName>Multitasking</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>BrowserAltTabBlowout</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Configures the inclusion of Edge tabs into Alt-Tab.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues AllowedValues="1,2,3,4"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>multitasking.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>AltTabFilterDropdown</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>multitasking~AT~WindowsComponents~MULTITASKING</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>MultiTaskingAltTabFilter</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>Notifications</NodeName>
         <DFProperties>
           <AccessType>
@@ -19509,7 +19657,7 @@ Related policy:
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/9.0/MDM/Policy</MIME>
+        <MIME>com.microsoft/10.0/MDM/Policy</MIME>
       </DFType>
     </DFProperties>
     <Node>
@@ -19579,6 +19727,99 @@ Related policy:
             </DFType>
           </DFProperties>
           <Node>
+            <NodeName>Properties</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+              </AccessType>
+              <Description>Properties of Win32 App ADMX Ingestion</Description>
+              <DFFormat>
+                <node />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <DDFName></DDFName>
+              </DFType>
+            </DFProperties>
+            <Node>
+              <NodeName>*</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                </AccessType>
+                <Description>Setting Type of Win32 App. Policy Or Preference</Description>
+                <DFFormat>
+                  <node />
+                </DFFormat>
+                <Occurrence>
+                  <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <DDFName></DDFName>
+                </DFType>
+              </DFProperties>
+              <Node>
+                <NodeName>*</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Add />
+                    <Delete />
+                    <Get />
+                  </AccessType>
+                  <Description>Unique ID of ADMX file</Description>
+                  <DFFormat>
+                    <node />
+                  </DFFormat>
+                  <Occurrence>
+                    <ZeroOrOne />
+                  </Occurrence>
+                  <Scope>
+                    <Dynamic />
+                  </Scope>
+                  <DFType>
+                    <DDFName></DDFName>
+                  </DFType>
+                </DFProperties>
+                <Node>
+                  <NodeName>Version</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Add />
+                      <Delete />
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>Version of ADMX file</Description>
+                    <DFFormat>
+                      <chr />
+                    </DFFormat>
+                    <Occurrence>
+                      <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                      <Dynamic />
+                    </Scope>
+                    <DFType>
+                      <DDFName></DDFName>
+                    </DFType>
+                  </DFProperties>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+          <Node>
             <NodeName>*</NodeName>
             <DFProperties>
               <AccessType>
@@ -19607,6 +19848,7 @@ Related policy:
                   <Add />
                   <Delete />
                   <Get />
+                  <Replace />
                 </AccessType>
                 <Description>Unique ID of ADMX file</Description>
                 <DFFormat>
@@ -20153,6 +20395,30 @@ Related policy:
             <Description></Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>BlockNonAdminUserInstall</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -21099,6 +21365,1785 @@ Related policy:
         </Node>
       </Node>
       <Node>
+        <NodeName>Audit</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AccountLogon_AuditCredentialValidation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by validation tests on user account logon credentials.
+
+Events in this subcategory occur only on the computer that is authoritative for those credentials. For domain accounts, the domain controller is authoritative. For local accounts, the local computer is authoritative.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogon_AuditKerberosAuthenticationService</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by Kerberos authentication ticket-granting ticket (TGT) requests.
+
+If you configure this policy setting, an audit event is generated after a Kerberos authentication TGT request. Success audits record successful requests and Failure audits record unsuccessful requests.
+If you do not configure this policy setting, no audit event is generated after a Kerberos authentication TGT request.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogon_AuditKerberosServiceTicketOperations</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by Kerberos authentication ticket-granting ticket (TGT) requests submitted for user accounts.
+
+If you configure this policy setting, an audit event is generated after a Kerberos authentication TGT is requested for a user account. Success audits record successful requests and Failure audits record unsuccessful requests.
+If you do not configure this policy setting, no audit event is generated after a Kerberos authentication TGT is request for a user account.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogon_AuditOtherAccountLogonEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by responses to credential requests submitted for a user account logon that are not credential validation or Kerberos tickets.
+
+Currently, there are no events in this subcategory.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditAccountLockout</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by a failed attempt to log on to an account that is locked out.
+
+If you configure this policy setting, an audit event is generated when an account cannot log on to a computer because the account is locked out. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+
+Logon events are essential for understanding user activity and to detect potential attacks.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditGroupMembership</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy allows you to audit the group memberhsip information in the user&apos;s logon token. Events in this subcategory are generated on the computer on which a logon session is created. For an interactive logon, the security audit event is generated on the computer that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource.
+
+When this setting is configured, one or more security audit events are generated for each successful logon. You must also enable the Audit Logon setting under Advanced Audit Policy Configuration\System Audit Policies\Logon/Logoff. Multiple events are generated if the group memberhsip information cannot fit in a single security audit event.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditIPsecExtendedMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Extended Mode negotiations.
+
+If you configure this policy setting, an audit event is generated during an IPsec Extended Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated during an IPsec Extended Mode negotiation.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditIPsecMainMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Main Mode negotiations.
+
+If you configure this policy setting, an audit event is generated during an IPsec Main Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated during an IPsec Main Mode negotiation.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditIPsecQuickMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Quick Mode negotiations.
+
+If you configure this policy setting, an audit event is generated during an IPsec Quick Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts.If
+ you do not configure this policy setting, no audit event is generated during an IPsec Quick Mode negotiation.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditLogoff</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by the closing of a logon session. These events occur on the computer that was accessed. For an interactive logoff the security audit event is generated on the computer that the user account logged on to.
+
+If you configure this policy setting, an audit event is generated when a logon session is closed. Success audits record successful attempts to close sessions and Failure audits record unsuccessful attempts to close sessions.
+If you do not configure this policy setting, no audit event is generated when a logon session is closed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditLogon</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by user account logon attempts on the computer.
+Events in this subcategory are related to the creation of logon sessions and occur on the computer which was accessed. For an interactive logon, the security audit event is generated on the computer that the user account logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource. The following events are included:
+    Successful logon attempts.
+    Failed logon attempts.
+    Logon attempts using explicit credentials. This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials. This most commonly occurs in batch logon configurations, such as scheduled tasks or when using the RUNAS command.
+    Security identifiers (SIDs) were filtered and not allowed to log on.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditNetworkPolicyServer</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by RADIUS (IAS) and Network Access Protection (NAP) user access requests. These requests can be Grant, Deny, Discard, Quarantine, Lock, and Unlock.
+If you configure this policy setting, an audit event is generated for each IAS and NAP user access request. Success audits record successful user access requests and Failure audits record unsuccessful attempts.
+If you do not configure this policy settings, IAS and NAP user access requests are not audited.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditOtherLogonLogoffEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit other logon/logoff-related events that are not covered in the “Logon/Logoff” policy setting such as the following:
+    Terminal Services session disconnections.
+    New Terminal Services sessions.
+    Locking and unlocking a workstation.
+    Invoking a screen saver.
+    Dismissal of a screen saver.
+    Detection of a Kerberos replay attack, in which a Kerberos request was received twice with identical information. This condition could be caused by network misconfiguration.
+    Access to a wireless network granted to a user or computer account.
+    Access to a wired 802.1x network granted to a user or computer account.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditSpecialLogon</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by special logons such as the following :
+    The use of a special logon, which is a logon that has administrator-equivalent privileges and can be used to elevate a process to a higher level.
+    A logon by a member of a Special Group. Special Groups enable you to audit events generated when a member of a certain group has logged on to your network. You can configure a list of group security identifiers (SIDs) in the registry. If any of those SIDs are added to a token during logon and the subcategory is enabled, an event is logged. For more information about this feature, see article 947223 in the Microsoft Knowledge Base (https://go.microsoft.com/fwlink/?LinkId=121697).</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditUserDeviceClaims</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy allows you to audit user and device claims information in the user&apos;s logon token. Events in this subcategory are generated on the computer on which a logon session is created. For an interactive logon, the security audit event is generated on the computer that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource.
+
+User claims are added to a logon token when claims are included with a user&apos;s account attributes in Active Directory. Device claims are added to the logon token when claims are included with a device&apos;s computer account attributes in Active Directory. In addition, compound identity must be enabled for the domain and on the computer where the user logged on.
+
+When this setting is configured, one or more security audit events are generated for each successful logon. You must also enable the Audit Logon setting under Advanced Audit Policy Configuration\System Audit Policies\Logon/Logoff. Multiple events are generated if the user and device claims information cannot fit in a single security audit event.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditApplicationGroupManagement</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by changes to application groups such as the following:
+    Application group is created, changed, or deleted.
+    Member is added or removed from an application group.
+
+If you configure this policy setting, an audit event is generated when an attempt to change an application group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when an application group changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditComputerAccountManagement</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by changes to computer accounts such as when a computer account is created, changed, or deleted.
+
+If you configure this policy setting, an audit event is generated when an attempt to change a computer account is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a computer account changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditDistributionGroupManagement</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by changes to distribution groups such as the following:
+    Distribution group is created, changed, or deleted.
+    Member is added or removed from a distribution group.
+    Distribution group type is changed.
+
+If you configure this policy setting, an audit event is generated when an attempt to change a distribution group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a distribution group changes.
+
+Note: Events in this subcategory are logged only on domain controllers.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditOtherAccountManagementEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by other user account changes that are not covered in this category, such as the following:
+    The password hash of a user account was accessed. This typically happens during an Active Directory Management Tool password migration.
+    The Password Policy Checking API was called. Calls to this function can be part of an attack when a malicious application tests the policy to reduce the number of attempts during a password dictionary attack.
+    Changes to the Default Domain Group Policy under the following Group Policy paths:
+Computer Configuration\Windows Settings\Security Settings\Account Policies\Password Policy
+Computer Configuration\Windows Settings\Security Settings\Account Policies\Account Lockout Policy</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditSecurityGroupManagement</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by changes to security groups such as the following:
+    Security group is created, changed, or deleted.
+    Member is added or removed from a security group.
+    Group type is changed.
+
+If you configure this policy setting, an audit event is generated when an attempt to change a security group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a security group changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditUserAccountManagement</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit changes to user accounts. Events include the following:
+    A user account is created, changed, deleted; renamed, disabled, enabled, locked out, or unlocked.
+    A user account’s password is set or changed.
+    A security identifier (SID) is added to the SID History of a user account.
+    The Directory Services Restore Mode password is configured.
+    Permissions on administrative user accounts are changed.
+    Credential Manager credentials are backed up or restored.
+
+If you configure this policy setting, an audit event is generated when an attempt to change a user account is made. Success audits record successful attempts and Failure audits record unsuccessful attempts. If you do not configure this policy setting, no audit event is generated when a user account changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditDPAPIActivity</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated when encryption or decryption requests are made to the Data Protection application interface (DPAPI). DPAPI is used to protect secret information such as stored password and key information. For more information about DPAPI, see https://go.microsoft.com/fwlink/?LinkId=121720.
+
+If you configure this policy setting, an audit event is generated when an encryption or decryption request is made to DPAPI. Success audits record successful requests and Failure audits record unsuccessful requests.
+If you do not configure this policy setting, no audit event is generated when an encryption or decryption request is made to DPAPI.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditPNPActivity</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit when plug and play detects an external device.
+
+If you configure this policy setting, an audit event is generated whenever plug and play detects an external device. Only Success audits are recorded for this category.
+If you do not configure this policy setting, no audit event is generated when an external device is detected by plug and play.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditProcessCreation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated when a process is created or starts. The name of the application or user that created the process is also audited.
+
+If you configure this policy setting, an audit event is generated when a process is created. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a process is created.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditProcessTermination</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated when a process ends. 
+
+If you configure this policy setting, an audit event is generated when a process ends. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a process ends.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditRPCEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit inbound remote procedure call (RPC) connections.
+
+If you configure this policy setting, an audit event is generated when a remote RPC connection is attempted. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a remote RPC connection is attempted.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditTokenRightAdjusted</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by adjusting the privileges of a token.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DSAccess_AuditDetailedDirectoryServiceReplication</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by detailed Active Directory Domain Services (AD DS) replication between domain controllers.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DSAccess_AuditDirectoryServiceAccess</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated when an Active Directory Domain Services (AD DS) object is accessed. 
+
+Only AD DS objects with a matching system access control list (SACL) are logged.
+
+Events in this subcategory are similar to the Directory Service Access events available in previous versions of Windows.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DSAccess_AuditDirectoryServiceChanges</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by changes to objects in Active Directory Domain Services (AD DS). Events are logged when an object is created, deleted, modified, moved, or undeleted.
+
+When possible, events logged in this subcategory indicate the old and new values of the object’s properties.
+
+Events in this subcategory are logged only on domain controllers, and only objects in AD DS with a matching system access control list (SACL) are logged.
+
+Note: Actions on some objects and properties do not cause audit events to be generated due to settings on the object class in the schema.
+
+If you configure this policy setting, an audit event is generated when an attempt to change an object in AD DS is made. Success audits record successful attempts, however unsuccessful attempts are NOT recorded.
+If you do not configure this policy setting, no audit event is generated when an attempt to change an object in AD DS object is made.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DSAccess_AuditDirectoryServiceReplication</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit replication between two Active Directory Domain Services (AD DS) domain controllers.
+
+If you configure this policy setting, an audit event is generated during AD DS replication. Success audits record successful replication and Failure audits record unsuccessful replication.
+If you do not configure this policy setting, no audit event is generated during AD DS replication.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditApplicationGenerated</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit applications that generate events using the Windows Auditing application programming interfaces (APIs). Applications designed to use the Windows Auditing API use this subcategory to log auditing events related to their function.
+Events in this subcategory include:
+    Creation of an application client context.
+    Deletion of an application client context.
+    Initialization of an application client context.
+    Other application operations using the Windows Auditing APIs.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditCentralAccessPolicyStaging</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit access requests where the permission granted or denied by a proposed policy differs from the current central access policy on an object.
+
+If you configure this policy setting, an audit event is generated each time a user accesses an object and the permission granted by the current central access policy on the object differs from that granted by the proposed policy. The resulting audit event will be generated as follows:
+1) Success audits, when configured, records access attempts when the current central access policy grants access but the proposed policy denies access.
+2) Failure audits when configured records access attempts when:
+   a) The current central access policy does not grant access but the proposed policy grants access.
+   b) A principal requests the maximum access rights they are allowed and the access rights granted by the current central access policy are different than the access rights granted by the proposed policy.
+
+Volume: Potentially high on a file server when the proposed policy differs significantly from the current central access policy.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditCertificationServices</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit Active Directory Certificate Services (AD CS) operations.
+AD CS operations include the following:
+    AD CS startup/shutdown/backup/restore.
+    Changes to the certificate revocation list (CRL).
+    New certificate requests.
+    Issuing of a certificate.
+    Revocation of a certificate.
+    Changes to the Certificate Manager settings for AD CS.
+    Changes in the configuration of AD CS.
+    Changes to a Certificate Services template.
+    Importing of a certificate.
+    Publishing of a certification authority certificate is to Active Directory Domain Services.
+    Changes to the security permissions for AD CS.
+    Archival of a key.
+    Importing of a key.
+    Retrieval of a key.
+    Starting of Online Certificate Status Protocol (OCSP) Responder Service.
+    Stopping of Online Certificate Status Protocol (OCSP) Responder Service.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditDetailedFileShare</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit attempts to access files and folders on a shared folder. The Detailed File Share setting logs an event every time a file or folder is accessed, whereas the File Share setting only records one event for any connection established between a client and file share.  Detailed File Share audit events include detailed information about the permissions or other criteria used to grant or deny access.
+
+If you configure this policy setting, an audit event is generated when an attempt is made to access a file or folder on a share. The administrator can specify whether to audit only successes, only failures, or both successes and failures.
+
+Note: There are no system access control lists (SACLs) for shared folders. If this policy setting is enabled, access to all shared files and folders on the system is audited.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditFileShare</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit attempts to access a shared folder.
+
+If you configure this policy setting, an audit event is generated when an attempt is made to access a shared folder. If this policy setting is defined, the administrator can specify whether to audit only successes, only failures, or both successes and failures.
+
+Note: There are no system access control lists (SACLs) for shared folders. If this policy setting is enabled, access to all shared folders on the system is audited.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditFileSystem</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit user attempts to access file system objects. A security audit event is generated only for objects that have system access control lists (SACL) specified, and only if the type of access requested, such as Write, Read, or Modify and the account making the request match the settings in the SACL. For more information about enabling object access auditing, see https://go.microsoft.com/fwlink/?LinkId=122083.
+
+If you configure this policy setting, an audit event is generated each time an account accesses a file system object with a matching SACL. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when an account accesses a file system object with a matching SACL.
+
+Note: You can set a SACL on a file system object using the Security tab in that object&apos;s Properties dialog box.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditFilteringPlatformConnection</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit connections that are allowed or blocked by the Windows Filtering Platform (WFP). The following events are included:
+    The Windows Firewall Service blocks an application from accepting incoming connections on the network.
+    The WFP allows a connection.
+    The WFP blocks a connection.
+    The WFP permits a bind to a local port.
+    The WFP blocks a bind to a local port.
+    The WFP allows a connection.
+    The WFP blocks a connection.
+    The WFP permits an application or service to listen on a port for incoming connections.
+    The WFP blocks an application or service to listen on a port for incoming connections.
+
+If you configure this policy setting, an audit event is generated when connections are allowed or blocked by the WFP. Success audits record events generated when connections are allowed and Failure audits record events generated when connections are blocked.
+If you do not configure this policy setting, no audit event is generated when connected are allowed or blocked by the WFP.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditFilteringPlatformPacketDrop</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit packets that are dropped by Windows Filtering Platform (WFP).</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditHandleManipulation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated when a handle to an object is opened or closed. Only objects with a matching system access control list (SACL) generate security audit events.
+
+If you configure this policy setting, an audit event is generated when a handle is manipulated. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a handle is manipulated.
+
+Note: Events in this subcategory generate events only for object types where the corresponding Object Access subcategory is enabled. For example, if File system object access is enabled, handle manipulation security audit events are generated. If Registry object access is not enabled, handle manipulation security audit events will not be generated.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditKernelObject</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit attempts to access the kernel, which include mutexes and semaphores. 
+Only kernel objects with a matching system access control list (SACL) generate security audit events.
+
+Note: The Audit: Audit the access of global system objects policy setting controls the default SACL of kernel objects.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditOtherObjectAccessEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by the management of task scheduler jobs or COM+ objects. 
+For scheduler jobs, the following are audited:
+    Job created.
+    Job deleted.
+    Job enabled.
+    Job disabled.
+    Job updated.
+For COM+ objects, the following are audited:
+    Catalog object added.
+    Catalog object updated.
+    Catalog object deleted.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditRegistry</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit attempts to access registry objects. A security audit event is generated only for objects that have system access control lists (SACLs) specified, and only if the type of access requested, such as Read, Write, or Modify, and the account making the request match the settings in the SACL.
+
+If you configure this policy setting, an audit event is generated each time an account accesses a registry object with a matching SACL. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when an account accesses a registry object with a matching SACL.
+
+Note: You can set a SACL on a registry object using the Permissions dialog box.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditRemovableStorage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit user attempts to access file system objects on a removable storage device. A security audit event is generated only for all objects for all types of access requested.
+
+If you configure this policy setting, an audit event is generated each time an account accesses a file system object on a removable storage. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+
+If you do not configure this policy setting, no audit event is generated when an account accesses a file system object on a removable storage.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditSAM</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by attempts to access to Security Accounts Manager (SAM) objects.
+SAM objects include the following:
+    SAM_ALIAS -- A local group.
+    SAM_GROUP -- A group that is not a local group.
+    SAM_USER – A user account.
+    SAM_DOMAIN – A domain.
+    SAM_SERVER – A computer account.
+If you configure this policy setting, an audit event is generated when an attempt to access a kernel object is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when an attempt to access a kernel object is made.
+Note: Only the System Access Control List (SACL) for SAM_SERVER can be modified.
+Volume: High on domain controllers. For information about reducing the amount of events generated in this subcategory, see article 841001 in the Microsoft Knowledge Base (https://go.microsoft.com/fwlink/?LinkId=121698).</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditAuthenticationPolicyChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by changes to the authentication policy such as the following:
+    Creation of forest and domain trusts.
+    Modification of forest and domain trusts.
+    Removal of forest and domain trusts.
+    Changes to Kerberos policy under Computer Configuration\Windows Settings\Security Settings\Account Policies\Kerberos Policy.
+    Granting of any of the following user rights to a user or group:
+        Access This Computer From the Network.
+        Allow Logon Locally.
+        Allow Logon Through Terminal Services.
+        Logon as a Batch Job.
+        Logon a Service.
+    Namespace collision. For example, when a new trust has the same name as an existing namespace name.
+
+If you configure this policy setting, an audit event is generated when an attempt to change the authentication policy is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when the authentication policy is changed.
+
+Note: The security audit event is logged when the group policy is applied. It does not occur at the time when the settings are modified.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditAuthorizationPolicyChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by changes to the authorization policy such as the following:
+    Assignment of user rights (privileges), such as SeCreateTokenPrivilege, that are not audited through the “Authentication Policy Change” subcategory.
+    Removal of user rights (privileges), such as SeCreateTokenPrivilege, that are not audited through the “Authentication Policy Change” subcategory.
+    Changes in the Encrypted File System (EFS) policy.
+    Changes to the Resource attributes of an object.
+    Changes to the Central Access Policy (CAP) applied to an object.
+
+If you configure this policy setting, an audit event is generated when an attempt to change the authorization policy is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when the authorization policy changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditFilteringPlatformPolicyChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by changes to the Windows Filtering Platform (WFP) such as the following: 
+    IPsec services status.
+    Changes to IPsec policy settings.
+    Changes to Windows Firewall policy settings.
+    Changes to WFP providers and engine.
+
+If you configure this policy setting, an audit event is generated when a change to the WFP is attempted. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a change occurs to the WFP.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditMPSSVCRuleLevelPolicyChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by changes in policy rules used by the Microsoft Protection Service (MPSSVC). This service is used by Windows Firewall. Events include the following:
+    Reporting of active policies when Windows Firewall service starts.
+    Changes to Windows Firewall rules.
+    Changes to Windows Firewall exception list.
+    Changes to Windows Firewall settings.
+    Rules ignored or not applied by Windows Firewall Service.
+    Changes to Windows Firewall Group Policy settings.
+
+If you configure this policy setting, an audit event is generated by attempts to change policy rules used by the MPSSVC. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated by changes in policy rules used by the MPSSVC.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditOtherPolicyChangeEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by other security policy changes that are not audited in the policy change category, such as the following:
+    Trusted Platform Module (TPM) configuration changes.
+    Kernel-mode cryptographic self tests.
+    Cryptographic provider operations.
+    Cryptographic context operations or modifications.
+    Applied Central Access Policies (CAPs) changes.
+    Boot Configuration Data (BCD) modifications.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditPolicyChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit changes in the security audit policy settings such as the following:
+    Settings permissions and audit settings on the Audit Policy object.
+    Changes to the system audit policy.
+    Registration of security event sources.
+    De-registration of security event sources.
+    Changes to the per-user audit settings.
+    Changes to the value of CrashOnAuditFail.
+    Changes to the system access control list on a file system or registry object.
+    Changes to the Special Groups list.
+
+Note: System access control list (SACL) change auditing is done when a SACL for an object changes and the policy change category is enabled. Discretionary access control list (DACL) and ownership changes are audited when object access auditing is enabled and the object&apos;s SACL is configured for auditing of DACL/Owner change.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PrivilegeUse_AuditNonSensitivePrivilegeUse</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by the use of non-sensitive privileges (user rights).
+The following privileges are non-sensitive:
+        Access Credential Manager as a trusted caller.
+        Access this computer from the network.
+        Add workstations to domain.
+        Adjust memory quotas for a process.
+        Allow log on locally.
+        Allow log on through Terminal Services.
+        Bypass traverse checking.
+        Change the system time.
+        Create a pagefile.
+        Create global objects.
+        
+        Create permanent shared objects.
+        Create symbolic links.
+        Deny access this computer from the network.
+        Deny log on as a batch job.
+        Deny log on as a service.
+        Deny log on locally.
+        Deny log on through Terminal Services.
+        Force shutdown from a remote system.
+        Increase a process working set.
+        Increase scheduling priority.
+        Lock pages in memory.
+        Log on as a batch job.
+        Log on as a service.
+        Modify an object label.
+        Perform volume maintenance tasks.
+        Profile single process.
+        Profile system performance.
+        Remove computer from docking station.
+        Shut down the system.
+        Synchronize directory service data.
+
+If you configure this policy setting, an audit event is generated when a non-sensitive privilege is called. Success audits record successful calls and Failure audits record unsuccessful calls.
+If you do not configure this policy setting, no audit event is generated when a non-sensitive privilege is called.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PrivilegeUse_AuditOtherPrivilegeUseEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Not used.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PrivilegeUse_AuditSensitivePrivilegeUse</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated when sensitive privileges (user rights) are used such as the following:
+    A privileged service is called.
+    One of the following privileges are called:
+        Act as part of the operating system.
+        Back up files and directories.
+        Create a token object.
+        Debug programs.
+        Enable computer and user accounts to be trusted for delegation.
+        Generate security audits.
+        Impersonate a client after authentication.
+        Load and unload device drivers.
+        Manage auditing and security log.
+        Modify firmware environment values.
+        Replace a process-level token.
+        Restore files and directories.
+        Take ownership of files or other objects.
+
+If you configure this policy setting, an audit event is generated when sensitive privilege requests are made. Success audits record successful requests and Failure audits record unsuccessful requests.
+If you do not configure this policy setting, no audit event is generated when sensitive privilege requests are made.
+</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>System_AuditIPsecDriver</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by the IPsec filter driver such as the following:
+    Startup and shutdown of the IPsec services.
+    Network packets dropped due to integrity check failure.
+    Network packets dropped due to replay check failure.
+    Network packets dropped due to being in plaintext.
+    Network packets received with incorrect Security Parameter Index (SPI). This may indicate that either the network card is not working correctly or the driver needs to be updated.
+    Inability to process IPsec filters.
+
+If you configure this policy setting, an audit event is generated on an IPsec filter driver operation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated on an IPSec filter driver operation.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>System_AuditOtherSystemEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit any of the following events:
+    Startup and shutdown of the Windows Firewall service and driver.
+    Security policy processing by the Windows Firewall Service.
+    Cryptography key file and migration operations.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>System_AuditSecurityStateChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events generated by changes in the security state of the computer such as the following events:
+    Startup and shutdown of the computer.
+    Change of system time.
+    Recovering the system from CrashOnAuditFail, which is logged after a system restarts when the security event log is full and the CrashOnAuditFail registry entry is configured.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>System_AuditSecuritySystemExtension</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events related to security system extensions or services such as the following:
+    A security system extension, such as an authentication, notification, or security package is loaded and is registered with the Local Security Authority (LSA). It is used to authenticate logon attempts, submit logon requests, and any account or password changes. Examples of security system extensions are Kerberos and NTLM.
+    A service is installed and registered with the Service Control Manager. The audit log contains information about the service name, binary, type, start type, and service account.
+If you configure this policy setting, an audit event is generated when an attempt is made to load a security system extension. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when an attempt is made to load a security system extension.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>System_AuditSystemIntegrity</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to audit events that violate the integrity of the security subsystem, such as the following:
+    Events that could not be written to the event log because of a problem with the auditing system.
+    A process that uses a local procedure call (LPC) port that is not valid in an attempt to impersonate a client by replying, reading, or writing to or from a client address space.
+    The detection of a Remote Procedure Call (RPC) that compromises system integrity.
+    The detection of a hash value of an executable file that is not valid as determined by Code Integrity.
+    Cryptographic operations that compromise system integrity.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>Authentication</NodeName>
         <DFProperties>
           <AccessType>
@@ -21747,6 +23792,30 @@ Related policy:
             <Description></Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetMinimumEncryptionKeySize</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -23021,7 +25090,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </AccessType>
             <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
 
-When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe prevents a user from turning off the OneNote Web Clipper and extension.
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
 
 When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
 
@@ -23032,11 +25101,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -25495,6 +27564,30 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DOCacheHostSource</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DODelayBackgroundDownloadFromHttp</NodeName>
           <DFProperties>
             <AccessType>
@@ -25663,6 +27756,30 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DOMaxBackgroundDownloadBandwidth</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DOMaxCacheAge</NodeName>
           <DFProperties>
             <AccessType>
@@ -25711,31 +27828,7 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DOMaxDownloadBandwidth</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DOMaxUploadBandwidth</NodeName>
+          <NodeName>DOMaxForegroundDownloadBandwidth</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -25928,30 +28021,6 @@ Related policy:
         </Node>
         <Node>
           <NodeName>DOPercentageMaxBackgroundBandwidth</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DOPercentageMaxDownloadBandwidth</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -26329,6 +28398,30 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowInstallationOfMatchingDeviceInstanceIDs</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowInstallationOfMatchingDeviceSetupClasses</NodeName>
           <DFProperties>
             <AccessType>
@@ -26402,6 +28495,30 @@ Related policy:
         </Node>
         <Node>
           <NodeName>PreventInstallationOfMatchingDeviceIDs</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventInstallationOfMatchingDeviceInstanceIDs</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -27737,6 +29854,30 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableCloudOptimizedContent</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy controls Windows experiences that use the cloud optimized content client component. If you enable this policy, they will present only default content. If you disable or do not configure this policy, they will be able to use cloud provided content.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DoNotShowFeedbackNotifications</NodeName>
           <DFProperties>
             <AccessType>
@@ -27865,6 +30006,124 @@ If you do not configure this policy setting, users will be able to choose whethe
         </DFProperties>
         <Node>
           <NodeName>ExploitProtectionSettings</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>FactoryComposer</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>BackgroundImagePath</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>OEMVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UserToSignIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UWPLaunchOnBoot</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -28745,30 +31004,6 @@ If you do not configure this policy setting, users will be able to choose whethe
         </Node>
         <Node>
           <NodeName>ConsistentMimeHandlingInternetExplorerProcesses</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DisableActiveXVersionListAutoDownload</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -36239,6 +38474,60 @@ The options are:
         </Node>
       </Node>
       <Node>
+        <NodeName>LocalUsersAndGroups</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>Configure</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This Setting allows an administrator to manage local groups on a Device.
+                            Possible settings:
+                            1. Update Group Membership: Update a group and add and/or remove members though the &apos;U&apos; action.
+                            When using Update, existing group members that are not specified in the policy remain untouched.
+                            2. Replace Group Membership: Restrict a group by replacing group membership through the &apos;R&apos; action.
+                            When using Replace, existing group membership is replaced by the list of members specified in
+                            the add member section. This option works in the same way as a Restricted Group and any group
+                            members that are not specified in the policy are removed.
+                            Caution: If the same group is configured with both Replace and Update, then Replace will win.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>LockDown</NodeName>
         <DFProperties>
           <AccessType>
@@ -36433,6 +38722,148 @@ The options are:
               <Replace />
             </AccessType>
             <Description>This policy setting allows you to enable or disable the sending and receiving of cellular RCS (Rich Communication Services) messages.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>MixedReality</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AADGroupMembershipCacheValidityInDays</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>BrightnessButtonDisabled</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>FallbackDiagnostics</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MicrophoneDisabled</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>VolumeButtonDisabled</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -37947,6 +40378,102 @@ If the user has configured a slide show to run on the lock screen when the machi
               <Replace />
             </AccessType>
             <Description>List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the account information privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessBackgroundSpatialPerception</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting specifies whether Windows apps can access the movement of the user&apos;s head, hands, motion controllers, and other tracked objects, while the apps are running in the background.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the user&apos;s movements while the apps are running in the background. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the user&apos;s movements while the apps are running in the background. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the user movements privacy setting for the listed apps. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -44049,6 +46576,90 @@ If you disable or do not configure this policy setting, File History can be acti
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ConfigureJapaneseIMEVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy allows the IT admin to configure the Microsoft Japanese IME version in the desktop.
+The following list shows the supported values:
+0 (default) – The new Microsoft Japanese IME is on by default. Allow to control Microsoft Japanese IME version to use.
+1 - The previous version of Microsoft Japanese IME is always selected.  Not allowed to control Microsoft Japanese IME version to use.
+2 - The new Microsoft Japanese IME is always selected.  Not allowed to control Microsoft Japanese IME version to use.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureSimplifiedChineseIMEVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy allows the IT admin to configure the Microsoft Simplified Chinese IME version in the desktop.
+The following list shows the supported values:
+0 (default) – The new Microsoft Simplified Chinese IME is on by default. Allow to control Microsoft Simplified Chinese IME version to use.
+1 - The previous version of Microsoft Simplified Chinese IME is always selected.  Not allowed to control Microsoft Simplified Chinese IME version to use.
+2 - The new Microsoft Simplified Chinese IME is always selected.  Not allowed to control Microsoft Simplified Chinese IME version to use.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureTraditionalChineseIMEVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy allows the IT admin to configure the Microsoft Traditional Chinese IME version in the desktop.
+The following list shows the supported values:
+0 (default) – The new Microsoft Traditional Chinese IME is on by default. Allow to control Microsoft Traditional Chinese IME version to use.
+1 - The previous version of Microsoft Traditional Chinese IME is always selected.  Not allowed to control Microsoft Traditional Chinese IME version to use.
+2 - The new Microsoft Traditional Chinese IME is always selected.  Not allowed to control Microsoft Traditional Chinese IME version to use.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableTouchKeyboardAutoInvokeInDesktopMode</NodeName>
           <DFProperties>
             <AccessType>
@@ -45090,6 +47701,30 @@ If you disable or do not configure this policy setting, the wake setting as spec
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableWUfBSafeguards</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EngagedRestartDeadline</NodeName>
           <DFProperties>
             <AccessType>
@@ -45845,6 +48480,54 @@ If you disable or do not configure this policy setting, the wake setting as spec
             <Description></Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetProxyBehaviorForUpdateDetection</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TargetReleaseVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -48511,6 +51194,33 @@ Note: The first sign-in animation will not be shown on Server, so this policy wi
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>BlockNonAdminUserInstall</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>AppxPackageManager.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>AppxPackageManager~AT~WindowsComponents~AppxDeployment</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>BlockNonAdminUserInstall</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableStoreOriginatedApps</NodeName>
           <DFProperties>
             <AccessType>
@@ -49578,6 +52288,1960 @@ Note: The first sign-in animation will not be shown on Server, so this policy wi
         </Node>
       </Node>
       <Node>
+        <NodeName>Audit</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AccountLogon_AuditCredentialValidation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by validation tests on user account logon credentials.
+
+Events in this subcategory occur only on the computer that is authoritative for those credentials. For domain accounts, the domain controller is authoritative. For local accounts, the local computer is authoritative.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Account Logon</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Credential Validation</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogon_AuditKerberosAuthenticationService</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by Kerberos authentication ticket-granting ticket (TGT) requests.
+
+If you configure this policy setting, an audit event is generated after a Kerberos authentication TGT request. Success audits record successful requests and Failure audits record unsuccessful requests.
+If you do not configure this policy setting, no audit event is generated after a Kerberos authentication TGT request.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Account Logon</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Kerberos Authentication Service</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogon_AuditKerberosServiceTicketOperations</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by Kerberos authentication ticket-granting ticket (TGT) requests submitted for user accounts.
+
+If you configure this policy setting, an audit event is generated after a Kerberos authentication TGT is requested for a user account. Success audits record successful requests and Failure audits record unsuccessful requests.
+If you do not configure this policy setting, no audit event is generated after a Kerberos authentication TGT is request for a user account.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Account Logon</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Kerberos Service Ticket Operations</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogon_AuditOtherAccountLogonEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by responses to credential requests submitted for a user account logon that are not credential validation or Kerberos tickets.
+
+Currently, there are no events in this subcategory.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Account Logon</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Other Account Logon Events</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditAccountLockout</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by a failed attempt to log on to an account that is locked out.
+
+If you configure this policy setting, an audit event is generated when an account cannot log on to a computer because the account is locked out. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+
+Logon events are essential for understanding user activity and to detect potential attacks.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Logon/Logoff</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Account Lockout</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditGroupMembership</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy allows you to audit the group memberhsip information in the user&apos;s logon token. Events in this subcategory are generated on the computer on which a logon session is created. For an interactive logon, the security audit event is generated on the computer that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource.
+
+When this setting is configured, one or more security audit events are generated for each successful logon. You must also enable the Audit Logon setting under Advanced Audit Policy Configuration\System Audit Policies\Logon/Logoff. Multiple events are generated if the group memberhsip information cannot fit in a single security audit event.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Logon/Logoff</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Group Membership</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditIPsecExtendedMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Extended Mode negotiations.
+
+If you configure this policy setting, an audit event is generated during an IPsec Extended Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated during an IPsec Extended Mode negotiation.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Logon/Logoff</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit IPsec Extended Mode</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditIPsecMainMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Main Mode negotiations.
+
+If you configure this policy setting, an audit event is generated during an IPsec Main Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated during an IPsec Main Mode negotiation.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Logon/Logoff</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit IPsec Main Mode</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditIPsecQuickMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Quick Mode negotiations.
+
+If you configure this policy setting, an audit event is generated during an IPsec Quick Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts.If
+ you do not configure this policy setting, no audit event is generated during an IPsec Quick Mode negotiation.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Logon/Logoff</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit IPsec Quick Mode</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditLogoff</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by the closing of a logon session. These events occur on the computer that was accessed. For an interactive logoff the security audit event is generated on the computer that the user account logged on to.
+
+If you configure this policy setting, an audit event is generated when a logon session is closed. Success audits record successful attempts to close sessions and Failure audits record unsuccessful attempts to close sessions.
+If you do not configure this policy setting, no audit event is generated when a logon session is closed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Logon/Logoff</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Logoff</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditLogon</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by user account logon attempts on the computer.
+Events in this subcategory are related to the creation of logon sessions and occur on the computer which was accessed. For an interactive logon, the security audit event is generated on the computer that the user account logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource. The following events are included:
+    Successful logon attempts.
+    Failed logon attempts.
+    Logon attempts using explicit credentials. This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials. This most commonly occurs in batch logon configurations, such as scheduled tasks or when using the RUNAS command.
+    Security identifiers (SIDs) were filtered and not allowed to log on.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Logon/Logoff</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Logon</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditNetworkPolicyServer</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>3</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by RADIUS (IAS) and Network Access Protection (NAP) user access requests. These requests can be Grant, Deny, Discard, Quarantine, Lock, and Unlock.
+If you configure this policy setting, an audit event is generated for each IAS and NAP user access request. Success audits record successful user access requests and Failure audits record unsuccessful attempts.
+If you do not configure this policy settings, IAS and NAP user access requests are not audited.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Logon/Logoff</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Network Policy Server</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditOtherLogonLogoffEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit other logon/logoff-related events that are not covered in the “Logon/Logoff” policy setting such as the following:
+    Terminal Services session disconnections.
+    New Terminal Services sessions.
+    Locking and unlocking a workstation.
+    Invoking a screen saver.
+    Dismissal of a screen saver.
+    Detection of a Kerberos replay attack, in which a Kerberos request was received twice with identical information. This condition could be caused by network misconfiguration.
+    Access to a wireless network granted to a user or computer account.
+    Access to a wired 802.1x network granted to a user or computer account.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Logon/Logoff</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Other Logon Logoff Events</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditSpecialLogon</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by special logons such as the following :
+    The use of a special logon, which is a logon that has administrator-equivalent privileges and can be used to elevate a process to a higher level.
+    A logon by a member of a Special Group. Special Groups enable you to audit events generated when a member of a certain group has logged on to your network. You can configure a list of group security identifiers (SIDs) in the registry. If any of those SIDs are added to a token during logon and the subcategory is enabled, an event is logged. For more information about this feature, see article 947223 in the Microsoft Knowledge Base (https://go.microsoft.com/fwlink/?LinkId=121697).</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Logon/Logoff</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Special Logon</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountLogonLogoff_AuditUserDeviceClaims</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy allows you to audit user and device claims information in the user&apos;s logon token. Events in this subcategory are generated on the computer on which a logon session is created. For an interactive logon, the security audit event is generated on the computer that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource.
+
+User claims are added to a logon token when claims are included with a user&apos;s account attributes in Active Directory. Device claims are added to the logon token when claims are included with a device&apos;s computer account attributes in Active Directory. In addition, compound identity must be enabled for the domain and on the computer where the user logged on.
+
+When this setting is configured, one or more security audit events are generated for each successful logon. You must also enable the Audit Logon setting under Advanced Audit Policy Configuration\System Audit Policies\Logon/Logoff. Multiple events are generated if the user and device claims information cannot fit in a single security audit event.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Logon/Logoff</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit User Device Claims</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditApplicationGroupManagement</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by changes to application groups such as the following:
+    Application group is created, changed, or deleted.
+    Member is added or removed from an application group.
+
+If you configure this policy setting, an audit event is generated when an attempt to change an application group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when an application group changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Account Management</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Application Group Management</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditComputerAccountManagement</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by changes to computer accounts such as when a computer account is created, changed, or deleted.
+
+If you configure this policy setting, an audit event is generated when an attempt to change a computer account is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a computer account changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Account Management</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Computer Account Management</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditDistributionGroupManagement</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by changes to distribution groups such as the following:
+    Distribution group is created, changed, or deleted.
+    Member is added or removed from a distribution group.
+    Distribution group type is changed.
+
+If you configure this policy setting, an audit event is generated when an attempt to change a distribution group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a distribution group changes.
+
+Note: Events in this subcategory are logged only on domain controllers.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Account Management</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Distributio Group Management</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditOtherAccountManagementEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by other user account changes that are not covered in this category, such as the following:
+    The password hash of a user account was accessed. This typically happens during an Active Directory Management Tool password migration.
+    The Password Policy Checking API was called. Calls to this function can be part of an attack when a malicious application tests the policy to reduce the number of attempts during a password dictionary attack.
+    Changes to the Default Domain Group Policy under the following Group Policy paths:
+Computer Configuration\Windows Settings\Security Settings\Account Policies\Password Policy
+Computer Configuration\Windows Settings\Security Settings\Account Policies\Account Lockout Policy</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Account Management</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Other Account Management Events</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditSecurityGroupManagement</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by changes to security groups such as the following:
+    Security group is created, changed, or deleted.
+    Member is added or removed from a security group.
+    Group type is changed.
+
+If you configure this policy setting, an audit event is generated when an attempt to change a security group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a security group changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Account Management</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Security Group Management</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AccountManagement_AuditUserAccountManagement</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to audit changes to user accounts. Events include the following:
+    A user account is created, changed, deleted; renamed, disabled, enabled, locked out, or unlocked.
+    A user account’s password is set or changed.
+    A security identifier (SID) is added to the SID History of a user account.
+    The Directory Services Restore Mode password is configured.
+    Permissions on administrative user accounts are changed.
+    Credential Manager credentials are backed up or restored.
+
+If you configure this policy setting, an audit event is generated when an attempt to change a user account is made. Success audits record successful attempts and Failure audits record unsuccessful attempts. If you do not configure this policy setting, no audit event is generated when a user account changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Account Management</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit User Account Management</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditDPAPIActivity</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated when encryption or decryption requests are made to the Data Protection application interface (DPAPI). DPAPI is used to protect secret information such as stored password and key information. For more information about DPAPI, see https://go.microsoft.com/fwlink/?LinkId=121720.
+
+If you configure this policy setting, an audit event is generated when an encryption or decryption request is made to DPAPI. Success audits record successful requests and Failure audits record unsuccessful requests.
+If you do not configure this policy setting, no audit event is generated when an encryption or decryption request is made to DPAPI.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Detailed Tracking</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit DPAPI Activity</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditPNPActivity</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit when plug and play detects an external device.
+
+If you configure this policy setting, an audit event is generated whenever plug and play detects an external device. Only Success audits are recorded for this category.
+If you do not configure this policy setting, no audit event is generated when an external device is detected by plug and play.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Detailed Tracking</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit PNP Activity</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditProcessCreation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated when a process is created or starts. The name of the application or user that created the process is also audited.
+
+If you configure this policy setting, an audit event is generated when a process is created. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a process is created.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Detailed Tracking</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Process Creation</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditProcessTermination</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated when a process ends. 
+
+If you configure this policy setting, an audit event is generated when a process ends. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a process ends.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Detailed Tracking</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Process Termination</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditRPCEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit inbound remote procedure call (RPC) connections.
+
+If you configure this policy setting, an audit event is generated when a remote RPC connection is attempted. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a remote RPC connection is attempted.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Detailed Tracking</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit RPC Events</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DetailedTracking_AuditTokenRightAdjusted</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by adjusting the privileges of a token.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Detailed Tracking</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Token Right Adjusted</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DSAccess_AuditDetailedDirectoryServiceReplication</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by detailed Active Directory Domain Services (AD DS) replication between domain controllers.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~DS Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Detailed Directory Service Replication</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DSAccess_AuditDirectoryServiceAccess</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated when an Active Directory Domain Services (AD DS) object is accessed. 
+
+Only AD DS objects with a matching system access control list (SACL) are logged.
+
+Events in this subcategory are similar to the Directory Service Access events available in previous versions of Windows.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~DS Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Directory Service Access</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DSAccess_AuditDirectoryServiceChanges</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by changes to objects in Active Directory Domain Services (AD DS). Events are logged when an object is created, deleted, modified, moved, or undeleted.
+
+When possible, events logged in this subcategory indicate the old and new values of the object’s properties.
+
+Events in this subcategory are logged only on domain controllers, and only objects in AD DS with a matching system access control list (SACL) are logged.
+
+Note: Actions on some objects and properties do not cause audit events to be generated due to settings on the object class in the schema.
+
+If you configure this policy setting, an audit event is generated when an attempt to change an object in AD DS is made. Success audits record successful attempts, however unsuccessful attempts are NOT recorded.
+If you do not configure this policy setting, no audit event is generated when an attempt to change an object in AD DS object is made.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~DS Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Directory Service Changes</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DSAccess_AuditDirectoryServiceReplication</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit replication between two Active Directory Domain Services (AD DS) domain controllers.
+
+If you configure this policy setting, an audit event is generated during AD DS replication. Success audits record successful replication and Failure audits record unsuccessful replication.
+If you do not configure this policy setting, no audit event is generated during AD DS replication.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~DS Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Directory Service Replication</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditApplicationGenerated</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit applications that generate events using the Windows Auditing application programming interfaces (APIs). Applications designed to use the Windows Auditing API use this subcategory to log auditing events related to their function.
+Events in this subcategory include:
+    Creation of an application client context.
+    Deletion of an application client context.
+    Initialization of an application client context.
+    Other application operations using the Windows Auditing APIs.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Application Generated</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditCentralAccessPolicyStaging</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit access requests where the permission granted or denied by a proposed policy differs from the current central access policy on an object.
+
+If you configure this policy setting, an audit event is generated each time a user accesses an object and the permission granted by the current central access policy on the object differs from that granted by the proposed policy. The resulting audit event will be generated as follows:
+1) Success audits, when configured, records access attempts when the current central access policy grants access but the proposed policy denies access.
+2) Failure audits when configured records access attempts when:
+   a) The current central access policy does not grant access but the proposed policy grants access.
+   b) A principal requests the maximum access rights they are allowed and the access rights granted by the current central access policy are different than the access rights granted by the proposed policy.
+
+Volume: Potentially high on a file server when the proposed policy differs significantly from the current central access policy.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Central Access Policy Staging</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditCertificationServices</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit Active Directory Certificate Services (AD CS) operations.
+AD CS operations include the following:
+    AD CS startup/shutdown/backup/restore.
+    Changes to the certificate revocation list (CRL).
+    New certificate requests.
+    Issuing of a certificate.
+    Revocation of a certificate.
+    Changes to the Certificate Manager settings for AD CS.
+    Changes in the configuration of AD CS.
+    Changes to a Certificate Services template.
+    Importing of a certificate.
+    Publishing of a certification authority certificate is to Active Directory Domain Services.
+    Changes to the security permissions for AD CS.
+    Archival of a key.
+    Importing of a key.
+    Retrieval of a key.
+    Starting of Online Certificate Status Protocol (OCSP) Responder Service.
+    Stopping of Online Certificate Status Protocol (OCSP) Responder Service.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Certification Services</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditDetailedFileShare</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit attempts to access files and folders on a shared folder. The Detailed File Share setting logs an event every time a file or folder is accessed, whereas the File Share setting only records one event for any connection established between a client and file share.  Detailed File Share audit events include detailed information about the permissions or other criteria used to grant or deny access.
+
+If you configure this policy setting, an audit event is generated when an attempt is made to access a file or folder on a share. The administrator can specify whether to audit only successes, only failures, or both successes and failures.
+
+Note: There are no system access control lists (SACLs) for shared folders. If this policy setting is enabled, access to all shared files and folders on the system is audited.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Detailed File Share</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditFileShare</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit attempts to access a shared folder.
+
+If you configure this policy setting, an audit event is generated when an attempt is made to access a shared folder. If this policy setting is defined, the administrator can specify whether to audit only successes, only failures, or both successes and failures.
+
+Note: There are no system access control lists (SACLs) for shared folders. If this policy setting is enabled, access to all shared folders on the system is audited.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit File Share</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditFileSystem</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit user attempts to access file system objects. A security audit event is generated only for objects that have system access control lists (SACL) specified, and only if the type of access requested, such as Write, Read, or Modify and the account making the request match the settings in the SACL. For more information about enabling object access auditing, see https://go.microsoft.com/fwlink/?LinkId=122083.
+
+If you configure this policy setting, an audit event is generated each time an account accesses a file system object with a matching SACL. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when an account accesses a file system object with a matching SACL.
+
+Note: You can set a SACL on a file system object using the Security tab in that object&apos;s Properties dialog box.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit File System</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditFilteringPlatformConnection</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit connections that are allowed or blocked by the Windows Filtering Platform (WFP). The following events are included:
+    The Windows Firewall Service blocks an application from accepting incoming connections on the network.
+    The WFP allows a connection.
+    The WFP blocks a connection.
+    The WFP permits a bind to a local port.
+    The WFP blocks a bind to a local port.
+    The WFP allows a connection.
+    The WFP blocks a connection.
+    The WFP permits an application or service to listen on a port for incoming connections.
+    The WFP blocks an application or service to listen on a port for incoming connections.
+
+If you configure this policy setting, an audit event is generated when connections are allowed or blocked by the WFP. Success audits record events generated when connections are allowed and Failure audits record events generated when connections are blocked.
+If you do not configure this policy setting, no audit event is generated when connected are allowed or blocked by the WFP.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Filtering Platform Connection</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditFilteringPlatformPacketDrop</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit packets that are dropped by Windows Filtering Platform (WFP).</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Filtering Platform Packet Drop</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditHandleManipulation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated when a handle to an object is opened or closed. Only objects with a matching system access control list (SACL) generate security audit events.
+
+If you configure this policy setting, an audit event is generated when a handle is manipulated. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a handle is manipulated.
+
+Note: Events in this subcategory generate events only for object types where the corresponding Object Access subcategory is enabled. For example, if File system object access is enabled, handle manipulation security audit events are generated. If Registry object access is not enabled, handle manipulation security audit events will not be generated.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Handle Manipulation</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditKernelObject</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit attempts to access the kernel, which include mutexes and semaphores. 
+Only kernel objects with a matching system access control list (SACL) generate security audit events.
+
+Note: The Audit: Audit the access of global system objects policy setting controls the default SACL of kernel objects.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Kernel Object</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditOtherObjectAccessEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by the management of task scheduler jobs or COM+ objects. 
+For scheduler jobs, the following are audited:
+    Job created.
+    Job deleted.
+    Job enabled.
+    Job disabled.
+    Job updated.
+For COM+ objects, the following are audited:
+    Catalog object added.
+    Catalog object updated.
+    Catalog object deleted.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Other Object Access Events</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditRegistry</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit attempts to access registry objects. A security audit event is generated only for objects that have system access control lists (SACLs) specified, and only if the type of access requested, such as Read, Write, or Modify, and the account making the request match the settings in the SACL.
+
+If you configure this policy setting, an audit event is generated each time an account accesses a registry object with a matching SACL. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when an account accesses a registry object with a matching SACL.
+
+Note: You can set a SACL on a registry object using the Permissions dialog box.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Registry</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditRemovableStorage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit user attempts to access file system objects on a removable storage device. A security audit event is generated only for all objects for all types of access requested.
+
+If you configure this policy setting, an audit event is generated each time an account accesses a file system object on a removable storage. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+
+If you do not configure this policy setting, no audit event is generated when an account accesses a file system object on a removable storage.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Removable Storage</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ObjectAccess_AuditSAM</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by attempts to access to Security Accounts Manager (SAM) objects.
+SAM objects include the following:
+    SAM_ALIAS -- A local group.
+    SAM_GROUP -- A group that is not a local group.
+    SAM_USER – A user account.
+    SAM_DOMAIN – A domain.
+    SAM_SERVER – A computer account.
+If you configure this policy setting, an audit event is generated when an attempt to access a kernel object is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when an attempt to access a kernel object is made.
+Note: Only the System Access Control List (SACL) for SAM_SERVER can be modified.
+Volume: High on domain controllers. For information about reducing the amount of events generated in this subcategory, see article 841001 in the Microsoft Knowledge Base (https://go.microsoft.com/fwlink/?LinkId=121698).</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Object Access</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit SAM</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditAuthenticationPolicyChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by changes to the authentication policy such as the following:
+    Creation of forest and domain trusts.
+    Modification of forest and domain trusts.
+    Removal of forest and domain trusts.
+    Changes to Kerberos policy under Computer Configuration\Windows Settings\Security Settings\Account Policies\Kerberos Policy.
+    Granting of any of the following user rights to a user or group:
+        Access This Computer From the Network.
+        Allow Logon Locally.
+        Allow Logon Through Terminal Services.
+        Logon as a Batch Job.
+        Logon a Service.
+    Namespace collision. For example, when a new trust has the same name as an existing namespace name.
+
+If you configure this policy setting, an audit event is generated when an attempt to change the authentication policy is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when the authentication policy is changed.
+
+Note: The security audit event is logged when the group policy is applied. It does not occur at the time when the settings are modified.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Policy Change</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Authentication Policy Change</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditAuthorizationPolicyChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by changes to the authorization policy such as the following:
+    Assignment of user rights (privileges), such as SeCreateTokenPrivilege, that are not audited through the “Authentication Policy Change” subcategory.
+    Removal of user rights (privileges), such as SeCreateTokenPrivilege, that are not audited through the “Authentication Policy Change” subcategory.
+    Changes in the Encrypted File System (EFS) policy.
+    Changes to the Resource attributes of an object.
+    Changes to the Central Access Policy (CAP) applied to an object.
+
+If you configure this policy setting, an audit event is generated when an attempt to change the authorization policy is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when the authorization policy changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Policy Change</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Authorization Policy Change</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditFilteringPlatformPolicyChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by changes to the Windows Filtering Platform (WFP) such as the following: 
+    IPsec services status.
+    Changes to IPsec policy settings.
+    Changes to Windows Firewall policy settings.
+    Changes to WFP providers and engine.
+
+If you configure this policy setting, an audit event is generated when a change to the WFP is attempted. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when a change occurs to the WFP.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Policy Change</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Filtering Platform Policy Change</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditMPSSVCRuleLevelPolicyChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by changes in policy rules used by the Microsoft Protection Service (MPSSVC). This service is used by Windows Firewall. Events include the following:
+    Reporting of active policies when Windows Firewall service starts.
+    Changes to Windows Firewall rules.
+    Changes to Windows Firewall exception list.
+    Changes to Windows Firewall settings.
+    Rules ignored or not applied by Windows Firewall Service.
+    Changes to Windows Firewall Group Policy settings.
+
+If you configure this policy setting, an audit event is generated by attempts to change policy rules used by the MPSSVC. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated by changes in policy rules used by the MPSSVC.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Policy Change</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit MPSSVC Rule Level Policy Change</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditOtherPolicyChangeEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by other security policy changes that are not audited in the policy change category, such as the following:
+    Trusted Platform Module (TPM) configuration changes.
+    Kernel-mode cryptographic self tests.
+    Cryptographic provider operations.
+    Cryptographic context operations or modifications.
+    Applied Central Access Policies (CAPs) changes.
+    Boot Configuration Data (BCD) modifications.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Policy Change</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Other Policy Change Events</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PolicyChange_AuditPolicyChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to audit changes in the security audit policy settings such as the following:
+    Settings permissions and audit settings on the Audit Policy object.
+    Changes to the system audit policy.
+    Registration of security event sources.
+    De-registration of security event sources.
+    Changes to the per-user audit settings.
+    Changes to the value of CrashOnAuditFail.
+    Changes to the system access control list on a file system or registry object.
+    Changes to the Special Groups list.
+
+Note: System access control list (SACL) change auditing is done when a SACL for an object changes and the policy change category is enabled. Discretionary access control list (DACL) and ownership changes are audited when object access auditing is enabled and the object&apos;s SACL is configured for auditing of DACL/Owner change.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Policy Change</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Policy Change</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PrivilegeUse_AuditNonSensitivePrivilegeUse</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by the use of non-sensitive privileges (user rights).
+The following privileges are non-sensitive:
+        Access Credential Manager as a trusted caller.
+        Access this computer from the network.
+        Add workstations to domain.
+        Adjust memory quotas for a process.
+        Allow log on locally.
+        Allow log on through Terminal Services.
+        Bypass traverse checking.
+        Change the system time.
+        Create a pagefile.
+        Create global objects.
+        
+        Create permanent shared objects.
+        Create symbolic links.
+        Deny access this computer from the network.
+        Deny log on as a batch job.
+        Deny log on as a service.
+        Deny log on locally.
+        Deny log on through Terminal Services.
+        Force shutdown from a remote system.
+        Increase a process working set.
+        Increase scheduling priority.
+        Lock pages in memory.
+        Log on as a batch job.
+        Log on as a service.
+        Modify an object label.
+        Perform volume maintenance tasks.
+        Profile single process.
+        Profile system performance.
+        Remove computer from docking station.
+        Shut down the system.
+        Synchronize directory service data.
+
+If you configure this policy setting, an audit event is generated when a non-sensitive privilege is called. Success audits record successful calls and Failure audits record unsuccessful calls.
+If you do not configure this policy setting, no audit event is generated when a non-sensitive privilege is called.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Privilege Use</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Non Sensitive Privilege Use</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PrivilegeUse_AuditOtherPrivilegeUseEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Not used.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Privilege Use</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Other Privilege Use Events</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PrivilegeUse_AuditSensitivePrivilegeUse</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated when sensitive privileges (user rights) are used such as the following:
+    A privileged service is called.
+    One of the following privileges are called:
+        Act as part of the operating system.
+        Back up files and directories.
+        Create a token object.
+        Debug programs.
+        Enable computer and user accounts to be trusted for delegation.
+        Generate security audits.
+        Impersonate a client after authentication.
+        Load and unload device drivers.
+        Manage auditing and security log.
+        Modify firmware environment values.
+        Replace a process-level token.
+        Restore files and directories.
+        Take ownership of files or other objects.
+
+If you configure this policy setting, an audit event is generated when sensitive privilege requests are made. Success audits record successful requests and Failure audits record unsuccessful requests.
+If you do not configure this policy setting, no audit event is generated when sensitive privilege requests are made.
+</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~Privilege Use</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Sensitive Privilege Use</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>System_AuditIPsecDriver</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by the IPsec filter driver such as the following:
+    Startup and shutdown of the IPsec services.
+    Network packets dropped due to integrity check failure.
+    Network packets dropped due to replay check failure.
+    Network packets dropped due to being in plaintext.
+    Network packets received with incorrect Security Parameter Index (SPI). This may indicate that either the network card is not working correctly or the driver needs to be updated.
+    Inability to process IPsec filters.
+
+If you configure this policy setting, an audit event is generated on an IPsec filter driver operation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated on an IPSec filter driver operation.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~System</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit IPsec Driver</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>System_AuditOtherSystemEvents</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>3</DefaultValue>
+            <Description>This policy setting allows you to audit any of the following events:
+    Startup and shutdown of the Windows Firewall service and driver.
+    Security policy processing by the Windows Firewall Service.
+    Cryptography key file and migration operations.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~System</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Other System Events</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>System_AuditSecurityStateChange</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting allows you to audit events generated by changes in the security state of the computer such as the following events:
+    Startup and shutdown of the computer.
+    Change of system time.
+    Recovering the system from CrashOnAuditFail, which is logged after a system restarts when the security event log is full and the CrashOnAuditFail registry entry is configured.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~System</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Security State Change</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>System_AuditSecuritySystemExtension</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting allows you to audit events related to security system extensions or services such as the following:
+    A security system extension, such as an authentication, notification, or security package is loaded and is registered with the Local Security Authority (LSA). It is used to authenticate logon attempts, submit logon requests, and any account or password changes. Examples of security system extensions are Kerberos and NTLM.
+    A service is installed and registered with the Service Control Manager. The audit log contains information about the service name, binary, type, start type, and service account.
+If you configure this policy setting, an audit event is generated when an attempt is made to load a security system extension. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+If you do not configure this policy setting, no audit event is generated when an attempt is made to load a security system extension.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~System</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit Security System Extension</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>System_AuditSystemIntegrity</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>3</DefaultValue>
+            <Description>This policy setting allows you to audit events that violate the integrity of the security subsystem, such as the following:
+    Events that could not be written to the event log because of a problem with the auditing system.
+    A process that uses a local procedure call (LPC) port that is not valid in an attempt to impersonate a client by replying, reading, or writing to or from a client address space.
+    The detection of a Remote Procedure Call (RPC) that compromises system integrity.
+    The detection of a hash value of an executable file that is not valid as determined by Code Integrity.
+    Cryptographic operations that compromise system integrity.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~Advanced Audit Policy Configuration~System Audit Policies~System</MSFT:GPDBMappedCategory>
+            <MSFT:GPDBMappedName>Audit System Integrity</MSFT:GPDBMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>Authentication</NodeName>
         <DFProperties>
           <AccessType>
@@ -50261,6 +54925,30 @@ Note: The first sign-in animation will not be shown on Server, so this policy wi
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetMinimumEncryptionKeySize</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="1" high="16"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -51675,7 +56363,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DefaultValue></DefaultValue>
             <Description>You can define a list of extensions in Microsoft Edge that users cannot turn off. You must deploy extensions through any available enterprise deployment channel, such as Microsoft Intune. When you enable this policy, users cannot uninstall extensions from their computer, but they can configure options for extensions defined in this policy, such as allow for InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically.
 
-When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe prevents a user from turning off the OneNote Web Clipper and extension.
+When you enable this policy, you must provide a semi-colon delimited list of extension package family names (PFNs).  For example, adding Microsoft.OneNoteWebClipper_8wekyb3d8bbwe;Microsoft.OfficeOnline_8wekyb3d8bbwe  prevents a user from turning off the OneNote Web Clipper and Office Online extension.
 
 When enabled, removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel.
 
@@ -51686,11 +56374,11 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
-- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/en-us/intune/windows-store-for-business)
+- How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/en-us/intune/apps-deploy)
+- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/en-us/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/en-us/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -54425,6 +59113,34 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DOCacheHostSource</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,2"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>DeliveryOptimization.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>CacheHostSource</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>CacheHostSource</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DODelayBackgroundDownloadFromHttp</NodeName>
           <DFProperties>
             <AccessType>
@@ -54620,6 +59336,34 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DOMaxBackgroundDownloadBandwidth</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="4294967295"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>DeliveryOptimization.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>MaxBackgroundDownloadBandwidth</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>MaxBackgroundDownloadBandwidth</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DOMaxCacheAge</NodeName>
           <DFProperties>
             <AccessType>
@@ -54676,7 +59420,7 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DOMaxDownloadBandwidth</NodeName>
+          <NodeName>DOMaxForegroundDownloadBandwidth</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -54697,37 +59441,9 @@ Related policy:
             </DFType>
             <MSFT:SupportedValues low="0" high="4294967295"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>DeliveryOptimization.admx</MSFT:ADMXMapped>
-            <MSFT:ADMXMappedElement>MaxDownloadBandwidth</MSFT:ADMXMappedElement>
+            <MSFT:ADMXMappedElement>MaxForegroundDownloadBandwidth</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>MaxDownloadBandwidth</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DOMaxUploadBandwidth</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description></Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="4000000"></MSFT:SupportedValues>
-            <MSFT:ADMXMapped>DeliveryOptimization.admx</MSFT:ADMXMapped>
-            <MSFT:ADMXMappedElement>MaxUploadBandwidth</MSFT:ADMXMappedElement>
-            <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>MaxUploadBandwidth</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>MaxForegroundDownloadBandwidth</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -54951,35 +59667,6 @@ Related policy:
             <MSFT:ADMXMappedElement>PercentageMaxBackgroundBandwidth</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PercentageMaxBackgroundBandwidth</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DOPercentageMaxDownloadBandwidth</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description></Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="100"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXMapped>DeliveryOptimization.admx</MSFT:ADMXMapped>
-            <MSFT:ADMXMappedElement>PercentageMaxDownloadBandwidth</MSFT:ADMXMappedElement>
-            <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>PercentageMaxDownloadBandwidth</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -55430,6 +60117,33 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowInstallationOfMatchingDeviceInstanceIDs</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>deviceinstallation.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>DeviceInstallation~AT~System~DeviceInstall_Category~DeviceInstall_Restrictions_Category</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DeviceInstall_Instance_IDs_Allow</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowInstallationOfMatchingDeviceSetupClasses</NodeName>
           <DFProperties>
             <AccessType>
@@ -55534,6 +60248,33 @@ Related policy:
             <MSFT:ADMXBacked>deviceinstallation.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>DeviceInstallation~AT~System~DeviceInstall_Category~DeviceInstall_Restrictions_Category</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DeviceInstall_IDs_Deny</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventInstallationOfMatchingDeviceInstanceIDs</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>deviceinstallation.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>DeviceInstallation~AT~System~DeviceInstall_Category~DeviceInstall_Restrictions_Category</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DeviceInstall_Instance_IDs_Deny</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56922,6 +61663,33 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableCloudOptimizedContent</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy controls Windows experiences that use the cloud optimized content client component. If you enable this policy, they will present only default content. If you disable or do not configure this policy, they will be able to use cloud provided content.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>CloudContent.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>CloudContent~AT~WindowsComponents~CloudContent</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableCloudOptimizedContent</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DoNotShowFeedbackNotifications</NodeName>
           <DFProperties>
             <AccessType>
@@ -57083,6 +61851,118 @@ If you do not configure this policy setting, users will be able to choose whethe
             <MSFT:ADMXMappedElement>ExploitProtection_Name</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>ExploitGuard~AT~WindowsComponents~WindowsDefenderExploitGuard~ExploitProtection</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ExploitProtection_Name</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>FactoryComposer</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>BackgroundImagePath</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>OEMVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>unset; partners can set via settings customization!</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UserToSignIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UWPLaunchOnBoot</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58052,33 +62932,6 @@ If you do not configure this policy setting, users will be able to choose whethe
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryConsistentMimeHandling</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_5</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DisableActiveXVersionListAutoDownload</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue></DefaultValue>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>VersionListAutomaticDownloadDisable</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -66350,6 +71203,116 @@ The options are:
         </Node>
       </Node>
       <Node>
+        <NodeName>LocalUsersAndGroups</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>Configure</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>This Setting allows an administrator to manage local groups on a Device.
+                            Possible settings:
+                            1. Update Group Membership: Update a group and add and/or remove members though the &apos;U&apos; action.
+                            When using Update, existing group members that are not specified in the policy remain untouched.
+                            2. Replace Group Membership: Restrict a group by replacing group membership through the &apos;R&apos; action.
+                            When using Replace, existing group membership is replaced by the list of members specified in
+                            the add member section. This option works in the same way as a Restricted Group and any group
+                            members that are not specified in the policy are removed.
+                            Caution: If the same group is configured with both Replace and Update, then Replace will win.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+                          <xs:simpleType name="name">
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="255" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                          <xs:element name="accessgroup">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="group" minOccurs="1" maxOccurs="1">
+                                      <xs:annotation>
+                                        <xs:documentation>Group Configuration Action</xs:documentation>
+                                      </xs:annotation>
+                                      <xs:complexType>
+                                        <xs:attribute name="action" type="name" use="required"/>
+                                      </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="add" minOccurs="0" maxOccurs="unbounded">
+                                      <xs:annotation>
+                                        <xs:documentation>Group Member to Add</xs:documentation>
+                                      </xs:annotation>
+                                      <xs:complexType>
+                                        <xs:attribute name="member" type="name" use="required"/>
+                                      </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="remove" minOccurs="0" maxOccurs="unbounded">
+                                      <xs:annotation>
+                                        <xs:documentation>Group Member to Remove</xs:documentation>
+                                      </xs:annotation>
+                                      <xs:complexType>
+                                        <xs:attribute name="member" type="name" use="required"/>
+                                      </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+                                      <xs:annotation>
+                                        <xs:documentation>Group property to configure</xs:documentation>
+                                      </xs:annotation>
+                                      <xs:complexType>
+                                        <xs:attribute name="desc" type="name" use="required"/>
+                                        <xs:attribute name="value" type="name" use="required"/>
+                                      </xs:complexType>
+                                    </xs:element>
+                                  </xs:sequence>
+                              <xs:attribute name="desc" type="name" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="GroupConfiguration">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:annotation>
+                              <xs:documentation>Local Group Configuration</xs:documentation>
+                            </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                      </xs:schema]]></MSFT:XMLSchema>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>LockDown</NodeName>
         <DFProperties>
           <AccessType>
@@ -66562,6 +71525,146 @@ The options are:
             <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>MixedReality</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AADGroupMembershipCacheValidityInDays</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="60"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>BrightnessButtonDisabled</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>FallbackDiagnostics</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>2</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MicrophoneDisabled</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>VolumeButtonDisabled</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -68228,6 +73331,102 @@ If the user has configured a slide show to run on the lock screen when the machi
             <MSFT:ADMXMappedElement>LetAppsAccessAccountInfo_UserInControlOfTheseApps_List</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>AppPrivacy~AT~WindowsComponents~AppPrivacy</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>LetAppsAccessAccountInfo</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessBackgroundSpatialPerception</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy setting specifies whether Windows apps can access the movement of the user&apos;s head, hands, motion controllers, and other tracked objects, while the apps are running in the background.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the user&apos;s movements while the apps are running in the background. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the user&apos;s movements while the apps are running in the background. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the user movements privacy setting for the listed apps. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
             <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
@@ -74952,6 +80151,99 @@ If you disable or do not configure this policy setting, File History can be acti
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ConfigureJapaneseIMEVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy allows the IT admin to configure the Microsoft Japanese IME version in the desktop.
+The following list shows the supported values:
+0 (default) – The new Microsoft Japanese IME is on by default. Allow to control Microsoft Japanese IME version to use.
+1 - The previous version of Microsoft Japanese IME is always selected.  Not allowed to control Microsoft Japanese IME version to use.
+2 - The new Microsoft Japanese IME is always selected.  Not allowed to control Microsoft Japanese IME version to use.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>EAIME.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>EAIME~AT~WindowsComponents~L_IME</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>L_ConfigureJapaneseImeVersion</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureSimplifiedChineseIMEVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy allows the IT admin to configure the Microsoft Simplified Chinese IME version in the desktop.
+The following list shows the supported values:
+0 (default) – The new Microsoft Simplified Chinese IME is on by default. Allow to control Microsoft Simplified Chinese IME version to use.
+1 - The previous version of Microsoft Simplified Chinese IME is always selected.  Not allowed to control Microsoft Simplified Chinese IME version to use.
+2 - The new Microsoft Simplified Chinese IME is always selected.  Not allowed to control Microsoft Simplified Chinese IME version to use.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>EAIME.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>EAIME~AT~WindowsComponents~L_IME</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>L_ConfigureSimplifiedChineseImeVersion</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureTraditionalChineseIMEVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy allows the IT admin to configure the Microsoft Traditional Chinese IME version in the desktop.
+The following list shows the supported values:
+0 (default) – The new Microsoft Traditional Chinese IME is on by default. Allow to control Microsoft Traditional Chinese IME version to use.
+1 - The previous version of Microsoft Traditional Chinese IME is always selected.  Not allowed to control Microsoft Traditional Chinese IME version to use.
+2 - The new Microsoft Traditional Chinese IME is always selected.  Not allowed to control Microsoft Traditional Chinese IME version to use.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>EAIME.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>EAIME~AT~WindowsComponents~L_IME</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>L_ConfigureTraditionalChineseImeVersion</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableTouchKeyboardAutoInvokeInDesktopMode</NodeName>
           <DFProperties>
             <AccessType>
@@ -76083,6 +81375,30 @@ If you disable or do not configure this policy setting, the wake setting as spec
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableWUfBSafeguards</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EngagedRestartDeadline</NodeName>
           <DFProperties>
             <AccessType>
@@ -76953,6 +82269,61 @@ If you disable or do not configure this policy setting, the wake setting as spec
             <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SetEDURestart</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetProxyBehaviorForUpdateDetection</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SetProxyBehaviorForUpdateDetection</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>CorpWuURL</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TargetReleaseVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>TargetReleaseVersionId</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat~DeferUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>TargetReleaseVersion</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>

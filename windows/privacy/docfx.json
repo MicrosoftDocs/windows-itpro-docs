@@ -33,6 +33,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.technology": "windows",
       "audience": "ITPro",
       "ms.topic": "article",
@@ -40,15 +41,26 @@
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
       "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
       "_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.privacy",
-                          "folder_relative_path_in_docset": "./"
-			}
-		}
+        "./": {
+          "depot_name": "MSDN.privacy",
+                            "folder_relative_path_in_docset": "./"
+        }
+      },
+      "titleSuffix": "Windows Privacy",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
+      "searchScope": ["Windows 10"]
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "privacy",
     "markdownEngineName": "markdig"
-  }
 }

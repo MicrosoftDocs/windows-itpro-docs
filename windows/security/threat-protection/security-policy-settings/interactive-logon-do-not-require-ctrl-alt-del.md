@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 04e2c000-2eb2-4d4b-8179-1e2cb4793e18
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,11 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 # Interactive logon: Do not require CTRL+ALT+DEL
 
 **Applies to**
--   Windows 10
+- Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Interactive logon: Do not require CTRL+ALT+DEL** security policy setting.
 
@@ -27,7 +28,7 @@ Describes the best practices, location, values, and security considerations for 
 
 This security setting determines whether pressing CTRL+ALT+DEL is required before a user can log on.
 
-If this policy setting is enabled on a device, a user is not required to press CTRL+ALT+DEL to log on. Not having to press CTRL+ALT+DEL leaves users susceptible to attacks that attempt to intercept the users' passwords. Requiring CTRL+ALT+DEL before users log on ensures that users are communicating by means of a trusted path when entering their passwords.
+If this policy setting is enabled on a device, a user is not required to press CTRL+ALT+DEL to log on.
 
 If this policy is disabled, any user is required to press CTRL+ALT+DEL before logging on to the Windows operating system (unless they are using a smart card for logon).
 
@@ -37,13 +38,13 @@ A malicious user might install malware that looks like the standard logon dialog
 
 ### Possible values
 
--   Enabled
--   Disabled
--   Not defined
+- Enabled
+- Disabled
+- Not defined
 
 ### Best practices
 
--   It is advisable to set **Disable CTRL+ALT+DEL requirement for logon** to **Not configured**.
+- We recommend that you set **Disable CTRL+ALT+DEL requirement for logon** to **Not configured**.
 
 ### Location
 

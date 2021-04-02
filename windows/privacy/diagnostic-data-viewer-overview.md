@@ -21,8 +21,7 @@ ms.reviewer:
 
 **Applies to**
 
--   Windows 10, version 1809
--   Windows 10, version 1803
+-   Windows 10, version 1803 and newer
 
 ## Introduction
 The Diagnostic Data Viewer is a Windows app that lets you review the Windows diagnostic data your device is sending to Microsoft, grouping the info into simple categories based on how it's used by Microsoft.
@@ -44,8 +43,8 @@ Before you can use this tool for viewing Windows diagnostic data, you must turn 
 ### Download the Diagnostic Data Viewer
 Download the app from the [Microsoft Store Diagnostic Data Viewer](https://www.microsoft.com/store/p/diagnostic-data-viewer/9n8wtrrsq8f7?rtc=1) page.
 
-    >[!Important]
-    >It's possible that your Windows device doesn't have the Microsoft Store available (for example, Windows Server). If this is the case, see [Diagnostic Data Viewer for PowerShell](https://go.microsoft.com/fwlink/?linkid=2094264).
+> [!Important]
+> It's possible that your Windows device doesn't have the Microsoft Store available (for example, Windows Server). If this is the case, see [Diagnostic Data Viewer for PowerShell](./microsoft-diagnosticdataviewer.md).
 
 ### Start the Diagnostic Data Viewer
 You can start this app from the **Settings** panel.
@@ -118,17 +117,15 @@ When you're done reviewing your diagnostic data, you should turn of data viewing
 ## Modifying the size of your data history
 By default, Diagnostic Data Viewer shows you up to 1GB or 30 days of data (whichever comes first) for Windows diagnostic data. Once either the time or space limit is reached, the data is incrementally dropped with the oldest data points dropped first. 
 
-    >[!Important]
-    >Note that if you have [Office diagnostic data viewing enabled](#view-office-diagnostic-data), the Office data history is fixed at 1 GB and cannot be modified.
+> [!Important]
+> Note that if you have [Office diagnostic data viewing enabled](#view-office-diagnostic-data), the Office data history is fixed at 1 GB and cannot be modified.
 
 **Modify the size of your data history**
     
-    To make changes to the size of your Windows diagnostic data history, visit the **app settings**, located at the bottom of the navigation menu. Data will be incrementally dropped with the oldest data points first once your chosen size or time limit is reached.  
+To make changes to the size of your Windows diagnostic data history, visit the **app settings**, located at the bottom of the navigation menu. Data will be incrementally dropped with the oldest data points first once your chosen size or time limit is reached.  
 
-    >[!Important]
-    >Decreasing the maximum amount of diagnostic data viewable through the tool will remove all data history and requires a reboot of your device. Additionally, increasing the maximum amount of diagnostic data viewable by the tool may come with performance impacts to your machine.
-
-    ![Change the size of your data history through the app settings](images/ddv-change-db-size.png) 
+> [!Important]
+> Decreasing the maximum amount of diagnostic data viewable through the tool will remove all data history and requires a reboot of your device. Additionally, increasing the maximum amount of diagnostic data viewable by the tool may come with performance impacts to your machine.
 
 ## View additional diagnostic data in the View problem reports tool
 Available on Windows 1809 and higher, you can review additional Windows Error Reporting diagnostic data in the **View problem reports** page within the Diagnostic Data Viewer. 
@@ -152,3 +149,20 @@ The **Review problem reports** tool opens, showing you your Windows Error Report
 
 ![View problem reports tool with report statuses](images/control-panel-problem-reports-screen.png)
 
+## Known Issues with Diagnostic Data Viewer
+
+### Microsoft Edge diagnostic data appearing as a blob of text
+
+**Applicable to:** The new Microsoft Edge (v. 79.x.x.x or higher)
+
+**Issue:** In some cases, diagnostic data collected and sent from the New Microsoft Edge fails to be translated by the decoder. When decoding fails, the data appears as a blob of text in the Diagnostic Data Viewer. We are working on a fix for this issue.
+
+**Workaround:**
+
+- Restart your computer and open Diagnostic Data Viewer.
+
+*OR*
+
+- Restart the *DiagTrack* service, through the Services tab in task manager, and open Diagnostic Data Viewer.
+
+**Background:** Some of the diagnostic data collected from the new Microsoft Edge is sent using a Protocol Buffers (protobuf) to reduce network bandwidth and to improve data transfer efficiency. Diagnostic Data Viewer has a decoding capability to translate this protobuf format into human readable text. Due to a bug, sometimes the decoder fails to translate these protobuf messages and hence some of the New Microsoft Edge diagnostic data will appear as a blob of encoded text.

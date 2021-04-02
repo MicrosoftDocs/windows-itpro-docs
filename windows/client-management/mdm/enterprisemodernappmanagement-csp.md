@@ -1,6 +1,6 @@
 ---
 title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
+description: Learn how the EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps.
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
 ms.reviewer: 
 manager: dansimp
@@ -14,18 +14,56 @@ ms.date: 09/27/2019
 
 # EnterpriseModernAppManagement CSP
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
 
 > [!Note]
 > Windows Holographic only supports per-user configuration of the EnterpriseModernAppManagement CSP.
 
-The following image shows the EnterpriseModernAppManagement configuration service provider in tree format.
-
-![enterprisemodernappmanagement csp diagram](images/provisioning-csp-enterprisemodernappmanagement.png)
-
+The following shows the EnterpriseModernAppManagement configuration service provider in tree format.
+```
+./Vendor/MSFT
+EnterpriseModernAppManagement
+----AppManagement
+--------EnterpriseID
+------------PackageFamilyName
+----------------PackageFullName
+--------------------Name
+--------------------Version
+--------------------Publisher
+--------------------Architecture
+--------------------InstallLocation
+--------------------IsFramework
+--------------------IsBundle
+--------------------InstallDate
+--------------------ResourceID
+--------------------PackageStatus
+--------------------RequiresReinstall
+--------------------Users
+--------------------IsProvisioned
+----------------DoNotUpdate
+----------------AppSettingPolicy
+--------------------SettingValue
+--------UpdateScan
+--------LastScanError
+--------AppInventoryResults
+--------AppInventoryQuery
+----AppInstallation
+--------PackageFamilyName
+------------StoreInstall
+------------HostedInstall
+------------LastError
+------------LastErrorDesc
+------------Status
+------------ProgressStatus
+----AppLicenses
+--------StoreLicenses
+------------LicenseID
+----------------LicenseCategory
+----------------LicenseUsage
+----------------RequesterID
+----------------AddLicense
+----------------GetLicenseFromStore
+```
 <a href="" id="device-or-user-context"></a>**Device or User context**  
 For user context, use **./User/Vendor/MSFT** path and for device context, use **./Device/Vendor/MSFT** path.
 
@@ -329,6 +367,7 @@ Required. The value is 0 or 1 that indicates if the app is provisioned on the de
 Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-isstub"></a>**.../*PackageFamilyName*/*PackageFullName*/IsStub**  
+Added in Windows 10, version 2004. 
 Required. This node is used to identify whether the package is a stub package. A stub package is a version of the package with minimal functionality that will reduce the size of the app.
 
 The value is 1 if the package is a stub package and 0 (zero) for all other cases. Value type is int.
@@ -492,6 +531,18 @@ Supported operation is Execute, Add, Delete, and Get.
 <a href="" id="appinstallation-packagefamilyname-hostedinstall"></a>**AppInstallation/*PackageFamilyName*/HostedInstall**  
 Required. Command to perform an install of an app package from a hosted location (this can be a local drive, a UNC, or https data source).
 
+The following list shows the supported deployment options: 
+- ForceApplicationShutdown
+- DevelopmentMode 
+- InstallAllResources
+- ForceTargetApplicationShutdown 
+- ForceUpdateToAnyVersion
+- DeferRegistration="1". If the app is in use at the time of installation. This stages the files for an app update and completes the registration of the app update after the app closes. Available in the latest insider flight of 20H1.
+- StageOnly="1". Stages the files for an app installation or update without installing the app. Available in 1803.
+- LicenseUri="\\server\license.lic". Deploys an offline license from the Microsoft Store for Business. Available in 1607. 
+- ValidateDependencies="1". This is used at provisioning/staging time. If it is set to 1, deployment will perform the same dependency validation during staging that we would normally do at registration time, failing and rejecting the provision request if the dependencies are not present. Available in the latest insider flight of 20H1.
+- ExcludeAppFromLayoutModification="1". Sets that the app will be provisioned on all devices and will be able to retain the apps provisioned without pinning them to start layout. Available in 1809.
+
 Supported operation is Execute, Add, Delete, and Get.
 
 <a href="" id="appinstallation-packagefamilyname-lasterror"></a>**AppInstallation/*PackageFamilyName*/LastError**  
@@ -504,7 +555,7 @@ Supported operation is Get.
 
 
 
-<a href="" id="appinstallation-packagefamilyname-lasterrordescription"></a>**AppInstallation/*PackageFamilyName*/LastErrorDescription**  
+<a href="" id="appinstallation-packagefamilyname-lasterrordescription"></a>**AppInstallation/*PackageFamilyName*/LastErrorDesc**  
 Required. Description of last error relating to the app installation.
 
 Supported operation is Get.

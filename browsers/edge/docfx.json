@@ -41,7 +41,17 @@
           "depot_name": "Win.microsoft-edge",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "Edge",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
     "externalReference": [],
     "template": "op.html",

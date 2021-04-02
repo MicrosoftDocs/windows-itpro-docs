@@ -1,6 +1,6 @@
 ---
 title: CMPolicy CSP
-description: CMPolicy CSP
+description: Learn how the CMPolicy configuration service provider (CSP) is used to define rules that the Connection Manager uses to identify correct connections.
 ms.assetid: 62623915-9747-4eb1-8027-449827b85e6b
 ms.reviewer: 
 manager: dansimp
@@ -17,10 +17,9 @@ ms.date: 06/26/2017
 
 The CMPolicy configuration service provider defines rules that the Connection Manager uses to identify the correct connection for a connection request.
 
-> **Note**  
-This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> [!NOTE]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
- 
 
 Each policy entry identifies one or more applications in combination with a host pattern. The policy entry is assigned a list of connection details that Connection Manager uses to satisfy connection requests matching the application and host patterns. CMPolicy configuration service provider can have multiple policies
 
@@ -28,10 +27,21 @@ Each policy entry identifies one or more applications in combination with a host
 
 **Default Policies**: Policies are applied in order of their scope with the most specific policies considered before the more general policies. The phone’s default behavior applies to all applications and all domains and is only used when no other, more specific policy is available. The default policy is to use any available Wi-Fi network first and then any available APN.
 
-The following diagram shows the CMPolicy configuration service provider management object in tree format as used by both Open Mobile Alliance (OMA) Client Provisioning and OMA Device Management.
+The following shows the CMPolicy configuration service provider management object in tree format as used by both Open Mobile Alliance (OMA) Client Provisioning and OMA Device Management.
 
-![cmpolicy csp (dm,cp)](images/provisioning-csp-cmpolicy.png)
-
+```
+./Vendor/MSFT
+CMPolicy
+----PolicyName
+--------SID
+--------ClientType
+--------Host
+--------OrderedConnections
+--------Connections
+------------ConnXXX
+----------------ConnectionID
+----------------Type
+```
 <a href="" id="policyname"></a>***policyName***  
 Defines the name of the policy.
 
@@ -64,7 +74,7 @@ Specifies whether the list of connections is in preference order.
 A value of "0" specifies that the connections are not listed in order of preference. A value of "1" indicates that the listed connections are in order of preference.
 
 <a href="" id="connxxx"></a>**Conn**<strong>*XXX*</strong>  
-Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three digits which increment starting from "000". For example, a policy which applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
+Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three digits, which increment starting from "000". For example, a policy, which applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
 
 <a href="" id="connectionid"></a>**ConnectionID**  
 Specifies a unique identifier for a connection within a group of connections. The exact value is based on the Type parameter.
@@ -173,11 +183,11 @@ For `CMST_CONNECTION_NETWORK_TYPE`, specify the GUID for the desired network typ
 <td><p>{7CFA04A5-0F3F-445C-88A4-C86ED2AD94EA}</p></td>
 </tr>
 <tr class="even">
-<td><p>Ethernet 10Mbps</p></td>
+<td><p>Ethernet 10 Mbps</p></td>
 <td><p>{97D3D1B3-854A-4C32-BD1C-C13069078370}</p></td>
 </tr>
 <tr class="odd">
-<td><p>Ethernet 100Mbps</p></td>
+<td><p>Ethernet 100 Mbps</p></td>
 <td><p>{A8F4FE66-8D04-43F5-9DD2-2A85BD21029B}</p></td>
 </tr>
 <tr class="even">
@@ -486,14 +496,14 @@ Adding a host-based mapping policy:
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>nocharacteristic</p></td>
+<td><p>uncharacteristic</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
 <td><p>characteristic-query</p></td>
 <td><p>Yes</p>
 <p>Recursive query: Yes</p>
-<p>Top level query: Yes</p></td>
+<p>Top-level query: Yes</p></td>
 </tr>
 </tbody>
 </table>

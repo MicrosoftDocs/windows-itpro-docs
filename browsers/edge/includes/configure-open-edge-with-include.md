@@ -2,16 +2,17 @@
 author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
-ms.reviewer: 
-audience: itpromanager: dansimp
+ms.reviewer:
+audience: itpro
+manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
 <!-- Configure Open Microsoft Edge With-->
 
->*Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
->*Default setting:  Enabled (A specific page or pages)*
+> *Supported versions: Microsoft Edge on Windows 10, version 1809*<br>
+> *Default setting:  Enabled (A specific page or pages)*
 
 [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
 
@@ -31,10 +32,8 @@ ms.topic: include
 
 ---
 
-
->[!TIP]
->If you want to make changes to this policy:<ol><li>Set the **Disabled Lockdown of Start Pages** policy to not configured.</li><li>Make changes to the **Configure Open Microsoft With** policy.</li><li>Enable the **Disabled Lockdown of Start Pages** policy.</li></ol>
-
+> [!TIP]
+> If you want to make changes to this policy:<ol><li>Set the **Disabled Lockdown of Start Pages** policy to not configured.</li><li>Make changes to the **Configure Open Microsoft With** policy.</li><li>Enable the **Disabled Lockdown of Start Pages** policy.</li></ol>
 
 
 ### ADMX info and settings
@@ -45,7 +44,7 @@ ms.topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureOpenEdgeWith](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configureopenmicrosoftedgewith)
+- **MDM name:** Browser/[ConfigureOpenEdgeWith](/windows/client-management/mdm/policy-csp-browser#browser-configureopenmicrosoftedgewith)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureOpenEdgeWith
 - **Data type:** Integer
@@ -58,11 +57,7 @@ ms.topic: include
 ### Related policies
 
 - [Configure Start pages](../available-policies.md#configure-start-pages): [!INCLUDE [configure-start-pages-shortdesc](../shortdesc/configure-start-pages-shortdesc.md)]
-
 - [Disable lockdown of Start pages](../available-policies.md#disable-lockdown-of-start-pages): [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
-
-
-
 
 
 ---

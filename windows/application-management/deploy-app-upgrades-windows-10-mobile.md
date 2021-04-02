@@ -16,7 +16,7 @@ ms.topic: article
 
 > Applies to: Windows 10
 
-When you have a new version of an application, how do you get that to the Windows 10 Mobile devices in your environment? With  [application supersedence in System Center Configuration Manager](/sccm/apps/deploy-use/revise-and-supersede-applications#application-supersedence).
+When you have a new version of an application, how do you get that to the Windows 10 Mobile devices in your environment? With  [application supersedence in Microsoft Endpoint Configuration Manager](/configmgr/apps/deploy-use/revise-and-supersede-applications#application-supersedence).
 
 There are two steps to deploy an app upgrade:
 
@@ -58,4 +58,4 @@ You don't need to delete the deployment associated with the older version of the
 
 ![Monitoring view in Configuration Manager for the old version of the app](media/app-upgrade-old-version.png)
 
-If you haven't deployed an app through Configuration Manager before, check out [Deploy applications with System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications). You can also see how to delete deployments (although you don't have to) and notify users about the upgraded app.
+If you haven't deployed an app through Configuration Manager before, check out [Deploy applications with Microsoft Endoint Configuration Manager](/configmgr/apps/deploy-use/deploy-applications). You can also see how to delete deployments (although you don't have to) and notify users about the upgraded app.

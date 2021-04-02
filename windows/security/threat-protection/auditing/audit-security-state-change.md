@@ -1,17 +1,18 @@
 ---
 title: Audit Security State Change (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Security State Change, which determines whether Windows generates audit events for changes in the security state of a system.
+description: The policy setting, Audit Security State Change, which determines whether Windows generates audit events for changes in the security state of a system.
 ms.assetid: decb3218-a67d-4efa-afc0-337c79a89a2d
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Audit Security State Change

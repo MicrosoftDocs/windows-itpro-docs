@@ -2,7 +2,7 @@
 title: Advanced troubleshooting for Windows-based computer freeze issues 
 ms.reviewer: 
 manager: dansimp
-description: Learn how to troubleshoot computer freeze issues. 
+description: Learn how to troubleshoot computer freeze issues on Windows-based computers and servers. Also, you can learn how to diagnose, identify, and fix these issues.
 ms.prod: w10 
 ms.mktglfcycl: 
 ms.sitesec: library 
@@ -129,7 +129,7 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
 3. On some physical computers, you may generate a nonmakeable interruption (NMI) from the Web Interface feature (such as DRAC, iLo, and RSA). However, by default, this setting will stop the system without creating a memory dump.   
 
-   To allow the operating system to generate a memory dump file at an NMI interruption, set the value of the [NMICrashDump](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc783271(v=ws.10)) registry entry to `1` (REG_DWORD). Then, restart the computer to apply this change.   
+   To allow the operating system to generate a memory dump file at an NMI interruption, set the value of the [NMICrashDump](/previous-versions/windows/it-pro/windows-server-2003/cc783271(v=ws.10)) registry entry to `1` (REG_DWORD). Then, restart the computer to apply this change.   
 
    > [!NOTE]
    > This is applicable only for Windows 7, Windows Server 2008 R2, and earlier versions of Windows. For Windows 8 Windows Server 2012, and later versions of Windows, the NMICrashDump registry key is no longer required, and an NMI interruption will result in [a Stop error that follows a memory dump data collection](https://support.microsoft.com/help/2750146).   
@@ -206,7 +206,7 @@ If the physical computer is still running in a frozen state, follow these steps 
 
       * `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\CrashDumpEnabled`   
 
-         Make sure that the [CrashDumpEnabled](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc976050(v=technet.10)) registry entry is `1`.            
+         Make sure that the [CrashDumpEnabled](/previous-versions/windows/it-pro/windows-2000-server/cc976050(v=technet.10)) registry entry is `1`.            
 
       * `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\NMICrashDump`   
 
@@ -251,7 +251,7 @@ If the physical computer is still running in a frozen state, follow these steps 
 
 Pool Monitor shows you the number of allocations and outstanding bytes of allocation by type of pool and the tag that is passed into calls of ExAllocatePoolWithTag.   
 
-Learn [how to use Pool Monitor](https://support.microsoft.com/help/177415) and how to [use the data to troubleshoot pool leaks](http://blogs.technet.com/b/markrussinovich/archive/2009/03/26/3211216.aspx). 
+Learn [how to use Memory Pool Monitor to troubleshoot kernel mode memory leaks](https://support.microsoft.com/office/how-to-use-memory-pool-monitor-poolmon-exe-to-troubleshoot-kernel-mode-memory-leaks-4f4a05c2-ef8a-fca4-3ae0-670b940af398). 
 
 ### Use memory dump to collect data for the virtual machine that's running in a frozen state 
 
@@ -259,7 +259,7 @@ Use the one of the following methods for the application on which the virtual ma
 
 #### Microsoft Hyper-V 
 
-If the virtual machine is running Windows 8, Windows Server 2012, or a later version of Windows on Microsoft Hyper-V Server 2012, you can use the built-in NMI feature through a [Debug-VM](https://docs.microsoft.com/previous-versions/windows/powershell-scripting/dn464280(v=wps.630)) cmdlet to debug and get a memory dump.   
+If the virtual machine is running Windows 8, Windows Server 2012, or a later version of Windows on Microsoft Hyper-V Server 2012, you can use the built-in NMI feature through a [Debug-VM](/previous-versions/windows/powershell-scripting/dn464280(v=wps.630)) cmdlet to debug and get a memory dump.   
 
 To debug the virtual machines on Hyper-V, run the following cmdlet in Windows PowerShell: 
 
@@ -284,4 +284,4 @@ On Windows Server 2008, you may not have enough free disk space to generate a co
 
 Additionally, on Windows Server 2008 Service Pack (SP2), there's a second option if the system drive doesn't have sufficient space. Namely, you can use the DedicatedDumpFile registry entry. To learn how to use the registry entry, see [New behavior in Windows Vista and Windows Server 2008](https://support.microsoft.com/help/969028).   
 
-For more information, see [How to use the DedicatedDumpFile registry value to overcome space limitations on the system drive](http://blogs.msdn.com/b/ntdebugging/archive/2010/04/02/how-to-use-the-dedicateddumpfile-registry-value-to-overcome-space-limitations-on-the-system-drive-when-capturing-a-system-memory-dump.aspx).
+For more information, see [How to use the DedicatedDumpFile registry value to overcome space limitations on the system drive](https://blogs.msdn.com/b/ntdebugging/archive/2010/04/02/how-to-use-the-dedicateddumpfile-registry-value-to-overcome-space-limitations-on-the-system-drive-when-capturing-a-system-memory-dump.aspx).

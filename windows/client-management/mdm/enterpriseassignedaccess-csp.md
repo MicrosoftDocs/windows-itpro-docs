@@ -1,6 +1,6 @@
 ---
 title: EnterpriseAssignedAccess CSP
-description: EnterpriseAssignedAccess CSP
+description: Use the EnterpriseAssignedAccess configuration service provider (CSP) to configure custom layouts on a device. 
 ms.assetid: 5F88E567-77AA-4822-A0BC-3B31100639AA
 ms.reviewer: 
 manager: dansimp
@@ -20,12 +20,25 @@ The EnterpriseAssignedAccess configuration service provider allows IT administra
 > **Note**   The EnterpriseAssignedAccess CSP is only supported in Windows 10 Mobile.
 
 
-To use an app to create a lockdown XML see [Use the Lockdown Designer app to create a Lockdown XML file](https://docs.microsoft.com/windows/configuration/mobile-devices/mobile-lockdown-designer). For more information about how to interact with the lockdown XML at runtime, see [**DeviceLockdownProfile class**](https://msdn.microsoft.com/library/windows/hardware/mt186983).
+To use an app to create a lockdown XML see [Use the Lockdown Designer app to create a Lockdown XML file](/windows/configuration/mobile-devices/mobile-lockdown-designer). For more information about how to interact with the lockdown XML at runtime, see [**DeviceLockdownProfile class**](/uwp/api/Windows.Embedded.DeviceLockdown.DeviceLockdownProfile).
 
-The following diagram shows the EnterpriseAssignedAccess configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
-
-![enterpriseassignedaccess csp](images/provisioning-csp-enterpriseassignedaccess.png)
-
+The following shows the EnterpriseAssignedAccess configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
+```
+./Vendor/MSFT
+EnterpriseAssignedAccess
+----AssignedAccess
+--------AssignedAccessXml
+----LockScreenWallpaper
+--------BGFileName
+----Theme
+--------ThemeBackground
+--------ThemeAccentColorID
+--------ThemeAccentColorValue
+----Clock
+--------TimeZone
+----Locale
+--------Language
+```
 The following list shows the characteristics and parameters.
 
 <a href="" id="-vendor-msft-enterpriseassignedaccess-"></a>**./Vendor/MSFT/EnterpriseAssignedAccess/**
@@ -248,7 +261,7 @@ Entry | Description
 ----------- | ------------
 Settings | Starting in Windows 10, version 1703, you can specify the settings pages using the settings URI.
 
-For example, in place of SettingPageDisplay, you would use ms-settings:display. See [ms-settings: URI scheme reference](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to find the URI for each settings page.
+For example, in place of SettingPageDisplay, you would use ms-settings:display. See [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to find the URI for each settings page.
 
 Here is an example for Windows 10, version 1703.
 
@@ -306,7 +319,7 @@ Starting in Windows 10, version 1511, you can specify the following quick acti
 <p>Dependencies - none</p></li>
 </ul>
 
-Starting in Windows 10, version 1703, Quick action settings no longer require any dependencis from related group or page. Here is the list:
+Starting in Windows 10, version 1703, Quick action settings no longer require any dependencies from related group or page. Here is the list:
 - QuickActions_Launcher_AllSettings
 - QuickActions_Launcher_DeviceDiscovery
 - SystemSettings_BatterySaver_LandingPage_OverrideControl
@@ -1175,7 +1188,7 @@ Supported operations are Get and Replace.
 
 
 <a href="" id="locale-language-"></a>**Locale/Language/**
-The culture code that identifies the language to display on a device, and specifies the formatting of numbers, currencies, time, and dates. For language values, see [Locale IDs Assigned by Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=189567).
+The culture code that identifies the language to display on a device, and specifies the formatting of numbers, currencies, time, and dates. For language values, see [Locale IDs Assigned by Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
 
 The language setting is configured in the Default User profile only.
 
@@ -1600,7 +1613,7 @@ The following table lists the product ID and AUMID for each app that is included
 <td>Microsoft.MSPodcast_8wekyb3d8bbwe!xc3215724yb279y4206y8c3ey61d1a9d63ed3x</td>
 </tr>
 <tr class="even">
-<td>Powerpoint</td>
+<td>PowerPoint</td>
 <td>B50483C4-8046-4E1B-81BA-590B24935798</td>
 <td>Microsoft.Office.PowerPoint_8wekyb3d8bbwe!microsoft.pptim</td>
 </tr>

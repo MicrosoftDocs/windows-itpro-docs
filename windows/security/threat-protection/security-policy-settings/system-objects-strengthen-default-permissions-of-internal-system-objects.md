@@ -1,10 +1,10 @@
 ---
-title: System objects Strengthen default permissions of internal system objects (e.g. Symbolic Links) (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the System objects Strengthen default permissions of internal system objects (e.g. Symbolic Links) security policy setting.
+title: System objects Strengthen default permissions of internal system objects (e.g., Symbolic Links) (Windows 10)
+description: Best practices and more for the security policy setting, System objects Strengthen default permissions of internal system objects (e.g. Symbolic Links).
 ms.assetid: 3a592097-9cf5-4fd0-a504-7cbfab050bb6
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +15,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
-# System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links)
+# System objects: Strengthen default permissions of internal system objects (for example, Symbolic Links)
 
 **Applies to**
 -   Windows 10

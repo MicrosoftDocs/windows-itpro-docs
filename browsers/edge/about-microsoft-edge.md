@@ -2,7 +2,7 @@
 title: Microsoft Edge system and language requirements
 description: Overview information about Microsoft Edge, the default browser for Windows 10. This topic includes links to other Microsoft Edge topics.
 ms.assetid: 70377735-b2f9-4b0b-9658-4cf7c1d745bb
-ms.reviewer: 
+ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
@@ -11,22 +11,21 @@ ms.prod: edge
 ms.mktglfcycl: general
 ms.topic: reference
 ms.sitesec: library
-title: Microsoft Edge for IT Pros
 ms.localizationpriority: medium
 ms.date: 10/02/2018
 ---
 
 # Microsoft Edge system and language requirements
->Applies to:  Microsoft Edge on Windows 10 and Windows 10 Mobile
+> Applies to:  Microsoft Edge on Windows 10 and Windows 10 Mobile
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
 
 Microsoft Edge is the new, default web browser for Windows 10, helping you to experience modern web standards, better performance, improved security, and increased reliability. Microsoft Edge lets you stay up-to-date through the Microsoft Store and to manage your enterprise through Group Policy or your mobile device management (MDM) tools.
 
 
->[!IMPORTANT]
->The Long-Term Servicing Branch (LTSB) versions of Windows, including Windows Server 2016, don’t include Microsoft Edge or many other Universal Windows Platform (UWP) apps. Systems running the LTSB operating systems do not support these apps because their services get frequently updated with new functionality. For customers who require the LTSB for specialized devices, we recommend using Internet Explorer 11.
+> [!IMPORTANT]
+> The Long-Term Servicing Branch (LTSB) versions of Windows, including Windows Server 2016, don’t include Microsoft Edge or many other Universal Windows Platform (UWP) apps. Systems running the LTSB operating systems do not support these apps because their services get frequently updated with new functionality. For customers who require the LTSB for specialized devices, we recommend using Internet Explorer 11.
 
 
 ## Minimum system requirements
@@ -36,7 +35,7 @@ Some of the components might also need additional system resources. Check the co
 |        Item        |                                                                                                                           Minimum requirements                                                                                                                            |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Computer/processor |                                                                                                        1 gigahertz (GHz) or faster (32-bit (x86) or 64-bit (x64))                                                                                                         |
-|  Operating system  | <ul><li>Windows 10 (32-bit or 64-bit)</li><li>Windows 10 Mobile</li></ul><p><strong>Note</strong><br> For specific Windows 10 Mobile requirements, see the [Minimum hardware requirements for Windows 10 Mobile](https://go.microsoft.com/fwlink/p/?LinkID=699266) topic. |
+|  Operating system  | <ul><li>Windows 10 (32-bit or 64-bit)</li><li>Windows 10 Mobile</li></ul><p><strong>Note</strong><br> For specific Windows 10 Mobile requirements, see the [Minimum hardware requirements for Windows 10 Mobile](/windows-hardware/design/minimum/minimum-hardware-requirements-overview) topic. |
 |       Memory       |                                                                                              <ul><li>Windows 10 (32-bit) - 1 GB</li><li>Windows 10 (64-bit) - 2 GB</li></ul>                                                                                              |
 |  Hard drive space  |                                                                                             <ul><li>Windows 10 (32-bit) - 16 GB</li><li>Windows 10 (64-bit) - 20 GB</li></ul>                                                                                             |
 |     DVD drive      |                                                                                                               DVD-ROM drive (if installing from a DVD-ROM)                                                                                                                |
@@ -49,7 +48,7 @@ Some of the components might also need additional system resources. Check the co
 
 ## Supported languages
 
-Microsoft Edge supports all of the same languages as Windows 10 and you can use the [Microsoft Translator extension](https://www.microsoft.com/p/translator-for-microsoft-edge/9nblggh4n4n3) to translate foreign language web pages and text selections for 60+ languages. 
+Microsoft Edge supports all of the same languages as Windows 10 and you can use the [Microsoft Translator extension](https://www.microsoft.com/p/translator-for-microsoft-edge/9nblggh4n4n3) to translate foreign language web pages and text selections for 60+ languages.
 
 If the extension does not work after install, restart Microsoft Edge. If the extension still does not work, provide feedback through the Feedback Hub.
 

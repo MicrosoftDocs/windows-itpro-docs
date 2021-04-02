@@ -1,6 +1,6 @@
 ---
 title: Scenario 1 Online Activation (Windows 10)
-description: Scenario 1 Online Activation
+description: Achieve network access by deploying the Volume Activation Management Tool (VAMT) in a Core Network environment.
 ms.assetid: 94dba40e-383a-41e4-b74b-9e884facdfd3
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---
@@ -115,7 +116,7 @@ To collect the status from select computers in the database, you can select comp
     The same status appears under the **Status of Last Action** column in the product list view in the center pane.
     **Note**  
 
-    Product key installation will fail if VAMT finds mismatched key types or editions. VAMT will display the failure status and will continue the installation for the next product in the list. For more information on choosing the correct product key, see [How to Choose the Right Volume License Key for Windows.](https://go.microsoft.com/fwlink/p/?linkid=238382)
+    Product key installation will fail if VAMT finds mismatched key types or editions. VAMT will display the failure status and will continue the installation for the next product in the list. For more information on choosing the correct product key, see [How to Choose the Right Volume License Key for Windows.](/previous-versions/tn-archive/ee939271(v=technet.10))
 
 ## <a href="" id="bkmk-partnine"></a>Step 9: Activate the client products
 
@@ -132,5 +133,4 @@ To collect the status from select computers in the database, you can select comp
 
 ## Related topics
 - [VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
- 
  

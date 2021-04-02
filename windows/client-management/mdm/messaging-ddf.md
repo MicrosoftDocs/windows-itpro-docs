@@ -1,6 +1,6 @@
 ---
 title: Messaging DDF file
-description: Messaging DDF file
+description: Utilize the OMA DM device description framework (DDF) for the Messaging configuration service provider.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 09/25/2019
+ms.date: 08/31/2020
 ms.reviewer: 
 manager: dansimp
 ---  
@@ -18,10 +18,15 @@ manager: dansimp
 Learn what’s new with the Set up School PCs app each week. Find out about new app features and functionality, see updated screenshots, and find information about past releases.   
 
 
+## Week of August 24, 2020
+
+### Longer device names supported in app
+You can now give devices running Windows 10, version 2004 and later a name that's up to 53 characters long.  
+
 ## Week of September 23, 2019  
 
 ### Easier way to deploy Office 365 to your classroom devices 
- Microsoft Office now appears as an option on the **Apps** screen. Select the app to add it to your provisioning package. Devices install Office 365 ProPlus. This version includes the cloud-connected and most current versions of apps such as Word, PowerPoint, Excel, and Teams.   
+ Microsoft Office now appears as an option on the **Apps** screen. Select the app to add it to your provisioning package. Devices install Microsoft 365 Apps for enterprise. This version includes the cloud-connected and most current versions of apps such as Word, PowerPoint, Excel, and Teams.   
 
 
 ## Week of June 24, 2019  

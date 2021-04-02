@@ -1,10 +1,10 @@
 ---
 title: Configure Data Protection (Quick Mode) Settings (Windows 10)
-description: Configure Data Protection (Quick Mode) Settings
+description: Learn how to configure the data protection settings for connection security rules in an isolated domain or a standalone isolated server zone.
 ms.assetid: fdcb1b36-e267-4be7-b842-5df9a067c9e0
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Configure Data Protection (Quick Mode) Settings

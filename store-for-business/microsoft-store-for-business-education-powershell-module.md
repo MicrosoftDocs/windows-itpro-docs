@@ -9,7 +9,6 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.author:
 ms.date: 10/22/2017
 ms.reviewer: 
 manager: dansimp

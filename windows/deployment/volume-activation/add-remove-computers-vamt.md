@@ -1,6 +1,6 @@
 ---
 title: Add and Remove Computers (Windows 10)
-description: Add and Remove Computers
+description: The Discover products function on the Volume Activation Management Tool (VAMT) allows you to search the Active Directory domain or a general LDAP query.
 ms.assetid: cb6f3a78-ece0-4dc7-b086-cb003d82cd52
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +8,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.pagetype: activation
 ms.date: 04/25/2017
 ms.topic: article

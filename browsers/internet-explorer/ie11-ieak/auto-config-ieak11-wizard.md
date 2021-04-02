@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Automatic Configuration page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Automatic Configuration** page of the Internet Explorer Administration Kit (IEAK 11) Customization Wizard lets you provide URLs to the files that’ll automatically configure Internet Explorer 11 for a group of employees or devices.
 
 **Note**<br>

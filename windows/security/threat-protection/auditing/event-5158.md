@@ -2,7 +2,7 @@
 title: 5158(S) The Windows Filtering Platform has permitted a bind to a local port. (Windows 10)
 description: Describes security event 5158(S) The Windows Filtering Platform has permitted a bind to a local port.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5158(S): The Windows Filtering Platform has permitted a bind to a local port.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates every time [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510(v=vs.85).aspx) permits an application or service to bind to a local port.
+This event generates every time [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) permits an application or service to bind to a local port.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -75,7 +76,7 @@ This event generates every time [Windows Filtering Platform](https://msdn.micros
 
 **Application Information**:
 
--   **Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process which was permitted to bind to the local port. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
+-   **Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process that was permitted to bind to the local port. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
 
     <img src="images/task-manager.png" alt="Task manager illustration" width="585" height="375" />
 
@@ -107,7 +108,7 @@ This event generates every time [Windows Filtering Platform](https://msdn.micros
 
 -   **Source Port** \[Type = UnicodeString\]**:** port number which application was bind.
 
--   **Protocol** \[Type = UInt32\]: number of protocol which was used.
+-   **Protocol** \[Type = UInt32\]: number of the protocol that was used.
 
 | Service                                            | Protocol Number |
 |----------------------------------------------------|-----------------|
@@ -129,15 +130,15 @@ This event generates every time [Windows Filtering Platform](https://msdn.micros
 
 **Filter Information:**
 
--   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID which allows application to bind the port. By default Windows firewall won't prevent a port from being binded by an application and if this application doesn’t match any filters you will get value 0 in this field.
+-   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that allows the application to bind the port. By default, Windows firewall won't prevent a port from being bound by an application. If this application doesn’t match any filters, you will get value 0 in this field.
 
-    To find specific Windows Filtering Platform filter by ID you need to execute the following command: **netsh wfp show filters**. As result of this command **filters.xml** file will be generated. You need to open this file and find specific substring with required filter ID (**&lt;filterId&gt;**)**,** for example:
+    To find a specific Windows Filtering Platform filter by ID, run the following command: **netsh wfp show filters**. As a result of this command, the **filters.xml** file will be generated. Open this file and find specific substring with required filter ID (**&lt;filterId&gt;**)**,** for example:
 
     <img src="images/filters-xml-file.png" alt="Filters.xml file illustration" width="840" height="176" />
 
--   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
+-   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](/windows/win32/fwp/application-layer-enforcement--ale-) layer name.
 
--   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find specific Windows Filtering Platform layer ID you need to execute the following command: **netsh wfp show state**. As result of this command **wfpstate.xml** file will be generated. You need to open this file and find specific substring with required layer ID (**&lt;layerId&gt;**)**,** for example:
+-   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find a specific Windows Filtering Platform layer ID, run the following command: **netsh wfp show state**. As a result of this command, the **wfpstate.xml** file will be generated. Open this file and find specific substring with required layer ID (**&lt;layerId&gt;**)**,** for example:
 
 <img src="images/wfpstate-xml.png" alt="Wfpstate xml illustration" width="1563" height="780" />
 
@@ -145,7 +146,7 @@ This event generates every time [Windows Filtering Platform](https://msdn.micros
 
 For 5158(S): The Windows Filtering Platform has permitted a bind to a local port.
 
--   If you have a pre-defined application which should be used to perform the operation that was reported by this event, monitor events with “**Application**” not equal to your defined application.
+-   If you have a predefined application that should be used to perform the operation that was reported by this event, monitor events with “**Application**” not equal to your defined application.
 
 -   You can monitor to see if “**Application**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
 
@@ -155,7 +156,6 @@ For 5158(S): The Windows Filtering Platform has permitted a bind to a local port
 
 -   If you need to monitor all actions with a specific local port, monitor for [5158](event-5158.md) events with that “**Source Port.”**
 
--   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or compter, for example, anything other than 6 or 17.
+-   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or computer, for example, anything other than 6 or 17.
 
 -   If the computer’s communication with “**Destination Address”** should always use a specific “**Destination Port**,**”** monitor for any other “**Destination Port**.”
-

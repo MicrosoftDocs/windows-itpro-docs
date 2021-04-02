@@ -44,7 +44,7 @@ Each method accomplishes essentially the same task, but some methods may be bett
 
 To add a locally installed application to a package or to a connection group’s virtual environment, you add a subkey to the `RunVirtual` registry key in the Registry Editor, as described in the following sections.
 
-There is no Group Policy setting available to manage this registry key, so you have to use System Center Configuration Manager or another electronic software distribution (ESD) system, or manually edit the registry.
+There is no Group Policy setting available to manage this registry key, so you have to use Microsoft Endpoint Manager or another electronic software distribution (ESD) system, or manually edit the registry.
 
 Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages globally or to the user.
 

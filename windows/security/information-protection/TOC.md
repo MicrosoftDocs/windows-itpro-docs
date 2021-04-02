@@ -3,9 +3,9 @@
 ## [BitLocker](bitlocker\bitlocker-overview.md)
 ### [Overview of BitLocker Device Encryption in Windows 10](bitlocker\bitlocker-device-encryption-overview-windows-10.md)
 ### [BitLocker frequently asked questions (FAQ)](bitlocker\bitlocker-frequently-asked-questions.md)
-#### [Overview and requirements](bitlocker\bitlocker-overview-and-requirements-faq.md)
+#### [Overview and requirements](bitlocker\bitlocker-overview-and-requirements-faq.yml)
 #### [Upgrading](bitlocker\bitlocker-upgrading-faq.md)
-#### [Deployment and administration](bitlocker\bitlocker-deployment-and-administration-faq.md)
+#### [Deployment and administration](bitlocker\bitlocker-deployment-and-administration-faq.yml)
 #### [Key management](bitlocker\bitlocker-key-management-faq.md)
 #### [BitLocker To Go](bitlocker\bitlocker-to-go-faq.md)
 #### [Active Directory Domain Services](bitlocker\bitlocker-and-adds-faq.md)
@@ -24,10 +24,21 @@
 ### [BitLocker Recovery Guide](bitlocker\bitlocker-recovery-guide-plan.md)
 ### [BitLocker Countermeasures](bitlocker\bitlocker-countermeasures.md)
 ### [Protecting cluster shared volumes and storage area networks with BitLocker](bitlocker\protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)
+### Troubleshoot BitLocker
+#### [Troubleshoot BitLocker](bitlocker\troubleshoot-bitlocker.md)
+#### [BitLocker cannot encrypt a drive: known issues](bitlocker\ts-bitlocker-cannot-encrypt-issues.md)
+#### [Enforcing BitLocker policies by using Intune: known issues](bitlocker\ts-bitlocker-intune-issues.md)
+#### [BitLocker Network Unlock: known issues](bitlocker\ts-bitlocker-network-unlock-issues.md)
+#### [BitLocker recovery: known issues](bitlocker\ts-bitlocker-recovery-issues.md)
+#### [BitLocker configuration: known issues](bitlocker\ts-bitlocker-config-issues.md)
+#### Troubleshoot BitLocker and TPM issues
+##### [BitLocker cannot encrypt a drive: known TPM issues](bitlocker\ts-bitlocker-cannot-encrypt-tpm-issues.md)
+##### [BitLocker and TPM: other known issues](bitlocker\ts-bitlocker-tpm-issues.md)
+##### [Decode Measured Boot logs to track PCR changes](bitlocker\ts-bitlocker-decode-measured-boot-logs.md)
 
 ## [Encrypted Hard Drive](encrypted-hard-drive.md)
 
-## [Kernel DMA Protection for Thunderbolt™ 3](kernel-dma-protection-for-thunderbolt.md)
+## [Kernel DMA Protection](kernel-dma-protection-for-thunderbolt.md)
 
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a WIP policy using Microsoft Intune](windows-information-protection\overview-create-wip-policy.md)
@@ -36,8 +47,8 @@
 ##### [Associate and deploy a VPN policy for WIP using the Azure portal for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune-azure.md)
 #### [Create and verify an EFS Data Recovery Agent (DRA) certificate](windows-information-protection\create-and-verify-an-efs-dra-certificate.md)
 #### [Determine the Enterprise Context of an app running in WIP](windows-information-protection\wip-app-enterprise-context.md)
-### [Create a WIP policy using System Center Configuration Manager](windows-information-protection\overview-create-wip-policy-sccm.md)
-#### [Create and deploy a WIP policy using System Center Configuration Manager](windows-information-protection\create-wip-policy-using-sccm.md)
+### [Create a WIP policy using Microsoft Endpoint Configuration Manager](windows-information-protection\overview-create-wip-policy-configmgr.md)
+#### [Create and deploy a WIP policy using Microsoft Endpoint Configuration Manager](windows-information-protection\create-wip-policy-using-configmgr.md)
 #### [Create and verify an EFS Data Recovery Agent (DRA) certificate](windows-information-protection\create-and-verify-an-efs-dra-certificate.md)
 #### [Determine the Enterprise Context of an app running in WIP](windows-information-protection\wip-app-enterprise-context.md)
 ### [Mandatory tasks and settings required to turn on WIP](windows-information-protection\mandatory-settings-for-wip.md)
@@ -50,7 +61,6 @@
 #### [Recommended Enterprise Cloud Resources and Neutral Resources network settings with WIP](windows-information-protection\recommended-network-definitions-for-wip.md)
 #### [Using Outlook Web Access with WIP](windows-information-protection\using-owa-with-wip.md)
 ### [Fine-tune WIP Learning](windows-information-protection\wip-learning.md)
-### [How WIP works with sensitivity labels](windows-information-protection\how-wip-works-with-labels.md)
 
 ## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
 

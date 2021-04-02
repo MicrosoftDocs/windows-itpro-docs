@@ -1,6 +1,6 @@
 ---
 title: Configure S/MIME for Windows 10 and Windows 10 Mobile (Windows 10)
-description: In Windows 10, S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients who have a digital identification (ID), also known as a certificate, can read them.
+description: S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients with a digital ID, aka a certificate, can read them.
 ms.assetid: 7F9C2A99-42EB-4BCC-BB53-41C04FBBBF05
 ms.reviewer: 
 keywords: encrypt, digital signature
@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -39,10 +39,10 @@ A digitally signed message reassures the recipient that the message hasn't been 
 
 ## Prerequisites
 
--   [S/MIME is enabled for Exchange accounts](https://go.microsoft.com/fwlink/p/?LinkId=718217) (on-premises and Office 365). Users can’t use S/MIME signing and encryption with a personal account such as Outlook.com.
+-   [S/MIME is enabled for Exchange accounts](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) (on-premises and Office 365). Users can’t use S/MIME signing and encryption with a personal account such as Outlook.com.
 -   Valid Personal Information Exchange (PFX) certificates are installed on the device.
 
-    -   [How to Create PFX Certificate Profiles in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkID=718215)
+    -   [How to Create PFX Certificate Profiles in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/mt131410(v=technet.10))
     -   [Enable access to company resources using certificate profiles with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=718216)
     -   [Install digital certificates on Windows 10 Mobile](installing-digital-certificates-on-windows-10-mobile.md)
 

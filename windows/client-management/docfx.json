@@ -32,6 +32,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.technology": "windows",
       "audience": "ITPro",
       "ms.topic": "article",
@@ -44,7 +45,18 @@
           "depot_name": "MSDN.win-client-management",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "Windows Client Management",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],

@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows 10, version 1809
 ms.reviewer: 
-description: New and updated features in Windows 10, version 1809
+description: Learn about features for Windows 10, version 1809, including features and fixes included in previous cumulative updates to Windows 10, version 1803.
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 October 2018 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -35,15 +35,15 @@ This self-deploying capability removes the current need to have an end user inte
 
 You can utilize Windows Autopilot self-deploying mode to register the device to an AAD tenant, enroll in your organization’s MDM provider, and provision policies and applications, all with no user authentication or user interaction required. 
 
-To learn more about Autopilot self-deploying mode and to see step-by-step instructions to perform such a deployment, [Windows Autopilot self-deploying mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying). 
+To learn more about Autopilot self-deploying mode and to see step-by-step instructions to perform such a deployment, [Windows Autopilot self-deploying mode](/windows/deployment/windows-autopilot/self-deploying). 
 
 ### SetupDiag
 
-[SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) version 1.4 is released. SetupDiag is a standalone diagnostic tool that can be used to troubleshoot issues when a Windows 10 upgrade is unsuccessful. 
+[SetupDiag](/windows/deployment/upgrade/setupdiag) version 1.4 is released. SetupDiag is a standalone diagnostic tool that can be used to troubleshoot issues when a Windows 10 upgrade is unsuccessful. 
 
 ## Security
 
-We’ve continued to work on the **Current threats** area in  [Virus & threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
+We’ve continued to work on the **Current threats** area in  [Virus & threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
    ![Virus & threat protection settings](images/virus-and-threat-protection.png "Virus & threat protection settings")
 
@@ -63,7 +63,7 @@ This also means you’ll see more links to other security apps within **Windows 
 
 Through a Modern Device Management (MDM) policy, BitLocker can be enabled silently for standard Azure Active Directory (AAD) joined users. In Windows 10, version 1803 automatic BitLocker encryption was enabled for standard AAD users, but this still required modern hardware that passed the Hardware Security Test Interface (HSTI). This new functionality enables BitLocker via policy even on devices that don’t pass the HSTI. 
 
-This is an update to the [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp), which was introduced in Windows 10, version 1703, and leveraged by Intune and others. 
+This is an update to the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp), which was introduced in Windows 10, version 1703, and leveraged by Intune and others. 
 
 This feature will soon be enabled on Olympia Corp as an optional feature.
 
@@ -75,13 +75,13 @@ For example, you can choose the XTS-AES 256 encryption algorithm, and have it ap
 
 To achieve this:
 
-1. Configure the [encryption method settings](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption) in the Windows 10 Endpoint Protection profile to the desired encryption algorithm. 
-2. [Assign the policy](https://docs.microsoft.com/intune/device-profile-assign) to your Autopilot device group. 
+1. Configure the [encryption method settings](/intune/endpoint-protection-windows-10#windows-encryption) in the Windows 10 Endpoint Protection profile to the desired encryption algorithm. 
+2. [Assign the policy](/intune/device-profile-assign) to your Autopilot device group. 
     - **IMPORTANT**: The encryption policy must be assigned to **devices** in the group, not users.
-3. Enable the Autopilot [Enrollment Status Page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
+3. Enable the Autopilot [Enrollment Status Page](/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
     - **IMPORTANT**: If the ESP is not enabled, the policy will not apply before encryption starts.
 
-For more information, see [Setting the BitLocker encryption algorithm for Autopilot devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/bitlocker).
+For more information, see [Setting the BitLocker encryption algorithm for Autopilot devices](/windows/deployment/windows-autopilot/bitlocker).
 
 ### Windows Defender Application Guard Improvements
 
@@ -107,9 +107,9 @@ See the following example:
 
 Windows Defender Security Center is now called **Windows Security Center**. 
 
-You can still get to the app in all the usual ways – simply ask Cortana to open Windows Security Center(WSC) or interact with the taskbar icon. WSC lets you manage all your security needs, including **Windows Defender Antivirus** and **Windows Defender Firewall**. 
+You can still get to the app in all the usual ways – simply ask Cortana to open Windows Security Center(WSC) or interact with the taskbar icon. WSC lets you manage all your security needs, including **Microsoft Defender Antivirus** and **Windows Defender Firewall**. 
 
-The WSC service now requires antivirus products to run as a protected process to register. Products that have not yet implemented this will not appear in the Windows Security Center user interface, and Windows Defender Antivirus will remain enabled side-by-side with these products. 
+The WSC service now requires antivirus products to run as a protected process to register. Products that have not yet implemented this will not appear in the Windows Security Center user interface, and Microsoft Defender Antivirus will remain enabled side-by-side with these products. 
 
 WSC now includes the Fluent Design System elements you know and love. You’ll also notice we’ve adjusted the spacing and padding around the app. It will now dynamically size the categories on the main page if more room is needed for extra info. We also updated the title bar so that it will use your accent color if you have enabled that option in **Color Settings**.
 
@@ -117,11 +117,11 @@ WSC now includes the Fluent Design System elements you know and love. You’ll a
 
 ### Windows Defender Firewall now supports Windows Subsystem for Linux (WSL) processes
 
-You can add specific rules for a WSL process in Windows Defender Firewall, just as you would for any Windows process. Also, Windows Defender Firewall now supports notifications for WSL processes. For example, when a Linux tool wants to allow access to a port from the outside (like SSH or a web server like nginx), Windows Defender Firewall will prompt to allow access just like it would for a Windows process when the port starts accepting connections. This was first introduced in [Build 17627](https://docs.microsoft.com/windows/wsl/release-notes#build-17618-skip-ahead).
+You can add specific rules for a WSL process in Windows Defender Firewall, just as you would for any Windows process. Also, Windows Defender Firewall now supports notifications for WSL processes. For example, when a Linux tool wants to allow access to a port from the outside (like SSH or a web server like nginx), Windows Defender Firewall will prompt to allow access just like it would for a Windows process when the port starts accepting connections. This was first introduced in [Build 17627](/windows/wsl/release-notes#build-17618-skip-ahead).
 
 ### Microsoft Edge Group Policies
 
-We introduced new group policies and Modern Device Management settings to manage Microsoft Edge. The new policies include enabling and disabling full-screen mode, printing, favorites bar, and saving history; preventing certificate error overrides; configuring the Home button and startup options; setting the New Tab page and Home button URL, and managing extensions. Learn more about the [new Microsoft Edge policies](https://aka.ms/new-microsoft-edge-group-policies).
+We introduced new group policies and Modern Device Management settings to manage Microsoft Edge. The new policies include enabling and disabling full-screen mode, printing, favorites bar, and saving history; preventing certificate error overrides; configuring the Home button and startup options; setting the New Tab page and Home button URL, and managing extensions. Learn more about the [new Microsoft Edge policies](/microsoft-edge/deploy/change-history-for-microsoft-edge).
 
 ### Windows Defender Credential Guard is supported by default on 10S devices that are AAD Joined
 
@@ -133,36 +133,36 @@ Windows Defender Credential Guard has always been an optional feature, but Windo
 
 A network connection is now required to set up a new device. As a result, we removed the “skip for now” option in the network setup page in Out Of Box Experience (OOBE). 
 
-### Windows Defender ATP
+### Microsoft Defender for Endpoint
 
-[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) has been enhanced with many new capabilities. For more information, see the following topics:
+[Microsoft Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) has been enhanced with many new capabilities. For more information, see the following topics:
 
-- [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics)<br>
-Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
+- [Threat analytics](/windows/security/threat-protection/windows-defender-atp/threat-analytics)<br>
+Threat Analytics is a set of interactive reports published by the Microsoft Defender for Endpoint research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
-- [Custom detection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<br>
+- [Custom detection](/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<br>
  With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
 
-- [Managed security service provider (MSSP) support](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<br>
-Windows Defender ATP adds support for this scenario by providing MSSP integration. 
+- [Managed security service provider (MSSP) support](/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<br>
+Microsoft Defender for Endpoint adds support for this scenario by providing MSSP integration. 
 The integration will allow MSSPs to take the following actions:
 Get access to MSSP customer's Windows Defender Security Center portal, fetch email notifications, and fetch alerts through security information and event management (SIEM) tools.
 
-- [Integration with Azure Security Center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<br>
-Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
+- [Integration with Azure Defender](/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<br>
+Microsoft Defender for Endpoint integrates with Azure Defender to provide a comprehensive server protection solution. With this integration Azure Defender can leverage the power of Microsoft Defender for Endpoint to provide improved threat detection for Windows Servers.
 
-- [Integration with Microsoft Cloud App Security](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-cloud-app-security-integration)<br>
-Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
+- [Integration with Microsoft Cloud App Security](/windows/security/threat-protection/windows-defender-atp/microsoft-cloud-app-security-integration)<br>
+Microsoft Cloud App Security leverages Microsoft Defender for Endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Microsoft Defender for Endpoint monitored machines.
 
-- [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#windows-server-version-1803-and-windows-server-2019) <br>
-Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
+- [Onboard Windows Server 2019](/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#windows-server-version-1803-and-windows-server-2019) <br>
+Microsoft Defender for Endpoint now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
 
-- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<br>
-Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
+- [Onboard previous versions of Windows](/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<br>
+Onboard supported versions of Windows machines so that they can send sensor data to the Microsoft Defender for Endpoint sensor
 
 ## Cloud Clipboard
 
-Cloud clipboard helps users copy content between devices. It also manages the clipboard histroy so that you can paste your old copied data. You can access it by using **Windows+V**. Set up Cloud clipboard:
+Cloud clipboard helps users copy content between devices. It also manages the clipboard history so that you can paste your old copied data. You can access it by using **Windows+V**. Set up Cloud clipboard:
 
 1. Go to **Windows Settings** and select **Systems**.
 2. On the left menu, click on **Clipboard**.
@@ -197,7 +197,7 @@ Microsoft Edge kiosk mode running in multi-app assigned access has two kiosk typ
 
 ![normal mode](images/Normal_inFrame.png "normal mode")
 
-Learn more about [Microsoft Edge kiosk mode](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
+Learn more about [Microsoft Edge kiosk mode](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
 
 ## Registry editor improvements
 
@@ -217,9 +217,12 @@ Do you have shared devices deployed in your work place? **Fast sign-in** enables
     ![fast sign-in](images/fastsignin.png "fast sign-in")
 
 >[!NOTE]
->This is a preview feature and therefore not meant or recommended for production purposes.
+>This is a private preview feature and therefore not meant or recommended for production purposes.
 
 ## Web sign-in to Windows 10
+
+>[!IMPORTANT]
+>This is a private preview feature and therefore not meant or recommended for production purposes.
 
 Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
 
@@ -232,7 +235,7 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
     ![Web sign-in](images/websignin.png "web sign-in")
 
 >[!NOTE]
->This is a preview feature and therefore not meant or recommended for production purposes.
+>This is a private preview feature and therefore not meant or recommended for production purposes.
 
 ## Your Phone app
 

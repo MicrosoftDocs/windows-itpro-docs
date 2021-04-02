@@ -1,6 +1,6 @@
 ---
 title: Defender CSP
-description: Defender CSP
+description: Learn how the Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
 ms.reviewer: 
 manager: dansimp
@@ -10,20 +10,59 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/21/2019
+ms.date: 08/11/2020
 ---
 
 # Defender CSP
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
-The following image shows the Windows Defender configuration service provider in tree format.
-
-![defender csp diagram](images/provisioning-csp-defender.png)
-
+The following shows the Windows Defender configuration service provider in tree format.
+```
+./Vendor/MSFT
+Defender
+----Detections
+--------ThreatId
+------------Name
+------------URL
+------------Severity
+------------Category
+------------CurrentStatus
+------------ExecutionStatus
+------------InitialDetectionTime
+------------LastThreatStatusChangeTime
+------------NumberOfDetections
+----Health
+--------ProductStatus (Added in Windows 10 version 1809)
+--------ComputerState
+--------DefenderEnabled
+--------RtpEnabled
+--------NisEnabled
+--------QuickScanOverdue
+--------FullScanOverdue
+--------SignatureOutOfDate
+--------RebootRequired
+--------FullScanRequired
+--------EngineVersion
+--------SignatureVersion
+--------DefenderVersion
+--------QuickScanTime
+--------FullScanTime
+--------QuickScanSigVersion
+--------FullScanSigVersion
+--------TamperProtectionEnabled (Added in Windows 10, version 1903)
+--------IsVirtualMachine (Added in Windows 10, version 1903)
+----Configuration (Added in Windows 10, version 1903)
+--------TamperProetection (Added in Windows 10, version 1903)
+--------EnableFileHashcomputation (Added in Windows 10, version 1903)
+--------SupportLogLocation (Added in the next major release of Windows 10)
+----Scan
+----UpdateSignature
+----OfflineScan (Added in Windows 10 version 1803)
+```
 <a href="" id="detections"></a>**Detections**  
 An interior node to group all threats detected by Windows Defender.
 
@@ -51,7 +90,7 @@ Supported operation is Get.
 <a href="" id="detections-threatid-severity"></a>**Detections/*ThreatId*/Severity**  
 Threat severity ID.
 
-The data type is a integer.
+The data type is integer.
 
 The following list shows the supported values:
 
@@ -66,7 +105,7 @@ Supported operation is Get.
 <a href="" id="detections-threatid-category"></a>**Detections/*ThreatId*/Category**  
 Threat category ID.
 
-The data type is a integer.
+The data type is integer.
 
 The following table describes the supported values:
 
@@ -123,14 +162,12 @@ The following table describes the supported values:
 | 50    | Ransomware                  |
 | 51    | ASR Rule                    |
 
- 
-
 Supported operation is Get.
 
 <a href="" id="detections-threatid-currentstatus"></a>**Detections/*ThreatId*/CurrentStatus**  
 Information about the current status of the threat.
 
-The data type is a integer.
+The data type is integer.
 
 The following list shows the supported values:
 
@@ -151,7 +188,7 @@ Supported operation is Get.
 <a href="" id="detections-threatid-executionstatus"></a>**Detections/*ThreatId*/ExecutionStatus**  
 Information about the execution status of the threat.
 
-The data type is a integer.
+The data type is integer.
 
 Supported operation is Get.
 
@@ -172,7 +209,7 @@ Supported operation is Get.
 <a href="" id="detections-threatid-numberofdetections"></a>**Detections/*ThreatId*/NumberOfDetections**  
 Number of times this threat has been detected on a particular client.
 
-The data type is a integer.
+The data type is integer.
 
 Supported operation is Get.
 
@@ -182,9 +219,9 @@ An interior node to group information about Windows Defender health status.
 Supported operation is Get.
 
 <a href="" id="health-productstatus"></a>**Health/ProductStatus**  
-Added in Windows 10, version 1809. Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list. 
+Added in Windows 10, version 1809. Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list.
 
-Data type is integer. Supported operation is Get. 
+The data type is integer. Supported operation is Get.
 
 Supported product status values:  
 -  No status                                                        = 0
@@ -235,7 +272,7 @@ Example:
 <a href="" id="health-computerstate"></a>**Health/ComputerState**  
 Provide the current state of the device.
 
-The data type is a integer.
+The data type is integer.
 
 The following list shows the supported values:
 
@@ -251,56 +288,60 @@ Supported operation is Get.
 <a href="" id="health-defenderenabled"></a>**Health/DefenderEnabled**  
 Indicates whether the Windows Defender service is running.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-rtpenabled"></a>**Health/RtpEnabled**  
 Indicates whether real-time protection is running.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-nisenabled"></a>**Health/NisEnabled**  
 Indicates whether network protection is running.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-quickscanoverdue"></a>**Health/QuickScanOverdue**  
 Indicates whether a Windows Defender quick scan is overdue for the device.
 
-The data type is a boolean.
+A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and [catchup Quick scans](./policy-csp-defender.md#defender-disablecatchupquickscan) are disabled (default).
+
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-fullscanoverdue"></a>**Health/FullScanOverdue**  
 Indicates whether a Windows Defender full scan is overdue for the device.
 
-The data type is a boolean.
+A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and [catchup Full scans](./policy-csp-defender.md#defender-disablecatchupfullscan) are disabled (default).
+
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-signatureoutofdate"></a>**Health/SignatureOutOfDate**  
 Indicates whether the Windows Defender signature is outdated.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-rebootrequired"></a>**Health/RebootRequired**  
 Indicates whether a device reboot is needed.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-fullscanrequired"></a>**Health/FullScanRequired**  
 Indicates whether a Windows Defender full scan is required.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
@@ -356,7 +397,7 @@ Supported operation is Get.
 <a href="" id="health-tamperprotectionenabled"></a>**Health/TamperProtectionEnabled**  
 Indicates whether the Windows Defender tamper protection feature is enabled.​
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
@@ -388,17 +429,97 @@ Intune tamper protection setting UX supports three states:
 
 When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.
 
-<a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
-Enables or disables file hash computation feature.
-When this feature is enabled Windows defender will compute hashes for files it scans.
+<a href="" id="configuration-disablelocaladminmerge"></a>**Configuration/DisableLocalAdminMerge**<br>
+This policy setting controls whether or not complex list settings configured by a local administrator are merged with managed settings. This setting applies to lists such as threats and exclusions.
 
-The data type is a integer.
+If you disable or do not configure this setting, unique items defined in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, management settings will override preference settings.
+
+If you enable this setting, only items defined by management will be used in the resulting effective policy. Managed settings will override preference settings configured by the local administrator.
+
+> [!NOTE]
+> Applying this setting will not remove exclusions from the device registry, it will only prevent them from being applied/used. This is reflected in **Get-MpPreference**.
+
+Supported OS versions:  Windows 10
+
+The data type is integer.
 
 Supported operations are Add, Delete, Get, Replace.
 
 Valid values are:  
 - 1 – Enable.
 - 0 (default) – Disable.
+
+<a href="" id="configuration-disablecputhrottleonidlescans"></a>**Configuration/DisableCpuThrottleOnIdleScans**<br>	
+Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and will not throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.	
+
+The data type is integer.	
+
+Supported operations are Add, Delete, Get, Replace.	
+
+Valid values are:	
+-	1 – Enable.	
+-	0 (default) – Disable.
+
+<a href="" id="configuration-meteredconnectionupdates"></a>**Configuration/MeteredConnectionUpdates**<br>
+Allow managed devices to update through metered connections. Data charges may apply.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:
+- 1 – Enable.
+- 0 (default) – Disable.
+
+<a href="" id="configuration-allownetworkprotectiononwinserver"></a>**Configuration/AllowNetworkProtectionOnWinServer**<br>
+This settings controls whether Network Protection is allowed to be configured into block or audit mode on Windows Server. If false, the value of EnableNetworkProtection will be ignored.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:
+- 1 – Enable.
+- 0 (default) – Disable.
+
+<a href="" id="configuration-exclusionipaddress"></a>**Configuration/ExclusionIpAddress**<br>
+Allows an administrator to explicitly disable network packet inspection made by wdnisdrv on a particular set of IP addresses.
+
+The data type is string.
+
+Supported operations are Add, Delete, Get, Replace.
+
+<a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
+Enables or disables file hash computation feature.
+When this feature is enabled Windows defender will compute hashes for files it scans.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:  
+- 1 – Enable.
+- 0 (default) – Disable.
+
+<a href="" id="configuration-supportloglocation"></a>**Configuration/SupportLogLocation**  
+The support log location setting allows the administrator to specify where the Microsoft Defender Antivirus diagnostic data collection tool (**MpCmdRun.exe**) will save the resulting log files. This setting is configured with an MDM solution, such as Intune, and is available for Windows 10 Enterprise. 
+
+Data type is string.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Intune Support log location setting UX supports three states:  
+
+- Not configured (default) - Does not have any impact on the default state of the device. 
+- 1 - Enabled. Enables the Support log location feature. Requires admin to set custom file path.
+- 0 - Disabled. Turns off the Support log location feature. 
+
+When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
+
+More details:  
+
+- [Microsoft Defender AV diagnostic data](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)  
+- [Collect investigation package from devices](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)  
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.
@@ -415,11 +536,10 @@ Node that can be used to perform signature updates for Windows Defender.
 Supported operations are Get and Execute.
 
 <a href="" id="offlinescan"></a>**OfflineScan**  
-Added in Windows 10, version 1803. OfflineScan action starts a Windows Defender offline scan on the computer where you run the command. After the next OS reboot, the device will start in Windows Defender offline mode to begin the scan.
+Added in Windows 10, version 1803. OfflineScan action starts a Microsoft Defender Offline scan on the computer where you run the command. After the next OS reboot, the device will start in Microsoft Defender Offline mode to begin the scan.
 
 Supported operations are Get and Execute.
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)

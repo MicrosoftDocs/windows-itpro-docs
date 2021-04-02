@@ -18,6 +18,9 @@ ms.date: 07/27/2017
 
 # Set up Enterprise Mode logging and data collection
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -41,7 +44,7 @@ When you turn logging on, you need a valid URL that points to a server that can 
 
  **To set up an endpoint server**
 
-1. Configure an IIS server to work with your Enterprise Mode data collection process. If you’re unsure how to set up IIS, see the [IIS installation webpage](https://go.microsoft.com/fwlink/p/?LinkId=507609).
+1. Configure an IIS server to work with your Enterprise Mode data collection process. If you’re unsure how to set up IIS, see the [IIS installation webpage](/iis/install/installing-iis-7/installing-necessary-iis-components-on-windows-vista).
 
 2. Open Internet Information Services (IIS) and turn on the ASP components from the **Add Roles and Features Wizard**, **Server Roles** page.<p>
    This lets you create an ASP form that accepts the incoming POST messages.
@@ -154,8 +157,4 @@ You may need to do some additional package cleanup to remove older package versi
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
 - [Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md)
  
-
- 
-
-
 

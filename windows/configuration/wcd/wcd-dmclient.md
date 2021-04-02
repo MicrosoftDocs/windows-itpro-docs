@@ -27,4 +27,4 @@ For the **UpdateManagementServiceAddress** setting, enter a list of servers. The
 
 ## Related topics
 
-- [DMClient configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp)
+- [DMClient configuration service provider (CSP)](/windows/client-management/mdm/dmclient-csp)

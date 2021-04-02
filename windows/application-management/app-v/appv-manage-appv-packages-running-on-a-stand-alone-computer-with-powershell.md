@@ -1,7 +1,7 @@
 ---
 title: How to manage App-V packages running on a stand-alone computer by using Windows PowerShell (Windows 10)
 description: How to manage App-V packages running on a stand-alone computer by using Windows PowerShell.
-author: lomayor
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -128,7 +128,7 @@ Remove-AppvClientPackage "ContosoApplication"
 ```
 
 > [!NOTE]
-> App-V cmdlets have been assigned to variables for the previous examples for clarity only; assignment is not a requirement. Most cmdlets can be combined as displayed in [Add and publish a package](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#add-and-publish-a-package). For a detailed tutorial, see [App-V 5.0 Client PowerShell Deep Dive](https://blogs.technet.microsoft.com/appv/2012/12/03/app-v-5-0-client-powershell-deep-dive/).
+> App-V cmdlets have been assigned to variables for the previous examples for clarity only; assignment is not a requirement. Most cmdlets can be combined as displayed in [Add and publish a package](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#add-and-publish-a-package). For a detailed tutorial, see [App-V 5.0 Client PowerShell Deep Dive](/archive/blogs/appv/app-v-5-0-client-powershell-deep-dive).
 
 ## Enable only administrators to publish or unpublish packages
 

@@ -7,7 +7,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: da659ff5-70d5-4852-995e-4df67c4871dd
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
@@ -16,6 +17,9 @@ ms.date: 10/24/2017
 
 
 # Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2)
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 
@@ -62,15 +66,15 @@ Each XML file must include:
 
 The following is an example of what your XML file should look like when you’re done adding your sites. For more info about how to create your XML file, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).
 
-```
+```xml
 <site-list version="205">
-    <!--- File creation header --->
+    <!-- File creation header -->
     <created-by>
         <tool>EnterpriseSitelistManager</tool>
         <version>10240</version>
         <date-created>20150728.135021</date-created>
     </created-by>
-    <!--- Begin Site List ---> 
+    <!-- Begin Site List --> 
     <site url="www.cpandl.com">
         <compat-mode>IE8Enterprise</compat-mode>
         <open-in>MSEdge</open-in>
@@ -115,8 +119,3 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md)
  
-
- 
-
-
-

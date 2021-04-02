@@ -1,5 +1,5 @@
 ---
-title: Settings changed when you uninstall a provisioning package (Windows 10)
+title: Uninstall a provisioning package - reverted settings (Windows 10)
 description: This topic lists the settings that are reverted when you uninstall a provisioning package.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -35,17 +35,17 @@ Only settings in the following lists are revertible.
 The registry-based settings that are revertible when a provisioning package is uninstalled all fall under these categories, which you can find in the  Windows Configuration Designer. 
 
 
-- [Wi-Fi Sense](https://msdn.microsoft.com/library/windows/hardware/mt219706.aspx)
-- [CountryAndRegion](https://msdn.microsoft.com/library/windows/hardware/mt219726.aspx)
+- [Wi-Fi Sense](../wcd/wcd-connectivityprofiles.md#wifisense)
+- [CountryAndRegion](../wcd/wcd-countryandregion.md)
 - DeviceManagement / PGList/ LogicalProxyName
 - UniversalAppInstall / LaunchAppAtLogin
-- [Power](https://msdn.microsoft.com/library/windows/hardware/dn953704.aspx)
-- [TabletMode](https://msdn.microsoft.com/library/windows/hardware/mt297550.aspx) 
-- [Maps](https://msdn.microsoft.com/library/windows/hardware/mt131464.aspx) 
-- [Browser](https://msdn.microsoft.com/library/windows/hardware/mt573151.aspx)
-- [DeviceFormFactor](https://msdn.microsoft.com/library/windows/hardware/mt243449.aspx) 
-- [USBErrorsOEMOverride](https://msdn.microsoft.com/library/windows/hardware/mt769908.aspx) 
-- [WeakCharger](https://msdn.microsoft.com/library/windows/hardware/mt346401.aspx) 
+- [Power](/previous-versions//dn953704(v=vs.85))
+- [TabletMode](../wcd/wcd-tabletmode.md) 
+- [Maps](../wcd/wcd-maps.md) 
+- [Browser](../wcd/wcd-browser.md)
+- [DeviceFormFactor](../wcd/wcd-deviceformfactor.md) 
+- [USBErrorsOEMOverride](/previous-versions/windows/hardware/previsioning-framework/mt769908(v=vs.85)) 
+- [WeakCharger](../wcd/wcd-weakcharger.md) 
 
 
 
@@ -53,29 +53,29 @@ The registry-based settings that are revertible when a provisioning package is u
 
 Here is the list of revertible settings based on configuration service providers (CSPs). 
 
-[ActiveSync CSP](https://msdn.microsoft.com/library/windows/hardware/dn920017.aspx) 
-[AppLocker CSP](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx)  
-[BrowserFavorite CSP](https://msdn.microsoft.com/library/windows/hardware/dn914758.aspx)   
-[CertificateStore CSP](https://msdn.microsoft.com/library/windows/hardware/dn920021.aspx) 
-[ClientCertificateInstall CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023.aspx)   
-[RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx)   
-[CM_CellularEntries CSP](https://msdn.microsoft.com/library/windows/hardware/dn914761.aspx)   
-[CM_ProxyEntries CSP](https://msdn.microsoft.com/library/windows/hardware/dn914762.aspx)   
-[CMPolicy CSP](https://msdn.microsoft.com/library/windows/hardware/dn914760.aspx)   
-[CMPolicyEnterprise CSP](https://msdn.microsoft.com/library/windows/hardware/mt706463.aspx)   
-[EMAIL2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn904953.aspx)   
-[EnterpriseAPN CSP](https://msdn.microsoft.com/library/windows/hardware/dn958617.aspx)   
-[EnterpriseAppManagement CSP](https://msdn.microsoft.com/library/windows/hardware/dn904955.aspx)   
-[EnterpriseDesktopAppManagement CSP](https://msdn.microsoft.com/library/windows/hardware/dn958620.aspx)   
-[EnterpriseModernAppManagement CSP](https://msdn.microsoft.com/library/windows/hardware/dn904956.aspx)   
-[NAP CSP](https://msdn.microsoft.com/library/windows/hardware/dn914767.aspx)   
-[PassportForWork CSP](https://msdn.microsoft.com/library/windows/hardware/dn987099.aspx)   
-[Provisioning CSP](https://msdn.microsoft.com/library/windows/hardware/mt203665.aspx)   
-[PROXY CSP](https://msdn.microsoft.com/library/windows/hardware/dn914770.aspx)   
-[SecureAssessment CSP](https://msdn.microsoft.com/library/windows/hardware/mt718628.aspx)   
-[VPN CSP](https://msdn.microsoft.com/library/windows/hardware/dn904978.aspx)   
-[VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx)   
-[WiFi CSP](https://msdn.microsoft.com/library/windows/hardware/dn904981.aspx)   
+[ActiveSync CSP](/windows/client-management/mdm/activesync-csp) 
+[AppLocker CSP](/windows/client-management/mdm/applocker-csp)  
+[BrowserFavorite CSP](/windows/client-management/mdm/browserfavorite-csp)   
+[CertificateStore CSP](/windows/client-management/mdm/certificatestore-csp) 
+[ClientCertificateInstall CSP](/windows/client-management/mdm/clientcertificateinstall-csp)   
+[RootCATrustedCertificates CSP](/windows/client-management/mdm/rootcacertificates-csp)   
+[CM_CellularEntries CSP](/windows/client-management/mdm/cm-cellularentries-csp)   
+[CM_ProxyEntries CSP](/windows/client-management/mdm/cm-proxyentries-csp)   
+[CMPolicy CSP](/windows/client-management/mdm/cmpolicy-csp)   
+[CMPolicyEnterprise CSP](/windows/client-management/mdm/cmpolicyenterprise-csp)   
+[EMAIL2 CSP](/windows/client-management/mdm/email2-csp)   
+[EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp)   
+[EnterpriseAppManagement CSP](/windows/client-management/mdm/enterpriseappmanagement-csp)   
+[EnterpriseDesktopAppManagement CSP](/windows/client-management/mdm/enterprisedesktopappmanagement-csp)   
+[EnterpriseModernAppManagement CSP](/windows/client-management/mdm/enterprisemodernappmanagement-csp)   
+[NAP CSP](/windows/client-management/mdm/nap-csp)   
+[PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)   
+[Provisioning CSP](/windows/client-management/mdm/provisioning-csp)   
+[PROXY CSP](/windows/client-management/mdm/proxy-csp)   
+[SecureAssessment CSP](/windows/client-management/mdm/secureassessment-csp)   
+[VPN CSP](/windows/client-management/mdm/vpn-csp)   
+[VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)   
+[WiFi CSP](/windows/client-management/mdm/wifi-csp)   
 
 
 
@@ -95,8 +95,3 @@ Here is the list of revertible settings based on configuration service providers
  
 
  
-
-
-
-
-
