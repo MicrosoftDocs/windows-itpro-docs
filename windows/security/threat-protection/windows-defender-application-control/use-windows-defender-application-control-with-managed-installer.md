@@ -59,7 +59,7 @@ Enterprises should deploy and install all application updates using the managed 
 In some cases, it may be possible to also designate an application binary that performs the self-updates as a managed installer.
 Proper review for functionality and security should be performed for the application before using this method.
 
-- Modern apps deployed through a managed installer will not be tracked by the managed installer heuristic and will need to be separately authorized in your WDAC policy.
+- [Packaged apps (MSIX)](https://docs.microsoft.com/windows/msix/) deployed through a managed installer will not be tracked by the managed installer heuristic and will need to be separately authorized in your WDAC policy. See how to [manage packaged apps with WDAC](manage-packaged-apps-with-windows-defender-application-control.md).
 
 - Executables that extract files and then attempt to execute may not be allowed by the managed installer heuristic.
 In some cases, it may be possible to also designate an application binary that performs such an operation as a managed installer.

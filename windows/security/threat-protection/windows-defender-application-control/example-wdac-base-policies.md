@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
 ms.date: 11/15/2019
@@ -37,5 +37,5 @@ When creating policies for use with Windows Defender Application Control (WDAC),
 | **AllowAll.xml** | This example policy is useful when creating a block list policy. All block policies should include rules allowing all other code to run and then add the DENY rules for your organization's needs. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
 | **AllowAll_EnableHVCI.xml** | This example policy can be used to enable [memory integrity](/windows/security/threat-protection/device-guard/memory-integrity) (also known as hypervisor-protected code integrity) using WDAC. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
 | **DenyAllAudit.xml** | This example policy should only be deployed in audit mode and can be used to audit all binaries running on critical systems or to comply with regulatory requirements. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
-| **Device Guard Signing Service (DGSS) DefaultPolicy.xml** | This example policy is available in audit mode. It includes the rules from DefaultWindows and adds rules to trust apps signed with your organization-specific certificates issued by the DGSS. | [DGSS in the Microsoft Store for Business](https://businessstore.microsoft.com/manage/settings/devices) |
+| **Device Guard Signing Service (DGSS) DefaultPolicy.xml** | This example policy is available in audit mode. It includes the rules from DefaultWindows and adds rules to trust apps signed with your organization-specific certificates issued by the DGSS. | [Device Guard Signing Service Nuget Package](https://www.nuget.org/packages/Microsoft.Acs.Dgss.Client) |
 | **MEM Configuration Manager** | Customers who use MEM Configuration Manager (MEMCM), formerly known as System Center Configuration Manager, can deploy a policy to a device using MEMCM's built-in integration with WDAC and then copy the resulting policy XML to use as a custom base policy. | %OSDrive%\Windows\CCM\DeviceGuard on a managed endpoint |
