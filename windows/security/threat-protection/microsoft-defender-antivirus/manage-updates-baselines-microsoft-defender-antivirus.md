@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 03/19/2021
+ms.date: 04/02/2021
 ms.technology: mde
 ---
 
@@ -425,6 +425,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2104.01</summary>
+
+&ensp;Package version: **1.1.2104.01**    
+&ensp;Platform version: **4.18.2102.4**   
+&ensp;Engine version: **1.18000.5**  
+&ensp;Signature version: **1.335.232.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2103.01</summary>
 
 &ensp;Package version: **1.1.2103.01**    
