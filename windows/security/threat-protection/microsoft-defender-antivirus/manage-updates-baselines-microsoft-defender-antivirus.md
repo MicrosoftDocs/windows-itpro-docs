@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 04/05/2021
+ms.date: 04/06/2021
 ms.technology: mde
 ---
 
@@ -440,11 +440,25 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2104.01</summary>
+
+&ensp;Package version: **1.1.2104.01**    
+&ensp;Platform version: **4.18.2102.4**   
+&ensp;Engine version: **1.1.18000.5**  
+&ensp;Signature version: **1.335.232.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2103.01</summary>
 
 &ensp;Package version: **1.1.2103.01**    
 &ensp;Platform version: **4.18.2101.9**   
-&ensp;Engine version: **1.17800.5**  
+&ensp;Engine version: **1.1.17800.5**  
 &ensp;Signature version: **1.331.2302.0**    
     
 ### Fixes
@@ -458,7 +472,7 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 &ensp;Package version: **1.1.2102.03**    
 &ensp;Platform version: **4.18.2011.6**   
-&ensp;Engine version: **1.17800.5**  
+&ensp;Engine version: **1.1.17800.5**  
 &ensp;Signature version: **1.331.174.0**    
     
 ### Fixes
@@ -472,7 +486,7 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 &ensp;Package version: **1.1.2101.02**    
 &ensp;Platform version: **4.18.2011.6**   
-&ensp;Engine version: **1.17700.4**  
+&ensp;Engine version: **1.1.17700.4**  
 &ensp;Signature version: **1.329.1796.0**    
     
 ### Fixes
@@ -486,7 +500,7 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 &ensp;Package version: **1.1.2012.01**    
 &ensp;Platform version: **4.18.2010.7**   
-&ensp;Engine version: **1.17600.5**  
+&ensp;Engine version: **1.1.17600.5**  
 &ensp;Signature version: **1.327.1991.0**    
     
 ### Fixes
@@ -500,7 +514,7 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 &ensp;Package version: **1.1.2011.02**    
 &ensp;Platform version: **4.18.2010.7**   
-&ensp;Engine version: **1.17600.5**  
+&ensp;Engine version: **1.1.17600.5**  
 &ensp;Signature version: **1.327.658.0**    
     
 ### Fixes
@@ -514,7 +528,7 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 &ensp;Package version: **1.1.2011.01**    
 &ensp;Platform version: **4.18.2009.7**  
-&ensp;Engine version: **1.17600.5**  
+&ensp;Engine version: **1.1.17600.5**  
 &ensp;Signature version: **1.327.344.0**    
     
 ### Fixes
@@ -528,7 +542,7 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 &ensp;Package version: **1.1.2011.01**    
 &ensp;Platform version: **4.18.2008.9**   
-&ensp;Engine version: **1.17400.5**  
+&ensp;Engine version: **1.1.17400.5**  
 &ensp;Signature version: **1.327.2216.0**    
     
 ### Fixes
