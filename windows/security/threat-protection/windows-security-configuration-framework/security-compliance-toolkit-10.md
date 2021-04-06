@@ -2,7 +2,7 @@
 title: Microsoft Security Compliance Toolkit 1.0 Guide
 description: This article describes how to use the Security Compliance Toolkit in your organization
 keywords: virtualization, security, malware
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
@@ -13,6 +13,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Microsoft Security Compliance Toolkit 1.0
@@ -54,7 +55,7 @@ The Security Compliance Toolkit consists of:
     -   Local Group Policy Object (LGPO) tool
 
 
-You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/).
+You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](/archive/blogs/secguide/).
 
 ## What is the Policy Analyzer tool?
 
@@ -66,7 +67,7 @@ The Policy Analyzer is a utility for analyzing and comparing sets of Group Polic
 
 Policy Analyzer lets you treat a set of GPOs as a single unit. This makes it easy to determine whether particular settings are duplicated across the GPOs or are set to conflicting values. Policy Analyzer also lets you capture a baseline and then compare it to a snapshot taken at a later time to identify changes anywhere across the set. 
 
-More information on the Policy Analyzer tool can be found on the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/22/new-tool-policy-analyzer/) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+More information on the Policy Analyzer tool can be found on the [Microsoft Security Guidance blog](/archive/blogs/secguide/new-tool-policy-analyzer) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
 
 ## What is the Local Group Policy Object (LGPO) tool?
 
@@ -76,4 +77,4 @@ LGPO.exe can import and apply settings from Registry Policy (Registry.pol) files
 It can export local policy to a GPO backup. 
 It can export the contents of a Registry Policy file to the “LGPO text” format that can then be edited, and can build a Registry Policy file from an LGPO text file.
 
-Documentation for the LGPO tool can be found on the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+Documentation for the LGPO tool can be found on the [Microsoft Security Guidance blog](/archive/blogs/secguide/lgpo-exe-local-group-policy-object-utility-v1-0) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).

@@ -49,7 +49,7 @@ Windows Update for Business provides management policies for several types of up
 - **Feature updates:** Previously referred to as "upgrades," feature updates contain not only security and quality revisions, but also significant feature additions and changes. Feature updates are released semi-annually in the fall and in the spring.
 - **Quality updates:** Quality updates are traditional operating system updates, typically released on the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates. Windows Update for Business also treats non-Windows updates (such as updates for Microsoft Office or Visual Studio) as quality updates. These non-Windows Updates are known as "Microsoft updates" and you can set devices to receive such updates (or not) along with their Windows updates.
 - **Driver updates:** Updates for non-Microsoft drivers that are relevant to your devices. Driver updates are on by default, but you can use Windows Update for Business policies to turn them off if you prefer. 
-- **Microsoft product updates**: Updates for other Microsoft products, such as Office. Product updates are off by default. You can turn them on by using Windows Update for Business policies.
+- **Microsoft product updates**: Updates for other Microsoft products, such as versions of Office that are installed by using Windows Installer (MSI). Versions of Office that are installed by using Click-to-Run can't be updated by using Windows Update for Business. Product updates are off by default. You can turn them on by using Windows Update for Business policies.
 
 
 ## Offering
@@ -67,7 +67,7 @@ The branch readiness level enables administrators to specify which channel of fe
 - Windows Insider Release Preview
 - Semi-Annual Channel
 
-Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel and Semi-Annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-Annual Channel. All deferral days are calculated against a release’s Semi-Annual Channel release date. For exact release dates, see [Windows Release Information](https://docs.microsoft.com/windows/release-information/). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. To use this policy to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
+Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel and Semi-Annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-Annual Channel. All deferral days are calculated against a release’s Semi-Annual Channel release date. For exact release dates, see [Windows Release Information](/windows/release-health/release-information). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. To use this policy to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
 
 #### Defer an update
 
@@ -188,7 +188,7 @@ The branch readiness level enables administrators to specify which channel of fe
     - Windows Insider Release Preview 
     - Semi-Annual Channel for released updates
  
-Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel and Semi-Annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-Annual Channel. All deferral days will be calculated against a release's Semi-Annual Channel release date. To see release dates, visit [Windows Release Information](https://docs.microsoft.com/windows/release-information/). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. In order to use this to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
+Prior to Windows 10, version 1903, there are two channels for released updates: Semi-Annual Channel and Semi-Annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-Annual Channel. All deferral days will be calculated against a release's Semi-Annual Channel release date. To see release dates, visit [Windows Release Information](/windows/release-health/release-information). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. In order to use this to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
 
 ### Recommendations
 
@@ -218,8 +218,4 @@ For more information about Update Compliance, see [Monitor Windows Updates using
 | ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | Deploy updates using Windows Update for Business (this topic) </br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md) |
-
-
-
-
+| ![done](images/checklistdone.png) | Deploy updates using Windows Update for Business (this topic) </br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |

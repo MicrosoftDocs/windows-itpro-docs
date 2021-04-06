@@ -1,17 +1,18 @@
 ---
 title: FAQ - Microsoft Defender Application Guard (Windows 10)
 description: Learn about the commonly asked questions and answers for Microsoft Defender Application Guard.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 11/03/2020
+ms.date: 01/21/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Frequently asked questions - Microsoft Defender Application Guard 
@@ -83,7 +84,7 @@ To trust a subdomain, you must precede your domain with two dots, for example: `
 
 ### Are there differences between using Application Guard on Windows Pro vs Windows Enterprise? 
 
-When using Windows Pro or Windows Enterprise, you have access to using Application Guard in Standalone Mode. However, when using Enterprise you have access to Application Guard in Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard). 
+When using Windows Pro or Windows Enterprise, you have access to using Application Guard in Standalone Mode. However, when using Enterprise you have access to Application Guard in Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](./install-md-app-guard.md). 
 
 ### Is there a size limit to the domain lists that I need to configure?
 
@@ -115,8 +116,8 @@ Application Guard might not work correctly on NTFS compressed volumes. If this i
 
 This is a known issue. To mitigate this you need to create two firewall rules.
 For guidance on how to create a firewall rule by using group policy, see:
-- [Create an inbound icmp rule](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule)
-- [Open Group Policy management console for Microsoft Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security)
+- [Create an inbound icmp rule](../windows-firewall/create-an-inbound-icmp-rule.md)
+- [Open Group Policy management console for Microsoft Defender Firewall](../windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md)
 
 First rule (DHCP Server):
 1. Program path: `%SystemRoot%\System32\svchost.exe`
@@ -146,7 +147,7 @@ There is a known issue such that if you change the Exploit Protection settings f
 
 ICS is enabled by default in Windows, and ICS must be enabled in order for Application Guard to function correctly. We do not recommend disabling ICS; however, you can disable ICS in part by using a Group Policy and editing registry keys.
 
-1. In the Group Policy setting called, *Prohibit use of Internet Connection Sharing on your DNS domain network*, set it to **Disabled**. 
+1. In the Group Policy setting, **Prohibit use of Internet Connection Sharing on your DNS domain network**, set it to **Disabled**. 
 
 2. Disable IpNat.sys from ICS load as follows: <br/> 
 `System\CurrentControlSet\Services\SharedAccess\Parameters\DisableIpNat = 1`
@@ -159,6 +160,28 @@ ICS is enabled by default in Windows, and ICS must be enabled in order for Appli
 
 5. Reboot the device.
 
+### Why doesn't the container fully load when device control policies are enabled?
+Allow-listed items must be configured as "allowed" in the Group Policy Object ensure AppGuard works properly. 
+
+Policy: Allow installation of devices that match any of these device IDs 
+- `SCSI\DiskMsft____Virtual_Disk____` 
+- `{8e7bd593-6e6c-4c52-86a6-77175494dd8e}\msvhdhba` 
+- `VMS_VSF` 
+- `root\Vpcivsp` 
+- `root\VMBus` 
+- `vms_mp` 
+- `VMS_VSP` 
+- `ROOT\VKRNLINTVSP`
+- `ROOT\VID` 
+- `root\storvsp` 
+- `vms_vsmp` 
+- `VMS_PP` 
+
+Policy: Allow installation of devices using drivers that match these device setup classes 
+- `{71a27cdd-812a-11d0-bec7-08002be2092f}`
+
+
+
 ## See also
 
-[Configure Microsoft Defender Application Guard policy settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)
+[Configure Microsoft Defender Application Guard policy settings](./configure-md-app-guard.md)

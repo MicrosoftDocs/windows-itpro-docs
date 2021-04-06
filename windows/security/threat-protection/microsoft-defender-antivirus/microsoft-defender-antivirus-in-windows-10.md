@@ -3,29 +3,27 @@ title: Next-generation protection in Windows 10, Windows Server 2016, and Window
 description: Learn how to manage, configure, and use Microsoft Defender Antivirus, built-in antimalware and antivirus protection.
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+ms.localizationpriority: high
 author: denisebmsft
 ms.author: deniseb
-ms.date: 11/12/2020
+ms.date: 12/16/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
+ms.technology: mde
 ---
 
 # Next-generation protection in Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016
-- Windows Server 2019
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 ## Microsoft Defender Antivirus: Your next-generation protection
 
@@ -46,8 +44,8 @@ Visit the [Microsoft Defender for Endpoint demo website](https://demo.wd.microso
 
 Microsoft Defender Antivirus has the same hardware requirements as of Windows 10. For more information, see the following resources:
 
-- [Minimum hardware requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
-- [Hardware component guidelines](https://docs.microsoft.com/windows-hardware/design/component-guidelines/components)
+- [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
+- [Hardware component guidelines](/windows-hardware/design/component-guidelines/components)
 
 ## Configure next-generation protection services
 
@@ -56,8 +54,8 @@ For information on how to configure next-generation protection services, see [Co
 > [!Note]  
 > Configuration and management is largely the same in Windows Server 2016 and Windows Server 2019, while running Microsoft Defender Antivirus; however, there are some differences. To learn more, see [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md).
 
-## Related articles
+## See also
 
+- [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md)
 - [Microsoft Defender Antivirus management and configuration](configuration-management-reference-microsoft-defender-antivirus.md)
-
 - [Evaluate Microsoft Defender Antivirus protection](evaluate-microsoft-defender-antivirus.md)

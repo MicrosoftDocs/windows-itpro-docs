@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: dulcemontemayor
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.reviewer: 
@@ -31,14 +31,14 @@ VPN profiles in Windows 10 can be configured to connect automatically on the lau
 
 The app identifier for a desktop app is a file path. The app identifier for a UWP app is a package family name.
 
-[Find a package family name (PFN) for per-app VPN configuration](https://docs.microsoft.com/intune/deploy-use/find-a-pfn-for-per-app-vpn)
+[Find a package family name (PFN) for per-app VPN configuration](/intune/deploy-use/find-a-pfn-for-per-app-vpn)
 
 
 ## Name-based trigger
 
 You can configure a domain name-based rule so that a specific domain name triggers the VPN connection.
  
-Name-based auto-trigger can be configured using the VPNv2/*ProfileName*/DomainNameInformationList/dniRowId/AutoTrigger setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
+Name-based auto-trigger can be configured using the VPNv2/*ProfileName*/DomainNameInformationList/dniRowId/AutoTrigger setting in the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp).
 
 There are four types of name-based triggers:
 
@@ -76,12 +76,12 @@ Should a management tool remove or add the same profile name back and set **Alwa
 
 This feature configures the VPN such that it would not get triggered if a user is on a trusted corporate network. The value of this setting is a list of DNS suffices. The VPN stack will look at the DNS suffix on the physical interface and if it matches any in the configured list and the network is private or provisioned by MDM, then VPN will not get triggered.
 
-Trusted network detection can be configured using the VPNv2/*ProfileName*/TrustedNetworkDetection setting in the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
+Trusted network detection can be configured using the VPNv2/*ProfileName*/TrustedNetworkDetection setting in the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp).
 
 
 ## Configure app-triggered VPN
 
-See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp) for XML configuration. 
 
 The following image shows associating an app to a VPN connection in a VPN Profile configuration policy using Microsoft Intune.
 

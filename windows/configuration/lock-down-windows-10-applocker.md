@@ -23,7 +23,7 @@ ms.topic: article
 
 -   Windows 10
 
-Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education, version 1703 and earlier, so that users can only run a few specific apps. The result is similar to [a kiosk device](set-up-a-device-for-anyone-to-use.md), but with multiple apps available. For example, you might set up a library computer so that users can search the catalog and browse the Internet, but can't run any other apps or change computer settings.
+Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education, version 1703 and earlier, so that users can only run a few specific apps. The result is similar to [a kiosk device](./kiosk-methods.md), but with multiple apps available. For example, you might set up a library computer so that users can search the catalog and browse the Internet, but can't run any other apps or change computer settings.
 
 >[!NOTE]
 >For devices running Windows 10, version 1709, we recommend the [multi-app kiosk method](lock-down-windows-10-to-specific-apps.md).
@@ -116,7 +116,7 @@ In addition to specifying the apps that users can run, you should also restrict 
 
      
 
-To learn more about locking down features, see [Customizations for Windows 10 Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=691442).
+To learn more about locking down features, see [Customizations for Windows 10 Enterprise](/windows-hardware/customize/enterprise/enterprise-custom-portal).
 
 ## Customize Start screen layout for the device (recommended)
 

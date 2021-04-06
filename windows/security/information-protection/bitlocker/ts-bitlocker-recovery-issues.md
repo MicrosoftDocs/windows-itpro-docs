@@ -21,7 +21,7 @@ ms.custom: bitlocker
 This article describes common issues that may prevent BitLocker from behaving as expected when you recover a drive, or that may cause BitLocker to start recovery unexpectedly. The article provides guidance to address these issues.
 
 > [!NOTE]
-> In this article, "recovery password" refers to the 48-digit recovery password and "recovery key" refers to 32-digit recovery key. For more information, see [BitLocker key protectors](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#bitlocker-key-protectors).
+> In this article, "recovery password" refers to the 48-digit recovery password and "recovery key" refers to 32-digit recovery key. For more information, see [BitLocker key protectors](./prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-key-protectors).
 
 ## Windows 10 prompts for a non-existing BitLocker recovery password
 
@@ -31,8 +31,8 @@ Windows 10 prompts you for a BitLocker recovery password. However, you did not c
 
 The BitLocker and Active Directory Domain Services (AD DS) FAQ addresses situations that may produce this symptom, and provides information about how to resolve the issue:
 
-- [What if BitLocker is enabled on a computer before the computer has joined the domain?](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-and-adds-faq#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain)
-- [What happens if the backup initially fails? Will BitLocker retry the backup?](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-and-adds-faq#what-happens-if-the-backup-initially-fails-will-bitlocker-retry-the-backup)
+- [What if BitLocker is enabled on a computer before the computer has joined the domain?](./bitlocker-and-adds-faq.md#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain)
+- [What happens if the backup initially fails? Will BitLocker retry the backup?](./bitlocker-and-adds-faq.md)
 
 ## The recovery password for a laptop was not backed up, and the laptop is locked
 
@@ -42,9 +42,9 @@ You have a Windows 10 Home-based laptop, and you have to recover its hard disk. 
 
 You can use either of the following methods to manually back up or synchronize an online client's existing recovery information:
 
-- Create a Windows Management Instrumentation (WMI) script that backs up the information. For more information, see [BitLocker Drive Encryption Provider](https://docs.microsoft.com/windows/win32/secprov/bitlocker-drive-encryption-provider).
+- Create a Windows Management Instrumentation (WMI) script that backs up the information. For more information, see [BitLocker Drive Encryption Provider](/windows/win32/secprov/bitlocker-drive-encryption-provider).
 
-- In an elevated Command Prompt window, use the [manage-bde](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde) command to back up the information.
+- In an elevated Command Prompt window, use the [manage-bde](/windows-server/administration/windows-commands/manage-bde) command to back up the information.
 
    For example, to back up all of the recovery information for the C: drive to AD DS, open an elevated Command Prompt window and run the following command:
 
@@ -108,7 +108,7 @@ This issue occurs if the Surface device TPM is configured to use Platform Config
 - Secure Boot is turned off.
 - PCR values have been explicitly defined, such as by Group Policy.
 
-Devices that support Connected Standby (also known as *InstantGO* or *Always On, Always Connected PCs*), including Surface devices, must use PCR 7 of the TPM. In its default configuration on such systems, BitLocker binds to PCR 7 and PCR 11 if PCR 7 and Secure Boot are correctly configured. For more information, see "About the Platform Configuration Register (PCR)" at [BitLocker Group Policy Settings](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj679890(v=ws.11)#about-the-platform-configuration-register-pcr)).
+Devices that support Connected Standby (also known as *InstantGO* or *Always On, Always Connected PCs*), including Surface devices, must use PCR 7 of the TPM. In its default configuration on such systems, BitLocker binds to PCR 7 and PCR 11 if PCR 7 and Secure Boot are correctly configured. For more information, see "About the Platform Configuration Register (PCR)" at [BitLocker Group Policy Settings](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj679890(v=ws.11)#about-the-platform-configuration-register-pcr)).
 
 ### Resolution
 
@@ -142,7 +142,7 @@ To do this, follow these steps:
    ```
    In these commands, \<*Password*\> is the BitLocker recovery password that you obtained in step 1, and \<*DriveLetter*> is the drive letter that is assigned to your operating system drive.  
    > [!NOTE]
-   > For more information about how to use this command, see [manage-bde: unlock](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde-unlock).
+   > For more information about how to use this command, see [manage-bde: unlock](/windows-server/administration/windows-commands/manage-bde-unlock).
 1. Restart the computer.
 1. When you are prompted, enter the BitLocker recovery password that you obtained in step 1.
 
@@ -160,7 +160,7 @@ To recover data from your Surface device if you cannot start Windows, follow ste
    In this command, \<*Password*\> is the BitLocker recovery password that you obtained in step 1 of [Step 1](#step-1), and \<*DriveLetter*> is the drive letter that is assigned to your operating system drive.  
 1. After the drive is unlocked, use the **copy** or **xcopy** command to copy the user data to another drive.  
    > [!NOTE]
-   > For more information about the these commands, see the [Windows commands](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands).
+   > For more information about the these commands, see the [Windows commands](/windows-server/administration/windows-commands/windows-commands).
   
 1. To reset your device by using a Surface recovery image, follow the instructions in the "How to reset your Surface using your USB recovery drive" section in [Creating and using a USB recovery drive](https://support.microsoft.com/help/4023512).  
 
@@ -185,7 +185,7 @@ To enable Secure Boot on a Surface device, follow these steps:
 To reset the PCR settings on the TPM, follow these steps:
 
 1. Disable any Group Policy Objects that configure the PCR settings, or remove the device from any groups that enforce such policies.  
-   For more information, see [BitLocker Group Policy settings](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings).
+   For more information, see [BitLocker Group Policy settings](./bitlocker-group-policy-settings.md).
 1. Suspend BitLocker. To do this, open an elevated Windows PowerShell window, and run the following cmdlet:
    ```ps
    Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
@@ -266,7 +266,7 @@ To resolve this issue, install the appropriate update on the affected device:
 
 ## Credential Guard/Device Guard on TPM 1.2: At every restart, BitLocker prompts for the recovery password and returns error 0xC0210000
 
-You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the device uses [Virtualization-based Security](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-vbs) features such as [Device Guard and Credential Guard](https://docs.microsoft.com/windows-hardware/drivers/bringup/device-guard-and-credential-guard). Every time that you start the device, the device enters BitLocker Recovery mode and you see error code 0xc0210000, and a message that resembles the following.
+You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the device uses [Virtualization-based Security](/windows-hardware/design/device-experiences/oem-vbs) features such as [Device Guard and Credential Guard](/windows-hardware/drivers/bringup/device-guard-and-credential-guard). Every time that you start the device, the device enters BitLocker Recovery mode and you see error code 0xc0210000, and a message that resembles the following.
 
 > Recovery
 > 
@@ -279,9 +279,9 @@ You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the
 
 ### Cause
 
-TPM 1.2 does not support Secure Launch. For more information, see [System Guard Secure Launch and SMM protection: Requirements Met by System Guard Enabled Machines](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection\#requirements-met-by-system-guard-enabled-machines)
+TPM 1.2 does not support Secure Launch. For more information, see [System Guard Secure Launch and SMM protection: Requirements Met by System Guard Enabled Machines](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 
-For more information about this technology, see [Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
+For more information about this technology, see [Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10](../../threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
 
 ### Resolution
 

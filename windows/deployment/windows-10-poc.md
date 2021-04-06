@@ -193,7 +193,7 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
     If one or more requirements are evaluated as **No** then the computer does not support installing Hyper-V.  However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the **Virtualization Enabled In Firmware** setting from **No** to **Yes**. The location of this setting will depend on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
 
-    You can also identify Hyper-V support using [tools](https://blogs.msdn.microsoft.com/taylorb/2008/06/19/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v/) provided by the processor manufacturer, the [msinfo32](https://technet.microsoft.com/library/cc731397.aspx) tool, or you can download the [coreinfo](https://technet.microsoft.com/sysinternals/cc835722) utility and run it, as shown in the following example:
+    You can also identify Hyper-V support using [tools](/archive/blogs/taylorb/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v) provided by the processor manufacturer, the [msinfo32](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731397(v=ws.11)) tool, or you can download the [coreinfo](/sysinternals/downloads/coreinfo) utility and run it, as shown in the following example:
 
     <pre style="overflow-y: visible">
     C:\>coreinfo -v
@@ -214,7 +214,7 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
 2. The Hyper-V feature is not installed by default. To install it, open an elevated Windows PowerShell window and type the following command:
 
-    <pre style="overflow-y: visible">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All</pre>
+    <pre style="overflow-y: visible">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All</pre>
 
     This command works on all operating systems that support Hyper-V, but on Windows Server operating systems you must type an additional command to add the Hyper-V Windows PowerShell module and the Hyper-V Manager console. This command will also install Hyper-V if it isn't already installed, so if desired you can just type the following command on Windows Server 2012 or 2016 instead of using the Enable-WindowsOptionalFeature command:
 
@@ -441,7 +441,7 @@ Notes:<BR>
 
 #### Prepare a generation 1 VM
 
-1. Download the [Disk2vhd utility](https://technet.microsoft.com/library/ee656415.aspx), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
+1. Download the [Disk2vhd utility](/sysinternals/downloads/disk2vhd), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
 
     >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
 
@@ -465,7 +465,7 @@ Notes:<BR>
 
 #### Prepare a generation 2 VM
 
-1. Download the [Disk2vhd utility](https://technet.microsoft.com/library/ee656415.aspx), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
+1. Download the [Disk2vhd utility](/sysinternals/downloads/disk2vhd), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
 
     >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
 
@@ -498,7 +498,7 @@ Notes:<BR>
 
 #### Prepare a generation 1 VM from a GPT disk
 
-1. Download the [Disk2vhd utility](https://technet.microsoft.com/library/ee656415.aspx), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
+1. Download the [Disk2vhd utility](/sysinternals/downloads/disk2vhd), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
 
     >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
 
@@ -527,7 +527,7 @@ Notes:<BR>
 <HR size="4">
 <strong><I>Enhanced session mode</I></strong>
 
-**Important**: Before proceeding, verify that you can take advantage of [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) when completing instructions in this guide. Enhanced session mode enables you to copy and paste the commands from the Hyper-V host to VMs, between VMs, and between RDP sessions. After copying some text, you can paste into a Windows PowerShell window by simply right-clicking. Before right-clicking, do not left click other locations as this can empty the clipboard. You can also copy and paste <U>files</U> directly from one computer to another by right-clicking and selecting copy on one computer, then right-clicking and selecting paste on another computer.
+**Important**: Before proceeding, verify that you can take advantage of [enhanced session mode](/windows-server/virtualization/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) when completing instructions in this guide. Enhanced session mode enables you to copy and paste the commands from the Hyper-V host to VMs, between VMs, and between RDP sessions. After copying some text, you can paste into a Windows PowerShell window by simply right-clicking. Before right-clicking, do not left click other locations as this can empty the clipboard. You can also copy and paste <U>files</U> directly from one computer to another by right-clicking and selecting copy on one computer, then right-clicking and selecting paste on another computer.
 
 To ensure that enhanced session mode is enabled on the Hyper-V host, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
@@ -542,8 +542,8 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 1. To add available space for the partition, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     <pre style="overflow-y: visible">
-    Resize-VHD –Path c:\VHD\2012R2-poc-2.vhd –SizeBytes 100GB
-    $x = (Mount-VHD –Path c:\VHD\2012R2-poc-2.vhd -passthru | Get-Disk | Get-Partition | Get-Volume).DriveLetter
+    Resize-VHD -Path c:\VHD\2012R2-poc-2.vhd -SizeBytes 100GB
+    $x = (Mount-VHD -Path c:\VHD\2012R2-poc-2.vhd -passthru | Get-Disk | Get-Partition | Get-Volume).DriveLetter
     Resize-Partition -DriveLetter $x -Size (Get-PartitionSupportedSize -DriveLetter $x).SizeMax
     </pre>
 
@@ -551,7 +551,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     <pre style="overflow-y: visible">
     Get-Volume -DriveLetter $x
-    Dismount-VHD –Path c:\VHD\2012R2-poc-2.vhd</pre>
+    Dismount-VHD -Path c:\VHD\2012R2-poc-2.vhd</pre>
 
 ### Configure Hyper-V
 
@@ -707,12 +707,12 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
 2. Click **Next** to accept the default settings, read the license terms and click **I accept**, provide an administrator password of <strong>pass@word1</strong>, and click **Finish**.
 3. Click **Ctrl+Alt+Del** in the upper left corner of the virtual machine connection window, and then sign in to DC1 using the Administrator account.
-4. Right-click **Start**, point to **Shut down or sign out**, and click **Sign out**. The VM connection will reset and a new connection dialog box will appear enabling you to choose a custom display configuration. Select a desktop size, click **Connect** and sign in again with the local Administrator account. Note: Signing in this way ensures that [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) is enabled. It is only necessary to do this the first time you sign in to a new VM.
+4. Right-click **Start**, point to **Shut down or sign out**, and click **Sign out**. The VM connection will reset and a new connection dialog box will appear enabling you to choose a custom display configuration. Select a desktop size, click **Connect** and sign in again with the local Administrator account. Note: Signing in this way ensures that [enhanced session mode](/windows-server/virtualization/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) is enabled. It is only necessary to do this the first time you sign in to a new VM.
 5. If DC1 is configured as described in this guide, it will currently be assigned an APIPA address, have a randomly generated hostname, and a single network adapter named "Ethernet." Open an elevated Windows PowerShell prompt on DC1 and type or paste the following commands to provide a new hostname and configure a static IP address and gateway:
 
     <pre style="overflow-y: visible">
     Rename-Computer DC1
-    New-NetIPAddress –InterfaceAlias Ethernet –IPAddress 192.168.0.1 –PrefixLength 24 -DefaultGateway 192.168.0.2
+    New-NetIPAddress -InterfaceAlias Ethernet -IPAddress 192.168.0.1 -PrefixLength 24 -DefaultGateway 192.168.0.2
     Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses 192.168.0.1,192.168.0.2
     </pre>
 
@@ -749,7 +749,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     netsh dhcp add securitygroups
     Restart-Service DHCPServer
     Add-DhcpServerInDC  dc1.contoso.com  192.168.0.1
-    Set-ItemProperty –Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ServerManager\Roles\12 –Name ConfigurationState –Value 2
+    Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ServerManager\Roles\12 -Name ConfigurationState -Value 2
     </pre>
 
 10. Next, add a DHCP scope and set option values:
@@ -785,7 +785,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     **Configure service and user accounts**
 
-    Windows 10 deployment with MDT and Microsoft Endpoint Configuration Manager requires specific accounts to perform some actions. Service accounts will be created to use for these tasks. A user account is also added in the contoso.com domain that can be used for testing purposes. In the test lab environment, passwords are set to never expire.
+    Windows 10 deployment with MDT and Microsoft Endpoint Manager requires specific accounts to perform some actions. Service accounts will be created to use for these tasks. A user account is also added in the contoso.com domain that can be used for testing purposes. In the test lab environment, passwords are set to never expire.
 
     >To keep this test lab relatively simple, we will not create a custom OU structure and set permissions. Required permissions are enabled by adding accounts to the Domain Admins group. To configure these settings in a production environment, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 
@@ -886,7 +886,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     <pre style="overflow-y: visible">
     Enable-VMIntegrationService -VMName PC1 -Name "Guest Service Interface"
-    Copy-VMFile "PC1" –SourcePath "C:\VHD\pc1.ps1"  –DestinationPath "C:\pc1.ps1" –CreateFullPath –FileSource Host
+    Copy-VMFile "PC1" -SourcePath "C:\VHD\pc1.ps1" -DestinationPath "C:\pc1.ps1" -CreateFullPath -FileSource Host
     </pre>
 
     >In order for this command to work properly, PC1 must be running the vmicguestinterface (Hyper-V Guest Service Interface) service. If this service is not enabled in this step, then the copy-VMFile command will fail. In this case, you can try updating integration services on the VM by mounting the Hyper-V Integration Services Setup (vmguest.iso), which is located in C:\Windows\System32 on Windows Server 2012 and 2012 R2 operating systems that are running the Hyper-V role service.
@@ -917,7 +917,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     <pre style="overflow-y: visible">
     Rename-Computer SRV1
-    New-NetIPAddress –InterfaceAlias Ethernet –IPAddress 192.168.0.2 –PrefixLength 24
+    New-NetIPAddress -InterfaceAlias Ethernet -IPAddress 192.168.0.2 -PrefixLength 24
     Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses 192.168.0.1,192.168.0.2
     Restart-Computer
     </pre>
@@ -1106,10 +1106,4 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
  
-
- 
-
-
-
-
 

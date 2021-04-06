@@ -17,10 +17,54 @@ ms.date: 11/19/2019
 
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
-The following diagram shows the AppLocker configuration service provider in tree format.
-
-![applocker csp](images/provisioning-csp-applocker.png)
-
+The following shows the AppLocker configuration service provider in tree format.
+```
+./Vendor/MSFT
+AppLocker
+----ApplicationLaunchRestrictions
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+----------------NonInteractiveProcessEnforcement
+------------MSI
+----------------Policy
+----------------EnforcementMode
+------------Script
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+------------DLL
+----------------Policy
+----------------EnforcementMode
+----------------NonInteractiveProcessEnforcement
+------------CodeIntegrity
+----------------Policy
+----EnterpriseDataProtection
+--------Grouping
+------------EXE
+----------------Policy
+------------StoreApps
+----------------Policy
+----LaunchControl
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+----FamilySafety
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+```
 <a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/AppLocker**  
 Defines the root node for the AppLocker configuration service provider.
 
@@ -165,7 +209,7 @@ Data type is Base64.
 Supported operations are Get, Add, Delete, and Replace.
 
 > [!NOTE]
-> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool) and added to the Applocker-CSP.
+> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)) command line tool) and added to the Applocker-CSP.
 
 <a href="" id="applocker-enterprisedataprotection"></a>**AppLocker/EnterpriseDataProtection**  
 Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
@@ -223,7 +267,7 @@ Supported operations are Get, Add, Delete, and Replace.
 
 You can pair a Windows Phone (Windows 10 Mobile, version 1511) to your desktop using the Device Portal on the phone to get the various types of information, including publisher name and product name of apps installed on the phone. This procedure describes pairing your phone to your desktop using WiFi.
 
-If this procedure does not work for you, try the other methods for pairing described in [Device Portal for Mobile](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal-mobile).
+If this procedure does not work for you, try the other methods for pairing described in [Device Portal for Mobile](/windows/uwp/debug-test-perf/device-portal-mobile).
 
 **To find Publisher and PackageFullName for apps installed on Windows 10 Mobile**
 
@@ -235,7 +279,7 @@ If this procedure does not work for you, try the other methods for pairing descr
 
     If you get a certificate error, continue to the web page.
 
-    If you get an error about not reaching the web page, then you should try the other methods for pairing described in [Device Portal for Mobile](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal-mobile).
+    If you get an error about not reaching the web page, then you should try the other methods for pairing described in [Device Portal for Mobile](/windows/uwp/debug-test-perf/device-portal-mobile).
 
 6.  On your phone under **Device discovery**, tap **Pair**. You will get a code (case sensitive).
 7.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
@@ -288,10 +332,10 @@ The following table show the mapping of information to the AppLocker publisher r
 
 Here is an example AppLocker publisher rule:
 
-``` syntax
-FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Reader" BinaryName="*">
+```xml
+<FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Reader" BinaryName="*">
   <BinaryVersionRange LowSection="*" HighSection="*" />
-  </FilePublisherCondition>
+</FilePublisherCondition>
 ```
 
 You can get the publisher name and product name of apps using a web API.
@@ -299,7 +343,9 @@ You can get the publisher name and product name of apps using a web API.
 **To find publisher and product name for Microsoft apps in Microsoft Store for Business**
 
 1.  Go to the Microsoft Store for Business website, and find your app. For example, Microsoft OneNote.
-2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https:<span><\span>//www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
+
+2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
+
 3.  In your browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values.
 
     <table>
@@ -313,25 +359,22 @@ You can get the publisher name and product name of apps using a web API.
     </thead>
     <tbody>
     <tr class="odd">
-    <td><p>https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata</p></td>
+    <td><p><code>https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata</code></p></td>
     </tr>
     </tbody>
     </table>
 
-
-
-~~~
 Here is the example for Microsoft OneNote:
 
 Request
 
-``` syntax
+```http
 https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata
 ```
 
 Result
 
-``` syntax
+```json
 {
   "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",
   "packageIdentityName": "Microsoft.Office.OneNote",
@@ -339,7 +382,6 @@ Result
   "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 }
 ```
-~~~
 
 <table>
 <colgroup>
@@ -1874,12 +1916,3 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
-
-
-
-
-
-
-
-

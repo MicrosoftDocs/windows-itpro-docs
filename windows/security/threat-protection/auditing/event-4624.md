@@ -2,7 +2,7 @@
 title: 4624(S) An account was successfully logged on. (Windows 10)
 description: Describes security event 4624(S) An account was successfully logged on.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4624(S): An account was successfully logged on.
@@ -156,7 +157,7 @@ This event generates when a logon session is created (on destination machine). I
 |  `9`       | `NewCredentials`    | A caller cloned its current token and specified new credentials for outbound connections. The new logon session has the same local identity, but uses different credentials for other network connections.                                                                                                                 |
 | `10`       | `RemoteInteractive` | A user logged on to this computer remotely using Terminal Services or Remote Desktop.                                                                                                                                                                                                                                      |
 | `11`       | `CachedInteractive` | A user logged on to this computer with network credentials that were stored locally on the computer. The domain controller was not contacted to verify the credentials.                                                                                                                                                    |
-| `12`       | `CashedRemoteInteractive` | Same as RemoteInteractive. This is used for internal auditing.                                                                                                                                                                                                                                                        |
+| `12`       | `CachedRemoteInteractive` | Same as RemoteInteractive. This is used for internal auditing.                                                                                                                                                                                                                                                        |
 | `13`       | `CachedUnlock` | Workstation logon.                                                                                                                                                                                                                                                                                                             |
 
 -   **Restricted Admin Mode** \[Version 2\] \[Type = UnicodeString\]**:** Only populated for **RemoteInteractive** logon type sessions. This is a Yes/No flag indicating if the credentials provided were passed using Restricted Admin mode. Restricted Admin mode was added in Win8.1/2012R2 but this flag was added to the event in Win10.
@@ -165,7 +166,7 @@ This event generates when a logon session is created (on destination machine). I
 
     If not a **RemoteInteractive** logon, then this will be "-" string.
 
--   **Virtual Account** \[Version 2\] \[Type = UnicodeString\]**:** a “Yes” or “No” flag, which indicates if the account is a virtual account (e.g., "[Managed Service Account](https://technet.microsoft.com/library/dd560633(v=ws.10).aspx)"), which was introduced in Windows 7 and Windows Server 2008 R2 to provide the ability to identify the account that a given Service uses, instead of just using "NetworkService".
+-   **Virtual Account** \[Version 2\] \[Type = UnicodeString\]**:** a “Yes” or “No” flag, which indicates if the account is a virtual account (e.g., "[Managed Service Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd560633(v=ws.10))"), which was introduced in Windows 7 and Windows Server 2008 R2 to provide the ability to identify the account that a given Service uses, instead of just using "NetworkService".
 
 -   **Elevated Token** \[Version 2\] \[Type = UnicodeString\]**:** a “Yes” or “No” flag. If “Yes” then the session this event represents is elevated and has administrator privileges.
 
@@ -259,7 +260,7 @@ This event generates when a logon session is created (on destination machine). I
 
 -   **Transited Services** \[Type = UnicodeString\] \[Kerberos-only\]**:** the list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process. S4U is a Microsoft extension to the Kerberos Protocol to allow an application service to obtain a Kerberos service ticket on behalf of a user – most commonly done by a front-end website to access an internal resource on behalf of a user. For more information about S4U, see <https://msdn.microsoft.com/library/cc246072.aspx>
 
--   **Package Name (NTLM only)** \[Type = UnicodeString\]**:** The name of the LAN Manager sub-package ([NTLM-family](https://msdn.microsoft.com/library/cc236627.aspx) protocol name) that was used during logon. Possible values are:
+-   **Package Name (NTLM only)** \[Type = UnicodeString\]**:** The name of the LAN Manager sub-package ([NTLM-family](/openspecs/windows_protocols/ms-nlmp/c50a85f0-5940-42d8-9e82-ed206902e919) protocol name) that was used during logon. Possible values are:
 
     -   “NTLM V1”
 
@@ -269,7 +270,7 @@ This event generates when a logon session is created (on destination machine). I
 
         Only populated if “**Authentication Package” = “NTLM”**.
 
--   **Key Length** \[Type = UInt32\]**:** the length of [NTLM Session Security](https://msdn.microsoft.com/library/cc236650.aspx) key. Typically it has 128 bit or 56 bit length. This parameter is always 0 if “**Authentication Package” = “Kerberos”**, because it is not applicable for Kerberos protocol. This field will also have “0” value if Kerberos was negotiated using **Negotiate** authentication package.
+-   **Key Length** \[Type = UInt32\]**:** the length of [NTLM Session Security](/openspecs/windows_protocols/ms-nlmp/99d90ff4-957f-4c8a-80e4-5bfe5a9a9832) key. Typically it has 128 bit or 56 bit length. This parameter is always 0 if “**Authentication Package” = “Kerberos”**, because it is not applicable for Kerberos protocol. This field will also have “0” value if Kerberos was negotiated using **Negotiate** authentication package.
 
 ## Security Monitoring Recommendations
 
@@ -313,4 +314,3 @@ For 4624(S): An account was successfully logged on.
 -   If you monitor for potentially malicious software, or software that is not authorized to request logon actions, monitor this event for **Process Name**.
 
 -   If you have a trusted logon processes list, monitor for a **Logon Process** that is not from the list.
-

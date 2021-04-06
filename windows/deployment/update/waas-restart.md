@@ -73,7 +73,7 @@ To configure active hours using Group Policy, go to **Computer Configuration\Adm
 
 ### Configuring active hours with MDM
 
-MDM uses the [Update/ActiveHoursStart and Update/ActiveHoursEnd](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_ActiveHoursEnd)  and [Update/ActiveHoursMaxRange](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-activehoursmaxrange) settings in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) to configure active hours.
+MDM uses the [Update/ActiveHoursStart and Update/ActiveHoursEnd](/windows/client-management/mdm/policy-configuration-service-provider#Update_ActiveHoursEnd)  and [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-configuration-service-provider#update-activehoursmaxrange) settings in the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) to configure active hours.
 
 ### Configuring active hours through Registry
 
@@ -97,7 +97,7 @@ With Windows 10, version 1703, administrators can specify the max active hours r
 
 To configure active hours max range through Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and open the **Specify active hours range for auto-restarts**.
 
-To configure active hours max range through MDM, use [**Update/ActiveHoursMaxRange**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-activehoursmaxrange).
+To configure active hours max range through MDM, use [**Update/ActiveHoursMaxRange**](/windows/client-management/mdm/policy-configuration-service-provider#update-activehoursmaxrange).
 
 ## Limit restart delays
 
@@ -113,20 +113,20 @@ Administrators can override the default behavior for the auto-restart required n
 
 To configure this behavior through Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and select **Configure auto-restart required notification for updates**. When configured to **2 - User Action**, a user that gets this notification must manually dismiss it.
 
-To configure this behavior through MDM, use [**Update/AutoRestartRequiredNotificationDismissal**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-AutoRestartRequiredNotificationDismissal)
+To configure this behavior through MDM, use [**Update/AutoRestartRequiredNotificationDismissal**](/windows/client-management/mdm/policy-configuration-service-provider#update-AutoRestartRequiredNotificationDismissal)
 
 You can also configure the period prior to an update that this notification will show up on. The default value is 15 minutes.
 
 To change it through Group Policy, select **Configure auto-restart-reminder notifications for updates** under **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and select the period in minutes.
 
-To change it through MDM, use [**Update/AutoRestartNotificationSchedule**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-AutoRestartNotificationSchedule).
+To change it through MDM, use [**Update/AutoRestartNotificationSchedule**](/windows/client-management/mdm/policy-configuration-service-provider#update-AutoRestartNotificationSchedule).
 
 
 In some cases, you don't need a notification to show up.
 
 To do so through Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and select **Turn off auto-restart notifications for update installations**.
 
-To do so through MDM, use [**Update/SetAutoRestartNotificationDisable**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-setautorestartnotificationdisable).
+To do so through MDM, use [**Update/SetAutoRestartNotificationDisable**](/windows/client-management/mdm/policy-configuration-service-provider#update-setautorestartnotificationdisable).
 
 ### Scheduled auto-restart warnings
 
@@ -134,7 +134,7 @@ Since users are not able to postpone a scheduled restart once the deadline has b
 
 To configure both through Group Policy, find **Configure auto-restart warning notifications schedule for updates** under **Computer Configuration\Administrative Templates\Windows Components\Windows Update**. The warning reminder can be configured by **Reminder (hours)** and the warning prior to an imminent auto-restart can be configured by **Warning (mins)**.
 
-In MDM, the warning reminder is configured using [**Update/ScheduleRestartWarning**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-ScheduleRestartWarning) and the auto-restart imminent warning is configured using [**Update/ScheduleImminentRestartWarning**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-ScheduleImminentRestartWarning).
+In MDM, the warning reminder is configured using [**Update/ScheduleRestartWarning**](/windows/client-management/mdm/policy-configuration-service-provider#update-ScheduleRestartWarning) and the auto-restart imminent warning is configured using [**Update/ScheduleImminentRestartWarning**](/windows/client-management/mdm/policy-configuration-service-provider#update-ScheduleImminentRestartWarning).
 
 ### Engaged restart
 
@@ -147,7 +147,7 @@ The following settings can be adjusted for engaged restart:
 
 In Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and pick **Specify Engaged restart transition and notification schedule for updates**.
 
-In MDM, use [**Update/EngagedRestartTransitionSchedule**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-EngagedRestartTransitionSchedule), [**Update/EngagedRestartSnoozeSchedule**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-EngagedRestartSnoozeSchedule) and [**Update/EngagedRestartDeadline**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-EngagedRestartDeadline) respectively.
+In MDM, use [**Update/EngagedRestartTransitionSchedule**](/windows/client-management/mdm/policy-configuration-service-provider#update-EngagedRestartTransitionSchedule), [**Update/EngagedRestartSnoozeSchedule**](/windows/client-management/mdm/policy-configuration-service-provider#update-EngagedRestartSnoozeSchedule) and [**Update/EngagedRestartDeadline**](/windows/client-management/mdm/policy-configuration-service-provider#update-EngagedRestartDeadline) respectively.
 
 ## Group Policy settings for restart
 
@@ -200,10 +200,9 @@ There are three different registry combinations for controlling restart behavior
 
 - [Update Windows 10 in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)
-- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
+- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)

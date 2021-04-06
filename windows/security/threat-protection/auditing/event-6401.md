@@ -2,7 +2,7 @@
 title: 6401(-) BranchCache Received invalid data from a peer. Data discarded. (Windows 10)
 description: Describes security event 6401(-) BranchCache Received invalid data from a peer. Data discarded.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 6401(-): BranchCache: Received invalid data from a peer. Data discarded.
@@ -20,7 +21,7 @@ ms.author: dansimp
 -   Windows Server 2016
 
 
-[BranchCache](https://technet.microsoft.com/library/dd425028.aspx) events are outside the scope of this document.
+[BranchCache](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127252(v=ws.11)) events are outside the scope of this document.
 
 There is no example of this event in this document.
 
@@ -41,4 +42,3 @@ There is no example of this event in this document.
 ## Security Monitoring Recommendations
 
 -   There is no recommendation for this event in this document.
-

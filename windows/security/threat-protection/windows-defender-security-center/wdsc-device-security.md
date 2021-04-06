@@ -3,7 +3,7 @@ title: Device security in the Windows Security app
 description: Use the Device security section to manage security built into your device, including virtualization-based security.
 keywords: device security, device guard, wdav, smartscreen, antivirus, wdsc, exploit, protection, hide
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,6 +13,7 @@ ms.author: dansimp
 ms.date: 10/02/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Device security
@@ -36,7 +37,7 @@ This can only be done in Group Policy.
 >
 >You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
@@ -44,7 +45,7 @@ This can only be done in Group Policy.
 
 4.  Open the **Hide the Device security area** setting and set it to **Enabled**. Click **OK**.
 
-5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+5. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy). 
 
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
@@ -59,7 +60,7 @@ If you don't want users to be able to click the **Clear TPM** button in the Wind
 >
 >You must have Windows 10, version 1809 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
-1.  On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
@@ -67,12 +68,12 @@ If you don't want users to be able to click the **Clear TPM** button in the Wind
 
 4.  Open the **Disable the Clear TPM button** setting and set it to **Enabled**. Click **OK**.
 
-5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+5. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy). 
 
 ## Hide the TPM Firmware Update recommendation
 If you don't want users to see the recommendation to update TPM firmware, you can disable it.
 
-1.  On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
@@ -80,12 +81,12 @@ If you don't want users to see the recommendation to update TPM firmware, you ca
 
 4.  Open the **Hide the TPM Firmware Update recommendation** setting and set it to **Enabled**. Click **OK**.
 
-5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+5. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy). 
 
 ## Disable Memory integrity switch
 If you don't want users to be able to change the Hypervisor Control Integrity (HVCI), or memory integrity, setting on their computers, you can disable the **Memory integrity** switch.
 
-1.  On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
@@ -93,4 +94,4 @@ If you don't want users to be able to change the Hypervisor Control Integrity (H
 
 4.  Open the **Disable Memory integrity switch** setting and set it to **Enabled**. Click **OK**.
 
-5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+5. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).

@@ -19,7 +19,7 @@ ms.date: 10/02/2018
 > Applies to:  Microsoft Edge on Windows 10 and Windows 10 Mobile
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
 
 Microsoft Edge is the new, default web browser for Windows 10, helping you to experience modern web standards, better performance, improved security, and increased reliability. Microsoft Edge lets you stay up-to-date through the Microsoft Store and to manage your enterprise through Group Policy or your mobile device management (MDM) tools.
 
@@ -35,7 +35,7 @@ Some of the components might also need additional system resources. Check the co
 |        Item        |                                                                                                                           Minimum requirements                                                                                                                            |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Computer/processor |                                                                                                        1 gigahertz (GHz) or faster (32-bit (x86) or 64-bit (x64))                                                                                                         |
-|  Operating system  | <ul><li>Windows 10 (32-bit or 64-bit)</li><li>Windows 10 Mobile</li></ul><p><strong>Note</strong><br> For specific Windows 10 Mobile requirements, see the [Minimum hardware requirements for Windows 10 Mobile](https://go.microsoft.com/fwlink/p/?LinkID=699266) topic. |
+|  Operating system  | <ul><li>Windows 10 (32-bit or 64-bit)</li><li>Windows 10 Mobile</li></ul><p><strong>Note</strong><br> For specific Windows 10 Mobile requirements, see the [Minimum hardware requirements for Windows 10 Mobile](/windows-hardware/design/minimum/minimum-hardware-requirements-overview) topic. |
 |       Memory       |                                                                                              <ul><li>Windows 10 (32-bit) - 1 GB</li><li>Windows 10 (64-bit) - 2 GB</li></ul>                                                                                              |
 |  Hard drive space  |                                                                                             <ul><li>Windows 10 (32-bit) - 16 GB</li><li>Windows 10 (64-bit) - 20 GB</li></ul>                                                                                             |
 |     DVD drive      |                                                                                                               DVD-ROM drive (if installing from a DVD-ROM)                                                                                                                |

@@ -24,7 +24,7 @@ Volume-licensed media is available for each release of Windows 10 in the Volume 
 
 ## Dynamic Update
 
-Whenever installation of a feature update starts (whether from media or an environment connected to Windows Update), *Dynamic Update* is one of the first steps. Windows 10 Setup contacts a Microsoft endpoint to fetch Dynamic Update packages, and then applies those updates to your operating system installation media. The update packages includes the following kinds of updates:
+Whenever installation of a feature update starts (whether from media or an environment connected to Windows Update), *Dynamic Update* is one of the first steps. Windows 10 Setup contacts a Microsoft endpoint to fetch Dynamic Update packages, and then applies those updates to your operating system installation media. The update packages include the following kinds of updates:
 
 - Updates to Setup.exe binaries or other files that Setup uses for feature updates
 - Updates for the "safe operating system" (SafeOS) that is used for the Windows recovery environment
@@ -44,9 +44,9 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 
 The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows in **bold** the key items to search for or look for in the results. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
 
-|To find this Dynamic Update packages, search for or check the results here-->  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
+|To find this Dynamic Update packages, search for or check the results here  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
 |---------|---------|---------|---------|
-|Safe OS Dynamic Update      | 2019-08 Dynamic Update...        | Windows 10 Dynamic Update,Windows **Safe OS Dynamic Update**         | ComponentUpdate:        |
+|Safe OS Dynamic Update      | 2019-08 Dynamic Update...        | Windows 10 Dynamic Update, Windows **Safe OS Dynamic Update**         | ComponentUpdate:        |
 |Setup Dynamic Update     | 2019-08 Dynamic Update...         | Windows 10 Dynamic Update        | **SetupUpdate**        |
 |Latest cumulative update     | 2019-08 **Cumulative Update for Windows 10**    |  Windows 10       |  Install this update to resolve issues in Windows...       |
 |Servicing stack Dynamic Update     | 2019-09 **Servicing Stack Update for Windows 10**        |  Windows 10...       | Install this update to resolve issues in Windows...        |
@@ -80,6 +80,9 @@ This table shows the correct sequence for applying the various tasks to the file
 |Add Optional Components     |         |         |  23       |
 |Add .NET and .NET cumulative updates     |         |        | 24        |
 |Export image     | 8        |  17       | 25        |
+
+> [!NOTE]
+> Starting in February 2021, the latest cumulative update and servicing stack update will be combined and distributed in the Microsoft Update Catalog as a new combined cumulative update. For Steps 1, 9, and 18 that require the servicing stack update for updating the installation media, you should use the combined cumulative update. For more information on the combined cumulative update, see [Servicing stack updates](./servicing-stack-updates.md).
 
 ### Multiple Windows editions
 
@@ -346,7 +349,7 @@ Move-Item -Path $WORKING_PATH"\boot2.wim" -Destination $MEDIA_NEW_PATH"\sources\
 
 ### Update the main operating system
 
-For this next phase, there is no need to mount the main operating system, since it was already mounted in the previous scripts. This script starts by applying the servicing stack Dynamic Update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it leverages `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod).
+For this next phase, there is no need to mount the main operating system, since it was already mounted in the previous scripts. This script starts by applying the servicing stack Dynamic Update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it leverages `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod).
 
 Now is the time to enable other Optional Components or add other Features on Demand. If such a feature has an associated cumulative update (for example, .NET), this is the time to apply those. The script then proceeds with applying the latest cumulative update. Finally, the script cleans and exports the image.
 

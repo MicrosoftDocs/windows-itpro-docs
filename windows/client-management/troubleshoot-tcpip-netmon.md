@@ -17,9 +17,9 @@ manager: dansimp
 In this topic, you will learn how to use Microsoft Network Monitor 3.4, which is a tool for capturing network traffic.
 
 > [!NOTE]
-> Network Monitor is the archived protocol analyzer and is no longer under development. **Microsoft Message Analyzer** is the replacement for Network Monitor. For more details, see [Microsoft Message Analyzer Operating Guide](https://docs.microsoft.com/message-analyzer/microsoft-message-analyzer-operating-guide).
+> Network Monitor is the archived protocol analyzer and is no longer under development. **Microsoft Message Analyzer** is the replacement for Network Monitor. For more details, see [Microsoft Message Analyzer Operating Guide](/message-analyzer/microsoft-message-analyzer-operating-guide).
 
-To get started, [download and run NM34_x64.exe](https://www.microsoft.com/download/details.aspx?id=4865). When you install Network Monitor, it installs its driver and hooks it to all the network adapters installed on the device. You can see the same on the adapter properties, as shown in the following image.
+To get started, [download Network Monitor tool](https://www.microsoft.com/download/details.aspx?id=4865). When you install Network Monitor, it installs its driver and hooks it to all the network adapters installed on the device. You can see the same on the adapter properties, as shown in the following image:
 
 ![Adapters](images/nm-adapters.png)
 
@@ -61,9 +61,9 @@ Network traces which are collected using the **netsh** commands built in to Wind
 
 ## More information
 
-[Intro to Filtering with Network Monitor 3.0](https://blogs.technet.microsoft.com/netmon/2006/10/17/intro-to-filtering-with-network-monitor-3-0/)<br>
+[Intro to Filtering with Network Monitor 3.0](/archive/blogs/netmon/intro-to-filtering-with-network-monitor-3-0)<br>
 [Network Monitor Filter Examples](https://blogs.technet.microsoft.com/rmilne/2016/08/11/network-monitor-filter-examples/)<br>
 [Network Monitor Wireless Filtering](https://social.technet.microsoft.com/wiki/contents/articles/1900.network-monitor-wireless-filtering.aspx)<br>
 [Network Monitor TCP Filtering](https://social.technet.microsoft.com/wiki/contents/articles/1134.network-monitor-tcp-filtering.aspx)<br>
 [Network Monitor Conversation Filtering](https://social.technet.microsoft.com/wiki/contents/articles/1829.network-monitor-conversation-filtering.aspx)<br>
-[How to setup and collect network capture using Network Monitor tool](https://blogs.technet.microsoft.com/msindiasupp/2011/08/10/how-to-setup-and-collect-network-capture-using-network-monitor-tool/)<br>
+[How to setup and collect network capture using Network Monitor tool](/archive/blogs/msindiasupp/how-to-setup-and-collect-network-capture-using-network-monitor-tool)<br>

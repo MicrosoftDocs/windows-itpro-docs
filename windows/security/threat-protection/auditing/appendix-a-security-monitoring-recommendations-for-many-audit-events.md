@@ -2,7 +2,7 @@
 title: Appendix A, Security monitoring recommendations for many audit events (Windows 10)
 description: Learn about recommendations for the type of monitoring required for certain classes of security audit events.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # Appendix A: Security monitoring recommendations for many audit events

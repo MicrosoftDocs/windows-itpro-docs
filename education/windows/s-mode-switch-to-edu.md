@@ -56,7 +56,7 @@ Tenant-wide Windows 10 Pro in S mode > Pro Education in S mode <BR>
 Tenant-wide Windows 10 Pro > Pro Education
 
 > [!IMPORTANT]
-> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to roll back this kind of switch is through a [bare metal recovery (BMR)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
+> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to roll back this kind of switch is through a [bare metal recovery (BMR)](/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
 
 ### Devices running Windows 10, version 1709
 

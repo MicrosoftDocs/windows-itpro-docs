@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -41,7 +41,7 @@ This topic contains information about the following types of service accounts:
 
 A managed service account is designed to isolate domain accounts in crucial applications, such as Internet Information Services (IIS), and eliminate the need for an administrator to manually administer the service principal name (SPN) and credentials for the accounts.
 
-To use managed service accounts, the server on which the application or service is installed must be running at least Windows Server 2008 R2. One managed service account can be used for services on a single computer. Managed service accounts cannot be shared between multiple computers, and they cannot be used in server clusters where a service is replicated on multiple cluster nodes. For this scenario, you must use a group managed service account. For more information, see [Group Managed Service Accounts Overview](https://technet.microsoft.com/library/hh831782(v=ws.11).aspx).
+To use managed service accounts, the server on which the application or service is installed must be running at least Windows Server 2008 R2. One managed service account can be used for services on a single computer. Managed service accounts cannot be shared between multiple computers, and they cannot be used in server clusters where a service is replicated on multiple cluster nodes. For this scenario, you must use a group managed service account. For more information, see [Group Managed Service Accounts Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831782(v=ws.11)).
 
 In addition to the enhanced security that is provided by having individual accounts for critical services, there are four important administrative benefits associated with managed service accounts:
 
@@ -82,7 +82,7 @@ A 64-bit architecture is required to run the Windows PowerShell commands that ar
 A managed service account is dependent on encryption types supported by Kerberos. When a client computer authenticates to a server by using Kerberos protocol, the domain controller creates a Kerberos service ticket that is protected with encryption that the domain controller and the server support. The domain controller uses the account’s **msDS-SupportedEncryptionTypes** attribute to determine what encryption the server supports, and if there is no attribute, it assumes that the client computer does not support stronger encryption types. The Advanced Encryption Standard (AES) should always be explicitly configured for managed service accounts. If computers that host the managed service account are configured to not support RC4, authentication will always fail.
 
 **Note**  
-Introduced in Windows Server 2008 R2, the Data Encryption Standard (DES) is disabled by default. For more information about supported encryption types, see [Changes in Kerberos Authentication](https://technet.microsoft.com/library/dd560670(WS.10).aspx).
+Introduced in Windows Server 2008 R2, the Data Encryption Standard (DES) is disabled by default. For more information about supported encryption types, see [Changes in Kerberos Authentication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd560670(v=ws.10)).
 
  
 
@@ -100,7 +100,7 @@ Virtual accounts were introduced in Windows Server 2008 R2 and Windows 7, and
 
 Services that run as virtual accounts access network resources by using the credentials of the computer account in the format &lt;domain\_name&gt;\\&lt;computer\_name&gt;$.
 
-For information about how to configure and use virtual service accounts, see [Service Accounts Step-by-Step Guide](https://technet.microsoft.com/library/dd548356.aspx).
+For information about how to configure and use virtual service accounts, see [Service Accounts Step-by-Step Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd548356(v=ws.10)).
 
 ### Software requirements
 
@@ -113,6 +113,6 @@ The following table provides links to additional resources that are related to s
 
 | Content type  | References  |
 |---------------|-------------|
-| **Product evaluation** | [What's New for Managed Service Accounts](https://technet.microsoft.com/library/hh831451(v=ws.11).aspx)<br>[Getting Started with Group Managed Service Accounts](https://technet.microsoft.com/library/jj128431(v=ws.11).aspx) |
+| **Product evaluation** | [What's New for Managed Service Accounts](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831451(v=ws.11))<br>[Getting Started with Group Managed Service Accounts](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj128431(v=ws.11)) |
 | **Deployment** | [Windows Server 2012: Group Managed Service Accounts - Ask Premier Field Engineering (PFE) Platforms - Site Home - TechNet Blogs](https://blogs.technet.com/b/askpfeplat/archive/2012/12/17/windows-server-2012-group-managed-service-accounts.aspx) |
-| **Related technologies** | [Security Principals](security-principals.md)<br>[What's new in Active Directory Domain Services](https://technet.microsoft.com/library/mt163897.aspx) |
+| **Related technologies** | [Security Principals](security-principals.md)<br>[What's new in Active Directory Domain Services](/windows-server/identity/whats-new-active-directory-domain-services) |

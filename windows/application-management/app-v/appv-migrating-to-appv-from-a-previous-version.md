@@ -1,7 +1,7 @@
 ---
 title: Migrating to App-V from a Previous Version (Windows 10)
 description: Learn how to migrate to Microsoft Application Virtualization (App-V) for Windows 10 from a previous version.
-author: lomayor
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -259,4 +259,4 @@ There is no direct method to upgrade to a full App-V infrastructure. Use the inf
 
 - [Operations for App-V](appv-operations.md)
 
-- [A simplified Microsoft App-V 5.1 Management Server upgrade procedure](https://blogs.technet.microsoft.com/appv/2015/09/23/a-simplified-microsoft-app-v-5-1-management-server-upgrade-procedure/)
+- [A simplified Microsoft App-V 5.1 Management Server upgrade procedure](/archive/blogs/appv/a-simplified-microsoft-app-v-5-1-management-server-upgrade-procedure)

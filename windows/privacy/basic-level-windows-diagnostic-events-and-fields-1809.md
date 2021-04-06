@@ -1,5 +1,5 @@
 ---
-description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
+description: Use this article to learn more about what Windows 10 version 1809 diagnostic data is gathered at the basic level.
 title: Windows 10, version 1809 basic diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
 ms.prod: w10
@@ -311,7 +311,6 @@ The following fields are available:
 - **DatasourceApplicationFile_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_20H1**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **DatasourceApplicationFile_RS2**  An ID for the system, calculated by hashing hardware identifiers.
 - **DatasourceApplicationFile_RS3**  The count of the number of this particular object type present on this device.
@@ -327,7 +326,6 @@ The following fields are available:
 - **DatasourceDevicePnp_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceDevicePnp_20H1**  The count of the number of this particular object type present on this device.
 - **DatasourceDevicePnp_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceDevicePnp_RS1**  The total DataSourceDevicePnp objects targeting Windows 10 version 1607 on this device.
 - **DatasourceDevicePnp_RS2**  The count of the number of this particular object type present on this device.
 - **DatasourceDevicePnp_RS3**  The count of the number of this particular object type present on this device.
@@ -343,7 +341,6 @@ The following fields are available:
 - **DatasourceDriverPackage_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceDriverPackage_20H1**  The count of the number of this particular object type present on this device.
 - **DatasourceDriverPackage_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceDriverPackage_RS1**  The total DataSourceDriverPackage objects targeting Windows 10 version 1607 on this device.
 - **DatasourceDriverPackage_RS2**  The total DataSourceDriverPackage objects targeting Windows 10, version 1703 on this device.
 - **DatasourceDriverPackage_RS3**  The count of the number of this particular object type present on this device.
@@ -359,7 +356,6 @@ The following fields are available:
 - **DataSourceMatchingInfoBlock_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_20H1**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_RS1**  The total DataSourceMatchingInfoBlock objects targeting Windows 10 version 1607 on this device.
 - **DataSourceMatchingInfoBlock_RS2**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_RS3**  The count of the number of this particular object type present on this device.
@@ -375,7 +371,6 @@ The following fields are available:
 - **DataSourceMatchingInfoPassive_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_20H1**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_RS1**  The total DataSourceMatchingInfoPassive objects targeting Windows 10 version 1607 on this device.
 - **DataSourceMatchingInfoPassive_RS2**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_RS3**  The count of the number of this particular object type present on this device.
@@ -391,7 +386,6 @@ The following fields are available:
 - **DataSourceMatchingInfoPostUpgrade_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_20H1**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS1**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1607 on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS2**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1703 on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS3**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1709 on this device.
@@ -407,7 +401,6 @@ The following fields are available:
 - **DatasourceSystemBios_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceSystemBios_20H1**  The count of the number of this particular object type present on this device.
 - **DatasourceSystemBios_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceSystemBios_RS1**  The total DatasourceSystemBios objects targeting Windows 10 version 1607 present on this device.
 - **DatasourceSystemBios_RS2**  The total DatasourceSystemBios objects targeting Windows 10 version 1703 present on this device.
 - **DatasourceSystemBios_RS3**  The total DatasourceSystemBios objects targeting Windows 10 version 1709 present on this device.
@@ -423,7 +416,6 @@ The following fields are available:
 - **DecisionApplicationFile_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_20H1**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_RS1**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_RS2**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_RS3**  The count of the number of this particular object type present on this device.
@@ -439,7 +431,6 @@ The following fields are available:
 - **DecisionDevicePnp_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_20H1**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_RS1**  The total DecisionDevicePnp objects targeting Windows 10 version 1607 on this device.
 - **DecisionDevicePnp_RS2**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_RS3**  The count of the number of this particular object type present on this device.
@@ -455,7 +446,6 @@ The following fields are available:
 - **DecisionDriverPackage_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_20H1**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_RS1**  The total DecisionDriverPackage objects targeting Windows 10 version 1607 on this device.
 - **DecisionDriverPackage_RS2**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_RS3**  The count of the number of this particular object type present on this device.
@@ -471,7 +461,6 @@ The following fields are available:
 - **DecisionMatchingInfoBlock_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_20H1**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_RS1**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1607 present on this device.
 - **DecisionMatchingInfoBlock_RS2**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1703 present on this device.
 - **DecisionMatchingInfoBlock_RS3**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1709 present on this device.
@@ -487,7 +476,6 @@ The following fields are available:
 - **DecisionMatchingInfoPassive_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_20H1**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_RS1**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1607 on this device.
 - **DecisionMatchingInfoPassive_RS2**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1703 on this device.
 - **DecisionMatchingInfoPassive_RS3**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1803 on this device.
@@ -503,7 +491,6 @@ The following fields are available:
 - **DecisionMatchingInfoPostUpgrade_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_20H1**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS1**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1607 on this device.
 - **DecisionMatchingInfoPostUpgrade_RS2**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1703 on this device.
 - **DecisionMatchingInfoPostUpgrade_RS3**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1709 on this device.
@@ -519,7 +506,6 @@ The following fields are available:
 - **DecisionMediaCenter_19H1Setup**  The total DecisionMediaCenter objects targeting the next release of Windows on this device.
 - **DecisionMediaCenter_20H1**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_RS1**  The total DecisionMediaCenter objects targeting Windows 10 version 1607 present on this device.
 - **DecisionMediaCenter_RS2**  The total DecisionMediaCenter objects targeting Windows 10 version 1703 present on this device.
 - **DecisionMediaCenter_RS3**  The total DecisionMediaCenter objects targeting Windows 10 version 1709 present on this device.
@@ -535,7 +521,6 @@ The following fields are available:
 - **DecisionSystemBios_19H1Setup**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
 - **DecisionSystemBios_20H1**  The count of the number of this particular object type present on this device.
 - **DecisionSystemBios_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionSystemBios_RS1**  The total DecisionSystemBios objects targeting Windows 10 version 1607 on this device.
 - **DecisionSystemBios_RS2**  The total DecisionSystemBios objects targeting Windows 10 version 1703 on this device.
 - **DecisionSystemBios_RS3**  The total DecisionSystemBios objects targeting Windows 10 version 1709 on this device.
@@ -548,7 +533,6 @@ The following fields are available:
 - **DecisionSystemBios_TH2**  The count of the number of this particular object type present on this device.
 - **DecisionSystemProcessor_RS2**  The count of the number of this particular object type present on this device.
 - **DecisionTest_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionTest_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionTest_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **InventoryApplicationFile**  The count of the number of this particular object type present on this device.
 - **InventoryDeviceContainer**  A count of device container objects in cache.
@@ -578,7 +562,6 @@ The following fields are available:
 - **Wmdrm_19H1Setup**  The total Wmdrm objects targeting the next release of Windows on this device.
 - **Wmdrm_20H1**  The count of the number of this particular object type present on this device.
 - **Wmdrm_20H1Setup**  The count of the number of this particular object type present on this device.
-- **Wmdrm_21H1Setup**  The count of the number of this particular object type present on this device.
 - **Wmdrm_RS1**  An ID for the system, calculated by hashing hardware identifiers.
 - **Wmdrm_RS2**  An ID for the system, calculated by hashing hardware identifiers.
 - **Wmdrm_RS3**  An ID for the system, calculated by hashing hardware identifiers.

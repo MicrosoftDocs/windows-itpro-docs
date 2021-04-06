@@ -3,7 +3,7 @@ title: Authorize reputable apps with the Intelligent Security Graph (ISG) (Windo
 description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 03/10/2020
+ms.technology: mde
 ---
 
 # Authorize reputable apps with the Intelligent Security Graph (ISG) 
@@ -26,7 +27,7 @@ ms.date: 03/10/2020
 
 Application execution control can be difficult to implement in enterprises that do not have processes to effectively control the deployment of applications centrally through an IT managed system. In such environments, users are empowered to acquire the applications they need for work, making accounting for all the applications that would need to be authorized for execution control a daunting task.  
 
-Windows 10, version 1709 (also known as the Windows 10 Fall Creators Update) provides a new option, known as the Microsoft Intelligent Security Graph authorization, that allows IT administrators to automatically authorize applications that the Microsoft Intelligent Security Graph recognizes as having known good reputation. The Microsoft Intelligent Security Graph option helps IT organizations take a significant first step towards going from having no application control at all to a simple means of preventing the execution of unknown and known bad software. To learn more about the Microsoft Intelligent Security Graph, see the Security section in [Major services and features in Microsoft Graph](https://docs.microsoft.com/graph/overview-major-services).
+Windows 10, version 1709 (also known as the Windows 10 Fall Creators Update) provides a new option, known as the Microsoft Intelligent Security Graph authorization, that allows IT administrators to automatically authorize applications that the Microsoft Intelligent Security Graph recognizes as having known good reputation. The Microsoft Intelligent Security Graph option helps IT organizations take a significant first step towards going from having no application control at all to a simple means of preventing the execution of unknown and known bad software. To learn more about the Microsoft Intelligent Security Graph, see the Security section in [Major services and features in Microsoft Graph](/graph/overview-major-services).
 
 ## How does the integration between WDAC and the Intelligent Security Graph work? 
 
@@ -39,7 +40,7 @@ WDAC periodically re-queries the reputation data on a file. Additionally, enterp
 >[!NOTE]
 >Admins should make sure there is a WDAC policy in place to allow the system to boot and run any other authorized applications that may not be classified as being known good by the Intelligent Security Graph, such as custom line-of-business (LOB) apps. Since the Intelligent Security Graph is powered by global prevalence data, internal LOB apps may not be recognized as being known good. Other mechanisms like managed installer and explicit rules will help cover internal applications. Both Microsoft Endpoint Manager Configuration Manager (MEMCM) and Microsoft Endpoint Manager Intune (MEM Intune) can be used to create and push a WDAC policy to your client machines.  
 
-Other examples of WDAC policies are available in `C:\Windows\schemas\CodeIntegrity\ExamplePolicies` and can help authorize Windows OS components, WHQL signed drivers and all Store apps. Admins can reference and customize them as needed for their Windows Defender Application Control deployment or [create a custom WDAC policy](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy). 
+Other examples of WDAC policies are available in `C:\Windows\schemas\CodeIntegrity\ExamplePolicies` and can help authorize Windows OS components, WHQL signed drivers and all Store apps. Admins can reference and customize them as needed for their Windows Defender Application Control deployment or [create a custom WDAC policy](./create-initial-default-policy.md). 
 
 ## Configuring Intelligent Security Graph authorization for Windows Defender Application Control 
 
@@ -105,4 +106,4 @@ The Microsoft Intelligent Security Graph heuristics do not authorize kernel mode
 In some cases, the code integrity logs where WDAC errors and warnings are written will contain error events for native images generated for .NET assemblies. Typically, the error is functionally benign as a blocked native image will result in the corresponding assembly being re-interpreted. Review for functionality and performance for the related applications using the native images maybe necessary in some cases. 
 
 >[!NOTE]
-> A rule that explicitly denies or allows a file will take precedence over that file's reputation data. MEM Intune's built-in WDAC support includes the option to trust apps with good reputation via the Microsoft Intelligent Security Graph, but it has no option to add explicit allow or deny rules. In most circumstances, customers enforcing application control need to deploy a custom WDAC policy (which can include the Microsoft Intelligent Security Graph option if desired) using [Intune's OMA-URI functionality](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune#using-a-custom-oma-uri-profile).
+> A rule that explicitly denies or allows a file will take precedence over that file's reputation data. MEM Intune's built-in WDAC support includes the option to trust apps with good reputation via the Microsoft Intelligent Security Graph, but it has no option to add explicit allow or deny rules. In most circumstances, customers enforcing application control need to deploy a custom WDAC policy (which can include the Microsoft Intelligent Security Graph option if desired) using [Intune's OMA-URI functionality](./deploy-windows-defender-application-control-policies-using-intune.md#using-a-custom-oma-uri-profile).

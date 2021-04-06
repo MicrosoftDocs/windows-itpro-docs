@@ -24,7 +24,7 @@ ms.topic: article
 >Due to [naming changes](waas-overview.md#naming-changes), older terms like CB and CBB might still be displayed in some of our products, such as in Group Policy or the registry. If you encounter these terms, "CB" refers to the Semi-Annual Channel (Targeted)--which is no longer used--while "CBB" refers to the Semi-Annual Channel.
 
 
-WSUS is a Windows Server role available in the Windows Server operating systems. It provides a single hub for Windows updates within an organization. WSUS allows companies not only to defer updates but also to selectively approve them, choose when they’re delivered, and determine which individual devices or groups of devices receive them. WSUS provides additional control over Windows Update for Business but does not provide all the scheduling options and deployment flexibility that Microsoft Endpoint Configuration Manager provides.
+WSUS is a Windows Server role available in the Windows Server operating systems. It provides a single hub for Windows updates within an organization. WSUS allows companies not only to defer updates but also to selectively approve them, choose when they’re delivered, and determine which individual devices or groups of devices receive them. WSUS provides additional control over Windows Update for Business but does not provide all the scheduling options and deployment flexibility that Microsoft Endpoint Manager provides.
 
 When you choose WSUS as your source for Windows updates, you use Group Policy to point Windows 10 client devices to the WSUS server for their updates. From there, updates are periodically downloaded to the WSUS server and managed, approved, and deployed through the WSUS administration console or Group Policy, streamlining enterprise update management. If you’re currently using WSUS to manage Windows updates in your environment, you can continue to do so in Windows 10. 
 
@@ -40,12 +40,12 @@ To be able to use WSUS to manage and deploy Windows 10 feature updates, you must
 
 > [!IMPORTANT]
 > Both [KB 3095113](https://support.microsoft.com/kb/3095113) and [KB 3159706](https://support.microsoft.com/kb/3159706) are included in the **Security Monthly Quality Rollup** starting in July 2017. This means you might not see KB 3095113 and KB 3159706 as installed updates since they might have been installed with a rollup. However, if you need either of these updates, we recommend installing a **Security Monthly Quality Rollup** released after **October 2017** since they contain an additional WSUS update to decrease memory utilization on WSUS's clientwebservice.
->If you have synced either of these updates prior to the security monthly quality rollup, you can experience problems. To recover from this, see [How to Delete Upgrades in WSUS](https://blogs.technet.microsoft.com/wsus/2016/01/29/how-to-delete-upgrades-in-wsus/).
+>If you have synced either of these updates prior to the security monthly quality rollup, you can experience problems. To recover from this, see [How to Delete Upgrades in WSUS](/archive/blogs/wsus/how-to-delete-upgrades-in-wsus).
 
 
 ## WSUS scalability
 
-To use WSUS to manage all Windows updates, some organizations may need access to WSUS from a perimeter network, or they might have some other complex scenario. WSUS is highly scalable and configurable for organizations of any size or site layout. For specific information about scaling WSUS, including upstream and downstream server configuration, branch offices, WSUS load balancing, and other complex scenarios, see [Choose a Type of WSUS Deployment](https://technet.microsoft.com/library/cc720448%28v=ws.10%29.aspx).
+To use WSUS to manage all Windows updates, some organizations may need access to WSUS from a perimeter network, or they might have some other complex scenario. WSUS is highly scalable and configurable for organizations of any size or site layout. For specific information about scaling WSUS, including upstream and downstream server configuration, branch offices, WSUS load balancing, and other complex scenarios, see [Choose a Type of WSUS Deployment](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720448(v=ws.10)).
  
 
 
@@ -87,7 +87,7 @@ When using WSUS to manage updates on Windows client devices, start by configurin
    > Use Regedit.exe to check that the following key is not enabled, because it can break Windows Store connectivity: Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations
     
    > [!NOTE]
-   > There are three other settings for automatic update download and installation dates and times. This is simply the option this example uses. For more examples of how to control automatic updates and other related policies, see [Configure Automatic Updates by Using Group Policy](https://technet.microsoft.com/library/cc720539%28v=ws.10%29.aspx). 
+   > There are three other settings for automatic update download and installation dates and times. This is simply the option this example uses. For more examples of how to control automatic updates and other related policies, see [Configure Automatic Updates by Using Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720539(v=ws.10)). 
     
 10. Right-click the **Specify intranet Microsoft update service location** setting, and then select **Edit**. 
 
@@ -337,7 +337,7 @@ Now that you have the **All Windows 10 Upgrades** view, complete the following s
 | ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or Deploy Windows 10 updates using Windows Server Update Services (this topic)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md) |
+| ![done](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or Deploy Windows 10 updates using Windows Server Update Services (this topic)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
 
 
 
@@ -350,12 +350,11 @@ Now that you have the **All Windows 10 Upgrades** view, complete the following s
 - [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Configure BranchCache for Windows 10 updates](waas-branchcache.md) 
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
-- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
+- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service)
 - [Manage device restarts after updates](waas-restart.md)

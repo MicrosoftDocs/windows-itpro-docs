@@ -27,7 +27,7 @@ The overlay does not mirror the entire volume, but dynamically grows to keep tra
 >[!NOTE]
 >UWF fully supports the NTFS system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume. 
 
-[Learn more about the Unified Write Filter feature.](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter)
+[Learn more about the Unified Write Filter feature.](/windows-hardware/customize/enterprise/unified-write-filter)
 
 
 ## Applies to

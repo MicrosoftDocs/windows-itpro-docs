@@ -4,7 +4,7 @@ description: An overview of password policies for Windows and links to informati
 ms.assetid: aec1220d-a875-4575-9050-f02f9c54a3b6
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Password Policy
@@ -26,7 +27,7 @@ An overview of password policies for Windows and links to information for each p
 
 In many operating systems, the most common method to authenticate a user's identity is to use a secret passphrase or password. A secure network environment requires all users to use strong passwords, which have at least eight characters and include a combination of letters, numbers, and symbols. These passwords help prevent the compromise of user accounts and administrative accounts by unauthorized users who use manual methods or automated tools to guess weak passwords. Strong passwords that are changed regularly reduce the likelihood of a successful password attack.
 
-Introduced in Windows Server 2008 R2 and Windows Server 2008, Windows supports fine-grained password policies. This feature provides organizations with a way to define different password and account lockout policies for different sets of users in a domain. Fine-grained password policies apply only to user objects (or inetOrgPerson objects if they are used instead of user objects) and global security groups. For more details, see [AD DS Fine-Grained Password and Account Lockout Policy Step-by-Step Guide](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770842(v=ws.10)).
+Introduced in Windows Server 2008 R2 and Windows Server 2008, Windows supports fine-grained password policies. This feature provides organizations with a way to define different password and account lockout policies for different sets of users in a domain. Fine-grained password policies apply only to user objects (or inetOrgPerson objects if they are used instead of user objects) and global security groups. For more details, see [AD DS Fine-Grained Password and Account Lockout Policy Step-by-Step Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770842(v=ws.10)).
 
 To apply a fine-grained password policy to users of an OU, you can use a shadow group. A shadow group is a global security group that is logically mapped to an OU to enforce a fine-grained password policy. You add users of the OU as members of the newly created shadow group and then apply the fine-grained password policy to this shadow group. You can create additional shadow groups for other OUs as needed. If you move a user from one OU to another, you must update the membership of the corresponding shadow groups.
 
@@ -56,5 +57,4 @@ The following topics provide a discussion of password policy implementation and 
 ## Related topics
 
 - [Configure security policy settings](how-to-configure-security-policy-settings.md)
- 
  

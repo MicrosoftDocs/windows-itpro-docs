@@ -4,7 +4,7 @@ description: This topic describes the result of applying AppLocker rule exceptio
 ms.assetid: e6bb349f-ee60-4c8d-91cd-6442f2d0eb9c
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Understanding AppLocker rule exceptions

@@ -73,7 +73,6 @@ The following methodology was used to derive these network endpoints:
 ||The following endpoints are used for location data. If you turn off traffic for this endpoint, apps cannot use location data.|TLS v1.2|inference.location.live.net|
 |Maps|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-offlinemaps)|
 ||The following endpoints are used to check for updates to maps that have been downloaded for offline use. If you turn off traffic for this endpoint, offline maps will not be updated.|HTTP|*maps.windows.com|
-|| The following endpoints are used to check for updates to maps that have been downloaded for offline use.|HTTP|fs.microsoft.com*|
 |Microsoft Account|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-microsoft-account)|
 ||The following endpoints are used for Microsoft accounts to sign in. If you turn off traffic for these endpoints, users cannot sign in with Microsoft accounts. |TLS v1.2|*login.live.com|
 |Microsoft Edge|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#13-microsoft-edge)|
@@ -138,4 +137,4 @@ To view endpoints for non-Enterprise Windows 10 editions, see:
 ## Related links
 
 - [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)
-- [Network infrastructure requirements for Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
+- [Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)

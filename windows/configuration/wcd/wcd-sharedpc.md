@@ -36,13 +36,13 @@ Use these settings to configure settings for accounts allowed on the shared PC.
 | DiskLevelDeletion  | A number between 0 and 100  | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account deletion.  |
 | EnableAccountManager  | True or false  | Set as **True** to enable automatic account management. If this is not set to true, no automatic account management will be done.  |
 | InactiveThreshold  | Number  | If you set **DeletionPolicy** to **Delete at disk space threshold and inactive threshold**, set the number of days after which an account that has not signed in will be deleted.  |
-| KioskModeAUMID  | String  | Set an Application User Model ID (AUMID) to enable the kiosk account on the sign-in screen. A new account will be created and will use assigned access to only run the app specified by the AUMID. Note that the app must be installed on the PC. Set the name of the account using **KioskModeUserTileDisplayText**, or a default name will be used. [Find the Application User Model ID of an installed app](https://msdn.microsoft.com/library/dn449300.aspx)  |
+| KioskModeAUMID  | String  | Set an Application User Model ID (AUMID) to enable the kiosk account on the sign-in screen. A new account will be created and will use assigned access to only run the app specified by the AUMID. Note that the app must be installed on the PC. Set the name of the account using **KioskModeUserTileDisplayText**, or a default name will be used. [Find the Application User Model ID of an installed app](/previous-versions/windows/embedded/dn449300(v=winembedded.82))  |
 | KioskModeUserTileDisplayText  | String  | Sets the display text on the kiosk account if **KioskModeAUMID** has been set.  |
 
 
 ## EnableSharedPCMode
 
-Set as **True**. If this is not set to **True**, shared PC mode is not turned on and none of the other settings apply. This setting controls this API: [IsEnabled](https://docs.microsoft.com/uwp/api/windows.system.profile.sharedmodesettings).
+Set as **True**. If this is not set to **True**, shared PC mode is not turned on and none of the other settings apply. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings).
 
 Some of the remaining settings in SharedPC are optional, but we strongly recommend that you also set **EnableAccountManager** to **True**.
 
@@ -54,8 +54,8 @@ Use these settings to configure policies for shared PC mode.
 | --- | --- | --- |
 | MaintenanceStartTime  | A number between 0 and 1440  | By default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value.  |
 | MaxPageFileSizeMB  | A number between 1024 and 2048  | Adjusts the maximum page file size in MB. This can be used to fine-tune page file behavior, especially on low end PCs.  |
-| RestrictLocalStorage  | True or false  | Set as **True** to restrict the user from saving or viewing local storage when using File Explorer. This setting controls this API: [ShouldAvoidLocalStorage](https://docs.microsoft.com/uwp/api/windows.system.profile.sharedmodesettings)  |
-| SetEduPolicies  | True or false  | Set to **True** for PCs that will be used in a school. For more information, see [Windows 10 configuration recommendations for education customers](https://docs.microsoft.com/education/windows/configure-windows-for-education). This setting controls this API: [IsEducationEnvironment](https://docs.microsoft.com/uwp/api/windows.system.profile.educationsettings)  |
+| RestrictLocalStorage  | True or false  | Set as **True** to restrict the user from saving or viewing local storage when using File Explorer. This setting controls this API: [ShouldAvoidLocalStorage](/uwp/api/windows.system.profile.sharedmodesettings)  |
+| SetEduPolicies  | True or false  | Set to **True** for PCs that will be used in a school. For more information, see [Windows 10 configuration recommendations for education customers](/education/windows/configure-windows-for-education). This setting controls this API: [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings)  |
 | SetPowerPolicies  | True or false  | When set as **True**:</br></br>- Prevents users from changing power settings</br>- Turns off hibernate</br>- Overrides all power state transitions to sleep (e.g. lid close)  |
 | SignInOnResume  | True or false  | This setting specifies if the user is required to sign in with a password when the PC wakes from sleep.  |
 | SleepTimeout  | Number  | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.  |
@@ -63,4 +63,3 @@ Use these settings to configure policies for shared PC mode.
 ## Related topics
 
 - [Set up shared or guest PC](../set-up-shared-or-guest-pc.md)
-

@@ -5,13 +5,14 @@ ms.assetid: 733263E5-7FD1-45D2-914A-184B9E3E6A3F
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: dulcemontemayor
 ms.date: 02/28/2019
 ms.localizationpriority: medium
+ms.technology: mde
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection
@@ -40,7 +41,7 @@ Here's an approximate scaling guide for WEF events:
 | 5,000 - 50,000      | SEM                        |
 | 50,000+             | Hadoop/HDInsight/Data Lake |
  
-Event generation on a device must be enabled either separately or as part of the GPO for the baseline WEF implementation, including enabling of disabled event logs and setting channel permissions. For more info, see [Appendix C - Event channel settings (enable and channel access) methods](#bkmk-appendixc). This is because WEF is a passive system with regards to the event log. It cannot change the size of event log files, enable disabled event channels, change channel permissions, or adjust a security audit policy. WEF only queries event channels for existing events. Additionally, having event generation already occurring on a device allows for more complete event collection building a complete history of system activity. Otherwise, you'll be limited to the speed of GPO and WEF subscription refresh cycles to make changes to what is being generated on the device. On modern devices, enabling additional event channels and expanding the size of event log files has not resulted in noticeable performance differences.
+Event generation on a device must be enabled either separately or as part of the GPO for the baseline WEF implementation, including enabling of disabled event logs and setting channel permissions. For more info, see [Appendix C - Event channel settings (enable and channel access) methods](#bkmk-appendixc). This is because WEF is a passive system regarding the event log. It cannot change the size of event log files, enable disabled event channels, change channel permissions, or adjust a security audit policy. WEF only queries event channels for existing events. Additionally, having event generation already occurring on a device allows for more complete event collection building a complete history of system activity. Otherwise, you'll be limited to the speed of GPO and WEF subscription refresh cycles to make changes to what is being generated on the device. On modern devices, enabling additional event channels and expanding the size of event log files has not resulted in noticeable performance differences.
 
 For the minimum recommended audit policy and registry system ACL settings, see [Appendix A - Minimum recommended minimum audit policy](#bkmk-appendixa) and [Appendix B - Recommended minimum registry system ACL policy](#bkmk-appendixb).
 
@@ -122,7 +123,7 @@ This table outlines the built-in delivery options:
 | Minimize bandwidth | This option ensures that the use of network bandwidth for event delivery is strictly controlled. It is an appropriate choice if you want to limit the frequency of network connections made to deliver events. It uses push delivery mode and sets a batch timeout of 6 hours. In addition, it uses a heartbeat interval of 6 hours. |
 | Minimize latency | This option ensures that events are delivered with minimal delay. It is an appropriate choice if you are collecting alerts or critical events. It uses push delivery mode and sets a batch timeout of 30 seconds. |
  
-For more info about delivery options, see [Configure Advanced Subscription Settings](https://technet.microsoft.com/library/cc749167.aspx).
+For more info about delivery options, see [Configure Advanced Subscription Settings](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749167(v=ws.11)).
 
 The primary difference is in the latency which events are sent from the client. If none of the built-in options meet your requirements you can set Custom event delivery options for a given subscription from an elevated command prompt:
 
@@ -146,7 +147,7 @@ Yes. If you desire a High-Availability environment, simply configure multiple WE
 
 ### <a href="" id="what-are-the-wec-server-s-limitations-"></a>What are the WEC server’s limitations?
 
-There are three factors that limit the scalability of WEC servers. The general rule for a stable WEC server on commodity hardware is “10k x 10k” – meaning, no more than 10,000 concurrently active WEF Clients per WEC server and no more than 10,000 events/second average event volume.
+There are three factors that limit the scalability of WEC servers. The general rule for a stable WEC server on commodity hardware is planning for a total of 3,000 events per second on average for all configured subscriptions.
 
 -   **Disk I/O**. The WEC server does not process or validate the received event, but rather buffers the received event and then logs it to a local event log file (EVTX file). The speed of logging to the EVTX file is limited by the disk write speed. Isolating the EVTX file to its own array or using high speed disks can increase the number of events per second that a single WEC server can receive.
 -   **Network Connections**. While a WEF source does not maintain a permanent, persistent connection to the WEC server, it does not immediately disconnect after sending its events. This means that the number of WEF sources that can simultaneously connect to the WEC server is limited to the open TCP ports available on the WEC server.
@@ -654,10 +655,8 @@ Here are the minimum steps for WEF to operate:
 
 You can get more info with the following links:
 
--   [Event Selection](https://msdn.microsoft.com/library/aa385231.aspx)
--   [Event Queries and Event XML](https://msdn.microsoft.com/library/bb399427.aspx)
--   [Event Query Schema](https://msdn.microsoft.com/library/aa385760.aspx)
--   [Windows Event Collector](https://msdn.microsoft.com/library/windows/desktop/bb427443.aspx)
--   [4625(F): An account failed to log on](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4625)
-
-
+-   [Event Selection](/previous-versions//aa385231(v=vs.85))
+-   [Event Queries and Event XML](/previous-versions/bb399427(v=vs.90))
+-   [Event Query Schema](/windows/win32/wes/queryschema-schema)
+-   [Windows Event Collector](/windows/win32/wec/windows-event-collector)
+-   [4625(F): An account failed to log on](./auditing/event-4625.md)

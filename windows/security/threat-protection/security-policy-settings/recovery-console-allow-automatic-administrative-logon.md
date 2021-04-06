@@ -4,7 +4,7 @@ description: Best practices, location, values, policy management, and security c
 ms.assetid: be2498fc-48f4-43f3-ad09-74664e45e596
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Recovery console: Allow automatic administrative logon

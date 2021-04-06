@@ -2,7 +2,7 @@
 title: 5159(F) The Windows Filtering Platform has blocked a bind to a local port. (Windows 10)
 description: Describes security event 5159(F) The Windows Filtering Platform has blocked a bind to a local port.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5159(F): The Windows Filtering Platform has blocked a bind to a local port.
@@ -133,7 +134,7 @@ This event is logged if the Windows Filtering Platform has blocked a bind to a l
 
     <img src="images/filters-xml-file.png" alt="Filters.xml file illustration" width="840" height="176" />
 
--   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
+-   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](/windows/win32/fwp/application-layer-enforcement--ale-) layer name.
 
 -   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find a specific Windows Filtering Platform layer ID, run the following command: **netsh wfp show state**. As a result of this command, the **wfpstate.xml** file will be generated. Open this file and find the specific substring with the required layer ID (**&lt;layerId&gt;**)**,** for example:
 
@@ -142,4 +143,3 @@ This event is logged if the Windows Filtering Platform has blocked a bind to a l
 ## Security Monitoring Recommendations
 
 -   There is no recommendation for this event in this document.
-

@@ -2,7 +2,7 @@
 title: 4734(S) A security-enabled local group was deleted. (Windows 10)
 description: Describes security event 4734(S) A security-enabled local group was deleted.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4734(S): A security-enabled local group was deleted.
@@ -113,7 +114,7 @@ This event generates on domain controllers, member servers, and workstations.
 
     -   For a local group, this field will contain the name of the computer to which this new group belongs, for example: “Win81”.
 
-    -   [Built-in groups](https://technet.microsoft.com/library/dn169025(v=ws.10).aspx): Builtin
+    -   [Built-in groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dn169025(v=ws.10)): Builtin
 
 **Additional Information:**
 
@@ -128,4 +129,3 @@ For 4734(S): A security-enabled local group was deleted.
 -   If you have a list of critical local or domain security groups in the organization, and need to specifically monitor these groups for any change, especially group deletion, monitor events with the “**Group\\Group Name”** values that correspond to the critical local or domain security groups. Examples of critical local or domain groups are built-in local administrators group, domain admins, enterprise admins, and so on.
 
 -   If you need to monitor each time a local or domain security group is deleted, to see who deleted it and when, monitor this event. Typically, this event is used as an informational event, to be reviewed if needed.
-

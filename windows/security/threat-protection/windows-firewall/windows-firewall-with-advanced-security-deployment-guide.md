@@ -4,7 +4,7 @@ description: Use this guide to deploy Windows Defender Firewall with Advanced Se
 ms.assetid: 56b51b97-1c38-481e-bbda-540f1216ad56
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Windows Defender Firewall with Advanced Security deployment overview

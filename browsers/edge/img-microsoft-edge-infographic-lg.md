@@ -11,8 +11,7 @@ author: dansimp
 
 # Microsoft Edge Infographic
 
-Return to: [Browser: Microsoft Edge and Internet Explorer 11](enterprise-guidance-using-microsoft-edge-and-ie11.md)<br>
+Return to: [Browser: Microsoft Edge and Internet Explorer 11](./emie-to-improve-compatibility.md)<br>
 Download image: [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/download/details.aspx?id=53892)
 
 ![Full-sized Microsoft Edge infographic](images/img-microsoft-edge-infographic-lg.png)
-

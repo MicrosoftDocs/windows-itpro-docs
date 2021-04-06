@@ -35,14 +35,14 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 > [!NOTE]
 > -   Bulk-join is not supported in Azure Active Directory Join.
 > -   Bulk enrollment does not work in Intune standalone environment.
-> -   Bulk enrollment works in Microsoft Endpoint Configuration Manager where the ppkg is generated from the Configuration Manager console.
+> -   Bulk enrollment works in Microsoft Endpoint Manager where the ppkg is generated from the Configuration Manager console.
 > -   To change bulk enrollment settings, login to **AAD**, then **Devices**, and then click **Device Settings**. Change the number under **Maximum number of devices per user**.
 
 ## What you need
 
 -   Windows 10 devices
 -   Windows Imaging and Configuration Designer (ICD) tool
-    To get the ICD tool, download the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). For more information about the ICD tool, see [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113) and [Getting started with Windows ICD](https://msdn.microsoft.com/library/windows/hardware/dn916112).
+    To get the ICD tool, download the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). For more information about the ICD tool, see [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd) and [Getting started with Windows ICD](/windows/configuration/provisioning-packages/provisioning-install-icd).
 -   Enrollment credentials (domain account for enrollment, generic enrollment credentials for MDM, enrollment certificate for MDM.)
 -   Wi-Fi credentials, computer name scheme, and anything else required by your organization.
 
@@ -128,9 +128,9 @@ Using the ICD, create a provisioning package using the enrollment information re
 
 Here's the list of topics about applying a provisioning package:
 
--   [Apply a package on the first-run setup screen (out-of-the-box experience)](https://technet.microsoft.com/itpro/windows/deploy/provision-pcs-for-initial-deployment#apply-package) - topic in Technet.
--   [Apply a package to a Windows 10 desktop edition image](https://msdn.microsoft.com/library/windows/hardware/dn916107.aspx#to_apply_a_provisioning_package_to_a_desktop_image) - topic in MSDN
--   [Apply a package to a Windows 10 Mobile image](https://msdn.microsoft.com/library/windows/hardware/dn916107.aspx#to_apply_a_provisioning_package_to_a_mobile_image) - topic in MSDN.
+-   [Apply a package on the first-run setup screen (out-of-the-box experience)](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment#apply-package) - topic in Technet.
+-   [Apply a package to a Windows 10 desktop edition image](/windows/configuration/provisioning-packages/provisioning-create-package#to_apply_a_provisioning_package_to_a_desktop_image) - topic in MSDN
+-   [Apply a package to a Windows 10 Mobile image](/windows/configuration/provisioning-packages/provisioning-create-package#to_apply_a_provisioning_package_to_a_mobile_image) - topic in MSDN.
 -   [Apply a package from the Settings menu](#apply-a-package-from-the-settings-menu) - topic below
 
 ## Apply a package from the Settings menu
@@ -153,18 +153,12 @@ If all immediate attempts fail, a delayed task is launched to try provisioning a
 
 It will also retry to apply the provisioning each time it is launched, if started from somewhere else as well.
 
-In addition, provisioning will be restarted in a SYSTEM context after a login and the system has been idle ([details on idle conditions](https://msdn.microsoft.com/library/windows/desktop/aa383561.aspx)).
+In addition, provisioning will be restarted in a SYSTEM context after a login and the system has been idle ([details on idle conditions](/windows/win32/taskschd/task-idle-conditions)).
 
 ## Other provisioning topics
 
 Here are links to step-by-step provisioning topics in Technet.
 
--   [Provision PCs with apps and certificates for initial deployment](https://technet.microsoft.com/itpro/windows/deploy/provision-pcs-with-apps-and-certificates)
--   [Provision PCs with common settings for initial deployment](https://technet.microsoft.com/itpro/windows/deploy/provision-pcs-for-initial-deployment)
-
- 
-
-
-
-
+-   [Provision PCs with apps and certificates for initial deployment](/windows/configuration/provisioning-packages/provision-pcs-with-apps)
+-   [Provision PCs with common settings for initial deployment](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment)
 

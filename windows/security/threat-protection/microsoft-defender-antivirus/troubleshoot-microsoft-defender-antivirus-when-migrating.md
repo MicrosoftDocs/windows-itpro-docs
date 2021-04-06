@@ -3,7 +3,7 @@ title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-pa
 description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
 keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,6 +13,7 @@ ms.custom: nextgen
 ms.date: 09/11/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
@@ -21,7 +22,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 
 You can find help here if you encounter issues while migrating from a third-party security solution to Microsoft Defender Antivirus.
@@ -113,7 +114,7 @@ The report may contain the following text, indicating that Microsoft Defender An
 
 ###### If security settings are set in Windows or your Windows Server image
 
-Your imagining admin might have set the security policy, **[DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)**, locally via *GPEdit.exe*, *LGPO.exe*, or by modifying the registry in their task sequence. You can [configure a Trusted Image Identifier](https://docs.microsoft.com/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender) for Microsoft Defender Antivirus.
+Your imagining admin might have set the security policy, **[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)**, locally via *GPEdit.exe*, *LGPO.exe*, or by modifying the registry in their task sequence. You can [configure a Trusted Image Identifier](/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender) for Microsoft Defender Antivirus.
 
 ### Turn Microsoft Defender Antivirus back on
 
@@ -122,7 +123,7 @@ Microsoft Defender Antivirus will automatically turn on if no other antivirus is
 > [!WARNING]
 > Solutions suggesting that you edit the *Windows Defender* start values for *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc*, and *windefend* in  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services are unsupported, and may force you to re-image your system.
 
-Passive mode is available if you start using Microsoft Defender for Endpoint and a third-party antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender to scan files and update itself, but it will not remediate threats. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) is not available under passive mode, unless [Endpoint data loss prevention (DLP)](../microsoft-defender-atp/information-protection-in-windows-overview.md) is deployed.
+Passive mode is available if you start using Microsoft Defender for Endpoint and a third-party antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender to scan files and update itself, but it will not remediate threats. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) is not available under passive mode, unless [Endpoint data loss prevention (DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) is deployed.
 
 Another feature, known as [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), is available to end-users when Microsoft Defender Antivirus is set to automatically turn off. This feature allows Microsoft Defender Antivirus to scan files periodically alongside a third-party antivirus, using a limited number of detections.
 

@@ -20,7 +20,7 @@ ms.topic: article
 -   Windows 10
 
 
-[Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/) was introduced in Windows 10, version 1709 (also known as the Fall Creators Update), as a [Windows 10 Feature on Demand (FOD)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). Features on Demand are Windows feature packages that can be added at any time. When a Windows 10 PC needs a new feature, it can request the feature package from Windows Update.
+[Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/) was introduced in Windows 10, version 1709 (also known as the Fall Creators Update), as a [Windows 10 Feature on Demand (FOD)](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). Features on Demand are Windows feature packages that can be added at any time. When a Windows 10 PC needs a new feature, it can request the feature package from Windows Update.
 
 Organizations that use Windows Server Update Services (WSUS) must take action to [enable Windows Mixed Reality](#enable-windows-mixed-reality-in-wsus). Any organization that wants to prohibit use of Windows Mixed Reality can [block the installation of the Mixed Reality Portal](#block-the-mixed-reality-portal).
 
@@ -50,11 +50,11 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
    1. In **Settings** > **Update & Security** > **Windows Update**, select **Check for updates**.
 
 
-IT admins can also create [Side by side feature store (shared folder)](https://technet.microsoft.com/library/jj127275.aspx) to allow access to the Windows Mixed Reality FOD.
+IT admins can also create [Side by side feature store (shared folder)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127275(v=ws.11)) to allow access to the Windows Mixed Reality FOD.
 
 ## Block the Mixed Reality Portal
 
-You can use the [AppLocker configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) to block the Mixed Reality software.
+You can use the [AppLocker configuration service provider (CSP)](/windows/client-management/mdm/applocker-csp) to block the Mixed Reality software.
 
 In the following example, the **Id** can be any generated GUID and the **Name** can be any name you choose. Note that `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
 

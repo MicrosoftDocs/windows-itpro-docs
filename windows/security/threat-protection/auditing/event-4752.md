@@ -2,7 +2,7 @@
 title: 4752(S) A member was removed from a security-disabled global group. (Windows 10)
 description: Describes security event 4752(S) A member was removed from a security-disabled global group.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4752(S): A member was removed from a security-disabled global group.
@@ -130,7 +131,7 @@ For every removed member you will get separate 4752 event.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   [Built-in groups](https://technet.microsoft.com/library/dn169025(v=ws.10).aspx): Builtin
+    -   [Built-in groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dn169025(v=ws.10)): Builtin
 
 **Additional Information:**
 
@@ -153,4 +154,3 @@ For 4752(S): A member was removed from a security-disabled global group.
 | **External accounts**: You might be monitoring accounts from another domain, or “external” accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                     | Monitor this event for the **“Subject\\Account Domain”** corresponding to accounts from another domain or “external” accounts.                                                                                                          |
 | **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should not typically perform any actions.                                                                                                                                      | Monitor the target **Computer:** (or other target device) for actions performed by the **“Subject\\Security ID”** that you are concerned about.                                                                                         |
 | **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor “**Subject\\Account Name”** for names that don’t comply with naming conventions.                                                                                                                                                |
-
