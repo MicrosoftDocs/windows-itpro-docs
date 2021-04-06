@@ -86,6 +86,7 @@ All our updates contain
     
 ### What's new
 
+- Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
 - item
 - item
 
@@ -120,7 +121,6 @@ No known issues
     
 ### What's new
 
-- Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
 - Shellcode exploit detection improvements
 - Increased visibility for credential stealing attempts
 - Improvements in antitampering features in Microsoft Defender Antivirus services
