@@ -251,6 +251,8 @@ To troubleshoot Name/SID lookup APIs:
 
     ```cmd
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgInfoLevel -Value 0x0 -Type dword -Force
+    
+    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgTraceOptions -Value 0x0 -Type dword -Force
     ```
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">

@@ -72,6 +72,11 @@ For more information about loopback scenarios, see [Communicating with
 localhost
 (loopback)](/windows/iot-core/develop-your-app/loopback).
 
+>[!NOTE]
+>If you are in the middle of developing a UWA application and want to test its loopback, ensure to uninstall and re-install the UWA app if the network capabilities change for whatever reason. 
+
+Also, see [How to enable loopback and troubleshoot network isolation (Windows Runtime apps)](https://docs.microsoft.com/previous-versions/windows/apps/hh780593(v=win.10)#debug-network-isolation-issues).
+
 ## Debugging Live Drops
 
 If the issue happened recently, but you find you are not able to reproduce the issue, go to Debugging Past Drops for the appropriate trace commands.
