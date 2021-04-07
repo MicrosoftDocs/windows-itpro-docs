@@ -21,7 +21,7 @@ ms.technology: mde
 - Windows Server 2016
 
 
-<img src="images/event-4624.png" alt="Event 4624 illustration" width="438" height="668" hspace="10" align="left" />
+<img src="images/event-4624.png" alt="Event 4624 illustration" width="438" height="668" hspace="10" />
 
 ***Subcategory:***&nbsp;[Audit Logon](audit-logon.md)
 
