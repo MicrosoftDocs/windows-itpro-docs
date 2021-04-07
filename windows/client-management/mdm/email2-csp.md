@@ -22,10 +22,44 @@ On the desktop, only per user configuration is supported.
 
  
 
-The following diagram shows the EMAIL2 configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning.
-
-![email2 csp (dm,cp)](images/provisioning-csp-email2.png)
-
+The following shows the EMAIL2 configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning.
+```
+./Vendor/MSFT
+EMAIL2
+----Account GUID
+--------ACCOUNTICON
+--------ACCOUNTTYPE
+--------AUTHNAME
+--------AUTHREQUIRED
+--------AUTHSECRET
+--------DOMAIN
+--------DWNDAY
+--------INSERVER
+--------LINGER
+--------KEEPMAX
+--------NAME
+--------OUTSERVER
+--------REPLYADDR
+--------SERVICENAME
+--------SERVICETYPE
+--------RETRIEVE
+--------SERVERDELETEACTION
+--------CELLULARONLY
+--------SYNCINGCONTENTTYPES
+--------CONTACTSSERVER
+--------CALENDARSERVER
+--------CONTACTSSERVERREQUIRESSL
+--------CALENDARSERVERREQUIRESSL
+--------CONTACTSSYNCSCHEDULE
+--------CALENDARSYNCSCHEDULE
+--------SMTPALTAUTHNAME
+--------SMTPALTDOMAIN
+--------SMTPALTENABLED
+--------SMTPALTPASSWORD
+--------TAGPROPS
+------------8128000B
+------------812C000B
+```
 In Windows 10 Mobile, after the user’s out of box experience, an OEM or mobile operator can use the EMAIL2 configuration service provider to provision the device with a mobile operator’s proprietary mail over the air. After provisioning, the **Start** screen has a tile for the proprietary mail provider and there is also a link to it in the applications list under **Settings, email & accounts**. After an account has been updated over-the-air by the EMAIL2 CSP, the device must be powered off and then powered back on to see the sync status.
 
 Configuration data is not encrypted when sent over the air (OTA). Be aware that this is a potential security risk when sending sensitive configuration data, such as passwords.

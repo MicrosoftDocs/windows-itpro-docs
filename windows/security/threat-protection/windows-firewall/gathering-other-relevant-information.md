@@ -4,7 +4,7 @@ description: Learn about additional information you may need to gather to deploy
 ms.assetid: 87ccca07-4346-496b-876d-cdde57d0ce17
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Gathering Other Relevant Information
@@ -29,7 +30,7 @@ This topic discusses several other things that you should examine to see whether
 
 Because IPsec uses mathematically intensive cryptographic techniques, it can consume significant overhead on a device. Areas to watch:
 
--   **Encryption.** You might use 256-bit Advanced Encryption Standard (AES-256) and 384-bit Secure Hash Algorithm (SHA-384) to check integrity in situations that require the strongest available encryption and key exchange protection. If you have NICs that support IPsec Task Offload, you can reduce the effect that encryption has on network throughput. For more information, see [IPsec Task Offload](https://technet.microsoft.com/network/dd277647.aspx).
+-   **Encryption.** You might use 256-bit Advanced Encryption Standard (AES-256) and 384-bit Secure Hash Algorithm (SHA-384) to check integrity in situations that require the strongest available encryption and key exchange protection. If you have NICs that support IPsec Task Offload, you can reduce the effect that encryption has on network throughput. For more information, see [IPsec Task Offload](/previous-versions/windows/it-pro/windows-server-2003/cc776369(v=ws.10)).
 
 -   **Security association (SA) negotiation.** You can use a shorter lifetime for the main mode SA, such as three hours, but then you might need to make tradeoffs. Because each main mode SA occupies approximately 5  KB of RAM, situations in which a server brokers tens of thousands of concurrent connections can lead to overutilization.
 

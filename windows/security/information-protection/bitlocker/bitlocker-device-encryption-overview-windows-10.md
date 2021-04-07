@@ -82,6 +82,9 @@ Microsoft recommends that BitLocker Device Encryption be enabled on any systems 
 
 Administrators can manage domain-joined devices that have BitLocker Device Encryption enabled through Microsoft BitLocker Administration and Monitoring (MBAM). In this case, BitLocker Device Encryption automatically makes additional BitLocker options available. No conversion or encryption is required, and MBAM can manage the full BitLocker policy set if any configuration changes are required.
 
+> [!NOTE]
+> BitLocker Device Encryption uses the XTS-AES 128-bit encryption method. In case you need to use a different encryption method and/or cipher strength, the device must be configured and decrypted (if already encrypted) first. After that, different BitLocker settings can be applied.
+
 ## Used Disk Space Only encryption
 
 BitLocker in earlier Windows versions could take a long time to encrypt a drive, because it encrypted every byte on the volume (including parts that did not have data). That is still the most secure way to encrypt a drive, especially if a drive has previously contained confidential data that has since been moved or deleted. In that case, traces of the confidential data could remain on portions of the drive marked as unused.
@@ -106,7 +109,7 @@ When BitLocker is enabled on a system drive and the PC has a TPM, you can choose
 
 Requiring a PIN at startup is a useful security feature because it acts as a second authentication factor (a second “something you know”). This configuration comes with some costs, however. One of the most significant is the need to change the PIN regularly. In enterprises that used BitLocker with Windows 7 and the Windows Vista operating system, users had to contact systems administrators to update their BitLocker PIN or password. This requirement not only increased management costs but made users less willing to change their BitLocker PIN or password on a regular basis.
 Windows 10 users can update their BitLocker PINs and passwords themselves, without administrator credentials. Not only will this feature reduce support costs, but it could improve security, too, because it encourages users to change their PINs and passwords more often. In addition, Modern Standby devices do not require a PIN for startup: They are designed to start infrequently and have other mitigations in place that further reduce the attack surface of the system.
-For more information about how startup security works and the countermeasures that Windows 10 provides, see [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md).
+For more information about how startup security works and the countermeasures that Windows 10 provides, see [Protect BitLocker from pre-boot attacks](./bitlocker-countermeasures.md).
 
 ## Configure Network Unlock
 
@@ -137,4 +140,4 @@ Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage 
 * Offers an IT-customizable recovery user experience.
 * Supports Windows 10.
 
-For more information about MBAM, including how to obtain it, see [Microsoft BitLocker Administration and Monitoring](https://technet.microsoft.com/windows/hh826072.aspx) on the MDOP TechCenter.
+For more information about MBAM, including how to obtain it, see [Microsoft BitLocker Administration and Monitoring](/microsoft-desktop-optimization-pack/) on the MDOP TechCenter.

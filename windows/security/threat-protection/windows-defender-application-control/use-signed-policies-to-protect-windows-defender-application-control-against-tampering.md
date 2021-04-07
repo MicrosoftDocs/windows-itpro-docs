@@ -1,9 +1,9 @@
 ---
 title: Use signed policies to protect Windows Defender Application Control against tampering  (Windows 10)
-description: Signed WDAC policies give organizations the highest level of malware protection available in Windows 10. 
-keywords:  security, malware
+description: Signed WDAC policies give organizations the highest level of malware protection available in Windows 10.
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2018
+ms.technology: mde
 ---
 
 # Use signed policies to protect Windows Defender Application Control against tampering
@@ -63,7 +64,7 @@ If you do not have a code signing certificate, see [Optional: Create a code sign
 
    `cd $env:USERPROFILE\Desktop`
 
-5. Use [Add-SignerRule](https://docs.microsoft.com/powershell/module/configci/add-signerrule) to add an update signer certificate to the WDAC policy:
+5. Use [Add-SignerRule](/powershell/module/configci/add-signerrule) to add an update signer certificate to the WDAC policy:
 
    `Add-SignerRule -FilePath $InitialCIPolicy -CertificatePath <Path to exported .cer certificate> -Kernel -User –Update`
 
@@ -71,11 +72,11 @@ If you do not have a code signing certificate, see [Optional: Create a code sign
    > *&lt;Path to exported .cer certificate&gt;* should be  the full path to the certificate that you exported in   step 3.
    Also, adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed WDAC policies, see [Disable signed Windows Defender Application Control policies within Windows](disable-windows-defender-application-control-policies.md#disable-signed-windows-defender-application-control-policies-within-windows).
 
-6. Use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption) to remove the unsigned policy rule option:
+6. Use [Set-RuleOption](/powershell/module/configci/set-ruleoption) to remove the unsigned policy rule option:
 
    `Set-RuleOption -FilePath $InitialCIPolicy -Option 6 -Delete`
 
-7. Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the policy to binary format:
+7. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the policy to binary format:
 
    `ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
 
@@ -87,4 +88,3 @@ If you do not have a code signing certificate, see [Optional: Create a code sign
    > The *&lt;Path to signtool.exe&gt;* variable should be the full path to the SignTool.exe utility. **ContosoDGSigningCert** is the subject name of the certificate that will be used to sign the WDAC policy. You should import this certificate to your personal certificate store on the computer you use to sign the policy.
 
 9. Validate the signed file. When complete, the commands should output a signed policy file called DeviceGuardPolicy.bin.p7 to your desktop. You can deploy this file the same way you deploy an enforced or non-enforced policy. For information about how to deploy WDAC policies, see [Deploy and manage Windows Defender Application Control with Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md).
-

@@ -34,7 +34,7 @@ ms.topic: include
 - **GP ADMX file name:**  MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowDeveloperTools](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowdevelopertools)
+- **MDM name:** Browser/[AllowDeveloperTools](/windows/client-management/mdm/policy-csp-browser#browser-allowdevelopertools)
 - **Supported devices:** Desktop
 - **URI full Path:**    ./Vendor/MSFT/Policy/Config/Browser/AllowDeveloperTools
 - **Data type:** Integer
@@ -44,4 +44,4 @@ ms.topic: include
 - **Value name:**   AllowDeveloperTools
 - **Value type:** REG_DWORD
 
-<hr>    
+<hr>

@@ -1,9 +1,9 @@
 ---
 title: Microsoft recommended driver block rules (Windows 10)
-description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.  
-keywords:  security, malware, kernel mode, driver
+description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.
+keywords: security, malware, kernel mode, driver
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 10/15/2020
+ms.technology: mde
 ---
 
 # Microsoft recommended driver block rules
@@ -29,7 +30,7 @@ Microsoft has strict requirements for code running in kernel. Consequently, mali
 - Hypervisor-protected code integrity (HVCI) enabled devices
 - Windows 10 in S mode (S mode) devices
 
-Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this is not possible, Microsoft recommends blocking the following list of drivers by merging this policy with your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It is recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
+Microsoft recommends enabling [HVCI](../device-guard/enable-virtualization-based-protection-of-code-integrity.md) or S mode to protect your devices against security threats. If this is not possible, Microsoft recommends blocking the following list of drivers by merging this policy with your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It is recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
 
 > [!Note]
 > This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. It is recommended that this policy be first validated in audit mode before rolling the rules into enforcement mode. 

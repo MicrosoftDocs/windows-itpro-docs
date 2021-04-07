@@ -1,6 +1,6 @@
 ---
 title: TenantLockdown CSP
-description: 
+description: To lock a device to a tenant to prevent accidental or intentional resets or wipes, use the TenantLockdown configuration service provider.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -21,10 +21,12 @@ The TenantLockdown configuration service provider is used by the IT admin to loc
 > [!NOTE]
 > The forced network connection is only applicable to devices after reset (not new).
 
-The following diagram shows the TenantLockdown configuration service provider in tree format.
-
-![TenantLockdown CSP diagram](images/provisioning-csp-tenantlockdown.png)
-
+The following shows the TenantLockdown configuration service provider in tree format.
+```
+./Vendor/MSFT
+TenantLockdown
+----RequireNetworkInOOBE
+```
 <a href="" id="tenantlockdown"></a>**./Vendor/MSFT/TenantLockdown**  
 The root node.
 

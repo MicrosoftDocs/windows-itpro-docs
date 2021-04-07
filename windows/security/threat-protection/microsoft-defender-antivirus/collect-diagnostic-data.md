@@ -3,7 +3,7 @@ title: Collect diagnostic data of Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av, group policy object, setting, diagnostic data
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.date: 06/29/2020
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Collect Microsoft Defender AV diagnostic data
@@ -23,12 +24,12 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you might encounter when using the Microsoft Defender AV.
 
 > [!NOTE]
-> As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
+> As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
 
 On at least two devices that are experiencing the same issue, obtain the .cab diagnostic file by taking the following steps:
 
@@ -114,4 +115,3 @@ You can also specify where the diagnostic .cab file will be created using a Grou
 ## See also
 
 - [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md)
-

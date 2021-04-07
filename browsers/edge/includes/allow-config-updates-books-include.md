@@ -32,7 +32,7 @@ ms.topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowConfigurationUpdateForBooksLibrary](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowconfigurationupdateforbookslibrary)
+- **MDM name:** Browser/[AllowConfigurationUpdateForBooksLibrary](/windows/client-management/mdm/policy-csp-browser#browser-allowconfigurationupdateforbookslibrary)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowConfigurationUpdateForBooksLibrary 
 - **Data type:** Integer

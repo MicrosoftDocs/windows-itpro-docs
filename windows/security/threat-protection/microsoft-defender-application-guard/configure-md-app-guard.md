@@ -1,7 +1,7 @@
 ---
 title: Configure the Group Policy settings for Microsoft Defender Application Guard (Windows 10)
 description: Learn about the available Group Policy settings for Microsoft Defender Application Guard.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +12,13 @@ ms.date: 10/17/2017
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Configure Microsoft Defender Application Guard policy settings
 
 **Applies to:** 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 Microsoft Defender Application Guard (Application Guard) works with Group Policy to help you manage your organization's computer settings. By using Group Policy, you can configure a setting once, and then copy it onto many computers. For example, you can set up multiple security settings in a GPO, which is linked to a domain, and then apply all those settings to every computer in the domain.
 
@@ -62,5 +63,3 @@ These settings, located at **Computer Configuration\Administrative Templates\Win
 |Allow camera and microphone access in Microsoft Defender Application Guard|Windows 10 Enterprise, 1809 or higher<br><br>Windows 10 Pro, 1809 or higher|Determines whether to allow camera and microphone access inside Microsoft Defender Application Guard.|**Enabled.** Applications inside Microsoft Defender Application Guard are able to access the camera and microphone on the user's device. **Important:** Be aware that enabling this policy with a potentially compromised container could bypass camera and microphone permissions and access the camera and microphone without the user's knowledge.<br><br>**Disabled or not configured.** Applications inside Microsoft Defender Application Guard are unable to access the camera and microphone on the user's device.|
 |Allow Microsoft Defender Application Guard to use Root Certificate Authorities from a user's device|Windows 10 Enterprise, 1809 or higher<br><br>Windows 10 Pro, 1809 or higher|Determines whether Root Certificates are shared with Microsoft Defender Application Guard.|**Enabled.** Certificates matching the specified thumbprint are transferred into the container. Use a comma to separate multiple certificates.<br><br>**Disabled or not configured.** Certificates are not shared with Microsoft Defender Application Guard.|
 |Allow users to trust files that open in Microsoft Defender Application Guard|Windows 10 Enterprise, 1809 or higher|Determines whether users are able to manually trust untrusted files to open them on the host.|**Enabled.** Users are able to manually trust files or trust files after an antivirus check.<br><br>**Disabled or not configured.** Users are unable to manually trust files and files continue to open in Microsoft Defender Application Guard.|
-
-

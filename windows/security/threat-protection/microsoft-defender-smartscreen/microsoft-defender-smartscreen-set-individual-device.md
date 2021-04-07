@@ -2,7 +2,7 @@
 title: Set up and use Microsoft Defender SmartScreen on individual devices (Windows 10)
 description: Learn how employees can use Windows Security to set up Microsoft Defender SmartScreen. Microsoft Defender SmartScreen protects users from running malicious apps.
 keywords: SmartScreen Filter, Windows SmartScreen, Microsoft Defender SmartScreen
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -12,6 +12,7 @@ ms.date: 10/13/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: macapara
+ms.technology: mde
 ---
 
 # Set up and use Microsoft Defender SmartScreen on individual devices
@@ -47,7 +48,7 @@ Starting with Windows 10, version 1703, users can use Windows Security to set up
        - **Off.** Turns off Microsoft Defender SmartScreen, so a user isn't alerted or stopped from downloading potentially malicious apps and files.
    - In the **Potentially unwanted app blocking** area:
 
-      - **On.** Turns on both the 'Block apps' and 'Block downloads settings. To learn more, see [How Microsoft identifies malware and potentially unwanted applications](https://docs.microsoft.com/windows/security/threat-protection/intelligence/criteria#potentially-unwanted-application-pua).
+      - **On.** Turns on both the 'Block apps' and 'Block downloads settings. To learn more, see [How Microsoft identifies malware and potentially unwanted applications](../intelligence/criteria.md#potentially-unwanted-application-pua).
           - **Block apps.** This setting will prevent new apps from installing on the device and warn users of apps that are existing on the device.
 
           - **Block downloads.** This setting will alert users and stop the downloads of apps in the Microsoft Edge browser (based on Chromium).

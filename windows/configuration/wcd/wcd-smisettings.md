@@ -85,17 +85,17 @@ When you **enable** KeyboardFilter, a number of other settings become available 
 
 | Setting | Value | Description |
 | --- | --- | --- |
-| CustomKeyFilters | Allow or block | Add your own key filters to meet any special requirements that you may have that are not included in the predefined key filters. </br></br>Enter a custom key combination in **CustomKeyFilter**, and then select it to allow or block it. The format to add custom filter combinations is "Alt+F9." This also appears as the CustomKey name, which is specified without "+". For more information, see [WEKF_CustomKey](https://docs.microsoft.com/windows-hardware/customize/enterprise/wekf-customkey). |
-| CustomScancodeFilters  | Allow or block | Blocks the list of custom scan codes. When a key is pressed on a physical keyboard, the keyboard sends a scan code to the keyboard driver. The driver then sends the scan code to the OS and the OS converts the scan code into a virtual key based on the current active layout.</br></br>Enter a custom scancode in **CustomScancodeFilter**, and then select it to allow or block it. For more information, see [WEKF_Scancode](https://docs.microsoft.com/windows-hardware/customize/enterprise/wekf-scancode). |
+| CustomKeyFilters | Allow or block | Add your own key filters to meet any special requirements that you may have that are not included in the predefined key filters. </br></br>Enter a custom key combination in **CustomKeyFilter**, and then select it to allow or block it. The format to add custom filter combinations is "Alt+F9." This also appears as the CustomKey name, which is specified without "+". For more information, see [WEKF_CustomKey](/windows-hardware/customize/enterprise/wekf-customkey). |
+| CustomScancodeFilters  | Allow or block | Blocks the list of custom scan codes. When a key is pressed on a physical keyboard, the keyboard sends a scan code to the keyboard driver. The driver then sends the scan code to the OS and the OS converts the scan code into a virtual key based on the current active layout.</br></br>Enter a custom scancode in **CustomScancodeFilter**, and then select it to allow or block it. For more information, see [WEKF_Scancode](/windows-hardware/customize/enterprise/wekf-scancode). |
 | DisableKeyboardFilterForAdministrators  | True or false | Disables the keyboard filter for administrators. |
 | ForceOffAccessibility  | True or false | Disables all Ease of Access features and prevents users from enabling them.  |
 | PredefinedKeyFilters  | Allow or block | Specifies the list of predefined keys. For each key, the value will default to **Allow**. Specifying **Block** will suppress the key combination.  |
 
-[Learn more about using keyboard filters.](https://docs.microsoft.com/windows-hardware/customize/enterprise/keyboardfilter)
+[Learn more about using keyboard filters.](/windows-hardware/customize/enterprise/keyboardfilter)
 
 ## ShellLauncher settings
 
-Use ShellLauncher to specify the application or executable to use as the default custom shell. One use of ShellLauncher is to [create a kiosk (fixed-purpose) device running a Windows desktop application](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions#shell-launcher-for-classic-windows-applications).
+Use ShellLauncher to specify the application or executable to use as the default custom shell. One use of ShellLauncher is to [create a kiosk (fixed-purpose) device running a Windows desktop application](/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions#shell-launcher-for-classic-windows-applications).
 
 >[!WARNING]
 >Windows 10 doesn’t support setting a custom shell prior to OOBE. If you do, you won’t be able to deploy the resulting image.

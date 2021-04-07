@@ -2,7 +2,7 @@
 title: 4907(S) Auditing settings on object were changed. (Windows 10)
 description: Describes security event 4907(S) Auditing settings on object were changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4907(S): Auditing settings on object were changed.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates when the [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) of an object (for example, a registry key or file) was changed.
+This event generates when the [SACL](/windows/win32/secauthz/access-control-lists) of an object (for example, a registry key or file) was changed.
 
 This event doesn't generate for Active Directory objects.
 
@@ -119,7 +120,7 @@ This event doesn't generate for Active Directory objects.
 | Job                     | Port         | FilterConnectionPort |                    |
 | ALPC Port               | Semaphore    | Adapter              |                    |
 
--   **Object Name** \[Type = UnicodeString\]: full path and name of the object for which the [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) was modified. Depends on **Object Type**. Here are some examples:
+-   **Object Name** \[Type = UnicodeString\]: full path and name of the object for which the [SACL](/windows/win32/secauthz/access-control-lists) was modified. Depends on **Object Type**. Here are some examples:
 
     -   The format for **Object Type** = “Key” is: \\REGISTRY\\HIVE\\PATH where:
 
@@ -137,13 +138,13 @@ This event doesn't generate for Active Directory objects.
 
         -   PATH – path to the registry key.
 
-    -   The format for **Object Type** = “File” is: full path and name of the file or folder for which [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) was modified.
+    -   The format for **Object Type** = “File” is: full path and name of the file or folder for which [SACL](/windows/win32/secauthz/access-control-lists) was modified.
 
 -   **Handle ID** \[Type = Pointer\]: hexadecimal value of a handle to **Object Name**. This field can help you correlate this event with other events that might contain the same Handle ID, for example, “[4656](event-4656.md): A handle to an object was requested.” Event for registry keys or with **Handle ID** field in “[4656](event-4656.md)(S, F): A handle to an object was requested.” Event for file system objects. This parameter might not be captured in the event, and in that case appears as “0x0”.
 
 **Process Information:**
 
--   **Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process through which the object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) was changed. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
+-   **Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process through which the object’s [SACL](/windows/win32/secauthz/access-control-lists) was changed. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
 
     <img src="images/task-manager.png" alt="Task manager illustration" width="585" height="375" />
 
@@ -286,4 +287,3 @@ For 4907(S): Auditing settings on object were changed.
 - If you have critical file or registry objects and you need to monitor all modifications (especially changes in SACL), monitor for specific “**Object\\Object Name”**.
 
 - If you have high-value computers for which you need to monitor all changes for all or specific file or registry objects, monitor for all [4907](event-4907.md) events on these computers<b>.</b>
-

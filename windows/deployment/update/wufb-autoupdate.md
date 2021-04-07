@@ -23,9 +23,9 @@ Automatic Update governs the "behind the scenes" download and installation proce
 
 |Policy|Description |
 |-|-|
-|Configure Automatic Updates|Governs the installation activity that happens in the background. This allows you to configure the installation to happen during the [maintenance window](https://docs.microsoft.com/configmgr/core/clients/manage/collections/use-maintenance-windows). Also, you can specify an installation time where the device will also try to install the latest packages. You can also pick a certain day and or week.|
+|Configure Automatic Updates|Governs the installation activity that happens in the background. This allows you to configure the installation to happen during the [maintenance window](/configmgr/core/clients/manage/collections/use-maintenance-windows). Also, you can specify an installation time where the device will also try to install the latest packages. You can also pick a certain day and or week.|
 |Automatic Update Detection Frequency|Lets you set the scan frequency the device will use to connect to Windows Update to see if there is any available content. Default is 22 hours, but you can increase or decrease the frequency. Keep in mind a desktop computer may need to scan less frequently than laptops, which can have intermittent internet connection.|
-|Specify Intranet Microsoft Update Service Location|Used for Windows Server Update Services or Microsoft Endpoint Configuration Manager users who want to install custom packages that are not offered through Windows Update.|
+|Specify Intranet Microsoft Update Service Location|Used for Windows Server Update Services or Microsoft Endpoint Manager users who want to install custom packages that are not offered through Windows Update.|
 |Do not connect to any Windows Update Internet locations <br>Required for Dual Scan|Prevents access to Windows Update.|
 
 ## Suggested configuration

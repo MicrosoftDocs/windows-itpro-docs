@@ -30,7 +30,7 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 
 - [Simple provisioning to set up common settings for Active Directory-joined devices](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment)
 - [Advanced provisioning to deploy certificates and apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps-and-certificates)
-- [School provisioning to set up classroom devices for Active Directory](https://technet.microsoft.com/edu/windows/set-up-students-pcs-to-join-domain)
+- [School provisioning to set up classroom devices for Active Directory](/education/windows/set-up-students-pcs-to-join-domain)
 
 [Learn more about using provisioning packages in Windows 10.](/windows/configuration/provisioning-packages/provisioning-packages)
 
@@ -86,7 +86,7 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 
 - The VPN client can integrate with the Conditional Access Framework, a cloud-based policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
 - The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip), previously known as Enterprise Data Protection.
-- New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
+- New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew_1607)
 - Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
 
 
@@ -95,10 +95,10 @@ With the increase of employee-owned devices in the enterprise, there’s also an
 
 Windows Information Protection (WIP) helps to protect against this potential data leakage without otherwise interfering with the employee experience. WIP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps.
 
-- [Create a Windows Information Protection (WIP) policy](https://technet.microsoft.com/itpro/windows/keep-secure/overview-create-wip-policy)
-- [General guidance and best practices for Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/guidance-and-best-practices-wip)
+- [Create a Windows Information Protection (WIP) policy](/windows/security/information-protection/windows-information-protection/overview-create-wip-policy)
+- [General guidance and best practices for Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip)
 
-[Learn more about Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)
+[Learn more about Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 ### Windows Defender
 Several new features and management options have been added to Windows Defender in Windows 10, version 1607.
@@ -129,7 +129,7 @@ Enterprise administrators can add and remove pinned apps from the taskbar. Users
 
 ### Mobile device management and configuration service providers (CSPs)
 
-Numerous settings have been added to the Windows 10 CSPs to expand MDM capabilities for managing devices. To learn more about the specific changes in MDM policies for Windows 10, version 1607, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607).
+Numerous settings have been added to the Windows 10 CSPs to expand MDM capabilities for managing devices. To learn more about the specific changes in MDM policies for Windows 10, version 1607, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew_1607).
 
 ### Shared PC mode
 

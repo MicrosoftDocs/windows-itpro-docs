@@ -50,9 +50,9 @@ You can check out the Microsoft 365 deployment advisor and other resources for f
 >[!NOTE]
 >If you have not run a setup guide before, you will see the **Prepare your environment** guide first. This is to make sure you have basics covered like domain verification and a method for adding users. At the end of the "Prepare your environment" guide, there will be a **Ready to continue** button that sends you to the original guide that was selected.
 
-1. [Obtain a free M365 trial](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365).
+1. [Obtain a free M365 trial](/office365/admin/try-or-buy-microsoft-365).
 2. Check out the [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide).
-3. Also check out the [Windows Analytics deployment advisor](https://aka.ms/windowsanalyticssetupguide). This advisor will walk you through deploying [Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview). 
+3. Also check out the [Windows Analytics deployment advisor](/mem/configmgr/desktop-analytics/overview). This advisor will walk you through deploying [Desktop Analytics](/mem/configmgr/desktop-analytics/overview). 
 
 That's all there is to it! 
 
@@ -74,7 +74,4 @@ Examples of these two deployment advisors are shown below.
 ## Related Topics
 
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)<br>
-[Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
-
-
-
+[Modern Desktop Deployment Center](/microsoft-365/enterprise/desktop-deployment-center-home)

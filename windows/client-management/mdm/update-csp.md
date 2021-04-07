@@ -19,10 +19,37 @@ The Update configuration service provider enables IT administrators to manage an
 > [!Note]
 > The Update CSP functionality of 'AprrovedUpdates' is not recommended for managing desktop devices. To manage updates to desktop devices from Windows Update, see the [Policy CSP - Updates](policy-csp-update.md) documentation for the recommended policies. 
 
-The following diagram shows the Update configuration service provider in tree format.
+The following shows the Update configuration service provider in tree format.
 
-![update csp diagram](images/provisioning-csp-update.png)
-
+```./Vendor/MSFT
+Update
+----ApprovedUpdates
+--------Approved Update Guid
+------------ApprovedTime
+----FailedUpdates
+--------Failed Update Guid
+------------HResult
+------------Status
+------------RevisionNumber
+----InstalledUpdates
+--------Installed Update Guid
+------------RevisionNumber
+----InstallableUpdates
+--------Installable Update Guid
+------------Type
+------------RevisionNumber
+----PendingRebootUpdates
+--------Pending Reboot Update Guid
+------------InstalledTime
+------------RevisionNumber
+----LastSuccessfulScanTime
+----DeferUpgrade
+----Rollback
+--------QualityUpdate
+--------FeatureUpdate
+--------QualityUpdateStatus
+--------FeatureUpdateStatus
+```
 <a href="" id="update"></a>**Update**
 <p style="margin-left: 20px">The root node.
 
@@ -46,7 +73,7 @@ The following diagram shows the Update configuration service provider in tree fo
 <a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/**<strong>*Approved Update Guid*</strong>
 <p style="margin-left: 20px">Specifies the update GUID.
 
-<p style="margin-left: 20px">To auto-approve a class of updates, you can specify the <a href="https://go.microsoft.com/fwlink/p/?LinkId=526723" data-raw-source="[Update Classifications](https://go.microsoft.com/fwlink/p/?LinkId=526723)">Update Classifications</a> GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. There are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
+<p style="margin-left: 20px">To auto-approve a class of updates, you can specify the <a href="/previous-versions/windows/desktop/ff357803(v=vs.85)" data-raw-source="[Update Classifications](/previous-versions/windows/desktop/ff357803(v=vs.85))">Update Classifications</a> GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. There are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
 
 <p style="margin-left: 20px">Supported operations are Get and Add.
 
@@ -192,11 +219,4 @@ Added in Windows 10, version 1803. Returns the result of last RollBack FeatureUp
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
  
-
- 
-
-
-
-
-
 

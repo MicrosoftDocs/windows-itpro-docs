@@ -1,9 +1,9 @@
 ---
 title: Create a WDAC policy for fixed-workload devices using a reference computer (Windows 10)
 description: To create a Windows Defender Application Control (WDAC) policy for fixed-workload devices within your organization, follow this guide.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2018
+ms.technology: mde
 ---
 
 # Create a WDAC policy for fixed-workload devices using a reference computer

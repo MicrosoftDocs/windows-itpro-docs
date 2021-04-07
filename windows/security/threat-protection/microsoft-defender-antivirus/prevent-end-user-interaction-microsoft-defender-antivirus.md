@@ -3,7 +3,7 @@ title: Hide the Microsoft Defender Antivirus interface
 description: You can hide virus and threat protection tile in the Windows Security app.
 keywords: ui lockdown, headless mode, hide app, hide settings, hide interface
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 # Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface
@@ -23,7 +24,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 You can use Group Policy to prevent users on endpoints from seeing the Microsoft Defender Antivirus interface. You can also prevent them from pausing scans.
 
@@ -48,7 +49,7 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 ## Use Group Policy to hide the Microsoft Defender AV interface from users
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
@@ -69,7 +70,7 @@ You can prevent users from pausing scans, which can be helpful to ensure schedul
 
 ### Use Group Policy to prevent users from pausing a scan
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 

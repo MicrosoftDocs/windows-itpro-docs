@@ -13,12 +13,13 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/19/2018
+ms.date: 01/14/2021
 ms.reviewer: 
 ---
 # Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business
 
 **Applies to**
+
 - Windows 10
 - Azure Active Directory joined
 - Hybrid Deployment
@@ -36,13 +37,13 @@ Before adding Azure Active Directory (Azure AD) joined devices to your existing 
 - Network infrastructure in place to reach your on-premises domain controller. If the machines are external, this can be achieved using any VPN solution.
 
 ### Azure Active Directory Connect synchronization
-Azure AD join, as well as hybrid Azure AD join devices register the user's Windows Hello for Business credential with Azure.  To enable on-premises authentication, the credential must be synchronized to the on-premises Active Directory, regardless whether you are using a key or a certificate.  Ensure you have Azure AD Connect installed and functioning properly.  To learn more about Azure AD Connect, read [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
+Azure AD join, as well as hybrid Azure AD join devices register the user's Windows Hello for Business credential with Azure.  To enable on-premises authentication, the credential must be synchronized to the on-premises Active Directory, regardless whether you are using a key or a certificate.  Ensure you have Azure AD Connect installed and functioning properly.  To learn more about Azure AD Connect, read [Integrate your on-premises directories with Azure Active Directory](/azure/active-directory/connect/active-directory-aadconnect).
 
 If you upgraded your Active Directory schema to the Windows Server 2016 schema after installing Azure AD Connect, run Azure AD Connect and run **Refresh directory schema** from the list of tasks.
 ![Azure AD Connect Schema Refresh](images/aadj/aadconnectschema.png)
 
 ### Azure Active Directory Device Registration
-A fundamental prerequisite of all cloud and hybrid Windows Hello for Business deployments is device registration.  A user cannot provision Windows Hello for Business unless the device from which they are trying to provision has registered with Azure Active Directory.  For more information about device registration, read [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/overview).
+A fundamental prerequisite of all cloud and hybrid Windows Hello for Business deployments is device registration.  A user cannot provision Windows Hello for Business unless the device from which they are trying to provision has registered with Azure Active Directory.  For more information about device registration, read [Introduction to device management in Azure Active Directory](/azure/active-directory/devices/overview).
 
 You can use the **dsregcmd.exe** command to determine if your device is registered to Azure Active Directory.
 ![dsregcmd output](images/aadj/dsregcmd.png)
@@ -63,6 +64,7 @@ If your CRL distribution point does not list an HTTP distribution point, then yo
 > If your CA has published both the Base and the Delta CRL, please make sure you have included publishing the Delta CRL in the HTTP path. Include web server to fetch the Delta CRL by allowing double escaping in the (IIS) web server.
 
 ### Windows Server 2016 Domain Controllers
+
 If you are interested in configuring your environment to use the Windows Hello for Business key rather than a certificate, then your environment must have an adequate number of Windows Server 2016 domain controllers.  Only Windows Server 2016 domain controllers are capable of authenticating user with a Windows Hello for Business key.  What do we mean by adequate?  We are glad you asked.  Read [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
 If you are interested in configuring your environment to use the Windows Hello for Business certificate rather than key, then you are the right place.  The same certificate configuration on the domain controllers is needed, whether you are using Windows Server 2016 domain controllers or domain controllers running earlier versions of Windows Server.  You can simply ignore the Windows Server 2016 domain controller requirement.  
@@ -73,20 +75,20 @@ Certificate authorities write CRL distribution points in certificates as they ar
 
 #### Why does Windows need to validate the domain controller certificate?
 
-Windows Hello for Business enforces the strict KDC validation security feature, which imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
+Windows Hello for Business enforces the strict KDC validation security feature when authenticating from an Azure AD joined device to a domain. This enforcement imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business on an Azure AD joined device, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
 
 - The domain controller has the private key for the certificate provided.
 - The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorities**.
 - Use the **Kerberos Authentication certificate template** instead of any other older template.
-- The domain controller's certificate has the **KDC Authentication** enhanced key usage.
+- The domain controller's certificate has the **KDC Authentication** enhanced key usage (EKU).
 - The domain controller's certificate's subject alternate name has a DNS Name that matches the name of the domain.
 - The domain controller's certificate's signature hash algorithm is **sha256**.
 - The domain controller's certificate's public key is **RSA (2048 Bits)**.
 
+Authenticating from a Hybrid Azure AD joined device to a domain using Windows Hello for Business does not enforce that the domain controller certificate includes the **KDC Authentication** EKU. If you are adding Azure AD joined devices to an existing domain environment, make sure to verify that your domain controller certificate has been updated to include the **KDC Authentication** EKU. If you need to update your domain controller certificate to include the **KDC Authentication** EKU, follow the instructions in [Configure Hybrid Windows Hello for Business: Public Key Infrastructure](hello-hybrid-key-whfb-settings-pki.md)
 
 > [!Tip]
 > If you are using Windows Server 2008, **Kerberos Authentication** is not the default template, so make sure to use the correct template when issuing or re-issuing the certificate.
- 
 
 ## Configuring a CRL Distribution Point for an issuing certificate authority
 
@@ -245,7 +247,7 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 7. Repeat this procedure on all your domain controllers.
 
 > [!NOTE]
-> You can configure domain controllers to automatically enroll and renew their certificates.  Automatic certificate enrollment helps prevent authentication outages due to expired certificates.  Refer to the [Windows Hello Deployment Guides](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-deployment-guide) to learn how to deploy automatic certificate enrollment for domain controllers. 
+> You can configure domain controllers to automatically enroll and renew their certificates.  Automatic certificate enrollment helps prevent authentication outages due to expired certificates.  Refer to the [Windows Hello Deployment Guides](./hello-deployment-guide.md) to learn how to deploy automatic certificate enrollment for domain controllers. 
 
 > [!IMPORTANT]
 > If you are not using automatic certificate enrollment, create a calendar reminder to alert you two months before the certificate expiration date. Send the reminder to multiple people in the organization to ensure more than one or two people know when these certificates expire.
@@ -331,7 +333,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 13. Sign out of the Microsoft Endpoint Manager admin center.
 
 > [!IMPORTANT]
-> For more details about the actual experience after everything has been configured, please see [Windows Hello for Business and Authentication](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication).
+> For more details about the actual experience after everything has been configured, please see [Windows Hello for Business and Authentication](./hello-how-it-works-authentication.md).
 
 ## Section Review
 > [!div class="checklist"]
@@ -345,4 +347,3 @@ Sign-in a workstation with access equivalent to a _domain user_.
 > * Configure Windows Hello for Business Device Enrollment
 
 If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). 
- 

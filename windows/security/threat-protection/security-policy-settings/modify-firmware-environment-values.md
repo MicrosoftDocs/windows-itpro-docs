@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: 80bad5c4-d9eb-4e3a-a5dc-dcb742b83fca
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Modify firmware environment values
@@ -102,7 +103,7 @@ Ensure that only the local Administrators group is assigned the **Modify firmwar
 
 ### Potential impact
 
-None. Restricting the **Modify firmware environment values** user right to the members of the local Administrators group is the default configuration.
+Removing the local Administrators group from the **Modify firmware environment values** user right could cause inoperability of the BitLocker Drive Encryption feature.
 
 ## Related topics
 

@@ -7,15 +7,15 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: v-tea
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.reviewer: 
 ms.custom: 
-- CI 120967
-- CSSTroubleshooting
+  - CI 120967
+  - CSSTroubleshooting
 ---
 
 # Manage Windows Defender Credential Guard
@@ -43,7 +43,7 @@ You can use Group Policy to enable Windows Defender Credential Guard. This will 
 
 4.  In the **Credential Guard Configuration** box, click **Enabled with UEFI lock**, and then click **OK**. If you want to be able to turn off Windows Defender Credential Guard remotely, choose **Enabled without lock**.
 
-5.  In the **Secure Launch Configuration** box, choose **Not Configured**, **Enabled** or **Disabled**. Check [this article](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection) for more details.
+5.  In the **Secure Launch Configuration** box, choose **Not Configured**, **Enabled** or **Disabled**. Check [this article](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md) for more details.
 
     ![Windows Defender Credential Guard Group Policy setting](images/credguard-gp-2.png)
 
@@ -136,7 +136,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 
 
 > [!NOTE]
-> You can also enable Windows Defender Credential Guard by setting the registry entries in the [FirstLogonCommands](https://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
+> You can also enable Windows Defender Credential Guard by setting the registry entries in the [FirstLogonCommands](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-firstlogoncommands) unattend setting.
 
 <span id="hardware-readiness-tool"/>
 
@@ -266,11 +266,10 @@ To disable Windows Defender Credential Guard, you can use the following set of p
     >bcdedit /set vsmlaunchtype off
     >```
 
-> [!NOTE]
-> Credential Guard and Device Guard are not currently supported when using Azure IaaS VMs. These options will be made available with future Gen 2 VMs.
+For more info on virtualization-based security and HVCI, see [Enable virtualization-based protection of code integrity](../../threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md).
 
-For more info on virtualization-based security and HVCI, see [Enable virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity
-).
+> [!NOTE]
+> Credential Guard and Device Guard are not supported when using Azure Gen 1 VMs. These options are available with Gen 2 VMs only.
 
 <span id="turn-off-with-hardware-readiness-tool"/>
 
@@ -294,5 +293,3 @@ From the host, you can disable Windows Defender Credential Guard for a virtual m
 ```powershell
 Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 ```
-
-

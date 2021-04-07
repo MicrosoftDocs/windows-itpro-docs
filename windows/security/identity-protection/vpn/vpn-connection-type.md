@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: dulcemontemayor
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 11/13/2020
 ms.reviewer: 
@@ -29,25 +29,28 @@ There are many options for VPN clients. In Windows 10, the built-in plug-in and 
 
 - Tunneling protocols
 
-    - [Internet Key Exchange version 2 (IKEv2)](https://technet.microsoft.com/library/ff687731.aspx)
+    - [Internet Key Exchange version 2 (IKEv2)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687731(v=ws.10))
 
-      Configure the IPsec/IKE tunnel cryptographic properties using the **Cryptography Suite** setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
+      Configure the IPsec/IKE tunnel cryptographic properties using the **Cryptography Suite** setting in the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp).
            
-    - [L2TP](https://technet.microsoft.com/library/ff687761.aspx)
+    - [L2TP](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687761(v=ws.10))
 
-      L2TP with pre-shared key (PSK) authentication can be configured using the **L2tpPsk** setting in the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
+      L2TP with pre-shared key (PSK) authentication can be configured using the **L2tpPsk** setting in the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp).
     
-    - [PPTP](https://technet.microsoft.com/library/ff687676.aspx)
+    - [PPTP](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687676(v=ws.10))
 
-    - [SSTP](https://technet.microsoft.com/library/ff687819.aspx)
+    - [SSTP](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687819(v=ws.10))
 
         SSTP is supported for Windows desktop editions only. SSTP cannot be configured using mobile device management (MDM), but it is one of the protocols attempted in the **Automatic** option.
+
+        > [!NOTE]
+        > When a VPN plug-in is used, the adapter will be listed as an SSTP adapter, even though the VPN protocol used is the plug-in's protocol.
         
 - Automatic
 
     The **Automatic** option means that the device will try each of the built-in tunneling protocols until one succeeds. It will attempt from most secure to least secure. 
 
-    Configure **Automatic** for the **NativeProtocolType** setting in the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
+    Configure **Automatic** for the **NativeProtocolType** setting in the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp).
     
   
  
@@ -59,15 +62,17 @@ There are a number of Universal Windows Platform VPN applications, such as Pulse
 
 ## Configure connection type
 
-See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp) for XML configuration. 
 
 The following image shows connection options in a VPN Profile configuration policy using Microsoft Intune:
 
-![Available connection types](images/vpn-connection-intune.png)
+> [!div class="mx-imgBorder"]
+> ![Available connection types](images/vpn-connection-intune.png)
      
 In Intune, you can also include custom XML for third-party plug-in profiles:
 
-![Custom XML](images/vpn-custom-xml-intune.png)
+> [!div class="mx-imgBorder"]
+> ![Custom XML](images/vpn-custom-xml-intune.png)
 
 
 ## Related topics
@@ -80,9 +85,3 @@ In Intune, you can also include custom XML for third-party plug-in profiles:
 - [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
 - [VPN security features](vpn-security-features.md)
 - [VPN profile options](vpn-profile-options.md)
-    
-
-
-
-
-

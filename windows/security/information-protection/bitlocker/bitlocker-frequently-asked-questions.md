@@ -25,12 +25,12 @@ ms.custom: bitlocker
 
 This topic links to frequently asked questions about BitLocker. BitLocker is a data protection feature that encrypts drives on your computer to help prevent data theft or exposure. BitLocker-protected computers can also delete data more securely when they are decommissioned because it is much more difficult to recover deleted data from an encrypted drive than from a non-encrypted drive.
 
--   [Overview and requirements](bitlocker-overview-and-requirements-faq.md)
+-   [Overview and requirements](bitlocker-overview-and-requirements-faq.yml)
 -   [Upgrading](bitlocker-upgrading-faq.md)
--   [Deployment and administration](bitlocker-deployment-and-administration-faq.md)
+-   [Deployment and administration](bitlocker-deployment-and-administration-faq.yml)
 -   [Key management](bitlocker-key-management-faq.md)
--   [BitLocker To Go](bitlocker-to-go-faq.md)
--   [Active Directory Domain Services (AD DS)](bitlocker-and-adds-faq.md)
+-   [BitLocker To Go](bitlocker-to-go-faq.yml)
+-   [Active Directory Domain Services (AD DS)](bitlocker-and-adds-faq.yml)
 -   [Security](bitlocker-security-faq.md)
 -   [BitLocker Network Unlock](bitlocker-network-unlock-faq.md)
 -   [Using BitLocker with other programs and general questions](bitlocker-using-with-other-programs-faq.md)
@@ -45,4 +45,4 @@ This topic links to frequently asked questions about BitLocker. BitLocker is a d
 -   [BitLocker: How to deploy on Windows Server 2012](bitlocker-how-to-deploy-on-windows-server.md)
 -   [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md)
 -   [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker-use-bitlocker-recovery-password-viewer.md)
--   [BitLocker Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/bitlocker/index?view=win10-ps)
+-   [BitLocker Cmdlets in Windows PowerShell](/powershell/module/bitlocker/index?view=win10-ps&preserve-view=true)

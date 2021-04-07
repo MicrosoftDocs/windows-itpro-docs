@@ -105,7 +105,7 @@ Administrators can further customize scenarios where Delivery Optimization will 
 
 ### Download mode
 
-Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. The following table shows the available download mode options and what they do. Additional technical details for these policies are available in [Policy CSP - Delivery Optimization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization).
+Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. The following table shows the available download mode options and what they do. Additional technical details for these policies are available in [Policy CSP - Delivery Optimization](/windows/client-management/mdm/policy-csp-deliveryoptimization).
 
 | Download mode option | Functionality when set |
 | --- | --- |

@@ -159,7 +159,7 @@ BitLocker integrates with Active Directory Domain Services (AD DS) to provide ce
 
 Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\*drive type*\\Choose how BitLocker protected drives can be recovered.
 
-By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](https://blogs.technet.microsoft.com/craigf/2011/01/26/delegating-access-in-ad-to-bitlocker-recovery-information/).
+By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
 
 The following recovery data is saved for each computer object:
 
@@ -194,8 +194,8 @@ However, you cannot use recovery passwords generated on a system in FIPS mode fo
 
 ## More information
 
-- [Trusted Platform Module](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-top-node)
-- [TPM Group Policy settings](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings)
+- [Trusted Platform Module](../tpm/trusted-platform-module-top-node.md)
+- [TPM Group Policy settings](../tpm/trusted-platform-module-services-group-policy-settings.md)
 - [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md)
 - [BitLocker](bitlocker-overview.md)
 - [BitLocker Group Policy settings](bitlocker-group-policy-settings.md)

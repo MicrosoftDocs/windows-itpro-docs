@@ -4,7 +4,7 @@ description: This article discusses different methods to administer security pol
 ms.assetid: 7617d885-9d28-437a-9371-171197407599
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Administer security policy settings
@@ -55,7 +56,7 @@ Over time, new ways to manage security policy settings have been introduced, whi
 |[Security Configuration Wizard](#using-the-security-configuration-wizard)|Scw.exe <br> SCW is a role-based tool available on servers only: You can use it to create a policy that enables services, firewall rules, and settings that are required for a selected server to perform specific roles.|
 |[Security Configuration Manager tool](#working-with-the-security-configuration-manager)|This tool set allows you to create, apply, and edit the security for your local device, organizational unit, or domain.|
 |[Group Policy](#working-with-group-policy-tools)|Gpmc.msc and Gpedit.msc <br> The Group Policy Management Console uses the Group Policy Object editor to expose the local Security options, which can then be incorporated into Group Policy Objects for distribution throughout the domain. The Local Group Policy Editor performs similar functions on the local device.|
-|Software Restriction Policies <br> See [Administer Software Restriction Policies](https://docs.microsoft.com/windows-server/identity/software-restriction-policies/administer-software-restriction-policies)|Gpedit.msc <br> Software Restriction Policies (SRP) is a Group Policy-based feature that identifies software programs running on computers in a domain, and it controls the ability of those programs to run.|
+|Software Restriction Policies <br> See [Administer Software Restriction Policies](/windows-server/identity/software-restriction-policies/administer-software-restriction-policies)|Gpedit.msc <br> Software Restriction Policies (SRP) is a Group Policy-based feature that identifies software programs running on computers in a domain, and it controls the ability of those programs to run.|
 |Administer AppLocker <br> See [Administer AppLocker](/windows/device-security/applocker/administer-applocker)|Gpedit.msc <br> Prevents malicious software (malware) and unsupported applications from affecting computers in your environment, and it prevents users in your organization from installing and using unauthorized applications.|
 
 ## <a href="" id="bkmk-secpol"></a>Using the Local Security Policy snap-in
@@ -93,7 +94,7 @@ The Security Compliance Manager is a downloadable tool that helps you plan, depl
 
 **To administer security policies by using the Security Compliance Manager**
 
-1. Download the most recent version. You can find out more info on the [Microsoft Security Guidance](https://blogs.technet.com/b/secguide/) blog.
+1. Download the most recent version. You can find out more info on the [Microsoft Security Guidance](/archive/blogs/secguide/) blog.
 1. Read the relevant security baseline documentation that is included in this tool.
 1. Download and import the relevant security baselines. The installation process steps you through baseline selection.
 1. Open the Help and follow instructions how to customize, compare, or merge your security baselines before deploying those baselines.
@@ -124,13 +125,13 @@ The SCW can be accessed through Server Manager or by running scw.exe. The wizard
 
 The Security Policy Wizard configures services and network security based on the server's role, as well as configures auditing and registry settings.
 
-For more information about SCW, including procedures, see [Security Configuration Wizard](https://docs.microsoft.com/previous-versions/orphan-topics/ws.11/cc754997(v=ws.11)).
+For more information about SCW, including procedures, see [Security Configuration Wizard](/previous-versions/orphan-topics/ws.11/cc754997(v=ws.11)).
 
 ## <a href="" id="bkmk-scmtool"></a>Working with the Security Configuration Manager
 
 The Security Configuration Manager tool set allows you to create, apply, and edit the security for your local device, organizational unit, or domain.
 
-For procedures on how to use the Security Configuration Manager, see [Security Configuration Manager](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc758219(v=ws.10)).
+For procedures on how to use the Security Configuration Manager, see [Security Configuration Manager](/previous-versions/windows/it-pro/windows-server-2003/cc758219(v=ws.10)).
 
 The following table lists the features of the Security Configuration Manager.
 
@@ -222,7 +223,7 @@ If you modify the security settings on your local device by using the local secu
 
 ### Using the Security Configuration Manager
 
-For procedures on how to use the Security Configuration Manager, see [Security Configuration Manager How To](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc784762(v=ws.10)). This section contains information in this topic about:
+For procedures on how to use the Security Configuration Manager, see [Security Configuration Manager How To](/previous-versions/windows/it-pro/windows-server-2003/cc784762(v=ws.10)). This section contains information in this topic about:
 
 - [Applying security settings](#applying-security-settings)
 - [Importing and exporting security templates](#importing-and-exporting-security-templates)

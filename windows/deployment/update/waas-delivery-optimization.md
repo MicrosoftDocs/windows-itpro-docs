@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-Windows updates, upgrades, and applications can contain packages with very large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization in conjunction with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or Microsoft Endpoint Configuration Manager (when installation of Express Updates is enabled).  
+Windows updates, upgrades, and applications can contain packages with very large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization in conjunction with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or Microsoft Endpoint Manager (when installation of Express Updates is enabled).  
 
 Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimization cloud services is a requirement. This means that in order to use the peer-to-peer functionality of Delivery Optimization, devices must have access to the internet.
 
@@ -41,7 +41,7 @@ For information about setting up Delivery Optimization, including tips for the b
 
   ![absolute bandwidth settings in delivery optimization interface](images/DO-absolute-bandwidth.png)
 
-- Activity Monitor now identifies the cache server used for as the source for Microsoft Connected Cache. For more information about using Microsoft Connected Cache with Configuration Manager, see [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
+- Activity Monitor now identifies the cache server used for as the source for Microsoft Connected Cache. For more information about using Microsoft Connected Cache with Configuration Manager, see [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
 
 - New options for [`Get-DeliveryOptimizationPerfSnap`](waas-delivery-optimization-setup.md#analyze-usage).
 
@@ -62,10 +62,11 @@ For information about setting up Delivery Optimization, including tips for the b
     - DOMaxUploadBandwidth
     
 - Support for new types of downloads:
-    - Office installations and updates
+    - Office installs and updates
     - Xbox game pass games
     - MSIX apps (HTTP downloads only)
-    - Edge browser installations and updates
+    - Edge browser installs and updates
+    - [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) 
 
 ## Requirements
 
@@ -86,14 +87,16 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Windows Store files | 1511 |
 | Windows Store for Business files | 1511 |
 | Windows Defender definition updates | 1511 |
-| Microsoft 365 Apps and updates | 1709 (for more information, see [Delivery Optimization and Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/delivery-optimization)) |
+| Microsoft 365 Apps and updates | 1709 (for more information, see [Delivery Optimization and Microsoft 365 Apps](/deployoffice/delivery-optimization)) |
 | Win32 apps for Intune | 1709 |
 | Xbox game pass games | 2004 |
 | MSIX apps (HTTP downloads only) | 2004 |
-| Configuration Manager Express Updates | 1709 + Configuration Manager version 1711 |
+| Configuration Manager Express updates | 1709 + Configuration Manager version 1711 |
+| Edge browser installs and updates | 1809 |
+| [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) | 1903 |
 
 > [!NOTE]
-> Starting with Configuration Manager version 1910, you can use Delivery Optimization for the distribution of all Windows update content for clients running Windows 10 version 1709 or newer, not just express installation files. For more, see [Delivery Optimization starting in version 1910](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#bkmk_DO-1910).
+> Starting with Configuration Manager version 1910, you can use Delivery Optimization for the distribution of all Windows update content for clients running Windows 10 version 1709 or newer, not just express installation files. For more, see [Delivery Optimization starting in version 1910](/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#bkmk_DO-1910).
 
 
 
@@ -111,7 +114,7 @@ You can use Group Policy or an MDM solution like Intune to configure Delivery Op
 You will find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
 In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimization/**.
 
-Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](https://docs.microsoft.com/intune/delivery-optimization-windows))
+Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](/intune/delivery-optimization-windows))
 
 **Starting with Windows 10, version 1903,** you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
@@ -138,7 +141,7 @@ If you set up Delivery Optimization to create peer groups that include devices a
 Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
 
 
-**What are the requirements if I use a proxy?**: For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/delivery-optimization-proxy). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update).
+**What are the requirements if I use a proxy?**: For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](./delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update).
 
 **What hostnames should I allow through my firewall to support Delivery Optimization?**: 
 
@@ -238,7 +241,7 @@ If you suspect this is the problem, check Delivery Optimization settings that co
 
 ## Learn more
 
-[Windows 10, Delivery Optimization, and WSUS](https://blogs.technet.microsoft.com/mniehaus/2016/08/16/windows-10-delivery-optimization-and-wsus-take-2/)
+[Windows 10, Delivery Optimization, and WSUS](/archive/blogs/mniehaus/windows-10-delivery-optimization-and-wsus-take-2)
 
 
 ## Related articles
@@ -250,12 +253,11 @@ If you suspect this is the problem, check Delivery Optimization settings that co
 - [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
+- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
 - [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
-- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service)
 - [Manage device restarts after updates](waas-restart.md)

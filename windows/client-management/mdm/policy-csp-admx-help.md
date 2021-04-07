@@ -18,7 +18,7 @@ manager: dansimp
 
 <hr/>
 
-<!--Policies-->
+<!--Policies--
 ## ADMX_Help policies  
 
 <dl>
@@ -83,7 +83,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to exclude HTML Help Executable from being monitored by software-enforced Data Execution Prevention.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to exclude HTML Help Executable from being monitored by software-enforced Data Execution Prevention.
 
 Data Execution Prevention (DEP) is designed to block malicious code that takes advantage of exception-handling mechanisms in Windows by monitoring your programs to make sure that they use system memory safely.
 
@@ -154,7 +154,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to restrict certain HTML Help commands to function only in HTML Help (.chm) files within specified folders and their subfolders. Alternatively, you can disable these commands on the entire system. It is strongly recommended that only folders requiring administrative privileges be added to this policy setting.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to restrict certain HTML Help commands to function only in HTML Help (.chm) files within specified folders and their subfolders. Alternatively, you can disable these commands on the entire system. It is strongly recommended that only folders requiring administrative privileges be added to this policy setting.
 
 If you enable this policy setting, the commands function only for .chm files in the specified folders and their subfolders.
 
@@ -237,7 +237,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to restrict programs from being run from online Help.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to restrict programs from being run from online Help.
 
 If you enable this policy setting, you can prevent specified programs from being run from Help. When you enable this policy setting, enter the file names names of the programs you want to restrict, separated by commas.
 
@@ -311,7 +311,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to restrict programs from being run from online Help.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to restrict programs from being run from online Help.
 
 If you enable this policy setting, you can prevent specified programs from being run from Help. When you enable this policy setting, enter the file names names of the programs you want to restrict, separated by commas.
 
@@ -342,14 +342,15 @@ ADMX Info:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607
+- 2 - Available in Windows 10, version 1703
+- 3 - Available in Windows 10, version 1709
+- 4 - Available in Windows 10, version 1803
+- 5 - Available in Windows 10, version 1809
+- 6 - Available in Windows 10, version 1903
+- 7 - Available in Windows 10, version 1909
+- 8 - Available in Windows 10, version 2004
+- 9 - Available in Windows 10, version 20H2
 
 <!--/Policies-->
 
