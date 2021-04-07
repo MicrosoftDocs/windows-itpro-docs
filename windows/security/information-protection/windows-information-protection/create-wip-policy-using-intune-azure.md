@@ -427,7 +427,6 @@ For each cloud resource, you may also optionally specify a proxy server from you
 Be aware that all traffic routed through your Internal proxy servers is considered enterprise.
 
 Separate multiple resources with the "|" delimiter. 
-If you don’t use proxy servers, you must also include the "," delimiter just before the "|". 
 For example: 
 
 ```console
