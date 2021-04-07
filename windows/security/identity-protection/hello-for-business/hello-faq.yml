@@ -35,7 +35,7 @@ sections:
 
       - question: Can I use Windows Hello for Business key trust and RDP?
         answer: |
-          Remote Desktop Protocol (RDP) does not currently support using key-based authentication and self-signed certificates as supplied credentials. RDP with supplied credentials is currently only supported with certificate-based deployments. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
+          Remote Desktop Protocol (RDP) now supports using key-based authentication. For more information, see [Deploying Certificates to Key Trust Users to Enable RDP](../hello-deployment-rdp-certs.md).
           
       - question: Can I deploy Windows Hello for Business by using Microsoft Endpoint Configuration Manager?
         answer: |
