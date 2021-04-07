@@ -63,7 +63,7 @@ To enforce processing of the group policy, you can run ```gpupdate /force```.
     > It will enable VBS and Secure Boot and you can do it with or without UEFI Lock. If you will need to disable Credential Guard remotely, enable it without UEFI lock.
 
 > [!TIP]
-> You can also configure Credential Guard using an account protection profile in endpoint security. See [Account protection policy settings for endpoint security in Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-security-account-protection-profile-settings).
+> You can also configure Credential Guard by using an account protection profile in endpoint security. See [Account protection policy settings for endpoint security in Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-security-account-protection-profile-settings).
 
 ### Enable Windows Defender Credential Guard by using the registry
 
@@ -167,7 +167,8 @@ You can view System Information to check that Windows Defender Credential Guard 
 
     Here's an example:
 
-    ![System Information](images/credguard-msinfo32.png)
+    > [!div class="mx-imgBorder"]
+    > ![System Information](images/credguard-msinfo32.png)
 
 You can also check that Windows Defender Credential Guard is running by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
 
@@ -261,7 +262,7 @@ To disable Windows Defender Credential Guard, you can use the following set of p
     > [!NOTE]
     > The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS. If you want to turn off both Windows Defender Credential Guard and virtualization-based security, run the following bcdedit commands after turning off all virtualization-based security Group Policy and registry settings:
     >
-    >```
+    >```console
     >bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
     >bcdedit /set vsmlaunchtype off
     >```
@@ -277,7 +278,7 @@ For more info on virtualization-based security and HVCI, see [Enable virtualizat
 
 You can also disable Windows Defender Credential Guard by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
 
-```console
+```powershell
 DG_Readiness_Tool_v3.6.ps1 -Disable -AutoReboot
 ```
 
