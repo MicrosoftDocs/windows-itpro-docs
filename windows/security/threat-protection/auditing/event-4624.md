@@ -21,7 +21,7 @@ ms.technology: mde
 - Windows Server 2016
 
 
-<img src="images/event-4624.png" alt="Event 4624 illustration" width="438" height="668" hspace="10" align="left" />
+<img src="images/event-4624.png" alt="Event 4624 illustration" width="438" height="668" hspace="10" />
 
 ***Subcategory:***&nbsp;[Audit Logon](audit-logon.md)
 
@@ -29,7 +29,8 @@ ms.technology: mde
 
 This event generates when a logon session is created (on destination machine). It generates on the computer that was accessed, where the session was created.
 
-> **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
+> [!NOTE]
+> For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
 <br clear="all">
 
@@ -122,7 +123,8 @@ This event generates when a logon session is created (on destination machine). I
 
 - **Security ID** [Type = SID]**:** SID of account that reported information about successful logon or invokes it. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+  > [!NOTE]
+  > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 - **Account Name** [Type = UnicodeString]**:** the name of the account that reported information about successful logon.
 
@@ -185,7 +187,8 @@ This event generates when a logon session is created (on destination machine). I
 
 - **Security ID** [Type = SID]**:** SID of account for which logon was performed. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+  > [!NOTE]
+  > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 - **Account Name** [Type = UnicodeString]**:** the name of the account for which logon was performed.
 
@@ -219,7 +222,8 @@ This event generates when a logon session is created (on destination machine). I
 
     This parameter might not be captured in the event, and in that case appears as "{00000000-0000-0000-0000-000000000000}".
 
-> **Note**&nbsp;&nbsp;**GUID** is an acronym for 'Globally Unique Identifier'. It is a 128-bit integer number used to identify resources, activities, or instances.
+    > [!NOTE]
+    > **GUID** is an acronym for 'Globally Unique Identifier'. It is a 128-bit integer number used to identify resources, activities, or instances.
 
 **Process Information:**
 
@@ -277,8 +281,8 @@ This event generates when a logon session is created (on destination machine). I
 
 For 4624(S): An account was successfully logged on.
 
-| **Type of monitoring required**                                                                                                                                                                                                                                                                                   | **Recommendation**                                                                                                                                                            |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Type of monitoring required | Recommendation |
+|-----------------------------|-------------------------|
 | **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on.       | Monitor this event with the **"New Logon\\Security ID"** that corresponds to the high-value account or accounts.                                                              |
 | **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **"New Logon\\Security ID"** (with other information) to monitor how or when a particular account is being used. |
 | **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor this event with the **"New Logon\\Security ID"** that corresponds to the accounts that should never be used.                                                          |
