@@ -13,18 +13,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 04/06/2021
+ms.date: 04/08/2021
 ms.technology: mde
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- Microsoft Defender Antivirus
 
 There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
@@ -78,6 +76,24 @@ All our updates contain
 <br/><br/>
 
 <details>
+<summary> March-2021 (Platform: 4.18.2103.6 | Engine: 1.1.18000.5)</summary>
+
+&ensp;Security intelligence update version: **1.335.36.0**  
+&ensp;Released: **April 1, 2021**  
+&ensp;Platform: **4.19.2103.6**  
+&ensp;Engine: **1.1.18000.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+
+- Improvement to the Behavior Monitoring engine 
+- Expanded network brute-force-attack mitigations 
+- Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
 <summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
 
 &ensp;Security intelligence update version: **1.333.7.0**  
@@ -105,7 +121,6 @@ No known issues
     
 ### What's new
 
-- Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
 - Shellcode exploit detection improvements
 - Increased visibility for credential stealing attempts
 - Improvements in antitampering features in Microsoft Defender Antivirus services
@@ -115,7 +130,13 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
+<br/><br/>
+<details>
 <summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
@@ -131,13 +152,7 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
-<br/><br/>
-<details>
+</details><details>
 <summary> October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</summary>
 
 &ensp;Security intelligence update version: **1.327.7.0**  
