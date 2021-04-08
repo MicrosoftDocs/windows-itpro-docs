@@ -48,6 +48,31 @@ Required. The critical threshold size, in megabytes. UWF sends a critical thresh
 
 Supported operations are Get and Replace.
 
+<a href="" id="currentsession-volume\<volumeid>\swapfilesize"></a>**CurrentSession/Volume\<VolumeID>\SWAPFileSize**
+Required. Read-only CFG_DATATYPE_INTEGER property that contains non-zero (for example, 1) value if volume has overlay file created/used on it.
+
+Future: Contains actual size of the file
+
+<a href="" id="nextsession-volume\<volumeid>\swapfilesize"></a>**NextSession/Volume\<VolumeID>\SWAPFileSize**
+Required. Read/Write CFG_DATATYPE_INTEGER property that contains non-zero (for example, 1) if volume has overlay created/used on it.
+
+Setting the value
+- from zero to non-zero will lead to creation of the swapfile on that volume.
+- from non-zero to zero – not supported
+
+To “move” swapfile to another volume, set the SwapfileSize property on that other volumes CSP note to non-zero.
+
+Currently SwapfileSize should not be relied for determining or controlling the overlay size, 
+
+<a href="" id="currentsession-maximumoverlaysize"></a>**CurrentSession/MaximumOverlaySize** or
+
+<a href="" id="nextsession-maximumoverlaysize"></a>**NextSession/MaximumOverlaySize**
+should be used for that purpose.
+
+> [!NOTE]
+> Only single swapfile is supported in current implementation and creating swapfile on specific volume will disable any other swapfile created on other volumes.
+
+
 <a href="" id="currentsession-warningoverlaythreshold"></a>**CurrentSession/WarningOverlayThreshold**  
 Required. The warning threshold size, in megabytes. UWF sends a warning threshold notification event when the UWF overlay size reaches or exceeds this value.
 
