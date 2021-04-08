@@ -78,17 +78,17 @@ All our updates contain
 <details>
 <summary> March-2021 (Platform: 4.18.2103.6 | Engine: 1.1.18000.5)</summary>
 
-&ensp;Security intelligence update version: **1.335.272.0**  
+&ensp;Security intelligence update version: **1.335.36.0**  
 &ensp;Released: **April 1, 2021**  
-&ensp;Platform: **4.18.2103.6**  
+&ensp;Platform: **4.19.2103.6**  
 &ensp;Engine: **1.1.18000.5**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
 
+- Improvement to the Behavior Monitoring engine 
+- Expanded network brute-force-attack mitigations 
 - Additional failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
-- item
-- item
 
 ### Known Issues
 No known issues  
