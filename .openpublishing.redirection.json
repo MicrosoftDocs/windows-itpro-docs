@@ -18609,6 +18609,11 @@
       "source_path": "enable-cloud-protection-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "evaluate-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/evaluate-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }                
 	    ]
 }
