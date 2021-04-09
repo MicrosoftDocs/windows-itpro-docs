@@ -18579,6 +18579,11 @@
       "source_path": "customize-run-review-remediate-scans-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "customize-run-review-remediate-scans-windows-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-windows-defender-antivirus",
+      "redirect_document_id": false
     }                
 	    ]
 }
