@@ -10,7 +10,6 @@ author: mjcaparas
 ms.author: macapara
 audience: ITPro
 ms.localizationpriority: high
-ms.date: 11/27/2019
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -52,7 +51,7 @@ Microsoft Defender SmartScreen provide an early warning system against websites 
 
 - **Management through Group Policy and Microsoft Intune.** Microsoft Defender SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all available settings, see [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](microsoft-defender-smartscreen-available-settings.md).
 
-- **Blocking URLs associated with potentially unwanted applications.** In Microsoft Edge (based on Chromium), SmartScreen blocks URLs associated with potentially unwanted applications, or PUAs. For more information on blocking URLs associated with PUAs, see [Detect and block potentially unwanted applications](../microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md).
+- **Blocking URLs associated with potentially unwanted applications.** In Microsoft Edge (based on Chromium), SmartScreen blocks URLs associated with potentially unwanted applications, or PUAs. For more information on blocking URLs associated with PUAs, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 > [!IMPORTANT]
 > SmartScreen protects against malicious files from the internet. It does not protect against malicious files on internal locations or network shares, such as shared folders with UNC paths or SMB/CIFS shares.
