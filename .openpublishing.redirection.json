@@ -9477,7 +9477,7 @@
     },
     {
       "source_path": "windows/keep-secure/configure-advanced-scan-types-windows-defender-antivirus.md",
-      "redirect_url": "/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus",
       "redirect_document_id": false
     },
     {
