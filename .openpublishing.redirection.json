@@ -2282,7 +2282,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-antivirus/collect-diagnostic-data-update-compliance.md",
-      "redirect_url": "/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/collect-diagnostic-data-update-compliance",
       "redirect_document_id": false
     },
     {
