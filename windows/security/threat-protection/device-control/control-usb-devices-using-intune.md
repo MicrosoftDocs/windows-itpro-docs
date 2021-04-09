@@ -322,7 +322,7 @@ For example, using either approach, you can automatically have the Microsoft Def
 
 ## Related topics
 
-- [Configure real-time protection for Microsoft Defender Antivirus](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md)
+- [Configure real-time protection for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
 - [Defender/AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 - [Policy/DeviceInstallation CSP](/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [Perform a custom scan of a removable device](/samples/browse/?redirectedfrom=TechNet-Gallery)
