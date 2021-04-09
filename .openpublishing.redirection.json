@@ -18654,6 +18654,26 @@
       "source_path": "microsoft-defender-antivirus-in-windows-10.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-defender-antivirus-on-windows-server-2016.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-on-windows-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-defender-offline.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-offline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-defender-security-center-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-security-center-antivirus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "office-365-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/office-365-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }                
 	    ]
 }
