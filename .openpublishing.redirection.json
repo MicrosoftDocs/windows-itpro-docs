@@ -18544,6 +18544,16 @@
       "source_path": "configure-network-connections-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "configure-notifications-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-notifications-microsoft-defender-antivirus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "configure-process-opened-file-exclusions-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }          
 	    ]
 }
