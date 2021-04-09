@@ -18559,6 +18559,11 @@
       "source_path": "configure-protection-features-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-protection-features-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "configure-real-time-protection-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }                
 	    ]
 }
