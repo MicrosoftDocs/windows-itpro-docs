@@ -18724,6 +18724,16 @@
       "source_path": "troubleshoot-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "troubleshoot-reporting.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/troubleshoot-reporting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "use-group-policy-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/use-group-policy-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }     
 	    ]
 }
