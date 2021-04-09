@@ -18589,6 +18589,11 @@
       "source_path": "deploy-manage-report-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/deploy-manage-report-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "deploy-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/deploy-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }                
 	    ]
 }
