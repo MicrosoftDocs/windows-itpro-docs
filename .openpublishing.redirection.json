@@ -18709,6 +18709,21 @@
       "source_path": "scheduled-catch-up-scans-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/scheduled-catch-up-scans-microsoft-defender-antivirus",
       "redirect_document_id": false
-    }      
+    },
+    {
+      "source_path": "specify-cloud-protection-level-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/specify-cloud-protection-level-microsoft-defender-antivirus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "troubleshoot-microsoft-defender-antivirus-when-migrating.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus-when-migrating",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "troubleshoot-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus",
+      "redirect_document_id": false
+    }     
 	    ]
 }
