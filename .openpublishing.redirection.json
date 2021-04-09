@@ -16372,7 +16372,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-antivirus/collect-diagnostic-data.md",
-      "redirect_url": "/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/collect-diagnostic-data",
       "redirect_document_id": false
     },
     {
