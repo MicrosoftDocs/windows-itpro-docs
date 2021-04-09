@@ -25,7 +25,7 @@
 
 #### [Manage Microsoft Defender Antivirus in your business]()
 ##### [Management overview](/microsoft-365/security/defender-endpoint/configuration-management-reference-microsoft-defender-antivirus)
-##### [Use Microsoft Intune and Microsoft Endpoint Manager to manage Microsoft Defender Antivirus](use-intune-config-manager-microsoft-defender-antivirus)
+##### [Use Microsoft Intune and Microsoft Endpoint Manager to manage Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/use-intune-config-manager-microsoft-defender-antivirus)
 ##### [Use Group Policy settings to manage Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/use-group-policy-microsoft-defender-antivirus)
 ##### [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/use-powershell-cmdlets-microsoft-defender-antivirus)
 ##### [Use Windows Management Instrumentation (WMI) to manage Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/use-wmi-microsoft-defender-antivirus)
