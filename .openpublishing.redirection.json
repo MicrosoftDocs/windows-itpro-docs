@@ -2287,7 +2287,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md",
-      "redirect_url": "/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus",
       "redirect_document_id": false
     },
     {
@@ -9467,7 +9467,7 @@
     },
     {
       "source_path": "windows/keep-secure/command-line-arguments-windows-defender-antivirus.md",
-      "redirect_url": "/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus",
       "redirect_document_id": false
     },
     {
