@@ -18504,6 +18504,11 @@
       "source_path": "configure-advanced-scan-types-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "configure-block-at-first-sight-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }          
 	    ]
 }
