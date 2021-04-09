@@ -18704,6 +18704,11 @@
       "source_path": "run-scan-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/run-scan-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "scheduled-catch-up-scans-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/scheduled-catch-up-scans-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }      
 	    ]
 }
