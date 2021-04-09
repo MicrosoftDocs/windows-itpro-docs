@@ -18574,6 +18574,11 @@
       "source_path": "configure-server-exclusions-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-server-exclusions-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "customize-run-review-remediate-scans-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }                
 	    ]
 }
