@@ -18514,6 +18514,16 @@
       "source_path": "configure-cloud-block-timeout-period-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-cloud-block-timeout-period-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "configure-end-user-interaction-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-end-user-interaction-microsoft-defender-antivirus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "configure-exclusions-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }          
 	    ]
 }
