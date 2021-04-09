@@ -18594,6 +18594,11 @@
       "source_path": "deploy-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/deploy-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "deployment-vdi-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }                
 	    ]
 }
