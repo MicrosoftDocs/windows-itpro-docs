@@ -18689,6 +18689,11 @@
       "source_path": "report-monitor-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/report-monitor-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "restore-quarantined-files-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/restore-quarantined-files-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }           
 	    ]
 }
