@@ -84,11 +84,11 @@ The attack surface reduction set of capabilities provide the first line of defen
 **[Next-generation protection](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10)**<br>
 To further reinforce the security perimeter of your network, Microsoft Defender for Endpoint uses next-generation protection designed to catch all types of emerging threats.
 
-- [Behavior monitoring](./microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md)
-- [Cloud-based protection](./microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus.md)
-- [Machine learning](./microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
-- [URL Protection](./microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus.md)
-- [Automated sandbox service](./microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [Behavior monitoring](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
+- [Cloud-based protection](/microsoft-365/security/defender-endpoint/configure-protection-features-microsoft-defender-antivirus)
+- [Machine learning](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus)
+- [URL Protection](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
+- [Automated sandbox service](/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
 
