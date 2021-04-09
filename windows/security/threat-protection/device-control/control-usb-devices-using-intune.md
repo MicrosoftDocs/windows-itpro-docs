@@ -265,7 +265,7 @@ This can be done by setting **Untrusted and unsigned processes that run from USB
 With this rule, admins can prevent or audit unsigned or untrusted executable files from running from USB removable drives, including SD cards.
 Affected file types include executable files (such as .exe, .dll, or .scr) and script files such as a PowerShell (.ps), VisualBasic (.vbs), or JavaScript (.js) files.
 
-These settings require [enabling real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md).
+These settings require [enabling real-time protection](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus).
 
 1. Sign in to the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
 2. Click **Devices** > **Windows** > **Configuration Policies** > **Create profile**. 
