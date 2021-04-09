@@ -18749,6 +18749,16 @@
       "source_path": "use-wmi-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/use-wmi-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/utilize-microsoft-cloud-protection-microsoft-defender-antivirus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "why-use-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/why-use-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }     
 	    ]
 }
