@@ -18524,6 +18524,11 @@
       "source_path": "configure-exclusions-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "configure-extension-file-exclusions-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }          
 	    ]
 }
