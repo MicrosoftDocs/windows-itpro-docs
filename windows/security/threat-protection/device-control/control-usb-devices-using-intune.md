@@ -68,7 +68,7 @@ To prevent malware infections or data loss, an organization may restrict USB dri
 
 All of the above controls can be set through the Intune [Administrative Templates](/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
 
-![AdminTemplates](images/admintemplates.png)
+![screenshot of list of Admin Templates](images/admintemplates.png)
 
 >[!Note]
 >Using Intune, you can apply device configuration policies to Azure AD user and/or device groups.
@@ -211,13 +211,13 @@ You can prevent installation of the prohibited peripherals with matching device 
 
 Using Intune, you can limit the services that can use Bluetooth through the ["Bluetooth allowed services"](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide). The default state of "Bluetooth allowed services" settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and doesn’t add the file transfer GUIDs, file transfer should be blocked.
 
-![Bluetooth](images/bluetooth.png)
+![screenshot of Bluetooth settings page](images/bluetooth.png)
 
 ### Use Microsoft Defender for Endpoint baseline settings
 
-The Microsoft Defender for Endpoint baseline settings represent the recommended configuration for ATP. Configuration settings for baseline are located in the edit profile page of the configuration settings.
+The Microsoft Defender for Endpoint baseline settings represent the recommended configuration for threat protection. Configuration settings for baseline are located in the edit profile page of the configuration settings.
 
-![Baselines](images/baselines.png)
+![Baselines in MEM](images/baselines.png)
 
 ## Prevent threats from removable storage
   
