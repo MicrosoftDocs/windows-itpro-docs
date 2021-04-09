@@ -18639,6 +18639,11 @@
       "source_path": "manage-protection-updates-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/manage-protection-updates-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-updates-mobile-devices-vms-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }                
 	    ]
 }
