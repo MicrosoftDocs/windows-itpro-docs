@@ -18499,6 +18499,11 @@
       "source_path": "configuration-management-reference-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configuration-management-reference-microsoft-defender-antivirus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "configure-advanced-scan-types-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }          
 	    ]
 }
