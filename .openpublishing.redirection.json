@@ -18539,6 +18539,11 @@
       "source_path": "configure-microsoft-defender-antivirus-features.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-microsoft-defender-antivirus-features",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "configure-network-connections-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus",
+      "redirect_document_id": false
     }          
 	    ]
 }
