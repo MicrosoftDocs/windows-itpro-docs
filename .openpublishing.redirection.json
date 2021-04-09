@@ -18679,7 +18679,11 @@
       "source_path": "prevent-changes-to-security-settings-with-tamper-protection.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection",
       "redirect_document_id": false
-    }
-                
+    },
+    {
+      "source_path": "prevent-end-user-interaction-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/prevent-end-user-interaction-microsoft-defender-antivirus",
+      "redirect_document_id": false
+    }           
 	    ]
 }
