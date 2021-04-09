@@ -2327,7 +2327,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-antivirus/configure-local-policy-overrides-windows-defender-antivirus.md",
-      "redirect_url": "/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus",
       "redirect_document_id": false
     },
     {
@@ -18528,6 +18528,11 @@
     {
       "source_path": "configure-extension-file-exclusions-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "configure-local-policy-overrides-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus",
       "redirect_document_id": false
     }          
 	    ]
