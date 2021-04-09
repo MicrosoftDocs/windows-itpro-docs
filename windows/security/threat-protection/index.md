@@ -81,7 +81,7 @@ The attack surface reduction set of capabilities provide the first line of defen
 
 <a name="ngp"></a>
 
-**[Next-generation protection](microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md)**<br>
+**[Next-generation protection](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10)**<br>
 To further reinforce the security perimeter of your network, Microsoft Defender for Endpoint uses next-generation protection designed to catch all types of emerging threats.
 
 - [Behavior monitoring](./microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md)
