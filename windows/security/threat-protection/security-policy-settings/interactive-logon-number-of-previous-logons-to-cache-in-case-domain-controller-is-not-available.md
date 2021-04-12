@@ -43,7 +43,7 @@ Users who access the server console will have their logon credentials cached on 
 encrypting the information and keeping the cached credentials in the system's registries, which are spread across numerous physical locations.
 
 > [!NOTE]
-> The cached account information does not expire, but can get overwritten, as described previously.
+> The cached account information does not expire, but can get overwritten, as previously described.
 
 ### Possible values
 
