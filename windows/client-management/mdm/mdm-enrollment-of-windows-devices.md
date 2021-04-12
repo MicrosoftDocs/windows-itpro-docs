@@ -11,8 +11,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
-ms.date: 11/19/2020
+author: dansimp
 ---
 
 # MDM enrollment of Windows 10-based devices
