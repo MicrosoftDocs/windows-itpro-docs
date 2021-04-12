@@ -35,14 +35,14 @@ Dual enrollment enables administrators to perform elevated, administrative funct
 
 By design, Windows 10 does not enumerate all Windows Hello for Business users from within a user's session.  Using the computer Group Policy setting, **Allow enumeration of emulated smart card for all users**, you can configure a device to enumerate all enrolled Windows Hello for Business credentials on selected devices.
 
-With this setting, administrative users can sign-in to Windows 10, version 1709 using their non-privileged Windows Hello for Business credentials for normal work flow such as email, but can launch Microsoft Management Consoles (MMCs), Remote Desktop Services clients, and other applications by selecting **Run as different user** or **Run as administrator**, selecting the privileged user account, and providing their PIN.  Administrators can also take advantage of this feature with command line applications by using **runas.exe** combined with the **/smartcard** argument.  This enables administrators to perform their day-to-day operations without needing to sign-in and out, or use fast user switching when alternating between privileged and non-privileged workloads.
+With this setting, administrative users can sign in to Windows 10, version 1709 using their non-privileged Windows Hello for Business credentials for normal work flow such as email, but can launch Microsoft Management Consoles (MMCs), Remote Desktop Services clients, and other applications by selecting **Run as different user** or **Run as administrator**, selecting the privileged user account, and providing their PIN.  Administrators can also take advantage of this feature with command-line applications by using **runas.exe** combined with the **/smartcard** argument.  This enables administrators to perform their day-to-day operations without needing to sign in and out, or use fast user switching when alternating between privileged and non-privileged workloads.
 
 > [!IMPORTANT]
 > You must configure a Windows 10 computer for Windows Hello for Business dual enrollment before either user (privileged or non-privileged) provisions Windows Hello for Business.  Dual enrollment is a special setting that is configured on the Windows Hello container during creation.
 
 ## Configure Windows Hello for Business Dual Enrollment
 
-In this task you will
+In this task, you will
 
 * Configure Active Directory to support Domain Administrator enrollment
 * Configure Dual Enrollment using Group Policy
@@ -53,7 +53,7 @@ The designed Windows Hello for Business configuration gives the **Key Admins** (
 
 Active Directory Domain Services uses AdminSDHolder to secure privileged users and groups from unintentional modification by comparing and replacing the security on privileged users and groups to match those defined on the AdminSDHolder object on an hourly cycle. For Windows Hello for Business, your domain administrator account may receive the permissions but they will disappear from the user object unless you give the AdminSDHolder read and write permissions to the msDS-KeyCredential attribute.
 
-Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
+Sign in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
 1. Type the following command to add the **allow** read and write property permissions for msDS-KeyCredentialLink attribute for the **Key Admins** (or **KeyCredential Admins**) group on the AdminSDHolder object.</br>
 ```dsacls "CN=AdminSDHolder,CN=System,DC=domain,DC=com" /g "[domainName\keyAdminGroup]":RPWP;msDS-KeyCredentialLink```</br>
@@ -76,7 +76,7 @@ You configure Windows 10 to support dual enrollment using the computer configura
 4. Close the Group Policy Management Editor to save the Group Policy object.  Close the GPMC.
 5. Restart computers targeted by this Group Policy object.
 
-The computer is ready for dual enrollment.  Sign-in as the privileged user first and enroll for Windows Hello for Business. Once completed, sign-out and sign-in as the non-privileged user and enroll for Windows Hello for Business.  You can now use your privileged credential to perform privileged tasks without using your password and without needing to switch users.
+The computer is ready for dual enrollment.  Sign in as the privileged user first and enroll for Windows Hello for Business. Once completed, sign out and sign in as the non-privileged user and enroll for Windows Hello for Business.  You can now use your privileged credential to perform privileged tasks without using your password and without needing to switch users.
 
 ## Related topics
 
