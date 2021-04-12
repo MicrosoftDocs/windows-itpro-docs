@@ -1327,7 +1327,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-proxy-internet",
       "redirect_document_id": false
     },
     {
@@ -1337,7 +1337,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-server-endpoints",
       "redirect_document_id": false
     },
     {
@@ -1347,7 +1347,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
       "redirect_document_id": false
     },
     {
@@ -1357,7 +1357,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/configure-splunk-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/configure-splunk-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
       "redirect_document_id": false
     },
     {
@@ -1372,7 +1372,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/custom-ti-api-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/custom-ti-api-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-indicators",
       "redirect_document_id": false
     },
     {
@@ -1392,17 +1392,17 @@
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/general-settings-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/data-retention-settings-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/data-retention-settings",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/data-retention-settings-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/data-retention-settings",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/data-retention-settings",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/data-storage-privacy-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/data-storage-privacy-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/data-storage-privacy",
       "redirect_document_id": false
     },
     {
@@ -1412,7 +1412,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/defender-compatibility",
       "redirect_document_id": false
     },
     {
@@ -1427,7 +1427,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-indicators",
       "redirect_document_id": false
     },
     {
@@ -1442,17 +1442,17 @@
     },
     {
       "source_path": "windows/keep-secure/configure-aad-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/threat-protection/windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/enable-siem-integration",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/keep-secure/enable-siem-integration-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/threat-protection/windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/enable-siem-integration",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/enable-siem-integration",
       "redirect_document_id": false
     },
     {
@@ -1467,7 +1467,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/event-error-codes-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/event-error-codes-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/event-error-codes",
       "redirect_document_id": false
     },
     {
@@ -1477,7 +1477,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/experiment-custom-ti-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/experiment-custom-ti-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-indicators",
       "redirect_document_id": false
     },
     {
