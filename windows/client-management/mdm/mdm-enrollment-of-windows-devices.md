@@ -247,7 +247,7 @@ To create a local account and connect the device:
 
    After you complete the flow, your device will be connected to your organization’s MDM.
    
-### Help with connecting personally-owned devices
+### Help with connecting personally owned devices
 
 There are a few instances where your device may not be able to connect to work.
 
