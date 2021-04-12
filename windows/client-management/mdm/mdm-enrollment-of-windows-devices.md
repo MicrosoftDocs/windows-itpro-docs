@@ -279,7 +279,7 @@ The deep link used for connecting your device to work will always use the follow
 | accesstoken | Custom parameter for MDM servers to use as they see fit. Typically, this can be used as a token to validate the enrollment request. Added in Windows 10, version 1703. | string |
 | deviceidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to pass in a unique device identifier. Added in Windows 10, version 1703. | GUID |
 | tenantidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to identify which tenant the device or user belongs to. Added in Windows 10, version 1703. | GUID or string |
-| ownership | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to determine whether the device is BYOD or Corp Owned. Added in Windows 10, version 1703. | 1, 2, or 3. Where 1 - ownership is unknown, 2 - personally-owned, 3 - corporate-owned |
+| ownership | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to determine whether the device is BYOD or Corp Owned. Added in Windows 10, version 1703. | 1, 2, or 3. Where "1" means ownership is unknown, "2" means the device is personally-owned, and "3" means the device is corporate-owned |
 
 > [!NOTE]
 > AWA and AADJ values for mode are only supported on Windows 10, version 1709 and later. 
