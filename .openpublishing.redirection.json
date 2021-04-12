@@ -1492,12 +1492,12 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/fix-unhealhty-sensors-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/fix-unhealthy-sensors",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors",
       "redirect_document_id": false
     },
     {
@@ -1507,7 +1507,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-cvekbmap-collection-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/get-cvekbmap-collection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-cvekbmap-collection",
       "redirect_document_id": false
     },
     {
@@ -1517,7 +1517,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-kbinfo-collection-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/get-kbinfo-collection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-kbinfo-collection",
       "redirect_document_id": false
     },
     {
@@ -1527,7 +1527,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-machinegroups-collection-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/get-machinegroups-collection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-machinegroups-collection",
       "redirect_document_id": false
     },
     {
@@ -1537,7 +1537,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/get-machinesecuritystates-collection-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/get-machinesecuritystates-collection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-machinesecuritystates-collection",
       "redirect_document_id": false
     },
     {
@@ -1562,7 +1562,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/investigate-alerts-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/investigate-alerts-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/investigate-alerts",
       "redirect_document_id": false
     },
     {
@@ -1572,7 +1572,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/investigate-domain-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/investigate-domain-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/investigate-domain",
       "redirect_document_id": false
     },
     {
@@ -1582,7 +1582,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/investigate-files-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/investigate-files-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/investigate-files",
       "redirect_document_id": false
     },
     {
@@ -1597,7 +1597,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/investigate-ip-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/investigate-ip-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/investigate-ip",
       "redirect_document_id": false
     },
     {
@@ -1607,7 +1607,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/investigate-machines",
       "redirect_document_id": false
     },
     {
@@ -1617,7 +1617,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/investigate-user-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/investigate-user-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/investigate-user",
       "redirect_document_id": false
     },
     {
@@ -1627,7 +1627,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/licensing-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/licensing-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/production-deployment",
       "redirect_document_id": false
     },
     {
