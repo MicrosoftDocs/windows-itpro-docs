@@ -58,6 +58,31 @@ EnrollmentStatusTracking
 ------------------------InstallationState
 ------------------------RebootRequired
 --------HasProvisioningCompleted
+
+
+./User/Vendor/MSFT
+./Device/Vendor/MSFT
+EnrollmentStatusTracking
+----DevicePreparation
+--------PolicyProviders
+------------ProviderName
+----------------InstallationState
+----------------LastError
+----------------Timeout
+----------------TrackedResourceTypes
+--------------------Apps
+----Setup
+--------Apps
+------------PolicyProviders
+----------------ProviderName
+--------------------TrackingPoliciesCreated
+------------Tracking
+----------------ProviderName
+--------------------AppName
+------------------------TrackingUri
+------------------------InstallationState
+------------------------RebootRequired
+--------HasProvisioningCompleted
 ```
 <a href="" id="vendor-msft"></a>**./Vendor/MSFT**  
 For device context, use **./Device/Vendor/MSFT** path and for user context, use **./User/Vendor/MSFT** path.
