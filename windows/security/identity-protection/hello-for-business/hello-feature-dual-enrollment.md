@@ -22,8 +22,9 @@ ms.reviewer:
 **Requirements**
 
 * Hybrid and On-premises Windows Hello for Business deployments
-* Enterprise Joined or Hybrid Azure joined devices
+* Enterprise joined or Hybrid Azure joined devices
 * Windows 10, version 1709
+* Certificate trust
 
 > [!NOTE]
 > This feature was previously known as **Privileged Credential** but was renamed to **Dual Enrollment** to prevent any confusion with the **Privileged Access Workstation** feature.
