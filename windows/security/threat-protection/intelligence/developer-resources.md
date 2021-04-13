@@ -9,8 +9,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
