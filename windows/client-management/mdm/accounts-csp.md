@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 03/27/2020
 ms.reviewer: 
 manager: dansimp
