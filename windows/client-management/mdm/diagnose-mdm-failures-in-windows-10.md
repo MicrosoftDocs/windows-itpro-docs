@@ -14,7 +14,7 @@ ms.date: 06/25/2018
 
 # Diagnose MDM failures in Windows 10
 
-To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop or mobile device. The following sections describe the procedures for collecting MDM logs.
+To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop. The following sections describe the procedures for collecting MDM logs.
 
 ## Download the MDM Diagnostic Information log from Windows 10 PCs
 
@@ -29,6 +29,27 @@ To help diagnose enrollment or device management issues in Windows 10 devices m
    ![Access work or school log files](images/diagnose-mdm-failures17.png)
 
 1. In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
+
+## Use command to collect logs directly from Windows 10 PCs
+
+You can also collect the MDM Diagnostic Information logs using the following command:
+
+```xml
+mdmdiagnosticstool.exe -area DeviceEnrollment;DeviceProvisioning;Autopilot -cab c:\users\public\documents\MDMDiagReport.cab
+```
+-   In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
+
+### Understanding cab structure
+The cab file will have logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment,DeviceProvisioning and Autopilot areas. It applies to the cab files collected via command line or Feedback Hub
+
+-   DiagnosticLogCSP_Collector_Autopilot_*: Autopilot etls
+-   DiagnosticLogCSP_Collector_DeviceProvisioning_*: Provisioning etls (Microsoft-Windows-Provisioning-Diagnostics-Provider)
+-   MDMDiagHtmlReport.html: Summary snapshot of MDM space configurations and policies. Includes, management url, MDM server device id, certificates, policies.
+-   MdmDiagLogMetadata,json: mdmdiagnosticstool metadata file, contains command line arguments used to run the tool
+-   MDMDiagReport.xml: contains a more detail view into the MDM space configurations, e.g enrollment variables
+-   MdmDiagReport_RegistryDump.reg: contains dumps from common MDM registry locations
+-   MdmLogCollectorFootPrint.txt: mdmdiagnosticslog tool logs from running the command
+-   *.evtx: Common event viewer logs microsoft-windows-devicemanagement-enterprise-diagnostics-provider-admin.evtx main one that contains MDM events.
 
 ## Collect logs directly from Windows 10 PCs
 
