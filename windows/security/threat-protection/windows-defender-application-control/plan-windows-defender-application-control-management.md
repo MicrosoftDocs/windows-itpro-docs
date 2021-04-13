@@ -66,7 +66,7 @@ Each time that a process is blocked by WDAC, events will be written to either th
 
 Collecting these events in a central location can help you maintain your WDAC policy and troubleshoot rule configuration problems. Event collection technologies such as those available in Windows allow administrators to subscribe to specific event channels and have the events from source computers aggregated into a forwarded event log on a Windows Server operating system collector. For more info about setting up an event subscription, see [Configure Computers to Collect and Forward Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11)).
 
-Additionally, WDAC events are collected by [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and can be queried using the [advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) feature.
+Additionally, WDAC events are collected by [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) and can be queried using the [advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) feature.
 
 ## Application and user support policy
 

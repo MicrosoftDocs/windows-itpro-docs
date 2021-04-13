@@ -518,8 +518,8 @@ When enabled or disabled exists on the client and admin moves the setting to not
 
 More details:  
 
-- [Microsoft Defender AV diagnostic data](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)  
-- [Collect investigation package from devices](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)  
+- [Microsoft Defender AV diagnostic data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)  
+- [Collect investigation package from devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)  
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.

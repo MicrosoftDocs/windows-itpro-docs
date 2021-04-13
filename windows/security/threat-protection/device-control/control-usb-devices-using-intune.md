@@ -29,7 +29,7 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
            - Microsoft Defender Antivirus real-time protection (RTP) to scan removable storage for malware.  
            - The Attack Surface Reduction (ASR) USB rule to block untrusted and unsigned processes that run from USB.  
            - Direct Memory Access (DMA) protection settings to mitigate DMA attacks, including Kernel DMA Protection for Thunderbolt and blocking DMA until a user signs in.  
-3. [Create customized alerts and response actions](#create-customized-alerts-and-response-actions) to monitor usage of removable devices based on these plug and play events or any other Microsoft Defender for Endpoint events with [custom detection rules](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules).
+3. [Create customized alerts and response actions](#create-customized-alerts-and-response-actions) to monitor usage of removable devices based on these plug and play events or any other Microsoft Defender for Endpoint events with [custom detection rules](/microsoft-365/security/defender-endpoint/custom-detection-rules).
 
 4. [Respond to threats](#respond-to-threats) from peripherals in real-time based on properties reported by each peripheral.
 
@@ -41,7 +41,7 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
 You can view plug and play connected events in Microsoft Defender for Endpoint advanced hunting to identify suspicious usage activity or perform internal investigations.
 For examples of Defender for Endpoint advanced hunting queries, see the [Microsoft Defender for Endpoint hunting queries GitHub repo](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries).
 
-Sample Power BI report templates are available for Microsoft Defender for Endpoint that you can use for Advanced hunting queries. With these sample templates, including one for device control, you can integrate the power of Advanced hunting into Power BI. See the [GitHub repository for PowerBI templates](https://github.com/microsoft/MDATP-PowerBI-Templates) for more information. See [Create custom reports using Power BI](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi) to learn more about Power BI integration.
+Sample Power BI report templates are available for Microsoft Defender for Endpoint that you can use for Advanced hunting queries. With these sample templates, including one for device control, you can integrate the power of Advanced hunting into Power BI. See the [GitHub repository for PowerBI templates](https://github.com/microsoft/MDATP-PowerBI-Templates) for more information. See [Create custom reports using Power BI](/microsoft-365/security/defender-endpoint/api-power-bi) to learn more about Power BI integration.
 
 ## Allow or block removable devices
 The following table describes the ways Microsoft Defender for Endpoint can allow or block removable devices based on granular configuration.
@@ -310,13 +310,13 @@ MDATP connector is one of over 200 pre-defined connectors including Outlook, Tea
 
 **Custom Detection Rules Response Action:**
 Both machine and file level actions can be applied.
-- [More information on Custom Detection Rules Response Actions](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
+- [More information on Custom Detection Rules Response Actions](/microsoft-365/security/defender-endpoint/custom-detection-rules)
 
 For information on device control related advance hunting events and examples on how to create custom alerts, see [Advanced hunting updates: USB events, machine-level actions, and schema changes](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Advanced-hunting-updates-USB-events-machine-level-actions-and/ba-p/824152).
 
 ## Respond to threats
 
-You can create custom alerts and automatic response actions with the [Microsoft Defender for Endpoint Custom Detection Rules](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules). Response actions within the custom detection cover both machine and file level actions. You can also create alerts and automatic response actions using [PowerApps](https://powerapps.microsoft.com/) and [Flow](https://flow.microsoft.com/) with the [Microsoft Defender for Endpoint connector](/connectors/wdatp/). The connector supports actions for investigation, threat scanning, and restricting running applications. It is one of over 200 pre-defined connectors including Outlook, Teams, Slack, and more. Custom connectors can also be built. See [Connectors](/connectors/) to learn more about connectors.
+You can create custom alerts and automatic response actions with the [Microsoft Defender for Endpoint Custom Detection Rules](/microsoft-365/security/defender-endpoint/custom-detection-rules). Response actions within the custom detection cover both machine and file level actions. You can also create alerts and automatic response actions using [PowerApps](https://powerapps.microsoft.com/) and [Flow](https://flow.microsoft.com/) with the [Microsoft Defender for Endpoint connector](/connectors/wdatp/). The connector supports actions for investigation, threat scanning, and restricting running applications. It is one of over 200 pre-defined connectors including Outlook, Teams, Slack, and more. Custom connectors can also be built. See [Connectors](/connectors/) to learn more about connectors.
  
 For example, using either approach, you can automatically have the Microsoft Defender Antivirus run when a USB device is mounted onto a machine.
 
