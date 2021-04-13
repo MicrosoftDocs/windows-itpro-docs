@@ -79,7 +79,7 @@ To troubleshoot Stop error messages, follow these general steps:
      >[!NOTE]
      >If there are no updates available from a specific manufacturer, it is recommended that you disable the related service.
      >
-     >To do this, see [How to perform a clean boot in Windows](https://support.microsoft.com/help/929135)
+     >To do this, see [How to perform a clean boot in Windows](https://support.microsoft.com/help/929135).
      >
      >You can disable a driver by following the steps in [How to temporarily deactivate the kernel mode filter driver in Windows](https://support.microsoft.com/help/816071).
      >
@@ -114,7 +114,7 @@ The memory dump file is saved at the following locations:
 | Automatic memory dump file | %SystemRoot%\MEMORY.DMP |
 | Active memory dump file | %SystemRoot%\MEMORY.DMP |
 
-You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files are not corrupted or invalid. For more information, see the following video: <br/>
+You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files are not corrupted or invalid. For more information, see the following video:<br/><br/>
 
 >[!video https://www.youtube.com/embed/xN7tOfgNKag]
 
