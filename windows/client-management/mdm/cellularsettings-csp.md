@@ -21,7 +21,7 @@ The CellularSettings configuration service provider is used to configure cellula
 
 The following image shows the CellularSettings CSP in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
 
-![provisioning\-csp\-cellularsettings](images/provisioning-csp-cellularsettings.png)
+![provisioning for cellular settings](images/provisioning-csp-cellularsettings.png)
 
 <a href="" id="dataroam"></a>**DataRoam**  
 <p style="margin-left: 20px"> Optional. Integer. Specifies the default roaming value. Valid values are:</p>
@@ -53,19 +53,6 @@ The following image shows the CellularSettings CSP in tree format as used by Ope
 </tbody>
 </table>
 
- 
-
-## Related topics
-
+ ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-
