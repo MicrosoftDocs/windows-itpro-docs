@@ -37,7 +37,7 @@ Here's a step-by-step guide to adding an Azure Active Directory tenant, adding a
 
 5. After you finish creating your Azure account, you can add an Azure AD subscription.
 
-   If you don't have a paid subscription to any Microsoft service, you can purchase an Azure AD premium subscription. Go to Office 356 portal https://portal.office.com/, and then sign in using the admin account that you created in Step 4 (for example, user1@contosoltd.onmicrosoftcom).
+   If you don't have a paid subscription to any Microsoft service, you can purchase an Azure AD premium subscription. Go to the Office 356 portal at https://portal.office.com/, and then sign in using the admin account that you created in Step 4 (for example, user1@contosoltd.onmicrosoftcom).
 
    ![login to office 365](images/azure-ad-add-tenant4.png)
 
