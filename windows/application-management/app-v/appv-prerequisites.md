@@ -1,7 +1,7 @@
 ---
 title: App-V Prerequisites (Windows 10)
 description: Learn about the prerequisites you need before you begin installing Application Virtualization (App-V).
-author: lomayor
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

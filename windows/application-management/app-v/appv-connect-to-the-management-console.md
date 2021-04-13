@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 06/25/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ---
 # How to connect to the Management Console
