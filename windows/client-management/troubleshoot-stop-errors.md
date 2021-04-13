@@ -144,8 +144,8 @@ You can use the tools such as Windows Software Development KIT (SDK) and Symbols
 
 ### Advanced debugging references
 
-[Advanced Windows Debugging](https://www.amazon.com/Advanced-Windows-Debugging-Mario-Hewardt/dp/0321374460)<br>
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](/windows-hardware/drivers/debugger/index)
+- [Advanced Windows Debugging](https://www.amazon.com/Advanced-Windows-Debugging-Mario-Hewardt/dp/0321374460)
+- [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](/windows-hardware/drivers/debugger/index)
 
 ### Debugging steps
 
