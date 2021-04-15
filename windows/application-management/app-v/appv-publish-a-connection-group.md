@@ -1,7 +1,7 @@
 ---
 title: How to Publish a Connection Group (Windows 10)
 description: Learn how to publish a connection group to computers that run the Application Virtualization (App-V) client.
-author: lomayor
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
