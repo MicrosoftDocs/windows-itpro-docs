@@ -26,6 +26,7 @@ The features described below are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
+| WMIC | WMIC| 21H1 |
 | Microsoft Edge | The legacy version of Microsoft Edge is no longer being developed.| 2004 |
 | Companion Device Framework | The [Companion Device Framework](/windows-hardware/design/device-experiences/windows-hello-companion-device-framework) is no longer under active development.| 2004 |
 | Dynamic Disks | The [Dynamic Disks](/windows/win32/fileio/basic-and-dynamic-disks#dynamic-disks) feature is no longer being developed. This feature will be fully replaced by [Storage Spaces](/windows-server/storage/storage-spaces/overview) in a future release.| 2004 |
