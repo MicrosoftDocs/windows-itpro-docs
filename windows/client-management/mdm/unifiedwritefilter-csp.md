@@ -69,7 +69,7 @@ Currently SwapfileSize should not be relied for determining or controlling the o
 <a href="" id="nextsession-maximumoverlaysize"></a>**NextSession/MaximumOverlaySize**
 should be used for that purpose.
 
-:::image type="content" source="../../../images/overlaysetting.png" alt-text="This is a overlay settings":::
+:::image type="content" source="../../../images/overlaysetting.png" alt-text="This is the overlay setting":::
 
 > [!NOTE]
 > Only single swapfile is supported in current implementation and creating swapfile on specific volume will disable any other swapfile created on other volumes.
