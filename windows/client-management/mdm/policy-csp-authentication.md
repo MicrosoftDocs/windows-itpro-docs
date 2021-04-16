@@ -38,7 +38,7 @@ manager: dansimp
     <a href="#authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>
   </dd>
   <dd>
-    <a href="#authentication-configurewebsigninallowedurls">Authentication/ConfigureWebSignInAllowedUrls</a>
+     <a href="#authentication-configurewebsigninallowedurls">Authentication/ConfigureWebSignInAllowedUrls</a>
   </dd>
   <dd>
     <a href="#authentication-enablefastfirstsignin">Authentication/EnableFastFirstSignIn</a>
@@ -644,4 +644,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-
