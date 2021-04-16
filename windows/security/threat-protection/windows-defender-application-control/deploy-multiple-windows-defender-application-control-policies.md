@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: jsuther1974
+ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
 ms.date: 11/13/2020
@@ -22,10 +22,10 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10 version 1903
-- Windows Server 2022
+- Windows 10 version 1903 and above
+- Windows Server 2022 and above
 
-The restriction of only having a single code integrity policy active on a system at any given time has felt limiting for customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports up to 32 active policies on a device at once in order to enable the following scenarios:
+Prior to Windows 10 1903, WDAC only supported a single active on a system at any given time. This significantly limited customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports up to 32 active policies on a device at once in order to enable the following scenarios:
 
 1. Enforce and Audit Side-by-Side
     - To validate policy changes before deploying in enforcement mode, users can now deploy an audit-mode base policy side by side with an existing enforcement-mode base policy
