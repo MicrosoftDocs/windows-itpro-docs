@@ -68,7 +68,7 @@ To prevent malware infections or data loss, an organization may restrict USB dri
 
 All of the above controls can be set through the Intune [Administrative Templates](/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
 
-![AdminTemplates](images/admintemplates.png)
+![screenshot of list of Admin Templates](images/admintemplates.png)
 
 >[!Note]
 >Using Intune, you can apply device configuration policies to Azure AD user and/or device groups.
@@ -211,13 +211,13 @@ You can prevent installation of the prohibited peripherals with matching device 
 
 Using Intune, you can limit the services that can use Bluetooth through the ["Bluetooth allowed services"](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide). The default state of "Bluetooth allowed services" settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and doesn’t add the file transfer GUIDs, file transfer should be blocked.
 
-![Bluetooth](images/bluetooth.png)
+![screenshot of Bluetooth settings page](images/bluetooth.png)
 
 ### Use Microsoft Defender for Endpoint baseline settings
 
-The Microsoft Defender for Endpoint baseline settings represent the recommended configuration for ATP. Configuration settings for baseline are located in the edit profile page of the configuration settings.
+The Microsoft Defender for Endpoint baseline settings represent the recommended configuration for threat protection. Configuration settings for baseline are located in the edit profile page of the configuration settings.
 
-![Baselines](images/baselines.png)
+![Baselines in MEM](images/baselines.png)
 
 ## Prevent threats from removable storage
   
@@ -245,7 +245,7 @@ For more information about controlling USB devices, see the [Microsoft Defender 
 
 ### Enable Microsoft Defender Antivirus Scanning
 
-Protecting authorized removable storage with Microsoft Defender Antivirus requires [enabling real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) or scheduling scans and configuring removable drives for scans.
+Protecting authorized removable storage with Microsoft Defender Antivirus requires [enabling real-time protection](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus) or scheduling scans and configuring removable drives for scans.
 
 - If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives. You can optionally [run a PowerShell script to perform a custom scan](/samples/browse/?redirectedfrom=TechNet-Gallery) of a USB drive after it is mounted, so that Microsoft Defender Antivirus starts scanning all files on a removable device once the removable device is attached. However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.
 - If scheduled scans are used, then you need to disable the DisableRemovableDriveScanning setting (enabled by default) to scan the removable device during a full scan. Removable devices are scanned during a quick or custom scan regardless of the DisableRemovableDriveScanning setting.
@@ -265,7 +265,7 @@ This can be done by setting **Untrusted and unsigned processes that run from USB
 With this rule, admins can prevent or audit unsigned or untrusted executable files from running from USB removable drives, including SD cards.
 Affected file types include executable files (such as .exe, .dll, or .scr) and script files such as a PowerShell (.ps), VisualBasic (.vbs), or JavaScript (.js) files.
 
-These settings require [enabling real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md).
+These settings require [enabling real-time protection](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus).
 
 1. Sign in to the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
 2. Click **Devices** > **Windows** > **Configuration Policies** > **Create profile**. 
@@ -322,7 +322,7 @@ For example, using either approach, you can automatically have the Microsoft Def
 
 ## Related topics
 
-- [Configure real-time protection for Microsoft Defender Antivirus](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md)
+- [Configure real-time protection for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
 - [Defender/AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 - [Policy/DeviceInstallation CSP](/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [Perform a custom scan of a removable device](/samples/browse/?redirectedfrom=TechNet-Gallery)

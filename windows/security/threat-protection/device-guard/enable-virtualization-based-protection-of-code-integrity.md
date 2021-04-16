@@ -4,8 +4,8 @@ description: This article explains the steps to opt in to using HVCI on Windows 
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

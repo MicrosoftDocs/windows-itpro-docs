@@ -1,7 +1,7 @@
 ---
 title: How to sequence a package by using Windows PowerShell (Windows 10)
 description: Learn how to sequence a new Microsoft Application Virtualization (App-V) package by using Windows PowerShell.
-author: lomayor
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,5 +1,5 @@
 ---
-title: The Windows Security  app
+title: The Windows Security app
 description: The Windows Security app brings together common Windows security features into one place
 keywords: wdav, smartscreen, antivirus, wdsc, firewall, device health, performance, Edge, browser, family, parental options, security, windows
 search.product: eADQiWindows 10XVcnh
@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -39,9 +38,9 @@ In Windows 10, version 1803, the app has two new areas, **Account protection** a
 
 You can't uninstall the Windows Security app, but you can do one of the following:
 
-- Disable the interface on Windows Server 2016. See [Microsoft Defender Antivirus on Windows Server 2016](../microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016.md).
+- Disable the interface on Windows Server 2016. See [Microsoft Defender Antivirus on Windows Server](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-on-windows-server).
 - Hide all of the sections on client computers (see below).
-- Disable Microsoft Defender Antivirus, if needed. See [Enable and configure Microsoft Defender AV always-on protection and monitoring](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md).
+- Disable Microsoft Defender Antivirus, if needed. See [Enable and configure Microsoft Defender AV always-on protection and monitoring](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus).
 
 You can find more information about each section, including options for configuring the sections - such as hiding each of the sections - at the following topics:
 
@@ -82,7 +81,7 @@ You can find more information about each section, including options for configur
 >
 >These services do not affect the state of Microsoft Defender AV. Disabling or modifying these services will not disable Microsoft Defender AV, and will lead to a lowered protection state on the endpoint, even if you are using a third-party antivirus product.  
 >
->Microsoft Defender AV will be [disabled automatically when a third-party antivirus product is installed and kept up to date](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+>Microsoft Defender AV will be [disabled automatically when a third-party antivirus product is installed and kept up to date]/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 >
 > Disabling the Windows Security Center service will not disable Microsoft Defender AV or [Windows Defender Firewall](/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security).  
 
@@ -102,4 +101,4 @@ Disabling any of the individual features (through Group Policy or other manageme
 > [!IMPORTANT]
 > Individually disabling any of the services will not disable the other services or the Windows Security app.
 
-For example, [using a third-party antivirus will disable Microsoft Defender Antivirus](/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). However, the Windows Security app will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Defender Firewall.
+For example, [using a third-party antivirus will disable Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility). However, the Windows Security app will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Defender Firewall.
