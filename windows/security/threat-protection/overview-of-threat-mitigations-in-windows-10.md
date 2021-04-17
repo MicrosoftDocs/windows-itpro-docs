@@ -7,7 +7,6 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
-ms.date: 10/13/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -105,7 +104,7 @@ Microsoft Defender Antivirus in Windows 10 uses a multi-pronged approach to impr
 
 <!-- Watch the link text for the following links - try to keep it in sync with the actual topic. -->
 
-For more information, see [Windows Defender in Windows 10](microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md) and [Windows Defender Overview for Windows Server](/windows-server/security/windows-defender/windows-defender-overview-windows-server).
+For more information, see [Windows Defender in Windows 10](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) and [Windows Defender Overview for Windows Server](/windows-server/security/windows-defender/windows-defender-overview-windows-server).
 
 For information about Microsoft Defender for Endpoint, a service that helps enterprises to detect, investigate, and respond to advanced and targeted attacks on their networks, see [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (resources) and [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (documentation).
 
