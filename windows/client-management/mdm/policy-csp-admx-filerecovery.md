@@ -90,7 +90,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
+> [!NOTE]
+> These policies are for upcoming release.
 
 <!--/Policies-->
 
