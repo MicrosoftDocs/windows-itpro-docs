@@ -26,87 +26,87 @@ summary: |
   
   The following list identifies some commonly asked questions about Windows To Go.
   
-  -   [What is Windows To Go?](#wtg-faq-whatis)
+  -   [What is Windows To Go?](#what-is-windows-to-go-)
   
-  -   [Does Windows To Go rely on virtualization?](#wtg-faq-virt)
+  -   [Does Windows To Go rely on virtualization?](#does-windows-to-go-rely-on-virtualization-)
   
-  -   [Who should use Windows To Go?](#wtg-faq-who)
+  -   [Who should use Windows To Go?](#who-should-use-windows-to-go-)
   
-  -   [How can Windows To Go be deployed in an organization?](#wtg-faq-deploy)
+  -   [How can Windows To Go be deployed in an organization?](#how-can-windows-to-go-be-deployed-in-an-organization-)
   
-  -   [Is Windows To Go supported on both USB 2.0 and USB 3.0 drives?](#wtg-faq-usbvs)
+  -   [Is Windows To Go supported on both USB 2.0 and USB 3.0 drives?](#is-windows-to-go-supported-on-both-usb-2-0-and-usb-3-0-drives-)
   
-  -   [Is Windows To Go supported on USB 2.0 and USB 3.0 ports?](#wtg-faq-usbports)
+  -   [Is Windows To Go supported on USB 2.0 and USB 3.0 ports?](#is-windows-to-go-supported-on-usb-2-0-and-usb-3-0-ports-)
   
-  -   [How do I identify a USB 3.0 port?](#wtg-faq-usb3port)
+  -   [How do I identify a USB 3.0 port?](#how-do-i-identify-a-usb-3-0-port-)
   
-  -   [Does Windows To Go run faster on a USB 3.0 port?](#wtg-faq-usb3speed)
+  -   [Does Windows To Go run faster on a USB 3.0 port?](#does-windows-to-go-run-faster-on-a-usb-3-0-port-)
   
-  -   [Can the user self-provision Windows To Go?](#wtg-faq-selfpro)
+  -   [Can the user self-provision Windows To Go?](#can-the-user-self-provision-windows-to-go-)
   
-  -   [How can Windows To Go be managed in an organization?](#wtg-faq-mng)
+  -   [How can Windows To Go be managed in an organization?](#how-can-windows-to-go-be-managed-in-an-organization-)
   
-  -   [How do I make my computer boot from USB?](#wtf-faq-startup)
+  -   [How do I make my computer boot from USB?](#how-do-i-make-my-computer-boot-from-usb-)
   
-  -   [Why isn't my computer booting from USB?](#wtg-faq-noboot)
+  -   [Why isn't my computer booting from USB?](#why-isn-t-my-computer-booting-from-usb-)
   
-  -   [What happens if I remove my Windows To Go drive while it is running?](#wtg-faq-surprise)
+  -   [What happens if I remove my Windows To Go drive while it is running?](#what-happens-if-i-remove-my-windows-to-go-drive-while-it-is-running-)
   
-  -   [Can I use BitLocker to protect my Windows To Go drive?](#wtg-faq-bitlocker)
+  -   [Can I use BitLocker to protect my Windows To Go drive?](#can-i-use-bitlocker-to-protect-my-windows-to-go-drive-)
   
-  -   [Why can't I enable BitLocker from Windows To Go Creator?](#wtg-faq-blfail)
+  -   [Why can't I enable BitLocker from Windows To Go Creator?](#why-can-t-i-enable-bitlocker-from-windows-to-go-creator-)
   
-  -   [What power states does Windows To Go support?](#wtg-faq-power)
+  -   [What power states does Windows To Go support?](#what-power-states-does-windows-to-go-support-)
   
-  -   [Why is hibernation disabled in Windows To Go?](#wtg-faq-hibernate)
+  -   [Why is hibernation disabled in Windows To Go?](#why-is-hibernation-disabled-in-windows-to-go-)
   
-  -   [Does Windows To Go support crash dump analysis?](#wtg-faq-crashdump)
+  -   [Does Windows To Go support crash dump analysis?](#does-windows-to-go-support-crash-dump-analysis-)
   
-  -   [Do "Windows To Go Startup Options" work with dual boot computers?](#wtg-faq-dualboot)
+  -   [Do "Windows To Go Startup Options" work with dual boot computers?](#do--windows-to-go-startup-options--work-with-dual-boot-computers-)
   
-  -   [I plugged my Windows To Go drive into a running computer and I can't see the partitions on the drive. Why not?](#wtg-faq-diskpart)
+  -   [I plugged my Windows To Go drive into a running computer and I can't see the partitions on the drive. Why not?](#i-plugged-my-windows-to-go-drive-into-a-running-computer-and-i-can-t-see-the-partitions-on-the-drive--why-not-)
   
-  -   [I'm booted into Windows To Go, but I can't browse to the internal hard drive of the host computer. Why not?](#wtg-faq-san4)
+  -   [I'm booted into Windows To Go, but I can't browse to the internal hard drive of the host computer. Why not?](#i-m-booted-into-windows-to-go--but-i-can-t-browse-to-the-internal-hard-drive-of-the-host-computer--why-not-)
   
-  -   [Why does my Windows To Go drive have an MBR disk format with a FAT32 system partition?](#wtg-faq-fatmbr)
+  -   [Why does my Windows To Go drive have an MBR disk format with a FAT32 system partition?](#why-does-my-windows-to-go-drive-have-an-mbr-disk-format-with-a-fat32-system-partition-)
   
-  -   [Is Windows To Go secure if I use it on an untrusted machine?](#wtg-faq-malhost)
+  -   [Is Windows To Go secure if I use it on an untrusted machine?](#is-windows-to-go-secure-if-i-use-it-on-an-untrusted-computer-)
   
-  -   [Does Windows To Go work with ARM processors?](#wtg-faq-arm)
+  -   [Does Windows To Go work with ARM processors?](#does-windows-to-go-work-with-arm-processors-)
   
-  -   [Can I synchronize data from Windows To Go with my other computer?](#wtg-faq-datasync)
+  -   [Can I synchronize data from Windows To Go with my other computer?](#can-i-synchronize-data-from-windows-to-go-with-my-other-computer-)
   
-  -   [What size USB Flash Drive do I need to make a Windows To Go drive?](#wtg-faq-usbsz)
+  -   [What size USB Flash Drive do I need to make a Windows To Go drive?](#what-size-usb-flash-drive-do-i-need-to-make-a-windows-to-go-drive-)
   
-  -   [Do I need to activate Windows To Go every time I roam?](#wtg-faq-roamact)
+  -   [Do I need to activate Windows To Go every time I roam?](#do-i-need-to-activate-windows-to-go-every-time-i-roam-)
   
-  -   [Can I use all Windows features on Windows To Go?](#wtg-faq-features)
+  -   [Can I use all Windows features on Windows To Go?](#can-i-use-all-windows-features-on-windows-to-go-)
   
-  -   [Can I use all my applications on Windows To Go?](#wtg-faq-approam)
+  -   [Can I use all my applications on Windows To Go?](#can-i-use-all-my-applications-on-windows-to-go-)
   
-  -   [Does Windows To Go work slower than standard Windows?](#wtg-faq-slow)
+  -   [Does Windows To Go work slower than standard Windows?](#does-windows-to-go-work-slower-than-standard-windows-)
   
-  -   [If I lose my Windows To Go drive, will my data be safe?](#wtg-faq-safeloss)
+  -   [If I lose my Windows To Go drive, will my data be safe?](#if-i-lose-my-windows-to-go-drive--will-my-data-be-safe-)
   
-  -   [Can I boot Windows To Go on a Mac?](#wtg-faq-mac)
+  -   [Can I boot Windows To Go on a Mac?](#can-i-boot-windows-to-go-on-a-mac-)
   
-  -   [Are there any APIs that allow applications to identify a Windows To Go workspace?](#wtg-faq-api)
+  -   [Are there any APIs that allow applications to identify a Windows To Go workspace?](#are-there-any-apis-that-allow-applications-to-identify-a-windows-to-go-workspace-)
   
-  -   [How is Windows To Go licensed?](#wtg-faq-lic)
+  -   [How is Windows To Go licensed?](#how-is-windows-to-go-licensed-)
   
-  -   [Does Windows Recovery Environment work with Windows To Go? What's the guidance for recovering a Windows To Go drive?](#wtg-faq-recovery)
+  -   [Does Windows Recovery Environment work with Windows To Go? What's the guidance for recovering a Windows To Go drive?](#does-windows-recovery-environment-work-with-windows-to-go--what-s-the-guidance-for-recovering-a-windows-to-go-drive-)
   
-  -   [Why won't Windows To Go work on a computer running Windows XP or Windows Vista?](#wtg-faq-oldos)
+  -   [Why won't Windows To Go work on a computer running Windows XP or Windows Vista?](#why-won-t-windows-to-go-work-on-a-computer-running-windows-xp-or-windows-vista-)
   
-  -   [Why does the operating system on the host computer matter?](#wtg-faq-oldos2)
+  -   [Why does the operating system on the host computer matter?](#why-does-the-operating-system-on-the-host-computer-matter-)
   
-  -   [My host computer running Windows 7 is protected by BitLocker Drive Encryption. Why did I need to use the recovery key to unlock and reboot my host computer after using Windows To Go?](#wtg-faq-blreckey)
+  -   [My host computer running Windows 7 is protected by BitLocker Drive Encryption. Why did I need to use the recovery key to unlock and reboot my host computer after using Windows To Go?](#my-host-computer-running-windows-7-is-protected-by-bitlocker-drive-encryption--why-did-i-need-to-use-the-recovery-key-to-unlock-and-reboot-my-host-computer-after-using-windows-to-go-)
   
-  -   [I decided to stop using a drive for Windows To Go and reformatted it – why doesn't it have a drive letter assigned and how can I fix it?](#wtg-faq-reformat)
+  -   [I decided to stop using a drive for Windows To Go and reformatted it – why doesn't it have a drive letter assigned and how can I fix it?](#i-decided-to-stop-using-a-drive-for-windows-to-go-and-reformatted-it---why-doesn-t-it-have-a-drive-letter-assigned-and-how-can-i-fix-it-)
   
-  -   [Why do I keep on getting the message "Installing devices…" when I boot Windows To Go?](#bkmk-roamconflict)
+  -   [Why do I keep on getting the message "Installing devices…" when I boot Windows To Go?](#why-do-i-keep-on-getting-the-message--installing-devices---when-i-boot-windows-to-go-)
   
-  -   [How do I upgrade the operating system on my Windows To Go drive?](#bkmk-upgradewtg)
+  -   [How do I upgrade the operating system on my Windows To Go drive?](#how-do-i-upgrade-the-operating-system-on-my-windows-to-go-drive-)
   
 
 sections:

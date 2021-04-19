@@ -42,7 +42,7 @@ We recommend that you use BitLocker with your Windows To Go drives to protect th
 You can enable BitLocker while using the Windows To Go Creator wizard as part of the drive provisioning process before first use; or it can be enabled afterward by the user from within the Windows To Go workspace.
 
 **Tip**  
-If the Windows To Go Creator wizard is not able to enable BitLocker, see [Why can't I enable BitLocker from Windows To Go Creator?](windows-to-go-frequently-asked-questions.yml#wtg-faq-blfail)
+If the Windows To Go Creator wizard is not able to enable BitLocker, see [Why can't I enable BitLocker from Windows To Go Creator?](windows-to-go-frequently-asked-questions.yml#why-can-t-i-enable-bitlocker-from-windows-to-go-creator-)
 
  
 
