@@ -302,4 +302,4 @@ If you choose to not use the Windows To Go startup options or are using a PC run
 [Windows To Go: feature overview](windows-to-go-overview.md)<br>
 [Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)<br>
 [Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)<br>
-[Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
+[Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.yml)

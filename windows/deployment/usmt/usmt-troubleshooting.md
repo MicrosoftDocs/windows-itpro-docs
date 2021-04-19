@@ -33,7 +33,7 @@ The following table describes topics that address common User State Migration To
 <td align="left"><p>Find troubleshooting solutions for common problems in USMT.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="usmt-faq.md" data-raw-source="[Frequently Asked Questions](usmt-faq.md)">Frequently Asked Questions</a></p></td>
+<td align="left"><p><a href="usmt-faq.yml" data-raw-source="[Frequently Asked Questions](usmt-faq.yml)">Frequently Asked Questions</a></p></td>
 <td align="left"><p>Find answers to questions about how to use USMT.</p></td>
 </tr>
 <tr class="odd">
