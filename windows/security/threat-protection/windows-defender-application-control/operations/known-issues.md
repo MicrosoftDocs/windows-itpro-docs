@@ -24,6 +24,10 @@ ms.technology: mde
 This topic covers tips and tricks for admins as well as known issues with WDAC.
 Test this configuration in your lab before enabling it in production.
 
+## .NET native images may generate false positive block events
+
+In some cases, the code integrity logs where WDAC errors and warnings are written will contain error events for native images generated for .NET assemblies. Typically, native image blocks are functionally benign as a blocked native image will fallback to its corresponding assembly and .NET will regenerate the native image at its next scheduled maintenance window.
+
 ## MSI Installations launched directly from the internet are blocked by WDAC
 
 Installing .msi files directly from the internet to a computer protected by WDAC will fail.

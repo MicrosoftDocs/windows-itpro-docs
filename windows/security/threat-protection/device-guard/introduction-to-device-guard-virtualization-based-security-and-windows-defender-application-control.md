@@ -20,25 +20,25 @@ ms.technology: mde
 - Windows 10
 - Windows Server 2016
 
-Windows 10 includes a set of hardware and OS technologies that, when configured together, allow enterprises to "lock down" Windows 10 systems so they operate with many of the properties of mobile devices. In this configuration, specific technologies work together to restrict devices to only run authorized apps by using a feature called Windows Defender Application Control (WDAC), while simultaneously hardening the OS against kernel memory attacks by using hypervisor-protected code integrity (HVCI). 
+Windows 10 includes a set of hardware and OS technologies that, when configured together, allow enterprises to "lock down" Windows 10 systems so they behave more like mobile devices. In this configuration, Windows Defender Application Control (WDAC) is used to restrict devices to run only approved apps, while the OS is hardened against kernel memory attacks using hypervisor-protected code integrity (HVCI).
 
 WDAC policies and HVCI are powerful protections that can be used separately. However, when these two technologies are configured to work together, they present a strong protection capability for Windows 10 devices.  
 
 Using WDAC to restrict devices to only authorized apps has these advantages over other solutions:
 
-1. WDAC policy is enforced by the Windows kernel itself. As such, the policy takes effect early in the boot sequence before nearly all other OS code and before traditional antivirus solutions run.
-2. WDAC allows customers to set application control policy not only over code running in user mode, but also kernel mode hardware and software drivers and even code that runs as part of Windows.
-3. Customers can protect the WDAC policy even from local administrator tampering by digitally signing the policy. This would mean that changing the policy would require both administrative privilege and access to the organization’s digital signing process, making it difficult for an attacker with administrative privilege, or malicious software that managed to gain administrative privilege, to alter the application control policy.
-4. The entire WDAC enforcement mechanism can be protected by HVCI, where even if a vulnerability exists in kernel mode code, the likelihood that an attacker could successfully exploit it is diminished. Why is this relevant? That’s because an attacker that compromises the kernel would otherwise have enough privilege to disable most system defenses and override the application control policies enforced by WDAC or any other application control solution.
+1. WDAC policy is enforced by the Windows kernel itself, and the policy takes effect early in the boot sequence before nearly all other OS code and before traditional antivirus solutions run.
+2. WDAC lets you set application control policy for code that runs in user mode, kernel mode hardware and software drivers, and even code that runs as part of Windows.
+3. Customers can protect the WDAC policy even from local administrator tampering by digitally signing the policy. To change signed policy requires both administrative privilege and access to the organization’s digital signing process. This makes it difficult for an attacker, including one who has managed to gain administrative privilege, to tamper with WDAC policy.
+4. You can protect the entire WDAC enforcement mechanism with HVCI. Even if a vulnerability exists in kernel mode code, HVCI greatly reduces the likelihood that an attacker could successfully exploit it. This is important because an attacker that compromises the kernel could normally disable most system defenses, including those enforced by WDAC or any other application control solution.
 
 ## Why we no longer use the Device Guard brand
 
-When we originally designed this configuration state, we did so with a specific security promise in mind. Although there were no direct dependencies between WDAC and HVCI, we intentionally focused our discussion around the lockdown state you achieve when deploying them together. However, given that HVCI relies on Windows virtualization-based security, it comes with more hardware, firmware, and kernel driver compatibility requirements that some older systems can’t meet. As a result, many IT Professionals assumed that because some systems couldn't use HVCI, they couldn’t use WDAC either. 
+When we originally promoted Device Guard, we did so with a specific security promise in mind. Although there were no direct dependencies between WDAC and HVCI, we intentionally focused our discussion around the lockdown state achieved when using them together. However, since HVCI relies on Windows virtualization-based security, it has hardware, firmware, and kernel driver compatibility requirements that some older systems can’t meet. This misled many people to assume that if systems couldn't use HVCI, they couldn’t use WDAC either.
 
-WDAC carries no specific hardware or software requirements other than running Windows 10, which means many IT professionals were wrongly denied the benefits of this powerful application control capability.
+WDAC has no specific hardware or software requirements other than running Windows 10, which means customers were denied the benefits of this powerful application control capability due to Device Guard confusion.
 
-Since the initial release of Windows 10, the world has witnessed numerous hacking and malware attacks where application control alone could have prevented the attack altogether. With this in mind, we are discussing and documenting WDAC as an independent technology within our security stack and giving it a name of its own: [Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md). 
-We hope this change will help us better communicate options for adopting application control within an organization.
+Since the initial release of Windows 10, the world has witnessed numerous hacking and malware attacks where application control alone could have prevented the attack altogether. With this in mind, we now discuss and document WDAC as an independent technology within our security stack and gave it a name of its own: [Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md).
+We hope this change will help us better communicate options for adopting application control within your organizations.
 
 ## Related articles
 
