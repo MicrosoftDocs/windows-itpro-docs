@@ -35,8 +35,8 @@ MEMCM includes native support for WDAC, which allows you to configure Windows 10
 - [Optional] Reputable apps as defined by the Intelligent Security Graph (ISG)
 - [Optional] Apps and executables already installed in admin-definable folder locations that MEMCM will allow through a one-time scan during policy creation on managed endpoints.
 
-For more information on using MEMCM's native WDAC policies, see [Windows Defender Application Control management with Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager)
+For more information on using MEMCM's native WDAC policies, see [Windows Defender Application Control management with Configuration Manager](/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager)
 
 ## Deploy custom WDAC policies using Packages/Programs or Task Sequences
 
-Using MEMCM's built-in policies can be a helpful starting point, but customers may find the available circle-of-trust options available in MEMCM too limiting. To define your own circle-of-trust, you can use MEMCM to deploy custom WDAC policies using [script-based deployment](deploy-wdac-policies-using-script.md) via Software Distribution Packages and Programs or Operating System Deployment Task Sequences.
+Using MEMCM's built-in policies can be a helpful starting point, but customers may find the available circle-of-trust options available in MEMCM too limiting. To define your own circle-of-trust, you can use MEMCM to deploy custom WDAC policies using [script-based deployment](deploy-wdac-policies-with-script.md) via Software Distribution Packages and Programs or Operating System Deployment Task Sequences.
