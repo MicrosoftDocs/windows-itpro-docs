@@ -18769,6 +18769,16 @@
       "source_path": "windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus",
       "redirect_document_id": false
-    }     
+    },
+    {
+      "source_path": "windows/security/threat-protection/device-control/control-usb-devices-using-intune.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/control-usb-devices-using-intune",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/security/threat-protection/device-control/device-control-report.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-report",
+      "redirect_document_id": false
+    }    
 	    ]
 }
