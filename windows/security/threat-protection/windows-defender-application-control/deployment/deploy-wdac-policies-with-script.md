@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 - Windows 10
 - Windows Server 2016 and above
 
-This topic describes how to deploy Windows Defender Application Control (WDAC) policies using script. The instructions below use Powershell but can work with any scripting host.
+This topic describes how to deploy Windows Defender Application Control (WDAC) policies using script. The instructions below use PowerShell but can work with any scripting host.
 
 > [!NOTE]
 > To use this procedure, download and distribute the [WDAC policy refresh tool](https://aka.ms/refreshpolicy) to all managed endpoints. Ensure your WDAC policies allow the WDAC policy refresh tool or use a managed installer to distribute the tool.
