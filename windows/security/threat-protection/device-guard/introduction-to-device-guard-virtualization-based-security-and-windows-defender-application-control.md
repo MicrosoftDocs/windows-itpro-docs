@@ -42,7 +42,7 @@ We hope this change will help us better communicate options for adopting applica
 
 ## Related articles
 
-[Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md)
-[Dropping the Hammer Down on Malware Threats with Windows 10’s Windows Defender](https://channel9.msdn.com/Events/Ignite/2015/BRK2336)
-[Driver compatibility with Windows Defender in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10)
-[Code integrity](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd348642(v=ws.10))
+- [Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md)
+- [Dropping the Hammer Down on Malware Threats with Windows 10’s Windows Defender](https://channel9.msdn.com/Events/Ignite/2015/BRK2336)
+- [Driver compatibility with Windows Defender in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10)
+- [Code integrity](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd348642(v=ws.10))

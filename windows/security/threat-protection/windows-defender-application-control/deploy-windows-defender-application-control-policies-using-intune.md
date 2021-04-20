@@ -58,7 +58,7 @@ The steps to use Intune's custom OMA-URI functionality are:
 
 2. Convert the policy XML to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
 
-3. Open the Microsoft Intune portal and [create a profile with custom settings](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10).
+3. Open the Microsoft Intune portal and [create a profile with custom settings](/mem/intune/configuration/custom-settings-windows-10).
 
 4. Specify a **Name** and **Description** and use the following values for the remaining custom OMA-URI settings:
     - **OMA-URI**: ./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy
@@ -80,7 +80,7 @@ The steps to use Intune's Custom OMA-URI functionality to leverage the [AppLocke
 
 1. Convert the policy XML to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
 
-2. Open the Microsoft Intune portal and [create a profile with custom settings](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10).
+2. Open the Microsoft Intune portal and [create a profile with custom settings](/mem/intune/configuration/custom-settings-windows-10).
 
 3. Specify a **Name** and **Description** and use the following values for the remaining custom OMA-URI settings:
     - **OMA-URI**: ./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/_Grouping_/CodeIntegrity/Policy)

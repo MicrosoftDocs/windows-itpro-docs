@@ -7,10 +7,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
-ms.author: jsuther
+ms.author: jogeurte
+ms.manager: jsuther
 manager: dansimp
 ms.date: 04/14/2021
 ms.technology: mde
+ms.topic: article
+ms.localizationpriority: medium
 ---
 
 # Deploy WDAC policies by using Microsoft Endpoint Configuration Manager (MEMCM)
@@ -35,6 +38,5 @@ MEMCM includes native support for WDAC, which allows you to configure Windows 10
 For more information on using MEMCM's native WDAC policies, see [Windows Defender Application Control management with Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager)
 
 ## Deploy custom WDAC policies using Packages/Programs or Task Sequences
-<!-- Add step-by-step guide for SWD/OSD deployment -->
 
 Using MEMCM's built-in policies can be a helpful starting point, but customers may find the available circle-of-trust options available in MEMCM too limiting. To define your own circle-of-trust, you can use MEMCM to deploy custom WDAC policies using [script-based deployment](deploy-wdac-policies-using-script.md) via Software Distribution Packages and Programs or Operating System Deployment Task Sequences.
