@@ -65,7 +65,7 @@ For information about setting up Delivery Optimization, including tips for the b
     - Office installs and updates
     - Xbox game pass games
     - MSIX apps (HTTP downloads only)
-    - Microsoft Edge browser installationss and updates
+    - Microsoft Edge browser installations and updates
     - [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) 
 
 ## Requirements
