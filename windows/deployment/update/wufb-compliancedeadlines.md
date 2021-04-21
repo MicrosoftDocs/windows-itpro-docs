@@ -42,13 +42,13 @@ With a current version of Windows 10, it's best to use the new policy introduced
 
 |Policy|Location|Quality update deadline in days|Feature update deadline in days|Grace period in days|
 |-|-|-|-|-|
-|(Windows 10, version 1709 and later) Specify deadlines for automatic updates and restarts | GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadlines for automatic updates and restarts    | 7 | 7 | 2 |
+|(Windows 10, version 1709 and later) Specify deadlines for automatic updates and restarts | GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadlines for automatic updates and restarts    | 3 | 7 | 2 |
 
 When **Specify deadlines for automatic updates and restarts** is set (Windows 10, version 1709 and later):
 
-For feature updates, the deadline and grace period start their countdown from the time of a pending restart. The device will try to update outside of active hours once it has reached the *effective deadline*. The effective deadline is whichever is the later of the restart pending date plus the specified deadline or the restart pending date plus the grace period. The device will try to restart during active hours, but will forcibly restart once the set deadline is reached.
+For feature updates, the deadline and grace period start their countdown from the time of a pending restart after the installation is complete. As soon as installation is complete and the device reaches pending restart, the device will try to update outside of active hours. Once the *effective deadline* is reached, the device will try to restart during active hours. (The effective deadline is whichever is the later of the restart pending date plus the specified deadline or the restart pending date plus the grace period.) 
 
-For quality updates, the deadline countdown starts from the time the update is offered. The grace period countdown starts from the time of the pending restart. The device will try to download and install the update at a time based on {USO--what is this?} logic. When the pending restart time is reached, the device will notify the user and try to update outside of active hours. Once the effective deadline is reached, the device will try to update during active hours. Once the set deadline is reached, the device will forcibly restart.
+For quality updates, the deadline countdown starts from the time the update is *offered* (not downloaded or installed). The grace period countdown starts from the time of the pending restart. The device will try to download and install the update at a time based on your other download and installation policies (the default is to automatically download and install in in the background). When the pending restart time is reached, the device will notify the user and try to update outside of active hours. Once the effective deadline is reached, the device will try to restart during active hours.
 
 
 
