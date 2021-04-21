@@ -1,44 +1,44 @@
 # [Application Control for Windows](windows-defender-application-control.md)
 ## [WDAC and AppLocker Overview](wdac-and-applocker-overview.md)
 ### [WDAC and AppLocker Feature Availability](feature-availability.md)
-### [Virtualization-based code integrity](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+### [Virtualization-based protection of code integrity](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
 
 ## [WDAC design guide](windows-defender-application-control-design-guide.md)
 ### [Plan for WDAC policy lifecycle management](plan-windows-defender-application-control-management.md)
-### Design your initial WDAC policy
+### Design your WDAC policy
 #### [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md)
 #### [Understand WDAC policy rules and file rules](select-types-of-rules-to-create.md)
-#### [Authorize apps deployed with a WDAC managed installer](use-windows-defender-application-control-with-managed-installer.md)
-##### [Configure a WDAC managed installer](configure-wdac-managed-installer.md)
-#### [Authorize reputable apps with Intelligent Security Graph (ISG)](use-windows-defender-application-control-with-intelligent-security-graph.md)
+##### [Allow apps installed by a managed installer](use-windows-defender-application-control-with-managed-installer.md)
+##### [Configure managed installer rules](configure-wdac-managed-installer.md)
+##### [Allow reputable apps with Intelligent Security Graph (ISG)](use-windows-defender-application-control-with-intelligent-security-graph.md)
+##### [Allow COM object registration](allow-com-object-registration-in-windows-defender-application-control-policy.md)
+##### [Use WDAC with .NET hardening](use-windows-defender-application-control-with-dynamic-code-security.md)
+##### [Manage packaged apps with WDAC](manage-packaged-apps-with-windows-defender-application-control.md)
+##### [Use WDAC to control specific plug-ins, add-ins, and modules](use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md)
 #### [Use multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md)
-#### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
-#### [Microsoft recommended driver block rules](microsoft-recommended-driver-block-rules.md)
-### Create your initial WDAC policy
+### Create your WDAC policy
 #### [Example WDAC base policies](example-wdac-base-policies.md)
 #### [Policy creation for common WDAC usage scenarios](types-of-devices.md)
 ##### [Create a WDAC policy for lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md)
 ##### [Create a WDAC policy for fully-managed devices](create-wdac-policy-for-fully-managed-devices.md)
 ##### [Create a WDAC policy for fixed-workload devices](create-initial-default-policy.md)
 ##### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
-#### [Using the WDAC Wizard tool](wdac-wizard.md)
+##### [Microsoft recommended driver block rules](microsoft-recommended-driver-block-rules.md)
+#### [Use the WDAC Wizard tool](wdac-wizard.md)
 ##### [Create a base WDAC policy with the Wizard](wdac-wizard-create-base-policy.md)
 ##### [Create a supplemental WDAC policy with the Wizard](wdac-wizard-create-supplemental-policy.md)
 ##### [Editing a WDAC policy with the Wizard](wdac-wizard-editing-policy.md)
 ##### [Merging multiple WDAC policies with the Wizard](wdac-wizard-merging-policies.md)
 
-
-## [Windows Defender Application Control deployment guide](windows-defender-application-control-deployment-guide.md)
+## [WDAC deployment guide](windows-defender-application-control-deployment-guide.md)
+### [Deploy WDAC policies with MDM](deploy-windows-defender-application-control-policies-using-intune.md)
+### [Deploy WDAC policies with MEMCM](deployment/deploy-wdac-policies-with-memcm.md)
+### [Deploy WDAC policies with script](deployment/deploy-wdac-policies-with-script.md)
+### [Deploy WDAC policies with Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)
 ### [Audit WDAC policies](audit-windows-defender-application-control-policies.md)
 ### [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
 ### [Enforce WDAC policies](enforce-windows-defender-application-control-policies.md)
-### [Deploy WDAC policies using Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)
-### [Deploy WDAC policies using Intune](deploy-windows-defender-application-control-policies-using-intune.md)
-### [Allow COM object registration](allow-com-object-registration-in-windows-defender-application-control-policy.md)
-### [Use WDAC with .NET hardening](use-windows-defender-application-control-with-dynamic-code-security.md)
-### [Manage packaged apps with WDAC](manage-packaged-apps-with-windows-defender-application-control.md)
-### [Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules](use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md)
 ### [Use code signing to simplify application control for classic Windows applications](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md)
 #### [Optional: Use the WDAC Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md)
 #### [Optional: Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md)
@@ -47,11 +47,11 @@
 ### [Disable WDAC policies](disable-windows-defender-application-control-policies.md)
 ### [LOB Win32 Apps on S Mode](LOB-win32-apps-on-s.md)
 
-
 ## [Windows Defender Application Control operational guide](windows-defender-application-control-operational-guide.md)
 ### [Understanding Application Control event IDs](event-id-explanations.md)
 ### [Understanding Application Control event tags](event-tag-explanations.md)
 ### [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md)
+### [Known Issues](operations/known-issues.md)
 
 ## [AppLocker](applocker\applocker-overview.md) 
 ### [Administer AppLocker](applocker\administer-applocker.md)
@@ -138,5 +138,3 @@
 #### [Tools to Use with AppLocker](applocker\tools-to-use-with-applocker.md)
 ##### [Using Event Viewer with AppLocker](applocker\using-event-viewer-with-applocker.md)
 #### [AppLocker Settings](applocker\applocker-settings.md)
-
-
