@@ -52,7 +52,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 |C | The Kerberos provider ensures it can trust the response from the domain controller. First, it ensures the KDC certificate chains to a root certificate that is trusted by the device.  Next, it ensures the certificate is within its validity period and that it has not be revoked.  The Kerberos provider then verifies the certificate has the KDC Authentication present and that the subject alternate name listed in the KDC's certificate matches the domain name to which the user is authenticating. After passing this criteria, Kerberos returns the TGT to lsass, where it is cached and used for subsequent service ticket requests.|
 
 > [!NOTE]
-> You may have on-premises domain Federated with Azure AD. Once user successfully provisioned WHFB PIN/Bio on the AADJ device. Any future login of WHFB (PIN/Bio) sign-in will directly authenticate against AAD to get PRT, as well as it trigger authenticate against your DC (if LOS to DC available) to get Kerberos. It no longer uses ADFS to authenticate for WHFB sign-ins.
+> You might have an on-premises domain federated with Azure AD. Once you have successfully provisioned WHFB PIN/Bio on the AADJ device, any future login of WHFB (PIN/Bio) sign-in will directly authenticate against AAD to get PRT and trigger authenticate against your DC (if LOS to DC is available) to get Kerberos. It no longer uses ADFS to authenticate for WHFB sign-ins.
 
 
 ## Azure AD join authentication to Active Directory using a Certificate
