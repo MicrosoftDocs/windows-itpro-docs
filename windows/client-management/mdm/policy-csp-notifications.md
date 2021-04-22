@@ -80,7 +80,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This policy setting blocks applications from using the network to send tile, badge, toast, and raw notifications. Specifically, this policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to use [periodic (polling) notifications](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/periodic-notification-overview).
+Added in Windows 10, version 1803. This policy setting blocks applications from using the network to send tile, badge, toast, and raw notifications. Specifically, this policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to use [periodic (polling) notifications](/windows/uwp/design/shell/tiles-and-notifications/periodic-notification-overview).
 
 If you enable this policy setting, applications and system features will not be able receive notifications from the network from WNS or via notification polling APIs.
 
@@ -274,4 +274,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

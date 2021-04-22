@@ -30,12 +30,12 @@ For each setting group:
 
 ## Cellular
 
-See [CM_CellularEntries configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/cm-cellularentries-csp) for settings and values.
+See [CM_CellularEntries configuration service provider (CSP)](/windows/client-management/mdm/cm-cellularentries-csp) for settings and values.
 
 ## EnterpriseAPN
 
-See [Configure cellular settings for tablets and PCs](https://docs.microsoft.com/windows/configuration/provisioning-apn) and 
-[EnterpriseAPN CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseapn-csp) for settings and values.
+See [Configure cellular settings for tablets and PCs](../provisioning-apn.md) and 
+[EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp) for settings and values.
 
 ## General
 
@@ -43,8 +43,8 @@ Use **General > DataRoam** to set the default value for the **Default roaming op
 
 ## Policies
 
-See [CMPolicy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/cmpolicy-csp) for settings and values.
+See [CMPolicy CSP](/windows/client-management/mdm/cmpolicy-csp) for settings and values.
 
 ## Proxies
 
-See [CM_ProxyEntries CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/cm-proxyentries-csp) for settings and values.
+See [CM_ProxyEntries CSP](/windows/client-management/mdm/cm-proxyentries-csp) for settings and values.

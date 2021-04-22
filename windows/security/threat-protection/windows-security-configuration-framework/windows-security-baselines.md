@@ -32,7 +32,7 @@ Even though Windows and Windows Server are designed to be secure out-of-the-box,
 
 We recommend that you implement an industry-standard configuration that is broadly known and well-tested, such as Microsoft security baselines, as opposed to creating a baseline yourself. This helps increase flexibility and reduce costs. 
 
-Here is a good blog about [Sticking with Well-Known and Proven Solutions](https://blogs.technet.microsoft.com/fdcc/2010/10/06/sticking-with-well-known-and-proven-solutions/).
+Here is a good blog about [Sticking with Well-Known and Proven Solutions](/archive/blogs/fdcc/sticking-with-well-known-and-proven-solutions).
 
 ## What are security baselines? 
 
@@ -65,7 +65,7 @@ The security baselines are included in the [Security Compliance Toolkit (SCT)](s
 
 ## Community
 
-[![Microsoft Security Guidance Blog](./../images/community.png)](https://blogs.technet.microsoft.com/secguide/) 
+[![Microsoft Security Guidance Blog](./../images/community.png)](/archive/blogs/secguide/) 
 
 ## Related Videos
 
@@ -74,8 +74,8 @@ You may also be interested in this msdn channel 9 video:
 
 ## See Also
 
--   [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/)
--   [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/)
--   [Microsoft Security Guidance Blog](https://blogs.technet.microsoft.com/secguide/)
+-   [Microsoft Endpoint Configuration Manager](/configmgr/)
+-   [Azure Monitor](/azure/azure-monitor/)
+-   [Microsoft Security Guidance Blog](/archive/blogs/secguide/)
 -   [Microsoft Security Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
--   [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 
+-   [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319)

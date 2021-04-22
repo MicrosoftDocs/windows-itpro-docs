@@ -20,7 +20,7 @@ ms.topic: article
 ## USMT Online Resources
 
 
--   [ADK Release Notes](https://msdn.microsoft.com/library/windows/hardware/dn927348.aspx)
+-   [ADK Release Notes](/windows-hardware/get-started/what-s-new-in-kits-and-tools)
 
 -   Microsoft Visual Studio
 
@@ -44,8 +44,3 @@ ms.topic: article
  
 
  
-
-
-
-
-

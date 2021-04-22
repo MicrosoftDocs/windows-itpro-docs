@@ -100,7 +100,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall</code>. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see <a href="win32-and-centennial-app-policy-configuration.md" data-raw-source="[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)">Win32 and Desktop Bridge app policy configuration</a>.
 
 > [!NOTE]
-> The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/library/cc179097.aspx).
+> The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)).
 
 <p style="margin-left: 20px">ADMX files that have been installed by using <strong>ConfigOperations/ADMXInstall</strong> can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}</code>.
 
@@ -694,6 +694,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-2" id="admx-digitallocker-digitalx-diableapplication-titletext-2">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_2</a>
+  </dd>
+</dl>
+
+### ADMX_DistributedLinkTracking policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-distributedlinktracking.md#admx-distributedlinktracking-dlt_allowdomainmode" id="admx-distributedlinktracking-dlt_allowdomainmode">ADMX_DistributedLinkTracking/DLT_AllowDomainMode</a>
   </dd>
 </dl>
 
@@ -1714,7 +1722,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disableenhancednotifications" id="admx-microsoftdefenderantivirus-reporting-disableenhancednotifications">ADMX_MicrosoftDefenderAntivirus/Reporting_DisableEnhancedNotifications</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disablegenericreports" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_DisablegenericrePorts</a>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disablegenericreports" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_Disablegenericreports</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-noncriticaltimeout" id="admx-microsoftdefenderantivirus-reporting-noncriticaltimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_NonCriticalTimeout</a>
@@ -4589,6 +4597,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-winlogon.md#admx-winlogon-softwaresasgeneration" id="admx-winlogon-softwaresasgeneration">ADMX_WinLogon/SoftwareSASGeneration</a>
+  </dd>
+</dl>
+
+### ADMX_Winsrv policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-winsrv.md#admx-winsrv-allowblockingappsatshutdown" id="#admx-winsrv-allowblockingappsatshutdown">ADMX_Winsrv/AllowBlockingAppsAtShutdown</a>
   </dd>
 </dl>
 
@@ -8571,26 +8587,27 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+
 ## Policies in Policy CSP supported by Group Policy and ADMX-backed policies in Policy CSP
-- [Policies in Policy CSP supported by Group Policy](policy-csps-supported-by-group-policy.md)
-- [ADMX-backed policies in Policy CSP](policy-csps-admx-backed.md)
+- [Policies in Policy CSP supported by Group Policy](./policies-in-policy-csp-supported-by-group-policy.md)
+- [ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
 
 > [!NOTE]
 > Not all Policies in Policy CSP supported by Group Policy are ADMX-backed. For more details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
 ## Policies in Policy CSP supported by HoloLens devices
-- [Policies in Policy CSP supported by HoloLens 2](policy-csps-supported-by-hololens2.md)  
-- [Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)  
-- [Policies in Policy CSP supported by HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
+- [Policies in Policy CSP supported by HoloLens 2](./policies-in-policy-csp-supported-by-hololens2.md)  
+- [Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite](./policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md)  
+- [Policies in Policy CSP supported by HoloLens (1st gen) Development Edition](./policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md)
 
 ## Policies in Policy CSP supported by Windows 10 IoT
-- [Policies in Policy CSP supported by Windows 10 IoT Core](policy-csps-supported-by-iot-core.md)
+- [Policies in Policy CSP supported by Windows 10 IoT Core](./policies-in-policy-csp-supported-by-iot-core.md)
 
 ## Policies in Policy CSP supported by Microsoft Surface Hub
-- [Policies in Policy CSP supported by Microsoft Surface Hub](policy-csps-supported-by-surface-hub.md)
+- [Policies in Policy CSP supported by Microsoft Surface Hub](./policies-in-policy-csp-supported-by-surface-hub.md)
 
 ## Policies in Policy CSP that can be set using Exchange ActiveSync (EAS)
-- [Policies in Policy CSP that can be set using Exchange ActiveSync (EAS)](policy-csps-that-can-be-set-using-eas.md)
+- [Policies in Policy CSP that can be set using Exchange ActiveSync (EAS)](./policies-in-policy-csp-that-can-be-set-using-eas.md)
 
 ## Related topics
 

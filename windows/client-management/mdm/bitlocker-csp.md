@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 04/16/2020
 ms.reviewer: 
@@ -892,7 +892,7 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is also set to 1.
 <!--/Description-->
 > [!IMPORTANT]
-> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview).
+> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](/windows/device-security/bitlocker/bitlocker-overview).
 
 > [!Warning]
 > When you enable BitLocker on a device with third-party encryption, it may render the device unusable and require you to reinstall Windows.

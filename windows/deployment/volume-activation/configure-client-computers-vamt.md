@@ -25,7 +25,7 @@ To enable the Volume Activation Management Tool (VAMT) to function correctly, ce
 Organizations where the VAMT will be widely used may benefit from making these changes inside the master image for Windows.
 
 > [IMPORTANT]
-> This procedure only applies to clients running Windows Vista or later. For clients running Windows XP Service Pack 1, see [Connecting Through Windows Firewall](https://docs.microsoft.com/windows/win32/wmisdk/connecting-to-wmi-remotely-with-vbscript).
+> This procedure only applies to clients running Windows Vista or later. For clients running Windows XP Service Pack 1, see [Connecting Through Windows Firewall](/windows/win32/wmisdk/connecting-to-wmi-remotely-with-vbscript).
 
 ## Configuring the Windows Firewall to allow VAMT access
 

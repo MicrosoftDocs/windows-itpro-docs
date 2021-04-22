@@ -1,7 +1,7 @@
 ---
 title: App-V Supported Configurations (Windows 10)
 description: Learn the requirements to install and run App-V supported configurations in your Windows 10 environment.
-author: lomayor
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -104,7 +104,7 @@ Similarly, the App-V Remote Desktop Services (RDS) client is included with Windo
 
 ## Sequencer system requirements
 
-Sequencer is now part of the Windows Assessment and Deployment Kit (Windows ADK). [Download the latest Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) that is recommended for your version of the Windows OS. 
+Sequencer is now part of the Windows Assessment and Deployment Kit (Windows ADK). [Download the latest Windows ADK](/windows-hardware/get-started/adk-install) that is recommended for your version of the Windows OS. 
 
 ### Sequencer hardware requirements
 

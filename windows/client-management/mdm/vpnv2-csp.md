@@ -30,8 +30,8 @@ Here are the requirements for this CSP:
 
 The XSDs for all EAP methods are shipped in the box and can be found at the following locations:
 
-- `C:\\Windows\\schemas\\EAPHost`
-- `C:\\Windows\\schemas\\EAPMethods`
+- `C:\Windows\schemas\EAPHost`
+- `C:\Windows\schemas\EAPMethods`
 
 The following shows the VPNv2 configuration service provider in tree format.
 

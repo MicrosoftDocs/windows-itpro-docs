@@ -72,4 +72,4 @@ Desktop Analytics can make all of the tasks discussed in this article significan
 - Automatically apply your app classifications (critical, important, not important)
 - Automatically identify application compatibility risks and provide recommendations for reducing those risks
 
-For more information, see [What is Desktop Analytics?](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
+For more information, see [What is Desktop Analytics?](/mem/configmgr/desktop-analytics/overview)

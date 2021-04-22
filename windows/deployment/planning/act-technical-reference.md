@@ -21,7 +21,7 @@ ms.topic: article
 - Windows 10, version 1607
  
 >[!IMPORTANT]
->We've replaced the majority of functionality included in the Application Compatibility Toolkit (ACT) with [Windows Analytics](../update/windows-analytics-overview.md), a solution in the Microsoft Operations Management Suite. Windows Analytics gives enterprises the tools to plan and manage the upgrade process end to end, allowing them to adopt new Windows releases more quickly. With new Windows versions being released multiple times a year, ensuring application and driver compatibility on an ongoing basis is key to adopting new Windows versions as they are released.
+>We've replaced the majority of functionality included in the Application Compatibility Toolkit (ACT) with [Windows Analytics](/mem/configmgr/desktop-analytics/overview), a solution in the Microsoft Operations Management Suite. Windows Analytics gives enterprises the tools to plan and manage the upgrade process end to end, allowing them to adopt new Windows releases more quickly. With new Windows versions being released multiple times a year, ensuring application and driver compatibility on an ongoing basis is key to adopting new Windows versions as they are released.
  
 Microsoft developed Windows Analytics in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Windows Analytics was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
  

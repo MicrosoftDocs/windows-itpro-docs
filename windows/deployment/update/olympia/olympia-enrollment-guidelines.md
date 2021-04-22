@@ -51,7 +51,7 @@ Choose one of the following two enrollment options:
 
 ### Set up an Azure Active Directory-REGISTERED Windows 10 device
 
-This is the Bring Your Own Device (BYOD) method--your device will receive Olympia policies and features, but a new account will not be created. See [Set up Azure Active Directory registered Windows 10 devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup) for additional information.
+This is the Bring Your Own Device (BYOD) method--your device will receive Olympia policies and features, but a new account will not be created. See [Set up Azure Active Directory registered Windows 10 devices](/azure/active-directory/device-management-azuread-registered-devices-windows10-setup) for additional information.
 
 1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/instantanswers/5de907f1-f8ba-4fd9-a89d-efd23fee918c/create-a-local-user-or-administrator-account-in-windows-10)).
 
@@ -87,10 +87,10 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
 
 ### Set up Azure Active Directory-JOINED Windows 10 device
 
--   This method will upgrade your Windows 10 Pro license to Enterprise and create a new account. See [Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup) for more information.
+-   This method will upgrade your Windows 10 Pro license to Enterprise and create a new account. See [Set up Azure Active Directory joined devices](/azure/active-directory/device-management-azuread-joined-devices-setup) for more information.
 
     > [!NOTE]
-    > Make sure that you save your Pro license key before upgrading to the Enterprise edition. If the device gets disconnected from Olympia, you can use the Pro key to reactivate the license manually in the unlikely event that the license fails to downgrade back to Pro automatically. To reactivate manually, see [Upgrade by manually entering a product key](https://docs.microsoft.com/windows/deployment/upgrade/windows-10-edition-upgrades#upgrade-by-manually-entering-a-product-key).
+    > Make sure that you save your Pro license key before upgrading to the Enterprise edition. If the device gets disconnected from Olympia, you can use the Pro key to reactivate the license manually in the unlikely event that the license fails to downgrade back to Pro automatically. To reactivate manually, see [Upgrade by manually entering a product key](../../upgrade/windows-10-edition-upgrades.md#upgrade-by-manually-entering-a-product-key).
 
 1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/instantanswers/5de907f1-f8ba-4fd9-a89d-efd23fee918c/create-a-local-user-or-administrator-account-in-windows-10)).
 
@@ -134,4 +134,3 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
 
 >[!NOTE]
 > Your Windows 10 Enterprise license will not be renewed if your device is not connected to Olympia.
-

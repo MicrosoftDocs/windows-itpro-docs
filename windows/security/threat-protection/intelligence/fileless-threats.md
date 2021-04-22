@@ -7,8 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -91,7 +91,7 @@ Besides being vulnerable at the firmware level, CPUs could be manufactured with 
 
 **File-based** (Type III: executables, DLLs, LNK files, scheduled tasks): This is the standard execution vector. A simple executable can be launched as a first-stage malware to run an additional payload in memory, or injected into other legitimate running processes.
 
-**Macro-based** (Type III: Office documents): The [VBA language](https://msdn.microsoft.com/vba/office-shared-vba/articles/getting-started-with-vba-in-office) is a flexible and powerful tool designed to automate editing tasks and add dynamic functionality to documents. As such, it can be abused by attackers to carry out malicious operations like decoding, running, or injecting an executable payload, or even implementing an entire ransomware, like in [the case of qkG](https://blog.trendmicro.com/trendlabs-security-intelligence/qkg-filecoder-self-replicating-document-encrypting-ransomware/). Macros are executed within the context of an Office process (e.g., Winword.exe) and implemented in a scripting language. There's no binary executable that an antivirus can inspect. While Office apps require explicit consent from the user to execute macros from a document, attackers use social engineering techniques to trick users into allowing macros to execute.
+**Macro-based** (Type III: Office documents): The [VBA language](/office/vba/Library-Reference/Concepts/getting-started-with-vba-in-office) is a flexible and powerful tool designed to automate editing tasks and add dynamic functionality to documents. As such, it can be abused by attackers to carry out malicious operations like decoding, running, or injecting an executable payload, or even implementing an entire ransomware, like in [the case of qkG](https://blog.trendmicro.com/trendlabs-security-intelligence/qkg-filecoder-self-replicating-document-encrypting-ransomware/). Macros are executed within the context of an Office process (e.g., Winword.exe) and implemented in a scripting language. There's no binary executable that an antivirus can inspect. While Office apps require explicit consent from the user to execute macros from a document, attackers use social engineering techniques to trick users into allowing macros to execute.
 
 **Script-based** (Type II: file, service, registry, WMI repo, shell): The JavaScript, VBScript, and PowerShell scripting languages are available by default on Windows platforms. Scripts have the same advantages as macros, they are textual files (not binary executables) and run within the context of the interpreter (like wscript.exe, powershell.exe), which is a clean and legitimate component. Scripts are versatile and can be run from a file (by double-clicking them) or executed directly on the command line of an interpreter. Running on the command line allows malware to encode malicious scripts as autostart services inside [autorun registry keys](https://www.gdatasoftware.com/blog/2014/07/23947-poweliks-the-persistent-malware-without-a-file) as [WMI event subscriptions](https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html) from the WMI repo. Furthermore, an attacker who has gained access to an infected machine may input the script on the command prompt.
 
@@ -102,3 +102,7 @@ Besides being vulnerable at the firmware level, CPUs could be manufactured with 
 At Microsoft, we actively monitor the security landscape to identify new threat trends and develop solutions to mitigate classes of threats. We instrument durable protections that are effective against a wide range of threats. Through AntiMalware Scan Interface (AMSI), behavior monitoring, memory scanning, and boot sector protection, Microsoft Defender for Endpoint](https://www.microsoft.com/windowsforbusiness?ocid=docs-fileless) can inspect fileless threats even with heavy obfuscation. Machine learning technologies in the cloud allow us to scale these protections against new and emerging threats.
 
 To learn more, read: [Out of sight but not invisible: Defeating fileless malware with behavior monitoring, AMSI, and next-gen AV](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/27/out-of-sight-but-not-invisible-defeating-fileless-malware-with-behavior-monitoring-amsi-and-next-gen-av/)
+
+## Additional resources and information
+
+Learn how to [deploy threat protection capabilities across Microsoft 365 E5](/microsoft-365/solutions/deploy-threat-protection).

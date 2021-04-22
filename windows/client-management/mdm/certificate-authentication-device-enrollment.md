@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 06/26/2017
 ---
 
@@ -17,7 +17,7 @@ ms.date: 06/26/2017
 This section provides an example of the mobile device enrollment protocol using certificate authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 > [!Note]
-> To set up devices to use certificate authentication for enrollment, you should create a provisioning package. For more information about provisioning packages, see [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107).
+> To set up devices to use certificate authentication for enrollment, you should create a provisioning package. For more information about provisioning packages, see [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package).
 
 ## In this topic
 

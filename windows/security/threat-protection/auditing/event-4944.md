@@ -87,7 +87,7 @@ This event shows Windows Firewall settings that were in effect when the Windows 
 
 <img src="images/windows-firewall-state-off.png" alt="Windows Firewall set to Off illustration" width="382" height="395" />
 
-**Allow Remote Administration** \[Type = UnicodeString\]: looks like this setting is connected to ”[Windows Firewall: Allow remote administration exception](https://technet.microsoft.com/library/cc738900(v=ws.10).aspx)” Group Policy setting, but it is always Disabled, no matter which option is set for “[Windows Firewall: Allow remote administration exception](https://technet.microsoft.com/library/cc738900(v=ws.10).aspx)” Group Policy.
+**Allow Remote Administration** \[Type = UnicodeString\]: looks like this setting is connected to ”[Windows Firewall: Allow remote administration exception](/previous-versions/windows/it-pro/windows-server-2003/cc738900(v=ws.10))” Group Policy setting, but it is always Disabled, no matter which option is set for “[Windows Firewall: Allow remote administration exception](/previous-versions/windows/it-pro/windows-server-2003/cc738900(v=ws.10))” Group Policy.
 
 **Allow Unicast Responses to Multicast/Broadcast Traffic** \[Type = UnicodeString\]:
 
@@ -120,4 +120,3 @@ For 4944(S): The following policy was active when the Windows Firewall started.
 -   If you have a standard or baseline for Windows Firewall settings defined for **Public** profile (which can be the same as for Domain, for example), monitor this event and check whether the settings reported by the event are still the same as were defined in your standard or baseline.
 
 -   Unfortunately this event shows configuration only for **Public** profile, but you can still compare all the settings with your organization's Windows Firewall baseline for Public profile on different computers and trigger an alert if the configuration is not the same.
-

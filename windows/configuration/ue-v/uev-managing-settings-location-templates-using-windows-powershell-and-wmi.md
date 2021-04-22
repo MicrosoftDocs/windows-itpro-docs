@@ -21,7 +21,7 @@ ms.topic: article
 
 User Experience Virtualization (UE-V) uses XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V template generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI). 
 
-> **Note**&nbsp;&nbsp;For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](https://technet.microsoft.com/library/mt772286.aspx).
+> **Note**&nbsp;&nbsp;For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/).
 
 ## Manage UE-V settings location templates by using Windows PowerShell
 
@@ -344,4 +344,4 @@ Where a list of Package Family Names is called by the WMI command, the list must
 
 [Administering UE-V](uev-administering-uev.md)
 
-[User Experience Virtualization in Windows PowerShell](https://technet.microsoft.com/library/mt772286.aspx)
+[User Experience Virtualization in Windows PowerShell](/powershell/module/uev/)

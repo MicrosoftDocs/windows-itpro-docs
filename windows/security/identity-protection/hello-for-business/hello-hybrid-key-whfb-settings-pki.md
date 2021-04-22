@@ -81,7 +81,9 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list.  However, the certificate template and the superseding of certificate templates is not active until you publish the certificate template to one or more certificate authorities.
 
 > [!NOTE]
-> The domain controller's certificate must chain to a root in the NTAuth store. By default, the Active Directory Certificate Authority's root certificate is added to the NTAuth store. If you are using a third-party CA, this may not be done by default. If the domain controller certificate does not chain to a root in the NTAuth store, user authentication will fail.
+> A domain controller's certificate must chain to a certificate in the NTAuth store in Active Directory. By default, online "Enterprise" Active Directory Certificate Authority certificates are added to the NTAuth store at installation time. If you are using a third-party CA, this is not done by default. If the domain controller certificate does not chain to a trusted CA in the NTAuth store, user authentication will fail. 
+> 
+> You can view an AD forest's NTAuth store (NTAuthCertificates) using PKIVIEW.MSC from an ADCS CA. Open PKIView.msc, then click the Action menu -> Manage AD Containers. To see all certificates in the NTAuth store, run **Certutil -viewstore -enterprise NTAuth** from the command-line interface (Cmd.exe).
 
 ### Publish Certificate Templates to a Certificate Authority
 

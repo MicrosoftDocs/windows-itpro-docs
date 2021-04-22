@@ -27,7 +27,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event indicates that a logon process has registered with the Local Security Authority ([LSA](https://msdn.microsoft.com/library/windows/desktop/aa378326(v=vs.85).aspx)). Also, logon requests will now be accepted from this source.
+This event indicates that a logon process has registered with the Local Security Authority ([LSA](/windows/win32/secauthn/lsa-authentication)). Also, logon requests will now be accepted from this source.
 
 At the technical level, the event does not come from the registration of a trusted logon process, but from a confirmation that the process is a trusted logon process. If it is a trusted logon process, the event generates.
 
@@ -111,5 +111,4 @@ For 4611(S): A trusted logon process has been registered with the Local Security
 
 -   Typically this event has an informational purpose. If you defined the list of allowed Logon Processes in the system, then you can check is “**Logon Process Name”** field value in the allow list or not.
 
--   
-
+-

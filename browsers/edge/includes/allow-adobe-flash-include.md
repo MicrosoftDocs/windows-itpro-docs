@@ -33,7 +33,7 @@ ms.topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowFlash](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser\#browser-allowflash)
+- **MDM name:** Browser/[AllowFlash](/windows/client-management/mdm/policy-csp-browser\#browser-allowflash)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowFlash 
 - **Data type:** Integer

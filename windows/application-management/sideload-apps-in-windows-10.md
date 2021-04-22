@@ -55,7 +55,7 @@ And here's what you'll need to do:
 You can sideload apps on managed or unmanaged devices.
 
 >[!IMPORTANT]
-> To install an app on Windows 10, in addition to following [these procedures](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web), users can also double-click any APPX/MSIX package.
+> To install an app on Windows 10, in addition to following [these procedures](/windows/msix/app-installer/installing-windows10-apps-web), users can also double-click any APPX/MSIX package.
 
 
 **To turn on sideloading for managed devices**
@@ -125,8 +125,3 @@ You can sideload apps on managed or unmanaged devices.
  
 
  
-
-
-
-
-

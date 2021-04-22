@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 11/19/2019
 ---
 
@@ -209,7 +209,7 @@ Data type is Base64.
 Supported operations are Get, Add, Delete, and Replace.
 
 > [!NOTE]
-> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool) and added to the Applocker-CSP.
+> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)) command line tool) and added to the Applocker-CSP.
 
 <a href="" id="applocker-enterprisedataprotection"></a>**AppLocker/EnterpriseDataProtection**  
 Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
@@ -267,7 +267,7 @@ Supported operations are Get, Add, Delete, and Replace.
 
 You can pair a Windows Phone (Windows 10 Mobile, version 1511) to your desktop using the Device Portal on the phone to get the various types of information, including publisher name and product name of apps installed on the phone. This procedure describes pairing your phone to your desktop using WiFi.
 
-If this procedure does not work for you, try the other methods for pairing described in [Device Portal for Mobile](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal-mobile).
+If this procedure does not work for you, try the other methods for pairing described in [Device Portal for Mobile](/windows/uwp/debug-test-perf/device-portal-mobile).
 
 **To find Publisher and PackageFullName for apps installed on Windows 10 Mobile**
 
@@ -279,7 +279,7 @@ If this procedure does not work for you, try the other methods for pairing descr
 
     If you get a certificate error, continue to the web page.
 
-    If you get an error about not reaching the web page, then you should try the other methods for pairing described in [Device Portal for Mobile](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal-mobile).
+    If you get an error about not reaching the web page, then you should try the other methods for pairing described in [Device Portal for Mobile](/windows/uwp/debug-test-perf/device-portal-mobile).
 
 6.  On your phone under **Device discovery**, tap **Pair**. You will get a code (case sensitive).
 7.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
@@ -1916,12 +1916,3 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
-
-
-
-
-
-
-
-

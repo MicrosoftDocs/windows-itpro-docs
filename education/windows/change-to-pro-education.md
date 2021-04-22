@@ -18,12 +18,12 @@ manager: dansimp
 Windows 10 Pro Education is a new offering in Windows 10, version 1607. This edition builds on the commercial version of Windows 10 Pro and provides important management controls needed in schools by providing education-specific default settings.
 
 If you have an education tenant and use devices with Windows 10 Pro, global administrators can opt-in to a free change to Windows 10 Pro Education depending on your scenario.
-- [Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode](https://docs.microsoft.com/education/windows/s-mode-switch-to-edu)
+- [Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode](./s-mode-switch-to-edu.md)
 
 To take advantage of this offering, make sure you meet the [requirements for changing](#requirements-for-changing). For academic customers who are eligible to change to Windows 10 Pro Education, but are unable to use the above methods, contact Microsoft Support for assistance.
 
 >[!IMPORTANT]
->If you change a Windows 10 Pro device to Windows 10 Pro Education using Microsoft Store for Education, [subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation) won't work.
+>If you change a Windows 10 Pro device to Windows 10 Pro Education using Microsoft Store for Education, [subscription activation](/windows/deployment/windows-10-subscription-activation) won't work.
 
 ## Requirements for changing
 Before you change to Windows 10 Pro Education, make sure you meet these requirements:
@@ -82,7 +82,7 @@ You can use Windows Configuration Designer to create a provisioning package that
 
 3. Complete the rest of the process for creating a provisioning package and then apply the package to the devices you want to change to Windows 10 Pro Education.
 
-    For more information about using Windows Configuration Designer, see [Set up student PCs to join domain](https://technet.microsoft.com/edu/windows/set-up-students-pcs-to-join-domain). 
+    For more information about using Windows Configuration Designer, see [Set up student PCs to join domain](./set-up-students-pcs-to-join-domain.md). 
 
 
 ### Change using the Activation page
@@ -307,7 +307,7 @@ You need to synchronize these identities so that users will have a *single ident
 ![Illustration of Azure Active Directory Connect](images/windows-ad-connect.png)
 
 For more information about integrating on-premises AD DS domains with Azure AD, see these resources:
--   [Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)
+-   [Integrating your on-premises identities with Azure Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity)
 -   [Azure AD + Domain Join + Windows 10](https://blogs.technet.microsoft.com/enterprisemobility/2016/02/17/azure-ad-domain-join-windows-10/)
 
 ## Related topics
@@ -315,5 +315,4 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)  
 [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)  
 [Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)  
-[Windows 10 subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation)
-
+[Windows 10 subscription activation](/windows/deployment/windows-10-subscription-activation)

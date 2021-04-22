@@ -32,16 +32,16 @@ To configure your environment for BitLocker, you will need to do the following:
 4. Configure the rules (CustomSettings.ini) for BitLocker.
 
 > [!NOTE]
-> Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery password in Active Directory. For additional information about this feature, see [Backing Up BitLocker and TPM Recovery Information to AD DS](https://docs.microsoft.com/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds).
+> Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery password in Active Directory. For additional information about this feature, see [Backing Up BitLocker and TPM Recovery Information to AD DS](/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds).
 If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
 
 > [!NOTE]
 > Backing up TPM to Active Directory was supported only on Windows 10 version 1507 and 1511.
 
 >[!NOTE]
->Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For additional information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd875529(v=ws.10)). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
+>Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For additional information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](/previous-versions/windows/it-pro/windows-7/dd875529(v=ws.10)). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
 
-For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](./prepare-for-windows-deployment-with-mdt.md).
 
 ## Configure Active Directory for BitLocker
 
@@ -148,7 +148,7 @@ cscript.exe SetConfig.vbs SecurityChip Active
 
 ## Configure the Windows 10 task sequence to enable BitLocker
 
-When configuring a task sequence to run any BitLocker tool, either directly or using a custom script, it is helpful if you also add some logic to detect whether the BIOS is already configured on the machine. In the following task sequence, we are using a sample script (ZTICheckforTPM.wsf) from the Deployment Guys web page to check the status on the TPM chip. You can download this script from the Deployment Guys Blog post, [Check to see if the TPM is enabled](https://go.microsoft.com/fwlink/p/?LinkId=619549).
+When configuring a task sequence to run any BitLocker tool, either directly or using a custom script, it is helpful if you also add some logic to detect whether the BIOS is already configured on the machine. In the following task sequence, we are using a sample script (ZTICheckforTPM.wsf) from the Deployment Guys web page to check the status on the TPM chip. You can download this script from the Deployment Guys Blog post, [Check to see if the TPM is enabled](/archive/blogs/deploymentguys/check-to-see-if-the-tpm-is-enabled).
 
 In the following task sequence, we added five actions:
 
