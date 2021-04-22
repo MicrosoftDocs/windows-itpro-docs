@@ -42,6 +42,9 @@ The value of this policy setting indicates the number of users whose logon infor
 Users who access the server console will have their logon credentials cached on that server. A malicious user who is able to access the file system of the server can locate this cached information and use a brute-force attack to determine user passwords. Windows mitigates this type of attack by 
 encrypting the information and keeping the cached credentials in the system's registries, which are spread across numerous physical locations.
 
+> [!NOTE]
+> The cached account information does not expire, but can get overwritten, as previously described.
+
 ### Possible values
 
 -   A user-defined number from 0 through 50

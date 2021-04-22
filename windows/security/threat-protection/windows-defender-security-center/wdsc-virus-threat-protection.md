@@ -10,7 +10,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 04/30/2018
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -30,11 +29,11 @@ In Windows 10, version 1803, this section also contains information and settings
 
 IT administrators and IT pros can get more configuration information from these articles:
 
-- [Microsoft Defender Antivirus in the Windows Security app](../microsoft-defender-antivirus/microsoft-defender-security-center-antivirus.md)
-- [Microsoft Defender Antivirus documentation library](../microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in the Windows Security app](/microsoft-365/security/defender-endpoint/microsoft-defender-security-center-antivirus)
+- [Microsoft Defender Antivirus documentation library](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10)
 - [Protect important folders with Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders)
 - [Defend yourself from cybercrime with new Office 365 capabilities](https://blogs.office.com/en-us/2018/04/05/defend-yourself-from-cybercrime-with-new-office-365-capabilities/)
-- [Office 365 advanced protection](https://support.office.com/en-us/article/office-365-advanced-protection-82e72640-39be-4dc7-8efd-740fb289123a)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Ransomware detection and recovering your files](https://support.office.com/en-us/article/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f?ui=en-US&rs=en-US&ad=US)
 
 You can hide the **Virus & threat protection** section or the **Ransomware protection** area from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for these features.
