@@ -198,7 +198,7 @@
       href: ie11-deploy-guide/out-of-date-activex-control-blocking.md
       items: 
         - name: Blocked out-of-date ActiveX controls
-          href: ie11-deploy-guide/blocked-out-of-date-activex-controls.md)
+          href: ie11-deploy-guide/blocked-out-of-date-activex-controls.md
     - name: Deprecated document modes and Internet Explorer 11
       href: ie11-deploy-guide/deprecated-document-modes.md
     - name: What is the Internet Explorer 11 Blocker Toolkit?
