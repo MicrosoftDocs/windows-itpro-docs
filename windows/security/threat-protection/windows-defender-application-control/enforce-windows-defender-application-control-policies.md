@@ -1,34 +1,37 @@
 ---
 title: Enforce Windows Defender Application Control (WDAC) policies (Windows 10)
-description: Learn how to test a Windows Defender Application Control (WDAC) policy in enforced mode by following these steps in an elevated Windows PowerShell session.
+description: Learn how to switch a WDAC policy from audit to enforced mode.
 keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: dansimp
+ms.reviewer: jogeurte
+ms.author: jogeurte
+ms.manager: jsuther
 manager: dansimp
-ms.date: 05/03/2018
+ms.date: 04/22/2021
 ms.technology: mde
+ms.topic: article
+ms.localizationpriority: medium
 ---
 
-# Enforce Windows Defender Application Control policies
+# Enforce Windows Defender Application Control (WDAC) policies
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016
+- Windows 10
+- Windows Server 2016 and above
 
-Every WDAC policy is created with audit mode enabled. After you have successfully deployed and tested a WDAC policy in audit mode and are ready to test the policy in enforced mode, complete the following steps in an elevated Windows PowerShell session:
+You should now have one or more WDAC policies broadly deployed in audit mode. You have analyzed events collected from the devices with those policies and you are ready to proceed to enforcement. Use this procedure to prepare and deploy your WDAC policy in enforcement mode.
 
-> [!NOTE]
-> Every WDAC policy should be tested in audit mode first. For information about how to audit WDAC policies, see [Audit Windows Defender Application Control policies](audit-windows-defender-application-control-policies.md), earlier in this topic.
+## Convert WDAC policy from audit to enforced
+
+As described in [common WDAC deployment scenarios](types-of-devices.md), we will use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+
+**Alice Pena** is the IT team lead tasked with the rollout of WDAC.
+
+Alice previously created and deployed a policy for the organization's [fully-managed devices](create-wdac-policy-for-fully-managed-devices.md). She updated the policy based on audit event data as described in [Use audit events to create WDAC policy rules](audit-windows-defender-application-control-policies.md) and re-deployed it. All remaining audit events appear to be expected and Alice is ready to switch to enforcement mode.
 
 1. Initialize the variables that will be used:
 
