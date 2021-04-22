@@ -68,7 +68,6 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 > You may have on-premises domain Federated with Azure AD. Once user successfully provisioned WHFB PIN/Bio on, any future login of WHFB (PIN/Bio) sign-in will directly authenticate against AAD to get PRT, as well as Authenticate against your DC (if LOS to DC available) to get Kerberos as mentioned above. ADFS federation used only when Enterprise PRT calls are placed from the client. You need to have device write-back enabled to get "Enterprise PRT" from your federation.  
 
 
-
 ## Hybrid Azure AD join authentication using a Key
 ![Hybrid Azure AD join authentication using a Key](images/howitworks/auth-haadj-keytrust.png)
 
