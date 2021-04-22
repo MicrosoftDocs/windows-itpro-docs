@@ -1,0 +1,67 @@
+- name: Windows 10 for Education
+  href: index.md
+  items: 
+    - name: Windows 10 editions for education customers
+      href: windows-editions-for-education-customers.md
+    - name: Windows 10 configuration recommendations for education customers
+      href: configure-windows-for-education.md
+    - name: Deployment recommendations for school IT administrators
+      href: edu-deployment-recommendations.md
+    - name: Set up Windows devices for education
+      href: set-up-windows-10.md
+      items: 
+        - name: What's new in Set up School PCs
+          href: set-up-school-pcs-whats-new.md)
+        - name: Technical reference for the Set up School PCs app
+          href: set-up-school-pcs-technical.md
+          items: 
+            - name: Azure AD Join for school PCs
+              href: set-up-school-pcs-azure-ad-join.md
+            - name: Shared PC mode for school devices
+              href: set-up-school-pcs-shared-pc-mode.md
+            - name: Provisioning package settings
+              href: set-up-school-pcs-provisioning-package.md
+        - name: Use the Set up School PCs app
+          href: use-set-up-school-pcs-app.md
+        - name: Set up student PCs to join domain
+          href: set-up-students-pcs-to-join-domain.md
+        - name: Provision student PCs with apps
+          href: set-up-students-pcs-with-apps.md
+    - name: Take tests in Windows 10
+      href: take-tests-in-windows-10.md
+      items: 
+        - name: Set up Take a Test on a single PC
+          href: take-a-test-single-pc.md
+        - name: Set up Take a Test on multiple PCs
+          href: take-a-test-multiple-pcs.md
+        - name: Take a Test app technical reference
+          href: take-a-test-app-technical.md
+    - name: Reset devices with Autopilot Reset
+      href: autopilot-reset.md
+    - name: Working with Microsoft Store for Education
+      href: education-scenarios-store-for-business.md
+    - name: "Get Minecraft: Education Edition"
+      href: get-minecraft-for-education.md
+      items: 
+        - name: "For teachers: get Minecraft Education Edition"
+          href: teacher-get-minecraft.md
+        - name: "For IT administrators: get Minecraft Education Edition"
+          href: school-get-minecraft.md
+        - name: "Get Minecraft: Education Edition with Windows 10 device promotion"
+          href: get-minecraft-device-promotion.md
+    - name: Test Windows 10 in S mode on existing Windows 10 education devices
+      href: test-windows10s-for-edu.md
+    - name: Enable Windows 10 in S mode on Surface Go devices
+      href: enable-s-mode-on-surface-go-devices.md
+    - name: Deploy Windows 10 in a school
+      href: deploy-windows-10-in-a-school.md
+    - name: Deploy Windows 10 in a school district
+      href: deploy-windows-10-in-a-school-district.md
+    - name: Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
+      href: s-mode-switch-to-edu.md
+    - name: Change to Windows 10 Pro Education from Windows 10 Pro
+      href: change-to-pro-education.md
+    - name: Chromebook migration guide
+      href: chromebook-migration-guide.md
+    - name: Change history for Windows 10 for Education
+      href: change-history-edu.md
