@@ -31,7 +31,7 @@ The service is compliant {COMPLIANT WITH WHAT? BY ITSELF THE WORD DOESN'T MEAN A
 
 ## How it works
 
-The deployment service complements existing Windows Update for Business capabilities, including existing device policies and Update Compliance.
+The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Update Compliance](update-compliance-monitor.md).
 
 {BIG IMAGE}
 
@@ -39,7 +39,7 @@ Unlike existing client policy, the deployment service does not interact with dev
 
 {SMALLER IMAGE}
 
-The deployment service exposes these capabilities through Microsoft Graph REST APIs {LINK}. You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as Microsoft Endpoint Manager.
+The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as Microsoft Endpoint Manager.
 
 ## Prerequisites
 
@@ -88,7 +88,7 @@ The deployment service protects deployments through a combination of rollout con
 
 ### Schedule rollouts with automatic piloting
 
-The deployment service allows any update to be deployed over a period of days or weeks. Once an update has been scheduled, the deployment service optimizes the deployment based on the scheduling parameters and unique attributes spanning the devices being updated. The service does the following: {IN THIS ORDER SPECIFICALLY OR JUST IN GENERAL?}
+The deployment service allows any update to be deployed over a period of days or weeks. Once an update has been scheduled, the deployment service optimizes the deployment based on the scheduling parameters and unique attributes spanning the devices being updated. The service follows these steps:
 
 1. Determine the number of devices to be updated in each deployment wave, based on scheduling parameters.
 2. Select devices for each deployment wave so that earlier waves have a diversity of hardware and software, to function as pilot device populations.
@@ -115,7 +115,7 @@ Deployment scheduling controls are always available, but to take advantage of th
 
 #### Set the **AllowWUfBCloudProcessing** policy
 
-To enroll devices in Windows Update for Business cloud processing {IS THIS THE SAME THING AS THE DEPLOYMENT SERVICE?}, set the **AllowWUfBCloudProcessing** policy using mobile device management (MDM) policy.
+To enroll devices in Windows Update for Business cloud processing, set the **AllowWUfBCloudProcessing** policy using mobile device management (MDM) policy.
 
 > [!NOTE]
 > Setting this policy by using Group Policy isn't currently supported.
@@ -133,7 +133,7 @@ Following is an example of setting the policy using Microsoft Endpoint Manager:
 5. In **Configuration settings**, select **Add**, enter the following settings, select **Save**, and then select **Next**.
     - Name: **AllowWUfBCloudProcessing**
     - Description: Enter a description.
-    - OMA-URI: \`./Vendor/MSFT/Policy/Config/System/AllowWUfBCloudProcessing\`
+    - OMA-URI: `./Vendor/MSFT/Policy/Config/System/AllowWUfBCloudProcessing`
     - Data type: **String**
     - Value: **1**
 6. In **Assignments**, select the groups that will receive the profile, and then select **Next**.
