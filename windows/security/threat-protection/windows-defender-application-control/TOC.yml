@@ -108,7 +108,7 @@
         - name: Known Issues
           href: operations/known-issues.md
     - name: AppLocker
-      href: applocker\applocker-overview.md)
+      href: applocker\applocker-overview.md
       items: 
         - name: Administer AppLocker
           href: applocker\administer-applocker.md
