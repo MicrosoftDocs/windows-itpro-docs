@@ -38,6 +38,9 @@ manager: dansimp
     <a href="#experience-allowmanualmdmunenrollment">Experience/AllowManualMDMUnenrollment</a>
   </dd>
   <dd>
+    <a href="#experience-allownewsandinterestsonthetaskbar">Experience/AllowNewsAndInterestsOnTheTaskbar</a>
+  </dd>
+  <dd>
     <a href="#experience-allowsaveasofofficefiles">Experience/AllowSaveAsOfOfficeFiles</a>
   </dd>
   <dd>
@@ -436,6 +439,65 @@ The following list shows the supported values:
 
 <hr/>
 
+
+<!--Policy-->
+<a href="" id="experience-allownewsandinterestsonthetaskbar"></a>**Experience/AllowNewsAndInterestsOnTheTaskbar**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Machine
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Specifies whether to allow "News and interests" on the Taskbar.
+
+<!--/Description-->
+<!--SupportedValues-->
+The values for this policy are 1 and 0. This policy defaults to 1.
+
+- 1 - Default - News and interests feature will be allowed on the taskbar. The settings UI will be present in Taskbar context menu, and users will be able to turn off or switch mode.
+
+- 0 - News and interests feature will be turned off completely, and the settings UI in Taskbar context menu will be removed.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
 <!--Policy-->
 <a href="" id="experience-allowsaveasofofficefiles"></a>**Experience/AllowSaveAsOfOfficeFiles**  
 

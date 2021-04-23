@@ -84,9 +84,13 @@ The following steps demonstrate required settings using the Intune service:
 You may contact your domain administrators to verify if the group policy has been deployed successfully.
 
 8. Verify that the device is not enrolled with the old Intune client used on the Intune Silverlight Portal (this is the Intune portal used before the Azure portal).
+
 9. Verify that Azure AD allows the logon user to enroll devices.
+
     ![Azure AD device settings](images/auto-enrollment-azure-ad-device-settings.png)
+
 10. Verify that Microsoft Intune should allow enrollment of Windows devices.
+
     ![Enrollment of Windows devices](images/auto-enrollment-enrollment-of-windows-devices.png)
 
 ## Configure the auto-enrollment Group Policy for a single PC
@@ -108,18 +112,21 @@ Requirements:
 
 3. In **Local Computer Policy**, click **Administrative Templates** > **Windows Components** > **MDM**.
 
-   ![MDM policies](images/autoenrollment-mdm-policies.png)
+    > [!div class="mx-imgBorder"]
+    > ![MDM policies](images/autoenrollment-mdm-policies.png)
 
 4. Double-click **Enable automatic MDM enrollment using default Azure AD credentials** (previously called **Auto MDM Enrollment with AAD Token** in Windows 10, version 1709). For ADMX files in Windows 10, version 1903 and later, select **User Credential** as the Selected Credential Type to use.
 
    > [!NOTE]
    > **Device Credential** Credential Type may work, however, it is not yet supported by Intune. We don't recommend using this option until it's supported. 
+
    ![MDM autoenrollment policy](images/autoenrollment-policy.png)
 
 5. Click **Enable**, and select **User Credential** from the dropdown **Select Credential Type to Use**, then click **OK**.
 
     > [!NOTE]
     > In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have installed Windows 10, version 1903 or later.
+    > 
     > The default behavior for older releases is to revert to **User Credential**.
     > **Device Credential** is not supported for enrollment type when you have a ConfigMgr Agent on your device.
 
@@ -158,7 +165,10 @@ Requirements:
 
     To see the result of the task, move the scroll bar to the right to see the **Last Run Result**. Note that **0x80180026** is a failure message (MENROLL\_E_DEVICE\_MANAGEMENT_BLOCKED). You can see the logs in the **History** tab.
 
-    If the device enrollment is blocked, your IT admin may have enabled the **Disable MDM Enrollment** policy. Note that the GPEdit console does not reflect the status of policies set by your IT admin on your device. It is only used by the user to set policies.
+    If the device enrollment is blocked, your IT admin may have enabled the **Disable MDM Enrollment** policy.
+
+    > [!NOTE]
+    > The GPEdit console does not reflect the status of policies set by your IT admin on your device. It is only used by the user to set policies.
 
 ## Configure the auto-enrollment for a group of devices
 
@@ -203,11 +213,11 @@ Requirements:
 
 4. Rename the extracted Policy Definitions folder to **PolicyDefinitions**.
 
-5. Copy PolicyDefinitions folder to **C:\Windows\SYSVOL\domain\Policies**.
+5. Copy PolicyDefinitions folder to **\\contoso.com\SYSVOL\contoso.com\policies\PolicyDefinitions**.
 
    If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain.
 
-6. Restart the Domain Controller for the policy to be available.
+6. Wait for the SYSVOL DFSR replication to be completed and then restart the Domain Controller for the policy to be available.
 
 This procedure will work for any future version as well.
 
@@ -231,16 +241,22 @@ To collect Event Viewer logs:
     > For guidance on how to collect event logs for Intune, see [Collect MDM Event Viewer Log YouTube video](https://www.youtube.com/watch?v=U_oCe2RmQEc).
 
 3. Search for event ID 75, which represents a successful auto-enrollment. Here is an example screenshot that shows the auto-enrollment completed successfully:
+
     ![Event ID 75](images/auto-enrollment-troubleshooting-event-id-75.png)
 
     If you cannot find event ID 75 in the logs, it indicates that the auto-enrollment failed. This can happen because of the following reasons:
+
     - The enrollment failed with error. In this case, search for event ID 76, which represents failed auto-enrollment. Here is an example screenshot that shows that the auto-enrollment failed:
-    ![Event ID 76](images/auto-enrollment-troubleshooting-event-id-76.png)
-    To troubleshoot, check the error code that appears in the event. See [Troubleshooting Windows device enrollment problems in Microsoft Intune](https://support.microsoft.com/en-ph/help/4469913/troubleshooting-windows-device-enrollment-problems-in-microsoft-intune) for more information.
+
+      ![Event ID 76](images/auto-enrollment-troubleshooting-event-id-76.png)
+
+      To troubleshoot, check the error code that appears in the event. See [Troubleshooting Windows device enrollment problems in Microsoft Intune](https://support.microsoft.com/en-ph/help/4469913/troubleshooting-windows-device-enrollment-problems-in-microsoft-intune) for more information.
+
     - The auto-enrollment did not trigger at all. In this case, you will not find either event ID 75 or event ID 76. To know the reason, you must understand the internal mechanisms happening on the device as described in the following section.
 
-    The auto-enrollment process is triggered by a task (**Microsoft > Windows > EnterpriseMgmt**) within the task-scheduler. This task appears if the *Enable automatic MDM enrollment using default Azure AD credentials* group policy (**Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is successfully deployed to the target machine as shown in the following screenshot:
-    ![Task scheduler](images/auto-enrollment-task-scheduler.png)
+      The auto-enrollment process is triggered by a task (**Microsoft > Windows > EnterpriseMgmt**) within the task-scheduler. This task appears if the *Enable automatic MDM enrollment using default Azure AD credentials* group policy (**Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is successfully deployed to the target machine as shown in the following screenshot:
+
+      ![Task scheduler](images/auto-enrollment-task-scheduler.png)
 
     > [!Note]
     > This task isn't visible to standard users - run Scheduled Tasks with administrative credentials to find the task.
@@ -252,6 +268,7 @@ To collect Event Viewer logs:
     ![Event ID 107](images/auto-enrollment-event-id-107.png)
 
     When the task is completed, a new event ID 102 is logged.
+
     ![Event ID 102](images/auto-enrollment-event-id-102.png)
 
     Note that the task scheduler log displays event ID 102 (task completed) regardless of the auto-enrollment success or failure. This means that the task scheduler log is only useful to confirm if the auto-enrollment task is triggered or not. It does not indicate the success or failure of auto-enrollment.
@@ -262,6 +279,7 @@ To collect Event Viewer logs:
     ![Outdated enrollment entries](images/auto-enrollment-outdated-enrollment-entries.png)
 
     By default, these entries are removed when the device is un-enrolled, but occasionally the registry key remains even after un-enrollment. In this case, `gpupdate /force` fails to initiate the auto-enrollment task and error code 2149056522 is displayed in the **Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational** event log file under event ID 7016.
+
     A resolution to this issue is to remove the registry key manually. If you do not know which registry key to remove, go for the key which displays most entries as the screenshot above. All other keys will display fewer entries as shown in the following screenshot:
 
     ![Manually deleted entries](images/auto-enrollment-activation-verification-less-entries.png)

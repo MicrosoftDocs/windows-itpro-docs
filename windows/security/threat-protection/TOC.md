@@ -105,10 +105,7 @@
 
 ### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
  
-## [Device control]()
-### [Code integrity](device-guard/enable-virtualization-based-protection-of-code-integrity.md)
-### [Control USB devices](device-control/control-usb-devices-using-intune.md)
-### [Device control report](device-control/device-control-report.md)
+## [Code integrity](device-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ## [Network firewall]()
 ### [Network firewall overview](windows-firewall/windows-firewall-with-advanced-security.md)
 ### [Network firewall evaluation](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
