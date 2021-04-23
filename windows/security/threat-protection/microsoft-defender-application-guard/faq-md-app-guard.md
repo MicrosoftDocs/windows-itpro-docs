@@ -143,7 +143,7 @@ In the Microsoft Defender Firewall user interface go through the following steps
 There is a known issue such that if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to **Windows Security** > **App and Browser control** > **Exploit Protection Setting**, and then switch CFG to **use default**.
 
 
-### How can I have ICS in enabled state yet still use Application Guard?
+### How can I disable portions of ICS without breaking Application Guard?
 
 ICS is enabled by default in Windows, and ICS must be enabled in order for Application Guard to function correctly. We do not recommend disabling ICS; however, you can disable ICS in part by using a Group Policy and editing registry keys.
 
