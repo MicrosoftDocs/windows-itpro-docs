@@ -1,0 +1,60 @@
+- name: Security intelligence
+  href: index.md
+  items: 
+    - name: Understand malware & other threats
+      href: understanding-malware.md
+      items: 
+        - name: Coin miners
+          href: coinminer-malware.md
+        - name: Exploits and exploit kits
+          href: exploits-malware.md
+        - name: Fileless threats
+          href: fileless-threats.md
+        - name: Macro malware
+          href: macro-malware.md
+        - name: Phishing attacks
+          href: phishing.md
+          items: 
+            - name: Phishing trends and techniques
+              href: phishing-trends.md
+        - name: Ransomware
+          href: ransomware-malware.md
+        - name: Rootkits
+          href: rootkits-malware.md
+        - name: Supply chain attacks
+          href: supply-chain-malware.md
+        - name: Tech support scams
+          href: support-scams.md
+        - name: Trojans
+          href: trojans-malware.md
+        - name: Unwanted software
+          href: unwanted-software.md
+        - name: Worms
+          href: worms-malware.md
+    - name: Prevent malware infection
+      href: prevent-malware-infection.md
+    - name: Malware naming convention
+      href: malware-naming.md
+    - name: How Microsoft identifies malware and PUA
+      href: criteria.md
+    - name: Submit files for analysis
+      href: submission-guide.md
+    - name: Troubleshoot malware submission
+      href: portal-submission-troubleshooting.md
+    - name: Safety Scanner download
+      href: safety-scanner-download.md
+    - name: Industry collaboration programs
+      href: cybersecurity-industry-partners.md
+      items: 
+        - name: Virus information alliance
+          href: virus-information-alliance-criteria.md
+        - name: Microsoft virus initiative
+          href: virus-initiative-criteria.md
+        - name: Coordinated malware eradication
+          href: coordinated-malware-eradication.md
+    - name: Information for developers
+      items: 
+        - name: Software developer FAQ
+          href: developer-faq.md
+        - name: Software developer resources
+          href: developer-resources.md
