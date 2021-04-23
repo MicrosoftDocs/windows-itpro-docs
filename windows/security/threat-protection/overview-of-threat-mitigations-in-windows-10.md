@@ -106,7 +106,7 @@ Microsoft Defender Antivirus in Windows 10 uses a multi-pronged approach to impr
 
 For more information, see [Windows Defender in Windows 10](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) and [Windows Defender Overview for Windows Server](/windows-server/security/windows-defender/windows-defender-overview-windows-server).
 
-For information about Microsoft Defender for Endpoint, a service that helps enterprises to detect, investigate, and respond to advanced and targeted attacks on their networks, see [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (resources) and [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) (documentation).
+For information about Microsoft Defender for Endpoint, a service that helps enterprises to detect, investigate, and respond to advanced and targeted attacks on their networks, see [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (resources) and [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) (documentation).
 
 ### Data Execution Prevention
 
@@ -451,7 +451,7 @@ Microsoft Consulting Services (MCS) and Microsoft Support/Premier Field Engineer
 
 - [Security and Assurance in Windows Server 2016](/windows-server/security/security-and-assurance)
 - [Microsoft Defender for Endpoint - resources](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
-- [Microsoft Microsoft Defender for Endpoint - documentation](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)
+- [Microsoft Microsoft Defender for Endpoint - documentation](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [Exchange Online Advanced Threat Protection Service Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 - [Microsoft Defender for Office 365](https://products.office.com/en-us/exchange/online-email-threat-protection)
 - [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/mmpc/default.aspx)
