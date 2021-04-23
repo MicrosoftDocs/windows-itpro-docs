@@ -1,0 +1,296 @@
+- name: Application Control for Windows
+  href: windows-defender-application-control.md
+  items: 
+    - name: WDAC and AppLocker Overview
+      href: wdac-and-applocker-overview.md
+      items: 
+        - name: WDAC and AppLocker Feature Availability
+          href: feature-availability.md
+        - name: Virtualization-based protection of code integrity
+          href: ../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+    - name: WDAC design guide
+      href: windows-defender-application-control-design-guide.md
+      items: 
+        - name: Plan for WDAC policy lifecycle management
+          href: plan-windows-defender-application-control-management.md
+        - name: Design your WDAC policy
+          items: 
+            - name: Understand WDAC policy design decisions
+              href: understand-windows-defender-application-control-policy-design-decisions.md
+            - name: Understand WDAC policy rules and file rules
+              href: select-types-of-rules-to-create.md
+              items: 
+                - name: Allow apps installed by a managed installer
+                  href: use-windows-defender-application-control-with-managed-installer.md
+                - name: Configure managed installer rules
+                  href: configure-wdac-managed-installer.md
+                - name: Allow reputable apps with Intelligent Security Graph (ISG)
+                  href: use-windows-defender-application-control-with-intelligent-security-graph.md
+                - name: Allow COM object registration
+                  href: allow-com-object-registration-in-windows-defender-application-control-policy.md
+                - name: Use WDAC with .NET hardening
+                  href: use-windows-defender-application-control-with-dynamic-code-security.md
+                - name: Manage packaged apps with WDAC
+                  href: manage-packaged-apps-with-windows-defender-application-control.md
+                - name: Use WDAC to control specific plug-ins, add-ins, and modules
+                  href: use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md
+            - name: Use multiple WDAC policies
+              href: deploy-multiple-windows-defender-application-control-policies.md
+        - name: Create your WDAC policy
+          items: 
+            - name: Example WDAC base policies
+              href: example-wdac-base-policies.md
+            - name: Policy creation for common WDAC usage scenarios
+              href: types-of-devices.md
+              items: 
+                - name: Create a WDAC policy for lightly-managed devices
+                  href: create-wdac-policy-for-lightly-managed-devices.md
+                - name: Create a WDAC policy for fully-managed devices
+                  href: create-wdac-policy-for-fully-managed-devices.md
+                - name: Create a WDAC policy for fixed-workload devices
+                  href: create-initial-default-policy.md
+                - name: Microsoft recommended block rules
+                  href: microsoft-recommended-block-rules.md
+                - name: Microsoft recommended driver block rules
+                  href: microsoft-recommended-driver-block-rules.md
+            - name: Use the WDAC Wizard tool
+              href: wdac-wizard.md
+              items: 
+                - name: Create a base WDAC policy with the Wizard
+                  href: wdac-wizard-create-base-policy.md
+                - name: Create a supplemental WDAC policy with the Wizard
+                  href: wdac-wizard-create-supplemental-policy.md
+                - name: Editing a WDAC policy with the Wizard
+                  href: wdac-wizard-editing-policy.md
+                - name: Merging multiple WDAC policies with the Wizard
+                  href: wdac-wizard-merging-policies.md
+    - name: WDAC deployment guide
+      href: windows-defender-application-control-deployment-guide.md
+      items: 
+        - name: Deploy WDAC policies with MDM
+          href: deploy-windows-defender-application-control-policies-using-intune.md
+        - name: Deploy WDAC policies with MEMCM
+          href: deployment/deploy-wdac-policies-with-memcm.md
+        - name: Deploy WDAC policies with script
+          href: deployment/deploy-wdac-policies-with-script.md
+        - name: Deploy WDAC policies with Group Policy
+          href: deploy-windows-defender-application-control-policies-using-group-policy.md
+        - name: Audit WDAC policies
+          href: audit-windows-defender-application-control-policies.md
+        - name: Merge WDAC policies
+          href: merge-windows-defender-application-control-policies.md
+        - name: Enforce WDAC policies
+          href: enforce-windows-defender-application-control-policies.md
+        - name: Use code signing to simplify application control for classic Windows applications
+          href: use-code-signing-to-simplify-application-control-for-classic-windows-applications.md
+          items: 
+            - name: "Optional: Use the WDAC Signing Portal in the Microsoft Store for Business"
+              href: use-device-guard-signing-portal-in-microsoft-store-for-business.md
+            - name: "Optional: Create a code signing cert for WDAC"
+              href: create-code-signing-cert-for-windows-defender-application-control.md
+            - name: Deploy catalog files to support WDAC
+              href: deploy-catalog-files-to-support-windows-defender-application-control.md
+        - name: Use signed policies to protect Windows Defender Application Control against tampering
+          href: use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md
+        - name: Disable WDAC policies
+          href: disable-windows-defender-application-control-policies.md
+        - name: LOB Win32 Apps on S Mode
+          href: LOB-win32-apps-on-s.md
+    - name: Windows Defender Application Control operational guide
+      href: windows-defender-application-control-operational-guide.md
+      items: 
+        - name: Understanding Application Control event IDs
+          href: event-id-explanations.md
+        - name: Understanding Application Control event tags
+          href: event-tag-explanations.md
+        - name: Query WDAC events with Advanced hunting
+          href: querying-application-control-events-centrally-using-advanced-hunting.md
+        - name: Known Issues
+          href: operations/known-issues.md
+    - name: AppLocker
+      href: applocker\applocker-overview.md)
+      items: 
+        - name: Administer AppLocker
+          href: applocker\administer-applocker.md
+          items: 
+            - name: Maintain AppLocker policies
+              href: applocker\maintain-applocker-policies.md
+            - name: Edit an AppLocker policy
+              href: applocker\edit-an-applocker-policy.md
+            - name: Test and update an AppLocker policy
+              href: applocker\test-and-update-an-applocker-policy.md
+            - name: Deploy AppLocker policies by using the enforce rules setting
+              href: applocker\deploy-applocker-policies-by-using-the-enforce-rules-setting.md
+            - name: Use the AppLocker Windows PowerShell cmdlets
+              href: applocker\use-the-applocker-windows-powershell-cmdlets.md
+            - name: Use AppLocker and Software Restriction Policies in the same domain
+              href: applocker\use-applocker-and-software-restriction-policies-in-the-same-domain.md
+            - name: Optimize AppLocker performance
+              href: applocker\optimize-applocker-performance.md
+            - name: Monitor app usage with AppLocker
+              href: applocker\monitor-application-usage-with-applocker.md
+            - name: Manage packaged apps with AppLocker
+              href: applocker\manage-packaged-apps-with-applocker.md
+            - name: Working with AppLocker rules
+              href: applocker\working-with-applocker-rules.md
+              items: 
+                - name: Create a rule that uses a file hash condition
+                  href: applocker\create-a-rule-that-uses-a-file-hash-condition.md
+                - name: Create a rule that uses a path condition
+                  href: applocker\create-a-rule-that-uses-a-path-condition.md
+                - name: Create a rule that uses a publisher condition
+                  href: applocker\create-a-rule-that-uses-a-publisher-condition.md
+                - name: Create AppLocker default rules
+                  href: applocker\create-applocker-default-rules.md
+                - name: Add exceptions for an AppLocker rule
+                  href: applocker\configure-exceptions-for-an-applocker-rule.md
+                - name: Create a rule for packaged apps
+                  href: applocker\create-a-rule-for-packaged-apps.md
+                - name: Delete an AppLocker rule
+                  href: applocker\delete-an-applocker-rule.md
+                - name: Edit AppLocker rules
+                  href: applocker\edit-applocker-rules.md
+                - name: Enable the DLL rule collection
+                  href: applocker\enable-the-dll-rule-collection.md
+                - name: Enforce AppLocker rules
+                  href: applocker\enforce-applocker-rules.md
+                - name: Run the Automatically Generate Rules wizard
+                  href: applocker\run-the-automatically-generate-rules-wizard.md
+            - name: Working with AppLocker policies
+              href: applocker\working-with-applocker-policies.md
+              items: 
+                - name: Configure the Application Identity service
+                  href: applocker\configure-the-application-identity-service.md
+                - name: Configure an AppLocker policy for audit only
+                  href: applocker\configure-an-applocker-policy-for-audit-only.md
+                - name: Configure an AppLocker policy for enforce rules
+                  href: applocker\configure-an-applocker-policy-for-enforce-rules.md
+                - name: Display a custom URL message when users try to run a blocked app
+                  href: applocker\display-a-custom-url-message-when-users-try-to-run-a-blocked-application.md
+                - name: Export an AppLocker policy from a GPO
+                  href: applocker\export-an-applocker-policy-from-a-gpo.md
+                - name: Export an AppLocker policy to an XML file
+                  href: applocker\export-an-applocker-policy-to-an-xml-file.md
+                - name: Import an AppLocker policy from another computer
+                  href: applocker\import-an-applocker-policy-from-another-computer.md
+                - name: Import an AppLocker policy into a GPO
+                  href: applocker\import-an-applocker-policy-into-a-gpo.md
+                - name: Add rules for packaged apps to existing AppLocker rule-set
+                  href: applocker\add-rules-for-packaged-apps-to-existing-applocker-rule-set.md
+                - name: Merge AppLocker policies by using Set-ApplockerPolicy
+                  href: applocker\merge-applocker-policies-by-using-set-applockerpolicy.md
+                - name: Merge AppLocker policies manually
+                  href: applocker\merge-applocker-policies-manually.md
+                - name: Refresh an AppLocker policy
+                  href: applocker\refresh-an-applocker-policy.md
+                - name: Test an AppLocker policy by using Test-AppLockerPolicy
+                  href: applocker\test-an-applocker-policy-by-using-test-applockerpolicy.md
+        - name: AppLocker design guide
+          href: applocker\applocker-policies-design-guide.md
+          items: 
+            - name: Understand AppLocker policy design decisions
+              href: applocker\understand-applocker-policy-design-decisions.md
+            - name: Determine your application control objectives
+              href: applocker\determine-your-application-control-objectives.md
+            - name: Create a list of apps deployed to each business group
+              href: applocker\create-list-of-applications-deployed-to-each-business-group.md
+              items: 
+                - name: Document your app list
+                  href: applocker\document-your-application-list.md
+            - name: Select the types of rules to create
+              href: applocker\select-types-of-rules-to-create.md
+              items: 
+                - name: Document your AppLocker rules
+                  href: applocker\document-your-applocker-rules.md
+            - name: Determine the Group Policy structure and rule enforcement
+              href: applocker\determine-group-policy-structure-and-rule-enforcement.md
+              items: 
+                - name: Understand AppLocker enforcement settings
+                  href: applocker\understand-applocker-enforcement-settings.md
+                - name: Understand AppLocker rules and enforcement setting inheritance in Group Policy
+                  href: applocker\understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md
+                - name: Document the Group Policy structure and AppLocker rule enforcement
+                  href: applocker\document-group-policy-structure-and-applocker-rule-enforcement.md
+            - name: Plan for AppLocker policy management
+              href: applocker\plan-for-applocker-policy-management.md
+        - name: AppLocker deployment guide
+          href: applocker\applocker-policies-deployment-guide.md
+          items: 
+            - name: Understand the AppLocker policy deployment process
+              href: applocker\understand-the-applocker-policy-deployment-process.md
+            - name: Requirements for Deploying AppLocker Policies
+              href: applocker\requirements-for-deploying-applocker-policies.md
+            - name: Use Software Restriction Policies and AppLocker policies
+              href: applocker\using-software-restriction-policies-and-applocker-policies.md
+            - name: Create Your AppLocker policies
+              href: applocker\create-your-applocker-policies.md
+              items: 
+                - name: Create Your AppLocker rules
+                  href: applocker\create-your-applocker-rules.md
+            - name: Deploy the AppLocker policy into production
+              href: applocker\deploy-the-applocker-policy-into-production.md
+              items: 
+                - name: Use a reference device to create and maintain AppLocker policies
+                  href: applocker\use-a-reference-computer-to-create-and-maintain-applocker-policies.md
+                  items: 
+                    - name: Determine which apps are digitally signed on a reference device
+                      href: applocker\determine-which-applications-are-digitally-signed-on-a-reference-computer.md
+                    - name: Configure the AppLocker reference device
+                      href: applocker\configure-the-appLocker-reference-device.md
+        - name: AppLocker technical reference
+          href: applocker\applocker-technical-reference.md
+          items: 
+            - name: What Is AppLocker?
+              href: applocker\what-is-applocker.md
+            - name: Requirements to use AppLocker
+              href: applocker\requirements-to-use-applocker.md
+            - name: AppLocker policy use scenarios
+              href: applocker\applocker-policy-use-scenarios.md
+            - name: How AppLocker works
+              href: applocker\how-applocker-works-techref.md
+              items: 
+                - name: Understanding AppLocker rule behavior
+                  href: applocker\understanding-applocker-rule-behavior.md
+                - name: Understanding AppLocker rule exceptions
+                  href: applocker\understanding-applocker-rule-exceptions.md
+                - name: Understanding AppLocker rule collections
+                  href: applocker\understanding-applocker-rule-collections.md
+                - name: Understanding AppLocker allow and deny actions on rules
+                  href: applocker\understanding-applocker-allow-and-deny-actions-on-rules.md
+                - name: Understanding AppLocker rule condition types
+                  href: applocker\understanding-applocker-rule-condition-types.md
+                  items: 
+                    - name: Understanding the publisher rule condition in AppLocker
+                      href: applocker\understanding-the-publisher-rule-condition-in-applocker.md
+                    - name: Understanding the path rule condition in AppLocker
+                      href: applocker\understanding-the-path-rule-condition-in-applocker.md
+                    - name: Understanding the file hash rule condition in AppLocker
+                      href: applocker\understanding-the-file-hash-rule-condition-in-applocker.md
+                - name: Understanding AppLocker default rules
+                  href: applocker\understanding-applocker-default-rules.md
+                  items: 
+                    - name: Executable rules in AppLocker
+                      href: applocker\executable-rules-in-applocker.md
+                    - name: Windows Installer rules in AppLocker
+                      href: applocker\windows-installer-rules-in-applocker.md
+                    - name: Script rules in AppLocker
+                      href: applocker\script-rules-in-applocker.md
+                    - name: DLL rules in AppLocker
+                      href: applocker\dll-rules-in-applocker.md
+                    - name: Packaged apps and packaged app installer rules in AppLocker
+                      href: applocker\packaged-apps-and-packaged-app-installer-rules-in-applocker.md
+            - name: AppLocker architecture and components
+              href: applocker\applocker-architecture-and-components.md
+            - name: AppLocker processes and interactions
+              href: applocker\applocker-processes-and-interactions.md
+            - name: AppLocker functions
+              href: applocker\applocker-functions.md
+            - name: Security considerations for AppLocker
+              href: applocker\security-considerations-for-applocker.md
+            - name: Tools to Use with AppLocker
+              href: applocker\tools-to-use-with-applocker.md
+              items: 
+                - name: Using Event Viewer with AppLocker
+                  href: applocker\using-event-viewer-with-applocker.md
+            - name: AppLocker Settings
+              href: applocker\applocker-settings.md
