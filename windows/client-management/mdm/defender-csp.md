@@ -457,8 +457,8 @@ The data type is integer.
 Supported operations are Add, Delete, Get, Replace.	
 
 Valid values are:	
--	1 – Enable.	
--	0 (default) – Disable.
+-	1 (default) – Enable.	
+-	0 – Disable.
 
 <a href="" id="configuration-meteredconnectionupdates"></a>**Configuration/MeteredConnectionUpdates**<br>
 Allow managed devices to update through metered connections. Data charges may apply.

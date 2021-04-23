@@ -31,7 +31,6 @@ This topic describes the decisions you need to make to establish the processes f
 
 The first step in implementing application control is to consider how your policies will be managed and maintained over time. Developing a process for managing WDAC policies helps assure that WDAC continues to effectively control how applications are allowed to run in your organization.
 
-<!-- We should insert a diagram to show this visually -->
 Most WDAC policies will evolve over time and proceed through a set of identifiable phases during their lifetime. Typically, these phases include:
 
 1. [Define (or refine) the "circle-of-trust"](understand-windows-defender-application-control-policy-design-decisions.md) for the policy and build an audit mode version of the policy XML. In audit mode, block events are generated but files are not prevented from executing.
@@ -41,6 +40,8 @@ Most WDAC policies will evolve over time and proceed through a set of identifiab
 5. Generate the enforced mode version of the policy. In enforced mode, files that are not allowed by the policy are prevented from executing and corresponding block events are generated.
 6. Deploy the enforced mode policy to intended devices. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
 7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.  
+
+![Recommended WDAC policy deployment process](images/policyflow.png)
 
 ### Keep WDAC policies in a source control or document management solution
 
