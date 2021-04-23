@@ -12,9 +12,11 @@ manager: laurawi
 ms.topic: article
 ---
 
-> Applies to: Windows 10
+
 
 # Troubleshooting the Windows Update for Business deployment service
+
+> Applies to: Windows 10
 
 This troubleshooting guide addresses the most common issues that IT administrators face when using the Windows Update for Business [deployment service](deployment-service-overview.md). For a general troubleshooting guide for Windows Update, see [Windows Update troubleshooting](windows-update-troubleshooting.md).
 

@@ -167,7 +167,7 @@
             - name: Windows Update for Business deployment service
               href: update/deployment-service-overview.md
             - name: Troubleshooting the Windows Update for Business deployment service
-              href: update/deployment-service-overview.md
+              href: update/deployment-service-troubleshooting.md
             - name: Enforcing compliance deadlines for updates
               href: update/wufb-compliancedeadlines.md
             - name: Integrate Windows Update for Business with management solutions

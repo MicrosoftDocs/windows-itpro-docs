@@ -12,9 +12,11 @@ manager: laurawi
 ms.topic: article
 ---
 
-> Applies to: Windows 10
+
 
 # Windows Update for Business deployment service
+
+> Applies to: Windows 10
 
 The Windows Update for Business deployment service is a cloud service within the Windows Update for Business product family. It provides control over the approval, scheduling, and safeguarding of updates delivered from Windows Update. It's designed to work in harmony with your existing Windows Update for Business policies.
 
@@ -156,6 +158,6 @@ Avoid using different channels to manage the same resources. If you use Microsof
 To learn more about the deployment service, try the following:
 
 - Release blogs
-- [Windows 10 feature updates policy in Intune](mem/intune/protect/windows-10-feature-updates)
+- [Windows 10 feature updates policy in Intune](/mem/intune/protect/windows-10-feature-updates)
 - Windows 10 quality updates policy in Intune {LINK?}
 - [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview)
