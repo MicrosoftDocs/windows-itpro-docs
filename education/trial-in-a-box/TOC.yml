@@ -1,0 +1,9 @@
+- name: Microsoft Education Trial in a Box
+  href: index.md
+  items: 
+    - name: Educator Trial in a Box Guide
+      href: educator-tib-get-started.md
+    - name: IT Admin Trial in a Box Guide
+      href: itadmin-tib-get-started.md
+    - name: Microsoft Education Trial in a Box Support
+      href: support-options.md
