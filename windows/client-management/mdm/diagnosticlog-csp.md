@@ -1440,7 +1440,7 @@ Node to contain child nodes for log file transportation protocols and correspond
 Node to contain child nodes using DM channel for transport protocol.
 
 <a href="" id="filedownload-dmchannel-filecontext"></a>**FileDownload/DMChannel/_FileContext_**
-Dynamic interior nodes that represents per log file context.
+Dynamic interior nodes that represent per log file context.
 
 <a href="" id="filedownload-dmchannel-filecontext-blocksizekb"></a>**FileDownload/DMChannel/*FileContext*/BlockSizeKB**
 Sets the log read buffer, in KB.
