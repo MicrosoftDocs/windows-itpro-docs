@@ -95,7 +95,7 @@ The following shows the Update configuration service provider in tree format.
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="failedupdates-failed-update-guid"></a>**FailedUpdates/_Failed Update Guid_**
-<p style="margin-left: 20px">Update identifier field of the UpdateIdentity GUID that represent an update that failed to download or install.
+<p style="margin-left: 20px">Update identifier field of the UpdateIdentity GUID that represents an update that failed to download or install.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
