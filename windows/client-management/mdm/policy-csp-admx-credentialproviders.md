@@ -259,3 +259,4 @@ ADMX Info:
 
 <!--/Policies-->
 
+These policies are currently only available as part of a Windows Insider release.
