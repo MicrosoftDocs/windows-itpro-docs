@@ -106,6 +106,7 @@ Since the enforced policy was given a unique PolicyID in the previous procedure,
    $EnforcedSuppPolicyBinary = $env:USERPROFILE+"\Desktop\"+$SupplementalPolicyName+"_"+$SupplementalPolicyID+".xml"
    ConvertFrom-CIPolicy $EnforcedSupplementalPolicy $EnforcedSuppPolicyBinary
    ```
+4. Repeat the steps above if you have other supplemental policies to update.
 
 ## Deploy your enforced policy and supplemental policies
 
