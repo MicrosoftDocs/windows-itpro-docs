@@ -64,7 +64,7 @@ Defines the name of a proxy connection.
 
 It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two proxy connections, use "PROXY0" and "PROXY1" as the element names. Any unique name can be used if desired (such as "GPRS-NAP"), but no spaces may appear in the name (use %20 instead).
 
-The addition, update, and deletion of this sub-tree of nodes have be specified in a single atomic transaction.
+The addition, update, and deletion of this sub-tree of nodes have to be specified in a single atomic transaction.
 
 <a href="" id="proxyname-proxyid"></a>***ProxyName*/PROXYID**
 Specifies the unique identifier of the proxy connection.
