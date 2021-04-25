@@ -48,7 +48,7 @@ Root node for Provisioning CSP.
 Node for defining bulk enrollment of users into an MDM service.
 
 <a href="" id="provisioning-enrollments-upn"></a>**Provisioning/Enrollments/_UPN_**
-Unique identifier for the enrollment. For bulk enrollment, this must a service account that is allowed to enroll multiple users. Example, "generic-device@contoso.com"
+Unique identifier for the enrollment. For bulk enrollment, this must be a service account that is allowed to enroll multiple users. For example, "generic-device@contoso.com".
 
 <a href="" id="provisioning-enrollments-upn-discoveryservicefullurl"></a>**Provisioning/Enrollments/*UPN*/DiscoveryServiceFullURL**
 The full URL for the discovery service.
