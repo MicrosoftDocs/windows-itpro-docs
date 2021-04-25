@@ -58,7 +58,7 @@ This information is dependent on the AuthPolicy being used. Possible values:
 
 - Password string for on-premises authentication enrollment
 - Federated security token for federated enrollment
-- Certificate thumb print for certificated based enrollment
+- Certificate thumbprint for certificated based enrollment
 
 <a href="" id="provisioning-enrollments-upn-authpolicy"></a>**Provisioning/Enrollments/*UPN*/AuthPolicy**
 Specifies the authentication policy used by the MDM service. Valid values:
