@@ -41,10 +41,10 @@ Update Compliance is offered as an Azure Marketplace application which is linked
 
 1. Go to the [Update Compliance page in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WaaSUpdateInsights?tab=Overview). You may need to login to your Azure subscription to access this.
 2. Select **Get it now**.
-3. Choose an existing or configure a new Log Analytics Workspace, ensuring it is in a **Compatible Log Analytics region** from the table below. While an Azure subscription is required, you will not be charged for ingestion of Update Compliance data.
-   - [Desktop Analytics](/sccm/desktop-analytics/overview) customers are advised to use the same workspace for Update Compliance.
-   - [Azure Update Management](/azure/automation/automation-update-management) customers are advised to use the same workspace for Update Compliance.
-4. After your workspace is configured and selected, select **Create**. You will receive a notification when the solution has been successfully created.
+3. Choose an existing or configure a new Log Analytics Workspace, ensuring it is in a **Compatible Log Analytics region** from the following table. Although an Azure subscription is required, you won't be charged for ingestion of Update Compliance data.
+   - [Desktop Analytics](/sccm/desktop-analytics/overview) users should use the same workspace for Update Compliance.
+   - [Azure Update Management](/azure/automation/automation-update-management) users should use the same workspace for Update Compliance.
+4. After your workspace is configured and selected, select **Create**. You'll receive a notification when the solution has been successfully created.
 
 |Compatible Log Analytics regions |
 | ------------------------------- |
