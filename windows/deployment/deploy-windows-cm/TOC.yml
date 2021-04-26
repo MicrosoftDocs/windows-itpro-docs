@@ -1,0 +1,28 @@
+- name: Deploy Windows 10 with Microsoft Endpoint Configuration Manager
+  items: 
+    - name: Prepare for Windows 10 deployment with Configuration Manager
+      items: 
+        - name: Prepare for Zero Touch Installation with Configuration Manager
+          href: prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+        - name: Create a custom Windows PE boot image with Configuration Manager
+          href: create-a-custom-windows-pe-boot-image-with-configuration-manager.md
+        - name: Add a Windows 10 operating system image using Configuration Manager
+          href: add-a-windows-10-operating-system-image-using-configuration-manager.md
+        - name: Create an application to deploy with Windows 10 using Configuration Manager
+          href: create-an-application-to-deploy-with-windows-10-using-configuration-manager.md
+        - name: Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager
+          href: add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md
+        - name: Create a task sequence with Configuration Manager and MDT
+          href: create-a-task-sequence-with-configuration-manager-and-mdt.md
+        - name: Finalize the operating system configuration for Windows 10 deployment with Configuration Manager
+          href: finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md
+    - name: Deploy Windows 10 with Configuration Manager
+      items: 
+        - name: Deploy Windows 10 using PXE and Configuration Manager
+          href: deploy-windows-10-using-pxe-and-configuration-manager.md
+        - name: Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager
+          href: refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md
+        - name: Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager
+          href: replace-a-windows-7-client-with-windows-10-using-configuration-manager.md
+        - name: Perform an in-place upgrade to Windows 10 using Configuration Manager
+          href: upgrade-to-windows-10-with-configuraton-manager.md
