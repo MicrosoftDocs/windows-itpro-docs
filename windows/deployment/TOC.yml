@@ -166,6 +166,7 @@
               href: update/waas-configure-wufb.md
             - name: Windows Update for Business deployment service
               href: update/deployment-service-overview.md
+              items:
                 - name: Troubleshooting the Windows Update for Business deployment service
                   href: update/deployment-service-troubleshooting.md
             - name: Enforcing compliance deadlines for updates
