@@ -53,7 +53,7 @@ Typically, the improvements are reliability and performance improvements that do
 * Servicing stack updates contain the full servicing stack; as a result, typically administrators only need to install the latest servicing stack update for the operating system.
 * Installing servicing stack update does not require restarting the device, so installation should not be disruptive. 
 * Servicing stack update releases are specific to the operating system version (build number), much like quality updates.
-* Search to install latest available [Servicing stack update for Windows 10](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001).
+* Servicing stack updates can be delivered with Windows Update, or you can perform a search to install the latest available at [Servicing stack update for Windows 10](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV990001).
 * Once a servicing stack update is installed, it cannot be removed or uninstalled from the machine.
 
 ## Simplifying on-premises deployment of servicing stack updates
