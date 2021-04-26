@@ -27,17 +27,28 @@ The deployment service is designed for IT Pros who are looking for more control 
 - You can bypass pre-configured Windows Update for Business policies to immediately deploy a security update across your organization when emergencies arise.
 - You can set up automatic pilot deployments tailored to your unique device population to ensure coverage of hardware and software in your organization.
 
-The service is compliant {COMPLIANT WITH WHAT? BY ITSELF THE WORD DOESN'T MEAN ANYTHING REALLY} and privacy focused.
+The service is privacy focused and backed by leading industry compliance certifications.
 
 ## How it works
 
 The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Update Compliance](update-compliance-monitor.md).
 
-{BIG IMAGE}
+:::image type="content" source="media/wufbds-product-large.png" alt-text="Described in following text":::
+
+Windows Update for Business is comprises three elements:
+- Client policy to govern update experiences and timing – available through Group Policy and CSPs
+- Deployment service APIs to approve and schedule specific updates – available through the Microsoft Graph and associated SDKs (including PowerShell)
+- Update Compliance to monitor update deployment – available through the Azure Marketplace
 
 Unlike existing client policy, the deployment service does not interact with devices directly. The service is native to the cloud and all operations take place between various Microsoft services. It creates a direct communication channel between a management tool (including scripting tools such as Windows PowerShell) and the Windows Update service so that the approval and offering of content can be directly controlled by an IT Pro.
 
-{SMALLER IMAGE}
+:::image type="content" source="media/wufbds-interaction-small.png" alt-text="Described in following text":::
+
+Using the deployment service typically follows a common pattern:
+1. IT Pro uses a management tool to select devices and approve content to be deployed. This tool could be PowerShell, a Microsoft Graph app or a more complete management solution such as Microsoft Endpoint Manager.
+2. The chosen tool conveys your approval, scheduling, and device selection information to the deployment service.
+3. The deployment service processes the content approval and compares this with previously approved content. Final update applicability is determined and conveyed to Windows Update, which then offers approved content to devices on their next check for updates.
+
 
 The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as Microsoft Endpoint Manager.
 
