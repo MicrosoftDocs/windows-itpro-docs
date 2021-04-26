@@ -45,7 +45,7 @@ Each of the cryptographic modules has a defined security policy that must be met
 
 ### Step 3: Enable the FIPS security policy
 
-Windows provides the security policy setting, *System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing*. This setting is used by some Microsoft products to determine whether to run in FIPS mode.  When this policy is turned on, the validated cryptographic modules in Windows will also operate in FIPS mode.  This policy may be set using Local Security Policy, as part of Group Policy, or through a Modern Device Management (MDM) solution.   For more information on the policy, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing).  
+Windows provides the security policy setting, *System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing*. This setting is used by some Microsoft products to determine whether to run in FIPS mode.  When this policy is turned on, the validated cryptographic modules in Windows will also operate in FIPS mode.  This policy may be set using Local Security Policy, as part of Group Policy, or through a Modern Device Management (MDM) solution.   For more information on the policy, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](./security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).  
 
 ### Step 4: Ensure that only FIPS validated cryptographic algorithms are used
 

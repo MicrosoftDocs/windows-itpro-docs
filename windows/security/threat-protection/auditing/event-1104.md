@@ -29,7 +29,7 @@ ms.technology: mde
 
 This event generates every time Windows security log becomes full.
 
-This event generates, for example, if the maximum size of Security Event Log file was reached and event log retention method is: “[Do not overwrite events (Clear logs manually)](https://technet.microsoft.com/library/cc778402(v=ws.10).aspx)”.
+This event generates, for example, if the maximum size of Security Event Log file was reached and event log retention method is: “[Do not overwrite events (Clear logs manually)](/previous-versions/windows/it-pro/windows-server-2003/cc778402(v=ws.10))”.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -69,5 +69,4 @@ This event generates, for example, if the maximum size of Security Event Log fil
 
 ## Security Monitoring Recommendations
 
--   If the Security event log retention method is set to “[Do not overwrite events (Clear logs manually)](https://technet.microsoft.com/library/cc778402(v=ws.10).aspx)”, then this event will indicate that log file is full and you need to perform immediate actions, for example, archive the log or clear it.
-
+-   If the Security event log retention method is set to “[Do not overwrite events (Clear logs manually)](/previous-versions/windows/it-pro/windows-server-2003/cc778402(v=ws.10))”, then this event will indicate that log file is full and you need to perform immediate actions, for example, archive the log or clear it.

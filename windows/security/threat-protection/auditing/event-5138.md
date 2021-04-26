@@ -27,9 +27,9 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time an Active Directory object is undeleted. It happens, for example, when an Active Directory object was restored from the [Active Directory Recycle Bin](https://technet.microsoft.com/library/dd392261(v=ws.10).aspx).
+This event generates every time an Active Directory object is undeleted. It happens, for example, when an Active Directory object was restored from the [Active Directory Recycle Bin](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd392261(v=ws.10)).
 
-This event only generates if the container to which the Active Directory object was restored has a particular entry in its [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx): the “**Create**” action, auditing for specific classes or objects. An example is the “**Create User objects**” action.
+This event only generates if the container to which the Active Directory object was restored has a particular entry in its [SACL](/windows/win32/secauthz/access-control-lists): the “**Create**” action, auditing for specific classes or objects. An example is the “**Create User objects**” action.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -109,7 +109,7 @@ This event only generates if the container to which the Active Directory object 
 
 **Object:**
 
--   **Old DN** \[Type = UnicodeString\]: Old distinguished name of undeleted object. It will points to [Active Directory Recycle Bin](https://technet.microsoft.com/library/dd392261(v=ws.10).aspx) folder, in case if it was restored from it.
+-   **Old DN** \[Type = UnicodeString\]: Old distinguished name of undeleted object. It will points to [Active Directory Recycle Bin](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd392261(v=ws.10)) folder, in case if it was restored from it.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
 > 
@@ -190,4 +190,3 @@ For 5138(S): A directory service object was undeleted.
 -   If you need to monitor undelete operations (restoration) of Active Directory objects with specific classes, monitor for **Class** field with specific class name.
 
 -   It may be a good idea to monitor all undelete events, because the operation is not performed very often. Confirm that there is a reason for the object to be undeleted.
-

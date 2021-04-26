@@ -34,7 +34,7 @@ To start narrowing down the cause of the problem, review the event logs as descr
 
 If you do not have a clear trail of events or error messages to follow, other areas to investigate include the following:
 
-- [Review the hardware requirements for using Intune to manage BitLocker on devices](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-bitlocker#bitlocker-automatic-device-encryption-hardware-requirements)
+- [Review the hardware requirements for using Intune to manage BitLocker on devices](/windows-hardware/design/device-experiences/oem-bitlocker#bitlocker-automatic-device-encryption-hardware-requirements)
 - [Review your BitLocker policy configuration](#policy)
 
 For information about how to verify that Intune policies are enforcing BitLocker correctly, see [Verifying that BitLocker is operating correctly](#verifying-that-bitlocker-is-operating-correctly).
@@ -58,7 +58,7 @@ To resolve this issue, verify the following:
    - Ready (TPM 2.0)
    - Initialized (TPM 1.2)
 
-For more information, see [Troubleshoot the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm).
+For more information, see [Troubleshoot the TPM](../tpm/initialize-and-configure-ownership-of-the-tpm.md).
 
 ## <a id="issue-2"></a>Event ID 853: Error: BitLocker Drive Encryption detected bootable media (CD or DVD) in the computer
 
@@ -209,7 +209,7 @@ To verify the Secure Boot state, use the System Information app. To do this, fol
    ![System Information app, showing a unsupported Secure Boot State](./images/4509202-en-1.png)
 
 > [!NOTE]
-> You can also use the [Confirm-SecureBootUEFI](https://docs.microsoft.com/powershell/module/secureboot/confirm-securebootuefi?view=win10-ps) cmdlet to verify the Secure Boot state. To do this, open an elevated PowerShell window and run the following command:
+> You can also use the [Confirm-SecureBootUEFI](/powershell/module/secureboot/confirm-securebootuefi?view=win10-ps) cmdlet to verify the Secure Boot state. To do this, open an elevated PowerShell window and run the following command:
 > ```ps
 > PS C:\> Confirm-SecureBootUEFI
 > ```
@@ -266,19 +266,19 @@ You receive a message that resembles the following:
 
 To resolve this issue, review your Group Policy Object (GPO) settings for conflicts. For further guidance, see the next section, [Review your BitLocker policy configuration](#policy).
 
-For more information about GPOs and BitLocker, see [BitLocker Group Policy Reference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee706521(v=ws.10)?redirectedfrom=MSDN).
+For more information about GPOs and BitLocker, see [BitLocker Group Policy Reference](/previous-versions/windows/it-pro/windows-7/ee706521(v=ws.10)).
 
 ## <a id="policy"></a>Review your BitLocker policy configuration
 
 For information about how to use policy together with BitLocker and Intune, see the following resources:
 
-- [BitLocker management for enterprises: Managing devices joined to Azure Active Directory](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-management-for-enterprises#managing-devices-joined-to-azure-active-directory)
-- [BitLocker Group Policy Reference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee706521(v=ws.10)?redirectedfrom=MSDN)
-- [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
-- [Policy CSP &ndash; BitLocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker)
-- [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)
-- [Enable ADMX-backed policies in MDM](https://docs.microsoft.com/windows/client-management/mdm/enable-admx-backed-policies-in-mdm)
-- [gpresult](https://docs.microsoft.com/windows-server/administration/windows-commands/gpresult)
+- [BitLocker management for enterprises: Managing devices joined to Azure Active Directory](./bitlocker-management-for-enterprises.md#managing-devices-joined-to-azure-active-directory)
+- [BitLocker Group Policy Reference](/previous-versions/windows/it-pro/windows-7/ee706521(v=ws.10))
+- [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference)
+- [Policy CSP &ndash; BitLocker](/windows/client-management/mdm/policy-csp-bitlocker)
+- [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp)
+- [Enable ADMX-backed policies in MDM](/windows/client-management/mdm/enable-admx-backed-policies-in-mdm)
+- [gpresult](/windows-server/administration/windows-commands/gpresult)
 
 Intune offers the following enforcement types for BitLocker:
 

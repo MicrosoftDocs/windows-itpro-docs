@@ -33,7 +33,7 @@ This topic will walk you through the process of creating a simulated environment
 On **PC0001**:
 
 1. Sign as **contoso\\Administrator**.
-2. Download the [sample Gather.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619361) from the TechNet gallery and copy it to a directory named **C:\MDT** on PC0001.
+2. Download the [sample Gather.ps1 script](/samples/browse/?redirectedfrom=TechNet-Gallery) from the TechNet gallery and copy it to a directory named **C:\MDT** on PC0001.
 3. Download and install the free [Microsoft System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717) on PC0001 so that you have access to the Configuration Manager Trace (cmtrace.exe) tool.
 4. Using Local Users and Groups (lusrmgr.msc), add the **contoso\\MDT\_BA** user account to the local **Administrators** group.
 5. Sign off, and then sign on to PC0001 as **contoso\\MDT\_BA**.

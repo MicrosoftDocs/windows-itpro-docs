@@ -7,8 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -58,4 +58,4 @@ For more information about the Safety Scanner, see the support article on [how t
 - [Microsoft Security Essentials](https://support.microsoft.com/help/14210/security-essentials-download)
 - [Removing difficult threats](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware)
 - [Submit file for malware analysis](https://www.microsoft.com/wdsi/filesubmission)
-- [Microsoft antimalware and threat protection solutions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft antimalware and threat protection solutions](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)

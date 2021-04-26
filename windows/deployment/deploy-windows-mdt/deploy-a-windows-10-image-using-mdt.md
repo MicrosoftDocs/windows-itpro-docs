@@ -236,7 +236,7 @@ Or, you can use this command in a normal command prompt:
 wmic csproduct get name
 ```
 
-If you want a more standardized naming convention, try the **ModelAliasExit.vbs script** from the Deployment Guys blog post, entitled [Using and Extending Model Aliases for Hardware Specific Application Installation](https://go.microsoft.com/fwlink/p/?LinkId=619536).
+If you want a more standardized naming convention, try the **ModelAliasExit.vbs script** from the Deployment Guys blog post, entitled [Using and Extending Model Aliases for Hardware Specific Application Installation](/archive/blogs/deploymentguys/using-and-extending-model-aliases-for-hardware-specific-application-installation).
 
 ![drivers](../images/fig4-oob-drivers.png)
 
@@ -576,7 +576,7 @@ If you have licensing for MDOP and DaRT, you can add DaRT to the boot images usi
 
 
 > [!NOTE]
-> DaRT 10 is part of [MDOP 2015](https://docs.microsoft.com/microsoft-desktop-optimization-pack/#how-to-get-mdop).
+> DaRT 10 is part of [MDOP 2015](/microsoft-desktop-optimization-pack/#how-to-get-mdop).
 >
 > MDOP might be available as a download from your [Visual Studio subscription](https://my.visualstudio.com/Downloads). When searching, be sure to look for **Desktop Optimization Pack**.
 
@@ -829,7 +829,7 @@ Follow these steps to create a bootable USB stick from the offline media content
 
 ## Unified Extensible Firmware Interface (UEFI)-based deployments
 
-As referenced in [Windows 10 deployment scenarios and tools](https://go.microsoft.com/fwlink/p/?LinkId=619546), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UEFI.
+As referenced in [Windows 10 deployment scenarios and tools](../windows-deployment-scenarios-and-tools.md), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UEFI.
 
 ![figure 14](../images/mdt-07-fig16.png)
 

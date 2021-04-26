@@ -50,7 +50,7 @@ Audit Sensitive Privilege Use contains events that show the usage of sensitive p
 
 -   Take ownership of files or other objects
 
-The use of two privileges, “Back up files and directories” and “Restore files and directories,” generate events only if the “[Audit: Audit the use of Backup and Restore privilege](https://technet.microsoft.com/library/jj852206.aspx)” Group Policy setting is enabled on the computer or device. We do not recommend enabling this Group Policy setting because of the high number of events recorded.
+The use of two privileges, “Back up files and directories” and “Restore files and directories,” generate events only if the “[Audit: Audit the use of Backup and Restore privilege](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj852206(v=ws.11))” Group Policy setting is enabled on the computer or device. We do not recommend enabling this Group Policy setting because of the high number of events recorded.
 
 This subcategory also contains informational events from the file system Transaction Manager.
 
@@ -74,5 +74,3 @@ If you configure this policy setting, an audit event is generated when sensitive
 
 >[!NOTE] 
 > The event “[4985](event-4985.md)(S): The state of a transaction has changed" from [Audit File System](audit-file-system.md) subcategory also generates in this subcategory. See description of event [4985](event-4985.md) in [Audit File System](audit-file-system.md) subcategory.
-
-

@@ -83,7 +83,7 @@ When the backup and restore function is used, it creates a copy of the file syst
 ### Countermeasure
 
 Enable the **Audit: Audit the use of Backup and Restore privilege** setting. Alternatively, implement automatic log backup by configuring the **AutoBackupLogFiles** registry key. If you enable this option when the [Audit privilege use](../auditing/basic-audit-privilege-use.md) setting is also enabled, an audit event is generated for every file that is backed up or restored. This information could help you to identify an account that was used to accidentally or maliciously restore data in an unauthorized manner.
-For more information about configuring this key, see [Eventlog Key](https://docs.microsoft.com/windows/desktop/EventLog/eventlog-key).
+For more information about configuring this key, see [Eventlog Key](/windows/desktop/EventLog/eventlog-key).
 
 ### Potential impact
 
@@ -92,5 +92,4 @@ If you enable this policy setting, a large number of security events could be ge
 ## Related topics
 
 - [Security Options](security-options.md)
- 
  

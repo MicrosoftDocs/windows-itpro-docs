@@ -1,7 +1,7 @@
 ---
 title: Release Notes for App-V for Windows 10, version 1607 (Windows 10)
 description: A list of known issues and workarounds for App-V running on Windows 10, version 1607.
-author: lomayor
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -155,12 +155,11 @@ The App-V Sequencer cannot sequence applications with filenames matching "CO_&lt
 ## Related resources list
 For information that can help with troubleshooting App-V for Windows 10, see:
 - [Application Virtualization (App-V): List of Microsoft Support Knowledge Base Articles](https://social.technet.microsoft.com/wiki/contents/articles/14272.app-v-v5-x-list-of-microsoft-support-knowledge-base-articles.aspx)
-- [The Official Microsoft App-V Team Blog](https://blogs.technet.microsoft.com/appv/)
-- [Technical Reference for App-V](https://technet.microsoft.com/itpro/windows/manage/appv-technical-reference)
+- [The Official Microsoft App-V Team Blog](/archive/blogs/appv/)
+- [Technical Reference for App-V](./appv-technical-reference.md)
 - [App-V TechNet Forum](https://social.technet.microsoft.com/forums/en-us/home?forum=mdopappv)
 
 
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 <a href="https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md" class="button big">Help us to improve</a>
-

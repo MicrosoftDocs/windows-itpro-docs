@@ -309,7 +309,7 @@ Supported operation is Get.
 <a href="" id="health-quickscanoverdue"></a>**Health/QuickScanOverdue**  
 Indicates whether a Windows Defender quick scan is overdue for the device.
 
-A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and [catchup Quick scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan) are disabled (default).
+A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and [catchup Quick scans](./policy-csp-defender.md#defender-disablecatchupquickscan) are disabled (default).
 
 The data type is a Boolean.
 
@@ -318,7 +318,7 @@ Supported operation is Get.
 <a href="" id="health-fullscanoverdue"></a>**Health/FullScanOverdue**  
 Indicates whether a Windows Defender full scan is overdue for the device.
 
-A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and [catchup Full scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan) are disabled (default).
+A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and [catchup Full scans](./policy-csp-defender.md#defender-disablecatchupfullscan) are disabled (default).
 
 The data type is a Boolean.
 
@@ -457,8 +457,8 @@ The data type is integer.
 Supported operations are Add, Delete, Get, Replace.	
 
 Valid values are:	
--	1 – Enable.	
--	0 (default) – Disable.
+-	1 (default) – Enable.	
+-	0 – Disable.
 
 <a href="" id="configuration-meteredconnectionupdates"></a>**Configuration/MeteredConnectionUpdates**<br>
 Allow managed devices to update through metered connections. Data charges may apply.
@@ -518,8 +518,8 @@ When enabled or disabled exists on the client and admin moves the setting to not
 
 More details:  
 
-- [Microsoft Defender AV diagnostic data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)  
-- [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)  
+- [Microsoft Defender AV diagnostic data](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)  
+- [Collect investigation package from devices](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)  
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.

@@ -54,7 +54,7 @@ The Microsoft Virtual Agent provided by [Microsoft Support](https://support.micr
 
 ### Remove external hardware
 
-If the computer is portable and it is currently in a docking station, [undock the computer](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754084(v=ws.11)).
+If the computer is portable and it is currently in a docking station, [undock the computer](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754084(v=ws.11)).
 
 Unplug nonessential external hardware devices from the computer, such as:
 - Headphones
@@ -77,7 +77,7 @@ For more information about disconnecting external devices, see [Safely remove ha
 
 ### Repair the system drive
 
-The system drive is the drive that contains the [system partition](https://docs.microsoft.com/windows-hardware/manufacture/desktop/hard-drives-and-partitions#span-idpartitionsspanspan-idpartitionsspanspan-idpartitionsspanpartitions). This is usually the **C:** drive.
+The system drive is the drive that contains the [system partition](/windows-hardware/manufacture/desktop/hard-drives-and-partitions#span-idpartitionsspanspan-idpartitionsspanspan-idpartitionsspanpartitions). This is usually the **C:** drive.
 
 To check and repair errors on the system drive:
 
@@ -154,12 +154,12 @@ To check and repair system files:
 
     ```
     > [!NOTE] 
-    > It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image) and [Use the System File Checker tool](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
+    > It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](/windows-hardware/manufacture/desktop/repair-a-windows-image) and [Use the System File Checker tool](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
 
 
 ### Repair unsigned drivers
 
-[Drivers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/what-is-a-driver-) are files ending in *.dll or *.sys that are used to communicate with hardware components.  Because drivers are so important, they are cryptographically signed to ensure they are genuine. Drivers with a *.sys extension that are not properly signed frequently block the upgrade process. Drivers might not be properly signed if you:
+[Drivers](/windows-hardware/drivers/gettingstarted/what-is-a-driver-) are files ending in *.dll or *.sys that are used to communicate with hardware components.  Because drivers are so important, they are cryptographically signed to ensure they are genuine. Drivers with a *.sys extension that are not properly signed frequently block the upgrade process. Drivers might not be properly signed if you:
 - Disabled driver signature verification (highly not recommended).
 - A catalog file used to sign a driver is corrupt or missing.
 
@@ -181,7 +181,7 @@ To check your system for unsigned drivers:
 9. Locate drivers in the log file that are unsigned, write down the location and file names. Also write down the catalog that is associated to the driver if it is provided. If the name of a catalog file is not provided you might need to analyze another device that has the same driver with sigverif and sigcheck (described below).
 10. The next step is to check that the driver reported as unsigned by sigverif.exe has a problem. In some cases, sigverif.exe might not be successful at locating the catalog file used to sign a driver, even though the catalog file exists. To perform a detailed driver check, download [sigcheck.zip](https://download.sysinternals.com/files/Sigcheck.zip) and extract the tool to a directory on your computer, for example: **C:\sigcheck**.
 
-    [Sigcheck](https://docs.microsoft.com/sysinternals/downloads/sigcheck) is a tool that you can download and use to review digital signature details of a file. To use sigcheck:
+    [Sigcheck](/sysinternals/downloads/sigcheck) is a tool that you can download and use to review digital signature details of a file. To use sigcheck:
 
 11. In the command window, use the **cd** command to switch to the directory where you extracted sigcheck, for example **cd c:\sigcheck**.
 12. Using the list of unsigned drivers and their associated paths that you obtained from the File Signature Verification tool, run sigcheck to obtain details about the driver, including the catalog file used for signing. Type **sigcheck64 -i \<driver path\>** and press ENTER (or sigcheck -i for a 32 bit OS). See the following example:
@@ -224,7 +224,7 @@ To check your system for unsigned drivers:
     Generic volume                 volume.inf    TRUE     Microsoft                
     (truncated)               
     ```
-    For more information about using driverquery, see [Two Minute Drill: DriverQuery.exe](https://techcommunity.microsoft.com/t5/ask-the-performance-team/two-minute-drill-driverquery-exe/ba-p/374977) and [driverquery](https://docs.microsoft.com/windows-server/administration/windows-commands/driverquery).
+    For more information about using driverquery, see [Two Minute Drill: DriverQuery.exe](https://techcommunity.microsoft.com/t5/ask-the-performance-team/two-minute-drill-driverquery-exe/ba-p/374977) and [driverquery](/windows-server/administration/windows-commands/driverquery).
 
 ### Update Windows
 
@@ -260,7 +260,7 @@ To remove programs, use the same steps as are provided [above](#uninstall-non-mi
 
 Updating firmware (such as the BIOS) and installing hardware drivers is a somewhat advanced task.  Do not attempt to update BIOS if you aren't familiar with BIOS settings or are not sure how to restore the previous BIOS version if there are problems. Most BIOS updates are provided as a "flash" update. Your manufacturer might provide a tool to perform the update, or you might be required to enter the BIOS and update it manually. Be sure to save your working BIOS settings, since some updates can reset your configuration and make the computer fail to boot if (for example) a RAID configuration is changed.
 
-Most BIOS and other hardware updates can be obtained from a website maintained by your computer manufacturer. For example, Microsoft Surface device drivers can be obtained at: [Download the latest firmware and drivers for Surface devices](https://docs.microsoft.com/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
+Most BIOS and other hardware updates can be obtained from a website maintained by your computer manufacturer. For example, Microsoft Surface device drivers can be obtained at: [Download the latest firmware and drivers for Surface devices](/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
 
 To obtain the proper firmware drivers, search for the most updated driver version provided by your computer manufacturer. Install these updates and reboot the computer after installation. Request assistance from the manufacturer if you have any questions.
 
@@ -307,7 +307,7 @@ If you downloaded the SetupDiag.exe program to your computer, then copied it to 
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.md)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)

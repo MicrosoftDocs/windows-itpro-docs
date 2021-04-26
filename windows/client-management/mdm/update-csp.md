@@ -73,7 +73,7 @@ Update
 <a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/**<strong>*Approved Update Guid*</strong>
 <p style="margin-left: 20px">Specifies the update GUID.
 
-<p style="margin-left: 20px">To auto-approve a class of updates, you can specify the <a href="https://go.microsoft.com/fwlink/p/?LinkId=526723" data-raw-source="[Update Classifications](https://go.microsoft.com/fwlink/p/?LinkId=526723)">Update Classifications</a> GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. There are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
+<p style="margin-left: 20px">To auto-approve a class of updates, you can specify the <a href="/previous-versions/windows/desktop/ff357803(v=vs.85)" data-raw-source="[Update Classifications](/previous-versions/windows/desktop/ff357803(v=vs.85))">Update Classifications</a> GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. There are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
 
 <p style="margin-left: 20px">Supported operations are Get and Add.
 
@@ -219,11 +219,4 @@ Added in Windows 10, version 1803. Returns the result of last RollBack FeatureUp
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
  
-
- 
-
-
-
-
-
 

@@ -24,12 +24,12 @@ MBSA was largely used in situations where neither Microsoft Update nor a local W
 ## The Solution 
 A script can help you with an alternative to MBSA’s patch-compliance checking:
  
-- [Using WUA to Scan for Updates Offline](https://docs.microsoft.com/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline), which includes a sample .vbs script. 
+- [Using WUA to Scan for Updates Offline](/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline), which includes a sample .vbs script. 
 For a PowerShell alternative, see [Using WUA to Scan for Updates Offline with PowerShell](https://www.powershellgallery.com/packages/Scan-UpdatesOffline/1.0).
  
 For example:
  
-[![VBS script](images/vbs-example.png)](https://docs.microsoft.com/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline) 
+[![VBS script](images/vbs-example.png)](/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline) 
 [![PowerShell script](images/powershell-example.png)](https://www.powershellgallery.com/packages/Scan-UpdatesOffline/1.0) 
   
 The preceding scripts use the [WSUS offline scan file](https://support.microsoft.com/help/927745/detailed-information-for-developers-who-use-the-windows-update-offline) (wsusscn2.cab) to perform a scan and get the same information on missing updates as MBSA supplied. MBSA also relied on the wsusscn2.cab to determine which updates were missing from a given system without connecting to any online service or server. The wsusscn2.cab file is still available and there are currently no plans to remove or replace it.
@@ -41,4 +41,4 @@ For security compliance and for desktop/server hardening, we recommend the Micro
 
 - [Windows security baselines](windows-security-baselines.md) 
 - [Download Microsoft Security Compliance Toolkit 1.0](https://www.microsoft.com/download/details.aspx?id=55319) 
-- [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/)  
+- [Microsoft Security Guidance blog](/archive/blogs/secguide/)

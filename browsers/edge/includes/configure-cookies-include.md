@@ -33,7 +33,7 @@ ms.topic: include
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowCookies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser\#browser-allowcookies)
+- **MDM name:** Browser/[AllowCookies](/windows/client-management/mdm/policy-csp-browser\#browser-allowcookies)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowCookies 
 - **Data type:** Integer

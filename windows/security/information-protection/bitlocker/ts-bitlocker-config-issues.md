@@ -53,11 +53,11 @@ After Windows 7 was released, several other areas of BitLocker were improved:
 
 - **Integration with Azure Active Directory** (Azure AD). BitLocker can store recovery information in Azure AD to make it easier to recover.
 
-- **[Direct memory access (DMA) Port Protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**. By using MDM policies to manage BitLocker, you can block a device's DMA ports and secure the device during its startup.
+- **[Direct memory access (DMA) Port Protection](../kernel-dma-protection-for-thunderbolt.md)**. By using MDM policies to manage BitLocker, you can block a device's DMA ports and secure the device during its startup.
 
-- **[BitLocker Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock)**. If your BitLocker-enabled desktop or server computer is connected to a wired corporate network in a domain environment, you can automatically unlock its operating system volume during a system restart.
+- **[BitLocker Network Unlock](./bitlocker-how-to-enable-network-unlock.md)**. If your BitLocker-enabled desktop or server computer is connected to a wired corporate network in a domain environment, you can automatically unlock its operating system volume during a system restart.
 
-- **Support for [Encrypted Hard Drives](https://docs.microsoft.com/windows/security/information-protection/encrypted-hard-drive)**. Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. By taking on that workload, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption.
+- **Support for [Encrypted Hard Drives](../encrypted-hard-drive.md)**. Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. By taking on that workload, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption.
 
 - **Support for classes of HDD/SSD hybrid disks**. BitLocker can encrypt a disk that uses a small SSD as a non-volatile cache in front of the HDD, such as Intel Rapid Storage Technology.
 
@@ -152,7 +152,7 @@ There is one supported way to perform backup and restore of a virtualized domain
 
 If you have to take a production snapshot of a virtualized domain controller, you can suspend BitLocker in the guest operating system before you start the production snapshot. However, this approach is not recommended.
 
-For more information and recommendations about backing up virtualized domain controllers, see [Virtualizing Domain Controllers using Hyper-V: Backup and Restore Considerations for Virtualized Domain Controllers](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/virtual-dc/virtualized-domain-controllers-hyper-v#backup-and-restore-considerations-for-virtualized-domain-controllers)
+For more information and recommendations about backing up virtualized domain controllers, see [Virtualizing Domain Controllers using Hyper-V: Backup and Restore Considerations for Virtualized Domain Controllers](/windows-server/identity/ad-ds/get-started/virtual-dc/virtualized-domain-controllers-hyper-v#backup-and-restore-considerations-for-virtualized-domain-controllers)
 
 ### More information
 
