@@ -253,6 +253,8 @@
                   href: update/windows-update-errors.md
                 - name: Windows Update error code reference
                   href: update/windows-update-error-reference.md
+                - name: Troubleshooting the Windows Update for Business deployment service
+                  href: update/deployment-service-troubleshooting.md
 
     - name: Reference
       items:
