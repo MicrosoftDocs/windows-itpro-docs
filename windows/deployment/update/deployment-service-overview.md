@@ -25,7 +25,7 @@ The deployment service is designed for IT Pros who are looking for more control 
 - You can schedule deployment of updates to start on a specific date (for example, deploy 20H2 to specified devices on March 14, 2021).
 - You can stage deployments over a period of days or weeks by using rich expressions (for example, deploy 20H2 to 500 devices per day, beginning on March 14, 2021).
 - You can bypass pre-configured Windows Update for Business policies to immediately deploy a security update across your organization when emergencies arise.
-- You can set up automatic pilot deployments tailored to your unique device population to ensure coverage of hardware and software in your organization.
+- You can benefit from automatic pilot deployments tailored to your unique device population to ensure coverage of hardware and software in your organization.
 
 The service is privacy focused and backed by leading industry compliance certifications.
 
