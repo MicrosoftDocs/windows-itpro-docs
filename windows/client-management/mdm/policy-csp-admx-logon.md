@@ -1193,7 +1193,7 @@ ADMX Info:
 <hr/>
 
 > [!NOTE]
-> These policies are for upcoming release.
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 
