@@ -25,7 +25,7 @@ The deployment service is designed for IT Pros who are looking for more control 
 - You can schedule deployment of updates to start on a specific date (for example, deploy 20H2 to specified devices on March 14, 2021).
 - You can stage deployments over a period of days or weeks by using rich expressions (for example, deploy 20H2 to 500 devices per day, beginning on March 14, 2021).
 - You can bypass pre-configured Windows Update for Business policies to immediately deploy a security update across your organization when emergencies arise.
-- You can benefit from automatic pilot deployments tailored to your unique device population to ensure coverage of hardware and software in your organization.
+- You can benefit from deployments with automatic piloting tailored to your unique device population to ensure coverage of hardware and software in your organization.
 
 The service is privacy focused and backed by leading industry compliance certifications.
 
@@ -35,7 +35,7 @@ The deployment service complements existing Windows Update for Business capabili
 
 :::image type="content" source="media/wufbds-product-large.png" alt-text="Described in following text":::
 
-Windows Update for Business is comprises three elements:
+Windows Update for Business comprises three elements:
 - Client policy to govern update experiences and timing – available through Group Policy and CSPs
 - Deployment service APIs to approve and schedule specific updates – available through the Microsoft Graph and associated SDKs (including PowerShell)
 - Update Compliance to monitor update deployment – available through the Azure Marketplace
@@ -47,7 +47,7 @@ Unlike existing client policy, the deployment service does not interact with dev
 Using the deployment service typically follows a common pattern:
 1. IT Pro uses a management tool to select devices and approve content to be deployed. This tool could be PowerShell, a Microsoft Graph app or a more complete management solution such as Microsoft Endpoint Manager.
 2. The chosen tool conveys your approval, scheduling, and device selection information to the deployment service.
-3. The deployment service processes the content approval and compares this with previously approved content. Final update applicability is determined and conveyed to Windows Update, which then offers approved content to devices on their next check for updates.
+3. The deployment service processes the content approval and compares it with previously approved content. Final update applicability is determined and conveyed to Windows Update, which then offers approved content to devices on their next check for updates.
 
 
 The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as Microsoft Endpoint Manager.
@@ -91,7 +91,7 @@ Microsoft Graph makes deployment service APIs available through. Get started wit
 - Learning Path: [Microsoft Graph Fundamentals](https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/)
 - Learning Path: [Build apps with Microsoft Graph](https://docs.microsoft.com/learn/paths/m365-msgraph-associate/)
 
-Once you are familiar with Microsoft Graph development, see {development resources--NEED LINK} for more.
+Once you are familiar with Microsoft Graph development, see [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview) for more.
 
 ## Deployment protections
 
@@ -120,6 +120,9 @@ During a feature update deployment, driver combinations can sometimes result in 
 Deployment scheduling controls are always available, but to take advantage of the unique deployment protections tailored to your organization, devices must share diagnostic data with Microsoft.
 
 #### Device prerequisites
+
+> [!NOTE]
+> Deployment protections are currently in preview and available if you're using Update Compliance. If you set these policies on a a device that isn't enrolled in Update Compliance, there is no effect.
 
 - Diagnostic data is set to *Required* or *Optional*.
 - The **AllowWUfBCloudProcessing** policy is set to **1**.
@@ -168,7 +171,5 @@ Avoid using different channels to manage the same resources. If you use Microsof
 
 To learn more about the deployment service, try the following:
 
-- Release blogs
 - [Windows 10 feature updates policy in Intune](/mem/intune/protect/windows-10-feature-updates)
-- Windows 10 quality updates policy in Intune {LINK?}
 - [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview)
