@@ -88,8 +88,8 @@ The Microsoft Graph SDK includes a PowerShell extension that you can use to scri
 ### Building your own application
 
 Microsoft Graph makes deployment service APIs available through. Get started with these learning paths:
-- Learning Path: [Microsoft Graph Fundamentals](https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/)
-- Learning Path: [Build apps with Microsoft Graph](https://docs.microsoft.com/learn/paths/m365-msgraph-associate/)
+- Learning Path: [Microsoft Graph Fundamentals](/learn/paths/m365-msgraph-fundamentals/)
+- Learning Path: [Build apps with Microsoft Graph](/learn/paths/m365-msgraph-associate/)
 
 Once you are familiar with Microsoft Graph development, see [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview) for more.
 
