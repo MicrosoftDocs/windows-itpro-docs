@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting the Windows Update for Business deployment service
-description: Solutions to common problems
+title: Troubleshoot the Windows Update for Business deployment service
+description: Solutions to common problems with the service
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -14,7 +14,7 @@ ms.topic: article
 
 
 
-# Troubleshooting the Windows Update for Business deployment service
+# Troubleshoot the Windows Update for Business deployment service
 
 > Applies to: Windows 10
 
