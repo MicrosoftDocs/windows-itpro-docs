@@ -66,7 +66,7 @@ sections:
           > IEAK 11 is available in 24 languages but can build customized Internet Explorer 11 packages in all languages of the supported operating systems. To download IEAK 11, see [Internet Explorer Administration Kit (IEAK) information and downloads](../ie11-ieak/ieak-information-and-downloads.md).
           
       - question: |
-          Is there a version of the Internet Explorer Administration Kit (IEAK) supporting IE11?<br>
+          Is there a version of the Internet Explorer Administration Kit (IEAK) supporting IE11?
         answer: |
           Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for download. IEAK 11 lets you create custom versions of IE11 for use in your organization. For more information, see the following resources:
           
