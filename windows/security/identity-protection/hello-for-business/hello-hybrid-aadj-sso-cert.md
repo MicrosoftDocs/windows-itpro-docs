@@ -682,7 +682,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
    > [!NOTE]
    > If the distinguished name contains special characters like plus sign ("+"), comma (","), semicolon (";"), or equal sign ("="), the bracketed name must be enclosed in quotation marks: CN=”{{OnPrem_Distinguished_Name}}”.
-   > If the distinguished names length is more than 64 characters, name length enforcement on the Certification Authority [must be disabled](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc784789(v=ws.10)?#disable-dn-length-enforcement)
+   > If the length of the distinguished name is more than 64 characters, the name length enforcement on the Certification Authority [must be disabled](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc784789(v=ws.10)?#disable-dn-length-enforcement).
 
 12. Specify **User Principal Name (UPN)** as a **Subject Alternative Name** parameter. Set its value as {{UserPrincipalName}}.
 13. Refer to the "Configure Certificate Templates on NDES" task for how you configured the **AADJ WHFB Authentication** certificate template in the registry. Select the appropriate combination of key usages from the **Key Usages** list that map to the configured NDES template in the registry. In this example, the **AADJ WHFB Authentication** certificate template was added to the **SignatureTemplate** registry value name. The **Key usage** that maps to that registry value name is **Digital Signature**.
