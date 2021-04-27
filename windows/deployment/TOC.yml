@@ -167,8 +167,8 @@
             - name: Windows Update for Business deployment service
               href: update/deployment-service-overview.md
               items:
-                - name: Troubleshooting the Windows Update for Business deployment service
-                  href: update/deployment-service-troubleshooting.md
+                - name: Troubleshoot the Windows Update for Business deployment service
+                  href: update/deployment-service-troubleshoot.md
             - name: Enforcing compliance deadlines for updates
               href: update/wufb-compliancedeadlines.md
             - name: Integrate Windows Update for Business with management solutions
@@ -254,7 +254,7 @@
                   href: update/windows-update-errors.md
                 - name: Windows Update error code reference
                   href: update/windows-update-error-reference.md
-                - name: Troubleshooting the Windows Update for Business deployment service
+                - name: Troubleshoot the Windows Update for Business deployment service
                   href: update/deployment-service-troubleshooting.md
 
     - name: Reference
