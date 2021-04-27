@@ -319,7 +319,7 @@
                     - name: Audit system events
                       href: auditing/basic-audit-system-events.md
             - name: Advanced security audit policies
-              href: auditing/advanced-security-auditing.md
+              href: auditing/advanced-security-auditing.yml
               items: 
                 - name: Planning and deploying advanced security audit policies
                   href: auditing/planning-and-deploying-advanced-security-audit-policies.md
