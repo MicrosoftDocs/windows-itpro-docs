@@ -255,7 +255,7 @@
                 - name: Windows Update error code reference
                   href: update/windows-update-error-reference.md
                 - name: Troubleshoot the Windows Update for Business deployment service
-                  href: update/deployment-service-troubleshooting.md
+                  href: update/deployment-service-troubleshoot.md
 
     - name: Reference
       items:
