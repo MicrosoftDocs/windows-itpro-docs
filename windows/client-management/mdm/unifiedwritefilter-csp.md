@@ -21,10 +21,60 @@ The UnifiedWriteFilter (UWF) configuration service provider enables the IT admin
 
  
 
-The following diagram shows the UWF configuration service provider in tree format.
-
-![universalwritefilter csp](images/provisioning-csp-uwf.png)
-
+The following shows the UWF configuration service provider in tree format.
+```
+./Vendor/MSFT
+UnifiedWriteFilter
+┣━━━CurrentSession
+┃   ┣━━━FilterEnabled
+┃   ┣━━━OverlayConsumption
+┃   ┣━━━AvailableOverlaySpace
+┃   ┣━━━CriticalOverlayThreshold
+┃   ┣━━━WarningOverlayThreshold
+┃   ┣━━━OverlayType
+┃   ┣━━━OverlayFlags
+┃   ┣━━━MaximumOverlaySize
+┃   ┣━━━PersistDomainSecretKey
+┃   ┣━━━PersistTSCAL
+┃   ┣━━━RegistryExclusions
+┃   ┃   ┗━━━[ExcludedRegistry]
+┃   ┣━━━ServicingEnabled
+┃   ┣━━━Volume
+┃   ┃   ┗━━━[Volume]
+┃   ┃       ┣━━━Protected
+┃   ┃       ┣━━━BindByDriveLetter
+┃   ┃       ┣━━━DriveLetter
+┃   ┃       ┣━━━Exclusions
+┃   ┃       ┃   ┗━━━[ExclusionPath]
+┃   ┃       ┣━━━CommitFile
+┃   ┃       ┗━━━CommitFileDeletion
+┃   ┣━━━ShutdownPending
+┃   ┣━━━CommitRegistry
+┃   ┗━━━CommitRegistryDeletion
+┣━━━NextSession
+┃   ┣━━━FilterEnabled
+┃   ┣━━━HORMEnabled
+┃   ┣━━━OverlayType
+┃   ┣━━━OverlayFlags
+┃   ┣━━━MaximumOverlaySize
+┃   ┣━━━PersistDomainSecretKey
+┃   ┣━━━PersistTSCAL
+┃   ┣━━━RegistryExclusions
+┃   ┃   ┗━━━[ExcludedRegistry]
+┃   ┣━━━ResetPersistentState
+┃   ┣━━━ResetPersistentStateSavedMode
+┃   ┣━━━ServicingEnabled
+┃   ┗━━━Volume
+┃       ┗━━━[Volume]
+┃           ┣━━━Protected
+┃           ┣━━━BindByDriveLetter
+┃           ┣━━━DriveLetter
+┃           ┗━━━Exclusions
+┃               ┗━━━[ExclusionPath]
+┣━━━ResetSettings
+┣━━━ShutdownSystem
+┗━━━RestartSystem
+```
 <a href="" id="currentsession"></a>**CurrentSession**  
 Required. Represents the current UWF configuration in the current session (power cycle).
 
