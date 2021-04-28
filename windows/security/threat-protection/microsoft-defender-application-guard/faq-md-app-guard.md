@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 04/26/2021
+ms.date: 04/28/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -77,11 +77,15 @@ This feature is currently experimental only and is not functional without an add
 
 ### What is the WDAGUtilityAccount local account? 
 
-This account is part of Application Guard, beginning with Windows 10, version 1709 (Fall Creators Update). It remains disabled by default, unless Application Guard is enabled on your device. The WDAGUtilityAccount is leveraged to sign in to the Application Guard container as a standard user with a random password. It is NOT a malicious account. If "Run as a service" permissions are revoked for this account, you may encounter the following error: "Error: 0x80070569, Ext error: 0x00000001; RDP: Error: 0x00000000, Ext error: 0x00000000 Location: 0x00000000". We recommend that you do not modify this account.
+WDAGUtilityAccount is part of Application Guard, beginning with Windows 10, version 1709 (Fall Creators Update). It remains disabled by default, unless Application Guard is enabled on your device. WDAGUtilityAccount is used to sign in to the Application Guard container as a standard user with a random password. It is NOT a malicious account. If *Run as a service* permissions are revoked for this account, you might see the following error: 
+
+**Error: 0x80070569, Ext error: 0x00000001; RDP: Error: 0x00000000, Ext error: 0x00000000 Location: 0x00000000**
+
+We recommend that you do not modify this account.
 
 ### How do I trust a subdomain in my site list?                          
 
-To trust a subdomain, you must precede your domain with two dots, for example: `..contoso.com` ensures that `mail.contoso.com` or `news.contoso.com` are trusted. The first dot represents the strings for the subdomain name (mail or news), the second dot recognizes the start of the domain name (`contoso.com`). This prevents sites such as `fakesitecontoso.com` from being trusted.
+To trust a subdomain, you must precede your domain with two dots (..). For example: `..contoso.com` ensures that `mail.contoso.com` or `news.contoso.com` are trusted. The first dot represents the strings for the subdomain name (mail or news), and the second dot recognizes the start of the domain name (`contoso.com`). This prevents sites such as `fakesitecontoso.com` from being trusted.
 
 ### Are there differences between using Application Guard on Windows Pro vs Windows Enterprise? 
 
@@ -89,21 +93,23 @@ When using Windows Pro or Windows Enterprise, you have access to using Applicati
 
 ### Is there a size limit to the domain lists that I need to configure?
 
-Yes, both the Enterprise Resource domains hosted in the cloud and the Domains categorized as both work and personal have a 16383-B limit.
+Yes, both the Enterprise Resource domains that are hosted in the cloud and the domains that are categorized as both work and personal have a 16383-B limit.
 
 ### Why does my encryption driver break Microsoft Defender Application Guard?
 
-Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (`0x80070013 ERROR_WRITE_PROTECT`).  
+Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (**0x80070013 ERROR_WRITE_PROTECT**).  
 
 ### Why do the Network Isolation policies in Group Policy and CSP look different?
 
 There is not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatory network isolation policies to deploy Application Guard are different between CSP and GP.
 
-Mandatory network isolation GP policy to deploy Application Guard: "DomainSubnets or CloudResources"
-Mandatory network isolation CSP policy to deploy Application Guard: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
-For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
+- Mandatory network isolation GP policy to deploy Application Guard: **DomainSubnets or CloudResources**
 
-Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
+- Mandatory network isolation CSP policy to deploy Application Guard: **EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)**
+
+- For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
+
+Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (**0x80070013 ERROR_WRITE_PROTECT**). 
 
 ### Why did Application Guard stop working after I turned off hyperthreading?
 
