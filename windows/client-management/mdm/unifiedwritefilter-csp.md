@@ -30,6 +30,7 @@ UnifiedWriteFilter
 ┃   ┣━━━OverlayConsumption
 ┃   ┣━━━AvailableOverlaySpace
 ┃   ┣━━━CriticalOverlayThreshold
+┃   ┣━━━SWAPFileSize     
 ┃   ┣━━━WarningOverlayThreshold
 ┃   ┣━━━OverlayType
 ┃   ┣━━━OverlayFlags
@@ -64,6 +65,7 @@ UnifiedWriteFilter
 ┃   ┣━━━ResetPersistentState
 ┃   ┣━━━ResetPersistentStateSavedMode
 ┃   ┣━━━ServicingEnabled
+┃   ┣━━━SWAPFileSize
 ┃   ┗━━━Volume
 ┃       ┗━━━[Volume]
 ┃           ┣━━━Protected
