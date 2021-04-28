@@ -264,4 +264,4 @@ At a command prompt, type: **winver**
 
 A popup window will display the Windows 10 version number and detailed OS build information.
 
-If a device is running a version of Windows 10 Pro prior to 1703 (for example, version 1511), it will not be upgraded to Windows 10 Enterprise when a user signs in, even if the user has been assigned a subscription in the CSP portal.
+If a device is running a version of Windows 10 Pro prior to version 1703 (for example, version 1511), it will not be upgraded to Windows 10 Enterprise when a user signs in, even if the user has been assigned a subscription in the CSP portal.
