@@ -14,7 +14,6 @@ ms.date: 06/26/2017
 
 # NodeCache CSP
 
-
 The NodeCache configuration service provider is used to manage the client cache. This configuration service provider is to be used only by enterprise management servers. It provides a level of abstraction that decouples the management of the node list from a specific backing store. It synchronizes the client cache with the server side cache. It also provides an API for monitoring device-side cache changes.
 
 NodeCache supports the comparison of hash values instead of actual node values:
@@ -28,9 +27,9 @@ application/x-nodemon-sha256
 NodeCache will hash the values and compare with a hash value that was sent down by the server. This supports checking a parent node and its children recursively.
 
 The following shows the NodeCache configuration service provider in tree format.
+
 ```
-./User/Vendor/MSFT
-NodeCache
+./User/Vendor/MSFT/NodeCache
 ----ProviderID
 --------CacheVersion
 --------ChangedNodes
@@ -42,6 +41,19 @@ NodeCache
 ----------------AutoSetExpectedValue
 
 
+./Device/Vendor/MSFT/NodeCache
+----ProviderID
+--------CacheVersion
+--------ChangedNodes
+--------ChangedNodesData
+--------Nodes
+------------NodeID
+----------------NodeURI
+----------------ExpectedValue
+----------------AutoSetExpectedValue
+
+
+./User/Vendor/MSFT
 ./Device/Vendor/MSFT
 NodeCache
 ----ProviderID
@@ -53,60 +65,47 @@ NodeCache
 ----------------NodeURI
 ----------------ExpectedValue
 ----------------AutoSetExpectedValue
-
-
-./User/Vendor/MSFT
-./Device/Vendor/MSFT
-NodeCache
-----ProviderID
---------CacheVersion
---------ChangedNodes
---------ChangedNodesData
---------Nodes
-------------NodeID
-----------------NodeURI
-----------------ExpectedValue
-----------------AutoSetExpectedValue
 ```
-<a href="" id="--device-vendor-msft"></a>**./Device/Vendor/MSFT and ./User/Vendor/MSFT**  
+
+<a href="" id="--device-vendor-msft"></a>**./Device/Vendor/MSFT and ./User/Vendor/MSFT**
 Required. The root node for the NodeCache object. Supported operation is Get. This configuration service provider is used for enterprise device management only. This is a predefined MIME type to identify this managed object in OMA DM syntax.
 
-<a href="" id="providerid"></a>***ProviderID***  
+<a href="" id="providerid"></a>***ProviderID***
 Optional. Group settings per DM server. Each group of settings is distinguished by the server’s Provider ID. It should be the same DM server **PROVIDER-ID** value that was supplied through the [w7 APPLICATION configuration service provider](w7-application-csp.md) XML during the enrollment process. Only one enterprise management server is supported. That is, there should be only one *ProviderID* node under **NodeCache**. Scope is dynamic.
 
 Supported operations are Get, Add, and Delete.
 
-<a href="" id="providerid-cacheversion"></a>***ProviderID*/CacheVersion**  
+<a href="" id="providerid-cacheversion"></a>***ProviderID*/CacheVersion**
 Optional. Character string representing the cache version set by the server. Scope is dynamic.
 
 Data type is string. Supported operations are Get, Add, and Replace.
 
-<a href="" id="providerid-changednodes"></a>***ProviderID*/ChangedNodes**  
+<a href="" id="providerid-changednodes"></a>***ProviderID*/ChangedNodes**
 Optional. List of nodes whose values do not match their expected values as specified in **/*NodeID*/ExpectedValue**. Scope is dynamic.
 
 Data type is string. Supported operation is Get.
 
-<a href="" id="providerid-changednodesdata"></a>***ProviderID*/ChangedNodesData**  
+<a href="" id="providerid-changednodesdata"></a>***ProviderID*/ChangedNodesData**
 Added in Windows 10, version 1703. Optional. XML containing nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
 
 Suppported operation is Get.
 
-<a href="" id="providerid-nodes"></a>***ProviderID*/Nodes**  
+<a href="" id="providerid-nodes"></a>***ProviderID*/Nodes**
 Required. Root node for cached nodes. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-nodes-nodeid"></a>**/Nodes/**<strong>*NodeID*</strong>  
+<a href="" id="-nodes-nodeid"></a>**/Nodes/_NodeID_**
 Optional. Information about each cached node is stored under *NodeID* as specified by the server. This value must not contain a comma. Scope is dynamic.
 
 Supported operations are Get, Add, and Delete.
 
-<a href="" id="-nodeid-nodeuri"></a>**/*NodeID*/NodeURI**  
+<a href="" id="-nodeid-nodeuri"></a>**/*NodeID*/NodeURI**
 Required. This node's value is a complete OMA DM node URI. It can specify either an interior or leaf node in the device management tree. Scope is dynamic.
 
 Data type is string. Supported operations are Get, Add, and Delete.
 
-<a href="" id="-nodeid-expectedvalue"></a>**/*NodeID*/ExpectedValue**  
+<a href="" id="-nodeid-expectedvalue"></a>**/*NodeID*/ExpectedValue**
 Required. This is the value that the server expects to be on the device. When the configuration service provider initiates a session, it checks the expected value against the node's actual value. Scope is dynamic. Supported values are string and x-nodemon-nonexistent.
 
 Supported operations are Get, Add, and Delete.
@@ -128,58 +127,56 @@ Here's an example for setting the ExpectedValue to nonexistent.
 </Add>
 ```
 
-<a href="" id="-nodeid-autosetexpectedvalue"></a>**/*NodeID*/AutoSetExpectedValue**  
+<a href="" id="-nodeid-autosetexpectedvalue"></a>**/*NodeID*/AutoSetExpectedValue**
 Added in Windows 10, version 1703. Required. This automatically sets the value on the device to match the actual value of the node. The node is specified in NodeURI.
 
 Supported operations are Add, Get, and Delete.
 
 ## A typical DM session with the NodeCache configuration service provider
 
+1. The device connects to a DM server.
 
-1.  The device connects to a DM server.
+2. The server queries the **NodeCache** version by issuing a Get operation for ./Vendor/MSFT/NodeCache/*ProviderID*/CacheVersion LocURI
 
-2.  The server queries the **NodeCache** version by issuing a Get operation for ./Vendor/MSFT/NodeCache/*ProviderID*/CacheVersion LocURI
+3. If the device **CacheVersion** and the server-side cache differ (due to a device crash or server crash), the server can clear the server-side cache and go to Step 5.
 
-3.  If the device **CacheVersion** and the server-side cache differ (due to a device crash or server crash), the server can clear the server-side cache and go to Step 5.
+4. The server updates the server-side cache:
 
-4.  The server updates the server-side cache:
+    1. Sends a Get operation for ./Vendor/MSFT/NodeCache/*ProviderID*/ChangedNodes LocURI
 
-    1.  Sends a Get operation for ./Vendor/MSFT/NodeCache/*ProviderID*/ChangedNodes LocURI
+    2. Response is a list of changed node IDs. Each ID in the list corresponds to a node under ./Vendor/MSFT/NodeCache/*ProviderID*/Nodes root
 
-    2.  Response is a list of changed node IDs. Each ID in the list corresponds to a node under ./Vendor/MSFT/NodeCache/*ProviderID*/Nodes root
+    3. For each node in the invalid nodes list, the server sends a `GET` command to retrieve the actual value of the node. For example, `GET <NodeURI>`, where `NodeURI` is a full device LocURI that corresponds to the invalid cache node.
 
-    3.  For each node in the invalid nodes list, the server sends a `GET` command to retrieve the actual value of the node. For example, `GET <NodeURI>`, where `NodeURI` is a full device LocURI that corresponds to the invalid cache node.
+    4. Nodes in the server-side cache are updated with the actual values received from the device.
 
-    4.  Nodes in the server-side cache are updated with the actual values received from the device.
-
-    5.  For each updated node, a `REPLACE` command is sent to the device to update the device-side cache:
+    5. For each updated node, a `REPLACE` command is sent to the device to update the device-side cache:
 
         `REPLACE ./Vendor/MSFT/NodeCache/ProviderID/Nodes/NodeID/ExpectedValue => ActualValue`
 
-    6.  A new cache version is created and sent to the device:
+    6. A new cache version is created and sent to the device:
 
         `REPLACE ./Vendor/MSFT/NodeCache/ProviderID/CacheVersion => new_version`
 
         The `new_version` value is stored by the server.
 
-5.  The management server retrieves the corresponding value from the server-side cache:
+5. The management server retrieves the corresponding value from the server-side cache:
 
-    1.  If a value already exists in the server-side cache, retrieve the value from the server-side cache instead of going to the device.
+    1. If a value already exists in the server-side cache, retrieve the value from the server-side cache instead of going to the device.
 
-    2.  If a value does not exist in the server-side cache, do the following:
+    2. If a value does not exist in the server-side cache, do the following:
 
-        1.  Create a new entry with a unique *NodeID* in the server-side cache.
+        1. Create a new entry with a unique *NodeID* in the server-side cache.
 
-        2.  Query the device to retrieve the actual value of the URI.
+        2. Query the device to retrieve the actual value of the URI.
 
-        3.  Create a new node under ./Vendor/MSFT/NodeCache/*ProviderID*/Nodes with *NodeID* value.
+        3. Create a new node under ./Vendor/MSFT/NodeCache/*ProviderID*/Nodes with *NodeID* value.
 
-        4.  Set up **NodeURI** and **ExpectedValue** for the ./Vendor/MSFT/NodeCache/*ProviderID*/Nodes/*NodeID* node.
+        4. Set up **NodeURI** and **ExpectedValue** for the ./Vendor/MSFT/NodeCache/*ProviderID*/Nodes/*NodeID* node.
 
-        5.  Update the **CachedNodes** version.
+        5. Update the **CachedNodes** version.
 
 ## OMA DM examples
-
 
 Creating settings for node caching:
 
@@ -388,18 +385,6 @@ If a Uri is not set, the node will always be reported as changed, as in Node id 
 
 The value inside of the node tag is the actual value returned by the Uri, which means that for Node Id 20 the DeviceName did not match what was previously expected, and the device name is now U09NRU5FV1ZBTFVF instead of what it was previously.
 
-
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

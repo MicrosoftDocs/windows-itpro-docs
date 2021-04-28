@@ -14,42 +14,40 @@ ms.date: 06/26/2017
 
 # Maps CSP
 
-
 The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 
-> **Note**  The Maps CSP is only supported in Windows 10 Mobile.
-
- 
+> [!NOTE]
+> The Maps CSP is only supported in Windows 10 Mobile.
 
 The following shows the Maps configuration service provider in tree format.
+
 ```
-./Vendor/MSFT
-Maps
+./Vendor/MSFT/Maps
 ----Packages
 --------Package
 ------------Status
 ```
-<a href="" id="maps"></a>**Maps**  
+
+<a href="" id="maps"></a>**Maps**
 Root node.
 
-<a href="" id="packages"></a>**Packages**  
+<a href="" id="packages"></a>**Packages**
 Represents the map packages installed on the device.
 
-<a href="" id="packages-package"></a>**Packages/**<strong>*Package*</strong>  
+<a href="" id="packages-package"></a>**Packages/**<strong>*Package*</strong>
 A GUID that represents a map package. When you add a *Package* node, Windows adds it to the queue for download to the device. See the table below for the list of various maps and corresponding GUIDS.
 
-<a href="" id="packages-package-status"></a>**Packages/*Package*/Status**  
+<a href="" id="packages-package-status"></a>**Packages/*Package*/Status**
 Represents the stat of the package installed on the device.
 
 Valid values:
 
--   1 - the specified map package is queued for download.
--   2 - the specified map package is downloading or installed.
+- 1 - the specified map package is queued for download.
+- 2 - the specified map package is downloading or installed.
 
 Supported operation is Get. If the map is neither queued, downloading, or installed, then you will get a 404 from a Get request.
 
 ## Examples
-
 
 Here is a list of GUIDs of the most downloaded reqions.
 
@@ -126,8 +124,6 @@ Here is a list of GUIDs of the most downloaded reqions.
 | Wisconsin                     | 0b5a98f7-489d-4a07-859b-4e01fe9e1b32 |
 | Wyoming                       | 360e0c25-a3bb-4e29-939a-3631eae46e9a |
 
- 
-
 Here is an example queuing a map package of New York for download.
 
 ```xml
@@ -163,13 +159,3 @@ Here is an example that gets the status of the New York map package on the devic
     </SyncBody>
 </SyncML>
 ```
-
- 
-
- 
-
-
-
-
-
-

@@ -14,15 +14,14 @@ ms.date: 07/11/2017
 
 # EnterpriseDesktopAppManagement CSP
 
-
 The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
 
 Application installations can take some time to complete, hence they are done asynchronously. When the Exec command is completed, the client can send a generic alert to the management server with a status, whether it's a failure or success. For a SyncML example, see [Alert example](#alert-example).
 
 The following shows the EnterpriseDesktopAppManagement CSP in tree format.
+
 ```
-./Device/Vendor/MSFT
-EnterpriseDesktopAppManagement
+./Device/Vendor/MSFT/EnterpriseDesktopAppManagement
 ----MSI
 --------ProductID
 ------------Version
@@ -37,13 +36,14 @@ EnterpriseDesktopAppManagement
 --------UpgradeCode
 ------------Guid
 ```
+
 <a href="" id="--vendor-msft-enterprisedesktopappmanagement"></a>**./Device/Vendor/MSFT/EnterpriseDesktopAppManagement**
 The root node for the EnterpriseDesktopAppManagement configuration service provider.
 
 <a href="" id="msi"></a>**MSI**
 Node for all settings.
 
-<a href="" id="msi-productid"></a>**MSI/**<strong>*ProductID*</strong>
+<a href="" id="msi-productid"></a>**MSI/_ProductID_**
 The MSI product code for the application.
 
 <a href="" id="msi-productid-version"></a>**MSI/*ProductID*/Version**
@@ -94,8 +94,6 @@ Status of the application. Value type is string. Supported operation is Get.
 | Enforcement Failed        | 60    |
 | Enforcement Completed     | 70    |
 
- 
-
 <a href="" id="msi-productid-lasterror"></a>**MSI/*ProductID*/LastError**
 The last error code during the application installation process. This is typically stored as an HRESULT format. Depending on what was occurring when the error happened, this could be the result of executing MSIExec.exe or the error result from an API that failed.
 
@@ -116,7 +114,6 @@ Value type is string. Supported operation is Get.
 
 
 ## Examples
-
 
 **SyncML to request CSP version information**
 
@@ -144,8 +141,6 @@ The following table describes the fields in the previous sample:
 | CmdID  | Input value used to reference the request. Responses will include this value which can be used to match request and response. |
 | LocURI | Path to Win32 CSP command processor.                                                                                          |
 
- 
-
 **SyncML to perform MSI operations for application uninstall**
 
 ```xml
@@ -172,8 +167,6 @@ The following table describes the fields in the previous sample:
 | CmdID  | Input value used to reference the request. Responses will include this value which can be used to match request and response.                                                                                       |
 | LocURI | Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.                                                          |
 
- 
-
 **SyncML to perform MSI operations for application status reporting**
 
 ```xml
@@ -199,8 +192,6 @@ The following table describes the fields in the previous sample:
 | Get    | Operation being performed. The Get operation is a request to report the status of the specified MSI installed application.                                 |
 | CmdID  | Input value used to reference the request. Responses will include this value which can be used to match request and response.                              |
 | LocURI | Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting. |
-
- 
 
 **SyncML to perform MSI install operations for an application targeted to a specific user on the device. The Add command is required to preceed the Exec command.**
 
@@ -290,11 +281,8 @@ The following table describes the fields in the previous sample:
 </tbody>
 </table>
 
- 
-
-> **Note**  Information status on the MSI job will be reported using standard OMA-DM notification mechanism. The status reported is represented using standard MSIEXEC return codes as HRESULT as defined in the MSIEXEC topic on Microsoft TechNet at <https://technet.microsoft.com/library/cc759262(v=ws.10).aspx>.
-
- 
+> [!NOTE]
+> Information status on the MSI job will be reported using standard OMA-DM notification mechanism. The status reported is represented using standard MSIEXEC return codes as HRESULT as defined in the MSIEXEC topic on Microsoft TechNet at <https://technet.microsoft.com/library/cc759262(v=ws.10).aspx>.
 
 **SyncML to perform MSI install operations for an application targeted to all users on the device (per-device installation)**
 
@@ -415,8 +403,6 @@ The following table MsiInstallJob describes the schema elements.
 </tbody>
 </table>
 
- 
-
 Here is an example of a common response to a request
 
 ```xml
@@ -444,7 +430,6 @@ Here is an example of a common response to a request
 ```
 
 ## How to determine which installation context to use for an MSI package
-
 
 The following tables shows how app targeting and MSI package type (per-user, per machine, or dual mode) are installed in the client.
 
@@ -487,8 +472,6 @@ For Intune standalone environment, the MSI package will determine the MSI execut
 </tbody>
 </table>
 
- 
-
 The following table applies to SCCM hybrid environment.
 
 <table>
@@ -528,25 +511,21 @@ The following table applies to SCCM hybrid environment.
 </tbody>
 </table>
 
- 
-
 ## How to determine the package type from the MSI package
 
-
--   ALLUSERS="" - per-user package type
--   ALLUSERS=1 - per-machine package type
--   ALLUSERS=2, MSIINSTALLPERUSER=1 - dual mode package type
+- ALLUSERS="" - per-user package type
+- ALLUSERS=1 - per-machine package type
+- ALLUSERS=2, MSIINSTALLPERUSER=1 - dual mode package type
 
 Properties can be specified in the package, passed through the command line, modified by a transform, or (more commonly) selected through a user interface dialog.
 
 Here's a list of references:
 
--   [Using Windows Installer](/previous-versions/windows/it-pro/windows-server-2003/cc782896(v=ws.10))
--   [Authoring a single package for Per-User or Per-Machine Installation context in Windows 7](https://blogs.msdn.com/b/windows_installer_team/archive/2009/09/02/authoring-a-single-package-for-per-user-or-per-machine-installation-context-in-windows-7.aspx)
--   SyncML Representation Protocol, Draft Version 1.3 - 27 Aug 2009 (OMA-TS-SyncML\_RepPro-V1\_3-20090827-D)
+- [Using Windows Installer](/previous-versions/windows/it-pro/windows-server-2003/cc782896(v=ws.10))
+- [Authoring a single package for Per-User or Per-Machine Installation context in Windows 7](https://blogs.msdn.com/b/windows_installer_team/archive/2009/09/02/authoring-a-single-package-for-per-user-or-per-machine-installation-context-in-windows-7.aspx)
+- SyncML Representation Protocol, Draft Version 1.3 - 27 Aug 2009 (OMA-TS-SyncML\_RepPro-V1\_3-20090827-D)
 
 ## Alert example
-
 
 ```xml
 <Alert>
@@ -565,6 +544,3 @@ Here's a list of references:
        </Item>
 </Alert>
 ```
-
- 
-

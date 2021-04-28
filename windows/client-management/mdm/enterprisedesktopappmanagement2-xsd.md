@@ -2,7 +2,7 @@
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -13,7 +13,6 @@ ms.date: 06/26/2017
 ---
 
 # EnterpriseDesktopAppManagement XSD
-
 
 This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 
@@ -75,8 +74,6 @@ This topic contains the XSD schema file for the EnterpriseDesktopAppManagement c
 
 The following table describes the various elements and attributes of the XSD file:
 
- 
-
 | Name           | Description                                                                                                                                                                        |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | MsiInstallJob  | Root element                                                                                                                                                                       |
@@ -93,15 +90,3 @@ The following table describes the various elements and attributes of the XSD fil
 | Timeout        | Amount of time in minutes that the installation process can run before the installer considers the installation may have failed and no longer monitors the installation operation. |
 | RetryCount     | Number of times the download and installation operation will be retried before the installation will be marked as failed.                                                          |
 | RetryInterval  | Amount of time in minutes between retry operations.                                                                                                                                |
-
- 
-
- 
-
- 
-
-
-
-
-
-
