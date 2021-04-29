@@ -26,7 +26,7 @@ In Windows 10, a number of features were added to auto-trigger VPN so users wonâ
 - Always On
 
 > [!NOTE]
->Auto-triggered VPN connections will not work if Folder Redirection for %appdata% (C:\Users\username\AppData\Roaming) is enabled. Either Folder Redirection must be disabled for %appdata% or the auto-triggered VPN profile must be deployed in system context, that changes the path the rasphone.pbk file is stored.
+> Auto-triggered VPN connections will not work if Folder Redirection for AppData is enabled. Either Folder Redirection for AppData must be disabled or the auto-triggered VPN profile must be deployed in system context, which changes the path that the rasphone.pbk file is stored.
 
 
 ## App trigger
