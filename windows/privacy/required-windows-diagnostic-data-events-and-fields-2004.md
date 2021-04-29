@@ -1,6 +1,6 @@
 ---
 description: Use this article to learn more about what required Windows diagnostic data is gathered.
-title: Windows 10, version 20H2 and Windows 10, version 2004 required diagnostic events and fields (Windows 10)
+title: Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -17,7 +17,7 @@ ms.date: 04/28/2021
 ---
 
 
-# Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields
+# Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields
 
 
 > [!IMPORTANT]  
@@ -26,6 +26,7 @@ ms.date: 04/28/2021
 
  **Applies to**
 
+- Windows 10, version 21H1
 - Windows 10, version 20H2
 - Windows 10, version 2004
 

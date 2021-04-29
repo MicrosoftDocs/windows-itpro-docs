@@ -33,7 +33,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
-- [Windows 10, version 20H2 and Windows 10, version 2004 basic diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 basic diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
@@ -4648,7 +4648,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceMediaClassSAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.De~iceInventoryChange](#msdevicede~iceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
