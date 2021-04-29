@@ -1,5 +1,5 @@
 ---
-description: Use this article to learn more about what Windows 10 version 1809 diagnostic data is gathered at the basic level.
+description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
 title: Windows 10, version 1809 basic diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
 ms.prod: w10
@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 11/12/2020
+ms.date: 04/28/2021
 ms.reviewer:
 ---
 
@@ -40,6 +40,7 @@ You can learn more about Windows functional and diagnostic data through these ar
 - [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 - [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
+
 
 
 
@@ -306,272 +307,289 @@ This event lists the types of objects and how many of each exist on the client d
 
 The following fields are available:
 
-- **DatasourceApplicationFile_19ASetup**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_19H1**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_20H1**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_RS1**  An ID for the system, calculated by hashing hardware identifiers.
-- **DatasourceApplicationFile_RS2**  An ID for the system, calculated by hashing hardware identifiers.
-- **DatasourceApplicationFile_RS3**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_RS4**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_RS5**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_TH1**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_TH2**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_19ASetup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_19H1**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_20H1**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS1**  The total DataSourceDevicePnp objects targeting Windows 10 version 1607 on this device.
-- **DatasourceDevicePnp_RS2**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS3**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS4**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS5**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_TH1**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_TH2**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_19ASetup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_19H1**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_20H1**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_RS1**  The total DataSourceDriverPackage objects targeting Windows 10 version 1607 on this device.
-- **DatasourceDriverPackage_RS2**  The total DataSourceDriverPackage objects targeting Windows 10, version 1703 on this device.
-- **DatasourceDriverPackage_RS3**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_RS4**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_RS5**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_TH1**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_TH2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_19ASetup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_19H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_20H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS1**  The total DataSourceMatchingInfoBlock objects targeting Windows 10 version 1607 on this device.
-- **DataSourceMatchingInfoBlock_RS2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS3**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS4**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS5**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_TH1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_TH2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_19ASetup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_19H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_20H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS1**  The total DataSourceMatchingInfoPassive objects targeting Windows 10 version 1607 on this device.
-- **DataSourceMatchingInfoPassive_RS2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS3**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS4**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS5**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_TH1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_TH2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_19ASetup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_19H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_20H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS1**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1607 on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS2**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1703 on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS3**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1709 on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS4**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS5**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_TH1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_TH2**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_19ASetup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_19H1**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_20H1**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_RS1**  The total DatasourceSystemBios objects targeting Windows 10 version 1607 present on this device.
-- **DatasourceSystemBios_RS2**  The total DatasourceSystemBios objects targeting Windows 10 version 1703 present on this device.
-- **DatasourceSystemBios_RS3**  The total DatasourceSystemBios objects targeting Windows 10 version 1709 present on this device.
-- **DatasourceSystemBios_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_RS4**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_RS5**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_TH1**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_19ASetup**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS1**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS2**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS3**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_19ASetup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS1**  The total DecisionDevicePnp objects targeting Windows 10 version 1607 on this device.
-- **DecisionDevicePnp_RS2**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS3**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_19ASetup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS1**  The total DecisionDriverPackage objects targeting Windows 10 version 1607 on this device.
-- **DecisionDriverPackage_RS2**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS3**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_19ASetup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_RS1**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1607 present on this device.
-- **DecisionMatchingInfoBlock_RS2**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1703 present on this device.
-- **DecisionMatchingInfoBlock_RS3**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1709 present on this device.
-- **DecisionMatchingInfoBlock_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_RS4**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1803 present on this device.
-- **DecisionMatchingInfoBlock_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_19ASetup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_RS1**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1607 on this device.
-- **DecisionMatchingInfoPassive_RS2**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1703 on this device.
-- **DecisionMatchingInfoPassive_RS3**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1803 on this device.
-- **DecisionMatchingInfoPassive_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_19ASetup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_RS1**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1607 on this device.
-- **DecisionMatchingInfoPostUpgrade_RS2**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1703 on this device.
-- **DecisionMatchingInfoPostUpgrade_RS3**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1709 on this device.
-- **DecisionMatchingInfoPostUpgrade_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_19ASetup**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_19H1Setup**  The total DecisionMediaCenter objects targeting the next release of Windows on this device.
-- **DecisionMediaCenter_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_RS1**  The total DecisionMediaCenter objects targeting Windows 10 version 1607 present on this device.
-- **DecisionMediaCenter_RS2**  The total DecisionMediaCenter objects targeting Windows 10 version 1703 present on this device.
-- **DecisionMediaCenter_RS3**  The total DecisionMediaCenter objects targeting Windows 10 version 1709 present on this device.
-- **DecisionMediaCenter_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_RS4**  The total DecisionMediaCenter objects targeting Windows 10 version 1803 present on this device.
-- **DecisionMediaCenter_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_19ASetup**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
-- **DecisionSystemBios_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_19H1Setup**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
-- **DecisionSystemBios_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_RS1**  The total DecisionSystemBios objects targeting Windows 10 version 1607 on this device.
-- **DecisionSystemBios_RS2**  The total DecisionSystemBios objects targeting Windows 10 version 1703 on this device.
-- **DecisionSystemBios_RS3**  The total DecisionSystemBios objects targeting Windows 10 version 1709 on this device.
-- **DecisionSystemBios_RS3Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_RS4**  The total DecisionSystemBios objects targeting Windows 10 version, 1803 present on this device.
-- **DecisionSystemBios_RS4Setup**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
-- **DecisionSystemBios_RS5**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
-- **DecisionSystemBios_RS5Setup**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
-- **DecisionSystemBios_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionSystemProcessor_RS2**  The count of the number of this particular object type present on this device.
-- **DecisionTest_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionTest_RS1**  An ID for the system, calculated by hashing hardware identifiers.
-- **InventoryApplicationFile**  The count of the number of this particular object type present on this device.
-- **InventoryDeviceContainer**  A count of device container objects in cache.
-- **InventoryDevicePnp**  A count of device Plug and Play objects in cache.
-- **InventoryDriverBinary**  A count of driver binary objects in cache.
-- **InventoryDriverPackage**  A count of device objects in cache.
-- **InventoryLanguagePack**  The count of the number of this particular object type present on this device.
-- **InventoryMediaCenter**  The count of the number of this particular object type present on this device.
-- **InventorySystemBios**  The count of the number of this particular object type present on this device.
-- **InventorySystemMachine**  The count of the number of this particular object type present on this device.
-- **InventorySystemProcessor**  The count of the number of this particular object type present on this device.
-- **InventoryTest**  The count of the number of this particular object type present on this device.
-- **InventoryUplevelDriverPackage**  The count of the number of this particular object type present on this device.
-- **PCFP**  The count of the number of this particular object type present on this device.
-- **SystemMemory**  The count of the number of this particular object type present on this device.
-- **SystemProcessorCompareExchange**  The count of the number of this particular object type present on this device.
-- **SystemProcessorLahfSahf**  The count of the number of this particular object type present on this device.
+- **DatasourceApplicationFile_19ASetup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_19H1**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_19H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_20H1**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS1**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS2**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS3**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS3Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS4**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS4Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS5**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS5Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_TH1**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_TH2**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_19ASetup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_19H1**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_19H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_20H1**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS1**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS2**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS3**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS3Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS4**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS4Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS5**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS5Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_TH1**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_TH2**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_19ASetup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_19H1**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_19H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_20H1**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS1**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS2**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS3**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS3Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS4**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS4Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS5**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS5Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_TH1**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_TH2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_19ASetup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_19H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_19H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_20H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS3Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS4**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS4Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS5**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS5Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_TH1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_TH2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_19ASetup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_19H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_19H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_20H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS3Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS4**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS4Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS5**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS5Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_TH1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_TH2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_19ASetup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_19H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_19H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_20H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS3Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS4**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS4Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS5**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS5Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_TH1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_TH2**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_19ASetup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_19H1**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_19H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_20H1**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_20H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS1**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS2**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS3**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS3Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS4**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS4Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS5**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS5Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_TH1**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_TH2**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_19ASetup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_19H1**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_20H1**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS1**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS2**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS3**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS3Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS4**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS4Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS5**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS5Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_TH1**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_TH2**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_19ASetup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_19H1**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_20H1**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS1**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS2**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS3**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS3Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS4**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS4Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS5**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS5Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_TH1**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_TH2**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_19ASetup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_19H1**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_20H1**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS1**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS2**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS3**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS3Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS4**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS4Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS5**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS5Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_TH1**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_TH2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_19ASetup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_19H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_20H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS3Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS4**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS4Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS5**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS5Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_TH1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_TH2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_19ASetup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_19H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_20H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS3Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS4**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS4Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS5**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS5Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_TH1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_TH2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_19ASetup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_19H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_20H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS3Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS4**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS4Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS5**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS5Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_TH1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_TH2**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_19ASetup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_19H1**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_20H1**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS1**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS2**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS3**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS3Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS4**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS4Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS5**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS5Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_TH1**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_TH2**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_19ASetup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_19H1**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_20H1**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS3Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS4Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS5Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_TH2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessor_RS2**  The total number of objects of this type present on this device.
+- **DecisionTest_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionTest_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionTest_RS1**  The total number of objects of this type present on this device.
+- **InventoryApplicationFile**  The total number of objects of this type present on this device.
+- **InventoryDeviceContainer**  The total number of objects of this type present on this device.
+- **InventoryDevicePnp**  The total number of objects of this type present on this device.
+- **InventoryDriverBinary**  The total number of objects of this type present on this device.
+- **InventoryDriverPackage**  The total number of objects of this type present on this device.
+- **InventoryLanguagePack**  The total number of objects of this type present on this device.
+- **InventoryMediaCenter**  The total number of objects of this type present on this device.
+- **InventorySystemBios**  The total number of objects of this type present on this device.
+- **InventorySystemMachine**  The total number of objects of this type present on this device.
+- **InventorySystemProcessor**  The total number of objects of this type present on this device.
+- **InventoryTest**  The total number of objects of this type present on this device.
+- **InventoryUplevelDriverPackage**  The total number of objects of this type present on this device.
+- **PCFP**  The total number of objects of this type present on this device.
+- **SystemMemory**  The total number of objects of this type present on this device.
+- **SystemProcessorCompareExchange**  The total number of objects of this type present on this device.
+- **SystemProcessorLahfSahf**  The total number of objects of this type present on this device.
 - **SystemProcessorNx**  The total number of objects of this type present on this device.
 - **SystemProcessorPrefetchW**  The total number of objects of this type present on this device.
 - **SystemProcessorSse2**  The total number of objects of this type present on this device.
-- **SystemTouch**  The count of the number of this particular object type present on this device.
+- **SystemTouch**  The total number of objects of this type present on this device.
 - **SystemWim**  The total number of objects of this type present on this device.
-- **SystemWindowsActivationStatus**  The count of the number of this particular object type present on this device.
+- **SystemWindowsActivationStatus**  The total number of objects of this type present on this device.
 - **SystemWlan**  The total number of objects of this type present on this device.
-- **Wmdrm_19ASetup**  The count of the number of this particular object type present on this device.
-- **Wmdrm_19H1**  The count of the number of this particular object type present on this device.
-- **Wmdrm_19H1Setup**  The total Wmdrm objects targeting the next release of Windows on this device.
-- **Wmdrm_20H1**  The count of the number of this particular object type present on this device.
-- **Wmdrm_20H1Setup**  The count of the number of this particular object type present on this device.
-- **Wmdrm_RS1**  An ID for the system, calculated by hashing hardware identifiers.
-- **Wmdrm_RS2**  An ID for the system, calculated by hashing hardware identifiers.
-- **Wmdrm_RS3**  An ID for the system, calculated by hashing hardware identifiers.
-- **Wmdrm_RS3Setup**  The count of the number of this particular object type present on this device.
-- **Wmdrm_RS4**  The total Wmdrm objects targeting Windows 10, version 1803 present on this device.
-- **Wmdrm_RS4Setup**  The count of the number of this particular object type present on this device.
-- **Wmdrm_RS5**  The count of the number of this particular object type present on this device.
-- **Wmdrm_RS5Setup**  The count of the number of this particular object type present on this device.
-- **Wmdrm_TH1**  The count of the number of this particular object type present on this device.
-- **Wmdrm_TH2**  The count of the number of this particular object type present on this device.
+- **Wmdrm_19ASetup**  The total number of objects of this type present on this device.
+- **Wmdrm_19H1**  The total number of objects of this type present on this device.
+- **Wmdrm_19H1Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_20H1**  The total number of objects of this type present on this device.
+- **Wmdrm_20H1Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_21H1Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_RS1**  The total number of objects of this type present on this device.
+- **Wmdrm_RS2**  The total number of objects of this type present on this device.
+- **Wmdrm_RS3**  The total number of objects of this type present on this device.
+- **Wmdrm_RS3Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_RS4**  The total number of objects of this type present on this device.
+- **Wmdrm_RS4Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_RS5**  The total number of objects of this type present on this device.
+- **Wmdrm_RS5Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_TH1**  The total number of objects of this type present on this device.
+- **Wmdrm_TH2**  The total number of objects of this type present on this device.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileAdd
@@ -1117,6 +1135,30 @@ The following fields are available:
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 
 
+### Microsoft.Windows.Appraiser.General.DecisionSModeStateAdd
+
+This event sends true/false compatibility decision data about the S mode state. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the Appraiser file that is generating the events.
+- **Blocking**  Appraiser decision about eligibility to upgrade.
+- **LockdownMode**  S mode lockdown mode.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSModeStateStartSync
+
+The DecisionSModeStateStartSync event indicates that a new set of DecisionSModeStateAdd events will be sent. This event is used to make compatibility decisions about the S mode state. Microsoft uses this information to understand and address problems regarding the S mode state for computers receiving updates. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the Appraiser file that is generating the events.
+
+
 ### Microsoft.Windows.Appraiser.General.DecisionSystemBiosAdd
 
 This event sends compatibility decision data about the BIOS to help keep Windows up to date.
@@ -1151,6 +1193,127 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemDiskSizeAdd
+
+This event indicates that this object type was added. This data refers to the Disk size in the device. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Blocking**  Appraiser decision during evaluation of hardware requirements during OS upgrade.
+- **TotalSize**  Total disk size in Mb.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemDiskSizeStartSync
+
+Start sync event for physical disk size data. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemProcessorCpuCoresAdd
+
+This data attribute refers to the number of Cores a CPU supports. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Blocking**  The Appraisal decision about eligibility to upgrade.
+- **CpuCores**  Number of CPU Cores.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemProcessorCpuCoresStartSync
+
+This event signals the start of telemetry collection for CPU cores in Appraiser. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemProcessorCpuSpeedAdd
+
+This event sends compatibility decision data about the CPU, to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Blocking**  Appraiser OS eligibility decision.
+- **Mhz**  CPU speed in MHz.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemProcessorCpuSpeedStartSync
+
+This event collects data for CPU speed in MHz. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionTpmVersionAdd
+
+This event collects data about the Trusted Platform Module (TPM) in the device. TPM technology is designed to provide hardware-based, security-related functions. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Blocking**  Appraiser upgradeability decision based on the device's TPM support.
+- **TpmVersionInfo**  The version of Trusted Platform Module (TPM) technology in the device.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionTpmVersionStartSync
+
+The DecisionTpmVersionStartSync event indicates that a new set of DecisionTpmVersionAdd events will be sent. This event is used to make compatibility decisions about the TPM. Microsoft uses this information to understand and address problems regarding the TPM for computers receiving updates. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionUefiSecureBootAdd
+
+This event collects information about data on support and state of UEFI Secure boot. UEFI is a verification mechanism for ensuring that code launched by firmware is trusted. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Blocking**  Appraiser upgradeability decision when checking for UEFI support.
+- **SecureBootCapable**  Is UEFI supported?
+- **SecureBootEnabled**  Is UEFI enabled?
+
+
+### Microsoft.Windows.Appraiser.General.DecisionUefiSecureBootStartSync
+
+Start sync event data for UEFI Secure boot. UEFI is a verification mechanism for ensuring that code launched by firmware is trusted. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
 
 
 ### Microsoft.Windows.Appraiser.General.GatedRegChange
@@ -2533,7 +2696,8 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
-## Common Data Fields
+
+## Common data fields
 
 ### Ms.Device.DeviceInventoryChange
 
@@ -2541,11 +2705,12 @@ Describes the installation state for all hardware and software components availa
 
 The following fields are available:
 
-- **action** The change that was invoked on a device inventory object.
-- **inventoryId** Device ID used for Compatibility testing
-- **objectInstanceId** Object identity which is unique within the device scope.
-- **objectType** Indicates the object type that the event applies to.
-- **syncId** A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+- **action**  The change that was invoked on a device inventory object.
+- **inventoryId**  Device ID used for Compatibility testing
+- **objectInstanceId**  Object identity which is unique within the device scope.
+- **objectType**  Indicates the object type that the event applies to.
+- **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+
 
 ## Compatibility events
 
@@ -2896,13 +3061,13 @@ This event sends data about the connectivity status of the Connected User Experi
 
 The following fields are available:
 
-- **CensusExitCode**  Last exit code of the Census task.
-- **CensusStartTime**  Time of last Census run.
-- **CensusTaskEnabled**  True if Census is enabled, false otherwise.
-- **LastConnectivityLossTime**  Retrieves the last time the device lost free network.
-- **NetworkState**  The network state of the device.
+- **CensusExitCode**  Returns last execution codes from census client run.
+- **CensusStartTime**  Returns timestamp corresponding to last successful census run.
+- **CensusTaskEnabled**  Returns Boolean value for the census task (Enable/Disable) on client machine.
+- **LastConnectivityLossTime**  The FILETIME at which the last free network loss occurred.
+- **NetworkState**  Retrieves the network state: 0 = No network. 1 = Restricted network. 2 = Free network.
 - **NoNetworkTime**  Retrieves the time spent with no network (since the last time) in seconds.
-- **RestrictedNetworkTime**  Retrieves the time spent on a metered (cost restricted) network in seconds.
+- **RestrictedNetworkTime**  The total number of seconds with restricted network during this heartbeat period.
 
 
 ### TelClientSynthetic.HeartBeat_5
@@ -3723,6 +3888,80 @@ The following fields are available:
 
 ## DISM events
 
+### Microsoft.Windows.StartRep.DISMLatesInstalledLCU
+
+This event indicates that LCU is being uninstalled by DISM. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **DISMInstalledLCUPackageName**  Package name of LCU that's uninstalled by using DISM
+
+
+### Microsoft.Windows.StartRep.DISMPendingInstall
+
+This event indicates that installation for the package is pending during recovery session. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **DISMPendingInstallPackageName**  The name of the pending package.
+
+
+### Microsoft.Windows.StartRep.DISMRevertPendingActions
+
+This event indicates that the revert pending packages operation has been completed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The result from the operation to revert pending packages.
+
+
+### Microsoft.Windows.StartRep.DISMUninstallLCU
+
+This event indicates the uninstall operation. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The error code that is being reported by DISM.
+
+
+### Microsoft.Windows.StartRep.SRTRepairActionEnd
+
+This event indicates that the SRT Repair has been completed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The error code that is reported.
+- **SRTRepairAction**  The action that was taken by SRT.
+
+
+### Microsoft.Windows.StartRep.SRTRepairActionStart
+
+This event sends data when SRT repair has started. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **SRTRepairAction**  The action that is being taken by SRT.
+
+
+### Microsoft.Windows.StartRep.SRTRootCauseDiagEnd
+
+This event sends data when the root cause operation has completed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The final result code for the root cause operation.
+- **SRTRootCauseDiag**  The name of the root cause operation that ran.
+
+
+### Microsoft.Windows.StartRep.SRTRootCauseDiagStart
+
+This event indicates that a diagnostic in the recovery environment has been initiated. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **SRTRootCauseDiag**  The name of a specific diagnostic.
+
+
 ### Microsoft.Windows.StartRepairCore.DISMLatestInstalledLCU
 
 The DISM Latest Installed LCU sends information to report result of search for latest installed LCU after last successful boot. The data collected with this event is used to help keep Windows up to date, secure, and performing properly.
@@ -4409,7 +4648,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceMediaClassSAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+This event includes fields from [Ms.Device.De~iceInventoryChange](#msdevicede~iceinventorychange).
 
 The following fields are available:
 
@@ -4445,7 +4684,7 @@ The following fields are available:
 - **HWID**  A list of hardware IDs for the device.
 - **Inf**  The name of the INF file (possibly renamed by the OS, such as oemXX.inf).
 - **InstallDate**  The date of the most recent installation of the device on the machine.
-- **InstallState**  The device installation state.  One of these values: https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx
+- **InstallState**  The device installation state. For a list of values, see: [Device Install State](https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx)
 - **InventoryVersion**  The version number of the inventory process generating the events.
 - **LowerClassFilters**  The identifiers of the Lower Class filters installed for the device.
 - **LowerFilters**  The identifiers of the Lower filters installed for the device.
@@ -4651,8 +4890,8 @@ The following fields are available:
 - **Model**  Model and sub-model of the memory
 - **Slot**  Slot to which the DRAM is plugged into the motherboard.
 - **Speed**  The configured memory slot speed in MHz.
-- **Type**  Reports DDR, etc. as an enumeration value as per the DMTF SMBIOS standard version 3.3.0, section 7.18.2.
-- **TypeDetails**  Reports Non-volatile, etc. as a bit flag enumeration per DMTF SMBIOS standard version 3.3.0, section 7.18.3.
+- **Type**  Reports DDR as an enumeration value as per the DMTF SMBIOS standard version 3.3.0, section 7.18.2.
+- **TypeDetails**  Reports Non-volatile as a bit flag enumeration as per the DMTF SMBIOS standard version 3.3.0, section 7.18.3.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoRemove
@@ -4718,248 +4957,6 @@ The following fields are available:
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeAddInStartSync
 
 This event indicates that a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersAdd
-
-This event provides data on the Office identifiers. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **OAudienceData**  Sub-identifier for Microsoft Office release management, identifying the pilot group for a device
-- **OAudienceId**  Microsoft Office identifier for Microsoft Office release management, identifying the pilot group for a device
-- **OMID**  Identifier for the Office SQM Machine
-- **OPlatform**  Whether the installed Microsoft Office product is 32-bit or 64-bit
-- **OTenantId**  Unique GUID representing the Microsoft O365 Tenant
-- **OVersion**  Installed version of Microsoft Office. For example, 16.0.8602.1000
-- **OWowMID**  Legacy Microsoft Office telemetry identifier (SQM Machine ID) for WoW systems (32-bit Microsoft Office on 64-bit Windows)
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsAdd
-
-This event provides data on Office-related Internet Explorer features. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **OIeFeatureAddon**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_ADDON_MANAGEMENT feature lets applications hosting the WebBrowser Control to respect add-on management selections made using the Add-on Manager feature of Internet Explorer. Add-ons disabled by the user or by administrative group policy will also be disabled in applications that enable this feature.
-- **OIeMachineLockdown**  Flag indicating which Microsoft Office products have this setting enabled. When the FEATURE_LOCALMACHINE_LOCKDOWN feature is enabled, Internet Explorer applies security restrictions on content loaded from the user's local machine, which helps prevent malicious behavior involving local files.
-- **OIeMimeHandling**  Flag indicating which Microsoft Office products have this setting enabled. When the FEATURE_MIME_HANDLING feature control is enabled, Internet Explorer handles MIME types more securely. Only applies to Windows Internet Explorer 6 for Windows XP Service Pack 2 (SP2)
-- **OIeMimeSniffing**  Flag indicating which Microsoft Office products have this setting enabled. Determines a file's type by examining its bit signature. Windows Internet Explorer uses this information to determine how to render the file. The FEATURE_MIME_SNIFFING feature, when enabled, allows to be set differently for each security zone by using the URLACTION_FEATURE_MIME_SNIFFING URL action flag
-- **OIeNoAxInstall**  Flag indicating which Microsoft Office products have this setting enabled. When a webpage attempts to load or install an ActiveX control that isn't already installed, the FEATURE_RESTRICT_ACTIVEXINSTALL feature blocks the request. When a webpage tries to load or install an ActiveX control that isn't already installed, the FEATURE_RESTRICT_ACTIVEXINSTALL feature blocks the request
-- **OIeNoDownload**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_RESTRICT_FILEDOWNLOAD feature blocks file download requests that navigate to a resource, that display a file download dialog box, or that are not initiated explicitly by a user action (for example, a mouse click or key press). Only applies to Windows Internet Explorer 6 for Windows XP Service Pack 2 (SP2)
-- **OIeObjectCaching**  Flag indicating which Microsoft Office products have this setting enabled. When enabled, the FEATURE_OBJECT_CACHING feature prevents webpages from accessing or instantiating ActiveX controls cached from different domains or security contexts
-- **OIePasswordDisable**  Flag indicating which Microsoft Office products have this setting enabled. After Windows Internet Explorer 6 for Windows XP Service Pack 2 (SP2), Internet Explorer no longer allows usernames and passwords to be specified in URLs that use the HTTP or HTTPS protocols. URLs using other protocols, such as FTP, still allow usernames and passwords
-- **OIeSafeBind**  Flag indicating which Microsoft Office products have this setting enabled.  The FEATURE_SAFE_BINDTOOBJECT feature performs additional safety checks when calling MonikerBindToObject to create and initialize Microsoft ActiveX controls. Specifically, prevent the control from being created if COMPAT_EVIL_DONT_LOAD is in the registry for the control
-- **OIeSecurityBand**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_SECURITYBAND feature controls the display of the Internet Explorer Information bar. When enabled, the Information bar appears when file download or code installation is restricted
-- **OIeUncSaveCheck**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_UNC_SAVEDFILECHECK feature enables the Mark of the Web (MOTW) for local files loaded from network locations that have been shared by using the Universal Naming Convention (UNC)
-- **OIeValidateUrl**  Flag indicating which Microsoft Office products have this setting enabled. When enabled, the FEATURE_VALIDATE_NAVIGATE_URL feature control prevents Windows Internet Explorer from navigating to a badly formed URL
-- **OIeWebOcPopup**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_WEBOC_POPUPMANAGEMENT feature allows applications hosting the WebBrowser Control to receive the default Internet Explorer pop-up window management behavior
-- **OIeWinRestrict**  Flag indicating which Microsoft Office products have this setting enabled. When enabled, the FEATURE_WINDOW_RESTRICTIONS feature adds several restrictions to the size and behavior of popup windows
-- **OIeZoneElevate**  Flag indicating which Microsoft Office products have this setting enabled. When enabled, the FEATURE_ZONE_ELEVATION feature prevents pages in one zone from navigating to pages in a higher security zone unless the navigation is generated by the user
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsAdd
-
-This event provides insight data on the installed Office products. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **OfficeApplication**  The name of the Office application.
-- **OfficeArchitecture**  The bitness of the Office application.
-- **OfficeVersion**  The version of the Office application.
-- **Value**  The insights collected about this entity.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsRemove
-
-This event indicates that the particular data object represented by the objectInstanceId is no longer present. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsStartSync
-
-This diagnostic event indicates that a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsAdd
-
-This event describes all installed Office products. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **OC2rApps**  A GUID the describes the Office Click-To-Run apps
-- **OC2rSkus**  Comma-delimited list (CSV) of Office Click-To-Run products installed on the device. For example, Office 2016 ProPlus
-- **OMsiApps**  Comma-delimited list (CSV) of Office MSI products installed on the device. For example, Microsoft Word
-- **OProductCodes**  A GUID that describes the Office MSI products
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeSettingsAdd
-
-This event describes various Office settings. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **BrowserFlags**  Browser flags for Office-related products.
-- **ExchangeProviderFlags**  Provider policies for Office Exchange.
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **SharedComputerLicensing**  Office shared computer licensing policies.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeSettingsStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBAAdd
-
-This event provides a summary rollup count of conditions encountered while performing a local scan of Office files, analyzing for known VBA programmability compatibility issues between legacy office version and ProPlus, and between 32 and 64-bit versions. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **Design**  Count of files with design issues found.
-- **Design_x64**  Count of files with 64 bit design issues found.
-- **DuplicateVBA**  Count of files with duplicate VBA code.
-- **HasVBA**  Count of files with VBA code.
-- **Inaccessible**  Count of files that were inaccessible for scanning.
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **Issues**  Count of files with issues detected.
-- **Issues_x64**  Count of files with 64-bit issues detected.
-- **IssuesNone**  Count of files with no issues detected.
-- **IssuesNone_x64**  Count of files with no 64-bit issues detected.
-- **Locked**  Count of files that were locked, preventing scanning.
-- **NoVBA**  Count of files with no VBA inside.
-- **Protected**  Count of files that were password protected, preventing scanning.
-- **RemLimited**  Count of files that require limited remediation changes.
-- **RemLimited_x64**  Count of files that require limited remediation changes for 64-bit issues.
-- **RemSignificant**  Count of files that require significant remediation changes.
-- **RemSignificant_x64**  Count of files that require significant remediation changes for 64-bit issues.
-- **Score**  Overall compatibility score calculated for scanned content.
-- **Score_x64**  Overall 64-bit compatibility score calculated for scanned content.
-- **Total**  Total number of files scanned.
-- **Validation**  Count of files that require additional manual validation.
-- **Validation_x64**  Count of files that require additional manual validation for 64-bit issues.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARemove
-
-This event indicates that the particular data object represented by the objectInstanceId is no longer present. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARuleViolationsAdd
-
-This event provides data on Microsoft Office VBA rule violations, including a rollup count per violation type, giving an indication of remediation requirements for an organization. The event identifier is a unique GUID, associated with the validation rule. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **Count**  Count of total Microsoft Office VBA rule violations
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARuleViolationsRemove
-
-This event indicates that the particular data object represented by the objectInstanceId is no longer present. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARuleViolationsStartSync
-
-This event indicates that a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBAStartSync
-
-This diagnostic event indicates that a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -5037,16 +5034,8 @@ This event indicates that this particular data object represented by the objectI
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 
+
 ## Kernel events
-
-### IO
-
-This event indicates the number of bytes read from or read by the OS and written to or written by the OS upon system startup.
-
-The following fields are available:
-
-- **BytesRead**  The total number of bytes read from or read by the OS upon system startup.
-- **BytesWritten**  The total number of bytes written to or written by the OS upon system startup.
 
 ### Microsoft.Windows.Kernel.BootEnvironment.OsLaunch
 
@@ -5627,7 +5616,7 @@ The following fields are available:
 - **winInetError**  The HResult of the operation.
 
 
-## Other events
+## ONNX runtime events
 
 ### Microsoft.ML.ONNXRuntime.ProcessInfo
 
@@ -5654,6 +5643,21 @@ The following fields are available:
 - **totalRuns**  Total number of running/evaluation from last time.
 
 
+## Other events
+
+### Microsoft.ServerManagementExperience.Gateway.Service.ManagedNodeProperties
+
+This is a periodic rundown event that contains more detailed information about the nodes added to this Windows Admin Center gateway for management.
+
+The following fields are available:
+
+- **nodeId**  The nodeTypeId concatenated with the hostname or IP address that gateway uses to connect to this node.
+- **nodeOperatingSystem**  A user friendly description of the node's OS version.
+- **nodeOSVersion**  A major or minor build version string for the node's OS.
+- **nodeTypeId**  A string that distinguishes between a connection target, whether it is a client, server, cluster or a hyper-converged cluster.
+- **otherProperties**  Contains a JSON object with variable content and may contain: "nodes": a list of host names or IP addresses of the servers belonging to a cluster, "aliases": the alias if it is set for this connection, "lastUpdatedTime": the number of milliseconds since Unix epoch when this connection was last updated, "ncUri", "caption", "version", "productType", "networkName", "operatingSystem", "computerManufacturer", "computerModel", "isS2dEnabled". This JSON object is formatted as an quotes-escaped string.
+
+
 ### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
 
 This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
@@ -5668,78 +5672,107 @@ The following fields are available:
 - **szBatteryInfo**  Battery performance data.
 
 
-### Microsoft.Windows.StartRep.DISMLatesInstalledLCU
+### Microsoft.Windows.Deployment.Imaging.AppExit
 
-This event indicates that LCU is being uninstalled by DISM. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **DISMInstalledLCUPackageName**  Package name of LCU that's uninstalled by using DISM
-
-
-### Microsoft.Windows.StartRep.DISMPendingInstall
-
-This event indicates that installation for the package is pending during recovery session. The data collected with this event is used to help keep Windows up to date.
+This event is sent on imaging application exit. The data collected with this event is used to help keep Windows up to date.
 
 The following fields are available:
 
-- **DISMPendingInstallPackageName**  The name of the pending package.
+- **hr**  HResult returned from app exit.
+- **sId**  Session Id of the application.
+- **totalTimeInMs**  Total time taken in Ms.
 
 
-### Microsoft.Windows.StartRep.DISMRevertPendingActions
+### Microsoft.Windows.Deployment.Imaging.AppInvoked
 
-This event indicates that the revert pending packages operation has been completed. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ErrorCode**  The result from the operation to revert pending packages.
-
-
-### Microsoft.Windows.StartRep.DISMUninstallLCU
-
-This event indicates the uninstall operation. The data collected with this event is used to help keep Windows up to date.
+This event is sent when the app for image creation is invoked. The data collected with this event is used to help keep Windows up to date.
 
 The following fields are available:
 
-- **ErrorCode**  The error code that is being reported by DISM.
+- **branch**  Corresponding branch for the image.
+- **isInDbg**  Whether the app is in debug mode or not.
+- **isWSK**  Whether the app is building images using WSK or not.
+- **sId**  Id of the session.
 
 
-### Microsoft.Windows.StartRep.SRTRepairActionEnd
+### Microsoft.Windows.Deployment.Imaging.Failed
 
-This event indicates that the SRT Repair has been completed. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ErrorCode**  The error code that is reported.
-- **SRTRepairAction**  The action that was taken by SRT.
-
-
-### Microsoft.Windows.StartRep.SRTRepairActionStart
-
-This event sends data when SRT repair has started. The data collected with this event is used to help keep Windows up to date.
+This failure event is sent when imaging fails. The data collected with this event is used to help keep Windows up to date.
 
 The following fields are available:
 
-- **SRTRepairAction**  The action that is being taken by SRT.
+- **cs**  Line that failed.
+- **ec**  Execution status.
+- **hr**  HResult returned.
+- **msg**  Message returned.
+- **stack**  Stack information.
 
 
-### Microsoft.Windows.StartRep.SRTRootCauseDiagEnd
+### Microsoft.Windows.Deployment.Imaging.ImagingCompleted
 
-This event sends data when the root cause operation has completed. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ErrorCode**  The final result code for the root cause operation.
-- **SRTRootCauseDiag**  The name of the root cause operation that ran.
-
-
-### Microsoft.Windows.StartRep.SRTRootCauseDiagStart
-
-This event indicates that a diagnostic in the recovery environment has been initiated. The data collected with this event is used to help keep Windows up to date.
+This event is sent when imaging is done. The data collected with this event is used to help keep Windows up to date.
 
 The following fields are available:
 
-- **SRTRootCauseDiag**  The name of a specific diagnostic.
+- **appExecTimeInMs**  Execution time in milliseconds.
+- **buildInfo**  Information of the build.
+- **compDbPrepTimeInMs**  Preparation time in milliseconds for the CompDBs.
+- **executeUpdateTimeInMs**  Update execution time in milliseconds.
+- **fileStageTimeInMs**  File staging time in milliseconds.
+- **hr**  HResult returned from imaging.
+- **imgSizeInMB**  Image size in MB.
+- **mutexWaitTimeInMs**  Mutex wait time in milliseconds.
+- **prepareUpdateTimeInMs**  Update preparation time in milliseconds.
+- **sId**  Session id for the application.
+- **totalRunTimeInMs**  Total running time in milliseconds.
+- **updateOsTimeInMs**  Time in milliseconds spent in update OS.
+
+
+### Microsoft.Windows.Deployment.Imaging.ImagingStarted
+
+This event is sent when an imaging session starts. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **arch**  Architecture of the image.
+- **device**  Device type for which the image is built.
+- **imgFormat**  Format of the image.
+- **imgSkip**  Parameter for skipping certain image types when building.
+- **imgType**  The type of image being built.
+- **lang**  Language of the image being built.
+- **prod**  Image product type.
+- **sId**  Session id for the app.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSLaunch
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CommandLine**  The command line used to launch RUXIMICS.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncExit
+
+This event is sent when RUXIM completes checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **hrInitialize**  Error, if any, that occurred while initializing OneSettings.
+- **hrQuery**  Error, if any, that occurred while retrieving UX interaction campaign data from OneSettings.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncLaunch
+
+This event is sent when RUXIM begins checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
+
 
 
 ## Privacy consent logging events
@@ -8220,10 +8253,60 @@ The following fields are available:
 
 ## Windows Update CSP events
 
+### Microsoft.Windows.UpdateCsp.ExecuteRollBackFeatureFailed
+
+This event sends basic telemetry on the failure of the Feature Rollback. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **current**  Result of currency check.
+- **dismOperationSucceeded**  Dism uninstall operation status.
+- **hResult**  Failure error code.
+- **oSVersion**  Build number of the device.
+- **paused**  Indicates whether the device is paused.
+- **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
+- **wUfBConnected**  Result of WUfB connection check.
+
+
+### Microsoft.Windows.UpdateCsp.ExecuteRollBackFeatureNotApplicable
+
+This event sends basic telemetry on whether Feature Rollback (rolling back features updates) is applicable to a device. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **current**  Result of currency check.
+- **dismOperationSucceeded**  Dism uninstall operation status.
+- **oSVersion**  Build number of the device.
+- **paused**  Indicates whether the device is paused.
+- **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
+- **wUfBConnected**  Result of WUfB connection check.
+
+
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackFeatureStarted
 
 This event sends basic information indicating that Feature Rollback has started. The data collected with this event is used to help keep Windows secure and up to date.
 
+
+
+### Microsoft.Windows.UpdateCsp.ExecuteRollBackFeatureSucceeded
+
+This event sends basic telemetry on the success of the rollback of feature updates. The data collected with this event is used to help keep Windows secure and up to date.
+
+
+
+### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualityFailed
+
+This event sends basic telemetry on the failure of the rollback of the Quality/LCU builds. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **current**  Result of currency check.
+- **dismOperationSucceeded**  Dism uninstall operation status.
+- **hResult**  Failure Error code.
+- **oSVersion**  Build number of the device.
+- **paused**  Indicates whether the device is paused.
+- **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
+- **wUfBConnected**  Result of Windows Update for Business connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualityNotApplicable
@@ -8238,6 +8321,12 @@ The following fields are available:
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
 - **wUfBConnected**  Result of WUfB connection check.
+
+
+### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualitySucceeded
+
+This event sends basic telemetry on the success of the rollback of the Quality/LCU builds. The data collected with this event is used to help keep Windows secure and up to date.
+
 
 
 ## Windows Update Delivery Optimization events
@@ -9530,15 +9619,15 @@ The following fields are available:
 - **UpdateHealthToolsPushCurrentStep**  The current step for the push notification
 
 
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoAADJoin
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoDSSJoin
 
-This event indicates that the device is not AAD joined so service stops. The data collected with this event is used to help keep Windows secure and up to date.
+This event is sent when the device is not joined to AAD. The data collected with this event is used to help keep Windows up to date and secure.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  Current package version of UpdateHealthTools.
+- **GlobalEventCounter**  The global event counter for counting total events for the provider.
+- **PackageVersion**  The version for the current package.
 
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceStarted

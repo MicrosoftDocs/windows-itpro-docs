@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 11/12/2020
+ms.date: 04/28/2021
 ms.reviewer:
 ---
 
@@ -52,31 +52,31 @@ This event lists the types of objects and how many of each exist on the client d
 
 The following fields are available:
 
-- **DatasourceApplicationFile_RS3**  The total DecisionApplicationFile objects targeting the next release of Windows on this device.
-- **DatasourceDevicePnp_RS3**  The total DatasourceDevicePnp objects targeting the next release of Windows on this device.
-- **DatasourceDriverPackage_RS3**  The total DatasourceDriverPackage objects targeting the next release of Windows on this device.
-- **DataSourceMatchingInfoBlock_RS3**  The total DataSourceMatchingInfoBlock objects targeting the next release of Windows on this device.
-- **DataSourceMatchingInfoPassive_RS3**  The total DataSourceMatchingInfoPassive objects targeting the next release of Windows on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS3**  The total DataSourceMatchingInfoPostUpgrade objects targeting the next release of Windows on this device.
-- **DatasourceSystemBios_RS3**  The total DatasourceSystemBios objects targeting the next release of Windows on this device.
-- **DecisionApplicationFile_RS3**  The total DecisionApplicationFile objects targeting the next release of Windows on this device.
-- **DecisionDevicePnp_RS2**  The count of DataSourceMatchingInfoBlock objects present on this machine targeting the next release of Windows
-- **DecisionDevicePnp_RS3**  The total DecisionDevicePnp objects targeting the next release of Windows on this device.
-- **DecisionDriverPackage_RS3**  The total DecisionDriverPackage objects targeting the next release of Windows on this device.
-- **DecisionMatchingInfoBlock_RS3**  The total DecisionMatchingInfoBlock objects targeting the next release of Windows on this device.
-- **DecisionMatchingInfoPassive_RS3**  The total DataSourceMatchingInfoPassive objects targeting the next release of Windows on this device.
-- **DecisionMatchingInfoPostUpgrade_RS3**  The total DecisionMatchingInfoPostUpgrade objects targeting the next release of Windows on this device.
-- **DecisionMediaCenter_RS3**  The total DecisionMediaCenter objects targeting the next release of Windows on this device.
-- **DecisionSystemBios_RS3**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
-- **InventoryLanguagePack**  The count of DecisionApplicationFile objects present on this machine targeting the next release of Windows
-- **InventorySystemBios**  The count of DecisionDevicePnp objects present on this machine targeting the next release of Windows
-- **PCFP**  The count of DecisionDriverPackage objects present on this machine targeting the next release of Windows
-- **SystemProcessorCompareExchange**  The count of DecisionMatchingInfoBlock objects present on this machine targeting the next release of Windows
+- **DatasourceApplicationFile_RS3**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS3**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS3**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS3**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS3**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS2**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS3**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS3**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS3**  The total number of objects of this type present on this device.
+- **InventoryLanguagePack**  The total number of objects of this type present on this device.
+- **InventorySystemBios**  The total number of objects of this type present on this device.
+- **PCFP**  The total number of objects of this type present on this device.
+- **SystemProcessorCompareExchange**  The total number of objects of this type present on this device.
 - **SystemProcessorNx**  The total number of objects of this type present on this device.
 - **SystemProcessorPrefetchW**  The total number of objects of this type present on this device.
 - **SystemProcessorSse2**  The total number of objects of this type present on this device.
 - **SystemWim**  The total number of objects of this type present on this device.
-- **SystemWindowsActivationStatus**  The count of DecisionSystemBios objects present on this machine targeting the next release of Windows
+- **SystemWindowsActivationStatus**  The total number of objects of this type present on this device.
 - **SystemWlan**  The total number of objects of this type present on this device.
 
 
@@ -2490,7 +2490,7 @@ The following fields are available:
 - **Enumerator**  Identifies the bus that enumerated the device.
 - **HWID**  A list of hardware IDs for the device. See [HWID](#hwid).
 - **Inf**  The name of the INF file (possibly renamed by the OS, such as oemXX.inf).
-- **InstallState**  The device installation state. For a list of values, see: https://msdn.microsoft.com/library/windows/hardware/ff543130.asp
+- **InstallState**  The device installation state. For a list of values, see: [Device Install State](https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx)
 - **InventoryVersion**  The version number of the inventory process generating the events.
 - **LowerClassFilters**  The identifiers of the Lower Class filters installed for the device.
 - **LowerFilters**  The identifiers of the Lower filters installed for the device.
@@ -2691,8 +2691,8 @@ The following fields are available:
 - **Model**  Model and sub-model of the memory
 - **Slot**  Slot to which the DRAM is plugged into the motherboard.
 - **Speed**  The configured memory slot speed in MHz.
-- **Type**  Reports DDR, etc. as an enumeration value as per the DMTF SMBIOS standard version 3.3.0, section 7.18.2.
-- **TypeDetails**  Reports Non-volatile, etc. as a bit flag enumeration per DMTF SMBIOS standard version 3.3.0, section 7.18.3.
+- **Type**  Reports DDR as an enumeration value as per the DMTF SMBIOS standard version 3.3.0, section 7.18.2.
+- **TypeDetails**  Reports Non-volatile as a bit flag enumeration per the DMTF SMBIOS standard version 3.3.0, section 7.18.3.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoStartSync
@@ -2718,84 +2718,6 @@ This event indicates that the particular data object represented by the objectIn
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeAddInStartSync
 
 This event indicates that a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersAdd
-
-This event provides data on the Office identifiers. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsAdd
-
-This event provides data on Office-related Internet Explorer features. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsAdd
-
-This event provides insight data on the installed Office products. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsRemove
-
-This event indicates that the particular data object represented by the objectInstanceId is no longer present. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsStartSync
-
-This diagnostic event indicates that a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsAdd
-
-This event describes all installed Office products. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeSettingsAdd
-
-This event describes various Office settings. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeSettingsStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARuleViolationsStartSync
-
-This event indicates that a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBAStartSync
-
-This diagnostic event indicates that a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
 
 
 
@@ -3606,133 +3528,6 @@ The following fields are available:
 - **Seconds**  The number of seconds the machine has been on.
 - **Ticks**  The number of system clock “ticks” the device has been on.
 - **Time**  The system time at which the event occurred.
-
-
-### Microsoft.Windows.Sediment.OSRSS.CheckingOneSettings
-
-This event indicates the parameters that the Operating System Remediation System Service (OSRSS) uses for a secure ping to Microsoft to help ensure Windows is up to date.
-
-The following fields are available:
-
-- **CustomVer**  The registry value for targeting.
-- **IsMetered**  TRUE if the machine is on a metered network.
-- **LastVer**  The version of the last successful run.
-- **ServiceVersionMajor**  The Major version information of the component.
-- **ServiceVersionMinor**  The Minor version information of the component.
-- **Time**  The system time at which the event occurred.
-
-
-### Microsoft.Windows.Sediment.OSRSS.DownloadingUrl
-
-This event provides information about the URL from which the Operating System Remediation System Service (OSRSS) is attempting to download. This information helps ensure Windows is up to date.
-
-The following fields are available:
-
-- **AttemptNumber**  The count indicating which download attempt is starting.
-- **ServiceVersionMajor**  The Major version information of the component.
-- **ServiceVersionMinor**  The Minor version information of the component.
-- **Time**  The system time at which the event occurred.
-- **Url**  The URL from which data was downloaded.
-
-
-### Microsoft.Windows.Sediment.OSRSS.DownloadSuccess
-
-This event indicates the Operating System Remediation System Service (OSRSS)  successfully download data from the indicated URL. This information helps ensure Windows is up to date.
-
-The following fields are available:
-
-- **ServiceVersionMajor**  The Major version information of the component.
-- **ServiceVersionMinor**  The Minor version information of the component.
-- **Time**  The system time at which the event occurred.
-- **Url**  The URL from which data was downloaded.
-
-
-### Microsoft.Windows.Sediment.OSRSS.Error
-
-This event indicates an error occurred in the Operating System Remediation System Service (OSRSS). The information provided helps ensure future upgrade/update attempts are more successful. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **FailureType**  The type of error encountered.
-- **FileName**  The code file in which the error occurred.
-- **HResult**  The failure error code.
-- **LineNumber**  The line number in the code file at which the error occurred.
-- **ServiceVersionMajor**  The Major version information of the component.
-- **ServiceVersionMinor**  The Minor version information of the component.
-- **Time**  The system time at which the event occurred.
-
-
-### Microsoft.Windows.Sediment.OSRSS.ExeSignatureValidated
-
-This event indicates the Operating System Remediation System Service (OSRSS) successfully validated the signature of an EXE from the indicated URL. The information provided helps ensure Windows is up to date.
-
-The following fields are available:
-
-- **ServiceVersionMajor**  The Major version information of the component.
-- **ServiceVersionMinor**  The Minor version information of the component.
-- **Time**  The system time at which the event occurred.
-- **Url**  The URL from which the validated EXE was downloaded.
-
-
-### Microsoft.Windows.Sediment.OSRSS.ExtractSuccess
-
-This event indicates that the Operating System Remediation System Service (OSRSS) successfully extracted downloaded content. The information provided helps ensure Windows is up to date.
-
-The following fields are available:
-
-- **ServiceVersionMajor**  The Major version information of the component.
-- **ServiceVersionMinor**  The Minor version information of the component.
-- **Time**  The system time at which the event occurred.
-- **Url**  The URL from which the successfully extracted content was downloaded.
-
-
-### Microsoft.Windows.Sediment.OSRSS.NewUrlFound
-
-This event indicates the Operating System Remediation System Service (OSRSS) succeeded in finding a new URL to download from. This helps ensure Windows is up to date.
-
-The following fields are available:
-
-- **ServiceVersionMajor**  The Major version information of the component.
-- **ServiceVersionMinor**  The Minor version information of the component.
-- **Time**  The system time at which the event occurred.
-- **Url**  The new URL from which content will be downloaded.
-
-
-### Microsoft.Windows.Sediment.OSRSS.ProcessCreated
-
-This event indicates the Operating System Remediation System Service (OSRSS) created a new process to execute content downloaded from the indicated URL. This information helps ensure Windows is up to date.
-
-The following fields are available:
-
-- **ServiceVersionMajor**  The Major version information of the component.
-- **ServiceVersionMinor**  The Minor version information of the component.
-- **Time**  The system time at which the event occurred.
-- **Url**  The new URL from which content will be executed.
-
-
-### Microsoft.Windows.Sediment.OSRSS.SelfUpdate
-
-This event returns metadata after Operating System Remediation System Service (OSRSS) successfully replaces itself with a new version. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ServiceVersionMajor**  The major version number for the component.
-- **ServiceVersionMinor**  The minor version number for the component.
-- **Time**  The system timestamp for when the event occurred.
-
-
-### Microsoft.Windows.Sediment.OSRSS.UrlState
-
-This event indicates the state the Operating System Remediation System Service (OSRSS) is in while attempting a download from the URL. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **Id**  A number identifying the URL
-- **ServiceVersionMajor**  Version info for the component
-- **ServiceVersionMinor**  Version info for the component
-- **StateData**  State-specific data, such as which attempt number for the download
-- **StateNumber**  A number identifying which state the URL is in (found, downloading, extracted, etc.)
-- **Time**  System timestamp the event was fired
 
 
 ### Microsoft.Windows.Sediment.ServiceInstaller.ApplicabilityCheckFailed
@@ -6465,6 +6260,22 @@ This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.
 The following fields are available:
 
 - **CommandLine**  The command line used to launch RUXIMICS.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncExit
+
+This event is sent when RUXIM completes checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **hrInitialize**  Error, if any, that occurred while initializing OneSettings.
+- **hrQuery**  Error, if any, that occurred while retrieving UX interaction campaign data from OneSettings.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncLaunch
+
+This event is sent when RUXIM begins checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
+
 
 
 ### Microsoft.Windows.WindowsUpdate.RUXIM.IHExit
