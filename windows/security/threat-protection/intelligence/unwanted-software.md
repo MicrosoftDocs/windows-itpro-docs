@@ -7,8 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -44,7 +44,7 @@ To prevent unwanted software infection, download software only from official web
 
 Use [Microsoft Edge](/microsoft-edge/deploy/index) when browsing the internet. Microsoft Edge includes additional protections that effectively block browser modifiers that can change your browser settings. Microsoft Edge also blocks known websites hosting unwanted software using [Windows Defender SmartScreen](/microsoft-edge/deploy/index) (also used by Internet Explorer).
 
-Enable [Microsoft Defender Antivirus](../microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md) in Windows 10. It provides real-time protection against threats and detects and removes known unwanted software.
+Enable [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) in Windows 10. It provides real-time protection against threats and detects and removes known unwanted software.
 
 Download [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201) for real-time protection in Windows 7 or Windows Vista.
 
