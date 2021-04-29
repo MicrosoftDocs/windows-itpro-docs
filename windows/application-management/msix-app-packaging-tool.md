@@ -11,7 +11,7 @@ ms.topic: article
 ms.date: 12/03/2018
 ms.reviewer: 
 manager: dansimp
-author: msfttracyp
+author: dansimp
 ---
 
 # Repackage existing win32 applications to the MSIX format
