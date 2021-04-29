@@ -25,6 +25,10 @@ In Windows 10, a number of features were added to auto-trigger VPN so users wonâ
 - Name-based trigger
 - Always On
 
+>[!NOTE]
+>Auto-triggered VPN connections will not work if Folder Redirection for %appdata% (C:\Users\username\AppData\Roaming) is enabled. Either Folder Redirection must be disabled for %appdata% or the auto-triggered VPN profile must be deployed in system context, that changes the path the rasphone.pbk file is stored.
+
+
 ## App trigger
 
 VPN profiles in Windows 10 can be configured to connect automatically on the launch of a specified set of applications. You can configure desktop or Universal Windows Platform (UWP) apps to trigger a VPN connection. You can also configure per-app VPN and specify traffic rules for each app. See [Traffic filters](vpn-security-features.md#traffic-filters) for more details.
