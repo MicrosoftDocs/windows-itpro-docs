@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: dansimplfin
+author: dansimp
 manager: dansimp
 audience: itpro
 ms.collection: 
