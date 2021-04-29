@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.localizationpriority: high
 audience: ITPro
 ms.author: siosulli
-author: DaniHalfin
+author: dansimplfin
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
