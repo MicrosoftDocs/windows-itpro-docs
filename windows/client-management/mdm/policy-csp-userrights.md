@@ -1004,7 +1004,7 @@ This security setting determines which service accounts are prevented from regis
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Deny log on as a service*
+-   GP English name: *Deny log on Locally*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
