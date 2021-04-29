@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Configure Windows 10 # < 60 chars
-summary: Find out how to apply custom configurations to Windows 10 devices. Windows 10 provides a number of features and methods to help you configure or lock down specific parts of Windows 10.  # < 160 chars
+title: Client management # < 60 chars
+summary: Find out how to apply custom configurations to Windows client devices. Windows provides a number of features and methods to help you configure or lock down specific parts of the Windows interface.  # < 160 chars
 
 metadata:
   title: Configure Windows 10 # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Find out how to apply custom configurations to Windows 10 devices. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn about the administrative tools, tasks and best practices for managing Windows clients across your enterprise. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
