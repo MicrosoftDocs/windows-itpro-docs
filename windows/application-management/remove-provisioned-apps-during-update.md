@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.author: dansimp
-author: msfttracyp
+author: dansimp
 ms.date: 05/25/2018
 ms.reviewer: 
 manager: dansimp

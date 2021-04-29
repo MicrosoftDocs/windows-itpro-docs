@@ -37,7 +37,7 @@ This guide assumes that baseline infrastructure exists which meets the requireme
 
 - A well-connected, working network
 - Internet access
-- Multi-factor Authentication Server to support MFA during Windows Hello for Business provisioning
+- Multi-factor Authentication is required during Windows Hello for Business provisioning
 - Proper name resolution, both internal and external names
 - Active Directory and an adequate number of domain controllers per site to support authentication
 - Active Directory Certificate Services 2012 or later
