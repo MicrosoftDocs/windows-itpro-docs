@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/28/2021
+ms.date: 04/29/2021
 ms.reviewer:
 ---
 
@@ -2395,7 +2395,7 @@ This event sends data about the current user's default preferences for browser a
 The following fields are available:
 
 - **CalendarType**  The calendar identifiers that are used to specify different calendars.
-- **DefaultApp**  The current uer's default program selected for the following extension or protocol: .html, .htm, .jpg, .jpeg, .png, .mp3, .mp4, .mov, .pdf.
+- **DefaultApp**  The current user's default program selected for the following extension or protocol: .html, .htm, .jpg, .jpeg, .png, .mp3, .mp4, .mov, .pdf.
 - **DefaultBrowserProgId**  The ProgramId of the current user's default browser.
 - **LongDateFormat**  The long date format the user has selected.
 - **ShortDateFormat**  The short date format the user has selected.
@@ -2883,6 +2883,80 @@ The following fields are available:
 - **updateName**  The name of the optional Windows Operation System feature being enabled or disabled.
 - **updateStartState**  A value indicating the state of the optional content before the operation started.
 - **updateTargetState**  A value indicating the desired state of the optional content.
+
+
+## Deployment events
+
+### Microsoft.Windows.Deployment.Imaging.AppExit
+
+This event is sent on imaging application exit. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **hr**  HResult returned from app exit.
+- **sId**  Session Id of the application.
+- **totalTimeInMs**  Total time taken in Ms.
+
+
+### Microsoft.Windows.Deployment.Imaging.AppInvoked
+
+This event is sent when the app for image creation is invoked. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **branch**  Corresponding branch for the image.
+- **isInDbg**  Whether the app is in debug mode or not.
+- **isWSK**  Whether the app is building images using WSK or not.
+- **sId**  Id of the session.
+
+
+### Microsoft.Windows.Deployment.Imaging.Failed
+
+This failure event is sent when imaging fails. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **cs**  Line that failed.
+- **ec**  Execution status.
+- **hr**  HResult returned.
+- **msg**  Message returned.
+- **stack**  Stack information.
+
+
+### Microsoft.Windows.Deployment.Imaging.ImagingCompleted
+
+This event is sent when imaging is done. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **appExecTimeInMs**  Execution time in milliseconds.
+- **buildInfo**  Information of the build.
+- **compDbPrepTimeInMs**  Preparation time in milliseconds for the CompDBs.
+- **executeUpdateTimeInMs**  Update execution time in milliseconds.
+- **fileStageTimeInMs**  File staging time in milliseconds.
+- **hr**  HResult returned from imaging.
+- **imgSizeInMB**  Image size in MB.
+- **mutexWaitTimeInMs**  Mutex wait time in milliseconds.
+- **prepareUpdateTimeInMs**  Update preparation time in milliseconds.
+- **sId**  Session id for the application.
+- **totalRunTimeInMs**  Total running time in milliseconds.
+- **updateOsTimeInMs**  Time in milliseconds spent in update OS.
+
+
+### Microsoft.Windows.Deployment.Imaging.ImagingStarted
+
+This event is sent when an imaging session starts. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **arch**  Architecture of the image.
+- **device**  Device type for which the image is built.
+- **imgFormat**  Format of the image.
+- **imgSkip**  Parameter for skipping certain image types when building.
+- **imgType**  The type of image being built.
+- **lang**  Language of the image being built.
+- **prod**  Image product type.
+- **sId**  Session id for the app.
 
 
 ## Deployment extensions
@@ -5672,109 +5746,6 @@ The following fields are available:
 - **szBatteryInfo**  Battery performance data.
 
 
-### Microsoft.Windows.Deployment.Imaging.AppExit
-
-This event is sent on imaging application exit. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **hr**  HResult returned from app exit.
-- **sId**  Session Id of the application.
-- **totalTimeInMs**  Total time taken in Ms.
-
-
-### Microsoft.Windows.Deployment.Imaging.AppInvoked
-
-This event is sent when the app for image creation is invoked. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **branch**  Corresponding branch for the image.
-- **isInDbg**  Whether the app is in debug mode or not.
-- **isWSK**  Whether the app is building images using WSK or not.
-- **sId**  Id of the session.
-
-
-### Microsoft.Windows.Deployment.Imaging.Failed
-
-This failure event is sent when imaging fails. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **cs**  Line that failed.
-- **ec**  Execution status.
-- **hr**  HResult returned.
-- **msg**  Message returned.
-- **stack**  Stack information.
-
-
-### Microsoft.Windows.Deployment.Imaging.ImagingCompleted
-
-This event is sent when imaging is done. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **appExecTimeInMs**  Execution time in milliseconds.
-- **buildInfo**  Information of the build.
-- **compDbPrepTimeInMs**  Preparation time in milliseconds for the CompDBs.
-- **executeUpdateTimeInMs**  Update execution time in milliseconds.
-- **fileStageTimeInMs**  File staging time in milliseconds.
-- **hr**  HResult returned from imaging.
-- **imgSizeInMB**  Image size in MB.
-- **mutexWaitTimeInMs**  Mutex wait time in milliseconds.
-- **prepareUpdateTimeInMs**  Update preparation time in milliseconds.
-- **sId**  Session id for the application.
-- **totalRunTimeInMs**  Total running time in milliseconds.
-- **updateOsTimeInMs**  Time in milliseconds spent in update OS.
-
-
-### Microsoft.Windows.Deployment.Imaging.ImagingStarted
-
-This event is sent when an imaging session starts. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **arch**  Architecture of the image.
-- **device**  Device type for which the image is built.
-- **imgFormat**  Format of the image.
-- **imgSkip**  Parameter for skipping certain image types when building.
-- **imgType**  The type of image being built.
-- **lang**  Language of the image being built.
-- **prod**  Image product type.
-- **sId**  Session id for the app.
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
-
-This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSLaunch
-
-This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-The following fields are available:
-
-- **CommandLine**  The command line used to launch RUXIMICS.
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncExit
-
-This event is sent when RUXIM completes checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **hrInitialize**  Error, if any, that occurred while initializing OneSettings.
-- **hrQuery**  Error, if any, that occurred while retrieving UX interaction campaign data from OneSettings.
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncLaunch
-
-This event is sent when RUXIM begins checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
-
-
-
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -6526,7 +6497,7 @@ The following fields are available:
 - **CurrentMobileOperator**  The mobile operator the device is currently connected to.
 - **DeferralPolicySources**  Sources for any update deferral policies defined (GPO = 0x10, MDM = 0x100, Flight = 0x1000, UX = 0x10000).
 - **DeferredUpdates**  Update IDs which are currently being deferred until a later time
-- **DeviceModel**  What is the device model.
+- **DeviceModel**  The device model.
 - **DriverError**  The error code hit during a driver scan. This is 0 if no error was encountered.
 - **DriverExclusionPolicy**  Indicates if the policy for not including drivers with Windows Update is enabled.
 - **DriverSyncPassPerformed**  Were drivers scanned this time?
@@ -9639,6 +9610,37 @@ The following fields are available:
 - **CV**  Correlation vector.
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of remediation.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSLaunch
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CommandLine**  The command line used to launch RUXIMICS.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncExit
+
+This event is sent when RUXIM completes checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **hrInitialize**  Error, if any, that occurred while initializing OneSettings.
+- **hrQuery**  Error, if any, that occurred while retrieving UX interaction campaign data from OneSettings.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncLaunch
+
+This event is sent when RUXIM begins checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
+
 
 
 ## Windows Update mitigation events

@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/28/2021
+ms.date: 04/29/2021
 ---
 
 
@@ -2614,7 +2614,7 @@ This event sends data about the current user's default preferences for browser a
 The following fields are available:
 
 - **CalendarType**  The calendar identifiers that are used to specify different calendars.
-- **DefaultApp**  The current uer's default program selected for the following extension or protocol: .html, .htm, .jpg, .jpeg, .png, .mp3, .mp4, .mov, .pdf.
+- **DefaultApp**  The current user's default program selected for the following extension or protocol: .html, .htm, .jpg, .jpeg, .png, .mp3, .mp4, .mov, .pdf.
 - **DefaultBrowserProgId**  The ProgramId of the current user's default browser.
 - **LocaleName**  Name of the current user locale given by LOCALE_SNAME via the GetLocaleInfoEx() function.
 - **LongDateFormat**  The long date format the user has selected.
@@ -3094,6 +3094,79 @@ The following fields are available:
 
 This event reports the results of deferring Windows Content to keep Windows up to date.
 
+
+
+## Deployment events
+
+### Microsoft.Windows.Deployment.Imaging.AppExit
+
+This event is sent on imaging application exit. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **hr**  HResult returned from app exit.
+- **sId**  Session Id of the application.
+- **totalTimeInMs**  Total time taken in Ms.
+
+
+### Microsoft.Windows.Deployment.Imaging.AppInvoked
+
+This event is sent when the app for image creation is invoked. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **branch**  Corresponding branch for the image.
+- **isInDbg**  Whether the app is in debug mode or not.
+- **isWSK**  Whether the app is building images using WSK or not.
+- **sId**  Id of the session.
+
+
+### Microsoft.Windows.Deployment.Imaging.Failed
+
+This failure event is sent when imaging fails. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **hr**  HResult returned.
+- **msg**  Message returned.
+- **sId**  Session Id.
+- **stack**  Stack information.
+
+
+### Microsoft.Windows.Deployment.Imaging.ImagingCompleted
+
+This event is sent when imaging is done. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **appExecTimeInMs**  Execution time in milliseconds.
+- **buildInfo**  Information of the build.
+- **compDbPrepTimeInMs**  Preparation time in milliseconds for the CompDBs.
+- **executeUpdateTimeInMs**  Update execution time in milliseconds.
+- **fileStageTimeInMs**  File staging time in milliseconds.
+- **hr**  HResult returned from imaging.
+- **imgSizeInMB**  Image size in MB.
+- **mutexWaitTimeInMs**  Mutex wait time in milliseconds.
+- **prepareUpdateTimeInMs**  Update preparation time in milliseconds.
+- **sId**  Session id for the application.
+- **totalRunTimeInMs**  Total running time in milliseconds.
+- **updateOsTimeInMs**  Time in milliseconds spent in update OS.
+
+
+### Microsoft.Windows.Deployment.Imaging.ImagingStarted
+
+This event is sent when an imaging session starts. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **arch**  Architecture of the image.
+- **device**  Device type for which the image is built.
+- **imgFormat**  Format of the image.
+- **imgSkip**  Parameter for skipping certain image types when building.
+- **imgType**  The type of image being built.
+- **lang**  Language of the image being built.
+- **prod**  Image product type.
+- **sId**  Session id for the app.
 
 
 ## Deployment extensions
@@ -4712,7 +4785,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryApplicationAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevice.deviceinventorychange).
 
 The following fields are available:
 
@@ -5093,8 +5166,8 @@ The following fields are available:
 - **Model**  Model and sub-model of the memory
 - **Slot**  Slot to which the DRAM is plugged into the motherboard.
 - **Speed**  The configured memory slot speed in MHz.
-- **Type**  Reports DDR, etc. as an enumeration value as per the DMTF SMBIOS standard version 3.3.0, section 7.18.2.
-- **TypeDetails**  Reports Non-volatile, etc. as a bit flag enumeration according to the DMTF SMBIOS standard version 3.3.0, section 7.18.3.
+- **Type**  Reports DDR as an enumeration value per DMTF SMBIOS standard version 3.3.0, section 7.18.2.
+- **TypeDetails**  Reports Non-volatile as a bit flag enumeration as per the DMTF SMBIOS standard version 3.3.0, section 7.18.3.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoRemove
@@ -5823,7 +5896,7 @@ The following fields are available:
 - **SourceOSVersion**  The source version of the operating system.
 
 
-## ONNX runtime events
+## Other events
 
 ### Microsoft.ML.ONNXRuntime.ProcessInfo
 
@@ -5850,47 +5923,6 @@ The following fields are available:
 - **totalRuns**  Total number of running/evaluation from last time.
 
 
-## Other events
-
-### Microsoft.ServerManagementExperience.Gateway.Service.GatewayStatus
-
-A periodic event that describes Windows Admin Center gateway app's version and other inventory and configuration parameters.
-
-The following fields are available:
-
-- **activeNodesByNodeId**  A count of how many active nodes are on this gateway, deduplicated by Node ID.
-- **activeNodesByUuid**  A count of how many active nodes are on this gateway, deduplicated by UUID.
-- **AvailableMemoryMByte**  A snapshot of the available physical memory on the OS.
-- **azureADAppRegistered**  If the gateway is registered with an Azure Active Directory.
-- **azureADAuthEnabled**  If the gateway has enabled authentication using Azure Active Directory.
-- **friendlyOsName**  A user-friendly name describing the OS version.
-- **gatewayCpuUtilizationPercent**  A snapshot of CPU usage on the OS.
-- **gatewayVersion**  The version string for this currently running Gateway application.
-- **gatewayWorkingSetMByte**  A snapshot of the working set size of the gateway process.
-- **installationType**  Identifies if the gateway was installed as a VM extension.
-- **installedDate**  The date on which this gateway was installed.
-- **logicalProcessorCount**  A snapshot of the how many logical processors the machine running this gateway has.
-- **otherProperties**  This is an empty string, but may be used for another purpose in the future.
-- **registeredNodesByNodeId**  A count of how many nodes are registered with this gateway, deduplicated by Node ID.
-- **registeredNodesByUuid**  A count of how many nodes are registered with this gateway, deduplicated by UUID.
-- **telemetryPrivacyType**  The telemetry opt-in setting for this gateway.
-- **totalCpuUtilizationPercent**  A snapshot of the total CPU utilization of the machine running this gateway.
-
-
-### Microsoft.ServerManagementExperience.Gateway.Service.ManagedNodeProperties
-
-This is a periodic rundown event that contains more detailed information about the nodes added to this Windows Admin Center gateway for management.
-
-The following fields are available:
-
-- **nodeId**  The nodeTypeId concatenated with the hostname or IP address that gateway uses to connect to this node.
-- **nodeOperatingSystem**  A user friendly description of the node's OS version.
-- **nodeOSVersion**  A major or minor build version string for the node's OS.
-- **nodeTypeId**  A string that distinguishes between a connection target, whether it is a client, server, cluster or a hyper-converged cluster.
-- **nodeUuid**  Universal unique identifier GUID.
-- **otherProperties**  Contains a JSON object with variable content and may contain: "nodes": a list of host names or IP addresses of the servers belonging to a cluster, "aliases": the alias if it is set for this connection, "lastUpdatedTime": the number of milliseconds since Unix epoch when this connection was last updated, "ncUri", "caption", "version", "productType", "networkName", "operatingSystem", "computerManufacturer", "computerModel", "isS2dEnabled". This JSON object is formatted as an quotes-escaped string.
-
-
 ### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
 
 This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
@@ -5906,401 +5938,383 @@ The following fields are available:
 - **szBatteryInfo**  Battery performance data.
 
 
-### Microsoft.Surface.Health.Binary.Prod.McuHealthLog
+### Microsoft.Windows.UpdateHealthTools.ExpediteBlocked
 
-This event collects information to keep track of health indicator of the built-in micro controller. For example, the number of abnormal shutdowns due to power issues during boot sequence, type of display panel attached to base, thermal indicator, throttling data in hardware etc. The data collected with this event is used to help keep Windows secure and performing properly.
-
-The following fields are available:
-
-- **CUtility::GetTargetNameA(Target)**  Sub component name.
-- **HealthLog**  Health indicator log.
-- **healthLogSize**  4KB.
-- **productId**  Identifier for product model.
-
-
-### Microsoft.Windows.Deployment.Imaging.AppExit
-
-This event is sent on imaging application exit. The data collected with this event is used to help keep Windows up to date.
+This event indicates that an update detection has occurred and the targeted install has been blocked. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **hr**  HResult returned from app exit.
-- **sId**  Session Id of the application.
-- **totalTimeInMs**  Total time taken in Ms.
+- **CV**  A correlation vector.
+- **ExpeditePolicyId**  The policy id of the expedite request.
+- **ExpediteUpdaterOfferedUpdateId**  An Update Id of the LCU expected to be expedited
+- **ExpediteUpdatesInProgress**  A list of update IDs in progress.
+- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
+- **ExpediteUsoLastError**  The last error returned by USO
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version of the label.
 
 
-### Microsoft.Windows.Deployment.Imaging.AppInvoked
+### Microsoft.Windows.UpdateHealthTools.ExpediteCompleted
 
-This event is sent when the app for image creation is invoked. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **branch**  Corresponding branch for the image.
-- **isInDbg**  Whether the app is in debug mode or not.
-- **isWSK**  Whether the app is building images using WSK or not.
-- **sId**  Id of the session.
-
-
-### Microsoft.Windows.Deployment.Imaging.Failed
-
-This failure event is sent when imaging fails. The data collected with this event is used to help keep Windows up to date.
+This event indicates that the update has been completed. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **hr**  HResult returned.
-- **msg**  Message returned.
-- **sId**  Session Id.
-- **stack**  Stack information.
+- **CV**  A correlation vector.
+- **ExpeditePolicyId**  The policy Id of the expedite request.
+- **ExpediteUpdaterOfferedUpdateId**  The Update Id of the LCU expected to be expedited.
+- **ExpediteUpdatesInProgress**  The list of update IDs in progress.
+- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
+- **ExpediteUsoLastError**  The last error returned by USO.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version of the label.
 
 
-### Microsoft.Windows.Deployment.Imaging.ImagingCompleted
+### Microsoft.Windows.UpdateHealthTools.ExpediteDetectionStarted
 
-This event is sent when imaging is done. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **appExecTimeInMs**  Execution time in milliseconds.
-- **buildInfo**  Information of the build.
-- **compDbPrepTimeInMs**  Preparation time in milliseconds for the CompDBs.
-- **executeUpdateTimeInMs**  Update execution time in milliseconds.
-- **fileStageTimeInMs**  File staging time in milliseconds.
-- **hr**  HResult returned from imaging.
-- **imgSizeInMB**  Image size in MB.
-- **mutexWaitTimeInMs**  Mutex wait time in milliseconds.
-- **prepareUpdateTimeInMs**  Update preparation time in milliseconds.
-- **sId**  Session id for the application.
-- **totalRunTimeInMs**  Total running time in milliseconds.
-- **updateOsTimeInMs**  Time in milliseconds spent in update OS.
-
-
-### Microsoft.Windows.Deployment.Imaging.ImagingStarted
-
-This event is sent when an imaging session starts. The data collected with this event is used to help keep Windows up to date.
+This event indicates that the detection phase of USO has started. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **arch**  Architecture of the image.
-- **device**  Device type for which the image is built.
-- **imgFormat**  Format of the image.
-- **imgSkip**  Parameter for skipping certain image types when building.
-- **imgType**  The type of image being built.
-- **lang**  Language of the image being built.
-- **prod**  Image product type.
-- **sId**  Session id for the app.
+- **CV**  Correlation vector.
+- **ExpeditePolicyId**  The policy ID of the expedite request.
+- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
+- **ExpediteUpdatesInProgress**  List of update IDs in progress.
+- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
+- **ExpediteUsoLastError**  The last error returned by USO.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version label.
 
 
-### Microsoft.Windows.Mitigations.AllowInPlaceUpgrade.ApplyTroubleshootingComplete
+### Microsoft.Windows.UpdateHealthTools.ExpediteDownloadStarted
 
-This event provides summary information after attempting to enable In-Place Upgrade. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-The following fields are available:
-
-- **applicable**  The operations that were needed to be attempted.
-- **failed**  Result of the individual operations that were attempted.
-- **hr**  Result of the overall operation to evaluate and enable In-Place Upgrade.
-
-
-### Microsoft.Windows.RecommendedTroubleshootingService.MitigationFailed
-
-This event is raised after an executable delivered by Mitigation Service has run and failed. Data from this event is used to measure the health of mitigations used by engineers to solve in-market problems on internal, insider, and retail devices. Failure data will also be used for root-cause investigation by feature teams, as signal to halt mitigation rollout and, possible follow-up action on specific devices still impacted by the problem because the mitigation failed (i.e. reoffer it to impacted devices). The data collected with this event is used to help keep Windows up to date and performing properly.
+This event indicates that the download phase of USO has started. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **activeProcesses**  Number of active processes.
-- **atleastOneMitigationSucceeded**  Bool flag indicating if at least one mitigation succeeded.
-- **contactTSServiceAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to get Troubleshooter metadata from the Troubleshooting cloud service.
-- **countDownloadedPayload**  Count instances of payload downloaded.
-- **description**  Description of failure.
-- **devicePreference**  Recommended Troubleshooting Setting on the device.
-- **downloadBinaryAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to download Troubleshooter Exe.
-- **downloadCabAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to download PrivilegedActions Cab.
-- **executionHR**  HR code of the execution of the mitigation.
-- **executionPreference**  Current Execution level Preference. This may not be same as devicePreference, eg when executing Critical troubleshooters, the executionPreference is set to the Silent option.
-- **exitCode**  Exit code of the execution of the mitigation.
-- **experimentFeatureId**  Experiment feature ID.
-- **experimentFeatureState**  Config state of the experiment.
-- **hr**  HRESULT for error code.
-- **isActiveSessionPresent**  If an active user session is present on the device.
-- **isCriticalMitigationAvailable**  If a critical mitigation is available to this device.
-- **isFilteringSuccessful**  If the filtering operation was successful.
-- **isReApply**  reApply status for the mitigation.
-- **mitigationId**  ID value of the mitigation.
-- **mitigationProcessCycleTime**  Process cycle time used by the mitigation.
-- **mitigationRequestWithCompressionFailed**  Boolean flag indicating if HTTP request with compression failed for this device.
-- **mitigationServiceResultFetched**  Boolean flag indicating if mitigation details were fetched from the admin service.
-- **mitigationVersion**  String indicating version of the mitigation.
-- **oneSettingsMetadataParsed**  If OneSettings metadata was parsed successfully.
-- **oneSettingsSchemaVersion**  Schema version used by the OneSettings parser.
-- **onlyNoOptMitigationsPresent**  Checks if all mitigations were no opt.
-- **parsedOneSettingsFile**  Indicates if OneSettings parsing was successful.
-- **sessionAttempts**  Number of Scanner sessions attempted so far by TroubleshootingSvc for this troubleshooter.
-- **SessionId**  Random GUID used for grouping events in a session.
-- **subType**  Error type.
-- **totalKernelTime**  Total kernel time used by the mitigation.
-- **totalNumberOfApplicableMitigations**  Total number of applicable mitigations.
-- **totalProcesses**  Total number of processes assigned to the job object.
-- **totalTerminatedProcesses**  Total number of processes in terminated state assigned to the job object.
-- **totalUserTime**  Total user mode time used by the job object.
+- **CV**  A correlation vector.
+- **ExpeditePolicyId**  The policy Id of the expedite request.
+- **ExpediteUpdaterOfferedUpdateId**  Update Id of the LCU expected to be expedited.
+- **ExpediteUpdatesInProgress**  A list of update IDs in progress.
+- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
+- **ExpediteUsoLastError**  The last error returned by USO.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version label.
 
 
-### Microsoft.Windows.RecommendedTroubleshootingService.MitigationSucceeded
+### Microsoft.Windows.UpdateHealthTools.ExpediteInstallStarted
 
-This event is raised after an executable delivered by Mitigation Service has successfully run. Data from this event is used to measure the health of mitigations used by engineers to solve in-market problems on internal, insider, and retail devices. The data collected with this event is used to keep Windows performing properly.
+This event indicates that the install phase of USO has started. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **activeProcesses**  Number of active processes.
-- **contactTSServiceAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to get Troubleshooter metadata from the Troubleshooting cloud service.
-- **devicePreference**  Recommended troubleshooting setting on the device.
-- **downloadBinaryAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to download Troubleshooter Exe.
-- **downloadCabAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to download PrivilegedActions Cab.
-- **executionPreference**  Current Execution level Preference. This may not be same as devicePreference, for example, when executing Critical troubleshooters, the executionPreference is set to the Silent option.
-- **experimentFeatureId**  Experiment feature ID.
-- **experimentFeatureState**  Feature state for the experiment.
-- **mitigationId**  ID value of the mitigation.
-- **mitigationProcessCycleTime**  Process cycle time used by the mitigation.
-- **mitigationVersion**  String indicating version of the mitigation.
-- **sessionAttempts**  Number of Scanner sessions attempted so far by TroubleshootingSvc for this troubleshooter.
-- **SessionId**  Random GUID used for grouping events in a session.
-- **totalKernelTime**  Total kernel time used by the mitigation.
-- **totalProcesses**  Total number of processes assigned to the job object.
-- **totalTerminatedProcesses**  Total number of processes in terminated state assigned to the job object.
-- **totalUserTime**  Total user mode time used by the job object.
+- **CV**  Correlation vector.
+- **ExpeditePolicyId**  The policy ID of the expedite request.
+- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
+- **ExpediteUpdatesInProgress**  List of update IDs in progress.
+- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
+- **ExpediteUsoLastError**  The last error returned by USO.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version label.
 
 
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSEvaluateInteractionCampaign
+### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterAlreadyExpectedUbr
 
-This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) finishes processing an interaction campaign. The data collected with this event is used to help keep Windows up to date and performing properly.
+This event indicates that the device is already on the expected UBR. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **ControlId**  String identifying the control (if any) that was selected by the user during presentation.
-- **hrInteractionHandler**  The error (if any) reported by the RUXIM Interaction Handler while processing the interaction campaign.
-- **hrScheduler**  The error (if any) encountered by RUXIM Interaction Campaign Scheduler itself while processing the interaction campaign.
-- **InteractionCampaignID**  The ID of the interaction campaign that was processed.
-- **ResultId**  The result of the evaluation/presentation.
-- **WasCompleted**  True if the interaction campaign is complete.
-- **WasPresented**  True if the Interaction Handler displayed the interaction campaign to the user.
+- **CV**  Correlation vector.
+- **ExpediteErrorBitMap**  Bit map value for any error code.
+- **ExpeditePolicyId**  The policy id of the expedite request.
+- **ExpediteResult**  Boolean value for success or failure.
+- **ExpediteUpdaterCurrentUbr**  The ubr of the device.
+- **ExpediteUpdaterExpectedUbr**  The expected ubr of the device.
+- **ExpediteUpdaterOfferedUpdateId**  Update Id of the LCU expected to be expedited.
+- **ExpediteUpdaterPolicyRestoreResult**  HRESULT of the policy restore.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version label.
 
 
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
+### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterFailedToUpdateToExpectedUbr
 
-This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSLaunch
-
-This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
+This event indicates the expected UBR of the device. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **CommandLine**  The command line used to launch RUXIMICS.
+- **CV**  Correlation vector.
+- **ExpediteErrorBitMap**  Bit map value for any error code.
+- **ExpeditePolicyId**  The policy ID of the expedite request.
+- **ExpediteResult**  Boolean value for success or failure.
+- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
+- **ExpediteUpdaterPolicyRestoreResult**  HRESULT of the policy restore.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version label.
 
 
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncExit
+### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterRebootComplete
 
-This event is sent when RUXIM completes checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **hrInitialize**  Error, if any, that occurred while initializing OneSettings.
-- **hrQuery**  Error, if any, that occurred while retrieving UX interaction campaign data from OneSettings.
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncLaunch
-
-This event is sent when RUXIM begins checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
-
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.IHEvaluateAndPresent
-
-This event is generated when the RUXIM Interaction Handler finishes evaluating, and possibly presenting an interaction campaign. The data collected with this event is used to help keep Windows up to date and performing properly.
+This event indicates that the expedite update is completed with reboot. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **hrLocal**  The error (if any) encountered by RUXIM Interaction Handler during evaluation and presentation.
-- **hrPresentation**  The error (if any) reported by RUXIM Presentation Handler during presentation.
-- **InteractionCampaignID**  GUID; the user interaction campaign processed by RUXIM Interaction Handler.
-- **ResultId**  The result generated by the evaluation and presentation.
-- **WasCompleted**  True if the user interaction campaign is complete.
-- **WasPresented**  True if the user interaction campaign is displayed to the user.
+- **CV**  Correlation vector.
+- **ExpeditePolicyId**  The policy id of the expedite request.
+- **ExpediteResult**  Boolean value for success or failure.
+- **ExpediteUpdaterCurrentUbr**  The ubr of the device.
+- **ExpediteUpdaterOfferedUpdateId**  Update Id of the LCU expected to be expedited.
+- **ExpediteUpdaterPolicyRestoreResult**  HRESULT of the policy restore.
+- **ExpediteUpdatesInProgress**  Comma delimited list of updates in progress.
+- **ExpediteUsoCorrelationVector**  The current USO correlation vector as surfaced from the USO store.
+- **ExpediteUsoLastError**  The last error as surfaced from the USO store.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version label.
 
 
-### Microsoft.Windows.WindowsUpdate.RUXIM.IHExit
+### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterRebootRequired
 
-This event is generated when the RUXIM Interaction Handler (RUXIMIH.EXE) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-The following fields are available:
-
-- **InteractionCampaignID**  GUID identifying the interaction campaign that RUXIMIH processed.
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.IHLaunch
-
-This event is generated when the RUXIM Interaction Handler (RUXIMIH.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
+This event indicates that the device has finished servicing and a reboot is required. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **CommandLine**  The command line used to launch RUXIMIH.
-- **InteractionCampaignID**  GUID identifying the user interaction campaign that the Interaction Handler will process.
+- **CV**  Correlation vector.
+- **ExpeditePolicyId**  The policy ID of the expedite request.
+- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
+- **ExpediteUpdatesInProgress**  Comma delimited list of update IDs currently being offered.
+- **ExpediteUsoCorrelationVector**  The correlation vector from the USO session.
+- **ExpediteUsoLastError**  Last HResult from the current USO session.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  Current package version of UpdateHealthTools.
 
 
-### Microsoft.Windows.WindowsUpdate.RUXIM.SystemEvaluator.Evaluation
+### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterScanCompleted
 
-This event is generated whenever the RUXIM Evaluator DLL performs an evaluation. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-The following fields are available:
-
-- **HRESULT**  Error, if any, that occurred during evaluation. (Note that if errors encountered during individual checks do not affect the overall result of the evaluation, those errors will be reported in NodeEvaluationData, but this HRESULT will still be zero.)
-- **Id**  GUID passed in by the caller to identify the evaluation.
-- **NodeEvaluationData**  Structure showing the results of individual checks that occurred during the overall evaluation.
-- **Result**  Overall result generated by the evaluation.
-
-
-### Microsoft.Xbox.Multiplayer.Bumblelion.OnConnectToNetworkCompleted
-
-No content is currently available.
+This event sends results of the expedite USO scan. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **ClientInstanceId**  The client-generated globally unique identifier of this instance of bumblelion.
-- **ConnectDurationInMs**  The duration of the isolated connection operation in milliseconds.
-- **DurationInMs**  The duration of this request in milliseconds.
-- **ErrorDetail**  The PartyError error detail code.
-- **Hostname**  The hostname of the relay we are trying to connect to.
-- **IsLocalUdpSocketBindAddressConfigurationTitleSpecified**  Whether the title has overridden the local UDP socket bind address configuration for this instance of PlayFab Party.
-- **LocalConnectionId**  A local identifier to disambiguate multiple connections to the same network from a single client.
-- **LocalUdpSocketBindAddressConfigurationOptions**  The additional options set by the title to control how the Party library binds to a UDP socket.
-- **LocalUdpSocketBindAddressConfigurationPort**  The port value specified by the title in the local UDP socket bind address configuration.
-- **LocalUdpSocketSelectedPort**  The bound port for this instance of PlayFab Party.
-- **NetworkIdentifier**  The network's unique identifier.
-- **Port**  The port we are trying to connect to.
-- **QosLatencyInMs**  Qos latency in ms.
-- **QosRank**  Qos rank.
-- **RegionName**  The region Name associated with the underlying relay for the network.
-- **Result**  The PartyStateChangeResult of the operation.
-- **TotalDurationInMs**  The duration of connection operation and all associated operations queued before it in milliseconds.
+- **CV**  Correlation vector.
+- **ExpediteCbsServicingInProgressStatus**  True if servicing is in progress in cbs for the device.
+- **ExpediteErrorBitMap**  Bit map value for any error code.
+- **ExpeditePolicyId**  The policy ID of the expedite request.
+- **ExpediteResult**  Boolean value for success or failure.
+- **ExpediteScheduledTaskCreated**  Indicates whether the scheduled task was created (true/false).
+- **ExpediteScheduledTaskHresult**  HRESULT for scheduled task creation.
+- **ExpediteUpdaterCurrentUbr**  The UBR of the device.
+- **ExpediteUpdaterExpectedUbr**  The expected UBR of the device.
+- **ExpediteUpdaterMonitorResult**  HRESULT of the USO monitoring.
+- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
+- **ExpediteUpdaterScanResult**  HRESULT of the expedite USO scan.
+- **ExpediteUpdaterUsoResult**  HRESULT of the USO initialization and resume API calls.
+- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
+- **ExpediteUsoLastError**  The last error returned by USO.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version label.
+- **UsoFrequencyKey**  Indicates whether the USO frequency key was found on the device (true/false).
 
 
-### Microsoft.Xbox.Multiplayer.Bumblelion.OnCreateNewNetworkCompleted
+### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterScanStarted
 
-No content is currently available.
-
-The following fields are available:
-
-- **ClientInstanceId**  The client-generated globally unique identifier of this instance of Bumblelion.
-- **DirectPeerConnectivityOptions**  The direct peer connectivity options specified when creating the network.
-- **DurationInMs**  The duration of this request in milliseconds.
-- **ErrorDetail**  The PartyError error detail code.
-- **Hostname**  The hostname of the relay we are trying to create.
-- **MaxDeviceCount**  The maximum device count specified in the network configuration.
-- **MaxDevicesPerUserCount**  The maximum devices per user count specified in the network configuration.
-- **MaxEndpointsPerDeviceCount**  The maximum endpoints per device count specified in the network configuration.
-- **MaxUserCount**  The maximum user count specified in the network configuration.
-- **MaxUsersPerDeviceCount**  The maximum users per device count specified in the network configuration.
-- **NetworkIdentifier**  The network's unique identifier.
-- **Port**  The relay's port.
-- **PreferredRegionLatenciesInMs**  Preferred region latencies in ms.
-- **PreferredRegionNames**  Preferred region names.
-- **RegionCount**  The count of regions specified when creating the network.
-- **RegionName**  The region name associated with the newly created network. Empty if the creation failed.
-- **RequestedRelayBuildAliasId**  The requested relay build alias ID.
-- **RequestedRelayVersion**  The requested relay version including the protocol version and tag.
-- **Result**  The PartyStateChangeResult of the operation.
-- **ServerId**  The ServerId field from the PlayFab RequestPartyResponse.
-- **VmId**  The VmId field from the PlayFab RequestPartyResponse.
-
-
-### Microsoft.Xbox.Multiplayer.Bumblelion.OnNetworkDestroyed
-
-This event is emitted when a network is destroyed. The data collected with this event is used to help keep Windows up to date and performing properly.
+This event sends telemetry that USO scan has been started. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **AuthenticatedLocalUserCount**  The count of authenticated local users when the network was destroyed.
-- **AuthenticatedLocalUserPeakCount**  The peak count of authenticated local users over the lifetime of the network.
-- **ClientInstanceId**  The client-generated globally unique identifier of this instance of Bumblelion.
-- **ErrorDetail**  The PartyError error detail code.
-- **FirstNetworkIdentifier**  The network's unique identifier at the time it was created.
-- **Hostname**  The relay's hostName.
-- **LocalConnectionId**  A local identifier to disambiguate multiple connections to the same network from a single client.
-- **LocalPrivateEndpointCount**  The count of local private endpoints when the network was destroyed.
-- **LocalPrivateEndpointPeakCount**  The peak count of local private endpoints over the lifetime of the network.
-- **LocalPublicEndpointCount**  The count of local public endpoints when the network was destroyed.
-- **LocalPublicEndpointPeakCount**  The peak count of local public endpoints over the lifetime of the network.
-- **LocalUserCount**  The count of local users when the network was destroyed.
-- **LocalUserPeakCount**  The peak count of local users over the lifetime of the network.
-- **MigrationCount**  The number of migrations attempted.
-- **NetworkIdentifier**  The network's unique identifier.
-- **Port**  The relay's port.
-- **Reason**  The PartyDestroyedReason that the network was destroyed.
-- **RegionName**  The region Name associated with the underlying relay for the network.
-- **RemoteDeviceActiveDirectLinkPeakCount**  The peak count of remote devices to which the local device had concurrently chosen the direct link as the data transmission path over the lifetime of the network.
-- **RemoteDeviceCount**  The count of remote devices when the network was destroyed.
-- **RemoteDeviceEvaluatingDirectLinkPeakCount**  The peak count of remote devices to which the local device was concurrently evaluating a direct peer connection over the lifetime of the network.
-- **RemoteDevicePeakCount**  The peak count of remote devices over the lifetime of the network.
-- **RemotePrivateEndpointCount**  The count of remote private endpoints when the network was destroyed.
-- **RemotePrivateEndpointPeakCount**  The peak count of remote private endpoints over the lifetime of the network.
-- **RemotePublicEndpointCount**  The count of remote public endpoints when the network was destroyed.
-- **RemotePublicEndpointPeakCount**  The peak count of remote public endpoints over the lifetime of the network.
-- **StateBeforeDestroy**  The last NetworkModelState of the network before it was destroyed.
-- **TimeSpentInAuthenticatedStateInMs**  The total number of milliseconds spent in the Authenticated state.
-- **TimeSpentInConnectingStateInMs**  The total number of milliseconds spent in the Connecting state.
-- **TimeSpentInDeauthenticatingStateInMs**  The total number of milliseconds spent in the Deauthenticating state.
-- **TimeSpentInLeavingStateInMs**  The total number of milliseconds spent in the Leaving state.
-- **TimeSpentInNewStateInMs**  The total number of milliseconds spent in the New state.
-- **TimeSpentInReadyStateInMs**  The total number of milliseconds spent in the Ready state.
-- **TimeSpentInUnauthenticatedStateInMs**  The total number of milliseconds spent in the Unauthenticated state.
+- **CV**  Correlation vector.
+- **ExpediteErrorBitMap**  Bit map value for any error code.
+- **ExpediteHoursOfUpTimeSincePolicy**  The number of hours the device has been active since it received a policy.
+- **ExpeditePolicyId**  The policy Id of the expedite request.
+- **ExpediteResult**  Boolean value for success or failure.
+- **ExpediteUpdaterCurrentUbr**  The UBR of the device.
+- **ExpediteUpdaterExpectedUbr**  The expected UBR of the device.
+- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
+- **ExpediteUpdaterUsoIntiatedScan**  True when USO scan has been called.
+- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
+- **ExpediteUsoLastError**  The last error returned by USO.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version label.
+- **UsoFrequencyKey**  Indicates whether the USO frequency key was found on the device (true/false).
 
 
-### Microsoft.Xbox.Multiplayer.Bumblelion.OnPlayFabError
+### Microsoft.Windows.UpdateHealthTools.UnifiedInstallerEnd
 
-No content is currently available.
+This event indicates that the unified installer has completed. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **ClientInstanceId**  The client-generated globally unique identifier of this instance of Bumblelion.
-- **ErrorCode**  The PlayFabError ErrorCode value.
-- **ErrorMessage**  The PlayFabError ErrorMessage value.
-- **ErrorName**  The PlayFabError ErrorName value.
-- **HttpStatusCode**  The PlayFabError HttpCode value.
-- **HttpStatusString**  The PlayFabError HttpStatus value.
-- **RequestId**  The OutstandingPlayFabRequestID of the request that had an error.
-- **RequestType**  The OutstandingPlayFabRequestType of the request that had an error.
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  The event counter for telemetry events on the device for currency tools.
+- **PackageVersion**  The package version label for currency tools.
+- **UnifiedInstallerInstallResult**  The final result code for the unified installer.
+- **UnifiedInstallerPlatformResult**  The result code from determination of the platform type.
+- **UnifiedInstallerPlatformType**  The enum indicating the platform type.
 
 
-### Microsoft.Xbox.Multiplayer.Bumblelion.OnQosCompleted
+### Microsoft.Windows.UpdateHealthTools.UnifiedInstallerStart
 
-No content is currently available.
+This event indicates that the installation has started for the unified installer. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
-- **AverageLatenciesInMilliseconds**  A semicolon-delimited list of average latencies across all pings to a given QoS server, in milliseconds.
-- **AverageLatencyVariancesInMilliseconds**  A semicolon-delimited list of latency variances (stddev squared) across all pings to a given QoS server, in milliseconds.
-- **ClientInstanceId**  The client-generated globally unique identifier of this instance of Bumblelion.
-- **ErrorDetail**  The PartyError detail code provided to the game as a result of the QoS operation.
-- **FirstAttemptLatenciesInMilliseconds**  A semicolon-delimited list of latencies of the first ping attempted to each QoS server.
-- **FirstResponseLatenciesInMilliseconds**  A semicolon-delimited list of latencies of the first ping that had a successful response, to each QoS server.
-- **Hostnames**  A semicolon-delimited list of QoS server hostNames.
-- **IpAddresses**  A semicolon-delimited list of QoS server IP addresses.
-- **LastAttemptLatenciesInMilliseconds**  A semicolon-delimited list of latencies of the last ping attempted to each QoS server.
-- **LastResponseLatenciesInMilliseconds**  A semicolon-delimited list of latencies of the last ping that had a successful response, to each QoS server.
-- **LatenciesInMilliseconds**  A semicolon-delimited list of median latencies across all pings to a given QoS server, in milliseconds.
-- **MaximumLatenciesInMilliseconds**  A semicolon-delimited list of maximum latencies across all pings to a given QoS server, in milliseconds.
-- **MinimumLatenciesInMilliseconds**  A semicolon-delimited list of minimum latencies across all pings to a given QoS server, in milliseconds.
-- **PingErrorCodes**  A semicolon-delimited list of the last error code encountered while pinging each QoS server.
-- **PingFailureCounts**  A semicolon-delimited list of failed ping counts to each QoS server.
-- **PingFailureDueToTimeoutCounts**  A semicolon-delimited list of timed-out ping counts to each QoS server.
-- **PingSuccessCounts**  A semicolon-delimited list of successful ping counts to each QoS server.
-- **RegionCount**  The number of regions.
-- **RegionNames**  A semicolon-delimited list of region names.
-- **SecondAttemptLatenciesInMilliseconds**  A semicolon-delimited list of latencies of the second ping attempted to each QoS server.
-- **SecondResponseLatenciesInMilliseconds**  A semicolon-delimited list of latencies of the second ping that had a successful response, to each QoS server.
-- **StateChangeResult**  The PartyStateChangeResult provided to the game as a result of the QoS operation.
-- **TimeToGetRegionListInMilliseconds**  The time it took to get the region list, in milliseconds.
-- **TimeToMeasureLatencyInMilliseconds**  The time it took to measure latency to all regions, in milliseconds.
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  Counts the events at the global level for telemetry.
+- **PackageVersion**  The package version for currency tools.
+- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is AAD joined.
+- **UnifiedInstallerDeviceInDssPolicy**  Boolean indicating whether the device is found to be in a DSS policy.
+- **UnifiedInstallerDeviceInDssPolicyHresult**  The result code for checking whether the device is found to be in a DSS policy.
+- **UnifiedInstallerDeviceIsAADJoined**  Boolean indicating whether a device is AADJ.
+- **UnifiedInstallerDeviceIsAdJoined**  Boolean indicating whether a device is AD joined.
+- **UnifiedInstallerDeviceIsAdJoinedHresult**  The result code for checking whether a device is AD joined.
+- **UnifiedInstallerDeviceIsEducationSku**  Boolean indicating whether a device is Education SKU.
+- **UnifiedInstallerDeviceIsEducationSkuHresult**  The result code from checking whether a device is Education SKU.
+- **UnifiedInstallerDeviceIsEnterpriseSku**  Boolean indicating whether a device is Enterprise SKU.
+- **UnifiedInstallerDeviceIsEnterpriseSkuHresult**  The result code from checking whether a device is Enterprise SKU.
+- **UnifiedInstallerDeviceIsHomeSku**  Boolean indicating whether a device is Home SKU.
+- **UnifiedInstallerDeviceIsHomeSkuHresult**  The result code from checking whether device is Home SKU.
+- **UnifiedInstallerDeviceIsMdmManaged**  Boolean indicating whether a device is MDM managed.
+- **UnifiedInstallerDeviceIsMdmManagedHresult**  The result code from checking whether a device is MDM managed.
+- **UnifiedInstallerDeviceIsProSku**  Boolean indicating whether a device is Pro SKU.
+- **UnifiedInstallerDeviceIsProSkuHresult**  The result code from checking whether a device is Pro SKU.
+- **UnifiedInstallerDeviceIsSccmManaged**  Boolean indicating whether a device is SCCM managed.
+- **UnifiedInstallerDeviceIsSccmManagedHresult**  The result code from checking whether a device is SCCM managed.
+- **UnifiedInstallerDeviceWufbManaged**  Boolean indicating whether a device is Wufb managed.
+- **UnifiedInstallerDeviceWufbManagedHresult**  The result code from checking whether a device is Wufb managed.
+- **UnifiedInstallerPlatformResult**  The result code from checking what platform type the device is.
+- **UnifiedInstallerPlatformType**  The enum indicating the type of platform detected.
+- **UnifiedInstUnifiedInstallerDeviceIsHomeSkuHresultllerDeviceIsHomeSku**  The result code from checking whether a device is Home SKU.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsBlobNotificationRetrieved
+
+This event is sent when a blob notification is received. The data collected with this event is used to help keep Windows up to date and secure.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version of the label.
+- **UpdateHealthToolsBlobNotificationNotEmpty**  True if the blob notification is not empty.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsDeviceInformationUploaded
+
+This event is received when the UpdateHealthTools service uploads device information. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  Current package version of remediation.
+- **UpdateHealthToolsDeviceUbrChanged**  1 if the Ubr just changed, 0 otherwise.
+- **UpdateHealthToolsDeviceUri**  The URI to be used for push notifications on this device.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsDeviceInformationUploadFailed
+
+This event provides information for device which failed to upload the details. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Telemetry event counter.
+- **PackageVersion**  Version label of the package sending telemetry.
+- **UpdateHealthToolsEnterpriseActionResult**  Result of running the tool expressed as an HRESULT.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsPushNotificationCompleted
+
+This event is received when a push notification has been completed by the UpdateHealthTools service. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  Current package version of UpdateHealthTools.
+- **UpdateHealthToolsEnterpriseActionResult**  The HRESULT return by the enterprise action.
+- **UpdateHealthToolsEnterpriseActionType**  Enum describing the type of action requested by the push.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsPushNotificationReceived
+
+This event is received when the UpdateHealthTools service receives a push notification. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  Current package version of UpdateHealthTools.
+- **UpdateHealthToolsDeviceUri**  The URI to be used for push notifications on this device.
+- **UpdateHealthToolsEnterpriseActionType**  Enum describing the type of action requested by the push.
+- **UpdateHealthToolsPushCurrentChannel**  The channel used to receive notification.
+- **UpdateHealthToolsPushCurrentRequestId**  The request ID for the push.
+- **UpdateHealthToolsPushCurrentResults**  The results from the push request.
+- **UpdateHealthToolsPushCurrentStep**  The current step for the push notification.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsPushNotificationStatus
+
+This event is received when there is status on a push notification. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  Current package version of UpdateHealthTools.
+- **UpdateHealthToolsDeviceUri**  The URI to be used for push notifications on this device.
+- **UpdateHealthToolsEnterpriseActionType**  Enum describing the type of action requested by the push.
+- **UpdateHealthToolsPushCurrentRequestId**  The request ID for the push.
+- **UpdateHealthToolsPushCurrentResults**  The results from the push request.
+- **UpdateHealthToolsPushCurrentStep**  The current step for the push notification
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlobDocumentDetails
+
+The event indicates the details about the blob used for update health tools. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  A correlation vector.
+- **GlobalEventCounter**  This is a client side counter which indicates ordering of events sent by the user.
+- **PackageVersion**  The package version of the label.
+- **UpdateHealthToolsDevicePolicyFileName**  The default name of the policy blob file.
+- **UpdateHealthToolsDssDeviceApiSegment**  The URI segment for reading the DSS device pointer.
+- **UpdateHealthToolsDssDeviceId**  The AAD ID of the device used to create the device ID hash.
+- **UpdateHealthToolsDssDevicePolicyApiSegment**  The segment of the device policy API pointer.
+- **UpdateHealthToolsDssTenantId**  The tenant id of the device used to create the tenant id hash.
+- **UpdateHealthToolsHashedDeviceId**  The SHA256 hash of the device id.
+- **UpdateHealthToolsHashedTenantId**  The SHA256 hash of the device tenant id.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoDSSJoin
+
+The event is sent when the device is not joined to AAD. The data collected with this event is used to help keep Windows up to date and secure.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  The global event counter counts the total events for the provider.
+- **PackageVersion**  The version for the current package.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceIsDSSJoin
+
+This event is sent when a device has been detected as DSS device. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  A correlation vector.
+- **GlobalEventCounter**  This is a client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  The package version of the label.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceStarted
+
+This event is sent when the service first starts. It is a heartbeat indicating that the service is available on the device. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  Current package version of remediation.
 
 
 ## Privacy consent logging events
@@ -6988,6 +7002,20 @@ The following fields are available:
 - **TimestampTokenId**  The time this was created. It is encoded in a timestamp blob and will be zero if the token is malformed.
 - **UpdateId**  The update ID for a specific piece of content.
 - **ValidityWindowInDays**  The validity window that's in effect when verifying the timestamp.
+
+
+## Surface events
+
+### Microsoft.Surface.Health.Binary.Prod.McuHealthLog
+
+This event collects information to keep track of health indicator of the built-in micro controller. For example, the number of abnormal shutdowns due to power issues during boot sequence, type of display panel attached to base, thermal indicator, throttling data in hardware etc. The data collected with this event is used to help keep Windows secure and performing properly.
+
+The following fields are available:
+
+- **CUtility::GetTargetNameA(Target)**  Sub component name.
+- **HealthLog**  Health indicator log.
+- **healthLogSize**  4KB.
+- **productId**  Identifier for product model.
 
 
 ## System reset events
@@ -9498,383 +9526,95 @@ The following fields are available:
 - **wuDeviceid**  The Windows Update device GUID.
 
 
-### Microsoft.Windows.UpdateHealthTools.ExpediteBlocked
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSEvaluateInteractionCampaign
 
-This event indicates that an update detection has occurred and the targeted install has been blocked. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  A correlation vector.
-- **ExpeditePolicyId**  The policy id of the expedite request.
-- **ExpediteUpdaterOfferedUpdateId**  An Update Id of the LCU expected to be expedited
-- **ExpediteUpdatesInProgress**  A list of update IDs in progress.
-- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
-- **ExpediteUsoLastError**  The last error returned by USO
-- **GlobalEventCounter**  Counts the number of events for this provider.
-- **PackageVersion**  The package version of the label.
-
-
-### Microsoft.Windows.UpdateHealthTools.ExpediteCompleted
-
-This event indicates that the update has been completed. The data collected with this event is used to help keep Windows secure and up to date.
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) finishes processing an interaction campaign. The data collected with this event is used to help keep Windows up to date and performing properly.
 
 The following fields are available:
 
-- **CV**  A correlation vector.
-- **ExpeditePolicyId**  The policy Id of the expedite request.
-- **ExpediteUpdaterOfferedUpdateId**  The Update Id of the LCU expected to be expedited.
-- **ExpediteUpdatesInProgress**  The list of update IDs in progress.
-- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
-- **ExpediteUsoLastError**  The last error returned by USO.
-- **GlobalEventCounter**  Counts the number of events for this provider.
-- **PackageVersion**  The package version of the label.
+- **ControlId**  String identifying the control (if any) that was selected by the user during presentation.
+- **hrInteractionHandler**  The error (if any) reported by the RUXIM Interaction Handler while processing the interaction campaign.
+- **hrScheduler**  The error (if any) encountered by RUXIM Interaction Campaign Scheduler itself while processing the interaction campaign.
+- **InteractionCampaignID**  The ID of the interaction campaign that was processed.
+- **ResultId**  The result of the evaluation/presentation.
+- **WasCompleted**  True if the interaction campaign is complete.
+- **WasPresented**  True if the Interaction Handler displayed the interaction campaign to the user.
 
 
-### Microsoft.Windows.UpdateHealthTools.ExpediteDetectionStarted
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
 
-This event indicates that the detection phase of USO has started. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **ExpeditePolicyId**  The policy ID of the expedite request.
-- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
-- **ExpediteUpdatesInProgress**  List of update IDs in progress.
-- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
-- **ExpediteUsoLastError**  The last error returned by USO.
-- **GlobalEventCounter**  Counts the number of events for this provider.
-- **PackageVersion**  The package version label.
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
 
 
-### Microsoft.Windows.UpdateHealthTools.ExpediteDownloadStarted
 
-This event indicates that the download phase of USO has started. The data collected with this event is used to help keep Windows secure and up to date.
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSLaunch
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
 
 The following fields are available:
 
-- **CV**  A correlation vector.
-- **ExpeditePolicyId**  The policy Id of the expedite request.
-- **ExpediteUpdaterOfferedUpdateId**  Update Id of the LCU expected to be expedited.
-- **ExpediteUpdatesInProgress**  A list of update IDs in progress.
-- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
-- **ExpediteUsoLastError**  The last error returned by USO.
-- **GlobalEventCounter**  Counts the number of events for this provider.
-- **PackageVersion**  The package version label.
+- **CommandLine**  The command line used to launch RUXIMICS.
 
 
-### Microsoft.Windows.UpdateHealthTools.ExpediteInstallStarted
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncExit
 
-This event indicates that the install phase of USO has started. The data collected with this event is used to help keep Windows secure and up to date.
+This event is sent when RUXIM completes checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
 
 The following fields are available:
 
-- **CV**  Correlation vector.
-- **ExpeditePolicyId**  The policy ID of the expedite request.
-- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
-- **ExpediteUpdatesInProgress**  List of update IDs in progress.
-- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
-- **ExpediteUsoLastError**  The last error returned by USO.
-- **GlobalEventCounter**  Counts the number of events for this provider.
-- **PackageVersion**  The package version label.
+- **hrInitialize**  Error, if any, that occurred while initializing OneSettings.
+- **hrQuery**  Error, if any, that occurred while retrieving UX interaction campaign data from OneSettings.
 
 
-### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterAlreadyExpectedUbr
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSOneSettingsSyncLaunch
 
-This event indicates that the device is already on the expected UBR. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **ExpediteErrorBitMap**  Bit map value for any error code.
-- **ExpeditePolicyId**  The policy id of the expedite request.
-- **ExpediteResult**  Boolean value for success or failure.
-- **ExpediteUpdaterCurrentUbr**  The ubr of the device.
-- **ExpediteUpdaterExpectedUbr**  The expected ubr of the device.
-- **ExpediteUpdaterOfferedUpdateId**  Update Id of the LCU expected to be expedited.
-- **ExpediteUpdaterPolicyRestoreResult**  HRESULT of the policy restore.
-- **GlobalEventCounter**  Counts the number of events for this provider.
-- **PackageVersion**  The package version label.
+This event is sent when RUXIM begins checking with OneSettings to retrieve any UX interaction campaigns that may need to be displayed. The data collected with this event is used to help keep Windows up to date.
 
 
-### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterFailedToUpdateToExpectedUbr
 
-This event indicates the expected UBR of the device. The data collected with this event is used to help keep Windows secure and up to date.
+### Microsoft.Windows.WindowsUpdate.RUXIM.IHEvaluateAndPresent
+
+This event is generated when the RUXIM Interaction Handler finishes evaluating, and possibly presenting an interaction campaign. The data collected with this event is used to help keep Windows up to date and performing properly.
 
 The following fields are available:
 
-- **CV**  Correlation vector.
-- **ExpediteErrorBitMap**  Bit map value for any error code.
-- **ExpeditePolicyId**  The policy ID of the expedite request.
-- **ExpediteResult**  Boolean value for success or failure.
-- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
-- **ExpediteUpdaterPolicyRestoreResult**  HRESULT of the policy restore.
-- **GlobalEventCounter**  Counts the number of events for this provider.
-- **PackageVersion**  The package version label.
+- **hrLocal**  The error (if any) encountered by RUXIM Interaction Handler during evaluation and presentation.
+- **hrPresentation**  The error (if any) reported by RUXIM Presentation Handler during presentation.
+- **InteractionCampaignID**  GUID; the user interaction campaign processed by RUXIM Interaction Handler.
+- **ResultId**  The result generated by the evaluation and presentation.
+- **WasCompleted**  True if the user interaction campaign is complete.
+- **WasPresented**  True if the user interaction campaign is displayed to the user.
 
 
-### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterRebootComplete
+### Microsoft.Windows.WindowsUpdate.RUXIM.IHExit
 
-This event indicates that the expedite update is completed with reboot. The data collected with this event is used to help keep Windows secure and up to date.
+This event is generated when the RUXIM Interaction Handler (RUXIMIH.EXE) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
 
 The following fields are available:
 
-- **CV**  Correlation vector.
-- **ExpeditePolicyId**  The policy id of the expedite request.
-- **ExpediteResult**  Boolean value for success or failure.
-- **ExpediteUpdaterCurrentUbr**  The ubr of the device.
-- **ExpediteUpdaterOfferedUpdateId**  Update Id of the LCU expected to be expedited.
-- **ExpediteUpdaterPolicyRestoreResult**  HRESULT of the policy restore.
-- **ExpediteUpdatesInProgress**  Comma delimited list of updates in progress.
-- **ExpediteUsoCorrelationVector**  The current USO correlation vector as surfaced from the USO store.
-- **ExpediteUsoLastError**  The last error as surfaced from the USO store.
-- **GlobalEventCounter**  Counts the number of events for this provider.
-- **PackageVersion**  The package version label.
+- **InteractionCampaignID**  GUID identifying the interaction campaign that RUXIMIH processed.
 
 
-### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterRebootRequired
+### Microsoft.Windows.WindowsUpdate.RUXIM.IHLaunch
 
-This event indicates that the device has finished servicing and a reboot is required. The data collected with this event is used to help keep Windows secure and up to date.
+This event is generated when the RUXIM Interaction Handler (RUXIMIH.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
 
 The following fields are available:
 
-- **CV**  Correlation vector.
-- **ExpeditePolicyId**  The policy ID of the expedite request.
-- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
-- **ExpediteUpdatesInProgress**  Comma delimited list of update IDs currently being offered.
-- **ExpediteUsoCorrelationVector**  The correlation vector from the USO session.
-- **ExpediteUsoLastError**  Last HResult from the current USO session.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  Current package version of UpdateHealthTools.
+- **CommandLine**  The command line used to launch RUXIMIH.
+- **InteractionCampaignID**  GUID identifying the user interaction campaign that the Interaction Handler will process.
 
 
-### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterScanCompleted
+### Microsoft.Windows.WindowsUpdate.RUXIM.SystemEvaluator.Evaluation
 
-This event sends results of the expedite USO scan. The data collected with this event is used to help keep Windows secure and up to date.
+This event is generated whenever the RUXIM Evaluator DLL performs an evaluation. The data collected with this event is used to help keep Windows up to date and performing properly.
 
 The following fields are available:
 
-- **CV**  Correlation vector.
-- **ExpediteCbsServicingInProgressStatus**  True if servicing is in progress in cbs for the device.
-- **ExpediteErrorBitMap**  Bit map value for any error code.
-- **ExpeditePolicyId**  The policy ID of the expedite request.
-- **ExpediteResult**  Boolean value for success or failure.
-- **ExpediteScheduledTaskCreated**  Indicates whether the scheduled task was created (true/false).
-- **ExpediteScheduledTaskHresult**  HRESULT for scheduled task creation.
-- **ExpediteUpdaterCurrentUbr**  The UBR of the device.
-- **ExpediteUpdaterExpectedUbr**  The expected UBR of the device.
-- **ExpediteUpdaterMonitorResult**  HRESULT of the USO monitoring.
-- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
-- **ExpediteUpdaterScanResult**  HRESULT of the expedite USO scan.
-- **ExpediteUpdaterUsoResult**  HRESULT of the USO initialization and resume API calls.
-- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
-- **ExpediteUsoLastError**  The last error returned by USO.
-- **GlobalEventCounter**  Counts the number of events for this provider.
-- **PackageVersion**  The package version label.
-- **UsoFrequencyKey**  Indicates whether the USO frequency key was found on the device (true/false).
-
-
-### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterScanStarted
-
-This event sends telemetry that USO scan has been started. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **ExpediteErrorBitMap**  Bit map value for any error code.
-- **ExpediteHoursOfUpTimeSincePolicy**  The number of hours the device has been active since it received a policy.
-- **ExpeditePolicyId**  The policy Id of the expedite request.
-- **ExpediteResult**  Boolean value for success or failure.
-- **ExpediteUpdaterCurrentUbr**  The UBR of the device.
-- **ExpediteUpdaterExpectedUbr**  The expected UBR of the device.
-- **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
-- **ExpediteUpdaterUsoIntiatedScan**  True when USO scan has been called.
-- **ExpediteUsoCorrelationVector**  The correlation vector for the current USO session.
-- **ExpediteUsoLastError**  The last error returned by USO.
-- **GlobalEventCounter**  Counts the number of events for this provider.
-- **PackageVersion**  The package version label.
-- **UsoFrequencyKey**  Indicates whether the USO frequency key was found on the device (true/false).
-
-
-### Microsoft.Windows.UpdateHealthTools.UnifiedInstallerEnd
-
-This event indicates that the unified installer has completed. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **GlobalEventCounter**  The event counter for telemetry events on the device for currency tools.
-- **PackageVersion**  The package version label for currency tools.
-- **UnifiedInstallerInstallResult**  The final result code for the unified installer.
-- **UnifiedInstallerPlatformResult**  The result code from determination of the platform type.
-- **UnifiedInstallerPlatformType**  The enum indicating the platform type.
-
-
-### Microsoft.Windows.UpdateHealthTools.UnifiedInstallerStart
-
-This event indicates that the installation has started for the unified installer. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  Counts the events at the global level for telemetry.
-- **PackageVersion**  The package version for currency tools.
-- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is AAD joined.
-- **UnifiedInstallerDeviceInDssPolicy**  Boolean indicating whether the device is found to be in a DSS policy.
-- **UnifiedInstallerDeviceInDssPolicyHresult**  The result code for checking whether the device is found to be in a DSS policy.
-- **UnifiedInstallerDeviceIsAADJoined**  Boolean indicating whether a device is AADJ.
-- **UnifiedInstallerDeviceIsAdJoined**  Boolean indicating whether a device is AD joined.
-- **UnifiedInstallerDeviceIsAdJoinedHresult**  The result code for checking whether a device is AD joined.
-- **UnifiedInstallerDeviceIsEducationSku**  Boolean indicating whether a device is Education SKU.
-- **UnifiedInstallerDeviceIsEducationSkuHresult**  The result code from checking whether a device is Education SKU.
-- **UnifiedInstallerDeviceIsEnterpriseSku**  Boolean indicating whether a device is Enterprise SKU.
-- **UnifiedInstallerDeviceIsEnterpriseSkuHresult**  The result code from checking whether a device is Enterprise SKU.
-- **UnifiedInstallerDeviceIsHomeSku**  Boolean indicating whether a device is Home SKU.
-- **UnifiedInstallerDeviceIsHomeSkuHresult**  The result code from checking whether device is Home SKU.
-- **UnifiedInstallerDeviceIsMdmManaged**  Boolean indicating whether a device is MDM managed.
-- **UnifiedInstallerDeviceIsMdmManagedHresult**  The result code from checking whether a device is MDM managed.
-- **UnifiedInstallerDeviceIsProSku**  Boolean indicating whether a device is Pro SKU.
-- **UnifiedInstallerDeviceIsProSkuHresult**  The result code from checking whether a device is Pro SKU.
-- **UnifiedInstallerDeviceIsSccmManaged**  Boolean indicating whether a device is SCCM managed.
-- **UnifiedInstallerDeviceIsSccmManagedHresult**  The result code from checking whether a device is SCCM managed.
-- **UnifiedInstallerDeviceWufbManaged**  Boolean indicating whether a device is Wufb managed.
-- **UnifiedInstallerDeviceWufbManagedHresult**  The result code from checking whether a device is Wufb managed.
-- **UnifiedInstallerPlatformResult**  The result code from checking what platform type the device is.
-- **UnifiedInstallerPlatformType**  The enum indicating the type of platform detected.
-- **UnifiedInstUnifiedInstallerDeviceIsHomeSkuHresultllerDeviceIsHomeSku**  The result code from checking whether a device is Home SKU.
-
-
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsBlobNotificationRetrieved
-
-This event is sent when a blob notification is received. The data collected with this event is used to help keep Windows up to date and secure.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **GlobalEventCounter**  Counts the number of events for this provider.
-- **PackageVersion**  The package version of the label.
-- **UpdateHealthToolsBlobNotificationNotEmpty**  True if the blob notification is not empty.
-
-
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsDeviceInformationUploaded
-
-This event is received when the UpdateHealthTools service uploads device information. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  Current package version of remediation.
-- **UpdateHealthToolsDeviceUbrChanged**  1 if the Ubr just changed, 0 otherwise.
-- **UpdateHealthToolsDeviceUri**  The URI to be used for push notifications on this device.
-
-
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsDeviceInformationUploadFailed
-
-This event provides information for device which failed to upload the details. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **GlobalEventCounter**  Telemetry event counter.
-- **PackageVersion**  Version label of the package sending telemetry.
-- **UpdateHealthToolsEnterpriseActionResult**  Result of running the tool expressed as an HRESULT.
-
-
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsPushNotificationCompleted
-
-This event is received when a push notification has been completed by the UpdateHealthTools service. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  Current package version of UpdateHealthTools.
-- **UpdateHealthToolsEnterpriseActionResult**  The HRESULT return by the enterprise action.
-- **UpdateHealthToolsEnterpriseActionType**  Enum describing the type of action requested by the push.
-
-
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsPushNotificationReceived
-
-This event is received when the UpdateHealthTools service receives a push notification. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  Current package version of UpdateHealthTools.
-- **UpdateHealthToolsDeviceUri**  The URI to be used for push notifications on this device.
-- **UpdateHealthToolsEnterpriseActionType**  Enum describing the type of action requested by the push.
-- **UpdateHealthToolsPushCurrentChannel**  The channel used to receive notification.
-- **UpdateHealthToolsPushCurrentRequestId**  The request ID for the push.
-- **UpdateHealthToolsPushCurrentResults**  The results from the push request.
-- **UpdateHealthToolsPushCurrentStep**  The current step for the push notification.
-
-
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsPushNotificationStatus
-
-This event is received when there is status on a push notification. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  Current package version of UpdateHealthTools.
-- **UpdateHealthToolsDeviceUri**  The URI to be used for push notifications on this device.
-- **UpdateHealthToolsEnterpriseActionType**  Enum describing the type of action requested by the push.
-- **UpdateHealthToolsPushCurrentRequestId**  The request ID for the push.
-- **UpdateHealthToolsPushCurrentResults**  The results from the push request.
-- **UpdateHealthToolsPushCurrentStep**  The current step for the push notification
-
-
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlobDocumentDetails
-
-The event indicates the details about the blob used for update health tools. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  A correlation vector.
-- **GlobalEventCounter**  This is a client side counter which indicates ordering of events sent by the user.
-- **PackageVersion**  The package version of the label.
-- **UpdateHealthToolsDevicePolicyFileName**  The default name of the policy blob file.
-- **UpdateHealthToolsDssDeviceApiSegment**  The URI segment for reading the DSS device pointer.
-- **UpdateHealthToolsDssDeviceId**  The AAD ID of the device used to create the device ID hash.
-- **UpdateHealthToolsDssDevicePolicyApiSegment**  The segment of the device policy API pointer.
-- **UpdateHealthToolsDssTenantId**  The tenant id of the device used to create the tenant id hash.
-- **UpdateHealthToolsHashedDeviceId**  The SHA256 hash of the device id.
-- **UpdateHealthToolsHashedTenantId**  The SHA256 hash of the device tenant id.
-
-
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoDSSJoin
-
-The event is sent when the device is not joined to AAD. The data collected with this event is used to help keep Windows up to date and secure.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **GlobalEventCounter**  The global event counter counts the total events for the provider.
-- **PackageVersion**  The version for the current package.
-
-
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceIsDSSJoin
-
-This event is sent when a device has been detected as DSS device. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  A correlation vector.
-- **GlobalEventCounter**  This is a client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  The package version of the label.
-
-
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceStarted
-
-This event is sent when the service first starts. It is a heartbeat indicating that the service is available on the device. The data collected with this event is used to help keep Windows secure and up to date.
-
-The following fields are available:
-
-- **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  Current package version of remediation.
+- **HRESULT**  Error, if any, that occurred during evaluation. (Note that if errors encountered during individual checks do not affect the overall result of the evaluation, those errors will be reported in NodeEvaluationData, but this HRESULT will still be zero.)
+- **Id**  GUID passed in by the caller to identify the evaluation.
+- **NodeEvaluationData**  Structure showing the results of individual checks that occurred during the overall evaluation.
+- **Result**  Overall result generated by the evaluation.
 
 
 ### wilActivity
@@ -9903,6 +9643,85 @@ The following fields are available:
 
 
 ## Windows Update mitigation events
+
+### Microsoft.Windows.Mitigations.AllowInPlaceUpgrade.ApplyTroubleshootingComplete
+
+This event provides summary information after attempting to enable In-Place Upgrade. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **applicable**  The operations that were needed to be attempted.
+- **failed**  Result of the individual operations that were attempted.
+- **hr**  Result of the overall operation to evaluate and enable In-Place Upgrade.
+
+
+### Microsoft.Windows.RecommendedTroubleshootingService.MitigationFailed
+
+This event is raised after an executable delivered by Mitigation Service has run and failed. Data from this event is used to measure the health of mitigations used by engineers to solve in-market problems on internal, insider, and retail devices. Failure data will also be used for root-cause investigation by feature teams, as signal to halt mitigation rollout and, possible follow-up action on specific devices still impacted by the problem because the mitigation failed (i.e. reoffer it to impacted devices). The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **activeProcesses**  Number of active processes.
+- **atleastOneMitigationSucceeded**  Bool flag indicating if at least one mitigation succeeded.
+- **contactTSServiceAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to get Troubleshooter metadata from the Troubleshooting cloud service.
+- **countDownloadedPayload**  Count instances of payload downloaded.
+- **description**  Description of failure.
+- **devicePreference**  Recommended Troubleshooting Setting on the device.
+- **downloadBinaryAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to download Troubleshooter Exe.
+- **downloadCabAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to download PrivilegedActions Cab.
+- **executionHR**  HR code of the execution of the mitigation.
+- **executionPreference**  Current Execution level Preference. This may not be same as devicePreference, eg when executing Critical troubleshooters, the executionPreference is set to the Silent option.
+- **exitCode**  Exit code of the execution of the mitigation.
+- **experimentFeatureId**  Experiment feature ID.
+- **experimentFeatureState**  Config state of the experiment.
+- **hr**  HRESULT for error code.
+- **isActiveSessionPresent**  If an active user session is present on the device.
+- **isCriticalMitigationAvailable**  If a critical mitigation is available to this device.
+- **isFilteringSuccessful**  If the filtering operation was successful.
+- **isReApply**  reApply status for the mitigation.
+- **mitigationId**  ID value of the mitigation.
+- **mitigationProcessCycleTime**  Process cycle time used by the mitigation.
+- **mitigationRequestWithCompressionFailed**  Boolean flag indicating if HTTP request with compression failed for this device.
+- **mitigationServiceResultFetched**  Boolean flag indicating if mitigation details were fetched from the admin service.
+- **mitigationVersion**  String indicating version of the mitigation.
+- **oneSettingsMetadataParsed**  If OneSettings metadata was parsed successfully.
+- **oneSettingsSchemaVersion**  Schema version used by the OneSettings parser.
+- **onlyNoOptMitigationsPresent**  Checks if all mitigations were no opt.
+- **parsedOneSettingsFile**  Indicates if OneSettings parsing was successful.
+- **sessionAttempts**  Number of Scanner sessions attempted so far by TroubleshootingSvc for this troubleshooter.
+- **SessionId**  Random GUID used for grouping events in a session.
+- **subType**  Error type.
+- **totalKernelTime**  Total kernel time used by the mitigation.
+- **totalNumberOfApplicableMitigations**  Total number of applicable mitigations.
+- **totalProcesses**  Total number of processes assigned to the job object.
+- **totalTerminatedProcesses**  Total number of processes in terminated state assigned to the job object.
+- **totalUserTime**  Total user mode time used by the job object.
+
+
+### Microsoft.Windows.RecommendedTroubleshootingService.MitigationSucceeded
+
+This event is raised after an executable delivered by Mitigation Service has successfully run. Data from this event is used to measure the health of mitigations used by engineers to solve in-market problems on internal, insider, and retail devices. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **activeProcesses**  Number of active processes.
+- **contactTSServiceAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to get Troubleshooter metadata from the Troubleshooting cloud service.
+- **devicePreference**  Recommended troubleshooting setting on the device.
+- **downloadBinaryAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to download Troubleshooter Exe.
+- **downloadCabAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to download PrivilegedActions Cab.
+- **executionPreference**  Current Execution level Preference. This may not be same as devicePreference, for example, when executing Critical troubleshooters, the executionPreference is set to the Silent option.
+- **experimentFeatureId**  Experiment feature ID.
+- **experimentFeatureState**  Feature state for the experiment.
+- **mitigationId**  ID value of the mitigation.
+- **mitigationProcessCycleTime**  Process cycle time used by the mitigation.
+- **mitigationVersion**  String indicating version of the mitigation.
+- **sessionAttempts**  Number of Scanner sessions attempted so far by TroubleshootingSvc for this troubleshooter.
+- **SessionId**  Random GUID used for grouping events in a session.
+- **totalKernelTime**  Total kernel time used by the mitigation.
+- **totalProcesses**  Total number of processes assigned to the job object.
+- **totalTerminatedProcesses**  Total number of processes in terminated state assigned to the job object.
+- **totalUserTime**  Total user mode time used by the job object.
+
 
 ### Mitigation360Telemetry.MitigationCustom.CleanupSafeOsImages
 
