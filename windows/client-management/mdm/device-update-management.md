@@ -79,7 +79,7 @@ The response of the GetUpdateData call returns an array of ServerSyncUpdateData 
 
 - **UpdateID** – The unique identifier for an update
 - **RevisionNumber** – Revision number for the update in case the update was modified.
-- **CreationDate** – the date on which this update was created.
+- **CreationDate** – The date on which this update was created.
 - **UpdateType** – The type of update which could include the following:
     - **Detectoid** – if this update identity represents a compatibility logic
     - **Category** – This could represent either of the following:
@@ -966,4 +966,3 @@ Set auto update to notify and defer.
 The following diagram and screenshots show the process flow of the device update process using Windows Server Update Services and Microsoft Update Catalog.
 
 ![mdm device update management screenshot3](images/deviceupdatescreenshot3.png)![mdm device update management screenshot4](images/deviceupdatescreenshot4.png)![mdm device update management screenshot5](images/deviceupdatescreenshot5.png)![mdm device update management screenshot6](images/deviceupdatescreenshot6.png)![mdm device update management screenshot7](images/deviceupdatescreenshot7.png)![mdm device update management screenshot8](images/deviceupdatescreenshot8.png)![mdm device update management screenshot9](images/deviceupdatescreenshot9.png)
-
