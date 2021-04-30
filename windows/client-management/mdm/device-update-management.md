@@ -84,7 +84,7 @@ The response of the GetUpdateData call returns an array of ServerSyncUpdateData 
     - **Detectoid** – If this update identity represents a compatibility logic.
     - **Category** – This could represent either of the following:
         - A Product category the update belongs to. For example, Windows, Microsoft Office, etc.
-        - The classification the update belongs to. For example, Drivers, security etc.
+        - The classification the update belongs to. For example, Drivers, security, etc.
     - **Software** – If the update is a software update.
     - **Driver** – if the update is a driver update.
 - **LocalizedProperties** – represents the language the update is available in, title and description of the update. It has the following fields:
