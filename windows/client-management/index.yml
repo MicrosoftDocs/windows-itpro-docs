@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/23/2021 #Required; mm/dd/yyyy format.
+  ms.date: 04/30/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -22,69 +22,46 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Manage Windows 10 settings 
+  - title: Device management
     linkLists:
       - linkListType: overview
         links:
-          - text: Manage the Windows 10 Start and taskbar layout
-            url: windows-10-start-layout-options-and-policies.md
-          - text: Configure Windows Spotlight on the lock screen
-            url: windows-spotlight.md
-          - text: Customize the Windows 10 Start and taskbar with Group Policy
-            url: customize-windows-10-start-screens-by-using-group-policy.md
+          - text: Mobile device management (MDM)
+            url: mdm/index.md
+          - text: MDM for device updates
+            url: mdm/device-update-management.md
+          - text: Enroll a Windows 10 device automatically using Group Policy
+            url: mdm/enroll-a-windows-10-device-automatically-using-group-policy.md
+          - text: Administrative Tools in Windows 10
+            url: administrative-tools-in-windows-10.md
+          - text: Create mandatory user profiles
+            url: mandatory-user-profile.md
+
+  # Card (optional)
+  - title: Configuration Service Provider (CSP)
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: CSP reference
+            url: mdm/configuration-service-provider-reference.md
+          - text: DynamicManagement CSP
+            url: mdm/dynamicmanagement-csp.md
+          - text: BitLocker CSP
+            url: mdm/bitlocker-csp.md
+          - text: Policy CSP - Update
+            url: mdm/policy-csp-update.md
 
 
   # Card (optional)
-  - title: Configure a Windows 10 kiosk
+  - title: Troubleshoot Windows clients
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
-          - text: Guidelines for choosing an app for assigned access
-            url: guidelines-for-assigned-access-app.md
-          - text: Set up a single-app kiosk
-            url: kiosk-single-app.md
-          - text: Set up a multi-app kiosk
-            url: lock-down-windows-10-to-specific-apps.md
-
-
-  # Card (optional)
-  - title: Windows 10 provisioning packages
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Install Windows Configuration Designer
-            url: provisioning-packages/provisioning-install-icd.md
-          - text: Provisioning packages for Windows 10
-            url: provisioning-packages/provisioning-packages.md
-
-  # Card (optional)
-  - title: Use Windows Configuration Designer (WCD)
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Windows Configuration Designer (WCD) reference
-            url: wcd/wcd.md
-          - text: WCD policies reference
-            url: wcd/wcd-policies.md
-          - text:  WCD OOBE reference
-            url: wcd/wcd-oobe.md
-
-  # Card (optional)
-  - title: Configure Cortana in Windows 10
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Configure Cortana in Windows 10
-            url: cortana-at-work/cortana-at-work-overview.md
-          - text: Custom voice commands in Cortana 
-            url: cortana-at-work/cortana-at-work-voice-commands.md
-
-  # Card (optional)
-  - title: User Experience Virtualization (UE-V) for Windows 10
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: UE-V for Windows 10 overview
-            url: ue-v/uev-for-windows.md
-          - text: Get Started with UE-V
-            url: ue-v/uev-getting-started.md
+          - text: Troubleshoot Windows 10 clients
+            url: windows-10-support-solutions.md
+          - text: Advanced troubleshooting for Windows networking
+            url: troubleshoot-networking.md
+          - text: Advanced troubleshooting for Windows start-up
+            url: troubleshoot-networking.md
+          - text: Advanced troubleshooting for Windows networking
+            url: troubleshoot-windows-startup.md

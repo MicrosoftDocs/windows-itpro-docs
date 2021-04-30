@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting Windows 10
+title: Windows 10 support solutions
 description: Learn where to find information about troubleshooting Windows 10 issues, for example Bitlocker issues and bugcheck errors.
 ms.reviewer: kaushika
 manager: dansimp
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.topic: troubleshooting
 ---
 
-# Troubleshoot Windows 10 client
+# Windows 10 support solutions
 
 Microsoft regularly releases both updates for Windows Server. To ensure your servers can receive future updates, including security updates, it's important to keep your servers updated. Check out - [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/en-us/help/4000825/windows-10-windows-server-2016-update-history) for a complete list of released updates.
 
