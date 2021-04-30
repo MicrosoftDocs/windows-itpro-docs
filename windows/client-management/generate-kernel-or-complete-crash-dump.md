@@ -78,6 +78,9 @@ To do this, follow these steps:
 
 > [!IMPORTANT]  
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/help/322756) in case problems occur.
+ 
+> [!NOTE]
+> This registry key is not required for clients running Windows 8 and later, or servers running Windows Server 2012 and later. Setting this registry key on later versions of Windows has no effect.
 
 1. In Registry Editor, locate the following registry subkey:
 

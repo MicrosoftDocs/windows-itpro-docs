@@ -38,9 +38,6 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 | Enterprise LTSB  | ![no](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
 | Pro Education | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Education  | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Mobile | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Mobile Enterprise  | ![yes](images/checkmark.png)  | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-
 
 
 >[!NOTE]
@@ -70,12 +67,6 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 
     ../Vendor/MSFT/Policy/Config/Update/**BranchReadinessLevel**
     
-**To assign Windows 10 Mobile Enterprise devices to the Semi-Annual Channel by using MDM**
-
-
-- In Windows 10 Mobile Enterprise, version 1607 and later releases:
-
-    ../Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel
 
 ## Enroll devices in the Windows Insider Program
 

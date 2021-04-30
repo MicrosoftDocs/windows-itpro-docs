@@ -194,7 +194,7 @@ On **MDT01**:
     2.  WinPE x64
     3.  Windows 10 x64
 3.  In the new Windows 10 x64 folder, create the following folder structure:
-    -   Dell Inc
+    -   Dell Inc.
         -   Latitude E7450
     -   Hewlett-Packard
         -   HP EliteBook 8560w
@@ -215,7 +215,7 @@ When you import drivers to the MDT driver repository, MDT creates a single insta
     2.  WinPE x64
     3.  Windows 10 x64
 3.  In the **Windows 10 x64** folder, create the following folder structure:
-    -   Dell Inc
+    -   Dell Inc.
         -   Latitude E7450
     -   Hewlett-Packard
         -   HP EliteBook 8560w
@@ -304,15 +304,15 @@ On **MDT01**:
 
 For the Dell Latitude E7450 model, you use the Dell Driver CAB file, which is accessible via the [Dell TechCenter website](https://go.microsoft.com/fwlink/p/?LinkId=619544).
 
-In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E7450 model to the **D:\\Drivers\\Dell Inc\\Latitude E7450** folder.
+In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E7450 model to the **D:\\Drivers\\Dell Inc.\\Latitude E7450** folder.
 
 On **MDT01**:
 
-1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Dell Inc** node.
+1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Dell Inc.** node.
 
 2.  Right-click the **Latitude E7450** folder and select **Import Drivers** and use the following Driver source directory to import drivers: 
 
-    **D:\\Drivers\\Windows 10 x64\\Dell Inc\\Latitude E7450**
+    **D:\\Drivers\\Windows 10 x64\\Dell Inc.\\Latitude E7450**
 
 ### For the HP EliteBook 8560w
 
