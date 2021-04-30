@@ -119,7 +119,7 @@ This provides an efficient way to pull in the information about the set of Micro
 
 ## <a href="" id="managingupdates"></a>Managing updates using OMA DM
 
-An MDM can manage updates via OMA DM. The details of how to use and integrate an MDM with the Windows OMA DM protocol, and how to enroll devices for MDM management, is documented the [Mobile device management](mobile-device-enrollment.md) topic. This section focuses on how to extend that integration to support update management. The key aspects of update management include the following:
+An MDM can manage updates via OMA DM. The details of how to use and integrate an MDM with the Windows OMA DM protocol, and how to enroll devices for MDM management, is documented in the [Mobile device management](mobile-device-enrollment.md) topic. This section focuses on how to extend that integration to support update management. The key aspects of update management include the following:
 
 - Configure automatic update policies to ensure devices stay up-to-date.
 - Get device compliance information (the list of updates that are needed but not yet installed)
