@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 ms.author: dansimp
-author: msfttracyp
+author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ---
