@@ -83,7 +83,7 @@ The response of the GetUpdateData call returns an array of ServerSyncUpdateData 
 - **UpdateType** – The type of update which could include the following:
     - **Detectoid** – If this update identity represents a compatibility logic.
     - **Category** – This could represent either of the following:
-        - A Product category the update belongs to. For example, Windows, MS office etc.
+        - A Product category the update belongs to. For example, Windows, Microsoft Office, etc.
         - The classification the update belongs to. For example, Drivers, security etc.
     - **Software** – If the update is a software update.
     - **Driver** – if the update is a driver update.
