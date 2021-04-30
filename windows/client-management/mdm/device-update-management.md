@@ -89,7 +89,7 @@ The response of the GetUpdateData call returns an array of ServerSyncUpdateData 
     - **Driver** – If the update is a driver update.
 - **LocalizedProperties** – Represents the language the update is available in, title, and description of the update. It has the following fields:
     - **Language** – The language code identifier (LCID). For example, en or es.
-    - **Title** – Title of the update. For example, “Windows SharePoint Services 3.0 Service Pack 3 x64 Edition (KB2526305)”
+    - **Title** – Title of the update. For example, “Windows SharePoint Services 3.0 Service Pack 3 x64 Edition (KB2526305)."
     - **Description** – Description of the update. For example, “Windows SharePoint Services 3.0 Service Pack 3 (KB2526305) provides the latest updates to Windows SharePoint Services 3.0. After you install this item, you may have to restart your computer. After you have installed this item, it cannot be removed.”
 - **KBArticleID** – The KB article number for this update that has details regarding the particular update. For example, <https://support.microsoft.com/kb/2902892>.
 
