@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Hybrid Azure AD joined Windows Hello for Business Provisioning
+# Hybrid Azure AD joined Windows Hello for Business Key Trust Provisioning
 
 **Applies to**
 -   Windows 10, version 1703 or later
