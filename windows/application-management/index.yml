@@ -26,7 +26,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Understand the different apps included in Windows 10
+          - text: Understand apps in Windows 10
             url: apps-in-windows-10.md
           - text: How to add apps and features to Windows 10
             url: add-apps-and-features.md
@@ -34,7 +34,6 @@ landingContent:
             url: sideload-apps-in-windows-10.md
           - text: Keep removed apps from returning during an update
             url: remove-provisioned-apps-during-update.md
-
 
   # Card (optional)
   - title: Application Virtualization (App-V) 
@@ -56,7 +55,6 @@ landingContent:
           - text: Technical Reference for App-V
             url: app-v/appv-technical-reference.md
 
-
   # Card (optional)
   - title: Windows System Services
     linkLists:
@@ -66,4 +64,5 @@ landingContent:
             url: svchost-service-refactoring.md
           - text: Per-user services in Windows
             url: per-user-services-in-windows.md
-
+          - text: Per-user services in Windows
+            url: per-user-services-in-windows.md
