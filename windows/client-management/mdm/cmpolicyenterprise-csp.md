@@ -235,7 +235,7 @@ Specifies the type of connection being referenced. The following list describes 
 
 - `CMST_CONNECTION_NETWORK_TYPE` – Any connection of the specified network type.
 
-- `CMST_CONNECTION_DEVICE_TYPE` – Any connection of the specified network type.
+- `CMST_CONNECTION_DEVICE_TYPE` – Any connection of a specified device type.
 
 ## OMA client provisioning examples
 
