@@ -16,7 +16,7 @@ items:
     - name: Repackage win32 apps in the MSIX format
       href: msix-app-packaging-tool.md
 - name: Application Virtualization (App-V) for Windows
-      items: 
+  items: 
     - name: App-V for Windows 10 overview
       href: app-v/appv-for-windows.md
     - name: Getting Started
