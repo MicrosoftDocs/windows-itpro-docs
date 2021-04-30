@@ -241,7 +241,7 @@ The following diagram shows the Update policies in a tree format.
 
 <p style="margin-left: 20px">Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft.
 
-<p style="margin-left: 20px">Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Microsoft
+<p style="margin-left: 20px">Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update and other services like Microsoft Update.
 
 <p style="margin-left: 20px">Enabling this policy will disable that functionality, and may cause connection to public services such as the Microsoft to stop working.
 
