@@ -233,7 +233,7 @@ Specifies the type of connection being referenced. The following list describes 
 
 - `CMST_CONNECTION_TYPE` – Any connection of a specified type.
 
-- `CMST_CONNECTION_NETWORK_TYPE` – Any connection of a specified device type.
+- `CMST_CONNECTION_NETWORK_TYPE` – Any connection of the specified network type.
 
 - `CMST_CONNECTION_DEVICE_TYPE` – Any connection of the specified network type.
 
@@ -500,4 +500,3 @@ Adding a host-based mapping policy:
 ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
