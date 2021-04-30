@@ -4599,43 +4599,43 @@ This event captures basic checksum data about the device inventory items stored 
 
 The following fields are available:
 
-- **Device**  A count of device objects in cache.
-- **DeviceCensus**  A count of device census objects in cache.
-- **DriverPackageExtended**  A count of driverpackageextended objects in cache.
-- **File**  A count of file objects in cache.
-- **FileSigningInfo**  A count of file signing objects in cache.
-- **Generic**  A count of generic objects in cache.
-- **HwItem**  A count of hwitem objects in cache.
-- **InventoryAcpiPhatHealthRecord**  No content is currently available.
-- **InventoryAcpiPhatVersionElement**  No content is currently available.
-- **InventoryApplication**  A count of application objects in cache.
-- **InventoryApplicationAppV**  A count of application AppV objects in cache.
-- **InventoryApplicationDriver**  A count of application driver objects in cache
-- **InventoryApplicationFile**  A count of application file objects in cache.
-- **InventoryApplicationFramework**  A count of application framework objects in cache
-- **InventoryApplicationShortcut**  A count of application shortcut objects in cache
-- **InventoryDeviceContainer**  A count of device container objects in cache.
-- **InventoryDeviceInterface**  A count of Plug and Play device interface objects in cache.
-- **InventoryDeviceMediaClass**  A count of device media objects in cache.
-- **InventoryDevicePnp**  A count of device Plug and Play objects in cache.
-- **InventoryDeviceSensor**  No content is currently available.
-- **InventoryDeviceUsbHubClass**  A count of device usb objects in cache
-- **InventoryDriverBinary**  A count of driver binary objects in cache.
-- **InventoryDriverPackage**  A count of device objects in cache.
-- **InventoryMiscellaneousOfficeAddIn**  A count of office add-in objects in cache
-- **InventoryMiscellaneousOfficeAddInUsage**  A count of office add-in usage objects in cache.
-- **InventoryMiscellaneousOfficeIdentifiers**  A count of office identifier objects in cache
-- **InventoryMiscellaneousOfficeIESettings**  A count of office ie settings objects in cache
-- **InventoryMiscellaneousOfficeInsights**  A count of office insights objects in cache
-- **InventoryMiscellaneousOfficeProducts**  A count of office products objects in cache
-- **InventoryMiscellaneousOfficeSettings**  A count of office settings objects in cache
-- **InventoryMiscellaneousOfficeVBA**  A count of office vba objects in cache
-- **InventoryMiscellaneousOfficeVBARuleViolations**  A count of office vba rule violations objects in cache
-- **InventoryMiscellaneousUUPInfo**  A count of uup info objects in cache
-- **InventoryVersion**  No content is currently available.
-- **Metadata**  A count of metadata objects in cache.
-- **Orphan**  A count of orphan file objects in cache.
-- **Programs**  A count of program objects in cache.
+- **Device**  A count of device objects in the cache.
+- **DeviceCensus**  A count of device census objects in the cache.
+- **DriverPackageExtended**  A count of driverpackageextended objects in the cache.
+- **File**  A count of file objects in the cache.
+- **FileSigningInfo**  A count of file signing objects in the cache.
+- **Generic**  A count of generic objects in the cache.
+- **HwItem**  A count of hwitem objects in the cache.
+- **InventoryAcpiPhatHealthRecord**  A count of ACPI PHAT health record objects in the cache.
+- **InventoryAcpiPhatVersionElement**  A count of ACPI PHAT version element objects in the cache.
+- **InventoryApplication**  A count of application objects in the cache.
+- **InventoryApplicationAppV**  A count of application AppV objects in the cache.
+- **InventoryApplicationDriver**  A count of application driver objects in the cache
+- **InventoryApplicationFile**  A count of application file objects in the cache.
+- **InventoryApplicationFramework**  A count of application framework objects in the cache
+- **InventoryApplicationShortcut**  A count of application shortcut objects in the cache
+- **InventoryDeviceContainer**  A count of device container objects in the cache.
+- **InventoryDeviceInterface**  A count of Plug and Play device interface objects in the cache.
+- **InventoryDeviceMediaClass**  A count of device media objects in the cache.
+- **InventoryDevicePnp**  A count of device Plug and Play objects in the cache.
+- **InventoryDeviceSensor**  A count of device sensor objects in the cache.
+- **InventoryDeviceUsbHubClass**  A count of device usb objects in the cache
+- **InventoryDriverBinary**  A count of driver binary objects in the cache.
+- **InventoryDriverPackage**  A count of device objects in the cache.
+- **InventoryMiscellaneousOfficeAddIn**  A count of office add-in objects in the cache
+- **InventoryMiscellaneousOfficeAddInUsage**  A count of office add-in usage objects in the cache.
+- **InventoryMiscellaneousOfficeIdentifiers**  A count of office identifier objects in the cache.
+- **InventoryMiscellaneousOfficeIESettings**  A count of office ie settings objects in the cache.
+- **InventoryMiscellaneousOfficeInsights**  A count of office insights objects in the cache.
+- **InventoryMiscellaneousOfficeProducts**  A count of office products objects in the cache.
+- **InventoryMiscellaneousOfficeSettings**  A count of office settings objects in the cache.
+- **InventoryMiscellaneousOfficeVBA**  A count of office vba objects in the cache.
+- **InventoryMiscellaneousOfficeVBARuleViolations**  A count of office vba rule violations objects in the cache.
+- **InventoryMiscellaneousUUPInfo**  A count of uup info objects in the cache.
+- **InventoryVersion**  The version of the inventory components.
+- **Metadata**  A count of metadata objects in the cache.
+- **Orphan**  A count of orphan file objects in the cache.
+- **Programs**  A count of program objects in the cache.
 
 
 ### Microsoft.Windows.Inventory.Core.AmiTelCacheVersions
