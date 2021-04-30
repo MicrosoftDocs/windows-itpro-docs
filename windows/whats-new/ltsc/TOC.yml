@@ -1,0 +1,9 @@
+- name: Windows 10 Enterprise LTSC
+  href: index.md
+  items: 
+    - name: What's new in Windows 10 Enterprise LTSC 2019
+      href: whats-new-windows-10-2019.md
+    - name: What's new in Windows 10 Enterprise LTSC 2016
+      href: whats-new-windows-10-2016.md
+    - name: What's new in Windows 10 Enterprise LTSC 2015
+      href: whats-new-windows-10-2015.md

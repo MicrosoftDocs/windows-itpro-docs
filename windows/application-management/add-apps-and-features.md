@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: article
 ms.author: dansimp
-author: msfttracyp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 04/26/2018
 ms.reviewer: 

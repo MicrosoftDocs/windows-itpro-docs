@@ -1,5 +1,5 @@
 ---
-title: Example WDAC base policies (Windows 10)
+title: Example Windows Defender Application Control (WDAC) base policies (Windows 10)
 description: When creating a WDAC policy for an organization, start from one of the many available example base policies.
 keywords: security, malware
 ms.topic: article
@@ -12,30 +12,30 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
 ms.date: 11/15/2019
 ms.technology: mde
 ---
 
-# Windows Defender Application Control example base policies
+# Windows Defender Application Control (WDAC) example base policies
 
 **Applies to:**
 
 - Windows 10
 - Windows Server 2016 and above
 
-When creating policies for use with Windows Defender Application Control (WDAC), it is recommended to start from an existing base policy and then add or remove rules to build your own custom policy XML files. Windows includes several example policies which can be used, or organizations which use the Device Guard Signing Service can download a starter policy from that service.
+When creating policies for use with Windows Defender Application Control (WDAC), start from an existing base policy and then add or remove rules to build your own custom policy. Windows includes several example policies that can be used, or organizations that use the Device Guard Signing Service can download a starter policy from that service.
 
 ## Example Base Policies
 
 | **Example Base Policy** | **Description** | **Where it can be found** |
 |----------------------------|---------------------------------------------------------------|--------|
-| **DefaultWindows.xml** | This example policy is available in either audit or enforce mode. It includes the rules necessary to ensure that Windows, 3rd party hardware and software kernel drivers, and Windows Store apps will run. Used as the basis for all [Microsoft Endpoint Manager(MEM)](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) policies. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
+| **DefaultWindows.xml** | This example policy is available in both audit and enforced mode. It includes rules to allow Windows, third-party hardware and software kernel drivers, and Windows Store apps. Used as the basis for all [Microsoft Endpoint Manager(MEM)](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) policies. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
 | **AllowMicrosoft.xml** | This example policy is available in audit mode. It includes the rules from DefaultWindows and adds rules to trust apps signed by the Microsoft product root certificate. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
-| **AllowAll.xml** | This example policy is useful when creating a block list policy. All block policies should include rules allowing all other code to run and then add the DENY rules for your organization's needs. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
+| **AllowAll.xml** | This example policy is useful when creating a blocklist. All block policies should include rules allowing all other code to run and then add the DENY rules for your organization's needs. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
 | **AllowAll_EnableHVCI.xml** | This example policy can be used to enable [memory integrity](/windows/security/threat-protection/device-guard/memory-integrity) (also known as hypervisor-protected code integrity) using WDAC. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
-| **DenyAllAudit.xml** | This example policy should only be deployed in audit mode and can be used to audit all binaries running on critical systems or to comply with regulatory requirements. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
-| **Device Guard Signing Service (DGSS) DefaultPolicy.xml** | This example policy is available in audit mode. It includes the rules from DefaultWindows and adds rules to trust apps signed with your organization-specific certificates issued by the DGSS. | [DGSS in the Microsoft Store for Business](https://businessstore.microsoft.com/manage/settings/devices) |
-| **MEM Configuration Manager** | Customers who use MEM Configuration Manager (MEMCM), formerly known as System Center Configuration Manager, can deploy a policy to a device using MEMCM's built-in integration with WDAC and then copy the resulting policy XML to use as a custom base policy. | %OSDrive%\Windows\CCM\DeviceGuard on a managed endpoint |
+| **DenyAllAudit.xml** | Only deploy this example policy in audit mode to track all binaries running on critical systems or to meet regulatory requirements. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
+| **Device Guard Signing Service (DGSS) DefaultPolicy.xml** | This example policy is available in audit mode. It includes the rules from DefaultWindows and adds rules to trust apps signed with your organization-specific certificates issued by the DGSS. | [Device Guard Signing Service NuGet Package](https://www.nuget.org/packages/Microsoft.Acs.Dgss.Client) |
+| **MEM Configuration Manager** | Customers who use MEM Configuration Manager (MEMCM) can deploy a policy with MEMCM's built-in WDAC integration, and then use the generated policy XML as an example base policy. | %OSDrive%\Windows\CCM\DeviceGuard on a managed endpoint |

@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 ms.author: dansimp
-author: msfttracyp
+author: dansimp
 ms.date: 09/14/2017
 ms.reviewer: 
 manager: dansimp
