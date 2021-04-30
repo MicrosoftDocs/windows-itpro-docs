@@ -1,5 +1,5 @@
 ---
-title: Hybrid Windows Hello for Business Provisioning (Windows Hello for Business)
+title: Hybrid Azure AD joined Windows Hello for Business Provisioning (Windows Hello for Business)
 description: In this article, learn about provisioning for hybrid certificate trust deployments of Windows Hello for Businesss.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
@@ -13,10 +13,10 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/19/2018
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Hybrid Windows Hello for Business Provisioning
+# Hybrid Azure AD joined Windows Hello for Business Provisioning
 
 **Applies to**
 -   Windows 10, version 1703 or later

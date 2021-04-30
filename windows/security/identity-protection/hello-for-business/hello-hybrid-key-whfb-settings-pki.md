@@ -1,5 +1,5 @@
 ---
-title: Configure Hybrid key trust Windows Hello for Business
+title: Configure Hybrid Azure AD joined key trust Windows Hello for Business
 description: Configuring Hybrid key trust Windows Hello for Business - Public Key Infrastructure (PKI)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, PKI, Windows Hello, key trust, key-trust
 ms.prod: w10
@@ -17,7 +17,7 @@ ms.date: 04/30/2021
 ms.reviewer: 
 ---
 
-# Configure Hybrid Windows Hello for Business: Public Key Infrastructure
+# Configure Hybrid Azure AD joined Windows Hello for Business: Public Key Infrastructure
 
 **Applies to**
 

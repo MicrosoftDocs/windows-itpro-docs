@@ -1,5 +1,5 @@
 ---
-title: Hybrid Key trust Windows Hello for Business Prerequisites (Windows Hello for Business)
+title: Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites (Windows Hello for Business)
 description: Learn about the prerequisites for hybrid Windows Hello for Business deployments using key trust and what the next steps are in the deployment process.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
 ms.prod: w10
@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Hybrid Key trust Windows Hello for Business Prerequisites
+# Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites
 
 **Applies to**
 -   Windows 10, version 1703 or later
