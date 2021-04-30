@@ -230,7 +230,7 @@ Supported product status values:
 - Service started without any malware protection engine            = 1 << 1
 - Pending full scan due to threat action                           = 1 << 2
 - Pending reboot due to threat action                              = 1 << 3
-- ending manual steps due to threat action                         = 1 << 4
+- Ending manual steps due to threat action                         = 1 << 4
 - AV signatures out of date                                        = 1 << 5
 - AS signatures out of date                                        = 1 << 6
 - No quick scan has happened for a specified period                = 1 << 7
