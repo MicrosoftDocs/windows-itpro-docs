@@ -81,7 +81,7 @@ The response of the GetUpdateData call returns an array of ServerSyncUpdateData 
 - **RevisionNumber** – Revision number for the update in case the update was modified.
 - **CreationDate** – The date on which this update was created.
 - **UpdateType** – The type of update which could include the following:
-    - **Detectoid** – if this update identity represents a compatibility logic
+    - **Detectoid** – If this update identity represents a compatibility logic.
     - **Category** – This could represent either of the following:
         - A Product category the update belongs to. For example, Windows, MS office etc.
         - The classification the update belongs to. For example, Drivers, security etc.
