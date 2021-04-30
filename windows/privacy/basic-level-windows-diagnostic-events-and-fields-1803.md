@@ -4340,19 +4340,6 @@ The following fields are available:
 
 - **winInetError**  The HResult of the operation.
 
-
-## Other events
-
-### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
-
-This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
-
-The following fields are available:
-
-- **pszBatteryDataXml**  Battery performance data.
-- **szBatteryInfo**  Battery performance data.
-
-
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -5446,6 +5433,16 @@ The following fields are available:
 - **UpdateId**  The update ID for a specific piece of content.
 - **ValidityWindowInDays**  The validity window that's in effect when verifying the timestamp.
 
+## Surface events
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
+
+This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
+
+The following fields are available:
+
+- **pszBatteryDataXml**  Battery performance data.
+- **szBatteryInfo**  Battery performance data.
 
 ## Update Assistant events
 

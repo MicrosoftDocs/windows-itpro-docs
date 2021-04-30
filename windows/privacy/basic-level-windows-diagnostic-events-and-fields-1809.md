@@ -5716,36 +5716,6 @@ The following fields are available:
 - **totalRunDuration**  Total running/evaluation time from last time.
 - **totalRuns**  Total number of running/evaluation from last time.
 
-
-## Other events
-
-### Microsoft.ServerManagementExperience.Gateway.Service.ManagedNodeProperties
-
-This is a periodic rundown event that contains more detailed information about the nodes added to this Windows Admin Center gateway for management.
-
-The following fields are available:
-
-- **nodeId**  The nodeTypeId concatenated with the hostname or IP address that gateway uses to connect to this node.
-- **nodeOperatingSystem**  A user friendly description of the node's OS version.
-- **nodeOSVersion**  A major or minor build version string for the node's OS.
-- **nodeTypeId**  A string that distinguishes between a connection target, whether it is a client, server, cluster or a hyper-converged cluster.
-- **otherProperties**  Contains a JSON object with variable content and may contain: "nodes": a list of host names or IP addresses of the servers belonging to a cluster, "aliases": the alias if it is set for this connection, "lastUpdatedTime": the number of milliseconds since Unix epoch when this connection was last updated, "ncUri", "caption", "version", "productType", "networkName", "operatingSystem", "computerManufacturer", "computerModel", "isS2dEnabled". This JSON object is formatted as an quotes-escaped string.
-
-
-### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
-
-This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
-
-The following fields are available:
-
-- **batteryData.data()**  Battery performance data.
-- **BatteryDataSize:**  Size of the battery performance data.
-- **batteryInfo.data()**  Battery performance data.
-- **BatteryInfoSize:**  Size of the battery performance data.
-- **pszBatteryDataXml**  Battery performance data.
-- **szBatteryInfo**  Battery performance data.
-
-
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -6955,6 +6925,20 @@ The following fields are available:
 - **UpdateId**  The update ID for a specific piece of content.
 - **ValidityWindowInDays**  The validity window that's in effect when verifying the timestamp.
 
+## Surface events
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
+
+This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
+
+The following fields are available:
+
+- **batteryData.data()**  Battery performance data.
+- **BatteryDataSize:**  Size of the battery performance data.
+- **batteryInfo.data()**  Battery performance data.
+- **BatteryInfoSize:**  Size of the battery performance data.
+- **pszBatteryDataXml**  Battery performance data.
+- **szBatteryInfo**  Battery performance data.
 
 ## System Resource Usage Monitor events
 
@@ -8177,7 +8161,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Kits.WSK.WskImageCreate
 
-This event sends simple Product and Service usage data when a user is using the Windows System Kit to create new OS “images”. The data includes the version of the Windows System Kit and the state of the event and is used to help investigate “image” creation failures. The data collected with this event is used to keep Windows performing properly.
+This event sends simple data when a user is using the Windows System Kit to create new OS “images”. The data includes the version of the Windows System Kit and the state of the event and is used to help investigate “image” creation failures. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
@@ -8192,7 +8176,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Kits.WSK.WskImageCustomization
 
-This event sends simple Product and Service usage data when a user is using the Windows System Kit to create/modify configuration files allowing the customization of a new OS image with Apps or Drivers. The data includes the version of the Windows System Kit, the state of the event, the customization type (drivers or apps) and the mode (new or updating) and is used to help investigate configuration file creation failures. The data collected with this event is used to keep Windows performing properly.
+This event sends simple data when a user is using the Windows System Kit to create/modify configuration files allowing the customization of a new OS image with Apps or Drivers. The data includes the version of the Windows System Kit, the state of the event, the customization type (drivers or apps) and the mode (new or updating) and is used to help investigate configuration file creation failures. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 

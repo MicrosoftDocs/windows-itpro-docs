@@ -3028,22 +3028,6 @@ The following fields are available:
 
 - **winInetError**  The HResult of the operation.
 
-
-## Other events
-
-### Microsoft.ServerManagementExperience.Gateway.Service.ManagedNodeProperties
-
-This is a periodic rundown event that contains more detailed information about the nodes added to this Windows Admin Center gateway for management.
-
-The following fields are available:
-
-- **nodeId**  The nodeTypeId concatenated with the hostname or IP address that gateway uses to connect to this node.
-- **nodeOperatingSystem**  A user friendly description of the node's OS version.
-- **nodeOSVersion**  A major or minor build version string for the node's OS.
-- **nodeTypeId**  A string that distinguishes between a connection target, whether it is a client, server, cluster or a hyper-converged cluster.
-- **otherProperties**  Contains a JSON object with variable content and may contain: "nodes": a list of host names or IP addresses of the servers belonging to a cluster, "aliases": the alias if it is set for this connection, "lastUpdatedTime": the number of milliseconds since Unix epoch when this connection was last updated, "ncUri", "caption", "version", "productType", "networkName", "operatingSystem", "computerManufacturer", "computerModel", "isS2dEnabled". This JSON object is formatted as an quotes-escaped string.
-
-
 ## Privacy logging notification events
 
 ### Microsoft.Windows.Shell.PrivacyNotifierLogging.PrivacyNotifierCompleted

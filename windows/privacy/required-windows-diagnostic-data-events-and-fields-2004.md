@@ -2579,6 +2579,76 @@ The following fields are available:
 - **wipeDuration**  The time taken to purge the system volume and format data volume.
 
 
+## Deployment events
+
+### Microsoft.Windows.Deployment.Imaging.AppExit
+
+This event is sent on imaging application exit. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **hr**  HResult returned from app exit.
+- **totalTimeInMs**  Total time taken in Ms.
+
+
+### Microsoft.Windows.Deployment.Imaging.AppInvoked
+
+This event is sent when the app for image creation is invoked. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **branch**  Corresponding branch for the image.
+- **isInDbg**  Whether the app is in debug mode or not.
+- **isWSK**  Whether the app is building images using WSK or not.
+
+
+### Microsoft.Windows.Deployment.Imaging.Failed
+
+This failure event is sent when imaging fails. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **cs**  Line that failed.
+- **ec**  Execution status.
+- **hr**  HResult returned.
+- **msg**  Message returned.
+- **stack**  Stack information.
+
+
+### Microsoft.Windows.Deployment.Imaging.ImagingCompleted
+
+This event is sent when imaging is done. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **appExecTimeInMs**  Execution time in milliseconds.
+- **buildInfo**  Information of the build.
+- **compDbPrepTimeInMs**  Preparation time in milliseconds for the CompDBs.
+- **executeUpdateTimeInMs**  Update execution time in milliseconds.
+- **fileStageTimeInMs**  File staging time in milliseconds.
+- **hr**  HResult returned from imaging.
+- **imgSizeInMB**  Image size in MB.
+- **mutexWaitTimeInMs**  Mutex wait time in milliseconds.
+- **prepareUpdateTimeInMs**  Update preparation time in milliseconds.
+- **totalRunTimeInMs**  Total running time in milliseconds.
+- **updateOsTimeInMs**  Time in milliseconds spent in update OS.
+
+
+### Microsoft.Windows.Deployment.Imaging.ImagingStarted
+
+This event is sent when an imaging session starts. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **arch**  Architecture of the image.
+- **device**  Device type for which the image is built.
+- **imgFormat**  Format of the image.
+- **imgSkip**  Parameter for skipping certain image types when building.
+- **imgType**  The type of image being built.
+- **lang**  Language of the image being built.
+- **prod**  Image product type.
+
+
 ## Diagnostic data events
 
 ### TelClientSynthetic.AbnormalShutdown_0
@@ -4483,162 +4553,6 @@ The following fields are available:
 - **sessionId**  Identifier for each created session.
 - **totalRunDuration**  Total running/evaluation time from last time.
 - **totalRuns**  Total number of running/evaluation from last time.
-
-
-## Other events
-
-### Microsoft.Windows.Deployment.Imaging.AppExit
-
-This event is sent on imaging application exit. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **hr**  HResult returned from app exit.
-- **totalTimeInMs**  Total time taken in Ms.
-
-
-### Microsoft.Windows.Deployment.Imaging.AppInvoked
-
-This event is sent when the app for image creation is invoked. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **branch**  Corresponding branch for the image.
-- **isInDbg**  Whether the app is in debug mode or not.
-- **isWSK**  Whether the app is building images using WSK or not.
-
-
-### Microsoft.Windows.Deployment.Imaging.Failed
-
-This failure event is sent when imaging fails. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **cs**  Line that failed.
-- **ec**  Execution status.
-- **hr**  HResult returned.
-- **msg**  Message returned.
-- **stack**  Stack information.
-
-
-### Microsoft.Windows.Deployment.Imaging.ImagingCompleted
-
-This event is sent when imaging is done. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **appExecTimeInMs**  Execution time in milliseconds.
-- **buildInfo**  Information of the build.
-- **compDbPrepTimeInMs**  Preparation time in milliseconds for the CompDBs.
-- **executeUpdateTimeInMs**  Update execution time in milliseconds.
-- **fileStageTimeInMs**  File staging time in milliseconds.
-- **hr**  HResult returned from imaging.
-- **imgSizeInMB**  Image size in MB.
-- **mutexWaitTimeInMs**  Mutex wait time in milliseconds.
-- **prepareUpdateTimeInMs**  Update preparation time in milliseconds.
-- **totalRunTimeInMs**  Total running time in milliseconds.
-- **updateOsTimeInMs**  Time in milliseconds spent in update OS.
-
-
-### Microsoft.Windows.Deployment.Imaging.ImagingStarted
-
-This event is sent when an imaging session starts. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **arch**  Architecture of the image.
-- **device**  Device type for which the image is built.
-- **imgFormat**  Format of the image.
-- **imgSkip**  Parameter for skipping certain image types when building.
-- **imgType**  The type of image being built.
-- **lang**  Language of the image being built.
-- **prod**  Image product type.
-
-
-### Microsoft.Windows.Mitigations.AllowInPlaceUpgrade.ApplyTroubleshootingComplete
-
-This event provides summary information after attempting to enable In-Place Upgrade. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-The following fields are available:
-
-- **applicable**  The operations that were needed to be attempted.
-- **failed**  Result of the individual operations that were attempted.
-- **hr**  Result of the overall operation to evaluate and enable In-Place Upgrade.
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSEvaluateInteractionCampaign
-
-This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) finishes processing an interaction campaign. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-The following fields are available:
-
-- **ControlId**  String identifying the control (if any) that was selected by the user during presentation.
-- **hrInteractionHandler**  The error (if any) reported by the RUXIM Interaction Handler while processing the interaction campaign.
-- **hrScheduler**  The error (if any) encountered by RUXIM Interaction Campaign Scheduler itself while processing the interaction campaign.
-- **InteractionCampaignID**  The ID of the interaction campaign that was processed.
-- **ResultId**  The result of the evaluation/presentation.
-- **WasCompleted**  True if the interaction campaign is complete.
-- **WasPresented**  True if the Interaction Handler displayed the interaction campaign to the user.
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
-
-This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.ICSLaunch
-
-This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-The following fields are available:
-
-- **CommandLine**  The command line used to launch RUXIMICS.
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.IHEvaluateAndPresent
-
-This event is generated when the RUXIM Interaction Handler finishes evaluating, and possibly presenting an interaction campaign. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-The following fields are available:
-
-- **hrLocal**  The error (if any) encountered by RUXIM Interaction Handler during evaluation and presentation.
-- **hrPresentation**  The error (if any) reported by RUXIM Presentation Handler during presentation.
-- **InteractionCampaignID**  GUID; the user interaction campaign processed by RUXIM Interaction Handler.
-- **ResultId**  The result generated by the evaluation and presentation.
-- **WasCompleted**  True if the user interaction campaign is complete.
-- **WasPresented**  True if the user interaction campaign is displayed to the user.
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.IHExit
-
-This event is generated when the RUXIM Interaction Handler (RUXIMIH.EXE) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-The following fields are available:
-
-- **InteractionCampaignID**  GUID identifying the interaction campaign that RUXIMIH processed.
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.IHLaunch
-
-This event is generated when the RUXIM Interaction Handler (RUXIMIH.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-The following fields are available:
-
-- **CommandLine**  The command line used to launch RUXIMIH.
-- **InteractionCampaignID**  GUID identifying the user interaction campaign that the Interaction Handler will process.
-
-
-### Microsoft.Windows.WindowsUpdate.RUXIM.SystemEvaluator.Evaluation
-
-This event is generated whenever the RUXIM Evaluator DLL performs an evaluation. The data collected with this event is used to help keep Windows up to date and performing properly.
-
-The following fields are available:
-
-- **HRESULT**  Error, if any, that occurred during evaluation. (Note that if errors encountered during individual checks do not affect the overall result of the evaluation, those errors will be reported in NodeEvaluationData, but this HRESULT will still be zero.)
-- **Id**  GUID passed in by the caller to identify the evaluation.
-- **NodeEvaluationData**  Structure showing the results of individual checks that occurred during the overall evaluation.
-- **Result**  Overall result generated by the evaluation.
 
 
 ## Privacy consent logging events
@@ -7118,6 +7032,80 @@ The following fields are available:
 
 ## Windows Update events
 
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSEvaluateInteractionCampaign
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) finishes processing an interaction campaign. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **ControlId**  String identifying the control (if any) that was selected by the user during presentation.
+- **hrInteractionHandler**  The error (if any) reported by the RUXIM Interaction Handler while processing the interaction campaign.
+- **hrScheduler**  The error (if any) encountered by RUXIM Interaction Campaign Scheduler itself while processing the interaction campaign.
+- **InteractionCampaignID**  The ID of the interaction campaign that was processed.
+- **ResultId**  The result of the evaluation/presentation.
+- **WasCompleted**  True if the interaction campaign is complete.
+- **WasPresented**  True if the Interaction Handler displayed the interaction campaign to the user.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSLaunch
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CommandLine**  The command line used to launch RUXIMICS.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.IHEvaluateAndPresent
+
+This event is generated when the RUXIM Interaction Handler finishes evaluating, and possibly presenting an interaction campaign. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **hrLocal**  The error (if any) encountered by RUXIM Interaction Handler during evaluation and presentation.
+- **hrPresentation**  The error (if any) reported by RUXIM Presentation Handler during presentation.
+- **InteractionCampaignID**  GUID; the user interaction campaign processed by RUXIM Interaction Handler.
+- **ResultId**  The result generated by the evaluation and presentation.
+- **WasCompleted**  True if the user interaction campaign is complete.
+- **WasPresented**  True if the user interaction campaign is displayed to the user.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.IHExit
+
+This event is generated when the RUXIM Interaction Handler (RUXIMIH.EXE) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **InteractionCampaignID**  GUID identifying the interaction campaign that RUXIMIH processed.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.IHLaunch
+
+This event is generated when the RUXIM Interaction Handler (RUXIMIH.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CommandLine**  The command line used to launch RUXIMIH.
+- **InteractionCampaignID**  GUID identifying the user interaction campaign that the Interaction Handler will process.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.SystemEvaluator.Evaluation
+
+This event is generated whenever the RUXIM Evaluator DLL performs an evaluation. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **HRESULT**  Error, if any, that occurred during evaluation. (Note that if errors encountered during individual checks do not affect the overall result of the evaluation, those errors will be reported in NodeEvaluationData, but this HRESULT will still be zero.)
+- **Id**  GUID passed in by the caller to identify the evaluation.
+- **NodeEvaluationData**  Structure showing the results of individual checks that occurred during the overall evaluation.
+- **Result**  Overall result generated by the evaluation.
+
 ### Microsoft.Windows.Update.DataMigrationFramework.DmfMigrationStarted
 
 This event sends data collected at the beginning of the Data Migration Framework (DMF) and parameters involved in its invocation, to help keep Windows up to date.
@@ -7777,6 +7765,17 @@ The following fields are available:
 
 
 ## Windows Update mitigation events
+
+### Microsoft.Windows.Mitigations.AllowInPlaceUpgrade.ApplyTroubleshootingComplete
+
+This event provides summary information after attempting to enable In-Place Upgrade. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **applicable**  The operations that were needed to be attempted.
+- **failed**  Result of the individual operations that were attempted.
+- **hr**  Result of the overall operation to evaluate and enable In-Place Upgrade.
+
 
 ### Mitigation360Telemetry.MitigationCustom.CleanupSafeOsImages
 
