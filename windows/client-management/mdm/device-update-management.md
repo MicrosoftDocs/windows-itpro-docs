@@ -902,7 +902,7 @@ For Windows Update for Business, here is the list of supported policies on Windo
 > [!NOTE]
 > For policies supported for Windows Update for Business, when you set policies for both Windows 10, version 1607 and Windows 10, version 1511 running on 1607, then 1607 policies will be configured (1607 trumps 1511).
 
-For policies supported for Windows Update for Business, when you set 1511 policies on a device running 1607, the you will get the expected behavior for 1511 policies.
+For policies supported for Windows Update for Business, when you set 1511 policies on a device running 1607, you will get the expected behavior for 1511 policies.
 
 
 ## <a href="" id="userexperiencescreenshot"></a>Update management user experience screenshot
