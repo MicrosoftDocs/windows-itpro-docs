@@ -86,7 +86,7 @@ The response of the GetUpdateData call returns an array of ServerSyncUpdateData 
         - A Product category the update belongs to. For example, Windows, Microsoft Office, etc.
         - The classification the update belongs to. For example, Drivers, security, etc.
     - **Software** – If the update is a software update.
-    - **Driver** – if the update is a driver update.
+    - **Driver** – If the update is a driver update.
 - **LocalizedProperties** – represents the language the update is available in, title and description of the update. It has the following fields:
     - **Language** – The language code identifier (LCID). For example, en or es.
     - **Title** – Title of the update. For example, “Windows SharePoint Services 3.0 Service Pack 3 x64 Edition (KB2526305)”
