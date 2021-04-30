@@ -18,6 +18,8 @@ ms.custom: seo-marvel-apr2020
 
 > Applies to: Windows 10
 
+As of Windows 10 version 21H2, we are enabling non-Administrator user accounts to add both a display language and its corresponding language features.
+
 As of Windows 10 version 1709, you can't use Windows Server Update Services (WSUS) to host [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) (FODs) locally. Starting with Windows 10 version 1803, language packs can no longer be hosted on WSUS.
 
 The **Specify settings for optional component installation and component repair** policy, located under `Computer Configuration\Administrative Templates\System` in the Group Policy Editor, can be used to specify alternate ways to acquire FOD packages, language packages, and content for corruption repair. However, it's important to note this policy only allows specifying one alternate location and behaves differently across OS versions.
