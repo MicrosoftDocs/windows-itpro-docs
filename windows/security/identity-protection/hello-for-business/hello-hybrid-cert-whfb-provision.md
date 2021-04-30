@@ -1,5 +1,5 @@
 ---
-title: Hybrid Azure AD joined Windows Hello for Business Provisioning (Windows Hello for Business)
+title: Hybrid Azure AD joined Windows Hello for Business Certificate Trust Provisioning (Windows Hello for Business)
 description: In this article, learn about provisioning for hybrid certificate trust deployments of Windows Hello for Businesss.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Hybrid Azure AD joined Windows Hello for Business Provisioning
+# Hybrid Azure AD joined Windows Hello for Business Certificate Trust Provisioning
 
 **Applies to**
 -   Windows 10, version 1703 or later
@@ -27,7 +27,7 @@ ms.reviewer:
 ## Provisioning
 The Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user receives their desktop.  Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.
 
-![Event358](images/Event358.png)
+![Event358 from User Device Registration log showing Windows Hello for Business prerequisite check result](images/Event358.png)
 
 The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is AAD joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **AzureADJoined** reads **Yes**.
 
