@@ -1,7 +1,7 @@
 items:
 - name: Manage Windows applications
   href: index.yml
-- name: App management
+- name: Application management
   items: 
     - name: Sideload apps
       href: sideload-apps-in-windows-10.md
@@ -15,7 +15,7 @@ items:
       href: add-apps-and-features.md
     - name: Repackage win32 apps in the MSIX format
       href: msix-app-packaging-tool.md
-- name: Application Virtualization (App-V) for Windows
+- name: Application Virtualization (App-V)
   items: 
     - name: App-V for Windows 10 overview
       href: app-v/appv-for-windows.md
@@ -251,6 +251,9 @@ items:
               href: app-v/appv-viewing-appv-server-publishing-metadata.md
             - name: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
               href: app-v/appv-running-locally-installed-applications-inside-a-virtual-environment.md
+
+- name: Reference
+  items: 
     - name: Service Host process refactoring
       href: svchost-service-refactoring.md
     - name: Per-user services in Windows
