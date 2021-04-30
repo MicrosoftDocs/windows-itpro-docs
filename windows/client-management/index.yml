@@ -26,23 +26,23 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Mobile device management (MDM)
-            url: mdm/index.md
-          - text: MDM for device updates
-            url: mdm/device-update-management.md
-          - text: Enroll a Windows 10 device automatically using Group Policy
-            url: mdm/enroll-a-windows-10-device-automatically-using-group-policy.md
           - text: Administrative Tools in Windows 10
             url: administrative-tools-in-windows-10.md
           - text: Create mandatory user profiles
             url: mandatory-user-profile.md
+          - text: Mobile device management (MDM)
+            url: mdm/index.md
+          - text: MDM for device updates
+            url: mdm/device-update-management.md
+          - text: Mobile device enrollment
+            url: mdm/mobile-device-enrollment.md
 
   # Card (optional)
-  - title: Configuration Service Provider (CSP)
+  - title: CSP reference documentation
     linkLists:
-      - linkListType: learn
+      - linkListType: overview
         links:
-          - text: CSP reference
+          - text: Configuration service provider reference
             url: mdm/configuration-service-provider-reference.md
           - text: DynamicManagement CSP
             url: mdm/dynamicmanagement-csp.md

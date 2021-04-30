@@ -1,5 +1,5 @@
 items:
-- name: Manage clients in Windows 10
+- name: Windows client management
   href: index.yml
   items: 
     - name: Client management tools and settings
@@ -36,6 +36,10 @@ items:
       items: 
         - name: Mobile Device Management     
           href: mdm/index.md
+    - name: Configuration Service Provider (CSP)
+      items: 
+        - name: CSP reference     
+          href: mdm/configuration-service-provider-reference.md
     - name: Troubleshoot Windows 10 clients
       items: 
         - name: Windows 10 support solutions      
