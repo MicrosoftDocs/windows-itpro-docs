@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 01/21/2021
+ms.date: 04/28/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -19,11 +19,12 @@ ms.technology: mde
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Answering frequently asked questions about Microsoft Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
+This article lists frequently asked questions with answers for Microsoft Defender Application Guard (Application Guard). Questions span features, integration with the Windows operating system, and general configuration.
 
 ## Frequently Asked Questions
 
 ### Can I enable Application Guard on machines equipped with 4-GB RAM?
+
 We recommend 8-GB RAM for optimal performance but you can use the following registry DWORD values to enable Application Guard on machines that aren't meeting the recommended hardware configuration.
 
 `HKLM\software\Microsoft\Hvsi\SpecRequiredProcessorCount` (Default is four cores.)                                                   
@@ -34,25 +35,25 @@ We recommend 8-GB RAM for optimal performance but you can use the following regi
 
 ### Can employees download documents from the Application Guard Edge session onto host devices? 
 
-In Windows 10 Enterprise edition 1803, users are able to download documents from the isolated Application Guard container to the host PC. This capability is managed by policy.
+In Windows 10 Enterprise edition, version 1803, users are able to download documents from the isolated Application Guard container to the host PC. This capability is managed by policy.
 
-In Windows 10 Enterprise edition 1709 or Windows 10 Professional edition 1803, it is not possible to download files from the isolated Application Guard container to the host PC. However, employees can use the **Print as PDF** or **Print as XPS** options and save those files to the host device. 
+In Windows 10 Enterprise edition, version 1709, or Windows 10 Professional edition, version 1803, it is not possible to download files from the isolated Application Guard container to the host computer. However, employees can use the **Print as PDF** or **Print as XPS** options and save those files to the host device. 
 
 ### Can employees copy and paste between the host device and the Application Guard Edge session? 
 
 Depending on your organization's settings, employees can copy and paste images (.bmp) and text to and from the isolated container. 
 
-### Why don't employees see their Favorites in the Application Guard Edge session?
+### Why don't employees see their favorites in the Application Guard Edge session?
 
-To help keep the Application Guard Edge session secure and isolated from the host device, we don't copy the Favorites stored in the Application Guard Edge session back to the host device. 
+To help keep the Application Guard Edge session secure and isolated from the host device, favorites that are stored in the Application Guard Edge session are not copied back to the host device. 
 
-### Why aren’t employees able to see their Extensions in the Application Guard Edge session?
+### Why aren’t employees able to see their extensions in the Application Guard Edge session?
 
-Currently, the Application Guard Edge session doesn't support Extensions. However, we're closely monitoring your feedback about this. 
+Currently, the Application Guard Edge session doesn't support extensions. However, we're closely monitoring your feedback about this. 
 
 ### How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)? 
 
-Microsoft Defender Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune. 
+Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition, version 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune. 
 
 ### Which Input Method Editors (IME) in 19H1 are not supported? 
 
@@ -76,11 +77,15 @@ This feature is currently experimental only and is not functional without an add
 
 ### What is the WDAGUtilityAccount local account? 
 
-This account is part of Application Guard beginning with Windows 10, version 1709 (Fall Creators Update). This account remains disabled until Application Guard is enabled on your device. This item is integrated to the OS and is not considered as a threat/virus/malware.
+WDAGUtilityAccount is part of Application Guard, beginning with Windows 10, version 1709 (Fall Creators Update). It remains disabled by default, unless Application Guard is enabled on your device. WDAGUtilityAccount is used to sign in to the Application Guard container as a standard user with a random password. It is NOT a malicious account. If *Run as a service* permissions are revoked for this account, you might see the following error: 
+
+**Error: 0x80070569, Ext error: 0x00000001; RDP: Error: 0x00000000, Ext error: 0x00000000 Location: 0x00000000**
+
+We recommend that you do not modify this account.
 
 ### How do I trust a subdomain in my site list?                          
 
-To trust a subdomain, you must precede your domain with two dots, for example: `..contoso.com` ensures that `mail.contoso.com` or `news.contoso.com` are trusted. The first dot represents the strings for the subdomain name (mail or news), the second dot recognizes the start of the domain name (`contoso.com`). This prevents sites such as `fakesitecontoso.com` from being trusted.
+To trust a subdomain, you must precede your domain with two dots (..). For example: `..contoso.com` ensures that `mail.contoso.com` or `news.contoso.com` are trusted. The first dot represents the strings for the subdomain name (mail or news), and the second dot recognizes the start of the domain name (`contoso.com`). This prevents sites such as `fakesitecontoso.com` from being trusted.
 
 ### Are there differences between using Application Guard on Windows Pro vs Windows Enterprise? 
 
@@ -88,21 +93,23 @@ When using Windows Pro or Windows Enterprise, you have access to using Applicati
 
 ### Is there a size limit to the domain lists that I need to configure?
 
-Yes, both the Enterprise Resource domains hosted in the cloud and the Domains categorized as both work and personal have a 16383-B limit.
+Yes, both the Enterprise Resource domains that are hosted in the cloud and the domains that are categorized as both work and personal have a 16383-B limit.
 
 ### Why does my encryption driver break Microsoft Defender Application Guard?
 
-Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (`0x80070013 ERROR_WRITE_PROTECT`).  
+Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (**0x80070013 ERROR_WRITE_PROTECT**).  
 
 ### Why do the Network Isolation policies in Group Policy and CSP look different?
 
 There is not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatory network isolation policies to deploy Application Guard are different between CSP and GP.
 
-Mandatory network isolation GP policy to deploy Application Guard: "DomainSubnets or CloudResources"
-Mandatory network isolation CSP policy to deploy Application Guard: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
-For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
+- Mandatory network isolation GP policy to deploy Application Guard: **DomainSubnets or CloudResources**
 
-Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
+- Mandatory network isolation CSP policy to deploy Application Guard: **EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)**
+
+- For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
+
+Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (**0x80070013 ERROR_WRITE_PROTECT**). 
 
 ### Why did Application Guard stop working after I turned off hyperthreading?
 
@@ -128,22 +135,25 @@ First rule (DHCP Server):
 Second rule (DHCP Client)
 This is the same as the first rule, but scoped to local port 68.
 In the Microsoft Defender Firewall user interface go through the following steps:
-1. Right click on inbound rules, create a new rule.
+1. Right-click on inbound rules, and then create a new rule.
 2. Choose **custom rule**.
-3. Program path: `%SystemRoot%\System32\svchost.exe`.
-4. Protocol Type: UDP, Specific ports: 67, Remote port: any.
-5. Any IP addresses.
-6. Allow the connection.
-7. All profiles.
-8. The new rule should show up in the user interface. Right click on the **rule** > **properties**.
-9. In the **Programs and services** tab, Under the **Services** section click on **settings**. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
+3. Specify the following program path: `%SystemRoot%\System32\svchost.exe`.
+4. Specify the following settings:
+    - Protocol Type: UDP
+    - Specific ports: 67
+    - Remote port: any
+6. Specify any IP addresses.
+7. Allow the connection.
+8. Specify to use all profiles.
+9. The new rule should show up in the user interface. Right click on the **rule** > **properties**.
+10. In the **Programs and services** tab, under the **Services** section, select **settings**. 
+11. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
 
 ### Why can I not launch Application Guard when Exploit Guard is enabled?
 
 There is a known issue such that if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to **Windows Security** > **App and Browser control** > **Exploit Protection Setting**, and then switch CFG to **use default**.
 
-
-### How can I have ICS in enabled state yet still use Application Guard?
+### How can I disable portions of ICS without breaking Application Guard?
 
 ICS is enabled by default in Windows, and ICS must be enabled in order for Application Guard to function correctly. We do not recommend disabling ICS; however, you can disable ICS in part by using a Group Policy and editing registry keys.
 
@@ -161,6 +171,7 @@ ICS is enabled by default in Windows, and ICS must be enabled in order for Appli
 5. Reboot the device.
 
 ### Why doesn't the container fully load when device control policies are enabled?
+
 Allow-listed items must be configured as "allowed" in the Group Policy Object ensure AppGuard works properly. 
 
 Policy: Allow installation of devices that match any of these device IDs 
