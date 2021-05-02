@@ -61,7 +61,7 @@ Cache-Control: no-cache
             <OSEdition>101</OSEdition> <!--New in Windows 10-->
             <OSVersion>10.0.0.0</OSVersion> <!--New in Windows 10-->
             <RequestVersion>3.0</RequestVersion> <!--Updated in Windows 10-->
-               <DeviceType>WindowsPhone</DeviceType> <!--Legacy in Windows 10 for Windows Phone/Handheld-->
+               <DeviceType>WindowsPhone</DeviceType> <!--Legacy in Windows 10 for Windows/Handheld-->
             <ApplicationVersion>10.0.0.0</ApplicationVersion>
             <AuthPolicies>Certificate</AuthPolicies> <!--New in Windows 10-->
          </request> 

@@ -196,7 +196,7 @@ The XML below is the current version for this CSP.
         <AccessType>
           <Get />
         </AccessType>
-        <Description>Returns the Windows Phone OS software version.</Description>
+        <Description>Returns the Windows OS software version.</Description>
         <DFFormat>
           <chr />
         </DFFormat>
