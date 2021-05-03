@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 05/02/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -1045,9 +1045,7 @@ GP Info:
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values:  
-- 0 - disabled 
-- 1 - enabled (session will lock after amount of inactive time exceeds the inactivity limit)
+Valid values: from 0 to 599940, where the value is the amount of inactivity time (in seconds), after which the session will be locked. If it is set to zero (0), the  setting is disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
