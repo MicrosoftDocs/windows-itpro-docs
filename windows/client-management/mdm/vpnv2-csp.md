@@ -871,7 +871,7 @@ Determines whether plumbing IPSec traffic selectors as routes onto VPN interface
 
 If set to False, plumbing traffic selectors as routes is disabled
 
-If set to True, plumbing traffic selectors as routes is enabled
+If set to True, plumbing traffic selectors as routes is enabled.
 
 By default, this value is false.
 
@@ -1599,7 +1599,6 @@ Servers
  
 
  
-
 
 
 
