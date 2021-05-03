@@ -873,7 +873,7 @@ If set to False, plumbing traffic selectors as routes is disabled
 
 If set to True, plumbing traffic selectors as routes is enabled.
 
-By default, this value is false.
+By default, this value is set to False.
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
@@ -1599,7 +1599,6 @@ Servers
  
 
  
-
 
 
 
