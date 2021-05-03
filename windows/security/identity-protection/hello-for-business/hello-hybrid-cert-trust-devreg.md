@@ -1,5 +1,5 @@
 ---
-title: Configure Device Registration for Hybrid Windows Hello for Business
+title: Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business
 description: Azure Device Registration for Hybrid Certificate Trust Deployment (Windows Hello for Business)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration
 ms.prod: w10
@@ -13,10 +13,10 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/18/2018
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Configure Device Registration for Hybrid Windows Hello for Business
+# Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business
 
 **Applies to**
 -  Windows 10, version 1703 or later

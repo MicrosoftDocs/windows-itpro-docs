@@ -1,5 +1,5 @@
 ---
-title: Configure Hybrid Windows Hello for Business - Group Policy
+title: Configure Hybrid Azure AD joined Windows Hello for Business - Group Policy
 description: Configuring Hybrid key trust Windows Hello for Business - Group Policy
 keywords: identity, PIN, biometric, Hello, passport, WHFB, Windows Hello, key trust, key-trust
 ms.prod: w10
@@ -13,10 +13,10 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/20/2018
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Configure Hybrid Windows Hello for Business: Group Policy
+# Configure Hybrid Azure AD joined Windows Hello for Business: Group Policy
 
 **Applies to**
 -   Windows 10, version 1703 or later

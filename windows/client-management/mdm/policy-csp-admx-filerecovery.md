@@ -90,7 +90,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 
