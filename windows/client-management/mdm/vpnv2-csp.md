@@ -869,7 +869,7 @@ Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-nativeprofile-l2tppsk"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/PlumbIKEv2TSAsRoutes**  
 Determines whether plumbing IPSec traffic selectors as routes onto VPN interface is enabled.
 
-If set to False, plumbing traffic selectors as routes is disabled
+If set to False, plumbing traffic selectors as routes is disabled.
 
 If set to True, plumbing traffic selectors as routes is enabled.
 
@@ -1599,6 +1599,5 @@ Servers
  
 
  
-
 
 
