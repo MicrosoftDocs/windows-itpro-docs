@@ -98,7 +98,7 @@ The only supported operation is Get.
 <a href="" id="currentsession-criticaloverlaythreshold"></a>**CurrentSession/CriticalOverlayThreshold**  
 Required. The critical threshold size, in megabytes. UWF sends a critical threshold notification event when the UWF overlay size reaches or exceeds this value.
 
-Supported operations are Get and Replace.
+The only supported operation is Get.
 
 <a href="" id="currentsession-volume\<volumeid>\swapfilesize"></a>**CurrentSession/Volume\<VolumeID>\SWAPFileSize**
 Required. Read-only CFG_DATATYPE_INTEGER property that contains non-zero (for example, 1) value if volume has overlay file created/used on it.
