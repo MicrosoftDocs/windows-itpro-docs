@@ -1045,7 +1045,7 @@ GP Info:
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values: from 0 to 599940, where the value is the amount of inactivity time (in seconds), after which the session will be locked. If it is set to zero (0), the  setting is disabled.
+Valid values: From 0 to 599940, where the value is the amount of inactivity time (in seconds) after which the session will be locked. If it is set to zero (0), the setting is disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
