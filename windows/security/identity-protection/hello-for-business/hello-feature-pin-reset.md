@@ -34,7 +34,7 @@ There are two forms of PIN reset called destructive and non-destructive. Destruc
 - Reset from settings - Windows 10, version 1703
 - Reset above Lock - Windows 10, version 1709
 
-Destructive and non-destructive PIN reset use the same entry points for initiating a PIN reset. If a user has forgotten their PIN, but has an alternate logon method, they can navigate to Sign-in options in Settings and initiate a PIN reset from the PIN options. If they do not have an alterate way to sign into their device, PIN reset can also be initiated from above the lock screen in the PIN credential provider.
+Destructive and non-destructive PIN reset use the same entry points for initiating a PIN reset. If a user has forgotten their PIN, but has an alternate logon method, they can navigate to Sign-in options in Settings and initiate a PIN reset from the PIN options. If they do not have an alternate way to sign into their device, PIN reset can also be initiated from above the lock screen in the PIN credential provider.
 
 >[!IMPORTANT]
 >For hybrid Azure AD joined devices, users must have corporate network connectivity to domain controllers to reset their PIN. If AD FS is being used for certificate trust or for on-premises only deployments, users must also have corporate network connectivity to federation services to reset their PIN.
@@ -137,7 +137,7 @@ You configure Windows 10 to use the Microsoft PIN Reset service using the comput
 
 ### Confirm that PIN recovery policy is enforced on the client
 
-The PIN reset configuration for a user can be viewed by running [**dsregcmd /status**](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-device-dsregcmd) from the command line. This state can be found under the output in the user state section as the **CanReset** line item. If **CanReset** reports as DestructiveOnly, then only destructive PIN reset is enabled. If **CanReset** reports DestructiveAndNonDestructive, then non-destructive PIN reset is enabled.
+The PIN reset configuration for a user can be viewed by running [**dsregcmd /status**](/azure/active-directory/devices/troubleshoot-device-dsregcmd) from the command line. This state can be found under the output in the user state section as the **CanReset** line item. If **CanReset** reports as DestructiveOnly, then only destructive PIN reset is enabled. If **CanReset** reports DestructiveAndNonDestructive, then non-destructive PIN reset is enabled.
 
 #### Sample User state Output for Destructive PIN Reset
 
@@ -184,7 +184,7 @@ The PIN reset configuration for a user can be viewed by running [**dsregcmd /sta
 - Windows 10, version 1803 or later
 - Azure AD joined
 
-The [ConfigureWebSignInAllowedUrls](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy allows you to specify a list of domains that are allowed to be navigated to during PIN reset flows on Azure AD joined devices. If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, this policy should be set to ensure that authentication pages from that identity provider can be used during Azure AD joined PIN reset.
+The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy allows you to specify a list of domains that are allowed to be navigated to during PIN reset flows on Azure AD joined devices. If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, this policy should be set to ensure that authentication pages from that identity provider can be used during Azure AD joined PIN reset.
 
 ### Configuring Policy Using Intune
 
