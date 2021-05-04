@@ -205,9 +205,9 @@ The [ConfigureWebSignInAllowedUrls](https://docs.microsoft.com/windows/client-ma
 1. On the Assignments page, use the Included groups and Excluded groups sections to define the groups of users or devices that should receive this policy. Once you have completed configuring groups click the Next button.
 1. On the Applicability rules page, click Next.
 1. Review the configuration that is shown on the Review + create page to make sure that it is accurate. Click create to save the profile and apply it to the configured groups.
- 
+
 > [!NOTE]
-> For Azure Government, there is a known issue with PIN reset on Azure AD Joined devices failing. When the user attempts to launch PIN reset, the PIN reset UI shows an error page that says, "We can't open that page right now." The ConfigureWebSignInAllowedUrls policy can be used to work around this issue. If you are experiencing this issue and you are a US government customer, set **login.microsoftonline.us** as the value for the ConfigureWebSignInAllowedUrls policy. If you are experiencing this issue and you are a Chinese government customer, set **login.partner.microsoftonline.cn** as the value for the ConfigureWebSignInAllowedUrls policy.
+> For Azure Government, there is a known issue with PIN reset on Azure AD Joined devices failing. When the user attempts to launch PIN reset, the PIN reset UI shows an error page that says, "We can't open that page right now." The ConfigureWebSignInAllowedUrls policy can be used to work around this issue. If you are experiencing this problem and you are using Azure US Government cloud, set **login.microsoftonline.us** as the value for the ConfigureWebSignInAllowedUrls policy.
 
 ## Related topics
 
