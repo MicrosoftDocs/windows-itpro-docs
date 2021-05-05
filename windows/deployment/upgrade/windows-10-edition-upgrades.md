@@ -39,7 +39,7 @@ X = unsupported <BR>
 &#x2714; (green) = supported; reboot required<BR>
 &#x2714; (blue) = supported; no reboot required
 
-|Method |Home > Pro |Home > Education |Pro > Education |Pro > Enterprise |Ent > Education |Mobile > Mobile Enterprise |
+|Method |Home > Pro |Home > Education |Pro > Education |Pro > Enterprise |Ent > Education |Mobile |
 |-------|-----------|-----------------|----------------|-----------------|----------------|--------|
 | Using mobile device management (MDM) |![unsupported](../images/x_blk.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_blu.png) |![supported](../images/check_grn.png) |![supported](../images/check_blu.png) |
 | Using a provisioning package |![unsupported](../images/x_blk.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_blu.png) |
@@ -63,7 +63,6 @@ X = unsupported <BR>
 | **Pro for Workstations > Enterprise** | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) <br>(1703 - PC)<br>(1709 - MSfB) | ![supported, no reboot](../images/check_blu.png) | ![not supported](../images/x_blk.png) |
 | **Pro Education > Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
 | **Enterprise > Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
-| **Mobile > Mobile Enterprise** | ![supported, no reboot](../images/check_blu.png) |![supported, no reboot](../images/check_blu.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) |
 
 > [!NOTE]
 > - For information about upgrade paths in Windows 10 in S mode (for Pro or Education), check out [Windows 10 Pro/Enterprise in S mode](../windows-10-pro-in-s-mode.md)

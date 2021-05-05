@@ -531,7 +531,7 @@ To distribute an app offline (organization-managed), the app must be downloaded 
 
 To install acquired Microsoft Store or LOB apps offline on a Windows 10 Mobile device, IT administrators can use an MDM system. The MDM system distributes the app packages that you downloaded from Microsoft Store (also called sideloading) to Windows 10 Mobile devices. Support for offline app distribution depends on the MDM system you are using, so consult your MDM vendor documentation for details. You can fully automate the app deployment process so that no user intervention is required.
 
-Microsoft Store apps or LOB apps that have been uploaded to the Microsoft Store for Business are automatically trusted on all Windows devices, as they are cryptographically signed with Microsoft Store certificates. LOB apps that are uploaded to the Microsoft Store for Business are private to your organization and are never visible to other companies or consumers. If you do not want to upload your LOB apps, you have to establish trust for the app on your devices. To establish this trust, you’ll need to generate a signing certificate with your Public Key Infrastructure and add your chain of trust to the trusted certificates on the device (see the certificates section). You can install up to 20 self-signed LOB apps per device with Windows 10 Mobile. To install more than 20 apps on a device, you can purchase a signing certificate from a trusted public Certificate Authority, or upgrade your devices to Windows 10 Mobile Enterprise edition.
+Microsoft Store apps or LOB apps that have been uploaded to the Microsoft Store for Business are automatically trusted on all Windows devices, as they are cryptographically signed with Microsoft Store certificates. LOB apps that are uploaded to the Microsoft Store for Business are private to your organization and are never visible to other companies or consumers. If you do not want to upload your LOB apps, you have to establish trust for the app on your devices. To establish this trust, you’ll need to generate a signing certificate with your Public Key Infrastructure and add your chain of trust to the trusted certificates on the device (see the certificates section). You can install up to 20 self-signed LOB apps per device with Windows 10 Mobile. To install more than 20 apps on a device, you can purchase a signing certificate from a trusted public Certificate Authority, or upgrade your devices to Windows 10 edition.
 
 For more information, see [Microsoft Store for Business](/microsoft-store/index).
 
@@ -786,14 +786,12 @@ Update availability depends on what servicing option you choose for the device. 
 <td align="left">Immediately after the Feature Update is published to Windows Update by Microsoft</td>
 <td align="left">Microsoft typically releases two Feature Updates per 12-month period (approximately every four months, though it can potentially be longer)</td>
 <td align="left">Makes new features available to users as soon as possible</td>
-<td align="left">Mobile &amp; Mobile Enterprise</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Current Branch for Business (CBB)</strong></td>
 <td align="left">A minimum of four months after the corresponding Feature Update is first published to Windows Update by Microsoft</td>
 <td align="left">A minimum of four months, though it potentially can be longerNo</td>
 <td align="left">Provides additional time to test new feature before deployment</td>
-<td align="left">Mobile Enterprise only</td>
 </tr>
 </tbody>
 </table>

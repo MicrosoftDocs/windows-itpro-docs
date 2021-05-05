@@ -64,7 +64,6 @@ Allows the administrator to require storage card encryption on the device. This 
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
