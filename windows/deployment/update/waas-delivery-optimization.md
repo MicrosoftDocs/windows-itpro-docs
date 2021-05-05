@@ -219,7 +219,7 @@ Try these steps:
 4. If the number of peers is zero and you have **DownloadMode** = 1, ensure that both devices are using the same public IP address to reach the internet. Open a browser Windows and search for “what is my IP”. You can **DownloadMode 2** (Group) and a custom GroupID (Guid) to fix this if the devices aren’t reporting the same public IP address.
 
 > [!NOTE]
-> Starting in Windows 10, version 2004, Get-DeliveryOptimizationStatus has a new option -PeerInfo which returns a real-time list of the connected peers.
+> Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
 
 ### Clients aren't able to connect to peers offered by the cloud service
 
