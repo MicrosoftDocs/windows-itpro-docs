@@ -54,11 +54,11 @@ For information about setting up Delivery Optimization, including tips for the b
     - [DOCacheHost](waas-delivery-optimization-reference.md#cache-server-hostname)
     - [DOCacheHostSource](waas-delivery-optimization-reference.md#cache-server-hostname-source)
     - [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs); replaces DOPercentageMaxDownloadBandwidth
-    - [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs)
+    - [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs)
     
 - Removed policy settings (if you set these policies in Windows 10, 2004, they will have no effect):
-    - DOMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) or [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
-    - DOPercentageMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) or [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
+    - DOMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs) or [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
+    - DOPercentageMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs) or [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
     - DOMaxUploadBandwidth
     
 - Support for new types of downloads:
@@ -218,6 +218,8 @@ Try these steps:
 3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated PowerShell window on the second device. The **NumberOfPeers** field should be non-zero.
 4. If the number of peers is zero and you have **DownloadMode** = 1, ensure that both devices are using the same public IP address to reach the internet. Open a browser Windows and search for “what is my IP”. You can **DownloadMode 2** (Group) and a custom GroupID (Guid) to fix this if the devices aren’t reporting the same public IP address.
 
+> [!NOTE]
+> Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
 
 ### Clients aren't able to connect to peers offered by the cloud service
 
@@ -226,6 +228,9 @@ Try a Telnet test between two devices on the network to ensure they can connect 
 1. Install Telnet by running `dism /online /Enable-Feature /FeatureName:TelnetClient` from an elevated command prompt.
 2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run `telnet 192.168.9.17 7680` (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
 
+> [!NOTE]
+> You can also use [Test-NetConnection](/powershell/module/nettcpip/test-netconnection?view=windowsserver2019-ps) instead of Telnet to run the test.
+> **Test-NetConnection -ComputerName 192.168.9.17 -Port 7680**
 
 ### None of the computers on the network are getting updates from peers
 
