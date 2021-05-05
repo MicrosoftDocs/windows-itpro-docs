@@ -105,9 +105,11 @@ To do this, follow these steps.
 
 2. On the **Install Windows** screen, select **Next** > **Repair your computer**.
 
-3. On the **System Recovery Options** screen, select **Next** > **Command Prompt**.
+3. On the **Choose an option** screen, select **Troubleshoot**.
 
-4. After Startup Repair, select **Shutdown**, then turn on your PC to see if Windows can boot properly.
+4. On the **Advanced options** screen, select **Startup Repair**.
+
+5. After Startup Repair, select **Shutdown**, then turn on your PC to see if Windows can boot properly.
 
 The Startup Repair tool generates a log file to help you understand the startup problems and the repairs that were made. You can find the log file in the following location:
 
