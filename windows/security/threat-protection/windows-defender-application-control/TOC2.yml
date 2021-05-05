@@ -27,7 +27,7 @@ landingContent:
             url:  applocker\applocker-overview.md
           - text: WDAC and AppLocker feature availability
             url:  feature-availability.md  
-  # Card
+  # Card               
   - title: Learn about the Design Guide
     linkLists:
       - linkListType: overview
@@ -37,7 +37,7 @@ landingContent:
           - text: Merging Policies
             url:  wdac-wizard-merging-policies.md
           - text: Recommended blocks 
-            url:  microsoft-recommended-block-rules.md #there are block rules and driver block rules, which link?
+            url:  microsoft-recommended-block-rules.md #there are block rules and driver block rules, which link? Add both, actually.
           - text: Example policies
             url:  example-wdac-base-policies.md
           - text: LOB Win32 apps on S Mode
