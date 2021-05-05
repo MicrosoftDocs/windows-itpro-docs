@@ -147,54 +147,6 @@ The XML below is for Windows 10, version 1809.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>UpgradeEditionWithLicense</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Exec />
-            </AccessType>
-            <Description>Provide a license for an edition upgrade of Windows 10 mobile devices. Does not require reboot.</Description>
-            <DFFormat>
-              <xml />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>LicenseKeyType</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>Returns the parameter type used by Windows 10 devices for an edition upgrade. Windows 10 desktop devices require a product key for an edition upgrade. Windows 10 mobile devices require a license for an edition upgrade.</Description>
-            <DFFormat>
-              <chr />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>CheckApplicability</NodeName>
           <DFProperties>
             <AccessType>

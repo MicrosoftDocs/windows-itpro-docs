@@ -289,8 +289,6 @@ The following diagram shows the Update policies in a tree format.
 <a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
-> <p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
-
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Defers Feature Updates for the specified number of days.
 
@@ -497,8 +495,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
-> <p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
-
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows IT Admins to pause Feature Updates for up to 60 days.
 

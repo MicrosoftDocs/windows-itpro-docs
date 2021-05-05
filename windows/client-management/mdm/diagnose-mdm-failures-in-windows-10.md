@@ -133,10 +133,6 @@ Example: Export the Debug logs
 </SyncML>
 ```
 
-<!--## Collect logs from Windows 10 Mobile devices-->
-<!--
-Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medic](https://www.microsoft.com/p/field-medic/9wzdncrfjb82?activetab=pivot%3aoverviewtab) app to collect logs.
-
 **To collect logs manually**
 
 1.  Download and install the [Field Medic]( https://go.microsoft.com/fwlink/p/?LinkId=718232) app from the store.

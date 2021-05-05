@@ -73,9 +73,7 @@ Defines restrictions for applications.
 
 > [!NOTE]
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
->
-> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
->
+
 > Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
 
 > [!NOTE]
@@ -398,7 +396,7 @@ Result
 ## <a href="" id="settingssplashapps"></a>Settings apps that rely on splash apps
 
 
-When you create a list of allowed apps in Windows 10 Mobile, you must also include the subset of Settings apps that rely on splash apps in your list of allowed apps. These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps .
+These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps.
 
 The product name is first part of the PackageFullName followed by the version number.
 
@@ -995,11 +993,6 @@ The following example disables the Mixed Reality Portal. In the example, the **I
     </SyncBody>
 </SyncML>
 ```
-
-The following example for Windows 10 Mobile denies all apps and allows the following apps:
-
--   [settings app that rely on splash apps](#settingssplashapps)
--   most of the [inbox apps](#inboxappsandcomponents), but not all.
 
 In this example, **MobileGroup0** is the node name. We recommend using a GUID for this node.
 
