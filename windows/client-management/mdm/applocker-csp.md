@@ -262,25 +262,6 @@ Data type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-## <a href="" id="productname"></a>Find publisher and product name of apps
-
-
-You can pair a Windows Phone (Windows 10 Mobile, version 1511) to your desktop using the Device Portal on the phone to get the various types of information, including publisher name and product name of apps installed on the phone. This procedure describes pairing your phone to your desktop using WiFi.
-
-If this procedure does not work for you, try the other methods for pairing described in [Device Portal for Mobile](/windows/uwp/debug-test-perf/device-portal-mobile).
-
-**To find Publisher and PackageFullName for apps installed on Windows 10 Mobile**
-
-1.  On your Windows Phone, go to **Settings**. Choose **Update & security**. Then choose **For developers**.
-2.  Choose **Developer mode**.
-3.  Turn on **Device discovery**.
-4.  Turn on **Device Portal** and keep **AuthenticationOn**.
-5.  Under the **Device Portal**, under **Connect using: WiFi**, copy the URL to your desktop browser to connect using WiFi.
-
-    If you get a certificate error, continue to the web page.
-
-    If you get an error about not reaching the web page, then you should try the other methods for pairing described in [Device Portal for Mobile](/windows/uwp/debug-test-perf/device-portal-mobile).
-
 6.  On your phone under **Device discovery**, tap **Pair**. You will get a code (case sensitive).
 7.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
 

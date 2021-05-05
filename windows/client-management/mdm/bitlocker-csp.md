@@ -64,7 +64,6 @@ Allows the administrator to require storage card encryption on the device. This 
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -122,7 +121,6 @@ Allows the administrator to require encryption to be turned on by using BitLocke
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -189,7 +187,6 @@ Allows you to set the default encryption method for each of the different drive 
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
