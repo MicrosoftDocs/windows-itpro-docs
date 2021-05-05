@@ -60,7 +60,7 @@ For more information, see [How to Configure Storage Area Network (SAN) Policy in
 ## Security certifications for Windows To Go
 
 
-Windows to Go is a core capability of Windows when it is deployed on the drive and is configured following the guidance for the applicable security certification. Solutions built using Windows To Go can be submitted for additional certifications by the solution provider that cover the solution provider’s specific hardware environment. For more details about Windows security certifications, see the following topics.
+Windows to Go is a core capability of Windows when it is deployed on the drive and is configured following the guidance for the applicable security certification. Solutions built using Windows To Go can be submitted for more certifications by the solution provider that cover the solution provider’s specific hardware environment. For more information about Windows security certifications, see the following topics.
 
 -   [Windows Platform Common Criteria Certification](/windows/security/threat-protection/windows-platform-common-criteria)
 
