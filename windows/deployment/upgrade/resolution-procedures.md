@@ -340,7 +340,7 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 
 ## Related topics
 
-- [Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.md)
+- [Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)
 - [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 - [Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 - [Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/home?category=Windows10ITPro)
