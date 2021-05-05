@@ -229,7 +229,7 @@ Try a Telnet test between two devices on the network to ensure they can connect 
 2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run `telnet 192.168.9.17 7680` (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
 
 > [!NOTE]
-> You can also use [Test-NetConnection](https://docs.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=windowsserver2019-ps) instead of Telnet to run the test.
+> You can also use [Test-NetConnection](/powershell/module/nettcpip/test-netconnection?view=windowsserver2019-ps) instead of Telnet to run the test.
 > **Test-NetConnection -ComputerName 192.168.9.17 -Port 7680**
 
 ### None of the computers on the network are getting updates from peers
