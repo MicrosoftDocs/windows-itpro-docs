@@ -271,7 +271,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Require addition
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -280,7 +280,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Require addition
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -379,7 +379,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Configure minimu
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -388,7 +388,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Configure minimu
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -456,7 +456,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Configure pre-bo
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -465,7 +465,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Configure pre-bo
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -545,7 +545,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLo
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -554,7 +554,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLo
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -642,7 +642,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLo
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -651,7 +651,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLo
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -748,7 +748,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Deny write acces
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+   
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -757,7 +757,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Deny write acces
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -817,7 +817,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Deny write acces
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -826,7 +826,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Deny write acces
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -902,7 +902,7 @@ Allows the admin to disable the warning prompt for other disk encryption on the 
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -911,7 +911,7 @@ Allows the admin to disable the warning prompt for other disk encryption on the 
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -966,7 +966,7 @@ If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDe
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -975,7 +975,7 @@ If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDe
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -1021,7 +1021,7 @@ This setting initiates a client-driven recovery password refresh after an OS dri
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1030,7 +1030,7 @@ This setting initiates a client-driven recovery password refresh after an OS dri
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -1076,7 +1076,7 @@ Each server-side recovery key rotation is represented by a request ID. The serve
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1085,7 +1085,7 @@ Each server-side recovery key rotation is represented by a request ID. The serve
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -1121,7 +1121,7 @@ This node reports compliance state of device encryption on the system.
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1130,7 +1130,7 @@ This node reports compliance state of device encryption on the system.
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -1189,7 +1189,7 @@ Status code can be one of the following:
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1198,7 +1198,7 @@ Status code can be one of the following:
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -1224,7 +1224,7 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1233,7 +1233,7 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 
