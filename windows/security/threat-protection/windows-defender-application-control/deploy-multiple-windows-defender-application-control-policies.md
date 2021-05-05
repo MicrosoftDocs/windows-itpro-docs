@@ -99,6 +99,20 @@ To deploy policies locally using the new multiple policy format, follow these st
 2. Copy binary policies to `C:\Windows\System32\CodeIntegrity\CiPolicies\Active`.
 3. Reboot the system.
 
+### Deploying signed policies locally
+
+In addition to the steps outlined above, the binary policy file must also be copied to the device's EFI partition. Deploying your policy via [MEM](deploy-windows-defender-application-control-policies-using-intune.md) or the [Application Control CSP](#Deploying-multiple-policies-via-ApplicationControl-CSP) will handle this step automatically. 
+
+1. Mount the EFI volume and make the directory, if it does not exist, in an elevated PowerShell prompt: 
+```powershell
+mountvol J: /S
+J:
+mkdir J:\EFI\Microsoft\Boot\CiPolicies\Active
+```
+
+2. Copy the signed policy binary as `{PolicyGUID}.cip` to J:\EFI\Microsoft\Boot\CiPolicies\Active
+3. Reboot the system.
+
 ### Deploying multiple policies via ApplicationControl CSP
 
 Multiple WDAC policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). The CSP also provides support for rebootless policy deployment. See [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp) for more information on deploying multiple policies, optionally using MEM Intune's Custom OMA-URI capability.
