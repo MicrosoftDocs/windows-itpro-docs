@@ -61,9 +61,9 @@ SurfaceHub
 --------SleepTimeout
 --------AllowSessionResume
 --------AllowAutoProxyAuth
+--------ProxyServers
 --------DisableSigninSuggestions
 --------DoNotShowMyMeetingsAndFiles
-----ProxyServers
 ----Management
 --------GroupName
 --------GroupSid
@@ -571,6 +571,11 @@ SurfaceHub
 <p style="margin-left: 20px">If this setting is true, the device account will be used for proxy authentication. If false, a separate account will be used.
 
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
+    
+<a href="" id="properties-proxyservers"></a>**Properties/ProxyServers**
+<p style="margin-left: 20px">Added in <a href="https://support.microsoft.com/en-us/topic/may-28-2019-kb4499162-os-build-15063-1839-ed6780ab-38d6-f590-d789-5ba873b1e142" data-raw-source="[KB4499162](https://support.microsoft.com/en-us/topic/may-28-2019-kb4499162-os-build-15063-1839-ed6780ab-38d6-f590-d789-5ba873b1e142)">KB4499162</a> for Windows 10, version 1703. Specifies FQDNs of proxy servers to provide device account credentials to before any user interaction (if AllowAutoProxyAuth is enabled). This is a semi-colon separated list of server names, without any additional prefixes (e.g. https://).
+
+<p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
 <a href="" id="properties-disablesigninsuggestions"></a>**Properties/DisableSigninSuggestions**
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to disable auto-populating of the sign-in dialog with invitees from scheduled meetings.
