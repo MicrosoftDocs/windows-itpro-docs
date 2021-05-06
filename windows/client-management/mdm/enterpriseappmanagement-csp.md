@@ -250,7 +250,7 @@ From a security perspective, the device complies with the policy request that is
 
 - A Get command on those nodes returns the value that the server pushes down to the device.
 
-- If a Replace command fails, the node value is set to be the previous value before Replace command was applied.
+- If a Replace command fails, the node value is set to be the previous value before the Replace command was applied.
 
 - If an Add command fails, the node is not created.
 
