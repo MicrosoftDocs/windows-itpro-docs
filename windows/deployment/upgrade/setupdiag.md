@@ -85,7 +85,7 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 | Parameter | Description |
 | --- | --- |
 | /? | <ul><li>Displays interactive help</ul> |
-| /Output:\<path to results file\> | <ul><li>This optional parameter enables you to specify the output file for results. This is where you will find what SetupDiag was able to determine.  Only text format output is supported.  UNC paths will work, provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, you must enclose the entire path in double quotes (see the example section below). <li>Default: If not specified, SetupDiag will create the file **SetupDiagResults.log** in the same  directory where SetupDiag.exe is run.</ul> |
+| /Output:\<path to results file\> | <ul><li>This optional parameter enables you to specify the output file for results. This file is where you will find what SetupDiag was able to determine.  Only text format output is supported.  UNC paths will work, provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, you must enclose the entire path in double quotes (see the example section below). <li>Default: If not specified, SetupDiag will create the file **SetupDiagResults.log** in the same  directory where SetupDiag.exe is run.</ul> |
 | /LogsPath:\<Path to logs\> | <ul><li>This optional parameter tells SetupDiag.exe where to find the log files for an offline analysis. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag will recursively search all child directories.</ul> |
 | /ZipLogs:\<True \| False\> | <ul><li>This optional parameter tells SetupDiag.exe to create a zip file containing the results and all the log files it parsed.  The zip file is created in the same directory where SetupDiag.exe is run.<li>Default: If not specified, a value of 'true' is used.</ul> |
 | /Format:\<xml \| json\> | <ul><li>This optional parameter can be used to output log files in xml or JSON format.  If this parameter is not specified, text format is used by default.</ul> |
@@ -219,7 +219,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 1. CompatScanOnly - FFDAFD37-DB75-498A-A893-472D49A1311D
     - This rule indicates that setup.exe was called with a specific command line parameter that indicated setup was to do a compat scan only, not an upgrade.
 2. BitLockerHardblock - C30152E2-938E-44B8-915B-D1181BA635AE
-    - This is a block when the target OS does not support BitLocker, yet the host OS has BitLocker enabled.
+    - This is an upgrade block when the target OS does not support BitLocker, yet the host OS has BitLocker enabled.
 3. VHDHardblock - D9ED1B82-4ED8-4DFD-8EC0-BE69048978CC
     - This block happens when the host OS is booted to a VHD image.  Upgrade is not supported when the host OS is booted from a VHD image.
 4. PortableWorkspaceHardblock - 5B0D3AB4-212A-4CE4-BDB9-37CA404BB280
@@ -233,11 +233,11 @@ Each rule name and its associated unique rule identifier are listed with a descr
 8. CompatBlockedApplicationAutoUninstall – BEBA5BC6-6150-413E-8ACE-5E1EC8D34DD5
     - This rule indicates there is an application that needs to be uninstalled before setup can continue.
 9. CompatBlockedApplicationDismissable - EA52620B-E6A0-4BBC-882E-0686605736D9
-    - When running setup in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies “/compat ignorewarning”.  This rule indicates setup was executed in /quiet mode but there is an application dismissible block message that have prevented setup from continuing.
+    - When running setup in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies “/compat ignorewarning”.  This rule indicates setup was executed in /quiet mode but there is an application dismissible block message that has prevented setup from continuing.
 10. CompatBlockedApplicationManualUninstall - 9E912E5F-25A5-4FC0-BEC1-CA0EA5432FF4
     - This rule indicates that an application without an Add/Remove Programs entry, is present on the system and blocking setup from continuing.  This typically requires manual removal of the files associated with this application to continue.
 11. HardblockDeviceOrDriver - ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B
-    - This indicates a device driver that is loaded on the host OS is not compatible with the newer OS version and needs to be removed prior to the upgrade.
+    - This error indicates a device driver that is loaded on the host OS is not compatible with the newer OS version and needs to be removed prior to the upgrade.
 12. HardblockMismatchedLanguage - 60BA8449-CF23-4D92-A108-D6FCEFB95B45
     - This rule indicates the host OS and the target OS language editions do not match.
 13. HardblockFlightSigning - 598F2802-3E7F-4697-BD18-7A6371C8B2F8
@@ -345,7 +345,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 - This version of SetupDiag is included with Windows 10, version 21H1.
 - A new rule is added: UserProfileSuffixMismatch.
 - All outputs to the command line are now invariant culture for purposes of time/date format
-- Fixed an issue with registry output where a "no match found" result caused a corrupted REG_SZ value.
+- Fixed an issue with registry output in which the "no match found" result caused a corrupted REG_SZ value.
 
 08/08/2019 - SetupDiag v1.6.0.42 is released with 60 rules, as a standalone tool available from the Download Center.
  - Log detection performance is improved.  What used to take up to a minute should take around 10 seconds or less.
@@ -363,7 +363,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 06/19/2019 - SetupDiag v1.5.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
 - All date and time outputs are updated to localized format per user request.
 - Added setup Operation and Phase information to /verbose log.
-- Added last Setup Operation and last Setup Phase information to most rules where it make sense (see new output below).
+- Added last Setup Operation and last Setup Phase information to most rules where it makes sense (see new output below).
 - Performance improvement in searching setupact.logs to determine correct log to parse.
 - Added SetupDiag version number to text report (xml and json always had it).
 - Added "no match" reports for xml and json per user request.
@@ -377,7 +377,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
   - For an example, see [Sample registry key](#sample-registry-key).
 
 05/17/2019 - SetupDiag v1.4.1.0 is released with 53 rules, as a standalone tool available from the Download Center.
-- This release dds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
+- This release dds the ability to find and diagnose reset and recovery failures (Push-Button Reset).  
 
 12/18/2018 - SetupDiag v1.4.0.0 is released with 53 rules, as a standalone tool available from the Download Center.
 - This release includes major improvements in rule processing performance: ~3x faster rule processing performance!
