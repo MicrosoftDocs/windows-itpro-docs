@@ -540,7 +540,7 @@ The following list shows the supported deployment options:
 - ValidateDependencies="1". This is used at provisioning/staging time. If it is set to 1, deployment will perform the same dependency validation during staging that we would normally do at registration time, failing and rejecting the provision request if the dependencies are not present. Available in the latest insider flight of 20H1.
 - ExcludeAppFromLayoutModification="1". Sets that the app will be provisioned on all devices and will be able to retain the apps provisioned without pinning them to start layout. Available in 1809.
 
-Supported operation is Execute, Add, Delete, and Get.
+Supported operations are Execute, Add, Delete, and Get.
 
 <a href="" id="appinstallation-packagefamilyname-lasterror"></a>**AppInstallation/*PackageFamilyName*/LastError**
 Required. Last error relating to the app installation.
