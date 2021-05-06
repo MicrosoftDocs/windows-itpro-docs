@@ -628,7 +628,7 @@ Supported operation is Execute.
 
 ## Examples
 
-For examples of how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
+For examples of how to use this CSP for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
 
 Query the device for a specific app subcategory, such as nonStore apps.
 
