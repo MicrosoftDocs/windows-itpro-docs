@@ -342,7 +342,7 @@ Required. Provides information about the status of the package. Value type is in
 Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-requiresreinstall"></a>**.../*PackageFamilyName*/*PackageFullName*/RequiresReinstall**
-Required. Specifies whether the package state has changed and requires a reinstallation of the app. This can occur when new app resources are required, such as when a device has a change in language preference or a new DPI. It can also occur of the package was corrupted. If the value is 1, reinstallation of the app is performed. Value type is int.
+Required. Specifies whether the package state has changed and requires a reinstallation of the app. This can occur when new app resources are required, such as when a device has a change in language preference or a new DPI. It can also occur if the package was corrupted. If the value is 1, reinstallation of the app is performed. Value type is int.
 
 > [!NOTE]
 > Not applicable to XAP files.
