@@ -81,8 +81,6 @@ Defines restrictions for applications.
 
 Additional information:
 
-- [Find publisher and product name of apps](#productname) - step-by-step guide for getting the publisher and product names for various Windows apps.
-
 <a href="" id="applocker-applicationlaunchrestrictions-grouping"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_**  
 Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.
 Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.

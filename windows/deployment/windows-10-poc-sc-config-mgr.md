@@ -854,8 +854,6 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 6. When a popup dialog box asks if you want to run full discovery, click **Yes**.
 7. In the Assets and Compliance workspace, click **Devices** and verify that the computer account names for SRV1 and PC1 are displayed. See the following example (GREGLIN-PC1 is the computer account name of PC1 in this example):
 
-    ![assets](images/configmgr-assets.png)
-
     >If you do not see the computer account for PC1, try clicking the **Refresh** button in the upper right corner of the console.
 
     The **Client** column indicates that the Configuration Manager client is not currently installed. This procedure will be carried out next.
