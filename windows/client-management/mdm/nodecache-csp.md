@@ -144,7 +144,7 @@ Supported operations are Add, Get, and Delete.
 
     1. Sends a Get operation for ./Vendor/MSFT/NodeCache/*ProviderID*/ChangedNodes LocURI
 
-    2. Response is a list of changed node IDs. Each ID in the list corresponds to a node under ./Vendor/MSFT/NodeCache/*ProviderID*/Nodes root
+    2. Response is a list of changed node IDs. Each ID in the list corresponds to a node under ./Vendor/MSFT/NodeCache/*ProviderID*/Nodes root.
 
     3. For each node in the invalid nodes list, the server sends a `GET` command to retrieve the actual value of the node. For example, `GET <NodeURI>`, where `NodeURI` is a full device LocURI that corresponds to the invalid cache node.
 
