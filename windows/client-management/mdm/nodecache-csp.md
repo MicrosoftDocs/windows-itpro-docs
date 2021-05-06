@@ -142,7 +142,7 @@ Supported operations are Add, Get, and Delete.
 
 4. The server updates the server-side cache:
 
-    1. Sends a Get operation for ./Vendor/MSFT/NodeCache/*ProviderID*/ChangedNodes LocURI
+    1. Sends a Get operation for ./Vendor/MSFT/NodeCache/*ProviderID*/ChangedNodes LocURI.
 
     2. Response is a list of changed node IDs. Each ID in the list corresponds to a node under ./Vendor/MSFT/NodeCache/*ProviderID*/Nodes root.
 
