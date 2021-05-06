@@ -523,7 +523,7 @@ Supported operations are Get and Add.
 <a href="" id="appinstallation-packagefamilyname-storeinstall"></a>**AppInstallation/*PackageFamilyName*/StoreInstall**
 Required. Command to perform an install of an app and a license from the Microsoft Store.
 
-Supported operation is Execute, Add, Delete, and Get.
+Supported operations are Execute, Add, Delete, and Get.
 
 <a href="" id="appinstallation-packagefamilyname-hostedinstall"></a>**AppInstallation/*PackageFamilyName*/HostedInstall**
 Required. Command to perform an install of an app package from a hosted location (this can be a local drive, a UNC, or https data source).
