@@ -754,7 +754,7 @@ Required. Added in Windows 10, version 1709. This node, when doing a get, tells 
 Supported operations are Get and Replace. Value type is boolean.
 
 <a href="" id="provider-providerid-firstsyncstatus-wasdevicesuccessfullyprovisioned"></a>**Provider/*ProviderID*/FirstSyncStatus/WasDeviceSuccessfullyProvisioned**
-Required. Added in Windows 10, version 1709. Integer node determining if a device was successfully provisioned.  0 is failure, 1 is success, 2 is in progress.  Once the value is changed to 0 or 1, the value cannot be changed again. The client will change the value of success or failure and update the node. The server can, however, force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true. This node only applies to the user MDM status page (on a per user basis).
+Required. Added in Windows 10, version 1709. Integer node determining if a device was successfully provisioned. 0 is failure, 1 is success, 2 is in progress. Once the value is changed to 0 or 1, the value cannot be changed again. The client will change the value of success or failure and update the node. The server can, however, force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true. This node only applies to the user MDM status page (on a per user basis).
 
 Supported operations are Get and Replace. Value type is integer.
 
