@@ -4345,7 +4345,7 @@ Supported values:
 <!--/Scope-->
 <!--Description-->
 
-[!INCLUDE [allow-a-shared-books-folder-shortdesc](../../../browsers/edge/shortdesc/allow-a-shared-books-folder-shortdesc.md)]
+[!INCLUDE [allow-a-shared-books-folder-shortdesc](includes/allow-a-shared-books-folder-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
