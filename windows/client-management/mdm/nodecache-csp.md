@@ -383,7 +383,7 @@ It represents this:
 Id is the node ID that was added by the MDM server, and Uri is the path that the node is tracking.
 If a Uri is not set, the node will always be reported as changed, as in Node id 10.
 
-The value inside of the node tag is the actual value returned by the Uri, which means that for Node Id 20 the DeviceName did not match what was previously expected, and the device name is now U09NRU5FV1ZBTFVF instead of what it was previously.
+The value inside of the node tag is the actual value returned by the URI, which means that for Node Id 20 the DeviceName did not match what was previously expected, and the device name is now U09NRU5FV1ZBTFVF instead of what it was previously.
 
 ## Related topics
 
