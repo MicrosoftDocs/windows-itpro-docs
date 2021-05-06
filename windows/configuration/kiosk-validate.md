@@ -4,12 +4,12 @@ description: In this article, learn what to expect on a multi-app kiosk in Windo
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/30/2018
 ms.topic: article
