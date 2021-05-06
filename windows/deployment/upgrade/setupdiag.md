@@ -29,7 +29,7 @@ ms.topic: article
 
 ## About SetupDiag
 
-<I>Current downloadable version of SetupDiag: 1.6.0.42</I>
+<I>Current downloadable version of SetupDiag: 1.6.1.0</I>
 >Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
@@ -336,9 +336,16 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Detects failures in down-level phase before setup platform is invoked.
 60. FindSPFatalError - A4028172-1B09-48F8-AD3B-86CDD7D55852
     - Captures failure information when setup platform encounters a fatal error.
-
+61. UserProfileSuffixMismatch - B4BBCCCE-F99D-43EB-9090-078213397FD8
+    - Detects when a file or other object causes the migration or creation of a user profile to fail during the update.
 
 ## Release notes
+
+05/06/2021 - SetupDiag v1.6.1.0 is released with 61 rules, as a standalone tool available in the Download Center.  
+- This version of SetupDiag is included with Windows 10, version 21H1.
+- A new rule is added: UserProfileSuffixMismatch.
+- All outputs to the command line are now invariant culture for purposes of time/date format
+- Fixed an issue with registry output where a "no match found" result caused a corrupted REG_SZ value.
 
 08/08/2019 - SetupDiag v1.6.0.42 is released with 60 rules, as a standalone tool available from the Download Center.
  - Log detection performance is improved.  What used to take up to a minute should take around 10 seconds or less.
