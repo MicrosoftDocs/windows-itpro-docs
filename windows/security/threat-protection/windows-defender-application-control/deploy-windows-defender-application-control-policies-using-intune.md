@@ -68,6 +68,9 @@ The steps to use Intune's custom OMA-URI functionality are:
     > [!div class="mx-imgBorder"]
     > ![Configure custom WDAC](images/wdac-intune-custom-oma-uri.png)
 
+> [!NOTE]
+> For the _Policy GUID_ value do not include the curly brackets. 
+
 ### Remove WDAC policies on Windows 10 1903+
 
 Upon deletion, policies deployed through Intune via the ApplicationControl CSP are removed from the system but stay in effect until the next reboot. In order to disable WDAC enforcement, first replace the existing policy with a new version of the policy that will "Allow *", like the rules in the example  policy at %windir%\schemas\CodeIntegrity\ExamplePolicies\AllowAll.xml. Once the updated policy is deployed, you can then delete the policy from the Intune portal. This will prevent anything from being blocked and fully remove the WDAC policy on the next reboot.
