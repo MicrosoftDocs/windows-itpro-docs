@@ -1,5 +1,5 @@
 ---
-title: Configuring Hybrid key trust Windows Hello for Business - Active Directory (AD)
+title: Configuring Hybrid Azure AD joined key trust Windows Hello for Business - Active Directory (AD)
 description: Configuring Hybrid key trust Windows Hello for Business - Active Directory (AD)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, ad, key trust, key-trust
 ms.prod: w10
@@ -13,10 +13,10 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/20/2018
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Configuring Hybrid key trust Windows Hello for Business: Active Directory
+# Configuring Hybrid Azure AD joined key trust Windows Hello for Business: Active Directory
 
 **Applies to**
 -   Windows 10, version 1703 or later

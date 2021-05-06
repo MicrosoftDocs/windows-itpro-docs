@@ -72,7 +72,6 @@ Some important highlights:
 > [!NOTE]
 > On Microsoft Update, metadata for a given update gets modified over time (updating descriptive information, fixing bugs in applicability rules, localization changes, etc). Each time such a change is made that doesn’t affect the update itself, a new update revision is created. The identity of an update revision is a compound key containing both an UpdateID (GUID) and a RevisionNumber (int). The MDM should not expose the notion of an update revision to IT. Instead, for each UpdateID (GUID) the MDM should just keep the metadata for the later revision of that update (the one with the highest revision number).
 
-
 ## <a href="" id="examplesofupdatestructure"></a>Examples of update metadata XML structure and element descriptions
 
 The response of the GetUpdateData call returns an array of ServerSyncUpdateData that contains the update metadata in the XmlUpdateBlob element. The schema of the update xml is available at [Protocol Examples](/openspecs/windows_protocols/ms-wsusss/2dedbd00-fbb7-46ee-8ee0-aec9bd1ecd2a). Some of the key elements are described below:
@@ -102,7 +101,6 @@ First some background:
 - If you have a multi-tenant MDM, the update metadata can be kept in a shared partition, since it is common to all tenants.
 - A metadata sync service can then be implemented that periodically calls server-server sync to pull in metadata for the updates IT cares about.
 - The MDM component that uses OMA DM to control devices (described in the next section) should send the metadata sync service the list of needed updates it gets from each client if those updates are not already known to the device.
-
 
 The following procedure describes a basic algorithm for a metadata sync service:
 
@@ -147,7 +145,6 @@ The following diagram shows the Update policies in a tree format.
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
-
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with <strong>Update/ActiveHoursStart</strong>) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
 
 > [!NOTE]
@@ -161,7 +158,6 @@ The following diagram shows the Update policies in a tree format.
 
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT admin to specify the max active hours range. This value sets max number of active hours from start time.
 
@@ -806,7 +802,6 @@ Upgrades deferred until the next period.
 
 Supported operation is Get.
 
-
 ## <a href="" id="windows10version1607forupdatemanagement"></a> Windows 10, version 1607 for update management
 
 Here are the new policies added in Windows 10, version 1607 in [Policy CSP](policy-configuration-service-provider.md). You should use these policies for the new Windows 10, version 1607 devices.
@@ -903,7 +898,6 @@ For Windows Update for Business, here is the list of supported policies on Windo
 > For policies supported for Windows Update for Business, when you set policies for both Windows 10, version 1607 and Windows 10, version 1511 running on 1607, then 1607 policies will be configured (1607 trumps 1511).
 
 For policies supported for Windows Update for Business, when you set 1511 policies on a device running 1607, you will get the expected behavior for 1511 policies.
-
 
 ## <a href="" id="userexperiencescreenshot"></a>Update management user experience screenshot
 
