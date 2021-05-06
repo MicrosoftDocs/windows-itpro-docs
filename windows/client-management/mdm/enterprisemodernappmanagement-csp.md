@@ -203,7 +203,7 @@ Required. Used for managing apps from the Microsoft Store.
 Supported operations are Get and Delete.
 
 <a href="" id="appmanagement-releasemanagement"></a>**AppManagement/AppStore/ReleaseManagement**
-Added in Windows 10, version 1809. Interior node for the managing updates through the Microsoft Store. These settings allow the IT admin to specify update channels for apps that they want their users to use for receiving updates. It allows the IT admin to assign a specific release to a smaller group for testing before the large deployment to the rest of the organization.
+Added in Windows 10, version 1809. Interior node for managing updates through the Microsoft Store. These settings allow the IT admin to specify update channels for apps that they want their users to use for receiving updates. It allows the IT admin to assign a specific release to a smaller group for testing before the large deployment to the rest of the organization.
 
 > [!NOTE]
 > ReleaseManagement settings only apply to updates through the Microsoft Store.
