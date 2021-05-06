@@ -51,6 +51,9 @@ When run by Windows Setup, the following [parameters](#parameters) are used:
 
 The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.
 
+> [!IMPORTANT]
+> When SetupDiag indicates that there were multiple failures, the last failure in the log file is typically the fatal error, not the first one.
+
 If the upgrade process proceeds normally, the **Sources** directory including **setupdiag.exe** is moved under **%SystemDrive%\Windows.Old** for cleanup. If the **Windows.old** directory is deleted later, **setupdiag.exe** will also be removed.
 
 ## Using SetupDiag
