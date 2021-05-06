@@ -272,11 +272,11 @@ Supported operations are Get, Add, Delete, and Replace.
 
     ![device portal app manager](images/applocker-screenshot3.png)
 
-10. If you do not see the app that you want, look under **Installed apps**. Using the drop down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
+10. If you do not see the app that you want, look under **Installed apps**. Using the drop- down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
 
     ![app manager](images/applocker-screenshot2.png)
 
-The following table show the mapping of information to the AppLocker publisher rule field.
+The following table shows the mapping of information to the AppLocker publisher rule field.
 
 <table>
 <colgroup>
@@ -303,7 +303,7 @@ The following table show the mapping of information to the AppLocker publisher r
 <td><p>Version</p></td>
 <td><p>Version</p>
 <p>This can be used either in the HighSection or LowSection of the BinaryVersionRange.</p>
-<p>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.</p></td>
+<p>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version- independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.</p></td>
 </tr>
 </tbody>
 </table>
@@ -545,7 +545,7 @@ The following list shows the apps that may be included in the inbox.
 <td>Microsoft.AccountsControl</td>
 </tr>
 <tr class="even">
-<td>Enterprise install app</td>
+<td>Enterprise installs app</td>
 <td>da52fa01-ac0f-479d-957f-bfe4595941cb</td>
 <td></td>
 </tr>
@@ -790,7 +790,7 @@ The following list shows the apps that may be included in the inbox.
 <td></td>
 </tr>
 <tr class="odd">
-<td>Sign-in for Windows 10 Holographic</td>
+<td>Sign in for Windows 10 Holographic</td>
 <td></td>
 <td>WebAuthBridgeInternetSso, WebAuthBridgeInternet, WebAuthBridgeIntranetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternet, WebAuthBrokerIntranetSso, SignIn</td>
 </tr>
@@ -1450,7 +1450,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
 ```
 
 ## Example for Windows 10 Holographic for Business
-The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable to enable a working device, as well as Settings.
+The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable a working device, as well as Settings.
 
 ```xml
 <RuleCollection Type="Appx" EnforcementMode="Enabled">

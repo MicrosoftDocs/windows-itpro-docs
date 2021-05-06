@@ -40,12 +40,12 @@ mdmdiagnosticstool.exe -area DeviceEnrollment;DeviceProvisioning;Autopilot -cab 
 -   In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
 
 ### Understanding cab structure
-The cab file will have logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment,DeviceProvisioning and Autopilot areas. It applies to the cab files collected via command line or Feedback Hub
+The cab file will have logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment, DeviceProvisioning and Autopilot areas. It applies to the cab files collected via command line or Feedback Hub
 
 -   DiagnosticLogCSP_Collector_Autopilot_*: Autopilot etls
 -   DiagnosticLogCSP_Collector_DeviceProvisioning_*: Provisioning etls (Microsoft-Windows-Provisioning-Diagnostics-Provider)
--   MDMDiagHtmlReport.html: Summary snapshot of MDM space configurations and policies. Includes, management url, MDM server device id, certificates, policies.
--   MdmDiagLogMetadata,json: mdmdiagnosticstool metadata file, contains command line arguments used to run the tool
+-   MDMDiagHtmlReport.html: Summary snapshot of MDM space configurations and policies. Includes, management url, MDM server device ID, certificates, policies.
+-   MdmDiagLogMetadata, json: mdmdiagnosticstool metadata file, contains command-line arguments used to run the tool
 -   MDMDiagReport.xml: contains a more detail view into the MDM space configurations, e.g enrollment variables
 -   MdmDiagReport_RegistryDump.reg: contains dumps from common MDM registry locations
 -   MdmLogCollectorFootPrint.txt: mdmdiagnosticslog tool logs from running the command
