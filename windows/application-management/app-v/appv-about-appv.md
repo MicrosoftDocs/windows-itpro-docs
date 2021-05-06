@@ -1,7 +1,7 @@
 ---
 title: What's new in App-V for Windows 10, version 1703 and earlier (Windows 10)
 description: Information about what's new in App-V for Windows 10, version 1703 and earlier. 
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 06/08/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # What's new in App-V for Windows 10, version 1703 and earlier

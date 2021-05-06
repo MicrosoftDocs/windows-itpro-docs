@@ -4,9 +4,9 @@ description: How to set up Cortana to give salespeople insights on important CRM
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.date: 10/05/2017
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: How to convert a package created in a previous version of App-V (Windows 10)
 description: Use the package converter utility to convert a virtual application package created in a previous version of App-V.
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 07/10/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # How to convert a package created in a previous version of App-V
