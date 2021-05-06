@@ -136,7 +136,7 @@ Supported operations are Add, Get, and Delete.
 
 1. The device connects to a DM server.
 
-2. The server queries the **NodeCache** version by issuing a Get operation for ./Vendor/MSFT/NodeCache/*ProviderID*/CacheVersion LocURI
+2. The server queries the **NodeCache** version by issuing a Get operation for ./Vendor/MSFT/NodeCache/*ProviderID*/CacheVersion LocURI.
 
 3. If the device **CacheVersion** and the server-side cache differ (due to a device crash or server crash), the server can clear the server-side cache and go to Step 5.
 
