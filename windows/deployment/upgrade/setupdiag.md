@@ -59,13 +59,13 @@ To quickly use SetupDiag on your current computer:
 1. Verify that your system meets the [requirements](#requirements) described below. If needed, install the [.NET framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137).
 2. [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142).
 3. If your web browser asks what to do with the file, choose **Save**. By default, the file will be saved to your **Downloads** folder. You can also save it to a different location if desired by using **Save As**.
-4. When SetupDiag has finished downloading, open the folder where you downloaded the file. By default, this is your **Downloads** folder, which is displayed in File Explorer under **Quick access** in the left navigation pane.
+4. When SetupDiag has finished downloading, open the folder where you downloaded the file. By default, this folder is the **Downloads** folder, which is displayed in File Explorer under **Quick access** in the left navigation pane.
 5. Double-click the **SetupDiag** file to run it. Click **Yes** if you are asked to approve running the program.
     - Double-clicking the file to run it will automatically close the command window when SetupDiag has completed its analysis. If you wish to keep this window open instead, and review the messages that you see, run the program by typing **SetupDiag** at the command prompt instead of double-clicking it. You will need to change directories to the location of SetupDiag to run it this way.
-6. A command window will open while SetupDiag diagnoses your computer. Wait for this to finish.
+6. A command window will open while SetupDiag diagnoses your computer. Wait for this process to finish.
 7. When SetupDiag finishes, two files will be created in the same folder where you double-clicked SetupDiag. One is a configuration file, the other is a log file.
 8. Use Notepad to open the log file: **SetupDiagResults.log**.
-9. Review the information that is displayed. If a rule was matched, this can tell you why the computer failed to upgrade, and potentially how to fix the problem. See the [Text log sample](#text-log-sample) below.
+9. Review the information that is displayed. If a rule was matched, this information can tell you why the computer failed to upgrade, and potentially how to fix the problem. See the [Text log sample](#text-log-sample) below.
 
 For instructions on how to run the tool in offline mode and with more advanced options, see the [Parameters](#parameters) and [Examples](#examples) sections below.
 
@@ -90,14 +90,14 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 | /ZipLogs:\<True \| False\> | <ul><li>This optional parameter tells SetupDiag.exe to create a zip file containing the results and all the log files it parsed.  The zip file is created in the same directory where SetupDiag.exe is run.<li>Default: If not specified, a value of 'true' is used.</ul> |
 | /Format:\<xml \| json\> | <ul><li>This optional parameter can be used to output log files in xml or JSON format.  If this parameter is not specified, text format is used by default.</ul> |
 | /Scenario:\[Recovery\] | <ul><li>This optional parameter instructs SetupDiag.exe to look for and process reset and recovery logs and ignore setup/upgrade logs.</ul>|
-| /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce an additional log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
+| /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce another log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
 | /NoTel | <ul><li>This optional parameter tells SetupDiag.exe not to send diagnostic telemetry to Microsoft.</ul> |
 | /AddReg | <ul><li>This optional parameter instructs SetupDiag.exe to add failure information to the registry in offline mode. By default, SetupDiag will add failure information to the registry in online mode only. Registry data is added to the following location on the system where SetupDiag is run: **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**.</ul> |
 | /RegPath | <ul><li>This optional parameter instructs SetupDiag.exe to add failure information to the registry using the specified path. If this parameter is not specified the default path is **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**.
 </ul> |
 
 Note: The **/Mode** parameter is deprecated in version 1.4.0.0 of SetupDiag. 
-- In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In version 1.4.0.0 when you specify /LogsPath then SetupDiag will automatically run in offline mode, therefore the /Mode parameter is not needed.
+- In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In version 1.4.0.0, when you specify /LogsPath then SetupDiag will automatically run in offline mode, therefore the /Mode parameter is not needed.
 
 ### Examples:
 
@@ -107,7 +107,7 @@ In the following example, SetupDiag is run with default parameters (online mode,
 SetupDiag.exe
 ```
 
-In the following example, SetupDiag is run in online mode (this is the default).  It will know where to look for logs on the current (failing) system, so there is no need to gather logs ahead of time. A custom location for results is specified.
+In the following example, SetupDiag is run in online mode (this mode is the default).  It will know where to look for logs on the current (failing) system, so there is no need to gather logs ahead of time. A custom location for results is specified.
 
 ```
 SetupDiag.exe /Output:C:\SetupDiag\Results.log
@@ -147,15 +147,15 @@ SetupDiag.exe /Scenario:Recovery /Format:xml
 <br>\Windows\Panther
 <br>\Windows\Panther\NewOS
 
-If you copy the parent folder and all sub-folders, SetupDiag will automatically search for log files in all subdirectories.
+If you copy the parent folder and all subfolders, SetupDiag will automatically search for log files in all subdirectories.
 
 ## Setup bug check analysis
 
 When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a bug check. It is also commonly referred to as a system crash, a kernel error, a Stop error, or BSOD. Typically a hardware device, hardware driver, or related software causes this error.
 
-If crash dumps [are enabled](/windows-hardware/drivers/debugger/enabling-a-kernel-mode-dump-file) on the system, a crash dump file is created. If the bug check occurs during an upgrade, Windows Setup will extract a minidump (setupmem.dmp) file. SetupDiag can also debug these setup related minidumps.
+If crash dumps [are enabled](/windows-hardware/drivers/debugger/enabling-a-kernel-mode-dump-file) on the system, a crash dump file is created. If the bug check occurs during an upgrade, Windows Setup will extract a minidump (setupmem.dmp) file. SetupDiag can also debug these setup-related minidumps.
 
-To debug a setup related bug check, you must:
+To debug a setup-related bug check, you must:
 - Specify the **/LogsPath** parameter. You cannot debug memory dumps in online mode. 
 - Gather the setup memory dump file (setupmem.dmp) from the failing system. 
     - Setupmem.dmp will be created in either **%SystemDrive%\$Windows.~bt\Sources\Rollback**, or in **%WinDir%\Panther\NewOS\Rollback** depending on when the bug check occurs.
@@ -174,7 +174,7 @@ SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /LogsPath:D:\Dump
 
 ## Sample output
 
-The following is an example where SetupDiag is run in offline mode.
+The following command is an example where SetupDiag is run in offline mode.
 
 ```
 D:\SetupDiag>SetupDiag.exe /output:c:\setupdiag\result.xml /logspath:D:\Tests\Logs\f55be736-beed-4b9b-aedf-c133536c946e /format:xml
