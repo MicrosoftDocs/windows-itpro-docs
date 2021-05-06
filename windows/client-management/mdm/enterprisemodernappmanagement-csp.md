@@ -106,7 +106,7 @@ Added in Windows 10, version 1511. Required. Specifies the query for app invento
 
 Query parameters:
 
-- Output - Specifies the parameters for the information returned in AppInventoryResults operation. Multiple value must be separate by |. Valid values are:
+- Output - Specifies the parameters for the information returned in AppInventoryResults operation. Multiple values must be separated by |. Valid values are:
     - PackagesName - returns the *PackageFamilyName* and *PackageFullName* of the app. Default if nothing is specified.
     - PackageDetails - returns all inventory attributes of the package. This includes all information from PackageNames parameter, but does not validate RequiresReinstall.
     - RequiredReinstall - Validates the app status of the apps in the inventory query to determine if they require a reinstallation. This attribute may impact system performance depending on the number of apps installed. Requiring reinstall occurs when resource package updates or when the app is in a tampered state.
