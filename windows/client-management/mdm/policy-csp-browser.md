@@ -242,9 +242,9 @@ ms.localizationpriority: medium
 <!--Description-->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703* 
 
-[!INCLUDE [allow-address-bar-drop-down-shortdesc](../../../browsers/edge/shortdesc/allow-address-bar-drop-down-shortdesc.md)]
+[!INCLUDE [allow-address-bar-drop-down-shortdesc](includes/allow-address-bar-drop-down-shortdesc.md)]
 
-
+-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
