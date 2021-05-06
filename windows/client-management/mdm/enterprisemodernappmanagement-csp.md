@@ -572,7 +572,7 @@ Supported operation is Get.
 > This element is not present after the app is installed.
 
 <a href="" id="appinstallation-packagefamilyname-progessstatus"></a>**AppInstallation/*PackageFamilyName*/ProgessStatus**
-Required. An integer the indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus is not available for provisioning and it is only for user-based installations. In provisioning, the value is always 0 (zero).
+Required. An integer that indicates the progress of the app installation. For HTTPS locations, this indicates the download progress. ProgressStatus is not available for provisioning and it is only for user-based installations. In provisioning, the value is always 0 (zero).
 
 Supported operation is Get.
 
