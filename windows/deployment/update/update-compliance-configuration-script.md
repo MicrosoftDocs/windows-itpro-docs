@@ -18,7 +18,7 @@ ms.topic: article
 # Configuring devices through the Update Compliance Configuration Script
 
 > [!NOTE]
-> A new policy is required to use Update Compliance, referred to as AllowUpdateComplianceProcessing. If you are an existing customer and configured your devices prior to May 10, 2021, you must rerun the script so the new policy can be configured. We do not recommend using this script if you configure devices using MDM; instead, configure the policies listed in [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md) via your MDM provider. 
+> A new policy is required to use Update Compliance: "AllowUpdateComplianceProcessing." If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must rerun the script so the new policy can be configured. We don't recommend using this script if you configure devices using MDM. Instead, configure the policies listed in [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md) by using your MDM provider. 
 
 The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures device policies via Group Policy, ensures that required services are running, and more.
 
