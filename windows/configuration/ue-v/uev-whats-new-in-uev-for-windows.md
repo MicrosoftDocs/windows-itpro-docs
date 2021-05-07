@@ -1,7 +1,7 @@
 ---
 title: What's New in UE-V for Windows 10, version 1607
 description: Learn about what's new in User Experience Virtualization (UE-V) for Windows 10, including new features and capabilities.
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 

@@ -172,6 +172,7 @@ You can now see these computers in the **Ring 3 Broad IT** computer group.
 
 
 <span id="wsus-gp"/>
+
 ## Use Group Policy to populate deployment rings
 
 The WSUS Administration Console provides a friendly interface from which you can manage Windows 10 quality and feature updates. When you need to add many computers to their correct WSUS deployment ring, however, it can be time-consuming to do so manually in the WSUS Administration Console. For these cases, consider using Group Policy to target the correct computers, automatically adding them to the correct WSUS deployment ring based on an Active Directory security group. This process is called *client-side targeting*. Before enabling client-side targeting in Group Policy, you must configure WSUS to accept Group Policy computer assignment.

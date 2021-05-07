@@ -12,8 +12,8 @@ metadata:
   ms.product: windows
   ms.topic: hub-page # Required
   ms.collection: M365-security-compliance # Optional; Remove if no collection is used.
-  author: danihalfin #Required; your GitHub user alias, with correct capitalization.
-  ms.author: daniha #Required; microsoft alias of author; optional team alias.
+  author: dansimp #Required; your GitHub user alias, with correct capitalization.
+  ms.author: dansimp #Required; microsoft alias of author; optional team alias.
   ms.date: 01/08/2018 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
 
