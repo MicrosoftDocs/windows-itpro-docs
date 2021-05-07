@@ -394,7 +394,7 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
 ```
 
 ## Folder Access sample xml
-In Windows 10, version 1809, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granulatity and easier use, and is available in Windows 10 verson 2009 and later.
+In Windows 10, version 1809, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granularity and easier use, and is available in Windows 10 version 2009 and later.
 
 IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
 
