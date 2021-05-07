@@ -26,22 +26,22 @@ You can download the script from the [Microsoft Download Center](https://www.mic
 
 ## Script FAQ
 
-1. I manage my devices with MDM. Should I use this script?
-    * You should not use this script and instead configure the below policies through your MDM provider. 
-2. Does this script configure devices for Delivery Optimization?
-    * This script does not configure devices for Delivery Optimization. You must do that separately.
+- I manage my devices with MDM. Should I use this script?
+No, you should not use this script. Instead configure the policies through your MDM provider. 
+- Does this script configure devices for Delivery Optimization?
+No. You must do that separately.
 
 ## How this script is organized
 
-This script's two primary files are `ConfigScript.ps1` and `RunConfig.bat`. You configure `RunConfig.bat` according to the directions in the `.bat` itself, which will then execute `ConfigScript.ps1` with the parameters entered to `RunConfig.bat`. There are two ways of using the script: in **Pilot** mode or **Deployment** mode. 
+This script's two primary files are `ConfigScript.ps1` and `RunConfig.bat`. You configure `RunConfig.bat` according to the directions in the `.bat` itself, which will then run `ConfigScript.ps1` with the parameters entered to `RunConfig.bat`. There are two ways of using the script: in **Pilot** mode or **Deployment** mode. 
 
-* In **Pilot** mode (`runMode=Pilot`), the script will enter a verbose mode with enhanced diagnostics, and save the results in the path defined with `logpath` in `RunConfig.bat`. This is intended for a pilot run of the script or for troubleshooting configuration.
-* In **Deployment** mode (`runMode=Deployment`), the script will quietly execute. 
+- In **Pilot** mode (`runMode=Pilot`), the script will enter a verbose mode with enhanced diagnostics, and save the results in the path defined with `logpath` in `RunConfig.bat`. Pilot mode is best for a pilot run of the script or for troubleshooting configuration.
+- In **Deployment** mode (`runMode=Deployment`), the script will run quietly. 
 
 
 ## How to use this script
 
-Open `RunConfig.bat`, and configure the following (assuming a first-run, with `runMode=Pilot`:
+Open `RunConfig.bat` and configure the following (assuming a first-run, with `runMode=Pilot`):
 
 1. Define `logPath` to where you want the logs to be saved. Ensure that `runMode=Pilot`.
 2. Set `commercialIDValue` to your Commercial ID.
