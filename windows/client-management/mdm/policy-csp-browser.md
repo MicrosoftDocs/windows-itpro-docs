@@ -244,7 +244,7 @@ ms.localizationpriority: medium
 
 [!INCLUDE [allow-address-bar-drop-down-shortdesc](../includes/allow-address-bar-drop-down-shortdesc.md)]
 
--
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  

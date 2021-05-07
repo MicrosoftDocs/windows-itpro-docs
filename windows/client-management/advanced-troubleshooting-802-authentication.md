@@ -7,7 +7,7 @@ keywords: advanced troubleshooting, 802.1X authentication, troubleshooting, auth
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: tracyp
 ms.topic: troubleshooting

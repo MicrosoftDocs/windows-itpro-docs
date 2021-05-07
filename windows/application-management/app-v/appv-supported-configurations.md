@@ -1,7 +1,7 @@
 ---
 title: App-V Supported Configurations (Windows 10)
 description: Learn the requirements to install and run App-V supported configurations in your Windows 10 environment.
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/16/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # App-V Supported Configurations

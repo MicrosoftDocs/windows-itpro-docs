@@ -4,12 +4,12 @@ description: Learn how to prepare a device for kiosk configuration. Also, learn 
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
