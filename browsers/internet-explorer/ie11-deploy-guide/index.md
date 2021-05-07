@@ -60,6 +60,6 @@ IE11 offers differing experiences in Windows 8.1:
 |Internet Explorer 11 or IE11 |The whole browser, which includes both IE and Internet Explorer for the desktop. |
 
 ## Related topics
-- [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.md)
+- [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.yml)
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
 - [Microsoft Edge - Deployment Guide for IT Pros](/microsoft-edge/deploy/)

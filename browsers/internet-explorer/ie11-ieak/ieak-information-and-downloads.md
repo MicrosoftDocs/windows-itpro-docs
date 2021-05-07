@@ -32,7 +32,7 @@ The Internet Explorer Administration Kit (IEAK) simplifies the creation, deploym
 
 [IEAK 11 licensing guidelines](licensing-version-and-features-ieak11.md)
 
-[IEAK 11 - Frequently Asked Questions](../ie11-faq/faq-ieak11.md)
+[IEAK 11 - Frequently Asked Questions](../ie11-faq/faq-ieak11.yml)
 
 [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](before-you-create-custom-pkgs-ieak11.md)
 
