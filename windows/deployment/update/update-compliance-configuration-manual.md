@@ -17,6 +17,9 @@ ms.topic: article
 
 # Manually Configuring Devices for Update Compliance
 
+> [!NOTE]
+> As of May 10, 2021, a new policy is required to use Update Compliance: "Allow Update Compliance Processing." For more details, see the Mobile Device Management policies and Group policies tables.
+
 There are a number of requirements to consider when manually configuring devices for Update Compliance. These can potentially change with newer versions of Windows 10. The [Update Compliance Configuration Script](update-compliance-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
 
 The requirements are separated into different categories:
@@ -47,13 +50,14 @@ Each MDM Policy links to its documentation in the CSP hierarchy, providing its e
 |**System/**[**AllowTelemetry**](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) | 1- Basic |Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this value lower than what the policy defines. For more information, see the following policy. |
 |**System/**[**ConfigureTelemetryOptInSettingsUx**](/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinsettingsux) | 1 - Disable Telemetry opt-in Settings | (in Windows 10, version 1803 and later) Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy or the effective diagnostic data level on devices might not be sufficient. |
 |**System/**[**AllowDeviceNameInDiagnosticData**](/windows/client-management/mdm/policy-csp-system#system-allowdevicenameindiagnosticdata) | 1 - Allowed | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or set to 0 (Disabled), Device Name will not be sent and will not be visible in Update Compliance, showing `#` instead. |
+| **System/AllowUpdateComplianceProcessing** | 16 - Allowed | Enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service. |
 
 > [!NOTE]
 > If you use Microsoft Intune, set the **ProviderID** to *MS DM Server*. If you use another MDM product, check with its vendor. See also [DMClient CSP](/windows/client-management/mdm/dmclient-csp).
 
-### Group Policies
+### Group policies
 
-All Group Policies that need to be configured for Update Compliance are under **Computer Configuration>Administrative Templates>Windows Components\Data Collection and Preview Builds**. All of these policies must be in the *Enabled* state and set to the defined *Value* below.  
+All Group policies that need to be configured for Update Compliance are under **Computer Configuration>Administrative Templates>Windows Components\Data Collection and Preview Builds**. All of these policies must be in the *Enabled* state and set to the defined *Value* below.  
 
 | Policy | Value | Function |
 |---------------------------|-|-----------------------------------------------------------|
@@ -61,6 +65,7 @@ All Group Policies that need to be configured for Update Compliance are under **
 |**Allow Telemetry** | 1 - Basic |Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this value lower than what the policy defines. See the following policy for more information. |
 |**Configure telemetry opt-in setting user interface** | 1 - Disable diagnostic data opt-in Settings |(in Windows 10, version 1803 and later) Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy, otherwise the effective diagnostic data level on devices might not be sufficient. |
 |**Allow device name to be sent in Windows diagnostic data** | 1 - Enabled | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or Disabled, Device Name will not be sent and will not be visible in Update Compliance, showing `#` instead. |
+|**Allow Update Compliance processing** | 16 - Enabled | Enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service. |
 
 ## Required endpoints
 
