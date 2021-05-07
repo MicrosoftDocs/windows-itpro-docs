@@ -43,7 +43,7 @@ Additionally, we recommend that when you plan your deployment you should also pl
 [Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)<br>
 [Deployment considerations for Windows To Go](deployment-considerations-for-windows-to-go.md)<br>
 [Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)<br>
-[Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)<br>
+[Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.yml)<br>
 
  
 

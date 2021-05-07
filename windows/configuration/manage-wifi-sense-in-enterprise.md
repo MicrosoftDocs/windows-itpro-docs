@@ -4,13 +4,13 @@ description: Wi-Fi Sense automatically connects you to Wi-Fi, so you can get onl
 ms.assetid: 1845e00d-c4ee-4a8f-a5e5-d00f2735a271
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 keywords: ["WiFi Sense", "automatically connect to wi-fi", "wi-fi hotspot connection"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 05/02/2018
 ms.topic: article

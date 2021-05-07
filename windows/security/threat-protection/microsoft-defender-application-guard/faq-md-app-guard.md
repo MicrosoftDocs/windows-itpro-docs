@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 04/28/2021
+ms.date: 05/06/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -45,11 +45,11 @@ Depending on your organization's settings, employees can copy and paste images (
 
 ### Why don't employees see their favorites in the Application Guard Edge session?
 
-To help keep the Application Guard Edge session secure and isolated from the host device, favorites that are stored in the Application Guard Edge session are not copied back to the host device. 
+Depending on your organization’s settings, it might be that Favorites Sync is off. To managed the policy, see: [Microsoft Edge and Microsoft Defender Application Guard | Microsoft Docs](/deployedge/microsoft-edge-security-windows-defender-application-guard)
 
 ### Why aren’t employees able to see their extensions in the Application Guard Edge session?
 
-Currently, the Application Guard Edge session doesn't support extensions. However, we're closely monitoring your feedback about this. 
+Make sure to enable the extensions policy on your Application Guard configuration.
 
 ### How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)? 
 
