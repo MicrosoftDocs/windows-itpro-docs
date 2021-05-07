@@ -17,6 +17,9 @@ ms.topic: article
 
 # Get started with Update Compliance
 
+> [!IMPORTANT]
+> **A new policy is required to use Update Compliance, referred to as AllowUpdateComplianceProcessing**. If you are an existing customer and configured your devices prior to May 10, 2021, you must configure devices with this additional policy. You can do this by rerunning the [Update Compliance Configuration Script](update-compliance-configuration-script.md) if you configure your devices through Group Policy, or refer to [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md) for details on manually configuring the new policy for both Group Policy and MDM. 
+
 This topic introduces the high-level steps required to enroll to the Update Compliance solution and configure devices to send data to it. The following steps cover the enrollment and device configuration workflow.
 
 1. Ensure you can [meet the requirements](#update-compliance-prerequisites) to use Update Compliance.
@@ -94,20 +97,16 @@ To find your CommercialID within Azure:
 
 ## Enroll devices in Update Compliance
 
-Once you've added Update Compliance to a workspace in your Azure subscription, you'll need to configure any devices you want to monitor. There are two ways to configure devices to use Update Compliance. After you configure devices, it can take up to 72 hours before devices are visible in the solution. Until then, Update Compliance will indicate it is still assessing devices.
+Once you've added Update Compliance to a workspace in your Azure subscription, you'll need to configure any devices you want to monitor. There are two ways to configure devices to use Update Compliance:
 
-> [!NOTE]
-> If you use or plan to use [Desktop Analytics](/mem/configmgr/desktop-analytics/overview), follow the steps in [Enroll devices in Desktop Analytics](/mem/configmgr/desktop-analytics/enroll-devices) to also enroll devices in Update Compliance. You should be aware that the Commercial ID and Log Analytics workspace must be the same for both Desktop Analytics and Update Compliance.
+1. Customers who use Group Policy to manage device policies should use the [Update Compliance Configuration Script](update-compliance-configuration-script.md).
+2. Customers who manage devices through MDM providers like Intune should be [Manually Configuring Devices for Update Compliance](update-compliance-configuration-manual.md).
 
-### Configure devices using the Update Compliance Configuration Script
+After you configure devices, diagnostic data they send will begin to be associated with your tenant. However, enrolling to Update Compliance does not influence the rate at which required data is uploaded from clients. Device connectivity to the internet and generally how "active" the device is highly influences how long it will take before the device appears in Update Compliance. Devices that are active and connected to the internet daily can expect to be fully uploaded within one week (usually less than 72 hours). Devices that are less active can take up to two weeks before data is fully available. 
 
-The recommended way to configure devices to send data to Update Compliance is using the [Update Compliance Configuration Script](update-compliance-configuration-script.md). The script configures required policies via Group Policy. The script comes with two versions:
+### Update Compliance and Desktop Analytics
 
-- Pilot is more verbose and is intended to be use on an initial set of devices and for troubleshooting.
-- Deployment is intended to be deployed across the entire device population you want to monitor with Update Compliance.  
+If you use or plan to use [Desktop Analytics](/mem/configmgr/desktop-analytics/overview), you must use the same Log Analytics workspace for both solutions. 
 
-To download the script and learn what you need to configure and how to troubleshoot errors, see [Configuring Devices using the Update Compliance Configuration Script](update-compliance-configuration-script.md).
 
-### Configure devices manually
 
-It is possible to manually configure devices to send data to Update Compliance, but the recommended method of configuration is to use the [Update Compliance Configuration Script](update-compliance-configuration-script.md). To learn more about configuring devices manually, see [Manually Configuring Devices for Update Compliance](update-compliance-configuration-manual.md).
