@@ -1,7 +1,7 @@
 ---
 title: Changing the Frequency of UE-V Scheduled Tasks
 description: Learn how to create a script that uses the Schtasks.exe command-line options so you can change the frequency of UE-V scheduled tasks.
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
