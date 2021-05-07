@@ -5,8 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: article
-ms.author: dansimp
-author: dansimp
+ms.author: greglin
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 04/26/2018
 ms.reviewer: 

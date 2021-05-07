@@ -1,7 +1,7 @@
 ---
 title: Release Notes for App-V for Windows 10, version 1703 (Windows 10)
 description: A list of known issues and workarounds for App-V running on Windows 10, version 1703.
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ---
 
 
