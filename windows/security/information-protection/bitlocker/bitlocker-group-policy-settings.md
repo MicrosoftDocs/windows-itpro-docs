@@ -211,7 +211,7 @@ This policy setting permits the use of enhanced PINs when you use an unlock meth
 
 Enhanced startup PINs permit the use of characters (including uppercase and lowercase letters, symbols, numbers, and spaces). This policy setting is applied when you turn on BitLocker.
 
-> [!IMPORANT]
+> [!IMPORTANT]
 > Not all computers support enhanced PIN characters in the preboot environment. It is strongly recommended that users perform a system check during the BitLocker setup to verify that enhanced PIN characters can be used.
 
 ### <a href="" id="bkmk-unlockpol3"></a>Configure minimum PIN length for startup
