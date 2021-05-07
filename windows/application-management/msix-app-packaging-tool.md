@@ -6,12 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 12/03/2018
 ms.reviewer: 
 manager: dansimp
-author: dansimp
+author: greg-lindsay
 ---
 
 # Repackage existing win32 applications to the MSIX format

@@ -8,9 +8,9 @@ keywords: ["Start layout", "start menu", "layout", "group policy"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 

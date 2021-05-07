@@ -1,7 +1,7 @@
 ---
 title: Auto-remove unpublished packages on App-V client (Windows 10)
 description: How to automatically clean up any unpublished packages on your App-V client devices.
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 06/15/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # Automatically clean up unpublished packages on the App-V client
