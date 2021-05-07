@@ -325,7 +325,7 @@ You should also reboot the machine.
 
 [User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md)
 
-[Frequently Asked Questions](usmt-faq.md)
+[Frequently Asked Questions](usmt-faq.yml)
 
 [Return Codes](usmt-return-codes.md)
 

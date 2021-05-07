@@ -390,7 +390,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-[!INCLUDE [allow-windows-app-to-share-data-users-shortdesc](../../../browsers/edge/shortdesc/allow-windows-app-to-share-data-users-shortdesc.md)]
+[!INCLUDE [allow-windows-app-to-share-data-users-shortdesc](../includes/allow-windows-app-to-share-data-users-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
