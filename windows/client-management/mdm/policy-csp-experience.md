@@ -1403,7 +1403,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-[!INCLUDE [do-not-sync-browser-settings-shortdesc](../../../browsers/edge/shortdesc/do-not-sync-browser-settings-shortdesc.md)]
+[!INCLUDE [do-not-sync-browser-settings-shortdesc](../includes/do-not-sync-browser-settings-shortdesc.md)]
 
 Related policy:
    [PreventUsersFromTurningOnBrowserSyncing](#experience-preventusersfromturningonbrowsersyncing)
@@ -1497,7 +1497,7 @@ _**Turn syncing off by default but don’t disable**_
 
 <!--/Scope-->
 <!--Description-->
-[!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../../../browsers/edge/shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
+[!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../includes/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
 Related policy:
    [DoNotSyncBrowserSettings](#experience-donotsyncbrowsersetting)

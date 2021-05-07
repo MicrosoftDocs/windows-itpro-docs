@@ -64,7 +64,7 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 | 53    | There are conflicting CommercialID values.| 
 | 11    | Unexpected result when setting up CommercialID.| 
 | 62    | AllowTelemetry registry key is not of the correct type REG_DWORD| 
-| 63    | AllowTelemetry is not set to the appropraite value and it could not be set by the script.| 
+| 63    | AllowTelemetry is not set to the appropriate value and it could not be set by the script.| 
 | 64    | AllowTelemetry is not of the correct type REG_DWORD.| 
 | 99    | Device is not Windows 10.| 
 | 40    | Unexpected exception when checking and setting telemetry.| 
