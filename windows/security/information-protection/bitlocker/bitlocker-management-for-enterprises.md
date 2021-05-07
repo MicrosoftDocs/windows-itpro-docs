@@ -101,7 +101,7 @@ Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pi
 
 ## Related Articles
 
-[BitLocker: FAQs](bitlocker-frequently-asked-questions.md)
+[BitLocker: FAQs](bitlocker-frequently-asked-questions.yml)
 
 [Microsoft BitLocker Administration and Management (MBAM)](/microsoft-desktop-optimization-pack/mbam-v25/)
 
