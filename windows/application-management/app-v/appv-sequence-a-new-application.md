@@ -37,8 +37,8 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
     - If an application installer changes the security access to a new or existing file or directory, those changes are not captured in the package.
     - If short paths have been disabled for the virtualized package’s target volume, you must also sequence the package to a volume that was created and still has short-paths disabled. It cannot be the system volume.
 
->[!NOTE]
->The App-V Sequencer cannot sequence applications with filenames matching "CO_<_x_>" where *x* is any numeral. Error 0x8007139F will be generated.
+    > [!NOTE]
+    > The App-V Sequencer cannot sequence applications with filenames matching "CO_<_x_>" where *x* is any numeral. Error 0x8007139F will be generated.
 
 ## Sequence a new standard application
 
@@ -56,9 +56,9 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 5. On the **Select Installer** page, select **Browse** and specify the installation file for the application.
 
    > [!NOTE]
-    >If the specified application installer modifies security access to a file or directory, existing or new, the associated changes will not be captured into the package.
+   > If the specified application installer modifies security access to a file or directory, existing or new, the associated changes will not be captured into the package.
 
-    If the application does not have an associated installer file and you plan to run all installation steps manually, select the **Perform a Custom Installation** check box, and then select **Next**.
+   If the application does not have an associated installer file and you plan to run all installation steps manually, select the **Perform a Custom Installation** check box, and then select **Next**.
 
 6. On the **Package Name** page, specify a name for the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name is displayed in the App-V Management Console. Once you're done, select **Next**.
 
@@ -89,20 +89,20 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
 12. On the **Streaming** page, run each program so that it can be optimized and run more efficiently on target computers. It can take several minutes for all the applications to run. After all applications have run, close each of the applications, and then select **Next**.
 
-   > [!NOTE]
-    >If you do not open any applications during this step, the default streaming method is on-demand streaming delivery. This means applications will be downloaded bit by bit until it can be opened. After that, depending on how the background loading is configured, it will load the rest of the application.
+    > [!NOTE]
+    > If you do not open any applications during this step, the default streaming method is on-demand streaming delivery. This means applications will be downloaded bit by bit until it can be opened. After that, depending on how the background loading is configured, it will load the rest of the application.
 
 13. On the **Target OS** page, specify the operating systems that can run this package. To allow all supported operating systems in your environment to run this package, select **Allow this package to run on any operating system**. To configure this package to run only on specific operating systems, select **Allow this package to run only on the following operating systems** and select the operating systems that can run this package. After that, select **Next**.
 
-    >[!IMPORTANT]
-    >Make sure that the operating systems you specify here are supported by the application you are sequencing.
+    > [!IMPORTANT]
+    > Make sure that the operating systems you specify here are supported by the application you are sequencing.
 
 14. The **Create Package** page is displayed. To modify the package without saving it, select **Continue to modify package without saving using the package editor**. This option opens the package in the sequencer console so that you can modify the package before saving it. Select **Next**.
 
     To save the package immediately, select **Save the package now** (default). Add optional **Comments** to be associated with the package. Comments are useful for identifying the program version and other information about the package.
 
-    >[!IMPORTANT]
-    >The system does not support non-printable characters in **Comments** and **Descriptions**.
+    > [!IMPORTANT]
+    > The system does not support non-printable characters in **Comments** and **Descriptions**.
 
     The default **Save Location** is also displayed on this page. To change the default location, select **Browse** and specify the new location. After that, select **Create**.
 
@@ -110,14 +110,15 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     Your package should now be available in the sequencer.
 
-    >[!IMPORTANT]
-    >After you have successfully created a virtual application package, you can't run the virtual application package on the computer that is running the sequencer.
+    > [!IMPORTANT]
+    > After you have successfully created a virtual application package, you can't run the virtual application package on the computer that is running the sequencer.
 
 ## Sequence an add-on or plug-in application
 
->[!NOTE]
->Before performing the following procedure, install the parent application locally on the computer that is running the sequencer. Or if you have the parent application virtualized, you can follow the steps in the add-on or plug-in workflow to unpack the parent application on the computer.
->For example, if you are sequencing a plug-in for Microsoft Excel, install Microsoft Excel locally on the computer that's running the sequencer. You should also install the parent application in the same directory where the application is installed on target computers. If the plug-in or add-on is going to be used with an existing virtual application package, install the application on the same virtual application drive that was used when you created the parent virtual application package.
+> [!NOTE]
+> Before performing the following procedure, install the parent application locally on the computer that is running the sequencer. Or if you have the parent application virtualized, you can follow the steps in the add-on or plug-in workflow to unpack the parent application on the computer.
+> 
+> For example, if you are sequencing a plug-in for Microsoft Excel, install Microsoft Excel locally on the computer that's running the sequencer. You should also install the parent application in the same directory where the application is installed on target computers. If the plug-in or add-on is going to be used with an existing virtual application package, install the application on the same virtual application drive that was used when you created the parent virtual application package.
 
 1. On the computer that runs the sequencer, first, select **All Programs**, then select **Microsoft Application Virtualization**, and then select **Microsoft Application Virtualization Sequencer**.
 
@@ -153,8 +154,8 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
 13. On the **Streaming** page, run each program so that it can be optimized and run more efficiently on target computers. Streaming improves the experience when the virtual application package is run on target computers on high-latency networks. It can take several minutes for all applications to run. After all applications have run, close each application. You can also configure the package to be required to be fully downloaded before opening by selecting the **Force applications to be downloaded** check-box. Select **Next**.
 
-   > [!NOTE]
-    >If necessary, you can stop an application from loading during this step. In the **Application Launch** dialog box, select **Stop** and select one of the check boxes: **Stop all applications** or **Stop this application only**.
+    > [!NOTE]
+    > If necessary, you can stop an application from loading during this step. In the **Application Launch** dialog box, select **Stop** and select one of the check boxes: **Stop all applications** or **Stop this application only**.
 
 14. On the **Target OS** page, specify the operating systems that can run this package. To allow all supported operating systems in your environment to run this package, select the **Allow this package to run on any operating system** check box. To configure this package to run only on specific operating systems, select the **Allow this package to run only on the following operating systems** check box, and then select the operating systems that can run this package. Select **Next**.
 
@@ -209,9 +210,6 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     >[!IMPORTANT]
     >After you have successfully created a virtual application package, you can't run the virtual application package on the computer that is running the sequencer.
-
-
-
 
 
 ## Related topics
