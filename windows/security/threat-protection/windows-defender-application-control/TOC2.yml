@@ -37,7 +37,9 @@ landingContent:
           - text: Merging Policies
             url:  wdac-wizard-merging-policies.md
           - text: Recommended blocks 
-            url:  microsoft-recommended-block-rules.md #there are block rules and driver block rules, which link? Add both, actually.
+            url:  microsoft-recommended-block-rules.md
+          - text: Recommended driver blocks 
+            url:  microsoft-recommended-driver-block-rules.md
           - text: Example policies
             url:  example-wdac-base-policies.md
           - text: LOB Win32 apps on S Mode
@@ -83,7 +85,7 @@ landingContent:
           - text: Signed policies
             url:  use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md
 		  - text: Audit and enforce policies
-            url:  audit-windows-defender-application-control-policies.md #(merge with enforce-windows-defender-application-control-policies.md)
+            url:  audit-and-enforce-windows-defender-application-control-policies.md
 		  - text: Disabling WDAC policies
             url:  disable-windows-defender-application-control-policies.md
       - linkListType: tutorial
@@ -101,13 +103,11 @@ landingContent:
         links:
           - text: Event logs (tags, IDs) 
             url:  event-id-explanations.md #(merge with event-tag-explanations.md)
-          - text: Advanced hunting
-            url:  querying-application-control-events-centrally-using-advanced-hunting.md #same as below
       - linkListType: how-to-guide
         links:
           - text: Querying using advanced hunting
             url:  querying-application-control-events-centrally-using-advanced-hunting.md #same as above
       - linkListType: tutorial
         links:
-          - text: Creating a policy from event logs
-            url:  querying-application-control-events-centrally-using-advanced-hunting.md #same as above
+          - text: Creating a policy from event logs (video)
+            url:  querying-application-control-events-centrally-using-advanced-hunting.md #Jordan will create a video for this
