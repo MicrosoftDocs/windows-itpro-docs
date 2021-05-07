@@ -57,7 +57,7 @@ To delete a container, type **certutil -delkey -csp "Microsoft Base Smart Card C
 
 ## Debugging and tracing using WPP
 
-WPP simplifies tracing the operation of the trace provider. It provides a mechanism for the trace provider to log real-time binary messages. Logged messages can be converted to a human-readable trace of the operation. For more information, see [Diagnostics with WPP - The NDIS blog](https://blogs.msdn.com/b/ndis/archive/2011/04/06/diagnostics-with-wpp.aspx).
+WPP simplifies tracing the operation of the trace provider. It provides a mechanism for the trace provider to log real-time binary messages. Logged messages can be converted to a human-readable trace of the operation. For more information, see [Diagnostics with WPP - The NDIS blog](/archive/blogs/ndis/diagnostics-with-wpp).
 
 ### Enable the trace
 
