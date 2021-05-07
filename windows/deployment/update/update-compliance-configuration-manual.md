@@ -18,7 +18,7 @@ ms.topic: article
 # Manually Configuring Devices for Update Compliance
 
 > [!NOTE]
-> As of May 10, 2021, a new policy is required to use Update Compliance, referred to as Allow Update Compliance Processing. See more details below. 
+> As of May 10, 2021, a new policy is required to use Update Compliance: "Allow Update Compliance Processing." For more details, see the Mobile Device Management policies and Group policies tables.
 
 There are a number of requirements to consider when manually configuring devices for Update Compliance. These can potentially change with newer versions of Windows 10. The [Update Compliance Configuration Script](update-compliance-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
 
@@ -55,9 +55,9 @@ Each MDM Policy links to its documentation in the CSP hierarchy, providing its e
 > [!NOTE]
 > If you use Microsoft Intune, set the **ProviderID** to *MS DM Server*. If you use another MDM product, check with its vendor. See also [DMClient CSP](/windows/client-management/mdm/dmclient-csp).
 
-### Group Policies
+### Group policies
 
-All Group Policies that need to be configured for Update Compliance are under **Computer Configuration>Administrative Templates>Windows Components\Data Collection and Preview Builds**. All of these policies must be in the *Enabled* state and set to the defined *Value* below.  
+All Group policies that need to be configured for Update Compliance are under **Computer Configuration>Administrative Templates>Windows Components\Data Collection and Preview Builds**. All of these policies must be in the *Enabled* state and set to the defined *Value* below.  
 
 | Policy | Value | Function |
 |---------------------------|-|-----------------------------------------------------------|
