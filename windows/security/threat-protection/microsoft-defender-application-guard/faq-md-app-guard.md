@@ -45,7 +45,7 @@ Depending on your organization's settings, employees can copy and paste images (
 
 ### Why don't employees see their favorites in the Application Guard Edge session?
 
-Depending on your organization’s settings, it might be that Favorites Sync is off. To managed the policy, see: [Microsoft Edge and Microsoft Defender Application Guard | Microsoft Docs](/deployedge/microsoft-edge-security-windows-defender-application-guard)
+Depending on your organization’s settings, it might be that Favorites Sync is turned off. To manage the policy, see: [Microsoft Edge and Microsoft Defender Application Guard | Microsoft Docs](/deployedge/microsoft-edge-security-windows-defender-application-guard)
 
 ### Why aren’t employees able to see their extensions in the Application Guard Edge session?
 
