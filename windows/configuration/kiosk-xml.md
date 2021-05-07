@@ -26,7 +26,7 @@ ms.topic: article
 ## Full XML sample
 
 >[!NOTE]
->Updated for Windows 10, version 1903, and Windows 10 Insider Preview (19H2, 20H1 builds).
+>Updated for Windows 10, version 1903, 1909, and 2004.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -254,8 +254,8 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 
 ```
 
-## [Preview] Global Profile Sample XML
-Global Profile is currently supported in Windows 10 Insider Preview (20H1 builds). Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lockdown mode, or used as mitigation when a profile cannot be determined for a user.
+## Global Profile Sample XML
+Global Profile is currently supported in Windows 10, version 2004. Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lockdown mode, or used as mitigation when a profile cannot be determined for a user.
 
 This sample demonstrates that only a global profile is used, no active user configured. Global profile will be applied when every non-admin account logs in 
 ```xml
@@ -393,8 +393,8 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
 
 ```
 
-## [Preview] Folder Access sample xml
-In Windows 10, version 1809, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granulatity and easier use, and is available in Windows 10 Insider Preview (19H2, 20H1 builds).
+## Folder Access sample xml
+In Windows 10, version 1809, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granulatity and easier use, and is available in Windows 10 verson 2009 and later.
 
 IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
 
@@ -636,7 +636,7 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
 ## XSD for AssignedAccess configuration XML
 
 >[!NOTE]
->Updated for Windows 10, version 1903 and Windows 10 Insider Preview (19H2, 20H1 builds).
+>Updated for Windows 10, version 1903 and later.
 Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
 
 ```xml
@@ -859,7 +859,7 @@ Here is the schema for new features introduced in Windows 10 1809 release
 </xs:schema>
 ```
 
-Schema for Windows 10 Insider Preview (19H2, 20H1 builds)
+Schema for Windows 10, version 1909 and later
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
