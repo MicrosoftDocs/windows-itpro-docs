@@ -183,11 +183,11 @@ For more information, see [Reduce attack surfaces](/microsoft-365/security/defen
 
 ### Microsoft Defender for Endpoint
 
-[Microsoft Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) has been enhanced with many new capabilities. For more information, see the following topics:
+[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/advanced-hunting-query-language) has been enhanced with many new capabilities. For more information, see the following topics:
 
-- [Query data using Advanced hunting in Microsoft Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
-- [Use Automated investigations to investigate and remediate threats](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)
-- [Enable conditional access to better protect users, devices, and data](/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)
+- [Query data using Advanced hunting in Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-query-language)
+- [Use Automated investigations to investigate and remediate threats](/microsoft-365/security/defender-endpoint/automated-investigations)
+- [Enable conditional access to better protect users, devices, and data](/microsoft-365/security/defender-endpoint/conditional-access)
 
 Also see [New capabilities of Microsoft Defender for Endpoint further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97)
 
