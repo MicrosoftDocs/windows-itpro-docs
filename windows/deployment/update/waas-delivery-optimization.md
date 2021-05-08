@@ -160,7 +160,7 @@ For communication between clients and the Delivery Optimization cloud service: *
 - *.download.windowsupdate.com 
 - *.windowsupdate.com
 
-#### Does Delivery Optimization use multicast? #### 
+#### Does Delivery Optimization use multicast?
 No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
 
 #### How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN? #### 
