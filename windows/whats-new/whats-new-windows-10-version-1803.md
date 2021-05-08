@@ -172,7 +172,7 @@ The new [security baseline for Windows 10 version 1803](/windows/security/threat
 
 ### Microsoft Defender Antivirus
 
-Microsoft Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
+Microsoft Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
 
 ### Windows Defender Exploit Guard
 
