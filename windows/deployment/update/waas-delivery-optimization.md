@@ -150,7 +150,7 @@ For Delivery Optimization to successfully use the proxy, you should set up the p
 
 For communication between clients and the Delivery Optimization cloud service: **\*.do.dsp.mp.microsoft.com**.
 
-**For Delivery Optimization metadata: **
+**For Delivery Optimization metadata**:
 
 - *.dl.delivery.mp.microsoft.com
 - *.emdl.ws.microsoft.com
