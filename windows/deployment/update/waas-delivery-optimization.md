@@ -146,7 +146,7 @@ Delivery Optimization also communicates with its cloud service by using HTTP/HTT
 #### What are the requirements if I use a proxy?
 For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](./delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update).
 
-#### What hostnames should I allow through my firewall to support Delivery Optimization? ####
+#### What hostnames should I allow through my firewall to support Delivery Optimization?
 
 For communication between clients and the Delivery Optimization cloud service: **\*.do.dsp.mp.microsoft.com**.
 
