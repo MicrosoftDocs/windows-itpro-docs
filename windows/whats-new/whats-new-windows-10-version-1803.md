@@ -189,11 +189,11 @@ For more information, see [Reduce attack surfaces](/microsoft-365/security/defen
 - [Use Automated investigations to investigate and remediate threats](/microsoft-365/security/defender-endpoint/automated-investigations)
 - [Enable conditional access to better protect users, devices, and data](/microsoft-365/security/defender-endpoint/conditional-access)
 
-Also see [New capabilities of Microsoft Defender for Endpoint further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97)
+Also see [New capabilities of Microsoft Defender for Endpoint further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97).
 
 ### Windows Defender Application Guard
 
-Windows Defender Application Guard has added support for Edge. For more information, see [System requirements for Windows Defender Application Guard](/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard#software-requirements)
+Windows Defender Application Guard has added support for Edge. For more information, see [System requirements for Windows Defender Application Guard](/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard#software-requirements).
 
 ### Windows Defender Device Guard
 
@@ -205,21 +205,21 @@ This release enables support for WIP with Files on Demand, allows file encryptio
 
 ### Office 365 Ransomware Detection
 
-For Office 365 Home and Office 365 Personal subscribers, Ransomware Detection notifies you when your OneDrive files have been attacked and guides you through the process of restoring your files. For more information, see [Ransomware detection and recovering your files](https://support.office.com/en-us/article/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f?ui=en-US&rs=en-US&ad=US)
+For Office 365 Home and Office 365 Personal subscribers, Ransomware Detection notifies you when your OneDrive files have been attacked and guides you through the process of restoring your files. For more information, see [Ransomware detection and recovering your files](https://support.office.com/en-us/article/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f?ui=en-US&rs=en-US&ad=US).
 
 ## Windows Analytics
 
 ### Upgrade Readiness
 
-Upgrade Readiness has added the ability to assess Spectre and Meltdown protections on your devices.  This addition allows you to see if your devices have Windows OS and firmware updates with Spectre and Meltdown mitigations installed, as well as whether your antivirus client is compatible with these updates. For more information, see [Upgrade Readiness now helps assess Spectre and Meltdown protections](/archive/blogs/upgradeanalytics/upgrade-readiness-now-helps-assess-spectre-and-meltdown-protections)
+Upgrade Readiness has added the ability to assess Spectre and Meltdown protections on your devices.  This addition allows you to see if your devices have Windows OS and firmware updates with Spectre and Meltdown mitigations installed, as well as whether your antivirus client is compatible with these updates. For more information, see [Upgrade Readiness now helps assess Spectre and Meltdown protections](/archive/blogs/upgradeanalytics/upgrade-readiness-now-helps-assess-spectre-and-meltdown-protections).
 
 ### Update Compliance
 
-Update Compliance has added Delivery Optimization to assess the bandwidth consumption of Windows Updates. For more information, see [Delivery Optimization in Update Compliance](/windows/deployment/update/update-compliance-delivery-optimization)
+Update Compliance has added Delivery Optimization to assess the bandwidth consumption of Windows Updates. For more information, see [Delivery Optimization in Update Compliance](/windows/deployment/update/update-compliance-delivery-optimization).
 
 ### Device Health
 
-Device Health’s new App Reliability reports enable you to see where app updates or configuration changes may be needed to reduce crashes. The Login Health reports reveal adoption, success rates, and errors for Windows Hello and for passwords— for a smooth migration to the password-less future. For more information, see [Using Device Health](/windows/deployment/update/device-health-using)
+Device Health’s new App Reliability reports enable you to see where app updates or configuration changes may be needed to reduce crashes. The Login Health reports reveal adoption, success rates, and errors for Windows Hello and for passwords— for a smooth migration to the password-less future. For more information, see [Using Device Health](/windows/deployment/update/device-health-using).
 
 ## Microsoft Edge
 
