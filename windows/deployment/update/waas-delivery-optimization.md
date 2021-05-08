@@ -132,7 +132,7 @@ For more details, check out the [Adopting Windows as a Service at Microsoft](htt
 
 ## Frequently asked questions
 
-#### Does Delivery Optimization work with WSUS? #### 
+#### Does Delivery Optimization work with WSUS?
 Yes. Devices will obtain the update payloads from the WSUS server, but must also have an internet connection as they communicate with the Delivery Optimization cloud service for coordination.
 
 #### Which ports does Delivery Optimization use? #### 
