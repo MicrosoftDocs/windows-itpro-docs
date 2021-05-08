@@ -155,7 +155,7 @@ For communication between clients and the Delivery Optimization cloud service: *
 - *.dl.delivery.mp.microsoft.com
 - *.emdl.ws.microsoft.com
 
-**For the payloads (optional):**
+**For the payloads (optional)**:
 
 - *.download.windowsupdate.com 
 - *.windowsupdate.com
