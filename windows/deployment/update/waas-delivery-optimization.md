@@ -192,7 +192,7 @@ Windows Update and Microsoft Store backend services and Windows Update and Micro
 For more information about remote work if you're using Configuration Manager, see this post on the [Configuration Manager blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/managing-patch-tuesday-with-configuration-manager-in-a-remote/ba-p/1269444).
 
 
-#### How does Delivery Optimization handle networks where a Public IP address is used in place of a Private IP address? ####
+#### How does Delivery Optimization handle networks where a Public IP address is used in place of a Private IP address?
 
 Prior to Windows 10, version 1903, Delivery Optimization only allowed connections between LAN peers if those peers utilized Private IP addresses. Starting with version 1903 or higher, this is no longer enforced. Customers who utilize Public IP addresses in place of Private IP addresses can now use DO in LAN mode.
 
