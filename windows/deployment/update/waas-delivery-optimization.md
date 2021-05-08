@@ -194,12 +194,6 @@ For more information about remote work if you're using Configuration Manager, se
 
 #### How does Delivery Optimization handle networks where a Public IP address is used in place of a Private IP address? ####
 
-RFC1918 defines the range of IP addresses that are considered "private".
-[RFC 1918 - Address Allocation for Private Internets] https://tools.ietf.org/html/rfc1918
-   10.0.0.0        -   10.255.255.255 (10/8 prefix)
-   172.16.0.0      -   172.31.255.255 (172.16/12 prefix)
-   192.168.0.0     -   192.168.255.255 (192.168/16 prefix)
-
 Prior to Windows 10, version 1903, Delivery Optimization only allowed connections between LAN peers if those peers utilized Private IP addresses. Starting with version 1903 or higher, this is no longer enforced. Customers who utilize Public IP addresses in place of Private IP addresses can now use DO in LAN mode.
 Starting with version 1903 or higher, this is no longer enforced.
 Customers who utilize Public IP addresses in place of Private IP address can now use DO in LAN mode.
