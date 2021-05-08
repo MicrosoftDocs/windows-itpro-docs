@@ -166,7 +166,7 @@ No. It relies on the cloud service for peer discovery, resulting in a list of pe
 #### How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?
 Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relieve such congestion. For more details, see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
 
-#### How does Delivery Optimization handle VPNs? ####
+#### How does Delivery Optimization handle VPNs?
 Delivery Optimization attempts to identify VPNs by checking the network adapter type and details and will treat the connection as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
 
 If the connection is identified as a VPN, Delivery Optimization will suspend uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
