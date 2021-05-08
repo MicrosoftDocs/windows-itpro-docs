@@ -179,7 +179,7 @@ Microsoft Defender Antivirus now shares detection status between M365 services a
 
 Windows Defender Exploit Guard enhanced attack surface area reduction, extended support to Microsoft Office applications, and now supports Windows Server. [Virtualization-based Security](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/Windows-Defender-System-Guard-Making-a-leap-forward-in-platform/m-p/167303) (VBS) and Hypervisor-protected code integrity (HVCI) can now be enabled across the Windows 10 ecosystem. These Exploit Guard features can now be enabled through the Windows Defender Security Center.
 
-For more information, see [Reduce attack surfaces](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction)
+For more information, see [Reduce attack surfaces](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
 
 ### Microsoft Defender for Endpoint
 
