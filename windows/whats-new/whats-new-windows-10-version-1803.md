@@ -80,10 +80,10 @@ The following new DISM commands have been added to manage feature updates:
 
 | Command  | Description  |
 |---|---|
-| DISM /Online /Initiate-OSUninstall  | Initiates a OS uninstall to take the computer back to the previous installation of windows.  |
-| DISM /Online /Remove-OSUninstall  | Removes the OS uninstall capability from the computer.  |
-| DISM /Online /Get-OSUninstallWindow  | Displays the number of days after upgrade during which uninstall can be performed.  |
-| DISM /Online /Set-OSUninstallWindow  | Sets the number of days after upgrade during which uninstall can be performed.  |
+| `DISM /Online /Initiate-OSUninstall`  | Initiates a OS uninstall to take the computer back to the previous installation of windows.  |
+| `DISM /Online /Remove-OSUninstall`  | Removes the OS uninstall capability from the computer.  |
+| `DISM /Online /Get-OSUninstallWindow`  | Displays the number of days after upgrade during which uninstall can be performed.  |
+| `DISM /Online /Set-OSUninstallWindow`  | Sets the number of days after upgrade during which uninstall can be performed.  |
 
 
 For more information, see [DISM operating system uninstall command-line options](/windows-hardware/manufacture/desktop/dism-uninstallos-command-line-options).
@@ -108,9 +108,9 @@ New command-line switches are also available to control BitLocker:
 
 | Command | Description |
 |---|---|
-| Setup.exe /BitLocker AlwaysSuspend  | Always suspend BitLocker during upgrade. |
-| Setup.exe /BitLocker TryKeepActive  | Enable upgrade without suspending BitLocker, but if upgrade does not work, then suspend BitLocker and complete the upgrade. |
-| Setup.exe /BitLocker ForceKeepActive  | Enable upgrade without suspending BitLocker, but if upgrade does not work, fail the upgrade. |
+| `Setup.exe /BitLocker AlwaysSuspend`  | Always suspend BitLocker during upgrade. |
+| `Setup.exe /BitLocker TryKeepActive`  | Enable upgrade without suspending BitLocker, but if upgrade does not work, then suspend BitLocker and complete the upgrade. |
+| `Setup.exe /BitLocker ForceKeepActive`  | Enable upgrade without suspending BitLocker, but if upgrade does not work, fail the upgrade. |
 
 For more information, see [Windows Setup Command-Line Options](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)
 
