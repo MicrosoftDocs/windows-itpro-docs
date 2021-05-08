@@ -78,14 +78,13 @@ For more information, see [Windows 10 Subscription Activation](/windows/deployme
 
 The following new DISM commands have been added to manage feature updates:
 
-    DISM /Online /Initiate-OSUninstall 
-        – Initiates a OS uninstall to take the computer back to the previous installation of windows.
-    DISM /Online /Remove-OSUninstall 
-        – Removes the OS uninstall capability from the computer. 
-    DISM /Online /Get-OSUninstallWindow 
-        – Displays the number of days after upgrade during which uninstall can be performed.
-    DISM /Online /Set-OSUninstallWindow 
-        – Sets the number of days after upgrade during which uninstall can be performed.
+| Command  | Description  |
+|---|---|
+| DISM /Online /Initiate-OSUninstall  | Initiates a OS uninstall to take the computer back to the previous installation of windows.  |
+| DISM /Online /Remove-OSUninstall  | Removes the OS uninstall capability from the computer.  |
+| DISM /Online /Get-OSUninstallWindow  | Displays the number of days after upgrade during which uninstall can be performed.  |
+| DISM /Online /Set-OSUninstallWindow  | Sets the number of days after upgrade during which uninstall can be performed.  |
+
 
 For more information, see [DISM operating system uninstall command-line options](/windows-hardware/manufacture/desktop/dism-uninstallos-command-line-options).
 
@@ -99,9 +98,9 @@ Prerequisites:
 
 For more information, see [Run custom actions during feature update](/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions).
 
-It is also now possible to run a script if the user rolls back their version of Windows using the PostRollback option.
+It is also now possible to run a script if the user rolls back their version of Windows using the PostRollback option:
 
-    /PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]
+`/PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]`
 
 For more information, see [Windows Setup Command-Line Options](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#21)
 
