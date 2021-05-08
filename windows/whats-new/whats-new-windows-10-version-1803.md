@@ -144,7 +144,7 @@ The OS uninstall period is a length of time that users are given when they can o
 
 ### Windows Hello for Business
 
-[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in the [Kiosk configuration](#windows-10-kiosk-and-kiosk-browser) section. 
+[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-overview) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in the [Kiosk configuration](#windows-10-kiosk-and-kiosk-browser) section. 
 
 - Windows Hello is now [password-less on S-mode](https://www.windowslatest.com/2018/02/12/microsoft-make-windows-10-password-less-platform/).
 - Support for S/MIME with Windows Hello for Business and APIs for non-Microsoft identity lifecycle management solutions.
@@ -179,7 +179,7 @@ Microsoft Defender Antivirus now shares detection status between M365 services a
 
 Windows Defender Exploit Guard enhanced attack surface area reduction, extended support to Microsoft Office applications, and now supports Windows Server. [Virtualization-based Security](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/Windows-Defender-System-Guard-Making-a-leap-forward-in-platform/m-p/167303) (VBS) and Hypervisor-protected code integrity (HVCI) can now be enabled across the Windows 10 ecosystem. These Exploit Guard features can now be enabled through the Windows Defender Security Center.
 
-For more information, see [Reduce attack surfaces](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction)
+For more information, see [Reduce attack surfaces](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
 
 ### Microsoft Defender for Endpoint
 
