@@ -204,7 +204,8 @@ Prior to Windows 10, version 1903, Delivery Optimization only allowed connection
 Starting with version 1903 or higher, this is no longer enforced.
 Customers who utilize Public IP addresses in place of Private IP address can now use DO in LAN mode.
 
-Note: one side effect of this change is that bytes downloaded from or uploaded to LAN peers with Public IP addresses may be reported as coming from Internet peers.
+> [NOTE]
+> One side effect of this change is that bytes downloaded from or uploaded to LAN peers with Public IP addresses may be reported as coming from Internet peers.
 
 
 ## Troubleshooting
