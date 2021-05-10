@@ -519,7 +519,6 @@ No new [Exchange ActiveSync policies](/exchange/mobile-device-mailbox-policies-e
 
 [Changes to Group Policy settings for Start in Windows 10](/windows/configuration/changes-to-start-policies-in-windows-10)
 
-[Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
 
 
  
