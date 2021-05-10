@@ -195,7 +195,7 @@ For more information about remote work if you're using Configuration Manager, se
 #### How does Delivery Optimization handle networks where a Public IP address is used in place of a Private IP address?
 Prior to Windows 10, version 1903, Delivery Optimization only allowed connections between LAN peers if those peers utilized Private IP addresses. Starting with version 1903 or higher, this is no longer enforced. Customers who utilize Public IP addresses in place of Private IP addresses can now use DO in LAN mode.
 
-> [NOTE]
+> [!NOTE]
 > One side effect of this change is that bytes downloaded from or uploaded to LAN peers with Public IP addresses may be reported as coming from Internet peers.
 
 
