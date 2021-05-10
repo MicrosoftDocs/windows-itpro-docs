@@ -78,14 +78,13 @@ For more information, see [Windows 10 Subscription Activation](/windows/deployme
 
 The following new DISM commands have been added to manage feature updates:
 
-    DISM /Online /Initiate-OSUninstall 
-        – Initiates a OS uninstall to take the computer back to the previous installation of windows.
-    DISM /Online /Remove-OSUninstall 
-        – Removes the OS uninstall capability from the computer. 
-    DISM /Online /Get-OSUninstallWindow 
-        – Displays the number of days after upgrade during which uninstall can be performed.
-    DISM /Online /Set-OSUninstallWindow 
-        – Sets the number of days after upgrade during which uninstall can be performed.
+| Command  | Description  |
+|---|---|
+| `DISM /Online /Initiate-OSUninstall`  | Initiates a OS uninstall to take the computer back to the previous installation of windows.  |
+| `DISM /Online /Remove-OSUninstall`  | Removes the OS uninstall capability from the computer.  |
+| `DISM /Online /Get-OSUninstallWindow`  | Displays the number of days after upgrade during which uninstall can be performed.  |
+| `DISM /Online /Set-OSUninstallWindow`  | Sets the number of days after upgrade during which uninstall can be performed.  |
+
 
 For more information, see [DISM operating system uninstall command-line options](/windows-hardware/manufacture/desktop/dism-uninstallos-command-line-options).
 
@@ -99,20 +98,19 @@ Prerequisites:
 
 For more information, see [Run custom actions during feature update](/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions).
 
-It is also now possible to run a script if the user rolls back their version of Windows using the PostRollback option.
+It is also now possible to run a script if the user rolls back their version of Windows using the PostRollback option:
 
-    /PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]
+`/PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]`
 
 For more information, see [Windows Setup Command-Line Options](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#21)
 
 New command-line switches are also available to control BitLocker:
 
-    Setup.exe /BitLocker AlwaysSuspend 
-        – Always suspend bitlocker during upgrade.
-    Setup.exe /BitLocker TryKeepActive 
-        – Enable upgrade without suspending bitlocker but if upgrade, does not work then suspend bitlocker and complete the upgrade.
-    Setup.exe /BitLocker ForceKeepActive 
-        – Enable upgrade without suspending bitlocker, but if upgrade does not work, fail the upgrade.
+| Command | Description |
+|---|---|
+| `Setup.exe /BitLocker AlwaysSuspend`  | Always suspend BitLocker during upgrade. |
+| `Setup.exe /BitLocker TryKeepActive`  | Enable upgrade without suspending BitLocker, but if upgrade does not work, then suspend BitLocker and complete the upgrade. |
+| `Setup.exe /BitLocker ForceKeepActive`  | Enable upgrade without suspending BitLocker, but if upgrade does not work, fail the upgrade. |
 
 For more information, see [Windows Setup Command-Line Options](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)
 
@@ -144,7 +142,7 @@ The OS uninstall period is a length of time that users are given when they can o
 
 ### Windows Hello for Business
 
-[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in the [Kiosk configuration](#windows-10-kiosk-and-kiosk-browser) section. 
+[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-overview) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in the [Kiosk configuration](#windows-10-kiosk-and-kiosk-browser) section. 
 
 - Windows Hello is now [password-less on S-mode](https://www.windowslatest.com/2018/02/12/microsoft-make-windows-10-password-less-platform/).
 - Support for S/MIME with Windows Hello for Business and APIs for non-Microsoft identity lifecycle management solutions.
@@ -173,27 +171,27 @@ The new [security baseline for Windows 10 version 1803](/windows/security/threat
 
 ### Microsoft Defender Antivirus
 
-Microsoft Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
+Microsoft Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
 
 ### Windows Defender Exploit Guard
 
 Windows Defender Exploit Guard enhanced attack surface area reduction, extended support to Microsoft Office applications, and now supports Windows Server. [Virtualization-based Security](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/Windows-Defender-System-Guard-Making-a-leap-forward-in-platform/m-p/167303) (VBS) and Hypervisor-protected code integrity (HVCI) can now be enabled across the Windows 10 ecosystem. These Exploit Guard features can now be enabled through the Windows Defender Security Center.
 
-For more information, see [Reduce attack surfaces](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction)
+For more information, see [Reduce attack surfaces](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
 
 ### Microsoft Defender for Endpoint
 
-[Microsoft Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) has been enhanced with many new capabilities. For more information, see the following topics:
+[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/advanced-hunting-query-language) has been enhanced with many new capabilities. For more information, see the following topics:
 
-- [Query data using Advanced hunting in Microsoft Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
-- [Use Automated investigations to investigate and remediate threats](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)
-- [Enable conditional access to better protect users, devices, and data](/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)
+- [Query data using Advanced hunting in Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-query-language)
+- [Use Automated investigations to investigate and remediate threats](/microsoft-365/security/defender-endpoint/automated-investigations)
+- [Enable conditional access to better protect users, devices, and data](/microsoft-365/security/defender-endpoint/conditional-access)
 
-Also see [New capabilities of Microsoft Defender for Endpoint further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97)
+Also see [New capabilities of Microsoft Defender for Endpoint further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97).
 
 ### Windows Defender Application Guard
 
-Windows Defender Application Guard has added support for Edge. For more information, see [System requirements for Windows Defender Application Guard](/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard#software-requirements)
+Windows Defender Application Guard has added support for Edge. For more information, see [System requirements for Windows Defender Application Guard](/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard#software-requirements).
 
 ### Windows Defender Device Guard
 
@@ -205,21 +203,21 @@ This release enables support for WIP with Files on Demand, allows file encryptio
 
 ### Office 365 Ransomware Detection
 
-For Office 365 Home and Office 365 Personal subscribers, Ransomware Detection notifies you when your OneDrive files have been attacked and guides you through the process of restoring your files. For more information, see [Ransomware detection and recovering your files](https://support.office.com/en-us/article/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f?ui=en-US&rs=en-US&ad=US)
+For Office 365 Home and Office 365 Personal subscribers, Ransomware Detection notifies you when your OneDrive files have been attacked and guides you through the process of restoring your files. For more information, see [Ransomware detection and recovering your files](https://support.office.com/en-us/article/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f?ui=en-US&rs=en-US&ad=US).
 
 ## Windows Analytics
 
 ### Upgrade Readiness
 
-Upgrade Readiness has added the ability to assess Spectre and Meltdown protections on your devices.  This addition allows you to see if your devices have Windows OS and firmware updates with Spectre and Meltdown mitigations installed, as well as whether your antivirus client is compatible with these updates. For more information, see [Upgrade Readiness now helps assess Spectre and Meltdown protections](/archive/blogs/upgradeanalytics/upgrade-readiness-now-helps-assess-spectre-and-meltdown-protections)
+Upgrade Readiness has added the ability to assess Spectre and Meltdown protections on your devices.  This addition allows you to see if your devices have Windows OS and firmware updates with Spectre and Meltdown mitigations installed, as well as whether your antivirus client is compatible with these updates. For more information, see [Upgrade Readiness now helps assess Spectre and Meltdown protections](/archive/blogs/upgradeanalytics/upgrade-readiness-now-helps-assess-spectre-and-meltdown-protections).
 
 ### Update Compliance
 
-Update Compliance has added Delivery Optimization to assess the bandwidth consumption of Windows Updates. For more information, see [Delivery Optimization in Update Compliance](/windows/deployment/update/update-compliance-delivery-optimization)
+Update Compliance has added Delivery Optimization to assess the bandwidth consumption of Windows Updates. For more information, see [Delivery Optimization in Update Compliance](/windows/deployment/update/update-compliance-delivery-optimization).
 
 ### Device Health
 
-Device Health’s new App Reliability reports enable you to see where app updates or configuration changes may be needed to reduce crashes. The Login Health reports reveal adoption, success rates, and errors for Windows Hello and for passwords— for a smooth migration to the password-less future. For more information, see [Using Device Health](/windows/deployment/update/device-health-using)
+Device Health’s new App Reliability reports enable you to see where app updates or configuration changes may be needed to reduce crashes. The Login Health reports reveal adoption, success rates, and errors for Windows Hello and for passwords— for a smooth migration to the password-less future. For more information, see [Using Device Health](/windows/deployment/update/device-health-using).
 
 ## Microsoft Edge
 
