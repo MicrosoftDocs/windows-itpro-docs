@@ -1715,11 +1715,6 @@ Allows IT Admins to specify update delays for up to 4 weeks.
 
 Supported values are 0-4, which refers to the number of weeks to defer updates.
 
-In Windows 10 Mobile Enterprise version 1511 devices set to automatic updates, for DeferUpdatePeriod to work, you must set the following:
-
--   Update/RequireDeferUpgrade must be set to 1
--   System/AllowTelemetry must be set to 1 or higher
-
 If the "Specify intranet Microsoft update service location" policy is enabled, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 If the Allow Telemetry policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
@@ -3470,7 +3465,7 @@ Supported values are 15, 30, or 60 (minutes).
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart warning reminder notifications.
@@ -3937,7 +3932,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 Enables the IT admin to schedule the time of the update installation.
@@ -4479,7 +4474,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!IMPORTANT]
-> Starting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enterprise and IoT Mobile.
+> Starting in Windows 10, version 1703 this policy is not supported in IoT Mobile.
 
 Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
 
