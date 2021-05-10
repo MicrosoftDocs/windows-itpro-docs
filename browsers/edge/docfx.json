@@ -53,6 +53,7 @@
         "garycentric"
       ]
     },
+    "fileMetadata": {},
     "template": "op.html",
     "dest": "browsers/edge",
     "markdownEngineName": "markdig"
