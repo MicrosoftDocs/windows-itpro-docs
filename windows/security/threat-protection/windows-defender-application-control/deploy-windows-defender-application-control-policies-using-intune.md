@@ -69,7 +69,7 @@ The steps to use Intune's custom OMA-URI functionality are:
     > ![Configure custom WDAC](images/wdac-intune-custom-oma-uri.png)
 
 > [!NOTE]
-> For the _Policy GUID_ value do not include the curly brackets. 
+> For the _Policy GUID_ value, do not include the curly brackets.
 
 ### Remove WDAC policies on Windows 10 1903+
 
