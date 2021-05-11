@@ -102,7 +102,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Event logs (tags, IDs) 
-            url:  event-id-explanations.md #(merge with event-tag-explanations.md)
+            url:  event-id-and-tag-explanations.md
       - linkListType: how-to-guide
         links:
           - text: Querying using advanced hunting
