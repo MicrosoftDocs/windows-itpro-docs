@@ -18,9 +18,12 @@ ms.topic: article
 # Configuring devices through the Update Compliance Configuration Script
 
 > [!NOTE]
-> A new policy is required to use Update Compliance: "AllowUpdateComplianceProcessing." If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must rerun the script so the new policy can be configured. We don't recommend using this script if you configure devices using MDM. Instead, configure the policies listed in [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md) by using your MDM provider. 
+> A new policy is required to use Update Compliance: "AllowUpdateComplianceProcessing." If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must rerun the script so the new policy can be configured. We don't recommend using this script if you configure devices using MDM. Instead, configure the policies listed in [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md) by using your MDM provider. Thus, it is worth auditing devices to ensure that there are no GP policy configurations in any existing tool that conflict with how policies should be configured. 
 
-The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures device policies via Group Policy, ensures that required services are running, and more.
+The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures the registry keys backing policies, ensures required services are running, and more.
+
+> [!NOTE]
+> The configuration script configures registry keys directly. Registry keys can potentially be overwritten by policy settings (GP/MDM) -- **reconfiguring devices with the script does not reconfigure previously set policies, both in the case of GP and MDM**. Therefore, if there are conflicts between your GP/MDM configurations, and the required configurations listed in [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md), there can be issues with device enrollment. 
 
 You can download the script from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=101086). Keep reading to learn how to configure the script and interpret error codes that are output in logs for troubleshooting.
 
