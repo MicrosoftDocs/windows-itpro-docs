@@ -22,7 +22,7 @@ ms.technology: mde
 The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks. Microsoft Defender Application Guard is designed to help prevent old, and newly emerging attacks, to help keep employees productive.
 
 >[!NOTE]
->Microsoft Defender Application Guard is not supported on VMs and VDI environment. For testing and automation on non-production machines, you may enable WDAG on a VM by enabling Hyper-V nested virtualization on the host.
+>Given the technological complexity, the security promise of Microsoft Defender Application Guard (MDAG) may not hold true on VMs and VDI environment. Hence, MDAG is currently not official supported on VMs and VDI environment. However, for testing and automation on non-production machines, you may enable MDAG on a VM by enabling Hyper-V nested virtualization on the host.
 
 ## Hardware requirements
 Your environment needs the following hardware to run Microsoft Defender Application Guard.
