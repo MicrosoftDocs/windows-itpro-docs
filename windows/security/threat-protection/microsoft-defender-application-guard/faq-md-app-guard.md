@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/06/2021
+ms.date: 05/12/2021
 ms.reviewer:
 manager: dansimp
 ms.custom: asr
@@ -57,7 +57,8 @@ Application Guard requires proxies to have a symbolic name, not just an IP addre
 
 ### Which Input Method Editors (IME) in 19H1 are not supported?
 
-The following Input Method Editors (IME) introduced in Windows 10, version 1903 are currently not supported in Microsoft Defender Application Guard.
+The following Input Method Editors (IME) introduced in Windows 10, version 1903 are currently not supported in Microsoft Defender Application Guard:
+
 - Vietnam Telex keyboard
 - Vietnam number key-based keyboard
 - Hindi phonetic keyboard
@@ -121,33 +122,45 @@ Application Guard might not work correctly on NTFS compressed volumes. If this i
 
 ### Why am I getting the error message "ERR_NAME_NOT_RESOLVED" after not being able to reach the PAC file?
 
-This is a known issue. To mitigate this you need to create two firewall rules.
-For guidance on how to create a firewall rule by using group policy, see:
+This is a known issue. To mitigate this you need to create two firewall rules. For information about creating a firewall rule by using Group Policy, see the following resources:
+
 - [Create an inbound icmp rule](../windows-firewall/create-an-inbound-icmp-rule.md)
 - [Open Group Policy management console for Microsoft Defender Firewall](../windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md)
 
-First rule (DHCP Server):
+#### First rule (DHCP Server)
 1. Program path: `%SystemRoot%\System32\svchost.exe`
+
 2. Local Service: `Sid:  S-1-5-80-2009329905-444645132-2728249442-922493431-93864177  (Internet Connection Service (SharedAccess))`
+
 3. Protocol UDP
+
 4. Port 67
 
-Second rule (DHCP Client)
-This is the same as the first rule, but scoped to local port 68.
-In the Microsoft Defender Firewall user interface go through the following steps:
+#### Second rule (DHCP Client)
+This is the same as the first rule, but scoped to local port 68. In the Microsoft Defender Firewall user interface go through the following steps:
+
 1. Right-click on inbound rules, and then create a new rule.
+
 2. Choose **custom rule**.
+
 3. Specify the following program path: `%SystemRoot%\System32\svchost.exe`.
+
 4. Specify the following settings:
     - Protocol Type: UDP
     - Specific ports: 67
     - Remote port: any
-6. Specify any IP addresses.
-7. Allow the connection.
-8. Specify to use all profiles.
-9. The new rule should show up in the user interface. Right click on the **rule** > **properties**.
-10. In the **Programs and services** tab, under the **Services** section, select **settings**.
-11. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
+
+5. Specify any IP addresses.
+
+6. Allow the connection.
+
+7. Specify to use all profiles.
+
+8. The new rule should show up in the user interface. Right click on the **rule** > **properties**.
+
+9. In the **Programs and services** tab, under the **Services** section, select **settings**.
+
+10. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
 
 ### Why can I not launch Application Guard when Exploit Guard is enabled?
 
@@ -174,7 +187,8 @@ ICS is enabled by default in Windows, and ICS must be enabled in order for Appli
 
 Allow-listed items must be configured as "allowed" in the Group Policy Object to ensure AppGuard works properly.
 
-Policy: Allow installation of devices that match any of these device IDs
+Policy: Allow installation of devices that match any of the following device IDs:
+
 - `SCSI\DiskMsft____Virtual_Disk____`
 - `{8e7bd593-6e6c-4c52-86a6-77175494dd8e}\msvhdhba`
 - `VMS_VSF`
