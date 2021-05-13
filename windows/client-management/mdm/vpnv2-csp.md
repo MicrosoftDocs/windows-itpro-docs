@@ -866,6 +866,17 @@ Added in Windows 10, version 1607. Specifies the class-based default routes. Fo
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
+<a href="" id="vpnv2-profilename-nativeprofile-l2tppsk"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/PlumbIKEv2TSAsRoutes**  
+Determines whether plumbing IPSec traffic selectors as routes onto VPN interface is enabled.
+
+If set to False, plumbing traffic selectors as routes is disabled.
+
+If set to True, plumbing traffic selectors as routes is enabled.
+
+By default, this value is set to False.
+
+Value type is bool. Supported operations include Get, Add, Replace, and Delete.
+
 ## Examples
 
 
@@ -1588,8 +1599,5 @@ Servers
  
 
  
-
-
-
 
 

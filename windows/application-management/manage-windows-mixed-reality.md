@@ -8,8 +8,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -33,7 +33,7 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
 
 2. Windows Mixed Reality Feature on Demand (FOD) is downloaded from Windows Update. If access to Windows Update is blocked, you must manually install the Windows Mixed Reality FOD.
 
-   1. Download the FOD .cab file for [Windows 10, version 2004](https://software-download.microsoft.com/download/pr/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab), [Windows 10, version 1903 and 1909](https://software-download.microsoft.com/download/pr/Microsoft-Windows-Holographic-Desktop-FOD-Package-31bf3856ad364e35-amd64.cab), [Windows 10, version 1809](https://software-download.microsoft.com/download/pr/microsoft-windows-holographic-desktop-fod-package31bf3856ad364e35amd64_1.cab), [Windows 10, version 1803](https://download.microsoft.com/download/9/9/3/9934B163-FA01-4108-A38A-851B4ACD1244/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab), or [Windows 10, version 1709](https://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab).
+   1. Download the FOD .cab file for [Windows 10, version 2004](https://software-download.microsoft.com/download/pr/6cf73b63/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab), [Windows 10, version 1903 and 1909](https://software-download.microsoft.com/download/pr/Microsoft-Windows-Holographic-Desktop-FOD-Package-31bf3856ad364e35-amd64.cab), [Windows 10, version 1809](https://software-download.microsoft.com/download/pr/microsoft-windows-holographic-desktop-fod-package31bf3856ad364e35amd64_1.cab), [Windows 10, version 1803](https://download.microsoft.com/download/9/9/3/9934B163-FA01-4108-A38A-851B4ACD1244/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab), or [Windows 10, version 1709](https://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab).
 
       > [!NOTE]
       > You must download the FOD .cab file that matches your operating system version.

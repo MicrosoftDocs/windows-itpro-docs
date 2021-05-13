@@ -37,7 +37,7 @@ The Policy configuration service provider has the following sub-categories:
 > -   **./Device/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
 > -   **./Device/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
 >
-> For device wide configuration the **_Device/_**  portion may be omitted from the path, deeming the following paths respectively equivalent:
+> For device wide configuration the **_Device/_**  portion may be omitted from the path, deeming the following paths respectively equivalent to the paths provided above:
 >
 > - **./Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
 > - **./Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
@@ -57,12 +57,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-config-areaname"></a>**Policy/Config/**<strong>*AreaName*</strong>  
+<a href="" id="policy-config-areaname"></a>**Policy/Config/_AreaName_**  
 <p style="margin-left: 20px">The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/**<strong>*AreaName/PolicyName*</strong>  
+<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/_AreaName/PolicyName_**  
 <p style="margin-left: 20px">Specifies the name/value pair used in the policy.
 
 <p style="margin-left: 20px">The following list shows some tips to help you when configuring policies:
@@ -81,12 +81,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname"></a>**Policy/Result/**<strong>*AreaName*</strong>  
+<a href="" id="policy-result-areaname"></a>**Policy/Result/_AreaName_**  
 <p style="margin-left: 20px">The area group that can be configured by a single technology independent of the providers.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/**<strong>*AreaName/PolicyName*</strong>  
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/_AreaName/PolicyName_**  
 <p style="margin-left: 20px">Specifies the name/value pair used in the policy.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -102,31 +102,31 @@ The following diagram shows the Policy configuration service provider in tree fo
 > [!NOTE]
 > The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)).
 
-<p style="margin-left: 20px">ADMX files that have been installed by using <strong>ConfigOperations/ADMXInstall</strong> can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}</code>.
+<p style="margin-left: 20px">ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}</code>.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file. 
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Policy**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app policy is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy/*UniqueID*</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Policy/_UniqueID_** 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the policy to import.
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Preference**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app preference is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference/*UniqueID*</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Preference/_UniqueID_**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.

@@ -66,5 +66,5 @@ The system commit charge is the total committed or "promised" memory of all comm
 
 The system committed charge and system committed limit can be measured on the **Performance** tab in Task Manager or by using the "\Memory\Committed Bytes" and "\Memory\Commit Limit" performance counters. The \Memory\% Committed Bytes In Use counter is a ratio of \Memory\Committed Bytes to \Memory\Commit Limit values.
 
->[!Note]
->System-managed page files automatically grow up to three times the physical memory or 4 GB (whichever is larger) when the system commit charge reaches 90 percent of the system commit limit. This assumes that enough free disk space is available to accommodate the growth.
+> [!NOTE]
+> System-managed page files automatically grow up to three times the physical memory or 4 GB (whichever is larger, but no more than one-eighth of the volume size) when the system commit charge reaches 90 percent of the system commit limit. This assumes that enough free disk space is available to accommodate the growth.

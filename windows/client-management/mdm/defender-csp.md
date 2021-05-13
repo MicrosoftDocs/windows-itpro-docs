@@ -457,8 +457,8 @@ The data type is integer.
 Supported operations are Add, Delete, Get, Replace.	
 
 Valid values are:	
--	1 – Enable.	
--	0 (default) – Disable.
+-	1 (default) – Enable.	
+-	0 – Disable.
 
 <a href="" id="configuration-meteredconnectionupdates"></a>**Configuration/MeteredConnectionUpdates**<br>
 Allow managed devices to update through metered connections. Data charges may apply.
@@ -518,8 +518,8 @@ When enabled or disabled exists on the client and admin moves the setting to not
 
 More details:  
 
-- [Microsoft Defender AV diagnostic data](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)  
-- [Collect investigation package from devices](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)  
+- [Microsoft Defender AV diagnostic data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)  
+- [Collect investigation package from devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)  
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.
