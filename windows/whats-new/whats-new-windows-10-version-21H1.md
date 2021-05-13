@@ -40,7 +40,9 @@ A new [resolved issues](/mem/autopilot/resolved-issues) article is available tha
 
 A new Intune remote action: **Collect diagnostics**, lets you collect the logs from corporate devices without interrupting or waiting for the end user. For more information, see [Collect diagnostics remote action](/mem/intune/fundamentals/whats-new#collect-diagnostics-remote-action).
 
-Intune has also added capabilities to [Role-based access control](/mem/intune/fundamentals/whats-new#role-based-access-control) (RBAC) that can be used to further define profile settings for the Enrollment Status Page (ESP). For more information see [Create Enrollment Status Page profile and assign to a group](/mem/intune/enrollment/windows-enrollment-status#create-enrollment-status-page-profile-and-assign-to-a-group).  For a full list of what's new in Microsoft Intune, see [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new).
+Intune has also added capabilities to [Role-based access control](/mem/intune/fundamentals/whats-new#role-based-access-control) (RBAC) that can be used to further define profile settings for the Enrollment Status Page (ESP). For more information see [Create Enrollment Status Page profile and assign to a group](/mem/intune/enrollment/windows-enrollment-status#create-enrollment-status-page-profile-and-assign-to-a-group).  
+
+For a full list of what's new in Microsoft Intune, see [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new).
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
@@ -68,11 +70,12 @@ Windows Hello multi-camera support is added, allowing users to choose an externa
 
 The new Chromium-based [Microsoft Edge](https://www.microsoft.com/edge/business) browser is included with this release.  For more information about what's new in Edge, see the [Microsoft Edge insider](https://www.microsoftedgeinsider.com/whats-new).
 
-## Fixes
+## General fixes
 
-A list of fixes is provided in the [Windows Insider blog](https://blogs.windows.com/windows-insider/2021/02/17/releasing-windows-10-build-19042-844-20h2-to-beta-and-release-preview-channels/) and below.
+See the [Windows Insider blog](https://blogs.windows.com/windows-insider/2021/02/17/releasing-windows-10-build-19042-844-20h2-to-beta-and-release-preview-channels/) for more information.
 
-Fixed:
+This release includes the following enhancements and issues fixed:
+
 - a memory leak in Internet Explorer 11 that occurs when you use the Chinese language pack.
 - COM+ callout policies that cause a deadlock in certain applications.
 - an issue that prevents certain Win32 apps from opening as a different user when you use the runas
