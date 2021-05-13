@@ -1,0 +1,147 @@
+- name: Information protection
+  href: index.md
+  items: 
+    - name: BitLocker
+      href: bitlocker\bitlocker-overview.md
+      items: 
+        - name: Overview of BitLocker Device Encryption in Windows 10
+          href: bitlocker\bitlocker-device-encryption-overview-windows-10.md
+        - name: BitLocker frequently asked questions (FAQ)
+          href: bitlocker\bitlocker-frequently-asked-questions.yml
+          items: 
+            - name: Overview and requirements
+              href: bitlocker\bitlocker-overview-and-requirements-faq.yml
+            - name: Upgrading
+              href: bitlocker\bitlocker-upgrading-faq.yml
+            - name: Deployment and administration
+              href: bitlocker\bitlocker-deployment-and-administration-faq.yml
+            - name: Key management
+              href: bitlocker\bitlocker-key-management-faq.yml
+            - name: BitLocker To Go
+              href: bitlocker\bitlocker-to-go-faq.yml
+            - name: Active Directory Domain Services
+              href: bitlocker\bitlocker-and-adds-faq.yml
+            - name: Security
+              href: bitlocker\bitlocker-security-faq.yml
+            - name: BitLocker Network Unlock
+              href: bitlocker\bitlocker-network-unlock-faq.yml
+            - name: General
+              href: bitlocker\bitlocker-using-with-other-programs-faq.yml
+        - name: "Prepare your organization for BitLocker: Planning and policies"
+          href: bitlocker\prepare-your-organization-for-bitlocker-planning-and-policies.md
+        - name: BitLocker basic deployment
+          href: bitlocker\bitlocker-basic-deployment.md
+        - name: "BitLocker: How to deploy on Windows Server 2012 and later"
+          href: bitlocker\bitlocker-how-to-deploy-on-windows-server.md
+        - name: "BitLocker: Management for enterprises"
+          href: bitlocker\bitlocker-management-for-enterprises.md
+        - name: "BitLocker: How to enable Network Unlock"
+          href: bitlocker\bitlocker-how-to-enable-network-unlock.md
+        - name: "BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker"
+          href: bitlocker\bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md
+        - name: "BitLocker: Use BitLocker Recovery Password Viewer"
+          href: bitlocker\bitlocker-use-bitlocker-recovery-password-viewer.md
+        - name: BitLocker Group Policy settings
+          href: bitlocker\bitlocker-group-policy-settings.md
+        - name: BCD settings and BitLocker
+          href: bitlocker\bcd-settings-and-bitlocker.md
+        - name: BitLocker Recovery Guide
+          href: bitlocker\bitlocker-recovery-guide-plan.md
+        - name: BitLocker Countermeasures
+          href: bitlocker\bitlocker-countermeasures.md
+        - name: Protecting cluster shared volumes and storage area networks with BitLocker
+          href: bitlocker\protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md
+        - name: Troubleshoot BitLocker
+          items: 
+            - name: Troubleshoot BitLocker
+              href: bitlocker\troubleshoot-bitlocker.md
+            - name: "BitLocker cannot encrypt a drive: known issues"
+              href: bitlocker\ts-bitlocker-cannot-encrypt-issues.md
+            - name: "Enforcing BitLocker policies by using Intune: known issues"
+              href: bitlocker\ts-bitlocker-intune-issues.md
+            - name: "BitLocker Network Unlock: known issues"
+              href: bitlocker\ts-bitlocker-network-unlock-issues.md
+            - name: "BitLocker recovery: known issues"
+              href: bitlocker\ts-bitlocker-recovery-issues.md
+            - name: "BitLocker configuration: known issues"
+              href: bitlocker\ts-bitlocker-config-issues.md
+            - name: Troubleshoot BitLocker and TPM issues
+              items: 
+                - name: "BitLocker cannot encrypt a drive: known TPM issues"
+                  href: bitlocker\ts-bitlocker-cannot-encrypt-tpm-issues.md
+                - name: "BitLocker and TPM: other known issues"
+                  href: bitlocker\ts-bitlocker-tpm-issues.md
+                - name: Decode Measured Boot logs to track PCR changes
+                  href: bitlocker\ts-bitlocker-decode-measured-boot-logs.md
+    - name: Encrypted Hard Drive
+      href: encrypted-hard-drive.md
+    - name: Kernel DMA Protection
+      href: kernel-dma-protection-for-thunderbolt.md
+    - name: Protect your enterprise data using Windows Information Protection (WIP)
+      href: windows-information-protection\protect-enterprise-data-using-wip.md
+      items: 
+        - name: Create a WIP policy using Microsoft Intune
+          href: windows-information-protection\overview-create-wip-policy.md
+          items: 
+            - name: Create a WIP policy with MDM using the Azure portal for Microsoft Intune
+              href: windows-information-protection\create-wip-policy-using-intune-azure.md
+              items: 
+                - name: Deploy your WIP policy using the Azure portal for Microsoft Intune
+                  href: windows-information-protection\deploy-wip-policy-using-intune-azure.md
+                - name: Associate and deploy a VPN policy for WIP using the Azure portal for Microsoft Intune
+                  href: windows-information-protection\create-vpn-and-wip-policy-using-intune-azure.md
+            - name: Create and verify an EFS Data Recovery Agent (DRA) certificate
+              href: windows-information-protection\create-and-verify-an-efs-dra-certificate.md
+            - name: Determine the Enterprise Context of an app running in WIP
+              href: windows-information-protection\wip-app-enterprise-context.md
+        - name: Create a WIP policy using Microsoft Endpoint Configuration Manager
+          href: windows-information-protection\overview-create-wip-policy-configmgr.md
+          items: 
+            - name: Create and deploy a WIP policy using Microsoft Endpoint Configuration Manager
+              href: windows-information-protection\create-wip-policy-using-configmgr.md
+            - name: Create and verify an EFS Data Recovery Agent (DRA) certificate
+              href: windows-information-protection\create-and-verify-an-efs-dra-certificate.md
+            - name: Determine the Enterprise Context of an app running in WIP
+              href: windows-information-protection\wip-app-enterprise-context.md
+        - name: Mandatory tasks and settings required to turn on WIP
+          href: windows-information-protection\mandatory-settings-for-wip.md
+        - name: Testing scenarios for WIP
+          href: windows-information-protection\testing-scenarios-for-wip.md
+        - name: Limitations while using WIP
+          href: windows-information-protection\limitations-with-wip.md
+        - name: How to collect WIP audit event logs
+          href: windows-information-protection\collect-wip-audit-event-logs.md
+        - name: General guidance and best practices for WIP
+          href: windows-information-protection\guidance-and-best-practices-wip.md
+          items: 
+            - name: Enlightened apps for use with WIP
+              href: windows-information-protection\enlightened-microsoft-apps-and-wip.md
+            - name: Unenlightened and enlightened app behavior while using WIP
+              href: windows-information-protection\app-behavior-with-wip.md
+            - name: Recommended Enterprise Cloud Resources and Neutral Resources network settings with WIP
+              href: windows-information-protection\recommended-network-definitions-for-wip.md
+            - name: Using Outlook Web Access with WIP
+              href: windows-information-protection\using-owa-with-wip.md
+        - name: Fine-tune WIP Learning
+          href: windows-information-protection\wip-learning.md
+    - name: Secure the Windows 10 boot process
+      href: secure-the-windows-10-boot-process.md
+    - name: Trusted Platform Module
+      href: tpm/trusted-platform-module-top-node.md
+      items: 
+        - name: Trusted Platform Module Overview
+          href: tpm/trusted-platform-module-overview.md
+        - name: TPM fundamentals
+          href: tpm/tpm-fundamentals.md
+        - name: How Windows 10 uses the TPM
+          href: tpm/how-windows-uses-the-tpm.md
+        - name: TPM Group Policy settings
+          href: tpm/trusted-platform-module-services-group-policy-settings.md
+        - name: Back up the TPM recovery information to AD DS
+          href: tpm/backup-tpm-recovery-information-to-ad-ds.md
+        - name: View status, clear, or troubleshoot the TPM
+          href: tpm/initialize-and-configure-ownership-of-the-tpm.md
+        - name: Understanding PCR banks on TPM 2.0 devices
+          href: tpm/switch-pcr-banks-on-tpm-2-0-devices.md
+        - name: TPM recommendations
+          href: tpm/tpm-recommendations.md

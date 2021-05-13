@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
 author: dansimp
-ms.author: daniha
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article

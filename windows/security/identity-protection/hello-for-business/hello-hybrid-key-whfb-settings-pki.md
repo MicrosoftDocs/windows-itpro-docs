@@ -1,5 +1,5 @@
 ---
-title: Configure Hybrid key trust Windows Hello for Business
+title: Configure Hybrid Azure AD joined key trust Windows Hello for Business
 description: Configuring Hybrid key trust Windows Hello for Business - Public Key Infrastructure (PKI)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, PKI, Windows Hello, key trust, key-trust
 ms.prod: w10
@@ -13,11 +13,11 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 01/14/2021
+ms.date: 04/30/2021
 ms.reviewer: 
 ---
 
-# Configure Hybrid Windows Hello for Business: Public Key Infrastructure
+# Configure Hybrid Azure AD joined Windows Hello for Business: Public Key Infrastructure
 
 **Applies to**
 
@@ -50,7 +50,8 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 3. In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
 5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.
-    **Note**If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
+   > [!NOTE]
+   > If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
 6. On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**.
 8. Close the console.
@@ -81,11 +82,12 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list.  However, the certificate template and the superseding of certificate templates is not active until you publish the certificate template to one or more certificate authorities.
 
 > [!NOTE]
-> A domain controller's certificate must chain to a certificate in the NTAuth store in Active Directory. By default, online "Enterprise" Active Directory Certificate Authority certificates are added to the NTAuth store at installation time. If you are using a third-party CA, this is not done by default. If the domain controller certificate does not chain to a trusted CA in the NTAuth store, user authentication will fail. 
-> 
-> You can view an AD forest's NTAuth store (NTAuthCertificates) using PKIVIEW.MSC from an ADCS CA. Open PKIView.msc, then click the Action menu -> Manage AD Containers. To see all certificates in the NTAuth store, run **Certutil -viewstore -enterprise NTAuth** from the command-line interface (Cmd.exe).
-
-### Publish Certificate Templates to a Certificate Authority
+> The domain controller's certificate must chain to a root in the NTAuth store. By default, the Active Directory Certificate Authority's root certificate is added to the NTAuth store. If you are using a third-party CA, this may not be done by default. If the domain controller certificate does not chain to a root in the NTAuth store, user authentication will fail.
+>you can view
+>
+>'''powershell
+>Certutil -view
+>Publish Certificate Templates to a Certificate Authority
 
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
 

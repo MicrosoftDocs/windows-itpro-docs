@@ -5,8 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: dansimp
-author: msfttracyp
+ms.author: greglin
+author: greg-lindsay
 ms.date: 07/21/2017
 ms.reviewer: 
 manager: dansimp

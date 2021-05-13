@@ -31,7 +31,6 @@ This topic describes the decisions you need to make to establish the processes f
 
 The first step in implementing application control is to consider how your policies will be managed and maintained over time. Developing a process for managing WDAC policies helps assure that WDAC continues to effectively control how applications are allowed to run in your organization.
 
-<!-- We should insert a diagram to show this visually -->
 Most WDAC policies will evolve over time and proceed through a set of identifiable phases during their lifetime. Typically, these phases include:
 
 1. [Define (or refine) the "circle-of-trust"](understand-windows-defender-application-control-policy-design-decisions.md) for the policy and build an audit mode version of the policy XML. In audit mode, block events are generated but files are not prevented from executing.
@@ -41,6 +40,8 @@ Most WDAC policies will evolve over time and proceed through a set of identifiab
 5. Generate the enforced mode version of the policy. In enforced mode, files that are not allowed by the policy are prevented from executing and corresponding block events are generated.
 6. Deploy the enforced mode policy to intended devices. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
 7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.  
+
+![Recommended WDAC policy deployment process](images/policyflow.png)
 
 ### Keep WDAC policies in a source control or document management solution
 
@@ -66,7 +67,7 @@ Each time that a process is blocked by WDAC, events will be written to either th
 
 Collecting these events in a central location can help you maintain your WDAC policy and troubleshoot rule configuration problems. Event collection technologies such as those available in Windows allow administrators to subscribe to specific event channels and have the events from source computers aggregated into a forwarded event log on a Windows Server operating system collector. For more info about setting up an event subscription, see [Configure Computers to Collect and Forward Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11)).
 
-Additionally, WDAC events are collected by [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and can be queried using the [advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) feature.
+Additionally, WDAC events are collected by [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) and can be queried using the [advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) feature.
 
 ## Application and user support policy
 

@@ -9,10 +9,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 01/09/2019
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
