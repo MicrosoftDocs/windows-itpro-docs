@@ -60,7 +60,8 @@ After creating the database, you need to assign permissions to it. In MDT, the a
 
 4.  On the **Login - New** page, next to the **Login** name field, click **Search**, and search for **CONTOSO\\MDT\_BA**. Then in the left pane, select **User Mapping**. Select the **MDT** database, and assign the following roles:
     1.  db\_datareader
-    2.  public (default)
+    2.  db\_datawriter
+    3.  public (default)
 5.  Click **OK**, and close SQL Server Management Studio.
 
 ![figure 10](../images/mdt-09-fig10.png)
