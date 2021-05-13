@@ -28,6 +28,7 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Removed in version |
 | ----------- | --------------------- | ------ |
+| XDDM-based remote display driver  | The support for Windows 2000 Display Driver Model (XDDM) based remote display drivers is removed in this release. Independent Software Vendors that use an XDDM-based remote display driver should plan a migration to the WDDM driver model. For more information about implementing a remote indirect display driver, ISVs can reach out to [rdsdev@microsoft.com](mailto:rdsdev@microsoft.com). | 21H1 |
 |Microsoft Edge|The legacy version of Microsoft Edge is no longer supported after March 9th, 2021. For more information, see [End of support reminder for Microsoft Edge Legacy](/lifecycle/announcements/edge-legacy-eos-details). | 21H1 |
 |MBAE service metadata|The MBAE app experience is replaced by an MO UWP app. Metadata for the MBAE service is removed. | 20H2 |
 | Connect app | The **Connect** app for wireless projection using Miracast is no longer installed by default, but is available as an optional feature. To install the app, click on **Settings** > **Apps** > **Optional features** > **Add a feature** and then install the **Wireless Display** app. | 2004 |

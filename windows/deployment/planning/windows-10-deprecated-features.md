@@ -26,6 +26,10 @@ The features described below are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
+| Pewrsonalization roaming | Roaming of Personalization settings (including wallpaper, slideshow, accent colors, and lock screen images) is no longer being developed and might be removed in a future release.
+ | 21H1 |
+| Paint 3D | Description | 21H1 |
+| 3D Viewer | Description | 21H1 |
 | Windows Management Instrumentation Command line (WMIC) tool. | The WMIC tool is deprecated in Windows 10, version 21H1 and the 21H1 semi-annual channel release of Windows Server. This tool is superseded by [Windows PowerShell for WMI](https://docs.microsoft.com/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-7.1). Note: This deprecation only applies to the [command-line management tool](https://docs.microsoft.com/windows/win32/wmisdk/wmic). WMI itself is not affected. | 21H1 |
 | Microsoft Edge | The legacy version of Microsoft Edge is no longer being developed.| 2004 |
 | Companion Device Framework | The [Companion Device Framework](/windows-hardware/design/device-experiences/windows-hello-companion-device-framework) is no longer under active development.| 2004 |
