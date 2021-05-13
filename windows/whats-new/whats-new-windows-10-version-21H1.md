@@ -24,74 +24,105 @@ Windows 10, version 21H1 is a scoped set of features for select performance impr
 
 To download and install Windows 10, version 21H1, use Windows Update (**Settings > Update & Security > Windows Update**). 
 
-## Microsoft Edge
-
-This release automatically includes the new Chromium-based [Microsoft Edge](https://www.microsoft.com/edge/business) browser instead of the legacy version of Edge.  For more information, see the [Microsoft Edge documentation](/microsoft-edge/).
-
 ## Servicing
 
 ### Windows Update
-
-There are several changes that help improve the security of devices that scan Windows Server Update Services (WSUS) for updates. For more information, see [Changes to improve security for Windows devices scanning WSUS](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/changes-to-improve-security-for-windows-devices-scanning-wsus/ba-p/1645547).
 
 Starting with Windows 10, version 20H2, LCUs and SSUs have been combined into a single cumulative monthly update, available via Microsoft Catalog or Windows Server Update Services. For more information, see [Simplifying on-premises deployment of servicing stack updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-on-premises-deployment-of-servicing-stack-updates/ba-p/1646039).
 
 ## Deployment
 
-New guidance is available to help 
-
 ### Windows Autopilot
 
+A new [resolved issues](/mem/autopilot/resolved-issues) article is available that includes several new fixes for Windows Autopilot deployment scenarios.
 
+A new Intune remote action: **Collect diagnostics**, lets you collect the logs from corporate devices without interrupting or waiting for the end user. For more information, see [Collect diagnostics remote action](/mem/intune/fundamentals/whats-new#collect-diagnostics-remote-action).
+
+Intune has also added capabilities to [Role-based access control](/mem/intune/fundamentals/whats-new#role-based-access-control) (RBAC) that can be used with your Windows Autopilot deployment.  For a full list of what's new in Microsoft Intune, see [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new).
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-There is no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
+There is no new ADK for Windows 10, version 21H1. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
 ## Device management
 
-
+Windows Management Instrumentation (WMI) Group Policy Service (GPSVC) has a performance improvement to support remote work scenarios:
+- An issue is fixed that caused changes by an Active Directory (AD) administrator to user or computer group memberships to propagate slowly. Although the access token eventually updates, these changes might not appear when the administrator uses gpresult /r or gpresult /h to create a report.
 
 ## Security
 
 ### Windows Defender Application Guard (WDAG)
 
-WDAG performance improvements including optimizing document opening scenario times.
-
-“We fixed an issue that causes a one minute or more delay when you open a Microsoft Defender Application Guard (WDAG) Office document. This occurs when you try to open a file using a Universal Naming Convention (UNC) path or Server Message Block (SMB) share link.”
-
-### Microsoft Defender Application Guard for Office
-
-Microsoft Defender Application Guard now supports Office: With [Microsoft Defender Application Guard for Office](/microsoft-365/security/office-365-security/install-app-guard), you can launch untrusted Office documents (from outside the Enterprise) in an isolated container to prevent potentially malicious content from compromising your device.
+WDAG performance is improved with optimized document opening times:
+- An issue is fixed that could cause a one minute or more delay when you open a Microsoft Defender Application Guard (WDAG) Office document. This can occur when you try to open a file using a Universal Naming Convention (UNC) path or Server Message Block (SMB) share link.
+- A memory issue is fixed that could casue a WDAG container to use almost 1 GB of working set memory when the container is idle.
+- The performance of Robocopy is improved when copying files over 400 MB in size.
 
 ### Windows Hello
 
-Windows Hello multi-camera support to allow users to choose an external camera priority when using high end displays with integrated cameras.
+Windows Hello multi-camera support to allow users to choose an external camera priority when both external and internal Windows Hello cameras are present.
 
-## Virtualization
+## Microsoft Edge
 
-### Windows Sandbox
+The new Chromium-based [Microsoft Edge](https://www.microsoft.com/edge/business) browser is included with this release.  For more information about what's new in Edge, see the [Microsoft Edge insider](https://www.microsoftedgeinsider.com/whats-new).
 
+## Fixes
 
+A list of fixes is provided in the [Windows Insider blog](https://blogs.windows.com/windows-insider/2021/02/17/releasing-windows-10-build-19042-844-20h2-to-beta-and-release-preview-channels/) and below.
 
-## Windows Shell
-
-
-
-### 2-in-1 PCs
-
-On a 2-in-1 device, Windows will now automatically switch to tablet mode when you detach the screen.
-
-## Surface
-
-
-
-
-
+Fixed:
+- a memory leak in Internet Explorer 11 that occurs when you use the Chinese language pack.
+- COM+ callout policies that cause a deadlock in certain applications.
+- an issue that prevents certain Win32 apps from opening as a different user when you use the runas
+- unexpected screens during the Windows Out of Box Experience (OOBE).
+- an issue that might cause a deadlock when a COM server delivers an event to multiple subscribers in parallel.
+- an issue in Advanced display settings that shows the incorrect refresh rates available for high dynamic range (HDR) displays.
+- an issue that might prevent certain CAD applications from opening if those applications rely on OpenGL.
+- an issue that might cause video playback to flicker when rendering on certain low-latency capable monitors.
+- an issue that sometimes prevents the input of strings into the Input Method Editor (IME).
+- an issue that exhausts resources because Desktop Windows Manager (DWM) leaks handles and virtual memory in Remote Desktop sessions.
+- a stop error that occurs at start up.
+- an issue that might delay a Windows Hello for Business (WHfB) Certificate Trust deployment when you open the Settings-> Accounts-> Sign-in Options page.
+- an issue that might prevent some keyboard keys from working, such as the home, Ctrl, or left arrow keys when you set the Japanese IME input mode to Kana.
+- removed the history of previously used pictures from a user account profile.
+- wrong language displayed on a console after you change the system locale.
+- host process of Windows Remote Management (WinRM) can stop working when it formats messages from a PowerShell plugin.
+- Windows Management Instrumentation (WMI) service caused a heap leak each time security settings are applied to WMI namespace permissions.
+- screen rendering after opening games with certain hardware configurations.
+- startup times for applications that have roaming settings when User Experience Virtualization (UE-V) is turned on.
+- a principal in a trusted MIT realm fails to obtain a Kerberos service ticket from Active Directory domain controllers (DC). This occurs on devices that installed Windows Updates that contain CVE-2020-17049 protections and configured PerfromTicketSignature to 1 or higher. These updates were released between November 10, 2020 and December 8, 2020. Ticket acquisition also fails with the error, “KRB_GENERIC_ERROR”, if callers submit a PAC-less Ticket Granting Ticket (TGT) as an evidence ticket without providing the USER_NO_AUTH_DATA_REQUIRED flag.
+- high memory and CPU utilization in Microsoft Defender for Endpoint.
+- We enhanced data loss prevention and insider risk management solution functionalities in Microsoft 365 endpoints.
+- an error when you attempt to open an untrusted webpage using Microsoft Edge or open an untrusted Microsoft Office document. The error is, “WDAG Report – Container: Error: 0x80070003, Ext error: 0x00000001”. This issue occurs after installing the .NET update KB4565627.
+- an issue that prevents wevtutil from parsing an XML file.
+- failure to report an error when the Elliptic Curve Digital Signature Algorithm (ECDSA) generates invalid keys of 163 bytes instead of 165 bytes.
+- We added support for using the new Chromium-based Microsoft Edge as the assigned access single kiosk app. Now, you can also customize a breakout key sequence for single app kiosks. For more information, see Configure Microsoft Edge kiosk mode.
+- User Datagram Protocol (UDP) broadcast packets that are larger than the maximum transmission unit (MTU). Devices that receive these packets discard them because the checksum is not valid.
+- the WinHTTP AutoProxy service does not comply with the value set for the maximum Time To Live (TTL) on the Proxy Auto-Configuration (PAC) file. This prevents the cached file from updating dynamically.
+- We improved the ability of the WinHTTP Web Proxy Auto-Discovery Service to ignore invalid Web Proxy Auto-Discovery Protocol (WPAD) URLs that the Dynamic Host Configuration Protocol (DHCP) server returns.
+- We displayed the proper Envelope media type as a selectable output paper type for Universal Print queues.
+- We ended the display of a random paper size for a printer when it uses the Microsoft Internet Printing Protocol (IPP) Class Driver.
+- We enabled Windows to retrieve updated printer capabilities to ensure that users have the proper set of selectable print options.
+- We updated support for hole punch and stapling locations for print jobs with long edge first paper feed direction on certain printers.
+- an issue that might cause the IKEEXT service to stop working intermittently.
+- an issue that might prevent a Non-Volatile Memory Express (NVMe) device from entering the proper power state.
+- an issue that might cause stop error 7E in sys on servers running the Network File System (NFS) service.
+- an issue that prevents the User Profile Service from detecting a slow or a fast link reliably.
+- an issue that causes contention for a metadata lock when using Work Folders.
+- We added a new dfslogkey as described below:
+Keypath: HKEY_LOCAL_MACHINE/SOFTWARE/MICROSOFT/dfslog.
+The RootShareAcquireSuccessEvent field has the following possible values:
+Default value = 1; enables the log.
+Value other than 1; disables the log.
+If this key does not exist, it will be created automatically. To take effect, any change to dfslog/RootShareAcquireSuccessEvent in the registry requires that you restart the DFSN service.
+-We updated the Open Mobile Alliance (OMA) Device Management (DM) sync protocol by adding a check-in reason for requests from the client to the server. The check-in reason will allow the mobile device management (MDM) service to make better decisions about sync sessions. With this change, the OMA-DM service must negotiate a protocol version of 4.0 with the Windows OMA-DM client.
+- We turned off token binding by default in Windows Internet (WinINet).
+-  an issue that might prevent the correct Furigana characters from appearing in apps that automatically allow the input of Furigana characters. You might need to enter the Furigana characters manually. This issue occurs when using the Microsoft Japanese Input Method Editor (IME) to enter Kanji characters in these apps.
 
 
 ## See Also
 
+[Introducing the next feature update to Windows 10, version 21H1](https://blogs.windows.com/windowsexperience/2021/02/17/introducing-the-next-feature-update-to-windows-10-version-21h1/)
 [What’s new for IT pros in Windows 10, version 20H2](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-20h2/ba-p/1800132)<br>
 [Get started with the October 2020 update to Windows 10](https://www.linkedin.com/learning/windows-10-october-2020-update-new-features-2/get-started-with-the-october-2020-update-to-windows-10)<br>
 [Learn Windows 10 with the October 2020 Update](https://www.linkedin.com/learning/windows-10-october-2020-update-essential-training/learn-windows-10-with-the-october-2020-update)<br>
