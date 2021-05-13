@@ -20,7 +20,7 @@ ms.topic: article
 
 This article lists new and updated features and content that is of interest to IT Pros for Windows 10, version 21H1, also known as the **Windows 10 May 2021 Update**. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 20H2.
 
-Windows 10, version 21H1 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As an [H1-targeted release](https://docs.microsoft.com/lifecycle/faq/windows#what-is-the-servicing-timeline-for-a-version--feature-update--of-windows-10-), 21H1 is serviced for 18 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
+Windows 10, version 21H1 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As an [H1-targeted release](/lifecycle/faq/windows#what-is-the-servicing-timeline-for-a-version--feature-update--of-windows-10-), 21H1 is serviced for 18 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
 
 To download and install Windows 10, version 21H1, use Windows Update (**Settings > Update & Security > Windows Update**). 
 
@@ -29,6 +29,8 @@ To download and install Windows 10, version 21H1, use Windows Update (**Settings
 ### Windows Update
 
 Starting with Windows 10, version 20H2, LCUs and SSUs have been combined into a single cumulative monthly update, available via Microsoft Catalog or Windows Server Update Services. For more information, see [Simplifying on-premises deployment of servicing stack updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-on-premises-deployment-of-servicing-stack-updates/ba-p/1646039).
+
+Also see [What's next for Windows 10 updates](https://blogs.windows.com/windowsexperience/2020/06/16/whats-next-for-windows-10-updates/).
 
 ## Deployment
 
@@ -60,7 +62,7 @@ WDAG performance is improved with optimized document opening times:
 
 ### Windows Hello
 
-Windows Hello multi-camera support to allow users to choose an external camera priority when both external and internal Windows Hello cameras are present.
+Windows Hello multi-camera support is added, allowing users to choose an external camera priority when both external and internal Windows Hello-capable cameras are present.
 
 ## Microsoft Edge
 
