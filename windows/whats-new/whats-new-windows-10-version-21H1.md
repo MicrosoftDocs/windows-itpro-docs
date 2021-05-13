@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 21H1
 
-This article lists new and updated features and content that is of interest to IT Pros for Windows 10, version 21H1, also known as the Windows 10 Map 2021 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 20H2.
+This article lists new and updated features and content that is of interest to IT Pros for Windows 10, version 21H1, also known as the **Windows 10 May 2021 Update**. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 20H2.
 
 Windows 10, version 21H1 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As an [H1-targeted release](https://docs.microsoft.com/lifecycle/faq/windows#what-is-the-servicing-timeline-for-a-version--feature-update--of-windows-10-), 21H1 is serviced for 18 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
 
@@ -109,23 +109,22 @@ Fixed:
 - an issue that might cause stop error 7E in sys on servers running the Network File System (NFS) service.
 - an issue that prevents the User Profile Service from detecting a slow or a fast link reliably.
 - an issue that causes contention for a metadata lock when using Work Folders.
-- We added a new dfslogkey as described below:
-Keypath: HKEY_LOCAL_MACHINE/SOFTWARE/MICROSOFT/dfslog.
-The RootShareAcquireSuccessEvent field has the following possible values:
-Default value = 1; enables the log.
-Value other than 1; disables the log.
-If this key does not exist, it will be created automatically. To take effect, any change to dfslog/RootShareAcquireSuccessEvent in the registry requires that you restart the DFSN service.
--We updated the Open Mobile Alliance (OMA) Device Management (DM) sync protocol by adding a check-in reason for requests from the client to the server. The check-in reason will allow the mobile device management (MDM) service to make better decisions about sync sessions. With this change, the OMA-DM service must negotiate a protocol version of 4.0 with the Windows OMA-DM client.
+- We added a new dfslogkey:<br>
+  Keypath: **HKEY_LOCAL_MACHINE/SOFTWARE/MICROSOFT/dfslog**<br>
+  The **RootShareAcquireSuccessEvent** field has the following possible values:
+  * Default value = 1; enables the log.
+  * Value other than 1; disables the log.
+
+  If this key does not exist, it will be created automatically. 
+  To take effect, any change to **dfslog/RootShareAcquireSuccessEvent** in the registry requires that you restart the DFSN service.
+- We updated the Open Mobile Alliance (OMA) Device Management (DM) sync protocol by adding a check-in reason for requests from the client to the server. The check-in reason will allow the mobile device management (MDM) service to make better decisions about sync sessions. With this change, the OMA-DM service must negotiate a protocol version of 4.0 with the Windows OMA-DM client.
 - We turned off token binding by default in Windows Internet (WinINet).
 -  an issue that might prevent the correct Furigana characters from appearing in apps that automatically allow the input of Furigana characters. You might need to enter the Furigana characters manually. This issue occurs when using the Microsoft Japanese Input Method Editor (IME) to enter Kanji characters in these apps.
 
 
 ## See Also
 
-[Introducing the next feature update to Windows 10, version 21H1](https://blogs.windows.com/windowsexperience/2021/02/17/introducing-the-next-feature-update-to-windows-10-version-21h1/)
-[What’s new for IT pros in Windows 10, version 20H2](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-20h2/ba-p/1800132)<br>
-[Get started with the October 2020 update to Windows 10](https://www.linkedin.com/learning/windows-10-october-2020-update-new-features-2/get-started-with-the-october-2020-update-to-windows-10)<br>
-[Learn Windows 10 with the October 2020 Update](https://www.linkedin.com/learning/windows-10-october-2020-update-essential-training/learn-windows-10-with-the-october-2020-update)<br>
+[Introducing the next feature update to Windows 10, version 21H1](https://blogs.windows.com/windowsexperience/2021/02/17/introducing-the-next-feature-update-to-windows-10-version-21h1/): Windows Experience Blog.<br>
 [What's New in Windows Server](/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
 [What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.<br>
