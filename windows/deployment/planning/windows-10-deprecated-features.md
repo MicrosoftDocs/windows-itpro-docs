@@ -26,7 +26,7 @@ The features described below are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
-| Pewrsonalization roaming | Roaming of Personalization settings (including wallpaper, slideshow, accent colors, and lock screen images) is no longer being developed and might be removed in a future release. | 21H1 |
+| Personalization roaming | Roaming of Personalization settings (including wallpaper, slideshow, accent colors, and lock screen images) is no longer being developed and might be removed in a future release. | 21H1 |
 | Windows Management Instrumentation Command line (WMIC) tool. | The WMIC tool is deprecated in Windows 10, version 21H1 and the 21H1 semi-annual channel release of Windows Server. This tool is superseded by [Windows PowerShell for WMI](https://docs.microsoft.com/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-7.1). Note: This deprecation only applies to the [command-line management tool](https://docs.microsoft.com/windows/win32/wmisdk/wmic). WMI itself is not affected. | 21H1 |
 | Timeline | Starting in July 2021, if you have your activity history synced across your devices through your Microsoft account (MSA), you'll no longer have the option to upload new activity in Timeline. See [Get help with timeline](https://support.microsoft.com/windows/get-help-with-timeline-febc28db-034c-d2b0-3bbe-79aa0c501039).| 20H2 |
 | Microsoft Edge | The legacy version of Microsoft Edge is no longer being developed.| 2004 |
