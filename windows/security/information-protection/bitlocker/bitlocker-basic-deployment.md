@@ -28,7 +28,7 @@ This article for the IT professional explains how BitLocker features can be used
 
 ## Using BitLocker to encrypt volumes
 
-BitLocker provides full volume encryption (FVE) for operating system volumes, as well as fixed and removable data volumes. To support fully encrypted operating system volumes, BitLocker uses an unencrypted system volume for the files required to boot, decrypt, and load the operating system. This volume is automatically created during a new installation of both client and server operating systems.
+BitLocker provides full volume encryption (FVE) for operating system volumes, as well as fixed and removable data drives. To support fully encrypted operating system drives, BitLocker uses an unencrypted system partition for the files required to boot, decrypt, and load the operating system. This volume is automatically created during a new installation of both client and server operating systems.
 
 In the event that the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. BdeHdCfg.exe can create these volumes.
 
@@ -110,9 +110,8 @@ The following table shows the compatibility matrix for systems that have been Bi
 
 Table 1: Cross compatibility for Windows 10, Windows 8.1, Windows 8, and Windows 7 encrypted volumes
 
-|||||
-|--- |--- |--- |--- |
 |Encryption Type|Windows 10 and Windows 8.1|Windows 8|Windows 7|
+|--- |--- |--- |--- |
 |Fully encrypted on Windows 8|Presents as fully encrypted|N/A|Presented as fully encrypted|
 |Used Disk Space Only encrypted on Windows 8|Presents as encrypt on write|N/A|Presented as fully encrypted|
 |Fully encrypted volume from Windows 7|Presents as fully encrypted|Presented as fully encrypted|N/A|
