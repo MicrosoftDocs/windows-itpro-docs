@@ -22,13 +22,14 @@ This article lists new and updated features and content that is of interest to I
 
 Windows 10, version 21H1 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As an [H1-targeted release](/lifecycle/faq/windows#what-is-the-servicing-timeline-for-a-version--feature-update--of-windows-10-), 21H1 is serviced for 18 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
 
-To download and install Windows 10, version 21H1, use Windows Update (**Settings > Update & Security > Windows Update**). New features and fixes in Windows 10, version 21H1 are included in the latest monthly quality update for Windows 10. For more information, see [Feature Update through Windows 10, version 21H1 Enablement Package](https://support.microsoft.com/help/5000736).
+
+For details on how to update your device, or the devices in your organization, see [How to get the Windows 10 May 2021 Update](https://blogs.windows.com/windowsexperience/?p=175674). Devices running Windows 10, versions 2004 and 20H2 have the ability to update quickly to version 21H1 via an enablement package. For more details, see [Feature Update through Windows 10, version 21H1 Enablement Package](https://support.microsoft.com/help/5000736).
 
 ## Servicing
 
 ### Windows Update
 
-Starting with Windows 10, version 20H2, LCUs and SSUs have been combined into a single cumulative monthly update, available via Microsoft Catalog or Windows Server Update Services. For more information, see [Simplifying on-premises deployment of servicing stack updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-on-premises-deployment-of-servicing-stack-updates/ba-p/1646039).
+Starting with Windows 10, version 20H2 and including this release, Latest Cumulative Updates (LCUs) and Servicing Stack Updates (SSUs) have been combined into a single cumulative monthly update, available via Microsoft Catalog or Windows Server Update Services. For more information, see [Simplifying on-premises deployment of servicing stack updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-on-premises-deployment-of-servicing-stack-updates/ba-p/1646039).
 
 Also see [What's next for Windows 10 updates](https://blogs.windows.com/windowsexperience/2020/06/16/whats-next-for-windows-10-updates/).
 
@@ -128,6 +129,7 @@ This release includes the following enhancements and issues fixed:
 
 ## See Also
 
+[IT tools to support Windows 10, version 21H1](https://aka.ms/tools-for-21H1)<br>
 [Introducing the next feature update to Windows 10, version 21H1](https://blogs.windows.com/windowsexperience/2021/02/17/introducing-the-next-feature-update-to-windows-10-version-21h1/): Windows Experience Blog.<br>
 [What's New in Windows Server](/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
