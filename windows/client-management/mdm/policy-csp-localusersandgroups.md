@@ -104,7 +104,7 @@ where:
 - `<remove member>`: Specifies the SID or name of the member to remove from the specified group.
 
     > [!NOTE]
-    > When specifying member names of the user accounts, you must use following format – AzureAD/userUPN. For example, "AzureAD/user1@contoso.com" or "AzureAD/user2@contoso.co.uk". 
+    > When specifying member names of the user accounts, you must use following format – AzureAD\userUPN. For example, "AzureAD\user1@contoso.com" or "AzureAD\user2@contoso.co.uk". 
 For adding Azure AD groups, you need to specify the Azure AD Group SID. Azure AD group names are not supported with this policy.
 for more information, see [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).  
 
