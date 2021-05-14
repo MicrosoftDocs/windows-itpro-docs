@@ -1,0 +1,67 @@
+### YamlMime:Landing
+
+title: Client management # < 60 chars
+summary: Find out how to apply custom configurations to Windows client devices. Windows provides a number of features and methods to help you configure or lock down specific parts of the Windows interface.  # < 160 chars
+
+metadata:
+  title: Configure Windows 10 # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about the administrative tools, tasks and best practices for managing Windows clients across your enterprise. # Required; article description that is displayed in search results. < 160 chars.
+  services: windows-10
+  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: windows-10
+  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
+  ms.author: greglin #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/30/2021 #Required; mm/dd/yyyy format.
+  localization_priority: medium
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Device management
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Administrative Tools in Windows 10
+            url: administrative-tools-in-windows-10.md
+          - text: Create mandatory user profiles
+            url: mandatory-user-profile.md
+          - text: Mobile device management (MDM)
+            url: mdm/index.md
+          - text: MDM for device updates
+            url: mdm/device-update-management.md
+          - text: Mobile device enrollment
+            url: mdm/mobile-device-enrollment.md
+
+  # Card (optional)
+  - title: CSP reference documentation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Configuration service provider reference
+            url: mdm/configuration-service-provider-reference.md
+          - text: DynamicManagement CSP
+            url: mdm/dynamicmanagement-csp.md
+          - text: BitLocker CSP
+            url: mdm/bitlocker-csp.md
+          - text: Policy CSP - Update
+            url: mdm/policy-csp-update.md
+
+
+  # Card (optional)
+  - title: Troubleshoot Windows clients
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot Windows 10 clients
+            url: windows-10-support-solutions.md
+          - text: Advanced troubleshooting for Windows networking
+            url: troubleshoot-networking.md
+          - text: Advanced troubleshooting for Windows start-up
+            url: troubleshoot-networking.md
+          - text: Advanced troubleshooting for Windows networking
+            url: troubleshoot-windows-startup.md

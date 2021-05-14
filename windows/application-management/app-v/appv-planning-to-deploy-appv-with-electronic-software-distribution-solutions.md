@@ -1,7 +1,7 @@
 ---
 title: Planning to Deploy App-V with an Electronic Software Distribution System (Windows 10)
 description: Planning to Deploy App-V with an Electronic Software Distribution System
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,14 +9,14 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # Planning to Deploy App-V with an electronic software distribution system
 
 >Applies to: Windows 10, version 1607
 
-If you are using an electronic software distribution (ESD) system to deploy App-V packages, review the following planning considerations. For information about deploying App-V with Microsoft Endpoint Configuration Manager, see [Introduction to application management in Configuration Manager](https://technet.microsoft.com/library/gg682125.aspx#BKMK_Appv).
+If you are using an electronic software distribution (ESD) system to deploy App-V packages, review the following planning considerations. For information about deploying App-V with Microsoft Endpoint Configuration Manager, see [Introduction to application management in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682125(v=technet.10)#BKMK_Appv).
 
 Review the following component and architecture requirements options that apply when you use an ESD to deploy App-V packages:
 

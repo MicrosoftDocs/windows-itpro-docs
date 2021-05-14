@@ -16,8 +16,8 @@ ms.date: 07/18/2019
 
 > [!div class="op_single_selector"]
 > 
-> - [Policies in Policy CSP supported by Group Policy](policy-csps-supported-by-group-policy.md)
-> - [ADMX-backed policies in Policy CSP](policy-csps-admx-backed.md)
+> - [Policies in Policy CSP supported by Group Policy]()
+> - [ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
 >
 
 - [AboveLock/AllowCortanaAboveLock](./policy-csp-abovelock.md#abovelock-allowcortanaabovelock)
@@ -137,7 +137,7 @@ ms.date: 07/18/2019
 - [Cellular/ShowAppCellularAccessUI](./policy-csp-cellular.md#cellular-showappcellularaccessui)
 - [Connectivity/AllowCellularDataRoaming](./policy-csp-connectivity.md#connectivity-allowcellulardataroaming)
 - [Connectivity/AllowPhonePCLinking](./policy-csp-connectivity.md#connectivity-allowphonepclinking)
-- [Connectivity/DiablePrintingOverHTTP](./policy-csp-connectivity.md#connectivity-diableprintingoverhttp)
+- [Connectivity/DiablePrintingOverHTTP](./policy-csp-connectivity.md#connectivity-disableprintingoverhttp)
 - [Connectivity/DisableDownloadingOfPrintDriversOverHTTP](./policy-csp-connectivity.md#connectivity-disabledownloadingofprintdriversoverhttp)
 - [Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards](./policy-csp-connectivity.md#connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards)
 - [Connectivity/DisallowNetworkConnectivityActiveTests](./policy-csp-connectivity.md#connectivity-disallownetworkconnectivityactivetests)

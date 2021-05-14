@@ -29,7 +29,7 @@ In Windows 10, Windows Hello for Business replaces passwords with strong two-fa
 Windows Hello addresses the following problems with passwords:
 -   Strong passwords can be difficult to remember, and users often reuse passwords on multiple sites.
 -   Server breaches can expose symmetric network credentials (passwords).
--   Passwords are subject to [replay attacks](https://go.microsoft.com/fwlink/p/?LinkId=615673).
+-   Passwords are subject to [replay attacks](/previous-versions/dotnet/netframework-4.0/aa738652(v=vs.100)).
 -   Users can inadvertently expose their passwords due to [phishing attacks](https://go.microsoft.com/fwlink/p/?LinkId=615674).
 
 Windows Hello lets users authenticate to:
@@ -94,7 +94,7 @@ For details, see [How Windows Hello for Business works](hello-how-it-works.md).
 
 Windows Hello for Business can use either keys (hardware or software) or certificates in hardware or software. Enterprises that have a public key infrastructure (PKI) for issuing and managing end user certificates can continue to use PKI in combination with Windows Hello. Enterprises that do not use PKI or want to reduce the effort associated with managing user certificates can rely on key-based credentials for Windows Hello but still use certificates on their domain controllers as a root of trust.
 
-Windows Hello for Business with a key does not support supplied credentials for RDP. RDP does not support authentication with a key or a self signed certificate. RDP with Windows Hello for Business is supported with certificate based deployments as a supplied credential. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/remote-credential-guard).
+Windows Hello for Business with a key does not support supplied credentials for RDP. RDP does not support authentication with a key or a self signed certificate. RDP with Windows Hello for Business is supported with certificate based deployments as a supplied credential. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
 
 ## Learn more
 
@@ -102,9 +102,9 @@ Windows Hello for Business with a key does not support supplied credentials for 
 
 [Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/en-us/itshowcase/implementing-windows-hello-for-business-at-microsoft)
 
-[Introduction to Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
+[Introduction to Windows Hello](/learn/?l=eH7yoY2BC_9106218949), video presentation on Microsoft Virtual Academy
 
-[Windows Hello face authentication](https://go.microsoft.com/fwlink/p/?LinkId=626024)
+[Windows Hello face authentication](/windows-hardware/design/device-experiences/windows-hello-face-authentication)
 
 [Windows 10: Disrupting the Revolution of Cyber-Threats with Revolutionary Security!](https://go.microsoft.com/fwlink/p/?LinkId=533890)
 

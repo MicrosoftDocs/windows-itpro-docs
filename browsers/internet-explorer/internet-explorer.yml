@@ -21,13 +21,13 @@ landingContent:
       - linkListType: get-started
         links:
           - text: IE11 features and tools
-            url: /internet-explorer/ie11-deploy-guide/updated-features-and-tools-with-ie11
+            url: ./ie11-deploy-guide/updated-features-and-tools-with-ie11.md
           - text: System requirements and language support
-            url: /internet-explorer/ie11-deploy-guide/system-requirements-and-language-support-for-ie11
+            url: ./ie11-deploy-guide/system-requirements-and-language-support-for-ie11.md
           - text: Frequently asked questions
-            url: /internet-explorer/ie11-faq/faq-for-it-pros-ie11
+            url: ./ie11-faq/faq-for-it-pros-ie11.yml
           - text: Internet Explorer 11 deployment guide
-            url: /internet-explorer/ie11-deploy-guide/
+            url: ./ie11-deploy-guide/index.md
           - text: Use Enterprise Mode to improve compatibility
             url: /microsoft-edge/deploy/emie-to-improve-compatibility
           - text: Lifecycle FAQ - Internet Explorer
@@ -57,13 +57,13 @@ landingContent:
       - linkListType: get-started
         links:
           - text: What is Enterprise Mode?
-            url: /internet-explorer/ie11-deploy-guide/what-is-enterprise-mode
+            url: ./ie11-deploy-guide/what-is-enterprise-mode.md
           - text: Tips and tricks to manage Internet Explorer compatibility
-            url: /internet-explorer/ie11-deploy-guide/tips-and-tricks-to-manage-ie-compatibility
+            url: ./ie11-deploy-guide/tips-and-tricks-to-manage-ie-compatibility.md
           - text: Download the Enterprise Site Discovery Toolkit
             url: https://www.microsoft.com/download/details.aspx?id=44570
           - text: Collect data using Enterprise Site Discovery
-            url: /internet-explorer/ie11-deploy-guide/collect-data-using-enterprise-site-discovery
+            url: ./ie11-deploy-guide/collect-data-using-enterprise-site-discovery.md
           - text: Manage Windows upgrades with Upgrade Readiness
             url: /windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness
           - text: 'Demo: Plan and manage Windows 10 upgrades and feature updates with'
@@ -71,13 +71,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Turn on Enterprise Mode and use a site list
-            url: /internet-explorer/ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list
+            url: ./ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list.md
           - text: Add sites to the Enterprise Mode site list
-            url: /internet-explorer/ie11-deploy-guide/add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool
+            url: ./ie11-deploy-guide/add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md
           - text: Edit the Enterprise Mode site list
-            url: /internet-explorer/ie11-deploy-guide/edit-the-enterprise-mode-site-list-using-the-enterprise-mode-site-list-manager
+            url: ./ie11-deploy-guide/edit-the-enterprise-mode-site-list-using-the-enterprise-mode-site-list-manager.md
           - text: Turn on local control and logging for Enterprise Mode
-            url: /internet-explorer/ie11-deploy-guide/turn-on-local-control-and-logging-for-enterprise-mode
+            url: ./ie11-deploy-guide/turn-on-local-control-and-logging-for-enterprise-mode.md
 
   # Card
   - title: Deploy
@@ -85,29 +85,29 @@ landingContent:
       - linkListType: get-started
         links:
           - text: IEAK 11 user's guide
-            url: /internet-explorer/ie11-ieak/
+            url: ./ie11-ieak/index.md
           - text: Download IEAK 11
-            url: /internet-explorer/ie11-ieak/ieak-information-and-downloads
+            url: ./ie11-ieak/ieak-information-and-downloads.md
           - text: Frequently asked questions about IEAK 11
-            url: /internet-explorer/ie11-faq/faq-ieak11
+            url: ./ie11-faq/faq-ieak11.yml
           - text: Customization and distribution guidelines
-            url: /internet-explorer/ie11-ieak/licensing-version-and-features-ieak11#customization-guidelines           
+            url: ./ie11-ieak/licensing-version-and-features-ieak11.md#customization-guidelines           
       - linkListType: deploy
         links:
           - text: Install Internet Explorer 11 through automatic updates (recommended)
-            url: /internet-explorer/ie11-deploy-guide/ie11-delivery-through-automatic-updates
+            url: ./ie11-deploy-guide/ie11-delivery-through-automatic-updates.md
           - text: Install Internet Explorer 11 as part of an operating system deployment
-            url: /internet-explorer/ie11-deploy-guide/install-ie11-using-operating-system-deployment-systems
+            url: ./ie11-deploy-guide/install-ie11-using-operating-system-deployment-systems.md
           - text: Install Internet Explorer 11 over the network
-            url: /internet-explorer/ie11-deploy-guide/install-ie11-using-the-network
+            url: ./ie11-deploy-guide/install-ie11-using-the-network.md
           - text: Install Internet Explorer 11 with System Center 2012 R2 Configuration Manager
-            url: /internet-explorer/ie11-deploy-guide/install-ie11-using-system-center-configuration-manager
+            url: ./ie11-deploy-guide/install-ie11-using-system-center-configuration-manager.md
           - text: Install Internet Explorer 11 with Windows Server Update Services (WSUS)
-            url: /internet-explorer/ie11-deploy-guide/install-ie11-using-windows-server-update-services-wsus
+            url: ./ie11-deploy-guide/install-ie11-using-windows-server-update-services-wsus.md
           - text: Install Internet Explorer 11 with Microsoft Intune
-            url: /internet-explorer/ie11-deploy-guide/install-ie11-using-microsoft-intune
+            url: ./ie11-deploy-guide/install-ie11-using-microsoft-intune.md
           - text: Install Internet Explorer 11 with third-party tools
-            url: /internet-explorer/ie11-deploy-guide/install-ie11-using-third-party-tools
+            url: ./ie11-deploy-guide/install-ie11-using-third-party-tools.md
  
   # Card
   - title: Manage
@@ -117,17 +117,17 @@ landingContent:
           - text: Group Policy for beginners
             url: /previous-versions/windows/it-pro/windows-7/hh147307(v=ws.10)
           - text: New Group Policy settings for IE11
-            url: /internet-explorer/ie11-deploy-guide/new-group-policy-settings-for-ie11
+            url: ./ie11-deploy-guide/new-group-policy-settings-for-ie11.md
           - text: Administrative templates for IE11
             url: https://www.microsoft.com/download/details.aspx?id=40905
           - text: Group Policy preferences for IE11
-            url: /internet-explorer/ie11-deploy-guide/group-policy-preferences-and-ie11          
+            url: ./ie11-deploy-guide/group-policy-preferences-and-ie11.md
           - text: Configure Group Policy preferences
             url: https://support.microsoft.com/help/2898604/how-to-configure-group-policy-preference-settings-for-internet-explorer-11-in-windows-8.1-or-windows-server-2012-r2
           - text: Blocked out-of-date ActiveX controls
-            url: /internet-explorer/ie11-deploy-guide/blocked-out-of-date-activex-controls
+            url: ./ie11-deploy-guide/blocked-out-of-date-activex-controls.md
           - text: Out-of-date ActiveX control blocking
-            url: /internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking
+            url: ./ie11-deploy-guide/out-of-date-activex-control-blocking.md
           - text: Update to block out-of-date ActiveX controls in Internet Explorer
             url: https://support.microsoft.com/help/2991000/update-to-block-out-of-date-activex-controls-in-internet-explorer
           - text: Script to join user to AD with automatic Local user Profile Migration
@@ -143,11 +143,11 @@ landingContent:
           - text: Change or reset Internet Explorer settings
             url: https://support.microsoft.com/help/17441/windows-internet-explorer-change-reset-settings
           - text: Troubleshoot problems with setup, installation, auto configuration, and more
-            url: /internet-explorer/ie11-deploy-guide/troubleshoot-ie11
+            url: ./ie11-deploy-guide/troubleshoot-ie11.md
           - text: Disable VBScript execution in Internet Explorer for Internet Zone and Restricted Sites Zone
             url: https://support.microsoft.com/help/4012494/option-to-disable-vbscript-execution-in-internet-explorer-for-internet
           - text: Frequently asked questions about IEAK 11
-            url: /internet-explorer/ie11-faq/faq-ieak11
+            url: ./ie11-faq/faq-ieak11.yml
           - text: Internet Explorer 8, 9, 10, 11 forum
             url: https://social.technet.microsoft.com/forums/ie/home?forum=ieitprocurrentver
           - text: Contact a Microsoft support professional

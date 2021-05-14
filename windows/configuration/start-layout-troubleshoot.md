@@ -4,8 +4,8 @@ description: Learn how to troubleshoot common Start menu errors in Windows 10. F
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.author: dansimp
-author: dansimp
+ms.author: greglin
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.reviewer: 
 manager: dansimp
@@ -18,7 +18,7 @@ Start failures can be organized into these categories:
 
 - **Deployment/Install issues** - Easiest to identify but difficult to recover. This failure is consistent and usually permanent. Reset, restore from backup, or rollback to recover.
 - **Performance issues** - More common with older hardware, low-powered machines. Symptoms include: High CPU utilization, disk contention, memory resources. This makes Start very slow to respond. Behavior is intermittent depending on available resources.
-- **Crashes** - Also easy to identify. Crashes in Shell Experience Host or related can be found in System or Application event logs. This can be a code defect or related to missing or altered permissions to files or registry keys by a program or incorrect security tightening configurations. Determining permissions issues can be time consuming but a [SysInternals tool called Procmon](https://docs.microsoft.com/sysinternals/downloads/procmon) will show **Access Denied**. The other option is to get a dump of the process when it crashes and depending on comfort level, review the dump in the debugger, or have support review the data.
+- **Crashes** - Also easy to identify. Crashes in Shell Experience Host or related can be found in System or Application event logs. This can be a code defect or related to missing or altered permissions to files or registry keys by a program or incorrect security tightening configurations. Determining permissions issues can be time consuming but a [SysInternals tool called Procmon](/sysinternals/downloads/procmon) will show **Access Denied**. The other option is to get a dump of the process when it crashes and depending on comfort level, review the dump in the debugger, or have support review the data.
 - **Hangs** - in Shell Experience host or related. These are the hardest issues to identify as there are few events logged, but behavior is typically intermittent or recovers with a reboot. If a background application or service hangs, Start will not have resources to respond in time. Clean boot may help identify if the issue is related to additional software. Procmon is also useful in this scenario.
 - **Other issues** - Customization, domain policies, deployment issues.
 
@@ -325,16 +325,3 @@ If you have already encountered this issue, use one of the following two options
 5. Select **Edit**, and then select **Add** to add the group.
 
 6. Test Start and other Apps.
-
-
-
-
-
-
-
-
-
-
-
-
-

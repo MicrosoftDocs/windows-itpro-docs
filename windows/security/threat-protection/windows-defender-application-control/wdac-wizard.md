@@ -26,7 +26,7 @@ ms.technology: mde
 -   Windows 10
 -   Windows Server 2016 and above
 
-The Windows Defender Application Control (WDAC) policy Wizard is an open source Windows desktop application written in C# and bundled as an MSIX package. The Wizard was built to provide security architects, security and system administrators with a more user-friendly means to create, edit, and merge WDAC policies. The Wizard desktop application uses the [ConfigCI PowerShell Cmdlets](https://docs.microsoft.com/powershell/module/configci) in the backend so the output policy of the Wizard and PowerShell cmdlets is identical. 
+The Windows Defender Application Control (WDAC) policy Wizard is an open source Windows desktop application written in C# and bundled as an MSIX package. The Wizard was built to provide security architects, security and system administrators with a more user-friendly means to create, edit, and merge WDAC policies. The Wizard desktop application uses the [ConfigCI PowerShell Cmdlets](/powershell/module/configci) in the backend so the output policy of the Wizard and PowerShell cmdlets is identical. 
 
 ## Downloading the application
 

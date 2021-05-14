@@ -38,7 +38,7 @@ Debugging and tracing smart card issues requires a variety of tools and approach
 
 ## Certutil
 
-For a complete description of Certutil including examples that show how to use it, see [Certutil \[W2012\]](https://technet.microsoft.com/library/cc732443(v=ws.11).aspx).
+For a complete description of Certutil including examples that show how to use it, see [Certutil \[W2012\]](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)).
 
 ### List certificates available on the smart card
 
@@ -57,7 +57,7 @@ To delete a container, type **certutil -delkey -csp "Microsoft Base Smart Card C
 
 ## Debugging and tracing using WPP
 
-WPP simplifies tracing the operation of the trace provider. It provides a mechanism for the trace provider to log real-time binary messages. Logged messages can be converted to a human-readable trace of the operation. For more information, see [Diagnostics with WPP - The NDIS blog](https://blogs.msdn.com/b/ndis/archive/2011/04/06/diagnostics-with-wpp.aspx).
+WPP simplifies tracing the operation of the trace provider. It provides a mechanism for the trace provider to log real-time binary messages. Logged messages can be converted to a human-readable trace of the operation. For more information, see [Diagnostics with WPP - The NDIS blog](/archive/blogs/ndis/diagnostics-with-wpp).
 
 ### Enable the trace
 
@@ -115,11 +115,11 @@ To stop a trace:
 
 You can use these resources to troubleshoot these protocols and the KDC:
 
--   [Kerberos and LDAP Troubleshooting Tips](https://technet.microsoft.com/library/bb463167.aspx).
+-   [Kerberos and LDAP Troubleshooting Tips](/previous-versions/tn-archive/bb463167(v=technet.10)).
 
 -   [Windows Driver Kit (WDK) and Debugging Tools for Windows (WinDbg)](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit).  You can use the trace log tool in this SDK to debug Kerberos authentication failures.
 
-To begin tracing, you can use `Tracelog`. Different components use different control GUIDs as explained in these examples. For more information, see [`Tracelog`](https://msdn.microsoft.com/library/windows/hardware/ff552994.aspx).
+To begin tracing, you can use `Tracelog`. Different components use different control GUIDs as explained in these examples. For more information, see [`Tracelog`](/windows-hardware/drivers/devtest/tracelog).
 
 ### NTLM
 
@@ -176,7 +176,7 @@ If you used the registry key settings shown in the previous table, look for the 
 
 -   KDC: %systemroot%\\tracing\\kdcsvc 
 
-To decode event trace files, you can use `Tracefmt` (tracefmt.exe). `Tracefmt` is a command-line tool that formats and displays trace messages from an event trace log file (.etl) or a real-time trace session. `Tracefmt` can display the messages in the Command Prompt window or save them in a text file. It is located in the \\tools\\tracing subdirectory of the Windows Driver Kit (WDK). For more information, see [`Tracefmt`](https://msdn.microsoft.com/library/ff552974.aspx).
+To decode event trace files, you can use `Tracefmt` (tracefmt.exe). `Tracefmt` is a command-line tool that formats and displays trace messages from an event trace log file (.etl) or a real-time trace session. `Tracefmt` can display the messages in the Command Prompt window or save them in a text file. It is located in the \\tools\\tracing subdirectory of the Windows Driver Kit (WDK). For more information, see [`Tracefmt`](/windows-hardware/drivers/devtest/tracefmt).
 
 ## Smart Card service
 
@@ -243,7 +243,7 @@ CryptoAPI 2.0 Diagnostics is available in Windows versions that support CryptoAP
 
 CryptoAPI 2.0 Diagnostics logs events in the Windows event log. The logs contain detailed information about certificate chain validation, certificate store operations, and signature verification. This information makes it easier to identify the causes of issues and reduces the time required for diagnosis.
 
-For more information about CryptoAPI 2.0 Diagnostics, see [Troubleshooting an Enterprise PKI](https://technet.microsoft.com/library/cc771463.aspx).
+For more information about CryptoAPI 2.0 Diagnostics, see [Troubleshooting an Enterprise PKI](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771463(v=ws.11)).
 
 ## See also
 

@@ -27,7 +27,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time a [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510(v=vs.85).aspx) filter has been changed.
+This event generates every time a [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) filter has been changed.
 
 It typically generates during Group Policy update procedures.
 
@@ -89,4 +89,3 @@ It typically generates during Group Policy update procedures.
 For 5447(S): A Windows Filtering Platform filter has been changed.
 
 -   This event mainly used for Windows Filtering Platform troubleshooting and typically has little to no security relevance.
-

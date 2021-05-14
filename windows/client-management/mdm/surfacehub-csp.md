@@ -16,11 +16,62 @@ ms.date: 07/28/2017
 
 The SurfaceHub configuration service provider (CSP) is used to configure Microsoft Surface Hub settings. This CSP was added in Windows 10, version 1511.
 
-The following diagram shows the SurfaceHub CSP management objects in tree format.
-
-![surface hub diagram](images/provisioning-csp-surfacehub.png)
-
-<a href="" id="--vendor-msft-surfacehub"></a>**./Vendor/MSFT/SurfaceHub**
+The following shows the SurfaceHub CSP management objects in tree format.
+```
+./Vendor/MSFT
+SurfaceHub
+----DeviceAccount
+--------DomainName
+--------UserName
+--------UserPrincipalName
+--------Password
+--------ValidateAndCommit
+--------ExchangeServer
+--------SipAddress
+--------Email
+--------CalendarSyncEnabled
+--------ErrorContext
+--------PasswordRotationPeriod
+----MaintenanceHoursSimple
+--------Hours
+------------StartTime
+------------Duration
+----InBoxApps
+--------SkypeForBusiness
+------------DomainName
+--------Welcome
+------------AutoWakeScreen
+------------CurrentBackgroundPath
+------------MeetingInfoOption
+--------Whiteboard
+------------SharingDisabled
+------------SigninDisabled
+------------TelemeteryDisabled
+--------WirelessProjection
+------------PINRequired
+------------Enabled
+------------Channel
+--------Connect
+------------AutoLaunch
+----Properties
+--------FriendlyName
+--------DefaultVolume
+--------ScreenTimeout
+--------SessionTimeout
+--------SleepTimeout
+--------AllowSessionResume
+--------AllowAutoProxyAuth
+--------DisableSigninSuggestions
+--------DoNotShowMyMeetingsAndFiles
+----ProxyServers
+----Management
+--------GroupName
+--------GroupSid
+----MOMAgent
+--------WorkspaceID
+--------WorkspaceKey
+```
+<a href="" id="--vendor-msft-surfacehub"></a>**./Vendor/MSFT/SurfaceHub**  
 <p style="margin-left: 20px">The root node for the Surface Hub configuration service provider.
 
 <a href="" id="deviceaccount"></a>**DeviceAccount**
@@ -257,6 +308,24 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 - 1 - Organizer, time, and subject. Subject is hidden in private meetings.
 
 <p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
+
+<a href="" id="inboxapps-whiteboard"></a>**InBoxApps/Whiteboard**
+<p style="margin-left: 20px">Node for the Whiteboard app settings.
+
+<a href="" id="inboxapps-whiteboard-sharingdisabled"></a>**InBoxApps/Whiteboard/SharingDisabled**
+<p style="margin-left: 20px">Invitations to collaborate from the Whiteboard app are not allowed.
+
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
+    
+<a href="" id="inboxapps-whiteboard-signindisabled"></a>**InBoxApps/Whiteboard/SigninDisabled**
+<p style="margin-left: 20px">Sign-ins from the Whiteboard app are not allowed.
+
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
+    
+<a href="" id="inboxapps-whiteboard-telemetrydisabled"></a>**InBoxApps/Whiteboard/TelemeteryDisabled**
+<p style="margin-left: 20px">Telemetry collection from the Whiteboard app is not allowed.
+
+<p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-wirelessprojection"></a>**InBoxApps/WirelessProjection**
 <p style="margin-left: 20px">Node for the wireless projector app settings.

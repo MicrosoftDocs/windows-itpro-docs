@@ -35,11 +35,11 @@ sections:
 
       - question: Can I use Windows Hello for Business key trust and RDP?
         answer: |
-          Remote Desktop Protocol (RDP) does not currently support using key-based authentication and self-signed certificates as supplied credentials. RDP with supplied credentials is currently only supported with certificate-based deployments. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/remote-credential-guard).
+          Remote Desktop Protocol (RDP) does not currently support using key-based authentication and self-signed certificates as supplied credentials. RDP with supplied credentials is currently only supported with certificate-based deployments. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
           
       - question: Can I deploy Windows Hello for Business by using Microsoft Endpoint Configuration Manager?
         answer: |
-          Windows Hello for Business deployments using Configuration Manager should follow the hybrid deployment model that uses Active Directory Federation Services. Starting in Configuration Manager version 1910, certificate-based authentication with Windows Hello for Business settings isn't supported. Key-based authentication is still valid with Configuration Manager. For more information, see [Windows Hello for Business settings in Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-hello-for-business-settings).
+          Windows Hello for Business deployments using Configuration Manager should follow the hybrid deployment model that uses Active Directory Federation Services. Starting in Configuration Manager version 1910, certificate-based authentication with Windows Hello for Business settings isn't supported. Key-based authentication is still valid with Configuration Manager. For more information, see [Windows Hello for Business settings in Configuration Manager](/configmgr/protect/deploy-use/windows-hello-for-business-settings).
           
       - question: How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
         answer: |
@@ -59,7 +59,7 @@ sections:
 
           It is possible to Azure AD register a domain joined device. If the domain joined device has a convenience PIN, login with the convenience PIN will no longer work. This configuration is not supported by Windows Hello for Business. 
 
-          For more information please read [Azure AD registered devices](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register).
+          For more information please read [Azure AD registered devices](/azure/active-directory/devices/concept-azure-ad-register).
 
       - question: I have Windows Server 2016 domain controller(s), so why is the Key Admins group missing?
         answer: |
@@ -134,7 +134,7 @@ sections:
 
       - question: What attributes are synchronized by Azure AD Connect with Windows Hello for Business?
         answer: |
-          Review [Azure AD Connect sync: Attributes synchronized to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized) for a list of attributes that sync based on scenarios. The base scenarios that include Windows Hello for Business are the [Windows 10](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#windows-10) scenario and the [Device writeback](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#device-writeback) scenario. Your environment may include additional attributes.
+          Review [Azure AD Connect sync: Attributes synchronized to Azure Active Directory](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized) for a list of attributes that sync based on scenarios. The base scenarios that include Windows Hello for Business are the [Windows 10](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#windows-10) scenario and the [Device writeback](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#device-writeback) scenario. Your environment may include additional attributes.
           
       - question: Is Windows Hello for Business multi-factor authentication?
         answer: |
@@ -142,7 +142,7 @@ sections:
           
       - question: What are the biometric requirements for Windows Hello for Business?
         answer: |
-          Read [Windows Hello biometric requirements](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information.
+          Read [Windows Hello biometric requirements](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information.
           
       - question: Can I use both a PIN and biometrics to unlock my device?
         answer: |
@@ -204,7 +204,7 @@ sections:
 
       - question: Can I use third-party authentication providers with Windows Hello for Business?
         answer: |
-          Yes, if you're using federated hybrid deployment, you can use any third-party that provides an Active Directory Federation Services (AD FS) multi-factor authentication adapter. A list of third-party MFA adapters can be found [here](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods).
+          Yes, if you're using federated hybrid deployment, you can use any third-party that provides an Active Directory Federation Services (AD FS) multi-factor authentication adapter. A list of third-party MFA adapters can be found [here](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods).
           
       - question: Does Windows Hello for Business work with third-party federation servers?
         answer: |
@@ -212,10 +212,10 @@ sections:
           
           | Protocol | Description |
           | :---: | :--- |
-          | [[MS-KPP]: Key Provisioning Protocol](https://msdn.microsoft.com/library/mt739755.aspx) | Specifies the Key Provisioning Protocol, which defines a mechanism for a client to register a set of cryptographic keys on a user and device pair. |
-          | [[MS-OAPX]: OAuth 2.0 Protocol Extensions](https://msdn.microsoft.com/library/dn392779.aspx)| Specifies the OAuth 2.0 Protocol Extensions, which are used to extend the OAuth 2.0 Authorization Framework. These extensions enable authorization features such as resource specification, request identifiers, and login hints. |  
-          | [[MS-OAPXBC]: OAuth 2.0 Protocol Extensions for Broker Clients](https://msdn.microsoft.com/library/mt590278.aspx) | Specifies the OAuth 2.0 Protocol Extensions for Broker Clients, extensions to RFC6749 (the OAuth 2.0 Authorization Framework) that allow a broker client to obtain access tokens on behalf of calling clients. |
-          | [[MS-OIDCE]: OpenID Connect 1.0 Protocol Extensions](https://msdn.microsoft.com/library/mt766592.aspx) | Specifies the OpenID Connect 1.0 Protocol Extensions. These extensions define additional claims to carry information about the user, including the user principal name, a locally unique identifier, a time for password expiration, and a URL for password change. These extensions also define additional provider meta-data that enables the discovery of the issuer of access tokens and gives additional information about provider capabilities. |
+          | [[MS-KPP]: Key Provisioning Protocol](/openspecs/windows_protocols/ms-kpp/25ff7bd8-50e3-4769-af23-bcfd0b4d4567) | Specifies the Key Provisioning Protocol, which defines a mechanism for a client to register a set of cryptographic keys on a user and device pair. |
+          | [[MS-OAPX]: OAuth 2.0 Protocol Extensions](/openspecs/windows_protocols/ms-oapx/7612efd4-f4c8-43c3-aed6-f5c5ce359da2)| Specifies the OAuth 2.0 Protocol Extensions, which are used to extend the OAuth 2.0 Authorization Framework. These extensions enable authorization features such as resource specification, request identifiers, and login hints. |  
+          | [[MS-OAPXBC]: OAuth 2.0 Protocol Extensions for Broker Clients](/openspecs/windows_protocols/ms-oapxbc/2f7d8875-0383-4058-956d-2fb216b44706) | Specifies the OAuth 2.0 Protocol Extensions for Broker Clients, extensions to RFC6749 (the OAuth 2.0 Authorization Framework) that allow a broker client to obtain access tokens on behalf of calling clients. |
+          | [[MS-OIDCE]: OpenID Connect 1.0 Protocol Extensions](/openspecs/windows_protocols/ms-oidce/718379cf-8bc1-487e-962d-208aeb8e70ee) | Specifies the OpenID Connect 1.0 Protocol Extensions. These extensions define additional claims to carry information about the user, including the user principal name, a locally unique identifier, a time for password expiration, and a URL for password change. These extensions also define additional provider meta-data that enables the discovery of the issuer of access tokens and gives additional information about provider capabilities. |
           
       - question: Does Windows Hello for Business work with Mac and Linux clients?
         answer: |

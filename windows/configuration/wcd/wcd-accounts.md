@@ -4,9 +4,9 @@ description: This section describes the account settings that you can configure 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
@@ -45,7 +45,7 @@ Specifies the settings you can configure when joining a device to a domain, incl
 | --- | --- | --- |
 | Account | string  | Account to use to join computer to domain  |
 | AccountOU | Enter the full path for the organizational unit. For example: OU=testOU,DC=domain,DC=Domain,DC=com.  | Name of organizational unit for the computer account  |
-| ComputerName | Specify a unique name for the domain-joined computers using %RAND:x%, where x is an integer that includes fewer than 15 digits, or using %SERIAL% characters in the name.</br></br>ComputerName is a string with a maximum length of 15 bytes of content:</br></br>- ComputerName can use ASCII characters (1 byte each) and/or multi-byte characters such as Kanji, so long as you do not exceed 15 bytes of content.</br></br>- ComputerName cannot use spaces or any of the following characters: \{ &#124; \} ~ \[ \\ \] ^ ' : ; < = > ? @ ! " \# $ % ` \( \) + / . , \* &, or contain any spaces.</br></br>- ComputerName cannot use some non-standard characters, such as emoji.</br></br> Computer names that cannot be validated through the DnsValidateName function cannot be used, for example, computer names that only contain numbers (0-9). For more information, see the [DnsValidateName function](https://go.microsoft.com/fwlink/?LinkId=257040). | Specifies the name of the Windows device (computer name on PCs)  |
+| ComputerName | On desktop PCs, this setting specifies the DNS hostname of the computer (Computer Name) up to 63 characters. Use `%RAND:x%` to generate x number of random digits in the name, where x must be a number less than 63. For domain-joined computers, the unique name must use `%RAND:x%`. Use `%SERIAL%` to generate the name with the `computer's` serial number embedded. If the serial number exceeds the character limit, it will be truncated from the beginning of the sequence. The character restriction limit does not count the length of the macros, `%RAND:x%` and `%SERIAL%`. This setting is supported only in Windows 10, version 1803 and later. To change this setting in Windows 10, version 1709 and earlier releases, use the **ComputerName** setting under **Accounts**. | Specifies the name of the Windows device (computer name on PCs)  |
 | DomainName | string (cannot be empty) | Specify the name of the domain that the device will join  |
 | Password | string (cannot be empty) | Corresponds to the password of the user account that's authorized to join the computer account to the domain.  |
 

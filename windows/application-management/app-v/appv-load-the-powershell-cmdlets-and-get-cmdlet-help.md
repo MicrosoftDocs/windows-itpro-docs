@@ -1,7 +1,7 @@
 ---
 title: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help (Windows 10)
 description: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 09/27/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # How to load the Windows PowerShell cmdlets for App-V and get cmdlet help
@@ -82,7 +82,7 @@ Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 |App-V Sequencer|**Update-Help -Module AppvSequencer**|
 |App-V Client|**Update-Help -Module AppvClient**|
 
-* Online in the [Microsoft Desktop Optimization Pack](https://docs.microsoft.com/powershell/mdop/get-started?view=win-mdop2-ps).
+* Online in the [Microsoft Desktop Optimization Pack](/powershell/mdop/get-started?view=win-mdop2-ps).
 
 ## Displaying the help for a Windows PowerShell cmdlet
 
@@ -93,6 +93,3 @@ To display help for a specific Windows PowerShell cmdlet:
    ```PowerShell
    Get-Help Publish-AppvClientPackage
    ```
-
-
-

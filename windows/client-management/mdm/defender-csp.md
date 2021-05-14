@@ -20,10 +20,49 @@ ms.date: 08/11/2020
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
-The following image shows the Windows Defender configuration service provider in tree format.
-
-![defender csp diagram](images/provisioning-csp-defender.png)
-
+The following shows the Windows Defender configuration service provider in tree format.
+```
+./Vendor/MSFT
+Defender
+----Detections
+--------ThreatId
+------------Name
+------------URL
+------------Severity
+------------Category
+------------CurrentStatus
+------------ExecutionStatus
+------------InitialDetectionTime
+------------LastThreatStatusChangeTime
+------------NumberOfDetections
+----Health
+--------ProductStatus (Added in Windows 10 version 1809)
+--------ComputerState
+--------DefenderEnabled
+--------RtpEnabled
+--------NisEnabled
+--------QuickScanOverdue
+--------FullScanOverdue
+--------SignatureOutOfDate
+--------RebootRequired
+--------FullScanRequired
+--------EngineVersion
+--------SignatureVersion
+--------DefenderVersion
+--------QuickScanTime
+--------FullScanTime
+--------QuickScanSigVersion
+--------FullScanSigVersion
+--------TamperProtectionEnabled (Added in Windows 10, version 1903)
+--------IsVirtualMachine (Added in Windows 10, version 1903)
+----Configuration (Added in Windows 10, version 1903)
+--------TamperProetection (Added in Windows 10, version 1903)
+--------EnableFileHashcomputation (Added in Windows 10, version 1903)
+--------SupportLogLocation (Added in the next major release of Windows 10)
+----Scan
+----UpdateSignature
+----OfflineScan (Added in Windows 10 version 1803)
+```
 <a href="" id="detections"></a>**Detections**  
 An interior node to group all threats detected by Windows Defender.
 
@@ -270,7 +309,7 @@ Supported operation is Get.
 <a href="" id="health-quickscanoverdue"></a>**Health/QuickScanOverdue**  
 Indicates whether a Windows Defender quick scan is overdue for the device.
 
-A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and [catchup Quick scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan) are disabled (default).
+A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and [catchup Quick scans](./policy-csp-defender.md#defender-disablecatchupquickscan) are disabled (default).
 
 The data type is a Boolean.
 
@@ -279,7 +318,7 @@ Supported operation is Get.
 <a href="" id="health-fullscanoverdue"></a>**Health/FullScanOverdue**  
 Indicates whether a Windows Defender full scan is overdue for the device.
 
-A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and [catchup Full scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan) are disabled (default).
+A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and [catchup Full scans](./policy-csp-defender.md#defender-disablecatchupfullscan) are disabled (default).
 
 The data type is a Boolean.
 
@@ -418,8 +457,8 @@ The data type is integer.
 Supported operations are Add, Delete, Get, Replace.	
 
 Valid values are:	
--	1 – Enable.	
--	0 (default) – Disable.
+-	1 (default) – Enable.	
+-	0 – Disable.
 
 <a href="" id="configuration-meteredconnectionupdates"></a>**Configuration/MeteredConnectionUpdates**<br>
 Allow managed devices to update through metered connections. Data charges may apply.
@@ -479,8 +518,8 @@ When enabled or disabled exists on the client and admin moves the setting to not
 
 More details:  
 
-- [Microsoft Defender AV diagnostic data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)  
-- [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)  
+- [Microsoft Defender AV diagnostic data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)  
+- [Collect investigation package from devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)  
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.

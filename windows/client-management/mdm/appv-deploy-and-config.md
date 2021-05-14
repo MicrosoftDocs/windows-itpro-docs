@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 06/26/2017
 ms.reviewer: 
 manager: dansimp
@@ -21,7 +21,7 @@ manager: dansimp
 
 ### EnterpriseAppVManagement CSP node structure
 
-[EnterpriseAppVManagement CSP reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp)
+[EnterpriseAppVManagement CSP reference](./enterpriseappvmanagement-csp.md)
 
 ![enterpriseappvmanagement csp](images/provisioning-csp-enterpriseappvmanagement.png)
 
@@ -56,7 +56,7 @@ manager: dansimp
 
 <p>Dynamic policy examples:</p>
 
-[Dynamic configuration processing](https://technet.microsoft.com/itpro/windows/manage/appv-application-publishing-and-client-interaction#bkmk-dynamic-config">Dynamic configuration processing)
+[Dynamic configuration processing](/windows/application-management/app-v/appv-application-publishing-and-client-interaction#bkmk-dynamic-config">Dynamic configuration processing)
 
 <p><b>AppVPackageManagement</b> - Primarily read-only App-V package inventory data for MDM servers to query current packages.</p>
 
@@ -85,9 +85,9 @@ manager: dansimp
 
 <p>A complete list of App-V policies can be found here:</p>
 
-[ADMX-backed policy reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-admx-backed)
+[ADMX-backed policy reference](./policy-configuration-service-provider.md)
 
-[EnterpriseAppVManagement CSP reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp)
+[EnterpriseAppVManagement CSP reference](./enterpriseappvmanagement-csp.md)
 
 ### SyncML examples
 
@@ -135,7 +135,7 @@ manager: dansimp
 
 <p>Complete list of App-V policies can be found here:</p>
 
-[Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider)
+[Policy CSP](./policy-configuration-service-provider.md)
 
 #### SyncML with package published for a device (global to all users for that device)
 

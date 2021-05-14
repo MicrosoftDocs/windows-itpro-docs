@@ -87,6 +87,8 @@
           items:
             - name: Build deployment rings for Windows 10 updates
               href: update/waas-deployment-rings-windows-10-updates.md
+            - name: Check release health
+              href: update/check-release-health.md
             - name: Prepare updates using Windows Update for Business
               href: update/waas-manage-updates-wufb.md
             - name: Prepare updates using WSUS
@@ -162,6 +164,11 @@
               href: update/waas-manage-updates-wufb.md
             - name: Configure Windows Update for Business
               href: update/waas-configure-wufb.md
+            - name: Windows Update for Business deployment service
+              href: update/deployment-service-overview.md
+              items:
+                - name: Troubleshoot the Windows Update for Business deployment service
+                  href: update/deployment-service-troubleshoot.md
             - name: Enforcing compliance deadlines for updates
               href: update/wufb-compliancedeadlines.md
             - name: Integrate Windows Update for Business with management solutions
@@ -242,11 +249,13 @@
                 - name: Opt out of safeguard holds
                   href: update/safeguard-opt-out.md
                 - name: Determine the source of Windows Updates
-                  href: update/windows-update-sources.md
+                  href: ./update/how-windows-update-works.md
                 - name: Common Windows Update errors
                   href: update/windows-update-errors.md
                 - name: Windows Update error code reference
                   href: update/windows-update-error-reference.md
+                - name: Troubleshoot the Windows Update for Business deployment service
+                  href: update/deployment-service-troubleshoot.md
 
     - name: Reference
       items:
@@ -291,7 +300,7 @@
                     - name: Security and data protection considerations for Windows To Go
                       href: planning/security-and-data-protection-considerations-for-windows-to-go.md
                     - name: "Windows To Go: frequently asked questions"
-                      href: planning/windows-to-go-frequently-asked-questions.md
+                      href: planning/windows-to-go-frequently-asked-questions.yml
         
                 - name: Volume Activation Management Tool (VAMT) technical reference
                   items:
@@ -389,7 +398,7 @@
                         - name: Common Issues
                           href: usmt/usmt-common-issues.md
                         - name: Frequently Asked Questions
-                          href: usmt/usmt-faq.md
+                          href: usmt/usmt-faq.yml
                         - name: Log Files
                           href: usmt/usmt-log-files.md
                         - name: Return Codes

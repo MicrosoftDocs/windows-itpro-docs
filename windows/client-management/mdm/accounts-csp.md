@@ -5,21 +5,30 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 03/27/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Accounts CSP 
+# Accounts Configuration Service Provider 
 
 
 The Accounts configuration service provider (CSP) is used by the enterprise (1) to rename a device, (2) to create a new local Windows account and join it to a local user group. This CSP was added in Windows 10, version 1803.
 
 
-The following diagram shows the Accounts configuration service provider in tree format.
+The following shows the Accounts configuration service provider in tree format.
 
-![Accounts CSP diagram](images/provisioning-csp-accounts.png) 
+```
+./Device/Vendor/MSFT
+Accounts
+----Domain
+--------ComputerName
+----Users
+--------UserName
+------------Password
+------------LocalUserGroup
+```
 
 <a href="" id="accounts"></a>**./Device/Vendor/MSFT/Accounts**  
 Root node.

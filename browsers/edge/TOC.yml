@@ -1,0 +1,50 @@
+- name: Microsoft Edge deployment for IT Pros
+  href: index.yml
+  items: 
+    - name: System requirements and supported languages
+      href: about-microsoft-edge.md
+    - name: Use Enterprise Mode to improve compatibility
+      href: emie-to-improve-compatibility.md
+    - name: Deploy Microsoft Edge kiosk mode
+      href: microsoft-edge-kiosk-mode-deploy.md
+    - name: Group policies & configuration options
+      href: group-policies/index.yml
+      items: 
+        - name: Address bar
+          href: group-policies/address-bar-settings-gp.md
+        - name: Adobe Flash
+          href: group-policies/adobe-settings-gp.md
+        - name: Books Library
+          href: group-policies/books-library-management-gp.md
+        - name: Browser experience
+          href: group-policies/browser-settings-management-gp.md
+        - name: Developer tools
+          href: group-policies/developer-settings-gp.md
+        - name: Extensions
+          href: group-policies/extensions-management-gp.md
+        - name: Favorites
+          href: group-policies/favorites-management-gp.md
+        - name: Home button
+          href: group-policies/home-button-gp.md
+        - name: Interoperability and enterprise mode guidance
+          href: group-policies/interoperability-enterprise-guidance-gp.md
+        - name: Kiosk mode deployment in Microsoft Edge
+          href: microsoft-edge-kiosk-mode-deploy.md
+        - name: New Tab page
+          href: group-policies/new-tab-page-settings-gp.md
+        - name: Prelaunch Microsoft Edge and preload tabs
+          href: group-policies/prelaunch-preload-gp.md
+        - name: Search engine customization
+          href: group-policies/search-engine-customization-gp.md
+        - name: Security and privacy
+          href: group-policies/security-privacy-management-gp.md
+        - name: Start page
+          href: group-policies/start-pages-gp.md
+        - name: Sync browser
+          href: group-policies/sync-browser-settings-gp.md
+        - name: Telemetry and data collection
+          href: group-policies/telemetry-management-gp.md
+    - name: Change history for Microsoft Edge
+      href: change-history-for-microsoft-edge.md
+    - name: Microsoft Edge Frequently Asked Questions (FAQ)
+      href: microsoft-edge-faq.yml

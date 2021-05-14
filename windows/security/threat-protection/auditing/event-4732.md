@@ -137,7 +137,7 @@ You will typically see “[4735](event-4735.md): A security-enabled local group 
 
     -   For a local group, this field will contain the name of the computer to which this new group belongs, for example: “Win81”.
 
-    -   [Built-in groups](https://technet.microsoft.com/library/dn169025(v=ws.10).aspx): Builtin
+    -   [Built-in groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dn169025(v=ws.10)): Builtin
 
 **Additional Information:**
 
@@ -160,4 +160,3 @@ For 4732(S): A member was added to a security-enabled local group.
 | **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should not typically perform any actions.                                                                                                                                                                                                            | Monitor the target **Computer:** (or other target device) for actions performed by the **“Subject\\Security ID”** that you are concerned about.                                                                                               |
 | **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                                                                                             | Monitor “**Subject\\Account Name”** for names that don’t comply with naming conventions.                                                                                                                                                      |
 | **Mismatch between type of account (user or computer) and the group it was added to**: You might want to monitor to ensure that a computer account was not added to a group intended for users, or a user account was not added to a group intended for computers.                                                                                                                      | Monitor the type of account added to the group to see if it matches what the group is intended for.                                                                                                                                           |
-

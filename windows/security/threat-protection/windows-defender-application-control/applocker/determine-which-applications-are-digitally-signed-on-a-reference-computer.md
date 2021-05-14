@@ -37,7 +37,7 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 
 2.  Analyze the publisher's name and digital signature status from the output of the command.
 
-For command parameters, syntax, and examples, see [Get-AppLockerFileInformation](https://technet.microsoft.com/library/ee460961.aspx).
+For command parameters, syntax, and examples, see [Get-AppLockerFileInformation](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee460961(v=technet.10)).
 
 ## Related topics
 

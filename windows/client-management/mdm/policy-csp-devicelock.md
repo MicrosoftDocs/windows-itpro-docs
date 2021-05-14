@@ -184,7 +184,7 @@ Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For th
 
 
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -421,7 +421,7 @@ Specifies when the password expires (in days).
 
 If all policy values = 0 then 0; otherwise, Min policy value is the most secure value.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -488,7 +488,7 @@ The value includes the user's current password. This means that with a setting o
 
 Max policy value is the most restricted.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -619,7 +619,7 @@ This policy has different behaviors on the mobile device and desktop.
 
 Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -677,7 +677,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the maximum amount of time (in seconds) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app.
+Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app.
 
 * On Mobile, the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
 * On HoloLens, this timeout is controlled by the device's system sleep timeout, regardless of the value set by this policy.
@@ -687,7 +687,7 @@ Specifies the maximum amount of time (in seconds) allowed after the device is id
 
 
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -816,7 +816,7 @@ Enforced values for Local and Microsoft Accounts:
 
 The enforcement of policies for Microsoft accounts happen on the server, and the server requires a password length of 8 and a complexity of 2. A complexity value of 3 or 4 is unsupported and setting this value on the server makes Microsoft accounts non-compliant.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <!--/Description-->
 <!--/Policy-->
@@ -878,7 +878,7 @@ Specifies the minimum number or characters required in the PIN or password.
 
 Max policy value is the most restricted.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -1129,4 +1129,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

@@ -14,7 +14,7 @@ ms.date: 06/25/2018
 
 # Diagnose MDM failures in Windows 10
 
-To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop or mobile device. The following sections describe the procedures for collecting MDM logs.
+To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop. The following sections describe the procedures for collecting MDM logs.
 
 ## Download the MDM Diagnostic Information log from Windows 10 PCs
 
@@ -23,12 +23,33 @@ To help diagnose enrollment or device management issues in Windows 10 devices m
    ![Access work or school page in Settings](images/diagnose-mdm-failures15.png)
 
 1. At the bottom of the **Settings** page, click **Create report**.  
-   ![Access work or school page in Settings](images/diagnose-mdm-failures16.png)
+   ![Access work or school page and then Create report](images/diagnose-mdm-failures16.png)
 1. A window opens that shows the path to the log files. Click **Export**.
 
-   ![Access work or school page in Settings](images/diagnose-mdm-failures17.png)
+   ![Access work or school log files](images/diagnose-mdm-failures17.png)
 
 1. In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
+
+## Use command to collect logs directly from Windows 10 PCs
+
+You can also collect the MDM Diagnostic Information logs using the following command:
+
+```xml
+mdmdiagnosticstool.exe -area DeviceEnrollment;DeviceProvisioning;Autopilot -cab c:\users\public\documents\MDMDiagReport.cab
+```
+-   In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
+
+### Understanding cab structure
+The cab file will have logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment, DeviceProvisioning and Autopilot areas. It applies to the cab files collected via command line or Feedback Hub
+
+-   DiagnosticLogCSP_Collector_Autopilot_*: Autopilot etls
+-   DiagnosticLogCSP_Collector_DeviceProvisioning_*: Provisioning etls (Microsoft-Windows-Provisioning-Diagnostics-Provider)
+-   MDMDiagHtmlReport.html: Summary snapshot of MDM space configurations and policies. Includes, management url, MDM server device ID, certificates, policies.
+-   MdmDiagLogMetadata, json: mdmdiagnosticstool metadata file, contains command-line arguments used to run the tool
+-   MDMDiagReport.xml: contains a more detail view into the MDM space configurations, e.g enrollment variables
+-   MdmDiagReport_RegistryDump.reg: contains dumps from common MDM registry locations
+-   MdmLogCollectorFootPrint.txt: mdmdiagnosticslog tool logs from running the command
+-   *.evtx: Common event viewer logs microsoft-windows-devicemanagement-enterprise-diagnostics-provider-admin.evtx main one that contains MDM events.
 
 ## Collect logs directly from Windows 10 PCs
 
@@ -112,37 +133,33 @@ Example: Export the Debug logs
 </SyncML>
 ```
 
-<!--## Collect logs from Windows 10 Mobile devices-->
-<!--
-Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medic](https://www.microsoft.com/p/field-medic/9wzdncrfjb82?activetab=pivot%3aoverviewtab) app to collect logs.
-
 **To collect logs manually**
 
 1.  Download and install the [Field Medic]( https://go.microsoft.com/fwlink/p/?LinkId=718232) app from the store.
 2.  Open the Field Medic app and then click on **Advanced**.
 
-    ![field medic screenshot](images/diagnose-mdm-failures2.png)
+    ![field medic screenshot 2](images/diagnose-mdm-failures2.png)
 
 3.  Click on **Choose with ETW provider to use**.
 
-    ![field medic screenshot](images/diagnose-mdm-failures3.png)
+    ![field medic screenshot 3](images/diagnose-mdm-failures3.png)
 
 4.  Check **Enterprise** and un-check the rest.
 
-    ![field medic screenshot](images/diagnose-mdm-failures4.png)
+    ![field medic screenshot 4](images/diagnose-mdm-failures4.png)
 
 5.  In the app, click on **Start Logging** and then perform the operation that you want to troubleshoot.
 
-    ![field medic screenshot](images/diagnose-mdm-failures2.png)
+    ![field medic screenshot 5](images/diagnose-mdm-failures2.png)
 
 6.  When the operation is done, click on **Stop Logging**.
 
-    ![field medic screenshot](images/diagnose-mdm-failures5.png)
+    ![field medic screenshot 6](images/diagnose-mdm-failures5.png)
 
 7.  Save the logs. They will be stored in the Field Medic log location on the device.
 8.  You can send the logs via email by attaching the files from **Documents > Field Medic > Reports > ...** folder.
 
-    ![device documents folder](images/diagnose-mdm-failures6.png)![device folder screenshot](images/diagnose-mdm-failures7.png)![device folder screenshot](images/diagnose-mdm-failures8.png)
+    ![device documents folder](images/diagnose-mdm-failures6.png)![device folder screenshot 7](images/diagnose-mdm-failures7.png)![device folder screenshot 8](images/diagnose-mdm-failures8.png)
 
 The following table contains a list of common providers and their corresponding GUIDs.
 
@@ -182,9 +199,9 @@ The following table contains a list of common providers and their corresponding 
 | e5fc4a0f-7198-492f-9b0f-88fdcbfded48 | Microsoft-Windows Networking VPN                       |
 | e5c16d49-2464-4382-bb20-97a4b5465db9 | Microsoft-Windows-WiFiNetworkManager                   |
 
---> 
+ -->
 
-## Collect logs remotely from Windows 10 Holographic 
+## Collect logs remotely from Windows 10 Holographic
 
 For holographic already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
 
@@ -294,21 +311,21 @@ For best results, ensure that the PC or VM on which you are viewing logs matches
 3.  Navigate to the etl file that you got from the device and then open the file.
 4.  Click **Yes** when prompted to save it to the new log format.
 
-    ![prompt](images/diagnose-mdm-failures10.png)
+    ![event viewer prompt](images/diagnose-mdm-failures10.png)
 
     ![diagnose mdm failures](images/diagnose-mdm-failures11.png)
 
 5.  The new view contains traces from the channel. Click on **Filter Current Log** from the **Actions** menu.
 
-    ![event viewer](images/diagnose-mdm-failures12.png)
+    ![event viewer actions](images/diagnose-mdm-failures12.png)
 
 6.  Add a filter to Event sources by selecting **DeviceManagement-EnterpriseDiagnostics-Provider** and click **OK**.
 
-    ![event filter](images/diagnose-mdm-failures13.png)
+    ![event filter for Device Management](images/diagnose-mdm-failures13.png)
 
 7.  Now you are ready to start reviewing the logs.
 
-    ![event viewer](images/diagnose-mdm-failures14.png)
+    ![event viewer review logs](images/diagnose-mdm-failures14.png)
 
 ## Collect device state data
 
@@ -336,9 +353,3 @@ Here's an example of how to collect current MDM device state data using the [Dia
 ```
 
  
-
-
-
-
-
-

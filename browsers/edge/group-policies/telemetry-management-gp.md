@@ -14,7 +14,7 @@ ms.topic: reference
 # Telemetry and data collection 
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
 
 Microsoft Edge gathers diagnostic data, intranet history, internet history, tracking information of sites visited, and Live Tile metadata. You can configure Microsoft Edge to collect all or none of this information.
 

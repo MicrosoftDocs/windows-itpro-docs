@@ -116,7 +116,7 @@ To create an encrypted store using the Config.xml file and the default migration
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/encrypt</strong> [{<strong>/key:</strong><em>&lt;KeyString&gt;</em> | <strong>/keyfile</strong>:<em>&lt;file&gt;</em>]}</p></td>
-<td align="left"><p>Encrypts the store with the specified key. Encryption is disabled by default. With this option, you will need to specify the encryption key in one of the following ways:</p>
+<td align="left"><p>Encrypts the store with the specified key. Encryption is disabled by default. With this option, you will need to specify the encryption key-in one of the following ways:</p>
 <ul>
 <li><p><strong>/key:</strong><em>KeyString</em> specifies the encryption key. If there is a space in <em>KeyString</em>, you will need to surround <em>KeyString</em> with quotation marks.</p></li>
 <li><p><strong>/keyfile:</strong><em>FilePathAndName</em> specifies a text (.txt) file that contains the encryption key.</p></li>
@@ -222,12 +222,12 @@ USMT provides the following options to specify what files you want to migrate.
 <tr class="odd">
 <td align="left"><p><strong>/i:</strong>[<em>Path</em>]<em>FileName</em></p></td>
 <td align="left"><p><strong>(include)</strong></p>
-<p>Specifies an .xml file that contains rules that define what user, application or system state to migrate. You can specify this option multiple times to include all of your .xml files (MigApp.xml, MigDocs.xml, and any custom .xml files that you create). <em>Path</em> can be either a relative or full path. If you do not specify the <em>Path</em> variable, then <em>FileName</em> must be located in the current directory. For more information about which files to specify, see the &quot;XML Files&quot; section of the <a href="usmt-faq.md" data-raw-source="[Frequently Asked Questions](usmt-faq.md)">Frequently Asked Questions</a> topic.</p></td>
+<p>Specifies an .xml file that contains rules that define what user, application, or system state to migrate. You can specify this option multiple times to include all of your .xml files (MigApp.xml, MigDocs.xml, and any custom .xml files that you create). <em>Path</em> can be either a relative or full path. If you do not specify the <em>Path</em> variable, then <em>FileName</em> must be located in the current directory. For more information about which files to specify, see the &quot;XML Files&quot; section of the <a href="usmt-faq.yml" data-raw-source="[Frequently Asked Questions](usmt-faq.yml)">Frequently Asked Questions</a> topic.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/genconfig:</strong>[<em>Path</em>]<em>FileName</em></p></td>
 <td align="left"><p>(Generate <strong>Config.xml</strong>)</p>
-<p>Generates the optional Config.xml file, but does not create a migration store. To ensure that this file contains every component, application and setting that can be migrated, you should create this file on a source computer that contains all the components, applications and settings that will be present on the destination computers. In addition, you should specify the other migration .xml files, using the <strong>/i</strong> option, when you specify this option.</p>
+<p>Generates the optional Config.xml file, but does not create a migration store. To ensure that this file contains every component, application and setting that can be migrated, you should create this file on a source computer that contains all the components, applications, and settings that will be present on the destination computers. In addition, you should specify the other migration .xml files, using the <strong>/i</strong> option, when you specify this option.</p>
 <p>After you create this file, you will need to make use of it with the <strong>ScanState</strong> command using the <strong>/config</strong> option.</p>
 <p>The only options that you can specify with this option are the <strong>/i</strong>, <strong>/v</strong>, and <strong>/l</strong> options. You cannot specify <em>StorePath</em>, because the <strong>/genconfig</strong> option does not create a store. <em>Path</em> can be either a relative or full path. If you do not specify the <em>Path</em> variable, then <em>FileName</em> will be created in the current directory.</p>
 <p>Examples:</p>
@@ -246,7 +246,7 @@ USMT provides the following options to specify what files you want to migrate.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/auto:</strong><em>path to script files</em></p></td>
-<td align="left"><p>This option enables you to specify the location of the default .xml files and then begin the migration. If no path is specified, USMT will reference the directory where the USMT binaries are located. The <strong>/auto</strong> option has the same effect as using the following options: <strong>/i:MigDocs.xml</strong> <strong>/i:MigApp.xml /v:5</strong>.</p></td>
+<td align="left"><p>This option enables you to specify the location of the default .xml files and then begin the migration. If no path is specified, USMT will reference the directory where the USMT binaries are located. The <strong>/auto</strong> option has the same effect as using the following options: <strong>/i: MigDocs.xml</strong> <strong>/i:MigApp.xml /v:5</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/genmigxml:</strong><em>path to a file</em></p></td>
@@ -254,7 +254,7 @@ USMT provides the following options to specify what files you want to migrate.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/targetwindows8</strong></p></td>
-<td align="left"><p>Optimizes Scanstate.exe when using USMT 10.0 to migrate a user state to Windows 8 or Windows 8.1 instead of Windows 10. You should use this command line option in the following scenarios:</p>
+<td align="left"><p>Optimizes Scanstate.exe when using USMT 10.0 to migrate a user state to Windows 8 or Windows 8.1 instead of Windows 10. You should use this command-line option in the following scenarios:</p>
 <ul>
 <li><p><strong>To create a Config.xml file by using the /genconfig option.</strong> Using the <strong>/targetwindows8</strong> option optimizes the Config.xml file so that it only contains components that relate to Windows 8 or Windows 8.1.</p></li>
 <li><p><strong>To create a migration store.</strong> Using the <strong>/targetwindows8</strong> option ensures that the ScanState tool gathers the correct set of operating system settings. Without the <strong>/targetwindows8</strong> command-line option, some settings can be lost during the migration.</p></li>
@@ -262,7 +262,7 @@ USMT provides the following options to specify what files you want to migrate.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/targetwindows7</strong></p></td>
-<td align="left"><p>Optimizes Scanstate.exe when using USMT 10.0 to migrate a user state to Windows 7 instead of Windows 10. You should use this command line option in the following scenarios:</p>
+<td align="left"><p>Optimizes Scanstate.exe when using USMT 10.0 to migrate a user state to Windows 7 instead of Windows 10. You should use this command-line option in the following scenarios:</p>
 <ul>
 <li><p><strong>To create a Config.xml file by using the /genconfig option.</strong> Using the <strong>/targetwindows7</strong> option optimizes the Config.xml file so that it only contains components that relate to Windows 7.</p></li>
 <li><p><strong>To create a migration store.</strong> Using the <strong>/targetwindows7</strong> option ensures that the ScanState tool gathers the correct set of operating system settings. Without the <strong>/targetwindows7</strong> command-line option, some settings can be lost during the migration.</p></li>
@@ -336,7 +336,7 @@ USMT provides several options that you can use to analyze problems that occur du
 <td align="left"><p><strong>/l:</strong>[<em>Path</em>]<em>FileName</em></p></td>
 <td align="left"><p>Specifies the location and name of the ScanState log.</p>
 <p>You cannot store any of the log files in <em>StorePath</em>. <em>Path</em> can be either a relative or full path. If you do not specify the <em>Path</em> variable, then the log will be created in the current directory. You can use the <strong>/v</strong> option to adjust the amount of output.</p>
-<p>If you run the <strong>ScanState</strong> or <strong>LoadState</strong> commands from a shared network resource, you must specify this option or USMT will fail with the following error: &quot;USMT was unable to create the log file(s)&quot;. To fix this issue, use the /<strong>l:scan.log</strong> command.</p></td>
+<p>If you run the <strong>ScanState</strong> or <strong>LoadState</strong> commands from a shared network resource, you must specify this option or USMT will fail with the following error: &quot;USMT was unable to create the log file(s)&quot;. To fix this issue, use the /<strong>l: scan.log</strong> command.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/v:</strong><em>&lt;VerbosityLevel&gt;</em></p></td>
@@ -473,7 +473,7 @@ By default, all users are migrated. The only way to specify which users to inclu
 <p><code>/ue:&#42;&#92;&#42; /ui:fabrikam\user2</code></p>
 <p>To migrate all users from the Fabrikam domain, and only the user accounts from other domains that have been active or otherwise modified in the last 30 days, type:</p>
 <p><code>/uel:30 /ui:fabrikam&#92;&#42;</code></p>
-<p>In this example, a user account from the Contoso domain that was last modified 2 months ago will not be migrated.</p></li>
+<p>In this example, a user account from the Contoso domain that was last modified two months ago will not be migrated.</p></li>
 </ul>
 <p>For more examples, see the descriptions of the /<strong>ue</strong> and /<strong>ui</strong> options in this table.</p></td>
 </tr>
@@ -484,8 +484,8 @@ By default, all users are migrated. The only way to specify which users to inclu
 <p>or</p>
 <p><strong>/uel:0</strong></p></td>
 <td align="left"><p><strong>(User exclude based on last logon)</strong></p>
-<p>Migrates the users that logged onto the source computer within the specified time period, based on the <strong>Last Modified</strong> date of the Ntuser.dat file on the source computer. The /<strong>uel</strong> option acts as an include rule. For example, the <strong>/uel:30</strong> option migrates users who logged on, or whose account was modified, within the last 30 days from the date when the ScanState command is run.</p>
-<p>You can specify a number of days or you can specify a date. You cannot use this option with the /<strong>all</strong> option. USMT retrieves the last logon information from the local computer, so the computer does not need to be connected to the network when you run this option. In addition, if a domain user has logged onto another computer, that logon instance is not considered by USMT.</p>
+<p>Migrates the users that logged on to the source computer within the specified time period, based on the <strong>Last Modified</strong> date of the Ntuser.dat file on the source computer. The /<strong>uel</strong> option acts as an include rule. For example, the <strong>/uel:30</strong> option migrates users who logged on, or whose account was modified, within the last 30 days from the date when the ScanState command is run.</p>
+<p>You can specify a number of days or you can specify a date. You cannot use this option with the /<strong>all</strong> option. USMT retrieves the last logon information from the local computer, so the computer does not need to be connected to the network when you run this option. In addition, if a domain user has logged on to another computer, that logon instance is not considered by USMT.</p>
 <div class="alert">
 <strong>Note</strong><br/><p>The /<strong>uel</strong> option is not valid in offline migrations.</p>
 </div>
