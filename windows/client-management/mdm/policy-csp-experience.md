@@ -77,6 +77,9 @@ manager: dansimp
     <a href="#experience-configurewindowsspotlightonlockscreen">Experience/ConfigureWindowsSpotlightOnLockScreen</a>
   </dd>
   <dd>
+    <a href="#experience-configurechaticonvisibilityonthetaskbar">Experience/ConfigureChatIcon</a>
+  </dd>
+  <dd>
     <a href="#experience-disablecloudoptimizedcontent">Experience/DisableCloudOptimizedContent</a>
   </dd>
   <dd>
@@ -1220,6 +1223,65 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <!--Policy-->
+<a href="" id="experience-configurechaticonvisibilityonthetaskbar"></a>**Experience/ConfigureChatIcon**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Machine
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Specifies whether to allow "Chat" on the Taskbar.
+
+<!--/Description-->
+<!--SupportedValues-->
+The values for this policy are 0, 1, 2 and 3. This policy defaults to 0.
+
+0 - Default: The Chat icon will be displayed or hidden on the taskbar based on account type. Users can show or hide it in Settings.
+1 - Show: The Chat icon will be displayed on the taskbar by default. Users can show or hide it in Settings.
+2 - Hide: The Chat icon will be hidden by default. Users can show or hide it in Settings.
+3 - Disabled: The Chat icon will not be displayed, and users cannot show or hide it in Settings.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="experience-disablecloudoptimizedcontent"></a>**Experience/DisableCloudOptimizedContent**  
 
 <!--SupportedSKUs-->
@@ -1403,7 +1465,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-[!INCLUDE [do-not-sync-browser-settings-shortdesc](../../../browsers/edge/shortdesc/do-not-sync-browser-settings-shortdesc.md)]
+[!INCLUDE [do-not-sync-browser-settings-shortdesc](../includes/do-not-sync-browser-settings-shortdesc.md)]
 
 Related policy:
    [PreventUsersFromTurningOnBrowserSyncing](#experience-preventusersfromturningonbrowsersyncing)
@@ -1497,7 +1559,7 @@ _**Turn syncing off by default but don’t disable**_
 
 <!--/Scope-->
 <!--Description-->
-[!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../../../browsers/edge/shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
+[!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../includes/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
 Related policy:
    [DoNotSyncBrowserSettings](#experience-donotsyncbrowsersetting)

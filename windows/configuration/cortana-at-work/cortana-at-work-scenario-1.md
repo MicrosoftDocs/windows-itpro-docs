@@ -4,9 +4,9 @@ description: A test scenario walking you through signing in and managing the not
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.reviewer: 
 manager: dansimp
 ---

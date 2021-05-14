@@ -43,10 +43,10 @@ IE11 and IEAK 11 offers differing experiences between Windows 7 and Windows 8.1 
 |Internet Explorer Customization Wizard 11 |Step-by-step wizard screens that help you create custom IE11 installation packages. |
 
 ## Related topics
-- [IEAK 11 - Frequently Asked Questions](../ie11-faq/faq-ieak11.md)
+- [IEAK 11 - Frequently Asked Questions](../ie11-faq/faq-ieak11.yml)
 - [Download IEAK 11](ieak-information-and-downloads.md)
 - [IEAK 11 administrators guide]()
 - [IEAK 11 licensing guidelines](licensing-version-and-features-ieak11.md)
-- [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.md)
+- [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.yml)
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
 - [Microsoft Edge - Deployment Guide for IT Pros](/microsoft-edge/deploy/)
