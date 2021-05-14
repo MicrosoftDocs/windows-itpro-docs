@@ -22,7 +22,7 @@ This article lists new and updated features and content that is of interest to I
 
 Windows 10, version 21H1 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As an [H1-targeted release](/lifecycle/faq/windows#what-is-the-servicing-timeline-for-a-version--feature-update--of-windows-10-), 21H1 is serviced for 18 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
 
-To download and install Windows 10, version 21H1, use Windows Update (**Settings > Update & Security > Windows Update**). 
+To download and install Windows 10, version 21H1, use Windows Update (**Settings > Update & Security > Windows Update**). New features and fixes in Windows 10, version 21H1 are included in the latest monthly quality update for Windows 10. For more information, see [Feature Update through Windows 10, version 21H1 Enablement Package](https://support.microsoft.com/help/5000736).
 
 ## Servicing
 
@@ -125,7 +125,6 @@ This release includes the following enhancements and issues fixed:
 - We updated the Open Mobile Alliance (OMA) Device Management (DM) sync protocol by adding a check-in reason for requests from the client to the server. The check-in reason will allow the mobile device management (MDM) service to make better decisions about sync sessions. With this change, the OMA-DM service must negotiate a protocol version of 4.0 with the Windows OMA-DM client.
 - We turned off token binding by default in Windows Internet (WinINet).
 -  an issue that might prevent the correct Furigana characters from appearing in apps that automatically allow the input of Furigana characters. You might need to enter the Furigana characters manually. This issue occurs when using the Microsoft Japanese Input Method Editor (IME) to enter Kanji characters in these apps.
-
 
 ## See Also
 
