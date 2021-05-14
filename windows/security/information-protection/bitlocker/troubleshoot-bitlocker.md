@@ -87,8 +87,7 @@ You can use Get-WinEvent in an elevated PowerShell window to display filtered in
 Open an elevated Windows PowerShell window, and run each of the following commands.
 
 |Command |Notes |
-| - | - |
-
+| --- | --- |
 |[**get-tpm \> C:\\TPM.txt**](/powershell/module/trustedplatformmodule/get-tpm?view=win10-ps) |Exports information about the local computer's Trusted Platform Module (TPM). This cmdlet shows different values depending on whether the TPM chip is version 1.2 or 2.0. This cmdlet is not supported in Windows 7. |
 |[**manage-bde –status \>&nbsp;C:\\BDEStatus.txt**](/windows-server/administration/windows-commands/manage-bde-status) |Exports information about the general encryption status of all drives on the computer. |
 |[**manage-bde c: <br />-protectors -get \>&nbsp;C:\\Protectors**](/windows-server/administration/windows-commands/manage-bde-protectors) |Exports information about the protection methods that are used for the BitLocker encryption key.  |
@@ -100,7 +99,7 @@ Open an elevated Windows PowerShell window, and run each of the following comman
 1. Open an elevated Command Prompt window, and run the following commands.
 
    |Command |Notes |
-   | - | - |
+   | --- | --- |
    |[**gpresult /h \<Filename>**](/windows-server/administration/windows-commands/gpresult) |Exports the Resultant Set of Policy information, and saves the information as an HTML file. |
    |[**msinfo /report \<Path> /computer&nbsp;\<ComputerName>**](/windows-server/administration/windows-commands/msinfo32) |Exports comprehensive information about the hardware, system components, and software environment on the local computer. The **/report** option saves the information as a .txt file. |
 
