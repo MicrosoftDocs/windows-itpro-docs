@@ -197,4 +197,4 @@ For secure administrative workstations, Microsoft recommends TPM with PIN protec
 - [Blocking the SBP-2 driver and Thunderbolt controllers to reduce 1394 DMA and Thunderbolt DMA threats to BitLocker](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d)
 - [BitLocker Group Policy settings](./bitlocker-group-policy-settings.md)
 - [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp)
-- [Winlogon automatic restart sign-on (ARSO)](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)
+- [Winlogon automatic restart sign-on (ARSO)](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)
