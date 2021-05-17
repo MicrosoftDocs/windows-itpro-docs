@@ -30,6 +30,9 @@ ms.localizationpriority: medium
   <dd>
     <a href="#deviceinstallationallowinstallationofmatchingdevicesetupclasses">DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</a>
   </dd>
+ <dd>
+    <a href="#deviceinstallationenableinstallationpolicylayering">DeviceInstallation/EnableInstallationPolicyLayering</a>
+  </dd>
   <dd>
     <a href="#deviceinstallationpreventdevicemetadatafromnetwork">DeviceInstallation/PreventDeviceMetadataFromNetwork</a>
   </dd>
