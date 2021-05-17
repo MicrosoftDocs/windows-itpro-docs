@@ -4785,7 +4785,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryApplicationAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevice.deviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
