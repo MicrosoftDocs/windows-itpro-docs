@@ -2402,6 +2402,20 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
+## Common data fields
+
+### Ms.Device.DeviceInventoryChange
+
+Describes the installation state for all hardware and software components available on a particular device.
+
+The following fields are available:
+
+- **action**  The change that was invoked on a device inventory object.
+- **inventoryId**  Device ID used for Compatibility testing
+- **objectInstanceId**  Object identity which is unique within the device scope.
+- **objectType**  Indicates the object type that the event applies to.
+- **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+
 
 ## Component-based servicing events
 
