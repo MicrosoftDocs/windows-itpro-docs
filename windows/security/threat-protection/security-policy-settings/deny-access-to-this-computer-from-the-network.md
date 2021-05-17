@@ -101,8 +101,7 @@ Assign the **Deny access to this computer from the network** user right to the f
 An important exception to this list is any service accounts that are used to start services that must connect to the device over the network. For example, let’s say you have configured a shared folder for web servers to access, and you present content within that folder through a website. You may need to allow the account that runs IIS to log on to the server with the shared folder from the network. This user right is particularly effective when you must configure servers and workstations on which sensitive information is handled because of regulatory compliance concerns.
 
 > [!NOTE]
-> If the service account is configured in the logon properties of a Windows Service,
-> it requires Network Logon rights to the domain controllers to start properly.
+> If the service account is configured in the logon properties of a Windows service, it requires network logon rights to the domain controllers to start properly.
 
 ### Potential impact
 
