@@ -19,13 +19,13 @@ ms.date: 11/15/2017
 >[!TIP]
 >If you're not a developer or administrator, you'll find more helpful information in the [Windows Update: Frequently Asked Questions](https://support.microsoft.com/help/12373/windows-update-faq).
 
-In the current device landscape of PC, tablets, phones, and IoT devices, Mobile Device Management (MDM) solutions are becoming prevalent as a lightweight device management technology. In Windows 10, we are investing heavily in extending the management capabilities available to MDMs. One key feature we are adding is the ability for MDMs to keep devices up-to-date with the latest Microsoft updates.
+In the current device landscape of PC, tablets, phones, and IoT devices, Mobile Device Management (MDM) solutions are becoming prevalent as a lightweight device management technology. In Windows 10, we are investing heavily in extending the management capabilities available to MDMs. One key feature we are adding is the ability for MDMs to keep devices up to date with the latest Microsoft updates.
 
 In particular, Windows 10 provides APIs to enable MDMs to:
 
--   Ensure machines stay up-to-date by configuring Automatic Update policies.
+-   Ensure machines stay up to date by configuring Automatic Update policies.
 -   Test updates on a smaller set of machines before enterprise-wide rollout by configuring which updates are approved for a given device.
--   Get compliance status of managed devices so IT can easily understand which machines still need a particular security patch, or how up-to-date is a particular machine.
+-   Get compliance status of managed devices so IT can easily understand which machines still need a particular security patch, or how up to date is a particular machine.
 
 This topic provides MDM independent software vendors (ISV) with the information they need to implement update management in Windows 10.
 
@@ -34,7 +34,7 @@ In Windows 10, the MDM protocol has been extended to better enable IT admins to
 -   Configure automatic update policies to ensure devices stay up-to-date.
 -   Get device compliance information (the list of updates that are needed but not yet installed).
 -   Specify a per-device update approval list, to ensure devices don’t install unapproved updates that have not been tested.
--   Approve EULAs on behalf of the end-user so update deployment can be automated even for updates with EULAs.
+-   Approve EULAs on behalf of the end user so update deployment can be automated even for updates with EULAs.
 
 The OMA DM APIs for specifying update approvals and getting compliance status refer to updates by using an Update ID, which is a GUID that identifies a particular update. The MDM, of course, will want to expose IT-friendly information about the update (instead of a raw GUID), including the update’s title, description, KB, update type (for example, a security update or service pack). For more information, see [\[MS-WSUSSS\]: Windows Update Services: Server-Server Protocol](/openspecs/windows_protocols/ms-wsusss/f49f0c3e-a426-4b4b-b401-9aeb2892815c).
 
@@ -80,7 +80,7 @@ The response of the GetUpdateData call returns an array of ServerSyncUpdateData 
 -   **UpdateID** – The unique identifier for an update
 -   **RevisionNumber** – Revision number for the update in case the update was modified.
 -   **CreationDate** – the date on which this update was created.
--   **UpdateType** – The type of update which could include the following:
+-   **UpdateType** – The type of update, which could include the following:
     -   **Detectoid** – if this update identity represents a compatibility logic
     -   **Category** – This could represent either of the following:
         -   A Product category the update belongs to. For example, Windows, MS office etc.
@@ -107,7 +107,7 @@ First some background:
 The following procedure describes a basic algorithm for a metadata sync service:
 
 -   Initialization, composed of the following:
-    1.  Create an empty list of “needed update IDs to fault in”. This list will get updated by the MDM service component that uses OMA DM. We recommend not adding definition updates to this list, since those are temporary in nature (for example, Defender releases about 4 new definition updates per day, each of which is cumulative).
+    1.  Create an empty list of “needed update IDs to fault in”. This list will get updated by the MDM service component that uses OMA DM. We recommend not adding definition updates to this list, since those are temporary in nature (for example, Defender releases about four new definition updates per day, each of which is cumulative).
 -   Sync periodically (we recommend once every 2 hours - no more than once/hour).
     1.  Implement the authorization phase of the protocol to get a cookie if you don’t already have a non-expired cookie. See **Sample 1: Authorization** in [Protocol Examples](/openspecs/windows_protocols/ms-wsusss/2dedbd00-fbb7-46ee-8ee0-aec9bd1ecd2a).
     2.  Implement the metadata portion of the protocol (see **Sample 2: Metadata and Deployments Synchronization** in [Protocol Examples](/openspecs/windows_protocols/ms-wsusss/2dedbd00-fbb7-46ee-8ee0-aec9bd1ecd2a)), and:
@@ -130,7 +130,7 @@ The following list describes a suggested model for applying updates.
 
 1.  Have a "Test Group" and an "All Group".
 2.  In the Test group, just let all updates flow.
-3.  In the All Group, set up Quality Update deferral for 7 days and then Quality Updates will be auto approved after the 7 days.  Note that Definition Updates are excluded from Quality Update deferrals and will be auto approved when they are availible. This can be done by setting Update/DeferQualityUpdatesPeriodInDays to 7 and just letting updates flow after seven days or pushing Pause in case of issues.
+3.  In the All Group, set up Quality Update deferral for 7 days and then Quality Updates will be auto approved after the 7 days.  Note that Definition Updates are excluded from Quality Update deferrals and will be auto approved when they are available. This can be done by setting Update/DeferQualityUpdatesPeriodInDays to 7 and just letting updates flow after seven days or pushing Pause in case of issues.
 
 Updates are configured using a combination of the [Update CSP](update-csp.md), and the update portion of the [Policy CSP](policy-configuration-service-provider.md). Please refer to these topics for details on configuring updates.
 
@@ -144,7 +144,7 @@ The following diagram shows the Update policies in a tree format.
 
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education 
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with <strong>Update/ActiveHoursStart</strong>) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
@@ -158,8 +158,7 @@ The following diagram shows the Update policies in a tree format.
 
 <a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education. 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT admin to specify the max active hours range. This value sets max number of active hours from start time.
 
@@ -169,7 +168,7 @@ The following diagram shows the Update policies in a tree format.
 
 <a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with <strong>Update/ActiveHoursEnd</strong>) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time.
@@ -183,7 +182,7 @@ The following diagram shows the Update policies in a tree format.
 
 <a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
 
 <p style="margin-left: 20px">Enables the IT admin to manage automatic update behavior to scan, download, and install updates.
@@ -219,10 +218,10 @@ The following diagram shows the Update policies in a tree format.
 
 <a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise and Windows 10 Education.
 
 
-<p style="margin-left: 20px">Allows the IT admin to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for 3rd party software and patch distribution.
+<p style="margin-left: 20px">Allows the IT admin to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for third party software and patch distribution.
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.
 
@@ -231,11 +230,11 @@ The following diagram shows the Update policies in a tree format.
 -   0 – Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft.
 -   1 – Allowed. Accepts updates received through an intranet Microsoft update service location, if they are signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.
 
-<p style="margin-left: 20px">This policy is specific to desktop and local publishing via WSUS for 3rd party updates (binaries and updates not hosted on Microsoft Update) and allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
+<p style="margin-left: 20px">This policy is specific to desktop and local publishing via WSUS for third party updates (binaries and updates not hosted on Microsoft Update) and allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
 
 <a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 <p style="margin-left: 20px">Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft.
@@ -255,7 +254,7 @@ The following diagram shows the Update policies in a tree format.
 
 <a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart reminder notifications.
@@ -266,10 +265,10 @@ The following diagram shows the Update policies in a tree format.
 
 <a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the method by which the auto restart required notification is dismissed.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -278,7 +277,7 @@ The following diagram shows the Update policies in a tree format.
 
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education 
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from.
@@ -291,8 +290,6 @@ The following diagram shows the Update policies in a tree format.
 <a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
-> <p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
-
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Defers Feature Updates for the specified number of days.
 
@@ -300,7 +297,7 @@ The following diagram shows the Update policies in a tree format.
 
 <a href="" id="update-deferqualityupdatesperiodindays"></a>**Update/DeferQualityUpdatesPeriodInDays**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Defers Quality Updates for the specified number of days.
@@ -309,19 +306,14 @@ The following diagram shows the Update policies in a tree format.
 
 <a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 >
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
 
 
-<p style="margin-left: 20px">Allows IT Admins to specify update delays for up to 4 weeks.
+<p style="margin-left: 20px">Allows IT Admins to specify update delays for up to four weeks.
 
 <p style="margin-left: 20px">Supported values are 0-4, which refers to the number of weeks to defer updates.
-
-<p style="margin-left: 20px">In Windows 10 Mobile Enterprise version 1511 devices set to automatic updates, for DeferUpdatePeriod to work, you must set the following:
-
--   Update/RequireDeferUpgrade must be set to 1
--   System/AllowTelemetry must be set to 1 or higher
 
 <p style="margin-left: 20px">If the &quot;Specify intranet Microsoft update service location&quot; policy is enabled, then the &quot;Defer upgrades by&quot;, &quot;Defer updates by&quot; and &quot;Pause Updates and Upgrades&quot; settings have no effect.
 
@@ -372,7 +364,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <td style="vertical-align:top"><p>Other/cannot defer</p></td>
 <td style="vertical-align:top"><p>No deferral</p></td>
 <td style="vertical-align:top"><p>No deferral</p></td>
-<td style="vertical-align:top"><p>Any update category not specifically enumerated above falls into this category.</p>
+<td style="vertical-align:top"><p>Any update category not enumerated above falls into this category.</p>
 <p>Definition Update - E0789628-CE08-4437-BE74-2495B842F43B</p></td>
 </tr>
 </tbody>
@@ -388,7 +380,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 
 
-<p style="margin-left: 20px">Allows IT Admins to specify additional upgrade delays for up to 8 months.
+<p style="margin-left: 20px">Allows IT Admins to specify additional upgrade delays for up to eight months.
 
 <p style="margin-left: 20px">Supported values are 0-8, which refers to the number of months to defer upgrades.
 
@@ -398,7 +390,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be automatically executed within the specified period.  If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (pending user scheduling).
@@ -409,25 +401,25 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to control the number of days a user can snooze Engaged restart reminder notifications.
 
 <p style="margin-left: 20px">Supported values are 1-3 days.
 
-<p style="margin-left: 20px">The default value is 3 days.
+<p style="margin-left: 20px">The default value is three days.
 
 <a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
 
 <p style="margin-left: 20px">Supported values are 2-30 days.
 
-<p style="margin-left: 20px">The default value is 7 days.
+<p style="margin-left: 20px">The default value is seven days.
 
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**
 > [!NOTE]
@@ -485,12 +477,12 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 >
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
 
 
-<p style="margin-left: 20px">Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks.
+<p style="margin-left: 20px">Allows IT Admins to pause updates and upgrades for up to five weeks. Paused deferrals will be reset after five weeks.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -504,8 +496,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
-> <p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
-
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows IT Admins to pause Feature Updates for up to 60 days.
 
@@ -516,7 +506,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
@@ -528,7 +518,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 >
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
 
@@ -543,7 +533,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**
 
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 <br>
 
@@ -562,7 +552,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart imminent warning notifications.
@@ -573,7 +563,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 <p style="margin-left: 20px">Enables the IT admin to schedule the day of the update installation.
@@ -595,7 +585,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 <p style="margin-left: 20px">Enables the IT admin to schedule the time of the update installation.
@@ -610,10 +600,10 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart warning reminder notifications.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto restart warning reminder notifications.
 
 <p style="margin-left: 20px">Supported values are 2, 4, 8, 12, or 24 (hours).
 
@@ -621,10 +611,10 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to disable auto-restart notifications for update installations.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to disable auto restart notifications for update installations.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -633,10 +623,10 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 > [!Important]
-> Starting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enterprise and IoT Enterprise.
+> Starting in Windows 10, version 1703 this policy is not supported in IoT Enterprise.
 
 <p style="margin-left: 20px">Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
 
@@ -700,7 +690,7 @@ Node for update approvals and EULA acceptance on behalf of the end-user.
 
 The MDM must first present the EULA to IT and have them accept it before the update is approved. Failure to do this is a breach of legal or contractual obligations. The EULAs can be obtained from the update metadata and have their own EULA ID. It's possible for multiple updates to share the same EULA. It is only necessary to approve the EULA once per EULA ID, not one per update.
 
-The update approval list enables IT to approve individual updates and update classifications. Auto-approval by update classifications allows IT to automatically approve Definition Updates (i.e., updates to the virus and spyware definitions on devices) and Security Updates (i.e., product-specific updates for security-related vulnerability). The update approval list does not support the uninstallation of updates by revoking approval of already installed updates. Updates are approved based on UpdateID, and an UpdateID only needs to be approved once. An update UpdateID and RevisionNumber are part of the UpdateIdentity type. An UpdateID can be associated to several UpdateIdentity GUIDs due to changes to the RevisionNumber setting. MDM services must synchronize the UpdateIdentity of an UpdateID based on the latest RevisionNumber to get the latest metadata for an update. However, update approval is based on UpdateID.
+The update approval list enables IT to approve individual updates and update classifications. Auto-approval by update classifications allows IT to automatically approve Definition Updates (that is, updates to the virus and spyware definitions on devices) and Security Updates (that is, product-specific updates for security-related vulnerability). The update approval list does not support the uninstallation of updates by revoking approval of already installed updates. Updates are approved based on UpdateID, and an UpdateID only needs to be approved once. An update UpdateID and RevisionNumber are part of the UpdateIdentity type. An UpdateID can be associated to several UpdateIdentity GUIDs due to changes to the RevisionNumber setting. MDM services must synchronize the UpdateIdentity of an UpdateID based on the latest RevisionNumber to get the latest metadata for an update. However, update approval is based on UpdateID.
 
 > **Note**  For the Windows 10 build, the client may need to reboot after additional updates are added.
 
@@ -895,21 +885,9 @@ Here is the list of older policies that are still supported for backward compati
 -   Update/DeferUpdatePeriod
 -   Update/PauseDeferrals
 
-For Windows Update for Business, here is the list of supported policies on Windows 10 Mobile Enterprise:
-
--   For Windows 10, version 1511 (Build 10586): Update/RequireDeferUpgrade, Update/DeferUpdatePeriod and Update/PauseDeferrals. To use DeferUpdatePeriod and PauseDeferrals the RequireDeferUpgrade has to be set to 1, which essentially means for a device running 1511, the Windows Update for Business policies can only be set when a device is configured for CBB servicing.
--   For Windows 10, version 1607 (Build 14393): Update/BranchReadinessLevel, Update/DeferQualityUpdatesPeriodInDays and Update/PauseQualityUpdates. In 1607 we added support where you can configure Windows Update for Business policies when a device is configured for CB/CBB servicing.
-
-> **Note**  
-For policies supported for Windows Update for Business, when you set policies for both Windows 10, version 1607 and Windows 10, version 1511 running on 1607, then 1607 policies will be configured (1607 trumps 1511).
-
-For policies supported for Windows Update for Business, when you set 1511 policies on a device running 1607, the you will get the expected behavior for 1511 policies.
-
- 
-
 ## <a href="" id="userexperiencescreenshot"></a>Update management user experience screenshot
 
-The following screenshots of the administrator console shows the list of update titles, approval status, and additional metadata fields.
+The following screenshots of the administrator console show the list of update titles, approval status, and additional metadata fields.
 
 ![mdm update management screenshot](images/deviceupdatescreenshot1.png)
 

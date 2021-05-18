@@ -61,7 +61,6 @@ Cache-Control: no-cache
             <OSEdition>101</OSEdition> <!--New in Windows 10-->
             <OSVersion>10.0.0.0</OSVersion> <!--New in Windows 10-->
             <RequestVersion>3.0</RequestVersion> <!--Updated in Windows 10-->
-               <DeviceType>WindowsPhone</DeviceType> <!--Legacy in Windows 10 for Windows Phone/Handheld-->
             <ApplicationVersion>10.0.0.0</ApplicationVersion>
             <AuthPolicies>Certificate</AuthPolicies> <!--New in Windows 10-->
          </request> 
@@ -353,12 +352,8 @@ http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrol
                <ac:Value>49015420323756</ac:Value>
             <ac:ContextItem Name="EnrollmentType"> <!--New in Windows 10-->
                <ac:Value>Full</ac:Value>
-            <ac:ContextItem Name="DeviceType"> <!—From Windows Phone 8.1-->
-               <ac:Value>WindowsPhone</ac:Value>
-            </ac:ContextItem>
-            <ac:ContextItem Name="ApplicationVersion"> <!—From Windows Phone 8.1-->
-               <ac:Value>10.0.0.0</ac:Value>
-            </ac:ContextItem>
+              </ac:ContextItem>
+                     </ac:ContextItem>
             <ac:ContextItem Name="DeviceID"> <!--From Handheld 8.1 -->
                <ac:Value>7BA748C8-703E-4DF2-A74A-92984117346A</ac:Value> 
                <ac:ContextItem Name="EnrollmentData">

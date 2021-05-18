@@ -40,7 +40,6 @@ Organizations using an MDM to manage apps can use a policy to show only the priv
 - Enterprise
 - Education
 - Mobile
-- Mobile Enterprise
 
 For more information on configuring an MDM provider, see [Configure an MDM provider](./configure-mdm-provider-microsoft-store-for-business.md). 
 

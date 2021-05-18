@@ -189,28 +189,7 @@ The XML below is the current version for this CSP.
           <MIME>text/plain</MIME>
         </DFType>
       </DFProperties>
-    </Node>
-    <Node>
-      <NodeName>SwV</NodeName>
-      <DFProperties>
-        <AccessType>
-          <Get />
-        </AccessType>
-        <Description>Returns the Windows Phone OS software version.</Description>
-        <DFFormat>
-          <chr />
-        </DFFormat>
-        <Occurrence>
-          <One />
-        </Occurrence>
-        <Scope>
-          <Permanent />
-        </Scope>
-        <DFType>
-          <MIME>text/plain</MIME>
-        </DFType>
-      </DFProperties>
-    </Node>
+    </Node> 
     <Node>
       <NodeName>HwV</NodeName>
       <DFProperties>
