@@ -31,7 +31,7 @@ After adding the solution to Azure and configuring devices, it could take up to 
 ## Update Compliance prerequisites
 
 > [!IMPORTANT]
-> Update Compliance is a Windows service hosted in Azure global that utilizes Windows Diagnostic Data.  Please note, Update Compliance does not meet [US Government Community Compliance (GCC)](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements.  For a list of GCC offerings for Microsoft products and services see the [Microsoft Trust Center](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide).  Update Compliance is available in the Azure Commercial cloud, but not available for GCC High or US Department of Defense (DOD) customers. 
+> Update Compliance is a Windows service hosted in Azure that uses Windows diagnostic data. You should be aware that Update Compliance doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home). Update Compliance is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers. 
 
 Before you begin the process to add Update Compliance to your Azure subscription, first ensure you can meet the prerequisites:
 
