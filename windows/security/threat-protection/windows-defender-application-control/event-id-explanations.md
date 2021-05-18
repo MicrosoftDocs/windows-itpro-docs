@@ -18,13 +18,13 @@ ms.date: 3/17/2020
 ms.technology: mde
 ---
 
-# Understanding Application Control events
+## Understanding Application Control events
 
 A Windows Defender Application Control (WDAC) policy logs events locally in Windows Event Viewer in either enforced or audit mode. These events are generated under two locations:
 
- - Event IDs beginning with 30 appear in Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational
+- Event IDs beginning with 30 appear in Applications and Services logs | Microsoft | Windows | CodeIntegrity | Operational
 
- - Event IDs beginning with 80 appear in Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script
+- Event IDs beginning with 80 appear in Applications and Services logs | Microsoft | Windows | AppLocker | MSI and Script
 
 ## Microsoft Windows CodeIntegrity Operational log event IDs
 
@@ -32,7 +32,7 @@ A Windows Defender Application Control (WDAC) policy logs events locally in Wind
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 3076 | Audit executable/dll file |
 | 3077 | Block executable/dll file |
-| 3089 | Signing information event correlated with either a 3076 or 3077 event. One 3089 event is generated for each signature of a file. Contains the total number of signatures on a file and an index as to which signature it is.<br>Unsigned files will generate a single 3089 event with TotalSignatureCount 0. Correlated in the "System" portion of the event data under "Correlation ActivityID". |
+| 3089 | Signing information event correlated with either a 3076 or 3077 event. One 3089 event is generated for each signature of a file. Contains the total number of signatures on a file and an index as to which signature it is. Unsigned files will generate a single 3089 event with TotalSignatureCount 0. Correlated in the "System" portion of the event data under "Correlation ActivityID". |
 | 3099 | Indicates that a policy has been loaded |
 
 ## Microsoft Windows Applocker MSI and Script log event IDs
@@ -45,7 +45,7 @@ A Windows Defender Application Control (WDAC) policy logs events locally in Wind
 
 ## Optional Intelligent Security Graph (ISG) or Managed Installer (MI) diagnostic events
 
-If either the ISG or MI is enabled in a WDAC policy, you can optionally choose to enable 3090, 3091, and 3092 events to provide additional diagnostic information. 
+If either the ISG or MI is enabled in a WDAC policy, you can optionally choose to enable 3090, 3091, and 3092 events to provide additional diagnostic information.
 
 | Event ID | Explanation |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -75,7 +75,7 @@ In order to enable 3091 audit events and 3092 block events, you must create a Te
 ```powershell
 reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x100
 ```
-    
+
 In order to enable 3090 allow events as well as 3091 and 3092 events, you must instead create a TestFlags regkey with a value of 0x300. You can do so using the following PowerShell command:
 
 ```powershell

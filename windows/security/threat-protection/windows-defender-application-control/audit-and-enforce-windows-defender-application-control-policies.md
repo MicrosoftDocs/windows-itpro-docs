@@ -19,7 +19,7 @@ ms.date: 05/03/2021
 ms.technology: mde
 ---
 
-# Use audit events to create WDAC policy rules
+## Use audit events to create WDAC policy rules and Convert **base** policy from audits to enforced
 
 **Applies to:**
 
@@ -74,8 +74,6 @@ To familiarize yourself with creating WDAC rules from audit events, follow these
     For information on merging policies, refer to [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md) and for information on supplemental policies see [Use multiple Windows Defender Application Control Policies](deploy-multiple-windows-defender-application-control-policies.md).
 
 8. Convert the Base or Supplemental policy to binary and deploy using your preferred method.
-
-
 
 ## Convert WDAC **base** policy from audit to enforced
 
@@ -155,9 +153,9 @@ Since the enforced policy was given a unique PolicyID in the previous procedure,
    $EnforcedSuppPolicyBinary = $env:USERPROFILE+"\Desktop\"+$SupplementalPolicyName+"_"+$SupplementalPolicyID+".xml"
    ConvertFrom-CIPolicy $EnforcedSupplementalPolicy $EnforcedSuppPolicyBinary
    ```
+
 4. Repeat the steps above if you have other supplemental policies to update.
 
 ## Deploy your enforced policy and supplemental policies
 
 Now that your base policy is in enforced mode, you can begin to deploy it to your managed endpoints. For information about deploying policies, see [Deploying Windows Defender Application Control (WDAC) policies](windows-defender-application-control-deployment-guide.md).
-

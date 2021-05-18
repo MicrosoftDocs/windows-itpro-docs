@@ -106,8 +106,8 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Querying using advanced hunting
-            url:  querying-application-control-events-centrally-using-advanced-hunting.md #same as above
+            url:  querying-application-control-events-centrally-using-advanced-hunting.md
       - linkListType: tutorial
         links:
           - text: Creating a policy from event logs (video)
-            url:  querying-application-control-events-centrally-using-advanced-hunting.md #Jordan will create a video for this
+            url:   #Jordan will create a video for this

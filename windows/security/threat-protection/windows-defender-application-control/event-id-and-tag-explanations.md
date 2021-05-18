@@ -19,15 +19,15 @@ ms.date: 5/7/2021
 ms.technology: mde
 ---
 
-# Understanding Application Control event IDs and tags
+## Understanding Application Control event IDs and tags
 
 A Windows Defender Application Control (WDAC) policy logs events locally in Windows Event Viewer in either enforced or audit mode. These events include a number of fields, which provide helpful troubleshooting information to figure out exactly what an event means.
 
 These events are generated under two locations:
 
- - Event IDs beginning with 30 appear in Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational
+- Event IDs beginning with 30 appear in Applications and Services logs | Microsoft | Windows | CodeIntegrity | Operational
 
- - Event IDs beginning with 80 appear in Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script
+- Event IDs beginning with 80 appear in Applications and Services logs | Microsoft | Windows | AppLocker | MSI and Script
 
 ## Microsoft Windows CodeIntegrity Operational log event IDs
 
@@ -35,7 +35,7 @@ These events are generated under two locations:
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 3076 | Audit executable/dll file |
 | 3077 | Block executable/dll file |
-| 3089 | Signing information event correlated with either a 3076 or 3077 event. One 3089 event is generated for each signature of a file. Contains the total number of signatures on a file and an index as to which signature it is.<br>Unsigned files will generate a single 3089 event with TotalSignatureCount 0. Correlated in the "System" portion of the event data under "Correlation ActivityID". |
+| 3089 | Signing information event correlated with either a 3076 or 3077 event. One 3089 event is generated for each signature of a file. Contains the total number of signatures on a file and an index as to which signature it is. Unsigned files will generate a single 3089 event with TotalSignatureCount 0. Correlated in the "System" portion of the event data under "Correlation ActivityID". |
 | 3099 | Indicates that a policy has been loaded |
 
 ## Microsoft Windows Applocker MSI and Script log event IDs
@@ -48,7 +48,7 @@ These events are generated under two locations:
 
 ## Optional Intelligent Security Graph (ISG) or Managed Installer (MI) diagnostic events
 
-If either the ISG or MI is enabled in a WDAC policy, you can optionally choose to enable 3090, 3091, and 3092 events to provide additional diagnostic information. 
+If either the ISG or MI is enabled in a WDAC policy, you can optionally choose to enable 3090, 3091, and 3092 events to provide additional diagnostic information.
 
 | Event ID | Explanation |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -84,9 +84,7 @@ In order to enable 3090 allow events as well as 3091 and 3092 events, you must i
 ```powershell
 reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x300
 ```
-
-<br />  
-
+  
 ## Event Tags
 
 Below, we have documented the values and meanings for a few useful event tags.
@@ -100,6 +98,7 @@ Represents the type of signature which verified the image.
 | 0 | Unsigned or verification has not been attempted |
 | 1 | Embedded signature |
 | 2 | Cached signature; presence of CI EA shows that file had been previously verified |
+| 3 | Cached catalog verified via Catalog Database or searching catalog directly |
 | 4 | Un-cached catalog verified via Catalog Database or searching catalog directly |
 | 5 | Successfully verified using an EA that informs CI which catalog to try first |
 |6 | AppX / MSIX package catalog verified |
@@ -131,14 +130,20 @@ Represents why verification failed, or if it succeeded.
 | VerificationError Value | Explanation |
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 | Successfully verified signature |
+| 1 | File has an invalid hash |
 | 2 | File contains shared writable sections |
+| 3 | File is not signed|
 | 4 | Revoked signature |
 | 5 | Expired signature |
+| 6 | File is signed using a weak hashing algorithm which does not meet the minimum policy |
 | 7 | Invalid root certificate |
 | 8 | Signature was unable to be validated; generic error |
 | 9 | Signing time not trusted |
+| 10 | The file must be signed using page hashes for this scenario |
+| 11 | Page hash mismatch |
 | 12 | Not valid for a PPL (Protected Process Light) |
 | 13 | Not valid for a PP (Protected Process) |
+| 14 | The signature is missing the required ARM EKU |
 | 15 | Failed WHQL check |
 | 16 | Default policy signing level not met |
 | 17 | Custom policy signing level not met; returned when signature doesn't validate against an SBCP-defined set of certs |
@@ -149,5 +154,7 @@ Represents why verification failed, or if it succeeded.
 | 22 | Not IUM (Isolated User Mode) signed; indicates trying to load a non-trustlet binary into a trustlet |
 | 23 | Invalid image hash |
 | 24 | Flight root not allowed; indicates trying to run flight-signed code on production OS |
+| 25 | Anti-cheat policy violation |
 | 26 | Explicitly denied by WADC policy |
+| 27 | The signing chain appears to be tampered/invalid |
 | 28 | Resource page hash mismatch |
