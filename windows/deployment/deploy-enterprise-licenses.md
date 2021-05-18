@@ -251,7 +251,7 @@ Use the following figures to help you troubleshoot when users experience these c
 
 ### Review requirements on devices
 
-Devices must be running Windows 10 Pro, version 1703, and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
+Devices must be running Windows 10 Pro, version 1703 (or later), and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
 
 **To determine if a device is Azure Active Directory joined:**
 
@@ -264,4 +264,4 @@ At a command prompt, type: **winver**
 
 A popup window will display the Windows 10 version number and detailed OS build information.
 
-If a device is running a previous version of Windows 10 Pro (for example, version 1511), it will not be upgraded to Windows 10 Enterprise when a user signs in, even if the user has been assigned a subscription in the CSP portal.
+If a device is running a version of Windows 10 Pro prior to version 1703 (for example, version 1511), it will not be upgraded to Windows 10 Enterprise when a user signs in, even if the user has been assigned a subscription in the CSP portal.

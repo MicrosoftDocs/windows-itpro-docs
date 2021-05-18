@@ -34,7 +34,7 @@ Security auditing is one of the most powerful tools that you can use to maintain
 | Topic | Description |
 | - | - |
 |[Basic security audit policies](basic-security-audit-policies.md) |Before you implement auditing, you must decide on an auditing policy. A basic audit policy specifies categories of security-related events that you want to audit. When this version of Windows is first installed, all auditing categories are disabled. By enabling various auditing event categories, you can implement an auditing policy that suits the security needs of your organization. |
-|[Advanced security audit policies](advanced-security-auditing.md) |Advanced security audit policy settings are found in **Security Settings\Advanced Audit Policy Configuration\System Audit Policies** and appear to overlap with basic security audit policies, but they are recorded and applied differently. |
+|[Advanced security audit policies](./advanced-security-auditing.md) |Advanced security audit policy settings are found in **Security Settings\Advanced Audit Policy Configuration\System Audit Policies** and appear to overlap with basic security audit policies, but they are recorded and applied differently. |
 
 
 

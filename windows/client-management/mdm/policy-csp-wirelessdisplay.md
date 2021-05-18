@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - WirelessDisplay
 
-
-
 <hr/>
 
 <!--Policies-->

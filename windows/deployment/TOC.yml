@@ -164,6 +164,11 @@
               href: update/waas-manage-updates-wufb.md
             - name: Configure Windows Update for Business
               href: update/waas-configure-wufb.md
+            - name: Windows Update for Business deployment service
+              href: update/deployment-service-overview.md
+              items:
+                - name: Troubleshoot the Windows Update for Business deployment service
+                  href: update/deployment-service-troubleshoot.md
             - name: Enforcing compliance deadlines for updates
               href: update/wufb-compliancedeadlines.md
             - name: Integrate Windows Update for Business with management solutions
@@ -249,6 +254,8 @@
                   href: update/windows-update-errors.md
                 - name: Windows Update error code reference
                   href: update/windows-update-error-reference.md
+                - name: Troubleshoot the Windows Update for Business deployment service
+                  href: update/deployment-service-troubleshoot.md
 
     - name: Reference
       items:
@@ -293,7 +300,7 @@
                     - name: Security and data protection considerations for Windows To Go
                       href: planning/security-and-data-protection-considerations-for-windows-to-go.md
                     - name: "Windows To Go: frequently asked questions"
-                      href: planning/windows-to-go-frequently-asked-questions.md
+                      href: planning/windows-to-go-frequently-asked-questions.yml
         
                 - name: Volume Activation Management Tool (VAMT) technical reference
                   items:
@@ -391,7 +398,7 @@
                         - name: Common Issues
                           href: usmt/usmt-common-issues.md
                         - name: Frequently Asked Questions
-                          href: usmt/usmt-faq.md
+                          href: usmt/usmt-faq.yml
                         - name: Log Files
                           href: usmt/usmt-log-files.md
                         - name: Return Codes

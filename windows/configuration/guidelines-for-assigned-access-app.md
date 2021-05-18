@@ -5,9 +5,9 @@ keywords: ["kiosk", "lockdown", "assigned access"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 10/02/2018
 ms.reviewer: 

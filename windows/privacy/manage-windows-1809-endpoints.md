@@ -399,7 +399,7 @@ The following endpoint is used to retrieve Skype configuration values. To turn o
 ## Windows Defender
 
 The following endpoint is used for Windows Defender when Cloud-based Protection is enabled.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender), the device will not use Cloud-based Protection. For a detailed list of Microsoft Defender Antivirus cloud service connections, see [Allow connections to the Microsoft Defender Antivirus cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud-service).
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender), the device will not use Cloud-based Protection. For a detailed list of Microsoft Defender Antivirus cloud service connections, see [Allow connections to the Microsoft Defender Antivirus cloud service](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud-service).
 
 | Source process | Protocol | Destination |
 |:--------------:|:--------:|:------------|

@@ -28612,30 +28612,6 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>AllowScreenTimeoutWhileLockedUserConfig</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Specifies whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>AllowSimpleDevicePassword</NodeName>
           <DFProperties>
             <AccessType>
@@ -28999,31 +28975,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
           </DFProperties>
         </Node>
-        <Node>
-          <NodeName>ScreenTimeoutWhileLocked</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Specifies whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-      </Node>
       <Node>
         <NodeName>Display</NodeName>
         <DFProperties>
@@ -60351,30 +60302,6 @@ Related policy:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>AllowScreenTimeoutWhileLockedUserConfig</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>Specifies whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>AllowSimpleDevicePassword</NodeName>
           <DFProperties>
             <AccessType>
@@ -60747,31 +60674,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
-        <Node>
-          <NodeName>ScreenTimeoutWhileLocked</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>10</DefaultValue>
-            <Description>Specifies whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="10" high="1800"></MSFT:SupportedValues>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-      </Node>
       <Node>
         <NodeName>Display</NodeName>
         <DFProperties>
