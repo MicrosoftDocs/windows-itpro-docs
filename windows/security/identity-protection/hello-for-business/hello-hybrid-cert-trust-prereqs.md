@@ -75,7 +75,7 @@ The two directories used in hybrid deployments must be synchronized.  You need A
 Organizations using older directory synchronization technology, such as DirSync or Azure AD sync, need to upgrade to Azure AD Connect. In case the schema of your local AD DS was changed since the last directory synchronization, you may need to [refresh directory schema](/azure/active-directory/hybrid/how-to-connect-installation-wizard#refresh-directory-schema).
  
 > [!NOTE]
-> User accounts enrolling for Windows Hello for Business in Hybrid Certificate Trust scenario must have UPN matching a verified domain name in Azure AD. More details [here](https://docs.microsoft.com/en-us/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current#troubleshoot-post-join-issues).
+> User accounts enrolling for Windows Hello for Business in a Hybrid Certificate Trust scenario must have a UPN matching a verified domain name in Azure AD. For more details, see [Troubleshoot Post-Join issues](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current#troubleshoot-post-join-issues).
 
 > [!NOTE]
 > Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory.
