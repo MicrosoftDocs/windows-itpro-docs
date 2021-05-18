@@ -125,7 +125,7 @@ See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configura
 
 Example 1: AAD focused.
 
-The following example updates the built-in administrators group with AAD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444. On an AAD joined machines**. 
+The following example updates the built-in administrators group with AAD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine. 
 
 ```xml
 <GroupConfiguration>
@@ -239,7 +239,7 @@ To troubleshoot Name/SID lookup APIs:
 
 1. Enable **lsp.log** on the client device by running the following commands:
 
-    ```cmd
+    ```powershell
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgInfoLevel -Value 0x800 -Type dword -Force
 
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgTraceOptions -Value 0x1 -Type dword -Force
@@ -249,11 +249,12 @@ To troubleshoot Name/SID lookup APIs:
 
 2. Turn the logging off by running the following command:
 
-    ```cmd
+    ```powershell
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgInfoLevel -Value 0x0 -Type dword -Force
     
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgTraceOptions -Value 0x0 -Type dword -Force
     ```
+
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
                           <xs:simpleType name="name">
