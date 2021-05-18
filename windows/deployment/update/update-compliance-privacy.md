@@ -24,7 +24,7 @@ Update Compliance is fully committed to privacy, centering on these tenets:
 - **Trust:** Update Compliance supports the Online Services Terms.
 
 > [!IMPORTANT]
-> Update Compliance is a Windows service hosted in Azure global that utilizes Windows Diagnostic Data.  Please note, Update Compliance does not meet [US Government Community Compliance (GCC)](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements.  For a list of GCC offerings for Microsoft products and services see the [Microsoft Trust Center](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide).  Update Compliance is available in the Azure Commercial cloud, but not available for GCC High or US Department of Defense (DOD) customers. 
+> Update Compliance is a Windows service hosted in Azure global that uses Windows diagnostic data. You shoudl be aware that Update Compliance does not meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services see the [Microsoft Trust Center](/compliance/regulatory/offering-home). Update Compliance is available in the Azure Commercial cloud, but not available for GCC High or US Department of Defense customers. 
 
 ## Data flow for Update Compliance
 
