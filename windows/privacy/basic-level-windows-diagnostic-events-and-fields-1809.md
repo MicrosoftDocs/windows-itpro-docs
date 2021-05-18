@@ -5128,7 +5128,7 @@ The following fields are available:
 - **FirmwareResetReasonPch**  Reason for system reset provided by firmware.
 - **FirmwareResetReasonPchAdditional**  Additional information on system reset reason provided by firmware if needed.
 - **FirmwareResetReasonSupplied**  Flag indicating that a reason for system reset was provided by firmware.
-- **IO**  Amount of data written to and read from the disk by the OS Loader during boot. See [IO](#io).
+- **IO**  Amount of data written to and read from the disk by the OS Loader during boot. See IO.
 - **LastBootSucceeded**  Flag indicating whether the last boot was successful.
 - **LastShutdownSucceeded**  Flag indicating whether the last shutdown was successful.
 - **MaxAbove4GbFreeRange**  This field describes the largest memory range available above 4Gb.
@@ -7772,7 +7772,7 @@ The following fields are available:
 
 - **DPRange**  Maximum mean value range.
 - **DPValue**  Randomized bit value (0 or 1) that can be reconstituted over a large population to estimate the mean.
-- **Value**  Standard UTC emitted DP value structure See [Value](#value).
+- **Value**  Standard UTC emitted DP value structure See Value.
 
 
 ## Windows Store events

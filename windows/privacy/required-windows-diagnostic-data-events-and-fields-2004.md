@@ -1714,6 +1714,23 @@ The following fields are available:
 
 ## Audio endpoint events
 
+### MicArrayGeometry
+
+This event provides information about the layout of the individual microphone elements in the microphone array. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **MicCoords**  The location and orientation of the microphone element.
+- **usFrequencyBandHi**  The high end of the frequency range for the microphone.
+- **usFrequencyBandLo**  The low end of the frequency range for the microphone.
+- **usMicArrayType**  The type of the microphone array.
+- **usNumberOfMicrophones**  The number of microphones in the array.
+- **usVersion**  The version of the microphone array specification.
+- **wHorizontalAngleBegin**  The horizontal angle of the start of the working volume (reported as radians times 10,000).
+- **wHorizontalAngleEnd**  The horizontal angle of the end of the working volume (reported as radians times 10,000).
+- **wVerticalAngleBegin**  The vertical angle of the start of the working volume (reported as radians times 10,000).
+- **wVerticalAngleEnd**  The vertical angle of the end of the working volume (reported as radians times 10,000).
+
 ### Microsoft.Windows.Audio.EndpointBuilder.DeviceInfo
 
 This event logs the successful enumeration of an audio endpoint (such as a microphone or speaker) and provides information about the audio endpoint. The data collected with this event is used to keep Windows performing properly.
@@ -5584,6 +5601,29 @@ The following fields are available:
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of remediation.
 
+### wilActivity
+
+This event provides a Windows Internal Library context used for Product and Service diagnostics. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **callContext**  The function where the failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
+- **hresult**  The HResult of the overall activity.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
+- **threadId**  The ID of the thread on which the activity is executing.
 
 ## Update events
 
