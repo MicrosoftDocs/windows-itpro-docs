@@ -26,7 +26,7 @@ The features described below are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
-| Internet Explorer (IE) 11 | he Internet Explorer (IE) 11 desktop application will end support for certain operating systems starting June 15, 2022. For more information, see [Internet Explorer 11](/lifecycle/products/internet-explorer-11). | 21H1 |
+| Internet Explorer (IE) 11 | The IE 11 desktop application will end support for certain operating systems starting June 15, 2022. For more information, see [Internet Explorer 11](/lifecycle/products/internet-explorer-11). | 21H1 |
 | Personalization roaming | Roaming of Personalization settings (including wallpaper, slideshow, accent colors, and lock screen images) is no longer being developed and might be removed in a future release. | 21H1 |
 | Windows Management Instrumentation Command line (WMIC) tool. | The WMIC tool is deprecated in Windows 10, version 21H1 and the 21H1 semi-annual channel release of Windows Server. This tool is superseded by [Windows PowerShell for WMI](/powershell/scripting/learn/ps101/07-working-with-wmi). Note: This deprecation only applies to the [command-line management tool](/windows/win32/wmisdk/wmic). WMI itself is not affected. | 21H1 |
 | Timeline | Starting in July 2021, if you have your activity history synced across your devices through your Microsoft account (MSA), you'll no longer have the option to upload new activity in Timeline. See [Get help with timeline](https://support.microsoft.com/windows/get-help-with-timeline-febc28db-034c-d2b0-3bbe-79aa0c501039).| 20H2 |
