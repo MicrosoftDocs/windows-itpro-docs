@@ -30,6 +30,9 @@ After adding the solution to Azure and configuring devices, it could take up to 
 
 ## Update Compliance prerequisites
 
+> [!IMPORTANT]
+> Update Compliance is a Windows service hosted in Azure global that utilizes Windows Diagnostic Data.  Please note, Update Compliance does not meet [US Government Community Compliance (GCC)](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements.  For a list of GCC offerings for Microsoft products and services see the [Microsoft Trust Center](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide).  Update Compliance is available in the Azure Commercial cloud, but not available for GCC High or US Department of Defense (DOD) customers. 
+
 Before you begin the process to add Update Compliance to your Azure subscription, first ensure you can meet the prerequisites:
 
 - **Compatible Operating Systems and Editions**: Update Compliance works only with Windows 10 Professional, Education, and Enterprise editions. Update Compliance supports both the typical Windows 10 Enterprise edition, as well as [Windows 10 Enterprise multi-session](/azure/virtual-desktop/windows-10-multisession-faq). Update Compliance only provides data for the standard Desktop Windows 10 version and is not currently compatible with Windows Server, Surface Hub, IoT, etc.
