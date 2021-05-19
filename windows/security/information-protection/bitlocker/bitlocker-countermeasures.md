@@ -43,7 +43,7 @@ Before Windows starts, you must rely on security features implemented as part of
 
 ### Trusted Platform Module
 
-A TPM is a microchip designed to provide basic security-related functions, primarily involving encryption keys. 
+A trusted platform module (TPM) is a microchip designed to provide basic security-related functions, primarily involving encryption keys. 
 On some platforms, TPM can alternatively be implemented as a part of secure firmware. 
 BitLocker binds encryption keys with the TPM to ensure that a computer has not been tampered with while the system was offline. 
 For more info about TPM, see [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview).
@@ -126,7 +126,7 @@ For SBP-2 and 1394 (a.k.a. Firewire), refer to the “SBP-2 Mitigation” sectio
  
 ## Attack countermeasures
 
-This section covers countermeasures for specific types attacks. 
+This section covers countermeasures for specific types of attacks. 
 
 ### Bootkits and rootkits
 
@@ -162,7 +162,7 @@ The following sections cover mitigations for different types of attackers.
 
 Physical access may be limited by a form factor that does not expose buses and memory. 
 For example, there are no external DMA-capable ports, no exposed screws to open the chassis, and memory is soldered to the mainboard. 
-This attacker of opportunity does not use destructive methods or sophisticated forensics hardware/software.  
+This attacker of opportunity does not use destructive methods or sophisticated forensics hardware/software. 
 
 Mitigation: 
 - Pre-boot authentication set to TPM only (the default)
@@ -172,7 +172,7 @@ Mitigation:
 Targeted attack with plenty of time; this attacker will open the case, will solder, and will use sophisticated hardware or software.
 
 Mitigation:
-- Pre-boot authentication set to TPM with a PIN protector (with a sophisticated alphanumeric PIN to help the TPM anti-hammering mitigation).
+- Pre-boot authentication set to TPM with a PIN protector (with a sophisticated alphanumeric PIN [enhanced pin] to help the TPM anti-hammering mitigation).
 
   -And-
 
@@ -197,4 +197,4 @@ For secure administrative workstations, Microsoft recommends TPM with PIN protec
 - [Blocking the SBP-2 driver and Thunderbolt controllers to reduce 1394 DMA and Thunderbolt DMA threats to BitLocker](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d)
 - [BitLocker Group Policy settings](./bitlocker-group-policy-settings.md)
 - [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp)
-- [Winlogon automatic restart sign-on (ARSO)](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)
+- [Winlogon automatic restart sign-on (ARSO)](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)

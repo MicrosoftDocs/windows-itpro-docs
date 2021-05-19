@@ -1,6 +1,6 @@
 ---
 title: Windows 10 - Features that have been removed
-description: In this article, learn about the features and functionality that have been removed or replaced in Windows 10.
+description: In this article, learn about the features and functionality that has been removed or replaced in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
@@ -28,10 +28,11 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Removed in version |
 | ----------- | --------------------- | ------ |
-|Microsoft Edge|The legacy version of Microsoft Edge is no longer supported after March 9th, 2021. For more information, see [End of support reminder for Microsoft Edge Legacy](/lifecycle/announcements/edge-legacy-eos-details). | 21H1 |
+| XDDM-based remote display driver  | Support for Windows 2000 Display Driver Model (XDDM) based remote display drivers is removed in this release. Independent Software Vendors that use an XDDM-based remote display driver should plan a migration to the WDDM driver model. For more information on implementing remote display indirect display driver, see [Updates for IddCx versions 1.4 and later](/windows-hardware/drivers/display/iddcx1.4-updates). | 21H1 |
+|Microsoft Edge|The legacy version of Microsoft Edge is no longer supported after March 9, 2021. For more information, see [End of support reminder for Microsoft Edge Legacy](/lifecycle/announcements/edge-legacy-eos-details). | 21H1 |
 |MBAE service metadata|The MBAE app experience is replaced by an MO UWP app. Metadata for the MBAE service is removed. | 20H2 |
 | Connect app | The **Connect** app for wireless projection using Miracast is no longer installed by default, but is available as an optional feature. To install the app, click on **Settings** > **Apps** > **Optional features** > **Add a feature** and then install the **Wireless Display** app. | 2004 |
-| Rinna and Japanese Address suggestion | The Rinna and Japanese Address suggestion service for Microsoft Japanese Input Method Editor (IME) ended on August 13th, 2020. For more information, see [Rinna and Japanese Address suggestion will no longer be offered](https://support.microsoft.com/help/4576767/windows-10-rinna-and-japanese-address-suggestion) | 2004 |
+| Rinna and Japanese Address suggestion | The Rinna and Japanese Address suggestion service for Microsoft Japanese Input Method Editor (IME) ended on August 13, 2020. For more information, see [Rinna and Japanese Address suggestion will no longer be offered](https://support.microsoft.com/help/4576767/windows-10-rinna-and-japanese-address-suggestion) | 2004 |
 | Cortana | Cortana has been updated and enhanced in the Windows 10 May 2020 Update. With [these changes](/windows/whats-new/whats-new-windows-10-version-2004#cortana), some previously available consumer skills such as music, connected home, and other non-Microsoft skills are no longer available. | 2004 |
 | Windows To Go | Windows To Go was announced as deprecated in Windows 10, version 1903 and is removed in this release. | 2004 |
 | Mobile Plans and Messaging apps | Both apps are still supported, but are now distributed in a different way. OEMs can now include these apps in Windows images for cellular enabled devices.  The apps are removed for non-cellular devices.| 2004 |
@@ -40,7 +41,7 @@ The following features and functionalities have been removed from the installed 
 | Desktop messaging app doesn't offer messages sync |  The messaging app on Desktop has a sync feature that can be used to sync SMS text messages received from Windows Mobile and keep a copy of them on the Desktop. The sync feature has been removed from all devices. Due to this change, you will only be able to access messages from the device that received the message.  | 1903 |
 |Business Scanning, also called Distributed Scan Management (DSM)|We're removing this secure scanning and scanner management capability - there are no devices that support this feature.| 1809 |
 |[FontSmoothing setting](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-visualeffects-fontsmoothing) in unattend.xml|The FontSmoothing setting let you specify the font antialiasing strategy to use across the system. We've changed Windows 10 to use [ClearType](/typography/cleartype/) by default, so we're removing this setting as it is no longer necessary. If you include this setting in the unattend.xml file, it'll be ignored.| 1809 |
-|Hologram app|We've replaced the Hologram app with the [Mixed Reality Viewer](https://support.microsoft.com/help/4041156/windows-10-mixed-reality-help). If you would like to create 3D word art, you can still do that in Paint 3D and view your art in VR or Hololens with the Mixed Reality Viewer.| 1809 |
+|Hologram app|We've replaced the Hologram app with the [Mixed Reality Viewer](https://support.microsoft.com/help/4041156/windows-10-mixed-reality-help). If you would like to create 3D word art, you can still do that in Paint 3D and view your art in VR or HoloLens with the Mixed Reality Viewer.| 1809 |
 |limpet.exe|We're releasing the limpet.exe tool, used to access TPM for Azure connectivity, as open source.| 1809 |
 |Phone Companion|When you update to Windows 10, version 1809, the Phone Companion app will be removed from your PC. Use the **Phone** page in the Settings app to sync your mobile phone with your PC. It includes all the Phone Companion features.| 1809 |
 |Future updates through [Windows Embedded Developer Update](/previous-versions/windows/embedded/ff770079(v=winembedded.60)) for Windows Embedded Standard 7-SP1 (WES7-SP1) and Windows Embedded Standard 8 (WES8)|We’re no longer publishing new updates to the WEDU server. Instead, you may secure any new updates from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). [Learn how](https://techcommunity.microsoft.com/t5/Windows-Embedded/Change-to-the-Windows-Embedded-Developer-Update/ba-p/285704) to get updates from the catalog.| 1809 |
