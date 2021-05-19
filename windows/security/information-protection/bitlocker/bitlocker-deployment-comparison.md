@@ -46,9 +46,9 @@ features can be used to protect your data through drive encryption.
 admin center        |    Configuration Manager console     |    Group Policy Management Console
 and MBAM sites     |
 |Administrative portal installation required     |         |       |         |
-|Compliance reporting capabilities     |         |         |         |
-|Force encryption     |         |       |         |
-|Encryption for storage cards (mobile)      |         |         |         |
+|Compliance reporting capabilities     |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |   :::image type="content" source="images/dot.png" alt-text="dot":::      |  :::image type="content" source="images/dot.png" alt-text="dot":::       |
+|Force encryption     |   :::image type="content" source="images/dot.png" alt-text="dot":::      |  :::image type="content" source="images/dot.png" alt-text="dot":::     |  :::image type="content" source="images/dot.png" alt-text="dot":::       |
+|Encryption for storage cards (mobile)      |    :::image type="content" source="images/dot.png" alt-text="dot":::     | :::image type="content" source="images/dot.png" alt-text="dot":::        |         |
 |Allow recovery password      |         |       |         |
 |Manage startup authentication     |         |         |         |
 |Select cipher strength and algorithms for fixed 
