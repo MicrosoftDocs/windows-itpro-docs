@@ -95,7 +95,7 @@ To find the PCR information, go to the end of the file.
 ## Use PCPTool to decode Measured Boot logs
 
 > [!NOTE]
-> PCPTool is a visual studio solution and need to build the executeable before using this tool.
+> PCPTool is a Visual Studio solution, but you need to build the executable before you can start using this tool.
 
 PCPTool is part of the [TPM Platform Crypto-Provider Toolkit](https://www.microsoft.com/download/details.aspx?id=52487). The tool decodes a Measured Boot log file and converts it into an XML file.
 
