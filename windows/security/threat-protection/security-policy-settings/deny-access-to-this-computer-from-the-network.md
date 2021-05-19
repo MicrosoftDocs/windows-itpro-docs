@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 05/19/2021
 ms.technology: mde
 ---
 
 # Deny access to this computer from the network
 
 **Applies to**
--   Windows 10
+- Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Deny access to this computer from the network** security policy setting.
 
@@ -33,12 +33,12 @@ Constant: SeDenyNetworkLogonRight
 
 ### Possible values
 
--   User-defined list of accounts
--   Guest
+- User-defined list of accounts
+- Guest
 
 ### Best practices
 
--   Because all Active Directory Domain Services programs use a network logon for access, use caution when you assign this user right on domain controllers.
+- Because all Active Directory Domain Services programs use a network logon for access, use caution when you assign this user right on domain controllers.
 
 ### Location
 
@@ -53,13 +53,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined | 
-| Default Domain Controller Policy | Guest | 
-| Stand-Alone Server Default Settings | Guest | 
-| Domain Controller Effective Default Settings | Guest | 
-| Member Server Effective Default Settings | Guest | 
-| Client Computer Effective Default Settings | Guest | 
- 
+| Default Domain Policy | Not defined |
+| Default Domain Controller Policy | Guest |
+| Stand-Alone Server Default Settings | Guest |
+| Domain Controller Effective Default Settings | Guest |
+| Member Server Effective Default Settings | Guest |
+| Client Computer Effective Default Settings | Guest |
+
 ## Policy management
 
 This section describes features and tools available to help you manage this policy.
@@ -74,10 +74,10 @@ Any change to the user rights assignment for an account becomes effective the ne
 
 Settings are applied in the following order through a Group Policy Object (GPO), which will overwrite settings on the local computer at the next Group Policy update:
 
-1.  Local policy settings
-2.  Site policy settings
-3.  Domain policy settings
-4.  OU policy settings
+1. Local policy settings
+2. Site policy settings
+3. Domain policy settings
+4. OU policy settings
 
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
@@ -93,12 +93,15 @@ Users who can log on to the device over the network can enumerate lists of accou
 
 Assign the **Deny access to this computer from the network** user right to the following accounts:
 
--   Anonymous logon
--   Built-in local Administrator account
--   Local Guest account
--   All service accounts
+- Anonymous logon
+- Built-in local Administrator account
+- Local Guest account
+- All service accounts
 
 An important exception to this list is any service accounts that are used to start services that must connect to the device over the network. For example, let’s say you have configured a shared folder for web servers to access, and you present content within that folder through a website. You may need to allow the account that runs IIS to log on to the server with the shared folder from the network. This user right is particularly effective when you must configure servers and workstations on which sensitive information is handled because of regulatory compliance concerns.
+
+> [!NOTE]
+> If the service account is configured in the logon properties of a Windows service, it requires network logon rights to the domain controllers to start properly.
 
 ### Potential impact
 

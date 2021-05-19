@@ -31,9 +31,6 @@ The requirements are separated into different categories:
 
 ## Required policies
 
-> [!NOTE]
-> Windows 10 MDM and Group Policies are backed by registry keys. It is not recommended you set these registry keys directly for configuration as it can lead to unexpected behavior, so the exact registry key locations are not provided, though they are referenced for troubleshooting configuration issues with the [Update Compliance Configuration Script](update-compliance-configuration-script.md).
-
 Update Compliance has a number of policies that must be appropriately configured in order for devices to be processed by Microsoft and visible in Update Compliance. They are enumerated below, separated by whether the policies will be configured via [Mobile Device Management](/windows/client-management/mdm/) (MDM) or Group Policy. For both tables:
 
 - **Policy** corresponds to the location and name of the policy.

@@ -1,5 +1,7 @@
 - name: What's new in Windows 10
   href: index.yml
+- name: What's new in Windows 10, version 21H1
+  href: whats-new-windows-10-version-21H1.md
 - name: What's new in Windows 10, version 20H2
   href: whats-new-windows-10-version-20H2.md
 - name: What's new in Windows 10, version 2004
@@ -10,10 +12,10 @@
   href: whats-new-windows-10-version-1903.md
 - name: What's new in Windows 10, version 1809
   href: whats-new-windows-10-version-1809.md
-- name: What's new in Windows 10, version 1803
-  href: whats-new-windows-10-version-1803.md
 - name: Previous versions
   items:
+    - name: What's new in Windows 10, version 1803
+      href: whats-new-windows-10-version-1803.md
     - name: What's new in Windows 10, version 1709
       href: whats-new-windows-10-version-1709.md
     - name: What's new in Windows 10, version 1703
