@@ -44,7 +44,7 @@ The reference image described in this guide is designed primarily for deployment
 - The image is easy to move between lab, test, and production.
 
 > [!NOTE]
-> [KB4564442](https://download.microsoft.com/download/3/0/6/306AC1B2-59BE-43B8-8C65-E141EF287A5E/KB4564442/MDT_KB4564442.exe) needs to be download for Windows 10 deployments using the Microsoft Deployment Toolkit (MDT) fail when used with the Windows Assessment and Deployment Kit (ADK). See [Windows 10 deployments fail with Microsoft Deployment Toolkit on computers with BIOS type firmware](https://support.microsoft.com/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7).
+> [KB4564442](https://download.microsoft.com/download/3/0/6/306AC1B2-59BE-43B8-8C65-E141EF287A5E/KB4564442/MDT_KB4564442.exe) needs to be downloaded for Windows 10 deployments using the Microsoft Deployment Toolkit (MDT) to prevent failure when used with the Windows Assessment and Deployment Kit (ADK). See [Windows 10 deployments fail with Microsoft Deployment Toolkit on computers with BIOS type firmware](https://support.microsoft.com/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7).
 
 
 ## Set up the MDT build lab deployment share
