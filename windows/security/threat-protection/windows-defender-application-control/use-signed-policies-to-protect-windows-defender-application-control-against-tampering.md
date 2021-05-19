@@ -103,4 +103,4 @@ If you do not have a code signing certificate, see [Optional: Create a code sign
 
 
 > [!NOTE]
-   > The device with the signed policy must be rebooted one time with Secure Boot enabled for the UEFI lock to be set. 
+> The device with the signed policy must be rebooted one time with Secure Boot enabled for the UEFI lock to be set. 
