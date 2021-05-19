@@ -37,7 +37,7 @@ Before signing WDAC policies for the first time, be sure to enable rule options 
 
 To sign a WDAC policy with SignTool.exe, you need the following components:
 
--   SignTool.exe, found in the [Windows SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk/) (Windows 7 or later)
+-   SignTool.exe, found in the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) (Windows 7 or later)
 
 -   The binary format of the WDAC policy that you generated in [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md) or another WDAC policy that you have created
 
