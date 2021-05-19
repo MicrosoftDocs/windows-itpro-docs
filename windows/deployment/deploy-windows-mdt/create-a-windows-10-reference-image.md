@@ -43,6 +43,10 @@ The reference image described in this guide is designed primarily for deployment
 - To ensures that you won't have unwanted applications that could be installed as part of a driver install but not removed by the Sysprep process.
 - The image is easy to move between lab, test, and production.
 
+> [!NOTE]
+> [KB4564442](https://download.microsoft.com/download/3/0/6/306AC1B2-59BE-43B8-8C65-E141EF287A5E/KB4564442/MDT_KB4564442.exe) needs to be download for Windows 10 deployments using the Microsoft Deployment Toolkit (MDT) fail when used with the Windows Assessment and Deployment Kit (ADK). See [Windows 10 deployments fail with Microsoft Deployment Toolkit on computers with BIOS type firmware](https://support.microsoft.com/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7).
+
+
 ## Set up the MDT build lab deployment share
 
 With Windows 10, there is no hard requirement to create reference images. However, to reduce the time needed for deployment, you might want to create a reference image that contains a few base applications as well as all of the latest updates. This section will show you how to create and configure the MDT Build Lab deployment share to create a Windows 10 reference image. Because reference images will be deployed only to virtual machines during the creation process and have specific settings (rules), you should always create a separate deployment share specifically for this process.
