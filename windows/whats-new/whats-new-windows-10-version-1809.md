@@ -45,7 +45,8 @@ To learn more about Autopilot self-deploying mode and to see step-by-step instru
 
 We’ve continued to work on the **Current threats** area in  [Virus & threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
-   ![Virus & threat protection settings](images/virus-and-threat-protection.png "Virus & threat protection settings")
+> [!div class="mx-imgBorder"]
+> ![Virus & threat protection settings](images/virus-and-threat-protection.png "Virus & threat protection settings")
 
 With controlled folder access you can help prevent ransomware and other destructive malware from changing your personal files. In some cases, apps that you normally use might be blocked from making changes to common folders like **Documents** and **Pictures**. We’ve made it easier for you to add apps that were recently blocked so you can keep using your device without turning off the feature altogether.
 
@@ -76,10 +77,16 @@ For example, you can choose the XTS-AES 256 encryption algorithm, and have it ap
 To achieve this:
 
 1. Configure the [encryption method settings](/intune/endpoint-protection-windows-10#windows-encryption) in the Windows 10 Endpoint Protection profile to the desired encryption algorithm. 
+
 2. [Assign the policy](/intune/device-profile-assign) to your Autopilot device group. 
-    - **IMPORTANT**: The encryption policy must be assigned to **devices** in the group, not users.
+
+   > [!IMPORTANT]
+   > The encryption policy must be assigned to **devices** in the group, not users.
+
 3. Enable the Autopilot [Enrollment Status Page](/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
-    - **IMPORTANT**: If the ESP is not enabled, the policy will not apply before encryption starts.
+
+    > [!IMPORTANT]
+    > If the ESP is not enabled, the policy will not apply before encryption starts.
 
 For more information, see [Setting the BitLocker encryption algorithm for Autopilot devices](/windows/deployment/windows-autopilot/bitlocker).
 
@@ -91,17 +98,27 @@ Additionally, users who are managed by enterprise policies will be able to check
 
 To try this:
 
-1. Go to**Windows Security** and select **App & browser control**.
+1. Go to **Windows Security** and select **App & browser control**.
+
 2. Under **Isolated browsing**, select **Install Windows Defender Application Guard**, then install and restart the device.
+
 3. Select **Change Application Guard** settings.
+
 4. Configure or check Application Guard settings.
 
 See the following example:
 
-![Security at a glance](images/1_AppBrowser.png "app and browser control")
-![Isolated browser](images/2_InstallWDAG.png "isolated browsing")
-![change WDAG settings](images/3_ChangeSettings.png "change settings")
-![view WDAG settings](images/4_ViewSettings.jpg "view settings")
+> [!div class="mx-imgBorder"]
+> ![Security at a glance](images/1_AppBrowser.png "app and browser control")
+
+> [!div class="mx-imgBorder"]
+> ![Isolated browser](images/2_InstallWDAG.png "isolated browsing")
+
+> [!div class="mx-imgBorder"]
+> ![change WDAG settings](images/3_ChangeSettings.png "change settings")
+
+> [!div class="mx-imgBorder"]
+> ![view WDAG settings](images/4_ViewSettings.jpg "view settings")
 
 ### Windows Security Center
 
@@ -165,8 +182,11 @@ Onboard supported versions of Windows machines so that they can send sensor data
 Cloud clipboard helps users copy content between devices. It also manages the clipboard history so that you can paste your old copied data. You can access it by using **Windows+V**. Set up Cloud clipboard:
 
 1. Go to **Windows Settings** and select **Systems**.
+
 2. On the left menu, click on **Clipboard**.
+
 3. Turn on **Clipboard history**.
+
 4. Turn on **Sync across devices**. Chose whether or not to automatically sync copied text across your devices.
 
 ## Kiosk setup experience
@@ -180,6 +200,7 @@ To use this feature, go to **Settings**, search for **assigned access**, and ope
 Microsoft Edge kiosk mode running in single-app assigned access has two kiosk types.
 
 1. **Digital / Interactive signage** that displays a specific website full-screen and runs InPrivate mode.
+
 2. **Public browsing** supports multi-tab browsing and runs InPrivate mode with minimal features available. Users cannot minimize, close, or open new Microsoft Edge windows or customize them using Microsoft Edge Settings. Users can clear browsing data and downloads, and restart Microsoft Edge by clicking **End session**. Administrators can configure Microsoft Edge to restart after a period of inactivity.
 
 ![single app assigned access](images/SingleApp_contosoHotel_inFrame@2x.png "single app assigned access")
@@ -211,7 +232,9 @@ Do you have shared devices deployed in your work place? **Fast sign-in** enables
 
 **To enable fast sign-in:**
 1. Set up a shared or guest device with Windows 10, version 1809.
+
 2. Set the Policy CSP, and the Authentication and EnableFastFirstSignIn policies to enable fast sign-in.
+
 3. Sign-in to a shared PC with your account. You'll notice the difference!
 
     ![fast sign-in](images/fastsignin.png "fast sign-in")
@@ -228,11 +251,15 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
 
 **To try out web sign-in:**
 1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
-2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
-3. On the lock screen, select web sign-in under sign-in options.
-4. Click the “Sign in” button to continue.
 
-    ![Web sign-in](images/websignin.png "web sign-in")
+2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
+
+3. On the lock screen, select web sign-in under sign-in options.
+
+4. Click the **Sign in** button to continue.
+
+   > [!div class="mx-imgBorder"]
+   > ![Web sign-in](images/websignin.png "web sign-in")
 
 >[!NOTE]
 >This is a private preview feature and therefore not meant or recommended for production purposes.
@@ -243,7 +270,8 @@ Android phone users, you can finally stop emailing yourself photos. With Your Ph
 
 For iPhone users, **Your Phone** app also helps you to link your phone to your PC. Surf the web on your phone, then send the webpage instantly to your computer to continue what you’re doing–-read, watch, or browse-- with all the benefits of a bigger screen. 
 
-![your phone](images/your-phone.png "your phone")
+> [!div class="mx-imgBorder"]
+> ![your phone](images/your-phone.png "your phone")
 
 The desktop pin takes you directly to the **Your Phone** app for quicker access to your phone’s content. You can also go through the all apps list in Start, or use the Windows key and search for **Your Phone**. 
 
