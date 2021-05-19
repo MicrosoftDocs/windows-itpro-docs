@@ -80,11 +80,13 @@ To achieve this:
 
 2. [Assign the policy](/intune/device-profile-assign) to your Autopilot device group. 
 
-    - **IMPORTANT**: The encryption policy must be assigned to **devices** in the group, not users.
+   > [!IMPORTANT]
+   > The encryption policy must be assigned to **devices** in the group, not users.
 
 3. Enable the Autopilot [Enrollment Status Page](/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
 
-    - **IMPORTANT**: If the ESP is not enabled, the policy will not apply before encryption starts.
+    > [!IMPORTANT]
+    > If the ESP is not enabled, the policy will not apply before encryption starts.
 
 For more information, see [Setting the BitLocker encryption algorithm for Autopilot devices](/windows/deployment/windows-autopilot/bitlocker).
 
