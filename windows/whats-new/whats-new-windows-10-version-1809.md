@@ -45,7 +45,8 @@ To learn more about Autopilot self-deploying mode and to see step-by-step instru
 
 We’ve continued to work on the **Current threats** area in  [Virus & threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
-   ![Virus & threat protection settings](images/virus-and-threat-protection.png "Virus & threat protection settings")
+> [!div class="mx-imgBorder"]
+> ![Virus & threat protection settings](images/virus-and-threat-protection.png "Virus & threat protection settings")
 
 With controlled folder access you can help prevent ransomware and other destructive malware from changing your personal files. In some cases, apps that you normally use might be blocked from making changes to common folders like **Documents** and **Pictures**. We’ve made it easier for you to add apps that were recently blocked so you can keep using your device without turning off the feature altogether.
 
@@ -98,10 +99,17 @@ To try this:
 
 See the following example:
 
-![Security at a glance](images/1_AppBrowser.png "app and browser control")
-![Isolated browser](images/2_InstallWDAG.png "isolated browsing")
-![change WDAG settings](images/3_ChangeSettings.png "change settings")
-![view WDAG settings](images/4_ViewSettings.jpg "view settings")
+> [!div class="mx-imgBorder"]
+> ![Security at a glance](images/1_AppBrowser.png "app and browser control")
+
+> [!div class="mx-imgBorder"]
+> ![Isolated browser](images/2_InstallWDAG.png "isolated browsing")
+
+> [!div class="mx-imgBorder"]
+> ![change WDAG settings](images/3_ChangeSettings.png "change settings")
+
+> [!div class="mx-imgBorder"]
+> ![view WDAG settings](images/4_ViewSettings.jpg "view settings")
 
 ### Windows Security Center
 
@@ -230,9 +238,10 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
 1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
 2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
 3. On the lock screen, select web sign-in under sign-in options.
-4. Click the “Sign in” button to continue.
+4. Click the **Sign in** button to continue.
 
-    ![Web sign-in](images/websignin.png "web sign-in")
+   > [!div class="mx-imgBorder"]
+   > ![Web sign-in](images/websignin.png "web sign-in")
 
 >[!NOTE]
 >This is a private preview feature and therefore not meant or recommended for production purposes.
@@ -243,7 +252,8 @@ Android phone users, you can finally stop emailing yourself photos. With Your Ph
 
 For iPhone users, **Your Phone** app also helps you to link your phone to your PC. Surf the web on your phone, then send the webpage instantly to your computer to continue what you’re doing–-read, watch, or browse-- with all the benefits of a bigger screen. 
 
-![your phone](images/your-phone.png "your phone")
+> [!div class="mx-imgBorder"]
+> ![your phone](images/your-phone.png "your phone")
 
 The desktop pin takes you directly to the **Your Phone** app for quicker access to your phone’s content. You can also go through the all apps list in Start, or use the Windows key and search for **Your Phone**. 
 
