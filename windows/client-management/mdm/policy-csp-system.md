@@ -50,7 +50,7 @@ manager: dansimp
     <a href="#system-allowtelemetry">System/AllowTelemetry</a>
   </dd>
   <dd>
-    <a href="#system-allowusertoresetphone">System/AllowUpdateComplianceProcessing</a>
+    <a href="#system-allowUpdateComplianceProcessing">System/AllowUpdateComplianceProcessing</a>
   </dd>
   <dd>
     <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
