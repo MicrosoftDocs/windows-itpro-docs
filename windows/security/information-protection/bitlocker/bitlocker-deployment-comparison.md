@@ -22,7 +22,7 @@ ms.custom: bitlocker
 
 - Windows 10
 
-This article for the IT professional depicts the BitLocker deployment comparison chart.
+This article depicts the BitLocker deployment comparison chart.
 
 ## Bitlocker deployment comparison chart
 
