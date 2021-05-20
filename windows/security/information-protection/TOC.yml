@@ -29,6 +29,8 @@
               href: bitlocker\bitlocker-using-with-other-programs-faq.yml
         - name: "Prepare your organization for BitLocker: Planning and policies"
           href: bitlocker\prepare-your-organization-for-bitlocker-planning-and-policies.md
+        - name: BitLocker deployment comparison
+          href: bitlocker\bitlocker-deployment-comparison.md
         - name: BitLocker basic deployment
           href: bitlocker\bitlocker-basic-deployment.md
         - name: "BitLocker: How to deploy on Windows Server 2012 and later"
