@@ -85,7 +85,7 @@ Appv.admx file:
 
 ## <a href="" id="admx-backed-policy-examples"></a>ADMX-backed policy examples
 
-The following SyncML examples describe how to set a MDM policy that is defined by an ADMX template, specifically the Publishing_Server2_Policy Group Policy description in the application virtualization ADMX file, appv.admx. Note that the functionality that this Group Policy manages is not important; it is used to illustrate only how an MDM ISV can set an ADMX-backed policy. These SyncML examples illustrate common options and the corresponding SyncML code that can be used for testing your policies. Note that the payload of the SyncML must be XML-encoded; for this XML encoding, you can use favorite online tool. To avoid encoding the payload, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+The following SyncML examples describe how to set a MDM policy that is defined by an ADMX template, specifically the Publishing_Server2_Policy Group Policy description in the application virtualization ADMX file, appv.admx. Note that the functionality that this Group Policy manages is not important; it is used to illustrate only how an MDM ISV can set an ADMX-backed policy. These SyncML examples illustrate common options and the corresponding SyncML code that can be used for testing your policies. Note that the payload of the SyncML must be XML-encoded; for this XML encoding, you can use favorite online tool. To avoid encoding the payload, you can use CData if your MDM supports it. For more information, see [CDATA Sections](https://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 ### <a href="" id="enabling-a-policy"></a>Enabling a policy
@@ -94,7 +94,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 ```XML
 <enabled/>
 <data id="Publishing_Server2_Name_Prompt" value="Name"/>
-<data id="Publishing_Server_URL_Prompt" value="http://someuri"/>
+<data id="Publishing_Server_URL_Prompt" value="https://someuri"/>
 <data id="Global_Publishing_Refresh_Options" value="1"/>
 <data id="Global_Refresh_OnLogon_Options" value="0"/>
 <data id="Global_Refresh_Interval_Prompt" value="15"/>
@@ -237,12 +237,12 @@ Below is the internal OS mapping of a Group Policy to a MDM area and name. This 
 
 `./[Device|User]/Vendor/MSFT/Policy/Config/[config|result]/<area>/<policy>`
 
-Note that the data payload of the SyncML needs to be encoded so that it does not conflict with the boilerplate SyncML XML tags. Use this online tool for encoding and encoding the policy data [Coder's Toolbox](http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii)
+Note that the data payload of the SyncML needs to be encoded so that it does not conflict with the boilerplate SyncML XML tags. Use this online tool for encoding and encoding the policy data [Coder's Toolbox](https://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii)
 
 **Snippet of manifest for AppVirtualization area:**
 
 ```XML
-<identity xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" owner="Microsoft" namespace="Windows-DeviceManagement-PolicyDefinition" name="AppVirtualization">
+<identity xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"  xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" owner="Microsoft" namespace="Windows-DeviceManagement-PolicyDefinition" name="AppVirtualization">
   <policyDefinitions>
     <area name="AppVirtualization">
       <policies>
@@ -381,7 +381,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
         <Target>
           <LocURI>./User/Vendor/MSFT/Policy/Config/InternetExplorer/DisableSecondaryHomePageChange</LocURI>
         </Target>
-        <Data><![CDATA[<Enabled/><Data id="SecondaryHomePagesList" value="http://name1&#xF000;http://name1&#xF000;http://name2&#xF000;http://name2"/>]]></Data>
+        <Data><![CDATA[<Enabled/><Data id="SecondaryHomePagesList" value="https://name1&#xF000;https://name1&#xF000;https://name2&#xF000;https://name2"/>]]></Data>
       </Item>
     </Replace>
     <Final/>

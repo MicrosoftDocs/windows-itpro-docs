@@ -23,9 +23,9 @@ The XML below is the DDF for the current version for this CSP.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
-  "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
+  "https://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
   [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
-<MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
+<MgmtTree xmlns:MSFT="https://schemas.microsoft.com/MobileDevice/DM">
   <VerDTD>1.2</VerDTD>
       <Node>
         <NodeName>SUPL</NodeName>

@@ -233,7 +233,7 @@ To use the default instance of Microsoft SQL Server, use the following parameter
 ```SQL
 /appv_server_setup.exe /QUIET
 /PUBLISHING_SERVER
-/PUBLISHING_MGT_SERVER="http://ManagementServerName:ManagementPort"
+/PUBLISHING_MGT_SERVER="https://ManagementServerName:ManagementPort"
 /PUBLISHING_WEBSITE_NAME="Microsoft AppV Publishing Service"
 /PUBLISHING_WEBSITE_PORT="8081"
 ```
@@ -474,7 +474,7 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 | Parameter | Description |
 |-----------|-------------|
 | */PUBLISHING_SERVER* | Specifies that the publishing server will be installed. No value is expected. |
-| */PUBLISHING_MGT_SERVER* | Specifies the URL to Management Service the Publishing server will connect to. For example, ```http://<management server name>;<Management server port number>```. If **/PUBLISHING_SERVER** isn't used, this parameter will be ignored. |
+| */PUBLISHING_MGT_SERVER* | Specifies the URL to Management Service the Publishing server will connect to. For example, ```https://<management server name>;<Management server port number>```. If **/PUBLISHING_SERVER** isn't used, this parameter will be ignored. |
 | */PUBLISHING_WEBSITE_NAME* | Specifies name of the website that will be created for the publishing service. For example, ```/PUBLISHING_WEBSITE_NAME="Microsoft App-V Publishing Service"```. |
 | */PUBLISHING_WEBSITE_PORT* | Specifies the port number used by the publishing service. For example, ```/PUBLISHING_WEBSITE_PORT=83```. |
 

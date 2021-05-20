@@ -63,8 +63,8 @@ The following example connection group XML file shows examples of the fields lis
 ```XML
 <?xml version="1.0" encoding="UTF-16"?>
 <appv:AppConnectionGroup
-xmlns="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"
-xmlns:appv="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"
+xmlns="https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"
+xmlns:appv="https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"
   AppConnectionGroupId="61BE9B14-D2B4-41CE-A6E3-A1B658DE7000"
   VersionId="E6B6AA57-F2A7-49C9-ADF8-F2B5B3C8A42F"
   Priority="0"

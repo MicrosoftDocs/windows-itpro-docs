@@ -44,7 +44,7 @@ Level       : System.Diagnostics.Eventing.Reader.EventLevel
 Opcode      : System.Diagnostics.Eventing.Reader.EventOpcode
 Task        : System.Diagnostics.Eventing.Reader.EventTask
 Keywords    : {}
-Template    : <template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+Template    : <template xmlns="https://schemas.microsoft.com/win/2004/08/events">
                 <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
                 <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
                 <data name="TargetSid" inType="win:SID" outType="xs:string"/>
@@ -74,7 +74,7 @@ Description : A security-enabled local group was deleted.
 
 
 PS C:\WINDOWS\system32> $SecEvents.events[100].Template
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+<template xmlns="https://schemas.microsoft.com/win/2004/08/events">
   <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
   <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
   <data name="TargetSid" inType="win:SID" outType="xs:string"/>
@@ -96,7 +96,7 @@ The &lt;Description&gt; is just the format string (if you’re used to `Console.
 Using Security event 4734 as an example:
 
 ```xml
-Template    : <template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+Template    : <template xmlns="https://schemas.microsoft.com/win/2004/08/events">
                 <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
                 <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
                 <data name="TargetSid" inType="win:SID" outType="xs:string"/>

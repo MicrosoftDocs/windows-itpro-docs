@@ -471,7 +471,7 @@ To perform an XAP update, create the Name, URL, Version, and DownloadInstall nod
          <Meta>
             <Format xmlns="syncml:metinf">chr</Format>
          </Meta>
-         <Data>http://contoso.com/enterpriseapps/ContosoApp1.xap</Data>
+         <Data>https://contoso.com/enterpriseapps/ContosoApp1.xap</Data>
       </Item>
       <Item>
          <Target>

@@ -103,9 +103,9 @@ ms.topic: article
 
 15. To verify that the setup completed successfully, open a web browser, and type the following URL with the bracketed variables adjusted according to your specifications in the earlier steps:
 
-    `http://<Management server machine name>:<Management service port number>/console.html`
+    `https://<Management server machine name>:<Management service port number>/console.html`
 
-    Example: `http://localhost:12345/console.html`. If the installation succeeded, the App-V Management console will display with no errors.
+    Example: `https://localhost:12345/console.html`. If the installation succeeded, the App-V Management console will display with no errors.
 
 ## Related topics
 

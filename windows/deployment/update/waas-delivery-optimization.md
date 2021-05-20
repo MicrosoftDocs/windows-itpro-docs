@@ -179,12 +179,12 @@ Delivery Optimization service endpoint:
 - `https://*.prod.do.dsp.mp.microsoft.com`
 
 Delivery Optimization metadata:
-- `http://emdl.ws.microsoft.com`
-- `http://*.dl.delivery.mp.microsoft.com`
+- `https://emdl.ws.microsoft.com`
+- `https://*.dl.delivery.mp.microsoft.com`
 
 Windows Update and Microsoft Store backend services and Windows Update and Microsoft Store payloads
 
-- `http://*.windowsupdate.com`
+- `https://*.windowsupdate.com`
 - `https://*.delivery.mp.microsoft.com`
 - `https://*.update.microsoft.com`
 - `https://tsfe.trafficshaping.dsp.mp.microsoft.com`

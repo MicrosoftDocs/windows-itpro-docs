@@ -74,7 +74,7 @@ Figure 18. Configuring Authentication for the MDTSample web service.
 
 ## <a href="" id="sec04"></a>Test the web service in Internet Explorer
 
-1.  On PC0001, using Internet Explorer, navigate to: **http://MDT01/MDTSample/mdtsample.asmx**.
+1.  On PC0001, using Internet Explorer, navigate to: **https://MDT01/MDTSample/mdtsample.asmx**.
 2.  Click the **GetComputerName** link.
 
     ![figure 19](../images/mdt-09-fig19.png)
@@ -99,7 +99,7 @@ After verifying the web service using Internet Explorer, you are ready to do the
    [Default]
    OSInstall=YES
    [GetComputerName]
-   WebService=http://mdt01/MDTSample/mdtsample.asmx/GetComputerName
+   WebService=https://mdt01/MDTSample/mdtsample.asmx/GetComputerName
    Parameters=Model,SerialNumber
    OSDComputerName=string
    ```

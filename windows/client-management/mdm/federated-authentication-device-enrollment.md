@@ -42,7 +42,7 @@ The first request is a standard HTTP GET request.
 The following example shows a request via HTTP GET to the discovery server given user@contoso.com as the email address.
 
 ```http
-Request Full Url: http://EnterpriseEnrollment.contoso.com/EnrollmentServer/Discovery.svc
+Request Full Url: https://EnterpriseEnrollment.contoso.com/EnrollmentServer/Discovery.svc
 Content Type: unknown
 Header Byte Count: 153
 Body Byte Count: 0
@@ -56,7 +56,7 @@ Pragma: no-cache
 ```
 
 ```http
-Request Full Url: http://EnterpriseEnrollment.contoso.com/EnrollmentServer/Discovery.svc
+Request Full Url: https://EnterpriseEnrollment.contoso.com/EnrollmentServer/Discovery.svc
 Content Type: text/html
 Header Byte Count: 248
 Body Byte Count: 0
@@ -90,23 +90,23 @@ The following example shows the discovery service request.
 
 ```xml
     <?xml version="1.0"?>
-    <s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"
-       xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Envelope xmlns:a="https://www.w3.org/2005/08/addressing"
+       xmlns:s="https://www.w3.org/2003/05/soap-envelope">
       <s:Header>
         <a:Action s:mustUnderstand="1">
-          http://schemas.microsoft.com/windows/management/2012/01/enrollment/IDiscoveryService/Discover
+          https://schemas.microsoft.com/windows/management/2012/01/enrollment/IDiscoveryService/Discover
         </a:Action>
         <a:MessageID>urn:uuid: 748132ec-a575-4329-b01b-6171a9cf8478</a:MessageID>
         <a:ReplyTo>
-          <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+          <a:Address>https://www.w3.org/2005/08/addressing/anonymous</a:Address>
         </a:ReplyTo>
         <a:To s:mustUnderstand="1">
           https://ENROLLTEST.CONTOSO.COM/EnrollmentServer/Discovery.svc
         </a:To>
       </s:Header>
       <s:Body>
-        <Discover xmlns="http://schemas.microsoft.com/windows/management/2012/01/enrollment/">
-          <request xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <Discover xmlns="https://schemas.microsoft.com/windows/management/2012/01/enrollment/">
+          <request xmlns:i="https://www.w3.org/2001/XMLSchema-instance">
             <EmailAddress>user@contoso.com</EmailAddress>
             <OSEdition>3</OSEdition> <!--New -->
             <RequestVersion>3.0</RequestVersion> <!-- Updated -->
@@ -190,26 +190,26 @@ Content-Length: 556
 </html>
 ```
 
-The server has to send a POST to a redirect URL of the form ms-app://string (the URL scheme is ms-app) as indicated in the POST method action. The security token value is the base64-encoded string "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\#base64binary" contained in the &lt;wsse:BinarySecurityToken&gt; EncodingType attribute. Windows does the binary encode when it sends it back to enrollment server, in the form it is just HTML encoded. This string is opaque to the enrollment client; the client does not interpret the string.
+The server has to send a POST to a redirect URL of the form ms-app://string (the URL scheme is ms-app) as indicated in the POST method action. The security token value is the base64-encoded string "https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\#base64binary" contained in the &lt;wsse:BinarySecurityToken&gt; EncodingType attribute. Windows does the binary encode when it sends it back to enrollment server, in the form it is just HTML encoded. This string is opaque to the enrollment client; the client does not interpret the string.
 
 The following example shows a response received from the discovery web service which requires authentication via WAB.
 
 ```xml
-    <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
-       xmlns:a="http://www.w3.org/2005/08/addressing">
+    <s:Envelope xmlns:s="https://www.w3.org/2003/05/soap-envelope"
+       xmlns:a="https://www.w3.org/2005/08/addressing">
       <s:Header>
         <a:Action s:mustUnderstand="1">
-          http://schemas.microsoft.com/windows/management/2012/01/enrollment/IDiscoveryService/DiscoverResponse
+          https://schemas.microsoft.com/windows/management/2012/01/enrollment/IDiscoveryService/DiscoverResponse
         </a:Action>
         <ActivityId>
           d9eb2fdd-e38a-46ee-bd93-aea9dc86a3b8
         </ActivityId>
         <a:RelatesTo>urn:uuid: 748132ec-a575-4329-b01b-6171a9cf8478</a:RelatesTo>
       </s:Header>
-      <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <s:Body xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xsd="https://www.w3.org/2001/XMLSchema">
         <DiscoverResponse
-           xmlns="http://schemas.microsoft.com/windows/management/2012/01/enrollment">
+           xmlns="https://schemas.microsoft.com/windows/management/2012/01/enrollment">
           <DiscoverResult>
             <AuthPolicy>Federated</AuthPolicy>
             <EnrollmentVersion>3.0</EnrollmentVersion>
@@ -243,24 +243,24 @@ As was described in the discovery response section, the inclusion of the &lt;wss
 
 The &lt;wsse:BinarySecurityToken&gt; element contains a base64-encoded string. The enrollment client uses the security token received from the authentication server and base64-encodes the token to populate the &lt;wsse:BinarySecurityToken&gt; element. wsse:BinarySecurityToken/attributes/ValueType: The &lt;wsse:BinarySecurityToken&gt; ValueType attribute must be "http:<span></span>//schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken".
 
-wsse:BinarySecurityToken/attributes/EncodingType: The &lt;wsse:BinarySecurityToken&gt; EncodingType attribute must be "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\#base64binary".
+wsse:BinarySecurityToken/attributes/EncodingType: The &lt;wsse:BinarySecurityToken&gt; EncodingType attribute must be "https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\#base64binary".
 
 The following is an enrollment policy request example with a received security token as client credential.
 
 ```xml
-    <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
-       xmlns:a="http://www.w3.org/2005/08/addressing"
-       xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
-       xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
-       xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
-       xmlns:ac="http://schemas.xmlsoap.org/ws/2006/12/authorization">
+    <s:Envelope xmlns:s="https://www.w3.org/2003/05/soap-envelope"
+       xmlns:a="https://www.w3.org/2005/08/addressing"
+       xmlns:u="https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+       xmlns:wsse="https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+       xmlns:wst="https://docs.oasis-open.org/ws-sx/ws-trust/200512"
+       xmlns:ac="https://schemas.xmlsoap.org/ws/2006/12/authorization">
       <s:Header>
         <a:Action s:mustUnderstand="1">
-          http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy/IPolicy/GetPolicies
+          https://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy/IPolicy/GetPolicies
         </a:Action>
         <a:MessageID>urn:uuid:72048B64-0F19-448F-8C2E-B4C661860AA0</a:MessageID>
         <a:ReplyTo>
-          <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+          <a:Address>https://www.w3.org/2005/08/addressing/anonymous</a:Address>
         </a:ReplyTo>
         <a:To s:mustUnderstand="1">
           https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
@@ -269,17 +269,17 @@ The following is an enrollment policy request example with a received security t
           <wsse:BinarySecurityToken  ValueType= 
     "http: //schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken"
           EncodingType=
-          "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
+          "https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
           xmlns=
-          "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+          "https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
           B64EncodedSampleBinarySecurityToken
           </wsse:BinarySecurityToken>
         </wsse:Security>
       </s:Header>
-      <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <s:Body xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xsd="https://www.w3.org/2001/XMLSchema">
         <GetPolicies
-           xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy">
+           xmlns="https://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy">
           <client>
             <lastUpdate xsi:nil="true"/>
             <preferredLanguage xsi:nil="true"/>
@@ -301,27 +301,27 @@ The following snippet shows the policy web service response.
 
 ```xml
       <s:Envelope
-         xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
-         xmlns:s="http://www.w3.org/2003/05/soap-envelope"
-         xmlns:a="http://www.w3.org/2005/08/addressing">
+         xmlns:u="https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+         xmlns:s="https://www.w3.org/2003/05/soap-envelope"
+         xmlns:a="https://www.w3.org/2005/08/addressing">
         <s:Header>
           <a:Action s:mustUnderstand="1">
-            http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy/IPolicy/GetPoliciesResponse
+            https://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy/IPolicy/GetPoliciesResponse
           </a:Action>
           <a:RelatesTo>urn:uuid: 69960163-adad-4a72-82d2-bb0e5cff5598</a:RelatesTo>
         </s:Header>
-        <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <s:Body xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="https://www.w3.org/2001/XMLSchema">
           <GetPoliciesResponse
-             xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy">
+             xmlns="https://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy">
             <response>
             <policyID />
               <policyFriendlyName xsi:nil="true"
-                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                 xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"/>
               <nextUpdateHours xsi:nil="true"
-                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                 xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"/>
               <policiesNotChanged xsi:nil="true"
-                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                 xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"/>
               <policies>
                 <policy>
                   <policyOIDReference>0</policyOIDReference>
@@ -392,19 +392,19 @@ The RST may also specify a number of AdditionalContext items, such as DeviceType
 The following example shows the enrollment web service request for federated authentication.
 
 ```xml
-    <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
-       xmlns:a="http://www.w3.org/2005/08/addressing"
-       xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
-       xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
-       xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
-       xmlns:ac="http://schemas.xmlsoap.org/ws/2006/12/authorization">
+    <s:Envelope xmlns:s="https://www.w3.org/2003/05/soap-envelope"
+       xmlns:a="https://www.w3.org/2005/08/addressing"
+       xmlns:u="https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+       xmlns:wsse="https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+       xmlns:wst="https://docs.oasis-open.org/ws-sx/ws-trust/200512"
+       xmlns:ac="https://schemas.xmlsoap.org/ws/2006/12/authorization">
       <s:Header>
         <a:Action s:mustUnderstand="1">
-          http://schemas.microsoft.com/windows/pki/2009/01/enrollment/RST/wstep
+          https://schemas.microsoft.com/windows/pki/2009/01/enrollment/RST/wstep
         </a:Action>
         <a:MessageID>urn:uuid:0d5a1441-5891-453b-becf-a2e5f6ea3749</a:MessageID>
         <a:ReplyTo>
-          <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+          <a:Address>https://www.w3.org/2005/08/addressing/anonymous</a:Address>
         </a:ReplyTo>
         <a:To s:mustUnderstand="1">
           https://enrolltest.contoso.com:443/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
@@ -413,7 +413,7 @@ The following example shows the enrollment web service request for federated aut
           <wsse:BinarySecurityToken  wsse:ValueType= 
     "http:"//schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken
           wsse:EncodingType=
-          http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
+          https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
           
     >
           B64EncodedSampleBinarySecurityToken
@@ -423,17 +423,17 @@ The following example shows the enrollment web service request for federated aut
       <s:Body>
         <wst:RequestSecurityToken>
           <wst:TokenType>
-            http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
+            https://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
           </wst:TokenType>
           <wst:RequestType>
-            http://docs.oasis-open.org/ws-sx/ws-trust/200512/Issue
+            https://docs.oasis-open.org/ws-sx/ws-trust/200512/Issue
           </wst:RequestType>
           <wsse:BinarySecurityToken
-             ValueType="http://schemas.microsoft.com/windows/pki/2009/01/enrollment#PKCS10"
-             EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary">
+             ValueType="https://schemas.microsoft.com/windows/pki/2009/01/enrollment#PKCS10"
+             EncodingType="https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary">
             DER format PKCS#10 certificate request in Base64 encoding Insterted Here
           </wsse:BinarySecurityToken>
-          <ac:AdditionalContext xmlns="http://schemas.xmlsoap.org/ws/2006/12/authorization">
+          <ac:AdditionalContext xmlns="https://schemas.xmlsoap.org/ws/2006/12/authorization">
                <ac:ContextItem Name="OSEdition">
                    <ac:Value> 4</ac:Value>
                 </ac:ContextItem>
@@ -497,16 +497,16 @@ Here is a sample RSTR message and a sample of OMA client provisioning XML within
 The following example shows the enrollment web service response.
 
 ```xml
-    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
-       xmlns:a="http://www.w3.org/2005/08/addressing" 
-       xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/" 
+       xmlns:a="https://www.w3.org/2005/08/addressing" 
+       xmlns:u="https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
        <s:Header>
           <a:Action s:mustUnderstand="1" >
-             http://schemas.microsoft.com/windows/pki/2009/01/enrollment/RSTRC/wstep
+             https://schemas.microsoft.com/windows/pki/2009/01/enrollment/RSTRC/wstep
           </a:Action>
           <a:RelatesTo>urn:uuid:81a5419a-496b-474f-a627-5cdd33eed8ab</a:RelatesTo>
           <o:Security s:mustUnderstand="1" xmlns:o=
-             "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+             "https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
              <u:Timestamp u:Id="_0">
                 <u:Created>2012-08-02T00:32:59.420Z</u:Created>
                 <u:Expires>2012-08-02T00:37:59.420Z</u:Expires>
@@ -515,23 +515,23 @@ The following example shows the enrollment web service response.
        </s:Header>
        <s:Body>
           <RequestSecurityTokenResponseCollection 
-             xmlns="http://docs.oasis-open.org/ws-sx/ws-trust/200512">
+             xmlns="https://docs.oasis-open.org/ws-sx/ws-trust/200512">
              <RequestSecurityTokenResponse>
                 <TokenType>
-        http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
+        https://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
                 </TokenType>
-                 <DispositionMessage xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment"/>           <RequestedSecurityToken>
+                 <DispositionMessage xmlns="https://schemas.microsoft.com/windows/pki/2009/01/enrollment"/>           <RequestedSecurityToken>
                    <BinarySecurityToken 
                       ValueType=
-    "http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc"
+    "https://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc"
                       EncodingType=
-       "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
+       "https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
                       xmlns=
-              "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+              "https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
                       B64EncodedSampleBinarySecurityToken
                    </BinarySecurityToken>
                 </RequestedSecurityToken>
-                <RequestID xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment">0
+                <RequestID xmlns="https://schemas.microsoft.com/windows/pki/2009/01/enrollment">0
                 </RequestID>
              </RequestSecurityTokenResponse>
           </RequestSecurityTokenResponseCollection>

@@ -41,7 +41,7 @@ For example, event 1108 might be generated after an incorrect [4703](event-4703.
 
 ***Event XML:***
 ```
-- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <Event xmlns="https://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Eventlog" Guid="{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}" /> 
  <EventID>1108</EventID> 
@@ -59,7 +59,7 @@ For example, event 1108 might be generated after an incorrect [4703](event-4703.
  <Security /> 
  </System>
 - <UserData>
-- <EventProcessingFailure xmlns="http://manifests.microsoft.com/win/2004/08/windows/eventlog">
+- <EventProcessingFailure xmlns="https://manifests.microsoft.com/win/2004/08/windows/eventlog">
  <Error Code="15005" /> 
  <EventID>0</EventID> 
  <PublisherID>Microsoft-Windows-Security-Auditing</PublisherID> 

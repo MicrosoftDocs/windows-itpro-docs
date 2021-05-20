@@ -23,7 +23,7 @@ ms.technology: mde
 
 This event generates on domain controllers when **KRB\_AP\_ERR\_REPEAT** Kerberos response was sent to the client.
 
-Domain controllers cache information from recently received tickets. If the server name, client name, time, and microsecond fields from the Authenticator match recently seen entries in the cache, it will return KRB\_AP\_ERR\_REPEAT. You can read more about this in [RFC-1510](http://www.ietf.org/rfc/rfc1510.txt). One potential cause for this is a misconfigured network device between the client and server that could send the same packet(s) repeatedly.
+Domain controllers cache information from recently received tickets. If the server name, client name, time, and microsecond fields from the Authenticator match recently seen entries in the cache, it will return KRB\_AP\_ERR\_REPEAT. You can read more about this in [RFC-1510](https://www.ietf.org/rfc/rfc1510.txt). One potential cause for this is a misconfigured network device between the client and server that could send the same packet(s) repeatedly.
 
 There is no example of this event in this document.
 

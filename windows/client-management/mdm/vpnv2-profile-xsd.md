@@ -20,7 +20,7 @@ Here's the XSD for the ProfileXML node in the VPNv2 CSP and VpnManagementAgent::
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="https://www.w3.org/2001/XMLSchema">
   <xs:import namespace="https://www.microsoft.com/provisioning/EapHostConfig" schemaLocation="EapHostConfig.xsd" />
   <xs:element name="VPNProfile">
     <xs:complexType>

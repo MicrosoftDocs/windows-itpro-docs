@@ -82,7 +82,7 @@ When the database is populated, you can use the MDT simulation environment to si
     SkipSummary=YES
     SkipCapture=YES
     SkipFinalSummary=NO
-    EventService=http://MDT01:9800
+    EventService=https://MDT01:9800
     [CSettings]
     SQLServer=MDT01
     Instance=SQLEXPRESS

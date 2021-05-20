@@ -147,7 +147,7 @@ The usage of **DMProcessConfigXMLFiltered** depends on the configuration service
     </characteristic>
     <characteristic type="BrowserFavorite">
         <characteristic type="Contoso">
-            <parm name="URL" value="http://www.contoso.com"/>
+            <parm name="URL" value="https://www.contoso.com"/>
         </characteristic>
     </characteristic>
 </wap-provisioningdoc>

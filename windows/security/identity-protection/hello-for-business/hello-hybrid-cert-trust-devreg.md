@@ -212,17 +212,17 @@ When you're using AD FS, you need to enable the following WS-Trust endpoints:
 
 The following claims must exist in the token received by Azure DRS for device registration to complete. Azure DRS will create a device object in Azure AD with some of this information which is then used by Azure AD Connect to associate the newly created device object with the computer account on-premises.
 
-* `http://schemas.microsoft.com/ws/2012/01/accounttype`
-* `http://schemas.microsoft.com/identity/claims/onpremobjectguid`
-* `http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid`
+* `https://schemas.microsoft.com/ws/2012/01/accounttype`
+* `https://schemas.microsoft.com/identity/claims/onpremobjectguid`
+* `https://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid`
 
 If you have more than one verified domain name, you need to provide the following claim for computers:
 
-* `http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`
+* `https://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`
 
 If you are already issuing an ImmutableID claim (e.g., alternate login ID) you need to provide one corresponding claim for computers:
 
-* `http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID`
+* `https://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID`
 
 In the following sections, you find information about:
 
@@ -236,102 +236,102 @@ The definition helps you to verify whether the values are present or if you need
 
 #### Issue account type claim
 
-**`http://schemas.microsoft.com/ws/2012/01/accounttype`** - This claim must contain a value of **DJ**, which identifies the device as a domain-joined computer. In AD FS, you can add an issuance transform rule that looks like this:
+**`https://schemas.microsoft.com/ws/2012/01/accounttype`** - This claim must contain a value of **DJ**, which identifies the device as a domain-joined computer. In AD FS, you can add an issuance transform rule that looks like this:
 
     @RuleName = "Issue account type for domain-joined computers"
     c:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
         Value =~ "-515$", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(
-        Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+        Type = "https://schemas.microsoft.com/ws/2012/01/accounttype", 
         Value = "DJ"
     );
 
 #### Issue objectGUID of the computer account on-premises
 
-**`http://schemas.microsoft.com/identity/claims/onpremobjectguid`** - This claim must contain the **objectGUID** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
+**`https://schemas.microsoft.com/identity/claims/onpremobjectguid`** - This claim must contain the **objectGUID** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
 
     @RuleName = "Issue object GUID for domain-joined computers"
     c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
         Value =~ "-515$", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     && 
     c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(
         store = "Active Directory", 
-        types = ("http://schemas.microsoft.com/identity/claims/onpremobjectguid"), 
+        types = ("https://schemas.microsoft.com/identity/claims/onpremobjectguid"), 
         query = ";objectguid;{0}", 
         param = c2.Value
     );
 
 #### Issue objectSID of the computer account on-premises
 
-**`http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid`** - This claim must contain the **objectSid** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
+**`https://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid`** - This claim must contain the **objectSid** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
 
     @RuleName = "Issue objectSID for domain-joined computers"
     c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
         Value =~ "-515$", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     && 
     c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(claim = c2);
 
 #### Issue issuerID for computer when multiple verified domain names in Azure AD
 
-**`http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`** - This claim must contain the Uniform Resource Identifier (URI) of any of the verified domain names that connect with the on-premises federation service (AD FS or 3rd party) issuing the token. In AD FS, you can add issuance transform rules that look like the ones below in that specific order after the ones above. Please note that one rule to explicitly issue the rule for users is necessary. In the rules below, a first rule identifying user vs. computer authentication is added.
+**`https://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`** - This claim must contain the Uniform Resource Identifier (URI) of any of the verified domain names that connect with the on-premises federation service (AD FS or 3rd party) issuing the token. In AD FS, you can add issuance transform rules that look like the ones below in that specific order after the ones above. Please note that one rule to explicitly issue the rule for users is necessary. In the rules below, a first rule identifying user vs. computer authentication is added.
 
     @RuleName = "Issue account type with the value User when it is not a computer"
 
     NOT EXISTS(
     [
-        Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+        Type == "https://schemas.microsoft.com/ws/2012/01/accounttype", 
         Value == "DJ"
     ]
     )
     => add(
-        Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+        Type = "https://schemas.microsoft.com/ws/2012/01/accounttype", 
         Value = "User"
     );
 
     @RuleName = "Capture UPN when AccountType is User and issue the IssuerID"
     c1:[
-        Type == "http://schemas.xmlsoap.org/claims/UPN"
+        Type == "https://schemas.xmlsoap.org/claims/UPN"
     ]
     && 
     c2:[
-        Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+        Type == "https://schemas.microsoft.com/ws/2012/01/accounttype", 
         Value == "User"
     ]
     => issue(
-        Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
+        Type = "https://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
         Value = regexreplace(
         c1.Value, 
         ".+@(?<domain>.+)", 
-        "http://${domain}/adfs/services/trust/"
+        "https://${domain}/adfs/services/trust/"
         )
     );
 
     @RuleName = "Issue issuerID for domain-joined computers"
     c:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
         Value =~ "-515$", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(
-        Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
-        Value = "http://<verified-domain-name>/adfs/services/trust/"
+        Type = "https://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
+        Value = "https://<verified-domain-name>/adfs/services/trust/"
     );
 
 
@@ -345,22 +345,22 @@ To get a list of your verified company domains, you can use the [Get-MsolDomain]
 
 #### Issue ImmutableID for computer when one for users exist (e.g. alternate login ID is set)
 
-**`http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID`** - This claim must contain a valid value for computers. In AD FS, you can create an issuance transform rule as follows:
+**`https://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID`** - This claim must contain a valid value for computers. In AD FS, you can create an issuance transform rule as follows:
 
     @RuleName = "Issue ImmutableID for computers"
     c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
         Value =~ "-515$", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ] 
     && 
     c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(
         store = "Active Directory", 
-        types = ("http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID"), 
+        types = ("https://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID"), 
         query = ";objectguid;{0}", 
         param = c2.Value
     );
@@ -375,42 +375,42 @@ The following script helps you with the creation of the issuance transform rules
 
     $rule1 = '@RuleName = "Issue account type for domain-joined computers"
     c:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
         Value =~ "-515$", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(
-        Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+        Type = "https://schemas.microsoft.com/ws/2012/01/accounttype", 
         Value = "DJ"
     );'
 
     $rule2 = '@RuleName = "Issue object GUID for domain-joined computers"
     c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
         Value =~ "-515$", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     && 
     c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(
         store = "Active Directory", 
-        types = ("http://schemas.microsoft.com/identity/claims/onpremobjectguid"), 
+        types = ("https://schemas.microsoft.com/identity/claims/onpremobjectguid"), 
         query = ";objectguid;{0}", 
         param = c2.Value
     );'
 
     $rule3 = '@RuleName = "Issue objectSID for domain-joined computers"
     c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
         Value =~ "-515$", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     && 
     c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(claim = c2);'
@@ -420,42 +420,42 @@ The following script helps you with the creation of the issuance transform rules
     $rule4 = '@RuleName = "Issue account type with the value User when it is not a computer"
     NOT EXISTS(
     [
-        Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+        Type == "https://schemas.microsoft.com/ws/2012/01/accounttype", 
         Value == "DJ"
     ]
     )
     => add(
-        Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+        Type = "https://schemas.microsoft.com/ws/2012/01/accounttype", 
         Value = "User"
     );
 
     @RuleName = "Capture UPN when AccountType is User and issue the IssuerID"
     c1:[
-        Type == "http://schemas.xmlsoap.org/claims/UPN"
+        Type == "https://schemas.xmlsoap.org/claims/UPN"
     ]
     && 
     c2:[
-        Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
+        Type == "https://schemas.microsoft.com/ws/2012/01/accounttype", 
         Value == "User"
     ]
     => issue(
-        Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
+        Type = "https://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
         Value = regexreplace(
         c1.Value, 
         ".+@(?<domain>.+)", 
-        "http://${domain}/adfs/services/trust/"
+        "https://${domain}/adfs/services/trust/"
         )
     );
 
     @RuleName = "Issue issuerID for domain-joined computers"
     c:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
         Value =~ "-515$", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(
-        Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
-        Value = "http://' + $oneOfVerifiedDomainNames + '/adfs/services/trust/"
+        Type = "https://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
+        Value = "https://' + $oneOfVerifiedDomainNames + '/adfs/services/trust/"
     );'
     }
 
@@ -463,18 +463,18 @@ The following script helps you with the creation of the issuance transform rules
     if ($immutableIDAlreadyIssuedforUsers -eq $true) {
     $rule5 = '@RuleName = "Issue ImmutableID for computers"
     c1:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
         Value =~ "-515$", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ] 
     && 
     c2:[
-        Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
+        Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", 
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(
         store = "Active Directory", 
-        types = ("http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID"), 
+        types = ("https://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID"), 
         query = ";objectguid;{0}", 
         param = c2.Value
     );'
@@ -497,8 +497,8 @@ The following script helps you with the creation of the issuance transform rules
 
 
 ~~~
-    c:[Type == "http://schemas.xmlsoap.org/claims/UPN"]
-    => issue(Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", Value = regexreplace(c.Value, ".+@(?<domain>.+)",  "http://${domain}/adfs/services/trust/")); 
+    c:[Type == "https://schemas.xmlsoap.org/claims/UPN"]
+    => issue(Type = "https://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", Value = regexreplace(c.Value, ".+@(?<domain>.+)",  "https://${domain}/adfs/services/trust/")); 
 ~~~
 
 - If you have already issued an **ImmutableID** claim  for user accounts, set the value of **$immutableIDAlreadyIssuedforUsers** in the script to **$true**.

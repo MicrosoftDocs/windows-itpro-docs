@@ -101,9 +101,9 @@ The following example shows how to use the LayoutOptions element to specify full
 
 ```XML
 <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
     Version="1">
     <LayoutOptions
         StartTileGroupsColumnCount="1"
@@ -236,7 +236,7 @@ The following example shows how to create a tile of the Web site's URL, which yo
 
 ```XML
 <start:DesktopApplicationTile
-          DesktopApplicationID="http://www.contoso.com/"
+          DesktopApplicationID="https://www.contoso.com/"
           Size="2x2"
           Row="0"
           Column="2"/>
@@ -256,7 +256,7 @@ The following example shows how to create a tile of the Web site's URL using the
 <start:SecondaryTile
           AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
           TileID="MyWeblinkTile"
-          Arguments="http://msn.com"
+          Arguments="https://msn.com"
           DisplayName="MySite"
           Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png" 
           Wide310x150LogoUri="ms-appx:///Assets/MicrosoftEdgeWide310x150.png"
@@ -301,9 +301,9 @@ The following example shows how to modify your LayoutModification.xml file to ad
 
  ```XML
  <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
     Version="1">
     <TopMFUApps>
         <Tile AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
@@ -324,9 +324,9 @@ The following example shows how to add the **AppendOfficeSuite** tag to your Lay
 
 ```XML
 <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
     Version="1">
     <AppendOfficeSuite/>
 </LayoutModificationTemplate>
@@ -357,9 +357,9 @@ The following example shows how to add the **AppendDownloadOfficeTile** tag to y
 
 ```XML
 <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
     Version="1">
     <AppendDownloadOfficeTile/>
 </LayoutModificationTemplate>
@@ -371,9 +371,9 @@ The following sample LayoutModification.xml shows how you can configure the Star
 
 ```XML
 <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
     Version="1">
   <RequiredStartGroupsCollection>
     <RequiredStartGroups
@@ -404,7 +404,7 @@ The following sample LayoutModification.xml shows how you can configure the Star
           Row="0"
           Column="0"/>
         <start:DesktopApplicationTile
-          DesktopApplicationID="http://www.bing.com/"
+          DesktopApplicationID="https://www.bing.com/"
           Size="2x2"
           Row="0"
           Column="2"/>
@@ -426,7 +426,7 @@ The following sample LayoutModification.xml shows how you can configure the Star
 		<start:SecondaryTile
           AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
           TileID="FabrikamWeblinkTile"
-          Arguments="http://www.fabrikam.com"
+          Arguments="https://www.fabrikam.com"
           DisplayName="Fabrikam"
           Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
           ShowNameOnSquare150x150Logo="true"

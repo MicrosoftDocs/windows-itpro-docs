@@ -99,10 +99,10 @@ To manually trigger enrollment migration, you can run MDMMaintenenceTask.
 The enrollment server can decline enrollment messages using the SOAP Fault format. Errors created can be sent as follows:
 
 ```xml
-<s:envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+<s:envelope xmlns:s="https://www.w3.org/2003/05/soap-envelope" xmlns:a="https://www.w3.org/2005/08/addressing">
     <s:header>
-        <a:action s:mustunderstand="1">http://schemas.microsoft.com/windows/pki/2009/01/enrollment/rstrc/wstep</a:action>
-        <activityid correlationid="2493ee37-beeb-4cb9-833c-cadde9067645" xmlns="http://schemas.microsoft.com/2004/09/servicemodel/diagnostics">2493ee37-beeb-4cb9-833c-cadde9067645</activityid>
+        <a:action s:mustunderstand="1">https://schemas.microsoft.com/windows/pki/2009/01/enrollment/rstrc/wstep</a:action>
+        <activityid correlationid="2493ee37-beeb-4cb9-833c-cadde9067645" xmlns="https://schemas.microsoft.com/2004/09/servicemodel/diagnostics">2493ee37-beeb-4cb9-833c-cadde9067645</activityid>
         <a:relatesto>urn:uuid:urn:uuid:0d5a1441-5891-453b-becf-a2e5f6ea3749</a:relatesto>
     </s:header>
     <s:body>
@@ -194,10 +194,10 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 In Windows 10, version 1507, we added the deviceenrollmentserviceerror element. Here is an example:
 
 ```xml
-<s:envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+<s:envelope xmlns:s="https://www.w3.org/2003/05/soap-envelope" xmlns:a="https://www.w3.org/2005/08/addressing">
     <s:header>
-        <a:action s:mustunderstand="1">http://schemas.microsoft.com/windows/pki/2009/01/enrollment/rstrc/wstep</a:action>
-        <activityid correlationid="2493ee37-beeb-4cb9-833c-cadde9067645" xmlns="http://schemas.microsoft.com/2004/09/servicemodel/diagnostics">2493ee37-beeb-4cb9-833c-cadde9067645</activityid>
+        <a:action s:mustunderstand="1">https://schemas.microsoft.com/windows/pki/2009/01/enrollment/rstrc/wstep</a:action>
+        <activityid correlationid="2493ee37-beeb-4cb9-833c-cadde9067645" xmlns="https://schemas.microsoft.com/2004/09/servicemodel/diagnostics">2493ee37-beeb-4cb9-833c-cadde9067645</activityid>
         <a:relatesto>urn:uuid:urn:uuid:0d5a1441-5891-453b-becf-a2e5f6ea3749</a:relatesto>
     </s:header>
     <s:body>
@@ -212,7 +212,7 @@ In Windows 10, version 1507, we added the deviceenrollmentserviceerror element.
                 <s:text xml:lang="en-us">device cap reached</s:text>
             </s:reason>
             <s:detail>
-                <deviceenrollmentserviceerror xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment">
+                <deviceenrollmentserviceerror xmlns="https://schemas.microsoft.com/windows/pki/2009/01/enrollment">
                     <errortype>devicecapreached</errortype>
                     <message>device cap reached</message>
                     <traceid>2493ee37-beeb-4cb9-833c-cadde9067645</traceid>

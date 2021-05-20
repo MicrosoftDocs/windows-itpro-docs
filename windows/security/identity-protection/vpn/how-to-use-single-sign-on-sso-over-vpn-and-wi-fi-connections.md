@@ -41,14 +41,14 @@ This behavior helps prevent credentials from being misused by untrusted third pa
 
 ## Intranet zone
 
-For the Intranet zone, by default it only allows single-label names, such as Http://finance.
+For the Intranet zone, by default it only allows single-label names, such as https://finance.
 If the resource that needs to be accessed has multiple domain labels, then the workaround is to use the [Registry CSP](/windows/client-management/mdm/registry-csp).
 
 ### Setting the ZoneMap
 
 The ZoneMap is controlled using a registry that can be set through MDM.
-By default, single-label names such as http://finance are already in the intranet zone.
-For multi-label names, such as http://finance.net, the ZoneMap needs to be updated.
+By default, single-label names such as https://finance are already in the intranet zone.
+For multi-label names, such as https://finance.net, the ZoneMap needs to be updated.
 
 ## MDM Policy
 

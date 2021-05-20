@@ -24,7 +24,7 @@ The XML below is the current version for this CSP.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC "-//OMA//DTD-DM-DDF 1.2//EN"
-    "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
+    "https://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
     [
   <?oma-dm-ddf-ver supported-versions="1.2"?>
 ]>

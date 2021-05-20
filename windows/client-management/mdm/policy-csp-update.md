@@ -4494,7 +4494,7 @@ ADMX Info:
 The following list shows the supported values:
 
 -   Not configured. The device checks for updates from Microsoft Update.
--   Set to a URL, such as `http://abcd-srv:8530`. The device checks for updates from the WSUS server at the specified URL.
+-   Set to a URL, such as `https://abcd-srv:8530`. The device checks for updates from the WSUS server at the specified URL.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -4511,7 +4511,7 @@ Example
         <Target>
             <LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI>
         </Target>
-        <Data>http://abcd-srv:8530</Data>
+        <Data>https://abcd-srv:8530</Data>
     </Item>
 </Replace>
 ```

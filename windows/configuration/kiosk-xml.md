@@ -31,8 +31,8 @@ ms.topic: article
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration 
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="https://schemas.microsoft.com/AssignedAccess/201810/config"
     >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
@@ -53,7 +53,7 @@ ms.topic: article
                 <rs5:AllowedNamespace Name="Downloads"/>
             </rs5:FileExplorerNamespaceRestrictions>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -92,7 +92,7 @@ ms.topic: article
                 </AllowedApps>
             </AllAppsList>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -148,8 +148,8 @@ ms.topic: article
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="https://schemas.microsoft.com/AssignedAccess/201810/config"
     >
     <Profiles>
         <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
@@ -172,8 +172,8 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:r1809="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:r1809="https://schemas.microsoft.com/AssignedAccess/201810/config"
 >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
@@ -186,7 +186,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
                 </AllowedApps>
             </AllAppsList>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -221,7 +221,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
                 </AllowedApps>
             </AllAppsList>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -261,9 +261,9 @@ This sample demonstrates that only a global profile is used, no active user conf
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v2="https://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="https://schemas.microsoft.com/AssignedAccess/2020/config"
 >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
@@ -276,7 +276,7 @@ This sample demonstrates that only a global profile is used, no active user conf
                 </AllowedApps>
             </AllAppsList>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -313,9 +313,9 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v2="https://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="https://schemas.microsoft.com/AssignedAccess/2020/config"
 >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
@@ -328,7 +328,7 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
                 </AllowedApps>
             </AllAppsList>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -363,7 +363,7 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
                 </AllowedApps>
             </AllAppsList>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -401,9 +401,9 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v2="https://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="https://schemas.microsoft.com/AssignedAccess/2020/config"
 >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
@@ -416,7 +416,7 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
                 </AllowedApps>
             </AllAppsList>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -448,7 +448,7 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
             <v2:FileExplorerNamespaceRestrictions>
             </v2:FileExplorerNamespaceRestrictions>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -481,7 +481,7 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
                 <v2:AllowedNamespace Name="Downloads"/>
             </v2:FileExplorerNamespaceRestrictions>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -514,7 +514,7 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
                 <v3:AllowRemovableDrives />
             </v2:FileExplorerNamespaceRestrictions>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -548,7 +548,7 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
                 <v3:AllowRemovableDrives/>
             </v2:FileExplorerNamespaceRestrictions>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -581,7 +581,7 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
                 <v3:NoRestriction />
             </v2:FileExplorerNamespaceRestrictions>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -643,16 +643,16 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:default="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="https://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="https://schemas.microsoft.com/AssignedAccess/2020/config"
+    targetNamespace="https://schemas.microsoft.com/AssignedAccess/2017/config"
     >
 
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/201810/config"/>
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+    <xs:import namespace="https://schemas.microsoft.com/AssignedAccess/201810/config"/>
+    <xs:import namespace="https://schemas.microsoft.com/AssignedAccess/2020/config"/>
 
     <xs:complexType name="profile_list_t">
         <xs:sequence minOccurs="1" >
@@ -819,14 +819,14 @@ Here is the schema for new features introduced in Windows 10 1809 release
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:default="https://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="https://schemas.microsoft.com/AssignedAccess/2020/config"
+    targetNamespace="https://schemas.microsoft.com/AssignedAccess/201810/config"
     >
 
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+    <xs:import namespace="https://schemas.microsoft.com/AssignedAccess/2020/config"/>
 
     <xs:complexType name="fileExplorerNamespaceRestrictions_t">
         <xs:choice>
@@ -864,12 +864,12 @@ Schema for Windows 10, version 1909 and later
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:default="https://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:vc="https://www.w3.org/2007/XMLSchema-versioning"
     vc:minVersion="1.1"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    targetNamespace="https://schemas.microsoft.com/AssignedAccess/2020/config"
     >
 
     <xs:simpleType name="guid_t">
@@ -892,8 +892,8 @@ Schema for Windows 10, version 1909 and later
 To authorize a compatible configuration XML that includes elements and attributes from Windows 10, version 1809 or newer, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the autolaunch feature that was added in Windows 10, version 1809, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10, version 1809, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
 ```xml
 <AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:r1809="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:r1809="https://schemas.microsoft.com/AssignedAccess/201810/config"
 >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">

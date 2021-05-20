@@ -65,7 +65,7 @@ Here is an example provisioning XML for MAM enrollment.
     <parm name="APPID" value="w7"/> 
     <parm name="PROVIDER-ID" value="MAM SyncML Server"/> 
     <parm name="NAME" value="mddprov account"/> 
-    <parm name="ADDR" value="http://localhost:88"/> 
+    <parm name="ADDR" value="https://localhost:88"/> 
     <parm name="DEFAULTENCODING" value="application/vnd.syncml.dm+xml" /> 
   </characteristic> 
 </wap-provisioningdoc> 

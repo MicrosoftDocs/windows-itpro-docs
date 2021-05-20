@@ -308,7 +308,7 @@ For information about EAP Settings, see <https://technet.microsoft.com/library/h
 
 For information about generating an EAP XML, see [EAP configuration](eap-configuration.md)
 
-For more information about extended key usage, see <http://tools.ietf.org/html/rfc5280#section-4.2.1.12>
+For more information about extended key usage, see <https://tools.ietf.org/html/rfc5280#section-4.2.1.12>
 
 For information about adding extended key usage (EKU) to a certificate, see <https://technet.microsoft.com/library/cc731792.aspx>
 

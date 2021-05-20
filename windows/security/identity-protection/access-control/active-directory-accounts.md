@@ -673,7 +673,7 @@ In this procedure, the workstations are dedicated to domain administrators. By s
         </tr>
         <tr class="odd">
         <td><p>Specify intranet Microsoft Update service location</p></td>
-        <td><p>Enabled http://&lt;WSUSServername&gt; http://&lt;WSUSServername&gt; Where &lt;WSUSServername&gt; is the DNS name or IP address of the Windows Server Update Services (WSUS) in the environment.</p></td>
+        <td><p>Enabled https://&lt;WSUSServername&gt; https://&lt;WSUSServername&gt; Where &lt;WSUSServername&gt; is the DNS name or IP address of the Windows Server Update Services (WSUS) in the environment.</p></td>
         </tr>
         <tr class="even">
         <td><p>Automatic Updates detection frequency</p></td>

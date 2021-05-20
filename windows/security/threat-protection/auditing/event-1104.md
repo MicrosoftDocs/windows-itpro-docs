@@ -37,7 +37,7 @@ This event generates, for example, if the maximum size of Security Event Log fil
 
 ***Event XML:***
 ```
-- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <Event xmlns="https://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Eventlog" Guid="{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}" /> 
  <EventID>1104</EventID> 
@@ -55,7 +55,7 @@ This event generates, for example, if the maximum size of Security Event Log fil
  <Security /> 
  </System>
 - <UserData>
- <FileIsFull xmlns="http://manifests.microsoft.com/win/2004/08/windows/eventlog" /> 
+ <FileIsFull xmlns="https://manifests.microsoft.com/win/2004/08/windows/eventlog" /> 
  </UserData>
  </Event>
 

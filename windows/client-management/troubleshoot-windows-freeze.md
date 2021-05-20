@@ -276,7 +276,7 @@ You can use VMware Snapshots or suspend state and extract a memory dump file equ
 
 #### Citrix XenServer 
 
-The memory dump process occurs by pressing the RIGHT CTRL + SCROLL LOCK + SCROLL LOCK keyboard combination that's described in Method 1 and on [the Citrix site](http://support.citrix.com/article/ctx123177).   
+The memory dump process occurs by pressing the RIGHT CTRL + SCROLL LOCK + SCROLL LOCK keyboard combination that's described in Method 1 and on [the Citrix site](https://support.citrix.com/article/ctx123177).   
 
 ## Space limitations on the system drive in Windows Server 2008 
 

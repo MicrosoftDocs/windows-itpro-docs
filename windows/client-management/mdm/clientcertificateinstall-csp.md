@@ -563,7 +563,7 @@ Enroll a client certificate through SCEP.
                 <Meta>
                     <Format xmlns="syncml:metinf">chr</Format>
                 </Meta>
-                <Data>http://constoso.com/certsrv/mscep/mscep.dll</Data>
+                <Data>https://constoso.com/certsrv/mscep/mscep.dll</Data>
             </Item>
         </Add>
         <Add>

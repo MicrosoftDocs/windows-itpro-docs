@@ -50,20 +50,20 @@ During the automatic certificate renew process, the device will deny HTTP redire
 The following example shows the details of an automatic renewal request.
 
 ``` xml
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" 
-   xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u=
-   "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+<s:Envelope xmlns:s="https://www.w3.org/2003/05/soap-envelope" 
+   xmlns:a="https://www.w3.org/2005/08/addressing" xmlns:u=
+   "https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
    <s:Header>
       <a:Action s:mustUnderstand="1">
-         http://schemas.microsoft.com/windows/pki/2009/01/enrollment/RST/wstep</a:Action>
+         https://schemas.microsoft.com/windows/pki/2009/01/enrollment/RST/wstep</a:Action>
       <a:MessageID>urn:uuid:61a17f2c-42e9-4a45-9c85-f15c1c8baee8</a:MessageID>
       <a:ReplyTo>
-         <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+         <a:Address>https://www.w3.org/2005/08/addressing/anonymous</a:Address>
       </a:ReplyTo>
       <a:To s:mustUnderstand="1">
          https://dm.contoso.com/EnrollmentService/DeviceEnrollmentService.svc</a:To>
       <o:Security s:mustUnderstand="1" xmlns:o=
-         "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         "https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
          <u:Timestamp u:Id="_0">
             <u:Created>2011-07-11T19:49:08.579Z</u:Created>
             <u:Expires>2011-07-11T19:54:08.579Z</u:Expires>
@@ -71,24 +71,24 @@ The following example shows the details of an automatic renewal request.
          <o:UsernameToken u:Id="uuid-2a734df6-b227-4e60-82a8-ed53c574b718-5">
             <o:Username>user@contoso.com</o:Username>
             <o:Password o:Type=
-               "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">                
+               "https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">                
             </o:Password>
          </o:UsernameToken>
       </o:Security>
    </s:Header>
    <s:Body>
-      <RequestSecurityToken xmlns="http://docs.oasis-open.org/ws-sx/ws-trust/200512">
+      <RequestSecurityToken xmlns="https://docs.oasis-open.org/ws-sx/ws-trust/200512">
          <TokenType>
-    http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
+    https://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
          </TokenType>
-         <RequestType>http://docs.oasis-open.org/ws-sx/ws-trust/200512/Renew</RequestType>
+         <RequestType>https://docs.oasis-open.org/ws-sx/ws-trust/200512/Renew</RequestType>
          <BinarySecurityToken 
-            ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#PKCS7" 
-            EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary" 
-            xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            ValueType="https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#PKCS7" 
+            EncodingType="https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary" 
+            xmlns="https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
             BinarySecurityTokenInsertedHere
          </BinarySecurityToken>
-         <AdditionalContext xmlns="http://schemas.xmlsoap.org/ws/2006/12/authorization">
+         <AdditionalContext xmlns="https://schemas.xmlsoap.org/ws/2006/12/authorization">
             <ContextItem Name="DeviceType">
                <Value>WindowsPhone</Value>
             </ContextItem>

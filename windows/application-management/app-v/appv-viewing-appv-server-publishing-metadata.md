@@ -46,13 +46,13 @@ This section provides information about queries for viewing publishing metadata 
 
 **Query syntax**
 
-`http://<PubServer>:<Publishing Port#>/?ClientVersion=<BuildNumber>&ClientOS=<OSStringValue>`
+`https://<PubServer>:<Publishing Port#>/?ClientVersion=<BuildNumber>&ClientOS=<OSStringValue>`
 
 For information about the variables in this syntax, see the table that follows.
 
 **Query example**
 
-`http://pubsvr01:2718/?ClientVersion=10.0.14393&ClientOS=WindowsClient_10.0_x64`
+`https://pubsvr01:2718/?ClientVersion=10.0.14393&ClientOS=WindowsClient_10.0_x64`
 
 In this example:
 
@@ -71,7 +71,7 @@ The following table describes the parameters shown in the preceding **Query synt
 | `ClientVersion=<BuildNumber>` | Windows 10 build number. You can obtain this number by running the following Windows PowerShell command:<br>`(Get-CimInstance Win32_OperatingSystem).version`  |
 | `ClientOS=<OSStringValue>` | Operating system of the computer that is running the App-V client. Refer to the table that follows for the correct value.<br>You can omit this parameter, with the result that only the packages that were sequenced to support all operating systems will appear in the metadata. |
 
-To get the name of the Publishing server and the port number (`http://<PubServer>:<Publishing Port#>`) from the App-V client, look at the URL configuration of the <strong>Get-AppvPublishingServer</strong> Windows PowerShell cmdlet.
+To get the name of the Publishing server and the port number (`https://<PubServer>:<Publishing Port#>`) from the App-V client, look at the URL configuration of the <strong>Get-AppvPublishingServer</strong> Windows PowerShell cmdlet.
 
 ## <a href="" id="bkmk-values-query-pub-meta"></a>Query values for client operating system
 

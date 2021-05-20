@@ -51,7 +51,7 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
     Size="2x2" 
     Column="0" 
     Row="0" 
-    Arguments="-contentTile -formatVersion 0x00000003 -pinnedTimeLow 0x36a8c2e4 -pinnedTimeHigh 0x01d0919b -securityFlags 0x00000000 -tileType 0x00000000 -url 0x00000014 http://www.bing.com/" Square150x150LogoUri="ms-appdata:///local/PinnedTiles/-9513911450/lowres.png" 
+    Arguments="-contentTile -formatVersion 0x00000003 -pinnedTimeLow 0x36a8c2e4 -pinnedTimeHigh 0x01d0919b -securityFlags 0x00000000 -tileType 0x00000000 -url 0x00000014 https://www.bing.com/" Square150x150LogoUri="ms-appdata:///local/PinnedTiles/-9513911450/lowres.png" 
     Wide310x150LogoUri="ms-appx:///" 
     ShowNameOnSquare150x150Logo="true" 
     ShowNameOnWide310x150Logo="true" 

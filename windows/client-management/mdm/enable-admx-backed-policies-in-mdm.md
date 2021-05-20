@@ -66,7 +66,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
     In this example you configure **Enable App-V Client** to **Enabled**.
 
     > [!NOTE]
-    > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
+    > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](https://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
 
     ```xml
     <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -212,7 +212,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
         
       ```xml
       <data id="Publishing_Server2_Name_Prompt" value="Name"/>
-      <data id="Publishing_Server_URL_Prompt" value="http://someuri"/>
+      <data id="Publishing_Server_URL_Prompt" value="https://someuri"/>
       <data id="Global_Publishing_Refresh_Options" value="1"/>
       <data id="Global_Refresh_OnLogon_Options" value="0"/>
       <data id="Global_Refresh_Interval_Prompt" value="15"/>
@@ -228,7 +228,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
       Here is the example for **AppVirtualization/PublishingAllowServer2**:
         
        > [!NOTE]
-       > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
+       > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](https://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
 
        ```xml
        <?xml version="1.0" encoding="utf-8"?>

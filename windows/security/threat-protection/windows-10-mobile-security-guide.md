@@ -149,7 +149,7 @@ To help make the device even more secured against outside interference, Windows 
 
 ### <a href="" id="companion-devices"></a>Government Certifications
 
-Windows 10 Mobile supports both [FIPS 140 standards](http://csrc.nist.gov/groups/STM/cavp/validation.html) for cryptography and [Common Criteria](https://www.niap-ccevs.org/Product/Compliant.cfm?pid=10694) The FIPS 140 certification validates the effectiveness of the cryptographic algorithms used in Windows 10 Mobile. Microsoft has also received Common Criteria certification for Windows 10 Mobile running on Lumia 950, 950 XL, 550, 635, as well as Surface Pro 4, giving customers assurance that securety functionality is implemented properly.
+Windows 10 Mobile supports both [FIPS 140 standards](https://csrc.nist.gov/groups/STM/cavp/validation.html) for cryptography and [Common Criteria](https://www.niap-ccevs.org/Product/Compliant.cfm?pid=10694) The FIPS 140 certification validates the effectiveness of the cryptographic algorithms used in Windows 10 Mobile. Microsoft has also received Common Criteria certification for Windows 10 Mobile running on Lumia 950, 950 XL, 550, 635, as well as Surface Pro 4, giving customers assurance that securety functionality is implemented properly.
 
 ## Malware resistance
 
@@ -208,7 +208,7 @@ The table below outlines how Windows 10 Mobile mitigates specific malware threat
 </tbody>
 </table>
 
->**Note:** The Windows 10 Mobile devices use a System on a Chip (SoC) design provided by SoC vendors such as Qualcomm. With this architecture, the SoC vendor and device manufacturers provide the pre-UEFI bootloaders and the UEFI environment. The UEFI environment implements the UEFI Secure Boot standard described in section 27 of the UEFI specification, which can be found at [www.uefi.org/specs]( http://www.uefi.org/specs). This standard describes the process by which all UEFI drivers and applications are validated against keys provisioned into a UEFI-based device before they are executed.
+>**Note:** The Windows 10 Mobile devices use a System on a Chip (SoC) design provided by SoC vendors such as Qualcomm. With this architecture, the SoC vendor and device manufacturers provide the pre-UEFI bootloaders and the UEFI environment. The UEFI environment implements the UEFI Secure Boot standard described in section 27 of the UEFI specification, which can be found at [www.uefi.org/specs]( https://www.uefi.org/specs). This standard describes the process by which all UEFI drivers and applications are validated against keys provisioned into a UEFI-based device before they are executed.
 
 ### <a href="" id="companion-devices"></a>UEFI with Secure Boot
 

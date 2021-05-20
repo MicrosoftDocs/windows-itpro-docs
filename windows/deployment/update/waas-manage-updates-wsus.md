@@ -93,10 +93,10 @@ When using WSUS to manage updates on Windows client devices, start by configurin
 
 11. In the **Specify intranet Microsoft update service location** dialog box, select **Enable**.
 
-12. Under **Options**, in the **Set the intranet update service for detecting updates** and **Set the intranet statistics server** options, type <strong>http://Your_WSUS_Server_FQDN:PortNumber</strong>, and then select **OK**.
+12. Under **Options**, in the **Set the intranet update service for detecting updates** and **Set the intranet statistics server** options, type <strong>https://Your_WSUS_Server_FQDN:PortNumber</strong>, and then select **OK**.
 
     >[!NOTE]
-    >The URL `http://CONTOSO-WSUS1.contoso.com:8530` in the following image is just an example. In your environment, be sure to use the server name and port number for your WSUS instance.
+    >The URL `https://CONTOSO-WSUS1.contoso.com:8530` in the following image is just an example. In your environment, be sure to use the server name and port number for your WSUS instance.
     
      ![Example of UI](images/waas-wsus-fig6.png)
      

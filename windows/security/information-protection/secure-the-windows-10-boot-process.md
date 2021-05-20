@@ -80,7 +80,7 @@ All x86-based Certified For Windows 10 PCs must meet several requirements relat
 
 These requirements help protect you from rootkits while allowing you to run any operating system you want. You have three options for running non-Microsoft operating systems:
 
--  **Use an operating system with a certified bootloader.** Because all Certified For Windows 10 PCs must trust Microsoft’s certificate, Microsoft offers a service to analyze and sign any non-Microsoft bootloader so that it will be trusted by all Certified For Windows 10 PCs. In fact, an [open source bootloader](http://mjg59.dreamwidth.org/20303.html) capable of loading Linux is already available. To begin the process of obtaining a certificate, go to <https://partner.microsoft.com/dashboard>.
+-  **Use an operating system with a certified bootloader.** Because all Certified For Windows 10 PCs must trust Microsoft’s certificate, Microsoft offers a service to analyze and sign any non-Microsoft bootloader so that it will be trusted by all Certified For Windows 10 PCs. In fact, an [open source bootloader](https://mjg59.dreamwidth.org/20303.html) capable of loading Linux is already available. To begin the process of obtaining a certificate, go to <https://partner.microsoft.com/dashboard>.
 -  **Configure UEFI to trust your custom bootloader.** All Certified For Windows 10 PCs allow you to trust a non-certified bootloader by adding a signature to the UEFI database, allowing you to run any operating system, including homemade operating systems.
 -  **Turn off Secure Boot.** All Certified For Windows 10 PCs allow you to turn off Secure Boot so that you can run any software. This does not help protect you from bootkits, however.
 
@@ -121,7 +121,7 @@ Figure 2 illustrates the Measured Boot and remote attestation process.
 **Figure 2. Measured Boot proves the PC’s health to a remote server**
 
 
-Windows 10 includes the application programming interfaces to support Measured Boot, but you’ll need non-Microsoft tools to implement a remote attestation client and trusted attestation server to take advantage of it. For an example of such a tool, download the [TPM Platform Crypto-Provider Toolkit](https://research.microsoft.com/en-us/downloads/74c45746-24ad-4cb7-ba4b-0c6df2f92d5d/) from Microsoft Research or Microsoft Enterprise Security MVP Dan Griffin’s [Measured Boot Tool](http://mbt.codeplex.com/).
+Windows 10 includes the application programming interfaces to support Measured Boot, but you’ll need non-Microsoft tools to implement a remote attestation client and trusted attestation server to take advantage of it. For an example of such a tool, download the [TPM Platform Crypto-Provider Toolkit](https://research.microsoft.com/en-us/downloads/74c45746-24ad-4cb7-ba4b-0c6df2f92d5d/) from Microsoft Research or Microsoft Enterprise Security MVP Dan Griffin’s [Measured Boot Tool](https://mbt.codeplex.com/).
 
 Measured Boot uses the power of UEFI, TPM, and Windows 10 to give you a way to confidently assess the trustworthiness of a client PC across the network.
 

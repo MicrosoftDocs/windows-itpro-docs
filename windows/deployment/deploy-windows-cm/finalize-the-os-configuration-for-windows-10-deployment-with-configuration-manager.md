@@ -76,7 +76,7 @@ On **CM01**:
    OSDMigrateAdditionalCaptureOptions=/ue:*\* /ui:CONTOSO\*
    OSDMigrateConfigFiles=Miguser.xml,Migapp.xml
    SLSHARE=\\CM01\Logs$
-   EventService=http://CM01:9800
+   EventService=https://CM01:9800
    ApplyGPOPack=NO
    ```
 

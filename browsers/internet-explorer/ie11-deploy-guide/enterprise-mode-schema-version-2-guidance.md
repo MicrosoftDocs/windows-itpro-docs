@@ -45,7 +45,7 @@ You can continue to use the v.1 version of the schema on Windows 10, but you wo
 The following is an example of the v.2 version of the Enterprise Mode schema.
 
 > [!IMPORTANT]
-> Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both http://contoso.com and https://contoso.com.
+> Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both https://contoso.com and https://contoso.com.
  
 ```xml
 <site-list version="205">
@@ -218,7 +218,7 @@ In this example, if <a href="https://contoso.com/travel" data-raw-source="https:
 <td>url</td>
 <td>Specifies the URL (and port number using standard port conventions) to which the child elements apply. The URL can be a domain, sub-domain, or any path URL.
 <br><b>Note</b><br>
-Make sure that you don&#39;t specify a protocol. Using &lt;site url=&quot;contoso.com&quot;&gt; applies to both <a href="http://contoso.com" data-raw-source="http://contoso.com">http://contoso.com</a> and <a href="https://contoso.com" data-raw-source="https://contoso.com">https://contoso.com</a>.
+Make sure that you don&#39;t specify a protocol. Using &lt;site url=&quot;contoso.com&quot;&gt; applies to both <a href="https://contoso.com" data-raw-source="https://contoso.com">https://contoso.com</a> and <a href="https://contoso.com" data-raw-source="https://contoso.com">https://contoso.com</a>.
 <p><b>Example</b>
 <pre class="syntax">
 &lt;site url=&quot;contoso.com:8080&quot;&gt;
@@ -297,7 +297,7 @@ While the old, replaced attributes aren't supported in the v.2 version of the sc
 ### What not to include in your schema
 We recommend that you not add any of the following items to your schema because they can make your compatibility list behave in unexpected ways:
 
-- Don’t use protocols. For example, `http://`, `https://`, or custom protocols. They break parsing.
+- Don’t use protocols. For example, `https://`, `https://`, or custom protocols. They break parsing.
 - Don’t use wildcards.
 - Don’t use query strings, ampersands break parsing.
 

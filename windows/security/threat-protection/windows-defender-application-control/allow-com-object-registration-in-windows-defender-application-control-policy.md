@@ -110,7 +110,7 @@ Description:
 Event XML:
 
 ```XML
-<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+<Event xmlns="https://schemas.microsoft.com/win/2004/08/events/event">
   <System>
     <Provider Name="Microsoft-Windows-AppLocker" Guid="{cbda4dbf-8d5d-4f69-9578-be14aa540d22}" />
     <EventID>8036</EventID>

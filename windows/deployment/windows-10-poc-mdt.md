@@ -141,7 +141,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     - Specify Product Key: **Do not specify a product key at this time**
     - Full Name: **Contoso**
     - Organization: **Contoso**
-    - Internet Explorer home page: **http://www.contoso.com**
+    - Internet Explorer home page: **https://www.contoso.com**
     - Admin Password: **Do not specify an Administrator password at this time**
     - Summary: click **Next**
     - Confirmation: click **Finish**
@@ -300,7 +300,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     - Specify Product Key: Do not specify a product key at this time
     - Full Name: Contoso
     - Organization: Contoso
-    - Internet Explorer home page: http://www.contoso.com
+    - Internet Explorer home page: https://www.contoso.com
     - Admin Password: pass@word1 
     
 ### Configure the MDT production deployment share
@@ -349,7 +349,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     SkipSummary=YES
     SkipCapture=YES
     SkipFinalSummary=NO
-    EventService=http://SRV1:9800
+    EventService=https://SRV1:9800
     ```
     **Note**: The contents of the Rules tab are added to c:\MDTProd\Control\CustomSettings.ini.
     
@@ -398,7 +398,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 2. On the **Monitoring** tab, select the **Enable monitoring for this deployment share** checkbox, and then click **OK**.
 
-3. Verify the monitoring service is working as expected by opening the following link on SRV1 in Internet Explorer: [http://localhost:9800/MDTMonitorEvent/](http://localhost:9800/MDTMonitorEvent/). If you do not see "**You have created a service**" at the top of the page, see [Troubleshooting MDT 2012 Monitoring](/archive/blogs/mniehaus/troubleshooting-mdt-2012-monitoring).
+3. Verify the monitoring service is working as expected by opening the following link on SRV1 in Internet Explorer: [https://localhost:9800/MDTMonitorEvent/](https://localhost:9800/MDTMonitorEvent/). If you do not see "**You have created a service**" at the top of the page, see [Troubleshooting MDT 2012 Monitoring](/archive/blogs/mniehaus/troubleshooting-mdt-2012-monitoring).
 
 4. Close Internet Explorer.
 

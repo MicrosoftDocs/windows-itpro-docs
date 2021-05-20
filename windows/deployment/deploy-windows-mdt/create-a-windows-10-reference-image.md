@@ -320,7 +320,7 @@ On **MDT01**:
    6. Specify Product Key: Do not specify a product key at this time
    7. Full Name: Contoso
    8. Organization: Contoso
-   9. Internet Explorer home page: http://www.contoso.com
+   9. Internet Explorer home page: https://www.contoso.com
    10. Admin Password: Do not specify an Administrator Password at this time
 
 ### Edit the Windows 10 task sequence
@@ -436,7 +436,7 @@ On **MDT01**:
     HideShell=YES
     FinishAction=SHUTDOWN
     DoNotCreateExtraPartition=YES
-    WSUSServer=http://mdt01.contoso.com:8530
+    WSUSServer=https://mdt01.contoso.com:8530
     ApplyGPOPack=NO
     SLSHARE=\\MDT01\Logs$
     SkipAdminPassword=YES
@@ -557,7 +557,7 @@ JoinWorkgroup=WORKGROUP
 HideShell=YES
 FinishAction=SHUTDOWN
 DoNotCreateExtraPartition=YES
-WSUSServer=http://mdt01.contoso.com:8530
+WSUSServer=https://mdt01.contoso.com:8530
 ApplyGPOPack=NO
 SLSHARE=\\MDT01\Logs$
 SkipAdminPassword=YES
