@@ -136,8 +136,8 @@ The SasUrl value is the target URI to which the CSP uploads the zip file contain
   - Expected input value: The full command line including path and any arguments, such as `%windir%\\system32\\ipconfig.exe /all`.
   - Output format: Console text output from the command is captured in a text file and included in the overall output archive. For commands which may generate file output rather than console output, a subsequent FolderFiles directive would be used to capture that output. The example XML above demonstrates this pattern with mdmdiagnosticstool.exe's -out parameter.
   - Privacy guardrails: To enable diagnostic data capture while reducing the risk of an IT admin inadvertently capturing user-generated documents, only the following commands are allowed:
-     - %windir%\\system32\\certutil.exe
-     - %windir%\\system32\\dxdiag.exe
+    - %windir%\\system32\\certutil.exe
+    - %windir%\\system32\\dxdiag.exe
     - %windir%\\system32\\gpresult.exe
     - %windir%\\system32\\msinfo32.exe
     - %windir%\\system32\\netsh.exe
