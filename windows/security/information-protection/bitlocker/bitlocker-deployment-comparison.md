@@ -6,8 +6,8 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: v-lsaldanha
-ms.author: lovina-saldanha
+author: lovina-saldanha
+ms.author: v-lsaldanha
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
