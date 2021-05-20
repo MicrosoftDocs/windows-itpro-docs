@@ -74,7 +74,7 @@ landingContent:
       - linkListType: how-to-guide (written)
         links:
           - text: Allow managed installer and configure managed installer rules
-            url:  use-windows-defender-application-control-with-managed-installer.md
+            url:  configure-authorized-apps-deployed-with-a-managed-installer.md
           - text: Allow reputable apps with ISG
             url:  use-windows-defender-application-control-with-intelligent-security-graph.md
   # Card
