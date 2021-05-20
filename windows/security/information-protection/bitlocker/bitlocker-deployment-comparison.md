@@ -1,8 +1,6 @@
 ---
 title: BitLocker deployment comparison (Windows 10)
-description: This article for the IT professional explains how 
-BitLocker features can be used to protect your data through drive 
-encryption.
+description: This article shows the Bitlocker deployment comparison chart.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -14,7 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 05/20/2021
 ms.custom: bitlocker
 ---
 
@@ -24,12 +22,9 @@ ms.custom: bitlocker
 
 - Windows 10
 
-This article for the IT professional explains how BitLocker 
-features can be used to protect your data through drive encryption.
+This article for the IT professional depicts the BitLocker deployment comparison chart.
 
 ## Bitlocker deployment comparison chart
-
-
 
 |  |Microsoft Intune  |Microsoft Endpoint Configuration Manager  |Microsoft BitLocker Administration and Monitoring (MBAM)* |
 |---------|---------|---------|---------|
@@ -40,52 +35,34 @@ features can be used to protect your data through drive encryption.
 |Supported domain-joined status     |     Microsoft Azure Active Directory (Azure AD) joined, hybrid Azure AD joined    |   Active Directory joined, hybrid Azure AD joined      |     Active Directory joined    |
 |Permissions required to manage policies     |    Endpoint security manager or custom     |   Full administrator or custom      |     Domain Admin or Delegated GPO access    |
 |Cloud or on premises      |     Cloud    |  On premises     |    On premises     |
-|Server components required?      |         |         |         |
+|Server components required?      |         |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |
 |Additional agent required?     |     No (device enrollment only)    |   Configuration Manager client      |     MBAM client    |
-|Administrative plane     | Microsoft Endpoint Manager
-admin center        |    Configuration Manager console     |    Group Policy Management Console
-and MBAM sites     |
-|Administrative portal installation required     |         |       |         |
-|Compliance reporting capabilities     |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |   :::image type="content" source="images/dot.png" alt-text="dot":::      |  :::image type="content" source="images/dot.png" alt-text="dot":::       |
-|Force encryption     |   :::image type="content" source="images/dot.png" alt-text="dot":::      |  :::image type="content" source="images/dot.png" alt-text="dot":::     |  :::image type="content" source="images/dot.png" alt-text="dot":::       |
-|Encryption for storage cards (mobile)      |    :::image type="content" source="images/dot.png" alt-text="dot":::     | :::image type="content" source="images/dot.png" alt-text="dot":::        |         |
-|Allow recovery password      |         |       |         |
-|Manage startup authentication     |         |         |         |
-|Select cipher strength and algorithms for fixed 
-drives      |         |       |         |
-|Select cipher strength and algorithms for 
-removable drives     |         |         |         |
-|Select cipher strength and algorithms for operating 
-environment drives     |         |       |         |
+|Administrative plane     | Microsoft Endpoint Manager admin center        |    Configuration Manager console     |    Group Policy Management Console and MBAM sites     |
+|Administrative portal installation required     |         |   :::image type="content" source="images/dot1.png" alt-text="dot":::    |    :::image type="content" source="images/dot1.png" alt-text="dot":::     |
+|Compliance reporting capabilities     |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |
+|Force encryption     |    :::image type="content" source="images/dot1.png" alt-text="dot":::   |  :::image type="content" source="images/dot1.png" alt-text="dot":::   | :::image type="content" source="images/dot1.png" alt-text="dot":::       |
+|Encryption for storage cards (mobile)      |   :::image type="content" source="images/dot1.png" alt-text="dot":::     |  :::image type="content" source="images/dot1.png" alt-text="dot":::      |         |
+|Allow recovery password      |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |   :::image type="content" source="images/dot1.png" alt-text="dot":::    |    :::image type="content" source="images/dot1.png" alt-text="dot":::     |
+|Manage startup authentication     |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |     :::image type="content" source="images/dot1.png" alt-text="dot":::    |     :::image type="content" source="images/dot1.png" alt-text="dot":::    |
+|Select cipher strength and algorithms for fixed drives      |    :::image type="content" source="images/dot1.png" alt-text="dot":::     | :::image type="content" source="images/dot1.png" alt-text="dot":::      |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |
+|Select cipher strength and algorithms for removable drives     |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |
+|Select cipher strength and algorithms for operating environment drives     |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |   :::image type="content" source="images/dot1.png" alt-text="dot":::    |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |
 |Standard recovery password storage location     |     Azure AD or 
 Active Directory    |     Configuration Manager site database    |    MBAM database     |
 |Store recovery password for operating system and 
 fixed drives to Azure AD or Active Directory     |    Yes (Active Directory and 
 Azure AD)     | Yes (Active Directory only)      |   Yes (Active Directory only)      |
-|Customize preboot message and recovery link     |         |         |         |
-|Allow/deny key file creation     |         |       |         |
-|Deny Write permission to unprotected drives     |         |         |         |
-|Can be administered outside company network     |         |       |         |
-|Support for organization unique IDs     |         |         |         |
-|Self-service recovery      |    Yes (through Azure AD or 
-Company Portal app)     |       |         |
-|Recovery password rotation for fixed and operating environment drives     |   Yes (Windows 10, version 1909 and later)     |         |         |
-|Wait to complete encryption until recovery information is backed up to Active Directory      |         |       |         |
-|Allow or deny Data Recovery Agent     |         |         |         |
-|Unlock a volume using certificate with custom object identifier     |         |       |         |
-|Prevent memory overwrite on restart     |         |         |         |
-|Configure custom Trusted Platform Module Platform Configuration Register profiles     |         |       |         |
-|Manage auto-unlock functionality     |         |         |         |
-|Row6     |         |       |         |
-|Row7     |         |         |         |
-|Row6     |         |       |         |
-|Row7     |         |         |         |
-|Row6     |         |       |         |
-|Row7     |         |         |         |
-|Row6     |         |       |         |
-|Row7     |         |         |         |
-|Row6     |         |       |         |
-|Row7     |         |         |         |
-|Row6     |         |       |         |
-|Row7     |         |         |         |
-
+|Customize preboot message and recovery link     | :::image type="content" source="images/dot1.png" alt-text="dot":::         | :::image type="content" source="images/dot1.png" alt-text="dot":::        |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |
+|Allow/deny key file creation     |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::     |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |
+|Deny Write permission to unprotected drives     |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |
+|Can be administered outside company network     |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::     |         |
+|Support for organization unique IDs     |         |      :::image type="content" source="images/dot1.png" alt-text="dot":::   |     :::image type="content" source="images/dot1.png" alt-text="dot":::    |
+|Self-service recovery      |    Yes (through Azure AD or Company Portal app)     |   :::image type="content" source="images/dot1.png" alt-text="dot":::    |    :::image type="content" source="images/dot1.png" alt-text="dot":::     |
+|Recovery password rotation for fixed and operating environment drives     |   Yes (Windows 10, version 1909 and later)     |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |
+|Wait to complete encryption until recovery information is backed up to Azure AD      |     :::image type="content" source="images/dot1.png" alt-text="dot":::    |       |        |
+|Wait to complete encryption until recovery information is backed up to Active Directory      |         |  :::image type="content" source="images/dot1.png" alt-text="dot":::     |    :::image type="content" source="images/dot1.png" alt-text="dot":::     |
+|Allow or deny Data Recovery Agent     |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |
+|Unlock a volume using certificate with custom object identifier     |         |   :::image type="content" source="images/dot1.png" alt-text="dot":::    |     :::image type="content" source="images/dot1.png" alt-text="dot":::    |
+|Prevent memory overwrite on restart     |         |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |
+|Configure custom Trusted Platform Module Platform Configuration Register profiles     |         |       | :::image type="content" source="images/dot1.png" alt-text="dot":::        |
+|Manage auto-unlock functionality     |         |    :::image type="content" source="images/dot1.png" alt-text="dot":::     | :::image type="content" source="images/dot1.png" alt-text="dot":::        |
