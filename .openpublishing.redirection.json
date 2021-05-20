@@ -1,6 +1,146 @@
 {
   "redirections": [
     {
+      "source_path": "browsers/edge/about-microsoft-edge.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/about-microsoft-edge",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/available-policies.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/available-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/change-history-for-microsoft-edge.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/change-history-for-microsoft-edge",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/edge-technical-demos.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/edge-technical-demos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/emie-to-improve-compatibility.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/emie-to-improve-compatibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/img-microsoft-edge-infographic-lg.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/img-microsoft-edge-infographic-lg",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/managing-group-policy-admx-files.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/managing-group-policy-admx-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/microsoft-edge-forrester.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/microsoft-edge-forrester",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/microsoft-edge-kiosk-mode-deploy.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/microsoft-edge-kiosk-mode-deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/troubleshooting-microsoft-edge.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/troubleshooting-microsoft-edge",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/use-powershell-to manage-group-policy.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/use-powershell-to manage-group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/web-app-compat-toolkit.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/web-app-compat-toolkit",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/address-bar-settings-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/address-bar-settings-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/adobe-settings-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/adobe-settings-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/books-library-management-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/books-library-management-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/browser-settings-management-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/browser-settings-management-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/developer-settings-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/developer-settings-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/extensions-management-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/extensions-management-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/favorites-management-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/favorites-management-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/home-button-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/home-button-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/interoperability-enterprise-guidance-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/interoperability-enterprise-guidance-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/new-tab-page-settings-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/new-tab-page-settings-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/prelaunch-preload-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/prelaunch-preload-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/search-engine-customization-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/search-engine-customization-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/security-privacy-management-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/security-privacy-management-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/start-pages-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/start-pages-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/sync-browser-settings-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/sync-browser-settings-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "browsers/edge/group-policies/telemetry-management-gp.md",
+      "redirect_url": "/previous-versions/windows/edge-legacy/group-policies/telemetry-management-gp",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "security/threat-protection/windows-defender-application-control/signing-policies-with-signtool.md",
       "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering",
       "redirect_document_id": false
