@@ -357,3 +357,5 @@
       items: 
         - name: Internet Explorer and Microsoft Edge FAQ for IT Pros
           href: kb-support/ie-edge-faqs.md
+- name: Microsoft Edge and Internet Explorer troubleshooting
+  href: /troubleshoot/browsers/welcome-browsers
