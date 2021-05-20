@@ -333,22 +333,22 @@ The following XML sample explains the properties for the EAP TLS XML including c
 > For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
  
 ```xml
-<EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
+<EapHostConfig xmlns="https://www.microsoft.com/provisioning/EapHostConfig">
  <EapMethod>
-  <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">13</Type>
+  <Type xmlns="https://www.microsoft.com/provisioning/EapCommon">13</Type>
   <!--The above property defines the Method type for EAP, 13 means EAP TLS -->
 
-  <VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId>
-  <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
-  <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
+  <VendorId xmlns="https://www.microsoft.com/provisioning/EapCommon">0</VendorId>
+  <VendorType xmlns="https://www.microsoft.com/provisioning/EapCommon">0</VendorType>
+  <AuthorId xmlns="https://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
   <!--The 3 properties above define the method publishers, this is seen primarily in 3rd party Vendor methods.-->
   <!-- For Microsoft EAP TLS the value of the above fields will always be 0 -->
  </EapMethod>
  <!-- Now that the EAP Method is Defined we will go into the Configuration -->
- <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
-  <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+ <Config xmlns="https://www.microsoft.com/provisioning/EapHostConfig">
+  <Eap xmlns="https://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
    <Type>13</Type>
-   <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
+   <EapType xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
     <CredentialsSource>
      <!-- Credential Source can be either CertificateStore or SmartCard -->
      <CertificateStore>
@@ -363,11 +363,11 @@ The following XML sample explains the properties for the EAP TLS XML including c
      <ServerNames/>
     </ServerValidation>
     <DifferentUsername>false</DifferentUsername>
-    <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</PerformServerValidation>
-    <AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName>
-    <TLSExtensions xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">
+    <PerformServerValidation xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</PerformServerValidation>
+    <AcceptServerName xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName>
+    <TLSExtensions xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">
      <!-- For filtering the relevant information is below -->
-     <FilteringInfo xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV3">
+     <FilteringInfo xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV3">
       <CAHashList Enabled="true">
        <!-- The above implies that you want to filter by Issuer Hash -->
        <IssuerHash>ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff

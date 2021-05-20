@@ -39,7 +39,7 @@ In this topic:
 The following .xml file migrates a single registry key.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/test">
      <component type="Application" context="System">
           <displayName>Component to migrate only registry value string</displayName> 
           <role role="Settings">
@@ -65,7 +65,7 @@ The following examples show how to migrate a folder from a specific drive, and f
 -   **Including subfolders.** The following .xml file migrates all files and subfolders from C:\\EngineeringDrafts to the destination computer.
 
     ``` xml
-    <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+    <migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/test">
     <component type="Documents" context="System">
       <displayName>Component to migrate all Engineering Drafts Documents including subfolders</displayName>
       <role role="Data">
@@ -84,7 +84,7 @@ The following examples show how to migrate a folder from a specific drive, and f
 -   **Excluding subfolders.** The following .xml file migrates all files from C:\\EngineeringDrafts, but it does not migrate any subfolders within C:\\EngineeringDrafts.
 
     ``` xml
-    <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+    <migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/test">
     <component type="Documents" context="System">
       <displayName>Component to migrate all Engineering Drafts Documents without subfolders</displayName>
       <role role="Data">
@@ -105,7 +105,7 @@ The following examples show how to migrate a folder from a specific drive, and f
 The following .xml file migrates all files and subfolders of the EngineeringDrafts folder from any drive on the computer. If multiple folders exist with the same name, then all files with this name are migrated.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>Component to migrate all Engineering Drafts Documents folder on any drive on the computer </displayName>
   <role role="Data">
@@ -125,7 +125,7 @@ The following .xml file migrates all files and subfolders of the EngineeringDraf
 The following .xml file migrates all files and subfolders of the EngineeringDrafts folder from any location on the C:\\ drive. If multiple folders exist with the same name, they are all migrated.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>Component to migrate all Engineering Drafts Documents EngineeringDrafts folder from where ever it exists on the C: drive </displayName>
   <role role="Data">
@@ -148,7 +148,7 @@ The following .xml file migrates all files and subfolders of the EngineeringDraf
 The following .xml file migrates .mp3 files located in the specified drives on the source computer into the C:\\Music folder on the destination computer.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>All .mp3 files to My Documents</displayName>
   <role role="Data">
@@ -178,7 +178,7 @@ The following examples show how to migrate a file from a specific folder, and ho
 -   **To migrate a file from a folder.** The following .xml file migrates only the Sample.doc file from C:\\EngineeringDrafts on the source computer to the destination computer.
 
     ``` xml
-    <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+    <migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/test">
     <component type="Documents" context="System">
       <displayName>Component to migrate all Engineering Drafts Documents</displayName>
       <role role="Data">

@@ -70,7 +70,7 @@ If you have an &lt;include&gt; rule in one component and a &lt;locationModify&gt
 The following .xml file migrates all files from C:\\Userdocs, including .mp3 files, because the &lt;exclude&gt; rule is specified in a separate component.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/UserDocs">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/UserDocs">
 <component type="Documents" context="System">
 <displayName>User Documents</displayName>
         <role role="Data">

@@ -2190,7 +2190,7 @@ Syntax:
 Example:
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/miguser">
 <!-- This component migrates My Video files -->
    <component type="System" context="System">
       <displayName>System Data</displayName>
@@ -3097,7 +3097,7 @@ Syntax:
 The following example is from the MigApp.xml file:
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migapp">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/migapp">
 </migration>
 ```
 
@@ -4045,7 +4045,7 @@ Syntax:
 The following .xml file excludes all .mp3 files from migration. For additional examples of how to use this element, see the [Exclude Files and Settings](usmt-exclude-files-and-settings.md).
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
   <component context="System" type="Documents">
         <displayName>Test</displayName>
         <role role="Data">

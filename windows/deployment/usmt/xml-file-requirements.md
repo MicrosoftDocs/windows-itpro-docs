@@ -29,7 +29,7 @@ When creating custom .xml files, note the following requirements:
 
     ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
-    <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/<CustomFileName>">
+    <migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/<CustomFileName>">
     ```
 
 -   **Each component in the file must have a display name in order for it to appear in the Config.xml file.** This is because the Config.xml file defines the components by the display name and the migration urlid. For example, specify the following syntax:

@@ -21,7 +21,7 @@ Here's the XSD for the ProfileXML node in the VPNv2 CSP and VpnManagementAgent::
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import namespace="http://www.microsoft.com/provisioning/EapHostConfig" schemaLocation="EapHostConfig.xsd" />
+  <xs:import namespace="https://www.microsoft.com/provisioning/EapHostConfig" schemaLocation="EapHostConfig.xsd" />
   <xs:element name="VPNProfile">
     <xs:complexType>
       <xs:sequence>
@@ -165,7 +165,7 @@ Here's the XSD for the ProfileXML node in the VPNv2 CSP and VpnManagementAgent::
                             <xs:element name="Configuration" minOccurs="1" maxOccurs="1">
                               <xs:complexType>
                                 <xs:sequence>
-                                  <xs:element xmlns:q1="http://www.microsoft.com/provisioning/EapHostConfig" ref="q1:EapHostConfig" />
+                                  <xs:element xmlns:q1="https://www.microsoft.com/provisioning/EapHostConfig" ref="q1:EapHostConfig" />
                                 </xs:sequence>
                               </xs:complexType>
                             </xs:element>
@@ -271,17 +271,17 @@ Here's the XSD for the ProfileXML node in the VPNv2 CSP and VpnManagementAgent::
       <UserMethod>Eap</UserMethod>
       <Eap>
         <Configuration>
-          <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
+          <EapHostConfig xmlns="https://www.microsoft.com/provisioning/EapHostConfig">
             <EapMethod>
-              <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">25</Type>
-              <VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId>
-              <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
-              <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
+              <Type xmlns="https://www.microsoft.com/provisioning/EapCommon">25</Type>
+              <VendorId xmlns="https://www.microsoft.com/provisioning/EapCommon">0</VendorId>
+              <VendorType xmlns="https://www.microsoft.com/provisioning/EapCommon">0</VendorType>
+              <AuthorId xmlns="https://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
             </EapMethod>
-            <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
-              <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+            <Config xmlns="https://www.microsoft.com/provisioning/EapHostConfig">
+              <Eap xmlns="https://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
                 <Type>25</Type>
-                <EapType xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1">
+                <EapType xmlns="https://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1">
                   <ServerValidation>
                     <DisableUserPromptForServerValidation>true</DisableUserPromptForServerValidation>
                     <ServerNames></ServerNames>
@@ -290,9 +290,9 @@ Here's the XSD for the ProfileXML node in the VPNv2 CSP and VpnManagementAgent::
                   </ServerValidation>
                   <FastReconnect>true</FastReconnect>
                   <InnerEapOptional>false</InnerEapOptional>
-                  <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+                  <Eap xmlns="https://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
                     <Type>13</Type>
-                    <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
+                    <EapType xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
                       <CredentialsSource>
                         <CertificateStore>
                           <SimpleCertSelection>true</SimpleCertSelection>
@@ -305,10 +305,10 @@ Here's the XSD for the ProfileXML node in the VPNv2 CSP and VpnManagementAgent::
                         <TrustedRootCA>d1 76 97 cc 20 6e d2 6e 1a 51 f5 bb 96 e9 35 6d 6d 61 0b 74 </TrustedRootCA>
                       </ServerValidation>
                       <DifferentUsername>false</DifferentUsername>
-                      <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</PerformServerValidation>
-                      <AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName>
-                      <TLSExtensions xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">
-                        <FilteringInfo xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV3">
+                      <PerformServerValidation xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</PerformServerValidation>
+                      <AcceptServerName xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName>
+                      <TLSExtensions xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">
+                        <FilteringInfo xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV3">
                           <EKUMapping>
                             <EKUMap>
                               <EKUName>AAD Conditional Access</EKUName>
@@ -327,8 +327,8 @@ Here's the XSD for the ProfileXML node in the VPNv2 CSP and VpnManagementAgent::
                   <EnableQuarantineChecks>false</EnableQuarantineChecks>
                   <RequireCryptoBinding>true</RequireCryptoBinding>
                   <PeapExtensions>
-                    <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">true</PerformServerValidation>
-                    <AcceptServerName xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName>
+                    <PerformServerValidation xmlns="https://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">true</PerformServerValidation>
+                    <AcceptServerName xmlns="https://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName>
                   </PeapExtensions>
                 </EapType>
               </Eap>

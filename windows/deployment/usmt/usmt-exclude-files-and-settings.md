@@ -50,7 +50,7 @@ If you specify an &lt;exclude&gt; rule, always specify a corresponding &lt;inclu
 The following .xml file migrates all files located on the C: drive, except any .mp3 files.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/mp3files">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/mp3files">
     <!-- This component migrates all files except those with .mp3 extension-->
     <component type="Documents" context="UserAndSystem">
         <displayName _locID="miguser.sharedvideo">MP3 Files</displayName>
@@ -75,7 +75,7 @@ The following .xml file migrates all files located on the C: drive, except any .
 The following .xml file migrates all files and subfolders in C:\\Data, except the files and subfolders in C:\\Data\\tmp.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/test">
     <component type="Documents" context="System">
         <displayName _locID="miguser.sharedvideo">Test component</displayName>
         <role role="Data">
@@ -100,7 +100,7 @@ The following .xml file migrates all files and subfolders in C:\\Data, except th
 The following .xml file migrates any subfolders in C:\\EngineeringDrafts, but excludes all files that are in C:\\EngineeringDrafts.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>Component to migrate all Engineering Drafts Documents without subfolders</displayName>
   <role role="Data">
@@ -125,7 +125,7 @@ The following .xml file migrates any subfolders in C:\\EngineeringDrafts, but ex
 The following .xml file migrates all files and subfolders in C:\\EngineeringDrafts, except for the Sample.doc file in C:\\EngineeringDrafts.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>Component to migrate all Engineering Drafts Documents except Sample.doc</displayName>
   <role role="Data">
@@ -165,7 +165,7 @@ Here are some examples of how to use XML to exclude files, folders, and registry
 The following .xml file excludes all .mp3 files from the migration:
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
   <component context="System" type="Documents">
         <displayName>Test</displayName>
         <role role="Data">
@@ -184,7 +184,7 @@ The following .xml file excludes all .mp3 files from the migration:
 The following .xml file excludes only the files located on the C: drive.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/allfiles">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/allfiles">
     <component type="Documents" context="System">
         <displayName>Test</displayName>
         <role role="Data">
@@ -204,7 +204,7 @@ The following .xml file unconditionally excludes the HKEY_CURRENT_USER registry 
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/miguser">
    <component type="Documents" context="User">
       <displayName>Test</displayName>
       <role role="Data">
@@ -229,7 +229,7 @@ The following .xml file unconditionally excludes the system folders of `C:\Windo
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/miguser">
    <component type="Documents" context="System">
       <displayName>Test</displayName>
       <role role="Data">

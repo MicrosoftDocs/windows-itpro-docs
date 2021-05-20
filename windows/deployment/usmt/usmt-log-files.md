@@ -275,7 +275,7 @@ To migrate these files you author the following migration XML:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
+<migration urlid="https://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 
 <component context="System"  type="Application">
   <displayName>DATA1</displayName>
@@ -371,7 +371,7 @@ You author the following migration XML:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
+<migration urlid="https://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 
 <component context="System"  type="Application">
   <displayName>DATA1</displayName>
@@ -425,7 +425,7 @@ Upon reviewing the diagnostic log, you confirm that the files are still migratin
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<migration urlid="http://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
+<migration urlid="https://www.microsoft.com/migration/1.0/TestSuite_BUGFIX">
 
 <component context="System"  type="Application">
   <displayName>DATA1</displayName>
