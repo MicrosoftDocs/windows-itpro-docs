@@ -29,7 +29,7 @@ To use this walkthrough, you’ll need:
 
 - **Cortana**. You need to have Cortana turned on and be logged into your account.
 
-- **Power BI account with data**. You can use an existing Power BI account, or else you can get a trial account by signing up at http://powerbi.com. Just make sure that either way, you enter some data that you can use.
+- **Power BI account with data**. You can use an existing Power BI account, or else you can get a trial account by signing up at https://powerbi.com. Just make sure that either way, you enter some data that you can use.
 
 - **Azure Active Directory (Azure AD)/Work or School account**. You can use the account that you created for Office 365, or you can create a new one while you’re establishing your Power BI account. If you choose to use Azure AD, you must connect your Azure AD account to your Windows account.
 
@@ -44,7 +44,7 @@ Before you can start this testing scenario, you must first set up your test envi
 
 **To set up your test environment with Cortana and Power BI**
 
-1. Go to http://powerbi.com and sign-in with the same O365 credentials you used in the Set up and use Cortana with Office 365 topic.
+1. Go to https://powerbi.com and sign-in with the same O365 credentials you used in the Set up and use Cortana with Office 365 topic.
 
 2. Expand the left rail by clicking the **Show the navigation pane** icon.
 

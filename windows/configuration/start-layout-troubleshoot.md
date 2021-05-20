@@ -205,7 +205,7 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 - Unexpected information: This occurs when possibly trying to add a tile via an unexpected or undocumented method.
   - **Event ID: 64** is logged when the xml is valid but has unexpected values.
-  - For example: The following error occurred while parsing a layout xml file: The attribute 'LayoutCustomizationRestrictiontype' on the element '{http://schemas.microsoft.com/Start/2014/LayoutModification}DefaultLayoutOverride' is not defined in the DTD/Schema.
+  - For example: The following error occurred while parsing a layout xml file: The attribute 'LayoutCustomizationRestrictiontype' on the element '{https://schemas.microsoft.com/Start/2014/LayoutModification}DefaultLayoutOverride' is not defined in the DTD/Schema.
 
 XML files can and should be tested locally on a Hyper-V or other virtual machine before deployment or application by Group Policy
 

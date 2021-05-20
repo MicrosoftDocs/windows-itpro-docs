@@ -260,16 +260,16 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:default="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="https://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="https://schemas.microsoft.com/AssignedAccess/2020/config"
+    targetNamespace="https://schemas.microsoft.com/AssignedAccess/2017/config"
     >
 
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/201810/config"/>
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+    <xs:import namespace="https://schemas.microsoft.com/AssignedAccess/201810/config"/>
+    <xs:import namespace="https://schemas.microsoft.com/AssignedAccess/2020/config"/>
 
     <xs:complexType name="profile_list_t">
         <xs:sequence minOccurs="1" >
@@ -436,14 +436,14 @@ Here is the schema for new features introduced in Windows 10 1809 release
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:default="https://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="https://schemas.microsoft.com/AssignedAccess/2020/config"
+    targetNamespace="https://schemas.microsoft.com/AssignedAccess/201810/config"
     >
 
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+    <xs:import namespace="https://schemas.microsoft.com/AssignedAccess/2020/config"/>
 
     <xs:complexType name="fileExplorerNamespaceRestrictions_t">
         <xs:choice>
@@ -481,12 +481,12 @@ Schema for Windows 10 prerelease
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:default="https://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:vc="https://www.w3.org/2007/XMLSchema-versioning"
     vc:minVersion="1.1"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    targetNamespace="https://schemas.microsoft.com/AssignedAccess/2020/config"
     >
 
     <xs:simpleType name="guid_t">
@@ -509,8 +509,8 @@ Schema for Windows 10 prerelease
 To authorize a compatible configuration XML that includes 1809 or prerelease elements and attributes, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. e.g. to configure auto-launch feature which is added in 1809 release, use below sample, notice an alias r1809 is given to the 201810 namespace for 1809 release, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
 ```xml
 <AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:r1809="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:r1809="https://schemas.microsoft.com/AssignedAccess/201810/config"
 >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
@@ -523,7 +523,7 @@ To authorize a compatible configuration XML that includes 1809 or prerelease ele
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+<AssignedAccessConfiguration xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config">
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
       <AllAppsList>
@@ -538,7 +538,7 @@ To authorize a compatible configuration XML that includes 1809 or prerelease ele
         </AllowedApps>
       </AllAppsList>
       <StartLayout>
-        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -596,7 +596,7 @@ This example shows escaped XML of the Data node.
                 </Meta>
                 <Data>
                     &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
-&lt;AssignedAccessConfiguration xmlns=&quot;http://schemas.microsoft.com/AssignedAccess/2017/config&quot;&gt;
+&lt;AssignedAccessConfiguration xmlns=&quot;https://schemas.microsoft.com/AssignedAccess/2017/config&quot;&gt;
     &lt;Profiles&gt;
         &lt;Profile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;&gt;
             &lt;AllAppsList&gt;
@@ -611,7 +611,7 @@ This example shows escaped XML of the Data node.
                 &lt;/AllowedApps&gt;
             &lt;/AllAppsList&gt;
             &lt;StartLayout&gt;
-                &lt;![CDATA[&lt;LayoutModificationTemplate xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot; Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
+                &lt;![CDATA[&lt;LayoutModificationTemplate xmlns:defaultlayout=&quot;https://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot; xmlns:start=&quot;https://schemas.microsoft.com/Start/2014/StartLayout&quot; Version=&quot;1&quot; xmlns=&quot;https://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
                       &lt;LayoutOptions StartTileGroupCellWidth=&quot;6&quot; /&gt;
                       &lt;DefaultLayoutOverride&gt;
                         &lt;StartLayoutCollection&gt;
@@ -668,7 +668,7 @@ This example shows escaped XML of the Data node.
                 </Meta>
                 <Data>
                     &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
-&lt;AssignedAccessConfiguration xmlns=&quot;http://schemas.microsoft.com/AssignedAccess/2017/config&quot;&gt;
+&lt;AssignedAccessConfiguration xmlns=&quot;https://schemas.microsoft.com/AssignedAccess/2017/config&quot;&gt;
     &lt;Profiles&gt;
         &lt;Profile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;&gt;
             &lt;AllAppsList&gt;
@@ -683,7 +683,7 @@ This example shows escaped XML of the Data node.
                 &lt;/AllowedApps&gt;
             &lt;/AllAppsList&gt;
             &lt;StartLayout&gt;
-                &lt;![CDATA[&lt;LayoutModificationTemplate xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot; Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
+                &lt;![CDATA[&lt;LayoutModificationTemplate xmlns:defaultlayout=&quot;https://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot; xmlns:start=&quot;https://schemas.microsoft.com/Start/2014/StartLayout&quot; Version=&quot;1&quot; xmlns=&quot;https://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
                       &lt;LayoutOptions StartTileGroupCellWidth=&quot;6&quot; /&gt;
                       &lt;DefaultLayoutOverride&gt;
                         &lt;StartLayoutCollection&gt;
@@ -740,7 +740,7 @@ This example uses CData for the XML.
                 </Meta>
                 <Data>
                     <![CDATA[<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+<AssignedAccessConfiguration xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config">
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
       <AllAppsList>
@@ -755,7 +755,7 @@ This example uses CData for the XML.
         </AllowedApps>
       </AllAppsList>
       <StartLayout>
-        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -838,10 +838,10 @@ Example of the Delete command.
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
+    xmlns:default="https://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
+    targetNamespace="https://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
     >
 
     <xs:simpleType name="status_enabled_t">
@@ -882,7 +882,7 @@ StatusConfiguration Add OnWithAlerts
         <Data>
           <![CDATA[
           <?xml version="1.0" encoding="utf-8" ?>
-          <StatusConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration">
+          <StatusConfiguration xmlns="https://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration">
             <StatusEnabled>OnWithAlerts</StatusEnabled>
           </StatusConfiguration>
           ]]>
@@ -947,7 +947,7 @@ StatusConfiguration Replace On
         <Data>
           <![CDATA[
           <?xml version="1.0" encoding="utf-8" ?>
-          <StatusConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration">
+          <StatusConfiguration xmlns="https://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration">
             <StatusEnabled>On</StatusEnabled>
           </StatusConfiguration>
           ]]>
@@ -986,14 +986,14 @@ Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. 
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
-    xmlns:default="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
-    xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"
-    targetNamespace="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns="https://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+    xmlns:default="https://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+    xmlns:V2="https://schemas.microsoft.com/ShellLauncher/2019/Configuration"
+    targetNamespace="https://schemas.microsoft.com/ShellLauncher/2018/Configuration"
     >
 
-    <xs:import namespace="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"/>
+    <xs:import namespace="https://schemas.microsoft.com/ShellLauncher/2019/Configuration"/>
 
     <xs:complexType name="profile_list_t">
         <xs:sequence minOccurs="1" maxOccurs="1">
@@ -1143,10 +1143,10 @@ Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. 
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"
-    xmlns:default="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"
-    targetNamespace="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns="https://schemas.microsoft.com/ShellLauncher/2019/Configuration"
+    xmlns:default="https://schemas.microsoft.com/ShellLauncher/2019/Configuration"
+    targetNamespace="https://schemas.microsoft.com/ShellLauncher/2019/Configuration"
     >
 
     <xs:attribute name="AppType">
@@ -1182,7 +1182,7 @@ ShellLauncherConfiguration Add
         <Data>
         <![CDATA[
         <?xml version="1.0" encoding="utf-8"?>
-        <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration">
+        <ShellLauncherConfiguration xmlns="https://schemas.microsoft.com/ShellLauncher/2018/Configuration">
             <Profiles>
                 <!--default profile defines default shell and action for general purposes, should NOT be bound to any account-->
                 <DefaultProfile>
@@ -1252,7 +1252,7 @@ ShellLauncherConfiguration Add AutoLogon
         <Data>
         <![CDATA[
         <?xml version="1.0" encoding="utf-8"?>
-        <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration">
+        <ShellLauncherConfiguration xmlns="https://schemas.microsoft.com/ShellLauncher/2018/Configuration">
             <Profiles>
                 <DefaultProfile>
                     <Shell Shell="%SystemRoot%\explorer.exe"/>
@@ -1301,9 +1301,9 @@ ShellLauncher V2 Add
         <Data>
         <![CDATA[
         <?xml version="1.0" encoding="utf-8"?>
-        <!--Using the http://schemas.microsoft.com/ShellLauncher/2019/Configuration namespace will opt-in to customshellhost.exe experience which can run win32 and UWP apps-->
-        <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
-xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
+        <!--Using the https://schemas.microsoft.com/ShellLauncher/2019/Configuration namespace will opt-in to customshellhost.exe experience which can run win32 and UWP apps-->
+        <ShellLauncherConfiguration xmlns="https://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+xmlns:V2="https://schemas.microsoft.com/ShellLauncher/2019/Configuration">
             <Profiles>
                 <DefaultProfile> 
                     <Shell Shell="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" V2:AppType="UWP" V2:AllAppsFullScreen="true"> 
@@ -1364,10 +1364,10 @@ ShellLauncherConfiguration Get
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2018/AssignedAccessAlert"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2018/AssignedAccessAlert"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2018/AssignedAccessAlert"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2018/AssignedAccessAlert"
+    xmlns:default="https://schemas.microsoft.com/AssignedAccess/2018/AssignedAccessAlert"
+    targetNamespace="https://schemas.microsoft.com/AssignedAccess/2018/AssignedAccessAlert"
     >
 
     <xs:simpleType name="status_t">
@@ -1433,7 +1433,7 @@ This example configures the following apps: Skype, Learning, Feedback Hub, and C
 
   !!! NOTE: Change the Account below to a user in the tenant being tested !!!
 -->
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+<AssignedAccessConfiguration xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config">
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
             <AllAppsList>
@@ -1450,7 +1450,7 @@ This example configures the following apps: Skype, Learning, Feedback Hub, and C
             </AllAppsList>
             <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>

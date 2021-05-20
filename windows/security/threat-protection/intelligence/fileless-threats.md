@@ -85,7 +85,7 @@ Besides being vulnerable at the firmware level, CPUs could be manufactured with 
 
 **BIOS-based** (Type I): A BIOS is a firmware running inside a chipset. It executes when a machine is powered on, initializes the hardware, and then transfers control to the boot sector. The BIOS is an important component that operates at a low level and executes before the boot sector. It’s possible to reprogram the BIOS firmware with malicious code, as has happened in the past with the [Mebromi rootkit](https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/).
 
-**Hypervisor-based** (Type I): Modern CPUs provide hardware hypervisor support, allowing the operating system to create robust virtual machines. A virtual machine runs in a confined, simulated environment, and is in theory unaware of the emulation. A malware taking over a machine may implement a small hypervisor to hide itself outside of the realm of the running operating system. Malware of this kind has been theorized in the past, and eventually real hypervisor rootkits [have been observed](http://seclists.org/fulldisclosure/2017/Jun/29), although few are known to date.
+**Hypervisor-based** (Type I): Modern CPUs provide hardware hypervisor support, allowing the operating system to create robust virtual machines. A virtual machine runs in a confined, simulated environment, and is in theory unaware of the emulation. A malware taking over a machine may implement a small hypervisor to hide itself outside of the realm of the running operating system. Malware of this kind has been theorized in the past, and eventually real hypervisor rootkits [have been observed](https://seclists.org/fulldisclosure/2017/Jun/29), although few are known to date.
 
 ### Execution and injection
 

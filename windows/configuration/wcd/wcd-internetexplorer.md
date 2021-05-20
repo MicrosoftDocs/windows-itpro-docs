@@ -95,4 +95,4 @@ Use to enable or disable whether the **Show pictures automatically** setting is 
 
 Use to set the home page that appears the first time that Microsoft Edge is opened. This page is only shown the first time the browser is opened. After that, the browser displays either the most recently viewed page or an empty page if the user has closed all tabs or opens a new tab.
 
-Specify the **FirstRunURL** value with a valid link that starts with http://. It is recommended you use a forward link that redirects the user to a localized page.
+Specify the **FirstRunURL** value with a valid link that starts with https://. It is recommended you use a forward link that redirects the user to a localized page.

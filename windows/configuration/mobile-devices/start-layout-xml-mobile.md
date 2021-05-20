@@ -129,7 +129,7 @@ The following example shows how to create a tile of the Web site's URL using the
 <start:SecondaryTile
           AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
           TileID="MyWeblinkTile"
-          Arguments="http://msn.com"
+          Arguments="https://msn.com"
           DisplayName="MySite"
           Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png" 
           Wide310x150LogoUri="ms-appx:///Assets/MicrosoftEdgeWide310x150.png"
@@ -238,9 +238,9 @@ The following sample LayoutModification.xml shows how you can configure the Star
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
     Version="1">
     <DefaultLayoutOverride>
       <StartLayoutCollection>

@@ -215,7 +215,7 @@ Name specifies a unique name for the settings location template. This is used fo
 **Note**  
 UE-V does not reference external DTDs, so it is not possible to use named entities in a settings location template. For example, do not use &reg; to refer to the registered trade mark sign ®. Instead, use canonical numbered references to include these types of special characters, for example, &\#174 for the ® character. This rule applies to all string values in this document.
 
-See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V template generator converts character entities to their Unicode representations automatically.
+See <https://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V template generator converts character entities to their Unicode representations automatically.
 
  
 
@@ -650,7 +650,7 @@ Here is the SettingsLocationTemplate.xsd file showing its elements, child elemen
   elementFormDefault="qualified"
   xmlns="https://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"
   xmlns:mstns="https://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  xmlns:xs="https://www.w3.org/2001/XMLSchema">
 
     <xs:simpleType name="Guid">
         <xs:restriction base="xs:string">

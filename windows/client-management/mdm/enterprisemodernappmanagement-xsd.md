@@ -19,7 +19,7 @@ Here is the XSD for the application parameters.
 
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="https://www.w3.org/2001/XMLSchema">
     <xs:element name="Data">
         <xs:complexType>
             <xs:sequence>

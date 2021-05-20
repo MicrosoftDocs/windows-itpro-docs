@@ -27,7 +27,7 @@ In a scenario where the same browser is creating a lot of connections to multipl
  
 ## Default dynamic port range for TCP/IP
  
-To comply with [Internet Assigned Numbers Authority (IANA)](http://www.iana.org/assignments/port-numbers) recommendations, Microsoft has increased the dynamic client port range for outgoing connections. The new default start port is **49152**, and the new default end port is **65535**. This is a change from the configuration of earlier versions of Windows that used a default port range of **1025** through **5000**. 
+To comply with [Internet Assigned Numbers Authority (IANA)](https://www.iana.org/assignments/port-numbers) recommendations, Microsoft has increased the dynamic client port range for outgoing connections. The new default start port is **49152**, and the new default end port is **65535**. This is a change from the configuration of earlier versions of Windows that used a default port range of **1025** through **5000**. 
  
 You can view the dynamic port range on a computer by using the following netsh commands: 
 

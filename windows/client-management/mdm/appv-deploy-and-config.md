@@ -166,7 +166,7 @@ manager: dansimp
 		<Data>
 			<Publishing Protocol="2.0">
 				<Packages>
-					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="fd6b51c7-959e-4d04-ac36-a8244a5693d0" PackageId="565d8479-394d-439c-824d0e09b7ee732c"/>
+					<Package PackageUrl="https://hostname/serverpackages/apppackage.appv" VersionId="fd6b51c7-959e-4d04-ac36-a8244a5693d0" PackageId="565d8479-394d-439c-824d0e09b7ee732c"/>
 				</Packages>
 				<NoGroup>
 					<Package PackageId="565d8479-394d-439c-824d0e09b7ee732c"/>
@@ -195,7 +195,7 @@ manager: dansimp
 			<Type xmlns="syncml:metinf">text/plain</Type>
 		</Meta>
 		<Data>
-			<DeploymentConfiguration PackageId="57650ac1-1731-4b4c-899ca25548374dab" DisplayName="Skype_RS2Win10_X64" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
+			<DeploymentConfiguration PackageId="57650ac1-1731-4b4c-899ca25548374dab" DisplayName="Skype_RS2Win10_X64" xmlns="https://schemas.microsoft.com/appv/2010/deploymentconfiguration">
 				<MachineConfiguration></MachineConfiguration>
 				<UserConfiguration>
 					<Subsystems>
@@ -259,7 +259,7 @@ manager: dansimp
 		<Data>
 			<Publishing Protocol="2.0">
 				<Packages>
-					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="05fcf098-c949-4ea4-9aee-757abd33e0e4" PackageId="57650ac11731-4b4c-899c-a25548374dab">
+					<Package PackageUrl="https://hostname/serverpackages/apppackage.appv" VersionId="05fcf098-c949-4ea4-9aee-757abd33e0e4" PackageId="57650ac11731-4b4c-899c-a25548374dab">
 						<DeploymentConfiguration ConfigurationId="38" Path="38" Timestamp="2012-08-27T16:14:30.87" /></Package>
 				</Packages>
 				<NoGroup>
@@ -302,7 +302,7 @@ manager: dansimp
 		<Data>
 			<Publishing Protocol="2.0">
 				<Packages>
-					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="c68b054c-ff5f-45a6-9b41-788f2194e3c1" PackageId="e9a51aaf-5d9a48df-96e2-3372a278bca4"></Package>
+					<Package PackageUrl="https://hostname/serverpackages/apppackage.appv" VersionId="c68b054c-ff5f-45a6-9b41-788f2194e3c1" PackageId="e9a51aaf-5d9a48df-96e2-3372a278bca4"></Package>
 				</Packages>
 				<NoGroup>
 					<Package PackageId="e9a51aaf-5d9a-48df-96e23372a278bca4"/>
@@ -345,7 +345,7 @@ manager: dansimp
 		<Data>
 			<Publishing Protocol="2.0">
 				<Packages>
-					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="05fcf098-c949-4ea4-9aee-757abd33e0e4" PackageId="57650ac11731-4b4c-899c-a25548374dab"></Package>
+					<Package PackageUrl="https://hostname/serverpackages/apppackage.appv" VersionId="05fcf098-c949-4ea4-9aee-757abd33e0e4" PackageId="57650ac11731-4b4c-899c-a25548374dab"></Package>
 				</Packages>
 			</Publishing>
 		</Data>
@@ -375,8 +375,8 @@ manager: dansimp
 		<Data>
 			<Publishing Protocol="2.0">
 				<Packages> 
-					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="c68b054c-ff5f-45a6-9b41-788f2194e3c1" PackageId="e9a51aaf-5d9a48df-96e2-3372a278bca4"></Package>
-					<Package PackageUrl="http://hostname/serverpackages/apppackage.appv" VersionId="fd6b51c7-959e-4d04-ac36-a8244a5693d0" PackageId="565d8479-394d-439c-824d0e09b7ee732c"></Package>
+					<Package PackageUrl="https://hostname/serverpackages/apppackage.appv" VersionId="c68b054c-ff5f-45a6-9b41-788f2194e3c1" PackageId="e9a51aaf-5d9a48df-96e2-3372a278bca4"></Package>
+					<Package PackageUrl="https://hostname/serverpackages/apppackage.appv" VersionId="fd6b51c7-959e-4d04-ac36-a8244a5693d0" PackageId="565d8479-394d-439c-824d0e09b7ee732c"></Package>
 				</Packages>
 				<NoGroup>
 					<Package PackageId="565d8479-394d-439c-824d0e09b7ee732c"/>

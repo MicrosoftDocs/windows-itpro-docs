@@ -185,7 +185,7 @@ If this AD FS scope issue is present, event logs on the AD FS server will indica
     Encountered error during OAuth token request.
     Additional Data
     Exception details:
-    Microsoft.IdentityServer.Web.Protocols.OAuth.Exceptions.OAuthUnauthorizedClientException: MSIS9368: Received invalid OAuth request. The client '38aa3b87-a06d-4817-b275-7a316988d93b' is forbidden to access the resource 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' with scope 'ugs'.
+    Microsoft.IdentityServer.Web.Protocols.OAuth.Exceptions.OAuthUnauthorizedClientException: MSIS9368: Received invalid OAuth request. The client '38aa3b87-a06d-4817-b275-7a316988d93b' is forbidden to access the resource 'https://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' with scope 'ugs'.
        at Microsoft.IdentityServer.Web.Protocols.OAuth.OAuthProtocolContext.ValidateScopes(String scopeParameter, String clientId, String relyingPartyId)
        at Microsoft.IdentityServer.Web.Protocols.OAuth.OAuthToken.OAuthJWTBearerRequestContext.ValidateCore()
 
@@ -200,7 +200,7 @@ This issue is fixed in Windows Server, version 1903 and later. For Windows Serve
 5. Get the ObjectIdentifier of the application permission with the ClientRoleIdentifier parameter equal to "38aa3b87-a06d-4817-b275-7a316988d93b":
 
 ``` PowerShell
-(Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
+(Get-AdfsApplicationPermission -ServerRoleIdentifiers 'https://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
 ```
 
 6. Execute the command `Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'`.

@@ -463,7 +463,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     - Specify Product Key: **Do not specify a product key at this time**
     - Full Name: **Contoso**
     - Organization: **Contoso**
-    - Internet Explorer home page: **http://www.contoso.com**
+    - Internet Explorer home page: **https://www.contoso.com**
     - Admin Password: **Do not specify an Administrator password at this time**
     - Summary: click **Next**
     - Confirmation: click **Finish**
@@ -714,7 +714,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     OSDMigrateAdditionalCaptureOptions=/ue:*\* /ui:CONTOSO\*
     OSDMigrateConfigFiles=Miguser.xml,Migapp.xml
     SLSHARE=\\SRV1\Logs$
-    EventService=http://SRV1:9800
+    EventService=https://SRV1:9800
     ApplyGPOPack=NO
     ```
 

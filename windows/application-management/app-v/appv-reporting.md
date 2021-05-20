@@ -85,7 +85,7 @@ Yes. Besides manually sending reporting using Windows PowerShell cmdlets (**Send
 * Using a Windows PowerShell cmdlet: **Set-AppvClientConfiguration**. For example:
 
     ```PowerShell
-    Set-AppvClientConfiguration -ReportingEnabled 1 -ReportingServerURL http://any.com/appv-reporting
+    Set-AppvClientConfiguration -ReportingEnabled 1 -ReportingServerURL https://any.com/appv-reporting
     ```
 
     For a complete list of client configuration settings, go to [About client configuration settings](appv-client-configuration-settings.md) and look for the following entries: **ReportingEnabled**, **ReportingServerURL**, **ReportingDataCacheLimit**, **ReportingDataBlockSize**, **ReportingStartTime**, **ReportingRandomDelay**, **ReportingInterval**.
@@ -118,10 +118,10 @@ Set-AppVClientConfiguration –ReportingEnabled 1
 To configure the client to automatically send data to a specific reporting server, use a command with the following format:
 
 ```PowerShell
-Set-AppVClientConfiguration -ReportingServerURL http://MyReportingServer:MyPort/ -ReportingStartTime 20 -ReportingInterval 1 -ReportingRandomDelay 30
+Set-AppVClientConfiguration -ReportingServerURL https://MyReportingServer:MyPort/ -ReportingStartTime 20 -ReportingInterval 1 -ReportingRandomDelay 30
 ```
 
-This example command configures the client to automatically send the reporting data to the reporting server URL ```http://MyReportingServer:MyPort/```. The reporting data will be sent to the URL daily between 8:00 PM and 8:30 PM, depending on the session's generated random delay.
+This example command configures the client to automatically send the reporting data to the reporting server URL ```https://MyReportingServer:MyPort/```. The reporting data will be sent to the URL daily between 8:00 PM and 8:30 PM, depending on the session's generated random delay.
 
 #### Limiting the size of the client's data cache
 
@@ -172,7 +172,7 @@ You can configure the computer that is running the App-V client to automatically
 After you configure the previous settings, you must create a scheduled task. The scheduled task will contact the server specified by the **ReportingServerURL** setting and will initiate the transfer. If you want to manually send data outside of the scheduled times, use the following Windows PowerShell cmdlet:
 
 ```PowerShell
-Send-AppVClientReport –URL http://MyReportingServer:MyPort/ -DeleteOnSuccess
+Send-AppVClientReport –URL https://MyReportingServer:MyPort/ -DeleteOnSuccess
 ```
 
 If the reporting server has been previously configured, then the **–URL** parameter can be omitted. Alternatively, if the data should be sent to an alternate location, specify a different URL to override the configured **ReportingServerURL** for this data collection.

@@ -224,7 +224,7 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 
 - [Security Target](https://www.commoncriteriaportal.org/files/epfiles/0570b_pdf.pdf)
 - [Administrative Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=cb19538d-9e13-4ab6-af38-8f48abfdad08)
-- [Certification Report](http://www.commoncriteriaportal.org:80/files/epfiles/0570a_pdf.pdf) 
+- [Certification Report](https://www.commoncriteriaportal.org:80/files/epfiles/0570a_pdf.pdf) 
 
 ### Windows XP and Windows Server 2003
 

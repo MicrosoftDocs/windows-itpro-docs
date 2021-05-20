@@ -24,7 +24,7 @@ Here's the XSD for the AppLocker CSP.
 
            elementFormDefault="qualified"  
 
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"  
+           xmlns:xs="https://www.w3.org/2001/XMLSchema"  
 
            version="1.0">  
 

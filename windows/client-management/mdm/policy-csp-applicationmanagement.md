@@ -1058,7 +1058,7 @@ Sample SyncML:
 XSD:
 
 ```xml
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema">
   <xs:simpleType name="recurrence" final="restriction">
     <xs:restriction base="xs:string">
         <xs:enumeration value="None" />

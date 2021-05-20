@@ -52,7 +52,7 @@ The following known issues have been fixed by servicing releases made available 
 
 The following issue affects the Java GSS API. See the following Oracle bug database article: 
 
-- [JDK-8161921: Windows 10 Windows Defender Credential Guard does not allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
+- [JDK-8161921: Windows 10 Windows Defender Credential Guard does not allow sharing of TGT with Java](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
 
 When Windows Defender Credential Guard is enabled on Windows 10, the Java GSS API will not authenticate. This is expected behavior because Windows Defender Credential Guard blocks specific application authentication capabilities and will not provide the TGT session key to applications regardless of registry key settings. For further information see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
 
@@ -68,7 +68,7 @@ The following issue affects McAfee Application and Change Control (MACC):
 
 The following issue affects AppSense Environment Manager.
   For further information, see the following Knowledge Base article:
-- [Installing AppSense Environment Manager on Windows 10 machines causes LSAISO.exe to exhibit high CPU usage when Windows Defender Credential Guard is enabled](http://www.appsense.com/kb/160525073917945) <sup>[1]</sup> \**
+- [Installing AppSense Environment Manager on Windows 10 machines causes LSAISO.exe to exhibit high CPU usage when Windows Defender Credential Guard is enabled](https://www.appsense.com/kb/160525073917945) <sup>[1]</sup> \**
 
 The following issue affects Citrix applications:
 - Windows 10 machines exhibit high CPU usage with Citrix applications installed when Windows Defender Credential Guard is enabled. <sup>[1]</sup>

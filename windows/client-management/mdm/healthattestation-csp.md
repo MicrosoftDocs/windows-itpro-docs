@@ -443,7 +443,7 @@ When the MDM-Server receives the above data, it must:
 
 ```xml
 <?xml version='1.0' encoding='utf-8' ?>
-<HealthCertificateValidationRequest ProtocolVersion='1' xmlns='http://schemas.microsoft.com/windows/security/healthcertificate/validation/request/v1'>
+<HealthCertificateValidationRequest ProtocolVersion='1' xmlns='https://schemas.microsoft.com/windows/security/healthcertificate/validation/request/v1'>
     <Nonce>[INT]</Nonce>
     <Claims> [base64 blob, eg ‘ABc123+/…==’] </Claims>
     <HealthCertificateBlob> [base64 blob, eg ‘ABc123+/...==’]
@@ -1032,9 +1032,9 @@ Each of these are described in further detail in the following sections, along w
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v3"
-           targetNamespace="http://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v3"
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema"
+           xmlns="https://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v3"
+           targetNamespace="https://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v3"
            elementFormDefault="qualified">
 
     <xs:element name="HealthCertificateValidationResponse" type="HealthCertificateValidationResponse_T"/>
@@ -1136,9 +1136,9 @@ Each of these are described in further detail in the following sections, along w
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<HealthCertificateValidationResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ErrorCode="0" ProtocolVersion="0"
-xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v3">
+<HealthCertificateValidationResponse xmlns:xsd="https://www.w3.org/2001/XMLSchema"
+xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" ErrorCode="0" ProtocolVersion="0"
+xmlns="https://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v3">
 <HealthCertificateProperties>
      <Issued>2016-10-21T02:12:58.6656577Z</Issued>
      <AIKPresent>false</AIKPresent>

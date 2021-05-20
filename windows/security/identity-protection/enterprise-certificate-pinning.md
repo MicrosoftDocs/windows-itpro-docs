@@ -291,7 +291,7 @@ You can convert a XML formatted timespan into a timespan variable that you can r
 ## Certificate Trust List XML Schema Definition (XSD)
 
 ```code
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="https://www.w3.org/2001/XMLSchema">
   <xs:element name="PinRules">
     <xs:complexType>
       <xs:sequence>

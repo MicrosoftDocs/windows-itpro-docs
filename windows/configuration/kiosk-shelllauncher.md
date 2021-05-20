@@ -93,7 +93,7 @@ The following XML sample works for **Shell Launcher v1**:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
-<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"> 
+<ShellLauncherConfiguration xmlns="https://schemas.microsoft.com/ShellLauncher/2018/Configuration"> 
   <Profiles> 
     <Profile ID="{24A7309204F3F-44CC-8375-53F13FE213F7}"> 
       <Shell Shell="%ProgramFiles%\Internet Explorer\iexplore.exe -k www.bing.com" /> 
@@ -111,8 +111,8 @@ For **Shell Launcher v2**, you can use UWP app type for `Shell` by specifying th
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
-<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration" 
-xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"> 
+<ShellLauncherConfiguration xmlns="https://schemas.microsoft.com/ShellLauncher/2018/Configuration" 
+xmlns:v2="https://schemas.microsoft.com/ShellLauncher/2019/Configuration"> 
   <Profiles> 
     <DefaultProfile> 
       <Shell Shell="ShellLauncherV2DemoUwp_5d7tap497jwe8!App" v2:AppType="UWP" v2:AllAppsFullScreen="true"> 

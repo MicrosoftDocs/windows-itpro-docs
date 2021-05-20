@@ -407,7 +407,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2937.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2937.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2937">#2937</a></td>
 <td><p><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>); DRBG (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">#1217</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1098">#1098</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#911">#911</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2651">#2651</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#92">#92</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#101">#101</a>); KTS (AES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4062">#4062</a>; key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2192">#2192</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2195">#2195</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#2227">#2227</a>)<br />
 <br />
@@ -416,7 +416,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile
 </tr>
 <tr class="odd">
 <td><b>Kernel Mode Cryptographic Primitives Library (cng.sys)</b></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2936.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2936.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2936">#2936</a></td>
 <td><p><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>); DRBG (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">#1217</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1098">#1098</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#911">#911</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2651">#2651</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#92">#92</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#101">#101</a>); KTS (AES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4062">#4062</a>; key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2192">#2192</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2195">#2195</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#2227">#2227</a>)<br />
 <br />
@@ -425,14 +425,14 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile
 </tr>
 <tr class="even">
 <td>Boot Manager</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2931.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2931.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2931">#2931</a></td>
 <td><p><em>FIPS approved algorithms</em>: AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4061">#4061</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2651">#2651</a>); PBKDF (vendor affirmed); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>)</p>
 <p><em>Other algorithms</em>: MD5; PBKDF (non-compliant); VMK KDF</p></td>
 </tr>
 <tr class="odd">
 <td>BitLocker® Windows OS Loader (winload)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2932.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2932.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2932">#2932</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4061">#4061</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>)<br />
 <br />
@@ -440,7 +440,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile
 </tr>
 <tr class="even">
 <td>BitLocker® Windows Resume (winresume)<sup>[1]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2933.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2933.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2933">#2933</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4061">#4061</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>)<br />
 <br />
@@ -448,13 +448,13 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile
 </tr>
 <tr class="odd">
 <td>BitLocker® Dump Filter (dumpfve.sys)<sup>[2]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2934.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2934.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2934">#2934</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4061">#4061</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>)</td>
 </tr>
 <tr class="even">
 <td>Code Integrity (ci.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2935.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2935.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2935">#2935</a></td>
 <td><p><em>FIPS approved algorithms:</em> RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>)<br />
 <br />
@@ -463,7 +463,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile
 </tr>
 <tr class="odd">
 <td>Secure Kernel Code Integrity (skci.dll)<sup>[3]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2938.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2938.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2938">#2938</a></td>
 <td><p><em>FIPS approved algorithms:</em> RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>)<br />
 <br />
@@ -500,7 +500,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2605.pdf">10.0.10586</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2605.pdf">10.0.10586</a></td>
 <td>#<a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2606">2606</a></td>
 <td><p><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3629">#3629</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">#955</a>); DSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1024">#1024</a>); ECDSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#760">#760</a>); HMAC (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2381">#2381</a>); KAS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#72">#72</a>; key agreement; key establishment methodology provides between 112 bits and 256 bits of encryption strength); KBKDF (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#72">#72</a>); KTS (AES Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3653">#3653</a>; key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1887">#1887</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1888">#1888, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1889">#1889</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">#3047</a>); Triple-DES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#2024">#2024</a>)<br />
 <br />
@@ -509,7 +509,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 </tr>
 <tr class="odd">
 <td><b>Kernel Mode Cryptographic Primitives Library (cng.sys)</b></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2605.pdf">10.0.10586</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2605.pdf">10.0.10586</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2605">#2605</a></td>
 <td><p><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3629">#3629</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">#955</a>); DSA (Certs.  <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1024">#1024</a>); ECDSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#760">#760</a>); HMAC (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2381">#2381</a>); KAS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#72">#72</a>; key agreement; key establishment methodology provides between 112 bits and 256 bits of encryption strength); KBKDF (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#72">#72</a>); KTS (AES Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3653">#3653</a>; key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1887">#1887</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1888">#1888, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1889">#1889</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">#3047</a>); Triple-DES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#2024">#2024</a>)<br />
 <br />
@@ -518,7 +518,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 </tr>
 <tr class="even">
 <td>Boot Manager<sup>[4]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2700.pdf">10.0.10586</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2700.pdf">10.0.10586</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2700">#2700</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3653">#3653</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2381">#2381</a>); PBKDF (vendor affirmed); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1871">#1871</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">#3047</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3048">#3048</a>)<br />
 <br />
@@ -526,7 +526,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 </tr>
 <tr class="odd">
 <td>BitLocker® Windows OS Loader (winload)<sup>[5]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2701.pdf">10.0.10586</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2701.pdf">10.0.10586</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2701">#2701</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3629">#3629</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3653">#3653</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1871">#1871</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3048">#3048</a>)<br />
 <br />
@@ -534,7 +534,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 </tr>
 <tr class="even">
 <td>BitLocker® Windows Resume (winresume)<sup>[6]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2702.pdf">10.0.10586</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2702.pdf">10.0.10586</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2702">#2702</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3653">#3653</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1871">#1871</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3048">#3048</a>)<br />
 <br />
@@ -542,13 +542,13 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 </tr>
 <tr class="odd">
 <td>BitLocker® Dump Filter (dumpfve.sys)<sup>[7]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2703.pdf">10.0.10586</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2703.pdf">10.0.10586</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2703">#2703</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3653">#3653</a>)</td>
 </tr>
 <tr class="even">
 <td>Code Integrity (ci.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2604.pdf">10.0.10586</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2604.pdf">10.0.10586</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2604">#2604</a></td>
 <td><p><em>FIPS approved algorithms:</em> RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1871">#1871</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3048">#3048</a>)<br />
 <br />
@@ -557,7 +557,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 </tr>
 <tr class="odd">
 <td>Secure Kernel Code Integrity (skci.dll)<sup>[8]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2607.pdf">10.0.10586</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2607.pdf">10.0.10586</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2607">#2607</a></td>
 <td><p><em>FIPS approved algorithms:</em> RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1871">#1871</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3048">#3048</a>)<br />
 <br />
@@ -598,7 +598,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface 
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2605.pdf">10.0.10240</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2605.pdf">10.0.10240</a></td>
 <td>#<a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2606">2606</a></td>
 <td><p><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">#3497</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">#868</a>); DSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#983">#983</a>); ECDSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#706">#706</a>); HMAC (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2233">#2233</a>); KAS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#64">#64</a>; key agreement; key establishment methodology provides between 112 bits and 256 bits of encryption strength); KBKDF (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#66">#66</a>); KTS (AES Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3507">#3507</a>; key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1783">#1783</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1798">#1798</a>, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1802">#1802</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">#2886</a>); Triple-DES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1969">#1969</a>)<br />
 <br />
@@ -607,7 +607,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface 
 </tr>
 <tr class="odd">
 <td><b>Kernel Mode Cryptographic Primitives Library (cng.sys)</b></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2605.pdf">10.0.10240</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2605.pdf">10.0.10240</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2605">#2605</a></td>
 <td><p><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">#3497</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">#868</a>); DSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#983">#983</a>); ECDSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#706">#706</a>); HMAC (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2233">#2233</a>); KAS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#64">#64</a>; key agreement; key establishment methodology provides between 112 bits and 256 bits of encryption strength); KBKDF (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#66">#66</a>); KTS (AES Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3507">#3507</a>; key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1783">#1783</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1798">#1798</a>, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1802">#1802</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">#2886</a>); Triple-DES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1969">#1969</a>)<br />
 <br />
@@ -616,7 +616,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface 
 </tr>
 <tr class="even">
 <td>Boot Manager<sup>[9]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2600.pdf">10.0.10240</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2600.pdf">10.0.10240</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2600">#2600</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">#3497</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2233">#2233</a>); KTS (AES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3498">#3498</a>); PBKDF (vendor affirmed); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1784">#1784</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2871">#2871</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">#2886</a>)<br />
 <br />
@@ -624,7 +624,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface 
 </tr>
 <tr class="odd">
 <td>BitLocker® Windows OS Loader (winload)<sup>[10]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2601.pdf">10.0.10240</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2601.pdf">10.0.10240</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2601">#2601</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">#3497</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3498">#3498</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1784">#1784</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2871">#2871</a>)<br />
 <br />
@@ -632,7 +632,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface 
 </tr>
 <tr class="even">
 <td>BitLocker® Windows Resume (winresume)<sup>[11]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2602.pdf">10.0.10240</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2602.pdf">10.0.10240</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2602">#2602</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">#3497</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3498">#3498</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1784">#1784</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2871">#2871</a>)<br />
 <br />
@@ -640,13 +640,13 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface 
 </tr>
 <tr class="odd">
 <td>BitLocker® Dump Filter (dumpfve.sys)<sup>[12]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2603.pdf">10.0.10240</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2603.pdf">10.0.10240</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2603">#2603</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">#3497</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3498">#3498</a>)</td>
 </tr>
 <tr class="even">
 <td>Code Integrity (ci.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2604.pdf">10.0.10240</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2604.pdf">10.0.10240</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2604">#2604</a></td>
 <td><p><em>FIPS approved algorithms:</em> RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1784">#1784</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2871">#2871</a>)<br />
 <br />
@@ -655,7 +655,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface 
 </tr>
 <tr class="odd">
 <td>Secure Kernel Code Integrity (skci.dll)<sup>[13]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2607.pdf">10.0.10240</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2607.pdf">10.0.10240</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2607">#2607</a></td>
 <td><p><em>FIPS approved algorithms:</em> RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1784">#1784</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2871">#2871</a>)<br />
 <br />
@@ -696,7 +696,7 @@ Validated Editions: RT, Pro, Enterprise, Phone, Embedded
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2357.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2357.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2357">#2357</a></td>
 <td><p><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">#489</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#855">#855</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#505">#505</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1773">#1773</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#47">#47</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#30">#30</a>); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1487">#1487</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1493">#1493, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1519">#1519</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">#2373</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1692">#1692</a>)<br />
 <br />
@@ -705,7 +705,7 @@ Validated Editions: RT, Pro, Enterprise, Phone, Embedded
 </tr>
 <tr class="odd">
 <td><b>Kernel Mode Cryptographic Primitives Library (cng.sys)</b></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2356.pdf">6.3.9600 6.3.9600.17042</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2356.pdf">6.3.9600 6.3.9600.17042</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2356">#2356</a></td>
 <td><p><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">#489</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#505">#505</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1773">#1773</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#47">#47</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#30">#30</a>); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1487">#1487</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1493">#1493, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1519">#1519</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373"># 2373</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1692">#1692</a>)<br />
 <br />
@@ -714,7 +714,7 @@ Validated Editions: RT, Pro, Enterprise, Phone, Embedded
 </tr>
 <tr class="even">
 <td>Boot Manager</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2351.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2351.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2351">#2351</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1773">#1773</a>); PBKDF (vendor affirmed); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1494">#1494</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373"># 2373</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2396">#2396</a>)<br />
 <br />
@@ -722,7 +722,7 @@ Validated Editions: RT, Pro, Enterprise, Phone, Embedded
 </tr>
 <tr class="odd">
 <td>BitLocker® Windows OS Loader (winload)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2352.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2352.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2352">#2352</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1494">#1494</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2396">#2396</a>)<br />
 <br />
@@ -730,7 +730,7 @@ Validated Editions: RT, Pro, Enterprise, Phone, Embedded
 </tr>
 <tr class="even">
 <td>BitLocker® Windows Resume (winresume)<sup>[14]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2353.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2353.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2353">#2353</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1494">#1494</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373"># 2373</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2396">#2396</a>)<br />
 <br />
@@ -738,7 +738,7 @@ Validated Editions: RT, Pro, Enterprise, Phone, Embedded
 </tr>
 <tr class="odd">
 <td>BitLocker® Dump Filter (dumpfve.sys)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2354.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2354.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2354">#2354</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>)<br />
 <br />
@@ -746,7 +746,7 @@ Validated Editions: RT, Pro, Enterprise, Phone, Embedded
 </tr>
 <tr class="even">
 <td>Code Integrity (ci.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2355.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2355.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2355">#2355</a>#2355</td>
 <td><p><em>FIPS approved algorithms:</em> RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1494">#1494</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373"># 2373</a>)<br />
 <br />
@@ -773,9 +773,9 @@ Validated Editions: RT, Home, Pro, Enterprise, Phone
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (BCRYPTPRIMITIVES.DLL)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1892.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1892">#1892</a></td>
-<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2216">#2216</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#687">#687</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">#341</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">#1345</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#36">#36</a>); KBKDF (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/kbkdf800-108/kbkdfval.htm#3">#3</a>); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1133">#1133</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1134">#1134</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1387">#1387</a>)<br />
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1892.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1892">#1892</a></td>
+<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2216">#2216</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#687">#687</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">#341</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">#1345</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#36">#36</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/kbkdf800-108/kbkdfval.htm#3">#3</a>); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1133">#1133</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1134">#1134</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1387">#1387</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a>, key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); DES; Legacy CAPI KDF; MD2; MD4; MD5; HMAC MD5; RC2; RC4; RSA (encrypt/decrypt)#258); DSA (Cert.); ECDSA (Cert.); HMAC (Cert.); KAS (Cert); KBKDF (Cert.); PBKDF (vendor affirmed); RSA (Certs.  and); SHS (Cert.); Triple-DES (Cert.)<br />
 <br />
@@ -783,9 +783,9 @@ Validated Editions: RT, Home, Pro, Enterprise, Phone
 </tr>
 <tr class="odd">
 <td><b>Kernel Mode Cryptographic Primitives Library (cng.sys)</b></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1891.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1891.pdf">6.2.9200</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1891">#1891</a></td>
-<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2216">#2216</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#259">#259</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">#341</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">#1345</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#36">#36</a>); KBKDF (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/kbkdf800-108/kbkdfval.htm#3">#3</a>); PBKDF (vendor affirmed); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#1110">#1110</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1133">#1133</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1134">#1134</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1387">#1387</a>)<br />
+<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2216">#2216</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#259">#259</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">#341</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">#1345</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#36">#36</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/kbkdf800-108/kbkdfval.htm#3">#3</a>); PBKDF (vendor affirmed); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#1110">#1110</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1133">#1133</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1134">#1134</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1387">#1387</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a>, key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); DES; Legacy CAPI KDF; MD2; MD4; MD5; HMAC MD5; RC2; RC4; RSA (encrypt/decrypt)#258 and); ECDSA (Cert.); HMAC (Cert.); KAS (Cert.); KBKDF (Cert.); PBKDF (vendor affirmed); RNG (Cert.); RSA (Certs.  and); SHS (Cert.); Triple-DES (Cert.)<br />
 <br />
@@ -793,48 +793,48 @@ Validated Editions: RT, Home, Pro, Enterprise, Phone
 </tr>
 <tr class="even">
 <td>Boot Manager</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1895.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1895">#1895</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1895.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1895">#1895</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2198">#2198</a>); HMAC (Cert. #<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1347">1347</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>)<br />
 <br />
 <em>Other algorithms:</em> MD5</td>
 </tr>
 <tr class="odd">
 <td>BitLocker® Windows OS Loader (WINLOAD)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1896.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1896">#1896</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1896.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1896">#1896</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2198">#2198</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a>; non-compliant); MD5; Non-Approved RNG</td>
 </tr>
 <tr class="even">
 <td>BitLocker® Windows Resume (WINRESUME)<sup>[15]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1898.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1898">#1898</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1898.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1898">#1898</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2198">#2198</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>)<br />
 <br />
 <em>Other algorithms:</em> MD5</td>
 </tr>
 <tr class="odd">
 <td>BitLocker® Dump Filter (DUMPFVE.SYS)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1899.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1899">#1899</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1899.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1899">#1899</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2198">#2198</a>)<br />
 <br />
 <em>Other algorithms:</em> N/A</td>
 </tr>
 <tr class="even">
 <td>Code Integrity (CI.DLL)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1897.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1897">#1897</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1897.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1897">#1897</a></td>
 <td><em>FIPS approved algorithms:</em> RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>)<br />
 <br />
 <em>Other algorithms:</em> MD5</td>
 </tr>
 <tr class="odd">
 <td>Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH.DLL)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1893.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1893">#1893</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1893.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1893">#1893</a></td>
 <td><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#686">#686</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1386">#1386</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1386">#1386</a>, vendor affirmed)<br />
 <br />
 <em>Other algorithms:</em> DES; DES MAC; DES40; DES40 MAC; Diffie-Hellman; MD5; RC2; RC2 MAC; RC4; Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1386">#1386</a>, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)#1902); Triple-DES (Cert.); Triple-DES MAC (Triple-DES Certificate, vendor affirmed)<br />
@@ -843,8 +843,8 @@ Validated Editions: RT, Home, Pro, Enterprise, Phone
 </tr>
 <tr class="even">
 <td>Enhanced Cryptographic Provider (RSAENH.DLL)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1894.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1894">#1894</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1894.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1894">#1894</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a>); HMAC (Cert. #1346); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1386">#1386</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a>, key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); DES; MD2; MD4; MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1386">#1386</a>, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)</td>
@@ -875,10 +875,10 @@ Validated Editions: Windows 7, Windows 7 SP1
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (BCRYPTPRIMITIVES.DLL)</td>
-<td><p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1329.pdf">6.1.7600.16385</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1329.pdf">6.1.7601.17514</a></p></td>
+<td><p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1329.pdf">6.1.7600.16385</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1329.pdf">6.1.7601.17514</a></p></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1329">1329</a></td>
-<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1178">#1178</a>); AES GCM (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); AES GMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">#23</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#24">#24</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#386">#386</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#141">#141</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#677">#677</a>); KAS (SP 800-56A, vendor affirmed, key agreement; key establishment methodology provides 80 bits to 256 bits of encryption strength); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#560">#560</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>)<br />
+<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1178">#1178</a>); AES GCM (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); AES GMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">#23</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#24">#24</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#386">#386</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#141">#141</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#677">#677</a>); KAS (SP 800-56A, vendor affirmed, key agreement; key establishment methodology provides 80 bits to 256 bits of encryption strength); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#560">#560</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD2; MD4; MD5; HMAC MD5; RC2; RC4#559 and); SHS (Cert.); Triple-DES (Cert.)<br />
 <br />
@@ -886,23 +886,23 @@ Validated Editions: Windows 7, Windows 7 SP1
 </tr>
 <tr class="odd">
 <td>Kernel Mode Cryptographic Primitives Library (cng.sys)</td>
-<td><p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7600.16385</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7600.16915</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7600.21092</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7601.17514</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7601.17725</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7601.17919</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7601.21861</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7601.22076</a></p></td>
+<td><p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7600.16385</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7600.16915</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7600.21092</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7601.17514</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7601.17725</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7601.17919</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7601.21861</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1328.pdf">6.1.7601.22076</a></p></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1328">1328</a></td>
-<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1178">#1178</a>); AES GCM (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); AES GMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">#23</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#24">#24</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#141">#141</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#677">#677</a>); KAS (SP 800-56A, vendor affirmed, key agreement; key establishment methodology provides 80 bits to 256 bits of encryption strength); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#560">#560</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>)<br />
+<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1178">#1178</a>); AES GCM (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); AES GMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">#23</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#24">#24</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#141">#141</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#677">#677</a>); KAS (SP 800-56A, vendor affirmed, key agreement; key establishment methodology provides 80 bits to 256 bits of encryption strength); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#560">#560</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD2; MD4; MD5; HMAC MD5; RC2; RC4</td>
 </tr>
 <tr class="even">
 <td>Boot Manager</td>
-<td><p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1319.pdf">6.1.7600.16385</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1319.pdf">6.1.7601.17514</a></p></td>
+<td><p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1319.pdf">6.1.7600.16385</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1319.pdf">6.1.7601.17514</a></p></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1319">1319</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1177">#1177</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#675">#675</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#557">#557</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>)<br />
 <br />
@@ -912,14 +912,14 @@ Validated Editions: Windows 7, Windows 7 SP1
 </tr>
 <tr class="odd">
 <td>Winload OS Loader (winload.exe)</td>
-<td><p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7600.16385</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7600.16757</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7600.20897</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7600.20916</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7601.17514</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7601.17556</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7601.21655</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7601.21675</a></p></td>
+<td><p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7600.16385</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7600.16757</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7600.20897</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7600.20916</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7601.17514</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7601.17556</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7601.21655</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1326.pdf">6.1.7601.21675</a></p></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1326">1326</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1177">#1177</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#557">#557</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>)<br />
 <br />
@@ -927,18 +927,18 @@ Validated Editions: Windows 7, Windows 7 SP1
 </tr>
 <tr class="even">
 <td>BitLocker™ Drive Encryption</td>
-<td><p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.16385</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.16429</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.16757</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.20536</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.20873</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.20897</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.20916</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7601.17514</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7601.17556</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7601.21634</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7601.21655</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7601.21675</a></p></td>
+<td><p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.16385</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.16429</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.16757</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.20536</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.20873</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.20897</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7600.20916</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7601.17514</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7601.17556</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7601.21634</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7601.21655</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1332.pdf">6.1.7601.21675</a></p></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1332">1332</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1177">#1177</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#675">#675</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>)<br />
 <br />
@@ -946,12 +946,12 @@ Validated Editions: Windows 7, Windows 7 SP1
 </tr>
 <tr class="odd">
 <td>Code Integrity (CI.DLL)</td>
-<td><p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7600.16385</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7600.17122</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7600.21320</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7601.17514</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7601.17950</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7601.22108</a></p></td>
+<td><p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7600.16385</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7600.17122</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7600.21320</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7601.17514</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7601.17950</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1327.pdf">6.1.7601.22108</a></p></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1327">1327</a></td>
 <td><em>FIPS approved algorithms:</em> RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#557">#557</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>)<br />
 <br />
@@ -959,16 +959,16 @@ Validated Editions: Windows 7, Windows 7 SP1
 </tr>
 <tr class="even">
 <td>Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH.DLL)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1331.pdf">6.1.7600.16385</a><br />
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1331.pdf">6.1.7600.16385</a><br />
 (no change in SP1)</td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1331">1331</a></td>
-<td><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#385">#385</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>, vendor affirmed)<br />
+<td><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#385">#385</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>, vendor affirmed)<br />
 <br />
 <em>Other algorithms:</em> DES; DES MAC; DES40; DES40 MAC; Diffie-Hellman; MD5; RC2; RC2 MAC; RC4</td>
 </tr>
 <tr class="odd">
 <td>Enhanced Cryptographic Provider (RSAENH.DLL)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1330.pdf">6.1.7600.16385</a><br />
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1330.pdf">6.1.7600.16385</a><br />
 (no change in SP1)</td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1330">1330</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>); DRBG (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">#23</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#673">#673</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#557">#557</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>)<br />
@@ -999,13 +999,13 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Boot Manager (bootmgr)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp978.pdf">6.0.6001.18000 and 6.0.6002.18005</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp978.pdf">6.0.6001.18000 and 6.0.6002.18005</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/978">978</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#760">#760</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#415">#415</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#354">#354</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>)</td>
 </tr>
 <tr class="odd">
 <td>Winload OS Loader (winload.exe)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp979.pdf">6.0.6001.18000, 6.0.6001.18027, 6.0.6001.18606, 6.0.6001.22125, 6.0.6001.22861, 6.0.6002.18005, 6.0.6002.18411 and 6.0.6002.22596</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp979.pdf">6.0.6001.18000, 6.0.6001.18027, 6.0.6001.18606, 6.0.6001.22125, 6.0.6001.22861, 6.0.6002.18005, 6.0.6002.18411 and 6.0.6002.22596</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/979">979</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#760">#760</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#354">#354</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>)<br />
 <br />
@@ -1013,7 +1013,7 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Code Integrity (ci.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp980.pdf">6.0.6001.18000, 6.0.6001.18023, 6.0.6001.22120, and 6.0.6002.18005</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp980.pdf">6.0.6001.18000, 6.0.6001.18023, 6.0.6001.22120, and 6.0.6002.18005</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/980">980</a></td>
 <td><em>FIPS approved algorithms:</em> RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#354">#354</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>)<br />
 <br />
@@ -1021,30 +1021,30 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="odd">
 <td>Kernel Mode Security Support Provider Interface (ksecdd.sys)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1000.pdf">6.0.6001.18709, 6.0.6001.18272, 6.0.6001.18796, 6.0.6001.22202, 6.0.6001.22450, 6.0.6001.22987, 6.0.6001.23069, 6.0.6002.18005, 6.0.6002.18051, 6.0.6002.18541, 6.0.6002.18643, 6.0.6002.22152, 6.0.6002.22742, and 6.0.6002.22869</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1000.pdf">6.0.6001.18709, 6.0.6001.18272, 6.0.6001.18796, 6.0.6001.22202, 6.0.6001.22450, 6.0.6001.22987, 6.0.6001.23069, 6.0.6002.18005, 6.0.6002.18051, 6.0.6002.18541, 6.0.6002.18643, 6.0.6002.22152, 6.0.6002.22742, and 6.0.6002.22869</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1000">1000</a></td>
-<td><p>FIPS approved algorithms: AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#756">#756</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#82">#82</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#412">#412</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a> and SP 800-90 AES-CTR, vendor-affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#357">#357</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>)#739 and); ECDSA (Cert.); HMAC (Cert.); RNG (Cert.  and SP 800-90 AES-CTR, vendor-affirmed); RSA (Certs.  and); SHS (Cert.); Triple-DES (Cert.)</p>
+<td><p>FIPS approved algorithms: AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#756">#756</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#82">#82</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#412">#412</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a> and SP 800-90 AES-CTR, vendor-affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#357">#357</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>)#739 and); ECDSA (Cert.); HMAC (Cert.); RNG (Cert.  and SP 800-90 AES-CTR, vendor-affirmed); RSA (Certs.  and); SHS (Cert.); Triple-DES (Cert.)</p>
 <p><em>Other algorithms:</em> AES (GCM and GMAC; non-compliant); DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 bits and 256 bits of encryption strength); MD2; MD4; MD5; HMAC MD5; RC2; RC4; RNG (SP 800-90 Dual-EC; non-compliant); RSA (key wrapping; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength)</p></td>
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (bcrypt.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1002.pdf">6.0.6001.22202, 6.0.6002.18005, and 6.0.6002.22872</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1002.pdf">6.0.6001.22202, 6.0.6002.18005, and 6.0.6002.22872</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1001">1001</a></td>
-<td><p><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#756">#756</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#283">#283</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#82">#82</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#412">#412</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a> and SP 800-90, vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#357">#357</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>)</p>
+<td><p><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#756">#756</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#283">#283</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#82">#82</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#412">#412</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a> and SP 800-90, vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#357">#357</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>)</p>
 <p><em>Other algorithms:</em> AES (GCM and GMAC; non-compliant); DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 bits and 256 bits of encryption strength); MD2; MD4; MD5; RC2; RC4; RNG (SP 800-90 Dual-EC; non-compliant); RSA (key wrapping; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant provides less than 112 bits of encryption strength)</p></td>
 </tr>
 <tr class="odd">
 <td>Enhanced Cryptographic Provider (RSAENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1002.pdf">6.0.6001.22202 and 6.0.6002.18005</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1002.pdf">6.0.6001.22202 and 6.0.6002.18005</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1002">1002</a></td>
 <td><p><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#407">#407</a>); RNG (SP 800-90, vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#354">#354</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>)</p>
 <p><em>Other algorithms:</em> DES; MD2; MD4; MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength)</p></td>
 </tr>
 <tr class="even">
 <td>Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1003.pdf">6.0.6001.18000 and 6.0.6002.18005</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1003.pdf">6.0.6001.18000 and 6.0.6002.18005</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1003">1003</a></td>
-<td><p><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#281">#281</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>, vendor affirmed)</p>
+<td><p><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#281">#281</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>, vendor affirmed)</p>
 <p><em>Other algorithms:</em> DES; DES MAC; DES40; DES40 MAC; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD5; RC2; RC2 MAC; RC4</p></td>
 </tr>
 </tbody>
@@ -1065,23 +1065,23 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Enhanced Cryptographic Provider (RSAENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp893.pdf">6.0.6000.16386</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp893.pdf">6.0.6000.16386</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/893">893</a></td>
-<td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#553">#553</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#297">#297</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#321">#321</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#255">#255</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#258">#258</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">#618</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#549">#549</a>)<br />
+<td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#553">#553</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#297">#297</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#321">#321</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#255">#255</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#258">#258</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">#618</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#549">#549</a>)<br />
 <br />
 <em>Other algorithms:</em> DES; MD2; MD4; MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength)</td>
 </tr>
 <tr class="odd">
 <td>Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp894.pdf">6.0.6000.16386</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp894.pdf">6.0.6000.16386</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/894">894</a></td>
-<td><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#226">#226</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#321">#321</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">#618</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#549">#549</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#549">#549</a>, vendor affirmed)<br />
+<td><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#226">#226</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#321">#321</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">#618</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#549">#549</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#549">#549</a>, vendor affirmed)<br />
 <br />
 <em>Other algorithms:</em> DES; DES MAC; DES40; DES40 MAC; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD5; RC2; RC2 MAC; RC4</td>
 </tr>
 <tr class="even">
 <td>BitLocker™ Drive Encryption</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp947.pdf">6.0.6000.16386</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp947.pdf">6.0.6000.16386</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/947">947</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#715">#715</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#386">#386</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#737">#737</a>)<br />
 <br />
@@ -1089,7 +1089,7 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="odd">
 <td>Kernel Mode Security Support Provider Interface (ksecdd.sys)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp891.pdf">6.0.6000.16386, 6.0.6000.16870 and 6.0.6000.21067</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp891.pdf">6.0.6000.16386, 6.0.6000.16870 and 6.0.6000.21067</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/891">891</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. #553); ECDSA (Cert. #60); HMAC (Cert. #298); RNG (Cert. #321); RSA (Certs. #257 and #258); SHS (Cert. #618); Triple-DES (Cert. #549)<br />
 <br />
@@ -1117,23 +1117,23 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Kernel Mode Cryptographic Module (FIPS.SYS)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp997.pdf">5.1.2600.5512</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp997.pdf">5.1.2600.5512</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/997">997</a></td>
-<td><p><em>FIPS approved algorithms:</em> HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#429">#429</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#449">#449</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#785">#785</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#677">#677</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#677">#677</a>, vendor affirmed)</p>
+<td><p><em>FIPS approved algorithms:</em> HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#429">#429</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#449">#449</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#785">#785</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#677">#677</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#677">#677</a>, vendor affirmed)</p>
 <p><em>Other algorithms:</em> DES; MD5; HMAC MD5</p></td>
 </tr>
 <tr class="odd">
 <td>Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp990.pdf">5.1.2600.5507</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp990.pdf">5.1.2600.5507</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/990">990</a></td>
-<td><p><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#292">#292</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#448">#448</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#784">#784</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#676">#676</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#676">#676</a>, vendor affirmed)</p>
+<td><p><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#292">#292</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#448">#448</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#784">#784</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#676">#676</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#676">#676</a>, vendor affirmed)</p>
 <p><em>Other algorithms:</em> DES; DES40; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits); MD5; RC2; RC4</p></td>
 </tr>
 <tr class="even">
 <td>Enhanced Cryptographic Provider (RSAENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp989.pdf">5.1.2600.5507</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp989.pdf">5.1.2600.5507</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/989">989</a></td>
-<td><p><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#781">#781</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#428">#428</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#447">#447</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#371">#371</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">#783</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#675">#675</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#675">#675</a>, vendor affirmed)</p>
+<td><p><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#781">#781</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#428">#428</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#447">#447</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#371">#371</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">#783</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#675">#675</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#675">#675</a>, vendor affirmed)</p>
 <p><em>Other algorithms:</em> DES; MD2; MD4; MD5; HMAC MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits)</p></td>
 </tr>
 </tbody>
@@ -1158,17 +1158,17 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>DSS/Diffie-Hellman Enhanced Cryptographic Provider</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp240.pdf">5.1.2600.2133</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp240.pdf">5.1.2600.2133</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/240">240</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#16">#16</a>); DSA/SHA-1 (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#29">#29</a>)</p>
-<p><em>Other algorithms:</em> DES (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#66">#66</a>); RC2; RC4; MD5; DES40; Diffie-Hellman (key agreement)</p></td>
+<p><em>Other algorithms:</em> DES (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#66">#66</a>); RC2; RC4; MD5; DES40; Diffie-Hellman (key agreement)</p></td>
 </tr>
 <tr class="odd">
 <td>Microsoft Enhanced Cryptographic Provider</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp238.pdf">5.1.2600.2161</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp238.pdf">5.1.2600.2161</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/238">238</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#81">#81</a>); AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#33">#33</a>); SHA-1 (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#83">#83</a>); RSA (PKCS#1, vendor affirmed); HMAC-SHA-1 (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#83">#83</a>, vendor affirmed)</p>
-<p><em>Other algorithms:</em> DES (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#156">#156</a>); RC2; RC4; MD5</p></td>
+<p><em>Other algorithms:</em> DES (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#156">#156</a>); RC2; RC4; MD5</p></td>
 </tr>
 </tbody>
 </table>
@@ -1192,10 +1192,10 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Microsoft Enhanced Cryptographic Provider</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp238.pdf">5.1.2600.1029</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp238.pdf">5.1.2600.1029</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/238">238</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#81">#81</a>); AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#33">#33</a>); SHA-1 (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#83">#83</a>); RSA (PKCS#1, vendor affirmed); HMAC-SHA-1 (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#83">#83</a>, vendor affirmed)</p>
-<p><em>Other algorithms:</em> DES (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#156">#156</a>); RC2; RC4; MD5</p></td>
+<p><em>Other algorithms:</em> DES (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#156">#156</a>); RC2; RC4; MD5</p></td>
 </tr>
 </tbody>
 </table>
@@ -1219,10 +1219,10 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Kernel Mode Cryptographic Module</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp241.pdf">5.1.2600.0</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp241.pdf">5.1.2600.0</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/241">241</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#16">#16</a>); DSA/SHA-1 (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#35">#35</a>); HMAC-SHA-1 (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#35">#35</a>, vendor affirmed)</p>
-<p><em>Other algorithms:</em> DES (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#89">#89</a>)</p></td>
+<p><em>Other algorithms:</em> DES (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#89">#89</a>)</p></td>
 </tr>
 </tbody>
 </table>
@@ -1246,20 +1246,20 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Kernel Mode Cryptographic Module (FIPS.SYS)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp106.pdf">5.0.2195.1569</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp106.pdf">5.0.2195.1569</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/106">106</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#16">#16</a>); SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#35">#35</a>)</p>
-<p><em>Other algorithms:</em> DES (Certs. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#89">#89</a>)</p></td>
+<p><em>Other algorithms:</em> DES (Certs. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#89">#89</a>)</p></td>
 </tr>
 <tr class="odd">
 <td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enhanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
-<td><p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Base DSS: 5.0.2195.3665 [SP3])</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Base: 5.0.2195.3839 [SP3])</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(DSS/DH Enh: 5.0.2195.3665 [SP3])</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Enh: 5.0.2195.3839 [SP3]</a></p></td>
+<td><p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Base DSS: 5.0.2195.3665 [SP3])</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Base: 5.0.2195.3839 [SP3])</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(DSS/DH Enh: 5.0.2195.3665 [SP3])</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Enh: 5.0.2195.3839 [SP3]</a></p></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/103">103</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#16">#16</a>); DSA/SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#28">#28</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#29">#29</a>); RSA (vendor affirmed)</p>
-<p><em>Other algorithms:</em> DES (Certs. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#65">#65</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#66">66</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#67">67</a> and <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#68">68</a>); Diffie-Hellman (key agreement); RC2; RC4; MD2; MD4; MD5</p></td>
+<p><em>Other algorithms:</em> DES (Certs. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#65">#65</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#66">66</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#67">67</a> and <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#68">68</a>); Diffie-Hellman (key agreement); RC2; RC4; MD2; MD4; MD5</p></td>
 </tr>
 </tbody>
 </table>
@@ -1283,24 +1283,24 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Kernel Mode Cryptographic Module (FIPS.SYS)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp106.pdf">5.0.2195.1569</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp106.pdf">5.0.2195.1569</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/106">106</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#16">#16</a>); SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#35">#35</a>)</p>
-<p><em>Other algorithms:</em> DES (Certs. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#89">#89</a>)</p></td>
+<p><em>Other algorithms:</em> DES (Certs. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#89">#89</a>)</p></td>
 </tr>
 <tr class="odd">
 <td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enhanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
-<td><p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Base DSS:</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">5.0.2195.2228 [SP2])</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Base:</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">5.0.2195.2228 [SP2])</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(DSS/DH Enh:</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">5.0.2195.2228 [SP2])</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Enh:</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">5.0.2195.2228 [SP2])</a></p></td>
+<td><p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Base DSS:</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">5.0.2195.2228 [SP2])</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Base:</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">5.0.2195.2228 [SP2])</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(DSS/DH Enh:</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">5.0.2195.2228 [SP2])</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Enh:</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">5.0.2195.2228 [SP2])</a></p></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/103">103</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#16">#16</a>); DSA/SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#28">#28</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#29">#29</a>); RSA (vendor affirmed)</p>
-<p><em>Other algorithms:</em> DES (Certs. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#65">#65</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#66">66</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#67">67</a> and <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#68">68</a>); Diffie-Hellman (key agreement); RC2; RC4; MD2; MD4; MD5</p></td>
+<p><em>Other algorithms:</em> DES (Certs. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#65">#65</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#66">66</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#67">67</a> and <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#68">68</a>); Diffie-Hellman (key agreement); RC2; RC4; MD2; MD4; MD5</p></td>
 </tr>
 </tbody>
 </table>
@@ -1324,13 +1324,13 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enhanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
-<td><p>(<a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">Base DSS: 5.0.2150.1391 [SP1])</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Base: 5.0.2150.1391 [SP1])</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(DSS/DH Enh: 5.0.2150.1391 [SP1])</a></p>
-<p><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Enh: 5.0.2150.1391 [SP1])</a></p></td>
+<td><p>(<a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">Base DSS: 5.0.2150.1391 [SP1])</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Base: 5.0.2150.1391 [SP1])</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(DSS/DH Enh: 5.0.2150.1391 [SP1])</a></p>
+<p><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp103.pdf">(Enh: 5.0.2150.1391 [SP1])</a></p></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/103">103</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#16">#16</a>); DSA/SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#28">#28</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#29">#29</a>); RSA (vendor affirmed)</p>
-<p><em>Other algorithms:</em> DES (Certs. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#65">#65</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#66">66</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#67">67</a> and <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#68">68</a>); Diffie-Hellman (key agreement); RC2; RC4; MD2; MD4; MD5</p></td>
+<p><em>Other algorithms:</em> DES (Certs. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#65">#65</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#66">66</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#67">67</a> and <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#68">68</a>); Diffie-Hellman (key agreement); RC2; RC4; MD2; MD4; MD5</p></td>
 </tr>
 </tbody>
 </table>
@@ -1354,10 +1354,10 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enhanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp76.pdf">5.0.2150.1</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp76.pdf">5.0.2150.1</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/76">76</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (vendor affirmed); DSA/SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#28">#28</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#29">29</a>); RSA (vendor affirmed)</p>
-<p><em>Other algorithms:</em> DES (Certs. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#65">#65</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#66">66</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#67">67</a> and <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#68">68</a>); RC2; RC4; MD2; MD4; MD5; Diffie-Hellman (key agreement)</p></td>
+<p><em>Other algorithms:</em> DES (Certs. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#65">#65</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#66">66</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#67">67</a> and <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#68">68</a>); RC2; RC4; MD2; MD4; MD5; Diffie-Hellman (key agreement)</p></td>
 </tr>
 </tbody>
 </table>
@@ -1381,10 +1381,10 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enhanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp75.pdf">5.0.1877.6 and 5.0.1877.7</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp75.pdf">5.0.1877.6 and 5.0.1877.7</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/75">75</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (vendor affirmed); SHA-1 (Certs. <a href="https://social.msdn.microsoft.com/forums/en-us/f93c9ee5-89b9-41a4-96c4-6eb9346625b9/msrai-msra-parsing-remote-assistance-packets-in-network-monitor?forum=os_windowsprotocolshttps://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#20">#20</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#21">21</a>); DSA/SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#25">#25</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#26">26</a>); RSA (vendor- affirmed)</p>
-<p><em>Other algorithms:</em> DES (Certs. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#61">#61</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#62">62</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#63">63</a> and <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#64">64</a>); RC2; RC4; MD2; MD4; MD5; Diffie-Hellman (key agreement)</p></td>
+<p><em>Other algorithms:</em> DES (Certs. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#61">#61</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#62">62</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#63">63</a> and <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#64">64</a>); RC2; RC4; MD2; MD4; MD5; Diffie-Hellman (key agreement)</p></td>
 </tr>
 </tbody>
 </table>
@@ -1402,11 +1402,11 @@ Validated Editions: Ultimate Edition
 </tr>
 <tr class="even">
 <td>Base Cryptographic Provider</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp68.pdf">5.0.1877.6 and 5.0.1877.7</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp68.pdf">5.0.1877.6 and 5.0.1877.7</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/68">68</a></td>
 <td><em>FIPS approved algorithms:</em> SHA-1 (Certs. <a href="https://social.msdn.microsoft.com/forums/en-us/f93c9ee5-89b9-41a4-96c4-6eb9346625b9/msrai-msra-parsing-remote-assistance-packets-in-network-monitor?forum=os_windowsprotocolshttps://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#20">#20</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#21">21</a>); DSA/SHA- 1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#25">#25</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#26">26</a>); RSA (vendor affirmed)<br />
 <br />
-<em>Other algorithms:</em> DES (Certs. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#61">#61</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#62">62</a>, <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#63">63</a> and <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#64">64</a>); Triple-DES (allowed for US and Canadian Government use); RC2; RC4; MD2; MD4; MD5; Diffie-Hellman (key agreement)</td>
+<em>Other algorithms:</em> DES (Certs. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#61">#61</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#62">62</a>, <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#63">63</a> and <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#64">64</a>); Triple-DES (allowed for US and Canadian Government use); RC2; RC4; MD2; MD4; MD5; Diffie-Hellman (key agreement)</td>
 </tr>
 </tbody>
 </table>
@@ -1637,7 +1637,7 @@ Validated Editions: Standard, Datacenter, Storage Server
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2937.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2937.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2937">2937</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>); DRBG (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">#1217</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1098">#1098</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#911">#911</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2651">#2651</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#92">#92</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#101">#101</a>); KTS (AES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4062">#4062</a>; key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2192">#2192</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2195">#2195</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#2227">#2227</a>)<br />
 <br />
@@ -1645,7 +1645,7 @@ Validated Editions: Standard, Datacenter, Storage Server
 </tr>
 <tr class="odd">
 <td><b>Kernel Mode Cryptographic Primitives Library (cng.sys)</b></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2936.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2936.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2936">2936</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>); DRBG (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">#1217</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1098">#1098</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#911">#911</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2651">#2651</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#92">#92</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#101">#101</a>); KTS (AES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4062">#4062</a>; key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2192">#2192</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2195">#2195</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#2227">#2227</a>)<br />
 <br />
@@ -1653,14 +1653,14 @@ Validated Editions: Standard, Datacenter, Storage Server
 </tr>
 <tr class="even">
 <td>Boot Manager</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2931.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2931.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2931">2931</a></td>
 <td><p><em>FIPS approved algorithms</em>: AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4061">#4061</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2651">#2651</a>); PBKDF (vendor affirmed); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>)</p>
 <p><em>Other algorithms</em>: MD5; PBKDF (non-compliant); VMK KDF</p></td>
 </tr>
 <tr class="odd">
 <td>BitLocker® Windows OS Loader (winload)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2932.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2932.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2932">2932</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4061">#4061</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>)<br />
 <br />
@@ -1668,7 +1668,7 @@ Validated Editions: Standard, Datacenter, Storage Server
 </tr>
 <tr class="even">
 <td>BitLocker® Windows Resume (winresume)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2933.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2933.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2934">2933</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4061">#4061</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>)<br />
 <br />
@@ -1676,13 +1676,13 @@ Validated Editions: Standard, Datacenter, Storage Server
 </tr>
 <tr class="odd">
 <td>BitLocker® Dump Filter (dumpfve.sys)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2934.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2934.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2934">2934</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4061">#4061</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">#4064</a>)</td>
 </tr>
 <tr class="even">
 <td>Code Integrity (ci.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2935.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2935.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2935">2935</a></td>
 <td><em>FIPS approved algorithms:</em> RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>)<br />
 <br />
@@ -1690,7 +1690,7 @@ Validated Editions: Standard, Datacenter, Storage Server
 </tr>
 <tr class="odd">
 <td>Secure Kernel Code Integrity (skci.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2938.pdf">10.0.14393</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2938.pdf">10.0.14393</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2938">2938</a></td>
 <td><em>FIPS approved algorithms:</em> RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">#3347</a>)<br />
 <br />
@@ -1716,7 +1716,7 @@ Validated Editions: Server, Storage Server,
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2357.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2357.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2357">2357</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">#489</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#855">#855</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#505">#505</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1773">#1773</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#47">#47</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#30">#30</a>); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1487">#1487</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1493">#1493, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1519">#1519</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">#2373</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1692">#1692</a>)<br />
 <br />
@@ -1724,7 +1724,7 @@ Validated Editions: Server, Storage Server,
 </tr>
 <tr class="odd">
 <td><b>Kernel Mode Cryptographic Primitives Library (cng.sys)</b></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2356.pdf">6.3.9600 6.3.9600.17042</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2356.pdf">6.3.9600 6.3.9600.17042</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2356">2356</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">#489</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#505">#505</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1773">#1773</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#47">#47</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#30">#30</a>); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1487">#1487</a>, <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1493">#1493, and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1519">#1519</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373"># 2373</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1692">#1692</a>)<br />
 <br />
@@ -1732,7 +1732,7 @@ Validated Editions: Server, Storage Server,
 </tr>
 <tr class="even">
 <td>Boot Manager</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2351.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2351.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2351">2351</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1773">#1773</a>); PBKDF (vendor affirmed); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1494">#1494</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373"># 2373</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2396">#2396</a>)<br />
 <br />
@@ -1740,7 +1740,7 @@ Validated Editions: Server, Storage Server,
 </tr>
 <tr class="odd">
 <td>BitLocker® Windows OS Loader (winload)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2352.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2352.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2352">2352</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1494">#1494</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2396">#2396</a>)<br />
 <br />
@@ -1748,7 +1748,7 @@ Validated Editions: Server, Storage Server,
 </tr>
 <tr class="even">
 <td>BitLocker® Windows Resume (winresume)<sup>[16]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2353.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2353.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2353">2353</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1494">#1494</a>); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373"># 2373</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2396">#2396</a>)<br />
 <br />
@@ -1756,7 +1756,7 @@ Validated Editions: Server, Storage Server,
 </tr>
 <tr class="odd">
 <td>BitLocker® Dump Filter (dumpfve.sys)<sup>[17]</sup></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2354.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2354.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2354">2354</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">#2832</a>)<br />
 <br />
@@ -1764,7 +1764,7 @@ Validated Editions: Server, Storage Server,
 </tr>
 <tr class="even">
 <td>Code Integrity (ci.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2355.pdf">6.3.9600 6.3.9600.17031</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2355.pdf">6.3.9600 6.3.9600.17031</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2355">2355</a></td>
 <td><em>FIPS approved algorithms:</em> RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1494">#1494</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373"># 2373</a>)<br />
 <br />
@@ -1792,9 +1792,9 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (BCRYPTPRIMITIVES.DLL)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1892.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1892">1892</a></td>
-<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2216">#2216</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#687">#687</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">#341</a>); HMAC (Cert. #<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">1345</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#36">#36</a>); KBKDF (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/kbkdf800-108/kbkdfval.htm#3">#3</a>); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1133">#1133</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1134">#1134</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1387">#1387</a>)<br />
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1892.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1892">1892</a></td>
+<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2216">#2216</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#687">#687</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">#341</a>); HMAC (Cert. #<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">1345</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#36">#36</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/kbkdf800-108/kbkdfval.htm#3">#3</a>); PBKDF (vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1133">#1133</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1134">#1134</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1387">#1387</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a>, key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); DES; Legacy CAPI KDF; MD2; MD4; MD5; HMAC MD5; RC2; RC4; RSA (encrypt/decrypt)#687); ECDSA (Cert.); HMAC (Cert. #); KAS (Cert.); KBKDF (Cert.); PBKDF (vendor affirmed); RSA (Certs.  and); SHS (Cert.); Triple-DES (Cert.)<br />
 <br />
@@ -1802,9 +1802,9 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="odd">
 <td><b>Kernel Mode Cryptographic Primitives Library (cng.sys)</b></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1891.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1891.pdf">6.2.9200</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1891">1891</a></td>
-<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2216">#2216</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#259">#259</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">#341</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">#1345</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#36">#36</a>); KBKDF (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/kbkdf800-108/kbkdfval.htm#3">#3</a>); PBKDF (vendor affirmed); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#1110">#1110</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1133">#1133</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1134">#1134</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1387">#1387</a>)<br />
+<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2216">#2216</a>); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#259">#259</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">#341</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">#1345</a>); KAS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#36">#36</a>); KBKDF (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/kbkdf800-108/kbkdfval.htm#3">#3</a>); PBKDF (vendor affirmed); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#1110">#1110</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1133">#1133</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1134">#1134</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1387">#1387</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a>, key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); DES; Legacy CAPI KDF; MD2; MD4; MD5; HMAC MD5; RC2; RC4; RSA (encrypt/decrypt)#1110); RSA (Certs.  and); SHS (Cert.); Triple-DES (Cert.)<br />
 <br />
@@ -1812,56 +1812,56 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Boot Manager</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1895.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1895">1895</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1895.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1895">1895</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2198">#2198</a>); HMAC (Cert. #<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1347">1347</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>)<br />
 <br />
 <em>Other algorithms:</em> MD5</td>
 </tr>
 <tr class="odd">
 <td>BitLocker® Windows OS Loader (WINLOAD)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1896.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1896">1896</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1896.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1896">1896</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2198">#2198</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">#2197</a>; non-compliant); MD5; Non-Approved RNG</td>
 </tr>
 <tr class="even">
 <td>BitLocker® Windows Resume (WINRESUME)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1898.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1898">1898</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1898.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1898">1898</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2198">#2198</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>)<br />
 <br />
 <em>Other algorithms:</em> MD5</td>
 </tr>
 <tr class="odd">
 <td>BitLocker® Dump Filter (DUMPFVE.SYS)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1899.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1899">1899</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1899.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1899">1899</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2198">#2198</a>)<br />
 <br />
 <em>Other algorithms:</em> N/A</td>
 </tr>
 <tr class="even">
 <td>Code Integrity (CI.DLL)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1897.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1897">1897</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1897.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1897">1897</a></td>
 <td><em>FIPS approved algorithms:</em> RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a>)<br />
 <br />
 <em>Other algorithms:</em> MD5</td>
 </tr>
 <tr class="odd">
 <td>Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH.DLL)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1893.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1893">1893</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1893.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1893">1893</a></td>
 <td><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#686">#686</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1386">#1386</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1386">#1386</a>, vendor affirmed)<br />
 <br />
 <em>Other algorithms:</em> DES; DES MAC; DES40; DES40 MAC; Diffie-Hellman; MD5; RC2; RC2 MAC; RC4; Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1386">#1386</a>, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)</td>
 </tr>
 <tr class="even">
 <td>Enhanced Cryptographic Provider (RSAENH.DLL)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1894.pdf">6.2.9200</a></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1894">1894</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1894.pdf">6.2.9200</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1894">1894</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1346">#1346</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1386">#1386</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">#2196</a>, key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); DES; MD2; MD4; MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1386">#1386</a>, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)</td>
@@ -1882,7 +1882,7 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Boot Manager (bootmgr)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1321.pdf">6.1.7600.16385 or 6.1.7601.17514</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1321.pdf">6.1.7600.16385 or 6.1.7601.17514</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1321">1321</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1177">#1177</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#675">#675</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#568">#568</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>)<br />
 <br />
@@ -1890,7 +1890,7 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="odd">
 <td><b>Winload OS Loader (winload.exe)</b></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1333.pdf">6.1.7600.16385, 6.1.7600.16757, 6.1.7600.20897, 6.1.7600.20916, 6.1.7601.17514, 6.1.7601.17556, 6.1.7601.21655 and 6.1.7601.21675</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1333.pdf">6.1.7600.16385, 6.1.7600.16757, 6.1.7600.20897, 6.1.7600.20916, 6.1.7601.17514, 6.1.7601.17556, 6.1.7601.21655 and 6.1.7601.21675</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1333">1333</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1177">#1177</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#568">#568</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>)<br />
 <br />
@@ -1898,7 +1898,7 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Code Integrity (ci.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1334.pdf">6.1.7600.16385, 6.1.7600.17122, 6.1.7600.21320, 6.1.7601.17514, 6.1.7601.17950 and 6.1.7601.22108</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1334.pdf">6.1.7600.16385, 6.1.7600.17122, 6.1.7600.21320, 6.1.7601.17514, 6.1.7601.17950 and 6.1.7601.22108</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1334">1334</a></td>
 <td><em>FIPS approved algorithms:</em> RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#568">#568</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>)<br />
 <br />
@@ -1906,23 +1906,23 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="odd">
 <td>Kernel Mode Cryptographic Primitives Library (cng.sys)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1335.pdf">6.1.7600.16385, 6.1.7600.16915, 6.1.7600.21092, 6.1.7601.17514, 6.1.7601.17919, 6.1.7601.17725, 6.1.7601.21861 and 6.1.7601.22076</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1335.pdf">6.1.7600.16385, 6.1.7600.16915, 6.1.7600.21092, 6.1.7601.17514, 6.1.7601.17919, 6.1.7601.17725, 6.1.7601.21861 and 6.1.7601.22076</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1335">1335</a></td>
-<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1177">#1177</a>); AES GCM (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); AES GMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">#23</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#27">#27</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#142">#142</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#686">#686</a>); KAS (SP 800-56A, vendor affirmed, key agreement; key establishment methodology provides between 80 bits and 256 bits of encryption strength); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#567">#567</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>)<br />
+<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1177">#1177</a>); AES GCM (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); AES GMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">#23</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#27">#27</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#142">#142</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#686">#686</a>); KAS (SP 800-56A, vendor affirmed, key agreement; key establishment methodology provides between 80 bits and 256 bits of encryption strength); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#567">#567</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>)<br />
 <br />
 <em>-Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD2; MD4; MD5; HMAC MD5; RC2; RC4</td>
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (bcryptprimitives.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1336.pdf">66.1.7600.16385 or 6.1.7601.17514</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1336.pdf">66.1.7600.16385 or 6.1.7601.17514</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1336">1336</a></td>
-<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1177">#1177</a>); AES GCM (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); AES GMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">#23</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#27">#27</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#391">#391</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#142">#142</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#686">#686</a>); KAS (SP 800-56A, vendor affirmed, key agreement; key establishment methodology provides between 80 bits and 256 bits of encryption strength); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#567">#567</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>)<br />
+<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1177">#1177</a>); AES GCM (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); AES GMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, vendor-affirmed); DRBG (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">#23</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#27">#27</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#391">#391</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#142">#142</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#686">#686</a>); KAS (SP 800-56A, vendor affirmed, key agreement; key establishment methodology provides between 80 bits and 256 bits of encryption strength); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#567">#567</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>, key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); DES; HMAC MD5; MD2; MD4; MD5; RC2; RC4</td>
 </tr>
 <tr class="odd">
 <td>Enhanced Cryptographic Provider (RSAENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1337.pdf">6.1.7600.16385</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1337.pdf">6.1.7600.16385</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1337">1337</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a>); DRBG (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">#23</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#687">#687</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#568">#568</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>)<br />
 <br />
@@ -1930,15 +1930,15 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1338.pdf">6.1.7600.16385</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1338.pdf">6.1.7600.16385</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1338">1338</a></td>
-<td><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#390">#390</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>, vendor affirmed)<br />
+<td><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#390">#390</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#649">#649</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#846">#846</a>, vendor affirmed)<br />
 <br />
 <em>Other algorithms:</em> DES; DES MAC; DES40; DES40 MAC; Diffie-Hellman; MD5; RC2; RC2 MAC; RC4</td>
 </tr>
 <tr class="odd">
 <td>BitLocker™ Drive Encryption</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1339.pdf">6.1.7600.16385, 6.1.7600.16429, 6.1.7600.16757, 6.1.7600.20536, 6.1.7600.20873, 6.1.7600.20897, 6.1.7600.20916, 6.1.7601.17514, 6.1.7601.17556, 6.1.7601.21634, 6.1.7601.21655 or 6.1.7601.21675</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1339.pdf">6.1.7600.16385, 6.1.7600.16429, 6.1.7600.16757, 6.1.7600.20536, 6.1.7600.20873, 6.1.7600.20897, 6.1.7600.20916, 6.1.7601.17514, 6.1.7601.17556, 6.1.7601.21634, 6.1.7601.21655 or 6.1.7601.21675</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1339">1339</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">#1168</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1177">#1177</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#675">#675</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a>)<br />
 <br />
@@ -1960,7 +1960,7 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Boot Manager (bootmgr)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1004.pdf">6.0.6001.18000, 6.0.6002.18005 and 6.0.6002.22497</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1004.pdf">6.0.6001.18000, 6.0.6002.18005 and 6.0.6002.22497</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1004">1004</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#760">#760</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#415">#415</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#355">#355</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>)<br />
 <br />
@@ -1968,7 +1968,7 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="odd">
 <td><b>Winload OS Loader (winload.exe)</b></td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1005.pdf">6.0.6001.18000, 6.0.6001.18606, 6.0.6001.22861, 6.0.6002.18005, 6.0.6002.18411, 6.0.6002.22497 and 6.0.6002.22596</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1005.pdf">6.0.6001.18000, 6.0.6001.18606, 6.0.6001.22861, 6.0.6002.18005, 6.0.6002.18411, 6.0.6002.22497 and 6.0.6002.22596</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1005">1005</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#760">#760</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#355">#355</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>)<br />
 <br />
@@ -1976,7 +1976,7 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Code Integrity (ci.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1006.pdf">6.0.6001.18000 and 6.0.6002.18005</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1006.pdf">6.0.6001.18000 and 6.0.6002.18005</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1006">1006</a></td>
 <td><em>FIPS approved algorithms:</em> RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#355">#355</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>)<br />
 <br />
@@ -1984,9 +1984,9 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="odd">
 <td>Kernel Mode Security Support Provider Interface (ksecdd.sys)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1007.pdf">6.0.6001.18709, 6.0.6001.18272, 6.0.6001.18796, 6.0.6001.22202, 6.0.6001.22450, 6.0.6001.22987, 6.0.6001.23069, 6.0.6002.18005, 6.0.6002.18051, 6.0.6002.18541, 6.0.6002.18643, 6.0.6002.22152, 6.0.6002.22742 and 6.0.6002.22869</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1007.pdf">6.0.6001.18709, 6.0.6001.18272, 6.0.6001.18796, 6.0.6001.22202, 6.0.6001.22450, 6.0.6001.22987, 6.0.6001.23069, 6.0.6002.18005, 6.0.6002.18051, 6.0.6002.18541, 6.0.6002.18643, 6.0.6002.22152, 6.0.6002.22742 and 6.0.6002.22869</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1007">1007</a></td>
-<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#757">#757</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#83">#83</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#413">#413</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a> and SP800-90 AES-CTR, vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#358">#358</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>)<br />
+<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#757">#757</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#83">#83</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#413">#413</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a> and SP800-90 AES-CTR, vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#358">#358</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (GCM and GMAC; non-compliant); DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 bits and 256 bits of encryption strength); MD2; MD4; MD5; HMAC MD5; RC2; RC4; RNG (SP 800-90 Dual-EC; non-compliant); RSA (key wrapping: key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength)#83); HMAC (Cert.); RNG (Cert.  and SP800-90 AES-CTR, vendor affirmed); RSA (Certs.  and); SHS (Cert.); Triple-DES (Cert.)<br />
 <br />
@@ -1994,23 +1994,23 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Cryptographic Primitives Library (bcrypt.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1008.pdf">6.0.6001.22202, 6.0.6002.18005 and 6.0.6002.22872</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1008.pdf">6.0.6001.22202, 6.0.6002.18005 and 6.0.6002.22872</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1008">1008</a></td>
-<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#757">#757</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#284">#284</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#83">#83</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#413">#413</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a> and SP800-90, vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#358">#358</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>)<br />
+<td><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#757">#757</a>); DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#284">#284</a>); ECDSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#83">#83</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#413">#413</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a> and SP800-90, vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#358">#358</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>)<br />
 <br />
 <em>Other algorithms:</em> AES (GCM and GMAC; non-compliant); DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 bits and 256 bits of encryption strength); MD2; MD4; MD5; RC2; RC4; RNG (SP 800-90 Dual-EC; non-compliant); RSA (key wrapping; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant provides less than 112 bits of encryption strength)</td>
 </tr>
 <tr class="odd">
 <td>Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1009.pdf">6.0.6001.18000 and 6.0.6002.18005</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1009.pdf">6.0.6001.18000 and 6.0.6002.18005</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1009">1009</a></td>
-<td><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#282">#282</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>, vendor affirmed)<br />
+<td><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#282">#282</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#435">#435</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>); Triple-DES MAC (Triple-DES Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>, vendor affirmed)<br />
 <br />
 <em>-Other algorithms:</em> DES; DES MAC; DES40; DES40 MAC; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD5; RC2; RC2 MAC; RC4</td>
 </tr>
 <tr class="even">
 <td>Enhanced Cryptographic Provider (RSAENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1010.pdf">6.0.6001.22202 and 6.0.6002.18005</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp1010.pdf">6.0.6001.22202 and 6.0.6002.18005</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1010">1010</a></td>
 <td><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#739">#739</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#408">#408</a>); RNG (SP 800-90, vendor affirmed); RSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#355">#355</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">#753</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#656">#656</a>)<br />
 <br />
@@ -2038,23 +2038,23 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp875.pdf">5.2.3790.3959</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp875.pdf">5.2.3790.3959</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/875">875</a></td>
-<td><p><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#221">#221</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#314">#314</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#245">#245</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#611">#611</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#543">#543</a>)</p>
+<td><p><em>FIPS approved algorithms:</em> DSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#221">#221</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#314">#314</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#245">#245</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#611">#611</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#543">#543</a>)</p>
 <p><em>Other algorithms:</em> DES; DES40; Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD5; RC2; RC4</p></td>
 </tr>
 <tr class="odd">
 <td>Kernel Mode Cryptographic Module (FIPS.SYS)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp869.pdf">5.2.3790.3959</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp869.pdf">5.2.3790.3959</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/869">869</a></td>
-<td><p><em>FIPS approved algorithms:</em> HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#287">#287</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#313">#313</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#610">#610</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#542">#542</a>)</p>
+<td><p><em>FIPS approved algorithms:</em> HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#287">#287</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#313">#313</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#610">#610</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#542">#542</a>)</p>
 <p><em>Other algorithms:</em> DES; HMAC-MD5</p></td>
 </tr>
 <tr class="even">
 <td>Enhanced Cryptographic Provider (RSAENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp868.pdf">5.2.3790.3959</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp868.pdf">5.2.3790.3959</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/868">868</a></td>
-<td><p><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#548">#548</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#289">#289</a>); RNG (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#316">#316</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#245">#245</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">#613</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#544">#544</a>)</p>
+<td><p><em>FIPS approved algorithms:</em> AES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#548">#548</a>); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#289">#289</a>); RNG (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#316">#316</a>); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#245">#245</a>); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">#613</a>); Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#544">#544</a>)</p>
 <p><em>Other algorithms:</em> DES; RC2; RC4; MD2; MD4; MD5; RSA (key wrapping; key establishment methodology provides between 112 bits and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength)</p></td>
 </tr>
 </tbody>
@@ -2079,28 +2079,28 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Kernel Mode Cryptographic Module (FIPS.SYS)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp405.pdf">5.2.3790.1830 [SP1]</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp405.pdf">5.2.3790.1830 [SP1]</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/405">405</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#201">#201</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#370">#370</a>[1]); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#177">#177</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#371">#371</a>[2])</p>
-<p><em>Other algorithms:</em> DES (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#230">#230</a>[1]); HMAC-MD5; HMAC-SHA-1 (non-compliant)</p>
+<p><em>Other algorithms:</em> DES (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#230">#230</a>[1]); HMAC-MD5; HMAC-SHA-1 (non-compliant)</p>
 <p>[1] x86<br />
 [2] SP1 x86, x64, IA64</p></td>
 </tr>
 <tr class="odd">
 <td>Enhanced Cryptographic Provider (RSAENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp382.pdf">5.2.3790.1830 [Service Pack 1])</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp382.pdf">5.2.3790.1830 [Service Pack 1])</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/382">382</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#192">#192</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#365">#365</a>[2]); AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#80">#80</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#290">#290</a>[2]); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#176">#176</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#364">#364</a>[2]); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#176">#176</a>, vendor affirmed[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#99">#99</a>[2]); RSA (PKCS#1, vendor affirmed[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#81">#81</a>[2])</p>
-<p><em>Other algorithms:</em> DES (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#226">#226</a>[1]); SHA-256[1]; SHA-384[1]; SHA-512[1]; RC2; RC4; MD2; MD4; MD5</p>
+<p><em>Other algorithms:</em> DES (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#226">#226</a>[1]); SHA-256[1]; SHA-384[1]; SHA-512[1]; RC2; RC4; MD2; MD4; MD5</p>
 <p>[1] x86<br />
 [2] SP1 x86, x64, IA64</p></td>
 </tr>
 <tr class="even">
 <td>Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp381.pdf">5.2.3790.1830 [Service Pack 1]</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp381.pdf">5.2.3790.1830 [Service Pack 1]</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/381">381</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#199">#199</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#381">#381</a>[2]); SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#181">#181</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#385">#385</a>[2]); DSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#95">#95</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#146">#146</a>[2]); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#81">#81</a>)</p>
-<p><em>Other algorithms:</em> DES (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#229">#229</a>[1]); Diffie-Hellman (key agreement); RC2; RC4; MD5; DES 40</p>
+<p><em>Other algorithms:</em> DES (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#229">#229</a>[1]); Diffie-Hellman (key agreement); RC2; RC4; MD5; DES 40</p>
 <p>[1] x86<br />
 [2] SP1 x86, x64, IA64</p></td>
 </tr>
@@ -2126,28 +2126,28 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Kernel Mode Cryptographic Module (FIPS.SYS)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp405.pdf">5.2.3790.0</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp405.pdf">5.2.3790.0</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/405">405</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#201">#201</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#370">#370</a>[1]); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#177">#177</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#371">#371</a>[2])</p>
-<p><em>Other algorithms:</em> DES (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#230">#230</a>[1]); HMAC-MD5; HMAC-SHA-1 (non-compliant)</p>
+<p><em>Other algorithms:</em> DES (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#230">#230</a>[1]); HMAC-MD5; HMAC-SHA-1 (non-compliant)</p>
 <p>[1] x86<br />
 [2] SP1 x86, x64, IA64</p></td>
 </tr>
 <tr class="odd">
 <td>Enhanced Cryptographic Provider (RSAENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp382.pdf">5.2.3790.0</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp382.pdf">5.2.3790.0</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/382">382</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#192">#192</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#365">#365</a>[2]); AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#80">#80</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#290">#290</a>[2]); SHS (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#176">#176</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#364">#364</a>[2]); HMAC (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#176">#176</a>, vendor affirmed[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#99">#99</a>[2]); RSA (PKCS#1, vendor affirmed[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#81">#81</a>[2])</p>
-<p><em>Other algorithms:</em> DES (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#226">#226</a>[1]); SHA-256[1]; SHA-384[1]; SHA-512[1]; RC2; RC4; MD2; MD4; MD5</p>
+<p><em>Other algorithms:</em> DES (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#226">#226</a>[1]); SHA-256[1]; SHA-384[1]; SHA-512[1]; RC2; RC4; MD2; MD4; MD5</p>
 <p>[1] x86<br />
 [2] SP1 x86, x64, IA64</p></td>
 </tr>
 <tr class="even">
 <td>Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp381.pdf">5.2.3790.0</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp381.pdf">5.2.3790.0</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/381">381</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#199">#199</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#381">#381</a>[2]); SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#181">#181</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#385">#385</a>[2]); DSA (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#95">#95</a>[1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#146">#146</a>[2]); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#81">#81</a>)</p>
-<p><em>Other algorithms:</em> DES (Cert. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#229">#229</a>[1]); Diffie-Hellman (key agreement); RC2; RC4; MD5; DES 40</p>
+<p><em>Other algorithms:</em> DES (Cert. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#229">#229</a>[1]); Diffie-Hellman (key agreement); RC2; RC4; MD5; DES 40</p>
 <p>[1] x86<br />
 [2] SP1 x86, x64, IA64</p></td>
 </tr>
@@ -2175,14 +2175,14 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Enhanced Cryptographic Provider</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2957.pdf">7.00.2872 [1] and 8.00.6246 [2]</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2957.pdf">7.00.2872 [1] and 8.00.6246 [2]</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2957">2957</a></td>
 <td><p><em>FIPS approved algorithms: AES (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4433">#4433</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4434">#4434</a><em>); CKG (vendor affirmed); DRBG (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1432">#1432</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1433">#1433</a><em>); HMAC (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2946">#2946</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2945">#2945</a><em>); RSA (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2414">#2414</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2415">#2415</a><em>); SHS (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">#3651</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">#3652</a><em>); Triple-DES (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#2383">#2383</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#2384">#2384</a><em>)</em></p>
 <p><em>Allowed algorithms: HMAC-MD5, MD5, NDRNG</em></p></td>
 </tr>
 <tr class="odd">
 <td>Cryptographic Primitives Library (bcrypt.dll)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2956.pdf">7.00.2872 [1] and 8.00.6246 [2]</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp2956.pdf">7.00.2872 [1] and 8.00.6246 [2]</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2956">2956</a></td>
 <td><p><em>FIPS approved algorithms: AES (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4430">#4430</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4431">#4431</a><em>); CKG (vendor affirmed); CVL (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/component#1139">#1139</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/component#1140">#1140</a><em>); DRBG (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1429">#1429</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1430">#1430</a><em>); DSA (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1187">#1187</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1188">#1188</a><em>); ECDSA (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#1072">#1072</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#1073">#1073</a><em>); HMAC (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2942">#2942</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2943">#2943</a><em>); KAS (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#114">#114</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#115">#115</a><em>); RSA (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2411">#2411</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2412">#2412</a><em>); SHS (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">#3648</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">#3649</a><em>); Triple-DES (Certs.</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#2381">#2381</a><em>and</em><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#2382">#2382</a><em>)</em></p>
 <p><em>Allowed algorithms: MD5, NDRNG, RSA (key wrapping; key establishment methodology provides between 112 bits and 150 bits of encryption strength</em></p></td>
@@ -2210,9 +2210,9 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Enhanced Cryptographic Provider</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp825.pdf">6.00.1937 [1] and 7.00.1687 [2]</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp825.pdf">6.00.1937 [1] and 7.00.1687 [2]</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/825">825</a></td>
-<td><p><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#516">#516</a> [1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2024">#2024</a> [2]); HMAC (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#267">#267</a> [1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1227">#1227</a> [2]); RNG (Certs. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#292">#292</a> [1] and <a href="http://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#1060">#1060</a> [2]); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#230">#230</a> [1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1052">#1052</a> [2]); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">#589</a> [1] and #1774 [2]); Triple-DES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#526">#526</a> [1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1308">#1308</a> [2])</p>
+<td><p><em>FIPS approved algorithms:</em> AES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#516">#516</a> [1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2024">#2024</a> [2]); HMAC (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#267">#267</a> [1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1227">#1227</a> [2]); RNG (Certs. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#292">#292</a> [1] and <a href="https://csrc.nist.gov/groups/stm/cavp/documents/rng/rnghistoricalval.html#1060">#1060</a> [2]); RSA (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#230">#230</a> [1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1052">#1052</a> [2]); SHS (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">#589</a> [1] and #1774 [2]); Triple-DES (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#526">#526</a> [1] and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#1308">#1308</a> [2])</p>
 <p><em>Other algorithms:</em> MD5; HMAC-MD5; RC2; RC4; DES</p></td>
 </tr>
 </tbody>
@@ -2237,10 +2237,10 @@ Validated Editions: Server, Storage Server
 </tr>
 <tr class="even">
 <td>Outlook Cryptographic Provider (EXCHCSP)</td>
-<td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp110.pdf">SR-1A (3821)</a></td>
+<td><a href="https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp110.pdf">SR-1A (3821)</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/110">110</a></td>
 <td><p><em>FIPS approved algorithms:</em> Triple-DES (Cert. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#18">#18</a>); SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#32">#32</a>); RSA (vendor affirmed)</p>
-<p><em>Other algorithms:</em> DES (Certs. <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#91">#91</a>); DES MAC; RC2; MD2; MD5</p></td>
+<p><em>Other algorithms:</em> DES (Certs. <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/desval.html#91">#91</a>); DES MAC; RC2; MD2; MD5</p></td>
 </tr>
 </tbody>
 </table>
@@ -3373,7 +3373,7 @@ PQG(gen)PARMS TESTED</b>: [(2048,256)SHA(256); (3072,256) SHA(256)]<br />
 <b>SIG(ver)PARMS TESTED</b>: [(2048,256) SHA(256); (3072,256) SHA(256)]<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a><br />
 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#687">Historical DSA List validation number 687</a>.</p></td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#687">Historical DSA List validation number 687</a>.</p></td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#687">#687</a></td>
 </tr>
 <tr class="odd">
@@ -3382,7 +3382,7 @@ PQG(ver)</b> MOD(1024);<br />
 <b>SIG(ver)</b> MOD(1024);<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a><br />
 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#686">Historical DSA List validation number 686</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#686">Historical DSA List validation number 686</a>.</td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 DSS and Diffie-Hellman Enhanced Cryptographic Provider (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#686">#686</a></td>
 </tr>
 <tr class="even">
@@ -3390,7 +3390,7 @@ Some of the previously validated components for this validation have been remove
 SIG(ver)</b> MOD(1024);<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number  1773</a><br />
 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">validation number  193</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#645">Historical DSA List validation number 645</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#645">Historical DSA List validation number 645</a>.</td>
 <td>Windows Embedded Compact 7 Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#645">#645</a></td>
 </tr>
 <tr class="odd">
@@ -3398,7 +3398,7 @@ Some of the previously validated components for this validation have been remove
 SIG(ver)</b> MOD(1024);<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number  1081</a><br />
 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">validation number  23</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#391">Historical DSA List validation number 391</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#386">Historical DSA List validation number 386</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#391">Historical DSA List validation number 391</a>. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#386">Historical DSA List validation number 386</a>.</td>
 <td><p>Windows Server 2008 R2 and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#391">#391</a></p>
 <p>Windows 7 Ultimate and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#386">#386</a></p></td>
 </tr>
@@ -3407,7 +3407,7 @@ Some of the previously validated components for this validation have been remove
 SIG(ver)</b> MOD(1024);<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number  1081</a><br />
 RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#649">validation number  649</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#390">Historical DSA List validation number 390</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#385">Historical DSA List validation number 385</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#390">Historical DSA List validation number 390</a>. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#385">Historical DSA List validation number 385</a>.</td>
 <td><p>Windows Server 2008 R2 and SP1 Enhanced DSS (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#390">#390</a></p>
 <p>Windows 7 Ultimate and SP1 Enhanced DSS (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#385">#385</a></p></td>
 </tr>
@@ -3415,7 +3415,7 @@ Some of the previously validated components for this validation have been remove
 <td><b>FIPS186-2:<br />
 SIG(ver)</b> MOD(1024);<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number  753</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#284">Historical DSA List validation number 284</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#283">Historical DSA List validation number 283</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#284">Historical DSA List validation number 284</a>. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#283">Historical DSA List validation number 283</a>.</td>
 <td><p>Windows Server 2008 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#284">#284</a></p>
 <p>Windows Vista Ultimate SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#283">#283</a></p></td>
 </tr>
@@ -3424,7 +3424,7 @@ Some of the previously validated components for this validation have been remove
 SIG(ver)</b> MOD(1024);<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number  753</a><br />
 RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#435">validation number  435</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#282">Historical DSA List validation number 282</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#281">Historical DSA List validation number 281</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#282">Historical DSA List validation number 282</a>. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#281">Historical DSA List validation number 281</a>.</td>
 <td><p>Windows Server 2008 Enhanced DSS (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#282">#282</a></p>
 <p>Windows Vista Ultimate SP1 Enhanced DSS (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#281">#281</a></p></td>
 </tr>
@@ -3433,7 +3433,7 @@ Some of the previously validated components for this validation have been remove
 SIG(ver)</b> MOD(1024);<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number  618</a><br />
 RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#321">validation number  321</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#227">Historical DSA List validation number 227</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#226">Historical DSA List validation number 226</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#227">Historical DSA List validation number 227</a>. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#226">Historical DSA List validation number 226</a>.</td>
 <td><p>Windows Vista CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#227">#227</a></p>
 <p>Windows Vista Enhanced DSS (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#226">#226</a></p></td>
 </tr>
@@ -3442,7 +3442,7 @@ Some of the previously validated components for this validation have been remove
 SIG(ver)</b> MOD(1024);<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#784">validation number  784</a><br />
 RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#448">validation number  448</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#292">Historical DSA List validation number 292</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#292">Historical DSA List validation number 292</a>.</td>
 <td>Windows XP Professional SP3 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#292">#292</a></td>
 </tr>
 <tr class="odd">
@@ -3450,7 +3450,7 @@ Some of the previously validated components for this validation have been remove
 SIG(ver)</b> MOD(1024);<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number  783</a><br />
 RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#447">validation number  447</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#291">Historical DSA List validation number 291</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#291">Historical DSA List validation number 291</a>.</td>
 <td>Windows XP Professional SP3 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#291">#291</a></td>
 </tr>
 <tr class="even">
@@ -3917,7 +3917,7 @@ PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>SigVer: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512))<br />
 <b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a><br />
 <b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#341">Historical ECDSA List validation number 341</a>.</p></td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#341">Historical ECDSA List validation number 341</a>.</p></td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">#341</a></td>
 </tr>
 <tr class="even">
@@ -3934,7 +3934,7 @@ PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>SigVer: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512))<br />
 <b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a><br />
 <b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">validation number  193</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#295">Historical ECDSA List validation number 295</a>.</p></td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#295">Historical ECDSA List validation number 295</a>.</p></td>
 <td>Windows Embedded Compact 7 Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#295">#295</a></td>
 </tr>
 <tr class="odd">
@@ -3945,7 +3945,7 @@ PKG: CURVES</b>(P-256 P-384 P-521)<br />
 <b>SIG(ver): CURVES</b>(P-256 P-384 P-521)<br />
 <b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a><br />
 <b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">validation number  23</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#142">Historical ECDSA List validation number 142</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#141">Historical ECDSA List validation number 141</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#142">Historical ECDSA List validation number 142</a>. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#141">Historical ECDSA List validation number 141</a>.</td>
 <td><p>Windows Server 2008 R2 and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#142">#142</a></p>
 <p>Windows 7 Ultimate and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#141">#141</a></p></td>
 </tr>
@@ -3955,7 +3955,7 @@ PKG: CURVES</b>(P-256 P-384 P-521)<br />
 <b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a><br />
 <b>SIG(ver): CURVES</b>(P-256 P-384 P-521)<br />
 <b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#83">Historical ECDSA List validation number 83</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#82">Historical ECDSA List validation number 82</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#83">Historical ECDSA List validation number 83</a>. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#82">Historical ECDSA List validation number 82</a>.</td>
 <td><p>Windows Server 2008 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#83">#83</a></p>
 <p>Windows Vista Ultimate SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#82">#82</a></p></td>
 </tr>
@@ -3967,7 +3967,7 @@ PKG: CURVES</b>(P-256 P-384 P-521)<br />
 <b>SIG(ver): CURVES</b>(P-256 P-384 P-521)<br />
 <b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a><br />
 <b>RNG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#321">validation number  321</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#60">Historical ECDSA List validation number 60</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#60">Historical ECDSA List validation number 60</a>.</td>
 <td>Windows Vista CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#60">#60</a></td>
 </tr>
 </tbody>
@@ -4356,7 +4356,7 @@ SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 <tr class="even">
 <td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a></p>
 <p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="http://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#618">validation number 618</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#618">validation number 618</a></p>
 <p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a></p></td>
 <td>Windows Vista CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#298">#298</a></td>
 </tr>
@@ -5219,7 +5219,7 @@ MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 <tr class="even">
 <td><p><b>CTR_Mode</b>: (Llength(Min0 Max4) MACSupported([HMACSHA1] [HMACSHA256] [HMACSHA512]) LocationCounter([BeforeFixedData]) rlength([32]))</p>
 <p>DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a> HMAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">validation number 1345</a></p></td>
-<td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG) Implementations <a href="http://csrc.nist.gov/groups/stm/cavp/documents/kbkdf800-108/kbkdfval.htm#3">#3</a></td>
+<td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/groups/stm/cavp/documents/kbkdf800-108/kbkdfval.htm#3">#3</a></td>
 </tr>
 </tbody>
 </table>
@@ -6097,7 +6097,7 @@ SIG(Ver) (1024 SHA(1, 256, 384, 512-256)) (2048 SHA(1, 256, 384, 512-256)) (3072
 <b>[RSASSA-PSS]:</b> Sig(Gen): (2048 SHA(256, 384, 512)) (3072 SHA(256, 384, 512))<br />
 Sig(Ver): (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512, 512))<br />
 SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a></p>
-<p>Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1134">Historical RSA List validation number 1134</a>.</p></td>
+<p>Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1134">Historical RSA List validation number 1134</a>.</p></td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1134">#1134</a></td>
 </tr>
 <tr class="odd">
@@ -6112,7 +6112,7 @@ SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a><br />
 <b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>, SHA-<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1132">Historical RSA List validation number 1132</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1132">Historical RSA List validation number 1132</a>.</td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a></td>
 </tr>
 <tr class="odd">
@@ -6121,7 +6121,7 @@ ALG[ANSIX9.31]:</b><br />
 SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a><br />
 <b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1052">Historical RSA List validation number 1052</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1052">Historical RSA List validation number 1052</a>.</td>
 <td>Windows Embedded Compact 7 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1052">#1052</a></td>
 </tr>
 <tr class="even">
@@ -6129,14 +6129,14 @@ Some of the previously validated components for this validation have been remove
 ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">validation number  193</a><br />
 <b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1051">Historical RSA List validation number 1051</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1051">Historical RSA List validation number 1051</a>.</td>
 <td>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1051">#1051</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#568">Historical RSA List validation number 568</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#568">Historical RSA List validation number 568</a>.</td>
 <td>Windows Server 2008 R2 and SP1 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#568">#568</a></td>
 </tr>
 <tr class="even">
@@ -6145,21 +6145,21 @@ ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="http
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>,<br />
 <b>ALG[RSASSA-PSS]:</b> SIG(gen); 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a><br />
 SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#567">Historical RSA List validation number 567</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#560">Historical RSA List validation number 560</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#567">Historical RSA List validation number 567</a>. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#560">Historical RSA List validation number 560</a>.</td>
 <td><p>Windows Server 2008 R2 and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#567">#567</a></p>
 <p>Windows 7 and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#560">#560</a></p></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">validation number  23</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#559">Historical RSA List validation number 559</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#559">Historical RSA List validation number 559</a>.</td>
 <td>Windows 7 and SP1 and Server 2008 R2 and SP1 RSA Key Generation Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#557">Historical RSA List validation number 557</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#557">Historical RSA List validation number 557</a>.</td>
 <td>Windows 7 and SP1 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#557">#557</a></td>
 </tr>
 <tr class="odd">
@@ -6167,7 +6167,7 @@ Some of the previously validated components for this validation have been remove
 ALG[ANSIX9.31]:<br />
 ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#395">Historical RSA List validation number 395</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#395">Historical RSA List validation number 395</a>.</td>
 <td>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#395">#395</a></td>
 </tr>
 <tr class="even">
@@ -6175,7 +6175,7 @@ Some of the previously validated components for this validation have been remove
 ALG[ANSIX9.31]:</b><br />
 SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a><br />
 <b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#371">Historical RSA List validation number 371</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#371">Historical RSA List validation number 371</a>.</td>
 <td>Windows XP Professional SP3 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#371">#371</a></td>
 </tr>
 <tr class="odd">
@@ -6184,7 +6184,7 @@ ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="http
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>,<br />
 <b>ALG[RSASSA-PSS]:</b> SIG(gen); 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a><br />
 SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#358">Historical RSA List validation number 358</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#357">Historical RSA List validation number 357</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#358">Historical RSA List validation number 358</a>. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#357">Historical RSA List validation number 357</a>.</td>
 <td><p>Windows Server 2008 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#358">#358</a></p>
 <p>Windows Vista SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#357">#357</a></p></td>
 </tr>
@@ -6194,20 +6194,20 @@ ALG[ANSIX9.31]:</b><br />
 SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a><br />
 <b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#355">Historical RSA List validation number 355</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#354">Historical RSA List validation number 354</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#355">Historical RSA List validation number 355</a>. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#354">Historical RSA List validation number 354</a>.</td>
 <td><p>Windows Server 2008 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#355">#355</a></p>
 <p>Windows Vista SP1 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#354">#354</a></p></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#353">Historical RSA List validation number 353</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#353">Historical RSA List validation number 353</a>.</td>
 <td>Windows Vista SP1 and Windows Server 2008 RSA Key Generation Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537 RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#321">validation number  321</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#258">Historical RSA List validation number 258</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#258">Historical RSA List validation number 258</a>.</td>
 <td>Windows Vista RSA key generation implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#258">#258</a></td>
 </tr>
 <tr class="odd">
@@ -6216,14 +6216,14 @@ ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="http
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>,<br />
 <b>ALG[RSASSA-PSS]:</b> SIG(gen); 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a><br />
 SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#257">Historical RSA List validation number 257</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#257">Historical RSA List validation number 257</a>.</td>
 <td>Windows Vista CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#257">#257</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#255">Historical RSA List validation number 255</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#255">Historical RSA List validation number 255</a>.</td>
 <td>Windows Vista Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#255">#255</a></td>
 </tr>
 <tr class="odd">
@@ -6232,7 +6232,7 @@ ALG[ANSIX9.31]:</b><br />
 SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a><br />
 <b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#245">Historical RSA List validation number 245</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#245">Historical RSA List validation number 245</a>.</td>
 <td>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#245">#245</a></td>
 </tr>
 <tr class="even">
@@ -6241,7 +6241,7 @@ ALG[ANSIX9.31]:</b><br />
 SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a><br />
 <b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#230">Historical RSA List validation number 230</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#230">Historical RSA List validation number 230</a>.</td>
 <td>Windows CE 6.0 and Windows CE 6.0 R2 and Windows Mobile Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#230">#230</a></td>
 </tr>
 <tr class="odd">
@@ -6249,24 +6249,24 @@ Some of the previously validated components for this validation have been remove
 ALG[ANSIX9.31]:</b><br />
 SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a><br />
 <b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-512<a href="http://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#578">validation number 578</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#222">Historical RSA List validation number 222</a>.</td>
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-512<a href="https://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#578">validation number 578</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#222">Historical RSA List validation number 222</a>.</td>
 <td>Windows CE and Windows Mobile 6 and Windows Mobile 6.1 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#222">#222</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 ALG[RSASSA-PKCS1_V1_5]:</b><br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#364">validation number 364</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#81">Historical RSA List validation number 81</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#81">Historical RSA List validation number 81</a>.</td>
 <td>Windows Server 2003 SP1 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#81">#81</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="http://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#305">validation number 305</a><br />
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#305">validation number 305</a><br />
 <b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#52">Historical RSA List validation number 52</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="https://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#52">Historical RSA List validation number 52</a>.</td>
 <td>Windows CE 5.00 and Windows CE 5.01 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#52">#52</a></td>
 </tr>
 <tr class="even">
@@ -6544,7 +6544,7 @@ Version 6.3.9600</td>
 <tr class="even">
 <td><b>SHA-1</b> (BYTE-only)</td>
 <td><p>Windows XP Microsoft Enhanced Cryptographic Provider <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#83">#83</a></p>
-<p>Crypto Driver for Windows 2000 (fips.sys) <a href="http://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htmlhttp:/csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.html#35">#35</a></p>
+<p>Crypto Driver for Windows 2000 (fips.sys) <a href="https://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htmlhttp:/csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.html#35">#35</a></p>
 <p>Windows 2000 Microsoft Outlook Cryptographic Provider (EXCHCSP.DLL) SR-1A (3821) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#32">#32</a></p>
 <p>Windows 2000 RSAENH.DLL <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#24">#24</a></p>
 <p>Windows 2000 RSABASE.DLL <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#23">#23</a></p>
@@ -6758,7 +6758,7 @@ Version 6.3.9600</td>
 <p>Windows XP Professional SP3 Kernel Mode Cryptographic Module (fips.sys) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#677">#677</a></p>
 <p>Windows XP Professional SP3 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#676">#676</a></p>
 <p>Windows XP Professional SP3 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#675">#675</a></p>
-<p>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/tripledesval.html#544">#544</a></p>
+<p>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/groups/stm/cavp/documents/des/tripledesval.html#544">#544</a></p>
 <p>Windows Server 2003 SP2 Enhanced DSS and Diffie-Hellman Cryptographic Provider <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#543">#543</a></p>
 <p>Windows Server 2003 SP2 Kernel Mode Cryptographic Module (fips.sys) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#542">#542</a></p>
 <p>Windows CE 6.0 and Window CE 6.0 R2 and Windows Mobile Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#526">#526</a></p>
@@ -6780,7 +6780,7 @@ Version 6.3.9600</td>
 
 #### SP 800-132 Password-Based Key Derivation Function (PBKDF)
 
-<table border="1" cellpadding="0" summary="table" xmlns="http://www.w3.org/1999/xhtml">
+<table border="1" cellpadding="0" summary="table" xmlns="https://www.w3.org/1999/xhtml">
   <tr>
     <td>
       <b>Modes / States / Key Sizes</b>
@@ -7343,7 +7343,7 @@ fips@microsoft.com
 
 ## References
 
-* [FIPS 140-2, Security Requirements for Cryptographic Modules](http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf))
-* [Cryptographic Module Validation Program (CMVP) FAQ](http://csrc.nist.gov/groups/stm/cmvp/documents/cmvpfaq.pdf)
+* [FIPS 140-2, Security Requirements for Cryptographic Modules](https://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf))
+* [Cryptographic Module Validation Program (CMVP) FAQ](https://csrc.nist.gov/groups/stm/cmvp/documents/cmvpfaq.pdf)
 * [SP 800-57 - Recommendation for Key Management – Part 1: General (Revised)](https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final)
-* [SP 800-131A - Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths](http://csrc.nist.gov/publications/nistpubs/800-131a/sp800-131a.pdf)
+* [SP 800-131A - Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths](https://csrc.nist.gov/publications/nistpubs/800-131a/sp800-131a.pdf)

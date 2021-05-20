@@ -40,7 +40,7 @@ You will typically see these events with “**Subject\\Security ID**” = “**L
 
 ***Event XML:***
 ```xml
-- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <Event xmlns="https://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
  <EventID>4616</EventID> 
@@ -128,7 +128,7 @@ You will typically see these events with “**Subject\\Security ID**” = “**L
 
 -   D - days
 
--   T - the beginning of the time element, as specified in [ISO 8601](http://www.iso.org/iso/home/standards/iso8601.htm).
+-   T - the beginning of the time element, as specified in [ISO 8601](https://www.iso.org/iso/home/standards/iso8601.htm).
 
 -   h - hours
 
@@ -148,7 +148,7 @@ You will typically see these events with “**Subject\\Security ID**” = “**L
 
 -   D - days
 
--   T - the beginning of the time element, as specified in [ISO 8601](http://www.iso.org/iso/home/standards/iso8601.htm).
+-   T - the beginning of the time element, as specified in [ISO 8601](https://www.iso.org/iso/home/standards/iso8601.htm).
 
 -   h - hours
 

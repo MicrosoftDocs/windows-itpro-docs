@@ -35,7 +35,7 @@ This event generates every time Windows Security audit log was cleared.
 
 ***Event XML:***
 ```
-- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <Event xmlns="https://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Eventlog" Guid="{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}" /> 
  <EventID>1102</EventID> 
@@ -53,7 +53,7 @@ This event generates every time Windows Security audit log was cleared.
  <Security /> 
  </System>
 - <UserData>
-- <LogFileCleared xmlns="http://manifests.microsoft.com/win/2004/08/windows/eventlog">
+- <LogFileCleared xmlns="https://manifests.microsoft.com/win/2004/08/windows/eventlog">
  <SubjectUserSid>S-1-5-21-3457937927-2839227994-823803824-1104</SubjectUserSid> 
  <SubjectUserName>dadmin</SubjectUserName> 
  <SubjectDomainName>CONTOSO</SubjectDomainName> 

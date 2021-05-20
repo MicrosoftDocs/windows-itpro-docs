@@ -54,7 +54,7 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 
 - TPM 2.0 **enables greater crypto agility** by being more flexible with respect to cryptographic algorithms.
 
-  - TPM 2.0 supports newer algorithms, which can improve drive signing and key generation performance. For the full list of supported algorithms, see the [TCG Algorithm Registry](http://www.trustedcomputinggroup.org/tcg-algorithm-registry/). Some TPMs do not support all algorithms.
+  - TPM 2.0 supports newer algorithms, which can improve drive signing and key generation performance. For the full list of supported algorithms, see the [TCG Algorithm Registry](https://www.trustedcomputinggroup.org/tcg-algorithm-registry/). Some TPMs do not support all algorithms.
 
   - For the list of algorithms that Windows supports in the platform cryptographic storage provider, see [CNG Cryptographic Algorithm Providers](/windows/win32/seccertenroll/cng-cryptographic-algorithm-providers).
 

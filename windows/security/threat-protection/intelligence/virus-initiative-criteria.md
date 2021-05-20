@@ -53,10 +53,10 @@ AV-Comparatives | Real-World Protection Test </br> https://www.av-comparatives.o
 AV-Test | Must pass tests for Windows. Certifications for Mac and Linux aren't accepted </br> https://www.av-test.org/en/about-the-institute/certification/ | Achieve "AV-TEST Certified" (for home users) or "AV-TEST Approved” (for corporate users)
 ICSA Labs |	Endpoint Anti-Malware Detection </br> https://www.icsalabs.com/technology-program/anti-virus/criteria |PASS/Certified
 NSS Labs | Advanced Endpoint Protection AEP 3.0, which covers automatic threat prevention and threat event reporting capabilities </br> https://www.nsslabs.com/tested-technologies/advanced-endpoint-protection/ |“Neutral” rating from NSS
-SKD Labs | Certification Requirements Product: Anti-virus or Antimalware </br> http://www.skdlabs.com/html/english/ </br> http://www.skdlabs.com/cert/ |SKD Labs Star Check Certification Requirements Pass >= 98.5% with On Demand, On Access and Total Detection tests 
+SKD Labs | Certification Requirements Product: Anti-virus or Antimalware </br> https://www.skdlabs.com/html/english/ </br> https://www.skdlabs.com/cert/ |SKD Labs Star Check Certification Requirements Pass >= 98.5% with On Demand, On Access and Total Detection tests 
 SE Labs | Protection A rating or Small Business EP A rating or Enterprise EP Protection A rating </br> https://selabs.uk/en/reports/consumers |Home or Enterprise “A” rating
 VB 100 |	VB100 Certification Test V1.1 </br> https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/ | VB100 Certification
-West Coast Labs |	Checkmark Certified </br> http://www.checkmarkcertified.com/sme/  | “A” Rating on Product Security Performance
+West Coast Labs |	Checkmark Certified </br> https://www.checkmarkcertified.com/sme/  | “A” Rating on Product Security Performance
 
 ## Apply now
 

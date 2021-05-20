@@ -41,7 +41,7 @@ You can see these events, for example, during certificate renewal or export oper
 
 ***Event XML:***
 ```
-- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <Event xmlns="https://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
  <EventID>5058</EventID> 

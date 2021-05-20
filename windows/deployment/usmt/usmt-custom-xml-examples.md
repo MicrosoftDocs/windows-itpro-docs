@@ -38,7 +38,7 @@ Because the tables in this topic are wide, you may need to adjust the width of i
 The following is a template for the sections that you need to migrate your application. The template is not functional on its own, but you can use it to write your own .xml file.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migtestapp">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/migtestapp">
   <component type="Application">
     <!-- Name of the application -->
     <displayName>Some Application</displayName>
@@ -137,7 +137,7 @@ The following is a custom .xml file named CustomFile.xml that migrates My Videos
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/CustomFile">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/CustomFile">
 <component type="Documents" context="User">
         <displayName>My Video</displayName>
         <role role="Data">
@@ -197,7 +197,7 @@ This table describes the behavior in the following example .xml file.
  
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
   <component type="Application" context="System">
    <displayName>File Migration Test</displayName>
    <role role="Data">
@@ -233,7 +233,7 @@ This table describes the behavior in the following example .xml file.
 The behavior for this custom .xml file is described within the &lt;`displayName`&gt; tags in the code.
 
 ``` xml
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
+<migration urlid="https://www.microsoft.com/migration/1.0/migxmlext/test">
 
 <component type="Documents" context="System">
   <displayName>Component to migrate all Engineering Drafts subfolders without documents in this folder </displayName>

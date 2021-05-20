@@ -40,7 +40,7 @@ The most common TPM functions are used for system integrity measurements and for
 
 TPM-based keys can be configured in a variety of ways. One option is to make a TPM-based key unavailable outside the TPM. This is good to mitigate phishing attacks because it prevents the key from being copied and used without the TPM. TPM-based keys can also be configured to require an authorization value to use them. If too many incorrect authorization guesses occur, the TPM will activate its dictionary attack logic and prevent further authorization value guesses.
 
-Different versions of the TPM are defined in specifications by the Trusted Computing Group (TCG). For more information, consult the [TCG Web site](http://www.trustedcomputinggroup.org/work-groups/trusted-platform-module/).
+Different versions of the TPM are defined in specifications by the Trusted Computing Group (TCG). For more information, consult the [TCG Web site](https://www.trustedcomputinggroup.org/work-groups/trusted-platform-module/).
 
 ### Automatic initialization of the TPM with Windows 10
 

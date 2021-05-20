@@ -538,7 +538,7 @@ USMTMigFiles001=MigApp.xml
 USMTMigFiles002=MigUser.xml
 HideShell=YES
 ApplyGPOPack=NO
-WSUSServer=http://mdt01.contoso.com:8530
+WSUSServer=https://mdt01.contoso.com:8530
 SkipAppsOnUpgrade=NO
 SkipAdminPassword=YES
 SkipProductKey=YES
@@ -553,7 +553,7 @@ SkipBitLocker=YES
 SkipSummary=YES
 SkipCapture=YES
 SkipFinalSummary=NO
-EventService=http://MDT01:9800
+EventService=https://MDT01:9800
 ```
 
 Some properties to use in the MDT Production rules file are as follows:

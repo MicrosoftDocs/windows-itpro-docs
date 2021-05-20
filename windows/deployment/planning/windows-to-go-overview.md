@@ -92,21 +92,21 @@ As of the date of publication, the following are the USB drives currently certif
 > [!WARNING]
 > Using a USB drive that has not been certified is not supported.
 
-- IronKey Workspace W700 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w700.html](https://www.kingston.com/support/technical/products?model=dtws))
-- IronKey Workspace W500 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w500.html](https://www.kingston.com/support/technical/products?model=dtws))
-- IronKey Workspace W300 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w300.html](https://www.kingston.com/support/technical/products?model=dtws))
-- Kingston DataTraveler Workspace for Windows To Go ([http://www.kingston.com/wtg/](https://go.microsoft.com/fwlink/p/?LinkId=618719))
-- Spyrus Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
+- IronKey Workspace W700 ([https://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w700.html](https://www.kingston.com/support/technical/products?model=dtws))
+- IronKey Workspace W500 ([https://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w500.html](https://www.kingston.com/support/technical/products?model=dtws))
+- IronKey Workspace W300 ([https://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w300.html](https://www.kingston.com/support/technical/products?model=dtws))
+- Kingston DataTraveler Workspace for Windows To Go ([https://www.kingston.com/wtg/](https://go.microsoft.com/fwlink/p/?LinkId=618719))
+- Spyrus Portable Workplace ([https://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
     We recommend that you run the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Portable Workplace.
 
-- Spyrus Secure Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
+- Spyrus Secure Portable Workplace ([https://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
     > [!IMPORTANT]
-    > You must use the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Secure Portable Workplace. For more information about the Spyrus Deployment Suite for Windows To Go please refer to [http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720).
+    > You must use the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Secure Portable Workplace. For more information about the Spyrus Deployment Suite for Windows To Go please refer to [https://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720).
 
 
-- Spyrus Worksafe ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
+- Spyrus Worksafe ([https://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
     > [!TIP]
     > This device contains an embedded smart card.
@@ -119,11 +119,11 @@ As of the date of publication, the following are the USB drives currently certif
 
     Super Talent Express RC8 for Windows To Go
 
-    ([http://www.supertalent.com/wtg/](https://go.microsoft.com/fwlink/p/?LinkId=618721))
+    ([https://www.supertalent.com/wtg/](https://go.microsoft.com/fwlink/p/?LinkId=618721))
 
--   Western Digital My Passport Enterprise ([http://www.wd.com/wtg](https://go.microsoft.com/fwlink/p/?LinkId=618722))
+-   Western Digital My Passport Enterprise ([https://www.wd.com/wtg](https://go.microsoft.com/fwlink/p/?LinkId=618722))
 
-    We recommend that you run the WD Compass utility to prepare the Western Digital My Passport Enterprise drive for provisioning with Windows To Go.  For more information about the WD Compass utility please refer to [http://www.wd.com/wtg](https://go.microsoft.com/fwlink/p/?LinkId=618722)
+    We recommend that you run the WD Compass utility to prepare the Western Digital My Passport Enterprise drive for provisioning with Windows To Go.  For more information about the WD Compass utility please refer to [https://www.wd.com/wtg](https://go.microsoft.com/fwlink/p/?LinkId=618722)
 
 **For host computers**
 

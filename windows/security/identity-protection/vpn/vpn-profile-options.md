@@ -68,17 +68,17 @@ The following is a sample Native VPN profile. This blob would fall under the Pro
       <UserMethod>Eap</UserMethod> 
       <Eap>  
        <Configuration>
-          <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
+          <EapHostConfig xmlns="https://www.microsoft.com/provisioning/EapHostConfig">
             <EapMethod>
-              <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">25</Type>
-              <VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId>
-              <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
-              <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
+              <Type xmlns="https://www.microsoft.com/provisioning/EapCommon">25</Type>
+              <VendorId xmlns="https://www.microsoft.com/provisioning/EapCommon">0</VendorId>
+              <VendorType xmlns="https://www.microsoft.com/provisioning/EapCommon">0</VendorType>
+              <AuthorId xmlns="https://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
             </EapMethod>
-            <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
-              <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+            <Config xmlns="https://www.microsoft.com/provisioning/EapHostConfig">
+              <Eap xmlns="https://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
                 <Type>25</Type>
-                <EapType xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1">
+                <EapType xmlns="https://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1">
                   <ServerValidation>
                     <DisableUserPromptForServerValidation>true</DisableUserPromptForServerValidation>
                     <ServerNames></ServerNames>
@@ -87,9 +87,9 @@ The following is a sample Native VPN profile. This blob would fall under the Pro
                   </ServerValidation>
                   <FastReconnect>true</FastReconnect>
                   <InnerEapOptional>false</InnerEapOptional>
-                  <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+                  <Eap xmlns="https://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
                     <Type>13</Type>
-                    <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
+                    <EapType xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
                       <CredentialsSource>
                         <CertificateStore>
                           <SimpleCertSelection>true</SimpleCertSelection>
@@ -102,10 +102,10 @@ The following is a sample Native VPN profile. This blob would fall under the Pro
                         <TrustedRootCA>d1 76 97 cc 20 6e d2 6e 1a 51 f5 bb 96 e9 35 6d 6d 61 0b 74 </TrustedRootCA>
                       </ServerValidation>
                       <DifferentUsername>false</DifferentUsername>
-                      <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</PerformServerValidation>
-                      <AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName>
-                      <TLSExtensions xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">
-                        <FilteringInfo xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV3">
+                      <PerformServerValidation xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</PerformServerValidation>
+                      <AcceptServerName xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName>
+                      <TLSExtensions xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">
+                        <FilteringInfo xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV3">
                           <EKUMapping>
                             <EKUMap>
                               <EKUName>AAD Conditional Access</EKUName>
@@ -124,8 +124,8 @@ The following is a sample Native VPN profile. This blob would fall under the Pro
                   <EnableQuarantineChecks>false</EnableQuarantineChecks>
                   <RequireCryptoBinding>true</RequireCryptoBinding>
                   <PeapExtensions>
-                    <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">true</PerformServerValidation>
-                    <AcceptServerName xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName>
+                    <PerformServerValidation xmlns="https://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">true</PerformServerValidation>
+                    <AcceptServerName xmlns="https://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName>
                   </PeapExtensions>
                 </EapType>
               </Eap>

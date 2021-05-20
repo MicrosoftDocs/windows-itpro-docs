@@ -58,9 +58,9 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C0011 | The attestation statement of the transport key is invalid.         | Sign out and then sign in again. |
 | 0x801C0012 | Discovery request is not in a valid format.                        | Sign out and then sign in again. |
 | 0x801C0015 | The device is required to be joined to an Active Directory domain. | ​Join the device to an Active Directory domain. |
-| 0x801C0016 | The federation provider configuration is empty                     | Go to http://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the file is not empty. |
-| 0x801C0017 | ​The federation provider domain is empty                            | Go to http://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the FPDOMAINNAME element is not empty. |
-| 0x801C0018 | The federation provider client configuration URL is empty          | Go to http://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the CLIENTCONFIG element contains a valid URL. |
+| 0x801C0016 | The federation provider configuration is empty                     | Go to https://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the file is not empty. |
+| 0x801C0017 | ​The federation provider domain is empty                            | Go to https://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the FPDOMAINNAME element is not empty. |
+| 0x801C0018 | The federation provider client configuration URL is empty          | Go to https://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the CLIENTCONFIG element contains a valid URL. |
 | 0x801C03E9 | Server response message is invalid                                 | Sign out and then sign in again. |
 | 0x801C03EA | Server failed to authorize user or device.                         | Check if the token is valid and user has permission to register Windows Hello for Business keys. |
 | 0x801C03EB | Server response http status is not valid                           | Sign out and then sign in again. |

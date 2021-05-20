@@ -452,7 +452,7 @@ Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-cod
 
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/windows/deployment/upgrade/setupdiag">
+<SetupDiag xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/windows/deployment/upgrade/setupdiag">
   <Version>1.6.0.0</Version>
   <ProfileName>FindSPFatalError</ProfileName>
   <ProfileGuid>A4028172-1B09-48F8-AD3B-86CDD7D55852</ProfileGuid>

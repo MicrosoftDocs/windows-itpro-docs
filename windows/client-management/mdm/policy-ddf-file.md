@@ -38,9 +38,9 @@ The XML below is the DDF for Windows 10, version 20H2.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
-  "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
+  "https://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
   [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
-<MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
+<MgmtTree xmlns:MSFT="https://schemas.microsoft.com/MobileDevice/DM">
   <VerDTD>1.2</VerDTD>
   <Node>
     <NodeName>Policy</NodeName>
@@ -51379,7 +51379,7 @@ Note: The first sign-in animation will not be shown on Server, so this policy wi
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema">
   <xs:simpleType name="recurrence" final="restriction">
     <xs:restriction base="xs:string">
         <xs:enumeration value="None" />
@@ -59698,7 +59698,7 @@ Related policy:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema">
                 <xs:simpleType name="hours">
                     <xs:restriction base="xs:integer">
                         <xs:minInclusive value="0"/>
@@ -59757,7 +59757,7 @@ Related policy:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema">
                 <xs:simpleType name="hours">
                     <xs:restriction base="xs:integer">
                         <xs:minInclusive value="0"/>
@@ -71153,7 +71153,7 @@ The options are:
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" version="1.0">
                           <xs:simpleType name="name">
                             <xs:restriction base="xs:string">
                               <xs:maxLength value="255" />
@@ -76504,7 +76504,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" version="1.0">
                         <xs:simpleType name="member_name">
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />

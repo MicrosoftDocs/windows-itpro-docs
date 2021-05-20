@@ -42,7 +42,7 @@ The following example shows how apps will be pinned: Windows default apps to the
    * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from [the following sample](#sample-taskbar-configuration-added-to-start-layout-xml-file) to the file.
    * If you are only configuring the taskbar, use [the following sample](#sample-taskbar-configuration-xml-file) to create a layout modification XML file.
 2. Edit and save the XML file. You can use [AUMID](./find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path to identify the apps to pin to the taskbar.
-   * Add `xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"` to the first line of the file, before the closing \>.
+   * Add `xmlns:taskbar="https://schemas.microsoft.com/Start/2014/TaskbarLayout"` to the first line of the file, before the closing \>.
    * Use `<taskbar:UWA>` and [AUMID](./find-the-application-user-model-id-of-an-installed-app.md) to pin Universal Windows Platform apps.
    * Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications. 
 3. Apply the layout modification XML file to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
@@ -69,10 +69,10 @@ The easiest way to find this data for an application is to:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="https://schemas.microsoft.com/Start/2014/TaskbarLayout"
     Version="1">
   <CustomTaskbarLayoutCollection>
     <defaultlayout:TaskbarLayout>
@@ -89,16 +89,16 @@ The easiest way to find this data for an application is to:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="https://schemas.microsoft.com/Start/2014/TaskbarLayout"
     Version="1">
   <LayoutOptions StartTileGroupCellWidth="6" StartTileGroupsColumnCount="1" />
   <DefaultLayoutOverride>
     <StartLayoutCollection>
-      <defaultlayout:StartLayout GroupCellWidth="6" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout">
-        <start:Group Name="Life at a glance" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
+      <defaultlayout:StartLayout GroupCellWidth="6" xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout">
+        <start:Group Name="Life at a glance" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout">
           <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
           <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI" />
           <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
@@ -124,10 +124,10 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="https://schemas.microsoft.com/Start/2014/TaskbarLayout"
     Version="1">
   <CustomTaskbarLayoutCollection>
     <defaultlayout:TaskbarLayout>
@@ -157,10 +157,10 @@ If you only want to remove some of the default pinned apps, you would use this m
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="https://schemas.microsoft.com/Start/2014/TaskbarLayout"
     Version="1">
   <CustomTaskbarLayoutCollection PinListPlacement="Replace">
     <defaultlayout:TaskbarLayout>
@@ -189,10 +189,10 @@ By adding `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`, you
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="https://schemas.microsoft.com/Start/2014/TaskbarLayout"
     Version="1">
   <CustomTaskbarLayoutCollection PinListPlacement="Replace">
     <defaultlayout:TaskbarLayout>
@@ -211,10 +211,10 @@ The following example shows you how to configure taskbars by country or region. 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="https://schemas.microsoft.com/Start/2014/TaskbarLayout"
     Version="1">
 
   <CustomTaskbarLayoutCollection PinListPlacement="Replace">
@@ -271,9 +271,9 @@ The resulting taskbar for computers in any other country region:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            xmlns:local="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
-            targetNamespace="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+<xsd:schema xmlns:xsd="https://www.w3.org/2001/XMLSchema"
+            xmlns:local="https://schemas.microsoft.com/Start/2014/TaskbarLayout"
+            targetNamespace="https://schemas.microsoft.com/Start/2014/TaskbarLayout"
             elementFormDefault="qualified">
 
   <xsd:complexType name="ct_PinnedUWA">

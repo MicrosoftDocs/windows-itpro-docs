@@ -256,7 +256,7 @@ To troubleshoot Name/SID lookup APIs:
     ```
 
 ```xml
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" version="1.0">
                           <xs:simpleType name="name">
                             <xs:restriction base="xs:string">
                               <xs:maxLength value="255" />

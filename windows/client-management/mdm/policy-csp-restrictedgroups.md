@@ -90,7 +90,7 @@ For example, you can create a Restricted Groups policy to allow only specified u
 Starting in Windows 10, version 1809, you can use this schema for retrieval and application of the RestrictedGroups/ConfigureGroupMembership policy. A minimum occurrence of zero members when applying the policy implies clearing the access group and should be used with caution.
 
 ```xml
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">  
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" version="1.0">  
   <xs:simpleType name="member_name">
     <xs:restriction base="xs:string">
       <xs:maxLength value="255" />

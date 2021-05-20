@@ -76,7 +76,7 @@ The following is an example of a Dynamic User Configuration file's header:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<UserConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration">
+<UserConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="https://schemas.microsoft.com/appv/2010/userconfiguration">
 ```
 
 The **PackageId** is the same value that exists in the Manifest file.
@@ -88,7 +88,7 @@ The Dynamic User Configuration file's body can include all app extension points 
 **Applications**: All app-extensions contained in the Manifest file within a package are assigned with an Application ID, which is also defined in the manifest file. This allows you to enable or disable all the extensions for a given application within a package. The **Application ID** must exist in the Manifest file or it will be ignored.
 
 ```xml
-    <UserConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration">
+    <UserConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="https://schemas.microsoft.com/appv/2010/userconfiguration">
     <Applications>
     <!-- No new application can be defined in policy. AppV Client will ignore any application ID that is not also in the Manifest file -->
     <Application Id="{a56fa627-c35f-4a01-9e79-7d36aed8225a}" Enabled="false">
@@ -101,7 +101,7 @@ The Dynamic User Configuration file's body can include all app extension points 
 **Subsystems**: AppExtensions and other subsystems are arranged as subnodes under `<Subsystems>`, as shown in the following example.
 
 ```xml
-    <UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/userconfiguration">
+    <UserConfiguration **PackageId**="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="https://schemas.microsoft.com/appv/2010/userconfiguration">
     <Subsystems>
     ..
     </Subsystems>
@@ -403,7 +403,7 @@ Scripts can be used to set up or alter the virtual environment and execute scrip
 The header of a Deployment Configuration file should look something like this:
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?><DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
+<?xml version="1.0" encoding="utf-8"?><DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="https://schemas.microsoft.com/appv/2010/deploymentconfiguration">
 ```
 
 The **PackageId** is the same value as the one that exists in the Manifest file.
@@ -416,7 +416,7 @@ The body of the deployment configuration file includes two sections:
 - The Machine Configuration section contains information that can only  be configured for an entire machine, not for a specific user on the machine. For example, HKEY\_LOCAL\_MACHINE registry keys in the VFS.
 
 ```xml
-<DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration">
+<DeploymentConfiguration PackageId="1f8488bf-2257-46b4-b27f-09c9dbaae707" DisplayName="Reserved" xmlns="https://schemas.microsoft.com/appv/2010/deploymentconfiguration">
 <UserConfiguration>
 ..
 </UserConfiguration>

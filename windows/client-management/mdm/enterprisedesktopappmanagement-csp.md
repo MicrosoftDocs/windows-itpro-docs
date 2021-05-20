@@ -231,7 +231,7 @@ The following table describes the fields in the previous sample:
               <Download>
                 <ContentURLList>
                   <ContentURL>
-                    http://bcl-w2k12r2-vm/testapps/msi/reboot/reboot.msi
+                    https://bcl-w2k12r2-vm/testapps/msi/reboot/reboot.msi
                   </ContentURL>
                   <ContentURL>https://dp2.com/packages/myApp.msi</ContentURL>
                 </ContentURLList>
@@ -325,7 +325,7 @@ The following table describes the fields in the previous sample:
             <Product Version="1.0.0">
               <Download>
                 <ContentURLList>
-                  <ContentURL>http://bcl-w2k12r2-vm/testapps/msi/Orca/Orca.msi</ContentURL>
+                  <ContentURL>https://bcl-w2k12r2-vm/testapps/msi/Orca/Orca.msi</ContentURL>
                   <ContentURL>https://dp2.com/packages/myApp.msi</ContentURL>
                 </ContentURLList>
               </Download>

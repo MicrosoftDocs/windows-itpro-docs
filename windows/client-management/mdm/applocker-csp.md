@@ -904,7 +904,7 @@ The following example disables the calendar application.
                     <Format xmlns="syncml:metinf">chr</Format>
                     <Type xmlns="syncml:metinf">text/plain</Type>
                 </Meta>
-                <Data><AppPolicy Version="1" xmlns="http://schemas.microsoft.com/phone/2013/policy"><Deny><App ProductId="{a558feba-85d7-4665-b5d8-a2ff9c19799b}"/></Deny></AppPolicy>
+                <Data><AppPolicy Version="1" xmlns="https://schemas.microsoft.com/phone/2013/policy"><Deny><App ProductId="{a558feba-85d7-4665-b5d8-a2ff9c19799b}"/></Deny></AppPolicy>
                 </Data>
             </Item>
         </Add>

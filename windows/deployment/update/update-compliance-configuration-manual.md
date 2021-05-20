@@ -73,7 +73,7 @@ To enable data sharing between devices, your network, and Microsoft's Diagnostic
 | `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1803 and later. Census.exe must run on a regular cadence and contact this endpoint in order to receive the majority of [WaaSUpdateStatus](update-compliance-schema-waasupdatestatus.md) information for Update Compliance. |
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1709 or earlier. |
 | `https://settings-win.data.microsoft.com` | Required for Windows Update functionality. |
-| `http://adl.windows.com` | Required for Windows Update functionality. |
+| `https://adl.windows.com` | Required for Windows Update functionality. |
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER), used to provide more advanced error reporting if certain Feature Update deployment failures occur. |
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis, used to provide device-specific recommendations and detailed errors in the event of certain crashes. |
 | `https://login.live.com` | This endpoint facilitates MSA access and is required to create the primary identifier we use for devices. Without this service, devices will not be visible in the solution. The Microsoft Account Sign-in Assistant service must also be running (wlidsvc). |

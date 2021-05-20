@@ -192,7 +192,7 @@ For the report XML schema, see [Windows Error Reporting connection report](#wind
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" >
     <xs:annotation>
         <xs:documentation>CSP schema for the Compatibility Appraiser Diagnostic CSP.</xs:documentation>
         <xs:documentation>Schema defining the Win32CompatibilityAppraiser\CompatibilityAppraiser\AppraiserRunResultReport CSP node.</xs:documentation>
@@ -364,7 +364,7 @@ For the report XML schema, see [Windows Error Reporting connection report](#wind
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fusion="urn:schemas-microsoft-com:asm.v1" elementFormDefault="qualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" xmlns:fusion="urn:schemas-microsoft-com:asm.v1" elementFormDefault="qualified" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" >
     <xs:annotation>
         <xs:documentation>CSP schema for the Compatibility Appraiser Diagnostic CSP.</xs:documentation>
         <xs:documentation>Schema defining the Win32CompatibilityAppraiser\UniversalTelemetryClient\UtcConnectionReport CSP node.</xs:documentation>
@@ -442,7 +442,7 @@ For the report XML schema, see [Windows Error Reporting connection report](#wind
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fusion="urn:schemas-microsoft-com:asm.v1" elementFormDefault="qualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" xmlns:fusion="urn:schemas-microsoft-com:asm.v1" elementFormDefault="qualified" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" >
     <xs:annotation>
         <xs:documentation>CSP schema for the Compatibility Appraiser Diagnostic CSP.</xs:documentation>
         <xs:documentation>Schema defining the Win32CompatibilityAppraiser\WindowsErrorReporting\WerConnectionReport CSP node.</xs:documentation>

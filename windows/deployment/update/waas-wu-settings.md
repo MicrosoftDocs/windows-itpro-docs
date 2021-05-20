@@ -242,11 +242,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
 
 * WUServer (REG_SZ)
 
-  This value sets the WSUS server by HTTP name (for example, http://IntranetSUS).
+  This value sets the WSUS server by HTTP name (for example, https://IntranetSUS).
 
 *  WUStatusServer (REG_SZ)
 
-   This value sets the SUS statistics server by HTTP name (for example, http://IntranetSUS).
+   This value sets the SUS statistics server by HTTP name (for example, https://IntranetSUS).
 
 ## Related topics
 

@@ -51,10 +51,10 @@ sections:
           - For some devices, Windows 10 may be unable to install drivers that are required for operation. If your device drivers are not automatically installed, visit the manufacturer’s support website for your device to download and manually install the drivers. If Windows 10 drivers are not available, the most up-to-date drivers for Windows 8.1 will often work in Windows 10.
           - For some devices, the manufacturer may provide more up-to-date drivers or drivers that enable additional functionality than the drivers installed by Windows 10. Always follow the recommendations of the device manufacturer for optimal performance and stability.
           - Some computer manufacturers provide packs of drivers for easy implementation in management and deployment solutions like the Microsoft Deployment Toolkit (MDT) or Microsoft Endpoint Configuration Manager. These driver packs contain all of the drivers needed for each device and can greatly simplify the process of deploying Windows to a new make or model of computer. Driver packs for some common manufacturers include:
-              - [HP driver pack](http://www8.hp.com/us/en/ads/clientmanagement/drivers-pack.html)
-              - [Dell driver packs for enterprise client OS deployment](http://en.community.dell.com/techcenter/enterprise-client/w/wiki/2065.dell-command-deploy-driver-packs-for-enterprise-client-os-deployment)
+              - [HP driver pack](https://www8.hp.com/us/en/ads/clientmanagement/drivers-pack.html)
+              - [Dell driver packs for enterprise client OS deployment](https://en.community.dell.com/techcenter/enterprise-client/w/wiki/2065.dell-command-deploy-driver-packs-for-enterprise-client-os-deployment)
               - [Lenovo Configuration Manager and MDT package index](https://support.lenovo.com/us/en/documents/ht074984)
-              - [Panasonic Driver Pack for Enterprise](http://pc-dl.panasonic.co.jp/itn/drivers/driver_packages.html)
+              - [Panasonic Driver Pack for Enterprise](https://pc-dl.panasonic.co.jp/itn/drivers/driver_packages.html)
           
       - question: |
           Where can I find out if an application or device is compatible with Windows 10?
@@ -138,7 +138,7 @@ sections:
           The desktop experience in Windows 10 has been improved to provide a better experience for people that use a traditional mouse and keyboard. Key changes include:
           - Start menu is a launching point for access to apps.
           - Universal apps now open in windows instead of full screen.
-          - [Multitasking is improved with adjustable Snap](http://blogs.windows.com/bloggingwindows/2015/06/04/arrange-your-windows-in-a-snap/), which allows you to have more than two windows side-by-side on the same screen and to customize how those windows are arranged.
+          - [Multitasking is improved with adjustable Snap](https://blogs.windows.com/bloggingwindows/2015/06/04/arrange-your-windows-in-a-snap/), which allows you to have more than two windows side-by-side on the same screen and to customize how those windows are arranged.
           - Tablet Mode to simplify using Windows with a finger or pen by using touch input.
           
   - name: Help and support

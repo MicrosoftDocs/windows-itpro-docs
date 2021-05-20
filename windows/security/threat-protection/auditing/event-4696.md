@@ -37,7 +37,7 @@ This event generates every time a process runs using the non-current access toke
 
 ***Event XML:***
 ```
-- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <Event xmlns="https://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
  <EventID>4696</EventID> 

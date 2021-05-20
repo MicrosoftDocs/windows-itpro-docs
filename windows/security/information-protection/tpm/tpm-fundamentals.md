@@ -34,7 +34,7 @@ Computers that incorporate a TPM can also create a key that has not only been wr
 
 With a TPM, private portions of key pairs are kept separate from the memory that is controlled by the operating system. Keys can be sealed to the TPM, and certain assurances about the state of a system (assurances that define the trustworthiness of a system) can be made before the keys are unsealed and released for use. Because the TPM uses its own internal firmware and logic circuits to process instructions, it does not rely on the operating system, and it is not exposed to vulnerabilities that might exist in the operating system or application software.
 
-For info about which versions of Windows support which versions of the TPM, see [Trusted Platform Module technology overview](trusted-platform-module-overview.md). The features that are available in the versions are defined in specifications by the Trusted Computing Group (TCG). For more info, see the Trusted Platform Module page on the Trusted Computing Group website: [Trusted Platform Module](http://www.trustedcomputinggroup.org/developers/trusted_platform_module).
+For info about which versions of Windows support which versions of the TPM, see [Trusted Platform Module technology overview](trusted-platform-module-overview.md). The features that are available in the versions are defined in specifications by the Trusted Computing Group (TCG). For more info, see the Trusted Platform Module page on the Trusted Computing Group website: [Trusted Platform Module](https://www.trustedcomputinggroup.org/developers/trusted_platform_module).
 
 The following sections provide an overview of the technologies that support the TPM:
 

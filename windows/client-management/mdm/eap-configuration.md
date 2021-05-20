@@ -91,17 +91,17 @@ To get the EAP configuration from your desktop using the rasphone tool that is s
     Here is an example output.
 
     ```xml
-    <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://www.microsoft.co
-    m/provisioning/EapCommon">13</Type><VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId><VendorTy
-    pe xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType><AuthorId xmlns="http://www.microsoft.com/provisi
-    oning/EapCommon">0</AuthorId></EapMethod><Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><Eap xmlns="h
-    ttp://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>13</Type><EapType xmlns="http://www.microsoft.co
+    <EapHostConfig xmlns="https://www.microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="https://www.microsoft.co
+    m/provisioning/EapCommon">13</Type><VendorId xmlns="https://www.microsoft.com/provisioning/EapCommon">0</VendorId><VendorTy
+    pe xmlns="https://www.microsoft.com/provisioning/EapCommon">0</VendorType><AuthorId xmlns="https://www.microsoft.com/provisi
+    oning/EapCommon">0</AuthorId></EapMethod><Config xmlns="https://www.microsoft.com/provisioning/EapHostConfig"><Eap xmlns="h
+    ttp://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>13</Type><EapType xmlns="https://www.microsoft.co
     m/provisioning/EapTlsConnectionPropertiesV1"><CredentialsSource><CertificateStore><SimpleCertSelection>true</SimpleCertSel
     ection></CertificateStore></CredentialsSource><ServerValidation><DisableUserPromptForServerValidation>false</DisableUserPr
     omptForServerValidation><ServerNames></ServerNames></ServerValidation><DifferentUsername>false</DifferentUsername><Perform
-    ServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</PerformServerValidation>
-    <AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</AcceptServerName><TLSEx
-    tensions xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2"><FilteringInfo xmlns="http://www.micro
+    ServerValidation xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</PerformServerValidation>
+    <AcceptServerName xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</AcceptServerName><TLSEx
+    tensions xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2"><FilteringInfo xmlns="https://www.micro
     soft.com/provisioning/EapTlsConnectionPropertiesV3"><ClientAuthEKUList Enabled="true" /><AnyPurposeEKUList Enabled="true"
     /></FilteringInfo></TLSExtensions></EapType></Eap></Config></EapHostConfig>
     ```
@@ -134,7 +134,7 @@ For information about EAP settings, see <https://technet.microsoft.com/library/h
 
 For information about generating an EAP XML, see the EAP configuration article.
 
-For more information about extended key usage (EKU), see <http://tools.ietf.org/html/rfc5280#section-4.2.1.12>.
+For more information about extended key usage (EKU), see <https://tools.ietf.org/html/rfc5280#section-4.2.1.12>.
 
 For information about adding EKU to a certificate, see <https://technet.microsoft.com/library/cc731792.aspx>.
 
@@ -159,22 +159,22 @@ The following XML sample explains the properties for the EAP TLS XML, including 
  
 
 ```xml
-<EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
+<EapHostConfig xmlns="https://www.microsoft.com/provisioning/EapHostConfig">
  <EapMethod>
-  <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">13</Type>
+  <Type xmlns="https://www.microsoft.com/provisioning/EapCommon">13</Type>
   <!--The above property defines the Method type for EAP, 13 means EAP TLS -->
 
-  <VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId>
-  <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
-  <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
+  <VendorId xmlns="https://www.microsoft.com/provisioning/EapCommon">0</VendorId>
+  <VendorType xmlns="https://www.microsoft.com/provisioning/EapCommon">0</VendorType>
+  <AuthorId xmlns="https://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
   <!--The 3 properties above define the method publishers, this is seen primarily in 3rd party Vendor methods.-->
   <!-- For Microsoft EAP TLS the value of the above fields will always be 0 --> 
  </EapMethod>
  <!-- Now that the EAP Method is Defined we will go into the Configuration --> 
- <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
-  <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+ <Config xmlns="https://www.microsoft.com/provisioning/EapHostConfig">
+  <Eap xmlns="https://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
    <Type>13</Type>
-   <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
+   <EapType xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
     <CredentialsSource>
      <!-- Credential Source can be either CertificateStore or SmartCard --> 
      <CertificateStore>
@@ -189,11 +189,11 @@ The following XML sample explains the properties for the EAP TLS XML, including 
      <ServerNames/>
     </ServerValidation>
     <DifferentUsername>false</DifferentUsername>
-    <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</PerformServerValidation>
-    <AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName>
-    <TLSExtensions xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">
+    <PerformServerValidation xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</PerformServerValidation>
+    <AcceptServerName xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName>
+    <TLSExtensions xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">
      <!-- For filtering the relevant information is below -->
-     <FilteringInfo xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV3">
+     <FilteringInfo xmlns="https://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV3">
       <CAHashList Enabled="true">
        <!-- The above implies that you want to filter by Issuer Hash -->
        <IssuerHash>ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff

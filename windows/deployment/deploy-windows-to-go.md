@@ -169,8 +169,8 @@ W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
     <unattend xmlns="urn:schemas-microsoft-com:unattend">
       <settings pass="offlineServicing">
         <component
-            xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State"
+            xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
             language="neutral"
             name="Microsoft-Windows-PartitionManager"
             processorArchitecture="x86"
@@ -180,8 +180,8 @@ W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
           <SanPolicy>4</SanPolicy>
         </component>
        <component
-            xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State"
+            xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
             language="neutral"
             name="Microsoft-Windows-PartitionManager"
             processorArchitecture="amd64"
@@ -210,16 +210,16 @@ W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
               processorArchitecture="x86"
               publicKeyToken="31bf3856ad364e35" language="neutral"
               versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State"
+              xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
                 <UninstallWindowsRE>true</UninstallWindowsRE>
             </component>
            <component name="Microsoft-Windows-WinRE-RecoveryAgent"
               processorArchitecture="amd64"
               publicKeyToken="31bf3856ad364e35" language="neutral"
               versionScope="nonSxS"
-              xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State"
+              xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
                 <UninstallWindowsRE>true</UninstallWindowsRE>
             </component>
         </settings>
@@ -378,8 +378,8 @@ dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /ind
              processorArchitecture="x86"
              publicKeyToken="31bf3856ad364e35" language="neutral"
              versionScope="nonSxS"
-             xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+             xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State"
+             xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
               <UninstallWindowsRE>true</UninstallWindowsRE>
               <OOBE>
                  <HideEULAPage>true</HideEULAPage>
@@ -391,8 +391,8 @@ dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /ind
              processorArchitecture="amd64"
              publicKeyToken="31bf3856ad364e35" language="neutral"
              versionScope="nonSxS"
-             xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+             xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State"
+             xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
               <UninstallWindowsRE>true</UninstallWindowsRE>
               <OOBE>
                  <HideEULAPage>true</HideEULAPage>
@@ -764,7 +764,7 @@ param (
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend">
     <settings pass="oobeSystem">
-        <component name="Microsoft-Windows-Shell-Setup" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" processorArchitecture="$Arch" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <component name="Microsoft-Windows-Shell-Setup" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" processorArchitecture="$Arch" xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
             <OOBE>
                 <HideEULAPage>true</HideEULAPage>
                 <ProtectYourPC>1</ProtectYourPC>
@@ -777,7 +777,7 @@ param (
           <UILanguage>en-US</UILanguage>
           <UserLocale>en-US</UserLocale>
         </component>
-        <component name="Microsoft-Windows-WinRE-RecoveryAgent" processorArchitecture="$Arch" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <component name="Microsoft-Windows-WinRE-RecoveryAgent" processorArchitecture="$Arch" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="https://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
             <UninstallWindowsRE>true</UninstallWindowsRE>
         </component>
     </settings>

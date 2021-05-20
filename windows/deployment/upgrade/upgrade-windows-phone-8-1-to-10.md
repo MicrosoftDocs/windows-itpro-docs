@@ -105,7 +105,7 @@ Note: The availability of Windows 10 Mobile as an update for existing Windows Ph
 
 Some enterprises may want to block their users from installing the Windows 10 Mobile Upgrade Advisor app. With Windows Phone 8.1, you can allow or deny individual apps by adding specific app publishers or the app globally unique identifier (GUID) from the Window Phone Store to an allow or deny XML list. The GUID for a particular application can be found in the URL for the app in the phone store. For example, the GUID to the Windows 10 Mobile Upgrade Adviser (fbe47e4f-7769-4103-910e-dca8c43e0b07) is displayed in the following URL:
 
-http://windowsphone.com/s?appid=fbe47e4f-7769-4103-910e-dca8c43e0b07
+https://windowsphone.com/s?appid=fbe47e4f-7769-4103-910e-dca8c43e0b07
 
 For more information about how to do this, see [Try it out: restrict Windows Phone 8.1 apps](/previous-versions/windows/it-pro/windows-phone/cc182269(v=technet.10)).
 

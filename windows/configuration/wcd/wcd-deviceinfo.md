@@ -45,7 +45,7 @@ The [PhoneManufacturer](/previous-versions/windows/hardware/previsioning-framewo
 
 ## PhoneOEMSupportLink
 
-This should be a functional link that starts with http://. The link should be a URL that redirects to the mobile version of the web page. The content in the webpage should reflow to the screen width. This can be achieved by adding the CSS Tag `"@-ms-viewport { width: device-width; }"`.
+This should be a functional link that starts with https://. The link should be a URL that redirects to the mobile version of the web page. The content in the webpage should reflow to the screen width. This can be achieved by adding the CSS Tag `"@-ms-viewport { width: device-width; }"`.
 
 The default is an empty string (""), which means that a support link will not be displayed to the user.
 
@@ -54,7 +54,7 @@ This setting varies by OEM.
 
 ## PhoneSupportLink
 
-This should be a functional link that starts with http://. The link should be a URL that redirects to the mobile version of the web page. The content in the webpage should reflow to the screen width. This can be achieved by adding the CSS Tag `"@-ms-viewport { width: device-width; }"`.
+This should be a functional link that starts with https://. The link should be a URL that redirects to the mobile version of the web page. The content in the webpage should reflow to the screen width. This can be achieved by adding the CSS Tag `"@-ms-viewport { width: device-width; }"`.
 
 The default is an empty string (""), which means that a support link will not be displayed to the user.
 

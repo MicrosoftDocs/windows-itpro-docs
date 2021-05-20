@@ -26,7 +26,7 @@ This XSD can be used to validate that the lockdown XML in the \<Data\> block of 
      encoding is Unicode-16 LE (Unicode Codepage 1200)
  -->
 <xs:schema
-  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xs="https://www.w3.org/2001/XMLSchema"
   elementFormDefault="qualified"
 >
   <!-- COMPLEX TYPE: ROLE LIST TYPE -->
