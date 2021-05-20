@@ -35,7 +35,7 @@ This article depicts the BitLocker deployment comparison chart.
 |Supported domain-joined status     |     Microsoft Azure Active Directory (Azure AD) joined, hybrid Azure AD joined    |   Active Directory joined, hybrid Azure AD joined      |     Active Directory joined    |
 |Permissions required to manage policies     |    Endpoint security manager or custom     |   Full administrator or custom      |     Domain Admin or Delegated GPO access    |
 |Cloud or on premises      |     Cloud    |  On premises     |    On premises     |
-|Server components required?      |         |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |
+|Server components required?      |         |  :::image type="content" source="images/dot_new.png" alt-text="dots":::    |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |
 |Additional agent required?     |     No (device enrollment only)    |   Configuration Manager client      |     MBAM client    |
 |Administrative plane     | Microsoft Endpoint Manager admin center        |    Configuration Manager console     |    Group Policy Management Console and MBAM sites     |
 |Administrative portal installation required     |         |   :::image type="content" source="images/dot1.png" alt-text="dot":::    |    :::image type="content" source="images/dot1.png" alt-text="dot":::     |
