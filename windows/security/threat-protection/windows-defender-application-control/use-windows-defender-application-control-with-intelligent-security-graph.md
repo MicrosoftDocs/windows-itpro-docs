@@ -31,7 +31,9 @@ Beginning with Windows 10, version 1709, you can set an option to automatically 
 
 ## How does the integration between WDAC and the Intelligent Security Graph work?
 
-The ISG uses the same vast security intelligence and machine learning analytics that power Microsoft Defender SmartScreen and Microsoft Defender Antivirus to help classify applications as having known good, known bad, or unknown reputation. When a binary runs on a system with WDAC enabled with the ISG option, WDAC checks the file's reputation by sending its hash and signing information to the cloud. If the ISG reports that the file has a known good reputation, the $KERNEL.SMARTLOCKER.ORIGINCLAIM kernel Extended Attribute (EA) is written to the file. Every time the binary runs, it is allowed based on its positive reputation unless there is an explicit deny rule set in the WDAC policy. Conversely, a file that has unknown or known bad reputation will be allowed if your WDAC policy explicitly allows it.
+The ISG uses the same vast security intelligence and machine learning analytics that power Microsoft Defender SmartScreen and Microsoft Defender Antivirus to help classify applications as having "known good," "known bad," or "unknown" reputation. When a binary runs on a system, with WDAC enabled with the ISG option, WDAC checks the file's reputation, by sending its hash and signing information to the cloud. If the ISG reports that the file has a "known good" reputation, the $KERNEL.SMARTLOCKER.ORIGINCLAIM kernel Extended Attribute (EA) is written to the file.
+
+If your WDAC policy does not have an explicit rule to allow or deny a binary to run, then WDAC will make a call to the cloud to determine whether the binary is familiar and safe. However, if your policy already authorizes or denies the binary, then WDAC will not make a call to the cloud, rendering ISG reputation information as moot.
 
 If the file with good reputation is an application installer, its reputation will pass along to any files that it writes to disk. This way, all the files needed to install and run an app inherit the positive reputation data from the installer.
 
