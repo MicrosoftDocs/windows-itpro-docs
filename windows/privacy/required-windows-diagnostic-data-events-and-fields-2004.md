@@ -16,7 +16,6 @@ audience: ITPro
 ms.date: 04/28/2021
 ---
 
-
 # Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields
 
 
