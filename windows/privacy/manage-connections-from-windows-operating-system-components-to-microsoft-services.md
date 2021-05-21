@@ -1308,7 +1308,7 @@ In the **Feedback & Diagnostics** area, you can choose how often you're asked fo
 To change how frequently **Windows should ask for my feedback**:
 
 > [!NOTE]
-> Feedback frequency only applies to user-generated feedback, not diagnostic and usage data sent from the device. 
+> Feedback frequency only applies to user-generated feedback, not diagnostic and usage data sent from the device.
 
 
 - To change from **Automatically (Recommended)**, use the drop-down list in the UI.
