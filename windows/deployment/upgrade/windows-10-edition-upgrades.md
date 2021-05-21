@@ -156,21 +156,21 @@ You can move directly from Enterprise to any valid destination edition. In this 
 <br>
 <table border="0" cellpadding="1">
     <tr>
-        <td colspan="10" align="center">Destination edition</td>
+        <th colspan="10" align="center">Destination edition</th>
     </tr>
     <tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td></td>
-        <td>Home</td>
-        <td>Pro</td>
-        <td>Pro for Workstations</td>
-        <td>Pro Education</td>
-        <td>Education</td>
-        <td>Enterprise LTSC</td>
-        <td>Enterprise</td>
+        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>&nbsp;</th>
+        <th>Home</th>
+        <th>Pro</th>
+        <th>Pro for Workstations</th>
+        <th>Pro Education</th>
+        <th>Education</th>
+        <th>Enterprise LTSC</th>
+        <th>Enterprise</th>
     </tr>
     <tr>
-        <td rowspan="9" nowrap="nowrap" valign="middle">Starting edition</td>
+        <th rowspan="9" nowrap="nowrap" valign="middle">Starting edition</th>
     </tr>
     <tr>
         <td>Home</td>
