@@ -7023,7 +7023,7 @@ The following fields are available:
 - **ScenarioId**  Indicates the update scenario.
 - **SessionId**  Unique value for each update attempt.
 - **UpdateId**  Unique ID for each update.
-- **Version**  Version of update
+- **Version**  Version of update.
 
 
 ### Update360Telemetry.UpdateAgentOneSettings
