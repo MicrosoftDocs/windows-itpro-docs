@@ -39,17 +39,17 @@ landingContent:
       - linkListType: overview
         links:
           - text: Plan to deploy Windows Sun Valley
-            url: placeholder.md
+            url: /windows/deployment/sv-plan.md
           - text: Prepare for Windows Sun Valley
-            url: placeholder.md
+            url: /windows/deployment/sv-prepare.md
           - text: Deploy Windows Sun Valley
-            url: placeholder.md
+            url: /windows/deployment/sv-deploy.md
           - text: Configure Windows Sun Valley
-            url: placeholder.md
+            url: /windows/configuration/sv-configure.md 
           - text: Manage Windows Sun Valley
-            url: placeholder.md
+            url: /windows/client-management/sv-manage.md 
           - text: Windows Sun Valley application readiness
-            url: placeholder.md
+            url: /windows/application-management/sv-app-readiness.md 
 
   # Card (optional)
   - title: Support information

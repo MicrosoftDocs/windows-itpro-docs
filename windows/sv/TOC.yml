@@ -13,24 +13,24 @@
     - name: Deploy and Manage Windows Sun Valley
       items:
         - name: Plan to deploy Windows Sun Valley
-          href: ../deployment/sv-plan.md
+          href: /windows/deployment/sv-plan.md
         - name: Prepare for Windows Sun Valley
-          href: ../deployment/sv-prepare.md
+          href: /windows/deployment/sv-prepare.md
         - name: Deploy Windows Sun Valley
-          href: ../deployment/sv-deploy.md 
+          href: /windows/deployment/sv-deploy.md 
         - name: Configure Windows Sun Valley
-          href: ../configuration/sv-configure.md 
+          href: /windows/configuration/sv-configure.md 
         - name: Manage Windows Sun Valley
-          href: ../client-management/sv-manage.md 
+          href: /windows/client-management/sv-manage.md 
         - name: Windows Sun Valley application readiness
-          href: application-management/sv-app-readiness.md 
+          href: /windows/application-management/sv-app-readiness.md 
     
     - name: Support
       items:
         - name: Windows Sun Valley lifecycle
           href: sv-lifecycle.md
         - name: Windows Sun Valley release information
-          href: ../release-health
+          href: /windows/release-health
 
 
 
