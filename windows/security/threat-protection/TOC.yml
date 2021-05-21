@@ -324,7 +324,7 @@
                 - name: Planning and deploying advanced security audit policies
                   href: auditing/planning-and-deploying-advanced-security-audit-policies.md
                 - name: Advanced security auditing FAQ
-                  href: auditing/advanced-security-auditing-faq.md
+                  href: auditing/advanced-security-auditing-faq.yml
                   items: 
                     - name: Which editions of Windows support advanced audit policy configuration
                       href: auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md

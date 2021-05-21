@@ -12,8 +12,6 @@ items:
           href: mandatory-user-profile.md
         - name: Connect to remote Azure Active Directory-joined PC
           href: connect-to-remote-aadj-pc.md
-        - name: Join Windows 10 Mobile to Azure Active Directory
-          href: join-windows-10-mobile-to-azure-active-directory.md
         - name: New policies for Windows 10
           href: new-policies-for-windows-10.md
         - name: Windows 10 default media removal policy
@@ -24,12 +22,8 @@ items:
           href: manage-settings-app-with-group-policy.md
         - name: What version of Windows am I running
           href: windows-version-search.md
-        - name: Reset a Windows 10 Mobile device
-          href: reset-a-windows-10-mobile-device.md
         - name: Transitioning to modern management
           href: manage-windows-10-in-your-organization-modern-management.md
-        - name: Windows 10 Mobile deployment and management guide
-          href: windows-10-mobile-and-mdm.md
         - name: Windows libraries
           href: windows-libraries.md
     - name: Mobile device management (MDM)

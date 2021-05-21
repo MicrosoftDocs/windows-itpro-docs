@@ -83,8 +83,6 @@ Supported operation is Get.
 <a href="" id="provider-providerid"></a>**Provider/**<strong>*ProviderID*</strong>  
 Required. This node contains the URI-encoded value of the bootstrapped device management account’s Provider ID. Scope is dynamic. This value is set and controlled by the MDM server. As a best practice, use text that doesn’t require XML/URI escaping.
 
-For Intune, use **MS DM Server** for Windows desktop or **SCConfigMgr** for Windows mobile for the _ProviderID_.
-
 Supported operations are Get and Add.
 
 <a href="" id="provider-providerid-entdevicename"></a>**Provider/*ProviderID*/EntDeviceName**  

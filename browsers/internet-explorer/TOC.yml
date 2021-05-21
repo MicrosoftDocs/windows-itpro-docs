@@ -207,7 +207,7 @@
         - name: Internet Explorer 11 delivery through automatic updates
           href: ie11-deploy-guide/ie11-delivery-through-automatic-updates.md
         - name: Internet Explorer 11 Blocker Toolkit FAQ
-          href: ie11-faq/faq-ie11-blocker-toolkit.md
+          href: ie11-faq/faq-ie11-blocker-toolkit.yml
     - name: Missing Internet Explorer Maintenance settings for Internet Explorer 11
       href: ie11-deploy-guide/missing-internet-explorer-maintenance-settings-for-ie11.md
     - name: Missing the Compatibility View Button
@@ -215,7 +215,7 @@
     - name: Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013
       href: ie11-deploy-guide/deploy-pinned-sites-using-mdt-2013.md
 - name: IE11 Frequently Asked Questions (FAQ) Guide for IT Pros
-  href: ie11-faq/faq-for-it-pros-ie11.md
+  href: ie11-faq/faq-for-it-pros-ie11.yml
 - name: Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros
   href: ie11-ieak/index.md
   items: 
@@ -259,7 +259,7 @@
         - name: Use the RSoP snap-in to review policy settings
           href: ie11-ieak/rsop-snapin-for-policy-settings-ieak11.md
         - name: IEAK 11 - Frequently Asked Questions
-          href: ie11-faq/faq-ieak11.md
+          href: ie11-faq/faq-ieak11.yml
         - name: Troubleshoot custom package and IEAK 11 problems
           href: ie11-ieak/troubleshooting-custom-browser-pkg-ieak11.md
     - name: Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options
@@ -357,3 +357,5 @@
       items: 
         - name: Internet Explorer and Microsoft Edge FAQ for IT Pros
           href: kb-support/ie-edge-faqs.md
+- name: Microsoft Edge and Internet Explorer troubleshooting
+  href: /troubleshoot/browsers/welcome-browsers
