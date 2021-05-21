@@ -154,7 +154,7 @@ For example: An extend code of **0x4000D**, represents a problem during phase 4 
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.md)
+[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-/ifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)

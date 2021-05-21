@@ -216,6 +216,7 @@ The XML below is the DDF for the current version for this CSP.
                   </DFType>
                 </DFProperties>
               </Node>
+              <Node>
                 <NodeName>LocMasterSwitchDependencyNII</NodeName>
                 <DFProperties>
                   <AccessType>
@@ -284,26 +285,6 @@ The XML below is the DDF for the current version for this CSP.
                   </DFType>
                 </DFProperties>
               </Node>
-              <Node>
-                <NodeName>RootCertificate</NodeName>
-                <DFProperties>
-                  <AccessType>
-                    <Get />
-                  </AccessType>
-                  <Description>Required. Specifies the root certificate for the H-SLP server. Windows Phone does not support a non-secure mode. If this node is not included, the configuration service provider will fail but may not return a specific error.</Description>
-                  <DFFormat>
-                    <node />
-                  </DFFormat>
-                  <Occurrence>
-                    <One />
-                  </Occurrence>
-                  <Scope>
-                    <Permanent />
-                  </Scope>
-                  <DFType>
-                    <DDFName></DDFName>
-                  </DFType>
-                </DFProperties>
                 <Node>
                   <NodeName>Name</NodeName>
                   <DFProperties>

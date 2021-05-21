@@ -4,12 +4,12 @@ description: Learn how to sideload line-of-business (LOB) apps in Windows 10. W
 ms.assetid: C46B27D0-375B-4F7A-800E-21595CF1D53D
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-author: dansimp
+author: greg-lindsay
 ms.date: 05/20/2019
 ---
 

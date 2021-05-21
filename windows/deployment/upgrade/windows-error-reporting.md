@@ -67,7 +67,7 @@ The event will also contain links to log files that can be used to perform a det
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.md)  
+[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)  
 [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)  
 [Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)  
 [Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)  

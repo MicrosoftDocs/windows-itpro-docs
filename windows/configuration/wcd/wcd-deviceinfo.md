@@ -4,9 +4,9 @@ description: This section describes the DeviceInfo settings that you can configu
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 09/21/2017
 ms.reviewer: 
