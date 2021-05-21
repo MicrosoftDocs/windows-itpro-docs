@@ -661,6 +661,9 @@ After some time, you will have a Windows 10 Enterprise x64 image that is fully 
 
 ## Troubleshooting
 
+> [!IMPORTANT]
+> If you encounter errors applying the image when using a BIOS firmware type, see [Windows 10 deployments fail with Microsoft Deployment Toolkit on computers with BIOS type firmware](https://support.microsoft.com/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7). This 
+
 If you [enabled monitoring](#enable-monitoring), you can check the progress of the task sequence.
 
    ![monitoring](../images/mdt-monitoring.png)
