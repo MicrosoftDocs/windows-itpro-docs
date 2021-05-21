@@ -84,7 +84,7 @@ Use Windows Configuration Designer to create a provisioning package to upgrade a
 - To create a provisioning package for upgrading mobile editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithLicense** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
 
 For more info about Windows Configuration Designer, see these topics:
-- [Create a provisioining package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package)
+- [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package)
 - [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package)
 
 
