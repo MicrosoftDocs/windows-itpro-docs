@@ -26,9 +26,13 @@ With Windows 10, you can quickly upgrade from one edition of Windows 10 to ano
 
 For a list of operating systems that qualify for the Windows 10 Pro Upgrade or Windows 10 Enterprise Upgrade through Microsoft Volume Licensing, see [Windows 10 Qualifying Operating Systems](https://download.microsoft.com/download/2/d/1/2d14fe17-66c2-4d4c-af73-e122930b60f6/Windows10-QOS.pdf).
 
-The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. **Note**: The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607.
+The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer.
 
-Note: Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](/configmgr/compliance/deploy-use/upgrade-windows-version) in Microsoft Endpoint Configuration Manager.
+> [!NOTE]
+> The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607.
+
+> [!TIP]
+> Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](/configmgr/compliance/deploy-use/upgrade-windows-version) in Microsoft Endpoint Configuration Manager.
 
 ![not supported](../images/x_blk.png) (X) = not supported</br>
 ![supported, reboot required](../images/check_grn.png) (green checkmark) = supported, reboot required</br>
@@ -122,7 +126,8 @@ If you do not have a product key, you can upgrade your edition of Windows 10 th
 
 3.  Follow the on-screen instructions.
 
-    **Note**<br>If you are a Windows 10 Home N or Windows 10 Home KN user and have trouble finding your applicable upgrade in the Microsoft Store, click [here](ms-windows-store://windowsupgrade/).
+    > [!NOTE]
+    > If you are a Windows 10 Home N or Windows 10 Home KN user and have trouble finding your applicable upgrade in the Microsoft Store, click [here](ms-windows-store://windowsupgrade/).
 
 ## License expiration
 
@@ -130,7 +135,8 @@ Volume license customers whose license has expired will need to change the editi
 
 Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a different product key is not supported.  You also cannot downgrade from a later version to an earlier version of the same edition (Ex: Windows 10 Pro 1709 to 1703) unless the rollback process is used. This topic does not discuss version downgrades.
 
-Note: If you are using [Windows 10 Enterprise Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation) and a license expires, devices will automatically revert to the original edition when the grace period expires.
+> [!NOTE]
+> If you are using [Windows 10 Enterprise Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation) and a license expires, devices will automatically revert to the original edition when the grace period expires.
 
 ### Scenario example
 
