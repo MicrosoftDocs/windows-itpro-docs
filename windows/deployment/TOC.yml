@@ -5,7 +5,7 @@
       items: 
         - name: What's new
           href: deploy-whats-new.md
-        - name: Windows 10 deployment scenarios
+        - name: Windows client deployment scenarios
           href: windows-10-deployment-scenarios.md
         - name: What is Windows as a service?
           href: update/waas-quick-start.md
@@ -34,7 +34,7 @@
     - name: Plan
       items:
         - name: Windows Sun Valley deployment planning
-          href: sv-planning.md
+          href: sv-plan.md
         - name: Create a deployment plan
           href: update/create-deployment-plan.md
         - name: Define readiness criteria
@@ -69,6 +69,8 @@
 
     - name: Prepare
       items: 
+        - name: Prepare to deploy Windows Sun Valley
+          href: sv-prepare.md
         - name: Prepare to deploy Windows 10 updates
           href: update/prepare-deploy-windows.md
         - name: Evaluate and update infrastructure
@@ -98,11 +100,13 @@
 
     - name: Deploy
       items: 
-        - name: Deploy Windows 10
+        - name: Deploy Windows client
           items:
-            - name: Deploy Windows 10 with Autopilot
+            - name: Windows Sun Valley deployment overview
+              href: sv-deploy.md
+            - name: Deploy Windows client with Autopilot
               href: windows-autopilot/index.yml
-            - name: Deploy Windows 10 with Configuration Manager
+            - name: Deploy Windows client with Configuration Manager
               items:
                 - name: Deploy to a new device
                   href: deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md
@@ -112,7 +116,7 @@
                   href: deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md
                 - name: In-place upgrade
                   href: deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md
-            - name: Deploy Windows 10 with MDT
+            - name: Deploy Windows client with MDT
               items:
                 - name: Deploy to a new device
                   href: deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md
