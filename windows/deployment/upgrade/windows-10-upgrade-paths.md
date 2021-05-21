@@ -50,7 +50,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>Windows 10 Education</td>
         <td>Windows 10 Enterprise</td>
         <td>Windows 10 Mobile</td>
-        <td>Windows 10 Mobile Enterprise</td>
     </tr>
     <tr>
         <td rowspan="7" nowrap="nowrap">Windows 7</td>
@@ -261,17 +260,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td>✔</td>
     </tr>
-    <tr>
-        <td>Mobile Enterprise</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>D</td>
-        <td></td>
-    </tr>
-</table>
+   </table>
 
 
 ## Related Topics

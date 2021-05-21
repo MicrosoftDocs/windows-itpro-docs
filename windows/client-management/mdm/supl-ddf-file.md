@@ -725,7 +725,7 @@ The XML below is the DDF for the current version for this CSP.
           <Node>
             <NodeName>LocMasterSwitchDependencyNII</NodeName>
             <DFProperties>
-              <AccessType>
+              <AccessType>-
                 <Get />
                 <Replace />
               </AccessType>
