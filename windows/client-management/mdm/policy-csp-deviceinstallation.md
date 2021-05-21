@@ -519,15 +519,6 @@ ADMX Info:
 
 <!--/SupportedValues-->
 <!--Example-->
-To enable this policy, use the following SyncML. This example applies a layered order of evaluation for Allow and Prevent device installation policies across all device match criteria:
-
-- Floppy Disks, ClassGUID = {4d36e980-e325-11ce-bfc1-08002be10318}
-- CD ROMs, ClassGUID = {4d36e965-e325-11ce-bfc1-08002be10318}
-- Modems, ClassGUID = {4d36e96d-e325-11ce-bfc1-08002be10318}
-
-Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. 
-
-
 ```xml
 <SyncML>
     <SyncBody>
