@@ -1,8 +1,10 @@
-- name: Windows 10
+- name: Windows client
   href: index.yml
   items: 
     - name: What's new
       href: /windows/whats-new
+    - name: Windows Sun Valley
+      href: /windows/sv
     - name: Release information
       href: /windows/release-health
     - name: Deployment

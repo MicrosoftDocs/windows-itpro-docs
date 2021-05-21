@@ -58,4 +58,6 @@ landingContent:
         links:
           - text: Windows Sun Valley lifecycle
             url: placeholder.md
+          - text: Windows Sun Valley release information
+            url: ../release-health
 

@@ -29,6 +29,8 @@
       items:
         - name: Windows Sun Valley lifecycle
           href: sv-lifecycle.md
+        - name: Windows Sun Valley release information
+          href: ../release-health
 
 
 

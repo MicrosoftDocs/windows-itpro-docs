@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Windows 10 resources and documentation for IT Pros # < 60 chars
+title: Windows client resources and documentation for IT Pros # < 60 chars
 summary: Plan, deploy, secure, and manage devices running Windows 10.  # < 160 chars
 
 metadata:
-  title: Windows 10 documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Windows client documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Evaluate, plan, deploy, secure and manage devices running Windows 10. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -26,12 +26,14 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What's new in Windows 10, version 21H1
+          - text: Windows Sun Valley overview
+            url: /sv/sv-overview.md
+          - text: What's new in Windows Sun Valley, version 21H2
             url: /windows/whats-new/whats-new-windows-10-version-21H1
-          - text: What's new in Windows 10, version 20H2
-            url: /windows/whats-new/whats-new-windows-10-version-20H2
-          - text: What's new in Windows 10, version 2004
-            url: /windows/whats-new/whats-new-windows-10-version-2004
+          - text: What's new in Windows 10, version 21H2
+            url: /windows/whats-new/whats-new-windows-10-version-21H1
+          - text: Windows Sun Valley release information
+            url:  /windows/release-health/release-information
           - text: Windows 10 release information
             url:  /windows/release-health/release-information
 
@@ -40,8 +42,10 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Configure Windows 10
+          - text: Configure Windows client
             url: /windows/configuration/index
+          - text: Configure Windows Sun Valley
+            url: /windows/configuration/sv-configure.md
           - text: Accessibility information for IT Pros
             url: /windows/configuration/windows-10-accessibility-for-itpros
           - text: Configure access to Microsoft Store
@@ -54,8 +58,10 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: Deploy and update Windows 10
+          - text: Deploy and update Windows client
             url: /windows/deployment/index
+          - text: Deploy Windows Sun Valley
+            url: /windows/deployment/sv-deploy.md
           - text: Windows 10 deployment scenarios
             url: /windows/deployment/windows-10-deployment-scenarios
           - text: Create a deployment plan
@@ -69,8 +75,10 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Windows 10 application management
+          - text: Windows application management
             url: /windows/application-management/index
+          - text: Windows Sun Valley application management
+            url: /windows/application-management/sv-app-manage.md
           - text: Understand the different apps included in Windows 10
             url: /windows/application-management/apps-in-windows-10
           - text: Get started with App-V for Windows 10
@@ -83,8 +91,10 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Windows 10 client management
+          - text: Windows client management
             url: /windows/client-management/index
+          - text: Manage Windows Sun Valley 
+            url: /windows/client-management/sv-manage.md
           - text: Administrative tools in Windows 10
             url: /windows/client-management/administrative-tools-in-windows-10
           - text: Create mandatory user profiles
@@ -97,7 +107,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Windows 10 Enterprise Security
+          - text: Windows Enterprise Security
             url: /windows/security/index
           - text: Windows Privacy
             url: /windows/privacy/index
