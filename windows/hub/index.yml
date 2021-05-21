@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Windows client resources and documentation for IT Pros # < 60 chars
-summary: Plan, deploy, secure, and manage devices running Windows 10.  # < 160 chars
+summary: Plan, deploy, secure, and manage devices running Windows 10 and Windows Sun Valley.  # < 160 chars
 
 metadata:
   title: Windows client documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Evaluate, plan, deploy, secure and manage devices running Windows 10. # Required; article description that is displayed in search results. < 160 chars.
+  description: Evaluate, plan, deploy, secure and manage devices running Windows 10 and Windows Sun Valley. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -62,11 +62,11 @@ landingContent:
             url: /windows/deployment/index
           - text: Deploy Windows Sun Valley
             url: /windows/deployment/sv-deploy.md
-          - text: Windows 10 deployment scenarios
+          - text: Windows deployment scenarios
             url: /windows/deployment/windows-10-deployment-scenarios
           - text: Create a deployment plan
             url: /windows/deployment/update/create-deployment-plan
-          - text: Prepare to deploy Windows 10
+          - text: Prepare to deploy Windows client
             url: /windows/deployment/update/prepare-deploy-windows
 
  
@@ -77,7 +77,7 @@ landingContent:
         links:
           - text: Windows application management
             url: /windows/application-management/index
-          - text: Windows Sun Valley application management
+          - text: Manage Windows Sun Valley applications
             url: /windows/application-management/sv-app-manage.md
           - text: Understand the different apps included in Windows 10
             url: /windows/application-management/apps-in-windows-10
@@ -95,7 +95,7 @@ landingContent:
             url: /windows/client-management/index
           - text: Manage Windows Sun Valley 
             url: /windows/client-management/sv-manage.md
-          - text: Administrative tools in Windows 10
+          - text: Administrative tools 
             url: /windows/client-management/administrative-tools-in-windows-10
           - text: Create mandatory user profiles
             url: /windows/client-management/mandatory-user-profile
