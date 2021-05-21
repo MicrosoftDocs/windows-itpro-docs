@@ -1,9 +1,9 @@
 ---
-title: What's new in Windows 10 deployment
+title: What's new in Windows client deployment
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Use this article to learn about new solutions and online content related to deploying Windows 10 in your organization.
+description: Use this article to learn about new solutions and online content related to deploying Windows in your organization.
 keywords: deployment, automate, tools, configure, news
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,14 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to:**
 - Windows 10
+- Windows Sun Valley
 
 ## In this topic
 
-This topic provides an overview of new solutions and online content related to deploying Windows 10 in your organization.
+This topic provides an overview of new solutions and online content related to deploying Windows client in your organization.
 
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](/windows/whats-new/index).
+- For an all-up overview of new features in Windows Sun Valley, see [What's new in Windows Sun Valley](/windows/whats-new/index).
 
 ## Latest news
 
