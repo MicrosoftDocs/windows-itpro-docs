@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Card 1
+  - title: Get started
     linkLists:
       - linkListType: overview
         links:
@@ -37,7 +37,7 @@ landingContent:
 
 
   # Card (optional)
-  - title: Card 2
+  - title: Upgrade to Sun Valley
     linkLists:
       - linkListType: overview
         links:
@@ -52,7 +52,7 @@ landingContent:
 
 
   # Card (optional)
-  - title: Card 3
+  - title: Support information
     linkLists:
       - linkListType: overview
         links:

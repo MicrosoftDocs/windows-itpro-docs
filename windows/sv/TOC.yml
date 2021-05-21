@@ -1,2 +1,42 @@
-- name: Windows SV
+- name: Deploy and update Windows 10
   href: index.yml
+  items: 
+    - name: Get started
+      items: 
+        - name: Sun Valley overview
+          href: sv-overview.md
+        - name: Windows Sun Valley requirements
+          href: sv-requirements.md
+        - name: Sun Valley FAQ
+          href: sv-faq.md
+    
+
+    - name: Upgrade to Windows Sun Valley
+      items:
+
+        - name: Plan to deploy Windows Sun Valley
+          href: update/plan-define-readiness.md
+        - name: Prepare for Windows Sun Valley
+          href: update/eval-infra-tools.md
+        - name: Deploy Windows Sun Valley
+          href: update/plan-determine-app-readiness.md 
+        - name: Define your servicing strategy
+          href: update/plan-define-strategy.md
+        - name: Delivery Optimization for Windows 10 updates
+          href: update/waas-delivery-optimization.md        
+
+    
+    - name: Support
+      items:
+        - name: Windows Sun Valley lifecycle
+          href: sv-requirements.md
+        - name: Prepare to deploy Windows Sun Valley
+          href: update/plan-define-readiness.md
+        - name: Deploy Windows Sun Valley
+          href: update/eval-infra-tools.md
+        - name: Determine application readiness
+          href: update/plan-determine-app-readiness.md 
+        - name: Define your servicing strategy
+          href: update/plan-define-strategy.md
+        - name: Delivery Optimization for Windows 10 updates
+          href: update/waas-delivery-optimization.md  
