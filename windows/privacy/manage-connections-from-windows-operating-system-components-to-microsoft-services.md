@@ -9,12 +9,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: linque1
-ms.author: robsize
-manager: robsize
+author: tomlayson
+ms.author: tomlayson
+manager: riche
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 12/1/2020
+ms.date: 5/21/2021
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
@@ -1266,7 +1266,7 @@ In the **Feedback & Diagnostics** area, you can choose how often you're asked fo
 To change how frequently **Windows should ask for my feedback**:
 
 > [!NOTE]
-> Feedback frequency only applies to user-generated feedback, not diagnostic and usage data sent from the device.
+> Feedback frequency only applies to user-generated feedback, not diagnostic and usage data sent from the device. 
 
 
 - To change from **Automatically (Recommended)**, use the drop-down list in the UI.
