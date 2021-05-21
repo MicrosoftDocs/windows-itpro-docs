@@ -5,6 +5,8 @@
       items: 
         - name: What's new
           href: deploy-whats-new.md
+        - name: Windows Sun Valley deployment overview
+          href: sv-deploy.md
         - name: Windows client deployment scenarios
           href: windows-10-deployment-scenarios.md
         - name: What is Windows as a service?
