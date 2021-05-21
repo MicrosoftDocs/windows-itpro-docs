@@ -842,7 +842,7 @@ ADMX Info:
 <!--Description-->
 Allows IT admins to enable diagnostic data from this device to be processed by Update Compliance.  
 
-If you enable this setting, Enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service.
+If you enable this setting, it enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service.
 
 If you disable or do not configure this policy setting, diagnostic data from this device will not be processed by Update Compliance.
 
