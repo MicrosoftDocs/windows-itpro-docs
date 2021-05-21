@@ -1,5 +1,5 @@
 ---
-title: Placeholder
+title: Lifecycle
 description: PH
 ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.reviewer: 
@@ -16,7 +16,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Windows Sun Valley frequently asked questions (FAQ)
+# Windows Sun Valley lifecycle
 
-FAQ.
+Sun Valley lifecycle.
 

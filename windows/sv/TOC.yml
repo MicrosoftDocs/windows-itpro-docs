@@ -13,7 +13,7 @@
     - name: Deploy and Manage Windows Sun Valley
       items:
         - name: Plan to deploy Windows Sun Valley
-          href: ../deployment/sv-planning.md
+          href: ../deployment/sv-plan.md
         - name: Prepare for Windows Sun Valley
           href: ../deployment/sv-prepare.md
         - name: Deploy Windows Sun Valley

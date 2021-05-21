@@ -16,7 +16,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Placeholder
+# Windows Sun Valley overview
 
-Placeholder text.
+Overview of Sun Valley.
 

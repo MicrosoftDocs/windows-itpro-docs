@@ -16,7 +16,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Placeholder
+# Windows Sun Valley requirements
 
-Placeholder text.
+Windows Sun Valley requirements.
 
