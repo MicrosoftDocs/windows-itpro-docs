@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Windows SV # < 60 chars
-summary: Find out about Windows SV.  # < 160 chars
+summary: Find out about Windows Sun Valley.  # < 160 chars
 
 metadata:
   title: Windows SV # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -26,41 +26,36 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Link 1
-            url: placeholder.md
-          - text: Link 2
-            url: placeholder.md
-          - text: Link 3
-            url: placeholder.md
-          - text: Link 4
-            url: placeholder.md
-
+          - text: Windows Sun Valley overview
+            url: sv-overview.md
+          - text: Windows Sun Valley requirements
+            url: sv-requirements.md
+          - text: Windows Sun Valley FAQ
+            url: sv-faq.md
 
   # Card (optional)
-  - title: Upgrade to Sun Valley
+  - title: Deploy Windows Sun Valley
     linkLists:
       - linkListType: overview
         links:
-          - text: Link 1
+          - text: Plan to deploy Windows Sun Valley
             url: placeholder.md
-          - text: Link 2
+          - text: Prepare for Windows Sun Valley
             url: placeholder.md
-          - text: Link 3
+          - text: Deploy Windows Sun Valley
             url: placeholder.md
-          - text: Link 4
+          - text: Configure Windows Sun Valley
             url: placeholder.md
-
+          - text: Manage Windows Sun Valley
+            url: placeholder.md
+          - text: Windows Sun Valley application readiness
+            url: placeholder.md
 
   # Card (optional)
   - title: Support information
     linkLists:
       - linkListType: overview
         links:
-          - text: Link 1
+          - text: Windows Sun Valley lifecycle
             url: placeholder.md
-          - text: Link 2
-            url: placeholder.md
-          - text: Link 3
-            url: placeholder.md
-          - text: Link 4
-            url: placeholder.md
+

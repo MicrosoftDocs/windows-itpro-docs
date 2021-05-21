@@ -1,15 +1,16 @@
-- name: Deploy and update Windows 10
+- name: Windows Sun Valley
   href: index.yml
   items: 
-    - name: Get started with Windows Sun Valley
+    - name: Get started
       items: 
-        - name: Sun Valley overview
+        - name: Windows Sun Valley overview
           href: sv-overview.md
         - name: Windows Sun Valley requirements
           href: sv-requirements.md
+        - name: Sun Valley FAQ
+          href: sv-faq.md
 
-    
-    - name: Upgrade to Windows Sun Valley
+    - name: Deploy and Manage Windows Sun Valley
       items:
         - name: Plan to deploy Windows Sun Valley
           href: ../deployment/sv-planning.md
@@ -21,13 +22,13 @@
           href: ../configuration/sv-configure.md 
         - name: Manage Windows Sun Valley
           href: ../client-management/sv-manage.md 
+        - name: Windows Sun Valley application readiness
+          href: application-management/sv-app-readiness.md 
     
-    - name: Windows Sun Valley Support
+    - name: Support
       items:
         - name: Windows Sun Valley lifecycle
           href: sv-lifecycle.md
-        - name: Windows Sun Valley application readiness
-          href: application-management/sv-app-readiness.md 
-        - name: Sun Valley FAQ
-          href: sv-faq.md
+
+
 
