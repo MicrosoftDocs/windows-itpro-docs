@@ -1,4 +1,4 @@
-- name: Deploy and update Windows 10
+- name: Deploy and update Windows client
   href: index.yml
   items: 
     - name: Get started
@@ -33,6 +33,8 @@
 
     - name: Plan
       items:
+        - name: Windows Sun Valley deployment planning
+          href: sv-planning.md
         - name: Create a deployment plan
           href: update/create-deployment-plan.md
         - name: Define readiness criteria
