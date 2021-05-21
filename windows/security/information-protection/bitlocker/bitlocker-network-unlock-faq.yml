@@ -1,0 +1,40 @@
+### YamlMime:FAQ
+metadata:
+  title: BitLocker Network Unlock FAQ (Windows 10)
+  description: Familiarize yourself with BitLocker Network Unlock. Learn how it can make desktop and server management easier within domain environments.
+  ms.prod: w10
+  ms.mktglfcycl: explore
+  ms.sitesec: library
+  ms.pagetype: security
+  ms.localizationpriority: medium
+  author: dansimp
+  ms.author: dansimp
+  manager: dansimp
+  audience: ITPro
+  ms.collection: M365-security-compliance
+  ms.topic: conceptual
+  ms.date: 02/28/2019
+  ms.reviewer: 
+  ms.custom: bitlocker
+    
+title: BitLocker Network Unlock FAQ
+summary: |
+  **Applies to**
+  -   Windows 10
+
+sections:
+  - name: Ignored
+    questions:
+      - question: |
+          BitLocker Network Unlock FAQ
+        answer: |  
+          BitLocker Network Unlock enables easier management for BitLocker-enabled desktops and servers that use the TPM+PIN protection method in a domain environment. When a computer that is connected to a wired corporate network is rebooted, Network Unlock allows the PIN entry prompt to be bypassed. It automatically unlocks BitLocker-protected operating system volumes by using a trusted key that is provided by the Windows Deployment Services server as its secondary authentication method.
+          
+          To use Network Unlock you must also have a PIN configured for your computer. When your computer is not connected to the network you will need to provide the PIN to unlock it.
+          
+          BitLocker Network Unlock has software and hardware requirements for both client computers, Windows Deployment services, and domain controllers that must be met before you can use it.
+          
+          Network Unlock uses two protectors, the TPM protector and the one provided by the network or by your PIN, whereas automatic unlock uses a single protector, the one stored in the TPM. If the computer is joined to a network without the key protector it will prompt you to enter your PIN. If the PIN is 
+          not available you will need to use the recovery key to unlock the computer if it can ot be connected to the network.
+          
+          For more info, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md).

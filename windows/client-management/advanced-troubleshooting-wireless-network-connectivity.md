@@ -7,9 +7,9 @@ keywords: troubleshooting, wireless network connectivity, wireless, Wi-Fi
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: troubleshooting
 ---
 

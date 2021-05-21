@@ -26,6 +26,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: What's new in Windows 10, version 21H1
+            url:  whats-new-windows-10-version-21h1.md
           - text: What's new in Windows 10, version 20H2
             url: whats-new-windows-10-version-20H2.md
           - text: What's new in Windows 10, version 2004
@@ -36,8 +38,7 @@ landingContent:
             url:  whats-new-windows-10-version-1903.md
           - text: What's new in Windows 10, version 1809
             url:  whats-new-windows-10-version-1809.md
-          - text: What's new in Windows 10, version 1803
-            url:  whats-new-windows-10-version-1803.md
+
 
   # Card (optional)
   - title: Learn more

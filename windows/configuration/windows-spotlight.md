@@ -8,8 +8,8 @@ keywords: ["lockscreen"]
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/30/2018

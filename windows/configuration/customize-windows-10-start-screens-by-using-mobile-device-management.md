@@ -8,9 +8,9 @@ keywords: ["start screen", "start menu"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.topic: article
-ms.author: dansimp
+ms.author: greglin
 ms.localizationpriority: medium
 ms.date: 02/08/2018
 ---

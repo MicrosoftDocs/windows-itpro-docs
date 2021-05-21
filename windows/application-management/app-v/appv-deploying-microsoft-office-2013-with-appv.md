@@ -1,7 +1,7 @@
 ---
 title: Deploying Microsoft Office 2013 by Using App-V (Windows 10)
 description: Use Application Virtualization (App-V) to deliver Microsoft Office 2013 as a virtualized application to computers in your organization.
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # Deploying Microsoft Office 2013 by Using App-V
