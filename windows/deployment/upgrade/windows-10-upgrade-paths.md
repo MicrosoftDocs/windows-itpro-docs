@@ -261,17 +261,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td>✔</td>
     </tr>
-    <tr>
-        <td>Mobile Enterprise</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>D</td>
-        <td></td>
-    </tr>
-</table>
+   </table>
 
 
 ## Related Topics
