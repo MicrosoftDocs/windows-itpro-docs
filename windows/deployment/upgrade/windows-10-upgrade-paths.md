@@ -43,17 +43,17 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
 <table border="0" cellpadding="1">
     <tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td></td>
-        <td>Windows 10 Home</td>
-        <td>Windows 10 Pro</td>
-        <td>Windows 10 Pro Education</td>
-        <td>Windows 10 Education</td>
-        <td>Windows 10 Enterprise</td>
-        <td>Windows 10 Mobile</td>
-        <td>Windows 10 Mobile Enterprise</td>
+        <td>&nbsp;</td>
+        <th>Windows 10 Home</th>
+        <th>Windows 10 Pro</th>
+        <th>Windows 10 Pro Education</th>
+        <th>Windows 10 Education</th>
+        <th>Windows 10 Enterprise</th>
+        <th>Windows 10 Mobile</th>
+        <th>Windows 10 Mobile Enterprise</th>
     </tr>
     <tr>
-        <td rowspan="7" nowrap="nowrap">Windows 7</td>
+        <th rowspan="7" nowrap="nowrap">Windows 7</th>
     </tr>
     <tr>
         <td>Starter</td>
@@ -116,7 +116,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
     </tr>
     <tr>
-        <td rowspan="10" nowrap="nowrap">Windows 8.1</td>
+        <th rowspan="10" nowrap="nowrap">Windows 8.1</th>
     </tr>
     <tr>
         <td>(Core)</td>
@@ -209,7 +209,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
     </tr>
     <tr>
-        <td rowspan="8" nowrap="nowrap">Windows 10</td>
+        <th rowspan="8" nowrap="nowrap">Windows 10</th>
     </tr>
     <tr>
         <td>Home</td>
