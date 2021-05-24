@@ -135,7 +135,7 @@ During validation CI will choose which hashes to calculate depending on how the 
 
 In the cmdlets, rather than try to predict which hash CI will use, we pre-calculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This is also resilient, if the signing status of the file changes and necessary for deny rules to ensure that changing/stripping the signature doesn’t result in a different hash than what was in the policy being used by CI.
 
-### Why does scan create 8 hash rules for certain XML files?
+### Why does scan create eight hash rules for certain XML files?
 
 Separate rules are created for UMCI and KMCI. In some cases, files which are purely user-mode or purely kernel-mode may still generate both sets, as CI cannot always precisely determine what is purely user vs. kernel mode and errs on the side of caution.
 
