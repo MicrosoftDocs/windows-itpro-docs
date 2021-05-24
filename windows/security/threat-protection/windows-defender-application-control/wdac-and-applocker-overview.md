@@ -19,7 +19,7 @@ ms.custom: asr
 ms.technology: mde
 ---
 
-## Windows Defender Application Control and AppLocker Overview
+# Windows Defender Application Control and AppLocker Overview
 
 **Applies to:**
 
@@ -47,7 +47,7 @@ Note that prior to Windows 10 version 1709, Windows Defender Application Control
 
 WDAC policies can be created on any client edition of Windows 10 build 1903+, or on Windows Server 2016 and above.
 
-WDAC policies can be applied to devices running any edition of Windows 10, or Windows Server 2016 and above, via a Mobile Device Management (MDM) solution, e.g. Intune; a management interface, e.g. Configuration Manager; or a script host, e.g. PowerShell. Group Policy can also be used to deploy WDAC policies to Windows 10 Enterprise edition, or Windows Server 2016 and above, but cannot deploy policies to devices running non-Enterprise SKUs of Windows 10.
+WDAC policies can be applied to devices running any edition of Windows 10, or Windows Server 2016 and above, via a Mobile Device Management (MDM) solution, for example, Intune; a management interface such as Configuration Manager; or a script host such as PowerShell. Group Policy can also be used to deploy WDAC policies to Windows 10 Enterprise edition, or Windows Server 2016 and above, but cannot deploy policies to devices running non-Enterprise SKUs of Windows 10.
 
 For more information on which individual WDAC features are available on specific WDAC builds, see [WDAC feature availability](feature-availability.md).
 
