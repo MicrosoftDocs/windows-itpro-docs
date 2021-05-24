@@ -18,7 +18,7 @@ ms.date: 08/14/2020
 ms.technology: mde
 ---
 
-## Configuring authorized apps deployed by a managed installer with AppLocker and Windows Defender Application Control
+# Configuring authorized apps deployed by a managed installer with AppLocker and Windows Defender Application Control
 
 **Applies to:**
 
