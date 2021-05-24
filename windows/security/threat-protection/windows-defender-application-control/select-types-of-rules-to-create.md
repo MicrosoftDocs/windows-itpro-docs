@@ -126,14 +126,14 @@ Wildcards can be used at the beginning or end of a path rule; only one wildcard 
 
 You can also use the following macros when the exact volume may vary: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`.
 
-## More information about hashes 
+## More information about hashes
 
-### Why does scan create 4 hash rules per XML file?
+### Why does scan create four hash rules per XML file?
 
-(Hash Sha1, Hash Sha256, Hash Page Sha1, Hash Page Sha256)
-During validation CI will choose which hashes to calculate depending on how the file is signed.  E.g. if the file is page-hash signed the entire file would not get paged in to do a full sha256 authenticode and we would just match using the first page hash.
+The PowerShell cmdlet will produce an Authenticode Sha1 Hash, Sha256 Hash, Sha1 Page Hash, Sha256 Page Hash.
+During validation CI will choose which hashes to calculate depending on how the file is signed.  For example, if the file is page-hash signed the entire file would not get paged in to do a full sha256 authenticode and we would just match using the first page hash.
 
-In the cmdlets, rather than try to predict which hash CI will use, we pre calculate and use the 4 hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This is also resilient to if the signing status of the file changes and necessary for deny rules to ensure that changing/stripping the signature doesn’t result in a different hash than what was in the policy being used by CI.
+In the cmdlets, rather than try to predict which hash CI will use, we pre-calculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This is also resilient, if the signing status of the file changes and necessary for deny rules to ensure that changing/stripping the signature doesn’t result in a different hash than what was in the policy being used by CI.
 
 ### Why does scan create 8 hash rules for certain XML files?
 
