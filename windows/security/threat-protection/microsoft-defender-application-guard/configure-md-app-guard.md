@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/06/2021
+ms.date: 05/24/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -27,7 +27,7 @@ Application Guard uses both network isolation and application-specific settings.
 
 ## Network isolation settings
 
-These settings, located at **Computer Configuration\Administrative Templates\Network\Network Isolation**, help you define and manage your organization's network boundaries. Application Guard uses this information to automatically transfer any requests to access the non-corporate resources into the Application Guard container.
+These settings, located at `Computer Configuration\Administrative Templates\Network\Network Isolation`, help you define and manage your organization's network boundaries. Application Guard uses this information to automatically transfer any requests to access the non-corporate resources into the Application Guard container.
 
 > [!NOTE]
 > You must configure either the Enterprise resource domains hosted in the cloud or Private network ranges for apps settings on your employee devices to successfully turn on Application Guard using enterprise mode. Proxy servers must be a neutral resource listed in the "Domains categorized as both work and personal" policy.
@@ -48,7 +48,7 @@ These settings, located at **Computer Configuration\Administrative Templates\Net
 |`..contoso.com`|2|Trust all levels of the domain hierarchy that are to the left of the dot. Matching sites include `shop.contoso.com`, `us.shop.contoso.com`, `www.us.shop.contoso.com`, but NOT `contoso.com` itself.|
 
 ## Application-specific settings
-These settings, located at **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard**, can help you to manage your company's implementation of Application Guard.
+These settings, located at `Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard`, can help you to manage your company's implementation of Application Guard.
 
 |Name|Supported versions|Description|Options|
 |-----------|------------------|-----------|-------|
