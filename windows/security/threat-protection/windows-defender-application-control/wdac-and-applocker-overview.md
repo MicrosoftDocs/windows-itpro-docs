@@ -37,7 +37,7 @@ WDAC policies apply to the managed computer as a whole and affects all users of 
 - Attributes of the codesigning certificate(s) used to sign an app and its binaries
 - Attributes of the app's binaries that come from the signed metadata for the files, such as Original Filename and version, or the hash of the file
 - The reputation of the app as determined by Microsoft's [Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md)
-- The identity of the process that initiated the installation of the app and its binaries ([managed installer](use-windows-defender-application-control-with-managed-installer.md))
+- The identity of the process that initiated the installation of the app and its binaries ([managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md))
 - The [path from which the app or file is launched](select-types-of-rules-to-create.md#more-information-about-filepath-rules) (beginning with Windows 10 version 1903)
 - The process that launched the app or binary
 
