@@ -49,9 +49,7 @@ This article depicts the BitLocker deployment comparison chart.
 |Select cipher strength and algorithms for operating environment drives     |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |   :::image type="content" source="images/dot1.png" alt-text="dot":::    |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |
 |Standard recovery password storage location     |     Azure AD or 
 Active Directory    |     Configuration Manager site database    |    MBAM database     |
-|Store recovery password for operating system and 
-fixed drives to Azure AD or Active Directory     |    Yes (Active Directory and 
-Azure AD)     | Yes (Active Directory only)      |   Yes (Active Directory only)      |
+|Store recovery password for operating system and fixed drives to Azure AD or Active Directory     |    Yes (Active Directory and Azure AD)     | Yes (Active Directory only)      |   Yes (Active Directory only)      |
 |Customize preboot message and recovery link     | :::image type="content" source="images/dot1.png" alt-text="dot":::         | :::image type="content" source="images/dot1.png" alt-text="dot":::        |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |
 |Allow/deny key file creation     |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::     |   :::image type="content" source="images/dot1.png" alt-text="dot":::      |
 |Deny Write permission to unprotected drives     |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |  :::image type="content" source="images/dot1.png" alt-text="dot":::       |
