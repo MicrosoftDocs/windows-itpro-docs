@@ -32,7 +32,7 @@ While a WDAC policy is running in audit mode, any binary that runs but would hav
 
 ## Overview of the process to create WDAC policy to allow apps using audit events
 
-> [!Note]
+> [!NOTE]
 > You must have already deployed a WDAC audit mode policy to use this process. If you have not already done so, see [Deploying Windows Defender Application Control policies](windows-defender-application-control-deployment-guide.md).
 
 To familiarize yourself with creating WDAC rules from audit events, follow these steps on a device with a WDAC audit mode policy.
@@ -75,7 +75,7 @@ To familiarize yourself with creating WDAC rules from audit events, follow these
 
 8. Convert the Base or Supplemental policy to binary and deploy using your preferred method.
 
-## Convert WDAC **base** policy from audit to enforced
+## Convert WDAC **BASE** policy from audit to enforced
 
 As described in [common WDAC deployment scenarios](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
