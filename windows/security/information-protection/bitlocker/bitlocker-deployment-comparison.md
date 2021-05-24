@@ -16,7 +16,7 @@ ms.date: 05/20/2021
 ms.custom: bitlocker
 ---
 
-# Bitlocker deployment comparison
+# BitLocker deployment comparison
 
 **Applies to**
 
@@ -24,7 +24,7 @@ ms.custom: bitlocker
 
 This article depicts the BitLocker deployment comparison chart.
 
-## Bitlocker deployment comparison chart
+## BitLocker deployment comparison chart
 
 |  |Microsoft Intune  |Microsoft Endpoint Configuration Manager  |Microsoft BitLocker Administration and Monitoring (MBAM)* |
 |---------|---------|---------|---------|
