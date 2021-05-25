@@ -27,7 +27,7 @@ Windows Defender Application Control (WDAC) events include a number of fields wh
 Represents the type of signature which verified the image.
 
 | SignatureType Value | Explanation |
-|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|----------|
 | 0 | Unsigned or verification has not been attempted |
 | 1 | Embedded signature |
 | 2 | Cached signature; presence of CI EA shows that file had been previously verified |
@@ -42,7 +42,7 @@ Represents the type of signature which verified the image.
 Represents the signature level at which the code was verified.
 
 | ValidatedSigningLevel Value | Explanation |
-|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|----------|
 | 0 | Signing level has not yet been checked |
 | 1 | File is unsigned |
 | 2 | Trusted by WDAC policy |
@@ -61,7 +61,7 @@ Represents the signature level at which the code was verified.
 Represents why verification failed, or if it succeeded.
 
 | VerificationError Value | Explanation |
-|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|----------|
 | 0 | Successfully verified signature |
 | 1 | File has an invalid hash |
 | 2 | File contains shared writable sections |
@@ -94,8 +94,7 @@ Represents why verification failed, or if it succeeded.
 
 ## Microsoft Root CAs trusted by Windows
 
-The rule means trust anything signed by a cert that chains to this root CA. Enums without values start at 0, and increment by 1 as you go down the below list.<br>
-
+The rule means trust anything signed by a cert that chains to this root CA.
 | Root ID | Root Name |
 |---|----------|
 |0| None |
