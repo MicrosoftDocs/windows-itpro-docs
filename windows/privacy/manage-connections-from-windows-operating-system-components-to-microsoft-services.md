@@ -600,7 +600,7 @@ For a complete list of the Microsoft Edge policies, see [Group Policy and Mobile
 > - The following settings are applicable to Microsoft Edge version 77 or later.
 > - For details on supported Operating Systems see Microsoft Edge supported Operating Systems 
 > - These policies require the Microsoft Edge administrative templates to be applied. For more information on administrative templates for Microsoft Edge, see [Configure Microsoft Edge policy settings on Windows](/deployedge/configure-microsoft-edge).
-> - Devices must be domain joined for some of the policies to take effect. 
+> - Devices must be domain joined for some of the policies to take effect.
 
 | Policy                           | Group Policy Path  | Registry Path                               |
 |----------------------------------|--------------------|---------------------------------------------|
