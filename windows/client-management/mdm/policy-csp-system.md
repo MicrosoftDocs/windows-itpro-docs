@@ -736,12 +736,21 @@ The following list shows the supported values for Windows 8.1:
 </tbody>
 </table>-->
 
-In Windows 10, you can configure this policy setting to decide what level of diagnostic data to send to Microsoft. The following list shows the supported values for Windows 10:  
+In Windows 10, you can configure this policy setting to decide what level of diagnostic data to send to Microsoft.
+
+The following list shows the supported values for Windows 10 version 1809 and older:
+
 -   0 – (**Security**) Sends information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Microsoft Defender. 
     **Note:** This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), Hololens 2, and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
 -   1 – (**Basic**) Sends the same data as a value of 0, plus additional basic device info, including quality-related data, app compatibility, and app usage data.
 -   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows, Windows Server, System Center, and apps are used, how they perform, and advanced reliability data.
 -   3 – (**Full**) Sends the same data as a value of 2, plus all data necessary to identify and fix problems with devices.
+
+The following list shows the supported values for  Windows 10 version 19H1 and later:
+
+-   Diagnostic data off - No Windows diagnostic data sent.
+-   Required (Basic) - Minimum data required to keep the device secure, up to date, and performing as expected.
+-   Optional (Full) - Additional data about the websites you browse, how Windows and apps are used and how they perform. This data also includes data about device activity, and enhanced error reporting that helps Microsoft to fix and improve products and services for all users.
 
 <!--<table style="margin-left: 20px">
 <colgroup>
@@ -771,13 +780,6 @@ In Windows 10, you can configure this policy setting to decide what level of dia
 </tr>
 </tbody>
 </table>-->
-
-
-> [!IMPORTANT]
-> If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
-
-
-Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1609,7 +1611,7 @@ This policy setting, in combination with the System/AllowTelemetry
 To enable this behavior, you must complete two steps:
 <ul>
 <li>Enable this policy setting</li>
-<li>Set Allow Telemetry to level 2 (Enhanced)</li>
+<li>Set Allow Telemetry to Optional (Full)</li>
 </ul>
  
 When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
