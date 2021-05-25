@@ -94,29 +94,29 @@ Represents why verification failed, or if it succeeded.
 
 ## Microsoft Root CAs trusted by Windows
 
-The rule means trust anything signed by a cert that chains to this root CA. Enums without values start at 0, and increment by 1 as you go down the below list.
+The rule means trust anything signed by a cert that chains to this root CA. Enums without values start at 0, and increment by 1 as you go down the below list.<br>
 
-typedef enum _MINCRYPT_KNOWN_ROOT_ID {
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootNone, <mark><-- 0</mark><br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootUnknown,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootSelfsigned,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftAuthenticodeRoot,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftProductRoot1997,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftProductRoot2001,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftProductRoot2010,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftStandardRoot2011,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftCodeVerificationRoot2006,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftTestRoot1999,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftTestRoot2010,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftDMDTestRoot2005,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftDMDRoot2005,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftDMDPreviewRoot2005,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftFlightRoot2014,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftThirdPartyMarketplaceRoot,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftEccTestingRootCa2017,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftEccDevelopmentRootCa2018,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftEccProductRootCa2018,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftEccDevicesRootCa2017,<br>
-} MINCRYPT_KNOWN_ROOT_ID, *PMINCRYPT_KNOWN_ROOT_ID;<br>
+| Root ID | Root Name |
+|---|----------|
+|0| None |
+|1| Unknown |
+|2 | Self-Signed |
+|3 | Authenticode |
+|4 | Microsoft Product Root 1997 |
+|5 | Microsoft Product Root 2001 |
+|6 | Microsoft Product Root 2010 |
+|7 | Microsoft Standard Root 2011 |
+|8 | Microsoft Code Verification Root 2006 |
+|9 | Microsoft Test Root 1999 |
+|10 | Microsoft Tes\t Root 2010 |
+|11 | Microsoft DMD Test Root 2005 |
+|12 | Microsoft DMDRoot 2005 |
+|13 | Microsoft DMD Preview Root 2005 |
+|14 | Microsoft Flight Root 2014 |
+|15 | Microsoft Third Party Marketplace Root  |
+|16 | Microsoft Ecc Testing Root Ca2017 |
+|17 | Microsoft Ecc Developmen tRoot Ca 2018 |
+|18 | Microsoft Ecc Product Root Ca 2018 |
+|19 | Microsoft Ecc Devices Root Ca 2017 |
 
 For well-known roots, the TBS hashes for the certificates are baked into the code for WDAC. For example, they don’t need to be listed as TBS hashes in the policy file.
