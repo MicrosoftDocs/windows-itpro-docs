@@ -597,7 +597,7 @@ For a complete list of the Microsoft Edge policies, see [Available policies for 
 For a complete list of the Microsoft Edge policies, see [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](/microsoft-edge/deploy/available-policies). 
 
 > [!Important]
-> - The following settings are applicable to Microsoft Edge version 77 or later. 
+> - The following settings are applicable to Microsoft Edge version 77 or later.
 > - For details on supported Operating Systems see Microsoft Edge supported Operating Systems 
 > - These policies require the Microsoft Edge administrative templates to be applied. For more information on administrative templates for Microsoft Edge see Configure Microsoft Edge policy settings on Windows 
 > - Devices must be domain joined for some of the policies to take effect. 
