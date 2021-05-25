@@ -594,7 +594,7 @@ For a complete list of the Microsoft Edge policies, see [Available policies for 
 
 ### <a href="" id="bkmk-edgegp"></a>13.2 Microsoft Edge Enterprise
 
-For a complete list of the Microsoft Edge policies, see [Microsoft Edge and privacy: FAQ](https://docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies). 
+For a complete list of the Microsoft Edge policies, see [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](/microsoft-edge/deploy/available-policies). 
 
 > [!Important]
 > - The following settings are applicable to Microsoft Edge version 77 or later. 
