@@ -18,7 +18,7 @@ ms.date: 8/27/2020
 ms.technology: mde
 ---
 
-## Understanding Application Control event tags
+# Understanding Application Control event tags
 
 Windows Defender Application Control (WDAC) events include a number of fields which provide helpful troubleshooting information to figure out exactly what an event means. Below, we have documented the values and meanings for a few useful event tags.
 
@@ -91,3 +91,32 @@ Represents why verification failed, or if it succeeded.
 | 26 | Explicitly denied by WADC policy |
 | 27 | The signing chain appears to be tampered/invalid |
 | 28 | Resource page hash mismatch |
+
+## Microsoft Root CAs trusted by Windows
+
+The rule means trust anything signed by a cert that chains to this root CA. Enums without values start at 0, and increment by 1 as you go down the below list.
+
+typedef enum _MINCRYPT_KNOWN_ROOT_ID {
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootNone, <mark><-- 0</mark><br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootUnknown,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootSelfsigned,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftAuthenticodeRoot,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftProductRoot1997,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftProductRoot2001,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftProductRoot2010,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftStandardRoot2011,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftCodeVerificationRoot2006,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftTestRoot1999,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftTestRoot2010,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftDMDTestRoot2005,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftDMDRoot2005,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftDMDPreviewRoot2005,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftFlightRoot2014,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftThirdPartyMarketplaceRoot,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftEccTestingRootCa2017,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftEccDevelopmentRootCa2018,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftEccProductRootCa2018,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MincryptKnownRootMicrosoftEccDevicesRootCa2017,<br>
+} MINCRYPT_KNOWN_ROOT_ID, *PMINCRYPT_KNOWN_ROOT_ID;<br>
+
+For well-known roots, the TBS hashes for the certificates are baked into the code for WDAC. For example, they don’t need to be listed as TBS hashes in the policy file.
