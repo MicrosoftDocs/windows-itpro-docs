@@ -18,7 +18,7 @@ ms.date: 3/17/2020
 ms.technology: mde
 ---
 
-## Understanding Application Control events
+# Understanding Application Control events
 
 A Windows Defender Application Control (WDAC) policy logs events locally in Windows Event Viewer in either enforced or audit mode. These events are generated under two locations:
 
