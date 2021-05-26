@@ -107,15 +107,15 @@ The rule means trust anything signed by a cert that chains to this root CA.
 |7 | Microsoft Standard Root 2011 |
 |8 | Microsoft Code Verification Root 2006 |
 |9 | Microsoft Test Root 1999 |
-|10 | Microsoft Tes\t Root 2010 |
+|10 | Microsoft Test Root 2010 |
 |11 | Microsoft DMD Test Root 2005 |
 |12 | Microsoft DMDRoot 2005 |
 |13 | Microsoft DMD Preview Root 2005 |
 |14 | Microsoft Flight Root 2014 |
 |15 | Microsoft Third Party Marketplace Root  |
-|16 | Microsoft Ecc Testing Root Ca2017 |
-|17 | Microsoft Ecc Developmen tRoot Ca 2018 |
-|18 | Microsoft Ecc Product Root Ca 2018 |
-|19 | Microsoft Ecc Devices Root Ca 2017 |
+|16 | Microsoft ECC Testing Root CA 2017 |
+|17 | Microsoft ECC Development Root CA 2018 |
+|18 | Microsoft ECC Product Root CA 2018 |
+|19 | Microsoft ECC Devices Root CA 2017 |
 
 For well-known roots, the TBS hashes for the certificates are baked into the code for WDAC. For example, they don’t need to be listed as TBS hashes in the policy file.
