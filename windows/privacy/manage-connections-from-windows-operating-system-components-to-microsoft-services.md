@@ -555,6 +555,8 @@ To disable the Microsoft Account Sign-In Assistant:
 
 Use Group Policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682) and [Configure Microsoft Edge policy settings on Windows](/DeployEdge/configure-microsoft-edge).
 
+For a complete list of the Microsoft Edge policies, see [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](/microsoft-edge/deploy/available-policies). 
+
 ### <a href="" id="bkmk-edgegp"></a>13.1 Microsoft Edge Group Policies
 
 Find the Microsoft Edge Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge**.
@@ -590,11 +592,7 @@ Alternatively, you can configure the following Registry keys as described:
 | Choose whether employees can configure Compatibility View. | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BrowserEmulation<br/>REG_DWORD: MSCompatibilityMode <br />Value: **0**|
 
 
-For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](/microsoft-edge/deploy/available-policies).
-
 ### <a href="" id="bkmk-edgegp"></a>13.2 Microsoft Edge Enterprise
-
-For a complete list of the Microsoft Edge policies, see [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](/microsoft-edge/deploy/available-policies). 
 
 > [!Important]
 > - The following settings are applicable to Microsoft Edge version 77 or later.
