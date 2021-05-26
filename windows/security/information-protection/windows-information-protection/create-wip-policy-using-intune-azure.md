@@ -52,9 +52,9 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
 
 ## Create a WIP policy
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
 
-2. Open Microsoft Intune and click **Client apps** > **App protection policies** > **Create policy**.
+2. Open Microsoft Intune and click **Apps** > **App protection policies** > **Create policy**.
 
    ![Open Client apps](images/create-app-protection-policy.png)
 
