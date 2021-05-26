@@ -1615,7 +1615,7 @@ To enable this behavior, you must complete two steps:
 -   Enable this policy setting
 -   Set the **AllowTelemetry** level:
     - For Windows 10 version 1809 and older: set **AllowTelemetry** to (Enhanced) 
-    - For Windows 10 version 19H1 and later: set **AllowTelemetry** to Optional (Full). 
+    - For Windows 10 version 19H1 and later: set **AllowTelemetry** to Optional (Full)
 
  
 When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
