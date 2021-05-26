@@ -22,8 +22,6 @@
               items: 
                 - name: Allow apps installed by a managed installer
                   href: configure-authorized-apps-deployed-with-a-managed-installer.md
-                - name: Configure managed installer rules
-                  href: configure-authorized-apps-deployed-with-a-managed-installer.md
                 - name: Allow reputable apps with Intelligent Security Graph (ISG)
                   href: use-windows-defender-application-control-with-intelligent-security-graph.md
                 - name: Allow COM object registration
