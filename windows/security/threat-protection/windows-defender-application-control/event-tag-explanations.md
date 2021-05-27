@@ -95,6 +95,7 @@ Represents why verification failed, or if it succeeded.
 ## Microsoft Root CAs trusted by Windows
 
 The rule means trust anything signed by a certificate that chains to this root CA.
+
 | Root ID | Root Name |
 |---|----------|
 | 0| None |
