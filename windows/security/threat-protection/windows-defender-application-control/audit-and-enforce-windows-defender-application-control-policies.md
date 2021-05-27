@@ -41,7 +41,8 @@ To familiarize yourself with creating WDAC rules from audit events, follow these
 
 2. Review the **CodeIntegrity - Operational** and **AppLocker - MSI and Script** event logs to confirm events, like those shown in Figure 1, are generated related to the application. For information about the types of events you should see, refer to [Understanding Application Control events](event-id-explanations.md).
 
-   **Figure 1. Exceptions to the deployed WDAC policy**
+   **Figure 1. Exceptions to the deployed WDAC policy** <br>
+
    ![Event showing exception to WDAC policy](images/dg-fig23-exceptionstocode.png)
 
 3. In an elevated PowerShell session, run the following commands to initialize variables used by this procedure. This procedure builds upon the **Lamna_FullyManagedClients_Audit.xml** policy introduced in [Create a WDAC policy for fully managed devices](create-wdac-policy-for-fully-managed-devices.md) and will produce a new policy called **EventsPolicy.xml**.
