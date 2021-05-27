@@ -54,7 +54,7 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
 
 ### Deploying signed policies
 
-In addition to the steps outlined above, the binary policy file must also be copied to the device's EFI partition. Deploying your policy via [MEM](deploy-windows-defender-application-control-policies-using-intune.md) or the [Application Control CSP](#Deploying-multiple-policies-via-ApplicationControl-CSP) will handle this step automatically. 
+In addition to the steps outlined above, the binary policy file must also be copied to the device's EFI partition. Deploying your policy via [MEM](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune.md) or the [Application Control CSP](#Deploying-multiple-policies-via-ApplicationControl-CSP) will handle this step automatically. 
 
 1. Mount the EFI volume and make the directory, if it does not exist, in an elevated PowerShell prompt: 
 ```powershell
