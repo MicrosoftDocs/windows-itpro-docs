@@ -71,6 +71,18 @@ sections:
           The JavaScript limitation was updated to 10 KB from 4 KB.
           
           For more information, see [Internet Explorer Cookie Internals (FAQ)](/archive/blogs/ieinternals/internet-explorer-cookie-internals-faq).
+
+  - name: Additional information about cookie limits
+    questions:
+      - question: |
+          What does the Cookie RFC allow?
+        answer: |
+          RFC 2109 defines how cookies should be implemented, and it defines minimum values that browsers support. According to the RFC, browsers would ideally have no limits on the size and number of cookies that a browser can handle. To meet the specifications, the user agent should support the following:
+
+          - At least 300 cookies total
+          - At least 20 cookies per unique host or domain name
+
+          For practicality, individual browser makers set a limit on the total number of cookies that any one domain or unique host can set. They also limit the total number of cookies that can be stored on a computer.
           
       - question: |
           Cookie size limit per domain
