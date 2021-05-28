@@ -146,6 +146,41 @@ sections:
           
           - [Create an inbound icmp rule](../windows-firewall/create-an-inbound-icmp-rule.md)
           - [Open Group Policy management console for Microsoft Defender Firewall](../windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md)
+
+          ### First rule (DHCP Server)
+          1. Program path: `%SystemRoot%\System32\svchost.exe`
+          
+          2. Local Service: `Sid:  S-1-5-80-2009329905-444645132-2728249442-922493431-93864177  (Internet Connection Service (SharedAccess))`
+          
+          3. Protocol UDP
+          
+          4. Port 67
+          
+          ### Second rule (DHCP Client)
+          This is the same as the first rule, but scoped to local port 68. In the Microsoft Defender Firewall user interface go through the following steps:
+          
+          1. Right-click on inbound rules, and then create a new rule.
+          
+          2. Choose **custom rule**.
+          
+          3. Specify the following program path: `%SystemRoot%\System32\svchost.exe`.
+          
+          4. Specify the following settings:
+              - Protocol Type: UDP
+              - Specific ports: 67
+              - Remote port: any
+          
+          5. Specify any IP addresses.
+          
+          6. Allow the connection.
+          
+          7. Specify to use all profiles.
+          
+          8. The new rule should show up in the user interface. Right click on the **rule** > **properties**.
+          
+          9. In the **Programs and services** tab, under the **Services** section, select **settings**.
+          
+          10. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
           
       - question: |
           Why can I not launch Application Guard when Exploit Guard is enabled?
