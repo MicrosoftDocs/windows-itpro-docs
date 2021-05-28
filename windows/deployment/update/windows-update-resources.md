@@ -43,9 +43,10 @@ The following resources provide additional information about using Windows Updat
 - Try the steps in [Troubleshoot problems updating Windows 10](https://support.microsoft.com/windows/troubleshoot-problems-updating-windows-10-188c2b0f-10a7-d72f-65b8-32d177eb136c).
 - Try the steps in [Fix Windows Update](https://support.microsoft.com/sbs/windows/fix-windows-update-errors-18b693b5-7818-5825-8a7e-2a4a37d6d787) errors.
 
-If all else fails, try resetting the Windows Update Agent by running these commands from an elevated command prompt:
+If all else fails, try resetting the Windows Update Agent by running these commands from an elevated Windows Terminal or shell:
 
    ``` console
+   cmd
    net stop wuauserv
    rd /s /q %systemroot%\SoftwareDistribution
    net start wuauserv
