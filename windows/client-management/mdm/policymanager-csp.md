@@ -20,7 +20,9 @@ PolicyManager CSP is deprecated. Use [Policy CSP](policy-configuration-service-p
 > **Note**   The PolicyManager CSP is supported in Windows 10 Mobile for backward compatibility. For Windows 10 devices you should use [Policy CSP](policy-configuration-service-provider.md), which replaces PolicyManager CSP. You can continue to use PolicyManager CSP for Windows Phone 8.1 and Windows Phone 8.1 GDR devices.
 
 
+## Related topics
 
+[Configuration service provider reference](configuration-service-provider-reference.md)
 
 
 
