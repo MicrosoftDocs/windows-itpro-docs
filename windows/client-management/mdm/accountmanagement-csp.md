@@ -60,3 +60,7 @@ Supported operations are Add, Get,Replace, and Delete. Value type is integer.
 Start deleting profiles when they have not been logged on during the specified period, given as number of days. Default value is 30.
 
 Supported operations are Add, Get,Replace, and Delete. Value type is integer.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
