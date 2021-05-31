@@ -351,5 +351,7 @@ Bits 2 and 4 are reserved for future use.
 
 Supported operation is Get. Value type is integer.
 
- 
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
 
