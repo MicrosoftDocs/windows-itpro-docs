@@ -214,3 +214,7 @@ Scope is permanent. Supported operation is Get.
 Value type is boolean. Expected values are as follows:
 - true — Indicates that ESP has completed. This is the default.
 - false — Indicates that ESP is displayed, and provisioning is still going.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
