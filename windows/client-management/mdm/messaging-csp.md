@@ -102,3 +102,7 @@ The following diagram shows the Messaging configuration service provider in tree
   </SyncBody>
 </SyncML>
 ```
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
