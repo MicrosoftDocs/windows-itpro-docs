@@ -57,7 +57,9 @@ Added in Windows 10, version 1709. Enrollment information string value set by th
 
 Data type is string. Supported operations are Add, Get, Delete, and Replace. 
 
+## Related topics
 
+[Configuration service provider reference](configuration-service-provider-reference.md)
 
 
 
