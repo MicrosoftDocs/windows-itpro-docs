@@ -164,12 +164,6 @@ Here is an example that gets the status of the New York map package on the devic
 </SyncML>
 ```
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Configuration service provider reference](configuration-service-provider-reference.md)
