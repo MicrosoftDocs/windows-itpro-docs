@@ -748,7 +748,7 @@ The following list shows the supported values for Windows 10 version 1809 and ol
 
 Most restricted value is 0.
 
-For Windows 10 version 19H1 and later we simplified your diagnostic data controls by moving from four diagnostic data controls to three. The following list shows the supported values:
+For Windows 10 version 19H1 and later, we simplified your diagnostic data controls by moving from four diagnostic data controls to three. The following list shows the supported values:
 
 -   **0 - Diagnostic data off** - No Windows diagnostic data sent.
 -   **1 - Required (Basic)** - Minimum data required to keep the device secure, up to date, and performing as expected.
