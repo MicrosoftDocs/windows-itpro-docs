@@ -67,6 +67,8 @@ Enable logging of audit events.
 
 For more information about Windows security auditing, see [What's new in security auditing](/windows/whats-new/whats-new-windows-10-version-1507-and-1511).
 
- 
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
 
  
