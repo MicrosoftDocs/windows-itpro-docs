@@ -70,3 +70,7 @@ The following example shows how to add a wired network profile:
   </SyncBody>
 </SyncML>
 ```
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
