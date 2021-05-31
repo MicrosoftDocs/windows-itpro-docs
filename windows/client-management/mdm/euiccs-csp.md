@@ -112,3 +112,7 @@ Supported operation is Execute. Value type is string.
 Required. Status of most recent operation, as an HRESULT. S_OK indicates success, S_FALSE indicates operation is in progress, other values represent specific errors.
 
 Supported value is Get. Value type is integer. Default is 0.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
