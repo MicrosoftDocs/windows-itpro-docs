@@ -320,3 +320,7 @@ ADMX Info:
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
