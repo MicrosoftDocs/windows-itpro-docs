@@ -638,3 +638,7 @@ For the report XML schema, see [Windows Error Reporting connection report](#wind
     <xs:element name="ConnectionReport" type="ConnectionReportType"/>
 </xs:schema>
 ```
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
