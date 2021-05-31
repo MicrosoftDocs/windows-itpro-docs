@@ -67,3 +67,8 @@ GET operation is not supported.  This setting will report as failed when deploye
 This optional node specifies the local user group that a local user account should be joined to.  If the node is not set, the new local user account is joined just to the Standard Users group.  Set the value to 2 for Administrators group. This setting can be managed remotely.
 
 Supported operation is Add.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
+
