@@ -599,3 +599,6 @@ SurfaceHub
 
 <p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace. The Get operation is allowed, but it will always return an empty string.
 
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
