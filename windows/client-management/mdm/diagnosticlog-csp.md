@@ -1615,3 +1615,7 @@ To read a log file:
 6. Get **BlockData** for upload log block.
 7. Increase **BlockIndexToRead**.
 8. Repeat steps 5 to 7 until **BlockIndexToRead == (BlockIndexToRead – 1)**.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
