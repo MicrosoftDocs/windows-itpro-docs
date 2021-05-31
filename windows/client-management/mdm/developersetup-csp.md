@@ -80,3 +80,7 @@ If authentication is enabled, <strong>HttpPort</strong> will redirect the user t
 <p style="margin-left: 20px">An integer value that is used to configure the HTTPS port for incoming connections to the Windows Device Portal service.  
 
 <p style="margin-left: 20px">The only supported operation is Replace.
+  
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
