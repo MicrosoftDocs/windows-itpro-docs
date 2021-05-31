@@ -350,3 +350,7 @@ Added in Windows, version 1709. Local System Authority (LSA) credential guard s
 
 
 Supported operation is Get.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
