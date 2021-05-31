@@ -56,3 +56,7 @@ Here is an example:
     </Item>
 </Replace>
 ```
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
