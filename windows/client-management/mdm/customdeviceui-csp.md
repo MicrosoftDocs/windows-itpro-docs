@@ -105,7 +105,9 @@ Package Full Name of the App that needs be launched in the background. This can 
 </SyncML>
 ```
 
- 
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
 
  
 
