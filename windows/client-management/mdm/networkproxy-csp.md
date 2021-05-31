@@ -142,3 +142,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
     </Item>
 </Replace>
 ```
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
