@@ -156,3 +156,7 @@ EnterpriseAppVManagement
 **AppVDynamicPolicy/*ConfigurationId*/Policy**  
 <p style="margin-left: 20px">XML for App-V Policy Configuration documents for publishing packages.</p>
 <p style="margin-left: 20px">Value type is xml. Supported operations are Add, Get, Delete, and Replace.</p>
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
