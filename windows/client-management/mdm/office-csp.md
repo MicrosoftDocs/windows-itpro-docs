@@ -288,3 +288,7 @@ To get the current status of Office 365 on the device.
 </tr>
 </tbody>
 </table>
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
