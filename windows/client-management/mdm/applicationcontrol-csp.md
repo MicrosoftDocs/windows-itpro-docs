@@ -316,3 +316,7 @@ New-CimInstance -Namespace $namespace -ClassName $policyClassName -Property @{Pa
 ```powershell
 Get-CimInstance -Namespace $namespace -ClassName $policyClassName
 ```
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
