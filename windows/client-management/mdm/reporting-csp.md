@@ -164,7 +164,9 @@ Retrieve a specified number of security auditing logs starting from the specifie
 </SyncML>
 ```
 
- 
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
 
  
 
