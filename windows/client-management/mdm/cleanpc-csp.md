@@ -34,3 +34,7 @@ CleanPC
 <p style="margin-left: 20px">An integer specifying a CleanPC operation with retention of user data. 
 
 <p style="margin-left: 20px">The only supported operation is Execute.
+  
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
