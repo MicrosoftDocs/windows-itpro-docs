@@ -375,12 +375,6 @@ Removed in Windows 10.
 <a href="" id="disableenterprisevalidation"></a>**DisableEnterpriseValidation**  
 Removed in Windows 10.
 
- 
+## Related topics
 
- 
-
-10/10/2016
-
-
-
-
+[Configuration service provider reference](configuration-service-provider-reference.md) 
