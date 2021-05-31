@@ -54,7 +54,9 @@ The following sample shows how to initiate a remote ring on the device.
 </Exec>
 ```
 
- 
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md) 
 
  
 
