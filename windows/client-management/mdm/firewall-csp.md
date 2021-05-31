@@ -422,3 +422,7 @@ Sample syncxml to provision the firewall settings to evaluate
 <a href="" id="name"></a>**FirewallRules/_FirewallRuleName_/Name**
 <p style="margin-left: 20px">Name of the rule.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
