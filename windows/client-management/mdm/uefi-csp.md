@@ -157,4 +157,7 @@ Supported operation is Get.
 
 ## Related topics
 
+[Configuration service provider reference](configuration-service-provider-reference.md)
+
+
 [UEFI DDF file](./uefi-ddf.md)
