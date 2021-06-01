@@ -70,5 +70,4 @@ For more information about Windows security auditing, see [What's new in securit
 ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
  
