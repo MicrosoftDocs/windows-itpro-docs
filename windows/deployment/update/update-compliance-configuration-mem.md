@@ -20,11 +20,11 @@ ms.topic: article
 > [!NOTE]
 > As of May 10, 2021, a new policy is required to use Update Compliance: "Allow Update Compliance Processing." For more details, see the Mobile Device Management policies and Group policies tables.
 
-This article is specifically targeted at configuring devices enrolled to [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) for Update Compliance, within MEM itself. Configuring devices for Update Compliance in MEM breaks down to the following steps:
+This article is specifically targeted at configuring devices enrolled to [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) for Update Compliance, within MEM itself. Configuring devices for Update Compliance in MEM breaks down to the following steps:
 
 1. [Create a configuration profile](#create-a-configuration-profile) for devices you want to enroll, that contains settings for all the MDM policies that must be configured. 
 2. [Deploy the configuration script](#deploy-the-configuration-script) as a Win32 app to those same devices, so additional checks can be performed to ensure devices are correctly configured. 
-3. Wait for data to populate. The length of this process depends on the computer being on, connected to the internet, and correctly configured. Some data types take longer to appear than others. You can learn more about this in the broad section on [enrolling devices to Update Compliance](update-compliance-get-started.md##enroll-devices-in-update-compliance). 
+3. Wait for data to populate. The length of this process depends on the computer being on, connected to the internet, and correctly configured. Some data types take longer to appear than others. You can learn more about this in the broad section on [enrolling devices to Update Compliance](update-compliance-get-started.md#enroll-devices-in-update-compliance). 
 
 ## Create a configuration profile
 
@@ -71,6 +71,6 @@ Take the following steps to create a configuration profile that will set require
 
 ## Deploy the configuration script
 
-The [Update Compliance Configuration Script](update-compliance-configuration-script.md) is an important component of properly enrolling devices in Update Compliance, though it isn't strictly necessary. It checks to ensure that devices have the required services running and checks connectivity to the endpoints detailed in the section on [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md). You can deploy the script as a Win32 app. For more information, see [Win32 app management in Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management). 
+The [Update Compliance Configuration Script](update-compliance-configuration-script.md) is an important component of properly enrolling devices in Update Compliance, though it isn't strictly necessary. It checks to ensure that devices have the required services running and checks connectivity to the endpoints detailed in the section on [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md). You can deploy the script as a Win32 app. For more information, see [Win32 app management in Microsoft Intune](/mem/intune/apps/apps-win32-app-management). 
 
 When you deploy the configuration script as a Win32 app, you won't be able to retrieve the results of logs on the device without having access to the device, or saving results of the logs to a shared filesystem. We recommend deploying the script in Pilot mode to a set of devices that you do have access to, or have a way to access the resultant log output the script provides, with as similar of a configuration profile as other devices which will be enrolled to Update Compliance, and analyzing the logs for any potential issues. Following this, you can deploy the configuration script in Deployment mode as a Win32 app to all Update Compliance devices. 
