@@ -26,7 +26,7 @@ This topic introduces the high-level steps required to enroll to the Update Comp
 2. [Add Update Compliance](#add-update-compliance-to-your-azure-subscription) to your Azure subscription.
 3. [Configure devices](#enroll-devices-in-update-compliance)  to send data to Update Compliance.
 
-After adding the solution to Azure and configuring devices, it can take some time before all devices appear, this is discussed in more detail in the [enrollment section](#enroll-devices-in-update-compliance). Before or as devices appear, you can learn how to [Use Update Compliance](update-compliance-using.md) to monitor Windows Updates and Delivery Optimization.
+After adding the solution to Azure and configuring devices, it can take some time before all devices appear. For more information, see the [enrollment section](#enroll-devices-in-update-compliance). Before or as devices appear, you can learn how to [Use Update Compliance](update-compliance-using.md) to monitor Windows Updates and Delivery Optimization.
 
 ## Update Compliance prerequisites
 
