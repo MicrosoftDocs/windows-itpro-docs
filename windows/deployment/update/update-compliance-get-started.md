@@ -26,7 +26,7 @@ This topic introduces the high-level steps required to enroll to the Update Comp
 2. [Add Update Compliance](#add-update-compliance-to-your-azure-subscription) to your Azure subscription.
 3. [Configure devices](#enroll-devices-in-update-compliance)  to send data to Update Compliance.
 
-After adding the solution to Azure and configuring devices, it could take up to 72 hours before you can begin to see devices in the solution. Before or as devices appear, you can learn how to [Use Update Compliance](update-compliance-using.md) to monitor Windows Updates and Delivery Optimization.
+After adding the solution to Azure and configuring devices, it can take some time before all devices appear. For more information, see the [enrollment section](#enroll-devices-in-update-compliance). Before or as devices appear, you can learn how to [Use Update Compliance](update-compliance-using.md) to monitor Windows Updates and Delivery Optimization.
 
 ## Update Compliance prerequisites
 
@@ -100,10 +100,11 @@ To find your CommercialID within Azure:
 
 ## Enroll devices in Update Compliance
 
-Once you've added Update Compliance to a workspace in your Azure subscription, you'll need to configure any devices you want to monitor. There are two ways to configure devices to use Update Compliance:
+Once you've added Update Compliance to a workspace in your Azure subscription, you'll need to configure any devices you want to monitor. There are a few steps to follow when enrolling devices to Update Compliance:
 
-- If you use Group Policy to manage device policies, use the [Update Compliance Configuration Script](update-compliance-configuration-script.md).
-- If you manage devices through MDM providers like Intune, [manually configure device for Update Compliance](update-compliance-configuration-manual.md).
+1. Check the policies, services, and other device enrollment requirements in [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md).
+2. If you use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), you can follow the enrollment process documented at [Configuring devices for Update Compliance in Microsoft Endpoint Manager](update-compliance-configuration-mem.md).
+3. Finally, you should run the [Update Compliance Configuration Script](update-compliance-configuration-script.md) on all devices to ensure they are appropriately configured and troubleshoot any enrollment issues.
 
 After you configure devices, diagnostic data they send will begin to be associated with your Azure AD organization ("tenant"). However, enrolling to Update Compliance doesn't influence the rate at which required data is uploaded from devices. Device connectivity to the internet and generally how active the device is highly influences how long it will take before the device appears in Update Compliance. Devices that are active and connected to the internet daily can expect to be fully uploaded within one week (usually less than 72 hours). Devices that are less active can take up to two weeks before data is fully available. 
 
