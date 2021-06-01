@@ -9,12 +9,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: linque1
-ms.author: robsize
-manager: robsize
+author: tomlayson
+ms.author: tomlayson
+manager: riche
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 12/1/2020
+ms.date: 5/21/2021
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
@@ -555,6 +555,8 @@ To disable the Microsoft Account Sign-In Assistant:
 
 Use Group Policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682) and [Configure Microsoft Edge policy settings on Windows](/DeployEdge/configure-microsoft-edge).
 
+For a complete list of the Microsoft Edge policies, see [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](/microsoft-edge/deploy/available-policies). 
+
 ### <a href="" id="bkmk-edgegp"></a>13.1 Microsoft Edge Group Policies
 
 Find the Microsoft Edge Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge**.
@@ -590,7 +592,45 @@ Alternatively, you can configure the following Registry keys as described:
 | Choose whether employees can configure Compatibility View. | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BrowserEmulation<br/>REG_DWORD: MSCompatibilityMode <br />Value: **0**|
 
 
-For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](/microsoft-edge/deploy/available-policies).
+### <a href="" id="bkmk-edgegp"></a>13.2 Microsoft Edge Enterprise
+
+> [!Important]
+> - The following settings are applicable to Microsoft Edge version 77 or later.
+> - For details on supported Operating Systems, see [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems).
+> - These policies require the Microsoft Edge administrative templates to be applied. For more information on administrative templates for Microsoft Edge, see [Configure Microsoft Edge policy settings on Windows](/deployedge/configure-microsoft-edge).
+> - Devices must be domain joined for some of the policies to take effect.
+
+| Policy                           | Group Policy Path  | Registry Path                               |
+|----------------------------------|--------------------|---------------------------------------------|
+| **SearchSuggestEnabled**         |  Computer Configuration/Administrative Templates/Windows Component/Microsoft Edge - Enable search suggestions  | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge |
+|                                  | **Set to Disabled**| **REG_DWORD name: SearchSuggestEnabled Set to 0** | 
+| **AutofillAddressEnabled**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge - Enable AutoFill for addresses  | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge |
+|                                  | **Set to Disabled**| **REG_DWORD name: AutofillAddressEnabled Set to 0** | 
+| **AutofillCreditCardEnabled**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge - Enable AutoFill for credit cards  | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge |
+|                                  | **Set to Disabled**| **REG_DWORD name: AutofillCreditCardEnabled Set to 0** | 
+| **ConfigureDoNotTrack**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge - Configure Do Not Track   | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge |
+|                                  | **Set to Enabled**| **REG_DWORD name: ConfigureDoNotTrack Set to 1** | 
+| **PasswordManagerEnabled**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge/Password manager and protection-Enable saving passwords to the password manager  | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge |
+|                                  | **Set to Disabled**| **REG_DWORD name: PasswordManagerEnabled Set to 0** | 
+| **DefaultSearchProviderEnabled**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge/Default search provider-Enable the default search provider  | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge |
+|                                  | **Set to Disabled**| **REG_DWORD name: DefaultSearchProviderEnabled Set to 0** | 
+| **HideFirstRunExperience**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge/Hide the First-run experience and splash screen   | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge |
+|                                  | **Set to Enabled**| **REG_DWORD name: HideFirstRunExperience Set to 1** | 
+| **SmartScreenEnabled**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge/SmartScreen settings-Configure Microsoft Defender SmartScreen  | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge |
+|                                  | **Set to Disabled**| **REG_DWORD name: SmartScreenEnabled Set to 0** | 
+| **NewTabPageLocation**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge/Startup, home page and new tab page- Configure the new tab page URL | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge |
+|                                  | **Set to Enabled-Value “about:blank”**| **REG_SZ name: NewTabPageLocation Set to about:blank** | 
+| **RestoreOnStartup**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge/Startup, home page and new tab page- Action to take on startup   | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge |
+|                                  | **Set to Disabled**| **REG_DWORD name: RestoreOnStartup Set to 5** | 
+| **RestoreOnStartupURLs**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge/Startup, home page and new tab page- Sites to open when the browser starts | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge\RestoreOnStartupURLs |
+|                                  | **Set to Disabled**| **REG_SZ name: 1 Set to about:blank** |
+| **UpdateDefault**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge Update/Applications-Update policy override default   | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge\EdgeUpdate |
+|                                  | **Set to Enabled - 'Updates disabled'**| **REG_DWORD name: UpdateDefault Set to 0** | 
+| **AutoUpdateCheckPeriodMinutes**       |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge Update/Preferences- Auto-update check period override | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge\EdgeUpdate |
+|                                  | **Set to Enabled - Set Value for Minutes between update checks to 0**| **REG_DWORD name: AutoUpdateCheckPeriodMinutes Set to 0** | 
+| **Experimentation and Configuration Service** |  Computer Configurations/Administrative Templates/Windows Component/Microsoft Edge Update/Preferences- Auto-update check period override | HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Edge\EdgeUpdate |
+|                                  | **Set to RestrictedMode**| **REG_DWORD name: ExperimentationAndConfigurationServiceControl  Set to 0** | 
+|||
 
 ### <a href="" id="bkmk-ncsi"></a>14. Network Connection Status Indicator
 

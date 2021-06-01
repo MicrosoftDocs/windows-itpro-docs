@@ -21,9 +21,7 @@
               href: select-types-of-rules-to-create.md
               items: 
                 - name: Allow apps installed by a managed installer
-                  href: use-windows-defender-application-control-with-managed-installer.md
-                - name: Configure managed installer rules
-                  href: configure-wdac-managed-installer.md
+                  href: configure-authorized-apps-deployed-with-a-managed-installer.md
                 - name: Allow reputable apps with Intelligent Security Graph (ISG)
                   href: use-windows-defender-application-control-with-intelligent-security-graph.md
                 - name: Allow COM object registration
