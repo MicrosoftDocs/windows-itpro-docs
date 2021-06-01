@@ -130,9 +130,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "windows-11",
-      "build_source_folder": "windows/windows-11",
-      "build_output_subfolder": "windows-11",
+      "docset_name": "sv",
+      "build_source_folder": "windows/sv",
+      "build_output_subfolder": "sv",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],

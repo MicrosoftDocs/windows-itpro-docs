@@ -1,0 +1,53 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Windows
+      tocHref: /windows
+      topicHref: /windows/windows-10
+      items:
+        - name: What's new
+          tocHref: /windows/whats-new/
+          topicHref: /windows/whats-new/index
+        - name: Configuration
+          tocHref: /windows/configuration/
+          topicHref: /windows/configuration/index
+        - name: Deployment
+          tocHref: /windows/deployment/
+          topicHref: /windows/deployment/index
+        - name: Application management
+          tocHref: /windows/application-management/
+          topicHref: /windows/application-management/index
+        - name: Client management
+          tocHref: /windows/client-management/
+          topicHref: /windows/client-management/index
+          items:
+            - name: Mobile Device Management
+              tocHref: /windows/client-management/mdm/
+              topicHref: /windows/client-management/mdm/index
+        - name: Release information
+          tocHref: /windows/release-information/
+          topicHref: /windows/release-health/release-information
+        - name: Privacy
+          tocHref: /windows/privacy/
+          topicHref: /windows/privacy/index
+        - name: Security
+          tocHref: /windows/security/
+          topicHref: /windows/security/index
+          items:
+            - name: Identity and access protection
+              tocHref: /windows/security/identity-protection/
+              topicHref: /windows/security/identity-protection/index
+              items:
+                - name: Windows Hello for Business
+                  tocHref: /windows/security/identity-protection/hello-for-business
+                  topicHref: /windows/security/identity-protection/hello-for-business/hello-identity-verification
+            - name: Threat protection
+              tocHref: /windows/security/threat-protection/
+              topicHref: /windows/security/threat-protection/index
+            - name: Information protection
+              tocHref: /windows/security/information-protection/
+              topicHref: /windows/security/information-protection/index
+            - name: Hardware-based protection
+              tocHref: /windows/security/hardware-protection/
+              topicHref: /windows/security/hardware-protection/index
