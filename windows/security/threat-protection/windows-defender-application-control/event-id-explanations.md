@@ -103,7 +103,7 @@ A list of other relevant event IDs and their corresponding description.
 | 3074 | Page hash failure while hypervisor-protected code integrity was enabled. |
 | 3075 | This event monitors the performance of the Code Integrity policy check a file. |
 | 3079 | The file under validation did not meet the requirements to pass the application control policy. |
-| 3080 | If the policy was in enforced mode, the file under validation would not have meet the requirements to pass the application control policy. |
+| 3080 | If the policy was in enforced mode, the file under validation would not have met the requirements to pass the application control policy. |
 | 3081 | The file under validation did not meet the requirements to pass the application control policy. |
 | 3082 | If the policy was in enforced mode, the non-WHQL driver would have been denied by the policy. | 
 | 3084 | Code Integrity will enforce the WHQL Required policy setting on this session. |
