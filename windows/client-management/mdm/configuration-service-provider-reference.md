@@ -2623,7 +2623,7 @@ The following list shows the CSPs supported in HoloLens devices:
 <hr>
 
  Footnotes:
-- A - Only for mobile application management (MAM)
+- A - Only for mobile application management (MAM).
 - B - Provisioning only
 - 1 - Added in Windows 10, version 1607.
 - 2 - Added in Windows 10, version 1703.
