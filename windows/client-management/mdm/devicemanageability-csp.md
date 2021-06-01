@@ -61,7 +61,3 @@ Data type is string. Supported operations are Add, Get, Delete, and Replace. 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
-
-
-
-
