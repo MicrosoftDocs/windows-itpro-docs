@@ -1,8 +1,8 @@
 ---
-title: Configuring MEM devices for Update Compliance
+title: Configuring for Update Compliance in Microsoft Endpoint Manager
 ms.reviewer: 
 manager: laurawi
-description: Configuring MEM-enrolled devices for Update Compliance
+description: Configuring devices that are enrolled in Endpoint Manager for Update Compliance
 keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav, intune, mem
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -20,7 +20,7 @@ ms.topic: article
 > [!NOTE]
 > As of May 10, 2021, a new policy is required to use Update Compliance: "Allow Update Compliance Processing." For more details, see the Mobile Device Management policies and Group policies tables.
 
-This article is specifically targeted at configuring devices enrolled to [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) (MEM) for Update Compliance, within MEM itself. Configuring devices for Update Compliance in MEM breaks down to the following steps:
+This article is specifically targeted at configuring devices enrolled to [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) for Update Compliance, within MEM itself. Configuring devices for Update Compliance in MEM breaks down to the following steps:
 
 1. [Create a configuration profile](#create-a-configuration-profile) for devices you want to enroll, that contains settings for all the MDM policies that must be configured. 
 2. [Deploy the configuration script](#deploy-the-configuration-script) as a Win32 app to those same devices, so additional checks can be performed to ensure devices are correctly configured. 
@@ -30,10 +30,10 @@ This article is specifically targeted at configuring devices enrolled to [Micros
 
 Take the following steps to create a configuration profile that will set required policies for Update Compliance:
 
-1. Go to your MEM admin portal and navigate to **Devices/Windows/Configuration profiles**.
-2. On the Configuration profiles view, select **Create a profile**.
+1. Go to the Admin portal in Endpoint Manager and navigate to **Devices/Windows/Configuration profiles**.
+2. On the **Configuration profiles** view, select **Create a profile**.
 3. Select **Platform**="Windows 10 and later" and **Profile type**="Templates".
-4. For **Template name**, select "Custom", then hit **Create**.
+4. For **Template name**, select **Custom**, and then press **Create**.
 5. You are now on the Configuration profile creation screen. On the **Basics** tab, give a **Name** and **Description**.
 6. On the **Configuration settings** page, you will be adding multiple OMA-URI Settings that correspond to the policies described in [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md).
     1. Add a setting for **Commercial ID**, with the following values:
@@ -42,7 +42,7 @@ Take the following steps to create a configuration profile that will set require
         - **OMA-URI**: `./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID`
         - **Data type**: String
         - **Value**: *Set this to your Commercial ID*
-    2. Add a setting configuring devices' **Windows Diagnostic Data level**:
+    2. Add a setting configuring the **Windows Diagnostic Data level** for devices:
         - **Name**: Allow Telemetry
         - **Description**: Sets the maximum allowed diagnostic data to be sent to Microsoft, required for Update Compliance.
         - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowTelemetry`
@@ -67,10 +67,10 @@ Take the following steps to create a configuration profile that will set require
         - **Data type**: Integer
         - **Value**: 16
 7.  Proceed through the next set of tabs **Scope tags**, **Assignments**, and **Applicability Rules** to assign the configuration profile to devices you wish to enroll. 
-8. Review and **create**. 
+8. Review and select **Create**. 
 
 ## Deploy the configuration script
 
-The [Update Compliance Configuration Script](update-compliance-configuration-script.md) is an important component of properly enrolling devices to Update Compliance, though is not strictly necessary. It checks to ensure devices have required services running and checks connectivity to the endpoints detaield in the section on [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md). Deploying the configuration script can be done by deploying the script as a Win32 app. Documentation for this can be found in the Intune documentation for [Win32 app management in Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management). 
+The [Update Compliance Configuration Script](update-compliance-configuration-script.md) is an important component of properly enrolling devices in Update Compliance, though it isn't strictly necessary. It checks to ensure that devices have the required services running and checks connectivity to the endpoints detailed in the section on [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md). You can deploy the script as a Win32 app. For more information, see [Win32 app management in Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management). 
 
-When deploying the configuration script as a Win32 app, you will be unable to retrieve the results of logs on the device without having access to the device, or saving results of the logs to a shared filesystem. We recommend deploying the script in Pilot mode to a set of devices that you do have access to, or have a way to access the resultant log output the script provides, with as similar of a configuration profile as other devices which will be enrolled to Update Compliance, and analyzing the logs for any potential issues. Following this, you can deploy the configuration script in Deployment mode as a Win32 app to all Update Compliance devices. 
+When you deploy the configuration script as a Win32 app, you won't be able to retrieve the results of logs on the device without having access to the device, or saving results of the logs to a shared filesystem. We recommend deploying the script in Pilot mode to a set of devices that you do have access to, or have a way to access the resultant log output the script provides, with as similar of a configuration profile as other devices which will be enrolled to Update Compliance, and analyzing the logs for any potential issues. Following this, you can deploy the configuration script in Deployment mode as a Win32 app to all Update Compliance devices. 
