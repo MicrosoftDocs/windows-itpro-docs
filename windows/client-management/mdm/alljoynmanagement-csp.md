@@ -170,10 +170,6 @@ Get the firewall PrivateProfile
 ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
- 
-
-
-
 
 
 
