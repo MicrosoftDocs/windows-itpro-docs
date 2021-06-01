@@ -16,7 +16,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Windows Sun Valley overview
+# Windows 11 requirements
 
-Overview of Sun Valley.
+Windows 11 requirements.
 

@@ -66,7 +66,7 @@ landingContent:
         links:
           - text: What's new in Windows deployment
             url: deploy-whats-new.md
-          - text: Windows Sun Valley deployment overview
+          - text: Windows 11 deployment overview
             url: sv-deploy.md
           - text: Windows client deployment scenarios
             url: windows-10-deployment-scenarios.md

@@ -1,7 +1,6 @@
 ---
 title: Placeholder
 description: PH
-ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
@@ -16,7 +15,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Windows Sun Valley frequently asked questions (FAQ)
+# Windows 11 frequently asked questions (FAQ)
 
 FAQ.
 

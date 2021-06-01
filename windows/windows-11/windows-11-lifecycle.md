@@ -1,7 +1,6 @@
 ---
 title: Lifecycle
-description: PH
-ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
+description: Lifecycle information for Windows 11
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
@@ -16,7 +15,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Windows Sun Valley lifecycle
+# Windows 11 lifecycle
 
-Sun Valley lifecycle.
+Windows 11 lifecycle.
 

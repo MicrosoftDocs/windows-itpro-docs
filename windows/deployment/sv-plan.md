@@ -1,5 +1,5 @@
 ---
-title: Windows Sun Valley deployment planning
+title: Windows 11 deployment planning
 description: Understand the different ways Windows 10 operating system can be deployed in your organization. Explore several Windows 10 deployment scenarios.
 ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
 ms.reviewer: 
@@ -16,7 +16,7 @@ audience: itpro
 ms.topic: article
 ---
 
-# Windows Sun Valley deployment planning
+# Windows 11 deployment planning
 
 **Applies to**
 -   Windows 10
