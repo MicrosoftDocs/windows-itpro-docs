@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 3/17/2020
+ms.date: 06/02/2021
 ms.technology: mde
 ---
 
@@ -48,7 +48,7 @@ A Windows Defender Application Control (WDAC) policy logs events locally in Wind
 If either the ISG or MI is enabled in a WDAC policy, you can optionally choose to enable 3090, 3091, and 3092 events to provide additional diagnostic information.
 
 | Event ID | Explanation |
-| -------- | ----------- |
+|--------|---------|
 | 3090 | Allow executable/dll file |
 | 3091 | Audit executable/dll file |
 | 3092 | Block executable/dll file |
@@ -60,7 +60,7 @@ If either the ISG or MI is enabled in a WDAC policy, you can optionally choose t
 Below are the fields which help to diagnose what a 3090, 3091, or 3092 event indicates.
 
 | Name | Explanation |
-| -------- | ----------- |
+|------|------|
 | StatusCode | STATUS_SUCCESS indicates a binary passed the active WDAC policies. If so, a 3090 event is generated. If not, a 3091 event is generated if the blocking policy is in audit mode, and a 3092 event is generated if the policy is in enforce mode. |
 | ManagedInstallerEnabled | Policy trusts a MI |
 | PassesManagedInstaller | File originated from a trusted MI |
@@ -85,7 +85,7 @@ reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x
 ## Appendix
 A list of other relevant event IDs and their corresponding description.
 | Event ID | Description |
-| -------- | ----------- |
+|-------|------|
 | 3001 | An unsigned driver was attempted to load on the system. | 
 | 3002 | Code Integrity could not verify the boot image as the page hash could not be found. |
 | 3004 | Code Integrity could not verify the file as the page hash could not be found. |
