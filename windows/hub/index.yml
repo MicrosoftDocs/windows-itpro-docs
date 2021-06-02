@@ -26,14 +26,14 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Windows SV overview
-            url: /windows-11/windows-sv-overview.md
-          - text: What's new in Windows SV, version 21H2
-            url: /windows/whats-new/whats-new-windows-10-version-21H1
+          - text: Windows Sun Valley overview
+            url: /windows/whats-new/windows-sv-overview.md
+          - text: Windows Sun Valley requirements
+            url: /windows/whats-new/windows-sv-requirements.md
+          - text: Get started with Windows Sun Valley
+            url: /windows/whats-new/get-started-windows-sv.md
           - text: What's new in Windows 10, version 21H2
             url: /windows/whats-new/whats-new-windows-10-version-21H1
-          - text: Windows Sun Valley release information
-            url:  /windows/release-health/release-information
           - text: Windows 10 release information
             url:  /windows/release-health/release-information
 
@@ -45,7 +45,7 @@ landingContent:
           - text: Configure Windows client
             url: /windows/configuration/index
           - text: Configure Windows Sun Valley
-            url: /windows/configuration/windows-11-configure.md
+            url: /windows/configuration/windows-sv-configure.md
           - text: Accessibility information for IT Pros
             url: /windows/configuration/windows-10-accessibility-for-itpros
           - text: Configure access to Microsoft Store
@@ -77,8 +77,8 @@ landingContent:
         links:
           - text: Windows application management
             url: /windows/application-management/index
-          - text: Manage Windows SV applications
-            url: /windows/application-management/windows-11-app-manage.md
+          - text: Manage Windows Sun Valley applications
+            url: /windows/application-management/windows-sv-app-manage.md
           - text: Understand the different apps included in Windows 10
             url: /windows/application-management/apps-in-windows-10
           - text: Get started with App-V for Windows 10
@@ -94,7 +94,7 @@ landingContent:
           - text: Windows client management
             url: /windows/client-management/index
           - text: Manage Windows Sun Valley
-            url: /windows/client-management/windows-11-manage.md
+            url: /windows/client-management/windows-sv-manage.md
           - text: Administrative tools 
             url: /windows/client-management/administrative-tools-in-windows-10
           - text: Create mandatory user profiles
