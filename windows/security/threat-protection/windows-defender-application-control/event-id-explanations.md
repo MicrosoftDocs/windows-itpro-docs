@@ -22,9 +22,9 @@ ms.technology: mde
 
 A Windows Defender Application Control (WDAC) policy logs events locally in Windows Event Viewer in either enforced or audit mode. These events are generated under two locations:
 
-- Event IDs beginning with 30 appear in Applications and Services logs | Microsoft | Windows | CodeIntegrity | Operational
+- Event IDs beginning with 30 appear in **Applications and Services logs** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**
 
-- Event IDs beginning with 80 appear in Applications and Services logs | Microsoft | Windows | AppLocker | MSI and Script
+- Event IDs beginning with 80 appear in **Applications and Services logs** > **Microsoft** > **Windows** > **AppLocker** > **MSI and Script**
 
 ## Microsoft Windows CodeIntegrity Operational log event IDs
 
