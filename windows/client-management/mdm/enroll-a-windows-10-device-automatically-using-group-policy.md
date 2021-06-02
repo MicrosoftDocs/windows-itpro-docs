@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date:
+ms.date: 06/02/2021
 ms.reviewer:
 manager: dansimp
 ---
@@ -18,9 +18,9 @@ Starting in Windows 10, version 1709, you can use a Group Policy to trigger auto
 The enrollment into Intune is triggered by a group policy created on your local AD and happens without any user interaction. This means you can automatically mass-enroll a large number of domain-joined corporate devices into Microsoft Intune. The enrollment process starts in the background once you sign in to the device with your Azure AD account.
 
 Requirements:
-- AD-joined PC running Windows 10, version 1709 or later
+- Active Directory-joined PC running Windows 10, version 1709 or later
 - The enterprise has configured a mobile device management (MDM) service
-- The on-premises AD must be [integrated with Azure AD (via Azure AD Connect)](/azure/architecture/reference-architectures/identity/azure-ad)
+- The on-premises Active Directory must be [integrated with Azure AD (via Azure AD Connect)](/azure/architecture/reference-architectures/identity/azure-ad)
 - The device should not already be enrolled in Intune using the classic agents (devices managed using agents will fail enrollment with `error 0x80180026`)
 - The minimum Windows Server version requirement is based on the Hybrid Azure AD join requirement. See [How to plan your hybrid Azure Active Directory join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan) for more information.
 
