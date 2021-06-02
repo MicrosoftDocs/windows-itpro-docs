@@ -84,6 +84,7 @@ reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x
 
 ## Appendix
 A list of other relevant event IDs and their corresponding description.
+
 | Event ID | Description |
 |-------|------|
 | 3001 | An unsigned driver was attempted to load on the system. | 
