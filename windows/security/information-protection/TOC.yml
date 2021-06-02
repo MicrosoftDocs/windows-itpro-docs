@@ -7,26 +7,26 @@
         - name: Overview of BitLocker Device Encryption in Windows 10
           href: bitlocker\bitlocker-device-encryption-overview-windows-10.md
         - name: BitLocker frequently asked questions (FAQ)
-          href: bitlocker\bitlocker-frequently-asked-questions.md
+          href: bitlocker\bitlocker-frequently-asked-questions.yml
           items: 
             - name: Overview and requirements
               href: bitlocker\bitlocker-overview-and-requirements-faq.yml
             - name: Upgrading
-              href: bitlocker\bitlocker-upgrading-faq.md
+              href: bitlocker\bitlocker-upgrading-faq.yml
             - name: Deployment and administration
               href: bitlocker\bitlocker-deployment-and-administration-faq.yml
             - name: Key management
-              href: bitlocker\bitlocker-key-management-faq.md
+              href: bitlocker\bitlocker-key-management-faq.yml
             - name: BitLocker To Go
               href: bitlocker\bitlocker-to-go-faq.yml
             - name: Active Directory Domain Services
               href: bitlocker\bitlocker-and-adds-faq.yml
             - name: Security
-              href: bitlocker\bitlocker-security-faq.md
+              href: bitlocker\bitlocker-security-faq.yml
             - name: BitLocker Network Unlock
-              href: bitlocker\bitlocker-network-unlock-faq.md
+              href: bitlocker\bitlocker-network-unlock-faq.yml
             - name: General
-              href: bitlocker\bitlocker-using-with-other-programs-faq.md
+              href: bitlocker\bitlocker-using-with-other-programs-faq.yml
         - name: "Prepare your organization for BitLocker: Planning and policies"
           href: bitlocker\prepare-your-organization-for-bitlocker-planning-and-policies.md
         - name: BitLocker basic deployment

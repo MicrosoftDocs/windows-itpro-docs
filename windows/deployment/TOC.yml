@@ -193,6 +193,8 @@
                     href: update/update-compliance-configuration-script.md
                   - name: Manually configuring devices for Update Compliance
                     href: update/update-compliance-configuration-manual.md
+                  - name: Configuring devices for Update Compliance in Microsoft Endpoint Manager
+                    href: update/update-compliance-configuration-mem.md
               - name: Update Compliance monitoring
                 items: 
                   - name: Use Update Compliance
@@ -300,7 +302,7 @@
                     - name: Security and data protection considerations for Windows To Go
                       href: planning/security-and-data-protection-considerations-for-windows-to-go.md
                     - name: "Windows To Go: frequently asked questions"
-                      href: planning/windows-to-go-frequently-asked-questions.md
+                      href: planning/windows-to-go-frequently-asked-questions.yml
         
                 - name: Volume Activation Management Tool (VAMT) technical reference
                   items:
@@ -398,7 +400,7 @@
                         - name: Common Issues
                           href: usmt/usmt-common-issues.md
                         - name: Frequently Asked Questions
-                          href: usmt/usmt-faq.md
+                          href: usmt/usmt-faq.yml
                         - name: Log Files
                           href: usmt/usmt-log-files.md
                         - name: Return Codes

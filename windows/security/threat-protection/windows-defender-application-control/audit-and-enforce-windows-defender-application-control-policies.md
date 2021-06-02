@@ -12,7 +12,6 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
-ms.reviewer: v-kikl
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2021

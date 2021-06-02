@@ -121,7 +121,7 @@ If you want Windows To Go to be able to connect back to organizational resources
 
 [Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)
 
-[Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
+[Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.yml)
 
  
 

@@ -74,7 +74,7 @@ But these protections can also be configured separately. And, unlike HVCI, code 
 
 Endpoint detection and response is improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Microsoft Defender for Endpoint portal. 
 
-   Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus). 
+   Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/utilize-microsoft-cloud-protection-microsoft-defender-antivirus). 
     
    We've also [increased the breadth of the documentation library for enterprise security admins](/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10). The new library includes information on:
 - [Deploying and enabling AV protection](/windows/threat-protection/microsoft-defender-antivirus/deploy-microsoft-defender-antivirus)
@@ -484,9 +484,9 @@ Previously, the customized taskbar could only be deployed using Group Policy or 
 
 ### Windows Insider for Business
 
-We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](/windows/deployment/update/waas-windows-insider-for-business).
+We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (Azure AD). By enrolling devices in Azure AD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](https://insider.windows.com/for-business).
 
-You can now register your Azure AD domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](/windows/deployment/update/waas-windows-insider-for-business#getting-started-with-windows-insider-program-for-business).
+You can now register your Azure AD domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](https://insider.windows.com/for-business).
 
 
 ### Optimize update delivery

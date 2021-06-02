@@ -120,7 +120,7 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 
 -   For more information about each .xml element, see the [XML Elements Library](usmt-xml-elements-library.md) topic.
 
--   For answers to common questions, see ".xml files" in the [Frequently Asked Questions](usmt-faq.md) topic.
+-   For answers to common questions, see ".xml files" in the [Frequently Asked Questions](usmt-faq.yml) topic.
 
 ## Related topics
 

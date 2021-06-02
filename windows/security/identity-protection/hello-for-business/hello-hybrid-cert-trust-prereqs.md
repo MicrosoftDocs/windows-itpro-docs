@@ -1,5 +1,5 @@
 ---
-title: Hybrid Windows Hello for Business Prerequisites
+title: Hybrid Azure AD joined Windows Hello for Business Prerequisites
 description: Learn these prerequisites for hybrid Windows Hello for Business deployments using certificate trust.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
@@ -13,10 +13,10 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/19/2018
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Hybrid Windows Hello for Business Prerequisites
+# Hybrid Azure AD joined Windows Hello for Business Prerequisites
 
 **Applies to**
 -   Windows 10, version 1703 or later
@@ -74,6 +74,9 @@ The two directories used in hybrid deployments must be synchronized.  You need A
   
 Organizations using older directory synchronization technology, such as DirSync or Azure AD sync, need to upgrade to Azure AD Connect. In case the schema of your local AD DS was changed since the last directory synchronization, you may need to [refresh directory schema](/azure/active-directory/hybrid/how-to-connect-installation-wizard#refresh-directory-schema).
  
+> [!NOTE]
+> User accounts enrolling for Windows Hello for Business in a Hybrid Certificate Trust scenario must have a UPN matching a verified domain name in Azure AD. For more details, see [Troubleshoot Post-Join issues](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current#troubleshoot-post-join-issues).
+
 > [!NOTE]
 > Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory.
  
