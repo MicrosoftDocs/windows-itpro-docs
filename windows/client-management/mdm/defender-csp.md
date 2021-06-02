@@ -8,9 +8,9 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/11/2020
+ms.date: 06/02/2021
 ---
 
 # Defender CSP
