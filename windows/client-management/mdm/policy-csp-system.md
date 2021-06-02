@@ -740,22 +740,16 @@ In Windows 10, you can configure this policy setting to decide what level of dia
 
 The following list shows the supported values for Windows 10 version 1809 and older:
 
--   0 – (**Security**) Sends information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Microsoft Defender.
-    **Note:** This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), Hololens 2, and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
--   1 – (**Basic**) Sends the same data as a value of 0, plus additional basic device info, including quality-related data, app compatibility, and app usage data.
--   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows, Windows Server, System Center, and apps are used, how they perform, and advanced reliability data.
--   3 – (**Full**) Sends the same data as a value of 2, plus all data necessary to identify and fix problems with devices.
+-   0 – (**Security**) This turns Windows diagnostic data off.  
+-   **Note**: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), HoloLens 2, and Windows Server 2016 (and later versions). Using this setting on other devices editions of Windows is equivalent to setting the value of 1.
+-   1 – (**Required**) Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date.
+-   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows, Windows Server, System Center, and apps are used, how they perform, and advanced reliability data, such as limited crash dumps.
+-   3 – (**Optional**) Sends the same data as a value of 2, plus additional data necessary to identify and fix problems with devices such as enhanced error logs.
 
-Most restricted value is 0.
-
-For Windows 10 version 19H1 and later, we simplified your diagnostic data controls by moving from four diagnostic data controls to three. The following list shows the supported values:
-
--   **0 - Diagnostic data off** - No Windows diagnostic data sent.
--   **1 - Required (Basic)** - Minimum data required to keep the device secure, up to date, and performing as expected.
--   **3 - Optional (Full)** - Additional data about the websites you browse, how Windows and apps are used and how they perform. This data also includes data about device activity, and enhanced error reporting that helps Microsoft to fix and improve products and services for all users.
+Most restrictive value is 0.
 
 > [!NOTE]
-> If your devices are set to Enhanced when they are upgraded, the device settings will be migrated to the more privacy-preserving setting of Required diagnostic data. For more information, see [Changes to Windows diagnostic data](/windows/privacy/changes-to-windows-diagnostic-data-collection). 
+> If your devices are set to Enhanced when they are upgraded, the device settings will be evaluated to be at the more privacy-preserving setting of Required diagnostic data. For more information, see [Changes to Windows diagnostic data](/windows/privacy/changes-to-windows-diagnostic-data-collection).
 
 <!--<table style="margin-left: 20px">
 <colgroup>
