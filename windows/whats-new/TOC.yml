@@ -3,11 +3,11 @@
 - name: Windows Sun Valley
   items:
     - name: Windows Sun Valley overview
-      href: sv-overview.md
+      href: windows-sv-overview.md
     - name: Windows Sun Valley requirements
-      href: sv-requirements.md
+      href: windows-sv-requirements.md
     - name: Get started with Windows Sun Valley
-      href: sv-get-started.md
+      href: windows-sv-get-started.md
 - name: Windows 10
   items:
     - name: What's new in Windows 10, version 21H1
