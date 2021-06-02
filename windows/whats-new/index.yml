@@ -22,6 +22,26 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
+
+  - title: Windows Sun Valley
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows Sun Valley Overview
+            url:  windows-sv-overview.md
+          - text: Windows Sun Valley requirements
+            url: windows-sv-requirements.md
+          - text: Get started with Windows Sun Valley 
+            url: windows-sv-get-started.md
+          - text: Deploy Windows Sun Valley
+            url: /windows/deployment/windows-sv-deploy.md
+          - text: Windows Sun Valley app management
+            url: /windows/application-managerment/windows-sv-app-manage.md
+          - text: Configure Windows Sun Valley
+            url: /windows/configuration/windows-sv-configure.md
+          - text: Manage Windows Sun Valley clients
+            url: /windows/client-management/windows-sv-manage.md
+
   - title: What's new in Windows 10
     linkLists:
       - linkListType: overview
@@ -57,12 +77,6 @@ landingContent:
             url: /windows/deployment/planning/windows-10-removed-features
           - text: Compare Windows 10 Editions
             url: https://go.microsoft.com/fwlink/p/?LinkId=690485
-
-  # Card (optional)
-  - title: See also
-    linkLists:
-      - linkListType: overview
-        links:
           - text: Windows 10 Enterprise LTSC
             url: ltsc/index.md
           - text: Edit an existing topic using the Edit link
