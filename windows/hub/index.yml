@@ -26,13 +26,13 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Windows 11 overview
-            url: /windows-11/windows-11-overview.md
-          - text: What's new in Windows 11, version 21H2
+          - text: Windows SV overview
+            url: /windows-11/windows-sv-overview.md
+          - text: What's new in Windows SV, version 21H2
             url: /windows/whats-new/whats-new-windows-10-version-21H1
           - text: What's new in Windows 10, version 21H2
             url: /windows/whats-new/whats-new-windows-10-version-21H1
-          - text: Windows 11 release information
+          - text: Windows Sun Valley release information
             url:  /windows/release-health/release-information
           - text: Windows 10 release information
             url:  /windows/release-health/release-information
@@ -44,7 +44,7 @@ landingContent:
         links:
           - text: Configure Windows client
             url: /windows/configuration/index
-          - text: Configure Windows 11
+          - text: Configure Windows Sun Valley
             url: /windows/configuration/windows-11-configure.md
           - text: Accessibility information for IT Pros
             url: /windows/configuration/windows-10-accessibility-for-itpros
@@ -60,8 +60,8 @@ landingContent:
         links:
           - text: Deploy and update Windows client
             url: /windows/deployment/index
-          - text: Deploy Windows 11
-            url: /windows/deployment/windows-11-deploy.md
+          - text: Deploy Windows Sun Valley
+            url: /windows/deployment/windows-sv-deploy.md
           - text: Windows deployment scenarios
             url: /windows/deployment/windows-10-deployment-scenarios
           - text: Create a deployment plan
@@ -77,7 +77,7 @@ landingContent:
         links:
           - text: Windows application management
             url: /windows/application-management/index
-          - text: Manage Windows 11 applications
+          - text: Manage Windows SV applications
             url: /windows/application-management/windows-11-app-manage.md
           - text: Understand the different apps included in Windows 10
             url: /windows/application-management/apps-in-windows-10
@@ -93,7 +93,7 @@ landingContent:
         links:
           - text: Windows client management
             url: /windows/client-management/index
-          - text: Manage Windows 11 
+          - text: Manage Windows Sun Valley
             url: /windows/client-management/windows-11-manage.md
           - text: Administrative tools 
             url: /windows/client-management/administrative-tools-in-windows-10

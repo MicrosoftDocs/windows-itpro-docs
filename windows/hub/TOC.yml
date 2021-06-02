@@ -1,12 +1,12 @@
-- name: Windows client
+- name: Windows
   href: index.yml
   items: 
+    - name: Windows Sun Valley
+      href: /windows/whats-new/windows-sv-overview.md
     - name: What's new
       href: /windows/whats-new
     - name: Release information
       href: /windows/release-health
-    - name: Windows 11
-      href: /windows/windows-11
     - name: Deployment
       href: /windows/deployment
     - name: Configuration
