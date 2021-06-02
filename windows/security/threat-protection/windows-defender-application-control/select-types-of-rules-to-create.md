@@ -127,7 +127,7 @@ Wildcards can be used at the beginning or end of a path rule; only one wildcard 
 You can also use the following macros when the exact volume may vary: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`.
 
 >[!NOTE]
->We recommend maintaining separate ALLOW and DENY policies on version 1903 and higher, if for no other reason than it makes it a bit easier for an average person to reason over the policy.
+>For others to better understand the WDAC policies that has been deployed, we recommend maintaining separate ALLOW and DENY policies on version 1903 and higher.
 
 ## More information about hashes
 
