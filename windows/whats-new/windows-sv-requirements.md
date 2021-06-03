@@ -18,5 +18,5 @@ ms.custom: seo-marvel-apr2020
 
 # Windows Sun Valley requirements
 
-Windows Sun Valley requirements.
+The upgrade to Sun Valley is available for devices running Windows 10, version 20H1 or newer, on eligible hardware.
 
