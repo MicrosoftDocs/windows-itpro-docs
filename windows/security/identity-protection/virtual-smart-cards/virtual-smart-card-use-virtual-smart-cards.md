@@ -83,7 +83,7 @@ A TPM-based virtual smart card is labeled **Security Device** in the user interf
 The PIN for a virtual smart card can be changed by following these steps:
 - Sign in with the old PIN or password.
 - Press Ctrl+Alt+Del and choose **Change a password**.
-- Click ""Sign-in Options**.
+- Select **Sign-in Options**.
 - Select the virtual smart card icon.
 - Enter and confirm the new PIN.
 ## Resolving issues
