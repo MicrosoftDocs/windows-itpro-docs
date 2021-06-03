@@ -85,7 +85,7 @@ The PIN for a virtual smart card can be changed by following these steps:
 - Press Ctrl+Alt+Del and choose **Change a password**.
 - Click ""Sign-in Options**.
 - Select the virtual smart card icon.
-- Change the pin.
+- Enter and confirm the new PIN.
 ## Resolving issues
 
 ### TPM not provisioned
