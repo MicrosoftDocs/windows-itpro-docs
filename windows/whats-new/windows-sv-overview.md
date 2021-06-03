@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 **Applies to**
 -   Windows Sun Valley
 
-This article provides an introduction to Windows Sun Valley, the next client release of Windows. 
+This article provides an introduction and answers some frequently asked questions about Windows Sun Valley, the next client release of Windows. 
 
 Windows Sun Valley is a newly designed Windows client operating system due to be released later in 2021. It is fresh and light, yet familiar to those who use Windows today. The goal of this release is to be the most reliable, secure, connected, and performant OS release ever.
 
@@ -55,7 +55,7 @@ Windows Sun Valley annual releases are supported for 36 months for the following
 - Enterprise
 - Education
 
-### Feature and application lifecycle
+### Features and applications
 
 Most features and applications that are included with Windows 10 will be available on Windows Sun Valley. For information about features that are deprecated or work differently on Windows Sun Valley, see [article link here].
 
