@@ -1,5 +1,5 @@
 ---
-title: Configuring for Update Compliance in Microsoft Endpoint Manager
+title: Configuring Microsoft Endpoint Manager devices for Update Compliance
 ms.reviewer: 
 manager: laurawi
 description: Configuring devices that are enrolled in Endpoint Manager for Update Compliance
@@ -36,7 +36,8 @@ Take the following steps to create a configuration profile that will set require
 4. For **Template name**, select **Custom**, and then press **Create**.
 5. You are now on the Configuration profile creation screen. On the **Basics** tab, give a **Name** and **Description**.
 6. On the **Configuration settings** page, you will be adding multiple OMA-URI Settings that correspond to the policies described in [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md).
-    1. Add a setting for **Commercial ID** (to get find your Commercial ID see [Get your CommmercialID](update-compliance-get-started.md#get-your-commercialid)) with the following values:
+    1. If you don't already have it, get your Commercial ID. For steps, see [Get your CommmercialID](update-compliance-get-started.md#get-your-commercialid).
+    2. Add a setting for **Commercial ID** ) with the following values:
         - **Name**: Commercial ID
         - **Description**: Sets the Commercial ID that corresponds to the Update Compliance Log Analytics workspace.
         - **OMA-URI**: `./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID`
