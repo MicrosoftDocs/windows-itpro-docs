@@ -29,11 +29,11 @@ Windows Sun Valley is a newly designed Windows client operating system due to be
 
 Windows Sun Valley will delivered as an upgrade to devices running Windows 10 beginning in the first half of 2022. All upgrades to Windows Sun Valley from Windows 10 will be free. Windows Sun Valley will also be available on new devices that meet the hardware requirements. 
 
-You must be running the most current version of Windows 10 and meet the minimum hardware specifications to be eligible to upgrade. For more information, see [Windows Sun Valley requirements](windows-sv-requirements.md).
+You must be running a current version of Windows 10 and meet the minimum hardware specifications to be eligible to upgrade. For more information, see [Windows Sun Valley requirements](windows-sv-requirements.md).
 
-Not all eligible Windows 10 PCs will be offered theo upgrade at the same time. To see if your PC is eligible, download the PC Health Check app (link). The app will check that your devices meets hardware and software requirements to perform an upgrade to Windows Sun Valley. You can also check the status of your device by navigating to Windows Update in settings. Once the upgrade rollout has started and the upgrade has been tested and validated for your specific PC hardware, Windows Update will indicate that the upgrade is ready for installation.
+Not all eligible Windows 10 PCs will be offered the upgrade at the same time. To see if your PC is eligible, download the PC Health Check app (link). The app will check that your devices meets hardware and software requirements to perform an upgrade to Windows Sun Valley. You can also check the status of your device by navigating to **Windows Update** in **Settings**. Once the upgrade rollout has started and the upgrade has been tested and validated for your PC's hardware, Windows Update will indicate that the upgrade is ready for installation.
 
-You can get early access to test Windows Sun Valley by joining the Windows Insider Program, or by enabling pre-release Windows 10 feature updates in Configuration Manager or Windows Server Update Services (WSUS).
+You can get early access to test Windows Sun Valley by joining the [Windows Insider Program](https://insider.windows.com), or by enabling pre-release Windows 10 feature updates in Configuration Manager or Windows Server Update Services (WSUS).
 
 ## Windows Sun Valley lifecycle
 
@@ -84,6 +84,10 @@ There are no unique licensing requirements for Windows Sun Valley beyond what is
 Microsoft 365 licenses that include Windows licenses will permit you to run Windows Sun Valley on supported devices.
 
 If you have a volume license, it will equally cover Windows Sun Valley and Windows 10 devices before and after upgrade.
+
+## Rollback
+
+After you have upgraded to Windows Sun Valley, you have 10 days to use the rollback function if you wish to move back to Windows 10 while keeping your files and data. After the 10 day grace period, you will need to back up your data and perform a clean install to move back to Windows 10.
 
 ## See also
 
