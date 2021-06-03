@@ -1,6 +1,6 @@
 ---
-title: Placeholder
-description: PH
+title: Windows Sun Valley overview
+description: Overview of Windows Sun Valley
 ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.reviewer: 
 manager: laurawi
@@ -16,7 +16,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Windows 11 overview
+# Windows Sun Valley overview
 
-Overview of Windows 11.
+Overview of Windows Sun Valley.
 

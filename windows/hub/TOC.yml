@@ -1,10 +1,13 @@
 - name: Windows
   href: index.yml
   items: 
-    - name: Windows Sun Valley
-      href: /windows/whats-new/windows-sv-overview.md
     - name: What's new
-      href: /windows/whats-new
+      expanded: true
+      items:
+        - name: What's new in Windows
+          href: /windows/whats-new
+        - name: Windows Sun Valley
+          href: /windows/whats-new/windows-sv-overview.md
     - name: Release information
       href: /windows/release-health
     - name: Deployment
