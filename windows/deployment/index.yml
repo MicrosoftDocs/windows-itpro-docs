@@ -67,7 +67,7 @@ landingContent:
           - text: What's new in Windows deployment
             url: deploy-whats-new.md
           - text: Windows 11 deployment overview
-            url: sv-deploy.md
+            url: windows-sv-deploy.md
           - text: Windows client deployment scenarios
             url: windows-10-deployment-scenarios.md
           - text: Basics of Windows updates, channels, and tools
