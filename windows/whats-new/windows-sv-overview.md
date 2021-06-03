@@ -21,11 +21,13 @@ ms.custom: seo-marvel-apr2020
 **Applies to**
 -   Windows Sun Valley
 
-This article provides an introduction to Windows Sun Valley, the next client release of Windows. Windows Sun Valley is a newly designed Windows client operating system due to be released later in 2021. It is fresh and light, yet familiar to those who use Windows today. The goal of this release is to be the most reliable, secure, connected, and performant OS release ever.
+This article provides an introduction to Windows Sun Valley, the next client release of Windows. 
+
+Windows Sun Valley is a newly designed Windows client operating system due to be released later in 2021. It is fresh and light, yet familiar to those who use Windows today. The goal of this release is to be the most reliable, secure, connected, and performant OS release ever.
 
 ## How to get Windows Sun Valley
 
-Windows Sun Valley will delivered as an upgrade to devices running Windows 10 beginning in the first half of 2022. All upgrades to Windows Sun Valley from Windows 10 will be free. It will also be available on new devices that meet the hardware requirements. 
+Windows Sun Valley will delivered as an upgrade to devices running Windows 10 beginning in the first half of 2022. All upgrades to Windows Sun Valley from Windows 10 will be free. Windows Sun Valley will also be available on new devices that meet the hardware requirements. 
 
 You must be running the most current version of Windows 10 and meet the minimum hardware specifications to be eligible to upgrade. For more information, see [Windows Sun Valley requirements](windows-sv-requirements.md).
 
@@ -59,7 +61,9 @@ Most features and applications that are included with Windows 10 will be availab
 
 ## Windows 10 lifecycle
 
-Starting with Windows 10, version 21H2, Windows 10 will receive only quality updates on the second Tuesday of the month. Windows 10 will be supported with security updates until October 2025.
+Starting with Windows 10, version 21H2, Windows 10 will receive only quality updates on the second Tuesday of the month. 
+
+Windows 10 will be supported with security updates until October 2025.
 
 ## Management and tools
 
@@ -71,7 +75,7 @@ Most accessories and associated software that worked with Windows 10 are expecte
 
 ## Application compatibility
 
-Microsoft is committed to ensuring your Windows 10 applications work on Windows Sun Valley. If you have App Assure, Microsoft will help you fix any issues at no cost. App Assure is free for organizations with 150 or more seats. For more information on eligibility requirements, see [article link here].
+Microsoft is committed to ensuring your Windows 10 applications work on Windows Sun Valley. If you have [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure), Microsoft will help you fix any issues at no cost. App Assure is free for organizations with 150 or more seats. For more information on eligibility requirements, see [Products and Capabilities: App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure).
 
 ## Licensing
 

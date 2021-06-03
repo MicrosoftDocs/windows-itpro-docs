@@ -26,7 +26,7 @@ The upgrade to Sun Valley is available for devices running Windows 10, version 2
 
 ## Hardware requirements
 
-The following processor and hardware requirements are necessary to support Windows Sun Valley:
+To install Windows Sun Valley, devices must meet the following specifications:
  
 Processor   
 - Intel 8th generation, Intel Celeron N4000, Pentium N5000 
@@ -40,7 +40,10 @@ Hardware
 - 64GB drive 
 - 4GB RAM 
 - UEFI, Secure Boot capable & TPM 2.0 
-- >9” with HD Resolution (1366x768 equivalent) 
-- DirectX 12 compatible graphics / WDDM 2.x   
-- Connectivity required (Home Edition) 
+- Monitor 9” or more, with HD Resolution
+- DirectX 12 compatible graphics / WDDM 2.x  
+
+## Network requirements
+
+Internet connectivity is required for the Home Edition 
 
