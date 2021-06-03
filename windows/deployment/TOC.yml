@@ -5,7 +5,7 @@
       items: 
         - name: What's new
           href: deploy-whats-new.md
-        - name: Windows 11 deployment overview
+        - name: Windows Sun Valley deployment overview
           href: windows-sv-deploy.md
         - name: Windows client deployment scenarios
           href: windows-10-deployment-scenarios.md
@@ -35,7 +35,7 @@
 
     - name: Plan
       items:
-        - name: Windows 11 deployment planning
+        - name: Windows Sun Valley deployment planning
           href: windows-sv-plan.md
         - name: Create a deployment plan
           href: update/create-deployment-plan.md
@@ -71,7 +71,7 @@
 
     - name: Prepare
       items: 
-        - name: Prepare to deploy Windows 11
+        - name: Prepare to deploy Windows Sun Valley
           href: windows-sv-prepare.md
         - name: Prepare to deploy Windows 10 updates
           href: update/prepare-deploy-windows.md
@@ -104,7 +104,7 @@
       items: 
         - name: Deploy Windows client
           items:
-            - name: Windows 11 deployment overview
+            - name: Windows Sun Valley deployment overview
               href: windows-sv-deploy.md
             - name: Deploy Windows client with Autopilot
               href: windows-autopilot/index.yml

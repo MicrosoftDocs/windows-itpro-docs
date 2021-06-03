@@ -20,7 +20,7 @@ ms.topic: article
 
 -   Windows Sun Valley
 
-## Windows Sun Valley deployment planning
+## Deployment planning
 
 Consider using the following process to deploy Windows Sun Valley to existing devices:
 1. Preview Windows Sun Valley and create a deployment plan. 
@@ -33,4 +33,4 @@ Consider using the following process to deploy Windows Sun Valley to existing de
 
 ## See also
 
-[Windows Sun Valley deployment planning](/windows/deployment/windows-sv-deploy).
+[Windows Sun Valley deployment planning](/windows/deployment/windows-sv-deploy)
