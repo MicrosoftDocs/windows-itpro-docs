@@ -1,6 +1,7 @@
 - name: What's new in Windows
   href: index.yml
 - name: Windows Sun Valley
+  expanded: true
   items:
     - name: Windows Sun Valley overview
       href: windows-sv-overview.md
@@ -9,6 +10,7 @@
     - name: Get started with Windows Sun Valley
       href: windows-sv-get-started.md
 - name: Windows 10
+  expanded: true
   items:
     - name: What's new in Windows 10, version 21H1
       href: whats-new-windows-10-version-21H1.md

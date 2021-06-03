@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Windows client resources and documentation for IT Pros # < 60 chars
-summary: Plan, deploy, secure, and manage devices running Windows 10 and Windows 11.  # < 160 chars
+summary: Plan, deploy, secure, and manage devices running Windows 10 and Windows Sun Valley.  # < 160 chars
 
 metadata:
   title: Windows client documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Evaluate, plan, deploy, secure and manage devices running Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
+  description: Evaluate, plan, deploy, secure and manage devices running Windows 10 and Windows Sun Valley. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -34,7 +34,7 @@ landingContent:
             url: /windows/whats-new/get-started-windows-sv.md
           - text: What's new in Windows 10, version 21H2
             url: /windows/whats-new/whats-new-windows-10-version-21H1
-          - text: Windows 10 release information
+          - text: Windows release information
             url:  /windows/release-health/release-information
 
   # Card (optional)
