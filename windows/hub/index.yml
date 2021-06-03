@@ -42,7 +42,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Configure Windows client
+          - text: Configure Windows
             url: /windows/configuration/index
           - text: Configure Windows Sun Valley
             url: /windows/configuration/windows-sv-configure.md
@@ -58,7 +58,7 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: Deploy and update Windows client
+          - text: Deploy and update Windows
             url: /windows/deployment/index
           - text: Deploy Windows Sun Valley
             url: /windows/deployment/windows-sv-deploy.md
