@@ -20,7 +20,7 @@ ms.topic: article
 **Applies to**
 -   Windows Sun Valley
 
-## 
+## Windows Sun Valley deployment considerations
 
-To successfully deploy the Windows Sun Valley operating system in your organization, ...
+
 
