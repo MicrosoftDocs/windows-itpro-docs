@@ -102,7 +102,7 @@
       - name: Configure Windows Hello for Business policy settings
         href: hello-cert-trust-policy-settings.md
     - name: Azure AD join cloud only deployment
-      href: hello-aad-join-cloud-only-deploy
+      href: hello-aad-join-cloud-only-deploy.md
     - name: Managing Windows Hello for Business in your organization
       href: hello-manage-in-organization.md
     - name: Deploying Certificates to Key Trust Users to Enable RDP

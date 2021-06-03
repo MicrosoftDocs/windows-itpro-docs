@@ -27,7 +27,7 @@ When you Azure Active Directory (Azure AD) join a Windows 10 device, the system 
 
 ## Prerequisites  
 
-This cloud only deployment will use Azure AD multi-factor authentication (MFA) during the Windows Hello for Business enrollment and there is no additional MFA configuration needed.  If you are not already registered in Azure AD MFA, you will be guided though the MFA registration as part of the Windows Hello for Business deployment enrollment process. The necessary Windows Hello for Business prerequisites for are located at [Cloud Only Deployment](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification#cloud-only-deployment).
+This cloud only deployment will use Azure AD multi-factor authentication (MFA) during the Windows Hello for Business enrollment and there is no additional MFA configuration needed.  If you are not already registered in Azure AD MFA, you will be guided though the MFA registration as part of the Windows Hello for Business deployment enrollment process. The necessary Windows Hello for Business prerequisites for are located at [Cloud Only Deployment](hello-identity-verification.md#cloud-only-deployment).
 
 > [!NOTE]
 > It's possible for federated domains to enable the “Supports MFA” flag in your federated domain settings. This tells Azure AD that the federated IDP will perform the MFA challenge.
@@ -38,7 +38,7 @@ You can check and view this setting with the following MSOnline PowerShell comma
 
 ## Use Intune to disable Windows Hello for Business enrollment  
 
-We recommend that you disable or manage this behavior through an Intune policy using the steps in [Integrate Windows Hello for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/windows-hello).
+We recommend that you disable or manage this behavior through an Intune policy using the steps in [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello).
 
 However, not everyone uses Intune. The following method explains how to disable Windows Hello for Business enrollment without Intune, or through a third-party mobile device management (MDM).  If you are not running Intune in your organization, you can disable Windows Hello for Business via the registry. We have provided the underlying registry subkeys for disabling Windows Hello for Business.  
 
@@ -87,8 +87,8 @@ If there is a conflicting Device policy and User policy, the device policy or co
 
 ## Related reference documents for Azure AD join scenarios
 
-- [Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
-- [Plan your Azure Active Directory device deployment](https://docs.microsoft.com/azure/active-directory/devices/plan-device-deployment)
-- [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)
-- [How to manage the local administrators group on Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)
-- [Manage device identities using the Azure portal](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
+- [Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join)
+- [Plan your Azure Active Directory device deployment](/azure/active-directory/devices/plan-device-deployment)
+- [How to: Plan your Azure AD join implementation](/azure/active-directory/devices/azureadjoin-plan)
+- [How to manage the local administrators group on Azure AD joined devices](/azure/active-directory/devices/assign-local-admin)
+- [Manage device identities using the Azure portal](/azure/active-directory/devices/device-management-azure-portal)
