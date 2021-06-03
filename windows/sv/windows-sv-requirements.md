@@ -1,7 +1,6 @@
 ---
-title: Placeholder
-description: PH
-ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
+title: Windows Sun Valley requirements
+description: Requirements to deploy Windows Sun Valley
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
@@ -16,7 +15,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Windows 11 requirements
+# Windows Sun Valley requirements
 
-Windows 11 requirements.
+Windows Sun Valley requirements.
 
