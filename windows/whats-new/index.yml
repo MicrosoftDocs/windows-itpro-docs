@@ -28,7 +28,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Windows Sun Valley Overview
-            url:  windows-sv-overview.md
+            url:  windows-sv-overview
           - text: Windows Sun Valley requirements
             url: windows-sv-requirements.md
           - text: Get started with Windows Sun Valley 
