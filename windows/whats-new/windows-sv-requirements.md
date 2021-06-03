@@ -40,10 +40,14 @@ Hardware
 - 64GB drive 
 - 4GB RAM 
 - UEFI, Secure Boot capable & TPM 2.0 
-- Monitor 9” or more, with HD Resolution
+- Monitor size 9” or more with HD Resolution
 - DirectX 12 compatible graphics / WDDM 2.x  
 
 ## Network requirements
 
 Internet connectivity is required for the Home Edition 
+
+## See also
+
+[Windows Sun Valley overview](windows-sv-overview.md)
 
