@@ -22,7 +22,7 @@ ms.reviewer:
 
 When you Azure Active Directory (Azure AD) join a Windows 10 device, the system prompts you to enroll in Windows Hello for Business by default. However, you may wish to disable the automatic Windows Hello for Business enrollment prompts.
 
-> [!NOTE}
+> [!NOTE]
 > During the out-of-box experience (OOBE) flow of an Azure AD join, you'll see a provisioning PIN when you don’t have Intune. You can always cancel the PIN screen and set this cancellation with registry keys to prevent future prompts.
 
 ## Prerequisites  
