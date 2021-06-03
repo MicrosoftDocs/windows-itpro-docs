@@ -44,8 +44,6 @@ landingContent:
         links:
           - text: Configure Windows
             url: /windows/configuration/index
-          - text: Configure Windows Sun Valley
-            url: /windows/configuration/windows-sv-configure.md
           - text: Accessibility information for IT Pros
             url: /windows/configuration/windows-10-accessibility-for-itpros
           - text: Configure access to Microsoft Store
@@ -60,8 +58,6 @@ landingContent:
         links:
           - text: Deploy and update Windows
             url: /windows/deployment/index
-          - text: Deploy Windows Sun Valley
-            url: /windows/deployment/windows-sv-deploy.md
           - text: Windows deployment scenarios
             url: /windows/deployment/windows-10-deployment-scenarios
           - text: Create a deployment plan
@@ -77,8 +73,6 @@ landingContent:
         links:
           - text: Windows application management
             url: /windows/application-management/index
-          - text: Manage Windows Sun Valley applications
-            url: /windows/application-management/windows-sv-app-manage.md
           - text: Understand the different apps included in Windows 10
             url: /windows/application-management/apps-in-windows-10
           - text: Get started with App-V for Windows 10
@@ -93,8 +87,6 @@ landingContent:
         links:
           - text: Windows client management
             url: /windows/client-management/index
-          - text: Manage Windows Sun Valley
-            url: /windows/client-management/windows-sv-manage.md
           - text: Administrative tools 
             url: /windows/client-management/administrative-tools-in-windows-10
           - text: Create mandatory user profiles
