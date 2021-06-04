@@ -53,7 +53,7 @@ Use **Peer Cache** to help manage deployment of content to clients in remote loc
 
 If you're deploying **Feature update to Windows 10, version 1709** or later, by default, portions of setup are configured to run at a lower priority. This can result in a longer total install time for the feature update. When deploying within a maintenance window, we recommend that you override this default behavior to benefit from faster total install times. To override the default priority, create a file called SetupConfig.ini on each machine to be upgraded in the below location containing the single section noted. 
 
-%systemdrive%\Users\Default\AppData\Local\Microsoft\Windows\WSUS\SetupConfig.ini
+**%systemdrive%\Users\Default\AppData\Local\Microsoft\Windows\WSUS\SetupConfig.ini**
 
 ```
 [SetupConfig]
@@ -126,8 +126,7 @@ There are potentially a thousand or more feature updates displayed in the Config
 Before you deploy the feature updates, you can download the content as a separate step. Do this so you can verify that the content is available on the distribution points before you deploy the feature updates. This will help you to avoid any unexpected issues with the content delivery. Use the following procedure to download the content for feature updates before creating the deployment.
 
 1. In the Configuration Manager console, navigate to **Software Library > Windows 10 Servicing**.
-2. Choose the feature update(s) to download by using your saved search criteria. Select one or more of the feature updates returned, right click, and select Download.
-
+2. Choose the **feature update(s)** to download by using your saved search criteria. Select one or more of the feature updates returned, right click, and select **Download**,
    The **Download Software Updates Wizard** opens.
 3. On the **Deployment Package** page, configure the following settings:
    **Create a new deployment package**: Select this setting to create a new deployment package for the software updates that are in the deployment. Configure the following settings:
@@ -184,8 +183,7 @@ After you determine which feature updates you intend to deploy, you can manually
 
 1. In the Configuration Manager console, click **Software Library**.
 2. In the Software Library workspace, expand **Windows 10 Servicing**, and click **All Windows 10 Updates**.
-3. Choose the feature update(s) to deploy by using your saved search criteria. Select one or more of the feature updates returned, right click, and select **Deploy**.
-
+3. Choose the feature update(s) to deploy by using your saved search criteria. Select one or more of the feature updates returned, right click, and select **Deploy**,
    The **Deploy Software Updates Wizard** opens.
 4. On the General page, configure the following settings:
    - **Name**: Specify the name for the deployment. The deployment must have a unique name that describes the purpose of the deployment and differentiates it from other deployments in the Configuration Manager site. By default, Configuration Manager automatically provides a name for the deployment in the following format: **Microsoft Software Updates - \<date\>\<time\>**
@@ -251,7 +249,7 @@ After you determine which feature updates you intend to deploy, you can manually
    - Specify whether to allow clients to download after an installation deadline when they use metered Internet connections. Internet providers sometimes charge by the amount of data that you send and receive when you are on a metered Internet connection.
 
      > [!NOTE]
-     > Clients request the content location from a management point for the software updates in a deployment. The download behavior depends upon how you have configured the distribution point, the deployment package, and the settings on this page. For more information, see [Content source location scenarios](/sccm/core/plan-design/hierarchy/content-source-location-scenarios).
+     > Clients request the content location from a management point for the software updates in a deployment. The download behavior depends upon how you have configured the distribution point, the deployment package, and the settings on this page. For more information, see [Content Source Priority](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#content-source-priority).
 10. On the Summary page, review the settings. To save the settings to a deployment template, click **Save As Template**, enter a name and select the settings that you want to include in the template, and then click **Save**. To change a configured setting, click the associated wizard page and change the setting.
 11. Click **Next** to deploy the feature update(s).
 
