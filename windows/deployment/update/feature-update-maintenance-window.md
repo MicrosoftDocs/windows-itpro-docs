@@ -122,7 +122,7 @@ There are potentially a thousand or more feature updates displayed in the Config
 
 4. Save the search for future use.
 
-### Step 2: Download the content for the feature update(s)
+### Step 2: Download the content for the feature updates
 Before you deploy the feature updates, you can download the content as a separate step. Do this so you can verify that the content is available on the distribution points before you deploy the feature updates. This will help you to avoid any unexpected issues with the content delivery. Use the following procedure to download the content for feature updates before creating the deployment.
 
 1. In the Configuration Manager console, navigate to **Software Library > Windows 10 Servicing**.
