@@ -109,7 +109,7 @@ A list of other relevant event IDs and their corresponding description.
 | 3082 | If the policy was in enforced mode, the non-WHQL driver would have been denied by the policy. | 
 | 3084 | Code Integrity will enforce the WHQL Required policy setting on this session. |
 | 3085 | Code Integrity will not enforce the WHQL Required policy setting on this session. |
-| 3086 | The file under validation does not meet the signing requirements for an IUM (isolated user mode) process. |
+| 3086 | The file under validation does not meet the signing requirements for an isolated user mode (IUM) process. |
 | 3095 | This Code Integrity policy cannot be refreshed and must be rebooted instead. | 
 | 3097 | The Code Integrity policy cannot be refreshed. | 
 | 3100 | The application control policy was refreshed but was unsuccessfully activated. Retry. |
