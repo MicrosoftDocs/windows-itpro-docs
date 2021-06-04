@@ -542,7 +542,7 @@ Value type is integer. Supported values:
 > [!Warning]
 > This policy is in preview mode only and therefore not meant or recommended for production purposes.
 
-"Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for non-ADFS federated providers (e.g. SAML). 
+"Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for new Azure AD credentials, like Temporary Access Pass.
 
 > [!Note]
 > Web Sign-in is only supported on Azure AD Joined PCs.
