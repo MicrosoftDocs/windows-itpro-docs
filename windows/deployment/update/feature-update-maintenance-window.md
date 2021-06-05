@@ -251,7 +251,7 @@ After you determine which feature updates you intend to deploy, you can manually
    - Specify whether to allow clients to download after an installation deadline when they use metered Internet connections. Internet providers sometimes charge by the amount of data that you send and receive when you are on a metered Internet connection.
 
      > [!NOTE]
-     > Clients request the content location from a management point for the software updates in a deployment. The download behavior depends upon how you have configured the distribution point, the deployment package, and the settings on this page. For more information, see [Content Source Priority](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#content-source-priority).
+     > Clients request the content location from a management point for the software updates in a deployment. The download behavior depends upon how you have configured the distribution point, the deployment package, and the settings on this page. For more information, see [Content source priority](/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#content-source-priority).
 10. On the Summary page, review the settings. To save the settings to a deployment template, click **Save As Template**, enter a name and select the settings that you want to include in the template, and then click **Save**. To change a configured setting, click the associated wizard page and change the setting.
 11. Click **Next** to deploy the feature update(s).
 
