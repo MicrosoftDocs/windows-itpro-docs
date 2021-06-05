@@ -184,7 +184,7 @@ After you determine which feature updates you intend to deploy, you can manually
 
 1. In the Configuration Manager console, click **Software Library**.
 2. In the Software Library workspace, expand **Windows 10 Servicing**, and click **All Windows 10 Updates**.
-3. Choose the feature update(s) to deploy by using your saved search criteria. Select one or more of the feature updates returned, right click, and select **Deploy**,
+3. Choose the feature update(s) to deploy by using your saved search criteria. Select one or more of the feature updates returned, right click, and select **Deploy**.
 
    The **Deploy Software Updates Wizard** opens.
 4. On the General page, configure the following settings:
