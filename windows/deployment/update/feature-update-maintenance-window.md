@@ -126,7 +126,7 @@ There are potentially a thousand or more feature updates displayed in the Config
 Before you deploy the feature updates, you can download the content as a separate step. Do this so you can verify that the content is available on the distribution points before you deploy the feature updates. This will help you to avoid any unexpected issues with the content delivery. Use the following procedure to download the content for feature updates before creating the deployment.
 
 1. In the Configuration Manager console, navigate to **Software Library > Windows 10 Servicing**.
-2. Choose the **feature update(s)** to download by using your saved search criteria. Select one or more of the feature updates returned, right click, and select **Download**,
+2. Choose the **feature update(s)** to download by using your saved search criteria. Select one or more of the feature updates returned, right click, and select **Download**.
    The **Download Software Updates Wizard** opens.
 3. On the **Deployment Package** page, configure the following settings:
    **Create a new deployment package**: Select this setting to create a new deployment package for the software updates that are in the deployment. Configure the following settings:
