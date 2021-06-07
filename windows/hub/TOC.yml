@@ -7,7 +7,7 @@
         - name: What's new in Windows
           href: /windows/whats-new
         - name: Windows Sun Valley
-          href: /windows/whats-new/windows-sv-overview
+          href: /windows/whats-new/windows-sv
     - name: Release information
       href: /windows/release-health
     - name: Deployment

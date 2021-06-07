@@ -27,7 +27,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Windows Sun Valley overview
-            url: /windows/whats-new/windows-sv-overview
+            url: /windows/whats-new/windows-sv
           - text: Windows Sun Valley requirements
             url: /windows/whats-new/windows-sv-requirements
           - text: Get started with Windows Sun Valley

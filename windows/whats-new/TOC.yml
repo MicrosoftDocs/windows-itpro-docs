@@ -4,7 +4,7 @@
   expanded: true
   items:
     - name: Windows Sun Valley overview
-      href: windows-sv-overview.md
+      href: windows-sv.md
     - name: Windows Sun Valley requirements
       href: windows-sv-requirements.md
     - name: Get started with Windows Sun Valley
