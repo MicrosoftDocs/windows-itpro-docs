@@ -40,7 +40,7 @@ Take the following steps to create a configuration profile that will set require
     2. Add a setting for **Commercial ID** ) with the following values:
         - **Name**: Commercial ID
         - **Description**: Sets the Commercial ID that corresponds to the Update Compliance Log Analytics workspace.
-        - **OMA-URI**: `./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID`
+        - **OMA-URI**: `./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID`
         - **Data type**: String
         - **Value**: *Set this to your Commercial ID*
     2. Add a setting configuring the **Windows Diagnostic Data level** for devices:
