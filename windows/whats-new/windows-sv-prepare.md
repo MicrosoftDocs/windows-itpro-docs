@@ -1,26 +1,26 @@
 ---
-title: Get started with Windows Sun Valley
-description: Learn about features, review requirements, and plan your deployment of Windows Sun Valley, including IT Pro content, release information, and history.
+title: Prepare to deploy Windows Sun Valley
+description: Prepare your infrastructure and tools to deploy Windows Sun Valley, IT Pro content.
 keywords: ["get started", "windows sun valley"]
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.author: greglin
-ms.date: 10/16/2017
+ms.date: 06/24/2021
 ms.reviewer: 
 manager: laurawi
 ms.localizationpriority: high
 ms.topic: article
 ---
 
-# Get started with Windows Sun Valley
+# Prepare to deploy Windows Sun Valley
 
 **Applies to**
 
 -   Windows Sun Valley
 
-## Deployment planning
+## Deployment readiness
 
 Consider using the following process to deploy Windows Sun Valley to existing devices:
 1. Preview Windows Sun Valley and create a deployment plan. 
@@ -33,4 +33,4 @@ Consider using the following process to deploy Windows Sun Valley to existing de
 
 ## See also
 
-[Windows Sun Valley deployment planning](/windows/deployment/windows-sv-deploy)
+[Windows Sun Valley deployment planning](windows-sv-plan.md)

@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Windows client deployment resources and documentation # < 60 chars
-summary: Learn about deploying and keeping Windows 10 up to date.  # < 160 chars
+summary: Learn about deploying and keeping Windows client devices up to date.  # < 160 chars
 
 metadata:
   title: Windows client deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/05/2020 #Required; mm/dd/yyyy format.
+  ms.date: 06/24/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -66,8 +66,8 @@ landingContent:
         links:
           - text: What's new in Windows deployment
             url: deploy-whats-new.md
-          - text: Windows 11 deployment overview
-            url: windows-sv-deploy.md
+          - text: Windows Sun Valley overview
+            url: /windows/whats-new/windows-sv-overview.md
           - text: Windows client deployment scenarios
             url: windows-10-deployment-scenarios.md
           - text: Basics of Windows updates, channels, and tools
