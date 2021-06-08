@@ -31,9 +31,10 @@ landingContent:
             url:  windows-sv.md
           - text: Windows Sun Valley requirements
             url: windows-sv-requirements.md
-          - text: Get started with Windows Sun Valley 
-            url: windows-sv-get-started.md
-
+          - text: Plan to deploy Windows Sun Valley 
+            url: windows-sv-plan.md
+          - text: Get ready for Windows Sun Valley 
+            url: windows-sv-prepare.md
 
   - title: Windows 10
     linkLists:
