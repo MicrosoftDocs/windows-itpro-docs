@@ -25,13 +25,20 @@ This article provides an introduction and answers some frequently asked question
 
 Windows Sun Valley is a newly designed Windows client operating system due to be released later in 2021. It is fresh and light, yet familiar to those who use Windows today. The goal of this release is to be the most reliable, secure, connected, and performant OS release ever.
 
---statement to edit
+The following articles are available to learn about Windows Sun Valley. The articles are designed to be read in order.
+
+1. Windows Sun Valley overview: An introduction to Windows Sun Valley (this article).
+2. [Windows Sun Valley requirements](windows-sv-requirements.md): Hardware, software, network, and licensing requirements to deploy Windows Sun Valley.
+3. [Planning for Windows Sun Valley](windows-sv-plan.md): Guidance to create a Windows Sun Valley deployment plan.
+4. [Prepare to deploy Windows Sun Valley](windows-sv-prepare.md): Procedures to ensure readiness to deploy Windows Sun Valley in your organization.
+
+--statement to edit<br>
 In general, you can deploy  , manage, and secure Sun Valley using the same tools and solutions you use today.
 You can use Configuration Manager for your deployment, though we recommend cloud-based solutions such as Microsoft Endpoint Manager to fully take advantage of more data-driven insights. Monitoring update compliance.
 Since your familiar Windows 10 tools are meant to be used with Sun Valley as well, then managing, securing, and deploying Sun Valley devices will be well-known procedures in the Plan, Prepare and Deploy process.
 Just as we recommend that broad deployment of new versions of Windows 10 begin with a pilot deployment phase, Sun Valley is no different. Further, you will likely have an environment that is a blend of Windows 10-capable devices and Windows 10 + Sun Valley-eligible devices. You will be poised to rollout an update to a select number of devices, once you’ve gone through the checklist of Pilot deployment tasks such as assigning the pilot devices from your Prepare phase, implementing baseline and operations updates, testing and supporting the devices, and so forth.  When you deploy to your test group, we recommend cloud-based deployment solutions such as Microsoft Endpoint Manager to fully take advantage of data-driven insights, though Configuration Manager works as well.
 Using artifacts from your Plan and Prepare phase (such as application assignments, security and configuration baselines, etc.) as well as data from your test deployment, will give you the confidence you seek to manage a broader rollout of Sun Valley to increasingly larger rings of eligible devices. Desktop Analytics will help you ensure that your apps are scoped to only the pilot rings you designate. 
-Though we’ve mentioned only a few, the tools and processes we have had in place for your previous 10 Windows deployment will be there for you with Sun Valley as well.
+Though we’ve mentioned only a few, the tools and processes we have had in place for your previous 10 Windows deployment will be there for you with Sun Valley as well.<br>
 ---------statement end
 
 ## How to get Windows Sun Valley
@@ -84,7 +91,7 @@ Most accessories and associated software that worked with Windows 10 are expecte
 
 ## Application compatibility
 
-Microsoft is committed to ensuring your Windows 10 applications work on Windows Sun Valley. If you have [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure), Microsoft will help you fix any issues at no cost. App Assure is free for organizations with 150 or more seats. For more information on eligibility requirements, see [Products and Capabilities: App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure).
+Microsoft is committed to ensuring your Windows 10 applications work on Windows Sun Valley. If you have [App Assure](/fasttrack/microsoft-365/app-assure), Microsoft will help you fix any issues at no cost. App Assure is free for organizations with 150 or more seats. For more information on eligibility requirements, see [Products and Capabilities: App Assure](/fasttrack/products-and-capabilities#app-assure).
 
 ## Licensing
 

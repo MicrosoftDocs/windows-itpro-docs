@@ -14,7 +14,7 @@ ms.localizationpriority: high
 ms.topic: article
 ---
 
-# Get started with Windows Sun Valley
+# Planning for Windows Sun Valley
 
 **Applies to**
 
