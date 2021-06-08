@@ -25,6 +25,15 @@ This article provides an introduction and answers some frequently asked question
 
 Windows Sun Valley is a newly designed Windows client operating system due to be released later in 2021. It is fresh and light, yet familiar to those who use Windows today. The goal of this release is to be the most reliable, secure, connected, and performant OS release ever.
 
+--statement to edit
+In general, you can deploy  , manage, and secure Sun Valley using the same tools and solutions you use today.
+You can use Configuration Manager for your deployment, though we recommend cloud-based solutions such as Microsoft Endpoint Manager to fully take advantage of more data-driven insights. Monitoring update compliance.
+Since your familiar Windows 10 tools are meant to be used with Sun Valley as well, then managing, securing, and deploying Sun Valley devices will be well-known procedures in the Plan, Prepare and Deploy process.
+Just as we recommend that broad deployment of new versions of Windows 10 begin with a pilot deployment phase, Sun Valley is no different. Further, you will likely have an environment that is a blend of Windows 10-capable devices and Windows 10 + Sun Valley-eligible devices. You will be poised to rollout an update to a select number of devices, once you’ve gone through the checklist of Pilot deployment tasks such as assigning the pilot devices from your Prepare phase, implementing baseline and operations updates, testing and supporting the devices, and so forth.  When you deploy to your test group, we recommend cloud-based deployment solutions such as Microsoft Endpoint Manager to fully take advantage of data-driven insights, though Configuration Manager works as well.
+Using artifacts from your Plan and Prepare phase (such as application assignments, security and configuration baselines, etc.) as well as data from your test deployment, will give you the confidence you seek to manage a broader rollout of Sun Valley to increasingly larger rings of eligible devices. Desktop Analytics will help you ensure that your apps are scoped to only the pilot rings you designate. 
+Though we’ve mentioned only a few, the tools and processes we have had in place for your previous 10 Windows deployment will be there for you with Sun Valley as well.
+---------statement end
+
 ## How to get Windows Sun Valley
 
 Windows Sun Valley will delivered as an upgrade to devices running Windows 10 beginning in the first half of 2022. All upgrades to Windows Sun Valley from Windows 10 will be free. Windows Sun Valley will also be available on new devices that meet the hardware requirements. 
@@ -91,4 +100,6 @@ After you have upgraded to Windows Sun Valley, you have 10 days to use the rollb
 
 ## See also
 
-[Get started with Windows Sun Valley](windows-sv-get-started.md)
+[Get started with Windows Sun Valley](windows-sv-plan.md)
+
+
