@@ -25,7 +25,7 @@ This article provides an introduction and answers some frequently asked question
 
 The following articles are available to learn about Windows Sun Valley. 
 
-1. [Windows Sun Valley overview](windows-sv-md): An introduction to Windows Sun Valley (this article).
+1. Windows Sun Valley overview (this article): An introduction to Windows Sun Valley.
 2. [Windows Sun Valley requirements](windows-sv-requirements.md): Hardware, software, network, and licensing requirements to deploy Windows Sun Valley.
 3. [Planning for Windows Sun Valley](windows-sv-plan.md): Guidance to create a Windows Sun Valley deployment plan.
 4. [Prepare to deploy Windows Sun Valley](windows-sv-prepare.md): Procedures to ensure readiness to deploy Windows Sun Valley in your organization.
@@ -63,15 +63,14 @@ Microsoft will continue to provide one cumulative package that includes all late
 
 Windows Sun Valley annual releases are supported for 24 months or 36 months, depending on the edition. See the following table.
 
-<table border="1">
-<th>Edition</th><th>Servicing timeline</th>
-<tr><td>Windows Sun Valley Home</td><td rowspan=4>24 months from the release date</td>
-<tr><td>Windows Sun Valley Pro</td>
-<tr><td>Windows Sun Valley Pro for Workstations</td>
-<tr><td>Windows Sun Valley Pro Education</td>
-<tr><td>Windows Sun Valley Enterprise</td><td rowspan=2>36 months from the release date</td>
-<tr><td>Windows Sun Valley Education</td>
-</table>
+
+| 24 months from the release date | 36 months from the release date |
+| --- | --- |
+| Windows Sun Valley Home | Windows Sun Valley Enterprise |
+| Windows Sun Valley Pro | Windows Sun Valley Education |
+| Windows Sun Valley Pro for Workstations |  |
+| Windows Sun Valley Pro Education |  |
+
 
 ### Features and applications
 
