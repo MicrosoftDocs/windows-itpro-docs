@@ -566,11 +566,11 @@ The data type is integer.
 Supported operations are Add, Delete, Get, Replace.
 
 Valid values are:
-•	0: Not configured (Default)
-•	1: Beta Channel - Prerelease
-•	2: Current Channel (Preview)
-•	3: Current Channel (Staged)
-•	4: Current Channel (Broad)
+- 0 - Not configured (Default)
+- 1 - Beta Channel - Prerelease
+- 2 - Current Channel (Preview)
+- 3 - Current Channel (Staged)
+- 4 - Current Channel (Broad)
 
 <a href="" id="configuration-supportloglocation"></a>**Configuration/DefinitionUpdatesChannel** 
 Enable this policy to specify when devices receive daily Microsoft Defender definition updates during the daily gradual rollout.
