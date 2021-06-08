@@ -61,7 +61,9 @@ Microsoft will continue to provide one cumulative package that includes all late
 
 ### Servicing
 
-Windows Sun Valley annual releases are supported for 24 months or 36 months, depending on the edition. See the following table.
+Windows Sun Valley annual releases are supported for 24 months or 36 months, depending on the edition. 
+
+See the following table.
 
 
 | 24 months from the release date | 36 months from the release date |
