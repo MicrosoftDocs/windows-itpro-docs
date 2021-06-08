@@ -740,19 +740,13 @@ In Windows 10, you can configure this policy setting to decide what level of dia
 
 The following list shows the supported values for Windows 10 version 1809 and older:
 
--   0 – (**Security**) Sends information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Microsoft Defender.
-    **Note:** This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), Hololens 2, and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
--   1 – (**Basic**) Sends the same data as a value of 0, plus additional basic device info, including quality-related data, app compatibility, and app usage data.
--   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows, Windows Server, System Center, and apps are used, how they perform, and advanced reliability data.
--   3 – (**Full**) Sends the same data as a value of 2, plus all data necessary to identify and fix problems with devices.
+-   0 – (**Security**) This turns Windows diagnostic data off.  
+    **Note**: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), HoloLens 2, and Windows Server 2016 (and later versions). Using this setting on other devices editions of Windows is equivalent to setting the value of 1.
+-   1 – (**Required**) Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date.
+-   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows apps are used, how they perform, and advanced reliability data, such as limited crash dumps.
+-   3 – (**Optional**) Sends the same data as a value of 2, plus additional data necessary to identify and fix problems with devices such as enhanced error logs.
 
-Most restricted value is 0.
-
-The following list shows the supported values for  Windows 10 version 19H1 and later:
-
--   **Diagnostic data off** - No Windows diagnostic data sent.
--   **Required (Basic)** - Minimum data required to keep the device secure, up to date, and performing as expected.
--   **Optional (Full)** - Additional data about the websites you browse, how Windows and apps are used and how they perform. This data also includes data about device activity, and enhanced error reporting that helps Microsoft to fix and improve products and services for all users.
+Most restrictive value is 0.
 
 <!--<table style="margin-left: 20px">
 <colgroup>
@@ -1614,13 +1608,13 @@ To enable this behavior, you must complete two steps:
 
 -   Enable this policy setting
 -   Set the **AllowTelemetry** level:
-    - For Windows 10 version 1809 and older: set **AllowTelemetry** to (Enhanced) 
+    - For Windows 10 version 1809 and older: set **AllowTelemetry** to Enhanced
     - For Windows 10 version 19H1 and later: set **AllowTelemetry** to Optional (Full)
 
  
 When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
  
-Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send full, basic or security level diagnostic data to Microsoft.
+Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send Required (Basic) or Optional (Full) diagnostic data to Microsoft.
    
 If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.
 
