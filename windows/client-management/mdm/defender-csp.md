@@ -8,9 +8,9 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/11/2020
+ms.date: 06/02/2021
 ---
 
 # Defender CSP
@@ -56,8 +56,8 @@ Defender
 --------TamperProtectionEnabled (Added in Windows 10, version 1903)
 --------IsVirtualMachine (Added in Windows 10, version 1903)
 ----Configuration (Added in Windows 10, version 1903)
---------TamperProetection (Added in Windows 10, version 1903)
---------EnableFileHashcomputation (Added in Windows 10, version 1903)
+--------TamperProtection (Added in Windows 10, version 1903)
+--------EnableFileHashComputation (Added in Windows 10, version 1903)
 --------SupportLogLocation (Added in the next major release of Windows 10)
 ----Scan
 ----UpdateSignature
@@ -491,7 +491,7 @@ Supported operations are Add, Delete, Get, Replace.
 
 <a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
 Enables or disables file hash computation feature.
-When this feature is enabled Windows defender will compute hashes for files it scans.
+When this feature is enabled Windows Defender will compute hashes for files it scans.
 
 The data type is integer.
 

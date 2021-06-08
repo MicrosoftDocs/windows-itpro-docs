@@ -1,5 +1,5 @@
 ---
-description: Use this article to learn more about what required Windows diagnostic data is gathered.
+description: Learn what required Windows diagnostic data is gathered.
 title: Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
 ms.prod: w10
@@ -64,10 +64,6 @@ The following fields are available:
 - **DatasourceApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_21H1**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
-- **DatasourceApplicationFile_21H2**  The total number of objects of this type present on this device.
-- **DatasourceApplicationFile_21H2Setup**  The total number of objects of this type present on this device.
-- **DatasourceApplicationFile_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DatasourceApplicationFile_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_RS1**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_RS2**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_RS3**  The total number of objects of this type present on this device.
@@ -81,10 +77,6 @@ The following fields are available:
 - **DatasourceDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_21H1**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
-- **DatasourceDevicePnp_21H2**  The total number of objects of this type present on this device.
-- **DatasourceDevicePnp_21H2Setup**  The total number of objects of this type present on this device.
-- **DatasourceDevicePnp_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DatasourceDevicePnp_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_RS1**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_RS2**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_RS3**  The total number of objects of this type present on this device.
@@ -100,10 +92,6 @@ The following fields are available:
 - **DatasourceDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_21H1**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
-- **DatasourceDriverPackage_21H2**  The total number of objects of this type present on this device.
-- **DatasourceDriverPackage_21H2Setup**  The total number of objects of this type present on this device.
-- **DatasourceDriverPackage_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DatasourceDriverPackage_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_RS1**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_RS2**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_RS3**  The total number of objects of this type present on this device.
@@ -119,10 +107,6 @@ The following fields are available:
 - **DataSourceMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoBlock_21H2**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoBlock_21H2Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoBlock_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoBlock_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_RS2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
@@ -136,10 +120,6 @@ The following fields are available:
 - **DataSourceMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPassive_21H2**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPassive_21H2Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPassive_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPassive_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_RS1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_RS2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
@@ -153,10 +133,6 @@ The following fields are available:
 - **DataSourceMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_21H2**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_21H2Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
@@ -170,10 +146,6 @@ The following fields are available:
 - **DatasourceSystemBios_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_21H1**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_21H1Setup**  The total number of objects of this type present on this device.
-- **DatasourceSystemBios_21H2**  The total number of objects of this type present on this device.
-- **DatasourceSystemBios_21H2Setup**  The total number of objects of this type present on this device.
-- **DatasourceSystemBios_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DatasourceSystemBios_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_RS1**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_RS2**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_RS3**  The total number of objects of this type present on this device.
@@ -189,10 +161,6 @@ The following fields are available:
 - **DecisionApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_21H1**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionApplicationFile_21H2**  The total number of objects of this type present on this device.
-- **DecisionApplicationFile_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionApplicationFile_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionApplicationFile_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_RS1**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_RS2**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_RS3**  The total number of objects of this type present on this device.
@@ -206,10 +174,6 @@ The following fields are available:
 - **DecisionDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_21H1**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionDevicePnp_21H2**  The total number of objects of this type present on this device.
-- **DecisionDevicePnp_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionDevicePnp_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionDevicePnp_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_RS1**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_RS2**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_RS3**  The total number of objects of this type present on this device.
@@ -225,10 +189,6 @@ The following fields are available:
 - **DecisionDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_21H1**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionDriverPackage_21H2**  The total number of objects of this type present on this device.
-- **DecisionDriverPackage_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionDriverPackage_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionDriverPackage_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_RS1**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_RS2**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_RS3**  The total number of objects of this type present on this device.
@@ -244,10 +204,6 @@ The following fields are available:
 - **DecisionMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoBlock_21H2**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoBlock_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoBlock_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoBlock_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_RS2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
@@ -261,10 +217,6 @@ The following fields are available:
 - **DecisionMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPassive_21H2**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPassive_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPassive_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPassive_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_RS1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_RS2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
@@ -278,10 +230,6 @@ The following fields are available:
 - **DecisionMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPostUpgrade_21H2**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPostUpgrade_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPostUpgrade_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPostUpgrade_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
@@ -295,10 +243,6 @@ The following fields are available:
 - **DecisionMediaCenter_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_21H1**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionMediaCenter_21H2**  The total number of objects of this type present on this device.
-- **DecisionMediaCenter_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionMediaCenter_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionMediaCenter_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_RS1**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_RS2**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_RS3**  The total number of objects of this type present on this device.
@@ -306,19 +250,12 @@ The following fields are available:
 - **DecisionMediaCenter_RS5**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_TH1**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_TH2**  The total number of objects of this type present on this device.
-- **DecisionSModeState_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSModeState_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSModeState_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_19H1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_19H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_20H1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_21H1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemBios_21H2**  The total number of objects of this type present on this device.
-- **DecisionSystemBios_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemBios_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemBios_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_RS1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_RS2**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_RS3**  The total number of objects of this type present on this device.
@@ -328,29 +265,11 @@ The following fields are available:
 - **DecisionSystemBios_RS5Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_TH1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_TH2**  The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_CU22H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemMemory_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemMemory_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemMemory_CU22H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_CU22H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_CU22H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_19H1**  The total number of objects of this type present on this device.
 - **DecisionTest_20H1**  The total number of objects of this type present on this device.
 - **DecisionTest_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_21H1**  The total number of objects of this type present on this device.
 - **DecisionTest_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionTest_21H2**  The total number of objects of this type present on this device.
-- **DecisionTest_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionTest_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionTest_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_RS1**  The total number of objects of this type present on this device.
 - **DecisionTest_RS2**  The total number of objects of this type present on this device.
 - **DecisionTest_RS3**  The total number of objects of this type present on this device.
@@ -358,12 +277,6 @@ The following fields are available:
 - **DecisionTest_RS5**  The total number of objects of this type present on this device.
 - **DecisionTest_TH1**  The total number of objects of this type present on this device.
 - **DecisionTest_TH2**  The total number of objects of this type present on this device.
-- **DecisionTpmVersion_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionTpmVersion_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionTpmVersion_CU22H2Setup**  The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_CU22H2Setup**  The total number of objects of this type present on this device.
 - **InventoryApplicationFile**  The total number of objects of this type present on this device.
 - **InventoryLanguagePack**  The total number of objects of this type present on this device.
 - **InventoryMediaCenter**  The total number of objects of this type present on this device.
@@ -387,10 +300,6 @@ The following fields are available:
 - **Wmdrm_20H1Setup**  The total number of objects of this type present on this device.
 - **Wmdrm_21H1**  The total number of objects of this type present on this device.
 - **Wmdrm_21H1Setup**  The total number of objects of this type present on this device.
-- **Wmdrm_21H2**  The total number of objects of this type present on this device.
-- **Wmdrm_21H2Setup**  The total number of objects of this type present on this device.
-- **Wmdrm_CO21H2Setup**  The total number of objects of this type present on this device.
-- **Wmdrm_CU22H2Setup**  The total number of objects of this type present on this device.
 - **Wmdrm_RS1**  The total number of objects of this type present on this device.
 - **Wmdrm_RS2**  The total number of objects of this type present on this device.
 - **Wmdrm_RS3**  The total number of objects of this type present on this device.
@@ -4130,7 +4039,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event, where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [experimentationandconfigurationservicecontrol](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **installSourceName**  A string representation of the installation source.
@@ -4162,7 +4071,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [experimentationandconfigurationservicecontrol](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **installSourceName**  A string representation of the installation source.
@@ -4195,7 +4104,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See (experimentationandconfigurationservicecontrol)[/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol] for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **installSourceName**  A string representation of the installation source.
@@ -4228,7 +4137,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [#experimentationandconfigurationservicecontrol](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **installSourceName**  A string representation of the installation source.
@@ -4342,7 +4251,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [experimentationandconfigurationservicecontrol](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **installSourceName**  A string representation of the installation source.
@@ -6355,7 +6264,7 @@ The following fields are available:
 
 ### Microsoft.Windows.WERVertical.OSCrash
 
-This event sends binary data from the collected dump file wheneveer a bug check occurs, to help keep Windows up to date. The is the OneCore version of this event.
+This event sends binary data from the collected dump file whenever a bug check occurs, to help keep Windows up to date. This is the OneCore version of this event.
 
 The following fields are available:
 

@@ -193,6 +193,8 @@
                     href: update/update-compliance-configuration-script.md
                   - name: Manually configuring devices for Update Compliance
                     href: update/update-compliance-configuration-manual.md
+                  - name: Configuring devices for Update Compliance in Microsoft Endpoint Manager
+                    href: update/update-compliance-configuration-mem.md
               - name: Update Compliance monitoring
                 items: 
                   - name: Use Update Compliance
