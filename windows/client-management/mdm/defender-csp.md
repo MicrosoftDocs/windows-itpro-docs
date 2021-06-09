@@ -94,11 +94,11 @@ The data type is integer.
 
 The following list shows the supported values:
 
--   0 = Unknown
--   1 = Low
--   2 = Moderate
--   4 = High
--   5 = Severe
+- 0 = Unknown
+- 1 = Low
+- 2 = Moderate
+- 4 = High
+- 5 = Severe
 
 Supported operation is Get.
 
