@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 06/07/2021
+ms.date: 06/02/2021
 ---
 
 # Defender CSP
@@ -59,9 +59,6 @@ Defender
 --------TamperProtection (Added in Windows 10, version 1903)
 --------EnableFileHashComputation (Added in Windows 10, version 1903)
 --------SupportLogLocation (Added in the next major release of Windows 10)
---------PlatformUpdatesChannel (Added with the 4.18.2105.4 Defender platform release)
---------EngineUpdatesChannel (Added with the 4.18.2105.4 Defender platform release)
---------DefinitionUpdatesChannel (Added with the 4.18.2105.4 Defender platform release)
 ----Scan
 ----UpdateSignature
 ----OfflineScan (Added in Windows 10 version 1803)
@@ -521,73 +518,8 @@ When enabled or disabled exists on the client and admin moves the setting to not
 
 More details:  
 
-- [Microsoft Defender Antivirus diagnostic data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)  
+- [Microsoft Defender AV diagnostic data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)  
 - [Collect investigation package from devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)  
-
-<a href="" id="configuration-supportloglocation"></a>**Configuration/PlatformUpdatesChannel** 
-Enable this policy to specify when devices receive Microsoft Defender platform updates during the monthly gradual rollout.
-
-Beta Channel: Devices set to this channel will be the first to receive new updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in (manual) test environments only and a limited number of devices.
-
-Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments.
-
-Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%).
-
-Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
-
-If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
-
-The data type is integer.
-
-Supported operations are Add, Delete, Get, Replace.
-
-Valid values are:
-•	0: Not configured (Default)
-•	1: Beta Channel - Prerelease
-•	2: Current Channel (Preview)
-•	3: Current Channel (Staged)
-•	4: Current Channel (Broad)
-
-<a href="" id="configuration-supportloglocation"></a>**Configuration/EngineUpdatesChannel** 
-Enable this policy to specify when devices receive Microsoft Defender engine updates during the monthly gradual rollout.
-
-Beta Channel: Devices set to this channel will be the first to receive new updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in (manual) test environments only and a limited number of devices.
-
-Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments.
-
-Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%).
-
-Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
-
-If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
-
-The data type is integer.
-
-Supported operations are Add, Delete, Get, Replace.
-
-Valid values are:
-- 0 - Not configured (Default)
-- 1 - Beta Channel - Prerelease
-- 2 - Current Channel (Preview)
-- 3 - Current Channel (Staged)
-- 4 - Current Channel (Broad)
-
-<a href="" id="configuration-supportloglocation"></a>**Configuration/DefinitionUpdatesChannel** 
-Enable this policy to specify when devices receive daily Microsoft Defender definition updates during the daily gradual rollout.
-
-Current Channel (Staged): Devices will be offered updates after the release cycle. Suggested to apply to a small, representative part of production population (~10%)
-
-Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
-
-If you disable or do not configure this policy, the device will stay up to date automatically during the daily release cycle. Suitable for most devices.
-
-The data type is integer.
-Supported operations are Add, Delete, Get, Replace.
-
-Valid Values are:
-•	0: Not configured (Default)
-•	3: Current Channel (Staged)
-•	4: Current Channel (Broad)
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.
