@@ -3174,9 +3174,9 @@ User Account Control: Only elevate UIAccess applications that are installed in s
 
 This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following:
 
-- â€¦\Program Files\, including subfolders
-- â€¦\Windows\system32\
-- â€¦\Program Files (x86)\, including subfolders for 64-bit versions of Windows
+- .\Program Files\, including subfolders
+- .\Windows\system32\
+- .\Program Files (x86)\, including subfolders for 64-bit versions of Windows
 
 > [!NOTE]
 > Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting.
