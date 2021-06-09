@@ -1241,7 +1241,8 @@ If you click Force Logoff in the Properties dialog box for this policy, the user
 
 If you click Disconnect if a Remote Desktop Services session, removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.
 
-Note: Remote Desktop Services was called Terminal Services in previous versions of Windows Server.
+> [!NOTE]
+> Remote Desktop Services was called Terminal Services in previous versions of Windows Server.
 
 Default: This policy is not defined, which means that the system treats it as No action.
 
@@ -2457,7 +2458,8 @@ If you select "Enable auditing for all accounts", the server will log events for
 
 This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
-Note: Audit events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
+> [!NOTE]
+> Audit events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2535,7 +2537,8 @@ If you select "Deny all accounts," the server will deny NTLM authentication requ
 
 This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
-Note: Block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
+> [!NOTE]
+> Block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2613,7 +2616,8 @@ If you select "Deny all," the client computer cannot authenticate identities to 
 
 This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
-Note: Audit and block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
+> [!NOTE]
+> Audit and block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2897,7 +2901,9 @@ This policy setting controls the behavior of the elevation prompt for administra
 
 The options are:
 
-- 0 - Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments.
+- 0 - Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials.
+      > [!NOTE]
+      > Use this option only in the most constrained environments.
 
 - 1 - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
 
@@ -3168,11 +3174,12 @@ User Account Control: Only elevate UIAccess applications that are installed in s
 
 This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following:
 
-- â€¦\Program Files\, including subfolders
-- â€¦\Windows\system32\
-- â€¦\Program Files (x86)\, including subfolders for 64-bit versions of Windows
+- .\Program Files\, including subfolders
+- .\Windows\system32\
+- .\Program Files (x86)\, including subfolders for 64-bit versions of Windows
 
-Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting.
+> [!NOTE]
+> Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting.
 
 The options are:  
 - 0 - Disabled: An application runs with UIAccess integrity even if it does not reside in a secure location in the file system.
@@ -3240,7 +3247,9 @@ User Account Control: Turn on Admin Approval Mode
 This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer.
 
 The options are:
-- 0 - Disabled: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
+- 0 - Disabled: Admin Approval Mode and all related UAC policy settings are disabled.
+      > [!NOTE]
+      > If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
 - 1 - Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
 
 
