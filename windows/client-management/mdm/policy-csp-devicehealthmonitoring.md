@@ -51,7 +51,7 @@ manager: dansimp
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
 <tr>
     <td>Business</td>
@@ -115,7 +115,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
 <tr>
     <td>Business</td>
@@ -178,7 +178,7 @@ IT Pros do not need to set this policy. Instead, Microsoft Intune is expected to
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
 <tr>
     <td>Business</td>
