@@ -94,11 +94,11 @@ The data type is integer.
 
 The following list shows the supported values:
 
--   0 = Unknown
--   1 = Low
--   2 = Moderate
--   4 = High
--   5 = Severe
+- 0 = Unknown
+- 1 = Low
+- 2 = Moderate
+- 4 = High
+- 5 = Severe
 
 Supported operation is Get.
 
@@ -171,17 +171,17 @@ The data type is integer.
 
 The following list shows the supported values:
 
--   0 = Active
--   1 = Action failed
--   2 = Manual steps required
--   3 = Full scan required
--   4 = Reboot required
--   5 = Remediated with noncritical failures
--   6 = Quarantined
--   7 = Removed
--   8 = Cleaned
--   9 = Allowed
--   10 = No Status ( Cleared)
+- 0 = Active
+- 1 = Action failed
+- 2 = Manual steps required
+- 3 = Full scan required
+- 4 = Reboot required
+- 5 = Remediated with noncritical failures
+- 6 = Quarantined
+- 7 = Removed
+- 8 = Cleaned
+- 9 = Allowed
+- 10 = No Status ( Cleared)
 
 Supported operation is Get.
 
