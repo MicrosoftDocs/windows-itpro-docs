@@ -109,7 +109,8 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 > When you create WDAC policies with [New-CIPolicy](/powershell/module/configci/new-cipolicy), you can specify a primary file rule level by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
 
 > [!NOTE]
-> WDAC only supports signer rules for RSA certificate signing keys with a maximum of 4096 bits.
+> - WDAC only supports signer rules for RSA certificate signing keys with a maximum of 4096 bits.
+> - CN is what the code uses for the CertSubject and CertIssuer fields in the policy. You can use the inbox certutil to look at the underlying format and ensure UTF-8 is not being used for the CN. For example, printable string or IA5 or BMP is ok.
 
 ## Example of file rule levels in use
 
