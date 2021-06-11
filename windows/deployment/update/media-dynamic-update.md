@@ -84,6 +84,9 @@ This table shows the correct sequence for applying the various tasks to the file
 > [!NOTE]
 > Starting in February 2021, the latest cumulative update and servicing stack update will be combined and distributed in the Microsoft Update Catalog as a new combined cumulative update. For Steps 1, 9, and 18 that require the servicing stack update for updating the installation media, you should use the combined cumulative update. For more information on the combined cumulative update, see [Servicing stack updates](./servicing-stack-updates.md).
 
+> [!NOTE]
+> Microsoft will remove the Flash component from Windows through the KB4577586 “Update for Removal of Adobe Flash Player”. You can also remove Flash anytime by deploying KB4577586, which is available on the Catalog, between steps 20 and 21. As of July 2021, the KB4577586 “Update for Removal of Adobe Flash Player” will be included in the Latest Cumulative Update for Windows 10, versions 1607 and Windows 10, version 1507. The KB will also be included in the Monthly Rollup and the Security Only Update for Windows 8.1, Windows Server 2012, and Windows Embedded 8 Standard. For more information, see [Update on Adobe Flash Player End of Support](https://blogs.windows.com/msedgedev/2020/09/04/update-adobe-flash-end-support/).
+
 ### Multiple Windows editions
 
 The main operating system file (install.wim) contains multiple editions of Windows 10. It’s possible that only an update for a given edition is required to deploy it, based on the index. Or, it might be that all editions need an update. Further, ensure that languages are installed before Features on Demand, and the latest cumulative update is always applied last.
