@@ -27,7 +27,7 @@ Microsoft is committed to providing you with effective controls over your data a
 This article is meant for IT administrators and explains the changes Windows is making to align to the new data collection taxonomy. These changes are focused in two areas:
 
 - [Taxonomy changes](#taxonomy-changes)
-- [Behavioral changes](#behaviorial-changes)
+- [Behavioral changes](#behavioral-changes)
 
 > [!NOTE]
 > You can test the behavioral changes now in Windows 10 Insider Preview build 19577 and later.

@@ -89,7 +89,7 @@ The following table provides an overview of the privacy settings discussed earli
 | [Speech](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-speech) | Group Policy:<br />**Computer Configuration** > **Control Panel** > **Regional and Language Options** > **Allow users to enable online speech recognition services**<br /><br />MDM: [Privacy/AllowInputPersonalization](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | Off | Off |
 | [Location](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-location) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **App Privacy** > **Let Windows apps access location**<br /><br />MDM: [Privacy/LetAppsAccessLocation](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | Off (Windows 10, version 1903 and later) | Off |
 | [Find my device](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#find-my-device) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Find My Device** > **Turn On/Off Find My Device**<br /><br />MDM: [Experience/AllFindMyDevice](/windows/client-management/mdm/policy-csp-experience#experience-allowfindmydevice) | Off | Off |
-| [Diagnostic Data](configure-windows-diagnostic-data-in-your-organization.md#manage-enterprise-diagnostic-data) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Data Collection and Preview Builds** > **Allow Telemetry**<br /><br />MDM: [System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)<br /><br />Note: If you are planning to configure devices, using the Windows diagnostic data processor configuration option, the recommended state to minimize data collection is not applicable. For more information, see [Enabling the Windows diagnostic data processor configuration](#_238-diagnostic-data-enabling-the-windows-diagnostic-data-processor-configuration_). | Required diagnostic data (Windows 10, version 1903 and later)<br /><br />Server editions:<br />Enhanced diagnostic data | Security (Off) and block endpoints |
+| [Diagnostic Data](configure-windows-diagnostic-data-in-your-organization.md#manage-enterprise-diagnostic-data) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Data Collection and Preview Builds** > **Allow Telemetry**<br /><br />MDM: [System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)<br /><br />Note: If you are planning to configure devices, using the Windows diagnostic data processor configuration option, the recommended state to minimize data collection is not applicable. For more information, see [Enabling the Windows diagnostic data processor configuration](#238-diagnostic-data-enabling-the-windows-diagnostic-data-processor-configuration). | Required diagnostic data (Windows 10, version 1903 and later)<br /><br />Server editions:<br />Enhanced diagnostic data | Security (Off) and block endpoints |
 | [Inking and typing diagnostics](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-ink) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Text Input** > **Improve inking and typing recognition**<br /><br />MDM: [TextInput/AllowLinguisticDataCollection](/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection) | Off (Windows 10, version 1809 and later) | Off | 
 | Tailored Experiences | Group Policy:<br />**User Configuration** > **Windows Components** > **Cloud Content** > **Do not use diagnostic data for tailored experiences**<br /><br />MDM: [Experience/AllowTailoredExperiencesWithDiagnosticData](/windows/client-management/mdm/policy-csp-experience#experience-allowtailoredexperienceswithdiagnosticdata) | Off | Off | 
 | Advertising ID | Group Policy:<br />**Computer Configuration** > **System** > **User Profile** > **Turn off the advertising Id**<br /><br />MDM: [Privacy/DisableAdvertisingId](/windows/client-management/mdm/policy-csp-privacy#privacy-disableadvertisingid) | Off | Off | 
@@ -109,8 +109,8 @@ If you want the ability to fully control and apply restrictions on data being se
 Alternatively, your administrators can also choose to use Windows Autopilot. Autopilot lessens the overall burden of deployment while allowing administrators to fully customize the out-of-box experience. However, since Windows Autopilot is a cloud-based solution, administrators should be aware that a minimal set of device identifiers are sent back to Microsoft during initial device boot up. This device-specific information is used to identify the device so that it can receive the administrator-configured Autopilot profile and policies.
 
 You can use the following articles to learn more about Autopilot and how to use Autopilot to deploy Windows 10: 
-- https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-Autopilot 
-- https://docs.microsoft.com/windows/deployment/windows-Autopilot/deployment-process
+- [Overview of Windows Autopilot](/windows/deployment/windows-Autopilot/windows-Autopilot)
+- [Windows Autopilot deployment process](/windows/deployment/windows-Autopilot/deployment-process)
 
 #### _2.3.2 Windows 10 connected experiences and essential services_
 
@@ -146,7 +146,7 @@ Windows 10, version 1803 and newer allows users to change their diagnostic data 
 
 #### _2.3.7 Diagnostic data: Managing device-based data delete_
 
-Windows 10, version 1809 and newer allows a user to delete diagnostic data collected from their device by using **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button under the **Delete diagnostic data** heading. An administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData?view=win10-ps) PowerShell cmdlet.
+Windows 10, version 1809 and newer allows a user to delete diagnostic data collected from their device by using **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button under the **Delete diagnostic data** heading. An administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData) PowerShell cmdlet.
 
 An administrator can disable a user’s ability to delete their device’s diagnostic data by setting the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Disable deleting diagnostic data** or the MDM policy `DisableDeviceDelete`.
 
@@ -183,7 +183,7 @@ For IT administrators who have devices using the Windows diagnostic data process
 
 ### 3.1 Delete
 
-Users can delete their device-based data by going to **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button under the **Delete diagnostic data** heading. Administrators can also use the [Clear-WindowsDiagnosticData](/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData?view=win10-ps) PowerShell cmdlet.
+Users can delete their device-based data by going to **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button under the **Delete diagnostic data** heading. Administrators can also use the [Clear-WindowsDiagnosticData](/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData) PowerShell cmdlet.
 
 >[!Note]
 >If the Windows diagnostic data processor configuration is being used, the Delete diagnostic data functionality will be disabled. IT administrators can delete diagnostic data associated with a user from the admin portal.
@@ -242,7 +242,7 @@ An administrator can configure privacy-related settings, such as choosing to onl
 
 ### 5.4 Microsoft Managed Desktop
 
-[Microsoft Managed Desktop (MMD)](/microsoft-365/managed-desktop/service-description/?view=o365-worldwide) is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows 10 Enterprise edition, Office 365 ProPlus, and Microsoft security services.
+[Microsoft Managed Desktop (MMD)](/microsoft-365/managed-desktop/service-description/) is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows 10 Enterprise edition, Office 365 ProPlus, and Microsoft security services.
 
 ### 5.5 Update Compliance
 
