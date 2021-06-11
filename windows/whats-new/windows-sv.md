@@ -19,34 +19,34 @@ ms.custom: seo-marvel-apr2020
 # Windows Sun Valley overview
 
 **Applies to**
--   Windows Sun Valley
+
+-   Windows Sun Valley, version 21H2
 
 This article provides an introduction and answers some frequently asked questions about Windows Sun Valley, the next client release of Windows.
 
-The following articles are available to learn about Windows Sun Valley. 
+The following articles are available to learn about Windows Sun Valley: 
 
 1. Windows Sun Valley overview (this article): An introduction to Windows Sun Valley.
 2. [Windows Sun Valley requirements](windows-sv-requirements.md): Hardware, software, network, and licensing requirements to deploy Windows Sun Valley.
 3. [Planning for Windows Sun Valley](windows-sv-plan.md): Guidance to create a Windows Sun Valley deployment plan.
-4. [Prepare to deploy Windows Sun Valley](windows-sv-prepare.md): Procedures to ensure readiness to deploy Windows Sun Valley in your organization.
+4. [Prepare for Windows Sun Valley](windows-sv-prepare.md): Procedures to ensure readiness to deploy Windows Sun Valley in your organization.
 
 ## Introduction
 
 Windows Sun Valley is a newly designed Windows client operating system due to be released later in 2021. It is fresh and light, yet familiar to those who use Windows today. Windows Sun Valley is designed to support today's flexible [hybrid work](https://pulse.microsoft.com/the-journey-to-the-new-normal-driving-innovation-and-productivity-in-a-hybrid-world/) environment. The goal of this release is to be the most reliable, secure, connected, and performant OS release ever. 
 
-Windows Sun Valley is built on the same foundation as Windows 10, so you can generally deploy, manage, and secure Sun Valley using the same tools and solutions you use today. 
+Windows Sun Valley is built on the same foundation as Windows 10, so you can deploy, manage, and secure Windows Sun Valley using the same tools and solutions you use today.
 
 All upgrades to Windows Sun Valley from Windows 10 will be free. 
 
 ## How to get Windows Sun Valley
 
-Windows Sun Valley will delivered as an upgrade to devices running Windows 10 beginning in the first half of 2022. Windows Sun Valley will also be available on new devices that meet the hardware requirements. 
+Windows Sun Valley will delivered as an upgrade to devices running Windows 10 beginning in the first half of 2022. Windows Sun Valley will also be available on new devices that meet the hardware requirements.
+- For managed PCs that meet requirements, the upgrade will be provided using the same process that you use today for feature updates. 
+- For unmanaged PCs that meet requirements, the upgrade will be offered through Windows Update.
+- You can get early access to test Windows Sun Valley by joining the [Windows Insider Program](https://insider.windows.com), or by enabling pre-release Windows 10 feature updates in Configuration Manager or Windows Server Update Services (WSUS).
 
-You must be running Windows 10, version 20H1 or later, and meet the minimum hardware specifications to be eligible to upgrade. For more information, see [Windows Sun Valley requirements](windows-sv-requirements.md).
-
-For managed PCs that meet requirements, the upgrade will be provided using the same process that you use today for feature updates. For unmanaged PCs that meet requirements, the upgrade will be offered through Windows Update.
-
-You can get early access to test Windows Sun Valley by joining the [Windows Insider Program](https://insider.windows.com), or by enabling pre-release Windows 10 feature updates in Configuration Manager or Windows Server Update Services (WSUS).
+For more information about eligibility to upgrade, see [Windows Sun Valley requirements](windows-sv-requirements.md).
 
 ### Licensing
 
@@ -62,7 +62,7 @@ After you have upgraded to Windows Sun Valley, you have 10 days to use the rollb
 
 ## Compatibility
 
-Windows Sun Valley is based on the same foundation as Windows 10. Therefore, it supports investments that IT organizations have made to support Windows 10. 
+Windows Sun Valley is built on the same foundation as Windows 10, so you can generally deploy, manage, and secure Sun Valley using the same tools and solutions you use today. 
 
 ### Management and tools
 
@@ -74,24 +74,17 @@ Most accessories and associated software that worked with Windows 10 are expecte
 
 ### Application compatibility
 
-Windows Sun Valley preserves the application compatibility promise made with Windows 10, and does not require changes to existing support processes or tooling to sustain the currency of applications and devices. Programs like App Assure and FastTrack for Microsoft M365 customers will continue to be available to support IT efforts to adopt and maintain Windows Sun Valley.
-
+Windows Sun Valley preserves the application compatibility promise made with Windows 10, and does not require changes to existing support processes or tooling to sustain the currency of applications and devices. Programs like App Assure and FastTrack for Microsoft M365 customers will continue to be available to support IT efforts to adopt and maintain Windows Sun Valley. For more information, see [Application compatibility](windows-sv-prepare.md#application-compatibility)
 
 ## Windows Sun Valley servicing
 
 For details about the Windows Sun Valley servicing cadence and lifecycle, see [Windows Sun Valley servicing](sv-plan.md#servicing).
 
-## Windows 10 lifecycle
+## Windows 10 servicing
 
-For organizations who cannot move to Windows Sun Valley immediately, Microsoft’s guidance is to standardize devices on Windows 10, version 21H2. This release will be the last feature update to Windows 10, but will receive specific feature enhancements to ease migrating to Windows Sun Valley. 
-
-Windows 10 will continue to be supported with security updates until October 2025.
-
+Windows 10 will continue to be supported with security updates until October 2025. For more information, see [Windows 10 lifecycle](windows-sv.plan.md#windows-10-lifecycle).
 
 ## Next steps
 
 [Plan to deploy Windows Sun Valley](windows-sv-plan.md)<br>
 [Prepare for Windows Sun Valley](windows-sv-prepare.md)
-
-
-## See also

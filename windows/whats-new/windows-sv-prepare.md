@@ -14,11 +14,11 @@ ms.localizationpriority: high
 ms.topic: article
 ---
 
-# Prepare to deploy Windows Sun Valley
+# Prepare for Windows Sun Valley
 
 **Applies to**
 
--   Windows Sun Valley
+-   Windows Sun Valley, version 21H2
 
 ## Deployment readiness
 
@@ -30,6 +30,8 @@ To prepare for deployment of Windows Sun Valley, you will need to implement your
 - Verify hardware meets requirements for Windows Sun Valley
 - Update your management tools, infrastructure, and policies
 - [Prepare users](/windows/deployment/update/prepare-deploy-windows#prepare-users) for Windows Sun Valley. 
+
+
 
 When these actions are completed, you can begin your phased deployment of Windows Sun Valley.
 

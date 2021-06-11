@@ -18,21 +18,21 @@ ms.topic: article
 
 **Applies to**
 
--   Windows Sun Valley
+-   Windows Sun Valley, version 21H2
 
 ## Deployment planning
 
-This article provides IT professionals with planning guidance for the recent Windows Sun Valley announcements, specifically: 
+This article provides you with planning guidance to deploy Windows Sun Valley in your organization, specifically: 
  
    - Adoption guidance
    - Infrastructure planning
    - Servicing cadence and lifecycle 
    - Application readiness 
    - Functionality and coexistence with Windows 10 ecosystems 
- 
-## Deployment process
 
-Consider using the following processes to deploy Windows Sun Valley:
+### Deployment process
+
+Consider the following order of activities:
 1. Preview Windows Sun Valley and create a deployment plan. 
 2. Test critical applications and management policies.
 3. Update devices to the Windows 10, version 20H1 or later.
@@ -40,9 +40,11 @@ Consider using the following processes to deploy Windows Sun Valley:
 5. Update deployment tools, infrastructure, and policies.
 6. Update qualifying devices to Windows Sun Valley.
 
-## Phased deployment
+### Phased deployment
 
-A phased deployment model is recommended for rolling out upgrades to devices in your organization. This is identical to the [service management model](/windows/deployment/update/create-deployment-plan) recommended for Windows 10 updates. With this method, you define the time and scope of devices that will migrate to Windows Sun Valley. A [calendar based approac](/windows/deployment/update/plan-define-strategy#calendar-approaches) is an effective method to plan Windows Sun Valley upgrades that includes scheduling of future Windows 10 and Windows Sun Valley updates.
+A phased deployment model is recommended for rolling out upgrades to devices in your organization. This is identical to the [service management model](/windows/deployment/update/create-deployment-plan) recommended for Windows 10 updates. With this method, you define the time and scope of devices that will migrate to Windows Sun Valley. 
+
+A [calendar based approac](/windows/deployment/update/plan-define-strategy#calendar-approaches) is an effective method to plan Windows Sun Valley upgrades that includes scheduling of future Windows 10 and Windows Sun Valley updates.
 
 Also consider [assigning roles](/windows/deployment/update/plan-define-readiness) within your organization to groups and individuals you'll need to carry out specific tasks, if you have not already done so.
 
@@ -57,7 +59,13 @@ Assess your current [configurations](/windows/deployment/update/eval-infra-tools
 - Identify gaps
 - Implement required updates
 
-## Windows  Sun Valley Servicing
+## Windows 10 lifecycle
+
+For organizations who cannot move to Windows Sun Valley immediately, Microsoft’s guidance is to standardize devices on Windows 10, version 21H2. This release will be the last feature update to Windows 10, and will receive specific feature enhancements to ease migrating to Windows Sun Valley. 
+
+Windows 10 will continue to be supported with security updates until October 2025.
+
+## Windows Sun Valley servicing
 
 ### Cadence
 

@@ -30,8 +30,8 @@ landingContent:
             url: /windows/whats-new/windows-sv
           - text: Windows Sun Valley requirements
             url: /windows/whats-new/windows-sv-requirements
-          - text: Get started with Windows Sun Valley
-            url: /windows/whats-new/windows-sv-get-started
+          - text: Plan to deploy Windows Sun Valley
+            url: /windows/whats-new/windows-sv-plan
           - text: What's new in Windows 10, version 21H2
             url: /windows/whats-new/whats-new-windows-10-version-21H1
           - text: Windows release information

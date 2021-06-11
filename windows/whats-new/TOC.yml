@@ -7,9 +7,9 @@
       href: windows-sv.md
     - name: Windows Sun Valley requirements
       href: windows-sv-requirements.md
-    - name: Create a deployment plan
+    - name: Plan to deploy Windows Sun Valley
       href: windows-sv-plan.md
-    - name: Prepare to deploy Windows Sun Valley
+    - name: Prepare for Windows Sun Valley
       href: windows-sv-prepare.md
 - name: Windows 10
   expanded: true

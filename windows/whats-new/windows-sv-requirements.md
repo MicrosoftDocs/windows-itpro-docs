@@ -18,13 +18,17 @@ ms.custom: seo-marvel-apr2020
 
 # Windows Sun Valley requirements
 
+**Applies to**
+
+-   Windows Sun Valley, version 21H2
+
 This article lists the sotware and physical hardware requirements to run Windows Sun Valley. Windows Sun Valley can also be run on Virtual Machines (VMs).
 
 ## Software requirements
 
 The upgrade to Sun Valley is available for devices running Windows 10, version 20H1 or newer, on eligible hardware.
 
-If you are running Windows in S mode, you will need to first switch out of S mode prior to upgrading. S mode is not supported on Sun Valley. 
+S mode is not supported on Windows Sun Valley. If you are running Windows in S mode, you will need to first [switch out of S mode](/windows/deployment/windows-10-pro-in-s-mode) prior to upgrading.  
 
 ## Hardware requirements
 
@@ -49,7 +53,12 @@ Hardware
 
 Internet connectivity is required for the Home Edition 
 
+## Next steps
+
+[Plan to deploy Windows Sun Valley](windows-sv-plan.md)<br>
+[Prepare for Windows Sun Valley](windows-sv-prepare.md)
+
 ## See also
 
-[Windows Sun Valley overview](windows-sv-overview.md)
+[Windows Sun Valley overview](windows-sv.md)
 
