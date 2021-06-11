@@ -2555,7 +2555,7 @@ The following list shows the CSPs supported in HoloLens devices:
 [PassportForWork CSP](passportforwork-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
 | [Policy CSP](policy-configuration-service-provider.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [RemoteFind CSP](remotefind-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
-| [RemoteWipe CSP](remotewipe-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
+| [RemoteWipe CSP](remotewipe-csp.md) (**doWipe** and **doWipePersistProvisionedData** nodes only)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
 | [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [TenantLockdown CSP](tenantlockdown-csp.md) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>10</sup>  |
 | [Update CSP](update-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
