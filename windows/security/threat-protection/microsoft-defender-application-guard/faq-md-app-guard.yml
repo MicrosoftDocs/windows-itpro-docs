@@ -52,7 +52,7 @@ sections:
       - question: |
           Why don't employees see their favorites in the Application Guard Edge session?
         answer: |
-          Depending on your organization’s settings, it might be that Favorites Sync is turned off. To manage the policy, see: [Microsoft Edge and Microsoft Defender Application Guard | Microsoft Docs](/deployedge/microsoft-edge-security-windows-defender-application-guard)
+          Depending on your organization’s settings, it might be that Favorites Sync is turned off. To manage the policy, see: [Microsoft Edge and Microsoft Defender Application Guard | Microsoft Docs](/deployedge/microsoft-edge-security-windows-defender-application-guard).
           
       - question: |
           Why aren’t employees able to see their extensions in the Application Guard Edge session?
@@ -148,13 +148,13 @@ sections:
           - [Open Group Policy management console for Microsoft Defender Firewall](../windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md)
 
           ### First rule (DHCP Server)
-          1. Program path: `%SystemRoot%\System32\svchost.exe`
+          - Program path: `%SystemRoot%\System32\svchost.exe`
           
-          2. Local Service: `Sid:  S-1-5-80-2009329905-444645132-2728249442-922493431-93864177  (Internet Connection Service (SharedAccess))`
+          - Local Service: `Sid:  S-1-5-80-2009329905-444645132-2728249442-922493431-93864177  (Internet Connection Service (SharedAccess))`
           
-          3. Protocol UDP
+          - Protocol UDP
           
-          4. Port 67
+          - Port 67
           
           ### Second rule (DHCP Client)
           This is the same as the first rule, but scoped to local port 68. In the Microsoft Defender Firewall user interface go through the following steps:
