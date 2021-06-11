@@ -507,8 +507,6 @@ contoso.internalproxy1.com;contoso.internalproxy2.com
 
 ### IPv4 ranges
 
-Starting with Windows 10, version 1703, this field is optional.
-
 Specify the addresses for a valid IPv4 value range within your intranet. 
 These addresses, used with your Network domain names, define your corporate network boundaries.
 Classless Inter-Domain Routing (CIDR) notation isn’t supported.

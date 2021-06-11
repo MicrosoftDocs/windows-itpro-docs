@@ -4521,7 +4521,7 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. Prevents users from using My Computer to gain access to the content of selected drives.
 
-If you enable this setting, users can browse the directory structure of the selected drives in My Computer or File Explorer, but they cannot open folders and access the contents. Also, they cannot use the Run dialog box or the Map Network Drive dialog box to view the directories on these drives.
+If you enable this setting, users can browse the directory structure of the selected drives in My Computer or File Explorer, but they cannot open folders and access the contents (open the files in the folders or see the files in the folders). Also, they cannot use the Run dialog box or the Map Network Drive dialog box to view the directories on these drives.
 
 To use this setting, select a drive or combination of drives from the drop-down list. To allow access to all drive directories, disable this setting or select the "Do not restrict drives" option from the drop-down list.
 
