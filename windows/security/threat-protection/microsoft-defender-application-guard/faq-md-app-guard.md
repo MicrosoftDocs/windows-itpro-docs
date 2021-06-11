@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/12/2021
+ms.date: 06/11/2021
 ms.reviewer:
 manager: dansimp
 ms.custom: asr
@@ -23,9 +23,9 @@ This article lists frequently asked questions with answers for Microsoft Defende
 
 ## Frequently Asked Questions
 
-### Can I enable Application Guard on machines equipped with 4-GB RAM?
+### Can I enable Application Guard on machines equipped with 4 GB RAM?
 
-We recommend 8-GB RAM for optimal performance but you can use the following registry DWORD values to enable Application Guard on machines that aren't meeting the recommended hardware configuration.
+We recommend 8 GB RAM for optimal performance but you can use the following registry DWORD values to enable Application Guard on machines that aren't meeting the recommended hardware configuration.
 
 `HKLM\software\Microsoft\Hvsi\SpecRequiredProcessorCount` (Default is four cores.)
 
@@ -51,7 +51,7 @@ Depending on your organization’s settings, it might be that Favorites Sync is 
 
 Make sure to enable the extensions policy on your Application Guard configuration.
 
-### I’m trying to watch playback video with HDR, why is the HDR option missing? 
+### I’m trying to watch playback video with HDR. Why is the HDR option missing? 
 
 In order for HDR video playback to work in the container, vGPU Hardware Acceleration needs to be enabled in Application Guard.
 
@@ -102,7 +102,7 @@ Yes, both the Enterprise Resource domains that are hosted in the cloud and the d
 
 ### Why does my encryption driver break Microsoft Defender Application Guard?
 
-Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (**0x80070013 ERROR_WRITE_PROTECT**).
+Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (`0x80070013 ERROR_WRITE_PROTECT`).
 
 ### Why do the Network Isolation policies in Group Policy and CSP look different?
 
@@ -114,7 +114,7 @@ There is not a one-to-one mapping among all the Network Isolation policies betwe
 
 - For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
 
-Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (**0x80070013 ERROR_WRITE_PROTECT**).
+Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (`0x80070013 ERROR_WRITE_PROTECT`).
 
 ### Why did Application Guard stop working after I turned off hyperthreading?
 
