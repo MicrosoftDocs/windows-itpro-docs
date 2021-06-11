@@ -51,6 +51,10 @@ Depending on your organization’s settings, it might be that Favorites Sync is 
 
 Make sure to enable the extensions policy on your Application Guard configuration.
 
+### I’m trying to watch playback video with HDR, why is the HDR option missing? 
+
+In order for HDR video playback to work in the container, vGPU Hardware Acceleration needs to be enabled in Application Guard.
+
 ### How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)?
 
 Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition, version 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune.
