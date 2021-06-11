@@ -28,7 +28,8 @@ This article lists the sotware and physical hardware requirements to run Windows
 
 The upgrade to Sun Valley is available for devices running Windows 10, version 20H1 or later, on eligible hardware.
 
-S mode is not supported on Windows Sun Valley. If you are running Windows in S mode, you will need to first [switch out of S mode](/windows/deployment/windows-10-pro-in-s-mode) prior to upgrading.  
+S mode is not supported on Windows Sun Valley. 
+- If you are running Windows in S mode, you will need to first [switch out of S mode](/windows/deployment/windows-10-pro-in-s-mode) prior to upgrading.  
 
 ## Hardware requirements
 

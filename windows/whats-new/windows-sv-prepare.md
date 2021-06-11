@@ -50,7 +50,7 @@ The following updates are required to support deploying Windows Sun Valley:
   - Configuration Manager will prompt you to accept the End User License Agreement on behalf of the users in your organization. 
   - If you would like to validate Sun Valley prior to release, simply sync the **Windows Insider Pre-release** category as well.   
 - If you use Windows Server Update Services (WSUS), you will need to sync the new Windows Sun Valley category. 
-- Windows Update for Business (WUfB) users can leverage the Target Version capability (not Feature Update deferrals).
+- Windows Update for Business (WUfB) users can leverage the **Target Version** capability (not Feature Update deferrals).
    -  Feature Update deferrals are great to move to newer versions of a product (for example: Windows 10 21H1 to Windows 10 21H2), but deferrals do not enable you to move between products (Windows 10 to Windows Sun Valley). Quality update deferrals will continue to work the same across both Windows 10 and Windows Sun Valley. 
    - WUfB has the additional benefit of two safety nets: offering blocks on non-eligible devices, and Safeguard holds. Safeguard holds will function for Windows Sun Valley devices just as they do for Windows 10. Administrators will have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows Sun Valley. 
 - No action is required for you to use Microsoft Intune because it is cloud-based.
@@ -58,7 +58,7 @@ The following updates are required to support deploying Windows Sun Valley:
 - Windows Autopilot works seamlessly in a Windows Sun Valley Out-of-Box-Experience (OOBE) environment.
   - In an Intune environment, a Windows Sun Valley boot image needs to already exist on the device for Windows Autopilot to work with Windows Sun Valley. 
   - If the device comes with a Windows 10 boot image, an administrator can use Windows Autopilot to deploy Windows 10, and then use WUfB to upgrade to Windows Sun Valley.
-  - To use Windows Autopilot to upgrade existing devices, Configuration Manager and the task sequence: **Windows Autopilot for existing devices** can place the Windows Sun Valley boot image on the managed device, allowing Windows Autopilot to deploy Windows Sun Valley.
+  - To use [Windows Autopilot to upgrade existing devices](/mem/autopilot/existing-devices), Configuration Manager and the task sequence: **Windows Autopilot for existing devices** can place the Windows Sun Valley boot image on the managed device, allowing Windows Autopilot to deploy Windows Sun Valley.
   - Windows Autopilot cannot be used to downgrade a device from Windows Sun Valley to Windows 10.
 
 ## See also
