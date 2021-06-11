@@ -42,8 +42,8 @@ All upgrades to Windows Sun Valley from Windows 10 will be free.
 ## How to get Windows Sun Valley
 
 Windows Sun Valley will delivered as an upgrade to devices running Windows 10 beginning in the first half of 2022. Windows Sun Valley will also be available on new devices that meet the hardware requirements.
-- For managed PCs that meet requirements, the upgrade will be provided using the same process that you use today for feature updates. 
-- For unmanaged PCs that meet requirements, the upgrade will be offered through Windows Update.
+- For managed PCs that meet requirements, the upgrade will be provided using the same process that you use today for feature updates. For more information, see [Management tools](windows-sv-prepare.md#management-tools).
+- For unmanaged PCs that meet requirements, the upgrade will be offered through Windows Update using [intelligent rollout](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/using-machine-learning-to-improve-the-windows-10-update/ba-p/877860). Windows 10 devices purchased after June 2021 that meet or exceed the minimum hardware requirements for Windows Sun Valley will be offered the upgrade starting in October of 2021. 
 - You can get early access to test Windows Sun Valley by joining the [Windows Insider Program](https://insider.windows.com), or by enabling pre-release Windows 10 feature updates in Configuration Manager or Windows Server Update Services (WSUS).
 
 For more information about eligibility to upgrade, see [Windows Sun Valley requirements](windows-sv-requirements.md).
@@ -78,11 +78,11 @@ Windows Sun Valley preserves the application compatibility promise made with Win
 
 ## Windows Sun Valley servicing
 
-For details about the Windows Sun Valley servicing cadence and lifecycle, see [Windows Sun Valley servicing](sv-plan.md#servicing).
+For details about the Windows Sun Valley servicing cadence and lifecycle, see [Windows Sun Valley servicing](windows-sv-plan.md#servicing).
 
 ## Windows 10 servicing
 
-Windows 10 will continue to be supported with security updates until October 2025. For more information, see [Windows 10 lifecycle](windows-sv.plan.md#windows-10-lifecycle).
+Windows 10 will continue to be supported with security updates until October 2025. For more information, see [Windows 10 lifecycle](windows-sv-plan.md#windows-10-lifecycle).
 
 ## Next steps
 

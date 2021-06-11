@@ -31,9 +31,7 @@ To prepare for deployment of Windows Sun Valley, you will need to implement your
 - Update your management tools, infrastructure, and policies
 - [Prepare users](/windows/deployment/update/prepare-deploy-windows#prepare-users) for Windows Sun Valley. 
 
-
-
-When these actions are completed, you can begin your phased deployment of Windows Sun Valley.
+After completing these actions, you can begin your phased deployment of Windows Sun Valley.
 
 ## Application compatibility
 

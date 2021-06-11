@@ -42,9 +42,14 @@ Consider the following order of activities:
 
 ### Phased deployment
 
-A phased deployment model is recommended for rolling out upgrades to devices in your organization. This is identical to the [service management model](/windows/deployment/update/create-deployment-plan) recommended for Windows 10 updates. With this method, you define the time and scope of devices that will migrate to Windows Sun Valley. 
+A phased deployment model is recommended for rolling out upgrades to devices in your organization. This is identical to the [service management model](/windows/deployment/update/create-deployment-plan) recommended for Windows 10 updates and includes separate groups or 'rings' that receive an update at different times. For example:
+- Preview: Windows Sun Valley planning and development
+- Limited: Windows Sun Valley pilot deployment
+- Broad: Windows Sun Valley rollout
 
-A [calendar based approac](/windows/deployment/update/plan-define-strategy#calendar-approaches) is an effective method to plan Windows Sun Valley upgrades that includes scheduling of future Windows 10 and Windows Sun Valley updates.
+With this method, you define the timing and scope of devices that will migrate to Windows Sun Valley, documenting and validating each phase before moving to the next one.
+
+A [calendar based approac](/windows/deployment/update/plan-define-strategy#calendar-approaches) is an effective method to plan Windows Sun Valley upgrades that includes scheduling of future Windows 10 and Windows Sun Valley updates.  The calendar based approach can be very useful for update planning in a mixed Windows 10 and Windows Sun Valley enviroment.
 
 Also consider [assigning roles](/windows/deployment/update/plan-define-readiness) within your organization to groups and individuals you'll need to carry out specific tasks, if you have not already done so.
 
@@ -58,12 +63,6 @@ Assess your current [configurations](/windows/deployment/update/eval-infra-tools
 - Review requirements
 - Identify gaps
 - Implement required updates
-
-## Windows 10 lifecycle
-
-For organizations who cannot move to Windows Sun Valley immediately, Microsoft’s guidance is to standardize devices on Windows 10, version 21H2. This release will be the last feature update to Windows 10, and will receive specific feature enhancements to ease migrating to Windows Sun Valley. 
-
-Windows 10 will continue to be supported with security updates until October 2025.
 
 ## Windows Sun Valley servicing
 
@@ -91,33 +90,14 @@ Most features and applications that are included with Windows 10 will be availab
 
 ## Application readiness
 
-Windows Sun Valley is designed to work with the applications you are currently using with Windows 10. If an application compatibility issue is identified, Microsoft provides services to help you remediate the problem. For more information, see [Application compatibility](windows-sv-prepare.md#application-compatibility)  
+Windows Sun Valley is designed to work with the applications you are currently using with Windows 10. If an application compatibility issue is identified, Microsoft provides services to help you remediate the problem. For more information, see [Application compatibility](windows-sv-prepare.md#application-compatibility).
 
+## Windows 10 coexistence
 
+For organizations that need to maintain a mixed enviroment with coexisting Windows 10 and Windows Sun Valley devices, Microsoft’s guidance is to standardize on Windows 10, version 21H2. This release will be the last feature update to Windows 10, and will receive specific feature enhancements to ease migrating to Windows Sun Valley. 
 
+Windows 10 will continue to be supported with security updates until October 2025.
 
+## Next steps
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## See also
-
-[Get ready for Windows Sun Valley](windows-sv-prepare.md)
+[Prepare for Windows Sun Valley](windows-sv-prepare.md)
