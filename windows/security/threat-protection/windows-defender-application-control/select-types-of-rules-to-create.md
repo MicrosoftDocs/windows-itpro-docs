@@ -110,7 +110,7 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 
 > [!NOTE]
 > - WDAC only supports signer rules for RSA certificate signing keys with a maximum of 4096 bits.
-> - CN is what the code uses for the CertSubject and CertIssuer fields in the policy. You can use the inbox certutil to look at the underlying format and ensure UTF-8 is not being used for the CN. For example, printable string or IA5 or BMP is ok.
+> - The code uses CN for the CertSubject and CertIssuer fields in the policy. You can use the inbox certutil to look at the underlying format to ensure UTF-8 is not being used for the CN. For example, you can use printable string, IA5, or BMP.
 
 ## Example of file rule levels in use
 
