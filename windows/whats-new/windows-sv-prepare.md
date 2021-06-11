@@ -40,22 +40,37 @@ Two Microsoft services that work directly with you to ensure application compati
 - If you experience any issues with your apps and are enrolled in the App Assure service, Microsoft will help you identify the issue at no cost. App Assure works with you to troubleshoot the issue, determine the root cause, and can help fix the issue as well. App Assure is subscription based, but subscriptions are free for eligible customers with 150+ seats. 
 - Test Base is Microsoft's intelligent application validation service that allows software vendors and commercial customers to test their applications. The Test Base test and validation environment runs Windows Sun Valley as well as Windows 10 with a matrix of updates and environments in a Microsoft managed Azure environment. You can get started by enrolling in Test Base for Microsoft 365. 
 
-You can use [Desktop Analytics](/mem/configmgr/desktop-analytics/overview), to test application compatibility. To determine the impact of a potential application compatiblity issue, [assign priority to apps](/windows/deployment/update/plan-define-readiness#set-criteria-for-rating-apps) and then perform a [compatibility assessment](/mem/configmgr/desktop-analytics/compat-assessment).
+You can also use [Desktop Analytics](/mem/configmgr/desktop-analytics/overview), to test application compatibility. To determine the impact of a potential application compatiblity issue, [assign priority to apps](/windows/deployment/update/plan-define-readiness#set-criteria-for-rating-apps) and then perform a [compatibility assessment](/mem/configmgr/desktop-analytics/compat-assessment).
 
 ## Management tools
 
-The following updates are required to support deploying Windows Sun Valley: 
-- Configuration Manager should use the current branch. 
+The following updates are required to support deploying Windows Sun Valley.
+
+### Configuration Manager
+
+Configuration Manager should use the current branch. 
   - You will easily be able to sync the new **Windows Sun Valley** product category and upgrade eligible devices. 
   - Configuration Manager will prompt you to accept the End User License Agreement on behalf of the users in your organization. 
   - If you would like to validate Sun Valley prior to release, simply sync the **Windows Insider Pre-release** category as well.   
-- If you use Windows Server Update Services (WSUS), you will need to sync the new Windows Sun Valley category. 
-- Windows Update for Business (WUfB) users can leverage the **Target Version** capability (not Feature Update deferrals).
+
+### WSUS
+
+If you use Windows Server Update Services (WSUS), you will need to sync the new Windows Sun Valley category. 
+
+### WUfB
+
+Windows Update for Business (WUfB) users can leverage the **Target Version** capability (not Feature Update deferrals).
    -  Feature Update deferrals are great to move to newer versions of a product (for example: Windows 10 21H1 to Windows 10 21H2), but deferrals do not enable you to move between products (Windows 10 to Windows Sun Valley). Quality update deferrals will continue to work the same across both Windows 10 and Windows Sun Valley. 
    - WUfB has the additional benefit of two safety nets: offering blocks on non-eligible devices, and Safeguard holds. Safeguard holds will function for Windows Sun Valley devices just as they do for Windows 10. Administrators will have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows Sun Valley. 
-- No action is required for you to use Microsoft Intune because it is cloud-based.
+
+### Microsoft Intune
+
+No infrastructure update is required for you to use Microsoft Intune because it is cloud-based.
   - If you are using MEM Intune with E3 licenses you will be able to leverage **Feature Update Deployments** to easily manage moving between Windows 10 versions or to Windows Sun Valley.
-- Windows Autopilot works seamlessly in a Windows Sun Valley Out-of-Box-Experience (OOBE) environment.
+
+### Windows Autopilot
+
+Windows Autopilot works seamlessly in a Windows Sun Valley Out-of-Box-Experience (OOBE) environment.
   - In an Intune environment, a Windows Sun Valley boot image needs to already exist on the device for Windows Autopilot to work with Windows Sun Valley. 
   - If the device comes with a Windows 10 boot image, an administrator can use Windows Autopilot to deploy Windows 10, and then use WUfB to upgrade to Windows Sun Valley.
   - To use [Windows Autopilot to upgrade existing devices](/mem/autopilot/existing-devices), Configuration Manager and the task sequence: **Windows Autopilot for existing devices** can place the Windows Sun Valley boot image on the managed device, allowing Windows Autopilot to deploy Windows Sun Valley.
