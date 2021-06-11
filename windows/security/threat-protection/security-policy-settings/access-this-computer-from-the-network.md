@@ -14,16 +14,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 06/11/2021
 ms.technology: mde
 ---
 
 # Access this computer from the network - security policy setting
 
 **Applies to**
--   Windows 10
+-   Windows 10, Azure Stack HCI, Windows Server 2022, Windows Server 2019, Windows Server 2016
 
 Describes the best practices, location, values, policy management, and security considerations for the **Access this computer from the network** security policy setting.
+
+> [!WARNING]
+> If running Windows Server or Azure Stack HCI Failover Clustering, don't remove Authenticated Users from the **Access this computer from the network** policy setting. Doing so may induce an unexpected production outage. This is due to the local user account CLIUSR that is used to run the cluster service. CLIUSR is not a member of the local Administrators group and if the Authenticated Users group is removed, the cluster service won't have sufficient rights to function or start properly.
 
 ## Reference
 
@@ -43,6 +46,7 @@ Constant: SeNetworkLogonRight
 
 -   On desktop devices or member servers, grant this right only to users and administrators.
 -   On domain controllers, grant this right only to authenticated users, enterprise domain controllers, and administrators.
+-   On failover clusters, make sure this right is granted to authenticated users.
 -   This setting includes the **Everyone** group to ensure backward compatibility. Upon Windows upgrade, after you have verified that all users and groups are correctly migrated, you should remove the **Everyone** group and use the **Authenticated Users** group instead.
 
 ### Location
@@ -103,6 +107,8 @@ from servers in the domain if members of the **Domain Users** group are included
 ### Potential impact
 
 If you remove the **Access this computer from the network** user right on domain controllers for all users, no one can log on to the domain or use network resources. If you remove this user right on member servers, users cannot connect to those servers through the network. If you have installed optional components such as ASP.NET or Internet Information Services (IIS), you may need to assign this user right to additional accounts that are required by those components. It is important to verify that authorized users are assigned this user right for the devices that they need to access the network.
+
+If running Windows Server or Azure Stack HCI Failover Clustering, do not remove Authenticated Users from the Access this computer from the network policy setting. Doing so may induce an unexpected production outage. This is due to the local user account CLIUSR that is used to run the cluster service. CLIUSR is not a member of the local Administrators group and if the Authenticated Users group is removed, the cluster service will not have sufficient rights to function or start properly.
 
 ## Related topics
 [User Rights Assignment](user-rights-assignment.md)
