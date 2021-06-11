@@ -80,13 +80,13 @@ For more information, see [Application compatibility](windows-sv-prepare.md#appl
 
 ## Windows Sun Valley servicing
 
-For details about the Windows Sun Valley servicing cadence and lifecycle, see [Windows Sun Valley servicing](windows-sv-plan.md#servicing).
+For details about the Windows Sun Valley servicing cadence and lifecycle, see [Windows Sun Valley servicing](windows-sv-plan.md#windows-sun-valley-servicing).
 
 ## Windows 10 servicing
 
 Windows 10 will continue to be supported with security updates until October 2025. 
 
-For more information, see [Windows 10 lifecycle](windows-sv-plan.md#windows-10-lifecycle).
+For more information, see [Windows 10 coexistence](windows-sv-plan.md#windows-10-coexistence).
 
 ## Next steps
 
