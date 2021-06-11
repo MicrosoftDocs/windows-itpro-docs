@@ -741,13 +741,13 @@ The following list shows the supported values for Windows 8.1:
 
 In Windows 10, you can configure this policy setting to decide what level of diagnostic data to send to Microsoft.
 
-The following list shows the supported values for Windows 10 version 1809 and older:
-
--   0 – (**Security**) This turns Windows diagnostic data off.  
+The following list shows the supported values for Windows 10 version 1809 and older, choose the value that is applicable to your OS version (older OS values are displayed in the brackets):
+-   0 – **Off (Security)** This turns Windows diagnostic data off.  
     **Note**: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), HoloLens 2, and Windows Server 2016 (and later versions). Using this setting on other devices editions of Windows is equivalent to setting the value of 1.
--   1 – (**Required**) Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date.
+-   1 – **Required (Basic)** Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date.
 -   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows apps are used, how they perform, and advanced reliability data, such as limited crash dumps.
--   3 – (**Optional**) Sends the same data as a value of 2, plus additional data necessary to identify and fix problems with devices such as enhanced error logs.
+    **Note**: **Enhanced** is no longer an option for Windows Holographic, version 21H1.
+-   3 – **Optional (Full)** Sends the same data as a value of 2, plus additional data necessary to identify and fix problems with devices such as enhanced error logs.
 
 Most restrictive value is 0.
 
@@ -1683,7 +1683,7 @@ To enable this behavior, you must complete two steps:
 
 -   Enable this policy setting
 -   Set the **AllowTelemetry** level:
-    - For Windows 10 version 1809 and older: set **AllowTelemetry** to Enhanced
+    - For Windows 10 version 1809 and older: set **AllowTelemetry** to Enhanced. (**Note**: **Enhanced** is no longer an option for Windows Holographic, version 21H1.)
     - For Windows 10 version 19H1 and later: set **AllowTelemetry** to Optional (Full)
 
  
