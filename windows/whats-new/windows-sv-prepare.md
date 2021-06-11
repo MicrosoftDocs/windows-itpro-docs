@@ -50,18 +50,18 @@ The following updates are required to support deploying Windows Sun Valley.
 
 Configuration Manager should use the current branch. 
   - You will easily be able to sync the new **Windows Sun Valley** product category and upgrade eligible devices. 
-  - Configuration Manager will prompt you to accept the End User License Agreement on behalf of the users in your organization. 
+  - Configuration Manager will prompt you to accept the End User License Agreement (EULA) on behalf of the users in your organization. 
   - If you would like to validate Sun Valley prior to release, simply sync the **Windows Insider Pre-release** category as well.   
 
 ### WSUS
 
-If you use Windows Server Update Services (WSUS), you will need to sync the new Windows Sun Valley category. 
+If you use Windows Server Update Services (WSUS), you will need to sync the new **Windows Sun Valley** category. 
 
 ### WUfB
 
 Windows Update for Business (WUfB) users can leverage the **Target Version** capability (not Feature Update deferrals).
    -  Feature Update deferrals are great to move to newer versions of a product (for example: Windows 10 21H1 to Windows 10 21H2), but deferrals do not enable you to move between products (Windows 10 to Windows Sun Valley). Quality update deferrals will continue to work the same across both Windows 10 and Windows Sun Valley. 
-   - WUfB has the additional benefit of two safety nets: offering blocks on non-eligible devices, and Safeguard holds. Safeguard holds will function for Windows Sun Valley devices just as they do for Windows 10. Administrators will have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows Sun Valley. 
+   - WUfB has the additional benefit of two safety nets: offering blocks on non-eligible devices, and [Safeguard holds](/windows/deployment/update/safeguard-holds). Safeguard holds will function for Windows Sun Valley devices just as they do for Windows 10. Administrators will have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows Sun Valley. 
 
 ### Microsoft Intune
 
