@@ -52,8 +52,6 @@ Alice previously created and deployed a policy for the organization's [fully man
    $EnforcedPolicyID = $EnforcedPolicyID.Substring(11)
    ```
 
-   > [!NOTE]
-   > If Set-CIPolicyIdInfo does not output the new PolicyID value on your Windows 10 version, you will need to obtain the *PolicyId* value from the XML directly.
 
 3. *[Optionally]* Use [Set-RuleOption](/powershell/module/configci/set-ruleoption) to enable rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”). Option 9 allows users to disable WDAC enforcement for a single boot session from a pre-boot menu. Option 10 instructs Windows to switch the policy from enforcement to audit only if a boot critical kernel-mode driver is blocked. We strongly recommend these options when deploying a new enforced policy to your first deployment ring. Then, if no issues are found, you can remove the options and restart your deployment.
 
@@ -74,7 +72,7 @@ Alice previously created and deployed a policy for the organization's [fully man
    > If you did not use -ResetPolicyID in Step 2 above, then you must replace $EnforcedPolicyID in the following command with the *PolicyID* attribute found in your base policy XML.
 
    ```powershell
-   $EnforcedPolicyBinary = $env:USERPROFILE+"\Desktop\"+$EnforcedPolicyName+"_"+$EnforcedPolicyID+".xml"
+   $EnforcedPolicyBinary = $env:USERPROFILE+"\Desktop\"+$EnforcedPolicyID+".cip"
    ConvertFrom-CIPolicy $EnforcedPolicyXML $EnforcedPolicyBinary
    ```
 

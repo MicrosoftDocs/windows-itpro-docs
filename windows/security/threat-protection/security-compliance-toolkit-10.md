@@ -28,13 +28,13 @@ The SCT enables administrators to effectively manage their enterprise’s Group 
 The Security Compliance Toolkit consists of:
 
 - Windows 10 security baselines
-    - Windows 10 Version 20H2 (October 2020 Update)
-    - Windows 10 Version 2004 (May 2020 Update)
-    - Windows 10 Version 1909 (November 2019 Update)
-    - Windows 10 Version 1809 (October 2018 Update)
-    - Windows 10 Version 1803 (April 2018 Update)
-    - Windows 10 Version 1607 (Anniversary Update)
-    - Windows 10 Version 1507
+    - Windows 10, Version 21H1 (May 2021 Update)
+    - Windows 10, Version 20H2 (October 2020 Update)
+    - Windows 10, Version 2004 (May 2020 Update)
+    - Windows 10, Version 1909 (November 2019 Update)
+    - Windows 10, Version 1809 (October 2018 Update)
+    - Windows 10, Version 1607 (Anniversary Update)
+    - Windows 10, Version 1507
 
 - Windows Server security baselines
     - Windows Server 2019
@@ -42,7 +42,7 @@ The Security Compliance Toolkit consists of:
     - Windows Server 2012 R2
 
 - Microsoft Office security baseline
-    - Microsoft 365 Apps for enterprise (Sept 2019)
+    - Microsoft 365 Apps for enterprise, Version 2104
 
 - Microsoft Edge security baseline
     - Version 88
