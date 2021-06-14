@@ -71,8 +71,8 @@ The VAMT stores information in a Microsoft SQL Server database for performance 
 -   **Managing activation data**. The VAMT stores activation data in a SQL Server database. The tool can export this data in XML format to other VAMT hosts or to an archive.
 
 For more information, see:
--   [Volume Activation Management Tool (VAMT) Overview](https://go.microsoft.com/fwlink/p/?LinkId=618266)
--   [VAMT Step-by-Step Scenarios](https://go.microsoft.com/fwlink/p/?LinkId=618267)
+-   [Volume Activation Management Tool (VAMT) Overview](./volume-activation-management-tool.md)
+-   [VAMT Step-by-Step Scenarios](./vamt-step-by-step.md)
 
 ## See also
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)

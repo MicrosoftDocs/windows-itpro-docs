@@ -25,7 +25,7 @@ ms.technology: mde
 
 This guide explains the process of setting up advanced security auditing capabilities that are made possible through settings and events that were introduced in Windows 8 and Windows Server 2012.
 
-These procedures can be deployed with the advanced security auditing capabilities described in [Deploy Security Auditing with Central Audit Policies (Demonstration Steps)](https://technet.microsoft.com/library/hh831542.aspx).
+These procedures can be deployed with the advanced security auditing capabilities described in [Deploy Security Auditing with Central Audit Policies (Demonstration Steps)](/windows-server/identity/solution-guides/deploy-security-auditing-with-central-audit-policies--demonstration-steps-).
 
 ## In this guide
 

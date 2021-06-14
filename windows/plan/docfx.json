@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -44,7 +45,7 @@
         "jborsecnik",
         "tiburd",
         "garycentric"
-      ],
+      ]
     },
     "fileMetadata": {},
     "template": [],

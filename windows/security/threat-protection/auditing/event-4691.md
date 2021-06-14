@@ -29,7 +29,7 @@ ms.technology: mde
 
 This event indicates that indirect access to an object was requested.
 
-These events are generated for [ALPC Ports](https://msdn.microsoft.com/library/windows/desktop/aa964738(v=vs.85).aspx) access request actions.
+These events are generated for [ALPC Ports](/windows/win32/etw/alpc) access request actions.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -138,4 +138,3 @@ These events are generated for [ALPC Ports](https://msdn.microsoft.com/library/w
 For 4691(S): Indirect access to an object was requested.
 
 -   Typically this event has little to no security relevance and is hard to parse or analyze. There is no recommendation for this event, unless you know exactly what you need to monitor with ALPC Ports.
-

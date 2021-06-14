@@ -5,8 +5,8 @@ keywords: accessibility, settings, vision, hearing, physical, cognition, assisti
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.author: dansimp
-author: dansimp
+ms.author: greglin
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 01/12/2018
 ms.reviewer: 

@@ -4,9 +4,9 @@ description: This section describes the DeveloperSetup settings that you can con
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
@@ -37,4 +37,4 @@ When AuthenticationMode is set to **Basic Auth**, enter a user name and password
 
 ## Related topics
 
-- [Device Portal for HoloLens](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens)
+- [Device Portal for HoloLens](/windows/uwp/debug-test-perf/device-portal-hololens)

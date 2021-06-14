@@ -16,10 +16,30 @@ manager: dansimp
 
 The eUICCs configuration service provider is used to support eUICC enterprise use cases and enables the IT admin to manage (assign, re-assign, remove) subscriptions to employees. This CSP was added in windows 10, version 1709.
 
-The following diagram shows the eUICCs configuration service provider in tree format.
-
-![euiccs csp](images/provisioning-csp-euiccs.png)
-
+The following shows the eUICCs configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+eUICCs
+----eUICC
+--------Identifier
+--------IsActive
+--------PPR1Allowed
+--------PPR1AlreadySet
+--------Profiles
+------------ICCID
+----------------ServerName
+----------------MatchingID
+----------------State
+----------------IsEnabled
+----------------PPR1Set
+----------------PPR2Set
+----------------ErrorDetail
+--------Policies
+------------LocalUIEnabled
+--------Actions
+------------ResetToFactoryState
+------------Status
+```
 <a href="" id="--vendor-msft-euiccs"></a>**./Vendor/MSFT/eUICCs**  
 Root node. 
 
@@ -37,36 +57,6 @@ Supported operation is Get. Value type is string.
 Required. Indicates whether this eUICC is physically present and active. Updated only by the LPA.
 
 Supported operation is Get. Value type is boolean.
-
-<a href="" id="euicc-isactive"></a>**_eUICC_/PPR1Allowed**  
-Required. Indicates whether the download of a profile with PPR1 is allowed. If the eUICC already has a profile (regardless of its origin and policy rules associated with it), the download of a profile with PPR1 is not allowed.
-
-Supported operation is Get. Value type is boolean.
-
-<a href="" id="euicc-isactive"></a>**_eUICC_/PPR1AlreadySet**  
-Required. Indicates whether the eUICC already has a profile with PPR1.
-
-Supported operation is Get. Value type is boolean.
-
-<a href="" id="euicc-profiles"></a>**_eUICC_/DownloadServers**  
-Interior node. Represents default SM-DP+ discovery requests.
-
-Supported operation is Get.
-
-<a href="" id="euicc-profiles-iccid"></a>**_eUICC_/DownloadServers/_ServerName_**  
-Interior node. Optional. Node specifying the server name for a discovery operation. The node name is the fully qualified domain name of the SM-DP+ server that will be used for profile discovery. Creation of this subtree triggers a discovery request.
-
-Supported operations are Add, Get, and Delete.
-
-<a href="" id="euicc-profiles-iccid-state"></a>**_eUICC_/DownloadServers/_ServerName_/DiscoveryState**  
-Required. Current state of the discovery operation for the parent ServerName (Requested = 1, Executing = 2, Completed = 3, Failed = 4). Queried by the CSP and only updated by the LPA.
-
-Supported operation is Get. Value type is integer. Default value is 1.
-
-<a href="" id="euicc-profiles-iccid-isenabled"></a>**_eUICC_/DownloadServers/_ServerName_/AutoEnable**  
-Required. Indicates whether the discovered profile must be enabled automatically after install. This must be set by the MDM when the ServerName subtree is created.
-
-Supported operations are Add, Get, and Replace. Value type is bool.
 
 <a href="" id="euicc-profiles"></a>**_eUICC_/Profiles**  
 Interior node. Required. Represents all enterprise-owned profiles.

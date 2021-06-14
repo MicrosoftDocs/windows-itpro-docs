@@ -19,7 +19,7 @@ ms.date: 07/27/2017
 
 [!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
 
-After you’ve deployed your custom Internet Explorer package to your employees, you can use the Resultant Set of Policy (RSoP) snap-in to view your created policy settings. The RSoP snap-in is a two-step process. First, you run the RSoP wizard to determine what information should be viewed. Second, you open the specific items in the console window to view the settings. For complete instructions about how to use RSoP, see [Resultant Set of Policy](https://go.microsoft.com/fwlink/p/?LinkId=259479).
+After you’ve deployed your custom Internet Explorer package to your employees, you can use the Resultant Set of Policy (RSoP) snap-in to view your created policy settings. The RSoP snap-in is a two-step process. First, you run the RSoP wizard to determine what information should be viewed. Second, you open the specific items in the console window to view the settings. For complete instructions about how to use RSoP, see [Resultant Set of Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772175(v=ws.11)).
 
 **To add the RSoP snap-in**
 
@@ -43,8 +43,3 @@ You’ll only need to go through the resulting RSoP Wizard first time you run th
  
 
  
-
-
-
-
-

@@ -313,8 +313,6 @@ Added in Windows 10, version 1703. Defines the maximum number of printers that s
 
 The datatype is an integer. 
 
-For Windows Mobile, the default value is 20.
-
 <!--/Description-->
 <!--/Policy-->
 

@@ -114,7 +114,7 @@ Ensure that devices can reach necessary Windows Update endpoints through the fir
 > [!NOTE]
 > Be sure not to use HTTPS for those endpoints that specify HTTP, and vice versa. The connection will fail.
 
-The specific endpoints can vary between Windows 10 versions. See, for example, [Windows 10 2004 Enterprise connection endpoints](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints). Similar articles for other Windows 10 versions are available in the table of contents nearby.
+The specific endpoints can vary between Windows 10 versions. See, for example, [Windows 10 2004 Enterprise connection endpoints](/windows/privacy/manage-windows-2004-endpoints). Similar articles for other Windows 10 versions are available in the table of contents nearby.
 
 
 ### Optimize download bandwidth
@@ -139,9 +139,9 @@ You can also create and run scripts to perform additional cleanup actions on dev
 
 - Compact the operating system by running **Compact.exe /CompactOS:always**.
 
-- Remove Windows Features on Demand that the user doesn't need. See [Features on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) for more guidance.
+- Remove Windows Features on Demand that the user doesn't need. See [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) for more guidance.
 
-- Move Windows Known Folders to OneDrive. See [Use Group Policy to control OneDrive sync settings](https://docs.microsoft.com/onedrive/use-group-policy) for more information.
+- Move Windows Known Folders to OneDrive. See [Use Group Policy to control OneDrive sync settings](/onedrive/use-group-policy) for more information.
 
 - Clean up the Software Distribution folder. Try deploying these commands as a batch file to run on devices to reset the download state of Windows Updates:
 
@@ -183,5 +183,3 @@ You can employ a variety of measures to achieve this goal, for example:
 - Set an opt-out deadline for employees that need to remain on the current version for a bit longer, due to a business need.
 - Provide the ability to voluntarily update at users’ convenience.
 - Inform users of a mandatory installation date when the update will be installed on all devices.
-
-

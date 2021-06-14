@@ -5,8 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: dansimp
-author: msfttracyp
+ms.author: greglin
+author: greg-lindsay
 ms.date: 07/21/2017
 ms.reviewer: 
 manager: dansimp
@@ -58,4 +58,4 @@ You don't need to delete the deployment associated with the older version of the
 
 ![Monitoring view in Configuration Manager for the old version of the app](media/app-upgrade-old-version.png)
 
-If you haven't deployed an app through Configuration Manager before, check out [Deploy applications with Microsoft Endoint Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications). You can also see how to delete deployments (although you don't have to) and notify users about the upgraded app.
+If you haven't deployed an app through Configuration Manager before, check out [Deploy applications with Microsoft Endoint Configuration Manager](/configmgr/apps/deploy-use/deploy-applications). You can also see how to delete deployments (although you don't have to) and notify users about the upgraded app.

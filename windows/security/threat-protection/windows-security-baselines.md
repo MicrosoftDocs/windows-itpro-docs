@@ -33,7 +33,7 @@ Even though Windows and Windows Server are designed to be secure out-of-the-box,
 
 We recommend that you implement an industry-standard configuration that is broadly known and well-tested, such as Microsoft security baselines, as opposed to creating a baseline yourself. This helps increase flexibility and reduce costs. 
 
-Here is a good blog about [Sticking with Well-Known and Proven Solutions](https://blogs.technet.microsoft.com/fdcc/2010/10/06/sticking-with-well-known-and-proven-solutions/).
+Here is a good blog about [Sticking with Well-Known and Proven Solutions](/archive/blogs/fdcc/sticking-with-well-known-and-proven-solutions).
 
 ## What are security baselines? 
 
@@ -77,7 +77,7 @@ You may also be interested in this msdn channel 9 video:
 
 - [Microsoft Endpoint Configuration Manager](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
 - [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
-- [Configuration Management for Nano Server](https://docs.microsoft.com/archive/blogs/grouppolicy/configuration-management-on-servers/)
+- [Configuration Management for Nano Server](/archive/blogs/grouppolicy/configuration-management-on-servers/)
 - [Microsoft Security Guidance Blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
 - [Microsoft Security Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
-- [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 
+- [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319)

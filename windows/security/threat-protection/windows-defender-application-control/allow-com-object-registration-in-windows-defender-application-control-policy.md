@@ -10,11 +10,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
-author: jsuther1974
+author: dansimp
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 05/21/2019
 ms.technology: mde
 ---
 
@@ -29,7 +28,7 @@ ms.technology: mde
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The [Microsoft Component Object Model (COM)](https://docs.microsoft.com/windows/desktop/com/the-component-object-model) is a platform-independent, distributed, object-oriented system for creating binary software components that can interact. COM specifies an object model and programming requirements that enable COM objects to interact with other objects.
+The [Microsoft Component Object Model (COM)](/windows/desktop/com/the-component-object-model) is a platform-independent, distributed, object-oriented system for creating binary software components that can interact. COM specifies an object model and programming requirements that enable COM objects to interact with other objects.
 
 ### COM object configurability in WDAC policy
 
@@ -92,4 +91,65 @@ Example 3: Allows a specific COM object to register in PowerShell
   </Value>
 </Setting>
 ```
+### How to configure settings for the CLSIDs
 
+Given the following example of an error in the Event Viewer (**Application and Service Logs** > **Microsoft** > **Windows** > **AppLocker** > **MSI and Script**):
+
+Log Name:      Microsoft-Windows-AppLocker/MSI and Script
+Source:        Microsoft-Windows-AppLocker
+Date:          11/11/2020 1:18:11 PM
+Event ID:      8036
+Task Category: None
+Level:         Error
+Keywords:
+User:          S-1-5-21-3340858017-3068726007-3466559902-3647
+Computer:      contoso.com
+Description:
+{f8d253d9-89a4-4daa-87b6-1168369f0b21} was prevented from running due to Config CI policy.
+
+Event XML:
+
+```XML
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-AppLocker" Guid="{cbda4dbf-8d5d-4f69-9578-be14aa540d22}" />
+    <EventID>8036</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2020-11-11T19:18:11.4029179Z" />
+    <EventRecordID>819347</EventRecordID>
+    <Correlation ActivityID="{61e3e871-adb0-0047-c9cc-e761b0add601}" />
+    <Execution ProcessID="21060" ThreadID="23324" />
+    <Channel>Microsoft-Windows-AppLocker/MSI and Script</Channel>
+    <Computer>contoso.com</Computer>
+    <Security UserID="S-1-5-21-3340858017-3068726007-3466559902-3647" />
+  </System>
+  <EventData>
+    <Data Name="IsApproved">false</Data>
+    <Data Name="CLSID">{f8d253d9-89a4-4daa-87b6-1168369f0b21}</Data>
+  </EventData>
+</Event>
+```
+
+To add this CLSID to the existing policy, use the following steps:
+
+1. Open PowerShell ISE with Administrative privileges.
+2. Copy and edit this command, then run it from the admin PowerShell ISE. Consider the policy name to be `WDAC_policy.xml`.
+
+```PowerShell
+PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\WDAC_policy.xml -Key 8856f961-340a-11d0-a96b-00c04fd705a2 -Provider WSH -Value True -ValueName EnterpriseDefinedClsId -ValueType Boolean
+```
+
+Once the command has been run, you will find that the following section is added to the policy XML.
+
+```XML
+  <Settings>
+    <Setting Provider="WSH" Key="8856f961-340a-11d0-a96b-00c04fd705a2" ValueName="EnterpriseDefinedClsId">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+```

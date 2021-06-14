@@ -14,12 +14,33 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 01/14/2021
+ms.date: 05/03/2021
 ms.reviewer: 
 ---
 # Windows Hello for Business Known Deployment Issues
 
 The content of this article is to help troubleshoot and workaround known deployment issues for Windows Hello for Business. Each issue below will describe the applicable deployment type Windows versions.
+
+## PIN Reset on Azure AD Join Devices Fails with "We can't open that page right now" error
+
+Applies to:
+
+- Azure AD joined deployments
+- Windows 10, version 1803 and later
+
+PIN reset on Azure AD joined devices uses a flow called web sign-in to authenticate the user above lock. Web sign in only allows navigation to specific domains. If it attempts to navigate to a domain that is not allowed it will shows a page with the "We can't open that page right now" error message.
+
+### Identifying Azure AD joined PIN Reset Allowed Domains Issue
+
+The user can launch the PIN reset flow from above lock using the "I forgot my PIN" link in the PIN credential provider. Selecting this link will launch a full screen UI for the PIN experience on Azure AD Join devices. Typically, this UI will display an Azure authentication server page where the user will authenticate using Azure AD credentials and complete multi-factor authentication.
+
+In federated environments authentication may be configured to route to AD FS or a third party identity provider. If the PIN reset flow is launched and attempts to navigate to a federated identity provider server page, it will fail and display the "We can't open that page right now" error if the domain for the server page is not included in an allow list.
+
+If you are a customer of Azure US Government cloud, PIN reset will also attempt to navigate to a domain that is not included in the default allow list. This results in the "We can't open that page right now" being shown.
+
+### Resolving Azure AD joined PIN Reset Allowed Domains Issue
+
+To resolve this error, a list of allowed domains for PIN reset can be configured using the [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy. For information on how to configure this policy, see [PIN Reset - Configure Web Sign-in Allowed URLs for Third Party Identity Providers on Azure AD Joined Devices](hello-feature-pin-reset.md#configure-web-sign-in-allowed-urls-for-third-party-identity-providers-on-azure-ad-joined-devices).
 
 ## Hybrid Key Trust Logon Broken Due to User Public Key Deletion
 
@@ -39,7 +60,7 @@ Before the user's Windows Hello for Business key is synced, sign-in's with Windo
 
 In environments impacted with this issue, after the first sign-in with Windows Hello for Business after provisioning is completed, the next sign-in attempt will fail. In environments where domain controllers are running a mix of builds, only some may be impacted by this issue and subsequent logon attempts may be sent different domain controllers. This may result in the sign-in failures appearing to be intermittent.
 
-After the initial logon attempt, the user's Windows Hello for Business public key is being deleted from the msDS-KeyCredentialLink attribute. This can be verified by querying a user's msDS-KeyCredentialLink attribute before and after sign-in. The msDS-KeyCredentialLink can be queried in AD using [Get-ADUser](https://docs.microsoft.com/powershell/module/addsadministration/get-aduser) and specifying *msds-keycredentiallink* for the *-Properties* parameter.
+After the initial logon attempt, the user's Windows Hello for Business public key is being deleted from the msDS-KeyCredentialLink attribute. This can be verified by querying a user's msDS-KeyCredentialLink attribute before and after sign-in. The msDS-KeyCredentialLink can be queried in AD using [Get-ADUser](/powershell/module/addsadministration/get-aduser) and specifying *msds-keycredentiallink* for the *-Properties* parameter.
 
 ### Resolving User Public Key Deletion Issue
 

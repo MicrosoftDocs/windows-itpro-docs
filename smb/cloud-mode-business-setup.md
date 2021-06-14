@@ -149,7 +149,7 @@ When adding users, you can also assign admin privileges to certain users in your
    ![Verify users and assigned product licenses](images/o365_active_users.png)
 
 ### 1.3 Add Microsoft Intune
-Microsoft Intune provides mobile device management, app management, and PC management capabilities from the cloud. Using Intune, organizations can provide their employees with access to apps, data, and corporate resources from anywhere on almost any device while helping to keep corporate information secure. To learn more, see <a href="https://docs.microsoft.com/intune/understand-explore/introduction-to-microsoft-intune" target="_blank">What is Intune?</a>
+Microsoft Intune provides mobile device management, app management, and PC management capabilities from the cloud. Using Intune, organizations can provide their employees with access to apps, data, and corporate resources from anywhere on almost any device while helping to keep corporate information secure. To learn more, see <a href="/intune/understand-explore/introduction-to-microsoft-intune" target="_blank">What is Intune?</a>
 
 **To add Microsoft Intune to your tenant**
 
@@ -204,9 +204,9 @@ Microsoft Azure is an open and flexible cloud platform that enables you to quick
    This will take you to the <a href="https://portal.azure.com" target="_blank">Microsoft Azure portal</a>.
 
 ### 1.5 Add groups in Azure AD
-This section is the walkthrough is optional. However, we recommend that you create groups in Azure AD to manage access to corporate resources, such as apps, policies and settings, and so on. For more information, see <a href="https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups" target="_blank">Managing access to resources with Azure Active Directory groups</a>.
+This section is the walkthrough is optional. However, we recommend that you create groups in Azure AD to manage access to corporate resources, such as apps, policies and settings, and so on. For more information, see <a href="/azure/active-directory/active-directory-manage-groups" target="_blank">Managing access to resources with Azure Active Directory groups</a>.
 
-To add Azure AD group(s), we will use the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal (https://manage.windowsazure.com)</a>. See <a href="https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups" target="_blank">Managing groups in Azure Active Directory</a> for more information about managing groups.
+To add Azure AD group(s), we will use the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal (https://manage.windowsazure.com)</a>. See <a href="/azure/active-directory/active-directory-accessmanagement-manage-groups" target="_blank">Managing groups in Azure Active Directory</a> for more information about managing groups.
 
 **To add groups in Azure AD**
 
@@ -378,7 +378,7 @@ If you need to sync your most recently purchased apps and have it appear in your
 - In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Apps > Apps** and then choose **Volume-Purchased Apps** to see the list of available apps. Verify that the apps you purchased were imported correctly.
 
 **To add more apps**
-- If you have other apps that you want to deploy or manage, you must add it to Microsoft Intune. To deploy Win32 apps and Web links, see <a href="https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune" target="_blank">Add apps for enrolled devices to Intune</a> for more info on how to do this.
+- If you have other apps that you want to deploy or manage, you must add it to Microsoft Intune. To deploy Win32 apps and Web links, see <a href="/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune" target="_blank">Add apps for enrolled devices to Intune</a> for more info on how to do this.
 
 ## 2. Set up devices
 
@@ -444,7 +444,7 @@ In the <a href="https://manage.microsoft.com/" target="_blank">Intune management
    ![Check that the device appears in Intune](images/intune_groups_devices_list.png)
 
 ## 3. Manage device settings and features
-You can use Microsoft Intune admin settings and policies to manage features on your organization's mobile devices and computers. For more info, see [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+You can use Microsoft Intune admin settings and policies to manage features on your organization's mobile devices and computers. For more info, see [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
 
 In this section, we'll show you how to reconfigure app deployment settings and add a new policy that will disable the camera for the Intune-managed devices and turn off Windows Hello and PINs during setup.
 
@@ -571,9 +571,9 @@ See [Add users to Office 365](https://support.office.com/en-us/article/Add-users
 To learn more about the services and tools mentioned in this walkthrough, and learn what other tasks you can do, follow these links:
 - <a href="https://support.office.com/en-us/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa" target="_blank">Set up Office 365 for business</a>
 - Common admin tasks in Office 365 including email and OneDrive in <a href="https://support.office.com/en-us/article/Common-management-tasks-for-Office-365-46c667f7-5073-47b9-a75f-05a60cf77d91" target="_blank">Manage Office 365</a>
-- More info about managing devices, apps, data, troubleshooting, and more in <a href="https://docs.microsoft.com/intune/" target="_blank">Intune documentation</a>
-- Learn more about Windows 10 in <a href="https://technet.microsoft.com/windows/windows10.aspx" target="_blank">Windows 10 guide for IT pros</a>
-- Info about distributing apps to your employees, managing apps, managing settings, and more in <a href="https://technet.microsoft.com/itpro/windows/manage/windows-store-for-business" target="_blank">Microsoft Store for Business</a>
+- More info about managing devices, apps, data, troubleshooting, and more in <a href="/intune/" target="_blank">Intune documentation</a>
+- Learn more about Windows 10 in <a href="/windows/windows-10/" target="_blank">Windows 10 guide for IT pros</a>
+- Info about distributing apps to your employees, managing apps, managing settings, and more in <a href="/microsoft-store/" target="_blank">Microsoft Store for Business</a>
 
 ### For information workers
 Whether it's in the classroom, getting the most out of your devices, or learning some of the cool things you can do, we've got teachers covered. Follow these links for more info:
@@ -582,4 +582,4 @@ Whether it's in the classroom, getting the most out of your devices, or learning
 
 ## Related topics
 
-- [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
+- [Windows 10 and Windows 10 Mobile](/windows/windows-10/)

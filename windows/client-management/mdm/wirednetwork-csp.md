@@ -18,10 +18,26 @@ manager: dansimp
 
 The WiredNetwork configuration service provider (CSP) is used by the enterprise to configure wired Internet on devices that do not have GP to enable them to access corporate Internet over ethernet. This CSP was added in Windows 10, version 1809.
 
-The following diagram shows the WiredNetwork configuration service provider in tree format.
+The following shows the WiredNetwork configuration service provider in tree format.
+```
+./User/Vendor/MSFT
+WiredNetwork
+----LanXML
+----EnableBlockPeriod
 
-![WiredNetwork CSP diagram](images/provisioning-csp-wirednetwork.png) 
 
+./Device/Vendor/MSFT
+WiredNetwork
+----LanXML
+----EnableBlockPeriod
+
+
+./User/Vendor/MSFT
+./Device/Vendor/MSFT
+WiredNetwork
+----LanXML
+----EnableBlockPeriod
+```
 <a href="" id="wirednetwork"></a>**./Device/Vendor/MSFT/WiredNetwork**  
 Root node.
 

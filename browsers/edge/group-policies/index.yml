@@ -26,7 +26,7 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: Documentation for Microsoft Edge version 77 or later
-            url: https://docs.microsoft.com/DeployEdge/
+            url: /DeployEdge/
           - text: Microsoft Edge Legacy desktop app will reach end of support on March 9, 2021
             url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666
 
@@ -36,23 +36,23 @@ landingContent:
       - linkListType: reference
         links:
           - text: All group policies
-            url: /microsoft-edge/deploy/available-policies
+            url: ../available-policies.md
           - text: Address bar
-            url: /microsoft-edge/deploy/group-policies/address-bar-settings-gp
+            url: ./address-bar-settings-gp.md
           - text: Adobe Flash
-            url: /microsoft-edge/deploy/group-policies/adobe-settings-gp
+            url: ./adobe-settings-gp.md
           - text: Books Library
-            url: /microsoft-edge/deploy/group-policies/books-library-management-gp
+            url: ./books-library-management-gp.md
           - text: Browser experience
-            url: /microsoft-edge/deploy/group-policies/browser-settings-management-gp
+            url: ./browser-settings-management-gp.md
           - text: Developer tools
-            url: /microsoft-edge/deploy/group-policies/developer-settings-gp
+            url: ./developer-settings-gp.md
           - text: Extensions
-            url: /microsoft-edge/deploy/group-policies/extensions-management-gp
+            url: ./extensions-management-gp.md
           - text: Favorites
-            url: /microsoft-edge/deploy/group-policies/favorites-management-gp
+            url: ./favorites-management-gp.md
           - text: Home button
-            url: /microsoft-edge/deploy/group-policies/home-button-gp
+            url: ./home-button-gp.md
 
   # Card (optional)
   - title: Group policies configure guidance part 2
@@ -60,21 +60,20 @@ landingContent:
       - linkListType: reference
         links:
           - text: Interoperability and enterprise mode
-            url: /microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
+            url: ./interoperability-enterprise-guidance-gp.md
           - text: New Tab page
-            url: /microsoft-edge/deploy/group-policies/new-tab-page-settings-gp
+            url: ./new-tab-page-settings-gp.md
           - text: Kiosk mode deployment in Microsoft Edge
-            url: /microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy
+            url: ../microsoft-edge-kiosk-mode-deploy.md
           - text: Prelaunch Microsoft Edge and preload tabs
-            url: /microsoft-edge/deploy/group-policies/prelaunch-preload-gp
+            url: ./prelaunch-preload-gp.md
           - text: Search engine customization
-            url: /microsoft-edge/deploy/group-policies/search-engine-customization-gp
+            url: ./search-engine-customization-gp.md
           - text: Security and privacy
-            url: /microsoft-edge/deploy/group-policies/security-privacy-management-gp
+            url: ./security-privacy-management-gp.md
           - text: Start page
-            url: /microsoft-edge/deploy/group-policies/start-pages-gp
+            url: ./start-pages-gp.md
           - text: Sync browser
-            url: /microsoft-edge/deploy/group-policies/sync-browser-settings-gp
+            url: ./sync-browser-settings-gp.md
           - text: Telemetry and data collection
-            url: /microsoft-edge/deploy/group-policies/telemetry-management-gp
-          
+            url: ./telemetry-management-gp.md

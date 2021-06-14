@@ -20,9 +20,10 @@ ms.technology: mde
 
 # Isolated Domain
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
+**Applies to:**
+- Windows 10
+- Windows Server 2016
+- Windows Server 2019
 
 The isolated domain is the primary zone for trusted devices. The devices in this zone use connection security and firewall rules to control the communications that can be sent between devices in the zone.
 

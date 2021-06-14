@@ -10,7 +10,6 @@ author: mjcaparas
 ms.author: macapara
 audience: ITPro
 ms.localizationpriority: high
-ms.date: 11/27/2019
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -52,14 +51,14 @@ Microsoft Defender SmartScreen provide an early warning system against websites 
 
 - **Management through Group Policy and Microsoft Intune.** Microsoft Defender SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all available settings, see [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](microsoft-defender-smartscreen-available-settings.md).
 
-- **Blocking URLs associated with potentially unwanted applications.** In Microsoft Edge (based on Chromium), SmartScreen blocks URLs associated with potentially unwanted applications, or PUAs. For more information on blocking URLs associated with PUAs, see [Detect and block potentially unwanted applications](../microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md).
+- **Blocking URLs associated with potentially unwanted applications.** In Microsoft Edge (based on Chromium), SmartScreen blocks URLs associated with potentially unwanted applications, or PUAs. For more information on blocking URLs associated with PUAs, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 > [!IMPORTANT]
 > SmartScreen protects against malicious files from the internet. It does not protect against malicious files on internal locations or network shares, such as shared folders with UNC paths or SMB/CIFS shares.
 
 ## Submit files to Microsoft Defender SmartScreen for review
 
-If you believe a warning or block was incorrectly shown for a file or application, or if you believe an undetected file is malware, you can [submit a file](https://www.microsoft.com/wdsi/filesubmission/) to Microsoft for review. For more info, see [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide). 
+If you believe a warning or block was incorrectly shown for a file or application, or if you believe an undetected file is malware, you can [submit a file](https://www.microsoft.com/wdsi/filesubmission/) to Microsoft for review. For more info, see [Submit files for analysis](../intelligence/submission-guide.md). 
 
 When submitting Microsoft Defender SmartScreen products, make sure to select **Microsoft Defender SmartScreen** from the product menu.
 
@@ -70,7 +69,7 @@ When submitting Microsoft Defender SmartScreen products, make sure to select **M
 > [!NOTE]
 > No SmartScreen events will be logged when using  Microsoft Edge version 77 or later.
 
-When Microsoft Defender SmartScreen warns or blocks a user from a website, it's logged as [Event 1035 - Anti-Phishing](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565657(v=vs.85)).
+When Microsoft Defender SmartScreen warns or blocks a user from a website, it's logged as [Event 1035 - Anti-Phishing](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565657(v=vs.85)).
 
 ## Viewing Windows event logs for Microsoft Defender SmartScreen
 Microsoft Defender SmartScreen events appear in the Microsoft-Windows-SmartScreen/Debug log, in the Event Viewer.
@@ -82,7 +81,7 @@ wevtutil sl Microsoft-Windows-SmartScreen/Debug /e:true
 ```
 
 > [!NOTE]
-> For information on how to use the Event Viewer, see [Windows Event Viewer](https://docs.microsoft.com/host-integration-server/core/windows-event-viewer1).
+> For information on how to use the Event Viewer, see [Windows Event Viewer](/host-integration-server/core/windows-event-viewer1).
 
 
 EventID | Description
@@ -94,4 +93,4 @@ EventID | Description
 ## Related topics
 - [SmartScreen Frequently Asked Questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
 - [Threat protection](../index.md)
-- [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings)
+- [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings)

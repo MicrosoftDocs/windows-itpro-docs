@@ -49,7 +49,7 @@ You can use IKEv2 as a virtual private network (VPN) tunneling protocol that sup
 
 -   [Troubleshooting](#troubleshooting)
 
->**Note:**  This topic includes sample Windows PowerShell cmdlets. For more info, see [How to Run a Windows PowerShell Cmdlet](https://go.microsoft.com/fwlink/p/?linkid=230693).
+>**Note:**  This topic includes sample Windows PowerShell cmdlets. For more info, see [How to Run a Windows PowerShell Cmdlet](/previous-versions//bb648607(v=vs.85)).
 
 ## Prerequisites
 
@@ -189,10 +189,4 @@ You might not find the exact answer for the issue, but you can find good hints. 
 -   [Windows Defender Firewall with Advanced Security](windows-firewall-with-advanced-security.md)
 
  
-
- 
-
-
-
-
 

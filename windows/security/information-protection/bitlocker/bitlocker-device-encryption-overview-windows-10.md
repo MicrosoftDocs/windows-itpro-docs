@@ -23,7 +23,7 @@ ms.custom: bitlocker
 -   Windows 10
 
 This topic explains how BitLocker Device Encryption can help protect data on devices running Windows 10. 
-For a general overview and list of topics about BitLocker, see [BitLocker](bitlocker-overview.md).
+For a general overview and list of topics about BitLocker, see [BitLocker](bitlocker-overview.md). 
 
 When users travel, their organization’s confidential data goes with them. Wherever confidential data is stored, it must be protected against unauthorized access. Windows has a long history of providing at-rest data-protection solutions that guard against nefarious attackers, beginning with the Encrypting File System in the Windows 2000 operating system. More recently, BitLocker has provided encryption for full drives and portable drives. Windows consistently improves data protection by improving existing options and by providing new strategies.
 
@@ -109,7 +109,7 @@ When BitLocker is enabled on a system drive and the PC has a TPM, you can choose
 
 Requiring a PIN at startup is a useful security feature because it acts as a second authentication factor (a second “something you know”). This configuration comes with some costs, however. One of the most significant is the need to change the PIN regularly. In enterprises that used BitLocker with Windows 7 and the Windows Vista operating system, users had to contact systems administrators to update their BitLocker PIN or password. This requirement not only increased management costs but made users less willing to change their BitLocker PIN or password on a regular basis.
 Windows 10 users can update their BitLocker PINs and passwords themselves, without administrator credentials. Not only will this feature reduce support costs, but it could improve security, too, because it encourages users to change their PINs and passwords more often. In addition, Modern Standby devices do not require a PIN for startup: They are designed to start infrequently and have other mitigations in place that further reduce the attack surface of the system.
-For more information about how startup security works and the countermeasures that Windows 10 provides, see [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md).
+For more information about how startup security works and the countermeasures that Windows 10 provides, see [Protect BitLocker from pre-boot attacks](./bitlocker-countermeasures.md).
 
 ## Configure Network Unlock
 
@@ -140,4 +140,4 @@ Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage 
 * Offers an IT-customizable recovery user experience.
 * Supports Windows 10.
 
-For more information about MBAM, including how to obtain it, see [Microsoft BitLocker Administration and Monitoring](https://technet.microsoft.com/windows/hh826072.aspx) on the MDOP TechCenter.
+For more information about MBAM, including how to obtain it, see [Microsoft BitLocker Administration and Monitoring](/microsoft-desktop-optimization-pack/) on the MDOP TechCenter.

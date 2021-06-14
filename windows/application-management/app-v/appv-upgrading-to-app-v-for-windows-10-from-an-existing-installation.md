@@ -1,7 +1,7 @@
 ---
 title: Upgrading to App-V for Windows 10 from an existing installation (Windows 10)
 description: Learn about upgrading to Application Virtualization (App-V) for Windows 10 from an existing installation.
-author: lomayor
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ---
 
 # Upgrading to App-V for Windows 10 from an existing installation
@@ -33,7 +33,7 @@ These steps are explained in more detail below.
 
 ## Upgrade user devices to Windows 10
 
-Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings. See the [Windows 10 and Windows 10 Mobile document set](https://technet.microsoft.com/itpro/windows/index) for information about upgrading user devices to Windows 10. 
+Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings. See the [Windows 10 and Windows 10 Mobile document set](/windows/windows-10/) for information about upgrading user devices to Windows 10. 
 
 ## Verify that App-V applications and settings were migrated correctly
 

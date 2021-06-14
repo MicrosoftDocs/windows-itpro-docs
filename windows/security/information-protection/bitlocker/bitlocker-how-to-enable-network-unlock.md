@@ -387,5 +387,5 @@ Follow these steps to configure Network Unlock on these older systems.
 ## See also
 
 -   [BitLocker overview](bitlocker-overview.md)
--   [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md)
+-   [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml)
 -   [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)

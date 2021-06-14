@@ -113,7 +113,7 @@ During the broad deployment phase, you should focus on the following activities:
 Previously, we have provided methods for analyzing your deployments, but these have been standalone tools to assess, manage and execute deployments. In other words, you would generate an analysis, make a deployment strategy, and then move to your console for implementation, repeating these steps for each deployment. We have combined many of these tasks, and more, into a single interface with Desktop Analytics.
 
 
-[Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview) is a cloud-based service and a key tool in [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/configmgr/core/understand/microsoft-endpoint-manager-faq). Using artificial intelligence and machine learning, Desktop Analytics is a powerful tool to give you insights and intelligence to
+[Desktop Analytics](/mem/configmgr/desktop-analytics/overview) is a cloud-based service and a key tool in [Microsoft Endpoint Manager](/mem/configmgr/core/understand/microsoft-endpoint-manager-faq). Using artificial intelligence and machine learning, Desktop Analytics is a powerful tool to give you insights and intelligence to
 make informed decisions about the readiness of your Windows devices.
 
 In Windows 10 deployments, we have seen compatibility issues on < 0.5% of apps when using Desktop Analytics. Using Desktop Analytics with Microsoft Endpoint Manager can help you assess app compatibility with the latest
@@ -126,13 +126,12 @@ feature update and create groups that represent the broadest number of hardware 
 
 There are two ways to implement a ring deployment plan, depending on how you manage your devices:
 
-- If you are using Configuration Manager: Desktop Analytics provides end-to-end deployment plan integration so that you can also kick off phased deployments within a ring. Learn more about [deployment plans in Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/about-deployment-plans).
-- If you are using Microsoft Intune, see [Create deployment plans directly in Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
+- If you are using Configuration Manager: Desktop Analytics provides end-to-end deployment plan integration so that you can also kick off phased deployments within a ring. Learn more about [deployment plans in Desktop Analytics](/mem/configmgr/desktop-analytics/about-deployment-plans).
+- If you are using Microsoft Intune, see [Create deployment plans directly in Intune](/mem/intune/fundamentals/planning-guide).
 
 For more about Desktop Analytics, see these articles:
 
-- [How to set up Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/set-up)
-- [Tutorial: Deploy Windows 10 to Pilot](https://docs.microsoft.com/mem/configmgr/desktop-analytics/tutorial-windows10)
-- [Desktop Analytics documentation](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
-- [Intune deployment planning, design, and implementation guide](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
-
+- [How to set up Desktop Analytics](/mem/configmgr/desktop-analytics/set-up)
+- [Tutorial: Deploy Windows 10 to Pilot](/mem/configmgr/desktop-analytics/tutorial-windows10)
+- [Desktop Analytics documentation](/mem/configmgr/desktop-analytics/overview)
+- [Intune deployment planning, design, and implementation guide](/mem/intune/fundamentals/planning-guide)

@@ -29,18 +29,18 @@ Microsoft Intune has an easy way to create and deploy a Windows Information Prot
 You can create an app protection policy in Intune either with device enrollment for MDM or without device enrollment for MAM. The process to create either policy is similar, but there are important differences: 
 
 - MAM has additional **Access** settings for Windows Hello for Business.
-- MAM can [selectively wipe company data](https://docs.microsoft.com/intune/apps-selective-wipe) from a user's personal device.
-- MAM requires an [Azure Active Directory (Azure AD) Premium license](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
+- MAM can [selectively wipe company data](/intune/apps-selective-wipe) from a user's personal device.
+- MAM requires an [Azure Active Directory (Azure AD) Premium license](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
 - An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and re-gain access to protected data. WIP auto-recovery depends on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM.
 - MAM supports only one user per device.  
 - MAM can only manage [enlightened apps](enlightened-microsoft-apps-and-wip.md).
-- Only MDM can use [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) policies.
+- Only MDM can use [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) policies.
 - If the same user and device are targeted for both MDM and MAM, the MDM policy will be applied to devices joined to Azure AD. For personal devices that are workplace-joined (that is, added by using **Settings** > **Email & accounts** > **Add a work or school account**), the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on Home edition will revoke WIP-protected data access. 
 
 
 ## Prerequisites
 
-Before you can create a WIP policy using Intune, you need to configure an MDM or MAM provider in Azure Active Directory (Azure AD). MAM requires an [Azure Active Directory (Azure AD) Premium license](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses). An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and re-gain access to protected data. WIP auto-recovery relies on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM. 
+Before you can create a WIP policy using Intune, you need to configure an MDM or MAM provider in Azure Active Directory (Azure AD). MAM requires an [Azure Active Directory (Azure AD) Premium license](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses). An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and re-gain access to protected data. WIP auto-recovery relies on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM. 
 
 ## Configure the MDM or MAM provider
 
@@ -224,7 +224,7 @@ This section covers two examples of using an AppLocker XML file to the **Protect
 - [Create a Packaged App rule for Store apps](#create-a-packaged-app-rule-for-store-apps)
 - [Create an Executable rule for unsigned apps](#create-an-executable-rule-for-unsigned-apps)
 
-For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+For more info about AppLocker, see the [AppLocker](../../threat-protection/windows-defender-application-control/applocker/applocker-overview.md) content.
 
 #### Create a Packaged App rule for Store apps
 
@@ -240,27 +240,27 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
 
 4.  On the **Before You Begin** page, click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-1.png)
+    ![Screenshot of the Before You Begin tab](images/wip-applocker-secpol-wizard-1.png)
 
 5.  On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-2.png)
+    ![Screenshot of the Permissions tab with "Allow" and "Everyone" selected](images/wip-applocker-secpol-wizard-2.png)
 
 6. On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
 
-    ![Create Packaged app Rules wizard, showing the Publisher](images/wip-applocker-secpol-wizard-3.png)
+    ![Screenshot of the "Use an installed package app as a reference" radio button selected and the Select button highlighted](images/wip-applocker-secpol-wizard-3.png)
 
 7.  In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we’re using Microsoft Dynamics 365.
 
-    ![Create Packaged app Rules wizard, showing the Select applications page](images/wip-applocker-secpol-wizard-4.png)
+    ![Screenshot of the Select applications list](images/wip-applocker-secpol-wizard-4.png)
 
 8.  On the updated **Publisher** page, click **Create**.
 
-    ![Create Packaged app Rules wizard, showing the Microsoft Dynamics 365 on the Publisher page](images/wip-applocker-secpol-wizard-5.png)
+    ![Screenshot of the Publisher tab](images/wip-applocker-secpol-wizard-5.png)
 
 9.  Click **No** in the dialog box that appears, asking if you want to create the default rules. You must not create default rules for your WIP policy.
 
-    ![Create Packaged app Rules wizard, showing the Microsoft Dynamics 365 on the Publisher page](images/wip-applocker-default-rule-warning.png)
+    ![Screenshot of AppLocker warning](images/wip-applocker-default-rule-warning.png)
 
 9.  Review the Local Security Policy snap-in to make sure your rule is correct.
 
@@ -318,11 +318,11 @@ The executable rule helps to create an AppLocker rule to sign any unsigned apps.
 
 6. On the **Conditions** page, click **Path** and then click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Publisher](images/path-condition.png)
+    ![Screenshot with Path conditions selected in the Create Executable Rules wizard](images/path-condition.png)
 
 7. Click **Browse Folders...** and select the path for the unsigned apps. For this example, we’re using "C:\Program Files".
 
-    ![Create Packaged app Rules wizard, showing the Select applications page](images/select-path.png)
+    ![Screenshot of the Path field of the Create Executable Rules wizard](images/select-path.png)
 
 8. On the **Exceptions** page, add any exceptions and then click **Next**.
 
@@ -427,7 +427,6 @@ For each cloud resource, you may also optionally specify a proxy server from you
 Be aware that all traffic routed through your Internal proxy servers is considered enterprise.
 
 Separate multiple resources with the "|" delimiter. 
-If you don’t use proxy servers, you must also include the "," delimiter just before the "|". 
 For example: 
 
 ```console
@@ -447,7 +446,7 @@ For example:
 URL <,proxy>|URL <,proxy>|/*AppCompat*/
 ```
 
-When you use this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access), using the **Domain joined or marked as compliant** option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.
+When you use this string, we recommend that you also turn on [Azure Active Directory Conditional Access](/azure/active-directory/active-directory-conditional-access), using the **Domain joined or marked as compliant** option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.
 
 Value format with proxy:
 
@@ -458,7 +457,7 @@ contoso.sharepoint.com,contoso.internalproxy1.com|contoso.visualstudio.com,conto
 Value format without proxy:
 
 ```console
-contoso.sharepoint.com,|contoso.visualstudio.com,|contoso.onedrive.com,
+contoso.sharepoint.com|contoso.visualstudio.com|contoso.onedrive.com,
 ```
 
 ### Protected domains
@@ -487,7 +486,7 @@ Specify the proxy servers your devices will go through to reach your cloud resou
 Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.
 
 This list shouldn’t include any servers listed in your Internal proxy servers list. 
-Internal proxy servers must be used only for WIP-protected (enterprise) traffic.
+Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.
 Separate multiple resources with the ";" delimiter.
 
 ```console
@@ -498,8 +497,8 @@ proxy.contoso.com:80;proxy2.contoso.com:443
 
 Specify the internal proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.
 
-This list shouldn’t include any servers listed in your Proxy servers list. 
-Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.
+This list shouldn’t include any servers listed in your Proxy servers list.
+Internal proxy servers must be used only for WIP-protected (enterprise) traffic.
 Separate multiple resources with the ";" delimiter.
 
 ```console
@@ -507,8 +506,6 @@ contoso.internalproxy1.com;contoso.internalproxy2.com
 ```
 
 ### IPv4 ranges
-
-Starting with Windows 10, version 1703, this field is optional.
 
 Specify the addresses for a valid IPv4 value range within your intranet. 
 These addresses, used with your Network domain names, define your corporate network boundaries.
@@ -557,7 +554,7 @@ Decide if you want Windows to look for additional network settings:
 After you create and deploy your WIP policy to your employees, Windows begins to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the Data Recovery Agent (DRA) certificate lets Windows use an included public key to encrypt the local data while you maintain the private key that can unencrypt the data.
 
 >[!Important]
->Using a DRA certificate isn’t mandatory. However, we strongly recommend it. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate) topic.
+>Using a DRA certificate isn’t mandatory. However, we strongly recommend it. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](/previous-versions/tn-archive/cc512680(v=technet.10)) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate) topic.
 
 **To upload your DRA certificate**
 1. From the **App policy** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
@@ -591,11 +588,11 @@ After you've decided where your protected apps can access enterprise data on you
         
 - **Off, or not configured (recommended).** Stops the Windows Information Protection icon overlay from appearing on corporate files or unenlightened, but protected apps. Not configured is the default option. 
         
-**Use Azure RMS for WIP.** Determines whether WIP uses [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management) to apply EFS encryption to files that are copied from Windows 10 to USB or other removable drives so they can be securely shared amongst employees. In other words, WIP uses Azure Rights Management "machinery" to apply EFS encryption to files when they are copied to removable drives. You must already have Azure Rights Management set up. The EFS file encryption key is protected by the RMS template’s license. Only users with permission to that template will be able to read it from the removable drive. WIP can also integrate with Azure RMS by using the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings in the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp). 
+**Use Azure RMS for WIP.** Determines whether WIP uses [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management) to apply EFS encryption to files that are copied from Windows 10 to USB or other removable drives so they can be securely shared amongst employees. In other words, WIP uses Azure Rights Management "machinery" to apply EFS encryption to files when they are copied to removable drives. You must already have Azure Rights Management set up. The EFS file encryption key is protected by the RMS template’s license. Only users with permission to that template will be able to read it from the removable drive. WIP can also integrate with Azure RMS by using the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings in the [EnterpriseDataProtection CSP](/windows/client-management/mdm/enterprisedataprotection-csp). 
     
 - **On.** Protects files that are copied to a removable drive. You can enter a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. The RMS template is only applied to the files on removable media, and is only used for access control—it doesn’t actually apply Azure Information Protection to the files. 
         
-  If you don’t specify an [RMS template](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates), it’s a regular EFS file using a default RMS template that all users can access.
+  If you don’t specify an [RMS template](/information-protection/deploy-use/configure-custom-templates), it’s a regular EFS file using a default RMS template that all users can access.
         
 - **Off, or not configured.** Stops WIP from encrypting Azure Rights Management files that are copied to a removable drive.
 
@@ -620,13 +617,13 @@ You can restrict which files are protected by WIP when they are downloaded from 
  
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
 
-- [What is Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
+- [What is Azure Rights Management?](/information-protection/understand-explore/what-is-azure-rms)
 
-- [Create a Windows Information Protection (WIP) protection policy using Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy)
+- [Create a Windows Information Protection (WIP) protection policy using Microsoft Intune](./overview-create-wip-policy.md)
 
-- [Intune MAM Without Enrollment](https://blogs.technet.microsoft.com/configmgrdogs/2016/02/04/intune-mam-without-enrollment/)
+- [Intune MAM Without Enrollment](/archive/blogs/configmgrdogs/intune-mam-without-enrollment)
 
 - [Azure RMS Documentation Update for May 2016](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/azure-rms-documentation-update-for-may-2016/)
 
->[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Editing Windows IT professional documentation](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+> [!NOTE]
+> Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Editing Windows IT professional documentation](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

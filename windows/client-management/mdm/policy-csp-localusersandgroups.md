@@ -96,7 +96,7 @@ Here is an example of the policy definition XML for group configuration:
 
 where:
 
-- `<accessgroup desc>`: Specifies the name or SID of the local group to configure. If you specify a SID, the [LookupAccountSid](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API is used to translate the SID to a valid group name. If you specify a name, the [LookupAccountName](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API is used to lookup the group and validate the name. If name/SID lookup fails, the group is skipped and the next group in the XML file is processed. If there are multiple errors, the last error is returned at the end of the policy processing. 
+- `<accessgroup desc>`: Specifies the name or SID of the local group to configure. If you specify a SID, the [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API is used to translate the SID to a valid group name. If you specify a name, the [LookupAccountName](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API is used to lookup the group and validate the name. If name/SID lookup fails, the group is skipped and the next group in the XML file is processed. If there are multiple errors, the last error is returned at the end of the policy processing. 
 - `<group action>`: Specifies the action to take on the local group, which can be Update and Restrict, represented by U and R: 
     - Update. This action must be used to keep the current group membership intact and add or remove members of the specific group.
     - Restrict. This action must be used to replace current membership with the newly specified groups. This action provides the same functionality as the [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting.
@@ -104,14 +104,14 @@ where:
 - `<remove member>`: Specifies the SID or name of the member to remove from the specified group.
 
     > [!NOTE]
-    > When specifying member names of the user accounts, you must use following format – AzureAD/userUPN. For example, "AzureAD/user1@contoso.com" or "AzureAD/user2@contoso.co.uk". 
+    > When specifying member names of the user accounts, you must use following format – AzureAD\userUPN. For example, "AzureAD\user1@contoso.com" or "AzureAD\user2@contoso.co.uk". 
 For adding Azure AD groups, you need to specify the Azure AD Group SID. Azure AD group names are not supported with this policy.
-for more information, see [LookupAccountNameA function](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).  
+for more information, see [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).  
 
-See [Use custom settings for Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10) for information on how to create custom profiles.
+See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configuration/custom-settings-windows-10) for information on how to create custom profiles.
 
 > [!IMPORTANT]
-> - `<add member>` and `<remove member>` can use an Azure AD SID or the user's name. For adding or removing Azure AD groups using this policy, you must use the group's SID. Azure AD group SIDs can be obtained using [Graph](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute. 
+> - `<add member>` and `<remove member>` can use an Azure AD SID or the user's name. For adding or removing Azure AD groups using this policy, you must use the group's SID. Azure AD group SIDs can be obtained using [Graph](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute. 
 > - When specifying a SID in the `<add member>` or `<remove member>`, member SIDs are added without attempting to resolve them. Therefore, be very careful when specifying a SID to ensure it is correct.
 > - `<remove member>` is not valid for the R (Restrict) action and will be ignored if present.
 > - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that if a group is present multiple times with different add/remove values, all of them will be processed in the order they are present.
@@ -125,7 +125,7 @@ See [Use custom settings for Windows 10 devices in Intune](https://docs.microsof
 
 Example 1: AAD focused.
 
-The following example updates the built-in administrators group with AAD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444. On an AAD joined machines**. 
+The following example updates the built-in administrators group with AAD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine. 
 
 ```xml
 <GroupConfiguration>
@@ -210,7 +210,7 @@ Yes, you can remove a member even if it isn't a member of the group. This will r
 
 ### How can I add a domain group as a member to a local group?
 
-To add a domain group as a member to a local group, specify the domain group in `<add member>` of the local group. Use fully qualified account names (for example, domain_name\group_name) instead of isolated names (for example, group_name) for the best results. See [LookupAccountNameA function](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea#remarks) for more information. 
+To add a domain group as a member to a local group, specify the domain group in `<add member>` of the local group. Use fully qualified account names (for example, domain_name\group_name) instead of isolated names (for example, group_name) for the best results. See [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea#remarks) for more information. 
 
 ### Can I apply more than one LocalUserAndGroups policy/XML to the same device?
 
@@ -239,7 +239,7 @@ To troubleshoot Name/SID lookup APIs:
 
 1. Enable **lsp.log** on the client device by running the following commands:
 
-    ```cmd
+    ```powershell
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgInfoLevel -Value 0x800 -Type dword -Force
 
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgTraceOptions -Value 0x1 -Type dword -Force
@@ -249,9 +249,12 @@ To troubleshoot Name/SID lookup APIs:
 
 2. Turn the logging off by running the following command:
 
-    ```cmd
+    ```powershell
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgInfoLevel -Value 0x0 -Type dword -Force
+    
+    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgTraceOptions -Value 0x0 -Type dword -Force
     ```
+
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
                           <xs:simpleType name="name">

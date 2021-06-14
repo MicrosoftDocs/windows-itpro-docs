@@ -53,9 +53,9 @@ Typically, the improvements are reliability and performance improvements that do
 * Servicing stack updates contain the full servicing stack; as a result, typically administrators only need to install the latest servicing stack update for the operating system.
 * Installing servicing stack update does not require restarting the device, so installation should not be disruptive. 
 * Servicing stack update releases are specific to the operating system version (build number), much like quality updates.
-* Search to install latest available [Servicing stack update for Windows 10](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001).
+* Servicing stack updates can be delivered with Windows Update, or you can perform a search to install the latest available at [Servicing stack update for Windows 10](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV990001).
 * Once a servicing stack update is installed, it cannot be removed or uninstalled from the machine.
 
-
 ## Simplifying on-premises deployment of servicing stack updates
+
 With the Windows Update experience, servicing stack updates and cumulative updates are deployed together to the device. The update stack automatically orchestrates the installation, so both are applied correctly. Starting in February 2021, the cumulative update will include the latest servicing stack updates, to provide a single cumulative update payload to both Windows Server Update Services (WSUS) and Microsoft Catalog. If you use an endpoint management tool backed by WSUS, such as Configuration Manager, you will only have to select and deploy the monthly cumulative update. The latest servicing stack updates will automatically be applied correctly. Release notes and file information for cumulative updates, including those related to the servicing stack, will be in a single KB article. The combined monthly cumulative update will be available on Windows 10, version 2004 and later starting with the 2021 2C release, KB4601382.
