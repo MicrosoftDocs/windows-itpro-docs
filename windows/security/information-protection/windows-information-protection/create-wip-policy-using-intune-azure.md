@@ -486,7 +486,7 @@ Specify the proxy servers your devices will go through to reach your cloud resou
 Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.
 
 This list shouldn’t include any servers listed in your Internal proxy servers list. 
-Internal proxy servers must be used only for WIP-protected (enterprise) traffic.
+Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.
 Separate multiple resources with the ";" delimiter.
 
 ```console
@@ -497,8 +497,8 @@ proxy.contoso.com:80;proxy2.contoso.com:443
 
 Specify the internal proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.
 
-This list shouldn’t include any servers listed in your Proxy servers list. 
-Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.
+This list shouldn’t include any servers listed in your Proxy servers list.
+Internal proxy servers must be used only for WIP-protected (enterprise) traffic.
 Separate multiple resources with the ";" delimiter.
 
 ```console
@@ -506,8 +506,6 @@ contoso.internalproxy1.com;contoso.internalproxy2.com
 ```
 
 ### IPv4 ranges
-
-Starting with Windows 10, version 1703, this field is optional.
 
 Specify the addresses for a valid IPv4 value range within your intranet. 
 These addresses, used with your Network domain names, define your corporate network boundaries.

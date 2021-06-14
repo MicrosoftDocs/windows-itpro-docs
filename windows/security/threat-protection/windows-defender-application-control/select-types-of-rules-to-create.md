@@ -63,13 +63,24 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **10 Enabled:Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
 | **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is supported on 1709, 1803, and 1809 builds with the 2019 10C LCU or higher, and on devices with the Windows 10 May 2019 Update (1903) and higher. Using it on versions of Windows 10 without the proper update may have unintended results. |
 | **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies will also apply to Universal Windows applications. |
-| **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a managed installer. For more information, see [Authorize apps deployed with a WDAC managed installer](use-windows-defender-application-control-with-managed-installer.md) |
+| **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a managed installer. For more information, see [Authorize apps deployed with a WDAC managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically revalidate the reputation for files that were authorized by the ISG.|
 | **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. NOTE: This option is only supported on Windows 10, version 1709, and above.|
 | **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. NOTE: This option is only supported on Windows 10, version 1903, and above. |
 | **18 Disabled:Runtime FilePath Rule Protection** | This option disables the default runtime check that only allows FilePath rules for paths that are only writable by an administrator. NOTE: This option is only supported on Windows 10, version 1903, and above. |
 | **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries. NOTE: This option is only supported on Windows 10, version 1803, and above. |
+
+The following options are valid for supplemental policies. However, option 5 is not implemented as it is reserved for future work, and option 7 is not  supported.
+
+| Rule option | Description |
+|------------ | ----------- |
+| 5 | Enabled: Inherit Default Policy |
+| **6** | **Enabled: Unsigned System Integrity Policy** |
+| 7 | Allowed: Debug Policy Augmented |
+| **13** | **Enabled: Managed Installer** |
+| **14** | **Enabled: Intelligent Security Graph Authorization** |
+| **18** | **Disabled: Runtime FilePath Rule Protection** |
 
 ## Windows Defender Application Control file rule levels
 
@@ -125,6 +136,22 @@ When generating filepath rules using [New-CIPolicy](/powershell/module/configci/
 Wildcards can be used at the beginning or end of a path rule; only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. `C:\*` would include `C:\foo\*` ). Wildcards placed at the beginning of a path will allow the exact specified filename under any path (ex. `*\bar.exe` would allow `C:\bar.exe` and `C:\foo\bar.exe`). Wildcards in the middle of a path are not supported (ex. `C:\*\foo.exe`). Without a wildcard, the rule will allow only a specific file (ex. `C:\foo\bar.exe`).
 
 You can also use the following macros when the exact volume may vary: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`.
+
+> [!NOTE]
+> For others to better understand the WDAC policies that has been deployed, we recommend maintaining separate ALLOW and DENY policies on Windows 10, version 1903 and later.
+
+## More information about hashes
+
+### Why does scan create four hash rules per XML file?
+
+The PowerShell cmdlet will produce an Authenticode Sha1 Hash, Sha256 Hash, Sha1 Page Hash, Sha256 Page Hash.
+During validation CI will choose which hashes to calculate depending on how the file is signed.  For example, if the file is page-hash signed the entire file would not get paged in to do a full sha256 authenticode and we would just match using the first page hash.
+
+In the cmdlets, rather than try to predict which hash CI will use, we pre-calculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This is also resilient, if the signing status of the file changes and necessary for deny rules to ensure that changing/stripping the signature doesn’t result in a different hash than what was in the policy being used by CI.
+
+### Why does scan create eight hash rules for certain XML files?
+
+Separate rules are created for UMCI and KMCI. In some cases, files which are purely user-mode or purely kernel-mode may still generate both sets, as CI cannot always precisely determine what is purely user vs. kernel mode and errs on the side of caution.
 
 ## Windows Defender Application Control filename rules
 

@@ -10,7 +10,6 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 08/11/2020
 ---
 
 # Defender DDF file
@@ -757,6 +756,7 @@ The XML below is the current version for this CSP.
               </DFType>
             </DFProperties>
           </Node>
+          <Node>
         </Node>
         <Node>
           <NodeName>Scan</NodeName>

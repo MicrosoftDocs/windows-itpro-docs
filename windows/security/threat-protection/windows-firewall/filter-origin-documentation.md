@@ -67,7 +67,7 @@ To enable a specific audit event, run the corresponding command in an administra
 |**Audit #**|**Enable command**|**Link**|
 |:-----|:-----|:-----|
 |**5157**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable`|[5157(F): The Windows Filtering Platform has blocked a connection.](../auditing/event-5157.md)|
-|**5152**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable`|[5152(F): The Windows Filtering Platform blocked a packet.](../auditing/event-5152.md)|
+|**5152**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Packet Drop" /success:enable /failure:enable`|[5152(F): The Windows Filtering Platform blocked a packet.](../auditing/event-5152.md)|
 
 ## Example flow of debugging packet drops with filter origin 
 
