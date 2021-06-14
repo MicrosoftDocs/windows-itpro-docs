@@ -18924,6 +18924,11 @@
       "source_path": "windows/privacy/deploy-data-processor-service-windows.md",
       "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
       "redirect_document_id": false
-    }    
+    },
+    {
+      "source_path": "data-processor-service-for-windows-enterprise-public-preview-terms.md",
+      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_document_id": false
+    } 
 	    ]
 }
