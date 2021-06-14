@@ -390,6 +390,9 @@ Optional node. Name Resolution Policy Table (NRPT) rules for the VPN profile.
 
 The Name Resolution Policy Table (NRPT) is a table of namespaces and corresponding settings stored in the Windows registry that determines the DNS client behavior when issuing queries and processing responses. Each row in the NRPT represents a rule for a portion of the namespace for which the DNS client issues queries. Before issuing name resolution queries, the DNS client consults the NRPT to determine if any additional flags must be set in the query. After receiving the response, the client again consults the NRPT to check for any special processing or policy requirements. In the absence of the NRPT, the client operates based on the DNS servers and suffixes set on the interface.
 
+> [!NOTE]  
+> Only applications using the [Windows DNS API](https://docs.microsoft.com/en-us/windows/win32/dns/dns-reference) can make use of the Name Resolution Policy Table (NRPT) and therefore all settings configured within the DomainNameInformationList section. Applications using their own DNS implementation bypass the Windows DNS API. One example of applications not using the Windows DNS API is nslookup, so please always use the PowerShell CmdLet [Resolve-DNSName](https://docs.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname) to check the functionality of NRPT.
+
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>  
 A sequential integer identifier for the Domain Name information. Sequencing must start at 0.
 
@@ -419,8 +422,8 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-webproxyservers"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/WebProxyServers**  
 Optional. Web Proxy Server IP address if you are redirecting traffic through your intranet.
 
-> [!NOTE]
-> Currently only one web proxy server is supported.
+> [!NOTE]  
+> Currently only one web proxy server is supported.  
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
