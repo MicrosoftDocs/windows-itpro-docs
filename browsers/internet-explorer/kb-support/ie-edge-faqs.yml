@@ -114,8 +114,8 @@ sections:
       - question: |
           How to improve performance by using PAC scripts
         answer: |
-          - [Browser is slow to respond when you use an automatic configuration script](https://support.microsoft.com/help/315810/browser-is-slow-to-respond-when-you-use-an-automatic-configuration-scr)
-          - [Optimizing performance with automatic Proxyconfiguration scripts (PAC)](https://blogs.msdn.microsoft.com/askie/2014/02/07/optimizing-performance-with-automatic-proxyconfiguration-scripts-pac/)
+          - [Browser is slow to respond when you use an automatic configuration script](https://support.microsoft.com/en-us/topic/effa1aa0-8e95-543d-6606-03ac68e3f490)
+          - [Optimizing performance with automatic Proxyconfiguration scripts (PAC)](/troubleshoot/browsers/optimize-pac-performance)
           
   - name: Other questions
     questions:
@@ -124,7 +124,7 @@ sections:
         answer: |
           For more information, see the following blog article:
           
-          [How do I set the home page in Microsoft Edge?](https://blogs.msdn.microsoft.com/askie/2017/10/04/how-do-i-set-the-home-page-in-edge/)
+          [How do I set the home page in Microsoft Edge?](https://support.microsoft.com/en-us/microsoft-edge/change-your-browser-home-page-a531e1b8-ed54-d057-0262-cc5983a065c6)
           
       - question: |
           How to add sites to the Enterprise Mode (EMIE) site list
