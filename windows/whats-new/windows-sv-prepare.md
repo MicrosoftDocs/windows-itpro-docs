@@ -49,7 +49,7 @@ The following updates are required to support deploying Windows Sun Valley.
 #### Microsoft Intune
 
 No infrastructure update is required for you to use Microsoft Intune because it is cloud-based.
-  - If you are using MEM Intune with E3 licenses you will be able to leverage **Feature Update Deployments** to easily manage moving between Windows 10 versions or to Windows Sun Valley.
+  - If you are using Microsoft Intune with E3 licenses you will be able to leverage **Feature Update Deployments** to easily manage moving between Windows 10 versions or to Windows Sun Valley.
 
 #### Windows Autopilot
 

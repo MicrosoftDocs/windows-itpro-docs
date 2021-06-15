@@ -22,7 +22,7 @@ ms.topic: article
 
 ## Deployment planning
 
-Windows Sun Valley is developed with Windows 10 as its foundation, enabling you to plan, prepare, deploy, and manage Windows Sun Valley with the same tools and methods that you use for Windows 10. As you integrate Windows Sun Valley into your environment, there will be some unique but familiar considerations as you work with a mix of Windows 10 and Windows Sun Valley devices side-by-side.
+Windows Sun Valley is developed with Windows 10 as its foundation, enabling you to plan, prepare, deploy, and manage Windows Sun Valley with the same tools and methods that you use for Windows 10. As you integrate Windows Sun Valley into your environment, there will be some unique but familiar considerations working with a mix of Windows 10 and Windows Sun Valley devices side-by-side.
 
 This article provides planning guidance to help you begin depoying Windows Sun Valley, specifically: 
  
@@ -32,14 +32,14 @@ This article provides planning guidance to help you begin depoying Windows Sun V
    - Application readiness 
    - Functionality and coexistence with Windows 10 ecosystems 
 
-#### Deployment process
+#### Deployment processes
 
 Consider using the following processes to deploy Windows Sun Valley:
-1. Preview Windows Sun Valley and create a deployment plan. 
-2. Test critical applications and management policies.
+1. [Preview Windows Sun Valley](windows-sv.md#how-to-get-windows-sun-valley) and create a deployment plan. 
+2. [Test critical applications](windows-sv-prepare.md#application-compatibility) and management policies.
 3. Update devices to the Windows 10, version 20H1 or later.
-4. Verify that devices meet the minimum hardware requirements for Windows Sun Valley.
-5. Update deployment tools, infrastructure, and policies.
+4. Verify that devices meet the [minimum hardware requirements](windows-sv-requirements.md#hardware-requirements) for Windows Sun Valley.
+5. [Update](windows-sv-prepare.md#management-tools) deployment tools, infrastructure, and policies.
 6. Update qualifying devices to Windows Sun Valley.
 
 #### Phased deployment
