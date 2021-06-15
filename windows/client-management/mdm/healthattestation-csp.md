@@ -502,8 +502,8 @@ The following list of data points are verified by the DHA-Service in DHA-Report 
 - [HealthStatusMismatchFlags](#healthstatusmismatchflags)
 
 \*  TPM 2.0 only   
-**  Reports if Bitlocker was enabled during initial boot.    
-*** The “Hybrid Resume” must be disabled on the device. Reports 1st party ELAM “Defender” was loaded during boot.  
+\*\*  Reports if BitLocker was enabled during initial boot.    
+\*\*\* The “Hybrid Resume” must be disabled on the device. Reports 1st party ELAM “Defender” was loaded during boot.  
 
 Each of these are described in further detail in the following sections, along with the recommended actions to take.
 
@@ -547,8 +547,8 @@ Each of these are described in further detail in the following sections, along w
 -   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a devices past activities and trust history.
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
-<a href="" id="bitlockerstatus"></a>**BitlockerStatus** (at boot time) 
-<p style="margin-left: 20px">When Bitlocker is reported &quot;on&quot; at boot time, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</p>
+<a href="" id="bitlockerstatus"></a>**BitLockerStatus** (at boot time) 
+<p style="margin-left: 20px">When BitLocker is reported &quot;on&quot; at boot time, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</p>
 
 <p style="margin-left: 20px">Windows BitLocker Drive Encryption, encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen.</p>
 
@@ -614,7 +614,7 @@ Each of these are described in further detail in the following sections, along w
 -   Disallow all access
 -   Disallow access to HBI assets
 -   Place the device in a watch list to monitor the device more closely for potential risks.
--   Trigger a corrective action, such as enabling VSM using WMI or a Powershell script.  
+-   Trigger a corrective action, such as enabling VSM using WMI or a PowerShell script.  
 
 <a href="" id="oskerneldebuggingenabled"></a>**OSKernelDebuggingEnabled**
 <p style="margin-left: 20px">OSKernelDebuggingEnabled points to a device that is used in development and testing. Devices that are used for test and development typically are less secure: they may run unstable code, or be configured with fewer security restrictions required for testing and development.</p>
@@ -659,7 +659,7 @@ Each of these are described in further detail in the following sections, along w
 -   Disallow all access
 -   Disallow access to HBI and MBI assets
 -   Place the device in a watch list to monitor the device more closely for potential risks.
--   Trigger a corrective action, such as enabling test signing using WMI or a Powershell script.
+-   Trigger a corrective action, such as enabling test signing using WMI or a PowerShell script.
 
 <a href="" id="safemode"></a>**SafeMode**  
 <p style="margin-left: 20px">Safe mode is a troubleshooting option for Windows that starts your computer in a limited state. Only the basic files and drivers necessary to run Windows are started.</p>
