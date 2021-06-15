@@ -148,8 +148,8 @@ Following is an example of setting the policy using Microsoft Endpoint Manager:
     - Name: **AllowWUfBCloudProcessing**
     - Description: Enter a description.
     - OMA-URI: `./Vendor/MSFT/Policy/Config/System/AllowWUfBCloudProcessing`
-    - Data type: **String**
-    - Value: **1**
+    - Data type: **Integer**
+    - Value: **8**
 6. In **Assignments**, select the groups that will receive the profile, and then select **Next**.
 7. In **Review + create**, review your settings, and then select **Create**.
 8. (Optional) To verify that the policy reached the client, check the value of the following registry entry: **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager \\default\\System\\AllowWUfBCloudProcessing**.
