@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -65,7 +65,7 @@ This policy setting controls the behavior of the elevation prompt for standard u
 This policy setting controls the behavior of application installation detection for the computer.
 
 -   **Enabled** (Default) When an app installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
--   **Disabled** App installation packages are not detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies, such as Group Policy or Microsoft Endpoint Configuration Manager should disable this policy setting. In this case, installer detection is unnecessary.
+-   **Disabled** App installation packages are not detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies, such as Group Policy or Microsoft Endpoint Manager should disable this policy setting. In this case, installer detection is unnecessary.
 
 ## User Account Control: Only elevate executable files that are signed and validated
 

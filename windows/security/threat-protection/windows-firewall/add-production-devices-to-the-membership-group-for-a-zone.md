@@ -1,10 +1,10 @@
 ---
 title: Add Production Devices to the Membership Group for a Zone (Windows 10)
-description: Add Production Devices to the Membership Group for a Zone
+description: Learn how to add production devices to the membership group for a zone and refresh the group policy on the devices in the membership group.
 ms.assetid: 7141de15-5840-4beb-aabe-21c1dd89eb23
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Add Production Devices to the Membership Group for a Zone

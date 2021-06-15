@@ -1,0 +1,86 @@
+items:
+- name: Windows client management
+  href: index.yml
+  items: 
+    - name: Client management tools and settings
+      items:
+        - name: Administrative Tools in Windows 10
+          href: administrative-tools-in-windows-10.md
+        - name: Use Quick Assist to help users
+          href: quick-assist.md
+        - name: Create mandatory user profiles
+          href: mandatory-user-profile.md
+        - name: Connect to remote Azure Active Directory-joined PC
+          href: connect-to-remote-aadj-pc.md
+        - name: New policies for Windows 10
+          href: new-policies-for-windows-10.md
+        - name: Windows 10 default media removal policy
+          href: change-default-removal-policy-external-storage-media.md
+        - name: Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education
+          href: group-policies-for-enterprise-and-education-editions.md
+        - name: Manage the Settings app with Group Policy
+          href: manage-settings-app-with-group-policy.md
+        - name: What version of Windows am I running
+          href: windows-version-search.md
+        - name: Transitioning to modern management
+          href: manage-windows-10-in-your-organization-modern-management.md
+        - name: Windows libraries
+          href: windows-libraries.md
+    - name: Mobile device management (MDM)
+      items: 
+        - name: Mobile Device Management     
+          href: mdm/index.md
+    - name: Configuration Service Provider (CSP)
+      items: 
+        - name: CSP reference     
+          href: mdm/configuration-service-provider-reference.md
+    - name: Troubleshoot Windows 10 clients
+      items: 
+        - name: Windows 10 support solutions      
+          href: windows-10-support-solutions.md
+        - name: Advanced troubleshooting for Windows networking
+          href: troubleshoot-networking.md
+          items: 
+            - name: Advanced troubleshooting Wireless network connectivity
+              href: advanced-troubleshooting-wireless-network-connectivity.md
+            - name: Advanced troubleshooting 802.1X authentication
+              href: advanced-troubleshooting-802-authentication.md
+              items: 
+                - name: Data collection for troubleshooting 802.1X authentication
+                  href: data-collection-for-802-authentication.md
+            - name: Advanced troubleshooting for TCP/IP
+              href: troubleshoot-tcpip.md
+              items: 
+                - name: Collect data using Network Monitor
+                  href: troubleshoot-tcpip-netmon.md
+                - name: Troubleshoot TCP/IP connectivity
+                  href: troubleshoot-tcpip-connectivity.md
+                - name: Troubleshoot port exhaustion
+                  href: troubleshoot-tcpip-port-exhaust.md
+                - name: Troubleshoot Remote Procedure Call (RPC) errors
+                  href: troubleshoot-tcpip-rpc-errors.md
+        - name: Advanced troubleshooting for Windows startup
+          href: troubleshoot-windows-startup.md
+          items: 
+            - name: How to determine the appropriate page file size for 64-bit versions of Windows
+              href: determine-appropriate-page-file-size.md
+            - name: Generate a kernel or complete crash dump
+              href: generate-kernel-or-complete-crash-dump.md
+            - name: Introduction to the page file
+              href: introduction-page-file.md
+            - name: Configure system failure and recovery options in Windows
+              href: system-failure-recovery-options.md
+            - name: Advanced troubleshooting for Windows boot problems
+              href: advanced-troubleshooting-boot-problems.md
+            - name: Advanced troubleshooting for Windows-based computer freeze
+              href: troubleshoot-windows-freeze.md
+            - name: Advanced troubleshooting for stop error or blue screen error
+              href: troubleshoot-stop-errors.md
+            - name: Advanced troubleshooting for stop error 7B or Inaccessible_Boot_Device
+              href: troubleshoot-inaccessible-boot-device.md
+            - name: Advanced troubleshooting for Event ID 41 "The system has rebooted without cleanly shutting down first"
+              href: troubleshoot-event-id-41-restart.md
+            - name: Stop error occurs when you update the in-box Broadcom network adapter driver
+              href: troubleshoot-stop-error-on-broadcom-driver-update.md
+
+

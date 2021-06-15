@@ -13,6 +13,7 @@ audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
 ms.date: 10/17/2019
+ms.custom: bitlocker
 ---
 
 # Decode Measured Boot logs to track PCR changes
@@ -25,8 +26,8 @@ This article describes tools that you can use to decode these logs: TBSLogGenera
 
 For more information about Measured Boot and PCRs, see the following articles:
 
-- [TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)  
-- [Understanding PCR banks on TPM 2.0 devices](https://docs.microsoft.com/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices)
+- [TPM fundamentals: Measured Boot with support for attestation](../tpm/tpm-fundamentals.md#measured-boot-with-support-for-attestation)  
+- [Understanding PCR banks on TPM 2.0 devices](../tpm/switch-pcr-banks-on-tpm-2-0-devices.md)
 
 ## Use TBSLogGenerator to decode Measured Boot logs
 
@@ -39,7 +40,7 @@ To install the tool, follow these steps:
 
 1. Download the Windows Hardware Lab Kit from one of the following locations:
 
-   - [Windows Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/)
+   - [Windows Hardware Lab Kit](/windows-hardware/test/hlk/)
    - Direct download link for Windows Server 2016: [Windows HLK, version 1607](https://go.microsoft.com/fwlink/p/?LinkID=404112)
 
 1. Accept the default installation path.
@@ -92,6 +93,9 @@ To find the PCR information, go to the end of the file.
    ![View of NotePad that shows the PCR information at the end of the text file](./images/ts-tpm-7.png)
 
 ## Use PCPTool to decode Measured Boot logs
+
+> [!NOTE]
+> PCPTool is a Visual Studio solution, but you need to build the executable before you can start using this tool.
 
 PCPTool is part of the [TPM Platform Crypto-Provider Toolkit](https://www.microsoft.com/download/details.aspx?id=52487). The tool decodes a Measured Boot log file and converts it into an XML file.
 

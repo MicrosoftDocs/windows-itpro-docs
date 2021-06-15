@@ -2,7 +2,7 @@
 title: 6410(F) Code integrity determined that a file does not meet the security requirements to load into a process. (Windows 10)
 description: Describes security event 6410(F) Code integrity determined that a file does not meet the security requirements to load into a process.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 6410(F): Code integrity determined that a file does not meet the security requirements to load into a process.
@@ -20,9 +21,9 @@ ms.author: dansimp
 -   Windows Server 2016
 
 
-[Code Integrity](https://technet.microsoft.com/library/dd348642(v=ws.10).aspx) is a feature that improves the security of the operating system by validating the integrity of a driver or system file each time it is loaded into memory. Code Integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with administrative permissions. On x64-based versions of the operating system, kernel-mode drivers must be digitally signed.
+[Code Integrity](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd348642(v=ws.10)) is a feature that improves the security of the operating system by validating the integrity of a driver or system file each time it is loaded into memory. Code Integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with administrative permissions. On x64-based versions of the operating system, kernel-mode drivers must be digitally signed.
 
-This event generates due to writable [shared sections](https://msdn.microsoft.com/library/windows/desktop/cc307397.aspx) being present in a file image.
+This event generates due to writable [shared sections](/previous-versions/windows/desktop/cc307397(v=msdn.10)) being present in a file image.
 
 There is no example of this event in this document.
 
@@ -43,6 +44,3 @@ There is no example of this event in this document.
 ## Security Monitoring Recommendations
 
 -   We recommend monitoring for this event, especially on high value assets or computers, because it can be a sign of a software or configuration issue, or a malicious action.
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting UE-V
-description: Find resources for troubleshooting UE-V for Windows 10.
-author: dansimp
+description: Use this technical reference to find resources for troubleshooting User Experience Virtualization (UE-V) for Windows 10.
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 

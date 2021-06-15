@@ -1,6 +1,6 @@
 ---
 title: Personalization DDF file
-description: Learn how to set the OMA DM device description framework (DDF) for the **Personalization** configuration service provider. 
+description: Learn how to set the OMA DM device description framework (DDF) for the Personalization configuration service provider (CSP). 
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

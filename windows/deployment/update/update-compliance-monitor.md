@@ -13,14 +13,10 @@ ms.author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Monitor Windows Updates with Update Compliance
-
-> [!IMPORTANT]
-> While [Windows Analytics was retired on January 31, 2020](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), support for Update Compliance has continued through the Azure Portal. Two planned feature removals for Update Compliance – Microsoft Defender Antivirus reporting and Perspectives – are now scheduled to be removed beginning Monday, May 11, 2020. 
-> * The retirement of Microsoft Defender Antivirus reporting will begin Monday, May 11, 2020. You can continue to for threats with [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) and [Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
-> * The Perspectives feature of Update Compliance will be retired Monday, May 11, 2020. The Perspectives feature is part of the Log Search portal of Log Analytics, which was deprecated on February 15, 2019 in favor of [Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/log-query/log-search-transition). Your Update Compliance solution will be automatically upgraded to Azure Monitor Logs, and the data available in Perspectives will be migrated to a set of queries in the [Needs Attention section](update-compliance-need-attention.md) of Update Compliance.
 
 ## Introduction
 
@@ -30,9 +26,9 @@ Update Compliance enables organizations to:
 * View a report of device and update issues related to compliance that need attention.
 * Check bandwidth savings incurred across multiple content types by using [Delivery Optimization](waas-delivery-optimization.md).
 
-Update Compliance is offered through the Azure portal, and is included as part of Windows 10 licenses listed in the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites).
+Update Compliance is offered through the Azure portal, and is included as part of Windows 10 licenses listed in the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites). Azure Log Analytics ingestion and retention charges are not incurred on your Azure subscription for Update Compliance data.
 
-Update Compliance uses Windows 10 diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, and Delivery Optimization usage data, and then sends this data to a customer-owned [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/query-language/get-started-analytics-portal) workspace to power the experience.
+Update Compliance uses Windows 10 diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, and Delivery Optimization usage data, and then sends this data to a customer-owned [Azure Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) workspace to power the experience.
 
 See the following topics in this guide for detailed information about configuring and using the Update Compliance solution:
 

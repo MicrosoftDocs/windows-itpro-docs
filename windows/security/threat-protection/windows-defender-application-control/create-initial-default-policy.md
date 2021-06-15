@@ -1,9 +1,9 @@
 ---
 title: Create a WDAC policy for fixed-workload devices using a reference computer (Windows 10)
 description: To create a Windows Defender Application Control (WDAC) policy for fixed-workload devices within your organization, follow this guide.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2018
+ms.technology: mde
 ---
 
 # Create a WDAC policy for fixed-workload devices using a reference computer
@@ -70,7 +71,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
    > - You can add the **-MultiplePolicyFormat** parameter when creating policies which will be deployed to computers which are running Windows build 1903+. For more information about multiple policies, see [Deploy multiple Windows Defender Application Control policies](deploy-multiple-windows-defender-application-control-policies.md).
    > - You can add the **-Fallback** parameter to catch any applications not discovered using the primary file rule level specified by the **-Level** parameter. For more information about file rule level options, see [Windows Defender Application Control file rule levels](select-types-of-rules-to-create.md).
    > 
-   > - To specify that the WDAC policy scan only a specific drive, include the **-ScanPath** parameter followed by a path. Without this parameter, the entire system is scanned.
+   > - To specify that the WDAC policy scan only a specific drive, include the **-ScanPath** parameter followed by a path. Without this parameter, the tool will scan the C-drive by default.
    > 
    > - The preceding example includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 

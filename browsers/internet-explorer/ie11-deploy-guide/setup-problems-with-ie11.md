@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Setup problems with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Installing Internet Explorer creates the following log files, which are stored in the Windows installation folder (typically, the C:\\Windows folder):
 
 -   `IE11_main.log`

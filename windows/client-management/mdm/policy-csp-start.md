@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Start
-description: Policy CSP - Start
+description: Use the Policy CSP - Start setting to control the visibility of the Documents shortcut on the Start menu.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -1374,7 +1374,7 @@ To validate on Desktop, do the following:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently opened items in the jumplists from appearing.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently opened items in the jump lists from appearing.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -1389,13 +1389,13 @@ To validate on Desktop, do the following:
 
 1.   Enable "Show recently opened items in Jump Lists on Start of the taskbar" in Settings.
 2.   Pin Photos to the taskbar, and open some images in the photos app.
-3.   Right click the pinned photos app and verify that a jumplist of recently opened items pops up.
+3.   Right click the pinned photos app and verify that a jump list of recently opened items pops up.
 4.   Toggle "Show recently opened items in Jump Lists on Start of the taskbar" in Settings to clear jump lists.
 5.   Enable policy.
 6.   Restart explorer.exe
 7.   Check that Settings toggle is grayed out.
 8.   Repeat Step 2.
-9.   Right Click pinned photos app and verify that there is no jumplist of recent items.
+9.   Right Click pinned photos app and verify that there is no jump list of recent items.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -1936,7 +1936,7 @@ Added in Windows 10, version 1703. This policy imports Edge assets (e.g. .png/.
 > [!IMPORTANT]
 > Please note that the import happens only when StartLayout policy is changed. So it is better to always change ImportEdgeAssets policy at the same time as StartLayout policy whenever there are Edge secondary tiles to be pinned from StartLayout policy.
 
-The value set for this policy is an XML string containing Edge assets.  For an example XML string, see [Add image for secondary Microsoft Edge tiles](https://docs.microsoft.com/windows/configuration/start-secondary-tiles).
+The value set for this policy is an XML string containing Edge assets.  For an example XML string, see [Add image for secondary Microsoft Edge tiles](/windows/configuration/start-secondary-tiles).
 
 <!--/Description-->
 <!--Validation-->
@@ -2078,7 +2078,7 @@ Here is additional SKU support information:
 
 Allows you to override the default Start layout and prevents the user from changing it. If both user and device policies are set, the user policy will be used. Apps pinned to the taskbar can also be changed with this policy
 
-For further details on how to customize the Start layout, please see [Customize and export Start layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) and [Configure Windows 10 taskbar](https://docs.microsoft.com/windows/configuration/configure-windows-10-taskbar).
+For further details on how to customize the Start layout, please see [Customize and export Start layout](/windows/configuration/customize-and-export-start-layout) and [Configure Windows 10 taskbar](/windows/configuration/configure-windows-10-taskbar).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2094,12 +2094,13 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

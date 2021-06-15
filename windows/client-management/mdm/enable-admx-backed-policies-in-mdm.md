@@ -1,6 +1,6 @@
 ---
 title: Enable ADMX-backed policies in MDM
-description: Use this is a step-by-step guide to configuring ADMX-backed policies in MDM.
+description: Use this step-by-step guide to configure a selected set of Group Policy administrative templates (ADMX-backed policies) in Mobile Device Management (MDM).
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -17,7 +17,7 @@ manager: dansimp
 
 This is a step-by-step guide to configuring ADMX-backed policies in MDM.
 
-Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of select Group Policy administrative templates (ADMX-backed policies) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
+Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX-backed policies)](./policies-in-policy-csp-admx-backed.md) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
 
 Summary of steps to enable a policy:
 - Find the policy from the list ADMX-backed policies. 
@@ -25,17 +25,17 @@ Summary of steps to enable a policy:
 - Use the Group Policy Editor to determine whether there are parameters necessary to enable the policy.
 - Create the data payload for the SyncML.
 
-See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Ingesting-Office-ADMX-Backed-policies-using/ba-p/354824) and [Deploying ADMX-Backed policies using Microsoft Intune](https://blogs.technet.microsoft.com/senthilkumar/2018/05/21/intune-deploying-admx-backed-policies-using-microsoft-intune/) for a walk-through using Intune.
+See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Ingesting-Office-ADMX-Backed-policies-using/ba-p/354824) and [Deploying ADMX-Backed policies using Microsoft Intune](/archive/blogs/senthilkumar/intune-deploying-admx-backed-policies-using-microsoft-intune) for a walk-through using Intune.
 
 >[!TIP]
->Intune has added a number of ADMX-backed administrative templates in public preview. Check if the policy settings you need are available in a template before using the SyncML method described below. [Learn more about Intune's administrative templates.](https://docs.microsoft.com/intune/administrative-templates-windows)
+>Intune has added a number of ADMX-backed administrative templates in public preview. Check if the policy settings you need are available in a template before using the SyncML method described below. [Learn more about Intune's administrative templates.](/intune/administrative-templates-windows)
 
 ## Enable a policy
 
 > [!NOTE]
-> See [Understanding ADMX-backed policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies).
+> See [Understanding ADMX-backed policies in Policy CSP](./understanding-admx-backed-policies.md).
 
-1.  Find the policy from the list [ADMX-backed policies](policy-csps-admx-backed.md). You need the following information listed in the policy description.  
+1.  Find the policy from the list [ADMX-backed policies](./policies-in-policy-csp-admx-backed.md). You need the following information listed in the policy description.  
     - GP English name
     - GP name
     - GP ADMX file name
@@ -309,4 +309,3 @@ The \<Data> payload is empty. Here an example to set AppVirtualization/Publishin
   </SyncBody>
 </SyncML>
 ```
-

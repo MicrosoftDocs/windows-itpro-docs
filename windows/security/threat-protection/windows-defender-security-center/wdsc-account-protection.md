@@ -3,8 +3,7 @@ title: Account protection in the Windows Security app
 description: Use the Account protection section to manage security for your account and sign in to Microsoft.
 keywords: account protection, wdav, smartscreen, antivirus, wdsc, exploit, protection, hide, Windows Defender SmartScreen, SmartScreen Filter, Windows SmartScreen
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +13,7 @@ ms.author: dansimp
 ms.date: 04/30/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 
@@ -27,7 +27,7 @@ manager: dansimp
 The **Account protection** section contains information and settings for account protection and sign in. IT administrators and IT pros can get more information and documentation about configuration from the following:
 
 - [Microsoft Account](https://account.microsoft.com/account/faq)
-- [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)
+- [Windows Hello for Business](../../identity-protection/hello-for-business/hello-identity-verification.md)
 - [Lock your Windows 10 PC automatically when you step away from it](https://support.microsoft.com/help/4028111/windows-lock-your-windows-10-pc-automatically-when-you-step-away-from)
 
 You can also choose to hide the section from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
@@ -44,7 +44,7 @@ This can only be done in Group Policy.
 >
 >You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
@@ -52,7 +52,7 @@ This can only be done in Group Policy.
 
 6.  Open the **Hide the Account protection area** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy). 
 
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:

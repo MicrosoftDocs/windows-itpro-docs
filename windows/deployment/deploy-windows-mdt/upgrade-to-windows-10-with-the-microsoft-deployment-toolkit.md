@@ -111,4 +111,4 @@ After the task sequence completes, the computer will be fully upgraded to Window
 ## Related topics
 
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
-[Microsoft Deployment Toolkit downloads and resources](https://go.microsoft.com/fwlink/p/?LinkId=618117)
+[Microsoft Deployment Toolkit downloads and resources](/mem/configmgr/mdt/)

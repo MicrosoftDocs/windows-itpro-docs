@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Custom Components page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Custom Components** page of the Internet Explorer Customization Wizard 11 lets you add up to 10 additional components that your employees can install at the same time they install IE. These components can be created by Microsoft or your organization as either compressed cabinet (.cab) or self-extracting executable (.exe) files. If you’re using Microsoft components, make sure you have the latest version and software patches from the [Microsoft Support](https://go.microsoft.com/fwlink/p/?LinkId=258658) site. To include Microsoft Update components, you must bundle the associated files into a custom component.
 
 **Important**<br>You should sign any custom code that’s being downloaded over the Internet. The default settings of Internet Explorer 11 will automatically reject any unsigned code. For more info about digitally signing custom components, see [Security features and IEAK 11](security-and-ieak11.md).

@@ -1,7 +1,7 @@
 ---
 title: Deploying Microsoft Office 2013 by Using App-V (Windows 10)
-description: Deploying Microsoft Office 2013 by Using App-V
-author: lomayor
+description: Use Application Virtualization (App-V) to deliver Microsoft Office 2013 as a virtualized application to computers in your organization.
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # Deploying Microsoft Office 2013 by Using App-V
@@ -39,7 +39,7 @@ Before you deploy Office with App-V, review the following requirements.
 |---|---|
 |Packaging|All Office applications you wish to deploy to users must be in a single package.<br>In App-V and later, you must use the Office Deployment Tool to create packages. The Sequencer doesn't support package creation.<br>If you're deploying Microsoft Visio 2013 and Microsoft Project 2013 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2013 and Project 2013 with Office](#deploying-visio-2013-and-project-2013-with-office).|
 |Publishing|You can only publish one Office package per client computer.<br>You must publish the Office package globally, not to the user.|
-|Deploying Microsoft 365 Apps for enterprise, Visio Pro for Office 365, or Project Pro for Office 365 to a shared computer using Remote Desktop Services.|You must enable [shared computer activation](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).<br>You don’t need to use shared computer activation if you’re deploying a volume licensed product, such as Office Professional Plus 2013, Visio Professional 2013, or Project Professional 2013.|
+|Deploying Microsoft 365 Apps for enterprise, Visio Pro for Office 365, or Project Pro for Office 365 to a shared computer using Remote Desktop Services.|You must enable [shared computer activation](/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).<br>You don’t need to use shared computer activation if you’re deploying a volume licensed product, such as Office Professional Plus 2013, Visio Professional 2013, or Project Professional 2013.|
 
 ### Excluding Office applications from a package
 
@@ -47,7 +47,7 @@ The following table describes the recommended methods for excluding specific Off
 
 |Task|Details|
 |---|---|
-|Use the **ExcludeApp** setting when you create the package by using the Office Deployment Tool.|Enables you to exclude specific Office applications from the package when the Office Deployment Tool creates the package. For example, you can use this setting to create a package that contains only Microsoft Word.<br>For more information, see [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool?ui=en-US&rs=en-US&ad=US#excludeapp-element).|
+|Use the **ExcludeApp** setting when you create the package by using the Office Deployment Tool.|Enables you to exclude specific Office applications from the package when the Office Deployment Tool creates the package. For example, you can use this setting to create a package that contains only Microsoft Word.<br>For more information, see [ExcludeApp element](/DeployOffice/configuration-options-for-the-office-2016-deployment-tool?ad=US&rs=en-US&ui=en-US#excludeapp-element).|
 |Modify the **DeploymentConfig.xml** file|Modify the **DeploymentConfig.xml** file after creating the package. This file contains the default package settings for all users on a computer running the App-V Client.<br>For more information, see [Disabling Office 2013 applications](#disabling-office-2013-applications).|
 
 ## Creating an Office 2013 package for App-V with the Office Deployment Tool
@@ -306,7 +306,7 @@ Use the steps in this section to enable Office plug-ins with your Office package
 You may want to disable specific applications in your Office App-V package. For instance, you can disable Access, but leave all other Office application main available. When you disable an application, the end user will no longer see the shortcut for that application. You do not have to re-sequence the application. When you change the Deployment Configuration File after the Office 2013 App-V package has been published, you will save the changes, add the Office 2013 App-V package, then republish it with the new Deployment Configuration File to apply the new settings to Office 2013 App-V Package applications.
 
 >[!NOTE]
->To exclude specific Office applications (for example, Access and InfoPath) when you create the App-V package with the Office Deployment Tool, use the **ExcludeApp** setting. For more information, see [Reference for Click-to-Run configuration.xml file](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element).
+>To exclude specific Office applications (for example, Access and InfoPath) when you create the App-V package with the Office Deployment Tool, use the **ExcludeApp** setting. For more information, see [Reference for Click-to-Run configuration.xml file](/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element).
 
 #### To disable an Office 2013 application
 
@@ -412,7 +412,7 @@ This section describes the requirements and options for deploying Visio 2013 and
 |Goal|Method|
 |---|---|
 |Create two different packages and deploy each one to a different group of users|Create and deploy the following packages:<br>A package that contains only Office—deploy to computers whose users need only Office.<br>A package that contains Office, Visio, and Project—deploy to computers whose users need all three applications.|
-|Create just one package for the whole organization, or for users who share computers|Follow these steps:<br>1. Create a package that contains Office, Visio, and Project.<br>2. Deploy the package to all users.<br>3. Use [AppLocker](https://docs.microsoft.com/windows/security/threat-protection/applocker/applocker-overview) to prevent specific users from using Visio and Project.|
+|Create just one package for the whole organization, or for users who share computers|Follow these steps:<br>1. Create a package that contains Office, Visio, and Project.<br>2. Deploy the package to all users.<br>3. Use [AppLocker](/windows/security/threat-protection/applocker/applocker-overview) to prevent specific users from using Visio and Project.|
 
 ## Additional resources
 
@@ -435,6 +435,3 @@ This section describes the requirements and options for deploying Visio 2013 and
 ### Additional resources for Dynamic Configuration
 
 * [About App-V Dynamic Configuration](appv-dynamic-configuration.md)
-
-
-

@@ -1,6 +1,6 @@
 ---
 title: LoadState Syntax (Windows 10)
-description: LoadState Syntax
+description: Learn about the syntax and usage of the command-line options available when you use the LoadState command.
 ms.assetid: 53d2143b-cbe9-4cfc-8506-36e9d429f6d4
 ms.reviewer: 
 manager: laurawi
@@ -17,9 +17,9 @@ ms.topic: article
 # LoadState Syntax
 
 
-This topic discusses the **LoadState** command syntax and options.
+This topic discusses the **LoadState** command syntax and options available with it.
 
-## In This Topic
+## In this topic
 
 
 [Before You Begin](#before)
@@ -150,7 +150,7 @@ USMT provides the following options to specify what files you want to migrate.
 <td align="left"><p><strong>/i</strong>:[<em>Path</em>]<em>FileName</em></p></td>
 <td align="left"><p><strong>(include)</strong></p>
 <p>Specifies an .xml file that contains rules that define what state to migrate. You can specify this option multiple times to include all of your .xml files (MigApp.xml, MigSys.xml, MigDocs.xml and any custom .xml files that you create). <em>Path</em> can be either a relative or full path. If you do not specify the <em>Path</em> variable, then <em>FileName</em> must be located in the current directory.</p>
-<p>For more information about which files to specify, see the &quot;XML files&quot; section of the <a href="usmt-faq.md" data-raw-source="[Frequently Asked Questions](usmt-faq.md)">Frequently Asked Questions</a> topic.</p></td>
+<p>For more information about which files to specify, see the &quot;XML files&quot; section of the <a href="usmt-faq.yml" data-raw-source="[Frequently Asked Questions](usmt-faq.yml)">Frequently Asked Questions</a> topic.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/config:</strong>[<em>Path</em>]<em>FileName</em></p></td>
@@ -462,7 +462,7 @@ You can use the **/uel**, **/ue** and **/ui** options together to migrate only t
 
 **The /ui option has precedence over the /ue and /uel options.** If a user is specified to be included using the **/ui** option, and also specified to be excluded using either the **/ue** or **/uel** options, the user will be included in the migration. For example, if you specify `/ui:contoso\* /ue:contoso\user1`, then User1 will be migrated, because the **/ui** option takes precedence over the **/ue** option.
 
-**The /uel option takes precedence over the /ue option.** If a user has logged on within the specified time period set by the **/uel** option, that user’s profile will be migrated even if they are excluded by using the **/ue** option. For example, if you specify `/ue:contoso\user1 /uel:14`, the User1 will be migrated if they have logged on to the computer within the last 14 days.
+**The /uel option takes precedence over the /ue option.** If a user has logged on within the specified time period set by the **/uel** option, that user's profile will be migrated even if they are excluded by using the **/ue** option. For example, if you specify `/ue:contoso\user1 /uel:14`, the User1 will be migrated if they have logged on to the computer within the last 14 days.
 
 <table>
 <colgroup>

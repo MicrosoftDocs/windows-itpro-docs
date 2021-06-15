@@ -1,7 +1,7 @@
 ---
 title: What's New in UE-V for Windows 10, version 1607
-description: What's New in UE-V for Windows 10, version 1607
-author: dansimp
+description: Learn about what's new in User Experience Virtualization (UE-V) for Windows 10, including new features and capabilities.
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -60,7 +60,7 @@ Administrators can still define which user-customized application settings can s
 
 With Windows 10, version 1607, users can synchronize Windows application settings and Windows operating system settings to Azure instead of to OneDrive. You can use the Windows 10 enterprise sync functionality together with UE-V for on-premises domain-joined devices only.
 
-In hybrid cloud environments, UE-V can roam Win32 applications on-premises while [Enterprise State Roaming](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/) (ESR) can roam the rest, e.g., Windows and desktop settings, themes, colors, etc., to an Azure cloud installation.
+In hybrid cloud environments, UE-V can roam Win32 applications on-premises while [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview) (ESR) can roam the rest, e.g., Windows and desktop settings, themes, colors, etc., to an Azure cloud installation.
 
 To configure UE-V to roam Windows desktop and application data only, change the following group policies:
 
@@ -68,7 +68,7 @@ To configure UE-V to roam Windows desktop and application data only, change the 
 
 -   Enable “Do not synchronize Windows Apps” group policy
 
-For more information about using UE-V with Enterprise State Roaming, see [Settings and data roaming FAQ](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-faqs/#what-are-the-options-for-roaming-settings-for-existing-windows-desktop-applications).
+For more information about using UE-V with Enterprise State Roaming, see [Settings and data roaming FAQ](/azure/active-directory/devices/enterprise-state-roaming-faqs#what-are-the-options-for-roaming-settings-for-existing-windows-desktop-applications).
 
 Additionally, to enable Windows 10 and UE-V to work together, configure these policy settings in the Microsoft User Experience Virtualization node:
 
@@ -107,7 +107,7 @@ UE-V for Windows 10, version 1607 includes the Microsoft Office 2016 settings lo
 
 > **Note**&nbsp;&nbsp;An Outlook profile must be created on any device on which a user wants to synchronize their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
 
-UE-V works with Office 365 to determine whether Office 2016 settings are roamed by Office 365. If settings are roamed by Office 365, they are not roamed by UE-V. See [Overview of user and roaming settings for Microsoft Office](https://technet.microsoft.com/library/jj733593.aspx) for more information.
+UE-V works with Office 365 to determine whether Office 2016 settings are roamed by Office 365. If settings are roamed by Office 365, they are not roamed by UE-V. See [Overview of user and roaming settings for Microsoft Office](/previous-versions/office/office-2013-resource-kit/jj733593(v=office.15)) for more information.
 
 To enable settings synchronization using UE-V, do one of the following:
 
@@ -131,4 +131,4 @@ UE-V includes Office 2016, Office 2013, and Office 2010 templates. Office 2007 t
 
 - [User Experience Virtualization (UE-V) Release Notes](uev-release-notes-1607.md) for Windows 10, version 1607
 
-- [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md) 
+- [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)

@@ -1,6 +1,6 @@
 ---
 title: RootCATrustedCertificates CSP
-description: RootCATrustedCertificates CSP
+description: Learn how the RootCATrustedCertificates configuration service provider (CSP) enables the enterprise to set the Root Certificate Authority (CA) certificates.
 ms.assetid: F2F25DEB-9DB3-40FB-BC3C-B816CE470D61
 ms.reviewer: 
 manager: dansimp
@@ -21,12 +21,45 @@ The RootCATrustedCertificates configuration service provider enables the enterpr
 > The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
 
  
-The following image shows the RootCATrustedCertificates configuration service provider in tree format.
+The following shows the RootCATrustedCertificates configuration service provider in tree format.
 
 Detailed specification of the principal root nodes:
-
-![rootcacertificate](images/provisioning-csp-rootcacertificate.png)
-
+```
+./Vendor/MSFT
+RootCATrustedCertificates
+----Root
+--------CertHash
+------------EncodedCertificate
+------------IssuedBy
+------------IssuedTo
+------------ValidFrom
+------------ValidTo
+------------TemplateName
+----CA
+--------CertHash
+------------EncodedCertificate
+------------IssuedBy
+------------IssuedTo
+------------ValidFrom
+------------ValidTo
+------------TemplateName
+----TrustedPublisher
+--------CertHash
+------------EncodedCertificate
+------------IssuedBy
+------------IssuedTo
+------------ValidFrom
+------------ValidTo
+------------TemplateName
+----TrustedPeople
+--------CertHash
+------------EncodedCertificate
+------------IssuedBy
+------------IssuedTo
+------------ValidFrom
+------------ValidTo
+------------TemplateName
+```
 <a href="" id="device-or-user"></a>**Device or User**  
 For device certificates, use **./Device/Vendor/MSFT** path and for user certificates use **./User/Vendor/MSFT** path.
 

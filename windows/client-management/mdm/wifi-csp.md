@@ -1,6 +1,6 @@
 ---
 title: WiFi CSP
-description: The WiFi configuration service provider provides the functionality to add or delete Wi-Fi networks on a Windows device. 
+description: The WiFi configuration service provider (CSP) provides the functionality to add or delete Wi-Fi networks on a Windows device. 
 ms.assetid: f927cb5f-9555-4029-838b-03fb68937f06
 ms.reviewer: 
 manager: dansimp
@@ -51,7 +51,7 @@ SSID is the name of network you are connecting to, while Profile name is the nam
 The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="wlanxml"></a>**WlanXML**
-The XML that describes the network configuration and follows the [WLAN\_profile Schema](https://go.microsoft.com/fwlink/p/?LinkId=325608) on MSDN.
+The XML that describes the network configuration and follows the [WLAN\_profile Schema](/windows/win32/nativewifi/wlan-profileschema-schema) on MSDN.
 
 Supported operations are Get, Add, Delete, and Replace.
 
@@ -59,9 +59,9 @@ Value type is chr.
 
 The profile XML must be escaped, as shown in the examples below.
 
-If it exists in the blob, the **keyType** and **protected** elements must come before **keyMaterial**, as shown in the example in [WPA2-Personal Profile Sample](https://go.microsoft.com/fwlink/p/?LinkId=523870).
+If it exists in the blob, the **keyType** and **protected** elements must come before **keyMaterial**, as shown in the example in [WPA2-Personal Profile Sample](/windows/win32/nativewifi/wpa2-personal-profile-sample).
 
-> **Note**  If you need to specify other advanced conditions, such as specifying criteria for certificates that can be used by the Wi-Fi profile, you can do so by specifying this through the EapHostConfig portion of the WlanXML. For more information, see [EAP configuration](https://go.microsoft.com/fwlink/p/?LinkId=618963).
+> **Note**  If you need to specify other advanced conditions, such as specifying criteria for certificates that can be used by the Wi-Fi profile, you can do so by specifying this through the EapHostConfig portion of the WlanXML. For more information, see [EAP configuration](./eap-configuration.md).
 
 The supported operations are Add, Get, Delete, and Replace.
 
@@ -232,11 +232,4 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID ‘MyNetw
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
  
-
- 
-
-
-
-
-
 

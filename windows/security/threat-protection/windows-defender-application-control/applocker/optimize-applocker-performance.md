@@ -4,7 +4,7 @@ description: This topic for IT professionals describes how to optimize AppLocker
 ms.assetid: a20efa20-bc98-40fe-bd81-28ec4905e0f6
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Optimize AppLocker performance
@@ -29,7 +30,7 @@ This topic for IT professionals describes how to optimize AppLocker policy enfor
 
 AppLocker policies can be implemented by organization unit (OU) using Group Policy. If so, your Group Policy infrastructure should be optimized and retested for performance when AppLocker policies are added to existing Group Policy Objects (GPOs) or new GPOs are created, as you do with adding any policies to your GPOs.
 
-For more info, see the [Optimizing Group Policy Performance](https://go.microsoft.com/fwlink/p/?LinkId=163238) article in TechNet Magazine.
+For more info, see the [Optimizing Group Policy Performance](/previous-versions/technet-magazine/cc137720(v=msdn.10)) article in TechNet Magazine.
 
 ### AppLocker rule limitations
 

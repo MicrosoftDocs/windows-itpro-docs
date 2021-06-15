@@ -13,7 +13,6 @@ manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
 audience: itpro
-author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -89,7 +88,7 @@ Windows 10 Enterprise edition has a number of features that are unavailable in 
 <li><p><strong>Improved protection against persistent threats</strong>.&nbsp;&nbsp;Credential Guard works with other technologies (e.g., Device Guard) to help provide further protection against attacks, no matter how persistent.</p></li>
 <li><p><strong>Improved manageability</strong>.&nbsp;&nbsp;Credential Guard can be managed through Group Policy, Windows Management Instrumentation (WMI), or Windows PowerShell.</p></li>
 </ul>
-<p>For more information, see <a href="https://technet.microsoft.com/itpro/windows/keep-secure/credential-guard" data-raw-source="[Protect derived domain credentials with Credential Guard](https://technet.microsoft.com/itpro/windows/keep-secure/credential-guard)">Protect derived domain credentials with Credential Guard</a>.</p>
+<p>For more information, see <a href="/windows/security/identity-protection/credential-guard/credential-guard" data-raw-source="[Protect derived domain credentials with Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)">Protect derived domain credentials with Credential Guard</a>.</p>
 <p></em> <i>Credential Guard requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)</i></p></td>
 </tr>
 <tr class="even">
@@ -101,17 +100,17 @@ Windows 10 Enterprise edition has a number of features that are unavailable in 
 <li><p>Helps protect the Windows system core from vulnerability and zero-day exploits</p></li>
 <li><p>Allows only trusted apps to run</p></li>
 </ul>
-<p>For more information, see <a href="https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies" data-raw-source="[Introduction to Device Guard](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)">Introduction to Device Guard</a>.</p></td>
+<p>For more information, see <a href="/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control" data-raw-source="[Introduction to Device Guard](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)">Introduction to Device Guard</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>AppLocker management</p></td>
 <td align="left"><p>This feature helps IT pros determine which applications and files users can run on a device. The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.</p>
-<p>For more information, see <a href="https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview" data-raw-source="[AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview)">AppLocker</a>.</p></td>
+<p>For more information, see <a href="/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview" data-raw-source="[AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)">AppLocker</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Application Virtualization (App-V)</p></td>
 <td align="left"><p>This feature makes applications available to end users without installing the applications directly on users’ devices. App-V transforms applications into centrally managed services that are never installed and don&#39;t conflict with other applications. This feature also helps ensure that applications are kept current with the latest security updates.</p>
-<p>For more information, see <a href="https://technet.microsoft.com/itpro/windows/manage/appv-getting-started" data-raw-source="[Getting Started with App-V for Windows 10](https://technet.microsoft.com/itpro/windows/manage/appv-getting-started)">Getting Started with App-V for Windows 10</a>.</p></td>
+<p>For more information, see <a href="/windows/application-management/app-v/appv-getting-started" data-raw-source="[Getting Started with App-V for Windows 10](/windows/application-management/app-v/appv-getting-started)">Getting Started with App-V for Windows 10</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>User Experience Virtualization (UE-V)</p></td>
@@ -123,7 +122,7 @@ Windows 10 Enterprise edition has a number of features that are unavailable in 
 <li><p>Create custom templates for your third-party or line-of-business applications</p></li>
 <li><p>Recover settings after hardware replacement or upgrade, or after re-imaging a virtual machine to its initial state</p></li>
 </ul>
-<p>For more information, see <a href="https://technet.microsoft.com/itpro/windows/manage/uev-for-windows" data-raw-source="[User Experience Virtualization (UE-V) for Windows 10 overview](https://technet.microsoft.com/itpro/windows/manage/uev-for-windows)">User Experience Virtualization (UE-V) for Windows 10 overview</a>.</p></td>
+<p>For more information, see <a href="/windows/configuration/ue-v/uev-for-windows" data-raw-source="[User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows)">User Experience Virtualization (UE-V) for Windows 10 overview</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Managed User Experience</p></td>
@@ -167,8 +166,8 @@ You can implement Credential Guard on Windows 10 Enterprise devices by turning 
 
 For more information about implementing Credential Guard, see the following resources:
 
--   [Protect derived domain credentials with Credential Guard](https://technet.microsoft.com/itpro/windows/keep-secure/credential-guard)
--   [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514(v=vs.85).aspx)
+-   [Protect derived domain credentials with Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)
+-   [PC OEM requirements for Device Guard and Credential Guard](/windows-hardware/design/device-experiences/oem-security-considerations)
 -   [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337)
 
 \* *Requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)*
@@ -194,13 +193,13 @@ Now that the devices have Windows 10 Enterprise, you can implement Device Guard
 For more information about implementing Device Guard, see:
 
 - [Planning and getting started on the Device Guard deployment process](https://technet.microsoft.com/itpro/windows/keep-secure/planning-and-getting-started-on-the-device-guard-deployment-process)
-- [Device Guard deployment guide](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide)
+- [Device Guard deployment guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
 
 ### AppLocker management
 
 You can manage AppLocker in Windows 10 Enterprise by using Group Policy. Group Policy requires that the you have AD DS and that the Windows 10 Enterprise devices are joined to the your AD DS domain. You can create AppLocker rules by using Group Policy, and then target those rules to the appropriate devices.
 
-For more information about AppLocker management by using Group Policy, see [AppLocker deployment guide](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-policies-deployment-guide).
+For more information about AppLocker management by using Group Policy, see [AppLocker deployment guide](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-policies-deployment-guide).
 
 ### App-V
 
@@ -214,9 +213,9 @@ App-V requires an App-V server infrastructure to support App-V clients. The prim
 
 For more information about implementing the App-V server, App-V sequencer, and App-V client, see the following resources:
 
--   [Getting Started with App-V for Windows 10](https://technet.microsoft.com/itpro/windows/manage/appv-getting-started)
--   [Deploying the App-V server](https://technet.microsoft.com/itpro/windows/manage/appv-deploying-the-appv-server)
--   [Deploying the App-V Sequencer and Configuring the Client](https://technet.microsoft.com/itpro/windows/manage/appv-deploying-the-appv-sequencer-and-client)
+-   [Getting Started with App-V for Windows 10](/windows/application-management/app-v/appv-getting-started)
+-   [Deploying the App-V server](/windows/application-management/app-v/appv-deploying-the-appv-server)
+-   [Deploying the App-V Sequencer and Configuring the Client](/windows/application-management/app-v/appv-deploying-the-appv-sequencer-and-client)
 
 ### UE-V
 UE-V requires server- and client-side components that you you’ll need to download, activate, and install. These components include:
@@ -233,9 +232,9 @@ UE-V requires server- and client-side components that you you’ll need to downl
 
 For more information about deploying UE-V, see the following resources:
 
-- [User Experience Virtualization (UE-V) for Windows 10 overview](https://technet.microsoft.com/itpro/windows/manage/uev-for-windows)
-- [Get Started with UE-V](https://technet.microsoft.com/itpro/windows/manage/uev-getting-started)
-- [Prepare a UE-V Deployment](https://technet.microsoft.com/itpro/windows/manage/uev-prepare-for-deployment)
+- [User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows)
+- [Get Started with UE-V](/windows/configuration/ue-v/uev-getting-started)
+- [Prepare a UE-V Deployment](/windows/configuration/ue-v/uev-prepare-for-deployment)
 
 ### Managed User Experience
 
@@ -245,16 +244,16 @@ The Managed User Experience feature is a set of Windows 10 Enterprise edition f
 
 | Feature          | Description     |
 |------------------|-----------------|
-| Start layout customization | You can deploy a customized Start layout to users in a domain. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.<br>For more information on these settings, see [Customize Windows 10 Start and taskbar with Group Policy](https://technet.microsoft.com/itpro/windows/manage/customize-windows-10-start-screens-by-using-group-policy). |
-| Unbranded boot             | You can suppress Windows elements that appear when Windows starts or resumes and can suppress the crash screen when Windows encounters an error from which it cannot recover.<br>For more information on these settings, see [Unbranded Boot](https://msdn.microsoft.com/library/windows/hardware/mt571997(v=vs.85).aspx).       |
-| Custom logon               | You can use the Custom Logon feature to suppress Windows 10 UI elements that relate to the Welcome screen and shutdown screen. For example, you can suppress all elements of the Welcome screen UI and provide a custom logon UI. You can also suppress the Blocked Shutdown Resolver (BSDR) screen and automatically end applications while the OS waits for applications to close before a shutdown.<br>For more information on these settings, see [Custom Logon](https://msdn.microsoft.com/library/windows/hardware/mt571990(v=vs.85).aspx).                        |
-| Shell launcher             | Enables Assigned Access to run only a classic Windows app via Shell Launcher to replace the shell.<br>For more information on these settings, see [Shell Launcher](https://msdn.microsoft.com/library/windows/hardware/mt571994(v=vs.85).aspx).     |
-| Keyboard filter            | You can use Keyboard Filter to suppress undesirable key presses or key combinations. Normally, users can use certain Windows key combinations like Ctrl+Alt+Delete or Ctrl+Shift+Tab to control a device by locking the screen or using Task Manager to close a running application. This is not desirable on devices intended for a dedicated purpose.<br>For more information on these settings, see [Keyboard Filter](https://msdn.microsoft.com/library/windows/hardware/mt587088(v=vs.85).aspx).    |
-| Unified write filter       | You can use Unified Write Filter (UWF) on your device to help protect your physical storage media, including most standard writable storage types that are supported by Windows, such as physical hard disks, solid-state drives, internal USB devices, external SATA devices, and so on. You can also use UWF to make read-only media appear to the OS as a writable volume.<br>For more information on these settings, see [Unified Write Filter](https://msdn.microsoft.com/library/windows/hardware/mt572001(v=vs.85).aspx).    |
+| Start layout customization | You can deploy a customized Start layout to users in a domain. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.<br>For more information on these settings, see [Customize Windows 10 Start and taskbar with Group Policy](/windows/configuration/customize-windows-10-start-screens-by-using-group-policy). |
+| Unbranded boot             | You can suppress Windows elements that appear when Windows starts or resumes and can suppress the crash screen when Windows encounters an error from which it cannot recover.<br>For more information on these settings, see [Unbranded Boot](/windows-hardware/customize/enterprise/unbranded-boot).       |
+| Custom logon               | You can use the Custom Logon feature to suppress Windows 10 UI elements that relate to the Welcome screen and shutdown screen. For example, you can suppress all elements of the Welcome screen UI and provide a custom logon UI. You can also suppress the Blocked Shutdown Resolver (BSDR) screen and automatically end applications while the OS waits for applications to close before a shutdown.<br>For more information on these settings, see [Custom Logon](/windows-hardware/customize/enterprise/custom-logon).                        |
+| Shell launcher             | Enables Assigned Access to run only a classic Windows app via Shell Launcher to replace the shell.<br>For more information on these settings, see [Shell Launcher](/windows-hardware/customize/enterprise/shell-launcher).     |
+| Keyboard filter            | You can use Keyboard Filter to suppress undesirable key presses or key combinations. Normally, users can use certain Windows key combinations like Ctrl+Alt+Delete or Ctrl+Shift+Tab to control a device by locking the screen or using Task Manager to close a running application. This is not desirable on devices intended for a dedicated purpose.<br>For more information on these settings, see [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter).    |
+| Unified write filter       | You can use Unified Write Filter (UWF) on your device to help protect your physical storage media, including most standard writable storage types that are supported by Windows, such as physical hard disks, solid-state drives, internal USB devices, external SATA devices, and so on. You can also use UWF to make read-only media appear to the OS as a writable volume.<br>For more information on these settings, see [Unified Write Filter](/windows-hardware/customize/enterprise/unified-write-filter).    |
 
 ## Related topics
 
 [Windows 10 Enterprise Subscription Activation](windows-10-subscription-activation.md)
-<BR>[Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
+<BR>[Connect domain-joined devices to Azure AD for Windows 10 experiences](/azure/active-directory/devices/hybrid-azuread-join-plan)
 <BR>[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)
 <BR>[Windows for business](https://www.microsoft.com/windowsforbusiness/default.aspx)

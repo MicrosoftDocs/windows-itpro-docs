@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # New group policy settings for Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Internet Explorer 11 gives you some new Group Policy settings to help you manage your company's web browser configurations, including:
 
 
@@ -71,5 +74,4 @@ After you've finished updating and deploying your Group Policy, you can use the 
 1.  Open and run the Resultant Set of Policy (RSoP) wizard, specifying the information you want to see.
 
 2.  Open your wizard results in the Group Policy Management Console (GPMC).<p>
-For complete instructions about how to add, open, and use RSoP, see [Use the RSoP Snap-in](https://go.microsoft.com/fwlink/p/?LinkId=395201)
-
+For complete instructions about how to add, open, and use RSoP, see [Use the RSoP Snap-in](/previous-versions/windows/it-pro/windows-server-2003/cc736424(v=ws.10))

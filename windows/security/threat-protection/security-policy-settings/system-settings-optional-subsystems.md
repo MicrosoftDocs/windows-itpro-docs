@@ -1,10 +1,10 @@
 ---
 title: System settings Optional subsystems (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the System settings Optional subsystems security policy setting.
+description: Describes the best practices, location, values, policy management, and security considerations for the System settings Optional subsystems security policy setting.
 ms.assetid: 5cb6519a-4f84-4b45-8072-e2aa8a72fb78
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # System settings: Optional subsystems
@@ -22,7 +23,7 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management and security considerations for the **System settings: Optional subsystems** security policy setting.
+Describes the best practices, location, values, policy management, and security considerations for the **System settings: Optional subsystems** security policy setting.
 
 ## Reference
 

@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -135,7 +135,7 @@ For configuration information about the TPM ownerAuth registry key, see the Grou
 
 <!-- Replace following link if a newer one becomes available for similar content. -->
 
-For information about EAS policies, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287(v=ws.11).aspx).
+For information about EAS policies, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 #### Managed and unmanaged cards
 
@@ -270,7 +270,7 @@ The most common scenario in an organization is reissuing virtual smart cards, wh
 
 The anti-hammering behavior of a TPM virtual smart card is different from that of a physical smart card. A physical smart card blocks itself after the user enters the wrong PIN a few times. A TPM virtual smart card enters a timed delay after the user enters the wrong PIN a few times. If the TPM is in the timed-delay mode, when the user attempts to use the TPM virtual smart card, the user is notified that the card is blocked. Furthermore, if you enable the integrated unlock functionality, the user can see the user interface to unlock the virtual smart card and change the PIN. Unlocking the virtual smart card does not reset the TPM lockout. The user needs to perform an extra step to reset the TPM lockout or wait for the timed delay to expire.
 
-For more information about setting the Allow Integrated Unblock policy, see [Allow Integrated Unblock screen to be displayed at the time of logon](https://docs.microsoft.com/windows/security/identity-protection/smart-cards/smart-card-group-policy-and-registry-settings#allow-integrated-unblock-screen-to-be-displayed-at-the-time-of-logon).
+For more information about setting the Allow Integrated Unblock policy, see [Allow Integrated Unblock screen to be displayed at the time of logon](../smart-cards/smart-card-group-policy-and-registry-settings.md#allow-integrated-unblock-screen-to-be-displayed-at-the-time-of-logon).
 
 ## See also
 

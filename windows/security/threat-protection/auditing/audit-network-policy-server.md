@@ -6,12 +6,13 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Audit Network Policy Server
@@ -28,15 +29,15 @@ This subcategory generates events only if NAS or IAS role is installed on the se
 
 NAP events can be used to help understand the overall health of the network.
 
-**Event volume**: Medium to High on servers that are running [Network Policy Server](https://msdn.microsoft.com/library/cc732912.aspx) (NPS).
+**Event volume**: Medium to High on servers that are running [Network Policy Server](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732912(v=ws.11)) (NPS).
 
 Role-specific subcategories are outside the scope of this document.
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments |
 |-------------------|-----------------|-----------------|------------------|------------------|----------|
-| Domain Controller | IF              | IF              | IF               | IF               | IF – if a server has the [Network Policy Server](https://msdn.microsoft.com/library/cc732912.aspx) (NPS) role installed and you need to monitor access requests and other NPS-related events, enable this subcategory. |
-| Member Server     | IF              | IF              | IF               | IF               | IF – if a server has the [Network Policy Server](https://msdn.microsoft.com/library/cc732912.aspx) (NPS) role installed and you need to monitor access requests and other NPS-related events, enable this subcategory. |
-| Workstation       | No              | No              | No               | No               | [Network Policy Server](https://msdn.microsoft.com/library/cc732912.aspx) (NPS) role cannot be installed on client OS. |
+| Domain Controller | IF              | IF              | IF               | IF               | IF – if a server has the [Network Policy Server](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732912(v=ws.11)) (NPS) role installed and you need to monitor access requests and other NPS-related events, enable this subcategory. |
+| Member Server     | IF              | IF              | IF               | IF               | IF – if a server has the [Network Policy Server](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732912(v=ws.11)) (NPS) role installed and you need to monitor access requests and other NPS-related events, enable this subcategory. |
+| Workstation       | No              | No              | No               | No               | [Network Policy Server](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732912(v=ws.11)) (NPS) role cannot be installed on client OS. |
 
 - 6272: Network Policy Server granted access to a user.
 

@@ -1,6 +1,6 @@
 ---
 title: NetworkProxy CSP
-description: NetworkProxy CSP
+description: Learn how the NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -28,10 +28,18 @@ How the settings work:
 </ol>
 
 
-The following diagram shows the NetworkProxy configuration service provider in tree format.
-
-![networkproxy csp](images/provisioning-csp-networkproxy.png)
-
+The following shows the NetworkProxy configuration service provider in tree format.
+```
+./Vendor/MSFT
+NetworkProxy
+----ProxySettingsPerUser
+----AutoDetect
+----SetupScriptUrl
+----ProxyServer
+--------ProxyAddress
+--------Exceptions
+--------UseProxyForLocalAddresses
+```
 <a href="" id="networkproxy"></a>**./Vendor/MSFT/NetworkProxy**  
 The root node for the NetworkProxy configuration service provider..
 

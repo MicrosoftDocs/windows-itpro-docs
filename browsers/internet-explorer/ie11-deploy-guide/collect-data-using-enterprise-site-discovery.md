@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 # Collect data using Enterprise Site Discovery
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -25,7 +28,7 @@ ms.date: 07/27/2017
 Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7. This inventory information helps you build a list of websites used by your company so you can make more informed decisions about your IE deployments, including figuring out which sites might be at risk or require overhauls during future upgrades.
 
 >**Upgrade Readiness and Windows upgrades**<br>
->You can use Upgrade Readiness to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Readiness to review several site discovery reports. For more information, see [Manage Windows upgrades with Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
+>You can use Upgrade Readiness to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Readiness to review several site discovery reports. For more information, see [Manage Windows upgrades with Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
 
 
 ## Before you begin
@@ -33,7 +36,7 @@ Before you start, you need to make sure you have the following:
 
 -   Latest cumulative security update (for all supported versions of Internet Explorer):
 
-    1.  Go to the [Microsoft Security Bulletin](https://go.microsoft.com/fwlink/p/?LinkID=718223) page, and change the filter to **Windows Internet Explorer 11**.
+    1.  Go to the [Microsoft Security Bulletin](/security-updates/) page, and change the filter to **Windows Internet Explorer 11**.
 
         ![microsoft security bulletin techcenter](images/securitybulletin-filter.png)
 
@@ -148,7 +151,7 @@ You need to set up your computers for data collection by running the provided Po
 
 **To set up Enterprise Site Discovery**
 
-- Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETelemetrySetUp.ps1`. For more info, see [about Execution Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
+- Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETelemetrySetUp.ps1`. For more info, see [about Execution Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 
 ### WMI only: Set up your firewall for WMI data
 If you choose to use WMI as your data output, you need to make sure that your WMI data can travel through your firewall for the domain. If you’re sure, you can skip this section; otherwise, follow these steps:
@@ -477,7 +480,3 @@ You can completely remove the data stored on your employee’s computers.
 ## Related topics
 * [Enterprise Mode Site List Manager (schema v.2) download](https://go.microsoft.com/fwlink/?LinkId=746562)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
- 
-
-
-

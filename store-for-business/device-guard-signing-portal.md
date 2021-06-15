@@ -17,6 +17,23 @@ ms.date: 10/17/2017
 
 # Device Guard signing
 
+> [!IMPORTANT]
+> We are introducing a new version of the Device Guard Signing Service (DGSS) to be more automation friendly. The new version of the service (DGSS v2) is now available. As announced earlier, you will have until June 9, 2021 to transition to DGSS v2. On June 9, 2021, the existing web-based mechanisms for the current version of the DGSS service will be retired and will no longer be available for use. Please make plans to migrate to the new version of the service by June 9, 2021.
+>
+> Following are the major changes we are making to the service: 
+> - The method for consuming the service will change to a more automation-friendly method based on PowerShell cmdlets. These cmdlets are available as a NuGet download, https://www.nuget.org/packages/Microsoft.Acs.Dgss.Client/.
+> - In order to achieve desired isolation, you will be required to get a new CI policy from DGSS v2 (and optionally sign it). 
+> -	DGSS v2 will not have support for downloading leaf certificates used to sign your files (however, the root certificate will still be available to download).  Note that the certificate used to sign a file can be easily extracted from the signed file itself.  As a result, after DGSS v1 is retired, you will no longer be able to download the leaf certificates used to sign your files.
+>
+> The following functionality will be available via these PowerShell cmdlets:
+> - Get a CI policy
+> - Sign a CI policy
+> - Sign a catalog 
+> - Download root cert
+> - Download history of your signing operations 
+>
+> For any questions, please contact us at DGSSMigration@microsoft.com. 
+
 
 **Applies to**
 
@@ -25,7 +42,7 @@ ms.date: 10/17/2017
 
 Device Guard signing is a Device Guard feature that is available in Microsoft Store for Business and Education. It gives admins a single place to sign catalog files and code integrity policies. After admins have created catalog files for unsigned apps and signed the catalog files, they can add the signers to a code integrity policy. You can merge the code integrity policy with your existing policy to include your custom signing certificate. This allows you to trust the catalog files.
 
-Device Guard is a feature set that consists of both hardware and software system integrity hardening features. These features use new virtualization-based security options and the trust-nothing mobile device operating system model. A key feature in this model is called configurable code integrity, which allows your organization to choose exactly which software or trusted software publishers are allowed to run code on your client machines. Also, Device Guard offers organizations a way to sign existing line-of-business (LOB) applications so that they can trust their own code, without the requirement that the application be repackaged. Also, this same method of signing allows organizations to trust individual third-party applications. For more information, see [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+Device Guard is a feature set that consists of both hardware and software system integrity hardening features. These features use new virtualization-based security options and the trust-nothing mobile device operating system model. A key feature in this model is called configurable code integrity, which allows your organization to choose exactly which software or trusted software publishers are allowed to run code on your client machines. Also, Device Guard offers organizations a way to sign existing line-of-business (LOB) applications so that they can trust their own code, without the requirement that the application be repackaged. Also, this same method of signing allows organizations to trust individual third-party applications. For more information, see [Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
 
 ## In this section
 

@@ -1,163 +1,93 @@
-### YamlMime:YamlDocument
+### YamlMime:Landing
 
-documentType: LandingData
-
-title: Microsoft Edge Legacy Group Policy configuration options 
+title: Microsoft Edge Group Legacy Policy configuration options # < 60 chars
+summary: Learn how to deploy and configure group policies in Microsoft Edge Legacy on Windows 10. Some of the features coming to Microsoft Edge Legacy gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. # < 160 chars
 
 metadata:
-
-  document_id: 
-
-  title: Microsoft Edge Group Legacy Policy configuration options  
-
-  description: 
-
-  text: (Note - You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).) Learn how to deploy and configure group policies in Microsoft Edge Legacy on Windows 10. Some of the features coming to Microsoft Edge Legacy gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar.
-  
+  title: Microsoft Edge Group Legacy Policy configuration options # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description:  Learn about interoperability goals and enterprise guidance along with system requirements, language support and frequently asked questions. # Required; article description that is displayed in search results. < 160 chars.
+  ms.prod: microsoft-edge
   keywords: Microsoft Edge Legacy, Windows 10
-
   ms.localizationpriority: medium
-
-  author: shortpatti
-
-  ms.author: pashort
-
-  ms.date: 08/09/2018
-
-  ms.topic: article
-
-  ms.devlang: na
-
-sections:
-
-- title: 
-
-- items:
-
-  - type: markdown
-
-    text: (Note - You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).) Learn about interoperability goals and enterprise guidance along with system requirements, language support and frequently asked questions.
-
-- items:
-
-  - type: list
-
-    style: cards
-
-    className: cardsE
-
-    columns: 3
-
-    items:
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/change-history-for-microsoft-edge
-
-      html: <p>Learn more about the latest group policies and features added to Microsoft Edge.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-
-      title: What's new
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge
-
-      html: <p>Learn about the system requirements and language support for Microsoft Edge.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_overview.svg
-      
-      title: System requirements and supported languages
-
-    - href: https://www.microsoft.com/en-us/WindowsForBusiness/Compare
-
-      html: <p>Learn about the supported features & functionality in each Windows edition.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_config-tools.svg
-      
-      title: Compare Windows 10 Editions  
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/security-privacy-management-gp
-
-      html: <p>Learn how Microsoft Edge helps to defend from increasingly sophisticated and prevalent web-based attacks against Windows.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_security-management.svg
-
-      title: Security & protection
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
-
-      html: <p>Learn how you can use the Enterprise Mode site list for websites and apps that have compatibility problems in Microsoft Edge.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_management.svg
-
-      title: Interoperability & enterprise guidance
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/index
-    
-      html: <p>Learn about the advanced VPN features you can add to improve the security and availability of your VPN connection.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_policy.svg
-
-      title: Group policies & configuration options   
-
-- items:
-
-  - type: list
-
-    style: cards
-
-    className: cardsL
-            
-    items:
-
-    - title: Microsoft Edge resources 
-
-      html: <p><a class="barLink" href="https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge#minimum-system-requirements">Minimum system requirements</a></p>
-
-            <p><a class="barLink" href="https://docs.microsoft.com/microsoft-edge/deploy/about-microsoft-edge#supported-languages">Supported languages</a></p>
-     
-            <p><a class="barLink" href="https://docs.microsoft.com/microsoft-edge/deploy/change-history-for-microsoft-edge">Document change history</a></p>
-
-            <p><a class="barLink" href="https://www.microsoft.com/en-us/WindowsForBusiness/Compare">Compare Windows 10 Editions</a></p>
-
-            <p><a class="barLink" href="https://blogs.windows.com/msedgedev">Microsoft Edge Dev blog</a></p>
-
-            <p><a class="barLink" href="https://twitter.com/MSEdgeDev">Microsoft Edge Dev on Twitter</a></p>
-
-            <p><a class="barLink" href="hhttps://developer.microsoft.com/microsoft-edge/platform/changelog/">Microsoft Edge changelog</a></p>
-
-            <p><a class="barLink" href="https://www.microsoft.com/itpro/microsoft-edge/technical-benefits">Measuring the impact of Microsoft Edge</a></p>
-        
-    - title: IE11 resources 
-
-      html: <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=760644">Deploy Internet Explorer 11 (IE11) - IT Pros</a></p>
-
-            <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=760646">Internet Explorer Administration Kit 11 (IEAK 11)</a></p>
-            
-            <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?linkid=290956">Download Internet Explorer 11</a></p>
-
-    - title: Additional resources 
-
-      html: <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=617921">Group Policy and the Group Policy Management Console (GPMC)</a></p>
-
-            <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=617922">Group Policy and the Local Group Policy Editor</a></p>
-            
-            <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=617923">Group Policy and the Advanced Group Policy Management (AGPM)</a></p>
-
-            <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=617924">Group Policy and Windows PowerShell</a></p>
-
-
-
-
-
-
+  ms.topic: landing-page # Required
+  ms.collection: collection # Optional; Remove if no collection is used.
+  author: shortpatti #Required; your GitHub user alias, with correct capitalization.
+  ms.author: pashort #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/07/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Microsoft Edge
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Documentation for Microsoft Edge version 77 or later
+            url: /DeployEdge
+          - text: Microsoft 365 apps say farewell to Internet Explorer 11 and Windows 10 sunsets Microsoft Edge Legacy
+            url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666
+          - text: Latest group policies and features added to Microsoft Edge
+            url: ./change-history-for-microsoft-edge.md
+      - linkListType: overview
+        links:
+          - text: System requirements and supported languages
+            url: ./about-microsoft-edge.md
+          - text: Compare Windows 10 editions
+            url: https://www.microsoft.com/en-us/WindowsForBusiness/Compare
+          - text: Security & protection
+            url: ./group-policies/security-privacy-management-gp.md
+          - text: Interoperability & enterprise guidance
+            url: ./group-policies/interoperability-enterprise-guidance-gp.md
+          - text: Group policies & configuration options
+            url: ./group-policies/index.yml
+          
+  # Card (optional)
+  - title: Microsoft Edge resources
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Minimum system requirements
+            url: ./about-microsoft-edge.md#minimum-system-requirements
+          - text: Supported languages
+            url: ./about-microsoft-edge.md#supported-languages
+          - text: Document change history
+            url: ./change-history-for-microsoft-edge.md
+          - text: Microsoft Edge Dev blog
+            url: https://blogs.windows.com/msedgedev
+          - text: Microsoft Edge Dev on Twitter
+            url: ./about-microsoft-edge.md#supported-languages
+          - text: Microsoft Edge changelog
+            url: ./change-history-for-microsoft-edge.md
+          - text: Measuring the impact of Microsoft Edge
+            url: https://blogs.windows.com/msedgedev
+  
+   # Card (optional)
+  - title: IE11 resources
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Deploy Internet Explorer 11 (IE11) - IT Pros
+            url: /internet-explorer/ie11-deploy-guide/
+          - text: Internet Explorer Administration Kit 11 (IEAK 11)
+            url: /internet-explorer/ie11-ieak
+      - linkListType: download
+        links:
+          - text: Download Internet Explorer 11
+            url: https://go.microsoft.com/fwlink/p/?linkid=290956
+  
+  # Card (optional)
+  - title: Additional resources
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Group Policy and the Group Policy Management Console (GPMC)
+            url: /internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11
+          - text: Group Policy and the Local Group Policy Editor
+            url: /internet-explorer/ie11-deploy-guide/group-policy-and-local-group-policy-editor-ie11
+          - text: Group Policy and the Advanced Group Policy Management (AGPM)
+            url: /internet-explorer/ie11-deploy-guide/group-policy-and-advanced-group-policy-mgmt-ie11
+          - text: Group Policy and Windows PowerShell
+            url: /internet-explorer/ie11-deploy-guide/group-policy-windows-powershell-ie11

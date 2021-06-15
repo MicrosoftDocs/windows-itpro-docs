@@ -1,6 +1,6 @@
 ---
 title: EnterpriseAppVManagement CSP
-description: Examine the tree format for EnterpriseAppVManagement configuration service provider (CSP) to manage virtual applications in Windows 10 PCs.(Enterprise and Education editions). 
+description: Examine the tree format for EnterpriseAppVManagement CSP to manage virtual applications in Windows 10 PCs.(Enterprise and Education editions). 
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -15,10 +15,35 @@ manager: dansimp
 
 The EnterpriseAppVManagement configuration service provider (CSP) is used to manage virtual applications in Windows 10 PCs (Enterprise and Education editions). This CSP was added in Windows 10, version 1703.
 
-The following diagram shows the EnterpriseAppVManagement configuration service provider in tree format.
-
-![enterpriseappvmanagement csp](images/provisioning-csp-enterpriseappvmanagement.png)
-
+The following shows the EnterpriseAppVManagement configuration service provider in tree format.
+```
+./Vendor/MSFT
+EnterpriseAppVManagement
+----AppVPackageManagement
+--------EnterpriseID
+------------PackageFamilyName
+----------------PackageFullName
+--------------------Name
+--------------------Version
+--------------------Publisher
+--------------------InstallLocation
+--------------------InstallDate
+--------------------Users
+--------------------AppVPackageId
+--------------------AppVVersionId
+--------------------AppVPackageUri
+----AppVPublishing
+--------LastSync
+------------LastError
+------------LastErrorDescription
+------------SyncStatusDescription
+------------SyncProgress
+--------Sync
+------------PublishXML
+----AppVDynamicPolicy
+--------ConfigurationId
+------------Policy
+```
 **./Vendor/MSFT/EnterpriseAppVManagement**  
 <p style="margin-left: 20px">Root node for the EnterpriseAppVManagement configuration service provider.</p>
 
@@ -118,7 +143,7 @@ The following diagram shows the EnterpriseAppVManagement configuration service p
 <p style="margin-left: 20px">Used to perform App-V synchronization.</p>
 
 **AppVPublishing/Sync/PublishXML**  
-<p style="margin-left: 20px">Used to execute the App-V synchronization using the Publishing protocol. For more information about the protocol see <a href="https://msdn.microsoft.com/library/mt739986.aspx" data-raw-source="[[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol](https://msdn.microsoft.com/library/mt739986.aspx)">[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol</a>.</p>
+<p style="margin-left: 20px">Used to execute the App-V synchronization using the Publishing protocol. For more information about the protocol see <a href="/openspecs/windows_protocols/ms-vapr/a05e030d-4fb9-4c8d-984b-971253b62be8" data-raw-source="[[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol](/openspecs/windows_protocols/ms-vapr/a05e030d-4fb9-4c8d-984b-971253b62be8)">[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol</a>.</p>
 <p style="margin-left: 20px">Supported operations are Get, Delete, and Execute.</p>
 
 
@@ -131,4 +156,3 @@ The following diagram shows the EnterpriseAppVManagement configuration service p
 **AppVDynamicPolicy/*ConfigurationId*/Policy**  
 <p style="margin-left: 20px">XML for App-V Policy Configuration documents for publishing packages.</p>
 <p style="margin-left: 20px">Value type is xml. Supported operations are Add, Get, Delete, and Replace.</p>
-

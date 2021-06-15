@@ -17,10 +17,22 @@ ms.date: 06/26/2017
 
 The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs. This CSP was added in Windows 10, version 1511.
 
-The following diagram shows the Reporting configuration service provider in tree format.
-
-![reporting csp diagram](images/provisioning-csp-reporting.png)
-
+The following DDF format shows the Reporting configuration service provider in tree format.
+```
+./Vendor/MSFT
+Reporting
+----EnterpriseDataProtection
+--------RetrieveByTimeRange
+------------Logs
+------------StartTime
+------------StopTime
+------------Type
+--------RetrieveByCount
+------------Logs
+------------LogCount
+------------StartTime
+------------Type
+```
 <a href="" id="reporting"></a>**Reporting**  
 Root node.
 
@@ -40,7 +52,7 @@ Here are the other possible scenarios:
 -   If the StartTime is specified, but the StopTime is not specified, then all that logs that exist from the StartTime are returned.
 
 <a href="" id="retrievebycount"></a>**RetrieveByCount**  
-Interior node for retrieving a specified number of logs from the StartTime. The StartTime is expressed in ISO 8601 format. You can set the number of logs required by setting LogCount and StartTime. It returns the specified number of log or less, if the total number logs is less than LogCount.
+Interior node for retrieving a specified number of logs from the StartTime. The StartTime is expressed in ISO 8601 format. You can set the number of logs required by setting LogCount and StartTime. It returns the specified number of logs or less, if the total number of logs is less than LogCount.
 
 <a href="" id="logs"></a>**Logs**  
 Contains the reporting logs.

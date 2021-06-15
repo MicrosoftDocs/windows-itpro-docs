@@ -1,6 +1,6 @@
 ---
 title: DeviceLock DDF file
-description: DeviceLock DDF file
+description: Learn about the OMA DM device description framework (DDF) for the DeviceLock configuration service provider (CSP).
 ms.assetid: 46a691b9-6350-4987-bfc7-f8b1eece3ad9
 ms.reviewer: 
 manager: dansimp

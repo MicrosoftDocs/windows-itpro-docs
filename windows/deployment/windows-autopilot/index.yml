@@ -1,0 +1,38 @@
+### YamlMime:Landing
+
+title: Windows Autopilot deployment resources and documentation # < 60 chars
+summary: 'Note: Windows Autopilot documentation has moved! A few additional resources will also be available here. See the links on this page for more information.'  # < 160 chars
+
+metadata:
+  title: Windows Autopilot deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about deploying Windows 10 and keeping it up to date in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  services: windows-10
+  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: windows-10
+  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
+  ms.author: greglin #Required; microsoft alias of author; optional team alias.
+  ms.date: 08/05/2020 #Required; mm/dd/yyyy format.
+  localization_priority: medium
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb 
+  # Card
+  - title: Overview
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of Windows Autopilot
+            url:  /mem/autopilot/windows-autopilot
+
+              # Card
+  - title: Tutorials
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Demonstrate Windows Autopilot deployment
+            url: demonstrate-deployment-on-vm.md

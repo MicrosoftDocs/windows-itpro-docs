@@ -1,6 +1,6 @@
 ---
 title: NAP CSP
-description: NAP CSP
+description: Learn how the Network Access Point (NAP) configuration service provider (CSP) is used to manage and query GPRS and CDMA connections.
 ms.assetid: 82f04492-88a6-4afd-af10-a62b8d444d21
 ms.reviewer: 
 manager: dansimp
@@ -23,10 +23,44 @@ The NAP (Network Access Point) Configuration Service Provider is used to manage 
 
 For the NAP CSP, you cannot use the Replace command unless the node already exists.
 
-The following diagram shows the NAP configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
-
-![nap csp (dm)](images/provisioning-csp-nap.png)
-
+The following shows the NAP configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
+```
+./Vendor/MSFT
+NAP
+----*
+--------NapId
+--------Name
+--------Addr
+--------AddrType
+--------IPv4
+------------AutoConfig
+------------LocalAddr
+------------NetMask
+------------Gateway
+------------DNS
+----------------*
+--------------------DNSAddr
+--------IPv6
+------------AutoConfig
+------------LocalAddr
+--------Linger
+--------AuthInfo
+------------AuthType
+------------AuthName
+------------AuthSecret
+------------AuthEntities
+----------------*
+--------------------AuthEntity
+------------SPI
+--------Bearer
+------------BearerType
+--------Ext
+------------Microsoft
+----------------Guid
+----------------AlwaysOn
+----------------Secure
+----------------SecureLevel
+```
 <a href="" id="--vendor-msft-nap"></a>**./Vendor/MSFT/NAP**  
 Root node.
 

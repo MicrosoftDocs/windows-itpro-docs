@@ -2,7 +2,7 @@
 title: 4691(S) Indirect access to an object was requested. (Windows 10)
 description: Describes security event 4691(S) Indirect access to an object was requested.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4691(S): Indirect access to an object was requested.
@@ -28,7 +29,7 @@ ms.author: dansimp
 
 This event indicates that indirect access to an object was requested.
 
-These events are generated for [ALPC Ports](https://msdn.microsoft.com/library/windows/desktop/aa964738(v=vs.85).aspx) access request actions.
+These events are generated for [ALPC Ports](/windows/win32/etw/alpc) access request actions.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -137,4 +138,3 @@ These events are generated for [ALPC Ports](https://msdn.microsoft.com/library/w
 For 4691(S): Indirect access to an object was requested.
 
 -   Typically this event has little to no security relevance and is hard to parse or analyze. There is no recommendation for this event, unless you know exactly what you need to monitor with ALPC Ports.
-

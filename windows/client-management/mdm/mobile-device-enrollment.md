@@ -32,7 +32,7 @@ The enrollment process includes the following steps:
 
 ## Enrollment protocol
 
-There are a number of changes made to the enrollment protocol to better support a variety of scenarios across all platforms. For detailed information about the mobile device enrollment protocol, see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
+There are a number of changes made to the enrollment protocol to better support a variety of scenarios across all platforms. For detailed information about the mobile device enrollment protocol, see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 The enrollment process involves the following steps:
 
@@ -40,7 +40,7 @@ The enrollment process involves the following steps:
    The discovery request is a simple HTTP post call that returns XML over HTTP. The returned XML includes the authentication URL, the management service URL, and the user credential type.
 
 ### Certificate enrollment policy
-The certificate enrollment policy configuration is an implementation of the MS-XCEP protocol, which is described in \[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol Specification. Section 4 of the specification provides an example of the policy request and response. The X.509 Certificate Enrollment Policy Protocol is a minimal messaging protocol that includes a single client request message (GetPolicies) with a matching server response message (GetPoliciesResponse). For more information, see [\[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619345)
+The certificate enrollment policy configuration is an implementation of the MS-XCEP protocol, which is described in \[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol Specification. Section 4 of the specification provides an example of the policy request and response. The X.509 Certificate Enrollment Policy Protocol is a minimal messaging protocol that includes a single client request message (GetPolicies) with a matching server response message (GetPoliciesResponse). For more information, see [\[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol](/openspecs/windows_protocols/ms-xcep/08ec4475-32c2-457d-8c27-5a176660a210)
 
 ### Certificate enrollment
 The certificate enrollment is an implementation of the MS-WSTEP protocol.

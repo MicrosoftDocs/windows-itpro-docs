@@ -4,9 +4,9 @@ description: This section describes the Multivariant settings that you can confi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.reviewer: 
 manager: dansimp
@@ -22,4 +22,4 @@ Use to select a default profile for mobile devices that have multivariant config
 | --- | :---: | :---: | :---: | :---: | :---: |
 | DefaultProfile |   | X |  |  |  |
 
-If you will be adding [multivariant settings](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-multivariant) to your provisioning package,  you can use the **DefaultProfile** setting to specify which variant should be applied by default if OOBE is skipped. In the **DefaultProfile** field, enter the UINAME from your customizations.xml that you want to use as default.
+If you will be adding [multivariant settings](../provisioning-packages/provisioning-multivariant.md) to your provisioning package,  you can use the **DefaultProfile** setting to specify which variant should be applied by default if OOBE is skipped. In the **DefaultProfile** field, enter the UINAME from your customizations.xml that you want to use as default.

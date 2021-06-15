@@ -1,7 +1,7 @@
 ---
 title: Performance Guidance for Application Virtualization (Windows 10)
-description: Performance Guidance for Application Virtualization
-author: lomayor
+description: Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ---
 
 
@@ -457,7 +457,7 @@ The following section contains lists with information about Microsoft documentat
 
 Server Performance Tuning Guidelines for
 
--   [Microsoft Windows Server 2012 R2](https://msdn.microsoft.com/library/windows/hardware/dn529133.aspx)
+-   [Microsoft Windows Server 2012 R2](/previous-versions//dn529133(v=vs.85))
 
 -   [Microsoft Windows Server 2012](https://download.microsoft.com/download/0/0/B/00BE76AF-D340-4759-8ECD-C80BC53B6231/performance-tuning-guidelines-windows-server-2012.docx)
 
@@ -465,23 +465,23 @@ Server Performance Tuning Guidelines for
 
 **Server Roles**
 
--   [Remote Desktop Virtualization Host](https://msdn.microsoft.com/library/windows/hardware/dn567643.aspx)
+-   [Remote Desktop Virtualization Host](/previous-versions//dn567643(v=vs.85))
 
--   [Remote Desktop Session Host](https://msdn.microsoft.com/library/windows/hardware/dn567648.aspx)
+-   [Remote Desktop Session Host](/previous-versions//dn567648(v=vs.85))
 
--   [IIS Relevance: App-V Management, Publishing, Reporting Web Services](https://msdn.microsoft.com/library/windows/hardware/dn567678.aspx)
+-   [IIS Relevance: App-V Management, Publishing, Reporting Web Services](/previous-versions//dn567678(v=vs.85))
 
--   [File Server (SMB) Relevance: If used for App-V Content Storage and Delivery in SCS Mode](https://technet.microsoft.com/library/jj134210.aspx)
+-   [File Server (SMB) Relevance: If used for App-V Content Storage and Delivery in SCS Mode](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134210(v=ws.11))
 
 **Windows Client (Guest OS) Performance Tuning Guidance**
 
 -   [Microsoft Windows 7](https://download.microsoft.com/download/E/5/7/E5783D68-160B-4366-8387-114FC3E45EB4/Performance Tuning Guidelines for Windows 7 Desktop Virtualization v1.9.docx)
 
--   [Optimization Script: (Provided by Microsoft Support)](https://blogs.technet.com/b/jeff_stokes/archive/2012/10/15/the-microsoft-premier-field-engineer-pfe-view-on-virtual-desktop-vdi-density.aspx)
+-   [Optimization Script: (Provided by Microsoft Support)](/archive/blogs/jeff_stokes/the-microsoft-premier-field-engineer-pfe-view-on-virtual-desktop-vdi-density)
 
 -   [Microsoft Windows 8](https://download.microsoft.com/download/6/0/1/601D7797-A063-4FA7-A2E5-74519B57C2B4/Windows_8_VDI_Image_Client_Tuning_Guide.pdf)
 
--   [Optimization Script: (Provided by Microsoft Support)](https://blogs.technet.com/b/jeff_stokes/archive/2013/04/09/hot-off-the-presses-get-it-now-the-windows-8-vdi-optimization-script-courtesy-of-pfe.aspx)
+-   [Optimization Script: (Provided by Microsoft Support)](/archive/blogs/jeff_stokes/hot-off-the-presses-get-it-now-the-windows-8-vdi-optimization-script-courtesy-of-pfe)
 
 ## Sequencing Steps to Optimize Packages for Publishing Performance
 

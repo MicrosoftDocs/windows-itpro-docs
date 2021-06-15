@@ -2,7 +2,7 @@
 title: 4735(S) A security-enabled local group was changed. (Windows 10)
 description: Describes security event 4735(S) A security-enabled local group was changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4735(S): A security-enabled local group was changed.
@@ -126,13 +127,13 @@ From 4735 event you can get information about changes of **sAMAccountName** and 
 
     -   For a local group, this field will contain the name of the computer to which this new group belongs, for example: “Win81”.
 
-    -   [Built-in groups](https://technet.microsoft.com/library/dn169025(v=ws.10).aspx): Builtin
+    -   [Built-in groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dn169025(v=ws.10)): Builtin
 
 **Changed Attributes:**
 
 > **Note**&nbsp;&nbsp;If attribute was not changed it will have “-“ value.
 
-You might see a 4735 event without any changes inside, that is, where all Changed Attributes apear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, this would happen if you change the Description of a group object using the Active Directory Users and Computers administrative console. Also, if the [discretionary access control list](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) (DACL) is changed, a 4735 event will generate, but all attributes will be “-“.
+You might see a 4735 event without any changes inside, that is, where all Changed Attributes apear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, this would happen if you change the Description of a group object using the Active Directory Users and Computers administrative console. Also, if the [discretionary access control list](/windows/win32/secauthz/access-control-lists) (DACL) is changed, a 4735 event will generate, but all attributes will be “-“.
 
 -   **SAM Account Name** \[Type = UnicodeString\]: This is a new name of changed group used to support clients and servers from previous versions of Windows (pre-Windows 2000 logon name). If the value of **sAMAccountName** attribute of group object was changed, you will see the new value here. For example: ServiceDesk. For local groups it is simply a new name of the group, if it was changed.
 
@@ -153,4 +154,3 @@ For 4735(S): A security-enabled local group was changed.
 -   If you need to monitor each time a member is added to a local or domain security group, to see who added the member and when, monitor this event. Typically, this event is used as an informational event, to be reviewed if needed.
 
 -   If your organization has naming conventions for account names, monitor “**Attributes\\SAM Account Name”** for names that don’t comply with the naming conventions.
-

@@ -1,11 +1,11 @@
 ---
 title: Install Windows Configuration Designer (Windows 10)
-description: Learn how to install and run Windows Configuration Designer. 
+description: Learn how to install and use Windows Configuration Designer so you can easily configure devices running Windows 10. 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/16/2017

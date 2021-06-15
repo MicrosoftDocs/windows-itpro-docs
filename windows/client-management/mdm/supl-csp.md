@@ -1,6 +1,6 @@
 ---
 title: SUPL CSP
-description: SUPL CSP
+description: Learn how the SUPL configuration service provider (CSP) is used to configure the location client.
 ms.assetid: afad0120-1126-4fc5-8e7a-64b9f2a5eae1
 ms.reviewer: 
 manager: dansimp
@@ -59,16 +59,44 @@ The SUPL configuration service provider is used to configure the location client
 
 The SUPL or V2 UPL connection will be reconfigured every time the device is rebooted, a new UICC is inserted, or new settings are provisioned by using OMA Client Provisioning, OMA DM, or test tools. When the device is in roaming mode, it reverts to Mobile Station Standalone mode, in which only the built–in Microsoft location components are used.
 
-The following diagram shows the SUPL configuration service provider management object in tree format as used by OMA DM and OMA Client Provisioning.
+The following shows the SUPL configuration service provider management object in tree format as used by OMA DM and OMA Client Provisioning.
 
 > **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application.
 
  
 
-![SUPL csp (dm,cp)](images/provisioning-csp-supl-dmandcp.png)
-
-
-
+```
+./Vendor/MSFT/
+SUPL
+----SUPL1
+--------AppID
+--------Addr
+--------Ext
+------------Microsoft
+----------------Version
+----------------MCCMNPairs
+----------------HighAccPositioningMethod
+----------------LocMasterSwitchDependencyNII
+----------------NIDefaultTimeout 
+----------------ServerAccessInterval
+----------------RootCertificate
+--------------------Name
+--------------------Data
+----------------RootCertificate2
+--------------------Name
+--------------------Data
+----------------RootCertificate3
+--------------------Name
+--------------------Data
+----V2UPL1 
+--------MPC
+--------PDE
+--------PositioningMethod_MR
+--------LocMasterSwitchDependencyNII
+--------ApplicationTypeIndicator_MR
+--------NIDefaultTimeout 
+--------ServerAccessInterval
+```
 <a href="" id="supl1"></a>**SUPL1**  
 Required for SUPL. Defines the account for the SUPL Enabled Terminal (SET) node. Only one SUPL account is supported at a given time.
 

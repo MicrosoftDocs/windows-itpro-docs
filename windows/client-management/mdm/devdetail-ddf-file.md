@@ -1,6 +1,6 @@
 ---
 title: DevDetail DDF file
-description: DevDetail DDF file
+description: Learn about the OMA DM device description framework (DDF) for the DevDetail configuration service provider.
 ms.assetid: 645fc2b5-2d2c-43b1-9058-26bedbe9f00d
 ms.reviewer: 
 manager: dansimp
@@ -176,27 +176,6 @@ The XML below is the current version for this CSP.
           <Get />
         </AccessType>
         <Description>Provide the version of OEM ROM region.</Description>
-        <DFFormat>
-          <chr />
-        </DFFormat>
-        <Occurrence>
-          <One />
-        </Occurrence>
-        <Scope>
-          <Permanent />
-        </Scope>
-        <DFType>
-          <MIME>text/plain</MIME>
-        </DFType>
-      </DFProperties>
-    </Node>
-    <Node>
-      <NodeName>SwV</NodeName>
-      <DFProperties>
-        <AccessType>
-          <Get />
-        </AccessType>
-        <Description>Returns the Windows Phone OS software version.</Description>
         <DFFormat>
           <chr />
         </DFFormat>

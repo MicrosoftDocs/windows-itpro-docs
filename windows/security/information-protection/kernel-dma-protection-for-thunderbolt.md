@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -47,9 +47,9 @@ A simple example would be a PC owner leaves the PC for a quick coffee break, and
 ## How Windows protects against DMA drive-by attacks
 
 Windows leverages the system Input/Output Memory Management Unit (IOMMU) to block external peripherals from starting and performing DMA unless the drivers for these peripherals support memory isolation (such as DMA-remapping). 
-Peripherals with [DMA Remapping compatible drivers](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers) will be automatically enumerated, started and allowed to perform DMA to their assigned memory regions. 
+Peripherals with [DMA Remapping compatible drivers](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers) will be automatically enumerated, started and allowed to perform DMA to their assigned memory regions. 
 
-By default, peripherals with DMA Remapping incompatible drivers will be blocked from starting and performing DMA until an authorized user signs into the system or unlocks the screen. IT administrators can modify the default behavior applied to devices with DMA Remapping incompatible drivers using the [DmaGuard MDM policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies).
+By default, peripherals with DMA Remapping incompatible drivers will be blocked from starting and performing DMA until an authorized user signs into the system or unlocks the screen. IT administrators can modify the default behavior applied to devices with DMA Remapping incompatible drivers using the [DmaGuard MDM policies](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies).
 
 ## User experience
 
@@ -82,16 +82,24 @@ Beginning with Windows 10 version 1809, you can use Security Center to check if 
 ### Using System information
 
 1. Launch MSINFO32.exe in a command prompt, or in the Windows search bar.
+
 2. Check the value of **Kernel DMA Protection**.
+
    ![Kernel DMA protection in System Information](bitlocker/images/kernel-dma-protection.png)
-3. If the current state of **Kernel DMA Protection** is OFF and **Virtualization Technology in Firmware** is NO:
+   
+3. If the current state of **Kernel DMA Protection** is OFF and **Hyper-V - Virtualization Enabled in Firmware** is NO:
+
    - Reboot into BIOS settings
    - Turn on Intel Virtualization Technology.
    - Turn on Intel Virtualization Technology for I/O (VT-d). In Windows 10 version 1803, only Intel VT-d is supported. Other platforms can use DMA attack mitigations described in [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md).
    - Reboot system into Windows 10.
+
+   >[!NOTE]
+   > **Hyper-V - Virtualization Enabled in Firmware** is not available when **A hypervisor has been detected. Features required for Hyper-V will not be displayed.** is displayed. This means that **Hyper-V - Virtualization Enabled in Firmware** is set to Yes and the **Hyper-V** Windows feature is enabled. Enabling Hyper-V virtualization in Firmware (IOMMU) is required to enable **Kernel DMA Protection**, even when the firmware has the flag of "ACPI Kernel DMA Protection Indicators" described in [Kernel DMA Protection (Memory Access Protection) for OEMs](/windows-hardware/design/device-experiences/oem-kernel-dma-protection).
+
 4. If the state of **Kernel DMA Protection** remains Off, then the system does not support this feature. 
 
-For systems that do not support Kernel DMA Protection, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
+   For systems that do not support Kernel DMA Protection, please refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating system](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf) for other means of DMA protection.
 
 ## Frequently asked questions
 
@@ -113,7 +121,13 @@ Please check the driver instance for the device you are testing. Some drivers ma
 
 ### What should I do if the drivers for my PCI or Thunderbolt™ 3 peripherals do not support DMA-remapping?
 
-If the peripherals do have class drivers provided by Windows 10, please use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, please contact your peripheral vendor/driver vendor to update the driver to support [DMA Remapping](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers).
+If the peripherals do have class drivers provided by Windows 10, please use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, please contact your peripheral vendor/driver vendor to update the driver to support [DMA Remapping](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers).
+
+### My system's Kernel DMA Protection is off. Can DMA-remapping for a specific device be turned on?
+
+Yes. DMA remapping for a specific device can be turned on independent from Kernel DMA Protection. For example, if the driver opts in and VT-d (Virtualization Technology for Directed I/O) is turned on, then DMA remapping will be enabled for the devices driver even if Kernel DMA Protection is turned off.
+
+Kernel DMA Protection is a policy that allows or blocks devices to perform DMA, based on their remapping state and capabilities.
 
 ### Do Microsoft drivers support DMA-remapping?
 In Windows 10 1803 and beyond, the Microsoft inbox drivers for USB XHCI (3.x) Controllers, Storage AHCI/SATA Controllers and Storage NVMe Controllers support DMA Remapping.
@@ -127,9 +141,9 @@ The External device enumeration policy controls whether to enumerate external pe
 The policy can be enabled by using: 
 
 - Group Policy: Administrative Templates\System\Kernel DMA Protection\Enumeration policy for external devices incompatible with Kernel DMA Protection
-- Mobile Device Management (MDM): [DmaGuard policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies) 
+- Mobile Device Management (MDM): [DmaGuard policies](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies) 
 
 ## Related topics
 
 - [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md)
-- [DmaGuard MDM policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies) 
+- [DmaGuard MDM policies](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies)

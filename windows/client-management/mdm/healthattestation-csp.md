@@ -1,6 +1,6 @@
 ---
 title: Device HealthAttestation CSP
-description: Device HealthAttestation CSP
+description: Learn how the DHA-CSP enables enterprise IT managers to assess if a device is booted to a trusted and compliant state, and take enterprise policy actions.
 ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
 ms.reviewer: 
 manager: dansimp
@@ -37,7 +37,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 **DHA-Session (Device HealthAttestation session)**
 <p style="margin-left: 20px">The Device HealthAttestation session (DHA-Session) describes the end-to-end communication flow that is performed in one device health attestation session.</p>
 
-<p style="margin-left: 20px">The following list of transactions are performed in one DHA-Session:</p>
+<p style="margin-left: 20px">The following list of transactions is performed in one DHA-Session:</p>
 <ul>
 <li>DHA-CSP and DHA-Service communication:
 <ul><li>DHA-CSP forwards device boot data (DHA-BootData) to DHA-Service</li>
@@ -74,8 +74,8 @@ The following is a list of functions performed by the Device HealthAttestation C
 
 <strong>DHA-Enabled MDM (Device HealthAttestation enabled device management solution)</strong>
 <p style="margin-left: 20px">Device HealthAttestation enabled (DHA-Enabled) device management solution is a device management tool that is integrated with the DHA feature.</p>
-<p style="margin-left: 20px">DHA-Enabled device management solutions enable enterprise IT managers to raise the security protection bar for their managed devices based on hardware (TPM) protected data that can be trusted even if a device is compromized by advanced security threats or running a malicious (jailbroken) operating system.</p>
-<p style="margin-left: 20px">The following list of operations are performed by DHA-Enabled-MDM:</p>
+<p style="margin-left: 20px">DHA-Enabled device management solutions enable enterprise IT managers to raise the security protection bar for their managed devices based on hardware (TPM) protected data that can be trusted even if a device is compromised by advanced security threats or running a malicious (jailbroken) operating system.</p>
+<p style="margin-left: 20px">The following list of operations is performed by DHA-Enabled-MDM</p>
 <ul>
 <li>Enables the DHA feature on a DHA-Enabled device</li>
 <li>Issues device health attestation requests to enrolled/managed devices</li>
@@ -85,7 +85,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 
 <strong>DHA-CSP (Device HealthAttestation Configuration Service Provider)</strong>
 <p style="margin-left: 20px">The Device HealthAttestation Configuration Service Provider (DHA-CSP) uses a device’s TPM and firmware to measure critical security properties of the device’s BIOS and Windows boot, such that even on a system infected with kernel level malware or a rootkit, these properties cannot be spoofed.</p>
-<p style="margin-left: 20px">The following list of operations are performed by DHA-CSP:</p>
+<p style="margin-left: 20px">The following list of operations is performed by DHA-CSP:</p>
 <ul>
 <li>Collects device boot data (DHA-BootData) from a managed device</li>
 <li>Forwards DHA-BootData to Device Health Attestation Service (DHA-Service)</li>
@@ -97,7 +97,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 <p style="margin-left: 20px">Device HealthAttestation Service (DHA-Service) validates the data it receives from DHA-CSP and issues a highly trusted hardware (TPM) protected report (DHA-Report) to DHA-Enabled device management solutions through a tamper resistant and tamper evident communication channel.</p>
 
 <p style="margin-left: 20px">DHA-Service is available in 2 flavors: “DHA-Cloud” and “DHA-Server2016”. DHA-Service supports a variety of implementation scenarios including cloud, on premises, air-gapped, and hybrid scenarios.</p>
-<p style="margin-left: 20px">The following list of operations are performed by DHA-Service:</p>
+<p style="margin-left: 20px">The following list of operations is performed by DHA-Service:</p>
 
 - Receives device boot data (DHA-BootData) from a DHA-Enabled device</li>
 - Forwards DHA-BootData to Device Health Attestation Service (DHA-Service) </li>
@@ -126,7 +126,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 <li>Available in Windows for free</li>
 <li>Running on a high-availability and geo-balanced cloud infrastructure </li>
 <li>Supported by most DHA-Enabled device management solutions as the default device attestation service provider</li>
-<li>Accessible to all enterprise managed devices via following:
+<li>Accessible to all enterprise-managed devices via following:
 <ul>
 <li>FQDN = has.spserv.microsoft.com) port</li>
 <li>Port = 443</li>
@@ -144,7 +144,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 <li>Offered to Windows Server 2016 customer (no added licensing cost for enabling/running DHA-Service) </li>
 <li>Hosted on an enterprise owned and managed server device/hardware</li>
 <li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios</li>
-<li><p>Accessible to all enterprise managed devices via following:</p>
+<li><p>Accessible to all enterprise-managed devices via following:</p>
 <ul>
 <li>FQDN = (enterprise assigned)</li>
 <li>Port = (enterprise assigned)</li>
@@ -155,12 +155,12 @@ The following is a list of functions performed by the Device HealthAttestation C
 <td style="vertical-align:top">The operation cost of running one or more instances of Server 2016 on-premises.</td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">Device Health Attestation - Enterprise Managed Cloud<p>(DHA-EMC)</p></td>
-<td style="vertical-align:top"><p>DHA-EMC refers to an enterprise managed DHA-Service that is running as a virtual host/service on a Windows Server 2016 compatible - enterprise managed cloud service, such as Microsoft Azure.</p>
+<td style="vertical-align:top">Device Health Attestation - Enterprise-Managed Cloud<p>(DHA-EMC)</p></td>
+<td style="vertical-align:top"><p>DHA-EMC refers to an enterprise-managed DHA-Service that is running as a virtual host/service on a Windows Server 2016 compatible - enterprise-managed cloud service, such as Microsoft Azure.</p>
 <ul>
 <li>Offered to Windows Server 2016 customers with no additional licensing cost (no added licensing cost for enabling/running DHA-Service)</li>
 <li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios </li>
-<li><p>Accessible to all enterprise managed devices via following:</p>
+<li><p>Accessible to all enterprise-managed devices via following:</p>
 <ul>
 <li>FQDN = (enterprise assigned)</li>
 <li>Port = (enterprise assigned)</li>
@@ -176,10 +176,22 @@ The following is a list of functions performed by the Device HealthAttestation C
 ## CSP diagram and node descriptions  
 
 
-The following diagram shows the Device HealthAttestation configuration service provider in tree format.  
-
-![healthattestation csp](images/provisioning-csp-healthattestation.png)
-
+The following shows the Device HealthAttestation configuration service provider in tree format.  
+```
+./Vendor/MSFT
+HealthAttestation
+----VerifyHealth
+----Status
+----ForceRetrieve
+----Certificate
+----Nonce
+----CorrelationID
+----HASEndpoint
+----TpmReadyStatus
+----CurrentProtocolVersion
+----PreferredMaxProtocolVersion
+----MaxSupportedProtocolVersion
+```
 <a href="" id="healthattestation"></a>**./Vendor/MSFT/HealthAttestation**  
 <p style="margin-left: 20px">The root node for the device HealthAttestation configuration service provider.</p>
 
@@ -195,10 +207,10 @@ The following diagram shows the Device HealthAttestation configuration service p
 
 <p style="margin-left: 20px">The following list shows some examples of supported values. For the complete list of status see <a href="#device-healthattestation-csp-status-and-error-codes" data-raw-source="[Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes)">Device HealthAttestation CSP status and error codes</a>.</p>
 
--   0 - (HEALTHATTESTATION\_CERT\_RETRI_UNINITIALIZED): DHA-CSP is preparing a request to get a new DHA-EncBlob from DHA-Service
--   1 - (HEALTHATTESTATION\_CERT\_RETRI_REQUESTED): DHA-CSP is waiting for the DHA-Service to respond back, and issue a DHA-EncBlob to the device
+-   0 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_UNINITIALIZED): DHA-CSP is preparing a request to get a new DHA-EncBlob from DHA-Service
+-   1 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_REQUESTED): DHA-CSP is waiting for the DHA-Service to respond back, and issue a DHA-EncBlob to the device
 -   2 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_FAILED): A valid DHA-EncBlob could not be retrieved from the DHA-Service for reasons other than discussed in the DHA error/status codes
--   3 - (HEALTHATTESTATION\_CERT\_RETRI_COMPLETE): DHA-Data is ready for pick up
+-   3 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_COMPLETE): DHA-Data is ready for pick up
 
 <a href="" id="forceretrieve"></a>**ForceRetrieve** (Optional)  
 <p style="margin-left: 20px">Instructs the client to initiate a new request to DHA-Service, and get a new DHA-EncBlob (a summary of the boot state that is issued by DHA-Service). This option should only be used if the MDM server enforces a certificate freshness policy, which needs to force a device to get a fresh encrypted blob from DHA-Service.</p>
@@ -220,7 +232,7 @@ The following diagram shows the Device HealthAttestation configuration service p
 <a href="" id="correlationid"></a>**CorrelationId** (Required)  
 <p style="margin-left: 20px">Identifies a unique device health attestation session. CorrelationId is used to correlate DHA-Service logs with the MDM server events and Client event logs for debug and troubleshooting.</p>
 
-<p style="margin-left: 20px">Value type is integer, the minimum value is - 2,147,483,648 and the maximun value is 2,147,483,647. The supported operation is Get.</p>
+<p style="margin-left: 20px">Value type is integer, the minimum value is - 2,147,483,648 and the maximum value is 2,147,483,647. The supported operation is Get.</p>
 
 <a href="" id="hasendpoint"></a>**HASEndpoint** (Optional)
 <p style="margin-left: 20px">Identifies the fully qualified domain name (FQDN) of the DHA-Service that is assigned to perform attestation. If an FQDN is not assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.</p>
@@ -306,13 +318,13 @@ SSL-Session:
 There are three types of DHA-Service:
 - Device Health Attestation – Cloud (owned and operated by Microsoft)
 - Device Health Attestation – On Premise (owned and operated by an enterprise, runs on Windows Server 2016 on premises)
-- Device Health Attestation - Enterprise Managed Cloud (owned and operated by an enterprise, runs on Windows Server 2016 compatible enterprise managed cloud)
+- Device Health Attestation - Enterprise-Managed Cloud (owned and operated by an enterprise, runs on Windows Server 2016 compatible enterprise-managed cloud)
 
 DHA-Cloud is the default setting. No further action is required if an enterprise is planning to use Microsoft DHA-Cloud as the trusted DHA-Service provider.
 
 For DHA-OnPrem & DHA-EMC scenarios, send a SyncML command to the HASEndpoint node to instruct a managed device to communicate with the enterprise trusted DHA-Service. 
 
-The following example shows a sample call that instructs a managed device to communicate with an enterprise managed DHA-Service.
+The following example shows a sample call that instructs a managed device to communicate with an enterprise-managed DHA-Service.
 
 ```xml
 <Replace>
@@ -359,8 +371,8 @@ The following example shows a sample call that triggers collection and verificat
 
 After the client receives the health attestation request, it sends a response. The following list describes the responses, along with a recommended action to take.
 
-- If the response is HEALTHATTESTATION\_CERT_RETRI_COMPLETE (3) then proceed to the next section.
-- If the response is HEALTHATTESTATION_CERT_RETRI_REQUESTED (1) or HEALTHATTESTATION_CERT_RETRI_UNINITIALIZED (0) wait for an alert, then proceed to the next section.
+- If the response is HEALTHATTESTATION\_CERT_RETRIEVAL_COMPLETE (3) then proceed to the next section.
+- If the response is HEALTHATTESTATION_CERT_RETRIEVAL_REQUESTED (1) or HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED (0) wait for an alert, then proceed to the next section.
 
 Here is a sample alert that is issued by DHA_CSP:
 
@@ -830,7 +842,7 @@ Each of these are described in further detail in the following sections, along w
     <tr>
         <td style="vertical-align:top">3</td>
         <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_COMPLETE</td>
-        <td style="vertical-align:top">This state signifies that the device failed to retrieve DHA-EncBlob from DHA-Server.</td>
+        <td style="vertical-align:top">This state signifies that the device has successfully retrieved DHA-EncBlob from the DHA-Server.</td>
     </tr>
     <tr>
         <td style="vertical-align:top">4</td>

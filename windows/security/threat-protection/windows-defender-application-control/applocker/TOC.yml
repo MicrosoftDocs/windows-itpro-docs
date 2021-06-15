@@ -1,0 +1,186 @@
+- name: AppLocker
+  href: applocker-overview.md
+  items: 
+    - name: Administer AppLocker
+      href: administer-applocker.md
+      items: 
+        - name: Maintain AppLocker policies
+          href: maintain-applocker-policies.md
+        - name: Edit an AppLocker policy
+          href: edit-an-applocker-policy.md
+        - name: Test and update an AppLocker policy
+          href: test-and-update-an-applocker-policy.md
+        - name: Deploy AppLocker policies by using the enforce rules setting
+          href: deploy-applocker-policies-by-using-the-enforce-rules-setting.md
+        - name: Use the AppLocker Windows PowerShell cmdlets
+          href: use-the-applocker-windows-powershell-cmdlets.md
+        - name: Use AppLocker and Software Restriction Policies in the same domain
+          href: use-applocker-and-software-restriction-policies-in-the-same-domain.md
+        - name: Optimize AppLocker performance
+          href: optimize-applocker-performance.md
+        - name: Monitor app usage with AppLocker
+          href: monitor-application-usage-with-applocker.md
+        - name: Manage packaged apps with AppLocker
+          href: manage-packaged-apps-with-applocker.md
+        - name: Working with AppLocker rules
+          href: working-with-applocker-rules.md
+          items: 
+            - name: Create a rule that uses a file hash condition
+              href: create-a-rule-that-uses-a-file-hash-condition.md
+            - name: Create a rule that uses a path condition
+              href: create-a-rule-that-uses-a-path-condition.md
+            - name: Create a rule that uses a publisher condition
+              href: create-a-rule-that-uses-a-publisher-condition.md
+            - name: Create AppLocker default rules
+              href: create-applocker-default-rules.md
+            - name: Add exceptions for an AppLocker rule
+              href: configure-exceptions-for-an-applocker-rule.md
+            - name: Create a rule for packaged apps
+              href: create-a-rule-for-packaged-apps.md
+            - name: Delete an AppLocker rule
+              href: delete-an-applocker-rule.md
+            - name: Edit AppLocker rules
+              href: edit-applocker-rules.md
+            - name: Enable the DLL rule collection
+              href: enable-the-dll-rule-collection.md
+            - name: Enforce AppLocker rules
+              href: enforce-applocker-rules.md
+            - name: Run the Automatically Generate Rules wizard
+              href: run-the-automatically-generate-rules-wizard.md
+        - name: Working with AppLocker policies
+          href: working-with-applocker-policies.md
+          items: 
+            - name: Configure the Application Identity service
+              href: configure-the-application-identity-service.md
+            - name: Configure an AppLocker policy for audit only
+              href: configure-an-applocker-policy-for-audit-only.md
+            - name: Configure an AppLocker policy for enforce rules
+              href: configure-an-applocker-policy-for-enforce-rules.md
+            - name: Display a custom URL message when users try to run a blocked app
+              href: display-a-custom-url-message-when-users-try-to-run-a-blocked-application.md
+            - name: Export an AppLocker policy from a GPO
+              href: export-an-applocker-policy-from-a-gpo.md
+            - name: Export an AppLocker policy to an XML file
+              href: export-an-applocker-policy-to-an-xml-file.md
+            - name: Import an AppLocker policy from another computer
+              href: import-an-applocker-policy-from-another-computer.md
+            - name: Import an AppLocker policy into a GPO
+              href: import-an-applocker-policy-into-a-gpo.md
+            - name: Add rules for packaged apps to existing AppLocker rule-set
+              href: add-rules-for-packaged-apps-to-existing-applocker-rule-set.md
+            - name: Merge AppLocker policies by using Set-ApplockerPolicy
+              href: merge-applocker-policies-by-using-set-applockerpolicy.md
+            - name: Merge AppLocker policies manually
+              href: merge-applocker-policies-manually.md
+            - name: Refresh an AppLocker policy
+              href: refresh-an-applocker-policy.md
+            - name: Test an AppLocker policy by using Test-AppLockerPolicy
+              href: test-an-applocker-policy-by-using-test-applockerpolicy.md
+    - name: AppLocker design guide
+      href: applocker-policies-design-guide.md
+      items: 
+        - name: Understand AppLocker policy design decisions
+          href: understand-applocker-policy-design-decisions.md
+        - name: Determine your application control objectives
+          href: determine-your-application-control-objectives.md
+        - name: Create a list of apps deployed to each business group
+          href: create-list-of-applications-deployed-to-each-business-group.md
+          items: 
+            - name: Document your app list
+              href: document-your-application-list.md
+        - name: Select the types of rules to create
+          href: select-types-of-rules-to-create.md
+          items: 
+            - name: Document your AppLocker rules
+              href: document-your-applocker-rules.md
+        - name: Determine the Group Policy structure and rule enforcement
+          href: determine-group-policy-structure-and-rule-enforcement.md
+          items: 
+            - name: Understand AppLocker enforcement settings
+              href: understand-applocker-enforcement-settings.md
+            - name: Understand AppLocker rules and enforcement setting inheritance in Group Policy
+              href: understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md
+            - name: Document the Group Policy structure and AppLocker rule enforcement
+              href: document-group-policy-structure-and-applocker-rule-enforcement.md
+        - name: Plan for AppLocker policy management
+          href: plan-for-applocker-policy-management.md
+    - name: AppLocker deployment guide
+      href: applocker-policies-deployment-guide.md
+      items: 
+        - name: Understand the AppLocker policy deployment process
+          href: understand-the-applocker-policy-deployment-process.md
+        - name: Requirements for Deploying AppLocker Policies
+          href: requirements-for-deploying-applocker-policies.md
+        - name: Use Software Restriction Policies and AppLocker policies
+          href: using-software-restriction-policies-and-applocker-policies.md
+        - name: Create Your AppLocker policies
+          href: create-your-applocker-policies.md
+          items: 
+            - name: Create Your AppLocker rules
+              href: create-your-applocker-rules.md
+        - name: Deploy the AppLocker policy into production
+          href: deploy-the-applocker-policy-into-production.md
+          items: 
+            - name: Use a reference device to create and maintain AppLocker policies
+              href: use-a-reference-computer-to-create-and-maintain-applocker-policies.md
+            - name: Determine which apps are digitally signed on a reference device
+              href: determine-which-applications-are-digitally-signed-on-a-reference-computer.md
+        - name: Configure the AppLocker reference device
+          href: configure-the-appLocker-reference-device.md
+    - name: AppLocker technical reference
+      href: applocker-technical-reference.md
+      items: 
+        - name: What Is AppLocker?
+          href: what-is-applocker.md
+        - name: Requirements to use AppLocker
+          href: requirements-to-use-applocker.md
+        - name: AppLocker policy use scenarios
+          href: applocker-policy-use-scenarios.md
+        - name: How AppLocker works
+          href: how-applocker-works-techref.md
+          items: 
+            - name: Understanding AppLocker rule behavior
+              href: understanding-applocker-rule-behavior.md
+            - name: Understanding AppLocker rule exceptions
+              href: understanding-applocker-rule-exceptions.md
+            - name: Understanding AppLocker rule collections
+              href: understanding-applocker-rule-collections.md
+            - name: Understanding AppLocker allow and deny actions on rules
+              href: understanding-applocker-allow-and-deny-actions-on-rules.md
+            - name: Understanding AppLocker rule condition types
+              href: understanding-applocker-rule-condition-types.md
+              items: 
+                - name: Understanding the publisher rule condition in AppLocker
+                  href: understanding-the-publisher-rule-condition-in-applocker.md
+                - name: Understanding the path rule condition in AppLocker
+                  href: understanding-the-path-rule-condition-in-applocker.md
+                - name: Understanding the file hash rule condition in AppLocker
+                  href: understanding-the-file-hash-rule-condition-in-applocker.md
+            - name: Understanding AppLocker default rules
+              href: understanding-applocker-default-rules.md
+              items: 
+                - name: Executable rules in AppLocker
+                  href: executable-rules-in-applocker.md
+                - name: Windows Installer rules in AppLocker
+                  href: windows-installer-rules-in-applocker.md
+                - name: Script rules in AppLocker
+                  href: script-rules-in-applocker.md
+                - name: DLL rules in AppLocker
+                  href: dll-rules-in-applocker.md
+                - name: Packaged apps and packaged app installer rules in AppLocker
+                  href: packaged-apps-and-packaged-app-installer-rules-in-applocker.md
+        - name: AppLocker architecture and components
+          href: applocker-architecture-and-components.md
+        - name: AppLocker processes and interactions
+          href: applocker-processes-and-interactions.md
+        - name: AppLocker functions
+          href: applocker-functions.md
+        - name: Security considerations for AppLocker
+          href: security-considerations-for-applocker.md
+        - name: Tools to Use with AppLocker
+          href: tools-to-use-with-applocker.md
+          items: 
+            - name: Using Event Viewer with AppLocker
+              href: using-event-viewer-with-applocker.md
+        - name: AppLocker Settings
+          href: applocker-settings.md

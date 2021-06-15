@@ -4,9 +4,9 @@ description: This section describes the ADMXIngestion settings that you can conf
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
@@ -15,7 +15,7 @@ manager: dansimp
 
 # ADMXIngestion (Windows Configuration Designer reference)
 
-Starting in Windows 10, version 1703, you can import (*ingest*) select Group Policy administrative templates (ADMX files) and configure values for ADMX-backed policies in a provisioning package. To see which types of ADMX-backed policies can be applied, see [Win32 and Desktop Bridge app policy configuration overview](https://docs.microsoft.com/windows/client-management/mdm/win32-and-centennial-app-policy-configuration). 
+Starting in Windows 10, version 1703, you can import (*ingest*) select Group Policy administrative templates (ADMX files) and configure values for ADMX-backed policies in a provisioning package. To see which types of ADMX-backed policies can be applied, see [Win32 and Desktop Bridge app policy configuration overview](/windows/client-management/mdm/win32-and-centennial-app-policy-configuration). 
 
 - The settings under [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy) allow you to set values for policies in the imported ADMX file. 
 - The settings under [ConfigOperations](#configoperations) specify the ADMX file to be imported.
@@ -96,5 +96,5 @@ The next image highlights the specific policy.
 
 ## Related topics
 
-- [Policy configuration service provider (CSP): ADMX-backed policies](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-admx-backed)
-- [Understanding ADMX-backed policies](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/understanding-admx-backed-policies)
+- [Policy configuration service provider (CSP): ADMX-backed policies](/windows/client-management/mdm/policy-configuration-service-provider)
+- [Understanding ADMX-backed policies](/windows/client-management/mdm/understanding-admx-backed-policies)

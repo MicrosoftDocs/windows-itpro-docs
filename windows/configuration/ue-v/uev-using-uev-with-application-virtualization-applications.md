@@ -1,7 +1,7 @@
 ---
 title: Using UE-V with Application Virtualization applications
 description: Learn how to use User Experience Virtualization (UE-V) with Microsoft Application Virtualization (App-V).
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -23,7 +23,6 @@ User Experience Virtualization (UE-V) supports Microsoft Application Virtualizat
 
 ## UE-V settings synchronization for App-V applications
 
-
 UE-V monitors when an application opens by the program name and, optionally, by file version numbers and product version numbers, whether the application is installed locally or virtually by using App-V. When the application starts, UE-V monitors the App-V process, applies any settings that are stored in the user's settings storage path, and then enables the application to start normally. UE-V monitors App-V applications and automatically translates the relevant file and registry paths to the virtualized location as opposed to the physical location outside the App-V computing environment.
 
  **To implement settings synchronization for a virtualized application**
@@ -34,28 +33,11 @@ UE-V monitors when an application opens by the program name and, optionally, by 
 
 3.  Publish the template to the location of your settings template catalog or manually install the template by using the `Register-UEVTemplate` Windows PowerShell cmdlet.
 
-    **Note**  
-    If you publish the newly created template to the settings template catalog, the client does not receive the template until the sync provider updates the settings. To manually start this process, open **Task Scheduler**, expand **Task Scheduler Library**, expand **Microsoft**, and expand **UE-V**. In the results pane, right-click **Template Auto Update**, and then click **Run**.
-
-     
+    > [!NOTE]
+    > If you publish the newly created template to the settings template catalog, the client does not receive the template until the sync provider updates the settings. To manually start this process, open **Task Scheduler**, expand **Task Scheduler Library**, expand **Microsoft**, and expand **UE-V**. In the results pane, right-click **Template Auto Update**, and then click **Run**.
 
 4.  Start the App-V package.
 
-
-
-
-
-
 ## Related topics
 
-
 [Administering UE-V](uev-administering-uev.md)
-
- 
-
- 
-
-
-
-
-

@@ -1,11 +1,11 @@
 ---
 title: New policies for Windows 10 (Windows 10)
-description: Windows 10 includes the following new policies for management.
+description: Learn how Windows 10 includes new policies for management, like Group Policy settings for the Windows system and components.
 ms.assetid: 1F24ABD8-A57A-45EA-BA54-2DA2238C573D
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-keywords: ["MDM", "Group Policy"]
+keywords: ["MDM", "Group Policy", "GP"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,9 +21,12 @@ ms.topic: reference
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
-Windows 10 includes the following new policies for management. [Download the complete set of Administrative Template (.admx) files for Windows 10](https://www.microsoft.com/download/100591).
+As of September 2020 This page will no longer be updated. To find the Group Polices that ship in each version of Windows,  refer to the Group Policy Settings Reference Spreadsheet. You can always locate the most recent version of the Spreadsheet by searching the Internet for "Windows Version + Group Policy Settings Reference".
+
+For example, searching for "Windows 2004" + "Group Policy Settings Reference Spreadsheet" in a web browser will return to you the link to download the Group Policy Settings Reference Spreadsheet for Windows 2004.
+
+The latest [group policy reference for Windows 10 version 2004 is available here](https://www.microsoft.com/download/101451).
 
 ## New Group Policy settings in Windows 10, version 1903
 
@@ -494,7 +497,7 @@ Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, Wind
 
 -   Security
 
--   [VPN](https://go.microsoft.com/fwlink/p/?LinkId=623295) and enterprise Wi-Fi management
+-   [VPN](/windows/security/identity-protection/vpn/vpn-profile-options) and enterprise Wi-Fi management
 
 -   Certificate management
 
@@ -502,11 +505,11 @@ Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, Wind
 
 -   Consumer experiences, such as suggested apps in Start and app tiles from Microsoft dynamically inserted in the default Start menu
 
-Windows 10, version 1703, adds a number of [ADMX-backed policies to MDM](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-admx-backed).
+Windows 10, version 1703, adds a number of [ADMX-backed policies to MDM](./mdm/policy-configuration-service-provider.md).
 
 If you use Microsoft Intune for MDM, you can [configure custom policies](https://go.microsoft.com/fwlink/p/?LinkId=616316) to deploy Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings that can be used to control features on Windows 10. For a list of OMA-URI settings, see [Custom URI settings for Windows 10 devices](https://go.microsoft.com/fwlink/p/?LinkId=616317).
 
-No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=613264). For more information, see the [ActiveSync configuration service provider](https://go.microsoft.com/fwlink/p/?LinkId=618944) technical reference.
+No new [Exchange ActiveSync policies](/exchange/mobile-device-mailbox-policies-exchange-2013-help). For more information, see the [ActiveSync configuration service provider](./mdm/activesync-csp.md) technical reference.
 
 ## Related topics
 
@@ -516,10 +519,6 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 [Changes to Group Policy settings for Start in Windows 10](/windows/configuration/changes-to-start-policies-in-windows-10)
 
-[Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
 
 
  
-
-
-

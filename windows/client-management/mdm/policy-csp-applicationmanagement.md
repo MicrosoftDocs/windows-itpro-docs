@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ApplicationManagement
-description: Policy CSP - ApplicationManagement
+description: Learn about various Policy configuration service provider (CSP) - ApplicationManagement, including SyncML, for Windows 10.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -390,7 +390,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-[!INCLUDE [allow-windows-app-to-share-data-users-shortdesc](../../../browsers/edge/shortdesc/allow-windows-app-to-share-data-users-shortdesc.md)]
+[!INCLUDE [allow-windows-app-to-share-data-users-shortdesc](../includes/allow-windows-app-to-share-data-users-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1102,13 +1102,13 @@ XSD:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
--   7 - Added in Windows 10, version 1909.
--   8 - Added in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 <!--/Policies-->
 

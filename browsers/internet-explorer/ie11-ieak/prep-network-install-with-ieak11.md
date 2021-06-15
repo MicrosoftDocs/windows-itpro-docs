@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Before you install your package over your network using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Employees can install the custom browser package using a network server. However, you must either lower the intranet security level or make the server a trusted site.
 
 **To lower your intranet security**

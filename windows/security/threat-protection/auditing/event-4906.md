@@ -2,7 +2,7 @@
 title: 4906(S) The CrashOnAuditFail value has changed. (Windows 10)
 description: Describes security event 4906(S) The CrashOnAuditFail value has changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4906(S): The CrashOnAuditFail value has changed.
@@ -30,7 +31,7 @@ This event generates every time **CrashOnAuditFail** audit flag value was modifi
 
 This event is always logged regardless of the "Audit Policy Change" sub-category setting.
 
-More information about **CrashOnAuditFail** flag can be found [here](https://technet.microsoft.com/library/cc963220.aspx).
+More information about **CrashOnAuditFail** flag can be found [here](/previous-versions/windows/it-pro/windows-2000-server/cc963220(v=technet.10)).
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -83,4 +84,3 @@ More information about **CrashOnAuditFail** flag can be found [here](https://tec
 For 4906(S): The CrashOnAuditFail value has changed.
 
 -   Any changes of **CrashOnAuditFail** audit flag that are reported by this event must be monitored, and an alert should be triggered. If this change was not planned, investigate the reason for the change.
-

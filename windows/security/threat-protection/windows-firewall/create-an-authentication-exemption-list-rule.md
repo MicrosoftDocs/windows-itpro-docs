@@ -1,10 +1,10 @@
 ---
 title: Create an Authentication Exemption List Rule (Windows 10)
-description: Create an Authentication Exemption List Rule
+description: Learn how to create rules that exempt devices that cannot communicate by using IPSec from the authentication requirements of your isolation policies.
 ms.assetid: 8f6493f3-8527-462a-82c0-fd91a6cb5dd8
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Create an Authentication Exemption List Rule

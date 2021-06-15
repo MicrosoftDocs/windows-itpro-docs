@@ -17,10 +17,12 @@
         "ROBOTS": "INDEX, FOLLOW",
         "audience": "ITPro",
         "breadcrumb_path": "/itpro/windows/breadcrumb/toc.json",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "Win.windows"
-      },
+        "uhfHeaderId": "MSDocsHeader-M365-IT",
+    		"_op_documentIdPathDepotMapping": {
+    			"./": {
+    			  "depot_name": "Win.windows"
+          }
+        },
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
@@ -30,8 +32,7 @@
         "jborsecnik",
         "tiburd",
         "garycentric"
-     ], 
-		}
+     ]
     },
     "externalReference": [
     ],

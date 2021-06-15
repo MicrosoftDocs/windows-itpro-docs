@@ -1,6 +1,6 @@
 ---
 title: Advanced troubleshooting for Windows start-up issues
-description: Learn how to troubleshoot Windows start-up issues.
+description: Learn advanced options for how to troubleshoot common Windows start-up issues, like system crashes and freezes.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting
@@ -46,10 +46,10 @@ To understand the underlying cause of Windows startup problems, it's important t
 
 These articles will walk you through the resources you need to troubleshoot Windows startup issues:
 
-- [Advanced troubleshooting for Windows boot problems](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-boot-problems)
+- [Advanced troubleshooting for Windows boot problems](./advanced-troubleshooting-boot-problems.md)
 
-- [Advanced troubleshooting for Stop error or blue screen error](https://docs.microsoft.com/windows/client-management/troubleshoot-stop-errors)
+- [Advanced troubleshooting for Stop error or blue screen error](./troubleshoot-stop-errors.md)
 
-- [Advanced troubleshooting for Windows-based computer freeze issues](https://docs.microsoft.com/windows/client-management/troubleshoot-windows-freeze)
+- [Advanced troubleshooting for Windows-based computer freeze issues](./troubleshoot-windows-freeze.md)
 
 - [Stop error occurs when you update the in-box Broadcom network adapter driver](troubleshoot-stop-error-on-broadcom-driver-update.md)

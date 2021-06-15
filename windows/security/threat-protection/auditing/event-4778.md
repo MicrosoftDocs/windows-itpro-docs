@@ -2,7 +2,7 @@
 title: 4778(S) A session was reconnected to a Window Station. (Windows 10)
 description: Describes security event 4778(S) A session was reconnected to a Window Station.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4778(S): A session was reconnected to a Window Station.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event is generated when a user reconnects to an existing Terminal Services session, or when a user switches to an existing desktop using [Fast User Switching](https://docs.microsoft.com/windows-hardware/drivers/display/fast-user-switching).
+This event is generated when a user reconnects to an existing Terminal Services session, or when a user switches to an existing desktop using [Fast User Switching](/windows-hardware/drivers/display/fast-user-switching).
 
 This event also generates when user reconnects to virtual host Hyper-V Enhanced Session, for example.
 
@@ -139,4 +140,3 @@ For 4778(S): A session was reconnected to a Window Station.
 -   If a specific computer or device (**Client Name** or **Client Address**) should never connect to this computer (**Computer**), monitor for any event with that **Client Name** or **Client Address**.
 
 -   Check that **Additional Information\\Client Address** is from internal IP addresses list.
-

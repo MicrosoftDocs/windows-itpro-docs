@@ -28,19 +28,19 @@ version of the software.
 
 ## Types of updates
 
-We include information here about a number of different update types you'll hear about, but the two overarching types which you have the most direct control over are *feature updates* and *quality updates*. 
+We include information here about many different update types you'll hear about, but the two overarching types that you have the most direct control over are *feature updates* and *quality updates*. 
 
-- **Feature updates:** Released twice per year, around March and September. Feature updates add new features and functionality to Windows 10. Because they are delivered frequently (rather than every 3-5 years), they are easier to manage.
+- **Feature updates:** Released twice per year, during the first half and second half of each calendar year. Feature updates add new features and functionality to Windows 10. Because they are delivered frequently (rather than every 3-5 years), they are easier to manage.
 - **Quality updates:** Quality updates deliver both security and non-security fixes to Windows 10. Quality updates include security updates, critical updates, servicing stack updates, and driver updates. They are typically released on the second Tuesday of each month, though they can be released at any time. The second-Tuesday releases are the ones that focus on security updates. Quality updates are *cumulative*, so installing the latest quality update is sufficient to get all the available fixes for a specific Windows 10 feature update, including any out-of-band security fixes and any *servicing stack updates* that might have been released previously.
-- **Servicing stack updates:** The "servicing stack" is the code component that actually installs Windows updates. From time to time, the servicing stack itself needs to be updated in order to function smoothly. If you don't install the latest servicing stack update, there's a risk that your device can't be updated with the latest Microsoft security fixes. Servicing stack updates are not necessarily included in *every* monthly quality update, and occasionally are released out of band to address a late-breaking issue. Always install the latest available quality update to catch any servicing stack updates that might have been released. The servicing stack also contains the "component-based servicing stack" (CBS), which is a key underlying component for several elements of Windows deployment, such as DISM, SFC, changing Windows features or roles, and repairing components. The CBS is a small component that typically does not have updates released every month. You can find a list of servicing stack updates at [Latest servicing stack updates](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001). For more detail about servicing stack updates, see [Servicing stack updates](servicing-stack-updates.md).
-- **Driver updates**: These are updates to drivers applicable to your devices. Driver updates are turned off by default in Windows Server Update Services (WSUS), but for cloud-based update methods, you can control whether they are installed or not.
-- **Microsoft product updates:** These are updates for other Microsoft products, such as Office. You can enable or disable Microsoft updates by using policies controlled by various servicing tools.
+- **Servicing stack updates:** The "servicing stack" is the code component that actually installs Windows updates. From time to time, the servicing stack itself needs to be updated in order to function smoothly. If you don't install the latest servicing stack update, there's a risk that your device can't be updated with the latest Microsoft security fixes. Servicing stack updates are not necessarily included in *every* monthly quality update, and occasionally are released out of band to address a late-breaking issue. Always install the latest available quality update to catch any servicing stack updates that might have been released. The servicing stack also contains the "component-based servicing stack" (CBS), which is a key underlying component for several elements of Windows deployment, such as DISM, SFC, changing Windows features or roles, and repairing components. The CBS is a small component that typically does not have updates released every month. You can find a list of servicing stack updates at [Latest servicing stack updates](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV990001). For more detail about servicing stack updates, see [Servicing stack updates](servicing-stack-updates.md).
+- **Driver updates**: These update drivers applicable to your devices. Driver updates are turned off by default in Windows Server Update Services (WSUS), but for cloud-based update methods, you can control whether they are installed or not.
+- **Microsoft product updates:** These update other Microsoft products, such as Office. You can enable or disable Microsoft updates by using policies controlled by various servicing tools.
 
 
 
 ## Servicing channels
 
-Windows 10 offers three servicing channels, each of which offers you a different level of flexibility with how and when updates are delivered to devices. Using the different servicing channels allows you to deploy Windows 10 "as a service" which conceives of deployment as a continual process of updates which roll out across the organization in waves. In this approach, an update is plugged into this process and while it runs, you monitor for anomalies, errors, or user impact and respond as issues arise--without interrupting the entire process.
+Windows 10 offers three servicing channels, each of which offers you a different level of flexibility with how and when updates are delivered to devices. Using the different servicing channels allows you to deploy Windows 10 "as a service," which conceives of deployment as a continual process of updates that roll out across the organization in waves. In this approach, an update is plugged into this process and while it runs, you monitor for anomalies, errors, or user impact and respond as issues arise--without interrupting the entire process.
 
 The first step of controlling when and how devices install updates is assigning them to the appropriate servicing channel. You can assign devices to a particular channel with any of several tools, including Microsoft Endpoint Configuration Manager, Windows Server Update Services (WSUS), and Group Policy settings applied by any of several means. By dividing devices into different populations ("deployment groups" or "rings") you can use servicing channel assignment, followed by other management features such as update deferral policies, to create a phased deployment of any update that allows you to start with a limited pilot deployment for testing before moving to a broad deployment throughout your organization.
 
@@ -54,7 +54,7 @@ In the Semi-annual Channel, feature updates are available as soon as Microsoft r
 
 ### Windows Insider Program for Business
 
-Insider preview releases are made available during the development of the features that will be shipped in the next feature update, enabling organizations to validate new features as well as compatibility with existing apps and infrastructure, providing feedback to Microsoft on any issues encountered. There are actually three options within the Windows Insider Program for Business channel:
+Insider preview releases are made available during the development of the features that will be shipped in the next feature update, enabling organizations to validate new features and compatibility with existing apps and infrastructure, providing feedback to Microsoft on any issues encountered. There are actually three options within the Windows Insider Program for Business channel:
 
 - Windows Insider Fast
 - Windows Insider Slow
@@ -65,7 +65,7 @@ We recommend that you use the Windows Insider Release Preview channel for valida
 
 ### Long-term Servicing Channel
 
-The **Long Term Servicing Channel** is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATMs. Devices on this channel receive new feature releases every two to three years. LTSB releases service a special LTSB edition of Windows 10 and are only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
+The **Long-Term Servicing Channel** is designed to be used only for specialized devices (which typically don't run Office) such as ones that control medical equipment or ATMs. Devices on this channel receive new feature releases every two to three years. LTSB releases service a special LTSB edition of Windows 10 and are only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
 The Semi-Annual Channel is the default servicing channel for all Windows 10 devices except those with the LTSB edition installed. The following table shows the servicing channels available to each Windows 10 edition. 
 
@@ -85,17 +85,17 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 
 Windows Server Update Services (WSUS): you set up a WSUS server, which downloads updates in bulk from Microsoft. Your individual devices then connect to your server to install their updates from there.
 
-You can set up, control, and manage the server and update process with a number of tools:
+You can set up, control, and manage the server and update process with several tools:
 
 - A standalone Windows Server Update Services server operated directly
 - [Configuration Manager](deploy-updates-configmgr.md)
 - Non-Microsoft tools
 
-For more information, see [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
+For more information, see [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
 
 ### Tools for cloud-based update delivery
 
-Your individual devices connect to Microsoft endpoints directly to get the updates. The details of this process (how often devices download updates of various kinds, from which channels, deferrals, and details of the users' experience of installation) are set on devices either with Group Policy or MDM policies, which you can control with any of a number of tools:
+Your individual devices connect to Microsoft endpoints directly to get the updates. The details of this process (how often devices download updates of various kinds, from which channels, deferrals, and details of the users' experience of installation) are set on devices either with Group Policy or MDM policies, which you can control with any of several tools:
 
 - [Group Policy Management Console](waas-wufb-group-policy.md) (Gpmc.msc)
 - [Microsoft Intune](waas-wufb-intune.md)
@@ -104,4 +104,3 @@ Your individual devices connect to Microsoft endpoints directly to get the updat
 ### Hybrid scenarios
 
 It is also possible to combine WSUS-based on-premises update distribution with cloud-based update delivery.
-

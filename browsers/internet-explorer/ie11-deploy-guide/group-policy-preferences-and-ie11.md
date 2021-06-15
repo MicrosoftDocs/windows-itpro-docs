@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Group policy preferences and Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Group Policy preferences are less strict than Group Policy settings, based on:
 
 |    |Group Policy preferences |Group Policy settings |

@@ -17,17 +17,18 @@ ms.date: 05/22/2018
 ---
 
 # Internet Explorer 11 delivery through automatic updates
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Internet Explorer 11 makes browsing the web faster, easier, safer, and more reliable than ever. To help customers become more secure and up-to-date, Microsoft will distribute Internet Explorer 11 through Automatic Updates and the Windows Update and Microsoft Update sites. Internet Explorer 11 will be available for users of the 32-bit and 64-bit versions of Windows 7 Service Pack 1 (SP1), and 64-bit version of Windows Server 2008 R2 SP1. This article provides an overview of the delivery process and options available for IT administrators to control how and when Internet Explorer 11 is deployed to their organization through Automatic Updates.
 
-- [Automatic updates delivery process](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/ie11-delivery-through-automatic-updates#automatic-updates-delivery-process)
+- [Automatic updates delivery process](#automatic-updates-delivery-process)
 
-- [Internet Explorer 11 automatic upgrades](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/ie11-delivery-through-automatic-updates#internet-explorer-11-automatic-upgrades)
+- [Internet Explorer 11 automatic upgrades](#internet-explorer-11-automatic-upgrades)
 
-- [Options for blocking automatic delivery](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/ie11-delivery-through-automatic-updates#options-for-blocking-automatic-delivery)
+- [Options for blocking automatic delivery](#options-for-blocking-automatic-delivery)
 
-- [Availability of Internet Explorer 11](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/ie11-delivery-through-automatic-updates#availability-of-internet-explorer-11)
-
-- [Prevent automatic installation of Internet Explorer 11 with WSUS](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/ie11-delivery-through-automatic-updates#prevent-automatic-installation-of-internet-explorer-11-with-wsus)
+- [Prevent automatic installation of Internet Explorer 11 with WSUS](#prevent-automatic-installation-of-internet-explorer-11-with-wsus)
 
 ## Automatic updates delivery process
 
@@ -53,10 +54,10 @@ If you use Automatic Updates in your company, but want to stop your users from a
 -   **Download and use the Internet Explorer 11 Blocker Toolkit.**  Includes a Group Policy template and a script that permanently blocks Internet Explorer 11 from being offered by Windows Update or Microsoft Update as a high-priority update. You can download this kit from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=40722).
 
     > [!NOTE]
-    > The toolkit won't stop users with local administrator accounts from manually installing Internet Explorer 11. Using this toolkit also prevents your users from receiving automatic upgrades from Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10 to Internet Explorer 11. For more information, see the [Internet Explorer 11 Blocker Toolkit frequently asked questions](../ie11-faq/faq-ie11-blocker-toolkit.md).
+    > The toolkit won't stop users with local administrator accounts from manually installing Internet Explorer 11. Using this toolkit also prevents your users from receiving automatic upgrades from Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10 to Internet Explorer 11. For more information, see the [Internet Explorer 11 Blocker Toolkit frequently asked questions](../ie11-faq/faq-ie11-blocker-toolkit.yml).
 
 -   **Use an update management solution to control update deployment.**
-    If you already use an update management solution, like [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) or the more advanced [Microsoft Endpoint Configuration Manager](https://go.microsoft.com/fwlink/?LinkID=276664), you should use that instead of the Internet Explorer Blocker Toolkit.
+    If you already use an update management solution, like [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) or the more advanced [Microsoft Endpoint Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682129(v=technet.10)), you should use that instead of the Internet Explorer Blocker Toolkit.
 
     > [!NOTE]
     > If you use WSUS to manage updates, and Update Rollups are configured for automatic installation, Internet Explorer will automatically install throughout your company. This scenario is discussed in detail in the Knowledge Base article [here](https://support.microsoft.com/kb/946202).
@@ -65,7 +66,7 @@ Additional information on Internet Explorer 11, including a Readiness Toolkit, t
 
 ## Availability of Internet Explorer 11
 
-Automatic Updates will start to distribute Internet Explorer 11 shortly after the final release of the product and will distribute it through the Microsoft Endpoint Configuration Manager and WSUS.
+Automatic Updates will start to distribute Internet Explorer 11 shortly after the final release of the product and will distribute it through the Microsoft Endpoint Manager and WSUS.
 
 ## Prevent automatic installation of Internet Explorer 11 with WSUS
 
@@ -136,8 +137,8 @@ If you need to reset your Update Rollups packages to auto-approve, do this:
 
 -   [Internet Explorer 11 Blocker Toolkit download](https://www.microsoft.com/download/details.aspx?id=40722)
 
--   [Internet Explorer 11 FAQ for IT pros](https://docs.microsoft.com/internet-explorer/ie11-faq/faq-for-it-pros-ie11)
+-   [Internet Explorer 11 FAQ for IT pros](../ie11-faq/faq-for-it-pros-ie11.yml)
 
--   [Internet Explorer 11 delivery through automatic updates](https://technet.microsoft.com/microsoft-edge/dn449235)
+-   [Internet Explorer 11 delivery through automatic updates]()
 
--   [Internet Explorer 11 deployment guide](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/index)
+-   [Internet Explorer 11 deployment guide](./index.md)

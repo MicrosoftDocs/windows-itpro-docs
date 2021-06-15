@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Fix intranet search problems with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 After upgrading to Internet Explorer 11, you might experience search issues while using your intranet site.
 
 ## Why is my intranet redirecting me to search results?

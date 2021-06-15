@@ -1,5 +1,5 @@
 ---
-title: Configure Hybrid Windows Hello for Business Directory Synch
+title: Configure Hybrid Azure AD joined Windows Hello for Business Directory Synch
 description: Discussing Directory Synchronization in a Hybrid deployment of Windows Hello for Business
 keywords: identity, PIN, biometric, Hello, passport, WHFB, dirsync, connect
 ms.prod: w10
@@ -13,16 +13,16 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 10/23/2017
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
 
-# Configure Hybrid Windows Hello for Business: Directory Synchronization
+# Configure Hybrid Azure AD joined Windows Hello for Business: Directory Synchronization
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Hybrid deployment
--   Key trust
+- Windows 10, version 1703 or later
+- Hybrid deployment
+- Certificate Trust
 
 
 ## Directory Synchronization
@@ -64,6 +64,9 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 
 > [!NOTE]
 > If your AD forest has multiple domains, make sure you add the ADConnect sync service account (ie. MSOL_12121212) into "Enterprise Key Admins" group to gain permission across the domains in the forest.
+
+> [!NOTE]
+> Transfer the PDC emulator FSMO role to a domain controller running Windows Server 2016 (or later) to be able to search the Key Admins and Enterprise Key Admins groups (domain controllers running previous versions of Windows Server cannot translate the security identifier to a name for these groups).
 
 ### Section Review
 

@@ -36,7 +36,7 @@ This issue occurs because VAMT 3.1 does not contain the correct Pkconfig files t
 
 ### Method 1
 
-Do not add the CSVLK to the VAMT 3.1 tool. Instead, use the **slmgr.vbs /ipk \<*CSVLK*>** command to install a CSVLK on a KMS host. In this command, \<*CSVLK*> represents the specific key that you want to install. For more information about how to use the Slmgr.vbs tool, see [Slmgr.vbs options for obtaining volume activation information](https://docs.microsoft.com/windows-server/get-started/activation-slmgr-vbs-options).
+Do not add the CSVLK to the VAMT 3.1 tool. Instead, use the **slmgr.vbs /ipk \<*CSVLK*>** command to install a CSVLK on a KMS host. In this command, \<*CSVLK*> represents the specific key that you want to install. For more information about how to use the Slmgr.vbs tool, see [Slmgr.vbs options for obtaining volume activation information](/windows-server/get-started/activation-slmgr-vbs-options).
 
 ### Method 2
 
@@ -48,13 +48,13 @@ On the KMS host computer, perform the following steps:
 
 1. To extract the contents of the update, run the following command:
 
-   ```cmd
+   ```console
    expand c:\KB3058168\Windows8.1-KB3058168-x64.msu -f:* C:\KB3058168\
    ```
 
 1. To extract the contents of Windows8.1-KB3058168-x64.cab, run the following command:
 
-   ```cmd
+   ```console
    expand c:\KB3058168\Windows8.1-KB3058168-x64.cab -f:pkeyconfig-csvlk.xrm-ms c:\KB3058168
    ```
 

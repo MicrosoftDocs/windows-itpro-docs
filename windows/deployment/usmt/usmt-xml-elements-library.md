@@ -1,6 +1,6 @@
 ---
 title: XML Elements Library (Windows 10)
-description: XML Elements Library
+description: Learn about the XML elements and helper functions that you can employ to author migration .xml files to use with User State Migration Tool (USMT).
 ms.assetid: f5af0f6d-c3bf-4a4c-a0ca-9db7985f954f
 ms.reviewer: 
 manager: laurawi
@@ -17,12 +17,10 @@ ms.topic: article
 # XML Elements Library
 
 
-## Overview
-
 
 This topic describes the XML elements and helper functions that you can employ to author migration .xml files to use with User State Migration Tool (USMT). It is assumed that you understand the basics of XML. .
 
-## In This Topic
+## In this topic
 
 
 In addition to XML elements and helper functions, this topic describes how to specify encoded locations and locations patterns, functions that are for internal USMT use only, and the version tags that you can use with helper functions.
@@ -326,7 +324,7 @@ Syntax:
 ## <a href="" id="component"></a>&lt;component&gt;
 
 
-The &lt;component&gt; element is required in a custom .xml file. This element defines the most basic construct of a migration .xml file. For example, in the MigApp.xml file, "Microsoft® Office 2003" is a component that contains another component, "Microsoft Office Access® 2003". You can use the child elements to define the component.
+The &lt;component&gt; element is required in a custom .xml file. This element defines the most basic construct of a migration .xml file. For example, in the MigApp.xml file, "Microsoft&reg; Office 2003" is a component that contains another component, "Microsoft Office Access&reg; 2003". You can use the child elements to define the component.
 
 A component can be nested inside another component; that is, the &lt;component&gt; element can be a child of the &lt;role&gt; element within the &lt;component&gt; element in two cases: 1) when the parent &lt;component&gt; element is a container or 2) if the child &lt;component&gt; element has the same role as the parent &lt;component&gt; element.
 
@@ -365,7 +363,7 @@ hidden="Yes|No"&gt;
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>You can use the following to group settings, and define the type of the component.</p>
 <ul>
-<li><p><strong>System:</strong> Operating system settings. All Windows® components are defined by this type.</p>
+<li><p><strong>System:</strong> Operating system settings. All Windows&reg; components are defined by this type.</p>
 <p>When type=&quot;System&quot; and defaultSupported=&quot;FALSE&quot; the settings will not migrate unless there is an equivalent component in the .xml files that is specified on the LoadState command line. For example, the default MigSys.xml file contains components with type=&quot;System&quot; and defaultSupported=&quot;FALSE&quot;. If you specify this file on the ScanState command line, you must also specify the file on the LoadState command line for the settings to migrate. This is because the LoadState tool must detect an equivalent component. That is, the component must have the same migration urlid of the .xml file and an identical display name. Otherwise, the LoadState tool will not migrate those settings from the store. This is helpful when the source computer is running Windows XP, and you are migrating to both Windows Vista and Windows XP because you can use the same store for both destination computers.</p></li>
 <li><p><strong>Application:</strong> Settings for an application.</p></li>
 <li><p><strong>Device:</strong> Settings for a device.</p></li>
@@ -556,7 +554,7 @@ For example:
     <tr class="odd">
     <td align="left"><p><em>OSType</em></p></td>
     <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Can be <strong>9x</strong> or <strong>NT</strong>. If <em>OSType</em> does not match the type of the current operating system, then it returns FALSE. For example, if the current operating system is Windows NT-based and <em>OSType</em> is “9x”, the result will be FALSE.</p></td>
+    <td align="left"><p>Can be <strong>9x</strong> or <strong>NT</strong>. If <em>OSType</em> does not match the type of the current operating system, then it returns FALSE. For example, if the current operating system is Windows NT-based and <em>OSType</em> is "9x", the result will be FALSE.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><em>OSVersion</em></p></td>
@@ -598,7 +596,7 @@ For example:
     <tr class="odd">
     <td align="left"><p><em>OSType</em></p></td>
     <td align="left"><p>Yes</p></td>
-    <td align="left"><p>Can be <strong>9x</strong> or <strong>NT</strong>. If <em>OSType</em> does not match the type of the current operating system, then it returns FALSE. For example, if the current operating system is Windows NT-based and <em>OSType</em> is “9x” the result will be FALSE.</p></td>
+    <td align="left"><p>Can be <strong>9x</strong> or <strong>NT</strong>. If <em>OSType</em> does not match the type of the current operating system, then it returns FALSE. For example, if the current operating system is Windows NT-based and <em>OSType</em> is "9x" the result will be FALSE.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><em>OSVersion</em></p></td>
@@ -3084,7 +3082,7 @@ Syntax:
 <tr class="odd">
 <td align="left"><p>urlid</p></td>
 <td align="left"><p>Yes</p></td>
-<td align="left"><p><em>UrlID</em> is a string identifier that uniquely identifies this .xml file. This parameter must be a no-colon-name as defined by the XML Namespaces specification. Each migration .xml file must have a unique urlid. If two migration .xml files have the same urlid, the second .xml file that is specified on the command line will not be processed. For more information about XML Namespaces, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=220938" data-raw-source="[Use XML Namespaces](https://go.microsoft.com/fwlink/p/?LinkId=220938)">Use XML Namespaces</a>.</p></td>
+<td align="left"><p><em>UrlID</em> is a string identifier that uniquely identifies this .xml file. This parameter must be a no-colon-name as defined by the XML Namespaces specification. Each migration .xml file must have a unique urlid. If two migration .xml files have the same urlid, the second .xml file that is specified on the command line will not be processed. For more information about XML Namespaces, see <a href="/previous-versions/windows/desktop/ms754539(v=vs.85)" data-raw-source="[Use XML Namespaces](/previous-versions/windows/desktop/ms754539(v=vs.85))">Use XML Namespaces</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Name</p></td>
@@ -3131,8 +3129,8 @@ This filter helper function can be used to filter the migration of files based o
 <tr class="odd">
 <td align="left"><p>valueToCompare</p></td>
 <td align="left"><p>The value we are comparing. For example:</p>
-<p>Date: “2008/05/15-2005/05/17”, “2008/05/15”</p>
-<p>Size: A numeral with B, KB, MB, or GB at the end. “5GB”, “1KB-1MB”</p></td>
+<p>Date: "2008/05/15-2005/05/17", "2008/05/15"</p>
+<p>Size: A numeral with B, KB, MB, or GB at the end. "5GB", "1KB-1MB"</p></td>
 </tr>
 </tbody>
 </table>
@@ -3464,8 +3462,8 @@ Syntax:
 </ul>
 <p>You can either:</p>
 <ol>
-<li><p>Specify up to three &lt;role&gt; elements within a &lt;component&gt; — one “Binaries” role element, one “Settings” role element and one “Data” role element. These parameters do not change the migration behavior — their only purpose is to help you categorize the settings that you are migrating. You can nest these &lt;role&gt; elements, but each nested element must be of the same role parameter.</p></li>
-<li><p>Specify one “Container” &lt;role&gt; element within a &lt;component&gt; element. In this case, you cannot specify any child &lt;rules&gt; elements, only other &lt;component&gt; elements. And each child &lt;component&gt; element must have the same type as that of parent &lt;component&gt; element. For example:</p></li>
+<li><p>Specify up to three &lt;role&gt; elements within a &lt;component&gt; — one "Binaries" role element, one "Settings" role element and one "Data" role element. These parameters do not change the migration behavior — their only purpose is to help you categorize the settings that you are migrating. You can nest these &lt;role&gt; elements, but each nested element must be of the same role parameter.</p></li>
+<li><p>Specify one "Container" &lt;role&gt; element within a &lt;component&gt; element. In this case, you cannot specify any child &lt;rules&gt; elements, only other &lt;component&gt; elements. And each child &lt;component&gt; element must have the same type as that of parent &lt;component&gt; element. For example:</p></li>
 </ol>
 <pre class="syntax" space="preserve"><code>&lt;component context=&quot;UserAndSystem&quot; type=&quot;Application&quot;&gt;
   &lt;displayName _locID=&quot;migapp.msoffice2003&quot;&gt;Microsoft Office 2003&lt;/displayName&gt; 
@@ -3846,7 +3844,7 @@ See the last component in the MigUser.xml file for an example of this element.
 ~~~
 **Example:**
 
-If GenerateUserPattens('File','%userprofile% \[\*.doc\]','FALSE') is called while USMT is processing user A, then this function will only generate patterns for users B and C. You can use this helper function to build complex rules. For example, to migrate all .doc files from the source computer — but if user X is not migrated, then do not migrate any of the .doc files from user X’s profile.
+If GenerateUserPattens('File','%userprofile% \[\*.doc\]','FALSE') is called while USMT is processing user A, then this function will only generate patterns for users B and C. You can use this helper function to build complex rules. For example, to migrate all .doc files from the source computer — but if user X is not migrated, then do not migrate any of the .doc files from user X's profile.
 
 The following is example code for this scenario. The first &lt;rules&gt; element migrates all.doc files on the source computer with the exception of those inside C:\\Documents and Settings. The second &lt;rules&gt; elements will migrate all .doc files from C:\\Documents and Settings with the exception of the .doc files in the profiles of the other users. Because the second &lt;rules&gt; element will be processed in each migrated user context, the end result will be the desired behavior. The end result is the one we expected.
 
@@ -3977,7 +3975,7 @@ The following scripts have no return value. You can use the following errors wit
          </processing>
     ```
 
--   **StartService (ServiceName, OptionalParam1, OptionalParam2,…).** Starts the service identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service. The optional parameters, if any, will be passed to the StartService API. For more information, see [this Microsoft Web site](https://go.microsoft.com/fwlink/p/?LinkId=267898).
+-   **StartService (ServiceName, OptionalParam1, OptionalParam2,…).** Starts the service identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service. The optional parameters, if any, will be passed to the StartService API. For more information, see [this Microsoft Web site](/windows/win32/api/winsvc/nf-winsvc-startservicea).
 
 -   **StopService (ServiceName)**. Stops the service that is identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service.
 
@@ -4103,12 +4101,12 @@ Syntax:
 <tr class="odd">
 <td align="left"><p>name</p></td>
 <td align="left"><p>Yes</p></td>
-<td align="left"><p><em>ID</em> is a string value that is the name used to reference the environment variable. We recommend that <em>ID</em> start with the component’s name to avoid namespace collisions. For example, if your component’s name is MyComponent, and you want a variable that is your component’s install path, you could specify <code>MyComponent.InstallPath</code>.</p></td>
+<td align="left"><p><em>ID</em> is a string value that is the name used to reference the environment variable. We recommend that <em>ID</em> start with the component's name to avoid namespace collisions. For example, if your component's name is MyComponent, and you want a variable that is your component's install path, you could specify <code>MyComponent.InstallPath</code>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>remap</p></td>
 <td align="left"><p>No, default = FALSE</p></td>
-<td align="left"><p>Specifies whether to evaluate this environment variable as a remapping environment variable. Objects that are located in a path that is underneath this environment variable’s value are automatically moved to where the environment variable points on the destination computer.</p></td>
+<td align="left"><p>Specifies whether to evaluate this environment variable as a remapping environment variable. Objects that are located in a path that is underneath this environment variable's value are automatically moved to where the environment variable points on the destination computer.</p></td>
 </tr>
 </tbody>
 </table>
@@ -4227,38 +4225,29 @@ The following functions are for internal USMT use only. Do not use them in an .x
 
 You can use the following version tags with various helper functions:
 
--   “CompanyName”
+-   "CompanyName"
 
--   “FileDescription”
+-   "FileDescription"
 
--   “FileVersion”
+-   "FileVersion"
 
--   “InternalName”
+-   "InternalName"
 
--   “LegalCopyright”
+-   "LegalCopyright"
 
--   “OriginalFilename”
+-   "OriginalFilename"
 
--   “ProductName”
+-   "ProductName"
 
--   “ProductVersion”
+-   "ProductVersion"
 
 The following version tags contain values that can be compared:
 
--   “FileVersion”
+-   "FileVersion"
 
--   “ProductVersion”
+-   "ProductVersion"
 
 ## Related topics
 
 
 [USMT XML Reference](usmt-xml-reference.md)
-
-
-
-
-
-
-
-
-

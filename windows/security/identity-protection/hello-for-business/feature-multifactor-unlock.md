@@ -1,6 +1,6 @@
 ---
-title: Multifactor Unlock
-description: Multifactor Unlock
+title: Multi-factor Unlock
+description: Learn how Windows 10 offers multifactor device unlock by extending Windows Hello with trusted signals. 
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, multi, factor, multifactor, multi-factor
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 03/20/2018
 ms.reviewer: 
 ---
-# Multifactor Unlock
+# Multi-factor Unlock
 
 **Applies to:**
 -   Windows 10
@@ -83,15 +83,17 @@ For example, if you include the PIN and fingerprint credential providers in both
 The **Signal rules for device unlock** setting contains the rules the Trusted Signal credential provider uses to satisfy unlocking the device.
 
 ### Rule element
-You represent signal rules in XML.  Each signal rule has an starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported schema version is 1.0.<br>
+You represent signal rules in XML.  Each signal rule has an starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported schema version is 1.0.
+
 **Example**
-```
+```xml
 <rule schemaVersion="1.0">
 </rule>
 ```
 
 ### Signal element
-Each rule element has a **signal** element.  All signal elements have a **type** element and value.  Windows 10, version 1709 supports the **ipConfig** and **bluetooth** type values.<br>
+Each rule element has a **signal** element.  All signal elements have a **type** element and value.  Windows 10, version 1709 supports the **ipConfig** and **bluetooth** type values.
+
 
 |Attribute|Value|
 |---------|-----|
@@ -109,8 +111,8 @@ You define the bluetooth signal with additional attributes in the signal element
 |rssiMin|"*number*"|no|
 |rssiMaxDelta|"*number*"|no|
 
-Example:
-```
+**Example**
+```xml
 <rule schemaVersion="1.0">
     <signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
 </rule>
@@ -142,63 +144,76 @@ RSSI measurements are relative and lower as the bluetooth signals between the tw
 You define IP configuration signals using one or more ipConfiguration elements.  Each element has a string value.  IpConfiguration elements do not have attributes or nested elements.
 
 ##### IPv4Prefix
-The IPv4 network prefix represented in Internet standard dotted-decimal notation. A network prefix that uses the Classless Inter-Domain Routing (CIDR) notation is required as part of the network string. A network port must not be present in the network string.  A **signal** element may only contain one **ipv4Prefix** element.<br>
+The IPv4 network prefix represented in Internet standard dotted-decimal notation. A network prefix that uses the Classless Inter-Domain Routing (CIDR) notation is required as part of the network string. A network port must not be present in the network string.  A **signal** element may only contain one **ipv4Prefix** element.
+
 **Example**
-```
+```xml
 <ipv4Prefix>192.168.100.0/24</ipv4Prefix>
 ```
+
 The assigned IPv4 addresses in the range of 192.168.100.1 to 192.168.100.254 match this signal configuration.
 
 ##### IPv4Gateway
-The IPv4 network gateway represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv4Gateway** element.<br>
+The IPv4 network gateway represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv4Gateway** element.
+
 **Example**
-```
+```xml
 <ipv4Gateway>192.168.100.10</ipv4Gateway>
 ```
+
 ##### IPv4DhcpServer
-The IPv4 DHCP server represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv4DhcpServer** element.<br>
+The IPv4 DHCP server represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv4DhcpServer** element.
+
 **Example**
-```
+```xml
 <ipv4DhcpServer>192.168.100.10</ipv4DhcpServer>
 ```
+
 ##### IPv4DnsServer
-The IPv4 DNS server represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.The **signal** element may contain one or more **ipv4DnsServer** elements.<br>
+The IPv4 DNS server represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.The **signal** element may contain one or more **ipv4DnsServer** elements.
+
 **Example:**
-```
+```xml
 <ipv4DnsServer>192.168.100.10</ipv4DnsServer>
 ```
 
 ##### IPv6Prefix
-The IPv6 network prefix represented in IPv6 network using Internet standard hexadecimal encoding. A network prefix in CIDR notation is required as part of the network string. A network port or scope ID must not be present in the network string.  A **signal** element may only contain one **ipv6Prefix** element.<br>
+The IPv6 network prefix represented in IPv6 network using Internet standard hexadecimal encoding. A network prefix in CIDR notation is required as part of the network string. A network port or scope ID must not be present in the network string.  A **signal** element may only contain one **ipv6Prefix** element.
+
 **Example** 
-```
+```xml
 <ipv6Prefix>21DA:D3::/48</ipv6Prefix>
 ```
 
 ##### IPv6Gateway
-The IPv6 network gateway represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv6Gateway** element.<br>
+The IPv6 network gateway represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv6Gateway** element.
+
 **Example** 
-```
+```xml
 <ipv6Gateway>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6Gateway>
 ```
 
 ##### IPv6DhcpServer
-The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv6DhcpServer** element.<br>
+The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv6DhcpServer** element.
+
 **Example**
-```
+```xml
 <ipv6DhcpServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DhcpServer
 ```
 
 ##### IPv6DnsServer
-The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. The **signal** element may contain one or more **ipv6DnsServer** elements.<br>
+The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. The **signal** element may contain one or more **ipv6DnsServer** elements.
+
 **Example**
-```
+```xml
 <ipv6DnsServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DnsServer>
 ```
+
 ##### dnsSuffix
-The fully qualified domain name of your organization's internal DNS suffix where any part of the fully qualified domain name in this setting exists in the computer's primary DNS suffix.  The **signal** element may contain one or more **dnsSuffix** elements.<br>
+The fully qualified domain name of your organization's internal DNS suffix where any part of the fully qualified domain name in this setting exists in the computer's primary DNS suffix.  The **signal** element may contain one or more **dnsSuffix** elements.
+
 **Example**
-```
+```xml
 <dnsSuffix>corp.contoso.com</dnsSuffix>
 ```
 
@@ -210,15 +225,17 @@ The fully qualified domain name of your organization's internal DNS suffix where
 You define Wi-Fi signals using one or more wifi elements.  Each element has a string value.  Wifi elements do not have attributes or nested elements.
 
 #### SSID
-Contains the service set identifier (SSID) of a wireless network.  The SSID is the name of the wireless network.  The SSID element is required.<br>
-```
+Contains the service set identifier (SSID) of a wireless network.  The SSID is the name of the wireless network.  The SSID element is required.
+
+```xml
 <ssid>corpnetwifi</ssid>
 ```
 
 #### BSSID
-Contains the basic service set identifier (BSSID) of a wireless access point.  the BSSID is the mac address of the wireless access point.  The BSSID element is optional.<br>
+Contains the basic service set identifier (BSSID) of a wireless access point.  the BSSID is the mac address of the wireless access point.  The BSSID element is optional.
+
 **Example**
-```
+```xml
 <bssid>12-ab-34-ff-e5-46</bssid>
 ```
 
@@ -235,19 +252,22 @@ Contains the type of security the client uses when connecting to the wireless ne
 |WPA2-Enterprise| The wireless network is protected using Wi-Fi Protected Access 2-Enterprise.|
 
 **Example**
-```
+```xml
 <security>WPA2-Enterprise</security> 
 ```
 #### TrustedRootCA
-Contains the thumbprint of the trusted root certificate of the wireless network. This may be any valid trusted root certificate. The value is represented as hexadecimal string where each byte in the string is separated by a single space.  This element is optional.<br>
+Contains the thumbprint of the trusted root certificate of the wireless network. This may be any valid trusted root certificate. The value is represented as hexadecimal string where each byte in the string is separated by a single space.  This element is optional.
+
 **Example**
-```
+```xml
 <trustedRootCA>a2 91 34 aa 22 3a a2 3a 4a 78 a2 aa 75 a2 34 2a 3a 11 4a aa</trustedRootCA>
 ```
+
 #### Sig_quality
-Contains numeric value ranging from 0 to 100 to represent the wireless network's signal strength needed to be considered a trusted signal.<br>
+Contains numeric value ranging from 0 to 100 to represent the wireless network's signal strength needed to be considered a trusted signal.
+
 **Example**
-```
+```xml
 <sig_quality>80</sig_quality>
 ```
  
@@ -257,7 +277,8 @@ These examples are wrapped for readability.  Once properly formatted, the entire
 
 #### Example 1
 This example configures an IPConfig signal type using Ipv4Prefix, Ipv4DnsServer, and DnsSuffix elements.
-```
+
+```xml
 <rule schemaVersion="1.0"> 
     <signal type="ipConfig"> 
         <ipv4Prefix>10.10.10.0/24</ipv4Prefix>
@@ -271,10 +292,11 @@ This example configures an IPConfig signal type using Ipv4Prefix, Ipv4DnsServer,
 
 #### Example 2
 This example configures an IpConfig signal type using a dnsSuffix element and a bluetooth signal for phones.  This configuration is wrapped for reading.  Once properly formatted, the entire XML contents must be a single line.  This example implies that either the ipconfig **or** the Bluetooth rule must evaluate to true, for the resulting signal evaluation to be true.
+
 >[!NOTE]
 >Separate each rule element using a comma.
 
-```
+```xml
 <rule schemaVersion="1.0"> 
 	<signal type="ipConfig"> 
 	    <dnsSuffix>corp.contoso.com</dnsSuffix> 
@@ -284,9 +306,11 @@ This example configures an IpConfig signal type using a dnsSuffix element and a 
 	<signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
 </rule>
 ```
+
 #### Example 3
 This example configures the same as example 2 using compounding And elements.  This example implies that the ipconfig **and** the Bluetooth rule must evaluate to true, for the resulting signal evaluation to be true.
-```
+
+```xml
 <rule schemaVersion="1.0">
 <and>
   <signal type="ipConfig">
@@ -296,9 +320,11 @@ This example configures the same as example 2 using compounding And elements.  T
 </and>
 </rule>
 ```
+
 #### Example 4 
 This example configures Wi-Fi as a trusted signal (Windows 10, version 1803)
-```
+
+```xml
 <rule schemaVersion="1.0"> 
   <signal type="wifi"> 
     <ssid>contoso</ssid> 
@@ -330,24 +356,36 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 > * PIN **must** be in at least one of the groups
 > * Trusted signals **must** be combined with another credential provider
 > * You cannot use the same unlock factor to satisfy both categories. Therefore, if you include any credential provider in both categories, it means it can satisfy either category, but not both.
-> * The multifactor unlock feature is also supported via the Passport for Work CSP. See [Passport For Work CSP](https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp) for more information.
+> * The multifactor unlock feature is also supported via the Passport for Work CSP. See [Passport For Work CSP](/windows/client-management/mdm/passportforwork-csp) for more information.
 
-1. Start the **Group Policy Management Console** (gpmc.msc)
+1. Start the **Group Policy Management Console** (gpmc.msc).
+
 2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
-3. Right-click **Group Policy object** and select **New**.
-4. Type *Multifactor Unlock* in the name box and click **OK**.
-5. In the content pane, right-click the **Multifactor Unlock** Group Policy object and click **Edit**.
-6. In the navigation pane, expand **Policies** under **Computer Configuration**.
-7. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.<br>
-   ![Group Policy Editor](images/multifactorUnlock/gpme.png)
-8. In the content pane, double-click **Configure device unlock factors**. Click **Enable**.  The **Options** section populates the policy setting with default values.<br>
-   ![Multifactor Policy Setting](images/multifactorUnlock/gp-setting.png)
-9. Configure first and second unlock factors using the information in the [Configure Unlock Factors](#configuring-unlock-factors) section.
-10. If using trusted signals, configure the trusted signals used by the unlock factor using the information in the [Configure Signal Rules for the Trusted Signal Credential Provider](#configure-signal-rules-for-the-trusted-signal-credential-provider) section.
-11. Click **Ok** to close the **Group Policy Management Editor**. Use the **Group Policy Management Console** to deploy the newly created Group Policy object to your organization's computers.
 
-    ## Troubleshooting
-    Multi-factor unlock writes events to event log under **Application and Services Logs\Microsoft\Windows\HelloForBusiness** with the category name **Device Unlock**.
+3. Right-click **Group Policy object** and select **New**.
+
+4. Type *Multifactor Unlock* in the name box and click **OK**.
+
+5. In the content pane, right-click the **Multifactor Unlock** Group Policy object and click **Edit**.
+
+6. In the navigation pane, expand **Policies** under **Computer Configuration**.
+
+7. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.
+
+   ![Group Policy Editor](images/multifactorUnlock/gpme.png)
+   
+8. In the content pane, double-click **Configure device unlock factors**. Click **Enable**.  The **Options** section populates the policy setting with default values.
+
+   ![Multifactor Policy Setting](images/multifactorUnlock/gp-setting.png)
+   
+9. Configure first and second unlock factors using the information in [Configure Unlock Factors](#configuring-unlock-factors).
+
+10. If using trusted signals, configure the trusted signals used by the unlock factor using the information in [Configure Signal Rules for the Trusted Signal Credential Provider](#configure-signal-rules-for-the-trusted-signal-credential-provider).
+
+11. Click **OK** to close the **Group Policy Management Editor**. Use the **Group Policy Management Console** to deploy the newly created Group Policy object to your organization's computers.
+
+## Troubleshooting
+Multi-factor unlock writes events to event log under **Application and Services Logs\Microsoft\Windows\HelloForBusiness** with the category name **Device Unlock**.
 
 ### Events
 

@@ -2,7 +2,8 @@
 title: Switch to Windows 10 Pro/Enterprise from S mode
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 description: Overview of Windows 10 Pro/Enterprise in S mode. S mode switch options are also outlined in this document. Switching out of S mode is optional.
 keywords: Windows 10 S switch, S mode Switch, Switch in S mode, s mode switch, Windows 10 S, S-mode, system requirements, Overview, Windows 10 Pro in S mode, Windows 10 Pro in S mode
 ms.mktglfcycl: deploy
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -45,7 +46,7 @@ A number of other transformations are possible depending on which version and ed
 
 Use the following information to switch to Windows 10 Pro through the Microsoft Store.
 > [!IMPORTANT]
-> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a [bare-metal recovery (BMR)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
+> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a [bare-metal recovery (BMR)](/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
 
 ## Switch one device through the Microsoft Store
 Use the following information to switch to Windows 10 Pro through the Microsoft Store or by navigating to **Settings** and then **Activation** on the device.
@@ -79,12 +80,12 @@ To set this, go to **Device configuration > Profiles > Windows 10 and later > Ed
 
 ## S mode management with CSPs
 
-In addition to using Microsoft Intune or another modern device management tool to manage S mode, you can also use the [WindowsLicensing](https://docs.microsoft.com/windows/client-management/mdm/windowslicensing-csp) configuration service provider (CSP). In Windows 10, version 1809, we added S mode functionality that lets you switch devices, block devices from switching, and check the status (whether a device is in S mode).
+In addition to using Microsoft Intune or another modern device management tool to manage S mode, you can also use the [WindowsLicensing](/windows/client-management/mdm/windowslicensing-csp) configuration service provider (CSP). In Windows 10, version 1809, we added S mode functionality that lets you switch devices, block devices from switching, and check the status (whether a device is in S mode).
 
 
 ## Related topics
 
 [FAQs](https://support.microsoft.com/help/4020089/windows-10-in-s-mode-faq)<br>
 [Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<BR>
-[Windows 10 Pro Education](https://docs.microsoft.com/education/windows/test-windows10s-for-edu)<BR>
-[Introduction to Microsoft Intune in the Azure portal](https://docs.microsoft.com/intune/what-is-intune)
+[Windows 10 Pro Education](/education/windows/test-windows10s-for-edu)<BR>
+[Introduction to Microsoft Intune in the Azure portal](/intune/what-is-intune)

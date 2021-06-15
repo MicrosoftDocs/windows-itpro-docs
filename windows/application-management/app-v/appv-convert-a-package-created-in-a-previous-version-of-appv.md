@@ -1,7 +1,7 @@
 ---
 title: How to convert a package created in a previous version of App-V (Windows 10)
-description: How to convert a package created in a previous version of App-V.
-author: lomayor
+description: Use the package converter utility to convert a virtual application package created in a previous version of App-V.
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 07/10/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # How to convert a package created in a previous version of App-V
@@ -40,22 +40,22 @@ The App-V package converter will save the App-V 4.6 installation root folder and
 
    - **Test-AppvLegacyPackage**—This cmdlet checks packages. It will return information about any failures with the package such as missing **.sft** files, an invalid source, **.osd** file errors, or invalid package version. This cmdlet will not parse the **.sft** file or do any in-depth validation. For information about options and basic functionality for this cmdlet, using Windows PowerShell, enter the following cmdlet:
 
-        ```PowerShell
-        Test-AppvLegacyPackage -?
-        ```
+     ```PowerShell
+     Test-AppvLegacyPackage -?
+     ```
 
    - **ConvertFrom-AppvLegacyPackage**—This cmdlet converts packages from legacy versions to updated versions. To convert an existing package, enter the following cmdlet:
 
-        ```PowerShell
-        ConvertFrom-AppvLegacyPackage C:\contentStore C:\convertedPackages
-        ```
+     ```PowerShell
+     ConvertFrom-AppvLegacyPackage C:\contentStore C:\convertedPackages
+     ```
 
      In this cmdlet, `C:\contentStore` represents the location of the existing package and `C:\convertedPackages` is the output directory to which the resulting App-V for Windows 10 virtual application package file will be saved. By default, if you do not specify a new name, the old package name will be used.
 
      Additionally, the package converter optimizes performance of packages in App-V for Windows 10 by setting the package to stream fault the App-V package.  This is more performant than the primary feature block and fully downloading the package. The flag **DownloadFullPackageOnFirstLaunch** allows you to convert the package and set the package to be fully downloaded by default.
 
-> [!NOTE]
-    >Before you specify the output directory, you must create the output directory.
+     > [!NOTE]
+     > Before you specify the output directory, you must create the output directory.
 
 ### Advanced Conversion Tips
 
@@ -75,21 +75,18 @@ The App-V package converter will save the App-V 4.6 installation root folder and
 
 - Batching—The Windows PowerShell command enables batching. More specifically, the cmdlets support taking a string\[\] object for the *-Source* parameter that represents a list of directory paths. This allows you to enter the following cmdlets together:
 
-    ```PowerShell
-    $packages = dir C:\contentStore
-    ConvertFrom-AppvLegacyAppvPackage-Source $packages -Target C:\ConvertedPackages
-    ```
+  ```PowerShell
+  $packages = dir C:\contentStore
+  ConvertFrom-AppvLegacyAppvPackage-Source $packages -Target C:\ConvertedPackages
+  ```
 
-    Alternatively, you can use piping like this:
+  Alternatively, you can use piping like this:
 
-    ```PowerShell
-    dir C:\ContentStore | ConvertFrom-AppvLegacyAppvPackage -Target C:\ConvertedPackages
-    ```
+  ```PowerShell
+  dir C:\ContentStore | ConvertFrom-AppvLegacyAppvPackage -Target C:\ConvertedPackages
+  ```
 
 - Other functionality—Windows PowerShell has other built-in functionality for features such as aliases, lazy-binding, .NET Object, and many others. These features can help you create advanced scenarios for the Package Converter.
-
-
-
 
 
 ## Related topics

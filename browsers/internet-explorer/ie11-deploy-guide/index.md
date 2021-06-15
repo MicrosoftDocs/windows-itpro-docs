@@ -14,6 +14,9 @@ manager: dansimp
 
 # Internet Explorer 11 (IE11) - Deployment Guide for IT Pros
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -44,7 +47,7 @@ Because this content isn't intended to be a step-by-step guide, not all of the s
 |[What is the Internet Explorer 11 Blocker Toolkit?](what-is-the-internet-explorer-11-blocker-toolkit.md) |The IE11 Blocker Toolkit lets you turn off the automatic delivery of IE11 through the <b>Automatic Updates</b> feature of Windows Update. |
 |[Missing Internet Explorer Maintenance (IEM) settings for Internet Explorer 11](missing-internet-explorer-maintenance-settings-for-ie11.md) |The Internet Explorer Maintenance (IEM) settings have been deprecated in favor of Group Policy preferences, Administrative Templates (.admx), and the Internet Explorer Administration Kit 11 (IEAK 11).<p>Because of this change, your IEM-configured settings will no longer work on computers running Internet Explorer 10 or newer. To fix this, you need to update the affected settings using Group Policy preferences, Administrative Templates (.admx), or the IEAK 11.<p>Because Group Policy Preferences and IEAK 11 run using asynchronous processes, you should choose to use only one of the tools within each group of settings. For example, using only IEAK 11 in the <b>Security</b> settings or Group Policy Preferences within the <b>Internet Zone</b> settings. Also, it's important to remember that policy is enforced and can't be changed by the user, while preferences are configured, but can be changed by the user. |
 |[Missing the Compatibility View Button](missing-the-compatibility-view-button.md) |Compatibility View was introduced in Internet Explorer 8 to help existing content continue to work with Windows Internet Explorer 7, while developers updated their content to support modern interoperable web standards. Since then, the IE web platform, and the web itself, have changed so that most public web content looks for standards-based features instead of IE 7-compatible behavior.<p>Thanks to these changes, using IE11 in the latest standards mode is more compatible with the web than ever before. As a result, IE11 simplifies web page compatibility for users by removing the <b>Compatibility View</b> button and reducing the number of compatibility options in the F12 developer tools for developers. |
-|[Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013](deploy-pinned-sites-using-mdt-2013.md) |You can pin websites to the Windows 8.1 taskbar for quick access. You pin a website simply by dragging its tab to the taskbar. Some websites can also extend the icon’s Jump List.<p>The ability to pin websites to the Windows 8.1 taskbar can help make end-users in businesses more productive. As an IT professional, for example, you can pin intranet and SharePoint websites to the taskbar to make them immediately available to employees. In this article, you learn how to deploy pinned websites by using Lite Touch Installation in the [Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=398474).
+|[Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013](deploy-pinned-sites-using-mdt-2013.md) |You can pin websites to the Windows 8.1 taskbar for quick access. You pin a website simply by dragging its tab to the taskbar. Some websites can also extend the icon’s Jump List.<p>The ability to pin websites to the Windows 8.1 taskbar can help make end-users in businesses more productive. As an IT professional, for example, you can pin intranet and SharePoint websites to the taskbar to make them immediately available to employees. In this article, you learn how to deploy pinned websites by using Lite Touch Installation in the [Microsoft Deployment Toolkit (MDT) 2013](/mem/configmgr/mdt/).
 
 
 ## IE11 naming conventions
@@ -57,7 +60,6 @@ IE11 offers differing experiences in Windows 8.1:
 |Internet Explorer 11 or IE11 |The whole browser, which includes both IE and Internet Explorer for the desktop. |
 
 ## Related topics
-- [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.md)
+- [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.yml)
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
-- [Microsoft Edge - Deployment Guide for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760643)
-
+- [Microsoft Edge - Deployment Guide for IT Pros](/microsoft-edge/deploy/)

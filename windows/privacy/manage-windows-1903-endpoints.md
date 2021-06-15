@@ -7,12 +7,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: dansimp
-manager: sanashar
+author: linque1
+ms.author: obezeajo
+manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 5/3/2019
+ms.date: 7/22/2020
 ---
 # Manage connection endpoints for Windows 10 Enterprise, version 1903
 
@@ -138,6 +138,7 @@ The following methodology was used to derive these network endpoints:
 |||HTTP \ HTTPS|g.live.com/1rewlive5skydrive/*|
 |||HTTP|msagfx.live.com|
 |||HTTPS|oneclient.sfx.ms|
+|||HTTP| windows.policies.live.net|
 |Settings|The following endpoint is used as a way for apps to dynamically update their configuration. Apps such as System Initiated User Feedback and the Xbox app use it. If you turn off traffic for this endpoint, an app that uses this endpoint may stop working.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 |||HTTPS|cy2.settings.data.microsoft.com.akadns.net|
 |||HTTPS|settings.data.microsoft.com|
@@ -167,6 +168,7 @@ The following methodology was used to derive these network endpoints:
 |||HTTP|*.windowsupdate.com|
 ||The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store. If you turn off traffic for these endpoints, the device will not be able to connect to Windows Update and Microsoft Update to help keep the device secure. Also, the device will not be able to acquire and update apps from the Store. These are dependent on also enabling "Device authentication" and "Microsoft Account" endpoints.|HTTPS|*.delivery.mp.microsoft.com|
 |||HTTPS|*.update.microsoft.com|
+||The following endpoint is used for compatibility database updates for Windows.|HTTP|adl.windows.com|
 ||The following endpoint is used for content regulation. If you turn off traffic for this endpoint, the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.|HTTPS|tsfe.trafficshaping.dsp.mp.microsoft.com|
 
 ## Other Windows 10 editions
@@ -185,6 +187,4 @@ To view endpoints for non-Enterprise Windows 10 editions, see:
 ## Related links
 
 - [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)
-- [Network infrastructure requirements for Microsoft Intune](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
-
-
+- [Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)

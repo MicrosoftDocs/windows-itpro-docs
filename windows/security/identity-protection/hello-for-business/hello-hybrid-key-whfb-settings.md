@@ -1,6 +1,6 @@
 ---
-title: Configure Hybrid Windows Hello for Business key trust Settings
-description: Configuring Windows Hello for Business settings in hybrid key trust deployment.
+title: Configure Hybrid Azure AD joined Windows Hello for Business key trust Settings
+description: Begin the process of configuring your hybrid key trust environment for Windows Hello for Business. Start with your Active Directory configuration.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,18 +13,17 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/19/2018
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Configure Hybrid Windows Hello for Business key trust settings
+# Configure Hybrid Azure AD joined Windows Hello for Business key trust settings
 
 **Applies to**
 -   Windows 10, version 1703 or later
 -   Hybrid deployment
 -   Key trust
 
- 
-You are ready to configure your hybrid key trust environment for Windows Hello for Business.
+You are ready to configure your hybrid Azure AD joined key trust environment for Windows Hello for Business.
   
 > [!IMPORTANT]
 > Ensure your environment meets all the [prerequisites](hello-hybrid-key-trust-prereqs.md) before proceeding. Review the [New Installation baseline](hello-hybrid-key-new-install.md) section of this deployment document to learn how to prepare your environment for your Windows Hello for Business deployment.  

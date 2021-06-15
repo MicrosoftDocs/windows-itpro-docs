@@ -4,7 +4,7 @@ description: This topic for the IT professional describes what AppLocker is and 
 ms.assetid: 44a8a2bb-0f83-4f95-828e-1f364fb65869
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # What Is AppLocker?
@@ -119,7 +120,7 @@ The following table compares AppLocker to Software Restriction Policies.
 </tbody>
 </table>
 
-<strong>Application control function differences</strong>
+<b>Application control function differences</b>
 
 The following table compares the application control functions of Software Restriction Policies (SRP) and AppLocker.
 <table>
@@ -141,7 +142,7 @@ The following table compares the application control functions of Software Restr
 <td align="left"><p>SRP policies can be applied to all Windows operating systems beginning with Windows XP and Windows Server 2003.</p></td>
 <td align="left"><p>AppLocker policies apply only to those supported operating system versions and editions listed in <a href="requirements-to-use-applocker.md" data-raw-source="[Requirements to use AppLocker](requirements-to-use-applocker.md)">Requirements to use AppLocker</a>. But these systems can also use SRP.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>Use different GPOs for SRP and AppLocker rules.</p>
+<b>Note</b><br/><p>Use different GPOs for SRP and AppLocker rules.</p>
 </div>
 <div>
 

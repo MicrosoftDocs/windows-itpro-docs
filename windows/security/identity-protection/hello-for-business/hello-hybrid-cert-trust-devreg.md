@@ -1,5 +1,5 @@
 ---
-title: Configure Device Registration for Hybrid Windows Hello for Business
+title: Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business
 description: Azure Device Registration for Hybrid Certificate Trust Deployment (Windows Hello for Business)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration
 ms.prod: w10
@@ -13,10 +13,10 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/18/2018
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Configure Device Registration for Hybrid Windows Hello for Business
+# Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business
 
 **Applies to**
 -  Windows 10, version 1703 or later
@@ -30,7 +30,7 @@ Your environment is federated and you are ready to configure device registration
 > If your environment is not federated, review the [New Installation baseline](hello-hybrid-cert-new-install.md) section of this deployment document to learn how to federate your environment for your Windows Hello for Business deployment. 
 
 >[!TIP]
->Refer to the [Tutorial: Configure hybrid Azure Active Directory join for federated domains](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-federated-domains) to learn more about setting up Azure Active Directory Connect for a simplified join flow for Azure AD device registration.
+>Refer to the [Tutorial: Configure hybrid Azure Active Directory join for federated domains](/azure/active-directory/devices/hybrid-azuread-join-federated-domains) to learn more about setting up Azure Active Directory Connect for a simplified join flow for Azure AD device registration.
 
 Use this three-phased approach for configuring device registration.
 1. [Configure devices to register in Azure](#configure-azure-for-device-registration)
@@ -43,7 +43,7 @@ Use this three-phased approach for configuring device registration.
 > * Azure AD joined devices
 > * Hybrid Azure AD joined devices
 >
-> You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/device-management-introduction)
+> You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](/azure/active-directory/device-management-introduction)
 
 >[!IMPORTANT]
 > To use hybrid identity with Azure Active Directory and device WriteBack features, you must use the built-in GUI with the [latest updates for ADConnect](https://www.microsoft.com/download/details.aspx?id=47594).
@@ -51,18 +51,18 @@ Use this three-phased approach for configuring device registration.
 ## Configure Azure for Device Registration
 Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD. 
 
-To do this, follow the **Configure device settings** steps under [Setting up Azure AD Join in your organization](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-setup/)  
+To do this, follow the **Configure device settings** steps under [Setting up Azure AD Join in your organization](/azure/active-directory/devices/device-management-azure-portal)  
 
 ## Configure Active Directory to support Azure device synchronization
 
 Azure Active Directory is now configured for device registration. Next, you need to configure the on-premises Active Directory to support synchronizing hybrid Azure AD joined devices. Begin with upgrading the Active Directory Schema 
 
-### Upgrading Active Directory to the Windows Server 2016 Schema 
+### Upgrading Active Directory to the Windows Server 2016 or later Schema 
 
-To use Windows Hello for Business with Hybrid Azure AD joined devices, you must first upgrade your Active Directory schema to Windows Server 2016. 
+To use Windows Hello for Business with Hybrid Azure AD joined devices, you must first upgrade your Active Directory schema to Windows Server 2016 or later. 
 
 > [!IMPORTANT]
-> If you already have a Windows Server 2016 domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 Schema** (this section).
+> If you already have a Windows Server 2016 or later domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 or later Schema** (this section).
 
 #### Identify the schema role domain controller
 
@@ -78,7 +78,7 @@ The command should return the name of the domain controller where you need to ru
 
 Windows Hello for Business uses asymmetric keys as user credentials (rather than passwords).  During enrollment, the public key is registered in an attribute on the user object in Active Directory.  The schema update adds this new attribute to Active Directory.  
 
-Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
+Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 or later DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
 
 Sign-in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
 
@@ -93,23 +93,23 @@ Sign-in to the domain controller hosting the schema master operational role usin
 
 
 ### Setup Active Directory Federation Services
-If you are new to AD FS and federation services, you should review [Understanding Key AD FS Concepts](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) to prior to designing and deploying your federation service.
-Review the [AD FS Design guide](https://docs.microsoft.com/windows-server/identity/ad-fs/design/ad-fs-design-guide-in-windows-server-2012-r2) to plan your federation service.
+If you are new to AD FS and federation services, you should review [Understanding Key AD FS Concepts](/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) to prior to designing and deploying your federation service.
+Review the [AD FS Design guide](/windows-server/identity/ad-fs/design/ad-fs-design-guide-in-windows-server-2012-r2) to plan your federation service.
 
-Once you have your AD FS design ready, review [Deploying a Federation Server farm](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) to configure AD FS in your environment.
+Once you have your AD FS design ready, review [Deploying a Federation Server farm](/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) to configure AD FS in your environment.
 > [!IMPORTANT]
 > During your AD FS deployment, skip the **Configure a federation server with Device Registration Service** and the **Configure Corporate DNS for the Federation Service and DRS** procedures.      
 
-The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).  If your AD FS farm is not running the AD FS role with updates from Windows Server 2016, then read [Upgrading to AD FS in Windows Server 2016](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016)
+The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).  If your AD FS farm is not running the AD FS role with updates from Windows Server 2016, then read [Upgrading to AD FS in Windows Server 2016](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016)
 
 #### ADFS Web Proxy ###
 Federation server proxies are computers that run AD FS software that have been configured manually to act in the proxy role. You can use federation server proxies in your organization to provide intermediary services between an Internet client and a federation server that is behind a firewall on your corporate network.
-Use the [Setting of a Federation Proxy](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/checklist--setting-up-a-federation-server-proxy) checklist to configure AD FS proxy servers in your environment.
+Use the [Setting of a Federation Proxy](/windows-server/identity/ad-fs/deployment/checklist--setting-up-a-federation-server-proxy) checklist to configure AD FS proxy servers in your environment.
 
 ### Deploy Azure AD Connect
-Next, you need to synchronize the on-premises Active Directory with Azure Active Directory.  To do this, first review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](https://go.microsoft.com/fwlink/?LinkId=615771).
+Next, you need to synchronize the on-premises Active Directory with Azure Active Directory.  To do this, first review the [Integrating on-prem directories with Azure Active Directory](/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](https://go.microsoft.com/fwlink/?LinkId=615771).
 
-When you are ready to install, follow the **Configuring federation with AD FS** section of [Custom installation of Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).  Select the **Federation with AD FS** option on the **User sign-in** page.  At the **AD FS Farm** page, select the use an existing option and click **Next**.  
+When you are ready to install, follow the **Configuring federation with AD FS** section of [Custom installation of Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).  Select the **Federation with AD FS** option on the **User sign-in** page.  At the **AD FS Farm** page, select the use an existing option and click **Next**.  
 
 ### Create AD objects for AD FS Device Authentication  
 If your AD FS farm is not already configured for Device Authentication (you can see this in the AD FS Management console under Service -> Device Registration), use the following steps to create the correct AD DS objects and configuration.  
@@ -205,7 +205,7 @@ When you're using AD FS, you need to enable the following WS-Trust endpoints:
 `/adfs/services/trust/13/certificatemixed`
 
 > [!WARNING]
-> Both **adfs/services/trust/2005/windowstransport** and **adfs/services/trust/13/windowstransport** should be enabled as intranet facing endpoints only and must NOT be exposed as extranet facing endpoints through the Web Application Proxy. To learn more on how to disable WS-Trust Windows endpoints, see [Disable WS-Trust Windows endpoints on the proxy](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/best-practices-securing-ad-fs#disable-ws-trust-windows-endpoints-on-the-proxy-ie-from-extranet). You can see what endpoints are enabled through the AD FS management console under **Service** > **Endpoints**.
+> Both **adfs/services/trust/2005/windowstransport** and **adfs/services/trust/13/windowstransport** should be enabled as intranet facing endpoints only and must NOT be exposed as extranet facing endpoints through the Web Application Proxy. To learn more on how to disable WS-Trust Windows endpoints, see [Disable WS-Trust Windows endpoints on the proxy](/windows-server/identity/ad-fs/deployment/best-practices-securing-ad-fs#disable-ws-trust-windows-endpoints-on-the-proxy-ie-from-extranet). You can see what endpoints are enabled through the AD FS management console under **Service** > **Endpoints**.
 
 > [!NOTE]
 >If you don’t have AD FS as your on-premises federation service, follow the instructions from your vendor to make sure they support WS-Trust 1.3 or 2005 endpoints and that these are published through the Metadata Exchange file (MEX).
@@ -340,8 +340,8 @@ In the claim above,
 - `$<domain>` is the AD FS service URL
 - `<verified-domain-name>` is a placeholder you need to replace with one of your verified domain names in Azure AD
 
-For more details about verified domain names, see [Add a custom domain name to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-add-domain).  
-To get a list of your verified company domains, you can use the [Get-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/get-msoldomain?view=azureadps-1.0) cmdlet. 
+For more details about verified domain names, see [Add a custom domain name to Azure Active Directory](/azure/active-directory/active-directory-add-domain).  
+To get a list of your verified company domains, you can use the [Get-MsolDomain](/powershell/module/msonline/get-msoldomain?view=azureadps-1.0) cmdlet. 
 
 #### Issue ImmutableID for computer when one for users exist (e.g. alternate login ID is set)
 
@@ -506,7 +506,7 @@ The following script helps you with the creation of the issuance transform rules
 #### Configure Device Authentication in AD FS  
 Using an elevated PowerShell command window, configure AD FS policy by executing the following command  
 
-`PS C:>Set-AdfsGlobalAuthenticationPolicy -DeviceAuthenticationEnabled $true -DeviceAuthenticationMethod All` 
+`PS C:>Set-AdfsGlobalAuthenticationPolicy -DeviceAuthenticationEnabled $true -DeviceAuthenticationMethod SignedToken` 
 
 #### Check your configuration  
 For your reference, below is a comprehensive list of the AD DS devices, containers and permissions required for device write-back and authentication to work

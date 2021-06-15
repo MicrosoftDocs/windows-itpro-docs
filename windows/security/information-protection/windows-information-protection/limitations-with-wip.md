@@ -33,18 +33,18 @@ This table provides info about the most common problems you might encounter whil
     </tr>
     <tr>
         <td>Your enterprise data on USB drives might be tied to the device it was protected on, based on your Azure RMS configuration.</td>
-        <td><strong>If you’re using Azure RMS:</strong> Authenticated users can open enterprise data on USB drives, on computers running Windows 10, version 1703.<br><br><strong>If you’re not using Azure RMS:</strong> Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won&#39;t open or the file opens, but doesn&#39;t contain readable text.</td>
+        <td><b>If you’re using Azure RMS:</b> Authenticated users can open enterprise data on USB drives, on computers running Windows 10, version 1703.<br><br><b>If you’re not using Azure RMS:</b> Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won&#39;t open or the file opens, but doesn&#39;t contain readable text.</td>
         <td>Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.<br><br>We strongly recommend educating employees about how to limit or eliminate the need for this decryption.</td>
     </tr>
     <tr>
         <td>Direct Access is incompatible with WIP.</td>
         <td>Direct Access might experience problems with how WIP enforces app behavior and data movement because of how WIP determines what is and isn’t a corporate network resource.</td>
-        <td>We recommend that you use VPN for client access to your intranet resources.<br><br><strong>Note</strong><br>VPN is optional and isn’t required by WIP.</td>
+        <td>We recommend that you use VPN for client access to your intranet resources.<br><br><b>Note</b><br>VPN is optional and isn’t required by WIP.</td>
     </tr>
     <tr>
-        <td><strong>NetworkIsolation</strong> Group Policy setting takes precedence over MDM Policy settings.</td>
-        <td>The <strong>NetworkIsolation</strong> Group Policy setting can configure network settings that can also be configured by using MDM. WIP relies on these policies being correctly configured.</td>
-        <td>If you use both Group Policy and MDM to configure your <strong>NetworkIsolation</strong> settings, you must make sure that those same settings are deployed to your organization using both Group Policy and MDM.</td>
+        <td><b>NetworkIsolation</b> Group Policy setting takes precedence over MDM Policy settings.</td>
+        <td>The <b>NetworkIsolation</b> Group Policy setting can configure network settings that can also be configured by using MDM. WIP relies on these policies being correctly configured.</td>
+        <td>If you use both Group Policy and MDM to configure your <b>NetworkIsolation</b> settings, you must make sure that those same settings are deployed to your organization using both Group Policy and MDM.</td>
     </tr>
     <tr>
         <td>Cortana can potentially allow data leakage if it’s on the allowed apps list.</td>
@@ -63,7 +63,7 @@ This table provides info about the most common problems you might encounter whil
             <ul>
                 <li>Start the installer directly from the file share.<br><br>-OR-<br><br></li>
                 <li>Decrypt the locally copied files needed by the installer.<br><br>-OR-<br><br></li>
-                <li>Mark the file share with the installation media as “personal”. To do this, you’ll need to set the Enterprise IP ranges as <strong>Authoritative</strong> and then exclude the IP address of the file server, or you’ll need to put the file server on the Enterprise Proxy Server list.</li>
+                <li>Mark the file share with the installation media as “personal”. To do this, you’ll need to set the Enterprise IP ranges as <b>Authoritative</b> and then exclude the IP address of the file server, or you’ll need to put the file server on the Enterprise Proxy Server list.</li>
             </ul></td>
     </tr>
     <tr>
@@ -74,22 +74,22 @@ This table provides info about the most common problems you might encounter whil
     <tr>
         <td>Redirected folders with Client Side Caching are not compatible with WIP.</td>
         <td>Apps might encounter access errors while attempting to read a cached, offline file.</td>
-        <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.<br><br><strong>Note</strong><br>For more info about Work Folders and Offline Files, see the blog, <a href="https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/" data-raw-source="[Work Folders and Offline Files support for Windows Information Protection](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/)">Work Folders and Offline Files support for Windows Information Protection</a>. If you&#39;re having trouble opening files offline while using Offline Files and WIP, see the support article, <a href="https://support.microsoft.com/kb/3187045" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/kb/3187045)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.</td>
+        <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.<br><br><b>Note</b><br>For more info about Work Folders and Offline Files, see the blog, <a href="https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/" data-raw-source="[Work Folders and Offline Files support for Windows Information Protection](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/)">Work Folders and Offline Files support for Windows Information Protection</a>. If you&#39;re having trouble opening files offline while using Offline Files and WIP, see the support article, <a href="https://support.microsoft.com/kb/3187045" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/kb/3187045)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.</td>
     </tr>
     <tr>
         <td>An unmanaged device can use Remote Desktop Protocol (RDP) to connect to a WIP-managed device.</td>
-        <td><p>Data copied from the WIP-managed device is marked as <strong>Work</strong>.<p>Data copied to the WIP-managed device is not marked as <strong>Work</strong>.<p>Local <strong>Work</strong> data copied to the WIP-managed device remains <strong>Work</strong> data.<p><strong>Work</strong> data that is copied between two apps in the same session remains </strong> data.</td>
+        <td><p>Data copied from the WIP-managed device is marked as <b>Work</b>.<p>Data copied to the WIP-managed device is not marked as <b>Work</b>.<p>Local <b>Work</b> data copied to the WIP-managed device remains <b>Work</b> data.<p><b>Work</b> data that is copied between two apps in the same session remains </b> data.</td>
         <td>Disable RDP to prevent access because there is no way to restrict access to only devices managed by WIP. RDP is disabled by default.</td>
     </tr>
     <tr>
         <td>You can&#39;t upload an enterprise file to a personal location using Microsoft Edge or Internet Explorer.</td>
-        <td>A message appears stating that the content is marked as <strong>Work</strong> and the user isn&#39;t given an option to override to <strong>Personal</strong>.</td>
-        <td>Open File Explorer and change the file ownership to <strong>Personal</strong> before you upload.</td>
+        <td>A message appears stating that the content is marked as <b>Work</b> and the user isn&#39;t given an option to override to <b>Personal</b>.</td>
+        <td>Open File Explorer and change the file ownership to <b>Personal</b> before you upload.</td>
     </tr>
     <tr>
         <td>ActiveX controls should be used with caution.</td>
         <td>Webpages that use ActiveX controls can potentially communicate with other outside processes that aren’t protected by using WIP.</td>
-        <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<br><br>For more info, see <a href="https://technet.microsoft.com/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking" data-raw-source="[Out-of-date ActiveX control blocking](https://technet.microsoft.com/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking)">Out-of-date ActiveX control blocking</a>.</td>
+        <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<br><br>For more info, see <a href="/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking" data-raw-source="[Out-of-date ActiveX control blocking](/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking)">Out-of-date ActiveX control blocking</a>.</td>
     </tr>
     <tr>
          <td>Resilient File System (ReFS) isn&#39;t currently supported with WIP.</td>
@@ -97,7 +97,7 @@ This table provides info about the most common problems you might encounter whil
         <td>Format drive for NTFS, or use a different drive.</td>
     </tr>
     <tr>
-        <td>WIP isn’t turned on if any of the following folders have the <strong>MakeFolderAvailableOfflineDisabled</strong> option set to <strong>False</strong>:
+        <td>WIP isn’t turned on if any of the following folders have the <b>MakeFolderAvailableOfflineDisabled</b> option set to <b>False</b>:
             <ul>
                 <li>AppDataRoaming</li>
                 <li>Desktop</li>
@@ -115,7 +115,7 @@ This table provides info about the most common problems you might encounter whil
             </ul>
         </td>
         <td>WIP isn’t turned on for employees in your organization. Error code 0x807c0008 will result if WIP is deployed by using Microsoft Endpoint Configuration Manager.</td>
-        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.  You can configure this parameter, as described <a href="https://docs.microsoft.com/windows-server/storage/folder-redirection/disable-offline-files-on-folders" data-raw-source="[here](https://docs.microsoft.com/windows-server/storage/folder-redirection/disable-offline-files-on-folders)">here</a>.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see <a href="https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.
+        <td>Don’t set the <b>MakeFolderAvailableOfflineDisabled</b> option to <b>False</b> for any of the specified folders.  You can configure this parameter, as described <a href="/windows-server/storage/folder-redirection/disable-offline-files-on-folders" data-raw-source="[here](/windows-server/storage/folder-redirection/disable-offline-files-on-folders)">here</a>.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see <a href="https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.
         </td>
     </tr>
     <tr>
@@ -133,12 +133,17 @@ This table provides info about the most common problems you might encounter whil
         </td>
       </tr>
     <tr>
-        <td>By design, OneNote only supports WIP protected notebooks stored on enterprise-managed SharePoint (OneDrive for Business).  Onenote does not support local WIP protected notebooks.</td>
-        <td>OneNote might encounter an error such as "This notebook contains protected content from your organization, which can't be viewed or synced. Please change the file ownership to Personal, or contact your IT administrator." Supported notebooks (OneDrive for Business) should be shown in File Explorer as links and open with your associated browser. Unsupported notebooks would show as folders or .one files (with a OneNote icon)</td>
-        <td>If unsupported files won't open in the browser, then they are 'stuck' in the old local format - incompatible with WIP or viewing online. We recommend that you create a new notebook and copy the contents from the existing notebook into the new one. In OneNote desktop, File > New > OnedDive - company name notebook and create a new one. Then within OneNote, copy over the old 'local' sections into this new notebook to ensure they get upgraded to the modern format. Hold Ctrl + drag and drop the sections into the notebook. Holding Ctrl will copy sections rather than move them,  preserving the old sections as backup copies. Wait for the new notebook to finish syncing to OneDrive for business.</td>    
+        <td>OneNote notebooks on OneDrive for Business must be properly configured to work with WIP.</td>
+        <td>OneNote might encounter errors syncing a OneDrive for Business notebook and suggest changing the file ownership to Personal. Attempting to view the notebook in OneNote Online in the browser will show an error and unable to view it.</td>
+        <td>"OneNote notebooks that are newly copied into the OneDrive for Business folder from File Explorer should get fixed automatically. To do this, follow these steps:
+1. Close the notebook in OneNote.
+2. Move the notebook folder via File Explorer out of the OneDrive for Business folder to another location, such as the Desktop.
+3. Copy the notebook folder and Paste it back into the OneDrive for Business folder.
+
+Wait a few minutes to allow OneDrive to finish syncing & upgrading the notebook, and the folder should automatically convert to an Internet Shortcut.  Opening the shortcut will open the notebook in the browser, which can then be opened in the OneNote client by using the “Open in app” button.</td>    
     </tr>
     <tr>
-        <td>Microsoft Office Outlook offline data files (PST and OST files) are not marked as <strong>Work</strong> files, and are therefore not protected.
+        <td>Microsoft Office Outlook offline data files (PST and OST files) are not marked as <b>Work</b> files, and are therefore not protected.
         </td>
         <td>If Microsoft Office Outlook is set to work in cached mode (default setting), or if some emails are stored in a local PST file, the data is unprotected. 
         </td>
@@ -154,4 +159,4 @@ This table provides info about the most common problems you might encounter whil
 
 
 > [!NOTE]
-> Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       
+> Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

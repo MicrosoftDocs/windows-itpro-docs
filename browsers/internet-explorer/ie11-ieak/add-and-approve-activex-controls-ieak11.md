@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Add and approve ActiveX controls using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 There are two main approaches to how you can control the use of ActiveX controls in your company. For more info about ActiveX controls, including how to manage the controls using Group Policy, see [Group Policy and ActiveX installation](../ie11-deploy-guide/activex-installation-using-group-policy.md) in the [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md).
 
 **Note**<br>
