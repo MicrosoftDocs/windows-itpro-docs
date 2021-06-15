@@ -36,7 +36,7 @@ This article provides planning guidance to help you begin depoying Windows Sun V
 
 Consider the following steps to deploy Windows Sun Valley in your environment:
 
-1. [Preview Windows Sun Valley](windows-sv.md#how-to-get-windows-sun-valley) and create a deployment plan. 
+1. [Preview Windows Sun Valley](windows-sv.md#how-to-get-windows-sun-valley) and create a phased deployment plan. 
 2. [Test critical applications](windows-sv-prepare.md#application-compatibility) and management policies.
 3. Update devices to the Windows 10, version 20H1 or later.
 4. Verify that devices meet the [minimum hardware requirements](windows-sv-requirements.md#hardware-requirements) for Windows Sun Valley.
