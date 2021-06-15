@@ -90,6 +90,6 @@ For more information, see [Windows 10 coexistence](windows-sv-plan.md#windows-10
 
 ## Next steps
 
-[Windows Sun Valley requirements](windows-sv-requirements.md)<vr>
+[Windows Sun Valley requirements](windows-sv-requirements.md)<br>
 [Plan to deploy Windows Sun Valley](windows-sv-plan.md)<br>
 [Prepare for Windows Sun Valley](windows-sv-prepare.md)

@@ -22,7 +22,7 @@ ms.topic: article
 
 ## Deployment planning
 
-Windows Sun Valley is developed with Windows 10 as its foundation, enabling you to plan, prepare, deploy, and manage Windows Sun Valley with the same tools and methods that you use for Windows 10. As you integrate Windows Sun Valley into your environment, there will be some unique but familiar considerations working with a mix of Windows 10 and Windows Sun Valley devices side-by-side.
+Windows Sun Valley is developed with Windows 10 as its foundation, enabling you to plan, prepare, deploy, and manage Windows Sun Valley with the same tools and methods that you use for Windows 10. When you integrate Windows Sun Valley into your environment, there will be some unique but familiar considerations, as you work with a mix of Windows 10 and Windows Sun Valley devices side-by-side.
 
 This article provides planning guidance to help you begin depoying Windows Sun Valley, specifically: 
  
@@ -32,9 +32,10 @@ This article provides planning guidance to help you begin depoying Windows Sun V
    - Application readiness 
    - Functionality and coexistence with Windows 10 ecosystems 
 
-#### Deployment processes
+#### Deployment process
 
-Consider using the following processes to deploy Windows Sun Valley:
+Consider the following steps to deploy Windows Sun Valley in your environment:
+
 1. [Preview Windows Sun Valley](windows-sv.md#how-to-get-windows-sun-valley) and create a deployment plan. 
 2. [Test critical applications](windows-sv-prepare.md#application-compatibility) and management policies.
 3. Update devices to the Windows 10, version 20H1 or later.
