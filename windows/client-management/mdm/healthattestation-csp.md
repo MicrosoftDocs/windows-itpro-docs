@@ -1176,4 +1176,3 @@ xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validatio
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
-
