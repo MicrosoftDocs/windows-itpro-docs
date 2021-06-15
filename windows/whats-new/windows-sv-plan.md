@@ -89,8 +89,6 @@ Windows Sun Valley annual releases are supported for 24 months or 36 months, dep
 | Windows Sun Valley Pro for Workstations |  |
 | Windows Sun Valley Pro Education |  |
 
-A long term servicing channel release of Windows Sun Valley is not planned at this time.
-
 #### Features and applications
 
 Most features and applications that are included with Windows 10 will be available on Windows Sun Valley. For information about features that are deprecated or work differently on Windows Sun Valley, see [article link here].
