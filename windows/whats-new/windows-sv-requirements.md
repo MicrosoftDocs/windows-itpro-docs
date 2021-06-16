@@ -1,7 +1,6 @@
 ---
 title: Windows Sun Valley requirements
 description: Hardware requirements to deploy Windows Sun Valley
-ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
@@ -22,38 +21,29 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows Sun Valley, version 21H2
 
-This article lists the software and physical hardware requirements to run Windows Sun Valley. Windows Sun Valley is also supported on a Virtual Machine (VM).
-
-## Software requirements
-
-The upgrade to Sun Valley is available for devices running Windows 10, version 20H1 or later, on eligible hardware.
-
-> [!NOTE]
-> S mode is not supported on Windows Sun Valley.
-> If you are running Windows in S mode, you will need to first [switch out of S mode](/windows/deployment/windows-10-pro-in-s-mode) prior to upgrading. 
+This article lists the system requirements for Windows Sun Valley. Windows Sun Valley is also supported on a virtual machine (VM). For the best Windows Sun Valley upgrade experience, eligible devices should be running Windows 10, version 20H1 or later.
 
 ## Hardware requirements
 
 To install Windows Sun Valley, devices must meet the following specifications:
  
-Processor   
-- Intel 8th generation, Intel Celeron N4000, Pentium N5000 
-- AMD Ryzen gen 2 (Zen+), AMD 3xxx
-- Qualcomm 7c, 8c, 8cx  
-- 64bit architecture 
-- 1Ghz clock speed 
-- 2 cores 
- 
-Hardware
-- 64GB drive 
-- 4GB RAM 
-- UEFI, Secure Boot capable & TPM 2.0 
-- Monitor size 9” or more with HD Resolution
-- DirectX 12 compatible graphics / WDDM 2.x  
+- Processor: 1 gigahertz (GHz) or faster processor or SoC; dual-core CPU or greater
+  - Intel 8th generation, Intel Celeron N4000, Pentium N5000 
+  - AMD Ryzen gen 2 (Zen+), AMD 3xxx
+  - Qualcomm 7c, 8c, 8cx  
 
-## Network requirements
+- RAM: 4 gigabyte (GB) or greater
+- Hard disk space: 64GB, 64-bit architecture
+- Graphics card: DirectX 12 or later with WDDM 2.x driver
+- Security: Trusted Platform Module (TPM) 2.0 chip, UEFI support, Secure Boot capable
+- Display: 9" monitor size or greater with HD (1366 x 768) resolution or greater
+- Internet connection: Internet connectivity is necessary to perform updates and to download and take advantage of some features. It is required for the Home edition of Windows Sun Valley.
 
-Internet connectivity is required for the Home edition of Windows Sun Valley.
+For additional guidance, see [Determine eligibility](windows-sv-plan.md#determine-eligibility) NEED LINK.
+
+> [!NOTE]
+> S mode is not supported on Windows Sun Valley.
+> If you are running Windows in S mode, you will need to first [switch out of S mode](/windows/deployment/windows-10-pro-in-s-mode) prior to upgrading. Switching a device out of Windows 10 in S mode also requires internet connectivity.
 
 ## Next steps
 
