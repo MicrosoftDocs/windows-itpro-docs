@@ -110,11 +110,13 @@ A consolidated [update history]() is also available for every version of the Win
 
 ## Application compatibility
 
-Windows 10 upgrades have proven to be highly compatible, and that does not change with Windows Sun Valley. Our compatibility promise for Windows 10 is that upgrades will maintain compatibility with apps written for previously released versions. Windows Sun Valley comes with the same App Assure promise and commitment that you have known with Windows 10. Data from the App Assure program shows that Windows 10 compatibility rates are over 99.7% for our enterprise customers, including line of business apps. This great progress will not be lost. Windows Sun Valley has been subjected to, and is passing the same app compatibility validation requirements, that are in place for Windows 10 feature and quality update releases today. 
+Windows 10 upgrades have proven to be highly compatible, and that does not change with Windows Sun Valley. Microsoft's compatibility promise for Windows 10 that upgrades will preserve application compatibility is maintained for Windows Sun Valley. Windows Sun Valley comes with the same App Assure promise and commitment that you have known with Windows 10. Data from the App Assure program shows that Windows 10 compatibility rates are over 99.7% for our enterprise customers, including line of business apps. Windows Sun Valley has passed the same app compatibility validation requirements that are in place for Windows 10 feature and quality update releases. 
 
 #### App Assure and Test Base 
 
-You might already be using App Assure and Test Base in your Windows 10 environment. Both of these tools will continue to function with Windows Sun Valley. With enrollment in the App Assure service, if you find any problems with an existing application as you migrate to Windows Sun Valley, Microsoft will help you remedy application issues at no cost.  Since 2018, App Assure has evaluated almost 800,000 apps, and subscriptions are free for eligible customers with 150+ seats. 
+You might already be using App Assure and Test Base in your Windows 10 environment. Both of these tools will continue to function with Windows Sun Valley. 
+
+With enrollment in the App Assure service, if you find any problems with an existing application as you migrate to Windows Sun Valley, Microsoft will help you remedy application issues at no cost.  Since 2018, App Assure has evaluated almost 800,000 apps, and subscriptions are free for eligible customers with 150+ seats. 
 
 If you’ve created your own applications, Test Base for Microsoft is a service that allows independent software vendors and commercial customers to validate their apps across a variety of updates and environments in a Microsoft managed Azure environment.  Both services can be of benefit to you as you roll out Windows Sun Valley into your environment.
 
