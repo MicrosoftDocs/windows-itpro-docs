@@ -47,7 +47,7 @@ For a full list of what's new in Microsoft Intune, see [What's new in Microsoft 
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-There is no new ADK for Windows 10, version 21H1. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
+There is no new ADK for Windows 10, version 21H1. The ADK for Windows 10, version 2004 will also work with Windows 10, version 21H1.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
 ## Device management
 
