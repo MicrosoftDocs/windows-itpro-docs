@@ -31,7 +31,7 @@ landingContent:
             url:  windows-sv.md
           - text: Windows Sun Valley requirements
             url: windows-sv-requirements.md
-          - text: Plan to deploy Windows Sun Valley 
+          - text: Plan for Windows Sun Valley 
             url: windows-sv-plan.md
           - text: Prepare for Windows Sun Valley 
             url: windows-sv-prepare.md
