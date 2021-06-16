@@ -26,6 +26,9 @@ A Windows Defender Application Control (WDAC) policy logs events locally in Wind
 
 - Event IDs beginning with 80 appear in **Applications and Services logs** > **Microsoft** > **Windows** > **AppLocker** > **MSI and Script**
 
+> [!NOTE]
+> These event IDs are not applicable on Windows Server Core edition.
+
 ## Microsoft Windows CodeIntegrity Operational log event IDs
 
 | Event ID | Explanation |
