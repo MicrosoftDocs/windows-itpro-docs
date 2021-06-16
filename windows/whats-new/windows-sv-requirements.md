@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows Sun Valley, version 21H2
 
-This article lists the system requirements for Windows Sun Valley. Windows Sun Valley is also supported on a virtual machine (VM). For the best Windows Sun Valley upgrade experience, eligible devices should be running Windows 10, version 20H1 or later.
+This article lists the system requirements for Windows Sun Valley. Windows Sun Valley is also supported on a virtual machine (VM). 
 
 ## Hardware requirements
 
@@ -40,6 +40,10 @@ To install Windows Sun Valley, devices must meet the following specifications:
 - Internet connection: Internet connectivity is necessary to perform updates and to download and take advantage of some features. It is required for the Home edition of Windows Sun Valley.
 
 For additional guidance, see [Determine eligibility](windows-sv-plan.md#determine-eligibility) NEED LINK.
+
+## Operating system requirements
+
+For the best Windows Sun Valley upgrade experience, eligible devices should be running Windows 10, version 20H1 or later.
 
 > [!NOTE]
 > S mode is not supported on Windows Sun Valley.

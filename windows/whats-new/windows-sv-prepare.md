@@ -1,5 +1,5 @@
 ---
-title: Prepare to deploy Windows Sun Valley
+title: Prepare for Windows Sun Valley
 description: Prepare your infrastructure and tools to deploy Windows Sun Valley, IT Pro content.
 keywords: ["get started", "windows sun valley"]
 ms.prod: w11
