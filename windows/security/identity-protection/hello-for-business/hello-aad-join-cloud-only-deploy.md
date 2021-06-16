@@ -55,7 +55,7 @@ We recommend that you disable or manage Windows Hello for Business provisioning 
 
 However, not everyone uses Intune. The following method explains how to disable Windows Hello for Business enrollment without Intune, or through a third-party mobile device management (MDM). If you aren't running Intune in your organization, you can disable Windows Hello for Business via the registry. We have provided the underlying registry subkeys for disabling Windows Hello for Business.
 
-## Create a Windows Hello for Business policy
+## Create a Windows Hello for Business Enrollment policy
 
 1. Sign into the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) admin center.
 2. Go to **Devices** > **Enrollment** > **Enroll devices** > **Windows enrollment** > **Windows Hello for Business**. The Windows Hello for Business pane opens.
