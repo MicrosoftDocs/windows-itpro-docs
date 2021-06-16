@@ -27,9 +27,9 @@ You may wish to disable the automatic Windows Hello for Business enrollment prom
 > [!NOTE]
 > During the out-of-box experience (OOBE) flow of an Azure AD (AAD) join, you will see a provisioning PIN when you don’t have Intune. You can always cancel the PIN screen and set this cancellation with registry keys to prevent future prompts.
 
-## Prerequisites  
+## Prerequisites
 
-This cloud only deployment will use AAD multi-factor authentication (MFA) during the Windows Hello for Business (WHfB) enrollment and there's no additional MFA configuration needed.  If you aren't already registered in AAD MFA, you will be guided though the MFA registration as part of the Windows Hello for Business deployment enrollment process.
+This cloud only deployment will use AAD multi-factor authentication (MFA) during the Windows Hello for Business (WHfB) enrollment and there's no additional MFA configuration needed. If you aren't already registered in AAD MFA, you will be guided though the MFA registration as part of the Windows Hello for Business deployment enrollment process.
 
 The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](hello-identity-verification.md#cloud-only-deployment).
 
@@ -49,7 +49,7 @@ Example:
 
 If you use this Supports MFA switch with value **True**, you must verify that your federated IDP is correctly configured and working with the MFA adapter and provider used by your IDP.
 
-## Use Intune to disable Windows Hello for Business enrollment  
+## Use Intune to disable Windows Hello for Business enrollment
 
 We recommend that you disable or manage Windows Hello for Business provisioning behavior through an Intune policy using the steps in [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello).
 
@@ -68,7 +68,7 @@ However, not everyone uses Intune. The following method explains how to disable 
 
 ## Disable Windows Hello for Business enrollment without Intune
 
-The information below can be pushed out to the devices through a third-party MDM, or some other method that you use to manage these devices, if you don't manage them with Intune.  This push can also be set manually on the specific device(s).
+The information below can be pushed out to the devices through a third-party MDM, or some other method that you use to manage these devices, if you don't manage them with Intune. This push can also be set manually on the specific device(s).
 
 Because these systems are Azure AD Joined only, and not domain joined, these settings could be made in the registry on the device(s) when Intune isn't used.
 
@@ -80,18 +80,18 @@ To find the Tenant ID, see [How to find your Azure Active Directory tenant ID](/
 
 These registry settings are pushed from Intune for user policies for your reference.
 
-Intune User Policy: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\UserSid\Policies**
-DWORD: **UsePassportForWork**
-Value = **0** for Disable, or Value = **1** for Enable
+- Intune User Policy: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\UserSid\Policies**
+- DWORD: **UsePassportForWork**
+- Value = **0** for Disable, or Value = **1** for Enable
 
 For your reference, these registry settings can be applied from Local or Group Policies.
 
-Local/GPO User Policy: **HKEY_USERS\UserSID\SOFTWARE\Policies\Microsoft\PassportForWork**
-Local/GPO Device Policy: **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork**
-DWORD: **Enabled**
-Value = **0** for Disable or Value = **1** for Enable
+- Local/GPO User Policy: **HKEY_USERS\UserSID\SOFTWARE\Policies\Microsoft\PassportForWork**
+- Local/GPO Device Policy: **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork**
+- DWORD: **Enabled**
+- Value = **0** for Disable or Value = **1** for Enable
 
-If there's a conflicting Device policy and User policy, the device policy or computer policy would take precedence.  We don't recommend creating Local/GPO registry settings that could conflict with an Intune policy. This conflict could lead to unexpected results.
+If there's a conflicting Device policy and User policy, the device policy or computer policy would take precedence. We don't recommend creating Local/GPO registry settings that could conflict with an Intune policy. This conflict could lead to unexpected results.
 
 ## Related reference documents for Azure AD join scenarios
 
