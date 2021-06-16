@@ -76,7 +76,7 @@ Here are the registry settings an Intune policy would set. If you aren't using I
 
 Intune Device Policy: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies**
 
-To find the Tenant ID, see [How to find your Azure Active Directory tenant ID](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
+To find the Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
 These registry settings are pushed from Intune for user policies for your reference.
 
