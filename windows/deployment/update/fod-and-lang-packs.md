@@ -18,7 +18,7 @@ ms.custom: seo-marvel-apr2020
 
 > Applies to: Windows 10
 
-As of Windows 10 version 21H2, we are enabling non-Administrator user accounts to add both a display language and its corresponding language features.
+In Windows 10 version 21H2, non-Administrator user accounts can add both a display language and its corresponding language features.
 
 As of Windows 10 version 1709, you can't use Windows Server Update Services (WSUS) to host [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) (FODs) locally. Starting with Windows 10 version 1803, language packs can no longer be hosted on WSUS.
 
