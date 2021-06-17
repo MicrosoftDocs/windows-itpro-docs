@@ -1,0 +1,161 @@
+### YamlMime:FAQ
+metadata:
+  ms.localizationpriority: medium
+  ms.mktglfcycl: explore
+  description: Get answers to commonly asked questions about the Internet Explorer 11 Blocker Toolkit.
+  author: dansimp
+  ms.author: dansimp
+  ms.prod: ie11
+  ms.assetid:
+  ms.reviewer:
+  audience: itpro
+  manager: dansimp
+  title: Internet Explorer 11 Blocker Toolkit - Frequently Asked Questions
+  ms.sitesec: library
+  ms.date: 05/10/2018
+    
+title: Internet Explorer 11 Blocker Toolkit - Frequently Asked Questions
+summary: |
+  [!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+  
+  
+  Get answers to commonly asked questions about the Internet Explorer 11 Blocker Toolkit.
+  
+  > [!Important]
+  > If you administer your company’s environment using an update management solution, such as Windows Server Update Services (WSUS) or System Center 2012 Configuration Manager, you don’t need to use the Internet Explorer 11 Blocker Toolkit. Update management solutions let you completely manage your Windows Updates and Microsoft Updates, including your Internet Explorer 11 deployment.
+  
+  - [Automatic updates delivery process](/internet-explorer/ie11-faq/faq-ie11-blocker-toolkit#automatic-updates-delivery-process)
+  
+  - [How the Internet Explorer 11 Blocker Toolkit works](/internet-explorer/ie11-faq/faq-ie11-blocker-toolkit#how-the-internet-explorer-11-blocker-toolkit-works)
+  
+  - [Internet Explorer 11 Blocker Toolkit and other update services](/internet-explorer/ie11-faq/faq-ie11-blocker-toolkit#internet-explorer-11-blocker-toolkit-and-other-update-services)
+  
+
+sections:
+  - name: Automatic Updates delivery process
+    questions:
+      - question: |
+          Which users will receive Internet Explorer 11 important update?
+        answer: |
+          Users running either Windows 7 with Service Pack 1 (SP1) or the 64-bit version of Windows Server 2008 R2 with Service Pack 1 (SP1) will receive Internet Explorer 11 important update, if Automatic Updates are turned on. Windows Update is manually run. Automatic Updates will automatically downloand install the Internet Explorer 11 files if it’s turned on. For more information about how Internet Explorer works with Automatic Updates and information about other deployment blocking options, see [Internet Explorer 11 Delivery through automatic updates](../ie11-deploy-guide/ie11-delivery-through-automatic-updates.md).
+          
+      - question: |
+          When is the Blocker Toolkit available?
+        answer: |
+          The Blocker Toolkit is currently available from the [Microsoft DownloCenter](https://www.microsoft.com/download/details.aspx?id=40722).
+          
+      - question: |
+          Whtools cI use to manage Windows Updates and Microsoft Updates in my company?
+        answer: |
+          We encourage anyone who wants full control over their company’s deployment of Windows Updates and Microsoft Updates, to use [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus), a free tool for users of Windows Server. You calso use the more advanced configuration management tool, [System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682041(v=technet.10)).
+          
+      - question: |
+          How long does the blocker mechanism work?
+        answer: |
+          The Internet Explorer 11 Blocker Toolkit uses a registry key value to permanently turn off the automatic delivery of Internet Explorer 11. This behavior lasts long the registry key value isn’t removed or changed.
+
+      - question: |
+          Why should I use the Internet Explorer 11 Blocker Toolkit to stop delivery of Internet Explorer 11? Why can’t I just disable all of Automatic Updates?
+        answer: |
+          Automatic Updates provide you with ongoing criticsecurity and reliability updates. Turning this feature off cleave your computers more vulnerable. Instead, we suggest thyou use update management solution, such WSUS, to fully control your environment while leaving this feature running, managing how and when the updates get to your user’s computers.
+          
+          The Internet Explorer 11 Blocker Toolkit safely allows Internet Explorer 11 to downloand install in companies thcan’t use WSUS, Configuration Manager, or
+          other update management solution.
+          
+      - question: |
+          Why don’t we just block URL access to Windows Update or Microsoft Update?
+        answer: |
+          Blocking the Windows Update or Microsoft Update URLs also stops delivery of criticsecurity and reliability updates for all of the supported versions of the Windows operating system; leaving your computers more vulnerable.
+
+  - name: How the Internet Explorer 11 Blocker Toolkit works
+    questions:
+      - question: |
+          How should I test the Internet Explorer 11 Blocker Toolkit in my company?
+        answer: |
+          Because the toolkit only sets a registry key to turn on and off the delivery of Internet Explorer 11, there should be no additionimpact or side effects to your environment. No additiontesting should be necessary.
+
+      - question: |
+          What’s the registry key used to block delivery of Internet Explorer 11?
+        answer: |
+          HKLM\\SOFTWARE\\Microsoft\\Internet Explorer\\Setup\\11.0
+
+      - question: |
+          What’s the registry key name and values?
+        answer: |
+          The registry key name is **DoNotAllowIE11**, where:
+          
+          -   A value of **1** turns off the automatic delivery of Internet Explorer 11 using Automatic Updates and turns off the Express install option.
+          
+          -   Not providing a registry key, or using a value of anything other th**1**, lets the user install Internet Explorer 11 through Automatic Updates or a
+              manuupdate.
+          
+      - question: |
+          Does the Internet Explorer 11 Blocker Toolkit stop users from manually installing Internet Explorer 11?
+        answer: |
+          No. The Internet Explorer 11 Blocker Toolkit only stops computers from automatically installing Internet Explorer 11 through Automatic Updates. Users cstill downloand install Internet Explorer 11 from the Microsoft DownloCenter or from externmedia.
+
+      - question: |
+          Does the Internet Explorer 11 Blocker Toolkit stop users from automatically upgrading to Internet Explorer 11?
+        answer: |
+          Yes. The Internet Explorer 11 Blocker Toolkit also prevents Automatic Updates from automatically upgrading a computer from Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10 to Internet Explorer 11.
+
+      - question: |
+          How does the provided script work?
+        answer: |
+          The script accepts one of two command line options:
+          
+          -   **Block:** Creates the registry key thstops Internet Explorer 11 from installing through Automatic Updates.
+          
+          -   **Unblock:** Removes the registry key thstops Internet Explorer 11 from installing through Automatic Updates.
+          
+      - question: |
+          What’s the ADM template file used for?
+        answer: |
+          The Administrative Template (.adm file) lets you import the new Group Policy environment and use Group Policy Objects to centrally manage all of the computers in your company.
+
+      - question: |
+          Is the tool localized?
+        answer: |
+          No. The tool isn’t localized, it’s only available in English (en-us). However, it does work, without any modifications, on any language edition of the supported operating systems.
+
+  - name: Internet Explorer 11 Blocker Toolkit and other update services
+    questions:
+      - question: |
+          Is there a version of the Internet Explorer Blocker Toolkit thwill prevent automatic installation of IE11?
+        answer: |
+          Yes. The IE11 Blocker Toolkit is available for download. For more information, see [Toolkit to Disable Automatic Delivery of IE11](https://go.microsoft.com/fwlink/p/?LinkId=328195) on the Microsoft DownloCenter.
+          
+      - question: |
+          Does the Internet Explorer 11 blocking mechanism also block delivery of Internet Explorer 11 through update management solutions, like WSUS?
+        answer: |
+          No. You cstill deploy Internet Explorer 11 using one of the upgrade management solutions, even if the blocking mechanism is activated. The Internet Explorer 11 Blocker Toolkit is only intended for companies thdon’t use upgrade management solutions.
+
+      - question: |
+          If WSUS is set to 'auto-approve' Update Rollup packages (this is not the default configuration), how do I stop Internet Explorer 11 from automatically installing throughout my company?
+        answer: |
+          You only need to change your settings if:
+          
+          -   You use WSUS to manage updates and allow auto-approvals for Update Rollup installation.
+          
+              -and-
+          
+          -   You have computers running either Windows 7 SP1 or Windows Server 2008 R2 (SP1) with Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10 installed.
+          
+              -and-
+          
+          -   You don’t want to upgrade your older versions of Internet Explorer to Internet Explorer 11 right now.
+          
+          If these scenarios apply to your company, see [Internet Explorer 11 delivery through automatic updates](../ie11-deploy-guide/ie11-delivery-through-automatic-updates.md) for more information on how to prevent automatic installation.
+          
+          
+additionalContent: |
+
+  ## Additionresources
+
+  - [Internet Explorer 11 Blocker Toolkit download](https://www.microsoft.com/download/details.aspx?id=40722)
+
+  - [Internet Explorer 11 Ffor IT pros](./faq-for-it-pros-ie11.yml)
+
+  - [Internet Explorer 11 delivery through automatic updates](../ie11-deploy-guide/ie11-delivery-through-automatic-updates.md)
+
+  - [Internet Explorer 11 deployment guide](../ie11-deploy-guide/index.md)

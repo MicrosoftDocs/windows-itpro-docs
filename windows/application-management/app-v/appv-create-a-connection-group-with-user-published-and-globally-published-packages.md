@@ -1,7 +1,7 @@
 ---
 title: How to create a connection croup with user-published and globally published packages (Windows 10)
 description: How to create a connection croup with user-published and globally published packages.
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 07/10/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # How to create a connection croup with user-published and globally published packages

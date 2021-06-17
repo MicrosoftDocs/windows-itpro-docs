@@ -4,8 +4,8 @@ description: How to keep provisioned apps that were removed from your machine fr
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.author: dansimp
-author: dansimp
+ms.author: greglin
+author: greg-lindsay
 ms.date: 05/25/2018
 ms.reviewer: 
 manager: dansimp

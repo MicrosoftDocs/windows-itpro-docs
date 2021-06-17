@@ -59,7 +59,7 @@ In addition, we recommend using the [Set-CIPolicyVersion](/powershell/module/con
 
 ### Policy rule updates
 
-As new apps are deployed or existing apps are updated by the software publisher, you may need to make revisions to your rules to ensure that these apps run correctly. Whether policy rule updates are required will depend significantly on the types of rules your policy includes. Rules based on codesigning certificates provide the most resiliency against app changes while rules based on file attributes or hash are most likely to require updates when apps change. Alternatively, if you leverage WDAC [managed installer](use-windows-defender-application-control-with-managed-installer.md) functionality and consistently deploy all apps and their updates through your managed installer, then you are less likely to need policy updates.
+As new apps are deployed or existing apps are updated by the software publisher, you may need to make revisions to your rules to ensure that these apps run correctly. Whether policy rule updates are required will depend significantly on the types of rules your policy includes. Rules based on codesigning certificates provide the most resiliency against app changes while rules based on file attributes or hash are most likely to require updates when apps change. Alternatively, if you leverage WDAC [managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) functionality and consistently deploy all apps and their updates through your managed installer, then you are less likely to need policy updates.
 
 ## WDAC event management
 
@@ -67,7 +67,7 @@ Each time that a process is blocked by WDAC, events will be written to either th
 
 Collecting these events in a central location can help you maintain your WDAC policy and troubleshoot rule configuration problems. Event collection technologies such as those available in Windows allow administrators to subscribe to specific event channels and have the events from source computers aggregated into a forwarded event log on a Windows Server operating system collector. For more info about setting up an event subscription, see [Configure Computers to Collect and Forward Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11)).
 
-Additionally, WDAC events are collected by [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and can be queried using the [advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) feature.
+Additionally, WDAC events are collected by [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) and can be queried using the [advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) feature.
 
 ## Application and user support policy
 

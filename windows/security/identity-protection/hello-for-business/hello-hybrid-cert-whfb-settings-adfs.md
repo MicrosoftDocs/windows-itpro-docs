@@ -1,5 +1,5 @@
 ---
-title:  Configuring Hybrid Windows Hello for Business - Active Directory Federation Services (ADFS)
+title:  Configuring Hybrid Azure AD joined Windows Hello for Business - Active Directory Federation Services (ADFS)
 description: Discussing the configuration of Active Directory Federation Services (ADFS) in a Hybrid deployment of Windows Hello for Business
 keywords: identity, PIN, biometric, Hello, passport, WHFB, adfs
 ms.prod: w10
@@ -13,10 +13,10 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 01/14/2021
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Configure Windows Hello for Business: Active Directory Federation Services
+# Configure Hybrid Azure AD joined Windows Hello for Business: Active Directory Federation Services
 
 **Applies to**
 

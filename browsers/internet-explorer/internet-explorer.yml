@@ -25,7 +25,7 @@ landingContent:
           - text: System requirements and language support
             url: ./ie11-deploy-guide/system-requirements-and-language-support-for-ie11.md
           - text: Frequently asked questions
-            url: ./ie11-faq/faq-for-it-pros-ie11.md
+            url: ./ie11-faq/faq-for-it-pros-ie11.yml
           - text: Internet Explorer 11 deployment guide
             url: ./ie11-deploy-guide/index.md
           - text: Use Enterprise Mode to improve compatibility
@@ -89,7 +89,7 @@ landingContent:
           - text: Download IEAK 11
             url: ./ie11-ieak/ieak-information-and-downloads.md
           - text: Frequently asked questions about IEAK 11
-            url: ./ie11-faq/faq-ieak11.md
+            url: ./ie11-faq/faq-ieak11.yml
           - text: Customization and distribution guidelines
             url: ./ie11-ieak/licensing-version-and-features-ieak11.md#customization-guidelines           
       - linkListType: deploy
@@ -147,7 +147,7 @@ landingContent:
           - text: Disable VBScript execution in Internet Explorer for Internet Zone and Restricted Sites Zone
             url: https://support.microsoft.com/help/4012494/option-to-disable-vbscript-execution-in-internet-explorer-for-internet
           - text: Frequently asked questions about IEAK 11
-            url: ./ie11-faq/faq-ieak11.md
+            url: ./ie11-faq/faq-ieak11.yml
           - text: Internet Explorer 8, 9, 10, 11 forum
             url: https://social.technet.microsoft.com/forums/ie/home?forum=ieitprocurrentver
           - text: Contact a Microsoft support professional

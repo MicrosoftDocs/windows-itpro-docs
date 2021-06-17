@@ -1,39 +1,43 @@
 items:
-- name: Manage clients in Windows 10
-  href: index.md
+- name: Windows client management
+  href: index.yml
   items: 
-    - name: Administrative Tools in Windows 10
-      href: administrative-tools-in-windows-10.md
-      items: 
+    - name: Client management tools and settings
+      items:
+        - name: Administrative Tools in Windows 10
+          href: administrative-tools-in-windows-10.md
         - name: Use Quick Assist to help users
           href: quick-assist.md
-    - name: Create mandatory user profiles
-      href: mandatory-user-profile.md
-    - name: Connect to remote Azure Active Directory-joined PC
-      href: connect-to-remote-aadj-pc.md
-    - name: Join Windows 10 Mobile to Azure Active Directory
-      href: join-windows-10-mobile-to-azure-active-directory.md
-    - name: New policies for Windows 10
-      href: new-policies-for-windows-10.md
-    - name: Windows 10 default media removal policy
-      href: change-default-removal-policy-external-storage-media.md
-    - name: Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education
-      href: group-policies-for-enterprise-and-education-editions.md
-    - name: Manage the Settings app with Group Policy
-      href: manage-settings-app-with-group-policy.md
-    - name: What version of Windows am I running
-      href: windows-version-search.md
-    - name: Reset a Windows 10 Mobile device
-      href: reset-a-windows-10-mobile-device.md
-    - name: Transitioning to modern management
-      href: manage-windows-10-in-your-organization-modern-management.md
-    - name: Windows 10 Mobile deployment and management guide
-      href: windows-10-mobile-and-mdm.md
-    - name: Windows libraries
-      href: windows-libraries.md
-    - name: Troubleshoot Windows 10 clients
-      href: windows-10-support-solutions.md
+        - name: Create mandatory user profiles
+          href: mandatory-user-profile.md
+        - name: Connect to remote Azure Active Directory-joined PC
+          href: connect-to-remote-aadj-pc.md
+        - name: New policies for Windows 10
+          href: new-policies-for-windows-10.md
+        - name: Windows 10 default media removal policy
+          href: change-default-removal-policy-external-storage-media.md
+        - name: Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education
+          href: group-policies-for-enterprise-and-education-editions.md
+        - name: Manage the Settings app with Group Policy
+          href: manage-settings-app-with-group-policy.md
+        - name: What version of Windows am I running
+          href: windows-version-search.md
+        - name: Transitioning to modern management
+          href: manage-windows-10-in-your-organization-modern-management.md
+        - name: Windows libraries
+          href: windows-libraries.md
+    - name: Mobile device management (MDM)
       items: 
+        - name: Mobile Device Management     
+          href: mdm/index.md
+    - name: Configuration Service Provider (CSP)
+      items: 
+        - name: CSP reference     
+          href: mdm/configuration-service-provider-reference.md
+    - name: Troubleshoot Windows 10 clients
+      items: 
+        - name: Windows 10 support solutions      
+          href: windows-10-support-solutions.md
         - name: Advanced troubleshooting for Windows networking
           href: troubleshoot-networking.md
           items: 
@@ -78,7 +82,5 @@ items:
               href: troubleshoot-event-id-41-restart.md
             - name: Stop error occurs when you update the in-box Broadcom network adapter driver
               href: troubleshoot-stop-error-on-broadcom-driver-update.md
-    - name: Mobile device management for solution providers
-      href: mdm/index.md
-    - name: Change history for Client management
-      href: change-history-for-client-management.md
+
+

@@ -27,7 +27,7 @@ The Subscription Activation feature eliminates the need to manually deploy Windo
 
 ## Subscription Activation for Windows 10 Enterprise
 
-With Windows 10, version 1703 both Windows 10 Enterprise E3 and Windows 10 Enterprise E5 are available as online services via subscription. Deploying [Windows 10 Enterprise](planning/windows-10-enterprise-faq-itpro.md) in your organization can now be accomplished with no keys and no reboots.
+With Windows 10, version 1703 both Windows 10 Enterprise E3 and Windows 10 Enterprise E5 are available as online services via subscription. Deploying [Windows 10 Enterprise](planning/windows-10-enterprise-faq-itpro.yml) in your organization can now be accomplished with no keys and no reboots.
 
  If you are running Windows 10, version 1703 or later:
 
