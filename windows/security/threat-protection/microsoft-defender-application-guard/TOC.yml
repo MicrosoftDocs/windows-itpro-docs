@@ -12,4 +12,4 @@
     - name: Microsoft Defender Application Guard Extension
       href: md-app-guard-browser-extension.md
     - name: FAQ
-      href: faq-md-app-guard.md
+      href: faq-md-app-guard.yml

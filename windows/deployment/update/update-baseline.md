@@ -40,8 +40,7 @@ For the complete detailed list of all settings and their values, see the MSFT Wi
 
 ## How do I get started? 
 
-The Update Baseline toolkit makes it easy by providing a single command for IT Admins to load the baseline settings into Group Policy Management Console. You can get the [Update Baseline toolkit](https://www.microsoft.com/download/details.aspx?id=101056) from the Download Center. 
+The Update Baseline toolkit makes it easy by providing a single command for IT Admins to load the baseline settings into Group Policy Management Console. You can get the [Update Baseline toolkit](https://www.microsoft.com/download/details.aspx?id=55319) (included as a part of the Security Compliance Toolkit) from the Download Center. 
 
 Today, the Update Baseline toolkit is currently only available for use with Group Policy. 
-
 
