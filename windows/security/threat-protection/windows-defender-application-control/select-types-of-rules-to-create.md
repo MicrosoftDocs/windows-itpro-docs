@@ -120,6 +120,9 @@ To create the WDAC policy, they build a reference server on their standard hardw
 
 As part of normal operations, they will eventually install software updates, or perhaps add software from the same software providers. Because the "Publisher" remains the same on those updates and software, they will not need to update their WDAC policy. If the unsigned, internal application is updated, they must also update the WDAC policy to allow the new version.
 
+## File rule precedence order
+WDAC has a built in file rule conflict logic that translates to as precedence order. It will first processes all explicit deny rules it finds. Then, it will process all explicit allow rules. If no deny or allow rule exists, WDAC will check for [Managed Installer EA](deploy-wdac-policies-with-managed-installer.md). Lastly, if none of these exists, WDAC will fall back on [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md).
+
 ## More information about filepath rules
 
 Filepath rules do not provide the same security guarantees that explicit signer rules do, as they are based on mutable access permissions. Filepath rules are best suited for environments where most users are running as standard rather than admin. Path rules are best suited to allow paths that you expect will remain admin-writeable only. You may want to avoid path rules for directories where standard users can modify ACLs on the folder.
