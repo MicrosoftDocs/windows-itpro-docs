@@ -60,7 +60,7 @@ Windows Management Instrumentation (WMI) Group Policy Service (GPSVC) has a perf
 
 WDAG performance is improved with optimized document opening times:
 - An issue is fixed that could cause a one minute or more delay when you open a Microsoft Defender Application Guard (WDAG) Office document. This can occur when you try to open a file using a Universal Naming Convention (UNC) path or Server Message Block (SMB) share link.
-- A memory issue is fixed that could casue a WDAG container to use almost 1 GB of working set memory when the container is idle.
+- A memory issue is fixed that could cause a WDAG container to use almost 1 GB of working set memory when the container is idle.
 - The performance of Robocopy is improved when copying files over 400 MB in size.
 
 ### Windows Hello
