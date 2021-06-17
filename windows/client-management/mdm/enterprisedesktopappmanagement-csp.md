@@ -401,7 +401,7 @@ The following table MsiInstallJob describes the schema elements.
 <td>Command-line options to be used when calling MSIEXEC.exe</td>
 </tr>
 <tr class="even">
-<td>Timeout</td>
+<td>TimeOut</td>
 <td>Amount of time, in minutes that the installation process can run before the installer considers the installation may have failed and no longer monitors the installation operation.</td>
 </tr>
 <tr class="odd">
