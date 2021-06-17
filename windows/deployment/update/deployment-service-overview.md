@@ -125,7 +125,7 @@ Deployment scheduling controls are always available, but to take advantage of th
 > Deployment protections are currently in preview and available if you're using Update Compliance. If you set these policies on a a device that isn't enrolled in Update Compliance, there is no effect.
 
 - Diagnostic data is set to *Required* or *Optional*.
-- The **AllowWUfBCloudProcessing** policy is set to **1**.
+- The **AllowWUfBCloudProcessing** policy is set to **8**.
 
 #### Set the **AllowWUfBCloudProcessing** policy
 
