@@ -166,13 +166,78 @@ The most common values:
 
 > Table 6. Kerberos ticket flags.
 
--   **Failure Code** \[Type = HexInt32\]**:** hexadecimal failure code of failed TGT issue operation. The table below contains the list of the most common error codes for this event:
+-   **Failure Code** \[Type = HexInt32\]**:** hexadecimal failure code of failed TGT issue operation. The table below contains the list of the error codes for this event as defined in [RFC 4120](https://tools.ietf.org/html/rfc4120#section-7.5.9):
 
 | Code | Code Name                      | Description                                                  | Possible causes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------|--------------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0x10 | KDC\_ERR\_PADATA\_TYPE\_NOSUPP | KDC has no support for PADATA type (pre-authentication data) | Smart card logon is being attempted and the proper certificate cannot be located. This problem can happen because the wrong certification authority (CA) is being queried or the proper CA cannot be contacted in order to get Domain Controller or Domain Controller Authentication certificates for the domain controller.<br>It can also happen when a domain controller doesn’t have a certificate installed for smart cards (Domain Controller or Domain Controller Authentication templates). |
-| 0x17 | KDC\_ERR\_KEY\_EXPIRED         | Password has expired—change password to reset                | The user’s password has expired.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| 0x18 | KDC\_ERR\_PREAUTH\_FAILED      | Pre-authentication information was invalid                   | The wrong password was provided.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 0x0         | KDC\_ERR\_NONE                            | No error                                        |
+| 0x1         | KDC\_ERR\_NAME\_EXP                       | Client's entry in database has expired          |
+| 0x2         | KDC\_ERR\_SERVICE\_EXP                    | Server's entry in database has expired          |
+| 0x3         | KDC\_ERR\_BAD\_PVNO                       | Requested protocol version number not supported |
+| 0x4         | KDC\_ERR\_C\_OLD\_MAST\_KVNO              | Client's key encrypted in old master key        |
+| 0x5         | KDC\_ERR\_S\_OLD\_MAST\_KVNO              | Server's key encrypted in old master key        |
+| 0x6         | KDC\_ERR\_C\_PRINCIPAL\_UNKNOWN           | Client not found in Kerberos database           |
+| 0x7         | KDC\_ERR\_S\_PRINCIPAL\_UNKNOWN           | Server not found in Kerberos database           |
+| 0x8         | KDC\_ERR\_PRINCIPAL\_NOT\_UNIQUE          | Multiple principal entries in database          |
+| 0x9         | KDC\_ERR\_NULL\_KEY                       | The client or server has a null key             |
+| 0xa         | KDC\_ERR\_CANNOT\_POSTDATE                | Ticket not eligible for postdating              |
+| 0xb         | KDC\_ERR\_NEVER\_VALID                    | Requested starttime is later than end time      |
+| 0xc         | KDC\_ERR\_POLICY                          | KDC policy rejects request                      |
+| 0xd         | KDC\_ERR\_BADOPTION                       | KDC cannot accommodate requested option         |
+| 0xe         | KDC\_ERR\_ETYPE\_NOSUPP                   | KDC has no support for encryption type          |
+| 0xf         | KDC\_ERR\_SUMTYPE\_NOSUPP                 | KDC has no support for checksum type            |
+| 0x10         | KDC\_ERR\_PADATA\_TYPE\_NOSUPP            | KDC has no support for PADATA type (pre-authentication data)|Smart card logon is being attempted and the proper certificate cannot be located. This problem can happen because the wrong certification authority (CA) is being queried or the proper CA cannot be contacted in order to get Domain Controller or Domain Controller Authentication certificates for the domain controller.<br>It can also happen when a domain controller doesn’t have a certificate installed for smart cards (Domain Controller or Domain Controller Authentication templates).
+| 0x11         | KDC\_ERR\_TRTYPE\_NOSUPP                  | KDC has no support for transited type           |
+| 0x12         | KDC\_ERR\_CLIENT\_REVOKED                 | Clients credentials have been revoked           |
+| 0x13         | KDC\_ERR\_SERVICE\_REVOKED                | Credentials for server have been revoked        |
+| 0x14         | KDC\_ERR\_TGT\_REVOKED                    | TGT has been revoked                            |
+| 0x15         | KDC\_ERR\_CLIENT\_NOTYET                  | Client not yet valid; try again later           |
+| 0x16         | KDC\_ERR\_SERVICE\_NOTYET                 | Server not yet valid; try again later           |
+| 0x17         | KDC\_ERR\_KEY\_EXPIRED                    | Password has expired—change password to reset   |The user’s password has expired.
+| 0x18         | KDC\_ERR\_PREAUTH\_FAILED                 | Pre-authentication information was invalid      |The wrong password was provided.
+| 0x19         | KDC\_ERR\_PREAUTH\_REQUIRED               | Additional pre-authentication required          |
+| 0x1a         | KDC\_ERR\_SERVER\_NOMATCH                 | Requested server and ticket don't match         |
+| 0x1b         | KDC\_ERR\_MUST\_USE\_USER2USER            | Server principal valid for user2user only       |
+| 0x1c         | KDC\_ERR\_PATH\_NOT\_ACCEPTED             | KDC Policy rejects transited path               |
+| 0x1d         | KDC\_ERR\_SVC\_UNAVAILABLE                | A service is not available                      |
+| 0x1f         | KRB\_AP\_ERR\_BAD\_INTEGRITY              | Integrity check on decrypted field failed       |
+| 0x20         | KRB\_AP\_ERR\_TKT\_EXPIRED                | Ticket expired                                  |
+| 0x21         | KRB\_AP\_ERR\_TKT\_NYV                    | Ticket not yet valid                            |
+| 0x22         | KRB\_AP\_ERR\_REPEAT                      | Request is a replay                             |
+| 0x23         | KRB\_AP\_ERR\_NOT\_US                     | The ticket isn't for us                         |
+| 0x24         | KRB\_AP\_ERR\_BADMATCH                    | Ticket and authenticator don't match            |
+| 0x25         | KRB\_AP\_ERR\_SKEW                        | Clock skew too great                            |
+| 0x26         | KRB\_AP\_ERR\_BADADDR                     | Incorrect net address                           |
+| 0x27         | KRB\_AP\_ERR\_BADVERSION                  | Protocol version mismatch                       |
+| 0x28         | KRB\_AP\_ERR\_MSG\_TYPE                   | Invalid msg type                                |
+| 0x29         | KRB\_AP\_ERR\_MODIFIED                    | Message stream modified                         |
+| 0x2a         | KRB\_AP\_ERR\_BADORDER                    | Message out of order                            |
+| 0x2c         | KRB\_AP\_ERR\_BADKEYVER                   | Specified version of key is not available       |
+| 0x2d         | KRB\_AP\_ERR\_NOKEY                       | Service key not available                       |
+| 0x2e         | KRB\_AP\_ERR\_MUT\_FAIL                   | Mutual authentication failed                    |
+| 0x2f         | KRB\_AP\_ERR\_BADDIRECTION                | Incorrect message direction                     |
+| 0x30         | KRB\_AP\_ERR\_METHOD                      | Alternative authentication method required      |
+| 0x31         | KRB\_AP\_ERR\_BADSEQ                      | Incorrect sequence number in message            |
+| 0x32         | KRB\_AP\_ERR\_INAPP\_CKSUM                | Inappropriate type of checksum in message       |
+| 0x33         | KRB\_AP\_PATH\_NOT\_ACCEPTED              | Policy rejects transited path                   |
+| 0x34         | KRB\_ERR\_RESPONSE\_TOO\_BIG              | Response too big for UDP; retry with TCP        |
+| 0x3c         | KRB\_ERR\_GENERIC                         | Generic error (description in e-text)           |
+| 0x3d         | KRB\_ERR\_FIELD\_TOOLONG                  | Field is too long for this implementation       |
+| 0x3e         | KDC\_ERROR\_CLIENT\_NOT\_TRUSTED          | Reserved for PKINIT                             |
+| 0x3f         | KDC\_ERROR\_KDC\_NOT\_TRUSTED             | Reserved for PKINIT                             |
+| 0x40         | KDC\_ERROR\_INVALID\_SIG                  | Reserved for PKINIT                             |
+| 0x41         | KDC\_ERR\_KEY\_TOO\_WEAK                  | Reserved for PKINIT                             |
+| 0x42         | KDC\_ERR\_CERTIFICATE\_MISMATCH           | Reserved for PKINIT                             |
+| 0x43         | KRB\_AP\_ERR\_NO\_TGT                     | No TGT available to validate USER-TO-USER       |
+| 0x44         | KDC\_ERR\_WRONG\_REALM                    | Reserved for future use                         |
+| 0x45         | KRB\_AP\_ERR\_USER\_TO\_USER\_REQUIRED    | Ticket must be for USER-TO-USER                 |
+| 0x46         | KDC\_ERR\_CANT\_VERIFY\_CERTIFICATE       | Reserved for PKINIT                             |
+| 0x47         | KDC\_ERR\_INVALID\_CERTIFICATE            | Reserved for PKINIT                             |
+| 0x48         | KDC\_ERR\_REVOKED\_CERTIFICATE            | Reserved for PKINIT                             |
+| 0x49         | KDC\_ERR\_REVOCATION\_STATUS\_UNKNOWN     | Reserved for PKINIT                             |
+| 0x4a         | KDC\_ERR\_REVOCATION\_STATUS\_UNAVAILABLE | Reserved for PKINIT                             |
+| 0x4b         | KDC\_ERR\_CLIENT\_NAME\_MISMATCH          | Reserved for PKINIT                             |
+| 0x4c         | KDC\_ERR\_KDC\_NAME\_MISMATCH             | Reserved for PKINIT                             |                                                                   
 
 -   **Pre-Authentication Type** \[Type = UnicodeString\]: the code of [pre-Authentication](/previous-versions/windows/it-pro/windows-server-2003/cc772815(v=ws.10)) type that was used in TGT request.
 
