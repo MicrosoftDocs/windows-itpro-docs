@@ -215,13 +215,20 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting opts the device into the Windows enterprise data pipeline. 
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms.
 
-If you enable this setting, data collected from the device will be opted into the Windows enterprise data pipeline.
+To enable this behavior, you must complete two steps:
 
-If you disable or don't configure this setting, all data from the device will be collected and processed in accordance with our policies for the Windows standard data pipeline.
+-   Enable this policy setting
+-   Join an Azure Active Directory account to the device
 
-Configuring this setting does not change the telemetry collection level or the ability of the user to change the level. This setting only applies to the Windows operating system and apps included with Windows, not third-party apps or services running on Windows 10.
+Windows diagnostic data is collected when the **AllowTelemetry** policy setting is set to 1 – Required (Basic) or above.
+
+If you disable or do not configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft’s privacy statement at https://go.microsoft.com/fwlink/?LinkId=521839 unless you have enabled policies like 'Allow Update Compliance Processing' or 'Allow Desktop Analytics Processing”.
+
+Configuring this setting does not change the Windows diagnostic data collection level set for the device or the operation of optional analytics processor services like Desktop Analytics and Update Compliance.
+
+See the documentation at https://aka.ms/ConfigureWWD for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
 
 <!--/Description-->
 <!--ADMXMapped-->
