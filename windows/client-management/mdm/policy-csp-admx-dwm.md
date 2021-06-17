@@ -89,7 +89,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the default color for window frames when the user does not specify a color. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the default color for window frames when the user does not specify a color. 
 
 If you enable this policy setting and specify a default color, this color is used in glass window frames, if the user does not specify a color. 
 
@@ -162,7 +162,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the default color for window frames when the user does not specify a color. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the default color for window frames when the user does not specify a color. 
 
 If you enable this policy setting and specify a default color, this color is used in glass window frames, if the user does not specify a color. 
 
@@ -234,7 +234,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the appearance of window animations such as those found when restoring, minimizing, and maximizing windows. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the appearance of window animations such as those found when restoring, minimizing, and maximizing windows. 
 
 If you enable this policy setting, window animations are turned off. 
 
@@ -305,7 +305,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the appearance of window animations such as those found when restoring, minimizing, and maximizing windows. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the appearance of window animations such as those found when restoring, minimizing, and maximizing windows. 
 
 If you enable this policy setting, window animations are turned off. 
 
@@ -376,7 +376,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the ability to change the color of window frames. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the ability to change the color of window frames. 
 
 If you enable this policy setting, you prevent users from changing the default window frame color. 
 
@@ -448,7 +448,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the ability to change the color of window frames. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the ability to change the color of window frames. 
 
 If you enable this policy setting, you prevent users from changing the default window frame color. 
 
@@ -476,16 +476,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->
 

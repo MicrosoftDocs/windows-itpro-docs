@@ -17,11 +17,50 @@ ms.date: 11/01/2017
 
 The DMClient configuration service provider (CSP) is used to specify additional enterprise-specific mobile device management (MDM) configuration settings for identifying the device in the enterprise domain, for security mitigation for certificate renewal, and for server-triggered enterprise unenrollment.
 
-The following diagram shows the DMClient CSP in tree format.
-
-![dmclient csp](images/provisioning-csp-dmclient-th2.png)
-
-
+The following shows the DMClient CSP in tree format.
+```
+./Vendor/MSFT
+DMClient
+----Provider
+--------
+------------EntDeviceName
+------------ExchangeID
+------------EntDMID
+------------SignedEntDMID
+------------CertRenewTimeStamp
+------------PublisherDeviceID
+------------ManagementServiceAddress
+------------UPN
+------------HelpPhoneNumber
+------------HelpWebsite
+------------HelpEmailAddress
+------------RequireMessageSigning
+------------SyncApplicationVersion
+------------MaxSyncApplicationVersion
+------------Unenroll
+------------AADResourceID
+------------AADDeviceID
+------------EnrollmentType
+------------EnableOmaDmKeepAliveMessage
+------------HWDevID
+------------ManagementServerAddressList
+------------CommercialID
+------------Push
+----------------PFN
+----------------ChannelURI
+----------------Status
+------------Poll
+----------------IntervalForFirstSetOfRetries
+----------------NumberOfFirstRetries
+----------------IntervalForSecondSetOfRetries
+----------------NumberOfSecondRetries
+----------------IntervalForRemainingScheduledRetries
+----------------NumberOfRemainingScheduledRetries
+----------------PollOnLogin
+----------------AllUsersPollOnFirstLogin
+----Unenroll
+----UpdateManagementServiceAddress
+```
 <a href="" id="msft"></a>**./Vendor/MSFT**  
 All the nodes in this CSP are supported in the device context, except for the **ExchangeID** node, which is supported in the user context. For the device context, use the **./Device/Vendor/MSFT** path and for the user context, use the **./User/Vendor/MSFT** path.
 
@@ -43,8 +82,6 @@ Supported operation is Get.
 
 <a href="" id="provider-providerid"></a>**Provider/**<strong>*ProviderID*</strong>  
 Required. This node contains the URI-encoded value of the bootstrapped device management account’s Provider ID. Scope is dynamic. This value is set and controlled by the MDM server. As a best practice, use text that doesn’t require XML/URI escaping.
-
-For Intune, use **MS DM Server** for Windows desktop or **SCConfigMgr** for Windows mobile for the _ProviderID_.
 
 Supported operations are Get and Add.
 

@@ -20,10 +20,15 @@ This CSP was added in Windows 10, version 1703.
 > [!Note]
 > Personalization CSP is supported in Windows 10 Enterprise and Education SKUs. It works in Windows 10 Pro and Windows 10 Pro in S mode if SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set.
 
-The following diagram shows the Personalization configuration service provider in tree format.
-
-![personalization csp](images/provisioning-csp-personalization.png)
-
+The following shows the Personalization configuration service provider in tree format.
+```
+./Vendor/MSFT
+Personalization
+----DesktopImageUrl
+----DesktopImageStatus
+----LockScreenImageUrl
+----LockScreenImageStatus
+```
 <a href="" id="personalization"></a>**./Vendor/MSFT/Personalization**  
 <p style="margin-left: 20px">Defines the root node for the Personalization configuration service provider.</p>
 

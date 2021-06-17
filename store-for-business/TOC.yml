@@ -1,0 +1,86 @@
+- name: Microsoft Store for Business
+  href: index.md
+  items: 
+    - name: What's new in Microsoft Store for Business and Education
+      href: whats-new-microsoft-store-business-education.md
+    - name: Sign up and get started
+      href: sign-up-microsoft-store-for-business-overview.md
+      items: 
+        - name: Microsoft Store for Business and Microsoft Store for Education overview
+          href: microsoft-store-for-business-overview.md
+        - name: Prerequisites for Microsoft Store for Business and Education
+          href: prerequisites-microsoft-store-for-business.md
+        - name: Roles and permissions in the Microsoft Store for Business and Education
+          href: roles-and-permissions-microsoft-store-for-business.md
+        - name: "Settings reference: Microsoft Store for Business and Education"
+          href: settings-reference-microsoft-store-for-business.md
+    - name: Find and acquire apps
+      href: find-and-acquire-apps-overview.md
+      items: 
+        - name: Apps in the Microsoft Store for Business and Education
+          href: apps-in-microsoft-store-for-business.md
+        - name: Acquire apps
+          href: acquire-apps-microsoft-store-for-business.md
+        - name: Working with line-of-business apps
+          href: working-with-line-of-business-apps.md
+    - name: Distribute apps
+      href: distribute-apps-to-your-employees-microsoft-store-for-business.md
+      items: 
+        - name: Distribute apps using your private store
+          href: distribute-apps-from-your-private-store.md
+        - name: Assign apps to employees
+          href: assign-apps-to-employees.md
+        - name: Distribute apps with a management tool
+          href: distribute-apps-with-management-tool.md
+        - name: Distribute offline apps
+          href: distribute-offline-apps.md
+    - name: Manage products and services
+      href: manage-apps-microsoft-store-for-business-overview.md
+      items: 
+        - name: App inventory management
+          href: app-inventory-management-microsoft-store-for-business.md
+        - name: Manage orders
+          href: manage-orders-microsoft-store-for-business.md
+        - name: Manage access to private store
+          href: manage-access-to-private-store.md
+        - name: Manage private store settings
+          href: manage-private-store-settings.md
+        - name: Configure MDM provider
+          href: configure-mdm-provider-microsoft-store-for-business.md
+        - name: Manage Windows device deployment with Windows Autopilot Deployment
+          href: add-profile-to-devices.md
+        - name: Microsoft Store for Business and Education PowerShell module - preview
+          href: microsoft-store-for-business-education-powershell-module.md
+        - name: Manage software purchased with Microsoft Products and Services agreement in Microsoft Store for Business
+          href: manage-mpsa-software-microsoft-store-for-business.md
+        - name: Working with solution providers
+          href: /microsoft-365/commerce/manage-partners
+    - name: Billing and payments
+      href: billing-payments-overview.md
+      items: 
+        - name: Understand your invoice
+          href: billing-understand-your-invoice-msfb.md
+        - name: Payment methods
+          href: payment-methods.md
+        - name: Understand billing profiles
+          href: billing-profile.md
+    - name: Manage settings in the Microsoft Store for Business and Education
+      href: manage-settings-microsoft-store-for-business.md
+      items: 
+        - name: Update account settings
+          href: update-microsoft-store-for-business-account-settings.md
+        - name: Manage user accounts
+          href: manage-users-and-groups-microsoft-store-for-business.md
+    - name: Device Guard signing portal
+      href: device-guard-signing-portal.md
+      items: 
+        - name: Add unsigned app to code integrity policy
+          href: add-unsigned-app-to-code-integrity-policy.md
+        - name: Sign code integrity policy with Device Guard signing
+          href: sign-code-integrity-policy-with-device-guard-signing.md
+    - name: Troubleshoot
+      href: troubleshoot-microsoft-store-for-business.md
+    - name: Notifications
+      href: notifications-microsoft-store-business.md
+    - name: Change history
+      href: sfb-change-history.md

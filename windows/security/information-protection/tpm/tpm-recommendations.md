@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -56,7 +56,7 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 
   - TPM 2.0 supports newer algorithms, which can improve drive signing and key generation performance. For the full list of supported algorithms, see the [TCG Algorithm Registry](http://www.trustedcomputinggroup.org/tcg-algorithm-registry/). Some TPMs do not support all algorithms.
 
-  - For the list of algorithms that Windows supports in the platform cryptographic storage provider, see [CNG Cryptographic Algorithm Providers](https://msdn.microsoft.com/library/windows/desktop/bb931354(v=vs.85).aspx).
+  - For the list of algorithms that Windows supports in the platform cryptographic storage provider, see [CNG Cryptographic Algorithm Providers](/windows/win32/seccertenroll/cng-cryptographic-algorithm-providers).
 
   - TPM 2.0 achieved ISO standardization ([ISO/IEC 11889:2015](https://blogs.microsoft.com/cybertrust/2015/06/29/governments-recognize-the-importance-of-tpm-2-0-through-iso-adoption/)).
 
@@ -73,7 +73,7 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 > [!NOTE]
 > TPM 2.0 is not supported in Legacy and CSM Modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as Native UEFI only. The Legacy and Compatibility Support Module (CSM) options must be disabled. For added security Enable the Secure Boot feature.
 
-> Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](https://docs.microsoft.com/windows/deployment/mbr-to-gpt) before changing the BIOS mode which will prepare the OS and the disk to support UEFI.
+> Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](/windows/deployment/mbr-to-gpt) before changing the BIOS mode which will prepare the OS and the disk to support UEFI.
 
 ## Discrete, Integrated or Firmware TPM?
 
@@ -95,7 +95,7 @@ For end consumers, TPM is behind the scenes but is still very relevant. TPM is u
 
 ### Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
-- Since July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of a existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7 of the [Minimum hardware requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview) page). The requirement to enable TPM 2.0 only applies to the manufacturing of new devices. For TPM recommendations for specific Windows features, see [TPM and Windows Features](#tpm-and-windows-features).
+- Since July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of a existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7 of the [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview) page). The requirement to enable TPM 2.0 only applies to the manufacturing of new devices. For TPM recommendations for specific Windows features, see [TPM and Windows Features](#tpm-and-windows-features).
 
 ### IoT Core
 
@@ -112,7 +112,7 @@ The following table defines which Windows features require TPM support.
  Windows Features | TPM Required | Supports TPM 1.2  | Supports TPM 2.0  | Details  |
 -|-|-|-|-
  Measured Boot | Yes | Yes | Yes | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot
- BitLocker | No | Yes | Yes | TPM 1.2 or 2.0 are supported but TPM 2.0 is recommended. [Automatic Device Encryption requires Modern Standby](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) including TPM 2.0 support
+ BitLocker | No | Yes | Yes | TPM 1.2 or 2.0 are supported but TPM 2.0 is recommended. [Automatic Device Encryption requires Modern Standby](../bitlocker/bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption) including TPM 2.0 support
  Device Encryption | Yes | N/A | Yes | Device Encryption requires Modern Standby/Connected Standby certification, which requires TPM 2.0.
  Windows Defender Application Control (Device Guard) | No | Yes | Yes
  Windows Defender System Guard | Yes | No | Yes

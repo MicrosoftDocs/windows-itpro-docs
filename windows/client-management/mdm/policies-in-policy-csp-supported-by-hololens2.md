@@ -16,9 +16,9 @@ ms.date: 10/08/2020
 
 > [!div class="op_single_selector"]
 >
-> - [HoloLens 2](policy-csps-supported-by-hololens2.md)
-> - [HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)
-> - [HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
+> - [HoloLens 2]()
+> - [HoloLens (1st gen) Commercial Suite](./policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md)
+> - [HoloLens (1st gen) Development Edition](./policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md)
 >
 
 - [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts.md#accounts-allowmicrosoftaccountconnection)
@@ -83,13 +83,13 @@ ms.date: 10/08/2020
 - [Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-forceallowtheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-forcedenytheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-userincontroloftheseapps) <sup>8</sup>
-- [RemoteLock/Lock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp) <sup>9</sup>
+- [RemoteLock/Lock](./remotelock-csp.md) <sup>9</sup>
 - [Search/AllowSearchToUseLocation](policy-csp-search.md#search-allowsearchtouselocation)
 - [Security/AllowAddProvisioningPackage](policy-csp-security.md#security-allowaddprovisioningpackage) <sup>9</sup>
 - [Security/AllowRemoveProvisioningPackage](policy-csp-security.md#security-allowremoveprovisioningpackage) <sup>9</sup>
 - [Settings/AllowDateTime](policy-csp-settings.md#settings-allowdatetime)
 - [Settings/AllowVPN](policy-csp-settings.md#settings-allowvpn)
-- [Settings/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) <sup>9</sup>
+- [Settings/PageVisibilityList](./policy-csp-settings.md#settings-pagevisibilitylist) <sup>9</sup>
 - [Speech/AllowSpeechModelUpdate](policy-csp-speech.md#speech-allowspeechmodelupdate)
 - [System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)
 - [System/AllowLocation](policy-csp-system.md#system-allowlocation)
@@ -124,7 +124,7 @@ Footnotes:
 - 6 - Available in Windows 10, version 1903.
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
-- 9 - Available in [Windows Holographic, version 20H2](https://docs.microsoft.com/hololens/hololens-release-notes#windows-holographic-version-20h2)
+- 9 - Available in [Windows Holographic, version 20H2](/hololens/hololens-release-notes#windows-holographic-version-20h2)
 
 ## Related topics
 

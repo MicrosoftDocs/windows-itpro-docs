@@ -130,6 +130,20 @@
       "template_folder": "_themes"
     },
     {
+      "docset_name": "SV",
+      "build_source_folder": "windows/sv",
+      "build_output_subfolder": "SV",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "win-access-protection",
       "build_source_folder": "windows/access-protection",
       "build_output_subfolder": "win-access-protection",
@@ -390,7 +404,7 @@
     "elizapo@microsoft.com"
   ],
   "sync_notification_subscribers": [
-    "daniha@microsoft.com"
+    "dstrome@microsoft.com"
   ],
   "branches_to_filter": [
     ""
@@ -431,9 +445,9 @@
       "template_folder": "_themes.pdf"
     }
   },
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
   "docs_build_engine": {
     "name": "docfx_v3"
-  }
+  },
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false
 }

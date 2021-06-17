@@ -4,7 +4,7 @@ description: Best practices for the Network Security Allow PKU2U authentication 
 ms.assetid: e04a854e-d94d-4306-9fb3-56e9bd7bb926
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Network security: Allow PKU2U authentication requests to this computer to use online identities
@@ -73,17 +74,18 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Enabling this policy setting allows a user’s account on one computer to be associated with an online identity, such as Microsoft account. That account can then log on to a peer device (if the peer device is likewise configured) without the use of a Windows logon account (domain or local). This setup is beneficial for workgroups or home groups. But in a domain-joined environment, it might circumvent established security policies.
+Enabling this policy setting allows a user’s account on one computer to be associated with an online identity, such as Microsoft account or an Azure AD account. That account can then log on to a peer device (if the peer device is likewise configured) without the use of a Windows logon account (domain or local). This setup is not only beneficial, but required for Azure AD joined devices, where they are signed in with an online identity and are issued certificates by Azure AD. This policy may not be relevant for an *on-premises only* environment and might circumvent established security policies. However, it does not pose any threats in a hybrid environment where Azure AD is used as it relies on the user's online identity and Azure AD to authenticate. 
 
 ### Countermeasure
 
-Set this policy to *Disabled* or don't configure this security policy for domain-joined devices.
+Set this policy to *Disabled* or don't configure this security policy for *on-premises only* environments.
 
 ### Potential impact
 
-If you don't set or you disable this policy, the PKU2U protocol won't be used to authenticate between peer devices, which forces users to follow domain-defined access control policies. If you enable this policy, you allow your users to authenticate by using local certificates between systems that aren't part of a domain that uses PKU2U. This configuration allows users to share resources between devices.
+If you don't set or you disable this policy, the PKU2U protocol won't be used to authenticate between peer devices, which forces users to follow domain-defined access control policies. This is a valid configuration in *on-premises only* environments. Please be aware that some roles/features (such as Failover Clustering) do not utilize a domain account for its PKU2U authentication and will cease to function properly when disabling this policy.
 
-Please be aware that some roles/features (such as Failover Clustering) do not utilize a domain account for its PKU2U authentication and will cease to function properly when disabling this policy.
+If you enable this policy in a hybrid environment, you allow your users to authenticate by using certificates issued by Azure AD and their online identity between the corresponding devices. This configuration allows users to share resources between such devices. Without enabling this policy, remote connections to an Azure AD joined device will not work.
+
 
 ## Related topics
 

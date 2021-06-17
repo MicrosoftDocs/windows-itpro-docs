@@ -9,10 +9,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 10/02/2018
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -26,7 +26,7 @@ ms.topic: article
 ## Full XML sample
 
 >[!NOTE]
->Updated for Windows 10, version 1903, and Windows 10 Insider Preview (19H2, 20H1 builds).
+>Updated for Windows 10, version 1903, 1909, and 2004.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -417,8 +417,8 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
 
 ```
 
-## [Preview] Folder Access sample xml
-In Windows 10, version 1809, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granulatity and easier use, and is available in Windows 10 Insider Preview (19H2, 20H1 builds).
+## Folder Access sample xml
+In Windows 10, version 1809, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granularity and easier use, and is available in Windows 10 version 2009 and later.
 
 IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
 
@@ -899,7 +899,7 @@ Here is the schema for new features introduced in Windows 10 1809 release
 </xs:schema>
 ```
 
-Schema for Windows 10 Insider Preview (19H2, 20H1 builds)
+Schema for Windows 10, version 1909 and later
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema

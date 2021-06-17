@@ -1,7 +1,7 @@
 ---
 title: Changing the Frequency of UE-V Scheduled Tasks
 description: Learn how to create a script that uses the Schtasks.exe command-line options so you can change the frequency of UE-V scheduled tasks.
-author: trudyha
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -34,7 +34,7 @@ These tasks must remain enabled, because UE-V cannot function without them.
 
 These scheduled tasks are not configurable with the UE-V tools. Administrators who want to change the scheduled task for these items can create a script that uses the Schtasks.exe command-line options.
 
-For more information about Schtasks.exe, see [Schtasks](https://technet.microsoft.com/library/cc725744(v=ws.11).aspx).
+For more information about Schtasks.exe, see [Schtasks](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc725744(v=ws.11)).
 
 ## UE-V Scheduled Tasks
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Application Guard Extension
 description: Learn about the Microsoft Defender Application Guard browser extension, which extends Application Guard's protection to more web browsers.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,6 +12,7 @@ ms.date: 06/12/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Microsoft Defender Application Guard Extension
@@ -25,7 +26,7 @@ ms.custom: asr
 [Microsoft Defender Application Guard](md-app-guard-overview.md) provides Hyper-V isolation on Windows 10, to protect users from potentially harmful content on the web. The extension helps Application Guard protect users running other web browsers.
 
 > [!TIP]
-> Application Guard, by default, offers [native support](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard) to both Microsoft Edge and Internet Explorer. These browsers do not need the extension described here for Application Guard to protect them.
+> Application Guard, by default, offers [native support](/deployedge/microsoft-edge-security-windows-defender-application-guard) to both Microsoft Edge and Internet Explorer. These browsers do not need the extension described here for Application Guard to protect them.
 
 Microsoft Defender Application Guard Extension defends devices in your organization from advanced attacks, by redirecting untrusted websites to an isolated version of [Microsoft Edge](https://www.microsoft.com/edge). If an untrusted website turns out to be malicious, it remains within Application Guard's secure container, keeping the device protected.
 
@@ -48,7 +49,7 @@ Enterprise administrators running Application Guard under managed mode should fi
 From there, the steps for installing the extension are similar whether Application Guard is running in managed or standalone mode.
 
 1. On the local device, download and install the Application Guard extension for Google [Chrome](https://chrome.google.com/webstore/detail/application-guard-extensi/mfjnknhkkiafjajicegabkbimfhplplj/) and/or Mozilla [Firefox](https://addons.mozilla.org/en-US/firefox/addon/application-guard-extension/).
-1. Install the [Windows Defender Application Guard companion app](https://www.microsoft.com/p/windows-defender-application-guard-companion/9n8gnlc8z9c8#activetab=pivot:overviewtab) from the Microsoft Store. This companion app enables Application Guard to work with web browsers other than Microsoft Edge or Internet Explorer.
+1. Install the [Microsoft Defender Application Guard companion app](https://www.microsoft.com/p/windows-defender-application-guard-companion/9n8gnlc8z9c8#activetab=pivot:overviewtab) from the Microsoft Store. This companion app enables Application Guard to work with web browsers other than Microsoft Edge or Internet Explorer.
 1. Restart the device.
 
 ### Recommended browser group policies

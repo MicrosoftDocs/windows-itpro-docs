@@ -22,21 +22,21 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows 10
 
-This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Configuration Manager (ConfigMgr) [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT). 
+This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Manager (ConfigMgr) [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT). 
 
 ## Prerequisites
 
 In this topic, you will use [components](#components-of-configuration-manager-operating-system-deployment) of an existing Configuration Manager infrastructure to prepare for Windows 10 OSD. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
 
 - Configuration Manager current branch + all security and critical updates are installed.
-  - Note: Procedures in this guide use ConfigMgr 1910. For information about the version of Windows 10 supported by ConfigMgr, see [Support for Windows 10](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
-- The [Active Directory Schema has been extended](https://docs.microsoft.com/configmgr/core/plan-design/network/extend-the-active-directory-schema) and System Management container created.
-- Active Directory Forest Discovery and Active Directory System Discovery are [enabled](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/configure-discovery-methods).
-- IP range [boundaries and a boundary group](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups) for content and site assignment have been created.
-- The Configuration Manager [reporting services](https://docs.microsoft.com/configmgr/core/servers/manage/configuring-reporting) point role has been added and configured.
+  - Note: Procedures in this guide use ConfigMgr 1910. For information about the version of Windows 10 supported by ConfigMgr, see [Support for Windows 10](/configmgr/core/plan-design/configs/support-for-windows-10).
+- The [Active Directory Schema has been extended](/configmgr/core/plan-design/network/extend-the-active-directory-schema) and System Management container created.
+- Active Directory Forest Discovery and Active Directory System Discovery are [enabled](/configmgr/core/servers/deploy/configure/configure-discovery-methods).
+- IP range [boundaries and a boundary group](/configmgr/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups) for content and site assignment have been created.
+- The Configuration Manager [reporting services](/configmgr/core/servers/manage/configuring-reporting) point role has been added and configured.
 - A file system folder structure and Configuration Manager console folder structure for packages has been created. Steps to verify or create this folder structure are [provided below](#review-the-sources-folder-structure).
-- The [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (including USMT) version 1903, Windows PE add-on, WSIM 1903 update, [MDT](https://www.microsoft.com/download/details.aspx?id=54259) version 8456, and DaRT 10 (part of [MDOP 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015)) are installed.
-- The [CMTrace tool](https://docs.microsoft.com/configmgr/core/support/cmtrace) (cmtrace.exe) is installed on the distribution point.
+- The [Windows ADK](/windows-hardware/get-started/adk-install) (including USMT) version 1903, Windows PE add-on, WSIM 1903 update, [MDT](https://www.microsoft.com/download/details.aspx?id=54259) version 8456, and DaRT 10 (part of [MDOP 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015)) are installed.
+- The [CMTrace tool](/configmgr/core/support/cmtrace) (cmtrace.exe) is installed on the distribution point.
   - Note: CMTrace is automatically installed with the current branch of Configuration Manager at **Program Files\Microsoft Configuration Manager\tools\cmtrace.exe**. In previous releases of ConfigMgr it was necessary to install the [Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012) separately to get the CMTrace tool, but this is no longer needed.  Configuraton Manager version 1910 installs version 5.0.8913.1000 of the CMTrace tool.
 
 For the purposes of this guide, we will use three server computers: DC01, CM01 and HV01. 
@@ -77,7 +77,7 @@ ForEach($entry in $oulist){
 }
 ```
 
-Next, copy the following list of OU names and paths into a text file and save it as <b>C:\Setup\Scripts\oulist.txt</b>
+Next, copy the following list of OU names and paths into a text file and save it as **C:\Setup\Scripts\oulist.txt**
 
 ```text
 OUName,OUPath
@@ -266,7 +266,7 @@ On **CM01**:
     Configure the CM01 distribution point for PXE.
 
     >[!NOTE]
-    >If you select **Enable a PXE responder without Windows Deployment Service**, then WDS will not be installed, or if it is already installed it will be suspended, and the **ConfigMgr PXE Responder Service** (SccmPxe) will be used instead of WDS. The ConfigMgr PXE Responder does not support multicast. For more information, see [Install and configure distribution points](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe).
+    >If you select **Enable a PXE responder without Windows Deployment Service**, then WDS will not be installed, or if it is already installed it will be suspended, and the **ConfigMgr PXE Responder Service** (SccmPxe) will be used instead of WDS. The ConfigMgr PXE Responder does not support multicast. For more information, see [Install and configure distribution points](/configmgr/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe).
 
 4.  Using the CMTrace tool, review the C:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Look for ConfigurePXE and CcmInstallPXE lines.
 
@@ -386,7 +386,7 @@ You can create reference images for Configuration Manager in Configuration Manag
 [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
 [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
 [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Create a task sequence with Configuration Manager and MDT](./create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
 [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
 [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)

@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 04/16/2020
 ms.reviewer: 
@@ -16,19 +16,38 @@ manager: dansimp
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it is also supported in Windows 10 Pro.
 
 > [!NOTE]
-> Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.  
+> Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.
+> 
 > You must send all the settings together in a single SyncML to be effective.
 
 A Get operation on any of the settings, except for RequireDeviceEncryption and RequireStorageCardEncryption, returns
 the setting configured by the admin.
 
-For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if Trusted Platform Module (TPM) protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that the a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
+For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if Trusted Platform Module (TPM) protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
 
-The following diagram shows the BitLocker configuration service provider in tree format.
-
-![BitLocker csp](images/provisioning-csp-bitlocker.png)
-
-
+The following shows the BitLocker configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+BitLocker
+----RequireStorageCardEncryption
+----RequireDeviceEncryption
+----EncryptionMethodByDriveType
+----SystemDrivesRequireStartupAuthentication
+----SystemDrivesMinimumPINLength
+----SystemDrivesRecoveryMessage
+----SystemDrivesRecoveryOptions
+----FixedDrivesRecoveryOptions
+----FixedDrivesRequireEncryption
+----RemovableDrivesRequireEncryption
+----AllowWarningForOtherDiskEncryption
+----AllowStandardUserEncryption
+----ConfigureRecoveryPasswordRotation
+----RotateRecoveryPasswords
+----Status
+--------DeviceEncryptionStatus
+--------RotateRecoveryPasswordsStatus
+--------RotateRecoveryPasswordsRequestID
+```
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
 Defines the root node for the BitLocker configuration service provider.
 <!--Policy-->
@@ -45,7 +64,6 @@ Allows the administrator to require storage card encryption on the device. This 
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -103,7 +121,6 @@ Allows the administrator to require encryption to be turned on by using BitLocke
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -170,7 +187,6 @@ Allows you to set the default encryption method for each of the different drive 
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -225,18 +241,18 @@ EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for remov
   If you want to disable this policy use the following SyncML: 
 
 ```xml
-                          <Replace>
-                         <CmdID>$CmdID$</CmdID>
-                           <Item>
-                             <Target>
-                                 <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethodByDriveType</LocURI>
-                             </Target>
-                             <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
-                             </Meta>
-                             <Data><disabled/></Data>
-                           </Item>
-                         </Replace>
+<Replace>
+  <CmdID>$CmdID$</CmdID>
+    <Item>
+      <Target>
+          <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethodByDriveType</LocURI>
+      </Target>
+      <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+      </Meta>
+      <Data><disabled/></Data>
+    </Item>
+</Replace>
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
@@ -255,7 +271,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Require addition
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -264,7 +280,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Require addition
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -299,6 +315,10 @@ If you disable or do not configure this setting, users can configure only basic 
 
 > [!NOTE]
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
+
+> [!NOTE] 
+> Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern 
+> Standby devices will not be able to configure a Startup PIN using this CSP. Users are required to manually configure the PIN.
 
 Sample value for this node to enable this policy is:
 
@@ -359,7 +379,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Configure minimu
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -368,7 +388,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Configure minimu
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -436,7 +456,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Configure pre-bo
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -445,7 +465,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Configure pre-bo
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -462,7 +482,7 @@ ADMX Info:
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
-This setting lets you configure the entire recovery message or replace the existing URL that are displayed on the pre-boot key recovery screen when the OS drive is locked.
+This setting lets you configure the entire recovery message or replace the existing URL that is displayed on the pre-boot key recovery screen when the OS drive is locked.
 
 
 If you set the value to "1" (Use default recovery message and URL), the default BitLocker recovery message and URL will be displayed in the pre-boot key recovery screen. If you have previously configured a custom recovery message or URL and want to revert to the default message, you must keep the policy enabled and set the value "1" (Use default recovery message and URL).</o>
@@ -525,7 +545,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLo
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -534,7 +554,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLo
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -622,7 +642,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLo
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -631,7 +651,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLo
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -728,7 +748,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Deny write acces
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+   
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -737,7 +757,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Deny write acces
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -797,7 +817,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Deny write acces
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -806,7 +826,7 @@ This setting is a direct mapping to the Bitlocker Group Policy "Deny write acces
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table>
 <!--/SupportedSKUs-->
@@ -869,7 +889,7 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is also set to 1.
 <!--/Description-->
 > [!IMPORTANT]
-> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview).
+> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](/windows/device-security/bitlocker/bitlocker-overview).
 
 > [!Warning]
 > When you enable BitLocker on a device with third-party encryption, it may render the device unusable and require you to reinstall Windows.
@@ -882,7 +902,7 @@ Allows the admin to disable the warning prompt for other disk encryption on the 
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -891,7 +911,7 @@ Allows the admin to disable the warning prompt for other disk encryption on the 
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -946,7 +966,7 @@ If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDe
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -955,7 +975,7 @@ If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDe
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -1001,7 +1021,7 @@ This setting initiates a client-driven recovery password refresh after an OS dri
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1010,7 +1030,7 @@ This setting initiates a client-driven recovery password refresh after an OS dri
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -1056,7 +1076,7 @@ Each server-side recovery key rotation is represented by a request ID. The serve
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1065,7 +1085,7 @@ Each server-side recovery key rotation is represented by a request ID. The serve
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -1101,7 +1121,7 @@ This node reports compliance state of device encryption on the system.
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1110,7 +1130,7 @@ This node reports compliance state of device encryption on the system.
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -1126,12 +1146,12 @@ Supported values:
 |-----|------------|
 | 0 |The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
 | 1 |The encryption method of the OS volume doesn't match the BitLocker policy.|
-| 2 |The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
+| 2 |The OS volume is unprotected.|
 | 3 |The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.|
 | 4 |The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.|
 | 5 |The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.|
 | 6 |The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.|
-| 7 |The OS volume is unprotected.|
+| 7 |The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
 | 8 |Recovery key backup failed.|
 | 9 |A fixed drive is unprotected.|
 | 10 |The encryption method of the fixed drive doesn't match the BitLocker policy.|
@@ -1169,7 +1189,7 @@ Status code can be one of the following:
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1178,7 +1198,7 @@ Status code can be one of the following:
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -1204,7 +1224,7 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
     <th>Enterprise</th>
     <th>Education</th>
     <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1213,7 +1233,7 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    
 </tr>
 </table> 
 

@@ -4,9 +4,9 @@ description: This section describes the UniversalAppInstall settings that you ca
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.reviewer: 
 manager: dansimp
@@ -18,7 +18,7 @@ manager: dansimp
 Use UniversalAppInstall settings to install Windows apps from the Microsoft Store or a hosted location. 
 
 >[!NOTE]
->You can only use the Windows provisioning settings and provisioning packages for apps where you have the available installation files, namely with sideloaded apps that have an offline license. [Learn more about offline app distribution.](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)
+>You can only use the Windows provisioning settings and provisioning packages for apps where you have the available installation files, namely with sideloaded apps that have an offline license. [Learn more about offline app distribution.](/microsoft-store/distribute-offline-apps)
 
 ## Applies to
 
@@ -32,7 +32,7 @@ Use UniversalAppInstall settings to install Windows apps from the Microsoft Stor
 
 ## DeviceContextApp
 
-Enter an app package family name to install an app for all users of the device. You can use the [Get-AppxPackage cmdlet](https://technet.microsoft.com/itpro/powershell/windows/appx/get-appxpackage) to get the package family name for an installed app.
+Enter an app package family name to install an app for all users of the device. You can use the [Get-AppxPackage cmdlet](/powershell/module/appx/get-appxpackage) to get the package family name for an installed app.
 
 >[!NOTE]
 >For XAP files, enter the product ID.
@@ -47,7 +47,7 @@ For each app that you add to the package, configure the settings in the followin
 | LaunchAppAtLogin | - Do not launch app</br>- Launch app  | Set the value for app behavior when a user signs in.  |
 | OptionalPackageFiles | additional files required by the package  | Browse to, select, and add the optional package files.  |
 
-For more information on deployment options, see [DeploymentOptions Enum](https://docs.microsoft.com/uwp/api/windows.management.deployment.deploymentoptions).
+For more information on deployment options, see [DeploymentOptions Enum](/uwp/api/windows.management.deployment.deploymentoptions).
 
 ## DeviceContextAppLicense
 
@@ -68,8 +68,8 @@ Use to install an app from the Microsoft Store for Business.
 Setting | Description
 --- | ---
 Flags | Description not available at this time. 
-ProductID | Enter the product ID. [Learn how to find the product ID.](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-education-powershell-module#view-items-in-products-and-services)
-SkuID | Enter the SKU ID. [Learn how to find the SKU ID.](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-education-powershell-module#view-items-in-products-and-services)
+ProductID | Enter the product ID. [Learn how to find the product ID.](/microsoft-store/microsoft-store-for-business-education-powershell-module#view-items-in-products-and-services)
+SkuID | Enter the SKU ID. [Learn how to find the SKU ID.](/microsoft-store/microsoft-store-for-business-education-powershell-module#view-items-in-products-and-services)
 
 ## UserContextApp
 

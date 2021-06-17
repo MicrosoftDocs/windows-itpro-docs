@@ -60,7 +60,7 @@ In the issued AIK certificate, a special OID is added to attest that endorsement
 [Endorsement Key](#endorsement-key), [Storage Root Key](#storage-root-key), [Trusted Platform Module](#trusted-platform-module)
 
 ### More information
-- [Windows Client Certificate Enrollment Protocol: Glossary](https://msdn.microsoft.com/library/cc249746.aspx#gt_70efa425-6b46-462f-911d-d399404529ab)
+- [Windows Client Certificate Enrollment Protocol: Glossary](/openspecs/windows_protocols/ms-wcce/719b890d-62e6-4322-b9b1-1f34d11535b4#gt_70efa425-6b46-462f-911d-d399404529ab)
 - [TPM Library Specification](https://trustedcomputinggroup.org/resource/tpm-library-specification/)
 
 
@@ -71,7 +71,7 @@ Azure AD Join is intended for organizations that desire to be cloud-first or clo
 [Join Type](#join-type), [Hybrid Azure AD Joined](#hybrid-azure-ad-joined)
 
 ### More information
-- [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+- [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction).
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Azure AD Registered
@@ -80,7 +80,7 @@ The goal of Azure AD registered devices is to provide you with support for the B
 [Azure AD Joined](#azure-ad-joined), [Hybrid Azure AD Joined](#hybrid-azure-ad-joined), [Join Type](#join-type)
 
 ### More information
-- [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction)
+- [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction)
 
 
 [Return to Top](hello-how-it-works-technology.md)
@@ -105,10 +105,10 @@ The Windows Hello for Business Cloud deployment is exclusively for organizations
 In Windows 10, Cloud Experience Host is an application used while joining the workplace environment or Azure AD for rendering the experience when collecting your company-provided credentials. Once you enroll your device to your workplace environment or Azure AD, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC. 
 
 ### Related topics
-[Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification), [Managed Windows Hello in Organization](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-manage-in-organization)
+[Windows Hello for Business](./hello-identity-verification.md), [Managed Windows Hello in Organization](./hello-manage-in-organization.md)
 
 ### More information
-- [Windows Hello for Business and Device Registration](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-device-registration)
+- [Windows Hello for Business and Device Registration](./hello-how-it-works-device-registration.md)
 
 [Return to Top](hello-how-it-works-technology.md)
 
@@ -144,7 +144,7 @@ For certain devices that use firmware-based TPM produced by Intel or Qualcomm, t
 [Attestation Identity Keys](#attestation-identity-keys), [Storage Root Key](#storage-root-key), [Trusted Platform Module](#trusted-platform-module)
 
 ### More information
-- [Understand the TPM endorsement key](https://go.microsoft.com/fwlink/p/?LinkId=733952).
+- [Understand the TPM endorsement key](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770443(v=ws.11)).
 - [TPM Library Specification](https://trustedcomputinggroup.org/resource/tpm-library-specification/)
 
 [Return to Top](hello-how-it-works-technology.md)
@@ -155,14 +155,14 @@ Primarily for large enterprise organizations with more complex authentication re
 [Hybrid Deployment](#hybrid-deployment), [Managed Environment](#managed-environment), [Pass-through authentication](#pass-through-authentication), [Password Hash Sync](#password-hash-sync)
 
 ### More information
-- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)
+- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](/azure/security/azure-ad-choose-authn)
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Hybrid Azure AD Joined
 For more than a decade, many organizations have used the domain join to their on-premises Active Directory to enable:
 - IT departments to manage work-owned devices from a central location.
 - Users to sign in to their devices with their Active Directory work or school accounts. 
-Typically, organizations with an on-premises footprint rely on imaging methods to provision devices, and they often use Microsoft Endpoint Configuration Manager or group policy (GP) to manage them.
+Typically, organizations with an on-premises footprint rely on imaging methods to provision devices, and they often use or group policy (GP) to manage them.
 
 If your environment has an on-premises AD footprint and you also want benefit from the capabilities provided by Azure Active Directory, you can implement hybrid Azure AD joined devices. These are devices that are both, joined to your on-premises Active Directory and your Azure Active Directory.
 
@@ -170,7 +170,7 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 [Azure AD Joined](#azure-ad-joined), [Azure AD Registered](#azure-ad-registered), [Hybrid Deployment](#hybrid-deployment)
 
 ### More information
-- [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction)
+- [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction)
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Hybrid Deployment
@@ -196,7 +196,7 @@ Joining a device is an extension to registering a device. This means, it provide
 [Azure AD Joined](#azure-ad-joined), [Azure AD Registered](#azure-ad-registered), [Hybrid Azure AD Joined](#hybrid-azure-ad-joined)
 
 ### More information
-- [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction)
+- [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction)
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Key Trust
@@ -234,7 +234,7 @@ Provides a simple password validation for Azure AD authentication services using
 
 
 ### More information
-- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)
+- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](/azure/security/azure-ad-choose-authn)
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Password Hash Sync
@@ -244,7 +244,7 @@ The simplest way to enable authentication for on-premises directory objects in A
 [Federated Environment](#federated-environment), [Managed Environment](#managed-environment), [Pass-through authentication](#pass-through-authentication)
 
 ### More information
-- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)
+- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](/azure/security/azure-ad-choose-authn)
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Primary Refresh Token
@@ -252,7 +252,7 @@ SSO relies on special tokens obtained for each of the types of applications abov
 
 The PRT is initially obtained during Windows Logon (user sign-in/unlock) in a similar way the Kerberos TGT is obtained. This is true for both Azure AD joined and hybrid Azure AD joined devices. In personal devices registered with Azure AD, the PRT is initially obtained upon Add Work or School Account (in a personal device the account to unlock the device is not the work account but a consumer account e.g. hotmail.com, live.com, outlook.com, etc.).
 
-The PRT is needed for SSO. Without it, the user will be prompted for credentials when accessing applications every time. Please also note that the PRT contains information about the device. This means that if you have any [device-based conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications) policy set on an application, without the PRT, access will be denied.
+The PRT is needed for SSO. Without it, the user will be prompted for credentials when accessing applications every time. Please also note that the PRT contains information about the device. This means that if you have any [device-based conditional access](/azure/active-directory/active-directory-conditional-access-policy-connected-applications) policy set on an application, without the PRT, access will be denied.
 
 [Return to Top](#technology-and-terms)
 ## Storage Root Key
@@ -285,7 +285,7 @@ A TPM implements controls that meet the specification described by the Trusted C
 - The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
 - The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
 
-Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-recommendations).
+Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](../../information-protection/tpm/tpm-recommendations.md).
 
 Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0. 
 
@@ -316,4 +316,3 @@ In a simplified manner, the TPM is a passive component with limited resources. I
 - [TPM Library Specification](https://trustedcomputinggroup.org/resource/tpm-library-specification/)
 
 [Return to Top](hello-how-it-works-technology.md)
-

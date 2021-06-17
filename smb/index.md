@@ -33,4 +33,4 @@ audience: itpro
 
  ## Related topics
 
-- [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
+- [Windows 10 and Windows 10 Mobile](/windows/windows-10/)

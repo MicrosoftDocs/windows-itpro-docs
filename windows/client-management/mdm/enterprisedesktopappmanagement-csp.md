@@ -19,10 +19,24 @@ The EnterpriseDesktopAppManagement configuration service provider is used to han
 
 Application installations can take some time to complete, hence they are done asynchronously. When the Exec command is completed, the client can send a generic alert to the management server with a status, whether it's a failure or success. For a SyncML example, see [Alert example](#alert-example).
 
-The following diagram shows the EnterpriseDesktopAppManagement CSP in tree format.
-
-![enterprisedesktopappmanagement csp](images/provisioning-csp-enterprisedesktopappmanagement.png)
-
+The following shows the EnterpriseDesktopAppManagement CSP in tree format.
+```
+./Device/Vendor/MSFT
+EnterpriseDesktopAppManagement
+----MSI
+--------ProductID
+------------Version
+------------Name
+------------Publisher
+------------InstallPath
+------------InstallDate
+------------DownloadInstall
+------------Status
+------------LastError
+------------LastErrorDesc
+--------UpgradeCode
+------------Guid
+```
 <a href="" id="--vendor-msft-enterprisedesktopappmanagement"></a>**./Device/Vendor/MSFT/EnterpriseDesktopAppManagement**
 The root node for the EnterpriseDesktopAppManagement configuration service provider.
 
@@ -527,7 +541,7 @@ Properties can be specified in the package, passed through the command line, mod
 
 Here's a list of references:
 
--   [Using Windows Installer](https://technet.microsoft.com/library/cc782896.aspx)
+-   [Using Windows Installer](/previous-versions/windows/it-pro/windows-server-2003/cc782896(v=ws.10))
 -   [Authoring a single package for Per-User or Per-Machine Installation context in Windows 7](https://blogs.msdn.com/b/windows_installer_team/archive/2009/09/02/authoring-a-single-package-for-per-user-or-per-machine-installation-context-in-windows-7.aspx)
 -   SyncML Representation Protocol, Draft Version 1.3 - 27 Aug 2009 (OMA-TS-SyncML\_RepPro-V1\_3-20090827-D)
 
@@ -553,11 +567,4 @@ Here's a list of references:
 ```
 
  
-
- 
-
-
-
-
-
 

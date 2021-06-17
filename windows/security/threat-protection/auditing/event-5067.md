@@ -2,7 +2,7 @@
 title: 5067(S, F) A cryptographic function modification was attempted. (Windows 10)
 description: Describes security event 5067(S, F) A cryptographic function modification was attempted.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5067(S, F): A cryptographic function modification was attempted.
@@ -20,7 +21,7 @@ ms.author: dansimp
 -   Windows Server 2016
 
 
-This event generates in [BCryptConfigureContextFunction](https://msdn.microsoft.com/library/windows/desktop/aa375380(v=vs.85).aspx)() function. This is a Cryptographic Next Generation (CNG) function.
+This event generates in [BCryptConfigureContextFunction](/windows/win32/api/bcrypt/nf-bcrypt-bcryptconfigurecontextfunction)() function. This is a Cryptographic Next Generation (CNG) function.
 
 This event generates when configuration information for the cryptographic function of an existing CNG context was changed.
 
@@ -79,4 +80,3 @@ There is no example of this event in this document.
 ## Security Monitoring Recommendations
 
 -   Typically this event is required for detailed monitoring of CNG-related cryptographic functions. If you need to monitor or troubleshoot actions related to specific cryptographic functions, review this event to see if it provides the information you need.
-

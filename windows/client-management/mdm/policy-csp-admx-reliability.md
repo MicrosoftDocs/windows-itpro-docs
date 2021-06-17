@@ -83,7 +83,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows the system to detect the time of unexpected shutdowns by writing the current time to disk on a schedule controlled by the Timestamp Interval.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows the system to detect the time of unexpected shutdowns by writing the current time to disk on a schedule controlled by the Timestamp Interval.
 
 If you enable this policy setting, you are able to specify how often the Persistent System Timestamp is refreshed and subsequently written to the disk. You can specify the Timestamp Interval in seconds.
 
@@ -159,7 +159,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls whether or not unplanned shutdown events can be reported when error reporting is enabled.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls whether or not unplanned shutdown events can be reported when error reporting is enabled.
 
 If you enable this policy setting, error reporting includes unplanned shutdown events.
 
@@ -234,7 +234,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting defines when the Shutdown Event Tracker System State Data feature is activated.
+Available in the latest Windows 10 Insider Preview Build. This policy setting defines when the Shutdown Event Tracker System State Data feature is activated.
 
 The system state data file contains information about the basic system state as well as the state of all running processes.
 
@@ -312,7 +312,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. The Shutdown Event Tracker can be displayed when you shut down a workstation or server.  This is an extra set of questions that is displayed when you invoke a shutdown to collect information related to why you are shutting down the computer.
+Available in the latest Windows 10 Insider Preview Build. The Shutdown Event Tracker can be displayed when you shut down a workstation or server.  This is an extra set of questions that is displayed when you invoke a shutdown to collect information related to why you are shutting down the computer.
 
 If you enable this setting and choose "Always" from the drop-down menu list, the Shutdown Event Tracker is displayed when the computer shuts down.
 
@@ -346,16 +346,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

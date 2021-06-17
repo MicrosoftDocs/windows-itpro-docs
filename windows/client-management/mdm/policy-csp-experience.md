@@ -38,6 +38,9 @@ manager: dansimp
     <a href="#experience-allowmanualmdmunenrollment">Experience/AllowManualMDMUnenrollment</a>
   </dd>
   <dd>
+    <a href="#experience-allownewsandinterestsonthetaskbar">Experience/AllowNewsAndInterestsOnTheTaskbar</a>
+  </dd>
+  <dd>
     <a href="#experience-allowsaveasofofficefiles">Experience/AllowSaveAsOfOfficeFiles</a>
   </dd>
   <dd>
@@ -436,6 +439,65 @@ The following list shows the supported values:
 
 <hr/>
 
+
+<!--Policy-->
+<a href="" id="experience-allownewsandinterestsonthetaskbar"></a>**Experience/AllowNewsAndInterestsOnTheTaskbar**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Machine
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Specifies whether to allow "News and interests" on the Taskbar.
+
+<!--/Description-->
+<!--SupportedValues-->
+The values for this policy are 1 and 0. This policy defaults to 1.
+
+- 1 - Default - News and interests feature will be allowed on the taskbar. The settings UI will be present in Taskbar context menu, and users will be able to turn off or switch mode.
+
+- 0 - News and interests feature will be turned off completely, and the settings UI in Taskbar context menu will be removed.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
 <!--Policy-->
 <a href="" id="experience-allowsaveasofofficefiles"></a>**Experience/AllowSaveAsOfOfficeFiles**  
 
@@ -1228,76 +1290,6 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-disablecloudoptimizedcontent"></a>**Experience/DisableCloudOptimizedContent**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting lets you turn off cloud optimized content in all Windows experiences.
-
-If you enable this policy setting, Windows experiences that use the cloud optimized content client component will present the default fallback content.
-
-If you disable or do not configure this policy setting, Windows experiences will be able to use cloud optimized content.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off cloud optimized content*
--   GP name: *DisableCloudOptimizedContent*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – Disabled.
--   1 – Enabled.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
 <a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**  
 
 <!--SupportedSKUs-->
@@ -1411,10 +1403,10 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-[!INCLUDE [do-not-sync-browser-settings-shortdesc](../../../browsers/edge/shortdesc/do-not-sync-browser-settings-shortdesc.md)]
+[!INCLUDE [do-not-sync-browser-settings-shortdesc](../includes/do-not-sync-browser-settings-shortdesc.md)]
 
 Related policy:
-   [PreventUsersFromTurningOnBrowserSyncing](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing)
+   [PreventUsersFromTurningOnBrowserSyncing](#experience-preventusersfromturningonbrowsersyncing)
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1428,7 +1420,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--  0 (default) - Allowed/turned on. The "browser" group syncs automatically between user’s devices and lets users to make changes.
+-  0 (default) - Allowed/turned on. The "browser" group synchronizes automatically between users' devices and lets users make changes.
 -  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
 
 
@@ -1505,10 +1497,10 @@ _**Turn syncing off by default but don’t disable**_
 
 <!--/Scope-->
 <!--Description-->
-[!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../../../browsers/edge/shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
+[!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../includes/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
 Related policy:
-   [DoNotSyncBrowserSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
+   [DoNotSyncBrowserSettings](#experience-donotsyncbrowsersetting)
 
 
 <!--/Description-->
@@ -1645,4 +1637,3 @@ Footnotes:
 - 9 - Available in Windows 10, version 20H2.
 
 <!--/Policies-->
-

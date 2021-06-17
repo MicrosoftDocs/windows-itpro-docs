@@ -146,7 +146,7 @@ manager: dansimp
     <a href="#admx-microsoftdefenderantivirus-reporting-disableenhancednotifications">ADMX_MicrosoftDefenderAntivirus/Reporting_DisableEnhancedNotifications</a>
   </dd>
   <dd>
-    <a href="#admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_DisablegenericrePorts</a>
+    <a href="#admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_Disablegenericreports</a>
   </dd>
   <dd>
     <a href="#admx-microsoftdefenderantivirus-reporting-noncriticaltimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_NonCriticalTimeout</a>
@@ -3222,9 +3222,9 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
+<a href="" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_Disablegenericreports** 
 <hr/>
-<!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_DisablegenericrePorts**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3284,7 +3284,7 @@ If you disable this setting, Watson events will not be sent.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure Watson events*
--   GP name: *Reporting_DisablegenericrePorts*
+-   GP name: *Reporting_Disablegenericreports*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Reporting*
 -   GP ADMX file name: *WindowsDefender.admx*
 
@@ -3355,9 +3355,8 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+<a href="" id="admx-microsoftdefenderantivirus-reporting-recentlycleanedtimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_RecentlyCleanedTimeout** 
 <hr/>
-<!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-reporting-recentlycleanedtimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_RecentlyCleanedTimeout**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4247,9 +4246,9 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablescanningmappednetworkdrivesforfullscan"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningMappedNetworkDrivesForFullScan**
 <hr/>
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-disablescanningmappednetworkdrivesforfullscan"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningMappedNetworkDrivesForFullScan**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6133,9 +6132,10 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-signaturedisablenotification"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureDisableNotification**  
+
 <hr/>
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-signaturedisablenotification"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureDisableNotification**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6837,16 +6837,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

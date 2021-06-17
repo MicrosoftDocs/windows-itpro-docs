@@ -21,7 +21,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the online computer refresh process. The computer refresh scenario is a reinstallation of an updated operating system on the same computer. You can also use this procedure to reinstall the same OS version. In this article, the computer refresh will be done while the computer is online. MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property on the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
+This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the online computer refresh process. The computer refresh scenario is a reinstallation of an updated operating system on the same computer. You can also use this procedure to reinstall the same OS version. In this article, the computer refresh will be done while the computer is online. MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property on the [MDT resource page](/mem/configmgr/mdt/).
 
 For the purposes of this topic, we will use three computers: DC01, MDT01, and PC0001. 
 - DC01 is a domain controller for the contoso.com domain.
@@ -62,7 +62,7 @@ For example, the following line configures USMT to migrate only domain user prof
  
 ### Support for additional settings
 
-In addition to the command-line switches that control which profiles to migrate, [XML templates](https://docs.microsoft.com/windows/deployment/usmt/understanding-migration-xml-files) control exactly what data is being migrated. You can control data within and outside the user profiles.
+In addition to the command-line switches that control which profiles to migrate, [XML templates](../usmt/understanding-migration-xml-files.md) control exactly what data is being migrated. You can control data within and outside the user profiles.
 
 ### Multicast
 

@@ -1,0 +1,9 @@
+- name: Security
+  href: index.yml
+  items: 
+    - name: Identity and access management
+      href: identity-protection/index.md
+    - name: Information protection
+      href: information-protection/index.md
+    - name: Threat protection
+      href: threat-protection/index.md

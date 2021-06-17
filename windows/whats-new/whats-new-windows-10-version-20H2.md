@@ -29,7 +29,7 @@ To download and install Windows 10, version 20H2, use Windows Update (**Settings
 
 ## Microsoft Edge
 
-This release automatically includes the new Chromium-based [Microsoft Edge](https://www.microsoft.com/edge/business) browser instead of the legacy version of Edge.  For more information, see the [Microsoft Edge documentation](https://docs.microsoft.com/microsoft-edge/).
+This release automatically includes the new Chromium-based [Microsoft Edge](https://www.microsoft.com/edge/business) browser instead of the legacy version of Edge.  For more information, see the [Microsoft Edge documentation](/microsoft-edge/).
 
 ## Servicing
 
@@ -41,48 +41,48 @@ Starting with Windows 10, version 20H2, LCUs and SSUs have been combined into a 
 
 ## Deployment
 
-New guidance is available to help prepare a [servicing strategy](https://docs.microsoft.com/windows/deployment/update/waas-servicing-strategy-windows-10-updates) and move your devices to the latest version of Windows 10 quickly and as seamlessly as possible. 
+New guidance is available to help prepare a [servicing strategy](/windows/deployment/update/waas-servicing-strategy-windows-10-updates) and move your devices to the latest version of Windows 10 quickly and as seamlessly as possible. 
 
 Activities are grouped into the following phases: **Plan** > **Prepare** > **Deploy**:
 
 **Plan** your deployment by evaluating and understanding essential activities: 
-- Create a [phased deployment plan](https://docs.microsoft.com/windows/deployment/update/create-deployment-plan)
-- Assign [roles and responsibilities](https://docs.microsoft.com/windows/deployment/update/plan-define-readiness#process-manager) within your organization
-- Set [criteria](https://docs.microsoft.com/windows/deployment/update/plan-define-readiness#set-criteria-for-rating-apps) to establish readiness for the upgrade process
-- Evaluate your [infrastructure and tools](https://docs.microsoft.com/windows/deployment/update/eval-infra-tools)
-- Determine [readiness](https://docs.microsoft.com/windows/deployment/update/plan-determine-app-readiness) for your business applications
-- Create an effective, schedule-based [servicing strategy](https://docs.microsoft.com/windows/deployment/update/plan-define-strategy)
+- Create a [phased deployment plan](/windows/deployment/update/create-deployment-plan)
+- Assign [roles and responsibilities](/windows/deployment/update/plan-define-readiness#process-manager) within your organization
+- Set [criteria](/windows/deployment/update/plan-define-readiness#set-criteria-for-rating-apps) to establish readiness for the upgrade process
+- Evaluate your [infrastructure and tools](/windows/deployment/update/eval-infra-tools)
+- Determine [readiness](/windows/deployment/update/plan-determine-app-readiness) for your business applications
+- Create an effective, schedule-based [servicing strategy](/windows/deployment/update/plan-define-strategy)
 
 **Prepare** your devices and environment for deployment by performing necessary actions:
-- Update [infrastructure and tools](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#prepare-infrastructure-and-environment)
-- Ensure the needed [services](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#prepare-applications-and-devices) are available
-- Resolve issues with [unhealthy devices](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#address-unhealthy-devices)
-- Ensure that [users are ready](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows) for updates
+- Update [infrastructure and tools](/windows/deployment/update/prepare-deploy-windows#prepare-infrastructure-and-environment)
+- Ensure the needed [services](/windows/deployment/update/prepare-deploy-windows#prepare-applications-and-devices) are available
+- Resolve issues with [unhealthy devices](/windows/deployment/update/prepare-deploy-windows#address-unhealthy-devices)
+- Ensure that [users are ready](/windows/deployment/update/prepare-deploy-windows) for updates
 
 **Deploy** and manage Windows 10 strategically in your organization:
-- Use [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) to streamline the set up, configuration, and delivery of new devices
-- Use [Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager) or [MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt) to deploy new devices and update existing devices
-- Use [Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb) with Group Policy to [customize update settings](https://docs.microsoft.com/windows/deployment/update/waas-wufb-group-policy) for your devices
-- [Deploy Windows updates](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus) with Windows Server Update Services (WSUS)
-- Manage bandwidth for updates with [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
-- [Monitor Windows Updates](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) with Update Compliance
+- Use [Windows Autopilot](/mem/autopilot/windows-autopilot) to streamline the set up, configuration, and delivery of new devices
+- Use [Configuration Manager](/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager) or [MDT](/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt) to deploy new devices and update existing devices
+- Use [Windows Update for Business](/windows/deployment/update/waas-configure-wufb) with Group Policy to [customize update settings](/windows/deployment/update/waas-wufb-group-policy) for your devices
+- [Deploy Windows updates](/windows/deployment/update/waas-manage-updates-wsus) with Windows Server Update Services (WSUS)
+- Manage bandwidth for updates with [Delivery Optimization](/windows/deployment/update/waas-delivery-optimization)
+- [Monitor Windows Updates](/windows/deployment/update/update-compliance-monitor) with Update Compliance
 
 ### Windows Autopilot
 
 Enhancements to Windows Autopilot since the last release of Windows 10 include:
 - [Windows Autopilot for HoloLens](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-autopilot-for-hololens-2/ba-p/1371494): Set up HoloLens 2 devices with Windows Autopilot for HoloLens 2 self-deploying mode.
-- [Windows Autopilot with co-management](https://docs.microsoft.com/mem/configmgr/comanage/quickstart-autopilot): Co-management and Autopilot together can help you reduce cost and improve the end user experience.
+- [Windows Autopilot with co-management](/mem/configmgr/comanage/quickstart-autopilot): Co-management and Autopilot together can help you reduce cost and improve the end user experience.
 - Enhancements to Windows Autopilot deployment reporting are in preview. From the Microsoft Endpoint Manager admin center (endpoint.microsoft.com), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Click **Autopilot deployment (preview)**.
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-There is no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+There is no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
 ## Device management
 
-Modern Device Management (MDM) policy is extended with new [Local Users and Groups settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localusersandgroups) that match the options available for devices managed through Group Policy.
+Modern Device Management (MDM) policy is extended with new [Local Users and Groups settings](/windows/client-management/mdm/policy-csp-localusersandgroups) that match the options available for devices managed through Group Policy.
 
-For more information about what's new in MDM, see [What's new in mobile device enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management)
+For more information about what's new in MDM, see [What's new in mobile device enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management)
 
 ## Security
 
@@ -90,11 +90,11 @@ For more information about what's new in MDM, see [What's new in mobile device e
 
 This release includes improved support for non-ASCII file paths for Microsoft Defender Advanced Threat Protection (ATP) Auto Incident Response (IR).
 
-The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) parameter is deprecated in this release.
+The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) parameter is deprecated in this release.
 
 ### Microsoft Defender Application Guard for Office
 
-Microsoft Defender Application Guard now supports Office: With [Microsoft Defender Application Guard for Office](https://docs.microsoft.com/microsoft-365/security/office-365-security/install-app-guard), you can launch untrusted Office documents (from outside the Enterprise) in an isolated container to prevent potentially malicious content from compromising your device.
+Microsoft Defender Application Guard now supports Office: With [Microsoft Defender Application Guard for Office](/microsoft-365/security/office-365-security/install-app-guard), you can launch untrusted Office documents (from outside the Enterprise) in an isolated container to prevent potentially malicious content from compromising your device.
 
 ### Windows Hello
 
@@ -104,7 +104,7 @@ With specialized hardware and software components available on devices shipping 
 
 ### Windows Sandbox
 
-New polices for [Windows Sandbox](https://docs.microsoft.com/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) are available in this release. For more information, see [Policy CSP - WindowsSandbox](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowssandbox).
+New policies for [Windows Sandbox](/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) are available in this release. For more information, see [Policy CSP - WindowsSandbox](/windows/client-management/mdm/policy-csp-windowssandbox).
 
 ### Windows Virtual Desktop (WVD)
 
@@ -131,22 +131,22 @@ On a 2-in-1 device, Windows will now automatically switch to tablet mode when yo
 
 ## Surface
 
-Windows 10 Pro and Enterprise are now [available on Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107).  For more information, see [What's new in Surface Hub 2S for IT admins](https://docs.microsoft.com/surface-hub/surface-hub-2s-whats-new).
+Windows 10 Pro and Enterprise are now [available on Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107).  For more information, see [What's new in Surface Hub 2S for IT admins](/surface-hub/surface-hub-2s-whats-new).
 
 ## Desktop Analytics
 
-[Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) is a cloud-connected service, integrated with Configuration Manager that provides data-driven insights to the management of Windows endpoints in your organization. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license. 
+[Desktop Analytics](/configmgr/desktop-analytics/overview) is a cloud-connected service, integrated with Configuration Manager that provides data-driven insights to the management of Windows endpoints in your organization. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license. 
 
-For information about Desktop Analytics and this release of Windows 10, see [What's new in Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/whats-new).
+For information about Desktop Analytics and this release of Windows 10, see [What's new in Desktop Analytics](/mem/configmgr/desktop-analytics/whats-new).
 
 ## See Also
 
 [What’s new for IT pros in Windows 10, version 20H2](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-20h2/ba-p/1800132)<br>
 [Get started with the October 2020 update to Windows 10](https://www.linkedin.com/learning/windows-10-october-2020-update-new-features-2/get-started-with-the-october-2020-update-to-windows-10)<br>
 [Learn Windows 10 with the October 2020 Update](https://www.linkedin.com/learning/windows-10-october-2020-update-essential-training/learn-windows-10-with-the-october-2020-update)<br>
-[What's New in Windows Server](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
+[What's New in Windows Server](/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
-[What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
+[What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.<br>
 [Announcing more ways we’re making app development easier on Windows](https://blogs.windows.com/windowsdeveloper/2020/09/22/kevin-gallo-microsoft-ignite-2020/): Simplifying app development in Windows.<br>
-[Features and functionality removed in Windows 10](https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
-[Windows 10 features we’re no longer developing](https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
+[Features and functionality removed in Windows 10](/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
+[Windows 10 features we’re no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>

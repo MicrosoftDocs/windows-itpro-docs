@@ -16,7 +16,6 @@ ms.topic: article
 # Create mandatory user profiles
 
 **Applies to**
-
 - Windows 10
 
 A mandatory user profile is a roaming user profile that has been pre-configured by an administrator to specify settings for users. Settings commonly defined in a mandatory profile include (but are not limited to): icons that appear on the desktop, desktop backgrounds, user preferences in Control Panel, printer selections, and more. Configuration changes made during a user's session that are normally saved to a roaming user profile are not saved when a mandatory user profile is assigned.
@@ -40,7 +39,7 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Windows 10, versions 1507 and 1511 | N/A | v5 |
 | Windows 10, versions 1607, 1703, 1709, 1803, 1809, 1903 and 1909 |  Windows Server 2016 and Windows Server 2019 | v6 |
 
-For more information, see [Deploy Roaming User Profiles, Appendix B](https://docs.microsoft.com/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
+For more information, see [Deploy Roaming User Profiles, Appendix B](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
 
 ## Mandatory user profile
 
@@ -58,9 +57,9 @@ First, you create a default user profile with the customizations that you want, 
    > [!NOTE]
    > Unlike previous versions of Windows, you cannot apply a Start and taskbar layout using a mandatory profile. For alternative methods for customizing the Start menu and taskbar, see [Related topics](#related-topics).
 
-1. [Create an answer file (Unattend.xml)](https://docs.microsoft.com/windows-hardware/customize/desktop/wsim/create-or-open-an-answer-file) that sets the [CopyProfile](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-copyprofile) parameter to **True**. The CopyProfile parameter causes Sysprep to copy the currently signed-on user’s profile folder to the default user profile. You can use [Windows System Image Manager](https://docs.microsoft.com/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference), which is part of the Windows Assessment and Deployment Kit (ADK) to create the Unattend.xml file.
+1. [Create an answer file (Unattend.xml)](/windows-hardware/customize/desktop/wsim/create-or-open-an-answer-file) that sets the [CopyProfile](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-copyprofile) parameter to **True**. The CopyProfile parameter causes Sysprep to copy the currently signed-on user’s profile folder to the default user profile. You can use [Windows System Image Manager](/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference), which is part of the Windows Assessment and Deployment Kit (ADK) to create the Unattend.xml file.
 
-1. Uninstall any application you do not need or want from the PC. For examples on how to uninstall Windows 10 Application see [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps). For a list of uninstallable applications, see [Understand the different apps included in Windows 10](https://docs.microsoft.com/windows/application-management/apps-in-windows-10).
+1. Uninstall any application you do not need or want from the PC. For examples on how to uninstall Windows 10 Application see [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps&preserve-view=true). For a list of uninstallable applications, see [Understand the different apps included in Windows 10](/windows/application-management/apps-in-windows-10).
 
    > [!NOTE]
    > It is highly recommended to uninstall unwanted or unneeded apps as it will speed up user sign-in times.
@@ -76,9 +75,9 @@ First, you create a default user profile with the customizations that you want, 
    > [!TIP]
    > If you receive an error message that says "Sysprep was not able to validate your Windows installation", open %WINDIR%\\System32\\Sysprep\\Panther\\setupact.log and look for an entry like the following:
    >
-   > ![Microsoft Bing Translator package](images/sysprep-error.png)
+   > ![Microsoft Bing Translator package error](images/sysprep-error.png)
    >
-   > Use the [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) and [Remove-AppxPackage -AllUsers](https://docs.microsoft.com/powershell/module/appx/remove-appxpackage?view=win10-ps) cmdlet in Windows PowerShell to uninstall the app that is listed in the log.
+   > Use the [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps&preserve-view=true) and [Remove-AppxPackage -AllUsers](/powershell/module/appx/remove-appxpackage?view=win10-ps&preserve-view=true) cmdlet in Windows PowerShell to uninstall the app that is listed in the log.
 
 1. The sysprep process reboots the PC and starts at the first-run experience screen. Complete the set up, and then sign in to the computer using an account that has local administrator privileges.
 
@@ -86,20 +85,24 @@ First, you create a default user profile with the customizations that you want, 
 
 1. In **User Profiles**, click **Default Profile**, and then click **Copy To**.
 
-   ![Example of UI](images/copy-to.png)
+
+   ![Example of User Profiles UI](images/copy-to.png)
 
 1. In **Copy To**, under **Permitted to use**, click **Change**.
 
-   ![Example of UI](images/copy-to-change.png)
+   ![Example of Copy To UI](images/copy-to-change.png)
 
 1. In **Select User or Group**, in the **Enter the object name to select** field, type `everyone`, click **Check Names**, and then click **OK**.
 
 1. In **Copy To**, in the **Copy profile to** field, enter the path and folder name where you want to store the mandatory profile. The folder name must use the correct [extension](#profile-extension-for-each-windows-version) for the operating system version. For example, the folder name must end with ".v6" to identify it as a user profile folder for Windows 10, version 1607.
 
    - If the device is joined to the domain and you are signed in with an account that has permissions to write to a shared folder on the network, you can enter the shared folder path.
+
+   ![Example of Copy profile to](images/copy-to-path.png)
+
    - If the device is not joined to the domain, you can save the profile locally and then copy it to the shared folder location.
 
-   ![Example of UI](images/copy-to-path.png)
+   ![Example of Copy To UI with UNC path](images/copy-to-path.png)
 
 1. Click **OK** to copy the default user profile.
 

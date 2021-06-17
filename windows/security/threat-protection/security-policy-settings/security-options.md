@@ -5,13 +5,14 @@ ms.assetid: 405ea253-8116-4e57-b08e-14a8dcdca92b
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 06/28/2018
+ms.technology: mde
 ---
 
 # Security Options

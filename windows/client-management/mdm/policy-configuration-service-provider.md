@@ -37,7 +37,7 @@ The Policy configuration service provider has the following sub-categories:
 > -   **./Device/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
 > -   **./Device/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
 >
-> For device wide configuration the **_Device/_**  portion may be omitted from the path, deeming the following paths respectively equivalent:
+> For device wide configuration the **_Device/_**  portion may be omitted from the path, deeming the following paths respectively equivalent to the paths provided above:
 >
 > - **./Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
 > - **./Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
@@ -57,12 +57,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-config-areaname"></a>**Policy/Config/**<strong>*AreaName*</strong>  
+<a href="" id="policy-config-areaname"></a>**Policy/Config/_AreaName_**  
 <p style="margin-left: 20px">The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/**<strong>*AreaName/PolicyName*</strong>  
+<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/_AreaName/PolicyName_**  
 <p style="margin-left: 20px">Specifies the name/value pair used in the policy.
 
 <p style="margin-left: 20px">The following list shows some tips to help you when configuring policies:
@@ -81,12 +81,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname"></a>**Policy/Result/**<strong>*AreaName*</strong>  
+<a href="" id="policy-result-areaname"></a>**Policy/Result/_AreaName_**  
 <p style="margin-left: 20px">The area group that can be configured by a single technology independent of the providers.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/**<strong>*AreaName/PolicyName*</strong>  
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/_AreaName/PolicyName_**  
 <p style="margin-left: 20px">Specifies the name/value pair used in the policy.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -100,33 +100,33 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall</code>. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see <a href="win32-and-centennial-app-policy-configuration.md" data-raw-source="[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)">Win32 and Desktop Bridge app policy configuration</a>.
 
 > [!NOTE]
-> The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/library/cc179097.aspx).
+> The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)).
 
-<p style="margin-left: 20px">ADMX files that have been installed by using <strong>ConfigOperations/ADMXInstall</strong> can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}</code>.
+<p style="margin-left: 20px">ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}</code>.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file. 
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Policy**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app policy is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Policy/*UniqueID*</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Policy/_UniqueID_** 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the policy to import.
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Preference**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app preference is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/**<strong>*AppName*/Preference/*UniqueID*</strong>  
+<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Preference/_UniqueID_**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
@@ -697,6 +697,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_DistributedLinkTracking policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-distributedlinktracking.md#admx-distributedlinktracking-dlt_allowdomainmode" id="admx-distributedlinktracking-dlt_allowdomainmode">ADMX_DistributedLinkTracking/DLT_AllowDomainMode</a>
+  </dd>
+</dl>
+
 ### ADMX_DnsClient policies
 
 <dl>
@@ -1033,6 +1041,33 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Explorer policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-explorer.md#admx-explorer-admininfourl" id="admx-explorer-admininfourl">ADMX_Explorer/AdminInfoUrl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-explorer.md#admx-explorer-alwaysshowclassicmenu" id="admx-explorer-alwaysshowclassicmenu">ADMX_Explorer/AlwaysShowClassicMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-explorer.md#admx-explorer-disableroamedprofileinit" id="admx-explorer-disableroamedprofileinit">ADMX_Explorer/DisableRoamedProfileInit</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-explorer.md#admx-explorer-preventitemcreationinusersfilesfolder" id="admx-explorer-preventitemcreationinusersfilesfolder">ADMX_Explorer/PreventItemCreationInUsersFilesFolder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-explorer.md#admx-explorer-turnoffspianimations" id="admx-explorer-turnoffspianimations">ADMX_Explorer/TurnOffSPIAnimations</a>
+  </dd>
+</dl>
+
+### ADMX_FileRecovery policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-filerecovery.md#admx-filerecovery-wdiscenarioexecutionpolicy" id="admx-filerecovery-wdiscenarioexecutionpolicy">ADMX_FileRecovery/WdiScenarioExecutionPolicy</a>
+  </dd>
+</dl>
+
 ### ADMX_FileServerVSSProvider policies
 <dl>
   <dd>
@@ -1109,6 +1144,217 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Globalization policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-blockuserinputmethodsforsignin" id="admx-globalization-blockuserinputmethodsforsignin">ADMX_Globalization/BlockUserInputMethodsForSignIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-customlocalesnoselect-1" id="admx-globalization-customlocalesnoselect-1">ADMX_Globalization/CustomLocalesNoSelect_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-customlocalesnoselect-2" id="admx-globalization-customlocalesnoselect-2">ADMX_Globalization/CustomLocalesNoSelect_2</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-hideadminoptions" id="admx-globalization-hideadminoptions">ADMX_Globalization/HideAdminOptions</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-hidecurrentlocation" id="admx-globalization-hidecurrentlocation">ADMX_Globalization/HideCurrentLocation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-hidelanguageselection" id="admx-globalization-hidelanguageselection">ADMX_Globalization/HideLanguageSelection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-hidelocaleselectandcustomize" id="admx-globalization-hidelocaleselectandcustomize">ADMX_Globalization/HideLocaleSelectAndCustomize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-implicitdatacollectionoff-1" id="admx-globalization-implicitdatacollectionoff-1">ADMX_Globalization/ImplicitDataCollectionOff_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-implicitdatacollectionoff-2" id="admx-globalization-implicitdatacollectionoff-2">ADMX_Globalization/ImplicitDataCollectionOff_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-localesystemrestrict" id="admx-globalization-localesystemrestrict">ADMX_Globalization/LocaleSystemRestrict</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-localeuserrestrict-1" id="admx-globalization-localeuserrestrict-1">ADMX_Globalization/LocaleUserRestrict_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-localeuserrestrict-2" id="admx-globalization-localeuserrestrict-2">ADMX_Globalization/LocaleUserRestrict_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-lockmachineuilanguage" id="admx-globalization-lockmachineuilanguage">ADMX_Globalization/LockMachineUILanguage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-lockuseruilanguage" id="admx-globalization-lockuseruilanguage">ADMX_Globalization/LockUserUILanguage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-preventgeoidchange-1" id="admx-globalization-preventgeoidchange-1">ADMX_Globalization/PreventGeoIdChange_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-preventgeoidchange-2" id="admx-globalization-preventgeoidchange-2">ADMX_Globalization/PreventGeoIdChange_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-preventuseroverrides-1" id="admx-globalization-preventuseroverrides-1">ADMX_Globalization/PreventUserOverrides_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-preventuseroverrides-2" id="admx-globalization-preventuseroverrides-2">ADMX_Globalization/PreventUserOverrides_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-restrictuilangselect" id="admx-globalization-restrictuilangselect">ADMX_Globalization/RestrictUILangSelect</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-turnoffautocorrectmisspelledwords" id="admx-globalization-turnoffautocorrectmisspelledwords">ADMX_Globalization/TurnOffAutocorrectMisspelledWords</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-turnoffhighlightmisspelledwords" id="admx-globalization-turnoffhighlightmisspelledwords">ADMX_Globalization/TurnOffHighlightMisspelledWords</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-turnoffinsertspace" id="admx-globalization-turnoffinsertspace">ADMX_Globalization/TurnOffInsertSpace</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-turnoffoffertextpredictions" id="admx-globalization-turnoffoffertextpredictions">ADMX_Globalization/TurnOffOfferTextPredictions</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-y2k" id="admx-globalization-y2k">ADMX_Globalization/Y2K</a>
+  </dd>
+</dl>
+
+### ADMX_GroupPolicy policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-allowx-forestpolicy-and-rup" id="admx-grouppolicy-allowx-forestpolicy-and-rup">ADMX_GroupPolicy/AllowX-ForestPolicy-and-RUP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-appmgmt" id="admx-grouppolicy-cse-appmgmt">ADMX_GroupPolicy/CSE_AppMgmt</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-diskquota" id="admx-grouppolicy-cse-diskquota">ADMX_GroupPolicy/CSE_DiskQuota</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-efsrecovery" id="admx-grouppolicy-cse-efsrecovery">ADMX_GroupPolicy/CSE_EFSRecovery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-folderredirection" id="admx-grouppolicy-cse-folderredirection">ADMX_GroupPolicy/CSE_FolderRedirection</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-iem" id="admx-grouppolicy-cse-iem">ADMX_GroupPolicy/CSE_IEM</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-ipsecurity" id="admx-grouppolicy-cse-ipsecurity">ADMX_GroupPolicy/CSE_IPSecurity</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-registry" id="admx-grouppolicy-cse-registry">ADMX_GroupPolicy/CSE_Registry</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-scripts" id="admx-grouppolicy-cse-scripts">ADMX_GroupPolicy/CSE_Scripts</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-security" id="admx-grouppolicy-cse-security">ADMX_GroupPolicy/CSE_Security</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-wired" id="admx-grouppolicy-cse-wired">ADMX_GroupPolicy/CSE_Wired</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-wireless" id="admx-grouppolicy-cse-wireless">ADMX_GroupPolicy/CSE_Wireless</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-corpconnsyncwaittime" id="admx-grouppolicy-corpconnsyncwaittime">ADMX_GroupPolicy/CorpConnSyncWaitTime</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-denyrsoptointeractiveuser-1" id="admx-grouppolicy-denyrsoptointeractiveuser-1">ADMX_GroupPolicy/DenyRsopToInteractiveUser_1</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-denyrsoptointeractiveuser-2" id="admx-grouppolicy-denyrsoptointeractiveuser-2">ADMX_GroupPolicy/DenyRsopToInteractiveUser_2</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-disableaoacprocessing" id="admx-grouppolicy-disableaoacprocessing">ADMX_GroupPolicy/DisableAOACProcessing</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-disableautoadmupdate" id="admx-grouppolicy-disableautoadmupdate">ADMX_GroupPolicy/DisableAutoADMUpdate</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-disablebackgroundpolicy" id="admx-grouppolicy-disablebackgroundpolicy">ADMX_GroupPolicy/DisableBackgroundPolicy</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-disablelgpoprocessing" id="admx-grouppolicy-disablelgpoprocessing">ADMX_GroupPolicy/DisableLGPOProcessing</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-disableusersfrommachgp" id="admx-grouppolicy-disableusersfrommachgp">ADMX_GroupPolicy/DisableUsersFromMachGP</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-enablecdp" id="admx-grouppolicy-enablecdp">ADMX_GroupPolicy/EnableCDP</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-enablelogonoptimization" id="admx-grouppolicy-enablelogonoptimization">ADMX_GroupPolicy/EnableLogonOptimization</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-enablelogonoptimizationonserversku" id="admx-grouppolicy-enablelogonoptimizationonserversku">ADMX_GroupPolicy/EnableLogonOptimizationOnServerSKU</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-enablemmx" id="admx-grouppolicy-enablemmx">ADMX_GroupPolicy/EnableMMX</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-enforcepoliciesonly" id="admx-grouppolicy-enforcepoliciesonly">ADMX_GroupPolicy/EnforcePoliciesOnly</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-fontmitigation" id="admx-grouppolicy-fontmitigation">ADMX_GroupPolicy/FontMitigation</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-gpdcoptions" id="admx-grouppolicy-gpdcoptions">ADMX_GroupPolicy/GPDCOptions</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-gptransferrate-1" id="admx-grouppolicy-gptransferrate-1">ADMX_GroupPolicy/GPTransferRate_1</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-gptransferrate-2" id="admx-grouppolicy-gptransferrate-2">ADMX_GroupPolicy/GPTransferRate_2</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-grouppolicyrefreshrate" id="admx-grouppolicy-grouppolicyrefreshrate">ADMX_GroupPolicy/GroupPolicyRefreshRate</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-grouppolicyrefreshratedc" id="admx-grouppolicy-grouppolicyrefreshratedc">ADMX_GroupPolicy/GroupPolicyRefreshRateDC</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-grouppolicyrefreshrateuser" id="admx-grouppolicy-grouppolicyrefreshrateuser">ADMX_GroupPolicy/GroupPolicyRefreshRateUser</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-logonscriptdelay" id="admx-grouppolicy-logonscriptdelay">ADMX_GroupPolicy/LogonScriptDelay</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-newgpodisplayname" id="admx-grouppolicy-newgpodisplayname">ADMX_GroupPolicy/NewGPODisplayName</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-newgpolinksdisabled" id="admx-grouppolicy-newgpolinksdisabled">ADMX_GroupPolicy/NewGPOLinksDisabled</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-onlyuselocaladminfiles" id="admx-grouppolicy-onlyuselocaladminfiles">ADMX_GroupPolicy/OnlyUseLocalAdminFiles</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-processmitigationoptions" id="admx-grouppolicy-processmitigationoptions">ADMX_GroupPolicy/ProcessMitigationOptions</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-rsoplogging" id="admx-grouppolicy-rsoplogging">ADMX_GroupPolicy/RSoPLogging</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-resetdfsclientinfoduringrefreshpolicy" id="admx-grouppolicy-resetdfsclientinfoduringrefreshpolicy">ADMX_GroupPolicy/ResetDfsClientInfoDuringRefreshPolicy</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-slowlinkdefaultfordirectaccess" id="admx-grouppolicy-slowlinkdefaultfordirectaccess">ADMX_GroupPolicy/SlowLinkDefaultForDirectAccess</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-slowlinkdefaulttoasync" id="admx-grouppolicy-slowlinkdefaulttoasync">ADMX_GroupPolicy/SlowlinkDefaultToAsync</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-syncwaittime" id="admx-grouppolicy-syncwaittime">ADMX_GroupPolicy/SyncWaitTime</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-userpolicymode" id="admx-grouppolicy-userpolicymode">ADMX_GroupPolicy/UserPolicyMode</a>
+  </dd>
+</dl>
+
 ### ADMX_HelpAndSupport policies
 <dl>
   <dd>
@@ -1122,6 +1368,89 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hponlineassistance" id="admx-helpandsupport-hponlineassistance">ADMX_HelpAndSupport/HPOnlineAssistance</a>
+  </dd>
+</dl>
+
+## ADMX_ICM policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-ceipenable" id="admx-icm-ceipenable">ADMX_ICM/CEIPEnable</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-certmgr-disableautorootupdates" id="admx-icm-certmgr-disableautorootupdates">ADMX_ICM/CertMgr_DisableAutoRootUpdates</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-disablehttpprinting-1" id="admx-icm-disablehttpprinting-1">ADMX_ICM/DisableHTTPPrinting_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-disablewebpnpdownload-1" id="admx-icm-disablewebpnpdownload-1">ADMX_ICM/DisableWebPnPDownload_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-driversearchplaces-dontsearchwindowsupdate" id="admx-icm-driversearchplaces-dontsearchwindowsupdate">ADMX_ICM/DriverSearchPlaces_DontSearchWindowsUpdate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-eventviewer-disablelinks" id="admx-icm-eventviewer-disablelinks">ADMX_ICM/EventViewer_DisableLinks</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-hss-headlinespolicy" id="admx-icm-hss-headlinespolicy">ADMX_ICM/HSS_HeadlinesPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-hss-kbsearchpolicy" id="admx-icm-hss-kbsearchpolicy">ADMX_ICM/HSS_KBSearchPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-internetmanagement-restrictcommunication-1" id="admx-icm-internetmanagement-restrictcommunication-1">ADMX_ICM/InternetManagement_RestrictCommunication_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-internetmanagement-restrictcommunication-2" id="admx-icm-internetmanagement-restrictcommunication-2">ADMX_ICM/InternetManagement_RestrictCommunication_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-nc-exitonisp" id="admx-icm-nc-exitonisp">ADMX_ICM/NC_ExitOnISP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-nc-noregistration" id="admx-icm-nc-noregistration">ADMX_ICM/NC_NoRegistration</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-pch-donotreport" id="admx-icm-pch-donotreport">ADMX_ICM/PCH_DoNotReport</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-removewindowsupdate-icm" id="admx-icm-removewindowsupdate-icm">ADMX_ICM/RemoveWindowsUpdate_ICM</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-searchcompanion-disablefileupdates" id="admx-icm-searchcompanion-disablefileupdates">ADMX_ICM/SearchCompanion_DisableFileUpdates</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellnouseinternetopenwith-1" id="admx-icm-shellnouseinternetopenwith-1">ADMX_ICM/ShellNoUseInternetOpenWith_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellnouseinternetopenwith-2" id="admx-icm-shellnouseinternetopenwith-2">ADMX_ICM/ShellNoUseInternetOpenWith_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellnousestoreopenwith-1" id="admx-icm-shellnousestoreopenwith-1">ADMX_ICM/ShellNoUseStoreOpenWith_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellnousestoreopenwith-2" id="admx-icm-shellnousestoreopenwith-2">ADMX_ICM/ShellNoUseStoreOpenWith_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellpreventwpwdownload-1" id="admx-icm-shellpreventwpwdownload-1">ADMX_ICM/ShellPreventWPWDownload_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellremoveorderprints-1" id="admx-icm-shellremoveorderprints-1">ADMX_ICM/ShellRemoveOrderPrints_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellremoveorderprints-2" id="admx-icm-shellremoveorderprints-2">ADMX_ICM/ShellRemoveOrderPrints_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellremovepublishtoweb-1" id="admx-icm-shellremovepublishtoweb-1">ADMX_ICM/ShellRemovePublishToWeb_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellremovepublishtoweb-2" id="admx-icm-shellremovepublishtoweb-2">ADMX_ICM/ShellRemovePublishToWeb_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-winmsg_noinstrumentation-1" id="admx-icm-winmsg_noinstrumentation-1">ADMX_ICM/WinMSG_NoInstrumentation_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-winmsg_noinstrumentation-2" id="admx-icm-winmsg_noinstrumentation-2">ADMX_ICM/WinMSG_NoInstrumentation_2</a>
   </dd>
 </dl>
 
@@ -1192,6 +1521,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_LanmanWorkstation policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-lanmanworkstation.md#admx-lanmanworkstation-pol-ciphersuiteorder" id="admx-lanmanworkstation-pol-ciphersuiteorder">ADMX_LanmanWorkstation/Pol_CipherSuiteOrder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-lanmanworkstation.md#admx-lanmanworkstation-pol-enablehandlecachingforcafiles" id="admx-lanmanworkstation-pol-enablehandlecachingforcafiles">ADMX_LanmanWorkstation/Pol_EnableHandleCachingForCAFiles</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-lanmanworkstation.md#admx-lanmanworkstation-pol-enableofflinefilesforcashares" id="admx-lanmanworkstation-pol-enableofflinefilesforcashares">ADMX_LanmanWorkstation/Pol_EnableOfflineFilesforCAShares</a>
+  </dd>
+</dl>
+
 ### ADMX_LinkLayerTopologyDiscovery policies
 <dl>
   <dd>
@@ -1199,6 +1542,56 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-linklayertopologydiscovery.md#admx-linklayertopologydiscovery-lltd-enablerspndr" id="admx-linklayertopologydiscovery-lltd-enablerspndr">ADMX_LinkLayerTopologyDiscovery/LLTD_EnableRspndr</a>
+  </dd>
+</dl>
+
+### ADMX_Logon policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-blockuserfromshowingaccountdetailsonsignin" id="admx-logon-blockuserfromshowingaccountdetailsonsignin">ADMX_Logon/BlockUserFromShowingAccountDetailsOnSignin</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disableacrylicbackgroundonlogon" id="admx-logon-disableacrylicbackgroundonlogon">ADMX_Logon/DisableAcrylicBackgroundOnLogon</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disableexplorerrunlegacy-1" id="admx-logon-disableexplorerrunlegacy-1">ADMX_Logon/DisableExplorerRunLegacy_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disableexplorerrunlegacy-2" id="admx-logon-disableexplorerrunlegacy-2">ADMX_Logon/DisableExplorerRunLegacy_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disableexplorerrunoncelegacy-1" id="admx-logon-disableexplorerrunoncelegacy-1">ADMX_Logon/DisableExplorerRunOnceLegacy_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disableexplorerrunoncelegacy-2" id="admx-logon-disableexplorerrunoncelegacy-2">ADMX_Logon/DisableExplorerRunOnceLegacy_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disablestatusmessages" id="admx-logon-disablestatusmessages">ADMX_Logon/DisableStatusMessages</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-dontenumerateconnectedusers" id="admx-logon-dontenumerateconnectedusers">ADMX_Logon/DontEnumerateConnectedUsers</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-nowelcometips-1" id="admx-logon-nowelcometips-1">ADMX_Logon/NoWelcomeTips_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-nowelcometips-2" id="admx-logon-nowelcometips-2">ADMX_Logon/NoWelcomeTips_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-run-1" id="admx-logon-run-1">ADMX_Logon/Run_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-run-2" id="admx-logon-run-2">ADMX_Logon/Run_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-syncforegroundpolicy" id="admx-logon-syncforegroundpolicy">ADMX_Logon/SyncForegroundPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-useoembackground" id="admx-logon-useoembackground">ADMX_Logon/UseOEMBackground</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-verbosestatus" id="admx-logon-verbosestatus">ADMX_Logon/VerboseStatus</a>
   </dd>
 </dl>
 
@@ -1329,7 +1722,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disableenhancednotifications" id="admx-microsoftdefenderantivirus-reporting-disableenhancednotifications">ADMX_MicrosoftDefenderAntivirus/Reporting_DisableEnhancedNotifications</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disablegenericreports" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_DisablegenericrePorts</a>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disablegenericreports" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_Disablegenericreports</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-noncriticaltimeout" id="admx-microsoftdefenderantivirus-reporting-noncriticaltimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_NonCriticalTimeout</a>
@@ -1829,6 +2222,108 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
 
+### ADMX_msched policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-msched.md#admx-msched-activationboundarypolicy" id="admx-msched-activationboundarypolicy">ADMX_msched/ActivationBoundaryPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msched.md#admx-msched-randomdelaypolicy" id="admx-msched-randomdelaypolicy">ADMX_msched/RandomDelayPolicy</a>
+  </dd>
+</dl>
+
+### ADMX_MSDT policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-msdt.md#admx-msdt-msdtsupportprovider" id="admx-msdt-msdtsupportprovider">ADMX_MSDT/MsdtSupportProvider</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msdt.md#admx-msdt-msdttooldownloadpolicy" id="admx-msdt-msdttooldownloadpolicy">ADMX_MSDT/MsdtToolDownloadPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msdt.md#admx-msdt-wdiscenarioexecutionpolicy" id="admx-msdt-wdiscenarioexecutionpolicy">ADMX_MSDT/WdiScenarioExecutionPolicy</a>
+  </dd>
+</dl>
+
+### ADMX_MSI policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-allowlockdownbrowse" id="admx-msi-allowlockdownbrowse">ADMX_MSI/AllowLockdownBrowse</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-allowlockdownmedia" id="admx-msi-allowlockdownmedia">ADMX_MSI/AllowLockdownMedia</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-allowlockdownpatch" id="admx-msi-allowlockdownpatch">ADMX_MSI/AllowLockdownPatch</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disableautomaticapplicationshutdown" id="admx-msi-disableautomaticapplicationshutdown">ADMX_MSI/DisableAutomaticApplicationShutdown</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablebrowse" id="admx-msi-disablebrowse">ADMX_MSI/DisableBrowse</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disableflyweightpatching" id="admx-msi-disableflyweightpatching">ADMX_MSI/DisableFlyweightPatching</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disableloggingfrompackage" id="admx-msi-disableloggingfrompackage">ADMX_MSI/DisableLoggingFromPackage</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablemsi" id="admx-msi-disablemsi">ADMX_MSI/DisableMSI</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablemedia" id="admx-msi-disablemedia">ADMX_MSI/DisableMedia</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablepatch" id="admx-msi-disablepatch">ADMX_MSI/DisablePatch</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablerollback-1" id="admx-msi-disablerollback-1">ADMX_MSI/DisableRollback_1</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablerollback-2" id="admx-msi-disablerollback-2">ADMX_MSI/DisableRollback_2</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablesharedcomponent" id="admx-msi-disablesharedcomponent">ADMX_MSI/DisableSharedComponent</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msilogging" id="admx-msi-msilogging">ADMX_MSI/MSILogging</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-disableluapatching" id="admx-msi-msi-disableluapatching">ADMX_MSI/MSI_DisableLUAPatching</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-disablepatchuninstall" id="admx-msi-msi-disablepatchuninstall">ADMX_MSI/MSI_DisablePatchUninstall</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-disablesrcheckpoints" id="admx-msi-msi-disablesrcheckpoints">ADMX_MSI/MSI_DisableSRCheckPoints</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-disableuserinstalls" id="admx-msi-msi-disableuserinstalls">ADMX_MSI/MSI_DisableUserInstalls</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-enforceupgradecomponentrules" id="admx-msi-msi-enforceupgradecomponentrules">ADMX_MSI/MSI_EnforceUpgradeComponentRules</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-maxpatchcachesize" id="admx-msi-msi-maxpatchcachesize">ADMX_MSI/MSI_MaxPatchCacheSize</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msidisableembeddedui" id="admx-msi-msidisableembeddedui">ADMX_MSI/MsiDisableEmbeddedUI</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-safeforscripting" id="admx-msi-safeforscripting">ADMX_MSI/SafeForScripting</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-searchorder" id="admx-msi-searchorder">ADMX_MSI/SearchOrder</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-transformssecure" id="admx-msi-transformssecure">ADMX_MSI/TransformsSecure</a>
+  </dd>
+</dl>
+
 ### ADMX_nca policies
 <dl>
   <dd>
@@ -2269,6 +2764,86 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Power policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-acconnectivityinstandby-2" id="admx-power-acconnectivityinstandby-2">ADMX_Power/ACConnectivityInStandby_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-accriticalsleeptransitionsdisable-2" id="admx-power-accriticalsleeptransitionsdisable-2">ADMX_Power/ACCriticalSleepTransitionsDisable_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-acstartmenubuttonaction-2" id="admx-power-acstartmenubuttonaction-2">ADMX_Power/ACStartMenuButtonAction_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-allowsystempowerrequestac" id="admx-power-allowsystempowerrequestac">ADMX_Power/AllowSystemPowerRequestAC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-allowsystempowerrequestdc" id="admx-power-allowsystempowerrequestdc">ADMX_Power/AllowSystemPowerRequestDC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-allowsystemsleepwithremotefilesopenac" id="admx-power-allowsystemsleepwithremotefilesopenac">ADMX_Power/AllowSystemSleepWithRemoteFilesOpenAC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-allowsystemsleepwithremotefilesopendc" id="admx-power-allowsystemsleepwithremotefilesopendc">ADMX_Power/AllowSystemSleepWithRemoteFilesOpenDC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-customactiveschemeoverride-2" id="admx-power-customactiveschemeoverride-2">ADMX_Power/CustomActiveSchemeOverride_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcbatterydischargeaction0-2" id="admx-power-dcbatterydischargeaction0-2">ADMX_Power/DCBatteryDischargeAction0_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcbatterydischargeaction1-2" id="admx-power-dcbatterydischargeaction1-2">ADMX_Power/DCBatteryDischargeAction1_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcbatterydischargelevel0-2" id="admx-power-dcbatterydischargelevel0-2">ADMX_Power/DCBatteryDischargeLevel0_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcbatterydischargelevel1uinotification-2" id="admx-power-dcbatterydischargelevel1uinotification-2">ADMX_Power/DCBatteryDischargeLevel1UINotification_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcbatterydischargelevel1-2" id="admx-power-dcbatterydischargelevel1-2">ADMX_Power/DCBatteryDischargeLevel1_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcconnectivityinstandby-2" id="admx-power-dcconnectivityinstandby-2">ADMX_Power/DCConnectivityInStandby_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dccriticalsleeptransitionsdisable-2" id="admx-power-dccriticalsleeptransitionsdisable-2">ADMX_Power/DCCriticalSleepTransitionsDisable_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dcstartmenubuttonaction-2" id="admx-power-dcstartmenubuttonaction-2">ADMX_Power/DCStartMenuButtonAction_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-diskacpowerdowntimeout-2" id="admx-power-diskacpowerdowntimeout-2">ADMX_Power/DiskACPowerDownTimeOut_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-diskdcpowerdowntimeout-2" id="admx-power-diskdcpowerdowntimeout-2">ADMX_Power/DiskDCPowerDownTimeOut_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-dont-poweroff-aftershutdown" id="admx-power-dont-poweroff-aftershutdown">ADMX_Power/Dont_PowerOff_AfterShutdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-enabledesktopslideshowac" id="admx-power-enabledesktopslideshowac">ADMX_Power/EnableDesktopSlideShowAC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-enabledesktopslideshowdc" id="admx-power-enabledesktopslideshowdc">ADMX_Power/EnableDesktopSlideShowDC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-inboxactiveschemeoverride-2" id="admx-power-inboxactiveschemeoverride-2">ADMX_Power/InboxActiveSchemeOverride_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-pw-promptpasswordonresume" id="admx-power-pw-promptpasswordonresume">ADMX_Power/PW_PromptPasswordOnResume</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-powerthrottlingturnoff" id="admx-power-powerthrottlingturnoff">ADMX_Power/PowerThrottlingTurnOff</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-power.md#admx-power-reservebatterynotificationlevel" id="admx-power-reservebatterynotificationlevel">ADMX_Power/ReserveBatteryNotificationLevel</a>
+  </dd>
+</dl>
+
 ### ADMX_PowerShellExecutionPolicy policies  
 
 <dl>
@@ -2283,6 +2858,122 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-powershellexecutionpolicy.md#admx-powershellexecutionpolicy-enableupdatehelpdefaultsourcepath" id="admx-powershellexecutionpolicy-enableupdatehelpdefaultsourcepath">ADMX_PowerShellExecutionPolicy/EnableUpdateHelpDefaultSourcePath</a>
+  </dd>
+</dl>
+
+### ADMX_Printing policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-allowwebprinting" id="admx-printing-allowwebprinting">ADMX_Printing/AllowWebPrinting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-applicationdriverisolation" id="admx-printing-applicationdriverisolation">ADMX_Printing/ApplicationDriverIsolation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-customizedsupporturl" id="admx-printing-customizedsupporturl">ADMX_Printing/CustomizedSupportUrl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-donotinstallcompatibledriverfromwindowsupdate" id="admx-printing-donotinstallcompatibledriverfromwindowsupdate">ADMX_Printing/DoNotInstallCompatibleDriverFromWindowsUpdate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-domainprinters" id="admx-printing-domainprinters">ADMX_Printing/DomainPrinters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-downlevelbrowse" id="admx-printing-downlevelbrowse">ADMX_Printing/DownlevelBrowse</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-emfdespooling" id="admx-printing-emfdespooling">ADMX_Printing/EMFDespooling</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-forcesoftwarerasterization" id="admx-printing-forcesoftwarerasterization">ADMX_Printing/ForceSoftwareRasterization</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-intranetprintersurl" id="admx-printing-intranetprintersurl">ADMX_Printing/IntranetPrintersUrl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-kmprintersareblocked" id="admx-printing-kmprintersareblocked">ADMX_Printing/KMPrintersAreBlocked</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-legacydefaultprintermode" id="admx-printing-legacydefaultprintermode">ADMX_Printing/LegacyDefaultPrinterMode</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-mxdwuselegacyoutputformatmsxps" id="admx-printing-mxdwuselegacyoutputformatmsxps">ADMX_Printing/MXDWUseLegacyOutputFormatMSXPS</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-nodeleteprinter" id="admx-printing-nodeleteprinter">ADMX_Printing/NoDeletePrinter</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-nondomainprinters" id="admx-printing-nondomainprinters">ADMX_Printing/NonDomainPrinters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-packagepointandprintonly" id="admx-printing-packagepointandprintonly">ADMX_Printing/PackagePointAndPrintOnly</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-packagepointandprintonly-win7" id="admx-printing-packagepointandprintonly-win7">ADMX_Printing/PackagePointAndPrintOnly_Win7</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-packagepointandprintserverlist" id="admx-printing-packagepointandprintserverlist">ADMX_Printing/PackagePointAndPrintServerList</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-packagepointandprintserverlist-win7" id="admx-printing-packagepointandprintserverlist-win7">ADMX_Printing/PackagePointAndPrintServerList_Win7</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-physicallocation" id="admx-printing-physicallocation">ADMX_Printing/PhysicalLocation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-physicallocationsupport" id="admx-printing-physicallocationsupport">ADMX_Printing/PhysicalLocationSupport</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-printdriverisolationexecutionpolicy
+" id="admx-printing-printdriverisolationexecutionpolicy">ADMX_Printing/PrintDriverIsolationExecutionPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-printdriverisolationoverridecompat" id="admx-printing-printdriverisolationoverridecompat">ADMX_Printing/PrintDriverIsolationOverrideCompat</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-printerdirectorysearchscope" id="admx-printing-printerdirectorysearchscope">ADMX_Printing/PrinterDirectorySearchScope</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-printerserverthread" id="admx-printing-printerserverthread">ADMX_Printing/PrinterServerThread</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-showjobtitleineventlogs" id="admx-printing-showjobtitleineventlogs">ADMX_Printing/ShowJobTitleInEventLogs</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-v4driverdisallowprinterextension" id="admx-printing-v4driverdisallowprinterextension">ADMX_Printing/V4DriverDisallowPrinterExtension</a>
+  </dd>
+</dl>
+
+### ADMX_Printing2 policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-autopublishing" id="admx-printing2-autopublishing">ADMX_Printing2/AutoPublishing</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-immortalprintqueue" id="admx-printing2-immortalprintqueue">ADMX_Printing2/ImmortalPrintQueue</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-prunedownlevel" id="admx-printing2-prunedownlevel">ADMX_Printing2/PruneDownlevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-pruninginterval" id="admx-printing2-pruninginterval">ADMX_Printing2/PruningInterval</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-pruningpriority" id="admx-printing2-pruningpriority">ADMX_Printing2/PruningPriority</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-pruningretries" id="admx-printing2-pruningretries">ADMX_Printing2/PruningRetries</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-pruningretrylog" id="admx-printing2-pruningretrylog">ADMX_Printing2/PruningRetryLog</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-registerspoolerremoterpcendpoint" id="admx-printing2-registerspoolerremoterpcendpoint">ADMX_Printing2/RegisterSpoolerRemoteRpcEndPoint</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-verifypublishedstate" id="admx-printing2-verifypublishedstate">ADMX_Printing2/VerifyPublishedState</a>
   </dd>
 </dl>
 
@@ -2328,6 +3019,135 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-reliability.md#admx-reliability-shutdownreason" id="admx-reliability-shutdownreason">ADMX_Reliability/ShutdownReason</a>
   </dd>
 </dl>  
+
+### ADMX_RemoteAssistance policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-remoteassistance.md#admx-remoteassistance-ra-encryptedticketonly" id="admx-remoteassistance-ra-encryptedticketonly">ADMX_RemoteAssistance/RA_EncryptedTicketOnly</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-remoteassistance.md#admx-remoteassistance-ra-optimize-bandwidth" id="admx-remoteassistance-ra-optimize-bandwidth">ADMX_RemoteAssistance/RA_Optimize_Bandwidth</a>
+  </dd>
+</dl>
+
+### ADMX_RemovableStorage policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-accessrights-reboottime-1" id="admx-removablestorage-accessrights-reboottime-1">ADMX_RemovableStorage/AccessRights_RebootTime_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-accessrights-reboottime-2" id="admx-removablestorage-accessrights-reboottime-2">ADMX_RemovableStorage/AccessRights_RebootTime_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-cdanddvd-denyexecute-access-2" id="admx-removablestorage-cdanddvd-denyexecute-access-2">ADMX_RemovableStorage/CDandDVD_DenyExecute_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-cdanddvd-denyread-access-1" id="admx-removablestorage-cdanddvd-denyread-access-1">ADMX_RemovableStorage/CDandDVD_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-cdanddvd-denyread-access-2" id="admx-removablestorage-cdanddvd-denyread-access-2">ADMX_RemovableStorage/CDandDVD_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-cdanddvd-denywrite-access-1" id="admx-removablestorage-cdanddvd-denywrite-access-1">ADMX_RemovableStorage/CDandDVD_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-cdanddvd-denywrite-access-2" id="admx-removablestorage-cdanddvd-denywrite-access-2">ADMX_RemovableStorage/CDandDVD_DenyWrite_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-customclasses-denyread-access-1" id="admx-removablestorage-customclasses-denyread-access-1">ADMX_RemovableStorage/CustomClasses_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-customclasses-denyread-access-2" id="admx-removablestorage-customclasses-denyread-access-2">ADMX_RemovableStorage/CustomClasses_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-customclasses-denywrite-access-1" id="admx-removablestorage-customclasses-denywrite-access-1">ADMX_RemovableStorage/CustomClasses_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-customclasses-denywrite-access-2" id="admx-removablestorage-customclasses-denywrite-access-2">ADMX_RemovableStorage/CustomClasses_DenyWrite_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-floppydrives-denyexecute-access-2" id="admx-removablestorage-floppydrives-denyexecute-access-2">ADMX_RemovableStorage/FloppyDrives_DenyExecute_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-floppydrives-denyread-access-1" id="admx-removablestorage-floppydrives-denyread-access-1">ADMX_RemovableStorage/FloppyDrives_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-floppydrives-denyread-access-2" id="admx-removablestorage-floppydrives-denyread-access-2">ADMX_RemovableStorage/FloppyDrives_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-floppydrives-denywrite-access-1" id="admx-removablestorage-floppydrives-denywrite-access-1">ADMX_RemovableStorage/FloppyDrives_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-floppydrives-denywrite-access-2" id="admx-removablestorage-floppydrives-denywrite-access-2">ADMX_RemovableStorage/FloppyDrives_DenyWrite_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removabledisks-denyexecute-access-2" id="admx-removablestorage-removabledisks-denyexecute-access-2">ADMX_RemovableStorage/RemovableDisks_DenyExecute_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removabledisks-denyread-access-1" id="admx-removablestorage-removabledisks-denyread-access-1">ADMX_RemovableStorage/RemovableDisks_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removabledisks-denyread-access-2" id="admx-removablestorage-removabledisks-denyread-access-2">ADMX_RemovableStorage/RemovableDisks_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removabledisks-denywrite-access-1" id="admx-removablestorage-removabledisks-denywrite-access-1">ADMX_RemovableStorage/RemovableDisks_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removablestorageclasses-denyall-access-1" id="admx-removablestorage-removablestorageclasses-denyall-access-1">ADMX_RemovableStorage/RemovableStorageClasses_DenyAll_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removablestorageclasses-denyall-access-2" id="admx-removablestorage-removablestorageclasses-denyall-access-2">ADMX_RemovableStorage/RemovableStorageClasses_DenyAll_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removable-remote-allow-access" id="admx-removablestorage-removable-remote-allow-access">ADMX_RemovableStorage/Removable_Remote_Allow_Access</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-tapedrives-denyexecute-access-2" id="admx-removablestorage-tapedrives-denyexecute-access-2">ADMX_RemovableStorage/TapeDrives_DenyExecute_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-tapedrives-denyread-access-1" id="admx-removablestorage-tapedrives-denyread-access-1">ADMX_RemovableStorage/TapeDrives_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-tapedrives-denyread-access-2" id="admx-removablestorage-tapedrives-denyread-access-2">ADMX_RemovableStorage/TapeDrives_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-tapedrives-denywrite-access-1" id="admx-removablestorage-tapedrives-denywrite-access-1">ADMX_RemovableStorage/TapeDrives_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-tapedrives-denywrite-access-2" id="admx-removablestorage-tapedrives-denywrite-access-2">ADMX_RemovableStorage/TapeDrives_DenyWrite_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-wpddevices-denyread-access-1" id="admx-removablestorage-wpddevices-denyread-access-1">ADMX_RemovableStorage/WPDDevices_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-wpddevices-denyread-access-2" id="admx-removablestorage-wpddevices-denyread-access-2">ADMX_RemovableStorage/WPDDevices_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-wpddevices-denywrite-access-1" id="admx-removablestorage-wpddevices-denywrite-access-1">ADMX_RemovableStorage/WPDDevices_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-wpddevices-denywrite-access-2" id="admx-removablestorage-wpddevices-denywrite-access-2">ADMX_RemovableStorage/WPDDevices_DenyWrite_Access_2</a>
+  </dd>
+</dl>
+
+### ADMX_RPC policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-rpc.md#admx-rpc-rpcextendederrorinformation" id="admx-rpc-rpcextendederrorinformation">ADMX_RPC/RpcExtendedErrorInformation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-rpc.md#admx-rpc-rpcignoredelegationfailure" id="admx-rpc-rpcignoredelegationfailure">ADMX_RPC/RpcIgnoreDelegationFailure</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-rpc.md#admx-rpc-rpcminimumhttpconnectiontimeout" id="admx-rpc-rpcminimumhttpconnectiontimeout">ADMX_RPC/RpcMinimumHttpConnectionTimeout</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-rpc.md#admx-rpc-rpcstateinformation" id="admx-rpc-rpcstateinformation">ADMX_RPC/RpcStateInformation</a>
+  </dd>
+</dl>
 
 ### ADMX_Scripts policies
 
@@ -2485,6 +3305,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disablecmd" id="admx-shellcommandpromptregedittools-restrictapps">ADMX_ShellCommandPromptRegEditTools/RestrictApps</a>
+  </dd>
+</dl>
+
+### ADMX_SkyDrive policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-skydrive.md#admx-skydrive-preventnetworktrafficpreusersignin" id="admx-skydrive-preventnetworktrafficpreusersignin">ADMX_SkyDrive/PreventNetworkTrafficPreUserSignIn</a>
   </dd>
 </dl>
 
@@ -3704,6 +4532,17 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_WindowsRemoteManagement policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowsremotemanagement.md#admx-windowsremotemanagement-disallowkerberos-1" id="admx-windowsremotemanagement-disallowkerberos-1">ADMX_WindowsRemoteManagement/DisallowKerberos_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsremotemanagement.md#admx-windowsremotemanagement-disallowkerberos-2" id="admx-windowsremotemanagement-disallowkerberos-2">ADMX_WindowsRemoteManagement/DisallowKerberos_2</a>
+  </dd>
+</dl>
+
 ### ADMX_WindowsStore policies  
 
 <dl>
@@ -3758,6 +4597,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-winlogon.md#admx-winlogon-softwaresasgeneration" id="admx-winlogon-softwaresasgeneration">ADMX_WinLogon/SoftwareSASGeneration</a>
+  </dd>
+</dl>
+
+### ADMX_Winsrv policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-winsrv.md#admx-winsrv-allowblockingappsatshutdown" id="#admx-winsrv-allowblockingappsatshutdown">ADMX_Winsrv/AllowBlockingAppsAtShutdown</a>
   </dd>
 </dl>
 
@@ -4472,7 +5319,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-connectivity.md#connectivity-allowvpnroamingovercellular" id="connectivity-allowvpnroamingovercellular">Connectivity/AllowVPNRoamingOverCellular</a>
   </dd>
   <dd>
-    <a href="./policy-csp-connectivity.md#connectivity-diableprintingoverhttp" id="connectivity-diableprintingoverhttp">Connectivity/DiablePrintingOverHTTP</a>
+    <a href="./policy-csp-connectivity.md#connectivity-disableprintingoverhttp" id="connectivity-disableprintingoverhttp">Connectivity/DiablePrintingOverHTTP</a>
   </dd>
   <dd>
     <a href="./policy-csp-connectivity.md#connectivity-disabledownloadingofprintdriversoverhttp" id="connectivity-disabledownloadingofprintdriversoverhttp">Connectivity/DisableDownloadingOfPrintDriversOverHTTP</a>
@@ -4831,28 +5678,28 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-allowinstallationofmatchingdeviceids" id="deviceinstallation-allowinstallationofmatchingdeviceids">DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</a>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallationallowinstallationofmatchingdeviceids" id="deviceinstallation-allowinstallationofmatchingdeviceids">DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</a>
   </dd>
   <dd>
-    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-allowinstallationofmatchingdevicesetupclasses" id="deviceinstallation-allowinstallationofmatchingdevicesetupclasses">DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</a>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallationallowinstallationofmatchingdevicesetupclasses" id="deviceinstallation-allowinstallationofmatchingdevicesetupclasses">DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</a>
   </dd>
   <dd>
-    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-allowinstallationofmatchingdeviceinstanceids"id="deviceinstallation-allowinstallationofmatchingdeviceinstanceids">DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs</a>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallationallowinstallationofmatchingdeviceinstanceids"id="deviceinstallation-allowinstallationofmatchingdeviceinstanceids">DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs</a>
   </dd>
   <dd>
-    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventdevicemetadatafromnetwork" id="deviceinstallation-preventdevicemetadatafromnetwork">DeviceInstallation/PreventDeviceMetadataFromNetwork</a>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallationpreventdevicemetadatafromnetwork" id="deviceinstallation-preventdevicemetadatafromnetwork">DeviceInstallation/PreventDeviceMetadataFromNetwork</a>
   </dd>
   <dd>
-    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings" id="deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings">DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</a>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallationpreventinstallationofdevicesnotdescribedbyotherpolicysettings" id="deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings">DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</a>
   </dd>
   <dd>
-    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdeviceids" id="deviceinstallation-preventinstallationofmatchingdeviceids">DeviceInstallation/PreventInstallationOfMatchingDeviceIDs</a>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallationpreventinstallationofmatchingdeviceids" id="deviceinstallation-preventinstallationofmatchingdeviceids">DeviceInstallation/PreventInstallationOfMatchingDeviceIDs</a>
   </dd>
   <dd>
-    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdeviceinstanceids"id="deviceinstallation-preventinstallationofmatchingdeviceinstanceids">DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs</a>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallationpreventinstallationofmatchingdeviceinstanceids"id="deviceinstallation-preventinstallationofmatchingdeviceinstanceids">DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs</a>
   </dd>
   <dd>
-    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdevicesetupclasses" id="deviceinstallation-preventinstallationofmatchingdevicesetupclasses">DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses</a>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallationpreventinstallationofmatchingdevicesetupclasses" id="deviceinstallation-preventinstallationofmatchingdevicesetupclasses">DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses</a>
   </dd>
 </dl>
 
@@ -6748,9 +7595,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-search.md#search-allowcloudsearch" id="search-allowcloudsearch">Search/AllowCloudSearch</a>
   </dd>
   <dd>
-    <a href="./policy-csp-search.md#search-allowcortanainaad" id="search-allowcortanainaad">Search/AllowCortanaInAAD</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-search.md#search-allowfindmyfiles" id="search-allowfindmyfiles">Search/AllowFindMyFiles</a>
   </dd>
   <dd>
@@ -7629,6 +8473,23 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_WindowsFileProtection policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpshowprogress" id="admx-windowsfileprotection-wfpshowprogress">ADMX_WindowsFileProtection/WFPShowProgress</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpquota" id="admx-windowsfileprotection-wfpquota">ADMX_WindowsFileProtection/WFPQuota</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpscan" id="admx-windowsfileprotection-wfpscan">ADMX_WindowsFileProtection/WFPScan</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpdllcachedir" id="admx-windowsfileprotection-wfpdllcachedir">ADMX_WindowsFileProtection/WFPDllCacheDir</a>
+  </dd>
+</dl>
+
 ### WindowsInkWorkspace policies
 
 <dl>
@@ -7726,27 +8587,27 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+
 ## Policies in Policy CSP supported by Group Policy and ADMX-backed policies in Policy CSP
-- [Policies in Policy CSP supported by Group Policy](policy-csps-supported-by-group-policy.md)
-- [ADMX-backed policies in Policy CSP](policy-csps-admx-backed.md)
+- [Policies in Policy CSP supported by Group Policy](./policies-in-policy-csp-supported-by-group-policy.md)
+- [ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
 
 > [!NOTE]
 > Not all Policies in Policy CSP supported by Group Policy are ADMX-backed. For more details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
 ## Policies in Policy CSP supported by HoloLens devices
-- [Policies in Policy CSP supported by HoloLens 2](policy-csps-supported-by-hololens2.md)  
-- [Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)  
-- [Policies in Policy CSP supported by HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
+- [Policies in Policy CSP supported by HoloLens 2](./policies-in-policy-csp-supported-by-hololens2.md)  
+- [Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite](./policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md)  
+- [Policies in Policy CSP supported by HoloLens (1st gen) Development Edition](./policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md)
 
 ## Policies in Policy CSP supported by Windows 10 IoT
-- [Policies in Policy CSP supported by Windows 10 IoT Enterprise](policy-csps-supported-by-iot-enterprise.md)
-- [Policies in Policy CSP supported by Windows 10 IoT Core](policy-csps-supported-by-iot-core.md)
+- [Policies in Policy CSP supported by Windows 10 IoT Core](./policies-in-policy-csp-supported-by-iot-core.md)
 
 ## Policies in Policy CSP supported by Microsoft Surface Hub
-- [Policies in Policy CSP supported by Microsoft Surface Hub](policy-csps-supported-by-surface-hub.md)
+- [Policies in Policy CSP supported by Microsoft Surface Hub](./policies-in-policy-csp-supported-by-surface-hub.md)
 
 ## Policies in Policy CSP that can be set using Exchange ActiveSync (EAS)
-- [Policies in Policy CSP that can be set using Exchange ActiveSync (EAS)](policy-csps-that-can-be-set-using-eas.md)
+- [Policies in Policy CSP that can be set using Exchange ActiveSync (EAS)](./policies-in-policy-csp-that-can-be-set-using-eas.md)
 
 ## Related topics
 

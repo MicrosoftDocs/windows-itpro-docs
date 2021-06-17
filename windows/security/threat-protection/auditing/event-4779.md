@@ -2,7 +2,7 @@
 title: 4779(S) A session was disconnected from a Window Station. (Windows 10)
 description: Describes security event 4779(S) A session was disconnected from a Window Station.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4779(S): A session was disconnected from a Window Station.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event is generated when a user disconnects from an existing Terminal Services session, or when a user switches away from an existing desktop using [Fast User Switching](https://docs.microsoft.com/windows-hardware/drivers/display/fast-user-switching).
+This event is generated when a user disconnects from an existing Terminal Services session, or when a user switches away from an existing desktop using [Fast User Switching](/windows-hardware/drivers/display/fast-user-switching).
 
 This event also generated when user disconnects from virtual host Hyper-V Enhanced Session, for example.
 
@@ -141,4 +142,3 @@ For 4779(S): A session was disconnected from a Window Station.
 -   If Remote Desktop Connections are not allowed for specific users (**Subject\\Account Name**) or disabled on some computers, then monitor for **Session Name** = RDP-Tcp\# (substring).
 
 -   To ensure that connections are made only from your internal IP address list, monitor the **Additional Information\\Client Address** in this event.
-

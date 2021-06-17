@@ -11,8 +11,8 @@ metadata:
   ms.product: windows
   ms.topic: hub-page # Required
   ms.collection: M365-security-compliance
-  author: danihalfin
-  ms.author: daniha
+  author: dansimp
+  ms.author: dansimp
   manager: dansimp
   ms.date: 07/21/2020 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
@@ -152,7 +152,7 @@ productDirectory:
 #           summary: cardsummary3
 #           url: file1.md OR https://docs.microsoft.com/file3
 #   # footer (optional)
-#   footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"
+#   footer: "footertext [linktext](/footerfile)"
 
 # additionalContent section (optional)
 # Card with links style
@@ -164,7 +164,7 @@ additionalContent:
         - title: View and manage Windows 10 connection endpoints
           links:
             - text: Manage Windows 10 connection endpoints
-              url: manage-windows-endpoints.md
+              url: ./manage-windows-2004-endpoints.md
             - text: Manage connection endpoints for non-Enterprise editions of Windows 10
               url: windows-endpoints-2004-non-enterprise-editions.md 
             - text: Manage connections from Windows to Microsoft services
@@ -175,8 +175,8 @@ additionalContent:
             - text: Windows 10 on Trust Center
               url: https://www.microsoft.com/en-us/trustcenter/cloudservices/windows10
             - text: GDPR on Microsoft 365 Compliance solutions
-              url: https://docs.microsoft.com/microsoft-365/compliance/gdpr
+              url: /microsoft-365/compliance/gdpr
             - text: Support for GDPR Accountability on Service Trust Portal
               url: https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted
   # footer (optional)
-  # footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"
+  # footer: "footertext [linktext](/footerfile)"

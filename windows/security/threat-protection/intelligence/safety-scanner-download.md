@@ -3,17 +3,18 @@ title: Microsoft Safety Scanner Download
 ms.reviewer: 
 description: Get the Microsoft Safety Scanner tool to find and remove malware from Windows computers.
 keywords: security, malware
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
+ms.technology: mde
 ---
 # Microsoft Safety Scanner
 
@@ -38,12 +39,12 @@ Microsoft Safety Scanner is a scan tool designed to find and remove malware from
 
 ## System requirements
 
-Safety Scanner helps remove malicious software from computers running Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, or Windows Server 2008. Please refer to the [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle).
+Safety Scanner helps remove malicious software from computers running Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2019, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, or Windows Server 2008. Please refer to the [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle).
 
 ## How to run a scan
 
 1. Download this tool and open it.
-2. Select the type of scan you want run and start the scan.
+2. Select the type of scan that you want to run and start the scan.
 3. Review the scan results displayed on screen. For detailed detection results, view the log at **%SYSTEMROOT%\debug\msert.log**.
 
 To remove this tool, delete the executable file (msert.exe by default).
@@ -57,4 +58,4 @@ For more information about the Safety Scanner, see the support article on [how t
 - [Microsoft Security Essentials](https://support.microsoft.com/help/14210/security-essentials-download)
 - [Removing difficult threats](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware)
 - [Submit file for malware analysis](https://www.microsoft.com/wdsi/filesubmission)
-- [Microsoft antimalware and threat protection solutions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft antimalware and threat protection solutions](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)

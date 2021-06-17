@@ -65,7 +65,7 @@ To resolve this issue, disable and re-enable the TPM. To do this, follow these s
 1. Restart the device, and change the BIOS configuration to enable the TPM.
 1. Restart the device, and return to the TPM management console.
 
-If you still cannot prepare the TPM, clear the existing TPM keys. To do this, follow the instructions in [Troubleshoot the TPM: Clear all the keys from the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm#clear-all-the-keys-from-the-tpm).
+If you still cannot prepare the TPM, clear the existing TPM keys. To do this, follow the instructions in [Troubleshoot the TPM: Clear all the keys from the TPM](../tpm/initialize-and-configure-ownership-of-the-tpm.md#clear-all-the-keys-from-the-tpm).
 
 > [!WARNING]
 > Clearing the TPM can cause data loss.
@@ -116,7 +116,7 @@ The domain and forest functional level of the environment may still be set to Wi
 To resolve this issue, follow these steps:
 
 1. Upgrade the functional level of the domain and forest to Windows Server 2012 R2.
-2. Download [Add-TPMSelfWriteACE.vbs](https://go.microsoft.com/fwlink/p/?LinkId=167133).
+2. Download [Add-TPMSelfWriteACE.vbs](/samples/browse/?redirectedfrom=TechNet-Gallery).
 3. In the script, modify the value of **strPathToDomain** to your domain name.
 4. Open an elevated PowerShell window, and run the following command:
 
@@ -128,5 +128,5 @@ To resolve this issue, follow these steps:
 
 For more information, see the following articles:
 
-- [Back up the TPM recovery information to AD DS](https://docs.microsoft.com/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds)
-- [Prepare your organization for BitLocker: Planning and policies](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies)
+- [Back up the TPM recovery information to AD DS](../tpm/backup-tpm-recovery-information-to-ad-ds.md)
+- [Prepare your organization for BitLocker: Planning and policies](./prepare-your-organization-for-bitlocker-planning-and-policies.md)

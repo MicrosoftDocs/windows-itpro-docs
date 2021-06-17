@@ -83,7 +83,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to specify Clock discipline and General values for the Windows Time service (W32time) for domain controllers including RODCs.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify Clock discipline and General values for the Windows Time service (W32time) for domain controllers including RODCs.
 
 If this policy setting is enabled, W32time Service on target machines use the settings provided here. Otherwise, the service on target machines use locally configured settings values.
 
@@ -228,7 +228,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies a set of parameters for controlling the Windows NTP Client.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies a set of parameters for controlling the Windows NTP Client.
 
 If you enable this policy setting, you can specify the following parameters for the Windows NTP Client.
 
@@ -318,7 +318,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether the Windows NTP Client is enabled.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether the Windows NTP Client is enabled.
 
 Enabling the Windows NTP Client allows your computer to synchronize its computer clock with other NTP servers. You might want to disable this service if you decide to use a third-party time provider.
 
@@ -389,7 +389,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to specify whether the Windows NTP Server is enabled.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify whether the Windows NTP Server is enabled.
 
 If you enable this policy setting for the Windows NTP Server, your computer can service NTP requests from other computers.
 
@@ -414,16 +414,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

@@ -17,6 +17,9 @@ ms.reviewer:
 
 # Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
 
+**Applies to:**
+- Windows 10 Enterprise Edition
+
 ```powershell
 # Script to find out if a machine is Device Guard compliant.
 # The script requires a driver verifier present on the system.
@@ -675,7 +678,7 @@ function CheckDriverCompat
     if($verifier_state.ToString().Contains("No drivers are currently verified."))
     {
         LogAndConsole "Enabling Driver verifier"
-        verifier.exe /flags 0x02000000 /all /log.code_integrity
+        verifier.exe /flags 0x02000000 /all /bootmode oneboot /log.code_integrity
 
         LogAndConsole "Enabling Driver Verifier and Rebooting system"
         Log $verifier_state
@@ -732,11 +735,11 @@ function IsDomainController
 
 function CheckOSSKU
 {
-    $osname = $((gwmi win32_operatingsystem).Name).ToLower()
+    $osname = $((Get-ComputerInfo).WindowsProductName).ToLower()
     $_SKUSupported = 0
     Log "OSNAME:$osname"
     $SKUarray = @("Enterprise", "Education", "IoT", "Windows Server")
-    $HLKAllowed = @("microsoft windows 10 pro")
+    $HLKAllowed = @("windows 10 pro")
     foreach ($SKUent in $SKUarray)
     {
         if($osname.ToString().Contains($SKUent.ToLower()))

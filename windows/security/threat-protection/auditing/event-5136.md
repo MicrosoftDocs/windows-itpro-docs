@@ -2,7 +2,7 @@
 title: 5136(S) A directory service object was modified. (Windows 10)
 description: Describes security event 5136(S) A directory service object was modified.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5136(S): A directory service object was modified.
@@ -28,7 +29,7 @@ ms.author: dansimp
 
 This event generates every time an Active Directory object is modified.
 
-To generate this event, the modified object must have an appropriate entry in [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx): the “**Write”** action auditing for specific attributes.
+To generate this event, the modified object must have an appropriate entry in [SACL](/windows/win32/secauthz/access-control-lists): the “**Write”** action auditing for specific attributes.
 
 For a change operation you will typically see two 5136 events for one action, with different **Operation\\Type** fields: “Value Deleted” and then “Value Added”. “Value Deleted” event typically contains previous value and “Value Added” event contains new value.
 
@@ -181,7 +182,7 @@ For a change operation you will typically see two 5136 events for one action, wi
 
 -   **LDAP Display Name** \[Type = UnicodeString\]**:** the object attribute that was modified.
 
-> **Note**&nbsp;&nbsp;[LDAP Display Name](https://msdn.microsoft.com/library/ms676828(v=vs.85).aspx) is the name used by LDAP clients, such as the ADSI LDAP provider, to read and write the attribute by using the LDAP protocol.
+> **Note**&nbsp;&nbsp;[LDAP Display Name](/windows/win32/adschema/a-ldapdisplayname) is the name used by LDAP clients, such as the ADSI LDAP provider, to read and write the attribute by using the LDAP protocol.
 
 -   **Syntax (OID)** \[Type = UnicodeString\]**:** The syntax for an attribute defines the storage representation, byte ordering, and matching rules for comparisons of property types. Whether the attribute value must be a string, a number, or a unit of time is also defined. Every attribute of every object is associated with exactly one syntax. The syntaxes are not represented as objects in the schema, but they are programmed to be understood by Active Directory. The allowable syntaxes in Active Directory are predefined.
 
@@ -239,4 +240,3 @@ For 5136(S): A directory service object was modified.
 -   If you need to monitor modifications to specific Active Directory attributes, monitor for **LDAP Display Name** field with specific attribute name.
 
 -   It is better to monitor **Operation\\Type = Value Added** events, because you will see the new value of attribute. At the same time you can correlate to previous **Operation\\Type = Value Deleted** event with the same **Correlation ID** to see the previous value.
-

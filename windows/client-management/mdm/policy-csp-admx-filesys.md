@@ -93,7 +93,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Compression can add to the processing overhead of filesystem operations. Enabling this setting will prevent access to and creation of compressed files. 
+Available in the latest Windows 10 Insider Preview Build. Compression can add to the processing overhead of filesystem operations. Enabling this setting will prevent access to and creation of compressed files. 
 
 <!--/Description-->
 > [!TIP]
@@ -157,7 +157,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Delete notification is a feature that notifies the underlying storage device of clusters that are freed due to a file delete operation.
+Available in the latest Windows 10 Insider Preview Build. Delete notification is a feature that notifies the underlying storage device of clusters that are freed due to a file delete operation.
 
 A value of 0, the default, will enable delete notifications for all volumes.
 
@@ -224,7 +224,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Encryption can add to the processing overhead of filesystem operations. Enabling this setting will prevent access to and creation of encrypted files.
+Available in the latest Windows 10 Insider Preview Build. Encryption can add to the processing overhead of filesystem operations. Enabling this setting will prevent access to and creation of encrypted files.
 
 <!--/Description-->
 > [!TIP]
@@ -287,7 +287,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Encrypting the page file prevents malicious users from reading data that has been paged to disk, but also adds processing overhead for filesystem operations. Enabling this setting will cause the page files to be encrypted.
+Available in the latest Windows 10 Insider Preview Build. Encrypting the page file prevents malicious users from reading data that has been paged to disk, but also adds processing overhead for filesystem operations. Enabling this setting will cause the page files to be encrypted.
 
 <!--/Description-->
 > [!TIP]
@@ -350,7 +350,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Enabling Win32 long paths will allow manifested win32 applications and Windows Store applications to access paths beyond the normal 260 character limit per node on file systems that support it. Enabling this setting will cause the long paths to be accessible within the process.
+Available in the latest Windows 10 Insider Preview Build. Enabling Win32 long paths will allow manifested win32 applications and Windows Store applications to access paths beyond the normal 260 character limit per node on file systems that support it. Enabling this setting will cause the long paths to be accessible within the process.
 
 <!--/Description-->
 > [!TIP]
@@ -413,7 +413,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting provides control over whether or not short names are generated during file creation. Some applications require short names for compatibility, but short names have a negative performance impact on the system.
+Available in the latest Windows 10 Insider Preview Build. This policy setting provides control over whether or not short names are generated during file creation. Some applications require short names for compatibility, but short names have a negative performance impact on the system.
 
 If you enable short names on all volumes then short names will always be generated. If you disable them on all volumes then they will never be generated. If you set short name creation to be configurable on a per volume basis then an on-disk flag will determine whether or not short names are created on a given volume. If you disable short name creation on all data volumes then short names will only be generated for files created on the system volume.
 
@@ -479,7 +479,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Symbolic links can introduce vulnerabilities in certain applications. To mitigate this issue, you can selectively enable or disable the evaluation of these types of symbolic links:  
+Available in the latest Windows 10 Insider Preview Build. Symbolic links can introduce vulnerabilities in certain applications. To mitigate this issue, you can selectively enable or disable the evaluation of these types of symbolic links:  
 
 - Local Link to a Local Target
 - Local Link to a Remote Target
@@ -552,7 +552,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. TXF deprecated features included savepoints, secondary RM, miniversion and roll forward. Enable it if you want to use the APIs.
+Available in the latest Windows 10 Insider Preview Build. TXF deprecated features included savepoints, secondary RM, miniversion and roll forward. Enable it if you want to use the APIs.
 
 <!--/Description-->
 > [!TIP]
@@ -573,16 +573,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

@@ -95,7 +95,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies resources on your intranet that are normally accessible to DirectAccess clients. Each entry is a string that identifies the type of resource and the location of the resource. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies resources on your intranet that are normally accessible to DirectAccess clients. Each entry is a string that identifies the type of resource and the location of the resource. 
 
 Each string can be one of the following types:  
 
@@ -174,7 +174,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies commands configured by the administrator for custom logging. These commands will run in addition to default log commands.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies commands configured by the administrator for custom logging. These commands will run in addition to default log commands.
 
 <!--/Description-->
 > [!TIP]
@@ -239,7 +239,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies the IPv6 addresses of the endpoints of the Internet Protocol security (IPsec) tunnels that enable DirectAccess. NCA attempts to access the resources that are specified in the Corporate Resources setting through these configured tunnel endpoints. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the IPv6 addresses of the endpoints of the Internet Protocol security (IPsec) tunnels that enable DirectAccess. NCA attempts to access the resources that are specified in the Corporate Resources setting through these configured tunnel endpoints. 
 
 By default, NCA uses the same DirectAccess server that the DirectAccess client computer connection is using. In default configurations of DirectAccess, there are typically two IPsec tunnel endpoints: one for the infrastructure tunnel and one for the intranet tunnel. You should configure one endpoint for each tunnel.
 
@@ -310,7 +310,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies the string that appears for DirectAccess connectivity when the user clicks the Networking notification area icon. For example, you can specify “Contoso Intranet Access” for the DirectAccess clients of the Contoso Corporation.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the string that appears for DirectAccess connectivity when the user clicks the Networking notification area icon. For example, you can specify “Contoso Intranet Access” for the DirectAccess clients of the Contoso Corporation.
 
 If this setting is not configured, the string that appears for DirectAccess connectivity is “Corporate Connection”.
 
@@ -377,7 +377,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether the user has Connect and Disconnect options for the DirectAccess entry when the user clicks the Networking notification area icon.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether the user has Connect and Disconnect options for the DirectAccess entry when the user clicks the Networking notification area icon.
 
 If the user clicks the Disconnect option, NCA removes the DirectAccess rules from the Name Resolution Policy Table (NRPT) and the DirectAccess client computer uses whatever normal name resolution is available to the client computer in its current network configuration, including sending all DNS queries to the local intranet or Internet DNS servers. Note that NCA does not remove the existing IPsec tunnels and users can still access intranet resources across the DirectAccess server by specifying IPv6 addresses rather than names.
 
@@ -453,7 +453,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether NCA service runs in Passive Mode or not.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether NCA service runs in Passive Mode or not.
 
 Set this to Disabled to keep NCA probing actively all the time. If this setting is not configured, NCA probing is in active mode by default.
 <!--/Description-->
@@ -519,7 +519,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether an entry for DirectAccess connectivity appears when the user clicks the Networking notification area icon.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether an entry for DirectAccess connectivity appears when the user clicks the Networking notification area icon.
 
 Set this to Disabled to prevent user confusion when you are just using DirectAccess to remotely manage DirectAccess client computers from your intranet and not providing seamless intranet access. 
 
@@ -588,7 +588,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies the e-mail address to be used when sending the log files that are generated by NCA to the network administrator. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the e-mail address to be used when sending the log files that are generated by NCA to the network administrator. 
 
 When the user sends the log files to the Administrator, NCA uses the default e-mail client to open a new message with the support email address in the To: field of the message, then attaches the generated log files as a .html file. The user can review the message and add additional information before sending the message.
 
@@ -611,16 +611,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

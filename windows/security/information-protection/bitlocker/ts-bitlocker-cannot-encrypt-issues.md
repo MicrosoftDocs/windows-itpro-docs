@@ -80,7 +80,7 @@ To verify that this issue has occurred, follow these steps:
 
    > D:(A;;CCDCLCSWRPWPDTLORCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLORCWDWO;;;BA)(A;;CCLCSWRPLORC;;;BU)(A;;CCLCSWRPLORC;;;AU)S:(AU;FA;CCDCLCSWRPWPDTLOSDRCWDWO;;;WD)
 
-1. Copy this output, and use it as part of the [**ConvertFrom-SddlString**](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-sddlstring?view=powershell-6) command in the PowerShell window, as follows.
+1. Copy this output, and use it as part of the [**ConvertFrom-SddlString**](/powershell/module/microsoft.powershell.utility/convertfrom-sddlstring?view=powershell-6) command in the PowerShell window, as follows.
 
    ![Output of the ConvertFrom-SddlString command, showing NT AUTHORITY\\INTERACTIVE](./images/ts-bitlocker-usb-sddl.png)
 

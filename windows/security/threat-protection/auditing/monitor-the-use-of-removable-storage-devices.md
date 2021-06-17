@@ -4,7 +4,7 @@ description: Learn how advanced security auditing options can be used to monitor
 ms.assetid: b0a9e4a5-b7ff-41c6-96ff-0228d4ba5da8
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date:
+ms.date: 
+ms.technology: mde
 ---
 
 # Monitor the use of removable storage devices
@@ -31,7 +32,7 @@ Use the following procedures to monitor the use of removable storage devices and
 Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
 
 > [!NOTE] 
-> When a policy to audit removable storage is pushed to a computer, a new [Security Descriptor](https://docs.microsoft.com/windows/win32/secauthz/audit-generation) needs to be applied to all removable storage devices with the audit settings. The [security descriptor for a device](https://docs.microsoft.com/windows-hardware/drivers/kernel/controlling-device-access) can be set up either when the device is installed, or by setting up the [device properties in the registry](https://docs.microsoft.com/windows-hardware/drivers/kernel/setting-device-object-registry-properties-after-installation), which is done by calling a [device installation function](https://docs.microsoft.com/previous-versions/ff541299). This may require the device to restart to apply the new security descriptor.
+> When a policy to audit removable storage is pushed to a computer, a new [Security Descriptor](/windows/win32/secauthz/audit-generation) needs to be applied to all removable storage devices with the audit settings. The [security descriptor for a device](/windows-hardware/drivers/kernel/controlling-device-access) can be set up either when the device is installed, or by setting up the [device properties in the registry](/windows-hardware/drivers/kernel/setting-device-object-registry-properties-after-installation), which is done by calling a [device installation function](/previous-versions/ff541299). This may require the device to restart to apply the new security descriptor.
  
 **To configure settings to monitor removable storage devices**
 

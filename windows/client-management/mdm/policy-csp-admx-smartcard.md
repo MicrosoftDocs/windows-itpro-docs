@@ -119,7 +119,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting lets you allow certificates without an Extended Key Usage (EKU) set to be used for logon.
+Available in the latest Windows 10 Insider Preview Build. This policy setting lets you allow certificates without an Extended Key Usage (EKU) set to be used for logon.
 
 In versions of Windows prior to Windows Vista, smart card certificates that are used for logon require an enhanced key usage (EKU) extension with a smart card logon object identifier. This policy setting can be used to modify that restriction.
 
@@ -194,7 +194,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting lets you determine whether the integrated unblock feature will be available in the logon User Interface (UI).
+Available in the latest Windows 10 Insider Preview Build. This policy setting lets you determine whether the integrated unblock feature will be available in the logon User Interface (UI).
 
 In order to use the integrated unblock feature your smart card must support this feature.  Please check with your hardware manufacturer to see if your smart card supports this feature.
 
@@ -265,7 +265,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting lets you allow signature key-based certificates to be enumerated and available for logon.
+Available in the latest Windows 10 Insider Preview Build. This policy setting lets you allow signature key-based certificates to be enumerated and available for logon.
 
 If you enable this policy setting then any certificates available on the smart card with a signature only key will be listed on the logon screen.
 
@@ -334,7 +334,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting permits those certificates to be displayed for logon that are either expired or not yet valid.
+Available in the latest Windows 10 Insider Preview Build. This policy setting permits those certificates to be displayed for logon that are either expired or not yet valid.
 
 Under previous versions of Microsoft Windows, certificates were required to contain a valid time and not be expired. The certificate must still be accepted by the domain controller in order to be used. This setting only controls the displaying of the certificate on the client machine. 
 
@@ -405,7 +405,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to manage the certificate propagation that occurs when a smart card is inserted.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage the certificate propagation that occurs when a smart card is inserted.
 
 If you enable or do not configure this policy setting then certificate propagation will occur when you insert your smart card.
 
@@ -474,7 +474,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to manage the cleanup behavior of root certificates.  If you enable this policy setting then root certificate cleanup will occur according to the option selected. If you disable or do not configure this setting then root certificate cleanup will occur on logoff.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage the cleanup behavior of root certificates.  If you enable this policy setting then root certificate cleanup will occur according to the option selected. If you disable or do not configure this setting then root certificate cleanup will occur on logoff.
 
 <!--/Description-->
 > [!TIP]
@@ -539,7 +539,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to manage the root certificate propagation that occurs when a smart card is inserted.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage the root certificate propagation that occurs when a smart card is inserted.
 
 If you enable or do not configure this policy setting then root certificate propagation will occur when you insert your smart card.
 
@@ -611,7 +611,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents plaintext PINs from being returned by Credential Manager. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents plaintext PINs from being returned by Credential Manager. 
 
 If you enable this policy setting, Credential Manager does not return a plaintext PIN. 
 
@@ -683,7 +683,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to control whether elliptic curve cryptography (ECC) certificates on a smart card can be used to log on to a domain.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control whether elliptic curve cryptography (ECC) certificates on a smart card can be used to log on to a domain.
 
 If you enable this policy setting, ECC certificates on a smart card can be used to log on to a domain.
 
@@ -755,7 +755,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting lets you configure if all your valid logon certificates are displayed.
+Available in the latest Windows 10 Insider Preview Build. This policy setting lets you configure if all your valid logon certificates are displayed.
 
 During the certificate renewal period, a user can have multiple valid logon certificates issued from the same certificate template.  This can cause confusion as to which certificate to select for logon. The common case for this behavior is when a certificate is renewed and the old one has not yet expired. Two certificates are determined to be the same if they are issued from the same template with the same major version and they are for the same user (determined by their UPN).
 
@@ -831,7 +831,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to manage the reading of all certificates from the smart card for logon.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage the reading of all certificates from the smart card for logon.
 
 During logon Windows will by default only read the default certificate from the smart card unless it supports retrieval of all certificates in a single call. This setting forces Windows to read all the certificates from the card. This can introduce a significant performance decrease in certain situations. Please contact your smart card vendor to determine if your smart card and associated CSP supports the required behavior.
 
@@ -902,7 +902,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to manage the displayed message when a smart card is blocked.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage the displayed message when a smart card is blocked.
 
 If you enable this policy setting, the specified message will be displayed to the user when the smart card is blocked. 
 
@@ -974,7 +974,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting lets you reverse the subject name from how it is stored in the certificate when displaying it during logon.  
+Available in the latest Windows 10 Insider Preview Build. This policy setting lets you reverse the subject name from how it is stored in the certificate when displaying it during logon.  
 
 By default the user principal name (UPN) is displayed in addition to the common name to help users distinguish one certificate from another. For example, if the certificate subject was CN=User1, OU=Users, DN=example, DN=com and had an UPN of user1@example.com then "User1" will be displayed along with "user1@example.com." If the UPN is not present then the entire subject name will be displayed. This setting controls the appearance of that subject name and might need to be adjusted per organization.
 
@@ -1045,7 +1045,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to control whether Smart Card Plug and Play is enabled.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control whether Smart Card Plug and Play is enabled.
 
 If you enable or do not configure this policy setting, Smart Card Plug and Play will be enabled and the system will attempt to install a Smart Card device driver when a card is inserted in a Smart Card Reader for the first time.
 
@@ -1117,7 +1117,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to control whether a confirmation message is displayed when a smart card device driver is installed.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control whether a confirmation message is displayed when a smart card device driver is installed.
 
 If you enable or do not configure this policy setting, a confirmation message will be displayed when a smart card device driver is installed.
 
@@ -1189,7 +1189,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting lets you determine whether an optional field will be displayed during logon and elevation that allows a user to enter his or her user name or user name and domain, thereby associating a certificate with that user.
+Available in the latest Windows 10 Insider Preview Build. This policy setting lets you determine whether an optional field will be displayed during logon and elevation that allows a user to enter his or her user name or user name and domain, thereby associating a certificate with that user.
 
 If you enable this policy setting then an optional field that allows a user to enter their user name or user name and domain will be displayed.
 
@@ -1214,16 +1214,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 
