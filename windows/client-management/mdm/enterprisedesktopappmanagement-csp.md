@@ -20,6 +20,7 @@ The EnterpriseDesktopAppManagement configuration service provider is used to han
 Application installations can take some time to complete, hence they are done asynchronously. When the Exec command is completed, the client can send a generic alert to the management server with a status, whether it's a failure or success. For a SyncML example, see [Alert example](#alert-example).
 
 The following shows the EnterpriseDesktopAppManagement CSP in tree format.
+
 ```
 ./Device/Vendor/MSFT
 EnterpriseDesktopAppManagement
@@ -37,6 +38,7 @@ EnterpriseDesktopAppManagement
 --------UpgradeCode
 ------------Guid
 ```
+
 <a href="" id="--vendor-msft-enterprisedesktopappmanagement"></a>**./Device/Vendor/MSFT/EnterpriseDesktopAppManagement**
 The root node for the EnterpriseDesktopAppManagement configuration service provider.
 
@@ -194,15 +196,15 @@ The following table describes the fields in the previous sample:
 
 The following table describes the fields in the previous sample:
 
-| Name   | Description                                                                                                                                                |
-|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Get    | Operation being performed. The Get operation is a request to report the status of the specified MSI installed application.                                 |
-| CmdID  | Input value used to reference the request. Responses will include this value which can be used to match request and response.                              |
+| Name   | Description |
+|--------|-----------------------|
+| Get    | Operation being performed. The Get operation is a request to report the status of the specified MSI installed application.|
+| CmdID  | Input value used to reference the request. Responses will include this value which can be used to match request and response. |
 | LocURI | Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting. |
 
  
 
-**SyncML to perform MSI install operations for an application targeted to a specific user on the device. The Add command is required to preceed the Exec command.**
+**SyncML to perform MSI install operations for an application targeted to a specific user on the device. The Add command is required to precede the Exec command.**
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -292,7 +294,8 @@ The following table describes the fields in the previous sample:
 
  
 
-> **Note**  Information status on the MSI job will be reported using standard OMA-DM notification mechanism. The status reported is represented using standard MSIEXEC return codes as HRESULT as defined in the MSIEXEC topic on Microsoft TechNet at <https://technet.microsoft.com/library/cc759262(v=ws.10).aspx>.
+> [!Note]
+> Information status on the MSI job will be reported using standard OMA-DM notification mechanism. The status reported is represented using standard MSIEXEC return codes as HRESULT as defined in the MSIEXEC topic on Microsoft TechNet at [Msiexec (command-line options)](https://technet.microsoft.com/library/cc759262%28v=ws.10%29.aspx).
 
  
 
@@ -401,7 +404,7 @@ The following table MsiInstallJob describes the schema elements.
 <td>Command-line options to be used when calling MSIEXEC.exe</td>
 </tr>
 <tr class="even">
-<td>Timeout</td>
+<td>TimeOut</td>
 <td>Amount of time, in minutes that the installation process can run before the installer considers the installation may have failed and no longer monitors the installation operation.</td>
 </tr>
 <tr class="odd">
@@ -550,21 +553,18 @@ Here's a list of references:
 
 ```xml
 <Alert>
-       <CmdID>4</CmdID>
-       <Data>1224</Data>
-       <Item>
-          <Source>
-             <LocURI>./Device/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/{AF9257BA-6BBD-4624-AA9B-0182D50292C3}/DownloadInstall</LocURI>
-          </Source>
-          <Meta>
-             <Type xmlns="syncml:metinf">Reversed-Domain-Name:com.microsoft.mdm.win32csp_install</Type>
-             <Format xmlns="syncml:metinf">int</Format>
-             <Mark xmlns="syncml:metinf">informational</Mark>
-          </Meta>
-          <Data>0</Data>
-       </Item>
+   <CmdID>4</CmdID>
+   <Data>1224</Data>
+   <Item>
+      <Source>
+         <LocURI>./Device/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/{AF9257BA-6BBD-4624-AA9B-0182D50292C3}/DownloadInstall</LocURI>
+      </Source>
+      <Meta>
+         <Type xmlns="syncml:metinf">Reversed-Domain-Name:com.microsoft.mdm.win32csp_install</Type>
+         <Format xmlns="syncml:metinf">int</Format>
+         <Mark xmlns="syncml:metinf">informational</Mark>
+      </Meta>
+      <Data>0</Data>
+   </Item>
 </Alert>
 ```
-
- 
-
