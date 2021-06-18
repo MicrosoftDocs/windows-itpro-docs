@@ -87,6 +87,7 @@ With the Enhanced diagnostic data level being split out into new policies, we're
 Customers who use services that depend on Windows diagnostic data, such as Microsoft Managed Desktop or Desktop Analytics, may be impacted by the behavioral changes when they are released. These services will be updated to address these changes and guidance will be published on how to configure them properly.
 
 The following provides information on the current configurations:
+
 - [Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/device-policies#windows-diagnostic-data)
 - [Desktop Analytics](/mem/configmgr/desktop-analytics/overview)
 

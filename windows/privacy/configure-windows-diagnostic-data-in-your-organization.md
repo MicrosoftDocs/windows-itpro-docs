@@ -66,7 +66,7 @@ Depending on the diagnostic data settings on the device, diagnostic data can be 
 
  - Small payloads of structured information referred to as diagnostic data events, managed by the Connected User Experiences and Telemetry component.
  
- - Diagnostic logs for additional troubleshooting, also managed by the Connected User Experience and Telemetry component. 
+ - Diagnostic logs for additional troubleshooting, also managed by the Connected User Experience and Telemetry component.
  
  - Crash reporting and crash dumps, managed by [Windows Error Reporting](/windows/win32/wer/windows-error-reporting).
 
@@ -120,7 +120,7 @@ Here’s a summary of the types of data that is included with each setting:
 
 This setting was previously labeled as **Security**. When you configure this setting, no Windows diagnostic data is sent from your device. This is only available on Windows Server, Windows 10 Enterprise, and Windows 10 Education. If you choose this setting, devices in your organization will still be secure.
 
->[!NOTE] 
+>[!NOTE]
 > If your organization relies on Windows Update, the minimum recommended setting is **Required diagnostic data**. Because no Windows Update information is collected when diagnostic data is off, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
 
 ### Required diagnostic data
@@ -247,7 +247,9 @@ Use the instructions below to enable Windows diagnostic data processor configura
 
 In Group Policy, to enable Windows diagnostic data processor configuration, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** and switch the **Allow commercial data pipeline** setting to **enabled**.
 
-If you wish to disable, at any time, switch the same setting to **disabled**. The default state of the above setting is **disabled**. To use an MDM solution, such as [Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10), to deploy the Windows diagnostic data processor configuration to your supported devices, use the following custom OMA-URI setting configuration:
+If you wish to disable, at any time, switch the same setting to **disabled**. The default state of the above setting is **disabled**.
+
+To use an MDM solution, such as [Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10), to deploy the Windows diagnostic data processor configuration to your supported devices, use the following custom OMA-URI setting configuration:
 
  - **Name:** System/AllowCommercialDataPipeline
  - **OMA-URI:** ./Vendor/MSFT/Policy/Config/System/AllowCommercialDataPipeline
