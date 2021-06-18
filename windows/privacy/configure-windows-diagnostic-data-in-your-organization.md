@@ -231,7 +231,8 @@ The Windows diagnostic data processor configuration enables you to be the contro
 
 ### Prerequisites
 
-The device must have Windows 10 Pro, Education or Enterprise edition, version 1809 with July 2021 update or newer. The device must also be joined to Azure Active Directory. 
+- The device must have Windows 10 Pro, Education or Enterprise edition, version 1809 with July 2021 update or newer.
+- The device must be joined to Azure Active Directory.
 
 The diagnostic data setting on the device should be set to Required diagnostic data or higher, and the following endpoints need to be reachable:
 
@@ -257,7 +258,7 @@ To use an MDM solution, such as [Microsoft Intune](/mem/intune/configuration/cus
 
 Under **Value**, use **1** to enable the service.
 
-If you wish to disable, at any time, switch the same setting to **0** to disable. The default is **0**.
+If you wish to disable, at any time, switch the same setting to **0**. The default value is **0**.
 
 >[!Note]
 > - If you have any additional policies that also enable you to be a controller of Windows diagnostic data, such as the services listed below, you will need to turn off all the applicable policies in order to stop being a controller for Windows diagnostic data.
