@@ -22,33 +22,35 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows Sun Valley, version 21H2
 
-This article provides an introduction and answers some frequently asked questions about Windows Sun Valley, the next client release of Windows.
+This article provides an introduction and answers some frequently asked questions about Windows Sun Valley, the next Windows client operating systgem release.
 
-Also see the following articles to learn about Windows Sun Valley: 
+Also see the following articles to learn more about Windows Sun Valley: 
 
 - [Windows Sun Valley requirements](windows-sv-requirements.md): Requirements to deploy Windows Sun Valley.
-- [Planning for Windows Sun Valley](windows-sv-plan.md): Information to help you create a Windows Sun Valley deployment plan.
+- [Planning for Windows Sun Valley](windows-sv-plan.md): Information to help you plan for Windows Sun Valley in your organizatioin.
 - [Prepare for Windows Sun Valley](windows-sv-prepare.md): Procedures to ensure readiness to deploy Windows Sun Valley.
 
 ## Introduction
 
 Windows Sun Valley is the next evolution of Windows; the most significant update to the Windows operating system since Windows 10. It offers many innovations focused on enhancing end user productivity in a fresh experience that is flexible and fluid. Windows Sun Valley is designed to support today's hybrid work environment, and intended to be the most reliable, secure, connected, and performant Windows OS ever. 
 
-This release is built on the same foundation as Windows 10, so the investments you have made in tools for update and device management are carried forward. Windows Sun Valley also sustains the application compatibility promise we made with Windows 10. For Microsoft 365 customers seeking further assistance, FastTrack will continue to be available to support your efforts to adopt Windows Sun Valley.
+This release is built on the same foundation as Windows 10, so the investments you have made in tools for update and device management are carried forward. Windows Sun Valley also sustains the application compatibility promise made with Windows 10, supplemented by programs like App Assure. For Microsoft 365 customers seeking further assistance, FastTrack will continue to be available to support your efforts to adopt Windows Sun Valley.
 
 ## How to get Windows Sun Valley
 
-Windows Sun Valley will be delivered as an upgrade to eligible devices running Windows 10 beginning in the first half of 2022. Windows Sun Valley will also be available on new, eligible devices.
+Windows Sun Valley will be delivered as an upgrade to eligible devices running Windows 10, beginning in the last quarter of the 2021 calendar year. Windows Sun Valley will also be available on new, eligible devices.
 
-For PCs that are managed by your organization and meet the eligibility requirements, Windows Sun Valley will be available through the same channels that you use for Windows 10 feature updates today. Existing deployment and management tools such as Windows Update for Business, Microsoft Endpoint Management, and Windows Autopilot can be used to deploy and manage Windows Sun Valley. Commercial organizations running Pro, Enterprise and Education editions of Windows 10 will have control over when to upgrade their devices from Windows 10 to Windows Sun Valley. For more information, see [Management tools](windows-sv-prepare.md#management-tools).
+For administrators managing devices on behalf of their organization, Windows Sun Valley will be available through the same, familiar channels that you utilize today for Windows 10 feature updates. You will be able to use existing deployment and management tools, such as Windows Update for Business, Microsoft Endpoint Management, and Windows Autopilot. For more information, see [Plan for Windows Sun Valley](windows-sv-plan.md).
 
-For personal devices and other unmanaged PCs that meet the eligibility requirements, the Windows Sun Valley upgrade will be offered through Windows Update using Microsoft's [intelligent rollout](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/using-machine-learning-to-improve-the-windows-10-update/ba-p/877860) process. Windows 10 devices purchased after June 2021 that meet or exceed the minimum hardware requirements for Windows Sun Valley will be offered the upgrade starting in October of 2021.
+For eligible PCs that are not managed by an organization, the Windows Sun Valley upgrade will be offered through Windows Update using Microsoft's intelligent rollout process to ensure a smooth upgrade experience. Windows Sun Valley will initially be offered to Windows 10 devices purchased after June 2021 that meet or exceed the minimum hardware requirements. 
 
-If you are interested in testing Windows Sun Valley before general availability, you can join the Windows Insider Program or Windows Insider Program for Business [Release Preview Channel](/windows-insider/business/validate-Release-Preview-Channel). You can also preview Windows Sun Valley by enabling pre-release Windows 10 feature updates in [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/servers/manage/pre-release-features) or [Windows Server Update Services](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/publishing-pre-release-windows-10-feature-updates-to-wsus/ba-p/845054) (WSUS).
+For more information about device eligibility, see [Windows Sun Valley requirements](windows-sv-requirements.md).
 
-For more information about eligibility to upgrade, see [Windows Sun Valley requirements](windows-sv-requirements.md).
+For those interested in testing Windows Sun Valley before general availability, you can join the [Windows Insider Program](https://insider.windows.com) or [Windows Insider Program for Business](https://insider.windows.com/for-business). You can also preview Windows Sun Valley by enabling pre-release Windows 10 feature updates in [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/servers/manage/pre-release-features) or [Windows Server Update Services](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/publishing-pre-release-windows-10-feature-updates-to-wsus/ba-p/845054) (WSUS).
 
 ## Before you begin
+
+Many organizations will have a mixed environment of Windows Sun Valley and Windows 10 devices. The following is a quick summary of licensing, compatibility, management, and servicing considerations.  
 
 #### Licensing
 
@@ -64,16 +66,14 @@ Windows Sun Valley preserves the application compatibility promise made with Win
 
 #### Familiar processes
 
-Windows Sun Valley is built on the same foundation as Windows 10, so generally you can use the same tools and solutions you use today to deploy, manage, and secure Windows Sun Valley. Your current management tools and processes will work to manage monthly quality updates for both Windows 10 and Windows Sun Valley.  For more information, see [Management tools](windows-sv-prepare.md#management-tools).
+Windows Sun Valley is built on the same foundation as Windows 10, so generally you can use the same tools and solutions you use today to deploy, manage, and secure Windows Sun Valley. Your current management tools and processes will work to manage monthly quality updates for both Windows 10 and Windows Sun Valley.  For more information, see [Prepare for Windows Sun Valley](windows-sv-prepare.md).
 
 #### Servicing Windows Sun Valley
 
-Windows Sun Valley will have an annual feature update cadence and receive monthly quality updates. For details, see [Windows Sun Valley servicing](windows-sv-plan.md#windows-sun-valley-servicing). 
-
-When Windows Sun Valley reaches general availability, important servicing-related announcements and information about known issues and safeguard holds can be found on the Windows release health hub. Monthly release notes will available from a consolidated Windows Sun Valley update history page.
+Like Windows 10, Windows Sun Valley will receive monthly quality updates. However, it will have an annual feature update cadence. When Windows Sun Valley reaches general availability, important servicing-related announcements and information about known issues and safeguard holds can be found on the Windows release health hub. Monthly release notes will available via a consolidated Windows SV update history page at that time as well. For more information, see [Windows Sun Valley servicing](windows-sv-plan.md#windows-sun-valley-servicing). 
 
 ## Next steps
 
 [Windows Sun Valley requirements](windows-sv-requirements.md)<br>
-[Plan to deploy Windows Sun Valley](windows-sv-plan.md)<br>
+[Plan for Windows Sun Valley](windows-sv-plan.md)<br>
 [Prepare for Windows Sun Valley](windows-sv-prepare.md)
