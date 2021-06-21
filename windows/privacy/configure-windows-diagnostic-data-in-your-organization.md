@@ -271,9 +271,9 @@ For information on these services and how to configure the group policies, refer
 
 Desktop Analytics:
 
-- [Enable data sharing](/mem/configmgr/desktop-analytics/enable-data-sharing)
+- [Enable data sharing for Desktop Analytics](/mem/configmgr/desktop-analytics/enable-data-sharing)
 - [Desktop Analytics data privacy](/mem/configmgr/desktop-analytics/privacy)
-- [Group policy settings](/mem/configmgr/desktop-analytics/group-policy-settings)
+- [Group policy settings for Desktop Analytics](/mem/configmgr/desktop-analytics/group-policy-settings)
 
 Update Compliance:
 
@@ -282,11 +282,11 @@ Update Compliance:
 
 Microsoft Managed Desktop:
 
-- [Privacy and personal data - Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/privacy-personal-data)
+- [Privacy and personal data](/microsoft-365/managed-desktop/service-description/privacy-personal-data)
 
 Windows Update for Business:
 
-- [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview#how-to-enable-deployment-protections)
+- [How to enable deployment protections](/windows/deployment/update/deployment-service-overview#how-to-enable-deployment-protections)
 
 ## Limit optional diagnostic data for Desktop Analytics
 

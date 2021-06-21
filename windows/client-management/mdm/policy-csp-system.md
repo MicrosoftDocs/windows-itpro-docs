@@ -648,7 +648,7 @@ The following list shows the supported values:
 
 This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data.
 
-For customers who enroll into the Microsoft Managed Desktop service, this policy will be enabled by default to allow Microsoft to process data for operational and analytic needs. For more information, see [Privacy and personal data - Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/privacy-personal-data.md).
+For customers who enroll into the Microsoft Managed Desktop service, this policy will be enabled by default to allow Microsoft to process data for operational and analytic needs. For more information, see [Privacy and personal data](/microsoft-365/managed-desktop/service-description/privacy-personal-data.md).
 
 This setting has no effect on devices unless they are properly enrolled in Microsoft Managed Desktop.
 
