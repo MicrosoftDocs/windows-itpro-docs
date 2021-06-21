@@ -62,7 +62,7 @@ Microsoft 365 licenses that include Windows 10 licenses will permit you to run W
 
 Most accessories and associated drivers that worked with Windows 10 are expected to work with Windows Sun Valley. Check with your accessory manufacturer for specific details.
 
-Windows Sun Valley preserves the application compatibility promise made with Windows 10 and does not require changes to existing support processes or tooling to sustain the currency of applications and devices. Microsoft 365 customers can continue to use programs such as App Assure and FastTrack to support IT efforts to adopt and maintain Windows Sun Valley. For more information, see [Application compatibility](windows-sv-prepare.md#application-compatibility).
+Windows Sun Valley preserves the application compatibility promise made with Windows 10 and does not require changes to existing support processes or tooling to sustain the currency of applications and devices. Microsoft 365 customers can continue to use programs such as App Assure and FastTrack to support IT efforts to adopt and maintain Windows Sun Valley. For more information, see [Application compatibility](windows-sv-plan.md#application-compatibility).
 
 #### Familiar processes
 

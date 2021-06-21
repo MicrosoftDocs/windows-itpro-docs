@@ -60,7 +60,6 @@ The following are some common use cases and the corresponding Microsoft Endpoint
 
 If you are exclusively managing devices on-premises (for example, using Configuration Manager), you can still use the [cloud management gateway](/mem/configmgr/core/clients/manage/cmg/overview), enable [tenant attach](/mem/configmgr/tenant-attach/device-sync-actions), or enable [co-management](/mem/configmgr/comanage/overview) with Microsoft Intune, making it easier to keep devices secure and up-to-date. 
 
-
 ## Review servicing approach and policies
 
 Microsoft is committed to supporting you through your migration to Windows Sun Valley, whether you are a fast adopter or will make the transition over the coming months or years. Every organization will transition to Windows Sun Valley at its own pace. However, thinking of operating system updates as an ongoing process improve your ability to deploy feature and quality updates, and enable you to stay current with less effort and impact on productivity.  
