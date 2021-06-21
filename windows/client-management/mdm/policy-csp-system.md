@@ -228,8 +228,8 @@ This policy setting configures an Azure Active Directory joined device so that M
 
 To enable this behavior, you must complete two steps:
 
--   Enable this policy setting
--   Join an Azure Active Directory account to the device
+ 1. Enable this policy setting
+ 2. Join an Azure Active Directory account to the device
 
 Windows diagnostic data is collected when the Allow Telemetry policy setting is set to 1 – **Required (Basic)** or above.
 
@@ -276,9 +276,9 @@ This policy setting, in combination with the Allow Telemetry and Configure the C
 
 To enable this behavior, you must complete three steps:
 
--   Enable this policy setting
--   Set **AllowTelemetry** to 1 – **Required (Basic)** or above
--   Set the Configure the Commercial ID setting for your Desktop Analytics workspace
+ 1. Enable this policy setting
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
+ 3. Set the Configure the Commercial ID setting for your Desktop Analytics workspace
 
 This setting has no effect on devices unless they are properly enrolled in Desktop Analytics.
 
@@ -903,9 +903,9 @@ This policy setting, in combination with the Allow Telemetry and Configure the C
 
 To enable this behavior, you must complete three steps:
 
--   Enable this policy setting
--   Set **AllowTelemetry** to 1 – **Required (Basic)** or above
--   Set the Configure the Commercial ID setting for your Update Compliance workspace
+ 1. Enable this policy setting
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
+ 3. Set the Configure the Commercial ID setting for your Update Compliance workspace
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
@@ -1004,9 +1004,9 @@ This policy setting configures an Azure Active Directory joined device so that M
 
 To enable this behavior, you must complete three steps:
 
--   Enable this policy setting
--   Set **AllowTelemetry** to 1 – **Required (Basic)** or above
--   Join an Azure Active Directory account to the device
+ 1. Enable this policy setting
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
+ 3. Join an Azure Active Directory account to the device
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
@@ -1769,8 +1769,8 @@ This policy setting, in combination with the Allow Telemetry policy setting, ena
  
 To enable this behavior, you must complete two steps:
 
--   Enable this policy setting
--   Set the **AllowTelemetry** level:
+ 1. Enable this policy setting
+ 2. Set the **AllowTelemetry** level:
     - For Windows 10 version 1809 and older: set **AllowTelemetry** to Enhanced. (**Note**: **Enhanced** is no longer an option for Windows Holographic, version 21H1)
     - For Windows 10 version 19H1 and later: set **AllowTelemetry** to Optional (Full)
 
