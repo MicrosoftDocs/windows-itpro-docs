@@ -657,8 +657,8 @@ When these policies are configured, Windows diagnostic data collected from the d
 If you disable this policy setting, devices may not appear in Microsoft Managed Desktop.
 
 >[!IMPORTANT]
-> You should not disable or make changes to this policy as that will severely impact the ability of Microsoft Managed Desktop to manage the devices.
 
+> You should not disable or make changes to this policy as that will severely impact the ability of Microsoft Managed Desktop to manage the devices.
 <hr/>
 
 <!--Policy-->
