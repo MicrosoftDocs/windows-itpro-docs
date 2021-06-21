@@ -24,17 +24,17 @@ manager: dansimp
 
 <dl>
   <dd>
-    <a href="#admx-networklistmanager-allowedtlsauthenticatedendpoints">ADMX_NetworkListManager/AllowedTLsAuthenticatedEndpoints</a>
+    <a href="#admx-networklistmanager-allowedtlsauthenticatedendpoints">ADMX_NetworkListManager/AllowedTlsAuthenticatedEndpoints</a>
   </dd>
   <dd>
-    <a href="#admx-networklistmanager-configuredtlsauthenticatednetworkname">ADMX_NetworkListManager/ConfiguredTLsAuthenticatedNetworkName</a>
+    <a href="#admx-networklistmanager-configuredtlsauthenticationnetworkname">ADMX_NetworkListManager/ConfiguredTLSAuthenticationNetworkName</a>
   </dd>
   
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-networklistmanager-allowedtlsauthenticatedendpoints"></a>**ADMX_NetworkListManager/AllowedTLsAuthenticatedEndpoints**  
+<a href="" id="admx-networklistmanager-allowedtlsauthenticatedendpoints"></a>**ADMX_NetworkListManager/AllowedTlsAuthenticatedEndpoints**  
 
 <!--SupportedSKUs-->
 <table>
