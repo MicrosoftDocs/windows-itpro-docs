@@ -55,7 +55,7 @@ If you manage devices on behalf of your organization, you will be able to upgrad
 - Additional insight into safeguard holds. While safeguard holds will function for Windows Sun Valley devices just as they do for Windows 10 today, administrators using Windows Update for Business will have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows Sun Valley. 
 
 > [!NOTE]
-> If you use WUfB to manage feature update deployments today, you will need to leverage the **Target Version** policy rather than **Feature Update deferrals** to move from Windows 10 to Windows Sun Valley. Deferrals are great for quality updates or to move to newer versions of the same product (Windows 10 to Windows 10), but they cannot migrate a devices between products (Windows 10 to Windows Sun Valley). <br>
+> If you use WUfB to manage feature update deployments today, you will need to leverage the **Target Version** policy rather than **Feature Update deferrals** to move from Windows 10 to Windows Sun Valley. Deferrals are great for quality updates or to move to newer version of the same product (Windows 10 to Windows 10), but they cannot migrate a device between products (Windows 10 to Windows Sun Valley). <br>
 > Additionally, Windows Sun Valley has a new end user license agreement. If you are deploying with Windows Update for Business **Target Version** or with Windows Server Update Services, you are accepting this new end user license agreements on behalf of the end users within your organization. 
 
 Additional considerations: 
@@ -68,8 +68,6 @@ Additional considerations:
 ##### Unmanaged devices
 
 Unmanaged devices are those that are not managed by an IT administrator on behalf of an organization. For operating system (OS) deployment, these devices are not subject to organizational policies that manage upgrades or updates.  
-
- 
 
 Unmanaged eligible devices running Windows 10 that were purchased after June 2021 will be offered the Windows Sun Valley upgrade in the last quarter of the 2021 calendar year. Messaging on new devices will vary by PC manufacturer, but users will see labels such as **This PC will upgrade to Windows Sun Valley once available** on products that are available for purchase. 
 
