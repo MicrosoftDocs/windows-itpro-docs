@@ -277,7 +277,7 @@ This policy setting, in combination with the Allow Telemetry and Configure the C
 To enable this behavior, you must complete three steps:
 
 -   Enable this policy setting
--   Set **AllowTelemetry** to 1 – Required (Basic) or above 1
+-   Set **AllowTelemetry** to 1 – Required (Basic) or above
 -   Set the Configure the Commercial ID setting for your Desktop Analytics workspace
 
 This setting has no effect on devices unless they are properly enrolled in Desktop Analytics.
@@ -903,7 +903,7 @@ This policy setting, in combination with the Allow Telemetry and Configure the C
 To enable this behavior, you must complete three steps:
 
 -   Enable this policy setting
--   Set **AllowTelemetry** to 1 – Required (Basic) or above 1
+-   Set **AllowTelemetry** to 1 – **Required (Basic)** or above
 -   Set the Configure the Commercial ID setting for your Update Compliance workspace
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
@@ -1004,7 +1004,7 @@ This policy setting configures an Azure Active Directory joined device so that M
 To enable this behavior, you must complete three steps:
 
 -   Enable this policy setting
--   Set **AllowTelemetry** to 1 – Required (Basic) or above 1
+-   Set **AllowTelemetry** to 1 – **Required (Basic)** or above
 -   Join an Azure Active Directory account to the device
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
