@@ -38,7 +38,7 @@ This release is built on the same foundation as Windows 10, so the investments y
 
 ## How to get Windows Sun Valley
 
-Windows Sun Valley will be delivered as an upgrade to eligible devices running Windows 10, beginning in the last quarter of the 2021 calendar year. Windows Sun Valley will also be available on new, eligible devices.
+Windows Sun Valley will be delivered as an upgrade to eligible devices running Windows 10, beginning later in the 2021 calendar year. Windows Sun Valley will also be available on eligible new devices.
 
 For administrators managing devices on behalf of their organization, Windows Sun Valley will be available through the same, familiar channels that you utilize today for Windows 10 feature updates. You will be able to use existing deployment and management tools, such as Windows Update for Business, Microsoft Endpoint Management, and Windows Autopilot. For more information, see [Plan for Windows Sun Valley](windows-sv-plan.md).
 
@@ -70,7 +70,7 @@ Windows Sun Valley is built on the same foundation as Windows 10, so generally y
 
 #### Servicing Windows Sun Valley
 
-Like Windows 10, Windows Sun Valley will receive monthly quality updates. However, it will have an annual feature update cadence. When Windows Sun Valley reaches general availability, important servicing-related announcements and information about known issues and safeguard holds can be found on the Windows release health hub. Monthly release notes will available via a consolidated Windows SV update history page at that time as well. For more information, see [Windows Sun Valley servicing](windows-sv-plan.md#windows-sun-valley-servicing). 
+Like Windows 10, Windows Sun Valley will receive monthly quality updates. However, it will have an annual feature update cadence. When Windows Sun Valley reaches general availability, important servicing-related announcements and information about known issues and safeguard holds can be found on the Windows release health hub. Monthly release notes will available via a consolidated Windows SV update history page at that time as well. For more information, see [Servicing and support](windows-sv-plan.md#servicing-and-support). 
 
 ## Next steps
 

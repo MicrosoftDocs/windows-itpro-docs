@@ -27,7 +27,7 @@ This article lists the system requirements for Windows Sun Valley. Windows Sun V
 
 To install or upgrade to Windows Sun Valley, devices must meet the following minimum hardware requirements:
  
-- Processor: 1 gigahertz (GHz) or faster with two or more cores on a [compatible 64-bit processor](http://aka.ms/CPUlist) or system on a chip (SoC)
+- Processor: 1 gigahertz (GHz) or faster with two or more cores on a [compatible 64-bit processor](https://aka.ms/CPUlist) or system on a chip (SoC)
 - RAM: 4 gigabytes (GB) or greater
 - Storage: 64GB or greater available storage is required to install Windows Sun Valley
   - Additional storage space might be required to download updates and enable specific features

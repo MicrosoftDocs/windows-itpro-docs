@@ -33,7 +33,7 @@ Since Windows Sun Valley is built on the same foundation as Windows 10, you can 
 
 If you are looking for ways to optimize your approach to deploying Windows Sun Valley, or if deploying a new version of an operating system is not a familiar process for you, some additional items to consider are provided below. 
 
-## Determining eligibility
+## Determine eligibility
 
 As a first step, you will need to know which of your current devices meet the Windows Sun Valley hardware requirements.  Detailed requirements can be found at [Windows Sun Valley requirements](windows-sv-requirements.md). In general, you should expect that a device purchased in the last 18-24 months will be able to run Windows Sun Valley.
 
@@ -43,7 +43,7 @@ Enterprise organizations looking to evaluate device readiness in their environme
 
 ## Windows Sun Valley availability
 
-Windows Sun Valley will be offered to eligible Windows 10 devices beginning the last quarter of calendar year 2021. The availability of Windows Sun Valley will vary according to a device's hardware and whether or not the device receives updates directly or from a management solution that is maintained by an IT administrator. 
+Windows Sun Valley will be offered to eligible Windows 10 devices beginning later in the 2021 calendar year. The availability of Windows Sun Valley will vary according to a device's hardware and whether or not the device receives updates directly or from a management solution that is maintained by an IT administrator. 
 
 ##### Managed devices
 

@@ -22,46 +22,105 @@ ms.topic: article
 
 Windows 10 and Windows Sun Valley are designed to coexist, so that you can use the same familiar tools and process to manage both operating systems. One common management infrastructure that supports common applications across both Windows 10 and Windows Sun Valley helps to simplify the migration process. You can analyze endpoints, determine application compatibility, and manage Windows Sun Valley deployments in the same way that you do with Windows 10.
 
-As you prepare for Windows Sun Valley, it’s also a good time to look at the deployment infrastructure of your environment. If you aren’t already taking advantage of cloud-based management tools like Microsoft Endpoint Manager this might be the perfect time. Or, if you are exclusively using an on-premises management tool such as Configuration Manager (Note: Config Mgr is part of MEM, need clarification here), using Cloud management gateway, enabling tenant attach, or enabling co-management with Microsoft Intune are all ways to help keep devices secure and up-to-date. ---insert links for the named solutions
+After you evaluate your hardware to see if it meets [requirements](windows-sv-requirements.md) for Windows Sun Valley, it's also a good time to review your deployment infrastructure, tools, and overall endpoint and update management processes and look for opportunities to simplify and optimize. 
 
-Policies related to deployment may need to be updated or re-evaluated, considering update compliance deadlines, device activity policies, and the replacement of older policies. A servicing mindset focused on keeping current means creating a deployment plan to build out your servicing strategy.
+## Infrastructure and tools
 
-## Analytics
+The tools that you use for heavy lifting during Windows 10 deployments can still be leveraged for Windows Sun Valley. Aa few nuanced differences are described below:
 
-If you’re a Microsoft Endpoint Manager customer, make sure you’ve onboarded your devices to Endpoint analytics. Later this year, we’ll be providing a hardware readiness assessment directly in Endpoint analytics so that you can quickly identify which of your managed devices meet or exceed the minimum hardware requirements.
+#### On-premises solutions
 
-If you’d rather start exploring Windows Sun Valley readiness within your organization right away, take advantage of our [hardware eligibility assessment script](add link). By following the instructions to deploy and aggregate results via Microsoft Intune or Configuration Manager, you can quickly determine how many of your devices meet the hardware requirements for Windows Sun Valley.
+- If you use Windows Server Update Service (WSUS), you will need to sync the new **Windows Sun Valley** product category. Once you sync the product category you will see Windows Sun Valley offered as an option.
 
-## Management tools
+> [!NOTE]
+> During deployment, you will be prompted to agree to the license agreement on behalf of your end users. Additionally, you will not see an x86 option because Windows Sun Valley is not supported on 32-bit architecture.
 
-The toolset that you use for heavy lifting during deployments of Windows 10 are still able to be leveraged in Windows Sun Valley. There are a few nuanced differences described here:
+- If you use Microsoft Endpoint Configuration Manager, you can sync the new **Windows Sun Valley** product category and begin upgrading eligible devices. If you would like to validate Windows Sun Valley prior to release, you can sync the **Windows Insider Pre-release** category as well.  
 
-####	On-premises management 
+> [!NOTE]
+> Configuration Manager will prompt you to accept the end user license agreement on behalf of the users in your organization. 
 
-- Windows Server Update Service (WSUS): Commercial customers using WSUS will need to sync the new **Windows Sun Valley** product category. Once you sync the product category you will see the feature update to SV. Please note that during deployment you will be prompted to agree to the license agreement on behalf of your end users. Additionally, you will note there is no x86 (32 bit?) payload for Windows Sun Valley as such is no longer supported on Windows Sun Valley going forward.
-- MEM Configuration Manager: For customers using MEM Configuration Manager, you will easily be able to sync the new “Windows Sun Valley” Product category and begin upgrading eligible devices. Please note that Configuration Manager will prompt you to accept the end user license agreement on behalf of the users in your organization. If you would like to validate Windows Sun Valley prior to release, simply sync the **Windows Insider Pre-release** category as well.  
+#### Cloud-based solutions
 
-#### Cloud management
+- If you use Windows Update for Business Group Policy and Configuration Service Provider (CSP) policies, you will need to leverage the **Target Version** capability rather than feature update deferrals to upgrade from Windows 10 to Windows Sun Valley. Feature Update deferrals are great to move to newer versions of your current product, but do not enable you to move between products (Windows 10 to Windows Sun Valley). 
+- Quality update deferrals will continue to work the same across both Windows 10 and Windows Sun Valley. This is true whether using Windows Update for Business, Microsoft Intune, or other management tools. 
+- If you use Microsoft Intune and have a Microsoft 365 E3 license, you will be able to leverage **Feature Update Deployments** to easily update devices from one release of Windows 10 to another, or to upgrade Wndows 10 devices to Windows Sun Valley. You can then continue using the same update experience controls to manage Windows 10 and Windows Sun Valley. 
 
-- Windows Update for Business (WUfB) Group Policy (GP) and Configuration Service Provider (CSP) policies: Commercial customers using WUfB  will need to leverage the Target Version capability rather than feature update deferrals to move from Windows 10 to Windows Sun Valley. Feature Update deferrals are great to move to newer versions of your current product, but do not enable you to move between products (Windows 10 to Windows Sun Valley). Quality update deferrals will continue to work the same across both Windows 10 and Windows Sun Valley. This is true whether using WUfB through Group Policy Management Console (GPMC), MEM Intune, or other 3rd party management tools. 
-- MEM Intune: For customers using MEM Intune with E3 licenses you will be able to leverage **Feature Update Deployments** to easily manage moving between Windows 10 versions or to Windows Sun Valley, version 21H2. You will be able to continue using the same update experience controls to manage the behavior of the device once updates are offered for either Windows 10, version 21H2 and Windows Sun Valley, version 21H2.
+You'll also want to check with the providers of any non-Microsoft security and management solutions that you use to ensure compatibility with Windows Sun Valley, particularly those providing security or data loss prevention capabilities.  
 
-## Deploy Windows Sun Valley
+## Cloud-based management
 
-Since your familiar Windows 10 toolsets are meant to be used with Windows Sun Valley as well, then managing, securing, and deploying Windows Sun Valley devices will be well known procedures in the plan, prepare and deploy process.
+If you aren’t already taking advantage of cloud-based management capabilities, like those available in [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), it's worth considering. Aside from consolidating device management and endpoint security into a single platform, it can better support the diverse bring-your-own-device (BYOD) ecosystem that is increasingly the norm with hybrid work scenarios. It can also enable you to track your progress against compliance and business objectives, while protecting end user privacy.  
 
-Just as we recommend that broad deployment of new versions of Windows 10 begin with a pilot deployment phase, Windows Sun Valley is no different. Further, in your blended environment of Windows 10-capable devices and Windows 10 + SV-eligible devices, you will be poised to roll out an update to a select number of devices. Once you’ve gone through the checklist of pilot deployment tasks such as assigning the pilot devices from your prepare phase, implementing baseline and operations updates, testing and supporting the devices, and so forth, you can deploy to your test group.  We recommend cloud-based deployment solutions such as Microsoft Endpoint Manager to fully take advantage of data-driven insights, though Configuration Manager works as well.
+The following are some common use cases and the corresponding Microsoft Endpoint Manager capabilities that support them: 
 
-Using artifacts from your Plan and Prepare phase (such as security and configuration baselines, etc.) as well as data from your test deployment, will give you the confidence you seek to manage a broader rollout of Windows Sun Valley to increasingly larger rings of eligible devices. Desktop Analytics will help you ensure that your apps are scoped to only the pilot rings you designate. 
+- **Provision and pre-configure new Windows Sun Valley devices**: [Windows Autopilot](/mem/autopilot/windows-autopilot) enables you to deploy new Windows Sun Valley devices in a “business-ready” state that includes your desired applications, settings, and policies. It can also be used to change the edition of Windows. For example, you can upgrade from Pro to Enterprise edition and gain the use of advanced features. 
+- **Configure rules and control settings for users, apps, and devices for both Windows SV and Windows 10**: Devices that are enrolled in [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) provide administrators with full control over apps, settings, features, and security. You can also use app protection policies to require multi-factor authentication (MFA) for specific apps. 
+- **Streamlined, easy-to-manage devices for frontline, remote, and onsite workers**: Introduced with Windows 10, [cloud configuration](/mem/intune/fundamentals/cloud-configuration) is a standard, easy-to-manage, device configuration that is cloud-optimized for users with specific workflow needs. It can be deployed to devices running the Pro, Enterprise, and Education editions of Windows Sun Valley using Microsoft Endpoint Manager. 
 
-Though we’ve mentioned only a few, the tools and processes we have had in place for your previous 10 Windows deployment will be there for you with Windows Sun Valley as well.
+If you are exclusively managing devices on-premises (for example, using Configuration Manager), you can still use the [cloud management gateway](/mem/configmgr/core/clients/manage/cmg/overview), enable [tenant attach](/mem/configmgr/tenant-attach/device-sync-actions), or enable [co-management](/mem/configmgr/comanage/overview) with Microsoft Intune, making it easier to keep devices secure and up-to-date. 
+
+
+## Review servicing approach and policies
+
+Microsoft is committed to supporting you through your migration to Windows Sun Valley, whether you are a fast adopter or will make the transition over the coming months or years. Every organization will transition to Windows Sun Valley at its own pace. However, thinking of operating system updates as an ongoing process improve your ability to deploy feature and quality updates, and enable you to stay current with less effort and impact on productivity.  
+
+To begin, think about how you roll out Windows updates today: which devices, and at what pace. Next, craft a deployment plan for Windows Sun Valley that includes deployment groups, rings, users, or devices. There are no absolute rules for exactly how many rings to have for your deployments, but a common structure is: 
+
+- Preview (first or canary): Planning and development 
+- Limited (fast or early adopters): Pilot and validation 
+- Broad (users or critical): Wide deployment 
+
+For more information, see [Create a deployment plan](/windows/deployment/update/create-deployment-plan).  
+
+#### Review policies
+
+Review deployment-related polices, taking into consideration your organization's security objectives, update compliance deadlines, and device activity. Apply changes where you can gain a clear improvement, particularly with regard to the speed of the update process or security. 
+
+#### Validate apps and infrastructure
+
+To validate that your apps, infrastructure, and deployment processes are ready for Windows Sun Valley, join the [Windows Insider Program for Business](https://insider.windows.com/for-business-getting-started) and opt in to the [Release Preview Channel](/windows-insider/business/validate-Release-Preview-Channel).  
+
+If you use Windows Server Update Services, you can deploy directly from the Windows Insider Pre-release category using one of the following:  
+
+- Set **Manage Preview Builds** to **Release Preview** in Windows Update for Business. 
+- Leverage Azure Virtual Desktop and Azure Marketplace images . 
+- Download and deploy ISOs from Microsoft’s Windows Insider Program ISO Download page. 
+
+Regardless of the method you choose, you have the benefit of free Microsoft support when validating pre-release builds. Free support is available to any commercial customer deploying Windows 10, version 21H2 or Windows Sun Valley, version 21H2 pre-release bits, once they become available through the Windows Insider Program. 
+
+#### Analytics and assessment tools 
+
+If you use Microsoft Endpoint Manager and have onboarded devices to Endpoint analytics, you will have access to a hardware readiness assessment later this year that enables you to quickly identify which of your managed devices are eligible for the Windows Sun Valley upgrade. 
+
+For those that are ready to explore Windows Sun Valley readiness right away, you can take advantage of Microsoft's **hardware eligibility assessment script**. This script includes instructions on how to deploy and aggregate your assessment results using Microsoft Intune or Configuration Manager, so you can quickly determine how many of your devices meet the hardware requirements for Windows Sun Valley. 
+
+## Prepare a pilot deployment
+
+A pilot deployment is a proof of concept that rolls out an upgrade to a select number of devices in production before deploying it broadly across the organization.  
+
+At a high level, the tasks involved are: 
+
+1. Assign a group of users or devices to receive the update. 
+2. Implement baseline updates. 
+3. Implement operational updates. 
+4. Validate the deployment process. 
+5. Deploy the upgrade to devices. 
+6. Test and support the pilot devices. 
+7. Determine broad deployment readiness based on the results of the pilot. 
+
+## End user readiness
+
+To prepare an effective, enterprise-wide deployment of Windows Sun Valley, the importance of end user readiness should not be overlooked. Windows Sun Valley has a familiar design, but end users will see several enhancements to the overall user interface. They will also need to adapt to changes in menus and settings pages. Therefore, consider the following tasks to prepare users and your IT support staff Windows Sun Valley: 
+
+- Create a communications schedule to ensure that you provide the right communications at the right time to the right groups of users based on when they will see the changes. 
+- Draft concise emails that inform users of what changes they can expect to see. Offer tips on how to use or customize their experience. Include information about support and help desk options. 
+- Update help desk manuals with screenshots of the new user interface, the out-of-box experience for new devices, and the upgrade experience for existing devices. 
+
+## Learn more
+
+See the [Stay current with Windows 10 and Microsoft 365 Apps](/learn/paths/m365-stay-current/) learning path on Microsoft Learn. The learning path was created for Windows 10, but the basic principles and tasks outlined for the plan, prepare, and deploy phases also apply to your deployment of Windows Sun Valley.  
 
 ## See also
 
 [Windows Sun Valley deployment planning](windows-sv-plan.md)
-
-•	Windows release health: Windows release health offers the quickest way to stay up to date on update-related news, information, and best practices, including important lifecycle reminders and the status of known issues and safeguard holds. IT administrators have access to this information, plus additional details, within the health experience Microsoft 365 admin center. 
-
-•	Windows Tech Community: Offering technical professionals a place to discuss, share, troubleshoot, and learn around Windows, Tech Community is also the home of the Windows IT Pro Blog, our monthly Windows Office Hours events, and the Windows Video Hub.
-
-•	Microsoft Learn: We are in the process of developing online learning paths and modules to help you and your organization effectively plan, prepare, and deploy Windows Sun Valley effectively. 
