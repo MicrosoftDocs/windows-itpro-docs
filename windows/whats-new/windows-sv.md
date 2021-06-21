@@ -27,12 +27,12 @@ This article provides an introduction and answers some frequently asked question
 Also see the following articles to learn more about Windows Sun Valley: 
 
 - [Windows Sun Valley requirements](windows-sv-requirements.md): Requirements to deploy Windows Sun Valley.
-- [Planning for Windows Sun Valley](windows-sv-plan.md): Information to help you plan for Windows Sun Valley in your organizatioin.
+- [Plan for Windows Sun Valley](windows-sv-plan.md): Information to help you plan for Windows Sun Valley in your organizatioin.
 - [Prepare for Windows Sun Valley](windows-sv-prepare.md): Procedures to ensure readiness to deploy Windows Sun Valley.
 
 ## Introduction
 
-Windows Sun Valley is the next evolution of Windows; the most significant update to the Windows operating system since Windows 10. It offers many innovations focused on enhancing end user productivity in a fresh experience that is flexible and fluid. Windows Sun Valley is designed to support today's hybrid work environment, and intended to be the most reliable, secure, connected, and performant Windows OS ever. 
+Windows Sun Valley is the next evolution of Windows; the most significant update to the Windows operating system since Windows 10. It offers many innovations focused on enhancing end user productivity in a fresh experience that is flexible and fluid. Windows Sun Valley is designed to support today's hybrid work environment, and intended to be the most reliable, secure, connected, and performant Windows operating system ever. 
 
 This release is built on the same foundation as Windows 10, so the investments you have made in tools for update and device management are carried forward. Windows Sun Valley also sustains the application compatibility promise made with Windows 10, supplemented by programs like App Assure. For Microsoft 365 customers seeking further assistance, FastTrack will continue to be available to support your efforts to adopt Windows Sun Valley.
 
