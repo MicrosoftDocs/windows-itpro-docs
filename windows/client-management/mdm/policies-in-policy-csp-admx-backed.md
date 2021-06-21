@@ -733,7 +733,7 @@ ms.date: 10/08/2020
 - [ADMX_NetworkConnections/NC_ShowSharedAccessUI](./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-showsharedaccessui)
 - [ADMX_NetworkConnections/NC_Statistics](./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-statistics)
 - [ADMX_NetworkConnections/NC_StdDomainUserSetLocation](./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-stddomainusersetlocation)
-- [ADMX_NetworkListManager-AllowedTlsAuthenticatedEndpoints](./policy-csp-admx-networklistmanager.md#admx-networklistmanager-allowedtlsauthenticatedendpoints)
+- [ADMX_NetworkListManager-AllowedTlsAuthenticationEndpoints](./policy-csp-admx-networklistmanager.md#admx-networklistmanager-allowedtlsauthenticationendpoints)
 - [ADMX_NetworkListManager-ConfiguredTLSAuthenticationNetworkName](./policy-csp-admx-networklistmanager.md#admx-networklistmanager-configuredtlsauthenticationnetworkname)
 - [ADMX_OfflineFiles/Pol_AlwaysPinSubFolders](./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-alwayspinsubfolders)
 - [ADMX_OfflineFiles/Pol_AssignedOfflineFiles_1](./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-assignedofflinefiles-1)
