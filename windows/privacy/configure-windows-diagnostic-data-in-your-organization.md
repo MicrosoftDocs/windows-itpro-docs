@@ -271,22 +271,22 @@ For information on these services and how to configure the group policies, refer
 
 Desktop Analytics:
 
-- [Enable data sharing - Configuration Manager | Microsoft Docs](/mem/configmgr/desktop-analytics/enable-data-sharing)
-- [Desktop Analytics data privacy - Configuration Manager | Microsoft Docs](/mem/configmgr/desktop-analytics/privacy)
-- [Group policy settings - Configuration Manager | Microsoft Docs](/mem/configmgr/desktop-analytics/group-policy-settings)
+- [Enable data sharing](/mem/configmgr/desktop-analytics/enable-data-sharing)
+- [Desktop Analytics data privacy](/mem/configmgr/desktop-analytics/privacy)
+- [Group policy settings](/mem/configmgr/desktop-analytics/group-policy-settings)
 
 Update Compliance:
 
-- [Privacy in Update Compliance - Windows Deployment | Microsoft Docs](/windows/deployment/update/update-compliance-privacy)
-- [Manually configuring devices for Update Compliance - Windows Deployment | Microsoft Docs](/windows/deployment/update/update-compliance-configuration-manual#required-policies)
+- [Privacy in Update Compliance](/windows/deployment/update/update-compliance-privacy)
+- [Manually configuring devices for Update Compliance](/windows/deployment/update/update-compliance-configuration-manual#required-policies)
 
 Microsoft Managed Desktop:
 
-- [Privacy and personal data - Microsoft Managed Desktop | Microsoft Docs](/microsoft-365/managed-desktop/service-description/privacy-personal-data)
+- [Privacy and personal data - Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/privacy-personal-data)
 
 Windows Update for Business:
 
-- [Windows Update for Business deployment service - Windows Deployment | Microsoft Docs](/windows/deployment/update/deployment-service-overview#how-to-enable-deployment-protections)
+- [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview#how-to-enable-deployment-protections)
 
 ## Limit optional diagnostic data for Desktop Analytics
 
