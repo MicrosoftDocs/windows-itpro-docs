@@ -272,7 +272,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor for Windows diagnostic data collected from the device, subject to the Product Terms.
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID policy settings, enables organizations to configure the device so that Microsoft is the processor for Windows diagnostic data collected from the device, subject to the Product Terms.
 
 To enable this behavior, you must complete three steps:
 
@@ -898,7 +898,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms.
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID policy settings, enables organizations to configure the device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms.
 
 To enable this behavior, you must complete three steps:
 
