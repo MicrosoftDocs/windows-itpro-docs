@@ -25,11 +25,9 @@ manager: dansimp
 <dl>
   <dd>
     <a href="#admx-networklistmanager-allowedtlsauthenticationendpoints">ADMX_NetworkListManager/AllowedTlsAuthenticationEndpoints</a>
-  </dd>
   <dd>
     <a href="#admx-networklistmanager-configuredtlsauthenticationnetworkname">ADMX_NetworkListManager/ConfiguredTLSAuthenticationNetworkName</a>
   </dd>
-  
 
 <hr/>
 
@@ -99,7 +97,8 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-networklistmanager-configuredtlsauthencationnetworkname"></a>**ADMX_NetworkListManager/ConfiguredTLSAuthenticationNetworkName**  
+<a href="" id="admx-networklistmanager-configuredtlsauthenticationnetworkname"></a>**ADMX_NetworkListManager/ConfiguredTLSAuthenticationNetworkName** 
+
 
 <!--SupportedSKUs-->
 <table>
