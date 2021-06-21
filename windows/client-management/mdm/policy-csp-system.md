@@ -231,13 +231,13 @@ To enable this behavior, you must complete two steps:
 -   Enable this policy setting
 -   Join an Azure Active Directory account to the device
 
-Windows diagnostic data is collected when the **AllowTelemetry** policy setting is set to 1 – Required (Basic) or above.
+Windows diagnostic data is collected when the Allow Telemetry policy setting is set to 1 – **Required (Basic)** or above.
 
-If you disable or do not configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft’s privacy statement at https://go.microsoft.com/fwlink/?LinkId=521839 unless you have enabled policies like Allow Update Compliance Processing or Allow Desktop Analytics Processing.
+If you disable or do not configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft’s [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839) unless you have enabled policies like Allow Update Compliance Processing or Allow Desktop Analytics Processing.
 
 Configuring this setting does not change the Windows diagnostic data collection level set for the device or the operation of optional analytics processor services like Desktop Analytics and Update Compliance.
 
-See the documentation at https://aka.ms/ConfigureWWD for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
+See the documentation at [ConfigureWWD](https://aka.ms/ConfigureWWD) for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -277,7 +277,7 @@ This policy setting, in combination with the Allow Telemetry and Configure the C
 To enable this behavior, you must complete three steps:
 
 -   Enable this policy setting
--   Set **AllowTelemetry** to 1 – Required (Basic) or above
+-   Set **AllowTelemetry** to 1 – **Required (Basic)** or above
 -   Set the Configure the Commercial ID setting for your Desktop Analytics workspace
 
 This setting has no effect on devices unless they are properly enrolled in Desktop Analytics.
@@ -1764,8 +1764,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting, in combination with the System/AllowTelemetry 
- policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. 
+This policy setting, in combination with the Allow Telemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. 
  
 To enable this behavior, you must complete two steps:
 
@@ -1777,7 +1776,7 @@ To enable this behavior, you must complete two steps:
  
 When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
  
-Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send Required (Basic) or Optional (Full) diagnostic data to Microsoft.
+Enabling enhanced diagnostic data in the Allow Telemetry  policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send Required (Basic) or Optional (Full) diagnostic data to Microsoft.
    
 If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.
 
