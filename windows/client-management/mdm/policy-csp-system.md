@@ -29,6 +29,9 @@ manager: dansimp
     <a href="#system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a>
   </dd>
   <dd>
+    <a href="#system-allowdesktopanalyticsprocessing">System/AllowDesktopAnalyticsProcessing </a>
+  </dd>
+  <dd>
     <a href="#system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
   </dd>
   <dd>
@@ -44,6 +47,9 @@ manager: dansimp
     <a href="#system-allowlocation">System/AllowLocation</a>
   </dd>
   <dd>
+    <a href="#system-allowmicrosoftmanageddesktopprocessing">System/AllowMicrosoftManagedDesktopProcessing</a>
+  </dd>
+  <dd>
     <a href="#system-allowstoragecard">System/AllowStorageCard</a>
   </dd>
   <dd>
@@ -54,6 +60,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
+  </dd>
+ <dd>
+    <a href="#system-allowwufbcloudprocessing">System/AllowWuFBCloudProcessing</a>
   </dd>
   <dd>
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
@@ -224,7 +233,7 @@ To enable this behavior, you must complete two steps:
 
 Windows diagnostic data is collected when the **AllowTelemetry** policy setting is set to 1 – Required (Basic) or above.
 
-If you disable or do not configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft’s privacy statement at https://go.microsoft.com/fwlink/?LinkId=521839 unless you have enabled policies like 'Allow Update Compliance Processing' or 'Allow Desktop Analytics Processing”.
+If you disable or do not configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft’s privacy statement at https://go.microsoft.com/fwlink/?LinkId=521839 unless you have enabled policies like Allow Update Compliance Processing or Allow Desktop Analytics Processing.
 
 Configuring this setting does not change the Windows diagnostic data collection level set for the device or the operation of optional analytics processor services like Desktop Analytics and Update Compliance.
 
@@ -254,6 +263,28 @@ The following list shows the supported values:
 
 <!--/Validation-->
 <!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-allowdesktopanalyticsprocessing"></a>**System/AllowDesktopAnalyticsProcessing**  
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor for Windows diagnostic data collected from the device, subject to the Product Terms.
+
+To enable this behavior, you must complete three steps:
+
+-   Enable this policy setting
+-   Set **AllowTelemetry** to 1 – Required (Basic) or above 1
+-   Set the Configure the Commercial ID setting for your Desktop Analytics workspace
+
+This setting has no effect on devices unless they are properly enrolled in Desktop Analytics.
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable or do not configure this policy setting, devices will not appear in Desktop Analytics.
 
 <hr/>
 
@@ -610,6 +641,27 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="system-allowmicrosoftmanageddesktopprocessing"></a>**System/AllowMicrosoftManagedDesktopProcessing**
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data.
+
+For customers who enroll into the Microsoft Managed Desktop service, this policy will be enabled by default to allow Microsoft to process data for operational and analytic needs. For more information, see [Privacy and personal data - Microsoft Managed Desktop | Microsoft Docs](privacy-personal-data.md).
+
+This setting has no effect on devices unless they are properly enrolled in Microsoft Managed Desktop.
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable this policy setting, devices may not appear in Microsoft Managed Desktop.
+
+>[!IMPORTANT]
+
+> You should not disable or make changes to this policy as that will severely impact the ability of Microsoft Managed Desktop to manage the devices. 
+
+<hr/>
+<!--Policy-->
 <a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**  
 
 <!--SupportedSKUs-->
@@ -845,11 +897,18 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Allows IT admins to enable diagnostic data from this device to be processed by Update Compliance.  
 
-If you enable this setting, it enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service.
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms.
 
-If you disable or do not configure this policy setting, diagnostic data from this device will not be processed by Update Compliance.
+To enable this behavior, you must complete three steps:
+
+-   Enable this policy setting
+-   Set **AllowTelemetry** to 1 – Required (Basic) or above 1
+-   Set the Configure the Commercial ID setting for your Update Compliance workspace
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable or do not configure this policy setting, devices will not appear in Update Compliance.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -929,6 +988,28 @@ The following list shows the supported values:
 -   1 (default) – Allowed to reset to factory default settings.
 <!--/SupportedValues-->
 <!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWuFBCloudProcessing**
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms. 
+
+To enable this behavior, you must complete three steps:
+
+-   Enable this policy setting
+-   Set **AllowTelemetry** to 1 – Required (Basic) or above 1
+-   Join an Azure Active Directory account to the device
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable or do not configure this policy setting, devices enrolled to the Windows Update for Business deployment service will not be able to take advantage of some deployment service features.
 
 <hr/>
 
