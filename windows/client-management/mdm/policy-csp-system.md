@@ -237,7 +237,7 @@ If you disable or do not configure this setting, Microsoft will be the controlle
 
 Configuring this setting does not change the Windows diagnostic data collection level set for the device or the operation of optional analytics processor services like Desktop Analytics and Update Compliance.
 
-See the documentation at [ConfigureWWD](https://aka.ms/ConfigureWWD) for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
+See the documentation at [ConfigureWDD](https://aka.ms/ConfigureWDD) for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
 
 <!--/Description-->
 <!--ADMXMapped-->
