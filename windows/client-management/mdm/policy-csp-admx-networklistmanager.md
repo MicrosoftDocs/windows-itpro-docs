@@ -34,7 +34,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-networklistmanager-allowedtlsauthenticatedendpoints"></a>**ADMX_NetworkListManager/AllowedTlsAuthenticatedEndpoints**  
+<a href="" id="admx-networklistmanager-allowedtlsauthenticationendpoints"></a>**ADMX_NetworkListManager/AllowedTlsAuthenticationEndpoints**  
 
 <!--SupportedSKUs-->
 <table>
