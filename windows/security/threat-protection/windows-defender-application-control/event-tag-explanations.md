@@ -121,6 +121,6 @@ The rule means trust anything signed by a certificate that chains to this root C
 
 For well-known roots, the TBS hashes for the certificates are baked into the code for WDAC. For example, they don’t need to be listed as TBS hashes in the policy file.
 
-## NTSTATUS Values
+## Status Values
 
 Represents values that are used to communicate system information. They are of four types: success values, information values, warning values, and error values. Click on the [NTSATUS](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) link for information about common usage details.
