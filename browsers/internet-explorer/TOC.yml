@@ -356,6 +356,6 @@
     - name: KB Troubleshoot
       items: 
         - name: Internet Explorer and Microsoft Edge FAQ for IT Pros
-          href: kb-support/ie-edge-faqs.md
+          href: kb-support/ie-edge-faqs.yml
 - name: Microsoft Edge and Internet Explorer troubleshooting
   href: /troubleshoot/browsers/welcome-browsers
