@@ -286,6 +286,14 @@ When these policies are configured, Windows diagnostic data collected from the d
 
 If you disable or do not configure this policy setting, devices will not appear in Desktop Analytics.
 
+The following list shows the supported values:
+
+-   0 (default) – Disabled.
+-   2 – Allowed.
+
+
+<!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
