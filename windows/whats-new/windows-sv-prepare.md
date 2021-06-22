@@ -26,7 +26,10 @@ After you evaluate your hardware to see if it meets [requirements](windows-sv-re
 
 ## Infrastructure and tools
 
-The tools that you use for heavy lifting during Windows 10 deployments can still be leveraged for Windows Sun Valley. Aa few nuanced differences are described below:
+The tools that you use for heavy lifting during Windows 10 deployments can still be leveraged for Windows Sun Valley. A few nuanced differences are described below. 
+
+> [!IMPORTANT]
+> Be sure to check with the providers of any non-Microsoft solutions that you use. Verify compatibility of these tools with Windows Sun Valley, particularly if they provide security or data loss prevention capabilities. 
 
 #### On-premises solutions
 
@@ -46,8 +49,6 @@ The tools that you use for heavy lifting during Windows 10 deployments can still
 - Quality update deferrals will continue to work the same across both Windows 10 and Windows Sun Valley. This is true whether using Windows Update for Business, Microsoft Intune, or other management tools. 
 - If you use Microsoft Intune and have a Microsoft 365 E3 license, you will be able to leverage **Feature Update Deployments** to easily update devices from one release of Windows 10 to another, or to upgrade Wndows 10 devices to Windows Sun Valley. You can then continue using the same update experience controls to manage Windows 10 and Windows Sun Valley. 
 
-You'll also want to check with the providers of any non-Microsoft security and management solutions that you use to ensure compatibility with Windows Sun Valley, particularly those providing security or data loss prevention capabilities.  
-
 ## Cloud-based management
 
 If you aren’t already taking advantage of cloud-based management capabilities, like those available in [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), it's worth considering. Aside from consolidating device management and endpoint security into a single platform, it can better support the diverse bring-your-own-device (BYOD) ecosystem that is increasingly the norm with hybrid work scenarios. It can also enable you to track your progress against compliance and business objectives, while protecting end user privacy.  
@@ -64,7 +65,7 @@ If you are exclusively managing devices on-premises (for example, using Configur
 
 Microsoft is committed to supporting you through your migration to Windows Sun Valley, whether you are a fast adopter or will make the transition over the coming months or years. Every organization will transition to Windows Sun Valley at its own pace. However, thinking of operating system updates as an ongoing process improve your ability to deploy feature and quality updates, and enable you to stay current with less effort and impact on productivity.  
 
-To begin, think about how you roll out Windows updates today: which devices, and at what pace. Next, craft a deployment plan for Windows Sun Valley that includes deployment groups, rings, users, or devices. There are no absolute rules for exactly how many rings to have for your deployments, but a common structure is: 
+To begin, think about how you roll out Windows feature updates today: which devices, and at what pace. Next, craft a deployment plan for Windows Sun Valley that includes deployment groups, rings, users, or devices. There are no absolute rules for exactly how many rings to have for your deployments, but a common structure is: 
 
 - Preview (first or canary): Planning and development 
 - Limited (fast or early adopters): Pilot and validation 
@@ -100,7 +101,7 @@ A pilot deployment is a proof of concept that rolls out an upgrade to a select n
 
 At a high level, the tasks involved are: 
 
-1. Assign a group of users or devices to receive the update. 
+1. Assign a group of users or devices to receive the upgrade. 
 2. Implement baseline updates. 
 3. Implement operational updates. 
 4. Validate the deployment process. 

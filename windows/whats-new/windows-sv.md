@@ -60,13 +60,18 @@ Microsoft 365 licenses that include Windows 10 licenses will permit you to run W
 
 #### Compatibility
 
-Most accessories and associated drivers that worked with Windows 10 are expected to work with Windows Sun Valley. Check with your accessory manufacturer for specific details.
+Most accessories and associated drivers that work with Windows 10 are expected to work with Windows Sun Valley. Check with your accessory manufacturer for specific details.
 
 Windows Sun Valley preserves the application compatibility promise made with Windows 10 and does not require changes to existing support processes or tooling to sustain the currency of applications and devices. Microsoft 365 customers can continue to use programs such as App Assure and FastTrack to support IT efforts to adopt and maintain Windows Sun Valley. For more information, see [Application compatibility](windows-sv-plan.md#application-compatibility).
 
 #### Familiar processes
 
-Windows Sun Valley is built on the same foundation as Windows 10, so generally you can use the same tools and solutions you use today to deploy, manage, and secure Windows Sun Valley. Your current management tools and processes will work to manage monthly quality updates for both Windows 10 and Windows Sun Valley.  For more information, see [Prepare for Windows Sun Valley](windows-sv-prepare.md).
+Windows Sun Valley is built on the same foundation as Windows 10, so generally you can use the same tools and solutions you use today to deploy, manage, and secure Windows Sun Valley. Your current management tools and processes will work to manage monthly quality updates for both Windows 10 and Windows Sun Valley. If you use non-Microsoft tools, check with your vendor to verify compatibility. 
+
+> [!IMPORTANT]
+> Check with the providers of any non-Microsoft security and management solutions that you use to ensure compatibility with Windows Sun Valley, particularly those providing security or data loss prevention capabilities.  
+
+For more information, see [Prepare for Windows Sun Valley](windows-sv-prepare.md).
 
 #### Servicing Windows Sun Valley
 
