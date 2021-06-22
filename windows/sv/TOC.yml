@@ -1,34 +1,5 @@
-- name: Windows Sun Valley
-  href: index.yml
-  items: 
-    - name: Get started
-      items: 
-        - name: Windows Sun Valley overview
-          href: windows-sv-overview.md
-        - name: Windows Sun Valley requirements
-          href: windows-sv-requirements.md
-
-    - name: Deploy and Manage Windows Sun Valley
-      items:
-        - name: Plan to deploy Windows Sun Valley
-          href: /windows/deployment/windows-sv-plan
-        - name: Prepare for Windows Sun Valley
-          href: /windows/deployment/windows-sv-prepare.md
-        - name: Deploy Windows Sun Valley
-          href: /windows/deployment/windows-sv-deploy.md 
-        - name: Configure Windows Sun Valley
-          href: /windows/configuration/windows-sv-configure.md 
-        - name: Manage Windows Sun Valley
-          href: /windows/client-management/windows-sv-manage.md 
-        - name: Windows Sun Valley application readiness
-          href: /windows/application-management/windows-sv-app-readiness.md 
-    
-    - name: Support
-      items:
-        - name: Windows Sun Valley lifecycle
-          href: windows-sv-lifecycle.md
-        - name: Windows Sun Valley release information
-          href: /windows/release-health
+- name: Index
+  href: index.md
 
 
 
