@@ -36,6 +36,8 @@ Windows Sun Valley is the next evolution of Windows; the most significant update
 
 This release is built on the same foundation as Windows 10, so the investments you have made in tools for update and device management are carried forward. Windows Sun Valley also sustains the application compatibility promise made with Windows 10, supplemented by programs like App Assure. For Microsoft 365 customers seeking further assistance, FastTrack will continue to be available to support your efforts to adopt Windows Sun Valley.
 
+After Windows Sun Valley is generally available, it is expected that many organizations will have a mixed environment of Windows Sun Valley and Windows 10 devices. The guidance provided here can help you to manage this hybrid environment.
+
 ## How to get Windows Sun Valley
 
 Windows Sun Valley will be delivered as an upgrade to eligible devices running Windows 10, beginning later in the 2021 calendar year. Windows Sun Valley will also be available on eligible new devices.
@@ -50,7 +52,7 @@ If you are interested in testing Windows Sun Valley before general availability,
 
 ## Before you begin
 
-Many organizations will have a mixed environment of Windows Sun Valley and Windows 10 devices. The following sections provide a quick summary of licensing, compatibility, management, and servicing considerations.  
+The following sections provide a quick summary of licensing, compatibility, management, and servicing considerations to help you get started with Windows Sun Valley.  
 
 #### Licensing
 
@@ -62,11 +64,11 @@ Microsoft 365 licenses that include Windows 10 licenses will permit you to run W
 
 Most accessories and associated drivers that work with Windows 10 are expected to work with Windows Sun Valley. Check with your accessory manufacturer for specific details.
 
-Windows Sun Valley preserves the application compatibility promise made with Windows 10 and does not require changes to existing support processes or tooling to sustain the currency of applications and devices. Microsoft 365 customers can continue to use programs such as App Assure and FastTrack to support IT efforts to adopt and maintain Windows Sun Valley. For more information, see [Application compatibility](windows-sv-plan.md#application-compatibility).
+Windows Sun Valley preserves the application compatibility promise made with Windows 10, and does not require changes to existing support processes or tooling to sustain the currency of applications and devices. Microsoft 365 customers can continue to use programs such as App Assure and FastTrack to support IT efforts to adopt and maintain Windows Sun Valley. For more information, see [Application compatibility](windows-sv-plan.md#application-compatibility).
 
 #### Familiar processes
 
-Windows Sun Valley is built on the same foundation as Windows 10, so generally you can use the same tools and solutions you use today to deploy, manage, and secure Windows Sun Valley. Your current management tools and processes will work to manage monthly quality updates for both Windows 10 and Windows Sun Valley. If you use non-Microsoft tools, check with your vendor to verify compatibility. 
+Windows Sun Valley is built on the same foundation as Windows 10. Typically, you can use the same tools and solutions you use today to deploy, manage, and secure Windows Sun Valley. Your current management tools and processes will also work to manage monthly quality updates for both Windows 10 and Windows Sun Valley.
 
 > [!IMPORTANT]
 > Check with the providers of any non-Microsoft security and management solutions that you use to ensure compatibility with Windows Sun Valley, particularly those providing security or data loss prevention capabilities.  
@@ -75,7 +77,9 @@ For more information, see [Prepare for Windows Sun Valley](windows-sv-prepare.md
 
 #### Servicing Windows Sun Valley
 
-Like Windows 10, Windows Sun Valley will receive monthly quality updates. However, it will have an annual feature update cadence. When Windows Sun Valley reaches general availability, important servicing-related announcements and information about known issues and safeguard holds can be found on the Windows release health hub. Monthly release notes will be available from a consolidated Windows Sun Valley update history page at that time as well. For more information, see [Servicing and support](windows-sv-plan.md#servicing-and-support). 
+Like Windows 10, Windows Sun Valley will receive monthly quality updates. However, it will have a new feature update cadence. Windows Sun Valley feature updates will be released once per year. 
+
+When Windows Sun Valley reaches general availability, important servicing-related announcements and information about known issues and safeguard holds can be found on the Windows release health hub. Monthly release notes will also be available from a consolidated Windows Sun Valley update history page at that time. For more information, see [Servicing and support](windows-sv-plan.md#servicing-and-support). 
 
 ## Next steps
 

@@ -24,7 +24,9 @@ ms.topic: article
 
 This article provides guidance to help you plan for Windows Sun Valley in your organization.
 
-Since Windows Sun Valley is built on the same foundation as Windows 10, you can utilize the same deployment capabilities, scenarios, and tools—as well as the same basic deployment strategy. You will need to review and update your servicing strategy to adjust for changes in [Servicing and support](#servicing-and-support) for Windows Sun Valley. At a high level, this strategy should include the following steps:
+Since Windows Sun Valley is built on the same foundation as Windows 10, you can utilize the same deployment capabilities, scenarios, and tools—as well as the same basic deployment strategy that you use today for Windows 10. You will need to review and update your servicing strategy to adjust for changes in [Servicing and support](#servicing-and-support) for Windows Sun Valley. 
+
+At a high level, this strategy should include the following steps:
 - [Create a deployment plan](/windows/deployment/update/create-deployment-plan)
 - [Define readiness criteria](/windows/deployment/update/plan-define-readiness)
 - [Evaluate infrastructure and tools](/windows/deployment/update/eval-infra-tools)
@@ -88,13 +90,17 @@ The introduction of Windows Sun Valley is also a good time to review your hardwa
 
 Along with end-user experience and security improvements, Windows Sun Valley introduces enhancements to Microsoft's servicing approach based on your suggestions and feedback. 
 
-Windows Sun Valley and Windows 10 devices will receive regular monthly quality updates to provide security updates and bug fixes. However, Microsoft will provide a single feature update annually, targeted for release in the second half of each calendar year. 
+**Quality updates**: Windows Sun Valley and Windows 10 devices will receive regular monthly quality updates to provide security updates and bug fixes. 
+
+**Feature updates**: Microsoft will provide a single feature update annually, targeted for release in the second half of each calendar year. 
+
+**Lifecycle**:
 - Home, Pro, Pro for Workstations, and Pro for Education editions of Windows Sun Valley will receive 24 months of support from the availability date. 
 - Enterprise and Education editions of Windows Sun Valley will be supported for 36 months from the availability date.
 
 When Windows Sun Valley reaches general availability, a consolidated Windows Sun Valley update history will be available on support.microsoft.com, similar to what is [available today for Windows 10](https://support.microsoft.com/topic/windows-10-update-history-1b6aac92-bf01-42b5-b158-f80c6d93eb11). Similarly, the [Windows release health](/windows/release-health/) hub will offer quick access to Windows Sun Valley servicing announcements, known issues, and safeguard holds. 
 
-It is important that organizations have adequate time to plan for Windows Sun Valley. Microsoft also recognizes that many organizations will have a mix of Windows Sun Valley and Windows 10 devices across their ecosystem. Devices on in-service versions of Windows 10 will continue to receive monthly Windows 10 security updates through 2025, as well as incremental improvements to Windows 10 to support ongoing Microsoft 365 deployments. For more information, see the [Windows 10 release information](/windows/release-health/release-information) page, which offers information about Windows 10 Semi-Annual Channel and LTSC releases. 
+It is important that organizations have adequate time to plan for Windows Sun Valley. Microsoft also recognizes that many organizations will have a mix of Windows Sun Valley and Windows 10 devices across their ecosystem. Devices on in-service versions of Windows 10 will continue to receive monthly Windows 10 security updates through 2025, as well as incremental improvements to Windows 10 to support ongoing Microsoft 365 deployments. For more information, see the [Windows 10 release information](/windows/release-health/release-information) page, which offers information about the Windows 10 Semi-Annual Channel and Long-term Servicing Channel (LTSC) releases. 
 
 ## Application compatibility
 
@@ -104,9 +110,9 @@ Microsoft's compatibility promise for Windows 10 is maintained for Windows Sun V
 
 If you run into compatibility issues or want to ensure that your organization's applications are compatible from day one, App Assure and Test Base for Microsoft 365 can help. 
 
-With enrollment in the [App Assure](/windows/compatibility/app-assure) service, if you find any problems with an existing application as you migrate to Windows Sun Valley, Microsoft will help you remedy those application issues at no cost. Since 2018, App Assure has evaluated almost 800,000 apps, and subscriptions are free for eligible customers with 150+ seats. 
+**App Assure**: With enrollment in the [App Assure](/windows/compatibility/app-assure) service, any app compatibility issues that you find with Windows Sun Valley can be resolved. Microsoft will help you remedy application issues at no cost. Since 2018, App Assure has evaluated almost 800,000 apps, and subscriptions are free for eligible customers with 150+ seats. 
 
-For software publishers, systems integrators, and IT administrators, [Test Base for Microsoft 365](https://www.microsoft.com/testbase) (currently in public preview) is a service that allows you to validate your apps across a variety of Windows feature and quality updates and environments in a Microsoft-managed Azure environment. Enterprise organizations can also nominate their software publishers for participation by completing a short form.  
+**Test Base for Microsoft 365**: For software publishers, systems integrators, and IT administrators, [Test Base for Microsoft 365](https://www.microsoft.com/testbase) (currently in public preview) is a service that allows you to validate your apps across a variety of Windows feature and quality updates and environments in a Microsoft-managed Azure environment. Enterprise organizations can also nominate their software publishers for participation by completing a short form.  
 
 You might already be using App Assure and Test Base in your Windows 10 environment. Both of these tools will continue to function with Windows Sun Valley. 
 
