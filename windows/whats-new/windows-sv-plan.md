@@ -24,14 +24,14 @@ ms.topic: article
 
 This article provides guidance to help you plan for Windows Sun Valley in your organization.
 
-Since Windows Sun Valley is built on the same foundation as Windows 10, you can utilize the same deployment capabilities, scenarios, and tools—as well as the same basic deployment strategy. You will need to review and update your servicing strategy to adjust for changes in [Servicing and support](#servicing-and-support) that are in place for Windows Sun Valley. At a high level, this strategy should include the following steps:
+Since Windows Sun Valley is built on the same foundation as Windows 10, you can utilize the same deployment capabilities, scenarios, and tools—as well as the same basic deployment strategy. You will need to review and update your servicing strategy to adjust for changes in [Servicing and support](#servicing-and-support) for Windows Sun Valley. At a high level, this strategy should include the following steps:
 - [Create a deployment plan](/windows/deployment/update/create-deployment-plan)
 - [Define readiness criteria](/windows/deployment/update/plan-define-readiness)
 - [Evaluate infrastructure and tools](/windows/deployment/update/eval-infra-tools)
 - [Determine application readiness](/windows/deployment/update/plan-determine-app-readiness)
 - [Define your servicing strategy](/windows/deployment/update/plan-define-strategy)
 
-If you are looking for ways to optimize your approach to deploying Windows Sun Valley, or if deploying a new version of an operating system is not a familiar process for you, some additional items to consider are provided below. 
+If you are looking for ways to optimize your approach to deploying Windows Sun Valley, or if deploying a new version of an operating system is not a familiar process for you, some items to consider are provided below. 
 
 ## Determine eligibility
 
@@ -49,7 +49,7 @@ Windows Sun Valley will be offered to eligible Windows 10 devices beginning late
 
 Managed devices are devices that are under organization control. For example: devices managed by Microsoft Endpoint Manager (Microsoft Intune or Microsoft Endpoint Configuration Manager) or another endpoint management solution. 
 
-If you manage devices on behalf of your organization, you will be able to upgrade eligible devices to Windows Sun Valley using your existing deployment and management tools at no cost when the upgrade reaches general availability. Organizations that use Windows Update for Business will have additional benefits, such as:  
+If you manage devices on behalf of your organization, you will be able to upgrade eligible devices to Windows Sun Valley using your existing deployment and management tools at no cost when the upgrade reaches general availability. Organizations that use Windows Update for Business will have added benefits, such as:  
 
 - Blocking the upgrade on non-eligible devices. 
 - Additional insight into safeguard holds. While safeguard holds will function for Windows Sun Valley devices just as they do for Windows 10 today, administrators using Windows Update for Business will have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows Sun Valley. 
@@ -60,7 +60,7 @@ If you manage devices on behalf of your organization, you will be able to upgrad
 
 ##### Unmanaged devices
 
-Unmanaged devices are those that are not managed by an IT administrator on behalf of an organization. For operating system (OS) deployment, these devices are not subject to organizational policies that manage upgrades or updates.  
+Unmanaged devices are devices that are not managed by an IT administrator on behalf of an organization. For operating system (OS) deployment, these devices are not subject to organizational policies that manage upgrades or updates.  
 
 Unmanaged eligible devices running Windows 10 that were purchased after June 2021 will be offered the Windows Sun Valley upgrade in the last quarter of the 2021 calendar year. Messaging on new devices will vary by PC manufacturer, but users will see labels such as **This PC will upgrade to Windows Sun Valley once available** on products that are available for purchase. 
 
@@ -69,7 +69,7 @@ Unmanaged eligible devices running Windows 10 that were purchased after June 202
 
 The Windows Sun Valley upgrade will be available initially on eligible, unmanaged devices to users who manually seek the upgrade through Windows Update. As with all Microsoft Update managed devices, the **Windows Update Settings** page will confirm when a device is eligible, and users can upgrade if they choose to.
 
-Just like Windows 10, the machine learning based [intelligent rollout](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/using-machine-learning-to-improve-the-windows-10-update/ba-p/877860) process will be leveraged when rolling out upgrades. Machine learning uses a combination of testing, close partner engagement, feedback, diagnostic data, and real-life insights to manage quality. This improves the update experience and ensures that devices first nominated for updates are those likely to have a seamless experience. Devices that might have compatibility issues with the upgrade get the benefit of resolving these issues before the upgrade is offered. 
+Just like Windows 10, the machine learning based [intelligent rollout](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/using-machine-learning-to-improve-the-windows-10-update/ba-p/877860) process will be leveraged when rolling out upgrades. Machine learning uses a combination of testing, close partner engagement, feedback, diagnostic data, and real-life insights to manage quality. This process improves the update experience and ensures that devices first nominated for updates are the devices likely to have a seamless experience. Devices that might have compatibility issues with the upgrade get the benefit of resolving these issues before the upgrade is offered. 
 
 ## Windows Sun Valley readiness considerations 
 
