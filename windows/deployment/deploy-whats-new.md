@@ -20,14 +20,13 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to:**
 - Windows 10
-- Windows 11
 
 ## In this topic
 
 This topic provides an overview of new solutions and online content related to deploying Windows client in your organization.
 
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](/windows/whats-new/index).
-- For an all-up overview of new features in Windows 11, see [What's new in Windows 11](/windows/whats-new/index).
+- For an overview of Windows Sun Valley, see [What's new in Windows Sun Valley](/windows/whats-new/windows-sv).
 
 ## Latest news
 
