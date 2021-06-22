@@ -75,13 +75,13 @@ For more information, see [Create a deployment plan](/windows/deployment/update/
 
 #### Review policies
 
-Review deployment-related polices, taking into consideration your organization's security objectives, update compliance deadlines, and device activity. Apply changes where you can gain a clear improvement, particularly with regard to the speed of the update process or security. 
+Review deployment-related policies, taking into consideration your organization's security objectives, update compliance deadlines, and device activity. Apply changes where you can gain a clear improvement, particularly with regard to the speed of the update process or security. 
 
 #### Validate apps and infrastructure
 
-To validate that your apps, infrastructure, and deployment processes are ready for Windows Sun Valley, join the [Windows Insider Program for Business](https://insider.windows.com/for-business-getting-started) and opt in to the [Release Preview Channel](/windows-insider/business/validate-Release-Preview-Channel).  
+To validate that your apps, infrastructure, and deployment processes are ready for Windows Sun Valley, join the [Windows Insider Program for Business](https://insider.windows.com/for-business-getting-started), and opt in to the [Release Preview Channel](/windows-insider/business/validate-Release-Preview-Channel).  
 
-If you use Windows Server Update Services, you can deploy directly from the Windows Insider Pre-release category using one of the following:  
+If you use Windows Server Update Services, you can deploy directly from the Windows Insider Pre-release category using one of the following processes:
 
 - Set **Manage Preview Builds** to **Release Preview** in Windows Update for Business. 
 - Leverage Azure Virtual Desktop and Azure Marketplace images. 
@@ -111,7 +111,7 @@ At a high level, the tasks involved are:
 
 ## End-user readiness
 
-To prepare an effective, enterprise-wide deployment of Windows Sun Valley, the importance of end-user readiness should not be overlooked. Windows Sun Valley has a familiar design, but end-users will see several enhancements to the overall user interface. They will also need to adapt to changes in menus and settings pages. Therefore, consider the following tasks to prepare users and your IT support staff Windows Sun Valley: 
+To prepare an effective, enterprise-wide deployment of Windows Sun Valley, the importance of end-user readiness should not be overlooked. Windows Sun Valley has a familiar design, but your users will see several enhancements to the overall user interface. They will also need to adapt to changes in menus and settings pages. Therefore, consider the following tasks to prepare users and your IT support staff Windows Sun Valley: 
 
 - Create a communications schedule to ensure that you provide the right communications at the right time to the right groups of users based on when they will see the changes. 
 - Draft concise emails that inform users of what changes they can expect to see. Offer tips on how to use or customize their experience. Include information about support and help desk options. 

@@ -5,7 +5,7 @@ summary: Plan, deploy, secure, and manage devices running Windows 10 and Windows
 
 metadata:
   title: Windows client documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Evaluate, plan, deploy, secure and manage devices running Windows 10 and Windows Sun Valley. # Required; article description that is displayed in search results. < 160 chars.
+  description: Evaluate, plan, deploy, secure, and manage devices running Windows 10 and Windows Sun Valley. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice

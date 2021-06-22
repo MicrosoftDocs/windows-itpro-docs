@@ -27,14 +27,14 @@ This article lists the system requirements for Windows Sun Valley. Windows Sun V
 
 To install or upgrade to Windows Sun Valley, devices must meet the following minimum hardware requirements:
  
-- Processor: 1 gigahertz (GHz) or faster with two or more cores on a [compatible 64-bit processor](https://aka.ms/CPUlist) or system on a chip (SoC)
-- RAM: 4 gigabytes (GB) or greater
-- Storage: 64 GB or greater available storage is required to install Windows Sun Valley
-  - Additional storage space might be required to download updates and enable specific features
-- Graphics card: Compatible with DirectX 12 or later with WDDM 2.0 driver
-- System firmware: UEFI, Secure Boot capable
-- TPM: Trusted Platform Module (TPM) version 2.0
-- Display: High definition (720p) display, 9" or greater monitor, 8 bits per color channel
+- Processor: 1 gigahertz (GHz) or faster with two or more cores on a [compatible 64-bit processor](https://aka.ms/CPUlist) or system on a chip (SoC).
+- RAM: 4 gigabytes (GB) or greater.
+- Storage: 64 GB or greater available storage is required to install Windows Sun Valley.
+  - Additional storage space might be required to download updates and enable specific features.
+- Graphics card: Compatible with DirectX 12 or later with WDDM 2.0 driver.
+- System firmware: UEFI, Secure Boot capable.
+- TPM: Trusted Platform Module (TPM) version 2.0.
+- Display: High definition (720p) display, 9" or greater monitor, 8 bits per color channel.
 - Internet connection: Internet connectivity is necessary to perform updates and to download and take advantage of some features. 
   - Windows Sun Valley Home edition requires an Internet connection and a Microsoft Account to complete device setup on first use.
 
@@ -62,7 +62,7 @@ Some features in Windows Sun Valley have requirements beyond those listed above.
 - **Presence** requires sensor that can detect human distance from device or intent to interact with device.
 - **Intelligent Video Conferencing** requires video camera, microphone, and speaker (audio output) 
 - **Multiple Voice Assistant** requires a microphone and speaker.
-- **Snap** three column layouts require a screen that is 1920 effective pixels or greater in width.
+- **Snap** three-column layouts require a screen that is 1920 effective pixels or greater in width.
 - **Mute** and **unmute** from Taskbar requires video camera, microphone, and speaker (audio output). App must be compatible with feature to enable global mute/unmute.
 - **Spatial Sound** requires supporting hardware and software.
 - **Microsoft Teams** requires video camera, microphone, and speaker (audio output).

@@ -75,7 +75,7 @@ For more information, see [Prepare for Windows Sun Valley](windows-sv-prepare.md
 
 #### Servicing Windows Sun Valley
 
-Like Windows 10, Windows Sun Valley will receive monthly quality updates. However, it will have an annual feature update cadence. When Windows Sun Valley reaches general availability, important servicing-related announcements and information about known issues and safeguard holds can be found on the Windows release health hub. Monthly release notes will available from a consolidated Windows Sun Valley update history page at that time as well. For more information, see [Servicing and support](windows-sv-plan.md#servicing-and-support). 
+Like Windows 10, Windows Sun Valley will receive monthly quality updates. However, it will have an annual feature update cadence. When Windows Sun Valley reaches general availability, important servicing-related announcements and information about known issues and safeguard holds can be found on the Windows release health hub. Monthly release notes will be available from a consolidated Windows Sun Valley update history page at that time as well. For more information, see [Servicing and support](windows-sv-plan.md#servicing-and-support). 
 
 ## Next steps
 
