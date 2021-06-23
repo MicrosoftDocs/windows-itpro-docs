@@ -20,9 +20,9 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**
 
--   Windows Sun Valley, version 21H2
+-   Windows Sun Valley
 
-This article provides an introduction and answers some frequently asked questions about Windows Sun Valley, the next Windows client operating system release.
+This article provides an introduction to Windows Sun Valley, and answers some frequently asked questions.
 
 Also see the following articles to learn more about Windows Sun Valley: 
 
@@ -32,19 +32,17 @@ Also see the following articles to learn more about Windows Sun Valley:
 
 ## Introduction
 
-Windows Sun Valley is the next evolution of Windows; the most significant update to the Windows operating system since Windows 10. It offers many innovations focused on enhancing end-user productivity in a fresh experience that is flexible and fluid. Windows Sun Valley is designed to support today's hybrid work environment, and intended to be the most reliable, secure, connected, and performant Windows operating system ever. 
+Windows Sun Valley is the next evolution of Windows; it is the most significant update to the Windows operating system since Windows 10. It offers many innovations focused on enhancing end-user productivity in a fresh experience that is flexible and fluid. Windows Sun Valley is designed to support today's hybrid work environment, and intended to be the most reliable, secure, connected, and performant Windows operating system ever. 
 
-This release is built on the same foundation as Windows 10, so the investments you have made in tools for update and device management are carried forward. Windows Sun Valley also sustains the application compatibility promise made with Windows 10, supplemented by programs like App Assure. For Microsoft 365 customers seeking further assistance, FastTrack will continue to be available to support your efforts to adopt Windows Sun Valley.
-
-After Windows Sun Valley is generally available, it is expected that many organizations will have a mixed environment of Windows Sun Valley and Windows 10 devices. The guidance provided here can help you to manage this hybrid environment.
+Windows Sun Valley is built on the same foundation as Windows 10, so the investments you have made in tools for update and device management are carried forward. Windows Sun Valley also sustains the application compatibility promise made with Windows 10, supplemented by programs like App Assure. For Microsoft 365 customers seeking further assistance, FastTrack will continue to be available to support your efforts to adopt Windows Sun Valley.
 
 ## How to get Windows Sun Valley
 
 Windows Sun Valley will be delivered as an upgrade to eligible devices running Windows 10, beginning later in the 2021 calendar year. Windows Sun Valley will also be available on eligible new devices.
 
-For administrators managing devices on behalf of their organization, Windows Sun Valley will be available through the same, familiar channels that you utilize today for Windows 10 feature updates. You will be able to use existing deployment and management tools, such as Windows Update for Business, Microsoft Endpoint Management, and Windows Autopilot. For more information, see [Plan for Windows Sun Valley](windows-sv-plan.md).
+For administrators managing devices on behalf of their organization, Windows Sun Valley will be available through the same, familiar channels that you use today for Windows 10 feature updates. You will be able to use existing deployment and management tools, such as Windows Update for Business, Microsoft Endpoint Manager, and Windows Autopilot. For more information, see [Plan for Windows Sun Valley](windows-sv-plan.md).
 
-For eligible PCs that are not managed by an organization, the Windows Sun Valley upgrade will be offered through Windows Update using Microsoft's intelligent rollout process to ensure a smooth upgrade experience. Windows Sun Valley will initially be offered to Windows 10 devices purchased after June 2021 that meet or exceed the minimum hardware requirements. 
+For devices that are not managed by an organization, the Windows Sun Valley upgrade will be offered to eligible Windows 10 devices through Windows Update using Microsoft's intelligent rollout process to ensure a smooth upgrade experience. 
 
 For more information about device eligibility, see [Windows Sun Valley requirements](windows-sv-requirements.md).
 
@@ -79,7 +77,7 @@ For more information, see [Prepare for Windows Sun Valley](windows-sv-prepare.md
 
 Like Windows 10, Windows Sun Valley will receive monthly quality updates. However, it will have a new feature update cadence. Windows Sun Valley feature updates will be released once per year. 
 
-When Windows Sun Valley reaches general availability, important servicing-related announcements and information about known issues and safeguard holds can be found on the Windows release health hub. Monthly release notes will also be available from a consolidated Windows Sun Valley update history page at that time. For more information, see [Servicing and support](windows-sv-plan.md#servicing-and-support). 
+When Windows Sun Valley reaches general availability, important servicing-related announcements and information about known issues and safeguard holds can be found on the [Windows release health](https://aka.ms/windowsreleasehealth) hub. Monthly release notes will also be available from a consolidated Windows Sun Valley update history page at that time. For more information, see [Servicing and support](windows-sv-plan.md#servicing-and-support). 
 
 ## Next steps
 
