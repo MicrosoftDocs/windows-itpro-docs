@@ -30,14 +30,14 @@ This article for the IT professional lists the functions and security levels for
 
 Here are the SRP functions beginning with Windows Server 2003 and AppLocker functions beginning with Windows Server 2008 R2:
 
--   [SaferGetPolicyInformation Function](https://go.microsoft.com/fwlink/p/?LinkId=159781)
--   [SaferCreateLevel Function](https://go.microsoft.com/fwlink/p/?LinkId=159782)
--   [SaferCloseLevel Function](https://go.microsoft.com/fwlink/p/?LinkId=159783)
--   [SaferIdentifyLevel Function](https://go.microsoft.com/fwlink/p/?LinkId=159784)
--   [SaferComputeTokenFromLevel Function](https://go.microsoft.com/fwlink/p/?LinkId=159785)
--   [SaferGetLevelInformation Function](https://go.microsoft.com/fwlink/p/?LinkId=159787)
--   [SaferRecordEventLogEntry Function](https://go.microsoft.com/fwlink/p/?LinkId=159789)
--   [SaferiIsExecutableFileType Function](https://go.microsoft.com/fwlink/p/?LinkId=159790)
+-   [SaferGetPolicyInformation Function](/windows/win32/api/winsafer/nf-winsafer-safergetpolicyinformation)
+-   [SaferCreateLevel Function](/windows/win32/api/winsafer/nf-winsafer-safercreatelevel)
+-   [SaferCloseLevel Function](/windows/win32/api/winsafer/nf-winsafer-safercloselevel)
+-   [SaferIdentifyLevel Function](/windows/win32/api/winsafer/nf-winsafer-saferidentifylevel)
+-   [SaferComputeTokenFromLevel Function](/windows/win32/api/winsafer/nf-winsafer-safercomputetokenfromlevel)
+-   [SaferGetLevelInformation Function](/windows/win32/api/winsafer/nf-winsafer-safergetlevelinformation)
+-   [SaferRecordEventLogEntry Function](/windows/win32/api/winsafer/nf-winsafer-saferrecordeventlogentry)
+-   [SaferiIsExecutableFileType Function](/windows/win32/api/winsafer/nf-winsafer-saferiisexecutablefiletype)
 
 ## Security level ID
 
@@ -57,5 +57,4 @@ AppLocker and SRP use the security level IDs to specify the access requirements 
 ## Related articles
 
 - [AppLocker technical reference](applocker-technical-reference.md)
- 
  

@@ -21,6 +21,7 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10, version 1511
 -   Windows 10, version 1507
+-   TPM 1.2
 
 This topic for the IT professional describes how to change the password or PIN for the owner of the Trusted Platform Module (TPM) that is installed on your system.
 
@@ -51,7 +52,7 @@ To change to a new TPM owner password, in TPM.msc, click **Change Owner Password
 
 ## Use the TPM cmdlets
 
-You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule).
+You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](/powershell/module/trustedplatformmodule).
 
 ## Related topics
 

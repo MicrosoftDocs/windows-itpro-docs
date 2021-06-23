@@ -32,19 +32,19 @@ For persistent VDI environments, carefully consider the I/O impact from upgradin
 
 ## Deployment tools
 
-The latest version of the Windows Assessment and Deployment Toolkit (ADK) is available for download [here](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+The latest version of the Windows Assessment and Deployment Toolkit (ADK) is available for download [here](/windows-hardware/get-started/adk-install).
 
 Significant enhancements in the ADK for Windows 10 include new runtime provisioning capabilities, which leverage the Windows Imaging and Configuration Designer (Windows ICD), as well as updated versions of existing deployment tools (DISM, USMT, Windows PE, and more).
 
-The latest version of the Microsoft Deployment Toolkit (MDT) is available for download [here](https://docs.microsoft.com/mem/configmgr/mdt/release-notes).
+The latest version of the Microsoft Deployment Toolkit (MDT) is available for download [here](/mem/configmgr/mdt/release-notes).
 
-For Configuration Manager, Windows 10 version specific support is offered with [various releases](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/support-for-windows-10).
+For Configuration Manager, Windows 10 version specific support is offered with [various releases](/mem/configmgr/core/plan-design/configs/support-for-windows-10).
 
 For more details about Microsoft Endpoint Manager support for Windows 10, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
 
 ## Management tools
 
-In addition to Microsoft Endpoint Configuration Manager, Windows 10 also leverages other tools for management. For Windows Server and Active Directory, existing supported versions are fully supported for Windows 10. New Group Policy templates will be needed to configure new settings available in Windows 10; these templates are available in the Windows 10 media images, and are available as a separate download [here](https://go.microsoft.com/fwlink/p/?LinkId=625081). See [Group Policy settings reference](https://go.microsoft.com/fwlink/p/?LinkId=625082) for a list of the new and modified policy settings. If you are using a central policy store, follow the steps outlined [here](https://go.microsoft.com/fwlink/p/?LinkId=625083) to update the ADMX files stored in that central store.
+In addition to Microsoft Endpoint Configuration Manager, Windows 10 also leverages other tools for management. For Windows Server and Active Directory, existing supported versions are fully supported for Windows 10. New Group Policy templates will be needed to configure new settings available in Windows 10; these templates are available in the Windows 10 media images, and are available as a separate download [here](https://go.microsoft.com/fwlink/p/?LinkId=625081). See [Group Policy settings reference](https://go.microsoft.com/fwlink/p/?LinkId=625082) for a list of the new and modified policy settings. If you are using a central policy store, follow the steps outlined [here](/troubleshoot/windows-server/group-policy/create-central-store-domain-controller) to update the ADMX files stored in that central store.
 
 No new Active Directory schema updates or specific functional levels are currently required for core Windows 10 product functionality, although subsequent upgrades could require these to support new features.
 
@@ -58,9 +58,9 @@ Microsoft Desktop Optimization Pack (MDOP) has been updated to support Windows 
 | Microsoft BitLocker Administration and Monitoring (MBAM) | MBAM 2.5 SP1 (2.5 is OK) |
 | User Experience Virtualization (UE-V)                    | UE-V 2.1 SP1             |
 
-For more information, see the [MDOP TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=625090).
+For more information, see the [MDOP TechCenter](/microsoft-desktop-optimization-pack/).
 
-For devices you manage with mobile device management (MDM) solutions such as Microsoft Intune, existing capabilities (provided initially in Windows 8.1) are fully supported in Windows 10; new Windows 10 MDM settings and capabilities will require updates to the MDM services. See [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkId=625084) for more information.
+For devices you manage with mobile device management (MDM) solutions such as Microsoft Intune, existing capabilities (provided initially in Windows 8.1) are fully supported in Windows 10; new Windows 10 MDM settings and capabilities will require updates to the MDM services. See [Mobile device management](/windows/client-management/mdm/) for more information.
 
 Windows Server Update Services (WSUS) requires some additional configuration to receive updates for Windows 10. Use the Windows Server Update Services admin tool and follow these instructions:
 
@@ -72,7 +72,7 @@ Windows Server Update Services (WSUS) requires some additional configuration to 
 
 WSUS product list with Windows 10 choices
 
-Because Windows 10 updates are cumulative in nature, each month’s new update will supersede the previous month's. Consider leveraging “express installation” packages to reduce the size of the payload that needs to be sent to each PC each month; see [Express installation files](https://go.microsoft.com/fwlink/p/?LinkId=625086) for more information. (Note that this will increase the amount of disk storage needed by WSUS, and impacts all operating systems being managed with WSUS.)
+Because Windows 10 updates are cumulative in nature, each month’s new update will supersede the previous month's. Consider leveraging “express installation” packages to reduce the size of the payload that needs to be sent to each PC each month; see [Express installation files](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd939908(v=ws.10)) for more information. (Note that this will increase the amount of disk storage needed by WSUS, and impacts all operating systems being managed with WSUS.)
 
 ## Activation
 
@@ -85,7 +85,7 @@ Windows 10 volume license editions of Windows 10 will continue to support all 
 | Windows Server 2012 and Windows 8      | [https://support.microsoft.com/kb/3058168](https://go.microsoft.com/fwlink/p/?LinkId=625087) |
 | Windows Server 2008 R2 and Windows 7   | [https://support.microsoft.com/kb/3079821](https://support.microsoft.com/kb/3079821)                                                                   |
 
-Also see: [Windows Server 2016 Volume Activation Tips](https://blogs.technet.microsoft.com/askcore/2016/10/19/windows-server-2016-volume-activation-tips/)
+Also see: [Windows Server 2016 Volume Activation Tips](/archive/blogs/askcore/windows-server-2016-volume-activation-tips)
 
 Additionally, new product keys will be needed for all types of volume license activation (KMS, MAK, and AD-based Activation); these keys are available on the Volume Licensing Service Center (VLSC) for customers with rights to the Windows 10 operating system. To find the needed keys:
 
@@ -104,8 +104,3 @@ Note that Windows 10 Enterprise and Windows 10 Enterprise LTSC installations u
  
 
  
-
-
-
-
-

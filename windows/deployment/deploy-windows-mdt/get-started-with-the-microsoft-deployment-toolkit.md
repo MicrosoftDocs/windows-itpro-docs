@@ -21,15 +21,15 @@ ms.topic: article
 **Applies to**
 - Windows 10
 
-This article provides an overview of the features, components, and capabilities of the [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=618117). When you have finished reviewing this information, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
+This article provides an overview of the features, components, and capabilities of the [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt/). When you have finished reviewing this information, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
 ## About MDT
 
 MDT is a unified collection of tools, processes, and guidance for automating desktop and server deployment. You can use it to create reference images or as a complete deployment solution.  MDT is one of the most important tools available to IT professionals today.
 
-In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the [Windows Assessment and Deployment Kit](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
+In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
 
-MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/).
+MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with [Microsoft Endpoint Configuration Manager](/configmgr/).
 
 ## Key features in MDT
 
@@ -68,7 +68,7 @@ MDT has many useful features, such as:
 - **Support for Microsoft Office.** Provides added support for deploying Microsoft Office.
 - **Support for Modern UI app package provisioning.** Provisions applications based on the new Windows app package standard, which is used in Windows 8 and later.
 - **Extensibility.** Provides the capability to extend MDT far beyond the built-in features by adding custom scripts, web services, System Center Orchestrator runbooks, PowerShell scripts, and VBScripts.
-- **Upgrade task sequence.** Provides a new upgrade task sequence template that you can use to upgrade existing Windows 7, Windows 8, and Windows 8.1 systems directly to Windows 10, automatically preserving all data, settings, applications, and drivers. For more information about using this new upgrade task sequence, refer to the [Microsoft Deployment Toolkit resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
+- **Upgrade task sequence.** Provides a new upgrade task sequence template that you can use to upgrade existing Windows 7, Windows 8, and Windows 8.1 systems directly to Windows 10, automatically preserving all data, settings, applications, and drivers. For more information about using this new upgrade task sequence, refer to the [Microsoft Deployment Toolkit resource page](/mem/configmgr/mdt/).
 
 ## MDT Lite Touch components
 
@@ -91,7 +91,7 @@ The rules (CustomSettings.ini and Bootstrap.ini) make up the brain of MDT. The r
 - Domain to join, and organizational unit (OU) in Active Directory to hold the computer object
 - Whether to enable BitLocker
 - Regional settings
-You can manage hundreds of settings in the rules. For more information, see the [Microsoft Deployment Toolkit resource center](https://go.microsoft.com/fwlink/p/?LinkId=618117).
+You can manage hundreds of settings in the rules. For more information, see the [Microsoft Deployment Toolkit resource center](/mem/configmgr/mdt/).
 
 ![figure 5](../images/mdt-05-fig05.png)
 

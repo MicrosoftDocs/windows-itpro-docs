@@ -4,9 +4,9 @@ description: This section describes the WindowsTeamSettings settings that you ca
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.reviewer: 
 manager: dansimp
@@ -52,7 +52,7 @@ A device account is a Microsoft Exchange account that is connected with Skype fo
 
 ## Dot3
 
-Use these settings to configure 802.1x wired authentication. For details, see [Enable 802.1x wired authentication](https://docs.microsoft.com/surface-hub/enable-8021x-wired-authentication).
+Use these settings to configure 802.1x wired authentication. For details, see [Enable 802.1x wired authentication](/surface-hub/enable-8021x-wired-authentication).
 
 
 
@@ -107,4 +107,4 @@ Configures the Operations Management Suite workspace.
 
 ## Related topics
 
-- [SurfaceHub configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
+- [SurfaceHub configuration service provider (CSP)](/windows/client-management/mdm/surfacehub-csp)

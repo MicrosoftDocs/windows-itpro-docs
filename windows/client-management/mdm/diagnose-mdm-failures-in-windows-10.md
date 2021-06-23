@@ -14,7 +14,7 @@ ms.date: 06/25/2018
 
 # Diagnose MDM failures in Windows 10
 
-To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop or mobile device. The following sections describe the procedures for collecting MDM logs.
+To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop. The following sections describe the procedures for collecting MDM logs.
 
 ## Download the MDM Diagnostic Information log from Windows 10 PCs
 
@@ -29,6 +29,27 @@ To help diagnose enrollment or device management issues in Windows 10 devices m
    ![Access work or school log files](images/diagnose-mdm-failures17.png)
 
 1. In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
+
+## Use command to collect logs directly from Windows 10 PCs
+
+You can also collect the MDM Diagnostic Information logs using the following command:
+
+```xml
+mdmdiagnosticstool.exe -area DeviceEnrollment;DeviceProvisioning;Autopilot -cab c:\users\public\documents\MDMDiagReport.cab
+```
+-   In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
+
+### Understanding cab structure
+The cab file will have logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment, DeviceProvisioning and Autopilot areas. It applies to the cab files collected via command line or Feedback Hub
+
+-   DiagnosticLogCSP_Collector_Autopilot_*: Autopilot etls
+-   DiagnosticLogCSP_Collector_DeviceProvisioning_*: Provisioning etls (Microsoft-Windows-Provisioning-Diagnostics-Provider)
+-   MDMDiagHtmlReport.html: Summary snapshot of MDM space configurations and policies. Includes, management url, MDM server device ID, certificates, policies.
+-   MdmDiagLogMetadata, json: mdmdiagnosticstool metadata file, contains command-line arguments used to run the tool
+-   MDMDiagReport.xml: contains a more detail view into the MDM space configurations, e.g enrollment variables
+-   MdmDiagReport_RegistryDump.reg: contains dumps from common MDM registry locations
+-   MdmLogCollectorFootPrint.txt: mdmdiagnosticslog tool logs from running the command
+-   *.evtx: Common event viewer logs microsoft-windows-devicemanagement-enterprise-diagnostics-provider-admin.evtx main one that contains MDM events.
 
 ## Collect logs directly from Windows 10 PCs
 
@@ -112,10 +133,6 @@ Example: Export the Debug logs
 </SyncML>
 ```
 
-## Collect logs from Windows 10 Mobile devices
-
-Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medic](https://www.microsoft.com/p/field-medic/9wzdncrfjb82?activetab=pivot%3aoverviewtab) app to collect logs.
-
 **To collect logs manually**
 
 1.  Download and install the [Field Medic]( https://go.microsoft.com/fwlink/p/?LinkId=718232) app from the store.
@@ -182,11 +199,11 @@ The following table contains a list of common providers and their corresponding 
 | e5fc4a0f-7198-492f-9b0f-88fdcbfded48 | Microsoft-Windows Networking VPN                       |
 | e5c16d49-2464-4382-bb20-97a4b5465db9 | Microsoft-Windows-WiFiNetworkManager                   |
 
- 
+ -->
 
-## Collect logs remotely from Windows 10 Holographic or Windows 10 Mobile devices
+## Collect logs remotely from Windows 10 Holographic
 
-For holographic or mobile devices already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
+For holographic already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
 
 You can use the DiagnosticLog CSP to enable the ETW provider. The provider ID is 3DA494E4-0FE2-415C-B895-FB5265C5C83B. The following examples show how to enable the ETW provider:
 

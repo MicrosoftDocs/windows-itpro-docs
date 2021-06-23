@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 11/19/2019
 ---
 
@@ -73,17 +73,13 @@ Defines restrictions for applications.
 
 > [!NOTE]
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
->
-> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
->
+
 > Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
 
 > [!NOTE]
 > The AppLocker CSP will schedule a reboot when a policy is applied or a deletion occurs using the AppLocker/ApplicationLaunchRestrictions/Grouping/CodeIntegrity/Policy URI.
 
 Additional information:
-
-- [Find publisher and product name of apps](#productname) - step-by-step guide for getting the publisher and product names for various Windows apps.
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_**  
 Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.
@@ -209,7 +205,7 @@ Data type is Base64.
 Supported operations are Get, Add, Delete, and Replace.
 
 > [!NOTE]
-> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool) and added to the Applocker-CSP.
+> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)) command line tool) and added to the Applocker-CSP.
 
 <a href="" id="applocker-enterprisedataprotection"></a>**AppLocker/EnterpriseDataProtection**  
 Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
@@ -262,25 +258,6 @@ Data type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-## <a href="" id="productname"></a>Find publisher and product name of apps
-
-
-You can pair a Windows Phone (Windows 10 Mobile, version 1511) to your desktop using the Device Portal on the phone to get the various types of information, including publisher name and product name of apps installed on the phone. This procedure describes pairing your phone to your desktop using WiFi.
-
-If this procedure does not work for you, try the other methods for pairing described in [Device Portal for Mobile](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal-mobile).
-
-**To find Publisher and PackageFullName for apps installed on Windows 10 Mobile**
-
-1.  On your Windows Phone, go to **Settings**. Choose **Update & security**. Then choose **For developers**.
-2.  Choose **Developer mode**.
-3.  Turn on **Device discovery**.
-4.  Turn on **Device Portal** and keep **AuthenticationOn**.
-5.  Under the **Device Portal**, under **Connect using: WiFi**, copy the URL to your desktop browser to connect using WiFi.
-
-    If you get a certificate error, continue to the web page.
-
-    If you get an error about not reaching the web page, then you should try the other methods for pairing described in [Device Portal for Mobile](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal-mobile).
-
 6.  On your phone under **Device discovery**, tap **Pair**. You will get a code (case sensitive).
 7.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
 
@@ -293,11 +270,11 @@ If this procedure does not work for you, try the other methods for pairing descr
 
     ![device portal app manager](images/applocker-screenshot3.png)
 
-10. If you do not see the app that you want, look under **Installed apps**. Using the drop down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
+10. If you do not see the app that you want, look under **Installed apps**. Using the drop- down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
 
     ![app manager](images/applocker-screenshot2.png)
 
-The following table show the mapping of information to the AppLocker publisher rule field.
+The following table shows the mapping of information to the AppLocker publisher rule field.
 
 <table>
 <colgroup>
@@ -324,7 +301,7 @@ The following table show the mapping of information to the AppLocker publisher r
 <td><p>Version</p></td>
 <td><p>Version</p>
 <p>This can be used either in the HighSection or LowSection of the BinaryVersionRange.</p>
-<p>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.</p></td>
+<p>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version- independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.</p></td>
 </tr>
 </tbody>
 </table>
@@ -417,7 +394,7 @@ Result
 ## <a href="" id="settingssplashapps"></a>Settings apps that rely on splash apps
 
 
-When you create a list of allowed apps in Windows 10 Mobile, you must also include the subset of Settings apps that rely on splash apps in your list of allowed apps. These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps .
+These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps.
 
 The product name is first part of the PackageFullName followed by the version number.
 
@@ -566,7 +543,7 @@ The following list shows the apps that may be included in the inbox.
 <td>Microsoft.AccountsControl</td>
 </tr>
 <tr class="even">
-<td>Enterprise install app</td>
+<td>Enterprise installs app</td>
 <td>da52fa01-ac0f-479d-957f-bfe4595941cb</td>
 <td></td>
 </tr>
@@ -811,7 +788,7 @@ The following list shows the apps that may be included in the inbox.
 <td></td>
 </tr>
 <tr class="odd">
-<td>Sign-in for Windows 10 Holographic</td>
+<td>Sign in for Windows 10 Holographic</td>
 <td></td>
 <td>WebAuthBridgeInternetSso, WebAuthBridgeInternet, WebAuthBridgeIntranetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternet, WebAuthBrokerIntranetSso, SignIn</td>
 </tr>
@@ -1014,11 +991,6 @@ The following example disables the Mixed Reality Portal. In the example, the **I
     </SyncBody>
 </SyncML>
 ```
-
-The following example for Windows 10 Mobile denies all apps and allows the following apps:
-
--   [settings app that rely on splash apps](#settingssplashapps)
--   most of the [inbox apps](#inboxappsandcomponents), but not all.
 
 In this example, **MobileGroup0** is the node name. We recommend using a GUID for this node.
 
@@ -1476,7 +1448,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
 ```
 
 ## Example for Windows 10 Holographic for Business
-The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable to enable a working device, as well as Settings.
+The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable a working device, as well as Settings.
 
 ```xml
 <RuleCollection Type="Appx" EnforcementMode="Enabled">
@@ -1916,12 +1888,3 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
-
-
-
-
-
-
-
-

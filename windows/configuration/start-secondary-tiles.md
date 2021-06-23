@@ -6,8 +6,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.reviewer: 
 manager: dansimp
@@ -71,7 +71,7 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
     ```
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 
-    Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet does not append the file name extension, and the policy settings require the extension.
+    Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet does not append the file name extension, and the policy settings require the extension.
     
 3. If you’d like to change the image for a secondary tile to your own custom image, open the layout.xml file, and look for the images that the tile references.
    - For example, your layout.xml contains `Square150x150LogoUri="ms-appdata:///local/PinnedTiles/21581260870/hires.png" Wide310x150LogoUri="ms-appx:///"` 
@@ -89,7 +89,7 @@ You can apply the customized Start layout with images for secondary tiles by usi
 
 ### Using MDM
 
-In Microsoft Intune, you create a device restrictions policy to apply to device group. For other MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=623244). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
+In Microsoft Intune, you create a device restrictions policy to apply to device group. For other MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
 
 
 1.  In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
@@ -103,10 +103,10 @@ In Microsoft Intune, you create a device restrictions policy to apply to device 
 9. In **Start menu layout**, browse to and select your Start layout XML file.
 9. In **Pin websites to tiles in Start menu**, browse to and select your assets XML file.
 10. Select **OK** twice, and then select **Create**.
-11. [Assign the profile to a group](https://docs.microsoft.com/intune/device-profile-assign).
+11. [Assign the profile to a group](/intune/device-profile-assign).
 
 >[!NOTE]
->The device restrictions in Microsoft Intune include [other Start settings](https://docs.microsoft.com/intune/device-restrictions-windows-10#start) that you can also configure in your profile.
+>The device restrictions in Microsoft Intune include [other Start settings](/intune/device-restrictions-windows-10#start) that you can also configure in your profile.
 
 ### Using a provisioning package
 
@@ -211,4 +211,3 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)   
 
 
-    

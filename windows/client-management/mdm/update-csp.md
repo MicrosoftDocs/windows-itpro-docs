@@ -16,13 +16,13 @@ ms.date: 02/23/2018
 
 The Update configuration service provider enables IT administrators to manage and control the rollout of new updates.
 
-> [!Note]
-> The Update CSP functionality of 'AprrovedUpdates' is not recommended for managing desktop devices. To manage updates to desktop devices from Windows Update, see the [Policy CSP - Updates](policy-csp-update.md) documentation for the recommended policies. 
+> [!NOTE]
+> The Update CSP functionality of 'ApprovedUpdates' is not recommended for managing desktop devices. To manage updates to desktop devices from Windows Update, see the [Policy CSP - Updates](policy-csp-update.md) documentation for the recommended policies.
 
 The following shows the Update configuration service provider in tree format.
 
-```./Vendor/MSFT
-Update
+```
+./Vendor/MSFT/Update
 ----ApprovedUpdates
 --------Approved Update Guid
 ------------ApprovedTime
@@ -50,7 +50,8 @@ Update
 --------QualityUpdateStatus
 --------FeatureUpdateStatus
 ```
-<a href="" id="update"></a>**Update**
+
+<a href="" id="update"></a>**./Vendor/MSFT/Update**
 <p style="margin-left: 20px">The root node.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -70,10 +71,10 @@ Update
 
 <p style="margin-left: 20px">Supported operations are Get and Add.
 
-<a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/**<strong>*Approved Update Guid*</strong>
+<a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/_Approved Update Guid_**
 <p style="margin-left: 20px">Specifies the update GUID.
 
-<p style="margin-left: 20px">To auto-approve a class of updates, you can specify the <a href="https://go.microsoft.com/fwlink/p/?LinkId=526723" data-raw-source="[Update Classifications](https://go.microsoft.com/fwlink/p/?LinkId=526723)">Update Classifications</a> GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. There are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
+<p style="margin-left: 20px">To auto-approve a class of updates, you can specify the <a href="/previous-versions/windows/desktop/ff357803(v=vs.85)" data-raw-source="[Update Classifications](/previous-versions/windows/desktop/ff357803(v=vs.85))">Update Classifications</a> GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. These are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
 
 <p style="margin-left: 20px">Supported operations are Get and Add.
 
@@ -93,8 +94,8 @@ Update
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="failedupdates-failed-update-guid"></a>**FailedUpdates/**<strong>*Failed Update Guid*</strong>
-<p style="margin-left: 20px">Update identifier field of the UpdateIdentity GUID that represent an update that failed to download or install.
+<a href="" id="failedupdates-failed-update-guid"></a>**FailedUpdates/_Failed Update Guid_**
+<p style="margin-left: 20px">Update identifier field of the UpdateIdentity GUID that represents an update that failed to download or install.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -118,7 +119,7 @@ Update
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="installedupdates-installed-update-guid"></a>**InstalledUpdates/**<strong>*Installed Update Guid*</strong>
+<a href="" id="installedupdates-installed-update-guid"></a>**InstalledUpdates/_Installed Update Guid_**
 <p style="margin-left: 20px">UpdateIDs that represent the updates installed on a device.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -133,7 +134,7 @@ Update
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="installableupdates-installable-update-guid"></a>**InstallableUpdates/**<strong>*Installable Update Guid*</strong>
+<a href="" id="installableupdates-installable-update-guid"></a>**InstallableUpdates/_Installable Update Guid_**
 <p style="margin-left: 20px">Update identifiers that represent the updates applicable and not installed on a device.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -141,9 +142,9 @@ Update
 <a href="" id="installableupdates-installable-update-guid-type"></a>**InstallableUpdates/*Installable Update Guid*/Type**
 <p style="margin-left: 20px">The UpdateClassification value of the update. Valid values are:
 
--   0 - None
--   1 - Security
--   2 = Critical
+- 0 - None
+- 1 - Security
+- 2 - Critical
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -157,7 +158,7 @@ Update
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="pendingrebootupdates-pending-reboot-update-guid"></a>**PendingRebootUpdates/**<strong>*Pending Reboot Update Guid*</strong>
+<a href="" id="pendingrebootupdates-pending-reboot-update-guid"></a>**PendingRebootUpdates/_Pending Reboot Update Guid_**
 <p style="margin-left: 20px">Update identifiers for the pending reboot state.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -188,25 +189,24 @@ Added in Windows 10, version 1803. Node for the rollback operations.
 <a href="" id="rollback-qualityupdate"></a>**Rollback/QualityUpdate**
 Added in Windows 10, version 1803. Roll back latest Quality Update, if the machine meets the following conditions:
 
--  Condition 1: Device must be Windows Update for Business Connected
--  Condition 2: Device must be in a Paused State
--  Condition 3: Device must have the Latest Quality Update installed on the device (Current State)
+- Condition 1: Device must be Windows Update for Business Connected
+- Condition 2: Device must be in a Paused State
+- Condition 3: Device must have the Latest Quality Update installed on the device (Current State)
 
 If the conditions are not true, the device will not Roll Back the Latest Quality Update.
 
 <a href="" id="rollback-featureupdate"></a>**Rollback/FeatureUpdate**
 Added in Windows 10, version 1803. Roll Back Latest Feature Update, if the machine meets the following conditions:
 
--  Condition 1: Device must be Windows Update for Business Connected
--  Condition 2: Device must be in Paused State
--  Condition 3: Device must have the Latest Feature Update Installed on the device (Current State)
--  Condition 4: Machine should be within the uninstall period
+- Condition 1: Device must be Windows Update for Business Connected
+- Condition 2: Device must be in Paused State
+- Condition 3: Device must have the Latest Feature Update Installed on the device (Current State)
+- Condition 4: Machine should be within the uninstall period
 
-> [!Note]
-> This only works for Semi Annual Channel Targeted devices.
+> [!NOTE]
+> This only works for Semi-Annual Channel Targeted devices.
 
 If the conditions are not true, the device will not Roll Back the Latest Feature Update.
-
 
 <a href="" id="rollback-qualityupdatestatus"></a>**Rollback/QualityUpdateStatus**
 Added in Windows 10, version 1803. Returns the result of last RollBack QualityUpdate operation.
@@ -217,13 +217,3 @@ Added in Windows 10, version 1803. Returns the result of last RollBack FeatureUp
 ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

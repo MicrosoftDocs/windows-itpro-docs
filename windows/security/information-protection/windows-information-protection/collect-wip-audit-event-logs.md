@@ -32,7 +32,7 @@ Windows Information Protection (WIP) creates audit events in the following situa
 - If an app has custom audit events.
 
 ## Collect WIP audit logs by using the Reporting configuration service provider (CSP)
-Collect the WIP audit logs from your employee’s devices by following the guidance provided by the [Reporting configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/reporting-csp) documentation. This topic provides info about the actual audit events.
+Collect the WIP audit logs from your employee’s devices by following the guidance provided by the [Reporting configuration service provider (CSP)](/windows/client-management/mdm/reporting-csp) documentation. This topic provides info about the actual audit events.
 
 >[!Note]
 >The **Data** element in the response includes the requested audit logs in an XML-encoded format.
@@ -52,7 +52,7 @@ This table includes all available attributes/elements for the **Log** element. T
 |----------|-----------|------------|
 |ProviderType |String |This is always **EDPAudit**. |
 |LogType |String |Includes:<ul><li>**DataCopied.** Work data is copied or shared to a personal location.</li><li>**ProtectionRemoved.** WIP protection is removed from a Work-defined file.</li><li>**ApplicationGenerated.** A custom audit log provided by an app.</li></ul>|
-|TimeStamp |Int |Uses the [FILETIME structure](https://msdn.microsoft.com/library/windows/desktop/ms724284(v=vs.85).aspx) to represent the time that the event happened. |
+|TimeStamp |Int |Uses the [FILETIME structure](/windows/win32/api/minwinbase/ns-minwinbase-filetime) to represent the time that the event happened. |
 |Policy |String |How the work data was shared to the personal location:<ul><li>**CopyPaste.** Work data was pasted into a personal location or app.</li><li>**ProtectionRemoved.** Work data was changed to be unprotected.</li><li>**DragDrop.** Work data was dropped into a personal location or app.</li><li>**Share.** Work data was shared with a personal location or app.</li><li>**NULL.** Any other way work data could be made personal beyond the options above. For example, when a work file is opened using a personal application (also known as, temporary access).</li></ul> |
 |Justification |String |Not implemented. This will always be either blank or NULL.<br><br>**Note**<br>Reserved for future use to collect the user justification for changing from **Work** to **Personal**. |
 |Object |String |A description of the shared work data. For example, if an employee opens a work file by using a personal app, this would be the file path. |
@@ -165,7 +165,7 @@ Use Windows Event Forwarding to collect and aggregate your WIP audit events. You
 2. In the console tree under **Application and Services Logs\Microsoft\Windows**, click **EDP-Audit-Regular** and **EDP-Audit-TCB**.
 
 ## Collect WIP audit logs using Azure Monitor
-You can collect audit logs using Azure Monitor. See [Windows event log data sources in Azure Monitor.](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs)
+You can collect audit logs using Azure Monitor. See [Windows event log data sources in Azure Monitor.]()
 
 **To view the WIP events in Azure Monitor**
 1.  Use an existing or create a new Log Analytics workspace.
@@ -179,7 +179,7 @@ You can collect audit logs using Azure Monitor. See [Windows event log data sour
     >[!NOTE]
     >If using Windows Events Logs, the event log names can be found under Properties of the event in the Events folder (Application and Services Logs\Microsoft\Windows, click EDP-Audit-Regular and EDP-Audit-TCB).
 
-3.  Download Microsoft [Monitoring Agent](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-the-agent-using-dsc-in-azure-automation).
+3.  Download Microsoft [Monitoring Agent](/azure/azure-monitor/platform/agent-windows#install-the-agent-using-dsc-in-azure-automation).
 
 4.  To get MSI for Intune installation as stated in the Azure Monitor article, extract: MMASetup-.exe /c /t:
 Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary key. More information on Workspace ID and Primary key can be found in **Log Analytics** > **Advanced Settings**.
@@ -199,6 +199,6 @@ Event | where EventLog == "Microsoft-Windows-EDP-Audit-TCB/Admin"
 ```
 
 ## Additional resources
--   [How to deploy app via Intune](https://docs.microsoft.com/intune/apps-add)
--   [How to create Log workspace](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)
--   [How to use Microsoft Monitoring Agents for Windows](https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview)
+-   [How to deploy app via Intune](/intune/apps-add)
+-   [How to create Log workspace](/azure/azure-monitor/learn/quick-create-workspace)
+-   [How to use Microsoft Monitoring Agents for Windows](/azure/azure-monitor/platform/agents-overview)

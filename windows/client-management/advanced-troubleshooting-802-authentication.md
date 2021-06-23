@@ -7,7 +7,7 @@ keywords: advanced troubleshooting, 802.1X authentication, troubleshooting, auth
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: tracyp
 ms.topic: troubleshooting
@@ -33,13 +33,13 @@ See [Advanced troubleshooting 802.1X authentication data collection](data-collec
  
 ## Troubleshooting
 
-Viewing [NPS authentication status events](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735320(v%3dws.10)) in the Windows Security [event log](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc722404(v%3dws.11)) is one of the most useful troubleshooting methods to obtain information about failed authentications.
+Viewing [NPS authentication status events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735320(v%3dws.10)) in the Windows Security [event log](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc722404(v%3dws.11)) is one of the most useful troubleshooting methods to obtain information about failed authentications.
 
 NPS event log entries contain information about the connection attempt, including the name of the connection request policy that matched the connection attempt and the network policy that accepted or rejected the connection attempt. If you don't see both success and failure events, see the [NPS audit policy](#audit-policy) section later in this article.
 
-Check Windows Security Event log on the NPS Server for NPS events that correspond to rejected ([event ID 6273](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735399(v%3dws.10))) or accepted ([event ID 6272](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735388(v%3dws.10))) connection attempts.
+Check Windows Security Event log on the NPS Server for NPS events that correspond to rejected ([event ID 6273](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735399(v%3dws.10))) or accepted ([event ID 6272](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735388(v%3dws.10))) connection attempts.
  
-In the event message, scroll to the very bottom, and then check the [Reason Code](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd197570(v%3dws.10)) field and the text that's associated with it.
+In the event message, scroll to the very bottom, and then check the [Reason Code](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd197570(v%3dws.10)) field and the text that's associated with it.
  
    ![example of an audit failure](images/auditfailure.png)
    *Example: event ID 6273 (Audit Failure)*<br><br>
@@ -69,7 +69,7 @@ By default, this log isn't enabled. To enable this log, expand **Event Viewer (L
 ![screenshot of event viewer](images/capi.png)
  
 For information about how to analyze CAPI2 event logs, see
-[Troubleshooting PKI Problems on Windows Vista](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc749296%28v=ws.10%29).
+[Troubleshooting PKI Problems on Windows Vista](/previous-versions/windows/it-pro/windows-vista/cc749296%28v=ws.10%29).
 
 When troubleshooting complex 802.1X authentication issues, it's important to understand the 802.1X authentication process. Here's an example of wireless connection process with 802.1X authentication:
 
@@ -85,7 +85,7 @@ If you [collect a network packet capture](troubleshoot-tcpip-netmon.md) on both 
 ‎
 
 > [!NOTE]
-> If you have a wireless trace, you can also [view ETL files with network monitor](https://docs.microsoft.com/windows/desktop/ndf/using-network-monitor-to-view-etl-files) and apply the **ONEX_MicrosoftWindowsOneX** and **WLAN_MicrosoftWindowsWLANAutoConfig** Network Monitor filters. If you need to load the required [parser](https://blogs.technet.microsoft.com/netmon/2010/06/04/parser-profiles-in-network-monitor-3-4/), see the instructions under the **Help** menu in Network Monitor. Here's an example:
+> If you have a wireless trace, you can also [view ETL files with network monitor](/windows/desktop/ndf/using-network-monitor-to-view-etl-files) and apply the **ONEX_MicrosoftWindowsOneX** and **WLAN_MicrosoftWindowsWLANAutoConfig** Network Monitor filters. If you need to load the required [parser](/archive/blogs/netmon/parser-profiles-in-network-monitor-3-4), see the instructions under the **Help** menu in Network Monitor. Here's an example:
 
 ![ETL parse](images/etl.png) 
 
@@ -115,5 +115,5 @@ Even if audit policy appears to be fully enabled, it sometimes helps to disable 
 
 ## Additional references
 
-[Troubleshooting Windows Vista 802.11 Wireless Connections](https://technet.microsoft.com/library/cc766215%28v=ws.10%29.aspx)<br>
-[Troubleshooting Windows Vista Secure 802.3 Wired Connections](https://technet.microsoft.com/library/cc749352%28v=ws.10%29.aspx)
+[Troubleshooting Windows Vista 802.11 Wireless Connections](/previous-versions/windows/it-pro/windows-vista/cc766215(v=ws.10))<br>
+[Troubleshooting Windows Vista Secure 802.3 Wired Connections](/previous-versions/windows/it-pro/windows-vista/cc749352(v=ws.10))

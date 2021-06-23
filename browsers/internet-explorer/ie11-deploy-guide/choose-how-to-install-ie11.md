@@ -29,13 +29,10 @@ Before you install Internet Explorer 11, you should:
 
 -   **Choose how you'll deploy your installation package.** Your deployment method should be based on whether you're installing to computers already running Windows, or if you're deploying IE11 as part of a Windows installation.
 
-    -   **Existing computers running Windows.** Use System Center R2 2012 System Center 2012 R2 Configuration Manager, System Center Essentials 2010, Windows Server Updates Services (WSUS), or Microsoft Intune to deploy IE11. For more information about how to use these systems, see [System Center 2012 R2 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkID=276664), [System Center Essentials 2010](https://go.microsoft.com/fwlink/p/?LinkId=395200), [Windows Server Update Services](https://go.microsoft.com/fwlink/p/?LinkID=276790), and [Microsoft Intune Overview](https://www.microsoft.com/cloud-platform/microsoft-intune).
+    -   **Existing computers running Windows.** Use System Center R2 2012 System Center 2012 R2 Configuration Manager, System Center Essentials 2010, Windows Server Updates Services (WSUS), or Microsoft Intune to deploy IE11. For more information about how to use these systems, see [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682129(v=technet.10)), [System Center Essentials 2010](https://go.microsoft.com/fwlink/p/?LinkId=395200), [Windows Server Update Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345(v=ws.11)), and [Microsoft Intune Overview](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
-    -   **As part of a Windows deployment.** Update your Windows images to include IE11, and then add the update to your MDT deployment share or to your Windows image. For instructions about how to create and use Windows images, see [Create and Manage a Windows Image Using DISM](https://go.microsoft.com/fwlink/p/?LinkId=299408). For general information about deploying IE, see [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=331148), [Windows ADK Overview](https://go.microsoft.com/fwlink/p/?LinkId=276669).
-
- 
+    -   **As part of a Windows deployment.** Update your Windows images to include IE11, and then add the update to your MDT deployment share or to your Windows image. For instructions about how to create and use Windows images, see [Create and Manage a Windows Image Using DISM](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825251(v=win.10)). For general information about deploying IE, see [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt/), [Windows ADK Overview](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825486(v=win.10)).
 
  
 
-
-
+ 

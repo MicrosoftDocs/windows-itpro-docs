@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 03/02/2021
+ms.date: 03/24/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -19,8 +19,6 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## ADMX_FileRecovery policies  
-
 <dl>
   <dd>
     <a href="#admx-filerecovery-wdiscenarioexecutionpolicy">ADMX_FileRecovery/WdiScenarioExecutionPolicy</a>
@@ -68,24 +66,10 @@ manager: dansimp
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * Machine
-
 <hr/>
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting substitutes custom alert text in the disk diagnostic message shown to users when a disk reports a S.M.A.R.T. fault. 
-
-If you enable this policy setting, Windows displays custom alert text in the disk diagnostic message. The custom text may not exceed 512 characters. 
-
-If you disable or do not configure this policy setting, Windows displays the default alert text in the disk diagnostic message. 
-
-No reboots or service restarts are required for this policy setting to take effect: changes take effect immediately. 
-
-This policy setting only takes effect if the Disk Diagnostic scenario policy setting  is enabled or not configured and the Diagnostic Policy Service (DPS) is in the running state. When the service is stopped or disabled, diagnostic scenarios are not executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console. 
-
-> [!NOTE]
-> For Windows Server systems, this policy setting applies only if the Desktop Experience optional component is installed and the Remote Desktop Services role is not installed.
 
 > [!NOTE]
 > This policy setting applies to all sites in Trusted zones.
@@ -100,26 +84,14 @@ This policy setting only takes effect if the Disk Diagnostic scenario policy set
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disk Diagnostic: Configure execution level*
--   GP name: *WdiScenarioExecutionPolicy*
--   GP path: *System\Troubleshooting and Diagnostics\Disk Diagnostic*
 -   GP ADMX file name: *FileRecovery.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607
-- 2 - Available in Windows 10, version 1703
-- 3 - Available in Windows 10, version 1709
-- 4 - Available in Windows 10, version 1803
-- 5 - Available in Windows 10, version 1809
-- 6 - Available in Windows 10, version 1903
-- 7 - Available in Windows 10, version 1909
-- 8 - Available in Windows 10, version 2004
-- 9 - Available in Windows 10, version 20H2
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

@@ -96,7 +96,7 @@ The following table defines the supported combination of online and offline oper
  
 
 **Note**  
-It is possible to run the ScanState tool while the drive remains encrypted by suspending Windows BitLocker Drive Encryption before booting into WinPE. For more information, see [this Microsoft site](https://go.microsoft.com/fwlink/p/?LinkId=190314).
+It is possible to run the ScanState tool while the drive remains encrypted by suspending Windows BitLocker Drive Encryption before booting into WinPE. For more information, see [this Microsoft site](/previous-versions/windows/it-pro/windows-7/ee424315(v=ws.10)).
 
  
 
@@ -260,10 +260,4 @@ The following XML example illustrates some of the elements discussed earlier in 
 [Plan Your Migration](usmt-plan-your-migration.md)
 
  
-
- 
-
-
-
-
 

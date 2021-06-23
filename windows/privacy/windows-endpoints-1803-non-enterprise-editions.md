@@ -23,7 +23,7 @@ ms.reviewer:
 - Windows 10 Professional, version 1803
 - Windows 10 Education, version 1803
 
-In addition to the endpoints listed for [Windows 10 Enterprise](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints ), the following endpoints are available on other editions of Windows 10, version 1803.
+In addition to the endpoints listed for [Windows 10 Enterprise](./manage-windows-1803-endpoints.md), the following endpoints are available on other editions of Windows 10, version 1803.
 
 We used the following methodology to derive these network endpoints:
 
@@ -162,4 +162,4 @@ We used the following methodology to derive these network endpoints:
 | vip5.afdorigin-prod-ch02.afdogw.com	| HTTPS |	Used to serve office 365 experimentation traffic. |
 | watson.telemetry.microsoft.com/Telemetry.Request	| HTTPS |	Used by Windows Error Reporting. |
 | wd-prod-cp-us-west-3-fe.westus.cloudapp.azure.com	| HTTPS |	Azure front end traffic | 
-| www.bing.com/*	| HTTPS |	Used for updates for Cortana, apps, and Live Tiles. | 
+| www.bing.com/*	| HTTPS |	Used for updates for Cortana, apps, and Live Tiles. |

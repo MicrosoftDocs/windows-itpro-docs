@@ -497,7 +497,7 @@ Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, Wind
 
 -   Security
 
--   [VPN](https://go.microsoft.com/fwlink/p/?LinkId=623295) and enterprise Wi-Fi management
+-   [VPN](/windows/security/identity-protection/vpn/vpn-profile-options) and enterprise Wi-Fi management
 
 -   Certificate management
 
@@ -505,11 +505,11 @@ Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, Wind
 
 -   Consumer experiences, such as suggested apps in Start and app tiles from Microsoft dynamically inserted in the default Start menu
 
-Windows 10, version 1703, adds a number of [ADMX-backed policies to MDM](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-admx-backed).
+Windows 10, version 1703, adds a number of [ADMX-backed policies to MDM](./mdm/policy-configuration-service-provider.md).
 
 If you use Microsoft Intune for MDM, you can [configure custom policies](https://go.microsoft.com/fwlink/p/?LinkId=616316) to deploy Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings that can be used to control features on Windows 10. For a list of OMA-URI settings, see [Custom URI settings for Windows 10 devices](https://go.microsoft.com/fwlink/p/?LinkId=616317).
 
-No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=613264). For more information, see the [ActiveSync configuration service provider](https://go.microsoft.com/fwlink/p/?LinkId=618944) technical reference.
+No new [Exchange ActiveSync policies](/exchange/mobile-device-mailbox-policies-exchange-2013-help). For more information, see the [ActiveSync configuration service provider](./mdm/activesync-csp.md) technical reference.
 
 ## Related topics
 
@@ -519,10 +519,6 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 [Changes to Group Policy settings for Start in Windows 10](/windows/configuration/changes-to-start-policies-in-windows-10)
 
-[Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
 
 
  
-
-
-

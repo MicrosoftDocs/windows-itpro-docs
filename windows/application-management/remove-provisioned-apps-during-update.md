@@ -4,8 +4,8 @@ description: How to keep provisioned apps that were removed from your machine fr
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.author: dansimp
-author: msfttracyp
+ms.author: greglin
+author: greg-lindsay
 ms.date: 05/25/2018
 ms.reviewer: 
 manager: dansimp
@@ -21,12 +21,12 @@ When you update a computer running Windows 10, version 1703 or 1709, you might s
 >* This only applies to first-party apps that shipped with Windows 10. This doesn't apply to third-party apps, Microsoft Store apps, or LOB apps.
 >* This issue can occur whether you removed the app using `Remove-appxprovisionedpackage` or `Get-AppxPackage -allusers | Remove-AppxPackage -Allusers`.
 
-To remove a provisioned app, you need to remove the provisioning package. The apps might reappear if you [removed the packages](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage) in one of the following ways:
+To remove a provisioned app, you need to remove the provisioning package. The apps might reappear if you [removed the packages](/powershell/module/dism/remove-appxprovisionedpackage) in one of the following ways:
 
 * If you removed the packages while the wim file was mounted when the device was offline.
 * If you removed the packages by running a PowerShell cmdlet on the device while Windows was online. Although the apps won't appear for new users, you'll still see the apps for the user account you signed in as.
 
-When you [remove a provisioned app](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage), we create a registry key that tells Windows not to reinstall or update that app the next time Windows is updated. If the computer isn't online when you deprovision the app, then we don't create that registry key. (This behavior is fixed in Windows 10, version 1803. If you're running Windows 10, version 1709, apply the latest security update to fix it.)
+When you [remove a provisioned app](/powershell/module/dism/remove-appxprovisionedpackage), we create a registry key that tells Windows not to reinstall or update that app the next time Windows is updated. If the computer isn't online when you deprovision the app, then we don't create that registry key. (This behavior is fixed in Windows 10, version 1803. If you're running Windows 10, version 1709, apply the latest security update to fix it.)
 
 
 >[!NOTE]
@@ -170,6 +170,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Messaging_8wekyb3d8bbwe]
 ``` 
 
-[Get-AppxPackage](https://docs.microsoft.com/powershell/module/appx/get-appxpackage)
-[Get-AppxPackage -allusers](https://docs.microsoft.com/powershell/module/appx/get-appxpackage)
-[Remove-AppxPackage](https://docs.microsoft.com/powershell/module/appx/remove-appxpackage)
+[Get-AppxPackage](/powershell/module/appx/get-appxpackage)
+[Get-AppxPackage -allusers](/powershell/module/appx/get-appxpackage)
+[Remove-AppxPackage](/powershell/module/appx/remove-appxpackage)

@@ -48,7 +48,7 @@ For more information, see [Assign devices to servicing channels for Windows 10 u
 
 ## Staying up to date
 
-The process for keeping Windows 10 up to date involves deploying a feature update, at an appropriate time after its release. You can use various management and update tools such as Windows Update, Windows Update for Business, Windows Server Update Services, Microsoft Endpoint Configuration Manager, and non-Microsoft products) to help with this process. [Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-get-started), a free tool to streamline Windows upgrade projects, is another important tool to help.
+The process for keeping Windows 10 up to date involves deploying a feature update, at an appropriate time after its release. You can use various management and update tools such as Windows Update, Windows Update for Business, Windows Server Update Services, Microsoft Endpoint Configuration Manager, and non-Microsoft products) to help with this process. [Upgrade Readiness](/windows/deployment/upgrade/upgrade-readiness-get-started), a free tool to streamline Windows upgrade projects, is another important tool to help.
 
 Because app compatibility, both for desktop apps and web apps, is outstanding with Windows 10, extensive advanced testing isn’t required. Instead, only business-critical apps need to be tested, with the remaining apps validated through a series of pilot deployment rings. Once these pilot deployments have validated most apps, broad deployment can begin.
 
@@ -73,13 +73,5 @@ See [Build deployment rings for Windows 10 updates](waas-deployment-rings-window
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
+- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
 - [Manage device restarts after updates](waas-restart.md)
-
-
-
-
-
-
-
-

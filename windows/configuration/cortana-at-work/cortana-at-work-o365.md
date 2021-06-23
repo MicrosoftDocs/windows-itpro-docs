@@ -4,9 +4,9 @@ description: Learn how to connect Cortana to Office 365 so employees are notifie
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.date: 10/05/2017
 ms.reviewer: 
 manager: dansimp
@@ -29,9 +29,9 @@ There are a few things to be aware of before you start using Cortana in Windows 
 
 - **Office 365 Trust Center.** Cortana in Windows 10, version 1909 and earlier, isn&#39;t a service governed by the [Online Services Terms](https://www.microsoft.com/en-us/licensing/product-licensing/products). [Learn more about how Cortana in Windows 10, versions 1909 and earlier, treats your data](https://support.microsoft.com/en-us/help/4468233/cortana-and-privacy-microsoft-privacy).
 
-- Windows Information Protection (WIP). If you want to secure the calendar, email, and contact info provided to Cortana on a device, you can use WIP. For more info about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip). If you decide to use WIP, you must also have a management solution. This can be Microsoft Intune, Microsoft Endpoint Manager (version 1606 or later), or your current company-wide 3rd party mobile device management (MDM) solution.
+- Windows Information Protection (WIP). If you want to secure the calendar, email, and contact info provided to Cortana on a device, you can use WIP. For more info about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip). If you decide to use WIP, you must also have a management solution. This can be Microsoft Intune, Microsoft Endpoint Manager (version 1606 or later), or your current company-wide 3rd party mobile device management (MDM) solution.
 
-- **Troubleshooting tips.** If you run into issues, check out these [troubleshooting tips](https://go.microsoft.com/fwlink/p/?LinkId=620763).
+- **Troubleshooting tips.** If you run into issues, check out these [troubleshooting tips](/office365/troubleshoot/miscellaneous/issues-in-cortana).
 
 ### Turn on Cortana enterprise services on employees' devices
 Your employees must connect Cortana to their Microsoft 365 account to be able to use skills like email and calendar.

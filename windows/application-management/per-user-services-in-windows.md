@@ -5,8 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: dansimp
-author: msfttracyp
+ms.author: greglin
+author: greg-lindsay
 ms.date: 09/14/2017
 ms.reviewer: 
 manager: dansimp
@@ -27,7 +27,7 @@ You can set the template service's **Startup Type** to **Disabled** to create pe
 > Carefully test any changes to the template service's Startup Type before deploying to a production environment. 
 
 Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates. 
-For more information about disabling system services for Windows Server, see [Guidance on disabling system services on Windows Server with Desktop Experience](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server).
+For more information about disabling system services for Windows Server, see [Guidance on disabling system services on Windows Server with Desktop Experience](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server).
 
 ## Per-user services
 
@@ -157,14 +157,14 @@ If you're using custom images to deploy Windows, you can modify the Startup Type
 
 You can create a script to change the Startup Type for the per-user services. Then use Group Policy or another management solution to deploy the script in your environment.
 
-Sample script using [sc.exe](https://technet.microsoft.com/library/cc990290%28v=ws.11%29.aspx?f=255&MSPPError=-2147217396):
+Sample script using [sc.exe](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc990290(v=ws.11)?f=255&MSPPError=-2147217396):
 
 ```
 sc.exe configure <service name> start= disabled
 ```
 Note that the space after "=" is intentional.
 
-Sample script using the [Set-Service PowerShell cmdlet](https://technet.microsoft.com/library/ee176963.aspx):
+Sample script using the [Set-Service PowerShell cmdlet](/previous-versions/windows/it-pro/windows-powershell-1.0/ee176963(v=technet.10)):
 
 ```powershell
 Set-Service <service name> -StartupType Disabled

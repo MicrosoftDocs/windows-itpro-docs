@@ -1347,7 +1347,7 @@ Members of the DnsUpdateProxy group are DNS clients. They are permitted to perfo
 
 However, to protect against unsecured records or to permit members of the DnsUpdateProxy group to register records in zones that allow only secured dynamic updates, you must create a dedicated user account and configure DHCP servers to perform DNS dynamic updates by using the credentials of this account (user name, password, and domain). Multiple DHCP servers can use the credentials of one dedicated user account. This group exists only if the DNS server role is or was once installed on a domain controller in the domain.
 
-For information, see [DNS Record Ownership and the DnsUpdateProxy Group](https://technet.microsoft.com/library/dd334715.aspx).
+For information, see [DNS Record Ownership and the DnsUpdateProxy Group](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd334715(v=ws.10)).
 
 This security group has not changed since Windows Server 2008.
 
@@ -1408,7 +1408,7 @@ This security group has not changed since Windows Server 2008.
 
 Members of DNSAdmins group have access to network DNS information. The default permissions are as follows: Allow: Read, Write, Create All Child objects, Delete Child objects, Special Permissions. This group exists only if the DNS server role is or was once installed on a domain controller in the domain.
 
-For more information about security and DNS, see [DNSSEC in Windows Server 2012](https://technet.microsoft.com/library/dn593694(v=ws.11).aspx).
+For more information about security and DNS, see [DNSSEC in Windows Server 2012](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn593694(v=ws.11)).
 
 This security group has not changed since Windows Server 2008.
 
@@ -1853,7 +1853,7 @@ The Enterprise Key Admins group was introduced in Windows Server 2016.
 | Default container | CN=Users, DC=&lt;domain&gt;, DC= |
 | Default members | None |
 | Default member of | None |
-| Protected by ADMINSDHOLDER? | No |
+| Protected by ADMINSDHOLDER? | Yes |
 | Safe to move out of default container? | Yes |
 | Safe to delegate management of this group to non-Service admins? | No |
 | Default User Rights | None |
@@ -1865,7 +1865,7 @@ Members of this group are Read-Only Domain Controllers in the enterprise. Except
 
 Read-only domain controllers address some of the issues that are commonly found in branch offices. These locations might not have a domain controller. Or, they might have a writable domain controller, but not the physical security, network bandwidth, or local expertise to support it.
 
-For more information, see [What Is an RODC?](https://technet.microsoft.com/library/cc771030.aspx).
+For more information, see [What Is an RODC?](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771030(v=ws.10)).
 
 The Enterprise Read-Only Domain Controllers group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -1989,7 +1989,7 @@ This security group has not changed since Windows Server 2008.
 
 This group is authorized to create, edit, or delete Group Policy Objects in the domain. By default, the only member of the group is Administrator.
 
-For information about other features you can use with this security group, see [Group Policy Overview](https://technet.microsoft.com/library/hh831791.aspx).
+For information about other features you can use with this security group, see [Group Policy Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831791(v=ws.11)).
 
 The Group Policy Creator Owners group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -2188,7 +2188,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 
 IIS\_IUSRS is a built-in group that is used by Internet Information Services beginning with IIS 7.0. A built-in account and group are guaranteed by the operating system to always have a unique SID. IIS 7.0 replaces the IUSR\_MachineName account and the IIS\_WPG group with the IIS\_IUSRS group to ensure that the actual names that are used by the new account and group will never be localized. For example, regardless of the language of the Windows operating system that you install, the IIS account name will always be IUSR, and the group name will be IIS\_IUSRS.
 
-For more information, see [Understanding Built-In User and Group Accounts in IIS 7](https://docs.microsoft.com/iis/get-started/planning-for-security/understanding-built-in-user-and-group-accounts-in-iis).
+For more information, see [Understanding Built-In User and Group Accounts in IIS 7](/iis/get-started/planning-for-security/understanding-built-in-user-and-group-accounts-in-iis).
 
 This security group has not changed since Windows Server 2008.
 
@@ -2256,7 +2256,7 @@ To make this determination, the Windows security system computes a trust path be
 
  
 
-For more information, see [How Domain and Forest Trusts Work: Domain and Forest Trusts](https://technet.microsoft.com/library/f5c70774-25cd-4481-8b7a-3d65c86e69b1).
+For more information, see [How Domain and Forest Trusts Work: Domain and Forest Trusts](/previous-versions/windows/it-pro/windows-server-2003/cc773178(v=ws.10)).
 
 The Incoming Forest Trust Builders group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -2331,7 +2331,7 @@ The Key Admins group applies to versions of the Windows Server operating system 
 | Default container | CN=Users, DC=&lt;domain&gt;, DC= |
 | Default members | None |
 | Default member of | None |
-| Protected by ADMINSDHOLDER? | No |
+| Protected by ADMINSDHOLDER? | Yes |
 | Safe to move out of default container? | Yes |
 | Safe to delegate management of this group to non-Service admins? | No |
 | Default User Rights | None |
@@ -2658,7 +2658,7 @@ This group has no default members. Because members of this group can load and un
 
 The Print Operators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-This security group has not changed since Windows Server 2008. However, in Windows Server 2008 R2, functionality was added to manage print administration. For more information, see [Assign Delegated Print Administrator and Printer Permission Settings in Windows Server 2012](https://technet.microsoft.com/library/jj190062(v=ws.11).aspx).
+This security group has not changed since Windows Server 2008. However, in Windows Server 2008 R2, functionality was added to manage print administration. For more information, see [Assign Delegated Print Administrator and Printer Permission Settings in Windows Server 2012](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj190062(v=ws.11)).
 
 <table>
 <colgroup>
@@ -2735,7 +2735,7 @@ Depending on the account’s domain functional level, members of the Protected U
 
 The Protected Users group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-This group was introduced in Windows Server 2012 R2. For more information about how this group works, see [Protected Users Security Group](https://technet.microsoft.com/library/dn466518.aspx).
+This group was introduced in Windows Server 2012 R2. For more information about how this group works, see [Protected Users Security Group](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn466518(v=ws.11)).
 
 The following table specifies the properties of the Protected Users group.
 
@@ -2857,7 +2857,7 @@ This security group has not changed since Windows Server 2008.
 
 Servers that are members in the RDS Endpoint Servers group can run virtual machines and host sessions where user RemoteApp programs and personal virtual desktops run. This group needs to be populated on servers running RD Connection Broker. Session Host servers and RD Virtualization Host servers used in the deployment need to be in this group.
 
-For information about Remote Desktop Services, see [Host desktops and apps in Remote Desktop Services](https://technet.microsoft.com/library/mt718499.aspx).
+For information about Remote Desktop Services, see [Host desktops and apps in Remote Desktop Services](/windows-server/remote/remote-desktop-services/welcome-to-rds).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -2977,7 +2977,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 
 Servers in the RDS Remote Access Servers group provide users with access to RemoteApp programs and personal virtual desktops. In Internet facing deployments, these servers are typically deployed in an edge network. This group needs to be populated on servers running RD Connection Broker. RD Gateway servers and RD Web Access servers that are used in the deployment need to be in this group.
 
-For more information, see [Host desktops and apps in Remote Desktop Services](https://technet.microsoft.com/library/mt718499.aspx).
+For more information, see [Host desktops and apps in Remote Desktop Services](/windows-server/remote/remote-desktop-services/welcome-to-rds).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -3050,7 +3050,7 @@ Because administration of a Read-only domain controller can be delegated to a do
 
 -   Read-only Domain Name System (DNS)
 
-For information about deploying a Read-only domain controller, see [Understanding Planning and Deployment for Read-Only Domain Controllers](https://technet.microsoft.com/library/cc754719(v=ws.10).aspx).
+For information about deploying a Read-only domain controller, see [Understanding Planning and Deployment for Read-Only Domain Controllers](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754719(v=ws.10)).
 
 This security group was introduced in Windows Server 2008, and it has not changed in subsequent versions.
 
@@ -3174,7 +3174,7 @@ Members of the Remote Management Users group can access WMI resources over manag
 
 The Remote Management Users group is generally used to allow users to manage servers through the Server Manager console, whereas the [WinRMRemoteWMIUsers\_](#bkmk-winrmremotewmiusers-) group is allows remotely running Windows PowerShell commands.
 
-For more information, see [What's New in MI?](https://msdn.microsoft.com/library/jj819828(v=vs.85).aspx) and [About WMI](https://msdn.microsoft.com/library/aa384642.aspx).
+For more information, see [What's New in MI?](/previous-versions/windows/desktop/wmi_v2/what-s-new-in-mi) and [About WMI](/windows/win32/wmisdk/about-wmi).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -3240,8 +3240,8 @@ Computers that are members of the Replicator group support file replication in a
 
 However, Windows Server 2008 R2 servers cannot use FRS to replicate the contents of any replica set apart from the SYSVOL shared resource. The DFS Replication service is a replacement for FRS, and it can be used to replicate the contents of a SYSVOL shared resource, DFS folders, and other custom (non-SYSVOL) data. You should migrate all non-SYSVOL FRS replica sets to DFS Replication. For more information, see:
 
-- [File Replication Service (FRS) Is Deprecated in Windows Server 2008 R2 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff384840.aspx)
-- [DFS Namespaces and DFS Replication Overview](https://technet.microsoft.com/library/jj127250(v=ws.11).aspx)
+- [File Replication Service (FRS) Is Deprecated in Windows Server 2008 R2 (Windows)](/windows/win32/win7appqual/file-replication-service--frs--is-deprecated-in-windows-server-2008-r2)
+- [DFS Namespaces and DFS Replication Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
 
 This security group has not changed since Windows Server 2008.
 
@@ -3306,7 +3306,7 @@ The group is authorized to make schema changes in Active Directory. By default,
 
 The membership of this group can be modified by any of the service administrator groups in the root domain. This is considered a service administrator account because its members can modify the schema, which governs the structure and content of the entire directory.
 
-For more information, see [What Is the Active Directory Schema?: Active Directory](https://technet.microsoft.com/library/cc784826.aspx).
+For more information, see [What Is the Active Directory Schema?: Active Directory](/previous-versions/windows/it-pro/windows-server-2003/cc784826(v=ws.10)).
 
 The Schema Admins group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -3477,7 +3477,7 @@ The System Managed Accounts group applies to versions of the Windows Server oper
 
 Members of the Terminal Server License Servers group can update user accounts in Active Directory with information about license issuance. This is used to track and report TS Per User CAL usage. A TS Per User CAL gives one user the right to access a Terminal Server from an unlimited number of client computers or devices. This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
-For more information about this security group, see [Terminal Services License Server Security Group Configuration](https://technet.microsoft.com/library/cc775331.aspx).
+For more information about this security group, see [Terminal Services License Server Security Group Configuration](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc775331(v=ws.10)).
 
 The Terminal Server License Servers group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 

@@ -1,7 +1,7 @@
 ---
 title: About App-V Reporting (Windows 10)
 description: Learn how the App-V reporting feature collects information about computers running the App-V client and virtual application package usage.
-author: lomayor
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/16/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # About App-V reporting
@@ -194,7 +194,7 @@ You can also use the **Send-AppVClientReport** cmdlet to manually collect data. 
 
 To retrieve report information and create reports using App-V you must use one of the following methods:
 
-* Microsoft SQL Server Reporting Services (SSRS)—Microsoft SSRS is available with Microsoft SQL Server. SSRS is not installed when you install the App-V reporting server. It must be deployed separately to generate the associated reports. For more information, see the [What is SQL Server Reporting Services (SSRS)?](https://docs.microsoft.com/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports) article.
+* Microsoft SQL Server Reporting Services (SSRS)—Microsoft SSRS is available with Microsoft SQL Server. SSRS is not installed when you install the App-V reporting server. It must be deployed separately to generate the associated reports. For more information, see the [What is SQL Server Reporting Services (SSRS)?](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports) article.
 
 * Scripting—You can generate reports by scripting directly against the App-V reporting database. For example:
 
@@ -202,7 +202,7 @@ To retrieve report information and create reports using App-V you must use one o
 
     **spProcessClientReport** is scheduled to run at midnight or 12:00 AM.
 
-    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. Make sure the Microsoft SQL Server Agent is set to **AutoStart**. For more information, see [Autostart SQL Server Agent (SQL Server Management Studio)](https://docs.microsoft.com/sql/ssms/agent/autostart-sql-server-agent-sql-server-management-studio).
+    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. Make sure the Microsoft SQL Server Agent is set to **AutoStart**. For more information, see [Autostart SQL Server Agent (SQL Server Management Studio)](/sql/ssms/agent/autostart-sql-server-agent-sql-server-management-studio).
 
     The stored procedure is also created when you use the App-V database scripts.
 

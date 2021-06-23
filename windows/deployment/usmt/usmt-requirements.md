@@ -91,11 +91,11 @@ You can migrate a 32-bit operating system to a 64-bit operating system. However,
 USMT does not support any of the Windows Server® operating systems, Windows 2000, Windows XP, or any of the starter editions for Windows Vista or Windows 7.
 
 USMT for Windows 10 should not be used for migrating from Windows 7 to Windows 8.1. It is meant to migrate to Windows 10.
-For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) 4.0 User’s Guide](https://go.microsoft.com/fwlink/p/?LinkId=246564). 
+For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) 4.0 User’s Guide](/previous-versions/windows/server/dd560801(v=ws.10)). 
 
 ## Windows PE
 
--   **Must use latest version of Window PE.** For example, to migrate to Windows 10, you'll need Windows PE 5.1. For more info, see [What's New in Windows PE](https://msdn.microsoft.com/library/windows/hardware/dn938350.aspx).
+-   **Must use latest version of Window PE.** For example, to migrate to Windows 10, you'll need Windows PE 5.1. For more info, see [What's New in Windows PE](/windows-hardware/manufacture/desktop/whats-new-in-windows-pe-s14).
 
 ## Credentials
 
@@ -153,10 +153,4 @@ This documentation assumes that IT professionals using USMT understand command-l
 [User State Migration Tool (USMT) Overview Topics](usmt-topics.md)<BR>
 
  
-
- 
-
-
-
-
 

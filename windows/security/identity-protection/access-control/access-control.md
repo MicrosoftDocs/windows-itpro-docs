@@ -101,16 +101,16 @@ The permissions attached to an object depend on the type of object. For example,
 
 When you set permissions, you specify the level of access for groups and users. For example, you can let one user read the contents of a file, let another user make changes to the file, and prevent all other users from accessing the file. You can set similar permissions on printers so that certain users can configure the printer and other users can only print.
 
-When you need to change the permissions on a file, you can run Windows Explorer, right-click the file name, and click **Properties**. On the **Security** tab, you can change permissions on the file. For more information, see [Managing Permissions](https://technet.microsoft.com/library/cc770962.aspx).
+When you need to change the permissions on a file, you can run Windows Explorer, right-click the file name, and click **Properties**. On the **Security** tab, you can change permissions on the file. For more information, see [Managing Permissions](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770962(v=ws.11)).
 
 **Note**  
-Another kind of permissions, called share permissions, is set on the Sharing tab of a folder's **Properties** page or by using the Shared Folder Wizard. For more information see [Share and NTFS Permissions on a File Server](https://technet.microsoft.com/library/cc754178.aspx).
+Another kind of permissions, called share permissions, is set on the Sharing tab of a folder's **Properties** page or by using the Shared Folder Wizard. For more information see [Share and NTFS Permissions on a File Server](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754178(v=ws.11)).
 
  
 
 ### Ownership of objects
 
-An owner is assigned to an object when that object is created. By default, the owner is the creator of the object. No matter what permissions are set on an object, the owner of the object can always change the permissions. For more information, see [Manage Object Ownership](https://technet.microsoft.com/library/cc732983.aspx).
+An owner is assigned to an object when that object is created. By default, the owner is the creator of the object. No matter what permissions are set on an object, the owner of the object can always change the permissions. For more information, see [Manage Object Ownership](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732983(v=ws.11)).
 
 ### Inheritance of permissions
 
@@ -134,13 +134,8 @@ For more information about auditing, see [Security Auditing Overview](/windows/d
 
 ## See also
 
--   For more information about access control and authorization, see [Access Control and Authorization Overview](https://technet.microsoft.com/library/jj134043(v=ws.11).aspx).
+-   For more information about access control and authorization, see [Access Control and Authorization Overview](/previous-versions/windows/it-pro/windows-8.1-and-8/jj134043(v=ws.11)).
 
 
  
-
- 
-
-
-
 
