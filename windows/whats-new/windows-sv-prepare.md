@@ -26,7 +26,7 @@ After you evaluate your hardware to see if it meets [requirements](windows-sv-re
 
 ## Infrastructure and tools
 
-The tools that you use for core workloads during Windows 10 deployments can still be leveraged for Windows Sun Valley. A few nuanced differences are described below. 
+The tools that you use for core workloads during Windows 10 deployments can still be used for Windows Sun Valley. A few nuanced differences are described below. 
 
   > [!IMPORTANT]
   > Be sure to check with the providers of any non-Microsoft solutions that you use. Verify compatibility of these tools with Windows Sun Valley, particularly if they provide security or data loss prevention capabilities. 
@@ -45,7 +45,7 @@ The tools that you use for core workloads during Windows 10 deployments can stil
 
 #### Cloud-based solutions
 
-- If you use Windows Update for Business Group Policy or Configuration Service Provider (CSP) policies, you will need to leverage the **Target Version** capability rather than feature update deferrals to upgrade from Windows 10 to Windows Sun Valley. Feature Update deferrals are great to move to newer versions of your current product (for example, Windows 10, version 20H2 to 21H1), but do not enable you to move between products (Windows 10 to Windows Sun Valley). 
+- If you use Windows Update for Business Group Policy or Configuration Service Provider (CSP) policies, you will need to use the **Target Version** capability rather than feature update deferrals to upgrade from Windows 10 to Windows Sun Valley. Feature Update deferrals are great to move to newer versions of your current product (for example, Windows 10, version 20H2 to 21H1), but do not enable you to move between products (Windows 10 to Windows Sun Valley). 
 - Quality update deferrals will continue to work the same across both Windows 10 and Windows Sun Valley. This is true regardless of which management tool you use to configure Windows Update for Business policies.
 - If you use Microsoft Intune and have a Microsoft 365 E3 license, you will be able to use **Feature Update Deployments** to easily update devices from one release of Windows 10 to another, or to upgrade Windows 10 devices to Windows Sun Valley. You can also continue using the same update experience controls to manage Windows 10 and Windows Sun Valley. 
 
