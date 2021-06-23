@@ -574,7 +574,7 @@ Valid values are:
 - 3 - Current Channel (Staged)
 - 4 - Current Channel (Broad)
 
-<a href="" id="configuration-supportloglocation"></a>**Configuration/DefinitionUpdatesChannel** 
+<a href="" id="configuration-supportloglocation"></a>**Configuration/SignaturesUpdatesChannel** 
 
 Enable this policy to specify when devices receive daily Microsoft Defender definition updates during the daily gradual rollout.
 
