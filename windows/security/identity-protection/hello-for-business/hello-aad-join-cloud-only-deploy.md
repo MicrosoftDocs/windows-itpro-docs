@@ -74,20 +74,20 @@ Because these systems are Azure AD Joined only, and not domain joined, these set
 
 Here are the registry settings an Intune policy would set.
 
-Intune Device Policy: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies**
+Intune Device Policy: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`**
 
 To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
 These registry settings are pushed from Intune for user policies for your reference.
 
-- Intune User Policy: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\UserSid\Policies**
+- Intune User Policy: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\UserSid\Policies`**
 - DWORD: **UsePassportForWork**
 - Value = **0** for Disable, or Value = **1** for Enable
 
 For your reference, these registry settings can be applied from Local or Group Policies.
 
-- Local/GPO User Policy: **HKEY_USERS\UserSID\SOFTWARE\Policies\Microsoft\PassportForWork**
-- Local/GPO Device Policy: **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork**
+- Local/GPO User Policy: **`HKEY_USERS\UserSID\SOFTWARE\Policies\Microsoft\PassportForWork`**
+- Local/GPO Device Policy: **`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork`**
 - DWORD: **Enabled**
 - Value = **0** for Disable or Value = **1** for Enable
 
