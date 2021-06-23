@@ -1,6 +1,6 @@
 ---
 title: Language Pack Management  CSP
-description: Language Pack Management CSP allows a direct way to provision language packs remotely in Windows 10 and Windows 10 X.
+description: Language Pack Management CSP allows a direct way to provision language packs remotely in Windows 10.
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -8,17 +8,16 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nimishasatapathy
-ms.date: 03/12/2021
+ms.date: 06/22/2021
 ---
 
 # Language Pack Management CSP
 
 
-Language Pack Management CSP allows a direct way to provision language packs remotely in Windows 10 and Windows 10 X. A separate CSP exists to allow provisioning of optional FODs (Handwriting recognition, Text-to-speech etc.) associated with a language. MDMs like Intune can use management commands remotely to devices to configure language related settings.
-
+Language Pack Management CSP allows a direct way to provision language packs remotely in Windows 10. A separate CSP exists to allow provisioning of optional Features On Demand (FOD) which include handwriting recognition, text-to-speech, etc. associated with a language. device management tools like Intune can use management commands remotely to devices to configure language related settings.
 
 Device context
-1. Enumerate installed languages with GET command on the "InstalledLanguges" node
+1. Enumerate installed languages with GET command on the "InstalledLanguges" node:
 
 Sample command
 **GET./Device/Vendor/MSFT/LanguagePackManagement/InstalledLanguages**
@@ -30,10 +29,11 @@ The nodes under “InstalledLanguages” are the language tags of the installed 
 2. Install language pack features with EXECUTE command on the "StartInstall" node of the language
 
 Sample command
+
 **ADD./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/**
 **EXECUTE./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/StartInstallation**
 
-The installation is an asynchronous operation. IT admin can query the ‘Status’ node using 
+The installation is an asynchronous operation. IT admin can query the ‘Status’ node by using the following commands: 
 
 **GET./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/Status**
 **GET./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/ErrorCode**
