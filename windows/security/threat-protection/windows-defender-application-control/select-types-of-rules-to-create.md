@@ -71,6 +71,17 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **18 Disabled:Runtime FilePath Rule Protection** | This option disables the default runtime check that only allows FilePath rules for paths that are only writable by an administrator. NOTE: This option is only supported on Windows 10, version 1903, and above. |
 | **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries. NOTE: This option is only supported on Windows 10, version 1803, and above. |
 
+The following options are valid for supplemental policies. However, option 5 is not implemented as it is reserved for future work, and option 7 is not  supported.
+
+| Rule option | Description |
+|------------ | ----------- |
+| 5 | Enabled: Inherit Default Policy |
+| **6** | **Enabled: Unsigned System Integrity Policy** |
+| 7 | Allowed: Debug Policy Augmented |
+| **13** | **Enabled: Managed Installer** |
+| **14** | **Enabled: Intelligent Security Graph Authorization** |
+| **18** | **Disabled: Runtime FilePath Rule Protection** |
+
 ## Windows Defender Application Control file rule levels
 
 File rule levels allow administrators to specify the level at which they want to trust their applications. This level of trust could be as granular as the hash of each binary or as general as a CA certificate. You specify file rule levels when using WDAC PowerShell cmdlets to create and modify policies.
@@ -98,7 +109,8 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 > When you create WDAC policies with [New-CIPolicy](/powershell/module/configci/new-cipolicy), you can specify a primary file rule level by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
 
 > [!NOTE]
-> WDAC only supports signer rules for RSA certificate signing keys with a maximum of 4096 bits.
+> - WDAC only supports signer rules for RSA certificate signing keys with a maximum of 4096 bits.
+> - The code uses CN for the CertSubject and CertIssuer fields in the policy. You can use the inbox certutil to look at the underlying format to ensure UTF-8 is not being used for the CN. For example, you can use printable string, IA5, or BMP.
 
 ## Example of file rule levels in use
 
@@ -125,6 +137,9 @@ When generating filepath rules using [New-CIPolicy](/powershell/module/configci/
 Wildcards can be used at the beginning or end of a path rule; only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. `C:\*` would include `C:\foo\*` ). Wildcards placed at the beginning of a path will allow the exact specified filename under any path (ex. `*\bar.exe` would allow `C:\bar.exe` and `C:\foo\bar.exe`). Wildcards in the middle of a path are not supported (ex. `C:\*\foo.exe`). Without a wildcard, the rule will allow only a specific file (ex. `C:\foo\bar.exe`).
 
 You can also use the following macros when the exact volume may vary: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`.
+
+> [!NOTE]
+> For others to better understand the WDAC policies that has been deployed, we recommend maintaining separate ALLOW and DENY policies on Windows 10, version 1903 and later.
 
 ## More information about hashes
 
