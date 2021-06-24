@@ -126,10 +126,6 @@ manager: dansimp
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
@@ -195,10 +191,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
 <tr>
@@ -314,10 +306,6 @@ The following list shows the supported values:
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
@@ -387,10 +375,6 @@ The following list shows the supported values:
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
@@ -444,10 +428,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
@@ -509,10 +489,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 <tr>
@@ -588,10 +564,6 @@ To verify if System/AllowFontProviders is set to true:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
@@ -687,10 +659,6 @@ If you disable this policy setting, devices may not appear in Microsoft Managed 
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
@@ -744,10 +712,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
@@ -880,10 +844,6 @@ ADMX Info:
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
@@ -955,10 +915,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
@@ -1040,10 +996,6 @@ If you disable or do not configure this policy setting, devices enrolled to the 
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
@@ -1113,10 +1065,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
 <tr>
@@ -1190,10 +1138,6 @@ ADMX Info:
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
@@ -1254,10 +1198,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
 <tr>
@@ -1329,10 +1269,6 @@ The following list shows the supported values:
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
@@ -1397,10 +1333,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
 <tr>
@@ -1471,10 +1403,6 @@ ADMX Info:
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
@@ -1528,10 +1456,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 <tr>
@@ -1613,10 +1537,6 @@ To validate on Desktop, do the following:
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
@@ -1689,10 +1609,6 @@ ADMX Info:
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
@@ -1744,10 +1660,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 <tr>
@@ -1821,10 +1733,6 @@ ADMX Info:
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
     <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
@@ -1880,10 +1788,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
 <tr>
