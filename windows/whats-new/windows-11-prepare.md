@@ -31,7 +31,7 @@ The tools that you use for core workloads during Windows 10 deployments can stil
   > [!IMPORTANT]
   > Be sure to check with the providers of any non-Microsoft solutions that you use. Verify compatibility of these tools with Windows 11, particularly if they provide security or data loss prevention capabilities. 
 
-#### On-premise solutions
+#### On-premises solutions
 
 - If you use Windows Server Update Service (WSUS), you will need to sync the new **Windows 11** product category. After you sync the product category, you will see Windows 11 offered as an option. If you would like to validate Windows 11 prior to release, you can sync the **Windows Insider Pre-release** category as well.
 
@@ -59,7 +59,7 @@ The following are some common use cases and the corresponding Microsoft Endpoint
 - **Configure rules and control settings for users, apps, and devices**: When you enroll devices in [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), administrators have full control over apps, settings, features, and security for both Windows 11 and Windows 10. You can also use app protection policies to require multi-factor authentication (MFA) for specific apps. 
 - **Streamline device management for frontline, remote, and onsite workers**: Introduced with Windows 10, [cloud configuration](/mem/intune/fundamentals/cloud-configuration) is a standard, easy-to-manage, device configuration that is cloud-optimized for users with specific workflow needs. It can be deployed to devices running the Pro, Enterprise, and Education editions of Windows 11 by using Microsoft Endpoint Manager. 
 
-If you are exclusively using an on-premise device management solution (for example, Configuration Manager), you can still use the [cloud management gateway](/mem/configmgr/core/clients/manage/cmg/overview), enable [tenant attach](/mem/configmgr/tenant-attach/device-sync-actions), or enable [co-management](/mem/configmgr/comanage/overview) with Microsoft Intune. These solutions can make it easier to keep devices secure and up-to-date. 
+If you are exclusively using an on-premises device management solution (for example, Configuration Manager), you can still use the [cloud management gateway](/mem/configmgr/core/clients/manage/cmg/overview), enable [tenant attach](/mem/configmgr/tenant-attach/device-sync-actions), or enable [co-management](/mem/configmgr/comanage/overview) with Microsoft Intune. These solutions can make it easier to keep devices secure and up-to-date. 
 
 ## Review servicing approach and policies
 

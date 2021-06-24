@@ -41,7 +41,7 @@ Intune's built-in WDAC support allows you to configure Windows 10 client compute
 > [!NOTE]
 > Intune currently uses the AppLocker CSP to deploy its built-in policies. The AppLocker CSP will always request a reboot when applying WDAC policies. You can use Intune's custom OMA-URI feature with the ApplicationControl CSP to deploy your own WDAC policies rebootlessly.
 
-To use Intune's built-in WDAC policies, configure [Endpoint Protection for Windows 10 (and later)](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json).
+To use Intune's built-in WDAC policies, configure [Endpoint Protection for Windows 10 (and later)](/mem/intune/protect/endpoint-protection-windows-10?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json).
 
 ## Deploy WDAC policies with custom OMA-URI
 

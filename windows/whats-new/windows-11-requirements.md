@@ -47,8 +47,8 @@ For information about tools to evaluate readiness, see [Determine eligibility](w
 For the best Windows 11 upgrade experience, eligible devices should be running Windows 10, version 20H1 or later.
 
 > [!NOTE]
-> S mode is not supported on Windows 11.
-> If you are running Windows in S mode, you will need to first [switch out of S mode](/windows/deployment/windows-10-pro-in-s-mode) prior to upgrading.<br>&nbsp;<br>
+> S mode is only supported on the Home edition of Windows 11.
+> If you are running a different edition of Windows in S mode, you will need to first [switch out of S mode](/windows/deployment/windows-10-pro-in-s-mode) prior to upgrading.<br>&nbsp;<br>
 > Switching a device out of Windows 10 in S mode also requires internet connectivity. If you switch out of S mode, you cannot switch back to S mode later.
 
 ## Feature-specific requirements
@@ -60,7 +60,7 @@ Some features in Windows 11 have requirements beyond those listed above. See the
 - **BitLocker to Go**: requires a USB flash drive. This feature is available in Windows Pro and above editions. 
 - **Client Hyper-V**: requires a processor with second-level address translation (SLAT) capabilities. This feature is available in Windows Pro editions and above. 
 - **Cortana**: requires a microphone and speaker and is currently available on Windows 11 for Australia, Brazil, Canada, China, France, Germany, India, Italy, Japan, Mexico, Spain, United Kingdom, and United States.
-- **DirectStorage**: requires 1 TB or greater NVMe SSD to store and run games that use the "Standard NVM Express Controller" driver and a DirectX12 Ultimate GPU.
+- **DirectStorage**: requires an NVMe SSD to store and run games that use the Standard NVM Express Controller driver and a DirectX12 GPU with Shader Model 6.0 support.
 - **DirectX 12 Ultimate**: available with supported games and graphics chips.
 - **Presence**: requires sensor that can detect human distance from device or intent to interact with device.
 - **Intelligent Video Conferencing**: requires video camera, microphone, and speaker (audio output) 
