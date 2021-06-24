@@ -191,7 +191,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup><sup>11</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
