@@ -58,7 +58,7 @@ If you manage devices on behalf of your organization, you will be able to upgrad
 
 > [!NOTE]
 > If you use Windows Update for Business to manage feature update deployments today, you will need to leverage the **Target Version** policy rather than **Feature Update deferrals** to move from Windows 10 to Windows 11. Deferrals are great for quality updates or to move to newer version of the same product (from example, from Windows 10, version 20H2 to 21H1), but they cannot migrate a device between products (from Windows 10 to Windows 11). <br>
-> Additionally, Windows 11 has a new End User License Agreement. If you are deploying with Windows Update for Business **Target Version** or with Windows Server Update Services, you are accepting this new End User License Agreement on behalf of the end-users within your organization. 
+> Also, Windows 11 has a new End User License Agreement. If you are deploying with Windows Update for Business **Target Version** or with Windows Server Update Services, you are accepting this new End User License Agreement on behalf of the end-users within your organization. 
 
 ##### Unmanaged devices
 
@@ -68,7 +68,7 @@ Windows 11 will be offered to eligible Windows 10 devices beginning later in the
 
 The Windows 11 upgrade will be available initially on eligible, unmanaged devices to users who manually seek the upgrade through Windows Update. As with all Windows Update managed devices, the **Windows Update Settings** page will confirm when a device is eligible, and users can upgrade if they choose to.
 
-Just like Windows 10, the machine learning based [intelligent rollout](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/using-machine-learning-to-improve-the-windows-10-update/ba-p/877860) process will be leveraged when rolling out upgrades. Machine learning uses a combination of testing, close partner engagement, feedback, diagnostic data, and real-life insights to manage quality. This process improves the update experience and ensures that devices first nominated for updates are the devices likely to have a seamless experience. Devices that might have compatibility issues with the upgrade get the benefit of resolving these issues before the upgrade is offered. 
+Just like Windows 10, the machine learning based [intelligent rollout](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/using-machine-learning-to-improve-the-windows-10-update/ba-p/877860) process will be used when rolling out upgrades. Machine learning uses a combination of testing, close partner engagement, feedback, diagnostic data, and real-life insights to manage quality. This process improves the update experience, and ensures that devices first nominated for updates are the devices likely to have a seamless experience. Devices that might have compatibility issues with the upgrade get the benefit of resolving these issues before the upgrade is offered. 
 
 ## Windows 11 readiness considerations 
 
