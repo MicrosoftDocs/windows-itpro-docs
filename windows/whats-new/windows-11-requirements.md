@@ -38,7 +38,7 @@ To install or upgrade to Windows 11, devices must meet the following minimum har
 - Internet connection: Internet connectivity is necessary to perform updates, and to download and use some features. 
   - Windows 11 Home edition requires an Internet connection and a Microsoft Account to complete device setup on first use.
 
-\* There might be additional requirements over time for updates, and to enable specific features within the operating system. For more information, see [Keeping Windows 11 up-to-date](https://www.microsoft.com/windows/windows-10-specifications#primaryR5).
+\* There might be additional requirements over time for updates, and to enable specific features within the operating system. For more information, see [Keeping Windows 11 up-to-date](https://www.microsoft.com/windows/windows-11-specifications).
 
 For information about tools to evaluate readiness, see [Determine eligibility](windows-11-plan.md#determine-eligibility).
 
