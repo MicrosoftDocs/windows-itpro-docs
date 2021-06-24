@@ -50,6 +50,9 @@ manager: dansimp
     <a href="#system-allowtelemetry">System/AllowTelemetry</a>
   </dd>
   <dd>
+    <a href="#system-allowUpdateComplianceProcessing">System/AllowUpdateComplianceProcessing</a>
+  </dd>
+  <dd>
     <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
   </dd>
   <dd>
@@ -738,13 +741,13 @@ The following list shows the supported values for Windows 8.1:
 
 In Windows 10, you can configure this policy setting to decide what level of diagnostic data to send to Microsoft.
 
-The following list shows the supported values for Windows 10 version 1809 and older:
-
--   0 – (**Security**) This turns Windows diagnostic data off.  
+The following list shows the supported values for Windows 10 version 1809 and older, choose the value that is applicable to your OS version (older OS values are displayed in the brackets):
+-   0 – **Off (Security)** This turns Windows diagnostic data off.  
     **Note**: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), HoloLens 2, and Windows Server 2016 (and later versions). Using this setting on other devices editions of Windows is equivalent to setting the value of 1.
--   1 – (**Required**) Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date.
--   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows apps are used, how they perform, and advanced reliability data, such as limited crash dumps.
--   3 – (**Optional**) Sends the same data as a value of 2, plus additional data necessary to identify and fix problems with devices such as enhanced error logs.
+-   1 – **Required (Basic)** Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date.
+-   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows apps are used, how they perform, and advanced reliability data, such as limited crash dumps.  
+    **Note**:  **Enhanced** is no longer an option for Windows Holographic, version 21H1.
+-   3 – **Optional (Full)** Sends the same data as a value of 2, plus additional data necessary to identify and fix problems with devices such as enhanced error logs.
 
 Most restrictive value is 0.
 
@@ -788,6 +791,77 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-allowUpdateComplianceProcessing"></a>**System/AllowUpdateComplianceProcessing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Allows IT admins to enable diagnostic data from this device to be processed by Update Compliance.  
+
+If you enable this setting, it enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service.
+
+If you disable or do not configure this policy setting, diagnostic data from this device will not be processed by Update Compliance.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Update Compliance Processing*
+-   GP name: *AllowUpdateComplianceProcessing*
+-   GP element: *AllowUpdateComplianceProcessing*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Disabled.
+-   16 - Enabled.
+<!--/SupportedValues-->
+<!--/Policy-->
+
 
 <hr/>
 
@@ -850,6 +924,7 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <hr/>
+
 <!--Policy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
 
@@ -1608,7 +1683,7 @@ To enable this behavior, you must complete two steps:
 
 -   Enable this policy setting
 -   Set the **AllowTelemetry** level:
-    - For Windows 10 version 1809 and older: set **AllowTelemetry** to Enhanced
+    - For Windows 10 version 1809 and older: set **AllowTelemetry** to Enhanced. (**Note**: **Enhanced** is no longer an option for Windows Holographic, version 21H1)
     - For Windows 10 version 19H1 and later: set **AllowTelemetry** to Optional (Full)
 
  
@@ -1778,5 +1853,7 @@ Footnotes:
 - 6 - Available in Windows 10, version 1903.
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
+- 9 - Available in Windows 10, version 20H2.
+- 10 - Available in Windows 10, version 21H1.
 
 <!--/Policies-->

@@ -47,7 +47,7 @@ For a full list of what's new in Microsoft Intune, see [What's new in Microsoft 
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-There is no new ADK for Windows 10, version 21H1. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
+There is no new ADK for Windows 10, version 21H1. The ADK for Windows 10, version 2004 will also work with Windows 10, version 21H1.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
 ## Device management
 
@@ -60,7 +60,7 @@ Windows Management Instrumentation (WMI) Group Policy Service (GPSVC) has a perf
 
 WDAG performance is improved with optimized document opening times:
 - An issue is fixed that could cause a one minute or more delay when you open a Microsoft Defender Application Guard (WDAG) Office document. This can occur when you try to open a file using a Universal Naming Convention (UNC) path or Server Message Block (SMB) share link.
-- A memory issue is fixed that could casue a WDAG container to use almost 1 GB of working set memory when the container is idle.
+- A memory issue is fixed that could cause a WDAG container to use almost 1 GB of working set memory when the container is idle.
 - The performance of Robocopy is improved when copying files over 400 MB in size.
 
 ### Windows Hello
