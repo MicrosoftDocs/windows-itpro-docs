@@ -33,7 +33,7 @@ The tools that you use for core workloads during Windows 10 deployments can stil
 
 #### On-premise solutions
 
-- If you use Windows Server Update Service (WSUS), you will need to sync the new **Windows 11** product category. After you sync the product category, you will see Windows 11 offered as an option. If you would like to validate Windows 11 prior to release, you can sync the Windows Insider Pre-release category as well.
+- If you use Windows Server Update Service (WSUS), you will need to sync the new **Windows 11** product category. After you sync the product category, you will see Windows 11 offered as an option. If you would like to validate Windows 11 prior to release, you can sync the **Windows Insider Pre-release** category as well.
 
   > [!NOTE]
   > During deployment, you will be prompted to agree to the End User License Agreement on behalf of your users. Additionally, you will not see an x86 option because Windows 11 is not supported on 32-bit architecture.
@@ -45,9 +45,9 @@ The tools that you use for core workloads during Windows 10 deployments can stil
 
 #### Cloud-based solutions
 
-- If you use Windows Update for Business Group Policy or Configuration Service Provider (CSP) policies, you will need to use the **Target Version** capability rather than feature update deferrals to upgrade from Windows 10 to Windows 11. Feature Update deferrals are great to move to newer versions of your current product (for example, Windows 10, version 20H2 to 21H1), but do not enable you to move between products (Windows 10 to Windows 11). 
+- If you use Windows Update for Business Group Policy or Configuration Service Provider (CSP) policies, you will need to use the **Target Version** capability rather than feature update deferrals to upgrade from Windows 10 to Windows 11. Feature update deferrals are great to move to newer versions of your current product (for example, Windows 10, version 20H2 to 21H1), but do not enable you to move between products (Windows 10 to Windows 11). 
 - Quality update deferrals will continue to work the same across both Windows 10 and Windows 11. This is true regardless of which management tool you use to configure Windows Update for Business policies.
-- If you use Microsoft Intune and have a Microsoft 365 E3 license, you will be able to use **Feature Update Deployments** to easily update devices from one release of Windows 10 to another, or to upgrade Windows 10 devices to Windows 11. You can also continue using the same update experience controls to manage Windows 10 and Windows 11. 
+- If you use Microsoft Intune and have a Microsoft 365 E3 license, you will be able to use feature update deployments to easily update devices from one release of Windows 10 to another, or to upgrade Windows 10 devices to Windows 11. You can also continue using the same update experience controls to manage Windows 10 and Windows 11. 
 
 ## Cloud-based management
 
