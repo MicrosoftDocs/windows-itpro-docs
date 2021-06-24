@@ -130,9 +130,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "SV",
+      "docset_name": "sv",
       "build_source_folder": "windows/sv",
-      "build_output_subfolder": "SV",
+      "build_output_subfolder": "sv",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
