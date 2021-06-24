@@ -109,7 +109,7 @@ If you run into compatibility issues or want to ensure that your organization's 
 
 **App Assure**: With enrollment in the [App Assure](/windows/compatibility/app-assure) service, any app compatibility issues that you find with Windows 11 can be resolved. Microsoft will help you remedy application issues at no cost. Since 2018, App Assure has evaluated almost 800,000 apps, and subscriptions are free for eligible customers with 150+ seats. 
 
-**Test Base for Microsoft 365**: For software publishers, systems integrators, and IT administrators, [Test Base for Microsoft 365](https://aka.ms/testbase) (currently in public preview) is a service that allows you to validate your apps across a variety of Windows feature and quality updates and environments in a Microsoft-managed Azure environment. Enterprise organizations can also nominate their software publishers for participation by completing a short form.  
+**Test Base for Microsoft 365**: For software publishers, systems integrators, and IT administrators, [Test Base for Microsoft 365](https://aka.ms/testbase) (currently in private preview) is a service that allows you to validate your apps across a variety of Windows feature and quality updates and environments in a Microsoft-managed Azure environment. Enterprise organizations can also nominate their software publishers for participation by completing a short form.  
 
 You might already be using App Assure and Test Base in your Windows 10 environment. Both of these tools will continue to function with Windows 11. 
 
