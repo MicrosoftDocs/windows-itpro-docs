@@ -5,8 +5,8 @@
       items: 
         - name: What's new
           href: deploy-whats-new.md
-        - name: Windows Sun Valley deployment overview
-          href: /windows/whats-new/windows-sv-overview.md
+        - name: Windows 11 deployment overview
+          href: /windows/whats-new/windows-11-overview.md
         - name: Windows client deployment scenarios
           href: windows-10-deployment-scenarios.md
         - name: What is Windows as a service?
@@ -35,8 +35,8 @@
 
     - name: Plan
       items:
-        - name: Windows Sun Valley deployment planning
-          href: /windows/whats-new/windows-sv-plan.md
+        - name: Windows 11 deployment planning
+          href: /windows/whats-new/windows-11-plan.md
         - name: Create a deployment plan
           href: update/create-deployment-plan.md
         - name: Define readiness criteria
@@ -71,8 +71,8 @@
 
     - name: Prepare
       items: 
-        - name: Prepare to deploy Windows Sun Valley
-          href: /windows/whats-new/windows-sv-prepare.md
+        - name: Prepare to deploy Windows 11
+          href: /windows/whats-new/windows-11-prepare.md
         - name: Prepare to deploy Windows 10 updates
           href: update/prepare-deploy-windows.md
         - name: Evaluate and update infrastructure

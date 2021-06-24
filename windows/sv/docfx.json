@@ -39,13 +39,13 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/windows/windows-sv/breadcrumb/toc.json",
+      "breadcrumb_path": "/windows/windows-11/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "windows-sv",
+    "dest": "windows-11",
     "markdownEngineName": "markdig"
   }
 }

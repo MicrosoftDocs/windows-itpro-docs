@@ -1,16 +1,16 @@
 - name: What's new in Windows
   href: index.yml
-- name: Windows Sun Valley
+- name: Windows 11
   expanded: true
   items:
-    - name: Windows Sun Valley overview
-      href: windows-sv.md
-    - name: Windows Sun Valley requirements
-      href: windows-sv-requirements.md
-    - name: Plan for Windows Sun Valley
-      href: windows-sv-plan.md
-    - name: Prepare for Windows Sun Valley
-      href: windows-sv-prepare.md
+    - name: Windows 11 overview
+      href: windows-11.md
+    - name: Windows 11 requirements
+      href: windows-11-requirements.md
+    - name: Plan for Windows 11
+      href: windows-11-plan.md
+    - name: Prepare for Windows 11
+      href: windows-11-prepare.md
 - name: Windows 10
   expanded: true
   items:

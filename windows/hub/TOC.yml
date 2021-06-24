@@ -6,8 +6,8 @@
       items:
         - name: What's new in Windows
           href: /windows/whats-new
-        - name: Windows Sun Valley
-          href: /windows/whats-new/windows-sv
+        - name: Windows 11
+          href: /windows/whats-new/windows-11
     - name: Release information
       href: /windows/release-health
     - name: Deployment

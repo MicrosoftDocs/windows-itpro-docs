@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: What's new in Windows # < 60 chars
-summary: Find out about new features and capabilities in the latest release of Windows 10 and Windows Sun Valley.  # < 160 chars
+summary: Find out about new features and capabilities in the latest release of Windows 10 and Windows 11.  # < 160 chars
 
 metadata:
   title: What's new in Windows # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Find out about new features and capabilities in the latest release of Windows 10 and Windows Sun Valley. # Required; article description that is displayed in search results. < 160 chars.
+  description: Find out about new features and capabilities in the latest release of Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/02/2021 #Required; mm/dd/yyyy format.
+  ms.date: 06/24/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -23,18 +23,18 @@ landingContent:
 # Start card title with a verb
   # Card (optional)
 
-  - title: Windows Sun Valley
+  - title: Windows 11
     linkLists:
       - linkListType: overview
         links:
-          - text: Windows Sun Valley Overview
-            url:  windows-sv.md
-          - text: Windows Sun Valley requirements
-            url: windows-sv-requirements.md
-          - text: Plan for Windows Sun Valley 
-            url: windows-sv-plan.md
-          - text: Prepare for Windows Sun Valley 
-            url: windows-sv-prepare.md
+          - text: Windows 11 overview
+            url:  windows-11.md
+          - text: Windows 11 requirements
+            url: windows-11-requirements.md
+          - text: Plan for Windows 11 
+            url: windows-11-plan.md
+          - text: Prepare for Windows 11 
+            url: windows-11-prepare.md
 
   - title: Windows 10
     linkLists:
