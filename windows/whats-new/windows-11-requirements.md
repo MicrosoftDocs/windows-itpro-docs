@@ -47,8 +47,8 @@ For information about tools to evaluate readiness, see [Determine eligibility](w
 For the best Windows 11 upgrade experience, eligible devices should be running Windows 10, version 20H1 or later.
 
 > [!NOTE]
-> S mode is not supported on Windows 11.
-> If you are running Windows in S mode, you will need to first [switch out of S mode](/windows/deployment/windows-10-pro-in-s-mode) prior to upgrading.<br>&nbsp;<br>
+> S mode is only supported on the Home edition of Windows 11.
+> If you are running a different edition of Windows in S mode, you will need to first [switch out of S mode](/windows/deployment/windows-10-pro-in-s-mode) prior to upgrading.<br>&nbsp;<br>
 > Switching a device out of Windows 10 in S mode also requires internet connectivity. If you switch out of S mode, you cannot switch back to S mode later.
 
 ## Feature-specific requirements
