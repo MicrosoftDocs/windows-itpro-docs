@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 06/23/2021
 ms.reviewer: 
 ---
-# Azure AD Joined Cloud Only Deployment
+# Azure Active Directory join cloud only deployment
 
 ## Introduction
 
@@ -59,9 +59,9 @@ However, not everyone uses Intune. The following method explains how to disable 
 
 1. Sign into the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) admin center.
 2. Go to **Devices** > **Enrollment** > **Enroll devices** > **Windows enrollment** > **Windows Hello for Business**. The Windows Hello for Business pane opens.
-3. Select from the following options for **Configure Windows Hello for Business**:
+3. If you don't want to enable Windows Hello for Business during device enrollment, select **Disabled** for **Configure Windows Hello for Business**.
 
-   1. **Disabled**: If you don't want to enable Windows Hello for Business during device enrollment, select this option. When disabled, users cannot provision Windows Hello for Business. When set to Disabled, you can still configure the subsequent settings for Windows Hello for Business even though this policy won't enable Windows Hello for Business.
+   When disabled, users cannot provision Windows Hello for Business. When set to Disabled, you can still configure the subsequent settings for Windows Hello for Business even though this policy won't enable Windows Hello for Business.
 
 > [!NOTE]
 > This policy is only applied during new device enrollments. For currently enrolled devices, you can [set the same settings in a device configuration policy](hello-manage-in-organization.md).
