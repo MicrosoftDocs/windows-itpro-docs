@@ -123,7 +123,7 @@ manager: dansimp
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -191,7 +191,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1855,5 +1855,6 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 - 9 - Available in Windows 10, version 20H2.
 - 10 - Available in Windows 10, version 21H1.
+- 11 - Also applies to Windows 10 Business.
 
 <!--/Policies-->
