@@ -16,20 +16,21 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# What's new in Windows 10 deployment
+# What's new in Windows client deployment
 
 **Applies to:**
 - Windows 10
+- Windows 11
 
 ## In this topic
 
 This topic provides an overview of new solutions and online content related to deploying Windows client in your organization.
 
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](/windows/whats-new/index).
-- For an overview of Windows 11, see [What's new in Windows 11](/windows/whats-new/windows-11).
 
 ## Latest news
 
+Check out the [Overview of Windows 11](/windows/whats-new/windows-11).
 [SetupDiag](#setupdiag) is included with Windows 10, version 2004 and later.<br>
 The [Windows ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install) is available.<br>
 New capabilities are available for [Delivery Optimization](#delivery-optimization) and [Windows Update for Business](#windows-update-for-business).<br>
