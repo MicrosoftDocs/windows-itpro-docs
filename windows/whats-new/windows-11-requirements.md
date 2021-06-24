@@ -56,7 +56,7 @@ For the best Windows 11 upgrade experience, eligible devices should be running W
 Some features in Windows 11 have requirements beyond those listed above. See the following list of features and associated requirements.
 
 - **5G support**: requires 5G capable modem.
-- **Auto HDR**: requires an HDR monitor.
+- **Auto HDR**: requires a HDR monitor.
 - **BitLocker to Go**: requires a USB flash drive. This feature is available in Windows Pro and above editions. 
 - **Client Hyper-V**: requires a processor with second-level address translation (SLAT) capabilities. This feature is available in Windows Pro editions and above. 
 - **Cortana**: requires a microphone and speaker and is currently available on Windows 11 for Australia, Brazil, Canada, China, France, Germany, India, Italy, Japan, Mexico, Spain, United Kingdom, and United States.
