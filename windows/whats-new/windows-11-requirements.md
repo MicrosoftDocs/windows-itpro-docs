@@ -60,7 +60,7 @@ Some features in Windows 11 have requirements beyond those listed above. See the
 - **BitLocker to Go**: requires a USB flash drive. This feature is available in Windows Pro and above editions. 
 - **Client Hyper-V**: requires a processor with second-level address translation (SLAT) capabilities. This feature is available in Windows Pro editions and above. 
 - **Cortana**: requires a microphone and speaker and is currently available on Windows 11 for Australia, Brazil, Canada, China, France, Germany, India, Italy, Japan, Mexico, Spain, United Kingdom, and United States.
-- **DirectStorage**: requires 1 TB or greater NVMe SSD to store and run games that use the "Standard NVM Express Controller" driver and a DirectX12 Ultimate GPU.
+- **DirectStorage**: requires an NVMe SSD to store and run games that use the Standard NVM Express Controller driver and a DirectX12 GPU with Shader Model 6.0 support.
 - **DirectX 12 Ultimate**: available with supported games and graphics chips.
 - **Presence**: requires sensor that can detect human distance from device or intent to interact with device.
 - **Intelligent Video Conferencing**: requires video camera, microphone, and speaker (audio output) 
