@@ -30,7 +30,11 @@ This topic provides an overview of new solutions and online content related to d
 
 ## Latest news
 
-Check out the [Overview of Windows 11](/windows/whats-new/windows-11).
+Check out the following new articles about Windows 11:
+- [Overview of Windows 11](/windows/whats-new/windows-11)
+- [Plan for Windows 11](/windows/whats-new/windows-11-plan)
+- [Prepare for Windows 11](/windows/whats-new/windows-11-prepare)
+
 [SetupDiag](#setupdiag) is included with Windows 10, version 2004 and later.<br>
 The [Windows ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install) is available.<br>
 New capabilities are available for [Delivery Optimization](#delivery-optimization) and [Windows Update for Business](#windows-update-for-business).<br>
