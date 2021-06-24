@@ -115,7 +115,7 @@ You can use the following articles to learn more about Autopilot and how to use 
 
 #### _2.3.2 Windows 10 connected experiences and essential services_
 
-Windows includes built-in apps, services, and features, that connect to the internet to provide enhanced experiences and additional capabilities. These are called “connected experiences”. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure.
+Windows includes features that connect to the internet to provide enhanced experiences and additional service based capabilities. These are called “connected experiences”. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure.
 
 Connected experiences that are critical to the proper functioning of Windows are called “essential services”. For example, the Windows licensing service confirms that you are properly licensed to use Windows.
 
