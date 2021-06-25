@@ -6,13 +6,14 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 keywords: security, BYOD, malware, device health attestation, mobile
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, devices
 author: dulcemontemayor
 ms.date: 10/13/2017
 ms.localizationpriority: medium
+ms.technology: mde
 ---
 
 # Control the health of Windows 10-based devices
@@ -202,7 +203,7 @@ Windows 10 supports features to help prevent sophisticated low-level malware lik
 
     Windows 10 takes measurements of the UEFI firmware and each of the Windows and antimalware components are made as they load during the boot process. Additionally, they are taken and measured sequentially, not all at once. When these measurements are complete, their values are digitally signed and stored securely in the TPM and cannot be changed unless the system is reset.
 
-    For more information, see [Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](https://go.microsoft.com/fwlink/p/?LinkId=733950).
+    For more information, see [Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](/previous-versions/windows/hardware/design/dn653311(v=vs.85)).
 
     During each subsequent boot, the same components are measured, which allows comparison of the measurements against an expected baseline. For additional security, the values measured by the TPM can be signed and transmitted to a remote server, which can then perform the comparison. This process, called *remote device health attestation*, allows the server to verify health status of the Windows device.
 
@@ -327,7 +328,7 @@ For more information on device health attestation, see the [Detect an unhealthy 
 
 ### <a href="" id="hardware-req"></a>Hardware requirements
 
-The following table details the hardware requirements for both virtualization-based security services and the health attestation feature. For more information, see [Minimum hardware requirements](https://go.microsoft.com/fwlink/p/?LinkId=733951).
+The following table details the hardware requirements for both virtualization-based security services and the health attestation feature. For more information, see [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
 <table>
 <colgroup>
@@ -476,7 +477,7 @@ The TPM has an embedded unique cryptographic key called the endorsement key. The
 
 The endorsement key public key is generally used for sending securely sensitive parameters, such as when taking possession of the TPM that contains the defining hash of the owner password. The EK private key is used when creating secondary keys like AIKs.
 
-The endorsement key acts as an identity card for the TPM. For more information, see [Understand the TPM endorsement key](https://go.microsoft.com/fwlink/p/?LinkId=733952).
+The endorsement key acts as an identity card for the TPM. For more information, see [Understand the TPM endorsement key](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770443(v=ws.11)).
 
 The endorsement key is often accompanied by one or two digital certificates:
 
@@ -574,7 +575,7 @@ The Health Attestation Service provides the following information to an MDM solu
 -   Safe Mode boot, DEP enablement, test signing enablement
 -   Device TPM has been provisioned with a trusted endorsement certificate
 
-For completeness of the measurements, see [Health Attestation CSP](https://go.microsoft.com/fwlink/p/?LinkId=733949).
+For completeness of the measurements, see [Health Attestation CSP](/windows/client-management/mdm/healthattestation-csp).
 
 The following table presents some key items that can be reported back to MDM depending on the type of Windows 10-based device.
 
@@ -680,9 +681,9 @@ Windows 10 has an MDM client that ships as part of the operating system. This en
 
 ### Third-party MDM server support
 
-Third-party MDM servers can manage Windows 10 by using the MDM protocol. The built-in management client is able to communicate with a compatible server that supports the OMA-DM protocol to perform enterprise management tasks. For additional information, see [Azure Active Directory integration with MDM](https://go.microsoft.com/fwlink/p/?LinkId=733954).
+Third-party MDM servers can manage Windows 10 by using the MDM protocol. The built-in management client is able to communicate with a compatible server that supports the OMA-DM protocol to perform enterprise management tasks. For additional information, see [Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
 
->**Note:**  MDM servers do not need to create or download a client to manage Windows 10. For more information, see [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkId=733955).
+>**Note:**  MDM servers do not need to create or download a client to manage Windows 10. For more information, see [Mobile device management](/windows/client-management/mdm/).
 
 The third-party MDM server will have the same consistent first-party user experience for enrollment, which also provides simplicity for Windows 10 users.
 
@@ -741,7 +742,7 @@ Conditional access control is a powerful policy evaluation engine built into Azu
 
 IT pros can configure conditional access control policies for cloud SaaS applications secured by Azure AD and even on-premises applications. Access rules in Azure AD leverage the conditional access engine to check device health and compliance state reported by a compatible MDM solution like Intune in order to determine whether to allow access.
 
-For more information about conditional access, see [Azure Conditional Access Preview for SaaS Apps.](https://go.microsoft.com/fwlink/p/?LinkId=524807)
+For more information about conditional access, see [Azure Conditional Access Preview for SaaS Apps.](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
 
 >**Note:**  Conditional access control is an Azure AD Premium feature that's also available with EMS. If you don't have an Azure AD Premium subscription, you can get a trial from the [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=691617) site.
 
@@ -823,4 +824,4 @@ Health attestation is a key feature of Windows 10 that includes client and cloud
 
 - [Protect derived domain credentials with Credential Guard](/windows/access-protection/credential-guard/credential-guard)
 - [Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide)
-- [Trusted Platform Module technology overview](https://go.microsoft.com/fwlink/p/?LinkId=733957)
+- [Trusted Platform Module technology overview](../information-protection/tpm/trusted-platform-module-overview.md)

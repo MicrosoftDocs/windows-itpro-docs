@@ -4,7 +4,7 @@ description: This reference of security settings provides information about how 
 ms.assetid: ef5a4579-15a8-4507-9a43-b7ccddcb0ed1
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Security policy settings reference

@@ -4,9 +4,9 @@ description: This section describes the Theme settings that you can configure in
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.reviewer: 
 manager: dansimp
@@ -34,4 +34,4 @@ Select between **Light** and **Dark** for theme.
 
 ## Related topics
 
-- [Themes and accent colors](https://msdn.microsoft.com/library/windows/hardware/dn772323(v=vs.85).aspx)
+- [Themes and accent colors](/previous-versions//dn772323(v=vs.85))

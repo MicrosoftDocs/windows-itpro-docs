@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -85,13 +85,13 @@ The Administrator account cannot be deleted or removed from the Administrators g
 
 Because the Administrator account is known to exist on many versions of the Windows operating system, it is a best practice to disable the Administrator account when possible to make it more difficult for malicious users to gain access to the server or client computer.
 
-You can rename the Administrator account. However, a renamed Administrator account continues to use the same automatically assigned security identifier (SID), which can be discovered by malicious users. For more information about how to rename or disable a user account, see [Disable or activate a local user account](https://technet.microsoft.com/library/cc732112.aspx) and [Rename a local user account](https://technet.microsoft.com/library/cc725595.aspx).
+You can rename the Administrator account. However, a renamed Administrator account continues to use the same automatically assigned security identifier (SID), which can be discovered by malicious users. For more information about how to rename or disable a user account, see [Disable or activate a local user account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732112(v=ws.11)) and [Rename a local user account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725595(v=ws.11)).
 
-As a security best practice, use your local (non-Administrator) account to sign in and then use **Run as administrator** to accomplish tasks that require a higher level of rights than a standard user account. Do not use the Administrator account to sign in to your computer unless it is entirely necessary. For more information, see [Run a program with administrative credentials](https://technet.microsoft.com/library/cc732200.aspx).
+As a security best practice, use your local (non-Administrator) account to sign in and then use **Run as administrator** to accomplish tasks that require a higher level of rights than a standard user account. Do not use the Administrator account to sign in to your computer unless it is entirely necessary. For more information, see [Run a program with administrative credentials](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732200(v=ws.11)).
 
 In comparison, on the Windows client operating system, a user with a local user account that has Administrator rights is considered the system administrator of the client computer. The first local user account that is created during installation is placed in the local Administrators group. However, when multiple users run as local administrators, the IT staff has no control over these users or their client computers.
 
-In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](https://technet.microsoft.com/library/hh831791.aspx).
+In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831791(v=ws.11)).
 
 **Note**  
 Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
@@ -235,15 +235,15 @@ On the other hand, the SYSTEM account does appear on an NTFS file system volume 
 To grant the account Administrators group file permissions does not implicitly give permission to the SYSTEM account. The SYSTEM account's permissions can be removed from a file, but we do not recommend removing them.
 
 ### NETWORK SERVICE 
-The NETWORK SERVICE account is a predefined local account used by the service control manager (SCM). A service that runs in the context of the NETWORK SERVICE account presents the computer's credentials to remote servers. For more information, see [NetworkService Account](https://docs.microsoft.com/windows/desktop/services/networkservice-account).
+The NETWORK SERVICE account is a predefined local account used by the service control manager (SCM). A service that runs in the context of the NETWORK SERVICE account presents the computer's credentials to remote servers. For more information, see [NetworkService Account](/windows/desktop/services/networkservice-account).
 
 ### LOCAL SERVICE
-The LOCAL SERVICE account is a predefined local account used by the service control manager. It has minimum privileges on the local computer and presents anonymous credentials on the network. For more information, see [LocalService Account](https://docs.microsoft.com/windows/desktop/services/localservice-account).
+The LOCAL SERVICE account is a predefined local account used by the service control manager. It has minimum privileges on the local computer and presents anonymous credentials on the network. For more information, see [LocalService Account](/windows/desktop/services/localservice-account).
 
 ## <a href="" id="sec-manage-accounts"></a>How to manage local user accounts
 
 
-The default local user accounts, and the local user accounts that you create, are located in the Users folder. The Users folder is located in Local Users and Groups. For more information about creating and managing local user accounts, see [Manage Local Users](https://technet.microsoft.com/library/cc731899.aspx).
+The default local user accounts, and the local user accounts that you create, are located in the Users folder. The Users folder is located in Local Users and Groups. For more information about creating and managing local user accounts, see [Manage Local Users](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731899(v=ws.11)).
 
 You can use Local Users and Groups to assign rights and permissions on the local server, and that server only, to limit the ability of local users and groups to perform certain actions. A right authorizes a user to perform certain actions on a server, such as backing up files and folders or shutting down a server. An access permission is a rule that is associated with an object, usually a file, folder, or printer. It regulates which users can have access to an object on the server and in what manner.
 

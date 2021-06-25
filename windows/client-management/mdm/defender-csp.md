@@ -8,9 +8,9 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/11/2020
+ms.date: 06/23/2021
 ---
 
 # Defender CSP
@@ -20,10 +20,52 @@ ms.date: 08/11/2020
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
-The following image shows the Windows Defender configuration service provider in tree format.
-
-![defender csp diagram](images/provisioning-csp-defender.png)
-
+The following shows the Windows Defender configuration service provider in tree format.
+```
+./Vendor/MSFT
+Defender
+----Detections
+--------ThreatId
+------------Name
+------------URL
+------------Severity
+------------Category
+------------CurrentStatus
+------------ExecutionStatus
+------------InitialDetectionTime
+------------LastThreatStatusChangeTime
+------------NumberOfDetections
+----Health
+--------ProductStatus (Added in Windows 10 version 1809)
+--------ComputerState
+--------DefenderEnabled
+--------RtpEnabled
+--------NisEnabled
+--------QuickScanOverdue
+--------FullScanOverdue
+--------SignatureOutOfDate
+--------RebootRequired
+--------FullScanRequired
+--------EngineVersion
+--------SignatureVersion
+--------DefenderVersion
+--------QuickScanTime
+--------FullScanTime
+--------QuickScanSigVersion
+--------FullScanSigVersion
+--------TamperProtectionEnabled (Added in Windows 10, version 1903)
+--------IsVirtualMachine (Added in Windows 10, version 1903)
+----Configuration (Added in Windows 10, version 1903)
+--------TamperProtection (Added in Windows 10, version 1903)
+--------EnableFileHashComputation (Added in Windows 10, version 1903)
+--------SupportLogLocation (Added in the next major release of Windows 10)
+--------PlatformUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
+--------EngineUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
+--------SignaturesUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
+----Scan
+----UpdateSignature
+----OfflineScan (Added in Windows 10 version 1803)
+```
 <a href="" id="detections"></a>**Detections**  
 An interior node to group all threats detected by Windows Defender.
 
@@ -55,11 +97,11 @@ The data type is integer.
 
 The following list shows the supported values:
 
--   0 = Unknown
--   1 = Low
--   2 = Moderate
--   4 = High
--   5 = Severe
+- 0 = Unknown
+- 1 = Low
+- 2 = Moderate
+- 4 = High
+- 5 = Severe
 
 Supported operation is Get.
 
@@ -132,17 +174,17 @@ The data type is integer.
 
 The following list shows the supported values:
 
--   0 = Active
--   1 = Action failed
--   2 = Manual steps required
--   3 = Full scan required
--   4 = Reboot required
--   5 = Remediated with noncritical failures
--   6 = Quarantined
--   7 = Removed
--   8 = Cleaned
--   9 = Allowed
--   10 = No Status ( Cleared)
+- 0 = Active
+- 1 = Action failed
+- 2 = Manual steps required
+- 3 = Full scan required
+- 4 = Reboot required
+- 5 = Remediated with noncritical failures
+- 6 = Quarantined
+- 7 = Removed
+- 8 = Cleaned
+- 9 = Allowed
+- 10 = No Status ( Cleared)
 
 Supported operation is Get.
 
@@ -270,7 +312,7 @@ Supported operation is Get.
 <a href="" id="health-quickscanoverdue"></a>**Health/QuickScanOverdue**  
 Indicates whether a Windows Defender quick scan is overdue for the device.
 
-A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and [catchup Quick scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan) are disabled (default).
+A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and [catchup Quick scans](./policy-csp-defender.md#defender-disablecatchupquickscan) are disabled (default).
 
 The data type is a Boolean.
 
@@ -279,7 +321,7 @@ Supported operation is Get.
 <a href="" id="health-fullscanoverdue"></a>**Health/FullScanOverdue**  
 Indicates whether a Windows Defender full scan is overdue for the device.
 
-A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and [catchup Full scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan) are disabled (default).
+A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and [catchup Full scans](./policy-csp-defender.md#defender-disablecatchupfullscan) are disabled (default).
 
 The data type is a Boolean.
 
@@ -390,9 +432,69 @@ Intune tamper protection setting UX supports three states:
 
 When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.
 
+<a href="" id="configuration-disablelocaladminmerge"></a>**Configuration/DisableLocalAdminMerge**<br>
+This policy setting controls whether or not complex list settings configured by a local administrator are merged with managed settings. This setting applies to lists such as threats and exclusions.
+
+If you disable or do not configure this setting, unique items defined in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, management settings will override preference settings.
+
+If you enable this setting, only items defined by management will be used in the resulting effective policy. Managed settings will override preference settings configured by the local administrator.
+
+> [!NOTE]
+> Applying this setting will not remove exclusions from the device registry, it will only prevent them from being applied/used. This is reflected in **Get-MpPreference**.
+
+Supported OS versions:  Windows 10
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:  
+- 1 – Enable.
+- 0 (default) – Disable.
+
+<a href="" id="configuration-disablecputhrottleonidlescans"></a>**Configuration/DisableCpuThrottleOnIdleScans**<br>	
+Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and will not throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.	
+
+The data type is integer.	
+
+Supported operations are Add, Delete, Get, Replace.	
+
+Valid values are:	
+-	1 (default) – Enable.	
+-	0 – Disable.
+
+<a href="" id="configuration-meteredconnectionupdates"></a>**Configuration/MeteredConnectionUpdates**<br>
+Allow managed devices to update through metered connections. Data charges may apply.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:
+- 1 – Enable.
+- 0 (default) – Disable.
+
+<a href="" id="configuration-allownetworkprotectiononwinserver"></a>**Configuration/AllowNetworkProtectionOnWinServer**<br>
+This settings controls whether Network Protection is allowed to be configured into block or audit mode on Windows Server. If false, the value of EnableNetworkProtection will be ignored.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:
+- 1 – Enable.
+- 0 (default) – Disable.
+
+<a href="" id="configuration-exclusionipaddress"></a>**Configuration/ExclusionIpAddress**<br>
+Allows an administrator to explicitly disable network packet inspection made by wdnisdrv on a particular set of IP addresses.
+
+The data type is string.
+
+Supported operations are Add, Delete, Get, Replace.
+
 <a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
 Enables or disables file hash computation feature.
-When this feature is enabled Windows defender will compute hashes for files it scans.
+When this feature is enabled Windows Defender will compute hashes for files it scans.
 
 The data type is integer.
 
@@ -419,8 +521,74 @@ When enabled or disabled exists on the client and admin moves the setting to not
 
 More details:  
 
-- [Microsoft Defender AV diagnostic data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)  
-- [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)  
+- [Microsoft Defender Antivirus diagnostic data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)  
+- [Collect investigation package from devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)  
+
+<a href="" id="configuration-supportloglocation"></a>**Configuration/PlatformUpdatesChannel**
+
+Enable this policy to specify when devices receive Microsoft Defender platform updates during the monthly gradual rollout.
+
+Beta Channel: Devices set to this channel will be the first to receive new updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in (manual) test environments only and a limited number of devices.
+
+Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments.
+
+Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%).
+
+Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
+
+If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:
+- 0: Not configured (Default)
+- 1: Beta Channel - Prerelease
+- 2: Current Channel (Preview)
+- 3: Current Channel (Staged)
+- 4: Current Channel (Broad)
+
+<a href="" id="configuration-supportloglocation"></a>**Configuration/EngineUpdatesChannel**
+
+Enable this policy to specify when devices receive Microsoft Defender engine updates during the monthly gradual rollout.
+
+Beta Channel: Devices set to this channel will be the first to receive new updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in (manual) test environments only and a limited number of devices.
+
+Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments.
+
+Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%).
+
+Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
+
+If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:
+- 0 - Not configured (Default)
+- 1 - Beta Channel - Prerelease
+- 2 - Current Channel (Preview)
+- 3 - Current Channel (Staged)
+- 4 - Current Channel (Broad)
+
+<a href="" id="configuration-supportloglocation"></a>**Configuration/SignaturesUpdatesChannel** 
+
+Enable this policy to specify when devices receive daily Microsoft Defender definition updates during the daily gradual rollout.
+
+Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
+
+If you disable or do not configure this policy, the device will stay up to date automatically during the daily release cycle. Suitable for most devices.
+
+The data type is integer.
+Supported operations are Add, Delete, Get, Replace.
+
+Valid Values are:
+- 0: Not configured (Default)
+- 3: Current Channel (Staged)
+- 4: Current Channel (Broad)
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.

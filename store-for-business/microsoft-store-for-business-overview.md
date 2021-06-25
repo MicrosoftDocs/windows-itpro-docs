@@ -3,16 +3,16 @@ title: Microsoft Store for Business and Microsoft Store for Education overview (
 description: With Microsoft Store for Business and Microsoft Store for Education, organizations and schools can make volume purchases of Windows apps.
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
 ms.reviewer: 
-manager: dansimp
 ms.prod: w10
 ms.pagetype: store, mobile
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 
+ms.date: 03/10/2021
 ---
 
 # Microsoft Store for Business and Microsoft Store for Education overview
@@ -21,6 +21,9 @@ ms.date:
 
 -   Windows 10
 -   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
 
 Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options.
 
@@ -65,7 +68,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 - For offline-licensed apps, Azure AD accounts are not required for employees.
 - Admins can add or remove user accounts in the Microsoft 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
 
-For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
+For more information on Azure AD, see [About Office 365 and Azure Active Directory](/previous-versions//dn509517(v=technet.10)), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
 ### Optional
 
@@ -80,8 +83,6 @@ While not required, you can use a management tool to distribute and manage apps.
 
 The first step for getting your organization started with Store for Business and Education is signing up. Sign up using an existing account (the same one you use for Office 365, Dynamics 365, Intune, Azure, etc.) or we’ll quickly create an account for you. You must be a Global Administrator for your organization.
 
-For more information, see [Sign up for Store for Business and Education](sign-up-microsoft-store-for-business.md).
-
 ## Set up
 
 After your admin signs up for the Store for Business and Education, they can assign roles to other employees in your company or school. The admin needs Azure AD User Admin permissions to assign Microsoft Store for Business and Education roles. These are the roles and their permissions.
@@ -94,7 +95,7 @@ After your admin signs up for the Store for Business and Education, they can ass
 | Basic purchaser |  | X | X |  |
 
 > [!NOTE]
-> Currently, the Basic purchaser role is only available for schools using Microsoft Store for Education. For more information, see [Microsoft Store for Education permissions](https://docs.microsoft.com/education/windows/education-scenarios-store-for-business?toc=/microsoft-store/education/toc.json#manage-domain-settings).
+> Currently, the Basic purchaser role is only available for schools using Microsoft Store for Education. For more information, see [Microsoft Store for Education permissions](/education/windows/education-scenarios-store-for-business?toc=%2fmicrosoft-store%2feducation%2ftoc.json#manage-domain-settings).
 
 In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](manage-users-and-groups-microsoft-store-for-business.md).
 
@@ -377,7 +378,7 @@ This table summarize what customers can purchase, depending on which Microsoft S
 > [!NOTE]
 > **Microsoft Store for Education customers with support for free apps and Minecraft: Education Edition**
 > - Admins can acquire free apps from **Microsoft Store for Education**.
-> - Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
+> - Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](/education/windows/school-get-minecraft#invoices). 
 > - Teachers, or people with the Basic Purchaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
 
 ## Privacy notice

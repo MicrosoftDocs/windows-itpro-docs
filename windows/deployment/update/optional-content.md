@@ -84,7 +84,7 @@ If you’re not ready to move to Windows Update, another option is to enable Dyn
 - Latest cumulative update: Installs the latest cumulative quality update.
 - Driver updates: Latest version of applicable drivers that have already been published by manufacturers into Windows Update and meant specifically for Dynamic Update.
 
-In addition to these updates for the new operating system, Dynamic Update will acquire optional content during the update process to ensure that the device has this content present when the update completes. So, although the device is not connected to Windows Update, it will fetch content from a nearby Microsoft content download network (CDN). This addresses the first pain point with optional content, but not user-initiated acquisition. By default, [Dynamic Update](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#dynamicupdate) is enabled by Windows 10 Setup. You can enable or disable Dynamic Update by using the /DynamicUpdate option in Windows Setup. If you use the servicing-based approach, you can set this with setupconfig.ini. See [Windows Setup Automation Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-automation-overview) for details.
+In addition to these updates for the new operating system, Dynamic Update will acquire optional content during the update process to ensure that the device has this content present when the update completes. So, although the device is not connected to Windows Update, it will fetch content from a nearby Microsoft content download network (CDN). This addresses the first pain point with optional content, but not user-initiated acquisition. By default, [Dynamic Update](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#dynamicupdate) is enabled by Windows 10 Setup. You can enable or disable Dynamic Update by using the /DynamicUpdate option in Windows Setup. If you use the servicing-based approach, you can set this with setupconfig.ini. See [Windows Setup Automation Overview](/windows-hardware/manufacture/desktop/windows-setup-automation-overview) for details.
 
 Starting in Windows 10, version 2004, Dynamic Update can be configured with additional options. For example, you might want to have the benefits of optional content migration without automatically acquiring the latest quality update. You can do that with the /DynamicUpdate NoLCU option of Windows Setup. Afterward, you would separately follow your existing process for testing and approving monthly updates. The downside of this approach is the device will go through an additional reboot for the latest cumulative update since it was not available during the feature update.
 
@@ -109,7 +109,7 @@ The benefit of this option is that the Windows image can include those additiona
 
 ### Option 4: Install language features during deployment
 
-A partial solution to address the first pain point of failing to migrate optional content during upgrade is to inject a subset of optional content during the upgrade process. This approach uses the Windows 10 Setup option [/InstallLangPacks](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#installlangpacks) to add Language Packs and language capabilities such as text-to-speech recognition from a folder that contains the packages. This approach lets an IT pro take a subset of optional content and stage them within their network. If you use the servicing-based approach, you can configure InstallLangPacks using setupconfig.ini. See [Windows Setup Automation Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-automation-overview) for details.
+A partial solution to address the first pain point of failing to migrate optional content during upgrade is to inject a subset of optional content during the upgrade process. This approach uses the Windows 10 Setup option [/InstallLangPacks](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#installlangpacks) to add Language Packs and language capabilities such as text-to-speech recognition from a folder that contains the packages. This approach lets an IT pro take a subset of optional content and stage them within their network. If you use the servicing-based approach, you can configure InstallLangPacks using setupconfig.ini. See [Windows Setup Automation Overview](/windows-hardware/manufacture/desktop/windows-setup-automation-overview) for details.
 
 When Setup runs, it will inject these packages into the new operating system during installation. This means it can be an alternative to enabling Dynamic Update or customizing the operating system image before deployment. You must take care with this approach, because the packages cannot be renamed. Further, the content is coming from two separate release media ISOs. The key is to copy both the FOD packages and the FOD metadata .cab from the FOD ISO into the folder, as well as the architecture-specific Language Pack .cabs from the LPLIP ISO. Also, starting with Windows 10, version 1903, the behavior changed. In Windows 10, version 1809 and earlier, failure to install the packages wasn’t a fatal error. Starting with Windows 10, version 1903, we treat InstallLangPacks failures as fatal, and roll back the entire upgrade. The idea is to not leave the user in a bad state since media-based upgrades don’t migrate FOD and languages (unless Dynamic Update is enabled).
 
@@ -117,7 +117,7 @@ This approach has some interesting benefits. The original Windows image doesn’
 
 ### Option 5: Install optional content after deployment
 
-This option is like Option 3 in that you customize the operating system image with additional optional content after it’s deployed. IT pros can extend the behavior of Windows Setup by running their own custom action scripts during and after a feature update. See [Run custom actions during feature update](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions) for details. With this approach, you can create a device-specific migration of optional content by capturing the optional content that is installed in the operating system, and then saving this list to install the same optional content in the new operating system. Like Option 4, you would internally host a network share that contains the source of the optional content packages. Then, during the execution of Setup on the device, capture the list of installed optional content from the source operating system and save. Later, after Setup completes, you use the list to install the optional content, which leaves the user’s device without loss of functionality. 
+This option is like Option 3 in that you customize the operating system image with additional optional content after it’s deployed. IT pros can extend the behavior of Windows Setup by running their own custom action scripts during and after a feature update. See [Run custom actions during feature update](/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions) for details. With this approach, you can create a device-specific migration of optional content by capturing the optional content that is installed in the operating system, and then saving this list to install the same optional content in the new operating system. Like Option 4, you would internally host a network share that contains the source of the optional content packages. Then, during the execution of Setup on the device, capture the list of installed optional content from the source operating system and save. Later, after Setup completes, you use the list to install the optional content, which leaves the user’s device without loss of functionality. 
 
 ### Option 6: Configure an alternative source for optional content
 
@@ -127,22 +127,22 @@ Several of the options address ways to address optional content migration issues
 - This setting does not support installing language packs from Alternate source file path, only Features on Demand. If the policy is configured to acquire content from Windows Update, language packs will be acquired.
 - If this setting is not configured or disabled, files will be downloaded from the default Windows Update location, for example Windows Update for Business or WSUS).
 
-See [Configure a Windows Repair Source](https://docs.microsoft.com/windows-hardware/manufacture/desktop/configure-a-windows-repair-source) for more information.
+See [Configure a Windows Repair Source](/windows-hardware/manufacture/desktop/configure-a-windows-repair-source) for more information.
 
 
 ## Learn more
 
 For more information about the Unified Update Platform and the approaches outlined in this article, see the following resources:
 
-- [/InstallLangPacks](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#installlangpacks)
-- [/DynamicUpdate](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#dynamicupdate)
-- [Configure a Windows Repair Source](https://docs.microsoft.com/windows-hardware/manufacture/desktop/configure-a-windows-repair-source)
+- [/InstallLangPacks](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#installlangpacks)
+- [/DynamicUpdate](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#dynamicupdate)
+- [Configure a Windows Repair Source](/windows-hardware/manufacture/desktop/configure-a-windows-repair-source)
 - [Ignite 2019 theater session THR3073](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR3073)  
 - [Ignite 2019 theater session THR4002](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR4002)
-- [Run custom actions during feature update](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions)
+- [Run custom actions during feature update](/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions)
 - [Unified Update Platform](https://blogs.windows.com/windowsexperience/2016/11/03/introducing-unified-update-platform-uup/)
 - [Updating Windows 10 media with Dynamic Update packages](media-dynamic-update.md)
-- [Windows Setup Automation Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-automation-overview) 
+- [Windows Setup Automation Overview](/windows-hardware/manufacture/desktop/windows-setup-automation-overview) 
 
 
 ## Sample scripts

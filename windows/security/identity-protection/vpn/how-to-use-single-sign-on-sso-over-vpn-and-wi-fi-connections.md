@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: dulcemontemayor
+author: dansimp
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
@@ -30,8 +30,8 @@ The credentials are put in Credential Manager as a "\*Session" credential.
 A "\*Session" credential implies that it is valid for the current user session.
 The credentials are also cleaned up when the WiFi or VPN connection is disconnected.
 
-When the user tries to access a domain resource, using Edge for example, Edge has the right Enterprise Authentication capability so [WinInet](https://msdn.microsoft.com/library/windows/desktop/aa385483.aspx) can release the credentials that it gets from the Credential Manager to the SSP that is requesting it.
-For more information about the Enterprise Authentication capability, see [App capability declarations](https://msdn.microsoft.com/windows/uwp/packaging/app-capability-declarations).
+When the user tries to access a domain resource, using Edge for example, Edge has the right Enterprise Authentication capability so [WinInet](/windows/win32/wininet/wininet-reference) can release the credentials that it gets from the Credential Manager to the SSP that is requesting it.
+For more information about the Enterprise Authentication capability, see [App capability declarations](/windows/uwp/packaging/app-capability-declarations).
 
 The local security authority will look at the device application, such as a Universal Windows Platform (UWP) application, to see if it has the right capability.
 If the app is not UWP, it does not matter.
@@ -42,7 +42,7 @@ This behavior helps prevent credentials from being misused by untrusted third pa
 ## Intranet zone
 
 For the Intranet zone, by default it only allows single-label names, such as Http://finance.
-If the resource that needs to be accessed has multiple domain labels, then the workaround is to use the [Registry CSP](https://msdn.microsoft.com/library/windows/hardware/dn904964.aspx).
+If the resource that needs to be accessed has multiple domain labels, then the workaround is to use the [Registry CSP](/windows/client-management/mdm/registry-csp).
 
 ### Setting the ZoneMap
 
@@ -83,7 +83,7 @@ If the credentials are certificate-based, then the elements in the following tab
 ## NDES server configuration
 
 The NDES server is required to be configured so that incoming SCEP requests can be mapped to the correct template to be used.
-For more information, see [Configure certificate infrastructure for SCEP](https://docs.microsoft.com/mem/intune/protect/certificates-scep-configure).
+For more information, see [Configure certificate infrastructure for SCEP](/mem/intune/protect/certificates-scep-configure).
 
 ## Active Directory requirements
 
@@ -95,4 +95,3 @@ The domain controllers must be using certificates based on the updated KDC certi
 This is because Windows 10 Mobile requires strict KDC validation to be enabled.
 This requires that all authenticating domain controllers run Windows Server 2016, or you'll need to enable strict KDC validation on domain controllers that run previous versions of Windows Server.
 For more information, see [Enabling Strict KDC Validation in Windows Kerberos](https://www.microsoft.com/download/details.aspx?id=6382).
-

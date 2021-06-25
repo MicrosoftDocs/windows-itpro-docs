@@ -4,9 +4,9 @@ description: This section describes the EmbeddedLockdownProfiles setting that yo
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
@@ -29,4 +29,4 @@ Use to apply an XML configuration to a mobile device that locks down the device,
 
 ## Related topics
 
-- [EnterpriseAssignedAccess configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseassignedaccess-csp)
+- [EnterpriseAssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/enterpriseassignedaccess-csp)

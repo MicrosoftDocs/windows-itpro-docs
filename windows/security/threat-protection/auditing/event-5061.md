@@ -2,7 +2,7 @@
 title: 5061(S, F) Cryptographic operation. (Windows 10)
 description: Describes security event 5061(S, F) Cryptographic operation. This event is generated when a cryptographic operation is performed using a Key Storage Provider.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5061(S, F): Cryptographic operation.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates when a cryptographic operation (open key, create key, create key, and so on) was performed using a [Key Storage Provider](https://msdn.microsoft.com/library/windows/desktop/bb931355(v=vs.85).aspx) (KSP). This event generates only if one of the following KSPs were used:
+This event generates when a cryptographic operation (open key, create key, create key, and so on) was performed using a [Key Storage Provider](/windows/win32/seccertenroll/cng-key-storage-providers) (KSP). This event generates only if one of the following KSPs were used:
 
 -   Microsoft Software Key Storage Provider
 
@@ -168,4 +169,3 @@ For 5061(S, F): Cryptographic operation.
 -   Typically this event is required for detailed monitoring of KSP-related actions with cryptographic keys. If you need to monitor actions related to specific cryptographic keys (**“Key Name”)** or a specific **“Operation”**, such as **“Delete Key”**, create monitoring rules and use this event as an information source.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
-

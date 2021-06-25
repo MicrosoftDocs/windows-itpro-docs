@@ -2,7 +2,7 @@
 title: 4688(S) A new process has been created. (Windows 10)
 description: Describes security event 4688(S) A new process has been created. This event is generated when a new process starts.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4688(S): A new process has been created.
@@ -159,7 +160,7 @@ This event generates every time a new process starts.
 
     -   **TokenElevationTypeLimited (3):** Type 3 is a limited token with administrative privileges removed and administrative groups disabled. The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
 
--   **Mandatory Label** \[Version 2\] \[Type = SID\]**:** SID of [integrity label](https://msdn.microsoft.com/library/windows/desktop/bb648648(v=vs.85).aspx) which was assigned to the new process. Can have one of the following values:
+-   **Mandatory Label** \[Version 2\] \[Type = SID\]**:** SID of [integrity label](/windows/win32/secauthz/mandatory-integrity-control) which was assigned to the new process. Can have one of the following values:
 
 | SID          | RID        | RID label                                    | Meaning                |
 |--------------|------------|----------------------------------------------|------------------------|

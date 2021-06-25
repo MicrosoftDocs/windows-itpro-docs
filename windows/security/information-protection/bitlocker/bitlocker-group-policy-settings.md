@@ -20,16 +20,16 @@ ms.custom: bitlocker
 
 # BitLocker Group Policy settings
 
-**Applies to**
+**Applies to:**
 
-- Windows 10
+- Windows 10, Windows Server 2019, Windows Server 2016, Windows 8.1, and Windows Server 2012 R2
 
 This topic for IT professionals describes the function, location, and effect of each Group Policy setting that is used to manage BitLocker Drive Encryption.
 
 To control what drive encryption tasks the user can perform from the Windows Control Panel or to modify other configuration options, you can use Group Policy administrative templates or local computer policy settings. How you configure these policy settings depends on how you implement BitLocker and what level of user interaction will be allowed.
 
 > [!NOTE]
-> A separate set of Group Policy settings supports the use of the Trusted Platform Module (TPM). For details about those settings, see [Trusted Platform Module Group Policy settings](/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings).
+> A separate set of Group Policy settings supports the use of the Trusted Platform Module (TPM). For details about those settings, see [Trusted Platform Module Group Policy settings](../tpm/trusted-platform-module-services-group-policy-settings.md).
 
 BitLocker Group Policy settings can be accessed using the Local Group Policy Editor and the Group Policy Management Console (GPMC) under **Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption**.
 Most of the BitLocker Group Policy settings are applied when BitLocker is initially turned on for a drive. If a computer is not compliant with existing Group Policy settings, BitLocker may not be turned on or modified until the computer is in a compliant state. When a drive is out of compliance with Group Policy settings (for example, if a Group Policy setting was changed after the initial BitLocker deployment in your organization, and then the setting was applied to previously encrypted drives), no change can be made to the BitLocker configuration of that drive except a change that will bring it into compliance.
@@ -38,7 +38,7 @@ If multiple changes are necessary to bring the drive into compliance, you must s
 Policy settings are changed to disallow passwords and require smart cards. In this situation, you need to suspend BitLocker protection by using the [Manage-bde](/windows-server/administration/windows-commands/manage-bde) command-line tool, delete the password unlock method, and add the smart card method. After this is complete, BitLocker is compliant with the Group Policy setting and BitLocker protection on the drive can be resumed.
 
 > [!NOTE]
-> For more details about Active Directory configuration related to BitLocker enablement, please see [Set up MDT for BitLocker](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker).
+> For more details about Active Directory configuration related to BitLocker enablement, please see [Set up MDT for BitLocker](/windows/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker).
 
 ## <a href="" id="bkmk-gptop"></a>BitLocker Group Policy settings
 
@@ -211,7 +211,7 @@ This policy setting permits the use of enhanced PINs when you use an unlock meth
 
 Enhanced startup PINs permit the use of characters (including uppercase and lowercase letters, symbols, numbers, and spaces). This policy setting is applied when you turn on BitLocker.
 
-> [!IMPORANT]
+> [!IMPORTANT]
 > Not all computers support enhanced PIN characters in the preboot environment. It is strongly recommended that users perform a system check during the BitLocker setup to verify that enhanced PIN characters can be used.
 
 ### <a href="" id="bkmk-unlockpol3"></a>Configure minimum PIN length for startup
@@ -236,7 +236,7 @@ Originally, BitLocker allowed from 4 to 20 characters for a PIN.
 Windows Hello has its own PIN for logon, which can be 4 to 127 characters.
 Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks.
 
-The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings)) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made.
+The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](../tpm/trusted-platform-module-services-group-policy-settings.md)) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made.
 
 The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability.
 For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time.
@@ -267,7 +267,7 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 
 **Reference**
 
-This policy setting is only enforced when BitLocker or device encryption is enabled. As explained in the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2018/01/18/issue-with-bitlockerdma-setting-in-windows-10-fall-creators-update-v1709/), in some cases when this setting is enabled, internal, PCI-based peripherals can fail, including wireless network drivers and input and audio peripherals. This problem is fixed in the [April 2018 quality update](https://support.microsoft.com/help/4093105).
+This policy setting is only enforced when BitLocker or device encryption is enabled. As explained in the [Microsoft Security Guidance blog](/archive/blogs/secguide/issue-with-bitlockerdma-setting-in-windows-10-fall-creators-update-v1709), in some cases when this setting is enabled, internal, PCI-based peripherals can fail, including wireless network drivers and input and audio peripherals. This problem is fixed in the [April 2018 quality update](https://support.microsoft.com/help/4093105).
 
 ### <a href="" id="bkmk-dpinchange"></a>Disallow standard users from changing the PIN or password
 
@@ -463,7 +463,7 @@ When set to **Do not allow complexity**, no password complexity validation will 
 > [!NOTE]
 > Passwords cannot be used if FIPS compliance is enabled. The **System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing** policy setting in **Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options** specifies whether FIPS compliance is enabled.
 
-For information about this setting, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing).
+For information about this setting, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](../../threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
 
 ### <a href="" id="bkmk-unlockpol9"></a>Validate smart card certificate usage rule compliance
 
@@ -1309,7 +1309,7 @@ You can save the optional recovery key to a USB drive. Because recovery password
 
 You can edit the FIPS setting by using the Security Policy Editor (Secpol.msc) or by editing the Windows registry. You must be an administrator to perform these procedures.
 
-For more information about setting this policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing).
+For more information about setting this policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](../../threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
 
 ## Power management Group Policy settings: Sleep and Hibernate
 
@@ -1341,6 +1341,6 @@ PCR 7 measurements are a mandatory logo requirement for systems that support Mod
 
 - [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
 - [TPM Group Policy settings](/windows/device-security/tpm/trusted-platform-module-services-group-policy-settings)
-- [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md)
+- [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml)
 - [BitLocker overview](bitlocker-overview.md)
 - [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)

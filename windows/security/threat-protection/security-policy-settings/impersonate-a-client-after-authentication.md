@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: 4cd241e2-c680-4b43-8ed0-3b391925cec5
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Impersonate a client after authentication
@@ -104,6 +105,8 @@ On member servers, ensure that only the Administrators and Service groups (Local
 ### Potential impact
 
 In most cases, this configuration has no impact. If you have installed optional components such as ASP.NET or IIS, you may need to assign the **Impersonate a client after authentication** user right to additional accounts that are required by those components, such as IUSR\_*&lt;ComputerName&gt;*, IIS\_WPG, ASP.NET, or IWAM\_*&lt;ComputerName&gt;*.
+
+In IIS 7.0 and later, a built-in account (IUSR) replaces the IUSR_MachineName account. Additionally, a group that is named IIS_IUSRS replaces the IIS_WPG group. Because the IUSR account is a built-in account, the IUSR account no longer requires a password. The IUSR account resembles a network or local service account. For more details, see [Default permissions and user rights for IIS 7.0 and later](/troubleshoot/iis/default-permissions-user-rights).
 
 ## Related topics
 

@@ -37,10 +37,9 @@ You can use the Volume Activation Management Tool (VAMT) to install retail, Mult
 
     **Note**  
     Product key installation will fail if VAMT finds mismatched key types or editions. VAMT will display the failure status and will continue the installation for the next product in the list. For more information on choosing the correct MAK or KMS Host key (CSVLK), see [How to Choose the Right 
-    Volume License Key for Windows](https://go.microsoft.com/fwlink/p/?linkid=238382).
+    Volume License Key for Windows](/previous-versions/tn-archive/ee939271(v=technet.10)).
 
 ## Related topics
 
 - [Manage Product Keys](manage-product-keys-vamt.md)
- 
  

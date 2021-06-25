@@ -1,6 +1,6 @@
 ---
 title: Perform in-place upgrade to Windows 10 via Configuration Manager
-description: Learn how to perform an in-place upgrade to Windows 10 by automating the process with a Microsoft Endpoint Configuration Manager task sequence.
+description: Learn how to perform an in-place upgrade to Windows 10 by automating the process with a Microsoft Endpoint Manager task sequence.
 ms.assetid: F8DF6191-0DB0-4EF5-A9B1-6A11D5DE4878
 ms.reviewer: 
 manager: laurawi
@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows 10
 
-The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Endpoint Configuration Manager task sequence to completely automate the process.
+The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Endpoint Manager task sequence to completely automate the process.
 
 >[!IMPORTANT]
 >Beginning with Windows 10 and Windows Server 2016, Windows Defender is already installed. A management client for Windows Defender is also installed automatically if the Configuration Manager client is installed. However, previous Windows operating systems installed the System Center Endpoint Protection (SCEP) client with the Configuration Manager client. The SCEP client can block in-place upgrade to Windows 10 due to incompatibility, and must be removed from a device before performing an in-place upgrade to Windows 10.
@@ -41,7 +41,7 @@ All server and client computers referenced in this guide are on the same subnet.
 
 ## Add an OS upgrade package
 
-Configuration Manager Current Branch includes a native in-place upgrade task. This task sequence differs from the MDT in-place upgrade task sequence in that it does not use a default OS image, but rather uses an [OS upgrade package](https://docs.microsoft.com/configmgr/osd/get-started/manage-operating-system-upgrade-packages).
+Configuration Manager Current Branch includes a native in-place upgrade task. This task sequence differs from the MDT in-place upgrade task sequence in that it does not use a default OS image, but rather uses an [OS upgrade package](/configmgr/osd/get-started/manage-operating-system-upgrade-packages).
 
 On **CM01**:
 

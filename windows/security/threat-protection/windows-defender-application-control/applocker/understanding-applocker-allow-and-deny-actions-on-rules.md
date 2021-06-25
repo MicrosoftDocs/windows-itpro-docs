@@ -4,7 +4,7 @@ description: This topic explains the differences between allow and deny actions 
 ms.assetid: ea0370fa-2086-46b5-a0a4-4a7ead8cbed9
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Understanding AppLocker allow and deny actions on rules

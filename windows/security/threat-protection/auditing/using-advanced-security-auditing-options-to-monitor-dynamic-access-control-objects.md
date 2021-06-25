@@ -4,7 +4,7 @@ description: Domain admins can set up advanced security audit options in Windows
 ms.assetid: 0d2c28ea-bdaf-47fd-bca2-a07dce5fed37
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Using advanced security auditing options to monitor dynamic access control objects
@@ -24,7 +25,7 @@ ms.date: 04/19/2017
 
 This guide explains the process of setting up advanced security auditing capabilities that are made possible through settings and events that were introduced in Windows 8 and Windows Server 2012.
 
-These procedures can be deployed with the advanced security auditing capabilities described in [Deploy Security Auditing with Central Audit Policies (Demonstration Steps)](https://technet.microsoft.com/library/hh831542.aspx).
+These procedures can be deployed with the advanced security auditing capabilities described in [Deploy Security Auditing with Central Audit Policies (Demonstration Steps)](/windows-server/identity/solution-guides/deploy-security-auditing-with-central-audit-policies--demonstration-steps-).
 
 ## In this guide
 

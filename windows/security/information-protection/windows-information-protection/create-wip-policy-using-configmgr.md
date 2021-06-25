@@ -1,5 +1,5 @@
 ---
-title: Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager (Windows 10)
+title: Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Manager (Windows 10)
 description: Use Configuration Manager to make & deploy a Windows Information Protection (WIP) policy. Choose protected apps, WIP-protection level, and find enterprise data.
 ms.assetid: 85b99c20-1319-4aa3-8635-c1a87b244529
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -232,7 +232,7 @@ Path                   Publisher
 Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter in the **Publisher Name** box.
 
 ### Add an AppLocker policy file
-For this example, we're going to add an AppLocker XML file to the **App Rules** list. You'll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+For this example, we're going to add an AppLocker XML file to the **App Rules** list. You'll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](../../threat-protection/windows-defender-application-control/applocker/applocker-overview.md) content.
 
 **To create an app rule and xml file using the AppLocker tool**
 1.  Open the Local Security Policy snap-in (SecPol.msc).
@@ -456,7 +456,7 @@ There are no default locations included with WIP, you must add each of your netw
 
    After you create and deploy your WIP policy to your employees, Windows will begin to encrypt your corporate data on the employees' local device drive. If somehow the employees' local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data. 
 
-   For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
+   For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](/previous-versions/tn-archive/cc512680(v=technet.10)) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
 
 ## Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you'll be asked to decide if you want to add any optional WIP settings.
@@ -484,7 +484,7 @@ After you've decided where your protected apps can access enterprise data on you
 
         - **No.** Stop local encryption keys from being revoked from a device during unenrollment. For example, if you're migrating between Mobile Device Management (MDM) solutions.
 
-    - **Allow Azure RMS.** Enables secure sharing of files by using removable media such as USB drives. For more information about how RMS works with WIP, see [Create a WIP policy using Intune](create-wip-policy-using-intune-azure.md). To confirm what templates your tenant has, run [Get-AadrmTemplate](https://docs.microsoft.com/powershell/module/aadrm/get-aadrmtemplate) from the [AADRM PowerShell module](https://docs.microsoft.com/azure/information-protection/administer-powershell). If you don't specify a template, WIP uses a key from a default RMS template that everyone in the tenant will have access to.
+    - **Allow Azure RMS.** Enables secure sharing of files by using removable media such as USB drives. For more information about how RMS works with WIP, see [Create a WIP policy using Intune](create-wip-policy-using-intune-azure.md). To confirm what templates your tenant has, run [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) from the [AADRM PowerShell module](/azure/information-protection/administer-powershell). If you don't specify a template, WIP uses a key from a default RMS template that everyone in the tenant will have access to.
 
 2. After you pick all of the settings you want to include, click **Summary**.
 
@@ -500,11 +500,11 @@ After you've finished configuring your policy, you can review all of your info o
 
 ## Deploy the WIP policy
 After you've created your WIP policy, you'll need to deploy it to your organization's devices. For info about your deployment options, see these topics:
-- [Operations and Maintenance for Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=708224)
+- [Operations and Maintenance for Compliance Settings in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699357(v=technet.10))
 
-- [How to Create Configuration Baselines for Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=708225)
+- [How to Create Configuration Baselines for Compliance Settings in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg712268(v=technet.10))
 
-- [How to Deploy Configuration Baselines in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=708226)
+- [How to Deploy Configuration Baselines in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/hh219289(v=technet.10))
 
 ## Related topics
 

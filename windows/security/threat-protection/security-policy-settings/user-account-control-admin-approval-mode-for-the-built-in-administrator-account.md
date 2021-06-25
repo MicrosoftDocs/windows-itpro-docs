@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the policy se
 ms.assetid: d465fc27-1cd2-498b-9cf6-7ad2276e5998
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2017
+ms.technology: mde
 ---
 
 # User Account Control: Admin Approval Mode for the Built-in Administrator account
@@ -43,9 +44,9 @@ When the Admin Approval Mode is enabled, the local administrator account functio
 
 ### Best practices
 
--   It is recommended not to enable the built-in Administrator account on the client computer, but to use the standard user account and User Account Control (UAC) instead. If you want to enable the built-in Administrator account to carry out administrative tasks, for security reasons you should also enable Admin Approval Mode. See [UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account](https://docs.microsoft.com/windows/device-security/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)
+-   It is recommended not to enable the built-in Administrator account on the client computer, but to use the standard user account and User Account Control (UAC) instead. If you want to enable the built-in Administrator account to carry out administrative tasks, for security reasons you should also enable Admin Approval Mode. See [UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account](/windows/device-security/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)
 
-    To enable Admin Approval Mode, you must also configure the local security policy setting: [User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode](https://docs.microsoft.com/windows/device-security/security-policy-settings/user-account-control-behavior-of-the-elevation-prompt-for-administrators-in-admin-approval-mode) to **Prompt for consent on the secure desktop** and then click OK.
+    To enable Admin Approval Mode, you must also configure the local security policy setting: [User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-behavior-of-the-elevation-prompt-for-administrators-in-admin-approval-mode) to **Prompt for consent on the secure desktop** and then click OK.
 
 > [!NOTE]
 > After enabling Admin Approval Mode, to activate the setting, you must first log in and out. Alternatively, You may perform **gpupdate /force** from an elevated command prompt. 

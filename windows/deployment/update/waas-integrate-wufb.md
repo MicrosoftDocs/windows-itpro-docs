@@ -90,7 +90,7 @@ For Windows 10, version 1607, organizations already managing their systems with 
 
 ![Example of unknown devices](images/wufb-sccm.png)
 
-For more information, see [Integration with Windows Update for Business in Windows 10](https://docs.microsoft.com/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10).
+For more information, see [Integration with Windows Update for Business in Windows 10](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10).
 
 ## Related topics
 
@@ -101,13 +101,11 @@ For more information, see [Integration with Windows Update for Business in Windo
 - [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Configure BranchCache for Windows 10 updates](waas-branchcache.md) 
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
+- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
 - [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
-- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service)
 - [Manage device restarts after updates](waas-restart.md)
-

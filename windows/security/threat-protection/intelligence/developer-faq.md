@@ -4,17 +4,18 @@ ms.reviewer:
 description: This page provides answers to common questions we receive from software developers
 keywords: wdsi, software, developer, faq, dispute, false-positive, classify, installer, software, bundler, blocking
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
+ms.technology: mde
 ---
 
 # Software developer FAQ
@@ -43,8 +44,8 @@ It contains instructions to offer a program classified as unwanted software. You
 
 ## Why is the Windows Defender Firewall blocking my program?
 
-Firewall blocks aren't related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Windows Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+Firewall blocks aren't related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Windows Defender Firewall](../windows-firewall/windows-firewall-with-advanced-security.md).
 
 ## Why does the Microsoft Defender Windows Defender SmartScreen say my program isn't commonly downloaded?
 
-This isn't related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Microsoft Defender Windows Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+This isn't related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Microsoft Defender Windows Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)

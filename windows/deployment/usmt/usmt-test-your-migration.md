@@ -30,7 +30,7 @@ Running the ScanState and LoadState tools with the **/v**<em>:5</em> option crea
 
  
 
-After you have determined that the pilot migration successfully migrated the specified files and settings, you are ready to add USMT to the server that is running Microsoft Endpoint Configuration Manager, or a non-Microsoft management technology. For more information, see [Manage user state in Configuration Manager](https://docs.microsoft.com/configmgr/osd/get-started/manage-user-state).
+After you have determined that the pilot migration successfully migrated the specified files and settings, you are ready to add USMT to the server that is running Microsoft Endpoint Configuration Manager, or a non-Microsoft management technology. For more information, see [Manage user state in Configuration Manager](/configmgr/osd/get-started/manage-user-state).
 
 **Note**  
 For testing purposes, you can create an uncompressed store using the **/hardlink /nocompress** option. When compression is disabled, the ScanState tool saves the files and settings to a hidden folder named "File" at *StorePath*\\USMT. You can use the uncompressed store to view what USMT has stored or to troubleshoot a problem, or you can run an antivirus utility against the files. Additionally, you can also use the **/listfiles** command-line option and the diagnostic log to list the files that were gathered and to troubleshoot problems with your migration.

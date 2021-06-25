@@ -80,7 +80,7 @@ See the following general troubleshooting procedures associated with a result co
 <tr>
 <td>0xC1800118</td>
 <td>WSUS has downloaded content that it cannot use due to a missing decryption key.</td>
-<td>See <a href="https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/" data-raw-source="[Steps to resolve error 0xC1800118](https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/)">Steps to resolve error 0xC1800118</a> for information.</td>
+<td>See <a href="/archive/blogs/wsus/resolving-error-0xc1800118" data-raw-source="[Steps to resolve error 0xC1800118](/archive/blogs/wsus/resolving-error-0xc1800118)">Steps to resolve error 0xC1800118</a> for information.</td>
 </tr>
 
 <tr>
@@ -153,7 +153,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <tr>
 <td>0xC1900209</td>
 <td>The user has chosen to cancel because the system does not pass the compatibility scan to install the update. Setup.exe will report this error when it can upgrade the machine with user data but cannot migrate installed applications.</td>
-<td>Incompatible software is blocking the upgrade process. Uninstall the application and try the upgrade again. See <a href="https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/" data-raw-source="[Windows 10 Pre-Upgrade Validation using SETUP.EXE](https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/)">Windows 10 Pre-Upgrade Validation using SETUP.EXE</a> for more information.
+<td>Incompatible software is blocking the upgrade process. Uninstall the application and try the upgrade again. See <a href="/archive/blogs/mniehaus/windows-10-pre-upgrade-validation-using-setup-exe" data-raw-source="[Windows 10 Pre-Upgrade Validation using SETUP.EXE](/archive/blogs/mniehaus/windows-10-pre-upgrade-validation-using-setup-exe)">Windows 10 Pre-Upgrade Validation using SETUP.EXE</a> for more information.
 <br>You can also download the <a href="https://go.microsoft.com/fwlink/p/?LinkId=526740">Windows Assessment and Deployment Kit (ADK) for Windows 10</a> and install Application Compatibility Tools.
 </td>
 </tr>
@@ -170,7 +170,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <tr>
 <td>0x80240FFF </td>
 <td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with Microsoft Endpoint Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/">hotfix 3095113</a>, WSUS doesn&#39;t recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
-<td> You can prevent this by installing <a href="https://blogs.technet.microsoft.com/wsus/2015/12/03/important-update-for-wsus-4-0-kb-3095113/">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
+<td> You can prevent this by installing <a href="/archive/blogs/wsus/important-update-for-wsus-4-0-kb-3095113">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
 <ol>
 <li>Disable the Upgrades classification.</li>
 <li>Install hotfix 3095113.</li>
@@ -178,7 +178,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <li>Enable the Upgrades classification.</li>
 <li>Perform a full synch.</li>
 </ol>
-For detailed information on how to run these steps check out <a href="https://blogs.technet.microsoft.com/wsus/2016/01/29/how-to-delete-upgrades-in-wsus/">How to delete upgrades in WSUS</a>.</p>
+For detailed information on how to run these steps check out <a href="/archive/blogs/wsus/how-to-delete-upgrades-in-wsus">How to delete upgrades in WSUS</a>.</p>
 </td>
 </tr>
 
@@ -210,7 +210,7 @@ For detailed information on how to run these steps check out <a href="https://bl
 <tr><td>0x80070003- 0x20007
 <td>This is a failure during SafeOS phase driver installation.
 
-<td><a href="https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
+<td><a href="/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
 </td></tr>
 <tr><td>0x8007025D - 0x2000C
 <td>This error occurs if the ISO file&#39;s metadata is corrupt.<td>&quot;Re-download the ISO/Media and re-attempt the upgrade.
@@ -220,7 +220,7 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 </td></tr>
 <tr><td>0x80070490 - 0x20007<td>An incompatible device driver is present.
 
-<td><a href="https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
+<td><a href="/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
 
 </td></tr>
 <tr><td>0xC1900101 - 0x2000c
@@ -233,7 +233,7 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 
 See <a href="https://www.microsoft.com/windows/windows-10-specifications" data-raw-source="[Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)">Windows 10 Specifications</a> and verify the computer meets minimum requirements.
 
-Review logs for [compatibility information](https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/).</td></tr>
+Review logs for [compatibility information](/archive/blogs/askcore/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues).</td></tr>
 <tr><td>0x80070004 - 0x3000D
 <td>This is a problem with data migration during the first boot phase. There are multiple possible causes.
 
@@ -340,8 +340,10 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 
 ## Related topics
 
-- [Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+- [Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)
 - [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 - [Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 - [Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/home?category=Windows10ITPro)
 - [Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+- [Win 7 to Win 10 upgrade error (0x800707E7 - 0x3000D)](https://answers.microsoft.com/en-us/windows/forum/all/win-7-to-win-10-upgrade-error-0x800707e7-0x3000d/1273bc1e-8a04-44d4-a6b2-808c9feeb020))
+- [Win 10 upgrade error: User profile suffix mismatch, 0x800707E7 - 0x3000D](https://answers.microsoft.com/en-us/windows/forum/windows_10-windows_install/win-10-upgrade-error-user-profile-suffix-mismatch/0f006733-2af5-4b42-a2d4-863fad05273d?page=3)

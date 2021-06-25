@@ -14,7 +14,7 @@ author: jgeurten
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 10/15/2020
+ms.date: 
 ---
 
 # Microsoft recommended driver block rules

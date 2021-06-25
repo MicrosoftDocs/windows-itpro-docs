@@ -5,9 +5,9 @@ keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
@@ -27,7 +27,7 @@ In Windows 10, version 1703, you can install multiple Universal Windows Platform
 When you add an app in a Windows Configuration Designer wizard, the appropriate settings are displayed based on the app that you select. For instructions on adding an app using the advanced editor in Windows Configuration Designer, see [Add an app using advanced editor](#adv).
 
 >[!IMPORTANT]
->If you plan to use Intune to manage your devices, we recommend using Intune to install Microsoft 365 Apps for enterprise 2016 apps (Access, Excel, OneDrive for Business, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Word, Project Desktop Client, and Visio Pro for Microsoft 365 Apps for enterprise). Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to assign Microsoft 365 Apps for enterprise 2016 apps using Microsoft Intune.](https://docs.microsoft.com/intune/apps-add-office365)
+>If you plan to use Intune to manage your devices, we recommend using Intune to install Microsoft 365 Apps for enterprise 2016 apps (Access, Excel, OneDrive for Business, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Word, Project Desktop Client, and Visio Pro for Microsoft 365 Apps for enterprise). Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to assign Microsoft 365 Apps for enterprise 2016 apps using Microsoft Intune.](/intune/apps-add-office365)
 
 ## Settings for UWP apps
 
@@ -42,7 +42,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 ### MSI installer
 
 > [!NOTE]
-> You can find more information about command-line options for Msiexec.exe [here](https://docs.microsoft.com/windows/win32/msi/command-line-options).
+> You can find more information about command-line options for Msiexec.exe [here](/windows/win32/msi/command-line-options).
 
 - **Command line arguments**: Optionally, append additional command arguments. The silent flag is appended for you. Example: PROPERTY=VALUE 
 
@@ -214,5 +214,3 @@ For details about the settings you can customize in provisioning packages, see [
 - [Use the package splitter tool](../mobile-devices/provisioning-package-splitter.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
-
-

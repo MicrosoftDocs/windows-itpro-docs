@@ -2,7 +2,7 @@
 title: 4670(S) Permissions on an object were changed. (Windows 10)
 description: Describes security event 4670(S) Permissions on an object were changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4670(S): Permissions on an object were changed.
@@ -28,9 +29,9 @@ ms.author: dansimp
 
 This event generates when the permissions for an object are changed. The object could be a file system, registry, or security token object.
 
-This event does not generate if the [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) (Auditing ACL) was changed.
+This event does not generate if the [SACL](/windows/win32/secauthz/access-control-lists) (Auditing ACL) was changed.
 
-Before this event can generate, certain ACEs might need to be set in the object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx). For example, for a file system object, it generates only if “Change Permissions" and/or "Take Ownership” are set in the object’s SACL. For a registry key, it generates only if “Write DAC" and/or "Write Owner” are set in the object’s SACL.
+Before this event can generate, certain ACEs might need to be set in the object’s [SACL](/windows/win32/secauthz/access-control-lists). For example, for a file system object, it generates only if “Change Permissions" and/or "Take Ownership” are set in the object’s SACL. For a registry key, it generates only if “Write DAC" and/or "Write Owner” are set in the object’s SACL.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -275,4 +276,3 @@ For file system and registry objects, the following recommendations apply.
 - If you have critical registry objects for which you need to monitor all modifications (especially permissions changes and owner changes), monitor for the specific **Object\\Object Name.**
 
 - If you have high-value computers for which you need to monitor all changes for all or specific objects (for example, file system or registry objects), monitor for all [4670](event-4670.md) events on these computers<b>.</b> For example, you could monitor the **ntds.dit** file on domain controllers.
-

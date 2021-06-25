@@ -3,7 +3,7 @@ title: Windows Defender Application Control Wizard
 description: Microsoft Defender Application Control Wizard (WDAC) Wizard allows users to create, edit, and merge application control policies in a simple to use Windows application.
 keywords: allowlisting, blocklisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,6 +16,7 @@ ms.author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ms.date: 10/14/2020
+ms.technology: mde
 ---
 
 # Windows Defender Application Control Wizard
@@ -25,7 +26,7 @@ ms.date: 10/14/2020
 -   Windows 10
 -   Windows Server 2016 and above
 
-The Windows Defender Application Control (WDAC) policy Wizard is an open source Windows desktop application written in C# and bundled as an MSIX package. The Wizard was built to provide security architects, security and system administrators with a more user-friendly means to create, edit, and merge WDAC policies. The Wizard desktop application uses the [ConfigCI PowerShell Cmdlets](https://docs.microsoft.com/powershell/module/configci) in the backend so the output policy of the Wizard and PowerShell cmdlets is identical. 
+The Windows Defender Application Control (WDAC) policy Wizard is an open source Windows desktop application written in C# and bundled as an MSIX package. The Wizard was built to provide security architects, security and system administrators with a more user-friendly means to create, edit, and merge WDAC policies. The Wizard desktop application uses the [ConfigCI PowerShell Cmdlets](/powershell/module/configci) in the backend so the output policy of the Wizard and PowerShell cmdlets is identical. 
 
 ## Downloading the application
 

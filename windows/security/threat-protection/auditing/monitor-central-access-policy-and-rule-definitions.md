@@ -4,7 +4,7 @@ description: Learn how to use advanced security auditing options to monitor chan
 ms.assetid: 553f98a6-7606-4518-a3c5-347a33105130
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Monitor central access policy and rule definitions
@@ -26,7 +27,7 @@ This article for IT professionals describes how to monitor changes to central ac
 
 Central access policies and rules determine access permissions for files on multiple file servers, so it's important to monitor changes to them. Like user claim and device claim definitions, central access policy and rule definitions reside in Active Directory Domain Services (AD DS). You can monitor them just like any other object in Active Directory. These policies and rules are critical elements in a Dynamic Access Control deployment. They are stored in AD DS, so they're less likely to be tampered with than other network objects. But it's important to monitor them for potential changes in security auditing and to verify that policies are being enforced.
 
-Follow the procedures in this article to configure settings to monitor changes to central access policy and central access rule definitions and to verify the changes. These procedures assume that you've configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you haven't yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (demonstration steps)](https://technet.microsoft.com/library/hh846167.aspx).
+Follow the procedures in this article to configure settings to monitor changes to central access policy and central access rule definitions and to verify the changes. These procedures assume that you've configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you haven't yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (demonstration steps)](/windows-server/identity/solution-guides/deploy-a-central-access-policy--demonstration-steps-).
 
 > [!NOTE]
 > Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.

@@ -11,19 +11,97 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Firewall CSP
+# Firewall configuration service provider (CSP)
 
 
 The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, as well as the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP was added Windows 10, version 1709.
  
 Firewall rules in the FirewallRules section must be wrapped in an Atomic block in SyncML, either individually or collectively.
 
-For detailed information on some of the fields below see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](https://msdn.microsoft.com/library/mt620101.aspx).
+For detailed information on some of the fields below see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](/openspecs/windows_protocols/ms-winerrata/6521c5c4-1f76-4003-9ade-5cccfc27c8ac).
 
-The following diagram shows the Firewall configuration service provider in tree format. 
-
-![firewall csp](images/provisioning-csp-firewall.png)
-
+The following shows the Firewall configuration service provider in tree format. 
+```
+./Vendor/MSFT
+Firewall
+----
+--------Global
+------------PolicyVersionSupported
+------------CurrentProfiles
+------------DisableStatefulFtp
+------------SaIdleTime
+------------PresharedKeyEncoding
+------------IPsecExempt
+------------CRLcheck
+------------PolicyVersion
+------------BinaryVersionSupported
+------------OpportunisticallyMatchAuthSetPerKM
+------------EnablePacketQueue
+--------DomainProfile
+------------EnableFirewall
+------------DisableStealthMode
+------------Shielded
+------------DisableUnicastResponsesToMulticastBroadcast
+------------DisableInboundNotifications
+------------AuthAppsAllowUserPrefMerge
+------------GlobalPortsAllowUserPrefMerge
+------------AllowLocalPolicyMerge
+------------AllowLocalIpsecPolicyMerge
+------------DefaultOutboundAction
+------------DefaultInboundAction
+------------DisableStealthModeIpsecSecuredPacketExemption
+--------PrivateProfile
+------------EnableFirewall
+------------DisableStealthMode
+------------Shielded
+------------DisableUnicastResponsesToMulticastBroadcast
+------------DisableInboundNotifications
+------------AuthAppsAllowUserPrefMerge
+------------GlobalPortsAllowUserPrefMerge
+------------AllowLocalPolicyMerge
+------------AllowLocalIpsecPolicyMerge
+------------DefaultOutboundAction
+------------DefaultInboundAction
+------------DisableStealthModeIpsecSecuredPacketExemption
+--------PublicProfile
+------------EnableFirewall
+------------DisableStealthMode
+------------Shielded
+------------DisableUnicastResponsesToMulticastBroadcast
+------------DisableInboundNotifications
+------------AuthAppsAllowUserPrefMerge
+------------GlobalPortsAllowUserPrefMerge
+------------AllowLocalPolicyMerge
+------------AllowLocalIpsecPolicyMerge
+------------DefaultOutboundAction
+------------DefaultInboundAction
+------------DisableStealthModeIpsecSecuredPacketExemption
+--------FirewallRules
+------------FirewallRuleName
+----------------App
+--------------------PackageFamilyName
+--------------------FilePath
+--------------------Fqbn
+--------------------ServiceName
+----------------Protocol
+----------------LocalPortRanges
+----------------RemotePortRanges
+----------------LocalAddressRanges
+----------------RemoteAddressRanges
+----------------Description
+----------------Enabled
+----------------Profiles
+----------------Action
+--------------------Type
+----------------Direction
+----------------InterfaceTypes
+----------------EdgeTraversal
+----------------LocalUserAuthorizationList
+----------------FriendlyName
+----------------IcmpTypesAndCodes
+----------------Status
+----------------Name
+```
 <a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/Firewall**
 <p style="margin-left: 20px">Root node for the Firewall configuration service provider.</p>
 
@@ -40,7 +118,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">Value type in integer. Supported operation is Get.</p>
 
 <a href="" id="currentprofiles"></a>**MdmStore/Global/CurrentProfiles**
-<p style="margin-left: 20px">Integer value that contains a bitmask of the current enforced profiles that are maintained by the server firewall host. See <a href="https://msdn.microsoft.com/library/cc231559.aspx" data-raw-source="[FW_PROFILE_TYPE](https://msdn.microsoft.com/library/cc231559.aspx)">FW_PROFILE_TYPE</a> for the bitmasks that are used to identify profile types. This value is available only in the dynamic store; therefore, it is not merged and has no merge law.</p>
+<p style="margin-left: 20px">Integer value that contains a bitmask of the current enforced profiles that are maintained by the server firewall host. See <a href="/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc" data-raw-source="[FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc)">FW_PROFILE_TYPE</a> for the bitmasks that are used to identify profile types. This value is available only in the dynamic store; therefore, it is not merged and has no merge law.</p>
 <p style="margin-left: 20px">Value type in integer. Supported operation is Get.</p>
 
 <a href="" id="disablestatefulftp"></a>**MdmStore/Global/DisableStatefulFtp**
@@ -54,12 +132,12 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="presharedkeyencoding"></a>**MdmStore/Global/PresharedKeyEncoding**
-<p style="margin-left: 20px">Specifies the preshared key encoding that is used. The value is integer and MUST be a valid value from the <a href="https://msdn.microsoft.com/library/cc231525.aspx" data-raw-source="[PRESHARED_KEY_ENCODING_VALUES enumeration](https://msdn.microsoft.com/library/cc231525.aspx)">PRESHARED_KEY_ENCODING_VALUES enumeration</a>. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.</p>
+<p style="margin-left: 20px">Specifies the preshared key encoding that is used. The value is integer and MUST be a valid value from the <a href="/openspecs/windows_protocols/ms-fasp/b9d24a5e-7755-4c60-adeb-e0c7a718f909" data-raw-source="[PRESHARED_KEY_ENCODING_VALUES enumeration](/openspecs/windows_protocols/ms-fasp/b9d24a5e-7755-4c60-adeb-e0c7a718f909)">PRESHARED_KEY_ENCODING_VALUES enumeration</a>. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.</p>
 <p style="margin-left: 20px">Default value is 1.</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="ipsecexempt"></a>**MdmStore/Global/IPsecExempt**
-<p style="margin-left: 20px">This value configures IPsec exceptions. The value is integer and MUST be a combination of the valid flags that are defined in <a href="https://msdn.microsoft.com/library/cc231523.aspx" data-raw-source="[IPSEC_EXEMPT_VALUES](https://msdn.microsoft.com/library/cc231523.aspx)">IPSEC_EXEMPT_VALUES</a>; therefore, the maximum value MUST always be IPSEC_EXEMPT_MAX-1 for servers supporting a schema version of 0x0201 and IPSEC_EXEMPT_MAX_V2_0-1 for servers supporting a schema version of 0x0200. If the maximum value is exceeded when the method RRPC_FWSetGlobalConfig (Opnum 4) is called, the method returns ERROR_INVALID_PARAMETER. This error code is returned if no other preceding error is discovered. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.</p>
+<p style="margin-left: 20px">This value configures IPsec exceptions. The value is integer and MUST be a combination of the valid flags that are defined in <a href="/openspecs/windows_protocols/ms-fasp/7daabd9f-74c3-4295-add6-e2402b01b191" data-raw-source="[IPSEC_EXEMPT_VALUES](/openspecs/windows_protocols/ms-fasp/7daabd9f-74c3-4295-add6-e2402b01b191)">IPSEC_EXEMPT_VALUES</a>; therefore, the maximum value MUST always be IPSEC_EXEMPT_MAX-1 for servers supporting a schema version of 0x0201 and IPSEC_EXEMPT_MAX_V2_0-1 for servers supporting a schema version of 0x0200. If the maximum value is exceeded when the method RRPC_FWSetGlobalConfig (Opnum 4) is called, the method returns ERROR_INVALID_PARAMETER. This error code is returned if no other preceding error is discovered. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.</p>
 <p style="margin-left: 20px">Default value is 0.</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
@@ -291,7 +369,7 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">Boolean value. Supported operations are Get and Replace.</p>
 
 <a href="" id="profiles"></a>**FirewallRules/_FirewallRuleName_/Profiles**
-<p style="margin-left: 20px">Specifies the profiles to which the rule belongs: Domain, Private, Public. .  See <a href="https://msdn.microsoft.com/library/cc231559.aspx" data-raw-source="[FW_PROFILE_TYPE](https://msdn.microsoft.com/library/cc231559.aspx)">FW_PROFILE_TYPE</a> for the bitmasks that are used to identify profile types.</p>
+<p style="margin-left: 20px">Specifies the profiles to which the rule belongs: Domain, Private, Public. .  See <a href="/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc" data-raw-source="[FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc)">FW_PROFILE_TYPE</a> for the bitmasks that are used to identify profile types.</p>
 <p style="margin-left: 20px">If not specified, the default is All.</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Get and Replace.</p>
 

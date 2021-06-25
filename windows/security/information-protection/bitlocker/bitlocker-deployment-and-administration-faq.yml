@@ -29,13 +29,13 @@ sections:
     questions:
       - question: Can BitLocker deployment be automated in an enterprise environment?
         answer: |
-          Yes, you can automate the deployment and configuration of BitLocker and the TPM using either WMI or Windows PowerShell scripts. How you choose to implement the scripts depends on your environment. You can also use Manage-bde.exe to locally or remotely configure BitLocker. For more info about writing scripts that use the BitLocker WMI providers, see [BitLocker Drive Encryption Provider](https://go.microsoft.com/fwlink/p/?LinkId=80600). For more info about using Windows PowerShell cmdlets with BitLocker Drive Encryption, see [BitLocker Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/bitlocker/index?view=win10-ps).
+          Yes, you can automate the deployment and configuration of BitLocker and the TPM using either WMI or Windows PowerShell scripts. How you choose to implement the scripts depends on your environment. You can also use Manage-bde.exe to locally or remotely configure BitLocker. For more info about writing scripts that use the BitLocker WMI providers, see [BitLocker Drive Encryption Provider](/windows/win32/secprov/bitlocker-drive-encryption-provider). For more info about using Windows PowerShell cmdlets with BitLocker Drive Encryption, see [BitLocker Cmdlets in Windows PowerShell](/powershell/module/bitlocker/index?view=win10-ps).
           
       - question: Can BitLocker encrypt more than just the operating system drive?
         answer: Yes.
 
       - question: Is there a noticeable performance impact when BitLocker is enabled on a computer?
-        answer: Generally it imposes a single-digit percentage performance overhead.
+        answer: Typically, there's a small performance overhead, often in single-digit percentages, which is relative to the throughput of the storage operations on which it needs to operate.
 
       - question: How long will initial encryption take when BitLocker is turned on?
         answer: |
@@ -94,4 +94,3 @@ sections:
 
       - question: What type of disk configurations are supported by BitLocker?
         answer: Any number of internal, fixed data drives can be protected with BitLocker. On some versions ATA and SATA-based, direct-attached storage devices are also supported.
-

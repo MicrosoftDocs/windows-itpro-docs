@@ -281,7 +281,7 @@ Scanstate /ui:S1-5-21-124525095-708259637-1543119021*
 
 The wild card (\*) at the end of the SID will migrate the *SID*\_Classes key as well.
 
-You can also use patterns for SIDs that identify generic users or groups. For example, you can use the */ue:\*-500* option to exclude the local administrator accounts. For more information about Windows SIDs, see [this Microsoft Web site](https://go.microsoft.com/fwlink/p/?LinkId=190277).
+You can also use patterns for SIDs that identify generic users or groups. For example, you can use the */ue:\*-500* option to exclude the local administrator accounts. For more information about Windows SIDs, see [this Microsoft Web site](/troubleshoot/windows-server/identity/security-identifiers-in-windows).
 
 ### My script to wipe the disk fails after running the ScanState tool on a 64-bit system.
 
@@ -325,17 +325,11 @@ You should also reboot the machine.
 
 [User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md)
 
-[Frequently Asked Questions](usmt-faq.md)
+[Frequently Asked Questions](usmt-faq.yml)
 
 [Return Codes](usmt-return-codes.md)
 
 [UsmtUtils Syntax](usmt-utilities.md)
 
  
-
- 
-
-
-
-
 
