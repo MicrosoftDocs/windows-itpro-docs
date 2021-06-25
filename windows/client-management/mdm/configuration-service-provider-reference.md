@@ -1035,7 +1035,7 @@ Additional lists:
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" />
-<a href="https://docs.microsoft.com/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection"><sup>A<sup></td>
+<a href="client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection"><sup>A<sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>

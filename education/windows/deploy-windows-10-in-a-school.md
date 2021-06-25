@@ -1049,13 +1049,13 @@ Prior to deployment of Windows 10, ensure that you complete the tasks listed in 
 
 *Table 12. Deployment preparation checklist*
 
+| Tasks |
+|-------|
+| The target devices have sufficient system resources to run Windows 10. |
+| Identify the necessary devices drivers, and import them to the MDT deployment share. |
+| Create an MDT application for each Microsoft Store and Windows desktop app. |
+| Notify the students and faculty about the deployment. |
 
-| Task |                                                                                      |
-|------|--------------------------------------------------------------------------------------|
-|      |        The target devices have sufficient system resources to run Windows 10.        |
-|      | Identify the necessary devices drivers, and import them to the MDT deployment share. |
-|      |     Create an MDT application for each Microsoft Store and Windows desktop app.      |
-|      |                Notify the students and faculty about the deployment.                 |
 
 <p>
 
