@@ -1,16 +1,11 @@
 ---
-title: No title
-description: No description
-keywords: ["Windows 10"]
+title: SV
+description: SV
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
+manager: laurawi
+ms.topic: article
 author: greg-lindsay
 ms.author: greglin
-manager: laurawi
-ms.localizationpriority: high
-ms.topic: article
 ---
 
-# _
+# .
