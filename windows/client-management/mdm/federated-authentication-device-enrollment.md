@@ -119,6 +119,7 @@ The following example shows the discovery service request.
           </request>
         </Discover>
       </s:Body>
+    </s:Envelope>
 ```
 
 The discovery response is in the XML format and includes the following fields:
