@@ -24,7 +24,7 @@ GET./Device/Vendor/MSFT/LanguagePackManagement/InstalledLanguages /zh-CN/Provide
 GET./Device/Vendor/MSFT/LanguagePackManagement/InstalledLanguages /ja-JP/Providers   
 ```
 
-The nodes under **InstalledLanguages** are the language tags of the installed languages. The **providers** node under language tag is the bit map representation of either **language pack (features)** or **LXPs**. The value of **1** indicates the language pack installed is a System Language Pack (non-LXP), **2** indidcates that the LXP is installed. **3** indicates that both are installed.
+The nodes under **InstalledLanguages** are the language tags of the installed languages. The **providers** node under language tag is the bit map representation of either **language pack (features)** or **LXPs**. The value of **1** indicates the language pack installed is a System Language Pack (non-LXP), **2** indicates that the LXP is installed. **3** indicates that both are installed.
 
 2. Install language pack features with the EXECUTE command on the **StartInstall** node of the language. For example, 
 
