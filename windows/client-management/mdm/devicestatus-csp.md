@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 04/30/2019
+ms.date: 06/25/2021
 ---
 
 # DeviceStatus CSP
@@ -150,8 +150,8 @@ Node for the compliance query.
 <a href="" id="devicestatus-compliance-encryptioncompliance"></a>**DeviceStatus/Compliance/EncryptionCompliance**  
 Boolean value that indicates compliance with the enterprise encryption policy for OS (system) drives. The value is one of the following:
 
--   0 - not encrypted
--   1 - encrypted
+-   0 - Not encrypted
+-   1 - Encrypted
 
 Supported operation is Get.
 
@@ -179,8 +179,8 @@ Supported operation is Get.
 Added in Windows, version 1803. Read only node that specifies the device mode.
 
 Valid values:  
--  0 - the device is in standard configuration
--  1 - the device is in S mode configuration
+-  0 - The device is in standard configuration
+-  1 - The device is in S mode configuration
 
 Supported operation is Get.
 
@@ -211,10 +211,10 @@ Added in Windows, version 1607. Integer that specifies the status of the antivi
 
 Valid values:
 
--   0 – Antivirus is on and monitoring
--   1 – Antivirus is disabled
--   2 – Antivirus is not monitoring the device/PC or some options have been turned off
--   3 (default) – Antivirus is temporarily not completely monitoring the device/PC
+-   0 – Antivirus is on and monitoring.
+-   1 – Antivirus is disabled.
+-   2 – Antivirus is not monitoring the device/PC or some options have been turned off.
+-   3 (default) – Antivirus is temporarily not completely monitoring the device/PC.
 -   4 – Antivirus not applicable for this device. This is returned for devices like the phone that do not have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
@@ -263,10 +263,10 @@ Added in Windows, version 1607. Integer that specifies the status of the firewa
 
 Valid values:
 
--   0 – Firewall is on and monitoring
--   1 – Firewall has been disabled
--   2 – Firewall is not monitoring all networks or some rules have been turned off
--   3 (default) – Firewall is temporarily not monitoring all networks
+-   0 – Firewall is on and monitoring.
+-   1 – Firewall has been disabled.
+-   2 – Firewall is not monitoring all networks or some rules have been turned off.
+-   3 (default) – Firewall is temporarily not monitoring all networks.
 -   4 – Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
@@ -331,8 +331,8 @@ Added in Windows, version 1709. Virtualization-based security status.  Value is
 - 0 - Running
 - 1 - Reboot required 
 - 2 - 64 bit architecture required 
-- 3 - not licensed 
-- 4 - not configured 
+- 3 - Not licensed 
+- 4 - Not configured 
 - 5 - System doesn't meet hardware requirements 
 - 42 – Other. Event logs in Microsoft-Windows-DeviceGuard have more details
 
