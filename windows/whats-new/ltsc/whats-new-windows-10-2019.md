@@ -36,7 +36,7 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 
 ## Microsoft Intune
 
-Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This includes support for features such as [Windows Autopilot](#windows-autopilot). However, note that Windows 10 Update Rings Device profiles do not support LTSC releases, therefore you should use [Policy configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update), WSUS, or Configuration Manager for patching.
+Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This includes support for features such as [Windows Autopilot](#windows-autopilot). However, note that Windows 10 Update Rings Device profiles do not support LTSC releases, therefore you should use [Policy configuration service provider](/windows/client-management/mdm/policy-csp-update), WSUS, or Configuration Manager for patching.
 
 ## Security
 
