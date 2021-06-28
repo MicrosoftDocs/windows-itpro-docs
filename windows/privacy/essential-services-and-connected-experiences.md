@@ -72,8 +72,8 @@ If automatic updates are turned off, applications and websites may stop working 
 <tr class="even">
 <td>Networking</td>
 <td><p>Networking in Windows provides connectivity to and from your devices to the local intranet and internet. If you turn off networking, Windows 10 devices will lose network connectivity.</p>
-<p>To turn off Network Adapters, see <a href="/powershell/module/netadapter/disable-netadapter?view=windowsserver2019-ps">Disable-NetAdapter</a></p></td>
-</tr>
+<p>To turn off Network Adapters, see <a href="/powershell/module/netadapter/disable-netadapter?view=windowsserver2019-ps&preserve-view=true">Disable-NetAdapter</a></p></td>
+</tr
 <tr class="odd">
 <td><del>Setup Service</del> Device setup</td>
 <td><p>The first time a user sets up a new device, the Windows out-of-box experience (OOBE) guides the user through the steps to accept the license agreement, connect to the internet, sign in to (or sign up for) a Microsoft account, and takes care of other important tasks. Most settings can also be changed after setup is completed.</p>
@@ -167,7 +167,7 @@ If automatic updates are turned off, applications and websites may stop working 
 <td>Activity History</td>
 <td><p>Activity History shows a history of activities a user has performed and can even synchronize activities across multiple devices for the same user.</p>
 <p>Synchronization across devices only works when a user signs in with the same account.</p>
-<p>To turn it off, see <a href="privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-act-history">Activity History.</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-act-history">Activity History.</a></p></td>
 </tr>
 <tr class="odd">
 <td>Settings Synchronization</td>
@@ -287,7 +287,7 @@ To view endpoints for Windows 10 Enterprise, see:
 To view endpoints for non-Enterprise Windows 10 editions, see:
 
 - [Windows 10, version 20H2, connection endpoints for non-Enterprise editions](manage-windows-20h2-endpoints.md)
-- [Windows 10, version 2004, connection endpoints for non-Enterprise editions](windows-endpoints-2004-non-enterprise-editions.md.md)
+- [Windows 10, version 2004, connection endpoints for non-Enterprise editions](windows-endpoints-2004-non-enterprise-editions.md)
 - [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
 - [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
 - [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
