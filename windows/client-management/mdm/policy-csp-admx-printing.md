@@ -1838,7 +1838,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Announces the presence of shared printers to print browse master servers for the domain.
+Available in the latest Windows 10 Insider Preview Build. Announces the presence of shared printers to print browse main servers for the domain.
 
 On domains with Active Directory, shared printer resources are available in Active Directory and are not announced.
 
