@@ -55,6 +55,6 @@
     - name: Information for developers
       items: 
         - name: Software developer FAQ
-          href: developer-faq.md
+          href: developer-faq.yml
         - name: Software developer resources
           href: developer-resources.md
