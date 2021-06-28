@@ -22,7 +22,11 @@ ms.date: 6/28/2021
 
 - Windows 10, version 1903 and later
 
-Windows includes features that connect to the internet to provide enhanced experiences and additional service based capabilities. These are called “connected experiences”. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure. When a connected experience is used, data is sent to and processed by Microsoft to provide that connected experiences. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data. Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. Required service data is separate from Windows diagnostic data. For more information on Windows diagnostic data see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
+Windows includes features that connect to the internet to provide enhanced experiences and additional service based capabilities. These are called “connected experiences”. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure.
+
+When a connected experience is used, data is sent to and processed by Microsoft to provide that connected experiences. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data. Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected.
+
+Required service data is separate from Windows diagnostic data. For more information on Windows diagnostic data see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
 Connected experiences that are critical to the proper functioning of Windows are called “essential services”. For example, the Windows licensing service confirms that you are properly licensed to use Windows. While you can control many of the connected experiences that are available to you and your organization, we recommend that you carefully assess the impact of turning off essential services.
 
@@ -55,7 +59,7 @@ If automatic updates are turned off, applications and websites may stop working 
 <tr class="odd">
 <td>Services Configuration</td>
 <td><p>Services Configuration is used by Windows components and apps, such as the telemetry service, to dynamically update their configuration. If you turn off this service, apps using this service may stop working.</p>
-<p>To turn it off, see <u>Services</u> <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1816-feedback--diagnostics">Configuration</a>.</p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1816-feedback--diagnostics"><u>Services Configuration</u></a>.</p></td>
 </tr>
 <tr class="even">
 <td>Date and Time</td>
@@ -116,7 +120,7 @@ If automatic updates are turned off, applications and websites may stop working 
 <tr class="odd">
 <td>Speech Recognition</td>
 <td><p>Microsoft provides a cloud-based (online) speech recognition technology that allows users to write text by speaking or interact with this system using your voice. It functions by converting speech audio into transcribed text. Turning on the online speech recognition setting enables the use of Microsoft cloud-based speech recognition in Cortana, the Mixed Reality Portal, dictation in Windows from the software keyboard, supported Microsoft Store apps, and in other parts of Windows 10.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#186-speech">Speech</a> Recognition.</p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#186-speech">Speech Recognition.</a></p></td>
 </tr>
 <tr class="even">
 <td>Find My Device</td>
@@ -126,7 +130,7 @@ If automatic updates are turned off, applications and websites may stop working 
 <tr class="odd">
 <td>Windows Insider Program</td>
 <td><p>The Windows Insider Preview program lets you help shape the future of Windows, be part of the community, and get early access to releases of Windows 10. Once you've registered for the program, you can run Insider Preview builds on as many devices as you want, each in the channel of your choice. Learn how to join the Windows Insider program by visiting the program’s <a href="https://insider.windows.com/">website</a>.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#7-insider-preview-builds">Windows</a> Insider Program.</p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#7-insider-preview-builds">Windows Insider Program.</a></p></td>
 </tr>
 <tr class="even">
 <td>Location services</td>
@@ -142,7 +146,7 @@ If automatic updates are turned off, applications and websites may stop working 
 <td>Microsoft Defender Antivirus</td>
 <td><p>Microsoft Defender Antivirus provides cloud-delivered protection against new and emerging threats for the devices in your organization.</p>
 <p>Turning off Microsoft Defender Antivirus will potentially leave your Windows devices in a vulnerable state and more prone to security threats.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#24-windows-defender">Microsoft Defender</a> Antivirus.</p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#24-windows-defender">Microsoft Defender Antivirus.</a></p></td>
 </tr>
 <tr class="odd">
 <td>Microsoft Defender SmartScreen</td>
