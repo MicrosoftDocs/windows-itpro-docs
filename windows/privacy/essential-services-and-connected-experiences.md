@@ -229,10 +229,6 @@ Note: Apart from ActiveX Filtering, which is an essential service, all other fea
 <td>Auto-complete feature for web addresses</td>
 <td>The auto-complete feature suggests possible matches when users are typing web addresses in the browser address bar.</td>
 </tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
 <tr class="even">
 <td>Compatibility logging</td>
 <td>This feature is designed for use by developers and IT professionals to determine the compatibility of their websites with Internet Explorer. It is disabled by default and needs to be enabled to start logging Internet Explorer events in the Windows Event Viewer. These events describe failures that might have happened on the site and can include information about specific controls and webpages that failed.</td>
