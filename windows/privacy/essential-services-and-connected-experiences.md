@@ -46,28 +46,28 @@ Windows connected experiences and essential services transfer data to Microsoft 
 <tr class="odd">
 <td>Authentication</td>
 <td><p>The authentication service is required to enable sign in to work or school accounts. It validates a user’s identity and provides access to multiple apps and system components like OneDrive and activity history. Using a work or school account to sign in to Windows 10 enables Microsoft to provide a consistent experience across your devices. If the authentication service is turned off, many apps and components may lose functionality and users may not be able to sign in.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services#12-microsoft-account">Microsoft Account</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services#12-microsoft-account.md">Microsoft Account</a></p></td>
 </tr>
 <tr class="even">
 <td>Certificates</td>
 <td><p>Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA), are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates that are publicly known to be fraudulent. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.<br />
 If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services#1-automatic-root-certificates-update">Automatic Root Certificates Update</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services#1-automatic-root-certificates-update.md">Automatic Root Certificates Update</a></p></td>
 </tr>
 <tr class="odd">
 <td><del>Configuration Service</del> Services Configuration</td>
 <td><p>Services Configuration is used by Windows components and apps, such as the telemetry service, to dynamically update their configuration. If you turn off this service, apps using this service may stop working.</p>
-<p>To turn it off, see <u>Services</u> <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services#1816-feedback--diagnostics">Configuration</a>.</p></td>
+<p>To turn it off, see <u>Services</u> <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1816-feedback--diagnostics">Configuration</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Date and Time</td>
 <td><p>The Windows Time service is used to synchronize and maintain the most accurate date and time on your devices. It is installed by default and starts automatically on devices that are part of a domain. It can be started manually on other devices. If this service is stopped, date and time synchronization will be unavailable and any services that explicitly depend on it will fail to start.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services#3-date--time"><u>Date and Time</u></a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#3-date--time"><u>Date and Time</u></a></p></td>
 </tr>
 <tr class="odd">
 <td>Licensing</td>
 <td><p>Licensing services are used for the activation of Windows, and apps purchased from the Microsoft Store. If you disable the Windows License Manager Service or the Software Protection Platform Service, it may prevent activation of genuine Windows as well as store applications.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services#9-license-manager">License Manager</a> and <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services#19-software-protection-platform">Software Protection Platform</a>.</p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#9-license-manager">License Manager</a> and <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#19-software-protection-platform">Software Protection Platform</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Networking</td>
@@ -77,7 +77,7 @@ If automatic updates are turned off, applications and websites may stop working 
 <tr class="odd">
 <td><del>Setup Service</del> Device setup</td>
 <td><p>The first time a user sets up a new device, the Windows out-of-box experience (OOBE) guides the user through the steps to accept the license agreement, connect to the internet, sign in to (or sign up for) a Microsoft account, and takes care of other important tasks. Most settings can also be changed after setup is completed.</p>
-<p>To customize the initial setup experience, see <a href="/windows-hardware/customize/desktop/customize-oobe">Customize Setup</a></p></td>
+<p>To customize the initial setup experience, see <a href="/windows-hardware/customize/desktop/customize-oobe.md">Customize Setup</a></p></td>
 </tr>
 <tr class="even">
 <td>Telemetry</td>
