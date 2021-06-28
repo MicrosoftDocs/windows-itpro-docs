@@ -1371,6 +1371,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+
 ## ADMX_ICM policies  
 
 <dl>
@@ -6774,6 +6775,14 @@ The following diagram shows the Policy configuration service provider in tree fo
 </dl>
 
 ### LanmanWorkstation policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-lanmanworkstation.md#lanmanworkstation-enableinsecureguestlogons" id="lanmanworkstation-enableinsecureguestlogons">LanmanWorkstation/EnableInsecureGuestLogons</a>
+  </dd>
+</dl>
+
+### Language Pack Management CSP policies
 
 <dl>
   <dd>
