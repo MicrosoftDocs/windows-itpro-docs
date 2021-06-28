@@ -197,7 +197,7 @@ The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-au
     - **Description:** (Optional) List of domains that are allowed during PIN reset flows.
     - **OMA-URI:** ./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls
     - **Data type:** String
-    - **Value**: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be "signin.contoso.com;portal.contoso.com"
+    - **Value**: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be signin.contoso.com;portal.contoso.com (no double quotes)
 
    ![Custom Configuration for ConfigureWebSignInAllowedUrls policy](images/pinreset/allowlist.png)
 
