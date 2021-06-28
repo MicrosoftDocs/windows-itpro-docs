@@ -22,7 +22,7 @@ The Language Pack Management CSP allows a direct way to provision language packs
     **GET./Device/Vendor/MSFT/LanguagePackManagement/InstalledLanguages/zh-CN/Providers**
     **GET./Device/Vendor/MSFT/LanguagePackManagement/InstalledLanguages/ja-JP/Providers** 
 
-   The nodes under **InstalledLanguages** are the language tags of the installed languages. The **providers** node under language tag is the bit map representation of either "language pack (feature)" or [LXPs](https://www.microsoft.com/en-us/store/collections/localexperiencepacks?cat0=devices&rtc=1). 
+   The nodes under **InstalledLanguages** are the language tags of the installed languages. The **providers** node under language tag is the bit map representation of either "language pack (feature)" or [LXPs](https://www.microsoft.com/store/collections/localexperiencepacks?cat0=devices&rtc=1). 
     - Indicates the language pack installed is a System Language Pack (non-LXP)
     - Indicates that the LXP is installed.
     - Indicates that both are installed.
@@ -40,7 +40,7 @@ The Language Pack Management CSP allows a direct way to provision language packs
     Status: 0 – not started; 1 – in process; 2 – succeeded; 3 – failed. ErrorCode is a HRESULT that could help diagnosis if the installation failed.
 
 > [!NOTE]
-> If IT admin has NOT set the policy of blocking cleanup of unused language packs, this command will fail.  
+    > If IT admin has NOT set the policy of blocking cleanup of unused language packs, this command will fail.  
 
 3. Delete installed Language with the DELETE command on the installed language tag. The delete command is a fire and forget operation. The deletion will run in background. IT admin can query the installed language later and resend the command if needed.
 
