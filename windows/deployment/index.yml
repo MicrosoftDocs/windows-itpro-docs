@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Windows 10 deployment resources and documentation # < 60 chars
-summary: Learn about deploying and keeping Windows 10 up to date.  # < 160 chars
+title: Windows client deployment resources and documentation # < 60 chars
+summary: Learn about deploying and keeping Windows client devices up to date.  # < 160 chars
 
 metadata:
-  title: Windows 10 deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Windows client deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about deploying Windows 10 and keeping it up to date in your organization. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/05/2020 #Required; mm/dd/yyyy format.
+  ms.date: 06/24/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -40,7 +40,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Prepare to deploy Windows 10 updates
+          - text: Prepare to deploy Windows updates
             url: update/prepare-deploy-windows.md
           - text: Prepare updates using Windows Update for Business
             url: update/waas-manage-updates-wufb.md
@@ -65,8 +65,10 @@ landingContent:
       - linkListType: overview
         links:
           - text: What's new in Windows deployment
-            url: windows-10-deployment-scenarios.md
-          - text: Windows 10 deployment scenarios
+            url: deploy-whats-new.md
+          - text: Windows 11 overview
+            url: /windows/whats-new/windows-11.md
+          - text: Windows client deployment scenarios
             url: windows-10-deployment-scenarios.md
           - text: Basics of Windows updates, channels, and tools
             url:  update/get-started-updates-channels-tools.md

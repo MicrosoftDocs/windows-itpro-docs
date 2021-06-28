@@ -128,7 +128,7 @@ Requirements:
     > In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have installed Windows 10, version 1903 or later.
     > 
     > The default behavior for older releases is to revert to **User Credential**.
-    > **Device Credential** is not supported for enrollment type when you have a ConfigMgr Agent on your device.
+    > **Device Credential** is only supported for Microsoft Intune enrollment in scenarios with Co-management or Azure Virtual Desktop.
 
     When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD."
 

@@ -111,21 +111,20 @@ The following table defines which Windows features require TPM support.
 
  Windows Features | TPM Required | Supports TPM 1.2  | Supports TPM 2.0  | Details  |
 -|-|-|-|-
- Measured Boot | Yes | Yes | Yes | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot
+ Measured Boot | Yes | Yes | Yes | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot. TPM 2.0 is recommended since it supports newer cryptographic algorithms. TPM 1.2 only supports the SHA-1 algorithm which is being deprecated.  
  BitLocker | No | Yes | Yes | TPM 1.2 or 2.0 are supported but TPM 2.0 is recommended. [Automatic Device Encryption requires Modern Standby](../bitlocker/bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption) including TPM 2.0 support
  Device Encryption | Yes | N/A | Yes | Device Encryption requires Modern Standby/Connected Standby certification, which requires TPM 2.0.
  Windows Defender Application Control (Device Guard) | No | Yes | Yes
- Windows Defender System Guard | Yes | No | Yes
- Credential Guard | No | Yes | Yes | Windows 10, version 1507 (End of Life as of May 2017) only supported TPM 2.0 for Credential Guard. Beginning with Windows 10, version 1511, TPM 1.2 and 2.0 are supported.
- Device Health Attestation| Yes | Yes | Yes
- Windows Hello/Windows Hello for Business| No | Yes | Yes | Azure AD join supports both versions of TPM, but requires TPM with keyed-hash message authentication code (HMAC) and Endorsement Key (EK) certificate for key attestation support.
+ Windows Defender System Guard (DRTM) | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
+ Credential Guard | No | Yes | Yes | Windows 10, version 1507 (End of Life as of May 2017) only supported TPM 2.0 for Credential Guard. Beginning with Windows 10, version 1511, TPM 1.2 and 2.0 are supported. Paired with Windows Defender System Guard, TPM 2.0 provides enhanced security for Credential Guard. Windows 11 requires TPM 2.0 by default to facilitate easier enablement of this enhanced security for customers.
+ Device Health Attestation| Yes | Yes | Yes | TPM 2.0 is recommended since it supports newer cryptographic algorithms. TPM 1.2 only supports the SHA-1 algorithm which is being deprecated.
+ Windows Hello/Windows Hello for Business| No | Yes | Yes | Azure AD join supports both versions of TPM, but requires TPM with keyed-hash message authentication code (HMAC) and Endorsement Key (EK) certificate for key attestation support. TPM 2.0 is recommended over TPM 1.2 for better performance and security. Windows Hello as a FIDO platform authenticator will take advantage of TPM 2.0 for key storage.
  UEFI Secure Boot | No | Yes | Yes
  TPM Platform Crypto Provider Key Storage Provider| Yes | Yes | Yes
  Virtual Smart Card | Yes | Yes | Yes
  Certificate storage | No | Yes | Yes | TPM is only required when the certificate is stored in the TPM.
  Autopilot | No | N/A | Yes | If you intend to deploy a scenario which requires TPM (such as white glove and self-deploying mode), then TPM 2.0 and UEFI firmware are required.
  SecureBIO | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
- DRTM | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
 
 ## OEM Status on TPM 2.0 system availability and certified parts
 
