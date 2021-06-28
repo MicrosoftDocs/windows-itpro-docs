@@ -24,7 +24,7 @@ ms.date: 6/28/2021
 
 Windows includes features that connect to the internet to provide enhanced experiences and additional service based capabilities. These are called “connected experiences”. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure.
 
-When a connected experience is used, data is sent to and processed by Microsoft to provide that connected experiences. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data. Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected.
+When a connected experience is used, data is sent to and processed by Microsoft to provide that connected experience. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data. Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected.
 
 Required service data is separate from Windows diagnostic data. For more information on Windows diagnostic data see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
@@ -59,12 +59,12 @@ If automatic updates are turned off, applications and websites may stop working 
 <tr class="odd">
 <td>Services Configuration</td>
 <td><p>Services Configuration is used by Windows components and apps, such as the telemetry service, to dynamically update their configuration. If you turn off this service, apps using this service may stop working.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1816-feedback--diagnostics"><u>Services Configuration</u></a>.</p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1816-feedback--diagnostics">Services Configuration</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Date and Time</td>
 <td><p>The Windows Time service is used to synchronize and maintain the most accurate date and time on your devices. It is installed by default and starts automatically on devices that are part of a domain. It can be started manually on other devices. If this service is stopped, date and time synchronization will be unavailable and any services that explicitly depend on it will fail to start.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#3-date--time"><u>Date and Time</u></a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#3-date--time">Date and Time</a></p></td>
 </tr>
 <tr class="odd">
 <td>Licensing</td>
