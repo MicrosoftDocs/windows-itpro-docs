@@ -198,13 +198,13 @@ Windows ships with Microsoft Edge and Internet Explorer on Windows 10 devices. M
 
 You can find details on all of Edge's connected experiences and essential services [here](/microsoft-edge/privacy-whitepaper/).
 
-To turn off specific Edge feature, see [Microsoft Edge](manage-connections-from-windows-operating-system-components-to-microsoft-services#13-microsoft-edge).
+To turn off specific Edge feature, see [Microsoft Edge](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#13-microsoft-edge).
 
 ## IE Essential Services and Connected Experiences
 
 Internet Explorer shares many of the Windows essential services listed above. The following table provides more details on the essential services and connected experiences specific to Internet Explorer.
 
-Note: Apart from ActiveX Filtering, which is an essential service, all other features listed below are connected experiences. To turn off specific connected experiences, see [Internet Explorer](manage-connections-from-windows-operating-system-components-to-microsoft-services#8-internet-explorer).
+Note: Apart from ActiveX Filtering, which is an essential service, all other features listed below are connected experiences. To turn off specific connected experiences, see [Internet Explorer](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#8-internet-explorer).
 
 <table>
 <thead>
@@ -266,36 +266,30 @@ Note: Apart from ActiveX Filtering, which is an essential service, all other fea
 
 ## Related links
 
-- [Manage connections from Windows 10 operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Manage connections from Windows 10 operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 
-- [Connected Experiences in Office.](/deployoffice/privacy/connected-experiences)
+- [Connected Experiences in Office.](/deployoffice/privacy/connected-experiences.md)
 
-- [Essential Services in Office.](/deployoffice/privacy/essential-services)
+- [Essential Services in Office.](/deployoffice/privacy/essential-services.md)
+
+## Other Windows 10 editions
 
 To view endpoints for Windows 10 Enterprise, see:
 
-- [Manage connection endpoints for Windows 10, version 20H2](manage-windows-20h2-endpoints)
-
-- [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints)
-
-- [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints)
-
-- [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints)
-
-- [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints)
-
-- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints)
+- [Manage connection endpoints for Windows 10, version 20H2](manage-windows-20h2-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 2004](manage-windows-2004-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
 
 To view endpoints for non-Enterprise Windows 10 editions, see:
 
-- Windows 10, version 20H2, connection endpoints for non-Enterprise editions
-
-- [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions)
-
-- [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions)
-
-- [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions)
-
-- [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions)
-
-- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions)
+- [Windows 10, version 20H2, connection endpoints for non-Enterprise editions](manage-windows-20h2-endpoints.md)
+- [Windows 10, version 2004, connection endpoints for non-Enterprise editions](windows-endpoints-2004-non-enterprise-editions.md.md)
+- [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
+- [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
+- [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
+- [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions.md)
+- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)
