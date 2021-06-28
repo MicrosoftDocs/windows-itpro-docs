@@ -541,7 +541,7 @@ For more information, see [Microsoft Store for Business](/microsoft-store/index)
 
 IT administrators can control which apps are allowed to be installed on Windows 10 Mobile devices and how they should be kept up-to-date.
 
-Windows 10 Mobile includes AppLocker, which enables administrators to create allow or disallow lists of apps from the Microsoft Store. This capability extends to built-in apps, as well, such as Xbox, Groove, text messaging, email, and calendar, etc. The ability to allow or deny apps helps to ensure that people use their mobile devices for their intended purposes. However, it is not always an easy approach to find a balance between what employees need or request and security concerns. Creating allow or disallow lists also requires keeping up with the changing app landscape in the Microsoft Store.
+Windows 10 Mobile includes AppLocker, which enables administrators to create allowlists or disallow lists of apps from the Microsoft Store. This capability extends to built-in apps, as well, such as Xbox, Groove, text messaging, email, and calendar, etc. The ability to allow or deny apps helps to ensure that people use their mobile devices for their intended purposes. However, it is not always an easy approach to find a balance between what employees need or request and security concerns. Creating allowlists or disallow lists also requires keeping up with the changing app landscape in the Microsoft Store.
 
 For more information, see [AppLocker CSP](./mdm/applocker-csp.md).
 
@@ -552,7 +552,7 @@ In addition to controlling which apps are allowed, IT professionals can also imp
 -   **Allow Developer Unlock** Specifies whether developer unlock is allowed.
 -   **Allow Shared User App Data** Specifies whether multiple users of the same app can share data.
 -   **Allow Store** Specifies whether Microsoft Store app is allowed to run. This completely blocks the user from installing apps from the Store, but still allows app distribution through an MDM system.
--   **Application Restrictions** An XML blob that defines the app restrictions for a device. The XML blob can contain an app allow or deny list. You can allow or deny apps based on their app ID or publisher. See AppLocker above.
+-   **Application Restrictions** An XML blob that defines the app restrictions for a device. The XML blob can contain an app allowlist or deny list. You can allow or deny apps based on their app ID or publisher. See AppLocker above.
 -   **Disable Store Originated Apps** Disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded before the policy was applied.
 -   **Require Private Store Only** Specifies whether the private store is exclusively available to users in the Store app on the device. If enabled, only the private store is available. If disabled, the retail catalog and private store are both available.
 -   **Restrict App Data to System Volume** Specifies whether app data is allowed only on the system drive or can be stored on an SD card.
@@ -978,7 +978,7 @@ This is a list of attributes that are supported by DHA and can trigger the corre
 -   **Boot Manager Version** The version of the Boot Manager running on the device. The HAS can check this version to determine whether the most current Boot Manager is running, which is more secure (trusted).
 -   **Code integrity version** Specifies the version of code that is performing integrity checks during the boot sequence. The HAS can check this version to determine whether the most current version of code is running, which is more secure (trusted).
 -   **Secure Boot Configuration Policy (SBCP) present** Specifies whether the hash of the custom SBCP is present. A device with an SBCP hash present is more trustworthy than a device without an SBCP hash.
--   **Boot cycle allow list** The view of the host platform between boot cycles as defined by the manufacturer compared to a published allow list. A device that complies with the allow list is more trustworthy (secure) than a device that is noncompliant.
+-   **Boot cycle allowlist** The view of the host platform between boot cycles as defined by the manufacturer compared to a published allowlist. A device that complies with the allowlist is more trustworthy (secure) than a device that is noncompliant.
 
 #### Example scenario
 
